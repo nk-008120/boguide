@@ -1,0 +1,29 @@
+baseURL: "https://boguide.com/"
+title: "BioGuide IBO 2026"
+theme: hextra
+
+# Enable KaTeX
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  katex:
+    enable: true
+
+menu:
+  main:
+    - name: Resources
+      url: /resources/
+      weight: 1
+    - name: Papers
+      url: /papers/
+      weight: 2
+    - name: About
+      url: /about/
+      weight: 3
+
+params:
+  navbar:
+    title: "BioGuide 2026"
+  footer:
+    copyright: "© 2026 BioGuide for IBO Vilnius"

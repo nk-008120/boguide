@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="noindex, nofollow" />
+  <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" id="favicon-svg" />
+<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+<link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
+<title>Bioinformatics – BioGuide IBO 2026</title>
+  <meta name="description" content="Complete bioinformatics guide for IBO: databases, BLAST, alignments, phylogenetics, genome analysis, protein structure, and interactive simulation. Includes worked examples from IBO practicals and lab manuals." /><link rel="canonical" href="http://localhost:1313/resources/10-bioinformatics/_index_bioinfo/" itemprop="url" />
+
+<meta property="og:title" content="Bioinformatics">
+<meta
+  property="og:description"
+  content="
+    Complete bioinformatics guide for IBO: databases, BLAST, alignments, phylogenetics, genome analysis, protein structure, and interactive simulation. Includes worked examples from IBO practicals and lab manuals.
+  ">
+<meta
+  property="og:type"
+  content="
+    article
+  ">
+<meta property="og:url" content="http://localhost:1313/resources/10-bioinformatics/_index_bioinfo/"><meta property="article:section" content="resources">
+
+
+
+
+	<meta itemprop="name" content="Bioinformatics">
+	<meta itemprop="description" content="Complete bioinformatics guide for IBO: databases, BLAST, alignments, phylogenetics, genome analysis, protein structure, and interactive simulation. Includes worked examples from IBO practicals and lab manuals.">
+	<meta itemprop="wordCount" content="4495">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Bioinformatics">
+	<meta name="twitter:description" content="Complete bioinformatics guide for IBO: databases, BLAST, alignments, phylogenetics, genome analysis, protein structure, and interactive simulation. Includes worked examples from IBO practicals and lab manuals.">
+<link href="/css/compiled/main.css" rel="stylesheet" />
+    <link href="/css/variables.css" rel="stylesheet" />
+    <link href="/css/custom.css" rel="stylesheet" />
+
+  
+<script src="/js/main-head.js" integrity=""></script>
+
+  
+  
+  </head>
+<body>
+    <a href="#content" class="hx:sr-only hx:focus-visible:not-sr-only hx:focus-visible:fixed hx:focus-visible:z-50 hx:focus-visible:top-2 hx:focus-visible:left-2 hx:focus-visible:bg-primary-500 hx:focus-visible:text-white hx:focus-visible:px-4 hx:focus-visible:py-2 hx:focus-visible:rounded-md hx:focus-visible:text-sm hx:focus-visible:font-medium">Skip to content</a><div class="hextra-nav-container hx:sticky hx:top-0 hx:z-20 hx:w-full hx:bg-transparent hx:print:hidden">
+  <div
+    class="hextra-nav-container-blur hx:pointer-events-none hx:absolute hx:z-[-1] hx:h-full hx:w-full hx:bg-white hx:dark:bg-dark hx:shadow-[0_2px_4px_rgba(0,0,0,.02),0_1px_0_rgba(0,0,0,.06)] hx:contrast-more:shadow-[0_0_0_1px_#000] hx:dark:shadow-[0_-1px_0_rgba(255,255,255,.1)_inset] hx:contrast-more:dark:shadow-[0_0_0_1px_#fff]"
+  ></div>
+
+  <nav class="hextra-max-navbar-width hx:mx-auto hx:flex hx:items-center hx:justify-end hx:gap-1 hx:md:gap-2 hx:h-[var(--hextra-navbar-height)] hx:px-6">
+    <a class="hx:flex hx:items-center hx:hover:opacity-75 hx:ltr:mr-auto hx:rtl:ml-auto" href="/">
+    <img class="hx:mr-2 hx:block hx:dark:hidden" src="/logo.png" alt="Logo" height="40" width="40" />
+    <img class="hx:mr-2 hx:hidden hx:dark:block" src="/logo.png" alt="Dark Logo" height="40" width="40" />
+    <span class="hx:mr-2 hx:font-extrabold hx:inline hx:select-none">BioGuide IBO 2026</span>
+</a>
+<a
+  title=""
+  href="/resources/"
+  
+  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
+><span class="hx:text-center">Resources</span>
+</a><a
+  title=""
+  href="/papers/"
+  
+  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
+><span class="hx:text-center">Papers</span>
+</a><a
+  title=""
+  href="/about/"
+  
+  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
+><span class="hx:text-center">About</span>
+</a><button type="button" aria-label="Menu" aria-expanded="false" class="hextra-hamburger-menu hx:cursor-pointer hx:-mr-1 hx:rounded-sm hx:p-1 hx:active:bg-gray-400/20 hx:md:hidden hx:hextra-focus-visible-inset"><svg height=24 fill="none" viewBox="0 0 24 24" stroke="currentColor"><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8H20"></path></g><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16H20"></path></g></svg></button>
+  </nav>
+</div>
+
+  <div class='hx:mx-auto hx:flex hextra-max-page-width'>
+    <aside class="hextra-sidebar-container hx:flex hx:flex-col hx:print:hidden hx:md:top-[var(--hextra-navbar-height)] hx:md:shrink-0 hx:md:w-64 hx:md:self-start hx:max-md:[transform:translate3d(0,-100%,0)] hx:md:hidden hx:xl:block">
+  <div class="hextra-scrollbar hx:overflow-y-auto hx:overflow-x-hidden hx:p-4 hx:grow hx:md:h-[calc(100vh-var(--hextra-navbar-height)-var(--menu-height))]">
+    <ul class="hx:flex hx:flex-col hx:gap-1 hx:md:hidden">
+      
+      <li><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/resources/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">Resources</span>
+    </a>
+  </div></li><li><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/papers/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">Papers</span>
+    </a>
+  </div></li><li><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/about/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">About</span>
+    </a>
+  </div></li>
+    </ul>
+
+    <div class="hx:max-xl:hidden hx:h-0 hx:w-64 hx:shrink-0"></div></div>
+  
+  
+    <div class="hx:md:hidden  hx:sticky hx:bottom-0 hx:max-h-(--menu-height) hx:bg-white hx:dark:bg-dark hx:mx-4 hx:py-4 hx:shadow-[0_-12px_16px_#fff] hx:flex hx:items-center hx:gap-2 hx:border-gray-200 hx:dark:border-neutral-800 hx:dark:shadow-[0_-12px_16px_#111] hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:shadow-none hx:border-t" data-toggle-animation="show"><div class="hx:flex hx:grow hx:flex-col"><div class="hx:flex hx:justify-items-start hx:group" data-theme="light">
+  <button
+    title="Change theme"
+    data-state="closed"
+    data-location="bottom"
+    class="hextra-theme-toggle hx:cursor-pointer hx:rounded-md hx:text-left hx:font-medium hx:h-7 hx:px-2 hx:text-xs hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:font-medium hx:text-gray-600 hx:transition-colors hx:dark:text-gray-400 hx:grow"
+    type="button"
+    aria-label="Change theme"
+    aria-expanded="false"
+    aria-haspopup="menu"
+  >
+    <div class="hx:flex hx:items-center hx:gap-2 hx:capitalize"><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><span class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden">Light</span><svg height=12 class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><span class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden">Dark</span><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor">
+  <path d="M 11.996094,2 C 6.4986225,2.0192368 2.03125,6.5024993 2.03125,12 c 0,5.497501 4.4673725,9.980763 9.964844,10 H 12 12.0039 c 5.497471,-0.01924 9.964844,-4.502499 9.964844,-10 0,-5.4975007 -4.467373,-9.9807632 -9.964844,-10 H 12 Z M 12,4 c 4.417218,0.017598 7.96875,3.5822356 7.96875,8 0,4.417764 -3.551532,7.982402 -7.96875,8 z" />
+</svg>
+<span class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden">System</span></div>
+  </button>
+  <ul
+    class="hextra-theme-toggle-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-lg hx:border hx:border-gray-200 hx:bg-white hx:p-1 hx:text-sm hx:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-900"
+    style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
+    data-theme="light"
+    role="menu"
+  >
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="true"
+        tabindex="-1"
+        data-item="light"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
+      >
+        Light
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </button>
+    </li>
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="false"
+        tabindex="-1"
+        data-item="dark"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
+      >
+        Dark
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </button>
+    </li>
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="false"
+        tabindex="-1"
+        data-item="system"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
+      >
+        System
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </button>
+    </li>
+  </ul>
+</div>
+</div></div></aside>
+    
+<nav class="hextra-toc hx:order-last hx:hidden hx:w-64 hx:shrink-0 hx:xl:block hx:print:hidden hx:px-4" aria-label="Table of contents">
+    <div class="hextra-scrollbar hx:sticky hx:top-[var(--hextra-navbar-height)] hx:overflow-y-auto hx:pr-4 hx:pt-6 hx:text-sm [hyphens:auto] hx:max-h-[calc(100vh-var(--hextra-navbar-height)-env(safe-area-inset-bottom))] hx:ltr:-mr-4 hx:rtl:-ml-4">
+      <div class=" hx:sticky hx:bottom-0 hx:flex hx:flex-col hx:items-start hx:gap-2 hx:pb-8 hx:border-gray-200 hx:dark:border-neutral-800 hx:contrast-more:border-t hx:contrast-more:border-neutral-400 hx:contrast-more:shadow-none hx:contrast-more:dark:border-neutral-400">
+        <button id="backToTop" tabindex="-1" class="hx:cursor-pointer hx:transition-all hx:duration-75 hx:opacity-0 hx:text-xs hx:font-medium hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-100 hx:contrast-more:text-gray-800 hx:contrast-more:dark:text-gray-50">
+          <span>Scroll to top</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" focusable="false" class="hx:inline hx:ltr:ml-1 hx:rtl:mr-1 hx:h-3.5 hx:w-3.5 hx:rounded-full hx:border hx:border-gray-500 hx:hover:border-gray-900 hx:dark:border-gray-400 hx:dark:hover:border-gray-100 hx:contrast-more:border-gray-800 hx:contrast-more:dark:border-gray-50">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+    <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--hextra-navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+      <main id="content" class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-4 hx:md:px-12">
+        
+        <br class="hx:mt-1.5 hx:text-sm" />
+        <h1 class="hx:text-center hx:mt-2 hx:text-4xl hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100">Bioinformatics</h1>
+        <div class="hx:mb-16"></div>
+        <div class="content">
+          <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true
+    }
+  };
+</script>
+<p><span class="badge-exploration">🌐 IBO 2020–2024 Practicals</span> Bioinformatics tasks appear in almost every IBO exam in the recent years. This guide teaches you <strong>why</strong> and <strong>how</strong> to use each tool, with <strong>worked examples</strong> taken directly from past IBO tasks and standard lab manuals. General Resources for this purpose are :
+<br>1. Good for acquainted people who want to brush up : <a href="https://www.srmist.edu.in/wp-content/uploads/2022/05/Bioinformatics-Lab.pdf" target="blank">Here</a>
+<br>2. Good for beginners to understand role of each tool: <a href="https://vvvcollege.org/dbt/LabManual-Bioinformatics.pdf" target="blank">Here</a>
+<br>3.People who like to learn form videos: <a href="https://www.youtube.com/@BIOPATHWAY">Here</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain">
+  <div class="hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800" role="tablist"><button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-tabs-00-0" role="tab" type="button" aria-controls="tabs-panel-tabs-00-0" aria-selected="true" tabindex="0" data-state="selected"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>Introduction</span></span></button><button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-tabs-00-1" role="tab" type="button" aria-controls="tabs-panel-tabs-00-1" aria-selected="false" tabindex="-1"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>Databases &amp;amp; Tools</span></span></button><button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-tabs-00-2" role="tab" type="button" aria-controls="tabs-panel-tabs-00-2" aria-selected="false" tabindex="-1"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>Sequence Alignment</span></span></button><button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-tabs-00-3" role="tab" type="button" aria-controls="tabs-panel-tabs-00-3" aria-selected="false" tabindex="-1"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>Phylogenetics</span></span></button><button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-tabs-00-4" role="tab" type="button" aria-controls="tabs-panel-tabs-00-4" aria-selected="false" tabindex="-1"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>Genome Analysis</span></span></button><button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-tabs-00-5" role="tab" type="button" aria-controls="tabs-panel-tabs-00-5" aria-selected="false" tabindex="-1"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>Protein Structure</span></span></button><button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-tabs-00-6" role="tab" type="button" aria-controls="tabs-panel-tabs-00-6" aria-selected="false" tabindex="-1"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>IBO Practicals</span></span></button><button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-tabs-00-7" role="tab" type="button" aria-controls="tabs-panel-tabs-00-7" aria-selected="false" tabindex="-1"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>Interactive Lab</span></span></button><button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-tabs-00-8" role="tab" type="button" aria-controls="tabs-panel-tabs-00-8" aria-selected="false" tabindex="-1"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>Worked Examples</span></span></button><button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-tabs-00-" role="tab" type="button" aria-controls="tabs-panel-tabs-00-" aria-selected="false" tabindex="-1"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>Appendix</span></span></button></div>
+</div>
+<div><div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-tabs-00-0" role="tabpanel" aria-labelledby="tabs-tab-tabs-00-0" aria-hidden="false" tabindex="0" data-state="selected"><h2>What is bioinformatics and why does the IBO test it?<span class="hx:absolute hx:-mt-20" id="what-is-bioinformatics-and-why-does-the-ibo-test-it"></span>
+    <a href="#what-is-bioinformatics-and-why-does-the-ibo-test-it" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Bioinformatics is the use of computers to store, analyse, and interpret biological data – primarily <strong>DNA, RNA, and protein sequences</strong>. In a typical IBO practical, you will be given access to a custom web application with:</p>
+<ul>
+<li>Pre‑loaded sequence databases (e.g. human genome fragments, bacterial genomes, protein sequences)</li>
+<li>Tools like BLAST, sequence alignment, ORF finder, GC‑skew calculator, and tree builder</li>
+<li>Real biological questions (e.g. “Where is the replication origin of <em>B. burgdorferi</em>?” or “Which protein domains are present in HOXA5?”)</li>
+</ul>
+<p><strong>You are not expected to memorise command lines.</strong> Instead, you must understand:</p>
+<ul>
+<li>What each tool does</li>
+<li>How to choose the right tool for a given task</li>
+<li>How to interpret the output (e‑values, alignments, trees, scores)</li>
+</ul>
+<p>This guide covers every concept that has appeared in IBO 2020, 2022, and 2023, plus worked examples from standard bioinformatics lab exercises.</p>
+<div class="hextra-badge ">
+  <div class="hx:inline-flex hx:gap-1 hx:items-center hx:rounded-full hx:px-2.5 hx:leading-6 hx:text-[.65rem] hx:border hx:text-gray-600 hx:bg-gray-100 hx:dark:bg-neutral-800 hx:dark:text-neutral-200 hx:border-gray-200 hx:dark:border-neutral-700">Key concept</div>
+</div> Bioinformatics problems test **logical thinking and familiarity with common biological databases** – not programming skill.
+<!-- VIDEO: Introduction to Bioinformatics (e.g., "Bioinformatics in 10 minutes" from NHGRI) – place link here -->
+<!-- IMAGE: Flowchart showing data flow from experiment → database → analysis → interpretation -->
+</div><div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-tabs-00-1" role="tabpanel" aria-labelledby="tabs-tab-tabs-00-1" aria-hidden="true"><h2>🧬 Major biological databases – with worked retrieval examples<span class="hx:absolute hx:-mt-20" id="-major-biological-databases--with-worked-retrieval-examples"></span>
+    <a href="#-major-biological-databases--with-worked-retrieval-examples" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3>Why multiple databases?<span class="hx:absolute hx:-mt-20" id="why-multiple-databases"></span>
+    <a href="#why-multiple-databases" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Biological data is huge and noisy. Different databases specialise in different types of information. Some are <strong>curated</strong> (manually checked, like Swiss‑Prot), others are <strong>automated</strong> (like TrEMBL). Knowing which one to use saves time and avoids errors.</p>
+<!-- IMAGE: A table comparing Swiss‑Prot (reviewed) vs. TrEMBL (unreviewed) with examples -->
+<h3>1. NCBI (National Center for Biotechnology Information)<span class="hx:absolute hx:-mt-20" id="1-ncbi-national-center-for-biotechnology-information"></span>
+    <a href="#1-ncbi-national-center-for-biotechnology-information" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li><strong>URL</strong>: <a
+    href="https://www.ncbi.nlm.nih.gov"target="_blank" rel="noopener">https://www.ncbi.nlm.nih.gov</a></li>
+<li><strong>Contains</strong>: GenBank (nucleotide), RefSeq (curated), Protein, PubMed, SRA</li>
+<li><strong>Search tool</strong>: Entrez – cross‑database search</li>
+<li><strong>Concept</strong>: NCBI is the world’s largest molecular biology database. Most IBO sequence retrieval tasks start here.</li>
+</ul>
+<p><strong>Worked Example: Retrieve the FASTA sequence of human beta‑globin (HBB) from NCBI.</strong></p>
+<ul>
+<li><strong>Step 1:</strong> Go to NCBI homepage → select “Protein” from the dropdown.</li>
+<li><strong>Step 2:</strong> In the search box, type <code>HBB Homo sapiens</code> and press Enter.</li>
+<li><strong>Step 3:</strong> Click on the first result (usually NP_000509, hemoglobin subunit beta [Homo sapiens]).</li>
+<li><strong>Step 4:</strong> On the record page, click the “FASTA” link at the top right.</li>
+<li><strong>Step 5:</strong> Copy the entire FASTA format (starting with <code>&gt;NP_000509...</code>).</li>
+<li><strong>Step 6:</strong> (Optional) Save the file as .fasta in notepad.
+<em>Why?</em> FASTA is the standard format for sequence input in BLAST, alignment tools, and tree builders.</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=QLcmEqBayr0">For fellow video-cers (not recommended)</a>
+<img src="/BIOINFOPICS/FASTAPROTEIN.png" alt="FASTA"  data-zoomable loading="lazy" /></p>
+<h3>2. UniProt (Universal Protein Resource)<span class="hx:absolute hx:-mt-20" id="2-uniprot-universal-protein-resource"></span>
+    <a href="#2-uniprot-universal-protein-resource" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li><strong>URL</strong>: <a
+    href="https://www.uniprot.org"target="_blank" rel="noopener">https://www.uniprot.org</a></li>
+<li><strong>Contains</strong>: Swiss‑Prot (reviewed) and TrEMBL (automated)</li>
+<li><strong>Concept</strong>: UniProt gives functional information (domains, PTMs, subcellular location) that you cannot get from raw sequence alone.</li>
+</ul>
+<p><strong>Worked Example: Find post‑translational modifications (PTMs) of P53355 (Death‑associated protein kinase 1).</strong></p>
+<ul>
+<li><strong>Step 1:</strong> Open UniProt, enter <code>P53355</code> in the search box.</li>
+<li><strong>Step 2:</strong> Click on the entry “Death‑associated protein kinase 1”.</li>
+<li><strong>Step 3:</strong> Scroll down to “PTM / Processing” section.<br>
+<em>Result:</em> The protein is ubiquitinated (lysine residues) and phosphorylated (serine/threonine/tyrosine).<br>
+<em>Why?</em> Understanding PTMs helps predict protein function and regulation.</li>
+</ul>
+<p><img src="/BIOINFOPICS/UNIPROTPTM.png" alt="UNIPROTPTM"  data-zoomable loading="lazy" /></p>
+<h3>3. Expasy – Compute pI/Mw<span class="hx:absolute hx:-mt-20" id="3-expasy--compute-pimw"></span>
+    <a href="#3-expasy--compute-pimw" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li><strong>URL</strong>: <a
+    href="https://web.expasy.org/compute_pi/"target="_blank" rel="noopener">https://web.expasy.org/compute_pi/</a></li>
+<li><strong>Use</strong>: Predict isoelectric point and molecular weight of a protein – important for 2D gel electrophoresis.</li>
+<li><strong>Concept</strong>: pI is the pH where a protein has net zero charge – it stops moving in an electric field. Mw helps identify bands on a gel.</li>
+</ul>
+<p><strong>Worked Example: For protein Q8N423 (Leukocyte immunoglobulin‑like receptor B2).</strong></p>
+<ul>
+<li><strong>Step 1:</strong> Paste the accession number <code>Q8N423</code> into the text field.</li>
+<li><strong>Step 2:</strong> Click “Compute pI/Mw”.</li>
+<li><strong>Output:</strong> Theoretical pI = 6.79, Mw = 65038.65 Da.<br>
+<em>Why?</em> On a 2D gel (pH 3‑10), this protein will appear near pH 6.8, around 65 kDa.</li>
+</ul>
+<!-- VIDEO: 2D gel electrophoresis explained – link -->
+<h3>4. PDB (Protein Data Bank)<span class="hx:absolute hx:-mt-20" id="4-pdb-protein-data-bank"></span>
+    <a href="#4-pdb-protein-data-bank" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li><strong>URL</strong>: <a
+    href="https://www.rcsb.org"target="_blank" rel="noopener">https://www.rcsb.org</a></li>
+<li><strong>Use</strong>: Download template structures for homology modelling.</li>
+<li><strong>Concept</strong>: If you know the 3D structure of a similar protein, you can model your protein’s structure.</li>
+</ul>
+<p><strong>Example:</strong> Search for <code>1OHV</code> (pig GABA transaminase) → download the <code>.pdb</code> file – it will be used as a template to model the human enzyme.</p>
+<!-- IMAGE: PDB entry page for 1OHV -->
+<h3>5. Pfam / HMMER<span class="hx:absolute hx:-mt-20" id="5-pfam--hmmer"></span>
+    <a href="#5-pfam--hmmer" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li><strong>URL</strong>: <a
+    href="https://www.ebi.ac.uk/interpro/"target="_blank" rel="noopener">https://www.ebi.ac.uk/interpro/</a></li>
+<li><strong>Use</strong>: Identify conserved domains using hmmscan.</li>
+<li><strong>Concept</strong>: A domain is a region of a protein that folds independently and has a specific function (e.g., DNA binding, catalysis). Pfam collects hidden Markov models (HMMs) of these domains.</li>
+</ul>
+<p><strong>Worked Example (IBO 2020): For HOXA5 protein (NP_061975.2), find the homeodomain.</strong></p>
+<ul>
+<li><strong>Step 1:</strong> Get the FASTA sequence of HOXA5 from NCBI.</li>
+<li><strong>Step 2:</strong> In the IBO app, open the HMMSCAN tab, paste the sequence, select Pfam‑A, set E‑value = 1e‑5.</li>
+<li><strong>Output:</strong> “Homeodomain (PF00046) spans residues 199–251”.<br>
+<em>Why?</em> Domains indicate functional regions – homeodomains are involved in DNA binding.</li>
+</ul>
+<!-- VIDEO: What are protein domains? (e.g., from iBiology) -->
+<!-- IMAGE: Schematic of a protein with domains coloured differently -->
+<h2>🔧 Core tools and their IBO applications<span class="hx:absolute hx:-mt-20" id="-core-tools-and-their-ibo-applications"></span>
+    <a href="#-core-tools-and-their-ibo-applications" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><table>
+	<thead>
+			<tr>
+					<th>Tool</th>
+					<th>Purpose</th>
+					<th>IBO problem example</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>BLAST</strong></td>
+					<td>Find similar sequences</td>
+					<td>“Which human protein is most similar to HOXA6?”</td>
+			</tr>
+			<tr>
+					<td><strong>ORF Finder</strong></td>
+					<td>Locate open reading frames</td>
+					<td>“Extract Cas9 coding sequence from genomic DNA”</td>
+			</tr>
+			<tr>
+					<td><strong>ClustalW / MUSCLE</strong></td>
+					<td>Multiple sequence alignment</td>
+					<td>“Align 16S rRNA sequences of 10 species”</td>
+			</tr>
+			<tr>
+					<td><strong>PhyML</strong></td>
+					<td>Build phylogenetic tree</td>
+					<td>“Produce a Newick tree from the alignment”</td>
+			</tr>
+			<tr>
+					<td><strong>Window search</strong></td>
+					<td>Sliding window analysis</td>
+					<td>“Find 100 bp window with highest GC content in <em>B. burgdorferi</em>”</td>
+			</tr>
+			<tr>
+					<td><strong>hmmscan</strong></td>
+					<td>Domain search (Pfam)</td>
+					<td>“Which Pfam domain is repeated in cadherin proteins?”</td>
+			</tr>
+			<tr>
+					<td><strong>GENSCAN</strong></td>
+					<td>Gene prediction</td>
+					<td>“Predict exons and introns in a human genomic DNA sequence”</td>
+			</tr>
+			<tr>
+					<td><strong>Swiss‑Model</strong></td>
+					<td>Homology modelling</td>
+					<td>“Build 3D model of human GABA transaminase using pig template”</td>
+			</tr>
+	</tbody>
+</table>
+<div class="hextra-badge ">
+  <div class="hx:inline-flex hx:gap-1 hx:items-center hx:rounded-full hx:px-2.5 hx:leading-6 hx:text-[.65rem] hx:border hx:text-gray-600 hx:bg-gray-100 hx:dark:bg-neutral-800 hx:dark:text-neutral-200 hx:border-gray-200 hx:dark:border-neutral-700">IBO tip</div>
+</div> In the exam, you will never have to **install** software – all tools are provided in a browser interface. Practice with the interactive lab below.
+</div><div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-tabs-00-2" role="tabpanel" aria-labelledby="tabs-tab-tabs-00-2" aria-hidden="true"><h2>Why align sequences?<span class="hx:absolute hx:-mt-20" id="why-align-sequences"></span>
+    <a href="#why-align-sequences" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Alignment reveals evolutionary relationships, conserved domains, and functional residues. In IBO, you will align both <strong>nucleotide</strong> and <strong>protein</strong> sequences.</p>
+<h3>Dot plot (graphical method)<span class="hx:absolute hx:-mt-20" id="dot-plot-graphical-method"></span>
+    <a href="#dot-plot-graphical-method" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>One sequence on X‑axis, the other on Y‑axis. A dot is placed when residues match.</li>
+<li><strong>Diagonal line</strong> → similarity; <strong>gaps in diagonal</strong> → insertion/deletion; <strong>reverse diagonal</strong> → inversion.</li>
+<li><strong>Why dot plots?</strong> They give you a visual, intuitive feel for similarities before you run complex algorithms.</li>
+</ul>
+<p>For the purpose of teaching Dot-Plot methods, we shall use an exemplary problem from practical 3 of the selection camp of taiwanese biology olympiad programme. Find it in <a href="/dotplot.pdf" target="blank">here</a></p>
+<p><a href="#" onclick="switchToTabAndScroll(9, 'Solution-dotplot'); return false;"><em>Click here after trying it out</em></a></p>
+<p>You must note that using the first dotplot (no lines) in the solution (answer for Q1), you should be able to make some intuitive decisions:<br></p>
+<ol>
+<li>You should note the largest diagonal line ,and imagine how a permutation would look like, if you shifted it by some insertion or deletion in the sequences. So you should be able to see that the permutation shown in the sample is the best possible score.<br></li>
+<li>You should draw the lines as in the second image of the solution. these will help you imagine how different permutations would perform. for example, unintuitively so, if we give a weightage of 1 to an inversion, the inverted line, then becomes second most parsimonious in the dot plot.<br></li>
+<li>You should be able to see basics like substitution, and shifts and splices and so on.
+If you are able to look through these in suitable time, you are good to go!<br><br>
+<strong>IBO REFERENCE (IBO 2022)</strong>: Unknown gene vs. four candidates (APOE, GABAA1, ADGRG2, ORC2). Dot plot with GABAA1 showed many diagonals → identified as GABAA1.</li>
+</ol>
+<!-- VIDEO: Dot plot tutorial (e.g., "Dot matrix method for sequence comparison" from BiotechLekh) -->
+<!-- IMAGE: Annotated dot plot showing diagonals, gaps, inversions -->
+<h3>Dynamic programming (Needleman‑Wunsch &amp; Smith‑Waterman)<span class="hx:absolute hx:-mt-20" id="dynamic-programming-needlemanwunsch--smithwaterman"></span>
+    <a href="#dynamic-programming-needlemanwunsch--smithwaterman" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li><strong>Global alignment</strong> (Needleman‑Wunsch): aligns entire sequences. Used for similar length sequences. <a href="https://bioboot.github.io/bimm143_W20/class-material/nw/" target="blank">Here is an interactive simulator</a></li>
+<li><strong>Local alignment</strong> (Smith‑Waterman): finds best matching sub‑region. Used for gene vs. genome. <a href="https://rna.informatik.uni-freiburg.de/Teaching/index.jsp?toolName=Smith-Waterman" target="blank">Here is an interactive simulator</a></li>
+<li><strong>Concept</strong>: Dynamic programming breaks the problem into small sub‑problems (comparing prefixes) and builds up the optimal solution. It guarantees the best alignment under the given scoring scheme.</li>
+</ul>
+<p><strong>Worked Example (from manual)</strong>: Global alignment of AGTAC vs GCAC.</p>
+<ul>
+<li><strong>Step 1:</strong> Build a scoring matrix (match=+1, mismatch=0, gap=-1).</li>
+<li><strong>Step 2:</strong> Fill the DP table by taking maximum of three possible moves (left, up, diagonal).</li>
+<li><strong>Step 3:</strong> Traceback from bottom‑right cell to get the alignment.</li>
+<li><strong>Result:</strong> Score = 2, alignment = AGTAC‑GCAC.<br>
+<em>Why?</em> This algorithm guarantees the optimal alignment under the chosen scoring scheme.</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=VWzXQhHoepI">video-cers (medium recommendation)</a></p>
+<!-- INTERACTIVE: Link to an online DP simulator (e.g., https://biopython.org/Documentation/tutorial/chapter_algorithms.html) -->
+<h3>BLAST – heuristic similarity search<span class="hx:absolute hx:-mt-20" id="blast--heuristic-similarity-search"></span>
+    <a href="#blast--heuristic-similarity-search" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li><strong>blastn</strong>: nucleotide vs. nucleotide</li>
+<li><strong>blastp</strong>: protein vs. protein</li>
+<li><strong>blastx</strong>: DNA (translated) vs. protein</li>
+<li><strong>tblastn</strong>: protein vs. translated DNA</li>
+<li><strong>Concept</strong>: BLAST is fast because it doesn’t try every possible alignment – it first finds short “words” (k‑mers) in common and extends them. It sacrifices exact optimality for speed, which is fine for database searches.</li>
+</ul>
+<p><strong>Worked Example (from manual)</strong>: Find mouse genes similar to human U80226.1.</p>
+<ul>
+<li><strong>Step 1:</strong> Retrieve the sequence of U80226.1 (human ABAT gene).</li>
+<li><strong>Step 2:</strong> Run blastn against “Mouse genome+transcript” database.</li>
+<li><strong>Output:</strong> Top hit NM_172961.3 (mouse Abat gene) with E‑value = 0.0.<br>
+<em>Why?</em> A perfect E‑value (0.0) means the match is highly significant – the two genes are orthologs. Generally, significance threshold is &lt;=1e-05</li>
+</ul>
+<!-- VIDEO: How BLAST works (NCBI’s official BLAST tutorial) -->
+<!-- IMAGE: BLAST results page with E‑values highlighted -->
+<h3>Multiple sequence alignment (MSA)<span class="hx:absolute hx:-mt-20" id="multiple-sequence-alignment-msa"></span>
+    <a href="#multiple-sequence-alignment-msa" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>Aligns ≥3 sequences. Output format <strong>CLUSTAL</strong> uses <code>*</code> (identical), <code>:</code> (conserved), <code>.</code> (semi‑conserved).</li>
+<li><strong>Concept</strong>: MSA helps identify conserved positions across a protein family – these are often active site residues or structural anchors.</li>
+</ul>
+<h3>Multiple Sequence Alignment (MSA) – IBO‑style practice problem<span class="hx:absolute hx:-mt-20" id="multiple-sequence-alignment-msa--ibostyle-practice-problem"></span>
+    <a href="#multiple-sequence-alignment-msa--ibostyle-practice-problem" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>MSA is the foundation of phylogenetic analysis and conserved motif discovery. In this problem, you will analyse five short protein sequences from a zinc‑finger family.</p>
+<p>📥 <strong>Download the complete problem statement</strong>: <a href="/msa_problem.pdf" target="_blank">msa_problem.pdf</a></p>
+<p>After you have tried to answer the questions, click below to see the <strong>full solution</strong> (alignment, conserved positions, and cladogram).</p>
+<p><a href="#" onclick="switchToTabAndScroll(9, 'msa-solution'); return false;">🔍 Click here to reveal the solution</a></p>
+<div class="hextra-badge ">
+  <div class="hx:inline-flex hx:gap-1 hx:items-center hx:rounded-full hx:px-2.5 hx:leading-6 hx:text-[.65rem] hx:border hx:text-gray-600 hx:bg-gray-100 hx:dark:bg-neutral-800 hx:dark:text-neutral-200 hx:border-gray-200 hx:dark:border-neutral-700">IBO tip</div>
+</div> In the real exam, you will use the provided alignment tool (e.g., ClustalW). Pay attention to the conservation symbols: `*` = identical, `:` = conserved substitution, `.` = semi‑conserved.
+<p><strong>Worked Example (IBO 2023)</strong>: 16S rRNA of 10 species aligned with MUSCLE. Gaps (<code>-</code>) indicate insertions/deletions. The alignment is used as input for tree building.</p>
+<!-- VIDEO: Multiple sequence alignment (e.g., from BiotechLekh) -->
+<!-- IMAGE: A Clustal alignment snippet with colour-coded conservation -->
+<div class="hextra-badge ">
+  <div class="hx:inline-flex hx:gap-1 hx:items-center hx:rounded-full hx:px-2.5 hx:leading-6 hx:text-[.65rem] hx:border hx:text-gray-600 hx:bg-gray-100 hx:dark:bg-neutral-800 hx:dark:text-neutral-200 hx:border-gray-200 hx:dark:border-neutral-700">Worked example</div>
+</div> Always check the E‑value! A value < 1e‑5 is considered significant for most IBO tasks.
+</div><div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-tabs-00-3" role="tabpanel" aria-labelledby="tabs-tab-tabs-00-3" aria-hidden="true"><h2>How to build and interpret a phylogenetic tree<span class="hx:absolute hx:-mt-20" id="how-to-build-and-interpret-a-phylogenetic-tree"></span>
+    <a href="#how-to-build-and-interpret-a-phylogenetic-tree" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>A tree represents evolutionary relationships. In bioinformatics, trees are built from <strong>aligned sequences</strong> (DNA or protein).</p>
+<h3>Types of trees<span class="hx:absolute hx:-mt-20" id="types-of-trees"></span>
+    <a href="#types-of-trees" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li><strong>Cladogram</strong>: Branch lengths have no meaning; only branching order.</li>
+<li><strong>Phylogram</strong>: Branch lengths proportional to genetic distance.</li>
+</ul>
+<h3>Methods used in IBO<span class="hx:absolute hx:-mt-20" id="methods-used-in-ibo"></span>
+    <a href="#methods-used-in-ibo" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>(short videos, better to watch)</p>
+<ol>
+<li><a href="https://www.youtube.com/watch?v=mgU5aioDGqk"><strong>Neighbour‑joining (NJ)</strong></a> : distance‑based, fast. Constructs a tree by repeatedly joining the closest pair of taxa.</li>
+<li><a href="https://www.youtube.com/watch?v=YJUicKHbWr4"><strong>Maximum Likelihood (ML)</strong></a> : more accurate, slower (PhyML). Searches for the tree that makes the observed data most probable.</li>
+<li><a href="https://www.youtube.com/watch?v=09eD4A_HxVQ"><strong>Unweighted Pair Group Method with Arithmetic Mean (UPGMA)</strong></a>: No distance, most basic form.
+<br></li>
+</ol>
+<h3>🌲 Exemplary problems: UPGMA, Neighbor‑Joining, and Maximum Likelihood<span class="hx:absolute hx:-mt-20" id="-exemplary-problems-upgma-neighborjoining-and-maximum-likelihood"></span>
+    <a href="#-exemplary-problems-upgma-neighborjoining-and-maximum-likelihood" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>These problems test your understanding of phylogenetic tree building methods. Download the PDF, solve on paper, then check the solution.</p>
+<h4>Problem 1 – UPGMA (Ultrametric tree from a distance matrix)<span class="hx:absolute hx:-mt-20" id="problem-1--upgma-ultrametric-tree-from-a-distance-matrix"></span>
+    <a href="#problem-1--upgma-ultrametric-tree-from-a-distance-matrix" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>📥 <a href="/upgma_problem.pdf" target="_blank">upgma_problem.pdf</a></p>
+<p><a href="#" onclick="switchToTabAndScroll(9, 'upgma-solution'); return false;">🔍 Click here for the solution (step‑by‑step UPGMA clustering, tree, and common mistakes)</a></p>
+<h4>Problem 2 – Neighbor‑Joining (Additive tree reconstruction)<span class="hx:absolute hx:-mt-20" id="problem-2--neighborjoining-additive-tree-reconstruction"></span>
+    <a href="#problem-2--neighborjoining-additive-tree-reconstruction" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>📥 <a href="/nj_problem.pdf" target="_blank">nj_problem.pdf</a></p>
+<p><a href="#" onclick="switchToTabAndScroll(9, 'nj-solution'); return false;">🔍 Click here for the solution (Q‑matrix, selection of neighbors, final tree)</a></p>
+<h4>Problem 3 – Maximum Likelihood (Conceptual – interpreting likelihood scores and models)<span class="hx:absolute hx:-mt-20" id="problem-3--maximum-likelihood-conceptual--interpreting-likelihood-scores-and-models"></span>
+    <a href="#problem-3--maximum-likelihood-conceptual--interpreting-likelihood-scores-and-models" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p>📥 <a href="/ml_problem.pdf" target="_blank">ml_problem.pdf</a></p>
+<p><a href="#" onclick="switchToTabAndScroll(9, 'ml-solution'); return false;">🔍 Click here for the solution (explanation of likelihood, model selection, and pitfalls)</a></p>
+<div class="hextra-badge ">
+  <div class="hx:inline-flex hx:gap-1 hx:items-center hx:rounded-full hx:px-2.5 hx:leading-6 hx:text-[.65rem] hx:border hx:text-gray-600 hx:bg-gray-100 hx:dark:bg-neutral-800 hx:dark:text-neutral-200 hx:border-gray-200 hx:dark:border-neutral-700">IBO tip</div>
+</div> In the exam, you will rarely build an NJ or UPGMA tree by hand – but you **must** understand how they work to interpret output and detect errors.
+<h3>Newick format (tree representation)<span class="hx:absolute hx:-mt-20" id="newick-format-tree-representation"></span>
+    <a href="#newick-format-tree-representation" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Example: <code>((Human:0.12, Chimp:0.12):0.05, Mouse:0.17);</code></p>
+<ul>
+<li>Parentheses group clades.</li>
+<li>Colon separates node label (optional) from branch length.</li>
+<li>Semicolon ends the tree.</li>
+</ul>
+<p>To visualize this tree, go to <a href="https://itol.embl.de/upload.cgi">iTOL tree visualizer</a> <br>
+You should obtain these results: <img src="/BIOINFOPICS/iTOLdemo.png" alt="Results"  data-zoomable loading="lazy" /><BR>
+Experiment with various trees to see your results. (Try out the sample tree of IBO 2023 Bioinformatics practical: &ldquo;(A:0.3,(B:0.4,(C:0.3,D:0.2):0.2):0.1);&rdquo;)</p>
+<ul>
+<li><strong>Monophyletic group</strong>: common ancestor + <strong>all</strong> descendants.</li>
+<li><strong>Paraphyletic</strong>: common ancestor but <strong>not all</strong> descendants (e.g. Reptiles excluding birds).</li>
+<li><strong>Polyphyletic</strong>: no recent common ancestor.</li>
+</ul>
+<div class="hextra-badge ">
+  <div class="hx:inline-flex hx:gap-1 hx:items-center hx:rounded-full hx:px-2.5 hx:leading-6 hx:text-[.65rem] hx:border hx:text-gray-600 hx:bg-gray-100 hx:dark:bg-neutral-800 hx:dark:text-neutral-200 hx:border-gray-200 hx:dark:border-neutral-700">Important</div>
+</div> Always check if the tree is **rooted** or **unrooted** before answering relatedness questions.<BR>
+- **Roots**: Always remember to see whether tree is rooted or unrooted. it is very important to decide relative positions and absolute positions and plays a trick in true/false questions.
+<h3>NUANCES OF IBO 2023<span class="hx:absolute hx:-mt-20" id="nuances-of-ibo-2023"></span>
+    <a href="#nuances-of-ibo-2023" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>Align 16S rRNA → build tree with PhyML.</li>
+<li>Unrooted tree → cannot determine if Archaea is closer to Eukarya or Bacteria without an outgroup.</li>
+<li>Adding a viral sequence does not root the tree because viruses do not share the common ancestor of cellular life.</li>
+</ul>
+<p><strong>Hands‑on</strong>: Use the “Tree Builder” in the interactive lab to generate a Newick tree from your alignment.</p>
+</div><div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-tabs-00-4" role="tabpanel" aria-labelledby="tabs-tab-tabs-00-4" aria-hidden="true"><h2>Analysing long DNA sequences with sliding windows<span class="hx:absolute hx:-mt-20" id="analysing-long-dna-sequences-with-sliding-windows"></span>
+    <a href="#analysing-long-dna-sequences-with-sliding-windows" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>When you have a long DNA molecule (e.g. a bacterial chromosome or a 10 kb human genome fragment), properties like GC content can vary locally. <strong>Window search</strong> allows you to calculate a property over a moving window.</p>
+<h3>Parameters<span class="hx:absolute hx:-mt-20" id="parameters"></span>
+    <a href="#parameters" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li><strong>Window size</strong> (e.g. 100 bp): length of each fragment.</li>
+<li><strong>Step size</strong> (e.g. 100 bp): shift between windows.</li>
+<li><strong>Bin size</strong> (e.g. 10%): grouping for histogram.</li>
+</ul>
+<h3>GC content<span class="hx:absolute hx:-mt-20" id="gc-content"></span>
+    <a href="#gc-content" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>[
+\mathrm{GC%} = 100 \times \frac{#G + #C}{#A + #T + #G + #C}
+]</p>
+<ul>
+<li>In vertebrates, GC‑rich regions contain more genes, stain lighter with Giemsa (G‑bands), and denature at <strong>higher temperature</strong>.</li>
+<li><strong>Why GC content matters</strong>: It affects DNA stability, gene density, and chromatin structure.</li>
+</ul>
+<h3>GC‑skew<span class="hx:absolute hx:-mt-20" id="gcskew"></span>
+    <a href="#gcskew" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>[
+\mathrm{GC\text{-}skew} = \frac{[C] - [G]}{[C] + [G]}
+]</p>
+<p>For <strong>circular bacterial genomes</strong>, the replication origin (OriC) and terminus cause a switch in GC‑skew.<br>
+<strong>Reason</strong>: Leading strand synthesis uses more C than G in many bacteria (due to deamination bias).</p>
+<p><strong>Worked Example (IBO 2020, <em>B. burgdorferi</em>)</strong></p>
+<ul>
+<li><strong>Step 1:</strong> Set window size = 200 bp, step = 200 bp, skew = ([C]-[G])/([C]+[G]).</li>
+<li><strong>Step 2:</strong> Plot GC‑skew along the genome (circular, 910 724 bp).</li>
+<li><strong>Observation:</strong> Two sharp switching points – one near 50 kb, another near 900 kb (wrap‑around).</li>
+<li><strong>Step 3:</strong> Use tblastn with DnaA protein sequence to find OriC → region 200–300 kb.<br>
+<em>Why?</em> The switch at 50 kb is the terminus; the switch near 200 kb is the origin (OriC).</li>
+</ul>
+<!-- VIDEO: GC-skew and replication origin (e.g., from GOBLET) -->
+<!-- IMAGE: GC‑skew plot of *B. burgdorferi* showing two switches -->
+<h3>CpG islands and CpG score<span class="hx:absolute hx:-mt-20" id="cpg-islands-and-cpg-score"></span>
+    <a href="#cpg-islands-and-cpg-score" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li>CpG dinucleotides are often methylated in vertebrates (5‑methylcytosine).</li>
+<li>CpG islands are regions with high CpG density, typically near gene promoters.</li>
+<li>CpG score formula: (\frac{[CpG]}{[C] \times [G]} \times \text{window size}).</li>
+<li><strong>Why important</strong>: Promoter methylation silences genes; CpG islands are usually unmethylated in active promoters.</li>
+</ul>
+<p><strong>Worked Example</strong>: For HoxA5, first exon lies under a CpG island. Window search (100 bp, step 100) shows highest CpG score overlapping exon boundaries.</p>
+<!-- VIDEO: CpG islands and gene regulation (e.g., from Khan Academy) -->
+<div class="hextra-badge ">
+  <div class="hx:inline-flex hx:gap-1 hx:items-center hx:rounded-full hx:px-2.5 hx:leading-6 hx:text-[.65rem] hx:border hx:text-gray-600 hx:bg-gray-100 hx:dark:bg-neutral-800 hx:dark:text-neutral-200 hx:border-gray-200 hx:dark:border-neutral-700">Challenge</div>
+</div> In IBO 2020, you also had to find the **region containing DnaA** (replication initiator) by BLASTing the DnaA protein against the *B. burgdorferi* genome.
+</div><div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-tabs-00-5" role="tabpanel" aria-labelledby="tabs-tab-tabs-00-5" aria-hidden="true"><h2>From sequence to 3D structure<span class="hx:absolute hx:-mt-20" id="from-sequence-to-3d-structure"></span>
+    <a href="#from-sequence-to-3d-structure" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Any discussion on protein structure prediction is incomplete without it&rsquo;s amazing history, with major reakthroughs very recently, resulting in being called the &ldquo;Fermat&rsquo;s last theorem of biology&rdquo;. Here is a great video on it by the one and only, <a href="https://www.youtube.com/watch?v=P_fHJIYENdI">Veritasium</a></p>
+<h3>Secondary structure prediction<span class="hx:absolute hx:-mt-20" id="secondary-structure-prediction"></span>
+    <a href="#secondary-structure-prediction" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li><strong>α‑helix</strong>: stabilised by backbone hydrogen bonds (i → i+3). Proline and glycine are helix breakers.</li>
+<li><strong>β‑sheet</strong>: extended, stabilised by inter‑strand hydrogen bonds. Branched/aromatic residues (Ile, Val, Thr, Phe, Tyr, Trp) favour β‑strands.</li>
+<li><strong>Turns &amp; loops</strong>: connect secondary elements.</li>
+<li><strong>Concept</strong>: Prediction uses known preferences of amino acids (e.g., Glu and Lys prefer helices). It’s not 100% accurate but useful for quick fold classification.</li>
+</ul>
+<p><strong>Worked Example (from manual)</strong>: Predict secondary structure of P68871 (human beta‑globin).</p>
+<ul>
+<li><strong>Step 1:</strong> Get FASTA sequence from NCBI.</li>
+<li><strong>Step 2:</strong> Go to <a href="http://www.compbio.dundee.ac.uk/jpred/">JPred</a> OR <a href="https://alphafoldserver.com"> Alpha fold</a> (Alpha fold is harder to understand, and more time demanding), paste sequence, submit.</li>
+<li><strong>Output:</strong> Jnet prediction shows α‑helix rich regions (e.g. residues 6–16, 24–35, 102–119). Turn residues at 21–23, 78–80. No β‑strands.<br>
+<em>Why?</em> Globin fold is predominantly α‑helical.</li>
+</ul>
+<!-- VIDEO: Secondary structure prediction (e.g., "How JPred works") -->
+<h3>🧬 Homology modelling (comparative modelling)<span class="hx:absolute hx:-mt-20" id="-homology-modelling-comparative-modelling"></span>
+    <a href="#-homology-modelling-comparative-modelling" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>When the experimental 3D structure of your protein is unknown, but a <strong>homologous protein</strong> with known structure exists, you can build a reliable model.<br>
+<strong>Core idea</strong>: Protein structure evolves slower than sequence. If two proteins share ≥30% sequence identity, they almost certainly have the same overall fold.</p>
+<h4>Step‑by‑step workflow (using free online tools)<span class="hx:absolute hx:-mt-20" id="stepbystep-workflow-using-free-online-tools"></span>
+    <a href="#stepbystep-workflow-using-free-online-tools" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ol>
+<li>
+<p><strong>Find a template</strong></p>
+<ul>
+<li>Run <strong>BLASTp</strong> (protein‑protein) against the <strong>PDB</strong> database.</li>
+<li>Look for a hit with <strong>high identity (&gt;30%)</strong>, low E‑value, and good coverage.</li>
+<li>Example: For human GABA transaminase (P80404), BLASTp returns pig 1OHV at 96% identity.</li>
+</ul>
+</li>
+<li>
+<p><strong>Align target and template</strong></p>
+<ul>
+<li>Use <strong>ClustalW</strong> (or MUSCLE) to align the query (your protein) and the template sequence.</li>
+<li>The alignment must be accurate – errors here ruin the model.</li>
+<li>🔗 <a
+    href="https://www.genome.jp/tools-bin/clustalw"target="_blank" rel="noopener">ClustalW online</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Build the 3D model</strong></p>
+<ul>
+<li>Upload the alignment to <strong>Swiss‑Model</strong> (fully automated) or <strong>MODELLER</strong> (more control).</li>
+<li>Swiss‑Model will automatically generate a model and give you a quality estimate.</li>
+<li>🔗 <a
+    href="https://swissmodel.expasy.org/"target="_blank" rel="noopener">Swiss‑Model</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Evaluate model quality</strong> – never trust a model blindly! You should know only how to read the results, even that is a little extreme</p>
+<ul>
+<li><strong>Ramachandran plot</strong>: shows whether backbone angles are realistic. &gt;90% residues in “favoured” regions = good.</li>
+<li><strong>QMEAN score</strong>: a composite score where ~0 is ideal, slightly negative is acceptable.</li>
+<li><strong>DOPE score</strong> (MODELLER): more negative = better. Compare with the template’s DOPE score.</li>
+<li><strong>RMSD</strong> (root‑mean‑square deviation) between model and template: &lt;1 Å is excellent.</li>
+</ul>
+</li>
+</ol>
+<h4>Worked example (from the lab manual)<span class="hx:absolute hx:-mt-20" id="worked-example-from-the-lab-manual"></span>
+    <a href="#worked-example-from-the-lab-manual" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><p><strong>Target</strong>: Human 4‑aminobutyrate aminotransferase (P80404, 500 aa)<br>
+<strong>Template</strong>: Pig GABA transaminase (PDB: 1OHV, 472 aa, 96% identity)</p>
+<ul>
+<li><strong>BLASTp result</strong>: 1OHV, E‑value = 0.0, identities = 453/472 (96%), gaps = 0%.</li>
+<li><strong>Alignment</strong>: ClustalW (no gaps needed – trivial).</li>
+<li><strong>Model building</strong>: Swiss‑Model (one‑click).</li>
+<li><strong>Quality evaluation</strong>:
+<ul>
+<li>Ramachandran plot: 99.5% residues in favoured regions → excellent.</li>
+<li>QMEAN = –1.13 (acceptable, well within the range of reliable models).</li>
+<li>DOPE score (MODELLER): model –55550, template –56652 (both good; model slightly worse but still reliable).</li>
+<li>RMSD = 0.07 Å → almost identical backbone.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Why homology modelling works</strong>: Even if two sequences diverge, their 3D folds are constrained by the same physical forces (hydrophobic collapse, hydrogen bonds, disulfide bridges). A 30% identity threshold is empirical – below that, modelling becomes risky.</p>
+<div class="hextra-badge ">
+  <div class="hx:inline-flex hx:gap-1 hx:items-center hx:rounded-full hx:px-2.5 hx:leading-6 hx:text-[.65rem] hx:border hx:text-gray-600 hx:bg-gray-100 hx:dark:bg-neutral-800 hx:dark:text-neutral-200 hx:border-gray-200 hx:dark:border-neutral-700">Exploration</div>
+</div> Practice with Swiss‑Model using any protein of interest. Try a low‑identity template (>30%) and see how the QMEAN score warns you about low reliability.
+<h3>Quality indicators<span class="hx:absolute hx:-mt-20" id="quality-indicators"></span>
+    <a href="#quality-indicators" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ul>
+<li><strong>Ramachandran plot</strong>: Shows allowed φ, ψ angles. &gt;90% residues in “favoured” regions = good.</li>
+<li><strong>QMEAN score</strong>: ~0 is ideal, negative acceptable if not too low.</li>
+<li><strong>DOPE score</strong>: more negative = better (compare with template).</li>
+</ul>
+<!-- VIDEO: Homology modelling with Swiss‑Model (official tutorial) -->
+<!-- IMAGE: Ramachandran plot example -->
+<div class="hextra-badge ">
+  <div class="hx:inline-flex hx:gap-1 hx:items-center hx:rounded-full hx:px-2.5 hx:leading-6 hx:text-[.65rem] hx:border hx:text-gray-600 hx:bg-gray-100 hx:dark:bg-neutral-800 hx:dark:text-neutral-200 hx:border-gray-200 hx:dark:border-neutral-700">Exploration</div>
+</div> Use Swiss‑PDB Viewer (free) to visualise models, superimpose structures, and measure distances (RMSD < 1 Å is excellent).
+</div><div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-tabs-00-6" role="tabpanel" aria-labelledby="tabs-tab-tabs-00-6" aria-hidden="true"><div style="border: 1px solid #ccc; border-radius: 12px; overflow: hidden;">
+  <iframe src="/ibo2022-sim.html" style="width: 100%; height: 90vh; border: none;" allow="fullscreen"></iframe>
+</div>
+<p><em>The above interactive simulation reproduces the <strong>IBO 2022 Bioinformatics Practical</strong> (chemokine signalling pathway, KEGG expression mapping, alignment tasks). Click the tabs to explore. This is a static HTML/JS version – the full exam would be inside a secure browser.</em></p>
+<p><strong>How to use this simulation:</strong></p>
+<ul>
+<li><strong>Network Construction</strong>: Click a node, then another to add an edge. Choose interaction type and state. Click on an edge to delete it. Submit to see your score.</li>
+<li><strong>KEGG</strong>: Map control/case expression, calculate PSF, edit FC values to simulate compound effects.</li>
+<li><strong>Exam Questions</strong>: Test your knowledge with multiple‑choice questions (answers validated against official key).</li>
+</ul>
+</div><div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-tabs-00-7" role="tabpanel" aria-labelledby="tabs-tab-tabs-00-7" aria-hidden="true"><h2>📚 Additional worked examples from bioinformatics lab manual<span class="hx:absolute hx:-mt-20" id="-additional-worked-examples-from-bioinformatics-lab-manual"></span>
+    <a href="#-additional-worked-examples-from-bioinformatics-lab-manual" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Each example below includes a short <strong>explanation</strong> of what the step accomplishes.</p>
+<h3>Worked Example 1: Finding conserved domains with Pfam / hmmscan<span class="hx:absolute hx:-mt-20" id="worked-example-1-finding-conserved-domains-with-pfam--hmmscan"></span>
+    <a href="#worked-example-1-finding-conserved-domains-with-pfam--hmmscan" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p><strong>Protein</strong>: HOXA5 (NP_061975.2)<br>
+<strong>Task</strong>: Identify the homeodomain and its amino acid range.</p>
+<ul>
+<li><strong>Step 1 (retrieve sequence)</strong>: Go to NCBI Protein, search <code>NP_061975.2</code>, click FASTA – we need the raw sequence for analysis.</li>
+<li><strong>Step 2 (run hmmscan)</strong>: In the IBO app (or InterProScan), paste the FASTA, select Pfam‑A database, set E‑value threshold 1e‑5 (high significance).</li>
+<li><strong>Step 3 (interpret output)</strong>: The result shows “Homeodomain (PF00046)” from residue 199 to 251.<br>
+<em>Why?</em> Domains are functional units; identifying them helps predict protein function (here: DNA binding).</li>
+</ul>
+<!-- IMAGE: HMMSCAN output screenshot -->
+<h3>Worked Example 2: ORF finding and translation (Cas9)<span class="hx:absolute hx:-mt-20" id="worked-example-2-orf-finding-and-translation-cas9"></span>
+    <a href="#worked-example-2-orf-finding-and-translation-cas9" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p><strong>Input</strong>: <em>S. pyogenes</em> Cas9 coding DNA (provided as “Cas9‑locus.fasta”).<br>
+<strong>Task</strong>: Extract the open reading frame and translate to protein.</p>
+<ul>
+<li><strong>Step 1 (ORF Finder)</strong>: Open tool, paste DNA sequence, set minimum ORF length = 1000 aa (Cas9 &gt; 1000 aa), genetic code = 1 (standard).</li>
+<li><strong>Step 2 (select the correct ORF)</strong>: The tool lists all possible ORFs; choose the longest one starting with ATG and ending with a stop codon.</li>
+<li><strong>Step 3 (copy protein sequence)</strong>: The translated protein sequence is used for alignment and homology modelling.<br>
+<em>Why?</em> ORF finding is essential to obtain the coding region from genomic DNA.</li>
+</ul>
+<!-- VIDEO: ORF finder tutorial -->
+<h3>Worked Example 3: BLAST to find homologous proteins<span class="hx:absolute hx:-mt-20" id="worked-example-3-blast-to-find-homologous-proteins"></span>
+    <a href="#worked-example-3-blast-to-find-homologous-proteins" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p><strong>Query</strong>: Human GABA transaminase (P80404).<br>
+<strong>Task</strong>: Find the most similar protein from pig.</p>
+<ul>
+<li><strong>Step 1 (blastp)</strong>: Paste the human FASTA into blastp, select “Swiss‑Prot” database (curated).</li>
+<li><strong>Step 2 (examine top hit)</strong>: The best hit is P80147 (pig GABA transaminase) with E‑value = 0.0, 96% identity.</li>
+<li><strong>Step 3 (interpret)</strong>: High identity (&gt;90%) means the two proteins are almost identical – excellent for homology modelling.<br>
+<em>Why?</em> BLAST quickly identifies orthologs across species.</li>
+</ul>
+<h3>Worked Example 4: Global alignment using Needleman‑Wunsch<span class="hx:absolute hx:-mt-20" id="worked-example-4-global-alignment-using-needlemanwunsch"></span>
+    <a href="#worked-example-4-global-alignment-using-needlemanwunsch" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p><strong>Sequences</strong>: Two nearly identical protein fragments (from manual).<br>
+<strong>Task</strong>: Perform global alignment and interpret gaps.</p>
+<ul>
+<li><strong>Step 1 (set scoring)</strong>: match = +1, mismatch = 0, gap = –1 (typical for simple exercises).</li>
+<li><strong>Step 2 (build DP table)</strong>: Fill cell by cell using max of left+gap, up+gap, diagonal+(match/mismatch).</li>
+<li><strong>Step 3 (traceback)</strong>: Follow arrows from bottom‑right to top‑left to reconstruct alignment.</li>
+<li><strong>Result</strong>: Score 260, 56% identity, gaps due to length difference.<br>
+<em>Why?</em> The algorithm guarantees the optimal alignment under the given scoring scheme – used when sequences are similar in length.</li>
+</ul>
+<!-- INTERACTIVE: Link to an online DP simulator -->
+<h3>Worked Example 5: GC‑skew and replication origin<span class="hx:absolute hx:-mt-20" id="worked-example-5-gcskew-and-replication-origin"></span>
+    <a href="#worked-example-5-gcskew-and-replication-origin" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p><strong>Genome</strong>: <em>B. burgdorferi</em> B31 (circular, 910 724 bp).<br>
+<strong>Task</strong>: Locate OriC by GC‑skew window search.</p>
+<ul>
+<li><strong>Step 1 (window parameters)</strong>: window = 200 bp, step = 200 bp, skew = ([C]-[G])/([C]+[G]).</li>
+<li><strong>Step 2 (plot)</strong>: Observe two sharp switching points (50 kb and 900 kb).</li>
+<li><strong>Step 3 (confirm with DnaA)</strong>: tblastn with DnaA protein sequence → hit at 200–300 kb.<br>
+<em>Why?</em> The replication origin is where GC‑skew changes from negative to positive (or vice versa) and contains the initiator protein DnaA.</li>
+</ul>
+<h3>Worked Example 6: Secondary structure prediction (JPred)<span class="hx:absolute hx:-mt-20" id="worked-example-6-secondary-structure-prediction-jpred"></span>
+    <a href="#worked-example-6-secondary-structure-prediction-jpred" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p><strong>Sequence</strong>: Human myoglobin (P02144).<br>
+<strong>Task</strong>: Predict α‑helices and β‑strands.</p>
+<ul>
+<li><strong>Step 1 (input)</strong>: Paste FASTA into JPred, run prediction.</li>
+<li><strong>Step 2 (interpret)</strong>: Jnet output shows “HHHHHH” for most residues → all‑α protein.</li>
+<li><strong>Step 3 (confidence)</strong>: Reliability scores &gt;8 indicate high confidence.<br>
+<em>Why?</em> Secondary structure prediction helps understand protein fold before 3D structure is known.</li>
+</ul>
+<h3>Worked Example 7: Homology modelling with Swiss‑Model<span class="hx:absolute hx:-mt-20" id="worked-example-7-homology-modelling-with-swissmodel"></span>
+    <a href="#worked-example-7-homology-modelling-with-swissmodel" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p><strong>Target</strong>: Human 4‑aminobutyrate aminotransferase (P80404).<br>
+<strong>Template</strong>: Pig 1OHV (96% identity).</p>
+<ul>
+<li><strong>Step 1 (template search)</strong>: Swiss‑Model automatically finds 1OHV as the best template.</li>
+<li><strong>Step 2 (model building)</strong>: One‑click generates a 3D model.</li>
+<li><strong>Step 3 (quality evaluation)</strong>: QMEAN = –1.13 (acceptable), Ramachandran plot 99.5% in favoured regions.</li>
+<li><strong>Step 4 (validation)</strong>: RMSD to template = 0.07 Å – extremely close.<br>
+<em>Why?</em> A reliable model can be used for further computational studies (docking, mutation analysis).</li>
+</ul>
+<hr>
+<p><em>These worked examples correspond to experiments 1–10 of the standard bioinformatics lab manual. Use them to practise before the exam.</em></p>
+</div><div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-tabs-00-8" role="tabpanel" aria-labelledby="tabs-tab-tabs-00-8" aria-hidden="true"><div id="Solution-dotplot"><strong>Solution:</strong></div>
+<p>Answer for Q1: <img src="/BIOINFOPICS/dotplot1q1.png" alt="Dot plot solution"  data-zoomable loading="lazy" /></p>
+<p><img src="/BIOINFOPICS/dotplot1q12.png" alt="Dot plot step 2"  data-zoomable loading="lazy" /></p>
+<p>Please note that the inverted line shows, well, <strong>possible</strong> inversions.</p>
+<p>Please proceed with permutations as you wish, here is a sample:</p>
+<p><img src="/BIOINFOPICS/dotplot1q13.png" alt="Dot plot permutation example"  data-zoomable loading="lazy" />
+Note here that using D=s+wg
+Here, s is the number of substitutions; w is the gap weight (here 1 as blank space is 1); g is the number of gaps which is 2:
+Hence D = 1 + 1*2 = 3<br><br></p>
+<div id="msa-solution">
+  <strong>✅ Solution to MSA problem (zinc‑finger proteins)</strong><br><br>
+<p><strong>1. Multiple sequence alignment (Clustal Omega, default settings)</strong><br>
+<img src="/BIOINFOPICS/msa_alignment.png" alt="MSA alignment output" style="max-width:100%;"><br><br></p>
+<p><strong>a) 100% identical positions</strong><br>
+All residues are identical except at two positions:<br></p>
+<ul>
+<li>Position 20: R (Arg) in Sp1, Sp2, Sp5   vs   Q (Gln) in Sp3, Sp4<br></li>
+<li>Position 24: T (Thr) in Sp1, Sp2, Sp5   vs   Q (Gln) in Sp3, Sp4<br>
+Therefore, the conserved positions are: <strong>1–19, 21–23, 25–27</strong>.<br><br></li>
+</ul>
+<p><strong>b) Conservative substitutions</strong><br></p>
+<ul>
+<li>Position 24: Thr → Gln. Both are polar uncharged → <strong>conservative</strong>.<br></li>
+<li>Position 20: Arg → Gln. Arg is basic (+), Gln is polar neutral → <strong>not conservative</strong>.<br>
+Hence only one conservative substitution (position 24).<br><br></li>
+</ul>
+<p><strong>c) CXXC motif (zinc‑finger signature)</strong><br>
+Residues 3‑6 form: <strong>Cys‑Pro‑Glu‑Cys</strong> → CPEC, a canonical CXXC motif.<br><br></p>
+<p><strong>2. Cladogram (most parsimonious tree)</strong><br>
+<img src="/BIOINFOPICS/msa_tree.png" alt="Phylogenetic tree" style="max-width:100%;"><br>
+Explanation: Sp1, Sp2, Sp5 are identical → they form one clade. Sp3 and Sp4 are identical to each other but differ from the first group at two positions → they branch together as a separate clade.<br><br></p>
+<p><strong>3. Alignment quality assessment</strong><br>
+The sequences are extremely similar (no gaps, only two mismatches). Any standard alignment algorithm (Clustal, MUSCLE) with default parameters will produce exactly the same alignment as shown. Changing gap penalties (e.g., gap opening = 10 or 20) has no effect because no gaps are introduced.<br><br></p>
+  <div class="hextra-badge ">
+    <div class="hx:inline-flex hx:gap-1 hx:items-center hx:rounded-full hx:px-2.5 hx:leading-6 hx:text-[.65rem] hx:border hx:text-gray-600 hx:bg-gray-100 hx:dark:bg-neutral-800 hx:dark:text-neutral-200 hx:border-gray-200 hx:dark:border-neutral-700">IBO insight</div>
+  </div> In a real IBO practical, you would use the exam’s built‑in alignment tool. Always check the conservation line (`*`, `:`, `.`) to identify functionally important residues.
+</div><br><br>
+<div id="upgma-solution">
+  <strong>✅ UPGMA solution</strong></div>
+  <strong>Step 1:</strong> Smallest distance = 8 (A‑B, A‑C, B‑C). Join A and B.<br>
+  New node AB. Branch lengths: A→AB = 4, B→AB = 4.<br>
+  Distances from AB to others: d(AB)C = (8+8)/2 = 8; d(AB)D = (10+10)/2 = 10.<br>
+<p><strong>Step 2:</strong> Smallest distance = 8 (AB‑C). Join AB and C.<br>
+New node ABC. Branch lengths: AB→ABC = 4, C→ABC = 4.<br>
+Distances from ABC to D: (10+10+10)/3 = 10.<br></p>
+<p><strong>Step 3:</strong> Join ABC and D. Branch lengths: ABC→root = 5, D→root = 5.<br></p>
+<p><strong>Final tree (Newick format):</strong></p>
+  <pre>((A:4,B:4):4,C:4):5,D:5;</pre>
+<p><img src="/BIOINFOPICS/upgma_tree.png" alt="UPGMA tree" style="max-width:100%;"><br></p>
+<p><strong>Note:</strong> The matrix is not ultrametric, so the tree does not reproduce the original distances (e.g., A‑C distance in the tree is 12, not 8). This illustrates a common mistake of applying UPGMA when the molecular clock does not hold.
+<br><br></p>
+<div id="nj-solution">
+  <strong>✅ Neighbor‑Joining solution</strong></div>
+<p><strong>First iteration (n=5):</strong><br>
+Row sums: r_A=54, r_B=57, r_C=61, r_D=66, r_E=78.<br>
+Q_AB = 3*10 – 54 – 57 = –81 (smallest). Join A and B.<br>
+New node u. Branch lengths: d_Au = 4.5, d_Bu = 5.5.<br>
+New distances: d_uC = 7.5, d_uD = 9.5, d_uE = 13.5.<br></p>
+<p><strong>Full tree (after completing all iterations):</strong></p>
+  <pre>((((A:4.5,B:5.5):0.5,C:7.0):0.5,D:8.5):6.25,E:6.25);</pre>
+<p><img src="/BIOINFOPICS/nj_tree.png" alt="NJ tree" style="max-width:100%;"><br></p>
+<p><strong>Advantage of NJ:</strong> Does not assume a molecular clock; correctly reconstructs additive trees even with unequal rates.<br>
+<strong>Common mistake:</strong> Using UPGMA on non‑ultrametric data leads to long‑branch attraction and incorrect topologies.
+<br><br></p>
+<div id="ml-solution">
+  <strong>✅ Maximum Likelihood solution</strong></div>
+<p><strong>1.</strong> GTR+G has the highest log‑likelihood (–2395.2), but it also has more parameters. A formal test is needed.<br></p>
+<p><strong>2.</strong> Likelihood ratio test (LRT) between HKY85 and GTR+G:<br>
+ΔlnL = (–2395.2) – (–2401.7) = 6.5<br>
+Test statistic = 2 × ΔlnL = 13.0<br>
+Degrees of freedom = 3 (extra parameters in GTR).<br>
+Critical χ²(3) at α=0.05 = 7.815.<br>
+Since 13.0 &gt; 7.815, the improvement is significant → GTR+G fits significantly better.<br></p>
+<p><strong>3.</strong> Gamma shape parameter α estimates rate heterogeneity among sites. α &lt; 1 indicates strong rate variation (some sites evolve fast, others slow).<br></p>
+<p><strong>4.</strong> Despite significance, for a short alignment (100 bp) GTR+G may be over‑parameterised. A conservative choice would be HKY85 if the tree topology does not change.<br></p>
+<p><strong>5.</strong> Bootstrap support (e.g., 95%) means that the clade appears in 95% of resampled datasets; it is a measure of confidence, not the probability that the clade is correct.</p>
+<p>Although no tree was requested in this problem, here is the final tree:
+<img src="/BIOINFOPICS/ml_tree.png" alt="ML TREE"  data-zoomable loading="lazy" /></p>
+<h3>📚 Recommended External Resources<span class="hx:absolute hx:-mt-20" id="-recommended-external-resources"></span>
+    <a href="#-recommended-external-resources" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><h4>🎥 YouTube channels for bioinformatics concepts<span class="hx:absolute hx:-mt-20" id="-youtube-channels-for-bioinformatics-concepts"></span>
+    <a href="#-youtube-channels-for-bioinformatics-concepts" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><strong><a
+    href="https://www.youtube.com/@BiotechLekh"target="_blank" rel="noopener">BiotechLekh</a></strong> – detailed explanations of BLAST, DP, trees.</li>
+<li><strong><a
+    href="https://www.youtube.com/@Bioinformagician"target="_blank" rel="noopener">Bioinformagician</a></strong> – algorithm visualisations.</li>
+<li><strong><a
+    href="https://www.youtube.com/user/NCBINLM"target="_blank" rel="noopener">NCBI’s official channel</a></strong> – tutorials on GenBank, BLAST.</li>
+<li><strong><a
+    href="https://www.youtube.com/@iBiology"target="_blank" rel="noopener">iBiology</a></strong> – high‑quality lectures on protein structure and evolution.</li>
+</ul>
+<h4>📖 Free online textbooks<span class="hx:absolute hx:-mt-20" id="-free-online-textbooks"></span>
+    <a href="#-free-online-textbooks" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><a
+    href="https://www.bioinformaticsalgorithms.org/"target="_blank" rel="noopener">Bioinformatics Algorithms (Compeau &amp; Pevzner)</a> – interactive.</li>
+<li><a
+    href="https://www.ncbi.nlm.nih.gov/books/NBK21101/"target="_blank" rel="noopener">NCBI Handbook</a> – official reference.</li>
+</ul>
+<h4>🛠️ Interactive tools to practice<span class="hx:absolute hx:-mt-20" id="-interactive-tools-to-practice"></span>
+    <a href="#-interactive-tools-to-practice" class="subheading-anchor" aria-label="Permalink for this section"></a></h4><ul>
+<li><a
+    href="https://blast.ncbi.nlm.nih.gov/"target="_blank" rel="noopener">BLAST on the web</a></li>
+<li><a
+    href="https://www.ebi.ac.uk/Tools/msa/clustalo/"target="_blank" rel="noopener">Clustal Omega</a></li>
+<li><a
+    href="http://www.atgc-montpellier.fr/phyml/"target="_blank" rel="noopener">PhyML online</a></li>
+<li><a
+    href="https://swissmodel.expasy.org/"target="_blank" rel="noopener">Swiss‑Model</a></li>
+</ul>
+<!-- IMAGE: Cheat sheet for sequence alignment scoring matrices (BLOSUM, PAM) -->
+<!-- VIDEO: Quick recap of all key concepts (maybe a 10‑minute summary) -->
+</div><div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-tabs-00-" role="tabpanel" aria-labelledby="tabs-tab-tabs-00-" aria-hidden="true"></div></div>
+
+<script>
+(function() {
+  // Reliable tab switching for Hextra theme
+  window.switchToTabAndScroll = function(tabIndex, elementId) {
+    // Try different selectors for Hextra tab buttons
+    const tablist = document.querySelector('[role="tablist"]') || 
+                    document.querySelector('.hextra-tabs__list') ||
+                    document.querySelector('.tabs');
+    if (tablist) {
+      const buttons = tablist.querySelectorAll('button');
+      if (buttons[tabIndex]) {
+        buttons[tabIndex].click();
+      } else {
+        console.warn('Tab button not found for index', tabIndex);
+      }
+    } else {
+      console.warn('Tab container not found');
+    }
+    // Scroll to the target element after a short delay (tab content needs to render)
+    setTimeout(function() {
+      const el = document.getElementById(elementId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else {
+        console.warn('Element with id', elementId, 'not found');
+      }
+    }, 200);
+  };
+
+  // Handle hash links on page load (e.g., #solution-dotplot)
+  function handleHashOnLoad() {
+    if (window.location.hash) {
+      const targetId = window.location.hash.substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        // Find the tab panel containing the target
+        const panels = document.querySelectorAll('[role="tabpanel"]');
+        if (panels.length) {
+          let foundIndex = -1;
+          for (let i = 0; i < panels.length; i++) {
+            if (panels[i].contains(targetElement)) {
+              foundIndex = i;
+              break;
+            }
+          }
+          if (foundIndex !== -1) {
+            const tablist = document.querySelector('[role="tablist"]');
+            if (tablist) {
+              const buttons = tablist.querySelectorAll('button');
+              if (buttons[foundIndex]) buttons[foundIndex].click();
+            }
+          }
+        }
+        setTimeout(() => {
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 200);
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', handleHashOnLoad);
+  window.addEventListener('hashchange', handleHashOnLoad);
+})();
+</script>
+        </div>
+        <div class="hx:mt-16"></div>
+        
+      </main>
+    </article>
+  </div>
+
+      <footer class="hextra-footer hx:bg-gray-100 hx:pb-[env(safe-area-inset-bottom)] hx:dark:bg-neutral-900 hx:print:bg-transparent"><div class="hx:mx-auto hx:flex hx:gap-2 hx:py-2 hx:px-4 hextra-max-footer-width"><div class="hx:flex hx:justify-items-start hx:group" data-theme="light">
+  <button
+    title="Change theme"
+    data-state="closed"
+    data-location="bottom"
+    class="hextra-theme-toggle hx:cursor-pointer hx:rounded-md hx:text-left hx:font-medium hx:h-7 hx:px-2 hx:text-xs hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:font-medium hx:text-gray-600 hx:transition-colors hx:dark:text-gray-400 hx:grow"
+    type="button"
+    aria-label="Change theme"
+    aria-expanded="false"
+    aria-haspopup="menu"
+  >
+    <div class="hx:flex hx:items-center hx:gap-2 hx:capitalize"><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><span class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden">Light</span><svg height=12 class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><span class="hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden">Dark</span><svg height=12 class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor">
+  <path d="M 11.996094,2 C 6.4986225,2.0192368 2.03125,6.5024993 2.03125,12 c 0,5.497501 4.4673725,9.980763 9.964844,10 H 12 12.0039 c 5.497471,-0.01924 9.964844,-4.502499 9.964844,-10 0,-5.4975007 -4.467373,-9.9807632 -9.964844,-10 H 12 Z M 12,4 c 4.417218,0.017598 7.96875,3.5822356 7.96875,8 0,4.417764 -3.551532,7.982402 -7.96875,8 z" />
+</svg>
+<span class="hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden">System</span></div>
+  </button>
+  <ul
+    class="hextra-theme-toggle-options hx:hidden hx:z-20 hx:max-h-64 hx:overflow-auto hx:rounded-lg hx:border hx:border-gray-200 hx:bg-white hx:p-1 hx:text-sm hx:shadow-lg hx:dark:border-neutral-700 hx:dark:bg-neutral-900"
+    style="position: fixed; inset: auto auto 0px 0px; margin: 0px; min-width: 100px;"
+    data-theme="light"
+    role="menu"
+  >
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="true"
+        tabindex="-1"
+        data-item="light"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
+      >
+        Light
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </button>
+    </li>
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="false"
+        tabindex="-1"
+        data-item="dark"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
+      >
+        Dark
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=light]:hidden hx:group-data-[theme=system]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </button>
+    </li>
+    <li role="none" class="hx:flex hx:flex-col">
+      <button
+        type="button"
+        role="menuitemradio"
+        aria-checked="false"
+        tabindex="-1"
+        data-item="system"
+        class="hx:text-gray-700 hx:dark:text-gray-300 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:hover:bg-neutral-800 hx:dark:hover:text-gray-100 hx:relative hx:cursor-pointer hx:whitespace-nowrap hx:rounded-sm hx:py-1.5 hx:transition-colors hx:ltr:pl-3 hx:ltr:pr-9 hx:rtl:pr-3 hx:rtl:pl-9 hx:text-left hx:w-full hx:bg-transparent hx:border-0"
+      >
+        System
+         <span class="hx:absolute hx:inset-y-0 hx:flex hx:items-center hx:ltr:right-3 hx:rtl:left-3 hx:group-data-[theme=dark]:hidden hx:group-data-[theme=light]:hidden"><svg height=1em width=1em xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+      </button>
+    </li>
+  </ul>
+</div>
+</div><hr class="hx:border-gray-200 hx:dark:border-neutral-800" /><div class="hextra-custom-footer hextra-max-footer-width hx:mx-auto hx:pl-[max(env(safe-area-inset-left),1.5rem)] hx:pr-[max(env(safe-area-inset-right),1.5rem)] hx:text-gray-600 hx:dark:text-gray-400"></div><div
+      class="hextra-max-footer-width hx:mx-auto hx:flex hx:justify-center hx:py-12 hx:pl-[max(env(safe-area-inset-left),1.5rem)] hx:pr-[max(env(safe-area-inset-right),1.5rem)] hx:text-gray-600 hx:dark:text-gray-400 hx:md:justify-start"
+    >
+      <div class="hx:flex hx:w-full hx:flex-col hx:items-center hx:sm:items-start"><div class="hx:font-semibold"><a class="hx:flex hx:text-sm hx:items-center hx:gap-1 hx:text-current" target="_blank" rel="noopener noreferrer" title="Hextra GitHub Homepage" href="https://github.com/imfing/hextra">
+    <span>Powered by Hextra<svg height=1em class="hx:inline-block hx:ltr:ml-1 hx:rtl:mr-1 hx:align-[-2.5px]" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="m 105.50024,22.224647 c -9.59169,-5.537563 -21.40871,-5.537563 -31.000093,0 L 39.054693,42.689119 C 29.463353,48.226675 23.55484,58.460531 23.55484,69.535642 v 40.928918 c 0,11.07542 5.908513,21.3092 15.499853,26.84652 l 35.445453,20.46446 c 9.591313,5.53732 21.408404,5.53732 31.000094,0 l 35.44507,-20.46446 c 9.59131,-5.53732 15.49985,-15.7711 15.49985,-26.84652 V 69.535642 c 0,-11.075111 -5.90854,-21.308967 -15.49985,-26.846523 z M 34.112797,85.737639 c -1.384445,2.397827 -1.384445,5.352099 0,7.749927 l 24.781554,42.922974 c 1.38437,2.39783 3.942853,3.87496 6.711592,3.87496 h 49.563107 c 2.76905,0 5.3273,-1.47713 6.71144,-3.87496 l 24.78194,-42.922974 c 1.38414,-2.397828 1.38414,-5.3521 0,-7.749927 L 121.88049,42.814746 c -1.38414,-2.397828 -3.94239,-3.874964 -6.71144,-3.874964 H 65.605944 c -2.768739,0 -5.327223,1.477059 -6.711592,3.874964 z" style="stroke-width:0.774993" /></svg></span>
+  </a></div></div>
+    </div></footer>
+    
+    <dialog
+    id="hextra-search-dialog"
+    class="hextra-search-dialog"
+    aria-label="Search..."
+  >
+    <div class="hextra-search">
+      <div class="hextra-search-input-wrapper"><svg class="hextra-search-input-icon" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg><input
+          class="hextra-search-input"
+          type="search"
+          role="combobox"
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+          spellcheck="false"
+          placeholder="Search..."
+          aria-label="Search..."
+          aria-controls="hextra-search-results"
+          aria-expanded="false"
+        /><button
+          type="button"
+          class="hextra-search-input-kbd"
+          data-search-close
+          aria-label="Close"
+        >ESC</button>
+      </div>
+      <div class="hextra-search-results-viewport" data-search-viewport>
+        <div class="hextra-search-results-inner hextra-scrollbar" data-search-inner>
+          <ul
+            id="hextra-search-results"
+            class="hextra-search-results"
+            role="listbox"
+            aria-label="Search results"
+          ></ul>
+          <div class="hextra-search-empty" data-search-empty hidden>No results found.</div>
+        </div>
+      </div>
+      <div class="hextra-search-status hx:sr-only" aria-live="polite" role="status"></div>
+    </div>
+  </dialog>
+    <script defer src="/js/main.js" integrity=""></script>
+<script defer src="/js/flexsearch.9f5b5908f93ae86f1ecd4b043b799f580c2d1654e703dd9357d568ac41b2547a.js" integrity="sha256-n1tZCPk66G8ezUsEO3mfWAwtFlTnA92TV9VorEGyVHo=" crossorigin="anonymous"></script><script defer src="/en.search.js" integrity=""></script>
+    <script defer src="/en.search-dialog.js" integrity=""></script>
+  </body>
+</html>

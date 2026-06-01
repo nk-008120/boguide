@@ -1,0 +1,790 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BioGuide IBO 2026 – Molecular, Cell Biology and Biochemistry</title>
+    <link>http://localhost:1313/resources/1-cell-molecular/</link>
+    <description>Recent content in Molecular, Cell Biology and Biochemistry on BioGuide IBO 2026</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="http://localhost:1313/resources/1-cell-molecular/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Biochemistry</title>
+      <link>http://localhost:1313/resources/1-cell-molecular/biochemistry/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/resources/1-cell-molecular/biochemistry/</guid>
+      <description>
+        
+        
+        &lt;script src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js&#34; id=&#34;MathJax-script&#34; async&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.MathJax = {
+    tex: {
+      inlineMath: [[&#39;$&#39;, &#39;$&#39;], [&#39;\\(&#39;, &#39;\\)&#39;]],
+      displayMath: [[&#39;$$&#39;, &#39;$$&#39;], [&#39;\\[&#39;, &#39;\\]&#39;]],
+      processEscapes: true
+    }
+  };
+&lt;/script&gt;
+&lt;p&gt;PROTEINS, ENZYMES and Their responsibilities.
+ 
+
+
+
+
+
+&lt;div class=&#34;hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain&#34;&gt;
+  &lt;div class=&#34;hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800&#34; role=&#34;tablist&#34;&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-00-0&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-00-0&#34; aria-selected=&#34;true&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Amino Acids&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-00-1&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-00-1&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Proteins&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-00-2&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-00-2&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Enzyme Kinetics&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-00-3&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-00-3&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;APPENDIX 1&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;button class=&#34;hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset&#34; id=&#34;tabs-tab-tabs-00-4&#34; role=&#34;tab&#34; type=&#34;button&#34; aria-controls=&#34;tabs-panel-tabs-00-4&#34; aria-selected=&#34;false&#34; tabindex=&#34;-1&#34;&gt;&lt;span class=&#34;hx:inline-flex hx:items-center hx:gap-1.5&#34;&gt;&lt;span&gt;Questions&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-0&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-0&#34; aria-hidden=&#34;false&#34; tabindex=&#34;0&#34; data-state=&#34;selected&#34;&gt;&lt;p&gt;Amino acids are the monomers, or building blocks, of proteins. They are the smallest subunits
+of a polypeptide chain, substituted methanes, which eventually folds to become a protein. Amino acids are made of
+two chemical groups, namely a carboxyl group, an amine group, and a variable R group, also
+known as a side chain. These chemical groups are all attached to a carbon, which also has an
+extra hydrogen atom binded to it. &lt;br&gt; &lt;img src=&#34;http://localhost:1313/MCBBPICS/Amino_Acid.png&#34; alt=&#34;Alt text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt; &lt;br&gt;
+The R groups, also known as side chains, are what determine an amino acid’s properties: buffering capabilities, hydrophobic properties, polarity, compressibility, and more. There are
+twenty unique R groups, and thus twenty unique amino acids, each with their own properties.
+It is recommended to study and memorize the properties of these amino acids before moving &lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/MCBBPICS/Amino_Acid2.png&#34; alt=&#34;Alt Text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt; &lt;br&gt;
+A few notable points about their behaviour are:&lt;br&gt;
+1: Order of aromaticity: Phe&amp;gt;Trp&amp;gt;Tyr&amp;gt;His &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;2: Nonpolar amino acids (there are 9) contain aliphatic (hydrocarbon) chains or aromatic rings.&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;3: Polar acidic amino acids (2) contain a carboxylic acid (or carboxylate) group in the side chain (R group). This is in addition to the one in the backbone of the amino acid. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;4: Polar basic amino acids (3) contain an amine (may be neutral or charged) group in the side chain (R group). This is in addition to the one in the backbone of the amino acid.&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;5: Polar neutral amino acids &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;6: Contain a hydroxyl (-OH), sulfur, or amide in the R group.
+&lt;br&gt;
+There are two important exceptions to the above rules.
+A) Tyrosine has an aromatic group and an -OH group and is considered polar neutral.&lt;br&gt;
+B) Methionine contains a sulfur but as a part of carbon chain. Sulfur has the same electronegativity as carbon, so it is considered nonpolar.
+&lt;br&gt; &lt;br&gt;
+7: &lt;span style=&#34;font-weight: bold;&#34;&gt;&lt;em&gt;Calculation of pI of amino acids&lt;/em&gt;:&lt;/span&gt;
+The isoelectric point &lt;strong&gt;pI&lt;/strong&gt; of an amino acid is the specific pH at which it has a net electrical charge of zero (existing mostly as a zwitterion). To find it, you average the two pK&lt;sub&gt;a&lt;/sub&gt; values that border the electrically neutral state
+&lt;br&gt;
+The isoelectric point is calculated as : $$ pI = \frac{pKa_1 + pKa_2}{2} $$
+For example, pI of lysine is supposed to be (9+10.5/)2 = 9.75, but its pK&lt;sub&gt;a&lt;/sub&gt; values are 2.2, 9, 10.5 respectively. this is as the &lt;a href=&#34;#&#34; onclick=&#34;switchToTabAndScroll(3, &#39;zwitterion-definition&#39;); return false;&#34;&gt;zwitterion&lt;/a&gt; exists between these pH.
+&lt;a href=&#34;https://www.youtube.com/watch?v=Gkb4it5nOuc&amp;t=522s&#34;&gt; Watch Organic Chemistry Tutor&amp;rsquo;s video on this &lt;/a&gt;
+&lt;br&gt;&lt;br&gt;&lt;a href=&#34;#&#34; onclick=&#34;switchToTabAndScroll(3, &#39;glyco-phospho&#39;); return false;&#34;&gt;Glycosylation and Phosphorylation*&lt;/a&gt; &lt;br&gt;
+8: &lt;span style=&#34;font-size: 1.2rem;&#34;&gt;Phosphorylation targets: Ser, Thr, Tyr, His&lt;/span&gt; &lt;br&gt;Because their side chains contain nucleophilic hydroxyl ((-OH)) or nitrogen-containing functional groups. These groups allow kinases to attach a phosphate group, creating a reversible switch that regulates protein function, stability, and cellular signaling
+&lt;br&gt;&lt;br&gt;
+9: &lt;span style=&#34;font-size: 1.2rem;&#34;&gt;N-Glycosylation and O-Glycosylation sites: Asp and Ser, Thr respectively&lt;/span&gt;&lt;br&gt;
+N-Glycosylation:&lt;br&gt;Consensus Sequence: Asn - X - Ser / Thr (where X is any amino acid except Proline)&lt;br&gt;Why: The enzyme oligosaccharyltransferase (OST) scans the unfolded protein during synthesis for this specific tri-peptide pattern. The side chain of asparagine contains a reactive nitrogen group where an entire, pre-assembled 14-sugar carbohydrate block is attached&lt;br&gt;
+O-Glycosylation: Consensus Sequence: None strictly defined&lt;br&gt; These attach to flexible, proline-rich regions.Why: Serine and threonine both contain exposed hydroxyl side chains. Enzymes in the Golgi apparatus (such as polypeptide N-acetylgalactosaminyltransferases) use this group as a nucleophile to add sugars one by one&lt;br&gt;&lt;br&gt;
+&lt;span class=&#34;badge-custom&#34;&gt;Important&lt;/span&gt; &lt;br&gt;
+10: A basic trick is that phosphorylation or glycosylation do not always serve some specific purpose, everything depends on the combination of the site of addition, the final product added, and the conformational/chemical change.
+&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;!-- ═══════════════════════════════════════════════════════════
+     ADDITIONAL IBO-RELEVANT CONTENT — AMINO ACIDS
+     ═══════════════════════════════════════════════════════════ --&gt;
+&lt;p&gt;&lt;span class=&#34;badge-custom&#34;&gt;IBO Essential&lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;11: Henderson-Hasselbalch &amp;amp; Amino Acid Titration Curves&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;11-henderson-hasselbalch--amino-acid-titration-curves&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#11-henderson-hasselbalch--amino-acid-titration-curves&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;At any given pH, the ratio of protonated to deprotonated form of an ionisable group is given by:&lt;/p&gt;
+&lt;p&gt;$$ \text{pH} = pK_a + \log\frac{[\text{A}^-]}{[\text{HA}]} $$&lt;/p&gt;
+&lt;p&gt;This means:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When &lt;strong&gt;pH &amp;lt; pKₐ&lt;/strong&gt;: the protonated (charged for amines, neutral for carboxyl) form predominates&lt;/li&gt;
+&lt;li&gt;When &lt;strong&gt;pH = pKₐ&lt;/strong&gt;: both forms exist in equal concentration — this is the &lt;strong&gt;half-equivalence point&lt;/strong&gt; on a titration curve&lt;/li&gt;
+&lt;li&gt;When &lt;strong&gt;pH &amp;gt; pKₐ&lt;/strong&gt;: the deprotonated form predominates&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Reading a titration curve:&lt;/strong&gt; The titration curve of a polyprotic amino acid (e.g., lysine with pKₐ values 2.2, 9.0, 10.5) shows three inflection points. The pI lies between the two pKₐ values that flank the neutral (zwitterionic) species. The &lt;strong&gt;plateau regions&lt;/strong&gt; (buffering zones) occur ±1 pH unit around each pKₐ — the amino acid resists pH change most effectively here.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:acid-base-titration-curves/v/amino-acid-titration&#34; target=&#34;_blank&#34;&gt;Khan Academy — Amino Acid Titration Curves (video)&lt;/a&gt;&lt;br&gt;
+&lt;em&gt;Please switch to light mode&lt;/em&gt;
+&lt;img src=&#34;http://localhost:1313/MCBBPICS/LYSINECURVE.png&#34; alt=&#34;Titration curve schematic — lysine showing three pKa inflection points and pI&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+&lt;em&gt;Titration curves for glycine (monoprotic backbone) and lysine (with basic side chain). Note the third inflection point and the position of pI between the two pKₐ values flanking the zwitterion. (Source: Wikimedia Commons, CC BY-SA)&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span class=&#34;badge-custom&#34;&gt;IBO Essential&lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;12: Essential vs. Non-Essential Amino Acids&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;12-essential-vs-non-essential-amino-acids&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#12-essential-vs-non-essential-amino-acids&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Of the 20 standard amino acids, &lt;strong&gt;9 are essential&lt;/strong&gt; — humans cannot synthesise them and must obtain them from diet:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;His, Ile, Leu, Lys, Met, Phe, Thr, Trp, Val&lt;/strong&gt;
+Mnemonic: &lt;strong&gt;&amp;ldquo;PVT TIM HaLL&amp;rdquo;&lt;/strong&gt; (Phe, Val, Thr, Trp, Ile, Met, His, Leu, Lys)&lt;/p&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Conditionally essential&lt;/strong&gt; amino acids become dietary requirements under specific physiological conditions (growth, illness, pregnancy):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Arg&lt;/strong&gt; — essential during growth; adults can synthesise it via the urea cycle but often inadequately&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cys&lt;/strong&gt; — can be synthesised from Met (requires adequate Met supply)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tyr&lt;/strong&gt; — synthesised from Phe (absent in phenylketonuria/PKU)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Gln, Pro, Gly&lt;/strong&gt; — conditionally essential in severe illness or very low intake&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;badge-exploration&#34;&gt;Explore!&lt;/span&gt; Phenylketonuria (PKU) is a classic IBO disease context: loss-of-function of &lt;strong&gt;phenylalanine hydroxylase (PAH)&lt;/strong&gt; prevents conversion of Phe → Tyr. Phe accumulates, is transaminated to phenylpyruvate, causing neurological damage. Tyr becomes conditionally essential. &lt;a href=&#34;https://omim.org/entry/261600&#34; target=&#34;_blank&#34;&gt;OMIM entry for PKU&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span class=&#34;badge-custom&#34;&gt;IBO Essential&lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;13: Amino Acid Metabolism — Transamination and Deamination&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;13-amino-acid-metabolism--transamination-and-deamination&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#13-amino-acid-metabolism--transamination-and-deamination&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Amino acids are not stored — excess is catabolised. Two central reactions:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Transamination&lt;/strong&gt; transfers the α-amino group to α-ketoglutarate (via PLP-dependent aminotransferases), producing glutamate and a new α-keto acid:&lt;/p&gt;
+&lt;p&gt;$$ \text{Amino acid} + \alpha\text{-ketoglutarate} \xrightarrow{\text{aminotransferase (PLP)}} \alpha\text{-keto acid} + \text{Glutamate} $$&lt;/p&gt;
+&lt;p&gt;Key examples: &lt;strong&gt;AST&lt;/strong&gt; (aspartate aminotransferase) and &lt;strong&gt;ALT&lt;/strong&gt; (alanine aminotransferase) — clinically important liver enzymes; elevated serum AST/ALT indicates hepatocyte damage.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Oxidative deamination&lt;/strong&gt; then removes the amino group from glutamate as NH₄⁺:&lt;/p&gt;
+&lt;p&gt;$$ \text{Glutamate} + \text{NAD}^+ + \text{H}_2\text{O} \xrightarrow{\text{Glutamate dehydrogenase}} \alpha\text{-ketoglutarate} + \text{NH}_4^+ + \text{NADH} $$&lt;/p&gt;
+&lt;p&gt;NH₄⁺ is toxic and is channelled into the &lt;strong&gt;urea cycle&lt;/strong&gt; for excretion as urea.&lt;/p&gt;
+&lt;p&gt;The carbon skeletons remaining after deamination are either &lt;strong&gt;glucogenic&lt;/strong&gt; (enter gluconeogenesis) or &lt;strong&gt;ketogenic&lt;/strong&gt; (enter ketogenesis). Some amino acids are both.&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Exclusively glucogenic&lt;/th&gt;
+					&lt;th&gt;Exclusively ketogenic&lt;/th&gt;
+					&lt;th&gt;Both&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Ala, Asp, Glu, Gly, Ser, Val, His, Arg, Pro, Thr, Met, Cys&lt;/td&gt;
+					&lt;td&gt;Leu, Lys&lt;/td&gt;
+					&lt;td&gt;Ile, Phe, Tyr, Trp&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;span class=&#34;badge-custom&#34;&gt;Important&lt;/span&gt; &lt;strong&gt;Leu and Lys are the only exclusively ketogenic amino acids&lt;/strong&gt; — a common IBO question target.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span class=&#34;badge-custom&#34;&gt;IBO Essential&lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;14: The Ramachandran Plot — Allowed Backbone Conformations&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;14-the-ramachandran-plot--allowed-backbone-conformations&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#14-the-ramachandran-plot--allowed-backbone-conformations&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Not all φ (phi) and ψ (psi) dihedral angle combinations around the α-carbon backbone are sterically allowed. The &lt;strong&gt;Ramachandran plot&lt;/strong&gt; maps φ against ψ and shows which combinations are favoured (core regions), allowed (additional regions), and forbidden (steric clashes).&lt;/p&gt;
+&lt;p&gt;Key regions to know:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;α-helix&lt;/strong&gt;: φ ≈ −57°, ψ ≈ −47° (upper-left cluster)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Antiparallel β-sheet&lt;/strong&gt;: φ ≈ −139°, ψ ≈ +135° (lower-left cluster)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Parallel β-sheet&lt;/strong&gt;: φ ≈ −119°, ψ ≈ +113°&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Collagen triple helix&lt;/strong&gt;: φ ≈ −51°, ψ ≈ +153°&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Glycine&lt;/strong&gt; is the only amino acid that populates all four quadrants — its lack of a side chain removes steric restriction entirely. This is why Gly appears at tight turns and buried positions in α-helices.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Proline&lt;/strong&gt; is confined to a narrow region (φ ≈ −63°, ψ ≈ −15° to +145°) because its cyclic side chain fixes φ near −60°. It cannot donate an NH hydrogen bond in helices.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=4AHXU4wMH24&#34; target=&#34;_blank&#34;&gt;Watch: Ramachandran plot explained (Shomu&amp;rsquo;s Biology)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a
+    href=&#34;https://en.wikipedia.org/wiki/Ramachandran_plot&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Ramachandran_plot_general_100K.jpg/480px-Ramachandran_plot_general_100K.jpg&#34; alt=&#34;Ramachandran plot&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;&lt;/a&gt;
+&lt;em&gt;A general Ramachandran plot for non-Gly, non-Pro residues. Favoured regions are darkest. The α-helix and β-sheet regions are clearly separated. (Source: Wikimedia Commons, CC BY-SA)&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;&lt;span style=&#34;text-align: center&#34;&gt;&lt;em&gt;&amp;ldquo;It seems that the structure of protein folds is conserved more in evolutionary relations than the amino acid sequences&amp;rdquo;&lt;/em&gt;&lt;/span&gt; &lt;br&gt;&lt;br&gt;
+Proteins are large, essential macromolecules made of amino acids. They serve as the foundational building blocks of the body, driving nearly all biological processes including cell repair, muscle growth, enzyme function, and immune defense and pretty much everything else.&lt;br&gt;
+L-Amino Acid &lt;a href=&#34;#&#34; onclick=&#34;switchToTabAndScroll(3, &#39;stereo&#39;); return false;&#34;&gt;stereoisomers&lt;/a&gt; are found in the vast majority of living residues. Because enzymes, receptors, and DNA are chiral, proteins require precise &amp;ldquo;left-handed&amp;rdquo; building blocks to fold correctly and function. Using mixed D- and L-isomers would cause enzymes to misfold and fail
+&lt;br&gt;&lt;br&gt;
+&lt;span class=&#34;h2-text&#34;&gt; Protein Structure : &lt;/span&gt;
+&lt;br&gt;&lt;br&gt;
+The structure of a protein, conformational and sequence-based, decide the fate, function, and form of the protein. Some polyubiquitination motif could cause the whole protein to self destruct, A signal &lt;a href=&#34;#&#34; onclick=&#34;switchToTabAndScroll(3, &#39;motif&#39;); return false;&#34;&gt; motif&lt;/a&gt; could cause the protein to migrate (mitochondrial targeting sequence (MTS)), and the world renowned insuling C peptide sulfide bond could decide a lot.
+&lt;br&gt;&lt;br&gt;
+There are 4 well established levels to the structure of a protein:
+&lt;br&gt;
+1-: &lt;span class=&#34;h3-text&#34;&gt; Primary structure &lt;/span&gt;&lt;br&gt;
+The primary structure of a protein is simply the linear sequence of amino acids in its polypeptide chain. It contains primarily peptide and disulfide bonds.&lt;br&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/MCBBPICS/secondary.png&#34; alt=&#34;Alt text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+2A-: &lt;span class=&#34;h3-text&#34;&gt; Secondary structure &lt;/span&gt;&lt;br&gt;
+Protein secondary structure is maintained almost entirely by hydrogen bonds formed between atoms in the polypeptide backbone, specifically between the carbonyl oxygen and amide hydrogen. Unlike tertiary or quaternary structures, the side chains (R-groups) are not involved in these bonds
+There are two motifs which define secondary structures:&lt;br&gt;&lt;br&gt;
+&lt;em&gt;Please switch to light mode&lt;/em&gt;
+&lt;img src=&#34;http://localhost:1313/MCBBPICS/structuralaas.png&#34; alt=&#34;Alt text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;&lt;br&gt;&lt;br&gt;
+A) $\alpha$-Helix:  - 1 Turn = 3.6 amino acids
+- &lt;span class=&#34;h3-text&#34;&gt;High Propensity: Alanine, Glutamate, Leucine, Methionine, and Lysine&lt;/span&gt; (often abbreviated by their single-letter codes as MALEK).&lt;br&gt;Why: These amino acids provide an ideal balance of bulk and flexibility, and their side chains lack steric interference. Glutamate and Lysine also form stabilizing salt bridges, while Alanine has the highest intrinsic capacity to pack tightly into a standard helical coil&lt;br&gt;&lt;br&gt;
+- &lt;span class=&#34;h3-text&#34;&gt;Helix Breakers: Proline and Glycine.&lt;/span&gt;&lt;br&gt;Why:Proline: Its side chain loops back and covalently binds to the main nitrogen backbone, creating a rigid ring. This entirely lacks the amide hydrogen required to participate in the helix&amp;rsquo;s core hydrogen bonding and introduces a strict structural kink.&lt;br&gt;Glycine: It has a hydrogen atom as its only side chain, making it incredibly flexible. This high flexibility makes it &amp;ldquo;entropically expensive&amp;rdquo; (costly in terms of energy) for the protein to force it into a rigid, constrained helix&lt;br&gt;&lt;br&gt;
+- Alpha helices are known for their ability to introgress in cell membranes. Their primary functions include providing fundamental structural support (as in hair and nails), creating binding sites for molecular recognition, and facilitating the transport of molecules across cell membranes. &lt;br&gt;&lt;br&gt;
+B) $\beta$-Sheets:  - 180 deg turn in 4 AA residues &lt;br&gt;&lt;br&gt;
+- High Propensity: Large aromatic residues like Tryptophan, Tyrosine, and Phenylalanine, and branched amino acids like Valine, Isoleucine, and Threonine.&lt;br&gt;Why: Beta sheets (and beta strands) form extended, zig-zag polypeptide conformations. Bulky aromatic and branched side chains physically block the tight coiling seen in helices, naturally favoring the more open and spacious geometry of beta sheets.    &lt;br&gt;&lt;br&gt;           &lt;br&gt;
+- Sheet Breakers: Proline, along with bulky charged residues that cause steric and electrostatic clashes, such as Glutamate and Lysine.&lt;br&gt;Why: The conformational rigidity and built-in &amp;ldquo;kink&amp;rdquo; of Proline disrupt the extended, flat strands required to form a pleated beta sheet
+- They are well known for their imparted flexibility.&lt;br&gt;&lt;br&gt;
+C) $\beta$-Turn:    - Third and lesser known secondary structure, used to connect two adjacent anti parallel beta sheet strands                &lt;br&gt;&lt;br&gt;
+&lt;span class=&#34;badge-custom&#34;&gt;Important&lt;/span&gt; &lt;br&gt;
+As a rule of thumb in secondary structure , use n=n+3 , implying that only 3 adjacent amino acid interactions are significant.       &lt;br&gt;&lt;br&gt;
+2B-: &lt;span class=&#34;h3-text&#34;&gt; Supersecondary structure &lt;/span&gt;&lt;br&gt; &lt;br&gt;
+The less known but question-relevant structure, consists of simple motifs like $\alpha$-$\alpha$-$\alpha$, $\alpha$-$\beta$-$\alpha$ , $\beta$-$\beta$-$\beta$.&lt;br&gt;&lt;br&gt;
+3-: &lt;span class=&#34;h3-text&#34;&gt; Tertiary structure &lt;/span&gt;&lt;br&gt;
+The tertiary structure of a protein is its overall 3D shape, formed by the folding and packing of secondary structures (like $\alpha$-helices and $\beta$-sheets) into compact functional units called domains. It is driven and stabilized by interactions between the amino acid side chains (R-groups) and the surrounding environment
+- 1. Bonds and Interactions Stabilizing the StructureThe intricate 3D shape is held together by four main types of interactions:&lt;br&gt;
+- Hydrophobic Interactions: The primary driving force of protein folding. Nonpolar (hydrophobic) amino acid side chains cluster in the interior of the protein to avoid water, while polar side chains stay on the outside.&lt;br&gt;
+- Hydrogen Bonds: Formed between polar side chains (e.g., hydroxyl, amino, or carboxyl groups) or between the peptide backbone and side chains. They are weaker individually but abundant and highly directional.&lt;br&gt;
+- Ionic Bonds (Salt Bridges): Electrostatic attractions between oppositely charged amino acid side chains (e.g., a positively charged lysine and a negatively charged aspartate).&lt;br&gt;
+- Disulfide Bonds (Bridges): The only covalent bond in tertiary structure. They form strong cross-links between the sulfur-containing side chains of two cysteine amino acids.&lt;br&gt;&lt;br&gt;
+- 2. Other Crucial Factors&lt;br&gt;
+- Van der Waals Forces: Weak, short-range attractions between closely packed atoms in the protein&amp;rsquo;s dense core.&lt;br&gt;
+- Chaperone Proteins: Cellular helper proteins (like chaperonins) that bind to newly forming proteins, preventing them from tangling or aggregating incorrectly before the folding process is complete.&lt;br&gt;
+- Denaturation: Because most tertiary bonds are noncovalent, they are fragile. Changes in pH, heavy metals, or high temperatures can disrupt these bonds, causing the protein to unfold and lose its biological function &lt;br&gt;&lt;br&gt;
+4-:  &lt;span class=&#34;h3-text&#34;&gt; Quarternary structure &lt;/span&gt;&lt;br&gt;&lt;br&gt;
+Quarternary structures are formed by the interactions between Tertiary ones. These make the final protein unit, often just hydrogen bonded multimers.
+&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;!-- ═══════════════════════════════════════════════════════════
+     ADDITIONAL IBO-RELEVANT CONTENT — PROTEINS
+     ═══════════════════════════════════════════════════════════ --&gt;
+&lt;p&gt;&lt;span class=&#34;badge-custom&#34;&gt;IBO Essential&lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;Allosteric Proteins and Cooperativity — Hemoglobin as the Model&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;allosteric-proteins-and-cooperativity--hemoglobin-as-the-model&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#allosteric-proteins-and-cooperativity--hemoglobin-as-the-model&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Hemoglobin (Hb) is the definitive IBO example of &lt;strong&gt;allostery&lt;/strong&gt; — the regulation of protein function through conformational change induced by a ligand binding at a site other than the active site.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;T state vs. R state:&lt;/strong&gt;
+Deoxy-hemoglobin adopts the &lt;strong&gt;T (tense) state&lt;/strong&gt;: the four subunits are held in a constrained conformation by 8 salt bridges between the subunits, giving &lt;em&gt;low&lt;/em&gt; O₂ affinity. When O₂ binds one heme iron, the iron moves into the porphyrin plane (it is slightly out-of-plane when deoxygenated, pulled by the proximal His F8). This movement tugs the α-helix carrying His F8, breaking salt bridges and transitioning cooperatively to the &lt;strong&gt;R (relaxed) state&lt;/strong&gt; with &lt;em&gt;high&lt;/em&gt; O₂ affinity.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cooperativity:&lt;/strong&gt; Because binding at one subunit allosterically increases affinity at the others, the O₂-binding curve is &lt;strong&gt;sigmoidal&lt;/strong&gt;, not hyperbolic. The Hill coefficient (n_H) quantifies this:&lt;/p&gt;
+&lt;p&gt;$$ \theta = \frac{[O_2]^{n_H}}{K_d^{n_H} + [O_2]^{n_H}} $$&lt;/p&gt;
+&lt;p&gt;For Hb, n_H ≈ 2.8 (max 4 for perfect cooperativity). Myoglobin (monomeric, no cooperativity) gives a hyperbolic curve with n_H = 1.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Heterotropic effectors (IBO-tested):&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Effector&lt;/th&gt;
+					&lt;th&gt;Effect on Hb&lt;/th&gt;
+					&lt;th&gt;Mechanism&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;2,3-bisphosphoglycerate (2,3-BPG)&lt;/td&gt;
+					&lt;td&gt;Decreases O₂ affinity (right-shifts curve)&lt;/td&gt;
+					&lt;td&gt;Binds central cavity of T state, stabilising it&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;CO₂&lt;/td&gt;
+					&lt;td&gt;Decreases O₂ affinity&lt;/td&gt;
+					&lt;td&gt;Forms carbaminoHb; also lowers pH (Bohr effect)&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;H⁺ (low pH)&lt;/td&gt;
+					&lt;td&gt;Decreases O₂ affinity (Bohr effect)&lt;/td&gt;
+					&lt;td&gt;Protonates His HC3 of β-chain, stabilising T state&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;CO&lt;/td&gt;
+					&lt;td&gt;&amp;gt;200× higher affinity than O₂; causes hypoxia&lt;/td&gt;
+					&lt;td&gt;Binds same site; shifts remaining subunits to R — reduces cooperativity&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=LWtXthfG9_M&#34; target=&#34;_blank&#34;&gt;Watch: Hemoglobin cooperativity and the Bohr effect (Armando Hasudungan)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;badge-challenge&#34;&gt;CHALLENGE!!&lt;/span&gt; Plot the O₂-binding curve of Hb vs. Mb on the same axes. At pO₂ = 40 mmHg (venous tissue), which protein retains more O₂? Why is this physiologically important?&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span class=&#34;badge-custom&#34;&gt;IBO Essential&lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;Protein Folding — Chaperones and Misfolding Diseases&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;protein-folding--chaperones-and-misfolding-diseases&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#protein-folding--chaperones-and-misfolding-diseases&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Chaperones&lt;/strong&gt; don&amp;rsquo;t determine the final fold (which is encoded in the primary sequence, Anfinsen&amp;rsquo;s dogma) — they prevent &lt;em&gt;off-pathway&lt;/em&gt; aggregation by transiently binding exposed hydrophobic patches during translation and shielding them until folding completes.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GroEL/GroES (Hsp60 family) mechanism:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Unfolded protein enters the GroEL barrel (hydrophobic inner surface)&lt;/li&gt;
+&lt;li&gt;ATP binding causes conformational change — inner surface becomes hydrophilic, providing a protected folding chamber&lt;/li&gt;
+&lt;li&gt;GroES cap closes&lt;/li&gt;
+&lt;li&gt;ATP hydrolysis releases the (correctly or incorrectly folded) protein after ~10 s&lt;/li&gt;
+&lt;li&gt;Incorrectly folded proteins re-enter the cycle&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Hsp70 (DnaK in bacteria):&lt;/strong&gt; Binds extended peptides co-translationally; works with co-chaperones DnaJ (Hsp40) and GrpE (nucleotide exchange factor).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Protein misfolding diseases — IBO context:&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Disease&lt;/th&gt;
+					&lt;th&gt;Protein&lt;/th&gt;
+					&lt;th&gt;Misfolding event&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Sickle cell anaemia&lt;/td&gt;
+					&lt;td&gt;β-globin (HbS: Glu6Val)&lt;/td&gt;
+					&lt;td&gt;Valine creates hydrophobic patch; deoxy-HbS polymerises into fibres&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Cystic fibrosis&lt;/td&gt;
+					&lt;td&gt;CFTR (ΔF508 most common)&lt;/td&gt;
+					&lt;td&gt;Misfolded CFTR retained in ER, degraded by ERAD before reaching plasma membrane&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Prion disease (CJD, scrapie)&lt;/td&gt;
+					&lt;td&gt;PrP&lt;/td&gt;
+					&lt;td&gt;PrPᶜ (α-helix-rich) → PrPˢᶜ (β-sheet-rich); misfolded form catalyses conversion of native PrPᶜ — self-templating&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Alzheimer&amp;rsquo;s disease&lt;/td&gt;
+					&lt;td&gt;Amyloid-β (Aβ) / Tau&lt;/td&gt;
+					&lt;td&gt;Aβ aggregates into amyloid plaques (cross-β fibril structure); Tau forms neurofibrillary tangles&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Parkinson&amp;rsquo;s disease&lt;/td&gt;
+					&lt;td&gt;α-synuclein&lt;/td&gt;
+					&lt;td&gt;Aggregates into Lewy bodies&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;span class=&#34;badge-custom&#34;&gt;Important&lt;/span&gt; &lt;strong&gt;Prion diseases&lt;/strong&gt; are uniquely tested at IBO because they challenge the central dogma — information can be propagated by protein conformation alone, with no nucleic acid template. PrPˢᶜ is infectious, hereditary, and sporadic. Key: it is not destroyed by UV radiation or nucleases (which destroy nucleic acids), only by autoclaving with NaOH.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=Mxl7RGSSmLo&#34; target=&#34;_blank&#34;&gt;Watch: Protein folding and chaperones (iBiology — Judith Frydman)&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;span class=&#34;badge-custom&#34;&gt;IBO Essential&lt;/span&gt;&lt;/p&gt;
+&lt;h3&gt;Post-Translational Modifications — Ubiquitin-Proteasome System&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;post-translational-modifications--ubiquitin-proteasome-system&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#post-translational-modifications--ubiquitin-proteasome-system&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Beyond phosphorylation and glycosylation (covered in the Amino Acids tab), the &lt;strong&gt;ubiquitin-proteasome system (UPS)&lt;/strong&gt; is a central IBO topic:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ubiquitin (Ub)&lt;/strong&gt; is a 76-residue protein attached to target proteins via an isopeptide bond (between Ub&amp;rsquo;s C-terminal Gly and a Lys ε-amino group on the target) by a three-enzyme cascade:&lt;/p&gt;
+&lt;p&gt;$$ \text{E1 (Ub-activating)} \rightarrow \text{E2 (Ub-conjugating)} \rightarrow \text{E3 (Ub-ligase, provides substrate specificity)} $$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Polyubiquitination via Lys48 linkage&lt;/strong&gt; → signals proteasomal degradation (26S proteasome)
+&lt;strong&gt;Polyubiquitination via Lys63 linkage&lt;/strong&gt; → signals DNA repair, endosomal sorting (non-degradative)
+&lt;strong&gt;Monoubiquitination&lt;/strong&gt; → histone regulation, membrane protein trafficking&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;26S proteasome&lt;/strong&gt; consists of a 20S catalytic barrel (three types of protease activity: chymotrypsin-like, trypsin-like, caspase-like) capped by two 19S regulatory particles that recognise polyUb chains, unfold the target (ATP-dependent), and thread it in for degradation.&lt;/p&gt;
+&lt;p&gt;This system is the target of &lt;strong&gt;bortezomib&lt;/strong&gt; (proteasome inhibitor used in multiple myeloma), a direct IBO disease/drug connection.
+&lt;br&gt;&lt;br&gt;
+&lt;span class=&#34;badge-exploration&#34;&gt;Explore!&lt;/span&gt; &lt;br&gt;
+Give a visit to &lt;a href=&#34;https://www.rcsb.org/3d-view/jsmol/4HHB/1&#34; target=&#34;blank&#34;&gt;RCSB Protein visualizer&lt;/a&gt; and look at some amazing structures of the very molecules which define us. &lt;br&gt;&lt;br&gt;
+&lt;span class=&#34;badge-curiosity&#34;&gt;Proceed if you have the time!&lt;/span&gt; &lt;br&gt;
+&lt;span class=&#34;h2-text&#34;&gt; Proteins&amp;rsquo; Structure: &lt;/span&gt;&lt;br&gt;
+Now, let us look at some common protein structures and find differnces:&lt;br&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Fibrous Proteins &lt;a href=&#34;https://www.rcsb.org/3d-view/AF_AFQ9BYR0F1&#34; target=&#34;blank&#34;&gt;$\alpha$ Keratin&lt;/a&gt; Keratin has helices with disulfide bonds, imparting toughness.&lt;br&gt;
+&lt;a href=&#34;https://www.rcsb.org/3d-view/3UA0&#34; target=&#34;blank&#34;&gt;Silk Fibronin&lt;/a&gt;  $\beta$ sheets of fibronin make it soft and flexible.
+&lt;br&gt;
+&lt;a href=&#34;https://www.rcsb.org/3d-view/1BKV&#34; target=&#34;blank&#34;&gt;Collagen&lt;/a&gt; High tensile strength due to signature triple helix
+&lt;br&gt;&lt;br&gt;
+&lt;span class=&#34;badge-challenge&#34;&gt;CHALLENGE!!&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Globular Proteins: &lt;a href=&#34;https://www.rcsb.org/3d-view/1JY7&#34; target=&#34;blank&#34;&gt;Methemoglobin&lt;/a&gt;, &lt;a href=&#34;https://www.rcsb.org/structure/1hgb&#34; target=&#34;blank&#34;&gt;T state&lt;/a&gt; and &lt;a href=&#34;https://www.rcsb.org/structure/3oo5&#34; target=&#34;blank&#34;&gt; R state Hemoglobin&lt;/a&gt;
+Do a similar analysis and write down your results for these 3.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-2&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-2&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;&lt;span class=&#34;big-text&#34;&gt;ENZYME KINETICS &lt;/span&gt;&lt;br&gt;&lt;br&gt;
+Most people start enzyme kinetics and end it at just about one equation. But here, we shall try to explore the concept in more detail, if you are in a hurry, i reccomend just looking at the parts marked important or the equations.The kinetics constants have been used in the same order.
+&lt;br&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:1313/MCBBPICS/kinetics_phases.png&#34; alt=&#34;kinetics_phases&#34; style=&#34;max-width:100%; height:auto;&#34;&gt;
+&lt;br&gt;Our reactiorns are :
+$$
+\text{E+S} \rightleftharpoons \text{ES} \rightleftharpoons \text{E+P}
+$$
+&lt;span class=&#34;h3-text&#34;&gt;Pre Steady State Kinetics&lt;/span&gt;
+&lt;br&gt; - Timeframe: Milliseconds to a few seconds
+&lt;br&gt; - Free enzyme binds substrate; intermediates accumulate
+&lt;br&gt; - Determine individual rate and equilibrium constants ((k_1, k_{-1}, k_2), etc.)
+&lt;br&gt; - [E] &amp;gt; [S] or high-concentration rapid mixing
+&lt;br&gt; - &lt;span class=&#34;badge-exploration&#34;&gt;Explore! (&lt;em&gt;Out of Syllabus&lt;/em&gt;)&lt;/span&gt;
+&lt;br&gt; - &lt;a href=&#34;https://ocw.mit.edu/courses/5-08j-biological-chemistry-ii-spring-2016/fd3e7767f2bbc6a06cce34b566fdf3a0_MIT5_08jS16r2_handout.pdf&#34; target=&#34;blank&#34;&gt;Click here for more on pre steady state kinetics&lt;/a&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;a href=&#34;#&#34; onclick=&#34;switchToTabAndScroll(3, &#39;derivationssk&#39;); return false;&#34;&gt;Click for Derivation of Steady State Kinetics
+&lt;/a&gt;
+&lt;br&gt;
+&lt;span class=&#34;h3-text&#34;&gt;Steady State Kinetics&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+Before Starting, we advise you to familiarize yourself with &lt;a href=&#34;#&#34; onclick=&#34;switchToTabAndScroll(3, &#39;mm-plot&#39;); return false;&#34;&gt;Michaelis-Menten&lt;/a&gt; and &lt;a href=&#34;#&#34; onclick=&#34;switchToTabAndScroll(3, &#39;lb-plot&#39;); return false;&#34;&gt;Lineweaver-Burk&lt;/a&gt; plots, if not already, so you are able to understand all presented graphs.
+The central equation of steady state kinetics &lt;a href=&#34;#&#34; onclick=&#34;switchToTabAndScroll(3, &#39;mmdefinition&#39;); return false;&#34;&gt;&lt;em&gt;Michaelis-Menten Kinetics&lt;/em&gt;&lt;/a&gt; is
+$$
+V_t = \dfrac{V_{\text{max}} [S]}{K_m + [S]}
+$$
+Where $K_m$ is the substrate concentration at which velocity of the reaction is $V_{max}$/2, it is also an inverse indicator of the affinity of an enzyme for its substrate. Why? Hint: remember it is =
+$$
+\frac{k_{-1}+k_2}{k_1}
+$$
+&lt;span class=&#34;h2-text&#34;&gt; $V_{max}$ &lt;/span&gt; &lt;br&gt;
+The parameter $V_{max}$ is equal to the product of $k_{cat}$ and [$E_t$]
+where $k_{cat}$ is the kinetic constant of the rate limiting step. In our case, it is equal to $k_2$ as product release is the rate limiting step.If the reactions were:
+$$
+\text{E+S} \rightleftharpoons \text{ES} \rightleftharpoons \text{EP} \rightleftharpoons \text{E+P}
+$$
+The rate constant $k_{cat}$ would be $k_3$ assuming product release is limiting step.
+&lt;br&gt;It is also called the &lt;em&gt;Turnover number&lt;/em&gt; as it represents the number of substrate molecules being converted to product molecules per unit time, when enzyme is saturated with substrate.&lt;br&gt; It is also proportional to the speed of the enzyme&lt;br&gt;&lt;br&gt;
+&lt;span class=&#34;h2-text&#34;&gt; Specificity Constant &lt;/span&gt;&lt;br&gt;
+The best way to compare the catalytic efficiencies
+of different enzymes or the turnover of different substrates by the same enzyme is to compare the ratio kcat/Km
+for the two reactions. This parameter, sometimes called
+the specificity constant, is the rate constant for the
+conversion of E-&amp;gt;S to E-&amp;gt;P. When [S] &amp;laquo;&amp;lt; Km, Equation 6–26 reduces to the form
+$$
+V_0 = [E_t] \cdot [S] \cdot \frac{k_{cat}}{K_m}
+$$
+the constant kcat/Km is a second-order
+rate constant with units of $M^{-1}$$s^{-1}$
+. There is an upper
+limit to kcat/Km, imposed by the rate at which E and S can
+diffuse together in an aqueous solution. This diffusion controlled limit is 108 to 109 $M^{-1}$$s^{-1}$
+, and many enzymes
+have a kcat/Km near this range (Table 6–8). Such
+enzymes are said to have achieved catalytic perfection.
+&lt;img src=&#34;http://localhost:1313/MCBBPICS/table68.png&#34; alt=&#34;Alt text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;strong&gt; Worked Example 3‑1: Determination of $K_{\text{m}}$ &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;An enzyme is discovered that catalyzes the chemical reaction&lt;/p&gt;
+&lt;p&gt;$$
+\text{SAD} \rightleftharpoons \text{HAPPY}
+$$&lt;/p&gt;
+&lt;p&gt;A team of motivated researchers sets out to study the enzyme, which they call &lt;strong&gt;happyase&lt;/strong&gt;. They find that the $k_{\text{cat}}$ for happyase is $600\ \text{s}^{-1}$.&lt;/p&gt;
+&lt;p&gt;When [$E_t$] = 20 nM and [SAD] = 40 $\mu$M, the reaction velocity $V_{0}$ is $9.6\ \mu\text{M s}^{-1}$.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Calculate $K_{\text{m}}$ for the substrate SAD.&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;#&#34; onclick=&#34;switchToTabAndScroll(3, &#39;we3-1&#39;); return false;&#34;&gt;Solution
+&lt;/a&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;span class=&#34;badge-exploration&#34;&gt;Explore! (&lt;em&gt;Out of Syllabus&lt;/em&gt;)&lt;/span&gt; &lt;br&gt;
+&lt;a href=&#34;https://courseware.cutm.ac.in/wp-content/uploads/2020/06/Bi-substrate-reaction-PDF.pdf&#34; target=&#34;blank&#34;&gt;Explore Ping-Pong and Ternary Complex bisubstrate reactions here&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+&lt;span class=&#34;h2-text&#34;&gt;Enzyme Inhibition Kinetics&lt;/span&gt;
+&lt;br&gt;&lt;img src=&#34;http://localhost:1313/MCBBPICS/inhibitionmm.png&#34; alt=&#34;Alt text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;&lt;br&gt;
+&lt;br&gt;&lt;img src=&#34;http://localhost:1313/MCBBPICS/lbcomp.png&#34; alt=&#34;Alt text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;&lt;br&gt;
+Inhibition of an enzyme translates to reduction in its activity, or ability to produce product by deduction of specificity constant, but the underlying mathematics are difference for each of the four kinds of reversible inhibition:&lt;br&gt;
+&lt;span class=&#34;h3-text&#34;&gt;Competitive Reversible Inhibition&lt;/span&gt;
+&lt;br&gt;
+Competitive inhibition, quite literally means competition of a substrate (our good guy) with another evil substrate who plans to slow us down. The main effect observed due to this is apparent reduction in binding affinity of the simpleton enzyme to our good substrate, as there is another luring evil substrate in the vicinity. Hence, the apparent $K_m&amp;rsquo;$is greater than the original $K_{m0}$. But as the good substrate increases in number, eventually at very high concentrations it takes over the effect of the bad one, and we achive the same $V_{max&amp;rsquo;}$ as the original $V_{max0}$.&lt;/p&gt;
+&lt;p&gt;$$
+\text{E} + \text{S} \rightleftharpoons \text{ES} \rightarrow \text{E} + \text{P}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+\text{E} + \text{I} \rightleftharpoons \text{EI}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+V_t = \dfrac{V_{\text{max0}} [S]}{K_{m0} \cdot \alpha + [S]}
+$$
+With the apparent $K_{m&amp;rsquo;}$ =
+$$
+K_{m&amp;rsquo;} = (1 + \frac{[I]}{K_I}) \cdot K_{m0} = K_{m0} \cdot \alpha
+$$
+Note that the $K_I$ equals
+$$
+\frac{[E] \cdot [I]}{[EI]} = \alpha - 1
+$$
+&lt;a href=&#34;#&#34; onclick=&#34;switchToTabAndScroll(3, &#39;derivationkm&#39;); return false;&#34;&gt;&lt;em&gt;Click for derivation&lt;/em&gt;&lt;/a&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;span class=&#34;h3-text&#34;&gt;Uncompetitive Reversible Inhibition&lt;/span&gt;&lt;br&gt;
+Uncompetitive inhibition features the following additional reaction:
+$$
+\text{ES} + \text{I} \rightleftharpoons \text{EIS}
+$$
+Hence, as it blocks release of product, it increases the apparent affinity, and decreases the $K_{m&amp;rsquo;}$ of the enzyme. Obviously, it also decreases the $V_{max}$.
+Both the parameters however, decrease by the same factor:
+$$
+K_{m&amp;rsquo;} = \frac{K_{m0}}{\alpha&amp;rsquo;} ; V_{max&amp;rsquo;} = \frac{V_{max0}}{\alpha&amp;rsquo;} ; \alpha&amp;rsquo; = 1 + \frac{[I]}{K_I}
+$$
+and the new michaelis-menten state equation is :
+$$
+V_t = \dfrac{V_{\text{max}} \cdot [S]}{K_{m} + (\alpha&amp;rsquo; \cdot [S])}
+$$
+&lt;br&gt;
+&lt;span class=&#34;h3-text&#34;&gt;Noncompetitive Reversible Inhibition&lt;/span&gt;&lt;br&gt;
+the additional reactions going on are :
+$$
+\text{ES} + \text{I} \rightleftharpoons \text{EIS}
+$$
+$$
+\text{E} + \text{I} \rightleftharpoons \text{EI}
+$$
+But the nuance is that both sites of enzyme have equal affinity for the substrate, hence only the $V_{max}$ decreases, and no prizes for guessing that it decreases by a fator of $\alpha$ = $\alpha&amp;rsquo;$ . Try to derive this one yourself.
+&lt;br&gt;&lt;br&gt;
+&lt;span class=&#34;h3-text&#34;&gt;Mixed Reversible Inhibition&lt;/span&gt;&lt;br&gt;
+Mixed reversible inhibition is, by the reactive point of view, the same as noncompetitive inhibition. But the nuance in thi is that the affinities for [E] and [ES] are different, hence the $K_m$ can increase or decrease, and the $V_{max}$, is doomed to decrease.
+The derivation of this is extremely out of syllabus, so we will just show the final results:
+$$
+K_{m&amp;rsquo;} = K_{m0} \cdot \frac{\alpha}{\alpha&amp;rsquo;}
+$$
+$$
+V_{max&amp;rsquo;} = \frac{V_{max0}}{\alpha}
+$$
+&lt;br&gt;
+There is one final type of enzymatic inibition: &lt;br&gt;&lt;br&gt;
+&lt;span class=&#34;h3-text&#34;&gt;Irreversible Inhibition&lt;/span&gt;&lt;br&gt;
+Unlike Reversible Inhibition, the hallmark of which is non covalent bonds, irreversible inhibition uses only covalent bonds (hence, irreversible). Most common examples are poisons, toxins and so on. &lt;br&gt;&lt;br&gt;
+Think about it, you will have some question on this on the questions tab.&lt;/p&gt;
+&lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-3&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-3&#34; aria-hidden=&#34;true&#34;&gt;&lt;div id=&#34;zwitterion-definition&#34; style=&#34;background-color: #000000; padding: 4px 8px; margin: 10px 0;&#34;&gt;
+  &lt;strong&gt;Zwitterion&lt;/strong&gt;: The ionic form of an amino acid with no net charge.
+&lt;/div&gt;
+&lt;div id=&#34;glyco-phospho&#34; style=&#34;background-color: #000000; padding: 4px 8px; margin: 10px 0;&#34;&gt;
+  &lt;strong&gt;Glycosylation and Phosphorylation&lt;/strong&gt;: &lt;br&gt; FUNCTIONS:&lt;br&gt; Protein Folding &amp; Stability: Sugars (glycans) act as folding helpers (chaperones) that protect proteins from degrading before they reach maturity.&lt;br&gt;Protection: In areas like the respiratory tract, dense O-glycosylation (mucins) creates a slippery, physical shield against pathogens.&lt;br&gt;Cell Identification: Glycans on Ser/Thr and Asn form the &#34;sugar coat&#34; (glycocalyx) surrounding cells, determining blood types and allowing immune cells to recognize the body&#39;s own tissues
+  &lt;br&gt; DEFINITION: Addition of sugar or phosphate group
+&lt;/div&gt;
+&lt;div id=&#34;stereo&#34;&gt;
+   &lt;strong&gt;Stereoisomerism&lt;/strong&gt; : &lt;img src=&#34;http://localhost:1313/MCBBPICS/ld.png&#34; alt=&#34;Stereoisomerism diagram&#34; style=&#34;max-width:100%; height:auto;&#34;&gt;
+&lt;/div&gt;
+&lt;div id=&#34;motif&#34;&gt;
+   &lt;strong&gt;Motif&lt;/strong&gt; : A motif is a short, recurring pattern of nucleotides (in genomes) or amino acids (in proteins) that holds biological significance
+&lt;/div&gt; &lt;br&gt;
+&lt;div id=&#34;mmdefinition&#34;&gt;
+   &lt;stron&gt;Michaelis-Menten&lt;/strong&gt; : Leonor Michaelis and Maud Leonora Menten first published their work on enzyme kinetics in 1913, which featured the signature hyperbolic curve based on the central equation.
+&lt;div id=&#34;derivationssk&#34;&gt;
+   &lt;strong&gt;Steady State kinetics derivation:&lt;/strong&gt; &lt;br&gt;The assumption: Rate of formation = Rate of breakdown 
+   i.e., $$
+k_1 ([E_t] - [ES]) [S] = k_{-1} [ES] + k_2 [ES]
+$$
+&lt;br&gt;
+simplifying and adding $k_!$[ES][S] to both sides, we get: 
+   $$
+[ES] = \frac{[E_t] \cdot [S]}{[S] + \frac{k_{-1} + k_2}{k_1}}
+$$
+multiplying by $k_2$ , we finally arrive at
+$$
+V_t = \dfrac{V_{\text{max}} [S]}{K_m + [S]}
+$$
+Note that if $k_2$ is rate limiting, $K_m$ = $K_d$ = $k_{-1}$/$k_1$ &lt;br&gt;
+&lt;/div&gt; &lt;br&gt;&lt;br&gt;
+&lt;div id=&#34;we3-1&#34;&gt; 
+&lt;h4&gt;🧪 Solution&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;-solution&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-solution&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;/div&gt;
+We know $k_{\text{cat}}$, [$E_t$], [S], and $V_{0}$. We want to solve for $K_{\text{m}}$.
+&lt;p&gt;The Michaelis‑Menten equation is:&lt;/p&gt;
+&lt;p&gt;$$
+V_{0} = \frac{k_{\text{cat}} [E_t] [S]}{K_{\text{m}} + [S]}
+$$&lt;/p&gt;
+&lt;p&gt;Substitute the known values:&lt;/p&gt;
+&lt;p&gt;$$
+9.6\ \mu\text{M s}^{-1} = \frac{(600\ \text{s}^{-1})(0.020\ \mu\text{M})(40\ \mu\text{M})}{K_{\text{m}} + 40\ \mu\text{M}}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+9.6\ \mu\text{M s}^{-1} = \frac{480\ \mu\text{M}^{2}\ \text{s}^{-1}}{K_{\text{m}} + 40\ \mu\text{M}}
+$$&lt;/p&gt;
+&lt;p&gt;Multiply both sides by $K_{\text{m}} + 40\ \mu\text{M}$:&lt;/p&gt;
+&lt;p&gt;$$
+9.6\ \mu\text{M s}^{-1} (K_{\text{m}} + 40\ \mu\text{M}) = 480\ \mu\text{M}^{2}\ \text{s}^{-1}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+K_{\text{m}} + 40\ \mu\text{M} = \frac{480\ \mu\text{M}^{2}\ \text{s}^{-1}}{9.6\ \mu\text{M s}^{-1}} = 50\ \mu\text{M}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+K_{\text{m}} = 50\ \mu\text{M} - 40\ \mu\text{M} = 10\ \mu\text{M}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;✨ Shortcut using $V_{\text{max}}$&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;-shortcut-using-v_textmax&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#-shortcut-using-v_textmax&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;First compute $V_{\text{max}} = k_{\text{cat}} [E_t] = 600\ \text{s}^{-1} \times 0.020\ \mu\text{M} = 12\ \mu\text{M s}^{-1}$.&lt;/p&gt;
+&lt;p&gt;Then use:&lt;/p&gt;
+&lt;p&gt;$$
+\frac{V_{0}}{V_{\text{max}}} = \frac{[S]}{K_{\text{m}} + [S]}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+\frac{9.6}{12} = \frac{40}{K_{\text{m}} + 40}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+0.8 = \frac{40}{K_{\text{m}} + 40}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+K_{\text{m}} + 40 = \frac{40}{0.8} = 50
+$$&lt;/p&gt;
+&lt;p&gt;$$
+K_{\text{m}} = 50 - 40 = 10\ \mu\text{M}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;$$
+\boxed{K_{\text{m}} = 10\ \mu\text{M}}
+$$
+&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div id=&#34;derivationkm&#34;&gt;
+   &lt;strong&gt;Derivatrion of $K_{m&#39;}$&lt;/strong&gt; &lt;/div&gt;:
+   Under competitive inhibition, an inhibitor binds reversibly to the enzyme&#39;s active site, preventing the substrate from binding. This increases the substrate concentration required to reach a specific velocity, yielding a new, higher *apparent Michaelis constant* ($K_{m}^{app}$) derived as:
+&lt;p&gt;$$ K_{m}^{app} = K_m \left(1 + \frac{[I]}{K_i}\right) $$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;The Derivation Steps&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-derivation-steps&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#the-derivation-steps&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;1. Define the Enzyme Reactions &amp;amp; Constants&lt;/strong&gt;
+The reactions involved are the standard enzyme-substrate binding and the competitive inhibitor binding:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$E + S \rightleftharpoons [k_{-1}][k_1] ES \xrightarrow{k_2} E + P$&lt;/li&gt;
+&lt;li&gt;$E + I \rightleftharpoons [k_{-i}][k_i] EI$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Where:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$E$, $S$, $I$, and $ES$ are the concentrations of free enzyme, substrate, inhibitor, and enzyme-substrate complex.&lt;/li&gt;
+&lt;li&gt;$K_m = \frac{k_{-1} + k_2}{k_1}$ is the Michaelis constant.&lt;/li&gt;
+&lt;li&gt;$K_i = \frac{[E][I]}{[EI]}$ is the inhibitor dissociation constant.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;2. Formulate the Enzyme Mass Balance&lt;/strong&gt;
+The total enzyme concentration ($[E_t]$) is the sum of all enzyme states:
+$$ [E_t] = [E] + [ES] + [EI] $$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;3. Substitute the Inhibitor Concentration&lt;/strong&gt;
+Using the dissociation constant $K_i$, we can express the enzyme-inhibitor complex as $[EI] = \frac{[E][I]}{K_i}$.
+Substituting this into the mass balance:
+$$ [E_t] = [E] + [ES] + \frac{[E][I]}{K_i} $$&lt;/p&gt;
+&lt;p&gt;Factor out the free enzyme concentration $[E]$:
+$$ [E_t] = [E] \left(1 + \frac{[I]}{K_i}\right) + [ES] $$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4. Introduce the Steady-State Assumption&lt;/strong&gt;
+From the standard Michaelis-Menten derivation, the concentration of the ES complex depends on free enzyme and substrate:
+$$ [ES] = \frac{[E][S]}{K_m} $$&lt;/p&gt;
+&lt;p&gt;Rearrange this to solve for the free enzyme $[E]$:
+$$ [E] = \frac{[ES] K_m}{[S]} $$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;5. Substitute $[E]$ into the Mass Balance&lt;/strong&gt;
+Substitute this expression for $[E]$ back into our rearranged mass balance:
+$$ [E_t] = \left( \frac{[ES] K_m}{[S]} \right) \left( 1 + \frac{[I]}{K_i} \right) + [ES] $$&lt;/p&gt;
+&lt;p&gt;Factor out the enzyme-substrate complex $[ES]$:
+$$ [E_t] = [ES] \left[ \frac{K_m}{[S]} \left( 1 + \frac{[I]}{K_i} \right) + 1 \right] $$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6. Solve for $[ES]$&lt;/strong&gt;
+Isolate $[ES]$ to get the full reaction rate expression:
+$$ [ES] = \frac{[E_t]}{\frac{K_m}{[S]} \left( 1 + \frac{[I]}{K_i} \right) + 1} $$&lt;/p&gt;
+&lt;p&gt;Multiply both the numerator and denominator by $[S]$:
+$$ [ES] = \frac{[E_t][S]}{K_m \left( 1 + \frac{[I]}{K_i} \right) + [S]} $$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;7. Calculate Reaction Velocity ($V_0$)&lt;/strong&gt;
+The velocity of the reaction is $V_0 = k_2[ES]$. Since the maximum velocity ($V_{max}$) equals $k_2[E_t]$, we can rewrite the rate equation:
+$$ V_0 = \frac{V_{max}[S]}{K_m \left( 1 + \frac{[I]}{K_i} \right) + [S]} $$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;8. Define the New $K_m$&lt;/strong&gt;
+Comparing this to the standard Michaelis-Menten equation, $V_0 = \frac{V_{max}[S]}{K_m + [S]}$, the constant in the denominator is altered. We define this new, increased value as the &lt;strong&gt;apparent $K_m$ ($K_{m}^{app}$)&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;$$ K_{m}^{app} = K_m \left(1 + \frac{[I]}{K_i}\right) $$&lt;/p&gt;
+&lt;p&gt;Because $\left(1 + \frac{[I]}{K_i}\right)$ is always greater than 1, the $K_m$ mathematically increases, meaning it takes more substrate to achieve half the maximum velocity. However, since the term $[I]$ is only tied to the $K_m$, the $V_{max}$ remains entirely unchanged.
+&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div id=&#34;derivationuncmm&#34;&gt;
+&lt;strong&gt;Derivation of New parameters for Uncompetitive Reversible Inhibition&lt;/strong&gt;&lt;/div&gt;&lt;br&gt;
+&lt;p&gt;In uncompetitive inhibition, both parameters decrease by a factor of $\alpha&amp;rsquo;$:&lt;/p&gt;
+&lt;p&gt;$$\text{New } V_{\max} = V_{\max}^{\text{app}} = \frac{V_{\max}}{\alpha&amp;rsquo;}$$&lt;/p&gt;
+&lt;p&gt;$$\text{New } K_m = K_m^{\text{app}} = \frac{K_m}{\alpha&amp;rsquo;}$$&lt;/p&gt;
+&lt;p&gt;Where the modifying factor is defined as $\alpha&amp;rsquo; = 1 + \frac{[I]}{K_I&amp;rsquo;}$.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;1. Define Reaction Scheme&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;1-define-reaction-scheme&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-define-reaction-scheme&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;An uncompetitive inhibitor binds &lt;strong&gt;only&lt;/strong&gt; to the enzyme-substrate ($ES$) complex, not to the free enzyme ($E$).&lt;/p&gt;
+&lt;p&gt;$$E + S \xrightarrow{k_1} ES \xrightarrow{k_2} E + P$$
+$$ES + I \rightleftharpoons{K_I&amp;rsquo;} ESI$$&lt;/p&gt;
+&lt;p&gt;Where:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$K_I&amp;rsquo;$ is the inhibitor dissociation constant: $K_I&amp;rsquo; = \frac{[ES][I]}{[ESI]}$&lt;/li&gt;
+&lt;li&gt;$k_1, k_{-1}$ are the forward and reverse rate constants for $ES$ formation.&lt;/li&gt;
+&lt;li&gt;$k_2$ is the catalytic rate constant.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3&gt;2. Set Up Mass Balance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;2-set-up-mass-balance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-set-up-mass-balance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The total enzyme concentration $[E]_0$ is distributed across three distinct forms:&lt;/p&gt;
+&lt;p&gt;$$[E]_0 = [E] + [ES] + [ESI]$$&lt;/p&gt;
+&lt;p&gt;Using the equilibrium expression for the $ESI$ complex ($[ESI] = \frac{[ES][I]}{K_I&amp;rsquo;}$), substitute $[ESI]$ into the mass balance equation:&lt;/p&gt;
+&lt;p&gt;$$[E]_0 = [E] + [ES] + \frac{[ES][I]}{K_I&amp;rsquo;}$$&lt;/p&gt;
+&lt;p&gt;$$[E]_0 = [E] + [ES]\left(1 + \frac{[I]}{K_I&amp;rsquo;}\right)$$&lt;/p&gt;
+&lt;p&gt;Define the uncompetitive modification factor as $\alpha&amp;rsquo; = 1 + \frac{[I]}{K_I&amp;rsquo;}$:&lt;/p&gt;
+&lt;p&gt;$$[E]_0 = [E] + \alpha&amp;rsquo;[ES] \quad \implies \quad [E] = [E]_0 - \alpha&amp;rsquo;[ES]$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h4&gt;3. Apply Steady-State Approximation&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;3-apply-steady-state-approximation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-apply-steady-state-approximation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;The steady-state assumption states that the concentration of the active intermediate $[ES]$ remains constant over time:&lt;/p&gt;
+&lt;p&gt;$$
+\frac{d[ES]}{dt} = k_1[E][S] - k_{-1}[ES] - k_2[ES] = 0
+$$&lt;/p&gt;
+&lt;p&gt;Substitute the expression for free enzyme $[E] = [E]_0 - \alpha&amp;rsquo;[ES]$ into the steady-state equation:&lt;/p&gt;
+&lt;p&gt;$k_1$([$E_0$] - $\alpha$&amp;rsquo;[$ES$])[$S$] = ($k_{-1}$ + $k_2$)[$ES$]&lt;/p&gt;
+&lt;p&gt;Expand and isolate the terms containing $[ES]$:&lt;/p&gt;
+&lt;p&gt;$k_1$[$E_0$][$S$] - $k_1$$\alpha$&amp;rsquo;[$ES$][$S$] = ($k_{-1}$ + $k_2$)[$ES$]&lt;/p&gt;
+&lt;p&gt;$k_1$[$E_0$][$S$] = [$ES$] $\cdot$ ($k_{-1}$ + $k_2$) + $k_1$$\alpha$&amp;rsquo;[$S$]&lt;/p&gt;
+&lt;p&gt;Divide the entire equation by $k_1$:&lt;/p&gt;
+&lt;p&gt;$$
+[E_0][S] = [ES]\left( \frac{k_{-1} + k_2}{k_1} + \alpha&amp;rsquo;[S] \right)
+$$&lt;/p&gt;
+&lt;p&gt;Recall that the Michaelis constant is $K_m = \frac{k_{-1} + k_2}{k_1}$:&lt;/p&gt;
+&lt;h2&gt;$$
+[E]_0[S] = [ES](K_m + \alpha&amp;rsquo;[S])
+$$
+$$
+[ES] = \frac{[E]_0[S]}{K_m + \alpha&amp;rsquo;[S]}
+$$&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;heading&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#heading&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;4. Formulate Rate Equation&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;4-formulate-rate-equation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#4-formulate-rate-equation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The initial reaction velocity $v_0$ depends entirely on the breakdown of the $ES$ complex to yield product:&lt;/p&gt;
+&lt;p&gt;$$v_0 = k_2[ES]$$&lt;/p&gt;
+&lt;p&gt;Substitute the solved expression for $[ES]$ into this velocity equation:&lt;/p&gt;
+&lt;p&gt;$$v_0 = \frac{k_2[E]_0[S]}{K_m + \alpha&amp;rsquo;[S]}$$&lt;/p&gt;
+&lt;p&gt;Since $V_{\max} = k_2[E]_0$, the equation becomes:&lt;/p&gt;
+&lt;p&gt;$$v_0 = \frac{V_{\max}[S]}{K_m + \alpha&amp;rsquo;[S]}$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;5. Identify Apparent Parameters&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;5-identify-apparent-parameters&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#5-identify-apparent-parameters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;To bring the equation back to standard Michaelis-Menten form, divide both the numerator and the denominator by $\alpha&amp;rsquo;$:&lt;/p&gt;
+&lt;p&gt;$$v_0 = \frac{\left(\frac{V_{\max}}{\alpha&amp;rsquo;}\right)[S]}{\left(\frac{K_m}{\alpha&amp;rsquo;}\right) + [S]}$$&lt;/p&gt;
+&lt;p&gt;Comparing this directly to the classical velocity equation $v_0 = \frac{V_{\max}^{\text{app}}[S]}{K_m^{\text{app}} + [S]}$, we extract the altered kinetic constants:&lt;/p&gt;
+&lt;p&gt;$$
+\boxed{\text{Apparent } V_{\max} = \frac{V_{\max}}{1 + \frac{[I]}{K_I&amp;rsquo;}}}
+$$&lt;/p&gt;
+&lt;p&gt;$$
+\boxed{\text{Apparent } K_m = \frac{K_m}{1 + \frac{[I]}{K_I&amp;rsquo;}}}
+$$&lt;/p&gt;
+&lt;div id=&#34;mm-plot&#34;&gt;
+  &lt;strong&gt;Michaelis‑Menten Plot&lt;/strong&gt;&lt;br&gt;
+  &lt;img src=&#34;http://localhost:1313/MCBBPICS/mm_plot.png&#34; alt=&#34;MM_PLOT&#34;&gt;
+  &lt;p&gt;The Michaelis‑Menten equation describes the hyperbolic relationship between initial reaction velocity \(V_0\) and substrate concentration \([S]\):&lt;/p&gt;
+  $$ V_0 = \frac{V_{\text{max}} [S]}{K_m + [S]} $$
+  &lt;ul&gt;
+    &lt;li&gt;At low \([S]\), \(V_0\) increases linearly with \([S]\) (first‑order kinetics).&lt;/li&gt;
+    &lt;li&gt;At high \([S]\), \(V_0\) approaches \(V_{\text{max}}\) (zero‑order kinetics).&lt;/li&gt;
+    &lt;li&gt;\(K_m\) is the substrate concentration at \(V_{\text{max}}/2\) and reflects the enzyme’s affinity for the substrate (lower \(K_m\) = higher affinity).&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;lb-plot&#34; style=&#34;margin-top: 2rem;&#34;&gt;
+  &lt;strong&gt;Lineweaver‑Burk Plot (Double‑Reciprocal)&lt;/strong&gt;&lt;br&gt;
+  &lt;img src=&#34;http://localhost:1313/MCBBPICS/lb_plot.png&#34; alt=&#34;LB_PLOT&#34;&gt;
+  &lt;p&gt;Taking the reciprocal of the Michaelis‑Menten equation gives a straight line:&lt;/p&gt;
+  $$ \frac{1}{V_0} = \frac{K_m}{V_{\text{max}}} \cdot \frac{1}{[S]} + \frac{1}{V_{\text{max}}} $$
+  &lt;ul&gt;
+    &lt;li&gt;Slope \(= K_m / V_{\text{max}}\)&lt;/li&gt;
+    &lt;li&gt;Y‑intercept \(= 1 / V_{\text{max}}\)&lt;/li&gt;
+    &lt;li&gt;X‑intercept \(= -1 / K_m\)&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p&gt;This plot is useful for determining kinetic parameters and identifying inhibition types.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-4&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-4&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;Here are some Questions based on previous year questions, and some good ones i made to test both routine basic memorised knowledge.&lt;/p&gt;
+&lt;h3&gt;Sample Questions&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;sample-questions&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#sample-questions&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Question 1&lt;/strong&gt;: &amp;hellip;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Question 2&lt;/strong&gt;: &amp;hellip;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div id=&#34;lb-plot&#34; style=&#34;margin-top: 2rem;&#34;&gt;
+  &lt;strong&gt;Lineweaver‑Burk Plot (Double‑Reciprocal)&lt;/strong&gt;&lt;br&gt;
+  &lt;img src=&#34;http://localhost:1313/MCBBPICS/lb_plot.png&#34; alt=&#34;LB_PLOT&#34;&gt;
+  &lt;p&gt;Taking the reciprocal of the Michaelis‑Menten equation gives a straight line:&lt;/p&gt;
+  $$ \frac{1}{V_0} = \frac{K_m}{V_{\text{max}}} \cdot \frac{1}{[S]} + \frac{1}{V_{\text{max}}} $$
+  &lt;ul&gt;
+    &lt;li&gt;Slope \(= K_m / V_{\text{max}}\)&lt;/li&gt;
+    &lt;li&gt;Y‑intercept \(= 1 / V_{\text{max}}\)&lt;/li&gt;
+    &lt;li&gt;X‑intercept \(= -1 / K_m\)&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p&gt;This plot is useful for determining kinetic parameters and identifying inhibition types.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;/p&gt;
+&lt;script&gt;
+(function() {
+  // Public function to switch tab and scroll
+  window.switchToTabAndScroll = function(tabIndex, elementId) {
+    // Switch tab
+    const tablist = document.querySelector(&#39;[role=&#34;tablist&#34;]&#39;);
+    if (tablist) {
+      const buttons = tablist.querySelectorAll(&#39;[role=&#34;tab&#34;]&#39;);
+      if (buttons[tabIndex]) {
+        buttons[tabIndex].click();
+      }
+    }
+    // Scroll to element after a short delay (allow tab content to render)
+    setTimeout(function() {
+      const el = document.getElementById(elementId);
+      if (el) {
+        el.scrollIntoView({ behavior: &#39;smooth&#39;, block: &#39;center&#39; });
+      }
+    }, 150);
+  };
+
+  // Handle direct hash links (e.g., manual URL with #zwitterion-definition)
+  function handleHashOnLoad() {
+    if (window.location.hash) {
+      const targetId = window.location.hash.substring(1);
+      // Find which tab contains that element and switch automatically
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        const tablist = document.querySelector(&#39;[role=&#34;tablist&#34;]&#39;);
+        if (tablist) {
+          const panels = document.querySelectorAll(&#39;[role=&#34;tabpanel&#34;]&#39;);
+          const buttons = tablist.querySelectorAll(&#39;[role=&#34;tab&#34;]&#39;);
+          for (let i = 0; i &lt; panels.length; i++) {
+            if (panels[i].contains(targetElement)) {
+              if (buttons[i]) buttons[i].click();
+              setTimeout(() =&gt; {
+                targetElement.scrollIntoView({ behavior: &#39;smooth&#39;, block: &#39;center&#39; });
+              }, 150);
+              break;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  document.addEventListener(&#39;DOMContentLoaded&#39;, handleHashOnLoad);
+})();
+&lt;/script&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/resources/1-cell-molecular/cell-biology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/resources/1-cell-molecular/cell-biology/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/resources/1-cell-molecular/molecular-biology/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/resources/1-cell-molecular/molecular-biology/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

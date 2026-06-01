@@ -1,0 +1,47 @@
+![Alt text for accessibility](/Schematic-representation-of-the-desmin-intermediate-filament-network-and-its-association.png)
+{{< tabs items="Theory,Experiment,Quiz" >}}
+{{< tab >}}
+**Transcription** is the process of copying DNA into RNA...
+{{< /tab >}}
+{{< tab >}}
+**Lab Activity**: Build a 3D paper model of DNA...
+{{< /tab >}}
+{{< /tabs >}}
+{{< badge "Important Definition" "info" >}}
+{{< cards >}}
+  {{< card link="https://aoguide.app" title="Molecular Bio" image="/molecular-bio-icon.png" subtitle="From DNA to Proteins" >}}
+  {{< card link="/resources/2-animal-anatomy" title="Animal Anatomy" icon="heart" >}}
+{{< /cards >}}
+
+{{< youtube Lie1uAKxOMA >}}
+
+
+https://appforboguide-oqy3mmeefld5jmkbtaa8u8.streamlit.app/
+Greek letters: $\alpha$, $\beta$, $\gamma$, $\delta$, $\epsilon$, $\pi$, $\theta$
+
+## Interactive 3D Models
+
+{{< iframe src="https://appforboguide-oqy3mmeefld5jmkbtaa8u8.streamlit.app/?embed=true" height="1000px" >}}
+
+{{< pdf "/books/Lehninger Principles of Biochemistry.pdf" >}}
+
+This is normal text. <span style="color: #2d6a4f;">This text is green.</span> Back to normal.<span style="font-size: 1.5rem;" >This text is 50% larger than normal.</span><span style="color: #e63946; font-size: 1.8rem; font-weight: bold;">Warning!</span><span style="background-color: #f9c74f; padding: 0 4px;">highlighted text</span>
+
+<span style="color: #1b4332; background-color: #d8f3dc; font-size: 1.2rem; border-radius: 8px; padding: 2px 8px;">Important definition</span>
+
+{{< badge "Important" "info" >}}  <!-- gives blue info badge -->
+{{< badge "Warning" "warning" >}} <!-- yellow -->
+{{< badge "Error" "error" >}}     <!-- red -->
+{{< badge "Success" "success" >}} <!-- green -->
+
+{{< icon "academic-cap" >}}  <!-- graduation cap -->
+{{< icon "book-open" >}}     <!-- open book -->
+{{< icon "heart" >}}         <!-- heart -->
+
+{{< card title="Cell Biology" link="/resources/1-cell-molecular" >}}
+
+The <span class="highlight-green">mitochondria</span> is the powerhouse.
+
+<div class="ibox">
+  This is an info box. You can put multiple paragraphs here.
+</div>
