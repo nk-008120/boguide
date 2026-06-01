@@ -18,7 +18,7 @@ weight: 1
 
 As announced in IBO 2026 circulars <a href="https://drive.google.com/file/d/11tgdFoMk5hL3PVoncpNxFYcHglHSawyM/view">1</a> and <a href="https://drive.google.com/file/d/15qHvk9HFPSiwTTAIO-MHcct-tKfEG5gp/view">2</a> The plant computational biology section will be composed of **ImageJ** and **Streamlit** softwares respectively.<br>
 
-## Streamlit
+## Streamlit Interactive
 Streamlit is an open-source Python framework that allows you to build interactive, data-driven web applications with minimal code<br>
 It is not a software that directly involves working on the content (as in ImageJ), instead it is simply an interface.<br>
 But nevertheless, it is important that you try out the major features of streamlit plots and interactive graphs and check out what typical questions look like, and how to deal with 3-D interactive graphs, something that is not usually used by us high schoolers preparing for the biology olympiad

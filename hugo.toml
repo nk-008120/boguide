@@ -35,4 +35,5 @@ theme = "hextra"
     enable = true
   [params.footer]
     copyright = "© 2026 BioGuide for IBO Vilnius"
+  toc = true
   

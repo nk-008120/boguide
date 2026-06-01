@@ -1,7 +1,8 @@
----  
-title: "Biochemistry"  
-weight: 1  
+---
+title: "Biochemistry"
+weight: 1
 description: "."
+type: "docs"
 ---
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
 <script>
@@ -13,6 +14,9 @@ description: "."
     }
   };
 </script>
+
+## Biochemistry Topics
+
 PROTEINS, ENZYMES and Their responsibilities.
 {{< tabs >}} 
 {{< tab name="Amino Acids" >}}
@@ -25,7 +29,7 @@ The R groups, also known as side chains, are what determine an amino acid’s pr
 twenty unique R groups, and thus twenty unique amino acids, each with their own properties.
 It is recommended to study and memorize the properties of these amino acids before moving <br>
 ![Alt Text](/MCBBPICS/Amino_Acid2.png) <br>
-A few notable points about their behaviour are:<br>
+### A few notable points about their behaviour are:<br>
 1: Order of aromaticity: Phe>Trp>Tyr>His <br>
 
 2: Nonpolar amino acids (there are 9) contain aliphatic (hydrocarbon) chains or aromatic rings.<br>
@@ -64,7 +68,8 @@ For example, pI of lysine is supposed to be (9+10.5/)2 = 9.75, but its pK<sub>a<
      ═══════════════════════════════════════════════════════════ -->
 
 <span class="badge-custom">IBO Essential</span>
-### 11: Henderson-Hasselbalch & Amino Acid Titration Curves
+
+### 11: Henderson-Hasselbalch & Amino Acid Titration Curves {#henderson-hasselbalch}
 
 At any given pH, the ratio of protonated to deprotonated form of an ionisable group is given by:
 
@@ -126,7 +131,7 @@ The carbon skeletons remaining after deamination are either **glucogenic** (ente
 <span class="badge-custom">Important</span> **Leu and Lys are the only exclusively ketogenic amino acids** — a common IBO question target.
 
 ---
-<span class="badge-custom">IBO Essential</span>
+<span class="badge-custom">Extraaa!!</span>
 ### 14: The Ramachandran Plot — Allowed Backbone Conformations
 
 Not all φ (phi) and ψ (psi) dihedral angle combinations around the α-carbon backbone are sterically allowed. The **Ramachandran plot** maps φ against ψ and shows which combinations are favoured (core regions), allowed (additional regions), and forbidden (steric clashes).
@@ -429,7 +434,9 @@ There is one final type of enzymatic inibition: <br><br>
 <span class="h3-text">Irreversible Inhibition</span><br>
 Unlike Reversible Inhibition, the hallmark of which is non covalent bonds, irreversible inhibition uses only covalent bonds (hence, irreversible). Most common examples are poisons, toxins and so on. <br><br>
 Think about it, you will have some question on this on the questions tab.
+
 {{< /tab >}}
+
 {{< tab name="APPENDIX 1" >}}
 <div id="zwitterion-definition" style="background-color: #000000; padding: 4px 8px; margin: 10px 0;">
   <strong>Zwitterion</strong>: The ionic form of an amino acid with no net charge.
@@ -444,9 +451,9 @@ Think about it, you will have some question on this on the questions tab.
 <div id="motif">
    <strong>Motif</strong> : A motif is a short, recurring pattern of nucleotides (in genomes) or amino acids (in proteins) that holds biological significance
 </div> <br>
-<div id="mmdefinition">
-   <stron>Michaelis-Menten</strong> : Leonor Michaelis and Maud Leonora Menten first published their work on enzyme kinetics in 1913, which featured the signature hyperbolic curve based on the central equation.
-<div id="derivationssk">
+<div id="mmdefinition"></div>
+   <strong>Michaelis-Menten</strong> : Leonor Michaelis and Maud Leonora Menten first published their work on enzyme kinetics in 1913, which featured the signature hyperbolic curve based on the central equation.
+<div id="derivationssk"></div>
    <strong>Steady State kinetics derivation:</strong> <br>The assumption: Rate of formation = Rate of breakdown 
    i.e., $$
 k_1 ([E_t] - [ES]) [S] = k_{-1} [ES] + k_2 [ES]
@@ -461,9 +468,9 @@ $$
 V_t = \dfrac{V_{\text{max}} [S]}{K_m + [S]}
 $$
 Note that if $k_2$ is rate limiting, $K_m$ = $K_d$ = $k_{-1}$/$k_1$ <br>
-</div> <br><br>
-<div id="we3-1"> 
+<br><br>
 
+<div id="we3-1">
 #### 🧪 Solution
 </div>
 We know $k_{\text{cat}}$, [$E_t$], [S], and $V_{0}$. We want to solve for $K_{\text{m}}$.
@@ -736,25 +743,103 @@ $$
 
 {{< /tab >}}
 {{< tab name="Questions" >}}
+<style>
+.spoiler {
+  background-color: #000000;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+  padding: 0 2px;
+}
+.spoiler.revealed {
+  background-color: transparent;
+  color: inherit;
+}
+</style>
+
+<script>
+function toggleSpoiler(el) {
+  el.classList.toggle('revealed');
+}
+</script>
 Here are some Questions based on previous year questions, and some good ones i made to test both routine basic memorised knowledge.
 ### Sample Questions
 
-1. **Question 1**: ...
+### 1. How do you differentiate between irreversible inhibition and normal non competitive inhibition? assume they achieve same final parameter values.
 
-2. **Question 2**: ...
-<div id="lb-plot" style="margin-top: 2rem;">
-  <strong>Lineweaver‑Burk Plot (Double‑Reciprocal)</strong><br>
-  <img src="http://localhost:1313/MCBBPICS/lb_plot.png" alt="LB_PLOT">
-  <p>Taking the reciprocal of the Michaelis‑Menten equation gives a straight line:</p>
-  $$ \frac{1}{V_0} = \frac{K_m}{V_{\text{max}}} \cdot \frac{1}{[S]} + \frac{1}{V_{\text{max}}} $$
-  <ul>
-    <li>Slope \(= K_m / V_{\text{max}}\)</li>
-    <li>Y‑intercept \(= 1 / V_{\text{max}}\)</li>
-    <li>X‑intercept \(= -1 / K_m\)</li>
-  </ul>
-  <p>This plot is useful for determining kinetic parameters and identifying inhibition types.</p>
-</div>
+### 2. What is the difference between ORF and primary structure of a protein? what is the relation between them?
+
+### 3. Isoelectric Point of a Tripeptide
+
+A tripeptide is composed of **Glu‑Arg‑Gly**. The pKa values are:  
+α‑COOH (2.1), α‑NH₃⁺ (9.5), R‑group of Glu (4.1), and R‑group of Arg (12.5).  
+
+What is the approximate isoelectric point (pI) of this tripeptide at 25 °C?
+
+A) 4.4  
+B) 7.0  
+C) 10.5  
+D) 12.0  
+
+<details>
+<summary>👉 Click to reveal answer & explanation</summary>
+
+**Correct answer: B**
+
+📘 **Explanation:** The pI is the average of the two pKₐ values that bracket the zwitterionic form.  
+The tripeptide has four ionizable groups: C‑terminus (pKₐ 2.1), Glu side chain (pKₐ 4.1), N‑terminus (pKₐ 9.5), and Arg side chain (pKₐ 12.5).  
+At low pH, all groups are protonated. As pH increases, the C‑terminus deprotonates first (pKₐ 2.1), then the Glu side chain (pKₐ 4.1). At this point the net charge is zero (Arg⁺, N‑terminus⁺, C‑term⁻, Glu side⁻ → +2 –2 = 0).  
+Therefore the pI lies between pKₐ 4.1 and pKₐ 9.5, i.e. (4.1 + 9.5)/2 = 6.8 ≈ 7.0.
+
+</details>
+
+---
+
+### 4. The Role of Vitamin B₆ in Amino Acid Metabolism
+
+Pyridoxal phosphate (PLP), the active form of vitamin B₆, is an essential cofactor for many enzymes of amino acid metabolism, including transaminases.  
+
+**What is the unique chemical feature of PLP that allows it to serve as the essential cofactor for transaminases?**
+
+A) PLP functions as a metal‑ion catalyst, stabilising a carbanion intermediate.  
+B) PLP forms a high‑energy thioester intermediate with amino acids.  
+C) PLP is a strong oxidant, converting amino acids directly into α‑keto acids.  
+D) PLP acts as an electron sink, covalently binding the amino group via a Schiff base and stabilising a reaction intermediate.
+
+<details>
+<summary>👉 Click to reveal answer & explanation</summary>
+
+**Correct answer: D**
+
+📘 **Explanation:** The aldehyde group of PLP forms a Schiff base (aldimine) with the ε‑amino group of a lysine residue in the enzyme’s active site. Upon substrate binding, the substrate’s amino group replaces the lysine, forming a new Schiff base. The pyridinium ring of PLP acts as an electron sink, stabilising the carbanion intermediate that forms during the reaction – this is key to facilitating the transfer of the amino group. Metal ions, thioesters, and oxidation are not the primary mechanisms of PLP.
+
+</details>
+
+---
+
+### 5. Membrane Protein Extraction
+
+A researcher wants to extract an integral membrane protein from a cell membrane while **preserving its native folded structure** for a functional assay.
+
+**Which of the following is the most appropriate first choice for this purpose?**
+
+A) 1 % SDS (sodium dodecyl sulfate)  
+B) 8 M urea  
+C) 1 % Triton X‑100 (a non‑ionic detergent)  
+D) High salt concentration (2 M NaCl)
+
+<details>
+<summary>👉 Click to reveal answer & explanation</summary>
+
+**Correct answer: C**
+
+📘 **Explanation:** Non‑ionic detergents like Triton X‑100 disrupt lipid bilayers by inserting into the membrane, effectively releasing integral proteins without denaturing them. SDS is a strong anionic denaturant. Urea also denatures proteins. High salt is used to elute peripherally associated proteins or to disrupt ionic interactions, but it will not solubilise integral membrane proteins.
+
+</details>
 {{< /tab >}}
+
 {{< /tabs >}}
 <script>
 (function() {

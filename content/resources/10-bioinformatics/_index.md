@@ -19,8 +19,10 @@ description: "Complete bioinformatics guide for IBO: databases, BLAST, alignment
 <br>1. Good for acquainted people who want to brush up : <a href="https://www.srmist.edu.in/wp-content/uploads/2022/05/Bioinformatics-Lab.pdf" target="blank">Here</a>
 <br>2. Good for beginners to understand role of each tool: <a href="https://vvvcollege.org/dbt/LabManual-Bioinformatics.pdf" target="blank">Here</a> 
 <br>3.People who like to learn form videos: <a href="https://www.youtube.com/@BIOPATHWAY">Here</a>
+<br>4. A really recommended resource is our own IBO 2022 Practicals tab (scroll right in tabs section just below and click on IBO Practical 2022)
+<br>5. Official IBO reference pdf : <a href="https://www.ibo-info.org/files/downloads/Educational%20Conference%20documents/2024/3.Bioinformatics-in-IBO.pdf"> Here</a>
 
-{{< tabs items="Introduction,Databases &amp; Tools,Sequence Alignment,Phylogenetics,Genome Analysis,Protein Structure,IBO Practicals,Interactive Lab,Worked Examples,Appendix" >}}
+{{< tabs items="Introduction,Databases &amp; Tools,Sequence Alignment,Phylogenetics,Genome Analysis,Protein Structure,IBO Practical 2022,Lab Manual Examples,Worked Examples,Appendix" >}}
 
 {{< tab name="Introduction" >}}
 ## What is bioinformatics and why does the IBO test it?
@@ -415,6 +417,7 @@ When the experimental 3D structure of your protein is unknown, but a **homologou
   {{< iframe src="/ibo2022-sim.html" height="90vh" >}}
 </div>
 
+<strong><a href="/ibo2022bioinfo.pdf">Please refer to IBO 2022 bioinformatics practical pdf</a>
 *The above interactive simulation reproduces the **IBO 2022 Bioinformatics Practical** (chemokine signalling pathway, KEGG expression mapping, alignment tasks). Click the tabs to explore. This is a static HTML/JS version – the full exam would be inside a secure browser.*
 
 **How to use this simulation:**
