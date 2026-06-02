@@ -24,12 +24,12 @@ Amino acids are the monomers, or building blocks, of proteins. They are the smal
 of a polypeptide chain, substituted methanes, which eventually folds to become a protein. Amino acids are made of
 two chemical groups, namely a carboxyl group, an amine group, and a variable R group, also
 known as a side chain. These chemical groups are all attached to a carbon, which also has an
-extra hydrogen atom binded to it. <br> ![Alt text](/MCBBPICS/Amino_Acid.png) <br>
+extra hydrogen atom bound to it. <br> ![Alt text](/MCBBPICS/Amino_Acid.png) <br>
 The R groups, also known as side chains, are what determine an amino acid’s properties: buffering capabilities, hydrophobic properties, polarity, compressibility, and more. There are
 twenty unique R groups, and thus twenty unique amino acids, each with their own properties.
 It is recommended to study and memorize the properties of these amino acids before moving <br>
 ![Alt Text](/MCBBPICS/Amino_Acid2.png) <br>
-### A few notable points about their behaviour are:<br>
+### A few notable points about their behaviour:<br>
 1: Order of aromaticity: Phe>Trp>Tyr>His <br>
 
 2: Nonpolar amino acids (there are 9) contain aliphatic (hydrocarbon) chains or aromatic rings.<br>
@@ -55,7 +55,7 @@ For example, pI of lysine is supposed to be (9+10.5/)2 = 9.75, but its pK<sub>a<
 <br><br><a href="#" onclick="switchToTabAndScroll(3, 'glyco-phospho'); return false;">Glycosylation and Phosphorylation*</a> <br>
 8: <span style="font-size: 1.2rem;">Phosphorylation targets: Ser, Thr, Tyr, His</span> <br>Because their side chains contain nucleophilic hydroxyl (\(-OH\)) or nitrogen-containing functional groups. These groups allow kinases to attach a phosphate group, creating a reversible switch that regulates protein function, stability, and cellular signaling
 <br><br>
-9: <span style="font-size: 1.2rem;">N-Glycosylation and O-Glycosylation sites: Asp and Ser, Thr respectively</span><br>
+9: <span style="font-size: 1.2rem;">N-Glycosylation and O-Glycosylation sites: Asn and Ser, Thr respectively</span><br>
    N-Glycosylation:<br>Consensus Sequence: Asn - X - Ser / Thr (where X is any amino acid except Proline)<br>Why: The enzyme oligosaccharyltransferase (OST) scans the unfolded protein during synthesis for this specific tri-peptide pattern. The side chain of asparagine contains a reactive nitrogen group where an entire, pre-assembled 14-sugar carbohydrate block is attached<br>
    O-Glycosylation: Consensus Sequence: None strictly defined<br> These attach to flexible, proline-rich regions.Why: Serine and threonine both contain exposed hydroxyl side chains. Enzymes in the Golgi apparatus (such as polypeptide N-acetylgalactosaminyltransferases) use this group as a nucleophile to add sugars one by one<br><br>
 <span class="badge-custom">Important</span> <br>
@@ -156,23 +156,23 @@ Key regions to know:
 Proteins are large, essential macromolecules made of amino acids. They serve as the foundational building blocks of the body, driving nearly all biological processes including cell repair, muscle growth, enzyme function, and immune defense and pretty much everything else.<br>
 L-Amino Acid <a href="#" onclick="switchToTabAndScroll(3, 'stereo'); return false;">stereoisomers</a> are found in the vast majority of living residues. Because enzymes, receptors, and DNA are chiral, proteins require precise "left-handed" building blocks to fold correctly and function. Using mixed D- and L-isomers would cause enzymes to misfold and fail
 <br><br>
-<span class="h2-text"> Protein Structure : </span>
-<br><br>
-The structure of a protein, conformational and sequence-based, decide the fate, function, and form of the protein. Some polyubiquitination motif could cause the whole protein to self destruct, A signal <a href="#" onclick="switchToTabAndScroll(3, 'motif'); return false;"> motif</a> could cause the protein to migrate (mitochondrial targeting sequence (MTS)), and the world renowned insuling C peptide sulfide bond could decide a lot.
+## Protein Structure
+
+The structure of a protein, conformational and sequence-based, decide the fate, function, and form of the protein. Some polyubiquitination motif could cause the whole protein to self destruct, A signal <a href="#" onclick="switchToTabAndScroll(3, 'motif'); return false;"> motif</a> could cause the protein to migrate (mitochondrial targeting sequence (MTS)), and the world renowned insulin's C peptide sulfide bond could decide a lot.
 <br><br>
 There are 4 well established levels to the structure of a protein:
 <br>
-1-: <span class="h3-text"> Primary structure </span><br>
-  The primary structure of a protein is simply the linear sequence of amino acids in its polypeptide chain. It contains primarily peptide and disulfide bonds.<br><br>
+### Primary structure
+The primary structure of a protein is simply the linear sequence of amino acids in its polypeptide chain. It contains primarily peptide and disulfide bonds.<br><br>
   ![Alt text](/MCBBPICS/secondary.png)
-2A-: <span class="h3-text"> Secondary structure </span><br>
-  Protein secondary structure is maintained almost entirely by hydrogen bonds formed between atoms in the polypeptide backbone, specifically between the carbonyl oxygen and amide hydrogen. Unlike tertiary or quaternary structures, the side chains (R-groups) are not involved in these bonds
+### Secondary structure
+Protein secondary structure is maintained almost entirely by hydrogen bonds formed between atoms in the polypeptide backbone, specifically between the carbonyl oxygen and amide hydrogen. Unlike tertiary or quaternary structures, the side chains (R-groups) are not involved in these bonds
   There are two motifs which define secondary structures:<br><br>
   *Please switch to light mode*
   ![Alt text](/MCBBPICS/structuralaas.png)<br><br>
   A) $\alpha$-Helix:  - 1 Turn = 3.6 amino acids
-                      - <span class="h3-text">High Propensity: Alanine, Glutamate, Leucine, Methionine, and Lysine</span> (often abbreviated by their single-letter codes as MALEK).<br>Why: These amino acids provide an ideal balance of bulk and flexibility, and their side chains lack steric interference. Glutamate and Lysine also form stabilizing salt bridges, while Alanine has the highest intrinsic capacity to pack tightly into a standard helical coil<br><br>
-                      - <span class="h3-text">Helix Breakers: Proline and Glycine.</span><br>Why:Proline: Its side chain loops back and covalently binds to the main nitrogen backbone, creating a rigid ring. This entirely lacks the amide hydrogen required to participate in the helix's core hydrogen bonding and introduces a strict structural kink.<br>Glycine: It has a hydrogen atom as its only side chain, making it incredibly flexible. This high flexibility makes it "entropically expensive" (costly in terms of energy) for the protein to force it into a rigid, constrained helix<br><br>
+  - **High Propensity: Alanine, Glutamate, Leucine, Methionine, and Lysine** (often abbreviated by their single-letter codes as MALEK).<br>Why: These amino acids provide an ideal balance of bulk and flexibility, and their side chains lack steric interference. Glutamate and Lysine also form stabilizing salt bridges, while Alanine has the highest intrinsic capacity to pack tightly into a standard helical coil<br><br>
+  - **Helix Breakers: Proline and Glycine.**<br>Why: Proline's side chain loops back and covalently binds to the main nitrogen backbone, creating a rigid ring. This entirely lacks the amide hydrogen required to participate in the helix's core hydrogen bonding and introduces a strict structural kink.<br>Glycine: It has a hydrogen atom as its only side chain, making it incredibly flexible. This high flexibility makes it "entropically expensive" (costly in terms of energy) for the protein to force it into a rigid, constrained helix<br><br>
                       - Alpha helices are known for their ability to introgress in cell membranes. Their primary functions include providing fundamental structural support (as in hair and nails), creating binding sites for molecular recognition, and facilitating the transport of molecules across cell membranes. <br><br>
   B) $\beta$-Sheets:  - 180 deg turn in 4 AA residues <br><br>
                       - High Propensity: Large aromatic residues like Tryptophan, Tyrosine, and Phenylalanine, and branched amino acids like Valine, Isoleucine, and Threonine.<br>Why: Beta sheets (and beta strands) form extended, zig-zag polypeptide conformations. Bulky aromatic and branched side chains physically block the tight coiling seen in helices, naturally favoring the more open and spacious geometry of beta sheets.    <br><br>              
@@ -181,9 +181,9 @@ There are 4 well established levels to the structure of a protein:
   C) $\beta$-Turn:    - Third and lesser known secondary structure, used to connect two adjacent anti parallel beta sheet strands                <br><br>
   <span class="badge-custom">Important</span> <br>
   As a rule of thumb in secondary structure , use n=n+3 , implying that only 3 adjacent amino acid interactions are significant.       <br><br>
-2B-: <span class="h3-text"> Supersecondary structure </span><br>    
-    The less known but question-relevant structure, consists of simple motifs like $\alpha$-$\alpha$-$\alpha$, $\alpha$-$\beta$-$\alpha$ , $\beta$-$\beta$-$\beta$.<br><br>
-3-: <span class="h3-text"> Tertiary structure </span><br>
+### Supersecondary structure
+The less known but question-relevant structure, consists of simple motifs like $\alpha$-$\alpha$-$\alpha$, $\alpha$-$\beta$-$\alpha$ , $\beta$-$\beta$-$\beta$.<br><br>
+### Tertiary structure
 The tertiary structure of a protein is its overall 3D shape, formed by the folding and packing of secondary structures (like $\alpha$-helices and $\beta$-sheets) into compact functional units called domains. It is driven and stabilized by interactions between the amino acid side chains (R-groups) and the surrounding environment
                       - 1. Bonds and Interactions Stabilizing the StructureThe intricate 3D shape is held together by four main types of interactions:<br>
                         - Hydrophobic Interactions: The primary driving force of protein folding. Nonpolar (hydrophobic) amino acid side chains cluster in the interior of the protein to avoid water, while polar side chains stay on the outside.<br>
@@ -194,8 +194,8 @@ The tertiary structure of a protein is its overall 3D shape, formed by the foldi
                         - Van der Waals Forces: Weak, short-range attractions between closely packed atoms in the protein's dense core.<br>
                         - Chaperone Proteins: Cellular helper proteins (like chaperonins) that bind to newly forming proteins, preventing them from tangling or aggregating incorrectly before the folding process is complete.<br>
                         - Denaturation: Because most tertiary bonds are noncovalent, they are fragile. Changes in pH, heavy metals, or high temperatures can disrupt these bonds, causing the protein to unfold and lose its biological function <br><br>
-4-:  <span class="h3-text"> Quarternary structure </span><br>  
-Quarternary structures are formed by the interactions between Tertiary ones. These make the final protein unit, often just hydrogen bonded multimers.
+### Quaternary structure
+Quaternary structures are formed by the interactions between Tertiary ones. These make the final protein unit, often just hydrogen bonded multimers.
 <br><br>
 <!-- ═══════════════════════════════════════════════════════════
      ADDITIONAL IBO-RELEVANT CONTENT — PROTEINS
@@ -215,6 +215,8 @@ $$ \theta = \frac{[O_2]^{n_H}}{K_d^{n_H} + [O_2]^{n_H}} $$
 
 For Hb, n_H ≈ 2.8 (max 4 for perfect cooperativity). Myoglobin (monomeric, no cooperativity) gives a hyperbolic curve with n_H = 1.
 
+<span class="badge-custom">IBO Essential</span>
+You do not need to necessarily understand the complete equation. but you should  understand the role of hills coefficient and its limits.<br>
 **Heterotropic effectors (IBO-tested):**
 
 | Effector | Effect on Hb | Mechanism |
@@ -278,7 +280,7 @@ This system is the target of **bortezomib** (proteasome inhibitor used in multip
 <span class="badge-exploration">Explore!</span> <br>
 Give a visit to <a href="https://www.rcsb.org/3d-view/jsmol/4HHB/1" target="blank">RCSB Protein visualizer</a> and look at some amazing structures of the very molecules which define us. <br><br>
 <span class="badge-curiosity">Proceed if you have the time!</span> <br>
-<span class="h2-text"> Proteins' Structure: </span><br>
+### Fibrous and globular proteins
 Now, let us look at some common protein structures and find differnces:<br>
 1. Fibrous Proteins <a href="https://www.rcsb.org/3d-view/AF_AFQ9BYR0F1" target="blank">$\alpha$ Keratin</a> Keratin has helices with disulfide bonds, imparting toughness.  
 <a href="https://www.rcsb.org/3d-view/3UA0" target="blank">Silk Fibronin</a>  $\beta$ sheets of fibronin make it soft and flexible.
@@ -290,15 +292,16 @@ Now, let us look at some common protein structures and find differnces:<br>
 Do a similar analysis and write down your results for these 3.
 {{< /tab >}}
 {{< tab name="Enzyme Kinetics" >}}
-<span class="big-text">ENZYME KINETICS </span><br><br>
-Most people start enzyme kinetics and end it at just about one equation. But here, we shall try to explore the concept in more detail, if you are in a hurry, i reccomend just looking at the parts marked important or the equations.The kinetics constants have been used in the same order.
+## Enzyme Kinetics
+
+Most people start enzyme kinetics and end it at just about one equation. But here, we shall try to explore the concept in more detail. If you are in a hurry, look at the parts marked important or the equations. The kinetics constants have been used in the same order.
 <br><br>
 <img src="/MCBBPICS/kinetics_phases.png" alt="kinetics_phases" style="max-width:100%; height:auto;">
-<br>Our reactiorns are : 
+<br>Our reactions are : 
 $$
 \text{E+S} \rightleftharpoons \text{ES} \rightleftharpoons \text{E+P}
 $$
-<span class="h3-text">Pre Steady State Kinetics</span> 
+### Pre-Steady State Kinetics
 <br> - Timeframe: Milliseconds to a few seconds
 <br> - Free enzyme binds substrate; intermediates accumulate
 <br> - Determine individual rate and equilibrium constants (\(k_1, k_{-1}, k_2\), etc.)
@@ -309,7 +312,7 @@ $$
 <a href="#" onclick="switchToTabAndScroll(3, 'derivationssk'); return false;">Click for Derivation of Steady State Kinetics
 </a>
 <br>
-<span class="h3-text">Steady State Kinetics</span><br><br>
+### Steady State Kinetics
 Before Starting, we advise you to familiarize yourself with <a href="#" onclick="switchToTabAndScroll(3, 'mm-plot'); return false;">Michaelis-Menten</a> and <a href="#" onclick="switchToTabAndScroll(3, 'lb-plot'); return false;">Lineweaver-Burk</a> plots, if not already, so you are able to understand all presented graphs.
 The central equation of steady state kinetics <a href="#" onclick="switchToTabAndScroll(3, 'mmdefinition'); return false;">*Michaelis-Menten Kinetics*</a> is
 $$
@@ -319,7 +322,7 @@ Where $K_m$ is the substrate concentration at which velocity of the reaction is 
 $$
  \frac{k_{-1}+k_2}{k_1}
 $$
-<span class="h2-text"> $V_{max}$ </span> <br>
+### V_max and k_cat
 The parameter $V_{max}$ is equal to the product of $k_{cat}$ and [$E_t$]
 where $k_{cat}$ is the kinetic constant of the rate limiting step. In our case, it is equal to $k_2$ as product release is the rate limiting step.If the reactions were:
 $$
@@ -327,7 +330,7 @@ $$
 $$
 The rate constant $k_{cat}$ would be $k_3$ assuming product release is limiting step.
   <br>It is also called the *Turnover number* as it represents the number of substrate molecules being converted to product molecules per unit time, when enzyme is saturated with substrate.<br> It is also proportional to the speed of the enzyme<br><br>
-<span class="h2-text"> Specificity Constant </span><br>
+### Specificity Constant (k_cat/K_m)
 The best way to compare the catalytic efficiencies
 of different enzymes or the turnover of different substrates by the same enzyme is to compare the ratio kcat/Km
 for the two reactions. This parameter, sometimes called
@@ -366,13 +369,13 @@ When [$E_t$] = 20 nM and [SAD] = 40 $\mu$M, the reaction velocity $V_{0}$ is $9.
 <br><br>
 <span class="badge-exploration">Explore! (*Out of Syllabus*)</span> <br>
 <a href="https://courseware.cutm.ac.in/wp-content/uploads/2020/06/Bi-substrate-reaction-PDF.pdf" target="blank">Explore Ping-Pong and Ternary Complex bisubstrate reactions here</a><br><br>
-<span class="h2-text">Enzyme Inhibition Kinetics</span>
+## Enzyme Inhibition Kinetics
 <br>![Alt text](/MCBBPICS/inhibitionmm.png)<br>
 <br>![Alt text](/MCBBPICS/lbcomp.png)<br>
 Inhibition of an enzyme translates to reduction in its activity, or ability to produce product by deduction of specificity constant, but the underlying mathematics are difference for each of the four kinds of reversible inhibition:<br>
-<span class="h3-text">Competitive Reversible Inhibition</span>
+### Competitive Reversible Inhibition
 <br>
-Competitive inhibition, quite literally means competition of a substrate (our good guy) with another evil substrate who plans to slow us down. The main effect observed due to this is apparent reduction in binding affinity of the simpleton enzyme to our good substrate, as there is another luring evil substrate in the vicinity. Hence, the apparent $K_m'$is greater than the original $K_{m0}$. But as the good substrate increases in number, eventually at very high concentrations it takes over the effect of the bad one, and we achive the same $V_{max'}$ as the original $V_{max0}$.
+Competitive inhibition, quite literally means competition of a substrate (our good guy) with another evil substrate who plans to slow us down. The main effect observed due to this is apparent reduction in binding affinity of the simpleton enzyme to our good substrate, as there is another luring evil substrate in the vicinity. Hence, the apparent $K_m'$is greater than the original $K_{m0}$. But as the good substrate increases in number, eventually at very high concentrations it takes over the effect of the bad one, and we achieve the same $V_{max'}$ as the original $V_{max0}$.
 
 $$
 \text{E} + \text{S} \rightleftharpoons \text{ES} \rightarrow \text{E} + \text{P}
@@ -395,7 +398,7 @@ $$
 $$
 <a href="#" onclick="switchToTabAndScroll(3, 'derivationkm'); return false;">*Click for derivation*</a>
 <br><br>
-<span class="h3-text">Uncompetitive Reversible Inhibition</span><br>
+### Uncompetitive Reversible Inhibition
 Uncompetitive inhibition features the following additional reaction:
 $$
 \text{ES} + \text{I} \rightleftharpoons \text{EIS}
@@ -410,7 +413,7 @@ $$
 V_t = \dfrac{V_{\text{max}} \cdot [S]}{K_{m} + (\alpha' \cdot [S])}
 $$
 <br>
-<span class="h3-text">Noncompetitive Reversible Inhibition</span><br>
+### Noncompetitive Reversible Inhibition
 the additional reactions going on are :
 $$
 \text{ES} + \text{I} \rightleftharpoons \text{EIS}
@@ -420,7 +423,7 @@ $$
 $$
 But the nuance is that both sites of enzyme have equal affinity for the substrate, hence only the $V_{max}$ decreases, and no prizes for guessing that it decreases by a fator of $\alpha$ = $\alpha'$ . Try to derive this one yourself.
 <br><br>
-<span class="h3-text">Mixed Reversible Inhibition</span><br>
+### Mixed Reversible Inhibition
 Mixed reversible inhibition is, by the reactive point of view, the same as noncompetitive inhibition. But the nuance in thi is that the affinities for [E] and [ES] are different, hence the $K_m$ can increase or decrease, and the $V_{max}$, is doomed to decrease.
 The derivation of this is extremely out of syllabus, so we will just show the final results:
 $$
@@ -430,8 +433,8 @@ $$
 V_{max'} = \frac{V_{max0}}{\alpha}
 $$
 <br>
-There is one final type of enzymatic inibition: <br><br>
-<span class="h3-text">Irreversible Inhibition</span><br>
+There is one final type of enzymatic inhibition: <br><br>
+### Irreversible Inhibition
 Unlike Reversible Inhibition, the hallmark of which is non covalent bonds, irreversible inhibition uses only covalent bonds (hence, irreversible). Most common examples are poisons, toxins and so on. <br><br>
 Think about it, you will have some question on this on the questions tab.
 
@@ -542,7 +545,7 @@ $$
 $$
 <br><br>
 <div id="derivationkm">
-   <strong>Derivatrion of $K_{m'}$</strong> </div>:
+   <strong>Derivation of $K_{m'}$</strong> </div>:
    Under competitive inhibition, an inhibitor binds reversibly to the enzyme's active site, preventing the substrate from binding. This increases the substrate concentration required to reach a specific velocity, yielding a new, higher *apparent Michaelis constant* ($K_{m}^{app}$) derived as:
 
 $$ K_{m}^{app} = K_m \left(1 + \frac{[I]}{K_i}\right) $$
@@ -730,7 +733,7 @@ $$
 
 <div id="lb-plot" style="margin-top: 2rem;">
   <strong>Lineweaver‑Burk Plot (Double‑Reciprocal)</strong><br>
-  <img src="http://localhost:1313/MCBBPICS/lb_plot.png" alt="LB_PLOT">
+  <img src="/MCBBPICS/lb_plot.png" alt="LB_PLOT">
   <p>Taking the reciprocal of the Michaelis‑Menten equation gives a straight line:</p>
   $$ \frac{1}{V_0} = \frac{K_m}{V_{\text{max}}} \cdot \frac{1}{[S]} + \frac{1}{V_{\text{max}}} $$
   <ul>
@@ -888,5 +891,203 @@ D) High salt concentration (2 M NaCl)
   }
 
   document.addEventListener('DOMContentLoaded', handleHashOnLoad);
+})();
+</script>
+
+<script>
+/* BOGuide Dynamic TOC v3 — rewrites from scratch
+   Key fixes vs previous versions:
+   1. Panel detection: maps tab button index → panel index, no reliance on [hidden]
+   2. Links: onclick-based, activates the right tab then scrolls — no bare href anchors
+   3. Change detection: MutationObserver on aria-selected attribute changes, not click events
+   4. Works whether Hextra uses display:none, visibility, or [hidden] to hide panels
+*/
+(function () {
+  'use strict';
+
+  var TAB_DELAY = 80; // ms to wait after tab switch before scanning headings
+
+  /* ── slugify ─────────────────────────────────────────────────────────── */
+  function slugify(t) {
+    return t.toLowerCase().replace(/[^\w\s-]/g,'').replace(/\s+/g,'-').replace(/-+/g,'-').trim();
+  }
+
+  /* ── Get the currently active panel by matching button → panel index ─── */
+  function getActivePanel() {
+    var buttons = Array.from(document.querySelectorAll('[role="tab"]'));
+    var panels  = Array.from(document.querySelectorAll('[role="tabpanel"]'));
+    if (!buttons.length || !panels.length) return panels[0] || null;
+
+    // Find the selected button
+    var idx = buttons.findIndex(function(b) {
+      return b.getAttribute('aria-selected') === 'true'
+          || b.classList.contains('active')
+          || b.getAttribute('data-state') === 'active';
+    });
+    if (idx === -1) idx = 0;
+    return panels[idx] || panels[0] || null;
+  }
+
+  /* ── Get or create the TOC nav element ──────────────────────────────── */
+  function getTocEl() {
+  var el = document.getElementById('boguide-toc');
+  if (el) return el;
+  el = document.createElement('nav');
+  el.id = 'boguide-toc';
+  el.style.cssText = [
+    'position:fixed',
+    'top:72px',
+    'right:12px',
+    'width:216px',
+    'max-height:calc(100vh - 84px)',
+    'overflow-y:auto',
+    'border-radius:10px',
+    'padding:12px 14px 14px',
+    'z-index:9999',
+    'font-family:inherit',
+    'font-size:13px',
+    'line-height:1.5',
+    'display:none'
+  ].join(';');
+  document.body.appendChild(el);
+  return el;
+}
+
+  /* ── Build (or rebuild) the TOC ─────────────────────────────────────── */
+  function buildToc() {
+    var panel = getActivePanel();
+    var tocEl = getTocEl();
+
+    if (!panel) { tocEl.style.display = 'none'; return; }
+
+    // Stamp IDs on every h2/h3 in ALL panels (needed for cross-tab anchor nav)
+    document.querySelectorAll('[role="tabpanel"]').forEach(function(p, panelIdx) {
+      p.querySelectorAll('h2,h3').forEach(function(h) {
+        if (!h.id) h.id = 'bg-' + panelIdx + '-' + slugify(h.textContent);
+      });
+    });
+
+    var headings = Array.from(panel.querySelectorAll('h2, h3'));
+    if (!headings.length) { tocEl.style.display = 'none'; return; }
+
+    // Tab label
+    var buttons   = Array.from(document.querySelectorAll('[role="tab"]'));
+    var panels    = Array.from(document.querySelectorAll('[role="tabpanel"]'));
+    var panelIdx  = panels.indexOf(panel);
+    var activeBtn = buttons[panelIdx] || null;
+    var tabLabel  = activeBtn ? activeBtn.textContent.trim() : '';
+
+    // Render
+    var html = '<p style="font-weight:700;font-size:11px;text-transform:uppercase;'
+             + 'letter-spacing:.07em;margin:0 0 6px;color:var(--color-text-secondary,#6b7280)">'
+             + 'On this page</p>';
+    if (tabLabel) {
+      html += '<p style="font-size:11px;color:var(--color-text-secondary,#9ca3af);'
+            + 'margin:0 0 8px;padding-bottom:6px;'
+            + 'border-bottom:1px solid var(--border-color,#e2e8f0)">'
+            + '&#8627; ' + tabLabel + '</p>';
+    }
+    html += '<ul style="list-style:none;margin:0;padding:0">';
+    headings.forEach(function(h) {
+      var isH3   = h.tagName === 'H3';
+      var indent = isH3 ? 'padding-left:12px' : '';
+      var weight = isH3 ? 'normal' : '600';
+      var size   = isH3 ? '12px' : '13px';
+      var opacity= isH3 ? '.72' : '1';
+      var pid    = panelIdx; // captured for onclick closure
+      var hid    = h.id;
+      html += '<li style="margin:1px 0;' + indent + '">'
+           + '<a href="javascript:void(0)"'
+           + ' data-panel="' + pid + '" data-hid="' + hid + '"'
+           + ' style="display:block;padding:4px 6px;border-radius:5px;'
+           + 'font-size:' + size + ';font-weight:' + weight + ';opacity:' + opacity + ';'
+           + 'color:inherit;text-decoration:none;cursor:pointer;'
+           + 'transition:background .12s,color .12s"'
+           + ' onmouseover="this.style.background=\'var(--color-primary-100,rgba(22,163,74,.08))\';this.style.color=\'var(--color-primary-600,#16a34a)\';this.style.opacity=\'1\'"'
+           + ' onmouseout="this.style.background=\'\';this.style.color=\'\';this.style.opacity=\'' + opacity + '\'"'
+           + ' onclick="boGuideTocNav(this)">'
+           + h.textContent.replace(/^[#\s]+/,'').trim()
+           + '</a></li>';
+    });
+    html += '</ul>';
+    tocEl.innerHTML = html;
+    tocEl.style.display = 'block';
+  }
+
+  /* ── TOC link click handler — activate panel then scroll ─────────────── */
+  window.boGuideTocNav = function(link) {
+    var panelIdx = parseInt(link.getAttribute('data-panel'), 10);
+    var hid      = link.getAttribute('data-hid');
+    var buttons  = Array.from(document.querySelectorAll('[role="tab"]'));
+    var btn      = buttons[panelIdx];
+
+    function scrollToHeading() {
+      var el = document.getElementById(hid);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    if (btn) {
+      // Check if this panel is already active
+      var alreadyActive = btn.getAttribute('aria-selected') === 'true'
+                       || btn.classList.contains('active')
+                       || btn.getAttribute('data-state') === 'active';
+      if (alreadyActive) {
+        scrollToHeading();
+      } else {
+        btn.click();
+        setTimeout(scrollToHeading, 120);
+      }
+    } else {
+      scrollToHeading();
+    }
+  };
+
+  /* ── Watch for tab changes via MutationObserver on aria-selected ─────── */
+  function attachObserver() {
+    var tablist = document.querySelector('[role="tablist"]');
+    if (!tablist) return;
+
+    // Watch attribute mutations on all tab buttons
+    var obs = new MutationObserver(function(mutations) {
+      var changed = mutations.some(function(m) {
+        return m.type === 'attributes'
+            && (m.attributeName === 'aria-selected'
+             || m.attributeName === 'class'
+             || m.attributeName === 'data-state');
+      });
+      if (changed) setTimeout(buildToc, TAB_DELAY);
+    });
+
+    tablist.querySelectorAll('[role="tab"]').forEach(function(btn) {
+      obs.observe(btn, { attributes: true, attributeFilter: ['aria-selected','class','data-state'] });
+    });
+
+    // Also observe tablist itself for class changes
+    obs.observe(tablist, { attributes: true, subtree: true,
+                           attributeFilter: ['aria-selected','class','data-state'] });
+  }
+
+  /* ── MathJax re-render on tab switch ─────────────────────────────────── */
+  function attachMathJax() {
+    var tablist = document.querySelector('[role="tablist"]');
+    if (!tablist) return;
+    tablist.querySelectorAll('[role="tab"]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        setTimeout(function() {
+          if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise();
+        }, 150);
+      });
+    });
+  }
+
+  /* ── Init ────────────────────────────────────────────────────────────── */
+  document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+      buildToc();
+      attachObserver();
+      attachMathJax();
+    }, 400);
+  });
+
 })();
 </script>

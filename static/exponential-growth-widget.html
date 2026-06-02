@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Exponential Growth Explorer | BioGuide</title>
+    <script src="https://cdn.plot.ly/plotly-3.1.0.min.js" charset="utf-8"></script>
+    <style>
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: #fefcf5;
+            margin: 0;
+            padding: 20px;
+            color: #1e293b;
+        }
+        .widget-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            padding: 1.5rem;
+        }
+        h3 {
+            margin-top: 0;
+            color: #1a472a;
+            font-weight: 600;
+        }
+        .subtitle {
+            font-size: 0.85rem;
+            color: #4b5563;
+            margin-bottom: 1.2rem;
+            border-left: 3px solid #2d6a4f;
+            padding-left: 12px;
+        }
+        .slider-panel {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 1.5rem 0;
+            background: #f8fafc;
+            padding: 1rem 1.5rem;
+            border-radius: 20px;
+        }
+        .slider-item {
+            flex: 1;
+            min-width: 180px;
+        }
+        label {
+            display: block;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.3px;
+            margin-bottom: 0.3rem;
+            color: #2d6a4f;
+        }
+        input {
+            width: 100%;
+            cursor: pointer;
+            accent-color: #2d6a4f;
+        }
+        .value-display {
+            font-family: monospace;
+            font-size: 0.9rem;
+            background: #eef2e6;
+            padding: 2px 8px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 4px;
+        }
+        .note {
+            font-size: 0.75rem;
+            color: #6b7280;
+            text-align: center;
+            margin-top: 1.5rem;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 0.8rem;
+        }
+        @media (max-width: 600px) {
+            .widget-container { padding: 1rem; }
+            .slider-panel { flex-direction: column; gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="widget-container">
+    <h3>🌱 Exponential Population Growth</h3>
+    <div class="subtitle">
+        \( N(t) = N_0 \, e^{rt} \) &nbsp;&nbsp;|&nbsp;&nbsp; Doubling time \( t_d = \frac{\ln 2}{r} \)
+    </div>
+
+    <div class="slider-panel">
+        <div class="slider-item">
+            <label>📈 Intrinsic growth rate \( r \)</label>
+            <input type="range" id="rSlider" min="0.01" max="0.5" step="0.005" value="0.15">
+            <div><span class="value-display" id="rValue">0.15</span> per time unit</div>
+        </div>
+        <div class="slider-item">
+            <label>🌿 Initial population \( N_0 \)</label>
+            <input type="range" id="n0Slider" min="10" max="500" step="5" value="50">
+            <div><span class="value-display" id="n0Value">50</span> individuals</div>
+        </div>
+    </div>
+
+    <div id="plotly-div" style="width:100%; height:450px;"></div>
+    <div class="note">
+        ⚡ Exponential growth is only possible when resources are unlimited. In nature, this phase is short‑lived.<br>
+        <strong>Doubling time</strong> \( t_d \) updates automatically with \( r \).
+    </div>
+</div>
+
+<script>
+    // Utility to update plot
+    function updatePlot() {
+        const r = parseFloat(document.getElementById('rSlider').value);
+        const N0 = parseFloat(document.getElementById('n0Slider').value);
+        document.getElementById('rValue').innerText = r.toFixed(3);
+        document.getElementById('n0Value').innerText = N0;
+
+        const t_max = Math.min(40, Math.ceil(6 / r));   // dynamic range: show ~6 doublings or 40 time units
+        const t = Array.from({length: 200}, (_, i) => (i / 199) * t_max);
+        const N = t.map(tt => N0 * Math.exp(r * tt));
+        const doublingTime = Math.log(2) / r;
+
+        // Add a vertical line at doubling time if within range
+        const shapes = [];
+        if (doublingTime <= t_max) {
+            const Nd = N0 * Math.exp(r * doublingTime);
+            shapes.push({
+                type: 'line',
+                x0: doublingTime, x1: doublingTime,
+                y0: 0, y1: Nd,
+                line: { color: '#e67e22', width: 1.5, dash: 'dash' },
+                name: 'Doubling time'
+            });
+            // add annotation (optional) - we'll use a simple text annotation later
+        }
+
+        const trace = {
+            x: t,
+            y: N,
+            mode: 'lines',
+            name: 'Population size',
+            line: { color: '#2d6a4f', width: 3 },
+            fill: 'tozeroy',
+            fillcolor: 'rgba(45, 106, 79, 0.08)'
+        };
+
+        const layout = {
+            title: {
+                text: `Population growth (r = ${r.toFixed(3)}, N₀ = ${N0})`,
+                font: { size: 16, weight: 'normal' }
+            },
+            xaxis: {
+                title: 'Time',
+                gridcolor: '#e9ecef',
+                zerolinecolor: '#cbd5e1'
+            },
+            yaxis: {
+                title: 'Population size (N)',
+                gridcolor: '#e9ecef',
+                zerolinecolor: '#cbd5e1',
+                type: 'linear'
+            },
+            shapes: shapes,
+            annotations: doublingTime <= t_max ? [{
+                x: doublingTime,
+                y: N0 * Math.exp(r * doublingTime),
+                xref: 'x',
+                yref: 'y',
+                text: `t<sub>d</sub> = ${doublingTime.toFixed(2)}`,
+                showarrow: true,
+                arrowhead: 2,
+                ax: 20,
+                ay: -30,
+                bgcolor: '#fff8e7',
+                bordercolor: '#e67e22'
+            }] : [],
+            plot_bgcolor: '#ffffff',
+            paper_bgcolor: '#ffffff',
+            margin: { t: 60, l: 50, r: 20, b: 40 }
+        };
+
+        Plotly.newPlot('plotly-div', [trace], layout, { responsive: true, displayModeBar: false });
+    }
+
+    // Attach event listeners
+    document.getElementById('rSlider').addEventListener('input', updatePlot);
+    document.getElementById('n0Slider').addEventListener('input', updatePlot);
+    window.addEventListener('resize', () => Plotly.relayout('plotly-div', { autosize: true }));
+    updatePlot();
+</script>
+</body>
+</html>

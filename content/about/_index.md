@@ -46,8 +46,6 @@ We are absolutely captivated by biology and the life sciences. Yet, our own jour
 <span style="font-size: 1.5rem; font-weight: bold; font-align: center">Our Tech:</span>
 1.<span style="font-size: 1.3rem;"> Streamlit</span>: The platform that provides the interactive atmosphere that sets us apart. A big thanks to IBO 2026 OC for introducing us to this.
 2. <span style="font-size: 1.3rem;">Snowflake</span>: Streamlit deployment.
-3. <span style="font-size: 1.3rem;">The AOGuide inspirations</span>: Hugo, Hextra Theme, KaTex, Github, Vercel.
-4. <span style="font-size: 1.3rem;">VS.</span>
+3. <span style="font-size: 1.3rem;">The AOGuide inspirations</span>: Hugo, Hextra Theme, Vercel.
+4. <span style="font-size: 1.3rem;">VS, MathJax, Git.</span>
 <br><br>
-Our people: 
-More soon

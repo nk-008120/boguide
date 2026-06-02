@@ -16,8 +16,8 @@ description: "Complete bioinformatics guide for IBO: databases, BLAST, alignment
 </script>
 
 <span class="badge-exploration">🌐 IBO 2020–2024 Practicals</span> Bioinformatics tasks appear in almost every IBO exam in the recent years. This guide teaches you **why** and **how** to use each tool, with **worked examples** taken directly from past IBO tasks and standard lab manuals. General Resources for this purpose are : 
-<br>1. Good for acquainted people who want to brush up : <a href="https://www.srmist.edu.in/wp-content/uploads/2022/05/Bioinformatics-Lab.pdf" target="blank">Here</a>
-<br>2. Good for beginners to understand role of each tool: <a href="https://vvvcollege.org/dbt/LabManual-Bioinformatics.pdf" target="blank">Here</a> 
+<br>1. Good for acquainted people who want to brush up : <a href="https://www.srmist.edu.in/wp-content/uploads/2022/05/Bioinformatics-Lab.pdf" target="_blank">Here</a>
+<br>2. Good for beginners to understand role of each tool: <a href="https://vvvcollege.org/dbt/LabManual-Bioinformatics.pdf" target="_blank">Here</a> 
 <br>3.People who like to learn form videos: <a href="https://www.youtube.com/@BIOPATHWAY">Here</a>
 <br>4. A really recommended resource is our own IBO 2022 Practicals tab (scroll right in tabs section just below and click on IBO Practical 2022)
 <br>5. Official IBO reference pdf : <a href="https://www.ibo-info.org/files/downloads/Educational%20Conference%20documents/2024/3.Bioinformatics-in-IBO.pdf"> Here</a>
@@ -151,7 +151,7 @@ Alignment reveals evolutionary relationships, conserved domains, and functional 
 - **Diagonal line** → similarity; **gaps in diagonal** → insertion/deletion; **reverse diagonal** → inversion.
 - **Why dot plots?** They give you a visual, intuitive feel for similarities before you run complex algorithms.
 
-For the purpose of teaching Dot-Plot methods, we shall use an exemplary problem from practical 3 of the selection camp of taiwanese biology olympiad programme. Find it in <a href="/dotplot.pdf" target="blank">here</a>
+For the purpose of teaching Dot-Plot methods, we shall use an exemplary problem from practical 3 of the selection camp of taiwanese biology olympiad programme. Find it in <a href="/dotplot.pdf" target="_blank">here</a>
 
 <a href="#" onclick="switchToTabAndScroll(9, 'Solution-dotplot'); return false;">*Click here after trying it out*</a>
 
@@ -166,8 +166,8 @@ If you are able to look through these in suitable time, you are good to go!<br><
 <!-- IMAGE: Annotated dot plot showing diagonals, gaps, inversions -->
 
 ### Dynamic programming (Needleman‑Wunsch & Smith‑Waterman)
-- **Global alignment** (Needleman‑Wunsch): aligns entire sequences. Used for similar length sequences. <a href="https://bioboot.github.io/bimm143_W20/class-material/nw/" target="blank">Here is an interactive simulator</a>
-- **Local alignment** (Smith‑Waterman): finds best matching sub‑region. Used for gene vs. genome. <a href="https://rna.informatik.uni-freiburg.de/Teaching/index.jsp?toolName=Smith-Waterman" target="blank">Here is an interactive simulator</a>
+- **Global alignment** (Needleman‑Wunsch): aligns entire sequences. Used for similar length sequences. <a href="https://bioboot.github.io/bimm143_W20/class-material/nw/" target="_blank">Here is an interactive simulator</a>
+- **Local alignment** (Smith‑Waterman): finds best matching sub‑region. Used for gene vs. genome. <a href="https://rna.informatik.uni-freiburg.de/Teaching/index.jsp?toolName=Smith-Waterman" target="_blank">Here is an interactive simulator</a>
 - **Concept**: Dynamic programming breaks the problem into small sub‑problems (comparing prefixes) and builds up the optimal solution. It guarantees the best alignment under the given scoring scheme.
 
 **Worked Example (from manual)**: Global alignment of AGTAC vs GCAC.
@@ -340,7 +340,7 @@ For **circular bacterial genomes**, the replication origin (OriC) and terminus c
 
 Any discussion on protein structure prediction is incomplete without it's amazing history, with major reakthroughs very recently, resulting in being called the "Fermat's last theorem of biology". Here is a great video on it by the one and only, <a href="https://www.youtube.com/watch?v=P_fHJIYENdI">Veritasium</a>
 ### Secondary structure prediction
-- **α‑helix**: stabilised by backbone hydrogen bonds (i → i+3). Proline and glycine are helix breakers.
+- **α‑helix**: stabilised by backbone hydrogen bonds (i → i+4). Proline and glycine are helix breakers.
 - **β‑sheet**: extended, stabilised by inter‑strand hydrogen bonds. Branched/aromatic residues (Ile, Val, Thr, Phe, Tyr, Trp) favour β‑strands.
 - **Turns & loops**: connect secondary elements.
 - **Concept**: Prediction uses known preferences of amino acids (e.g., Glu and Lys prefer helices). It’s not 100% accurate but useful for quick fold classification.
@@ -417,7 +417,7 @@ When the experimental 3D structure of your protein is unknown, but a **homologou
   {{< iframe src="/ibo2022-sim.html" height="90vh" >}}
 </div>
 
-<strong><a href="/ibo2022bioinfo.pdf">Please refer to IBO 2022 bioinformatics practical pdf</a>
+<strong><a href="/ibo2022bioinfo.pdf">Please refer to IBO 2022 bioinformatics practical pdf</strong></a>
 *The above interactive simulation reproduces the **IBO 2022 Bioinformatics Practical** (chemokine signalling pathway, KEGG expression mapping, alignment tasks). Click the tabs to explore. This is a static HTML/JS version – the full exam would be inside a secure browser.*
 
 **How to use this simulation:**
@@ -638,66 +638,199 @@ Hence D = 1 + 1*2 = 3<br><br>
 {{< /tabs >}}
 
 <script>
-(function() {
-  // Reliable tab switching for Hextra theme
-  window.switchToTabAndScroll = function(tabIndex, elementId) {
-    // Try different selectors for Hextra tab buttons
-    const tablist = document.querySelector('[role="tablist"]') || 
-                    document.querySelector('.hextra-tabs__list') ||
-                    document.querySelector('.tabs');
-    if (tablist) {
-      const buttons = tablist.querySelectorAll('button');
-      if (buttons[tabIndex]) {
-        buttons[tabIndex].click();
-      } else {
-        console.warn('Tab button not found for index', tabIndex);
-      }
-    } else {
-      console.warn('Tab container not found');
-    }
-    // Scroll to the target element after a short delay (tab content needs to render)
-    setTimeout(function() {
-      const el = document.getElementById(elementId);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      } else {
-        console.warn('Element with id', elementId, 'not found');
-      }
-    }, 200);
-  };
+/* BOGuide Dynamic TOC v3 — rewrites from scratch
+   Key fixes vs previous versions:
+   1. Panel detection: maps tab button index → panel index, no reliance on [hidden]
+   2. Links: onclick-based, activates the right tab then scrolls — no bare href anchors
+   3. Change detection: MutationObserver on aria-selected attribute changes, not click events
+   4. Works whether Hextra uses display:none, visibility, or [hidden] to hide panels
+*/
+(function () {
+  'use strict';
 
-  // Handle hash links on page load (e.g., #solution-dotplot)
-  function handleHashOnLoad() {
-    if (window.location.hash) {
-      const targetId = window.location.hash.substring(1);
-      const targetElement = document.getElementById(targetId);
-      if (targetElement) {
-        // Find the tab panel containing the target
-        const panels = document.querySelectorAll('[role="tabpanel"]');
-        if (panels.length) {
-          let foundIndex = -1;
-          for (let i = 0; i < panels.length; i++) {
-            if (panels[i].contains(targetElement)) {
-              foundIndex = i;
-              break;
-            }
-          }
-          if (foundIndex !== -1) {
-            const tablist = document.querySelector('[role="tablist"]');
-            if (tablist) {
-              const buttons = tablist.querySelectorAll('button');
-              if (buttons[foundIndex]) buttons[foundIndex].click();
-            }
-          }
-        }
-        setTimeout(() => {
-          targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }, 200);
-      }
-    }
+  var TAB_DELAY = 80; // ms to wait after tab switch before scanning headings
+
+  /* ── slugify ─────────────────────────────────────────────────────────── */
+  function slugify(t) {
+    return t.toLowerCase().replace(/[^\w\s-]/g,'').replace(/\s+/g,'-').replace(/-+/g,'-').trim();
   }
 
-  document.addEventListener('DOMContentLoaded', handleHashOnLoad);
-  window.addEventListener('hashchange', handleHashOnLoad);
+  /* ── Get the currently active panel by matching button → panel index ─── */
+  function getActivePanel() {
+    var buttons = Array.from(document.querySelectorAll('[role="tab"]'));
+    var panels  = Array.from(document.querySelectorAll('[role="tabpanel"]'));
+    if (!buttons.length || !panels.length) return panels[0] || null;
+
+    // Find the selected button
+    var idx = buttons.findIndex(function(b) {
+      return b.getAttribute('aria-selected') === 'true'
+          || b.classList.contains('active')
+          || b.getAttribute('data-state') === 'active';
+    });
+    if (idx === -1) idx = 0;
+    return panels[idx] || panels[0] || null;
+  }
+
+  /* ── Get or create the TOC nav element ──────────────────────────────── */
+  function getTocEl() {
+  var el = document.getElementById('boguide-toc');
+  if (el) return el;
+  el = document.createElement('nav');
+  el.id = 'boguide-toc';
+  el.style.cssText = [
+    'position:fixed',
+    'top:72px',
+    'right:12px',
+    'width:216px',
+    'max-height:calc(100vh - 84px)',
+    'overflow-y:auto',
+    'border-radius:10px',
+    'padding:12px 14px 14px',
+    'z-index:9999',
+    'font-family:inherit',
+    'font-size:13px',
+    'line-height:1.5',
+    'display:none'
+  ].join(';');
+  document.body.appendChild(el);
+  return el;
+}
+
+  /* ── Build (or rebuild) the TOC ─────────────────────────────────────── */
+  function buildToc() {
+    var panel = getActivePanel();
+    var tocEl = getTocEl();
+
+    if (!panel) { tocEl.style.display = 'none'; return; }
+
+    // Stamp IDs on every h2/h3 in ALL panels (needed for cross-tab anchor nav)
+    document.querySelectorAll('[role="tabpanel"]').forEach(function(p, panelIdx) {
+      p.querySelectorAll('h2,h3').forEach(function(h) {
+        if (!h.id) h.id = 'bg-' + panelIdx + '-' + slugify(h.textContent);
+      });
+    });
+
+    var headings = Array.from(panel.querySelectorAll('h2, h3'));
+    if (!headings.length) { tocEl.style.display = 'none'; return; }
+
+    // Tab label
+    var buttons   = Array.from(document.querySelectorAll('[role="tab"]'));
+    var panels    = Array.from(document.querySelectorAll('[role="tabpanel"]'));
+    var panelIdx  = panels.indexOf(panel);
+    var activeBtn = buttons[panelIdx] || null;
+    var tabLabel  = activeBtn ? activeBtn.textContent.trim() : '';
+
+    // Render
+    var html = '<p style="font-weight:700;font-size:11px;text-transform:uppercase;'
+             + 'letter-spacing:.07em;margin:0 0 6px;color:var(--color-text-secondary,#6b7280)">'
+             + 'On this page</p>';
+    if (tabLabel) {
+      html += '<p style="font-size:11px;color:var(--color-text-secondary,#9ca3af);'
+            + 'margin:0 0 8px;padding-bottom:6px;'
+            + 'border-bottom:1px solid var(--border-color,#e2e8f0)">'
+            + '&#8627; ' + tabLabel + '</p>';
+    }
+    html += '<ul style="list-style:none;margin:0;padding:0">';
+    headings.forEach(function(h) {
+      var isH3   = h.tagName === 'H3';
+      var indent = isH3 ? 'padding-left:12px' : '';
+      var weight = isH3 ? 'normal' : '600';
+      var size   = isH3 ? '12px' : '13px';
+      var opacity= isH3 ? '.72' : '1';
+      var pid    = panelIdx; // captured for onclick closure
+      var hid    = h.id;
+      html += '<li style="margin:1px 0;' + indent + '">'
+           + '<a href="javascript:void(0)"'
+           + ' data-panel="' + pid + '" data-hid="' + hid + '"'
+           + ' style="display:block;padding:4px 6px;border-radius:5px;'
+           + 'font-size:' + size + ';font-weight:' + weight + ';opacity:' + opacity + ';'
+           + 'color:inherit;text-decoration:none;cursor:pointer;'
+           + 'transition:background .12s,color .12s"'
+           + ' onmouseover="this.style.background=\'var(--color-primary-100,rgba(22,163,74,.08))\';this.style.color=\'var(--color-primary-600,#16a34a)\';this.style.opacity=\'1\'"'
+           + ' onmouseout="this.style.background=\'\';this.style.color=\'\';this.style.opacity=\'' + opacity + '\'"'
+           + ' onclick="boGuideTocNav(this)">'
+           + h.textContent.replace(/^[#\s]+/,'').trim()
+           + '</a></li>';
+    });
+    html += '</ul>';
+    tocEl.innerHTML = html;
+    tocEl.style.display = 'block';
+  }
+
+  /* ── TOC link click handler — activate panel then scroll ─────────────── */
+  window.boGuideTocNav = function(link) {
+    var panelIdx = parseInt(link.getAttribute('data-panel'), 10);
+    var hid      = link.getAttribute('data-hid');
+    var buttons  = Array.from(document.querySelectorAll('[role="tab"]'));
+    var btn      = buttons[panelIdx];
+
+    function scrollToHeading() {
+      var el = document.getElementById(hid);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    if (btn) {
+      // Check if this panel is already active
+      var alreadyActive = btn.getAttribute('aria-selected') === 'true'
+                       || btn.classList.contains('active')
+                       || btn.getAttribute('data-state') === 'active';
+      if (alreadyActive) {
+        scrollToHeading();
+      } else {
+        btn.click();
+        setTimeout(scrollToHeading, 120);
+      }
+    } else {
+      scrollToHeading();
+    }
+  };
+
+  /* ── Watch for tab changes via MutationObserver on aria-selected ─────── */
+  function attachObserver() {
+    var tablist = document.querySelector('[role="tablist"]');
+    if (!tablist) return;
+
+    // Watch attribute mutations on all tab buttons
+    var obs = new MutationObserver(function(mutations) {
+      var changed = mutations.some(function(m) {
+        return m.type === 'attributes'
+            && (m.attributeName === 'aria-selected'
+             || m.attributeName === 'class'
+             || m.attributeName === 'data-state');
+      });
+      if (changed) setTimeout(buildToc, TAB_DELAY);
+    });
+
+    tablist.querySelectorAll('[role="tab"]').forEach(function(btn) {
+      obs.observe(btn, { attributes: true, attributeFilter: ['aria-selected','class','data-state'] });
+    });
+
+    // Also observe tablist itself for class changes
+    obs.observe(tablist, { attributes: true, subtree: true,
+                           attributeFilter: ['aria-selected','class','data-state'] });
+  }
+
+  /* ── MathJax re-render on tab switch ─────────────────────────────────── */
+  function attachMathJax() {
+    var tablist = document.querySelector('[role="tablist"]');
+    if (!tablist) return;
+    tablist.querySelectorAll('[role="tab"]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        setTimeout(function() {
+          if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise();
+        }, 150);
+      });
+    });
+  }
+
+  /* ── Init ────────────────────────────────────────────────────────────── */
+  document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+      buildToc();
+      attachObserver();
+      attachMathJax();
+    }, 400);
+  });
+
 })();
 </script>
