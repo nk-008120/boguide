@@ -1,0 +1,17 @@
+{
+  "framework": null,
+  "experimentalServices": [
+    {
+      "name": "boguide",
+      "entrypoint": "apps/boguide",
+      "routePrefix": "/",
+      "framework": "hugo"
+    },
+    {
+      "name": "bionuggets",
+      "entrypoint": "apps/bionuggets",
+      "routePrefix": "/bionuggets",
+      "framework": "vite"
+    }
+  ]
+}

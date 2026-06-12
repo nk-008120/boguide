@@ -1,4 +1,4 @@
-baseURL = "https://boguide.com/"
+baseURL = "https://boguide.vercel.app/"
 title = "BiOGuide for Biology Olympiads"
 theme = "hextra"
 
