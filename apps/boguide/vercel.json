@@ -1,6 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/bionuggets/:path*", "destination": "https://biounified-v4.vercel.app/:path*" },
-    { "source": "/bionuggets", "destination": "https://biounified-v4.vercel.app/" }
-  ]
-}
