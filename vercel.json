@@ -7,10 +7,6 @@
     {
       "source": "/bionuggets",
       "destination": "https://biounified-v4.vercel.app/"
-    },
-    {
-      "source": "/bioguide/:path*",
-      "destination": "/:path*"
     }
   ]
 }
