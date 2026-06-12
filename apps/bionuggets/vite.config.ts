@@ -1,11 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/bionuggets/',               // ← critical for subpath deployment
+  base: '/',                    // ← root path (after change)
   build: {
-    outDir: 'dist/bionuggets',        // optional – keeps output organised
+    outDir: 'dist/bionuggets',  // ← keep as before
   },
 })

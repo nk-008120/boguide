@@ -6,8 +6,8 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename="/bionuggets">          // ← basename here
+    <BrowserRouter>            // ← no basename
       <App />
     </BrowserRouter>
   </StrictMode>,
-)
+);
