@@ -21,7 +21,7 @@ Bite-sized explanations, beautiful diagrams, and quick concept nuggets.
 {{< tab name="BoGuide" >}}
 **Deep & Structured Learning**  
 Comprehensive notes, problem sets, past papers, and IBO-level resources.  
-[→ Enter BoGuide](/)
+[→ Enter BoGuide](/resources)
 {{< /tab >}}
 {{< /tabs >}}
 
