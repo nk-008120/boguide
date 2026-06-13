@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/bionuggets/(.*)",
+      "destination": "https://biounified-v4.vercel.app/bionuggets/$1"
+    }
+  ]
+}

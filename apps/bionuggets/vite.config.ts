@@ -4,8 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/',                    // ← root path (after change)
+  base: '/bionuggets/',                // ← critical
   build: {
-    outDir: 'dist/bionuggets',  // ← keep as before
+    outDir: 'dist/bionuggets',         // already correct
   },
 })

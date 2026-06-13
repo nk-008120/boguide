@@ -1,13 +1,5 @@
 {
-  "rewrites": [
-    {
-      "source": "/bionuggets",
-      "destination": "/dist/bionuggets/index.html"
-    },
-    {
-      "source": "/bionuggets/(.*)",
-      "destination": "/dist/bionuggets/$1"
-    }
-  ],
-  "cleanUrls": true
+  "cleanUrls": true,
+  "outputDirectory": "dist/bionuggets",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
