@@ -4,10 +4,10 @@ description: "Biology Olympiad Preparation Hub"
 layout: "wide"
 ---
 
-{{< hero image="/images/hero-bg.jpg" >}}
-  ## Welcome to **BiOGuide**
-  The ultimate platform for IBO & Biology Olympiad aspirants
-{{< /hero >}}
+<div class="hero-wrapper">
+  <h1 class="hero-title">Welcome to <span class="highlight">BiOGuide</span></h1>
+  <p class="hero-subtitle">The ultimate platform for IBO & Biology Olympiad aspirants</p>
+</div>
 
 ---
 
