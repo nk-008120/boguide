@@ -24,6 +24,7 @@ theme = "hextra"
     weight = 3
 
 [params]
+  # Navbar settings
   [params.navbar]
     title = "BiOGuide for Biology Olympiads"
     [params.navbar.logo]
@@ -31,11 +32,13 @@ theme = "hextra"
       width = 40
       height = 40
       alt = "BioGuide Logo"
+  # Image zoom
   [params.imageZoom]
     enable = true
+  # Footer
   [params.footer]
     copyright = "© 2026 BioGuide for IBO Vilnius"
+  # Table of contents
   toc = true
-  [params]
+  # Custom CSS (relative to static/ folder)
   custom_css = ["css/custom.css"]
-  
