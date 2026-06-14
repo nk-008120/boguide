@@ -140,3 +140,131 @@ html.dark #boguide-toc a:hover {
   background: rgba(22, 163, 74, 0.2);
   color: #4ade80;
 }
+/* Two cards layout – identical to React site's .topics-grid */
+.two-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.card {
+  flex: 1;
+  min-width: 280px;
+  background: var(--bg);  /* uses Hextra's background variable */
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary);  /* set below */
+  box-shadow: 0 16px 32px rgba(13, 122, 122, 0.15);
+}
+
+.card-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.badge.fast {
+  background: #A8E63D;
+  color: #1a1a1a;
+}
+
+.badge.deep {
+  background: #0D7A7A;
+  color: white;
+}
+
+.btn-outline {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  border: 2px solid var(--primary);
+  border-radius: 40px;
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.collab-note {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(168, 230, 61, 0.1), rgba(13, 122, 122, 0.05));
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+
+/* Define colors if not already in Hextra */
+:root {
+  --primary: #0D7A7A;
+  --secondary: #A8E63D;
+}
+.hero {
+  background: url('/images/hero-bg.png') center/cover no-repeat fixed;
+  position: relative;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.85);
+  z-index: 0;
+}
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+.hero-wrapper {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(135deg, rgba(13,122,122,0.08), rgba(168,230,61,0.08));
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero-title .highlight {
+  background: linear-gradient(135deg, #A8E63D, #7FD500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
