@@ -36,4 +36,6 @@ theme = "hextra"
   [params.footer]
     copyright = "© 2026 BioGuide for IBO Vilnius"
   toc = true
+  [params]
+  custom_css = ["css/custom.css"]
   
