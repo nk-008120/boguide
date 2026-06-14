@@ -286,66 +286,55 @@ html.dark #boguide-toc a:hover {
   margin: 0 auto;
 }
 /* === HOMEPAGE TEXT CONTRAST FIXES (dark mode only) === */
+/* Hextra adds .dark class to <html> when dark mode is active */
 
-@media (prefers-color-scheme: dark) {
-  /* Make all standard text lighter */
-  .homepage-bg,
-  .homepage-bg p,
-  .homepage-bg li,
-  .homepage-bg .section-subtitle,
-  .homepage-bg .hero-subtitle {
-    color: #e2e8f0 !important;  /* light gray-blue */
-  }
+html.dark .homepage-bg,
+html.dark .homepage-bg p,
+html.dark .homepage-bg li,
+html.dark .homepage-bg .section-subtitle,
+html.dark .homepage-bg .hero-subtitle {
+  color: #e2e8f0 !important;
+}
 
-  /* Ensure headings (except the lime "BiOGuide") are readable */
-  .homepage-bg h1,
-  .homepage-bg h2,
-  .homepage-bg h3,
-  .homepage-bg h4 {
-    color: #f1f5f9 !important;
-  }
+html.dark .homepage-bg h1,
+html.dark .homepage-bg h2,
+html.dark .homepage-bg h3,
+html.dark .homepage-bg h4 {
+  color: #f1f5f9 !important;
+}
 
-  /* Keep the lime highlight on "BiOGuide" – no change needed, it's already bright */
-  .homepage-bg .highlight {
-    /* already bright green/yellow, no override needed */
-  }
+/* Card text and background adjustments */
+html.dark .homepage-bg .card,
+html.dark .homepage-bg .topic-card,
+html.dark .homepage-bg .why-card,
+html.dark .homepage-bg .team-card,
+html.dark .homepage-bg .contact-card,
+html.dark .homepage-bg .stat-box {
+  color: #e2e8f0 !important;
+  background: #2a2a2a !important; /* dark card background */
+}
 
-  /* Improve card readability – dark mode already has dark backgrounds,
-     but text might be too dim – force brighter text */
-  .homepage-bg .card,
-  .homepage-bg .topic-card,
-  .homepage-bg .why-card,
-  .homepage-bg .team-card,
-  .homepage-bg .contact-card,
-  .homepage-bg .stat-box {
-    color: #e2e8f0 !important;
-  }
+html.dark .homepage-bg .card h3,
+html.dark .homepage-bg .topic-card h3,
+html.dark .homepage-bg .why-card h3 {
+  color: var(--secondary, #A8E63D) !important;
+}
 
-  /* Card headings inside homepage */
-  .homepage-bg .card h3,
-  .homepage-bg .topic-card h3,
-  .homepage-bg .why-card h3 {
-    color: var(--secondary, #A8E63D) !important; /* keep lime green for titles */
-  }
+html.dark .homepage-bg .btn-outline {
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
 
-  /* Buttons – ensure text contrast */
-  .homepage-bg .btn-outline {
-    border-color: var(--secondary);
-    color: var(--secondary);
-  }
-  .homepage-bg .btn-outline:hover {
-    background: var(--secondary);
-    color: #1a1a1a;
-  }
+html.dark .homepage-bg .btn-outline:hover {
+  background: var(--secondary);
+  color: #1a1a1a;
+}
 
-  /* Hero wrapper background – make it slightly darker for better contrast */
-  .homepage-bg .hero-wrapper {
-    background: rgba(0, 0, 0, 0.3) !important;
-  }
+html.dark .homepage-bg .hero-wrapper {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
 
-  /* Collab note background – adjust */
-  .homepage-bg .collab-note {
-    background: rgba(0, 0, 0, 0.2);
-    color: #e2e8f0;
-  }
+html.dark .homepage-bg .collab-note {
+  background: rgba(0, 0, 0, 0.2);
+  color: #e2e8f0;
 }
