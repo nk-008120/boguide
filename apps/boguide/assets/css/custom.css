@@ -230,20 +230,37 @@ html.dark #boguide-toc a:hover {
   --primary: #0D7A7A;
   --secondary: #A8E63D;
 }
-.hero {
-  background: url('/images/hero-bg.png') center/cover no-repeat fixed;
+/* === HOMEPAGE BACKGROUND (only when .homepage-bg is present) === */
+
+.homepage-bg {
+  background-image: url('/images/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   position: relative;
 }
-.hero::before {
+
+/* Light overlay (default) */
+.homepage-bg::before {
   content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(255,255,255,0.85);
-  z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: -1;
+  pointer-events: none;
 }
-.hero .container {
-  position: relative;
-  z-index: 1;
+
+/* Dark overlay when system prefers dark mode */
+@media (prefers-color-scheme: dark) {
+  .homepage-bg::before {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  .homepage-bg {
+    color: #e2e8f0;
+  }
 }
 .hero-wrapper {
   text-align: center;
