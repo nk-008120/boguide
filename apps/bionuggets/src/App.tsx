@@ -444,8 +444,8 @@ function App() {
         <section className="articles-section">
           <h2>📚 Articles</h2>
           <p className="articles-subtitle">Coming Soon</p>
-          <p className="articles-description">Knowledge is growing. Discovery never stops. Stay tuned for in-depth articles that dive deeper into the science behind our reels.</p>
-          <p className="articles-eta">Coming Q3 2026</p>
+          <p className="articles-description">Knowledge is growing. Discovery never stops. You can find our articles at <a href="https://bioguide.vercel.app/articles/">BoGuide's Page</a>.</p>
+          <p className="articles-eta">Coming Neuroscience, Lab recommendations and Q3 2026 in progress</p>
         </section>
       </main>
 

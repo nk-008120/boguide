@@ -2,7 +2,7 @@
 title: "About BiOGuide" 
 --- 
  
-Hey, thanks for visiting! Let’s talk a bit about why we built BioGuide. 
+Hey, thanks for visiting! Let’s talk a bit about why we built BiOGuide. 
 
 The preparation for Biology Olympiads, which most of us are pretty familiar with, involves a lot of challenges, most commonly: Difficulty in resource selection; Scattered notes and textbook references; Incomplete practice availabilty; Practical lack of skills; and many more. This website aims to resolve most of these issues, through a singular, compiled, and modern guide.
 
@@ -25,7 +25,7 @@ First, let me mention some features that we want to add to this website later on
 Your inputs in the <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_FbhYS1IraA1s6F7zFLzkILBZvRceDqdoMqV7yTH6hu0k-g/viewform?usp=header">survey</a> will be helpful in determining the outcomes, visit fast as it is online only from June 3rd - July 21 2026.
 
 
-When we first started, we looked at the peers of our work, such as <a href="https://biolympiads.com" target="blank">Biolympiads</a> and <a href="https://learntuitive.com/" target="blank"> Leartuitive </a> but, these seemed too outdated and low on activity, and also, a little commercialised. Our BioGuide <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_FbhYS1IraA1s6F7zFLzkILBZvRceDqdoMqV7yTH6hu0k-g/viewform" target="blanl">Survey</a> supported our reasoning. Hence, we decided to put this together, with the following features we attempted to do specially differently than our peers:
+When we first started, we looked at the peers of our work, such as <a href="https://biolympiads.com" target="blank">Biolympiads</a> and <a href="https://learntuitive.com/" target="blank"> Leartuitive </a> but, these seemed too outdated and low on activity, and also, a little commercialised. Our BiOGuide <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_FbhYS1IraA1s6F7zFLzkILBZvRceDqdoMqV7yTH6hu0k-g/viewform" target="blanl">Survey</a> supported our reasoning. Hence, we decided to put this together, with the following features we attempted to do specially differently than our peers:
 1. High interactivity
 2. No commercialisation (NPO)
 3. High modernisation
