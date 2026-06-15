@@ -12,16 +12,63 @@ theme = "hextra"
 [menu]
   [[menu.main]]
     name = "Resources & Notes"
+    url = "#"
+    weight = 1
+
+  [[menu.main]]
+    name = "General Resources"
+    parent = "Resources & Notes"
     url = "/resources/"
     weight = 1
+
+  # 1. Cell & Molecular Biology (main entry – clickable, links to the section page)
+  [[menu.main]]
+    name = "1. Cell & Molecular Biology"
+    parent = "Resources & Notes"
+    url = "/resources/1-cell-molecular/"
+    weight = 2
+
+  # These are direct children of "Resources & Notes", but we will style them as sub‑items of the above
+  [[menu.main]]
+    name = "   Biochemistry"
+    parent = "Resources & Notes"
+    url = "/resources/1-cell-molecular/biochemistry/"
+    weight = 3
+
+  [[menu.main]]
+    name = "   Cell Biology"
+    parent = "Resources & Notes"
+    url = "/resources/1-cell-molecular/cell-biology/"
+    weight = 4
+
+  [[menu.main]]
+    name = "2. Genetics"
+    parent = "Resources & Notes"
+    url = "/resources/7-genetics/"
+    weight = 5
+
+  [[menu.main]]
+    name = "4. Bioinformatics"
+    parent = "Resources & Notes"
+    url = "/resources/10-bioinformatics/"
+    weight = 6
+
+  [[menu.main]]
+    name = "5. Plant computational Biology"
+    parent = "Resources & Notes"
+    url = "/resources/14-practical-4/"
+    weight = 7
+
   [[menu.main]]
     name = "Papers"
     url = "/papers/"
     weight = 2
+
   [[menu.main]]
     name = "About"
     url = "/about/"
     weight = 3
+
   [[menu.main]]
     name = "Articles"
     url = "/articles/"

@@ -43,9 +43,15 @@
   </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
+    <loc>http://localhost:1313/articles/</loc>
+  </url><url>
     <loc>http://localhost:1313/papers/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/articles/lab-recommendations/</loc>
+  </url><url>
+    <loc>http://localhost:1313/articles/neuroscience/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url>

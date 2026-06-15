@@ -230,20 +230,37 @@ html.dark #boguide-toc a:hover {
   --primary: #0D7A7A;
   --secondary: #A8E63D;
 }
-.hero {
-  background: url('/images/hero-bg.png') center/cover no-repeat fixed;
+/* === HOMEPAGE BACKGROUND (only when .homepage-bg is present) === */
+
+.homepage-bg {
+  background-image: url('/images/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   position: relative;
 }
-.hero::before {
+
+/* Light overlay (default) */
+.homepage-bg::before {
   content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(255,255,255,0.85);
-  z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  z-index: -1;
+  pointer-events: none;
 }
-.hero .container {
-  position: relative;
-  z-index: 1;
+
+/* Dark overlay when system prefers dark mode */
+@media (prefers-color-scheme: dark) {
+  .homepage-bg::before {
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+  .homepage-bg {
+    color: #e2e8f0;
+  }
 }
 .hero-wrapper {
   text-align: center;
@@ -267,4 +284,102 @@ html.dark #boguide-toc a:hover {
   color: #555;
   max-width: 600px;
   margin: 0 auto;
+}
+/* === HOMEPAGE TEXT CONTRAST FIXES (dark mode only) === */
+/* Hextra adds .dark class to <html> when dark mode is active */
+
+html.dark .homepage-bg,
+html.dark .homepage-bg p,
+html.dark .homepage-bg li,
+html.dark .homepage-bg .section-subtitle,
+html.dark .homepage-bg .hero-subtitle {
+  color: #e2e8f0 !important;
+}
+
+html.dark .homepage-bg h1,
+html.dark .homepage-bg h2,
+html.dark .homepage-bg h3,
+html.dark .homepage-bg h4 {
+  color: #f1f5f9 !important;
+}
+
+/* Card text and background adjustments */
+html.dark .homepage-bg .card,
+html.dark .homepage-bg .topic-card,
+html.dark .homepage-bg .why-card,
+html.dark .homepage-bg .team-card,
+html.dark .homepage-bg .contact-card,
+html.dark .homepage-bg .stat-box {
+  color: #e2e8f0 !important;
+  background: #2a2a2a !important; /* dark card background */
+}
+
+html.dark .homepage-bg .card h3,
+html.dark .homepage-bg .topic-card h3,
+html.dark .homepage-bg .why-card h3 {
+  color: var(--secondary, #A8E63D) !important;
+}
+
+html.dark .homepage-bg .btn-outline {
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+html.dark .homepage-bg .btn-outline:hover {
+  background: var(--secondary);
+  color: #1a1a1a;
+}
+
+html.dark .homepage-bg .hero-wrapper {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+html.dark .homepage-bg .collab-note {
+  background: rgba(0, 0, 0, 0.2);
+  color: #e2e8f0;
+}
+/* Make "General Resources" stand out (larger, bolder, less indent) */
+.hx\:menu-item a[href="/resources/"] {
+  font-weight: 700 !important;
+  font-size: 1.05rem !important;
+  padding-left: 0.5rem !important;
+}
+
+/* All other child items (the 14 topics) – smaller font, more indent */
+.hx\:menu-item a[href^="/resources/"]:not([href="/resources/"]) {
+  font-size: 0.9rem !important;
+  padding-left: 1.5rem !important;
+  opacity: 0.9;
+}
+
+/* Optional: add a subtle separator line after "General Resources" */
+.hx\:menu-item a[href="/resources/"] {
+  border-bottom: 1px solid var(--border-color, #e2e8f0);
+  margin-bottom: 0.25rem;
+  padding-bottom: 0.5rem;
+}
+/* Make "General Resources" stand out (larger, bolder, less indent) */
+.hx\:menu-item a[href="/about/"] {
+  font-weight: 700 !important;
+  font-size: 1.05rem !important;
+  padding-left: 0.5rem !important;
+}
+/* Target menu items that should be indented under "1. Cell & Molecular Biology" */
+.hx\:menu-item a[href*="/resources/1-cell-molecular/"]:not([href="/resources/1-cell-molecular/"]) {
+  padding-left: 1.75rem !important;   /* extra indent */
+  font-size: 0.9rem !important;
+  position: relative;
+}
+
+/* Optional: add a small bullet or dash to indicate sub‑item */
+.hx\:menu-item a[href*="/resources/1-cell-molecular/"]:not([href="/resources/1-cell-molecular/"])::before {
+  content: "•";
+  position: absolute;
+  left: 1rem;
+  color: var(--accent, #aa3bff);
+  font-weight: bold;
+}
+.hx\:menu-item a[href*="/resources/1-cell-molecular/"]:not([href="/resources/1-cell-molecular/"]) {
+  /* Remove any leading spaces from the text */
+  text-indent: -0.5rem;
 }
