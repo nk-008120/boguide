@@ -24,7 +24,7 @@ theme = "hextra"
     weight = 3
   [[menu.main]]
     name = "Articles"
-    url= = "/articles/"
+    url = "/articles/"
     weight = 4
 
 [params]
