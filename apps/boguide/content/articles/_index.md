@@ -5,7 +5,7 @@ layout: "wide"
 ---
 
 <div class="two-cards">
-  <a href="/articles.bn/Neuroscience" class="card">
+  <a href="/articles/Neuroscience" class="card">
     <div class="card-icon">⚡</div>
     <h3>BioNuggets</h3>
     <div class="badge fast">Fast & Visual Learning</div>
