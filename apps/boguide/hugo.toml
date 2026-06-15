@@ -22,6 +22,10 @@ theme = "hextra"
     name = "About"
     url = "/about/"
     weight = 3
+  [[menu.main]]
+    name = "Articles"
+    url= = "/articles.bn/"
+    weight = 4
 
 [params]
   # Navbar settings
