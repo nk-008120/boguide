@@ -298,15 +298,9 @@ function App() {
 <header className={`header ${scrolled ? 'scrolled' : ''}`}>
   <div className="header-content">
     <div className="logo-section">
-  <img 
-    src="/images/logo.png" 
-    alt="BioNuggets Logo" 
-    className="logo-image"
-    width="40"
-    height="40"
-  />
-  <p className="tagline">Complex Biology Made Simple</p>
-</div>
+  <img src="/images/logo.png" alt="Logo" className="logo-image" />
+  <p className="tagline">BIONUGGETS - Complex Biology Made Simple</p>
+  </div>
 
     <div className="header-actions">
       {/* Dark Mode Toggle */}
