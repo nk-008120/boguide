@@ -1229,3 +1229,9 @@ html {
   top: 0;
   z-index: 1000;
 }
+.logo-image {
+  height: 40px;
+  width: auto;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
