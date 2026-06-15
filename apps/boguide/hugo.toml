@@ -11,7 +11,7 @@ theme = "hextra"
 
 [menu]
   [[menu.main]]
-    name = "Resources"
+    name = "Resources & Notes"
     url = "/resources/"
     weight = 1
   [[menu.main]]
