@@ -6,7 +6,7 @@ layout: "wide"
 
 <div class="hero-wrapper">
   <h1 class="hero-title">Welcome to <span class="highlight">BiOGuide</span></h1>
-  <p class="hero-subtitle">The ultimate platform for IBO & Biology Olympiad aspirants</p>
+  <p class="hero-subtitle">The ultimate platform for Biology Olympiad aspirants and Biology Enthusiasts</p>
 </div>
 
 ---
@@ -17,15 +17,15 @@ layout: "wide"
   <a href="/bionuggets" class="card">
     <div class="card-icon">⚡</div>
     <h3>BioNuggets</h3>
-    <div class="badge fast">Fast & Visual Learning</div>
-    <p>Bite‑sized explanations, beautiful diagrams, and quick concept nuggets. Perfect for rapid revision.</p>
+    <div class="badge fast">Fast, Fun & Visual Learning</div>
+    <p>Bite‑sized explanations, beautiful diagrams, and quick concept nuggets. Curiosity fulfilling and engaging content.</p>
     <span class="btn-outline">Explore BioNuggets →</span>
   </a>
   <a href="/resources" class="card">
     <div class="card-icon">📘</div>
     <h3>BoGuide</h3>
     <div class="badge deep">Deep & Structured Learning</div>
-    <p>Comprehensive notes, problem sets, past papers, and IBO‑level resources for serious preparation.</p>
+    <p>Comprehensive notes, problem sets, past papers, Solutions, Interactive mock tests, and IBO‑level resources for dedicated preparation.</p>
     <span class="btn-outline">Enter BoGuide →</span>
   </a>
 </div>
@@ -33,5 +33,5 @@ layout: "wide"
 ---
 
 <div class="collab-note">
-  A collaboration between BioNuggets & BoGuide — now unified as **BiOGuide**.
+  A collaboration between BioNuggets & BoGuide — now unified as <span style="font-weight: bold">BiOGuide</span>
 </div>
