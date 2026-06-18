@@ -11,20 +11,6 @@ layout: "wide"
 
 ---
 
-## Choose Your Learning Style
-
-<div class="two-cards">
-  <a href="/resources" class="card">
-    <div class="card-icon">📘</div>
-    <h3>BoGuide</h3>
-    <div class="badge deep">Deep & Structured Learning</div>
-    <p>Comprehensive notes, problem sets, past papers, Solutions, Interactive mock tests, and IBO‑level resources for dedicated preparation.</p>
-    <span class="btn-outline">Enter BoGuide →</span>
-  </a>
-</div>
-
----
-
 <div class="collab-note">
 BoGuide —
 </div>
