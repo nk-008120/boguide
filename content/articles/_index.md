@@ -1,6 +1,6 @@
 ---
-title: "Bionugget Articles"
-description: "Here you will find articles on various topics by bionuggets' team."
+title: "Articles"
+description: "Here you will find articles on various topics by our team, inspired by actual research articles."
 layout: "wide"
 ---
 

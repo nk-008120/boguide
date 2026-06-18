@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/bionuggets",
-      "destination": "https://bionuggets2009.vercel.app/bionuggets",
-      "statusCode": 302
-    }
-  ]
-}
