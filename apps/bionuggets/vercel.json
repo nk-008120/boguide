@@ -1,4 +1,0 @@
-{
-  "outputDirectory": "dist/bionuggets",
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
-}
