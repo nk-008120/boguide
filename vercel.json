@@ -1,12 +1,9 @@
 {
-  "rewrites": [
-    {
-      "source": "/bionuggets/:path*",
-      "destination": "https://biounified-v4.vercel.app/:path*"
-    },
+  "redirects": [
     {
       "source": "/bionuggets",
-      "destination": "https://biounified-v4.vercel.app/"
+      "destination": "https://biounified-v4.vercel.app/bionuggets",
+      "statusCode": 302
     }
   ]
 }
