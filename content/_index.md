@@ -14,13 +14,6 @@ layout: "wide"
 ## Choose Your Learning Style
 
 <div class="two-cards">
-  <a href="/bionuggets" class="card">
-    <div class="card-icon">⚡</div>
-    <h3>BioNuggets</h3>
-    <div class="badge fast">Fast, Fun & Visual Learning</div>
-    <p>Bite‑sized explanations, beautiful diagrams, and quick concept nuggets. Curiosity fulfilling and engaging content.</p>
-    <span class="btn-outline">Explore BioNuggets →</span>
-  </a>
   <a href="/resources" class="card">
     <div class="card-icon">📘</div>
     <h3>BoGuide</h3>
@@ -33,5 +26,5 @@ layout: "wide"
 ---
 
 <div class="collab-note">
-  A collaboration between BioNuggets & BoGuide — now unified as <span style="font-weight: bold">BiOGuide</span>
+BoGuide —
 </div>
