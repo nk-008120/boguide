@@ -73,7 +73,10 @@ theme = "hextra"
     name = "Articles"
     url = "/articles/"
     weight = 4
-
+  [[menu.main]]
+    name = "Discord"
+    url = "https://discord.gg/WpC8y6dbv"
+    weight = 5
 [params]
   # Navbar settings
   [params.navbar]
