@@ -1,1 +1,1 @@
-<iframe src="{{ .Get "src" }}" style="width: 100%; height: {{ .Get "height" | default "600px" }}; border: none;" allow="fullscreen"></iframe>
+<iframe src="{{ .Get "src" }}" title="{{ .Get "title" | default "Embedded content" }}" loading="lazy" style="width: 100%; height: {{ .Get "height" | default "600px" }}; border: none;" allow="fullscreen"></iframe>

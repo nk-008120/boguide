@@ -28,19 +28,6 @@ theme = "hextra"
     url = "/resources/1-cell-molecular/"
     weight = 2
 
-  # These are direct children of "Resources & Notes", but we will style them as sub‑items of the above
-  [[menu.main]]
-    name = "   Biochemistry"
-    parent = "Resources & Notes"
-    url = "/resources/1-cell-molecular/biochemistry/"
-    weight = 3
-
-  [[menu.main]]
-    name = "   Cell Biology"
-    parent = "Resources & Notes"
-    url = "/resources/1-cell-molecular/cell-biology/"
-    weight = 4
-
   [[menu.main]]
     name = "2. Genetics"
     parent = "Resources & Notes"
