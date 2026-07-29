@@ -13,6 +13,18 @@ The preparation for Biology Olympiads, which most of us are pretty familiar with
 
 <br>
 <br>
+
+<div style="text-align: center;">
+<span style="font-size: 1.5rem; font-weight: bold">Ways Of Working</span>
+</div>
+
+At BiOGuide, we have certain standardized ways of working principles that all our content has to go through before being approved of to the general use. This process consists of (currently);
+The Founder and Director writing and editing all the content page by page, topic by topic, word by word. Every concept has been personally reviewed.
+A specialised team is then put together to put the content under review, and provide a comprehensive rating. Only content with a rating of greater than 4 (1-5 scale) is then considered for further downstream editing.
+This team also finds relevant previous year problems and puts them under one directory for ease of use later on.
+Finally, the content is published for you!
+We hope that you appreciate the effort and enjoy our website, and most importantly, actively participate in feedback and discussions on our community pages.
+
 <div style="text-align: center;">
 <span style="font-size: 1.5rem; font-weight: bold">WHAT sets us apart</span>
 </div>
@@ -60,3 +72,4 @@ We are absolutely captivated by biology and the life sciences. Yet, our own jour
 
 <span style="font-size: 1.5rem; font-weight: bold; font-align: center">LICENSING</span>
 <br> <span style="font align: center"> This website has been published under a license of CC BY-NC-SA 4.0. Note that a future BUS-L1.1 license is under consideration for a few extravagant features which will be added way later in the website (do not worry, the website will remain non-profit).
+
