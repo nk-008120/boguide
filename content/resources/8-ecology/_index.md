@@ -341,8 +341,6 @@ The term $\left(\frac{K-N}{K}\right)$ is the **unused fraction of carrying capac
   </div>
 </div>
 
-<!-- Exponential & Geometric Growth Explorer -->
-<script src="https://cdn.plot.ly/plotly-3.1.0.min.js"></script>
 <script>
     (function() {
         // Wait for both DOM and Plotly to be ready
