@@ -338,51 +338,6 @@ html.dark .homepage-bg .collab-note {
   background: rgba(0, 0, 0, 0.2);
   color: #e2e8f0;
 }
-/* Make "General Resources" stand out (larger, bolder, less indent) */
-.hx\:menu-item a[href="/resources/"] {
-  font-weight: 700 !important;
-  font-size: 1.05rem !important;
-  padding-left: 0.5rem !important;
-}
-
-/* All other child items (the 14 topics) – smaller font, more indent */
-.hx\:menu-item a[href^="/resources/"]:not([href="/resources/"]) {
-  font-size: 0.9rem !important;
-  padding-left: 1.5rem !important;
-  opacity: 0.9;
-}
-
-/* Optional: add a subtle separator line after "General Resources" */
-.hx\:menu-item a[href="/resources/"] {
-  border-bottom: 1px solid var(--border-color, #e2e8f0);
-  margin-bottom: 0.25rem;
-  padding-bottom: 0.5rem;
-}
-/* Make "General Resources" stand out (larger, bolder, less indent) */
-.hx\:menu-item a[href="/about/"] {
-  font-weight: 700 !important;
-  font-size: 1.05rem !important;
-  padding-left: 0.5rem !important;
-}
-/* Target menu items that should be indented under "1. Cell & Molecular Biology" */
-.hx\:menu-item a[href*="/resources/1-cell-molecular/"]:not([href="/resources/1-cell-molecular/"]) {
-  padding-left: 1.75rem !important;   /* extra indent */
-  font-size: 0.9rem !important;
-  position: relative;
-}
-
-/* Optional: add a small bullet or dash to indicate sub‑item */
-.hx\:menu-item a[href*="/resources/1-cell-molecular/"]:not([href="/resources/1-cell-molecular/"])::before {
-  content: "•";
-  position: absolute;
-  left: 1rem;
-  color: var(--accent, #aa3bff);
-  font-weight: bold;
-}
-.hx\:menu-item a[href*="/resources/1-cell-molecular/"]:not([href="/resources/1-cell-molecular/"]) {
-  /* Remove any leading spaces from the text */
-  text-indent: -0.5rem;
-}
 /* ── Custom Tooltip / Notification Banner (Top‑Left Corner) ──────────────── */
 .custom-tooltip-box {
   position: fixed;
