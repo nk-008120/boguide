@@ -338,6 +338,23 @@ html.dark .homepage-bg .collab-note {
   background: rgba(0, 0, 0, 0.2);
   color: #e2e8f0;
 }
+/* topic-meta shortcode — difficulty/prerequisite/tag badge row at top of a page */
+.topic-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0 1.5rem 0;
+}
+.topic-meta-label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+.topic-meta-link {
+  text-decoration: none;
+}
+
 /* ── Custom Tooltip / Notification Banner (Top‑Left Corner) ──────────────── */
 .custom-tooltip-box {
   position: fixed;

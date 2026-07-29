@@ -9,13 +9,13 @@
   </url><url>
     <loc>http://localhost:1313/resources/13-practical-3/</loc>
   </url><url>
-    <loc>http://localhost:1313/resources/2-animal-anatomy/</loc>
-  </url><url>
     <loc>http://localhost:1313/resources/3-animal-physiology/</loc>
   </url><url>
     <loc>http://localhost:1313/resources/1-cell-molecular/biochemistry/</loc>
   </url><url>
     <loc>http://localhost:1313/resources/4-biosystematics/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resources/2-animal-anatomy/body-plans/</loc>
   </url><url>
     <loc>http://localhost:1313/resources/8-ecology/</loc>
   </url><url>
@@ -31,7 +31,39 @@
   </url><url>
     <loc>http://localhost:1313/resources/</loc>
   </url><url>
+    <loc>http://localhost:1313/resources/2-animal-anatomy/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resources/2-animal-anatomy/human-skeletal-system/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resources/2-animal-anatomy/human-integumentary-system/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resources/2-animal-anatomy/human-muscular-system/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resources/2-animal-anatomy/human-nervous-system/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resources/2-animal-anatomy/human-sensory-organs/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resources/2-animal-anatomy/human-circulatory-system/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resources/2-animal-anatomy/human-respiratory-system/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resources/2-animal-anatomy/human-digestive-system/</loc>
+  </url><url>
     <loc>http://localhost:1313/resources/10-bioinformatics/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resources/2-animal-anatomy/human-excretory-system/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resources/2-animal-anatomy/human-reproductive-system/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resources/2-animal-anatomy/fish-amphibian-anatomy/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resources/2-animal-anatomy/reptile-bird-anatomy/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resources/2-animal-anatomy/mammalian-comparative-anatomy/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resources/2-animal-anatomy/invertebrate-body-plans-1/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resources/2-animal-anatomy/invertebrate-body-plans-2/</loc>
   </url><url>
     <loc>http://localhost:1313/resources/1-cell-molecular/cell-biology/</loc>
   </url><url>

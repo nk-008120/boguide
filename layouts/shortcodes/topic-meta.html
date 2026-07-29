@@ -1,0 +1,21 @@
+{{ $difficulty := .Page.Params.difficulty }}
+{{ $prereqs := .Page.Params.prerequisites }}
+{{ $tags := .Page.Params.syllabus_tags }}
+<div class="topic-meta">
+  {{ with $difficulty }}
+    {{ $class := "badge-custom" }}
+    {{ if eq . "beginner" }}{{ $class = "badge-exploration" }}{{ else if eq . "advanced" }}{{ $class = "badge-challenge" }}{{ end }}
+    <span class="{{ $class }}">{{ title . }}</span>
+  {{ end }}
+  {{ with $prereqs }}
+    <span class="topic-meta-label">Prerequisites:</span>
+    {{ range . }}
+      <a class="badge-custom topic-meta-link" href="{{ $.Page.Parent.RelPermalink }}{{ lower . }}/">{{ replace . "-" " " }}</a>
+    {{ end }}
+  {{ end }}
+  {{ with $tags }}
+    {{ range . }}
+      <span class="badge-curiosity">{{ . }}</span>
+    {{ end }}
+  {{ end }}
+</div>
