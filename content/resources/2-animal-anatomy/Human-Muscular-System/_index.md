@@ -100,7 +100,20 @@ The three muscle tissue types, the triad-based excitation-contraction coupling m
 
 ## Visual Reference
 
-*Planned diagrams (CC-BY sourcing follow-up) — muscle organ hierarchy cross-section (epimysium/perimysium/endomysium), sarcomere banding diagram at rest vs. contracted with troponin/tropomyosin detail, neuromuscular junction and motor end plate, T-tubule/SR triad structure, cross-bridge cycle steps, fiber type comparison (color/mitochondrial density), major muscle groups labeled anterior/posterior view.*
+**Interactive**
+
+- **Sarcomere contraction slider (Plotly or SVG+JS)** — drag from "fully relaxed" to "fully contracted" and watch the A-band, I-band, and H-zone lengths update live on a labeled sarcomere, with a numeric readout of each band's current length — the clearest possible demonstration that filaments slide rather than shorten.
+- **Excitation-contraction coupling walkthrough (click-through)** — click through ACh release at the NMJ → sarcolemma depolarization → T-tubule → SR calcium release via the triad → troponin C binding → binding-site exposure, lighting up each structure in sequence.
+
+**Static**
+
+- Muscle organ hierarchy cross-section (epimysium/perimysium/endomysium)
+- Sarcomere banding diagram at rest vs. contracted, troponin/tropomyosin position shown on the thin filament in both states
+- Neuromuscular junction and motor end plate, synaptic vesicles and ACh receptors labeled
+- T-tubule/SR triad structure in 3D-style cutaway
+- Cross-bridge cycle, all four steps illustrated in sequence
+- Fiber type comparison (Type I/IIa/IIx) by color and mitochondrial/capillary density
+- Major muscle groups labeled, anterior and posterior view
 
 ## Practice Problems
 

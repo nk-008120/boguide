@@ -85,7 +85,20 @@ The endochondral ossification process and the intervertebral disc/vertebral colu
 
 ## Visual Reference
 
-*Planned diagrams (CC-BY sourcing follow-up) — endochondral ossification sequence (cartilage model → primary/secondary ossification centers → growth plate), long bone gross anatomy (diaphysis/epiphysis/periosteum/medullary cavity), osteon cross-section with lamellae/lacunae/canaliculi/Haversian and Volkmann's canals labeled, full labeled skeleton (axial/appendicular color-coded), synovial joint structure (capsule/synovial membrane/articular cartilage/meniscus/bursa), the six synovial joint subtypes shown side by side with their movement axes.*
+**Interactive**
+
+- **Long bone hotspot diagram (click-to-reveal, HTML/CSS/JS)** — click the diaphysis, epiphysis, periosteum, medullary cavity, or growth plate on a long bone cross-section to reveal its name and function; a "juvenile / adult" toggle switches the same diagram between an open and a fully ossified growth plate.
+- **Synovial joint subtype matcher (interactive quiz)** — shown a joint image or a movement description, pick the correct subtype (hinge / pivot / ball-and-socket / condyloid / saddle / plane) from a button set and get instant feedback — direct practice for the "classify this joint" exam question above.
+
+**Static**
+
+- Endochondral ossification sequence (cartilage model → primary/secondary ossification centers → growth plate)
+- Long bone gross anatomy (diaphysis/epiphysis/periosteum/medullary cavity)
+- Osteon cross-section with lamellae/lacunae/canaliculi/Haversian and Volkmann's canals labeled
+- Full labeled skeleton (axial/appendicular color-coded)
+- Synovial joint structure (capsule/synovial membrane/articular cartilage/meniscus/bursa)
+- The six synovial joint subtypes shown side by side with their movement axes
+- Osteoblast/osteocyte/osteoclast illustrated together with PTH/calcitonin's opposing effects on each
 
 ## Practice Problems
 

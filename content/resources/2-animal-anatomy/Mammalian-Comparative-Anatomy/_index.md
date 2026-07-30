@@ -78,7 +78,19 @@ The ruminant four-chambered stomach is a direct, high-yield contrast to the sing
 
 ## Visual Reference
 
-*Planned diagrams (CC-BY sourcing follow-up) — reptilian jaw joint vs. mammalian jaw + middle ear bones (homology diagram, with Meckel's cartilage indicated), epitheliochorial vs. hemochorial placental interface cross-section, placental/marsupial/monotreme reproductive structures compared, plantigrade/digitigrade/unguligrade stance comparison, ruminant four-chambered stomach schematic, whale flipper and bat wing skeletons side by side showing the shared tetrapod limb bones each is built from.*
+**Interactive**
+
+- **Jaw-to-ear homology animator** — an animated morph sequence showing the reptilian jaw joint (articular + quadrate) transform into the mammalian jaw + middle ear (dentary/malleus/incus), with Meckel's cartilage highlighted as the developmental link — visualizes the structural repurposing directly instead of describing it in prose.
+- **Limb stance comparator (toggle)** — toggle a generic mammal skeleton between plantigrade, digitigrade, and unguligrade stance, highlighting which foot bones contact the ground in each.
+
+**Static**
+
+- Reptilian jaw joint vs. mammalian jaw + middle ear bones (homology diagram), paired with the animator above
+- Epitheliochorial vs. hemochorial placental interface cross-section, tissue layer count visibly different
+- Placental/marsupial/monotreme reproductive structures compared
+- Plantigrade/digitigrade/unguligrade stance comparison, paired with the interactive toggle above
+- Ruminant four-chambered stomach schematic, food path from rumen to abomasum traced
+- Whale flipper and bat wing skeletons side by side, homologous bones color-matched to show the shared tetrapod limb plan
 
 ## Practice Problems
 

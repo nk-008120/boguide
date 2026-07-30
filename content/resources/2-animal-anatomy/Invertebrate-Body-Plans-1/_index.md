@@ -81,7 +81,21 @@ Three classes differ structurally in appendage/chaetae arrangement, directly ref
 
 ## Visual Reference
 
-*Planned diagrams (CC-BY sourcing follow-up) — asconoid/syconoid/leuconoid sponge body plans compared, cnidocyte before/after nematocyst firing, polyp vs. medusa body forms, flatworm protonephridium with a flame cell in detail, tapeworm scolex and proglottid chain, nematode cross-section showing cuticle/pseudocoelom/longitudinal muscle bands, earthworm segment cross-section showing coelom/metanephridium/muscle layers/chaetae, annelid class comparison (polychaete parapodia vs. oligochaete clitellum vs. leech suckers).*
+**Interactive**
+
+- **Sponge water-flow simulator (toggle asconoid/syconoid/leuconoid)** — animate water-flow arrows through each body plan and count the effective choanocyte surface area at each level, visualizing exactly why leuconoid sponges can grow larger than asconoid ones.
+- **Nematocyst firing animation (click-to-fire)** — click the cnidocil trigger and watch the coiled thread evert in slow motion — a direct visualization of "one of the fastest cellular processes known" rather than a static before/after pair.
+
+**Static**
+
+- Asconoid/syconoid/leuconoid sponge body plans compared, paired with the simulator above
+- Cnidocyte before/after nematocyst firing
+- Polyp vs. medusa body forms, mesoglea thickness contrasted
+- Flatworm protonephridium with a flame cell shown in cutaway detail
+- Tapeworm scolex and proglottid chain, hooks/suckers on the scolex labeled
+- Nematode cross-section showing cuticle/pseudocoelom/longitudinal muscle bands
+- Earthworm segment cross-section showing coelom/metanephridium/muscle layers/chaetae
+- Annelid class comparison (polychaete parapodia vs. oligochaete clitellum vs. leech suckers)
 
 ## Practice Problems
 

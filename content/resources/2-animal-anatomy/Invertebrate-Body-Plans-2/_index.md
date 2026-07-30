@@ -66,7 +66,20 @@ Echinoderms also have a **calcareous endoskeleton** — internal, mesoderm-deriv
 
 ## Visual Reference
 
-*Planned diagrams (CC-BY sourcing follow-up) — generalized molluscan body plan (foot/visceral mass/mantle) across a gastropod, bivalve, and cephalopod, radula and odontophore detail, cephalopod eye vs. vertebrate eye side by side, arthropod subphyla comparison (chelicerae vs. antennae counts), compound eye ommatidia structure, insect tracheal system and Malpighian tubules, echinoderm water vascular system and tube feet with ampulla detail.*
+**Interactive**
+
+- **Water vascular system flow animator (click-through)** — click the madreporite and watch water travel stone canal → ring canal → radial canal → a single tube foot extending as its ampulla contracts, turning an entirely hydraulic system into something watched in motion rather than inferred from a static diagram.
+- **Arthropod subphylum identification key (interactive dichotomous key)** — answer yes/no structural questions (antennae count? chelicerae or mandibles? leg-bearing tagmata?) to narrow a specimen down to Chelicerata/Myriapoda/Crustacea/Hexapoda — direct practice for practical-exam specimen identification.
+
+**Static**
+
+- Generalized molluscan body plan (foot/visceral mass/mantle) across a gastropod, bivalve, and cephalopod
+- Radula and odontophore detail, feeding motion shown as a sequence
+- Cephalopod eye vs. vertebrate eye side by side, the non-inverted vs. inverted retina difference highlighted
+- Arthropod subphyla comparison (chelicerae vs. antennae counts), paired with the identification key above
+- Compound eye ommatidia structure, cutaway of a single ommatidium
+- Insect tracheal system and Malpighian tubules
+- Echinoderm water vascular system and tube feet with ampulla detail, paired with the animator above
 
 ## Practice Problems
 

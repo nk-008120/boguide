@@ -115,14 +115,19 @@ A coelom performs concrete mechanical work: it cushions internal organs, allows 
 
 ## Visual Reference
 
-*Diagram sourcing is a follow-up step (see the section plan) — planned images, from CC-BY sources (OpenStax Biology 2e / Wikimedia Commons) with attribution:*
+**Interactive**
 
-- Radial vs. bilateral vs. biradial symmetry, labeled side by side.
-- Gastrulation sequence (blastula → invagination/involution → gastrula) with germ layers labeled.
-- Notochord-induced neural tube formation, cross-section sequence.
-- Spiral/determinate vs. radial/indeterminate cleavage, first few divisions compared.
-- Schizocoely vs. enterocoely coelom formation, cross-section sequence.
-- Coelom-type cross-sections: acoelomate, pseudocoelomate, eucoelomate, side by side.
+- **Coelom morph slider (SVG/JS)** — one slider that morphs a generic body cross-section continuously from acoelomate → pseudocoelomate → eucoelomate, showing the mesoderm lining progressively wrap the body cavity — replaces three static snapshots with one continuous transformation a student can scrub back and forth.
+- **Clickable germ-layer tree (extends the Mermaid diagram above)** — clicking "ectoderm" / "mesoderm" / "endoderm" isolates and highlights only that branch's derivatives, dimming the rest; a "quiz me" toggle hides all labels so a student can self-test before revealing them.
+
+**Static**
+
+- Symmetry types (asymmetry / radial / biradial / bilateral) drawn side by side on the same generic body outline
+- Gastrulation sequence (blastula → invagination/involution → gastrula) with germ layers colored consistently with the Mermaid diagram
+- Notochord-induced neural tube formation, cross-section sequence (neural plate → neural groove → neural tube)
+- Spiral/determinate vs. radial/indeterminate cleavage, first three divisions compared side by side
+- Schizocoely vs. enterocoely coelom formation, cross-section sequence
+- Coelom-type cross-sections: acoelomate, pseudocoelomate, eucoelomate, side by side (paired with the interactive morph slider above)
 
 ## Practice Problems
 

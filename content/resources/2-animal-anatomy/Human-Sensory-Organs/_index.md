@@ -67,7 +67,19 @@ Photoreceptor and mechanoreceptor hair-cell structure are broadly conserved acro
 
 ## Visual Reference
 
-*Planned diagrams (CC-BY sourcing follow-up) — labeled eye cross-section (three tunics, chambers, lens), retinal layer cross-section showing the light path relative to the signal path, accommodation mechanism (relaxed vs. contracted ciliary muscle), labeled ear cross-section (outer/middle/inner), cochlear cross-section showing the three scalae and organ of Corti, semicircular canal and otolith organ structure.*
+**Interactive**
+
+- **Accommodation simulator (SVG/JS)** — a near/far slider animating ciliary muscle contraction, zonule fiber tension, and lens shape together in real time, directly visualizing the counterintuitive "ciliary contraction enables near vision" mechanism.
+- **Cochlear tonotopy explorer (Plotly)** — a frequency slider that highlights the position along the basilar membrane responding maximally at that frequency, tying pitch directly to physical location rather than an abstract map.
+
+**Static**
+
+- Labeled eye cross-section (three tunics, chambers, lens)
+- Retinal layer cross-section showing the light path vs. the signal path in opposite directions
+- Accommodation mechanism, relaxed vs. contracted ciliary muscle, paired with the interactive simulator above
+- Labeled ear cross-section (outer/middle/inner)
+- Cochlear cross-section showing the three scalae and the organ of Corti
+- Semicircular canal and otolith organ structure, cupula and otoliths visible
 
 ## Practice Problems
 

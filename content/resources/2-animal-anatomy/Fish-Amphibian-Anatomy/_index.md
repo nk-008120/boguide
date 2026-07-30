@@ -72,7 +72,19 @@ Thin, glandular, permeable (no scales in most adult amphibians, unlike fish or r
 
 ## Visual Reference
 
-*Planned diagrams (CC-BY sourcing follow-up) — bony fish gill arch with primary/secondary lamellae and countercurrent blood/water flow arrows, operculum and buccal pumping mechanism, 2- vs. 3- vs. 4-chambered heart comparison with the amphibian spiral valve/trabeculae highlighted, freshwater vs. marine fish nephron/glomerulus comparison, lateral line canal and neuromast structure, amphibian life cycle showing gill-to-lung transition.*
+**Interactive**
+
+- **Countercurrent vs. concurrent gill exchange graph (Plotly)** — plot O₂ concentration in water and in blood along the length of a gill lamella for both flow arrangements side by side, showing quantitatively why countercurrent flow extracts more oxygen instead of just stating it.
+- **Heart blood-flow animator (click-through, 2- vs. 3- vs. 4-chambered)** — toggle between fish, amphibian, and human hearts with animated arrows tracing oxygenated vs. deoxygenated blood, including the amphibian spiral valve's preferential-streaming effect visibly reducing (not eliminating) mixing.
+
+**Static**
+
+- Bony fish gill arch with primary/secondary lamellae and countercurrent blood/water flow arrows
+- Operculum and buccal pumping mechanism
+- 2- vs. 3- vs. 4-chambered heart comparison, paired with the animator above
+- Freshwater vs. marine fish nephron/glomerulus comparison
+- Lateral line canal and neuromast structure
+- Amphibian life cycle showing the gill-to-lung transition at metamorphosis
 
 ## Practice Problems
 
