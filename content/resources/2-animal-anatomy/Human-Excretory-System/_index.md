@@ -71,7 +71,19 @@ The nephron's filtration-then-reabsorption logic has a structurally simpler inve
 
 ## Visual Reference
 
-*Planned diagrams (CC-BY sourcing follow-up) — kidney gross anatomy (cortex/medulla/pyramids/calyces/pelvis), labeled nephron showing all tubule regions and the two-capillary-bed blood supply, renal corpuscle detail (glomerulus/Bowman's capsule/podocytes/filtration slits), cortical vs. juxtamedullary nephron comparison, juxtaglomerular apparatus at the vascular pole, transitional epithelium in relaxed vs. stretched bladder wall.*
+**Interactive**
+
+- **Nephron filtration/reabsorption explorer (hover-to-reveal)** — hover along the PCT, loop of Henle, DCT, and collecting duct to see exactly what's reabsorbed or secreted at each segment, turning the tubule's regional specialization into something explored rather than read.
+- **Countercurrent multiplier gradient chart (Plotly)** — plot interstitial osmolarity against depth into the medulla, showing the gradient build along the loop of Henle — a quantitative, graphed version of the "countercurrent multiplier" mechanism instead of a purely verbal one.
+
+**Static**
+
+- Kidney gross anatomy (cortex/medulla/pyramids/calyces/pelvis)
+- Labeled nephron showing all tubule regions and the two-capillary-bed blood supply
+- Renal corpuscle detail (glomerulus/Bowman's capsule/podocytes/filtration slits)
+- Cortical vs. juxtamedullary nephron comparison, loop-of-Henle length contrasted
+- Juxtaglomerular apparatus at the vascular pole, macula densa and granular cells both labeled
+- Transitional epithelium in relaxed vs. stretched bladder wall
 
 ## Practice Problems
 

@@ -70,7 +70,18 @@ The amniotic-egg-derived **placenta** (see [Mammalian Comparative Anatomy](../ma
 
 ## Visual Reference
 
-*Planned diagrams (CC-BY sourcing follow-up) — seminiferous tubule cross-section showing Sertoli cells, the basal/adluminal compartments either side of the blood-testis barrier, and the concentric spermatogenic cell layers; male reproductive tract gross anatomy; ovarian follicle stages side by side, primordial through corpus luteum/albicans; female reproductive tract gross anatomy; combined ovarian-cycle/endometrial-cycle/hormone-level chart (Plotly interactive, see above).*
+**Interactive**
+
+- **HPG axis hormone cycle chart (Plotly)** — the combined FSH/LH/estrogen/progesterone chart flagged above, with each hormone's curve individually toggleable and a draggable cycle-day marker that syncs to the current follicular stage and endometrial phase — built to make the negative-to-positive feedback switch around ovulation visible rather than asserted.
+- **Follicular staging carousel (click-through / quiz)** — step through primordial → primary → secondary → Graafian → corpus luteum → corpus albicans, each stage showing its structural markers, then a "identify this stage" quiz mode using the same images unlabeled.
+
+**Static**
+
+- Seminiferous tubule cross-section showing Sertoli cells, the basal/adluminal compartments either side of the blood-testis barrier, and the concentric spermatogenic cell layers
+- Male reproductive tract gross anatomy
+- Ovarian follicle stages side by side, primordial through corpus luteum/albicans (paired with the carousel above)
+- Female reproductive tract gross anatomy
+- Acrosome reaction and cortical reaction sequence at fertilization
 
 ## Practice Problems
 

@@ -73,7 +73,19 @@ The alveolar, tidal-ventilation lung plan described here contrasts directly with
 
 ## Visual Reference
 
-*Planned diagrams (CC-BY sourcing follow-up) — upper respiratory tract sagittal section with conchae labeled, larynx structure with cartilages and vocal folds, full bronchial tree from trachea to alveoli, lung lobes (right 3 vs. left 2 + lingula) with pleura layers, alveolar wall cross-section showing Type I/II cells and the capillary interface, diaphragm position and rib cage movement during inspiration vs. expiration, spirometry trace with all lung volumes/capacities labeled.*
+**Interactive**
+
+- **Ventilation mechanics animator (SVG/JS)** — animate diaphragm position, thoracic volume, and intrapulmonary pressure together through one full breathing cycle — a live, visual Boyle's law demonstration rather than a static before/after pair.
+- **Lung volumes explorer (Plotly)** — a segmented spirometry-trace chart where toggling TV/IRV/ERV/RV highlights each volume's contribution to vital capacity and total lung capacity.
+
+**Static**
+
+- Upper respiratory tract sagittal section with conchae labeled
+- Larynx structure with cartilages and vocal folds
+- Full bronchial tree from trachea to alveoli, cartilage support fading out at the bronchiole level
+- Lung lobes (right 3 vs. left 2 + lingula) with pleura layers shown
+- Alveolar wall cross-section showing Type I/II cells and the capillary interface
+- Diaphragm position and rib cage movement, inspiration vs. expiration, paired with the interactive animator above
 
 ## Practice Problems
 

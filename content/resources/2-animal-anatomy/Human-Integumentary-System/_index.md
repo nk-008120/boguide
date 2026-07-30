@@ -83,7 +83,19 @@ The epidermis-over-dermis plan and keratinization process described here are sha
 
 ## Visual Reference
 
-*Planned diagrams (CC-BY sourcing follow-up) — full skin cross-section with all five epidermal strata labeled, melanocyte-to-keratinocyte melanosome transfer, dermal papillae at the epidermal-dermal junction, the five cutaneous receptor types positioned by depth, hair follicle structure with matrix/papilla/arrector pili labeled, nail structure cross-section.*
+**Interactive**
+
+- **Skin cross-section hotspot diagram (click-to-reveal)** — click any epidermal stratum or dermal receptor (Meissner's, Pacinian, Merkel, Ruffini, free nerve endings) to reveal its name, depth, and the specific stimulus it detects.
+- **Hair growth cycle stepper** — step through anagen → catagen → telogen on a single follicle diagram, with matrix activity and shaft length animating at each stage, then a "why don't we go bald from normal shedding?" prompt tying back to asynchronous cycling.
+
+**Static**
+
+- Full skin cross-section with all five epidermal strata labeled
+- Melanocyte-to-keratinocyte melanosome transfer, shown as a sequence
+- Dermal papillae at the epidermal-dermal junction (tied to fingerprint ridge formation)
+- The five cutaneous receptor types positioned by depth, side by side
+- Hair follicle structure with matrix/papilla/arrector pili labeled
+- Nail structure cross-section (matrix/bed/lunula/eponychium/hyponychium)
 
 ## Practice Problems
 

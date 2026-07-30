@@ -14,5 +14,139 @@
       
     
     
+    <item>
+      <title>Foraging &amp; Anti-Predator Behavior</title>
+      <link>http://localhost:1313/resources/9-ethology/foraging-anti-predator-behavior/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/resources/9-ethology/foraging-anti-predator-behavior/</guid>
+      <description>
+        
+        
+        
+
+
+&lt;div class=&#34;topic-meta&#34;&gt;
+  
+    
+    
+    &lt;span class=&#34;badge-challenge&#34;&gt;Advanced&lt;/span&gt;
+  
+  
+    &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
+    
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
+    
+  
+  
+    
+      &lt;span class=&#34;badge-curiosity&#34;&gt;IBO&lt;/span&gt;
+    
+      &lt;span class=&#34;badge-curiosity&#34;&gt;USABO&lt;/span&gt;
+    
+      &lt;span class=&#34;badge-curiosity&#34;&gt;ethology&lt;/span&gt;
+    
+  
+&lt;/div&gt;
+
+&lt;h2&gt;Overview&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;overview&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#overview&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;This page opens the &lt;strong&gt;Behavioral Ecology&lt;/strong&gt; tier, where behavior is analyzed not just mechanistically (how it happens) but as an evolved &lt;em&gt;strategy&lt;/em&gt; — a decision rule shaped by selection to maximize net fitness payoff given the costs and benefits available. Foraging and anti-predator behavior are treated together because they are directly linked by a single, heavily tested trade-off: time and attention spent foraging is time and attention &lt;em&gt;not&lt;/em&gt; spent watching for predators, and nearly every concept below (optimal foraging, vigilance, group formation) is ultimately an answer to how animals balance the two.&lt;/p&gt;
+&lt;h2&gt;Key Concepts&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;key-concepts&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#key-concepts&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Optimal Foraging Theory&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;optimal-foraging-theory&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#optimal-foraging-theory&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Optimal foraging theory&lt;/strong&gt; models foraging as an economic decision problem: natural selection favors foraging rules that maximize net energy intake per unit time (or, in some formulations, minimize time spent exposed to predation risk while meeting energy needs), given real constraints on what an animal can perceive, handle, and digest. A directly testable prediction is &lt;strong&gt;prey choice models&lt;/strong&gt;: when profitable prey (high energy return per handling-time cost) is abundant, foragers should become more selective and ignore lower-profitability prey even when it&amp;rsquo;s encountered, since pursuing it costs search time that could instead find another high-profitability item — &lt;strong&gt;oystercatchers (&lt;em&gt;Haematopus ostralegus&lt;/em&gt;) foraging on mussels&lt;/strong&gt; is a well-studied case, where birds preferentially select intermediate-sized mussels: large mussels have a high energy payoff but a disproportionately high handling cost (harder to open), so realized net rate of energy gain is actually maximized at an intermediate size rather than at the largest available prey.&lt;/p&gt;
+&lt;h3&gt;The Marginal Value Theorem&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-marginal-value-theorem&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#the-marginal-value-theorem&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The &lt;strong&gt;marginal value theorem&lt;/strong&gt; (Eric Charnov) addresses a specific sub-problem: when food occurs in discrete, depleting &lt;strong&gt;patches&lt;/strong&gt; (a flower cluster, a fruiting tree, a shoal of prey) separated by non-foraging travel time, how long should a forager stay in a given patch before moving to the next one? As a forager depletes a patch, its intake rate within that patch declines; the marginal value theorem predicts the optimal &lt;strong&gt;giving-up time&lt;/strong&gt; is reached when the current patch&amp;rsquo;s declining intake rate falls to match the &lt;em&gt;average&lt;/em&gt; intake rate achievable across the whole habitat (including travel time to the next patch) — not when the patch is fully depleted. A direct, testable consequence: foragers should stay &lt;em&gt;longer&lt;/em&gt; in each patch as travel time between patches increases (since abandoning a patch early is more costly when the next one is far away), a pattern confirmed experimentally in bumblebees foraging on artificial flower patches with manipulated inter-patch distances.&lt;/p&gt;
+&lt;h3&gt;The Predator-Prey Behavioral Arms Race&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-predator-prey-behavioral-arms-race&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#the-predator-prey-behavioral-arms-race&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Foraging decisions and anti-predator decisions co-evolve in a continuing &lt;strong&gt;behavioral arms race&lt;/strong&gt;: predator hunting strategies select for prey counter-strategies, which in turn select for refined predator strategies. Unlike the structural/physiological adaptations covered elsewhere in this guide, the arms race here is specifically in &lt;em&gt;decision rules and behavior&lt;/em&gt;, e.g. cheetah pursuit strategy vs. Thomson&amp;rsquo;s gazelle stotting/evasive zig-zagging, or bat echolocation call structure vs. moth ultrasound-detecting evasive flight and (in tiger moths) active jamming clicks produced in response to an approaching bat&amp;rsquo;s call.&lt;/p&gt;
+&lt;h3&gt;Vigilance and the Dilution Effect&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;vigilance-and-the-dilution-effect&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#vigilance-and-the-dilution-effect&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Two of the clearest predictions from the foraging/safety trade-off concern group size:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Vigilance trade-off&lt;/strong&gt; — each individual in a foraging group faces a direct trade-off between head-down foraging time and head-up scanning-for-predators time; as &lt;strong&gt;group size increases&lt;/strong&gt;, each individual can typically reduce its own vigilance time (since more eyes are collectively watching, an effect termed the &amp;ldquo;many eyes&amp;rdquo; hypothesis) while the group&amp;rsquo;s &lt;em&gt;overall&lt;/em&gt; probability of detecting an approaching predator stays high or even increases — a pattern confirmed across many bird and ungulate species by direct field observation of per-individual scanning rate declining with flock/herd size.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dilution effect&lt;/strong&gt; — for a predator that can only capture one (or a limited number of) prey per attack, an individual&amp;rsquo;s probability of being the one captured decreases as group size increases, purely as a statistical consequence of there being more potential targets — this is a distinct mechanism from vigilance (it works even if no individual increases its watchfulness at all) and is the leading explanation for the fitness benefit of synchronized mass emergence events, e.g. the near-simultaneous mass hatching of sea turtle nests, which overwhelms local predators relative to what any one hatchling would face emerging alone.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Anti-Predator Strategies&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;anti-predator-strategies&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#anti-predator-strategies&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Several named strategies recur across taxa and are tested individually:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Alarm signaling&lt;/strong&gt; — covered in depth in &lt;a
+    href=&#34;../Animal-Communication/&#34;&gt;Animal Communication&lt;/a&gt; (Belding&amp;rsquo;s ground squirrel, vervet monkey calls).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Selfish herd effect&lt;/strong&gt; (W.D. Hamilton) — individuals within a group actively maneuver to position themselves centrally, pushing others toward the group&amp;rsquo;s edge, reducing their own individual predation risk at others&amp;rsquo; expense — a distinct mechanism from the dilution effect above, since it&amp;rsquo;s about &lt;em&gt;position within&lt;/em&gt; the group rather than group size itself.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Predator swamping/satiation&lt;/strong&gt; — the same mass-synchrony logic as the dilution effect, extended to the case where predator population size cannot track sudden prey abundance (periodical cicada mass emergences are the standard example: a 13- or 17-year emergence cycle produces prey numbers far exceeding what the local predator community can consume in a single season, so a fixed fraction survives regardless of predator numbers).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Startle and deimatic displays&lt;/strong&gt; — sudden exposure of conspicuous markings (e.g. peacock butterfly eyespots flashed open in response to an approaching predator) intended to startle a predator or mimic the appearance of a larger animal&amp;rsquo;s eyes, buying an escape window.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mobbing&lt;/strong&gt; — coordinated group harassment of a predator by potential prey (small birds mobbing a perched hawk or owl) to drive it away from the immediate area, at some risk to the mobbing individuals; often triggered specifically by an alarm-call type distinct from a fleeing-response alarm call.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- VIDEO: Starling flock &#34;murmuration&#34; showing predator-evasion dynamics and the selfish-herd effect in real time — Sturnus vulgaris — the constantly shifting central-vs-peripheral positioning that drives the selfish herd effect is essentially invisible in a still frame --&gt;
+&lt;h2&gt;Comparative Structures&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;comparative-structures&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#comparative-structures&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Concept&lt;/th&gt;
+					&lt;th&gt;Mechanism&lt;/th&gt;
+					&lt;th&gt;Group-size dependent?&lt;/th&gt;
+					&lt;th&gt;Example&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Vigilance trade-off&lt;/td&gt;
+					&lt;td&gt;Reduced per-individual scanning need&lt;/td&gt;
+					&lt;td&gt;Yes (decreases per individual)&lt;/td&gt;
+					&lt;td&gt;Reduced scanning rate in larger bird flocks&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Dilution effect&lt;/td&gt;
+					&lt;td&gt;Lower per-individual capture probability&lt;/td&gt;
+					&lt;td&gt;Yes (decreases per individual)&lt;/td&gt;
+					&lt;td&gt;Synchronized sea turtle hatchling emergence&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Selfish herd effect&lt;/td&gt;
+					&lt;td&gt;Repositioning toward group center&lt;/td&gt;
+					&lt;td&gt;Not directly — positional&lt;/td&gt;
+					&lt;td&gt;Individuals jostling toward herd center&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Predator swamping&lt;/td&gt;
+					&lt;td&gt;Predator population can&amp;rsquo;t scale with prey surge&lt;/td&gt;
+					&lt;td&gt;Yes (population-level)&lt;/td&gt;
+					&lt;td&gt;Periodical cicada mass emergence&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Common Exam Questions&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;common-exam-questions&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#common-exam-questions&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Oystercatchers preferentially select intermediate-sized mussels rather than the largest available. Explain this using optimal foraging theory and the concept of handling time.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;State the prediction of the marginal value theorem regarding patch residence time as inter-patch travel time increases, and explain the underlying logic.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Distinguish the dilution effect from the selfish herd effect, and explain why the two can be confused despite operating through different mechanisms.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Explain why periodical cicadas emerging on a synchronized 13- or 17-year cycle in extremely large numbers is an anti-predator strategy, even though no individual cicada actively evades predators more effectively than another.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Explain the &amp;lsquo;many eyes&amp;rsquo; hypothesis and describe what field-observable measurement (per individual) would support it.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;A tiger moth produces ultrasonic clicks in response to an approaching echolocating bat. Explain how this fits into a predator-prey behavioral arms race framework.&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Visual Reference&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;visual-reference&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Marginal value theorem patch-departure simulator (Plotly)&lt;/strong&gt; — user sets inter-patch travel time and views a graphical solution (tangent-line construction) showing the optimal giving-up point on a declining within-patch intake curve, with the optimal residence time recalculating live as travel time changes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Group-size vigilance/dilution simulator (SVG/JS)&lt;/strong&gt; — a simulated group of foraging animals where the user adjusts group size and sees per-individual scanning time decrease (vigilance) alongside a separately computed per-individual capture-probability decrease (dilution), demonstrating the two effects are related but mechanistically distinct.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oystercatcher mussel prey-choice diagram: energy payoff and handling cost curves vs. mussel size, with the profitability-maximizing intermediate size marked&lt;/li&gt;
+&lt;li&gt;Marginal value theorem tangent-line diagram (Charnov&amp;rsquo;s original graphical solution)&lt;/li&gt;
+&lt;li&gt;Diagram contrasting the dilution effect (fixed predator capture number, more targets) against the selfish herd effect (repositioning within a fixed group)&lt;/li&gt;
+&lt;li&gt;Periodical cicada emergence timeline showing population surge relative to estimated predator consumption capacity&lt;/li&gt;
+&lt;li&gt;Peacock butterfly eyespot deimatic display, wings closed vs. flashed open&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- VIDEO: Cheetah pursuit vs. Thomson&#39;s gazelle stotting and zig-zag evasion — Acinonyx jubatus / Eudorcas thomsonii — the actual pursuit trajectory and evasive cutting are the behavioral arms race made visible, which text alone underexplains --&gt;
+&lt;h2&gt;Practice Problems&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;practice-problems&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#practice-problems&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;A shorebird forages on two prey types: one with high energy content but very long handling time, and one with lower energy content but almost no handling time. Explain, using optimal foraging theory, under what circumstances the bird should ignore the high-energy prey type entirely.&lt;/li&gt;
+&lt;li&gt;Using the marginal value theorem, predict and explain what happens to average patch residence time in a habitat where patches are moved closer together (reducing travel time), all else equal.&lt;/li&gt;
+&lt;li&gt;Explain why a solitary sea turtle hatchling emerging alone faces a higher individual predation risk than one emerging as part of a mass, synchronized hatching event, using the dilution effect specifically (not vigilance).&lt;/li&gt;
+&lt;li&gt;A herd of prey animals under threat shows individuals actively pushing toward the center of the group rather than merely staying close together. Name this phenomenon and explain whose fitness it improves at whose expense.&lt;/li&gt;
+&lt;li&gt;Explain why periodical cicadas&amp;rsquo; 13- and 17-year emergence cycles (both prime numbers) are hypothesized to further reduce predation risk beyond the swamping effect of sheer numbers alone.&lt;/li&gt;
+&lt;/ol&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>

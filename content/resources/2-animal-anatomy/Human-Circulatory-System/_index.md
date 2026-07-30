@@ -89,7 +89,21 @@ The four-chambered heart with fully separated left/right circuits is a mammalian
 
 ## Visual Reference
 
-*Planned diagrams (CC-BY sourcing follow-up) — heart wall layers cross-section, four-chambered heart with valves/chordae tendineae/papillary muscles labeled, cardiac conduction system pathway (SA node → AV node → bundle of His → Purkinje fibers) overlaid on heart anatomy, cardiac cycle pressure/volume diagram correlated with heart sounds, coronary artery distribution, blood smear showing erythrocytes and the five leukocyte types, artery/vein/capillary wall cross-sections compared, lymphatic capillary and lymph node structure.*
+**Interactive**
+
+- **Cardiac cycle explorer (Plotly)** — a synced multi-trace chart (a "Wiggers diagram": atrial pressure, ventricular pressure, aortic pressure, and ventricular volume across one full cardiac cycle) with a draggable time marker. Dragging it highlights which of the four valves are open/closed at that instant and flags the exact moment S1/S2 occur — turns "isovolumetric contraction/relaxation" from a memorized phrase into something a student scrubs through and sees.
+- **Conduction pathway walkthrough (click-through SVG/JS, no new library)** — a heart diagram where clicking SA node → AV node → bundle of His → Purkinje fibers in sequence lights up each structure and displays its conduction delay/speed, visually demonstrating *why* the AV node delay exists (atria finish emptying before ventricular contraction begins) instead of just stating it.
+
+**Static**
+
+- Heart wall layers cross-section (epicardium/myocardium/endocardium) with the pericardial cavity shown
+- Four-chambered heart, valves/chordae tendineae/papillary muscles labeled, with the left-ventricle-wall-thickness contrast to the right ventricle visually obvious at a glance
+- Coronary artery distribution over the heart surface, annotated to show why filling peaks in diastole
+- Blood smear illustration: biconcave erythrocytes plus all five leukocyte types drawn side by side at relative size, styled for practical-exam identification practice
+- Artery / vein / capillary wall cross-sections at relative scale, all three tunics labeled on each
+- Lymphatic capillary structure (overlapping endothelial flap valves) and a lymph node cross-section showing the filtering architecture
+
+*CC-BY sourcing for the static images (OpenStax/Wikimedia) and the two interactive builds are both follow-up implementation steps — flagged here at the level of detail needed to build each.*
 
 ## Practice Problems
 

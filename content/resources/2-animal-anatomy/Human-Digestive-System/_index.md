@@ -77,7 +77,20 @@ The four-layer GI tract wall plan, and the accessory-gland (liver/pancreas) arra
 
 ## Visual Reference
 
-*Planned diagrams (CC-BY sourcing follow-up) — tooth cross-section (enamel/dentin/pulp/root), gastric gland with the four cell types labeled, small intestine regional comparison (duodenum/jejunum/ileum), villus/microvillus structure, colon gross anatomy showing teniae coli and haustra, hepatic lobule with portal triad and sinusoid blood flow direction vs. bile flow direction, pancreas acini and islets of Langerhans side by side.*
+**Interactive**
+
+- **GI transit walkthrough (click-through timeline)** — click along a mouth-to-anus timeline; each stop shows that region's histology, main secretions, and approximate transit time, assembling the whole tract from the region-by-region detail above into one connected path.
+- **Gastric gland cell-type matcher (quiz)** — match mucous neck cell / parietal cell / chief cell / G cell to its secretion and function, direct practice for the exact exam question already listed above.
+
+**Static**
+
+- Tooth cross-section (enamel/dentin/pulp/root)
+- Gastric gland with all four cell types labeled
+- Small intestine regional comparison (duodenum/jejunum/ileum), each region's unique structural marker highlighted
+- Villus/microvillus structure with the lacteal shown
+- Colon gross anatomy showing teniae coli and haustra
+- Hepatic lobule with the portal triad, and arrows showing sinusoidal blood flow direction vs. bile canaliculus flow direction (opposite)
+- Pancreas acini and islets of Langerhans side by side, duct system vs. direct-to-bloodstream secretion contrasted
 
 ## Practice Problems
 

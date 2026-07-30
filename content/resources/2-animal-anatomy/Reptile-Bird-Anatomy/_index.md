@@ -75,7 +75,19 @@ Structurally linked to flight's weight constraints: birds lack teeth (reducing h
 
 ## Visual Reference
 
-*Planned diagrams (CC-BY sourcing follow-up) — amniotic egg cross-section with all four membranes labeled, reptilian vs. avian vs. mammalian heart chamber comparison, feather microstructure (calamus/rachis/barbs/barbules/hooklets), bird respiratory air sac system with the two-cycle airflow path diagrammed, bird skeleton showing keel/furcula/pneumatic bones, bird digestive tract showing crop/proventriculus/gizzard.*
+**Interactive**
+
+- **Bird two-cycle airflow stepper (click-through)** — step through inhalation 1 → exhalation 1 → inhalation 2 → exhalation 2, showing a single packet of air's position moving through the posterior air sacs → parabronchi (gas exchange) → anterior air sacs → trachea, making the "air takes two breaths to pass through" mechanism concrete.
+- **Heart chamber evolution slider** — a slider morphing a 2-chambered → 3-chambered (with the spiral valve) → 4-chambered heart, with the septum's progressive completion labeled at each step.
+
+**Static**
+
+- Amniotic egg cross-section with all four membranes labeled
+- Reptilian vs. avian vs. mammalian heart chamber comparison, paired with the slider above
+- Feather microstructure (calamus/rachis/barbs/barbules/hooklets), a zoomed inset showing hooklets interlocking
+- Bird respiratory air sac system, anterior/posterior groups labeled, paired with the airflow stepper above
+- Bird skeleton showing keel/furcula/pneumatic bones, with air-sac connections into the bones indicated
+- Bird digestive tract showing crop/proventriculus/gizzard
 
 ## Practice Problems
 

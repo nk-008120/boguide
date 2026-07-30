@@ -93,7 +93,20 @@ The tripartite CNS/PNS/autonomic organization and core neuron/synapse structure 
 
 ## Visual Reference
 
-*Planned diagrams (CC-BY sourcing follow-up) — meninges layers in cross-section, ventricular system and CSF circulation pathway, brain sagittal section with major regions, cerebral cortex lateral view with motor/somatosensory/Broca's/Wernicke's areas labeled, spinal cord cross-section (dorsal/ventral horns and roots) with the knee-jerk reflex arc traced, cranial nerve base-of-brain view with all 12 numbered, sympathetic vs. parasympathetic ganglion-location schematic.*
+**Interactive**
+
+- **Myelinated vs. unmyelinated conduction chart (Plotly)** — plot membrane potential against distance/time for both axon types side by side, with a speed readout, turning "saltatory conduction is faster" into a directly comparable animated race rather than a stated fact.
+- **Knee-jerk reflex arc walkthrough (click-through)** — click through stretch receptor → sensory neuron → dorsal root → synapse in the ventral horn → motor neuron → muscle on a spinal cord cross-section, each click lighting up the relevant structure and explaining why this reflex bypasses the brain.
+
+**Static**
+
+- Meninges layers in cross-section (dura/arachnoid/pia)
+- Ventricular system and CSF circulation pathway, from choroid plexus to arachnoid granulations
+- Brain sagittal section with all major regions labeled
+- Cerebral cortex lateral view with motor/somatosensory/Broca's/Wernicke's areas labeled and the central sulcus marked
+- Spinal cord cross-section (dorsal/ventral horns and roots) paired with the reflex arc above
+- Cranial nerve base-of-brain view with all 12 numbered and named
+- Sympathetic vs. parasympathetic ganglion-location schematic, pre-/postganglionic neuron lengths visibly different
 
 ## Practice Problems
 
