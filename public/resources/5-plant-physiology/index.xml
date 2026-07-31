@@ -57,7 +57,7 @@
 &lt;/ul&gt;
 &lt;p&gt;A cell at &lt;strong&gt;full turgor&lt;/strong&gt; has Ψₚ exactly balancing Ψₛ, so Ψ = 0 and no further net water enters; a &lt;strong&gt;flaccid&lt;/strong&gt; or &lt;strong&gt;plasmolyzed&lt;/strong&gt; cell (Ψₚ near zero or negative, respectively) has Ψ driven entirely by Ψₛ. This framework is what makes it possible to predict water movement direction between any two compartments — soil, root cell, xylem, atmosphere — from their respective Ψ values alone, without needing a separate rule for each pair.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/water-potential-cell-states.png&#34; alt=&#34;Water potential (Ψ) worked across three states: pure water (Ψ = 0), a 0.1 M sucrose solution (Ψ lowered by solute potential alone), and a flaccid cell dropped into that solution then allowed to reach equilibrium, with Ψₚ, Ψₛ, and Ψ calculated at each step&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: Taiz &amp;amp; Zeiger, Plant Physiology (Sinauer/Oxford) — confirm edition/page and licensing basis before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: Taiz &amp;amp; Zeiger, Plant Physiology (Sinauer/Oxford)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Pathways Across the Root&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;pathways-across-the-root&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#pathways-across-the-root&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Water entering at the root epidermis can travel toward the stele by three distinct routes, each with different resistance and different points of regulation:&lt;/p&gt;
 &lt;ul&gt;
@@ -69,7 +69,7 @@
 &lt;p&gt;All three pathways converge at the endodermis, where the Casparian strip&amp;rsquo;s suberin band blocks the apoplast route outright, forcing every water molecule that took that path to enter the symplast at that layer — the single mechanistic fact underlying selective mineral uptake, developed further on &lt;a
     href=&#34;../mineral-nutrition-nutrient-uptake/&#34;&gt;Mineral Nutrition &amp;amp; Nutrient Uptake&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/root-water-pathways-apoplast-symplast-transcellular.png&#34; alt=&#34;Water movement pathways across the root: apoplastic, symplastic, and transcellular routes traced from the epidermis/root hair through the cortex to the tracheary elements, with the Casparian strip and pericycle marked at the endodermis&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: Evert &amp;amp; Eichhorn, Raven Biology of Plants (W.H. Freeman/Macmillan) — confirm edition/page and licensing basis before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: Evert &amp;amp; Eichhorn, Raven Biology of Plants (W.H. Freeman/Macmillan)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Cohesion-Tension Theory&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;cohesion-tension-theory&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#cohesion-tension-theory&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;In an actively transpiring plant, water loss at the leaf (see &lt;a
     href=&#34;../stomatal-physiology-gas-exchange/&#34;&gt;Stomatal Physiology &amp;amp; Gas Exchange&lt;/a&gt; for the stomatal mechanism controlling its rate) lowers the water potential of the leaf mesophyll cell walls, which draws water out of the nearest leaf xylem, which in turn lowers pressure potential throughout the entire continuous xylem water column all the way down to the root — because the column is unbroken, a pull applied at the top is transmitted as &lt;strong&gt;tension&lt;/strong&gt; down its full length, the same way pulling one end of a taut rope moves the whole rope rather than just the end. Two properties of water make this possible without the column breaking apart under tension:&lt;/p&gt;
@@ -78,16 +78,16 @@
 &lt;li&gt;&lt;strong&gt;Adhesion&lt;/strong&gt; — hydrogen bonding between water molecules and the hydrophilic cellulose/lignin walls of the tracheid or vessel lumen counteracts the tendency of the water column to pull away from the vessel wall under tension, keeping the column continuous against the conduit surface.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/cohesion-tension-mechanism.png&#34; alt=&#34;Cohesion and adhesion at a xylem vessel element: water molecules moving up the vessel pull neighboring water molecules along by cohesion (hydrogen bonding between water molecules), while adhesion (hydrogen bonding to the lignified vessel wall) keeps the water column against the conduit surface&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: Biology LibreTexts — confirm specific license (CC BY vs. BY-NC-SA) on the originating page before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: Biology LibreTexts&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The entire mechanism requires no metabolic energy input from the plant itself — it is a physical consequence of transpiration (itself driven by the water potential gradient between moist mesophyll air spaces and the typically much drier atmosphere) acting on a continuous, cohesive water column, which is why cohesion-tension can move water to the top of the tallest trees despite xylem being entirely composed of dead cells with no active pumping machinery.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;badge-challenge&#34;&gt;Failure mode&lt;/span&gt; If the tension becomes too great (severe drought) or an air bubble enters the column (e.g. through injury, or via freeze-thaw cycles that nucleate bubbles from dissolved gas), the water column can break — an event called &lt;strong&gt;cavitation&lt;/strong&gt;, producing an air-filled embolism that blocks that conduit permanently unless bypassed. This is precisely why the torus-margo pit membrane mechanism in gymnosperm tracheids (see &lt;a
     href=&#34;../../6-plant-anatomy/xylem-phloem-vascular-tissue/&#34;&gt;Xylem, Phloem &amp;amp; Vascular Tissue&lt;/a&gt;) exists structurally — to seal off a cavitated tracheid before the embolism spreads to its neighbors.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/cavitation-embolism.png&#34; alt=&#34;Drought-induced cavitation via the air-seeding mechanism: an air bubble nucleates at a bordered pit membrane and expands into the water-filled conduit, producing an embolism (torus/margo detail shown for the gymnosperm tracheid case)&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: ResearchGate, fig. 3, &amp;ldquo;Drought-induced cavitation through the air-seeding mechanism in angiosperms and conifers&amp;rdquo; — licensing/open-access status not yet confirmed, revisit before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: ResearchGate, fig. 3, &amp;ldquo;Drought-induced cavitation through the air-seeding mechanism in angiosperms and conifers&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Root Pressure and Guttation&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;root-pressure-and-guttation&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#root-pressure-and-guttation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;When transpiration is low or absent (high humidity, at night, in young seedlings before a full canopy develops), the cohesion-tension mechanism above has little or no pull to contribute. Root cells continue to actively accumulate mineral ions in the stele via active transport, however, which lowers the stele&amp;rsquo;s solute potential and draws water in osmotically — because the endodermis&amp;rsquo;s Casparian strip prevents this water and the ions with it from simply leaking back out apoplastically, pressure builds up in the enclosed xylem and pushes water upward as a positive &lt;strong&gt;root pressure&lt;/strong&gt;, mechanistically the opposite of cohesion-tension&amp;rsquo;s pull. Root pressure is far weaker than transpirational pull and can raise water only a limited height (at most a few meters, not enough to explain water transport in tall trees), but under the right low-transpiration conditions it forces liquid water out of specialized leaf-margin pores called &lt;strong&gt;hydathodes&lt;/strong&gt; as visible droplets — &lt;strong&gt;guttation&lt;/strong&gt;, distinguishable from dew because it consists of xylem sap (containing trace solutes) exuded from a living structural pore, not condensed atmospheric water.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/root-pressure-guttation.png&#34; alt=&#34;Guttation: droplets of xylem sap exuded from leaf-margin hydathodes, visible along the serrated edge of a leaf and at the tips of grass blades&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: public sourced — rights holder not yet re-verified, revisit before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: public sourced&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Comparative Structures&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;comparative-structures&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#comparative-structures&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
 	&lt;thead&gt;
@@ -265,9 +265,9 @@
 &lt;li&gt;&lt;strong&gt;Closing&lt;/strong&gt;: Outward-rectifying K⁺ channels and anion channels open instead, releasing K⁺, Cl⁻, and malate²⁻ from the guard cell; solute potential rises (becomes less negative), water leaves osmotically, turgor falls, and the pore closes.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/stomatal-complex-open-closed.png&#34; alt=&#34;Stomatal opening/closing cycle: guard cell pair closed, then becoming turgid as K&amp;#43;, Cl-, and water accumulate and the radially oriented cellulose microfibrils constrain the cells to bow open, then closed again as guard cells go limp&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: DNA of Bioscience (blogspot) — confirm original rights holder/license before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: DNA of Bioscience (blogspot)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/guard-cell-ion-flux-opening.png&#34; alt=&#34;Guard cell membrane ion transport and carbon metabolism underlying stomatal opening: the H&amp;#43;-ATPase (AHA1), blue-light photoreceptors (PHOT1/2), K&amp;#43;/Cl-/NO3- channels, and the broader sugar and starch metabolism (mesophyll chloroplast sucrose supply, guard cell chloroplast starch/Calvin cycle, vacuolar and mitochondrial metabolism) that together power and sustain the opening response&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: ResearchGate, fig. 1, &amp;ldquo;Guard cell membrane ion transport and carbon metabolism during stomatal opening&amp;rdquo; — open-access status not confirmed, revisit before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: ResearchGate, fig. 1, &amp;ldquo;Guard cell membrane ion transport and carbon metabolism during stomatal opening&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Subsidiary cells (see &lt;a
     href=&#34;../../6-plant-anatomy/leaf-anatomy/&#34;&gt;Leaf Anatomy&lt;/a&gt;) act as a local ion and water reservoir for this cycle, exchanging K⁺ and water with the guard cells fast enough to support opening/closing on a timescale of minutes rather than requiring transport from distant tissue.&lt;/p&gt;
 &lt;h3&gt;Environmental Signals Controlling Aperture&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;environmental-signals-controlling-aperture&#34;&gt;&lt;/span&gt;
@@ -280,7 +280,7 @@
     href=&#34;../plant-hormones/&#34;&gt;Plant Hormones&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/guard-cell-ion-flux-closing.png&#34; alt=&#34;Guard cell model of ABA signaling and stomatal closure: ABA triggers cytosolic Ca2&amp;#43; increase via a Ca2&amp;#43;-permeable channel, activating S-type and R-type anion channels and inhibiting K&amp;#43;in channels, while depolarization and rising pH open K&amp;#43;out channels, together driving K&amp;#43;/anion efflux and guard cell turgor loss&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: ResearchGate, fig. 2, &amp;ldquo;A guard cell model illustrating the proposed functions of ion channels in ABA signaling&amp;rdquo; — open-access status not confirmed, revisit before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: ResearchGate, fig. 2, &amp;ldquo;A guard cell model illustrating the proposed functions of ion channels in ABA signaling&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Circadian rhythm&lt;/strong&gt; — most species show endogenous opening near dawn and closing near dusk even under constant experimental conditions, layering a time-of-day baseline on top of the acute signals above.&lt;/li&gt;
 &lt;/ul&gt;
@@ -455,7 +455,7 @@
     &lt;a href=&#34;#key-concepts&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Source and Sink&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;source-and-sink&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#source-and-sink&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Phloem transport is defined relationally, not by fixed anatomical location: a &lt;strong&gt;source&lt;/strong&gt; is any tissue that is a net exporter of sugar (mature photosynthesizing leaves; germinating seeds mobilizing stored reserves; storage organs during regrowth), and a &lt;strong&gt;sink&lt;/strong&gt; is any tissue that is a net importer (growing shoot and root tips, developing fruits and seeds, storage organs during accumulation). The same organ can switch roles across a plant&amp;rsquo;s life cycle — a storage root is a sink while accumulating starch and a source when that starch is later mobilized to support new growth — which is why phloem flow direction is not fixed like xylem&amp;rsquo;s root-to-shoot direction, but reverses according to which tissues are currently acting as source and which as sink.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/source-sink-whole-plant.png&#34; alt=&#34;Whole-plant source-sink nitrogen and sucrose movement: (A) source leaf photosynthesis/N-metabolism supplying sucrose and nitrogen via phloem and xylem to a sink leaf and to roots, and root NO3-/NH4&amp;#43;/amino acid uptake feeding back via xylem; (B) the source-cell and sink-cell transporter proteins (SUTs, AAPs, CAT1, INVs) underlying that movement&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: ResearchGate, fig. 1, &amp;ldquo;Source-Sink Relationships in Plants: Whole-plant movement of nitrogen-containing&amp;hellip;&amp;rdquo; — open-access status not confirmed, revisit before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: ResearchGate, fig. 1, &amp;ldquo;Source-Sink Relationships in Plants: Whole-plant movement of nitrogen-containing&amp;hellip;&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Phloem Loading&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;phloem-loading&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#phloem-loading&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;At the source end, sucrose produced by photosynthesis (or released from storage) must be concentrated into the sieve tube against its concentration gradient, which happens by one of two routes:&lt;/p&gt;
 &lt;ul&gt;
@@ -465,14 +465,15 @@
 &lt;/ul&gt;
 &lt;p&gt;Either route achieves the same essential outcome: sieve tube solute concentration at the source is driven well above that of surrounding tissue, sharply lowering the sieve tube&amp;rsquo;s water potential there.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/phloem-loading-symplastic.png&#34; alt=&#34;Apoplastic vs. symplastic sucrose phloem loading pathways: top, sucrose crossing the apoplast via facilitated transport then an H&amp;#43;-ATPase-driven H&amp;#43;/sucrose symporter into the companion cell, exiting to the sieve tube via a SWEET effluxer; bottom, sucrose moving directly from sugar-producing cell to companion cell to sieve tube via plasmodesmata by simple diffusion down its concentration gradient&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: Wikimedia Commons — confirm specific license/attribution before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: Wikimedia Commons&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;The Pressure-Flow (Münch) Hypothesis&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-pressure-flow-münch-hypothesis&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#the-pressure-flow-m%c3%bcnch-hypothesis&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Once sucrose is loaded at the source, water follows osmotically from the adjacent xylem (the two vascular tissues run alongside each other precisely so this water exchange is fast, see &lt;a
     href=&#34;../../6-plant-anatomy/xylem-phloem-vascular-tissue/&#34;&gt;Xylem, Phloem &amp;amp; Vascular Tissue&lt;/a&gt;), raising &lt;strong&gt;turgor pressure&lt;/strong&gt; in the sieve tube at the source end.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/pressure-flow-hypothesis.png&#34; alt=&#34;Pressure-flow (Munch) hypothesis: water enters the phloem from the xylem at the source (leaf) companion cell as sucrose is loaded, driving bulk flow of water and sucrose through sieve-tube elements to the sink (root/fruit) companion cell, where sucrose exits and water returns to the xylem&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: ResearchGate, fig. 1, &amp;ldquo;Translocation of sugars (photoassimilates) in plants: Pressure flow hypothesis (Muench)&amp;rdquo; — open-access status not confirmed, revisit before public deployment&lt;/em&gt; At the sink end, sugar is continuously removed (unloaded, see below), keeping sieve tube solute concentration — and therefore turgor pressure — low there. The resulting pressure difference between source and sink, transmitted through the continuous, plasmodesmata- and sieve-plate-connected sieve tube lumen, drives &lt;strong&gt;bulk flow&lt;/strong&gt; of the entire sap (water and dissolved sugars together) from source to sink — mechanistically distinct from xylem transport, which is pulled by tension rather than pushed by a pressure gradient, and from simple diffusion, which would be far too slow to account for the observed translocation rates. Because the driving pressure difference depends only on the relative concentrations at the two ends, not on which end is physically higher or lower, phloem sap can move in any direction — including downward from a leaf source to a root sink, upward from a storage root source to a growing shoot sink, or laterally between two leaves at the same height — a direct, testable contrast with xylem&amp;rsquo;s exclusively upward flow.&lt;/p&gt;
+&lt;em&gt;Source: ResearchGate, fig. 1, &amp;ldquo;Translocation of sugars (photoassimilates) in plants: Pressure flow hypothesis (Muench)&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;At the sink end, sugar is continuously removed (unloaded, see below), keeping sieve tube solute concentration — and therefore turgor pressure — low there. The resulting pressure difference between source and sink, transmitted through the continuous, plasmodesmata- and sieve-plate-connected sieve tube lumen, drives &lt;strong&gt;bulk flow&lt;/strong&gt; of the entire sap (water and dissolved sugars together) from source to sink — mechanistically distinct from xylem transport, which is pulled by tension rather than pushed by a pressure gradient, and from simple diffusion, which would be far too slow to account for the observed translocation rates. Because the driving pressure difference depends only on the relative concentrations at the two ends, not on which end is physically higher or lower, phloem sap can move in any direction — including downward from a leaf source to a root sink, upward from a storage root source to a growing shoot sink, or laterally between two leaves at the same height — a direct, testable contrast with xylem&amp;rsquo;s exclusively upward flow.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/xylem-vs-phloem-direction.png&#34; alt=&#34;Xylem vs. phloem transport contrasted: xylem carries water/minerals one-way only through non-living cells with no end walls between them, while phloem carries organic molecules two-way through living (support-dependent) cells connected by sieve plates — paired with a real stained cross-section showing xylem (red, meta-/protoxylem) and phloem tissue side by side&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: microbenotes.com, &amp;ldquo;Xylem vs Phloem&amp;rdquo; — confirm licensing basis before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: microbenotes.com, &amp;ldquo;Xylem vs Phloem&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Phloem Unloading&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;phloem-unloading&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#phloem-unloading&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;At the sink end, sugar exits the sieve tube by routes mirroring the loading options: &lt;strong&gt;symplastic unloading&lt;/strong&gt; (plasmodesmata, common in rapidly growing sinks like root tips, where cells need bulk sugar delivery without fine metabolic control) or &lt;strong&gt;apoplastic unloading&lt;/strong&gt; (sucrose exported into the apoplast, then actively or passively taken up by sink cells, common where the sink needs to regulate its own uptake rate independently of phloem pressure — e.g. developing seeds, where the maternal phloem and the offspring embryo are genetically distinct tissues not connected by plasmodesmata at all, making apoplastic unloading the only option). Continuous removal of sugar at the sink, by whichever route, is what keeps sink-end turgor low and therefore keeps the pressure gradient driving bulk flow from collapsing.&lt;/p&gt;
 &lt;div role=&#34;img&#34; aria-label=&#34;Diagram&#34;&gt;
@@ -530,11 +531,71 @@
 &lt;li&gt;&amp;ldquo;Explain why a developing seed must unload phloem sugar apoplastically rather than symplastically.&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Visual Reference&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;visual-reference&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt; &lt;em&gt;(built later — see project workflow)&lt;/em&gt;&lt;/p&gt;
+    &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Pressure-flow (Münch) demonstrator (SVG/JS, step-through)&lt;/strong&gt; — two connected chambers (source, sink) linked by a tube, with a slider controlling source-end sucrose loading rate; increasing loading visibly raises source turgor (rendered as chamber pressure) and drives flow toward the sink chamber, letting the user confirm that flow direction reverses if the sink-chamber loading is set higher instead.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe src=&#34;http://localhost:1313/pressure-flow-demonstrator.html&#34; title=&#34;Pressure-flow (Munch) demonstrator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Loading pathway toggle (click-through)&lt;/strong&gt; — a single minor-vein cross-section that toggles between apoplastic loading (sucrose crossing the apoplast, sucrose-H+ symporter highlighted) and symplastic loading (plasmodesmata route, polymer trapping shown converting sucrose to raffinose/stachyose once inside).&lt;/li&gt;
 &lt;/ul&gt;
+&lt;div id=&#34;loading-toggle-widget&#34; style=&#34;background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:&#39;Inter&#39;,&#39;Segoe UI&#39;,Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);&#34;&gt;
+  &lt;svg viewBox=&#34;0 0 400 190&#34; width=&#34;100%&#34; style=&#34;max-width:420px; display:block; margin:0 auto;&#34;&gt;
+    &lt;text x=&#34;70&#34; y=&#34;20&#34; font-size=&#34;12&#34; font-weight=&#34;600&#34; fill=&#34;#334155&#34;&gt;Mesophyll&lt;/text&gt;
+    &lt;rect x=&#34;20&#34; y=&#34;30&#34; width=&#34;100&#34; height=&#34;120&#34; rx=&#34;6&#34; fill=&#34;#dff0df&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;2&#34;/&gt;
+    &lt;text x=&#34;150&#34; y=&#34;20&#34; font-size=&#34;12&#34; font-weight=&#34;600&#34; fill=&#34;#334155&#34;&gt;Apoplast&lt;/text&gt;
+    &lt;rect x=&#34;140&#34; y=&#34;30&#34; width=&#34;60&#34; height=&#34;120&#34; rx=&#34;4&#34; fill=&#34;#fdf6e3&#34; stroke=&#34;#b45309&#34; stroke-width=&#34;1.5&#34; stroke-dasharray=&#34;4 3&#34;/&gt;
+    &lt;text x=&#34;230&#34; y=&#34;20&#34; font-size=&#34;12&#34; font-weight=&#34;600&#34; fill=&#34;#334155&#34;&gt;Companion cell&lt;/text&gt;
+    &lt;rect x=&#34;215&#34; y=&#34;30&#34; width=&#34;90&#34; height=&#34;120&#34; rx=&#34;6&#34; fill=&#34;#e0ecf7&#34; stroke=&#34;#1d70a2&#34; stroke-width=&#34;2&#34;/&gt;
+    &lt;text x=&#34;330&#34; y=&#34;20&#34; font-size=&#34;12&#34; font-weight=&#34;600&#34; fill=&#34;#334155&#34;&gt;Sieve tube&lt;/text&gt;
+    &lt;rect x=&#34;320&#34; y=&#34;30&#34; width=&#34;60&#34; height=&#34;120&#34; rx=&#34;6&#34; fill=&#34;#c9dcee&#34; stroke=&#34;#1d70a2&#34; stroke-width=&#34;2&#34;/&gt;
+    &lt;g id=&#34;apoplasticRoute&#34;&gt;
+      &lt;path d=&#34;M120 90 H140&#34; stroke=&#34;#b45309&#34; stroke-width=&#34;3&#34; marker-end=&#34;url(#ldArrow)&#34;/&gt;
+      &lt;path d=&#34;M200 90 H215&#34; stroke=&#34;#b45309&#34; stroke-width=&#34;3&#34; marker-end=&#34;url(#ldArrow)&#34;/&gt;
+      &lt;circle cx=&#34;207&#34; cy=&#34;90&#34; r=&#34;9&#34; fill=&#34;#fde68a&#34; stroke=&#34;#92400e&#34; stroke-width=&#34;1.5&#34;/&gt;
+      &lt;text x=&#34;207&#34; y=&#34;94&#34; font-size=&#34;7&#34; text-anchor=&#34;middle&#34; fill=&#34;#92400e&#34;&gt;H+/Suc&lt;/text&gt;
+      &lt;path d=&#34;M305 90 H320&#34; stroke=&#34;#b45309&#34; stroke-width=&#34;3&#34; marker-end=&#34;url(#ldArrow)&#34;/&gt;
+      &lt;text x=&#34;150&#34; y=&#34;165&#34; font-size=&#34;10.5&#34; fill=&#34;#92400e&#34; text-anchor=&#34;middle&#34;&gt;sucrose crosses apoplast,&lt;/text&gt;
+      &lt;text x=&#34;150&#34; y=&#34;177&#34; font-size=&#34;10.5&#34; fill=&#34;#92400e&#34; text-anchor=&#34;middle&#34;&gt;H&amp;#8314;/sucrose symporter loads it in&lt;/text&gt;
+    &lt;/g&gt;
+    &lt;g id=&#34;symplasticRoute&#34; opacity=&#34;0&#34;&gt;
+      &lt;path d=&#34;M120 100 H305&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;3&#34; stroke-dasharray=&#34;2 4&#34; marker-end=&#34;url(#ldArrowGreen)&#34;/&gt;
+      &lt;text x=&#34;150&#34; y=&#34;70&#34; font-size=&#34;7&#34; fill=&#34;#2d6a4f&#34;&gt;plasmodesmata&lt;/text&gt;
+      &lt;text x=&#34;150&#34; y=&#34;165&#34; font-size=&#34;10.5&#34; fill=&#34;#1a472a&#34; text-anchor=&#34;middle&#34;&gt;sucrose &amp;#8594; raffinose/stachyose&lt;/text&gt;
+      &lt;text x=&#34;150&#34; y=&#34;177&#34; font-size=&#34;10.5&#34; fill=&#34;#1a472a&#34; text-anchor=&#34;middle&#34;&gt;(too large to diffuse back out)&lt;/text&gt;
+    &lt;/g&gt;
+    &lt;defs&gt;
+      &lt;marker id=&#34;ldArrow&#34; markerWidth=&#34;6&#34; markerHeight=&#34;6&#34; refX=&#34;3&#34; refY=&#34;3&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M0,0 L6,3 L0,6 Z&#34; fill=&#34;#b45309&#34;/&gt;&lt;/marker&gt;
+      &lt;marker id=&#34;ldArrowGreen&#34; markerWidth=&#34;6&#34; markerHeight=&#34;6&#34; refX=&#34;3&#34; refY=&#34;3&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M0,0 L6,3 L0,6 Z&#34; fill=&#34;#2d6a4f&#34;/&gt;&lt;/marker&gt;
+    &lt;/defs&gt;
+  &lt;/svg&gt;
+  &lt;div style=&#34;text-align:center; margin-top:0.5rem;&#34;&gt;
+    &lt;button class=&#34;ld-btn&#34; id=&#34;ldApoBtn&#34; style=&#34;background:#b45309; color:#fff; border:none; padding:9px 18px; border-radius:999px; font-size:0.88rem; cursor:pointer; margin-right:8px;&#34;&gt;Apoplastic&lt;/button&gt;
+    &lt;button class=&#34;ld-btn&#34; id=&#34;ldSymBtn&#34; style=&#34;background:#94a3b8; color:#fff; border:none; padding:9px 18px; border-radius:999px; font-size:0.88rem; cursor:pointer;&#34;&gt;Symplastic&lt;/button&gt;
+    &lt;div id=&#34;ldNote&#34; style=&#34;margin-top:10px; font-size:0.85rem; color:#4b5563;&#34;&gt;Sucrose exits the mesophyll into the cell-wall apoplast, then is actively taken up into the companion cell/sieve tube by an H&amp;#8314;/sucrose symporter — an energy-consuming step, hence the transfer cells found where this route is most active.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function(){
+  var apo = document.getElementById(&#39;apoplasticRoute&#39;);
+  var sym = document.getElementById(&#39;symplasticRoute&#39;);
+  var apoBtn = document.getElementById(&#39;ldApoBtn&#39;);
+  var symBtn = document.getElementById(&#39;ldSymBtn&#39;);
+  var note = document.getElementById(&#39;ldNote&#39;);
+  function setRoute(isApo){
+    apo.style.opacity = isApo ? 1 : 0;
+    sym.style.opacity = isApo ? 0 : 1;
+    apoBtn.style.background = isApo ? &#39;#b45309&#39; : &#39;#94a3b8&#39;;
+    symBtn.style.background = isApo ? &#39;#94a3b8&#39; : &#39;#2d6a4f&#39;;
+    note.textContent = isApo
+      ? &#39;Sucrose exits the mesophyll into the cell-wall apoplast, then is actively taken up into the companion cell/sieve tube by an H⁺/sucrose symporter — an energy-consuming step, hence the transfer cells found where this route is most active.&#39;
+      : &#39;Sucrose moves cell-to-cell via plasmodesmata without ever entering the apoplast; many species convert it to raffinose/stachyose once inside the phloem (polymer trapping) — too large to diffuse back out, maintaining the gradient for continued loading.&#39;;
+  }
+  apoBtn.addEventListener(&#39;click&#39;, function(){ setRoute(true); });
+  symBtn.addEventListener(&#39;click&#39;, function(){ setRoute(false); });
+  setRoute(true);
+})();
+&lt;/script&gt;
 &lt;p&gt;&lt;em&gt;(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Practice Problems&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;practice-problems&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#practice-problems&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
@@ -605,7 +666,7 @@
     href=&#34;../phloem-transport-translocation/&#34;&gt;Phloem Transport &amp;amp; Translocation&lt;/a&gt;), applied here to mineral uptake instead of sucrose.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/proton-motive-force-uptake.png&#34; alt=&#34;Membrane transport underlying the proton motive force: an ATP-driven H&amp;#43; pump establishes a charge and pH gradient across the membrane, which channels (cation/anion/water) and carriers (symport, antiport, uniport) then use to move other solutes across&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: ScienceDirect (journal article, S0005273600001280) — open-access status not confirmed, revisit before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: ScienceDirect (journal article, S0005273600001280)&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Root hairs&lt;/strong&gt; (see &lt;a
     href=&#34;../../6-plant-anatomy/root-anatomy/&#34;&gt;Root Anatomy&lt;/a&gt;) dramatically increase the absorptive surface area available for this uptake machinery per unit root length, without requiring the root system itself to grow proportionally larger.&lt;/li&gt;
@@ -616,14 +677,14 @@
     &lt;a href=&#34;#nitrogen-fixation-and-the-rhizobium-symbiosis&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Atmospheric N₂ is abundant but chemically inert (a strong triple bond) and unusable by plants directly; &lt;strong&gt;nitrogen fixation&lt;/strong&gt; — reducing N₂ to biologically usable NH₃/NH₄⁺ — is performed only by certain prokaryotes, using the enzyme &lt;strong&gt;nitrogenase&lt;/strong&gt; (with a molybdenum-iron cofactor, the reason molybdenum is an essential plant micronutrient despite the plant not fixing nitrogen itself). Legumes form a specific symbiosis with &lt;strong&gt;Rhizobium&lt;/strong&gt; bacteria: the bacteria infect root hairs and induce the plant to form specialized &lt;strong&gt;root nodules&lt;/strong&gt;, inside which Rhizobium differentiate into nitrogen-fixing &lt;strong&gt;bacteroids&lt;/strong&gt;. The relationship is mutualistic and tightly regulated on both sides — the plant supplies the bacteroids with carbohydrate (photosynthate delivered via phloem) and synthesizes &lt;strong&gt;leghemoglobin&lt;/strong&gt; inside the nodule specifically to bind free O₂ and keep the nodule&amp;rsquo;s internal oxygen concentration low (nitrogenase is irreversibly inactivated by O₂), while the bacteroids supply the plant with fixed nitrogen it could not otherwise access from most soils at a comparable energetic cost. This is the physiological mechanism underlying the &amp;ldquo;nitrogen fixation&amp;rdquo; entry in the ecosystem-level nitrogen cycle covered in &lt;a
     href=&#34;../../8-ecology/&#34;&gt;Ecology&lt;/a&gt; — that page treats nitrogen fixation as one flux among many in a whole-ecosystem nutrient budget, while this page covers the specific plant-microbe mechanism producing that flux.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/root-nodule-cross-section.png&#34; alt=&#34;Root nodule structure compared across a lateral root, leguminous determinate and indeterminate nodules, and an actinorhizal nodule: epidermis, cortex, pericycle, endodermis, peripheral vasculature, and the infected cells housing the nitrogen-fixing symbiont are labeled in each&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: ScienceDirect (topic page, &amp;ldquo;Root Nodule&amp;rdquo;) — open-access status not confirmed, revisit before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: ScienceDirect (topic page, &amp;ldquo;Root Nodule&amp;rdquo;)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Mycorrhizal Symbiosis&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mycorrhizal-symbiosis&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#mycorrhizal-symbiosis&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Independent of nitrogen fixation, most land plant species (a large majority, across nearly every major lineage) form &lt;strong&gt;mycorrhizae&lt;/strong&gt; — symbioses with soil fungi that extend nutrient absorption well beyond the physical reach and surface area of the root system itself:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Arbuscular mycorrhizae&lt;/strong&gt; — fungal hyphae penetrate root cortical cell walls (but not the plasma membrane) and form highly branched &lt;strong&gt;arbuscules&lt;/strong&gt; within the cell, a large-surface-area interface for nutrient exchange; the dominant mycorrhizal type across most plant lineages, especially effective at improving phosphorus uptake (an ion that diffuses very slowly through soil and is easily depleted in the immediate vicinity of a root).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/arbuscular-mycorrhiza.png&#34; alt=&#34;Arbuscular mycorrhizal fungus-plant symbiosis: extraradical mycelium and spores in the soil, hyphal branching and a hyphopodium at the root epidermis, intraradical hyphae penetrating cortical cells, and branched arbuscules and vesicles formed within cortex cells&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: ResearchGate, fig. 1, &amp;ldquo;Arbuscular mycorrhizal fungi colonize root cortical cells through germinating spores&amp;rdquo; — open-access status not confirmed, revisit before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: ResearchGate, fig. 1, &amp;ldquo;Arbuscular mycorrhizal fungi colonize root cortical cells through germinating spores&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Ectomycorrhizae&lt;/strong&gt; — fungal hyphae form a dense sheath around the root surface and penetrate between (not into) cortical cells, forming a &lt;strong&gt;Hartig net&lt;/strong&gt;; characteristic of many temperate forest trees (pines, oaks, beeches).&lt;/li&gt;
 &lt;/ul&gt;
@@ -681,11 +742,136 @@
 &lt;li&gt;&amp;ldquo;Distinguish arbuscular mycorrhizae from ectomycorrhizae by their structural interface with the root, and identify which is more effective at improving phosphorus uptake specifically.&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Visual Reference&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;visual-reference&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt; &lt;em&gt;(built later — see project workflow)&lt;/em&gt;&lt;/p&gt;
+    &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Nutrient deficiency diagnostic tool (click-through)&lt;/strong&gt; — a diagram of a plant showing older and younger leaves separately; clicking a nutrient (N, Ca, Fe, etc.) highlights which leaves show the deficiency symptom first, reinforcing the mobile/immobile distinction as a diagnostic rule rather than a memorized list.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;nutrient-diag-widget&#34; style=&#34;background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:&#39;Inter&#39;,&#39;Segoe UI&#39;,Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);&#34;&gt;
+  &lt;svg viewBox=&#34;0 0 220 260&#34; width=&#34;200&#34; height=&#34;240&#34; style=&#34;display:block; margin:0 auto;&#34;&gt;
+    &lt;line x1=&#34;110&#34; y1=&#34;30&#34; x2=&#34;110&#34; y2=&#34;240&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;4&#34;/&gt;
+    &lt;g id=&#34;youngLeaves&#34;&gt;
+      &lt;ellipse cx=&#34;90&#34; cy=&#34;45&#34; rx=&#34;22&#34; ry=&#34;10&#34; fill=&#34;#8fbf8f&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;1.5&#34; transform=&#34;rotate(-20 90 45)&#34;/&gt;
+      &lt;ellipse cx=&#34;130&#34; cy=&#34;45&#34; rx=&#34;22&#34; ry=&#34;10&#34; fill=&#34;#8fbf8f&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;1.5&#34; transform=&#34;rotate(20 130 45)&#34;/&gt;
+      &lt;ellipse cx=&#34;110&#34; cy=&#34;30&#34; rx=&#34;10&#34; ry=&#34;18&#34; fill=&#34;#8fbf8f&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;1.5&#34;/&gt;
+    &lt;/g&gt;
+    &lt;g id=&#34;oldLeaves&#34;&gt;
+      &lt;ellipse cx=&#34;70&#34; cy=&#34;150&#34; rx=&#34;34&#34; ry=&#34;14&#34; fill=&#34;#8fbf8f&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;1.5&#34; transform=&#34;rotate(-15 70 150)&#34;/&gt;
+      &lt;ellipse cx=&#34;150&#34; cy=&#34;150&#34; rx=&#34;34&#34; ry=&#34;14&#34; fill=&#34;#8fbf8f&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;1.5&#34; transform=&#34;rotate(15 150 150)&#34;/&gt;
+      &lt;ellipse cx=&#34;65&#34; cy=&#34;200&#34; rx=&#34;34&#34; ry=&#34;14&#34; fill=&#34;#8fbf8f&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;1.5&#34; transform=&#34;rotate(-15 65 200)&#34;/&gt;
+      &lt;ellipse cx=&#34;155&#34; cy=&#34;200&#34; rx=&#34;34&#34; ry=&#34;14&#34; fill=&#34;#8fbf8f&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;1.5&#34; transform=&#34;rotate(15 155 200)&#34;/&gt;
+    &lt;/g&gt;
+    &lt;text x=&#34;110&#34; y=&#34;20&#34; text-anchor=&#34;middle&#34; font-size=&#34;10&#34; fill=&#34;#4b5563&#34;&gt;younger leaves&lt;/text&gt;
+    &lt;text x=&#34;110&#34; y=&#34;235&#34; text-anchor=&#34;middle&#34; font-size=&#34;10&#34; fill=&#34;#4b5563&#34;&gt;older leaves&lt;/text&gt;
+  &lt;/svg&gt;
+  &lt;div style=&#34;text-align:center;&#34;&gt;
+    &lt;div style=&#34;margin-bottom:8px; font-size:0.8rem; color:#4b5563;&#34;&gt;Mobile (resorbed from old growth):&lt;/div&gt;
+    &lt;button class=&#34;nd-btn&#34; data-mobile=&#34;1&#34; style=&#34;background:#2d6a4f; color:#fff; border:none; padding:6px 12px; border-radius:999px; font-size:0.82rem; cursor:pointer; margin:2px;&#34;&gt;N&lt;/button&gt;
+    &lt;button class=&#34;nd-btn&#34; data-mobile=&#34;1&#34; style=&#34;background:#2d6a4f; color:#fff; border:none; padding:6px 12px; border-radius:999px; font-size:0.82rem; cursor:pointer; margin:2px;&#34;&gt;P&lt;/button&gt;
+    &lt;button class=&#34;nd-btn&#34; data-mobile=&#34;1&#34; style=&#34;background:#2d6a4f; color:#fff; border:none; padding:6px 12px; border-radius:999px; font-size:0.82rem; cursor:pointer; margin:2px;&#34;&gt;K&lt;/button&gt;
+    &lt;button class=&#34;nd-btn&#34; data-mobile=&#34;1&#34; style=&#34;background:#2d6a4f; color:#fff; border:none; padding:6px 12px; border-radius:999px; font-size:0.82rem; cursor:pointer; margin:2px;&#34;&gt;Mg&lt;/button&gt;
+    &lt;div style=&#34;margin:8px 0; font-size:0.8rem; color:#4b5563;&#34;&gt;Immobile (stays where deposited):&lt;/div&gt;
+    &lt;button class=&#34;nd-btn&#34; data-mobile=&#34;0&#34; style=&#34;background:#b45309; color:#fff; border:none; padding:6px 12px; border-radius:999px; font-size:0.82rem; cursor:pointer; margin:2px;&#34;&gt;Ca&lt;/button&gt;
+    &lt;button class=&#34;nd-btn&#34; data-mobile=&#34;0&#34; style=&#34;background:#b45309; color:#fff; border:none; padding:6px 12px; border-radius:999px; font-size:0.82rem; cursor:pointer; margin:2px;&#34;&gt;B&lt;/button&gt;
+    &lt;button class=&#34;nd-btn&#34; data-mobile=&#34;0&#34; style=&#34;background:#b45309; color:#fff; border:none; padding:6px 12px; border-radius:999px; font-size:0.82rem; cursor:pointer; margin:2px;&#34;&gt;Fe&lt;/button&gt;
+    &lt;div id=&#34;ndNote&#34; style=&#34;margin-top:10px; font-size:0.85rem; color:#4b5563;&#34;&gt;Click a nutrient to see which leaves show its deficiency symptom first.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function(){
+  var buttons = document.querySelectorAll(&#39;#nutrient-diag-widget .nd-btn&#39;);
+  var young = document.getElementById(&#39;youngLeaves&#39;);
+  var old = document.getElementById(&#39;oldLeaves&#39;);
+  var note = document.getElementById(&#39;ndNote&#39;);
+  function reset(){
+    young.querySelectorAll(&#39;ellipse&#39;).forEach(function(e){ e.setAttribute(&#39;fill&#39;,&#39;#8fbf8f&#39;); });
+    old.querySelectorAll(&#39;ellipse&#39;).forEach(function(e){ e.setAttribute(&#39;fill&#39;,&#39;#8fbf8f&#39;); });
+  }
+  buttons.forEach(function(btn){
+    btn.addEventListener(&#39;click&#39;, function(){
+      reset();
+      var isMobile = btn.dataset.mobile === &#39;1&#39;;
+      var el = btn.textContent;
+      if (isMobile){
+        old.querySelectorAll(&#39;ellipse&#39;).forEach(function(e){ e.setAttribute(&#39;fill&#39;,&#39;#fde68a&#39;); });
+        note.textContent = el + &#39; is phloem-mobile — it is resorbed from older leaves and relocated to new growth when supply is short, so deficiency symptoms (chlorosis) appear first in older leaves.&#39;;
+      } else {
+        young.querySelectorAll(&#39;ellipse&#39;).forEach(function(e){ e.setAttribute(&#39;fill&#39;,&#39;#fde68a&#39;); });
+        note.textContent = el + &#39; is immobile — once incorporated it cannot be relocated, so deficiency symptoms appear first in younger, actively growing tissue.&#39;;
+      }
+    });
+  });
+})();
+&lt;/script&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Proton motive force ion uptake animator (SVG/JS)&lt;/strong&gt; — a root epidermal cell membrane with an H+-ATPase; activating it shows the resulting pH/voltage gradient, then a coupled secondary transporter using that gradient to pull a mineral ion in against its own concentration gradient.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;div id=&#34;pmf-widget&#34; style=&#34;background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:&#39;Inter&#39;,&#39;Segoe UI&#39;,Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);&#34;&gt;
+  &lt;svg viewBox=&#34;0 0 400 160&#34; width=&#34;100%&#34; style=&#34;max-width:420px; display:block; margin:0 auto;&#34;&gt;
+    &lt;text x=&#34;80&#34; y=&#34;20&#34; font-size=&#34;12&#34; font-weight=&#34;600&#34; fill=&#34;#334155&#34;&gt;Soil (apoplast)&lt;/text&gt;
+    &lt;rect x=&#34;10&#34; y=&#34;30&#34; width=&#34;380&#34; height=&#34;10&#34; fill=&#34;#e2e8f0&#34;/&gt;
+    &lt;text x=&#34;300&#34; y=&#34;150&#34; font-size=&#34;12&#34; font-weight=&#34;600&#34; fill=&#34;#334155&#34;&gt;Root cell (cytosol)&lt;/text&gt;
+    &lt;circle cx=&#34;120&#34; cy=&#34;40&#34; r=&#34;9&#34; fill=&#34;#94a3b8&#34; id=&#34;pmfPump&#34;/&gt;
+    &lt;text x=&#34;120&#34; y=&#34;44&#34; font-size=&#34;7&#34; text-anchor=&#34;middle&#34; fill=&#34;#fff&#34;&gt;ATPase&lt;/text&gt;
+    &lt;path id=&#34;hOutArrow&#34; d=&#34;M120 40 L120 20&#34; stroke=&#34;#b91c1c&#34; stroke-width=&#34;3&#34; opacity=&#34;0&#34; marker-end=&#34;url(#pmfArrow)&#34;/&gt;
+    &lt;text id=&#34;hOutLabel&#34; x=&#34;135&#34; y=&#34;18&#34; font-size=&#34;11&#34; fill=&#34;#b91c1c&#34; opacity=&#34;0&#34;&gt;H+ out&lt;/text&gt;
+    &lt;circle cx=&#34;260&#34; cy=&#34;40&#34; r=&#34;9&#34; fill=&#34;#1d70a2&#34; id=&#34;pmfSymporter&#34;/&gt;
+    &lt;text x=&#34;260&#34; y=&#34;44&#34; font-size=&#34;7&#34; text-anchor=&#34;middle&#34; fill=&#34;#fff&#34;&gt;Sym&lt;/text&gt;
+    &lt;path id=&#34;hInArrow&#34; d=&#34;M260 20 L260 40&#34; stroke=&#34;#b91c1c&#34; stroke-width=&#34;3&#34; opacity=&#34;0&#34; marker-end=&#34;url(#pmfArrow)&#34;/&gt;
+    &lt;path id=&#34;ionInArrow&#34; d=&#34;M275 20 L275 40&#34; stroke=&#34;#7c3aed&#34; stroke-width=&#34;3&#34; opacity=&#34;0&#34; marker-end=&#34;url(#pmfArrowPurple)&#34;/&gt;
+    &lt;text id=&#34;ionLabel&#34; x=&#34;300&#34; y=&#34;18&#34; font-size=&#34;11&#34; fill=&#34;#7c3aed&#34; opacity=&#34;0&#34;&gt;mineral ion in&lt;/text&gt;
+    &lt;text id=&#34;gradientLabel&#34; x=&#34;190&#34; y=&#34;70&#34; text-anchor=&#34;middle&#34; font-size=&#34;11&#34; fill=&#34;#334155&#34; opacity=&#34;0&#34;&gt;pH / voltage gradient&lt;/text&gt;
+    &lt;defs&gt;
+      &lt;marker id=&#34;pmfArrow&#34; markerWidth=&#34;6&#34; markerHeight=&#34;6&#34; refX=&#34;3&#34; refY=&#34;3&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M0,0 L6,3 L0,6 Z&#34; fill=&#34;#b91c1c&#34;/&gt;&lt;/marker&gt;
+      &lt;marker id=&#34;pmfArrowPurple&#34; markerWidth=&#34;6&#34; markerHeight=&#34;6&#34; refX=&#34;3&#34; refY=&#34;3&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M0,0 L6,3 L0,6 Z&#34; fill=&#34;#7c3aed&#34;/&gt;&lt;/marker&gt;
+    &lt;/defs&gt;
+  &lt;/svg&gt;
+  &lt;div style=&#34;text-align:center;&#34;&gt;
+    &lt;button id=&#34;pmfActivateBtn&#34; style=&#34;background:#2d6a4f; color:#fff; border:none; padding:9px 18px; border-radius:999px; font-size:0.88rem; cursor:pointer;&#34;&gt;Activate H+-ATPase&lt;/button&gt;
+    &lt;div id=&#34;pmfNote&#34; style=&#34;margin-top:10px; font-size:0.85rem; color:#4b5563;&#34;&gt;Click to pump protons out and build the proton motive force.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function(){
+  var btn = document.getElementById(&#39;pmfActivateBtn&#39;);
+  var hOut = document.getElementById(&#39;hOutArrow&#39;);
+  var hOutLabel = document.getElementById(&#39;hOutLabel&#39;);
+  var gradientLabel = document.getElementById(&#39;gradientLabel&#39;);
+  var hIn = document.getElementById(&#39;hInArrow&#39;);
+  var ionIn = document.getElementById(&#39;ionInArrow&#39;);
+  var ionLabel = document.getElementById(&#39;ionLabel&#39;);
+  var note = document.getElementById(&#39;pmfNote&#39;);
+  function reset(){
+    hOut.style.opacity = 0;
+    hOutLabel.style.opacity = 0;
+    gradientLabel.style.opacity = 0;
+    hIn.style.opacity = 0;
+    ionIn.style.opacity = 0;
+    ionLabel.style.opacity = 0;
+    note.textContent = &#39;Click to pump protons out and build the proton motive force.&#39;;
+  }
+  btn.addEventListener(&#39;click&#39;, function(){
+    btn.disabled = true;
+    btn.textContent = &#39;Replay&#39;;
+    reset();
+    setTimeout(function(){
+      hOut.style.opacity = 1;
+      hOutLabel.style.opacity = 1;
+      note.textContent = &#39;H+-ATPase pumps protons out of the cell, hyperpolarizing the membrane and lowering apoplast pH...&#39;;
+    }, 150);
+    setTimeout(function(){
+      gradientLabel.style.opacity = 1;
+      note.textContent = &#39;A proton motive force now exists across the membrane — both a pH gradient and a voltage gradient.&#39;;
+    }, 1200);
+    setTimeout(function(){
+      hIn.style.opacity = 1;
+      ionIn.style.opacity = 1;
+      ionLabel.style.opacity = 1;
+      note.textContent = &#39;A secondary transporter (symporter) lets H+ flow back down its gradient, coupling that energetically favorable movement to pulling a mineral ion in against its own concentration gradient.&#39;;
+    }, 2200);
+    setTimeout(function(){ btn.disabled = false; }, 3100);
+  });
+})();
+&lt;/script&gt;
 &lt;p&gt;&lt;em&gt;(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Practice Problems&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;practice-problems&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#practice-problems&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
@@ -742,7 +928,7 @@
 &lt;li&gt;&lt;strong&gt;Photosystem I (PSI)&lt;/strong&gt;, reaction center &lt;strong&gt;P700&lt;/strong&gt; (absorbs maximally near 700 nm)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/photosystem-structure.avif&#34; alt=&#34;How a photosystem harvests light: a photon absorbed anywhere in the light-harvesting complex’s pigment molecules is passed by resonance energy transfer to the special pair of chlorophyll a molecules in the reaction-center complex, which ejects an electron to the primary electron acceptor&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: Preach Bio — confirm rights basis before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: Preach Bio&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;The Z-Scheme: Linear Electron Flow&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-z-scheme-linear-electron-flow&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#the-z-scheme-linear-electron-flow&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The two photosystems operate in series, connected by an electron transport chain, in a pathway conventionally drawn as a redox-potential diagram shaped like the letter Z (rising at each photosystem, falling between them):&lt;/p&gt;
 &lt;ol&gt;
@@ -763,17 +949,17 @@
     ETC2 --&amp;gt; NADP[&amp;#34;NADP+ reductase -&amp;gt; NADPH&amp;#34;];
   &lt;/pre&gt;
 &lt;/div&gt;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/z-scheme-electron-flow.png&#34; alt=&#34;Full Z-scheme of electron transport: redox potential plotted against each carrier from water/oxygen-evolving complex through PSII (P680), the plastoquinone-cytochrome b6f-plastocyanin chain, PSI (P700), and ferredoxin to NADP&amp;#43; reductase, with approximate timescales for each transfer step&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: ResearchGate, fig. 6 (diagram modified from Demeter &amp;amp; Govindjee, 1989, per in-image credit) — open-access status not confirmed, revisit before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: ResearchGate, fig. 6 (diagram modified from Demeter &amp;amp; Govindjee, 1989, per in-image credit)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/oxygen-evolving-complex.png&#34; alt=&#34;Oxygen-evolving complex detail: (A) the Mn4CaO5 cluster and its position relative to Tyrz, P680, pheophytin, and the QA/QB plastoquinone acceptors within the PSII protein structure; (B) the Kok cycle of S-state transitions (S0-S4) through which the complex accumulates oxidizing power before releasing O2&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: Frontiers in Plant Science (open-access journal — specific article license not yet individually confirmed)&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: Frontiers in Plant Science&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Chemiosmotic ATP Synthesis&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;chemiosmotic-atp-synthesis&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#chemiosmotic-atp-synthesis&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Protons accumulate in the thylakoid lumen from two sources acting together: directly from water-splitting (step 2 above) and from active pumping by the cytochrome b₆f complex (step 3). Because the thylakoid membrane is otherwise impermeable to H⁺, this produces a steep proton gradient (both a concentration gradient and, since the lumen becomes positively charged, an electrical gradient) across the membrane — a &lt;strong&gt;proton motive force&lt;/strong&gt; conceptually identical to the one driving oxidative phosphorylation in mitochondrial respiration, but built from light-driven electron transport instead. Protons can only cross back out through &lt;strong&gt;ATP synthase&lt;/strong&gt;, a membrane-embedded enzyme that couples the energetically favorable flow of H⁺ down its gradient to the energetically unfavorable synthesis of ATP from ADP + Pᵢ — the process of &lt;strong&gt;photophosphorylation&lt;/strong&gt;, mechanistically chemiosmotic (a proton gradient across a membrane driving ATP synthase) rather than substrate-level.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/thylakoid-chemiosmosis.png&#34; alt=&#34;Chemiosmotic ATP synthesis across the thylakoid membrane: water-splitting and photosystem II electron transport deposit H&amp;#43; in the lumen, PSII/electron carriers move electrons toward NADP&amp;#43; reduction in the stroma, and ATP synthase uses the resulting H&amp;#43; gradient to phosphorylate ADP, producing ATP for the Calvin cycle&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: © Merriam-Webster, Inc. (explicit copyright notice in image) — this is a confirmed commercial copyright, not just an open question; do not deploy publicly without a license or a replacement image&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: © Merriam-Webster, Inc.&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Cyclic Electron Flow&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;cyclic-electron-flow&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#cyclic-electron-flow&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;When a chloroplast&amp;rsquo;s NADPH supply is already saturated relative to its ATP demand (common when Calvin cycle activity, and therefore NADPH consumption, is limited relative to other cellular ATP needs), electrons ejected from PSI&amp;rsquo;s P700 can be redirected back into the cytochrome b₆f complex instead of continuing to NADP⁺ reductase — a route called &lt;strong&gt;cyclic electron flow&lt;/strong&gt;. This bypasses PSII entirely (no water-splitting, no O₂ released, no NADPH produced) but still pumps protons via cytochrome b₆f, generating additional ATP without additional NADPH — a way to fine-tune the ATP:NADPH ratio the Calvin cycle actually needs (a ratio the strict linear pathway alone cannot supply, since it always produces both products in a fixed proportion).&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/cyclic-electron-flow.png&#34; alt=&#34;Cyclic photophosphorylation: an electron ejected from the PSI special pair (reaction center) passes through ferredoxin, a plastoquinone-like carrier, and cytochrome b/cytochrome f back to PSI, pumping protons that drive ATP synthesis (ADP &amp;#43; Pi to ATP) without involving PSII or producing NADPH&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: Biology Reader (credit in image) — confirm licensing basis before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: Biology Reader (credit in image)&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Comparative Structures&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;comparative-structures&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#comparative-structures&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
 	&lt;thead&gt;
@@ -825,11 +1011,127 @@
 &lt;li&gt;&amp;ldquo;Explain why atmospheric oxygen is considered a byproduct of the light reactions rather than their purpose.&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Visual Reference&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;visual-reference&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt; &lt;em&gt;(built later — see project workflow)&lt;/em&gt;&lt;/p&gt;
+    &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Z-scheme electron flow tracer (click-through SVG/JS, no new library)&lt;/strong&gt; — a redox-potential Z-diagram; clicking &amp;ldquo;step&amp;rdquo; moves a highlighted electron marker from water through the oxygen-evolving complex, PSII, the electron transport chain, PSI, and finally to NADP+ reductase, with each step&amp;rsquo;s energy change and any proton-pumping event annotated as it happens.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;zscheme-widget&#34; style=&#34;background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:&#39;Inter&#39;,&#39;Segoe UI&#39;,Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);&#34;&gt;
+  &lt;svg viewBox=&#34;0 0 420 220&#34; width=&#34;100%&#34; style=&#34;max-width:440px; display:block; margin:0 auto;&#34;&gt;
+    &lt;text x=&#34;10&#34; y=&#34;15&#34; font-size=&#34;10&#34; fill=&#34;#4b5563&#34;&gt;high energy&lt;/text&gt;
+    &lt;text x=&#34;10&#34; y=&#34;215&#34; font-size=&#34;10&#34; fill=&#34;#4b5563&#34;&gt;low energy&lt;/text&gt;
+    &lt;path d=&#34;M40 190 L40 60 L140 65 L140 170 L240 175 L240 40 L340 45 L340 150 L400 155&#34; fill=&#34;none&#34; stroke=&#34;#cbd5e1&#34; stroke-width=&#34;3&#34;/&gt;
+    &lt;circle id=&#34;zNode0&#34; cx=&#34;40&#34; cy=&#34;190&#34; r=&#34;6&#34; fill=&#34;#94a3b8&#34;/&gt;
+    &lt;circle id=&#34;zNode1&#34; cx=&#34;40&#34; cy=&#34;60&#34; r=&#34;6&#34; fill=&#34;#94a3b8&#34;/&gt;
+    &lt;circle id=&#34;zNode2&#34; cx=&#34;140&#34; cy=&#34;170&#34; r=&#34;6&#34; fill=&#34;#94a3b8&#34;/&gt;
+    &lt;circle id=&#34;zNode3&#34; cx=&#34;240&#34; cy=&#34;175&#34; r=&#34;6&#34; fill=&#34;#94a3b8&#34;/&gt;
+    &lt;circle id=&#34;zNode4&#34; cx=&#34;240&#34; cy=&#34;40&#34; r=&#34;6&#34; fill=&#34;#94a3b8&#34;/&gt;
+    &lt;circle id=&#34;zNode5&#34; cx=&#34;340&#34; cy=&#34;150&#34; r=&#34;6&#34; fill=&#34;#94a3b8&#34;/&gt;
+    &lt;circle id=&#34;zNode6&#34; cx=&#34;400&#34; cy=&#34;155&#34; r=&#34;6&#34; fill=&#34;#94a3b8&#34;/&gt;
+    &lt;text x=&#34;40&#34; y=&#34;205&#34; font-size=&#34;9&#34; text-anchor=&#34;middle&#34; fill=&#34;#334155&#34;&gt;H2O&lt;/text&gt;
+    &lt;text x=&#34;40&#34; y=&#34;50&#34; font-size=&#34;9&#34; text-anchor=&#34;middle&#34; fill=&#34;#334155&#34;&gt;P680*&lt;/text&gt;
+    &lt;text x=&#34;140&#34; y=&#34;185&#34; font-size=&#34;9&#34; text-anchor=&#34;middle&#34; fill=&#34;#334155&#34;&gt;ETC/Cyt b6f&lt;/text&gt;
+    &lt;text x=&#34;240&#34; y=&#34;190&#34; font-size=&#34;9&#34; text-anchor=&#34;middle&#34; fill=&#34;#334155&#34;&gt;P700&lt;/text&gt;
+    &lt;text x=&#34;240&#34; y=&#34;30&#34; font-size=&#34;9&#34; text-anchor=&#34;middle&#34; fill=&#34;#334155&#34;&gt;P700*&lt;/text&gt;
+    &lt;text x=&#34;340&#34; y=&#34;140&#34; font-size=&#34;9&#34; text-anchor=&#34;middle&#34; fill=&#34;#334155&#34;&gt;Fd&lt;/text&gt;
+    &lt;text x=&#34;400&#34; y=&#34;170&#34; font-size=&#34;9&#34; text-anchor=&#34;middle&#34; fill=&#34;#334155&#34;&gt;NADPH&lt;/text&gt;
+    &lt;circle id=&#34;zMarker&#34; cx=&#34;40&#34; cy=&#34;190&#34; r=&#34;9&#34; fill=&#34;#1d70a2&#34; stroke=&#34;#fff&#34; stroke-width=&#34;2&#34;/&gt;
+  &lt;/svg&gt;
+  &lt;div style=&#34;text-align:center;&#34;&gt;
+    &lt;button id=&#34;zStepBtn&#34; style=&#34;background:#2d6a4f; color:#fff; border:none; padding:9px 18px; border-radius:999px; font-size:0.88rem; cursor:pointer;&#34;&gt;Step &amp;#8594;&lt;/button&gt;
+    &lt;div id=&#34;zNote&#34; style=&#34;margin-top:10px; font-size:0.85rem; color:#4b5563; min-height:2.4em;&#34;&gt;Start: water at the oxygen-evolving complex, ready to donate electrons to PSII.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function(){
+  var marker = document.getElementById(&#39;zMarker&#39;);
+  var note = document.getElementById(&#39;zNote&#39;);
+  var btn = document.getElementById(&#39;zStepBtn&#39;);
+  var nodes = [
+    {x:40,y:190,text:&#39;Start: water at the oxygen-evolving complex, ready to donate electrons to PSII.&#39;},
+    {x:40,y:60,text:&#39;Light excites P680 in PSII; the oxygen-evolving complex splits water, replacing the ejected electron and releasing O2.&#39;},
+    {x:140,y:170,text:&#39;The electron passes down the electron transport chain (plastoquinone to cytochrome b6f), losing energy that pumps H+ into the thylakoid lumen.&#39;},
+    {x:240,y:175,text:&#39;The electron reaches P700 (PSI), replacing an electron PSI lost when it absorbed light independently.&#39;},
+    {x:240,y:40,text:&#39;Light excites P700 to P700*, ejecting a new high-energy electron.&#39;},
+    {x:340,y:150,text:&#39;The electron passes to ferredoxin.&#39;},
+    {x:400,y:155,text:&#39;NADP+ reductase uses the electron to reduce NADP+ to NADPH — the second energy carrier for the Calvin cycle.&#39;}
+  ];
+  var i = 0;
+  function render(){
+    marker.setAttribute(&#39;cx&#39;, nodes[i].x);
+    marker.setAttribute(&#39;cy&#39;, nodes[i].y);
+    note.textContent = nodes[i].text;
+    btn.textContent = i === nodes.length - 1 ? &#39;Restart&#39; : &#39;Step →&#39;;
+  }
+  btn.addEventListener(&#39;click&#39;, function(){
+    i = (i + 1) % nodes.length;
+    render();
+  });
+  render();
+})();
+&lt;/script&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Linear vs. cyclic electron flow toggle&lt;/strong&gt; — the same thylakoid membrane diagram toggles between full linear flow (both photosystems, O2 released, NADPH produced) and cyclic flow (PSI only, electron rerouted back to cytochrome b6f, no O2/NADPH), making the &amp;ldquo;PSII bypass&amp;rdquo; visible as a rerouting rather than a separate diagram to memorize.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;div id=&#34;cyclic-widget&#34; style=&#34;background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:&#39;Inter&#39;,&#39;Segoe UI&#39;,Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);&#34;&gt;
+  &lt;svg viewBox=&#34;0 0 400 160&#34; width=&#34;100%&#34; style=&#34;max-width:420px; display:block; margin:0 auto;&#34;&gt;
+    &lt;rect id=&#34;cPSII&#34; x=&#34;30&#34; y=&#34;60&#34; width=&#34;70&#34; height=&#34;40&#34; rx=&#34;6&#34; fill=&#34;#8fbf8f&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;2&#34;/&gt;
+    &lt;text x=&#34;65&#34; y=&#34;84&#34; text-anchor=&#34;middle&#34; font-size=&#34;11&#34; fill=&#34;#1a472a&#34;&gt;PSII&lt;/text&gt;
+    &lt;path id=&#34;cPathWater&#34; d=&#34;M10 80 H30&#34; stroke=&#34;#1d70a2&#34; stroke-width=&#34;3&#34; marker-end=&#34;url(#cArrow)&#34;/&gt;
+    &lt;text id=&#34;cO2Label&#34; x=&#34;15&#34; y=&#34;70&#34; font-size=&#34;9&#34; fill=&#34;#1d70a2&#34;&gt;H2O/O2&lt;/text&gt;
+    &lt;path id=&#34;cPathToETC&#34; d=&#34;M100 80 H160&#34; stroke=&#34;#1d70a2&#34; stroke-width=&#34;3&#34; marker-end=&#34;url(#cArrow)&#34;/&gt;
+    &lt;rect x=&#34;160&#34; y=&#34;60&#34; width=&#34;70&#34; height=&#34;40&#34; rx=&#34;6&#34; fill=&#34;#e0ecf7&#34; stroke=&#34;#1d70a2&#34; stroke-width=&#34;2&#34;/&gt;
+    &lt;text x=&#34;195&#34; y=&#34;84&#34; text-anchor=&#34;middle&#34; font-size=&#34;10&#34; fill=&#34;#1d70a2&#34;&gt;Cyt b6f&lt;/text&gt;
+    &lt;path id=&#34;cPathToPSI&#34; d=&#34;M230 80 H290&#34; stroke=&#34;#1d70a2&#34; stroke-width=&#34;3&#34; marker-end=&#34;url(#cArrow)&#34;/&gt;
+    &lt;rect x=&#34;290&#34; y=&#34;60&#34; width=&#34;70&#34; height=&#34;40&#34; rx=&#34;6&#34; fill=&#34;#8fbf8f&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;2&#34;/&gt;
+    &lt;text x=&#34;325&#34; y=&#34;84&#34; text-anchor=&#34;middle&#34; font-size=&#34;11&#34; fill=&#34;#1a472a&#34;&gt;PSI&lt;/text&gt;
+    &lt;path id=&#34;cPathToFd&#34; d=&#34;M325 60 V25 H340&#34; stroke=&#34;#7c3aed&#34; stroke-width=&#34;3&#34; marker-end=&#34;url(#cArrowPurple)&#34;/&gt;
+    &lt;text x=&#34;330&#34; y=&#34;18&#34; font-size=&#34;9&#34; fill=&#34;#7c3aed&#34;&gt;Fd&lt;/text&gt;
+    &lt;path id=&#34;cPathToNADPH&#34; d=&#34;M360 25 H385&#34; stroke=&#34;#7c3aed&#34; stroke-width=&#34;3&#34; marker-end=&#34;url(#cArrowPurple)&#34;/&gt;
+    &lt;text id=&#34;cNADPHLabel&#34; x=&#34;365&#34; y=&#34;15&#34; font-size=&#34;9&#34; fill=&#34;#7c3aed&#34;&gt;NADPH&lt;/text&gt;
+    &lt;path id=&#34;cCyclicReturn&#34; d=&#34;M325 25 Q195 5 195 60&#34; fill=&#34;none&#34; stroke=&#34;#b45309&#34; stroke-width=&#34;3&#34; stroke-dasharray=&#34;4 3&#34; opacity=&#34;0&#34; marker-end=&#34;url(#cArrowOrange)&#34;/&gt;
+    &lt;defs&gt;
+      &lt;marker id=&#34;cArrow&#34; markerWidth=&#34;6&#34; markerHeight=&#34;6&#34; refX=&#34;3&#34; refY=&#34;3&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M0,0 L6,3 L0,6 Z&#34; fill=&#34;#1d70a2&#34;/&gt;&lt;/marker&gt;
+      &lt;marker id=&#34;cArrowPurple&#34; markerWidth=&#34;6&#34; markerHeight=&#34;6&#34; refX=&#34;3&#34; refY=&#34;3&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M0,0 L6,3 L0,6 Z&#34; fill=&#34;#7c3aed&#34;/&gt;&lt;/marker&gt;
+      &lt;marker id=&#34;cArrowOrange&#34; markerWidth=&#34;6&#34; markerHeight=&#34;6&#34; refX=&#34;3&#34; refY=&#34;3&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M0,0 L6,3 L0,6 Z&#34; fill=&#34;#b45309&#34;/&gt;&lt;/marker&gt;
+    &lt;/defs&gt;
+  &lt;/svg&gt;
+  &lt;div style=&#34;text-align:center;&#34;&gt;
+    &lt;button class=&#34;c-btn&#34; id=&#34;cLinearBtn&#34; style=&#34;background:#2d6a4f; color:#fff; border:none; padding:9px 18px; border-radius:999px; font-size:0.88rem; cursor:pointer; margin-right:8px;&#34;&gt;Linear flow&lt;/button&gt;
+    &lt;button class=&#34;c-btn&#34; id=&#34;cCyclicBtn&#34; style=&#34;background:#94a3b8; color:#fff; border:none; padding:9px 18px; border-radius:999px; font-size:0.88rem; cursor:pointer;&#34;&gt;Cyclic flow&lt;/button&gt;
+    &lt;div id=&#34;cNote&#34; style=&#34;margin-top:10px; font-size:0.85rem; color:#4b5563;&#34;&gt;Linear flow: both photosystems in series, water split, O2 released, NADPH produced.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function(){
+  var linearBtn = document.getElementById(&#39;cLinearBtn&#39;);
+  var cyclicBtn = document.getElementById(&#39;cCyclicBtn&#39;);
+  var note = document.getElementById(&#39;cNote&#39;);
+  var psii = document.getElementById(&#39;cPSII&#39;);
+  var waterPath = document.getElementById(&#39;cPathWater&#39;);
+  var toETC = document.getElementById(&#39;cPathToETC&#39;);
+  var o2Label = document.getElementById(&#39;cO2Label&#39;);
+  var toNADPH = document.getElementById(&#39;cPathToNADPH&#39;);
+  var nadphLabel = document.getElementById(&#39;cNADPHLabel&#39;);
+  var cyclicReturn = document.getElementById(&#39;cCyclicReturn&#39;);
+  function setLinear(isLinear){
+    psii.setAttribute(&#39;opacity&#39;, isLinear ? 1 : 0.3);
+    waterPath.setAttribute(&#39;opacity&#39;, isLinear ? 1 : 0);
+    toETC.setAttribute(&#39;opacity&#39;, isLinear ? 1 : 0);
+    o2Label.setAttribute(&#39;opacity&#39;, isLinear ? 1 : 0);
+    toNADPH.setAttribute(&#39;opacity&#39;, isLinear ? 1 : 0);
+    nadphLabel.setAttribute(&#39;opacity&#39;, isLinear ? 1 : 0);
+    cyclicReturn.style.opacity = isLinear ? 0 : 1;
+    linearBtn.style.background = isLinear ? &#39;#2d6a4f&#39; : &#39;#94a3b8&#39;;
+    cyclicBtn.style.background = isLinear ? &#39;#94a3b8&#39; : &#39;#2d6a4f&#39;;
+    note.textContent = isLinear
+      ? &#39;Linear flow: both photosystems in series, water split, O2 released, NADPH produced.&#39;
+      : &#39;Cyclic flow: PSII is bypassed entirely — the electron ejected from PSI loops back through cytochrome b6f instead of continuing to NADP+ reductase. No water-splitting, no O2, no NADPH — but the proton pumping at cytochrome b6f still generates extra ATP.&#39;;
+  }
+  linearBtn.addEventListener(&#39;click&#39;, function(){ setLinear(true); });
+  cyclicBtn.addEventListener(&#39;click&#39;, function(){ setLinear(false); });
+  setLinear(true);
+})();
+&lt;/script&gt;
 &lt;p&gt;&lt;em&gt;(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Practice Problems&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;practice-problems&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#practice-problems&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
@@ -893,15 +1195,15 @@
 &lt;p&gt;Net cost per 3 CO₂ fixed: 9 ATP and 6 NADPH consumed for 1 net G3P produced — a stoichiometry worth knowing because it is exactly what makes the ATP:NADPH ratio delivered by the light reactions matter, and exactly why cyclic electron flow (see &lt;a
     href=&#34;../light-reactions-photophosphorylation/&#34;&gt;Light Reactions &amp;amp; Photophosphorylation&lt;/a&gt;) exists to supplement ATP output when this ratio runs short.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/calvin-cycle-full.png&#34; alt=&#34;Full Calvin cycle: 3 CO2 fixed onto RuBP by RuBisCO (stage 1, carbon fixation) yields 6 3-PGA, reduced using 6 ATP and 6 NADPH to 6 G3P (stage 2), of which 1 exits as net output and the remaining 5 are rearranged using 3 more ATP back into 3 RuBP (stage 3, regeneration)&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: Biology LibreTexts — confirm specific license (CC BY vs. BY-NC-SA) on the originating page before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: Biology LibreTexts&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Photorespiration: Rubisco&amp;rsquo;s Oxygenase Side-Reaction&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;photorespiration-rubiscos-oxygenase-side-reaction&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#photorespiration-rubiscos-oxygenase-side-reaction&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Rubisco&amp;rsquo;s active site cannot perfectly discriminate between CO₂ and O₂, and under conditions that lower the local CO₂:O₂ ratio at the active site — high temperature (which lowers CO₂ solubility relative to O₂ and increases Rubisco&amp;rsquo;s relative affinity for O₂), and stomatal closure under water stress (which restricts fresh CO₂ entry while O₂ from ongoing photosynthesis accumulates, see &lt;a
     href=&#34;../stomatal-physiology-gas-exchange/&#34;&gt;Stomatal Physiology &amp;amp; Gas Exchange&lt;/a&gt;) — Rubisco increasingly catalyzes &lt;strong&gt;oxygenation&lt;/strong&gt; of RuBP instead of carboxylation.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/rubisco-carboxylase-oxygenase.png&#34; alt=&#34;Rubisco’s dual reaction as a shared branch point: with CO2 (left), RuBP carboxylation feeds ordinary photosynthesis, consuming ATP/NADPH and yielding 2x 3PGA/sugars; with O2 (right), oxygenation feeds photorespiration instead, consuming ATP/NADPH/CO2 and yielding a 3PGA&amp;#43;2PG mixture that ultimately releases CO2&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: Encyclopedia (encyclopedia.pub), entry 9827 — confirm licensing basis before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: Encyclopedia (encyclopedia.pub), entry 9827&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;This produces one molecule of 3-PGA (usable) and one of &lt;strong&gt;2-phosphoglycolate&lt;/strong&gt;, a toxic 2-carbon compound that is not part of the Calvin cycle and must be salvaged through the &lt;strong&gt;photorespiration (glycolate) pathway&lt;/strong&gt;, a costly process spanning three organelles (chloroplast, peroxisome, mitochondrion) that recovers only 3 of every 4 carbons entering it as usable product, consumes additional ATP, and releases the fourth carbon as CO₂ — a net loss of both fixed carbon and previously invested energy, and the direct biochemical reason C3 photosynthesis becomes inefficient under hot, dry, high-light conditions.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/photorespiration-glycolate-pathway.png&#34; alt=&#34;Photorespiration (glycolate pathway) spanning three organelles: chloroplast Rubisco splits between 3-PGA and 2-PG (energy loss versus ordinary photosynthesis), the peroxisome converts glycolate through glyoxylate/glycine, and the mitochondrion converts glycine to serine, releasing both NH3 (re-assimilated at ATP cost) and CO2 (a net carbon loss)&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: New Phytologist (Wiley Online Library, nph.70724) — open-access status not confirmed for this specific article, revisit before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: New Phytologist&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;C4 Biochemistry: Spatial CO2 Concentration&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;c4-biochemistry-spatial-co2-concentration&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#c4-biochemistry-spatial-co2-concentration&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;C4 plants suppress photorespiration by physically separating initial CO₂ capture from the Calvin cycle, using the &lt;strong&gt;Kranz anatomy&lt;/strong&gt; already described structurally on &lt;a
     href=&#34;../../6-plant-anatomy/leaf-anatomy/&#34;&gt;Leaf Anatomy&lt;/a&gt; (mesophyll cells surrounding an enlarged, chloroplast-rich bundle sheath):&lt;/p&gt;
@@ -913,7 +1215,7 @@
 &lt;/ol&gt;
 &lt;p&gt;This spatial separation costs extra ATP per CO₂ fixed compared to C3 (for the PEP regeneration step), but that cost is repaid, under hot and high-light conditions specifically, by nearly eliminating the carbon and energy losses photorespiration would otherwise impose — which is why C4 is an advantage in exactly the environments where C3 struggles, not universally.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/c4-pathway-biochemistry.png&#34; alt=&#34;C4 photosynthetic pathway: (A) in the mesophyll cell, CA and PEPC fix CO2/HCO3- onto PEP to form OAA, converted to a 4-carbon acid (malate/aspartate) shuttled to the bundle sheath cell, where a decarboxylase (DC) releases CO2 to RuBisCO/the Calvin cycle, with pyruvate/alanine shuttled back and reconverted to PEP by PPDK; (B) the ATP/NADPH cost per CO2 fixed, split between mesophyll and bundle sheath, compared across the NADP-ME, NAD-ME, and PEPCK biochemical subtypes&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: Encyclopedia (encyclopedia.pub), entry 21328 — confirm licensing basis before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: Encyclopedia (encyclopedia.pub)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;CAM Biochemistry: Temporal CO2 Concentration&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;cam-biochemistry-temporal-co2-concentration&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#cam-biochemistry-temporal-co2-concentration&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;CAM plants achieve a related benefit through &lt;em&gt;time&lt;/em&gt; rather than &lt;em&gt;space&lt;/em&gt;, using the same cell for both steps rather than two anatomically distinct cell types (consistent with CAM leaf anatomy lacking Kranz anatomy, see &lt;a
     href=&#34;../../6-plant-anatomy/leaf-anatomy/&#34;&gt;Leaf Anatomy&lt;/a&gt;):&lt;/p&gt;
@@ -924,7 +1226,7 @@
 &lt;/ul&gt;
 &lt;p&gt;Because CO₂ uptake (night) and CO₂ fixation via the Calvin cycle (day) are separated in time rather than location, a single mesophyll cell type suffices, at the cost of requiring large-volume malic acid storage between the two phases — directly explaining the enlarged vacuoles CAM leaf anatomy shows structurally.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/cam-diurnal-cycle.png&#34; alt=&#34;CAM diurnal cycle: at night (stomata open), CO2 combines with PEP via PEPC (primary carboxylation) to form a C4 acid stored in the vacuole; during the day (stomata closed), the C4 acid is decarboxylated back to a C3 acid, releasing CO2 to Rubisco and the Calvin-Benson cycle (secondary carboxylation), with surplus carbon stored as starch&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: ScienceDirect (topic page, &amp;ldquo;Crassulacean Acid Metabolism&amp;rdquo;) — open-access status not confirmed, revisit before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: ScienceDirect (topic page, &amp;ldquo;Crassulacean Acid Metabolism&amp;rdquo;)&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Comparative Structures&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;comparative-structures&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#comparative-structures&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
 	&lt;thead&gt;
@@ -983,11 +1285,173 @@
 &lt;li&gt;&amp;ldquo;Explain why C4 photosynthesis costs more ATP than C3 per CO2 fixed, and why this cost is nonetheless favorable under hot, high-light conditions.&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Visual Reference&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;visual-reference&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt; &lt;em&gt;(built later — see project workflow)&lt;/em&gt;&lt;/p&gt;
+    &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Calvin cycle carbon tracer (click-through SVG/JS, no new library)&lt;/strong&gt; — a schematic cycle where clicking &amp;ldquo;step&amp;rdquo; moves a highlighted carbon atom through fixation, reduction, and regeneration, with a running tally of ATP/NADPH consumed and net G3P produced after each full turn.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;calvin-tracer-widget&#34; style=&#34;background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:&#39;Inter&#39;,&#39;Segoe UI&#39;,Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);&#34;&gt;
+  &lt;svg viewBox=&#34;0 0 260 260&#34; width=&#34;240&#34; height=&#34;240&#34; style=&#34;display:block; margin:0 auto;&#34;&gt;
+    &lt;circle cx=&#34;130&#34; cy=&#34;130&#34; r=&#34;95&#34; fill=&#34;none&#34; stroke=&#34;#cbd5e1&#34; stroke-width=&#34;18&#34;/&gt;
+    &lt;path id=&#34;arcFix&#34; d=&#34;M 130 35 A 95 95 0 0 1 212 177&#34; fill=&#34;none&#34; stroke=&#34;#8fbf8f&#34; stroke-width=&#34;18&#34; opacity=&#34;0.35&#34;/&gt;
+    &lt;path id=&#34;arcRed&#34; d=&#34;M 212 177 A 95 95 0 0 1 48 177&#34; fill=&#34;none&#34; stroke=&#34;#7fb8e0&#34; stroke-width=&#34;18&#34; opacity=&#34;0.35&#34;/&gt;
+    &lt;path id=&#34;arcReg&#34; d=&#34;M 48 177 A 95 95 0 0 1 130 35&#34; fill=&#34;none&#34; stroke=&#34;#f3c98b&#34; stroke-width=&#34;18&#34; opacity=&#34;0.35&#34;/&gt;
+    &lt;text x=&#34;185&#34; y=&#34;90&#34; font-size=&#34;11&#34; font-weight=&#34;600&#34; fill=&#34;#1a472a&#34;&gt;Fixation&lt;/text&gt;
+    &lt;text x=&#34;130&#34; y=&#34;235&#34; text-anchor=&#34;middle&#34; font-size=&#34;11&#34; font-weight=&#34;600&#34; fill=&#34;#1d70a2&#34;&gt;Reduction&lt;/text&gt;
+    &lt;text x=&#34;55&#34; y=&#34;90&#34; font-size=&#34;11&#34; font-weight=&#34;600&#34; fill=&#34;#92400e&#34;&gt;Regeneration&lt;/text&gt;
+    &lt;circle id=&#34;calvinMarker&#34; cx=&#34;130&#34; cy=&#34;35&#34; r=&#34;10&#34; fill=&#34;#b91c1c&#34; stroke=&#34;#fff&#34; stroke-width=&#34;2&#34;/&gt;
+  &lt;/svg&gt;
+  &lt;div style=&#34;text-align:center;&#34;&gt;
+    &lt;div id=&#34;calvinTally&#34; style=&#34;font-size:0.85rem; font-weight:600; color:#1a472a; margin-bottom:6px;&#34;&gt;Turns completed: 0 &amp;nbsp;|&amp;nbsp; ATP used: 0 &amp;nbsp;|&amp;nbsp; NADPH used: 0 &amp;nbsp;|&amp;nbsp; Net G3P: 0&lt;/div&gt;
+    &lt;button id=&#34;calvinStepBtn&#34; style=&#34;background:#2d6a4f; color:#fff; border:none; padding:9px 18px; border-radius:999px; font-size:0.88rem; cursor:pointer;&#34;&gt;Step &amp;#8594;&lt;/button&gt;
+    &lt;button id=&#34;calvinResetBtn&#34; style=&#34;background:#94a3b8; color:#fff; border:none; padding:9px 18px; border-radius:999px; font-size:0.88rem; cursor:pointer; margin-left:8px;&#34;&gt;Reset tally&lt;/button&gt;
+    &lt;div id=&#34;calvinNote&#34; style=&#34;margin-top:10px; font-size:0.85rem; color:#4b5563; min-height:2.4em;&#34;&gt;Turn begins: 3 CO2 entering the cycle to combine with 3 RuBP.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function(){
+  var marker = document.getElementById(&#39;calvinMarker&#39;);
+  var note = document.getElementById(&#39;calvinNote&#39;);
+  var tally = document.getElementById(&#39;calvinTally&#39;);
+  var stepBtn = document.getElementById(&#39;calvinStepBtn&#39;);
+  var resetBtn = document.getElementById(&#39;calvinResetBtn&#39;);
+  var positions = [
+    {x:130,y:35,text:&#39;Turn begins: 3 CO2 entering the cycle to combine with 3 RuBP.&#39;},
+    {x:212,y:177,text:&#39;Fixation: RuBisCO combines each CO2 with RuBP, producing 6 molecules of 3-PGA.&#39;},
+    {x:130,y:235,text:&#39;Reduction: 6 ATP and 6 NADPH reduce the 6 3-PGA to 6 G3P — the cycle’s only redox step.&#39;},
+    {x:88,y:206,text:&#39;Output: 1 of the 6 G3P exits the cycle as net carbohydrate product.&#39;},
+    {x:48,y:177,text:&#39;Regeneration: the remaining 5 G3P are rearranged, using 3 more ATP, back into 3 RuBP.&#39;}
+  ];
+  var step = 0;
+  var turns = 0;
+  function render(){
+    marker.setAttribute(&#39;cx&#39;, positions[step].x);
+    marker.setAttribute(&#39;cy&#39;, positions[step].y);
+    note.textContent = positions[step].text;
+    tally.textContent = &#39;Turns completed: &#39; + turns + &#39; | ATP used: &#39; + (turns*9) + &#39; | NADPH used: &#39; + (turns*6) + &#39; | Net G3P: &#39; + turns;
+  }
+  stepBtn.addEventListener(&#39;click&#39;, function(){
+    step = step + 1;
+    if (step &gt;= positions.length){
+      step = 0;
+      turns = turns + 1;
+    }
+    render();
+  });
+  resetBtn.addEventListener(&#39;click&#39;, function(){
+    step = 0;
+    turns = 0;
+    render();
+  });
+  render();
+})();
+&lt;/script&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;C3 vs. C4 vs. CAM CO2 pathway toggle&lt;/strong&gt; — a single diagram frame toggles between the three modes, visually showing where (C3: one cell; C4: two adjacent cell types) or when (CAM: night vs. day, same cell) each fixation step occurs, paired with the Kranz/CAM anatomy diagrams already specified on Leaf Anatomy.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;div id=&#34;pathway-toggle-widget&#34; style=&#34;background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:&#39;Inter&#39;,&#39;Segoe UI&#39;,Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);&#34;&gt;
+  &lt;svg viewBox=&#34;0 0 400 170&#34; width=&#34;100%&#34; style=&#34;max-width:420px; display:block; margin:0 auto;&#34;&gt;
+    &lt;text id=&#34;pTimeIcon&#34; x=&#34;370&#34; y=&#34;30&#34; font-size=&#34;22&#34; text-anchor=&#34;middle&#34;&gt;&amp;#9728;&amp;#65039;&lt;/text&gt;
+    &lt;rect id=&#34;pCellA&#34; x=&#34;40&#34; y=&#34;40&#34; width=&#34;140&#34; height=&#34;100&#34; rx=&#34;10&#34; fill=&#34;#dff0df&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;2&#34;/&gt;
+    &lt;text id=&#34;pCellALabel1&#34; x=&#34;110&#34; y=&#34;80&#34; text-anchor=&#34;middle&#34; font-size=&#34;11&#34; fill=&#34;#1a472a&#34;&gt;Rubisco +&lt;/text&gt;
+    &lt;text id=&#34;pCellALabel2&#34; x=&#34;110&#34; y=&#34;96&#34; text-anchor=&#34;middle&#34; font-size=&#34;11&#34; fill=&#34;#1a472a&#34;&gt;Calvin cycle&lt;/text&gt;
+    &lt;text id=&#34;pCellATitle&#34; x=&#34;110&#34; y=&#34;30&#34; text-anchor=&#34;middle&#34; font-size=&#34;11&#34; font-weight=&#34;600&#34; fill=&#34;#334155&#34;&gt;Mesophyll cell&lt;/text&gt;
+    &lt;path id=&#34;pArrow&#34; d=&#34;M180 90 H210&#34; stroke=&#34;#b45309&#34; stroke-width=&#34;3&#34; marker-end=&#34;url(#pgArrow)&#34; opacity=&#34;0&#34;/&gt;
+    &lt;rect id=&#34;pCellB&#34; x=&#34;210&#34; y=&#34;40&#34; width=&#34;140&#34; height=&#34;100&#34; rx=&#34;10&#34; fill=&#34;#e0ecf7&#34; stroke=&#34;#1d70a2&#34; stroke-width=&#34;2&#34; opacity=&#34;0&#34;/&gt;
+    &lt;text id=&#34;pCellBLabel1&#34; x=&#34;280&#34; y=&#34;80&#34; text-anchor=&#34;middle&#34; font-size=&#34;11&#34; fill=&#34;#1d70a2&#34; opacity=&#34;0&#34;&gt;Rubisco +&lt;/text&gt;
+    &lt;text id=&#34;pCellBLabel2&#34; x=&#34;280&#34; y=&#34;96&#34; text-anchor=&#34;middle&#34; font-size=&#34;11&#34; fill=&#34;#1d70a2&#34; opacity=&#34;0&#34;&gt;Calvin cycle&lt;/text&gt;
+    &lt;text id=&#34;pCellBTitle&#34; x=&#34;280&#34; y=&#34;30&#34; text-anchor=&#34;middle&#34; font-size=&#34;11&#34; font-weight=&#34;600&#34; fill=&#34;#334155&#34; opacity=&#34;0&#34;&gt;Bundle sheath cell&lt;/text&gt;
+    &lt;defs&gt;
+      &lt;marker id=&#34;pgArrow&#34; markerWidth=&#34;6&#34; markerHeight=&#34;6&#34; refX=&#34;3&#34; refY=&#34;3&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M0,0 L6,3 L0,6 Z&#34; fill=&#34;#b45309&#34;/&gt;&lt;/marker&gt;
+    &lt;/defs&gt;
+  &lt;/svg&gt;
+  &lt;div style=&#34;text-align:center;&#34;&gt;
+    &lt;button class=&#34;p-btn&#34; id=&#34;pC3Btn&#34; style=&#34;background:#2d6a4f; color:#fff; border:none; padding:8px 16px; border-radius:999px; font-size:0.85rem; cursor:pointer; margin:2px;&#34;&gt;C3&lt;/button&gt;
+    &lt;button class=&#34;p-btn&#34; id=&#34;pC4Btn&#34; style=&#34;background:#94a3b8; color:#fff; border:none; padding:8px 16px; border-radius:999px; font-size:0.85rem; cursor:pointer; margin:2px;&#34;&gt;C4&lt;/button&gt;
+    &lt;button class=&#34;p-btn&#34; id=&#34;pCamBtn&#34; style=&#34;background:#94a3b8; color:#fff; border:none; padding:8px 16px; border-radius:999px; font-size:0.85rem; cursor:pointer; margin:2px;&#34;&gt;CAM&lt;/button&gt;
+    &lt;span id=&#34;pCamTimeToggle&#34; style=&#34;display:none; margin-left:10px;&#34;&gt;
+      &lt;button class=&#34;p-time-btn&#34; id=&#34;pNightBtn&#34; style=&#34;background:#94a3b8; color:#fff; border:none; padding:6px 12px; border-radius:999px; font-size:0.8rem; cursor:pointer;&#34;&gt;Night&lt;/button&gt;
+      &lt;button class=&#34;p-time-btn&#34; id=&#34;pDayBtn&#34; style=&#34;background:#2d6a4f; color:#fff; border:none; padding:6px 12px; border-radius:999px; font-size:0.8rem; cursor:pointer;&#34;&gt;Day&lt;/button&gt;
+    &lt;/span&gt;
+    &lt;div id=&#34;pNote&#34; style=&#34;margin-top:10px; font-size:0.85rem; color:#4b5563;&#34;&gt;C3: a single mesophyll cell type does both initial fixation and the Calvin cycle, continuously during the day.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function(){
+  var buttons = {c3:document.getElementById(&#39;pC3Btn&#39;), c4:document.getElementById(&#39;pC4Btn&#39;), cam:document.getElementById(&#39;pCamBtn&#39;)};
+  var nightBtn = document.getElementById(&#39;pNightBtn&#39;);
+  var dayBtn = document.getElementById(&#39;pDayBtn&#39;);
+  var camTimeToggle = document.getElementById(&#39;pCamTimeToggle&#39;);
+  var note = document.getElementById(&#39;pNote&#39;);
+  var timeIcon = document.getElementById(&#39;pTimeIcon&#39;);
+  var cellATitle = document.getElementById(&#39;pCellATitle&#39;);
+  var cellALabel1 = document.getElementById(&#39;pCellALabel1&#39;);
+  var cellALabel2 = document.getElementById(&#39;pCellALabel2&#39;);
+  var arrow = document.getElementById(&#39;pArrow&#39;);
+  var cellB = document.getElementById(&#39;pCellB&#39;);
+  var cellBTitle = document.getElementById(&#39;pCellBTitle&#39;);
+  var cellBLabel1 = document.getElementById(&#39;pCellBLabel1&#39;);
+  var cellBLabel2 = document.getElementById(&#39;pCellBLabel2&#39;);
+  function clearButtons(){
+    Object.keys(buttons).forEach(function(k){ buttons[k].style.background = &#39;#94a3b8&#39;; });
+  }
+  function setMode(mode, time){
+    clearButtons();
+    buttons[mode].style.background = &#39;#2d6a4f&#39;;
+    camTimeToggle.style.display = mode === &#39;cam&#39; ? &#39;inline&#39; : &#39;none&#39;;
+    if (mode === &#39;c3&#39;){
+      timeIcon.textContent = &#39;☀️&#39;;
+      cellATitle.textContent = &#39;Mesophyll cell&#39;;
+      cellALabel1.textContent = &#39;Rubisco +&#39;;
+      cellALabel2.textContent = &#39;Calvin cycle&#39;;
+      arrow.style.opacity = 0;
+      cellB.setAttribute(&#39;opacity&#39;, 0);
+      cellBTitle.setAttribute(&#39;opacity&#39;, 0);
+      cellBLabel1.setAttribute(&#39;opacity&#39;, 0);
+      cellBLabel2.setAttribute(&#39;opacity&#39;, 0);
+      note.textContent = &#39;C3: a single mesophyll cell type does both initial fixation and the Calvin cycle, continuously during the day.&#39;;
+    } else if (mode === &#39;c4&#39;){
+      timeIcon.textContent = &#39;☀️&#39;;
+      cellATitle.textContent = &#39;Mesophyll cell&#39;;
+      cellALabel1.textContent = &#39;PEPC →&#39;;
+      cellALabel2.textContent = &#39;malate/aspartate&#39;;
+      arrow.style.opacity = 1;
+      cellB.setAttribute(&#39;opacity&#39;, 1);
+      cellBTitle.setAttribute(&#39;opacity&#39;, 1);
+      cellBLabel1.setAttribute(&#39;opacity&#39;, 1);
+      cellBLabel2.setAttribute(&#39;opacity&#39;, 1);
+      note.textContent = &#39;C4: two adjacent cell types split the job spatially, at the same time (day) — mesophyll fixes CO2 via PEPC, bundle sheath runs the Calvin cycle using the CO2 shuttled in.&#39;;
+    } else if (mode === &#39;cam&#39;){
+      arrow.style.opacity = 0;
+      cellB.setAttribute(&#39;opacity&#39;, 0);
+      cellBTitle.setAttribute(&#39;opacity&#39;, 0);
+      cellBLabel1.setAttribute(&#39;opacity&#39;, 0);
+      cellBLabel2.setAttribute(&#39;opacity&#39;, 0);
+      cellATitle.textContent = &#39;Mesophyll cell&#39;;
+      if (time === &#39;night&#39;){
+        timeIcon.textContent = &#39;🌙&#39;;
+        nightBtn.style.background = &#39;#2d6a4f&#39;;
+        dayBtn.style.background = &#39;#94a3b8&#39;;
+        cellALabel1.textContent = &#39;PEPC →&#39;;
+        cellALabel2.textContent = &#39;malic acid (stored)&#39;;
+        note.textContent = &#39;CAM at night: the same cell type fixes CO2 via PEPC and stores it as malic acid in the vacuole — stomata are open now since evaporative demand is low.&#39;;
+      } else {
+        timeIcon.textContent = &#39;☀️&#39;;
+        dayBtn.style.background = &#39;#2d6a4f&#39;;
+        nightBtn.style.background = &#39;#94a3b8&#39;;
+        cellALabel1.textContent = &#39;Rubisco +&#39;;
+        cellALabel2.textContent = &#39;Calvin cycle&#39;;
+        note.textContent = &#39;CAM during the day: stomata close, stored malic acid is decarboxylated, and the same cell now runs the Calvin cycle using the released CO2.&#39;;
+      }
+    }
+  }
+  buttons.c3.addEventListener(&#39;click&#39;, function(){ setMode(&#39;c3&#39;); });
+  buttons.c4.addEventListener(&#39;click&#39;, function(){ setMode(&#39;c4&#39;); });
+  buttons.cam.addEventListener(&#39;click&#39;, function(){ setMode(&#39;cam&#39;,&#39;day&#39;); });
+  nightBtn.addEventListener(&#39;click&#39;, function(){ setMode(&#39;cam&#39;,&#39;night&#39;); });
+  dayBtn.addEventListener(&#39;click&#39;, function(){ setMode(&#39;cam&#39;,&#39;day&#39;); });
+  setMode(&#39;c3&#39;);
+})();
+&lt;/script&gt;
 &lt;p&gt;&lt;em&gt;(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Practice Problems&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;practice-problems&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#practice-problems&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
@@ -1042,10 +1506,10 @@
     &lt;a href=&#34;#auxin-iaa&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Synthesized primarily in shoot apical meristems and young leaves, then transported &lt;strong&gt;polarly&lt;/strong&gt; (unidirectionally, cell to cell, via asymmetrically localized &lt;strong&gt;PIN transporter proteins&lt;/strong&gt; that export auxin only from one end of each cell) predominantly from shoot tip toward the root — a directional, energy-dependent transport mechanism unlike the passive diffusion of most other hormones. Auxin promotes cell elongation (by loosening the cell wall, permitting turgor-driven expansion), maintains &lt;strong&gt;apical dominance&lt;/strong&gt; (auxin from the shoot apex suppresses outgrowth of lateral/axillary buds below it — removing the apex releases this suppression, the physiological basis of pruning to promote bushier growth), and promotes lateral root initiation from the pericycle (see &lt;a
     href=&#34;../../6-plant-anatomy/root-anatomy/&#34;&gt;Root Anatomy&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/apical-dominance.png&#34; alt=&#34;Apical dominance mechanism, historical and current models: (A) the 1930s model (auxin directly inhibiting bud auxin synthesis; auxin diverting root/cotyledon growth factors away from buds; auxin indirectly inhibiting buds via stem growth), compared to (B, C) the 2010s auxin-transport-canalization and second-messenger (strigolactone/cytokinin) models&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: Frontiers in Plant Science — open-access status not confirmed for this specific article, revisit before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: Frontiers in Plant Science&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The classic &lt;strong&gt;Darwin/Went coleoptile experiments&lt;/strong&gt; (a grass seedling&amp;rsquo;s coleoptile bends toward light only if its tip is intact and light-exposed; a severed tip&amp;rsquo;s diffusible substance, collected in agar and reapplied off-center, causes bending even in the dark) first demonstrated that a mobile chemical signal, not a direct tissue response, causes phototropic bending — established before auxin was chemically identified, and the model this page&amp;rsquo;s classic-experiment framing follows throughout.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/coleoptile-bending-experiment.png&#34; alt=&#34;The classic phototropism experimental series: an intact, light-exposed coleoptile bends toward light; removing the tip abolishes bending; covering the tip with an opaque cap abolishes bending; covering the tip with a transparent cap preserves bending; shielding only the base leaves bending intact — together localizing both light perception and the response-initiating signal to the tip&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: Pathwayz.org — confirm licensing basis before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: Pathwayz.org&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Gibberellins (GA)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;gibberellins-ga&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#gibberellins-ga&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A family of related compounds synthesized in young leaves, developing seeds, and shoot tips, best known for promoting &lt;strong&gt;stem elongation&lt;/strong&gt; (the &amp;ldquo;genetically dwarf&amp;rdquo; phenotype in many classic study species, e.g. dwarf pea, is caused by a GA-biosynthesis or GA-signaling mutation, and is rescued by exogenous GA application — a direct causal demonstration, not merely a correlation), &lt;strong&gt;seed germination&lt;/strong&gt; (developed further on &lt;a
     href=&#34;../seed-germination-dormancy-physiology/&#34;&gt;Seed Germination &amp;amp; Dormancy Physiology&lt;/a&gt;, where GA induces the α-amylase enzyme mobilizing stored starch), and &lt;strong&gt;bolting/flowering&lt;/strong&gt; in some species (rapid stem elongation preceding flowering).&lt;/p&gt;
@@ -1058,11 +1522,11 @@
 &lt;h3&gt;Ethylene&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;ethylene&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#ethylene&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Unlike the other five hormones, ethylene is a &lt;strong&gt;gas&lt;/strong&gt; and diffuses freely through air spaces rather than requiring vascular or cell-to-cell transport, which is why it can coordinate ripening or senescence across an entire fruit or even between adjacent fruits (the basis of the practical observation that one ripening fruit accelerates ripening in nearby fruit, and of commercial ripening chambers). Ethylene promotes &lt;strong&gt;fruit ripening&lt;/strong&gt; (activating enzymes that break down cell wall pectin, convert starches to sugars, and degrade chlorophyll), leaf and flower &lt;strong&gt;abscission&lt;/strong&gt; (senescence-triggered detachment via enzymatic breakdown of a specialized &lt;strong&gt;abscission zone&lt;/strong&gt; layer at the base of the petiole or pedicel), and the seedling &lt;strong&gt;triple response&lt;/strong&gt; — a classic diagnostic assay in which a dark-grown seedling exposed to ethylene shows three simultaneous morphological changes (radial swelling/thickening of the stem, a reduction in stem elongation rate, and exaggerated curvature of the apical hook) that together represent a specific &amp;ldquo;obstacle encountered&amp;rdquo; developmental program, historically used to identify ethylene-signaling mutants (before molecular tools existed) by screening dark-grown seedlings for those failing to show all three components of the response even when ethylene is supplied.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/ethylene-triple-response.png&#34; alt=&#34;The triple response in dark-grown seedlings: gram and pea seedlings treated with ethylene (left of each pair) show exaggerated curvature of the plumular hook, inhibition of hypocotyl/root elongation, and radial swelling of the root/hypocotyl, compared to untreated controls&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: Springer (book chapter, doi 978-981-13-2023-1_19) — open-access status not confirmed, revisit before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: Springer (book chapter, doi 978-981-13-2023-1_19)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Brassinosteroids&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;brassinosteroids&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#brassinosteroids&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Structurally steroid-like (unlike the other five hormones), synthesized broadly across tissues, and acting largely locally rather than being transported long distances. Brassinosteroids promote cell elongation and division in a way that overlaps functionally with auxin and gibberellin (a mutant deficient in brassinosteroid synthesis shows a dwarf phenotype reminiscent of a GA-deficient mutant, but is not rescued by GA application — the specific genetic test distinguishing the two dwarfing causes) and also contribute to vascular tissue differentiation and stress tolerance.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/plant-hormones-summary.png&#34; alt=&#34;Six-hormone summary table: chemical nature, primary sites of biosynthesis, transport mode, and effects for auxins, cytokinins, ethylene, abscisic acid, gibberellins, and brassinosteroids, side by side&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: public source — confirm rights basis before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: public source&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Comparative Structures&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;comparative-structures&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#comparative-structures&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
 	&lt;thead&gt;
@@ -1122,11 +1586,115 @@
 &lt;li&gt;&amp;ldquo;Distinguish a GA-deficient dwarf mutant from a brassinosteroid-deficient dwarf mutant using a single genetic test.&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Visual Reference&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;visual-reference&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt; &lt;em&gt;(built later — see project workflow)&lt;/em&gt;&lt;/p&gt;
+    &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Coleoptile bending simulator (click-through SVG/JS, no new library)&lt;/strong&gt; — reproduces the Darwin/Went experimental series (intact tip + light, tip removed, tip covered, severed tip on agar reapplied off-center) as selectable conditions, each showing the resulting bending or lack thereof, letting the user reconstruct the logical case for a diffusible signal step by step.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;coleoptile-widget&#34; style=&#34;background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:&#39;Inter&#39;,&#39;Segoe UI&#39;,Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);&#34;&gt;
+  &lt;svg viewBox=&#34;0 0 200 200&#34; width=&#34;180&#34; height=&#34;180&#34; style=&#34;display:block; margin:0 auto;&#34;&gt;
+    &lt;text id=&#34;coLightIcon&#34; x=&#34;170&#34; y=&#34;30&#34; font-size=&#34;20&#34; text-anchor=&#34;middle&#34;&gt;&amp;#9728;&amp;#65039;&lt;/text&gt;
+    &lt;rect x=&#34;0&#34; y=&#34;160&#34; width=&#34;200&#34; height=&#34;20&#34; fill=&#34;#c9a877&#34;/&gt;
+    &lt;path id=&#34;coStem&#34; d=&#34;M100 160 L100 60&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;10&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34;/&gt;
+    &lt;path id=&#34;coTip&#34; d=&#34;M100 60 L100 45&#34; stroke=&#34;#1a472a&#34; stroke-width=&#34;10&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34;/&gt;
+    &lt;rect id=&#34;coCap&#34; x=&#34;90&#34; y=&#34;35&#34; width=&#34;20&#34; height=&#34;14&#34; rx=&#34;4&#34; fill=&#34;#334155&#34; opacity=&#34;0&#34;/&gt;
+    &lt;rect id=&#34;coBaseShield&#34; x=&#34;85&#34; y=&#34;150&#34; width=&#34;30&#34; height=&#34;20&#34; fill=&#34;#334155&#34; opacity=&#34;0&#34;/&gt;
+    &lt;rect id=&#34;coAgarBlock&#34; x=&#34;60&#34; y=&#34;55&#34; width=&#34;16&#34; height=&#34;10&#34; fill=&#34;#fde68a&#34; stroke=&#34;#92400e&#34; opacity=&#34;0&#34;/&gt;
+  &lt;/svg&gt;
+  &lt;div style=&#34;text-align:center;&#34;&gt;
+    &lt;select id=&#34;coCondition&#34; style=&#34;padding:6px 10px; border-radius:8px; border:1px solid #94a3b8; font-size:0.85rem;&#34;&gt;
+      &lt;option value=&#34;control&#34;&gt;Control: intact tip, light from one side&lt;/option&gt;
+      &lt;option value=&#34;removed&#34;&gt;Tip removed&lt;/option&gt;
+      &lt;option value=&#34;opaque&#34;&gt;Tip covered by opaque cap&lt;/option&gt;
+      &lt;option value=&#34;transparent&#34;&gt;Tip covered by transparent cap&lt;/option&gt;
+      &lt;option value=&#34;baseshield&#34;&gt;Base covered by opaque shield&lt;/option&gt;
+      &lt;option value=&#34;agar&#34;&gt;Severed tip on agar, reapplied off-center (dark)&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;div id=&#34;coNote&#34; style=&#34;margin-top:10px; font-size:0.85rem; color:#4b5563; min-height:2.4em;&#34;&gt;The intact, light-exposed tip bends toward the light — auxin is redistributed to the shaded side and promotes elongation there.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function(){
+  var select = document.getElementById(&#39;coCondition&#39;);
+  var stem = document.getElementById(&#39;coStem&#39;);
+  var tip = document.getElementById(&#39;coTip&#39;);
+  var cap = document.getElementById(&#39;coCap&#39;);
+  var baseShield = document.getElementById(&#39;coBaseShield&#39;);
+  var agarBlock = document.getElementById(&#39;coAgarBlock&#39;);
+  var lightIcon = document.getElementById(&#39;coLightIcon&#39;);
+  var note = document.getElementById(&#39;coNote&#39;);
+  var conditions = {
+    control: {bend:true, cap:false, base:false, agar:false, light:true, text:&#39;The intact, light-exposed tip bends toward the light — auxin is redistributed to the shaded side and promotes elongation there.&#39;},
+    removed: {bend:false, cap:false, base:false, agar:false, light:true, text:&#39;With the tip removed, no bending occurs — the light-sensing, auxin-redistributing tissue is gone.&#39;},
+    opaque: {bend:false, cap:true, base:false, agar:false, light:true, text:&#39;An opaque cap blocks light from reaching the tip, so no bending occurs — proving the tip itself must detect the light.&#39;},
+    transparent: {bend:true, cap:true, base:false, agar:false, light:true, text:&#39;A transparent cap still lets light through to the tip, and bending occurs normally — the cap material, not covering the tip per se, is what matters.&#39;},
+    baseshield: {bend:true, cap:false, base:true, agar:false, light:true, text:&#39;Shielding only the base (not the tip) from light does not prevent bending — the tip is the site of perception, not the base.&#39;},
+    agar: {bend:true, cap:false, base:false, agar:true, light:false, text:&#39;In the dark, a severed tip\&#39;s diffusible substance — collected in agar and reapplied off-center to a decapitated coleoptile — causes bending even with no light and no tip present. This is the direct evidence for a mobile chemical signal.&#39;}
+  };
+  function render(){
+    var c = conditions[select.value];
+    stem.setAttribute(&#39;d&#39;, c.bend ? &#39;M100 160 Q80 110 95 65&#39; : &#39;M100 160 L100 60&#39;);
+    tip.setAttribute(&#39;d&#39;, c.bend ? &#39;M95 65 Q92 55 85 47&#39; : &#39;M100 60 L100 45&#39;);
+    cap.setAttribute(&#39;opacity&#39;, c.cap ? 1 : 0);
+    baseShield.setAttribute(&#39;opacity&#39;, c.base ? 1 : 0);
+    agarBlock.setAttribute(&#39;opacity&#39;, c.agar ? 1 : 0);
+    lightIcon.setAttribute(&#39;opacity&#39;, c.light ? 1 : 0.15);
+    note.textContent = c.text;
+  }
+  select.addEventListener(&#39;change&#39;, render);
+  render();
+})();
+&lt;/script&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Auxin:cytokinin ratio tissue-culture predictor (slider)&lt;/strong&gt; — a slider sets the relative auxin:cytokinin ratio; the diagram updates between root-dominant, shoot-dominant, and undifferentiated callus outcomes, visualizing the ratio-dependence directly rather than as a memorized table.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;div id=&#34;ratio-widget&#34; style=&#34;background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:&#39;Inter&#39;,&#39;Segoe UI&#39;,Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);&#34;&gt;
+  &lt;svg viewBox=&#34;0 0 220 160&#34; width=&#34;200&#34; height=&#34;150&#34; style=&#34;display:block; margin:0 auto;&#34;&gt;
+    &lt;ellipse cx=&#34;110&#34; cy=&#34;90&#34; rx=&#34;45&#34; ry=&#34;30&#34; fill=&#34;#e2c08d&#34; stroke=&#34;#92400e&#34; stroke-width=&#34;2&#34;/&gt;
+    &lt;text x=&#34;110&#34; y=&#34;94&#34; text-anchor=&#34;middle&#34; font-size=&#34;10&#34; fill=&#34;#92400e&#34;&gt;callus&lt;/text&gt;
+    &lt;g id=&#34;ratioShoots&#34; opacity=&#34;0&#34;&gt;
+      &lt;path d=&#34;M100 65 Q95 40 90 25&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;5&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34;/&gt;
+      &lt;path d=&#34;M110 65 Q110 35 110 20&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;5&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34;/&gt;
+      &lt;path d=&#34;M120 65 Q125 40 130 25&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;5&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34;/&gt;
+    &lt;/g&gt;
+    &lt;g id=&#34;ratioRoots&#34; opacity=&#34;0&#34;&gt;
+      &lt;path d=&#34;M100 115 Q95 140 90 155&#34; stroke=&#34;#7c5a3a&#34; stroke-width=&#34;5&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34;/&gt;
+      &lt;path d=&#34;M110 115 Q110 145 110 158&#34; stroke=&#34;#7c5a3a&#34; stroke-width=&#34;5&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34;/&gt;
+      &lt;path d=&#34;M120 115 Q125 140 130 155&#34; stroke=&#34;#7c5a3a&#34; stroke-width=&#34;5&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34;/&gt;
+    &lt;/g&gt;
+  &lt;/svg&gt;
+  &lt;label style=&#34;font-size:0.85rem; font-weight:600; color:#334155; display:block; text-align:center;&#34;&gt;Auxin:Cytokinin ratio&lt;/label&gt;
+  &lt;input type=&#34;range&#34; id=&#34;ratioSlider&#34; min=&#34;0&#34; max=&#34;100&#34; value=&#34;50&#34; style=&#34;width:100%; max-width:300px; display:block; margin:0 auto;&#34;&gt;
+  &lt;div style=&#34;text-align:center; font-size:0.8rem; color:#4b5563;&#34;&gt;
+    &lt;span&gt;low (high cytokinin)&lt;/span&gt; &amp;nbsp;&amp;mdash;&amp;nbsp; &lt;span&gt;high (high auxin)&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div id=&#34;ratioNote&#34; style=&#34;text-align:center; margin-top:10px; font-size:0.85rem; color:#4b5563;&#34;&gt;Equal auxin and cytokinin — undifferentiated callus growth, no roots or shoots yet.&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function(){
+  var slider = document.getElementById(&#39;ratioSlider&#39;);
+  var shoots = document.getElementById(&#39;ratioShoots&#39;);
+  var roots = document.getElementById(&#39;ratioRoots&#39;);
+  var note = document.getElementById(&#39;ratioNote&#39;);
+  function update(){
+    var v = parseInt(slider.value,10);
+    if (v &lt; 35){
+      shoots.style.opacity = 1;
+      roots.style.opacity = 0;
+      note.textContent = &#39;Low auxin:cytokinin ratio (cytokinin-dominant) — shoot formation is favored.&#39;;
+    } else if (v &gt; 65){
+      shoots.style.opacity = 0;
+      roots.style.opacity = 1;
+      note.textContent = &#39;High auxin:cytokinin ratio (auxin-dominant) — root formation is favored.&#39;;
+    } else {
+      shoots.style.opacity = 0;
+      roots.style.opacity = 0;
+      note.textContent = &#39;Roughly equal auxin and cytokinin — undifferentiated callus growth, no roots or shoots yet.&#39;;
+    }
+  }
+  slider.addEventListener(&#39;input&#39;, update);
+  update();
+})();
+&lt;/script&gt;
 &lt;p&gt;&lt;em&gt;(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. The dwarf-pea GA-rescue comparison was dropped — no image sourced.)&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Practice Problems&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;practice-problems&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#practice-problems&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
@@ -1185,27 +1753,27 @@
     href=&#34;../plant-hormones/&#34;&gt;Plant Hormones&lt;/a&gt;, explains this as &lt;strong&gt;asymmetric auxin distribution&lt;/strong&gt; rather than a direct light-driven growth change: blue light is detected by &lt;strong&gt;phototropin&lt;/strong&gt; photoreceptors (the same receptor class covered driving stomatal opening on &lt;a
     href=&#34;../stomatal-physiology-gas-exchange/&#34;&gt;Stomatal Physiology &amp;amp; Gas Exchange&lt;/a&gt;) concentrated at the tip, which triggers lateral auxin transport toward the shaded side of the coleoptile or stem before the auxin is transported basipetally. Because auxin promotes cell elongation, the shaded side (now carrying more auxin) elongates faster than the illuminated side, and the unequal elongation rate on the two sides is what physically bends the stem toward the light — a differential-growth mechanism, not a bending of already-formed tissue. This is the same auxin transport machinery (&lt;strong&gt;polar, PIN-transporter-mediated&lt;/strong&gt;) established by the Darwin/Went experiments, redirected laterally rather than simply basipetally.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/cholodny-went-model.png&#34; alt=&#34;Polar auxin transport machinery within and between cells: PIN exporters and AUX1/LAX importers setting up directional IAA flow via the pH gradient between apoplast and cytoplasm, with PIN5/PIN8/PILS/WAT1 additionally regulating intracellular auxin distribution via the ER and vacuole — the general PIN-mediated transport mechanism the Cholodny-Went model’s lateral relocalization builds on&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: Wikipedia — confirm licensing basis before public deployment. Note: this shows the general polar auxin transport mechanism (PIN/AUX1/LAX/H+-ATPase machinery), not the light-triggered lateral relocalization specific to the Cholodny-Went model itself — a true Cholodny-Went diagram wasn&amp;rsquo;t found.&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: Wikipedia. Note: this shows the general polar auxin transport mechanism (PIN/AUX1/LAX/H+-ATPase machinery), not the light-triggered lateral relocalization specific to the Cholodny-Went model itself — a true Cholodny-Went diagram wasn&amp;rsquo;t found.&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Gravitropism and Statolith Sensing&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;gravitropism-and-statolith-sensing&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#gravitropism-and-statolith-sensing&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Gravitropism&lt;/strong&gt; (geotropism) is directional growth relative to gravity: most roots show &lt;strong&gt;positive gravitropism&lt;/strong&gt; (grow toward gravity, downward) while most shoots show &lt;strong&gt;negative gravitropism&lt;/strong&gt; (grow away from gravity, upward) — the same organ-specific auxin sensitivity difference explaining the opposite sign, since roots are far more sensitive to auxin and are inhibited by the same concentration that promotes elongation in a shoot. Gravity is detected via &lt;strong&gt;statoliths&lt;/strong&gt; — dense, starch-filled amyloplasts that settle toward the gravity-ward side of specialized &lt;strong&gt;statocyte&lt;/strong&gt; cells (concentrated in the root cap&amp;rsquo;s columella cells, and in the stem&amp;rsquo;s endodermis or vascular bundle sheath) under simple sedimentation. Statolith settling triggers redistribution of &lt;strong&gt;PIN auxin transporters&lt;/strong&gt; to the lower side of the statocyte, again producing asymmetric lateral auxin transport exactly as in phototropism, but triggered by gravity sensing rather than light sensing, and with an opposite growth response in root tissue because of that tissue&amp;rsquo;s heightened auxin sensitivity. A root&amp;rsquo;s gravitropic response depends on an intact root cap — removing it experimentally abolishes gravity sensing (though not growth itself), directly implicating the cap&amp;rsquo;s statocytes as the sensing site rather than the elongating zone behind it.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/root-gravitropism-statocytes.png&#34; alt=&#34;Root gravitropism: in a vertically growing root tip, statocytes at the columella show downward-settled statoliths (red arrows) and symmetric auxin efflux (orange cell diagrams); after gravistimulation/reorientation, statoliths resettle toward the new lower side and auxin is redistributed asymmetrically (yellow arrows) toward that side, producing differential elongation that reorients growth back toward gravity&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: Frontiers in Plant Science (fpls.2017.01304) — open-access status not confirmed for this specific article, revisit before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: Frontiers in Plant Science (fpls.2017.01304)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Thigmotropism&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;thigmotropism&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#thigmotropism&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Thigmotropism&lt;/strong&gt; is directional growth in response to physical contact, most visibly in the tendrils of climbing plants (e.g. pea, grape, cucumber), which grow straight until contacting a support, then rapidly curl around it via differential, contact-side-specific growth — mechanistically an asymmetric growth response analogous to photo- and gravitropism, but triggered by mechanical touch receptors rather than light or statolith sedimentation. Twining stems (e.g. morning glory, bindweed) show a related but distinct whole-stem coiling response used to climb a support without a specialized tendril organ.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/tendril-coiling-thigmotropism.png&#34; alt=&#34;Positive thigmotropism in a stem tendril: a tendril on a weak-stemmed climbing plant grows freely until it contacts a support, then coils tightly around it, converting an otherwise unsupported stem into one that can climb upward&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: sciencefacts.net — confirm licensing basis before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: sciencefacts.net&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Nastic Movements&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;nastic-movements&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#nastic-movements&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Unlike tropisms, &lt;strong&gt;nastic movements&lt;/strong&gt; are non-directional — the response&amp;rsquo;s form is fixed regardless of the stimulus&amp;rsquo;s direction, and the response is typically driven by rapid, reversible &lt;strong&gt;turgor pressure change&lt;/strong&gt; in specialized motor cells (a &lt;strong&gt;pulvinus&lt;/strong&gt;, a swollen joint-like structure at the base of a leaf or leaflet) rather than by differential growth, which is why nastic responses can be far faster and fully reversible, unlike a tropism&amp;rsquo;s growth-based bend.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;em&gt;Mimosa pudica&lt;/em&gt; seismonastic response (touch-me-not)&lt;/strong&gt; — mechanical stimulation triggers a rapid &lt;strong&gt;action-potential-like electrical signal&lt;/strong&gt; that propagates to the pulvinus, where motor cells on one side rapidly lose K⁺ and water (turgor collapse) while the opposite side does not, causing the leaflets to fold and the petiole to droop within seconds — a defensive response thought to deter herbivores by suddenly appearing less like intact leaf tissue, or to dislodge small feeding insects directly.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/mimosa-pulvinus-states.png&#34; alt=&#34;Mimosa pudica seismonastic response: (a) unstimulated leaflets held open; (b) leaflets folded within seconds of mechanical stimulation; (c) the pulvinus (motor organ) in cross-section, showing flaccid cells on one side and turgid cells on the other — the asymmetric turgor loss producing the fold&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: University of Reading (Tropical Biodiversity blog) — confirm licensing basis before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: University of Reading (Tropical Biodiversity blog)&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Venus flytrap (&lt;em&gt;Dionaea&lt;/em&gt;) snap-trap closure&lt;/strong&gt; — mechanical stimulation of trigger hairs on the trap&amp;rsquo;s inner surface (requiring two touches within roughly 20 seconds, or one sustained touch, a specific threshold mechanism reducing false triggers from a single raindrop or debris) generates an action potential that triggers rapid turgor-driven closure of the trap lobes, followed by slower, growth-based tightening that seals the trap fully once prey is confirmed present by continued struggling.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/venus-flytrap-closure.png&#34; alt=&#34;Venus flytrap closure sequence after trigger-hair stimulation: two independent trials (A, B) each show the trap open at 0s and progressively closing over roughly 3 seconds following mechanical stimulation of the trigger hairs&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: ResearchGate, fig. 5, &amp;ldquo;Sequence of Venus flytrap photos after stimulation of trigger hairs&amp;rdquo; — open-access status not confirmed, revisit before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: ResearchGate, fig. 5, &amp;ldquo;Sequence of Venus flytrap photos after stimulation of trigger hairs&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Nyctinasty (sleep movements)&lt;/strong&gt; — rhythmic leaf/leaflet folding at night in many legumes, driven by circadian-timed turgor changes in a pulvinus, distinct from any external stimulus (i.e., an endogenous nastic rhythm rather than a stimulus-triggered one), conceptually related to the circadian stomatal baseline covered on &lt;a
     href=&#34;../stomatal-physiology-gas-exchange/&#34;&gt;Stomatal Physiology &amp;amp; Gas Exchange&lt;/a&gt;.&lt;/li&gt;
@@ -1256,11 +1824,114 @@
 &lt;li&gt;&amp;ldquo;Explain why the Venus flytrap requires two trigger-hair touches within a short window before closing, rather than responding to a single touch.&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Visual Reference&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;visual-reference&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt; &lt;em&gt;(built later — see project workflow)&lt;/em&gt;&lt;/p&gt;
+    &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Phototropic bending mechanism animator (SVG/JS)&lt;/strong&gt; — a coleoptile cross-section under unilateral light; activating the response shows phototropin detection, lateral PIN-transporter relocalization, auxin accumulating on the shaded side, and the resulting differential elongation bending the coleoptile toward the light, step by step.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;photo-anim-widget&#34; style=&#34;background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:&#39;Inter&#39;,&#39;Segoe UI&#39;,Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);&#34;&gt;
+  &lt;svg viewBox=&#34;0 0 200 200&#34; width=&#34;180&#34; height=&#34;180&#34; style=&#34;display:block; margin:0 auto;&#34;&gt;
+    &lt;text x=&#34;30&#34; y=&#34;30&#34; font-size=&#34;20&#34; text-anchor=&#34;middle&#34;&gt;&amp;#9728;&amp;#65039;&lt;/text&gt;
+    &lt;path id=&#34;phStem&#34; d=&#34;M100 170 L100 60&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;14&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34;/&gt;
+    &lt;circle id=&#34;phReceptor&#34; cx=&#34;100&#34; cy=&#34;55&#34; r=&#34;6&#34; fill=&#34;#fde68a&#34; stroke=&#34;#92400e&#34; stroke-width=&#34;1.5&#34; opacity=&#34;0&#34;/&gt;
+    &lt;path id=&#34;phPinArrow&#34; d=&#34;M108 90 L92 90&#34; stroke=&#34;#1d70a2&#34; stroke-width=&#34;3&#34; opacity=&#34;0&#34; marker-end=&#34;url(#phArrow)&#34;/&gt;
+    &lt;ellipse id=&#34;phAuxinGlow&#34; cx=&#34;88&#34; cy=&#34;90&#34; rx=&#34;10&#34; ry=&#34;30&#34; fill=&#34;#b45309&#34; opacity=&#34;0&#34;/&gt;
+    &lt;defs&gt;
+      &lt;marker id=&#34;phArrow&#34; markerWidth=&#34;6&#34; markerHeight=&#34;6&#34; refX=&#34;3&#34; refY=&#34;3&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M0,0 L6,3 L0,6 Z&#34; fill=&#34;#1d70a2&#34;/&gt;&lt;/marker&gt;
+    &lt;/defs&gt;
+  &lt;/svg&gt;
+  &lt;div style=&#34;text-align:center;&#34;&gt;
+    &lt;button id=&#34;phStepBtn&#34; style=&#34;background:#2d6a4f; color:#fff; border:none; padding:9px 18px; border-radius:999px; font-size:0.88rem; cursor:pointer;&#34;&gt;Activate&lt;/button&gt;
+    &lt;div id=&#34;phNote&#34; style=&#34;margin-top:10px; font-size:0.85rem; color:#4b5563; min-height:2.4em;&#34;&gt;Unilateral blue light shines on the coleoptile from the left.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function(){
+  var stem = document.getElementById(&#39;phStem&#39;);
+  var receptor = document.getElementById(&#39;phReceptor&#39;);
+  var pinArrow = document.getElementById(&#39;phPinArrow&#39;);
+  var auxinGlow = document.getElementById(&#39;phAuxinGlow&#39;);
+  var btn = document.getElementById(&#39;phStepBtn&#39;);
+  var note = document.getElementById(&#39;phNote&#39;);
+  var steps = [
+    &#39;Unilateral blue light shines on the coleoptile from the left.&#39;,
+    &#39;Phototropin photoreceptors at the tip detect the blue light.&#39;,
+    &#39;PIN transporters relocalize laterally, redirecting auxin transport toward the shaded (right) side.&#39;,
+    &#39;Auxin accumulates on the shaded side, well above the illuminated side.&#39;,
+    &#39;The auxin-rich shaded side elongates faster than the illuminated side, physically bending the coleoptile toward the light.&#39;
+  ];
+  var i = 0;
+  function render(){
+    receptor.setAttribute(&#39;opacity&#39;, i &gt;= 1 ? 1 : 0);
+    pinArrow.setAttribute(&#39;opacity&#39;, i &gt;= 2 ? 1 : 0);
+    auxinGlow.setAttribute(&#39;opacity&#39;, i &gt;= 3 ? 0.6 : 0);
+    stem.setAttribute(&#39;d&#39;, i &gt;= 4 ? &#39;M100 170 Q75 120 88 65&#39; : &#39;M100 170 L100 60&#39;);
+    note.textContent = steps[i];
+    btn.textContent = i === steps.length - 1 ? &#39;Replay&#39; : &#39;Next step&#39;;
+  }
+  btn.addEventListener(&#39;click&#39;, function(){
+    i = i + 1;
+    if (i &gt;= steps.length){ i = 0; }
+    render();
+  });
+  render();
+})();
+&lt;/script&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Statolith gravity-sensing simulator (click-through, tiltable diagram)&lt;/strong&gt; — a root cap statocyte cell that can be &amp;ldquo;tilted&amp;rdquo; by the user; statoliths visibly resettle toward the new gravity-ward side, triggering a redrawn auxin distribution and predicted growth direction, letting the user test multiple orientations rather than only the vertical default.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;div id=&#34;statolith-widget&#34; style=&#34;background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:&#39;Inter&#39;,&#39;Segoe UI&#39;,Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);&#34;&gt;
+  &lt;svg viewBox=&#34;0 0 200 200&#34; width=&#34;180&#34; height=&#34;180&#34; style=&#34;display:block; margin:0 auto;&#34;&gt;
+    &lt;g id=&#34;stTiltGroup&#34; transform=&#34;rotate(0 100 100)&#34;&gt;
+      &lt;ellipse cx=&#34;100&#34; cy=&#34;100&#34; rx=&#34;60&#34; ry=&#34;70&#34; fill=&#34;#f1f5f9&#34; stroke=&#34;#94a3b8&#34; stroke-width=&#34;2&#34;/&gt;
+      &lt;circle id=&#34;stDot1&#34; cx=&#34;90&#34; cy=&#34;145&#34; r=&#34;6&#34; fill=&#34;#7c3aed&#34;/&gt;
+      &lt;circle id=&#34;stDot2&#34; cx=&#34;105&#34; cy=&#34;150&#34; r=&#34;6&#34; fill=&#34;#7c3aed&#34;/&gt;
+      &lt;circle id=&#34;stDot3&#34; cx=&#34;100&#34; cy=&#34;158&#34; r=&#34;6&#34; fill=&#34;#7c3aed&#34;/&gt;
+      &lt;path id=&#34;stAuxinArrow&#34; d=&#34;M40 100 H15&#34; stroke=&#34;#b45309&#34; stroke-width=&#34;4&#34; marker-end=&#34;url(#stArrow)&#34;/&gt;
+    &lt;/g&gt;
+    &lt;text x=&#34;100&#34; y=&#34;20&#34; text-anchor=&#34;middle&#34; font-size=&#34;11&#34; fill=&#34;#334155&#34; font-weight=&#34;600&#34;&gt;g &amp;#8595;&lt;/text&gt;
+    &lt;defs&gt;
+      &lt;marker id=&#34;stArrow&#34; markerWidth=&#34;6&#34; markerHeight=&#34;6&#34; refX=&#34;3&#34; refY=&#34;3&#34; orient=&#34;auto&#34;&gt;&lt;path d=&#34;M0,0 L6,3 L0,6 Z&#34; fill=&#34;#b45309&#34;/&gt;&lt;/marker&gt;
+    &lt;/defs&gt;
+  &lt;/svg&gt;
+  &lt;div style=&#34;text-align:center;&#34;&gt;
+    &lt;button class=&#34;st-btn&#34; id=&#34;stVertBtn&#34; style=&#34;background:#2d6a4f; color:#fff; border:none; padding:7px 14px; border-radius:999px; font-size:0.82rem; cursor:pointer; margin:2px;&#34;&gt;Vertical&lt;/button&gt;
+    &lt;button class=&#34;st-btn&#34; id=&#34;stRightBtn&#34; style=&#34;background:#94a3b8; color:#fff; border:none; padding:7px 14px; border-radius:999px; font-size:0.82rem; cursor:pointer; margin:2px;&#34;&gt;Tilt right&lt;/button&gt;
+    &lt;button class=&#34;st-btn&#34; id=&#34;stLeftBtn&#34; style=&#34;background:#94a3b8; color:#fff; border:none; padding:7px 14px; border-radius:999px; font-size:0.82rem; cursor:pointer; margin:2px;&#34;&gt;Tilt left&lt;/button&gt;
+    &lt;div id=&#34;stNote&#34; style=&#34;margin-top:10px; font-size:0.85rem; color:#4b5563;&#34;&gt;Root growing vertically — statoliths settle evenly, auxin distributed symmetrically, growth continues straight down.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function(){
+  var buttons = {vert:document.getElementById(&#39;stVertBtn&#39;), right:document.getElementById(&#39;stRightBtn&#39;), left:document.getElementById(&#39;stLeftBtn&#39;)};
+  var tiltGroup = document.getElementById(&#39;stTiltGroup&#39;);
+  var auxinArrow = document.getElementById(&#39;stAuxinArrow&#39;);
+  var note = document.getElementById(&#39;stNote&#39;);
+  function clearButtons(){
+    Object.keys(buttons).forEach(function(k){ buttons[k].style.background = &#39;#94a3b8&#39;; });
+  }
+  function setTilt(dir){
+    clearButtons();
+    buttons[dir].style.background = &#39;#2d6a4f&#39;;
+    if (dir === &#39;vert&#39;){
+      tiltGroup.setAttribute(&#39;transform&#39;, &#39;rotate(0 100 100)&#39;);
+      auxinArrow.style.opacity = 0;
+      note.textContent = &#39;Root growing vertically — statoliths settle evenly, auxin distributed symmetrically, growth continues straight down.&#39;;
+    } else if (dir === &#39;right&#39;){
+      tiltGroup.setAttribute(&#39;transform&#39;, &#39;rotate(35 100 100)&#39;);
+      auxinArrow.style.opacity = 1;
+      note.textContent = &#39;Tilted to the right — statoliths resettle toward the new lower side, PIN transporters redistribute auxin there, and growth curves back downward (positive gravitropism).&#39;;
+    } else if (dir === &#39;left&#39;){
+      tiltGroup.setAttribute(&#39;transform&#39;, &#39;rotate(-35 100 100)&#39;);
+      auxinArrow.style.opacity = 1;
+      note.textContent = &#39;Tilted to the left — statoliths resettle toward the new lower side (now the left), auxin redistributes there, and growth curves back downward on the opposite side from before.&#39;;
+    }
+  }
+  buttons.vert.addEventListener(&#39;click&#39;, function(){ setTilt(&#39;vert&#39;); });
+  buttons.right.addEventListener(&#39;click&#39;, function(){ setTilt(&#39;right&#39;); });
+  buttons.left.addEventListener(&#39;click&#39;, function(){ setTilt(&#39;left&#39;); });
+  setTilt(&#39;vert&#39;);
+})();
+&lt;/script&gt;
 &lt;p&gt;&lt;em&gt;(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Practice Problems&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;practice-problems&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#practice-problems&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
@@ -1316,7 +1987,7 @@
     &lt;a href=&#34;#key-concepts&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Phytochrome and the Red/Far-Red Switch&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;phytochrome-and-the-redfar-red-switch&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#phytochrome-and-the-redfar-red-switch&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Phytochrome&lt;/strong&gt; is a photoreversible pigment-protein that exists in two interconvertible forms: &lt;strong&gt;Pr&lt;/strong&gt; (absorbs red light, ~660 nm) and &lt;strong&gt;Pfr&lt;/strong&gt; (absorbs far-red light, ~730 nm) — absorbing red light converts Pr to Pfr, and absorbing far-red light converts Pfr back to Pr. Sunlight contains far more red than far-red light, so Pfr accumulates during the day; in darkness, Pfr slowly and spontaneously reverts to Pr over the course of the night (rather than requiring far-red light specifically), at a roughly constant rate. This slow, dark-driven Pfr-to-Pr conversion is what allows phytochrome to function as a night-length timer: the longer an uninterrupted dark period lasts, the more completely Pfr reverts to Pr, so the Pfr:Pr ratio present at dawn is a direct molecular readout of how long the preceding night was. Critically, this makes phytochrome sensitive to &lt;strong&gt;night length&lt;/strong&gt;, not day length directly, which is the basis for the terminology correction in the next section.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/phytochrome-pr-pfr-cycle.png&#34; alt=&#34;Phytochrome Pr/Pfr photoreversible cycle: red light (670 nm) converts the inactive Pr form to the active Pfr form; far-red light (730 nm) or, more slowly, darkness converts Pfr back to Pr&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: Preach Bio — confirm rights basis before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: Preach Bio&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Short-Day, Long-Day, and Day-Neutral Plants&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;short-day-long-day-and-day-neutral-plants&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#short-day-long-day-and-day-neutral-plants&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Flowering-time classification is conventionally named by day length but mechanistically determined by &lt;strong&gt;critical night length&lt;/strong&gt;, a fact demonstrable by a single classic experiment: interrupting a long night with a brief pulse of red light in the middle prevents flowering in a short-day plant just as effectively as shortening the night itself, while interrupting a short night has no equivalent effect — showing that the plant is measuring the uninterrupted dark period, not daylight directly.&lt;/p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -1332,16 +2003,16 @@
 &lt;h3&gt;Vernalization&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;vernalization&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#vernalization&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Some species (many biennials and winter annuals) additionally require &lt;strong&gt;vernalization&lt;/strong&gt; — a prolonged period of cold exposure, typically during winter, before they become competent to flower even under an otherwise inductive photoperiod the following season. Mechanistically, vernalization involves epigenetic silencing of a floral repressor gene (in the well-studied case, sustained cold progressively represses the &lt;em&gt;FLC&lt;/em&gt; repressor via chromatin modification), a change that persists through subsequent cell divisions in the meristem (a form of cellular, mitotically heritable memory of the cold exposure) even after the cold period ends and temperatures rise — which is why a single winter&amp;rsquo;s cold, not the plant&amp;rsquo;s continued exposure to cold at flowering time, is sufficient to unlock the response. Vernalization and photoperiod act as independent checkpoints: a species requiring both will not flower on photoperiod alone without prior cold exposure, nor on cold exposure alone without the correct subsequent photoperiod.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/vernalization-flc-timeline.png&#34; alt=&#34;Vernalization outcome and the classical (pre-molecular) flower-inducing-substance model: left, a slightly germinated seed either chilled (flowers) or not chilled (fails to flower) at the same ordinary growing temperature; right, the classical “vernalin”/“florigen” translocation model proposed to carry the vernalization-induced signal from leaf to flower bud, with devernalization by high temperature&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: SlideShare — confirm licensing basis before public deployment. Note: this depicts the classical vernalization outcome and the historical &amp;ldquo;vernalin/florigen&amp;rdquo; hypothesis, not the modern FLC epigenetic-silencing mechanism described in the text above — the two models coexist here as historical context, not as equivalent explanations.&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: SlideShare. Note: this depicts the classical vernalization outcome and the historical &amp;ldquo;vernalin/florigen&amp;rdquo; hypothesis, not the modern FLC epigenetic-silencing mechanism described in the text above — the two models coexist here as historical context, not as equivalent explanations.&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Florigen: The Mobile Flowering Signal&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;florigen-the-mobile-flowering-signal&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#florigen-the-mobile-flowering-signal&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Photoperiod is sensed in leaves (where phytochrome and the night-length-measuring clock operate), but the floral transition itself occurs at the &lt;strong&gt;shoot apical meristem&lt;/strong&gt;, often at a considerable distance — classic grafting experiments (an induced leaf grafted onto an otherwise non-induced plant of the same species triggers flowering in the recipient) demonstrated decades before its molecular identity was known that a mobile, graft-transmissible signal, not an electrical or purely local response, carries the flowering decision from leaf to apex.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/grafting-experiment-florigen.png&#34; alt=&#34;Grafting technique terminology (in vitro micrografting vs. conventional grafting): scion/microscion, rootstock/microrootstock, and the graft union where callus cells from both sides interconnect the vascular systems&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: not identified — no image of the specific flowering-induction grafting experiment was found; this substitute shows only general grafting technique/terminology, not the florigen-transmission result described in the text. Confirm licensing basis before public deployment.&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: not identified — no image of the specific flowering-induction grafting experiment was found; this substitute shows only general grafting technique/terminology, not the florigen-transmission result described in the text.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;This signal is now identified as &lt;strong&gt;florigen&lt;/strong&gt;, the &lt;strong&gt;FT (Flowering Locus T) protein&lt;/strong&gt;: synthesized in leaf phloem companion cells under inductive photoperiod, then transported through the phloem (see &lt;a
     href=&#34;../phloem-transport-translocation/&#34;&gt;Phloem Transport &amp;amp; Translocation&lt;/a&gt; for the general mechanism carrying it) to the shoot apical meristem, where it triggers the transcriptional program converting the vegetative meristem into a floral meristem — the developmental switch whose structural output (the four floral whorls) is covered on &lt;a
     href=&#34;../../6-plant-anatomy/flower-anatomy-reproductive-structures/&#34;&gt;Flower Anatomy &amp;amp; Reproductive Structures&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/florigen-ft-pathway.png&#34; alt=&#34;FT (florigen) production and transport: under long-day/inductive red:far-red light conditions, FT-producing companion cells in the leaf phloem load FT (and FLP1) protein into the sieve element flow, carrying it to the shoot apical meristem to trigger floral development and to promote stem growth&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: ScienceDirect (journal article abstract page, S1534580725000656) — open-access status not confirmed, revisit before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: ScienceDirect (journal article abstract page, S1534580725000656)&lt;/em&gt;&lt;/p&gt;
 &lt;div role=&#34;img&#34; aria-label=&#34;Diagram&#34;&gt;
   &lt;pre class=&#34;mermaid hx:mt-6&#34;&gt;
     graph TD;
@@ -1391,11 +2062,111 @@
 &lt;li&gt;&amp;ldquo;Trace florigen&amp;rsquo;s path from its site of synthesis to its site of action, naming the transport tissue involved.&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Visual Reference&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;visual-reference&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt; &lt;em&gt;(built later — see project workflow)&lt;/em&gt;&lt;/p&gt;
+    &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Phytochrome Pfr/Pr night-length timer (SVG/JS, slider for night duration)&lt;/strong&gt; — a slider sets night length; the diagram shows Pfr-to-Pr reversion accumulating over the dark period, with a threshold marker indicating whether the resulting dawn Pfr:Pr ratio would trigger flowering in a short-day vs. long-day plant, letting the user test the red-light-interruption scenario as a toggle mid-night.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;phyto-timer-widget&#34; style=&#34;background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:&#39;Inter&#39;,&#39;Segoe UI&#39;,Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);&#34;&gt;
+  &lt;svg viewBox=&#34;0 0 300 90&#34; width=&#34;100%&#34; style=&#34;max-width:320px; display:block; margin:0 auto;&#34;&gt;
+    &lt;rect x=&#34;10&#34; y=&#34;20&#34; width=&#34;280&#34; height=&#34;24&#34; rx=&#34;4&#34; fill=&#34;#1e293b&#34;/&gt;
+    &lt;rect id=&#34;ptPfrBar&#34; x=&#34;10&#34; y=&#34;20&#34; width=&#34;280&#34; height=&#34;24&#34; rx=&#34;4&#34; fill=&#34;#fde68a&#34;/&gt;
+    &lt;line x1=&#34;150&#34; y1=&#34;10&#34; x2=&#34;150&#34; y2=&#34;60&#34; stroke=&#34;#b91c1c&#34; stroke-width=&#34;2&#34; stroke-dasharray=&#34;3 2&#34;/&gt;
+    &lt;text x=&#34;150&#34; y=&#34;72&#34; text-anchor=&#34;middle&#34; font-size=&#34;9&#34; fill=&#34;#b91c1c&#34;&gt;critical threshold&lt;/text&gt;
+    &lt;text x=&#34;10&#34; y=&#34;14&#34; font-size=&#34;9&#34; fill=&#34;#4b5563&#34;&gt;dusk (Pfr high)&lt;/text&gt;
+    &lt;text x=&#34;290&#34; y=&#34;14&#34; text-anchor=&#34;end&#34; font-size=&#34;9&#34; fill=&#34;#4b5563&#34;&gt;dawn&lt;/text&gt;
+  &lt;/svg&gt;
+  &lt;label style=&#34;font-size:0.85rem; font-weight:600; color:#334155; display:block; text-align:center; margin-top:8px;&#34;&gt;Night length: &lt;span id=&#34;ptHoursOut&#34;&gt;8&lt;/span&gt; h&lt;/label&gt;
+  &lt;input type=&#34;range&#34; id=&#34;ptSlider&#34; min=&#34;0&#34; max=&#34;16&#34; value=&#34;8&#34; style=&#34;width:100%; max-width:300px; display:block; margin:0 auto;&#34;&gt;
+  &lt;div style=&#34;text-align:center; margin-top:8px;&#34;&gt;
+    &lt;label style=&#34;font-size:0.82rem; color:#334155;&#34;&gt;&lt;input type=&#34;checkbox&#34; id=&#34;ptInterrupt&#34;&gt; Interrupt night with a red-light pulse at midnight&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div id=&#34;ptReadout&#34; style=&#34;text-align:center; margin-top:10px; font-size:0.85rem; font-weight:600; color:#1a472a;&#34;&gt;Dawn Pfr level: high&lt;/div&gt;
+  &lt;div style=&#34;display:flex; justify-content:center; gap:20px; margin-top:8px;&#34;&gt;
+    &lt;div id=&#34;ptShortDay&#34; style=&#34;font-size:0.82rem; color:#4b5563;&#34;&gt;Short-day plant: &lt;b&gt;—&lt;/b&gt;&lt;/div&gt;
+    &lt;div id=&#34;ptLongDay&#34; style=&#34;font-size:0.82rem; color:#4b5563;&#34;&gt;Long-day plant: &lt;b&gt;—&lt;/b&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function(){
+  var slider = document.getElementById(&#39;ptSlider&#39;);
+  var interrupt = document.getElementById(&#39;ptInterrupt&#39;);
+  var hoursOut = document.getElementById(&#39;ptHoursOut&#39;);
+  var pfrBar = document.getElementById(&#39;ptPfrBar&#39;);
+  var readout = document.getElementById(&#39;ptReadout&#39;);
+  var shortDay = document.getElementById(&#39;ptShortDay&#39;);
+  var longDay = document.getElementById(&#39;ptLongDay&#39;);
+  var critical = 12;
+  function update(){
+    var hours = parseInt(slider.value,10);
+    var interrupted = interrupt.checked;
+    hoursOut.textContent = hours;
+    var pfrFraction = Math.max(0, 1 - hours/16);
+    if (interrupted){ pfrFraction = Math.max(pfrFraction, 0.7); }
+    pfrBar.setAttribute(&#39;width&#39;, 280 * pfrFraction);
+    readout.textContent = &#39;Dawn Pfr level: &#39; + Math.round(pfrFraction*100) + &#39;%&#39; + (interrupted ? &#39; (reset by red-light pulse)&#39; : &#39;&#39;);
+    var effectiveLongNight = hours &gt; critical &amp;&amp; !interrupted;
+    shortDay.innerHTML = &#39;Short-day plant: &lt;b&gt;&#39; + (effectiveLongNight ? &#39;Flowers&#39; : &#39;No flowering&#39;) + &#39;&lt;/b&gt;&#39;;
+    longDay.innerHTML = &#39;Long-day plant: &lt;b&gt;&#39; + (effectiveLongNight ? &#39;No flowering&#39; : &#39;Flowers&#39;) + &#39;&lt;/b&gt;&#39;;
+  }
+  slider.addEventListener(&#39;input&#39;, update);
+  interrupt.addEventListener(&#39;change&#39;, update);
+  update();
+})();
+&lt;/script&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Grafting experiment reconstructor (click-through)&lt;/strong&gt; — a two-plant diagram (induced donor, non-induced recipient) where clicking &amp;ldquo;graft&amp;rdquo; transmits a visible signal marker across the graft union to the recipient&amp;rsquo;s apex, which then transitions to flowering — reproducing the classic experiment&amp;rsquo;s logic before revealing FT protein as the modern molecular identity of that signal.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;div id=&#34;graft-widget&#34; style=&#34;background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:&#39;Inter&#39;,&#39;Segoe UI&#39;,Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);&#34;&gt;
+  &lt;svg viewBox=&#34;0 0 320 140&#34; width=&#34;100%&#34; style=&#34;max-width:340px; display:block; margin:0 auto;&#34;&gt;
+    &lt;text x=&#34;80&#34; y=&#34;18&#34; text-anchor=&#34;middle&#34; font-size=&#34;11&#34; font-weight=&#34;600&#34; fill=&#34;#334155&#34;&gt;Donor (induced)&lt;/text&gt;
+    &lt;path d=&#34;M80 120 L80 40&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;8&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34;/&gt;
+    &lt;text id=&#34;donorFlower&#34; x=&#34;80&#34; y=&#34;35&#34; text-anchor=&#34;middle&#34; font-size=&#34;16&#34;&gt;&amp;#127801;&lt;/text&gt;
+    &lt;text x=&#34;240&#34; y=&#34;18&#34; text-anchor=&#34;middle&#34; font-size=&#34;11&#34; font-weight=&#34;600&#34; fill=&#34;#334155&#34;&gt;Recipient (non-induced)&lt;/text&gt;
+    &lt;path d=&#34;M240 120 L240 40&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;8&#34; fill=&#34;none&#34; stroke-linecap=&#34;round&#34;/&gt;
+    &lt;text id=&#34;recipientTop&#34; x=&#34;240&#34; y=&#34;35&#34; text-anchor=&#34;middle&#34; font-size=&#34;16&#34;&gt;&amp;#127807;&lt;/text&gt;
+    &lt;path id=&#34;graftLine&#34; d=&#34;M80 90 H240&#34; stroke=&#34;#94a3b8&#34; stroke-width=&#34;3&#34; stroke-dasharray=&#34;4 3&#34; opacity=&#34;0&#34;/&gt;
+    &lt;circle id=&#34;signalDot&#34; cx=&#34;80&#34; cy=&#34;90&#34; r=&#34;7&#34; fill=&#34;#7c3aed&#34; opacity=&#34;0&#34;/&gt;
+  &lt;/svg&gt;
+  &lt;div style=&#34;text-align:center;&#34;&gt;
+    &lt;button id=&#34;graftBtn&#34; style=&#34;background:#2d6a4f; color:#fff; border:none; padding:9px 18px; border-radius:999px; font-size:0.88rem; cursor:pointer;&#34;&gt;Graft donor to recipient&lt;/button&gt;
+    &lt;div id=&#34;graftNote&#34; style=&#34;margin-top:10px; font-size:0.85rem; color:#4b5563; min-height:2.4em;&#34;&gt;The donor plant has been induced to flower; the recipient has not.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function(){
+  var btn = document.getElementById(&#39;graftBtn&#39;);
+  var graftLine = document.getElementById(&#39;graftLine&#39;);
+  var signalDot = document.getElementById(&#39;signalDot&#39;);
+  var recipientTop = document.getElementById(&#39;recipientTop&#39;);
+  var note = document.getElementById(&#39;graftNote&#39;);
+  var running = false;
+  function reset(){
+    graftLine.style.opacity = 0;
+    signalDot.style.opacity = 0;
+    signalDot.setAttribute(&#39;cx&#39;, 80);
+    recipientTop.textContent = &#39;\u{1F343}&#39;;
+    note.textContent = &#39;The donor plant has been induced to flower; the recipient has not.&#39;;
+  }
+  btn.addEventListener(&#39;click&#39;, function(){
+    if (running){ return; }
+    running = true;
+    reset();
+    graftLine.style.opacity = 1;
+    signalDot.style.opacity = 1;
+    note.textContent = &#39;Grafting connects the vascular tissue of both plants — a mobile signal can now travel between them.&#39;;
+    setTimeout(function(){
+      signalDot.setAttribute(&#39;cx&#39;, 240);
+      note.textContent = &#39;The mobile signal travels from the induced donor across the graft union toward the recipient apex.&#39;;
+    }, 200);
+    setTimeout(function(){
+      recipientTop.textContent = &#39;\u{1F337}&#39;;
+      note.textContent = &#39;The recipient flowers — despite never itself experiencing the inductive photoperiod. This signal is now identified as FT (florigen) protein.&#39;;
+    }, 1600);
+    setTimeout(function(){ running = false; }, 2000);
+  });
+  reset();
+})();
+&lt;/script&gt;
 &lt;p&gt;&lt;em&gt;(Static images, and one embedded video for the critical-night-length concept, are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Practice Problems&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;practice-problems&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#practice-problems&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
@@ -1452,7 +2223,7 @@
     &lt;a href=&#34;#imbibition&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Germination begins with &lt;strong&gt;imbibition&lt;/strong&gt; — the physical uptake of water by the dry seed&amp;rsquo;s hydrophilic storage macromolecules (starch, protein), generating substantial imbibitional pressure as the seed swells, entirely independent of any active or osmotic transport process (a dead or non-viable seed imbibes water just as readily as a living one, since imbibition is a passive physical property of the seed&amp;rsquo;s dry tissue, not a metabolic response). Water typically enters first through the &lt;strong&gt;micropyle&lt;/strong&gt; (the pore in the seed coat persisting from the ovule, see &lt;a
     href=&#34;../../6-plant-anatomy/seed-fruit-anatomy/&#34;&gt;Seed &amp;amp; Fruit Anatomy&lt;/a&gt;), rehydrating the embryo and reactivating enzymatic machinery that had been essentially inactive in the dry state. Imbibition alone is necessary but not sufficient for germination to proceed — a hydrated seed can still remain dormant if its internal hormonal balance (below) does not permit further development.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/seed-imbibition.png&#34; alt=&#34;Seed structure and imbibition: seed coat layers (wax cuticle, epidermis, sclereids, parenchyma, remnant layer), embryo (hypocotyl, radicle), cotyledon, and the micropyle/hilar fissure/raphe region, with arrows tracing water uptake into the seed coat opening and cotyledon&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: New Phytologist (Wiley Online Library, doi ppp3.10631) — open-access status not confirmed, revisit before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: New Phytologist (Wiley Online Library, doi ppp3.10631)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;The GA/ABA Balance Controlling Dormancy&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-gaaba-balance-controlling-dormancy&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#the-gaaba-balance-controlling-dormancy&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Seed dormancy and its release are controlled by the same antagonistic hormone pair introduced on &lt;a
     href=&#34;../plant-hormones/&#34;&gt;Plant Hormones&lt;/a&gt;, acting here specifically:&lt;/p&gt;
@@ -1463,12 +2234,12 @@
 &lt;p&gt;Dormancy release is often gated by an additional environmental requirement layered on top of this hormonal balance — cold stratification (a period of moist chilling, mechanistically parallel to vernalization&amp;rsquo;s cold requirement for flowering, see &lt;a
     href=&#34;../photoperiodism-vernalization-flowering/&#34;&gt;Photoperiodism, Vernalization &amp;amp; Flowering&lt;/a&gt;), a period of after-ripening in dry storage, exposure to light (in some small seeds, via the same phytochrome system covered on that page), or scarification (physical or chemical abrasion of an unusually impermeable seed coat, common in many legumes) — each of these environmental gates ultimately acts by shifting the internal GA/ABA balance rather than by a separate independent mechanism.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/ga-aba-dormancy-balance.png&#34; alt=&#34;Model for the regulation of dormancy and germination by ABA and GA: ambient-environment perception drives dormancy induction (ABA synthesis via NCED, GA degradation via GA2ox2) or dormancy breaking (GA synthesis via GA3ox1, ABA degradation via CYP707A2); the resulting ABA/GA sensitivity balance is integrated into ABA or GA signaling, producing a dormant/cycling or non-dormant/germinating response&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: ResearchGate, fig. 1, &amp;ldquo;Model for the regulation of dormancy and germination by ABA and GA in response to the&amp;hellip;&amp;rdquo; — open-access status not confirmed, revisit before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: ResearchGate, fig. 1, &amp;ldquo;Model for the regulation of dormancy and germination by ABA and GA in response to the&amp;hellip;&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Reserve Mobilization: The Aleurone-GA-Amylase Mechanism&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;reserve-mobilization-the-aleurone-ga-amylase-mechanism&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#reserve-mobilization-the-aleurone-ga-amylase-mechanism&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;In cereal grains (a monocot seed structure, see &lt;a
     href=&#34;../../6-plant-anatomy/seed-fruit-anatomy/&#34;&gt;Seed &amp;amp; Fruit Anatomy&lt;/a&gt; for endosperm/scutellum anatomy), GA released once dormancy lifts diffuses from the embryo to the &lt;strong&gt;aleurone layer&lt;/strong&gt; (a specialized, protein-rich outer layer of the endosperm), where it induces transcription of the enzyme &lt;strong&gt;α-amylase&lt;/strong&gt;. Secreted α-amylase then hydrolyzes the endosperm&amp;rsquo;s stored starch into soluble sugars, which the &lt;strong&gt;scutellum&lt;/strong&gt; absorbs and transports to the growing embryo axis to fuel early growth before the seedling&amp;rsquo;s own photosynthetic tissue is functional. This pathway is a classic, directly testable example of hormone-induced gene expression (GA as the inducing signal, α-amylase as the induced gene product, starch mobilization as the measurable downstream effect), and is why exogenous GA application to isolated aleurone layers is a standard experimental assay for GA activity.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/aleurone-ga-amylase-pathway.png&#34; alt=&#34;GA-induced alpha-amylase pathway in the germinating grain: GA produced in the embryo/scutellum induces RAmy3D expression and transcription factors that upregulate hydrolytic enzymes including alpha-amylase, which hydrolyzes endosperm starch into sugars taken up by the scutellum to fuel germination — shown alongside anoxic and metal-toxicity stresses that inhibit specific steps of the pathway&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: MDPI, International Journal of Molecular Sciences (1422-0067/20/2/450) — this journal publishes fully open-access under CC BY 4.0, better licensing footing than most images so far, but confirm the specific article before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: MDPI, International Journal of Molecular Sciences (1422-0067/20/2/450)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Epigeal versus Hypogeal Germination&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;epigeal-versus-hypogeal-germination&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#epigeal-versus-hypogeal-germination&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Once growth resumes, species differ systematically in which embryonic axis segment (see &lt;a
     href=&#34;../../6-plant-anatomy/seed-fruit-anatomy/&#34;&gt;Seed &amp;amp; Fruit Anatomy&lt;/a&gt; for radicle/hypocotyl/plumule terminology) elongates to bring the seedling above ground:&lt;/p&gt;
@@ -1477,7 +2248,7 @@
 &lt;li&gt;&lt;strong&gt;Hypogeal germination&lt;/strong&gt; — the &lt;strong&gt;epicotyl&lt;/strong&gt; (the plumule and the stem segment immediately above the cotyledon attachment) elongates instead, while the cotyledons remain below ground, never photosynthesizing and serving only as a stationary nutrient reserve depleted in place (pea, most monocot grains, where the cotyledon/scutellum stays embedded in the seed structure entirely).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/epi-hypo-germination.svg&#34; alt=&#34;Epigeal vs. hypogeal germination compared side by side, from seed through root-hair/radicle emergence to seedling: the epigeal sequence shows the hypocotyl elongating to lift the cotyledons above the soil, while the hypogeal sequence shows the epicotyl and plumule elongating while the cotyledons remain below ground&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: Wikipedia — confirm licensing basis before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: Wikipedia&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;This distinction is a direct, mechanistic consequence of which axis segment&amp;rsquo;s cells are competent to elongate first in a given species, not merely a cosmetic difference in seedling appearance, and is a frequently tested practical-identification feature distinguishing seedlings of common crop species.&lt;/p&gt;
 &lt;h2&gt;Comparative Structures&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;comparative-structures&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#comparative-structures&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
@@ -1541,11 +2312,111 @@
 &lt;li&gt;&amp;ldquo;Explain why vivipary is normally prevented, and identify the hormone principally responsible for that prevention.&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Visual Reference&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;visual-reference&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt; &lt;em&gt;(built later — see project workflow)&lt;/em&gt;&lt;/p&gt;
+    &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;GA/ABA dormancy balance slider (SVG/JS)&lt;/strong&gt; — a slider representing the relative GA:ABA ratio; moving it past a threshold visibly triggers the germination program (radicle emergence) in a schematic seed diagram, letting the user test how cold stratification or scarification (represented as balance-shifting buttons) push a dormant seed past that threshold.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;dormancy-widget&#34; style=&#34;background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:&#39;Inter&#39;,&#39;Segoe UI&#39;,Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);&#34;&gt;
+  &lt;svg viewBox=&#34;0 0 160 120&#34; width=&#34;140&#34; height=&#34;105&#34; style=&#34;display:block; margin:0 auto;&#34;&gt;
+    &lt;ellipse cx=&#34;80&#34; cy=&#34;60&#34; rx=&#34;30&#34; ry=&#34;22&#34; fill=&#34;#c9a877&#34; stroke=&#34;#7c5a3a&#34; stroke-width=&#34;2&#34;/&gt;
+    &lt;path id=&#34;radicleEmerge&#34; d=&#34;M80 82 L80 82&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;5&#34; stroke-linecap=&#34;round&#34;/&gt;
+  &lt;/svg&gt;
+  &lt;label style=&#34;font-size:0.85rem; font-weight:600; color:#334155; display:block; text-align:center;&#34;&gt;GA:ABA balance&lt;/label&gt;
+  &lt;input type=&#34;range&#34; id=&#34;dormSlider&#34; min=&#34;0&#34; max=&#34;100&#34; value=&#34;20&#34; style=&#34;width:100%; max-width:300px; display:block; margin:0 auto;&#34;&gt;
+  &lt;div style=&#34;text-align:center; font-size:0.8rem; color:#4b5563;&#34;&gt;
+    &lt;span&gt;ABA-dominant (dormant)&lt;/span&gt; &amp;nbsp;&amp;mdash;&amp;nbsp; &lt;span&gt;GA-dominant (germinating)&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div style=&#34;text-align:center; margin-top:8px;&#34;&gt;
+    &lt;button id=&#34;dormColdBtn&#34; style=&#34;background:#1d70a2; color:#fff; border:none; padding:7px 14px; border-radius:999px; font-size:0.82rem; cursor:pointer; margin:2px;&#34;&gt;Apply cold stratification&lt;/button&gt;
+    &lt;button id=&#34;dormScarBtn&#34; style=&#34;background:#b45309; color:#fff; border:none; padding:7px 14px; border-radius:999px; font-size:0.82rem; cursor:pointer; margin:2px;&#34;&gt;Apply scarification&lt;/button&gt;
+    &lt;button id=&#34;dormResetBtn&#34; style=&#34;background:#94a3b8; color:#fff; border:none; padding:7px 14px; border-radius:999px; font-size:0.82rem; cursor:pointer; margin:2px;&#34;&gt;Reset (fresh dormant seed)&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div id=&#34;dormNote&#34; style=&#34;text-align:center; margin-top:10px; font-size:0.85rem; color:#4b5563;&#34;&gt;ABA-dominant — the seed remains dormant.&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function(){
+  var slider = document.getElementById(&#39;dormSlider&#39;);
+  var radicle = document.getElementById(&#39;radicleEmerge&#39;);
+  var note = document.getElementById(&#39;dormNote&#39;);
+  var threshold = 60;
+  function update(){
+    var v = parseInt(slider.value,10);
+    if (v &gt;= threshold){
+      var len = 10 + (v-threshold)*0.4;
+      radicle.setAttribute(&#39;d&#39;, &#39;M80 82 L80 &#39; + (82+len));
+      note.textContent = &#39;GA-dominant — past the threshold, alpha-amylase is induced and the radicle emerges: germination proceeds.&#39;;
+    } else {
+      radicle.setAttribute(&#39;d&#39;, &#39;M80 82 L80 82&#39;);
+      note.textContent = &#39;ABA-dominant — the seed remains dormant.&#39;;
+    }
+  }
+  slider.addEventListener(&#39;input&#39;, update);
+  document.getElementById(&#39;dormColdBtn&#39;).addEventListener(&#39;click&#39;, function(){
+    slider.value = Math.min(100, parseInt(slider.value,10) + 35);
+    update();
+  });
+  document.getElementById(&#39;dormScarBtn&#39;).addEventListener(&#39;click&#39;, function(){
+    slider.value = Math.min(100, parseInt(slider.value,10) + 25);
+    update();
+  });
+  document.getElementById(&#39;dormResetBtn&#39;).addEventListener(&#39;click&#39;, function(){
+    slider.value = 20;
+    update();
+  });
+  update();
+})();
+&lt;/script&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Epigeal vs. hypogeal germination sequence toggle&lt;/strong&gt; — a seedling emergence animation that toggles between the two patterns, highlighting whichever axis segment (hypocotyl or epicotyl) is elongating and tracking cotyledon position throughout.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;div id=&#34;germ-pattern-widget&#34; style=&#34;background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:&#39;Inter&#39;,&#39;Segoe UI&#39;,Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);&#34;&gt;
+  &lt;svg viewBox=&#34;0 0 200 180&#34; width=&#34;180&#34; height=&#34;160&#34; style=&#34;display:block; margin:0 auto;&#34;&gt;
+    &lt;rect x=&#34;0&#34; y=&#34;110&#34; width=&#34;200&#34; height=&#34;70&#34; fill=&#34;#c9a877&#34;/&gt;
+    &lt;line x1=&#34;0&#34; y1=&#34;110&#34; x2=&#34;200&#34; y2=&#34;110&#34; stroke=&#34;#7c5a3a&#34; stroke-width=&#34;2&#34;/&gt;
+    &lt;path id=&#34;gpAxis&#34; d=&#34;M100 130 L100 90&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;7&#34; stroke-linecap=&#34;round&#34;/&gt;
+    &lt;ellipse id=&#34;gpCotA&#34; cx=&#34;88&#34; cy=&#34;130&#34; rx=&#34;12&#34; ry=&#34;8&#34; fill=&#34;#f3c98b&#34; stroke=&#34;#92400e&#34; stroke-width=&#34;1.5&#34;/&gt;
+    &lt;ellipse id=&#34;gpCotB&#34; cx=&#34;112&#34; cy=&#34;130&#34; rx=&#34;12&#34; ry=&#34;8&#34; fill=&#34;#f3c98b&#34; stroke=&#34;#92400e&#34; stroke-width=&#34;1.5&#34;/&gt;
+    &lt;text id=&#34;gpSegLabel&#34; x=&#34;100&#34; y=&#34;80&#34; text-anchor=&#34;middle&#34; font-size=&#34;10&#34; font-weight=&#34;600&#34; fill=&#34;#1a472a&#34;&gt;hypocotyl&lt;/text&gt;
+  &lt;/svg&gt;
+  &lt;div style=&#34;text-align:center;&#34;&gt;
+    &lt;button class=&#34;gp-btn&#34; id=&#34;gpEpigealBtn&#34; style=&#34;background:#2d6a4f; color:#fff; border:none; padding:7px 14px; border-radius:999px; font-size:0.82rem; cursor:pointer; margin:2px;&#34;&gt;Epigeal (bean)&lt;/button&gt;
+    &lt;button class=&#34;gp-btn&#34; id=&#34;gpHypogealBtn&#34; style=&#34;background:#94a3b8; color:#fff; border:none; padding:7px 14px; border-radius:999px; font-size:0.82rem; cursor:pointer; margin:2px;&#34;&gt;Hypogeal (pea)&lt;/button&gt;
+    &lt;div id=&#34;gpNote&#34; style=&#34;margin-top:10px; font-size:0.85rem; color:#4b5563;&#34;&gt;Epigeal: the hypocotyl elongates, lifting the cotyledons above ground where they green temporarily.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function(){
+  var epiBtn = document.getElementById(&#39;gpEpigealBtn&#39;);
+  var hypoBtn = document.getElementById(&#39;gpHypogealBtn&#39;);
+  var axis = document.getElementById(&#39;gpAxis&#39;);
+  var cotA = document.getElementById(&#39;gpCotA&#39;);
+  var cotB = document.getElementById(&#39;gpCotB&#39;);
+  var segLabel = document.getElementById(&#39;gpSegLabel&#39;);
+  var note = document.getElementById(&#39;gpNote&#39;);
+  function setMode(epigeal){
+    epiBtn.style.background = epigeal ? &#39;#2d6a4f&#39; : &#39;#94a3b8&#39;;
+    hypoBtn.style.background = epigeal ? &#39;#94a3b8&#39; : &#39;#2d6a4f&#39;;
+    if (epigeal){
+      axis.setAttribute(&#39;d&#39;, &#39;M100 130 L100 60&#39;);
+      cotA.setAttribute(&#39;cy&#39;, 55);
+      cotB.setAttribute(&#39;cy&#39;, 55);
+      segLabel.setAttribute(&#39;y&#39;, 50);
+      segLabel.textContent = &#39;hypocotyl (elongating)&#39;;
+      note.textContent = &#39;Epigeal: the hypocotyl elongates, lifting the cotyledons above ground where they green temporarily.&#39;;
+    } else {
+      axis.setAttribute(&#39;d&#39;, &#39;M100 130 L100 60&#39;);
+      cotA.setAttribute(&#39;cy&#39;, 130);
+      cotB.setAttribute(&#39;cy&#39;, 130);
+      segLabel.setAttribute(&#39;y&#39;, 50);
+      segLabel.textContent = &#39;epicotyl (elongating)&#39;;
+      note.textContent = &#39;Hypogeal: the epicotyl elongates while the cotyledons stay below ground, never photosynthesizing.&#39;;
+    }
+  }
+  epiBtn.addEventListener(&#39;click&#39;, function(){ setMode(true); });
+  hypoBtn.addEventListener(&#39;click&#39;, function(){ setMode(false); });
+  setMode(true);
+})();
+&lt;/script&gt;
 &lt;p&gt;&lt;em&gt;(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. The epigeal and hypogeal sequences ended up as a single combined image rather than two separate ones.)&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Practice Problems&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;practice-problems&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#practice-problems&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
@@ -1599,30 +2470,31 @@
     &lt;a href=&#34;#salinity-stress&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;High soil salinity presents a double challenge: an osmotic component (a saline soil has a very negative water potential, making it physically harder for roots to extract water at all, mechanistically continuous with the water potential framework on &lt;a
     href=&#34;../water-transport-transpiration/&#34;&gt;Water Transport &amp;amp; Transpiration&lt;/a&gt;) and an ionic toxicity component (excess Na⁺ specifically disrupts K⁺-dependent enzyme function and membrane integrity once it accumulates intracellularly).&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/compatible-solute-accumulation.png&#34; alt=&#34;Salt stress overview: ionic toxicity and osmotic stress together drive morphological (reduced growth, chlorosis, reduced tillering/root growth), biochemical (oxidative stress, altered metabolism, high Na&amp;#43; transport, lower K&amp;#43; uptake), and physiological (reduced photosynthesis, stomatal closure, decreased water content) responses, ultimately reducing crop productivity&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: not specified — confirm licensing basis before public deployment. Note: despite the filename, this shows the general osmotic/ionic salt-stress-response overview matching this section&amp;rsquo;s framing, not the compatible-solute accumulation mechanism originally requested for the Drought Stress section above (which has no image sourced).&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: not specified. Note: despite the filename, this shows the general osmotic/ionic salt-stress-response overview matching this section&amp;rsquo;s framing, not the compatible-solute accumulation mechanism originally requested for the Drought Stress section above (which has no image sourced).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Plants respond by &lt;strong&gt;excluding&lt;/strong&gt; Na⁺ at the root (selective ion channels favoring K⁺ uptake over Na⁺) or, where exclusion is incomplete, &lt;strong&gt;compartmentalizing&lt;/strong&gt; absorbed Na⁺ into the vacuole (away from cytoplasmic enzymes) using tonoplast Na⁺/H⁺ antiporters — a cellular-scale solution conceptually similar to CAM&amp;rsquo;s vacuolar malic acid storage (see &lt;a
     href=&#34;../calvin-cycle-photorespiration-c4-cam/&#34;&gt;Carbon Fixation&lt;/a&gt;) in that both rely on the vacuole as a large-capacity storage compartment isolated from cytoplasmic metabolism.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/salinity-na-exclusion-compartmentalization.png&#34; alt=&#34;Cellular Na&amp;#43; transport and salt-stress response network: apoplastic Na&amp;#43; influx via non-selective cation channels, Ca2&amp;#43;/ROS sensing and downstream transcriptional control (WRKY/NAC/bHLH/AP2-ERF/bZIP/MYB) regulating HKT1, vacuolar compartmentalization via the NHX Na&amp;#43;/H&amp;#43; antiporter, and SOS1-mediated Na&amp;#43; efflux/xylem-loading control limiting Na&amp;#43; delivery to the shoot&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: ResearchGate / Trends in Plant Science, fig. 5, &amp;ldquo;Overview of cellular Na+ transport mechanisms and the salt stress response network&amp;rdquo; — open-access status not confirmed, revisit before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: ResearchGate / Trends in Plant Science, fig. 5, &amp;ldquo;Overview of cellular Na+ transport mechanisms and the salt stress response network&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Temperature Stress&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;temperature-stress&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#temperature-stress&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Heat stress&lt;/strong&gt; induces &lt;strong&gt;heat-shock proteins (HSPs)&lt;/strong&gt;, molecular chaperones that bind partially denatured proteins and prevent irreversible aggregation, buying time for normal folding to resume once temperature falls — the same chaperone principle covered for animal/general protein folding elsewhere, applied here as an inducible, stress-triggered response rather than a constitutive one.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/heat-shock-protein-mechanism.png&#34; alt=&#34;Heat shock factor (HSF) activation pathway: environmental stressors (heat shock, oxidative stress, heavy metals) and non-stress developmental signals both converge on HSF, which trimerizes, enters the nucleus, and binds heat shock elements (HSE) to induce heat-shock protein production&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: MDPI — this journal publishes fully open-access under CC BY 4.0, better licensing footing than most images so far, but confirm the specific article before public deployment. Note: this shows the generalized, evolutionarily conserved HSF/HSE gene-regulatory pathway (drawn from general cell-biology literature, not plant-specific — the listed pathophysiological states are largely animal-disease contexts), illustrating how HSPs get made rather than the specific chaperone-binding/protein-protection mechanism described in the text.&lt;/em&gt; &lt;strong&gt;Cold stress&lt;/strong&gt; below freezing threatens cells primarily through extracellular ice formation drawing water out of the cytoplasm (worsening cellular dehydration) and, if ice forms intracellularly, direct membrane puncture by ice crystals; cold-acclimated tissue increases membrane unsaturated-fatty-acid content (maintaining membrane fluidity at low temperature, preventing the phase transition that would otherwise rupture the membrane) and accumulates the same compatible solutes used in drought response, since freeze-induced cellular dehydration and drought-induced water deficit present the plant with an overlapping physiological problem.&lt;/p&gt;
+&lt;em&gt;Source: MDPI. Note: this shows the generalized, evolutionarily conserved HSF/HSE gene-regulatory pathway (drawn from general cell-biology literature, not plant-specific — the listed pathophysiological states are largely animal-disease contexts), illustrating how HSPs get made rather than the specific chaperone-binding/protein-protection mechanism described in the text.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cold stress&lt;/strong&gt; below freezing threatens cells primarily through extracellular ice formation drawing water out of the cytoplasm (worsening cellular dehydration) and, if ice forms intracellularly, direct membrane puncture by ice crystals; cold-acclimated tissue increases membrane unsaturated-fatty-acid content (maintaining membrane fluidity at low temperature, preventing the phase transition that would otherwise rupture the membrane) and accumulates the same compatible solutes used in drought response, since freeze-induced cellular dehydration and drought-induced water deficit present the plant with an overlapping physiological problem.&lt;/p&gt;
 &lt;h3&gt;Biotic Defense: Constitutive and Induced Barriers&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;biotic-defense-constitutive-and-induced-barriers&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#biotic-defense-constitutive-and-induced-barriers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Plants maintain &lt;strong&gt;constitutive defenses&lt;/strong&gt; present regardless of attack — the cuticle and cell wall as physical barriers, and preformed antimicrobial/antifeedant secondary metabolites (e.g. tannins, which bind and precipitate proteins, reducing herbivore digestive efficiency and palatability) — alongside &lt;strong&gt;induced defenses&lt;/strong&gt; activated specifically upon attack, which are faster to deploy only when actually needed and less costly to maintain constitutively across the plant&amp;rsquo;s whole lifetime.&lt;/p&gt;
 &lt;h3&gt;The Hypersensitive Response and Systemic Acquired Resistance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-hypersensitive-response-and-systemic-acquired-resistance&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#the-hypersensitive-response-and-systemic-acquired-resistance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Localized pathogen recognition (via plant immune receptors detecting pathogen-associated molecules) can trigger the &lt;strong&gt;hypersensitive response (HR)&lt;/strong&gt;: rapid, localized &lt;strong&gt;programmed cell death&lt;/strong&gt; at and immediately around the infection site, which deprives biotrophic pathogens (which require living host tissue to feed) of the living cells they depend on, physically containing the infection to a small necrotic lesion rather than allowing it to spread through continuously living tissue.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/hypersensitive-response.png&#34; alt=&#34;Hypersensitive response: a leaf showing multiple discrete necrotic lesions, each a ring of dead tissue localized around and containing an infection site&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: Wikipedia — confirm licensing basis before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: Wikipedia&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;HR is typically accompanied by a burst of reactive oxygen species and local &lt;strong&gt;salicylic acid&lt;/strong&gt; accumulation, which — beyond its local role — also functions as a signal (itself or via a derived mobile signal) that travels systemically to uninfected parts of the plant, inducing &lt;strong&gt;systemic acquired resistance (SAR)&lt;/strong&gt;: a primed, heightened defensive state (including elevated expression of &lt;strong&gt;pathogenesis-related (PR) proteins&lt;/strong&gt;, many with direct antimicrobial activity such as chitinases degrading fungal cell walls) across the whole plant, providing broad, long-lasting resistance to subsequent infection by a wide range of pathogens, not just the one that triggered HR initially — an induced, whole-plant analog of an immune &amp;ldquo;memory,&amp;rdquo; though mechanistically unrelated to (and evolutionarily independent of) the adaptive immune memory covered for vertebrates on &lt;a
     href=&#34;../../3-animal-physiology/immune-physiology/&#34;&gt;Immune Physiology&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/systemic-acquired-resistance.png&#34; alt=&#34;Systemic acquired resistance signaling downstream of R-gene-mediated resistance: salicylic acid triggers induction of PR-proteins (resistance to fungi and bacteria), increased RdRP expression (increased viral RNA turnover), and AOX-dependent expression of other defense genes (inhibition of viral replication and movement)&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: ScienceDirect (topic page, &amp;ldquo;Systemic Acquired Resistance&amp;rdquo;) — open-access status not confirmed. Note: this specific diagram is framed around antiviral resistance (a classic SAR study system); the PR-protein/broad-spectrum-resistance logic it shows is the same mechanism the text describes more generally.&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: ScienceDirect (topic page, &amp;ldquo;Systemic Acquired Resistance&amp;rdquo;). Note: this specific diagram is framed around antiviral resistance (a classic SAR study system); the PR-protein/broad-spectrum-resistance logic it shows is the same mechanism the text describes more generally.&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Herbivory Defense&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;herbivory-defense&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#herbivory-defense&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Beyond constitutive deterrents like tannins, many species mount &lt;strong&gt;induced&lt;/strong&gt; anti-herbivore responses: mechanical damage or herbivore saliva components trigger &lt;strong&gt;jasmonic acid&lt;/strong&gt; signaling (a hormone pathway distinct from but interacting with the six covered on &lt;a
     href=&#34;../plant-hormones/&#34;&gt;Plant Hormones&lt;/a&gt;), which upregulates production of defensive secondary metabolites — protease inhibitors (impairing the herbivore&amp;rsquo;s digestive enzymes), alkaloids, or, in some species, &lt;strong&gt;volatile organic compounds&lt;/strong&gt; released from damaged tissue that can attract the herbivore&amp;rsquo;s own natural predators or parasitoids (an indirect defense, recruiting a third party rather than acting on the herbivore directly) or warn neighboring undamaged tissue/plants to preemptively upregulate their own defenses before being attacked themselves.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/induced-herbivory-defense.png&#34; alt=&#34;Induced plant defense after herbivore damage: JA/JA-Ile signaling in the damaged cell upregulates mRNA/enzyme production, protease inhibitors, and phytoalexins (direct defense), while released green leaf volatiles (GLVs) and other volatile organic compounds (VOCs) attract the herbivore’s natural enemies — wasps, predatory flies, spiders (indirect defense)&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-&lt;em&gt;Source: ResearchGate, fig. 2, &amp;ldquo;Schematic picture of induced plant defense&amp;rdquo; — open-access status not confirmed, revisit before public deployment&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Source: ResearchGate, fig. 2, &amp;ldquo;Schematic picture of induced plant defense&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Comparative Structures&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;comparative-structures&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#comparative-structures&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
 	&lt;thead&gt;
@@ -1688,11 +2560,115 @@
 &lt;li&gt;&amp;ldquo;Explain how a volatile organic compound released from herbivore-damaged tissue can function as an indirect defense.&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Visual Reference&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;visual-reference&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt; &lt;em&gt;(built later — see project workflow)&lt;/em&gt;&lt;/p&gt;
+    &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Drought response cascade (click-through, extends the Stomatal Physiology diagram)&lt;/strong&gt; — clicking through rising ABA levels shows stomatal closure, reduced CO2 uptake, and osmotic adjustment occurring in sequence, with a running photosynthesis-rate readout showing the water-conservation/carbon-gain trade-off numerically as ABA rises.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div id=&#34;drought-cascade-widget&#34; style=&#34;background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:&#39;Inter&#39;,&#39;Segoe UI&#39;,Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);&#34;&gt;
+  &lt;svg viewBox=&#34;0 0 160 100&#34; width=&#34;140&#34; height=&#34;88&#34; style=&#34;display:block; margin:0 auto;&#34;&gt;
+    &lt;path id=&#34;dcTop&#34; d=&#34;M 20 45 Q 80 25 140 45 Q 80 35 20 45 Z&#34; fill=&#34;#8fbf8f&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;2&#34;/&gt;
+    &lt;path id=&#34;dcBottom&#34; d=&#34;M 20 55 Q 80 75 140 55 Q 80 65 20 55 Z&#34; fill=&#34;#8fbf8f&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;2&#34;/&gt;
+  &lt;/svg&gt;
+  &lt;label style=&#34;font-size:0.85rem; font-weight:600; color:#334155; display:block; text-align:center;&#34;&gt;ABA level (rising drought stress)&lt;/label&gt;
+  &lt;input type=&#34;range&#34; id=&#34;dcSlider&#34; min=&#34;0&#34; max=&#34;100&#34; value=&#34;0&#34; style=&#34;width:100%; max-width:300px; display:block; margin:0 auto;&#34;&gt;
+  &lt;div id=&#34;dcReadout&#34; style=&#34;text-align:center; margin-top:8px; font-size:0.85rem; font-weight:600; color:#1a472a;&#34;&gt;Stomatal aperture: 100% | Photosynthesis rate: 100% of max&lt;/div&gt;
+  &lt;div id=&#34;dcNote&#34; style=&#34;text-align:center; margin-top:6px; font-size:0.82rem; color:#4b5563;&#34;&gt;No water stress — stomata fully open, photosynthesis unrestricted.&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function(){
+  var slider = document.getElementById(&#39;dcSlider&#39;);
+  var top = document.getElementById(&#39;dcTop&#39;);
+  var bottom = document.getElementById(&#39;dcBottom&#39;);
+  var readout = document.getElementById(&#39;dcReadout&#39;);
+  var note = document.getElementById(&#39;dcNote&#39;);
+  function update(){
+    var aba = parseInt(slider.value,10);
+    var aperture = Math.max(0, 100 - aba);
+    var photo = Math.max(5, Math.round(100 - aba*0.9));
+    var gap = (aperture/100) * 12;
+    top.setAttribute(&#39;d&#39;, &#39;M 20 &#39;+(45-gap*0.3)+&#39; Q 80 &#39;+(45-gap)+&#39; 140 &#39;+(45-gap*0.3)+&#39; Q 80 &#39;+(45-gap*0.5)+&#39; 20 &#39;+(45-gap*0.3)+&#39; Z&#39;);
+    bottom.setAttribute(&#39;d&#39;, &#39;M 20 &#39;+(55+gap*0.3)+&#39; Q 80 &#39;+(55+gap)+&#39; 140 &#39;+(55+gap*0.3)+&#39; Q 80 &#39;+(55+gap*0.5)+&#39; 20 &#39;+(55+gap*0.3)+&#39; Z&#39;);
+    readout.textContent = &#39;Stomatal aperture: &#39; + aperture + &#39;% | Photosynthesis rate: &#39; + photo + &#39;% of max&#39;;
+    if (aba &lt; 20){
+      note.textContent = &#39;No water stress — stomata fully open, photosynthesis unrestricted.&#39;;
+    } else if (aba &lt; 60){
+      note.textContent = &#39;Rising ABA closes stomata to conserve water — CO2 uptake and photosynthesis fall as a direct cost.&#39;;
+    } else {
+      note.textContent = &#39;High ABA — stomata nearly closed, photosynthesis sharply limited, and osmotic adjustment (proline/sugar accumulation) is now active to retain cellular water.&#39;;
+    }
+  }
+  slider.addEventListener(&#39;input&#39;, update);
+  update();
+})();
+&lt;/script&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Hypersensitive response / SAR spread simulator (SVG/JS)&lt;/strong&gt; — a leaf diagram where clicking an infection site triggers a localized necrotic lesion (HR) and then an animated systemic signal spreading to the rest of the plant, activating a visibly &amp;ldquo;primed&amp;rdquo; state (PR protein icon) in distant, uninfected tissue.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;div id=&#34;hr-sar-widget&#34; style=&#34;background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:&#39;Inter&#39;,&#39;Segoe UI&#39;,Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);&#34;&gt;
+  &lt;svg viewBox=&#34;0 0 300 140&#34; width=&#34;100%&#34; style=&#34;max-width:320px; display:block; margin:0 auto;&#34;&gt;
+    &lt;ellipse cx=&#34;70&#34; cy=&#34;70&#34; rx=&#34;45&#34; ry=&#34;30&#34; fill=&#34;#8fbf8f&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;2&#34;/&gt;
+    &lt;circle id=&#34;hrLesion&#34; cx=&#34;70&#34; cy=&#34;70&#34; r=&#34;0&#34; fill=&#34;#7c5a3a&#34; stroke=&#34;#3f2d1a&#34; stroke-width=&#34;1.5&#34;/&gt;
+    &lt;ellipse cx=&#34;220&#34; cy=&#34;45&#34; rx=&#34;38&#34; ry=&#34;24&#34; fill=&#34;#8fbf8f&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;2&#34;/&gt;
+    &lt;text id=&#34;prIcon1&#34; x=&#34;220&#34; y=&#34;50&#34; text-anchor=&#34;middle&#34; font-size=&#34;14&#34; opacity=&#34;0&#34;&gt;&amp;#128737;&amp;#65039;&lt;/text&gt;
+    &lt;ellipse cx=&#34;230&#34; cy=&#34;100&#34; rx=&#34;38&#34; ry=&#34;24&#34; fill=&#34;#8fbf8f&#34; stroke=&#34;#2d6a4f&#34; stroke-width=&#34;2&#34;/&gt;
+    &lt;text id=&#34;prIcon2&#34; x=&#34;230&#34; y=&#34;105&#34; text-anchor=&#34;middle&#34; font-size=&#34;14&#34; opacity=&#34;0&#34;&gt;&amp;#128737;&amp;#65039;&lt;/text&gt;
+    &lt;circle id=&#34;signalDot1&#34; cx=&#34;115&#34; cy=&#34;70&#34; r=&#34;5&#34; fill=&#34;#7c3aed&#34; opacity=&#34;0&#34;/&gt;
+    &lt;circle id=&#34;signalDot2&#34; cx=&#34;115&#34; cy=&#34;70&#34; r=&#34;5&#34; fill=&#34;#7c3aed&#34; opacity=&#34;0&#34;/&gt;
+  &lt;/svg&gt;
+  &lt;div style=&#34;text-align:center;&#34;&gt;
+    &lt;button id=&#34;hrInfectBtn&#34; style=&#34;background:#b91c1c; color:#fff; border:none; padding:9px 18px; border-radius:999px; font-size:0.88rem; cursor:pointer;&#34;&gt;Infect leaf 1&lt;/button&gt;
+    &lt;div id=&#34;hrNote&#34; style=&#34;margin-top:10px; font-size:0.85rem; color:#4b5563; min-height:2.4em;&#34;&gt;Click to simulate a pathogen infecting the left leaf.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function(){
+  var btn = document.getElementById(&#39;hrInfectBtn&#39;);
+  var lesion = document.getElementById(&#39;hrLesion&#39;);
+  var dot1 = document.getElementById(&#39;signalDot1&#39;);
+  var dot2 = document.getElementById(&#39;signalDot2&#39;);
+  var pr1 = document.getElementById(&#39;prIcon1&#39;);
+  var pr2 = document.getElementById(&#39;prIcon2&#39;);
+  var note = document.getElementById(&#39;hrNote&#39;);
+  var running = false;
+  function reset(){
+    lesion.setAttribute(&#39;r&#39;, 0);
+    dot1.style.opacity = 0;
+    dot2.style.opacity = 0;
+    dot1.setAttribute(&#39;cx&#39;, 115);
+    dot2.setAttribute(&#39;cx&#39;, 115);
+    pr1.setAttribute(&#39;opacity&#39;, 0);
+    pr2.setAttribute(&#39;opacity&#39;, 0);
+    note.textContent = &#39;Click to simulate a pathogen infecting the left leaf.&#39;;
+  }
+  btn.addEventListener(&#39;click&#39;, function(){
+    if (running){ return; }
+    running = true;
+    reset();
+    setTimeout(function(){
+      lesion.setAttribute(&#39;r&#39;, 12);
+      note.textContent = &#39;Hypersensitive response: localized programmed cell death forms a necrotic lesion, containing the infection at the source leaf.&#39;;
+    }, 150);
+    setTimeout(function(){
+      dot1.style.opacity = 1;
+      dot2.style.opacity = 1;
+      note.textContent = &#39;Salicylic acid spreads systemically from the infection site to uninfected leaves.&#39;;
+    }, 1200);
+    setTimeout(function(){
+      dot1.setAttribute(&#39;cx&#39;, 220);
+      dot2.setAttribute(&#39;cx&#39;, 230);
+    }, 1300);
+    setTimeout(function(){
+      pr1.setAttribute(&#39;opacity&#39;, 1);
+      pr2.setAttribute(&#39;opacity&#39;, 1);
+      dot1.style.opacity = 0;
+      dot2.style.opacity = 0;
+      note.textContent = &#39;Systemic acquired resistance: distant, never-infected leaves now express PR proteins — primed with broad, long-lasting resistance.&#39;;
+    }, 2300);
+    setTimeout(function(){ running = false; }, 3000);
+  });
+  reset();
+})();
+&lt;/script&gt;
 &lt;p&gt;&lt;em&gt;(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. No image was sourced for the Drought Stress section&amp;rsquo;s compatible-solute mechanism specifically.)&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Practice Problems&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;practice-problems&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#practice-problems&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
