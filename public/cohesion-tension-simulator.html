@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cohesion-Tension Column Simulator | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 620px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .layout { display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap; }
+  .col-panel { flex: 0 0 160px; }
+  .controls { flex: 1; min-width: 260px; }
+  .readout {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-bottom: 14px;
+    font-size: 0.95rem;
+  }
+  .readout b { color: #1d70a2; }
+  label { font-size: 0.85rem; font-weight: 600; color: #334155; display:block; margin-bottom: 6px; }
+  input[type=range] { width: 100%; }
+  .btn {
+    background: #2d6a4f;
+    color: #fff;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 999px;
+    font-size: 0.88rem;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 8px;
+  }
+  .btn.secondary { background: #94a3b8; }
+  .note { font-size: 0.82rem; color: #4b5563; margin-top: 10px; min-height: 2.4em; }
+  .warn { color: #b91c1c; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Cohesion-Tension Column Simulator</h3>
+  <div class="subtitle">Raise transpiration to see tension pull the water column upward — then inject an air bubble to see cavitation break it.</div>
+  <div class="layout">
+    <div class="col-panel">
+      <svg id="colSvg" viewBox="0 0 160 380" width="160" height="380">
+        <text x="80" y="20" text-anchor="middle" font-size="12" fill="#334155" font-weight="600">Leaf</text>
+        <rect x="60" y="30" width="40" height="320" rx="6" fill="#eef2f6" stroke="#94a3b8" stroke-width="2"/>
+        <rect id="waterFill" x="63" y="33" width="34" height="314" fill="#7fb8e0"/>
+        <g id="arrows"></g>
+        <circle id="bubble" cx="80" cy="200" r="0" fill="#fff" stroke="#b91c1c" stroke-width="2"/>
+        <text x="80" y="368" text-anchor="middle" font-size="12" fill="#334155" font-weight="600">Root</text>
+      </svg>
+    </div>
+    <div class="controls">
+      <div class="readout">Tension at base: <b id="tensionVal">-0.0 MPa</b></div>
+      <label for="transSlider">Transpiration rate</label>
+      <input type="range" id="transSlider" min="0" max="100" value="20">
+      <div>
+        <button class="btn" id="bubbleBtn">Inject air bubble</button>
+        <button class="btn secondary" id="resetBtn">Clear embolism</button>
+      </div>
+      <div class="note" id="colNote">Low transpiration — a weak pull, water column intact.</div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var slider = document.getElementById('transSlider');
+  var tensionVal = document.getElementById('tensionVal');
+  var note = document.getElementById('colNote');
+  var arrowsG = document.getElementById('arrows');
+  var bubble = document.getElementById('bubble');
+  var waterFill = document.getElementById('waterFill');
+  var bubbleActive = false;
+  var bubbleY = 190;
+
+  function drawArrows(rate){
+    arrowsG.innerHTML = '';
+    var count = Math.max(1, Math.round(rate/20));
+    var top = bubbleActive ? bubbleY : 40;
+    var bottom = 330;
+    var spacing = (bottom - top) / (count + 1);
+    for (var i = 1; i <= count; i++){
+      var y = bottom - i * spacing;
+      var a = document.createElementNS('http://www.w3.org/2000/svg','path');
+      a.setAttribute('d', 'M80 '+y+' L74 '+(y+10)+' L86 '+(y+10)+' Z');
+      a.setAttribute('fill', '#1d70a2');
+      a.setAttribute('opacity', bubbleActive ? '0.25' : '0.85');
+      arrowsG.appendChild(a);
+    }
+  }
+
+  function update(){
+    var rate = parseInt(slider.value, 10);
+    var tension = -(rate/100 * 3.0).toFixed(1);
+    tensionVal.textContent = tension + ' MPa';
+    drawArrows(rate);
+
+    if (bubbleActive){
+      waterFill.setAttribute('y', bubbleY);
+      waterFill.setAttribute('height', 33 + 314 - (bubbleY - 33));
+      note.innerHTML = '<span class="warn">Cavitation!</span> The embolism has broken the water column — tension above this point can no longer pull water upward, regardless of transpiration rate.';
+    } else {
+      waterFill.setAttribute('y', 33);
+      waterFill.setAttribute('height', 314);
+      if (rate < 15){
+        note.textContent = 'Low transpiration — a weak pull, water column intact.';
+      } else if (rate < 60){
+        note.textContent = 'Moderate transpiration — tension increases, water still moves smoothly up the intact column.';
+      } else {
+        note.textContent = 'High transpiration — strong tension. Under real drought stress, this is when cavitation risk rises.';
+      }
+    }
+  }
+
+  slider.addEventListener('input', update);
+
+  document.getElementById('bubbleBtn').addEventListener('click', function(){
+    bubbleActive = true;
+    bubble.setAttribute('r', 10);
+    update();
+  });
+
+  document.getElementById('resetBtn').addEventListener('click', function(){
+    bubbleActive = false;
+    bubble.setAttribute('r', 0);
+    update();
+  });
+
+  update();
+})();
+</script>
+</body>
+</html>

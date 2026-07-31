@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multi-Signal Stomatal Aperture Simulator | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .layout { display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap; }
+  .pore-panel { flex: 0 0 160px; text-align: center; }
+  .sliders { flex: 1; min-width: 260px; }
+  .slider-row { margin-bottom: 14px; }
+  label { font-size: 0.85rem; font-weight: 600; color: #334155; display:flex; justify-content:space-between; }
+  input[type=range] { width: 100%; }
+  .readout {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  .readout b { color: #1d70a2; }
+  .note { font-size: 0.82rem; color: #4b5563; margin-top: 10px; }
+  .warn { color: #b91c1c; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Multi-Signal Stomatal Aperture Simulator</h3>
+  <div class="subtitle">Light and CO2 push toward opening or closing — but ABA can override both.</div>
+  <div class="layout">
+    <div class="pore-panel">
+      <svg viewBox="0 0 160 160" width="140" height="140">
+        <path id="pTop" d="M 20 70 Q 80 50 140 70 Q 80 60 20 70 Z" fill="#8fbf8f" stroke="#2d6a4f" stroke-width="2"/>
+        <path id="pBottom" d="M 20 90 Q 80 110 140 90 Q 80 80 20 90 Z" fill="#8fbf8f" stroke="#2d6a4f" stroke-width="2"/>
+      </svg>
+      <div id="apertureLabel" style="font-weight:600; color:#1a472a;">Open</div>
+    </div>
+    <div class="sliders">
+      <div class="slider-row">
+        <label>Light <span id="lightOut">70%</span></label>
+        <input type="range" id="lightSlider" min="0" max="100" value="70">
+      </div>
+      <div class="slider-row">
+        <label>Intercellular CO2 <span id="co2Out">30%</span></label>
+        <input type="range" id="co2Slider" min="0" max="100" value="30">
+      </div>
+      <div class="slider-row">
+        <label>ABA level <span id="abaOut">0%</span></label>
+        <input type="range" id="abaSlider" min="0" max="100" value="0">
+      </div>
+      <div class="readout">Net aperture: <b id="apertureVal">100%</b> open</div>
+      <div class="note" id="simNote">Bright light and low CO2 both favor opening — the pore is fully open.</div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var light = document.getElementById('lightSlider');
+  var co2 = document.getElementById('co2Slider');
+  var aba = document.getElementById('abaSlider');
+  var lightOut = document.getElementById('lightOut');
+  var co2Out = document.getElementById('co2Out');
+  var abaOut = document.getElementById('abaOut');
+  var apertureVal = document.getElementById('apertureVal');
+  var apertureLabel = document.getElementById('apertureLabel');
+  var note = document.getElementById('simNote');
+  var pTop = document.getElementById('pTop');
+  var pBottom = document.getElementById('pBottom');
+
+  function update(){
+    var L = parseInt(light.value,10);
+    var C = parseInt(co2.value,10);
+    var A = parseInt(aba.value,10);
+    lightOut.textContent = L + '%';
+    co2Out.textContent = C + '%';
+    abaOut.textContent = A + '%';
+
+    var base = (L/100 + (100-C)/100) / 2 * 100;
+    var effective = base * (1 - A/100);
+    effective = Math.max(0, Math.min(100, effective));
+    apertureVal.textContent = Math.round(effective) + '%';
+
+    var maxGap = 30;
+    var gap = (effective/100) * maxGap;
+    pTop.setAttribute('d', 'M 20 '+(70-gap*0.3)+' Q 80 '+(70-gap)+' 140 '+(70-gap*0.3)+' Q 80 '+(70-gap*0.5)+' 20 '+(70-gap*0.3)+' Z');
+    pBottom.setAttribute('d', 'M 20 '+(90+gap*0.3)+' Q 80 '+(90+gap)+' 140 '+(90+gap*0.3)+' Q 80 '+(90+gap*0.5)+' 20 '+(90+gap*0.3)+' Z');
+
+    if (A >= 60 && base >= 50){
+      apertureLabel.innerHTML = '<span class="warn">Closed (ABA override)</span>';
+      note.innerHTML = '<span class="warn">ABA is forcing closure</span> even though light and CO2 conditions both favor opening — this is the override relationship described in the text: ABA-activated outward channels win regardless of the other two signals.';
+    } else if (effective > 60){
+      apertureLabel.textContent = 'Open';
+      note.textContent = 'Bright light and/or low CO2 favor opening, and ABA is low enough not to interfere.';
+    } else if (effective > 25){
+      apertureLabel.textContent = 'Partially open';
+      note.textContent = 'A mixed signal set — some combination of dim light, high CO2, or moderate ABA is partially restricting the aperture.';
+    } else {
+      apertureLabel.textContent = 'Closed';
+      note.textContent = 'Low light and/or high CO2 (or rising ABA) are keeping the pore closed.';
+    }
+  }
+
+  [light, co2, aba].forEach(function(s){ s.addEventListener('input', update); });
+  update();
+})();
+</script>
+</body>
+</html>

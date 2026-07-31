@@ -24,9 +24,20 @@ The Calvin cycle runs in the chloroplast stroma in three phases, using 3 CO₂ m
 
 Net cost per 3 CO₂ fixed: 9 ATP and 6 NADPH consumed for 1 net G3P produced — a stoichiometry worth knowing because it is exactly what makes the ATP:NADPH ratio delivered by the light reactions matter, and exactly why cyclic electron flow (see [Light Reactions & Photophosphorylation](../light-reactions-photophosphorylation/)) exists to supplement ATP output when this ratio runs short.
 
+![Full Calvin cycle: 3 CO2 fixed onto RuBP by RuBisCO (stage 1, carbon fixation) yields 6 3-PGA, reduced using 6 ATP and 6 NADPH to 6 G3P (stage 2), of which 1 exits as net output and the remaining 5 are rearranged using 3 more ATP back into 3 RuBP (stage 3, regeneration)](/PLANTPHYSIOPICS/calvin-cycle-full.png)
+*Source: Biology LibreTexts*
+
 ### Photorespiration: Rubisco's Oxygenase Side-Reaction
 
-Rubisco's active site cannot perfectly discriminate between CO₂ and O₂, and under conditions that lower the local CO₂:O₂ ratio at the active site — high temperature (which lowers CO₂ solubility relative to O₂ and increases Rubisco's relative affinity for O₂), and stomatal closure under water stress (which restricts fresh CO₂ entry while O₂ from ongoing photosynthesis accumulates, see [Stomatal Physiology & Gas Exchange](../stomatal-physiology-gas-exchange/)) — Rubisco increasingly catalyzes **oxygenation** of RuBP instead of carboxylation. This produces one molecule of 3-PGA (usable) and one of **2-phosphoglycolate**, a toxic 2-carbon compound that is not part of the Calvin cycle and must be salvaged through the **photorespiration (glycolate) pathway**, a costly process spanning three organelles (chloroplast, peroxisome, mitochondrion) that recovers only 3 of every 4 carbons entering it as usable product, consumes additional ATP, and releases the fourth carbon as CO₂ — a net loss of both fixed carbon and previously invested energy, and the direct biochemical reason C3 photosynthesis becomes inefficient under hot, dry, high-light conditions.
+Rubisco's active site cannot perfectly discriminate between CO₂ and O₂, and under conditions that lower the local CO₂:O₂ ratio at the active site — high temperature (which lowers CO₂ solubility relative to O₂ and increases Rubisco's relative affinity for O₂), and stomatal closure under water stress (which restricts fresh CO₂ entry while O₂ from ongoing photosynthesis accumulates, see [Stomatal Physiology & Gas Exchange](../stomatal-physiology-gas-exchange/)) — Rubisco increasingly catalyzes **oxygenation** of RuBP instead of carboxylation.
+
+![Rubisco's dual reaction as a shared branch point: with CO2 (left), RuBP carboxylation feeds ordinary photosynthesis, consuming ATP/NADPH and yielding 2x 3PGA/sugars; with O2 (right), oxygenation feeds photorespiration instead, consuming ATP/NADPH/CO2 and yielding a 3PGA+2PG mixture that ultimately releases CO2](/PLANTPHYSIOPICS/rubisco-carboxylase-oxygenase.png)
+*Source: Encyclopedia (encyclopedia.pub), entry 9827*
+
+This produces one molecule of 3-PGA (usable) and one of **2-phosphoglycolate**, a toxic 2-carbon compound that is not part of the Calvin cycle and must be salvaged through the **photorespiration (glycolate) pathway**, a costly process spanning three organelles (chloroplast, peroxisome, mitochondrion) that recovers only 3 of every 4 carbons entering it as usable product, consumes additional ATP, and releases the fourth carbon as CO₂ — a net loss of both fixed carbon and previously invested energy, and the direct biochemical reason C3 photosynthesis becomes inefficient under hot, dry, high-light conditions.
+
+![Photorespiration (glycolate pathway) spanning three organelles: chloroplast Rubisco splits between 3-PGA and 2-PG (energy loss versus ordinary photosynthesis), the peroxisome converts glycolate through glyoxylate/glycine, and the mitochondrion converts glycine to serine, releasing both NH3 (re-assimilated at ATP cost) and CO2 (a net carbon loss)](/PLANTPHYSIOPICS/photorespiration-glycolate-pathway.png)
+*Source: New Phytologist*
 
 ### C4 Biochemistry: Spatial CO2 Concentration
 
@@ -39,6 +50,9 @@ C4 plants suppress photorespiration by physically separating initial CO₂ captu
 
 This spatial separation costs extra ATP per CO₂ fixed compared to C3 (for the PEP regeneration step), but that cost is repaid, under hot and high-light conditions specifically, by nearly eliminating the carbon and energy losses photorespiration would otherwise impose — which is why C4 is an advantage in exactly the environments where C3 struggles, not universally.
 
+![C4 photosynthetic pathway: (A) in the mesophyll cell, CA and PEPC fix CO2/HCO3- onto PEP to form OAA, converted to a 4-carbon acid (malate/aspartate) shuttled to the bundle sheath cell, where a decarboxylase (DC) releases CO2 to RuBisCO/the Calvin cycle, with pyruvate/alanine shuttled back and reconverted to PEP by PPDK; (B) the ATP/NADPH cost per CO2 fixed, split between mesophyll and bundle sheath, compared across the NADP-ME, NAD-ME, and PEPCK biochemical subtypes](/PLANTPHYSIOPICS/c4-pathway-biochemistry.png)
+*Source: Encyclopedia (encyclopedia.pub)*
+
 ### CAM Biochemistry: Temporal CO2 Concentration
 
 CAM plants achieve a related benefit through *time* rather than *space*, using the same cell for both steps rather than two anatomically distinct cell types (consistent with CAM leaf anatomy lacking Kranz anatomy, see [Leaf Anatomy](../../6-plant-anatomy/leaf-anatomy/)):
@@ -47,6 +61,9 @@ CAM plants achieve a related benefit through *time* rather than *space*, using t
 - **During the day**, stomata close (limiting water loss during the hottest, driest, highest-evaporative-demand period), and the stored malic acid is decarboxylated, releasing CO₂ internally at high concentration directly to Rubisco and the Calvin cycle, run using ATP/NADPH from the light reactions occurring in the same illuminated cell at the same time.
 
 Because CO₂ uptake (night) and CO₂ fixation via the Calvin cycle (day) are separated in time rather than location, a single mesophyll cell type suffices, at the cost of requiring large-volume malic acid storage between the two phases — directly explaining the enlarged vacuoles CAM leaf anatomy shows structurally.
+
+![CAM diurnal cycle: at night (stomata open), CO2 combines with PEP via PEPC (primary carboxylation) to form a C4 acid stored in the vacuole; during the day (stomata closed), the C4 acid is decarboxylated back to a C3 acid, releasing CO2 to Rubisco and the Calvin-Benson cycle (secondary carboxylation), with surplus carbon stored as starch](/PLANTPHYSIOPICS/cam-diurnal-cycle.png)
+*Source: ScienceDirect (topic page, "Crassulacean Acid Metabolism")*
 
 ## Comparative Structures
 
@@ -72,15 +89,172 @@ Because CO₂ uptake (night) and CO₂ fixation via the Calvin cycle (day) are s
 **Interactive**
 
 - **Calvin cycle carbon tracer (click-through SVG/JS, no new library)** — a schematic cycle where clicking "step" moves a highlighted carbon atom through fixation, reduction, and regeneration, with a running tally of ATP/NADPH consumed and net G3P produced after each full turn.
+
+<div id="calvin-tracer-widget" style="background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:'Inter','Segoe UI',Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
+  <svg viewBox="0 0 260 260" width="240" height="240" style="display:block; margin:0 auto;">
+    <circle cx="130" cy="130" r="95" fill="none" stroke="#cbd5e1" stroke-width="18"/>
+    <path id="arcFix" d="M 130 35 A 95 95 0 0 1 212 177" fill="none" stroke="#8fbf8f" stroke-width="18" opacity="0.35"/>
+    <path id="arcRed" d="M 212 177 A 95 95 0 0 1 48 177" fill="none" stroke="#7fb8e0" stroke-width="18" opacity="0.35"/>
+    <path id="arcReg" d="M 48 177 A 95 95 0 0 1 130 35" fill="none" stroke="#f3c98b" stroke-width="18" opacity="0.35"/>
+    <text x="185" y="90" font-size="11" font-weight="600" fill="#1a472a">Fixation</text>
+    <text x="130" y="235" text-anchor="middle" font-size="11" font-weight="600" fill="#1d70a2">Reduction</text>
+    <text x="55" y="90" font-size="11" font-weight="600" fill="#92400e">Regeneration</text>
+    <circle id="calvinMarker" cx="130" cy="35" r="10" fill="#b91c1c" stroke="#fff" stroke-width="2"/>
+  </svg>
+  <div style="text-align:center;">
+    <div id="calvinTally" style="font-size:0.85rem; font-weight:600; color:#1a472a; margin-bottom:6px;">Turns completed: 0 &nbsp;|&nbsp; ATP used: 0 &nbsp;|&nbsp; NADPH used: 0 &nbsp;|&nbsp; Net G3P: 0</div>
+    <button id="calvinStepBtn" style="background:#2d6a4f; color:#fff; border:none; padding:9px 18px; border-radius:999px; font-size:0.88rem; cursor:pointer;">Step &#8594;</button>
+    <button id="calvinResetBtn" style="background:#94a3b8; color:#fff; border:none; padding:9px 18px; border-radius:999px; font-size:0.88rem; cursor:pointer; margin-left:8px;">Reset tally</button>
+    <div id="calvinNote" style="margin-top:10px; font-size:0.85rem; color:#4b5563; min-height:2.4em;">Turn begins: 3 CO2 entering the cycle to combine with 3 RuBP.</div>
+  </div>
+</div>
+<script>
+(function(){
+  var marker = document.getElementById('calvinMarker');
+  var note = document.getElementById('calvinNote');
+  var tally = document.getElementById('calvinTally');
+  var stepBtn = document.getElementById('calvinStepBtn');
+  var resetBtn = document.getElementById('calvinResetBtn');
+  var positions = [
+    {x:130,y:35,text:'Turn begins: 3 CO2 entering the cycle to combine with 3 RuBP.'},
+    {x:212,y:177,text:'Fixation: RuBisCO combines each CO2 with RuBP, producing 6 molecules of 3-PGA.'},
+    {x:130,y:235,text:'Reduction: 6 ATP and 6 NADPH reduce the 6 3-PGA to 6 G3P — the cycle’s only redox step.'},
+    {x:88,y:206,text:'Output: 1 of the 6 G3P exits the cycle as net carbohydrate product.'},
+    {x:48,y:177,text:'Regeneration: the remaining 5 G3P are rearranged, using 3 more ATP, back into 3 RuBP.'}
+  ];
+  var step = 0;
+  var turns = 0;
+  function render(){
+    marker.setAttribute('cx', positions[step].x);
+    marker.setAttribute('cy', positions[step].y);
+    note.textContent = positions[step].text;
+    tally.textContent = 'Turns completed: ' + turns + ' | ATP used: ' + (turns*9) + ' | NADPH used: ' + (turns*6) + ' | Net G3P: ' + turns;
+  }
+  stepBtn.addEventListener('click', function(){
+    step = step + 1;
+    if (step >= positions.length){
+      step = 0;
+      turns = turns + 1;
+    }
+    render();
+  });
+  resetBtn.addEventListener('click', function(){
+    step = 0;
+    turns = 0;
+    render();
+  });
+  render();
+})();
+</script>
+
 - **C3 vs. C4 vs. CAM CO2 pathway toggle** — a single diagram frame toggles between the three modes, visually showing where (C3: one cell; C4: two adjacent cell types) or when (CAM: night vs. day, same cell) each fixation step occurs, paired with the Kranz/CAM anatomy diagrams already specified on Leaf Anatomy.
 
-**Static**
+<div id="pathway-toggle-widget" style="background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:'Inter','Segoe UI',Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
+  <svg viewBox="0 0 400 170" width="100%" style="max-width:420px; display:block; margin:0 auto;">
+    <text id="pTimeIcon" x="370" y="30" font-size="22" text-anchor="middle">&#9728;&#65039;</text>
+    <rect id="pCellA" x="40" y="40" width="140" height="100" rx="10" fill="#dff0df" stroke="#2d6a4f" stroke-width="2"/>
+    <text id="pCellALabel1" x="110" y="80" text-anchor="middle" font-size="11" fill="#1a472a">Rubisco +</text>
+    <text id="pCellALabel2" x="110" y="96" text-anchor="middle" font-size="11" fill="#1a472a">Calvin cycle</text>
+    <text id="pCellATitle" x="110" y="30" text-anchor="middle" font-size="11" font-weight="600" fill="#334155">Mesophyll cell</text>
+    <path id="pArrow" d="M180 90 H210" stroke="#b45309" stroke-width="3" marker-end="url(#pgArrow)" opacity="0"/>
+    <rect id="pCellB" x="210" y="40" width="140" height="100" rx="10" fill="#e0ecf7" stroke="#1d70a2" stroke-width="2" opacity="0"/>
+    <text id="pCellBLabel1" x="280" y="80" text-anchor="middle" font-size="11" fill="#1d70a2" opacity="0">Rubisco +</text>
+    <text id="pCellBLabel2" x="280" y="96" text-anchor="middle" font-size="11" fill="#1d70a2" opacity="0">Calvin cycle</text>
+    <text id="pCellBTitle" x="280" y="30" text-anchor="middle" font-size="11" font-weight="600" fill="#334155" opacity="0">Bundle sheath cell</text>
+    <defs>
+      <marker id="pgArrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#b45309"/></marker>
+    </defs>
+  </svg>
+  <div style="text-align:center;">
+    <button class="p-btn" id="pC3Btn" style="background:#2d6a4f; color:#fff; border:none; padding:8px 16px; border-radius:999px; font-size:0.85rem; cursor:pointer; margin:2px;">C3</button>
+    <button class="p-btn" id="pC4Btn" style="background:#94a3b8; color:#fff; border:none; padding:8px 16px; border-radius:999px; font-size:0.85rem; cursor:pointer; margin:2px;">C4</button>
+    <button class="p-btn" id="pCamBtn" style="background:#94a3b8; color:#fff; border:none; padding:8px 16px; border-radius:999px; font-size:0.85rem; cursor:pointer; margin:2px;">CAM</button>
+    <span id="pCamTimeToggle" style="display:none; margin-left:10px;">
+      <button class="p-time-btn" id="pNightBtn" style="background:#94a3b8; color:#fff; border:none; padding:6px 12px; border-radius:999px; font-size:0.8rem; cursor:pointer;">Night</button>
+      <button class="p-time-btn" id="pDayBtn" style="background:#2d6a4f; color:#fff; border:none; padding:6px 12px; border-radius:999px; font-size:0.8rem; cursor:pointer;">Day</button>
+    </span>
+    <div id="pNote" style="margin-top:10px; font-size:0.85rem; color:#4b5563;">C3: a single mesophyll cell type does both initial fixation and the Calvin cycle, continuously during the day.</div>
+  </div>
+</div>
+<script>
+(function(){
+  var buttons = {c3:document.getElementById('pC3Btn'), c4:document.getElementById('pC4Btn'), cam:document.getElementById('pCamBtn')};
+  var nightBtn = document.getElementById('pNightBtn');
+  var dayBtn = document.getElementById('pDayBtn');
+  var camTimeToggle = document.getElementById('pCamTimeToggle');
+  var note = document.getElementById('pNote');
+  var timeIcon = document.getElementById('pTimeIcon');
+  var cellATitle = document.getElementById('pCellATitle');
+  var cellALabel1 = document.getElementById('pCellALabel1');
+  var cellALabel2 = document.getElementById('pCellALabel2');
+  var arrow = document.getElementById('pArrow');
+  var cellB = document.getElementById('pCellB');
+  var cellBTitle = document.getElementById('pCellBTitle');
+  var cellBLabel1 = document.getElementById('pCellBLabel1');
+  var cellBLabel2 = document.getElementById('pCellBLabel2');
+  function clearButtons(){
+    Object.keys(buttons).forEach(function(k){ buttons[k].style.background = '#94a3b8'; });
+  }
+  function setMode(mode, time){
+    clearButtons();
+    buttons[mode].style.background = '#2d6a4f';
+    camTimeToggle.style.display = mode === 'cam' ? 'inline' : 'none';
+    if (mode === 'c3'){
+      timeIcon.textContent = '☀️';
+      cellATitle.textContent = 'Mesophyll cell';
+      cellALabel1.textContent = 'Rubisco +';
+      cellALabel2.textContent = 'Calvin cycle';
+      arrow.style.opacity = 0;
+      cellB.setAttribute('opacity', 0);
+      cellBTitle.setAttribute('opacity', 0);
+      cellBLabel1.setAttribute('opacity', 0);
+      cellBLabel2.setAttribute('opacity', 0);
+      note.textContent = 'C3: a single mesophyll cell type does both initial fixation and the Calvin cycle, continuously during the day.';
+    } else if (mode === 'c4'){
+      timeIcon.textContent = '☀️';
+      cellATitle.textContent = 'Mesophyll cell';
+      cellALabel1.textContent = 'PEPC →';
+      cellALabel2.textContent = 'malate/aspartate';
+      arrow.style.opacity = 1;
+      cellB.setAttribute('opacity', 1);
+      cellBTitle.setAttribute('opacity', 1);
+      cellBLabel1.setAttribute('opacity', 1);
+      cellBLabel2.setAttribute('opacity', 1);
+      note.textContent = 'C4: two adjacent cell types split the job spatially, at the same time (day) — mesophyll fixes CO2 via PEPC, bundle sheath runs the Calvin cycle using the CO2 shuttled in.';
+    } else if (mode === 'cam'){
+      arrow.style.opacity = 0;
+      cellB.setAttribute('opacity', 0);
+      cellBTitle.setAttribute('opacity', 0);
+      cellBLabel1.setAttribute('opacity', 0);
+      cellBLabel2.setAttribute('opacity', 0);
+      cellATitle.textContent = 'Mesophyll cell';
+      if (time === 'night'){
+        timeIcon.textContent = '🌙';
+        nightBtn.style.background = '#2d6a4f';
+        dayBtn.style.background = '#94a3b8';
+        cellALabel1.textContent = 'PEPC →';
+        cellALabel2.textContent = 'malic acid (stored)';
+        note.textContent = 'CAM at night: the same cell type fixes CO2 via PEPC and stores it as malic acid in the vacuole — stomata are open now since evaporative demand is low.';
+      } else {
+        timeIcon.textContent = '☀️';
+        dayBtn.style.background = '#2d6a4f';
+        nightBtn.style.background = '#94a3b8';
+        cellALabel1.textContent = 'Rubisco +';
+        cellALabel2.textContent = 'Calvin cycle';
+        note.textContent = 'CAM during the day: stomata close, stored malic acid is decarboxylated, and the same cell now runs the Calvin cycle using the released CO2.';
+      }
+    }
+  }
+  buttons.c3.addEventListener('click', function(){ setMode('c3'); });
+  buttons.c4.addEventListener('click', function(){ setMode('c4'); });
+  buttons.cam.addEventListener('click', function(){ setMode('cam','day'); });
+  nightBtn.addEventListener('click', function(){ setMode('cam','night'); });
+  dayBtn.addEventListener('click', function(){ setMode('cam','day'); });
+  setMode('c3');
+})();
+</script>
 
-- Full Calvin cycle diagram: fixation, reduction, and regeneration phases labeled, with the 3 CO2 in / 1 net G3P out stoichiometry shown
-- Rubisco carboxylase vs. oxygenase side-reaction diagram, showing 3-PGA (usable) vs. 2-phosphoglycolate (photorespiration substrate) as the two possible products
-- Photorespiration (glycolate pathway) diagram spanning chloroplast, peroxisome, and mitochondrion, net carbon loss indicated
-- C4 biochemical pathway diagram: PEP carboxylase in mesophyll, malate shuttle to bundle sheath, decarboxylation, Calvin cycle, pyruvate shuttle back
-- CAM diurnal cycle diagram: nighttime CO2 fixation/malic acid storage vs. daytime decarboxylation/Calvin cycle, on a 24-hour axis
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
 
 ## Practice Problems
 

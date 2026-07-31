@@ -16,7 +16,15 @@ Where the earlier pages in this section covered transport and biochemistry, this
 
 ### Auxin (IAA)
 
-Synthesized primarily in shoot apical meristems and young leaves, then transported **polarly** (unidirectionally, cell to cell, via asymmetrically localized **PIN transporter proteins** that export auxin only from one end of each cell) predominantly from shoot tip toward the root — a directional, energy-dependent transport mechanism unlike the passive diffusion of most other hormones. Auxin promotes cell elongation (by loosening the cell wall, permitting turgor-driven expansion), maintains **apical dominance** (auxin from the shoot apex suppresses outgrowth of lateral/axillary buds below it — removing the apex releases this suppression, the physiological basis of pruning to promote bushier growth), and promotes lateral root initiation from the pericycle (see [Root Anatomy](../../6-plant-anatomy/root-anatomy/)). The classic **Darwin/Went coleoptile experiments** (a grass seedling's coleoptile bends toward light only if its tip is intact and light-exposed; a severed tip's diffusible substance, collected in agar and reapplied off-center, causes bending even in the dark) first demonstrated that a mobile chemical signal, not a direct tissue response, causes phototropic bending — established before auxin was chemically identified, and the model this page's classic-experiment framing follows throughout.
+Synthesized primarily in shoot apical meristems and young leaves, then transported **polarly** (unidirectionally, cell to cell, via asymmetrically localized **PIN transporter proteins** that export auxin only from one end of each cell) predominantly from shoot tip toward the root — a directional, energy-dependent transport mechanism unlike the passive diffusion of most other hormones. Auxin promotes cell elongation (by loosening the cell wall, permitting turgor-driven expansion), maintains **apical dominance** (auxin from the shoot apex suppresses outgrowth of lateral/axillary buds below it — removing the apex releases this suppression, the physiological basis of pruning to promote bushier growth), and promotes lateral root initiation from the pericycle (see [Root Anatomy](../../6-plant-anatomy/root-anatomy/)).
+
+![Apical dominance mechanism, historical and current models: (A) the 1930s model (auxin directly inhibiting bud auxin synthesis; auxin diverting root/cotyledon growth factors away from buds; auxin indirectly inhibiting buds via stem growth), compared to (B, C) the 2010s auxin-transport-canalization and second-messenger (strigolactone/cytokinin) models](/PLANTPHYSIOPICS/apical-dominance.png)
+*Source: Frontiers in Plant Science*
+
+The classic **Darwin/Went coleoptile experiments** (a grass seedling's coleoptile bends toward light only if its tip is intact and light-exposed; a severed tip's diffusible substance, collected in agar and reapplied off-center, causes bending even in the dark) first demonstrated that a mobile chemical signal, not a direct tissue response, causes phototropic bending — established before auxin was chemically identified, and the model this page's classic-experiment framing follows throughout.
+
+![The classic phototropism experimental series: an intact, light-exposed coleoptile bends toward light; removing the tip abolishes bending; covering the tip with an opaque cap abolishes bending; covering the tip with a transparent cap preserves bending; shielding only the base leaves bending intact — together localizing both light perception and the response-initiating signal to the tip](/PLANTPHYSIOPICS/coleoptile-bending-experiment.png)
+*Source: Pathwayz.org*
 
 ### Gibberellins (GA)
 
@@ -34,9 +42,15 @@ Synthesized in response to water stress (roots and leaves) and during seed matur
 
 Unlike the other five hormones, ethylene is a **gas** and diffuses freely through air spaces rather than requiring vascular or cell-to-cell transport, which is why it can coordinate ripening or senescence across an entire fruit or even between adjacent fruits (the basis of the practical observation that one ripening fruit accelerates ripening in nearby fruit, and of commercial ripening chambers). Ethylene promotes **fruit ripening** (activating enzymes that break down cell wall pectin, convert starches to sugars, and degrade chlorophyll), leaf and flower **abscission** (senescence-triggered detachment via enzymatic breakdown of a specialized **abscission zone** layer at the base of the petiole or pedicel), and the seedling **triple response** — a classic diagnostic assay in which a dark-grown seedling exposed to ethylene shows three simultaneous morphological changes (radial swelling/thickening of the stem, a reduction in stem elongation rate, and exaggerated curvature of the apical hook) that together represent a specific "obstacle encountered" developmental program, historically used to identify ethylene-signaling mutants (before molecular tools existed) by screening dark-grown seedlings for those failing to show all three components of the response even when ethylene is supplied.
 
+![The triple response in dark-grown seedlings: gram and pea seedlings treated with ethylene (left of each pair) show exaggerated curvature of the plumular hook, inhibition of hypocotyl/root elongation, and radial swelling of the root/hypocotyl, compared to untreated controls](/PLANTPHYSIOPICS/ethylene-triple-response.png)
+*Source: Springer (book chapter, doi 978-981-13-2023-1_19)*
+
 ### Brassinosteroids
 
 Structurally steroid-like (unlike the other five hormones), synthesized broadly across tissues, and acting largely locally rather than being transported long distances. Brassinosteroids promote cell elongation and division in a way that overlaps functionally with auxin and gibberellin (a mutant deficient in brassinosteroid synthesis shows a dwarf phenotype reminiscent of a GA-deficient mutant, but is not rescued by GA application — the specific genetic test distinguishing the two dwarfing causes) and also contribute to vascular tissue differentiation and stress tolerance.
+
+![Six-hormone summary table: chemical nature, primary sites of biosynthesis, transport mode, and effects for auxins, cytokinins, ethylene, abscisic acid, gibberellins, and brassinosteroids, side by side](/PLANTPHYSIOPICS/plant-hormones-summary.png)
+*Source: public source*
 
 ## Comparative Structures
 
@@ -63,15 +77,114 @@ Structurally steroid-like (unlike the other five hormones), synthesized broadly 
 **Interactive**
 
 - **Coleoptile bending simulator (click-through SVG/JS, no new library)** — reproduces the Darwin/Went experimental series (intact tip + light, tip removed, tip covered, severed tip on agar reapplied off-center) as selectable conditions, each showing the resulting bending or lack thereof, letting the user reconstruct the logical case for a diffusible signal step by step.
+
+<div id="coleoptile-widget" style="background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:'Inter','Segoe UI',Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
+  <svg viewBox="0 0 200 200" width="180" height="180" style="display:block; margin:0 auto;">
+    <text id="coLightIcon" x="170" y="30" font-size="20" text-anchor="middle">&#9728;&#65039;</text>
+    <rect x="0" y="160" width="200" height="20" fill="#c9a877"/>
+    <path id="coStem" d="M100 160 L100 60" stroke="#2d6a4f" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path id="coTip" d="M100 60 L100 45" stroke="#1a472a" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <rect id="coCap" x="90" y="35" width="20" height="14" rx="4" fill="#334155" opacity="0"/>
+    <rect id="coBaseShield" x="85" y="150" width="30" height="20" fill="#334155" opacity="0"/>
+    <rect id="coAgarBlock" x="60" y="55" width="16" height="10" fill="#fde68a" stroke="#92400e" opacity="0"/>
+  </svg>
+  <div style="text-align:center;">
+    <select id="coCondition" style="padding:6px 10px; border-radius:8px; border:1px solid #94a3b8; font-size:0.85rem;">
+      <option value="control">Control: intact tip, light from one side</option>
+      <option value="removed">Tip removed</option>
+      <option value="opaque">Tip covered by opaque cap</option>
+      <option value="transparent">Tip covered by transparent cap</option>
+      <option value="baseshield">Base covered by opaque shield</option>
+      <option value="agar">Severed tip on agar, reapplied off-center (dark)</option>
+    </select>
+    <div id="coNote" style="margin-top:10px; font-size:0.85rem; color:#4b5563; min-height:2.4em;">The intact, light-exposed tip bends toward the light — auxin is redistributed to the shaded side and promotes elongation there.</div>
+  </div>
+</div>
+<script>
+(function(){
+  var select = document.getElementById('coCondition');
+  var stem = document.getElementById('coStem');
+  var tip = document.getElementById('coTip');
+  var cap = document.getElementById('coCap');
+  var baseShield = document.getElementById('coBaseShield');
+  var agarBlock = document.getElementById('coAgarBlock');
+  var lightIcon = document.getElementById('coLightIcon');
+  var note = document.getElementById('coNote');
+  var conditions = {
+    control: {bend:true, cap:false, base:false, agar:false, light:true, text:'The intact, light-exposed tip bends toward the light — auxin is redistributed to the shaded side and promotes elongation there.'},
+    removed: {bend:false, cap:false, base:false, agar:false, light:true, text:'With the tip removed, no bending occurs — the light-sensing, auxin-redistributing tissue is gone.'},
+    opaque: {bend:false, cap:true, base:false, agar:false, light:true, text:'An opaque cap blocks light from reaching the tip, so no bending occurs — proving the tip itself must detect the light.'},
+    transparent: {bend:true, cap:true, base:false, agar:false, light:true, text:'A transparent cap still lets light through to the tip, and bending occurs normally — the cap material, not covering the tip per se, is what matters.'},
+    baseshield: {bend:true, cap:false, base:true, agar:false, light:true, text:'Shielding only the base (not the tip) from light does not prevent bending — the tip is the site of perception, not the base.'},
+    agar: {bend:true, cap:false, base:false, agar:true, light:false, text:'In the dark, a severed tip\'s diffusible substance — collected in agar and reapplied off-center to a decapitated coleoptile — causes bending even with no light and no tip present. This is the direct evidence for a mobile chemical signal.'}
+  };
+  function render(){
+    var c = conditions[select.value];
+    stem.setAttribute('d', c.bend ? 'M100 160 Q80 110 95 65' : 'M100 160 L100 60');
+    tip.setAttribute('d', c.bend ? 'M95 65 Q92 55 85 47' : 'M100 60 L100 45');
+    cap.setAttribute('opacity', c.cap ? 1 : 0);
+    baseShield.setAttribute('opacity', c.base ? 1 : 0);
+    agarBlock.setAttribute('opacity', c.agar ? 1 : 0);
+    lightIcon.setAttribute('opacity', c.light ? 1 : 0.15);
+    note.textContent = c.text;
+  }
+  select.addEventListener('change', render);
+  render();
+})();
+</script>
+
 - **Auxin:cytokinin ratio tissue-culture predictor (slider)** — a slider sets the relative auxin:cytokinin ratio; the diagram updates between root-dominant, shoot-dominant, and undifferentiated callus outcomes, visualizing the ratio-dependence directly rather than as a memorized table.
 
-**Static**
+<div id="ratio-widget" style="background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:'Inter','Segoe UI',Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
+  <svg viewBox="0 0 220 160" width="200" height="150" style="display:block; margin:0 auto;">
+    <ellipse cx="110" cy="90" rx="45" ry="30" fill="#e2c08d" stroke="#92400e" stroke-width="2"/>
+    <text x="110" y="94" text-anchor="middle" font-size="10" fill="#92400e">callus</text>
+    <g id="ratioShoots" opacity="0">
+      <path d="M100 65 Q95 40 90 25" stroke="#2d6a4f" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M110 65 Q110 35 110 20" stroke="#2d6a4f" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M120 65 Q125 40 130 25" stroke="#2d6a4f" stroke-width="5" fill="none" stroke-linecap="round"/>
+    </g>
+    <g id="ratioRoots" opacity="0">
+      <path d="M100 115 Q95 140 90 155" stroke="#7c5a3a" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M110 115 Q110 145 110 158" stroke="#7c5a3a" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <path d="M120 115 Q125 140 130 155" stroke="#7c5a3a" stroke-width="5" fill="none" stroke-linecap="round"/>
+    </g>
+  </svg>
+  <label style="font-size:0.85rem; font-weight:600; color:#334155; display:block; text-align:center;">Auxin:Cytokinin ratio</label>
+  <input type="range" id="ratioSlider" min="0" max="100" value="50" style="width:100%; max-width:300px; display:block; margin:0 auto;">
+  <div style="text-align:center; font-size:0.8rem; color:#4b5563;">
+    <span>low (high cytokinin)</span> &nbsp;&mdash;&nbsp; <span>high (high auxin)</span>
+  </div>
+  <div id="ratioNote" style="text-align:center; margin-top:10px; font-size:0.85rem; color:#4b5563;">Equal auxin and cytokinin — undifferentiated callus growth, no roots or shoots yet.</div>
+</div>
+<script>
+(function(){
+  var slider = document.getElementById('ratioSlider');
+  var shoots = document.getElementById('ratioShoots');
+  var roots = document.getElementById('ratioRoots');
+  var note = document.getElementById('ratioNote');
+  function update(){
+    var v = parseInt(slider.value,10);
+    if (v < 35){
+      shoots.style.opacity = 1;
+      roots.style.opacity = 0;
+      note.textContent = 'Low auxin:cytokinin ratio (cytokinin-dominant) — shoot formation is favored.';
+    } else if (v > 65){
+      shoots.style.opacity = 0;
+      roots.style.opacity = 1;
+      note.textContent = 'High auxin:cytokinin ratio (auxin-dominant) — root formation is favored.';
+    } else {
+      shoots.style.opacity = 0;
+      roots.style.opacity = 0;
+      note.textContent = 'Roughly equal auxin and cytokinin — undifferentiated callus growth, no roots or shoots yet.';
+    }
+  }
+  slider.addEventListener('input', update);
+  update();
+})();
+</script>
 
-- Polar auxin transport diagram: PIN transporter asymmetric localization at one end of each cell, arrows showing unidirectional shoot-to-root flow
-- Apical dominance diagram: intact apex suppressing lateral buds vs. decapitated shoot releasing lateral bud outgrowth
-- Dwarf pea phenotype comparison: wild-type, GA-deficient untreated, and GA-deficient + exogenous GA treated, side by side
-- Triple response diagram: normal dark-grown seedling vs. ethylene-exposed seedling, all three morphological changes labeled
-- Six-hormone summary diagram, synthesis site and primary effect icon for each
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. The dwarf-pea GA-rescue comparison was dropped — no image sourced.)*
 
 ## Practice Problems
 
