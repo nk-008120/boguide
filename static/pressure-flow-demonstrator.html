@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pressure-Flow (Munch) Demonstrator | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .slider-row { margin-bottom: 12px; }
+  label { font-size: 0.85rem; font-weight: 600; color: #334155; display:flex; justify-content:space-between; }
+  input[type=range] { width: 100%; }
+  .readout {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-top: 12px;
+    font-size: 0.92rem;
+    text-align: center;
+  }
+  .readout b { color: #1d70a2; }
+  .note { font-size: 0.82rem; color: #4b5563; margin-top: 10px; text-align:center; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Pressure-Flow (Munch) Demonstrator</h3>
+  <div class="subtitle">Flow runs from whichever chamber has higher turgor pressure — not always source-to-sink in the textbook direction.</div>
+  <svg viewBox="0 0 500 160" width="100%" style="max-width:500px; display:block; margin:0 auto;">
+    <rect id="chamberA" x="20" y="20" width="110" height="120" rx="10" fill="#a8d4f0" stroke="#1d70a2" stroke-width="2"/>
+    <text x="75" y="15" text-anchor="middle" font-size="13" font-weight="600" fill="#1a472a">Chamber A (leaf)</text>
+    <rect x="130" y="70" width="240" height="20" fill="#c9dcee" stroke="#1d70a2" stroke-width="1.5"/>
+    <path id="flowArrow" d="M180 80 L220 80" stroke="#1d70a2" stroke-width="4" marker-end="url(#pfArrow)"/>
+    <rect id="chamberB" x="370" y="20" width="110" height="120" rx="10" fill="#a8d4f0" stroke="#1d70a2" stroke-width="2"/>
+    <text x="425" y="15" text-anchor="middle" font-size="13" font-weight="600" fill="#1a472a">Chamber B (root)</text>
+    <defs>
+      <marker id="pfArrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#1d70a2"/></marker>
+    </defs>
+  </svg>
+  <div class="slider-row">
+    <label>Chamber A sucrose loading <span id="aOut">70%</span></label>
+    <input type="range" id="aSlider" min="0" max="100" value="70">
+  </div>
+  <div class="slider-row">
+    <label>Chamber B sucrose loading <span id="bOut">10%</span></label>
+    <input type="range" id="bSlider" min="0" max="100" value="10">
+  </div>
+  <div class="readout">Chamber A turgor: <b id="aVal">70%</b> &nbsp;|&nbsp; Chamber B turgor: <b id="bVal">10%</b></div>
+  <div class="note" id="pfNote">Chamber A has higher turgor — bulk flow runs A to B (the usual leaf-source, root-sink direction).</div>
+</div>
+<script>
+(function(){
+  var aSlider = document.getElementById('aSlider');
+  var bSlider = document.getElementById('bSlider');
+  var aOut = document.getElementById('aOut');
+  var bOut = document.getElementById('bOut');
+  var aVal = document.getElementById('aVal');
+  var bVal = document.getElementById('bVal');
+  var chamberA = document.getElementById('chamberA');
+  var chamberB = document.getElementById('chamberB');
+  var flowArrow = document.getElementById('flowArrow');
+  var note = document.getElementById('pfNote');
+  function update(){
+    var a = parseInt(aSlider.value,10);
+    var b = parseInt(bSlider.value,10);
+    aOut.textContent = a + '%';
+    bOut.textContent = b + '%';
+    aVal.textContent = a + '%';
+    bVal.textContent = b + '%';
+    var opA = 0.35 + (a/100)*0.65;
+    var opB = 0.35 + (b/100)*0.65;
+    chamberA.setAttribute('fill-opacity', opA.toFixed(2));
+    chamberB.setAttribute('fill-opacity', opB.toFixed(2));
+    if (a > b){
+      flowArrow.setAttribute('d', 'M180 80 L220 80');
+      flowArrow.setAttribute('marker-end','url(#pfArrow)');
+      flowArrow.removeAttribute('marker-start');
+      note.textContent = 'Chamber A has higher turgor — bulk flow runs A to B (the usual leaf-source, root-sink direction).';
+    } else if (b > a){
+      flowArrow.setAttribute('d', 'M320 80 L280 80');
+      flowArrow.setAttribute('marker-end','url(#pfArrow)');
+      flowArrow.removeAttribute('marker-start');
+      note.textContent = 'Chamber B now has higher turgor — flow reverses and runs B to A. Phloem direction follows the pressure gradient, not a fixed anatomical direction like xylem.';
+    } else {
+      flowArrow.setAttribute('d', 'M240 80 L240 80');
+      note.textContent = 'Equal turgor in both chambers — no net bulk flow either direction.';
+    }
+  }
+  aSlider.addEventListener('input', update);
+  bSlider.addEventListener('input', update);
+  update();
+})();
+</script>
+</body>
+</html>

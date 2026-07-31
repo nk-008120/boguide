@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "hugo-dev",
+      "runtimeExecutable": "hugo",
+      "runtimeArgs": ["server", "--port", "1313", "--disableFastRender"],
+      "port": 1313
+    },
+    {
+      "name": "for-her-preview",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "8934", "--directory", "C:\\NK\\for-her"],
+      "port": 8934
+    }
+  ]
+}
