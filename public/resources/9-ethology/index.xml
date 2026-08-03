@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BiOGuide for Biology Olympiads – Ethology</title>
-    <link>http://localhost:1313/resources/9-ethology/</link>
+    <link>http://localhost:63693/resources/9-ethology/</link>
     <description>Recent content in Ethology on BiOGuide for Biology Olympiads</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://localhost:1313/resources/9-ethology/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:63693/resources/9-ethology/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Mechanisms of Behavior</title>
-      <link>http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/</link>
+      <link>http://localhost:63693/resources/9-ethology/mechanisms-of-behavior/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/</guid>
+      <guid>http://localhost:63693/resources/9-ethology/mechanisms-of-behavior/</guid>
       <description>
         
         
@@ -161,10 +161,10 @@
     
     <item>
       <title>Development &amp; Learning</title>
-      <link>http://localhost:1313/resources/9-ethology/development-learning/</link>
+      <link>http://localhost:63693/resources/9-ethology/development-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/9-ethology/development-learning/</guid>
+      <guid>http://localhost:63693/resources/9-ethology/development-learning/</guid>
       <description>
         
         
@@ -180,7 +180,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
     
   
   
@@ -339,10 +339,10 @@
     
     <item>
       <title>Animal Communication</title>
-      <link>http://localhost:1313/resources/9-ethology/animal-communication/</link>
+      <link>http://localhost:63693/resources/9-ethology/animal-communication/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/9-ethology/animal-communication/</guid>
+      <guid>http://localhost:63693/resources/9-ethology/animal-communication/</guid>
       <description>
         
         
@@ -358,7 +358,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
     
   
   
@@ -486,10 +486,10 @@
     
     <item>
       <title>Orientation &amp; Navigation</title>
-      <link>http://localhost:1313/resources/9-ethology/orientation-navigation/</link>
+      <link>http://localhost:63693/resources/9-ethology/orientation-navigation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/9-ethology/orientation-navigation/</guid>
+      <guid>http://localhost:63693/resources/9-ethology/orientation-navigation/</guid>
       <description>
         
         
@@ -505,7 +505,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
     
   
   
@@ -630,10 +630,10 @@
     
     <item>
       <title>Foraging &amp; Anti-Predator Behavior</title>
-      <link>http://localhost:1313/resources/9-ethology/foraging-anti-predator-behavior/</link>
+      <link>http://localhost:63693/resources/9-ethology/foraging-anti-predator-behavior/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/9-ethology/foraging-anti-predator-behavior/</guid>
+      <guid>http://localhost:63693/resources/9-ethology/foraging-anti-predator-behavior/</guid>
       <description>
         
         
@@ -649,7 +649,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
     
   
   
@@ -764,10 +764,10 @@
     
     <item>
       <title>Mating Systems &amp; Sexual Selection</title>
-      <link>http://localhost:1313/resources/9-ethology/mating-systems-sexual-selection/</link>
+      <link>http://localhost:63693/resources/9-ethology/mating-systems-sexual-selection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/9-ethology/mating-systems-sexual-selection/</guid>
+      <guid>http://localhost:63693/resources/9-ethology/mating-systems-sexual-selection/</guid>
       <description>
         
         
@@ -783,7 +783,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
     
   
   
@@ -935,10 +935,10 @@
     
     <item>
       <title>Kin Selection, Altruism &amp; Eusociality</title>
-      <link>http://localhost:1313/resources/9-ethology/kin-selection-altruism-eusociality/</link>
+      <link>http://localhost:63693/resources/9-ethology/kin-selection-altruism-eusociality/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/9-ethology/kin-selection-altruism-eusociality/</guid>
+      <guid>http://localhost:63693/resources/9-ethology/kin-selection-altruism-eusociality/</guid>
       <description>
         
         
@@ -954,7 +954,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
     
   
   
@@ -1058,10 +1058,10 @@
     
     <item>
       <title>Aggression, Territoriality &amp; Social Structure</title>
-      <link>http://localhost:1313/resources/9-ethology/aggression-territoriality-social-structure/</link>
+      <link>http://localhost:63693/resources/9-ethology/aggression-territoriality-social-structure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/9-ethology/aggression-territoriality-social-structure/</guid>
+      <guid>http://localhost:63693/resources/9-ethology/aggression-territoriality-social-structure/</guid>
       <description>
         
         
@@ -1077,9 +1077,9 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/9-ethology/kin-selection-altruism-eusociality/&#34;&gt;Kin Selection Altruism Eusociality&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/9-ethology/kin-selection-altruism-eusociality/&#34;&gt;Kin Selection Altruism Eusociality&lt;/a&gt;
     
   
   
@@ -1189,10 +1189,10 @@
     
     <item>
       <title>Biological Rhythms</title>
-      <link>http://localhost:1313/resources/9-ethology/biological-rhythms/</link>
+      <link>http://localhost:63693/resources/9-ethology/biological-rhythms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/9-ethology/biological-rhythms/</guid>
+      <guid>http://localhost:63693/resources/9-ethology/biological-rhythms/</guid>
       <description>
         
         
@@ -1208,7 +1208,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
     
   
   

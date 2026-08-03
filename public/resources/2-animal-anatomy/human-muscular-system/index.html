@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en" dir="ltr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63693&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="noindex, nofollow" />
   <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
@@ -9,7 +9,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Human Muscular System – BiOGuide for Biology Olympiads</title>
-  <meta name="description" content="The three muscle tissue types, skeletal muscle structure from organ to sarcomere, the neuromuscular junction and excitation-contraction coupling, fiber types, the sliding filament mechanism, and major muscle groups." /><link rel="canonical" href="http://localhost:1313/resources/2-animal-anatomy/human-muscular-system/" itemprop="url" />
+  <meta name="description" content="The three muscle tissue types, skeletal muscle structure from organ to sarcomere, the neuromuscular junction and excitation-contraction coupling, fiber types, the sliding filament mechanism, and major muscle groups." /><link rel="canonical" href="http://localhost:63693/resources/2-animal-anatomy/human-muscular-system/" itemprop="url" />
 
 <meta property="og:title" content="Human Muscular System">
 <meta
@@ -22,12 +22,12 @@
   content="
     website
   ">
-<meta property="og:url" content="http://localhost:1313/resources/2-animal-anatomy/human-muscular-system/">
+<meta property="og:url" content="http://localhost:63693/resources/2-animal-anatomy/human-muscular-system/">
 
 
 	<meta itemprop="name" content="Human Muscular System">
 	<meta itemprop="description" content="The three muscle tissue types, skeletal muscle structure from organ to sarcomere, the neuromuscular junction and excitation-contraction coupling, fiber types, the sliding filament mechanism, and major muscle groups.">
-	<meta itemprop="wordCount" content="1905">
+	<meta itemprop="wordCount" content="1901">
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="Human Muscular System">
 	<meta name="twitter:description" content="The three muscle tissue types, skeletal muscle structure from organ to sarcomere, the neuromuscular junction and excitation-contraction coupling, fiber types, the sliding filament mechanism, and major muscle groups.">
@@ -1498,6 +1498,79 @@
 <p><strong>Thin filaments</strong> are not pure actin: alongside the polymerized <strong>actin</strong> strand, <strong>tropomyosin</strong> (a rod-shaped protein lying along the actin groove, blocking myosin-binding sites at rest) and the <strong>troponin complex</strong> (troponin C binds calcium, troponin I inhibits actin-myosin binding at rest, troponin T anchors the complex to tropomyosin) together form the structural switch that gates contraction — calcium binding to troponin C shifts tropomyosin&rsquo;s position, exposing the myosin-binding sites this is the direct structural link between a calcium signal and the sliding-filament mechanism below.</p>
 <p><img src="/ANATOMYPICS/sarcomere-banding-rest-vs-contracted.webp" alt="A sarcomere at rest vs. contracted, labeled with the I-band, H-zone, Z-disk, CapZ, titin, myosin head and tail, actin filament, and M-line — the I-band and H-zone visibly shorten between the two states while the thick filament length (A-band) stays constant."  data-zoomable loading="lazy" />
 <em>Source: user-sourced textbook-style figure. Exact match for the banding pattern described above; also labels titin and CapZ, structural proteins not covered in this page&rsquo;s text.</em></p>
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">🔬 Sarcomere Contraction Slider</h3>
+  <svg id="sarcSvg" viewBox="0 0 300 150" style="width:100%; max-width:500px; display:block; margin:0 auto;">
+    <rect id="sarc-Ileft" y="60" height="30" fill="#a8d8ea"/>
+    <rect id="sarc-Oleft" y="60" height="30" fill="#e8a04c"/>
+    <rect id="sarc-Hleft" y="60" height="30" fill="#d9c7ea"/>
+    <rect id="sarc-Hright" y="60" height="30" fill="#d9c7ea"/>
+    <rect id="sarc-Oright" y="60" height="30" fill="#e8a04c"/>
+    <rect id="sarc-Iright" y="60" height="30" fill="#a8d8ea"/>
+    <line id="sarc-zL" x1="0" y1="20" x2="0" y2="130" stroke="#1a472a" stroke-width="3"/>
+    <line id="sarc-zR" x1="0" y1="20" x2="0" y2="130" stroke="#1a472a" stroke-width="3"/>
+    <line x1="150" y1="20" x2="150" y2="130" stroke="#4b5563" stroke-width="1.5" stroke-dasharray="3,3"/>
+  </svg>
+  <div style="display:flex; justify-content:space-between; font-size:0.72rem; color:#6b7280; margin:0.3rem 0 0.6rem 0;">
+    <span>Z-disc</span><span>I-band</span><span>Overlap</span><span>H-zone</span><span>M-line</span>
+  </div>
+  <input type="range" id="sarcSlider" min="0" max="100" step="1" value="0" style="width:100%; accent-color:#2d6a4f;">
+  <div style="display:flex; justify-content:space-between; font-size:0.75rem; color:#6b7280; margin-bottom:0.8rem;">
+    <span>Fully relaxed</span><span>Fully contracted</span>
+  </div>
+  <div style="display:flex; gap:1.5rem; flex-wrap:wrap; font-size:0.85rem; color:#374151;">
+    <div>Sarcomere length: <strong id="sarcLenOut">230.0</strong></div>
+    <div>A-band (constant): <strong>160.0</strong></div>
+    <div>I-band (each side): <strong id="sarcIOut">35.0</strong></div>
+    <div>H-zone (total): <strong id="sarcHOut">30.0</strong></div>
+  </div>
+</div>
+<script>
+(function(){
+  var slider = document.getElementById('sarcSlider');
+  var zL = document.getElementById('sarc-zL');
+  var zR = document.getElementById('sarc-zR');
+  var Ileft = document.getElementById('sarc-Ileft');
+  var Oleft = document.getElementById('sarc-Oleft');
+  var Hleft = document.getElementById('sarc-Hleft');
+  var Hright = document.getElementById('sarc-Hright');
+  var Oright = document.getElementById('sarc-Oright');
+  var Iright = document.getElementById('sarc-Iright');
+  var lenOut = document.getElementById('sarcLenOut');
+  var iOut = document.getElementById('sarcIOut');
+  var hOut = document.getElementById('sarcHOut');
+  var center = 150;
+  var Ahalf = 80;
+
+  function update(){
+    var t = parseFloat(slider.value) / 100;
+    var Ihalf = 35 * (1 - t);
+    var Hhalf = Math.max(0, 15 - 25 * t);
+    var Ohalf = Ahalf - Hhalf;
+    var half = Ihalf + Ahalf;
+
+    var zLx = center - half;
+    var zRx = center + half;
+
+    zL.setAttribute('x1', zLx); zL.setAttribute('x2', zLx);
+    zR.setAttribute('x1', zRx); zR.setAttribute('x2', zRx);
+
+    Ileft.setAttribute('x', zLx); Ileft.setAttribute('width', Ihalf);
+    Oleft.setAttribute('x', zLx + Ihalf); Oleft.setAttribute('width', Ohalf);
+    Hleft.setAttribute('x', center - Hhalf); Hleft.setAttribute('width', Hhalf);
+    Hright.setAttribute('x', center); Hright.setAttribute('width', Hhalf);
+    Oright.setAttribute('x', center + Hhalf); Oright.setAttribute('width', Ohalf);
+    Iright.setAttribute('x', zRx - Ihalf); Iright.setAttribute('width', Ihalf);
+
+    lenOut.textContent = (2 * half).toFixed(1);
+    iOut.textContent = Ihalf.toFixed(1);
+    hOut.textContent = (2 * Hhalf).toFixed(1);
+  }
+
+  slider.addEventListener('input', update);
+  update();
+})();
+</script>
 <h3>Neuromuscular Junction and Excitation-Contraction Coupling<span class="hx:absolute hx:-mt-20" id="neuromuscular-junction-and-excitation-contraction-coupling"></span>
     <a href="#neuromuscular-junction-and-excitation-contraction-coupling" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>A motor neuron&rsquo;s axon terminal forms a specialized synapse, the <strong>neuromuscular junction (NMJ)</strong>, onto a specific site on the muscle fiber, the <strong>motor end plate</strong> — a region of extensively folded sarcolemma (muscle cell membrane) that increases surface area for <strong>acetylcholine (ACh)</strong> receptors. Arrival of an action potential at the axon terminal triggers ACh release into the <strong>synaptic cleft</strong>; ACh binding at the motor end plate depolarizes the sarcolemma, generating a muscle action potential.</p>
 <p><img src="/ANATOMYPICS/neuromuscular-junction-motor-end-plate.jpg" alt="A three-panel zoom from a whole muscle fiber down to the neuromuscular junction: the axon terminal and synaptic end bulb sitting on the sarcolemma, then a close-up of ACh-containing synaptic vesicles releasing their contents by exocytosis into the synaptic cleft and binding ACh receptors on the motor end plate, opening Na&#43; channels."  data-zoomable loading="lazy" />
@@ -1505,6 +1578,70 @@
 <p>This electrical signal is carried into the fiber&rsquo;s interior by <strong>T-tubules</strong> (transverse tubules — deep, tubular invaginations of the sarcolemma, penetrating between myofibrils at regular intervals aligned with the sarcomere pattern), which lie immediately adjacent to the <strong>sarcoplasmic reticulum (SR)</strong> — a specialized smooth ER wrapping each myofibril and storing a large intracellular calcium reserve. A T-tubule flanked by two SR terminal cisternae forms a structural unit called a <strong>triad</strong>. Depolarization of the T-tubule membrane is mechanically/electrically coupled (via voltage-sensing <strong>DHP receptors</strong> on the T-tubule linked to <strong>ryanodine receptors</strong>, which are calcium-release channels, on the adjacent SR) to rapid calcium release from the SR into the sarcoplasm — this triad structure is the specific anatomical basis of <strong>excitation-contraction coupling</strong>, the process linking a surface electrical signal to filament sliding deep within the fiber. Released calcium binds troponin C (above), exposing myosin-binding sites and permitting the cross-bridge cycle to proceed; when nervous stimulation ends, calcium is actively pumped back into the SR, tropomyosin re-blocks the binding sites, and the muscle relaxes.</p>
 <p><img src="/ANATOMYPICS/t-tubule-sarcoplasmic-reticulum-triad.png" alt="A triad structure: the T-tubule (an extension of the sarcolemma) flanked by two terminal cisternae of the sarcoplasmic reticulum, wrapped around thick and thin filaments, with the sarcoplasmic reticulum shown storing Ca2&#43;."  data-zoomable loading="lazy" />
 <em>Source: user-sourced textbook-style figure. Exact match for the triad structure and its role carrying action potentials into the fiber interior.</em></p>
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">⚡ Excitation-Contraction Coupling Walkthrough</h3>
+  <p style="font-size:0.85rem; color:#6b7280; margin:0 0 1rem 0;">Click a step directly, or use Next/Previous to walk through the pathway from ACh release to binding-site exposure. The active step lights up; completed steps stay checked.</p>
+  <div id="eccSteps" style="display:flex; flex-direction:column; gap:0.4rem;"></div>
+  <div style="display:flex; gap:0.5rem; margin-top:0.8rem;">
+    <button id="eccPrev" style="padding:6px 16px; border:none; border-radius:30px; background:#e2e8f0; color:#1e293b; cursor:pointer; font-weight:500; font-size:0.85rem;">← Previous</button>
+    <button id="eccNext" style="padding:6px 16px; border:none; border-radius:30px; background:#2d6a4f; color:white; cursor:pointer; font-weight:500; font-size:0.85rem;">Next →</button>
+  </div>
+</div>
+<script>
+(function(){
+  var steps = [
+    { name: 'ACh release at the NMJ', desc: 'An action potential arriving at the axon terminal triggers exocytosis of acetylcholine into the synaptic cleft.' },
+    { name: 'Sarcolemma depolarization', desc: 'ACh binds receptors at the motor end plate, opening channels and depolarizing the sarcolemma into a muscle action potential.' },
+    { name: 'T-tubule conducts the signal inward', desc: 'The action potential travels deep into the fiber along T-tubules — invaginations of the sarcolemma aligned with the sarcomere pattern.' },
+    { name: 'SR calcium release via the triad', desc: 'At the triad, voltage-sensing DHP receptors on the T-tubule mechanically/electrically couple to ryanodine receptors on the adjacent sarcoplasmic reticulum, releasing stored Ca²⁺.' },
+    { name: 'Calcium binds Troponin C', desc: 'Released Ca²⁺ binds troponin C on the thin filament.' },
+    { name: 'Myosin-binding site exposed', desc: "Calcium binding shifts tropomyosin's position on the actin groove, exposing the myosin-binding site and permitting the cross-bridge cycle to proceed." }
+  ];
+  var idx = 0;
+  var container = document.getElementById('eccSteps');
+  var prevBtn = document.getElementById('eccPrev');
+  var nextBtn = document.getElementById('eccNext');
+
+  steps.forEach(function(s, i){
+    var row = document.createElement('div');
+    row.className = 'ecc-step';
+    row.dataset.index = i;
+    row.style.cssText = 'padding:8px 12px; border-radius:10px; border:2px solid transparent; cursor:pointer; transition:background 0.2s, border-color 0.2s;';
+    row.innerHTML = '<strong>' + (i + 1) + '. ' + s.name + '</strong><div class="ecc-desc" style="font-size:0.82rem; color:#4b5563; margin-top:2px;">' + s.desc + '</div>';
+    row.addEventListener('click', function(){ idx = i; render(); });
+    container.appendChild(row);
+  });
+
+  function render(){
+    var rows = container.querySelectorAll('.ecc-step');
+    rows.forEach(function(row, i){
+      if (i === idx) {
+        row.style.background = '#2d6a4f';
+        row.style.borderColor = '#1a472a';
+        row.style.color = 'white';
+        row.querySelector('.ecc-desc').style.color = '#e5f0ea';
+      } else if (i < idx) {
+        row.style.background = '#eaf3ea';
+        row.style.borderColor = 'transparent';
+        row.style.color = '#1a472a';
+        row.querySelector('.ecc-desc').style.color = '#4b5563';
+      } else {
+        row.style.background = '#f1f5f9';
+        row.style.borderColor = 'transparent';
+        row.style.color = '#9ca3af';
+        row.querySelector('.ecc-desc').style.color = '#9ca3af';
+      }
+    });
+    prevBtn.disabled = idx === 0;
+    nextBtn.disabled = idx === steps.length - 1;
+  }
+
+  prevBtn.addEventListener('click', function(){ if (idx > 0) { idx--; render(); } });
+  nextBtn.addEventListener('click', function(){ if (idx < steps.length - 1) { idx++; render(); } });
+
+  render();
+})();
+</script>
 <h3>The Cross-Bridge Cycle and Sliding Filament Model<span class="hx:absolute hx:-mt-20" id="the-cross-bridge-cycle-and-sliding-filament-model"></span>
     <a href="#the-cross-bridge-cycle-and-sliding-filament-model" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>With binding sites exposed, contraction proceeds through a repeating cycle at each myosin head: <strong>(1)</strong> an ATP-bound myosin head hydrolyzes ATP to ADP + Pi, cocking into a high-energy conformation; <strong>(2)</strong> the cocked head binds an exposed site on actin, forming a cross-bridge; <strong>(3)</strong> release of Pi triggers the <strong>power stroke</strong> — the head pivots, pulling the thin filament past the thick filament (the ADP is released at the end of this step); <strong>(4)</strong> a new ATP molecule binds the myosin head, causing it to detach from actin, resetting the cycle. Because myosin heads along a thick filament act asynchronously (some attached and pulling while others detach and reset), contraction is smooth rather than jerky — and because the thin and thick filaments themselves do not change length, only slide past each other, the A-band stays constant while the I-band and H-zone shorten, the direct histological signature of this mechanism.</p>
 <p><img src="/ANATOMYPICS/cross-bridge-cycle-four-steps.jpg" alt="The myosin cross-bridge cycle shown as five labeled steps: (1) binding of myosin to actin, (2) the power stroke pulling actin toward the sarcomere center as ADP is released, (3) rigor (myosin in its low-energy form), (4) unbinding of myosin and actin as new ATP binds, and (5) cocking of the myosin head back into its high-energy form as ATP is hydrolyzed."  data-zoomable loading="lazy" />
@@ -1581,10 +1718,7 @@
 </ul>
 <h2>Visual Reference<span class="hx:absolute hx:-mt-20" id="visual-reference"></span>
     <a href="#visual-reference" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p><strong>Interactive</strong></p>
-<ul>
-<li><strong>Sarcomere contraction slider (Plotly or SVG+JS)</strong> — drag from &ldquo;fully relaxed&rdquo; to &ldquo;fully contracted&rdquo; and watch the A-band, I-band, and H-zone lengths update live on a labeled sarcomere, with a numeric readout of each band&rsquo;s current length — the clearest possible demonstration that filaments slide rather than shorten.</li>
-<li><strong>Excitation-contraction coupling walkthrough (click-through)</strong> — click through ACh release at the NMJ → sarcolemma depolarization → T-tubule → SR calcium release via the triad → troponin C binding → binding-site exposure, lighting up each structure in sequence.</li>
-</ul>
+<p><em>(Implemented inline above: the sarcomere contraction slider sits directly below the sarcomere banding image, and the excitation-contraction coupling walkthrough sits directly below the triad image.)</em></p>
 <p><strong>Static</strong></p>
 <p><em>(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)</em></p>
 <h2>Practice Problems<span class="hx:absolute hx:-mt-20" id="practice-problems"></span>

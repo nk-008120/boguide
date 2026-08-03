@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BiOGuide for Biology Olympiads – Plant Anatomy</title>
-    <link>http://localhost:1313/resources/6-plant-anatomy/</link>
+    <link>http://localhost:63693/resources/6-plant-anatomy/</link>
     <description>Recent content in Plant Anatomy on BiOGuide for Biology Olympiads</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://localhost:1313/resources/6-plant-anatomy/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:63693/resources/6-plant-anatomy/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Plant Tissue Systems</title>
-      <link>http://localhost:1313/resources/6-plant-anatomy/plant-tissue-systems/</link>
+      <link>http://localhost:63693/resources/6-plant-anatomy/plant-tissue-systems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/6-plant-anatomy/plant-tissue-systems/</guid>
+      <guid>http://localhost:63693/resources/6-plant-anatomy/plant-tissue-systems/</guid>
       <description>
         
         
@@ -183,10 +183,10 @@
     
     <item>
       <title>Xylem, Phloem &amp; Vascular Tissue</title>
-      <link>http://localhost:1313/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/</link>
+      <link>http://localhost:63693/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/</guid>
+      <guid>http://localhost:63693/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/</guid>
       <description>
         
         
@@ -202,7 +202,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
     
   
   
@@ -357,10 +357,10 @@
     
     <item>
       <title>Root Anatomy</title>
-      <link>http://localhost:1313/resources/6-plant-anatomy/root-anatomy/</link>
+      <link>http://localhost:63693/resources/6-plant-anatomy/root-anatomy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/6-plant-anatomy/root-anatomy/</guid>
+      <guid>http://localhost:63693/resources/6-plant-anatomy/root-anatomy/</guid>
       <description>
         
         
@@ -376,9 +376,9 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/&#34;&gt;Xylem Phloem Vascular Tissue&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/&#34;&gt;Xylem Phloem Vascular Tissue&lt;/a&gt;
     
   
   
@@ -486,10 +486,10 @@
     
     <item>
       <title>Stem Anatomy</title>
-      <link>http://localhost:1313/resources/6-plant-anatomy/stem-anatomy/</link>
+      <link>http://localhost:63693/resources/6-plant-anatomy/stem-anatomy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/6-plant-anatomy/stem-anatomy/</guid>
+      <guid>http://localhost:63693/resources/6-plant-anatomy/stem-anatomy/</guid>
       <description>
         
         
@@ -505,9 +505,9 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/&#34;&gt;Xylem Phloem Vascular Tissue&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/&#34;&gt;Xylem Phloem Vascular Tissue&lt;/a&gt;
     
   
   
@@ -612,10 +612,10 @@
     
     <item>
       <title>Leaf Anatomy</title>
-      <link>http://localhost:1313/resources/6-plant-anatomy/leaf-anatomy/</link>
+      <link>http://localhost:63693/resources/6-plant-anatomy/leaf-anatomy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/6-plant-anatomy/leaf-anatomy/</guid>
+      <guid>http://localhost:63693/resources/6-plant-anatomy/leaf-anatomy/</guid>
       <description>
         
         
@@ -631,9 +631,9 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/&#34;&gt;Xylem Phloem Vascular Tissue&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/&#34;&gt;Xylem Phloem Vascular Tissue&lt;/a&gt;
     
   
   
@@ -743,10 +743,10 @@
     
     <item>
       <title>Secondary Growth &amp; Wood Anatomy</title>
-      <link>http://localhost:1313/resources/6-plant-anatomy/secondary-growth-wood-anatomy/</link>
+      <link>http://localhost:63693/resources/6-plant-anatomy/secondary-growth-wood-anatomy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/6-plant-anatomy/secondary-growth-wood-anatomy/</guid>
+      <guid>http://localhost:63693/resources/6-plant-anatomy/secondary-growth-wood-anatomy/</guid>
       <description>
         
         
@@ -762,9 +762,9 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/stem-anatomy/&#34;&gt;Stem Anatomy&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/6-plant-anatomy/stem-anatomy/&#34;&gt;Stem Anatomy&lt;/a&gt;
     
   
   
@@ -874,10 +874,10 @@
     
     <item>
       <title>Monocot vs Dicot Comparative Anatomy</title>
-      <link>http://localhost:1313/resources/6-plant-anatomy/monocot-dicot-comparative-anatomy/</link>
+      <link>http://localhost:63693/resources/6-plant-anatomy/monocot-dicot-comparative-anatomy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/6-plant-anatomy/monocot-dicot-comparative-anatomy/</guid>
+      <guid>http://localhost:63693/resources/6-plant-anatomy/monocot-dicot-comparative-anatomy/</guid>
       <description>
         
         
@@ -893,13 +893,13 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/root-anatomy/&#34;&gt;Root Anatomy&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/6-plant-anatomy/root-anatomy/&#34;&gt;Root Anatomy&lt;/a&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/stem-anatomy/&#34;&gt;Stem Anatomy&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/6-plant-anatomy/stem-anatomy/&#34;&gt;Stem Anatomy&lt;/a&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/leaf-anatomy/&#34;&gt;Leaf Anatomy&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/6-plant-anatomy/leaf-anatomy/&#34;&gt;Leaf Anatomy&lt;/a&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/secondary-growth-wood-anatomy/&#34;&gt;Secondary Growth Wood Anatomy&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/6-plant-anatomy/secondary-growth-wood-anatomy/&#34;&gt;Secondary Growth Wood Anatomy&lt;/a&gt;
     
   
   
@@ -1022,10 +1022,10 @@
     
     <item>
       <title>Flower Anatomy &amp; Reproductive Structures</title>
-      <link>http://localhost:1313/resources/6-plant-anatomy/flower-anatomy-reproductive-structures/</link>
+      <link>http://localhost:63693/resources/6-plant-anatomy/flower-anatomy-reproductive-structures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/6-plant-anatomy/flower-anatomy-reproductive-structures/</guid>
+      <guid>http://localhost:63693/resources/6-plant-anatomy/flower-anatomy-reproductive-structures/</guid>
       <description>
         
         
@@ -1041,7 +1041,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
     
   
   
@@ -1185,10 +1185,10 @@
     
     <item>
       <title>Seed &amp; Fruit Anatomy</title>
-      <link>http://localhost:1313/resources/6-plant-anatomy/seed-fruit-anatomy/</link>
+      <link>http://localhost:63693/resources/6-plant-anatomy/seed-fruit-anatomy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/6-plant-anatomy/seed-fruit-anatomy/</guid>
+      <guid>http://localhost:63693/resources/6-plant-anatomy/seed-fruit-anatomy/</guid>
       <description>
         
         
@@ -1204,7 +1204,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/flower-anatomy-reproductive-structures/&#34;&gt;Flower Anatomy Reproductive Structures&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/6-plant-anatomy/flower-anatomy-reproductive-structures/&#34;&gt;Flower Anatomy Reproductive Structures&lt;/a&gt;
     
   
   
@@ -1349,10 +1349,10 @@
     
     <item>
       <title>Plant Body Plans Across Major Lineages</title>
-      <link>http://localhost:1313/resources/6-plant-anatomy/plant-body-plans-major-lineages/</link>
+      <link>http://localhost:63693/resources/6-plant-anatomy/plant-body-plans-major-lineages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/6-plant-anatomy/plant-body-plans-major-lineages/</guid>
+      <guid>http://localhost:63693/resources/6-plant-anatomy/plant-body-plans-major-lineages/</guid>
       <description>
         
         
@@ -1368,9 +1368,9 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/&#34;&gt;Xylem Phloem Vascular Tissue&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/&#34;&gt;Xylem Phloem Vascular Tissue&lt;/a&gt;
     
   
   

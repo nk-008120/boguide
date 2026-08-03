@@ -31,6 +31,83 @@ A typical long bone (e.g. the femur) has: the **diaphysis** (shaft, compact bone
 ![A long bone in longitudinal section, labeled with the two epiphyses, the metaphysis at each end, the central diaphysis (shaft), the medullary cavity, and the spongy bone/compact bone distinction.](/ANATOMYPICS/long-bone-gross-anatomy.jpg)
 *Source: sourced textbook-style figure. Shows all core gross-anatomy landmarks discussed above except the periosteum specifically, which is not separately labeled in this image.*
 
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:0.8rem;">
+    <h3 style="margin:0; color:#1a472a;">🦴 Long Bone Hotspot Diagram</h3>
+    <button id="boneAgeToggle" style="padding:6px 16px; border:none; border-radius:30px; background:#2d6a4f; color:white; cursor:pointer; font-weight:500; font-size:0.85rem;">Juvenile (open growth plate)</button>
+  </div>
+  <div style="display:flex; gap:2rem; flex-wrap:wrap; align-items:flex-start;">
+    <div style="flex:0 0 220px;">
+      <svg id="boneSvg" viewBox="0 0 300 420" style="width:100%; max-width:220px; display:block; margin:0 auto;">
+        <ellipse cx="150" cy="45" rx="58" ry="38" fill="#e8d5b7" class="bone-hotspot" data-key="epiphysis" style="cursor:pointer;"/>
+        <rect id="growthplate-top" x="112" y="80" width="76" height="18" fill="#a8d8ea" class="bone-hotspot" data-key="growthplate" style="cursor:pointer;"/>
+        <rect x="120" y="95" width="60" height="210" rx="6" fill="#c9915a" class="bone-hotspot" data-key="periosteum" style="cursor:pointer;"/>
+        <rect x="126" y="100" width="48" height="200" fill="#e8d5b7" class="bone-hotspot" data-key="diaphysis" style="cursor:pointer;"/>
+        <rect x="138" y="110" width="24" height="180" fill="#fdf6e3" class="bone-hotspot" data-key="medullary" style="cursor:pointer;"/>
+        <rect id="growthplate-bottom" x="112" y="302" width="76" height="18" fill="#a8d8ea" class="bone-hotspot" data-key="growthplate" style="cursor:pointer;"/>
+        <ellipse cx="150" cy="355" rx="58" ry="38" fill="#e8d5b7" class="bone-hotspot" data-key="epiphysis" style="cursor:pointer;"/>
+      </svg>
+    </div>
+    <div style="flex:1; min-width:220px;">
+      <div style="font-weight:700; font-size:1.05rem; color:#1a472a; margin-bottom:0.4rem;" id="boneInfoTitle">Click a region of the bone</div>
+      <div style="font-size:0.9rem; color:#4b5563; min-height:4.5em;" id="boneInfoDesc">Click the epiphysis, growth plate, periosteum, diaphysis, or medullary cavity to see its name and function. Use the toggle above to switch between a juvenile (open growth plate) and adult (fused epiphyseal line) bone.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var isJuvenile = true;
+  var toggleBtn = document.getElementById('boneAgeToggle');
+  var titleEl = document.getElementById('boneInfoTitle');
+  var descEl = document.getElementById('boneInfoDesc');
+  var growthTop = document.getElementById('growthplate-top');
+  var growthBottom = document.getElementById('growthplate-bottom');
+  var lastKey = null;
+
+  var info = {
+    epiphysis: { name: 'Epiphysis', desc: "The end of a long bone, largely spongy bone capped with articular cartilage where the bone forms a joint." },
+    diaphysis: { name: 'Diaphysis', desc: 'The shaft of a long bone — a cylinder of compact bone surrounding the central medullary cavity.' },
+    periosteum: { name: 'Periosteum', desc: "Dense connective tissue sheath covering the bone's outer surface (except at joints); outer fibrous layer plus inner osteogenic layer, anchored by Sharpey's fibers, and the attachment site for tendons and ligaments." },
+    medullary: { name: 'Medullary Cavity', desc: 'The central cavity of the diaphysis, containing red (hematopoietic) or yellow (adipose-dominated) bone marrow.' },
+    growthplate: null // computed dynamically based on isJuvenile
+  };
+
+  function growthplateInfo(){
+    return isJuvenile
+      ? { name: 'Epiphyseal (Growth) Plate — open', desc: 'A band of hyaline cartilage between diaphysis and epiphysis; proliferates on the epiphyseal side and ossifies on the diaphyseal side, allowing continued longitudinal growth. Open in this juvenile view.' }
+      : { name: 'Epiphyseal Line — closed', desc: 'The growth plate has fully ossified into a thin bony line, marking skeletal maturity. Longitudinal growth has ceased.' };
+  }
+
+  function showInfo(key){
+    lastKey = key;
+    var entry = key === 'growthplate' ? growthplateInfo() : info[key];
+    titleEl.textContent = entry.name;
+    descEl.textContent = entry.desc;
+  }
+
+  document.querySelectorAll('#boneSvg .bone-hotspot').forEach(function(el){
+    el.addEventListener('click', function(){
+      showInfo(el.getAttribute('data-key'));
+    });
+  });
+
+  toggleBtn.addEventListener('click', function(){
+    isJuvenile = !isJuvenile;
+    toggleBtn.textContent = isJuvenile ? 'Juvenile (open growth plate)' : 'Adult (fused epiphyseal line)';
+    toggleBtn.style.background = isJuvenile ? '#2d6a4f' : '#b1650f';
+    if (isJuvenile) {
+      growthTop.setAttribute('y', 80); growthTop.setAttribute('height', 18); growthTop.setAttribute('fill', '#a8d8ea');
+      growthBottom.setAttribute('y', 302); growthBottom.setAttribute('height', 18); growthBottom.setAttribute('fill', '#a8d8ea');
+    } else {
+      growthTop.setAttribute('y', 87); growthTop.setAttribute('height', 4); growthTop.setAttribute('fill', '#8b5e34');
+      growthBottom.setAttribute('y', 309); growthBottom.setAttribute('height', 4); growthBottom.setAttribute('fill', '#8b5e34');
+    }
+    if (lastKey === 'growthplate') showInfo('growthplate');
+  });
+})();
+</script>
+
 ### Osteon Histology
 
 Compact bone is organized into repeating structural units, **osteons (Haversian systems)**, each built around a central **Haversian (central) canal** carrying blood vessels and nerves, surrounded by concentric rings of mineralized matrix (**lamellae**). Between lamellae, mature bone cells (**osteocytes**) sit in small cavities (**lacunae**), interconnected by thin channels (**canaliculi**) through which osteocyte cytoplasmic processes pass — this network is how osteocytes, despite being embedded in rigid mineralized matrix, exchange nutrients/waste and sense mechanical strain, communicating via gap junctions between processes. **Volkmann's (perforating) canals** run perpendicular to Haversian canals, connecting them to each other and to the periosteal/endosteal surfaces, carrying the blood supply that links osteons to the bone's overall vasculature. Spongy bone lacks this osteon organization — its trabeculae are thin enough that osteocytes are nourished by direct diffusion from adjacent marrow, without a Haversian system.
@@ -90,6 +167,89 @@ Synovial joints are further classified by articulating-surface shape, each permi
 ![All six synovial joint subtypes shown on a full skeleton with their location and an enlarged mechanical model of each: pivot (C1-C2), hinge (elbow), saddle (thumb carpometacarpal), plane (tarsal bones), condyloid (wrist), and ball-and-socket (hip).](/ANATOMYPICS/synovial-joint-subtypes-comparison.jpg)
 *Source: OpenStax-style figure (via Lumen Learning), CC BY. Exact match — all six subtypes, each anchored to its real anatomical location plus a mechanical diagram of its movement axes.*
 
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:0.6rem;">
+    <h3 style="margin:0; color:#1a472a;">🔧 Synovial Joint Subtype Matcher</h3>
+    <div style="font-size:0.85rem; color:#4b5563;" id="jointScore">Score: 0 / 0</div>
+  </div>
+  <div style="font-size:0.95rem; color:#1a472a; font-weight:600; margin-bottom:1rem; min-height:2.4em;" id="jointPrompt"></div>
+  <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;" id="jointButtons"></div>
+  <div style="font-size:0.88rem; min-height:2.4em;" id="jointFeedback"></div>
+  <button id="jointNextBtn" style="margin-top:0.6rem; padding:6px 16px; border:none; border-radius:30px; background:#2d6a4f; color:white; cursor:pointer; font-weight:500; font-size:0.85rem;">Next question</button>
+</div>
+
+<script>
+(function(){
+  var subtypes = ['Hinge', 'Pivot', 'Ball-and-socket', 'Condyloid', 'Saddle', 'Plane'];
+  var questions = [
+    { prompt: 'Elbow (humeroulnar joint) — permits flexion/extension only (uniaxial).', answer: 'Hinge' },
+    { prompt: 'Atlantoaxial joint (C1–C2) — permits rotation only (uniaxial).', answer: 'Pivot' },
+    { prompt: 'Shoulder joint — flexion/extension, abduction/adduction, rotation, and circumduction (multiaxial).', answer: 'Ball-and-socket' },
+    { prompt: 'Wrist (radiocarpal) joint — flexion/extension, abduction/adduction, circumduction, but NOT rotation (biaxial).', answer: 'Condyloid' },
+    { prompt: 'Thumb carpometacarpal joint — similar movements to the wrist but with a greater range, due to saddle-shaped articulating surfaces.', answer: 'Saddle' },
+    { prompt: 'Intercarpal and intertarsal joints — short gliding/sliding movements only.', answer: 'Plane' }
+  ];
+  var order = [0,1,2,3,4,5];
+  var qIndex = 0;
+  var correctCount = 0;
+  var answeredCount = 0;
+  var answeredThis = false;
+
+  var promptEl = document.getElementById('jointPrompt');
+  var buttonsEl = document.getElementById('jointButtons');
+  var feedbackEl = document.getElementById('jointFeedback');
+  var scoreEl = document.getElementById('jointScore');
+  var nextBtn = document.getElementById('jointNextBtn');
+
+  function renderButtons(){
+    buttonsEl.innerHTML = '';
+    subtypes.forEach(function(s){
+      var b = document.createElement('button');
+      b.textContent = s;
+      b.style.cssText = 'padding:6px 14px; border:2px solid #2d6a4f; border-radius:20px; background:white; color:#2d6a4f; cursor:pointer; font-weight:500; font-size:0.85rem;';
+      b.addEventListener('click', function(){ handleAnswer(s, b); });
+      buttonsEl.appendChild(b);
+    });
+  }
+
+  function loadQuestion(){
+    answeredThis = false;
+    feedbackEl.textContent = '';
+    var q = questions[order[qIndex]];
+    promptEl.textContent = q.prompt;
+    renderButtons();
+  }
+
+  function handleAnswer(chosen, btn){
+    if (answeredThis) return;
+    answeredThis = true;
+    answeredCount++;
+    var q = questions[order[qIndex]];
+    var correct = chosen === q.answer;
+    if (correct) correctCount++;
+    scoreEl.textContent = 'Score: ' + correctCount + ' / ' + answeredCount;
+    Array.from(buttonsEl.children).forEach(function(b2){
+      if (b2.textContent === q.answer) { b2.style.background = '#2d6a4f'; b2.style.color = 'white'; }
+      else if (b2 === btn) { b2.style.background = '#c0392b'; b2.style.color = 'white'; b2.style.borderColor = '#c0392b'; }
+      b2.disabled = true;
+    });
+    feedbackEl.innerHTML = correct
+      ? '<span style="color:#2d6a4f; font-weight:600;">Correct — ' + q.answer + '.</span>'
+      : '<span style="color:#c0392b; font-weight:600;">Not quite — the correct subtype is ' + q.answer + '.</span>';
+  }
+
+  nextBtn.addEventListener('click', function(){
+    qIndex = (qIndex + 1) % order.length;
+    if (qIndex === 0) {
+      order.sort(function(){ return Math.random() - 0.5; });
+    }
+    loadQuestion();
+  });
+
+  loadQuestion();
+})();
+</script>
+
 **Movement terminology**, precise usage expected in exam answers: **flexion** (decreasing joint angle) / **extension** (increasing joint angle); **abduction** (moving away from the body's midline) / **adduction** (moving toward it); **rotation** (turning around a bone's long axis); **circumduction** (a conical combination of flexion/extension/abduction/adduction); **pronation/supination** (specifically forearm rotation, palm down vs. palm up, achieved by the radius rotating around the ulna); **inversion/eversion** (specifically foot sole turning inward vs. outward).
 
 ## Comparative Structures
@@ -108,8 +268,7 @@ The endochondral ossification process and the intervertebral disc/vertebral colu
 
 **Interactive**
 
-- **Long bone hotspot diagram (click-to-reveal, HTML/CSS/JS)** — click the diaphysis, epiphysis, periosteum, medullary cavity, or growth plate on a long bone cross-section to reveal its name and function; a "juvenile / adult" toggle switches the same diagram between an open and a fully ossified growth plate.
-- **Synovial joint subtype matcher (interactive quiz)** — shown a joint image or a movement description, pick the correct subtype (hinge / pivot / ball-and-socket / condyloid / saddle / plane) from a button set and get instant feedback — direct practice for the "classify this joint" exam question above.
+*(Implemented inline above: the long bone hotspot diagram with juvenile/adult toggle sits in the "Bone as an Organ" section, and the synovial joint subtype matcher quiz sits directly below the synovial joint subtypes table and image.)*
 
 **Static**
 

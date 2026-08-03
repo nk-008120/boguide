@@ -41,6 +41,74 @@ Two photoreceptor types, with a direct structure-function distribution pattern: 
 ![Near vision (a): ciliary muscle contracted, zonular fibres relaxed, lens accommodated to a more spherical, higher-power shape, focusing the image on the photoreceptors. Far vision (b): ciliary muscle relaxed, zonular fibres under tension, lens flatter and lower-power.](/ANATOMYPICS/accommodation-mechanism-ciliary-muscle.jpg)
 *Source: user-sourced (originally via an NCBI Bookshelf figure). Exact match — directly visualizes the counterintuitive contraction-enables-near-vision mechanism described in the text.*
 
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">👁️ Accommodation Simulator</h3>
+  <svg id="accomSvg" viewBox="0 0 300 200" style="width:100%; max-width:360px; display:block; margin:0 auto;">
+    <ellipse id="accom-ciliaryL" cy="100" rx="20" ry="34" fill="#e8a04c"/>
+    <ellipse id="accom-ciliaryR" cy="100" rx="20" ry="34" fill="#e8a04c"/>
+    <line id="accom-zoneL1" y1="80" y2="90" stroke="#7a3f96" stroke-width="2"/>
+    <line id="accom-zoneL2" y1="120" y2="110" stroke="#7a3f96" stroke-width="2"/>
+    <line id="accom-zoneR1" y1="80" y2="90" stroke="#7a3f96" stroke-width="2"/>
+    <line id="accom-zoneR2" y1="120" y2="110" stroke="#7a3f96" stroke-width="2"/>
+    <ellipse id="accom-lens" cx="150" cy="100" rx="45" ry="22" fill="#a8d8ea" stroke="#1f5c99" stroke-width="1.5"/>
+  </svg>
+  <input type="range" id="accomSlider" min="0" max="100" step="1" value="0" style="width:100%; accent-color:#2d6a4f; margin-top:0.5rem;">
+  <div style="display:flex; justify-content:space-between; font-size:0.75rem; color:#6b7280; margin-bottom:0.8rem;">
+    <span>Far vision</span><span>Near vision</span>
+  </div>
+  <div style="display:flex; gap:1.5rem; flex-wrap:wrap; font-size:0.85rem; color:#374151;">
+    <div>Ciliary muscle: <strong id="accomCiliaryOut">relaxed</strong></div>
+    <div>Zonule fibers: <strong id="accomZonuleOut">taut</strong></div>
+    <div>Lens: <strong id="accomLensOut">flat, low power</strong></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var slider = document.getElementById('accomSlider');
+  var ciliaryL = document.getElementById('accom-ciliaryL');
+  var ciliaryR = document.getElementById('accom-ciliaryR');
+  var lens = document.getElementById('accom-lens');
+  var zL1 = document.getElementById('accom-zoneL1');
+  var zL2 = document.getElementById('accom-zoneL2');
+  var zR1 = document.getElementById('accom-zoneR1');
+  var zR2 = document.getElementById('accom-zoneR2');
+  var ciliaryOut = document.getElementById('accomCiliaryOut');
+  var zonuleOut = document.getElementById('accomZonuleOut');
+  var lensOut = document.getElementById('accomLensOut');
+
+  function lerp(a, b, t) { return a + (b - a) * t; }
+
+  function update(){
+    var t = parseFloat(slider.value) / 100;
+    var ciliaryLx = lerp(30, 65, t);
+    var ciliaryRx = lerp(270, 235, t);
+    var lensRx = lerp(45, 28, t);
+    var lensRy = lerp(22, 38, t);
+
+    ciliaryL.setAttribute('cx', ciliaryLx);
+    ciliaryR.setAttribute('cx', ciliaryRx);
+    lens.setAttribute('rx', lensRx);
+    lens.setAttribute('ry', lensRy);
+
+    var lensEdgeL = 150 - lensRx;
+    var lensEdgeR = 150 + lensRx;
+    var slack = t * 10;
+    zL1.setAttribute('x1', ciliaryLx); zL1.setAttribute('x2', lensEdgeL - slack);
+    zL2.setAttribute('x1', ciliaryLx); zL2.setAttribute('x2', lensEdgeL - slack);
+    zR1.setAttribute('x1', ciliaryRx); zR1.setAttribute('x2', lensEdgeR + slack);
+    zR2.setAttribute('x1', ciliaryRx); zR2.setAttribute('x2', lensEdgeR + slack);
+
+    ciliaryOut.textContent = t < 0.5 ? 'relaxed' : 'contracted';
+    zonuleOut.textContent = t < 0.5 ? 'taut' : 'slack';
+    lensOut.textContent = t < 0.5 ? 'flat, low power' : 'round, high power';
+  }
+
+  slider.addEventListener('input', update);
+  update();
+})();
+</script>
+
 ### Extraocular Muscles and Accessory Structures
 
 Six extraocular muscles move each eye: four **rectus muscles** (superior, inferior, medial, lateral — named for their approach direction, producing the corresponding primary movements) and two **oblique muscles** (superior, inferior — producing rotational and vertical movement components, since they approach the globe at an angle). These are innervated by cranial nerves III, IV, and VI (see [Human Nervous System](../human-nervous-system/)). The **lacrimal apparatus** (lacrimal gland, superolateral to the eye, producing tear fluid; drained medially via the lacrimal puncta/canaliculi into the nasolacrimal duct, emptying into the nasal cavity) keeps the cornea moist and provides an antimicrobial/mechanical clearing function.
@@ -62,6 +130,74 @@ The cochlea is a coiled tube divided lengthwise into three fluid-filled channels
 
 ![Cochlear cross-section showing scala vestibuli, scala media (with Reissner's membrane and the stria vascularis), and scala tympani, with the organ of Corti — tunnel, tunnel fibres, outer hair cells and their nerve cells, Deiters cells, tectorial membrane, and basilar membrane — labeled in detail.](/ANATOMYPICS/cochlear-cross-section-scalae-organ-of-corti.png)
 *Source: Wikimedia Commons (`Cochlea-crosssection.svg`), CC BY-SA 3.0, creator Quantum7. Originally an SVG — the Read tool can't render SVG directly, so it was rasterized to PNG via a browser canvas conversion before viewing. Exact match, exceeds spec with additional labeled substructures.*
+
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">🎵 Cochlear Tonotopy Explorer</h3>
+  <div id="tonotopyPlot" style="width:100%; height:320px;"></div>
+  <input type="range" id="tonotopySlider" min="0" max="100" step="1" value="50" style="width:100%; accent-color:#2d6a4f; margin-top:0.5rem;">
+  <div style="display:flex; justify-content:space-between; font-size:0.75rem; color:#6b7280; margin-bottom:0.8rem;">
+    <span>20 Hz (apex)</span><span>20,000 Hz (base)</span>
+  </div>
+  <div style="display:flex; gap:1.5rem; flex-wrap:wrap; font-size:0.85rem; color:#374151;">
+    <div>Frequency: <strong id="tonotopyFreqOut">632 Hz</strong></div>
+    <div>Peak position: <strong id="tonotopyPosOut">50% along basilar membrane</strong></div>
+  </div>
+</div>
+
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js"></script>
+<script>
+(function() {
+  function initChart() {
+    if (typeof Plotly === 'undefined') { setTimeout(initChart, 100); return; }
+
+    var slider = document.getElementById('tonotopySlider');
+    var freqOut = document.getElementById('tonotopyFreqOut');
+    var posOut = document.getElementById('tonotopyPosOut');
+    var xs = [];
+    for (var i = 0; i <= 100; i++) xs.push(i);
+
+    function render(){
+      var s = parseFloat(slider.value);
+      var freq = 20 * Math.pow(1000, s / 100);
+      var positionPct = 100 - s;
+      var width = 3 + positionPct * 0.15;
+
+      var ys = xs.map(function(x){
+        return Math.exp(-Math.pow(x - positionPct, 2) / (2 * width * width));
+      });
+
+      var trace = {
+        x: xs, y: ys, mode: 'lines', fill: 'tozeroy',
+        line: { color: '#2d6a4f', width: 3 }, fillcolor: 'rgba(45,106,79,0.15)'
+      };
+      var layout = {
+        xaxis: { range: [0, 100], title: 'Position along basilar membrane (% from base)' },
+        yaxis: { range: [0, 1.1], title: 'Relative displacement' },
+        margin: { t: 20, l: 55, r: 20, b: 45 },
+        plot_bgcolor: '#ffffff',
+        paper_bgcolor: '#ffffff',
+        annotations: [
+          { x: 2, y: 1.05, xref: 'x', yref: 'y', text: 'Oval window (base)<br>high frequency', showarrow: false, font: { size: 10 }, xanchor: 'left' },
+          { x: 98, y: 1.05, xref: 'x', yref: 'y', text: 'Helicotrema (apex)<br>low frequency', showarrow: false, font: { size: 10 }, xanchor: 'right' }
+        ]
+      };
+      Plotly.react('tonotopyPlot', [trace], layout, { responsive: true, displayModeBar: false });
+
+      freqOut.textContent = Math.round(freq) + ' Hz';
+      posOut.textContent = Math.round(positionPct) + '% along basilar membrane (' + (positionPct < 50 ? 'toward base' : 'toward apex') + ')';
+    }
+
+    slider.addEventListener('input', render);
+    render();
+    window.addEventListener('resize', function(){ Plotly.relayout('tonotopyPlot', { autosize: true }); });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initChart);
+  } else {
+    initChart();
+  }
+})();
+</script>
 
 ### Vestibular Structure
 
@@ -87,8 +223,7 @@ Photoreceptor and mechanoreceptor hair-cell structure are broadly conserved acro
 
 **Interactive**
 
-- **Accommodation simulator (SVG/JS)** — a near/far slider animating ciliary muscle contraction, zonule fiber tension, and lens shape together in real time, directly visualizing the counterintuitive "ciliary contraction enables near vision" mechanism.
-- **Cochlear tonotopy explorer (Plotly)** — a frequency slider that highlights the position along the basilar membrane responding maximally at that frequency, tying pitch directly to physical location rather than an abstract map.
+*(Implemented inline above: the accommodation simulator sits directly below the accommodation mechanism image, and the cochlear tonotopy explorer sits directly below the cochlear cross-section image.)*
 
 **Static**
 

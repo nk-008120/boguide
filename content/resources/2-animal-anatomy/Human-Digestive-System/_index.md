@@ -45,6 +45,87 @@ Grossly divided into the **cardia** (adjacent to the LES), **fundus** (superior 
 ![A gastric (oxyntic) gland in cross-section, from the mucus-layer opening down through surface mucus cells, mucus neck cells, parietal cells, an endocrine cell, to chief cells at the base.](/ANATOMYPICS/gastric-gland-four-cell-types.jpg)
 *Source: user-sourced (originally attempted via a ScienceDirect topic page). Shows all four cell types from the table above, though the endocrine cell is labeled generically rather than specifically as a "G cell."*
 
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:0.6rem;">
+    <h3 style="margin:0; color:#1a472a;">🧪 Gastric Gland Cell-Type Matcher</h3>
+    <div style="font-size:0.85rem; color:#4b5563;" id="gastricScore">Score: 0 / 0</div>
+  </div>
+  <div style="font-size:0.95rem; color:#1a472a; font-weight:600; margin-bottom:1rem; min-height:2.4em;" id="gastricPrompt"></div>
+  <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:1rem;" id="gastricButtons"></div>
+  <div style="font-size:0.88rem; min-height:2.4em;" id="gastricFeedback"></div>
+  <button id="gastricNextBtn" style="margin-top:0.6rem; padding:6px 16px; border:none; border-radius:30px; background:#2d6a4f; color:white; cursor:pointer; font-weight:500; font-size:0.85rem;">Next question</button>
+</div>
+
+<script>
+(function(){
+  var cellTypes = ['Mucous neck cell', 'Parietal cell', 'Chief cell', 'G cell'];
+  var questions = [
+    { prompt: 'Secretes HCl and intrinsic factor, acidifying the lumen and enabling later vitamin B12 absorption.', answer: 'Parietal cell' },
+    { prompt: 'Secretes pepsinogen — an inactive zymogen, only converted to active pepsin by the acidic gastric environment.', answer: 'Chief cell' },
+    { prompt: 'Secretes gastrin directly into the blood (not the gastric lumen), stimulating acid secretion elsewhere in the gland.', answer: 'G cell' },
+    { prompt: 'Secretes alkaline mucus at the upper gland/pit, protecting the epithelium from the acidic contents below.', answer: 'Mucous neck cell' }
+  ];
+  var order = [0,1,2,3];
+  var qIndex = 0;
+  var correctCount = 0;
+  var answeredCount = 0;
+  var answeredThis = false;
+
+  var promptEl = document.getElementById('gastricPrompt');
+  var buttonsEl = document.getElementById('gastricButtons');
+  var feedbackEl = document.getElementById('gastricFeedback');
+  var scoreEl = document.getElementById('gastricScore');
+  var nextBtn = document.getElementById('gastricNextBtn');
+
+  function renderButtons(){
+    buttonsEl.innerHTML = '';
+    cellTypes.forEach(function(s){
+      var b = document.createElement('button');
+      b.textContent = s;
+      b.style.cssText = 'padding:6px 14px; border:2px solid #2d6a4f; border-radius:20px; background:white; color:#2d6a4f; cursor:pointer; font-weight:500; font-size:0.85rem;';
+      b.addEventListener('click', function(){ handleAnswer(s, b); });
+      buttonsEl.appendChild(b);
+    });
+  }
+
+  function loadQuestion(){
+    answeredThis = false;
+    feedbackEl.textContent = '';
+    var q = questions[order[qIndex]];
+    promptEl.textContent = q.prompt;
+    renderButtons();
+  }
+
+  function handleAnswer(chosen, btn){
+    if (answeredThis) return;
+    answeredThis = true;
+    answeredCount++;
+    var q = questions[order[qIndex]];
+    var correct = chosen === q.answer;
+    if (correct) correctCount++;
+    scoreEl.textContent = 'Score: ' + correctCount + ' / ' + answeredCount;
+    Array.from(buttonsEl.children).forEach(function(b2){
+      if (b2.textContent === q.answer) { b2.style.background = '#2d6a4f'; b2.style.color = 'white'; }
+      else if (b2 === btn) { b2.style.background = '#c0392b'; b2.style.color = 'white'; b2.style.borderColor = '#c0392b'; }
+      b2.disabled = true;
+    });
+    feedbackEl.innerHTML = correct
+      ? '<span style="color:#2d6a4f; font-weight:600;">Correct — ' + q.answer + '.</span>'
+      : '<span style="color:#c0392b; font-weight:600;">Not quite — the correct cell type is ' + q.answer + '.</span>';
+  }
+
+  nextBtn.addEventListener('click', function(){
+    qIndex = (qIndex + 1) % order.length;
+    if (qIndex === 0) {
+      order.sort(function(){ return Math.random() - 0.5; });
+    }
+    loadQuestion();
+  });
+
+  loadQuestion();
+})();
+</script>
+
 The stomach epithelium itself is protected from its own acidic, protein-digesting contents by a thick alkaline mucus layer and rapid epithelial cell turnover — a structural, not just chemical, defense.
 
 ### Small Intestine
@@ -84,6 +165,81 @@ The **gallbladder**, a small muscular sac beneath the liver, stores and concentr
 
 The abdominal cavity is lined by the **parietal peritoneum** (body wall) and covers most abdominal organs with **visceral peritoneum** — structurally analogous to the pleura around the lungs (see [Human Respiratory System](../human-respiratory-system/)). Double-layered peritoneal folds, **mesenteries**, suspend the intestines from the posterior body wall while carrying their blood vessels, nerves, and lymphatics; the **greater omentum** (a large, fat-laden peritoneal fold hanging from the stomach, draping over the intestines) and **lesser omentum** (connecting the stomach/duodenum to the liver) are named peritoneal extensions relevant to gross anatomical/surgical orientation.
 
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">🍽️ GI Transit Walkthrough</h3>
+  <p style="font-size:0.85rem; color:#6b7280; margin:0 0 1rem 0;">Click a stop directly, or use Next/Previous to trace a bite of food from mouth to anus, assembling every region's histology, secretions, and transit time into one connected path.</p>
+  <div id="giTimeline" style="display:flex; gap:0.3rem; flex-wrap:wrap; margin-bottom:1rem;"></div>
+  <div style="font-weight:700; font-size:1.05rem; color:#1a472a; margin-bottom:0.3rem;" id="giTitle"></div>
+  <div style="font-size:0.85rem; color:#b1650f; font-weight:600; margin-bottom:0.4rem;" id="giTime"></div>
+  <div style="font-size:0.85rem; color:#374151; margin-bottom:0.4rem;"><strong>Histology:</strong> <span id="giHistology"></span></div>
+  <div style="font-size:0.85rem; color:#374151; margin-bottom:1rem;"><strong>Secretions/function:</strong> <span id="giSecretions"></span></div>
+  <div style="display:flex; gap:0.5rem;">
+    <button id="giPrev" style="padding:6px 16px; border:none; border-radius:30px; background:#e2e8f0; color:#1e293b; cursor:pointer; font-weight:500; font-size:0.85rem;">← Previous</button>
+    <button id="giNext" style="padding:6px 16px; border:none; border-radius:30px; background:#2d6a4f; color:white; cursor:pointer; font-weight:500; font-size:0.85rem;">Next →</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  var stops = [
+    { name: 'Mouth', time: '~30 sec (chewing/swallowing)', histology: 'Stratified squamous epithelium; skeletal muscle tongue.', secretions: 'Saliva (salivary amylase) begins starch digestion; lubricates food.' },
+    { name: 'Esophagus', time: '~8-10 sec (peristaltic transit)', histology: 'Stratified squamous epithelium; muscularis transitions skeletal → smooth muscle.', secretions: 'Mucus only — purely conductive, no digestion or absorption.' },
+    { name: 'Stomach', time: '~2-4 hours', histology: 'Gastric pits/glands: mucous neck, parietal, chief, and G cells.', secretions: 'HCl, pepsinogen, intrinsic factor, gastrin.' },
+    { name: 'Duodenum', time: 'rapid (minutes)', histology: "Brunner's glands (unique to this region) in the submucosa.", secretions: 'Alkaline mucus neutralizes chyme; receives bile + pancreatic enzymes via the hepatopancreatic ampulla.' },
+    { name: 'Jejunum', time: 'part of ~3-5 hr small-intestine transit', histology: 'Most prominent villi and plicae circulares.', secretions: 'Site of most nutrient absorption.' },
+    { name: 'Ileum', time: 'part of ~3-5 hr small-intestine transit', histology: "Peyer's patches (aggregated lymphoid nodules).", secretions: 'Vitamin B12 and bile salt reabsorption; immune surveillance before the large intestine.' },
+    { name: 'Large Intestine', time: '~10-36 hours (highly variable)', histology: 'No villi; longitudinal muscle gathered into teniae coli, forming haustra.', secretions: 'Water/electrolyte reabsorption; microbiome fermentation.' },
+    { name: 'Rectum & Anus', time: 'variable (storage until defecation)', histology: 'Internal (involuntary smooth muscle) and external (voluntary skeletal muscle) sphincters.', secretions: 'Waste storage and expulsion.' }
+  ];
+  var idx = 0;
+  var timelineEl = document.getElementById('giTimeline');
+  var titleEl = document.getElementById('giTitle');
+  var timeEl = document.getElementById('giTime');
+  var histEl = document.getElementById('giHistology');
+  var secEl = document.getElementById('giSecretions');
+  var prevBtn = document.getElementById('giPrev');
+  var nextBtn = document.getElementById('giNext');
+
+  stops.forEach(function(s, i){
+    var stop = document.createElement('div');
+    stop.className = 'gi-stop';
+    stop.dataset.index = i;
+    stop.textContent = s.name;
+    stop.style.cssText = 'padding:6px 12px; border-radius:20px; font-size:0.78rem; font-weight:600; cursor:pointer; border:2px solid transparent; transition:background 0.2s;';
+    stop.addEventListener('click', function(){ idx = i; render(); });
+    timelineEl.appendChild(stop);
+  });
+
+  function render(){
+    var stopEls = timelineEl.querySelectorAll('.gi-stop');
+    stopEls.forEach(function(el, i){
+      if (i === idx) {
+        el.style.background = '#2d6a4f';
+        el.style.color = 'white';
+      } else if (i < idx) {
+        el.style.background = '#eaf3ea';
+        el.style.color = '#1a472a';
+      } else {
+        el.style.background = '#f1f5f9';
+        el.style.color = '#9ca3af';
+      }
+    });
+    var s = stops[idx];
+    titleEl.textContent = (idx + 1) + '. ' + s.name;
+    timeEl.textContent = 'Approx. transit time: ' + s.time;
+    histEl.textContent = s.histology;
+    secEl.textContent = s.secretions;
+    prevBtn.disabled = idx === 0;
+    nextBtn.disabled = idx === stops.length - 1;
+  }
+
+  prevBtn.addEventListener('click', function(){ if (idx > 0) { idx--; render(); } });
+  nextBtn.addEventListener('click', function(){ if (idx < stops.length - 1) { idx++; render(); } });
+
+  render();
+})();
+</script>
+
 ## Comparative Structures
 
 The four-layer GI tract wall plan, and the accessory-gland (liver/pancreas) arrangement, are broadly conserved across vertebrates, with gut length and regional specialization tracking diet — see the [Vertebrate Anatomy tier](../fish-amphibian-anatomy/) pages and, for the ruminant four-chambered stomach as a specific herbivore adaptation, [Mammalian Comparative Anatomy](../mammalian-comparative-anatomy/). Invertebrate guts show a simpler version of the same regional-specialization principle (e.g. the earthworm crop/gizzard) without the liver/pancreas-level accessory gland complexity — see [Invertebrate Body Plans I](../invertebrate-body-plans-1/).
@@ -100,8 +256,7 @@ The four-layer GI tract wall plan, and the accessory-gland (liver/pancreas) arra
 
 **Interactive**
 
-- **GI transit walkthrough (click-through timeline)** — click along a mouth-to-anus timeline; each stop shows that region's histology, main secretions, and approximate transit time, assembling the whole tract from the region-by-region detail above into one connected path.
-- **Gastric gland cell-type matcher (quiz)** — match mucous neck cell / parietal cell / chief cell / G cell to its secretion and function, direct practice for the exact exam question already listed above.
+*(Implemented inline above: the gastric gland cell-type matcher quiz sits directly below the gastric gland image, and the GI transit walkthrough sits at the end of Key Concepts, after the Peritoneum section.)*
 
 **Static**
 

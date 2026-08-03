@@ -50,6 +50,95 @@ At the axon terminal, a **chemical synapse** transmits the signal to the next ce
 
 **Other glial cells**, largely supportive rather than signal-conducting: **astrocytes** (CNS, form the blood-brain barrier by inducing tight junctions in brain capillary endothelium, provide metabolic support and regulate the extracellular ion environment), **microglia** (CNS, immune defense — the CNS's resident macrophage-like cells), **ependymal cells** (CNS, line the ventricles, produce CSF as part of the choroid plexus).
 
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">⚡ Myelinated vs. Unmyelinated Conduction Race</h3>
+  <div id="conductionPlot" style="width:100%; height:420px;"></div>
+  <input type="range" id="conductionSlider" min="0" max="100" step="1" value="0" style="width:100%; accent-color:#2d6a4f; margin-top:0.5rem;">
+  <div style="display:flex; justify-content:space-between; font-size:0.75rem; color:#6b7280; margin:0.2rem 0 0.8rem 0;">
+    <span>Race start</span><span>Race clock →</span>
+  </div>
+  <div style="display:flex; gap:1.5rem; flex-wrap:wrap; font-size:0.85rem; color:#374151;">
+    <div id="conductionMyelinLabel">Myelinated: active node at 0 mm</div>
+    <div id="conductionUnmyelinLabel">Unmyelinated: wavefront at 0.0 mm</div>
+  </div>
+  <div style="font-size:0.78rem; color:#6b7280; margin-top:0.4rem;">Saltatory conduction lets the action potential regenerate only at the nodes of Ranvier and "jump" between them, reaching the axon terminal roughly 10× faster in this comparison than continuous, point-by-point unmyelinated conduction.</div>
+</div>
+
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js"></script>
+<script>
+(function() {
+  function initChart() {
+    if (typeof Plotly === 'undefined') { setTimeout(initChart, 100); return; }
+
+    var nodes = [];
+    for (var n = 0; n <= 20; n += 2) nodes.push(n);
+
+    var xs = [];
+    for (var i = 0; i <= 200; i++) xs.push(i * 0.1);
+
+    function bump(center, width) {
+      return xs.map(function(x) {
+        return -70 + 100 * Math.exp(-Math.pow(x - center, 2) / (2 * width * width));
+      });
+    }
+
+    var slider = document.getElementById('conductionSlider');
+    var myelinLabel = document.getElementById('conductionMyelinLabel');
+    var unmyelinLabel = document.getElementById('conductionUnmyelinLabel');
+
+    function render() {
+      var t = parseFloat(slider.value);
+      var continuousPos = Math.min(20, (t / 10) * 20);
+      var activeNode = Math.min(20, Math.floor(continuousPos / 2) * 2);
+      var unmyelinPos = (t / 100) * 20;
+
+      var traceMyelin = {
+        x: xs, y: bump(activeNode, 0.4), mode: 'lines', name: 'Myelinated (at node)',
+        line: { color: '#2d6a4f', width: 3 }, xaxis: 'x', yaxis: 'y'
+      };
+      var traceNodes = {
+        x: nodes, y: nodes.map(function(){ return -70; }), mode: 'markers', name: 'Nodes of Ranvier',
+        marker: { symbol: 'line-ns-open', size: 14, color: '#b1650f', line: {width: 2} }, xaxis: 'x', yaxis: 'y'
+      };
+      var traceUnmyelin = {
+        x: xs, y: bump(unmyelinPos, 1.2), mode: 'lines', name: 'Unmyelinated',
+        line: { color: '#c0392b', width: 3 }, xaxis: 'x2', yaxis: 'y2'
+      };
+
+      var layout = {
+        grid: { rows: 2, columns: 1, pattern: 'independent' },
+        xaxis: { range: [0, 20], title: 'Distance along axon (mm)' },
+        yaxis: { range: [-90, 50], title: 'Myelinated (mV)', domain: [0.58, 1] },
+        xaxis2: { range: [0, 20], title: 'Distance along axon (mm)' },
+        yaxis2: { range: [-90, 50], title: 'Unmyelinated (mV)', domain: [0, 0.42] },
+        showlegend: false,
+        margin: { t: 20, l: 55, r: 20, b: 40 },
+        plot_bgcolor: '#ffffff',
+        paper_bgcolor: '#ffffff'
+      };
+
+      Plotly.react('conductionPlot', [traceMyelin, traceNodes, traceUnmyelin], layout, { responsive: true, displayModeBar: false });
+
+      myelinLabel.textContent = continuousPos >= 20
+        ? 'Myelinated: reached the axon terminal — done.'
+        : 'Myelinated: active node at ' + activeNode + ' mm';
+      unmyelinLabel.textContent = unmyelinPos >= 20
+        ? 'Unmyelinated: reached the axon terminal — done.'
+        : 'Unmyelinated: wavefront at ' + unmyelinPos.toFixed(1) + ' mm';
+    }
+
+    slider.addEventListener('input', render);
+    render();
+    window.addEventListener('resize', function(){ Plotly.relayout('conductionPlot', { autosize: true }); });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initChart);
+  } else {
+    initChart();
+  }
+})();
+</script>
+
 **Gray matter vs. white matter**: gray matter is composed mainly of neuron cell bodies, dendrites, and unmyelinated fibers (found at the cerebral/cerebellar cortex, and centrally within the spinal cord); white matter is composed of myelinated axon tracts (myelin's lipid content gives it a pale color) and lies centrally in the brain, peripherally in the spinal cord — the brain and spinal cord invert this arrangement relative to each other, a frequently tested point.
 
 ### Major Brain Regions
@@ -77,6 +166,72 @@ The **reflex arc** is the clearest anatomical demonstration of spinal cord organ
 
 ![The patellar tendon (knee-jerk) reflex traced end to end on a spinal cord cross-section: tendon tap → muscle spindle receptor fires → afferent sensory neuron → synapse in the spinal cord → efferent motor neuron to the quadriceps (contraction) and a parallel inhibitory interneuron to the hamstring motor neuron (reciprocal inhibition, staying relaxed).](/ANATOMYPICS/spinal-cord-cross-section-reflex-arc.png)
 *Source: Dee Unglaub Silverthorn,* Human Physiology: An Integrated Approach *(Fig. 13.5; also used on [Animal Physiology: Nervous System Physiology](../../3-animal-physiology/Nervous-System-Physiology/)). Commercial textbook figure — confirm licensing basis before public deployment. Exceeds spec with the reciprocal-inhibition detail.*
+
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">🦵 Knee-Jerk Reflex Arc Walkthrough</h3>
+  <p style="font-size:0.85rem; color:#6b7280; margin:0 0 1rem 0;">Click a step directly, or use Next/Previous to trace the patellar reflex from tendon tap to contraction.</p>
+  <div id="reflexSteps" style="display:flex; flex-direction:column; gap:0.4rem;"></div>
+  <div style="display:flex; gap:0.5rem; margin-top:0.8rem;">
+    <button id="reflexPrev" style="padding:6px 16px; border:none; border-radius:30px; background:#e2e8f0; color:#1e293b; cursor:pointer; font-weight:500; font-size:0.85rem;">← Previous</button>
+    <button id="reflexNext" style="padding:6px 16px; border:none; border-radius:30px; background:#2d6a4f; color:white; cursor:pointer; font-weight:500; font-size:0.85rem;">Next →</button>
+  </div>
+</div>
+
+<script>
+(function(){
+  var steps = [
+    { name: 'Stretch receptor fires', desc: 'The tendon tap stretches the quadriceps muscle; a stretch (muscle spindle) receptor within it fires in proportion to the stretch.' },
+    { name: 'Sensory neuron → dorsal root', desc: 'The afferent sensory neuron carries this signal toward the spinal cord, entering via the dorsal root (its cell body sits in the dorsal root ganglion just outside the cord).' },
+    { name: 'Direct synapse in the ventral horn', desc: 'The sensory neuron synapses directly onto a motor neuron in the ventral horn — a monosynaptic reflex, the fastest type since no interneuron is involved.' },
+    { name: 'Motor neuron → ventral root', desc: 'The motor neuron\'s efferent output leaves the spinal cord via the ventral root (the Bell-Magendie law: dorsal = sensory, ventral = motor).' },
+    { name: 'Quadriceps contracts', desc: 'The motor neuron signal reaches the quadriceps, causing it to contract and extend the knee.' },
+    { name: 'Reciprocal inhibition (hamstring)', desc: 'A parallel inhibitory interneuron simultaneously suppresses the hamstring motor neuron, so the antagonist muscle relaxes rather than fighting the contraction. This entire pathway occurs without requiring the brain, though the brain normally receives a parallel signal and can modulate the reflex.' }
+  ];
+  var idx = 0;
+  var container = document.getElementById('reflexSteps');
+  var prevBtn = document.getElementById('reflexPrev');
+  var nextBtn = document.getElementById('reflexNext');
+
+  steps.forEach(function(s, i){
+    var row = document.createElement('div');
+    row.className = 'reflex-step';
+    row.dataset.index = i;
+    row.style.cssText = 'padding:8px 12px; border-radius:10px; border:2px solid transparent; cursor:pointer; transition:background 0.2s, border-color 0.2s;';
+    row.innerHTML = '<strong>' + (i + 1) + '. ' + s.name + '</strong><div class="reflex-desc" style="font-size:0.82rem; color:#4b5563; margin-top:2px;">' + s.desc + '</div>';
+    row.addEventListener('click', function(){ idx = i; render(); });
+    container.appendChild(row);
+  });
+
+  function render(){
+    var rows = container.querySelectorAll('.reflex-step');
+    rows.forEach(function(row, i){
+      if (i === idx) {
+        row.style.background = '#2d6a4f';
+        row.style.borderColor = '#1a472a';
+        row.style.color = 'white';
+        row.querySelector('.reflex-desc').style.color = '#e5f0ea';
+      } else if (i < idx) {
+        row.style.background = '#eaf3ea';
+        row.style.borderColor = 'transparent';
+        row.style.color = '#1a472a';
+        row.querySelector('.reflex-desc').style.color = '#4b5563';
+      } else {
+        row.style.background = '#f1f5f9';
+        row.style.borderColor = 'transparent';
+        row.style.color = '#9ca3af';
+        row.querySelector('.reflex-desc').style.color = '#9ca3af';
+      }
+    });
+    prevBtn.disabled = idx === 0;
+    nextBtn.disabled = idx === steps.length - 1;
+  }
+
+  prevBtn.addEventListener('click', function(){ if (idx > 0) { idx--; render(); } });
+  nextBtn.addEventListener('click', function(){ if (idx < steps.length - 1) { idx++; render(); } });
+
+  render();
+})();
+</script>
 
 ### Cranial and Spinal Nerves
 
@@ -116,8 +271,7 @@ The tripartite CNS/PNS/autonomic organization and core neuron/synapse structure 
 
 **Interactive**
 
-- **Myelinated vs. unmyelinated conduction chart (Plotly)** — plot membrane potential against distance/time for both axon types side by side, with a speed readout, turning "saltatory conduction is faster" into a directly comparable animated race rather than a stated fact.
-- **Knee-jerk reflex arc walkthrough (click-through)** — click through stretch receptor → sensory neuron → dorsal root → synapse in the ventral horn → motor neuron → muscle on a spinal cord cross-section, each click lighting up the relevant structure and explaining why this reflex bypasses the brain.
+*(Implemented inline above: the myelinated vs. unmyelinated conduction race sits directly below the myelin/saltatory conduction paragraph, and the knee-jerk reflex arc walkthrough sits directly below the reflex arc image.)*
 
 **Static**
 

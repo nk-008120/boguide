@@ -59,6 +59,62 @@ Beneath the epidermis, separated by the basement membrane, the dermis is dense i
 ![All five cutaneous receptor types positioned at their depths in a skin cross-section: Merkel's disk and Meissner's corpuscle near the epidermal-dermal boundary, Ruffini ending and Pacinian corpuscle deeper in the dermis, plus a bonus sixth receptor type (Krause end bulb) not covered in the text.](/ANATOMYPICS/cutaneous-receptors-by-depth.png)
 *Source: OpenStax-style figure (via Lumen Learning). Exact match for all five receptor types in the table above; includes one extra receptor type (Krause end bulb) beyond this page's scope.*
 
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">🔬 Skin Cross-Section Hotspot Diagram</h3>
+  <div style="display:flex; gap:2rem; flex-wrap:wrap; align-items:flex-start;">
+    <div style="flex:0 0 260px;">
+      <svg id="skinSvg" viewBox="0 0 300 400" style="width:100%; max-width:260px; display:block; margin:0 auto; border-radius:8px; overflow:hidden;">
+        <rect x="0" y="0" width="300" height="30" fill="#f3e6c9" class="skin-hotspot" data-key="corneum" style="cursor:pointer;"/>
+        <rect x="0" y="30" width="300" height="15" fill="#f7efd6" class="skin-hotspot" data-key="lucidum" style="cursor:pointer;"/>
+        <rect x="0" y="45" width="300" height="25" fill="#ecd9ab" class="skin-hotspot" data-key="granulosum" style="cursor:pointer;"/>
+        <rect x="0" y="70" width="300" height="40" fill="#e0c48f" class="skin-hotspot" data-key="spinosum" style="cursor:pointer;"/>
+        <rect x="0" y="110" width="300" height="15" fill="#c98f5e" class="skin-hotspot" data-key="basale" style="cursor:pointer;"/>
+        <rect x="0" y="125" width="300" height="45" fill="#f2b6ad" class="skin-hotspot" data-key="papillary" style="cursor:pointer;"/>
+        <rect x="0" y="170" width="300" height="150" fill="#e8938a" class="skin-hotspot" data-key="reticular" style="cursor:pointer;"/>
+        <rect x="0" y="320" width="300" height="80" fill="#f7e2b8" class="skin-hotspot" data-key="hypodermis" style="cursor:pointer;"/>
+        <circle cx="230" cy="118" r="8" fill="#2d6a4f" class="skin-hotspot" data-key="merkel" style="cursor:pointer;"/>
+        <circle cx="70" cy="142" r="9" fill="#1f5c99" class="skin-hotspot" data-key="meissner" style="cursor:pointer;"/>
+        <circle cx="200" cy="240" r="10" fill="#7a3f96" class="skin-hotspot" data-key="ruffini" style="cursor:pointer;"/>
+        <circle cx="90" cy="350" r="14" fill="#b1650f" class="skin-hotspot" data-key="pacinian" style="cursor:pointer;"/>
+        <circle cx="150" cy="90" r="6" fill="#c0392b" class="skin-hotspot" data-key="freenerve" style="cursor:pointer;"/>
+      </svg>
+    </div>
+    <div style="flex:1; min-width:220px;">
+      <div style="font-weight:700; font-size:1.05rem; color:#1a472a; margin-bottom:0.4rem;" id="skinInfoTitle">Click a layer or receptor</div>
+      <div style="font-size:0.9rem; color:#4b5563; min-height:4.5em;" id="skinInfoDesc">Click any epidermal stratum (band) or dermal receptor (dot) on the cross-section to see its name, depth, and function or stimulus detected.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var info = {
+    corneum: { name: 'Stratum Corneum', desc: 'Many layers of dead, flattened, fully keratinized corneocytes, continuously shed (desquamation) and replaced from below.' },
+    lucidum: { name: 'Stratum Lucidum', desc: 'Thin, clear layer of dead, densely packed cells — present only in thick skin (palms, soles).' },
+    granulosum: { name: 'Stratum Granulosum', desc: 'Cells flattening, accumulating keratohyalin granules (keratin precursor) and lamellar granules (secrete a lipid barrier); nuclei begin to degrade.' },
+    spinosum: { name: 'Stratum Spinosum', desc: 'Several layers of polyhedral cells joined by desmosomes; contains Langerhans cells (antigen-presenting immune surveillance).' },
+    basale: { name: 'Stratum Basale', desc: 'Single layer of mitotically active cuboidal/columnar cells on the basement membrane — the source of all epidermal renewal; also contains melanocytes and Merkel cells.' },
+    papillary: { name: 'Papillary Dermis', desc: "Thin, loose connective tissue forming dermal papillae that interlock with the epidermis; rich in capillary loops and Meissner's corpuscles." },
+    reticular: { name: 'Reticular Dermis', desc: 'Thicker, dense irregular connective tissue with interwoven collagen/elastin fibers; contains most glands, hair follicles, and deeper receptors.' },
+    hypodermis: { name: 'Hypodermis', desc: 'Adipose-rich connective tissue anchoring the dermis to underlying fascia/muscle — thermal insulation, cushioning, energy storage.' },
+    merkel: { name: 'Merkel Disc', desc: 'Location: stratum basale. Detects sustained light touch and texture.' },
+    meissner: { name: "Meissner's Corpuscle", desc: 'Location: papillary dermis, dense in fingertips/lips. Detects light touch and low-frequency vibration.' },
+    ruffini: { name: 'Ruffini Ending', desc: 'Location: deep dermis. Detects skin stretch and sustained pressure.' },
+    pacinian: { name: 'Pacinian Corpuscle', desc: 'Location: deep dermis/hypodermis, concentric lamellae ("onion-like"). Detects deep pressure and high-frequency vibration.' },
+    freenerve: { name: 'Free Nerve Ending', desc: 'Location: throughout epidermis and dermis. Detects pain and temperature.' }
+  };
+  var titleEl = document.getElementById('skinInfoTitle');
+  var descEl = document.getElementById('skinInfoDesc');
+  document.querySelectorAll('#skinSvg .skin-hotspot').forEach(function(el){
+    el.addEventListener('click', function(){
+      var entry = info[el.getAttribute('data-key')];
+      titleEl.textContent = entry.name;
+      descEl.textContent = entry.desc;
+    });
+  });
+})();
+</script>
+
 ### Hypodermis (Subcutaneous Layer)
 
 Not part of the skin proper, but adipose-rich connective tissue anchoring the dermis to underlying fascia/muscle, providing thermal insulation, mechanical cushioning, and energy storage; thickness varies substantially by body region and is hormonally regulated (a physiology point, noted here for its direct structural consequence — regional variation in skin mobility and cushioning).
@@ -69,6 +125,76 @@ A hair follicle is an epidermal invagination into the dermis, structured around 
 
 ![Detailed hair follicle cross-section labeling the hard-keratin shaft (medulla, cortex, hair cuticle), the surrounding root sheaths and glassy membrane, the matrix and hair root at the follicle base, the connective tissue papilla, and the adjacent arrector pili muscle and sebaceous gland.](/ANATOMYPICS/hair-follicle-structure.png)
 *Source: user-sourced textbook-style figure. Exceeds spec — labels well beyond matrix/papilla/arrector pili, including the full root sheath structure.*
+
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">💇 Hair Growth Cycle Stepper</h3>
+  <div style="display:flex; gap:2rem; flex-wrap:wrap; align-items:flex-start;">
+    <div style="flex:0 0 200px;">
+      <svg id="hairSvg" viewBox="0 0 200 320" style="width:100%; max-width:200px; display:block; margin:0 auto;">
+        <rect x="0" y="90" width="200" height="6" fill="#e0c48f"/>
+        <line id="hairShaft" x1="100" y1="20" x2="100" y2="300" stroke="#4a3728" stroke-width="6" stroke-linecap="round"/>
+        <line id="follicleWallL" x1="88" y1="93" x2="88" y2="300" stroke="#c9915a" stroke-width="2" fill="none"/>
+        <line id="follicleWallR" x1="112" y1="93" x2="112" y2="300" stroke="#c9915a" stroke-width="2" fill="none"/>
+        <circle id="hairBulb" cx="100" cy="300" r="22" fill="#8b5e34"/>
+        <circle id="dermalPapilla" cx="100" cy="300" r="9" fill="#e8938a"/>
+      </svg>
+    </div>
+    <div style="flex:1; min-width:220px;">
+      <div style="font-weight:700; font-size:1.05rem; color:#1a472a; margin-bottom:0.4rem;" id="hairPhaseTitle">Anagen (active growth)</div>
+      <div style="font-size:0.9rem; color:#4b5563; margin-bottom:1rem; min-height:4.5em;" id="hairPhaseDesc">The dermal papilla nourishes actively dividing matrix cells, which proliferate and keratinize to produce the hair shaft. This phase lasts years on the scalp.</div>
+      <button id="hairStepBtn" style="padding:6px 16px; border:none; border-radius:30px; background:#2d6a4f; color:white; cursor:pointer; font-weight:500; font-size:0.85rem;">Step to next phase →</button>
+      <div style="margin-top:1rem;">
+        <button id="hairWhyBtn" style="padding:6px 14px; border:2px solid #b1650f; border-radius:20px; background:white; color:#b1650f; cursor:pointer; font-weight:500; font-size:0.8rem;">Why don't we go bald from normal shedding?</button>
+        <div id="hairWhyAnswer" style="display:none; font-size:0.85rem; color:#4b5563; margin-top:0.6rem;">Because thousands of follicles cycle <strong>asynchronously</strong> — each on its own independent timer — at any moment some are in anagen while others are in catagen or telogen. Shedding is spread continuously across the whole scalp rather than happening in one synchronized wave, so hair loss is normally unnoticeable.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var phases = [
+    { name: 'Anagen (active growth)', desc: 'The dermal papilla nourishes actively dividing matrix cells, which proliferate and keratinize to produce the hair shaft. This phase lasts years on the scalp.', shaftY1: 20, bulbCy: 300, bulbR: 22, papillaR: 9, papillaOpacity: 1, wallY2: 300 },
+    { name: 'Catagen (brief regression)', desc: 'The follicle base degenerates: the matrix stops dividing and the bulb shrinks and pulls away from the dermal papilla. The existing shaft stops growing but is not shed yet.', shaftY1: 20, bulbCy: 220, bulbR: 14, papillaR: 9, papillaOpacity: 0.25, wallY2: 220 },
+    { name: 'Telogen (resting)', desc: 'The follicle is fully regressed and resting, detached from the papilla. The old hair is eventually shed as a new anagen phase begins beneath it.', shaftY1: 40, bulbCy: 140, bulbR: 10, papillaR: 9, papillaOpacity: 0, wallY2: 140 }
+  ];
+  var idx = 0;
+  var titleEl = document.getElementById('hairPhaseTitle');
+  var descEl = document.getElementById('hairPhaseDesc');
+  var stepBtn = document.getElementById('hairStepBtn');
+  var shaft = document.getElementById('hairShaft');
+  var bulb = document.getElementById('hairBulb');
+  var papilla = document.getElementById('dermalPapilla');
+  var wallL = document.getElementById('follicleWallL');
+  var wallR = document.getElementById('follicleWallR');
+
+  function render(){
+    var p = phases[idx];
+    titleEl.textContent = p.name;
+    descEl.textContent = p.desc;
+    shaft.setAttribute('y1', p.shaftY1);
+    bulb.setAttribute('cy', p.bulbCy);
+    bulb.setAttribute('r', p.bulbR);
+    papilla.setAttribute('cy', p.bulbCy);
+    papilla.setAttribute('r', p.papillaR);
+    papilla.setAttribute('opacity', p.papillaOpacity);
+    wallL.setAttribute('y2', p.wallY2);
+    wallR.setAttribute('y2', p.wallY2);
+  }
+
+  stepBtn.addEventListener('click', function(){
+    idx = (idx + 1) % phases.length;
+    render();
+  });
+
+  document.getElementById('hairWhyBtn').addEventListener('click', function(){
+    var ans = document.getElementById('hairWhyAnswer');
+    ans.style.display = ans.style.display === 'none' ? 'block' : 'none';
+  });
+
+  render();
+})();
+</script>
 
 ### Nail Structure
 
@@ -103,8 +229,7 @@ The epidermis-over-dermis plan and keratinization process described here are sha
 
 **Interactive**
 
-- **Skin cross-section hotspot diagram (click-to-reveal)** — click any epidermal stratum or dermal receptor (Meissner's, Pacinian, Merkel, Ruffini, free nerve endings) to reveal its name, depth, and the specific stimulus it detects.
-- **Hair growth cycle stepper** — step through anagen → catagen → telogen on a single follicle diagram, with matrix activity and shaft length animating at each stage, then a "why don't we go bald from normal shedding?" prompt tying back to asynchronous cycling.
+*(Implemented inline above: the skin cross-section hotspot diagram sits directly below the cutaneous receptors image, and the hair growth cycle stepper sits directly below the hair follicle structure image.)*
 
 **Static**
 

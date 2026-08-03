@@ -67,6 +67,112 @@ graph TD;
 ![Blastula folding inward to form a gastrula, with the ectoderm (blue), endoderm/archenteron (purple), and mesoderm-adjacent yolk-filled blastocoel (yellow) labeled alongside the blastopore.](/ANATOMYPICS/gastrulation-sequence-germ-layers.png)
 *Source: Wikimedia Commons, public domain (Abigail Pyne).*
 
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:0.6rem;">
+    <h3 style="margin:0; color:#1a472a;">🌳 Clickable Germ-Layer Tree</h3>
+    <div style="display:flex; gap:0.5rem;">
+      <button id="germShowAll" style="padding:6px 14px; border:none; border-radius:30px; background:#e2e8f0; color:#1e293b; cursor:pointer; font-weight:500; font-size:0.85rem;">Show all</button>
+      <button id="germQuizToggle" style="padding:6px 14px; border:none; border-radius:30px; background:#2d6a4f; color:white; cursor:pointer; font-weight:500; font-size:0.85rem;">Quiz me</button>
+    </div>
+  </div>
+  <p style="font-size:0.85rem; color:#6b7280; margin:0 0 1rem 0;">Extends the germ-layer diagram above. Click a germ layer's name to isolate and highlight only its derivatives, dimming the rest. Toggle "Quiz me" to hide every derivative name and test yourself — click a hidden item to reveal just that one.</p>
+  <div style="display:flex; gap:1rem; flex-wrap:wrap;" id="germTreeColumns">
+    <div class="germ-col" data-layer="ectoderm" style="flex:1; min-width:180px; border-radius:16px; padding:0.8rem; background:#eaf3fa; border:2px solid transparent; transition:opacity 0.25s, border-color 0.25s;">
+      <div class="germ-header" style="cursor:pointer; font-weight:700; color:#2565a0; padding:4px 8px; border-radius:8px; margin-bottom:0.5rem;">Ectoderm</div>
+      <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:0.4rem;">
+        <li class="germ-item" style="background:white; border-radius:8px; padding:6px 10px; font-size:0.85rem; cursor:default;">Epidermis & skin derivatives (hair, nails, glands)</li>
+        <li class="germ-item" style="background:white; border-radius:8px; padding:6px 10px; font-size:0.85rem; cursor:default;">Nervous system & sense organ epithelium</li>
+      </ul>
+    </div>
+    <div class="germ-col" data-layer="mesoderm" style="flex:1; min-width:180px; border-radius:16px; padding:0.8rem; background:#fbf0e2; border:2px solid transparent; transition:opacity 0.25s, border-color 0.25s;">
+      <div class="germ-header" style="cursor:pointer; font-weight:700; color:#b1650f; padding:4px 8px; border-radius:8px; margin-bottom:0.5rem;">Mesoderm</div>
+      <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:0.4rem;">
+        <li class="germ-item" style="background:white; border-radius:8px; padding:6px 10px; font-size:0.85rem; cursor:default;">Muscle (all three types)</li>
+        <li class="germ-item" style="background:white; border-radius:8px; padding:6px 10px; font-size:0.85rem; cursor:default;">Skeleton (bone, cartilage)</li>
+        <li class="germ-item" style="background:white; border-radius:8px; padding:6px 10px; font-size:0.85rem; cursor:default;">Circulatory system & blood</li>
+        <li class="germ-item" style="background:white; border-radius:8px; padding:6px 10px; font-size:0.85rem; cursor:default;">Excretory & reproductive organs</li>
+      </ul>
+    </div>
+    <div class="germ-col" data-layer="endoderm" style="flex:1; min-width:180px; border-radius:16px; padding:0.8rem; background:#f1e9f5; border:2px solid transparent; transition:opacity 0.25s, border-color 0.25s;">
+      <div class="germ-header" style="cursor:pointer; font-weight:700; color:#7a3f96; padding:4px 8px; border-radius:8px; margin-bottom:0.5rem;">Endoderm</div>
+      <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:0.4rem;">
+        <li class="germ-item" style="background:white; border-radius:8px; padding:6px 10px; font-size:0.85rem; cursor:default;">Lining of digestive tract</li>
+        <li class="germ-item" style="background:white; border-radius:8px; padding:6px 10px; font-size:0.85rem; cursor:default;">Lining of respiratory tract</li>
+        <li class="germ-item" style="background:white; border-radius:8px; padding:6px 10px; font-size:0.85rem; cursor:default;">Liver, pancreas, thyroid</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var cols = document.querySelectorAll('#germTreeColumns .germ-col');
+  var showAllBtn = document.getElementById('germShowAll');
+  var quizBtn = document.getElementById('germQuizToggle');
+  var isolated = null;
+  var quizMode = false;
+
+  function applyIsolation(){
+    cols.forEach(function(col){
+      if (!isolated) {
+        col.style.opacity = '1';
+        col.style.borderColor = 'transparent';
+      } else if (col.getAttribute('data-layer') === isolated) {
+        col.style.opacity = '1';
+        col.style.borderColor = '#2d6a4f';
+      } else {
+        col.style.opacity = '0.35';
+        col.style.borderColor = 'transparent';
+      }
+    });
+  }
+
+  cols.forEach(function(col){
+    var header = col.querySelector('.germ-header');
+    header.addEventListener('click', function(){
+      var layer = col.getAttribute('data-layer');
+      isolated = (isolated === layer) ? null : layer;
+      applyIsolation();
+    });
+  });
+
+  showAllBtn.addEventListener('click', function(){
+    isolated = null;
+    applyIsolation();
+  });
+
+  quizBtn.addEventListener('click', function(){
+    quizMode = !quizMode;
+    quizBtn.style.background = quizMode ? '#b1650f' : '#2d6a4f';
+    quizBtn.textContent = quizMode ? 'Exit quiz' : 'Quiz me';
+    document.querySelectorAll('#germTreeColumns .germ-item').forEach(function(li){
+      if (quizMode) {
+        li.dataset.answer = li.textContent;
+        li.textContent = '???  (click to reveal)';
+        li.style.color = '#9ca3af';
+        li.style.fontStyle = 'italic';
+        li.style.cursor = 'pointer';
+      } else {
+        if (li.dataset.answer) li.textContent = li.dataset.answer;
+        li.style.color = '';
+        li.style.fontStyle = '';
+        li.style.cursor = 'default';
+      }
+    });
+  });
+
+  document.querySelectorAll('#germTreeColumns .germ-item').forEach(function(li){
+    li.addEventListener('click', function(){
+      if (quizMode && li.dataset.answer) {
+        li.textContent = li.dataset.answer;
+        li.style.color = '';
+        li.style.fontStyle = '';
+      }
+    });
+  });
+})();
+</script>
+
 In triploblastic embryos, the mesoderm arises adjacent to the **notochord** (a transient rod of mesodermal tissue, present at some developmental stage in every chordate, including humans — see the [Fish & Amphibian Anatomy](../fish-amphibian-anatomy/) page for its role in non-human chordates). The notochord performs **primary embryonic induction**: it signals the overlying ectoderm to thicken into the **neural plate**, which then rolls into the **neural tube** — the direct embryonic precursor of the entire CNS (detailed on the [Human Nervous System](../human-nervous-system/) page). This is a mechanistic, not just descriptive, link between germ-layer formation and organ-system origin, and a frequently tested inductive-signaling example.
 
 ![Four-stage neurulation sequence: the neural plate thickens from ectoderm over the notochord and mesoderm, bends dorsally to bring the neural plate borders together as the neural crest, closes into a neural tube separating from the epidermis, and finally shows the notochord persisting only as the intervertebral disc nucleus pulposus while adjacent mesoderm forms the somites.](/ANATOMYPICS/notochord-neural-tube-formation.jpg)
@@ -102,6 +208,91 @@ The **coelom** is a fluid-filled body cavity fully lined by mesoderm-derived tis
 | **Pseudocoelomate** | Body cavity present, derived from the blastocoel, only partially lined by mesoderm | Nematoda |
 | **Eucoelomate (coelomate)** | True coelom, fully mesoderm-lined on both the body-wall and gut sides | Annelida, Mollusca, Arthropoda, Echinodermata, Chordata |
 
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">🧬 Coelom Morph Slider</h3>
+  <div style="display:flex; gap:2rem; flex-wrap:wrap; align-items:center;">
+    <div style="flex:0 0 260px;">
+      <svg id="coelomSvg" viewBox="0 0 300 300" style="width:100%; max-width:260px; display:block; margin:0 auto;">
+        <circle cx="150" cy="150" r="140" fill="#7fb3d5"/>
+        <circle cx="150" cy="150" r="128" fill="#e8a04c"/>
+        <circle id="coelom-mesenchyme" cx="150" cy="150" r="128" fill="#e8a04c" fill-opacity="1"/>
+        <circle id="coelom-cavity" cx="150" cy="150" r="128" fill="#cfe8f7" fill-opacity="0"/>
+        <circle id="coelom-visceral" cx="150" cy="150" r="55" fill="#e8a04c"/>
+        <circle cx="150" cy="150" r="55" fill="#9b6bb3"/>
+        <circle cx="150" cy="150" r="40" fill="#fdf6e3"/>
+      </svg>
+    </div>
+    <div style="flex:1; min-width:220px;">
+      <div style="font-weight:700; font-size:1.1rem; color:#1a472a; margin-bottom:0.3rem;" id="coelomStageLabel">Acoelomate</div>
+      <div style="font-size:0.9rem; color:#4b5563; margin-bottom:1rem; min-height:3.6em;" id="coelomStageDesc">Mesenchyme (mesoderm-derived packing tissue) fills the entire space between gut and body wall — no cavity.</div>
+      <input type="range" id="coelomSlider" min="0" max="100" step="1" value="0" style="width:100%; accent-color:#2d6a4f;">
+      <div style="display:flex; justify-content:space-between; font-size:0.72rem; color:#6b7280; margin-top:0.2rem;">
+        <span>Acoelomate</span><span>Pseudocoelomate</span><span>Eucoelomate</span>
+      </div>
+      <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1rem; font-size:0.8rem; color:#374151;">
+        <div><span style="display:inline-block;width:10px;height:10px;background:#7fb3d5;border-radius:2px;"></span> Ectoderm</div>
+        <div><span style="display:inline-block;width:10px;height:10px;background:#e8a04c;border-radius:2px;"></span> Mesoderm</div>
+        <div><span style="display:inline-block;width:10px;height:10px;background:#9b6bb3;border-radius:2px;"></span> Endoderm (gut)</div>
+        <div><span style="display:inline-block;width:10px;height:10px;background:#cfe8f7;border-radius:2px;"></span> Fluid cavity</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var slider = document.getElementById('coelomSlider');
+  var stageLabel = document.getElementById('coelomStageLabel');
+  var stageDesc = document.getElementById('coelomStageDesc');
+  var mesenchyme = document.getElementById('coelom-mesenchyme');
+  var cavity = document.getElementById('coelom-cavity');
+  var visceral = document.getElementById('coelom-visceral');
+
+  function clamp01(x){ return Math.max(0, Math.min(1, x)); }
+
+  function update(){
+    var v = parseFloat(slider.value);
+    var t = v / 50;
+    var parietalT = clamp01(t);
+    var visceralT = clamp01(t - 1);
+    var mesenchymeOpacity = 1 - clamp01(t);
+    var cavityOpacity = clamp01(t);
+    var parietalThickness = parietalT * 14;
+    var visceralThickness = visceralT * 14;
+    var innerR = 128 - parietalThickness;
+
+    mesenchyme.setAttribute('r', innerR);
+    mesenchyme.setAttribute('fill-opacity', mesenchymeOpacity);
+    cavity.setAttribute('r', innerR);
+    cavity.setAttribute('fill-opacity', cavityOpacity);
+    visceral.setAttribute('r', 55 + visceralThickness);
+
+    var label, desc;
+    if (v === 0) {
+      label = 'Acoelomate';
+      desc = 'Mesenchyme (mesoderm-derived packing tissue) fills the entire space between gut and body wall — no cavity.';
+    } else if (v < 50) {
+      label = 'Acoelomate → Pseudocoelomate (morphing)';
+      desc = 'The solid mesenchyme is thinning as a fluid-filled cavity begins to open between gut and body wall.';
+    } else if (v === 50) {
+      label = 'Pseudocoelomate';
+      desc = 'A body cavity derived from the blastocoel is present, but mesoderm lines only the body-wall side — the gut wall has no peritoneum.';
+    } else if (v < 100) {
+      label = 'Pseudocoelomate → Eucoelomate (morphing)';
+      desc = 'A visceral peritoneum is growing around the gut wall, extending the mesoderm lining to both sides of the cavity.';
+    } else {
+      label = 'Eucoelomate (coelomate)';
+      desc = 'The coelom is fully lined by mesoderm on both sides — parietal peritoneum against the body wall, visceral peritoneum around the gut.';
+    }
+    stageLabel.textContent = label;
+    stageDesc.textContent = desc;
+  }
+
+  slider.addEventListener('input', update);
+  update();
+})();
+</script>
+
 A coelom performs concrete mechanical work: it cushions internal organs, allows the gut to move independently of the body wall (necessary for effective peristalsis, since a fluid-filled cavity transmits muscular force without the gut and body wall dragging against each other), and — in soft-bodied coelomates lacking a rigid skeleton — doubles as a **hydrostatic skeleton**, an incompressible fluid volume that transmits force when surrounding muscle contracts (detailed with earthworm locomotion on the [Invertebrate Body Plans I](../invertebrate-body-plans-1/) page).
 
 ![Acoelomate (flatworm), pseudocoelomate (roundworm), and eucoelomate (segmented worm) body plans compared, each with a representative animal above and a labeled cross-section below showing ectoderm, mesoderm, endoderm, and the body cavity (if any).](/ANATOMYPICS/coelom-types-comparison.jpg)
@@ -134,8 +325,7 @@ A coelom performs concrete mechanical work: it cushions internal organs, allows 
 
 **Interactive**
 
-- **Coelom morph slider (SVG/JS)** — one slider that morphs a generic body cross-section continuously from acoelomate → pseudocoelomate → eucoelomate, showing the mesoderm lining progressively wrap the body cavity — replaces three static snapshots with one continuous transformation a student can scrub back and forth.
-- **Clickable germ-layer tree (extends the Mermaid diagram above)** — clicking "ectoderm" / "mesoderm" / "endoderm" isolates and highlights only that branch's derivatives, dimming the rest; a "quiz me" toggle hides all labels so a student can self-test before revealing them.
+*(Implemented inline above: the coelom morph slider sits in the Coelom Types section, and the clickable/quizzable germ-layer tree sits directly below the Mermaid diagram in the Gastrulation and Germ Layers section.)*
 
 **Static**
 
