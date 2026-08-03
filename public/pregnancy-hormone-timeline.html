@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pregnancy Hormone Timeline | BioGuide</title>
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js" charset="utf-8"></script>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 780px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .toggles { display:flex; gap: 14px; margin-bottom: 0.6rem; font-size: 0.82rem; flex-wrap:wrap; }
+  .toggles label { display:flex; align-items:center; gap: 6px; font-weight:600; cursor:pointer; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Pregnancy Hormone Timeline</h3>
+  <div class="subtitle">Toggle hCG, estrogen, and the two sources of progesterone (corpus luteum vs. placenta) to see the hand-off point where the placenta takes over hormone production.</div>
+  <div class="toggles">
+    <label><input type="checkbox" id="showHcg" checked> hCG</label>
+    <label><input type="checkbox" id="showEstrogen" checked> Estrogen</label>
+    <label><input type="checkbox" id="showProgCL" checked> Progesterone (corpus luteum)</label>
+    <label><input type="checkbox" id="showProgPlacenta" checked> Progesterone (placenta)</label>
+  </div>
+  <div id="plot" style="width:100%; height:420px;"></div>
+</div>
+<script>
+(function(){
+  var N = 200, tMax = 40; // weeks
+  var t = [], hcg = [], estrogen = [], progCL = [], progPlacenta = [];
+  var handoff = 12;
+  for (var i=0;i<N;i++){
+    var tt = i/(N-1)*tMax;
+    t.push(tt);
+    hcg.push(90 * Math.exp(-Math.pow((tt-10)/6,2)) + 15);
+    estrogen.push(5 + 90*(tt/tMax));
+    if (tt <= handoff){
+      progCL.push(20 + 40*(tt/handoff));
+      progPlacenta.push(null);
+    } else {
+      progCL.push(null);
+      progPlacenta.push(60 + 35*((tt-handoff)/(tMax-handoff)));
+    }
+  }
+  // stitch continuity at handoff for placenta trace start
+  var handoffIdx = Math.round(handoff/tMax*(N-1));
+  progPlacenta[handoffIdx] = progCL[handoffIdx] !== null ? progCL[handoffIdx] : 60;
+
+  var plotDiv = document.getElementById('plot');
+  var boxes = ['showHcg','showEstrogen','showProgCL','showProgPlacenta'].map(function(id){ return document.getElementById(id); });
+
+  function traces(){
+    var arr = [];
+    if (boxes[0].checked) arr.push({x:t, y:hcg, name:'hCG', mode:'lines', line:{color:'#7c3aed', width:3}});
+    if (boxes[1].checked) arr.push({x:t, y:estrogen, name:'Estrogen', mode:'lines', line:{color:'#e67e22', width:3}});
+    if (boxes[2].checked) arr.push({x:t, y:progCL, name:'Progesterone (corpus luteum)', mode:'lines', line:{color:'#1d70a2', width:3}, connectgaps:false});
+    if (boxes[3].checked) arr.push({x:t, y:progPlacenta, name:'Progesterone (placenta)', mode:'lines', line:{color:'#166534', width:3}, connectgaps:false});
+    return arr;
+  }
+
+  function render(){
+    var layout = {
+      xaxis: {title:'Week of pregnancy', range:[0,tMax], gridcolor:'#e9ecef'},
+      yaxis: {title:'Relative hormone level', range:[0,110], gridcolor:'#e9ecef'},
+      shapes: [{type:'line', x0:handoff, x1:handoff, y0:0, y1:110, line:{color:'#b91c1c', width:1, dash:'dash'}}],
+      annotations: [{x:handoff, y:108, text:'Corpus luteum → placenta hand-off (~week 12)', showarrow:false, font:{size:10, color:'#b91c1c'}}],
+      legend: {orientation:'h', y:-0.2},
+      margin: {t:20, l:55, r:20, b:45},
+      plot_bgcolor:'#ffffff', paper_bgcolor:'#ffffff'
+    };
+    Plotly.react(plotDiv, traces(), layout, {responsive:true, displayModeBar:false});
+  }
+
+  boxes.forEach(function(b){ b.addEventListener('change', render); });
+  render();
+})();
+</script>
+</body>
+</html>

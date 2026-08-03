@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hardy-Weinberg Assumption-Violation Matcher | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  #scenario {
+    background: #f8fafc;
+    border-radius: 14px;
+    padding: 14px 16px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1d3557;
+  }
+  .options { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .opt-btn {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 2px solid #cbd5e1;
+    background: #fff;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #334155;
+    text-align: left;
+  }
+  .opt-btn:hover { border-color: #1d70a2; }
+  .opt-btn.correct { background: #dcfce7; border-color: #86efac; color: #166534; }
+  .opt-btn.wrong { background: #fee2e2; border-color: #fca5a5; color: #991b1b; }
+  .opt-btn[disabled] { cursor: default; }
+  #feedback { margin-top: 1rem; font-size: 0.85rem; line-height: 1.5; min-height: 40px; }
+  #feedback a { color: #1d70a2; font-weight: 600; }
+  #footer { display: flex; justify-content: space-between; align-items: center; margin-top: 1rem; }
+  #nextBtn {
+    background: #2d6a4f; color: #fff; border: none; padding: 8px 20px;
+    border-radius: 999px; font-size: 0.85rem; cursor: pointer;
+  }
+  #nextBtn[disabled] { background: #cbd5e1; cursor: not-allowed; }
+  #score { font-size: 0.85rem; color: #4b5563; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Assumption-Violation Scenario Matcher</h3>
+  <div class="subtitle">Match each scenario to the specific Hardy-Weinberg assumption it violates.</div>
+  <div id="scenario"></div>
+  <div class="options" id="options"></div>
+  <div id="feedback"></div>
+  <div id="footer">
+    <span id="score"></span>
+    <button id="nextBtn" disabled>Next scenario</button>
+  </div>
+</div>
+<script>
+(function(){
+  var assumptions = ['No mutation', 'No gene flow (migration)', 'Infinitely large population (no drift)', 'Random mating', 'No natural selection'];
+  var scenarios = [
+    {
+      text: 'A new mutation appears in a population, creating a novel allele that did not previously exist.',
+      answer: 'No mutation',
+      explain: 'New alleles arising by mutation directly violate the "no mutation" assumption.',
+      link: { text: 'Genetic Drift, Gene Flow & Mutation', href: '/resources/15-evolution/genetic-drift-gene-flow-and-mutation/' }
+    },
+    {
+      text: 'A newly built dam blocks fish migration between two previously connected populations.',
+      answer: 'No gene flow (migration)',
+      explain: 'Blocking migration prevents allele exchange between the populations — a gene-flow violation (though note: it prevents flow rather than adding it, but it changes each population\'s trajectory relative to the "no migration" baseline).',
+      link: { text: 'Genetic Drift, Gene Flow & Mutation', href: '/resources/15-evolution/genetic-drift-gene-flow-and-mutation/' }
+    },
+    {
+      text: 'A wildfire kills all but a handful of survivors in a lizard population.',
+      answer: 'Infinitely large population (no drift)',
+      explain: 'A sudden crash to a small population size is a bottleneck — genetic drift dominates when population size is small.',
+      link: { text: 'Genetic Drift, Gene Flow & Mutation', href: '/resources/15-evolution/genetic-drift-gene-flow-and-mutation/' }
+    },
+    {
+      text: 'Birds in a population preferentially choose mates with similar plumage color to their own.',
+      answer: 'Random mating',
+      explain: 'Assortative mating by phenotype violates random mating — it changes genotype frequencies (more homozygotes than HWE predicts) without necessarily changing allele frequencies.',
+      link: null
+    },
+    {
+      text: 'A pesticide kills susceptible insects at a much higher rate than resistant ones.',
+      answer: 'No natural selection',
+      explain: 'Differential survival based on genotype is natural selection acting directly on the population.',
+      link: { text: 'Natural Selection: Modes & Fitness', href: '/resources/15-evolution/natural-selection-modes-and-fitness/' }
+    }
+  ];
+
+  var order = [];
+  var idx = 0;
+  var correctCount = 0;
+  var answered = false;
+
+  var scenarioEl = document.getElementById('scenario');
+  var optionsEl = document.getElementById('options');
+  var feedbackEl = document.getElementById('feedback');
+  var scoreEl = document.getElementById('score');
+  var nextBtn = document.getElementById('nextBtn');
+
+  function shuffle(arr){
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--){
+      var j = Math.floor(Math.random() * (i+1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+
+  function loadScenario(){
+    answered = false;
+    nextBtn.disabled = true;
+    feedbackEl.innerHTML = '';
+    var s = scenarios[order[idx]];
+    scenarioEl.textContent = s.text;
+    optionsEl.innerHTML = '';
+    assumptions.forEach(function(a){
+      var btn = document.createElement('button');
+      btn.className = 'opt-btn';
+      btn.textContent = a;
+      btn.addEventListener('click', function(){ chooseAnswer(a, s, btn); });
+      optionsEl.appendChild(btn);
+    });
+    scoreEl.textContent = 'Score: ' + correctCount + ' / ' + idx + (idx < scenarios.length ? '' : '');
+  }
+
+  function chooseAnswer(chosen, s, btn){
+    if (answered) return;
+    answered = true;
+    var allBtns = optionsEl.querySelectorAll('.opt-btn');
+    allBtns.forEach(function(b){ b.disabled = true; if (b.textContent === s.answer) b.classList.add('correct'); });
+    var correct = chosen === s.answer;
+    if (!correct){ btn.classList.add('wrong'); }
+    else { correctCount++; }
+    var linkHtml = s.link ? ' See <a href="' + s.link.href + '" target="_blank" rel="noopener">' + s.link.text + '</a>.' : '';
+    feedbackEl.innerHTML = (correct ? '<b>Correct.</b> ' : '<b>Not quite.</b> ') + s.explain + linkHtml;
+    nextBtn.disabled = false;
+    scoreEl.textContent = 'Score: ' + correctCount + ' / ' + (idx + 1);
+  }
+
+  var finished = false;
+
+  nextBtn.addEventListener('click', function(){
+    if (finished){
+      idx = 0;
+      correctCount = 0;
+      finished = false;
+      order = shuffle([0,1,2,3,4]);
+      nextBtn.textContent = 'Next scenario';
+      loadScenario();
+      return;
+    }
+    idx++;
+    if (idx >= order.length){
+      finished = true;
+      scenarioEl.textContent = 'All scenarios complete!';
+      optionsEl.innerHTML = '';
+      feedbackEl.innerHTML = 'Final score: ' + correctCount + ' / ' + scenarios.length + '.';
+      nextBtn.textContent = 'Restart';
+      nextBtn.disabled = false;
+      return;
+    }
+    loadScenario();
+  });
+
+  order = shuffle([0,1,2,3,4]);
+  loadScenario();
+})();
+</script>
+</body>
+</html>

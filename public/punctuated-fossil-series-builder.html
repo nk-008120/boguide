@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Punctuated Equilibrium vs. Gradualism Fossil-Series Builder | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  svg { width: 100%; height: 260px; background: #f8fafc; border-radius: 14px; }
+  .guess-btns { display: flex; gap: 10px; justify-content: center; margin-top: 1rem; }
+  .guess-btn {
+    padding: 10px 18px; border-radius: 999px; border: 2px solid #cbd5e1;
+    background: #fff; font-size: 0.85rem; font-weight: 600; cursor: pointer; color: #334155;
+  }
+  .guess-btn:hover { border-color: #1d70a2; }
+  #result { margin-top: 1rem; font-size: 0.88rem; min-height: 44px; text-align: center; }
+  #result.correct { color: #166534; }
+  #result.wrong { color: #991b1b; }
+  #newBtn {
+    display: block; margin: 1rem auto 0; background: #2d6a4f; color: #fff; border: none;
+    padding: 8px 20px; border-radius: 999px; font-size: 0.85rem; cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Punctuated Equilibrium vs. Gradualism Fossil-Series Builder</h3>
+  <div class="subtitle">A trait's measured value at successive stratigraphic depths (older at bottom) for one fossil lineage. Was this series generated under a gradualist or punctuated model?</div>
+  <svg id="chart" viewBox="0 0 400 240"></svg>
+  <div class="guess-btns">
+    <button class="guess-btn" data-guess="gradual">My guess: Gradualist</button>
+    <button class="guess-btn" data-guess="punctuated">My guess: Punctuated</button>
+  </div>
+  <div id="result"></div>
+  <button id="newBtn">Generate new series</button>
+</div>
+<script>
+(function(){
+  var N = 14;
+  var trueModel = null;
+  var values = [];
+
+  function genGradual(){
+    var vals = [];
+    var v = 20 + Math.random()*10;
+    var trend = 2.5 + Math.random()*1.5;
+    for (var i = 0; i < N; i++){
+      v += trend + (Math.random()-0.5)*4;
+      vals.push(v);
+    }
+    return vals;
+  }
+
+  function genPunctuated(){
+    var vals = [];
+    var v = 20 + Math.random()*10;
+    var jumpPoints = [];
+    var numJumps = 2 + Math.floor(Math.random()*2);
+    while (jumpPoints.length < numJumps){
+      var jp = 2 + Math.floor(Math.random() * (N-4));
+      if (jumpPoints.indexOf(jp) === -1) jumpPoints.push(jp);
+    }
+    for (var i = 0; i < N; i++){
+      if (jumpPoints.indexOf(i) !== -1){ v += 18 + Math.random()*12; }
+      vals.push(v + (Math.random()-0.5)*3);
+    }
+    return vals;
+  }
+
+  function draw(){
+    var svg = document.getElementById('chart');
+    svg.innerHTML = '';
+    var minV = Math.min.apply(null, values), maxV = Math.max.apply(null, values);
+    var range = maxV - minV || 1;
+    var pts = values.map(function(v, i){
+      var x = 40 + (i/(N-1)) * 320;
+      var y = 220 - ((v - minV)/range) * 190;
+      return [x, y];
+    });
+    // axis
+    var axis = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    axis.setAttribute('x1', 40); axis.setAttribute('y1', 220); axis.setAttribute('x2', 40); axis.setAttribute('y2', 20);
+    axis.setAttribute('stroke', '#cbd5e1'); axis.setAttribute('stroke-width', 2);
+    svg.appendChild(axis);
+    var axisLabelOld = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    axisLabelOld.setAttribute('x', 40); axisLabelOld.setAttribute('y', 235); axisLabelOld.setAttribute('font-size', '10'); axisLabelOld.setAttribute('fill', '#64748b');
+    axisLabelOld.textContent = 'Older strata';
+    svg.appendChild(axisLabelOld);
+    var axisLabelNew = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    axisLabelNew.setAttribute('x', 320); axisLabelNew.setAttribute('y', 235); axisLabelNew.setAttribute('font-size', '10'); axisLabelNew.setAttribute('fill', '#64748b'); axisLabelNew.setAttribute('text-anchor', 'end');
+    axisLabelNew.textContent = 'Younger strata';
+    svg.appendChild(axisLabelNew);
+
+    var poly = document.createElementNS('http://www.w3.org/2000/svg', 'polyline');
+    poly.setAttribute('points', pts.map(function(p){ return p.join(','); }).join(' '));
+    poly.setAttribute('fill', 'none');
+    poly.setAttribute('stroke', '#1d70a2');
+    poly.setAttribute('stroke-width', 2);
+    svg.appendChild(poly);
+
+    pts.forEach(function(p){
+      var c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      c.setAttribute('cx', p[0]); c.setAttribute('cy', p[1]); c.setAttribute('r', 4);
+      c.setAttribute('fill', '#2d6a4f');
+      svg.appendChild(c);
+    });
+  }
+
+  function newSeries(){
+    trueModel = Math.random() < 0.5 ? 'gradual' : 'punctuated';
+    values = trueModel === 'gradual' ? genGradual() : genPunctuated();
+    draw();
+    document.getElementById('result').textContent = '';
+    document.getElementById('result').className = '';
+  }
+
+  var guessed = false;
+
+  document.querySelectorAll('.guess-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      if (guessed) return;
+      guessed = true;
+      var guess = btn.dataset.guess;
+      var correct = guess === trueModel;
+      var resultEl = document.getElementById('result');
+      resultEl.className = correct ? 'correct' : 'wrong';
+      var modelName = trueModel === 'gradual' ? 'phyletic gradualism' : 'punctuated equilibrium';
+      resultEl.innerHTML = (correct ? '<b>Correct!</b> ' : '<b>Not quite.</b> ') +
+        'This series was generated under <b>' + modelName + '</b> — ' +
+        (trueModel === 'gradual'
+          ? 'the trait value changed by a small, roughly constant amount at every step, consistent with slow continuous change.'
+          : 'the trait value stayed flat across most strata, punctuated by a small number of larger jumps — consistent with stasis interrupted by rapid change.');
+      document.querySelectorAll('.guess-btn').forEach(function(b){ b.disabled = true; });
+    });
+  });
+
+  document.getElementById('newBtn').addEventListener('click', function(){
+    guessed = false;
+    document.querySelectorAll('.guess-btn').forEach(function(b){ b.disabled = false; });
+    newSeries();
+  });
+  newSeries();
+})();
+</script>
+</body>
+</html>

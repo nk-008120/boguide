@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Founder Effect / Bottleneck Sampler | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  #source-pop {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    gap: 3px;
+    margin-bottom: 1rem;
+  }
+  .dot { width: 14px; height: 14px; border-radius: 50%; }
+  .dot.blue { background: #1d70a2; }
+  .dot.red { background: #d9534f; }
+  .dot.dim { opacity: 0.2; }
+  .dot.selected { outline: 2px solid #1a472a; outline-offset: 1px; }
+  .controls { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-bottom: 1rem; }
+  .controls label { font-size: 0.82rem; font-weight: 600; }
+  .controls select { padding: 6px 8px; border-radius: 8px; border: 1px solid #cbd5e1; }
+  .action-btn {
+    background: #2d6a4f; color: #fff; border: none; padding: 8px 18px;
+    border-radius: 999px; font-size: 0.85rem; cursor: pointer;
+  }
+  #results { display: flex; gap: 24px; align-items: center; }
+  .bar-group { flex: 1; }
+  .bar-group h4 { margin: 0 0 6px 0; font-size: 0.82rem; color: #334155; }
+  .bar-track { display: flex; height: 20px; border-radius: 6px; overflow: hidden; }
+  .bar-blue { background: #1d70a2; }
+  .bar-red { background: #d9534f; }
+  .bar-label { font-size: 0.75rem; color: #4b5563; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Founder Effect / Bottleneck Sampler</h3>
+  <div class="subtitle">Source population: 60% blue allele, 40% red allele. Sample a small founding/surviving group and see how much its proportions differ from the source purely by chance.</div>
+  <div id="source-pop"></div>
+  <div class="controls">
+    <label>Sample size
+      <select id="sampleSize">
+        <option value="5">5</option>
+        <option value="10" selected>10</option>
+        <option value="20">20</option>
+      </select>
+    </label>
+    <button class="action-btn" id="sampleBtn">Sample new founders</button>
+  </div>
+  <div id="results">
+    <div class="bar-group">
+      <h4>Source population (n=100)</h4>
+      <div class="bar-track"><div class="bar-blue" id="srcBlue"></div><div class="bar-red" id="srcRed"></div></div>
+      <div class="bar-label" id="srcLabel"></div>
+    </div>
+    <div class="bar-group">
+      <h4>Sampled founders</h4>
+      <div class="bar-track"><div class="bar-blue" id="sampBlue"></div><div class="bar-red" id="sampRed"></div></div>
+      <div class="bar-label" id="sampLabel"></div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var TOTAL = 100;
+  var blueCount = 60;
+  var population = [];
+  for (var i = 0; i < TOTAL; i++){ population.push(i < blueCount ? 'blue' : 'red'); }
+
+  function shuffleIndices(){
+    var idx = population.map(function(_, i){ return i; });
+    for (var i = idx.length - 1; i > 0; i--){
+      var j = Math.floor(Math.random() * (i+1));
+      var t = idx[i]; idx[i] = idx[j]; idx[j] = t;
+    }
+    return idx;
+  }
+
+  var sourcePopEl = document.getElementById('source-pop');
+  var dotEls = [];
+  population.forEach(function(color, i){
+    var d = document.createElement('div');
+    d.className = 'dot ' + color;
+    sourcePopEl.appendChild(d);
+    dotEls.push(d);
+  });
+
+  document.getElementById('srcBlue').style.width = blueCount + '%';
+  document.getElementById('srcRed').style.width = (100-blueCount) + '%';
+  document.getElementById('srcLabel').textContent = blueCount + '% blue / ' + (100-blueCount) + '% red';
+
+  function sample(){
+    dotEls.forEach(function(d){ d.classList.remove('selected'); d.classList.add('dim'); });
+    var n = parseInt(document.getElementById('sampleSize').value, 10);
+    var idx = shuffleIndices().slice(0, n);
+    var blueSampled = 0;
+    idx.forEach(function(i){
+      dotEls[i].classList.remove('dim');
+      dotEls[i].classList.add('selected');
+      if (population[i] === 'blue') blueSampled++;
+    });
+    var bluePct = Math.round((blueSampled/n)*100);
+    document.getElementById('sampBlue').style.width = bluePct + '%';
+    document.getElementById('sampRed').style.width = (100-bluePct) + '%';
+    document.getElementById('sampLabel').textContent = blueSampled + '/' + n + ' blue (' + bluePct + '%) vs. ' + blueCount + '% in the source';
+  }
+
+  document.getElementById('sampleBtn').addEventListener('click', sample);
+  sample();
+})();
+</script>
+</body>
+</html>

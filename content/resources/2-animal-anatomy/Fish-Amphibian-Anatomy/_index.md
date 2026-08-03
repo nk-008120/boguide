@@ -20,19 +20,36 @@ Two major skeletal grades: **cartilaginous** (Chondrichthyes — sharks, rays; s
 
 ### Fish Respiratory Structure
 
-**Gills**, not lungs: each gill arch bears a row of **primary lamellae (filaments)**, and each primary lamella bears many thinner **secondary lamellae** projecting from its surface — the true site of gas exchange, each covered in a single layer of epithelium directly apposed to a dense capillary bed (the same "minimal diffusion distance" principle as the human alveolus, see [Human Respiratory System](../human-respiratory-system/)). Water flows across the secondary lamellae in the direction **opposite** to blood flow within them — **countercurrent exchange** — which maintains a favorable diffusion gradient along the entire length of the lamella (unlike concurrent flow, where the gradient would collapse once blood and water oxygen levels equalized partway across), allowing bony fish to extract a much higher fraction of dissolved O₂ from water than concurrent flow would permit. In bony fish, all four gill arches on each side are covered by a bony flap, the **operculum**, whose rhythmic movement (paired with mouth opening/closing) actively pumps water across the gills even when the fish is stationary; cartilaginous fish generally lack an operculum and rely more on forward swimming (ram ventilation) or dedicated spiracles.
+**Gills**, not lungs: each gill arch bears a row of **primary lamellae (filaments)**, and each primary lamella bears many thinner **secondary lamellae** projecting from its surface — the true site of gas exchange, each covered in a single layer of epithelium directly apposed to a dense capillary bed (the same "minimal diffusion distance" principle as the human alveolus, see [Human Respiratory System](../human-respiratory-system/)). Water flows across the secondary lamellae in the direction **opposite** to blood flow within them — **countercurrent exchange** — which maintains a favorable diffusion gradient along the entire length of the lamella (unlike concurrent flow, where the gradient would collapse once blood and water oxygen levels equalized partway across), allowing bony fish to extract a much higher fraction of dissolved O₂ from water than concurrent flow would permit.
+
+![Zoom sequence from a whole fish (operculum, gill arch) to gill filaments to a single lamella, with countercurrent water flow (100%→70%→40%→15% O₂ saturation) running opposite to blood flow through the lamellar capillaries (80%→60%→30%→5% O₂ saturation) — the gradient never equalizes along the lamella's length.](/ANATOMYPICS/bony-fish-gill-arch-lamellae-countercurrent.webp)
+*Source: Pearson Education (© 2009, notice visible in the image), user-sourced via a ResearchGate figure. Confirm licensing basis before public deployment. Exact quantitative demonstration of the countercurrent-vs-concurrent gradient argument in the text.*
+
+In bony fish, all four gill arches on each side are covered by a bony flap, the **operculum**, whose rhythmic movement (paired with mouth opening/closing) actively pumps water across the gills even when the fish is stationary; cartilaginous fish generally lack an operculum and rely more on forward swimming (ram ventilation) or dedicated spiracles.
+
+![Fish skull and jaw musculature in two configurations (a, b), with the operculum, premaxilla, maxilla, dentary, preopercle, neurocranium, and named jaw/opercular muscles (EP, LAP, AM1/AM2/3, AAP, SH, HYP) labeled.](/ANATOMYPICS/operculum-buccal-pumping-mechanism.jpg)
+*Source: user-sourced (originally attempted via a ScienceDirect topic page). **Mismatch from spec**: this is a fish cranial/jaw musculature diagram (relevant to feeding biomechanics and labels the operculum's bony position) rather than a depiction of the buccal-pump water-flow mechanism itself — no airflow/water-flow arrows are shown.*
 
 ### Fish Circulatory Structure
 
 A **two-chambered heart** (one atrium, one ventricle, preceded by a thin-walled collecting chamber, the **sinus venosus**, and followed by an outflow tract, the **conus arteriosus** or **bulbus arteriosus** depending on the group) and a **single circuit**: blood is pumped once, passes through the gills to pick up oxygen, then continues directly to the body before returning to the heart via the sinus venosus. Compare this to the human double-circuit, four-chambered heart on the [Human Circulatory System](../human-circulatory-system/) page — a fish heart only ever pumps blood that is about to lose pressure crossing the gill capillary bed before it reaches the body, a structural limitation double circulation solves.
 
+![Three panels of a single (mammalian-type, four-chambered) heart through the cardiac cycle: (a) diastole, all chambers relaxed; (b) atrial systole/ventricular diastole; (c) atrial diastole/ventricular systole, with arrows tracing blood flow direction at each stage.](/ANATOMYPICS/heart-chambers-fish-amphibian-human-comparison.jpg)
+*Source: user-sourced (originally via scienceabc.com). **Mismatch from spec**: this shows one heart's cardiac cycle timing (diastole → atrial systole → ventricular systole), not the fish (2-chambered) vs. amphibian (3-chambered) vs. human (4-chambered) structural comparison the text describes — no fish or amphibian heart is shown.*
+
 ### Fish Osmoregulatory Structure
 
 Fish kidney structure differs by habitat in a way directly comparable to the nephron detail on the [Human Excretory System](../human-excretory-system/) page: freshwater fish (hypertonic to their environment, constantly gaining water by osmosis) have kidneys with large, numerous glomeruli producing copious dilute urine; marine bony fish (hypotonic to seawater, constantly losing water) have reduced or in some species absent glomeruli (**aglomerular** nephrons), filtering far less and instead relying heavily on active secretion at the tubule and on specialized gill **chloride cells** to actively excrete excess salt — a clear structural inversion between the two habitats' nephron populations.
 
+![Salt/water movement and nephron structure compared across mammals, freshwater fish, marine fish, and insects: freshwater fish nephrons have a large glomerulus and lack a loop of Henle but gain an intermediate segment, while marine fish nephrons have a smaller or absent glomerulus and lack a distal tubule, with a water-permeable collecting duct.](/ANATOMYPICS/freshwater-vs-marine-fish-nephron-comparison.jpg)
+*Source: user-sourced (originally via eCampusOntario Pressbooks). Exceeds spec — a four-way comparison (mammal/freshwater fish/marine fish/insect) rather than just the two fish habitats requested, with both whole-organism and nephron-structure diagrams.*
+
 ### Fish Sensory Structure: The Lateral Line
 
 A structure with no direct human equivalent: the **lateral line system**, a row of fluid-filled canals running along each side of the body and over the head, opening to the surrounding water through pores. Within the canals, clusters of mechanoreceptor hair cells (**neuromasts**, structurally similar in principle to the cochlear/vestibular hair cells on the [Human Sensory Organs](../human-sensory-organs/) page) are deflected by water movement/pressure changes, allowing fish to detect nearby movement, obstacles, and prey — a distributed mechanosensory structure supplementing the eyes and inner ear.
+
+![Whole fish showing the head and trunk lateral-line canal systems (A), a canal cross-section showing water displacement reaching a neuromast through the external opening (B), and a zoomed neuromast showing the cupula, sense hairs, sensory cells, and nerve (C).](/ANATOMYPICS/lateral-line-canal-neuromast-structure.jpg)
+*Source: Encyclopædia Britannica, Inc. (©1994, notice visible in the image), user-sourced. **Confirm licensing basis before public deployment.** Exact match, full structural detail from whole-fish canal layout down to a single neuromast.*
 
 ### Amphibian Skeleton
 
@@ -41,6 +58,9 @@ The first vertebrates with true **tetrapod limbs** (the proximal-bone/distal-bon
 ### Amphibian Respiratory Structure
 
 A genuine structural hybrid, often using **three surfaces simultaneously**: **gills** (larval stage, e.g. tadpoles, lost at metamorphosis in most species — a direct structural echo of the fish gill plan above), simple **saclike lungs** (much less internally divided than mammalian lungs — far less surface area, a direct structural explanation for why amphibians can't sustain the metabolic rate of birds/mammals), and **cutaneous respiration** (direct gas exchange across thin, moist, minimally keratinized, highly vascularized skin — meaning amphibian skin must stay permeable and moist, the structural reason amphibians are so vulnerable to desiccation and skin-absorbed toxins). Amphibians additionally lack a diaphragm (unlike the mammalian mechanism on the [Human Respiratory System](../human-respiratory-system/) page) and instead ventilate their lungs by **positive-pressure buccal pumping** — floor-of-mouth movements force air into the lungs, structurally the reverse mechanical strategy to the negative-pressure suction ventilation used by mammals.
+
+![Frog life cycle: eggs → embryo → tadpole with external gills for breathing → hindlegs appear → front legs appear as the tail shortens (living off food stored in the tail) → young frog → adult frog, illustrating the gill-to-lung transition at metamorphosis.](/ANATOMYPICS/amphibian-life-cycle-gill-to-lung-transition.jpg)
+*Source: user-sourced (originally via a metamorphosis-in-frog PDF). Exact match, explicitly labels the external-gill stage and traces the full metamorphic sequence to the adult (lung-breathing) form.*
 
 ### Amphibian Circulatory Structure
 
@@ -79,12 +99,7 @@ Thin, glandular, permeable (no scales in most adult amphibians, unlike fish or r
 
 **Static**
 
-- Bony fish gill arch with primary/secondary lamellae and countercurrent blood/water flow arrows
-- Operculum and buccal pumping mechanism
-- 2- vs. 3- vs. 4-chambered heart comparison, paired with the animator above
-- Freshwater vs. marine fish nephron/glomerulus comparison
-- Lateral line canal and neuromast structure
-- Amphibian life cycle showing the gill-to-lung transition at metamorphosis
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
 
 ## Practice Problems
 

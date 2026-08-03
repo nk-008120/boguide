@@ -18,11 +18,19 @@ syllabus_tags: ["IBO", "USABO", "evolution"]
 
 **Leigh Van Valen's Red Queen hypothesis** (1973, named for the Red Queen's line in *Through the Looking-Glass*, "it takes all the running you can do, to keep in the same place") proposes that species locked in an antagonistic coevolutionary relationship (predator-prey, host-parasite, competitor-competitor) must continuously evolve merely to maintain constant *relative* fitness against their evolving antagonist, since standing still while the antagonist improves is equivalent to falling behind. This directly explains why coevolutionary arms races tend toward continuous, open-ended escalation rather than settling at a stable endpoint: any improvement by one side directly degrades the other side's relative performance, restoring selective pressure for further counter-adaptation rather than removing it. The Red Queen dynamic is also a leading hypothesis for the evolutionary maintenance of sexual reproduction itself, on the logic that sexually-produced genetic novelty in a host lineage is specifically valuable for keeping pace with rapidly coevolving parasites, though this remains one hypothesis among several rather than a settled consensus explanation.
 
+![Red Queen dynamics between a host plant (Species 1) and an insect pest (Species 2): each species' ecological fitness rises as it evolves a new defensive/counter-adaptation, then declines again as the other species evolves its own counter-adaptation in response, in a continuing back-and-forth cycle — rather than either species settling at a stable, permanently higher fitness level, illustrating "running to stay in place"](/EVOLUTIONPICS/red-queen-concept-diagram.webp)
+*Source: ResearchGate, fig. 3, "The Red Queen hypothesis depicted in relation to how well a species is adapted to its [antagonist]" — note: shows fitness itself oscillating over time as each side's adaptations trade off, rather than the "trait values both rising while relative fitness stays flat" framing originally described, but illustrates the same underlying dynamic*
+
 ### Reciprocal Trait-Matching Arms Races
 
 The clearest documented coevolutionary arms races show a **matched escalation** in a specific, measurable trait on each side, allowing the reciprocal dynamic to be quantified directly rather than merely inferred:
 
 - **Rough-skinned newt (*Taricha granulosa*) and common garter snake (*Thamnophis sirtalis*)**: the newt produces **tetrodotoxin (TTX)**, a potent neurotoxin that blocks voltage-gated sodium channels, and geographically local garter snake populations have evolved resistance via specific amino-acid substitutions in the snake's own sodium channel gene, reducing TTX's binding affinity. Field data across multiple populations show newt toxicity and snake resistance are **geographically matched** — populations with the most toxic newts have the most resistant snakes, and vice versa — direct, quantifiable evidence of reciprocal escalation rather than a fixed, universal toxin/resistance level.
+
+*(No newt/snake TTX-binding-site diagram — none was found; the mechanism described above remains text-only on this page.)*
+
+![Phenotypic mismatch between garter snake resistance and newt toxicity (in TTX mg) across four population comparisons (Battle Creek, Upper Yuba River, Upper Tule River), each histogram showing the distribution of mismatch with 15th/50th/85th percentiles marked — geographic variation in how well-matched (or mismatched) the two traits are at each site, the underlying data behind the geographic-matching claim in the text](/EVOLUTIONPICS/newt-snake-geographic-matching.png)
+*Source: British Ecological Society journals (besjournals.onlinelibrary.wiley.com), doi 10.1111/1365-2656.13212*
 - **Crossbill (*Loxia* spp.) bill morphology and conifer cone structure**: crossbill bill depth and curvature is locally matched to the cone scale thickness of the local dominant conifer species, with reciprocal selection proposed on the conifer side favoring thicker, harder-to-extract cone scales in populations facing heavier seed predation, though the plant side of this specific arms race is less thoroughly confirmed than the newt-snake case above.
 
 Both cases share the same underlying diagnostic structure worth applying to any proposed coevolution scenario: a trait in species A imposes a specific cost on species B, a corresponding counter-trait in species B specifically mitigates that cost, and — critically — the *degree* of each trait varies together across populations or over time in a way a one-sided, non-reciprocal adaptation would not produce.
@@ -32,7 +40,14 @@ Both cases share the same underlying diagnostic structure worth applying to any 
 Coevolution does not only produce antagonistic escalation — reciprocal selection between species can instead produce tightly matched **mutualisms**, where each species' fitness comes to depend directly on the other's specific, coevolved trait:
 
 - **Fig (*Ficus* spp.) and fig wasp (Agaonidae) obligate pollination mutualism**: each fig species is typically pollinated by one (or a small number of) specific fig wasp species, and the relationship is bidirectionally obligate — the wasp cannot reproduce without entering a fig to lay eggs inside some of its flowers (in the process pollinating others), and many fig species cannot be pollinated by any other organism, so extinction of either partner would functionally end the relationship for both. The reciprocal match extends to the fig's internal flower structure and the wasp's body size/ovipositor length, precise enough that a given wasp species is often unable to enter and pollinate a fig species other than its coevolved partner.
+
+![Fig (Mammoni syconium, cf. pseudocarica) cut in cross-section, showing ostiolar bracts, male flowers, and short-style female flowers, with an inset of an emerging female fig wasp and its ovary — the dark-ovaried flowers visible in the cross-section are the ones containing developing fig wasps ("psenocarps")](/EVOLUTIONPICS/fig-wasp-pollination-mutualism.avif)
+*Source: W.P. Armstrong — **⚠ CONFIRMED COPYRIGHT**: this image carries a visible "© W.P. Armstrong" notice printed directly on it. Must not go on the public site without a license or replacement.*
+
 - **Yucca (*Yucca* spp.) and yucca moth (*Tegeticula* spp.)** show a parallel obligate pollination mutualism: the female moth actively packs pollen onto the yucca's stigma (unusual — most plant pollination is a side-effect of a visitor's foraging rather than an active behavior) and then lays eggs in the flower's ovary, with her larvae consuming only a fraction of the resulting seeds — a coevolved relationship stable specifically because the moth's fitness interest (enough surviving seeds to support her larvae, but a living plant to host future generations) is only satisfied by leaving most seeds intact, aligning the two species' reproductive interests rather than reducing the relationship to simple exploitation.
+
+![Yucca moth life cycle diagram: the adult moth gathers pollen from a yucca flower's ovary and lays eggs there; the eggs hatch into larvae alongside the plant's developing seeds inside the yucca pod; each larva bores a hole in the pod, drops to the ground, and pupates in the soil before emerging as an adult to search for new yucca flowers](/EVOLUTIONPICS/yucca-moth-pollination-mutualism.png)
+*Source: kidsgardening.org*
 
 Mutualistic coevolution of this obligate, tightly matched kind is a double-edged evolutionary outcome worth noting: it can produce highly efficient, specialized partnerships, but it also creates strong **coextinction risk** — because each partner's fitness now depends on a single specific counterpart rather than a flexible range of options, the loss of one obligate partner (e.g. through habitat loss or climate-driven range shift) can drive the other extinct as a direct consequence, a pattern of particular concern in conservation biology for narrowly specialized pollination mutualisms.
 
@@ -58,15 +73,14 @@ Mutualistic coevolution of this obligate, tightly matched kind is a double-edged
 **Interactive**
 
 - **Newt/snake geographic trait-matching map (interactive SVG/JS, no new library)** — a map of Pacific Northwest populations where clicking a location displays that population's newt toxicity level and garter snake resistance level side by side, letting the user directly discover the geographic correlation rather than being told it exists.
+
+{{< iframe src="/newt-snake-map.html" title="Newt/snake geographic trait-matching map" height="470px" >}}
+
 - **Red Queen relative-fitness simulator (Plotly)** — two co-evolving trait value curves (e.g. toxin level and resistance level) plotted over simulated generations, where each side's relative fitness is recalculated each round based on the gap between the two traits, showing fitness oscillating near a constant baseline despite both absolute trait values continuously increasing.
 
-**Static**
+{{< iframe src="/red-queen-simulator.html" title="Red Queen relative-fitness simulator" height="500px" >}}
 
-- Rough-skinned newt and garter snake diagram with tetrodotoxin binding site and resistance-conferring sodium channel mutation labeled
-- Geographic matching bar chart: newt toxicity vs. snake resistance across several sampled populations
-- Fig and fig wasp cross-section diagram showing wasp entry, oviposition sites, and pollination structures
-- Yucca flower and yucca moth diagram showing active pollen-packing behavior and egg-laying location
-- Red Queen concept diagram: two species' trait values both rising over time while relative fitness/gap stays roughly constant
+**Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here)*
 
 ## Practice Problems
 

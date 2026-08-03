@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dive Reflex Trigger Simulator | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  button.submerge {
+    background: #1d70a2; color: #fff; border: none; border-radius: 999px;
+    padding: 10px 22px; font-size: 0.9rem; font-weight: 700; cursor: pointer; display:block; margin: 0 auto 1rem auto;
+  }
+  button.submerge:disabled { opacity:0.6; cursor:not-allowed; }
+  svg text { font-family: 'Inter', system-ui, sans-serif; }
+  .readout { background:#eef2e6; border-radius: 12px; padding: 10px 14px; font-size: 0.85rem; margin-top: 0.8rem; }
+  .readout b { color:#2d6a4f; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Dive Reflex Trigger Simulator</h3>
+  <div class="subtitle">Click "Submerge" to trigger the mammalian dive reflex and watch heart rate drop and blood flow redirect toward the organs least tolerant of hypoxia.</div>
+  <button class="submerge" id="submergeBtn">Submerge</button>
+  <svg id="svgArea" viewBox="0 0 480 260" width="100%"></svg>
+  <div class="readout" id="readout">Heart rate: <b>90 bpm</b> (normal). Blood flow: normal distribution.</div>
+</div>
+<script>
+(function(){
+  var NS = "http://www.w3.org/2000/svg";
+  var svg = document.getElementById('svgArea');
+  var btn = document.getElementById('submergeBtn');
+  var readout = document.getElementById('readout');
+  var submerged = false;
+  var animTimer = null;
+  var hr = 90;
+
+  var organs = [
+    {name:'Brain', x:240, y:50, priority:'high'},
+    {name:'Heart', x:240, y:110, priority:'high'},
+    {name:'Skeletal muscle', x:120, y:180, priority:'low'},
+    {name:'Digestive organs', x:240, y:200, priority:'low'},
+    {name:'Skin', x:360, y:180, priority:'low'}
+  ];
+
+  function el(tag, attrs){
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs){ e.setAttribute(k, attrs[k]); }
+    return e;
+  }
+
+  function render(flowFraction){
+    svg.innerHTML = '';
+    var title = el('text', {x:240, y:20, 'font-size':13, 'font-weight':700, fill:'#1a472a', 'text-anchor':'middle'});
+    title.textContent = submerged ? 'Submerged — dive reflex active' : 'At the surface — normal circulation';
+    svg.appendChild(title);
+
+    organs.forEach(function(o){
+      var isPriority = o.priority === 'high';
+      // flowFraction: 0 = fully redirected (low-priority organs get minimal flow), 1 = normal flow everywhere
+      var radius = isPriority ? (18 + (1-flowFraction)*10) : (18 - (1-flowFraction)*8);
+      var fill = isPriority ? '#166534' : (flowFraction < 0.5 ? '#fca5a5' : '#93c5fd');
+      svg.appendChild(el('circle', {cx:o.x, cy:o.y, r: Math.max(8,radius), fill: fill, opacity: isPriority ? 1 : (0.4 + flowFraction*0.6)}));
+      var lab = el('text', {x:o.x, y:o.y + Math.max(8,radius) + 14, 'font-size':10.5, fill:'#334155', 'text-anchor':'middle', 'font-weight':600});
+      lab.textContent = o.name;
+      svg.appendChild(lab);
+    });
+
+    var hrLabel = el('text', {x:240, y:245, 'font-size':12, 'font-weight':700, fill:'#b91c1c', 'text-anchor':'middle'});
+    hrLabel.textContent = 'Heart rate: ' + Math.round(hr) + ' bpm';
+    svg.appendChild(hrLabel);
+  }
+
+  function playDive(){
+    if (animTimer) clearInterval(animTimer);
+    submerged = true;
+    btn.disabled = true;
+    btn.textContent = 'Diving...';
+    var frame = 0;
+    var totalFrames = 8;
+    animTimer = setInterval(function(){
+      frame++;
+      var progress = frame/totalFrames;
+      hr = 90 - progress*50; // drops to ~40 bpm
+      var flowFraction = 1 - progress; // 1 = normal, 0 = fully redirected
+      render(flowFraction);
+      readout.innerHTML = 'Heart rate: <b>' + Math.round(hr) + ' bpm</b> (bradycardia). Blood flow: redirected away from skin/gut/muscle toward brain/heart. Estimated O₂ conservation: <b>' + Math.round(progress*40) + '%</b> versus normal circulation.';
+      if (frame >= totalFrames){
+        clearInterval(animTimer);
+        animTimer = null;
+        btn.disabled = false;
+        btn.textContent = 'Surface (reset)';
+      }
+    }, 150);
+  }
+
+  function surface(){
+    if (animTimer) clearInterval(animTimer);
+    submerged = false;
+    hr = 90;
+    btn.textContent = 'Submerge';
+    render(1);
+    readout.innerHTML = 'Heart rate: <b>90 bpm</b> (normal). Blood flow: normal distribution.';
+  }
+
+  btn.addEventListener('click', function(){
+    if (submerged){
+      surface();
+    } else {
+      playDive();
+    }
+  });
+
+  render(1);
+})();
+</script>
+</body>
+</html>

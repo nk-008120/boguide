@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baroreceptor Reflex Simulator | BioGuide</title>
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js" charset="utf-8"></script>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .controls { display:flex; gap: 10px; margin-bottom: 0.8rem; }
+  button {
+    background: #2d6a4f; color: #fff; border: none; border-radius: 999px;
+    padding: 8px 18px; font-size: 0.85rem; font-weight: 600; cursor: pointer;
+  }
+  button:disabled { opacity:0.6; cursor:not-allowed; }
+  .readout { background:#eef2e6; border-radius: 12px; padding: 10px 14px; font-size: 0.82rem; margin-top: 0.8rem; min-height: 20px; }
+  .readout b { color:#2d6a4f; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Baroreceptor Reflex Simulator</h3>
+  <div class="subtitle">Press "Stand up suddenly" to trigger a transient blood-pressure drop and watch the baroreceptor reflex correct it in real relative time.</div>
+  <div class="controls">
+    <button id="triggerBtn">Stand up suddenly</button>
+  </div>
+  <div id="plot" style="width:100%; height:400px;"></div>
+  <div class="readout" id="readout">Press the button to trigger the event.</div>
+</div>
+<script>
+(function(){
+  var tMax = 16, N = 60;
+  var t = [], bp = [], hr = [];
+  for (var i=0;i<N;i++){
+    var tt = i/(N-1)*tMax;
+    t.push(tt);
+    var bpVal, hrVal;
+    if (tt < 2){
+      bpVal = 95; hrVal = 70;
+    } else if (tt < 3){
+      var p = (tt-2)/1;
+      bpVal = 95 - p*20;
+      hrVal = 70;
+    } else if (tt < 9){
+      var p2 = (tt-3)/6;
+      bpVal = 75 + p2*20;
+      hrVal = 70 + Math.sin(p2*Math.PI)*28;
+    } else {
+      bpVal = 95;
+      hrVal = 70;
+    }
+    bp.push(bpVal);
+    hr.push(hrVal);
+  }
+
+  var plotDiv = document.getElementById('plot');
+  var triggerBtn = document.getElementById('triggerBtn');
+  var readout = document.getElementById('readout');
+  var animTimer = null;
+
+  function baseLayout(){
+    return {
+      xaxis: {title:'Time (seconds)', range:[0,tMax], gridcolor:'#e9ecef'},
+      yaxis: {title:'Mean arterial pressure (mmHg)', range:[65,105], gridcolor:'#e9ecef'},
+      yaxis2: {title:'Heart rate (bpm)', overlaying:'y', side:'right', range:[60,110], showgrid:false},
+      legend: {orientation:'h', y:-0.2},
+      margin: {t:20, l:55, r:55, b:45},
+      plot_bgcolor:'#ffffff', paper_bgcolor:'#ffffff'
+    };
+  }
+
+  function annotationsFor(tt){
+    var anns = [];
+    if (tt >= 2){
+      anns.push({x:2.3, y:80, text:'BP falls — baroreceptor firing drops', showarrow:true, ax:30, ay:-30, font:{size:10}, bgcolor:'#fff8e7'});
+    }
+    if (tt >= 3.5){
+      anns.push({x:4.5, y:90, text:'Sympathetic ↑ / parasympathetic ↓', showarrow:true, ax:20, ay:-40, font:{size:10}, bgcolor:'#fff8e7'});
+    }
+    if (tt >= 8.5){
+      anns.push({x:9, y:96, text:'HR & TPR corrected — BP restored', showarrow:true, ax:20, ay:-30, font:{size:10}, bgcolor:'#dcfce7'});
+    }
+    return anns;
+  }
+
+  function renderStatic(){
+    Plotly.newPlot(plotDiv, [
+      {x:[0], y:[95], name:'Blood pressure (mmHg)', mode:'lines', line:{color:'#1a472a', width:3}},
+      {x:[0], y:[70], name:'Heart rate (bpm)', mode:'lines', line:{color:'#b45309', width:3, dash:'dot'}, yaxis:'y2'}
+    ], baseLayout(), {responsive:true, displayModeBar:false});
+  }
+
+  // Chunk the precomputed arrays into ~24 steps and append with extendTraces (cheap)
+  // rather than a full Plotly.react redraw every tick (which was too slow at fine granularity).
+  var chunkSize = 10;
+  var lastAnnotationKey = -1;
+
+  function playAnimation(){
+    if (animTimer) clearInterval(animTimer);
+    renderStatic();
+    var idx = 0;
+    readout.innerHTML = 'Standing up... watching blood pressure and heart rate respond.';
+    triggerBtn.disabled = true;
+    lastAnnotationKey = -1;
+    animTimer = setInterval(function(){
+      var nextIdx = Math.min(N, idx + chunkSize);
+      var xChunk = t.slice(idx, nextIdx);
+      var bpChunk = bp.slice(idx, nextIdx);
+      var hrChunk = hr.slice(idx, nextIdx);
+      Plotly.extendTraces(plotDiv, {x: [xChunk, xChunk], y: [bpChunk, hrChunk]}, [0, 1]);
+      var curT = t[nextIdx - 1];
+      var annKey = curT >= 8.5 ? 2 : curT >= 3.5 ? 1 : curT >= 2 ? 0 : -1;
+      if (annKey !== lastAnnotationKey){
+        lastAnnotationKey = annKey;
+        Plotly.relayout(plotDiv, {annotations: annotationsFor(curT)});
+      }
+      idx = nextIdx;
+      if (idx >= N){
+        clearInterval(animTimer);
+        animTimer = null;
+        triggerBtn.disabled = false;
+        readout.innerHTML = '<b>Reflex complete.</b> The baroreceptor reflex corrected blood pressure within seconds — much faster than the hormonal RAAS response.';
+      }
+    }, 120);
+  }
+
+  triggerBtn.addEventListener('click', playAnimation);
+  renderStatic();
+})();
+</script>
+</body>
+</html>

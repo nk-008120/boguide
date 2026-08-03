@@ -18,6 +18,9 @@ This closing page applies nearly every tool developed across this section — th
 
 Molecular sequence comparison places the split between the human lineage and the chimpanzee/bonobo lineage (our closest living relatives) at approximately **6–7 million years ago (mya)**, a date derived using the [molecular clock](../../4-biosystematics/molecular-systematics/) method — calibrating a known genome-wide substitution rate against independently fossil-dated primate divergences elsewhere in the tree, then applying that rate to the human-chimpanzee sequence difference. This molecular estimate is cross-checked against, and broadly consistent with, the oldest fossil hominin candidates (e.g. *Sahelanthropus tchadensis*, ~7 mya), illustrating the general principle that molecular and fossil dating are independent lines of evidence that should — and in this case do — converge on a similar answer.
 
+![Hominin phylogeny with a time scale from 8 million years ago to present, showing Sahelanthropus tchadensis and Orrorin tugenensis near the base, branching through Ardipithecus, Australopithecus anamensis/afarensis/garhi/africanus, Paranthropus, and the genus Homo (habilis, erectus, heidelbergensis, neanderthalensis, sapiens), with chimpanzees and bonobos as the outgroup and key adaptive transitions (bipedalism onset, brain-size increases, stone tool use, language capacity) labeled at the relevant branch points](/EVOLUTIONPICS/hominin-phylogeny-cladogram.jpg)
+*Source: user-provided (Facebook, "evolutionx" group)*
+
 ### Bipedalism's Skeletal Signature
 
 **Bipedalism** (habitual upright, two-legged locomotion) is the earliest-appearing derived hominin trait, evolving well before substantial brain-size increase, and is diagnosed from fossil skeletal material using several specific, named structural markers rather than any single feature alone:
@@ -27,19 +30,31 @@ Molecular sequence comparison places the split between the human lineage and the
 - **Valgus (knee) angle** — the femur angles medially from hip to knee, positioning the knees and feet nearly under the body's center of mass rather than directly under the wide-set hip sockets, which minimizes side-to-side torso sway during bipedal walking.
 - **Foot structure** — a non-opposable, in-line big toe and a longitudinal foot arch, adapted for a rigid push-off lever during walking rather than for grasping.
 
+![Top: chimpanzee, Australopithecus, "Pithecanthrope" (an older name for Homo erectus), and Homo sapiens skulls viewed from below, with an arrow tracking the foramen magnum's position moving progressively forward as bipedalism increases. Bottom: a chimpanzee's quadrupedal posture vs. a human's upright bipedal posture, with the head-to-spine alignment marked. Note: this image documents the foramen magnum position marker and overall posture clearly, but does not separately illustrate the other three markers described in the text (pelvis shape, valgus knee angle, foot structure) — no single image covering all four was found](/EVOLUTIONPICS/bipedalism-skeletal-markers.jpg)
+*Source: user-provided (Facebook, "Human Anatomy Study" group)*
+
 ***Australopithecus afarensis*** (~3.9–2.9 mya, most famously represented by the "Lucy" skeleton) shows all four markers clearly, confirming committed bipedalism well before the substantial brain-size increase associated with genus *Homo* — direct fossil evidence against the historically intuitive but incorrect assumption that large brains evolved first and drove subsequent bipedalism, rather than the reverse sequence actually documented in the fossil record.
 
 ### The Encephalization Trend
 
 Brain size relative to body size (**encephalization**) increases substantially across the hominin fossil sequence, but the trend is better measured by the **encephalization quotient (EQ)** — brain size relative to the value predicted for an animal of that body size, correcting for the general biological pattern that larger-bodied animals tend to have larger (but not proportionally larger) brains — than by raw brain volume alone, since body size itself also changed across hominin evolution. Approximate cranial capacities across key taxa illustrate the trend: *Australopithecus afarensis* (~400–500 cm³, within the modern chimpanzee range), *Homo habilis* (~600–650 cm³), *Homo erectus* (~900–1100 cm³, alongside evidence of early controlled fire use and more sophisticated Acheulean stone tools), *Homo neanderthalensis* (~1200–1750 cm³, on average comparable to or exceeding modern humans), and *Homo sapiens* (~1350 cm³ average). The trend is not perfectly linear or represented by a single evolving lineage, but the ordered increase across the broad hominin sequence is one of the most robustly documented trends in the vertebrate fossil record.
 
+![Bar chart of estimated cranial capacity (mL) with error bars across Australopithecus afarensis (~460), Homo habilis (~610), Homo erectus (~965), Homo heidelbergensis (~1230), Homo neanderthalensis (~1430), and Homo sapiens (~1470), in chronological order — including Homo heidelbergensis as a bonus taxon beyond the five discussed in the text](/EVOLUTIONPICS/hominin-cranial-capacity-chart.webp)
+*Source: user-provided (specific source not identified)*
+
 ### The Genus *Homo* and Out-of-Africa
 
 Multiple *Homo* species are documented across the Pleistocene, including *Homo habilis* (earliest recognized stone tool association), *Homo erectus* (the first hominin confirmed to have dispersed out of Africa into Asia, ~1.8 mya), *Homo neanderthalensis* (a distinct lineage occupying Europe and western Asia, diverging from the modern human lineage substantially earlier than either species' own origin), and *Homo sapiens*. The **Out-of-Africa model** (also called the "recent African origin" model), now the dominant, evidence-supported model, holds that anatomically modern *Homo sapiens* evolved in Africa (fossil evidence, e.g. Jebel Irhoud material, pushing the earliest anatomically modern fossil evidence to roughly 300,000 years ago) and subsequently dispersed worldwide, replacing (with limited interbreeding, below) other contemporary hominin populations such as Neanderthals and Denisovans, rather than modern humans evolving in parallel from geographically separate archaic populations across the world (the competing, now largely rejected, multiregional hypothesis). Key supporting evidence includes: **mitochondrial DNA (mtDNA) diversity**, which is highest among African populations and decreases with distance from Africa (consistent with a population bottleneck effect — see [Genetic Drift, Gene Flow & Mutation](../Genetic-Drift-Gene-Flow-and-Mutation/) — accumulating at each successive founding migration further from the African origin) and coalesces, when traced backward, to a most recent common maternal ancestor ("Mitochondrial Eve") estimated to have lived in Africa; and the fossil dispersal sequence itself, with the oldest anatomically modern human fossils consistently found in Africa and progressively younger dates at increasing distance from it.
 
+![World map of early human migration routes out of Africa, with approximate dates at each major geographic stage (e.g. ~70,000 years before present into the Middle East, progressively later dates of ~45,000–14,000 YBP into Europe, Asia, Australia, and the Americas)](/EVOLUTIONPICS/out-of-africa-dispersal-map.jpg)
+*Source: World History Encyclopedia (worldhistory.org)*
+
 ### Neanderthal Admixture
 
-Ancient DNA sequencing (extracting and sequencing DNA directly from Neanderthal fossil remains) has directly confirmed that modern non-African human populations carry approximately **1–2% Neanderthal-derived DNA**, demonstrating that dispersing *Homo sapiens* populations interbred with Neanderthals upon contact in Eurasia rather than experiencing total reproductive isolation from them — a genuinely surprising, comparatively recent (21st-century) result that revised the simplest version of the Out-of-Africa model, which had originally proposed complete replacement with no interbreeding. This finding illustrates a broader lesson from this section worth carrying forward: [Species Concepts](../../4-biosystematics/species-concepts/) already established that some interbreeding between distinct, differently-adapted populations does not necessarily collapse them into a single species classification — Neanderthals and modern humans are conventionally still treated as distinct (sub)species/taxa despite this confirmed historical admixture, a genuinely debated edge case of exactly the kind that page's discussion of hybrid zones anticipates.
+Ancient DNA sequencing (extracting and sequencing DNA directly from Neanderthal fossil remains) has directly confirmed that modern non-African human populations carry approximately **1–2% Neanderthal-derived DNA**, demonstrating that dispersing *Homo sapiens* populations interbred with Neanderthals upon contact in Eurasia rather than experiencing total reproductive isolation from them — a genuinely surprising, comparatively recent (21st-century) result that revised the simplest version of the Out-of-Africa model, which had originally proposed complete replacement with no interbreeding.
+
+![D-statistic admixture test results comparing pairs of human populations (San, LWK, Hadza, Pygmy, YRI, MKK, Sandawe, ASW, and others) against Neanderthal sequence data — consistently negative D values across non-African population comparisons indicate excess allele-sharing with Neanderthals relative to African populations, the formal statistical evidence underlying the ~1-2% admixture estimate. Note: this shows the underlying D-statistic test data rather than a simple percentage-by-population bar chart as originally envisioned, but is the actual evidence the percentage claim is derived from](/EVOLUTIONPICS/neanderthal-admixture-percentage.webp)
+*Source: ResearchGate, fig. 2, "Neanderthal admixture with modern human populations: A) D statistic for pairwise..."* This finding illustrates a broader lesson from this section worth carrying forward: [Species Concepts](../../4-biosystematics/species-concepts/) already established that some interbreeding between distinct, differently-adapted populations does not necessarily collapse them into a single species classification — Neanderthals and modern humans are conventionally still treated as distinct (sub)species/taxa despite this confirmed historical admixture, a genuinely debated edge case of exactly the kind that page's discussion of hybrid zones anticipates.
 
 ## Comparative Structures
 
@@ -65,15 +80,14 @@ Ancient DNA sequencing (extracting and sequencing DNA directly from Neanderthal 
 **Interactive**
 
 - **Bipedalism skeletal-marker comparator (interactive SVG/JS, no new library)** — side-by-side quadrupedal-ape and bipedal-hominin skeletons where the user clicks each of the four named markers (foramen magnum position, pelvis shape, valgus angle, foot structure) to see the two forms directly contrasted with the functional consequence explained.
+
+{{< iframe src="/bipedalism-marker-comparator.html" title="Bipedalism skeletal-marker comparator" height="500px" >}}
+
 - **Out-of-Africa migration and mtDNA diversity map (Plotly or interactive SVG/JS)** — a world map showing the modeled dispersal routes out of Africa with a corresponding mtDNA-diversity-by-region bar chart underneath, letting the user connect declining diversity directly to distance from the African origin point.
 
-**Static**
+{{< iframe src="/out-of-africa-mtdna-explorer.html" title="Out-of-Africa migration and mtDNA diversity explorer" height="500px" >}}
 
-- Hominin cranial capacity bar chart across the taxa in the table above, in chronological order
-- Bipedalism skeletal-marker diagram: foramen magnum, pelvis, knee angle, and foot structure compared between a quadrupedal ape and a bipedal hominin
-- Hominin phylogeny cladogram showing *Australopithecus*, *Homo habilis*, *Homo erectus*, *Homo neanderthalensis*, and *Homo sapiens* with approximate branch dates
-- Out-of-Africa dispersal map with approximate migration dates at each major geographic stage
-- Neanderthal admixture diagram showing approximate percentage Neanderthal-derived DNA across modern human population groups
+**Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here)*
 
 ## Practice Problems
 

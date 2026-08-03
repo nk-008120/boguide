@@ -28,7 +28,13 @@ The epidermis is stratified squamous epithelium (see [Body Plans](../body-plans/
 
 This basale-to-corneum progression is a single continuous process, **keratinization**: a cell born at the basale migrates outward over roughly 2–4 weeks, progressively filling with keratin, losing its nucleus and organelles, and finally becoming a dead, flattened, keratin-filled sac that is mechanically tough and metabolically inert — the structural basis of the epidermis's barrier function. Thin skin (most of the body) has the same layer sequence minus the stratum lucidum, and a thinner stratum corneum.
 
+![Full-thickness skin block showing epidermis, dermis, and subcutaneous tissue with a hair follicle (A), and a zoomed view of the epidermis with all five strata labeled: stratum corneum, lucidum, granulosum, spinosum, and basale (B).](/ANATOMYPICS/skin-cross-section-five-strata.png)
+*Source: user-sourced textbook-style figure. Exact match, both the full-thickness overview and the five-strata close-up.*
+
 **Epidermal cell types**, beyond the keratinocytes that make up the bulk of every layer: **melanocytes** (stratum basale, produce the pigment melanin in organelles called melanosomes, then transfer melanosomes to surrounding keratinocytes via dendritic processes — melanin content, not melanocyte number, which is roughly constant across skin tones, is what differs between individuals); **Langerhans cells** (stratum spinosum, dendritic, antigen-presenting immune cells — the skin's front-line immune surveillance); **Merkel cells** (stratum basale, associated with sensory nerve endings, function in light touch discrimination).
+
+![Top-left inset: a dendritic melanocyte (brown) transferring melanosomes (black granules) directly to surrounding keratinocytes. Main panel: a separate, more technical diagram of intracellular melanosome transport within a melanocyte, showing dynein motor proteins carrying melanosomes along microtubules toward the cell body.](/ANATOMYPICS/melanosome-transfer-melanocyte-keratinocyte.png)
+*Source: user-sourced research figure. Only the small inset actually shows transfer to keratinocytes as described in the text; the larger main diagram illustrates a related but distinct process — intracellular dynein/microtubule-based melanosome trafficking within the melanocyte itself, not the transfer step. Included because the inset is a genuine match; captioned honestly about the mismatch in the main panel.*
 
 ### Dermis
 
@@ -36,6 +42,9 @@ Beneath the epidermis, separated by the basement membrane, the dermis is dense i
 
 - **Papillary layer** — thin, loose connective tissue, forms finger-like **dermal papillae** projecting into the epidermis (increasing the interface surface area and mechanical interlock between the two layers — the structural basis of fingerprints, where papillae are arranged in patterned ridges); rich in capillary loops and Meissner's corpuscles (see below).
 - **Reticular layer** — thicker, dense irregular connective tissue with interwoven collagen and elastin fibers providing tensile strength and elasticity; contains most of the skin's glands, hair follicles, and deeper sensory receptors.
+
+![Histology section showing the epidermis sitting atop the papillary dermis (finger-like projections interlocking with the epidermal underside) and the deeper, denser reticular dermis.](/ANATOMYPICS/dermal-papillae-epidermal-junction.jpg)
+*Source: user-sourced histology figure. Clear match — the papillary/reticular dermis distinction and the interlocking papillae are both visible.*
 
 **Cutaneous sensory receptors**, each structurally specialized for a distinct stimulus modality — a favorite IBO comparison table:
 
@@ -47,6 +56,9 @@ Beneath the epidermis, separated by the basement membrane, the dermis is dense i
 | Ruffini endings | Deep dermis | Skin stretch, sustained pressure |
 | Free nerve endings | Throughout epidermis and dermis | Pain, temperature |
 
+![All five cutaneous receptor types positioned at their depths in a skin cross-section: Merkel's disk and Meissner's corpuscle near the epidermal-dermal boundary, Ruffini ending and Pacinian corpuscle deeper in the dermis, plus a bonus sixth receptor type (Krause end bulb) not covered in the text.](/ANATOMYPICS/cutaneous-receptors-by-depth.png)
+*Source: OpenStax-style figure (via Lumen Learning). Exact match for all five receptor types in the table above; includes one extra receptor type (Krause end bulb) beyond this page's scope.*
+
 ### Hypodermis (Subcutaneous Layer)
 
 Not part of the skin proper, but adipose-rich connective tissue anchoring the dermis to underlying fascia/muscle, providing thermal insulation, mechanical cushioning, and energy storage; thickness varies substantially by body region and is hormonally regulated (a physiology point, noted here for its direct structural consequence — regional variation in skin mobility and cushioning).
@@ -55,9 +67,15 @@ Not part of the skin proper, but adipose-rich connective tissue anchoring the de
 
 A hair follicle is an epidermal invagination into the dermis, structured around a **hair bulb** at its base, which encloses the **dermal papilla** (a connective-tissue projection carrying the blood supply that nourishes the actively dividing **hair matrix** cells surrounding it). Matrix cells proliferate and keratinize (the same keratinization process as the epidermis, but producing hard, compact hair keratin rather than the epidermis's softer keratin) to form the hair shaft, which grows outward through the follicle. Each follicle cycles through three phases: **anagen** (active growth, lasting years on the scalp), **catagen** (brief regression, the follicle base degenerates), and **telogen** (resting, the old hair is eventually shed as a new anagen phase begins beneath it) — follicles cycle asynchronously, which is why hair loss is normally continuous and unnoticeable rather than occurring in synchronized waves. A small band of smooth muscle, the **arrector pili**, attaches to each follicle at an angle; its contraction (sympathetically controlled) pulls the hair more upright and dimples the skin surface ("goosebumps") — in animals with a fuller coat this traps an insulating air layer, a thermoregulatory function largely vestigial in humans.
 
+![Detailed hair follicle cross-section labeling the hard-keratin shaft (medulla, cortex, hair cuticle), the surrounding root sheaths and glassy membrane, the matrix and hair root at the follicle base, the connective tissue papilla, and the adjacent arrector pili muscle and sebaceous gland.](/ANATOMYPICS/hair-follicle-structure.png)
+*Source: user-sourced textbook-style figure. Exceeds spec — labels well beyond matrix/papilla/arrector pili, including the full root sheath structure.*
+
 ### Nail Structure
 
 The **nail plate** (a flattened sheet of hard keratin, structurally continuous with hair keratin production logic) sits on the **nail bed**, growing from the **nail matrix** (a proliferative region beneath the proximal nail fold, visible externally as the pale crescent-shaped **lunula**), with the **eponychium (cuticle)** sealing the proximal edge against infection and the **hyponychium** sealing the distal free edge.
+
+![Labeled nail structure from two views: surface view showing the free edge, lateral nail folds, lunula, cuticle, and eponychium (proximal nail fold), and a longitudinal section showing the germinal matrix, nail bed, and nail fold.](/ANATOMYPICS/nail-structure-cross-section.jpg)
+*Source: Wikimedia Commons-style figure (user-sourced). Exact match — covers every landmark named in the text (matrix, bed, lunula, eponychium, hyponychium) plus additional surface-anatomy labels.*
 
 ### Glands
 
@@ -90,12 +108,7 @@ The epidermis-over-dermis plan and keratinization process described here are sha
 
 **Static**
 
-- Full skin cross-section with all five epidermal strata labeled
-- Melanocyte-to-keratinocyte melanosome transfer, shown as a sequence
-- Dermal papillae at the epidermal-dermal junction (tied to fingerprint ridge formation)
-- The five cutaneous receptor types positioned by depth, side by side
-- Hair follicle structure with matrix/papilla/arrector pili labeled
-- Nail structure cross-section (matrix/bed/lunula/eponychium/hyponychium)
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
 
 ## Practice Problems
 

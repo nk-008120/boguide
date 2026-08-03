@@ -22,6 +22,9 @@ Every region of the tract shares four concentric layers, innermost to outermost,
 
 **Teeth** are anchored in sockets (alveoli) of the maxilla/mandible by the **periodontal ligament**. Each tooth has a **crown** (exposed, capped by **enamel** — the hardest substance in the body, acellular and avascular, unable to regenerate if damaged) and a **root** (embedded in bone, covered by **cementum** rather than enamel); beneath enamel/cementum, **dentin** (a living, mineralized tissue, softer than enamel) forms the bulk of the tooth, surrounding a central **pulp cavity** (blood vessels, nerves, connective tissue). Adult humans have 32 teeth, heterodont (see [Mammalian Comparative Anatomy](../mammalian-comparative-anatomy/) for the broader mammalian pattern): incisors (cutting), canines (tearing), premolars and molars (grinding).
 
+![Tooth cross-section labeling crown/neck/root, enamel, dentin, cementum, pulp chamber (blood vessels and nerves), gingiva, and jaw bone.](/ANATOMYPICS/tooth-cross-section-enamel-dentin-pulp.png)
+*Source: user-sourced (originally via storymd.com). Exceeds spec with crown/neck/root regions and gingiva/jaw bone context.*
+
 Three paired **salivary glands** deliver secretions via ducts into the oral cavity: **parotid** (largest, anterior to the ear, serous secretion, high enzyme content), **submandibular** (mixed serous/mucous), **sublingual** (mostly mucous). Saliva begins starch digestion (via salivary amylase) and lubricates food for swallowing. The **tongue** (skeletal muscle, see [Human Muscular System](../human-muscular-system/)) manipulates food and bears **taste buds** clustered on papillae.
 
 ### Esophagus and Swallowing
@@ -39,6 +42,9 @@ Grossly divided into the **cardia** (adjacent to the LES), **fundus** (superior 
 | Chief cells | Base of gland | Pepsinogen (inactive) | Converted to active pepsin by the acidic environment HCl creates — a structural safeguard against the stomach digesting its own protein-based secretory cells |
 | G cells | Base of gland (pyloric region) | Gastrin (hormone, into blood, not the lumen) | Stimulates parietal cell HCl secretion |
 
+![A gastric (oxyntic) gland in cross-section, from the mucus-layer opening down through surface mucus cells, mucus neck cells, parietal cells, an endocrine cell, to chief cells at the base.](/ANATOMYPICS/gastric-gland-four-cell-types.jpg)
+*Source: user-sourced (originally attempted via a ScienceDirect topic page). Shows all four cell types from the table above, though the endocrine cell is labeled generically rather than specifically as a "G cell."*
+
 The stomach epithelium itself is protected from its own acidic, protein-digesting contents by a thick alkaline mucus layer and rapid epithelial cell turnover — a structural, not just chemical, defense.
 
 ### Small Intestine
@@ -47,17 +53,32 @@ Three regions with distinguishing structural features, worth naming individually
 
 Absorptive surface amplification, structurally layered: **plicae circulares** (circular mucosal/submucosal folds, visible grossly) → **villi** (finger-like mucosal projections, each containing a capillary network for nutrient absorption and a central lymphatic **lacteal** for fat absorption) → **microvilli** (brush border on individual absorptive epithelial cells). Between villi, the mucosa dips into **crypts of Lieberkühn**, containing proliferative stem cells (replenishing the rapidly turned-over epithelium) and secretory cells.
 
+![Small/large intestine histology: the plicae circulares→villi→microvilli surface-amplification hierarchy, then four real histology samples side by side — duodenum (with Brunner's glands visible in the submucosa), jejunum (villi, lamina propria, goblet cells), ileum (a Peyer's patch clearly circled), and large intestine (goblet cells of the tubular gland, no villi).](/ANATOMYPICS/small-intestine-duodenum-jejunum-ileum-comparison.gif)
+*Source: user-sourced (originally via ditki.com). Excellent match — directly shows each region's unique distinguishing marker (Brunner's glands, Peyer's patch) named in the text, side by side with the absorptive-hierarchy diagram.*
+
+![A single villus in cross-section: epithelium (absorptive/goblet/enteroendocrine cells), lamina propria, a central lacteal, and a surrounding blood capillary network fed by an arteriole and drained by a venule, with a lymph vessel alongside.](/ANATOMYPICS/villus-microvillus-lacteal-structure.jpg)
+*Source: user-sourced (originally attempted via a ScienceDirect topic page). Exact match — the lacteal and capillary network are both clearly shown and labeled.*
+
 ### Large Intestine
 
 Begins at the **cecum** (a blind pouch, bearing the **vermiform appendix** — lymphoid tissue of debated but likely immune/microbiome-reservoir function), continuing through the **ascending, transverse, descending, and sigmoid colon** to the **rectum** and **anal canal** (bearing an internal involuntary smooth-muscle sphincter and an external voluntary skeletal-muscle sphincter — a structural pairing directly analogous to the LES/pyloric-sphincter pattern of involuntary control, but here paired with a voluntary override). Structurally distinct from the small intestine: no villi (absorptive surface reduced, since the primary remaining job is water/electrolyte reabsorption and waste consolidation, not nutrient absorption), and the longitudinal muscle layer is gathered into three thickened bands, the **teniae coli**, whose tonic contraction gathers the wall into pouches, **haustra** — a distinctive gross-anatomical signature of the colon on imaging or a specimen. The colon houses a dense resident microbial population (the gut microbiome), structurally supported by this large, slow-transit surface, contributing to fermentation of otherwise-undigested material and synthesis of some vitamins.
+
+![Full colon gross anatomy: cecum, ileal orifice, vermiform appendix, ascending/transverse/descending colon, sigmoid colon, rectum, with all three teniae coli (free, omental, mesocolic) and haustra clearly labeled throughout.](/ANATOMYPICS/colon-teniae-coli-haustra.jpg)
+*Source: a Netter Atlas illustration (signature visible in the image), user-sourced originally via a ScienceDirect topic page. **Likely copyright** — Netter Atlas figures are Elsevier-copyrighted; confirm licensing basis or replace before public deployment. Exceeds spec — shows all three teniae coli bands, not just one.*
 
 ### Liver
 
 The functional and structural unit is the **hepatic lobule**: a roughly hexagonal arrangement of **hepatocyte** plates radiating from a central vein, with a **portal triad** (hepatic artery branch, hepatic portal vein branch, bile duct branch) at each of the hexagon's corners. Blood from both the hepatic artery (oxygenated, ~25% of liver blood flow) and the hepatic portal vein (nutrient-rich, deoxygenated, draining the GI tract — ~75% of flow, meaning nearly everything absorbed by the small intestine passes through the liver before reaching general circulation) mixes and flows through **sinusoids** (large, fenestrated capillary-like channels, see [Human Circulatory System](../human-circulatory-system/)) past hepatocyte plates toward the central vein — the reverse direction to bile flow, which moves from hepatocytes into small **bile canaliculi** between cells, then outward to the bile duct at the portal triad. **Kupffer cells** (specialized resident macrophages) line the sinusoids, filtering the blood of pathogens/debris — a direct immune function tied to the liver's position downstream of the entire GI tract's absorbed contents.
 
+![Hepatic lobule structure zoomed from the whole liver down to a single lobule: central vein, radiating plates of hepatocytes, sinusoids, and the portal triad (portal venule, portal arteriole, bile duct) at the lobule's edges, with blood flow arrows from the portal triad toward the central vein.](/ANATOMYPICS/hepatic-lobule-portal-triad-blood-bile-flow.webp)
+*Source: user-sourced (originally via storymd.com). Blood flow direction (portal triad → central vein) is clearly shown via the interlobular vein arrow; bile canaliculus flow direction (the opposite way, toward the bile duct) isn't separately arrowed in this crop.*
+
 ### Gallbladder and Pancreas
 
 The **gallbladder**, a small muscular sac beneath the liver, stores and concentrates bile (produced continuously by the liver) between meals, releasing it via the **cystic duct** (joining the **common hepatic duct** to form the **common bile duct**) into the duodenum when stimulated. The **pancreas** has a dual structural identity: the vast majority of its tissue is **exocrine**, organized into grape-like clusters (**acini**) of enzyme-secreting cells draining via a duct system into the **pancreatic duct**, which joins the common bile duct at the hepatopancreatic ampulla; scattered through this exocrine tissue are small, discrete **islets of Langerhans** — endocrine tissue (structurally distinct clusters, not connected to the duct system, secreting hormones — insulin, glucagon — directly into the bloodstream) that make up under 2% of pancreatic mass but perform a completely separate function from the surrounding exocrine acini.
+
+![Pancreatic tissue showing exocrine acini surrounding an islet of Langerhans, with alpha cells (glucagon), beta cells (insulin/amylin), and D cells (somatostatin) identified, alongside a real histology micrograph of an islet outlined among the surrounding exocrine tissue.](/ANATOMYPICS/pancreas-acini-islets-of-langerhans.png)
+*Source: Dee Unglaub Silverthorn,* Human Physiology: An Integrated Approach*. Commercial textbook figure — confirm licensing basis before public deployment. Exceeds spec with specific islet cell subtypes and their hormones.*
 
 ### Peritoneum
 
@@ -84,13 +105,7 @@ The four-layer GI tract wall plan, and the accessory-gland (liver/pancreas) arra
 
 **Static**
 
-- Tooth cross-section (enamel/dentin/pulp/root)
-- Gastric gland with all four cell types labeled
-- Small intestine regional comparison (duodenum/jejunum/ileum), each region's unique structural marker highlighted
-- Villus/microvillus structure with the lacteal shown
-- Colon gross anatomy showing teniae coli and haustra
-- Hepatic lobule with the portal triad, and arrows showing sinusoidal blood flow direction vs. bile canaliculus flow direction (opposite)
-- Pancreas acini and islets of Langerhans side by side, duct system vs. direct-to-bloodstream secretion contrasted
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
 
 ## Practice Problems
 

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hardy-Weinberg Calculator | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .tabs { display: flex; gap: 8px; margin-bottom: 1rem; }
+  .tab-btn {
+    flex: 1;
+    padding: 8px 10px;
+    border-radius: 999px;
+    border: 2px solid #cbd5e1;
+    background: #f8fafc;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #475569;
+  }
+  .tab-btn.active { background: #1d70a2; border-color: #1d70a2; color: #fff; }
+  .panel { display: none; }
+  .panel.active { display: block; }
+  .row { display: flex; gap: 10px; margin-bottom: 10px; align-items: center; }
+  .row label { flex: 0 0 130px; font-size: 0.85rem; font-weight: 600; }
+  .row input[type=number] { flex: 1; padding: 6px 10px; border-radius: 8px; border: 1px solid #cbd5e1; font-size: 0.9rem; }
+  .row input[type=range] { flex: 1; }
+  #pqReadout { font-size: 0.9rem; margin: 10px 0; background: #f1f5f9; border-radius: 10px; padding: 10px 14px; }
+  #pqReadout b { color: #1d70a2; }
+  .chart { display: flex; gap: 18px; align-items: flex-end; height: 160px; margin-top: 1.2rem; padding: 0 10px; }
+  .geno-col { flex: 1; text-align: center; }
+  .bars { display: flex; gap: 6px; align-items: flex-end; height: 130px; justify-content: center; }
+  .bar { width: 26px; border-radius: 4px 4px 0 0; transition: height 0.25s; position: relative; }
+  .bar.observed { background: #94a3b8; }
+  .bar.predicted { background: #2d6a4f; }
+  .bar-val { position: absolute; top: -18px; left: 0; right: 0; font-size: 0.68rem; text-align: center; color: #334155; }
+  .geno-label { font-size: 0.78rem; font-weight: 700; margin-top: 6px; color: #334155; }
+  .legend { display: flex; gap: 16px; justify-content: center; margin-top: 10px; font-size: 0.75rem; color: #4b5563; }
+  .legend span { display: inline-flex; align-items: center; gap: 5px; }
+  .swatch { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Hardy-Weinberg Calculator</h3>
+  <div class="subtitle">Enter genotype counts from a real sample, or set p directly, to compare observed vs. HWE-predicted genotype proportions.</div>
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="counts">From genotype counts</button>
+    <button class="tab-btn" data-tab="p">From allele frequency p</button>
+  </div>
+  <div class="panel active" id="panel-counts">
+    <div class="row"><label>AA count</label><input type="number" id="ccAA" value="64" min="0"></div>
+    <div class="row"><label>Aa count</label><input type="number" id="ccAa" value="32" min="0"></div>
+    <div class="row"><label>aa count</label><input type="number" id="ccaa" value="4" min="0"></div>
+  </div>
+  <div class="panel" id="panel-p">
+    <div class="row"><label>p = <span id="pVal">0.50</span></label><input type="range" id="pSlider" min="0" max="1" step="0.01" value="0.5"></div>
+  </div>
+  <div id="pqReadout"></div>
+  <div class="chart" id="chart"></div>
+  <div class="legend">
+    <span><span class="swatch" style="background:#94a3b8;"></span>Observed</span>
+    <span><span class="swatch" style="background:#2d6a4f;"></span>HWE-predicted</span>
+  </div>
+</div>
+<script>
+(function(){
+  var tabs = document.querySelectorAll('.tab-btn');
+  var panels = { counts: document.getElementById('panel-counts'), p: document.getElementById('panel-p') };
+  var pqReadout = document.getElementById('pqReadout');
+  var chart = document.getElementById('chart');
+  var mode = 'counts';
+
+  tabs.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      tabs.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      mode = btn.dataset.tab;
+      panels.counts.classList.toggle('active', mode === 'counts');
+      panels.p.classList.toggle('active', mode === 'p');
+      update();
+    });
+  });
+
+  ['ccAA','ccAa','ccaa'].forEach(function(id){
+    document.getElementById(id).addEventListener('input', update);
+  });
+  var pSlider = document.getElementById('pSlider');
+  var pValLabel = document.getElementById('pVal');
+  pSlider.addEventListener('input', function(){
+    pValLabel.textContent = parseFloat(pSlider.value).toFixed(2);
+    update();
+  });
+
+  function makeBarPair(genoLabel, obsPct, predPct, obsN, predN, showObserved){
+    var col = document.createElement('div');
+    col.className = 'geno-col';
+    var bars = document.createElement('div');
+    bars.className = 'bars';
+    if (showObserved){
+      var obsBar = document.createElement('div');
+      obsBar.className = 'bar observed';
+      obsBar.style.height = Math.max(2, obsPct) + 'px';
+      var obsLabel = document.createElement('div');
+      obsLabel.className = 'bar-val';
+      obsLabel.textContent = obsN;
+      obsBar.appendChild(obsLabel);
+      bars.appendChild(obsBar);
+    }
+    var predBar = document.createElement('div');
+    predBar.className = 'bar predicted';
+    predBar.style.height = Math.max(2, predPct) + 'px';
+    var predLabel = document.createElement('div');
+    predLabel.className = 'bar-val';
+    predLabel.textContent = predN;
+    predBar.appendChild(predLabel);
+    bars.appendChild(predBar);
+    col.appendChild(bars);
+    var label = document.createElement('div');
+    label.className = 'geno-label';
+    label.textContent = genoLabel;
+    col.appendChild(label);
+    return col;
+  }
+
+  function update(){
+    var p, q, N, obsAA, obsAa, obsaa;
+    if (mode === 'counts'){
+      obsAA = parseFloat(document.getElementById('ccAA').value) || 0;
+      obsAa = parseFloat(document.getElementById('ccAa').value) || 0;
+      obsaa = parseFloat(document.getElementById('ccaa').value) || 0;
+      N = obsAA + obsAa + obsaa;
+      if (N <= 0){ pqReadout.innerHTML = 'Enter at least one genotype count.'; chart.innerHTML=''; return; }
+      p = (2*obsAA + obsAa) / (2*N);
+      q = 1 - p;
+    } else {
+      p = parseFloat(pSlider.value);
+      q = 1 - p;
+      N = 100;
+      obsAA = null; obsAa = null; obsaa = null;
+    }
+    var predAA = p*p, predAa = 2*p*q, predaa = q*q;
+    pqReadout.innerHTML = '<b>p</b> = ' + p.toFixed(3) + '&nbsp;&nbsp; <b>q</b> = ' + q.toFixed(3) +
+      ' &nbsp;&nbsp;|&nbsp;&nbsp; HWE-predicted: <b>p&sup2;</b> = ' + predAA.toFixed(3) +
+      ', <b>2pq</b> = ' + predAa.toFixed(3) + ', <b>q&sup2;</b> = ' + predaa.toFixed(3);
+
+    chart.innerHTML = '';
+    var maxBarPx = 120;
+    var showObserved = mode === 'counts';
+    if (showObserved){
+      var obsFreqAA = obsAA/N, obsFreqAa = obsAa/N, obsFreqaa = obsaa/N;
+      var maxFreq = Math.max(obsFreqAA, obsFreqAa, obsFreqaa, predAA, predAa, predaa, 0.01);
+      chart.appendChild(makeBarPair('AA', obsFreqAA/maxFreq*maxBarPx, predAA/maxFreq*maxBarPx, obsAA, Math.round(predAA*N), true));
+      chart.appendChild(makeBarPair('Aa', obsFreqAa/maxFreq*maxBarPx, predAa/maxFreq*maxBarPx, obsAa, Math.round(predAa*N), true));
+      chart.appendChild(makeBarPair('aa', obsFreqaa/maxFreq*maxBarPx, predaa/maxFreq*maxBarPx, obsaa, Math.round(predaa*N), true));
+    } else {
+      var maxFreq2 = Math.max(predAA, predAa, predaa, 0.01);
+      chart.appendChild(makeBarPair('AA', 0, predAA/maxFreq2*maxBarPx, 0, predAA.toFixed(3), false));
+      chart.appendChild(makeBarPair('Aa', 0, predAa/maxFreq2*maxBarPx, 0, predAa.toFixed(3), false));
+      chart.appendChild(makeBarPair('aa', 0, predaa/maxFreq2*maxBarPx, 0, predaa.toFixed(3), false));
+    }
+  }
+
+  update();
+})();
+</script>
+</body>
+</html>

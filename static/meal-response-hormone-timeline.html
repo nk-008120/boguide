@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meal-Response Hormone Timeline | BioGuide</title>
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js" charset="utf-8"></script>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .toggles { display:flex; gap: 14px; margin-bottom: 0.6rem; font-size: 0.82rem; flex-wrap:wrap; }
+  .toggles label { display:flex; align-items:center; gap: 6px; font-weight:600; cursor:pointer; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Meal-Response Hormone Timeline</h3>
+  <div class="subtitle">Toggle each digestive hormone to see when it rises relative to a meal, and how gastrin's product (acidic chyme) becomes the trigger for both secretin and CCK downstream.</div>
+  <div class="toggles">
+    <label><input type="checkbox" id="showGastrin" checked> Gastrin</label>
+    <label><input type="checkbox" id="showSecretin" checked> Secretin</label>
+    <label><input type="checkbox" id="showCCK" checked> CCK</label>
+  </div>
+  <div id="plot" style="width:100%; height:400px;"></div>
+</div>
+<script>
+(function(){
+  var N = 150, tMax = 180; // minutes
+  var t = [], gastrin = [], secretin = [], cck = [];
+  for (var i=0;i<N;i++){
+    var tt = i/(N-1)*tMax;
+    t.push(tt);
+    // gastrin rises once food is in the stomach (t=0-90), then falls as stomach empties
+    var g = 20 + 70 * Math.exp(-Math.pow((tt-30)/35,2));
+    // secretin/CCK rise once chyme reaches the duodenum, lagging gastrin, sustained longer
+    var s = 15 + 65 * Math.exp(-Math.pow((tt-70)/45,2));
+    var c = 10 + 75 * Math.exp(-Math.pow((tt-80)/50,2));
+    gastrin.push(g); secretin.push(s); cck.push(c);
+  }
+
+  var plotDiv = document.getElementById('plot');
+  var showGastrin = document.getElementById('showGastrin');
+  var showSecretin = document.getElementById('showSecretin');
+  var showCCK = document.getElementById('showCCK');
+
+  function traces(){
+    var arr = [];
+    if (showGastrin.checked) arr.push({x:t, y:gastrin, name:'Gastrin', mode:'lines', line:{color:'#e67e22', width:3}});
+    if (showSecretin.checked) arr.push({x:t, y:secretin, name:'Secretin', mode:'lines', line:{color:'#1d70a2', width:3}});
+    if (showCCK.checked) arr.push({x:t, y:cck, name:'CCK', mode:'lines', line:{color:'#7c3aed', width:3}});
+    return arr;
+  }
+
+  function render(){
+    var layout = {
+      xaxis: {title:'Minutes since meal begins', range:[0,tMax], gridcolor:'#e9ecef'},
+      yaxis: {title:'Relative hormone level', range:[0,100], gridcolor:'#e9ecef'},
+      shapes: [
+        {type:'line', x0:0, x1:0, y0:0, y1:100, line:{color:'#166534', width:1, dash:'dot'}},
+        {type:'line', x0:45, x1:45, y0:0, y1:100, line:{color:'#b45309', width:1, dash:'dot'}}
+      ],
+      annotations: [
+        {x:0, y:98, text:'Food enters stomach', showarrow:false, font:{size:10, color:'#166534'}, xanchor:'left'},
+        {x:45, y:90, text:'Chyme enters duodenum', showarrow:false, font:{size:10, color:'#b45309'}, xanchor:'left'}
+      ],
+      legend: {orientation:'h', y:-0.2},
+      margin: {t:20, l:55, r:20, b:45},
+      plot_bgcolor:'#ffffff', paper_bgcolor:'#ffffff'
+    };
+    Plotly.react(plotDiv, traces(), layout, {responsive:true, displayModeBar:false});
+  }
+
+  showGastrin.addEventListener('change', render);
+  showSecretin.addEventListener('change', render);
+  showCCK.addEventListener('change', render);
+  render();
+})();
+</script>
+</body>
+</html>

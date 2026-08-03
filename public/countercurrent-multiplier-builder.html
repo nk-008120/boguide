@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countercurrent Multiplier Builder | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 620px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .controls { display: flex; gap: 10px; margin-bottom: 1rem; }
+  button {
+    background: #2d6a4f;
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 8px 18px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  button.secondary { background: #f1f5f9; color: #334155; }
+  button:disabled { opacity: 0.5; cursor: not-allowed; }
+  .step-label { font-size: 0.8rem; color: #6b7280; align-self: center; margin-left: auto; }
+  svg text { font-family: 'Inter', system-ui, sans-serif; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Countercurrent Multiplier Builder</h3>
+  <div class="subtitle">Click "Step" to run one round of ascending-limb ion pumping and descending-limb water loss. Watch the medullary osmolarity gradient build up incrementally, round by round.</div>
+  <div class="controls">
+    <button id="stepBtn">Step</button>
+    <button id="resetBtn" class="secondary">Reset</button>
+    <span class="step-label" id="stepLabel">Round 0 of 6</span>
+  </div>
+  <svg id="svgArea" viewBox="0 0 560 340" width="100%"></svg>
+</div>
+<script>
+(function(){
+  var NS = "http://www.w3.org/2000/svg";
+  var svg = document.getElementById('svgArea');
+  var stepBtn = document.getElementById('stepBtn');
+  var resetBtn = document.getElementById('resetBtn');
+  var stepLabel = document.getElementById('stepLabel');
+  var maxStep = 6;
+  var depths = ["Cortex", "Outer medulla 1", "Outer medulla 2", "Inner medulla 1", "Inner medulla 2"];
+  var perStepIncrement = [0, 15, 40, 70, 110];
+  var baseline = 300;
+  var step = 0;
+
+  function el(tag, attrs){
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs){ e.setAttribute(k, attrs[k]); }
+    return e;
+  }
+
+  function currentValues(){
+    return perStepIncrement.map(function(inc){ return baseline + inc*step; });
+  }
+
+  function render(){
+    svg.innerHTML = '';
+    var vals = currentValues();
+    var top = 40, rowH = 50, leftX = 160, rightX = 340, tubeW = 90;
+
+    // Descending limb label
+    var descLabel = el('text', {x: leftX-20, y: 25, 'font-size': 12, fill: '#0f766e', 'font-weight': 700});
+    descLabel.textContent = 'Descending limb (water leaves)';
+    svg.appendChild(descLabel);
+    var ascLabel = el('text', {x: rightX-10, y: 25, 'font-size': 12, fill: '#b45309', 'font-weight': 700});
+    ascLabel.textContent = 'Ascending limb (ions pumped out)';
+    svg.appendChild(ascLabel);
+
+    for (var i=0; i<depths.length; i++){
+      var y = top + i*rowH;
+      // depth label
+      var lab = el('text', {x: 10, y: y+16, 'font-size': 11, fill: '#475569'});
+      lab.textContent = depths[i];
+      svg.appendChild(lab);
+
+      // descending limb segment
+      svg.appendChild(el('rect', {x: leftX, y: y, width: tubeW, height: rowH-8, fill: '#ccfbf1', stroke:'#0f766e', 'stroke-width':1.5, rx:6}));
+      // ascending limb segment
+      svg.appendChild(el('rect', {x: rightX, y: y, width: tubeW, height: rowH-8, fill: '#fef3c7', stroke:'#b45309', 'stroke-width':1.5, rx:6}));
+
+      // interstitium value between the two limbs
+      var midX = (leftX+tubeW + rightX)/2;
+      var valTxt = el('text', {x: midX, y: y+22, 'font-size': 14, fill:'#1a472a', 'font-weight':700, 'text-anchor':'middle'});
+      valTxt.textContent = vals[i] + ' mOsm/L';
+      svg.appendChild(valTxt);
+
+      // pump arrow, only show if this depth has been pumped (increment > 0 and step > 0)
+      if (step > 0 && perStepIncrement[i] > 0){
+        var arrow = el('text', {x: rightX-14, y: y+24, 'font-size': 16, fill:'#b45309', 'text-anchor':'middle'});
+        arrow.textContent = '←';
+        svg.appendChild(arrow);
+      }
+      if (step > 0){
+        var warrow = el('text', {x: leftX+tubeW+14, y: y+24, 'font-size': 14, fill:'#0f766e', 'text-anchor':'middle'});
+        warrow.textContent = 'H₂O →';
+        svg.appendChild(warrow);
+      }
+    }
+
+    // collecting duct hint at bottom
+    var note = el('text', {x: 280, y: top + depths.length*rowH + 20, 'font-size': 11, fill:'#6b7280', 'text-anchor':'middle'});
+    note.textContent = step >= maxStep ? 'Gradient fully built — collecting duct can now concentrate urine up to ' + vals[vals.length-1] + ' mOsm/L' : 'Keep stepping to deepen the gradient';
+    svg.appendChild(note);
+
+    stepLabel.textContent = 'Round ' + step + ' of ' + maxStep;
+    stepBtn.disabled = step >= maxStep;
+  }
+
+  stepBtn.addEventListener('click', function(){
+    if (step < maxStep){ step++; render(); }
+  });
+  resetBtn.addEventListener('click', function(){
+    step = 0;
+    render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
