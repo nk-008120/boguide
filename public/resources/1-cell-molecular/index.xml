@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BiOGuide for Biology Olympiads – Molecular, Cell Biology and Biochemistry</title>
-    <link>http://localhost:1313/resources/1-cell-molecular/</link>
+    <link>http://localhost:63693/resources/1-cell-molecular/</link>
     <description>Recent content in Molecular, Cell Biology and Biochemistry on BiOGuide for Biology Olympiads</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://localhost:1313/resources/1-cell-molecular/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:63693/resources/1-cell-molecular/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Biochemistry</title>
-      <link>http://localhost:1313/resources/1-cell-molecular/biochemistry/</link>
+      <link>http://localhost:63693/resources/1-cell-molecular/biochemistry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/1-cell-molecular/biochemistry/</guid>
+      <guid>http://localhost:63693/resources/1-cell-molecular/biochemistry/</guid>
       <description>
         
         
@@ -34,7 +34,7 @@
   };
 &lt;/script&gt;
 &lt;h2&gt;General Discussion:&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;general-discussion&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#general-discussion&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;General resources of this topic has been pretty well covered in our about and resources sections, recommended books are in their directories. If you are a complete beginner, i recommend reading this &lt;a href=&#34;http://localhost:1313/Abs_basics.pdf&#34; target=&#34;_blank&#34;&gt;pdf&lt;/a&gt; pefore starting off
+    &lt;a href=&#34;#general-discussion&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;General resources of this topic has been pretty well covered in our about and resources sections, recommended books are in their directories. If you are a complete beginner, i recommend reading this &lt;a href=&#34;http://localhost:63693/Abs_basics.pdf&#34; target=&#34;_blank&#34;&gt;pdf&lt;/a&gt; pefore starting off
 &lt;br&gt;
 You might see less practice for Enzyme Kinetics, as we shall cover a lot of practice in the practical section for biochemistry.&lt;/p&gt;
  
@@ -52,11 +52,11 @@ You might see less practice for Enzyme Kinetics, as we shall cover a lot of prac
 of a polypeptide chain, substituted methanes, which eventually folds to become a protein. Amino acids are made of
 two chemical groups, namely a carboxyl group, an amine group, and a variable R group, also
 known as a side chain. These chemical groups are all attached to a carbon, which also has an
-extra hydrogen atom bound to it. &lt;br&gt; &lt;img src=&#34;http://localhost:1313/MCBBPICS/Amino_Acid.png&#34; alt=&#34;Alt text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt; &lt;br&gt;
+extra hydrogen atom bound to it. &lt;br&gt; &lt;img src=&#34;http://localhost:63693/MCBBPICS/Amino_Acid.png&#34; alt=&#34;Alt text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt; &lt;br&gt;
 The R groups, also known as side chains, are what determine an amino acid’s properties: buffering capabilities, hydrophobic properties, polarity, compressibility, and more. There are
 twenty unique R groups, and thus twenty unique amino acids, each with their own properties.
 It is recommended to study and memorize the properties of these amino acids before moving &lt;br&gt;
-&lt;img src=&#34;http://localhost:1313/MCBBPICS/Amino_Acid2.png&#34; alt=&#34;Alt Text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt; &lt;br&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:63693/MCBBPICS/Amino_Acid2.png&#34; alt=&#34;Alt Text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt; &lt;br&gt;&lt;/p&gt;
 &lt;h3&gt;A few notable points about their behaviour:&lt;br&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;a-few-notable-points-about-their-behaviour&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#a-few-notable-points-about-their-behaviour&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;1: Order of aromaticity: Phe&amp;gt;Trp&amp;gt;Tyr&amp;gt;His &lt;br&gt;&lt;/p&gt;
 &lt;p&gt;2: Nonpolar amino acids (there are 9) contain aliphatic (hydrocarbon) chains or aromatic rings.&lt;br&gt;&lt;/p&gt;
@@ -101,7 +101,7 @@ O-Glycosylation: Consensus Sequence: None strictly defined&lt;br&gt; These attac
 &lt;p&gt;&lt;strong&gt;Reading a titration curve:&lt;/strong&gt; The titration curve of a polyprotic amino acid (e.g., lysine with pKₐ values 2.2, 9.0, 10.5) shows three inflection points. The pI lies between the two pKₐ values that flank the neutral (zwitterionic) species. The &lt;strong&gt;plateau regions&lt;/strong&gt; (buffering zones) occur ±1 pH unit around each pKₐ — the amino acid resists pH change most effectively here.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.khanacademy.org/science/ap-chemistry-beta/x2eef969c74e0d802:acids-and-bases/x2eef969c74e0d802:acid-base-titration-curves/v/amino-acid-titration&#34; target=&#34;_blank&#34;&gt;Khan Academy — Amino Acid Titration Curves (video)&lt;/a&gt;&lt;br&gt;
 &lt;em&gt;Please switch to light mode&lt;/em&gt;
-&lt;img src=&#34;http://localhost:1313/MCBBPICS/LYSINECURVE.png&#34; alt=&#34;Titration curve schematic — lysine showing three pKa inflection points and pI&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;http://localhost:63693/MCBBPICS/LYSINECURVE.png&#34; alt=&#34;Titration curve schematic — lysine showing three pKa inflection points and pI&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
 &lt;em&gt;Titration curves for glycine (monoprotic backbone) and lysine (with basic side chain). Note the third inflection point and the position of pI between the two pKₐ values flanking the zwitterion. (Source: Wikimedia Commons, CC BY-SA)&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;span class=&#34;badge-custom&#34;&gt;BiO Essential&lt;/span&gt;&lt;/p&gt;
@@ -162,7 +162,7 @@ Mnemonic: &lt;strong&gt;&amp;ldquo;PVT TIM HaLL&amp;rdquo;&lt;/strong&gt; (Phe, 
 &lt;p&gt;&lt;strong&gt;Glycine&lt;/strong&gt; is the only amino acid that populates all four quadrants — its lack of a side chain removes steric restriction entirely. This is why Gly appears at tight turns and buried positions in α-helices.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Proline&lt;/strong&gt; is confined to a narrow region (φ ≈ −63°, ψ ≈ −15° to +145°) because its cyclic side chain fixes φ near −60°. It cannot donate an NH hydrogen bond in helices.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=4AHXU4wMH24&#34; target=&#34;_blank&#34;&gt;Watch: Ramachandran plot explained (Shomu&amp;rsquo;s Biology)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/MCBBPICS/ramchandran.png&#34; alt=&#34;Ramachandran plot&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:63693/MCBBPICS/ramchandran.png&#34; alt=&#34;Ramachandran plot&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
 &lt;em&gt;A general Ramachandran plot for non-Gly, non-Pro residues. Favoured regions are darkest. The α-helix and β-sheet regions are clearly separated. (Source: Wikimedia Commons, CC BY-SA)&lt;/em&gt;&lt;/p&gt;
 &lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-1&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-1&#34; aria-hidden=&#34;true&#34;&gt;&lt;p&gt;&lt;span style=&#34;text-align: center&#34;&gt;&lt;em&gt;&amp;ldquo;It seems that the structure of protein folds is conserved more in evolutionary relations than the amino acid sequences&amp;rdquo;&lt;/em&gt;&lt;/span&gt; &lt;br&gt;&lt;br&gt;
 Proteins are large, essential macromolecules made of amino acids. They serve as the foundational building blocks of the body, driving nearly all biological processes including cell repair, muscle growth, enzyme function, and immune defense and pretty much everything else.&lt;br&gt;
@@ -175,12 +175,12 @@ There are 4 well established levels to the structure of a protein:
 &lt;br&gt;&lt;/p&gt;
 &lt;h3&gt;Primary structure&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;primary-structure&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#primary-structure&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The primary structure of a protein is simply the linear sequence of amino acids in its polypeptide chain. It contains primarily peptide and disulfide bonds.&lt;br&gt;&lt;br&gt;
-&lt;img src=&#34;http://localhost:1313/MCBBPICS/secondary.png&#34; alt=&#34;Alt text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;http://localhost:63693/MCBBPICS/secondary.png&#34; alt=&#34;Alt text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 &lt;h3&gt;Secondary structure&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;secondary-structure&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#secondary-structure&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Protein secondary structure is maintained almost entirely by hydrogen bonds formed between atoms in the polypeptide backbone, specifically between the carbonyl oxygen and amide hydrogen. Unlike tertiary or quaternary structures, the side chains (R-groups) are not involved in these bonds
 There are two motifs which define secondary structures:&lt;br&gt;&lt;br&gt;
 &lt;em&gt;Please switch to light mode&lt;/em&gt;
-&lt;img src=&#34;http://localhost:1313/MCBBPICS/structuralaas.png&#34; alt=&#34;Alt text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;&lt;br&gt;&lt;br&gt;
+&lt;img src=&#34;http://localhost:63693/MCBBPICS/structuralaas.png&#34; alt=&#34;Alt text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;&lt;br&gt;&lt;br&gt;
 A) $\alpha$-Helix:  - 1 Turn = 3.6 amino acids&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;High Propensity: Alanine, Glutamate, Leucine, Methionine, and Lysine&lt;/strong&gt; (often abbreviated by their single-letter codes as MALEK).&lt;br&gt;Why: These amino acids provide an ideal balance of bulk and flexibility, and their side chains lack steric interference. Glutamate and Lysine also form stabilizing salt bridges, while Alanine has the highest intrinsic capacity to pack tightly into a standard helical coil&lt;br&gt;&lt;br&gt;&lt;/li&gt;
@@ -197,7 +197,7 @@ As a rule of thumb in secondary structure , use n=n+3 , implying that only 3 adj
 &lt;h3&gt;Supersecondary structure&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;supersecondary-structure&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#supersecondary-structure&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The less known but question-relevant structure, consists of simple motifs like $\alpha$-$\alpha$-$\alpha$, $\alpha$-$\beta$-$\alpha$ , $\beta$-$\beta$-$\beta$.
 &lt;br&gt;
-&lt;img src=&#34;http://localhost:1313/MCBBPICS/sss.png&#34;&gt;
+&lt;img src=&#34;http://localhost:63693/MCBBPICS/sss.png&#34;&gt;
 &lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h3&gt;Tertiary structure&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;tertiary-structure&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#tertiary-structure&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The tertiary structure of a protein is its overall 3D shape, formed by the folding and packing of secondary structures (like $\alpha$-helices and $\beta$-sheets) into compact functional units called domains. It is driven and stabilized by interactions between the amino acid side chains (R-groups) and the surrounding environment
@@ -210,11 +210,11 @@ As a rule of thumb in secondary structure , use n=n+3 , implying that only 3 adj
 - Van der Waals Forces: Weak, short-range attractions between closely packed atoms in the protein&amp;rsquo;s dense core.&lt;br&gt;
 - Chaperone Proteins: Cellular helper proteins (like chaperonins) that bind to newly forming proteins, preventing them from tangling or aggregating incorrectly before the folding process is complete.&lt;br&gt;
 - Denaturation: Because most tertiary bonds are noncovalent, they are fragile. Changes in pH, heavy metals, or high temperatures can disrupt these bonds, causing the protein to unfold and lose its biological function
-&lt;img src=&#34;http://localhost:1313/MCBBPICS/tss.png&#34;&gt;
+&lt;img src=&#34;http://localhost:63693/MCBBPICS/tss.png&#34;&gt;
 &lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h3&gt;Quaternary structure&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;quaternary-structure&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#quaternary-structure&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Quaternary structures are formed by the interactions between Tertiary ones. These make the final protein unit, often just hydrogen bonded multimers.
-&lt;img src=&#34;http://localhost:1313/MCBBPICS/qss.png&#34;&gt;
+&lt;img src=&#34;http://localhost:63693/MCBBPICS/qss.png&#34;&gt;
 &lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;!-- ═══════════════════════════════════════════════════════════
      ADDITIONAL IBO-RELEVANT CONTENT — PROTEINS
@@ -223,7 +223,7 @@ As a rule of thumb in secondary structure , use n=n+3 , implying that only 3 adj
 &lt;h3&gt;Allosteric Proteins and Cooperativity — Hemoglobin as the Model&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;allosteric-proteins-and-cooperativity--hemoglobin-as-the-model&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#allosteric-proteins-and-cooperativity--hemoglobin-as-the-model&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Hemoglobin (Hb) is the definitive example of &lt;strong&gt;allostery&lt;/strong&gt; — the regulation of protein function through conformational change induced by a ligand binding at a site other than the active site.
 &lt;br&gt;
-&lt;img src=&#34;http://localhost:1313/MCBBPICS/tr.png&#34;&gt;
+&lt;img src=&#34;http://localhost:63693/MCBBPICS/tr.png&#34;&gt;
 &lt;br&gt;
 &lt;strong&gt;T state vs. R state:&lt;/strong&gt;
 Deoxy-hemoglobin adopts the &lt;strong&gt;T (tense) state&lt;/strong&gt;: the four subunits are held in a constrained conformation by 8 salt bridges between the subunits, giving &lt;em&gt;low&lt;/em&gt; O₂ affinity. When O₂ binds one heme iron, the iron moves into the porphyrin plane (it is slightly out-of-plane when deoxygenated, pulled by the proximal His F8). This movement tugs the α-helix carrying His F8, breaking salt bridges and transitioning cooperatively to the &lt;strong&gt;R (relaxed) state&lt;/strong&gt; with &lt;em&gt;high&lt;/em&gt; O₂ affinity.&lt;/p&gt;
@@ -231,7 +231,7 @@ Deoxy-hemoglobin adopts the &lt;strong&gt;T (tense) state&lt;/strong&gt;: the fo
 &lt;p&gt;$$ \theta = \frac{[O_2]^{n_H}}{K_d^{n_H} + [O_2]^{n_H}} $$&lt;/p&gt;
 &lt;p&gt;For Hb, n_H ≈ 2.8 (max 4 for perfect cooperativity). Myoglobin (monomeric, no cooperativity) gives a hyperbolic curve with n_H = 1.
 &lt;br&gt;
-&lt;img src=&#34;http://localhost:1313/MCBBPICS/hillgraph.png&#34;&gt;
+&lt;img src=&#34;http://localhost:63693/MCBBPICS/hillgraph.png&#34;&gt;
 &lt;br&gt;
 &lt;span class=&#34;badge-custom&#34;&gt;BiO Essential&lt;/span&gt;
 You do not need to necessarily understand the complete equation. but you should  understand the role of hills coefficient and its limits.&lt;br&gt;&lt;/p&gt;
@@ -271,7 +271,7 @@ You do not need to necessarily understand the complete equation. but you should 
 &lt;p&gt;&lt;span class=&#34;badge-challenge&#34;&gt;CHALLENGE!!&lt;/span&gt; Plot the O₂-binding curve of Hb vs. Mb on the same axes. At pO₂ = 40 mmHg (venous tissue), which protein retains more O₂? Why is this physiologically important?&lt;/p&gt;
 &lt;details&gt;
 &lt;summary&gt;Click for reveal of graph&lt;/summary&gt;
-&lt;img src=&#34;http://localhost:1313/MCBBPICS/mbhbgraph.png&#34;/&gt;
+&lt;img src=&#34;http://localhost:63693/MCBBPICS/mbhbgraph.png&#34;/&gt;
 &lt;/details&gt;
 &lt;br&gt;&lt;br&gt;
 ---
@@ -360,7 +360,7 @@ Do a similar analysis and write down your results for these 3.&lt;/li&gt;
 &lt;/div&gt;&lt;div class=&#34;hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block&#34; id=&#34;tabs-panel-tabs-00-2&#34; role=&#34;tabpanel&#34; aria-labelledby=&#34;tabs-tab-tabs-00-2&#34; aria-hidden=&#34;true&#34;&gt;&lt;h2&gt;Enzyme Kinetics&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;enzyme-kinetics&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#enzyme-kinetics&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Most people start enzyme kinetics and end it at just about one equation. But here, we shall try to explore the concept in more detail. If you are in a hurry, look at the parts marked important or the equations. The kinetics constants have been used in the same order.
 &lt;br&gt;&lt;br&gt;
-&lt;img src=&#34;http://localhost:1313/MCBBPICS/kinetics_phases.png&#34; alt=&#34;kinetics_phases&#34; style=&#34;max-width:100%; height:auto;&#34;&gt;
+&lt;img src=&#34;http://localhost:63693/MCBBPICS/kinetics_phases.png&#34; alt=&#34;kinetics_phases&#34; style=&#34;max-width:100%; height:auto;&#34;&gt;
 &lt;br&gt;Our reactions are :
 $$
 \text{E+S} \rightleftharpoons \text{ES} \rightleftharpoons \text{E+P}
@@ -427,7 +427,7 @@ diffuse together in an aqueous solution. This diffusion controlled limit is 108 
 , and many enzymes
 have a kcat/Km near this range (Table 6–8). Such
 enzymes are said to have achieved catalytic perfection.
-&lt;img src=&#34;http://localhost:1313/MCBBPICS/table68.png&#34; alt=&#34;Alt text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+&lt;img src=&#34;http://localhost:63693/MCBBPICS/table68.png&#34; alt=&#34;Alt text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
 &lt;br&gt;&lt;br&gt;
 &lt;strong&gt; Worked Example 3‑1: Determination of $K_{\text{m}}$ &lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;An enzyme is discovered that catalyzes the chemical reaction&lt;/p&gt;
@@ -444,8 +444,8 @@ $$&lt;/p&gt;
 &lt;span class=&#34;badge-exploration&#34;&gt;Explore! (&lt;em&gt;Out of Syllabus&lt;/em&gt;)&lt;/span&gt; &lt;br&gt;
 &lt;a href=&#34;https://courseware.cutm.ac.in/wp-content/uploads/2020/06/Bi-substrate-reaction-PDF.pdf&#34; target=&#34;blank&#34;&gt;Explore Ping-Pong and Ternary Complex bisubstrate reactions here&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h2&gt;Enzyme Inhibition Kinetics&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;enzyme-inhibition-kinetics&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#enzyme-inhibition-kinetics&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;br&gt;&lt;img src=&#34;http://localhost:1313/MCBBPICS/inhibitionmm.png&#34; alt=&#34;Alt text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;&lt;br&gt;
-&lt;br&gt;&lt;img src=&#34;http://localhost:1313/MCBBPICS/lbcomp.png&#34; alt=&#34;Alt text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;&lt;br&gt;
+    &lt;a href=&#34;#enzyme-inhibition-kinetics&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;br&gt;&lt;img src=&#34;http://localhost:63693/MCBBPICS/inhibitionmm.png&#34; alt=&#34;Alt text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;&lt;br&gt;
+&lt;br&gt;&lt;img src=&#34;http://localhost:63693/MCBBPICS/lbcomp.png&#34; alt=&#34;Alt text&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;&lt;br&gt;
 Inhibition of an enzyme translates to reduction in its activity, or ability to produce product by deduction of specificity constant, but the underlying mathematics are difference for each of the four kinds of reversible inhibition:&lt;br&gt;&lt;/p&gt;
 &lt;h3&gt;Competitive Reversible Inhibition&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;competitive-reversible-inhibition&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#competitive-reversible-inhibition&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;br&gt;
@@ -518,7 +518,7 @@ Think about it, you will have some question on this on the questions tab.&lt;/p&
 &lt;div id=&#34;stereo&#34;&gt;
    &lt;strong&gt;Stereoisomerism&lt;/strong&gt; : 
 &lt;/div&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/MCBBPICS/ld.png&#34; alt=&#34;Stereoisomers&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:63693/MCBBPICS/ld.png&#34; alt=&#34;Stereoisomers&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 &lt;div id=&#34;motif&#34;&gt;
    &lt;strong&gt;Motif&lt;/strong&gt; : A motif is a short, recurring pattern of nucleotides (in genomes) or amino acids (in proteins) that holds biological significance
 &lt;/div&gt; &lt;br&gt;
@@ -697,7 +697,7 @@ $$&lt;/p&gt;
 $$&lt;/p&gt;
 &lt;div id=&#34;mm-plot&#34;&gt;
   &lt;strong&gt;Michaelis‑Menten Plot&lt;/strong&gt;&lt;br&gt;
-  &lt;img src=&#34;http://localhost:1313/MCBBPICS/mm_plot.png&#34; alt=&#34;MM_PLOT&#34;&gt;
+  &lt;img src=&#34;http://localhost:63693/MCBBPICS/mm_plot.png&#34; alt=&#34;MM_PLOT&#34;&gt;
   &lt;p&gt;The Michaelis‑Menten equation describes the hyperbolic relationship between initial reaction velocity \(V_0\) and substrate concentration \([S]\):&lt;/p&gt;
   $$ V_0 = \frac{V_{\text{max}} [S]}{K_m + [S]} $$
   &lt;ul&gt;
@@ -708,7 +708,7 @@ $$&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;lb-plot&#34; style=&#34;margin-top: 2rem;&#34;&gt;
   &lt;strong&gt;Lineweaver‑Burk Plot (Double‑Reciprocal)&lt;/strong&gt;&lt;br&gt;
-  &lt;img src=&#34;http://localhost:1313/MCBBPICS/lb_plot.png&#34; alt=&#34;LB_PLOT&#34;&gt;
+  &lt;img src=&#34;http://localhost:63693/MCBBPICS/lb_plot.png&#34; alt=&#34;LB_PLOT&#34;&gt;
   &lt;p&gt;Taking the reciprocal of the Michaelis‑Menten equation gives a straight line:&lt;/p&gt;
   $$ \frac{1}{V_0} = \frac{K_m}{V_{\text{max}}} \cdot \frac{1}{[S]} + \frac{1}{V_{\text{max}}} $$
   &lt;ul&gt;
@@ -1053,10 +1053,10 @@ D) High salt concentration (2 M NaCl)&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>http://localhost:1313/resources/1-cell-molecular/cell-biology/</link>
+      <link>http://localhost:63693/resources/1-cell-molecular/cell-biology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/1-cell-molecular/cell-biology/</guid>
+      <guid>http://localhost:63693/resources/1-cell-molecular/cell-biology/</guid>
       <description>
         
         
@@ -1066,10 +1066,10 @@ D) High salt concentration (2 M NaCl)&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>http://localhost:1313/resources/1-cell-molecular/molecular-biology/</link>
+      <link>http://localhost:63693/resources/1-cell-molecular/molecular-biology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/1-cell-molecular/molecular-biology/</guid>
+      <guid>http://localhost:63693/resources/1-cell-molecular/molecular-biology/</guid>
       <description>
         
         

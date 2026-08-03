@@ -49,12 +49,141 @@ graph LR;
 ![A full labeled nephron: glomerulus and glomerular capsule fed by the afferent/efferent arteriole, proximal convoluted tubule, descending/ascending limbs of the loop of Henle with the surrounding capillary network, distal convoluted tubule, and collecting duct draining to the ureter, with the cortex/medulla boundary shown.](/ANATOMYPICS/nephron-labeled-tubule-regions-blood-supply.jpg)
 *Source: user-sourced (originally via pharmacy180.com). Exact match for all tubule regions and the peritubular blood supply.*
 
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">🔍 Nephron Filtration/Reabsorption Explorer</h3>
+  <p style="font-size:0.85rem; color:#6b7280; margin:0 0 1rem 0;">Hover (or click) each tubule segment to see exactly what's reabsorbed or secreted there.</p>
+  <div id="nephronSegments" style="display:flex; gap:0.3rem; flex-wrap:wrap;"></div>
+  <div style="margin-top:1rem; background:#f8fafc; border-radius:14px; padding:0.9rem 1.1rem;">
+    <div style="font-weight:700; color:#1a472a; margin-bottom:0.3rem;" id="nephronTitle">Hover a segment above</div>
+    <div style="font-size:0.88rem; color:#4b5563; min-height:3.6em;" id="nephronDesc">Move your cursor over PCT, the loop of Henle limbs, DCT, or the collecting duct to see what happens at each stop.</div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var segments = [
+    { key: 'pct', name: 'PCT', color: '#2d6a4f', desc: 'Reabsorbs ~65% of filtered water and ions, and essentially all filtered glucose and amino acids. Brush border + high mitochondrial density signal high-throughput active reabsorption.' },
+    { key: 'desc', name: 'Descending Limb', color: '#1f5c99', desc: 'Highly permeable to water (reabsorbed into the hypertonic medullary interstitium) but not solutes — filtrate becomes progressively more concentrated as it descends.' },
+    { key: 'asc', name: 'Ascending Limb', color: '#7a3f96', desc: 'Impermeable to water; actively transports Na⁺/K⁺/Cl⁻ out into the interstitium — filtrate becomes progressively more dilute as it ascends. This asymmetric permeability is the structural basis of the countercurrent multiplier.' },
+    { key: 'dct', name: 'DCT', color: '#b1650f', desc: 'Shorter, fewer microvilli than the PCT. Site of regulated, hormonally controlled reabsorption — fine-tunes final urine composition.' },
+    { key: 'cd', name: 'Collecting Duct', color: '#c0392b', desc: "Receives filtrate from many nephrons. Water permeability is variably regulated by ADH acting on aquaporin channels — the kidney's main water-balance control point." }
+  ];
+  var container = document.getElementById('nephronSegments');
+  var titleEl = document.getElementById('nephronTitle');
+  var descEl = document.getElementById('nephronDesc');
+
+  segments.forEach(function(seg){
+    var el = document.createElement('div');
+    el.textContent = seg.name;
+    el.style.cssText = 'flex:1; min-width:110px; text-align:center; padding:14px 8px; border-radius:12px; background:' + seg.color + '; color:white; font-weight:600; font-size:0.82rem; cursor:pointer; opacity:0.85; transition:opacity 0.15s, transform 0.15s;';
+    function show(){
+      titleEl.textContent = seg.name;
+      descEl.textContent = seg.desc;
+      el.style.opacity = '1';
+      el.style.transform = 'scale(1.04)';
+    }
+    function hide(){
+      el.style.opacity = '0.85';
+      el.style.transform = 'scale(1)';
+    }
+    el.addEventListener('mouseenter', show);
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('click', show);
+    container.appendChild(el);
+  });
+})();
+</script>
+
 ### Two Nephron Populations
 
 Not all nephrons are structurally identical: **cortical nephrons** (~85%, glomerulus in the outer cortex, short loops of Henle barely entering the medulla) handle the bulk of filtration volume, while **juxtamedullary nephrons** (~15%, glomerulus near the cortex-medulla border, very long loops of Henle penetrating deep into the medulla, paralleled by specialized capillaries, the **vasa recta**) are structurally responsible for establishing the deep medullary concentration gradient that makes concentrated urine possible at all — a direct minority-population, disproportionate-function structural point worth stating explicitly.
 
 ![Cortical nephron (short loop of Henle) vs. juxtamedullary nephron (long loop reaching deep into the medulla, near the papilla) compared, alongside a PO2 gradient bar showing oxygen tension falling from 70 mmHg in the cortex to 10 mmHg near the papilla.](/ANATOMYPICS/cortical-vs-juxtamedullary-nephron-comparison.webp)
 *Source: The Ohio State University (copyright notice visible in the image), user-sourced originally via a ResearchGate figure. Confirm licensing basis before public deployment. Exceeds spec with the medullary oxygen-gradient detail, a bonus concept beyond this page's text.*
+
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">🧂 Countercurrent Multiplier Gradient Chart</h3>
+  <div id="countercurrentPlot" style="width:100%; height:380px;"></div>
+  <input type="range" id="countercurrentSlider" min="0" max="100" step="1" value="0" style="width:100%; accent-color:#2d6a4f; margin-top:0.5rem;">
+  <div style="display:flex; justify-content:space-between; font-size:0.75rem; color:#6b7280; margin-bottom:0.8rem;">
+    <span>0% (cortex / corticomedullary junction)</span><span>100% (papilla)</span>
+  </div>
+  <div style="display:flex; gap:1.5rem; flex-wrap:wrap; font-size:0.85rem; color:#374151;">
+    <div>Interstitial osmolarity: <strong id="ccInterstitialOut">300 mOsm/L</strong></div>
+    <div>Descending-limb fluid: <strong id="ccDescOut">300 mOsm/L</strong></div>
+    <div>Ascending-limb fluid: <strong id="ccAscOut">100 mOsm/L</strong></div>
+  </div>
+</div>
+
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js"></script>
+<script>
+(function() {
+  function initChart() {
+    if (typeof Plotly === 'undefined') { setTimeout(initChart, 100); return; }
+
+    function interp(keys, t) {
+      for (var i = 0; i < keys.length - 1; i++) {
+        var a = keys[i], b = keys[i + 1];
+        if (t >= a[0] && t <= b[0]) {
+          var f = (t - a[0]) / (b[0] - a[0]);
+          return a[1] + (b[1] - a[1]) * f;
+        }
+      }
+      return keys[keys.length - 1][1];
+    }
+
+    var interstitialKeys = [[0,300],[25,500],[50,700],[75,950],[100,1200]];
+    var descKeys = [[0,300],[25,500],[50,700],[75,950],[100,1200]];
+    var ascKeys = [[0,100],[25,300],[50,550],[75,900],[100,1200]];
+
+    var xs = [];
+    for (var i = 0; i <= 100; i++) xs.push(i);
+    var interstitialY = xs.map(function(t){ return interp(interstitialKeys, t); });
+    var descY = xs.map(function(t){ return interp(descKeys, t); });
+    var ascY = xs.map(function(t){ return interp(ascKeys, t); });
+
+    var slider = document.getElementById('countercurrentSlider');
+    var interstitialOut = document.getElementById('ccInterstitialOut');
+    var descOut = document.getElementById('ccDescOut');
+    var ascOut = document.getElementById('ccAscOut');
+
+    function render() {
+      var t = parseFloat(slider.value);
+
+      var traceInterstitial = { x: xs, y: interstitialY, mode: 'lines', name: 'Interstitial fluid', line: { color: '#9ca3af', width: 3, dash: 'dash' } };
+      var traceDesc = { x: xs, y: descY, mode: 'lines', name: 'Descending limb fluid', line: { color: '#1f5c99', width: 3 } };
+      var traceAsc = { x: xs, y: ascY, mode: 'lines', name: 'Ascending limb fluid', line: { color: '#7a3f96', width: 3 } };
+
+      var layout = {
+        xaxis: { range: [0, 100], title: 'Depth into medulla (% from cortex to papilla)' },
+        yaxis: { range: [0, 1300], title: 'Osmolarity (mOsm/L)' },
+        legend: { orientation: 'h', y: -0.25 },
+        margin: { t: 20, l: 60, r: 20, b: 40 },
+        plot_bgcolor: '#ffffff',
+        paper_bgcolor: '#ffffff',
+        shapes: [
+          { type: 'line', xref: 'x', yref: 'paper', x0: t, x1: t, y0: 0, y1: 1, line: { color: '#1a472a', width: 2, dash: 'dot' } }
+        ]
+      };
+
+      Plotly.react('countercurrentPlot', [traceInterstitial, traceDesc, traceAsc], layout, { responsive: true, displayModeBar: false });
+
+      interstitialOut.textContent = Math.round(interp(interstitialKeys, t)) + ' mOsm/L';
+      descOut.textContent = Math.round(interp(descKeys, t)) + ' mOsm/L';
+      ascOut.textContent = Math.round(interp(ascKeys, t)) + ' mOsm/L';
+    }
+
+    slider.addEventListener('input', render);
+    render();
+    window.addEventListener('resize', function(){ Plotly.relayout('countercurrentPlot', { autosize: true }); });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initChart);
+  } else {
+    initChart();
+  }
+})();
+</script>
 
 ### Juxtaglomerular Apparatus
 
@@ -91,8 +220,7 @@ The nephron's filtration-then-reabsorption logic has a structurally simpler inve
 
 **Interactive**
 
-- **Nephron filtration/reabsorption explorer (hover-to-reveal)** — hover along the PCT, loop of Henle, DCT, and collecting duct to see exactly what's reabsorbed or secreted at each segment, turning the tubule's regional specialization into something explored rather than read.
-- **Countercurrent multiplier gradient chart (Plotly)** — plot interstitial osmolarity against depth into the medulla, showing the gradient build along the loop of Henle — a quantitative, graphed version of the "countercurrent multiplier" mechanism instead of a purely verbal one.
+*(Implemented inline above: the nephron filtration/reabsorption explorer sits directly below the nephron tubule image, and the countercurrent multiplier gradient chart sits directly below the cortical-vs-juxtamedullary nephron image.)*
 
 **Static**
 

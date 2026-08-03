@@ -51,9 +51,189 @@ graph LR;
 
 The **sinoatrial (SA) node** (right atrial wall, near the superior vena cava) depolarizes spontaneously at the fastest intrinsic rate of any cardiac tissue, making it the heart's primary pacemaker; the signal spreads cell-to-cell across both atria via gap junctions (intercalated discs, see [Human Muscular System](../human-muscular-system/)), reaching the **atrioventricular (AV) node** (in the atrioventricular septum), which conducts more slowly, introducing a brief delay that allows the atria to finish contracting and fully empty into the ventricles before ventricular contraction begins. The signal then passes rapidly down the **bundle of His** and its branches within the interventricular septum, into the **Purkinje fibers**, which distribute it through the ventricular walls from apex to base — this apex-to-base activation sequence is structurally why ventricular contraction pushes blood upward toward the outflow valves, rather than the ventricles simply squeezing in place.
 
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">🫀 Conduction Pathway Walkthrough</h3>
+  <div style="display:flex; gap:2rem; flex-wrap:wrap; align-items:flex-start;">
+    <div style="flex:0 0 260px;">
+      <svg id="conductionSvg" viewBox="0 0 300 300" style="width:100%; max-width:260px; display:block; margin:0 auto;">
+        <ellipse cx="100" cy="70" rx="55" ry="45" fill="#f2b6ad"/>
+        <ellipse cx="200" cy="70" rx="55" ry="45" fill="#f2b6ad"/>
+        <path d="M 45 110 Q 40 220 110 265 Q 150 285 150 265 L 150 110 Z" fill="#e8938a"/>
+        <path d="M 255 110 Q 260 230 190 270 Q 150 290 150 265 L 150 110 Z" fill="#c0392b"/>
+        <path id="cond-path" d="M 140 45 L 150 120 L 150 160 L 150 250" stroke="#cbd5e1" stroke-width="3" fill="none" stroke-dasharray="4,4"/>
+        <circle id="node-sa" cx="140" cy="45" r="8" fill="#9ca3af" class="cond-node" data-key="sa" style="cursor:pointer;"/>
+        <circle id="node-av" cx="150" cy="120" r="8" fill="#9ca3af" class="cond-node" data-key="av" style="cursor:pointer;"/>
+        <circle id="node-bundle" cx="150" cy="160" r="7" fill="#9ca3af" class="cond-node" data-key="bundle" style="cursor:pointer;"/>
+        <circle id="node-purkinje" cx="150" cy="250" r="7" fill="#9ca3af" class="cond-node" data-key="purkinje" style="cursor:pointer;"/>
+      </svg>
+    </div>
+    <div style="flex:1; min-width:220px;">
+      <div style="font-weight:700; font-size:1.05rem; color:#1a472a; margin-bottom:0.3rem;" id="condTitle">SA Node</div>
+      <div style="font-size:0.85rem; color:#b1650f; font-weight:600; margin-bottom:0.4rem;" id="condDelay">Fires spontaneously (~70-80x/min) — the primary pacemaker</div>
+      <div style="font-size:0.9rem; color:#4b5563; min-height:4.5em; margin-bottom:1rem;" id="condDesc">Located in the right atrial wall near the superior vena cava. Depolarizes spontaneously faster than any other cardiac tissue, initiating each heartbeat. Signal spreads across both atria via gap junctions.</div>
+      <div style="display:flex; gap:0.5rem;">
+        <button id="condPrev" style="padding:6px 16px; border:none; border-radius:30px; background:#e2e8f0; color:#1e293b; cursor:pointer; font-weight:500; font-size:0.85rem;">← Previous</button>
+        <button id="condNext" style="padding:6px 16px; border:none; border-radius:30px; background:#2d6a4f; color:white; cursor:pointer; font-weight:500; font-size:0.85rem;">Next →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var order = ['sa', 'av', 'bundle', 'purkinje'];
+  var info = {
+    sa: { name: 'SA Node', delay: 'Fires spontaneously (~70-80x/min) — the primary pacemaker', desc: 'Located in the right atrial wall near the superior vena cava. Depolarizes spontaneously faster than any other cardiac tissue, initiating each heartbeat. Signal spreads across both atria via gap junctions.' },
+    av: { name: 'AV Node', delay: '~0.1 s conduction delay', desc: 'Located in the atrioventricular septum. Conducts more slowly than surrounding tissue, introducing a brief delay — this is exactly why atrial systole finishes emptying the atria before ventricular contraction begins.' },
+    bundle: { name: 'Bundle of His', delay: 'Fast conduction', desc: 'Runs within the interventricular septum, carrying the signal rapidly from the AV node down toward the ventricular walls.' },
+    purkinje: { name: 'Purkinje Fibers', delay: 'Fastest conduction of any cardiac tissue', desc: 'Distributes the signal through the ventricular walls from apex to base — this apex-to-base sequence is why ventricular contraction pushes blood upward toward the outflow valves.' }
+  };
+  var idx = 0;
+  var titleEl = document.getElementById('condTitle');
+  var delayEl = document.getElementById('condDelay');
+  var descEl = document.getElementById('condDesc');
+  var prevBtn = document.getElementById('condPrev');
+  var nextBtn = document.getElementById('condNext');
+  var baseRadius = { sa: 8, av: 8, bundle: 7, purkinje: 7 };
+
+  function render(){
+    var key = order[idx];
+    var entry = info[key];
+    titleEl.textContent = entry.name;
+    delayEl.textContent = entry.delay;
+    descEl.textContent = entry.desc;
+
+    order.forEach(function(k, i){
+      var circle = document.getElementById('node-' + k);
+      if (i === idx) {
+        circle.setAttribute('fill', '#2d6a4f');
+        circle.setAttribute('r', baseRadius[k] + 3);
+      } else if (i < idx) {
+        circle.setAttribute('fill', '#7fb37f');
+        circle.setAttribute('r', baseRadius[k]);
+      } else {
+        circle.setAttribute('fill', '#9ca3af');
+        circle.setAttribute('r', baseRadius[k]);
+      }
+    });
+    prevBtn.disabled = idx === 0;
+    nextBtn.disabled = idx === order.length - 1;
+  }
+
+  document.querySelectorAll('#conductionSvg .cond-node').forEach(function(el, i){
+    el.addEventListener('click', function(){ idx = i; render(); });
+  });
+  prevBtn.addEventListener('click', function(){ if (idx > 0) { idx--; render(); } });
+  nextBtn.addEventListener('click', function(){ if (idx < order.length - 1) { idx++; render(); } });
+
+  render();
+})();
+</script>
+
 ### The Cardiac Cycle
 
 One full heartbeat comprises **systole** (contraction) and **diastole** (relaxation) for both atria and ventricles, though "systole"/"diastole" used alone conventionally refer to the ventricles: **atrial systole** (atria contract, topping off ventricular filling) is immediately followed by **ventricular systole**, itself divided into an **isovolumetric contraction** phase (all four valves closed, ventricular pressure rising with no volume change, until it exceeds arterial pressure) and an **ejection** phase (semilunar valves open, blood ejected); **ventricular diastole** similarly begins with **isovolumetric relaxation** (all valves closed, pressure falling) before the AV valves open and passive/then atrial-systole-assisted filling occurs. The two audible **heart sounds** ("lub-dub") are generated by valve closure, not opening: **S1** ("lub") is AV valve closure at the start of ventricular systole; **S2** ("dub") is semilunar valve closure at the start of ventricular diastole — a direct structural/mechanical, not muscular, origin for both sounds.
+
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">📈 Cardiac Cycle Explorer (Wiggers Diagram)</h3>
+  <div id="wiggersPlot" style="width:100%; height:480px;"></div>
+  <input type="range" id="wiggersSlider" min="0" max="100" step="0.5" value="0" style="width:100%; accent-color:#2d6a4f; margin-top:0.5rem;">
+  <div style="display:flex; justify-content:space-between; font-size:0.75rem; color:#6b7280; margin-bottom:0.8rem;">
+    <span>0% (start of atrial systole)</span><span>100% (next cycle)</span>
+  </div>
+  <div style="display:flex; gap:1.5rem; flex-wrap:wrap; font-size:0.85rem; color:#374151;">
+    <div>AV valves: <strong id="wiggersAV">open</strong></div>
+    <div>Semilunar valves: <strong id="wiggersSL">closed</strong></div>
+    <div>Heart sound: <strong id="wiggersSound">—</strong></div>
+  </div>
+</div>
+
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js"></script>
+<script>
+(function() {
+  function initChart() {
+    if (typeof Plotly === 'undefined') { setTimeout(initChart, 100); return; }
+
+    function interp(keys, t) {
+      for (var i = 0; i < keys.length - 1; i++) {
+        var a = keys[i], b = keys[i + 1];
+        if (t >= a[0] && t <= b[0]) {
+          var f = (t - a[0]) / (b[0] - a[0]);
+          return a[1] + (b[1] - a[1]) * f;
+        }
+      }
+      return keys[keys.length - 1][1];
+    }
+
+    var atrialKeys = [[0,6],[5,10],[10,7],[15,5],[20,4],[30,4],[40,4],[45,5],[50,8],[60,11],[65,10],[70,7],[80,6],[90,6],[100,6]];
+    var ventricularKeys = [[0,6],[8,7],[10,8],[12,40],[14,80],[15,82],[20,118],[25,120],[30,110],[35,95],[40,80],[42,40],[44,10],[45,5],[50,4],[60,5],[70,6],[80,6],[90,6],[100,6]];
+    var aorticKeys = [[0,80],[10,78],[14,79],[15,82],[20,110],[25,120],[30,115],[35,100],[40,82],[41,84],[45,82],[50,81],[60,80],[70,79],[80,79],[90,79],[100,80]];
+    var volumeKeys = [[0,120],[10,120],[12,119],[15,118],[20,100],[25,80],[30,65],[35,55],[40,50],[42,50],[45,50],[50,55],[60,75],[70,95],[80,110],[90,118],[100,120]];
+
+    var xs = [];
+    for (var i = 0; i <= 100; i++) xs.push(i);
+    var atrialY = xs.map(function(t){ return interp(atrialKeys, t); });
+    var ventY = xs.map(function(t){ return interp(ventricularKeys, t); });
+    var aorticY = xs.map(function(t){ return interp(aorticKeys, t); });
+    var volumeY = xs.map(function(t){ return interp(volumeKeys, t); });
+
+    var slider = document.getElementById('wiggersSlider');
+    var avOut = document.getElementById('wiggersAV');
+    var slOut = document.getElementById('wiggersSL');
+    var soundOut = document.getElementById('wiggersSound');
+
+    function render() {
+      var t = parseFloat(slider.value);
+
+      var traceAtrial = { x: xs, y: atrialY, mode: 'lines', name: 'Atrial pressure', line: { color: '#7a3f96', width: 2 }, xaxis: 'x', yaxis: 'y' };
+      var traceVent = { x: xs, y: ventY, mode: 'lines', name: 'Ventricular pressure', line: { color: '#c0392b', width: 2 }, xaxis: 'x', yaxis: 'y' };
+      var traceAortic = { x: xs, y: aorticY, mode: 'lines', name: 'Aortic pressure', line: { color: '#1f5c99', width: 2 }, xaxis: 'x', yaxis: 'y' };
+      var traceVolume = { x: xs, y: volumeY, mode: 'lines', name: 'Ventricular volume', line: { color: '#2d6a4f', width: 2 }, fill: 'tozeroy', fillcolor: 'rgba(45,106,79,0.1)', xaxis: 'x2', yaxis: 'y2' };
+
+      var layout = {
+        grid: { rows: 2, columns: 1, pattern: 'independent' },
+        xaxis: { range: [0, 100], title: '' },
+        yaxis: { range: [0, 130], title: 'Pressure (mmHg)', domain: [0.5, 1] },
+        xaxis2: { range: [0, 100], title: '% of cardiac cycle' },
+        yaxis2: { range: [30, 130], title: 'Ventricular volume (mL)', domain: [0, 0.42] },
+        showlegend: true,
+        legend: { orientation: 'h', y: 1.15 },
+        margin: { t: 30, l: 60, r: 20, b: 40 },
+        plot_bgcolor: '#ffffff',
+        paper_bgcolor: '#ffffff',
+        shapes: [
+          { type: 'line', xref: 'x', yref: 'paper', x0: t, x1: t, y0: 0.5, y1: 1, line: { color: '#1a472a', width: 2, dash: 'dot' } },
+          { type: 'line', xref: 'x2', yref: 'paper', x0: t, x1: t, y0: 0, y1: 0.42, line: { color: '#1a472a', width: 2, dash: 'dot' } }
+        ]
+      };
+
+      Plotly.react('wiggersPlot', [traceAtrial, traceVent, traceAortic, traceVolume], layout, { responsive: true, displayModeBar: false });
+
+      var avOpen = t >= 45 || t < 10;
+      var slOpen = t >= 15 && t < 40;
+      avOut.textContent = avOpen ? 'open' : 'closed';
+      slOut.textContent = slOpen ? 'open' : 'closed';
+
+      if (Math.abs(t - 10) <= 1) {
+        soundOut.textContent = 'S1 ("lub") — AV valves just closed';
+      } else if (Math.abs(t - 40) <= 1) {
+        soundOut.textContent = 'S2 ("dub") — semilunar valves just closed';
+      } else {
+        soundOut.textContent = '—';
+      }
+    }
+
+    slider.addEventListener('input', render);
+    render();
+    window.addEventListener('resize', function(){ Plotly.relayout('wiggersPlot', { autosize: true }); });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initChart);
+  } else {
+    initChart();
+  }
+})();
+</script>
 
 ### Coronary Circulation
 
@@ -117,8 +297,7 @@ The four-chambered heart with fully separated left/right circuits is a mammalian
 
 **Interactive**
 
-- **Cardiac cycle explorer (Plotly)** — a synced multi-trace chart (a "Wiggers diagram": atrial pressure, ventricular pressure, aortic pressure, and ventricular volume across one full cardiac cycle) with a draggable time marker. Dragging it highlights which of the four valves are open/closed at that instant and flags the exact moment S1/S2 occur — turns "isovolumetric contraction/relaxation" from a memorized phrase into something a student scrubs through and sees.
-- **Conduction pathway walkthrough (click-through SVG/JS, no new library)** — a heart diagram where clicking SA node → AV node → bundle of His → Purkinje fibers in sequence lights up each structure and displays its conduction delay/speed, visually demonstrating *why* the AV node delay exists (atria finish emptying before ventricular contraction begins) instead of just stating it.
+*(Implemented inline above: the conduction pathway walkthrough sits directly below the cardiac conduction system paragraph, and the cardiac cycle explorer (Wiggers diagram) sits directly below the cardiac cycle paragraph.)*
 
 **Static**
 

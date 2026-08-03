@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en" dir="ltr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=63693&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="noindex, nofollow" />
   <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
@@ -9,7 +9,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
 <link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
 <title>Human Respiratory System – BiOGuide for Biology Olympiads</title>
-  <meta name="description" content="Upper and lower respiratory tract structure, larynx and pleural anatomy, the bronchial tree down to the alveolus, alveolar histology and surfactant, ventilation mechanics, lung volumes, and the structural basis of breathing control — split from the combined Circulatory/Respiratory page for full IBO depth." /><link rel="canonical" href="http://localhost:1313/resources/2-animal-anatomy/human-respiratory-system/" itemprop="url" />
+  <meta name="description" content="Upper and lower respiratory tract structure, larynx and pleural anatomy, the bronchial tree down to the alveolus, alveolar histology and surfactant, ventilation mechanics, lung volumes, and the structural basis of breathing control — split from the combined Circulatory/Respiratory page for full IBO depth." /><link rel="canonical" href="http://localhost:63693/resources/2-animal-anatomy/human-respiratory-system/" itemprop="url" />
 
 <meta property="og:title" content="Human Respiratory System">
 <meta
@@ -22,12 +22,12 @@
   content="
     website
   ">
-<meta property="og:url" content="http://localhost:1313/resources/2-animal-anatomy/human-respiratory-system/">
+<meta property="og:url" content="http://localhost:63693/resources/2-animal-anatomy/human-respiratory-system/">
 
 
 	<meta itemprop="name" content="Human Respiratory System">
 	<meta itemprop="description" content="Upper and lower respiratory tract structure, larynx and pleural anatomy, the bronchial tree down to the alveolus, alveolar histology and surfactant, ventilation mechanics, lung volumes, and the structural basis of breathing control — split from the combined Circulatory/Respiratory page for full IBO depth.">
-	<meta itemprop="wordCount" content="1681">
+	<meta itemprop="wordCount" content="1699">
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="Human Respiratory System">
 	<meta name="twitter:description" content="Upper and lower respiratory tract structure, larynx and pleural anatomy, the bronchial tree down to the alveolus, alveolar histology and surfactant, ventilation mechanics, lung volumes, and the structural basis of breathing control — split from the combined Circulatory/Respiratory page for full IBO depth.">
@@ -1477,8 +1477,157 @@
     href="../human-muscular-system/">Human Muscular System</a>) and the <strong>intercostal muscles</strong>, converting muscular contraction into the pressure changes that move air, via Boyle&rsquo;s law (pressure and volume are inversely related at constant temperature): diaphragm contraction (flattening downward) and external intercostal contraction (elevating the rib cage) together increase thoracic cavity volume, decreasing intrapulmonary pressure below atmospheric pressure and driving air inward (<strong>inspiration</strong>, always an active, muscular process). At rest, <strong>expiration</strong> is passive: muscles relax, elastic recoil of the lungs and thoracic wall reduces cavity volume, raising intrapulmonary pressure above atmospheric and driving air out; forced expiration (e.g. during exercise) additionally recruits the internal intercostals and abdominal muscles to actively reduce thoracic volume further.</p>
 <p><img src="/ANATOMYPICS/diaphragm-rib-cage-inspiration-expiration.jpg" alt="Inspiration (a): ribs and sternum raised, diaphragm contracted and flattened, thoracic volume increased, air entering. Expiration (b): ribs and sternum returned to resting position, diaphragm relaxed and arched upward, thoracic volume decreased, air expelled."  data-zoomable loading="lazy" />
 <em>Source: user-sourced (originally via microbiologynotes.com). Exact match for both phases of the ventilation cycle.</em></p>
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">🫁 Ventilation Mechanics Animator</h3>
+  <svg id="ventSvg" viewBox="0 0 300 260" style="width:100%; max-width:300px; display:block; margin:0 auto;">
+    <path d="M 50 40 Q 30 150 50 220" stroke="#8b5e34" stroke-width="6" fill="none"/>
+    <path d="M 250 40 Q 270 150 250 220" stroke="#8b5e34" stroke-width="6" fill="none"/>
+    <ellipse id="vent-lungL" cx="110" cy="120" rx="45" ry="65" fill="#f2b6ad" opacity="0.85"/>
+    <ellipse id="vent-lungR" cx="190" cy="120" rx="45" ry="65" fill="#f2b6ad" opacity="0.85"/>
+    <path id="vent-diaphragm" d="M 50 210 Q 150 175 250 210" stroke="#c0392b" stroke-width="5" fill="none" stroke-linecap="round"/>
+  </svg>
+  <input type="range" id="ventSlider" min="0" max="100" step="1" value="0" style="width:100%; accent-color:#2d6a4f; margin-top:0.5rem;">
+  <div style="display:flex; justify-content:space-between; font-size:0.75rem; color:#6b7280; margin-bottom:0.8rem;">
+    <span>Breath cycle: rest → inspiration → expiration → rest</span>
+  </div>
+  <div style="display:flex; gap:1.5rem; flex-wrap:wrap; font-size:0.85rem; color:#374151;">
+    <div>Phase: <strong id="ventPhaseOut">at rest</strong></div>
+    <div>Thoracic volume: <strong id="ventVolOut">2.30 L</strong></div>
+    <div>Intrapulmonary pressure: <strong id="ventPressOut">0.00 cmH₂O</strong></div>
+  </div>
+</div>
+<script>
+(function(){
+  var slider = document.getElementById('ventSlider');
+  var lungL = document.getElementById('vent-lungL');
+  var lungR = document.getElementById('vent-lungR');
+  var diaphragm = document.getElementById('vent-diaphragm');
+  var phaseOut = document.getElementById('ventPhaseOut');
+  var volOut = document.getElementById('ventVolOut');
+  var pressOut = document.getElementById('ventPressOut');
+
+  function lerp(a, b, f) { return a + (b - a) * f; }
+
+  function update(){
+    var s = parseFloat(slider.value);
+    var phase = (s / 100) * 2 * Math.PI;
+    var volumeFrac = (1 - Math.cos(phase)) / 2;
+    var flow = Math.sin(phase);
+    var pressure = -flow;
+
+    var diaphragmCenterY = lerp(175, 215, volumeFrac);
+    var lungRy = lerp(65, 90, volumeFrac);
+    var lungCy = lerp(120, 132, volumeFrac);
+
+    diaphragm.setAttribute('d', 'M 50 210 Q 150 ' + diaphragmCenterY + ' 250 210');
+    lungL.setAttribute('ry', lungRy); lungL.setAttribute('cy', lungCy);
+    lungR.setAttribute('ry', lungRy); lungR.setAttribute('cy', lungCy);
+
+    var volumeL = lerp(2.3, 2.8, volumeFrac);
+    volOut.textContent = volumeL.toFixed(2) + ' L';
+    pressOut.textContent = (pressure >= 0 ? '+' : '') + pressure.toFixed(2) + ' cmH₂O';
+
+    if (Math.abs(flow) < 0.05) {
+      phaseOut.textContent = 'at rest (no airflow)';
+    } else if (flow > 0) {
+      phaseOut.textContent = 'inspiration (pressure below atmospheric, air flowing in)';
+    } else {
+      phaseOut.textContent = 'expiration (pressure above atmospheric, air flowing out)';
+    }
+  }
+
+  slider.addEventListener('input', update);
+  update();
+})();
+</script>
 <h3>Lung Volumes and Capacities<span class="hx:absolute hx:-mt-20" id="lung-volumes-and-capacities"></span>
     <a href="#lung-volumes-and-capacities" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>A standard structural/functional breakdown, measured by spirometry: <strong>tidal volume (TV)</strong> — air moved in a single normal breath (~500 mL); <strong>inspiratory reserve volume (IRV)</strong> — additional air that can be forcibly inhaled beyond a normal tidal inspiration; <strong>expiratory reserve volume (ERV)</strong> — additional air that can be forcibly exhaled beyond a normal tidal expiration; <strong>residual volume (RV)</strong> — air remaining in the lungs after maximal forced expiration, which cannot be measured by spirometry directly (since it&rsquo;s never exhaled) and structurally exists because small airways collapse before the lung is completely empty. Sums of these define clinically/exam-relevant capacities: <strong>vital capacity</strong> (IRV + TV + ERV, the maximum air that can be actively moved) and <strong>total lung capacity</strong> (vital capacity + RV).</p>
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">📊 Lung Volumes Explorer</h3>
+  <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:0.8rem;" id="lungVolButtons"></div>
+  <div id="lungVolPlot" style="width:100%; height:220px;"></div>
+  <div style="font-size:0.85rem; color:#374151; margin-top:0.5rem;" id="lungVolInfo">Click a volume above to see its value and how it contributes to vital capacity and total lung capacity.</div>
+</div>
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js"></script>
+<script>
+(function() {
+  function initChart() {
+    if (typeof Plotly === 'undefined') { setTimeout(initChart, 100); return; }
+
+    var segments = [
+      { key: 'RV', name: 'Residual Volume (RV)', value: 1200, color: '#9ca3af', desc: 'Air remaining after maximal forced expiration — cannot be measured by spirometry since it is never exhaled. Contributes to total lung capacity but not vital capacity.' },
+      { key: 'ERV', name: 'Expiratory Reserve Volume (ERV)', value: 1100, color: '#c0392b', desc: 'Additional air that can be forcibly exhaled beyond a normal tidal expiration.' },
+      { key: 'TV', name: 'Tidal Volume (TV)', value: 500, color: '#2d6a4f', desc: 'Air moved in a single normal, quiet breath.' },
+      { key: 'IRV', name: 'Inspiratory Reserve Volume (IRV)', value: 3000, color: '#1f5c99', desc: 'Additional air that can be forcibly inhaled beyond a normal tidal inspiration.' }
+    ];
+    var vc = segments.filter(function(s){ return s.key !== 'RV'; }).reduce(function(a,s){ return a+s.value; }, 0);
+    var tlc = vc + segments.filter(function(s){ return s.key === 'RV'; })[0].value;
+
+    var buttonsEl = document.getElementById('lungVolButtons');
+    var infoEl = document.getElementById('lungVolInfo');
+    var selected = null;
+
+    segments.forEach(function(seg){
+      var b = document.createElement('button');
+      b.textContent = seg.key;
+      b.dataset.key = seg.key;
+      b.style.cssText = 'padding:6px 14px; border:2px solid ' + seg.color + '; border-radius:20px; background:white; color:' + seg.color + '; cursor:pointer; font-weight:600; font-size:0.85rem;';
+      b.addEventListener('click', function(){
+        selected = (selected === seg.key) ? null : seg.key;
+        render();
+      });
+      buttonsEl.appendChild(b);
+    });
+
+    function render(){
+      var x = segments.map(function(s){ return s.value; });
+      var trace = {
+        x: x,
+        y: segments.map(function(){ return 'Lung volumes'; }),
+        orientation: 'h',
+        type: 'bar',
+        marker: { color: segments.map(function(s){ return s.color; }) },
+        opacity: segments.map(function(s){ return selected === null || selected === s.key ? 1 : 0.2; }),
+        text: segments.map(function(s){ return s.key + ' (' + s.value + ' mL)'; }),
+        textposition: 'inside',
+        hoverinfo: 'text'
+      };
+      var layout = {
+        barmode: 'stack',
+        xaxis: { title: 'Volume (mL)', range: [0, tlc + 200] },
+        yaxis: { showticklabels: false },
+        margin: { t: 10, l: 20, r: 20, b: 40 },
+        plot_bgcolor: '#ffffff',
+        paper_bgcolor: '#ffffff',
+        showlegend: false
+      };
+      Plotly.react('lungVolPlot', [trace], layout, { responsive: true, displayModeBar: false });
+
+      Array.from(buttonsEl.children).forEach(function(b){
+        var seg = segments.filter(function(s){ return s.key === b.dataset.key; })[0];
+        var active = selected === seg.key;
+        b.style.background = active ? seg.color : 'white';
+        b.style.color = active ? 'white' : seg.color;
+      });
+
+      if (selected === null) {
+        infoEl.textContent = 'Vital capacity (IRV + TV + ERV) = ' + vc + ' mL. Total lung capacity (VC + RV) = ' + tlc + ' mL.';
+      } else {
+        var seg = segments.filter(function(s){ return s.key === selected; })[0];
+        infoEl.textContent = seg.name + ' = ' + seg.value + ' mL. ' + seg.desc;
+      }
+    }
+
+    render();
+    window.addEventListener('resize', function(){ Plotly.relayout('lungVolPlot', { autosize: true }); });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initChart);
+  } else {
+    initChart();
+  }
+})();
+</script>
 <h3>Control of Breathing<span class="hx:absolute hx:-mt-20" id="control-of-breathing"></span>
     <a href="#control-of-breathing" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Though primarily a physiology topic, the anatomical substrate is worth stating precisely: the <strong>medullary respiratory center</strong> (in the brainstem medulla, see <a
     href="../human-nervous-system/">Human Nervous System</a>) generates the basic rhythm of breathing, sending signals via the phrenic nerve (to the diaphragm) and intercostal nerves. <strong>Central chemoreceptors</strong> (in the medulla, sensitive to CSF pH, itself reflecting blood CO₂ via dissolved CO₂ crossing the blood-brain barrier and forming carbonic acid) provide the dominant drive to breathe under normal conditions; <strong>peripheral chemoreceptors</strong> (in the carotid bodies and aortic bodies, structurally positioned at major arterial branch points to directly sample arterial blood) respond primarily to blood O₂ (and, secondarily, CO₂/pH), becoming the dominant drive only when oxygen levels fall significantly.</p>
@@ -1497,10 +1646,7 @@
 </ul>
 <h2>Visual Reference<span class="hx:absolute hx:-mt-20" id="visual-reference"></span>
     <a href="#visual-reference" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p><strong>Interactive</strong></p>
-<ul>
-<li><strong>Ventilation mechanics animator (SVG/JS)</strong> — animate diaphragm position, thoracic volume, and intrapulmonary pressure together through one full breathing cycle — a live, visual Boyle&rsquo;s law demonstration rather than a static before/after pair.</li>
-<li><strong>Lung volumes explorer (Plotly)</strong> — a segmented spirometry-trace chart where toggling TV/IRV/ERV/RV highlights each volume&rsquo;s contribution to vital capacity and total lung capacity.</li>
-</ul>
+<p><em>(Implemented inline above: the ventilation mechanics animator sits directly below the ventilation mechanics image, and the lung volumes explorer sits directly below the lung volumes/capacities paragraph.)</em></p>
 <p><strong>Static</strong></p>
 <p><em>(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)</em></p>
 <h2>Practice Problems<span class="hx:absolute hx:-mt-20" id="practice-problems"></span>

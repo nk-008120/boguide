@@ -25,6 +25,86 @@ Two major skeletal grades: **cartilaginous** (Chondrichthyes — sharks, rays; s
 ![Zoom sequence from a whole fish (operculum, gill arch) to gill filaments to a single lamella, with countercurrent water flow (100%→70%→40%→15% O₂ saturation) running opposite to blood flow through the lamellar capillaries (80%→60%→30%→5% O₂ saturation) — the gradient never equalizes along the lamella's length.](/ANATOMYPICS/bony-fish-gill-arch-lamellae-countercurrent.webp)
 *Source: Pearson Education (© 2009, notice visible in the image), user-sourced via a ResearchGate figure. Confirm licensing basis before public deployment. Exact quantitative demonstration of the countercurrent-vs-concurrent gradient argument in the text.*
 
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:0.8rem;">
+    <h3 style="margin:0; color:#1a472a;">🐟 Countercurrent vs. Concurrent Gill Exchange</h3>
+    <button id="gillModeToggle" style="padding:6px 16px; border:none; border-radius:30px; background:#2d6a4f; color:white; cursor:pointer; font-weight:500; font-size:0.85rem;">Countercurrent</button>
+  </div>
+  <div id="gillPlot" style="width:100%; height:340px;"></div>
+  <div style="font-size:0.85rem; color:#374151; margin-top:0.5rem;">Blood O₂ saturation as it exits the gill: <strong id="gillExitOut">80%</strong></div>
+</div>
+
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js"></script>
+<script>
+(function() {
+  function initChart() {
+    if (typeof Plotly === 'undefined') { setTimeout(initChart, 100); return; }
+
+    function interp(keys, t) {
+      for (var i = 0; i < keys.length - 1; i++) {
+        var a = keys[i], b = keys[i + 1];
+        if (t >= a[0] && t <= b[0]) {
+          var f = (t - a[0]) / (b[0] - a[0]);
+          return a[1] + (b[1] - a[1]) * f;
+        }
+      }
+      return keys[keys.length - 1][1];
+    }
+
+    var ccWaterKeys = [[0,100],[33,70],[67,40],[100,15]];
+    var ccBloodKeys = [[0,80],[33,60],[67,30],[100,5]];
+    var coWaterKeys = [[0,100],[30,55],[60,35],[100,33]];
+    var coBloodKeys = [[0,5],[30,30],[60,34],[100,33]];
+
+    var xs = [];
+    for (var i = 0; i <= 100; i++) xs.push(i);
+
+    var toggleBtn = document.getElementById('gillModeToggle');
+    var exitOut = document.getElementById('gillExitOut');
+    var mode = 'counter';
+
+    function render() {
+      var waterKeys = mode === 'counter' ? ccWaterKeys : coWaterKeys;
+      var bloodKeys = mode === 'counter' ? ccBloodKeys : coBloodKeys;
+      var waterY = xs.map(function(t){ return interp(waterKeys, t); });
+      var bloodY = xs.map(function(t){ return interp(bloodKeys, t); });
+
+      var traceWater = { x: xs, y: waterY, mode: 'lines', name: 'Water O₂ (%)', line: { color: '#1f5c99', width: 3 } };
+      var traceBlood = { x: xs, y: bloodY, mode: 'lines', name: 'Blood O₂ (%)', line: { color: '#c0392b', width: 3 } };
+
+      var layout = {
+        xaxis: { range: [0, 100], title: mode === 'counter' ? 'Position along lamella (water flow direction, 0 → 100)' : 'Position along lamella (both flow the same direction, 0 → 100)' },
+        yaxis: { range: [0, 105], title: 'O₂ saturation (%)' },
+        legend: { orientation: 'h', y: 1.15 },
+        margin: { t: 30, l: 55, r: 20, b: 45 },
+        plot_bgcolor: '#ffffff',
+        paper_bgcolor: '#ffffff'
+      };
+
+      Plotly.react('gillPlot', [traceWater, traceBlood], layout, { responsive: true, displayModeBar: false });
+
+      var exitValue = mode === 'counter' ? interp(bloodKeys, 0) : interp(bloodKeys, 100);
+      exitOut.textContent = Math.round(exitValue) + '%';
+    }
+
+    toggleBtn.addEventListener('click', function(){
+      mode = mode === 'counter' ? 'concurrent' : 'counter';
+      toggleBtn.textContent = mode === 'counter' ? 'Countercurrent' : 'Concurrent';
+      toggleBtn.style.background = mode === 'counter' ? '#2d6a4f' : '#b1650f';
+      render();
+    });
+
+    render();
+    window.addEventListener('resize', function(){ Plotly.relayout('gillPlot', { autosize: true }); });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initChart);
+  } else {
+    initChart();
+  }
+})();
+</script>
+
 In bony fish, all four gill arches on each side are covered by a bony flap, the **operculum**, whose rhythmic movement (paired with mouth opening/closing) actively pumps water across the gills even when the fish is stationary; cartilaginous fish generally lack an operculum and rely more on forward swimming (ram ventilation) or dedicated spiracles.
 
 ![Fish skull and jaw musculature in two configurations (a, b), with the operculum, premaxilla, maxilla, dentary, preopercle, neurocranium, and named jaw/opercular muscles (EP, LAP, AM1/AM2/3, AAP, SH, HYP) labeled.](/ANATOMYPICS/operculum-buccal-pumping-mechanism.jpg)
@@ -66,6 +146,61 @@ A genuine structural hybrid, often using **three surfaces simultaneously**: **gi
 
 A **three-chambered heart** (two atria, one ventricle): a structural improvement on the fish heart (separate return paths from the body and the lungs/skin into two atria) but an incomplete one, since both atria still empty into a single, undivided ventricle. Mixing is reduced below what the shared chamber alone would suggest, however, by two structural features worth naming specifically: the ventricle's internal wall is **trabeculated** (ridged, spongy), which helps maintain some separation of oxygenated and deoxygenated blood streams as they pass through by favoring laminar, minimally mixing flow; and the **spiral valve**, a ridge within the conus arteriosus/outflow tract, preferentially directs the first (more deoxygenated) blood leaving the ventricle toward the pulmonary/cutaneous circuit and later (more oxygenated) blood toward the systemic circuit. This is a direct, structurally specific example of "functional separation without complete anatomical separation" and a good exam topic precisely because it shows structure compensating, imperfectly, for what a full septum would otherwise provide.
 
+<div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
+  <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;">
+    <h3 style="margin:0; color:#1a472a;">🫀 Heart Blood-Flow Animator</h3>
+    <div style="display:flex; gap:0.5rem; background:#f1f5f9; border-radius:40px; padding:4px;">
+      <button id="heartBtnFish" class="heart-toggle-btn" style="padding:6px 16px; border:none; border-radius:30px; background:#2d6a4f; color:white; cursor:pointer; font-weight:500; font-size:0.85rem;">Fish (2-chamber)</button>
+      <button id="heartBtnAmph" class="heart-toggle-btn" style="padding:6px 16px; border:none; border-radius:30px; background:#e2e8f0; color:#1e293b; cursor:pointer; font-weight:500; font-size:0.85rem;">Amphibian (3-chamber)</button>
+      <button id="heartBtnHuman" class="heart-toggle-btn" style="padding:6px 16px; border:none; border-radius:30px; background:#e2e8f0; color:#1e293b; cursor:pointer; font-weight:500; font-size:0.85rem;">Human (4-chamber)</button>
+    </div>
+  </div>
+  <div id="heartDiagram" style="display:flex; align-items:center; flex-wrap:wrap; gap:0.4rem; font-size:0.78rem; font-weight:600; color:white; min-height:100px;"></div>
+  <div style="font-size:0.85rem; color:#374151; margin-top:1rem;" id="heartExplain"></div>
+</div>
+
+<script>
+(function(){
+  var deoxy = '#1f5c99', oxy = '#c0392b', mixed = '#7a3f96', gradient = 'linear-gradient(90deg, #1f5c99, #c0392b)';
+  function box(label, color){ return '<div style="padding:10px 12px; border-radius:10px; background:' + color + '; text-align:center; min-width:100px;">' + label + '</div>'; }
+  function arrow(){ return '<div style="color:#374151; font-size:1.2rem;">→</div>'; }
+
+  var diagrams = {
+    fish: {
+      html: box('Sinus Venosus<br>(deoxy)', deoxy) + arrow() + box('Atrium<br>(deoxy)', deoxy) + arrow() + box('Ventricle<br>(deoxy)', deoxy) + arrow() + box('Conus Arteriosus<br>(deoxy)', deoxy) + arrow() + box('Gills<br>(gas exchange)', gradient) + arrow() + box('Body<br>(oxy → deoxy)', gradient) + arrow() + box('back to<br>Sinus Venosus', deoxy),
+      explain: 'Single circuit, single pump: all blood passes through one atrium and one ventricle before reaching the gills, then flows directly to the body with no second pump stage — pressure delivered to the body is necessarily lower than in a double-circuit heart.'
+    },
+    amphibian: {
+      html: box('Right Atrium<br>← Body (deoxy)', deoxy) + arrow() + box('Ventricle<br>(trabeculated,<br>reduced mixing)', mixed) + arrow() + box('Spiral valve<br>streams by stage', mixed) + arrow() + box('Pulmonary/<br>Cutaneous circuit<br>(deoxy-favored)', deoxy) + box('Systemic circuit<br>(oxy-favored)', oxy),
+      explain: "Three chambers: two atria return blood separately (deoxygenated from the body, oxygenated from lungs/skin), but both empty into one undivided ventricle. Trabeculation favors laminar, minimally-mixing flow, and the spiral valve in the outflow tract preferentially streams the first (more deoxygenated) blood toward the pulmonary/cutaneous circuit and later (more oxygenated) blood toward the systemic circuit — functional separation without a complete anatomical septum."
+    },
+    human: {
+      html: box('Right Atrium<br>(deoxy)', deoxy) + arrow() + box('Right Ventricle<br>(deoxy)', deoxy) + arrow() + box('Lungs<br>(gas exchange)', gradient) + arrow() + box('Left Atrium<br>(oxy)', oxy) + arrow() + box('Left Ventricle<br>(oxy)', oxy) + arrow() + box('Body<br>(oxy → deoxy)', gradient) + arrow() + box('back to<br>Right Atrium', deoxy),
+      explain: 'Four chambers, two fully separated circuits: the right heart pumps only deoxygenated blood to the lungs, the left heart pumps only oxygenated blood to the body. No mixing occurs at any point — the structural endpoint of the fish → amphibian → human progression shown by this widget.'
+    }
+  };
+
+  var diagramEl = document.getElementById('heartDiagram');
+  var explainEl = document.getElementById('heartExplain');
+  var buttons = { fish: document.getElementById('heartBtnFish'), amphibian: document.getElementById('heartBtnAmph'), human: document.getElementById('heartBtnHuman') };
+
+  function show(key){
+    diagramEl.innerHTML = diagrams[key].html;
+    explainEl.textContent = diagrams[key].explain;
+    Object.keys(buttons).forEach(function(k){
+      buttons[k].style.background = k === key ? '#2d6a4f' : '#e2e8f0';
+      buttons[k].style.color = k === key ? 'white' : '#1e293b';
+    });
+  }
+
+  buttons.fish.addEventListener('click', function(){ show('fish'); });
+  buttons.amphibian.addEventListener('click', function(){ show('amphibian'); });
+  buttons.human.addEventListener('click', function(){ show('human'); });
+
+  show('fish');
+})();
+</script>
+
 ### Amphibian Skin
 
 Thin, glandular, permeable (no scales in most adult amphibians, unlike fish or reptiles) — the same epidermis-over-dermis tissue plan as human skin (see [Human Integumentary System](../human-integumentary-system/)) but with minimal keratinization, dense mucous glands (keeping the surface moist, supporting cutaneous respiration) and, in many species, dense granular (poison) glands — a direct structural trade: a barrier permeable enough for gas exchange is also a barrier that offers little protection against desiccation or toxin absorption, which is why chemical defense (toxin-secreting glands) is so widespread in this lineage specifically.
@@ -94,8 +229,7 @@ Thin, glandular, permeable (no scales in most adult amphibians, unlike fish or r
 
 **Interactive**
 
-- **Countercurrent vs. concurrent gill exchange graph (Plotly)** — plot O₂ concentration in water and in blood along the length of a gill lamella for both flow arrangements side by side, showing quantitatively why countercurrent flow extracts more oxygen instead of just stating it.
-- **Heart blood-flow animator (click-through, 2- vs. 3- vs. 4-chambered)** — toggle between fish, amphibian, and human hearts with animated arrows tracing oxygenated vs. deoxygenated blood, including the amphibian spiral valve's preferential-streaming effect visibly reducing (not eliminating) mixing.
+*(Implemented inline above: the countercurrent vs. concurrent gill exchange graph sits directly below the gill lamellae image, and the heart blood-flow animator sits directly below the amphibian circulatory structure paragraph.)*
 
 **Static**
 

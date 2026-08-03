@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BiOGuide for Biology Olympiads – Biosystematics</title>
-    <link>http://localhost:1313/resources/4-biosystematics/</link>
+    <link>http://localhost:63693/resources/4-biosystematics/</link>
     <description>Recent content in Biosystematics on BiOGuide for Biology Olympiads</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://localhost:1313/resources/4-biosystematics/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:63693/resources/4-biosystematics/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Classification Principles &amp; Nomenclature</title>
-      <link>http://localhost:1313/resources/4-biosystematics/classification-principles-nomenclature/</link>
+      <link>http://localhost:63693/resources/4-biosystematics/classification-principles-nomenclature/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/4-biosystematics/classification-principles-nomenclature/</guid>
+      <guid>http://localhost:63693/resources/4-biosystematics/classification-principles-nomenclature/</guid>
       <description>
         
         
@@ -157,10 +157,10 @@
     
     <item>
       <title>Species Concepts</title>
-      <link>http://localhost:1313/resources/4-biosystematics/species-concepts/</link>
+      <link>http://localhost:63693/resources/4-biosystematics/species-concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/4-biosystematics/species-concepts/</guid>
+      <guid>http://localhost:63693/resources/4-biosystematics/species-concepts/</guid>
       <description>
         
         
@@ -176,7 +176,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/4-biosystematics/classification-principles-nomenclature/&#34;&gt;Classification Principles Nomenclature&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/4-biosystematics/classification-principles-nomenclature/&#34;&gt;Classification Principles Nomenclature&lt;/a&gt;
     
   
   
@@ -291,10 +291,10 @@
     
     <item>
       <title>Phylogenetic Trees &amp; Cladistics</title>
-      <link>http://localhost:1313/resources/4-biosystematics/phylogenetic-trees-cladistics/</link>
+      <link>http://localhost:63693/resources/4-biosystematics/phylogenetic-trees-cladistics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/4-biosystematics/phylogenetic-trees-cladistics/</guid>
+      <guid>http://localhost:63693/resources/4-biosystematics/phylogenetic-trees-cladistics/</guid>
       <description>
         
         
@@ -310,7 +310,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/4-biosystematics/classification-principles-nomenclature/&#34;&gt;Classification Principles Nomenclature&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/4-biosystematics/classification-principles-nomenclature/&#34;&gt;Classification Principles Nomenclature&lt;/a&gt;
     
   
   
@@ -451,10 +451,10 @@
     
     <item>
       <title>Molecular Systematics</title>
-      <link>http://localhost:1313/resources/4-biosystematics/molecular-systematics/</link>
+      <link>http://localhost:63693/resources/4-biosystematics/molecular-systematics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/4-biosystematics/molecular-systematics/</guid>
+      <guid>http://localhost:63693/resources/4-biosystematics/molecular-systematics/</guid>
       <description>
         
         
@@ -470,7 +470,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/4-biosystematics/phylogenetic-trees-cladistics/&#34;&gt;Phylogenetic Trees Cladistics&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/4-biosystematics/phylogenetic-trees-cladistics/&#34;&gt;Phylogenetic Trees Cladistics&lt;/a&gt;
     
   
   
@@ -593,10 +593,10 @@
     
     <item>
       <title>Domains &amp; Kingdoms</title>
-      <link>http://localhost:1313/resources/4-biosystematics/domains-kingdoms/</link>
+      <link>http://localhost:63693/resources/4-biosystematics/domains-kingdoms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/4-biosystematics/domains-kingdoms/</guid>
+      <guid>http://localhost:63693/resources/4-biosystematics/domains-kingdoms/</guid>
       <description>
         
         
@@ -612,7 +612,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/4-biosystematics/molecular-systematics/&#34;&gt;Molecular Systematics&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/4-biosystematics/molecular-systematics/&#34;&gt;Molecular Systematics&lt;/a&gt;
     
   
   
@@ -780,10 +780,10 @@
     
     <item>
       <title>Major Taxa Cross-Reference</title>
-      <link>http://localhost:1313/resources/4-biosystematics/major-taxa-cross-reference/</link>
+      <link>http://localhost:63693/resources/4-biosystematics/major-taxa-cross-reference/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/4-biosystematics/major-taxa-cross-reference/</guid>
+      <guid>http://localhost:63693/resources/4-biosystematics/major-taxa-cross-reference/</guid>
       <description>
         
         
@@ -799,7 +799,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/4-biosystematics/domains-kingdoms/&#34;&gt;Domains Kingdoms&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/4-biosystematics/domains-kingdoms/&#34;&gt;Domains Kingdoms&lt;/a&gt;
     
   
   
@@ -970,10 +970,10 @@
     
     <item>
       <title>Taxonomic Keys &amp; Identification</title>
-      <link>http://localhost:1313/resources/4-biosystematics/taxonomic-keys-identification/</link>
+      <link>http://localhost:63693/resources/4-biosystematics/taxonomic-keys-identification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/4-biosystematics/taxonomic-keys-identification/</guid>
+      <guid>http://localhost:63693/resources/4-biosystematics/taxonomic-keys-identification/</guid>
       <description>
         
         
@@ -989,7 +989,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/4-biosystematics/classification-principles-nomenclature/&#34;&gt;Classification Principles Nomenclature&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:63693/resources/4-biosystematics/classification-principles-nomenclature/&#34;&gt;Classification Principles Nomenclature&lt;/a&gt;
     
   
   
