@@ -18,34 +18,34 @@ The section runs in four tiers:
 Start with [Mechanisms of Behavior](Mechanisms-of-Behavior/) — it introduces the proximate/ultimate distinction (Tinbergen's four questions) that every later page assumes when explaining *why* a behavior exists.
 
 {{< cards cols="1" >}}
-  {{< card link="Mechanisms-of-Behavior/" title="1. Mechanisms of Behavior" subtitle="Proximate vs. ultimate causation, fixed action patterns, sign stimuli — read this first." >}}
+  {{< card link="mechanisms-of-behavior/" title="1. Mechanisms of Behavior" subtitle="Proximate vs. ultimate causation, fixed action patterns, sign stimuli — read this first." >}}
 {{< /cards >}}
 
 ### Foundations of Behavior
 
 {{< cards cols="2" >}}
-  {{< card link="Mechanisms-of-Behavior/" title="1. Mechanisms of Behavior" subtitle="Tinbergen's four questions, neural/hormonal control, fixed action patterns, sign stimuli, motivation" tag="Beginner" >}}
-  {{< card link="Development-Learning/" title="2. Development & Learning" subtitle="Innate vs. learned behavior, critical periods, imprinting, conditioning, observational and insight learning" tag="Intermediate" >}}
+  {{< card link="mechanisms-of-behavior/" title="1. Mechanisms of Behavior" subtitle="Tinbergen's four questions, neural/hormonal control, fixed action patterns, sign stimuli, motivation" tag="Beginner" >}}
+  {{< card link="development-learning/" title="2. Development & Learning" subtitle="Innate vs. learned behavior, critical periods, imprinting, conditioning, observational and insight learning" tag="Intermediate" >}}
 {{< /cards >}}
 
 ### Communication & Orientation
 
 {{< cards cols="2" >}}
-  {{< card link="Animal-Communication/" title="3. Animal Communication" subtitle="Signal modalities, honest signaling vs. deception, ritualization, alarm calls" tag="Intermediate" >}}
-  {{< card link="Orientation-Navigation/" title="4. Orientation & Navigation" subtitle="Kinesis vs. taxis, compass and map senses, celestial and magnetic cues, migration" tag="Intermediate" >}}
+  {{< card link="animal-communication/" title="3. Animal Communication" subtitle="Signal modalities, honest signaling vs. deception, ritualization, alarm calls" tag="Intermediate" >}}
+  {{< card link="orientation-navigation/" title="4. Orientation & Navigation" subtitle="Kinesis vs. taxis, compass and map senses, celestial and magnetic cues, migration" tag="Intermediate" >}}
 {{< /cards >}}
 
 ### Behavioral Ecology
 
 {{< cards cols="3" >}}
-  {{< card link="Foraging-Anti-Predator-Behavior/" title="5. Foraging & Anti-Predator Behavior" subtitle="Optimal foraging theory, marginal value theorem, predator-prey arms race, vigilance and dilution" tag="Advanced" >}}
-  {{< card link="Mating-Systems-Sexual-Selection/" title="6. Mating Systems & Sexual Selection" subtitle="Intersexual and intrasexual selection, mating system diversity, sperm competition, parental investment" tag="Advanced" >}}
-  {{< card link="Kin-Selection-Altruism-Eusociality/" title="7. Kin Selection, Altruism & Eusociality" subtitle="Hamilton's rule, inclusive fitness, reciprocal altruism, haplodiploidy, eusociality" tag="Advanced" >}}
+  {{< card link="foraging-anti-predator-behavior/" title="5. Foraging & Anti-Predator Behavior" subtitle="Optimal foraging theory, marginal value theorem, predator-prey arms race, vigilance and dilution" tag="Advanced" >}}
+  {{< card link="mating-systems-sexual-selection/" title="6. Mating Systems & Sexual Selection" subtitle="Intersexual and intrasexual selection, mating system diversity, sperm competition, parental investment" tag="Advanced" >}}
+  {{< card link="kin-selection-altruism-eusociality/" title="7. Kin Selection, Altruism & Eusociality" subtitle="Hamilton's rule, inclusive fitness, reciprocal altruism, haplodiploidy, eusociality" tag="Advanced" >}}
 {{< /cards >}}
 
 ### Social Structure & Rhythms
 
 {{< cards cols="2" >}}
-  {{< card link="Aggression-Territoriality-Social-Structure/" title="8. Aggression, Territoriality & Social Structure" subtitle="Game theory (hawk-dove, ESS), dominance hierarchies, territorial economics, group living" tag="Intermediate" >}}
-  {{< card link="Biological-Rhythms/" title="9. Biological Rhythms" subtitle="Circadian and circannual rhythms, photoperiodism, entrainment, the suprachiasmatic nucleus" tag="Intermediate" >}}
+  {{< card link="aggression-territoriality-social-structure/" title="8. Aggression, Territoriality & Social Structure" subtitle="Game theory (hawk-dove, ESS), dominance hierarchies, territorial economics, group living" tag="Intermediate" >}}
+  {{< card link="biological-rhythms/" title="9. Biological Rhythms" subtitle="Circadian and circannual rhythms, photoperiodism, entrainment, the suprachiasmatic nucleus" tag="Intermediate" >}}
 {{< /cards >}}

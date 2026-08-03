@@ -16,35 +16,35 @@ Plant Anatomy builds outward from shared tissue vocabulary to whole organs to re
 Start with [Plant Tissue Systems](Plant-Tissue-Systems/) — every later page assumes its meristem and tissue-system vocabulary.
 
 {{< cards cols="1" >}}
-  {{< card link="Plant-Tissue-Systems/" title="1. Plant Tissue Systems" subtitle="Meristems, parenchyma/collenchyma/sclerenchyma, dermal/ground/vascular systems — read this first." >}}
+  {{< card link="plant-tissue-systems/" title="1. Plant Tissue Systems" subtitle="Meristems, parenchyma/collenchyma/sclerenchyma, dermal/ground/vascular systems — read this first." >}}
 {{< /cards >}}
 
 ### Tissue Foundations
 
 {{< cards cols="2" >}}
-  {{< card link="Plant-Tissue-Systems/" title="1. Plant Tissue Systems" subtitle="Meristem zonation, parenchyma/collenchyma/sclerenchyma, cell wall structure" tag="Beginner" >}}
-  {{< card link="Xylem-Phloem-Vascular-Tissue/" title="2. Xylem, Phloem & Vascular Tissue" subtitle="Tracheids, vessel elements, sieve tube elements, vascular bundle arrangements" tag="Intermediate" >}}
+  {{< card link="plant-tissue-systems/" title="1. Plant Tissue Systems" subtitle="Meristem zonation, parenchyma/collenchyma/sclerenchyma, cell wall structure" tag="Beginner" >}}
+  {{< card link="xylem-phloem-vascular-tissue/" title="2. Xylem, Phloem & Vascular Tissue" subtitle="Tracheids, vessel elements, sieve tube elements, vascular bundle arrangements" tag="Intermediate" >}}
 {{< /cards >}}
 
 ### Vegetative Organs
 
 {{< cards cols="3" >}}
-  {{< card link="Root-Anatomy/" title="3. Root Anatomy" subtitle="Casparian strip, pericycle-derived lateral roots, monocot vs. dicot stele" tag="Intermediate" >}}
-  {{< card link="Stem-Anatomy/" title="4. Stem Anatomy" subtitle="Eustele vs. atactostele, nodes/axillary buds, endarch xylem" tag="Intermediate" >}}
-  {{< card link="Leaf-Anatomy/" title="5. Leaf Anatomy" subtitle="Mesophyll organization, stomatal complex, Kranz (C4) and CAM anatomy" tag="Intermediate" >}}
+  {{< card link="root-anatomy/" title="3. Root Anatomy" subtitle="Casparian strip, pericycle-derived lateral roots, monocot vs. dicot stele" tag="Intermediate" >}}
+  {{< card link="stem-anatomy/" title="4. Stem Anatomy" subtitle="Eustele vs. atactostele, nodes/axillary buds, endarch xylem" tag="Intermediate" >}}
+  {{< card link="leaf-anatomy/" title="5. Leaf Anatomy" subtitle="Mesophyll organization, stomatal complex, Kranz (C4) and CAM anatomy" tag="Intermediate" >}}
 {{< /cards >}}
 
 ### Secondary Growth & Comparative
 
 {{< cards cols="2" >}}
-  {{< card link="Secondary-Growth-Wood-Anatomy/" title="6. Secondary Growth & Wood Anatomy" subtitle="Vascular/cork cambium, growth rings, heartwood/sapwood, periderm" tag="Advanced" >}}
-  {{< card link="Monocot-Dicot-Comparative-Anatomy/" title="7. Monocot vs Dicot Comparative Anatomy" subtitle="Every monocot/dicot contrast in one place, plus floral merosity and pollen aperture" tag="Intermediate" >}}
+  {{< card link="secondary-growth-wood-anatomy/" title="6. Secondary Growth & Wood Anatomy" subtitle="Vascular/cork cambium, growth rings, heartwood/sapwood, periderm" tag="Advanced" >}}
+  {{< card link="monocot-dicot-comparative-anatomy/" title="7. Monocot vs Dicot Comparative Anatomy" subtitle="Every monocot/dicot contrast in one place, plus floral merosity and pollen aperture" tag="Intermediate" >}}
 {{< /cards >}}
 
 ### Reproductive Structures & Survey
 
 {{< cards cols="3" >}}
-  {{< card link="Flower-Anatomy-Reproductive-Structures/" title="8. Flower Anatomy & Reproductive Structures" subtitle="Floral whorls, microsporogenesis, megasporogenesis, double fertilization" tag="Advanced" >}}
-  {{< card link="Seed-Fruit-Anatomy/" title="9. Seed & Fruit Anatomy" subtitle="Seed coat, endosperm vs. perisperm, pericarp layers, fruit classification" tag="Intermediate" >}}
-  {{< card link="Plant-Body-Plans-Major-Lineages/" title="10. Plant Body Plans Across Major Lineages" subtitle="Bryophytes to angiosperms, alternation of generations, gametophyte reduction" tag="Advanced" >}}
+  {{< card link="flower-anatomy-reproductive-structures/" title="8. Flower Anatomy & Reproductive Structures" subtitle="Floral whorls, microsporogenesis, megasporogenesis, double fertilization" tag="Advanced" >}}
+  {{< card link="seed-fruit-anatomy/" title="9. Seed & Fruit Anatomy" subtitle="Seed coat, endosperm vs. perisperm, pericarp layers, fruit classification" tag="Intermediate" >}}
+  {{< card link="plant-body-plans-major-lineages/" title="10. Plant Body Plans Across Major Lineages" subtitle="Bryophytes to angiosperms, alternation of generations, gametophyte reduction" tag="Advanced" >}}
 {{< /cards >}}

@@ -2,6 +2,31 @@
 title: "Study Resources" 
 weight: 1 
 --- 
+
+## Browse All Subjects
+
+Sections marked **✅ Verified** have gone through our full review workflow (see [About](../about/)) and are considered complete; the rest are still in progress.
+
+{{< cards cols="3" >}}
+  {{< card link="1-cell-molecular/" title="1. Molecular, Cell Biology & Biochemistry" subtitle="Cell structure, biomolecules, enzymes, membrane transport, and core biochemical pathways." >}}
+  {{< card link="2-animal-anatomy/" title="2. Animal Anatomy" subtitle="Structural anatomy for IBO/USABO, from human systems to comparative vertebrate and invertebrate body plans." tag="✅ Verified" tagColor="green" >}}
+  {{< card link="3-animal-physiology/" title="3. Animal Physiology" subtitle="The function-side complement to Animal Anatomy: regulatory and organ-system mechanisms across taxa." tag="✅ Verified" tagColor="green" >}}
+  {{< card link="4-biosystematics/" title="4. Biosystematics" subtitle="Classification and phylogenetics: taxonomic hierarchy, species concepts, cladistics, molecular systematics." >}}
+  {{< card link="5-plant-physiology/" title="5. Plant Physiology" subtitle="Water/nutrient transport, photosynthetic biochemistry, hormone-driven growth, and stress physiology." tag="✅ Verified" tagColor="green" >}}
+  {{< card link="6-plant-anatomy/" title="6. Plant Anatomy" subtitle="Plant tissue systems, root/stem/leaf structure, and reproductive anatomy." >}}
+  {{< card link="7-genetics/" title="7. Genetics" subtitle="Mendelian transmission genetics, molecular mechanisms of gene expression, and population/biotech implications." >}}
+  {{< card link="8-ecology/" title="8. Ecology" subtitle="Population dynamics, community ecology, ecosystems, biogeography, and conservation biology." >}}
+  {{< card link="9-ethology/" title="9. Ethology" subtitle="Animal behavior: proximate/ultimate causation, learning, communication, and social structure." >}}
+  {{< card link="10-bioinformatics/" title="10. Bioinformatics" subtitle="Databases, BLAST, alignments, phylogenetics, genome analysis, and protein structure." tag="✅ Verified" tagColor="green" >}}
+  {{< card link="11-practical-1/" title="11. Practical I" subtitle="Coming soon." >}}
+  {{< card link="12-practical-2/" title="12. Practical II" subtitle="Coming soon." >}}
+  {{< card link="13-practical-3/" title="13. Practical III" subtitle="Coming soon." >}}
+  {{< card link="14-practical-4/" title="14. Plant Computational Biology" subtitle="ImageJ/Fiji image analysis and Streamlit interactive plotting for the IBO practical." tag="✅ Verified" tagColor="green" >}}
+  {{< card link="15-evolution/" title="15. Evolution" subtitle="Evidence for evolution, population genetics, speciation, macroevolution, and evo-devo." tag="✅ Verified" tagColor="green" >}}
+{{< /cards >}}
+
+---
+
 Biology by istelf is a vast field with endless resources to familiarise yourself with, however here are some of the most useful books and resources you can use , they have been classified accordingly; in <span style="background-color: pink; font-size=1.23rem;"> https://drive.google.com/drive/folders/1zWTpU6g_YoZRL8_xIiP0UOvb8pHzM6vG?usp=drive_link </span>. Note that it is not always implied that Grade B< Grade A< Grade S, Rather, it is a matter of choice derived from relevance and recommendations. If you are interested in participating in such grading processes and want to help, fill out a <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_FbhYS1IraA1s6F7zFLzkILBZvRceDqdoMqV7yTH6hu0k-g/viewform" target="blanl">Survey</a> and we will make sure to contact you!
 
 The equivalent folder for practice question papers from various biology competitions around the world have been added in <a href="https://drive.google.com/drive/folders/1ZErb3YopEleXaGFlu_BZN2LtaYWj637P?usp=drive_link" target="blank">HERE(not filled yet)</a>. Password for previous IBO papers are found <a href="https://www.reddit.com/r/biologyolympiads/comments/13pp7hi/does_anyone_knows_the_password_to_past_pappers_of/">HERE</a>(legal reasons), use them at discretion. If you feel that there are some papers missing and you can provide them, please mail them to resourcerepository4boguide@gmail.com .
