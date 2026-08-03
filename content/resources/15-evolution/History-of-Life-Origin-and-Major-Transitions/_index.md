@@ -16,7 +16,12 @@ syllabus_tags: ["IBO", "USABO", "evolution"]
 
 ### Abiogenesis and the RNA World Hypothesis
 
-**Abiogenesis** is the origin of the first living systems from non-living chemical precursors on early Earth (roughly 3.5–4 billion years ago). The **Miller-Urey experiment** (1953) demonstrated that amino acids and other organic monomers can form spontaneously from a simulated early-Earth atmosphere (in the original experiment: methane, ammonia, hydrogen, water vapor) subjected to electrical discharge (simulating lightning) — strong evidence that the building blocks of life could arise abiotically, though the experiment's original atmospheric composition assumption is now considered a simplification of actual early-Earth conditions. The **RNA world hypothesis** addresses the specific "chicken-and-egg" problem of which came first, self-replicating information (historically DNA's job) or catalysis (historically protein's job): **ribozymes** (catalytic RNA molecules, discovered by Cech and Altman) demonstrate that RNA alone can both store genetic information *and* catalyze reactions, including, critically, catalyzing its own replication — meaning an early self-replicating system could plausibly have run on RNA alone, before DNA (a more chemically stable information-storage molecule) and proteins (more versatile catalysts) took over their respective specialized roles. The **ribosome itself** — a ribozyme at its catalytic core (peptide bond formation is catalyzed by rRNA, not protein) — is often cited as a "molecular fossil" of this RNA-dominated stage, still functioning at the heart of protein synthesis in every living cell today.
+**Abiogenesis** is the origin of the first living systems from non-living chemical precursors on early Earth (roughly 3.5–4 billion years ago). The **Miller-Urey experiment** (1953) demonstrated that amino acids and other organic monomers can form spontaneously from a simulated early-Earth atmosphere (in the original experiment: methane, ammonia, hydrogen, water vapor) subjected to electrical discharge (simulating lightning) — strong evidence that the building blocks of life could arise abiotically, though the experiment's original atmospheric composition assumption is now considered a simplification of actual early-Earth conditions.
+
+![Miller-Urey apparatus: primitive-atmosphere gases (methane, ammonia, hydrogen) are subjected to an electrical spark simulating lightning, water vapor circulates from a heated ocean flask, a condenser cools the circulating vapor, and the resulting liquid containing newly formed organic compounds collects in a sampling trap](/EVOLUTIONPICS/miller-urey-apparatus.svg)
+*Source: Wikipedia*
+
+The **RNA world hypothesis** addresses the specific "chicken-and-egg" problem of which came first, self-replicating information (historically DNA's job) or catalysis (historically protein's job): **ribozymes** (catalytic RNA molecules, discovered by Cech and Altman) demonstrate that RNA alone can both store genetic information *and* catalyze reactions, including, critically, catalyzing its own replication — meaning an early self-replicating system could plausibly have run on RNA alone, before DNA (a more chemically stable information-storage molecule) and proteins (more versatile catalysts) took over their respective specialized roles. The **ribosome itself** — a ribozyme at its catalytic core (peptide bond formation is catalyzed by rRNA, not protein) — is often cited as a "molecular fossil" of this RNA-dominated stage, still functioning at the heart of protein synthesis in every living cell today.
 
 ### Endosymbiotic Theory
 
@@ -28,15 +33,27 @@ syllabus_tags: ["IBO", "USABO", "evolution"]
 - **Binary fission** — both organelles replicate by splitting in two independently of the host cell's mitotic cycle, the same mechanism bacteria use to divide.
 - **Molecular phylogeny** — sequencing mitochondrial and chloroplast genes and building a tree (see [Molecular Systematics](../../4-biosystematics/molecular-systematics/)) consistently places them within, respectively, the alphaproteobacteria and the cyanobacteria, not as an independent lineage.
 
+![Primary endosymbiotic origin of the chloroplast: a heterotrophic eukaryotic host cell engulfs a cyanobacterium, which is retained rather than digested; a subsequent secondary endosymbiosis event (a different eukaryote engulfing this newly plastid-bearing cell) leaves a vestigial nucleus alongside the plastid in the new host. Note: this diagram illustrates the chloroplast side of endosymbiotic theory specifically (starting from a host that already has mitochondria); it does not separately depict the earlier alphaproteobacterium-engulfment step that gave rise to mitochondria](/EVOLUTIONPICS/endosymbiotic-theory-mitochondria-chloroplast.jpg)
+*Source: Biology LibreTexts*
+
+![Primary vs. secondary endosymbiosis compared side by side: primary endosymbiosis (top) shows an ancestral host cell, already containing a mitochondrion and nucleus, engulfing a cyanobacterium to produce a chloroplast bounded by two membranes; secondary endosymbiosis (bottom) shows a different ancestral host cell engulfing that entire photosynthetic eukaryote (alga), producing a chloroplast bounded by four membranes and a nucleomorph (the alga's degenerate, vestigial nucleus) retained between the membrane layers](/EVOLUTIONPICS/primary-secondary-endosymbiosis-membranes.png)
+*Source: user-provided (ScienceDirect Topics page, "Endosymbiosis")*
+
 Mitochondrial acquisition is generally considered to have occurred once, in a single ancestor of all mitochondria-bearing eukaryotes (explaining why even eukaryotic lineages that have since lost or drastically reduced their mitochondria retain vestigial mitochondrial-derived organelles), while chloroplast acquisition via primary endosymbiosis is more narrowly restricted to the Archaeplastida lineage — other photosynthetic eukaryotes (e.g. some SAR-clade algae) acquired plastids instead via **secondary endosymbiosis**, engulfing an already-eukaryotic, chloroplast-bearing alga rather than a cyanobacterium directly, which is why some algal plastids show three or four membranes rather than two.
 
 ### The Origin of Multicellularity
 
 Multicellularity — the transition from a single free-living cell to an organism composed of many cooperating, genetically identical or clonal cells — is confirmed to have evolved **independently multiple times** across very different lineages (animals, plants, fungi, and several algal groups each acquired it separately), rather than being a single ancestral innovation inherited by all multicellular life. The core requirement in each independent origin is the same: cells that would otherwise be capable of independent reproduction must instead cooperate, dividing labor (e.g. some cells specializing in reproduction while others do not) and suppressing the fitness advantage any single "cheating" cell might otherwise gain by reproducing selfishly at the group's expense — a problem directly analogous to the within-group cheater problem discussed for [kin selection and eusociality](../../9-ethology/Kin-Selection-Altruism-Eusociality/) in social insects, except resolved at the level of cells within one body rather than individuals within a colony. **Volvocine algae** (a lineage ranging from the single-celled *Chlamydomonas* through colonial *Gonium* and *Pandorina* to the fully differentiated multicellular *Volvox*, with distinct somatic and reproductive cell types) are a heavily studied case specifically because the lineage preserves living examples at multiple points along the transition, rather than requiring inference from extinct intermediates alone.
 
+![Volvocine algae series from single-celled Chlamydomonas through colonial Gonium, Pandorina, and Yamagishiella to Eudorina/Pleodorina and fully differentiated Volvox, with the parallel evolution of reproductive mode labeled beneath — isogamy (identical, undifferentiated gametes) in the simpler colonial forms, transitioning through anisogamy to oogamy (a large, non-motile female gamete and small, motile male gamete) in Volvox](/EVOLUTIONPICS/volvocine-algae-series.webp)
+*Source: ResearchGate, fig. 1, "Simplified diagram for stepwise evolution of colonial volvocine algae"*
+
 ### The Geologic Timescale's Major Biological Milestones
 
 The **geologic timescale** (dated by radiometric methods, most commonly measuring the decay of a radioactive parent isotope to a stable daughter isotope with a known half-life) provides the absolute dates that anchor every transition above and every phylogeny's branch lengths (see the molecular clock discussion in [Molecular Systematics](../../4-biosystematics/molecular-systematics/)). Key milestones worth holding in sequence: first prokaryotic life (~3.5 billion years ago (bya), evidenced by stromatolites — layered sedimentary structures built by cyanobacterial mats); the **Great Oxidation Event** (~2.4 bya, atmospheric oxygen accumulation from cyanobacterial photosynthesis, which both enabled aerobic mitochondrial metabolism and was toxic to many contemporary anaerobic lineages); first eukaryotes (~1.8–2 bya, following mitochondrial endosymbiosis); the **Cambrian explosion** (~541 million years ago (mya), a geologically rapid diversification of nearly all major extant animal phyla's body plans, discussed further in [Macroevolutionary Patterns & Mass Extinctions](../Macroevolutionary-Patterns-and-Mass-Extinctions/)); and the first land plants and animals (~470–430 mya).
+
+![Geologic timescale from the Hadean (4540 mya, Earth's formation) through the Archean and Proterozoic (bacteria, algae, jellyfish) to the Phanerozoic eon's Paleozoic, Mesozoic, and Cenozoic eras, with periods/epochs and their defining biological milestones labeled (earliest land animals in the Silurian, first seed plants in the Devonian, first dinosaurs in the Triassic, first birds in the Jurassic, rise of mammals in the Tertiary); the "big five" mass extinctions (Ordovician, Devonian, Permian, Triassic, K-T) are marked alongside their estimated death rates](/EVOLUTIONPICS/geologic-timescale-milestones.jpg)
+*Source: user-provided (geologyscience.com)*
 
 ## Comparative Structures
 
@@ -61,15 +78,14 @@ The **geologic timescale** (dated by radiometric methods, most commonly measurin
 **Interactive**
 
 - **Endosymbiosis evidence checklist tool (HTML/JS, no new library)** — the user is presented with an unlabeled organelle and a set of candidate evidence lines (membrane count, DNA shape, ribosome size, division mechanism), checking off which apply to build up the case for bacterial origin piece by piece rather than being told the conclusion first.
+
+{{< iframe src="/endosymbiosis-evidence-checklist.html" title="Endosymbiosis evidence checklist" height="440px" >}}
+
 - **Geologic timescale explorer (interactive SVG/JS, horizontal timeline)** — a zoomable/scrollable timeline from 4 bya to present, with clickable milestone markers (first life, Great Oxidation Event, first eukaryotes, Cambrian explosion, first land life) each revealing the dating method and key evidence for that milestone.
 
-**Static**
+{{< iframe src="/geologic-timescale-explorer.html" title="Geologic timescale explorer" height="440px" >}}
 
-- Endosymbiotic theory diagram: sequential engulfment of an alphaproteobacterium (mitochondria) then a cyanobacterium (chloroplasts) by an ancestral host cell
-- Primary vs. secondary endosymbiosis membrane-count comparison diagram
-- Volvocine algae series illustration: *Chlamydomonas*, *Gonium*, *Pandorina*, *Volvox*, with somatic/reproductive cell differentiation labeled in *Volvox*
-- Miller-Urey apparatus schematic with inputs (simulated atmosphere, electrical spark) and outputs (organic monomers) labeled
-- Geologic timescale strip showing the milestones listed above in sequence with absolute dates
+**Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here)*
 
 ## Practice Problems
 

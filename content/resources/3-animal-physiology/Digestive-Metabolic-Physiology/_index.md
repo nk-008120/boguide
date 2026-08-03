@@ -24,9 +24,15 @@ Digestion is a sequential division of labor, each region's enzymes matched to th
 
 <span class="badge-custom">Exam tip</span> Pancreatic proteases are secreted as inactive zymogens specifically to prevent the pancreas from autodigesting its own tissue — a direct structural safeguard worth stating explicitly on any question about zymogen activation, not just naming the enzymes.
 
+![Digestive zymogen activation: pepsinogen to pepsin (via HCl and pepsin autocatalysis) in the stomach; trypsinogen to trypsin (via enteropeptidase) in the pancreas/duodenum, plus other pancreatic zymogens (chymotrypsinogen, proelastase, procarboxypeptidases); a general inactive-zymogen-to-active-enzyme mechanism panel; and a coagulation-zymogen analogy (prothrombin/fibrinogen) showing the same activation logic outside digestion](/ANIMALPHYSIOPICS/zymogen-activation-pepsinogen-trypsinogen.avif)
+*Source: GetOnCourse AI (USMLE Step 1 prep) — exceeds spec with bonus pancreatic zymogens and a coagulation-cascade analogy; does not explicitly draw the chymotrypsinogen-to-chymotrypsin arrow (trypsin as activator) called for in the original spec. Confirm licensing basis before public deployment.*
+
 ### Bile and Lipid Emulsification
 
 **Bile** (produced by the liver, concentrated and stored in the gallbladder, see [Human Digestive System](../../2-animal-anatomy/human-digestive-system/)) contains **bile salts**, amphipathic molecules that emulsify large fat globules into smaller droplets, vastly increasing the surface area available to pancreatic lipase (which, being water-soluble, can only act at a droplet's surface, not within a large globule's interior). This is a purely mechanical/physical action, not enzymatic digestion — bile does not itself break any chemical bond in a lipid.
+
+![Fat digestion overview: liver/gallbladder/stomach/small intestine gross anatomy with lipid droplets and bile salts shown entering the duodenum; a detailed sequence showing bile-salt emulsification of a lipid droplet into emulsion droplets, lipase hydrolysis into free fatty acids/monoglycerides, micelle formation with bile salts, and brush-border absorption into the epithelial cell where triglycerides are resynthesized and packaged into chylomicrons; plus a micelle cross-section showing the hydrophilic-head/hydrophobic-tail arrangement](/ANIMALPHYSIOPICS/bile-emulsification-lipase-action.png)
+*Source: classnotes123.com — precise match for the emulsification step, plus extends into the full absorption/chylomicron sequence covered again in more intracellular detail below. Confirm licensing basis before public deployment.*
 
 ### Digestive Hormones and Meal Coordination
 
@@ -50,12 +56,22 @@ graph LR;
     E --> F;
 ```
 
+![GI hormones and their effects: secretin (duodenum/jejunum, triggered by acidic chyme, releases pancreatic bicarbonate and inhibits gastric acid), CCK (duodenum/jejunum, triggered by fatty acids/amino acids/fatty ultra-may retention, stimulates gallbladder contraction and slows gastric emptying), and gastrin (stomach, triggered by amino acids/stomach distension/vagus nerve, stimulates gastric acid secretion and motility) — with bonus hormones GIP, motilin, and ghrelin also shown](/ANIMALPHYSIOPICS/gastrin-secretin-cck-meal-response.jpg)
+*Source: user-provided (via Instagram repost) — covers gastrin, secretin, and CCK as a static effects panel rather than a meal-timeline cascade, plus bonus hormones (GIP, motilin, ghrelin) beyond the three discussed in the text. Confirm licensing basis before public deployment.*
+
 ### Nutrient Absorption Mechanisms
 
 Absorption across the small intestine's brush border (see [Human Digestive System](../../2-animal-anatomy/human-digestive-system/) for villus/microvillus structure) uses mechanisms specific to each nutrient class:
 
 - **Monosaccharides and amino acids** — absorbed by **secondary active transport**: a Na⁺/glucose (or Na⁺/amino acid) **cotransporter** moves the nutrient into the cell alongside Na⁺ moving down its own electrochemical gradient (that gradient itself maintained by the basolateral Na⁺/K⁺-ATPase, the same pump underlying the neuron resting potential on the [Nervous System Physiology](../nervous-system-physiology/) page) — the nutrient itself is not directly using ATP, but is "riding" the Na⁺ gradient that ATP hydrolysis elsewhere maintains, hence "secondary."
+
+![Intestinal brush border Na+/glucose cotransport: SGLT1 moves 2 Na+ and glucose/galactose into the cell from the lumen, GLUT2 moves glucose/galactose out into the blood at the basolateral membrane, with the basolateral Na+/K+-ATPase maintaining the Na+ gradient that powers SGLT1; a parallel GLUT5 fructose pathway is also shown; a bonus second panel shows the analogous SGLT2/SGLT1/GLUT2/GLUT1 arrangement along the kidney's proximal tubule](/ANIMALPHYSIOPICS/sodium-glucose-cotransport-brush-border.webp)
+*Source: ResearchGate, fig. 5 — precise spec match (SGLT1, GLUT2, basolateral ATPase) plus a bonus renal-reabsorption panel. Journal figure, open-access status not confirmed. Revisit before public deployment.*
+
 - **Lipids** — bile-salt-emulsified fat droplets are further broken down by lipase into free fatty acids and monoglycerides, which associate with bile salts into **micelles** (small, soluble aggregates that shuttle the otherwise water-insoluble lipid products to the brush border membrane, where they diffuse across, being lipid-soluble themselves). Inside the epithelial cell, they are reassembled into triglycerides and packaged with proteins into **chylomicrons**, which exit not into the blood capillary directly but into the **lacteal** (a lymphatic capillary within the villus, see [Human Circulatory System](../../2-animal-anatomy/human-circulatory-system/) for lymphatic structure) — a distinct absorption route from the direct capillary uptake used by monosaccharides and amino acids.
+
+![Two-panel lipid absorption sequence: (A) intracellular pathway — micelle-delivered lipids (1) enter the epithelial cell, are resynthesized to triacylglycerol (2), processed through the Golgi (3), and exit via the capillary/lacteal (4, 5); (B) the lacteal's connection to the wider lymphatic system — intestinal villi capillaries feed collecting vessels, through a lymph node, ultimately draining into the left subclavian vein and the venous system back to the heart](/ANIMALPHYSIOPICS/micelle-chylomicron-lacteal-absorption.webp)
+*Source: abdominalkey.com — precise spec match for the intracellular chylomicron pathway, plus a bonus panel tracing the lacteal's full lymphatic drainage route to the subclavian vein/heart.*
 
 ### Metabolic Rate
 
@@ -82,15 +98,14 @@ Absorption across the small intestine's brush border (see [Human Digestive Syste
 **Interactive**
 
 - **Meal-response hormone timeline (Plotly)** — a timeline chart plotting gastrin, secretin, and CCK levels against time since a meal begins, with toggleable curves and annotations marking when food enters the stomach vs. duodenum — makes the sequential, trigger-based hormone cascade visible as a timeline rather than a static three-row table.
+
+{{< iframe src="/meal-response-hormone-timeline.html" title="Meal-response hormone timeline" height="480px" >}}
+
 - **Nutrient absorption pathway selector (click-through SVG/JS)** — selecting "carbohydrate/protein" vs. "lipid" animates that nutrient's specific path from the intestinal lumen through the brush border and into either the blood capillary or the lacteal, visually contrasting the two absorption routes side by side.
 
-**Static**
+{{< iframe src="/nutrient-absorption-pathway-selector.html" title="Nutrient absorption pathway selector" height="480px" >}}
 
-- GI tract diagram with each region's major enzyme(s)/secretion(s) labeled in sequence (paired with the timeline above)
-- Zymogen activation diagram: pepsinogen→pepsin, trypsinogen→trypsin (via enterokinase), chymotrypsinogen→chymotrypsin (via trypsin)
-- Bile emulsification diagram: large fat globule → bile-salt-coated smaller droplets → lipase action at increased surface area
-- Na⁺/glucose cotransporter mechanism at the brush border membrane, basolateral Na⁺/K⁺-ATPase shown maintaining the gradient
-- Micelle formation and chylomicron packaging/lacteal entry, sequential diagram
+**Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here — still outstanding: a GI tract diagram with each region's major enzyme(s)/secretion(s) labeled in sequence)*
 
 ## Practice Problems
 

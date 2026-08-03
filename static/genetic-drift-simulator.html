@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genetic Drift Population-Size Simulator | BioGuide</title>
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js"></script>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .row { display: flex; gap: 14px; margin-bottom: 12px; flex-wrap: wrap; }
+  .row label { font-size: 0.82rem; font-weight: 600; display: flex; flex-direction: column; gap: 4px; flex: 1; min-width: 140px; }
+  .row select, .row input[type=number] { padding: 6px 8px; border-radius: 8px; border: 1px solid #cbd5e1; }
+  #plot-div { width: 100%; height: 320px; }
+  .actions { display: flex; gap: 10px; justify-content: center; margin-top: 0.6rem; }
+  .action-btn {
+    background: #2d6a4f; color: #fff; border: none; padding: 8px 20px;
+    border-radius: 999px; font-size: 0.85rem; cursor: pointer;
+  }
+  .action-btn.secondary { background: #94a3b8; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Genetic Drift Population-Size Simulator</h3>
+  <div class="subtitle">Run repeated stochastic trials at a chosen population size and watch allele-frequency trajectories diverge (or not).</div>
+  <div class="row">
+    <label>Population size (N)
+      <select id="popSize">
+        <option value="20">20 (small)</option>
+        <option value="200" selected>200 (medium)</option>
+        <option value="2000">2000 (large)</option>
+      </select>
+    </label>
+    <label>Number of trial lineages
+      <select id="numTrials">
+        <option value="5">5</option>
+        <option value="10" selected>10</option>
+        <option value="20">20</option>
+      </select>
+    </label>
+  </div>
+  <div id="plot-div"></div>
+  <div class="actions">
+    <button class="action-btn" id="runBtn">Run 50 generations</button>
+    <button class="action-btn secondary" id="resetBtn">Reset</button>
+  </div>
+</div>
+<script>
+(function(){
+  var generations = 50;
+
+  function simulateTrial(N){
+    var p = 0.5;
+    var traj = [p];
+    for (var g = 0; g < generations; g++){
+      var count = 0;
+      for (var i = 0; i < N; i++){
+        if (Math.random() < p) count++;
+      }
+      p = count / N;
+      traj.push(p);
+      if (p <= 0 || p >= 1){
+        for (var k = g+1; k < generations; k++){ traj.push(p); }
+        break;
+      }
+    }
+    return traj;
+  }
+
+  function run(){
+    var N = parseInt(document.getElementById('popSize').value, 10);
+    var trials = parseInt(document.getElementById('numTrials').value, 10);
+    var traces = [];
+    for (var t = 0; t < trials; t++){
+      var traj = simulateTrial(N);
+      traces.push({
+        y: traj,
+        x: traj.map(function(_, i){ return i; }),
+        mode: 'lines',
+        line: { width: 1.6 },
+        showlegend: false
+      });
+    }
+    var layout = {
+      margin: { t: 10, r: 10, b: 40, l: 40 },
+      xaxis: { title: 'Generation' },
+      yaxis: { title: 'Allele frequency', range: [0, 1] }
+    };
+    Plotly.react('plot-div', traces, layout, { responsive: true, displayModeBar: false });
+  }
+
+  document.getElementById('runBtn').addEventListener('click', run);
+  document.getElementById('resetBtn').addEventListener('click', function(){
+    Plotly.react('plot-div', [{ y:[0.5], x:[0], mode:'lines', showlegend:false }], { margin:{t:10,r:10,b:40,l:40}, xaxis:{title:'Generation'}, yaxis:{title:'Allele frequency', range:[0,1]} }, {responsive:true, displayModeBar:false});
+  });
+  document.getElementById('popSize').addEventListener('change', run);
+  document.getElementById('numTrials').addEventListener('change', run);
+
+  run();
+})();
+</script>
+</body>
+</html>

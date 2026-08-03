@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red Queen Relative-Fitness Simulator | BioGuide</title>
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js"></script>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  #plot-div { width: 100%; height: 340px; }
+  .actions { display: flex; gap: 10px; justify-content: center; margin-top: 0.6rem; }
+  .action-btn {
+    background: #2d6a4f; color: #fff; border: none; padding: 8px 20px;
+    border-radius: 999px; font-size: 0.85rem; cursor: pointer;
+  }
+  .action-btn.secondary { background: #94a3b8; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Red Queen Relative-Fitness Simulator</h3>
+  <div class="subtitle">Toxin level and resistance level escalate together — but the relative-fitness gap between them stays bounded near a constant baseline even as both absolute values keep climbing.</div>
+  <div id="plot-div"></div>
+  <div class="actions">
+    <button class="action-btn" id="runBtn">Advance 10 generations</button>
+    <button class="action-btn secondary" id="resetBtn">Reset</button>
+  </div>
+</div>
+<script>
+(function(){
+  var gen = 0;
+  var toxin = [10];
+  var resist = [8];
+  var gap = [10-8];
+
+  function step(){
+    var lastToxin = toxin[toxin.length-1];
+    var lastResist = resist[resist.length-1];
+    if (lastToxin > lastResist){
+      lastResist += 1.5 + Math.random()*1.5; // resistance catches up
+    } else {
+      lastToxin += 1.5 + Math.random()*1.5; // toxin escalates further
+    }
+    toxin.push(lastToxin);
+    resist.push(lastResist);
+    gap.push(lastToxin - lastResist);
+    gen++;
+  }
+
+  function render(){
+    var xs = toxin.map(function(_, i){ return i; });
+    var traces = [
+      { x: xs, y: toxin, mode: 'lines', line: { color: '#d9534f', width: 2.5 }, name: 'Newt toxin level', yaxis: 'y' },
+      { x: xs, y: resist, mode: 'lines', line: { color: '#1d70a2', width: 2.5 }, name: 'Snake resistance level', yaxis: 'y' },
+      { x: xs, y: gap, mode: 'lines', line: { color: '#2d6a4f', width: 2, dash: 'dot' }, name: 'Gap (relative fitness proxy)', yaxis: 'y2' }
+    ];
+    var layout = {
+      margin: { t: 10, r: 50, b: 40, l: 50 },
+      xaxis: { title: 'Generation' },
+      yaxis: { title: 'Absolute trait level' },
+      yaxis2: { title: 'Gap', overlaying: 'y', side: 'right', range: [-5, 5] },
+      legend: { orientation: 'h', y: -0.25 }
+    };
+    Plotly.react('plot-div', traces, layout, { responsive: true, displayModeBar: false });
+  }
+
+  document.getElementById('runBtn').addEventListener('click', function(){
+    for (var i = 0; i < 10; i++){ step(); }
+    render();
+  });
+  document.getElementById('resetBtn').addEventListener('click', function(){
+    gen = 0; toxin = [10]; resist = [8]; gap = [2];
+    render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

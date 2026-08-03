@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geologic Timescale Explorer | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.4rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  #bar-wrap { position: relative; height: 60px; margin: 0 10px; }
+  #bar {
+    position: absolute; top: 24px; left: 0; right: 0; height: 10px;
+    border-radius: 6px;
+    background: linear-gradient(to right, #7c9070, #a8c090, #d6e4c8, #f0e6b8, #eaf2f8);
+  }
+  .marker {
+    position: absolute;
+    top: 12px;
+    width: 22px;
+    height: 22px;
+    margin-left: -11px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid #1d70a2;
+    cursor: pointer;
+    transition: transform 0.15s;
+  }
+  .marker:hover { transform: scale(1.2); }
+  .marker.active { background: #1d70a2; transform: scale(1.25); }
+  .tick-label {
+    position: absolute;
+    top: 2px;
+    font-size: 0.65rem;
+    color: #94a3b8;
+  }
+  #info {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 1rem 1.2rem;
+    margin-top: 1.6rem;
+    min-height: 130px;
+  }
+  #info h4 { margin: 0 0 4px 0; color: #1a472a; }
+  #info .date { font-size: 0.8rem; color: #64748b; margin-bottom: 8px; }
+  #info .method { font-size: 0.82rem; color: #1d70a2; font-weight: 600; margin-bottom: 6px; }
+  #info .desc { font-size: 0.9rem; line-height: 1.5; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Geologic Timescale Explorer</h3>
+  <div class="subtitle">Click each milestone (positioned by actual age along a linear 3.5 billion year timeline) to see its dating method and key evidence.</div>
+  <div id="bar-wrap">
+    <div class="tick-label" style="left:0%;">3.5 bya</div>
+    <div class="tick-label" style="left:100%; transform: translateX(-100%);">Present</div>
+    <div id="bar"></div>
+  </div>
+  <div id="info"></div>
+</div>
+<script>
+(function(){
+  var maxAge = 3500; // mya, first-life anchor for scale
+  var milestones = [
+    {
+      name: 'First prokaryotic life',
+      age: 3500,
+      method: 'Dating method: radiometric dating of the surrounding rock strata.',
+      desc: 'Evidenced by <b>stromatolites</b> — layered sedimentary structures built by cyanobacterial mats trapping and cementing sediment over time.'
+    },
+    {
+      name: 'Great Oxidation Event',
+      age: 2400,
+      method: 'Dating method: radiometric dating of banded iron formations that record the shift from an oxygen-poor to oxygen-rich ocean.',
+      desc: 'Atmospheric oxygen accumulated from cyanobacterial photosynthesis — a turning point that both enabled aerobic (mitochondrial) metabolism and was toxic to many contemporary anaerobic lineages.'
+    },
+    {
+      name: 'First eukaryotes',
+      age: 1900,
+      method: 'Dating method: molecular clock estimates calibrated against the fossil record, cross-checked with early eukaryote-like microfossils.',
+      desc: 'Followed mitochondrial endosymbiosis — an alphaproteobacterium engulfed and retained by a host cell (see Endosymbiotic Theory above).'
+    },
+    {
+      name: 'Cambrian explosion',
+      age: 541,
+      method: 'Dating method: radiometric dating of volcanic ash layers bracketing the Cambrian strata.',
+      desc: 'A geologically rapid diversification of nearly all major extant animal phyla’s body plans — discussed further on Macroevolutionary Patterns & Mass Extinctions.'
+    },
+    {
+      name: 'First land plants & animals',
+      age: 450,
+      method: 'Dating method: radiometric dating of the fossil-bearing strata in which the earliest land plant spores and animal trackways occur.',
+      desc: 'Marks life’s transition out of aquatic environments onto land, roughly 450–470 million years ago.'
+    }
+  ];
+
+  var barWrap = document.getElementById('bar-wrap');
+  var info = document.getElementById('info');
+  var markerEls = [];
+
+  milestones.forEach(function(m, i){
+    var pct = ((maxAge - m.age) / maxAge) * 100;
+    var marker = document.createElement('div');
+    marker.className = 'marker';
+    marker.style.left = pct + '%';
+    marker.title = m.name;
+    marker.addEventListener('click', function(){ select(i); });
+    barWrap.appendChild(marker);
+    markerEls.push(marker);
+  });
+
+  function select(i){
+    markerEls.forEach(function(el, idx){ el.classList.toggle('active', idx === i); });
+    var m = milestones[i];
+    info.innerHTML = '<h4>' + m.name + '</h4><div class="date">~' + m.age.toLocaleString() + ' million years ago</div><div class="method">' + m.method + '</div><div class="desc">' + m.desc + '</div>';
+  }
+
+  select(0);
+})();
+</script>
+</body>
+</html>

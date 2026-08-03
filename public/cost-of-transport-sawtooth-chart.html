@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cost of Transport by Gait | BioGuide</title>
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js" charset="utf-8"></script>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .readout { background:#eef2e6; border-radius: 12px; padding: 10px 14px; font-size: 0.85rem; margin-top:0.6rem; }
+  .readout b { color:#2d6a4f; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Cost of Transport by Gait</h3>
+  <div class="subtitle">Oxygen consumption per unit distance vs. speed for a horse choosing its own gait freely — cost rises within a gait as speed increases, then drops sharply at each gait transition.</div>
+  <div id="plot" style="width:100%; height:400px;"></div>
+  <div class="readout">Each transition (walk→trot, trot→gallop) happens at the speed where the next gait becomes cheaper per unit distance than continuing the current one — the sawtooth pattern is direct experimental evidence that gait transitions minimize energy cost, not just top speed being reached.</div>
+</div>
+<script>
+(function(){
+  var walkSpeeds = [], walkCost = [];
+  var trotSpeeds = [], trotCost = [];
+  var gallopSpeeds = [], gallopCost = [];
+
+  for (var v=0.5; v<=1.8; v+=0.05){
+    walkSpeeds.push(v);
+    walkCost.push(0.55 + 0.35*Math.pow((v-0.5)/1.3, 2));
+  }
+  for (var v2=1.8; v2<=4.0; v2+=0.05){
+    trotSpeeds.push(v2);
+    trotCost.push(0.42 + 0.22*Math.pow((v2-1.8)/2.2, 2));
+  }
+  for (var v3=4.0; v3<=8.0; v3+=0.05){
+    gallopSpeeds.push(v3);
+    gallopCost.push(0.5 + 0.18*Math.pow((v3-4.0)/4.0, 2));
+  }
+
+  Plotly.newPlot('plot', [
+    {x:walkSpeeds, y:walkCost, name:'Walk', mode:'lines', line:{color:'#1d70a2', width:3}},
+    {x:trotSpeeds, y:trotCost, name:'Trot', mode:'lines', line:{color:'#e67e22', width:3}},
+    {x:gallopSpeeds, y:gallopCost, name:'Gallop', mode:'lines', line:{color:'#dc2626', width:3}}
+  ], {
+    xaxis: {title:'Speed (m/s)', gridcolor:'#e9ecef'},
+    yaxis: {title:'Cost of transport (O2 per unit distance)', gridcolor:'#e9ecef'},
+    shapes: [
+      {type:'line', x0:1.8, x1:1.8, y0:0.3, y1:1.0, line:{color:'#6b7280', width:1, dash:'dot'}},
+      {type:'line', x0:4.0, x1:4.0, y0:0.3, y1:1.0, line:{color:'#6b7280', width:1, dash:'dot'}}
+    ],
+    annotations: [
+      {x:1.8, y:0.98, text:'Walk→Trot transition', showarrow:false, font:{size:10}},
+      {x:4.0, y:0.98, text:'Trot→Gallop transition', showarrow:false, font:{size:10}}
+    ],
+    legend: {orientation:'h', y:-0.2},
+    margin: {t:20, l:60, r:20, b:45},
+    plot_bgcolor:'#ffffff', paper_bgcolor:'#ffffff'
+  }, {responsive:true, displayModeBar:false});
+})();
+</script>
+</body>
+</html>

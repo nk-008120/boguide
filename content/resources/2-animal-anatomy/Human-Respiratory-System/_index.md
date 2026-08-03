@@ -18,9 +18,15 @@ This page covers the structural anatomy of the airway from nose to alveolus, the
 
 Air entering through the **nasal cavity** passes over three bony **conchae (turbinates)**, projections that increase surface area and create turbulent airflow — structurally maximizing contact with the mucous membrane lining, which warms, humidifies, and filters incoming air (trapped particles are swept posteriorly by ciliated pseudostratified columnar epithelium, see [Body Plans](../body-plans/), toward the pharynx to be swallowed). The **pharynx** (nasopharynx, oropharynx, laryngopharynx) is a shared passage for both air and food, structurally requiring the protective reflexes at the larynx described below.
 
+![Sagittal head/neck section labeling the nasal conchae, nasal meatuses, nasopharynx, oropharynx, laryngopharynx, uvula, palatine/pharyngeal/lingual tonsils, epiglottis, vocal/vestibular folds, thyroid and cricoid cartilage, and trachea/esophagus.](/ANATOMYPICS/upper-respiratory-tract-sagittal-section.jpg)
+*Source: user-sourced (originally via WTCS Pressbooks). Exceeds spec — labels the full pharyngeal subdivision and tonsil ring alongside the conchae.*
+
 ### Larynx
 
 The larynx sits at the pharyngo-tracheal junction, built around a cartilaginous framework: the large **thyroid cartilage** (its anterior prominence forms the "Adam's apple"), the **cricoid cartilage** (a complete ring, the only one in the airway, sitting inferior to the thyroid cartilage), and the leaf-shaped **epiglottis** (attached at the thyroid cartilage, projecting upward), which folds down to cover the laryngeal opening during swallowing — a direct, structurally simple mechanism preventing food/liquid from entering the trachea, and a common applied-anatomy question (aspiration occurs when this mechanism fails or is bypassed). Within the larynx, paired **vocal folds (cords)** — folds of mucous membrane overlying the **vocalis muscle** — vibrate as air passes between them; the muscles controlling fold tension and the width of the gap between them (the **glottis**) determine pitch and volume.
+
+![Larynx structure in anterior and right lateral view: epiglottis, hyoid bone, thyroid cartilage and laryngeal prominence, cricoid cartilage, tracheal cartilages, cricothyroid/cricotracheal ligaments, plus (lateral view) the arytenoid, corniculate, and cuneiform cartilages and the vocal/vestibular folds.](/ANATOMYPICS/larynx-cartilages-vocal-folds.webp)
+*Source: user-sourced (originally via microbenotes.com). Exceeds spec with the smaller paired cartilages (arytenoid/corniculate/cuneiform) beyond thyroid/cricoid/epiglottis.*
 
 ### Trachea and Bronchial Tree
 
@@ -38,17 +44,29 @@ graph TD;
 
 The **trachea's C-shaped cartilage rings** are open posteriorly (the gap bridged by smooth muscle, the **trachealis**), so the adjacent esophagus can bulge forward slightly during swallowing without obstruction, while the cartilage still keeps the airway rigidly open elsewhere around its circumference. Moving distally through the bronchial tree, cartilage support progressively diminishes and disappears entirely at the bronchiole level, replaced functionally by smooth muscle — meaning bronchiole diameter (and therefore airway resistance) is actively regulated by smooth muscle tone (bronchoconstriction/bronchodilation) rather than fixed by rigid cartilage, a direct structural link to conditions like asthma. The distinction between **terminal bronchioles** (purely conducting airway, no alveoli, contributing to **anatomical dead space** — air that never reaches a gas-exchange surface) and **respiratory bronchioles** (the first airway generation bearing scattered alveoli) is a specific, testable structural boundary.
 
+![Full airway from nasal cavity through pharynx, larynx (vocal fold, thyroid/cricoid cartilage), trachea, and the branching bronchial tree (right/left main bronchi, color-coded lobar bronchi, intermediate bronchus) down into each lung lobe, with an inset zoom showing alveolar sacs, capillary beds, and the pulmonary artery/vein at a single alveolus.](/ANATOMYPICS/bronchial-tree-trachea-to-alveoli.jpg)
+*Source: user-sourced (originally attempted via a ScienceDirect topic page). Exceeds spec with the alveolar-level inset showing capillary beds directly.*
+
 ### Lung Gross Anatomy and Pleura
 
 The right lung has **three lobes** (superior, middle, inferior), the left lung has **two lobes** (superior, inferior) plus a small tongue-shaped **lingula** (structurally displaced by the heart's position) — this left/right asymmetry is a standard structural fact worth stating precisely rather than assuming symmetry. Each lung is invaginated into a double-layered serous sac: the **visceral pleura** (adherent directly to the lung surface) and **parietal pleura** (lining the thoracic wall and diaphragm), separated by a thin film of pleural fluid in the **pleural cavity**. This arrangement is mechanically essential to ventilation: the pleural cavity's slightly negative (subatmospheric) pressure holds the visceral and parietal layers in close apposition (similarly to two wet glass slides resisting separation while still sliding freely against each other), so that when the thoracic wall/diaphragm moves, the lung is mechanically dragged along with it rather than collapsing inward on its own elastic recoil — a **pneumothorax** (air entering the pleural cavity, eliminating the negative pressure) causes lung collapse, direct evidence of this structural dependency.
+
+![Detailed right lung anatomy: surfaces and hilum relations (medial view, with the pulmonary artery/veins, bronchi, and azygos vein at the hilum), plus separate lobes-and-fissures views (anteromedial and costal surface) showing the superior/middle/inferior lobes and horizontal/oblique fissures.](/ANATOMYPICS/lung-lobes-pleura-layers.jpg)
+*Source: user-sourced (originally via clinicalpub.com). **Gap from spec**: extremely detailed on the right lung's three lobes and hilum structures, but doesn't show the left lung (so no direct 3-lobe-vs-2-lobe comparison) and doesn't separately label the visceral/parietal pleura layers themselves.*
 
 ### Alveolar Structure
 
 **Alveoli** are the functional gas-exchange unit: thin-walled sacs, clustered in grape-like arrangements at the end of alveolar ducts, with two structurally distinct cell types in their wall. **Type I alveolar cells** (squamous, the majority of the surface area) provide the thin gas-exchange surface — together with the adjacent capillary endothelium and a fused shared basement membrane, only two cell layers separate air from blood, a minimal diffusion distance that is the entire structural basis for efficient gas exchange. **Type II alveolar cells** (cuboidal, fewer in number but more numerous by cell count since they are smaller) secrete **surfactant** — a phospholipid mixture that reduces surface tension at the air-liquid interface lining each alveolus, preventing smaller alveoli from collapsing into larger ones (by Laplace's law, surface tension would otherwise generate higher collapsing pressure in smaller-radius alveoli) — a direct structure-function link tested via surfactant-deficiency conditions in premature infants, where Type II cells have not yet matured. Adjacent alveoli are additionally connected by small openings, the **pores of Kohn**, allowing collateral air movement and pressure equalization between neighboring alveoli.
 
+![Alveolar structure (g) showing Type I and Type II alveolar cells, capillaries, endothelial cells, elastic fibers, and an alveolar macrophage; zoomed exchange-surface view (h) showing an RBC in a capillary separated from the alveolar air space by endothelium, fused basement membranes, and surfactant-lined alveolar epithelium — a 0.1-1.5 μm total diffusion distance — with a blue arrow marking the gas-exchange path.](/ANATOMYPICS/alveolar-wall-type-1-2-cells.png)
+*Source: Dee Unglaub Silverthorn,* Human Physiology: An Integrated Approach*. Commercial textbook figure — confirm licensing basis before public deployment. Exceeds spec — directly labels the diffusion-distance value and surfactant location, both discussed in the text.*
+
 ### Ventilation Mechanics
 
 Ventilation is driven mechanically by the **diaphragm** (see [Human Muscular System](../human-muscular-system/)) and the **intercostal muscles**, converting muscular contraction into the pressure changes that move air, via Boyle's law (pressure and volume are inversely related at constant temperature): diaphragm contraction (flattening downward) and external intercostal contraction (elevating the rib cage) together increase thoracic cavity volume, decreasing intrapulmonary pressure below atmospheric pressure and driving air inward (**inspiration**, always an active, muscular process). At rest, **expiration** is passive: muscles relax, elastic recoil of the lungs and thoracic wall reduces cavity volume, raising intrapulmonary pressure above atmospheric and driving air out; forced expiration (e.g. during exercise) additionally recruits the internal intercostals and abdominal muscles to actively reduce thoracic volume further.
+
+![Inspiration (a): ribs and sternum raised, diaphragm contracted and flattened, thoracic volume increased, air entering. Expiration (b): ribs and sternum returned to resting position, diaphragm relaxed and arched upward, thoracic volume decreased, air expelled.](/ANATOMYPICS/diaphragm-rib-cage-inspiration-expiration.jpg)
+*Source: user-sourced (originally via microbiologynotes.com). Exact match for both phases of the ventilation cycle.*
 
 ### Lung Volumes and Capacities
 
@@ -80,12 +98,7 @@ The alveolar, tidal-ventilation lung plan described here contrasts directly with
 
 **Static**
 
-- Upper respiratory tract sagittal section with conchae labeled
-- Larynx structure with cartilages and vocal folds
-- Full bronchial tree from trachea to alveoli, cartilage support fading out at the bronchiole level
-- Lung lobes (right 3 vs. left 2 + lingula) with pleura layers shown
-- Alveolar wall cross-section showing Type I/II cells and the capillary interface
-- Diaphragm position and rib cage movement, inspiration vs. expiration, paired with the interactive animator above
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
 
 ## Practice Problems
 

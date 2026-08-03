@@ -24,7 +24,13 @@ If a population is **not evolving** at a given locus, genotype frequencies are p
 
 $$p^2 + 2pq + q^2 = 1$$
 
-where $p^2$ is the predicted frequency of homozygous dominant (AA) individuals, $2pq$ is the predicted frequency of heterozygous (Aa) individuals (counting both the A-from-mother/a-from-father and a-from-mother/A-from-father combinations), and $q^2$ is the predicted frequency of homozygous recessive (aa) individuals. A population satisfying this equation, with allele and genotype frequencies remaining constant across generations, is said to be in **Hardy-Weinberg equilibrium (HWE)**. Critically, HWE is reached in a *single generation* of random mating given the assumptions below, regardless of the starting genotype frequencies — HWE describes an equilibrium *ratio*, not a claim that frequencies never change from an arbitrary starting point over multiple generations.
+where $p^2$ is the predicted frequency of homozygous dominant (AA) individuals, $2pq$ is the predicted frequency of heterozygous (Aa) individuals (counting both the A-from-mother/a-from-father and a-from-mother/A-from-father combinations), and $q^2$ is the predicted frequency of homozygous recessive (aa) individuals. A population satisfying this equation, with allele and genotype frequencies remaining constant across generations, is said to be in **Hardy-Weinberg equilibrium (HWE)**. Critically, HWE is reached in a *single generation* of random mating given the assumptions below, regardless of the starting genotype frequencies — HWE describes an equilibrium *ratio*, not a claim that frequencies never change from an arbitrary starting point over multiple generations. (One notable exception worth flagging: this one-generation result assumes both sexes start at the *same* allele frequency; if male and female starting frequencies differ — as can happen at a newly arisen or sex-linked locus — equilibrium is instead approached gradually across several generations as the two sexes' contributions average out, rather than reached immediately.)
+
+![Simulated approach to Hardy-Weinberg equilibrium across generations starting from unequal male and female allele frequencies (males start fixed for one allele, females for the other): (a) male and female A-allele frequencies oscillate and converge toward a shared ~0.33 equilibrium value over about 6 generations; (b) female genotype frequencies (AA, AB, BB) similarly oscillate before settling to stable equilibrium values — illustrating the multi-generation convergence case noted above, not the single-generation case for a locus that already starts at equal frequencies in both sexes](/EVOLUTIONPICS/hardy-weinberg-observed-vs-predicted.jpg)
+*Source: Nature, Heredity journal (article hdy201620) — note: this shows generation-by-generation convergence dynamics, not the originally-specified "observed vs. predicted bar chart for one sampled population"; kept because it's still directly relevant to how/when equilibrium is reached, with the gap flagged here*
+
+![The Hardy-Weinberg equation p + q = 1 and p² + 2pq + q² = 1, with a Punnett square showing where each term comes from: crossing allele frequencies p and q against themselves produces pp (p²), pq and pq (2pq), and qq (q²)](/EVOLUTIONPICS/hardy-weinberg-equation-punnett.jpg)
+*Source: user-provided (lumisource.io)*
 
 ### The Five Assumptions
 
@@ -40,6 +46,9 @@ The Hardy-Weinberg equation only holds, and equilibrium is only maintained acros
 
 This table is the single most exam-relevant structure on this page: a question describing a specific real-world scenario (a new mutation appears; a dam blocks fish migration between two populations; a population crashes to a handful of survivors; individuals preferentially mate with similar-looking partners; a pesticide kills susceptible insects disproportionately) is almost always testing whether the assumption being violated can be correctly named.
 
+![The five Hardy-Weinberg assumptions illustrated: random mating, a large population (no genetic drift), no mutation, no migration, and (center) no natural selection](/EVOLUTIONPICS/hardy-weinberg-five-assumptions.jpg)
+*Source: Expii*
+
 ### Using Hardy-Weinberg to Detect Evolution
 
 Because HWE gives an exact quantitative prediction, it functions as a **null hypothesis**: real genotype frequencies are measured in a sampled population, compared against the HWE-predicted frequencies calculated from the same sample's observed allele frequencies, and a statistically significant deviation is evidence that one or more of the five assumptions is being violated — i.e., that evolution (or non-random mating) is actively occurring at that locus. This is a widely used real research technique, e.g. in medical genetics to screen for genotyping errors or selection at disease-associated loci, and a standard IBO/USABO calculation: given an observed count of each genotype, calculate $p$ and $q$ from the data, generate the HWE-predicted genotype counts, and compare.
@@ -47,6 +56,9 @@ Because HWE gives an exact quantitative prediction, it functions as a **null hyp
 ### A Worked Numerical Example
 
 A sample of 100 individuals is genotyped at a locus: 64 AA, 32 Aa, 4 aa. Allele frequency $p$ (for A) is calculated from total allele counts: $p = \frac{(64 \times 2) + 32}{200} = \frac{160}{200} = 0.8$, and $q = 1 - p = 0.2$. The HWE-predicted genotype frequencies are then $p^2 = 0.64$ (64 AA), $2pq = 2(0.8)(0.2) = 0.32$ (32 Aa), and $q^2 = 0.04$ (4 aa) — matching the observed counts exactly, so this particular sample is consistent with HWE at this locus. If the observed counts instead diverged substantially from these predicted values, that divergence itself would be the evidence that evolution (or non-random mating) is occurring.
+
+![Worked Hardy-Weinberg example: a parent generation of 500 individuals (245 YY, 210 Yy, 45 yy) is converted to allele counts (700 Y, 300 y out of 1000 total alleles) giving p = 0.7 and q = 0.3, then a Punnett-square analysis computes p² = .49, 2pq = .42, and q² = .09 as the predicted frequencies of YY, Yy, and yy offspring](/EVOLUTIONPICS/hardy-weinberg-worked-example.jpg)
+*Source: LMU Pressbooks, "Concepts in Biology"*
 
 ## Comparative Structures
 
@@ -72,14 +84,14 @@ A sample of 100 individuals is genotyped at a locus: 64 AA, 32 Aa, 4 aa. Allele 
 **Interactive**
 
 - **Hardy-Weinberg calculator (HTML/JS, no new library)** — the user inputs either genotype counts (to compute p, q, and compare observed vs. predicted frequencies) or a value of p directly (to compute predicted p², 2pq, q²), with a live bar chart comparing observed and HWE-predicted genotype proportions.
+
+{{< iframe src="/hardy-weinberg-calculator.html" title="Hardy-Weinberg calculator" height="480px" >}}
+
 - **Assumption-violation scenario matcher (click-through quiz, HTML/JS)** — a series of short scenario descriptions (a new mutation, a flood isolating two subpopulations, a population bottleneck, assortative mating, a selective pesticide) are matched by the user to the specific Hardy-Weinberg assumption each violates, with the corresponding evolutionary mechanism page linked on a correct answer.
 
-**Static**
+{{< iframe src="/hw-assumption-matcher.html" title="Assumption-violation scenario matcher" height="420px" >}}
 
-- Hardy-Weinberg equation with each term ($p^2$, $2pq$, $q^2$) labeled against a Punnett-square-style diagram showing where each combination comes from
-- Worked numerical example (as in the text) shown as a step-by-step calculation graphic
-- Five-assumptions table (as above) rendered as a standalone reference graphic
-- Bar chart comparing observed vs. HWE-predicted genotype frequencies for both an equilibrium and a non-equilibrium example population
+**Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here)*
 
 ## Practice Problems
 

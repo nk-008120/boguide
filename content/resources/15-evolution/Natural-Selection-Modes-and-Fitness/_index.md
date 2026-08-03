@@ -23,12 +23,29 @@ syllabus_tags: ["IBO", "USABO", "evolution"]
 For a continuously varying trait (one with a roughly normal/bell-curve distribution across a population, e.g. body size, beak depth, birth weight), selection falls into one of three named modes depending on which part of the distribution is favored:
 
 - **Directional selection** — one extreme of the trait distribution is favored over the other, shifting the population mean toward that extreme over generations. The **Grants' long-term study of Galápagos medium ground finch (*Geospiza fortis*) beak depth** is the canonical field-documented case: a severe 1977 drought eliminated small, soft seeds, leaving mainly large, hard seeds that only deeper-beaked birds could efficiently crack, and the population's mean beak depth measurably increased in the very next generation as shallower-beaked birds disproportionately failed to survive and reproduce.
+
+![Galápagos finch directional selection: the 1977 parent generation's beak-depth distribution (light bars) narrows toward a larger mean (dark bars) among drought survivors that went on to breed, and the 1978 offspring generation's beak-depth distribution shifts further in the same direction, labeled "evolution"](/EVOLUTIONPICS/galapagos-finch-beak-depth-drought.jpg)
+*Source: The Open University*
+
 - **Stabilizing selection** — both extremes of the trait distribution are selected against, favoring the intermediate phenotype and *reducing* the population's overall variance without shifting the mean. **Human birth weight** is the standard example: both very low birth weight (associated with higher infant mortality from underdevelopment) and very high birth weight (associated with birth complications) show reduced survival relative to intermediate birth weights, so selection actively narrows the distribution around the intermediate optimum each generation.
+
+![Classic Karn & Penrose (1951) human birth-weight data: a U-shaped infant mortality curve (green) is lowest at an intermediate birth weight of roughly 7–7.5 pounds, coinciding with the peak of the birth-weight frequency distribution (gray) — both very low and very high birth weights show sharply elevated mortality](/EVOLUTIONPICS/human-birth-weight-stabilizing-selection.jpg)
+*Source: Karn & Penrose (1951), via mun.ca*
+
 - **Disruptive (diversifying) selection** — the intermediate phenotype is selected against while both extremes are favored, potentially splitting one population's trait distribution into two distinct peaks over time. **African seedcracker finch (*Pyrenestes ostrinus*) bill size** is a well-documented case: birds with small bills efficiently process soft seeds and birds with large bills efficiently process hard seeds, but intermediate-billed birds are relatively inefficient at both, producing a bimodal (two-peaked) bill-size distribution maintained within a single interbreeding population — disruptive selection is of particular exam interest because, given sufficient additional reproductive isolation between the two extremes (see [Speciation & Reproductive Isolation](../Speciation-and-Reproductive-Isolation/)), it is one plausible route toward sympatric speciation.
+
+![Seedcracker finch bill-size distribution from a genomic study identifying three discrete size classes by lower mandible width (LMW) — small-billed (~12.8mm), large-billed (~16.4mm), and mega-billed (~19.6mm) — with paired FST genome scans showing strong selective-sweep signals distinguishing each pair of morphs. Note: this specific figure documents three discrete bill-size classes, not the simpler two-peak (bimodal) picture described in the text above — a more recent/detailed finding worth flagging rather than silently reconciling](/EVOLUTIONPICS/seedcracker-finch-bimodal-bill-size.png)
+*Source: user-provided ("Nature")*
+
+![The three modes of selection compared side by side, each starting from the same original trait distribution (blue) and showing the population after natural selection (red): (a) stabilizing selection narrowing around the mean, illustrated with robin clutch size; (b) directional selection shifting the mean, illustrated with peppered moth industrial melanism; (c) disruptive/diversifying selection splitting into two peaks, illustrated with a hypothetical rabbit-coloration example](/EVOLUTIONPICS/three-modes-of-selection-panel.png)
+*Source: Biology LibreTexts (Boundless Biology)*
 
 ### Adaptation vs. Exaptation
 
 An **adaptation** is a trait that increased in frequency because it was favored by selection *for the function it currently performs*. An **exaptation** (Stephen Jay Gould and Elisabeth Vrba's term) is a trait that originally evolved (or is retained) for one function, or no function at all, and is subsequently co-opted for a different function under new selective pressure — feathers are the standard textbook case, with strong comparative and fossil evidence that feathers first evolved in theropod dinosaurs for insulation and/or display (structurally and phylogenetically well before flight capability), and were only later co-opted for flight in the lineage leading to birds. Recognizing exaptation matters because it corrects a common intuitive error (assuming every trait's current function explains its evolutionary origin) — a trait's *current utility* is not evidence of what selective pressure originally produced it.
+
+![Cladogram of Archosauria/Dinosauria placing non-flying theropod lineages (Ceratosaurus, Compsognathus, Deinonychus) as progressively closer relatives of birds (Aves) than Triceratops or Diplodocus, with Archaeopteryx marking the earliest-known bird. Note: this diagram shows phylogenetic relationships only — it does not itself depict feather function at each branch point, so it supports the phylogenetic placement of feathered non-avian theropods relative to birds, but not the specific insulation/display-before-flight functional claim in the text; no image depicting that functional sequence directly was found](/EVOLUTIONPICS/feather-exaptation-timeline.jpg)
+*Source: avesbiology.com*
 
 ### Trade-offs and the Limits of Selection
 
@@ -62,15 +79,14 @@ Sexually selected traits (see [Mating Systems & Sexual Selection](../../9-etholo
 **Interactive**
 
 - **Selection mode simulator (Plotly)** — a normal-distribution trait histogram with an adjustable fitness function overlay (directional, stabilizing, or disruptive), animating how the population's trait distribution shifts across simulated generations under the user's chosen mode, making the abstract mean/variance predictions directly observable.
+
+{{< iframe src="/selection-mode-simulator.html" title="Selection mode simulator" height="520px" >}}
+
 - **Fitness trade-off slider (HTML/JS, no new library)** — user adjusts a trait's investment level (e.g. ornament size) on a slider and sees two independently plotted curves — mating-success benefit and survival-cost — with the population's expected equilibrium trait value marked where marginal benefit equals marginal cost, demonstrating why trade-offs cap trait exaggeration rather than selection running away unconstrained.
 
-**Static**
+{{< iframe src="/fitness-tradeoff-slider.html" title="Fitness trade-off slider" height="470px" >}}
 
-- Galápagos finch beak-depth histogram, before vs. after the 1977 drought, with directional shift labeled
-- Human birth-weight vs. infant-mortality curve (U-shaped), with the stabilizing-selection optimum marked
-- Seedcracker finch bimodal bill-size histogram with small- and large-billed peaks labeled and intermediate trough marked
-- Three-panel diagram of directional/stabilizing/disruptive selection, same starting distribution, showing each mode's distinct resulting shape
-- Feather exaptation timeline: insulation/display function in non-flying theropods preceding flight function in birds
+**Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here)*
 
 ## Practice Problems
 

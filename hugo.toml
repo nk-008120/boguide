@@ -35,17 +35,34 @@ theme = "hextra"
     weight = 5
 
   [[menu.main]]
-    name = "4. Bioinformatics"
+    name = "3. Bioinformatics"
     parent = "Resources & Notes"
     url = "/resources/10-bioinformatics/"
     weight = 6
 
   [[menu.main]]
-    name = "5. Plant computational Biology"
+    name = "4. Plant computational Biology"
     parent = "Resources & Notes"
     url = "/resources/14-practical-4/"
     weight = 7
+  [[menu.main]]
+    name = "5. Plant Physiology"
+    parent = "Resources & Notes"
+    url = "/resources/5-plant-physiology"
+    weight = 8
 
+  [[menu.main]]
+    name = "6. Evolution"
+    parent = "Resources & Notes"
+    url = "/resources/15-evolution"
+    weight = 9
+
+  [[menu.main]]
+    name = "7. Animal Physiology"
+    parent = "Resources & Notes"
+    url = "/resources/3-animal-physiology"
+    weight = 10
+    
   [[menu.main]]
     name = "Papers"
     url = "/papers/"

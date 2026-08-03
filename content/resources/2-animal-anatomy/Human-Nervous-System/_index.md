@@ -30,7 +30,13 @@ graph TD;
 
 The **CNS** (brain + spinal cord) is protected by bone (skull, vertebral column — see [Human Skeletal System](../human-skeletal-system/)), three connective-tissue **meninges** — **dura mater** (outermost, tough, two-layered, encloses venous sinuses draining the brain), **arachnoid mater** (middle, web-like, encloses the **subarachnoid space**, through which CSF circulates and major blood vessels run), **pia mater** (innermost, delicate, adheres directly to the brain/spinal cord surface, following every gyrus and sulcus) — and cerebrospinal fluid.
 
+![Three panels: (a) posterior view of the CNS showing the brain and spinal nerve regions, (b) a sectional view of the meninges showing dura mater, subdural space, arachnoid membrane, pia mater, subarachnoid space, and venous sinus, (c) a posterior view of the spinal cord and vertebra showing gray/white matter, the meninges, and an autonomic ganglion.](/ANATOMYPICS/meninges-layers-cross-section.png)
+*Source: Dee Unglaub Silverthorn,* Human Physiology: An Integrated Approach*. Commercial textbook figure — confirm licensing basis before public deployment. Exceeds spec with the spinal cord/vertebra relationship panel.*
+
 **CSF** is produced by the **choroid plexus** (specialized, highly vascularized ependymal tissue) within the brain's four **ventricles** (paired lateral ventricles, third ventricle, fourth ventricle, connected in sequence), circulates through the ventricular system and central canal of the spinal cord, exits into the subarachnoid space, and is reabsorbed into the venous system via **arachnoid granulations**. Structurally, CSF performs three roles: mechanical cushioning (the brain effectively floats, reducing its effective weight against the skull), chemical stability (a tightly regulated extracellular environment for neurons), and buoyant/waste clearance function. Obstruction of this circulation pathway (e.g. at a narrow ventricular connection) causes CSF to accumulate proximally — the structural basis of hydrocephalus, a common applied-anatomy question.
+
+![CSF circulation pathway: choroid plexus (lateral ventricle) → interventricular foramina → third ventricle → aqueduct → fourth ventricle → foramen of Magendie → cisterna magna/subarachnoid space → arachnoid granulations.](/ANATOMYPICS/ventricular-system-csf-circulation.jpg)
+*Source: user-sourced (originally attempted via ResearchGate, which returned 403 Forbidden on direct fetch). Exact match, full pathway traced end to end.*
 
 The **PNS** comprises 12 pairs of **cranial nerves** (emerging directly from the brain/brainstem) and 31 pairs of **spinal nerves** (emerging from the spinal cord between vertebrae, each formed by the union of a dorsal and ventral root — see below).
 
@@ -55,7 +61,13 @@ At the axon terminal, a **chemical synapse** transmits the signal to the next ce
 | **Cerebellum** | Highly folded cortex, dorsal to the brainstem, connected to it by three paired **cerebellar peduncles** | Motor coordination, balance, fine-tuning of movement (not initiation) |
 | **Brainstem** | Midbrain, pons, medulla oblongata | Relays signals between brain and spinal cord; medulla contains vital involuntary control centers (breathing rhythm, heart rate, blood pressure) |
 
+![Midsagittal brain section labeling the right cerebral hemisphere with corpus callosum and occipital lobe, the diencephalon (epithalamus/pineal gland, thalamus, hypothalamus), the brainstem (midbrain/corpora quadrigemina/cerebral peduncle, pons, medulla oblongata), the spinal cord, and the right cerebellar hemisphere with arbor vitae and cerebral aqueduct.](/ANATOMYPICS/brain-sagittal-section-major-regions.jpg)
+*Source: user-sourced (originally located via nursekey.com, itself citing Applegate,* The Anatomy and Physiology Learning System*, 2nd ed., Saunders, 2000). Commercial-textbook-derived figure — confirm licensing basis before public deployment. Exact match for all four major regions plus the diencephalon/brainstem substructure.*
+
 **Cerebral cortex functional areas**, a further level of structural detail within the cerebrum, high-yield for IBO: the **primary motor cortex** (precentral gyrus, frontal lobe — initiates voluntary movement, organized somatotopically as a "motor homunculus" with body-region representation proportional to the precision of control required, not literal body size) and **primary somatosensory cortex** (postcentral gyrus, parietal lobe, directly posterior to the motor cortex — receives touch/pressure/temperature/pain input, also somatotopically organized) sit on either side of the **central sulcus**. Language-specific areas are typically lateralized to one hemisphere (left, in most people): **Broca's area** (frontal lobe — speech production; damage produces halting, effortful speech with preserved comprehension) and **Wernicke's area** (temporal lobe — language comprehension; damage produces fluent but nonsensical speech), connected by a white-matter tract (the arcuate fasciculus) — a classic structure-function dissociation exam topic. Beneath the cortex, the **basal ganglia** (a group of subcortical gray-matter nuclei) regulate voluntary movement initiation and smoothing (their degeneration is the structural basis of Parkinson's disease, a useful applied-anatomy reference point), and the **limbic system** (including the hippocampus, for memory consolidation, and the amygdala, for emotional processing, both in the temporal lobe) links cortical processing to emotional and memory function.
+
+![Lateral brain view with motor areas (primary motor cortex, motor association area, frontal eye field) in green, Broca's area and prefrontal cortex outlined, and sensory areas (primary somatosensory cortex, sensory/visual/auditory association areas, Wernicke's area, primary visual and auditory cortices, general interpretation area) in pink/red.](/ANATOMYPICS/cerebral-cortex-functional-areas.jpg)
+*Source: user-sourced textbook-style figure. Exceeds spec with additional association areas beyond motor/somatosensory/Broca's/Wernicke's; the central sulcus itself isn't labeled by name, but the motor/sensory color boundary marks its position.*
 
 ### Spinal Cord Organization and the Reflex Arc
 
@@ -63,9 +75,15 @@ In cross-section, the spinal cord shows a butterfly/H-shaped core of gray matter
 
 The **reflex arc** is the clearest anatomical demonstration of spinal cord organization, using the knee-jerk (patellar) reflex as the standard example: stretch receptor in the quadriceps muscle → sensory neuron → dorsal root → direct synapse onto a motor neuron in the ventral horn (a **monosynaptic reflex**, the fastest reflex type, since it involves no interneuron) → ventral root → motor neuron → quadriceps contraction — occurring without requiring the brain, though the brain normally receives a parallel signal and can modulate the reflex.
 
+![The patellar tendon (knee-jerk) reflex traced end to end on a spinal cord cross-section: tendon tap → muscle spindle receptor fires → afferent sensory neuron → synapse in the spinal cord → efferent motor neuron to the quadriceps (contraction) and a parallel inhibitory interneuron to the hamstring motor neuron (reciprocal inhibition, staying relaxed).](/ANATOMYPICS/spinal-cord-cross-section-reflex-arc.png)
+*Source: Dee Unglaub Silverthorn,* Human Physiology: An Integrated Approach *(Fig. 13.5; also used on [Animal Physiology: Nervous System Physiology](../../3-animal-physiology/Nervous-System-Physiology/)). Commercial textbook figure — confirm licensing basis before public deployment. Exceeds spec with the reciprocal-inhibition detail.*
+
 ### Cranial and Spinal Nerves
 
 The 12 pairs of cranial nerves are conventionally numbered I–XII and each carries a specific, named functional role — a standard IBO memorization/mapping topic: **I Olfactory** (smell), **II Optic** (vision), **III Oculomotor**, **IV Trochlear**, **VI Abducens** (these three jointly control most eye-muscle movement), **V Trigeminal** (facial sensation, jaw muscles), **VII Facial** (facial expression muscles, taste anterior 2/3 tongue), **VIII Vestibulocochlear** (hearing, balance), **IX Glossopharyngeal** (taste posterior tongue, pharynx), **X Vagus** (the major parasympathetic nerve to thoracic/abdominal organs — by far the most extensive distribution of any cranial nerve), **XI Accessory** (neck/shoulder muscles), **XII Hypoglossal** (tongue muscles). The 31 pairs of spinal nerves are grouped by the vertebral level they exit (8 cervical, 12 thoracic, 5 lumbar, 5 sacral, 1 coccygeal); nerves from adjacent levels often interweave into **plexuses** (e.g. the brachial plexus, supplying the upper limb) before redistributing into named peripheral nerves.
+
+![Inferior (base-of-brain) view with all 12 cranial nerves numbered, named, and color-coded at their point of origin: Olfactory I, Optic II, Oculomotor III, Trochlear IV, Trigeminal V, Abducens VI, Facial VII, Vestibulocochlear VIII, Glossopharyngeal IX, Vagus X, Accessory XI, Hypoglossal XII.](/ANATOMYPICS/cranial-nerves-base-of-brain.png)
+*Source: user-sourced. Exact match — a genuine base-of-brain nerve-origin view (a candidate found via teachmeanatomy.info during sourcing turned out to be a skull-base foramina view instead, a mismatch; this saved file is the correct one).*
 
 ### Autonomic Nervous System Structure
 
@@ -78,6 +96,9 @@ Both autonomic divisions use a two-neuron chain from CNS to target organ — a s
 | Postganglionic neurotransmitter | Norepinephrine (mostly) | Acetylcholine |
 
 This preganglionic/postganglionic length difference is itself a useful structural mnemonic: sympathetic responses (widespread, rapid, "fight or flight") are anatomically set up for broad, fast-diffusing activation from ganglia near the spinal cord, while parasympathetic responses (localized, "rest and digest") are anatomically set up for targeted, organ-specific control from ganglia embedded in or near the organ itself.
+
+![Classic Gray's Anatomy diagram of the autonomic nervous system: sympathetic outflow (red) from thoracic/lumbar spinal segments through short preganglionic fibers to chain/collateral ganglia (superior cervical, celiac, superior/inferior mesenteric) then long postganglionic fibers to target organs, versus parasympathetic outflow (blue) via cranial nerves III/VII/IX/X and the pelvic nerve with long preganglionic fibers reaching ganglia at or within the target organs.](/ANATOMYPICS/sympathetic-parasympathetic-ganglion-comparison.png)
+*Source: Wikimedia Commons, `Gray839.png`, public domain (Gray's Anatomy, 1918). Directly visualizes the pre-/postganglionic length asymmetry described in the text.*
 
 ## Comparative Structures
 
@@ -100,13 +121,7 @@ The tripartite CNS/PNS/autonomic organization and core neuron/synapse structure 
 
 **Static**
 
-- Meninges layers in cross-section (dura/arachnoid/pia)
-- Ventricular system and CSF circulation pathway, from choroid plexus to arachnoid granulations
-- Brain sagittal section with all major regions labeled
-- Cerebral cortex lateral view with motor/somatosensory/Broca's/Wernicke's areas labeled and the central sulcus marked
-- Spinal cord cross-section (dorsal/ventral horns and roots) paired with the reflex arc above
-- Cranial nerve base-of-brain view with all 12 numbered and named
-- Sympathetic vs. parasympathetic ganglion-location schematic, pre-/postganglionic neuron lengths visibly different
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
 
 ## Practice Problems
 

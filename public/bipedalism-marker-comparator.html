@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bipedalism Skeletal-Marker Comparator | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .marker-btns { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 1rem; justify-content: center; }
+  .marker-btn {
+    padding: 8px 12px; border-radius: 999px; border: 2px solid #cbd5e1; background: #f8fafc;
+    font-size: 0.78rem; font-weight: 600; cursor: pointer; color: #475569;
+  }
+  .marker-btn.active { background: #1d70a2; border-color: #1d70a2; color: #fff; }
+  .skeletons { display: flex; gap: 20px; justify-content: center; }
+  .skeleton-col { text-align: center; flex: 1; }
+  .skeleton-col h4 { font-size: 0.8rem; color: #334155; margin: 0 0 6px 0; }
+  .skeleton-col svg { width: 100%; max-width: 220px; height: 200px; }
+  .highlight { fill: none; stroke: #d9534f; stroke-width: 3; opacity: 0; transition: opacity 0.2s; }
+  .highlight.on { opacity: 1; }
+  #explain {
+    margin-top: 1rem; background: #f8fafc; border-radius: 14px; padding: 1rem 1.2rem; font-size: 0.88rem; line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Bipedalism Skeletal-Marker Comparator</h3>
+  <div class="subtitle">Click each marker to see how it differs between a quadrupedal ape and a bipedal hominin, and why.</div>
+  <div class="marker-btns" id="markerBtns"></div>
+  <div class="skeletons">
+    <div class="skeleton-col">
+      <h4>Quadrupedal ape</h4>
+      <svg viewBox="0 0 200 200" id="apeSvg">
+        <line x1="40" y1="140" x2="150" y2="100" stroke="#334155" stroke-width="4"/>
+        <circle cx="160" cy="90" r="18" fill="#cbd5e1" stroke="#334155" stroke-width="2"/>
+        <line x1="60" y1="140" x2="55" y2="180" stroke="#334155" stroke-width="4"/>
+        <line x1="120" y1="115" x2="115" y2="180" stroke="#334155" stroke-width="4"/>
+        <ellipse cx="90" cy="130" rx="20" ry="12" fill="none" stroke="#334155" stroke-width="3"/>
+        <circle id="ape-foramen" class="highlight" cx="160" cy="90" r="24"/>
+        <ellipse id="ape-pelvis" class="highlight" cx="90" cy="130" rx="24" ry="16"/>
+        <circle id="ape-knee" class="highlight" cx="118" cy="150" r="14"/>
+        <circle id="ape-foot" class="highlight" cx="115" cy="180" r="14"/>
+      </svg>
+    </div>
+    <div class="skeleton-col">
+      <h4>Bipedal hominin</h4>
+      <svg viewBox="0 0 200 200" id="hominSvg">
+        <line x1="100" y1="60" x2="100" y2="150" stroke="#334155" stroke-width="4"/>
+        <circle cx="100" cy="45" r="18" fill="#cbd5e1" stroke="#334155" stroke-width="2"/>
+        <line x1="100" y1="150" x2="90" y2="190" stroke="#334155" stroke-width="4"/>
+        <line x1="100" y1="150" x2="110" y2="190" stroke="#334155" stroke-width="4"/>
+        <ellipse cx="100" cy="120" rx="26" ry="14" fill="none" stroke="#334155" stroke-width="3"/>
+        <circle id="homin-foramen" class="highlight" cx="100" cy="45" r="24"/>
+        <ellipse id="homin-pelvis" class="highlight" cx="100" cy="120" rx="30" ry="18"/>
+        <circle id="homin-knee" class="highlight" cx="95" cy="165" r="14"/>
+        <circle id="homin-foot" class="highlight" cx="100" cy="190" r="14"/>
+      </svg>
+    </div>
+  </div>
+  <div id="explain"></div>
+</div>
+<script>
+(function(){
+  var markers = [
+    {
+      key: 'foramen', label: 'Foramen magnum',
+      text: 'In the <b>ape</b>, the foramen magnum sits toward the back of the skull, consistent with a head projecting forward from a roughly horizontal spine. In the <b>hominin</b>, it sits further forward/underneath, consistent with a head balanced atop a vertical spine.'
+    },
+    {
+      key: 'pelvis', label: 'Pelvis shape',
+      text: 'The <b>ape</b> pelvis is elongated and blade-like. The <b>hominin</b> pelvis is shorter and broader (bowl-shaped), anchoring gluteal muscles that stabilize the trunk over a single weight-bearing leg during each bipedal stride.'
+    },
+    {
+      key: 'knee', label: 'Valgus (knee) angle',
+      text: 'The <b>ape</b> femur runs nearly straight down from a wide-set hip. The <b>hominin</b> femur angles medially (the valgus angle), bringing the knees and feet under the body\'s center of mass and minimizing side-to-side sway when walking upright.'
+    },
+    {
+      key: 'foot', label: 'Foot structure',
+      text: 'The <b>ape</b> foot has an opposable, grasping big toe suited to climbing. The <b>hominin</b> foot has a non-opposable, in-line big toe and a longitudinal arch, forming a rigid push-off lever for walking rather than a grasping organ.'
+    }
+  ];
+
+  var btnWrap = document.getElementById('markerBtns');
+  markers.forEach(function(m, i){
+    var btn = document.createElement('button');
+    btn.className = 'marker-btn';
+    btn.textContent = m.label;
+    btn.addEventListener('click', function(){ select(i); });
+    btnWrap.appendChild(btn);
+  });
+
+  function select(i){
+    var m = markers[i];
+    document.querySelectorAll('.marker-btn').forEach(function(b, idx){ b.classList.toggle('active', idx === i); });
+    document.querySelectorAll('.highlight').forEach(function(h){ h.classList.remove('on'); });
+    document.getElementById('ape-' + m.key).classList.add('on');
+    document.getElementById('homin-' + m.key).classList.add('on');
+    document.getElementById('explain').innerHTML = m.text;
+  }
+
+  select(0);
+})();
+</script>
+</body>
+</html>

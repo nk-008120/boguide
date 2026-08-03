@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hox Gene Colinearity Map | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  #cluster { display: flex; gap: 4px; margin-bottom: 1.4rem; }
+  .gene-box {
+    flex: 1;
+    padding: 10px 2px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #fff;
+    opacity: 0.55;
+    transition: opacity 0.15s, transform 0.15s;
+  }
+  .gene-box:hover { transform: translateY(-2px); }
+  .gene-box.active { opacity: 1; outline: 3px solid #1a472a; outline-offset: 2px; }
+  #embryo-wrap { text-align: center; }
+  #embryo-wrap svg { width: 100%; max-width: 520px; height: 140px; }
+  .region { transition: opacity 0.15s; opacity: 0.35; }
+  .region.active { opacity: 1; stroke: #1a472a; stroke-width: 3; }
+  #caption { text-align: center; font-size: 0.85rem; color: #334155; margin-top: 10px; min-height: 24px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Hox Gene Colinearity Map</h3>
+  <div class="subtitle">Click a gene in the cluster (arranged 5' to 3') to see which body region it patterns — the two orders match.</div>
+  <div id="cluster"></div>
+  <div id="embryo-wrap">
+    <svg viewBox="0 0 520 140">
+      <!-- body outline -->
+      <ellipse cx="260" cy="70" rx="250" ry="42" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+    </svg>
+  </div>
+  <div id="caption">Click a gene above to begin.</div>
+</div>
+<script>
+(function(){
+  var genes = [
+    { name: 'lab', color: '#7c3aed', region: 'Anterior head' },
+    { name: 'pb', color: '#2563eb', region: 'Head / mandibular segment' },
+    { name: 'Dfd', color: '#0891b2', region: 'Posterior head' },
+    { name: 'Scr', color: '#059669', region: 'Thorax (anterior)' },
+    { name: 'Antp', color: '#65a30d', region: 'Thorax (posterior)' },
+    { name: 'Ubx', color: '#ca8a04', region: 'Anterior abdomen' },
+    { name: 'AbdB', color: '#dc2626', region: 'Posterior abdomen / tail' }
+  ];
+
+  var cluster = document.getElementById('cluster');
+  var svg = document.querySelector('#embryo-wrap svg');
+  var caption = document.getElementById('caption');
+
+  var regionWidth = 500 / genes.length;
+  genes.forEach(function(g, i){
+    var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    rect.setAttribute('x', 10 + i*regionWidth);
+    rect.setAttribute('y', 45);
+    rect.setAttribute('width', regionWidth - 4);
+    rect.setAttribute('height', 50);
+    rect.setAttribute('rx', 8);
+    rect.setAttribute('fill', g.color);
+    rect.setAttribute('class', 'region');
+    rect.id = 'region-' + i;
+    svg.appendChild(rect);
+  });
+
+  genes.forEach(function(g, i){
+    var box = document.createElement('div');
+    box.className = 'gene-box';
+    box.style.background = g.color;
+    box.textContent = g.name;
+    box.addEventListener('click', function(){ select(i); });
+    cluster.appendChild(box);
+  });
+
+  function select(i){
+    document.querySelectorAll('.gene-box').forEach(function(b, idx){ b.classList.toggle('active', idx === i); });
+    document.querySelectorAll('.region').forEach(function(r, idx){ r.classList.toggle('active', idx === i); });
+    caption.innerHTML = '<b>' + genes[i].name + '</b> (position ' + (i+1) + ' of ' + genes.length + ' in the cluster) patterns the <b>' + genes[i].region + '</b> — the same relative position along the chromosome and along the body axis.';
+  }
+
+  select(0);
+})();
+</script>
+</body>
+</html>

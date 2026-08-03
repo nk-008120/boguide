@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reinforcement vs. Hybrid-Zone-Persistence Simulator | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .row { margin-bottom: 14px; }
+  .row label { font-size: 0.85rem; font-weight: 600; display: flex; justify-content: space-between; }
+  .row input[type=range] { width: 100%; }
+  #zone-wrap { position: relative; height: 46px; border-radius: 10px; overflow: hidden; display: flex; }
+  #zoneA { background: #1d70a2; }
+  #zoneHybrid { background: repeating-linear-gradient(45deg, #c77d2e, #c77d2e 6px, #d99a4e 6px, #d99a4e 12px); transition: width 0.4s; }
+  #zoneB { background: #d9534f; }
+  .zone-labels { display: flex; justify-content: space-between; font-size: 0.72rem; color: #4b5563; margin-top: 4px; }
+  #note { font-size: 0.85rem; margin-top: 1rem; background: #f8fafc; border-radius: 12px; padding: 10px 14px; min-height: 60px; }
+  .actions { display: flex; gap: 10px; justify-content: center; margin-top: 1rem; }
+  .action-btn {
+    background: #2d6a4f; color: #fff; border: none; padding: 8px 20px;
+    border-radius: 999px; font-size: 0.85rem; cursor: pointer;
+  }
+  .action-btn.secondary { background: #94a3b8; }
+  #genLabel { text-align: center; font-size: 0.8rem; color: #4b5563; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Reinforcement vs. Hybrid-Zone-Persistence Simulator</h3>
+  <div class="subtitle">Set the hybrid fitness penalty, then advance generations to see whether the contact zone narrows (reinforcement) or holds steady (a persistent hybrid zone).</div>
+  <div class="row">
+    <label>Hybrid fitness penalty <span id="penaltyVal">50%</span></label>
+    <input type="range" id="penaltySlider" min="0" max="100" step="5" value="50">
+  </div>
+  <div id="zone-wrap">
+    <div id="zoneA" style="width:45%;"></div>
+    <div id="zoneHybrid" style="width:10%;"></div>
+    <div id="zoneB" style="width:45%;"></div>
+  </div>
+  <div class="zone-labels"><span>Population A</span><span>Hybrid zone</span><span>Population B</span></div>
+  <div id="note"></div>
+  <div class="actions">
+    <button class="action-btn" id="runBtn">Advance 10 generations</button>
+    <button class="action-btn secondary" id="resetBtn">Reset</button>
+  </div>
+  <div id="genLabel">Generation 0</div>
+</div>
+<script>
+(function(){
+  var gen = 0;
+  var zoneWidth = 10; // percent
+
+  function render(){
+    var remaining = 100 - zoneWidth;
+    document.getElementById('zoneA').style.width = (remaining/2) + '%';
+    document.getElementById('zoneHybrid').style.width = zoneWidth + '%';
+    document.getElementById('zoneB').style.width = (remaining/2) + '%';
+    document.getElementById('genLabel').textContent = 'Generation ' + gen;
+  }
+
+  function note(penalty){
+    var el = document.getElementById('note');
+    if (penalty >= 60){
+      el.innerHTML = '<b>High hybrid penalty:</b> hybrids are strongly unfit, so selection favors individuals that avoid mating across the boundary — prezygotic isolation is being <b>reinforced</b>, and the hybrid zone should progressively narrow toward a sharp species boundary.';
+    } else if (penalty <= 20){
+      el.innerHTML = '<b>Low hybrid penalty:</b> hybrids are nearly as fit as either parental type, so there is little selection against interbreeding at the boundary — the zone is expected to <b>persist</b> as a stable hybrid zone rather than narrow.';
+    } else {
+      el.innerHTML = '<b>Moderate hybrid penalty:</b> some selection against hybrids, but not enough to drive strong reinforcement quickly — the zone narrows slowly, if at all.';
+    }
+  }
+
+  document.getElementById('penaltySlider').addEventListener('input', function(){
+    document.getElementById('penaltyVal').textContent = this.value + '%';
+    note(parseInt(this.value, 10));
+  });
+
+  document.getElementById('runBtn').addEventListener('click', function(){
+    var penalty = parseInt(document.getElementById('penaltySlider').value, 10);
+    for (var i = 0; i < 10; i++){
+      var shrinkRate = (penalty - 30) / 100 * 0.8; // can be negative (zone widens) at low penalty
+      zoneWidth = Math.max(2, Math.min(30, zoneWidth - shrinkRate));
+      gen++;
+    }
+    render();
+    note(penalty);
+  });
+
+  document.getElementById('resetBtn').addEventListener('click', function(){
+    gen = 0;
+    zoneWidth = 10;
+    render();
+    note(parseInt(document.getElementById('penaltySlider').value, 10));
+  });
+
+  render();
+  note(50);
+})();
+</script>
+</body>
+</html>

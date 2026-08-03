@@ -27,6 +27,8 @@ Bilateral symmetry is mechanistically linked to **cephalization**: an animal tha
 
 Adult echinoderms display **secondary radial symmetry** — bilaterally symmetric, free-swimming larvae undergo a metamorphic shift to pentaradial symmetry as they settle and adopt a sessile-to-slow-moving adult lifestyle, where an all-around sensory field is more useful than a directional one. This dissociation between developmental/phylogenetic classification and adult body plan is one of the most reliably tested inference points on IBO papers.
 
+For labeled photo examples of each symmetry type, see [Animal Characterization Based on Body Symmetry](https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/General_Biology_(Boundless)/27%3A_Introduction_to_Animal_Diversity/27.02%3A_Features_Used_to_Classify_Animals/27.2A%3A_Animal_Characterization_Based_on_Body_Symmetry) (LibreTexts).
+
 ### Tissue Histology
 
 The four primary tissue types, in more structural/functional detail than a simple list:
@@ -62,7 +64,13 @@ graph TD;
     END --> END3["Liver, pancreas, thyroid"];
 ```
 
+![Blastula folding inward to form a gastrula, with the ectoderm (blue), endoderm/archenteron (purple), and mesoderm-adjacent yolk-filled blastocoel (yellow) labeled alongside the blastopore.](/ANATOMYPICS/gastrulation-sequence-germ-layers.png)
+*Source: Wikimedia Commons, public domain (Abigail Pyne).*
+
 In triploblastic embryos, the mesoderm arises adjacent to the **notochord** (a transient rod of mesodermal tissue, present at some developmental stage in every chordate, including humans — see the [Fish & Amphibian Anatomy](../fish-amphibian-anatomy/) page for its role in non-human chordates). The notochord performs **primary embryonic induction**: it signals the overlying ectoderm to thicken into the **neural plate**, which then rolls into the **neural tube** — the direct embryonic precursor of the entire CNS (detailed on the [Human Nervous System](../human-nervous-system/) page). This is a mechanistic, not just descriptive, link between germ-layer formation and organ-system origin, and a frequently tested inductive-signaling example.
+
+![Four-stage neurulation sequence: the neural plate thickens from ectoderm over the notochord and mesoderm, bends dorsally to bring the neural plate borders together as the neural crest, closes into a neural tube separating from the epidermis, and finally shows the notochord persisting only as the intervertebral disc nucleus pulposus while adjacent mesoderm forms the somites.](/ANATOMYPICS/notochord-neural-tube-formation.jpg)
+*Source: Wikimedia Commons, CC BY 3.0 (OpenStax College).*
 
 ### Cleavage Patterns and Development
 
@@ -78,6 +86,12 @@ Early cell division (**cleavage**) of the fertilized egg follows one of two patt
 
 This table is worth returning to directly when reading the [Invertebrate Body Plans](../invertebrate-body-plans-1/) pages (protostome examples) against the Vertebrate Anatomy tier (deuterostome examples) — it is the single most useful axis for placing an unfamiliar phylum's development into context on an exam.
 
+![Protostomes vs. deuterostomes compared across all three axes: eight-cell-stage cleavage (spiral/determinate vs. radial/indeterminate), coelom formation (schizocoelous splitting of solid mesoderm vs. enterocoelous folding of the archenteron), and blastopore fate (mouth vs. anus).](/ANATOMYPICS/cleavage-patterns-spiral-radial.jpg)
+*Source: textbook figure via Weebly-hosted course page — license not confirmed, flagged CHECK. Broader than originally requested (also covers coelom formation and blastopore fate, both already discussed in the table above) but a strong match overall.*
+
+![Four-stage schizocoely (protostome) vs. enterocoely (deuterostome) coelom formation, from the blastopore-stage embryo through the fully formed coelom.](/ANATOMYPICS/coelom-formation-schizocoely-enterocoely.jpg)
+*Source: unconfirmed textbook figure — carries a visible "© Brooks/Cole – Thomson Learning" notice printed in the image. **CONFIRMED COPYRIGHT — must not go on the public site without a license or replacement.***
+
 ### Coelom Types
 
 The **coelom** is a fluid-filled body cavity fully lined by mesoderm-derived tissue (**peritoneum**):
@@ -89,6 +103,9 @@ The **coelom** is a fluid-filled body cavity fully lined by mesoderm-derived tis
 | **Eucoelomate (coelomate)** | True coelom, fully mesoderm-lined on both the body-wall and gut sides | Annelida, Mollusca, Arthropoda, Echinodermata, Chordata |
 
 A coelom performs concrete mechanical work: it cushions internal organs, allows the gut to move independently of the body wall (necessary for effective peristalsis, since a fluid-filled cavity transmits muscular force without the gut and body wall dragging against each other), and — in soft-bodied coelomates lacking a rigid skeleton — doubles as a **hydrostatic skeleton**, an incompressible fluid volume that transmits force when surrounding muscle contracts (detailed with earthworm locomotion on the [Invertebrate Body Plans I](../invertebrate-body-plans-1/) page).
+
+![Acoelomate (flatworm), pseudocoelomate (roundworm), and eucoelomate (segmented worm) body plans compared, each with a representative animal above and a labeled cross-section below showing ectoderm, mesoderm, endoderm, and the body cavity (if any).](/ANATOMYPICS/coelom-types-comparison.jpg)
+*Source: not yet confirmed — flagged CHECK pending source information.*
 
 ### Segmentation
 
@@ -122,12 +139,7 @@ A coelom performs concrete mechanical work: it cushions internal organs, allows 
 
 **Static**
 
-- Symmetry types (asymmetry / radial / biradial / bilateral) drawn side by side on the same generic body outline
-- Gastrulation sequence (blastula → invagination/involution → gastrula) with germ layers colored consistently with the Mermaid diagram
-- Notochord-induced neural tube formation, cross-section sequence (neural plate → neural groove → neural tube)
-- Spiral/determinate vs. radial/indeterminate cleavage, first three divisions compared side by side
-- Schizocoely vs. enterocoely coelom formation, cross-section sequence
-- Coelom-type cross-sections: acoelomate, pseudocoelomate, eucoelomate, side by side (paired with the interactive morph slider above)
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Symmetry types are covered by an external link-out in the Symmetry and Cephalization section instead of an inline image — no combined diagram was found, and the user opted for a link rather than a partial/incomplete photo set.)*
 
 ## Practice Problems
 

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chemoreceptor Control Loop | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 660px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .diagram { display:flex; gap: 14px; margin-bottom: 1rem; }
+  .node-box {
+    flex:1; padding: 14px; border-radius: 16px; border: 3px solid #cbd5e1; cursor:pointer;
+    text-align:center; font-weight:700; font-size:0.9rem; color:#334155; transition: all 0.15s;
+  }
+  .node-box:hover { border-color:#94a3b8; }
+  .node-box.active.central { border-color:#1d70a2; background:#eef6fb; color:#1d70a2; }
+  .node-box.active.peripheral { border-color:#b45309; background:#fff8e7; color:#b45309; }
+  .detail { background:#eef2e6; border-radius: 14px; padding: 14px 16px; font-size: 0.85rem; min-height: 140px; }
+  .detail h4 { margin: 0 0 6px 0; color:#2d6a4f; font-size:0.9rem; }
+  .detail table { width:100%; border-collapse: collapse; font-size:0.82rem; margin-top: 6px; }
+  .detail td { padding: 4px 6px; border-bottom: 1px solid #dbe4d3; vertical-align: top; }
+  .detail td:first-child { font-weight:700; color:#334155; width: 40%; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Chemoreceptor Control Loop</h3>
+  <div class="subtitle">Click "Central" or "Peripheral" to see that chemoreceptor's actual location, the variable it senses, and how much it contributes to ventilatory drive under normal vs. low-O₂ conditions.</div>
+  <div class="diagram">
+    <div class="node-box central" id="centralBtn">Central chemoreceptors</div>
+    <div class="node-box peripheral" id="peripheralBtn">Peripheral chemoreceptors</div>
+  </div>
+  <div class="detail" id="detail"></div>
+</div>
+<script>
+(function(){
+  var data = {
+    central: {
+      title: 'Central chemoreceptors',
+      rows: [
+        ['Location', 'Medulla oblongata, bathed in cerebrospinal fluid'],
+        ['Variable actually sensed', 'CSF pH (a fall in pH, caused by CO2 diffusing across the blood-brain barrier and being hydrated to H+) — <b>not</b> blood CO2 directly'],
+        ['Contribution under normal conditions', 'Dominant — provides the main moment-to-moment drive for ventilation'],
+        ['Contribution when blood O2 is low', 'Still dominant, unless chronically blunted (e.g. in some lung disease)']
+      ]
+    },
+    peripheral: {
+      title: 'Peripheral chemoreceptors',
+      rows: [
+        ['Location', 'Carotid bodies and aortic bodies, at major arterial branch points'],
+        ['Variable actually sensed', 'Arterial PO2 directly (also arterial pH and CO2, but more weakly than the central response)'],
+        ['Contribution under normal conditions', 'Minor — only becomes significant once PO2 falls substantially'],
+        ['Contribution when blood O2 is low', 'Becomes the dominant ventilatory drive (e.g. high altitude, or when central CO2 sensitivity is blunted)']
+      ]
+    }
+  };
+
+  var centralBtn = document.getElementById('centralBtn');
+  var peripheralBtn = document.getElementById('peripheralBtn');
+  var detail = document.getElementById('detail');
+
+  function render(key){
+    centralBtn.classList.toggle('active', key === 'central');
+    peripheralBtn.classList.toggle('active', key === 'peripheral');
+    var d = data[key];
+    var html = '<h4>' + d.title + '</h4><table>';
+    d.rows.forEach(function(r){
+      html += '<tr><td>' + r[0] + '</td><td>' + r[1] + '</td></tr>';
+    });
+    html += '</table>';
+    detail.innerHTML = html;
+  }
+
+  centralBtn.addEventListener('click', function(){ render('central'); });
+  peripheralBtn.addEventListener('click', function(){ render('peripheral'); });
+
+  render('central');
+})();
+</script>
+</body>
+</html>

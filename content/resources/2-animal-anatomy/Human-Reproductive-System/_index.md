@@ -21,11 +21,17 @@ Each **testis** is enclosed in a fibrous capsule, the **tunica albuginea**, whic
 - **Sertoli cells** — tall columnar cells spanning the full height of the epithelium, joined to each other near the tubule's basal edge by tight junctions that form the **blood-testis barrier**, physically separating the tubule into a basal compartment (spermatogonia, early primary spermatocytes) and an adluminal compartment (further-developing germ cells) shielded from the immune system and from bloodborne signaling molecules that would disrupt meiosis. Sertoli cells nourish developing germ cells, phagocytose residual cytoplasm shed during spermiogenesis, secrete **androgen-binding protein** (concentrates testosterone locally) and **inhibin** (negative feedback on pituitary FSH — see the HPG axis below).
 - **Spermatogenic cells**, arranged in concentric layers from basal to luminal as they mature: **spermatogonia** (diploid stem cells, mitotic) → **primary spermatocytes** (diploid, enter meiosis I) → **secondary spermatocytes** (haploid, brief, enter meiosis II almost immediately) → **spermatids** (haploid, round, non-motile) → **spermatozoa** (haploid, elongated, released into the lumen — this final differentiation step, without further division, is **spermiogenesis**). Full spermatogenesis takes ~74 days in humans.
 
+![Seminiferous tubule wall cross-section: basal lamina, myoid cells, and Spermatogonium A/B at the base, through the basal/adluminal compartment boundary (junctional complex), primary and secondary spermatocytes, spermatids, and spermatozoa with visible acrosomal vesicles and residual bodies at the lumen — Sertoli cell nucleus and cytoplasm (Golgi apparatus, ER, mitochondria) shown spanning the full epithelial height.](/ANATOMYPICS/seminiferous-tubule-sertoli-cells-cross-section.webp)
+*Source: user-sourced (originally via a ResearchGate figure); carries a visible "©CCF 2010" (Cleveland Clinic Foundation) notice in the image. Confirm licensing basis before public deployment. Exceeds spec with organelle-level detail (Golgi, ER, mitochondria, acrosomal vesicle).*
+
 Between tubules, in the interstitial connective tissue, **Leydig cells** synthesize testosterone under LH stimulation — anatomically and functionally separate from the Sertoli/germ-cell compartment inside the tubule (Sertoli = supports/nurses germ cells + hormone-binding/inhibin; Leydig = testosterone synthesis — a distinction worth stating explicitly, since exam questions routinely test which cell type does what).
 
 A mature **spermatozoon** has three structural regions: the **head** (haploid nucleus + **acrosome**, a Golgi-derived cap of hydrolytic enzymes over the anterior nucleus, required to penetrate the oocyte's coat), the **midpiece** (mitochondria spiraled around the flagellar axoneme, generating ATP for motility), and the **tail/flagellum** (a **9+2 microtubule axoneme**, the same structural motif as cilia elsewhere in the body).
 
 Sperm leave the testis through the **rete testis** into the **epididymis** (caput → corpus → cauda), a single, tightly coiled ~6 m duct where sperm gain motility and fertilizing capacity over ~2–3 weeks of transit, then are stored in the cauda until ejaculation, when smooth-muscle contraction propels them through the **vas deferens**. Semen composition by volume is structurally traceable to specific glands: **seminal vesicles** (~60%, fructose-rich fluid feeding sperm mitochondrial respiration), **prostate gland** (~30%, alkaline fluid buffering vaginal acidity), **bulbourethral (Cowper's) glands** (small pre-ejaculate volume, lubricating/neutralizing residual urethral acidity).
+
+![Male reproductive tract, external genitalia (circumcised/uncircumcised) and a lateral cross-section showing the vas deferens, seminal vesicle, ejaculatory duct, prostate gland, bulbourethral gland, testis, epididymis, scrotum, and the prostatic/membranous/spongy urethra.](/ANATOMYPICS/male-reproductive-tract-gross-anatomy.png)
+*Source: OpenStax-style figure, user-sourced via USQ Pressbooks. Exceeds spec with external genitalia views alongside the internal tract.*
 
 ### Female Reproductive Structure
 
@@ -41,9 +47,18 @@ The **ovary** has an outer **cortex** (contains follicles at all stages) and inn
 | Tertiary (Graafian) follicle | Fluid-filled **antrum** forms; oocyte displaced to one side on a mound of cells (**cumulus oophorus**); this is the stage that ovulates |
 | Corpus luteum | Post-ovulation remnant (ruptured follicle wall, luteinized granulosa + theca cells); secretes progesterone; regresses to **corpus albicans** (scar tissue) if no implantation occurs |
 
+![Follicular development sequence: primary oocyte → primordial follicle (pregranulosa cell, basement membrane) → primary follicle (granulosa cell, zona pellucida) → secondary follicle (theca cell added) → early tertiary follicle (theca externa/interna, antrum) → Graafian follicle (secondary oocyte, first polar body, corona radiata, cumulus oophorus) → ovulated ovum (second polar body).](/ANATOMYPICS/ovarian-follicle-stages-primordial-to-corpus-luteum.jpg)
+*Source: user-sourced (originally via doctorlib.org). Exact match — every stage in the table above shown in sequence with its structural markers labeled.*
+
 At ovulation, the oocyte (now secondary oocyte, arrested in metaphase II, surrounded by the zona pellucida and an outer layer of adherent granulosa cells, the **corona radiata**) is swept into the **fallopian tube** via the **fimbriae** — finger-like projections of the funnel-shaped **infundibulum**. Fertilization normally occurs in the **ampulla** (the tube's widest, most distal region), not the uterus; the fertilized zygote then travels through the **isthmus** toward the uterus over ~3–4 days, undergoing early cleavage divisions en route.
 
 The **uterus** wall has three layers: **perimetrium** (outer serosa), **myometrium** (thick smooth muscle, the structural basis of labor contractions), and **endometrium** (inner mucosa), itself split into a permanent **basal layer** and a **functional layer** that thickens and sheds cyclically. Endometrial structure tracks the ovarian cycle directly: **proliferative phase** (functional layer regrows, driven by rising estrogen from the developing follicle), **secretory phase** (glands coil and secrete glycogen, driven by progesterone from the corpus luteum, preparing for possible implantation), **menstrual phase** (functional layer sheds if the corpus luteum regresses and progesterone falls). The uterus narrows to the **cervix**, opening into the **vagina**.
+
+![Female external genitalia (clitoris, labia majus/minus, urethral opening, vagina, hymen), uterine wall structure (endometrium, myometrium, outer connective tissue), and a schematic ovarian cross-section showing every follicular stage together with the corpus luteum and a regressing corpus luteum.](/ANATOMYPICS/female-reproductive-tract-gross-anatomy-1.png)
+*Source: Dee Unglaub Silverthorn,* Human Physiology: An Integrated Approach*. Commercial textbook figure — confirm licensing basis before public deployment. Exceeds spec with external genitalia and a second ovarian-stage view.*
+
+![Internal female reproductive structures (mammary glands, fimbriae, uterine cavity, fallopian tube, ovary, cervical canal, cervix, vagina) and a cross-sectional pelvis view (ovary, fallopian tube, uterus, bladder, cervix, rectum, urethra, vagina, clitoris, labia).](/ANATOMYPICS/female-reproductive-tract-gross-anatomy-2.png)
+*Source: Dee Unglaub Silverthorn,* Human Physiology: An Integrated Approach*. Commercial textbook figure — confirm licensing basis before public deployment. Together with the previous figure, covers the full female tract gross anatomy called for in the spec.*
 
 ### The HPG Hormonal Feedback Axis
 
@@ -54,6 +69,9 @@ Both gonads' hormone-producing structures — Leydig cells and the follicle/corp
 ### Fertilization
 
 A capacitated sperm binds the zona pellucida, undergoes the **acrosome reaction** (acrosomal enzymes digest a path through the zona pellucida), and fuses with the oocyte membrane. Sperm entry triggers the **cortical reaction** — oocyte cortical granules release contents that modify the zona pellucida (**zona hardening**) — the structural **block to polyspermy**, preventing additional sperm from fusing.
+
+![Sequence of several sperm approaching and one fusing with the oocyte membrane, showing the zona pellucida, corona radiata, cortical granules, perivitelline space, and — closest to the point of fusion — the cortical reaction spreading laterally beneath the membrane.](/ANATOMYPICS/acrosome-cortical-reaction-fertilization.jpg)
+*Source: user-sourced (originally via Wikipedia "Acrosome reaction"). **All labels in the image are in Polish** — translated here for reference: Osłonka przejrzysta = zona pellucida, Błona komórkowa (komórki jajowej) = (oocyte) cell membrane, Przestrzeń okołożółtkowa = perivitelline space, Ziarna korowe = cortical granules, Główka plemnika = sperm head, Jądro komórkowe = nucleus, Aktyna = actin, Ziarna akrosomalne = acrosomal granules, Wieniec promienisty = corona radiata, Reakcja akrosomalna = acrosomal reaction, Reakcja korowa = cortical reaction, Fuzja błon = membrane fusion, Cytoplazma = cytoplasm. Otherwise an exact structural match for the acrosome/cortical reaction sequence described in the text.*
 
 ## Comparative Structures
 
@@ -77,11 +95,7 @@ The amniotic-egg-derived **placenta** (see [Mammalian Comparative Anatomy](../ma
 
 **Static**
 
-- Seminiferous tubule cross-section showing Sertoli cells, the basal/adluminal compartments either side of the blood-testis barrier, and the concentric spermatogenic cell layers
-- Male reproductive tract gross anatomy
-- Ovarian follicle stages side by side, primordial through corpus luteum/albicans (paired with the carousel above)
-- Female reproductive tract gross anatomy
-- Acrosome reaction and cortical reaction sequence at fertilization
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
 
 ## Practice Problems
 
