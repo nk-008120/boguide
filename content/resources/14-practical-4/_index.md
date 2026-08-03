@@ -1,5 +1,5 @@
 ---  
-title: "P4-Plant Computational Biology"  
+title: "✅ P4-Plant Computational Biology"  
 weight: 1  
 ---  
 

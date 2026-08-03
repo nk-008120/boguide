@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BiOGuide for Biology Olympiads – Neuroscience </title>
-    <link>http://localhost:63693/articles/neuroscience/</link>
+    <link>http://localhost:49334/articles/neuroscience/</link>
     <description>Recent content in Neuroscience  on BiOGuide for Biology Olympiads</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://localhost:63693/articles/neuroscience/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:49334/articles/neuroscience/index.xml" rel="self" type="application/rss+xml" />
     
     
       

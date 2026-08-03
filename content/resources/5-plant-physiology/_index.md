@@ -1,5 +1,5 @@
 ---
-title: "Plant Physiology"
+title: "✅ Plant Physiology"
 weight: 5
 description: "The function-side complement to Plant Anatomy for IBO/USABO: water/nutrient transport mechanisms, the photosynthetic light reactions and carbon fixation biochemistry, hormone-driven growth regulation and development, and whole-plant stress physiology."
 ---

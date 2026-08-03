@@ -1,5 +1,5 @@
 ---
-title: "Bioinformatics"
+title: "✅ Bioinformatics"
 weight: 10
 description: "Complete bioinformatics guide for IBO: databases, BLAST, alignments, phylogenetics, genome analysis, protein structure, and interactive simulation. Includes worked examples from IBO practicals and lab manuals."
 ---
