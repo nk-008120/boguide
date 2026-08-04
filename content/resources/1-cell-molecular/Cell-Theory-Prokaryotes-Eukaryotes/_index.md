@@ -33,11 +33,17 @@ Structural features distinguishing prokaryotes:
 - **Plasmids**: small, circular, extrachromosomal DNA molecules, often carrying non-essential but conditionally advantageous genes (e.g. antibiotic resistance) and capable of independent replication and horizontal transfer between cells.
 - No cytoskeleton in the eukaryotic sense (though bacterial homologues of actin/tubulin, e.g. FtsZ, exist and perform analogous structural roles).
 
+![Generalised prokaryotic cell cutaway diagram with cell wall, plasma membrane, capsule, cytoplasm, ribosomes, nucleoid (with its DNA drawn as a tangled loop), an inclusion body, and a plasmid labelled, plus external pili, fimbriae, and a flagellum](/MCBBPICS/generalized-prokaryotic-cell.jpg)
+*Source: ecampusontario.pressbooks.pub — confirm licensing basis before public deployment. OER textbook content is typically openly licensed; confirm the specific CC tag before public deployment. Note: ribosomes are labelled generically, not specifically as "70S" as in the text.*
+
 ### Eukaryotic cell organisation
 
 Eukaryotic cells possess a membrane-bound **nucleus** housing linear chromosomes complexed with histone proteins (chromatin), plus an extensive system of membrane-bound organelles (endoplasmic reticulum, Golgi apparatus, mitochondria, and — in plants/algae — chloroplasts; see [Endomembrane System & Protein Trafficking](../endomembrane-system-protein-trafficking/) and [Mitochondria & Chloroplasts](../mitochondria-chloroplasts-structure-origin/) for full treatment of each). This compartmentalisation lets eukaryotic cells run mutually incompatible reactions simultaneously — for instance, concentrating and protecting the genome from cytoplasmic mechanical/chemical stress, or maintaining the distinct redox and pH environments each organelle's chemistry requires.
 
 Eukaryotic cells also possess a true **cytoskeleton** (actin filaments, microtubules, intermediate filaments — see [Cytoskeleton & Motor Proteins](../cytoskeleton-motor-proteins/)) providing structural support, intracellular transport tracks, and the machinery for cell division and, in animal cells, shape change and motility.
+
+![Generalised animal cell cutaway diagram with nucleus (nuclear envelope, chromatin, nucleolus), rough and smooth endoplasmic reticulum, Golgi apparatus, mitochondria, lysosome, peroxisome, vacuole, and cytoskeletal elements (microtubules, centrosome, intermediate filaments, microfilaments) all labelled](/MCBBPICS/generalized-eukaryotic-cell.png)
+*Source: opentextbc.ca (OpenStax-derived Biology OER) — confirm licensing basis before public deployment. OpenStax content is typically CC BY 4.0; confirm before public deployment. Note: this shows only the animal-cell version (panel "a" of a two-panel source figure) — no plant-cell version is currently placed alongside it.*
 
 ### Why the prokaryote/eukaryote distinction is not simply "simple vs. complex"
 
@@ -66,12 +72,13 @@ A common misconception worth correcting directly: prokaryotes are not "primitive
 
 **Interactive**
 
-- *(built later — see project workflow)* A side-by-side prokaryotic/eukaryotic cell cutaway diagram with clickable structures that reveal a short description on click — the natural entry point widget for the whole section.
+- A side-by-side prokaryotic/eukaryotic cell cutaway diagram with clickable structures that reveal a short description on click — the natural entry point widget for the whole section.
+
+{{< iframe src="/prokaryotic-eukaryotic-cutaway-explorer.html" title="Prokaryotic/Eukaryotic Cell Explorer" height="400px" >}}
 
 **Static**
 
-- Generalised prokaryotic cell diagram (nucleoid, plasmid, cell wall, 70S ribosomes labelled)
-- Generalised eukaryotic cell diagram (nucleus, major organelles labelled) — animal and plant cell versions side by side
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Only the animal-cell version of the eukaryotic cell diagram is placed; a plant-cell version is not yet sourced.)*
 
 ## Practice Problems
 

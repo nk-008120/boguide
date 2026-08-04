@@ -1,18 +1,1 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>BiOGuide for Biology Olympiads – Aggression, Territoriality &amp; Social Structure</title>
-    <link>http://localhost:49334/resources/9-ethology/aggression-territoriality-social-structure/</link>
-    <description>Recent content in Aggression, Territoriality &amp; Social Structure on BiOGuide for Biology Olympiads</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    
-	  <atom:link href="http://localhost:49334/resources/9-ethology/aggression-territoriality-social-structure/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
-  </channel>
-</rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BiOGuide for Biology Olympiads – Aggression, Territoriality &amp; Social Structure</title><link>https://boguide.vercel.app/resources/9-ethology/aggression-territoriality-social-structure/</link><description>Recent content in Aggression, Territoriality &amp; Social Structure on BiOGuide for Biology Olympiads</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://boguide.vercel.app/resources/9-ethology/aggression-territoriality-social-structure/index.xml" rel="self" type="application/rss+xml"/></channel></rss>

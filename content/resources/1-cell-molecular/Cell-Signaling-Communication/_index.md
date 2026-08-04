@@ -27,11 +27,17 @@ Every signaling pathway, regardless of specific molecular details, follows the s
 
 **GPCRs** are the largest receptor family, defined by seven transmembrane α-helices and an associated intracellular **heterotrimeric G-protein** (Gα, Gβ, Gγ subunits). In the resting state, Gα binds GDP; ligand binding to the receptor causes a conformational change that acts as a **guanine nucleotide exchange factor (GEF)**, prompting Gα to release GDP and bind GTP instead. GTP-bound Gα then dissociates from Gβγ, and each can independently activate downstream effectors. Gα has intrinsic GTPase activity that eventually hydrolyses its own bound GTP back to GDP, terminating the signal and allowing reassembly of the inactive heterotrimer — a built-in, self-limiting timer on signal duration.
 
+![GPCR activation cycle: agonist binding triggers GDP release from Gα and GTP loading, Gα-GTP dissociates from Gβγ to activate effectors and produce a cellular response, β-arrestin binding leads to receptor internalisation into an early endosome, and the receptor is either recycled back to the membrane or degraded in the lysosome](/MCBBPICS/gpcr-activation-cycle.webp)
+*Source: ResearchGate figure — confirm licensing basis before public deployment. ResearchGate figures are not a confirmed-open source by default. Note: also shows β-arrestin-mediated internalisation/recycling/degradation, beyond the core activation cycle described in the text.*
+
 A common downstream effector is **adenylyl cyclase**, activated by one class of Gα (Gαs) to convert ATP into the second messenger **cyclic AMP (cAMP)**, which in turn activates **protein kinase A (PKA)**, phosphorylating a range of downstream target proteins. A different Gα class (Gαi) inhibits adenylyl cyclase instead — the same receptor family can therefore either raise or lower cAMP levels depending on which G-protein subtype it's coupled to, a key source of signaling specificity across the many distinct GPCRs a single cell may express.
 
 ### Receptor tyrosine kinases (RTKs)
 
 **RTKs** are single-pass transmembrane receptors with an intrinsic tyrosine kinase enzymatic domain on their cytoplasmic side. Ligand binding (often a growth factor) causes receptor **dimerisation**, bringing two cytoplasmic kinase domains into proximity so each phosphorylates tyrosine residues on the *other* — **trans-autophosphorylation**. These phosphotyrosines then serve as docking sites for intracellular signaling proteins carrying **SH2 domains**, which recognise phosphotyrosine specifically, nucleating a multi-protein signaling complex at the activated receptor. RTK signaling is central to cell growth and proliferation control (e.g. the Ras/MAPK cascade — a downstream RTK pathway with major relevance to cancer biology, since constitutively active Ras mutants are among the most common oncogenic mutations found in human tumours).
+
+![RTK activation mechanism in three steps: (1) inactive receptor monomers before ligand binding, (2) ligand-induced dimerisation bringing the two cytoplasmic kinase domains together for trans-autophosphorylation using ATP, (3) the resulting active phosphorylated receptor dimer with phosphotyrosines marked](/MCBBPICS/rtk-dimerization-autophosphorylation.jpg)
+*Source: ResearchGate figure — confirm licensing basis before public deployment. ResearchGate figures are not a confirmed-open source by default.*
 
 ### Second messengers: amplifying and diversifying the signal
 
@@ -40,6 +46,9 @@ Small, rapidly diffusible intracellular molecules that relay and amplify a signa
 - **cAMP**: produced by adenylyl cyclase (above), activates PKA.
 - **Ca²⁺**: normally held at very low cytoplasmic concentration by active pumping into the ER/sarcoplasmic reticulum and extracellularly; signal-triggered release (e.g. via IP₃ opening ER Ca²⁺ channels, below) produces a sharp, fast concentration spike detectable by Ca²⁺-binding proteins like calmodulin.
 - **IP₃ and DAG**: generated together by phospholipase C (PLC) cleaving the membrane phosphoinositide PIP₂ (see [Lipids & Membrane Biochemistry](../lipids-membrane-biochemistry/) for the lipid chemistry) — IP₃ diffuses into the cytoplasm and triggers ER Ca²⁺ release; DAG stays membrane-associated and activates protein kinase C (PKC). One receptor-binding event thus produces two parallel second-messenger branches from a single enzymatic cleavage step.
+
+![PLC cleaves membrane PIP2 into IP3 and DAG; IP3 diffuses to the ER and opens an IP3-sensitive Ca2+ channel, releasing stored Ca2+; DAG remains in the membrane and, together with the released Ca2+, activates protein kinase C, which phosphorylates downstream substrates](/MCBBPICS/plc-ip3-dag-pathway.png)
+*Source: Wikimedia Commons — confirm licensing basis before public deployment*
 
 The core reason second messengers matter functionally, beyond relaying the signal at all, is **amplification**: one activated receptor can activate many G-protein/enzyme molecules, each of which generates many second-messenger molecules, each of which can activate many kinase molecules — a small number of surface-binding events can therefore produce a very large, fast intracellular response, and this multiplicative cascade structure is the general mechanistic reason cells can respond so quickly and strongly to low concentrations of an extracellular signal.
 
@@ -67,13 +76,13 @@ Every activating step described above has a matched inactivating mechanism — G
 
 **Interactive**
 
-- *(built later — see project workflow)* A signal amplification cascade animator: click "ligand binds," then watch each downstream stage (receptor → G-protein/second messenger → kinase → target proteins) activate in sequence, with a running count of "molecules activated" at each stage to make the amplification concept quantitatively visible.
+- A signal amplification cascade animator: click "ligand binds," then watch each downstream stage (receptor → G-protein/second messenger → kinase → target proteins) activate in sequence, with a running count of "molecules activated" at each stage to make the amplification concept quantitatively visible.
+
+{{< iframe src="/signal-amplification-cascade-animator.html" title="Signal Amplification Cascade Animator" height="360px" >}}
 
 **Static**
 
-- GPCR activation cycle diagram: resting state, GDP→GTP exchange, Gα/Gβγ dissociation, GTPase-mediated reset
-- RTK dimerisation and trans-autophosphorylation diagram with SH2-domain docking shown
-- PLC/IP₃/DAG branching pathway diagram showing the single PIP₂ cleavage event producing two parallel signals
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Note: the RTK image shows dimerisation and trans-autophosphorylation but does not depict SH2-domain docking specifically.)*
 
 ## Practice Problems
 

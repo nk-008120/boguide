@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PCR Cycle Simulator | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .controls { display: flex; gap: 10px; align-items: center; justify-content: center; margin-bottom: 1rem; }
+  .controls button { background: #2d6a4f; color: #fff; border: none; border-radius: 999px; padding: 8px 18px; font-size: 0.82rem; cursor: pointer; }
+  .controls button:disabled { background: #cbd5e1; cursor: not-allowed; }
+  #cycleLabel { font-weight: 700; min-width: 160px; text-align: center; }
+  #phaseSvg { width: 100%; height: 100px; background: #f8fafc; border-radius: 14px; }
+  #copyCount { text-align: center; margin-top: 10px; font-size: 1.1rem; font-weight: 700; color: #2d6a4f; }
+  #phaseDesc { text-align: center; margin-top: 6px; font-size: 0.82rem; color: #4b5563; min-height: 34px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>PCR: Exponential Amplification</h3>
+  <div class="subtitle">Step through denaturation, annealing, and extension across several cycles — the copy count doubles every full cycle.</div>
+  <div class="controls">
+    <button id="prevBtn">&larr; Prev phase</button>
+    <div id="cycleLabel"></div>
+    <button id="nextBtn">Next phase &rarr;</button>
+  </div>
+  <svg id="phaseSvg" viewBox="0 0 300 100"></svg>
+  <div id="copyCount"></div>
+  <div id="phaseDesc"></div>
+</div>
+<script>
+(function(){
+  var ns = 'http://www.w3.org/2000/svg';
+  var svg = document.getElementById('phaseSvg');
+  var phases = ['Denaturation (94-95C)', 'Annealing (50-65C)', 'Extension (72C)'];
+  var descs = [
+    'The double helix separates into two single strands as heat breaks the hydrogen bonds.',
+    'Short synthetic primers bind their complementary single-stranded template sequences.',
+    'Heat-stable Taq polymerase extends each primer, synthesising new complementary DNA.'
+  ];
+  var cycle = 0, phase = 0; // phase 0,1,2 within each cycle
+  var copies = 1;
+
+  function draw(){
+    svg.innerHTML = '';
+    var n = Math.min(copies, 8);
+    for (var i = 0; i < n; i++){
+      var y = 20 + (i % 4) * 20;
+      var x = 20 + Math.floor(i/4) * 140;
+      var line = document.createElementNS(ns,'line');
+      line.setAttribute('x1', x); line.setAttribute('y1', y);
+      line.setAttribute('x2', x + 100); line.setAttribute('y2', y);
+      line.setAttribute('stroke', phase === 0 ? '#94a3b8' : '#1d70a2');
+      line.setAttribute('stroke-width', '3');
+      line.setAttribute('stroke-dasharray', phase === 0 ? '4 3' : 'none');
+      svg.appendChild(line);
+    }
+    if (copies > 8){
+      var t = document.createElementNS(ns,'text');
+      t.setAttribute('x', 150); t.setAttribute('y', 95); t.setAttribute('font-size', 10); t.setAttribute('text-anchor','middle'); t.setAttribute('fill','#64748b');
+      t.textContent = '...and ' + (copies - 8) + ' more strands not shown';
+      svg.appendChild(t);
+    }
+  }
+
+  function update(){
+    document.getElementById('cycleLabel').textContent = 'Cycle ' + (cycle+1) + ' — ' + phases[phase];
+    document.getElementById('phaseDesc').textContent = descs[phase];
+    document.getElementById('copyCount').textContent = copies + ' DNA molecule' + (copies===1?'':'s') + ' (2^' + cycle + ')';
+    draw();
+    document.getElementById('prevBtn').disabled = (cycle === 0 && phase === 0);
+    document.getElementById('nextBtn').disabled = cycle >= 5;
+  }
+
+  document.getElementById('nextBtn').addEventListener('click', function(){
+    phase++;
+    if (phase > 2){
+      phase = 0;
+      cycle++;
+      copies = copies * 2;
+    }
+    update();
+  });
+  document.getElementById('prevBtn').addEventListener('click', function(){
+    phase--;
+    if (phase < 0){
+      phase = 2;
+      cycle--;
+      copies = Math.max(1, Math.round(copies / 2));
+    }
+    update();
+  });
+
+  update();
+})();
+</script>
+</body>
+</html>

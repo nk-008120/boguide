@@ -23,9 +23,15 @@ Even with DNA polymerase's proofreading activity (see [DNA Structure & Replicati
 
 **BER** targets small-scale base damage — a single damaged or chemically inappropriate base (e.g. a deaminated cytosine that has become uracil, or an oxidised base) — without disturbing the surrounding intact DNA. A **DNA glycosylase** specific to the damaged base recognises and excises just that base, leaving an abasic site; downstream enzymes remove the resulting sugar-phosphate remnant, and a repair polymerase fills the single-nucleotide gap, sealed by ligase. This is the exact pathway (**uracil-DNA glycosylase**) referenced in [Nucleotide & Nucleic Acid Chemistry](../nucleotide-nucleic-acid-chemistry/) as the reason DNA uses thymine rather than uracil natively — any uracil BER encounters in DNA is unambiguously a deamination product, since genuine thymine (uracil + methyl group) is chemically distinguishable and not a glycosylase substrate.
 
+![Base excision repair pathway: ROS-induced base lesions are recognised by damage-specific glycosylases, generating an abasic (AP) site; APE1 performs strand incision at the AP site, and DNA polymerase β fills the resulting gap, restoring normal sequence](/MCBBPICS/ber-mechanism-diagram.webp)
+*Source: ResearchGate figure — confirm licensing basis before public deployment. ResearchGate figures are not a confirmed-open source by default. Note: this is a research figure focused on how each BER intermediate affects transcription-factor binding/RNA polymerase stalling, in addition to the core excision-to-gap-filling mechanism; the final ligation step is not separately shown.*
+
 ### Nucleotide excision repair (NER): fixing bulky, helix-distorting lesions
 
 **NER** targets damage too structurally bulky for BER's single-base-swap mechanism to handle — most classically, **UV-induced thymine dimers** (covalent cross-links between adjacent thymine bases that distort the helix's normal geometry). NER excises a short single-stranded segment (roughly a dozen or more nucleotides) *surrounding* the lesion, rather than just the damaged base itself, and a repair polymerase fills the resulting gap using the intact complementary strand as template. The distinction from BER is a useful exam discriminator: **BER = one damaged base, glycosylase-initiated; NER = a bulky, helix-distorting lesion, excises a whole surrounding stretch.** Xeroderma pigmentosum, a hereditary NER deficiency, causes extreme UV sensitivity and dramatically elevated skin cancer risk — direct clinical evidence for how essential this specific pathway is.
+
+![Nucleotide excision repair via both transcription-coupled repair (RNA polymerase stalling at the lesion recruits repair factors) and global genome repair (XPC/hHR23B scans and recognises damage anywhere in the genome): both converge on TFIIH-mediated helix unwinding, XPG/XPF-ERCC1 dual incision excising the lesion-containing segment, gap-filling DNA polymerase, and ligase sealing the nick](/MCBBPICS/ner-mechanism-diagram.png)
+*Source: Wikipedia (Nucleotide Excision Repair) — confirm licensing basis before public deployment*
 
 ### Double-strand break repair: the highest-stakes damage type
 
@@ -43,6 +49,9 @@ DNA polymerase's requirement for a primer (see [DNA Structure & Replication](../
 **Telomeres** — repetitive, non-coding DNA sequences capping chromosome ends — buffer this shortening, sacrificing expendable repeat sequence rather than functional genes each division. **Telomerase**, a specialised reverse transcriptase carrying its own built-in RNA template, extends telomeric repeats using that RNA template rather than the chromosome itself — solving the end-replication problem by *not* relying on DNA-templated synthesis at all, sidestepping the primer-removal gap issue entirely.
 
 Telomerase activity is a double-edged biological fact, worth understanding both directions: most normal somatic cells have **low/absent** telomerase activity, so telomeres progressively shorten across successive divisions, eventually triggering replicative senescence (a proposed molecular "aging clock" and tumour-suppressive mechanism, since a senescent cell can no longer divide uncontrollably). Most **cancer cells**, by contrast, reactivate telomerase, achieving effectively unlimited replicative potential — one of the hallmark features distinguishing malignant from normal cell proliferation, and an active area of anticancer drug-target research.
+
+![Comparison of telomerase-positive vs. telomerase-negative cells' response to a stalled replication fork at the telomere: telomerase-positive cells can resolve the block via fork reversal or direct telomerase-mediated de novo telomere synthesis, while telomerase-negative cells rely on Ku- and Rad51-dependent, recombination-based (ALT-type) telomere synthesis after fork breakage](/MCBBPICS/telomere-shortening-telomerase.jpg)
+*Source: ScienceDirect (research article) — confirm licensing basis before public deployment. **Content mismatch flagged**: originally specced as a simple telomere-shortening-across-generations diagram, but this figure instead depicts fork-stalling/fork-reversal and recombination-based (ALT) telomere maintenance mechanisms — a more advanced, different concept from progressive end-replication shortening. No simple shortening-across-cycles diagram is currently placed.*
 
 ## Comparative Structures
 
@@ -65,13 +74,13 @@ Telomerase activity is a double-edged biological fact, worth understanding both 
 
 **Interactive**
 
-- *(built later — see project workflow)* A damage-to-pathway matcher: given a description of a specific DNA lesion (mismatch, oxidised base, UV dimer, double-strand break), select the correct repair pathway and see its mechanism animate.
+- A damage-to-pathway matcher: given a description of a specific DNA lesion (mismatch, oxidised base, UV dimer, double-strand break), select the correct repair pathway and see its mechanism animate.
+
+{{< iframe src="/damage-to-pathway-matcher.html" title="DNA Damage-to-Pathway Matcher" height="380px" >}}
 
 **Static**
 
-- BER mechanism diagram: glycosylase excision, abasic site, gap-filling, ligation
-- NER mechanism diagram: lesion recognition, dual incision, excision of the surrounding segment, gap-filling
-- Telomere shortening across successive replication cycles, with telomerase extension shown as the counteracting mechanism
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. The telomere image is a content mismatch — see the inline note; a genuine progressive-shortening-across-cycles diagram is not yet sourced.)*
 
 ## Practice Problems
 

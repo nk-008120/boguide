@@ -1,18 +1,1 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>BiOGuide for Biology Olympiads – Photoperiodism, Vernalization &amp; Flowering</title>
-    <link>http://localhost:49334/resources/5-plant-physiology/photoperiodism-vernalization-flowering/</link>
-    <description>Recent content in Photoperiodism, Vernalization &amp; Flowering on BiOGuide for Biology Olympiads</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    
-	  <atom:link href="http://localhost:49334/resources/5-plant-physiology/photoperiodism-vernalization-flowering/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
-  </channel>
-</rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BiOGuide for Biology Olympiads – Photoperiodism, Vernalization &amp; Flowering</title><link>https://boguide.vercel.app/resources/5-plant-physiology/photoperiodism-vernalization-flowering/</link><description>Recent content in Photoperiodism, Vernalization &amp; Flowering on BiOGuide for Biology Olympiads</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://boguide.vercel.app/resources/5-plant-physiology/photoperiodism-vernalization-flowering/index.xml" rel="self" type="application/rss+xml"/></channel></rss>

@@ -19,6 +19,9 @@ The plasma membrane is a **selectively permeable** boundary — its job is not s
 
 The **fluid mosaic model** (Singer & Nicolson, 1972) describes the membrane as a two-dimensional fluid in which phospholipids and proteins diffuse laterally, rather than a static, rigid structure. "Fluid" refers to this lateral mobility (phospholipids and many proteins move within their own leaflet); "mosaic" refers to the patchwork arrangement of diverse protein types embedded at varying depths within the lipid bilayer. Fluidity is tuned by fatty acid saturation and cholesterol content (see [Lipids & Membrane Biochemistry](../lipids-membrane-biochemistry/)) and matters functionally: a membrane that is too rigid restricts protein conformational changes (many transport and signalling proteins require this) and vesicle fusion/budding; a membrane that is too fluid compromises barrier integrity.
 
+![Detailed fluid mosaic model illustration of the plasma membrane: phospholipid bilayer with embedded integral membrane proteins at varying depths, surface-associated peripheral proteins, and cholesterol molecules intercalated among the phospholipid tails](/MCBBPICS/fluid-mosaic-model.svg)
+*Source: en.wikipedia.org (Fluid mosaic model) — confirm licensing basis before public deployment. Note: this is a densely detailed vector illustration with no embedded text labels (verified structurally — 1501 paths, 164 circles, zero text nodes) and could not be fully visually rendered in this session due to a tooling limitation; the general content (bilayer, multiple protein types, cholesterol) matches the Wikipedia source page's subject, but individual components are not labelled in the image itself and were not directly eyeballed. Recommend a visual spot-check before public deployment.*
+
 ### Membrane protein topology
 
 Membrane proteins are classified by how they associate with the bilayer:
@@ -46,9 +49,18 @@ Active transport moves solutes **against** their concentration gradient, which i
 - **Primary active transport** couples transport directly to a chemical energy source, almost always ATP hydrolysis (e.g. the Na⁺/K⁺-ATPase, which pumps 3 Na⁺ out and 2 K⁺ in per ATP hydrolysed, maintaining the steep Na⁺/K⁺ gradients essential for nerve/muscle excitability and, indirectly, for secondary active transport below).
 - **Secondary active transport (cotransport)** does not use ATP directly. Instead, it harnesses the electrochemical gradient of one solute (typically Na⁺, built up by a primary active transporter like the Na⁺/K⁺-ATPase) to drive a *second* solute against its own gradient, via a shared carrier protein. Two geometries: **symport** (both solutes move in the same direction, e.g. the intestinal Na⁺/glucose symporter, SGLT) and **antiport** (solutes move in opposite directions, e.g. the Na⁺/Ca²⁺ exchanger). The energetic logic: allowing Na⁺ to run back down its steep, ATP-built gradient releases enough free energy to pull the second solute uphill against its own gradient — the ATP cost was "spent" upstream, at the primary pump, not at the cotransporter itself.
 
+![Active vs. passive transport side by side: primary active transport (ATPase uniport/cotransport, ATP hydrolysis driving low-to-high solute movement) and secondary active transport (antiport/symport, existing gradient driving one solute up against low-to-high movement) grouped under Active Transport; facilitated diffusion and simple diffusion (both high-to-low, no energy input) grouped under Passive Transport](/MCBBPICS/four-transport-mechanisms2.jpeg)
+*Source: ScienceDirect ("passive transport" topic page) — confirm licensing basis before public deployment. ScienceDirect topic pages are not a confirmed-open source by default.*
+
+![Membrane transport protein architectures: ATPase (Na+/K+ pump using ATP), cotransporter (Na+/glucose symport), counter-transporter (H+/Na+ antiport), and a channel (passive Na+ flow), plus coupled transporters and paracellular transport proteins between adjacent cells](/MCBBPICS/four-transport-mechanisms.jpg)
+*Source: mysciencesquad.weebly.com — confirm licensing basis before public deployment. Note: a complementary diagram showing specific transporter protein types/geometries (uniport, symport, antiport, channel) rather than the four-mechanism (simple/facilitated diffusion, primary/secondary active) framing used in the text — the image above this one is the more direct match.*
+
 ### Osmosis: water's special case
 
 **Osmosis** is the diffusion of water across a selectively permeable membrane, down *water's own* concentration gradient — which, practically, means water moves toward the side with **higher solute concentration** (lower water concentration). A cell in a **hypertonic** solution (higher external solute concentration) loses water and shrinks (crenation in animal cells, plasmolysis in plant cells); in a **hypotonic** solution, it gains water and swells (potentially lysing, in animal cells lacking a cell wall — plant cells instead build up **turgor pressure** against their cell wall, which is central to structural support in [Plant Anatomy](/resources/6-plant-anatomy/) and stomatal function in [Plant Physiology](/resources/5-plant-physiology/)). Aquaporins are channel proteins that greatly accelerate osmotic water flow without altering its thermodynamic direction.
+
+![Animal cell (red blood cell) and plant cell responses to hypotonic, isotonic, and hypertonic solutions: animal cells shown lysed, normal, and shriveled respectively; plant cells shown turgid (normal), flaccid, and plasmolyzed respectively, with water movement arrows and plasma membrane/cell wall labelled](/MCBBPICS/tonicity-plant-vs-animal-cell.png)
+*Source: iitianacademy.com — confirm licensing basis before public deployment*
 
 ## Comparative Structures
 
@@ -71,13 +83,13 @@ Active transport moves solutes **against** their concentration gradient, which i
 
 **Interactive**
 
-- *(built later — see project workflow)* A membrane transport simulator: a concentration-gradient slider across a schematic membrane, with a mode toggle between simple diffusion, facilitated diffusion, and active transport (ATP-cost indicator shown for active transport only), animating solute movement direction and rate under each mode.
+- A membrane transport simulator: a concentration-gradient slider across a schematic membrane, with a mode toggle between simple diffusion, facilitated diffusion, and active transport (ATP-cost indicator shown for active transport only), animating solute movement direction and rate under each mode.
+
+{{< iframe src="/membrane-transport-simulator.html" title="Membrane Transport Mode Simulator" height="400px" >}}
 
 **Static**
 
-- Fluid mosaic model diagram showing phospholipid bilayer, integral and peripheral proteins, and cholesterol
-- Side-by-side diagram of the four transport mechanisms (simple diffusion, facilitated diffusion, primary active, secondary active) with gradient direction and energy source labelled on each
-- Plant cell vs. animal cell response to hypotonic/hypertonic/isotonic solutions (turgor pressure vs. lysis/crenation)
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Note: the fluid mosaic model image could not be fully visually verified — see the inline note.)*
 
 ## Practice Problems
 

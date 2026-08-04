@@ -22,17 +22,29 @@ Every land plant life cycle alternates between a haploid, gamete-producing **gam
 
 The **gametophyte is the dominant, free-living generation** — the green, leafy-looking moss plant a person actually sees growing on a rock or log is the gametophyte, not the sporophyte. Bryophytes structurally lack true vascular tissue: mosses have, at most, simple water/food-conducting cells (**hydroids** and **leptoids**) that are functionally analogous to but structurally simpler than, and not homologous with, true xylem and phloem — a distinction worth stating precisely, since "bryophytes have no vascular tissue at all" is an overstatement for mosses specifically, even though it holds for true xylem/phloem in every bryophyte. Without a rigid, lignified vascular system for structural support and long-distance water transport, bryophytes are structurally limited to small size. They also lack true roots, stems, or leaves in the vascular-plant sense (attaching to substrate instead via **rhizoids**, single-celled or filamentous anchoring structures, not the multicellular organs roots are). The dependent **sporophyte** generation remains physically attached to, and nutritionally dependent on, the parent gametophyte for its entire life, typically reduced to a simple stalk (**seta**) and spore capsule. Fertilization structurally requires liquid water, since bryophyte sperm are flagellated and must swim from the male gametangium (**antheridium**) to the female gametangium (**archegonium**) — a structural constraint tying bryophyte reproduction to consistently moist habitats.
 
+![Bryophyte life cycle: diploid sporophyte generation (sporangium releasing spores by meiosis) and haploid gametophyte generation (male/female gametophytes, antheridium/archegonium, sperm swimming through water transport to the egg, embryo developing on the parent gametophyte).](/PLANTANATPICS/bryophyte-life-cycle.png)
+*Source: OER Texas, Biology course materials (oertx.highered.texas.gov) — likely openly licensed given the OER designation, but confirm the specific license before public deployment.*
+
 ### Pteridophytes (Ferns and Fern Allies)
 
 The dominance relationship flips: the **sporophyte becomes the dominant, free-living generation** — the recognizable fern plant, with true roots, stems (often rhizomes), and leaves (**fronds**), is the sporophyte. Ferns are the first lineage in this survey with **true vascular tissue** (tracheids, in a stele — see [Xylem, Phloem & Vascular Tissue](../xylem-phloem-vascular-tissue/) and [Root Anatomy](../root-anatomy/) for structural detail equally applicable here), which structurally permits greater size and a genuinely independent, self-supporting body compared to any bryophyte. The gametophyte, however, is still a separate, free-living structure — a small, typically heart-shaped, short-lived **prothallus**, photosynthetic and nutritionally independent of the sporophyte, but tiny and structurally simple compared to it. As in bryophytes, fertilization still structurally requires liquid water for flagellated sperm to swim from antheridium to archegonium on the prothallus — the specific structural limitation that persists through this transition and is only removed at the next one.
+
+![Fern life cycle: sori/sporangium on the underside of a leaflet, germinating spore, immature and mature prothallus (with archegonia, antheridia, rhizoids), sperm fertilizing an egg, developing sporophyte, and the mature sporophyte with rhizome and roots.](/PLANTANATPICS/fern-life-cycle.jpg)
+*Source: Biology LibreTexts (Kimball), "Fern Life Cycle" (bio.libretexts.org) — confirm the specific CC license on the originating page before public deployment.*
 
 ### Gymnosperms
 
 The sporophyte remains dominant and is now the site of a further structural innovation: the **seed** — an embryo, packaged with a nutrient supply, enclosed in a protective seed coat (structural detail of the angiosperm seed on [Seed & Fruit Anatomy](../seed-fruit-anatomy/) generalizes here, though gymnosperm seeds are not enclosed in a fruit — the "naked seed" that gives the group its name). Most gymnosperm vascular tissue remains **tracheid-only** (true vessels are largely absent, a small number of exceptions like *Gnetum* aside — see [Xylem, Phloem & Vascular Tissue](../xylem-phloem-vascular-tissue/)). Reproductive structures are organized into **cones (strobili)** — separate male (pollen) and female (seed) cones, in most species on the same plant. The single most significant structural change at this transition is that **fertilization no longer requires liquid water**: **pollen** — itself a further-reduced male gametophyte, dispersed by wind rather than needing a water film — carries non-flagellated sperm to the ovule, removing the ancestral moist-habitat constraint that persists through bryophytes and ferns. The female gametophyte, correspondingly, is reduced further still: a small, multicellular structure entirely retained within, and nutritionally dependent on, the sporophyte's ovule tissue, rather than a separate free-living prothallus.
 
+![Gymnosperm (pine) life cycle: mature sporophyte, male cone with spore sacs, female cone/ovules, meiosis producing male gametophytes (pollen grains) and a surviving spore, mitosis to female gametophyte, fertilization, and the resulting seed with food reserves and embryo.](/PLANTANATPICS/gymnosperm-life-cycle.jpg)
+*Source: user-sourced (science.mtchs.org) — confirm licensing basis before public deployment.*
+
 ### Angiosperms
 
 Sporophyte dominance and vascular sophistication reach their fullest expression: most angiosperms possess **vessel elements** in addition to tracheids (see [Xylem, Phloem & Vascular Tissue](../xylem-phloem-vascular-tissue/)), giving a lower-resistance water transport system than any earlier lineage, and the seed is now enclosed within a **fruit**, derived from the ovary wall (see [Seed & Fruit Anatomy](../seed-fruit-anatomy/)) — a structural innovation with no gymnosperm equivalent, providing both additional protection and, in many species, a dispersal mechanism built into the same tissue. Reproductive structures are organized into **flowers** (see [Flower Anatomy & Reproductive Structures](../flower-anatomy-reproductive-structures/)) rather than cones, and **double fertilization** produces both the zygote and a nutritive endosperm tissue in a single pollination event — a structural innovation unique to angiosperms among all four lineages surveyed here. Gametophyte reduction reaches its endpoint in this lineage: the male gametophyte is just the 2–3 celled pollen grain, and the female gametophyte is the embryo sac, typically as few as seven cells — both entirely dependent on, and physically inseparable from, sporophyte tissue for their entire existence, the structural opposite extreme from the free-living, dominant bryophyte gametophyte this survey began with.
+
+![Angiosperm life cycle: flower structure (stigma/style/ovary, perianth, filament), meiosis in the microsporangium (anther) producing pollen and in the ovule producing the embryo sac (megagametophyte, with polar nuclei/antipodal/egg/synergid), pollination and fertilization via the pollen tube, and the resulting germinating seed (seed coat, endosperm, embryo).](/PLANTANATPICS/angiosperm-life-cycle.jpg)
+*Source: Biology LibreTexts (Boundless), "The Life Cycle of an Angiosperm" (bio.libretexts.org) — confirm the specific CC license on the originating page before public deployment. Exceptionally comprehensive, tying together flower structure, both gametophytes, and seed formation in one diagram.*
 
 ## Comparative Structures
 
@@ -66,14 +78,7 @@ Sporophyte dominance and vascular sophistication reach their fullest expression:
 
 {{< iframe src="/fertilization-mechanism-comparison.html" title="Fertilization mechanism comparison" height="440px" >}}
 
-**Static**
-
-- Bryophyte (moss) life cycle diagram, gametophyte-dominant, sporophyte shown attached and dependent
-- Fern life cycle diagram, sporophyte-dominant, free-living prothallus shown separately and to scale
-- Gymnosperm life cycle diagram, male and female cones labeled, reduced gametophyte shown retained in ovule tissue
-- Angiosperm life cycle diagram, flower/double fertilization/fruit shown
-- Side-by-side body plan silhouettes of all four lineages at relative scale, illustrating the size increase vascular tissue and true organs permit
-- Hydroid/leptoid moss conducting cells vs. a true tracheid, structural comparison
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Two spec items are not yet illustrated: the four-lineage relative-scale body-plan comparison — a source was identified but the file itself didn't end up saved, worth re-requesting — and the hydroid/leptoid-vs-tracheid comparison, for which no usable image was found.)*
 
 ## Practice Problems
 

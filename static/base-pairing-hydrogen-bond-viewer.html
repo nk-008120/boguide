@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Base-Pairing Hydrogen Bond Viewer | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .baserow { display: flex; gap: 8px; justify-content: center; margin-bottom: 1rem; flex-wrap: wrap; }
+  .basebtn { padding: 8px 14px; border-radius: 10px; border: 2px solid #e2e8f0; background: #f8fafc; cursor: pointer; font-size: 0.85rem; font-weight: 700; }
+  .basebtn.selected { background: #2d6a4f; color: #fff; border-color: #2d6a4f; }
+  #result { padding: 14px; border-radius: 12px; background: #f8fafc; text-align: center; min-height: 70px; }
+  #bondViz { font-size: 1.4rem; margin: 8px 0; letter-spacing: 2px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Base-Pairing Hydrogen Bond Viewer</h3>
+  <div class="subtitle">Click any two bases (one purine slot, one pyrimidine slot) and see whether/how many hydrogen bonds form.</div>
+  <div class="baserow">
+    <b style="align-self:center;">Base 1:</b>
+    <button class="basebtn" data-base="A">A</button>
+    <button class="basebtn" data-base="G">G</button>
+    <button class="basebtn" data-base="C">C</button>
+    <button class="basebtn" data-base="T">T</button>
+    <button class="basebtn" data-base="U">U</button>
+  </div>
+  <div class="baserow">
+    <b style="align-self:center;">Base 2:</b>
+    <button class="basebtn" data-base2="A">A</button>
+    <button class="basebtn" data-base2="G">G</button>
+    <button class="basebtn" data-base2="C">C</button>
+    <button class="basebtn" data-base2="T">T</button>
+    <button class="basebtn" data-base2="U">U</button>
+  </div>
+  <div id="result">Select one base from each row.</div>
+</div>
+<script>
+(function(){
+  var b1 = null, b2 = null;
+  var validPairs = { 'A-T': 2, 'T-A': 2, 'A-U': 2, 'U-A': 2, 'G-C': 3, 'C-G': 3 };
+  var purines = ['A','G'];
+
+  document.querySelectorAll('[data-base]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('[data-base]').forEach(function(b){ b.classList.remove('selected'); });
+      btn.classList.add('selected');
+      b1 = btn.getAttribute('data-base');
+      evaluate();
+    });
+  });
+  document.querySelectorAll('[data-base2]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('[data-base2]').forEach(function(b){ b.classList.remove('selected'); });
+      btn.classList.add('selected');
+      b2 = btn.getAttribute('data-base2');
+      evaluate();
+    });
+  });
+
+  function evaluate(){
+    var result = document.getElementById('result');
+    if (!b1 || !b2){ result.textContent = 'Select one base from each row.'; return; }
+    var key = b1 + '-' + b2;
+    var bothPurine = purines.indexOf(b1) !== -1 && purines.indexOf(b2) !== -1;
+    var bothPyrimidine = purines.indexOf(b1) === -1 && purines.indexOf(b2) === -1;
+    if (validPairs[key]){
+      var n = validPairs[key];
+      var dots = '';
+      for (var i=0;i<n;i++){ dots += (i>0?' ':'') + '···'; }
+      result.innerHTML = '<div id="bondViz">' + b1 + ' ' + dots + ' ' + b2 + '</div><b style="color:#166534">Valid pair — ' + n + ' hydrogen bonds.</b>';
+    } else if (bothPurine){
+      result.innerHTML = '<b style="color:#991b1b">Invalid — two purines are too wide, sterically clash across the helix.</b>';
+    } else if (bothPyrimidine){
+      result.innerHTML = '<b style="color:#991b1b">Invalid — two pyrimidines are too far apart to hydrogen-bond.</b>';
+    } else {
+      result.innerHTML = '<b style="color:#991b1b">Invalid — the donor/acceptor pattern does not match for this purine-pyrimidine combination.</b>';
+    }
+  }
+})();
+</script>
+</body>
+</html>
