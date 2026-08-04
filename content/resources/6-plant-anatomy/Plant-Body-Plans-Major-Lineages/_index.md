@@ -59,7 +59,12 @@ Sporophyte dominance and vascular sophistication reach their fullest expression:
 **Interactive**
 
 - **Alternation-of-generations lineage slider (click-through SVG/JS, no new library)** — a single life-cycle diagram frame with a slider stepping through the four lineages in order; at each step, the relative size of the gametophyte and sporophyte panels visually rescales to match that lineage's actual dominance relationship, making the "progressive gametophyte reduction" trend a visible animation rather than a stated pattern.
+
+{{< iframe src="/alternation-generations-lineage-slider.html" title="Alternation-of-generations lineage slider" height="460px" >}}
+
 - **Fertilization mechanism comparison (click-through SVG/JS, no new library)** — clicking each lineage shows its specific fertilization mechanism (flagellated sperm swimming through a water film vs. a pollen tube), highlighting exactly where the water-dependence is removed in the gymnosperm/angiosperm transition.
+
+{{< iframe src="/fertilization-mechanism-comparison.html" title="Fertilization mechanism comparison" height="440px" >}}
 
 **Static**
 

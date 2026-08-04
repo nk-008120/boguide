@@ -78,7 +78,12 @@ Several fruit and seed structures are specifically shaped by dispersal mechanism
 **Interactive**
 
 - **Pericarp layer explorer across fruit types (click-through SVG/JS, no new library)** — a single cross-section frame that swaps between berry, drupe, and pome, showing how the same three-layer pericarp plan (exocarp/mesocarp/endocarp) is realized completely differently in each, with the pome additionally highlighting the non-ovary-derived fleshy tissue.
+
+{{< iframe src="/pericarp-layer-explorer.html" title="Pericarp layer explorer across fruit types" height="480px" >}}
+
 - **Fruit classification decision tree (click-through SVG/JS, no new library)** — starting from "how many ovaries, how many flowers," branches through simple/aggregate/multiple, then for simple fruits further branches through fleshy/dry and dehiscent/indehiscent, ending at a named fruit type with an example image.
+
+{{< iframe src="/fruit-classification-decision-tree.html" title="Fruit classification decision tree" height="440px" >}}
 
 **Static**
 

@@ -64,7 +64,12 @@ A practical station handed an unfamiliar vegetative specimen (no flower availabl
 **Interactive**
 
 - **Monocot/dicot feature-by-feature toggle (click-through SVG/JS, no new library)** — a single interface with tabs for root/stem/leaf/flower/pollen; each tab toggles between the monocot and dicot version of that one structure, letting a user step through all five contrasts in one place rather than five separate page visits.
+
+{{< iframe src="/monocot-dicot-feature-toggle.html" title="Monocot/dicot feature-by-feature toggle" height="500px" >}}
+
 - **Practical identification decision tree (click-through SVG/JS, no new library)** — starting from "what specimen parts are available," branches to the fastest applicable check (flower present? leaf present? stem cross-section possible?) and ends at a monocot/dicot call — modeling the working identification approach described above as something to practice, not just read.
+
+{{< iframe src="/practical-id-decision-tree.html" title="Practical identification decision tree" height="420px" >}}
 
 **Static**
 

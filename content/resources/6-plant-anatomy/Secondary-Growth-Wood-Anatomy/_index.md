@@ -72,7 +72,12 @@ A small number of monocot lineages (e.g. *Dracaena*, *Yucca*, *Aloe*, some palms
 **Interactive**
 
 - **Vascular cambium cross-section builder (SVG/JS, no new library)** — starts with a young eustele (fascicular cambium only), then animates interfascicular cambium forming between bundles, fusing into a continuous ring, then adds secondary xylem/phloem outward from that ring over several simulated "growth years" — makes the fascicular-to-continuous-cambium transition and the resulting wood accumulation visible as a process rather than two static end-state images.
+
+{{< iframe src="/vascular-cambium-cross-section-builder.html" title="Vascular cambium cross-section builder" height="520px" >}}
+
 - **Tree trunk cross-section explorer (click-through SVG/JS, no new library)** — clicking regions of a labeled trunk cross-section (bark/periderm, secondary phloem, vascular cambium, sapwood, heartwood, pith) displays each region's composition and function, plus a ring-counting overlay distinguishing earlywood/latewood bands.
+
+{{< iframe src="/tree-trunk-cross-section-explorer.html" title="Tree trunk cross-section explorer" height="480px" >}}
 
 **Static**
 

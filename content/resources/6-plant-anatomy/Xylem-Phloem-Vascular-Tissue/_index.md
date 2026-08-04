@@ -70,7 +70,12 @@ Collateral bundles are further split by whether a strip of meristematic **vascul
 **Interactive**
 
 - **Bordered pit / perforation plate comparison (click-through SVG/JS, no new library)** — cross-sections through a tracheid-tracheid pit pair and a vessel-vessel perforation plate side by side; clicking either toggles a simulated water path through it, visually contrasting the pit membrane's resistance against the perforation plate's open channel.
+
+{{< iframe src="/bordered-pit-perforation-plate-comparator.html" title="Bordered pit vs. perforation plate flow comparator" height="440px" >}}
+
 - **Vascular bundle arrangement identifier (click-through quiz)** — four unlabeled bundle cross-sections (collateral/bicollateral/amphivasal/amphicribral); clicking one prompts identification, then reveals the answer with the xylem/phloem positions highlighted in different colors.
+
+{{< iframe src="/vascular-bundle-arrangement-quiz.html" title="Vascular bundle arrangement identifier quiz" height="480px" >}}
 
 **Static**
 

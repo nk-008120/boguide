@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fruit Classification Decision Tree | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 580px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .question { font-size: 0.92rem; font-weight: 700; color: #1a472a; margin-bottom: 12px; }
+  .opt-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    margin-bottom: 8px;
+  }
+  .opt-btn:hover { background: #e2e8f0; }
+  .result {
+    background: #dcfce7;
+    border-radius: 12px;
+    padding: 14px 16px;
+    font-size: 0.9rem;
+    color: #166534;
+    font-weight: 600;
+  }
+  .breadcrumb { font-size: 0.74rem; color: #94a3b8; margin-bottom: 10px; }
+  .btn.secondary {
+    background: #94a3b8;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Fruit Classification Decision Tree</h3>
+  <div class="subtitle">Start from how many ovaries and flowers formed the fruit, and branch to a named fruit type.</div>
+  <div class="breadcrumb" id="breadcrumb"></div>
+  <div id="stepArea"></div>
+</div>
+<script>
+(function(){
+  var breadcrumb = document.getElementById('breadcrumb');
+  var stepArea = document.getElementById('stepArea');
+  var trail = [];
+
+  var tree = {
+    start: {
+      question: 'How many ovaries, and how many flowers, formed this fruit?',
+      options: [
+        { label: 'One ovary, one flower', next: 'simpleTexture' },
+        { label: 'Multiple ovaries, one flower', result: 'Aggregate fruit — e.g. raspberry (each drupelet is one carpel\'s fruitlet, all from one flower\'s gynoecium).' },
+        { label: 'Multiple ovaries, multiple flowers (one inflorescence)', result: 'Multiple fruit — e.g. pineapple or fig (fused ovaries from many separate flowers).' }
+      ]
+    },
+    simpleTexture: {
+      question: 'Simple fruit — is the pericarp fleshy or dry at maturity?',
+      options: [
+        { label: 'Fleshy', next: 'fleshyType' },
+        { label: 'Dry', next: 'dryDehiscence' }
+      ]
+    },
+    fleshyType: {
+      question: 'What does the internal structure look like?',
+      options: [
+        { label: 'Entire pericarp fleshy, no hard layer', result: 'Berry — e.g. tomato, grape.' },
+        { label: 'Fleshy mesocarp + hard, stony endocarp around one seed', result: 'Drupe — e.g. peach, cherry.' },
+        { label: 'Most of the flesh is not from the ovary wall (receptacle-derived)', result: 'Pome — e.g. apple, pear.' }
+      ]
+    },
+    dryDehiscence: {
+      question: 'Does the dry pericarp split open (dehisce) at maturity?',
+      options: [
+        { label: 'Yes, it splits open', next: 'dehiscentType' },
+        { label: 'No, it stays closed', next: 'indehiscentType' }
+      ]
+    },
+    dehiscentType: {
+      question: 'How does it split?',
+      options: [
+        { label: 'Along two seams', result: 'Legume — e.g. pea pod (characteristic of Fabaceae).' },
+        { label: 'Along multiple seams or pores', result: 'Capsule — e.g. poppy seed pod.' },
+        { label: 'An elongated capsule', result: 'Silique — e.g. mustard seed pod (characteristic of Brassicaceae).' }
+      ]
+    },
+    indehiscentType: {
+      question: 'What\'s distinctive about it?',
+      options: [
+        { label: 'Small, one seed, pericarp not fused to the seed coat', result: 'Achene — e.g. sunflower "seed".' },
+        { label: 'One seed, pericarp fused tightly to the seed coat', result: 'Caryopsis — e.g. corn kernel (characteristic of grasses).' },
+        { label: 'Winged pericarp extension', result: 'Samara — e.g. maple "helicopter" seed.' },
+        { label: 'Large, hardened pericarp', result: 'Nut — e.g. acorn, hazelnut.' }
+      ]
+    }
+  };
+
+  function render(nodeKey){
+    var node = tree[nodeKey];
+    stepArea.innerHTML = '<div class="question">' + node.question + '</div>';
+    node.options.forEach(function(opt){
+      var btn = document.createElement('button');
+      btn.className = 'opt-btn';
+      btn.textContent = opt.label;
+      btn.addEventListener('click', function(){
+        trail.push(opt.label);
+        breadcrumb.textContent = trail.join(' → ');
+        if (opt.result){
+          showResult(opt.result);
+        } else {
+          render(opt.next);
+        }
+      });
+      stepArea.appendChild(btn);
+    });
+  }
+
+  function showResult(text){
+    stepArea.innerHTML = '<div class="result">' + text + '</div>';
+    var restart = document.createElement('button');
+    restart.className = 'btn secondary';
+    restart.textContent = 'Start over';
+    restart.addEventListener('click', function(){
+      trail = [];
+      breadcrumb.textContent = '';
+      render('start');
+    });
+    stepArea.appendChild(restart);
+  }
+
+  render('start');
+})();
+</script>
+</body>
+</html>
