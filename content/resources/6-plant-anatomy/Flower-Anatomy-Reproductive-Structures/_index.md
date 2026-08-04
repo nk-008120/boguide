@@ -77,7 +77,12 @@ A pollen grain landing on a receptive stigma germinates a **pollen tube**, which
 **Interactive**
 
 - **Microsporogenesis / megasporogenesis parallel walkthrough (click-through SVG/JS, no new library)** — two side-by-side tracks (anther → pollen grain; ovule → embryo sac), stepping through meiosis and subsequent divisions in sync, so the shared meiotic starting point and divergent cell-count outcomes (microspore tetrad, all four viable, vs. megaspore tetrad, three degenerating) are visually contrasted rather than read as separate paragraphs.
+
+{{< iframe src="/sporogenesis-parallel-walkthrough.html" title="Microsporogenesis/megasporogenesis parallel walkthrough" height="520px" >}}
+
 - **Double fertilization click-through (SVG/JS, no new library)** — a pollen tube growing through the micropyle into an embryo sac; clicking triggers the two simultaneous fusion events (sperm+egg, sperm+polar nuclei), each labeled with the resulting ploidy.
+
+{{< iframe src="/double-fertilization-clickthrough.html" title="Double fertilization click-through" height="460px" >}}
 
 **Static**
 

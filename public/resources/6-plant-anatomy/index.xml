@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BiOGuide for Biology Olympiads – Plant Anatomy</title>
-    <link>http://localhost:49334/resources/6-plant-anatomy/</link>
+    <link>http://localhost:1313/resources/6-plant-anatomy/</link>
     <description>Recent content in Plant Anatomy on BiOGuide for Biology Olympiads</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://localhost:49334/resources/6-plant-anatomy/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/resources/6-plant-anatomy/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Plant Tissue Systems</title>
-      <link>http://localhost:49334/resources/6-plant-anatomy/plant-tissue-systems/</link>
+      <link>http://localhost:1313/resources/6-plant-anatomy/plant-tissue-systems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49334/resources/6-plant-anatomy/plant-tissue-systems/</guid>
+      <guid>http://localhost:1313/resources/6-plant-anatomy/plant-tissue-systems/</guid>
       <description>
         
         
@@ -55,8 +55,13 @@
     href=&#34;../secondary-growth-wood-anatomy/&#34;&gt;Secondary Growth &amp;amp; Wood Anatomy&lt;/a&gt;; introduced here only as the third meristem category.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Intercalary meristems&lt;/strong&gt; — retained at the base of internodes or leaves (characteristic of grasses), allowing continued elongation after the tip has already differentiated — structurally why grass leaves and stems can regrow after their tips are grazed or mowed while the base remains intact.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTANATPICS/shoot-apical-meristem-tunica-corpus.jpg&#34; alt=&#34;Longitudinal section through a shoot apical meristem showing a two-layered tunica (L I, L II) overlying the corpus (L III), the clonal outer-layer arrangement described above.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+&lt;em&gt;Source: UF/IFAS Plant Propagation Glossary (propg.ifas.ufl.edu) — confirm licensing basis before public deployment. Labels the tunica/corpus layers directly; leaf primordia are not separately labeled in this particular figure.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Behind the RAM, a root shows three growth zones in longitudinal section: the &lt;strong&gt;zone of cell division&lt;/strong&gt; (at and just behind the meristem proper), the &lt;strong&gt;zone of elongation&lt;/strong&gt; (cells stop dividing and elongate rapidly, the main driver of root length increase), and the &lt;strong&gt;zone of maturation (differentiation)&lt;/strong&gt; (cells reach final size and differentiate into mature tissue types, including root hairs — see &lt;a
     href=&#34;../root-anatomy/&#34;&gt;Root Anatomy&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTANATPICS/root-apical-meristem-zonation.jpg&#34; alt=&#34;Longitudinal section through a root tip labeling the root cap, quiescent center, and meristematic/elongation/maturation zones, with additional annotation of when specific tissues (vessel elements, sieve tube elements, endodermis) differentiate and where a lateral root primordium initiates.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+&lt;em&gt;Source: SIU Plant Anatomy course materials (nickrentlab.siu.edu) — confirm licensing basis before public deployment. Broader than the original spec: also annotates tissue-differentiation timing and lateral root initiation, both covered in full on &lt;a
+    href=&#34;../root-anatomy/&#34;&gt;Root Anatomy&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Permanent (Non-Meristematic) Tissue: Cell Types&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;permanent-non-meristematic-tissue-cell-types&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#permanent-non-meristematic-tissue-cell-types&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Once a cell exits the meristem and stops dividing, it differentiates into one of a small set of permanent cell types, classified by wall structure and function:&lt;/p&gt;
 &lt;table&gt;
@@ -89,9 +94,13 @@
 			&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTANATPICS/parenchyma-collenchyma-sclerenchyma-comparison.png&#34; alt=&#34;Tabular comparison of parenchyma, collenchyma, and sclerenchyma by wall structure, intercellular spaces, location, function, and named examples (e.g. mesophyll/pith parenchyma, celery-stalk collenchyma, pear stone-cell and coconut-fiber sclerenchyma).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+&lt;em&gt;Source: Navneet Maini, Medium (navneetsmaini.medium.com) — confirm licensing basis before public deployment. A tabular comparison graphic rather than cell-structure drawings; supplements, rather than duplicates, the Comparative Structures table below with additional named examples.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Parenchyma&lt;/strong&gt; cells are structurally unspecialized (thin wall, large central vacuole, retained nucleus) and correspondingly functionally flexible — they carry out the bulk of photosynthesis (as &lt;strong&gt;chlorenchyma&lt;/strong&gt; in the leaf mesophyll and green stems, packed with chloroplasts), storage (as &lt;strong&gt;starch-storing parenchyma&lt;/strong&gt; in roots and tubers, or water-storing parenchyma in succulents), and retain the capacity to dedifferentiate and divide again, which is why parenchyma is the tissue basis of wound healing and vegetative propagation (a cutting roots by parenchyma cells at the cut surface reverting to meristematic activity).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Collenchyma&lt;/strong&gt; provides support specifically where flexibility must be retained — young, still-elongating stems and petioles, and leaf midribs — because its wall thickening is uneven (concentrated at cell corners, following the &lt;strong&gt;angular&lt;/strong&gt; pattern most commonly, though &lt;strong&gt;lamellar&lt;/strong&gt; and &lt;strong&gt;lacunar&lt;/strong&gt; collenchyma variants exist) rather than uniform, allowing the cell wall to stretch somewhat as the organ continues to grow, unlike a rigid lignified wall. Collenchyma cells remain alive and metabolically active at maturity.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Sclerenchyma&lt;/strong&gt; provides rigid, permanent support and comes in two structural forms: &lt;strong&gt;fibers&lt;/strong&gt; (long, tapered cells, usually in bundles, providing tensile strength — commercially the basis of plant fibers like hemp and flax) and &lt;strong&gt;sclereids&lt;/strong&gt; (variable, often branched or irregular shapes, including the gritty &lt;strong&gt;stone cells&lt;/strong&gt; in pear flesh) — both types deposit a thick secondary wall impregnated with &lt;strong&gt;lignin&lt;/strong&gt; (a rigid, hydrophobic polymer) and then die, leaving only the wall as a structural skeleton; the living cytoplasm is not needed for the cell&amp;rsquo;s final mechanical role.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTANATPICS/sclerenchyma-fiber-and-sclereid.webp&#34; alt=&#34;Sclerenchyma fibers in transverse and longitudinal section (thick walls, simple pit pairs) alongside four structurally distinct sclereid subtypes — brachysclereid, astrosclereid, macrosclereid, osteosclereid.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+&lt;em&gt;Source: BiologyLearner (biologylearner.com) — confirm licensing basis before public deployment. Richer than the original spec: shows four named sclereid shape variants rather than a single stone-cell example, illustrating that &amp;ldquo;sclereid&amp;rdquo; covers a range of structural forms, not one fixed shape.&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;The Three Tissue Systems&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-three-tissue-systems&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#the-three-tissue-systems&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Every plant organ — root, stem, leaf, flower part — is built from the same three tissue systems in different proportions and arrangements, which is exactly why organ-specific pages describe &lt;em&gt;arrangement&lt;/em&gt; rather than introducing new cell types:&lt;/p&gt;
 &lt;ul&gt;
@@ -104,6 +113,8 @@
 &lt;/ul&gt;
 &lt;h3&gt;Cell Wall Structure&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;cell-wall-structure&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#cell-wall-structure&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Plant cells are structurally distinguished from animal cells by an external &lt;strong&gt;cell wall&lt;/strong&gt;, built in layers: the &lt;strong&gt;middle lamella&lt;/strong&gt; (pectin-rich, shared between adjacent cells, cementing them together — the layer that separates when cells &amp;ldquo;let go&amp;rdquo; of each other, as in fruit softening or leaf abscission), the &lt;strong&gt;primary wall&lt;/strong&gt; (thin, flexible, deposited while the cell is still growing — cellulose microfibrils embedded in a hemicellulose/pectin matrix), and, in cells requiring additional strength, a &lt;strong&gt;secondary wall&lt;/strong&gt; (deposited internal to the primary wall after growth stops, often impregnated with lignin, as in sclerenchyma and the water-conducting cells of xylem). Adjacent cell walls are perforated by &lt;strong&gt;plasmodesmata&lt;/strong&gt;, cytoplasmic channels lined with plasma membrane that connect the cytoplasm of neighboring cells, allowing direct cell-to-cell transport (the &lt;strong&gt;symplast&lt;/strong&gt;) as an alternative pathway to moving substances through the cell wall/extracellular space network (the &lt;strong&gt;apoplast&lt;/strong&gt;) — this symplast/apoplast distinction is the structural basis for water and solute movement discussed throughout the rest of this section and in Plant Physiology.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/PLANTANATPICS/plasmodesmata-cell-wall-junction.png&#34; alt=&#34;Plasmodesmata connecting adjacent plant cells: (a) electron micrograph of plasmodesmata in cottonwood leaf cells; (b) illustrated cutaway labeling the cell wall, plasma membrane, endoplasmic reticulum/desmotubule, and middle lamella at the same junction.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+&lt;em&gt;Source: Raven, Evert &amp;amp; Eichhorn, Biology of Plants (W.H. Freeman/Macmillan) — commercial textbook figure, not CC-licensed. Confirm edition/page and rights basis before public deployment.&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Comparative Structures&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;comparative-structures&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#comparative-structures&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
 	&lt;thead&gt;
@@ -159,16 +170,13 @@
     &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Root/shoot apical meristem zonation diagram (click-through SVG/JS, no new library)&lt;/strong&gt; — a longitudinal section through a root tip and a shoot tip side by side; clicking each zone (root cap, quiescent center, division/elongation/maturation zones; tunica/corpus layers, leaf primordia) highlights it and displays what&amp;rsquo;s structurally distinct about it, rather than a single static labeled image.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe src=&#34;http://localhost:1313/meristem-zonation-explorer.html&#34; title=&#34;Root/shoot apical meristem zonation explorer&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 440px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Cell wall layer builder (SVG/JS, no new library)&lt;/strong&gt; — a cross-section of two adjacent cells that builds up layer by layer (middle lamella → primary wall → secondary wall, with plasmodesmata added last), toggling each layer on/off to show which are shared between cells and which are cell-specific.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Shoot apical meristem longitudinal section, tunica/corpus layers and leaf primordia labeled&lt;/li&gt;
-&lt;li&gt;Root apical meristem longitudinal section, quiescent center and three growth zones labeled&lt;/li&gt;
-&lt;li&gt;Parenchyma, collenchyma, and sclerenchyma cells drawn side by side at comparable scale, wall thickness and shape differences visible&lt;/li&gt;
-&lt;li&gt;Sclerenchyma fiber bundle and a sclereid (stone cell) shown separately, illustrating the two structural forms&lt;/li&gt;
-&lt;li&gt;Plasmodesmata ultrastructure at a cell wall junction (electron-micrograph-style diagram)&lt;/li&gt;
-&lt;/ul&gt;
+&lt;iframe src=&#34;http://localhost:1313/cell-wall-layer-builder.html&#34; title=&#34;Cell wall layer builder&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 420px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;em&gt;(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Practice Problems&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;practice-problems&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#practice-problems&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;A tissue sample shows cells with thin, even primary walls, a large central vacuole, and retained nuclei, capable of resuming division. Identify the tissue type and name two functions it commonly performs.&lt;/li&gt;
@@ -183,10 +191,10 @@
     
     <item>
       <title>Xylem, Phloem &amp; Vascular Tissue</title>
-      <link>http://localhost:49334/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/</link>
+      <link>http://localhost:1313/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49334/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/</guid>
+      <guid>http://localhost:1313/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/</guid>
       <description>
         
         
@@ -202,7 +210,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:49334/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
     
   
   
@@ -332,8 +340,12 @@
     &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Bordered pit / perforation plate comparison (click-through SVG/JS, no new library)&lt;/strong&gt; — cross-sections through a tracheid-tracheid pit pair and a vessel-vessel perforation plate side by side; clicking either toggles a simulated water path through it, visually contrasting the pit membrane&amp;rsquo;s resistance against the perforation plate&amp;rsquo;s open channel.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe src=&#34;http://localhost:1313/bordered-pit-perforation-plate-comparator.html&#34; title=&#34;Bordered pit vs. perforation plate flow comparator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 440px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Vascular bundle arrangement identifier (click-through quiz)&lt;/strong&gt; — four unlabeled bundle cross-sections (collateral/bicollateral/amphivasal/amphicribral); clicking one prompts identification, then reveals the answer with the xylem/phloem positions highlighted in different colors.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;iframe src=&#34;http://localhost:1313/vascular-bundle-arrangement-quiz.html&#34; title=&#34;Vascular bundle arrangement identifier quiz&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Tracheid vs. vessel element structure, drawn at comparable scale with bordered pits and a perforation plate respectively labeled&lt;/li&gt;
@@ -357,10 +369,10 @@
     
     <item>
       <title>Root Anatomy</title>
-      <link>http://localhost:49334/resources/6-plant-anatomy/root-anatomy/</link>
+      <link>http://localhost:1313/resources/6-plant-anatomy/root-anatomy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49334/resources/6-plant-anatomy/root-anatomy/</guid>
+      <guid>http://localhost:1313/resources/6-plant-anatomy/root-anatomy/</guid>
       <description>
         
         
@@ -376,9 +388,9 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:49334/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:49334/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/&#34;&gt;Xylem Phloem Vascular Tissue&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/&#34;&gt;Xylem Phloem Vascular Tissue&lt;/a&gt;
     
   
   
@@ -461,8 +473,12 @@
     &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Casparian strip transport pathway simulator (click-through SVG/JS, no new library)&lt;/strong&gt; — a root cross-section showing epidermis through stele; clicking &amp;ldquo;apoplast&amp;rdquo; or &amp;ldquo;symplast&amp;rdquo; traces a highlighted path for a water molecule from soil to xylem, with the apoplast path visibly blocked and rerouted through a membrane at the endodermis, making the forced apoplast-to-symplast switch visible rather than stated.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe src=&#34;http://localhost:1313/casparian-strip-pathway-simulator.html&#34; title=&#34;Casparian strip transport pathway simulator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 500px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Monocot vs. dicot root stele toggle (click-through SVG/JS, no new library)&lt;/strong&gt; — a single diagram frame that toggles between a dicot actinostele (solid xylem star, no pith) and a monocot stele (xylem/phloem ring, central pith), so the structural contrast is seen as a direct swap rather than two separate images.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;iframe src=&#34;http://localhost:1313/monocot-dicot-root-stele-toggle.html&#34; title=&#34;Monocot vs. dicot root stele toggle&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Root cross-section (dicot), epidermis/cortex/endodermis/pericycle/stele labeled&lt;/li&gt;
@@ -486,10 +502,10 @@
     
     <item>
       <title>Stem Anatomy</title>
-      <link>http://localhost:49334/resources/6-plant-anatomy/stem-anatomy/</link>
+      <link>http://localhost:1313/resources/6-plant-anatomy/stem-anatomy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49334/resources/6-plant-anatomy/stem-anatomy/</guid>
+      <guid>http://localhost:1313/resources/6-plant-anatomy/stem-anatomy/</guid>
       <description>
         
         
@@ -505,9 +521,9 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:49334/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:49334/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/&#34;&gt;Xylem Phloem Vascular Tissue&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/&#34;&gt;Xylem Phloem Vascular Tissue&lt;/a&gt;
     
   
   
@@ -588,8 +604,12 @@
     &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Eustele vs. atactostele toggle (click-through SVG/JS, no new library)&lt;/strong&gt; — a stem cross-section frame that toggles between a ring-arranged dicot eustele (pith/cortex labeled) and a scattered monocot atactostele, so the bundle-distribution contrast reads as a direct swap.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;iframe src=&#34;http://localhost:1313/eustele-atactostele-toggle.html&#34; title=&#34;Eustele vs. atactostele toggle&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Node/internode/bud click-through (SVG/JS, no new library)&lt;/strong&gt; — a stem segment diagram where clicking a node reveals the axillary bud and leaf attachment, reinforcing the exogenous branch origin visually before the root-anatomy endogenous contrast is introduced.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;iframe src=&#34;http://localhost:1313/node-internode-bud-clickthrough.html&#34; title=&#34;Node/internode/bud click-through&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 440px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Dicot stem cross-section, epidermis/collenchyma-cortex/vascular ring/pith rays/pith labeled&lt;/li&gt;
@@ -612,10 +632,10 @@
     
     <item>
       <title>Leaf Anatomy</title>
-      <link>http://localhost:49334/resources/6-plant-anatomy/leaf-anatomy/</link>
+      <link>http://localhost:1313/resources/6-plant-anatomy/leaf-anatomy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49334/resources/6-plant-anatomy/leaf-anatomy/</guid>
+      <guid>http://localhost:1313/resources/6-plant-anatomy/leaf-anatomy/</guid>
       <description>
         
         
@@ -631,9 +651,9 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:49334/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:49334/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/&#34;&gt;Xylem Phloem Vascular Tissue&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/&#34;&gt;Xylem Phloem Vascular Tissue&lt;/a&gt;
     
   
   
@@ -743,10 +763,10 @@
     
     <item>
       <title>Secondary Growth &amp; Wood Anatomy</title>
-      <link>http://localhost:49334/resources/6-plant-anatomy/secondary-growth-wood-anatomy/</link>
+      <link>http://localhost:1313/resources/6-plant-anatomy/secondary-growth-wood-anatomy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49334/resources/6-plant-anatomy/secondary-growth-wood-anatomy/</guid>
+      <guid>http://localhost:1313/resources/6-plant-anatomy/secondary-growth-wood-anatomy/</guid>
       <description>
         
         
@@ -762,9 +782,9 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:49334/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:49334/resources/6-plant-anatomy/stem-anatomy/&#34;&gt;Stem Anatomy&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/stem-anatomy/&#34;&gt;Stem Anatomy&lt;/a&gt;
     
   
   
@@ -874,10 +894,10 @@
     
     <item>
       <title>Monocot vs Dicot Comparative Anatomy</title>
-      <link>http://localhost:49334/resources/6-plant-anatomy/monocot-dicot-comparative-anatomy/</link>
+      <link>http://localhost:1313/resources/6-plant-anatomy/monocot-dicot-comparative-anatomy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49334/resources/6-plant-anatomy/monocot-dicot-comparative-anatomy/</guid>
+      <guid>http://localhost:1313/resources/6-plant-anatomy/monocot-dicot-comparative-anatomy/</guid>
       <description>
         
         
@@ -893,13 +913,13 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:49334/resources/6-plant-anatomy/root-anatomy/&#34;&gt;Root Anatomy&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/root-anatomy/&#34;&gt;Root Anatomy&lt;/a&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:49334/resources/6-plant-anatomy/stem-anatomy/&#34;&gt;Stem Anatomy&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/stem-anatomy/&#34;&gt;Stem Anatomy&lt;/a&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:49334/resources/6-plant-anatomy/leaf-anatomy/&#34;&gt;Leaf Anatomy&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/leaf-anatomy/&#34;&gt;Leaf Anatomy&lt;/a&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:49334/resources/6-plant-anatomy/secondary-growth-wood-anatomy/&#34;&gt;Secondary Growth Wood Anatomy&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/secondary-growth-wood-anatomy/&#34;&gt;Secondary Growth Wood Anatomy&lt;/a&gt;
     
   
   
@@ -1022,10 +1042,10 @@
     
     <item>
       <title>Flower Anatomy &amp; Reproductive Structures</title>
-      <link>http://localhost:49334/resources/6-plant-anatomy/flower-anatomy-reproductive-structures/</link>
+      <link>http://localhost:1313/resources/6-plant-anatomy/flower-anatomy-reproductive-structures/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49334/resources/6-plant-anatomy/flower-anatomy-reproductive-structures/</guid>
+      <guid>http://localhost:1313/resources/6-plant-anatomy/flower-anatomy-reproductive-structures/</guid>
       <description>
         
         
@@ -1041,7 +1061,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:49334/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
     
   
   
@@ -1185,10 +1205,10 @@
     
     <item>
       <title>Seed &amp; Fruit Anatomy</title>
-      <link>http://localhost:49334/resources/6-plant-anatomy/seed-fruit-anatomy/</link>
+      <link>http://localhost:1313/resources/6-plant-anatomy/seed-fruit-anatomy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49334/resources/6-plant-anatomy/seed-fruit-anatomy/</guid>
+      <guid>http://localhost:1313/resources/6-plant-anatomy/seed-fruit-anatomy/</guid>
       <description>
         
         
@@ -1204,7 +1224,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:49334/resources/6-plant-anatomy/flower-anatomy-reproductive-structures/&#34;&gt;Flower Anatomy Reproductive Structures&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/flower-anatomy-reproductive-structures/&#34;&gt;Flower Anatomy Reproductive Structures&lt;/a&gt;
     
   
   
@@ -1349,10 +1369,10 @@
     
     <item>
       <title>Plant Body Plans Across Major Lineages</title>
-      <link>http://localhost:49334/resources/6-plant-anatomy/plant-body-plans-major-lineages/</link>
+      <link>http://localhost:1313/resources/6-plant-anatomy/plant-body-plans-major-lineages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:49334/resources/6-plant-anatomy/plant-body-plans-major-lineages/</guid>
+      <guid>http://localhost:1313/resources/6-plant-anatomy/plant-body-plans-major-lineages/</guid>
       <description>
         
         
@@ -1368,9 +1388,9 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:49334/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/plant-tissue-systems/&#34;&gt;Plant Tissue Systems&lt;/a&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:49334/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/&#34;&gt;Xylem Phloem Vascular Tissue&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/xylem-phloem-vascular-tissue/&#34;&gt;Xylem Phloem Vascular Tissue&lt;/a&gt;
     
   
   

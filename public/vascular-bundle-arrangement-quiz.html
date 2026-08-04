@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vascular Bundle Arrangement Identifier | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .card {
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    background: #f8fafc;
+  }
+  .card.selected { border-color: #2d6a4f; }
+  .card.answered { cursor: default; }
+  .card-label { font-size: 0.72rem; color: #64748b; margin-top: 4px; min-height: 2.2em; }
+  .options { margin-top: 1rem; display: none; }
+  .options.show { display: block; }
+  .opt-btn {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 0.82rem;
+    cursor: pointer;
+    margin: 4px 6px 0 0;
+  }
+  .opt-btn:hover { background: #e2e8f0; }
+  .opt-btn.correct { background: #dcfce7; border-color: #166534; color: #166534; font-weight: 700; }
+  .opt-btn.incorrect { background: #fee2e2; border-color: #991b1b; color: #991b1b; }
+  .feedback { font-size: 0.85rem; margin-top: 10px; min-height: 1.5em; font-weight: 600; }
+  .feedback.correct { color: #166534; }
+  .feedback.incorrect { color: #991b1b; }
+  .legend { font-size: 0.75rem; color: #64748b; margin-top: 1rem; }
+  .legend span { display: inline-flex; align-items: center; gap: 4px; margin-right: 14px; }
+  .sw { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Vascular Bundle Arrangement Identifier</h3>
+  <div class="subtitle">Click an unlabeled cross-section, guess its arrangement, then see the xylem/phloem positions revealed in color.</div>
+  <div class="grid" id="grid"></div>
+  <div class="options" id="options">
+    <div style="font-size:0.85rem; font-weight:600; margin-bottom:6px;">What arrangement is this?</div>
+    <div id="optButtons"></div>
+    <div class="feedback" id="feedback"></div>
+  </div>
+  <div class="legend">
+    <span><span class="sw" style="background:#c9a86a"></span>Xylem</span>
+    <span><span class="sw" style="background:#7fb8e0"></span>Phloem</span>
+  </div>
+</div>
+<script>
+(function(){
+  var types = [
+    { key: 'collateral', label: 'Collateral', draw: drawCollateral },
+    { key: 'bicollateral', label: 'Bicollateral', draw: drawBicollateral },
+    { key: 'amphivasal', label: 'Amphivasal', draw: drawAmphivasal },
+    { key: 'amphicribral', label: 'Amphicribral', draw: drawAmphicribral }
+  ];
+  var order = shuffle(types.slice());
+  var grid = document.getElementById('grid');
+  var options = document.getElementById('options');
+  var optButtons = document.getElementById('optButtons');
+  var feedback = document.getElementById('feedback');
+  var currentKey = null;
+  var answered = {};
+
+  function shuffle(arr){
+    for (var i = arr.length - 1; i > 0; i--){
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp;
+    }
+    return arr;
+  }
+
+  function svgWrap(inner, revealed){
+    return '<svg viewBox="0 0 100 100" width="90" height="90">' +
+      '<circle cx="50" cy="50" r="45" fill="#eef6ec" stroke="#94a3b8" stroke-width="2"/>' +
+      inner +
+      '</svg>';
+  }
+  function unrevealedFill(){ return '#cbd5e1'; }
+
+  function drawCollateral(revealed){
+    var x = revealed ? '#c9a86a' : unrevealedFill();
+    var p = revealed ? '#7fb8e0' : unrevealedFill();
+    return svgWrap('<circle cx="42" cy="50" r="18" fill="'+x+'"/><path d="M62 32 A22 22 0 0 1 62 68 Z" fill="'+p+'"/>');
+  }
+  function drawBicollateral(revealed){
+    var x = revealed ? '#c9a86a' : unrevealedFill();
+    var p = revealed ? '#7fb8e0' : unrevealedFill();
+    return svgWrap('<circle cx="50" cy="50" r="16" fill="'+x+'"/><path d="M66 32 A22 22 0 0 1 66 68 Z" fill="'+p+'"/><path d="M34 32 A22 22 0 0 0 34 68 Z" fill="'+p+'"/>');
+  }
+  function drawAmphivasal(revealed){
+    var x = revealed ? '#c9a86a' : unrevealedFill();
+    var p = revealed ? '#7fb8e0' : unrevealedFill();
+    return svgWrap('<circle cx="50" cy="50" r="26" fill="'+x+'"/><circle cx="50" cy="50" r="12" fill="'+p+'"/>');
+  }
+  function drawAmphicribral(revealed){
+    var x = revealed ? '#c9a86a' : unrevealedFill();
+    var p = revealed ? '#7fb8e0' : unrevealedFill();
+    return svgWrap('<circle cx="50" cy="50" r="26" fill="'+p+'"/><circle cx="50" cy="50" r="12" fill="'+x+'"/>');
+  }
+
+  function render(){
+    grid.innerHTML = '';
+    order.forEach(function(t){
+      var div = document.createElement('div');
+      div.className = 'card' + (answered[t.key] ? ' answered' : '') + (currentKey === t.key ? ' selected' : '');
+      div.innerHTML = t.draw(!!answered[t.key]) + '<div class="card-label">' + (answered[t.key] ? t.label : '?') + '</div>';
+      div.addEventListener('click', function(){
+        if (answered[t.key]) return;
+        currentKey = t.key;
+        showOptions(t.key);
+        render();
+      });
+      grid.appendChild(div);
+    });
+  }
+
+  function showOptions(key){
+    options.classList.add('show');
+    optButtons.innerHTML = '';
+    feedback.textContent = '';
+    feedback.className = 'feedback';
+    var shuffled = shuffle(types.slice());
+    shuffled.forEach(function(t){
+      var btn = document.createElement('button');
+      btn.className = 'opt-btn';
+      btn.textContent = t.label;
+      btn.addEventListener('click', function(){
+        var correct = t.key === key;
+        Array.prototype.forEach.call(optButtons.children, function(b){ b.disabled = true; });
+        if (correct){
+          btn.classList.add('correct');
+          feedback.textContent = 'Correct — ' + t.label + '.';
+          feedback.className = 'feedback correct';
+        } else {
+          btn.classList.add('incorrect');
+          var correctLabel = types.filter(function(x){ return x.key === key; })[0].label;
+          feedback.textContent = 'Not quite — this is actually ' + correctLabel + '.';
+          feedback.className = 'feedback incorrect';
+        }
+        answered[key] = true;
+        render();
+      });
+      optButtons.appendChild(btn);
+    });
+  }
+
+  render();
+})();
+</script>
+</body>
+</html>

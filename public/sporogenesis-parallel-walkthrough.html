@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Microsporogenesis / Megasporogenesis Parallel Walkthrough | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+    text-align: center;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+    text-align: left;
+  }
+  .tracks { display: flex; gap: 1rem; justify-content: center; }
+  .track { flex: 1; }
+  .track-title { font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 4px; }
+  .stage-label { font-size: 0.78rem; color: #64748b; margin: 8px 0; }
+  .controls { display: flex; gap: 8px; justify-content: center; margin-top: 6px; }
+  .btn {
+    background: #2d6a4f;
+    color: #fff;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  .btn.secondary { background: #94a3b8; }
+  .btn:disabled { background: #cbd5e1; cursor: default; }
+  .note {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 0.83rem;
+    text-align: left;
+    margin-top: 10px;
+    min-height: 4.5em;
+  }
+  .degenerate { opacity: 0.25; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Microsporogenesis / Megasporogenesis, in Parallel</h3>
+  <div class="subtitle">Both tracks start from the same meiotic process — watch where their outcomes diverge.</div>
+  <div class="stage-label" id="stageLabel"></div>
+  <div class="tracks">
+    <div class="track">
+      <div class="track-title">Anther → Pollen grain</div>
+      <svg id="microSvg" viewBox="0 0 140 140" width="140" height="140"></svg>
+    </div>
+    <div class="track">
+      <div class="track-title">Ovule → Embryo sac</div>
+      <svg id="megaSvg" viewBox="0 0 140 140" width="140" height="140"></svg>
+    </div>
+  </div>
+  <div class="controls">
+    <button class="btn" id="nextBtn">Next stage</button>
+    <button class="btn secondary" id="resetBtn">Reset</button>
+  </div>
+  <div class="note" id="note"></div>
+</div>
+<script>
+(function(){
+  var microSvg = document.getElementById('microSvg');
+  var megaSvg = document.getElementById('megaSvg');
+  var stageLabel = document.getElementById('stageLabel');
+  var note = document.getElementById('note');
+  var nextBtn = document.getElementById('nextBtn');
+  var resetBtn = document.getElementById('resetBtn');
+  var stage = 0;
+
+  function cell(x,y,r,fill,label,dim){
+    return '<circle cx="'+x+'" cy="'+y+'" r="'+r+'" fill="'+fill+'" stroke="#334155" stroke-width="1" opacity="'+(dim?0.25:1)+'"/>' +
+      (label ? '<text x="'+x+'" y="'+(y+3)+'" text-anchor="middle" font-size="7" fill="'+(dim?'#94a3b8':'#1e293b')+'">'+label+'</text>' : '');
+  }
+
+  var stages = [
+    {
+      label: 'Stage 1 of 5 — Mother cell (2n)',
+      note: 'Both tracks begin with a single diploid mother cell: a <b>microspore mother cell</b> in the anther\'s pollen sac, and a <b>megaspore mother cell</b> in the ovule\'s nucellus.',
+      micro: function(){ return cell(70,70,26,'#8fbf8a','2n'); },
+      mega: function(){ return cell(70,70,26,'#7fb8e0','2n'); }
+    },
+    {
+      label: 'Stage 2 of 5 — Meiosis I',
+      note: 'Meiosis I produces two haploid cells from each mother cell — identical so far on both tracks.',
+      micro: function(){ return cell(45,70,18,'#8fbf8a','n') + cell(95,70,18,'#8fbf8a','n'); },
+      mega: function(){ return cell(45,70,18,'#7fb8e0','n') + cell(95,70,18,'#7fb8e0','n'); }
+    },
+    {
+      label: 'Stage 3 of 5 — Meiosis II: tetrads',
+      note: 'Meiosis II produces a <b>tetrad of four haploid cells</b> on both tracks — four microspores, four megaspores. Still symmetric.',
+      micro: function(){ return cell(40,45,13,'#8fbf8a','n')+cell(100,45,13,'#8fbf8a','n')+cell(40,95,13,'#8fbf8a','n')+cell(100,95,13,'#8fbf8a','n'); },
+      mega: function(){ return cell(40,45,13,'#7fb8e0','n')+cell(100,45,13,'#7fb8e0','n')+cell(40,95,13,'#7fb8e0','n')+cell(100,95,13,'#7fb8e0','n'); }
+    },
+    {
+      label: 'Stage 4 of 5 — Divergence',
+      note: '<b>Here the tracks diverge.</b> On the left, all four microspores survive and develop further. On the right, three of the four megaspores degenerate (dimmed) — only one survives.',
+      micro: function(){ return cell(40,45,13,'#8fbf8a','n')+cell(100,45,13,'#8fbf8a','n')+cell(40,95,13,'#8fbf8a','n')+cell(100,95,13,'#8fbf8a','n'); },
+      mega: function(){ return cell(40,45,13,'#7fb8e0','n',true)+cell(100,45,13,'#7fb8e0','n',true)+cell(40,95,13,'#7fb8e0','n',true)+cell(100,95,13,'#7fb8e0','n'); }
+    },
+    {
+      label: 'Stage 5 of 5 — Mature gametophytes',
+      note: 'Each of the four microspores becomes a <b>pollen grain</b> (2–3 cells: tube cell + generative cell) — four functional male gametophytes per meiotic event. The single surviving megaspore divides mitotically (3 rounds, no cytokinesis, then cellularizes) into one <b>embryo sac</b> (7 cells, 8 nuclei in the Polygonum type) — only one functional female gametophyte per meiotic event.',
+      micro: function(){
+        return cell(30,45,12,'#8fbf8a','PG')+cell(90,45,12,'#8fbf8a','PG')+cell(30,95,12,'#8fbf8a','PG')+cell(90,95,12,'#8fbf8a','PG');
+      },
+      mega: function(){
+        return '<ellipse cx="70" cy="70" rx="55" ry="35" fill="#dcecd6" stroke="#5a7d4f" stroke-width="1.5"/>' +
+          cell(35,60,8,'#7fb8e0','eg') + cell(35,80,7,'#a7d3a0','sy') + cell(48,50,7,'#a7d3a0','sy') +
+          cell(70,70,10,'#f6d375','pn') +
+          cell(105,60,7,'#e8927c','an') + cell(105,70,7,'#e8927c','an') + cell(105,80,7,'#e8927c','an');
+      }
+    }
+  ];
+
+  function render(){
+    microSvg.innerHTML = stages[stage].micro();
+    megaSvg.innerHTML = stages[stage].mega();
+    stageLabel.textContent = stages[stage].label;
+    note.innerHTML = stages[stage].note;
+    nextBtn.disabled = (stage === stages.length - 1);
+  }
+
+  nextBtn.addEventListener('click', function(){
+    if (stage < stages.length - 1){ stage++; render(); }
+  });
+  resetBtn.addEventListener('click', function(){ stage = 0; render(); });
+
+  render();
+})();
+</script>
+</body>
+</html>

@@ -55,7 +55,12 @@ Within each vascular bundle, stem xylem matures **endarch** — **protoxylem** (
 **Interactive**
 
 - **Eustele vs. atactostele toggle (click-through SVG/JS, no new library)** — a stem cross-section frame that toggles between a ring-arranged dicot eustele (pith/cortex labeled) and a scattered monocot atactostele, so the bundle-distribution contrast reads as a direct swap.
+
+{{< iframe src="/eustele-atactostele-toggle.html" title="Eustele vs. atactostele toggle" height="480px" >}}
+
 - **Node/internode/bud click-through (SVG/JS, no new library)** — a stem segment diagram where clicking a node reveals the axillary bud and leaf attachment, reinforcing the exogenous branch origin visually before the root-anatomy endogenous contrast is introduced.
+
+{{< iframe src="/node-internode-bud-clickthrough.html" title="Node/internode/bud click-through" height="440px" >}}
 
 **Static**
 

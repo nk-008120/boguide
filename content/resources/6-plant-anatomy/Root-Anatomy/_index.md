@@ -65,7 +65,12 @@ In both cases root xylem matures **exarch** (the earliest-matured protoxylem lie
 **Interactive**
 
 - **Casparian strip transport pathway simulator (click-through SVG/JS, no new library)** — a root cross-section showing epidermis through stele; clicking "apoplast" or "symplast" traces a highlighted path for a water molecule from soil to xylem, with the apoplast path visibly blocked and rerouted through a membrane at the endodermis, making the forced apoplast-to-symplast switch visible rather than stated.
+
+{{< iframe src="/casparian-strip-pathway-simulator.html" title="Casparian strip transport pathway simulator" height="500px" >}}
+
 - **Monocot vs. dicot root stele toggle (click-through SVG/JS, no new library)** — a single diagram frame that toggles between a dicot actinostele (solid xylem star, no pith) and a monocot stele (xylem/phloem ring, central pith), so the structural contrast is seen as a direct swap rather than two separate images.
+
+{{< iframe src="/monocot-dicot-root-stele-toggle.html" title="Monocot vs. dicot root stele toggle" height="480px" >}}
 
 **Static**
 

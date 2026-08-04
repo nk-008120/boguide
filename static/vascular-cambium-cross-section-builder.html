@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vascular Cambium Cross-Section Builder | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 620px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+    text-align: center;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+    text-align: left;
+  }
+  .controls { display: flex; gap: 8px; justify-content: center; margin-bottom: 10px; }
+  .btn {
+    background: #2d6a4f;
+    color: #fff;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  .btn.secondary { background: #94a3b8; }
+  .btn:disabled { background: #cbd5e1; cursor: default; }
+  .stage-label { font-size: 0.78rem; color: #64748b; margin-bottom: 6px; }
+  .note {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+    text-align: left;
+    min-height: 5em;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Vascular Cambium Cross-Section Builder</h3>
+  <div class="subtitle">Step through cambium formation and secondary growth, one stage at a time.</div>
+  <div class="stage-label" id="stageLabel">Stage 1 of 4</div>
+  <svg id="cambSvg" viewBox="0 0 220 220" width="220" height="220">
+    <circle cx="110" cy="110" r="100" fill="#eef6ec" stroke="#94a3b8" stroke-width="1"/>
+    <g id="content"></g>
+  </svg>
+  <div class="controls">
+    <button class="btn" id="nextBtn">Next stage</button>
+    <button class="btn secondary" id="resetBtn">Reset</button>
+  </div>
+  <div class="note" id="note"></div>
+</div>
+<script>
+(function(){
+  var content = document.getElementById('content');
+  var note = document.getElementById('note');
+  var stageLabel = document.getElementById('stageLabel');
+  var nextBtn = document.getElementById('nextBtn');
+  var resetBtn = document.getElementById('resetBtn');
+  var cx = 110, cy = 110;
+  var stage = 0;
+  var stages = [
+    {
+      label: 'Stage 1 of 4 — Young eustele',
+      note: 'A young dicot stem: discrete open vascular bundles in a ring, each with its own short strip of <b>fascicular cambium</b> between xylem and phloem. No continuous cambium exists yet.',
+      draw: function(){
+        var html = '<circle cx="'+cx+'" cy="'+cy+'" r="85" fill="#dcecd6"/><circle cx="'+cx+'" cy="'+cy+'" r="40" fill="#f1e6c8"/>';
+        var n = 8;
+        for (var i=0;i<n;i++){
+          var ang = 2*Math.PI*i/n;
+          var x = cx + 60*Math.sin(ang), y = cy - 60*Math.cos(ang);
+          html += '<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="7" fill="#c9a86a"/>';
+          html += '<circle cx="'+(x+7*Math.sin(ang)).toFixed(1)+'" cy="'+(y-7*Math.cos(ang)).toFixed(1)+'" r="4" fill="#7fb8e0"/>';
+          html += '<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="9" fill="none" stroke="#2d6a4f" stroke-width="1.5" stroke-dasharray="2,2"/>';
+        }
+        return html;
+      }
+    },
+    {
+      label: 'Stage 2 of 4 — Interfascicular cambium forms',
+      note: '<b>Interfascicular cambium</b> develops from pith-ray parenchyma between the bundles, structurally bridging the separate fascicular strips into one continuous cambium cylinder.',
+      draw: function(){
+        var html = '<circle cx="'+cx+'" cy="'+cy+'" r="85" fill="#dcecd6"/><circle cx="'+cx+'" cy="'+cy+'" r="40" fill="#f1e6c8"/>';
+        html += '<circle cx="'+cx+'" cy="'+cy+'" r="60" fill="none" stroke="#2d6a4f" stroke-width="3" stroke-dasharray="6,3"/>';
+        var n = 8;
+        for (var i=0;i<n;i++){
+          var ang = 2*Math.PI*i/n;
+          var x = cx + 60*Math.sin(ang), y = cy - 60*Math.cos(ang);
+          html += '<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="7" fill="#c9a86a"/>';
+          html += '<circle cx="'+(x+7*Math.sin(ang)).toFixed(1)+'" cy="'+(y-7*Math.cos(ang)).toFixed(1)+'" r="4" fill="#7fb8e0"/>';
+        }
+        return html;
+      }
+    },
+    {
+      label: 'Stage 3 of 4 — First secondary growth increment',
+      note: 'The continuous cambium ring now produces <b>secondary xylem inward</b> and <b>secondary phloem outward</b> — but at a higher rate for xylem, so the wood layer already begins to outpace the phloem layer after just one increment.',
+      draw: function(){
+        var html = '<circle cx="'+cx+'" cy="'+cy+'" r="85" fill="#dcecd6"/>';
+        html += '<circle cx="'+cx+'" cy="'+cy+'" r="66" fill="#c9a86a"/>';
+        html += '<circle cx="'+cx+'" cy="'+cy+'" r="60" fill="none" stroke="#2d6a4f" stroke-width="2.5"/>';
+        html += '<circle cx="'+cx+'" cy="'+cy+'" r="68" fill="none" stroke="#7fb8e0" stroke-width="4"/>';
+        html += '<circle cx="'+cx+'" cy="'+cy+'" r="40" fill="#f1e6c8"/>';
+        return html;
+      }
+    },
+    {
+      label: 'Stage 4 of 4 — Several growth years',
+      note: 'After several seasons, accumulated secondary xylem forms a thick wood cylinder with visible growth rings (alternating earlywood/latewood bands), while secondary phloem stays a thin, continuously renewed layer near the surface — because xylem accumulates permanently but phloem is progressively crushed and sloughed.',
+      draw: function(){
+        var html = '<circle cx="'+cx+'" cy="'+cy+'" r="85" fill="#dcecd6"/>';
+        var bands = [85,78,71,64,57,50];
+        for (var i=0;i<bands.length;i++){
+          html += '<circle cx="'+cx+'" cy="'+cy+'" r="'+bands[i]+'" fill="'+(i%2===0?'#c9a86a':'#b5905a')+'"/>';
+        }
+        html += '<circle cx="'+cx+'" cy="'+cy+'" r="46" fill="none" stroke="#2d6a4f" stroke-width="2.5"/>';
+        html += '<circle cx="'+cx+'" cy="'+cy+'" r="88" fill="none" stroke="#7fb8e0" stroke-width="3"/>';
+        html += '<circle cx="'+cx+'" cy="'+cy+'" r="18" fill="#f1e6c8"/>';
+        return html;
+      }
+    }
+  ];
+
+  function render(){
+    content.innerHTML = stages[stage].draw();
+    note.innerHTML = stages[stage].note;
+    stageLabel.textContent = stages[stage].label;
+    nextBtn.disabled = (stage === stages.length - 1);
+  }
+
+  nextBtn.addEventListener('click', function(){
+    if (stage < stages.length - 1){
+      stage++;
+      render();
+    }
+  });
+
+  resetBtn.addEventListener('click', function(){
+    stage = 0;
+    render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

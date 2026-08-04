@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leaf Cross-Section Layer Builder | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .layout { display: flex; gap: 1.2rem; align-items: flex-start; flex-wrap: wrap; }
+  .layer { cursor: pointer; opacity: 0; transition: opacity 0.4s; }
+  .layer.revealed { opacity: 1; }
+  .layer.revealed:hover { filter: brightness(0.95); }
+  .layer.active rect, .layer.active path { stroke: #1a472a !important; stroke-width: 2.5 !important; }
+  .controls { display: flex; gap: 8px; margin-bottom: 10px; }
+  .btn {
+    background: #2d6a4f;
+    color: #fff;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  .btn.secondary { background: #94a3b8; }
+  .btn:disabled { background: #cbd5e1; cursor: default; }
+  .note {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+    flex: 1;
+    min-width: 220px;
+    min-height: 6em;
+  }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Leaf Cross-Section Layer Builder</h3>
+  <div class="subtitle">Build a dorsiventral leaf cross-section layer by layer, then click any revealed layer for its structural role.</div>
+  <div class="controls">
+    <button class="btn" id="nextBtn">Add next layer</button>
+    <button class="btn secondary" id="resetBtn">Reset</button>
+  </div>
+  <div class="layout">
+    <svg id="leafSvg" viewBox="0 0 300 200" width="300" height="200">
+      <g class="layer" id="layerUE" data-key="ue">
+        <rect x="10" y="10" width="280" height="18" fill="#dcecd6" stroke="#5a7d4f" stroke-width="1"/>
+        <text x="150" y="23" text-anchor="middle" font-size="9" fill="#334155">Upper epidermis (cuticle)</text>
+      </g>
+      <g class="layer" id="layerPAL" data-key="pal">
+        <rect x="10" y="28" width="280" height="42" fill="#4c8c3f"/>
+        <rect x="20" y="32" width="10" height="34" fill="#3a6b30"/>
+        <rect x="45" y="32" width="10" height="34" fill="#3a6b30"/>
+        <rect x="70" y="32" width="10" height="34" fill="#3a6b30"/>
+        <rect x="200" y="32" width="10" height="34" fill="#3a6b30"/>
+        <rect x="225" y="32" width="10" height="34" fill="#3a6b30"/>
+        <rect x="250" y="32" width="10" height="34" fill="#3a6b30"/>
+        <text x="150" y="53" text-anchor="middle" font-size="9" fill="#fff" font-weight="600">Palisade mesophyll</text>
+      </g>
+      <g class="layer" id="layerVEIN" data-key="vein">
+        <circle cx="150" cy="105" r="20" fill="#eef6ec" stroke="#94a3b8" stroke-width="1"/>
+        <circle cx="145" cy="98" r="6" fill="#c9a86a"/>
+        <circle cx="155" cy="112" r="5" fill="#7fb8e0"/>
+        <text x="150" y="135" text-anchor="middle" font-size="8" fill="#334155">Vein (vascular bundle)</text>
+      </g>
+      <g class="layer" id="layerSPO" data-key="spo">
+        <rect x="10" y="70" width="280" height="70" fill="#a7d3a0"/>
+        <circle cx="50" cy="90" r="8" fill="#8fbf8a" stroke="#5a7d4f"/>
+        <circle cx="90" cy="110" r="7" fill="#8fbf8a" stroke="#5a7d4f"/>
+        <circle cx="230" cy="90" r="8" fill="#8fbf8a" stroke="#5a7d4f"/>
+        <circle cx="250" cy="120" r="6" fill="#8fbf8a" stroke="#5a7d4f"/>
+        <circle cx="60" cy="130" r="6" fill="#8fbf8a" stroke="#5a7d4f"/>
+        <text x="150" y="165" text-anchor="middle" font-size="9" fill="#334155">Spongy mesophyll (air spaces)</text>
+      </g>
+      <g class="layer" id="layerLE" data-key="le">
+        <rect x="10" y="140" width="280" height="18" fill="#dcecd6" stroke="#5a7d4f" stroke-width="1"/>
+        <circle cx="70" cy="149" r="4" fill="#334155"/>
+        <circle cx="150" cy="149" r="4" fill="#334155"/>
+        <circle cx="230" cy="149" r="4" fill="#334155"/>
+        <text x="150" y="172" text-anchor="middle" font-size="9" fill="#334155">Lower epidermis + stomata</text>
+      </g>
+    </svg>
+    <div class="note" id="note">Click "Add next layer" to build the cross-section from the upper epidermis down.</div>
+  </div>
+</div>
+<script>
+(function(){
+  var order = ['layerUE','layerPAL','layerSPO','layerVEIN','layerLE'];
+  var idx = 0;
+  var nextBtn = document.getElementById('nextBtn');
+  var resetBtn = document.getElementById('resetBtn');
+  var note = document.getElementById('note');
+  var facts = {
+    ue: 'Upper epidermis: single layer, coated in a waxy cuticle, restricting water loss. In most dorsiventral leaves, few or no stomata sit here.',
+    pal: 'Palisade mesophyll: tall, columnar, tightly packed, chloroplast-dense cells directly beneath the upper epidermis — oriented to maximize light capture.',
+    spo: 'Spongy mesophyll: irregularly shaped, loosely packed cells with large air spaces, maximizing surface area for gas diffusion to and from the stomata.',
+    vein: 'Vein (vascular bundle): xylem toward the upper (adaxial) side, phloem toward the lower (abaxial) side, wrapped in a bundle sheath.',
+    le: 'Lower epidermis: most dorsiventral leaves are hypostomatous — stomata concentrated here rather than the upper face, reducing water loss from the more sun/wind-exposed top surface.'
+  };
+  var layerEls = {};
+  order.forEach(function(id){ layerEls[id] = document.getElementById(id); });
+
+  function reveal(){
+    if (idx >= order.length) return;
+    layerEls[order[idx]].classList.add('revealed');
+    idx++;
+    if (idx >= order.length) nextBtn.disabled = true;
+  }
+
+  function reset(){
+    idx = 0;
+    order.forEach(function(id){
+      layerEls[id].classList.remove('revealed');
+      layerEls[id].classList.remove('active');
+    });
+    nextBtn.disabled = false;
+    note.textContent = 'Click "Add next layer" to build the cross-section from the upper epidermis down.';
+  }
+
+  order.forEach(function(id){
+    layerEls[id].addEventListener('click', function(){
+      if (!layerEls[id].classList.contains('revealed')) return;
+      order.forEach(function(o){ layerEls[o].classList.remove('active'); });
+      layerEls[id].classList.add('active');
+      note.textContent = facts[layerEls[id].getAttribute('data-key')];
+    });
+  });
+
+  nextBtn.addEventListener('click', reveal);
+  resetBtn.addEventListener('click', reset);
+})();
+</script>
+</body>
+</html>

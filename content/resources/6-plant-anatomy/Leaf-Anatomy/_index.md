@@ -66,7 +66,12 @@ In most plants (the **C3** pathway), the leaf's photosynthetic anatomy is simply
 **Interactive**
 
 - **Leaf cross-section layer builder (SVG/JS, no new library)** — builds a dorsiventral leaf cross-section layer by layer (upper epidermis → palisade mesophyll → spongy mesophyll → vein → lower epidermis with stomata), each layer clickable for its structural role.
+
+{{< iframe src="/leaf-cross-section-layer-builder.html" title="Leaf cross-section layer builder" height="480px" >}}
+
 - **C3 vs. C4 (Kranz) toggle (click-through SVG/JS, no new library)** — a single vein cross-section that toggles between ordinary C3 mesophyll and Kranz anatomy, visually showing the bundle sheath enlarging and the mesophyll cells reorganizing radially around it.
+
+{{< iframe src="/c3-c4-kranz-toggle.html" title="C3 vs. C4 (Kranz) vein cross-section toggle" height="480px" >}}
 
 **Static**
 

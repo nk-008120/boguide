@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alternation-of-Generations Lineage Slider | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 620px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .lineage-label { text-align: center; font-size: 1rem; font-weight: 700; color: #1a472a; margin-bottom: 8px; }
+  input[type=range] { width: 100%; margin-bottom: 14px; }
+  .bars { display: flex; gap: 20px; align-items: flex-end; height: 160px; justify-content: center; margin-bottom: 10px; }
+  .bar-col { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 160px; }
+  .bar {
+    width: 70px;
+    border-radius: 8px 8px 0 0;
+    transition: height 0.4s ease;
+  }
+  .bar.gameto { background: #7fb8e0; }
+  .bar.sporo { background: #4c8c3f; }
+  .bar-label { font-size: 0.78rem; font-weight: 600; color: #334155; margin-top: 6px; }
+  .note {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+    min-height: 4em;
+  }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Alternation of Generations: Dominance Across Lineages</h3>
+  <div class="subtitle">Drag the slider through the four lineages and watch the gametophyte/sporophyte bars rescale to match actual dominance.</div>
+  <div class="lineage-label" id="lineageLabel"></div>
+  <input type="range" id="lineageSlider" min="0" max="3" value="0" step="1">
+  <div class="bars">
+    <div class="bar-col"><div class="bar gameto" id="gametoBar"></div><div class="bar-label">Gametophyte</div></div>
+    <div class="bar-col"><div class="bar sporo" id="sporoBar"></div><div class="bar-label">Sporophyte</div></div>
+  </div>
+  <div class="note" id="note"></div>
+</div>
+<script>
+(function(){
+  var slider = document.getElementById('lineageSlider');
+  var lineageLabel = document.getElementById('lineageLabel');
+  var gametoBar = document.getElementById('gametoBar');
+  var sporoBar = document.getElementById('sporoBar');
+  var note = document.getElementById('note');
+
+  var stages = [
+    { name: 'Bryophytes', gameto: 150, sporo: 40, note: 'The <b>gametophyte is dominant</b> — the leafy moss plant you see is the gametophyte. The sporophyte remains small, physically attached to and nutritionally dependent on the parent gametophyte for its entire life.' },
+    { name: 'Pteridophytes (ferns)', gameto: 50, sporo: 150, note: 'Dominance flips: the <b>sporophyte is now dominant</b> — the recognizable fern plant with true roots/stems/leaves. The gametophyte is reduced to a small, free-living <b>prothallus</b>, still independent but tiny compared to the sporophyte.' },
+    { name: 'Gymnosperms', gameto: 20, sporo: 150, note: 'The sporophyte remains dominant, and the gametophyte is reduced further still — a small, multicellular structure entirely <b>retained within</b> the sporophyte\'s cone tissue, no longer free-living at all.' },
+    { name: 'Angiosperms', gameto: 8, sporo: 150, note: 'Gametophyte reduction reaches its endpoint: the male gametophyte is just a 2–3 celled pollen grain, and the female gametophyte is the embryo sac (as few as 7 cells) — both entirely dependent on and inseparable from sporophyte tissue.' }
+  ];
+
+  function update(){
+    var idx = parseInt(slider.value, 10);
+    var s = stages[idx];
+    lineageLabel.textContent = s.name;
+    gametoBar.style.height = s.gameto + 'px';
+    sporoBar.style.height = s.sporo + 'px';
+    note.innerHTML = s.note;
+  }
+
+  slider.addEventListener('input', update);
+  update();
+})();
+</script>
+</body>
+</html>
