@@ -25,13 +25,22 @@ The *lac* operon encodes enzymes for lactose metabolism (including β-galactosid
 
 The lac operon also integrates a **second**, independent layer of regulation reflecting overall cell energy status: when glucose (the preferred carbon source) is scarce, **cAMP** levels rise, and cAMP-bound **CAP (catabolite activator protein)** binds a separate site near the promoter, enhancing RNA polymerase binding — this is **positive control**, since CAP actively promotes rather than merely permits transcription. Full lac operon expression therefore requires **both** conditions simultaneously: lactose present (repressor released) *and* glucose absent (CAP active) — a classic example of combinatorial (AND-gate-like) regulatory logic ensuring the cell only invests in lactose metabolism when lactose is available *and* glucose (the more efficient preferred fuel) is not.
 
+![lac operon in the repressed state (lactose absent): active lac repressor bound at the operator blocks transcription; and in the induced state (lactose present): lactose binds and inactivates the repressor (forming a repressor-lactose complex), RNA polymerase transcribes lacZ, lacY, lacA into separate mRNAs](/MCBBPICS/lac-operon-repressed-induced.jpg)
+*Source: ScienceDirect Topics ("lactose operon") — confirm licensing basis before public deployment. ScienceDirect topic pages are not a confirmed-open source by default. Note: shows the repressor/lactose (negative control) logic clearly but does not depict the CAP/cAMP (positive control, glucose-absence) layer described in the text.*
+
 ### The trp operon: repressible, negative control
 
 The *trp* operon encodes enzymes for tryptophan **biosynthesis** — the opposite metabolic direction from lac's catabolic (breakdown) role, and correspondingly opposite regulatory logic. In the **absence** of tryptophan, the trp repressor is inactive and unable to bind the operator, so the operon is transcribed by default (**on**) — the cell synthesises tryptophan because it needs to. When tryptophan is abundant, it acts as a **co-repressor**, binding the trp repressor and activating it, allowing it to bind the operator and shut transcription **off** — the cell stops making an amino acid it no longer needs to synthesise. This is still negative control (a repressor blocks transcription), but the operon's *default* state and its response to the regulatory molecule are inverted relative to lac — worth stating explicitly, since this contrast (inducible/catabolic vs. repressible/biosynthetic) is the single most common comparative exam framing for this topic.
 
+![trp operon regulatory region: inactive trp repressor cannot bind DNA alone, but binding tryptophan activates it (high [Trp]: repression occurs) to bind the operator and block transcription; the operon layout shows promoter (P), operator (O), leader (trpL) with its attenuator, and the five structural genes trpE-trpD-trpC-trpB-trpA, with high Trp producing only an attenuated mRNA and low Trp producing the full trp mRNA](/MCBBPICS/trp-operon-active-repressed.png)
+*Source: en.wikipedia.org (Trp operon) — confirm licensing basis before public deployment*
+
 ### Attenuation: a second, finer regulatory layer on the trp operon
 
 Beyond repressor-mediated on/off control, the trp operon carries an additional regulatory mechanism unique to bacteria's lack of a nuclear envelope: **attenuation**, which fine-tunes transcription *after* it has already begun, exploiting the fact that transcription and translation are physically coupled in bacteria (a ribosome can begin translating an mRNA while RNA polymerase is still transcribing further downstream — impossible in eukaryotes, where transcription and translation are separated by the nuclear envelope, see [Transcription & RNA Processing](../transcription-rna-processing/)). A leader sequence upstream of the trp structural genes encodes a short peptide containing two consecutive tryptophan codons; when Trp is scarce, the ribosome stalls at these codons (waiting for scarce charged Trp-tRNA), and this stalling alters the folding of the nascent mRNA in a way that permits RNA polymerase to continue transcribing; when Trp is abundant, the ribosome translates through smoothly without stalling, and the resulting alternative mRNA fold instead forms a terminator hairpin, prematurely halting transcription. Attenuation thus provides graded, rapid, translation-coupled fine-tuning layered directly on top of the coarser repressor-based on/off switch.
+
+![Attenuation mechanism at the trp leader (trpL): at high tryptophan, the ribosome translates the complete leader peptide through both Trp codons, allowing a transcription-terminating stem loop to form and RNA polymerase to release; at low tryptophan, the ribosome stalls at the Trp codons, forcing an alternative stem-loop structure that allows RNA polymerase to continue transcribing the downstream trp genes](/MCBBPICS/attenuation-mechanism-diagram.png)
+*Source: bio.libretexts.org — confirm licensing basis before public deployment*
 
 ### Riboswitches: regulation without any protein at all
 
@@ -58,13 +67,13 @@ Beyond repressor-mediated on/off control, the trp operon carries an additional r
 
 **Interactive**
 
-- *(built later — see project workflow)* A lac operon state simulator: toggle lactose and glucose presence/absence independently and see the repressor/CAP binding states and resulting transcription output (on/off) update live — directly visualises the AND-gate combinatorial logic.
+- A lac operon state simulator: toggle lactose and glucose presence/absence independently and see the repressor/CAP binding states and resulting transcription output (on/off) update live — directly visualises the AND-gate combinatorial logic.
+
+{{< iframe src="/lac-operon-state-simulator.html" title="lac Operon State Simulator" height="400px" >}}
 
 **Static**
 
-- lac operon diagram in both repressed (no lactose) and induced (lactose present, glucose absent, CAP bound) states
-- trp operon diagram in both active (no Trp) and repressed (Trp abundant, co-repressor bound) states
-- Attenuation mechanism diagram showing ribosome stalling vs. read-through and the resulting alternative mRNA hairpin structures
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. The lac operon image does not show the CAP/glucose positive-control layer — see the inline note.)*
 
 ## Practice Problems
 

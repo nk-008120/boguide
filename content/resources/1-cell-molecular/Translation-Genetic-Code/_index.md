@@ -24,6 +24,9 @@ The genetic code maps 64 possible **codons** (three-nucleotide sequences) to 20 
 - **Nearly universal**: the same codon-to-amino-acid mapping is used across nearly all known life (with a small number of documented exceptions, e.g. some mitochondrial genetic codes), strong evidence for a shared evolutionary origin of the translation system itself.
 - **Non-overlapping and read in a fixed frame**: codons are read consecutively, three nucleotides at a time, without overlap, starting from a fixed reading frame set by the start codon. This is the direct reason insertions or deletions that are not multiples of three (**frameshift mutations**) are so much more disruptive than single-base substitutions — every downstream codon is shifted, typically scrambling the entire downstream amino acid sequence and frequently introducing a premature stop codon.
 
+![Circular genetic code wheel: reading from the centre outward gives the first, second, and third codon positions, mapping all 64 codons to their amino acid (three-letter code) or Start/Stop designation as marked in the legend](/MCBBPICS/genetic-code-table.jpg)
+*Source: en.wikipedia.org (DNA and RNA codon tables) — confirm licensing basis before public deployment. Note: presented as a circular wheel rather than a conventional row/column table, but conveys the same complete codon-to-amino-acid mapping.*
+
 ### Open reading frames (ORFs)
 
 An **open reading frame (ORF)** is a continuous stretch of codons, beginning with a start codon (AUG) and ending with a stop codon, uninterrupted by a stop codon in between — the sequence that, if translated, would produce a complete polypeptide. An ORF is a property of the **nucleotide sequence** (mRNA, or genomic DNA when scanned computationally, as in the ORF-finding tools covered in [Bioinformatics](/resources/10-bioinformatics/)); a protein's **primary structure** (see [Protein Structure, Folding & Function](../protein-structure-folding-function/)) is the actual linear amino acid sequence that results once that ORF is translated. The relationship is direct and one-directional under normal translation: a valid ORF, read through the genetic code, *specifies* a unique primary structure — but the ORF itself is nucleic acid information, while primary structure is the realised polypeptide product; the two are related exactly the way a recipe (ORF) is related to the finished dish (primary structure), not interchangeable terms for the same thing.
@@ -34,9 +37,15 @@ An **open reading frame (ORF)** is a continuous stretch of codons, beginning wit
 
 **Wobble base pairing**: the third codon position often tolerates non-standard base pairing with the anticodon's first position, allowing a single tRNA species to recognise more than one synonymous codon — the direct molecular explanation for why the genetic code's degeneracy is concentrated overwhelmingly at the third codon position.
 
+![tRNA cloverleaf secondary structure: acceptor stem terminating in the 3' amino-acid attachment site, D loop, T loop, variable loop, and anticodon stem-loop with the anticodon and its wobble-position base labelled at the bottom](/MCBBPICS/trna-cloverleaf-structure.jpg)
+*Source: earth.callutheran.edu — confirm licensing basis before public deployment*
+
 ### Ribosome structure
 
 The ribosome is a ribozyme-containing ribonucleoprotein complex (rRNA plus protein) with two subunits — **small** (reads and verifies codon-anticodon pairing) and **large** (contains the peptidyl transferase catalytic centre that forms peptide bonds — notably, this catalytic activity is carried out by rRNA itself, not a protein, making peptide bond formation a ribozyme-catalysed reaction) — that assemble on the mRNA only during active translation. Three functional tRNA-binding sites span both subunits: the **A (aminoacyl) site** receives each incoming charged tRNA, the **P (peptidyl) site** holds the tRNA carrying the growing polypeptide chain, and the **E (exit) site** is where the now-uncharged tRNA sits briefly before release.
+
+![Ribosome elongation cycle across the E/P/A sites: (a) peptide bond formation between the P-site peptidyl-tRNA and A-site aminoacyl-tRNA, (b) the resulting state with tRNAs in E and P/A, (c) eEF2-GTP-driven translocation shifting tRNAs to E and P and opening the A site, (d) eEF1A-GTP-mediated binding of the next aminoacyl-tRNA into the A site, restarting the cycle](/MCBBPICS/ribosome-a-p-e-sites-elongation.jpg)
+*Source: ScienceDirect Topics ("E site") — confirm licensing basis before public deployment. ScienceDirect topic pages are not a confirmed-open source by default.*
 
 ### The three stages of translation
 
@@ -69,13 +78,13 @@ The newly synthesised polypeptide is not necessarily functional immediately — 
 
 **Interactive**
 
-- *(built later — see project workflow, paired with Transcription & RNA Processing's widget to form the coupled transcription/translation animation explicitly requested by Genetics' own placeholder unit)* A ribosome translocation animator: step through initiation, then repeated elongation cycles (A-site charging, peptide bond formation, translocation), then termination, with the growing polypeptide chain visibly extending each cycle.
+- A ribosome translocation animator: step through initiation, then repeated elongation cycles (A-site charging, peptide bond formation, translocation), then termination, with the growing polypeptide chain visibly extending each cycle.
+
+{{< iframe src="/ribosome-translocation-animator.html" title="Ribosome Translocation Animator" height="420px" >}}
 
 **Static**
 
-- Genetic code table (codon-to-amino-acid mapping), with start and stop codons highlighted
-- tRNA cloverleaf structure diagram with anticodon loop and amino-acid attachment site labelled
-- Ribosome A/P/E site diagram during an elongation cycle
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
 
 ## Practice Problems
 

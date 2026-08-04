@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mitosis/Meiosis Chromosome Tracker | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .controls { display: flex; gap: 10px; align-items: center; justify-content: center; margin-bottom: 1rem; }
+  .controls button { background: #2d6a4f; color: #fff; border: none; border-radius: 999px; padding: 8px 18px; font-size: 0.82rem; cursor: pointer; }
+  .controls button:disabled { background: #cbd5e1; cursor: not-allowed; }
+  #stepLabel { font-weight: 700; min-width: 160px; text-align: center; }
+  .panels { display: flex; gap: 1rem; }
+  .panel { flex: 1; text-align: center; }
+  .panel h4 { margin: 0 0 6px; font-size: 0.85rem; color: #64748b; }
+  .panel svg { width: 100%; height: 160px; background: #f8fafc; border-radius: 12px; }
+  #unitBanner { margin-top: 12px; padding: 10px; border-radius: 10px; background: #f1f5f9; text-align: center; font-size: 0.88rem; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Mitosis vs. Meiosis: What's Actually Separating?</h3>
+  <div class="subtitle">Step through matching stages of both divisions side by side, tracking whether sister chromatids or homologous chromosomes are the unit currently separating.</div>
+  <div class="controls">
+    <button id="prevBtn">&larr; Prev</button>
+    <div id="stepLabel"></div>
+    <button id="nextBtn">Next &rarr;</button>
+  </div>
+  <div class="panels">
+    <div class="panel"><h4>Mitosis</h4><svg id="mitoSvg" viewBox="0 0 200 160"></svg></div>
+    <div class="panel"><h4>Meiosis</h4><svg id="meioSvg" viewBox="0 0 200 160"></svg></div>
+  </div>
+  <div id="unitBanner"></div>
+</div>
+<script>
+(function(){
+  var ns = 'http://www.w3.org/2000/svg';
+  var steps = [
+    { label: 'Metaphase', mitoUnit: 'Sister chromatids (paired) at plate', meioUnit: 'Homologous pairs (tetrads) at plate — Meiosis I',
+      mito: 'paired-single', meio: 'paired-tetrad' },
+    { label: 'Anaphase', mitoUnit: 'Sister chromatids separate', meioUnit: 'Homologous chromosomes separate — Meiosis I',
+      mito: 'split-chromatids', meio: 'split-homologs' },
+    { label: 'Meiosis II Metaphase', mitoUnit: '(mitosis already complete)', meioUnit: 'Sister chromatids at plate — Meiosis II',
+      mito: 'done', meio: 'paired-single' },
+    { label: 'Meiosis II Anaphase', mitoUnit: '(mitosis already complete)', meioUnit: 'Sister chromatids separate — Meiosis II',
+      mito: 'done', meio: 'split-chromatids' }
+  ];
+  var idx = 0;
+  var stepLabel = document.getElementById('stepLabel');
+  var unitBanner = document.getElementById('unitBanner');
+  var mitoSvg = document.getElementById('mitoSvg');
+  var meioSvg = document.getElementById('meioSvg');
+
+  function chromo(x, y, color, splitOffset){
+    var g = document.createElementNS(ns, 'g');
+    var l1 = document.createElementNS(ns, 'line');
+    l1.setAttribute('x1', x - splitOffset); l1.setAttribute('y1', y - 14);
+    l1.setAttribute('x2', x - splitOffset); l1.setAttribute('y2', y + 14);
+    l1.setAttribute('stroke', color); l1.setAttribute('stroke-width', '5'); l1.setAttribute('stroke-linecap','round');
+    g.appendChild(l1);
+    if (splitOffset === 0){
+      var l2 = document.createElementNS(ns, 'line');
+      l2.setAttribute('x1', x + 4); l2.setAttribute('y1', y - 14);
+      l2.setAttribute('x2', x + 4); l2.setAttribute('y2', y + 14);
+      l2.setAttribute('stroke', color); l2.setAttribute('stroke-width', '5'); l2.setAttribute('stroke-linecap','round');
+      g.appendChild(l2);
+    }
+    return g;
+  }
+
+  function render(svg, state){
+    svg.innerHTML = '';
+    if (state === 'done'){
+      var t = document.createElementNS(ns, 'text');
+      t.setAttribute('x', 100); t.setAttribute('y', 84); t.setAttribute('text-anchor','middle');
+      t.setAttribute('font-size','11'); t.setAttribute('fill','#94a3b8');
+      t.textContent = 'Complete — 2 identical diploid cells';
+      svg.appendChild(t);
+      return;
+    }
+    if (state === 'paired-single'){
+      svg.appendChild(chromo(100, 80, '#1d70a2', 0));
+    } else if (state === 'paired-tetrad'){
+      svg.appendChild(chromo(90, 80, '#1d70a2', 0));
+      svg.appendChild(chromo(110, 80, '#d9534f', 0));
+    } else if (state === 'split-chromatids'){
+      var lft = document.createElementNS(ns,'line'); lft.setAttribute('x1',60);lft.setAttribute('y1',66);lft.setAttribute('x2',60);lft.setAttribute('y2',94);lft.setAttribute('stroke','#1d70a2');lft.setAttribute('stroke-width','5');lft.setAttribute('stroke-linecap','round');
+      var rgt = document.createElementNS(ns,'line'); rgt.setAttribute('x1',140);rgt.setAttribute('y1',66);rgt.setAttribute('x2',140);rgt.setAttribute('y2',94);rgt.setAttribute('stroke','#1d70a2');rgt.setAttribute('stroke-width','5');rgt.setAttribute('stroke-linecap','round');
+      svg.appendChild(lft); svg.appendChild(rgt);
+      var arrow1 = document.createElementNS(ns,'text'); arrow1.setAttribute('x',30);arrow1.setAttribute('y',80);arrow1.setAttribute('font-size','16');arrow1.setAttribute('fill','#94a3b8');arrow1.textContent='<-';
+      var arrow2 = document.createElementNS(ns,'text'); arrow2.setAttribute('x',160);arrow2.setAttribute('y',80);arrow2.setAttribute('font-size','16');arrow2.setAttribute('fill','#94a3b8');arrow2.textContent='->';
+      svg.appendChild(arrow1); svg.appendChild(arrow2);
+    } else if (state === 'split-homologs'){
+      var l2 = document.createElementNS(ns,'line'); l2.setAttribute('x1',60);l2.setAttribute('y1',66);l2.setAttribute('x2',60);l2.setAttribute('y2',94);l2.setAttribute('stroke','#1d70a2');l2.setAttribute('stroke-width','9');l2.setAttribute('stroke-linecap','round');
+      var l3 = document.createElementNS(ns,'line'); l3.setAttribute('x1',140);l3.setAttribute('y1',66);l3.setAttribute('x2',140);l3.setAttribute('y2',94);l3.setAttribute('stroke','#d9534f');l3.setAttribute('stroke-width','9');l3.setAttribute('stroke-linecap','round');
+      svg.appendChild(l2); svg.appendChild(l3);
+    }
+  }
+
+  function update(){
+    var s = steps[idx];
+    stepLabel.textContent = s.label + ' (' + (idx+1) + '/' + steps.length + ')';
+    render(mitoSvg, s.mito);
+    render(meioSvg, s.meio);
+    unitBanner.innerHTML = '<span style="color:#1d70a2">Mitosis: ' + s.mitoUnit + '</span><br><span style="color:#d9534f">Meiosis: ' + s.meioUnit + '</span>';
+    document.getElementById('prevBtn').disabled = idx === 0;
+    document.getElementById('nextBtn').disabled = idx === steps.length - 1;
+  }
+
+  document.getElementById('prevBtn').addEventListener('click', function(){ if (idx>0){idx--; update();} });
+  document.getElementById('nextBtn').addEventListener('click', function(){ if (idx<steps.length-1){idx++; update();} });
+  update();
+})();
+</script>
+</body>
+</html>

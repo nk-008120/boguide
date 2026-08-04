@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cell Death Pathway Decision Tree | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  #scenario { font-weight: 700; padding: 10px; background: #f1f5f9; border-radius: 10px; margin-bottom: 10px; font-size: 0.88rem; }
+  .choices { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 1rem; }
+  .choice { flex: 1; min-width: 120px; padding: 10px; text-align: center; border-radius: 10px; border: 2px solid #e2e8f0; background: #f8fafc; cursor: pointer; font-size: 0.82rem; font-weight: 700; }
+  .choice.correct { background: #dcfce7; border-color: #22c55e; color: #166534; }
+  .choice.wrong { background: #fee2e2; border-color: #f87171; color: #991b1b; }
+  #pathway { min-height: 70px; padding: 10px; background: #f8fafc; border-radius: 10px; font-size: 0.84rem; color: #4b5563; }
+  #nextBtn { margin-top: 10px; background: #2d6a4f; color: #fff; border: none; border-radius: 999px; padding: 8px 18px; font-size: 0.82rem; cursor: pointer; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Which Death (or Survival) Pathway?</h3>
+  <div class="subtitle">Read the scenario, choose the correct mode, then see the correct molecular pathway highlighted.</div>
+  <div id="scenario"></div>
+  <div class="choices" id="choices"></div>
+  <div id="pathway">Select an answer to reveal the pathway.</div>
+  <button id="nextBtn">Next scenario &rarr;</button>
+</div>
+<script>
+(function(){
+  var options = ['Apoptosis', 'Necrosis', 'Autophagy'];
+  var scenarios = [
+    { text: 'Acute physical trauma ruptures the cell membrane; contents spill and trigger local inflammation.', correct: 'Necrosis',
+      pathway: 'Necrosis: uncontrolled injury -> osmotic/ionic failure -> membrane rupture -> lysosomal enzymes and intracellular contents released -> inflammation.' },
+    { text: 'During limb development, cells between the digits are deliberately eliminated to sculpt separate fingers.', correct: 'Apoptosis',
+      pathway: 'Apoptosis (intrinsic pathway here): developmental signal -> BAX/BAK -> mitochondrial outer membrane permeabilisation -> cytochrome c -> caspase cascade -> clean apoptotic bodies, no inflammation.' },
+    { text: 'A starving cell recycles its own damaged organelles and protein aggregates for energy rather than dying.', correct: 'Autophagy',
+      pathway: 'Autophagy: nutrient stress -> double-membrane autophagosome engulfs damaged components -> fuses with a lysosome -> degradation and recycling; primarily a survival mechanism, not death.' }
+  ];
+  var idx = 0;
+  var scenarioEl = document.getElementById('scenario');
+  var choicesEl = document.getElementById('choices');
+  var pathwayEl = document.getElementById('pathway');
+
+  function render(){
+    var s = scenarios[idx];
+    scenarioEl.textContent = 'Scenario: ' + s.text;
+    pathwayEl.textContent = 'Select an answer to reveal the pathway.';
+    choicesEl.innerHTML = '';
+    options.forEach(function(opt){
+      var btn = document.createElement('div');
+      btn.className = 'choice';
+      btn.textContent = opt;
+      btn.addEventListener('click', function(){
+        if (choicesEl.querySelector('.correct, .wrong')) return;
+        if (opt === s.correct){
+          btn.classList.add('correct');
+        } else {
+          btn.classList.add('wrong');
+          Array.prototype.forEach.call(choicesEl.children, function(c){ if (c.textContent === s.correct) c.classList.add('correct'); });
+        }
+        pathwayEl.textContent = s.pathway;
+      });
+      choicesEl.appendChild(btn);
+    });
+  }
+
+  document.getElementById('nextBtn').addEventListener('click', function(){ idx = (idx+1) % scenarios.length; render(); });
+  render();
+})();
+</script>
+</body>
+</html>

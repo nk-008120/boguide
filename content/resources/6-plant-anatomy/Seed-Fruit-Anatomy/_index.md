@@ -22,6 +22,9 @@ The ovule's **integuments** (one or two layers, see [Flower Anatomy & Reproducti
 
 The fertilized **zygote** (see [Flower Anatomy & Reproductive Structures](../flower-anatomy-reproductive-structures/)) develops into the embryo, organized along a single axis: a **radicle** (embryonic root) at one end, a **plumule** (embryonic shoot, itself sometimes called the epicotyl above the cotyledon attachment point) at the other, connected by a **hypocotyl** (the embryonic axis segment between radicle and cotyledon attachment), and bearing one **cotyledon** (monocots) or two (dicots) — the same cotyledon-count distinction introduced on [Monocot vs Dicot Comparative Anatomy](../monocot-dicot-comparative-anatomy/). In many dicot seeds the cotyledons themselves swell to become the seed's primary nutrient-storage structure (see below); in monocots the single cotyledon (in grasses, specifically modified into a structure called the **scutellum**) instead functions mainly to absorb and transfer stored nutrient from a separate endosperm rather than storing it directly.
 
+![A dicot seed (bean) with seed coat, embryo, cotyledon, hypocotyl, radicle, and plumule labeled, alongside a monocot seed (corn) with pericarp+seed coat (fused), endosperm, and embryo labeled.](/PLANTANATPICS/dicot-monocot-seed.png)
+*Source: Biology LibreTexts — confirm the specific CC license (BY vs. BY-NC-SA) on the originating page before public deployment. Covers both the dicot (non-endospermic) and monocot (endospermic) seed spec items in one combined figure.*
+
 ### Endosperm, Perisperm, and Nutrient Storage Strategy
 
 Recall from [Flower Anatomy & Reproductive Structures](../flower-anatomy-reproductive-structures/) that double fertilization produces both the zygote and a separate triploid **primary endosperm nucleus**, which develops into **endosperm** tissue. What happens to that endosperm by seed maturity splits species into two structural categories:
@@ -35,6 +38,9 @@ A separate nutritive tissue, **perisperm**, occurs in a smaller number of specie
 
 Following fertilization, the ovary wall matures into the **pericarp**, differentiating into up to three structural layers: **exocarp** (outermost, often a thin skin), **mesocarp** (middle, variable — thin and dry, or thick and fleshy, depending on fruit type), and **endocarp** (innermost, in direct contact with the seed(s), variable — thin and membranous, or hardened into a stone). Not every fruit shows all three layers as structurally distinct; the degree of differentiation is exactly what separates the fruit types below.
 
+![A peach (drupe) cross-section labeling the seed (endosperm, embryo, seed coat) and the pericarp's three layers (exocarp, mesocarp, endocarp).](/PLANTANATPICS/drupe-cross-section.png)
+*Source: Wikimedia Commons, "Drupe fruit diagram" (commons.wikimedia.org) — Wikimedia-hosted diagrams are typically openly licensed; confirm the specific license tag before public deployment. Exceeds the spec, also labeling the internal seed structure.*
+
 ### Fruit Classification
 
 Fruits are classified first by how many ovaries/flowers contributed to the structure, then, for simple fruits, by pericarp texture and dehiscence behavior:
@@ -44,6 +50,9 @@ Fruits are classified first by how many ovaries/flowers contributed to the struc
   - **Dry simple fruits**, split by whether the pericarp splits open at maturity: **dehiscent** (splits to release seeds — **legume**, splitting along two seams, characteristic of Fabaceae; **capsule**, splitting along multiple seams or pores; **silique**, a specialized elongated capsule characteristic of Brassicaceae) versus **indehiscent** (pericarp stays closed, the whole structure dispersing as one unit — **achene**, small, one seed, pericarp not fused to the seed coat; **caryopsis**, one seed, pericarp fused tightly to the seed coat, characteristic of grasses/cereals; **samara**, winged pericarp extension for wind dispersal; **nut**, one seed, hardened pericarp, usually larger than an achene).
 - **Aggregate fruit** — develops from multiple separate carpels of a single flower's single gynoecium, each carpel maturing into a small fruitlet, all fruitlets remaining attached to one receptacle (e.g. raspberry, blackberry — each small "bump" is technically a separate small drupe, a **drupelet**).
 - **Multiple fruit** — develops from the fused ovaries of many separate flowers clustered in one inflorescence, maturing into what appears externally as one unit (e.g. pineapple, fig, mulberry).
+
+![Two fleshy-fruit examples: (a) strawberries, an aggregate fruit whose achenes sit on a fleshy receptacle; (b) chaparral honeysuckle berries, individual berries developing from inferior ovaries.](/PLANTANATPICS/aggregate-vs-multiple-fruit.png)
+*Source: Raven, Evert & Eichhorn, Biology of Plants (W.H. Freeman/Macmillan) — commercial textbook figure, not CC-licensed. Confirm edition/page and rights basis before public deployment. **Content mismatch**: panel (a) matches the aggregate-fruit spec (strawberry, technically an aggregate/accessory fruit), but panel (b) does not show a multiple fruit — chaparral honeysuckle berries are individual berries from separate flowers, not fused into one unit the way a fig or pineapple is. No genuine multiple-fruit example was found in this source; kept panel (a) for the aggregate-fruit concept and flagged panel (b) here rather than mislabeling it.*
 
 ### Dispersal-Related Structural Adaptations
 
@@ -85,14 +94,7 @@ Several fruit and seed structures are specifically shaped by dispersal mechanism
 
 {{< iframe src="/fruit-classification-decision-tree.html" title="Fruit classification decision tree" height="440px" >}}
 
-**Static**
-
-- Dicot seed longitudinal section (non-endospermic, e.g. bean): seed coat, two large cotyledons, embryo axis labeled
-- Monocot seed longitudinal section (endospermic, e.g. corn kernel): pericarp fused to seed coat, endosperm, scutellum, embryo labeled
-- Drupe cross-section (e.g. peach): exocarp/mesocarp/endocarp labeled against the familiar skin/flesh/stone
-- Legume pod split open showing dehiscence along two seams, seeds attached at marginal placentation
-- Samara, achene, caryopsis, and nut drawn side by side for indehiscent-fruit comparison
-- Aggregate fruit (raspberry) vs. multiple fruit (fig), cross-sectioned to show the different flower-count origin
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. No usable image was found for the legume-pod-dehiscence or samara/achene/caryopsis/nut comparison spec items — dropped from this pass.)*
 
 ## Practice Problems
 

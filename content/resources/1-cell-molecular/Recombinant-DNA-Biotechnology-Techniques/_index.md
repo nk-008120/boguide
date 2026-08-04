@@ -19,9 +19,15 @@ This page covers the core nucleic-acid manipulation toolkit — how DNA fragment
 
 **Restriction endonucleases** recognise specific short palindromic DNA sequences and cleave the DNA there — bacterially derived defence enzymes (part of a bacterium's own restriction-modification system against invading phage DNA) repurposed as precision cutting tools. Many restriction enzymes produce **sticky ends** (short single-stranded overhangs) rather than blunt ends; two DNA fragments cut by the *same* enzyme have complementary sticky ends and can be joined by DNA ligase, which is the physical basis of **molecular cloning**: a gene of interest, cut with a chosen restriction enzyme, can be ligated into a **plasmid vector** cut with the same enzyme, then introduced into a host bacterium (transformation) for propagation, amplification, or expression. Vectors typically carry a selectable marker (e.g. antibiotic resistance) allowing successfully transformed cells to be identified by growth under selective conditions.
 
+![Restriction enzyme cloning: a stabilizing/flanking DNA region containing HindIII and KpnI recognition sites is cut, producing sticky-ended fragments (5' AGCT and GGTAC overhangs); the excised insert and a digested circular vector cut with the same enzymes share complementary sticky ends, allowing ligation into a recombinant vector](/MCBBPICS/restriction-enzyme-sticky-end-cloning.jpg)
+*Source: idtdna.com — confirm licensing basis before public deployment*
+
 ### PCR: exponential amplification without a living host
 
 **Polymerase chain reaction (PCR)** amplifies a specific DNA sequence exponentially in a test tube, without requiring cloning into a living organism. Each cycle repeats three temperature-controlled steps: **denaturation** (~95°C, separating the double helix into single strands), **annealing** (~50–65°C, allowing short synthetic **primers** flanking the target sequence to bind their complementary single-stranded template), and **extension** (~72°C, a heat-stable DNA polymerase — most commonly **Taq polymerase**, originally isolated from the thermophilic bacterium *Thermus aquaticus*, whose heat tolerance is exactly what makes repeated 95°C denaturation cycles compatible with an active polymerase — extends each primer, synthesising new DNA). Because each cycle's products become templates for the next cycle, the target sequence roughly **doubles every cycle**, producing exponential (2ⁿ) amplification from a vanishingly small starting sample — the property that makes PCR so useful for amplifying trace forensic, diagnostic, or ancient DNA samples.
+
+![PCR three-step cycle: double-stranded DNA is denatured into single strands (94-95°C), primers anneal to their complementary sequences (50-56°C), and polymerase extends each primer (72°C) to synthesise new complementary strands](/MCBBPICS/pcr-three-step-cycle.png)
+*Source: praxilabs.com — confirm licensing basis before public deployment*
 
 ### Blotting techniques: three names, one shared logic, three different targets
 
@@ -33,6 +39,9 @@ All three blotting techniques share the same core workflow — separate biomolec
 
 The naming and workflow parallel is deliberate and worth internalising as a set: **same core logic (separate → transfer → probe), different molecule and different probe chemistry** — a frequent source of confusion is forgetting that Western blot's probe is an antibody, not a nucleic acid, because it's the one technique in the set detecting a molecule without a complementary-sequence partner.
 
+![Southern (DNA), Western (protein), and Northern (RNA) blotting compared side by side across target molecule, membrane type, separation technique, probe used, probe label, detection method, blotting technique, and typical applications](/MCBBPICS/southern-northern-western-blot-comparison.png)
+*Source: excedr.com — confirm licensing basis before public deployment*
+
 ### DNA sequencing: Sanger and next-generation approaches
 
 **Sanger (chain-termination) sequencing** uses DNA polymerase, a primer, normal deoxynucleotides (dNTPs), and a small proportion of fluorescently labelled **dideoxynucleotides (ddNTPs)** — which lack the 3′-OH group required for the next phosphodiester bond to form (see [Nucleotide & Nucleic Acid Chemistry](../nucleotide-nucleic-acid-chemistry/)), so incorporation of a ddNTP terminates that strand's extension at that exact position. Across many parallel synthesis reactions, this produces a population of fragments terminating at every possible position, each carrying a base-specific fluorescent label; separating these fragments by size (capillary electrophoresis) and reading the label at each length directly reveals the sequence, one base at a time, in order.
@@ -42,6 +51,9 @@ The naming and workflow parallel is deliberate and worth internalising as a set:
 ### CRISPR-Cas9: precise, programmable genome editing
 
 **CRISPR-Cas9** repurposes a bacterial adaptive immune system (which normally recognises and cleaves invading phage DNA using stored sequence memory) into a programmable genome-editing tool. A synthetic **guide RNA (gRNA)**, designed to be complementary to the genomic target sequence, directs the **Cas9** nuclease to that specific site via RNA-DNA base pairing, where Cas9 creates a targeted double-strand break. The cell's own DNA repair machinery then resolves the break — via **NHEJ** (error-prone, often producing small insertions/deletions that disrupt the target gene — useful for gene knockout) or, if a repair template is supplied alongside, via **homologous recombination** (precise, allowing a specific designed sequence change to be introduced — see [DNA Repair & Recombination](../dna-repair-recombination/) for both repair pathways in full). CRISPR's defining advantage over older genome-editing methods is that target specificity is programmed simply by changing the guide RNA's sequence — no need to engineer a new protein for each new target, unlike earlier programmable nucleases (zinc-finger nucleases, TALENs), which required labour-intensive custom protein engineering for every new target site.
+
+![CRISPR-Cas9 gene editing mechanism: Cas9 bound to a single guide RNA (sgRNA) targets genomic DNA at a PAM sequence, creating a double-stranded break; the break is resolved either by non-homologous end joining (NHEJ, disrupting the gene of interest via deletion or addition) or by homology-directed repair (HDR, correcting the gene of interest via insertion from a donor DNA template by homologous recombination)](/MCBBPICS/crispr-cas9-mechanism.jpg)
+*Source: pmc.ncbi.nlm.nih.gov (PMC8571677) — confirm licensing basis before public deployment*
 
 ## Comparative Structures
 
@@ -67,14 +79,13 @@ The naming and workflow parallel is deliberate and worth internalising as a set:
 
 **Interactive**
 
-- *(built later — see project workflow)* A PCR cycle simulator: step through denaturation/annealing/extension across several cycles with a copy-number counter doubling each round, visually demonstrating exponential amplification from a single starting template.
+- A PCR cycle simulator: step through denaturation/annealing/extension across several cycles with a copy-number counter doubling each round, visually demonstrating exponential amplification from a single starting template.
+
+{{< iframe src="/pcr-cycle-simulator.html" title="PCR Cycle Simulator" height="380px" >}}
 
 **Static**
 
-- Restriction enzyme sticky-end cutting and ligation-based cloning diagram
-- PCR three-step cycle diagram with temperature and molecular events at each step
-- Southern/Northern/Western blot side-by-side workflow comparison
-- CRISPR-Cas9 mechanism diagram: guide RNA targeting, Cas9 cleavage, and the NHEJ vs. HR repair branch point
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
 
 ## Practice Problems
 

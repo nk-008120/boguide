@@ -23,6 +23,9 @@ Animal cells form three structurally and functionally distinct junction types, e
 - **Anchoring junctions** (adherens junctions and desmosomes): mechanically link the cytoskeletons of adjacent cells (via cadherin proteins spanning the intercellular space) or link a cell to the extracellular matrix (via integrins, in **hemidesmosomes** and **focal adhesions**). Adherens junctions couple to actin filaments; desmosomes couple to intermediate filaments (see [Cytoskeleton & Motor Proteins](../cytoskeleton-motor-proteins/)) — this distinction matters functionally, since intermediate-filament-anchored desmosomes provide the greater tensile/mechanical resilience needed in tissues under high mechanical stress (e.g. skin, cardiac muscle).
 - **Gap junctions**: form direct cytoplasmic channels (built from **connexin** proteins arranged into a **connexon**) between adjacent cells, allowing small molecules and ions to pass directly cell-to-cell without crossing either plasma membrane individually. This provides direct electrical/chemical coupling — critical in cardiac muscle for coordinated, synchronised contraction, since an action potential can propagate directly cell-to-cell through gap junctions rather than requiring a slower cell-surface-receptor-mediated relay each time.
 
+![Cross-section of a vertebrate epithelial cell junctional complex: tight junction (apical-most), adherens junction and desmosome (cell-cell anchoring junctions, connecting actin and intermediate filaments respectively between cells), gap junction, and two cell-matrix anchoring junctions (actin-linked and hemidesmosome) at the basal surface](/MCBBPICS/epithelial-junction-types.png)
+*Source: Bruce Alberts et al., Molecular Biology of the Cell, 7th ed., Figure 19-2 — confirm licensing basis before public deployment. Commercial textbook figure; no visible copyright notice printed on the image itself, but still needs a license or replacement before public deployment. Shows five junction/anchoring types (a fuller breakdown of "anchoring junctions" into adherens/desmosome/hemidesmosome/cell-matrix) rather than the three broad categories named in the text.*
+
 ### Extracellular matrix (ECM)
 
 The ECM is the network of secreted extracellular proteins and polysaccharides surrounding animal cells, providing structural support, anchorage points, and a substrate that itself carries signaling information (transduced into the cell via integrin receptors, linking the ECM back to intracellular signaling — see [Cell Signaling & Communication](../cell-signaling-communication/)). Major components: **collagen** (the most abundant ECM protein, providing tensile strength via its triple-helix structure — see [Protein Structure, Folding & Function](../protein-structure-folding-function/)), **proteoglycans** (core proteins heavily decorated with glycosaminoglycan chains — see [Carbohydrate Chemistry & Biology](../carbohydrate-chemistry-biology/) — whose dense negative charge draws water in, resisting compression), and **fibronectin** (links ECM components to cell-surface integrins, coordinating cell adhesion, migration, and shape).
@@ -34,11 +37,17 @@ The ECM is the network of secreted extracellular proteins and polysaccharides su
 - **Intrinsic (mitochondrial) pathway**: triggered by internal stress signals (DNA damage, growth factor withdrawal), leading to mitochondrial outer membrane permeabilisation and release of **cytochrome c** into the cytoplasm — a striking example of a normally strictly compartmentalised mitochondrial protein (see [Mitochondria & Chloroplasts](../mitochondria-chloroplasts-structure-origin/)) being repurposed as a death signal once released.
 - **Extrinsic (death receptor) pathway**: triggered by extracellular ligand binding to a cell-surface "death receptor" (e.g. Fas), directly activating the downstream protease cascade without a mitochondrial step.
 
+![Extrinsic and intrinsic apoptosis pathways side by side: extrinsic pathway shows Fas ligand/TRAILR binding recruiting FADD, activating caspase-8/10; intrinsic pathway shows ER stress/hypoxia/DNA damage stimuli triggering BH3-only proteins, BAX/BAK-mediated mitochondrial outer membrane permeabilisation, cytochrome c release, and APAF1 apoptosome formation; both converge on executioner caspases-3/-7](/MCBBPICS/apoptosis-intrinsic-extrinsic-pathways.png)
+*Source: scispace.com (AI research-summary tool) — confirm licensing basis before public deployment*
+
 Both pathways converge on activating a proteolytic cascade of **caspases**, cysteine proteases that cleave specific target proteins to systematically dismantle the cell: the cytoskeleton is disassembled, chromatin is condensed and DNA is fragmented, and the cell breaks into membrane-bound **apoptotic bodies**. Externalised **phosphatidylserine** on the outer membrane leaflet (see [Lipids & Membrane Biochemistry](../lipids-membrane-biochemistry/) for the lipid-asymmetry chemistry) serves as an "eat me" signal, allowing clean phagocytic clearance of apoptotic bodies **without releasing cellular contents into the surrounding tissue** — the critical distinction that keeps apoptosis non-inflammatory.
 
 ### Necrosis: uncontrolled cell death
 
 **Necrosis** results from acute, overwhelming cellular injury (e.g. ischemia, physical trauma, toxins) rather than a regulated program. The cell swells (osmotic/ionic regulation fails), the plasma membrane ruptures, and cellular contents (including lysosomal enzymes and pro-inflammatory intracellular molecules) spill into the surrounding tissue, triggering **inflammation** — the direct opposite of apoptosis's clean, non-inflammatory clearance. This inflammation vs. no-inflammation distinction is the single most important functional/exam contrast between the two death modes.
+
+![Apoptosis (controlled, cell shrinkage, chromatin condensation, apoptotic bodies) vs. necrosis (uncontrolled, cell swelling, membrane lysis) vs. necroptosis (controlled but caspase-independent, membrane lysis via the RIPK1/3-MLKL pathway) shown as three labelled cell illustrations side by side](/MCBBPICS/apoptosis-vs-necrosis.jpg)
+*Source: logosbio.com — confirm licensing basis before public deployment. Note: includes a third mode, necroptosis, beyond the two originally specced.*
 
 ### Autophagy: self-digestion, not necessarily death
 
@@ -66,13 +75,13 @@ Both pathways converge on activating a proteolytic cascade of **caspases**, cyst
 
 **Interactive**
 
-- *(built later — see project workflow)* A cell-death pathway decision tree: given a scenario description (e.g. "acute physical trauma" vs. "developmental digit sculpting" vs. "nutrient starvation"), select which death/survival mode applies and see the correct molecular pathway highlighted.
+- A cell-death pathway decision tree: given a scenario description (e.g. "acute physical trauma" vs. "developmental digit sculpting" vs. "nutrient starvation"), select which death/survival mode applies and see the correct molecular pathway highlighted.
+
+{{< iframe src="/cell-death-pathway-decision-tree.html" title="Cell Death Pathway Decision Tree" height="420px" >}}
 
 **Static**
 
-- Three junction types diagram (tight, anchoring, gap) shown in a single epithelial cell cross-section
-- Apoptosis pathway diagram showing both intrinsic and extrinsic routes converging on caspase activation
-- Side-by-side apoptosis vs. necrosis outcome diagram (clean apoptotic bodies vs. membrane rupture and content spillage)
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
 
 ## Practice Problems
 

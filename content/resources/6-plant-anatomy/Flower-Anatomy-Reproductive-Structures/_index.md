@@ -23,19 +23,34 @@ A flower is built on a receptacle (the expanded tip of the floral stalk, or **pe
 - **Androecium** — collectively, the **stamens**, the male reproductive whorl; each stamen consists of a **filament** (stalk) supporting an **anther** (pollen-producing structure, detailed below).
 - **Gynoecium** — collectively, the **carpels** (a flower's carpels, whether separate or fused into one compound structure, are collectively called the **pistil**), the female reproductive whorl; each carpel differentiates into a **stigma** (receptive surface for pollen), **style** (a stalk connecting stigma to ovary, containing specialized transmitting tissue that guides pollen tube growth), and **ovary** (the enlarged base containing one or more ovules — detailed below).
 
+![Flower whorl diagram: 1st whorl (sepals), 2nd whorl (petals), 3rd whorl (stamens), 4th whorl (carpels), labeled in sequence from outermost to innermost.](/PLANTANATPICS/complete-flower-longitudinal-section.webp)
+*Source: ResearchGate, fig. 1, "Whorls (circular sections of the flower...)" — confirm licensing basis before public deployment; journal figure, open-access status not confirmed. Shows the four whorls clearly but at whorl level only, not the individual component parts (filament/anther, stigma/style/ovary) named within each — those are covered in the text and later images on this page.*
+
 A flower bearing all four whorls is **complete**; one missing any whorl (most commonly the calyx or corolla) is **incomplete**. Independent of that, a flower with both a functional androecium and gynoecium is **perfect** (bisexual); one lacking a functional whorl of one sex is **imperfect** (unisexual — staminate or carpellate). A species where a single plant bears both staminate and carpellate flowers is **monoecious**; a species where separate individual plants are entirely staminate or entirely carpellate is **dioecious** — this specific distinction determines whether a single isolated plant can produce seed on its own.
 
 ### Anther Structure and Microsporogenesis
 
 A typical anther consists of two lobes (**thecae**) joined by sterile **connective** tissue, each theca containing two **microsporangia (pollen sacs)** — four pollen sacs per anther in total. Each pollen sac is lined internally by the **tapetum**, a nutritive layer that supplies developing pollen with nutrients and contributes material (**sporopollenin**) to the pollen wall itself.
 
+![Anther structure and development: (a) diagram of the four pollen sacs (microsporangia) with tapetum and microspore mother cells labeled, developing into pollen-grain-filled sacs; (b) scanning electron micrographs of real anthers.](/PLANTANATPICS/anther-cross-section-pollen-sacs.jpg)
+*Source: OpenStax Biology (via Biology Stack Exchange) — likely CC BY 4.0 given OpenStax's default license, but confirm before public deployment. Clearly shows all four pollen sacs and the tapetum; the two-theca grouping itself isn't separately outlined, though it's visible as the left/right pairing of sacs.*
+
 Inside each pollen sac, diploid **microspore mother cells (microsporocytes)** undergo meiosis, each producing a tetrad of four haploid **microspores**. Each microspore then develops, by mitosis, into a mature **pollen grain** — the male gametophyte, reduced to just two or three cells: a large **tube cell** (which will grow the pollen tube) and, contained within it, a smaller **generative cell** (which divides once, either before or after pollen release depending on species, to produce two non-motile **sperm cells** carried down the tube — the structural replacement, in flowering plants, for the free-swimming sperm of earlier land-plant lineages). The tough, patterned outer wall (**exine**, sporopollenin-based, highly resistant to decay — the reason fossil pollen persists well enough for the aperture-pattern comparison on [Monocot vs Dicot Comparative Anatomy](../monocot-dicot-comparative-anatomy/)) and a thinner inner wall (**intine**) together protect the pollen grain during transport between anther and stigma.
+
+![Full pollen development sequence: pollen mother cells → tetrads (meiosis I/II) → free microspores → bicellular pollen grain (exine/intine, vacuole, generative cell, vegetative nucleus) → mature tricellular pollen grain (sperm cells, vegetative nucleus, pore) → germinating pollen grain with pollen tube.](/PLANTANATPICS/mature-pollen-grain-structure.webp)
+*Source: ResearchGate, fig. 1, "Scheme of Microsporogenesis" — confirm licensing basis before public deployment; journal figure, open-access status not confirmed. Far exceeds the spec, tracing the entire process from mother cell through germination rather than just the mature grain's structure.*
 
 ### Ovule Structure and Megasporogenesis
 
 An **ovule** attaches to the ovary wall (specifically to the **placenta**, the ovary tissue ovules are borne on) by a stalk, the **funiculus**. The bulk of the ovule is the **nucellus** (megasporangium tissue), enclosed by one or two protective **integuments** that leave a small opening, the **micropyle**, at one end — the structural entry point pollen tubes grow through to reach the interior.
 
+![Ovule anatomy: embryo sac, chalaza, nucellus, antipodal cells, polar nuclei, central cell, synergid, egg cells, inner/outer integument, micropyle, hilum, funicle, raphe, and vascular strand all labeled.](/PLANTANATPICS/ovule-longitudinal-section.jpg)
+*Source: Biology Reader, "Ovule" (biologyreader.com) — confirm licensing basis before public deployment. Exceeds the spec, also labeling the full embryo sac contents (covered separately below) within the same figure.*
+
 Within the nucellus, a diploid **megaspore mother cell (megasporocyte)** undergoes meiosis, typically producing four haploid **megaspores**, of which three degenerate and one survives. The surviving megaspore then undergoes three rounds of mitotic division without cytokinesis, followed by cellularization, producing the mature female gametophyte — the **embryo sac**. In the most common developmental pattern (the **Polygonum type**, found in the large majority of angiosperms), the mature embryo sac is **7-celled and 8-nucleate**: one **egg cell** flanked by two **synergid cells** near the micropylar end (the synergids assist pollen tube guidance into the embryo sac), three **antipodal cells** at the opposite (chalazal) end, and a large central cell containing two **polar nuclei** (the only cell with two nuclei, accounting for the 7-cell/8-nucleus discrepancy).
+
+![Polygonum-type embryo sac: filiform apparatus, synergids, vacuole, oosphere (egg cell), polar nuclei, central cell, embryo sac membrane, and three antipodal cells, labeled from the micropylar to the chalazal end.](/PLANTANATPICS/polygonum-embryo-sac.jpg)
+*Source: user-sourced (indiabiologyneet.com) — confirm licensing basis before public deployment; a visible site watermark is repeated across the image, worth noting for the eventual public-deployment pass.*
 
 ### Placentation
 
@@ -48,6 +63,9 @@ The position at which ovules attach inside the ovary (**placentation**) varies s
 | Parietal | Along the outer ovary wall, in an ovary with fused carpels but no complete internal septa |
 | Free-central | On a central column not connected to the ovary wall by septa |
 | Basal | A single ovule at the base of the ovary |
+
+![Six placentation types in ovary cross-section: marginal, parietal, axile, free-central, basal, and superficial (a sixth type beyond the five described in the text).](/PLANTANATPICS/placentation-types.jpg)
+*Source: user-sourced (Facebook educational post) — confirm licensing basis before public deployment, original creator unclear. Includes a bonus sixth type (superficial) beyond the five covered in the table above.*
 
 ### Double Fertilization
 
@@ -84,14 +102,7 @@ A pollen grain landing on a receptive stigma germinates a **pollen tube**, which
 
 {{< iframe src="/double-fertilization-clickthrough.html" title="Double fertilization click-through" height="460px" >}}
 
-**Static**
-
-- Complete flower longitudinal section, all four whorls and their component parts labeled
-- Anther cross-section: two thecae, four pollen sacs, tapetum labeled
-- Mature pollen grain structure: exine/intine, tube cell, generative cell/sperm cells
-- Ovule longitudinal section: funiculus, integuments, micropyle, nucellus, embryo sac labeled
-- Polygonum-type embryo sac detail: egg cell, synergids, antipodals, polar nuclei in the central cell
-- The five placentation types drawn in ovary cross-section, side by side
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
 
 ## Practice Problems
 

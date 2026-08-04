@@ -19,9 +19,15 @@ The cytoskeleton is not a static scaffold but a dynamic, constantly remodelling 
 
 The thinnest cytoskeletal filament (~7 nm diameter), built from polymerised globular **actin** subunits into a twisted double-helical filament. Actin filaments are **polar** — one end (the **barbed/plus end**) grows faster than the other (the **pointed/minus end**), and this polarity is functionally essential, both for directional motor movement (below) and for the treadmilling dynamics (net addition at the plus end, net loss at the minus end, giving apparent filament movement without net length change) that drive processes like the leading edge of a crawling cell. Microfilaments concentrate just under the plasma membrane (the cell cortex), providing mechanical support for cell shape, forming the core of microvilli, and — assembled with myosin — generating the contractile force of the cleavage furrow during cytokinesis and of muscle sarcomeres (see [Cell Cycle, Mitosis & Meiosis](../cell-cycle-mitosis-meiosis/) for cytokinesis).
 
+![Microtubules (25 nm, columns of tubulin dimers), microfilaments (7 nm, twisted actin subunit chain), and intermediate filaments (8-12 nm, coiled fibrous keratin subunits) shown at consistent relative scale with matching fluorescence micrographs of each filament type in cultured cells](/MCBBPICS/three-filament-types-diameter-comparison.png)
+*Source: pressbooks.lib.vt.edu — confirm licensing basis before public deployment*
+
 ### Microtubules
 
 The thickest cytoskeletal filament (~25 nm diameter), built from **α/β-tubulin dimers** polymerising into a hollow tube of (typically) 13 protofilaments. Like actin, microtubules are polar (plus and minus ends), and undergo **dynamic instability** — individual microtubules stochastically switch between growth and rapid shrinkage phases, a property directly exploited during mitosis to search-and-capture chromosomes (see [Cell Cycle, Mitosis & Meiosis](../cell-cycle-mitosis-meiosis/)). Microtubules radiate from a **microtubule-organising centre (MTOC)** — the centrosome in most animal cells — with their minus ends typically anchored there and plus ends extending outward. Beyond mitotic spindle formation, microtubules form the structural core of **cilia and flagella** (the 9+2 axoneme arrangement) and serve as the principal long-distance intracellular transport highway.
+
+![Microtubule dynamic instability cycle: a GTP-tubulin cap (red) at the plus end supports continued growth; loss of the cap triggers catastrophe and rapid shrinkage (GDP-tubulin peeling away, blue); a new GTP cap can form again, triggering rescue back into a growth phase](/MCBBPICS/microtubule-dynamic-instability.webp)
+*Source: bio.libretexts.org — confirm licensing basis before public deployment*
 
 ### Intermediate filaments
 
@@ -34,6 +40,9 @@ Three motor protein families, each specific to one filament type and each moving
 - **Myosin** moves along actin filaments, generally toward the plus (barbed) end. Beyond its famous role in muscle contraction (myosin II thick filaments sliding past actin thin filaments — sarcomere shortening), myosin motors also transport vesicles and organelles along cortical actin.
 - **Kinesin** moves along microtubules, generally toward the plus end (i.e., typically outward from the MTOC, toward the cell periphery) — the principal motor for **anterograde** transport (e.g. moving vesicles/organelles from a neuron's cell body out along the axon).
 - **Dynein** moves along microtubules toward the minus end — **retrograde** transport (back toward the cell body/MTOC), and also the motor responsible for the coordinated beating of cilia and flagella, sliding adjacent microtubule doublets in the axoneme past each other.
+
+![Dynein and kinesin bound to the same microtubule, oriented toward opposite ends: dynein's head and tail domains face the minus end, kinesin's head and tail domains face the plus end](/MCBBPICS/kinesin-dynein-directionality.png)
+*Source: user-sourced (unspecified) — confirm licensing basis before public deployment. Note: shows the two motors' opposite orientation on a microtubule but does not depict the centrosome/MTOC context from the original spec.*
 
 All three convert the chemical energy of ATP hydrolysis into a cycle of conformational changes (a "power stroke") that walks the motor along its filament track, and all three can carry cargo (vesicles, organelles, chromosomes via kinetochore-associated dynein) attached via adaptor proteins — the specific *direction* of net cargo movement in a cell is therefore determined by which motor is attached, not by the track alone.
 
@@ -55,13 +64,13 @@ All three convert the chemical energy of ATP hydrolysis into a cycle of conforma
 
 **Interactive**
 
-- *(built later — see project workflow)* A motor protein "walk" animator: select a motor (myosin/kinesin/dynein) and watch it step along its corresponding filament toward its characteristic end, carrying a cargo vesicle — makes the plus-end/minus-end direction rule visually concrete.
+- A motor protein "walk" animator: select a motor (myosin/kinesin/dynein) and watch it step along its corresponding filament toward its characteristic end, carrying a cargo vesicle — makes the plus-end/minus-end direction rule visually concrete.
+
+{{< iframe src="/motor-protein-walk-animator.html" title="Motor Protein Walk Animator" height="360px" >}}
 
 **Static**
 
-- Side-by-side diagram of the three filament types at consistent relative scale (diameter comparison)
-- Microtubule dynamic instability diagram (growth vs. catastrophe/shrinkage phases)
-- Kinesin/dynein directionality diagram along a microtubule radiating from the centrosome
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
 
 ## Practice Problems
 

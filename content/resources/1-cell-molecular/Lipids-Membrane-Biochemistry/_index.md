@@ -19,6 +19,9 @@ Lipids are defined by a shared physical property (poor water solubility) rather 
 
 A fatty acid is a long hydrocarbon chain terminating in a carboxylic acid group. **Saturated** fatty acids have no carbon-carbon double bonds, allowing the chain to lie fully extended and pack tightly against neighbouring chains via van der Waals interactions — this tight packing is why saturated fats are typically solid at room temperature. **Unsaturated** fatty acids contain one (monounsaturated) or more (polyunsaturated) C=C double bonds, almost always in the **cis** configuration in natural lipids, which introduces a rigid ~30° kink in the chain. That kink prevents tight packing, lowering the melting point — unsaturated fats are typically liquid at room temperature.
 
+![Saturated stearic acid shown as a fully extended straight chain; unsaturated cis-oleic acid shown with a sharp kink at its single C=C double bond; unsaturated trans-oleic acid shown as a nearly straight chain despite also having one C=C double bond, illustrating that it is specifically the cis configuration, not unsaturation alone, that causes the packing-disrupting kink](/MCBBPICS/saturated-vs-unsaturated-fatty-acid.png)
+*Source: tutorchase.com — confirm licensing basis before public deployment*
+
 ### Triglycerides: pure energy storage
 
 A **triglyceride** (triacylglycerol) is glycerol esterified to three fatty acids. Because the molecule is almost entirely hydrocarbon by mass and carries no polar head group, triglycerides pack into anhydrous, extremely energy-dense storage droplets — roughly twice the energy density per gram of glycogen, which by contrast must be stored hydrated (each gram of glycogen holds substantial associated water), making fat the far more mass-efficient long-term reserve, at the cost of slower mobilisation kinetics than glycogen.
@@ -29,6 +32,9 @@ A **phospholipid** replaces one fatty acid of a triglyceride-like backbone with 
 
 **Head group identity determines membrane leaflet asymmetry and signalling function**, not just electrostatics — e.g. phosphatidylserine is normally kept on the cytoplasmic leaflet by ATP-dependent flippases, and its appearance on the *outer* leaflet is a recognised "eat me" signal for phagocytes during apoptosis (see [Cell Junctions, Extracellular Matrix & Cell Death](../cell-junctions-ecm-cell-death/)).
 
+![Phospholipid structure: a hydrophilic head made of a variable R group, phosphate, and glycerol backbone, connected to two hydrophobic fatty acid tails — one saturated (straight) and one unsaturated (kinked)](/MCBBPICS/phospholipid-structure-diagram.jpg)
+*Source: bio.libretexts.org (Boundless Biology) — confirm licensing basis before public deployment*
+
 ### Cholesterol and membrane fluidity
 
 Cholesterol is a rigid, planar four-ring sterol that intercalates between phospholipid tails, with its single polar hydroxyl oriented toward the bilayer surface. Its effect on fluidity is **temperature-dependent and bidirectional**:
@@ -37,6 +43,12 @@ Cholesterol is a rigid, planar four-ring sterol that intercalates between phosph
 - **Below the phase-transition temperature** (membrane tending toward a rigid, ordered gel state): cholesterol prevents fatty acid tails from packing into a fully ordered crystalline array, *increasing* fluidity.
 
 Net effect: cholesterol acts as a **fluidity buffer**, narrowing the range of temperatures over which the membrane's physical state changes sharply — a frequently mis-simplified concept ("cholesterol makes membranes more fluid") that is only half correct.
+
+![Membrane fluidity vs. temperature for a membrane with and without cholesterol: without cholesterol (magenta), fluidity rises sharply through the phase-transition temperature Tm; with cholesterol (blue), the curve is flattened — less fluid than the cholesterol-free membrane above Tm, more fluid below Tm — illustrating cholesterol's bidirectional buffering effect](/MCBBPICS/cholesterol-membrane-fluidity.jpg)
+*Source: Chegg homework-help question — confirm licensing basis before public deployment*
+
+![Molecular-level membrane order at two temperature regimes relative to the phospholipid melting temperature: with cholesterol present (red), phospholipid tails are held in a more uniformly ordered state at both T > melting T and T >>> melting T, compared to the more variably ordered/disordered arrangement without cholesterol, shown alongside fluorescent membrane-order probes (Laurdan, Patman) in their membrane-embedded vs. water-exposed states](/MCBBPICS/cholesterol-membrane-fluidity2.jpg)
+*Source: ScienceDirect (research article) — confirm licensing basis before public deployment. Note: a more advanced, order/disorder-probe-based view of the same cholesterol-buffering concept, supplementing the fluidity-vs-temperature graph above.*
 
 ### Lipids as signalling molecules
 
@@ -62,13 +74,13 @@ Not all lipid biology is structural. **Eicosanoids** (prostaglandins, thromboxan
 
 **Interactive**
 
-- *(built later — see project workflow)* A phospholipid bilayer self-assembly simulator: scatter phospholipid icons in a 2D "water" field and animate their spontaneous reorganisation into a bilayer, illustrating the hydrophobic-effect argument without requiring a thermodynamics derivation.
+- A phospholipid bilayer self-assembly simulator: scatter phospholipid icons in a 2D "water" field and animate their spontaneous reorganisation into a bilayer, illustrating the hydrophobic-effect argument without requiring a thermodynamics derivation.
+
+{{< iframe src="/phospholipid-bilayer-self-assembly.html" title="Phospholipid Bilayer Self-Assembly" height="420px" >}}
 
 **Static**
 
-- Saturated vs. unsaturated fatty acid chain diagram showing the cis-double-bond kink and resulting packing difference
-- Phospholipid structure diagram labelling head group, phosphate, glycerol backbone, and two fatty acid tails
-- Cholesterol intercalated between phospholipid tails, with the bidirectional fluidity effect illustrated at two temperatures
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
 
 ## Practice Problems
 

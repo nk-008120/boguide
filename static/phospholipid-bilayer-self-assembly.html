@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phospholipid Bilayer Self-Assembly | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  #assembleBtn { display: block; margin: 0 auto 10px; background: #2d6a4f; color: #fff; border: none; border-radius: 999px; padding: 10px 24px; font-size: 0.85rem; cursor: pointer; }
+  #assembleBtn:hover { background: #1a472a; }
+  #waterSvg { width: 100%; height: 220px; background: #eff6ff; border-radius: 14px; }
+  #note { text-align: center; margin-top: 10px; font-size: 0.84rem; color: #4b5563; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Phospholipid Self-Assembly</h3>
+  <div class="subtitle">Click "Scatter" to randomise phospholipids in water, then "Assemble" to watch them spontaneously reorganise into a bilayer — tails burying away from water, heads facing out.</div>
+  <div style="display:flex; gap:8px; justify-content:center; margin-bottom:10px;">
+    <button id="scatterBtn" style="background:#f8fafc;border:2px solid #e2e8f0;border-radius:999px;padding:8px 18px;font-size:0.82rem;cursor:pointer;">Scatter</button>
+    <button id="assembleBtn">Assemble into bilayer</button>
+  </div>
+  <svg id="waterSvg" viewBox="0 0 400 220"></svg>
+  <div id="note">Click Scatter to begin.</div>
+</div>
+<script>
+(function(){
+  var ns = 'http://www.w3.org/2000/svg';
+  var svg = document.getElementById('waterSvg');
+  var note = document.getElementById('note');
+  var N = 14;
+  var lipids = [];
+
+  function randomPositions(){
+    lipids = [];
+    for (var i = 0; i < N; i++){
+      lipids.push({
+        x: 30 + Math.random() * 340,
+        y: 20 + Math.random() * 180,
+        angle: Math.random() * 360
+      });
+    }
+  }
+
+  function bilayerPositions(){
+    var topY = 70, botY = 150;
+    var xs = [];
+    for (var i = 0; i < N/2; i++){ xs.push(30 + i * (340/(N/2 - 1))); }
+    lipids = [];
+    xs.forEach(function(x){
+      lipids.push({ x: x, y: topY, angle: 90, top: true });
+    });
+    xs.forEach(function(x){
+      lipids.push({ x: x, y: botY, angle: 270, top: false });
+    });
+  }
+
+  function drawLipid(g, l){
+    var head = document.createElementNS(ns, 'circle');
+    var rad = l.angle * Math.PI / 180;
+    var tailLen = 30;
+    var hx = l.x, hy = l.y;
+    var tx = l.x + tailLen * Math.cos(rad);
+    var ty = l.y + tailLen * Math.sin(rad);
+    var line = document.createElementNS(ns, 'line');
+    line.setAttribute('x1', hx); line.setAttribute('y1', hy);
+    line.setAttribute('x2', tx); line.setAttribute('y2', ty);
+    line.setAttribute('stroke', '#f59e0b'); line.setAttribute('stroke-width', '3'); line.setAttribute('stroke-linecap','round');
+    g.appendChild(line);
+    head.setAttribute('cx', hx); head.setAttribute('cy', hy); head.setAttribute('r', 6);
+    head.setAttribute('fill', '#2563eb');
+    g.appendChild(head);
+  }
+
+  function render(){
+    svg.innerHTML = '';
+    var g = document.createElementNS(ns, 'g');
+    lipids.forEach(function(l){ drawLipid(g, l); });
+    svg.appendChild(g);
+  }
+
+  document.getElementById('scatterBtn').addEventListener('click', function(){
+    randomPositions();
+    render();
+    note.textContent = 'Scattered randomly in water — heads (blue) and tails (orange) point every direction.';
+  });
+
+  document.getElementById('assembleBtn').addEventListener('click', function(){
+    bilayerPositions();
+    render();
+    note.textContent = 'Bilayer formed: hydrophilic heads face the aqueous environment on both sides; hydrophobic tails bury inward, away from water — minimising disruption to water\'s hydrogen-bond network.';
+  });
+
+  randomPositions();
+  render();
+})();
+</script>
+</body>
+</html>
