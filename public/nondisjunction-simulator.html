@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nondisjunction Simulator | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .modes { display: flex; gap: 8px; margin-bottom: 1.2rem; flex-wrap: wrap; }
+  .mode-btn {
+    background: #f1f5f9;
+    color: #334155;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .mode-btn.active { background: #2d6a4f; color: #fff; }
+  .stage-label { font-size: 0.72rem; font-weight: 700; color: #94a3b8; text-transform: uppercase; text-align: center; margin: 6px 0; }
+  .row { display: flex; justify-content: center; gap: 24px; align-items: flex-start; }
+  .cell-icon { display: flex; flex-direction: column; align-items: center; }
+  .cell-circle { width: 60px; height: 60px; border-radius: 50%; border: 2px solid #94a3b8; display: flex; align-items: center; justify-content: center; gap: 3px; flex-wrap: wrap; padding: 4px; background: #f8fafc; }
+  .chromatid { width: 8px; height: 26px; border-radius: 4px; }
+  .cell-tag { font-size: 0.68rem; font-weight: 700; margin-top: 5px; text-align: center; max-width: 90px; }
+  .tag-normal { color: #166534; }
+  .tag-abnormal { color: #991b1b; }
+  .note { font-size: 0.83rem; color: #4b5563; margin-top: 16px; background: #f1f5f9; border-radius: 12px; padding: 10px 14px; }
+  .legend { font-size: 0.78rem; color: #4b5563; display: flex; gap: 16px; justify-content: center; margin-top: 10px; }
+  .legend span { display: inline-flex; align-items: center; }
+  .legend .dot { width: 10px; height: 16px; border-radius: 3px; margin-right: 5px; display:inline-block; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Nondisjunction Simulator</h3>
+  <div class="subtitle">Toggle where nondisjunction occurs and watch how it changes the chromosome count — and identity — of the resulting gametes.</div>
+  <div class="modes">
+    <button class="mode-btn active" id="m-normal">Normal meiosis</button>
+    <button class="mode-btn" id="m-mi">Nondisjunction at Meiosis I</button>
+    <button class="mode-btn" id="m-mii">Nondisjunction at Meiosis II</button>
+  </div>
+
+  <div class="stage-label">Gametes (after Meiosis II)</div>
+  <div class="row" id="gameteRow"></div>
+
+  <div class="legend">
+    <span><span class="dot" style="background:#1d70a2;"></span>Homolog 1 (either chromatid)</span>
+    <span><span class="dot" style="background:#d9534f;"></span>Homolog 2 (either chromatid)</span>
+  </div>
+  <div class="note" id="explainNote"></div>
+</div>
+<script>
+(function(){
+  var modes = {
+    normal: {
+      gametes: [ ['blue'], ['blue'], ['red'], ['red'] ],
+      explain: 'Meiosis I separates the homologs; meiosis II separates sister chromatids. Every gamete ends up with exactly one copy (n) — one chromatid from one homolog.'
+    },
+    mi: {
+      gametes: [ ['blue','red'], ['blue','red'], [], [] ],
+      explain: 'Homologs fail to separate at meiosis I — one secondary cell gets both homologs, the other gets neither. Meiosis II then proceeds normally, so two gametes end up with an extra copy made of two DIFFERENT homologs (n+1), and two gametes end up missing the chromosome entirely (n−1).'
+    },
+    mii: {
+      gametes: [ ['blue','blue'], [], ['red'], ['red'] ],
+      explain: 'Meiosis I is normal, but sister chromatids fail to separate at meiosis II in one of the two secondary cells. One gamete ends up with an extra copy made of two IDENTICAL sister chromatids of the same homolog (n+1), one gamete is missing the chromosome (n−1), and the other secondary cell\'s meiosis II proceeds normally, producing two ordinary (n) gametes.'
+    }
+  };
+  var colorMap = { blue: '#1d70a2', red: '#d9534f' };
+
+  function renderGametes(mode){
+    var def = modes[mode];
+    var row = document.getElementById('gameteRow');
+    row.innerHTML = '';
+    def.gametes.forEach(function(g){
+      var wrap = document.createElement('div');
+      wrap.className = 'cell-icon';
+      var circle = document.createElement('div');
+      circle.className = 'cell-circle';
+      g.forEach(function(color){
+        var bar = document.createElement('div');
+        bar.className = 'chromatid';
+        bar.style.background = colorMap[color];
+        circle.appendChild(bar);
+      });
+      wrap.appendChild(circle);
+      var tag = document.createElement('div');
+      var count = g.length;
+      var isNormal = count === 1;
+      tag.className = 'cell-tag ' + (isNormal ? 'tag-normal' : 'tag-abnormal');
+      var countLabel = count === 0 ? 'n−1 (missing)' : (count === 1 ? 'n (normal)' : 'n+1 (extra)');
+      var identityLabel = '';
+      if (count === 2){
+        identityLabel = (g[0] === g[1]) ? ' — 2 identical sister chromatids' : ' — 2 different homologs';
+      }
+      tag.textContent = countLabel + identityLabel;
+      wrap.appendChild(tag);
+      row.appendChild(wrap);
+    });
+    document.getElementById('explainNote').textContent = def.explain;
+  }
+
+  var btns = { normal: 'm-normal', mi: 'm-mi', mii: 'm-mii' };
+  Object.keys(btns).forEach(function(k){
+    document.getElementById(btns[k]).addEventListener('click', function(){
+      Object.keys(btns).forEach(function(kk){ document.getElementById(btns[kk]).classList.toggle('active', kk===k); });
+      renderGametes(k);
+    });
+  });
+
+  renderGametes('normal');
+})();
+</script>
+</body>
+</html>

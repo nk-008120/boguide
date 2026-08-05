@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sex-Determination System Comparator | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .modes { display: flex; gap: 8px; margin-bottom: 1.2rem; flex-wrap: wrap; }
+  .mode-btn {
+    background: #f1f5f9;
+    color: #334155;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .mode-btn.active { background: #2d6a4f; color: #fff; }
+  .diagram { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .row { display: flex; gap: 40px; justify-content: center; }
+  .person { display: flex; flex-direction: column; align-items: center; }
+  .person-label { font-size: 0.8rem; font-weight: 700; color: #334155; margin-bottom: 6px; }
+  .chrom-row { display: flex; gap: 4px; }
+  .chrom { width: 16px; height: 40px; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 0.7rem; font-weight: 700; }
+  .chrom.blank { background: repeating-linear-gradient(45deg, #e2e8f0, #e2e8f0 3px, #f8fafc 3px, #f8fafc 6px); color: #94a3b8; }
+  .arrow-down { font-size: 1.4rem; color: #94a3b8; margin: 2px 0; }
+  .note { font-size: 0.85rem; color: #4b5563; margin-top: 14px; background: #f1f5f9; border-radius: 12px; padding: 10px 14px; }
+  .legend { font-size: 0.78rem; color: #4b5563; margin-top: 10px; display:flex; gap: 16px; justify-content:center; }
+  .legend span { display: inline-flex; align-items: center; }
+  .legend .dot { width: 12px; height: 12px; border-radius: 3px; margin-right: 5px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Sex-Determination System Comparator</h3>
+  <div class="subtitle">Select a system to see the parental chromosome combinations and which parent contributes which chromosome to offspring of each sex.</div>
+  <div class="modes">
+    <button class="mode-btn active" id="m-xy">XY (mammals, Drosophila)</button>
+    <button class="mode-btn" id="m-zw">ZW (birds)</button>
+    <button class="mode-btn" id="m-xo">XO (grasshoppers)</button>
+    <button class="mode-btn" id="m-hd">Haplodiploidy (bees, ants)</button>
+  </div>
+  <div class="diagram">
+    <div class="row" id="parentRow"></div>
+    <div class="arrow-down">↓ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ↓</div>
+    <div class="row" id="offspringRow"></div>
+  </div>
+  <div class="legend">
+    <span><span class="dot" style="background:#f472b6;"></span>From mother</span>
+    <span><span class="dot" style="background:#1d70a2;"></span>From father</span>
+  </div>
+  <div class="note" id="explainNote"></div>
+</div>
+<script>
+(function(){
+  var MOTHER = '#f472b6', FATHER = '#1d70a2';
+  var modes = {
+    xy: {
+      parents: [
+        { label: 'Mother (XX)', chroms: [{t:'X',c:MOTHER},{t:'X',c:MOTHER}] },
+        { label: 'Father (XY)', chroms: [{t:'X',c:FATHER},{t:'Y',c:FATHER}] }
+      ],
+      offspring: [
+        { label: 'Daughter (XX)', chroms: [{t:'X',c:MOTHER},{t:'X',c:FATHER}] },
+        { label: 'Son (XY)', chroms: [{t:'X',c:MOTHER},{t:'Y',c:FATHER}] }
+      ],
+      explain: 'Every offspring receives an X from the mother. Sons receive a Y from the father; daughters receive an X from the father instead — the father determines offspring sex.'
+    },
+    zw: {
+      parents: [
+        { label: 'Mother (ZW)', chroms: [{t:'Z',c:MOTHER},{t:'W',c:MOTHER}] },
+        { label: 'Father (ZZ)', chroms: [{t:'Z',c:FATHER},{t:'Z',c:FATHER}] }
+      ],
+      offspring: [
+        { label: 'Son (ZZ)', chroms: [{t:'Z',c:MOTHER},{t:'Z',c:FATHER}] },
+        { label: 'Daughter (ZW)', chroms: [{t:'Z',c:FATHER},{t:'W',c:MOTHER}] }
+      ],
+      explain: 'Every offspring receives a Z from the father. Daughters receive a W from the mother; sons receive a Z from the mother instead — the mother determines offspring sex, the reverse of the XY system.'
+    },
+    xo: {
+      parents: [
+        { label: 'Mother (XX)', chroms: [{t:'X',c:MOTHER},{t:'X',c:MOTHER}] },
+        { label: 'Father (X0)', chroms: [{t:'X',c:FATHER}] }
+      ],
+      offspring: [
+        { label: 'Daughter (XX)', chroms: [{t:'X',c:MOTHER},{t:'X',c:FATHER}] },
+        { label: 'Son (X0)', chroms: [{t:'X',c:MOTHER},{t:'',c:'',blank:true}] }
+      ],
+      explain: 'The father has no second sex chromosome at all, so he produces two sperm types: X-bearing and chromosome-less. An X-bearing sperm makes a daughter (XX); a chromosome-less sperm makes a son (X0) — the mother always contributes one X either way.'
+    },
+    hd: {
+      parents: [
+        { label: 'Queen (diploid, 2n)', chroms: [{t:'',c:MOTHER},{t:'',c:MOTHER},{t:'',c:MOTHER}] },
+        { label: 'Drone (haploid, n)', chroms: [{t:'',c:FATHER}] }
+      ],
+      offspring: [
+        { label: 'Female — fertilized egg (diploid, 2n)', chroms: [{t:'',c:MOTHER},{t:'',c:MOTHER},{t:'',c:MOTHER},{t:'',c:FATHER}] },
+        { label: 'Male — unfertilized egg (haploid, n)', chroms: [{t:'',c:MOTHER},{t:'',c:MOTHER},{t:'',c:MOTHER}] }
+      ],
+      explain: 'Sex is set by ploidy, not a sex chromosome. A fertilized egg (mother\'s set + father\'s set) develops as a diploid female; an unfertilized egg (mother\'s set only — the father contributes nothing) develops as a haploid male.'
+    }
+  };
+  var btns = { xy: 'm-xy', zw: 'm-zw', xo: 'm-xo', hd: 'm-hd' };
+
+  function renderPerson(container, person){
+    var wrap = document.createElement('div');
+    wrap.className = 'person';
+    var lbl = document.createElement('div');
+    lbl.className = 'person-label';
+    lbl.textContent = person.label;
+    wrap.appendChild(lbl);
+    var row = document.createElement('div');
+    row.className = 'chrom-row';
+    person.chroms.forEach(function(c){
+      var el = document.createElement('div');
+      el.className = 'chrom' + (c.blank ? ' blank' : '');
+      if (!c.blank) el.style.background = c.c;
+      el.textContent = c.t;
+      row.appendChild(el);
+    });
+    wrap.appendChild(row);
+    container.appendChild(wrap);
+  }
+
+  function render(mode){
+    var def = modes[mode];
+    var parentRow = document.getElementById('parentRow');
+    var offspringRow = document.getElementById('offspringRow');
+    parentRow.innerHTML = '';
+    offspringRow.innerHTML = '';
+    def.parents.forEach(function(p){ renderPerson(parentRow, p); });
+    def.offspring.forEach(function(o){ renderPerson(offspringRow, o); });
+    document.getElementById('explainNote').textContent = def.explain;
+  }
+
+  Object.keys(btns).forEach(function(k){
+    document.getElementById(btns[k]).addEventListener('click', function(){
+      Object.keys(btns).forEach(function(kk){ document.getElementById(btns[kk]).classList.toggle('active', kk===k); });
+      render(k);
+    });
+  });
+
+  render('xy');
+})();
+</script>
+</body>
+</html>
