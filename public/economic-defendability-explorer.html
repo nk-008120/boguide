@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Economic Defendability Threshold Explorer | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  label { font-size: 0.85rem; font-weight: 600; color: #334155; display:block; margin-bottom: 6px; margin-top: 12px; }
+  input[type=range] { width: 100%; }
+  svg { margin-top: 14px; }
+  .verdict { margin-top: 12px; text-align: center; font-size: 0.95rem; font-weight: 700; padding: 10px; border-radius: 10px; }
+  .verdict.defend { background: #dcfce7; color: #166534; }
+  .verdict.nodefend { background: #fee2e2; color: #991b1b; }
+  .note { font-size: 0.8rem; color: #4b5563; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Economic Defendability Threshold Explorer</h3>
+  <div class="subtitle">Set how dense/predictable the resource is and how costly defense would be — see whether defending is predicted to pay off.</div>
+
+  <label for="densitySlider">Resource density &amp; predictability: <span id="densityVal">50%</span></label>
+  <input type="range" id="densitySlider" min="0" max="100" value="50">
+
+  <label for="costSlider">Cost of defending (energy + risk): <span id="costVal">50%</span></label>
+  <input type="range" id="costSlider" min="0" max="100" value="50">
+
+  <svg id="barSvg" viewBox="0 0 400 90" width="100%" height="90">
+    <text x="0" y="14" font-size="11" fill="#334155">Benefit of exclusivity</text>
+    <rect x="0" y="20" width="400" height="16" rx="8" fill="#f1f5f9"/>
+    <rect id="benefitBar" x="0" y="20" width="200" height="16" rx="8" fill="#2d6a4f"/>
+    <text x="0" y="62" font-size="11" fill="#334155">Cost of defense</text>
+    <rect x="0" y="68" width="400" height="16" rx="8" fill="#f1f5f9"/>
+    <rect id="costBar" x="0" y="68" width="200" height="16" rx="8" fill="#d9534f"/>
+  </svg>
+
+  <div class="verdict" id="verdict"></div>
+  <div class="note">Illustrative model: benefit of exclusivity scales with resource density × predictability; defense is favored whenever that benefit exceeds the energetic/risk cost of defending it (Jerram Brown's economic defendability logic) — e.g. a sunbird defending a dense flower patch, but abandoning defense once flowers thin out.</div>
+</div>
+<script>
+(function(){
+  var densitySlider = document.getElementById('densitySlider');
+  var costSlider = document.getElementById('costSlider');
+  var benefitBar = document.getElementById('benefitBar');
+  var costBar = document.getElementById('costBar');
+  var verdict = document.getElementById('verdict');
+
+  function update(){
+    var density = parseInt(densitySlider.value, 10);
+    var cost = parseInt(costSlider.value, 10);
+    document.getElementById('densityVal').textContent = density + '%';
+    document.getElementById('costVal').textContent = cost + '%';
+
+    benefitBar.setAttribute('width', density / 100 * 400);
+    costBar.setAttribute('width', cost / 100 * 400);
+
+    if (density > cost){
+      verdict.className = 'verdict defend';
+      verdict.textContent = 'Benefit exceeds cost — territorial defense is predicted to be favored.';
+    } else if (density < cost) {
+      verdict.className = 'verdict nodefend';
+      verdict.textContent = 'Cost exceeds benefit — defense is predicted NOT to be worth it.';
+    } else {
+      verdict.className = 'verdict nodefend';
+      verdict.textContent = 'Right at the threshold — defense barely breaks even.';
+    }
+  }
+
+  densitySlider.addEventListener('input', update);
+  costSlider.addEventListener('input', update);
+  update();
+})();
+</script>
+</body>
+</html>

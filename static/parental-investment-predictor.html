@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parental Investment Asymmetry Predictor | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  label { font-size: 0.85rem; font-weight: 600; color: #334155; display:block; margin-bottom: 6px; margin-top: 14px; }
+  input[type=range] { width: 100%; }
+  .predict {
+    background: #f1f5f9;
+    border-radius: 14px;
+    padding: 14px;
+    margin-top: 16px;
+    font-size: 0.92rem;
+    text-align: center;
+  }
+  .predict b { color: #1a472a; font-size: 1.05rem; }
+  .examples { font-size: 0.78rem; color: #4b5563; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Parental Investment Asymmetry Predictor</h3>
+  <div class="subtitle">Set each sex's relative investment per offspring — the tool predicts which sex is expected to be choosier and which is expected to compete more intensely for mates.</div>
+
+  <label for="maleSlider">Male investment: <span id="maleVal">20</span></label>
+  <input type="range" id="maleSlider" min="0" max="100" value="20">
+
+  <label for="femaleSlider">Female investment: <span id="femaleVal">80</span></label>
+  <input type="range" id="femaleSlider" min="0" max="100" value="80">
+
+  <div class="predict" id="predictBox">Female invests more → predicted <b>choosy</b> sex; male predicted to <b>compete</b> more.</div>
+  <div class="examples" id="examples">Typical of most mammals (gestation + lactation are obligate female costs).</div>
+</div>
+<script>
+(function(){
+  var maleSlider = document.getElementById('maleSlider');
+  var femaleSlider = document.getElementById('femaleSlider');
+  var maleVal = document.getElementById('maleVal');
+  var femaleVal = document.getElementById('femaleVal');
+  var predictBox = document.getElementById('predictBox');
+  var examples = document.getElementById('examples');
+
+  function update(){
+    var m = parseInt(maleSlider.value, 10);
+    var f = parseInt(femaleSlider.value, 10);
+    maleVal.textContent = m;
+    femaleVal.textContent = f;
+
+    var diff = Math.abs(m - f);
+    if (diff <= 8){
+      predictBox.innerHTML = 'Roughly equal investment → weak sex-role differentiation predicted; both sexes moderately choosy and moderately competitive.';
+      examples.textContent = 'Some monogamous biparental-care species approach this, e.g. many songbirds where both parents feed nestlings.';
+    } else if (f > m){
+      predictBox.innerHTML = 'Female invests more → predicted <b>choosy</b> sex: female. Predicted <b>competing</b> sex: male.';
+      examples.textContent = 'Typical of most mammals (gestation + lactation are obligate female costs) — e.g. elephant seals, red deer.';
+    } else {
+      predictBox.innerHTML = 'Male invests more → predicted <b>choosy</b> sex: male. Predicted <b>competing</b> sex: female. (Sex-role reversal.)';
+      examples.textContent = 'Matches phalaropes (male alone incubates) and pipefish/seahorses (male broods eggs in a pouch).';
+    }
+  }
+
+  maleSlider.addEventListener('input', update);
+  femaleSlider.addEventListener('input', update);
+  update();
+})();
+</script>
+</body>
+</html>

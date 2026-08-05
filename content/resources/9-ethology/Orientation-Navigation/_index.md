@@ -19,6 +19,10 @@ Where [Animal Communication](../Animal-Communication/) covers signals passed bet
 Both are simple, largely innate orientation responses to an environmental gradient, but differ in whether movement direction is tied to the stimulus direction:
 
 - **Kinesis** is a change in movement *rate* or *turning frequency* in response to stimulus intensity, without the movement being directed toward or away from the stimulus source — the standard example is a woodlouse (*Porcellio*), which increases its turning rate in dry conditions and decreases it in humid conditions, a purely rate-based response that statistically keeps the animal in humid microhabitats without ever "steering" toward humidity as such.
+
+![Woodlouse humidity-choice apparatus (a petri dish half-covered by a water-absorbing substance under mesh) and a graph of the number of woodlice not moving vs. relative humidity, rising sharply from low double digits at low humidity to consistently 60-75 at higher humidity.](/ETHOLOGYPICS/woodlouse-humidity-kinesis-diagram.jpg)
+*Source: exam/textbook figure (specific origin not stated by submitter) — confirm licensing basis before public deployment. Plots "number not moving" directly, the real experimental measure behind the reduced-activity kinesis response described in the text.*
+
 - **Taxis** is movement *directed* toward or away from a stimulus source, named by modality and direction: **phototaxis** (light), **chemotaxis** (chemical gradient), **geotaxis** (gravity), **rheotaxis** (water current), each further labeled positive (toward) or negative (away) — e.g. positive rheotaxis in stream fish that orient and swim against the current to avoid being swept downstream.
 
 ### Piloting, Compass, and Map Senses
@@ -29,20 +33,37 @@ Navigation ability is conventionally split into three mechanisms of increasing s
 - **Compass sense** — maintaining a constant, learned or innate compass bearing (e.g. "fly southwest") without reference to landmarks; sufficient to hold a direction but not to correct for being displaced off-course.
 - **True navigation (map sense)** — determining one's position relative to a goal from an unfamiliar location and computing the correct heading to reach it, requiring some internal "map" of position beyond a simple compass bearing. The strongest evidence for true navigation comes from **clock-shift and displacement experiments**: homing pigeons transported in covered crates to a release site far outside their prior experience, and released with their internal circadian clock experimentally shifted by several hours, show a systematic, predictable *error* in initial heading consistent with using a time-compensated sun compass to compute direction — the predictable error itself is what demonstrates the mechanism, since a purely landmark-piloting bird would show no such systematic deflection.
 
+![Two circular orientation plots from a pigeon clock-shift experiment: (a) clocks advanced 6 hours and (b) clocks delayed 6 hours, each dot representing one bird's initial heading and the arrow the mean vector — the two mean vectors are rotated in opposite directions relative to true north/south.](/ETHOLOGYPICS/homing-pigeon-clock-shift-diagram.jpg)
+*Source: ResearchGate, fig. from a Sun-compass clock-shift study — confirm licensing basis before public deployment. A genuine circular-statistics plot of real clock-shift data, precise match to the concept described.*
+
 ### Celestial and Magnetic Cues
 
 Two sensory systems underlie compass and map navigation in the best-studied species:
 
 - **Sun compass** — using the sun's azimuth position, corrected for time of day via an internal circadian clock (an animal with an artificially shifted internal clock computes the wrong compass bearing by a predictable angle — the basis of the clock-shift experiments above), demonstrated in homing pigeons and in monarch butterfly migration.
 - **Star compass** — used by nocturnally migrating birds; **Stephen Emlen's** planetarium experiments with indigo buntings showed that hand-raised birds exposed only to a planetarium sky rotating around an artificial "north" star oriented their migratory restlessness (**Zugunruhe**) relative to that artificial rotational center rather than to real celestial north, demonstrating the birds learn the star compass from the *pattern of rotation* of the night sky during development rather than being born with fixed knowledge of specific star positions.
+
+![Diagram of the Emlen funnel apparatus, a funnel-shaped cage lined with ink-marking paper that records a bird's preferred hopping/scratching direction as ink marks on the funnel wall.](/ETHOLOGYPICS/emlen-funnel-diagram.svg)
+*Source: Wikipedia, "Emlen funnel" — confirm licensing basis before public deployment. Shows the physical apparatus itself (confirmed via embedded text labels "paper on funnel walls" and "Ink pad," since the SVG was too complex to render visually); does not separately depict the planetarium star-rotation setup described in the text.*
+
 - **Magnetoreception** — sensitivity to the Earth's magnetic field, well documented in migratory birds, sea turtles, and some fish, with **magnetite-based** (iron-oxide crystals proposed in or near the beak/head in birds) and **radical-pair/cryptochrome-based** (a light-dependent chemical mechanism in the eye, proposed as the basis of an "inclination compass" sensitive to field angle rather than polarity) mechanisms both under active study as complementary or alternative pathways.
+
+![Diagram of the proposed cryptochrome-based radical-pair magnetoreception pathway: eye → retina layers (rod/cone/bipolar/ganglion cells) → rod cell outer segment discs → cryptochrome protein positioned alongside rhodopsin in the disc membrane.](/ETHOLOGYPICS/magnetoreception-mechanisms-comparison.jpg)
+*Source: Theoretical and Computational Biophysics Group, Beckman Institute, University of Illinois at Urbana-Champaign (ks.uiuc.edu) — confirm licensing basis before public deployment. Shows only the cryptochrome/radical-pair mechanism in detail; does not show or compare the magnetite-based mechanism as originally requested.*
+
 - **Loggerhead sea turtle (*Caretta caretta*) natal homing** combines several of the above: hatchlings imprint on the magnetic signature of their natal beach and, after years at sea, adult females use magnetic map cues to return to nest at the same coastline — a heavily tested case because it demonstrates true map-like navigation (not just a compass bearing) over an ocean-basin scale with no landmarks available.
+
+![Map of loggerhead sea turtle satellite telemetry locations across the Pacific Ocean, density-shaded by hexagon, spanning from Japan/Taiwan across to the western United States/Mexico and a separate cluster around New Caledonia/Australia.](/ETHOLOGYPICS/loggerhead-turtle-natal-homing-map.webp)
+*Source: seaturtlestatus.org (State of the World's Sea Turtles) — confirm licensing basis before public deployment. Shows aggregate satellite-tracked movement/telemetry density across the Pacific, not specifically a natal-homing route map back to individual nesting beaches as originally requested — still genuine loggerhead movement data relevant to the concept.*
 
 <!-- VIDEO: Homing pigeon clock-shift experiment showing the predictable heading error after a 6-hour internal clock shift — Columba livia — the deflection angle relative to true home direction is the entire evidentiary point and is far clearer as an animated vector diagram than a static one -->
 
 ### Migration
 
 **Migration** is a regular, often seasonal, round-trip movement between two or more habitats, distinguished from simple dispersal by its regularity and directionality. The **ultimate (survival-value) explanation**, per Tinbergen's framework (see [Mechanisms of Behavior](../Mechanisms-of-Behavior/)), is usually resource seasonality and/or breeding-site quality trade-offs — the **Arctic tern (*Sterna paradisaea*)**'s roughly pole-to-pole annual migration (the longest of any animal) lets it exploit summer daylight and food abundance in both hemispheres in turn. Migration carries substantial costs directly testable in a cost-benefit framing: high energetic expenditure (fat reserves built up before departure and depleted en route), significant mortality risk during transit (storms, exhaustion, predation at unfamiliar stopover sites), and time lost that cannot be spent on reproduction or feeding — costs that must be outweighed by the resource/breeding benefit at the destination for migration to be evolutionarily stable, and the reason **partial migration** (only some individuals of a population migrate in a given year, often condition- or age-dependent) is common and itself an active research topic.
+
+![World map with arrows showing a pole-to-pole migratory pattern: routes running from Arctic/high-latitude breeding regions (Canada, Greenland, Northern Europe, Russia) down to Antarctic wintering waters.](/ETHOLOGYPICS/arctic-tern-migration-route-map.png)
+*Source: go2moon.com — confirm licensing basis before public deployment. A generic pole-to-pole migration schematic, not labeled as Arctic tern-specific and without the annual distance figure originally requested, but consistent with the described route.*
 
 ## Comparative Structures
 
@@ -68,18 +89,17 @@ Two sensory systems underlie compass and map navigation in the best-studied spec
 **Interactive**
 
 - **Kinesis vs. taxis simulator (SVG/JS)** — a simulated organism moving on a 2D stimulus gradient, toggled between a kinesis rule (turning rate scales with stimulus intensity, direction random) and a taxis rule (movement directed along the gradient), letting the user see the same starting distribution produce clustering in humid patches under kinesis alone, without any directed steering.
+
+{{< iframe src="/kinesis-taxis-simulator.html" title="Kinesis vs. Taxis Simulator" height="420px" >}}
+
 - **Sun-compass clock-shift predictor (SVG/JS)** — user sets a true home direction and a clock-shift amount (hours), and the tool computes and displays the predicted heading error angle, mirroring the logic of the actual pigeon experiments.
 
-**Static**
+{{< iframe src="/sun-compass-clock-shift-predictor.html" title="Sun-Compass Clock-Shift Predictor" height="420px" >}}
 
-- Woodlouse humidity-kinesis diagram showing turning rate vs. humidity and resulting aggregation pattern
-- Homing pigeon clock-shift experiment diagram: true home direction vs. clock-shifted predicted heading, with the angular error labeled
-- Emlen funnel diagram (the actual apparatus used to record Zugunruhe orientation) with planetarium star-rotation setup
-- World map of loggerhead sea turtle natal homing migration routes
-- Arctic tern pole-to-pole migration route map with approximate annual distance labeled
-- Comparison diagram of magnetite-based vs. cryptochrome/radical-pair magnetoreception proposed mechanisms
+**Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here)*
 
-<!-- VIDEO: Emlen funnel recording indigo bunting Zugunruhe orientation under a rotating planetarium sky — Passerina cyanea — the directional scratching/hopping pattern the funnel captures is the actual data being interpreted and is easier to understand shown in motion -->
+{{< youtube sWZWonlJzSQ >}}
+*Note: this clip shows an orientation-cage experiment with a sharp-tailed sandpiper, not the indigo bunting/planetarium setup described in the text — same general experimental methodology (an orientation cage recording preferred heading), different species and without a confirmed planetarium sky-rotation component.*
 
 ## Practice Problems
 

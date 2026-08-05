@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dichotomous Key Builder/Solver | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .specimens { display: flex; gap: 10px; margin-bottom: 1rem; flex-wrap: wrap; }
+  .spec-card {
+    flex: 1;
+    min-width: 130px;
+    background: #f8fafc;
+    border-radius: 12px;
+    border: 2px solid #cbd5e1;
+    padding: 8px 10px;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+  .spec-card.resolved { border-color: #86efac; background: #f0fdf4; }
+  .spec-card .icon { font-size: 1.6rem; }
+  .spec-card .name { font-weight: 700; margin-top: 4px; }
+  #branches { display: flex; flex-direction: column; gap: 10px; }
+  .branch {
+    border: 2px solid #cbd5e1;
+    border-radius: 14px;
+    padding: 10px 14px;
+  }
+  .branch .members { font-size: 0.78rem; color: #64748b; margin-bottom: 6px; }
+  .branch select {
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 0.82rem;
+    margin-right: 8px;
+  }
+  .branch .flag { color: #991b1b; font-size: 0.78rem; margin-top: 6px; display: none; }
+  .branch .flag.show { display: block; }
+  .branch .resolved-name { font-weight: 700; color: #166534; font-size: 0.85rem; }
+  .sub-branches { margin-top: 8px; padding-left: 14px; border-left: 3px solid #eaf2f8; display: flex; flex-direction: column; gap: 8px; }
+  #status {
+    margin-top: 1rem;
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+    display: none;
+  }
+  #status.show { display: block; }
+  #status.win { background: #dcfce7; color: #166534; }
+  #resetBtn {
+    display: block;
+    margin: 1rem auto 0;
+    background: #2d6a4f;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Dichotomous Key Builder/Solver</h3>
+  <div class="subtitle">Build a working key for these four specimens by choosing one distinguishing character at a time. A choice that doesn't split a group is flagged immediately.</div>
+  <div class="specimens" id="specimenCards"></div>
+  <div id="branches"></div>
+  <div id="status"></div>
+  <button id="resetBtn">Reset</button>
+</div>
+<script>
+(function(){
+  var specimens = [
+    { id: 'spider', name: 'Spider', icon: '🕷️', legs: '8', segments: '2 distinct regions', legsPerSeg: 'n/a' },
+    { id: 'beetle', name: 'Beetle', icon: '🪲', legs: '6', segments: '3 distinct regions', legsPerSeg: 'n/a' },
+    { id: 'centipede', name: 'Centipede', icon: '🐛', legs: 'many', segments: 'many similar segments', legsPerSeg: 'one pair per segment' },
+    { id: 'millipede', name: 'Millipede', icon: '🐛', legs: 'many', segments: 'many similar segments', legsPerSeg: 'two pairs per segment' }
+  ];
+  var characters = [
+    { id: 'legs', label: 'Leg count' },
+    { id: 'segments', label: 'Body regions' },
+    { id: 'legsPerSeg', label: 'Legs per body segment' }
+  ];
+
+  var branchesHost = document.getElementById('branches');
+  var statusEl = document.getElementById('status');
+  var resolvedIds = [];
+
+  function renderCards(resolvedIds){
+    var host = document.getElementById('specimenCards');
+    host.innerHTML = '';
+    specimens.forEach(function(s){
+      var card = document.createElement('div');
+      card.className = 'spec-card' + (resolvedIds.indexOf(s.id) !== -1 ? ' resolved' : '');
+      card.innerHTML = '<div class="icon">' + s.icon + '</div><div class="name">' + s.name + '</div>';
+      host.appendChild(card);
+    });
+  }
+
+  function buildBranch(container, group, usedChars, path){
+    var branchDiv = document.createElement('div');
+    branchDiv.className = 'branch';
+    var membersLine = document.createElement('div');
+    membersLine.className = 'members';
+    membersLine.textContent = 'Couplet ' + (path || '') + ': ' + group.map(function(s){ return s.name; }).join(', ');
+    branchDiv.appendChild(membersLine);
+
+    if (group.length === 1){
+      var resolvedName = document.createElement('div');
+      resolvedName.className = 'resolved-name';
+      resolvedName.textContent = '→ ' + group[0].name + ' ✓';
+      branchDiv.appendChild(resolvedName);
+      container.appendChild(branchDiv);
+      resolvedIds.push(group[0].id);
+      renderCards(resolvedIds);
+      checkComplete();
+      return;
+    }
+
+    var select = document.createElement('select');
+    var placeholder = document.createElement('option');
+    placeholder.value = '';
+    placeholder.textContent = 'Choose a distinguishing character…';
+    select.appendChild(placeholder);
+    characters.forEach(function(c){
+      var o = document.createElement('option');
+      o.value = c.id;
+      o.textContent = c.label;
+      select.appendChild(o);
+    });
+    branchDiv.appendChild(select);
+    var flag = document.createElement('div');
+    flag.className = 'flag';
+    branchDiv.appendChild(flag);
+    var subHost = document.createElement('div');
+    subHost.className = 'sub-branches';
+    branchDiv.appendChild(subHost);
+
+    select.addEventListener('change', function(){
+      var charId = select.value;
+      if (!charId) return;
+      var valuesSeen = {};
+      group.forEach(function(s){ valuesSeen[s[charId]] = true; });
+      var distinctValues = Object.keys(valuesSeen);
+      if (distinctValues.length <= 1){
+        flag.textContent = 'This couplet doesn’t help — every specimen here shares the same value for this character. Pick a different one.';
+        flag.className = 'flag show';
+        return;
+      }
+      flag.className = 'flag';
+      select.disabled = true;
+      subHost.innerHTML = '';
+      distinctValues.sort().forEach(function(val, i){
+        var subGroup = group.filter(function(s){ return s[charId] === val; });
+        var subWrap = document.createElement('div');
+        var label = document.createElement('div');
+        label.style.fontSize = '0.75rem';
+        label.style.fontWeight = '700';
+        label.style.color = '#1d70a2';
+        label.textContent = characters.filter(function(c){return c.id===charId;})[0].label + ' = ' + val + ' →';
+        subWrap.appendChild(label);
+        subHost.appendChild(subWrap);
+        buildBranch(subWrap, subGroup, usedChars.concat([charId]), (path ? path + '.' : '') + (i+1));
+      });
+    });
+
+    container.appendChild(branchDiv);
+  }
+
+  function checkComplete(){
+    var resolved = branchesHost.querySelectorAll('.resolved-name');
+    if (resolved.length === specimens.length){
+      statusEl.className = 'show win';
+      statusEl.textContent = 'Key complete! You identified all ' + specimens.length + ' specimens.';
+    }
+  }
+
+  function reset(){
+    branchesHost.innerHTML = '';
+    statusEl.className = '';
+    statusEl.textContent = '';
+    resolvedIds = [];
+    renderCards([]);
+    buildBranch(branchesHost, specimens, [], '1');
+  }
+
+  document.getElementById('resetBtn').addEventListener('click', reset);
+  reset();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Stimulus Threshold Slider | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .toggle { margin-bottom: 12px; }
+  .toggle button {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    color: #334155;
+    padding: 7px 14px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  .toggle button.active { background: #2d6a4f; color: #fff; border-color: #2d6a4f; }
+  label { font-size: 0.85rem; font-weight: 600; color: #334155; display:block; margin-bottom: 6px; }
+  input[type=range] { width: 100%; }
+  .readout {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin: 12px 0;
+    font-size: 0.92rem;
+  }
+  .readout b { color: #1d70a2; }
+  .note { font-size: 0.82rem; color: #4b5563; margin-top: 8px; min-height: 2.2em; }
+  .super { color: #b45309; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Sign Stimulus Threshold Slider</h3>
+  <div class="subtitle">Drag the stimulus intensity past 100% (the natural range) to see the supernormal-stimulus effect.</div>
+  <div class="toggle">
+    <button class="active" id="btnBelly">Stickleback belly redness</button>
+    <button id="btnEgg">Oystercatcher egg size</button>
+  </div>
+  <label id="sliderLabel" for="stimSlider">Belly redness intensity (% of natural maximum)</label>
+  <input type="range" id="stimSlider" min="0" max="180" value="50">
+  <div class="readout">Stimulus intensity: <b id="stimVal">50%</b> — Attack/incubation response strength: <b id="respVal">0%</b></div>
+  <svg id="curveSvg" viewBox="0 0 560 220" width="100%" height="220">
+    <line x1="40" y1="180" x2="540" y2="180" stroke="#94a3b8" stroke-width="1.5"/>
+    <line x1="40" y1="20" x2="40" y2="180" stroke="#94a3b8" stroke-width="1.5"/>
+    <line id="naturalMax" x1="300" y1="20" x2="300" y2="180" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4,4"/>
+    <text x="300" y="14" text-anchor="middle" font-size="10" fill="#94a3b8">natural max (100%)</text>
+    <rect id="superZone" x="300" y="20" width="240" height="160" fill="#fef3c7" opacity="0.5"/>
+    <text x="420" y="200" text-anchor="middle" font-size="10" fill="#b45309">supernormal range</text>
+    <path id="curvePath" d="" fill="none" stroke="#1d70a2" stroke-width="2.5"/>
+    <circle id="marker" cx="40" cy="180" r="6" fill="#2d6a4f"/>
+  </svg>
+  <div class="note" id="note">Natural belly redness is at 100% — try pushing past it.</div>
+</div>
+<script>
+(function(){
+  var slider = document.getElementById('stimSlider');
+  var stimVal = document.getElementById('stimVal');
+  var respVal = document.getElementById('respVal');
+  var note = document.getElementById('note');
+  var curvePath = document.getElementById('curvePath');
+  var marker = document.getElementById('marker');
+  var label = document.getElementById('sliderLabel');
+  var btnBelly = document.getElementById('btnBelly');
+  var btnEgg = document.getElementById('btnEgg');
+  var mode = 'belly';
+
+  var W0 = 40, W1 = 540, H0 = 180, H1 = 20;
+
+  function xForStim(s){ return W0 + (s/180) * (W1 - W0); }
+
+  function responseFor(s, m){
+    if (m === 'belly'){
+      var r = 95 * (1 - Math.exp(-s/45));
+      return Math.min(100, r);
+    } else {
+      if (s <= 100){
+        return 85 * (s/100);
+      }
+      var extra = Math.min(15, (s-100)/80*15);
+      return Math.min(100, 85 + extra);
+    }
+  }
+
+  function drawCurve(){
+    var pts = [];
+    for (var s = 0; s <= 180; s += 4){
+      var r = responseFor(s, mode);
+      var x = xForStim(s);
+      var y = H0 - (r/100)*(H0-H1);
+      pts.push(x.toFixed(1)+','+y.toFixed(1));
+    }
+    curvePath.setAttribute('d', 'M' + pts.join(' L'));
+  }
+
+  function update(){
+    var s = parseInt(slider.value, 10);
+    var r = responseFor(s, mode);
+    stimVal.textContent = s + '%';
+    respVal.textContent = r.toFixed(0) + '%';
+    var x = xForStim(s);
+    var y = H0 - (r/100)*(H0-H1);
+    marker.setAttribute('cx', x);
+    marker.setAttribute('cy', y);
+
+    if (s <= 100){
+      note.textContent = mode === 'belly'
+        ? 'Within the natural range — response scales with redness, as Tinbergen found in stickleback attack trials.'
+        : 'Within the natural range — larger eggs get a stronger incubation response, up to the size real oystercatcher eggs reach.';
+    } else {
+      note.innerHTML = '<span class="super">Supernormal stimulus:</span> ' + (mode === 'belly'
+        ? 'no natural stickleback is this red, but if it existed, the model predicts an even stronger attack response.'
+        : 'this egg is larger than any oystercatcher lays naturally, yet birds preferentially try to incubate it over their own egg.');
+    }
+  }
+
+  function setMode(m){
+    mode = m;
+    btnBelly.classList.toggle('active', m === 'belly');
+    btnEgg.classList.toggle('active', m === 'egg');
+    label.textContent = m === 'belly' ? 'Belly redness intensity (% of natural maximum)' : 'Egg size (% of natural maximum)';
+    drawCurve();
+    update();
+  }
+
+  slider.addEventListener('input', update);
+  btnBelly.addEventListener('click', function(){ setMode('belly'); });
+  btnEgg.addEventListener('click', function(){ setMode('egg'); });
+
+  drawCurve();
+  update();
+})();
+</script>
+</body>
+</html>

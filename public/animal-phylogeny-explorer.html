@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animal Kingdom Phylogeny Explorer | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  svg { display: block; margin: 0 auto; }
+  .leaf-dot { fill: #2d6a4f; stroke: #1a472a; stroke-width: 2; cursor: pointer; }
+  .leaf-dot:hover { fill: #1d70a2; }
+  .leaf-dot.active { fill: #d97706; stroke: #92400e; }
+  .leaf-label { font-size: 12px; font-weight: 700; fill: #334155; cursor: pointer; }
+  .node-label { font-size: 9px; fill: #94a3b8; font-style: italic; }
+  #infoPanel {
+    margin-top: 14px;
+    background: #f1f5f9;
+    border-radius: 14px;
+    padding: 14px 16px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    min-height: 50px;
+  }
+  #infoPanel h4 { margin: 0 0 4px 0; color: #1a472a; }
+  #viewLink {
+    display: inline-block;
+    margin-top: 8px;
+    background: #2d6a4f;
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Animal Kingdom Phylogeny Explorer</h3>
+  <div class="subtitle">Click any phylum to see its defining synapomorphy. Branch points are labeled with the developmental transitions covered on this page.</div>
+  <svg id="svg" width="700" height="360" viewBox="0 0 700 360"></svg>
+  <div id="infoPanel">Click a phylum above to begin.</div>
+</div>
+<script>
+(function(){
+  var phyla = [
+    { name: 'Porifera', y: 30, synapomorphy: 'Choanocyte-lined water canal system; no true tissues (parazoan).', page: '/resources/2-animal-anatomy/invertebrate-body-plans-1/' },
+    { name: 'Cnidaria', y: 75, synapomorphy: 'Cnidocytes (stinging cells); radial symmetry; diploblastic.', page: '/resources/2-animal-anatomy/invertebrate-body-plans-1/' },
+    { name: 'Platyhelminthes', y: 120, synapomorphy: 'Acoelomate triploblastic body; bilateral symmetry; flame-cell excretory system.', page: '/resources/2-animal-anatomy/invertebrate-body-plans-1/' },
+    { name: 'Nematoda', y: 165, synapomorphy: 'Pseudocoelomate body; complete one-way digestive tract; collagenous cuticle.', page: '/resources/2-animal-anatomy/invertebrate-body-plans-1/' },
+    { name: 'Annelida', y: 210, synapomorphy: 'True segmentation (metamerism) with a coelom divided by septa.', page: '/resources/2-animal-anatomy/invertebrate-body-plans-1/' },
+    { name: 'Mollusca', y: 250, synapomorphy: 'Muscular foot, visceral mass, mantle secreting a calcareous shell (where present).', page: '/resources/2-animal-anatomy/invertebrate-body-plans-2/' },
+    { name: 'Arthropoda', y: 285, synapomorphy: 'Chitinous jointed exoskeleton, segmented body, jointed appendages.', page: '/resources/2-animal-anatomy/invertebrate-body-plans-2/' },
+    { name: 'Echinodermata', y: 320, synapomorphy: 'Pentaradial symmetry (as adults) derived from a bilateral larva; water vascular system.', page: '/resources/2-animal-anatomy/invertebrate-body-plans-2/' },
+    { name: 'Chordata', y: 340, synapomorphy: 'Notochord, dorsal hollow nerve cord, pharyngeal slits, post-anal tail at some life stage. Covered across three vertebrate class pages.', page: '/resources/2-animal-anatomy/fish-amphibian-anatomy/' }
+  ];
+  var LEAF_X = 560;
+
+  var svg = document.getElementById('svg');
+  var svgns = 'http://www.w3.org/2000/svg';
+  function el(tag, attrs){
+    var e = document.createElementNS(svgns, tag);
+    for (var k in attrs){ e.setAttribute(k, attrs[k]); }
+    return e;
+  }
+  function line(x1,y1,x2,y2){
+    svg.appendChild(el('line', { x1:x1, y1:y1, x2:x2, y2:y2, stroke:'#94a3b8', 'stroke-width':2 }));
+  }
+
+  // Root -> Porifera (top) / everything else (continues right)
+  var rootX = 40, x2 = 90, x3 = 140, protoDeuteroX = 190;
+  line(20, 165, rootX, 165); // root stub
+  line(rootX, phyla[0].y, rootX, 165);
+  line(rootX, phyla[0].y, LEAF_X, phyla[0].y);
+  line(rootX, 165, x2, 165);
+
+  line(x2, phyla[1].y, x2, 200); // Cnidaria vs rest
+  line(x2, phyla[1].y, LEAF_X, phyla[1].y);
+  line(x2, 200, x3, 200);
+
+  // Bilateria splits into Protostomia (Platy,Nematoda,Annelida,Mollusca,Arthropoda) and Deuterostomia (Echinodermata,Chordata)
+  var protoY = (phyla[2].y + phyla[6].y) / 2;
+  var deuteroY = (phyla[7].y + phyla[8].y) / 2;
+  line(x3, protoY, x3, deuteroY);
+  line(x3, protoY, protoDeuteroX, protoY);
+  line(x3, deuteroY, protoDeuteroX, deuteroY);
+  svg.appendChild(el('text', { class: 'node-label', x: x3 + 4, y: (protoY+deuteroY)/2 - 4 })).textContent = 'Bilateria';
+
+  // Protostomia ladder: Platy -> Nematoda -> (Annelida,Mollusca,Arthropoda coelomate cluster)
+  var pX1 = protoDeuteroX + 30, pX2 = pX1 + 30, pX3 = pX2 + 30;
+  line(protoDeuteroX, phyla[2].y, pX1, phyla[2].y);
+  line(protoDeuteroX, phyla[2].y, protoDeuteroX, ( (phyla[3].y+phyla[6].y)/2 ) );
+  line(protoDeuteroX, ( (phyla[3].y+phyla[6].y)/2 ), pX1, ( (phyla[3].y+phyla[6].y)/2 ));
+  svg.appendChild(el('text', { class: 'node-label', x: protoDeuteroX + 4, y: phyla[2].y - 6 })).textContent = 'Acoelomate';
+
+  var coelY = (phyla[4].y + phyla[6].y) / 2;
+  line(pX1, phyla[3].y, pX1, coelY);
+  line(pX1, phyla[3].y, LEAF_X, phyla[3].y);
+  line(pX1, coelY, pX2, coelY);
+  svg.appendChild(el('text', { class: 'node-label', x: pX1 + 4, y: phyla[3].y - 6 })).textContent = 'Pseudocoelomate';
+
+  var molArthY = (phyla[5].y + phyla[6].y) / 2;
+  line(pX2, phyla[4].y, pX2, molArthY);
+  line(pX2, phyla[4].y, LEAF_X, phyla[4].y);
+  line(pX2, molArthY, pX3, molArthY);
+  svg.appendChild(el('text', { class: 'node-label', x: pX2 + 4, y: phyla[4].y - 6 })).textContent = 'Coelomate';
+
+  line(pX3, phyla[5].y, pX3, phyla[6].y);
+  line(pX3, phyla[5].y, LEAF_X, phyla[5].y);
+  line(pX3, phyla[6].y, LEAF_X, phyla[6].y);
+
+  // Deuterostomia: Echinodermata + Chordata
+  line(protoDeuteroX, deuteroY, protoDeuteroX, phyla[7].y);
+  line(protoDeuteroX, phyla[7].y, LEAF_X, phyla[7].y);
+  line(protoDeuteroX, deuteroY, protoDeuteroX, phyla[8].y);
+  line(protoDeuteroX, phyla[8].y, LEAF_X, phyla[8].y);
+  svg.appendChild(el('text', { class: 'node-label', x: protoDeuteroX + 4, y: deuteroY - 6 })).textContent = 'Deuterostomia';
+
+  var infoPanel = document.getElementById('infoPanel');
+
+  phyla.forEach(function(p){
+    var g = el('g', {});
+    var dot = el('circle', { class: 'leaf-dot', cx: LEAF_X, cy: p.y, r: 7, 'data-name': p.name });
+    var label = el('text', { class: 'leaf-label', x: LEAF_X + 16, y: p.y + 4 });
+    label.textContent = p.name;
+    g.appendChild(dot);
+    g.appendChild(label);
+    function activate(){
+      Array.prototype.forEach.call(svg.querySelectorAll('.leaf-dot'), function(d){ d.classList.remove('active'); });
+      dot.classList.add('active');
+      infoPanel.innerHTML = '<h4>' + p.name + '</h4>' + p.synapomorphy + '<br><a id="viewLink" href="' + p.page + '" target="_top">View full structural treatment →</a>';
+    }
+    dot.addEventListener('click', activate);
+    label.addEventListener('click', activate);
+    svg.appendChild(g);
+  });
+})();
+</script>
+</body>
+</html>

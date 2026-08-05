@@ -14,7 +14,7 @@ Sections marked **✅ Verified** have gone through our full review workflow (see
   {{< card link="4-biosystematics/" title="4. Biosystematics" subtitle="Classification and phylogenetics: taxonomic hierarchy, species concepts, cladistics, molecular systematics." >}}
   {{< card link="5-plant-physiology/" title="5. Plant Physiology" subtitle="Water/nutrient transport, photosynthetic biochemistry, hormone-driven growth, and stress physiology." tag="✅ Verified" tagColor="green" >}}
   {{< card link="6-plant-anatomy/" title="6. Plant Anatomy" subtitle="Plant tissue systems, root/stem/leaf structure, and reproductive anatomy." >}}
-  {{< card link="7-genetics/" title="7. Genetics" subtitle="Mendelian transmission genetics, molecular mechanisms of gene expression, and population/biotech implications." >}}
+  {{< card link="7-genetics/" title="7. Genetics" subtitle="Mendelian inheritance and its extensions, sex linkage and pedigree analysis, chromosomal linkage/mapping and aberrations, and quantitative/non-Mendelian inheritance." >}}
   {{< card link="8-ecology/" title="8. Ecology" subtitle="Population dynamics, community ecology, ecosystems, biogeography, and conservation biology." >}}
   {{< card link="9-ethology/" title="9. Ethology" subtitle="Animal behavior: proximate/ultimate causation, learning, communication, and social structure." >}}
   {{< card link="10-bioinformatics/" title="10. Bioinformatics" subtitle="Databases, BLAST, alignments, phylogenetics, genome analysis, and protein structure." tag="✅ Verified" tagColor="green" >}}

@@ -60,7 +60,12 @@ Group size in real populations tends to track an **optimal group size** where ma
 **Interactive**
 
 - **Hawk-dove payoff simulator (Plotly)** — user sets the cost of injury and value of the resource, and the tool computes and plots average hawk/dove fitness as the proportion of hawks in the population varies, letting the user find the ESS equilibrium point where the two strategies have equal payoff.
+
+{{< iframe src="/hawk-dove-payoff-simulator.html" title="Hawk-Dove Payoff Simulator" height="480px" >}}
+
 - **Economic defendability threshold explorer (SVG/JS)** — user adjusts resource density/predictability and defense cost, and the tool indicates whether territorial defense is predicted to be favored, mirroring the sunbird flower-density field result.
+
+{{< iframe src="/economic-defendability-explorer.html" title="Economic Defendability Threshold Explorer" height="400px" >}}
 
 **Static**
 
