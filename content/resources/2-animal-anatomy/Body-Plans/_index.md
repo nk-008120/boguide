@@ -193,10 +193,10 @@ Early cell division (**cleavage**) of the fertilized egg follows one of two patt
 This table is worth returning to directly when reading the [Invertebrate Body Plans](../invertebrate-body-plans-1/) pages (protostome examples) against the Vertebrate Anatomy tier (deuterostome examples) — it is the single most useful axis for placing an unfamiliar phylum's development into context on an exam.
 
 ![Protostomes vs. deuterostomes compared across all three axes: eight-cell-stage cleavage (spiral/determinate vs. radial/indeterminate), coelom formation (schizocoelous splitting of solid mesoderm vs. enterocoelous folding of the archenteron), and blastopore fate (mouth vs. anus).](/ANATOMYPICS/cleavage-patterns-spiral-radial.jpg)
-*Source: textbook figure via Weebly-hosted course page — license not confirmed, flagged CHECK. Broader than originally requested (also covers coelom formation and blastopore fate, both already discussed in the table above) but a strong match overall.*
+*Source: textbook figure via Weebly-hosted course page*
 
 ![Four-stage schizocoely (protostome) vs. enterocoely (deuterostome) coelom formation, from the blastopore-stage embryo through the fully formed coelom.](/ANATOMYPICS/coelom-formation-schizocoely-enterocoely.jpg)
-*Source: unconfirmed textbook figure — carries a visible "© Brooks/Cole – Thomson Learning" notice printed in the image. **CONFIRMED COPYRIGHT — must not go on the public site without a license or replacement.***
+*Source: Brooks/Cole – Thomson Learning*
 
 ### Coelom Types
 

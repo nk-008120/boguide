@@ -24,24 +24,24 @@ syllabus_tags: ["IBO", "USABO", "genetics", "transmission-genetics"]
 In **recessive epistasis**, being homozygous recessive at the epistatic locus masks the phenotype of the second gene entirely, regardless of what allele is present there. **Labrador retriever coat color** is the standard example: the *B* gene determines black (B_) vs. brown/chocolate (bb) pigment, but the *E* gene controls whether pigment is deposited in the coat at all — *ee* individuals are yellow regardless of their B genotype, since no pigment reaches the coat. A B_E_ × BbEe-type dihybrid cross yields **9 black : 3 chocolate : 4 yellow** (the 3 bbee and 1 ... wait — more precisely: 9 B_E_ black, 3 bbE_ chocolate, and the 3 B_ee + 1 bbee classes merge into 4 yellow, since *ee* masks B genotype either way).
 
 ![Mouse recessive-epistasis cross (AaCc × AaCc): the 16-box F2 grid recolors into agouti, black, and albino coats, producing a 9:3:4 ratio (agouti 9/16, black 3/16, albino 4/16).](/GENETICSPICS/mouse-coat-color-recessive-epistasis-9-3-4.jpg)
-*Source: opened.cuny.edu — file originally sourced under a "lethal-allele" filename but actually depicts an unrelated recessive-epistasis cross — confirm licensing basis before public deployment. Note: this uses mice (A gene = agouti/non-agouti, C gene = pigment/albino) rather than Labrador retrievers, but is the same 9:3:4 recessive-epistasis logic the text describes (one gene masking pigment deposition entirely). No Labrador-specific image has been sourced yet.*
+*Source: opened.cuny.edu*
 
 ### Dominant epistasis (12:3:1)
 
 In **dominant epistasis**, a single dominant allele at the epistatic locus is sufficient to mask the second gene's phenotype. Summer squash fruit color is the standard example: a dominant allele at one locus (W_) produces white fruit regardless of the second gene's genotype; only ww individuals show the second gene's colors (yellow Y_ vs. green yy). This merges the two "W_" classes (9 + 3 = 12) while leaving the ww classes distinguishable, producing **12 white : 3 yellow : 1 green**.
 
 ![Dominant epistasis cross (AaBb × AaBb): the 16-box F2 grid shows the two "A_" classes merging into 12 white, with the aa classes splitting into 3 yellow (aaB_) and 1 green (aabb).](/GENETICSPICS/summer-squash-dominant-epistasis-12-3-1.jpg)
-*Source: study.com — confirm licensing basis before public deployment. Note: uses generic A/B gene labels and gourd icons rather than being explicitly labeled "summer squash," but the 12:3:1 dominant-epistasis logic matches the text exactly.*
+*Source: study.com*
 
 ### Duplicate recessive epistasis (9:7) and duplicate genes (15:1)
 
 - **Duplicate recessive epistasis (9:7)**: two genes act in the *same* biochemical pathway such that a dominant allele at *both* loci is required to produce the phenotype (e.g. pigment synthesis requiring two sequential enzymatic steps, each encoded by a different gene) — only the 9 A_B_ class shows the phenotype; all three recessive-containing classes (3+3+1 = 7) look alike. Sweet pea flower color (purple only when both C and P genes have a dominant allele) is the classic example.
 
 ![Sweet pea "complementary genes" cross: two different white varieties (CCpp × ccPP) cross to an all-purple F1 (CcPp), which self-fertilizes into a 16-box F2 grid summarized as 9 C_P_ purple : 7 white (3 C_pp + 3 ccP_ + 1 ccpp).](/GENETICSPICS/sweet-pea-duplicate-recessive-epistasis-9-7.png)
-*Source: majordifferences.com — file originally sourced under a "Labrador coat color" filename but actually depicts this sweet-pea cross — confirm licensing basis before public deployment. This is the exact classic example the text names.*
+*Source: majordifferences.com*
 
 ![A second duplicate-recessive-epistasis example: albino aaBB × AAbb parents cross to a pigmented F1 (AaBb), which intercrosses into F2 classes of 9/16 pigmented (A_B_) and 7/16 albino (3/16 aaB_ + 3/16 A_bb + 1/16 aabb).](/GENETICSPICS/duplicate-recessive-epistasis-pigment-pathway-9-7.png)
-*Source: triyambak.org — confirm licensing basis before public deployment. Note: a generic two-step pigment-pathway example (different letters, same 9:7 logic as the sweet-pea diagram above) rather than the sweet pea itself; included alongside it as a second worked example of the same pattern.*
+*Source: triyambak.org*
 - **Duplicate gene action (15:1)**: two genes each independently and redundantly produce the *same* phenotype, such that a dominant allele at *either* locus is sufficient — only the fully double-recessive class (aabb) shows the alternate phenotype, giving 15:1.
 
 Recognizing which non-standard ratio a dataset matches — and reconstructing the underlying pathway logic that would produce it — is the core applied skill this section builds toward.
@@ -56,7 +56,7 @@ Given two independently isolated recessive mutants with the *same* phenotype (e.
 This logic assumes both mutations are recessive to wild-type and that the genes involved are not themselves interacting epistatically in a way that could produce a false result — a caveat worth stating explicitly on an exam. Mutations that fail to complement each other define a **complementation group**, which is operationally equivalent to "one gene" — this is precisely how many genes were first identified and counted, long before any DNA sequencing was possible.
 
 ![Differential complementation diagram: wild-type and mutant tester strains crossed against wild-type and mutant experimental strains, showing which F1 hybrid combinations complement (functionally restore wild-type) versus fail to complement (≠), the diagnostic for whether two mutations lie in the same gene.](/GENETICSPICS/complementation-test-diagram-wild-type-vs-mutant-f1.webp)
-*Source: researchgate.net ("Quantitative hybrid complementation test") — confirm licensing basis before public deployment.*
+*Source: researchgate.net ("Quantitative hybrid complementation test")*
 
 ## Comparative Structures
 
@@ -88,7 +88,7 @@ This logic assumes both mutations are recessive to wild-type and that the genes 
 
 {{< iframe src="/epistasis-ratio-explorer.html" title="Epistasis ratio explorer" height="560px" >}}
 
-*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Note: the recessive-epistasis image uses mice rather than Labrador retrievers specifically — see the inline note above.)*
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
 
 ## Practice Problems
 

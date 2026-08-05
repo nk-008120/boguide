@@ -27,7 +27,7 @@ Given any behavior, a complete ethological explanation answers all four question
 A classic exam trap is being asked "why does a bird migrate south in autumn?" and answering only with the proximate trigger (shortening day length via photoperiod, see [Biological Rhythms](../Biological-Rhythms/)) when the question is asking for survival value (escaping resource scarcity) or vice versa — both answers are correct, but only for their own question.
 
 ![The four-questions framework arranged as a 2×2 grid: Development and Causation/Mechanism as the two proximate ("how?") questions, Evolutionary History and Function/Survival Value as the two ultimate ("why?") questions, with a historical-sequence vs. slice-in-time axis distinguishing the pairs.](/ETHOLOGYPICS/tinbergens-four-questions-gull-chick-example.png)
-*Source: onlinelibrary.wiley.com (Evolutionary Anthropology) — confirm licensing basis before public deployment. Shows the bare four-questions framework only; it does not include a specific worked example (e.g. gull chick begging) filled into the quadrants the way the table above does.*
+*Source: onlinelibrary.wiley.com (Evolutionary Anthropology)*
 
 ### Neural & Hormonal Control of Behavior
 
@@ -38,19 +38,19 @@ Behavior is ultimately produced by the nervous and endocrine systems acting toge
 A **fixed action pattern** is a stereotyped, species-typical behavior sequence that, once triggered, runs to completion largely independent of further feedback — the defining classical example is the **greylag goose egg-rolling response** (Konrad Lorenz and Niko Tinbergen): a goose whose egg has rolled outside the nest extends its neck, hooks its bill over the egg, and rolls it back with a fixed side-to-side motion. If the egg is removed partway through, the goose completes the entire rolling motion anyway — proof the sequence is not being continuously guided by feedback from the egg once started. Three properties define an FAP: it is **stereotyped** (highly consistent motor pattern across individuals of the species), it runs to completion once initiated (**relatively resistant to interruption**), and it is triggered by a specific, identifiable stimulus rather than general arousal.
 
 ![Diagram of the greylag goose egg-rolling head-movement cycle, labeled with its three phase transitions (oblique, transition, forward) and the observed transition frequencies between them from Lorenz's original motion analysis.](/ETHOLOGYPICS/greylag-goose-egg-rolling-fap-sequence.jpg)
-*Source: publish.iupress.indiana.edu ("How Animals Communicate") — confirm licensing basis before public deployment.*
+*Source: publish.iupress.indiana.edu ("How Animals Communicate")*
 
 ### Sign Stimuli and Releasers
 
 The specific stimulus feature that triggers a fixed action pattern is a **sign stimulus** (or, when the signal is itself produced by another individual for the purpose of communication, a **releaser**). Niko Tinbergen's stickleback fish work is the canonical demonstration: male three-spined sticklebacks attack red-bellied models regardless of how fish-like the rest of the model looks, but ignore highly realistic fish models lacking the red belly — the **red underside alone** is the sign stimulus for the territorial-attack FAP, not the overall gestalt of "rival fish."
 
 ![Tinbergen's stickleback model diagram: a highly realistic fish model with no red belly (top) was ignored, while four crude, non-fish-shaped models with red-painted undersides (bracketed "Models with red bellies") were attacked.](/ETHOLOGYPICS/stickleback-red-belly-sign-stimulus-attack.jpg)
-*Source: psywww.com (An Introduction to Psychology, "Classic ethology" chapter) — confirm licensing basis before public deployment.*
+*Source: psywww.com (An Introduction to Psychology, "Classic ethology" chapter)*
 
 A **supernormal stimulus** is an exaggerated artificial version of a sign stimulus that triggers a stronger response than the natural stimulus itself — Tinbergen showed oystercatchers will preferentially attempt to incubate an oversized artificial egg over their own smaller, natural egg, because egg size (up to a point) is itself acting as a sign stimulus for incubation behavior, and the artificial version simply exceeds the natural range the response evolved under.
 
 ![Tinbergen's oystercatcher figures: an oystercatcher incubating a "supernormal" clutch of five eggs in preference to its own natural clutch of three (Fig. 42), and an oystercatcher reacting to a giant egg in preference to a normal egg and a herring gull's egg placed alongside it (Fig. 43).](/ETHOLOGYPICS/oystercatcher-supernormal-stimulus-egg.jpg)
-*Source: Tinbergen, "The Study of Instinct" (Oxford, Clarendon Press), via punyamishra.com — confirm licensing basis before public deployment. The saved image also includes the book's title page alongside the two relevant figures.*
+*Source: Tinbergen, "The Study of Instinct" (Oxford, Clarendon Press), via punyamishra.com*
 
 <!-- VIDEO: Greylag goose egg-rolling fixed action pattern — Anser anser — shows the stereotyped motion continuing after the egg is removed, which a single still diagram cannot convey -->
 
@@ -59,7 +59,7 @@ A **supernormal stimulus** is an exaggerated artificial version of a sign stimul
 **Motivational state** (or drive) explains why the same sign stimulus doesn't always produce the same response — an animal's internal physiological state (hunger, hormonal state, prior recent performance of the behavior) gates whether and how strongly a triggering stimulus produces its associated FAP. This is formalized loosely in ethology's **psychohydraulic model** (Konrad Lorenz's now-historical analogy of action-specific energy building up like water behind a dam, released by a sign stimulus acting as the sluice gate) — largely superseded mechanistically today, but still useful for the qualitative point it illustrates: motivation and stimulus jointly determine response, and a sufficiently strong motivational state can even produce the behavior in the sign stimulus's absence (**vacuum activity**).
 
 ![Lorenz's psychohydraulic model diagram: a "drive" reservoir feeds through a spring-loaded release-mechanism valve into a set of "behavior" spouts, with an external "stimulus" weight on a pulley able to open the valve directly.](/ETHOLOGYPICS/psychohydraulic-model-diagram.png)
-*Source: vaia.com ("The Hydraulic Model of Instinctive Behaviour") — confirm licensing basis before public deployment.*
+*Source: vaia.com ("The Hydraulic Model of Instinctive Behaviour")*
 
 ## Comparative Structures
 

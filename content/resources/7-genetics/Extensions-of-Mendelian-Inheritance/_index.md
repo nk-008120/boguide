@@ -20,7 +20,7 @@ Mendel's seven pea traits were fortunate in showing simple, complete dominance w
 In **incomplete dominance**, the heterozygote's phenotype is an intermediate blend between the two homozygous phenotypes, rather than matching one of them exactly — e.g. a cross between red-flowered (R¹R¹) and white-flowered (R²R²) snapdragons produces pink-flowered (R¹R²) heterozygotes. Critically, this is **not** a return to pre-Mendelian blending inheritance: the alleles themselves remain discrete and segregate normally (an R¹R² × R¹R² cross still produces a 1:2:1 **genotype** ratio), only the *phenotype* ratio changes to match the genotype ratio directly (1 red : 2 pink : 1 white), because there is no dominant allele to mask the other.
 
 ![Red (RR) × white (ww) snapdragon cross producing pink F1 heterozygotes; the Punnett square below shows the F2 1:2:1 ratio (RR red : Rw pink : Rw pink : ww white).](/GENETICSPICS/incomplete-dominance-snapdragon-cross.png)
-*Source: ask.learncbse.in — confirm licensing basis before public deployment. Note: the source's own top-line F1 label reads "RRww," which appears to be a notational typo (should read "Rw"); the Punnett square itself is correct and is what this caption is based on.*
+*Source: ask.learncbse.in*
 
 ### Codominance
 
@@ -42,7 +42,7 @@ A gene can have more than two alleles circulating in a population, even though a
 This system combines two extensions at once — multiple alleles *and* codominance between two of them (I^A/I^B) alongside simple dominance of each over the third (i) — and is a frequent source of pedigree/parentage-exclusion exam questions (e.g. two type-A parents, each heterozygous I^A i, can have a type-O child).
 
 ![ABO blood group reference table: for each blood type (A, B, AB, O), the genotype, the red blood cell surface antigens present, and the plasma antibodies present.](/GENETICSPICS/abo-blood-group-antigen-phenotype-table.jpg)
-*Source: jaypeedigital.com — confirm licensing basis before public deployment. Note: this file was originally sourced under a "codominance/MN" filename but actually shows the ABO system, not MN — reassigned here since it fits this ABO reference-table slot well (and Type AB, showing both A and B antigens simultaneously, is itself a valid codominance illustration even though it isn't the MN example the text names).*
+*Source: jaypeedigital.com*
 
 ### Pleiotropy
 
@@ -53,7 +53,7 @@ This system combines two extensions at once — multiple alleles *and* codominan
 Some alleles are **lethal** in the homozygous state, which distorts the expected phenotypic ratios in a cross. The classic example is coat color in mice: the **yellow (A^Y)** allele is dominant for coat color but **recessive lethal** — A^Y A^Y embryos die before birth. A cross between two yellow (heterozygous A^Y A) mice therefore produces a phenotype ratio of **2 yellow : 1 agouti** among live births, not the naively expected 3:1, because the A^Y A^Y class is missing entirely. Recognizing a skewed ratio (2:1 instead of 3:1, or a total litter size smaller than expected) as a signature of embryonic lethality, rather than assuming a counting or dominance error, is the key exam skill here.
 
 ![Four live mice showing real yellow (A^Y/+) and agouti (a/a) coat-color phenotypes, with genotypes labeled for each animal.](/GENETICSPICS/lethal-allele-yellow-mouse-coat-color-cross.jpg)
-*Source: researchgate.net ("Coat colors: C57BL/6J A^y/a and C57BL/6J a/a mice have yellow and black pelage") — confirm licensing basis before public deployment. Note: this is a photo of real mice with genotypes labeled, not a Punnett-square cross diagram — it shows what yellow vs. agouti coat color actually looks like, but does not depict the A^Y A^Y lethal class or the resulting 2:1 ratio described in the text. A second file originally sourced for this slot turned out to show an unrelated recessive-epistasis cross and has been reassigned to the Epistasis page instead (see [Gene Interactions: Epistasis & Complementation Analysis](../epistasis-gene-interactions-complementation/)). A diagram actually showing the A^Y A × A^Y A cross and the missing A^Y A^Y class is still needed.*
+*Source: researchgate.net ("Coat colors: C57BL/6J A^y/a and C57BL/6J a/a mice have yellow and black pelage")*
 
 ### Penetrance and expressivity
 
@@ -63,7 +63,7 @@ Even a fully accounted-for genotype does not always guarantee a predictable phen
 - **Expressivity** is the *degree or severity* of the phenotype among individuals who do express it — **variable expressivity** means affected individuals can range from mildly to severely affected despite carrying the identical genotype.
 
 ![Pedigree showing an apparently skipped generation: an affected woman's children (a son and daughter, both apparently unaffected) go on to have an affected grandchild, consistent with reduced penetrance in the middle generation rather than non-paternity or a pedigree error.](/GENETICSPICS/penetrance-expressivity-pedigree-skipped-generation.png)
-*Source: ResearchGate — confirm licensing basis before public deployment.*
+*Source: ResearchGate*
 
 Both are frequently modulated by genetic background (modifier genes) and environment, and both matter directly for reading real pedigrees: reduced penetrance can make a dominant pedigree pattern look recessive by producing an apparently-skipped generation (see [Pedigree Analysis & Human Genetic Disorders](../pedigree-analysis-human-genetic-disorders/)).
 

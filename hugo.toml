@@ -23,13 +23,13 @@ theme = "hextra"
 
   # 1. Cell & Molecular Biology (main entry – clickable, links to the section page)
   [[menu.main]]
-    name = "1. Cell & Molecular Biology"
+    name = "1. ✅ Cell & Molecular Biology"
     parent = "Resources & Notes"
     url = "/resources/1-cell-molecular/"
     weight = 2
 
   [[menu.main]]
-    name = "2. Genetics"
+    name = "2. ✅ Genetics"
     parent = "Resources & Notes"
     url = "/resources/7-genetics/"
     weight = 5
@@ -68,7 +68,30 @@ theme = "hextra"
     parent = "Resources & Notes"
     url = "/resources/2-animal-anatomy"
     weight = 11
+
+  [[menu.main]]
+    name = "9. ✅ Plant Anatomy"
+    parent = "Resources & Notes"
+    url = "/resources/6-plant-anatomy"
+    weight = 12
+
+  [[menu.main]]
+    name = "10. ✅ Ecology "
+    parent = "Resources & Notes"
+    url = "/resources/8-ecology"
+    weight = 13
     
+  [[menu.main]]  
+    name = "11. ✅ Ethology"
+    parent = "Resources & Notes"
+    url = "/resources/9-ethology"
+    weight = 14
+
+  [[menu.main]]
+    name = "12. Biosystematics"
+    parent = "Resources & Notes"
+    url = "/resources/4-biosystematics"
+
   [[menu.main]]
     name = "Papers"
     url = "/papers/"

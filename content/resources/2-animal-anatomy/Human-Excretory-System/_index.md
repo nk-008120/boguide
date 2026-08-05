@@ -19,14 +19,14 @@ The kidney's structure is inseparable from its function as a high-pressure filte
 Each kidney is enclosed by a thin fibrous **renal capsule**, structurally divided into an outer **cortex** and inner **medulla**; the medulla is organized into 8–18 cone-shaped **renal pyramids** (separated by cortical extensions, the **renal columns**), each pyramid's apex (**renal papilla**) draining urine into a cup-shaped **minor calyx**; minor calices converge into **major calices**, which converge into the funnel-shaped **renal pelvis**, continuous with the **ureter** exiting at the **hilum** (the same structural entry/exit point for the renal artery and renal vein, a standard labeled-cross-section exam feature).
 
 ![Kidney gross anatomy in coronal section: fibrous capsule, renal cortex, renal medulla, renal pyramids, renal columns, renal papilla, minor and major calyces, renal pelvis, hilum, renal artery/vein, and ureter, with a whole-body inset showing kidney position.](/ANATOMYPICS/kidney-gross-anatomy-cortex-medulla-pyramids.png)
-*Source: user-sourced (originally via Wikipedia "Kidney"). Exact match, exceeds spec with the whole-body position inset.*
+*Source: Wikipedia, "Kidney"*
 
 ### The Nephron: Renal Corpuscle
 
 The nephron (~1 million per kidney) is the functional unit, with two main structural parts. The **renal corpuscle** comprises the **glomerulus** (a capillary tuft fed by an **afferent arteriole** and drained by an **efferent arteriole** — both arterioles, not an arteriole-then-venule, meaning the glomerulus is unusually positioned between two resistance vessels, keeping capillary pressure high enough to force filtration) surrounded by **Bowman's (glomerular) capsule**. The capsule's inner (visceral) layer is made of specialized cells, **podocytes**, wrapping the glomerular capillaries with foot-like processes (**pedicels**) that interdigitate, leaving narrow **filtration slits** between them; together with the fenestrated (pored) glomerular capillary endothelium and a shared basement membrane, this three-layer structure forms the **filtration membrane** — permeable to water and small solutes, but structurally excluding blood cells and most plasma proteins by size and the basement membrane's negative charge (which repels similarly negatively charged proteins like albumin). Fluid crossing this membrane (the **filtrate**) collects in Bowman's capsule space and enters the renal tubule.
 
 ![Renal corpuscle detail: glomerular capillaries wrapped by podocytes with pedicels, Bowman's capsule (parietal and visceral layers), Bowman's space, the basement membrane, mesangial cells (intra- and extraglomerular), afferent/efferent arterioles, myocytes, the proximal tubule brush border, and the juxtaglomerular apparatus (macula densa and granular cells) at the vascular pole.](/ANATOMYPICS/renal-corpuscle-glomerulus-podocytes.png)
-*Source: user-sourced (originally via Wikipedia "Podocyte", saved as SVG — rasterized to PNG via a browser canvas conversion since the Read tool can't render SVG directly). Exceeds spec with mesangial cell and myocyte detail alongside the podocyte/filtration-slit structure.*
+*Source: Wikipedia, "Podocyte"*
 
 ### The Nephron: Renal Tubule
 
@@ -99,7 +99,7 @@ graph LR;
 Not all nephrons are structurally identical: **cortical nephrons** (~85%, glomerulus in the outer cortex, short loops of Henle barely entering the medulla) handle the bulk of filtration volume, while **juxtamedullary nephrons** (~15%, glomerulus near the cortex-medulla border, very long loops of Henle penetrating deep into the medulla, paralleled by specialized capillaries, the **vasa recta**) are structurally responsible for establishing the deep medullary concentration gradient that makes concentrated urine possible at all — a direct minority-population, disproportionate-function structural point worth stating explicitly.
 
 ![Cortical nephron (short loop of Henle) vs. juxtamedullary nephron (long loop reaching deep into the medulla, near the papilla) compared, alongside a PO2 gradient bar showing oxygen tension falling from 70 mmHg in the cortex to 10 mmHg near the papilla.](/ANATOMYPICS/cortical-vs-juxtamedullary-nephron-comparison.webp)
-*Source: The Ohio State University (copyright notice visible in the image), user-sourced originally via a ResearchGate figure. Confirm licensing basis before public deployment. Exceeds spec with the medullary oxygen-gradient detail, a bonus concept beyond this page's text.*
+*Source: The Ohio State University, user-sourced originally via a ResearchGate figure.*
 
 <div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
   <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">🧂 Countercurrent Multiplier Gradient Chart</h3>
@@ -190,7 +190,7 @@ Not all nephrons are structurally identical: **cortical nephrons** (~85%, glomer
 At the point where the ascending thick limb of the loop of Henle passes back between its own nephron's afferent and efferent arterioles, two structurally specialized cell populations meet: the **macula densa** (modified tubule epithelial cells, monitoring fluid Na⁺/Cl⁻ concentration as it passes) and **juxtaglomerular (granular) cells** (modified smooth muscle cells in the afferent arteriole wall, secreting renin in response to macula densa signaling or reduced arteriole stretch). This structure — the **juxtaglomerular apparatus** — is the kidney's built-in blood-pressure/filtration-rate sensor and the anatomical starting point of the renin-angiotensin-aldosterone hormonal axis, a direct structural link between kidney anatomy and systemic blood pressure regulation.
 
 ![Cross-section of a nephron and juxtaglomerular apparatus at the vascular pole: macula densa, angiotensin-II-producing granular cells, afferent/efferent arterioles, extraglomerular mesangial cells, parietal epithelium, podocyte foot processes, mesangial cells, basement membrane, Bowman's space, and the proximal tubule.](/ANATOMYPICS/juxtaglomerular-apparatus-macula-densa.jpg)
-*Source: originally published in Kris W, Sakai T et al., "Morphological aspects of glomerular function," Proceedings of the 10th International Congress of Nephrology, Vol 1, Baillière Tindall, 1988 (citation printed in the image); user-sourced via a ScienceDirect topic page. Academic-textbook-derived figure — confirm licensing basis before public deployment. Exact match, both macula densa and granular cells labeled.*
+*Source: Kris W, Sakai T et al., "Morphological aspects of glomerular function," Proceedings of the 10th International Congress of Nephrology, Vol 1, Baillière Tindall, 1988; user-sourced via a ScienceDirect topic page.*
 
 ### Renal Blood Supply
 

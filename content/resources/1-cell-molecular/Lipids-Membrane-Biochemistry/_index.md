@@ -20,7 +20,7 @@ Lipids are defined by a shared physical property (poor water solubility) rather 
 A fatty acid is a long hydrocarbon chain terminating in a carboxylic acid group. **Saturated** fatty acids have no carbon-carbon double bonds, allowing the chain to lie fully extended and pack tightly against neighbouring chains via van der Waals interactions — this tight packing is why saturated fats are typically solid at room temperature. **Unsaturated** fatty acids contain one (monounsaturated) or more (polyunsaturated) C=C double bonds, almost always in the **cis** configuration in natural lipids, which introduces a rigid ~30° kink in the chain. That kink prevents tight packing, lowering the melting point — unsaturated fats are typically liquid at room temperature.
 
 ![Saturated stearic acid shown as a fully extended straight chain; unsaturated cis-oleic acid shown with a sharp kink at its single C=C double bond; unsaturated trans-oleic acid shown as a nearly straight chain despite also having one C=C double bond, illustrating that it is specifically the cis configuration, not unsaturation alone, that causes the packing-disrupting kink](/MCBBPICS/saturated-vs-unsaturated-fatty-acid.png)
-*Source: tutorchase.com — confirm licensing basis before public deployment*
+*Source: tutorchase.com*
 
 ### Triglycerides: pure energy storage
 
@@ -33,7 +33,7 @@ A **phospholipid** replaces one fatty acid of a triglyceride-like backbone with 
 **Head group identity determines membrane leaflet asymmetry and signalling function**, not just electrostatics — e.g. phosphatidylserine is normally kept on the cytoplasmic leaflet by ATP-dependent flippases, and its appearance on the *outer* leaflet is a recognised "eat me" signal for phagocytes during apoptosis (see [Cell Junctions, Extracellular Matrix & Cell Death](../cell-junctions-ecm-cell-death/)).
 
 ![Phospholipid structure: a hydrophilic head made of a variable R group, phosphate, and glycerol backbone, connected to two hydrophobic fatty acid tails — one saturated (straight) and one unsaturated (kinked)](/MCBBPICS/phospholipid-structure-diagram.jpg)
-*Source: bio.libretexts.org (Boundless Biology) — confirm licensing basis before public deployment*
+*Source: bio.libretexts.org (Boundless Biology)*
 
 ### Cholesterol and membrane fluidity
 
@@ -45,10 +45,10 @@ Cholesterol is a rigid, planar four-ring sterol that intercalates between phosph
 Net effect: cholesterol acts as a **fluidity buffer**, narrowing the range of temperatures over which the membrane's physical state changes sharply — a frequently mis-simplified concept ("cholesterol makes membranes more fluid") that is only half correct.
 
 ![Membrane fluidity vs. temperature for a membrane with and without cholesterol: without cholesterol (magenta), fluidity rises sharply through the phase-transition temperature Tm; with cholesterol (blue), the curve is flattened — less fluid than the cholesterol-free membrane above Tm, more fluid below Tm — illustrating cholesterol's bidirectional buffering effect](/MCBBPICS/cholesterol-membrane-fluidity.jpg)
-*Source: Chegg homework-help question — confirm licensing basis before public deployment*
+*Source: Chegg homework-help question*
 
 ![Molecular-level membrane order at two temperature regimes relative to the phospholipid melting temperature: with cholesterol present (red), phospholipid tails are held in a more uniformly ordered state at both T > melting T and T >>> melting T, compared to the more variably ordered/disordered arrangement without cholesterol, shown alongside fluorescent membrane-order probes (Laurdan, Patman) in their membrane-embedded vs. water-exposed states](/MCBBPICS/cholesterol-membrane-fluidity2.jpg)
-*Source: ScienceDirect (research article) — confirm licensing basis before public deployment. Note: a more advanced, order/disorder-probe-based view of the same cholesterol-buffering concept, supplementing the fluidity-vs-temperature graph above.*
+*Source: ScienceDirect (research article)*
 
 ### Lipids as signalling molecules
 

@@ -28,7 +28,7 @@ Progression is controlled by **cyclin-dependent kinases (CDKs)**, whose activity
 Loss of checkpoint function is a recurring cancer mechanism: tumour suppressor genes like *p53* function largely as checkpoint enforcers (triggering cell-cycle arrest or apoptosis in response to DNA damage), so their loss allows damaged cells to continue dividing unchecked.
 
 ![Cell cycle diagram with cyclin/CDK pairs and checkpoints marked at each transition: G1 checkpoint (chromosome-spindle attachment check position), intra-S checkpoint (DNA replication and repair), G2/M checkpoint (cell size and DNA replication), and the spindle assembly checkpoint at M](/MCBBPICS/cell-cycle-checkpoints.jpg)
-*Source: ScienceDirect Topics — confirm licensing basis before public deployment. ScienceDirect topic pages are not a confirmed-open source by default. Note: shows four checkpoints (including an intra-S checkpoint) rather than only the three named in the text above.*
+*Source: ScienceDirect Topics*
 
 ### Mitosis: the stages
 
@@ -42,7 +42,7 @@ Mitosis divides a duplicated genome (sister chromatids) into two genetically ide
 6. **Cytokinesis** (overlapping with late mitosis, mechanistically separate from it): in animal cells, an actin-myosin **contractile ring** assembles at the cell cortex and constricts, pinching the cell in two (see [Cytoskeleton & Motor Proteins](../cytoskeleton-motor-proteins/) for the actin/myosin mechanism); in plant cells, which have a rigid cell wall preventing this pinching mechanism, a **cell plate** instead forms from the inside outward via vesicle fusion, eventually forming a new cell wall.
 
 ![The six stages of mitosis (prophase through cytokinesis) shown as labelled diagrams with matching fluorescence micrographs below each stage, spindle fibers in green and chromosomes in blue, with the key events of each stage listed as bullet points](/MCBBPICS/mitotic-stages-sequence.jpg)
-*Source: teachmephysiology.com — confirm licensing basis before public deployment*
+*Source: teachmephysiology.com*
 
 ### Meiosis: chromosome mechanics
 
@@ -53,7 +53,7 @@ Meiosis produces four genetically distinct haploid cells from one diploid cell, 
 **Meiosis II** proceeds mechanistically like a mitotic division (no further DNA replication precedes it): sister chromatids separate at anaphase II, producing four haploid cells total.
 
 ![Meiosis I vs. meiosis II chromosome separation: in meiosis I, homologous chromosome pairs held together at the chiasmata (prometaphase I) are pulled apart at anaphase I with sister chromatids staying joined; in meiosis II, sister chromatids held at the centromere (prometaphase II) are pulled apart individually at anaphase II](/MCBBPICS/meiosis-i-vs-ii-chromosome-separation.jpg)
-*Source: courses.lumenlearning.com — confirm licensing basis before public deployment. Lumen Learning course content is typically openly licensed (OER); confirm the specific CC tag before public deployment. Note: the chiasma/homolog-pairing image is shown at prometaphase I rather than prophase I as originally specced.*
+*Source: courses.lumenlearning.com*
 
 The key mechanistic distinction from mitosis, worth stating explicitly: **meiosis I separates homologous chromosomes; meiosis II (like mitosis) separates sister chromatids.** This single distinction is the most commonly tested mechanical fact in this entire topic, since confusing which division separates which chromosome unit is the most common error.
 

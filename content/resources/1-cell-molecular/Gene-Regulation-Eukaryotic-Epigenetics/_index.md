@@ -20,7 +20,7 @@ Eukaryotic gene regulation operates across more layers than the prokaryotic oper
 Eukaryotic DNA is packaged around histone protein octamers into **nucleosomes**, the repeating unit of **chromatin** — and this packaging itself is regulatory, not merely structural/space-saving, because RNA polymerase and transcription factors generally cannot access DNA tightly wound around histones. Chromatin exists on a spectrum from **heterochromatin** (densely packed, transcriptionally silent) to **euchromatin** (loosely packed, transcriptionally accessible), and a gene's position on this spectrum is itself a major regulatory determinant, independent of the gene's own promoter/operator sequence.
 
 ![DNA packaged into nucleosomes (blue beads), forming a chromatin fiber that includes both loosely packed "active" euchromatin and densely packed "silent" heterochromatin regions, further condensing into the interphase chromatin domain of a mitotic chromosome inside the nucleus](/MCBBPICS/nucleosome-chromatin-packaging.jpg)
-*Source: en.wikipedia.org (Euchromatin) — confirm licensing basis before public deployment*
+*Source: en.wikipedia.org (Euchromatin)*
 
 ### Histone modification
 
@@ -42,7 +42,7 @@ Beyond chromatin accessibility, eukaryotic transcription is regulated by sequenc
 - The **Mediator complex** physically bridges enhancer-bound transcription factors and the general transcription machinery at the promoter (introduced in [Transcription & RNA Processing](../transcription-rna-processing/)), functionally completing the loop that lets a distant enhancer influence promoter activity.
 
 ![DNA looping brings a distal enhancer (bound by transcription factors, general transcription factors, and RNA polymerase II producing eRNA) into direct contact with the gene's promoter (also RNAP II-bound, producing mRNA) via a bridging Mediator protein complex; the intervening chromosome loop is shown explicitly](/MCBBPICS/enhancer-promoter-looping-mediator.jpg)
-*Source: Wikimedia Commons ("Regulation of transcription in mammals") — confirm licensing basis before public deployment. Wikimedia-hosted diagrams are typically openly licensed; confirm the specific license tag before public deployment.*
+*Source: Wikimedia Commons ("Regulation of transcription in mammals")*
 
 ### Regulatory non-coding RNA
 
@@ -51,7 +51,7 @@ Beyond mRNA, tRNA, and rRNA, eukaryotic cells use small regulatory RNAs to contr
 - **microRNA (miRNA)**: endogenously encoded small RNAs that base-pair with partially complementary sequences in target mRNAs (typically in the 3′ untranslated region), recruiting the **RNA-induced silencing complex (RISC)** to block translation or promote mRNA degradation.
 
 ![miRNA/RISC mechanism: a target gene is transcribed into target mRNA in the nucleus; in the cytoplasm, an endogenous miRNA (hairpin structure) is loaded into an Argonaute (AGO) protein, base-pairs with the target mRNA, and the resulting miRNA-RISC complex causes translational repression and mRNA degradation](/MCBBPICS/mirna-risc-mechanism.png)
-*Source: BioRender template — confirm licensing basis before public deployment*
+*Source: BioRender template*
 - **siRNA (small interfering RNA)**: mechanistically similar to miRNA (also RISC-dependent), but typically derived from fully complementary, often exogenous or experimentally introduced double-stranded RNA, and generally acting through more precise, often complete target mRNA degradation rather than translational repression — the basis of the widely used experimental **RNA interference (RNAi)** gene-knockdown technique.
 
 Both pathways illustrate that eukaryotic gene regulation extends past transcriptional control into direct, sequence-specific post-transcriptional silencing — a regulatory layer with no direct prokaryotic operon equivalent.

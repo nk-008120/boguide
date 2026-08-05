@@ -23,12 +23,12 @@ Plant structure is organized on two overlapping axes that every later page in th
 - **Intercalary meristems** — retained at the base of internodes or leaves (characteristic of grasses), allowing continued elongation after the tip has already differentiated — structurally why grass leaves and stems can regrow after their tips are grazed or mowed while the base remains intact.
 
 ![Longitudinal section through a shoot apical meristem showing a two-layered tunica (L I, L II) overlying the corpus (L III), the clonal outer-layer arrangement described above.](/PLANTANATPICS/shoot-apical-meristem-tunica-corpus.jpg)
-*Source: UF/IFAS Plant Propagation Glossary (propg.ifas.ufl.edu) — confirm licensing basis before public deployment. Labels the tunica/corpus layers directly; leaf primordia are not separately labeled in this particular figure.*
+*Source: UF/IFAS Plant Propagation Glossary (propg.ifas.ufl.edu)*
 
 Behind the RAM, a root shows three growth zones in longitudinal section: the **zone of cell division** (at and just behind the meristem proper), the **zone of elongation** (cells stop dividing and elongate rapidly, the main driver of root length increase), and the **zone of maturation (differentiation)** (cells reach final size and differentiate into mature tissue types, including root hairs — see [Root Anatomy](../root-anatomy/)).
 
 ![Longitudinal section through a root tip labeling the root cap, quiescent center, and meristematic/elongation/maturation zones, with additional annotation of when specific tissues (vessel elements, sieve tube elements, endodermis) differentiate and where a lateral root primordium initiates.](/PLANTANATPICS/root-apical-meristem-zonation.jpg)
-*Source: SIU Plant Anatomy course materials (nickrentlab.siu.edu) — confirm licensing basis before public deployment. Broader than the original spec: also annotates tissue-differentiation timing and lateral root initiation, both covered in full on [Root Anatomy](../root-anatomy/).*
+*Source: SIU Plant Anatomy course materials (nickrentlab.siu.edu)*
 
 ### Permanent (Non-Meristematic) Tissue: Cell Types
 
@@ -41,7 +41,7 @@ Once a cell exits the meristem and stops dividing, it differentiates into one of
 | Sclerenchyma (fibers, sclereids) | Thick lignified secondary wall | Dead | Rigid mechanical support and protection |
 
 ![Tabular comparison of parenchyma, collenchyma, and sclerenchyma by wall structure, intercellular spaces, location, function, and named examples (e.g. mesophyll/pith parenchyma, celery-stalk collenchyma, pear stone-cell and coconut-fiber sclerenchyma).](/PLANTANATPICS/parenchyma-collenchyma-sclerenchyma-comparison.png)
-*Source: Navneet Maini, Medium (navneetsmaini.medium.com) — confirm licensing basis before public deployment. A tabular comparison graphic rather than cell-structure drawings; supplements, rather than duplicates, the Comparative Structures table below with additional named examples.*
+*Source: Navneet Maini, Medium (navneetsmaini.medium.com)*
 
 **Parenchyma** cells are structurally unspecialized (thin wall, large central vacuole, retained nucleus) and correspondingly functionally flexible — they carry out the bulk of photosynthesis (as **chlorenchyma** in the leaf mesophyll and green stems, packed with chloroplasts), storage (as **starch-storing parenchyma** in roots and tubers, or water-storing parenchyma in succulents), and retain the capacity to dedifferentiate and divide again, which is why parenchyma is the tissue basis of wound healing and vegetative propagation (a cutting roots by parenchyma cells at the cut surface reverting to meristematic activity).
 
@@ -50,7 +50,7 @@ Once a cell exits the meristem and stops dividing, it differentiates into one of
 **Sclerenchyma** provides rigid, permanent support and comes in two structural forms: **fibers** (long, tapered cells, usually in bundles, providing tensile strength — commercially the basis of plant fibers like hemp and flax) and **sclereids** (variable, often branched or irregular shapes, including the gritty **stone cells** in pear flesh) — both types deposit a thick secondary wall impregnated with **lignin** (a rigid, hydrophobic polymer) and then die, leaving only the wall as a structural skeleton; the living cytoplasm is not needed for the cell's final mechanical role.
 
 ![Sclerenchyma fibers in transverse and longitudinal section (thick walls, simple pit pairs) alongside four structurally distinct sclereid subtypes — brachysclereid, astrosclereid, macrosclereid, osteosclereid.](/PLANTANATPICS/sclerenchyma-fiber-and-sclereid.webp)
-*Source: BiologyLearner (biologylearner.com) — confirm licensing basis before public deployment. Richer than the original spec: shows four named sclereid shape variants rather than a single stone-cell example, illustrating that "sclereid" covers a range of structural forms, not one fixed shape.*
+*Source: BiologyLearner (biologylearner.com)*
 
 ### The Three Tissue Systems
 
@@ -65,7 +65,7 @@ Every plant organ — root, stem, leaf, flower part — is built from the same t
 Plant cells are structurally distinguished from animal cells by an external **cell wall**, built in layers: the **middle lamella** (pectin-rich, shared between adjacent cells, cementing them together — the layer that separates when cells "let go" of each other, as in fruit softening or leaf abscission), the **primary wall** (thin, flexible, deposited while the cell is still growing — cellulose microfibrils embedded in a hemicellulose/pectin matrix), and, in cells requiring additional strength, a **secondary wall** (deposited internal to the primary wall after growth stops, often impregnated with lignin, as in sclerenchyma and the water-conducting cells of xylem). Adjacent cell walls are perforated by **plasmodesmata**, cytoplasmic channels lined with plasma membrane that connect the cytoplasm of neighboring cells, allowing direct cell-to-cell transport (the **symplast**) as an alternative pathway to moving substances through the cell wall/extracellular space network (the **apoplast**) — this symplast/apoplast distinction is the structural basis for water and solute movement discussed throughout the rest of this section and in Plant Physiology.
 
 ![Plasmodesmata connecting adjacent plant cells: (a) electron micrograph of plasmodesmata in cottonwood leaf cells; (b) illustrated cutaway labeling the cell wall, plasma membrane, endoplasmic reticulum/desmotubule, and middle lamella at the same junction.](/PLANTANATPICS/plasmodesmata-cell-wall-junction.png)
-*Source: Raven, Evert & Eichhorn, Biology of Plants (W.H. Freeman/Macmillan) — commercial textbook figure, not CC-licensed. Confirm edition/page and rights basis before public deployment.*
+*Source: Raven, Evert & Eichhorn, Biology of Plants (W.H. Freeman/Macmillan)*
 
 ## Comparative Structures
 

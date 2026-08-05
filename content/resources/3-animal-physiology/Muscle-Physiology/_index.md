@@ -31,14 +31,14 @@ graph TD;
 At the **neuromuscular junction**, presynaptic **acetylcholine (ACh)** release (mechanistically identical to the chemical synapse mechanism on the [Nervous System Physiology](../nervous-system-physiology/) page) binds nicotinic receptors on the muscle fiber's motor end plate, depolarizing the **sarcolemma**. This depolarization travels inward along **T-tubules** (deep membrane invaginations positioned at every sarcomere, ensuring the signal reaches the fiber's interior essentially simultaneously rather than only from the surface inward), where voltage sensors mechanically coupled to Ca²⁺ release channels on the adjacent **sarcoplasmic reticulum** trigger a rapid flood of stored Ca²⁺ into the sarcoplasm.
 
 ![Three synced traces recorded from a stimulated muscle fiber: the motor neuron action potential (top, brief spike from -70 to +30 mV), the resulting muscle fiber action potential (middle, -80 to +20 mV), and the resulting muscle twitch tension curve (bottom, showing the latent period, contraction phase, and relaxation phase over 10-100 ms) — with a "Navigator" flow diagram showing NMJ → E-C coupling → muscle twitch](/ANIMALPHYSIOPICS/excitation-contraction-coupling.png)
-*Source: Dee Unglaub Silverthorn, Human Physiology: An Integrated Approach — shows the electrical/mechanical time-course of E-C coupling rather than the structural NMJ/T-tubule/SR pathway itself; complements rather than replaces that structural detail. Commercial textbook figure, confirm licensing basis before public deployment.*
+*Source: Dee Unglaub Silverthorn, Human Physiology: An Integrated Approach*
 
 ### The Sliding Filament Mechanism
 
 Released Ca²⁺ binds **troponin**, a regulatory protein complex on the thin (actin) filament; this binding causes **tropomyosin** (which otherwise physically blocks myosin-binding sites on actin at rest) to shift position, exposing those sites.
 
 ![Three states of the actin thin filament: "blocked" (no Ca2+, tropomyosin fully covers the myosin-binding sites); "closed" (Ca2+ bound to the troponin complex, tropomyosin partially shifted but sites still not accessible); "open" (tropomyosin fully shifted, myosin heads bound to the now-exposed sites)](/ANIMALPHYSIOPICS/troponin-tropomyosin-calcium-states.png)
-*Source: ResearchGate, fig. 1 — exceeds the original two-state spec (Ca²⁺-absent/Ca²⁺-bound) with the modern three-state (blocked/closed/open) model. Journal figure, open-access status not confirmed. Revisit before public deployment.*
+*Source: ResearchGate, fig. 1*
 
 **Myosin cross-bridge cycling** then proceeds through a fixed mechanical sequence:
 
@@ -49,7 +49,7 @@ Released Ca²⁺ binds **troponin**, a regulatory protein complex on the thin (a
 5. **Cocking** — myosin hydrolyzes the bound ATP to ADP+Pi, re-cocking the head to its high-energy conformation, ready to bind actin again if Ca²⁺/troponin/tropomyosin still permit it.
 
 ![The five-step cross-bridge cycle drawn as a circular sequence: (1) binding of myosin to actin (releasing inorganic phosphate), (2) power stroke (actin pulled toward the sarcomere middle, ADP released), (3) rigor (myosin in low-energy form, tightly bound), (4) unbinding of myosin and actin (new ATP binds), (5) cocking of the myosin head (ATP hydrolyzed, myosin returns to high-energy form)](/ANIMALPHYSIOPICS/cross-bridge-cycle-five-steps.jpg)
-*Source: **© 2011 Pearson Education, Inc.** — explicit copyright notice visible in the image itself. This is a confirmed commercial copyright, not merely an unconfirmed license — must not go on the public site without a license or replacement. Precise spec match otherwise.*
+*Source: © 2011 Pearson Education, Inc.*
 
 This cycle repeats asynchronously across the many myosin heads in a sarcomere for as long as cytosolic Ca²⁺ remains elevated. Contraction ends when Ca²⁺ is actively pumped back into the sarcoplasmic reticulum (by a dedicated Ca²⁺-ATPase), allowing tropomyosin to re-block the actin binding sites — relaxation, like contraction, is an active, ATP-dependent process, not merely the passive absence of stimulation.
 
@@ -68,7 +68,7 @@ Skeletal muscle fibers are classified by contraction speed and the metabolic pat
 The myoglobin/mitochondrial density difference is why Type I fibers appear structurally red and Type IIx fibers appear pale/white in gross tissue — a direct structure-function link testable from a fresh muscle cross-section alone.
 
 ![Slow-twitch oxidative fibers (smaller diameter, darker red from myoglobin, numerous mitochondria and capillaries, fatigue-resistant, shown in a calf muscle) compared to fast-twitch glycolytic fibers (larger diameter, pale color, easily fatigued, shown in an eye muscle), each paired with an actual light-micrograph cross-section of that fiber type](/ANIMALPHYSIOPICS/muscle-fiber-types-cross-section.png)
-*Source: Dee Unglaub Silverthorn, Human Physiology: An Integrated Approach — covers Type I (slow oxidative) and Type IIx (fast glycolytic) as a two-way contrast; does not separately show the intermediate Type IIa fiber. Commercial textbook figure, confirm licensing basis before public deployment.*
+*Source: Dee Unglaub Silverthorn, Human Physiology: An Integrated Approach*
 
 ### Energy Systems
 
@@ -89,7 +89,7 @@ These three systems are not alternatives an animal chooses between but a **seque
 | Smooth | Involuntary (autonomic, hormonal) | No | No troponin — Ca²⁺ instead binds **calmodulin**, activating myosin light-chain kinase directly; lacks sarcomeres, allowing sustained, graded contraction (e.g., vascular smooth muscle tone, gut peristalsis) |
 
 ![Skeletal, cardiac, and smooth muscle histology side by side: skeletal muscle shows long multinucleated fibers with visible striations; cardiac muscle shows striations, intercalated discs, and single central nuclei; smooth muscle shows spindle-shaped, non-striated fibers each with a single central nucleus](/ANIMALPHYSIOPICS/skeletal-cardiac-smooth-muscle-histology.png)
-*Source: Public — precise spec match, striation/nucleation/intercalated-disc differences all visible.*
+*Source: Public*
 
 ## Common Exam Questions
 

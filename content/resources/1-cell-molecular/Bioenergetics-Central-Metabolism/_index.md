@@ -24,7 +24,7 @@ Cellular reactions proceed only if net **ΔG < 0** (exergonic). Many biosyntheti
 Net reaction: one glucose (6C) is split and oxidised to **two pyruvate** (3C each), with net production of **2 ATP** (substrate-level phosphorylation — direct enzymatic phosphate transfer to ADP, no membrane or electron transport chain involved) and **2 NADH** per glucose. Glycolysis has an energy-investment phase (2 ATP consumed, phosphorylating the sugar to trap it in the cell and destabilise it for cleavage) followed by an energy-payoff phase (4 ATP produced, net +2). It requires no oxygen and no mitochondria — the reason it is universal across nearly all known life, including strict anaerobes.
 
 ![Glycolysis pathway, all ten steps and enzymes numbered from glucose to 2 pyruvate, with the net-output boxes (2 ATP, 2 pyruvate, 2 NADH) shown at the two ATP-generating steps](/MCBBPICS/glycolysis-net-summary.jpg)
-*Source: user-sourced via Instagram (biology.ocean) — confirm licensing basis before public deployment*
+*Source: user-sourced via Instagram (biology.ocean)*
 
 **Regulation**: the rate-limiting, committed step is catalysed by **phosphofructokinase-1 (PFK-1)**, allosterically inhibited by high ATP/citrate (signalling ample energy already available) and activated by AMP/ADP (signalling energy demand) — a classic feedback-regulation point worth knowing by name even without the full kinetic mechanism.
 
@@ -37,7 +37,7 @@ Glycolysis alone would rapidly stall once the cell's finite NAD⁺ pool is fully
 Pyruvate is first oxidatively decarboxylated to **acetyl-CoA** (releasing 1 CO₂, generating 1 NADH per pyruvate — so 2 of each per original glucose), by the multi-enzyme **pyruvate dehydrogenase complex**. Acetyl-CoA then enters the **TCA cycle**, condensing with oxaloacetate to form citrate; each full turn releases 2 CO₂, and generates (per acetyl-CoA, so ×2 per glucose) **3 NADH, 1 FADH₂, and 1 GTP/ATP** (the cycle's one substrate-level phosphorylation step), while regenerating oxaloacetate to accept the next acetyl-CoA. The TCA cycle is the convergence point for carbohydrate, fat, and (via the deamination products described in [Amino Acids & Protein Chemistry Fundamentals](../amino-acids-protein-chemistry/)) amino acid catabolism — all three fuel classes ultimately feed carbon into this one cyclic pathway.
 
 ![Full TCA (citric acid) cycle diagram: pyruvate entering via pyruvate dehydrogenase as acetyl-CoA, condensing with oxaloacetate to form citrate, then proceeding through aconitase, isocitrate dehydrogenase, α-ketoglutarate dehydrogenase, succinyl-CoA synthetase, succinate dehydrogenase, fumarase, and malate dehydrogenase back to oxaloacetate, with CO2, NADH, FADH2, and GTP outputs marked at each relevant step](/MCBBPICS/tca-cycle-diagram.svg)
-*Source: Wikipedia — confirm licensing basis before public deployment*
+*Source: Wikipedia*
 
 **Regulation**: high NADH/ATP allosterically inhibits both pyruvate dehydrogenase and the TCA cycle's own rate-limiting enzyme (isocitrate dehydrogenase) — the same "abundant energy signals slow further extraction" logic as PFK-1 regulation above.
 
@@ -49,7 +49,7 @@ This is where the large majority of ATP is actually produced, via two coupled pr
 2. **Chemiosmosis**: protons flow back down this gradient through **ATP synthase**, a rotary molecular motor that couples proton flow to the mechanical synthesis of ATP from ADP + Pᵢ. This is **oxidative phosphorylation**, mechanistically distinct from the direct, enzyme-mediated substrate-level phosphorylation seen in glycolysis and the TCA cycle — ATP synthase makes ATP using a physical proton gradient, not a direct chemical group transfer.
 
 ![Electron transport chain and ATP synthase across the inner mitochondrial membrane: NADH and FADH2 donate electrons at Complexes I/II, electrons pass through the protein complex chain (Q, Complex III, cytochrome c, Complex IV) reducing O2 to H2O, protons are pumped into the intermembrane space at each step, and ATP synthase uses the resulting gradient to phosphorylate ADP](/MCBBPICS/etc-atp-synthase-chemiosmosis.jpg)
-*Source: bio1151.nicerweb.com — confirm licensing basis before public deployment*
+*Source: bio1151.nicerweb.com*
 
 NADH and FADH₂ feed electrons in at different points of the chain (FADH₂ enters lower, at Complex II, bypassing Complex I), which is why NADH yields somewhat more ATP per molecule than FADH₂ under the chemiosmotic model — a frequent point of confusion, since older textbooks quote fixed "3 ATP per NADH, 2 ATP per FADH₂" ratios that are now understood to be approximate rather than fixed stoichiometric constants (the actual yield depends on the proton-motive force and which shuttle system moves cytoplasmic NADH equivalents into the mitochondrion). For exam purposes, know the qualitative point — NADH enters the chain earlier and yields more ATP than FADH₂ — rather than memorising a single "true" numeric ratio.
 

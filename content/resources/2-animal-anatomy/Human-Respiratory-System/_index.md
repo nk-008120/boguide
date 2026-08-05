@@ -19,14 +19,14 @@ This page covers the structural anatomy of the airway from nose to alveolus, the
 Air entering through the **nasal cavity** passes over three bony **conchae (turbinates)**, projections that increase surface area and create turbulent airflow — structurally maximizing contact with the mucous membrane lining, which warms, humidifies, and filters incoming air (trapped particles are swept posteriorly by ciliated pseudostratified columnar epithelium, see [Body Plans](../body-plans/), toward the pharynx to be swallowed). The **pharynx** (nasopharynx, oropharynx, laryngopharynx) is a shared passage for both air and food, structurally requiring the protective reflexes at the larynx described below.
 
 ![Sagittal head/neck section labeling the nasal conchae, nasal meatuses, nasopharynx, oropharynx, laryngopharynx, uvula, palatine/pharyngeal/lingual tonsils, epiglottis, vocal/vestibular folds, thyroid and cricoid cartilage, and trachea/esophagus.](/ANATOMYPICS/upper-respiratory-tract-sagittal-section.jpg)
-*Source: user-sourced (originally via WTCS Pressbooks). Exceeds spec — labels the full pharyngeal subdivision and tonsil ring alongside the conchae.*
+*Source: WTCS Pressbooks*
 
 ### Larynx
 
 The larynx sits at the pharyngo-tracheal junction, built around a cartilaginous framework: the large **thyroid cartilage** (its anterior prominence forms the "Adam's apple"), the **cricoid cartilage** (a complete ring, the only one in the airway, sitting inferior to the thyroid cartilage), and the leaf-shaped **epiglottis** (attached at the thyroid cartilage, projecting upward), which folds down to cover the laryngeal opening during swallowing — a direct, structurally simple mechanism preventing food/liquid from entering the trachea, and a common applied-anatomy question (aspiration occurs when this mechanism fails or is bypassed). Within the larynx, paired **vocal folds (cords)** — folds of mucous membrane overlying the **vocalis muscle** — vibrate as air passes between them; the muscles controlling fold tension and the width of the gap between them (the **glottis**) determine pitch and volume.
 
 ![Larynx structure in anterior and right lateral view: epiglottis, hyoid bone, thyroid cartilage and laryngeal prominence, cricoid cartilage, tracheal cartilages, cricothyroid/cricotracheal ligaments, plus (lateral view) the arytenoid, corniculate, and cuneiform cartilages and the vocal/vestibular folds.](/ANATOMYPICS/larynx-cartilages-vocal-folds.webp)
-*Source: user-sourced (originally via microbenotes.com). Exceeds spec with the smaller paired cartilages (arytenoid/corniculate/cuneiform) beyond thyroid/cricoid/epiglottis.*
+*Source: microbenotes.com*
 
 ### Trachea and Bronchial Tree
 
@@ -45,7 +45,7 @@ graph TD;
 The **trachea's C-shaped cartilage rings** are open posteriorly (the gap bridged by smooth muscle, the **trachealis**), so the adjacent esophagus can bulge forward slightly during swallowing without obstruction, while the cartilage still keeps the airway rigidly open elsewhere around its circumference. Moving distally through the bronchial tree, cartilage support progressively diminishes and disappears entirely at the bronchiole level, replaced functionally by smooth muscle — meaning bronchiole diameter (and therefore airway resistance) is actively regulated by smooth muscle tone (bronchoconstriction/bronchodilation) rather than fixed by rigid cartilage, a direct structural link to conditions like asthma. The distinction between **terminal bronchioles** (purely conducting airway, no alveoli, contributing to **anatomical dead space** — air that never reaches a gas-exchange surface) and **respiratory bronchioles** (the first airway generation bearing scattered alveoli) is a specific, testable structural boundary.
 
 ![Full airway from nasal cavity through pharynx, larynx (vocal fold, thyroid/cricoid cartilage), trachea, and the branching bronchial tree (right/left main bronchi, color-coded lobar bronchi, intermediate bronchus) down into each lung lobe, with an inset zoom showing alveolar sacs, capillary beds, and the pulmonary artery/vein at a single alveolus.](/ANATOMYPICS/bronchial-tree-trachea-to-alveoli.jpg)
-*Source: user-sourced (originally attempted via a ScienceDirect topic page). Exceeds spec with the alveolar-level inset showing capillary beds directly.*
+*Source: ScienceDirect (topic page)*
 
 ### Lung Gross Anatomy and Pleura
 
@@ -59,7 +59,7 @@ The right lung has **three lobes** (superior, middle, inferior), the left lung h
 **Alveoli** are the functional gas-exchange unit: thin-walled sacs, clustered in grape-like arrangements at the end of alveolar ducts, with two structurally distinct cell types in their wall. **Type I alveolar cells** (squamous, the majority of the surface area) provide the thin gas-exchange surface — together with the adjacent capillary endothelium and a fused shared basement membrane, only two cell layers separate air from blood, a minimal diffusion distance that is the entire structural basis for efficient gas exchange. **Type II alveolar cells** (cuboidal, fewer in number but more numerous by cell count since they are smaller) secrete **surfactant** — a phospholipid mixture that reduces surface tension at the air-liquid interface lining each alveolus, preventing smaller alveoli from collapsing into larger ones (by Laplace's law, surface tension would otherwise generate higher collapsing pressure in smaller-radius alveoli) — a direct structure-function link tested via surfactant-deficiency conditions in premature infants, where Type II cells have not yet matured. Adjacent alveoli are additionally connected by small openings, the **pores of Kohn**, allowing collateral air movement and pressure equalization between neighboring alveoli.
 
 ![Alveolar structure (g) showing Type I and Type II alveolar cells, capillaries, endothelial cells, elastic fibers, and an alveolar macrophage; zoomed exchange-surface view (h) showing an RBC in a capillary separated from the alveolar air space by endothelium, fused basement membranes, and surfactant-lined alveolar epithelium — a 0.1-1.5 μm total diffusion distance — with a blue arrow marking the gas-exchange path.](/ANATOMYPICS/alveolar-wall-type-1-2-cells.png)
-*Source: Dee Unglaub Silverthorn,* Human Physiology: An Integrated Approach*. Commercial textbook figure — confirm licensing basis before public deployment. Exceeds spec — directly labels the diffusion-distance value and surfactant location, both discussed in the text.*
+*Source: Dee Unglaub Silverthorn,* Human Physiology: An Integrated Approach*.*
 
 ### Ventilation Mechanics
 

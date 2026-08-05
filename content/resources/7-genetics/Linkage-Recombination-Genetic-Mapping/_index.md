@@ -20,10 +20,10 @@ syllabus_tags: ["IBO", "USABO", "genetics", "chromosomal-genetics"]
 For two genes assorting independently, a **dihybrid testcross** (AaBb × aabb) produces four gamete-derived offspring classes in an equal 1:1:1:1 ratio: parental-type combinations (AB, ab) and recombinant-type combinations (Ab, aB) appear equally often, because independent assortment gives no combination any advantage. When two genes are **linked** (physically close together on the same chromosome), the parental combinations are inherited together far more often than chance predicts — the testcross instead produces a strong excess of the two **parental** (non-recombinant) classes and a deficit of the two **recombinant** classes, with the size of the deficit reflecting how physically close the two genes are.
 
 ![Two linked-gene crosses (AAbb × aaBB and aabb × AABB) each producing an AaBb F1, whose gametes split into parental-type (blue: Ab/aB or ab/AB) and recombinant/crossover-type (red) classes.](/GENETICSPICS/linked-genes-parental-vs-recombinant-gametes.png)
-*Source: opengenetics.pressbooks.tru.ca — confirm licensing basis before public deployment. Note: shows two linked-cross examples (different starting phase arrangements) rather than a direct side-by-side contrast against the unlinked 1:1:1:1 pattern.*
+*Source: opengenetics.pressbooks.tru.ca*
 
 ![Crossing over between homologous chromosomes at a chiasma during prophase I, producing two recombinant chromosomes (each part red, part green) alongside the two original parental chromosomes.](/GENETICSPICS/crossing-over-chiasma-prophase-i-diagram.png)
-*Source: Wikipedia (Chiasma (genetics)) — confirm licensing basis before public deployment. Note: supplementary mechanistic diagram illustrating the chiasma/single-crossover event referenced in this page's Overview; not one of the four originally specified Static items.*
+*Source: Wikipedia (Chiasma (genetics))*
 
 ### Recombination frequency
 
@@ -38,7 +38,7 @@ RF ranges from 0% (genes so close together that crossing over between them is ne
 **Recombination frequency is used directly as a measure of genetic distance**: 1% recombination frequency is defined as **1 map unit (m.u.)**, also called **1 centimorgan (cM)**. This relationship is empirical, not derived from first principles — it reflects the observation that crossover probability between two loci scales roughly with the physical distance separating them (for RF values well below the 50% ceiling; the relationship becomes non-linear and underestimates true distance at higher RF values, since multiple crossovers between distant loci can cancel out and go undetected — see below). A **genetic (linkage) map** orders genes along a chromosome and reports the map-unit distances between them, built up by summing pairwise recombination frequencies between adjacent markers.
 
 ![A real genetic linkage map of wheat chromosome 2A, with molecular markers positioned along the chromosome at their calculated centimorgan (cM) distances from 0.0 to 160.3.](/GENETICSPICS/genetic-map-linkage-group-centimorgans.png)
-*Source: researchgate.net — confirm licensing basis before public deployment. Note: a real, research-grade linkage map with many molecular markers (wheat chromosome 2A), rather than a simplified textbook diagram of just three genes — the map-unit/centimorgan concept it illustrates is exactly as described in the text, but it's denser than the original request.*
+*Source: researchgate.net*
 
 ### The three-point testcross
 
@@ -51,7 +51,7 @@ Mapping three linked genes simultaneously (rather than pairwise) is both more ef
 The **gene order** is determined by comparing the double-crossover class phenotypes to the parental class phenotypes: whichever gene's allele arrangement is *reversed* relative to the parental classes in the double-crossover offspring is the **middle gene** — since only the middle gene's position experiences two independent crossover events landing on either side of it.
 
 {{< youtube V39s7iqhexU >}}
-*Source: YouTube, "Three-point cross Gene Mapping || 4K Animation" — embedded in place of the originally requested static worked-example table, per user direction.*
+*Source: YouTube, "Three-point cross Gene Mapping || 4K Animation"*
 
 ### Interference and the coefficient of coincidence
 
@@ -64,7 +64,7 @@ $$ \text{Interference} = 1 - \text{c.o.c.} $$
 A coefficient of coincidence of 1 means no interference (crossovers occur independently); a value less than 1 (the typical case) means **positive interference** — observed double crossovers are rarer than the independence assumption predicts, consistent with a physical/structural constraint on how closely together two chiasmata can form.
 
 ![Five crossover configurations between two linked genes (A/a, B/b) and their resulting recombination frequencies: no crossover (RF=0%), single crossover (RF=50%), two-strand double crossover (RF=0%, parental combination fully restored), three-strand double crossover (RF=50%), and four-strand double crossover (RF=100%).](/GENETICSPICS/double-crossover-parental-combination-restored-diagram.jpg)
-*Source: kvmwai.edu.in (PDF course material) — confirm licensing basis before public deployment. Direct match — the "two-strand double cross over" panel is exactly the parental-combination-restored case the text describes.*
+*Source: kvmwai.edu.in (PDF course material)*
 
 ## Comparative Structures
 

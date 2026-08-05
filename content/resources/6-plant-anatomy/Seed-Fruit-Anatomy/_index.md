@@ -23,7 +23,7 @@ The ovule's **integuments** (one or two layers, see [Flower Anatomy & Reproducti
 The fertilized **zygote** (see [Flower Anatomy & Reproductive Structures](../flower-anatomy-reproductive-structures/)) develops into the embryo, organized along a single axis: a **radicle** (embryonic root) at one end, a **plumule** (embryonic shoot, itself sometimes called the epicotyl above the cotyledon attachment point) at the other, connected by a **hypocotyl** (the embryonic axis segment between radicle and cotyledon attachment), and bearing one **cotyledon** (monocots) or two (dicots) — the same cotyledon-count distinction introduced on [Monocot vs Dicot Comparative Anatomy](../monocot-dicot-comparative-anatomy/). In many dicot seeds the cotyledons themselves swell to become the seed's primary nutrient-storage structure (see below); in monocots the single cotyledon (in grasses, specifically modified into a structure called the **scutellum**) instead functions mainly to absorb and transfer stored nutrient from a separate endosperm rather than storing it directly.
 
 ![A dicot seed (bean) with seed coat, embryo, cotyledon, hypocotyl, radicle, and plumule labeled, alongside a monocot seed (corn) with pericarp+seed coat (fused), endosperm, and embryo labeled.](/PLANTANATPICS/dicot-monocot-seed.png)
-*Source: Biology LibreTexts — confirm the specific CC license (BY vs. BY-NC-SA) on the originating page before public deployment. Covers both the dicot (non-endospermic) and monocot (endospermic) seed spec items in one combined figure.*
+*Source: Biology LibreTexts*
 
 ### Endosperm, Perisperm, and Nutrient Storage Strategy
 
@@ -39,7 +39,7 @@ A separate nutritive tissue, **perisperm**, occurs in a smaller number of specie
 Following fertilization, the ovary wall matures into the **pericarp**, differentiating into up to three structural layers: **exocarp** (outermost, often a thin skin), **mesocarp** (middle, variable — thin and dry, or thick and fleshy, depending on fruit type), and **endocarp** (innermost, in direct contact with the seed(s), variable — thin and membranous, or hardened into a stone). Not every fruit shows all three layers as structurally distinct; the degree of differentiation is exactly what separates the fruit types below.
 
 ![A peach (drupe) cross-section labeling the seed (endosperm, embryo, seed coat) and the pericarp's three layers (exocarp, mesocarp, endocarp).](/PLANTANATPICS/drupe-cross-section.png)
-*Source: Wikimedia Commons, "Drupe fruit diagram" (commons.wikimedia.org) — Wikimedia-hosted diagrams are typically openly licensed; confirm the specific license tag before public deployment. Exceeds the spec, also labeling the internal seed structure.*
+*Source: Wikimedia Commons, "Drupe fruit diagram" (commons.wikimedia.org)*
 
 ### Fruit Classification
 
@@ -52,7 +52,7 @@ Fruits are classified first by how many ovaries/flowers contributed to the struc
 - **Multiple fruit** — develops from the fused ovaries of many separate flowers clustered in one inflorescence, maturing into what appears externally as one unit (e.g. pineapple, fig, mulberry).
 
 ![Two fleshy-fruit examples: (a) strawberries, an aggregate fruit whose achenes sit on a fleshy receptacle; (b) chaparral honeysuckle berries, individual berries developing from inferior ovaries.](/PLANTANATPICS/aggregate-vs-multiple-fruit.png)
-*Source: Raven, Evert & Eichhorn, Biology of Plants (W.H. Freeman/Macmillan) — commercial textbook figure, not CC-licensed. Confirm edition/page and rights basis before public deployment. **Content mismatch**: panel (a) matches the aggregate-fruit spec (strawberry, technically an aggregate/accessory fruit), but panel (b) does not show a multiple fruit — chaparral honeysuckle berries are individual berries from separate flowers, not fused into one unit the way a fig or pineapple is. No genuine multiple-fruit example was found in this source; kept panel (a) for the aggregate-fruit concept and flagged panel (b) here rather than mislabeling it.*
+*Source: Raven, Evert & Eichhorn, Biology of Plants (W.H. Freeman/Macmillan)*
 
 ### Dispersal-Related Structural Adaptations
 

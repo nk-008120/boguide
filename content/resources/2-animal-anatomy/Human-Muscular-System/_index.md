@@ -135,7 +135,7 @@ The three connective-tissue wrappings (epi-/peri-/endomysium) converge at the mu
 A motor neuron's axon terminal forms a specialized synapse, the **neuromuscular junction (NMJ)**, onto a specific site on the muscle fiber, the **motor end plate** — a region of extensively folded sarcolemma (muscle cell membrane) that increases surface area for **acetylcholine (ACh)** receptors. Arrival of an action potential at the axon terminal triggers ACh release into the **synaptic cleft**; ACh binding at the motor end plate depolarizes the sarcolemma, generating a muscle action potential.
 
 ![A three-panel zoom from a whole muscle fiber down to the neuromuscular junction: the axon terminal and synaptic end bulb sitting on the sarcolemma, then a close-up of ACh-containing synaptic vesicles releasing their contents by exocytosis into the synaptic cleft and binding ACh receptors on the motor end plate, opening Na+ channels.](/ANATOMYPICS/neuromuscular-junction-motor-end-plate.jpg)
-*Source: user-sourced textbook-style figure. Exceeds spec — shows the full zoom sequence from gross muscle fiber down to individual ACh receptor binding.*
+*Source: user-sourced textbook-style figure*
 
 This electrical signal is carried into the fiber's interior by **T-tubules** (transverse tubules — deep, tubular invaginations of the sarcolemma, penetrating between myofibrils at regular intervals aligned with the sarcomere pattern), which lie immediately adjacent to the **sarcoplasmic reticulum (SR)** — a specialized smooth ER wrapping each myofibril and storing a large intracellular calcium reserve. A T-tubule flanked by two SR terminal cisternae forms a structural unit called a **triad**. Depolarization of the T-tubule membrane is mechanically/electrically coupled (via voltage-sensing **DHP receptors** on the T-tubule linked to **ryanodine receptors**, which are calcium-release channels, on the adjacent SR) to rapid calcium release from the SR into the sarcoplasm — this triad structure is the specific anatomical basis of **excitation-contraction coupling**, the process linking a surface electrical signal to filament sliding deep within the fiber. Released calcium binds troponin C (above), exposing myosin-binding sites and permitting the cross-bridge cycle to proceed; when nervous stimulation ends, calcium is actively pumped back into the SR, tropomyosin re-blocks the binding sites, and the muscle relaxes.
 
@@ -228,7 +228,7 @@ Not all skeletal muscle fibers are structurally identical; three types differ in
 Myoglobin content (an oxygen-binding pigment structurally analogous to hemoglobin, but retained within the muscle fiber as an internal oxygen reserve) is directly responsible for the color difference between "red" and "white" muscle fibers/meat — a structural, histologically visible correlate of a fiber's metabolic strategy. Most human muscles are a mixed population of fiber types, with the proportion varying by muscle and (within limits) by training.
 
 ![Slow-twitch oxidative fibers (calf muscle, small diameter, dark with myoglobin, dense capillaries/mitochondria, fatigue-resistant) compared to fast-twitch glycolytic fibers (eye muscle, larger diameter, pale, easily fatigued), each with a real cross-section micrograph.](/ANATOMYPICS/muscle-fiber-types-cross-section.png)
-*Source: Dee Unglaub Silverthorn,* Human Physiology: An Integrated Approach *(also used on the [Animal Physiology: Muscle Physiology](../../3-animal-physiology/Muscle-Physiology/) page). Commercial textbook figure — confirm licensing basis before public deployment. Shows only a two-way slow/fast contrast; the intermediate Type IIa fiber described in the table above is not separately depicted.*
+*Source: Dee Unglaub Silverthorn,* Human Physiology: An Integrated Approach *(also used on the [Animal Physiology: Muscle Physiology](../../3-animal-physiology/Muscle-Physiology/) page).*
 
 ### Motor Units
 
@@ -244,7 +244,7 @@ High-yield named muscles for practical/dissection-style questions, organized by 
 - **Lower limb**: quadriceps femoris (knee extension), hamstrings (knee flexion, hip extension — antagonistic to quadriceps), gastrocnemius/soleus (ankle plantarflexion).
 
 ![Major superficial and deep muscles of the body, anterior view (deltoid, pectoralis major, rectus abdominis, biceps brachii, quadriceps, tibialis anterior, and more) and posterior view (trapezius, latissimus dorsi, triceps brachii, gluteus maximus, hamstrings, gastrocnemius, and more), each fully labeled.](/ANATOMYPICS/major-muscle-groups-anterior-posterior.jpg)
-*Source: OpenStax-style figure (via Lumen Learning). Exceeds spec — labels far more muscles than the short list above, in both anterior and posterior full-body views.*
+*Source: OpenStax-style figure (via Lumen Learning)*
 
 **Antagonistic pairs** are worth understanding as a general principle: because muscles only generate pulling force, any joint movement requires an opposing muscle (or gravity) to reverse it. Flexor/extensor pairs across the elbow and knee are the standard testable examples.
 

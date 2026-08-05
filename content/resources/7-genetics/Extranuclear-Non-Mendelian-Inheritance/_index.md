@@ -20,20 +20,20 @@ Every pattern covered so far — however extended or complicated — still ultim
 Mitochondria and chloroplasts carry their own small circular genomes, independent of the nuclear genome (see [Mitochondria & Chloroplasts: Structure & Endosymbiotic Origin](/resources/1-cell-molecular/mitochondria-chloroplasts-structure-origin/) for why — their bacterial endosymbiotic ancestry). Because a zygote's cytoplasm — and essentially all of its organelles — comes overwhelmingly from the much larger egg cell rather than the sperm, organelle genes show **strict maternal (uniparental) inheritance**: **all** offspring of an affected mother inherit the organellar genotype, regardless of the father's genotype, and a father never transmits his mitochondrial or chloroplast genome to any offspring at all. This produces a reciprocal-cross asymmetry that looks superficially like X-linkage but has a completely different mechanistic basis (cytoplasm inheritance, not a sex chromosome) — the diagnostic test is that organelle-inherited traits show **no Mendelian segregation ratio at all**: every offspring of an affected mother is affected, not a fraction. Human mitochondrial diseases (e.g. Leber's hereditary optic neuropathy) and variegated leaf patterns in some plants (from chloroplast genotype) are standard examples.
 
 ![Two multi-generation pedigrees showing strict maternal (mitochondrial) transmission: every child of an affected mother is affected, regardless of sex, while affected fathers transmit the trait to none of their children.](/GENETICSPICS/mitochondrial-inheritance-maternal-pedigree.jpg)
-*Source: migrc.org — confirm licensing basis before public deployment. Note: shows the maternal-transmission pattern alone rather than side-by-side against a standard Mendelian autosomal pedigree for direct visual contrast.*
+*Source: migrc.org*
 
 ![Plastid (chloroplast) inheritance in Mirabilis jalapa: offspring color (green, pale green, or variegated) is determined entirely by which branch supplied the female (seed) parent, not the male (pollen) parent, across a wheel of possible female-branch × male-branch crosses.](/GENETICSPICS/chloroplast-inheritance-variegated-leaf-cross.jpg)
-*Source: biologyreader.com — confirm licensing basis before public deployment.*
+*Source: biologyreader.com*
 
 ![Heteroplasmy: a cell containing a mixture of wild-type (normal) and mutant mitochondria divides via random segregation, producing daughter cells ranging from normal homoplasmy through intermediate heteroplasmy (30%, 70% mutant) to mutant homoplasmy — with disease phenotype emerging only once the mutant fraction crosses a threshold.](/GENETICSPICS/heteroplasmy-mitochondrial-mosaicism-diagram.jpg)
-*Source: researchgate.net — confirm licensing basis before public deployment. Note: supplementary background on why mitochondrial disease severity can vary between individuals/tissues; not one of this page's four originally specified Static items.*
+*Source: researchgate.net*
 
 ### Maternal effect
 
 **Maternal effect** genes produce a phenotype in the offspring that is determined by the **mother's genotype**, not the offspring's own — because the mother deposits gene products (mRNA or protein) into the egg cytoplasm *before* fertilization, and these maternally supplied products control an early developmental process before the zygote's own genome is transcriptionally active. The classic example is snail shell coiling direction (dextral/sinistral), controlled by a nuclear gene: an offspring's shell-coiling phenotype matches its **mother's genotype**, one generation delayed, regardless of the offspring's own genotype — a cross between a dextral mother and sinistral father produces all-dextral offspring (matching mother), and the *offspring's own* genotype only becomes phenotypically visible one generation later, in *their* offspring. This is diagnostically distinct from organelle inheritance: maternal effect involves a **nuclear** gene, delayed by one generation and expressed via cytoplasmic deposition, not a cytoplasmic organelle genome transmitted directly.
 
 ![Snail shell-coiling cross: a sinistral (dd) female × dextral (DD) male produce sinistral F1 (Dd, matching the mother's sinistral phenotype despite being heterozygous); the F1 (Dd × Dd) then produce F2 offspring (dd, Dd, Dd, DD) that are all dextral, since their mother (F1) was Dd — demonstrating the one-generation delay between an individual's own genotype and its phenotype.](/GENETICSPICS/snail-shell-coiling-maternal-effect-cross.jpg)
-*Source: sciencedirect.com — confirm licensing basis before public deployment. Direct match.*
+*Source: sciencedirect.com*
 
 ### Genomic imprinting
 
@@ -46,7 +46,7 @@ Mitochondria and chloroplasts carry their own small circular genomes, independen
 **Cytoplasmic male sterility (CMS)** in plants is a mitochondrially-encoded trait that disrupts pollen (male gamete) production while leaving female fertility intact — inherited maternally, like other mitochondrial traits. CMS is agriculturally significant: because it prevents self-pollination without requiring manual emasculation, it is widely exploited by plant breeders to guarantee cross-pollination when producing commercial hybrid seed (e.g. in hybrid corn/maize production).
 
 ![Hybrid seed production using cytoplasmic male sterility: a male-sterile (msms) inbred "A line" is crossed with a fertile line to produce sterile hybrid seed; a separate "restorer" line (with a nuclear fertility-restorer allele) is used when fertile hybrid seed is needed instead, illustrating the two main breeding schemes CMS enables.](/GENETICSPICS/cytoplasmic-male-sterility-hybrid-seed-production.png)
-*Source: researchgate.net — confirm licensing basis before public deployment. Note: a real, somewhat technical breeding-scheme diagram (A lines, restorer lines, backcrossing) rather than a simplified textbook illustration, but it directly matches the text's "commercial hybrid seed production" application.*
+*Source: researchgate.net*
 
 ## Comparative Structures
 

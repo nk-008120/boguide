@@ -29,35 +29,35 @@ graph LR;
 ```
 
 ![Fish gill structure and countercurrent exchange: water flows from the mouth over the gill arch and filaments to the lamellae, while blood flows through capillaries within the lamellae in the opposite direction — a simplified capillary trace shows water O2 saturation falling from 100% to 15% along the exchange surface while blood O2 saturation simultaneously rises from 15% to 80%, always meeting less-depleted water further along](/ANIMALPHYSIOPICS/gill-countercurrent-gas-exchange.jpg)
-*Source: **© 2009 Pearson Education, Inc.** — explicit copyright notice visible in the image itself. This is a confirmed commercial copyright, not merely an unconfirmed license — must not go on the public site without a license or replacement. Precise spec match otherwise, including numeric O2% values along the countercurrent exchange.*
+*Source: © 2009 Pearson Education, Inc.*
 
 ### Tidal Ventilation: The Mammalian Limit
 
 Mammalian lungs (see [Human Respiratory System](../../2-animal-anatomy/human-respiratory-system/)) are **tidal**: air moves in and out through the same passageway, meaning fresh incoming air always mixes with residual, already gas-exchanged air remaining in the airways ("dead space") from the previous breath, and alveolar air is never fully replaced in a single breath. This co-mingling structurally caps mammalian gas-exchange efficiency well below the countercurrent gill system's — typically extracting only ~25% of the O₂ present in inhaled air, a direct structural cost of a tidal, blind-ended lung design.
 
 ![Dead space and ventilation rate diagram: minute ventilation (total airflow rate) splits between anatomic/functional dead space (conducting airways with no gas exchange, left) and alveolar ventilation (airflow reaching functioning alveoli where O2/CO2 actually cross into/out of blood, right) — the dead-space fraction of every breath is, by definition, air that achieves no gas exchange](/ANIMALPHYSIOPICS/mammalian-tidal-ventilation-dead-space.png)
-*Source: ditki.com — framed around the dead-space/ventilation-rate terminology rather than directly depicting fresh air mixing with residual air, but illustrates the same underlying limitation (a fixed fraction of every tidal breath achieves no gas exchange). Confirm licensing basis before public deployment.*
+*Source: ditki.com*
 
 ### Unidirectional Bird Lung Ventilation
 
 Birds achieve substantially higher gas-exchange efficiency than mammals via a structurally distinct solution: air flows **unidirectionally** through rigid, tube-like **parabronchi** (rather than in and out of blind-ended alveoli), driven by a system of **air sacs** (see [Reptile & Bird Anatomy](../../2-animal-anatomy/reptile-bird-anatomy/)) that act as bellows, requiring **two full breath cycles** for a single volume of air to completely transit the system (inhaled air first fills posterior air sacs, then on the next cycle passes through the parabronchi to anterior air sacs before being exhaled) — but ensuring continuous, unidirectional, fresh airflow across the gas-exchange surface during both inhalation and exhalation, unlike the mammalian tidal system where gas exchange only usefully occurs on inhalation. Blood flow across the parabronchi runs roughly perpendicular to airflow (**cross-current exchange** — less efficient than true countercurrent, but still substantially better than tidal ventilation), contributing to birds' well-documented ability to sustain activity at high altitudes where mammalian tidal ventilation struggles.
 
 ![The bird respiratory system's two-cycle airflow, shown as a repeating four-step sequence: (1) 1st inhale — air moves through/past the lungs to the posterior air sacs; (2) 1st exhale — that air moves from the posterior air sacs into the lung tissue; (3) 2nd inhale — waste air moves from the lungs into the anterior air sacs; (4) 2nd exhale — waste air finally leaves the body via the anterior air sacs and trachea — with multiple steps overlapping in time so airflow through the lung tissue itself is continuous](/ANIMALPHYSIOPICS/bird-respiratory-air-sacs-parabronchi.png)
-*Source: Jessie Atterholt, PhD — precise spec match, clearly sequencing the two-cycle airflow path. Confirm licensing basis before public deployment.*
+*Source: Jessie Atterholt, PhD*
 
 ### Insect Tracheal Systems: Direct Diffusion
 
 Insects bypass the circulatory system for gas transport entirely: external **spiracles** (valved openings, see [Invertebrate Body Plans II](../../2-animal-anatomy/invertebrate-body-plans-2/) for exoskeletal structure) lead to a branching network of **tracheae** and progressively finer **tracheoles** that extend directly to essentially every individual cell, delivering O₂ and removing CO₂ by direct diffusion (assisted by active abdominal pumping ventilation in larger/more active insects) without hemolymph (insect "blood") playing any significant role in gas transport at all — a structural point worth stating explicitly, since it is a common exam trap to assume all animals with an open circulatory system must transport gases in that circulatory fluid. This direct-diffusion strategy is only viable at small body scale, since diffusion distance limits how deep the tracheal network can effectively reach — a structural constraint on maximum insect body size.
 
 ![Insect tracheal system: an external spiracle in the exoskeleton opens into a trachea, which branches into progressively finer tracheoles reaching directly into the body's interior, all without any circulatory (hemolymph) involvement](/ANIMALPHYSIOPICS/insect-tracheal-system-spiracles.webp)
-*Source: ResearchGate, fig. 9 — precise spec match. Journal figure, open-access status not confirmed. Revisit before public deployment.*
+*Source: ResearchGate, fig. 9*
 
 ### Diving Physiology: The Dive Reflex
 
 Breath-hold diving mammals (seals, whales) and diving birds rely on a coordinated **mammalian dive reflex**, triggered primarily by water contacting the face/nasal passages: immediate **bradycardia** (heart rate drops sharply, reducing overall O₂ consumption), and selective peripheral **vasoconstriction** that shunts blood flow away from non-essential tissue (skin, digestive organs, skeletal muscle) toward the brain and heart specifically — prioritizing O₂ delivery to the organs least tolerant of hypoxia. Skeletal muscle, receiving reduced blood flow during a dive, relies heavily on its own **myoglobin** stores (a single-subunit O₂-binding protein structurally related to but distinct from hemoglobin — see [Respiratory Physiology](../respiratory-physiology/) for hemoglobin's cooperative binding — with a higher O₂ affinity than hemoglobin, allowing myoglobin to extract and store O₂ from blood for local use during the dive and tolerate the resulting anaerobic glycolysis/lactate buildup once those local stores are depleted) rather than continuous circulatory O₂ delivery during the dive itself.
 
 ![Physiological changes during diving compared between aquatic (marine) mammals and terrestrial mammals: blood volume, hematocrit/hemoglobin, myoglobin, and hypothermia all increase substantially in aquatic divers but stay essentially unchanged in terrestrial mammals, while heart rate decrease, vasoconstriction, and apnea occur in both groups but to a much greater degree in aquatic divers](/ANIMALPHYSIOPICS/dive-reflex-bradycardia-vasoconstriction.jpg)
-*Source: PMC (National Center for Biotechnology Information), article PMC3768097 — a magnitude-comparison chart contrasting aquatic vs. terrestrial mammal dive responses, rather than an anatomical diagram of specific vasoconstriction targets — captioned accordingly.*
+*Source: PMC (National Center for Biotechnology Information), article PMC3768097*
 
 ### High-Altitude Adaptation
 

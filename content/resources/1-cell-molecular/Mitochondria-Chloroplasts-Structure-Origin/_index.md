@@ -32,21 +32,21 @@ Evidence supporting this theory, and why each piece of evidence specifically sup
 - **Sequence homology**: mitochondrial and chloroplast genes/rRNA sequences show closer phylogenetic relationship to specific bacterial lineages (α-proteobacteria for mitochondria, cyanobacteria for chloroplasts) than to the eukaryotic nuclear genome — direct molecular phylogenetic evidence, and the single strongest line of evidence overall.
 
 ![Primary vs. secondary endosymbiosis: primary endosymbiosis shows an ancestral host cell engulfing a mitochondrion-precursor, then a cyanobacterium, producing a photosynthetic eukaryote with a double-membrane chloroplast; secondary endosymbiosis shows a different ancestral host cell engulfing that entire photosynthetic eukaryote (alga), producing a chloroplast with four membranes and a residual nucleomorph](/MCBBPICS/endosymbiotic-engulfment-comparison.jpg)
-*Source: ScienceDirect Topics ("endosymbiosis") — confirm licensing basis before public deployment. ScienceDirect topic pages are not a confirmed-open source by default. Note: covers both primary endosymbiosis (the mitochondrion/chloroplast origin story described in the text) and secondary endosymbiosis (a more advanced topic beyond what this page covers).*
+*Source: ScienceDirect Topics ("endosymbiosis")*
 
 ### Mitochondria: structure
 
 The mitochondrial **outer membrane** is smooth and relatively permeable (contains porins allowing free passage of small molecules); the **inner membrane** is highly folded into **cristae**, dramatically increasing surface area for the electron transport chain complexes and ATP synthase embedded within it (see [Bioenergetics & Central Metabolism Overview](../bioenergetics-central-metabolism/) for the chemistry these structures perform). The **intermembrane space** (between the two membranes) is where the proton gradient driving ATP synthase is built; the **matrix** (enclosed by the inner membrane) contains the mitochondrial genome, ribosomes, and the enzymes of the TCA cycle.
 
 ![Mitochondrion cutaway: outer membrane with porins, folded inner membrane (cristae, further split into inner boundary membrane and cristal membrane), intermembrane space (intracristal and peripheral space), matrix, matrix granules, mitochondrial DNA, and ribosomes all labelled](/MCBBPICS/mitochondrion-cutaway-diagram.jpg)
-*Source: en.wikipedia.org (Mitochondrial matrix) — confirm licensing basis before public deployment*
+*Source: en.wikipedia.org (Mitochondrial matrix)*
 
 ### Chloroplasts: structure
 
 Chloroplasts share the double-membrane, own-genome, own-ribosome pattern, but add a third internal membrane system: **thylakoids**, flattened membrane sacs (often stacked into **grana**) suspended in the **stroma** (the chloroplast's matrix-equivalent compartment). The thylakoid membrane houses the light-reaction machinery (photosystems, electron transport chain, ATP synthase) — directly analogous in mechanism to the mitochondrial inner membrane's ETC/ATP synthase, but running in the reverse net direction (building reducing power and ATP from light energy, rather than from stored chemical bond energy). The stroma houses the Calvin cycle enzymes. Both the thylakoid-vs-cristae membrane elaboration and the parallel “membrane houses electron transport chain, matrix/stroma houses the cycle” organisation are a direct structural echo of each other, consistent with both organelles having converged on the same chemiosmotic strategy independently from their respective free-living bacterial ancestors.
 
 ![Chloroplast cutaway: outer and inner chloroplast envelope membranes, stroma, granal and stromal thylakoids (lamellae/frets) forming a granum stack, thylakoid membrane and thylakoid space (lumen), nucleoid (DNA rings), ribosomes, plastoglobuli, and a starch granule all labelled](/MCBBPICS/chloroplast-cutaway-diagram.svg)
-*Source: en.wikipedia.org (Thylakoid) — confirm licensing basis before public deployment*
+*Source: en.wikipedia.org (Thylakoid)*
 
 ### Semi-autonomy, not full independence
 

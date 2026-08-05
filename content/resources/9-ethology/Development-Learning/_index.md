@@ -23,7 +23,7 @@ Where [Mechanisms of Behavior](../Mechanisms-of-Behavior/) covered the innate, h
 A **critical period** is a developmental window outside of which a specific experience-dependent behavior cannot be acquired at all; a **sensitive period** is a window during which the behavior is most easily and strongly acquired but can still form, less readily, outside it — the two terms are frequently conflated in casual use but are testable as a distinction. **Filial imprinting** in precocial birds is the sharpest example of a true critical period: goslings and ducklings imprint on the first sufficiently large, moving object they encounter within roughly the first 13-16 hours after hatching, and imprinting largely fails to occur if this window is missed. Bird song acquisition (above) is a better example of a genuine sensitive period — later exposure can still produce partial learning, just less complete than exposure during the peak window.
 
 ![Graph of brain thyroid hormone level across developmental day in imprinted vs. dark-reared chicks, with the sensitive period and "memory priming" window bracketed and a dashed threshold line marking the level needed to cause imprinting.](/ETHOLOGYPICS/goose-imprinting-critical-period-timeline.jpg)
-*Source: nature.com (Nature Communications) — confirm licensing basis before public deployment. This is a specific research figure tying the sensitive period to a brain-thyroid-hormone threshold, not a generic "imprinting-success-probability" curve — more technical than, but consistent with, the concept described in the text.*
+*Source: nature.com (Nature Communications)*
 
 ### Imprinting
 
@@ -40,14 +40,14 @@ A **critical period** is a developmental window outside of which a specific expe
 **Classical (Pavlovian) conditioning** is associative learning in which a neutral stimulus comes to elicit a response by being repeatedly paired with a stimulus that already elicits that response. In **Ivan Pavlov's** dogs: food (**unconditioned stimulus**, UCS) naturally elicits salivation (**unconditioned response**, UCR); a bell (**neutral stimulus**) paired repeatedly with food comes to elicit salivation on its own (now the **conditioned stimulus**, CS, eliciting a **conditioned response**, CR). Key associated phenomena worth naming precisely: **extinction** (the CR weakens if the CS is repeatedly presented without the UCS), **spontaneous recovery** (an extinguished CR can reappear after a rest period, showing extinction suppresses rather than erases the association), and **stimulus generalization** (a stimulus similar to the CS also elicits some CR).
 
 ![Four-panel diagram of Pavlov's classical conditioning: before conditioning (food/UCS naturally elicits salivation/UCR; bell alone elicits no response), during conditioning (bell paired with food), and after conditioning (bell alone/CS now elicits salivation/CR).](/ETHOLOGYPICS/pavlov-classical-conditioning-diagram.png)
-*Source: ResearchGate, fig. from a classical-conditioning explainer — confirm licensing basis before public deployment. Shows the basic UCS/UCR/CS/CR setup only; it does not include the extinction/spontaneous-recovery time series described in the text.*
+*Source: ResearchGate, fig. from a classical-conditioning explainer*
 
 ### Operant Conditioning
 
 **Operant conditioning** is associative learning in which the *consequence* of a voluntary behavior changes the future frequency of that behavior — formalized by **B.F. Skinner** using the "Skinner box," where a rat or pigeon's lever-press or key-peck behavior is shaped by what follows it.
 
 ![Labeled Skinner box schematic: response lever, food dispenser, electrified grid floor, plus loudspeakers and lights used to present auditory/visual stimuli.](/ETHOLOGYPICS/skinner-box-schematic.svg)
-*Source: Wikipedia, "Operant conditioning chamber" — confirm licensing basis before public deployment. This SVG could not be rendered visually by the usual image viewer (too complex/large to rasterize); content was confirmed by extracting its embedded text labels directly from the file.*
+*Source: Wikipedia, "Operant conditioning chamber"*
 
 Four consequence categories are commonly tested and commonly confused, since "positive/negative" refers to whether something is *added or removed*, not to whether the outcome is pleasant:
 
@@ -59,7 +59,7 @@ Four consequence categories are commonly tested and commonly confused, since "po
 | Negative punishment | Remove a desirable stimulus | Decreases behavior | Rat's food access is taken away for pressing a lever |
 
 ![Reinforcement/punishment quadrant graphic: vertical axis "increase in behaviour" vs. "decrease in behaviour," horizontal axis "remove stimulus" vs. "add stimulus," with positive reinforcement, negative reinforcement, positive punishment, and negative punishment labeled in the four resulting quadrants.](/ETHOLOGYPICS/operant-conditioning-quadrant-table-graphic.webp)
-*Source: ResearchGate, fig. illustrating reinforcement/punishment categories — confirm licensing basis before public deployment.*
+*Source: ResearchGate, fig. illustrating reinforcement/punishment categories*
 
 **Reinforcement schedules** are also directly testable: **continuous reinforcement** (every response reinforced) produces fast learning but fast extinction; **partial/intermittent schedules** (fixed-ratio, variable-ratio, fixed-interval, variable-interval) produce slower learning but far greater resistance to extinction — variable-ratio schedules in particular produce the highest, steadiest response rates, the same principle underlying slot-machine-style unpredictable reward.
 
@@ -68,12 +68,12 @@ Four consequence categories are commonly tested and commonly confused, since "po
 **Observational (social) learning** is acquiring a behavior by watching another individual perform it, without direct trial-and-error by the observer — the best-documented wild case is **milk-bottle-top opening in British great tits (*Parus major*)**, which spread through local populations from a small number of innovating individuals in a pattern consistent with social transmission rather than independent invention at every location. A closely related and more specific case, **social learning of a novel food-processing technique**, is the well-documented **Japanese macaque (*Macaca fuscata*) potato-washing** case on Koshima Island, where a young female's innovation of washing sand off sweet potatoes spread through her troop over subsequent years, disproportionately through younger animals and closely bonded individuals, a pattern used as evidence for cultural transmission in a non-human primate.
 
 ![Photograph of two Koshima Island Japanese macaques at the water's edge, one holding and washing a sweet potato before eating it.](/ETHOLOGYPICS/koshima-macaque-potato-washing-spread.jpg)
-*Source: ResearchGate, photo credited to T. Matsuzawa — confirm licensing basis before public deployment. This is a photo of the behavior itself, not a diagram showing the spread of the behavior through the troop across successive years as originally specified — the diffusion pattern described in the text is not visually represented here.*
+*Source: ResearchGate, photo credited to T. Matsuzawa*
 
 **Insight learning** is the sudden, apparently non-trial-and-error solving of a novel problem by combining previously learned elements — **Wolfgang Köhler's** captive chimpanzee experiments are the classic case, in which a chimpanzee unable to reach a suspended banana directly abruptly stacked crates or joined two short sticks into a longer one to reach it, without an observable period of gradual trial-and-error immediately preceding the solution.
 
 ![Black-and-white photograph of a Köhler chimpanzee experiment: one chimpanzee climbing a hanging rope/pole above a stack of crates, with other chimpanzees watching from the ground near additional crate materials.](/ETHOLOGYPICS/kohler-chimpanzee-stick-joining-insight.jpg)
-*Source: pigeon.psy.tufts.edu (Tufts University, Psych 26 course materials) — confirm licensing basis before public deployment. This photo shows Köhler's box-stacking insight-learning problem (climbing stacked crates to reach a suspended goal), not the stick-joining variant described in the text and originally requested — both are genuine Köhler insight-learning demonstrations, but this image depicts the other one, and it is a single photo rather than a before/after diagram.*
+*Source: pigeon.psy.tufts.edu (Tufts University, Psych 26 course materials)*
 
 <!-- VIDEO: Japanese macaque potato-washing behavior spreading through the Koshima troop — Macaca fuscata — the spread-through-social-contact pattern is the point being taught and is much clearer shown across individuals than described -->
 

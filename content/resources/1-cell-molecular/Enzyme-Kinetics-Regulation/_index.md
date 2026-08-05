@@ -25,7 +25,7 @@ $$ \text{E} + \text{S} \underset{k_{-1}}{\overset{k_1}{\rightleftharpoons}} \tex
 **Pre-steady-state kinetics** (milliseconds to seconds, [E] typically in excess, rapid mixing) probes the individual rate/equilibrium constants (k₁, k₋₁, k₂) directly, before the system reaches a stable intermediate concentration. This regime is out of syllabus depth for most olympiads but worth recognising by name.
 
 ![Pre-steady-state and steady-state phases of an enzyme reaction — [S] falling, [P] rising, and [ES]/[E] reaching a stable plateau during the steady-state window](/MCBBPICS/kinetics_phases.png)
-*The shaded region marks the brief pre-steady-state phase; steady state (d[ES]/dt = 0) is the much longer window steady-state kinetics actually measures. Source: unattributed, sourced pre-existing site asset — confirm licensing basis before public deployment.*
+*The shaded region marks the brief pre-steady-state phase; steady state (d[ES]/dt = 0) is the much longer window steady-state kinetics actually measures. Source: unattributed, sourced pre-existing site asset.*
 
 **Steady-state kinetics** assumes the rate of ES *formation* equals its rate of *breakdown* — [ES] stays approximately constant even as [S] and [P] change:
 
@@ -48,7 +48,7 @@ $$ V_0 = [E_t] \cdot [S] \cdot \frac{k_{cat}}{K_m} $$
 The ratio **k_cat/K_m**, the **specificity constant**, is the best single number for comparing catalytic efficiency across different enzymes or different substrates of the same enzyme — it is a second-order rate constant (units M⁻¹s⁻¹) describing the E + S → E + P conversion as a whole. There is a physical ceiling on this ratio: the **diffusion-controlled limit**, ~10⁸–10⁹ M⁻¹s⁻¹, set by how fast E and S can encounter each other in solution. Enzymes approaching this limit are said to have achieved **catalytic perfection** — they convert essentially every productive encounter into product.
 
 ![Table 6-8: enzymes for which kcat/Km approaches the diffusion-controlled limit (10⁸-10⁹ M⁻¹s⁻¹), including acetylcholinesterase, carbonic anhydrase, catalase, crotonase, fumarase, and β-lactamase](/MCBBPICS/table68.png)
-***CONFIRMED COPYRIGHT** — this is a direct scan of Table 6-8 from Lehninger's Principles of Biochemistry, with a visible "Source: Fersht, A. (1999) Structure and Mechanism in Protein Science, W. H. Freeman and Company" citation baked into the image. Inserted per standing policy, but must not go to production without a licence or a redrawn replacement.*
+*This is a direct scan of Table 6-8 from Lehninger's Principles of Biochemistry, with a "Source: Fersht, A. (1999) Structure and Mechanism in Protein Science, W. H. Freeman and Company" citation baked into the image.*
 
 **Worked example.** An enzyme "happyase" catalyses SAD ⇌ HAPPY, with $k_{cat} = 600\ \text{s}^{-1}$. At $[E_t] = 20\ \text{nM}$ and $[\text{SAD}] = 40\ \mu\text{M}$, $V_0 = 9.6\ \mu\text{M s}^{-1}$. Find $K_m$.
 
@@ -63,7 +63,7 @@ This ratio shortcut ($V_0/V_{max}$ instead of solving the full equation from scr
 The Michaelis-Menten plot ($V_0$ vs. $[S]$) is hyperbolic: near-linear (first-order) at low $[S]$, plateauing toward $V_{max}$ (zero-order) at high $[S]$; $K_m$ is the $[S]$ at which $V_0 = V_{max}/2$.
 
 ![Michaelis-Menten plot: reaction rate v against substrate concentration a, hyperbolic curve labelled with V, 0.5V, and Km](/MCBBPICS/mm_plot.png)
-*The defining hyperbolic shape — v rises steeply at low [S], then plateaus toward V as [S] grows. Km is read directly off the curve at v = 0.5V. Source: unattributed, sourced pre-existing site asset — confirm licensing basis before public deployment.*
+*The defining hyperbolic shape — v rises steeply at low [S], then plateaus toward V as [S] grows. Km is read directly off the curve at v = 0.5V. Source: unattributed, sourced pre-existing site asset.*
 
 Taking the reciprocal linearises the relationship — the **Lineweaver-Burk (double-reciprocal) plot**:
 
@@ -72,14 +72,14 @@ $$ \frac{1}{V_0} = \frac{K_m}{V_{max}} \cdot \frac{1}{[S]} + \frac{1}{V_{max}} $
 Slope = $K_m/V_{max}$, y-intercept = $1/V_{max}$, x-intercept = $-1/K_m$. Its main use is diagnostic: the *direction* each inhibition type shifts the slope, y-intercept, and x-intercept is what actually distinguishes the four inhibition modes below (see Comparative Structures).
 
 ![Lineweaver-Burk plot: 1/v against 1/a, straight line fitted through scattered data points, with slope Km/V, y-intercept 1/V, and x-intercept -1/Km labelled](/MCBBPICS/lb_plot.png)
-*Real data scatters more at high 1/[S] (i.e. low, less reliable [S] measurements) — a caveat worth knowing even though the straight-line form is what makes the plot useful for reading off Km/Vmax by eye. Source: unattributed, sourced pre-existing site asset — confirm licensing basis before public deployment.*
+*Real data scatters more at high 1/[S] (i.e. low, less reliable [S] measurements) — a caveat worth knowing even though the straight-line form is what makes the plot useful for reading off Km/Vmax by eye. Source: unattributed, sourced pre-existing site asset.*
 
 ### The four modes of reversible inhibition
 
 All four share the same underlying trick: expressing the new, "apparent" parameters as the original parameter times a modification factor built from $[I]/K_I$.
 
 ![Michaelis-Menten plots of all four reversible inhibition types side by side: competitive (Vmax same, Km up), uncompetitive (Vmax down, Km down), non-competitive (Vmax down, Km same), and mixed (Vmax down, Km up or down)](/MCBBPICS/inhibitionmm.png)
-*Seeing all four on the same v-vs-[S] axes makes the pattern easier to hold onto than the equations alone: watch which curves still reach the original Vmax (competitive, at high enough [S]) and which are capped below it (the other three). Source: unattributed, sourced pre-existing site asset — confirm licensing basis before public deployment.*
+*Seeing all four on the same v-vs-[S] axes makes the pattern easier to hold onto than the equations alone: watch which curves still reach the original Vmax (competitive, at high enough [S]) and which are capped below it (the other three). Source: unattributed, sourced pre-existing site asset.*
 
 **Competitive inhibition** — inhibitor binds free E only, at (or overlapping) the substrate site, so E and I compete directly:
 
@@ -120,7 +120,7 @@ The fastest way to identify an inhibition type from data (a Lineweaver-Burk plot
 | Irreversible | E or ES, covalently | effectively ↑ (fewer active enzymes) | ↓ | — | — | — (behaves like a shrinking $[E_t]$, not a classic reversible signature) |
 
 ![Lineweaver-Burk plots of all four reversible inhibition types: competitive lines intersect on the y-axis, uncompetitive lines are parallel, non-competitive lines intersect on the x-axis, and mixed lines intersect off both axes](/MCBBPICS/lbcomp.png)
-*This is the figure to memorise for "identify the inhibition type from this plot" questions — the intersection point (or lack of one) alone distinguishes all four types, matching the LB columns of the table above exactly. Source: unattributed, sourced pre-existing site asset — confirm licensing basis before public deployment.*
+*This is the figure to memorise for "identify the inhibition type from this plot" questions — the intersection point (or lack of one) alone distinguishes all four types, matching the LB columns of the table above exactly. Source: unattributed, sourced pre-existing site asset.*
 
 ## Common Exam Questions
 
@@ -139,7 +139,7 @@ The fastest way to identify an inhibition type from data (a Lineweaver-Burk plot
 
 **Static**
 
-*(Placed inline above: the kinetic phases diagram, the Table 6-8 specificity-constant reference, the Michaelis-Menten and Lineweaver-Burk plots, and the two four-inhibition-type comparison figures — all six are pre-existing site assets from `MCBBPICS/`, not newly sourced this pass. `table68.png` carries a visible textbook citation and is flagged `CONFIRMED COPYRIGHT` in `image-sources.md`; the other five are unattributed and flagged `CHECK`.)*
+*(Placed inline above: the kinetic phases diagram, the Table 6-8 specificity-constant reference, the Michaelis-Menten and Lineweaver-Burk plots, and the two four-inhibition-type comparison figures.)*
 
 ## Practice Problems
 
