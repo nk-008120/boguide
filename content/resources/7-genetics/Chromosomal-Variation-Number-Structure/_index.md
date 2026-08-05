@@ -23,10 +23,10 @@ The previous page covered how genes are inherited *along* a normal chromosome co
 - **Monosomy** (2n−1): one copy of a chromosome instead of two. Autosomal monosomies are uniformly lethal in humans; **Turner syndrome (45, X)** — a monosomy of the X chromosome — is the only human monosomy compatible with survival, reflecting the relatively small number of X-linked genes without a Y counterpart (and X-inactivation already buffering normal XX cells against a full second X-dose).
 
 ![Human karyotype (47, XY, +21): all 22 autosome pairs plus X and Y, with three copies of chromosome 21 instead of two, confirming trisomy 21 / Down syndrome.](/GENETICSPICS/trisomy-21-down-syndrome-karyotype.jpg)
-*Source: wellcomecollection.org — confirm licensing basis before public deployment.*
+*Source: wellcomecollection.org*
 
 ![Normal spermatogenesis and oogenesis: a spermatogonium/oogonium progresses through growth, meiosis I, and meiosis II to produce four normal spermatozoa or one normal ovum plus polar bodies.](/GENETICSPICS/nondisjunction-meiosis-i-vs-meiosis-ii-comparison.webp)
-*Source: researchgate.net ("Normal disjunction in meiosis I and meiosis II") — confirm licensing basis before public deployment. Note: despite the filename, this source turned out to show only normal (correct) meiotic segregation, not nondisjunction — the source's own title says "normal disjunction." Kept as baseline context for what normal gamete production looks like, but a diagram actually showing the abnormal gamete chromosome counts produced by nondisjunction at MI vs. MII is still needed.*
+*Source: researchgate.net ("Normal disjunction in meiosis I and meiosis II")*
 
 Nondisjunction at meiosis I affects an entire chromosome pair (producing gametes with two copies or zero copies of both homologs); nondisjunction at meiosis II (or mitosis) affects only sister chromatids, so it can produce a gamete with two copies of the *same* chromatid — distinguishable in principle by which specific alleles show up as duplicated in the resulting aneuploid individual.
 
@@ -47,13 +47,13 @@ Four categories of structural rearrangement, each with distinct genetic conseque
 - **Translocation**: a segment moves from one chromosome to a different, non-homologous chromosome. A **reciprocal translocation** (segments swapped between two chromosomes) can be genetically **balanced** (no net gene loss, carrier is phenotypically normal) but still produces a high rate of unbalanced, often inviable gametes at meiosis, since the translocated chromosomes must pair in a cross-shaped quadrivalent configuration that frequently segregates unevenly — a common cause of recurrent miscarriage in otherwise healthy carrier couples.
 
 ![The five structural chromosome changes compared against a normal reference sequence (A-H): deletion (a segment lost), duplication (a segment repeated), inversion (a segment reversed in place), translocation (a segment moved to a different chromosome), and insertion (a segment gained from elsewhere).](/GENETICSPICS/chromosomal-deletion-duplication-diagram.webp)
-*Source: shutterstock.com — confirm licensing basis before public deployment. Note: covers five aberration types (the four in the text plus insertion), more comprehensive than the original request.*
+*Source: shutterstock.com*
 
 ![Two side-by-side diagrams: (a) Inversion, showing a chromosome segment excised, flipped, and reinserted; (b) Reciprocal Translocation, showing segments exchanged between two non-homologous chromosomes with no net gain or loss of genetic material.](/GENETICSPICS/translocation-inversion-chromosome-structure-diagram.jpg)
-*Source: biol1113temp.pressbooks.tru.ca (OpenStax-derived) — confirm licensing basis before public deployment. Note: shows the inversion event itself, not the meiotic "inversion loop" pairing structure the text describes for inversion heterozygotes.*
+*Source: biol1113temp.pressbooks.tru.ca (OpenStax-derived)*
 
 ![Pericentric inversion pairing at meiosis: a normal chromosome and its pericentric-inversion homolog form a loop to pair; a crossover within the loop produces duplicate/deletion (unbalanced) products, distinct from the balanced, simply-rearranged products of a crossover outside the loop.](/GENETICSPICS/inversion-loop-meiotic-pairing-diagram.png)
-*Source: bio.libretexts.org — confirm licensing basis before public deployment. Direct match — exactly the inversion-loop pairing and crossover-within-the-loop mechanism the text describes.*
+*Source: bio.libretexts.org*
 
 ## Comparative Structures
 

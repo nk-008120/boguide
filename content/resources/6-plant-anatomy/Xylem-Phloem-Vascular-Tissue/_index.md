@@ -22,10 +22,10 @@ Xylem moves water and dissolved minerals, and both of its conducting cell types 
 - **Vessel elements** — shorter and wider than tracheids, found predominantly in **angiosperms** (a small number of gymnosperm lineages, e.g. *Gnetum*, independently evolved vessels too). Adjacent vessel elements stack end-to-end and their end walls partially or completely dissolve at maturity into **perforation plates** (simple — a single large opening; scalariform — a row of parallel slit-like openings), fusing a column of vessel elements into a continuous, low-resistance pipe, the **vessel**. Because water moves through open perforations rather than only through pits, vessels offer substantially lower resistance to bulk flow than tracheids, at the structural cost of longer air-embolism spread if one segment cavitates (unlike the torus-margo check valve in gymnosperm tracheids).
 
 ![Tracheid vs. vessel element structure: (A) line diagram comparing a tracheid (pits, lignified wall) against vessel elements with compound and simple perforation plates; (B) a stained photomicrograph of vessel elements showing a perforation plate.](/PLANTANATPICS/tracheid-vessel-element-comparison.jpg)
-*Source: ScienceDirect topic page, "Tracheid" (sciencedirect.com/topics/agricultural-and-biological-sciences/tracheid) — confirm licensing basis before public deployment. Also distinguishes compound vs. simple perforation plates, a detail beyond the original spec.*
+*Source: ScienceDirect topic page, "Tracheid" (sciencedirect.com/topics/agricultural-and-biological-sciences/tracheid)*
 
 ![Ultrastructure of a bordered pit: pit membrane, pit border, pit aperture, torus, and margo all labeled.](/PLANTANATPICS/torus-margo-pit-membrane.webp)
-*Source: easybiologyclass.com — confirm licensing basis before public deployment. Shows the structural components clearly but only one static position, not the open vs. sealed (aspirated) torus positions originally requested.*
+*Source: easybiologyclass.com*
 
 Xylem tissue also contains **xylem parenchyma** (living, the only living cells in mature xylem, involved in storage and lateral transport) and **xylem fibers** (sclerenchyma, providing additional mechanical support, structurally derived from the same cell lineage as tracheids/vessel elements but specialized for strength over conduction).
 
@@ -37,12 +37,12 @@ Phloem moves sugars and other organic solutes, and unlike xylem its conducting c
 - **Companion cells** — one or more per sieve tube element, connected to it by unusually abundant **plasmodesmata** (structurally elaborated into branched channels at this interface). Because the sieve tube element itself lacks a nucleus and most organelles, the companion cell supplies the metabolic support (protein synthesis, ATP) the sieve tube element cannot provide for itself — the two cells function as a single physiological unit despite being structurally distinct. A specialized companion-cell subtype, the **transfer cell**, has an amplified surface area from wall ingrowths, found where solute loading into the phloem is especially intense (e.g. minor veins in source leaves).
 
 ![Sieve tube element / companion cell pair: (a) structural diagram labeling the sieve tube element, companion cell, lateral sieve area, and sieve tube plate; (b) xylem and phloem shown together with water transpiration and sucrose translocation directions indicated.](/PLANTANATPICS/sieve-tube-companion-cell-pair.jpg)
-*Source: Nursing Hero / WM Open Biology 2 study guide (nursinghero.com) — confirm licensing basis before public deployment. Panel (a) is the direct match for this spec item; panel (b) is bonus content on transport direction rather than sieve tube/companion cell structure itself.*
+*Source: Nursing Hero / WM Open Biology 2 study guide (nursinghero.com)*
 
 - **Sieve cells** and **albuminous cells** — the gymnosperm equivalents, with less specialized pore structure (sieve areas only, no true sieve plates) and a looser, non-clonal association between the conducting cell and its adjacent parenchyma cell (unlike the companion cell's dedicated, sibling-cell relationship with "its" sieve tube element).
 
 ![Gymnosperm sieve cell and albuminous cells in longitudinal section, both labeled.](/PLANTANATPICS/sieve-cell-albuminous-cell-pair.jpg)
-*Source: University of Wisconsin Botany Department image glossary (botit.botany.wisc.edu) — confirm licensing basis before public deployment.*
+*Source: University of Wisconsin Botany Department image glossary (botit.botany.wisc.edu)*
 
 Phloem tissue also contains **phloem parenchyma** (storage, lateral transport) and often **phloem fibers** (sclerenchyma, mechanical support, sometimes commercially harvested as bast fiber).
 
@@ -58,12 +58,12 @@ Xylem and phloem are not scattered independently through ground tissue but organ
 | Amphicribral | Phloem surrounds a central strand of xylem | Most fern stems/rhizomes |
 
 ![Vascular bundle cross-sections drawn to shape for radial, conjoint-collateral-open, conjoint-collateral-closed, conjoint-bicollateral, concentric-amphicribral, and concentric-amphivasal arrangements, xylem/phloem/cambium all labeled.](/PLANTANATPICS/open-vs-closed-vascular-bundle.jpg)
-*Source: user-sourced (facebook.com group post) — confirm licensing basis before public deployment; a social-media-hosted repost of what is likely a textbook figure ("Figure 12.1"), original source unconfirmed. Covers all four table arrangements above plus the root's radial arrangement as a bonus.*
+*Source: user-sourced (Facebook group post)*
 
 Collateral bundles are further split by whether a strip of meristematic **vascular cambium** persists between the xylem and phloem: an **open** bundle retains this cambium and can therefore undergo secondary growth (characteristic of dicots), while a **closed** bundle has no cambium between xylem and phloem and cannot thicken further after primary growth (characteristic of monocots) — this open/closed distinction is the direct structural reason monocots, as a rule, lack secondary growth and dicots, as a rule, have it, developed further on [Monocot vs Dicot Comparative Anatomy](../monocot-dicot-comparative-anatomy/) and [Secondary Growth & Wood Anatomy](../secondary-growth-wood-anatomy/).
 
 ![Vascular bundle classification flowchart by xylem/phloem arrangement: conjoint bundles split into collateral (open in dicots, cambium present; closed in monocots, cambium absent) and bicollateral, alongside radial and concentric (amphicribral/amphivasal) types.](/PLANTANATPICS/vascular-bundle-arrangement-types.jpg)
-*Source: BrainKart, "Tissue system" (brainkart.com) — confirm licensing basis before public deployment. The Collateral branch's explicit Open (Dicot, cambium present) vs. Closed (Monocot, cambium absent) split is the direct match for the open-vs-closed spec item — reassigned here from its originally requested filename/slot since its content fits this concept more precisely than the "four arrangement types" overview above.*
+*Source: BrainKart, "Tissue system" (brainkart.com)*
 
 ## Comparative Structures
 

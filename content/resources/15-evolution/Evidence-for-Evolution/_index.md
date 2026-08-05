@@ -28,7 +28,7 @@ Evolutionary theory is supported not by one single proof but by several genuinel
 **Biogeography** (the geographic distribution of species) supports evolution because distribution patterns only make sense in light of geographic history and common descent, not by chance placement: **island endemics** (species found nowhere else, closely related to a mainland source population) are consistently most closely related to species on the nearest mainland rather than to ecologically similar species on other islands — Darwin's Galápagos finches are the standard example, most closely related to a South American mainland finch ancestor rather than to unrelated seed-eating birds elsewhere. **Continental drift** explains disjunct distributions of closely related taxa now separated by ocean barriers they could not plausibly have crossed (e.g. **ratite birds** — ostrich, rhea, emu, cassowary — flightless and distributed across Africa, South America, Australia, consistent with descent from a common ancestor present before the breakup of the supercontinent Gondwana, rather than independent flightlessness evolving identically on each continent by chance).
 
 ![Ratite bird biogeography: (a) current distribution of ostrich (Africa), rheas/tinamous (South America), and emu/cassowary/kiwi/moa (Australia/New Zealand region); (b) competing dispersal vs. vicariance range-history hypotheses plotted on a polar projection; (c) how a phylogenetic tree of ratite taxa is converted into a taxon-area cladogram and then an area cladogram, the comparative-biogeography method used to test the Gondwana-vicariance explanation against the data](/EVOLUTIONPICS/ratite-biogeography-gondwana.png)
-*Source: ResearchGate, fig. 1, "Biogeographic history of the ratite birds" — journal figure, open-access status not confirmed*
+*Source: ResearchGate, fig. 1, "Biogeographic history of the ratite birds"*
 
 ### Comparative Anatomy: Homology vs. Analogy
 
@@ -39,7 +39,7 @@ Structural comparison across species distinguishes two categories of similarity,
 - **Vestigial structures** — structures that are homologous to a fully functional structure in a related lineage but have been reduced and lost most or all of their ancestral function, retained only as a developmental remnant: the human **appendix** (homologous to a functional cecum used for cellulose digestion in herbivorous ancestors and relatives), **whale pelvic bones** (remnants of the hind-limb-bearing pelvis of the terrestrial ancestors documented in the fossil series above, no longer attached to any functional hind limb), and python vestigial hind-limb spurs are all evidence that a lineage's ancestors had a different, functional version of the same structure.
 
 ![Pentadactyl forelimb homology across five mammals — human, bat, whale, cat, and horse — with the same six bone categories (humerus, ulna, radius, carpals, metacarpals, phalanges) color-coded identically in each limb despite their very different final functions (grasping, flight, swimming, walking)](/EVOLUTIONPICS/pentadactyl-limb-homology.png)
-*Source: Trends in Neurosciences (journal figure, open-access status not confirmed)*
+*Source: Trends in Neurosciences*
 
 ### Comparative Embryology
 

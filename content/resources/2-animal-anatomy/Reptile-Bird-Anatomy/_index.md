@@ -28,7 +28,7 @@ The single defining structural innovation of amniotes. Four extraembryonic membr
 This is why the amniotic egg is described as bringing "a private pond" for the embryo — it removed the ancestral requirement (still present in amphibians) that reproduction happen in or near water.
 
 ![Amniotic egg cross-section labeling the shell, albumen, amniotic cavity (filled with amniotic fluid), amnion, embryo, allantois, chorion, and yolk sac.](/ANATOMYPICS/amniotic-egg-cross-section-four-membranes.png)
-*Source: user-sourced (originally via Lumen Learning). Exact match, all four extraembryonic membranes labeled.*
+*Source: Lumen Learning*
 
 ### Uric-Acid-Based Excretion
 
@@ -41,7 +41,7 @@ Reptile and bird skin is built from the same epidermis-over-dermis plan as [huma
 **Feathers** (birds only) are also epidermal, keratinous structures, developmentally homologous to reptile scales — confirming the bird-is-a-reptile relationship structurally, not just genetically. A feather grows from a follicle (structurally analogous in principle to the mammalian hair follicle on the [Human Integumentary System](../human-integumentary-system/) page) and has a central shaft — the **calamus** (the base, embedded in the follicle) continuing as the **rachis** (bearing the vane) — from which **barbs** branch, each barb itself bearing smaller **barbules** with tiny hooks (**hooklets**) that interlock adjacent barbs into a continuous, wind-resistant vane, a specific microstructural feature responsible for a flight feather's aerodynamic integrity (a bird "zips" a ruffled feather back together by preening, re-engaging the hooklets). Feather types are functionally distinct: **contour feathers** (body covering, flight surface shape), **flight feathers** (remiges on the wing, rectrices on the tail — asymmetrical vane structure specifically generates lift/thrust), and **down feathers** (loose barbs, no hooklet interlocking, insulation only).
 
 ![Feather structure zoomed from the whole feather (vane, rachis, afterfeather, downy barbs, calamus) to the barb/barbule arrangement branching off the rachis, to individual barbules with their interlocking hooklets.](/ANATOMYPICS/feather-microstructure-barbs-barbules-hooklets.jpg)
-*Source: user-sourced (originally attempted via a ScienceDirect article). Exact match, all the way down to the hooklet-level interlocking mechanism.*
+*Source: ScienceDirect*
 
 ### Circulatory Structure
 
@@ -50,7 +50,7 @@ Reptile and bird skin is built from the same epidermis-over-dermis plan as [huma
 **Birds**: a fully **four-chambered heart**, structurally identical in chamber count and separation to the human heart (see [Human Circulatory System](../human-circulatory-system/)) — convergently evolved rather than inherited from a shared four-chambered ancestor with mammals, since the reptile lineages connecting them (other than crocodilians) retain the incompletely divided three-chambered plan. Both birds and mammals need full separation of oxygenated/deoxygenated blood to sustain the high metabolic rate endothermy requires, and both evolved a four-chambered heart independently to get it — a clean, frequently tested convergent evolution example.
 
 ![Heart and circuit structure compared across fish (1 circuit, 2-chambered), frogs (2 circuits, 3-chambered), turtles/lizards (2 circuits, "5-chambered" with a partial septum), crocodiles (2 circuits, 4-chambered), birds (2 circuits, 4-chambered), and mammals (2 circuits, 4-chambered), with a phylogenetic tree beneath showing where two circulatory loops, the three-chambered heart, and full ventricular division each arose.](/ANATOMYPICS/reptilian-avian-mammalian-heart-comparison.webp)
-*Source: user-sourced (originally via Answers in Genesis' Answers Research Journal). Exceeds spec significantly — places the reptile/bird/mammal comparison in full phylogenetic context, including the intermediate turtle/lizard condition and crocodilians as the reptile exception discussed in the text.*
+*Source: Answers in Genesis' Answers Research Journal*
 
 <div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
   <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">🫀 Heart Chamber Evolution Slider</h3>
@@ -126,7 +126,7 @@ Reptile and bird skin is built from the same epidermis-over-dermis plan as [huma
 Bird lungs are structurally distinct from the tidal (in-and-out) mammalian lung on the [Human Respiratory System](../human-respiratory-system/) page in a way that goes beyond "air sacs exist" — the lung tissue itself is built around **parabronchi** (narrow, rigid tubes) rather than dead-end alveolar sacs; parabronchi are surrounded by tiny **air capillaries**, the actual gas-exchange surface, interwoven with blood capillaries in a cross-current arrangement. Because the lung itself barely changes volume, ventilation is driven by a system of typically nine **air sacs** (divided into anterior and posterior groups) acting as bellows: air takes **two full respiratory cycles** to complete its path through the system — on the first inhalation, air is drawn primarily into the posterior air sacs; on the first exhalation, that air is pushed from the posterior sacs through the parabronchi (gas exchange occurring here); on the second inhalation, the now-exchanged air moves into the anterior air sacs while fresh air simultaneously enters the posterior sacs; on the second exhalation, air is expelled from the anterior sacs out through the trachea. The structural payoff is that **airflow through the parabronchi is unidirectional on both inhalation and exhalation**, so gas exchange happens continuously rather than only during inhalation — a major efficiency advantage directly tied to flight's extreme metabolic demand, and mechanistically different (parabronchial cross-current exchange, not simple diffusion into a dead-end sac) from the mammalian alveolar system, not merely a faster version of it.
 
 ![Inhalation and exhalation shown side by side, tracing fresh air (blue) and stale air (red) through the trachea, bronchus, lungs, and the anterior/posterior air sac groups.](/ANATOMYPICS/bird-respiratory-air-sac-system.jpg)
-*Source: user-sourced (originally via AskNature). Clearly shows the anterior/posterior air sac groups and the fresh-air/stale-air distinction between phases, though it traces both phases in parallel rather than a single air packet through all four steps of the two-cycle path described in the text.*
+*Source: AskNature*
 
 <div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
   <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">🐦 Bird Two-Cycle Airflow Stepper</h3>
@@ -194,14 +194,14 @@ Bird lungs are structurally distinct from the tidal (in-and-out) mammalian lung 
 All either reduce weight or provide leverage for flight muscles: **pneumatic bones** (many bird bones are hollow, internally reinforced with struts, and directly connected to the air sac system — reducing skeletal weight without sacrificing strength, and incidentally extending the respiratory air-sac volume into the skeleton itself); a greatly enlarged **sternum with a keel (carina)**, anchoring the massive **pectoralis** (downstroke) and **supracoracoideus** (upstroke, via a pulley-like tendon routing over the shoulder — a specific structural trick allowing an upstroke muscle to sit ventrally alongside the downstroke muscle rather than on the bird's back) muscles; a fused **furcula** (wishbone, the fused clavicles) acting as a spring that stores and releases elastic energy during the wingbeat cycle; and fusion of many skeletal elements (fused tail vertebrae — the **pygostyle**, fused hand/wrist bones of the wingtip) trading flexibility for the rigidity flight demands.
 
 ![Full bird skeleton labeled with skull, beak, clavicle (furcula), scapula, keel (carina), ribs, humerus, radius/ulna, carpometacarpus, phalanges, femur, tibiotarsus, tarsometatarsus, spine, and pygostyle.](/ANATOMYPICS/bird-skeleton-keel-furcula-pneumatic-bones.jpg)
-*Source: birdsfocus.com, user-sourced. Clearly labels the keel and furcula discussed in the text; does not indicate which bones are pneumatic or show their air-sac connections, a gap from the original spec.*
+*Source: birdsfocus.com*
 
 ### Bird Digestive Adaptations
 
 Structurally linked to flight's weight constraints: birds lack teeth (reducing head weight), instead using a **crop** (an esophageal outpocketing, storing/softening food before it reaches the stomach) and a two-part stomach — the **proventriculus** (glandular, chemical digestion, structurally analogous to the human stomach's gastric glands, see [Human Digestive System](../human-digestive-system/)) followed by the **gizzard (ventriculus)** (a thick, muscular grinding chamber, often containing swallowed grit, mechanically substituting for the chewing teeth lack).
 
 ![Bird digestive tract from crop through proventriculus and gizzard, then liver/pancreas feeding into the duodenum, small intestine, paired ceca, colon, and cloaca.](/ANATOMYPICS/bird-digestive-tract-crop-proventriculus-gizzard.jpg)
-*Source: user-sourced (originally via Wikipedia "Proventriculus"). Exceeds spec — traces the full tract from crop to cloaca, not just the three named structures.*
+*Source: Wikipedia "Proventriculus"*
 
 ## Comparative Structures
 

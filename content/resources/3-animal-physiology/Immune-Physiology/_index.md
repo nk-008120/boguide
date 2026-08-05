@@ -21,7 +21,7 @@ The first line of defense is physical/chemical, not cellular: intact skin (see [
 Once a pathogen breaches these barriers, **phagocytes** provide the first cellular response: **neutrophils** (the most abundant leukocyte, first responders, short-lived) and **macrophages** (differentiated from circulating monocytes upon entering tissue, longer-lived, also function as antigen-presenting cells linking to the adaptive response below) recognize conserved molecular patterns common to broad classes of pathogens (e.g., bacterial cell wall components) via **pattern recognition receptors**, engulf the pathogen by phagocytosis, and destroy it within a phagolysosome (fusion of the phagocytic vacuole with lysosomal digestive enzymes).
 
 ![Phagocytosis sequence: an engulfed particle forms a food vacuole within the phagocyte, lysosomes fuse with the vacuole, and the particle is digested](/ANIMALPHYSIOPICS/phagocytosis-sequence.jpg)
-*Source: GeeksforGeeks — drawn generically (a "food particle" rather than a pathogen specifically) but structurally identical to pathogen phagocytosis. Confirm licensing basis before public deployment.*
+*Source: GeeksforGeeks*
 
 **Natural killer (NK) cells** patrol for host cells that have already been compromised — virus-infected or cancerous cells that have downregulated their surface **MHC class I** display (see antigen presentation below) — and induce these cells to undergo apoptosis, providing an innate-level check against the specific failure mode of "cells hiding from" the adaptive T cell response described below (a T cell needs MHC I display to recognize an infected cell; NK cells specifically target cells that have *lost* that display to evade T cells).
 
@@ -30,7 +30,7 @@ Once a pathogen breaches these barriers, **phagocytes** provide the first cellul
 **Complement** is a cascade of ~30 plasma proteins, normally circulating in inactive form, that activate in sequence upon encountering a pathogen surface (via any of three initiating pathways) to produce three convergent effects: **opsonization** (complement proteins coat the pathogen surface, tagging it for more efficient phagocyte recognition and engulfment), direct pathogen lysis (the **membrane attack complex**, a protein ring that inserts into and perforates the pathogen's membrane), and recruitment of additional immune cells to the site (chemotactic fragments released during the cascade). Complement is considered part of innate immunity despite sometimes being triggered by antibodies (adaptive) because the cascade itself and its lytic/opsonizing machinery are non-specific once triggered.
 
 ![The three complement activation pathways (classical — antibody/C1q-triggered; lectin — mannose-binding lectin/ficolin-triggered; alternative — spontaneous C3b/Factor B/Factor D/properdin-triggered) all converging on C3 convertase, then C5 convertase, then the shared terminal pathway assembling the membrane attack complex (MAC) from C5b-C9 that perforates the bacterial membrane](/ANIMALPHYSIOPICS/complement-cascade-three-pathways.webp)
-*Source: ResearchGate, fig. 2 — precise match for the three-pathway-to-MAC cascade mechanism itself; emphasizes the molecular cascade over the three downstream effects (opsonization/lysis/recruitment) named in the text. Journal figure, open-access status not confirmed. Revisit before public deployment.*
+*Source: ResearchGate, fig. 2*
 
 ### Inflammation
 
@@ -53,7 +53,7 @@ Unlike B cells (which recognize free antigen directly), **T lymphocytes** only r
 - **MHC class II** — displayed only on specialized **antigen-presenting cells** (macrophages, dendritic cells, B cells), presenting fragments of extracellular material the cell has phagocytosed/endocytosed. **Helper T cells (CD4⁺)** recognize antigen via MHC II display and, upon activation, secrete cytokines that amplify both the B cell response (the costimulation required for full B cell activation, above) and cytotoxic T cell activity — functioning as a coordinating hub rather than a direct effector cell.
 
 ![MHC class I vs. class II side by side: MHC class I displays an endogenous (intracellular pathogen-derived) antigen on any nucleated cell and is recognized by CD8+ T cells; MHC class II displays an exogenous (phagocytosed/endocytosed) antigen only on antigen-presenting cells and is recognized by CD4+ T cells](/ANIMALPHYSIOPICS/mhc-class-i-vs-ii-antigen-presentation.webp)
-*Source: kingofthecurve.org (USMLE Step 1 guide) — precise conceptual match for endogenous/exogenous antigen source, cell type, and CD8+/CD4+ T cell specificity; the source image contains a couple of apparent label typos, not reproduced here. Confirm licensing basis before public deployment.*
+*Source: kingofthecurve.org (USMLE Step 1 guide)*
 
 ```mermaid
 graph TD;

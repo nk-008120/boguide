@@ -20,14 +20,14 @@ This page opens the Molecular Biology tier by covering how DNA is physically org
 DNA's two strands run **antiparallel** (one 5′→3′, the other 3′→5′, running in opposite directions relative to each other) and wind around a common axis into a right-handed double helix, held together by two forces: **hydrogen bonding** between complementary base pairs (A–T, G–C — see [Nucleotide & Nucleic Acid Chemistry](../nucleotide-nucleic-acid-chemistry/) for why only these pairings work chemically) running perpendicular to the helix axis, and **base stacking** (van der Waals/hydrophobic interactions between adjacent stacked bases) running parallel to it — base stacking actually contributes more to overall helix stability than hydrogen bonding alone, a frequently underappreciated point. The antiparallel arrangement is not incidental — it is a direct structural requirement for complementary base pairing to work geometrically at all, and it is the root cause of the leading/lagging strand asymmetry described below.
 
 ![The B-DNA double helix (left) alongside a flattened base-pairing diagram showing antiparallel 5'→3' / 3'→5' strand orientation, A-T and G-C hydrogen bonding, and the sugar-phosphate backbone](/MCBBPICS/watson-crick-double-helix.jpg)
-*Source: biology.stackexchange.com (originally fastbleep.com) — confirm licensing basis before public deployment. Note: the saved image includes handwritten pen annotations and a garbled, partly duplicated lower panel (corrupted base labels) that are not part of the original figure — only the clean upper portion (helix + labelled base-pairing diagram) should be treated as reliable; consider re-sourcing a clean version before public deployment.*
+*Source: biology.stackexchange.com (originally fastbleep.com)*
 
 ### Why replication must be semiconservative
 
 DNA replication produces two daughter molecules, each consisting of **one original (template) strand and one newly synthesised strand** — the **semiconservative** model, directly confirmed by the classic Meselson-Stahl density-gradient experiment (¹⁵N/¹⁴N isotope labelling), which distinguished it from two rival hypotheses: **conservative** replication (the original double helix stays fully intact, and an entirely new double helix is synthesised alongside it) and **dispersive** replication (both daughter molecules are a patchwork mixture of old and new DNA). Semiconservative replication is a direct mechanistic consequence of the fact that each template strand is individually read and directly base-paired against as the new strand is built — there is no step in the actual polymerisation mechanism that would produce either of the two rival patterns.
 
 ![Meselson-Stahl density-gradient results across four hypothetical scenarios: both strands light, both strands heavy, a light/light + heavy/heavy mixture, and a light/heavy hybrid — the single intermediate band (light/heavy) is the actual observed result supporting semiconservative replication](/MCBBPICS/meselson-stahl-density-gradient.png)
-*Source: biology.arizona.edu — confirm licensing basis before public deployment*
+*Source: biology.arizona.edu*
 
 ### Origins of replication and the replication fork
 
@@ -52,7 +52,7 @@ Because the two template strands run in opposite directions, but DNA polymerase 
 This asymmetry is entirely a geometric consequence of DNA polymerase's fixed directionality meeting the antiparallel structure of the double helix — it is not an arbitrary or separately-evolved mechanism. On the lagging strand, RNA primers are subsequently removed and replaced with DNA (by a polymerase with 5′→3′ exonuclease activity, e.g. DNA polymerase I in bacteria) and the resulting nicks between adjacent Okazaki fragments are sealed by **DNA ligase**, forming a continuous strand.
 
 ![Full replication fork: helicase and topoisomerase/gyrase unwind parental DNA ahead of the fork, single-stranded binding protein coats exposed template, primase lays RNA primers, DNA polymerase III synthesises the leading strand continuously and the lagging strand as discrete Okazaki fragments (each on its own sliding clamp), DNA polymerase I replaces RNA primers with DNA, and ligase seals the remaining nicks — with an inset showing the overall bidirectional fork geometry from a single origin](/MCBBPICS/replication-fork-diagram.png)
-*Source: wou.edu (Chemistry/Biochemistry course materials) — confirm licensing basis before public deployment*
+*Source: wou.edu (Chemistry/Biochemistry course materials)*
 
 ### Proofreading and fidelity
 

@@ -24,7 +24,7 @@ Animal cells form three structurally and functionally distinct junction types, e
 - **Gap junctions**: form direct cytoplasmic channels (built from **connexin** proteins arranged into a **connexon**) between adjacent cells, allowing small molecules and ions to pass directly cell-to-cell without crossing either plasma membrane individually. This provides direct electrical/chemical coupling — critical in cardiac muscle for coordinated, synchronised contraction, since an action potential can propagate directly cell-to-cell through gap junctions rather than requiring a slower cell-surface-receptor-mediated relay each time.
 
 ![Cross-section of a vertebrate epithelial cell junctional complex: tight junction (apical-most), adherens junction and desmosome (cell-cell anchoring junctions, connecting actin and intermediate filaments respectively between cells), gap junction, and two cell-matrix anchoring junctions (actin-linked and hemidesmosome) at the basal surface](/MCBBPICS/epithelial-junction-types.png)
-*Source: Bruce Alberts et al., Molecular Biology of the Cell, 7th ed., Figure 19-2 — confirm licensing basis before public deployment. Commercial textbook figure; no visible copyright notice printed on the image itself, but still needs a license or replacement before public deployment. Shows five junction/anchoring types (a fuller breakdown of "anchoring junctions" into adherens/desmosome/hemidesmosome/cell-matrix) rather than the three broad categories named in the text.*
+*Source: Bruce Alberts et al., Molecular Biology of the Cell, 7th ed., Figure 19-2*
 
 ### Extracellular matrix (ECM)
 
@@ -38,7 +38,7 @@ The ECM is the network of secreted extracellular proteins and polysaccharides su
 - **Extrinsic (death receptor) pathway**: triggered by extracellular ligand binding to a cell-surface "death receptor" (e.g. Fas), directly activating the downstream protease cascade without a mitochondrial step.
 
 ![Extrinsic and intrinsic apoptosis pathways side by side: extrinsic pathway shows Fas ligand/TRAILR binding recruiting FADD, activating caspase-8/10; intrinsic pathway shows ER stress/hypoxia/DNA damage stimuli triggering BH3-only proteins, BAX/BAK-mediated mitochondrial outer membrane permeabilisation, cytochrome c release, and APAF1 apoptosome formation; both converge on executioner caspases-3/-7](/MCBBPICS/apoptosis-intrinsic-extrinsic-pathways.png)
-*Source: scispace.com (AI research-summary tool) — confirm licensing basis before public deployment*
+*Source: scispace.com (AI research-summary tool)*
 
 Both pathways converge on activating a proteolytic cascade of **caspases**, cysteine proteases that cleave specific target proteins to systematically dismantle the cell: the cytoskeleton is disassembled, chromatin is condensed and DNA is fragmented, and the cell breaks into membrane-bound **apoptotic bodies**. Externalised **phosphatidylserine** on the outer membrane leaflet (see [Lipids & Membrane Biochemistry](../lipids-membrane-biochemistry/) for the lipid-asymmetry chemistry) serves as an "eat me" signal, allowing clean phagocytic clearance of apoptotic bodies **without releasing cellular contents into the surrounding tissue** — the critical distinction that keeps apoptosis non-inflammatory.
 
@@ -47,7 +47,7 @@ Both pathways converge on activating a proteolytic cascade of **caspases**, cyst
 **Necrosis** results from acute, overwhelming cellular injury (e.g. ischemia, physical trauma, toxins) rather than a regulated program. The cell swells (osmotic/ionic regulation fails), the plasma membrane ruptures, and cellular contents (including lysosomal enzymes and pro-inflammatory intracellular molecules) spill into the surrounding tissue, triggering **inflammation** — the direct opposite of apoptosis's clean, non-inflammatory clearance. This inflammation vs. no-inflammation distinction is the single most important functional/exam contrast between the two death modes.
 
 ![Apoptosis (controlled, cell shrinkage, chromatin condensation, apoptotic bodies) vs. necrosis (uncontrolled, cell swelling, membrane lysis) vs. necroptosis (controlled but caspase-independent, membrane lysis via the RIPK1/3-MLKL pathway) shown as three labelled cell illustrations side by side](/MCBBPICS/apoptosis-vs-necrosis.jpg)
-*Source: logosbio.com — confirm licensing basis before public deployment. Note: includes a third mode, necroptosis, beyond the two originally specced.*
+*Source: logosbio.com*
 
 ### Autophagy: self-digestion, not necessarily death
 

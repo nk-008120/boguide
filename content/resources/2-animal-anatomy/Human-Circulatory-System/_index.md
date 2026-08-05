@@ -19,7 +19,7 @@ This page covers the structural anatomy of the heart, blood vessels, blood itsel
 The heart wall has three layers, outer to inner: **epicardium** (the heart's own visceral serous membrane, continuous with the outer **parietal pericardium** that encloses the heart — the potential space between the two, the pericardial cavity, contains a thin film of serous fluid reducing friction as the heart beats), **myocardium** (cardiac muscle — see [Human Muscular System](../human-muscular-system/) for intercalated disc structure — by far the thickest layer, responsible for contractile force), and **endocardium** (a thin endothelial lining continuous with the endothelium of attached blood vessels, minimizing turbulence and clot formation over the chamber surfaces).
 
 ![Heart wall cross-section labeled with endocardium, myocardium, epicardium (visceral layer of serous pericardium), pericardial cavity, parietal layer of serous pericardium, and fibrous pericardium.](/ANATOMYPICS/heart-wall-layers-cross-section.jpg)
-*Source: user-sourced (originally via microbenotes.com). Exact match, and exceeds spec by breaking the pericardium into its fibrous/parietal/visceral sublayers.*
+*Source: microbenotes.com*
 
 ### Chambers and Valves
 
@@ -240,7 +240,7 @@ One full heartbeat comprises **systole** (contraction) and **diastole** (relaxat
 The myocardium, despite being bathed in blood on its inner (endocardial) surface, is too thick to be nourished by diffusion from the chambers alone and has its own dedicated blood supply: the **left and right coronary arteries**, the first branches off the ascending aorta (arising just above the aortic semilunar valve), which is why coronary filling is greatest during diastole, when the aortic valve is closed and the coronary ostia are not being intermittently covered by open valve cusps. Venous drainage largely returns via the **coronary sinus** into the right atrium.
 
 ![Coronary circulation in anterior and posterior view: right and left coronary arteries branching from the aortic root, their circumflex/anterior and posterior interventricular branches, and the cardiac veins (great, middle, small, anterior) draining into the coronary sinus.](/ANATOMYPICS/coronary-artery-distribution.jpg)
-*Source: user-sourced (originally via Wikipedia "Coronary circulation"). Exceeds spec — both anterior and posterior views, arteries and veins both fully labeled.*
+*Source: Wikipedia, "Coronary circulation"*
 
 ### Blood Composition
 

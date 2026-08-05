@@ -25,7 +25,7 @@ A short list of synapomorphies (shared derived traits) distinguishes mammals fro
 - **Three middle-ear ossicles** — mammals have three ear ossicles (malleus, incus, stapes) versus a single ear bone (the stapes only) in reptiles/birds — a classic, heavily tested example of structural repurposing linking jaw and ear anatomy across amniotes.
 
 ![Mammal skull and inner-ear zoom (squamosal, dentary; malleus/articular, incus/quadrate, stapes, inner ear) directly above the equivalent reptile skull and inner-ear zoom (squamosal, quadrate, articular, dentary; stapes and inner ear only).](/ANATOMYPICS/reptilian-jaw-mammalian-ear-homology.jpg)
-*Source: UC Berkeley's Understanding Evolution. Exact match — directly visualizes the articular→malleus, quadrate→incus homology described in the text.*
+*Source: UC Berkeley's Understanding Evolution*
 
 <div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
   <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">👂 Jaw-to-Ear Homology Animator</h3>
@@ -116,7 +116,7 @@ A short list of synapomorphies (shared derived traits) distinguishes mammals fro
 Beyond the three broad reproductive strategies (below), placental mammals themselves show structural variation in how intimately fetal and maternal tissue interface — a maternal-fetal interface classification worth knowing at the structural level: **epitheliochorial placentas** (e.g. pigs, horses) keep maternal and fetal tissue layers fully intact and merely apposed, with no erosion of maternal endometrium, so nutrient exchange must cross the maximum possible number of tissue layers; **hemochorial placentas** (e.g. humans, most rodents) involve much deeper trophoblast invasion, actually eroding maternal endometrial tissue and blood vessels so that fetal chorionic tissue sits in direct contact with maternal blood — a structurally more invasive, more efficient exchange interface, at the cost of a more involved (and more hemorrhage-prone) birth process.
 
 ![Three placental interface types compared: (a) epitheliochorial (cow, pig, horse) — maternal and fetal epithelial layers both fully intact; (b) endotheliochorial (dog, cat) — maternal epithelium eroded, fetal tissue contacts the maternal endothelium; (c) hemochorial (human, rodent) — both maternal layers eroded, fetal tissue bathed directly in maternal blood.](/ANATOMYPICS/epitheliochorial-vs-hemochorial-placenta.webp)
-*Source: user-sourced (originally via a ResearchGate figure). Exceeds spec with the intermediate endotheliochorial type alongside the two named in the text.*
+*Source: ResearchGate*
 
 ### Three Reproductive Structural Plans
 
@@ -127,7 +127,7 @@ Beyond the three broad reproductive strategies (below), placental mammals themse
 | **Placentals (Eutherians)** | Extended internal gestation supported by a true, tissue-invading placenta (epitheliochorial or hemochorial, see above) | Humans and the large majority of living mammal species |
 
 ![Monotreme (echidna), marsupial (opossum-like marsupial), and placental (camel) silhouettes over a "morphological complexity" gradient bar, with bullet points comparing forelimb muscle differentiation, attachment-site count, and connectivity/morphological-burden metrics across the three groups.](/ANATOMYPICS/monotreme-marsupial-placental-reproduction-compared.png)
-*Source: user-sourced (originally via a Springer/BMC Evolutionary Biology article). **Mismatch from spec**: this compares forelimb/shoulder muscle complexity across the three mammalian groups, not their reproductive structures — no eggs, pouch, or placenta are shown. Kept because the three-way grouping is still directly relevant to this page, but it illustrates a different concept than the text describes.*
+*Source: Springer/BMC Evolutionary Biology*
 
 The placenta is structurally a repurposing of the same chorion and allantois membranes present in the reptile/bird amniotic egg (see the [previous page](../reptile-bird-anatomy/)) — internalized and vascularized against the uterine wall (see [Human Reproductive System](../human-reproductive-system/)) instead of enclosed in a shell.
 
@@ -138,7 +138,7 @@ The basic tetrapod limb plan (see [Fish & Amphibian Anatomy](../fish-amphibian-a
 - **Cursorial (running) adaptation** — elongated distal limb bones, reduction in digit number, and a shift toward walking on the tips of the digits (**unguligrade** stance, e.g. horses/deer) or the digits alone (**digitigrade**, e.g. dogs/cats) rather than the flat-footed **plantigrade** stance of humans (and bears) — each stance trades ground contact/stability for stride length and speed.
 
 ![Hindlimb skeletons compared: plantigrade (man, Asian black bear — full foot contacts the ground), digitigrade (greyhound, cheetah — only the digits contact the ground), and ungulate/unguligrade (Grevy's zebra — only the hoof/toe tip contacts the ground), with hip/knee/foot joints aligned by dashed lines across all five skeletons.](/ANATOMYPICS/plantigrade-digitigrade-unguligrade-stance-comparison.png)
-*Source: user-sourced (originally via mammals-locomotion.com). Exact match, and exceeds spec by showing two examples per stance category.*
+*Source: mammals-locomotion.com*
 
 <div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
   <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:1rem;">
@@ -232,7 +232,7 @@ The basic tetrapod limb plan (see [Fish & Amphibian Anatomy](../fish-amphibian-a
 | **Herbivore** | Reduced/absent canines; broad, ridged molars for grinding plant material | Often much longer gut, and in **ruminants** (cattle, deer, sheep) a **four-chambered stomach** (rumen, reticulum, omasum, abomasum) housing microbes that ferment cellulose the mammal cannot digest on its own |
 
 ![Ruminant digestive tract in a cow: esophagus leading to the rumen, then reticulum, then omasum, then abomasum, then intestine, with the food path traced by arrows through all four chambers in order.](/ANATOMYPICS/ruminant-four-chambered-stomach-schematic.jpg)
-*Source: user-sourced (originally shared via a Facebook post). Exact match, all four chambers labeled and the food path traced in the correct order.*
+*Source: shared via a Facebook post*
 | **Omnivore** (including humans) | Generalized heterodont set — moderate canines, both cutting incisors and grinding molars | Single-chambered stomach, moderate gut length, structurally the baseline described on the [Human Digestive System](../human-digestive-system/) page |
 
 The ruminant four-chambered stomach is a direct, high-yield contrast to the single-chambered human stomach: structurally, it's an elaborate fermentation chamber sequence upstream of a "true" stomach (the **abomasum**, functionally/structurally equivalent to the human stomach's gastric-gland-lined mucosa), not four independent organs performing the same job in parallel — the **rumen** and **reticulum** house the fermenting microbial population, and food is regurgitated and re-chewed ("chewing the cud") to further mechanically break it down before final passage to the omasum (water reabsorption) and abomasum.

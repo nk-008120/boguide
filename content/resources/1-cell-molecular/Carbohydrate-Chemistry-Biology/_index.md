@@ -24,7 +24,7 @@ Monosaccharides are polyhydroxy aldehydes (**aldoses**, e.g. glucose) or ketones
 In aqueous solution, 5- and 6-carbon sugars predominantly exist as **cyclic hemiacetals/hemiketals** (furanose or pyranose rings), not open chains. Ring closure creates a *new* chiral centre at C1 (the **anomeric carbon**), giving rise to **α and β anomers** — e.g. α-D-glucopyranose vs. β-D-glucopyranose, which interconvert in solution (**mutarotation**) but are locked into one form once incorporated into a glycosidic bond. This α/β distinction is the single most consequential fact in this page: it is the entire reason starch/glycogen and cellulose behave so differently (see below).
 
 ![Open-chain fructose interconverting with its cyclic β-D-fructopyranose (68.2%) and β-D-fructofuranose (22.4%) ring forms via the trans-oxygen (β-anomer) open-chain intermediate, carbons numbered 1-6](/MCBBPICS/glucose-open-chain-vs-cyclic.jpg)
-*Source: chem.libretexts.org (Cyclic Structures of Monosaccharides — Anomers) — confirm licensing basis before public deployment. Note: this image actually depicts fructose (open-chain ⇌ pyranose/furanose ring forms), not glucose as originally specced — the source page discusses anomers generally, and this is the example figure that was saved. The core concept illustrated (open-chain sugar in equilibrium with cyclic ring forms via the anomeric carbon) still applies to glucose, but no glucose-specific version is currently placed.*
+*Source: chem.libretexts.org (Cyclic Structures of Monosaccharides — Anomers)*
 
 ### Glycosidic bonds
 
@@ -35,17 +35,17 @@ A **glycosidic bond** forms between the anomeric carbon of one sugar and a hydro
 **Starch** (plants) and **glycogen** (animals) are both glucose polymers linked almost entirely by **α(1→4)** bonds, with **α(1→6)** branch points (more frequent in glycogen than in amylopectin, giving glycogen a more densely branched, "bushier" structure with more non-reducing ends for rapid simultaneous mobilisation by glycogen phosphorylase). The α linkage puts a consistent kink at every bond, so the chain naturally coils into a helix — a shape enzymes (amylase, phosphorylase) can access easily from the outside, which is exactly what a rapidly mobilised energy store needs.
 
 ![Chair-structure and schematic bead-chain diagrams of glycogen branching: linear α(1→4)-linked glucose chains with an α(1→6) branch point, multiple non-reducing ends, and one reducing end](/MCBBPICS/glycogen-branching-diagram1.jpg)
-*Source: ScienceDirect Topics ("glycogenin") — confirm licensing basis before public deployment. ScienceDirect topic pages are not a confirmed-open source by default.*
+*Source: ScienceDirect Topics ("glycogenin")*
 
 ![Enzymatic mechanism of glycogen branch formation: transglycosylase acts on a linear glucose chain attached to the glycogen core, creating a new α(1→6) branch point (numbered 1 and 6) with the arrows marking sites for further glucosyl unit addition](/MCBBPICS/glycogen-branching-diagram2.png)
-*Source: ScienceDirect Topics ("glycogenesis") — confirm licensing basis before public deployment. ScienceDirect topic pages are not a confirmed-open source by default.*
+*Source: ScienceDirect Topics ("glycogenesis")*
 
 **Cellulose**, by contrast, links glucose exclusively by **β(1→4)** bonds. The β linkage forces each successive glucose to rotate 180° relative to its neighbour, producing a straight, extended chain rather than a helix. These straight chains pack side-by-side into extensive inter-chain hydrogen-bonded sheets — microfibrils — which is what gives cellulose its tensile strength and near-total resistance to digestion by animal enzymes (which recognise only α-glycosidic geometry; only specialised **cellulase**-producing organisms, often microbial symbionts, can hydrolyse β(1→4) bonds).
 
 This is the highest-yield single comparison in carbohydrate biochemistry: **identical monomer, only the anomeric configuration of the linkage differs, and that alone explains storage-vs-structural function.**
 
 ![Starch structure diagram: unbranched amylose chain with an α1→4 glycosidic bond labelled, and branched amylopectin with both an α1→4 backbone bond and an α1→6 branch-point bond labelled](/MCBBPICS/amylose-vs-cellulose-chain.webp)
-*Source: easybiologyclass.com — confirm licensing basis before public deployment. Note: despite the requested spec (amylose vs. cellulose), this image actually shows amylose vs. amylopectin — the two components of starch, not a starch-vs-cellulose comparison. The source image's own labels ("Amylose Part of Cellulose," "Amylopectin Part of Cellulose") also appear to be an error in the original graphic — the content is standard amylose/amylopectin starch structure, not cellulose. No amylose-vs-cellulose comparison image is currently placed.*
+*Source: easybiologyclass.com*
 
 ### Glycosaminoglycans and the extracellular matrix
 

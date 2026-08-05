@@ -30,14 +30,14 @@ Nitrogenous bases fall into two structural classes:
 Each purine pairs specifically with one pyrimidine via hydrogen bonding — **A with T (or U in RNA), G with C** — a pairing rule that is chemically, not arbitrarily, determined: the hydrogen bond donor/acceptor pattern only matches correctly in the A–T/A–U and G–C combinations, and pairing two purines together would sterically clash (too wide) while pairing two pyrimidines would leave them too far apart to hydrogen-bond. G–C pairs form **three** hydrogen bonds, A–T pairs form **two** — which is why GC-rich DNA regions have a measurably higher melting temperature ($T_m$) than AT-rich regions of the same length.
 
 ![Purine (fused six/five-membered ring) and pyrimidine (single six-membered ring) parent structures, with all five nitrogenous bases shown: adenine and guanine (purines), cytosine, uracil, and thymine (pyrimidines), amino/carbonyl substituents highlighted](/MCBBPICS/purine-vs-pyrimidine-bases.jpg)
-*Source: pratclif.com — confirm licensing basis before public deployment*
+*Source: pratclif.com*
 
 ### The sugar: ribose vs. deoxyribose
 
 **RNA** uses **ribose**; **DNA** uses **2′-deoxyribose** — the single chemical difference is the absence of a hydroxyl group at the 2′ carbon in DNA. This is not a cosmetic difference: the 2′-OH in RNA makes the sugar-phosphate backbone chemically more reactive and prone to alkaline/enzymatic hydrolysis, meaning **RNA is intrinsically less chemically stable than DNA** — a major reason DNA, not RNA, is the long-term hereditary information store in cellular life, while RNA's greater reactivity is co-opted functionally in ribozymes (catalytic RNA, whose 2′-OH groups can participate directly in phosphodiester bond chemistry).
 
 ![Ribose (RNA sugar) vs. deoxyribose (DNA sugar) furanose rings, numbered 1'-5', with the 2' position highlighted: an -OH group in ribose vs. an -H in deoxyribose](/MCBBPICS/ribose-vs-deoxyribose.png)
-*Source: tutorchase.com — confirm licensing basis before public deployment*
+*Source: tutorchase.com*
 
 ### Phosphodiester bonds and strand directionality
 

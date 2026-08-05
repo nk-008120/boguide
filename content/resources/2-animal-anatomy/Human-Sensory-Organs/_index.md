@@ -23,7 +23,7 @@ The eyeball wall has three concentric layers:
 - **Inner layer** — the **retina**, itself multilayered (see below).
 
 ![Labeled eye cross-section: fibrous tunic (sclera, cornea), vascular tunic/uvea (iris, ciliary body, choroid), nervous tunic (retina), anterior/posterior chambers with aqueous humor, vitreous humor, lens, lenticular zonules, iridocorneal angle, and optic nerve.](/ANATOMYPICS/eye-cross-section-three-tunics.jpg)
-*Source: user-sourced (originally via Ohio State Pressbooks, which returned 403 Forbidden on direct fetch). Exact match for all three tunics and chambers; carries a faint "©2020 The Ohio State University" watermark visible in the image — confirm licensing basis before public deployment.*
+*Source: The Ohio State University (Ohio State Pressbooks).*
 
 ### Retinal Structure
 
@@ -122,14 +122,14 @@ Six extraocular muscles move each eye: four **rectus muscles** (superior, inferi
 - **Inner ear** — a fluid-filled system embedded in temporal bone, comprising the **cochlea** (hearing) and the **vestibular apparatus** (balance), both housed within a bony labyrinth lined by a membranous labyrinth; the two labyrinths are separated by **perilymph** (outer, similar in composition to CSF/extracellular fluid) while the membranous labyrinth itself contains **endolymph** (inner, unusually high in K⁺, more like intracellular fluid) — this ionic difference is directly relevant to how hair cells (below) generate a signal.
 
 ![Full labeled ear cross-section: outer ear (helix, scapha, triangular fossa, antihelix, concha, auricular lobule, external acoustic meatus/ear canal), middle ear (malleus, incus, stapes, tympanic membrane, tympanic cavity, Eustachian tube), and inner ear (semicircular canals, cochlea, vestibular nerve, cochlear nerve).](/ANATOMYPICS/ear-cross-section-outer-middle-inner.jpg)
-*Source: user-sourced figure. Exceeds spec with detailed outer-ear surface landmarks beyond what the text covers.*
+*Source: user-sourced figure*
 
 ### Cochlear Structure
 
 The cochlea is a coiled tube divided lengthwise into three fluid-filled channels: **scala vestibuli** and **scala tympani** (both perilymph, connected at the cochlear apex, the **helicotrema**) flank the central **scala media (cochlear duct)** (endolymph). Vibration entering at the oval window travels through the scala vestibuli, deflects the **basilar membrane** (which separates the scala media from the scala tympani, floor of the cochlear duct), and dissipates via the **round window** (a second membrane-covered opening that flexes outward to relieve pressure, since fluid is incompressible). Sitting on the basilar membrane, the **organ of Corti** contains rows of **hair cells** — mechanoreceptors whose apical **stereocilia** are embedded in or contact an overlying gelatinous **tectorial membrane**; basilar membrane vibration shears the stereocilia against the tectorial membrane, mechanically opening ion channels and depolarizing the hair cell, which then synapses onto afferent fibers of the cochlear branch of cranial nerve VIII. The basilar membrane's width and stiffness vary continuously along its length (narrow/stiff near the oval window, wide/flexible near the helicotrema), so different frequencies produce a maximal deflection at different positions — a **tonotopic map** that is the direct structural basis of pitch discrimination.
 
 ![Cochlear cross-section showing scala vestibuli, scala media (with Reissner's membrane and the stria vascularis), and scala tympani, with the organ of Corti — tunnel, tunnel fibres, outer hair cells and their nerve cells, Deiters cells, tectorial membrane, and basilar membrane — labeled in detail.](/ANATOMYPICS/cochlear-cross-section-scalae-organ-of-corti.png)
-*Source: Wikimedia Commons (`Cochlea-crosssection.svg`), CC BY-SA 3.0, creator Quantum7. Originally an SVG — the Read tool can't render SVG directly, so it was rasterized to PNG via a browser canvas conversion before viewing. Exact match, exceeds spec with additional labeled substructures.*
+*Source: Wikimedia Commons (`Cochlea-crosssection.svg`), CC BY-SA 3.0, creator Quantum7*
 
 <div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
   <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">🎵 Cochlear Tonotopy Explorer</h3>
@@ -204,7 +204,7 @@ The cochlea is a coiled tube divided lengthwise into three fluid-filled channels
 The vestibular apparatus detects head position and movement using the same hair-cell mechanoreceptor principle as the cochlea, in two structurally distinct components: three **semicircular canals**, oriented in three roughly perpendicular planes, each with a swelling (**ampulla**) at its base containing a **crista ampullaris** — a hair-cell patch capped by a gelatinous **cupula** that is deflected by inertial lag in the endolymph during rotational (angular) acceleration, detecting head rotation in that canal's plane; and two **otolith organs**, the **utricle** and **saccule**, each containing a **macula** — a hair-cell patch overlaid by a gelatinous layer embedded with dense calcium carbonate crystals (**otoliths/otoconia**), whose inertial lag during linear acceleration or in response to gravity shears the underlying hair cells, detecting linear acceleration and static head tilt.
 
 ![Vestibular system overview (utricle, saccule, semicircular canals with ampullae) plus an enlarged crista (cupula, hair bundles, hair cells, nerve fiber) and an enlarged macula (otoconia, otolithic membrane, stereocilia, kinocilium, type I/II hair cells, supporting cells, nerve fiber, basement membrane).](/ANATOMYPICS/semicircular-canal-otolith-organ-structure.jpg)
-*Source: Encyclopædia Britannica, Inc. — a copyright notice is visible directly in the image. Confirm licensing basis before public deployment. Exact match, both crista and macula structure shown in full detail.*
+*Source: Encyclopædia Britannica, Inc.*
 
 ## Comparative Structures
 

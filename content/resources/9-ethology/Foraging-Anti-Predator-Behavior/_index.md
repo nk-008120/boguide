@@ -25,7 +25,7 @@ This page opens the **Behavioral Ecology** tier, where behavior is analyzed not 
 The **marginal value theorem** (Eric Charnov) addresses a specific sub-problem: when food occurs in discrete, depleting **patches** (a flower cluster, a fruiting tree, a shoal of prey) separated by non-foraging travel time, how long should a forager stay in a given patch before moving to the next one? As a forager depletes a patch, its intake rate within that patch declines; the marginal value theorem predicts the optimal **giving-up time** is reached when the current patch's declining intake rate falls to match the *average* intake rate achievable across the whole habitat (including travel time to the next patch) — not when the patch is fully depleted. A direct, testable consequence: foragers should stay *longer* in each patch as travel time between patches increases (since abandoning a patch early is more costly when the next one is far away), a pattern confirmed experimentally in bumblebees foraging on artificial flower patches with manipulated inter-patch distances.
 
 ![Charnov's marginal value theorem graphical solution: cumulative resource intake vs. time foraging in a patch, a diminishing-returns curve, with a tangent line drawn from the negative x-axis (expected transit time) touching the curve at the optimal time in patch.](/ETHOLOGYPICS/marginal-value-theorem-tangent-diagram.jpg)
-*Source: Wikipedia, "Marginal value theorem" — confirm licensing basis before public deployment. Excellent match to the classic Charnov graphical construction.*
+*Source: Wikipedia, "Marginal value theorem"*
 
 ### The Predator-Prey Behavioral Arms Race
 
@@ -49,12 +49,12 @@ Several named strategies recur across taxa and are tested individually:
 - **Predator swamping/satiation** — the same mass-synchrony logic as the dilution effect, extended to the case where predator population size cannot track sudden prey abundance (periodical cicada mass emergences are the standard example: a 13- or 17-year emergence cycle produces prey numbers far exceeding what the local predator community can consume in a single season, so a fixed fraction survives regardless of predator numbers).
 
 ![Two-panel timeline: predator response/availability curves over time (top) alongside cicada phenology (bottom), showing underground final-instar nymphs giving way to a sharp spike in adult cicada availability at T2, timed against predator response curves.](/ETHOLOGYPICS/periodical-cicada-emergence-timeline.jpg)
-*Source: exam/textbook figure (specific origin not stated by submitter) — confirm licensing basis before public deployment. Strong match to the population-surge-vs-predator-capacity concept described.*
+*Source: exam/textbook figure (specific origin not stated by submitter)*
 
 - **Startle and deimatic displays** — sudden exposure of conspicuous markings (e.g. peacock butterfly eyespots flashed open in response to an approaching predator) intended to startle a predator or mimic the appearance of a larger animal's eyes, buying an escape window.
 
 ![Peacock butterfly with wings open, its two large wing eyespots circled/highlighted.](/ETHOLOGYPICS/peacock-butterfly-eyespot-display.jpg)
-*Source: Yorkshire Museum (Facebook) — confirm licensing basis before public deployment.*
+*Source: Yorkshire Museum (Facebook)*
 - **Mobbing** — coordinated group harassment of a predator by potential prey (small birds mobbing a perched hawk or owl) to drive it away from the immediate area, at some risk to the mobbing individuals; often triggered specifically by an alarm-call type distinct from a fleeing-response alarm call.
 
 <!-- VIDEO: Starling flock "murmuration" showing predator-evasion dynamics and the selfish-herd effect in real time — Sturnus vulgaris — the constantly shifting central-vs-peripheral positioning that drives the selfish herd effect is essentially invisible in a still frame -->

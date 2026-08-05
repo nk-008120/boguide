@@ -22,7 +22,7 @@ Hormones fall into two mechanistically distinct classes based on solubility, whi
 - **Water-soluble hormones** (peptide hormones — insulin, glucagon, ADH, growth hormone; and amine hormones derived from tyrosine — epinephrine, norepinephrine) cannot cross the plasma membrane and instead bind **cell-surface receptors**, triggering a **second-messenger cascade** inside the target cell (e.g., a G-protein-coupled receptor activating adenylyl cyclase, raising intracellular **cyclic AMP**, which activates protein kinase A, which phosphorylates existing enzymes). This mechanism is fast (seconds to minutes, since it modifies existing proteins rather than requiring new synthesis) but shorter-lived.
 
 ![Both hormone signaling pathways in one diagram: peptide/protein hormones (right) bind a membrane receptor, activating a G-protein, adenylyl cyclase, cAMP, and protein kinase A (second-messenger pathway); steroid/thyroid hormones (left) diffuse through the membrane to bind an intracellular receptor, forming a hormone-receptor complex that enters the nucleus, binds the hormone response element, and drives gene transcription (genomic pathway)](/ANIMALPHYSIOPICS/hormone-mechanism-lipid-vs-water-soluble.jpg)
-*Source: Scoolam Foundation (via Facebook repost) — single combined diagram covering both mechanisms, confirm licensing basis before public deployment.*
+*Source: Scoolam Foundation*
 
 <span class="badge-custom">Exam tip</span> A hormone's chemical class predicts its mechanism without memorizing each one individually: lipid-soluble → intracellular receptor → gene transcription → slow/sustained; water-soluble → surface receptor → second messenger → fast/transient. Given an unfamiliar hormone's solubility, the mechanism can be inferred from this rule alone.
 
@@ -40,7 +40,7 @@ graph TD;
 ```
 
 ![Two panels: (a) the generic complex-endocrine-pathway hierarchy (Stimulus → Hypothalamus → Trophic hormone H1 → Anterior pituitary → Trophic hormone H2 → Endocrine gland → Hormone H3 → Target tissue → Response), with both short-loop and long-loop negative feedback arrows shown explicitly; (b) the same hierarchy instantiated as the specific HPA axis (Hypothalamus → CRH → Anterior pituitary → ACTH → Adrenal cortex → Cortisol → Target tissue → Response)](/ANIMALPHYSIOPICS/hpa-hpt-axis-hierarchy.png)
-*Source: Dee Unglaub Silverthorn, Human Physiology: An Integrated Approach (Fig. 7.11) — shows the generic hierarchy plus the HPA axis specifically (not HPT); commercial textbook figure, confirm licensing basis before public deployment.*
+*Source: Dee Unglaub Silverthorn, Human Physiology: An Integrated Approach (Fig. 7.11)*
 
 ### The HPA Axis (Hypothalamic-Pituitary-Adrenal)
 
@@ -55,7 +55,7 @@ The hypothalamus releases **TRH** (thyrotropin-releasing hormone), stimulating t
 Unlike the adrenal cortex (steroid-producing, HPA-axis-controlled, slow), the **adrenal medulla** is directly innervated by sympathetic preganglionic neurons (see [Nervous System Physiology](../nervous-system-physiology/)) and releases **epinephrine** and **norepinephrine** directly into the blood within seconds of a sympathetic trigger — the "fight-or-flight" response (elevated heart rate/contractility, bronchodilation, blood flow shunted from digestive/renal beds to skeletal muscle, glycogenolysis). The adrenal medulla is developmentally and functionally a modified sympathetic ganglion, not a classic endocrine gland controlled by a hypothalamic-pituitary axis — worth stating explicitly, since it is the one major exception to the hierarchical pattern above.
 
 ![Adrenal gland cross-section: the cortex's three zones (zona glomerulosa secreting mineralocorticoids like aldosterone; zona fasciculata secreting glucocorticoids like cortisol; zona reticularis secreting androgens like DHEA) surrounding the inner adrenal medulla, which secretes the stress hormones epinephrine and norepinephrine](/ANIMALPHYSIOPICS/adrenal-gland-cortex-medulla.jpg)
-*Source: Wikipedia — precise spec match, all three cortical zones plus the medulla labeled with their hormones. Confirm specific file's license before public deployment.*
+*Source: Wikipedia*
 
 ### Growth Hormone and Insulin/Glucagon
 
@@ -64,7 +64,7 @@ Unlike the adrenal cortex (steroid-producing, HPA-axis-controlled, slow), the **
 **Insulin** (beta cells of the pancreatic islets) and **glucagon** (alpha cells) form a paired, mutually antagonistic negative feedback system regulating blood glucose directly (not routed through the hypothalamic-pituitary hierarchy above): rising blood glucose after a meal stimulates insulin release, which increases glucose uptake into muscle/adipose tissue (via GLUT4 translocation) and promotes hepatic glycogen synthesis, lowering blood glucose; falling blood glucose stimulates glucagon release, which promotes hepatic glycogenolysis and gluconeogenesis, raising blood glucose. *(Digestive-tract-specific hormones — gastrin, secretin, CCK — are covered on the [Digestive & Metabolic Physiology](../digestive-metabolic-physiology/) page; the HPG axis governing gonadal hormones is covered in full on the [Reproductive Physiology](../reproductive-physiology/) page.)*
 
 ![Three panels: (a) fed state seesaw showing insulin dominating over glucagon, driving glucose oxidation, glycogen synthesis, and fat/protein synthesis up; (b) fasted state seesaw showing glucagon dominating, driving glycogenolysis, gluconeogenesis, and ketogenesis up; (c) actual plasma insulin, glucagon, and glucose concentration curves before and after a meal, showing insulin rising and glucagon falling in the fed state](/ANIMALPHYSIOPICS/insulin-glucagon-blood-glucose.png)
-*Source: Dee Unglaub Silverthorn, Human Physiology: An Integrated Approach (Fig. 22.14) — exceeds the original spec by including real quantitative time-course data alongside the conceptual seesaw diagram. Commercial textbook figure, confirm licensing basis before public deployment.*
+*Source: Dee Unglaub Silverthorn, Human Physiology: An Integrated Approach (Fig. 22.14)*
 
 ## Comparative Structures
 

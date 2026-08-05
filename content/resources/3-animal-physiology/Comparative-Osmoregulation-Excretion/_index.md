@@ -19,7 +19,7 @@ The [Homeostasis & Osmoregulation](../homeostasis-osmoregulation/) page establis
 A marine bony fish's blood is far less concentrated than seawater, so it continuously loses water osmotically across the gills and gains ions by diffusion. Its solution: **drink seawater continuously** (the only way to replace lost water despite the seawater itself being hyperosmotic) and actively excrete the excess ions this intake brings in via specialized **chloride cells** in the gill epithelium, which actively pump Cl⁻ out (Na⁺ following passively/electrically) against a steep concentration gradient — an energetically expensive solution, but the only viable one given the fish cannot avoid gill-surface water loss to seawater.
 
 ![Four-panel comparison: (A) freshwater teleost — water enters passively, gills actively import Na+/Cl-, dilute urine excreted; (B) seawater teleost — water lost, fish drinks seawater, gills actively export Cl-/Na+/K+, intestine absorbs water while excreting CaCO3/Mg2+/SO4 2-, concentrated urine excreted; (C) freshwater teleost nephron reabsorbing glucose/amino acids/Na+/Cl- while excreting dilute urine; (D) seawater teleost nephron reabsorbing Na+/Cl-/H2O at the collecting duct, excreting only divalent ions (Mg2+/SO4 2-)](/ANIMALPHYSIOPICS/marine-vs-freshwater-fish-osmoregulation.webp)
-*Source: ResearchGate, fig. 1 — exceeds spec with both whole-body flux diagrams and paired nephron-level detail for each fish type. Journal figure, open-access status not confirmed. Revisit before public deployment.*
+*Source: ResearchGate, fig. 1*
 
 ### Elasmobranchs: Urea Retention
 
@@ -38,21 +38,21 @@ Amphibian skin (see [Fish & Amphibian Anatomy](../../2-animal-anatomy/fish-amphi
 Insects use an excretory system structurally unrelated to the vertebrate nephron: blind-ended **Malpighian tubules** project into the hemocoel (open circulatory body cavity) and actively secrete K⁺ (and with it, by electrochemical coupling, water and nitrogenous waste, chiefly **uric acid** — see [Homeostasis & Osmoregulation](../homeostasis-osmoregulation/) for why uric acid specifically suits water-limited/flying animals) into the tubule lumen; this fluid drains into the hindgut, where the **rectum** actively reabsorbs most of the water and ions, leaving a nearly dry uric acid paste for excretion. This two-stage secretion-then-reabsorption strategy (rather than the vertebrate filtration-then-reabsorption strategy) achieves the same functional outcome — concentrated waste, conserved water — via a structurally independent evolutionary solution, a strong example of convergent function without homologous structure.
 
 ![Insect excretory pathway: the Malpighian tubule actively secretes organic anions/cations and K+/Cl-/Na+/H2O (isosmotic to hemolymph) at the midgut junction; fluid passes through the anterior hindgut (some KCl and water reabsorbed) into the rectum (most water, ion, and metabolite reabsorption), producing a final hyperosmotic or hyposmotic excreta](/ANIMALPHYSIOPICS/malpighian-tubule-rectum-excretion.png)
-*Source: ScienceDirect (book chapter, Advances in Insect Physiology series) — precise spec match. Saved from a single-frame GIF, converted to PNG. Open-access status not confirmed, revisit before public deployment.*
+*Source: ScienceDirect (book chapter, Advances in Insect Physiology series)*
 
 ### Marine Birds and Reptiles: Salt Glands
 
 Marine birds and reptiles (see [Reptile & Bird Anatomy](../../2-animal-anatomy/reptile-bird-anatomy/)) drink seawater but, unlike marine bony fish, lack gill chloride cells to excrete the resulting ion load, and their kidneys (producing uric-acid-based, water-conserving waste, per the general trade-off on the Homeostasis page) are not well suited to rapidly excreting large ion loads either. Their solution is a dedicated **nasal (supraorbital) salt gland**, structurally and functionally independent of the kidney, that actively secretes a highly concentrated NaCl solution (well above seawater concentration) via a countercurrent-multiplier-like mechanism directly analogous in principle, though separate in structure, to the mammalian kidney's own countercurrent multiplier (see [Homeostasis & Osmoregulation](../homeostasis-osmoregulation/)) — another case of convergent mechanism (steep counter-flow concentration gradients) solving analogous problems in structurally distinct organs.
 
 ![Marine bird salt gland: (A) gland location above the eye, draining via a duct to the nostril; (B) a single gland lobe's countercurrent arrangement — capillary blood flow runs counter to secretory tubule flow, both radiating from a central duct; (C) at the cellular level, blood-side Na+/Cl- is actively transported into the secretory tubule lumen, concentrating the secreted fluid above blood/seawater osmolarity](/ANIMALPHYSIOPICS/marine-bird-salt-gland.jpg)
-*Source: avesbiology.com — precise spec match, including the countercurrent capillary/tubule arrangement. Confirm licensing basis before public deployment.*
+*Source: avesbiology.com*
 
 ### Desert Mammals: The Kangaroo Rat
 
 The kangaroo rat survives with no drinking water at all, relying entirely on **metabolic water** (water produced as a byproduct of cellular respiration) and extreme water conservation: an unusually **long loop of Henle** (relative to body size) extends deep into the renal medulla, building a far steeper countercurrent-multiplier osmotic gradient (see [Homeostasis & Osmoregulation](../homeostasis-osmoregulation/)) than in most mammals, allowing production of extraordinarily concentrated urine; nocturnal, burrow-dwelling behavior avoids daytime heat and its associated evaporative water loss; and even exhaled air is cooled in the nasal passages before exit, condensing and reclaiming some water vapor that would otherwise be lost in every breath. This is a direct, structurally quantifiable extension (loop of Henle length) of the same countercurrent mechanism already covered in general form.
 
 ![Three nephrons drawn at relative scale, loop of Henle length increasing left to right: beaver (short loop, aquatic, no water-conservation pressure), rabbit (intermediate), and kangaroo rat (longest loop, extending deepest below the dashed cortex-medulla boundary, maximal urine-concentrating ability)](/ANIMALPHYSIOPICS/kangaroo-rat-nephron-loop-henle.png)
-*Source: iitianacademy.com (IB DP Biology study notes) — precise spec match, three-way comparison at relative scale. Saved from a single-frame GIF, converted to PNG. Confirm licensing basis before public deployment.*
+*Source: iitianacademy.com (IB DP Biology study notes)*
 
 ## Comparative Structures
 

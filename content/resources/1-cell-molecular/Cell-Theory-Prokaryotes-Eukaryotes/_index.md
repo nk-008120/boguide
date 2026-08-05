@@ -34,7 +34,7 @@ Structural features distinguishing prokaryotes:
 - No cytoskeleton in the eukaryotic sense (though bacterial homologues of actin/tubulin, e.g. FtsZ, exist and perform analogous structural roles).
 
 ![Generalised prokaryotic cell cutaway diagram with cell wall, plasma membrane, capsule, cytoplasm, ribosomes, nucleoid (with its DNA drawn as a tangled loop), an inclusion body, and a plasmid labelled, plus external pili, fimbriae, and a flagellum](/MCBBPICS/generalized-prokaryotic-cell.jpg)
-*Source: ecampusontario.pressbooks.pub — confirm licensing basis before public deployment. OER textbook content is typically openly licensed; confirm the specific CC tag before public deployment. Note: ribosomes are labelled generically, not specifically as "70S" as in the text.*
+*Source: ecampusontario.pressbooks.pub*
 
 ### Eukaryotic cell organisation
 
@@ -43,7 +43,7 @@ Eukaryotic cells possess a membrane-bound **nucleus** housing linear chromosomes
 Eukaryotic cells also possess a true **cytoskeleton** (actin filaments, microtubules, intermediate filaments — see [Cytoskeleton & Motor Proteins](../cytoskeleton-motor-proteins/)) providing structural support, intracellular transport tracks, and the machinery for cell division and, in animal cells, shape change and motility.
 
 ![Generalised animal cell cutaway diagram with nucleus (nuclear envelope, chromatin, nucleolus), rough and smooth endoplasmic reticulum, Golgi apparatus, mitochondria, lysosome, peroxisome, vacuole, and cytoskeletal elements (microtubules, centrosome, intermediate filaments, microfilaments) all labelled](/MCBBPICS/generalized-eukaryotic-cell.png)
-*Source: opentextbc.ca (OpenStax-derived Biology OER) — confirm licensing basis before public deployment. OpenStax content is typically CC BY 4.0; confirm before public deployment. Note: this shows only the animal-cell version (panel "a" of a two-panel source figure) — no plant-cell version is currently placed alongside it.*
+*Source: opentextbc.ca (OpenStax-derived Biology OER)*
 
 ### Why the prokaryote/eukaryote distinction is not simply "simple vs. complex"
 

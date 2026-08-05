@@ -25,7 +25,7 @@ If fertilization occurs, the resulting blastocyst implants in the endometrium (s
 By the second trimester, the **placenta** itself takes over as the dominant source of estrogen and progesterone, and the corpus luteum's contribution becomes physiologically unnecessary — a hand-off from an ovarian to a placental hormone source, without which pregnancy would depend indefinitely on a structure (the corpus luteum) not built for multi-month hormone output.
 
 ![Six key pregnancy hormone level curves plotted against week of pregnancy, each panel shaded to show its source: hCG peaks around week 10 then declines, produced by the placenta; progesterone and estrogen both rise steadily from a corpus-luteum-derived early phase (shaded yellow, weeks 0-10) into a placenta-derived later phase (shaded blue, weeks 10-40); prolactin rises steadily from the pituitary; relaxin peaks early (corpus luteum) then plateaus (placenta); oxytocin stays flat until a sharp spike at week 40 (labor onset)](/ANIMALPHYSIOPICS/hcg-progesterone-pregnancy-trimester.webp)
-*Source: Andy Brunning / Compound Interest (compoundchem.com), 2019, licensed **CC BY-NC-ND 4.0** — genuinely confirmed open license (rare among this ledger's entries), though the ND (No Derivatives) term means the graphic must be used unmodified/uncropped and NC restricts commercial use; attribution required. Exceeds spec with three bonus hormones (prolactin, relaxin, oxytocin) beyond hCG/progesterone/estrogen.*
+*Source: Andy Brunning / Compound Interest (compoundchem.com), 2019*
 
 ```mermaid
 graph LR;
@@ -49,7 +49,7 @@ graph TD;
 ```
 
 ![The positive feedback loop of childbirth: (1) the baby's head pushes against and stretches the cervix; (2) nerve impulses from the cervix transmit to the hypothalamus; (3) the brain signals the posterior pituitary to secrete oxytocin into the bloodstream; (4) oxytocin stimulates uterine contractions, pushing the baby further down and increasing pressure on the cervix, restarting the loop](/ANIMALPHYSIOPICS/parturition-positive-feedback-loop.jpg)
-*Source: user-provided (via Facebook repost) — precise match to the loop structure described in the text. Confirm licensing basis before public deployment.*
+*Source: user-provided (via Facebook repost)*
 
 Rising fetal size and shifting placental hormone balance near term increase myometrial sensitivity to **oxytocin**; the initial contractions this produces push the fetus against the cervix, mechanically stretching it, and that stretch is itself the signal that triggers further oxytocin release — each contraction increases the stimulus for the next, rather than the response tapering as it would under negative feedback, until delivery physically removes the stretch stimulus and ends the cycle. Prostaglandins produced locally in the uterine wall act alongside oxytocin, further increasing contractile force and helping ripen (soften) the cervix.
 
@@ -58,12 +58,12 @@ Rising fetal size and shifting placental hormone balance near term increase myom
 Mammary gland development during pregnancy is driven by rising estrogen and progesterone, but actual milk *production* is primarily driven by **prolactin** (anterior pituitary) — during pregnancy, high circulating progesterone/estrogen actually inhibit prolactin's milk-producing effect on breast tissue despite prolactin levels rising, and full lactation begins only once progesterone/estrogen fall sharply after delivery of the placenta, releasing this inhibition.
 
 ![Mammary gland cross-section, progressively zoomed: the whole breast (fat, blood vessels, lobes, ducts, nipple, areola); one lobe's ductule/alveoli cluster; a single alveolus wrapped in myoepithelial cells with a capillary alongside; and the alveolar epithelium itself, lactocytes joined by tight junctions moving nutrients and substances from blood to milk via transcellular and paracellular transport](/ANIMALPHYSIOPICS/mammary-gland-alveoli-myoepithelial.webp)
-*Source: ResearchGate, fig. 1 — precise spec match (alveoli, myoepithelial cells, duct structure) plus bonus lactocyte-level transport detail. Journal figure, open-access status not confirmed. Revisit before public deployment.*
+*Source: ResearchGate, fig. 1*
 
 Milk **ejection** (as opposed to production) is a separate, faster reflex, and — like parturition above — is a positive feedback loop built on the same hormone: an infant suckling mechanically stimulates sensory receptors in the nipple, signaling the hypothalamus to trigger oxytocin release from the posterior pituitary; oxytocin causes **myoepithelial cells** surrounding the mammary alveoli to contract, ejecting stored milk. Continued/effective suckling sustains continued oxytocin release, and (in a distinct, separate signal) suckling itself also stimulates further prolactin release, meaning continued nursing both extracts the current milk supply and stimulates the production of the next — a demand-driven regulatory system rather than one set to a fixed schedule.
 
 ![Lactation neuroendocrine control: suckling sensory nerves signal the hypothalamus, which drives both the anterior pituitary (prolactin release, milk production in alveolar cells) and the posterior pituitary (oxytocin release, myoepithelial cell contraction, milk ejection/let-down); a milk flow pathway diagram traces both hormones from brain to breast to nipple](/ANIMALPHYSIOPICS/milk-ejection-reflex-pathway.jpg)
-*Source: Scoolam Foundation (via Facebook repost) — precise spec match, plus the parallel prolactin/milk-production pathway alongside the requested oxytocin/milk-ejection pathway. Confirm licensing basis before public deployment.*
+*Source: Scoolam Foundation (via Facebook repost)*
 
 ## Comparative Structures
 

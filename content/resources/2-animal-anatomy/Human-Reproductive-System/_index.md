@@ -22,7 +22,7 @@ Each **testis** is enclosed in a fibrous capsule, the **tunica albuginea**, whic
 - **Spermatogenic cells**, arranged in concentric layers from basal to luminal as they mature: **spermatogonia** (diploid stem cells, mitotic) → **primary spermatocytes** (diploid, enter meiosis I) → **secondary spermatocytes** (haploid, brief, enter meiosis II almost immediately) → **spermatids** (haploid, round, non-motile) → **spermatozoa** (haploid, elongated, released into the lumen — this final differentiation step, without further division, is **spermiogenesis**). Full spermatogenesis takes ~74 days in humans.
 
 ![Seminiferous tubule wall cross-section: basal lamina, myoid cells, and Spermatogonium A/B at the base, through the basal/adluminal compartment boundary (junctional complex), primary and secondary spermatocytes, spermatids, and spermatozoa with visible acrosomal vesicles and residual bodies at the lumen — Sertoli cell nucleus and cytoplasm (Golgi apparatus, ER, mitochondria) shown spanning the full epithelial height.](/ANATOMYPICS/seminiferous-tubule-sertoli-cells-cross-section.webp)
-*Source: user-sourced (originally via a ResearchGate figure); carries a visible "©CCF 2010" (Cleveland Clinic Foundation) notice in the image. Confirm licensing basis before public deployment. Exceeds spec with organelle-level detail (Golgi, ER, mitochondria, acrosomal vesicle).*
+*Source: Cleveland Clinic Foundation, via a ResearchGate figure.*
 
 Between tubules, in the interstitial connective tissue, **Leydig cells** synthesize testosterone under LH stimulation — anatomically and functionally separate from the Sertoli/germ-cell compartment inside the tubule (Sertoli = supports/nurses germ cells + hormone-binding/inhibin; Leydig = testosterone synthesis — a distinction worth stating explicitly, since exam questions routinely test which cell type does what).
 
@@ -31,7 +31,7 @@ A mature **spermatozoon** has three structural regions: the **head** (haploid nu
 Sperm leave the testis through the **rete testis** into the **epididymis** (caput → corpus → cauda), a single, tightly coiled ~6 m duct where sperm gain motility and fertilizing capacity over ~2–3 weeks of transit, then are stored in the cauda until ejaculation, when smooth-muscle contraction propels them through the **vas deferens**. Semen composition by volume is structurally traceable to specific glands: **seminal vesicles** (~60%, fructose-rich fluid feeding sperm mitochondrial respiration), **prostate gland** (~30%, alkaline fluid buffering vaginal acidity), **bulbourethral (Cowper's) glands** (small pre-ejaculate volume, lubricating/neutralizing residual urethral acidity).
 
 ![Male reproductive tract, external genitalia (circumcised/uncircumcised) and a lateral cross-section showing the vas deferens, seminal vesicle, ejaculatory duct, prostate gland, bulbourethral gland, testis, epididymis, scrotum, and the prostatic/membranous/spongy urethra.](/ANATOMYPICS/male-reproductive-tract-gross-anatomy.png)
-*Source: OpenStax-style figure, user-sourced via USQ Pressbooks. Exceeds spec with external genitalia views alongside the internal tract.*
+*Source: OpenStax-style figure, via USQ Pressbooks*
 
 ### Female Reproductive Structure
 
@@ -140,10 +140,10 @@ At ovulation, the oocyte (now secondary oocyte, arrested in metaphase II, surrou
 The **uterus** wall has three layers: **perimetrium** (outer serosa), **myometrium** (thick smooth muscle, the structural basis of labor contractions), and **endometrium** (inner mucosa), itself split into a permanent **basal layer** and a **functional layer** that thickens and sheds cyclically. Endometrial structure tracks the ovarian cycle directly: **proliferative phase** (functional layer regrows, driven by rising estrogen from the developing follicle), **secretory phase** (glands coil and secrete glycogen, driven by progesterone from the corpus luteum, preparing for possible implantation), **menstrual phase** (functional layer sheds if the corpus luteum regresses and progesterone falls). The uterus narrows to the **cervix**, opening into the **vagina**.
 
 ![Female external genitalia (clitoris, labia majus/minus, urethral opening, vagina, hymen), uterine wall structure (endometrium, myometrium, outer connective tissue), and a schematic ovarian cross-section showing every follicular stage together with the corpus luteum and a regressing corpus luteum.](/ANATOMYPICS/female-reproductive-tract-gross-anatomy-1.png)
-*Source: Dee Unglaub Silverthorn,* Human Physiology: An Integrated Approach*. Commercial textbook figure — confirm licensing basis before public deployment. Exceeds spec with external genitalia and a second ovarian-stage view.*
+*Source: Dee Unglaub Silverthorn,* Human Physiology: An Integrated Approach*.*
 
 ![Internal female reproductive structures (mammary glands, fimbriae, uterine cavity, fallopian tube, ovary, cervical canal, cervix, vagina) and a cross-sectional pelvis view (ovary, fallopian tube, uterus, bladder, cervix, rectum, urethra, vagina, clitoris, labia).](/ANATOMYPICS/female-reproductive-tract-gross-anatomy-2.png)
-*Source: Dee Unglaub Silverthorn,* Human Physiology: An Integrated Approach*. Commercial textbook figure — confirm licensing basis before public deployment. Together with the previous figure, covers the full female tract gross anatomy called for in the spec.*
+*Source: Dee Unglaub Silverthorn,* Human Physiology: An Integrated Approach*.*
 
 ### The HPG Hormonal Feedback Axis
 

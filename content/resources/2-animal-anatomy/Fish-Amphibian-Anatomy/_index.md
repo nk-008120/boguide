@@ -23,7 +23,7 @@ Two major skeletal grades: **cartilaginous** (Chondrichthyes — sharks, rays; s
 **Gills**, not lungs: each gill arch bears a row of **primary lamellae (filaments)**, and each primary lamella bears many thinner **secondary lamellae** projecting from its surface — the true site of gas exchange, each covered in a single layer of epithelium directly apposed to a dense capillary bed (the same "minimal diffusion distance" principle as the human alveolus, see [Human Respiratory System](../human-respiratory-system/)). Water flows across the secondary lamellae in the direction **opposite** to blood flow within them — **countercurrent exchange** — which maintains a favorable diffusion gradient along the entire length of the lamella (unlike concurrent flow, where the gradient would collapse once blood and water oxygen levels equalized partway across), allowing bony fish to extract a much higher fraction of dissolved O₂ from water than concurrent flow would permit.
 
 ![Zoom sequence from a whole fish (operculum, gill arch) to gill filaments to a single lamella, with countercurrent water flow (100%→70%→40%→15% O₂ saturation) running opposite to blood flow through the lamellar capillaries (80%→60%→30%→5% O₂ saturation) — the gradient never equalizes along the lamella's length.](/ANATOMYPICS/bony-fish-gill-arch-lamellae-countercurrent.webp)
-*Source: Pearson Education (© 2009, notice visible in the image), user-sourced via a ResearchGate figure. Confirm licensing basis before public deployment. Exact quantitative demonstration of the countercurrent-vs-concurrent gradient argument in the text.*
+*Source: Pearson Education, via a ResearchGate figure*
 
 <div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
   <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:0.8rem;">
@@ -122,14 +122,14 @@ A **two-chambered heart** (one atrium, one ventricle, preceded by a thin-walled 
 Fish kidney structure differs by habitat in a way directly comparable to the nephron detail on the [Human Excretory System](../human-excretory-system/) page: freshwater fish (hypertonic to their environment, constantly gaining water by osmosis) have kidneys with large, numerous glomeruli producing copious dilute urine; marine bony fish (hypotonic to seawater, constantly losing water) have reduced or in some species absent glomeruli (**aglomerular** nephrons), filtering far less and instead relying heavily on active secretion at the tubule and on specialized gill **chloride cells** to actively excrete excess salt — a clear structural inversion between the two habitats' nephron populations.
 
 ![Salt/water movement and nephron structure compared across mammals, freshwater fish, marine fish, and insects: freshwater fish nephrons have a large glomerulus and lack a loop of Henle but gain an intermediate segment, while marine fish nephrons have a smaller or absent glomerulus and lack a distal tubule, with a water-permeable collecting duct.](/ANATOMYPICS/freshwater-vs-marine-fish-nephron-comparison.jpg)
-*Source: user-sourced (originally via eCampusOntario Pressbooks). Exceeds spec — a four-way comparison (mammal/freshwater fish/marine fish/insect) rather than just the two fish habitats requested, with both whole-organism and nephron-structure diagrams.*
+*Source: eCampusOntario Pressbooks*
 
 ### Fish Sensory Structure: The Lateral Line
 
 A structure with no direct human equivalent: the **lateral line system**, a row of fluid-filled canals running along each side of the body and over the head, opening to the surrounding water through pores. Within the canals, clusters of mechanoreceptor hair cells (**neuromasts**, structurally similar in principle to the cochlear/vestibular hair cells on the [Human Sensory Organs](../human-sensory-organs/) page) are deflected by water movement/pressure changes, allowing fish to detect nearby movement, obstacles, and prey — a distributed mechanosensory structure supplementing the eyes and inner ear.
 
 ![Whole fish showing the head and trunk lateral-line canal systems (A), a canal cross-section showing water displacement reaching a neuromast through the external opening (B), and a zoomed neuromast showing the cupula, sense hairs, sensory cells, and nerve (C).](/ANATOMYPICS/lateral-line-canal-neuromast-structure.jpg)
-*Source: Encyclopædia Britannica, Inc. (©1994, notice visible in the image), user-sourced. **Confirm licensing basis before public deployment.** Exact match, full structural detail from whole-fish canal layout down to a single neuromast.*
+*Source: Encyclopædia Britannica, Inc.*
 
 ### Amphibian Skeleton
 
