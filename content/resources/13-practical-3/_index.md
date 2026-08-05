@@ -1,8 +1,8 @@
 ---  
-title: "13-practical-3"  
+title: "Plant Biology"  
 weight: 1  
 ---  
   
 ## Description  
   
-*To be filled - content coming soon.* 
+*To be filled - content coming soon as IBO 2027 approaches* 
