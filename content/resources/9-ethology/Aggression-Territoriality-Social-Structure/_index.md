@@ -18,15 +18,27 @@ The previous two Behavioral Ecology pages covered strategies aimed at resources 
 
 The **hawk-dove model** (John Maynard Smith and George Price) is the standard teaching case for why animal contests over a resource (a territory, a mate) so often resolve through ritualized display rather than escalating to injurious fighting, despite an individual "hawk" strategist (always escalate to real fighting) seemingly gaining more per contest than a "dove" strategist (only display, retreat if opponent escalates). The model shows why: in a population of all doves, a single hawk mutant does gain an advantage (it wins every contest against non-escalating doves). But in a population of all hawks, the cost of injury from constant serious fighting drives average hawk fitness down substantially, to the point that a dove mutant (which never risks injury, and simply avoids fights it can't win outright) can invade. Under a broad range of realistic parameters, the population settles at a stable **mixture** of hawk and dove strategies (or, equivalently, individuals playing a mixed hawk/dove strategy probabilistically) — this stable mixture is an **evolutionarily stable strategy (ESS)**: a strategy that, once common in a population, cannot be displaced by any alternative strategy appearing at low frequency. Real contest behavior across many species (e.g. many bird and fish territorial disputes) matches this ESS prediction well: escalated, potentially injurious fighting is empirically rare relative to ritualized threat displays and quick retreats, consistent with a population near the hawk-dove ESS balance rather than one dominated by unconditional escalation.
 
+![Hawk-dove payoff matrix table: hawk-vs-hawk (wins 50% of fights, injured 50%, payoff (V−D)/2), hawk-vs-dove (hawk always wins, payoff V; dove flees, payoff 0), dove-vs-dove (wins 50%, never injured but wastes time, payoff V/2−T), with V = value of the resource, D = cost of injury, T = cost of wasted time.](/ETHOLOGYPICS/hawk-dove-payoff-matrix.jpg)
+*Source: AI-generated (Grok) — confirm licensing basis before public deployment, and treat as an accuracy-unverified secondary source rather than a citable primary figure. The payoff logic shown is internally consistent with the standard hawk-dove formulation (including a time-cost term T for dove-dove contests the text doesn't use), but as an AI-generated image no specific label or value should be treated as authoritative without independent verification.*
+
+![Four-panel evolutionary-game-theory figure: (a) hawk and dove relative fitness lines crossing at the ESS proportion of doves, (b) a "Retaliator" strategy's fitness relative to hawk, (c) a "Tit-for-Tat" (TFT) strategy's fitness relative to two hawk-invasion-rate scenarios, (d) the underlying replicator-dynamics equations.](/ETHOLOGYPICS/hawk-dove-ess-fitness-graph.png)
+*Source: figure from a formal evolutionary game theory reference — confirm licensing basis before public deployment. Only panel (a) directly matches the hawk/dove ESS crossing-point concept described in the text; panels (b)-(d) introduce Retaliator and Tit-for-Tat strategies and formal replicator-dynamics notation not covered here.*
+
 ### Dominance Hierarchies
 
 A **dominance hierarchy** is a stable, repeatedly-observed ranking of individuals within a group such that higher-ranked individuals consistently win contests over resources against lower-ranked ones, often with little or no actual fighting once the hierarchy is established — the ranking itself, once known by all members, substitutes for repeated costly contests. The clearest classic case is the **linear "pecking order" in domestic chickens** (Thorleif Schjelderup-Ebbe, the term's origin): once established, a lower-ranked hen reliably yields access to food to a higher-ranked hen without a fight, and the ranking can be read off directly from which individual yields to which in paired encounters. Hierarchies carry a direct game-theoretic logic: once an individual's relative fighting ability (**resource holding potential**) relative to a given opponent is established, escalating a contest it is predicted to lose is a poor strategy, so accepting subordinate status and avoiding the fight is often the higher-payoff choice for the lower-ranked individual — dominance hierarchies can be read as a stable, individually-recognized-opponent analog of the population-level hawk-dove ESS above.
 
-<!-- VIDEO: Establishment of a dominance hierarchy in a small chicken flock over successive encounters — Gallus gallus domesticus — the transition from repeated contested encounters early on to near-effortless yielding once the hierarchy stabilizes is a process, not a single state, and is best shown across time -->
+![Illustrated cartoon of five chickens in a line from largest/most dominant (rear) to smallest (front), each pecking or chasing the one ahead of it, illustrating the "pecking order" concept as a literal chain of aggression down a ranking.](/ETHOLOGYPICS/chicken-pecking-order-diagram.webp)
+*Source: illustration, specific origin not stated by submitter — confirm licensing basis before public deployment. A stylized cartoon rather than a labeled scientific ranking diagram, but it does convey the linear-hierarchy concept directly.*
+
+{{< youtube IuH50aTtEY0 >}}
 
 ### Territoriality and Resource Defense Economics
 
 A **territory** is an area actively defended by an individual or group against conspecific intruders, typically because it contains a limiting resource (food, nest sites, mates). Whether defending a given area is favored is itself an economic, testable question, formalized in the concept of **economic defendability** (Jerram Brown): a resource is worth defending only when the fitness benefit of exclusive access exceeds the energetic and risk cost of defense, which depends heavily on how resources are distributed in space and time. Densely clumped, predictable resources are cheaply defendable (favoring small, intensely defended territories); sparse or unpredictable resources may cost more to defend than they're worth, favoring non-territorial or only loosely territorial behavior instead — nectar-feeding sunbirds and hummingbirds defending individual flowering shrubs, but abandoning territorial defense of the same patch once flower density drops too low to be worth the energetic cost of chasing off intruders, is a well-documented field-tested example of this exact economic threshold in action.
+
+![Graph titled "Territoriality is a balance of costs and benefits": cost and benefit curves plotted against territory size, with the optimal territory size marked where the vertical gap between the rising cost curve and saturating benefit curve is greatest.](/ETHOLOGYPICS/optimal-group-size-cost-benefit-curve.jpg)
+*Source: exam/textbook figure (specific origin not stated by submitter) — confirm licensing basis before public deployment. Repurposed here: this image was sourced for the "optimal group size" concept further down this page, but its actual content (a cost/benefit curve vs. territory size) is a direct match for economic defendability instead — moved to this section rather than inserted where it wouldn't fit. The originally-requested sunbird high-vs-low-density diagram was not sourced (none available) and the optimal-group-size concept below remains unillustrated.*
 
 ### Costs and Benefits of Group Living
 
@@ -67,15 +79,10 @@ Group size in real populations tends to track an **optimal group size** where ma
 
 {{< iframe src="/economic-defendability-explorer.html" title="Economic Defendability Threshold Explorer" height="400px" >}}
 
-**Static**
-
-- Hawk-dove payoff matrix table with the four strategy-pair outcomes labeled
-- Fitness-vs-population-composition graph showing the ESS as the crossing point between hawk and dove fitness curves
-- Chicken pecking-order diagram showing a linear dominance ranking and the yield direction between each pair
-- Sunbird/hummingbird territorial defense diagram at high vs. low flower density, annotated with the defendability threshold
-- Group-size cost/benefit curve diagram showing predation-risk benefit and competition-cost curves crossing at an optimal group size
+**Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. The sunbird-specific item was not sourced and remains unillustrated; the group-size cost/benefit item was replaced by a repurposed territory-economics image placed under "Territoriality" instead — see the note there.)*
 
 <!-- VIDEO: African wild dog coordinated pack hunt showing cooperative group-living benefit in real time — Lycaon pictus — the coordination between individuals during a hunt is the actual mechanism producing the higher per-capita capture success rate cited in text -->
+<!-- No video submitted for this item — comment left in place, unresolved. -->
 
 ## Practice Problems
 

@@ -63,7 +63,9 @@ The single most common practical-station failure mode is choosing or misreading 
 **Interactive**
 
 - **Dichotomous key builder/solver (interactive SVG/JS, no new library)** — given a small set of specimens (illustrated, with 4-5 visible characters each) and a blank couplet-writing interface, the user constructs their own working dichotomous key, and the tool tests it against each specimen, flagging any couplet that fails mutual exclusivity or fails to uniquely resolve a specimen — a direct, hands-on practical-station simulator.
+{{< iframe src="/dichotomous-key-builder.html" title="Dichotomous Key Builder/Solver" height="560px" >}}
 - **Multi-access key demo (HTML/JS filter interface)** — a small candidate-taxon list (8-10 named organisms) with a bank of selectable characters; as the user toggles characters on, the candidate list filters live, demonstrating the any-order, missing-character-tolerant behavior directly against the same rigid dichotomous key built in the tool above.
+{{< iframe src="/multi-access-key-demo.html" title="Multi-Access Key Demo" height="480px" >}}
 
 **Static**
 

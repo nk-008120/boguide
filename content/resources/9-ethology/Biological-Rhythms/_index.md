@@ -23,9 +23,19 @@ Biological rhythms are classified by their period length, and each is independen
 - **Ultradian rhythms** — periods shorter than 24 hours, e.g. the roughly 90-minute human sleep-stage cycle (alternating REM and non-REM sleep phases within a single night's circadian sleep period).
 - **Infradian rhythms** — periods longer than 24 hours but shorter than a year, e.g. the roughly 28-day human menstrual cycle, or lunar-linked spawning cycles in some marine invertebrates and fish timed to specific moon phases.
 
+| Category | Period | Example |
+|---|---|---|
+| Ultradian | < 24 hours | Human REM/non-REM sleep cycle (~90 min) |
+| Circadian | ~24 hours | Sleep-wake cycle, cortisol release |
+| Infradian | > 24 hours, < 1 year | Human menstrual cycle (~28 days), lunar-linked spawning |
+| Circannual | ~1 year | Migration timing, hibernation onset |
+
 ### Endogenous Rhythms and Free-Running Period
 
 A defining, heavily tested property of these rhythms is that they are **endogenous** — generated internally by the organism, not simply a passive response to an external light/dark cycle — demonstrated experimentally by holding an animal (or human volunteer) under **constant conditions** (continuous dim light, no external time cues) and observing the rhythm persist. Under constant conditions, the rhythm's period is rarely exactly 24 hours; this **free-running period** typically drifts slightly from 24 hours (commonly a bit longer in humans, closer to 24.2-25 hours in classic isolation studies), and the fact that it drifts away from exactly 24 hours under constant conditions, while staying locked to exactly 24 hours under normal environmental cycling, is itself the evidence that an external synchronizing cue is normally required to keep the internal clock precisely aligned to the real day — covered next.
+
+![Panel A: single-plotted actogram over ~23 days under constant conditions, activity onset drifting steadily later each day (marked by red guide lines). Panel B: a periodogram (signal amplitude Qp vs. period in hours) showing a clear peak free-running period of 23.58 hours.](/ETHOLOGYPICS/circadian-actogram-free-running-reentrainment.webp)
+*Source: ResearchGate — confirm licensing basis before public deployment. Shows free-running drift and its periodogram-derived period clearly, but is single-plotted rather than double-plotted, and shows only the drift phase — no re-entrainment segment once light cues resume, as originally requested.*
 
 ### Entrainment and Zeitgebers
 
@@ -40,11 +50,20 @@ A defining, heavily tested property of these rhythms is that they are **endogeno
 
 **Photoperiodism** is an organism's physiological or behavioral response to the *change* in day length (photoperiod) across the year, functioning as the primary environmental cue entraining circannual rhythms and triggering seasonally appropriate behavior in advance of the season's other, less predictable cues (temperature, food availability) actually changing. Photoperiod is a more reliable seasonal predictor than temperature precisely because day length at a given date and latitude is essentially fixed year to year, while temperature is comparatively noisy — migratory birds' **Zugunruhe** (migratory restlessness, see [Orientation & Navigation](../Orientation-Navigation/)) and reproductive-readiness onset in many temperate-zone breeders are both triggered substantially by photoperiod change rather than by the arrival of warmer weather itself, which is why captive animals held under artificially manipulated light schedules can be induced to show migratory restlessness or breeding condition out of the normal wild season.
 
+> **Flagged — not usable:** the sourced image (`photoperiod-length-annual-graph.png`) is a *plant* physiology figure (New Phytologist) about carbon partitioning, sucrose/starch metabolism, and gene expression under short vs. long photoperiod in plants — a completely different domain from the animal migratory/breeding photoperiodism this section covers, sharing only the word "photoperiod." Not inserted; flagging in case a genuine day-length-across-the-year graph should be re-sourced.
+
 <!-- VIDEO: Time-lapse of Zugunruhe (migratory restlessness) hopping/orientation behavior in a caged bird under a shifted photoperiod — the directional, agitated activity pattern itself is the measured behavioral output of photoperiodic entrainment and reads far more clearly as footage than description -->
+<!-- Submitted source (americanart.si.edu) is (a) hosted on the Smithsonian's own player, not YouTube — this site has no embed shortcode for it — and (b) titled as a contemporary-art installation piece ("Zugunruhe" Installation Time-lapse, part of "The Singing and the Silence: Birds in Contemporary Art"), not raw behavioral footage. Not embedded; send a YouTube link of real Zugunruhe/Emlen-funnel footage instead. -->
 
 ### The Suprachiasmatic Nucleus
 
 In mammals, the master circadian pacemaker is the **suprachiasmatic nucleus (SCN)**, a small paired nucleus in the hypothalamus, situated directly above the optic chiasm — a location that gives it direct input from a dedicated subset of retinal ganglion cells (containing the photopigment **melanopsin**, distinct from the rod/cone photoreceptors used for vision) carrying ambient light information used for entrainment, independent of the image-forming visual pathway. SCN neurons show self-sustained ~24-hour firing-rate rhythms even when isolated in tissue culture, direct cellular-level confirmation that circadian rhythmicity is generated intrinsically rather than requiring rhythmic input from elsewhere in the brain. The SCN's output governs the timing of numerous downstream physiological rhythms, most notably driving the pineal gland's nightly release of **melatonin**, whose rise and fall is used by the rest of the body (and by researchers, as a hormonal marker) to read out circadian phase.
+
+![Sagittal brain diagram labeled with cerebral cortex, suprachiasmatic nucleus, optic chiasm, hypothalamus, pineal gland, and cerebellum, showing the SCN's position directly above the optic chiasm.](/ETHOLOGYPICS/scn-anatomical-diagram.jpg)
+*Source: exam/textbook figure, specific origin not stated by submitter — confirm licensing basis before public deployment. Clean, direct match, and usefully also labels the pineal gland referenced later in this same paragraph.*
+
+![Graph of melatonin levels in the bloodstream across roughly 48 hours, low and flat during two "awake" daytime periods and rising to a sharp peak during each intervening "asleep" nighttime period.](/ETHOLOGYPICS/melatonin-release-24h-timeline.jpg)
+*Source: exam/textbook figure, specific origin not stated by submitter — confirm licensing basis before public deployment. Direct match to the melatonin rise/fall pattern described.*
 
 ## Comparative Structures
 
@@ -76,15 +95,10 @@ In mammals, the master circadian pacemaker is the **suprachiasmatic nucleus (SCN
 
 {{< iframe src="/free-running-entrained-actogram.html" title="Free-Running vs. Entrained Rhythm Simulator" height="560px" >}}
 
-**Static**
-
-- Actogram diagram (the standard double-plotted activity-rhythm chart used in chronobiology) showing free-running drift under constant conditions followed by re-entrainment once light cues resume
-- SCN anatomical diagram showing its position above the optic chiasm and the melanopsin retinal ganglion cell input pathway
-- Melatonin release timeline across a 24-hour cycle, day vs. night
-- Photoperiod-length-across-the-year graph annotated with the migratory/breeding-onset trigger point
-- Rhythm category comparison chart (ultradian/circadian/infradian/circannual periods and examples, as above)
+**Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. The photoperiod graph was sourced but flagged as unusable — see the note under "Photoperiodism" above. The rhythm-category item was replaced with a plain markdown table, per explicit instruction, rather than a sourced graphic — see "Rhythm Categories" above.)*
 
 <!-- VIDEO: Actogram data collection setup showing an animal's activity being recorded under constant dim-light conditions over successive days — the accumulating drift in activity onset time across days is the actual raw evidence for an endogenous, free-running rhythm -->
+<!-- Submitted source (jove.com/v/2157) is hosted on JoVE's own player, not YouTube — this site has no embed shortcode for it. Content sounds like a strong match (JoVE publishes video methods papers, and "Assaying Locomotor Activity to Study Circadian Rhythms" is very likely real actogram data-collection methodology), but it can't be embedded without new plumbing. Not embedded; send a YouTube link if one covers the same methodology, or confirm adding a JoVE-embed shortcode is wanted. -->
 
 ## Practice Problems
 
