@@ -66,7 +66,9 @@ Three well-known edge cases are worth holding side by side, since exam scenarios
 **Interactive**
 
 - **Reproductive isolating mechanism sorter (drag-and-drop, HTML/JS, no new library)** — a set of named scenarios (e.g. "two cricket species sing at different times of night," "pollen grains fail to germinate on the wrong species' stigma") that the user drags into "prezygotic" or "postzygotic" bins, then into the specific mechanism subtype, with immediate correctness feedback — turns a list of six mechanism names into an applied-classification exercise.
+{{< iframe src="/rim-sorter.html" title="Reproductive Isolating Mechanism Sorter" height="560px" >}}
 - **Ring species map explorer (interactive SVG/JS)** — a stylized map of a ring species range (e.g. *Ensatina* around California's Central Valley) where clicking any two population points on the ring shows whether those two populations interbreed, letting the user "discover" that adjacent populations always interbreed but the two ends of the ring, brought together, do not.
+{{< iframe src="/ring-species-map-explorer.html" title="Ring Species Map Explorer" height="560px" >}}
 
 **Static**
 

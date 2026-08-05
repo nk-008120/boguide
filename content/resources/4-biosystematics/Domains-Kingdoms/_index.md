@@ -77,7 +77,9 @@ Viruses are classified entirely separately from the three-domain system above, b
 **Interactive**
 
 - **Kingdom system timeline slider (interactive HTML/JS)** — a slider moving through two-kingdom → five-kingdom → six-kingdom → three-domain systems, redrawing the top-level classification tree at each step and highlighting exactly which groups split or merged at each transition, making the historical sequence of revisions visually traceable rather than a memorized list of dates.
+{{< iframe src="/kingdom-system-timeline-slider.html" title="Kingdom System Timeline Slider" height="500px" >}}
 - **Baltimore classification sorter (drag-and-drop, HTML/JS)** — named real viruses (HIV, influenza, herpesvirus, Hepatitis B, etc.) are dragged into their correct Baltimore class based on given genome-type clues, reinforcing the genome-type-to-class mapping through application rather than memorization.
+{{< iframe src="/baltimore-classification-sorter.html" title="Baltimore Classification Sorter" height="480px" >}}
 
 **Static**
 

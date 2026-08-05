@@ -74,7 +74,9 @@ A related but distinct problem is **homonymy**: the same name accidentally appli
 **Interactive**
 
 - **Taxonomic hierarchy explorer (click-through SVG/JS, no new library)** — a nested-box or tree diagram from Domain down to Species (e.g. tracing *Homo sapiens*), where clicking each rank expands to show sibling taxa at that rank and a one-line description of what distinguishes it, making the abstract "eight nested ranks" concrete with a real worked lineage.
+{{< iframe src="/taxonomic-hierarchy-explorer.html" title="Taxonomic Hierarchy Explorer" height="480px" >}}
 - **Priority/synonymy resolver (interactive worked example, HTML/JS)** — presented with a mock scenario (two publication dates, two names for the same specimen), the user picks which name should be the senior synonym and why, then is shown the correct resolution and, in a second scenario, a *nomen conservandum* exception case to contrast against the default rule.
+{{< iframe src="/priority-synonymy-resolver.html" title="Priority & Synonymy Resolver" height="380px" >}}
 
 **Static**
 

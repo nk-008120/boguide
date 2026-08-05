@@ -85,7 +85,9 @@ With real data, more than one cladogram is usually consistent with the character
 **Interactive**
 
 - **Character matrix → cladogram builder (interactive SVG/JS, no new library)** — the user is given a small character matrix (4-6 taxa, 4-6 binary characters) and an outgroup, and drags taxa into a tree structure; the tool tallies the total number of character-state changes required by the user's tree versus the true most-parsimonious tree, letting the user directly discover why one arrangement beats another rather than being told the answer.
+{{< iframe src="/cladogram-builder.html" title="Character Matrix → Cladogram Builder" height="480px" >}}
 - **Monophyly/paraphyly/polyphyly classifier (click-through quiz, HTML/JS)** — presented with a series of pre-drawn trees, each with a shaded group of taxa, the user classifies the shaded group as mono-, para-, or polyphyletic and receives immediate feedback with the specific missing/excluded lineage highlighted when wrong.
+{{< iframe src="/clade-classifier-quiz.html" title="Monophyly / Paraphyly / Polyphyly Classifier" height="620px" >}}
 
 **Static**
 

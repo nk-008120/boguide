@@ -72,7 +72,9 @@ Two specific failure modes are worth knowing by name, since they explain *why* a
 **Interactive**
 
 - **Sequence alignment and tree-building walkthrough (interactive SVG/JS, no new library)** — the user is given 4-5 short unaligned sequences, aligns them by dragging in gap characters, then watches a distance matrix populate and a UPGMA/NJ tree assemble from it step by step, making the abstract "distance matrix → tree" pipeline into something built rather than asserted.
+{{< iframe src="/sequence-alignment-tree-walkthrough.html" title="Sequence Alignment & Tree-Building Walkthrough" height="560px" >}}
 - **Long-branch attraction demonstrator (Plotly or SVG/JS simulation)** — a simulated 4-taxon tree with two adjustable branch-length sliders; as the user lengthens two non-sister branches, the tool shows parsimony increasingly (and eventually incorrectly) grouping them together, visually demonstrating the LBA artifact as a direct consequence of branch length rather than a described abstraction.
+{{< iframe src="/long-branch-attraction-demonstrator.html" title="Long-Branch Attraction Demonstrator" height="480px" >}}
 
 **Static**
 

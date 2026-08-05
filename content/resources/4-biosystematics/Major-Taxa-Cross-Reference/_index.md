@@ -69,7 +69,9 @@ This is not a purely academic distinction: it's a direct, concrete illustration 
 **Interactive**
 
 - **Animal kingdom phylogeny explorer (Mermaid-based or SVG/JS click-through)** — a clickable cladogram of the nine phyla in the table above, branching at the acoelomate/pseudocoelomate/coelomate and protostome/deuterostome nodes, where clicking any phylum name jumps to its full structural treatment on the corresponding Animal Anatomy page — a literal cross-reference tool, not just a diagram.
+{{< iframe src="/animal-phylogeny-explorer.html" title="Animal Kingdom Phylogeny Explorer" height="480px" >}}
 - **"Reptilia" paraphyly demonstrator (interactive SVG/JS)** — two toggleable views of the same amniote cladogram: one shaded to show the traditional "Reptilia" grouping (visibly excluding a nested branch, birds), the other shaded to show Sauropsida (the full, monophyletic clade) — directly visualizing the paraphyly problem using material already covered structurally elsewhere on the site.
+{{< iframe src="/reptilia-paraphyly-demonstrator.html" title="Reptilia Paraphyly Demonstrator" height="500px" >}}
 
 **Static**
 
