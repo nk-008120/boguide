@@ -24,9 +24,18 @@ Mendel's **first law**: each organism carries two copies (alleles) of each gene,
 
 **Genotype vs. phenotype**: the genotype is the actual allele combination (AA, Aa, aa); the phenotype is the observable trait it produces. **Dominant** does not mean "more common" or "stronger" — it means the allele's phenotype is expressed in the heterozygous state, masking the recessive allele's effect; a dominant allele can be rare in a population and a recessive allele can be common (a frequent exam trap).
 
+![Two sequential Punnett-square crosses: Generation 1 (AA × aa) producing 100% Aa offspring, then Generation 2 (Aa × Aa) producing the classic 3:1 phenotype / 1:2:1 genotype ratio.](/GENETICSPICS/monohybrid-cross-punnett-square-aa-x-aa.png)
+*Source: bio.libretexts.org — confirm licensing basis before public deployment. Note: this diagram includes an extra AA × aa "Generation 1" cross before the Aa × Aa cross the text describes; the requested 1:2:1/3:1 outcome is the second (Generation 2) panel.*
+
 ### The Law of Independent Assortment
 
 Mendel's **second law**: alleles of *different* genes assort into gametes independently of one another, provided the genes are on different chromosomes (or far apart on the same one — see linkage). This reflects the independent, random orientation of different homologous chromosome pairs at **metaphase I** — which pair ends up facing which pole is independent of how every other pair is oriented. A dihybrid cross between two double heterozygotes (AaBb × AaBb) therefore produces gametes in four equally likely combinations (AB, Ab, aB, ab, each 1/4), and combining them at fertilization produces the F2 phenotype ratio **9:3:3:1** (9 A_B_ : 3 A_bb : 3 aaB_ : 1 aabb, where "_" denotes "either allele").
+
+![Dihybrid cross Punnett square: true-breeding YYRR × yyrr parents produce an F1 YyRr heterozygote, which self-crosses to a full 16-box F2 grid showing the 9:3:3:1 phenotype ratio.](/GENETICSPICS/dihybrid-cross-punnett-square-aabb-x-aabb.png)
+*Source: oertx.highered.texas.gov — confirm licensing basis before public deployment. Note: uses seed shape/color gene symbols (Y/R) rather than the text's A/B placeholder and starts from a true-breeding P generation, but the F2 grid and 9:3:3:1 ratio are exactly as described.*
+
+![Two possible chromosome arrangements at metaphase I, each independently segregating through metaphase II into gametes, producing four distinct genetic arrangements — illustrating the random, independent orientation of homologous pairs underlying independent assortment.](/GENETICSPICS/meiosis-i-segregation-independent-assortment-homologs.jpg)
+*Source: brainbrooder.com — confirm licensing basis before public deployment.*
 
 ### Punnett squares and the test cross
 
@@ -48,6 +57,9 @@ Real crosses never match a predicted ratio *exactly*, because gamete combination
 $$ \chi^2 = \sum \frac{(O-E)^2}{E} $$
 
 where *O* is the observed count and *E* is the expected count in each phenotypic class. The resulting χ² value is compared against a critical value from a chi-square distribution table, using **degrees of freedom = (number of phenotypic classes − 1)** — for a monohybrid 3:1 ratio (2 classes), df = 1; for a dihybrid 9:3:3:1 ratio (4 classes), df = 3. At the conventional **p = 0.05** significance threshold, a calculated χ² *below* the critical value means the data **fail to reject** the hypothesized ratio (consistent with it); a χ² *above* the critical value means the observed data deviate significantly from the prediction, and the hypothesis (e.g. simple Mendelian inheritance with no linkage or lethality) should be reconsidered.
+
+![Chi-square probability density curve with shaded critical-value rejection regions at α = 0.05.](/GENETICSPICS/chi-square-distribution-critical-value-worked-example.gif)
+*Source: NIST Engineering Statistics Handbook — confirm licensing basis before public deployment. Note: this shows a generic two-sided/two-tailed test (α split 0.025 into each tail) with no numeric worked example annotated, whereas the genetics goodness-of-fit test described in the text is one-tailed (only large χ² values, in the upper tail, count as a significant deviation). Treat this as an illustration of the distribution's shape and the critical-value concept only, not a genetics-specific worked example.*
 
 ## Comparative Structures
 
@@ -75,14 +87,11 @@ where *O* is the observed count and *E* is the expected count in each phenotypic
 
 **Interactive**
 
-- *(built later — see project workflow)* A Punnett square simulator: select monohybrid, dihybrid, or test-cross mode, input parental genotypes, and see the gamete grid and resulting genotype/phenotype ratios generate automatically.
+- A Punnett square simulator: select monohybrid, dihybrid, or test-cross mode, input parental genotypes, and see the gamete grid and resulting genotype/phenotype ratios generate automatically.
 
-**Static**
+{{< iframe src="/punnett-square-simulator.html" title="Punnett square simulator" height="560px" >}}
 
-- Monohybrid cross Punnett square diagram (Aa × Aa) showing the 1:2:1 genotype / 3:1 phenotype outcome
-- Dihybrid cross Punnett square diagram (AaBb × AaBb) showing the full 16-box grid and 9:3:3:1 phenotype outcome
-- Diagram linking segregation/independent assortment directly to homologous chromosome behavior at meiosis I metaphase/anaphase
-- Chi-square distribution curve with the critical-value region shaded, annotated with a worked example's calculated χ²
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
 
 ## Practice Problems
 

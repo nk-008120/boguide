@@ -19,6 +19,12 @@ Human geneticists cannot design controlled crosses the way Mendel could with pea
 
 Standard pedigree notation: **squares** represent males, **circles** represent females, a **horizontal line** connects mates, a **vertical line** drops to their offspring, and **filled symbols** indicate an affected individual (unfilled = unaffected). A **half-filled symbol** typically denotes a known heterozygous carrier (for a recessive condition) who is not personally affected. Generations are labeled with Roman numerals (I, II, III...) from oldest to youngest, and individuals within a generation are numbered left to right, so any individual can be uniquely referenced (e.g. "III-4").
 
+![Standard pedigree chart symbol key: male/female, proband, deceased, affected, examined, carrier, twins, and adopted individuals, plus relationship symbols for marriage, consanguineous marriage, extramarital mating, divorce, and pregnancy/miscarriage/stillbirth.](/GENETICSPICS/pedigree-symbol-key-standard-notation.jpg)
+*Source: biologyreader.com — confirm licensing basis before public deployment.*
+
+![A consanguineous (double-line) mating between first cousins, each an unaffected carrier (Aa), producing two affected (aa) children among their offspring — illustrating how consanguinity raises the risk of a rare recessive disorder appearing.](/GENETICSPICS/consanguinity-pedigree-double-line-mating.png)
+*Source: researchgate.net — confirm licensing basis before public deployment. Note: this is supplementary content illustrating the consanguineous-mating symbol shown in the key above; it was not one of this page's four originally specified Static items.*
+
 ### Diagnosing autosomal recessive inheritance
 
 Signature pattern: the trait can **skip generations**, appearing in offspring of two unaffected (carrier) parents; affected individuals are often, though not always, born to unaffected parents; the trait appears roughly equally in both sexes; and two affected parents always produce 100% affected offspring (since both must be homozygous recessive). **Cystic fibrosis** (CFTR mutation — see [Endomembrane System & Protein Trafficking](/resources/1-cell-molecular/endomembrane-system-protein-trafficking/) for the molecular basis of the common ΔF508 mutant's failure to reach the plasma membrane) and **Tay-Sachs disease** are standard human examples.
@@ -27,9 +33,12 @@ Signature pattern: the trait can **skip generations**, appearing in offspring of
 
 Signature pattern: the trait typically appears in **every generation** (no skipping, absent reduced penetrance — see [Extensions of Mendelian Inheritance](../extensions-of-mendelian-inheritance/)); every affected individual has at least one affected parent; unaffected individuals do not transmit the trait to their offspring; and the trait appears equally in both sexes. **Huntington's disease** and **achondroplasia** (a common cause of dwarfism) are standard human examples. A frequent pedigree trap: an apparently-skipped generation in an otherwise dominant-looking pattern should raise the possibility of **reduced penetrance** rather than being immediately reclassified as recessive.
 
+![Three side-by-side worked pedigrees: Autosomal Dominant (affected individuals in every generation), Autosomal Recessive (trait skips a generation, appearing only in the children of two unaffected carriers), and X-linked (multiple affected males across generations), with a shared symbol legend.](/GENETICSPICS/autosomal-dominant-vs-recessive-pedigree-comparison.jpg)
+*Source: glowm.com — confirm licensing basis before public deployment. Note: covers 3 of the 4 classical patterns (no separate X-linked dominant panel); the third panel is generically labeled "X-linked" rather than specifically "X-linked recessive," though its multiple-affected-males pattern is consistent with recessive. Also serves as the illustration for the "Diagnosing X-linked recessive inheritance" section below — per user decision, no separate Hemophilia A/Queen Victoria-specific pedigree was sourced, since this panel already covers the general X-linked recessive pattern.*
+
 ### Diagnosing X-linked recessive inheritance
 
-Signature pattern: affected males vastly outnumber affected females (since males are hemizygous, see [Sex Determination & Sex-Linked Inheritance](../sex-determination-sex-linked-inheritance/)); the trait never passes from an affected father to an affected son (no father-to-son transmission, since sons receive the father's Y, not X); daughters of an affected father are typically unaffected carriers; and a trait can appear to "skip" a generation via an unaffected carrier mother. **Hemophilia A** (Factor VIII deficiency, famously traced through European royal pedigrees descending from Queen Victoria) and **red-green color blindness** are standard examples.
+Signature pattern: affected males vastly outnumber affected females (since males are hemizygous, see [Sex Determination & Sex-Linked Inheritance](../sex-determination-sex-linked-inheritance/)); the trait never passes from an affected father to an affected son (no father-to-son transmission, since sons receive the father's Y, not X); daughters of an affected father are typically unaffected carriers; and a trait can appear to "skip" a generation via an unaffected carrier mother. **Hemophilia A** (Factor VIII deficiency, famously traced through European royal pedigrees descending from Queen Victoria) and **red-green color blindness** are standard examples. *(See the X-linked panel of the pedigree comparison image above for a general worked example; no Queen Victoria-specific pedigree was sourced — the general pattern was judged sufficient.)*
 
 ### Diagnosing X-linked dominant inheritance
 
@@ -42,6 +51,9 @@ Once a pedigree establishes the inheritance pattern and the genotypes of known i
 ### Karyotyping, prenatal testing, and genetic counseling
 
 A **karyotype** — a photographed, size-and-banding-ordered display of an individual's full chromosome complement — is the direct diagnostic tool for the chromosome-*number* and chromosome-*structure* disorders covered in [Chromosomal Variation: Number & Structure](../chromosomal-variation-number-structure/) (trisomies, large deletions/translocations), complementing pedigree analysis, which infers single-gene inheritance patterns rather than visualizing chromosomes directly. **Prenatal testing** methods (amniocentesis, chorionic villus sampling) obtain fetal cells for karyotyping or targeted molecular testing; **genetic counseling** combines pedigree-derived recurrence-risk calculations with test results to inform reproductive decisions — the clinical endpoint that pedigree analysis and probability calculations together are built to support.
+
+![A normal human karyotype: 22 autosome pairs (1-22) ordered by size and banding pattern, plus the sex chromosome pair (XY or XX).](/GENETICSPICS/human-karyotype-normal-46-chromosomes-banded.jpeg)
+*Source: microbenotes.com — confirm licensing basis before public deployment. Note: a clean schematic/vector rendering rather than an actual photographed karyotype (the text describes karyotyping as producing a "photographed" display) — conceptually accurate but not a real photomicrograph. See [Chromosomal Variation: Number & Structure](../chromosomal-variation-number-structure/) for a real photographed karyotype (trisomy 21).*
 
 ## Comparative Structures
 
@@ -63,14 +75,11 @@ A **karyotype** — a photographed, size-and-banding-ordered display of an indiv
 
 **Interactive**
 
-- *(built later — see project workflow)* A pedigree pattern diagnostic tool: given a generated pedigree, click through the diagnostic checklist (father-to-son transmission present? generations skipped? sex ratio skewed?) to arrive at the correct inheritance-pattern classification.
+- A pedigree pattern diagnostic tool: given a generated pedigree, click through the diagnostic checklist (father-to-son transmission present? generations skipped? sex ratio skewed?) to arrive at the correct inheritance-pattern classification.
 
-**Static**
+{{< iframe src="/pedigree-diagnostic-tool.html" title="Pedigree pattern diagnostic tool" height="620px" >}}
 
-- Pedigree symbol key (squares/circles, filled/half-filled/unfilled, mating lines, generation numbering) as a standalone reference graphic
-- Four side-by-side worked pedigree diagrams, one per classical pattern (autosomal recessive, autosomal dominant, X-linked recessive, X-linked dominant), each annotated with its diagnostic signature
-- Hemophilia A pedigree diagram tracing transmission through Queen Victoria's descendants across European royal houses
-- Karyotype image of a normal human chromosome complement, annotated with banding pattern and size-ordering convention
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. One gap remains open: a karyotype image — see the inline note above.)*
 
 ## Practice Problems
 

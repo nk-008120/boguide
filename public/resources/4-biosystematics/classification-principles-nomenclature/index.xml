@@ -1,18 +1,1 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>BiOGuide for Biology Olympiads – Classification Principles &amp; Nomenclature</title>
-    <link>http://localhost:1313/resources/4-biosystematics/classification-principles-nomenclature/</link>
-    <description>Recent content in Classification Principles &amp; Nomenclature on BiOGuide for Biology Olympiads</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    
-	  <atom:link href="http://localhost:1313/resources/4-biosystematics/classification-principles-nomenclature/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-      
-        
-      
-    
-    
-  </channel>
-</rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BiOGuide for Biology Olympiads – Classification Principles &amp; Nomenclature</title><link>https://boguide.vercel.app/resources/4-biosystematics/classification-principles-nomenclature/</link><description>Recent content in Classification Principles &amp; Nomenclature on BiOGuide for Biology Olympiads</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://boguide.vercel.app/resources/4-biosystematics/classification-principles-nomenclature/index.xml" rel="self" type="application/rss+xml"/></channel></rss>

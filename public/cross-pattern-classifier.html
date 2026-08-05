@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cross-Pattern Classifier | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 660px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .scenario { background: #f1f5f9; border-radius: 12px; padding: 14px 16px; font-size: 0.92rem; margin-bottom: 14px; min-height: 3.6em; }
+  .choices { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+  .choice-btn {
+    background: #fff;
+    border: 2px solid #cbd5e1;
+    color: #334155;
+    padding: 9px 14px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    flex: 1 1 auto;
+    min-width: 140px;
+  }
+  .choice-btn:disabled { cursor: default; opacity: 0.6; }
+  .choice-btn.correct-pick { border-color: #166534; background: #dcfce7; color: #166534; }
+  .choice-btn.wrong-pick { border-color: #991b1b; background: #fee2e2; color: #991b1b; }
+  .choice-btn.reveal-correct { border-color: #166534; background: #dcfce7; color: #166534; }
+  .feedback { font-size: 0.85rem; padding: 12px 14px; border-radius: 12px; display: none; margin-bottom: 12px; }
+  .feedback.correct { background: #dcfce7; color: #166534; display: block; }
+  .feedback.incorrect { background: #fee2e2; color: #991b1b; display: block; }
+  .btn { background: #2d6a4f; color: #fff; border: none; padding: 8px 18px; border-radius: 999px; font-size: 0.85rem; font-weight: 600; cursor: pointer; }
+  .score { font-size: 0.8rem; color: #4b5563; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Cross-Pattern Classifier</h3>
+  <div class="subtitle">Read the reciprocal-cross result, then classify which inheritance pattern it best fits.</div>
+  <div class="scenario" id="scenarioText"></div>
+  <div class="choices" id="choices">
+    <button class="choice-btn" data-v="mendelian">Mendelian (nuclear)</button>
+    <button class="choice-btn" data-v="organelle">Organelle / cytoplasmic</button>
+    <button class="choice-btn" data-v="maternal">Maternal effect</button>
+    <button class="choice-btn" data-v="imprinted">Genomic imprinting</button>
+  </div>
+  <div class="feedback" id="feedback"></div>
+  <button class="btn" id="nextBtn">Next scenario</button>
+  <div class="score" id="scoreOut">Score: 0 / 0</div>
+</div>
+<script>
+(function(){
+  var scenarios = [
+    {
+      text: 'A cross between a tall pea plant and a short pea plant gives all tall F1 offspring — and it makes no difference which parent (tall or short) supplies the pollen versus the ovules.',
+      answer: 'mendelian',
+      explain: 'Reciprocal crosses give the identical result, and the F1 phenotype depends only on the offspring\'s own genotype (Tt) — the standard signature of ordinary nuclear, Mendelian inheritance.'
+    },
+    {
+      text: 'All offspring of a mother with a mitochondrial disease are affected, regardless of sex. Offspring of an affected father (with an unaffected mother) are never affected — not even a fraction of them.',
+      answer: 'organelle',
+      explain: 'There\'s no partial segregation ratio at all — every offspring of an affected mother is affected, and a father never transmits the trait to any offspring. That "all-or-nothing, mother-only" pattern is the diagnostic signature of organelle (cytoplasmic) inheritance, not a sex-linked or nuclear gene.'
+    },
+    {
+      text: 'A dextral (right-coiling) mother × sinistral father produces all-dextral F1 offspring. But when these F1 snails are bred, their own offspring (F2) segregate 3 dextral : 1 sinistral — regardless of which F1 individual acts as the mother.',
+      answer: 'maternal',
+      explain: 'The F1 phenotype matched the mother\'s genotype, not a fraction — but the pattern resolved to normal Mendelian segregation exactly one generation later (F2). That one-generation delay is the diagnostic signature of a maternal-effect nuclear gene, not organelle inheritance (which never resolves to a segregation ratio at all).'
+    },
+    {
+      text: 'An identical deletion on chromosome 15 causes Prader-Willi syndrome when inherited from the father, but causes Angelman syndrome when the same deletion is inherited from the mother.',
+      answer: 'imprinted',
+      explain: 'The DNA change is identical in both cases — only the parent-of-origin differs, and that alone determines which syndrome results. That is the defining signature of genomic imprinting: the phenotype depends on which parent transmitted the allele, not on standard dominant/recessive logic.'
+    },
+    {
+      text: 'In four-o\'clock plants, seeds from a variegated branch produce a mix of green, pale, and variegated offspring — but which colors appear depends entirely on which branch supplied the seed-bearing (female) parent, never on which branch supplied the pollen (male) parent.',
+      answer: 'organelle',
+      explain: 'Plastid (chloroplast) genotype is inherited maternally, just like mitochondria — the pollen parent\'s plastids are essentially never transmitted. The offspring color depending entirely on the female parent\'s branch, with zero contribution from the male parent, is the organelle-inheritance signature.'
+    },
+    {
+      text: 'A woman heterozygous for a recessive condition has children with an unaffected, non-carrier man. One-quarter of their children are affected, regardless of which specific allele came from which parent — a standard 3:1 ratio among unaffected × carrier-style crosses in the broader pedigree.',
+      answer: 'mendelian',
+      explain: 'A standard segregation ratio (here reflecting ordinary recessive inheritance in the wider pedigree) that doesn\'t depend on parent-of-origin or resolve with a generational delay is just ordinary nuclear, Mendelian inheritance.'
+    }
+  ];
+  var order = [];
+  var idx = 0;
+  var locked = false;
+  var correctCount = 0, totalCount = 0;
+
+  function shuffle(arr){
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--){
+      var j = Math.floor(Math.random() * (i+1));
+      var tmp = a[i]; a[i] = a[j]; a[j] = tmp;
+    }
+    return a;
+  }
+
+  function loadScenario(){
+    if (idx >= order.length){
+      order = shuffle(scenarios.map(function(_,i){ return i; }));
+      idx = 0;
+    }
+    var s = scenarios[order[idx]];
+    document.getElementById('scenarioText').textContent = s.text;
+    var fb = document.getElementById('feedback');
+    fb.className = 'feedback';
+    fb.textContent = '';
+    document.querySelectorAll('.choice-btn').forEach(function(b){
+      b.disabled = false;
+      b.className = 'choice-btn';
+    });
+    locked = false;
+  }
+
+  document.querySelectorAll('.choice-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      if (locked) return;
+      locked = true;
+      var s = scenarios[order[idx]];
+      var picked = btn.getAttribute('data-v');
+      var isCorrect = picked === s.answer;
+      totalCount++;
+      if (isCorrect) correctCount++;
+      document.querySelectorAll('.choice-btn').forEach(function(b){
+        b.disabled = true;
+        if (b.getAttribute('data-v') === s.answer){
+          b.classList.add('reveal-correct');
+        } else if (b === btn){
+          b.classList.add('wrong-pick');
+        }
+      });
+      if (isCorrect) btn.classList.add('correct-pick');
+      var fb = document.getElementById('feedback');
+      fb.className = 'feedback ' + (isCorrect ? 'correct' : 'incorrect');
+      fb.textContent = (isCorrect ? 'Correct. ' : 'Not quite. ') + s.explain;
+      document.getElementById('scoreOut').textContent = 'Score: ' + correctCount + ' / ' + totalCount;
+    });
+  });
+
+  document.getElementById('nextBtn').addEventListener('click', function(){
+    idx++;
+    loadScenario();
+  });
+
+  order = shuffle(scenarios.map(function(_,i){ return i; }));
+  loadScenario();
+})();
+</script>
+</body>
+</html>

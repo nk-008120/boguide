@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Epistasis Ratio Explorer | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .modes { display: flex; gap: 8px; margin-bottom: 1rem; flex-wrap: wrap; }
+  .mode-btn {
+    background: #f1f5f9;
+    color: #334155;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .mode-btn.active { background: #2d6a4f; color: #fff; }
+  .layout { display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap; }
+  table.epi { border-collapse: collapse; }
+  table.epi td, table.epi th {
+    border: 1px solid #cbd5e1;
+    width: 48px;
+    height: 34px;
+    text-align: center;
+    font-size: 0.68rem;
+    font-weight: 600;
+  }
+  table.epi th { background: #f1f5f9; color: #334155; }
+  .results { flex: 1; min-width: 220px; }
+  .readout { background: #f1f5f9; border-radius: 12px; padding: 10px 14px; margin-bottom: 10px; font-size: 0.9rem; }
+  .readout b { color: #1d70a2; }
+  .legend-item { display: flex; align-items: center; margin-bottom: 6px; font-size: 0.82rem; }
+  .legend-item .dot { width: 12px; height: 12px; border-radius: 3px; margin-right: 8px; border: 1px solid #94a3b8; }
+  .note { font-size: 0.82rem; color: #4b5563; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Epistasis Ratio Explorer</h3>
+  <div class="subtitle">A fixed AaBb × AaBb cross — choose an interaction type and watch the 16-box grid recolor to show which classes merge.</div>
+  <div class="modes">
+    <button class="mode-btn active" id="m-none">No epistasis</button>
+    <button class="mode-btn" id="m-recessive">Recessive (9:3:4)</button>
+    <button class="mode-btn" id="m-dominant">Dominant (12:3:1)</button>
+    <button class="mode-btn" id="m-duprec">Duplicate recessive (9:7)</button>
+    <button class="mode-btn" id="m-dupgene">Duplicate genes (15:1)</button>
+  </div>
+  <div class="layout">
+    <div id="gridHolder"></div>
+    <div class="results">
+      <div class="readout" id="ratioReadout">Ratio: —</div>
+      <div id="legendHolder"></div>
+      <div class="note" id="explainNote"></div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var gametes = ['AB','Ab','aB','ab'];
+  var modeDefs = {
+    none: { name: 'No epistasis (independent genes)', groups: [
+      { classes: ['A_B_'], label: 'A_B_', color: '#dcfce7' },
+      { classes: ['A_bb'], label: 'A_bb', color: '#bfdbfe' },
+      { classes: ['aaB_'], label: 'aaB_', color: '#fef9c3' },
+      { classes: ['aabb'], label: 'aabb', color: '#fee2e2' }
+    ], explain: 'Each gene controls its own trait independently — all four phenotype classes stay distinguishable, giving the standard 9:3:3:1.' },
+    recessive: { name: 'Recessive epistasis (9:3:4)', groups: [
+      { classes: ['A_B_'], label: 'A_B_ — e.g. black', color: '#dcfce7' },
+      { classes: ['A_bb'], label: 'A_bb — e.g. chocolate', color: '#bfdbfe' },
+      { classes: ['aaB_','aabb'], label: 'aa__ — e.g. yellow (bb genotype no longer distinguishable once aa masks it)', color: '#fef9c3' }
+    ], explain: 'Homozygous recessive at the epistatic gene (aa) masks the second gene\'s phenotype entirely, merging aaB_ and aabb into one class — like Labrador coat color.' },
+    dominant: { name: 'Dominant epistasis (12:3:1)', groups: [
+      { classes: ['A_B_','A_bb'], label: 'A___ — e.g. white (dominant A masks gene 2)', color: '#dcfce7' },
+      { classes: ['aaB_'], label: 'aaB_ — e.g. yellow', color: '#fef9c3' },
+      { classes: ['aabb'], label: 'aabb — e.g. green', color: '#fee2e2' }
+    ], explain: 'A single dominant allele at the epistatic gene (A_) is enough to mask the second gene, merging A_B_ and A_bb into one class — like summer squash color.' },
+    duprec: { name: 'Duplicate recessive epistasis (9:7)', groups: [
+      { classes: ['A_B_'], label: 'A_B_ — pigmented (both steps present)', color: '#dcfce7' },
+      { classes: ['A_bb','aaB_','aabb'], label: 'all others — unpigmented (pathway blocked)', color: '#fee2e2' }
+    ], explain: 'Both genes must have at least one dominant allele to complete a two-step pathway — any single recessive homozygous class blocks it, merging three classes into one.' },
+    dupgene: { name: 'Duplicate gene action (15:1)', groups: [
+      { classes: ['A_B_','A_bb','aaB_'], label: 'A_ or B_ present — phenotype produced', color: '#dcfce7' },
+      { classes: ['aabb'], label: 'aabb — only class lacking either gene', color: '#fee2e2' }
+    ], explain: 'Either gene\'s dominant allele alone is sufficient to produce the phenotype — only the fully double-recessive class looks different.' }
+  };
+  var mode = 'none';
+  var btns = { none: 'm-none', recessive: 'm-recessive', dominant: 'm-dominant', duprec: 'm-duprec', dupgene: 'm-dupgene' };
+  Object.keys(btns).forEach(function(k){
+    document.getElementById(btns[k]).addEventListener('click', function(){
+      mode = k;
+      Object.keys(btns).forEach(function(kk){ document.getElementById(btns[kk]).classList.toggle('active', kk===k); });
+      render();
+    });
+  });
+
+  function baseClass(gamRow, gamCol){
+    var locusA = gamRow[0] + gamCol[0]; // e.g. 'A'+'a'
+    var locusB = gamRow[1] + gamCol[1];
+    var aDom = locusA.indexOf('A') !== -1;
+    var bDom = locusB.indexOf('B') !== -1;
+    return (aDom ? 'A_' : 'aa') + (bDom ? 'B_' : 'bb');
+  }
+  function genotypeStr(gamRow, gamCol){
+    var a = [gamRow[0], gamCol[0]].sort().reverse().join('');
+    var b = [gamRow[1], gamCol[1]].sort().reverse().join('');
+    return a + b;
+  }
+  function gcdArr(vals){
+    function gcd(a,b){ return b === 0 ? a : gcd(b, a % b); }
+    return vals.reduce(function(a,b){ return gcd(a,b); });
+  }
+
+  function render(){
+    var def = modeDefs[mode];
+    var classToGroup = {};
+    def.groups.forEach(function(g, idx){
+      g.classes.forEach(function(c){ classToGroup[c] = idx; });
+    });
+    var table = document.createElement('table');
+    table.className = 'epi';
+    var headRow = document.createElement('tr');
+    headRow.appendChild(document.createElement('th'));
+    gametes.forEach(function(g){ var th = document.createElement('th'); th.textContent = g; headRow.appendChild(th); });
+    table.appendChild(headRow);
+    var counts = def.groups.map(function(){ return 0; });
+    gametes.forEach(function(rowGam){
+      var tr = document.createElement('tr');
+      var th = document.createElement('th');
+      th.textContent = rowGam;
+      tr.appendChild(th);
+      gametes.forEach(function(colGam){
+        var bc = baseClass(rowGam, colGam);
+        var groupIdx = classToGroup[bc];
+        counts[groupIdx]++;
+        var td = document.createElement('td');
+        td.textContent = genotypeStr(rowGam, colGam);
+        td.style.background = def.groups[groupIdx].color;
+        tr.appendChild(td);
+      });
+      table.appendChild(tr);
+    });
+    var gridHolder = document.getElementById('gridHolder');
+    gridHolder.innerHTML = '';
+    gridHolder.appendChild(table);
+
+    var g = gcdArr(counts);
+    var ratioStr = counts.map(function(c){ return c / g; }).join(' : ');
+    document.getElementById('ratioReadout').innerHTML = def.name + ' — Ratio: <b>' + ratioStr + '</b>';
+
+    var legendHolder = document.getElementById('legendHolder');
+    legendHolder.innerHTML = '';
+    def.groups.forEach(function(g2, idx){
+      var item = document.createElement('div');
+      item.className = 'legend-item';
+      item.innerHTML = '<span class="dot" style="background:' + g2.color + ';"></span>' + (counts[idx]) + '/16 — ' + g2.label;
+      legendHolder.appendChild(item);
+    });
+    document.getElementById('explainNote').textContent = def.explain;
+  }
+
+  render();
+})();
+</script>
+</body>
+</html>
