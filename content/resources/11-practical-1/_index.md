@@ -1,8 +1,8 @@
 ---  
-title: "11-practical-1"  
+title: "Molecular Biology and Biochemistry"
 weight: 1  
 ---  
   
 ## Description  
   
-*To be filled - content coming soon.* 
+*To be filled - content coming soon as IBO 2027 approaches.*
