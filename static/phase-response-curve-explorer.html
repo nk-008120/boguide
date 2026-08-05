@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phase Response Curve Explorer | BioGuide</title>
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js"></script>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  label { font-size: 0.85rem; font-weight: 600; color: #334155; display:block; margin-bottom: 6px; }
+  input[type=range] { width: 100%; }
+  .readout {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin: 12px 0;
+    font-size: 0.92rem;
+  }
+  .readout b { color: #1d70a2; }
+  #plot { width: 100%; height: 320px; }
+  .note { font-size: 0.8rem; color: #4b5563; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Phase Response Curve Explorer</h3>
+  <div class="subtitle">Slide the light pulse across the circadian cycle (CT = circadian time, CT12 = activity onset/dusk, CT24/CT0 = dawn) and see the resulting phase shift.</div>
+  <label for="ctSlider">Light pulse delivered at: <span id="ctVal">CT 15</span></label>
+  <input type="range" id="ctSlider" min="0" max="24" step="0.5" value="15">
+  <div class="readout">Resulting phase shift: <b id="shiftVal">—</b></div>
+  <div id="plot"></div>
+  <div class="note">Subjective day (CT0–12) is the "dead zone" — light has little effect. Early subjective night (~CT12–18) produces delays; late subjective night (~CT18–24) produces advances — the same logic behind eastward vs. westward jet lag.</div>
+</div>
+<script>
+(function(){
+  var Amax = 3;
+  function shiftAt(ct){
+    if (ct < 12){ return 0; }
+    return -Amax * Math.sin(2 * Math.PI * (ct - 12) / 12);
+  }
+
+  var curveCT = [], curveShift = [];
+  for (var ct = 0; ct <= 24; ct += 0.25){
+    curveCT.push(ct);
+    curveShift.push(shiftAt(ct));
+  }
+
+  function render(){
+    var ct = parseFloat(document.getElementById('ctSlider').value);
+    document.getElementById('ctVal').textContent = 'CT ' + ct;
+    var shift = shiftAt(ct);
+    var label;
+    if (Math.abs(shift) < 0.05){
+      label = 'No shift (dead zone)';
+    } else if (shift < 0){
+      label = 'Delay of ' + Math.abs(shift).toFixed(1) + ' hours (clock resets later)';
+    } else {
+      label = 'Advance of ' + shift.toFixed(1) + ' hours (clock resets earlier)';
+    }
+    document.getElementById('shiftVal').textContent = label;
+
+    Plotly.react('plot', [
+      { x: curveCT, y: curveShift, mode: 'lines', name: 'Phase response curve', line: { color: '#2d6a4f', width: 2.5 } },
+      { x: [ct], y: [shift], mode: 'markers', name: 'Selected pulse', marker: { color: '#b45309', size: 12 } },
+      { x: [0, 24], y: [0, 0], mode: 'lines', showlegend: false, line: { color: '#cbd5e1', width: 1, dash: 'dot' } }
+    ], {
+      margin: { t: 10, r: 15, l: 55, b: 40 },
+      xaxis: { title: 'Circadian time (CT) of light pulse', range: [0, 24] },
+      yaxis: { title: 'Phase shift (hours)', range: [-Amax - 0.5, Amax + 0.5] },
+      legend: { orientation: 'h', y: -0.25 },
+      font: { family: 'Inter, system-ui, sans-serif', size: 11 }
+    }, { displayModeBar: false, responsive: true });
+  }
+
+  document.getElementById('ctSlider').addEventListener('input', render);
+  render();
+})();
+</script>
+</body>
+</html>

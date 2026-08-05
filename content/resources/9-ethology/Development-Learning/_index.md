@@ -22,6 +22,9 @@ Where [Mechanisms of Behavior](../Mechanisms-of-Behavior/) covered the innate, h
 
 A **critical period** is a developmental window outside of which a specific experience-dependent behavior cannot be acquired at all; a **sensitive period** is a window during which the behavior is most easily and strongly acquired but can still form, less readily, outside it — the two terms are frequently conflated in casual use but are testable as a distinction. **Filial imprinting** in precocial birds is the sharpest example of a true critical period: goslings and ducklings imprint on the first sufficiently large, moving object they encounter within roughly the first 13-16 hours after hatching, and imprinting largely fails to occur if this window is missed. Bird song acquisition (above) is a better example of a genuine sensitive period — later exposure can still produce partial learning, just less complete than exposure during the peak window.
 
+![Graph of brain thyroid hormone level across developmental day in imprinted vs. dark-reared chicks, with the sensitive period and "memory priming" window bracketed and a dashed threshold line marking the level needed to cause imprinting.](/ETHOLOGYPICS/goose-imprinting-critical-period-timeline.jpg)
+*Source: nature.com (Nature Communications) — confirm licensing basis before public deployment. This is a specific research figure tying the sensitive period to a brain-thyroid-hormone threshold, not a generic "imprinting-success-probability" curve — more technical than, but consistent with, the concept described in the text.*
+
 ### Imprinting
 
 **Filial imprinting** — young precocial animals forming a rapid, largely irreversible attachment to and following-response toward the first appropriately moving stimulus encountered — is the case study most associated with **Konrad Lorenz**, who famously became the imprinted "parent" of a clutch of greylag geese he raised from hatching, demonstrating the response could attach to an inappropriate object (a human, or in later experiments a moving box) if presented at the critical window instead of the biological parent. A second, distinct form, **sexual imprinting**, occurs later in development and shapes adult mate-species preference rather than following behavior — cross-fostering experiments (e.g. zebra finches raised by Bengalese finch foster parents) show the fostered bird preferentially courts the foster species as an adult, demonstrating sexual imprinting is a separate learning process from filial imprinting, not just an extension of it.
@@ -36,9 +39,17 @@ A **critical period** is a developmental window outside of which a specific expe
 
 **Classical (Pavlovian) conditioning** is associative learning in which a neutral stimulus comes to elicit a response by being repeatedly paired with a stimulus that already elicits that response. In **Ivan Pavlov's** dogs: food (**unconditioned stimulus**, UCS) naturally elicits salivation (**unconditioned response**, UCR); a bell (**neutral stimulus**) paired repeatedly with food comes to elicit salivation on its own (now the **conditioned stimulus**, CS, eliciting a **conditioned response**, CR). Key associated phenomena worth naming precisely: **extinction** (the CR weakens if the CS is repeatedly presented without the UCS), **spontaneous recovery** (an extinguished CR can reappear after a rest period, showing extinction suppresses rather than erases the association), and **stimulus generalization** (a stimulus similar to the CS also elicits some CR).
 
+![Four-panel diagram of Pavlov's classical conditioning: before conditioning (food/UCS naturally elicits salivation/UCR; bell alone elicits no response), during conditioning (bell paired with food), and after conditioning (bell alone/CS now elicits salivation/CR).](/ETHOLOGYPICS/pavlov-classical-conditioning-diagram.png)
+*Source: ResearchGate, fig. from a classical-conditioning explainer — confirm licensing basis before public deployment. Shows the basic UCS/UCR/CS/CR setup only; it does not include the extinction/spontaneous-recovery time series described in the text.*
+
 ### Operant Conditioning
 
-**Operant conditioning** is associative learning in which the *consequence* of a voluntary behavior changes the future frequency of that behavior — formalized by **B.F. Skinner** using the "Skinner box," where a rat or pigeon's lever-press or key-peck behavior is shaped by what follows it. Four consequence categories are commonly tested and commonly confused, since "positive/negative" refers to whether something is *added or removed*, not to whether the outcome is pleasant:
+**Operant conditioning** is associative learning in which the *consequence* of a voluntary behavior changes the future frequency of that behavior — formalized by **B.F. Skinner** using the "Skinner box," where a rat or pigeon's lever-press or key-peck behavior is shaped by what follows it.
+
+![Labeled Skinner box schematic: response lever, food dispenser, electrified grid floor, plus loudspeakers and lights used to present auditory/visual stimuli.](/ETHOLOGYPICS/skinner-box-schematic.svg)
+*Source: Wikipedia, "Operant conditioning chamber" — confirm licensing basis before public deployment. This SVG could not be rendered visually by the usual image viewer (too complex/large to rasterize); content was confirmed by extracting its embedded text labels directly from the file.*
+
+Four consequence categories are commonly tested and commonly confused, since "positive/negative" refers to whether something is *added or removed*, not to whether the outcome is pleasant:
 
 | Term | Mechanism | Effect on behavior | Example |
 |---|---|---|---|
@@ -47,11 +58,22 @@ A **critical period** is a developmental window outside of which a specific expe
 | Positive punishment | Add an aversive stimulus | Decreases behavior | Rat receives a shock for pressing a lever |
 | Negative punishment | Remove a desirable stimulus | Decreases behavior | Rat's food access is taken away for pressing a lever |
 
+![Reinforcement/punishment quadrant graphic: vertical axis "increase in behaviour" vs. "decrease in behaviour," horizontal axis "remove stimulus" vs. "add stimulus," with positive reinforcement, negative reinforcement, positive punishment, and negative punishment labeled in the four resulting quadrants.](/ETHOLOGYPICS/operant-conditioning-quadrant-table-graphic.webp)
+*Source: ResearchGate, fig. illustrating reinforcement/punishment categories — confirm licensing basis before public deployment.*
+
 **Reinforcement schedules** are also directly testable: **continuous reinforcement** (every response reinforced) produces fast learning but fast extinction; **partial/intermittent schedules** (fixed-ratio, variable-ratio, fixed-interval, variable-interval) produce slower learning but far greater resistance to extinction — variable-ratio schedules in particular produce the highest, steadiest response rates, the same principle underlying slot-machine-style unpredictable reward.
 
 ### Observational and Insight Learning
 
-**Observational (social) learning** is acquiring a behavior by watching another individual perform it, without direct trial-and-error by the observer — the best-documented wild case is **milk-bottle-top opening in British great tits (*Parus major*)**, which spread through local populations from a small number of innovating individuals in a pattern consistent with social transmission rather than independent invention at every location. A closely related and more specific case, **social learning of a novel food-processing technique**, is the well-documented **Japanese macaque (*Macaca fuscata*) potato-washing** case on Koshima Island, where a young female's innovation of washing sand off sweet potatoes spread through her troop over subsequent years, disproportionately through younger animals and closely bonded individuals, a pattern used as evidence for cultural transmission in a non-human primate. **Insight learning** is the sudden, apparently non-trial-and-error solving of a novel problem by combining previously learned elements — **Wolfgang Köhler's** captive chimpanzee experiments are the classic case, in which a chimpanzee unable to reach a suspended banana directly abruptly stacked crates or joined two short sticks into a longer one to reach it, without an observable period of gradual trial-and-error immediately preceding the solution.
+**Observational (social) learning** is acquiring a behavior by watching another individual perform it, without direct trial-and-error by the observer — the best-documented wild case is **milk-bottle-top opening in British great tits (*Parus major*)**, which spread through local populations from a small number of innovating individuals in a pattern consistent with social transmission rather than independent invention at every location. A closely related and more specific case, **social learning of a novel food-processing technique**, is the well-documented **Japanese macaque (*Macaca fuscata*) potato-washing** case on Koshima Island, where a young female's innovation of washing sand off sweet potatoes spread through her troop over subsequent years, disproportionately through younger animals and closely bonded individuals, a pattern used as evidence for cultural transmission in a non-human primate.
+
+![Photograph of two Koshima Island Japanese macaques at the water's edge, one holding and washing a sweet potato before eating it.](/ETHOLOGYPICS/koshima-macaque-potato-washing-spread.jpg)
+*Source: ResearchGate, photo credited to T. Matsuzawa — confirm licensing basis before public deployment. This is a photo of the behavior itself, not a diagram showing the spread of the behavior through the troop across successive years as originally specified — the diffusion pattern described in the text is not visually represented here.*
+
+**Insight learning** is the sudden, apparently non-trial-and-error solving of a novel problem by combining previously learned elements — **Wolfgang Köhler's** captive chimpanzee experiments are the classic case, in which a chimpanzee unable to reach a suspended banana directly abruptly stacked crates or joined two short sticks into a longer one to reach it, without an observable period of gradual trial-and-error immediately preceding the solution.
+
+![Black-and-white photograph of a Köhler chimpanzee experiment: one chimpanzee climbing a hanging rope/pole above a stack of crates, with other chimpanzees watching from the ground near additional crate materials.](/ETHOLOGYPICS/kohler-chimpanzee-stick-joining-insight.jpg)
+*Source: pigeon.psy.tufts.edu (Tufts University, Psych 26 course materials) — confirm licensing basis before public deployment. This photo shows Köhler's box-stacking insight-learning problem (climbing stacked crates to reach a suspended goal), not the stick-joining variant described in the text and originally requested — both are genuine Köhler insight-learning demonstrations, but this image depicts the other one, and it is a single photo rather than a before/after diagram.*
 
 <!-- VIDEO: Japanese macaque potato-washing behavior spreading through the Koshima troop — Macaca fuscata — the spread-through-social-contact pattern is the point being taught and is much clearer shown across individuals than described -->
 
@@ -85,18 +107,16 @@ A **critical period** is a developmental window outside of which a specific expe
 **Interactive**
 
 - **Operant conditioning quadrant classifier (drag-and-drop, HTML/JS, no new library)** — named consequence scenarios sorted into positive/negative reinforcement/punishment, with immediate feedback — directly targets the "positive/negative ≠ pleasant/unpleasant" confusion that drives most wrong answers on this topic.
+
+{{< iframe src="/operant-quadrant-classifier.html" title="Operant Conditioning Quadrant Classifier" height="480px" >}}
+
 - **Reinforcement schedule response-rate simulator (Plotly)** — lets the user select continuous, fixed-ratio, variable-ratio, fixed-interval, or variable-interval schedules and view a simulated cumulative-response curve for each, then compare extinction rate after reinforcement stops — makes the abstract "resistance to extinction" claim visually concrete.
 
-**Static**
+{{< iframe src="/reinforcement-schedule-simulator.html" title="Reinforcement Schedule Response-Rate Simulator" height="520px" >}}
 
-- Tinbergen-style timeline of the goose imprinting critical period (hours post-hatching) with imprinting-success probability dropping outside the window
-- Pavlov's classical conditioning diagram: UCS/UCR before pairing, CS/CR after pairing, with extinction and spontaneous recovery shown as a response-strength time series
-- Skinner box schematic labeled with lever, food dispenser, and shock grid
-- Four-quadrant reinforcement/punishment table (as above) as a standalone reference graphic
-- Diagram of the Koshima macaque potato-washing spread across the troop over successive years
-- Köhler's chimpanzee stick-joining insight problem, shown as a before/after diagram
+**Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here)*
 
-<!-- VIDEO: Skinner box rat lever-pressing under a variable-ratio schedule — Rattus norvegicus — the steady, rapid response pattern characteristic of variable-ratio reinforcement is best conveyed as real-time footage rather than a static rate graph -->
+{{< youtube PQtDTdDr8vs >}}
 
 ## Practice Problems
 

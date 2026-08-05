@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Character Matrix → Cladogram Builder | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  table.matrix { border-collapse: collapse; margin-bottom: 1rem; font-size: 0.8rem; }
+  table.matrix th, table.matrix td { border: 1px solid #cbd5e1; padding: 5px 10px; text-align: center; }
+  table.matrix th { background: #f1f5f9; }
+  .instructions { font-size: 0.8rem; color: #64748b; margin-bottom: 8px; }
+  #pool { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; min-height: 40px; }
+  .cluster-chip {
+    background: #eaf2f8;
+    border: 2px solid #1d70a2;
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #1d3557;
+    cursor: pointer;
+  }
+  .cluster-chip.picked { background: #2d6a4f; border-color: #1a472a; color: #fff; }
+  .cluster-chip.outgroup { background: #fef3c7; border-color: #d97706; color: #92400e; }
+  #status { font-size: 0.85rem; color: #64748b; margin-bottom: 10px; }
+  #result {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    display: none;
+  }
+  #result.show { display: block; }
+  #result.win { background: #dcfce7; color: #166534; }
+  #result.lose { background: #fee2e2; color: #991b1b; }
+  #resetBtn {
+    display: block;
+    margin: 12px auto 0;
+    background: #2d6a4f;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Character Matrix → Cladogram Builder</h3>
+  <div class="subtitle">Click two taxa/clusters to join them into a clade. Keep merging until one tree remains, then see how many character-state changes your tree requires.</div>
+  <table class="matrix">
+    <tr><th>Taxon</th><th>C1</th><th>C2</th><th>C3</th><th>C4</th></tr>
+    <tr><td>O (outgroup)</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td>D</td><td>0</td><td>0</td><td>0</td><td>1</td></tr>
+    <tr><td>C</td><td>1</td><td>0</td><td>0</td><td>0</td></tr>
+    <tr><td>A</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+    <tr><td>B</td><td>1</td><td>1</td><td>1</td><td>0</td></tr>
+  </table>
+  <div class="instructions" id="instructions">Click one taxon, then click another to merge them into a clade. Click a merged clade to include it in your next merge too.</div>
+  <div id="pool"></div>
+  <div id="status"></div>
+  <div id="result"></div>
+  <button id="resetBtn">Reset</button>
+</div>
+<script>
+(function(){
+  var taxonStates = {
+    O: [0,0,0,0],
+    D: [0,0,0,1],
+    C: [1,0,0,0],
+    A: [1,1,0,0],
+    B: [1,1,1,0]
+  };
+  var nChars = 4;
+  var TRUE_MIN = 4; // this dataset's global minimum parsimony score (each of the 4 variable characters needs exactly 1 change in the true tree)
+
+  var pool = [];
+  var picked = null;
+
+  function leaf(taxon){ return { taxon: taxon, label: taxon }; }
+
+  function resetPool(){
+    pool = ['O','D','C','A','B'].map(leaf);
+    picked = null;
+  }
+
+  function fitchScore(node, charIndex){
+    if (node.taxon){
+      return { set: [taxonStates[node.taxon][charIndex]], changes: 0 };
+    }
+    var left = fitchScore(node.left, charIndex);
+    var right = fitchScore(node.right, charIndex);
+    var inter = left.set.filter(function(x){ return right.set.indexOf(x) !== -1; });
+    var changes = left.changes + right.changes;
+    var set;
+    if (inter.length > 0){
+      set = inter;
+    } else {
+      set = left.set.concat(right.set.filter(function(x){ return left.set.indexOf(x) === -1; }));
+      changes += 1;
+    }
+    return { set: set, changes: changes };
+  }
+
+  function totalScore(tree){
+    var total = 0;
+    for (var i = 0; i < nChars; i++){
+      total += fitchScore(tree, i).changes;
+    }
+    return total;
+  }
+
+  var poolEl = document.getElementById('pool');
+  var statusEl = document.getElementById('status');
+  var resultEl = document.getElementById('result');
+  var instructions = document.getElementById('instructions');
+
+  function render(){
+    poolEl.innerHTML = '';
+    pool.forEach(function(node, i){
+      var chip = document.createElement('div');
+      chip.className = 'cluster-chip' + (node.taxon === 'O' ? ' outgroup' : '') + (node === picked ? ' picked' : '');
+      chip.textContent = node.label;
+      chip.addEventListener('click', function(){ onPick(i); });
+      poolEl.appendChild(chip);
+    });
+    statusEl.textContent = pool.length > 1 ? (pool.length - 1) + ' merge(s) remaining to reach a single tree.' : '';
+    if (pool.length === 1){
+      var score = totalScore(pool[0]);
+      resultEl.className = 'result show ' + (score === TRUE_MIN ? 'win' : 'lose');
+      if (score === TRUE_MIN){
+        resultEl.innerHTML = '<b>Most parsimonious!</b> Your tree — ' + pool[0].label + ' — requires <b>' + score + '</b> total character-state changes, matching the minimum possible for this dataset (one change per variable character).';
+      } else {
+        resultEl.innerHTML = 'Your tree — ' + pool[0].label + ' — requires <b>' + score + '</b> total character-state changes. The most parsimonious tree for this data requires only <b>' + TRUE_MIN + '</b>. Reset and try grouping taxa that share more derived states together first.';
+      }
+      instructions.textContent = 'Tree complete.';
+    } else {
+      resultEl.className = 'result';
+      instructions.textContent = 'Click one taxon, then click another to merge them into a clade.';
+    }
+  }
+
+  function onPick(i){
+    if (pool.length === 1) return;
+    if (picked === null){
+      picked = pool[i];
+      render();
+      return;
+    }
+    var pickedIndex = pool.indexOf(picked);
+    if (pickedIndex === i){
+      picked = null;
+      render();
+      return;
+    }
+    var other = pool[i];
+    var merged = { left: picked, right: other, label: '(' + picked.label + ',' + other.label + ')' };
+    pool = pool.filter(function(n){ return n !== picked && n !== other; });
+    pool.push(merged);
+    picked = null;
+    render();
+  }
+
+  document.getElementById('resetBtn').addEventListener('click', function(){
+    resetPool();
+    render();
+  });
+
+  resetPool();
+  render();
+})();
+</script>
+</body>
+</html>

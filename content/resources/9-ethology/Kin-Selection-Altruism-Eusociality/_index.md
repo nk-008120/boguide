@@ -59,7 +59,12 @@ where **r** is the coefficient of relatedness between actor and recipient (the p
 **Interactive**
 
 - **Hamilton's rule calculator (HTML/JS, no new library)** — user sets relatedness (via a selectable relationship: full sibling, half-sibling, cousin, haplodiploid full sister), benefit, and cost values, and the tool computes rB vs. C and indicates whether the modeled altruistic act is predicted to be favored — turns the inequality into something manipulable against named relationship types.
+
+{{< iframe src="/hamiltons-rule-calculator.html" title="Hamilton's Rule Calculator" height="480px" >}}
+
 - **Haplodiploidy relatedness pedigree (interactive SVG/JS)** — a clickable Hymenoptera family pedigree where selecting any two individuals (e.g. two sisters, a mother and daughter) displays the computed relatedness coefficient and the reasoning (shared paternal haploid genome vs. shared maternal alleles), directly demonstrating why full sisters reach r = 0.75.
+
+{{< iframe src="/haplodiploidy-relatedness-pedigree.html" title="Haplodiploidy Relatedness Pedigree" height="460px" >}}
 
 **Static**
 

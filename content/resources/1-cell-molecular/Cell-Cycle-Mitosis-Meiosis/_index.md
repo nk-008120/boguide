@@ -11,7 +11,7 @@ syllabus_tags: ["IBO", "USABO", "cell-biology"]
 
 ## Overview
 
-**Scope note**: this page covers the mechanics of how chromosomes move and divide — cell cycle regulation, mitotic stages, and the chromosome behaviour of meiosis I and II. The *genetic consequences* of meiosis — independent assortment, crossing-over-derived recombination frequency, linkage mapping — are covered in Genetics, not repeated here; this page is the mechanistic foundation those topics build on.
+**Scope note**: this page covers the mechanics of how chromosomes move and divide — cell cycle regulation, mitotic stages, and the chromosome behaviour of meiosis I and II. The *genetic consequences* of meiosis — independent assortment (see [Mendel's Laws & Probability in Genetics](/resources/7-genetics/mendelian-inheritance-probability/)), crossing-over-derived recombination frequency and linkage mapping (see [Linkage, Recombination & Genetic Mapping](/resources/7-genetics/linkage-recombination-genetic-mapping/)) — are covered in Genetics, not repeated here; this page is the mechanistic foundation those topics build on.
 
 ## Key Concepts
 
@@ -48,7 +48,7 @@ Mitosis divides a duplicated genome (sister chromatids) into two genetically ide
 
 Meiosis produces four genetically distinct haploid cells from one diploid cell, through **two** successive divisions following a single round of DNA replication:
 
-**Meiosis I** ("reductional division," halving chromosome number): homologous chromosomes — not sister chromatids — pair up (**synapsis**) and separate. During prophase I, paired homologs form a **tetrad** (bivalent) and undergo **crossing over** at points of physical contact (**chiasmata**), physically exchanging segments between non-sister chromatids of homologous chromosomes — the mechanistic event underlying genetic recombination (its *consequences* for linkage and recombination frequency belong to Genetics; this page covers only that the physical exchange occurs). At anaphase I, whole homologous chromosomes (each still consisting of two sister chromatids) separate to opposite poles — sister chromatids stay together through this division, unlike in mitosis.
+**Meiosis I** ("reductional division," halving chromosome number): homologous chromosomes — not sister chromatids — pair up (**synapsis**) and separate. During prophase I, paired homologs form a **tetrad** (bivalent) and undergo **crossing over** at points of physical contact (**chiasmata**), physically exchanging segments between non-sister chromatids of homologous chromosomes — the mechanistic event underlying genetic recombination (its *consequences* for linkage and recombination frequency belong to Genetics — see [Linkage, Recombination & Genetic Mapping](/resources/7-genetics/linkage-recombination-genetic-mapping/); this page covers only that the physical exchange occurs). At anaphase I, whole homologous chromosomes (each still consisting of two sister chromatids) separate to opposite poles — sister chromatids stay together through this division, unlike in mitosis.
 
 **Meiosis II** proceeds mechanistically like a mitotic division (no further DNA replication precedes it): sister chromatids separate at anaphase II, producing four haploid cells total.
 

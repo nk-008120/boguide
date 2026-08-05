@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Waggle Dance Decoder | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .layout { display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap; }
+  .col-panel { flex: 0 0 220px; }
+  .controls { flex: 1; min-width: 260px; }
+  label { font-size: 0.85rem; font-weight: 600; color: #334155; display:block; margin-bottom: 4px; margin-top: 12px; }
+  input[type=range] { width: 100%; }
+  .readout {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-top: 14px;
+    font-size: 0.92rem;
+  }
+  .readout b { color: #1d70a2; }
+  .note { font-size: 0.8rem; color: #4b5563; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Waggle Dance Decoder</h3>
+  <div class="subtitle">Set the sun's compass bearing and the dance angle on the comb — decode the real-world direction to the food source.</div>
+  <div class="layout">
+    <div class="col-panel">
+      <svg id="combSvg" viewBox="0 0 220 260" width="220" height="260">
+        <text x="110" y="16" text-anchor="middle" font-size="11" fill="#334155" font-weight="600">Vertical comb face</text>
+        <line x1="110" y1="30" x2="110" y2="230" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="4,4"/>
+        <text x="118" y="26" font-size="9" fill="#94a3b8">up</text>
+        <g id="danceGroup" transform="translate(110,180)">
+          <line id="danceLine" x1="0" y1="0" x2="0" y2="-70" stroke="#2d6a4f" stroke-width="4" stroke-linecap="round"/>
+          <path id="waggleZig" d="" stroke="#b45309" stroke-width="2" fill="none"/>
+        </g>
+        <circle cx="110" cy="180" r="4" fill="#1a472a"/>
+      </svg>
+    </div>
+    <div class="controls">
+      <label for="sunSlider">Sun's compass bearing: <span id="sunLabel">90°</span> (<span id="sunCompass">E</span>)</label>
+      <input type="range" id="sunSlider" min="0" max="359" value="90">
+
+      <label for="angleSlider">Dance angle from vertical: <span id="angleLabel">40°</span> (right of up)</label>
+      <input type="range" id="angleSlider" min="-180" max="180" value="40">
+
+      <label for="durSlider">Waggle run duration: <span id="durLabel">1.5s</span></label>
+      <input type="range" id="durSlider" min="0.3" max="4" step="0.1" value="1.5">
+
+      <div class="readout">
+        Food source direction: <b id="dirVal">130° (SE)</b><br>
+        Estimated distance: <b id="distVal">~750 m</b>
+      </div>
+      <div class="note">Rule: real-world bearing = sun's bearing + dance angle (clockwise positive). Duration-to-distance uses an illustrative ~500 m/second scale, not the exact honeybee calibration.</div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var sunSlider = document.getElementById('sunSlider');
+  var angleSlider = document.getElementById('angleSlider');
+  var durSlider = document.getElementById('durSlider');
+  var sunLabel = document.getElementById('sunLabel');
+  var angleLabel = document.getElementById('angleLabel');
+  var durLabel = document.getElementById('durLabel');
+  var dirVal = document.getElementById('dirVal');
+  var distVal = document.getElementById('distVal');
+  var danceLine = document.getElementById('danceLine');
+  var waggleZig = document.getElementById('waggleZig');
+
+  var compassNames = ['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSW','SW','WSW','W','WNW','NW','NNW'];
+  function compassName(deg){
+    var idx = Math.round(((deg % 360) + 360) % 360 / 22.5) % 16;
+    return compassNames[idx];
+  }
+
+  function drawZigzag(){
+    var pts = ['0,0'];
+    var steps = 6, amp = 8, len = 60;
+    for (var i = 1; i <= steps; i++){
+      var y = -i * (len/steps);
+      var x = (i % 2 === 0) ? 0 : (i % 4 === 1 ? amp : -amp);
+      pts.push(x + ',' + y);
+    }
+    waggleZig.setAttribute('d', 'M' + pts.join(' L'));
+  }
+
+  function update(){
+    var sun = parseInt(sunSlider.value, 10);
+    var angle = parseInt(angleSlider.value, 10);
+    var dur = parseFloat(durSlider.value);
+
+    sunLabel.textContent = sun + '°';
+    document.getElementById('sunCompass').textContent = compassName(sun);
+    angleLabel.textContent = angle + '°';
+    durLabel.textContent = dur.toFixed(1) + 's';
+
+    var direction = ((sun + angle) % 360 + 360) % 360;
+    dirVal.textContent = Math.round(direction) + '° (' + compassName(direction) + ')';
+
+    var distance = Math.round(dur * 500);
+    distVal.textContent = '~' + distance + ' m';
+
+    document.getElementById('danceGroup').setAttribute('transform', 'translate(110,180) rotate(' + angle + ')');
+    drawZigzag();
+  }
+
+  sunSlider.addEventListener('input', update);
+  angleSlider.addEventListener('input', update);
+  durSlider.addEventListener('input', update);
+
+  update();
+})();
+</script>
+</body>
+</html>
