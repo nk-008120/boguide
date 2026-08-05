@@ -448,3 +448,54 @@ html.dark .custom-tooltip-box .tooltip-link {
 html.dark .custom-tooltip-box .tooltip-link:hover {
   color: #1a1a1a;
 }
+
+/* ===================================================================
+   FAVOURITE THEME — lilac → sage diagonal gradient background
+   4th option in the theme toggle (light / dark / system / favourite),
+   see layouts/partials/theme-toggle.html + assets/js/{head,core}/theme.js.
+   Palette matches the reference lilac/sage design (diagonal 3-stop base
+   + two soft radial glows). Text/link/card/badge colors intentionally
+   stay Light mode's palette — only the page background and chrome
+   opacity change, so nothing here needs its own contrast pass.
+   =================================================================== */
+html.favourite body {
+  background:
+    radial-gradient(circle at 14% 10%, rgba(92, 122, 88, 0.32), transparent 52%),
+    radial-gradient(circle at 86% 90%, rgba(137, 101, 196, 0.30), transparent 52%),
+    linear-gradient(150deg, #eaf1e6 0%, #e3d9f0 52%, #f5edfa 100%);
+  background-attachment: fixed;
+}
+
+/* Sticky navbar: let the gradient show through instead of the usual ~85% opaque white */
+html.favourite .hextra-nav-container-blur {
+  background-color: rgba(255, 255, 255, 0.65) !important;
+}
+
+/* Mobile off-canvas sidebar is normally solid white; soften it to a frosted-glass look */
+@media (max-width: 48rem) {
+  html.favourite .hextra-sidebar-container {
+    background-color: rgba(255, 255, 255, 0.75) !important;
+    backdrop-filter: blur(10px);
+  }
+}
+
+/* Homepage paints its own background-image + white overlay directly on <body>
+   (see themes/hextra/layouts/baseof.html + .homepage-bg above) — swap the overlay
+   for transparent so the gradient reads through there too. */
+html.favourite .homepage-bg::before {
+  background-color: transparent;
+}
+
+/* Two sticky "chrome" footers ship with an opaque white fill + a shadow that fades to
+   solid white, meant to mask content scrolling out underneath a plain white sidebar/TOC:
+   - sidebar's theme-toggle bar (themes/hextra/layouts/_partials/sidebar.html, the
+     `data-toggle-animation="show"` wrapper)
+   - the TOC's bottom chrome — scroll-to-top button, plus tags/edit-link when enabled
+     (themes/hextra/layouts/_partials/toc.html, last child of `.hextra-scrollbar`)
+   Both stand out as blank white rectangles against the gradient, so remove the fill
+   and the fade entirely rather than trying to match the shadow color to the gradient. */
+html.favourite [data-toggle-animation="show"],
+html.favourite .hextra-toc .hextra-scrollbar > div {
+  background: transparent !important;
+  box-shadow: none !important;
+}
