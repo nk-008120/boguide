@@ -1,5 +1,5 @@
 ---  
-title: "Wildlife Ethology"  
+title: "P2 - Wildlife Ethology"  
 weight: 1  
 ---  
   

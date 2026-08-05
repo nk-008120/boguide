@@ -1,1 +1,18 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BiOGuide for Biology Olympiads – History of Life: Origin &amp; Major Transitions</title><link>https://boguide.vercel.app/resources/15-evolution/history-of-life-origin-and-major-transitions/</link><description>Recent content in History of Life: Origin &amp; Major Transitions on BiOGuide for Biology Olympiads</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://boguide.vercel.app/resources/15-evolution/history-of-life-origin-and-major-transitions/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BiOGuide for Biology Olympiads – History of Life: Origin &amp; Major Transitions</title>
+    <link>http://localhost:1313/resources/15-evolution/history-of-life-origin-and-major-transitions/</link>
+    <description>Recent content in History of Life: Origin &amp; Major Transitions on BiOGuide for Biology Olympiads</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="http://localhost:1313/resources/15-evolution/history-of-life-origin-and-major-transitions/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>
