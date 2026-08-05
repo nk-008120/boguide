@@ -122,6 +122,9 @@ theme = "hextra"
   # Image zoom
   [params.imageZoom]
     enable = true
+  [params.theme]
+    default = "favourite"
+    allowUserToggle = "True"
   # Footer
   [params.footer]
     copyright = "© 2026 BioGuide for IBO Vilnius"

@@ -2,7 +2,7 @@
 // Project override of themes/hextra/assets/js/core/theme.js — adds "favourite" as a real,
 // manually-selectable theme (not resolved via prefers-color-scheme like "system" is).
 (function () {
-  const defaultTheme = 'system'
+  const defaultTheme = 'favourite'
   const themes = ["light", "dark", "favourite"];
 
   const themeToggleButtons = document.querySelectorAll(".hextra-theme-toggle");

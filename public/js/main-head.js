@@ -14,7 +14,7 @@ function setTheme(theme) {
   document.documentElement.style.colorScheme = theme === "favourite" ? "light" : theme;
 }
 
-setTheme("color-theme" in localStorage ? localStorage.getItem("color-theme") : 'system')
+setTheme("color-theme" in localStorage ? localStorage.getItem("color-theme") : 'favourite')
 
 ;
 // The section must not be in the banner.js (body) file because it can create a quick flash.
