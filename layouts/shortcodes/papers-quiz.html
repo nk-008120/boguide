@@ -1,33 +1,29 @@
-{{- /* Self-contained True/False attempt-and-mark quiz.
-     Usage:
-       {{< tf-quiz id="q1" >}}
-       A|Statement text|true|One-sentence explanation shown after checking.
-       B|Statement text|false|One-sentence explanation shown after checking.
-       {{< /tf-quiz >}}
-     Each line: letter|statement|true-or-false|explanation. Raw (non-markdown)
-     inner content — angle-bracket shortcode, so .Inner is used as-is. */ -}}
-{{- $id := .Get "id" | default "quiz" -}}
-{{- $raw := trim .Inner "\n" -}}
-{{- $lines := split $raw "\n" -}}
-<div class="tf-quiz-wrap" data-quiz-id="{{ $id }}">
+{{- /* Attempt-and-mark True/False quiz, data-driven from data/papers/<ol>/<year>.yaml.
+     Usage: {{< papers-quiz olympiad="ibo" year="2022" round="theoretical-1" problem="q1" >}}
+     Looks up problems[].statements (letter/text/answer/explanation) for the given
+     problem id — single source of truth shared with any future exam/attempt mode. */ -}}
+{{- $olId := .Get "olympiad" -}}
+{{- $yearId := .Get "year" -}}
+{{- $roundId := .Get "round" -}}
+{{- $problemId := .Get "problem" -}}
+{{- $ol := index hugo.Data.papers $olId -}}
+{{- $yearData := index $ol $yearId -}}
+{{- $round := dict -}}
+{{- range $yearData.rounds }}{{ if eq .id $roundId }}{{ $round = . }}{{ end }}{{ end -}}
+{{- $problem := dict -}}
+{{- range $round.problems }}{{ if eq .id $problemId }}{{ $problem = . }}{{ end }}{{ end -}}
+{{- $statements := $problem.statements -}}
+<div class="tf-quiz-wrap" data-quiz-id="{{ $olId }}-{{ $yearId }}-{{ $roundId }}-{{ $problemId }}">
   <div class="tf-quiz">
-    {{- range $lines }}
-      {{- $line := trim . " " -}}
-      {{- if $line -}}
-        {{- $parts := split $line "|" -}}
-        {{- $letter := index $parts 0 -}}
-        {{- $statement := index $parts 1 -}}
-        {{- $answer := index $parts 2 -}}
-        {{- $explanation := index $parts 3 -}}
-    <div class="tf-quiz-row" data-answer="{{ $answer }}" data-explanation="{{ $explanation }}">
-      <div class="tf-quiz-statement"><span class="tf-quiz-letter">{{ $letter }}.</span> {{ $statement }}</div>
-      <div class="tf-quiz-toggle" role="group" aria-label="Statement {{ $letter }}">
+    {{- range $statements }}
+    <div class="tf-quiz-row" data-answer="{{ .answer }}" data-explanation="{{ .explanation }}">
+      <div class="tf-quiz-statement"><span class="tf-quiz-letter">{{ .letter }}.</span> {{ .text }}</div>
+      <div class="tf-quiz-toggle" role="group" aria-label="Statement {{ .letter }}">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
     </div>
-      {{- end -}}
     {{- end }}
   </div>
   <div class="tf-quiz-actions">

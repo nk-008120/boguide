@@ -26,12 +26,8 @@ Images next to the graph below illustrate immunostaining patterns for junctional
 
 Based on the data provided, indicate whether the following statements are true or false:
 
-{{< tf-quiz id="ibo2022-t1-q9" >}}
-A|The most likely consequence of increased barrier permeability in vivo is increased blood oxygen saturation.|false|A leakier alveolar-capillary barrier means fluid and protein cross into the alveolar air space (oedema) — that impairs gas exchange, so it would be expected to *decrease*, not increase, blood oxygen saturation.
-B|Occludin staining works as a secondary marker to show increased gaps between endothelial cells and as such must be nearly identical to the VE-cadherin staining.|false|Occludin marks epithelial tight junctions and VE-cadherin marks endothelial adherens junctions — they're different junction proteins in different cell layers imaged separately (Epi vs. Endo panels), so there's no reason to expect their staining patterns to match.
-C|Cyclic stretch was used to simulate repetitive breathing patterns and not to mimic repetitive arterial pressure pulsations.|true|This is a lung/alveolar model — the mechanical strain applied by the chip's vacuum channels represents the alveolar wall stretching and relaxing with each breath, not the pulsing of blood vessels.
-D|Under conditions of cyclic stretch and the presence of IL-2, the addition of albumin into culture media should not affect the volume of fluid leaving the lower chamber reflecting the oedema model.|true|Under strain + IL-2 the barrier is already substantially compromised (as the permeability graph shows) — once it's this leaky, fluid movement is dominated by the barrier breakdown itself rather than by the oncotic pressure gradient albumin would normally help maintain, so adding albumin isn't expected to meaningfully change the fluid volume crossing it.
-{{< /tf-quiz >}}
+{{< papers-quiz olympiad="ibo" year="2022" round="theoretical-1" problem="q9" >}}
+{{< papers-problem-nav olympiad="ibo" year="2022" round="theoretical-1" problem="q9" >}}
 
 ---
 

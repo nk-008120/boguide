@@ -15,12 +15,8 @@ The following curves show the effect of substrate concentration on the rate of a
 
 Choose whether the following statements about Sections 1, 2, 3, and 4 of the enzymatic reactions are true or false:
 
-{{< tf-quiz id="ibo2022-t1-q4" >}}
-A|Section 1 is limited by (or depends on) enzyme concentration.|false|Section 1 is the linear rise where rate increases with substrate concentration — that's substrate-limited, not enzyme-limited. Enzyme-concentration limitation is what causes the *plateau*, not the rising part.
-B|Section 2 is limited by enzyme concentration.|true|At the plateau (Vmax), every enzyme molecule is already saturated with substrate — adding more substrate can't raise the rate further, only adding more enzyme could. That's the definition of being enzyme-limited.
-C|Section 3 is limited by a competitive inhibitor.|true|Section 3 still reaches the same plateau as the uninhibited curve once substrate concentration is high enough — the classic signature of competitive inhibition, since enough substrate can out-compete the inhibitor for the active site.
-D|Section 4 is limited by an uncompetitive inhibitor.|true|Section 4 plateaus at a *lower* rate and never catches up to the uninhibited curve, even at high substrate — unlike competitive inhibition, more substrate can't overcome this inhibitor, consistent with it acting somewhere substrate concentration can't rescue.
-{{< /tf-quiz >}}
+{{< papers-quiz olympiad="ibo" year="2022" round="theoretical-1" problem="q4" >}}
+{{< papers-problem-nav olympiad="ibo" year="2022" round="theoretical-1" problem="q4" >}}
 
 ---
 

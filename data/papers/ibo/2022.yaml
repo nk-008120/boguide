@@ -19,6 +19,24 @@ rounds:
             link: "/resources/1-cell-molecular/protein-structure-folding-function/"
           - name: "Biomolecular Analytical Techniques"
             link: "/resources/1-cell-molecular/biomolecular-analytical-techniques/"
+        statements:
+          - letter: "A"
+            text: "R1 contains the highest number of nucleotides among the examined viral RNAs."
+            answer: true
+            explanation: "In gel electrophoresis, larger nucleic acids migrate more slowly. R1 runs closest to the wells, so it is the largest fragment."
+          - letter: "B"
+            text: "The results of gel electrophoresis do NOT contradict the proposed hypothesis."
+            answer: true
+            explanation: "atalkbh9b mutants show far weaker viral RNA bands than WT at both time points — consistent with atALKBH9B being needed for AMV to overcome the host's methylation-based antiviral defence."
+          - letter: "C"
+            text: "The results indicate that atALKBH9B directly demethylates viral RNAs."
+            answer: false
+            explanation: "The gel only shows a downstream replication phenotype. Demonstrating direct demethylation would need a molecular assay (e.g. m6A mapping), not just an RNA abundance readout."
+          - letter: "D"
+            text: "A drug suppressing the atALKBH9B activity may prevent viral RNA methylation in AMV-infected plant cells."
+            answer: false
+            explanation: "atALKBH9B removes methyl groups. Suppressing it would leave viral RNA more methylated, not less — the opposite of what the statement claims."
+
       - id: q2
         number: "Q2"
         name: "Enzyme Kinetics — Time to Completion vs Temperature"
@@ -26,6 +44,24 @@ rounds:
         subjects:
           - name: "Enzyme Kinetics & Regulation"
             link: "/resources/1-cell-molecular/enzyme-kinetics-regulation/"
+        statements:
+          - letter: "A"
+            text: "Graph 1 (U-shaped: high time at low temperature, falling to a minimum around 25–30°C, then rising sharply toward 50°C)."
+            answer: true
+            explanation: "This is the expected shape: the reaction speeds up (less time) as temperature rises toward the optimum, then slows and eventually can't complete at all as the enzyme denatures approaching 50°C."
+          - letter: "B"
+            text: "Graph 2 (bell-shaped: low time at the extremes, peaking around 30–40°C)."
+            answer: false
+            explanation: "The y-axis is time, so a peak at the 'optimal' temperature would mean the reaction is slowest there — backwards from what actually happens at an enzyme's optimum."
+          - letter: "C"
+            text: "Graph 3 (a straight line, time increasing steadily across the whole range)."
+            answer: false
+            explanation: "This implies the reaction gets slower and slower from the very lowest temperature onward, with no speed-up phase at all on the way to the optimum — contradicts typical enzyme behaviour below the optimum."
+          - letter: "D"
+            text: "Graph 4 (a straight line, time decreasing steadily all the way to 50°C)."
+            answer: false
+            explanation: "This implies the reaction keeps getting faster right up to 50°C. But the enzyme is fully denatured at exactly 50°C, so the reaction shouldn't be able to complete at all there — time should shoot up, not reach its lowest value."
+
       - id: q3
         number: "Q3"
         name: "Amylase Activity — Starch Hydrolysis at 50–70°C"
@@ -35,6 +71,24 @@ rounds:
             link: "/resources/1-cell-molecular/enzyme-kinetics-regulation/"
           - name: "Carbohydrate Chemistry & Biology"
             link: "/resources/1-cell-molecular/carbohydrate-chemistry-biology/"
+        statements:
+          - letter: "A"
+            text: "50°C is the optimal temperature for the initial activity of amylase."
+            answer: false
+            explanation: "The 70°C curve has the steepest initial slope, meaning the initial rate is actually highest at 70°C, not 50°C — 50°C only wins on total glucose produced by 60 minutes, because the enzyme stays active longer there."
+          - letter: "B"
+            text: "At 60°C, all starch is hydrolyzed after 30 minutes."
+            answer: false
+            explanation: "The curve plateauing just means glucose production has stopped (denaturation or substrate exhaustion) — without knowing the total starch present at the start, the plateau alone can't confirm that 100% of it was hydrolysed."
+          - letter: "C"
+            text: "At 70°C amylase is denatured before hydrolysis is complete."
+            answer: true
+            explanation: "The 70°C curve plateaus earliest and at the lowest final glucose level of the three — consistent with the enzyme losing activity (denaturing) quickly, well before all the available starch has been broken down."
+          - letter: "D"
+            text: "The initial reaction rate of starch hydrolysis at 60°C is higher than at 70°C."
+            answer: false
+            explanation: "It's the reverse: the 70°C curve has the steeper initial slope of the two, so its initial rate is higher, not lower, than 60°C's."
+
       - id: q4
         number: "Q4"
         name: "Enzyme Inhibition — Substrate Concentration vs Rate Curves"
@@ -42,6 +96,24 @@ rounds:
         subjects:
           - name: "Enzyme Kinetics & Regulation"
             link: "/resources/1-cell-molecular/enzyme-kinetics-regulation/"
+        statements:
+          - letter: "A"
+            text: "Section 1 is limited by (or depends on) enzyme concentration."
+            answer: false
+            explanation: "Section 1 is the linear rise where rate increases with substrate concentration — that's substrate-limited, not enzyme-limited. Enzyme-concentration limitation is what causes the plateau, not the rising part."
+          - letter: "B"
+            text: "Section 2 is limited by enzyme concentration."
+            answer: true
+            explanation: "At the plateau (Vmax), every enzyme molecule is already saturated with substrate — adding more substrate can't raise the rate further, only adding more enzyme could. That's the definition of being enzyme-limited."
+          - letter: "C"
+            text: "Section 3 is limited by a competitive inhibitor."
+            answer: true
+            explanation: "Section 3 still reaches the same plateau as the uninhibited curve once substrate concentration is high enough — the classic signature of competitive inhibition, since enough substrate can out-compete the inhibitor for the active site."
+          - letter: "D"
+            text: "Section 4 is limited by an uncompetitive inhibitor."
+            answer: true
+            explanation: "Section 4 plateaus at a lower rate and never catches up to the uninhibited curve, even at high substrate — unlike competitive inhibition, more substrate can't overcome this inhibitor, consistent with it acting somewhere substrate concentration can't rescue."
+
       - id: q5
         number: "Q5"
         name: "Meselson–Stahl Experiment — DNA Replication Modes"
@@ -49,6 +121,24 @@ rounds:
         subjects:
           - name: "DNA Structure & Replication"
             link: "/resources/1-cell-molecular/dna-structure-replication/"
+        statements:
+          - letter: "A"
+            text: "Curve A corresponds to semi-conservative DNA replication."
+            answer: false
+            explanation: "No replication mode can increase the heavy-DNA percentage over generations grown in ¹⁴N medium — no new ¹⁵N is being added to the system, so a rising curve doesn't match any real replication mode, semiconservative included."
+          - letter: "B"
+            text: "Curve B corresponds to dispersive DNA replication."
+            answer: false
+            explanation: "Dispersive replication (each new strand a patchwork of old and new DNA) still predicts continued dilution of the heavy label generation after generation — a curve that flatlines at 50% forever doesn't fit that pattern."
+          - letter: "C"
+            text: "Curve C corresponds to semi-conservative DNA replication."
+            answer: true
+            explanation: "Semiconservative replication predicts the heavy-DNA fraction halving every generation (100% → 50% → 25% → 12.5% → 6.25% → 3.125%), because each new duplex keeps exactly one old (heavy) strand — Curve C's smooth halving decline matches this exactly."
+          - letter: "D"
+            text: "Curve D corresponds to conservative DNA replication."
+            answer: false
+            explanation: "Conservative replication (the original heavy duplex stays fully intact) predicts the heavy fraction shrinking gradually as a proportion of the growing pool of new light DNA — not vanishing to ~0% within just 2–3 generations the way Curve D does."
+
       - id: q6
         number: "Q6"
         name: "Cell Membrane Transport — Arrows X, Y, Z"
@@ -56,6 +146,24 @@ rounds:
         subjects:
           - name: "Plasma Membrane Structure & Transport"
             link: "/resources/1-cell-molecular/plasma-membrane-structure-transport/"
+        statements:
+          - letter: "A"
+            text: "Vitamin D can be transported through X."
+            answer: true
+            explanation: "Vitamin D is a small, lipophilic (fat-soluble) steroid-derived molecule, so it can dissolve directly through the phospholipid bilayer without needing a channel or carrier protein — consistent with path X."
+          - letter: "B"
+            text: "Sodium and potassium ions can be transported through X."
+            answer: false
+            explanation: "Na⁺ and K⁺ are charged and strongly hydrated, so they can't cross the hydrophobic lipid bilayer directly — they need a dedicated channel or pump protein, not the direct-diffusion path X."
+          - letter: "C"
+            text: "Large native globular proteins can be transported through Y."
+            answer: false
+            explanation: "A folded globular protein is far too large to pass through an ordinary membrane channel like Y — proteins that size cross membranes via vesicular transport (e.g. exocytosis/endocytosis), not through a channel pore."
+          - letter: "D"
+            text: "Water can be transported through Z."
+            answer: true
+            explanation: "Z is drawn as a wide, paired-loop channel — the structure typical of an aquaporin, the dedicated water-channel protein family that allows bulk water flow across the membrane."
+
       - id: q7
         number: "Q7"
         name: "Apoptosis — p53/Bax/Bcl-2 Pathway Under Hypoxia"
@@ -63,6 +171,24 @@ rounds:
         subjects:
           - name: "Cell Junctions, Extracellular Matrix & Cell Death"
             link: "/resources/1-cell-molecular/cell-junctions-ecm-cell-death/"
+        statements:
+          - letter: "A"
+            text: "Hypoxia in cancer cells suppresses apoptosis."
+            answer: false
+            explanation: "The diagram shows hypoxia inhibiting p53 specifically, which would reduce apoptosis through this one pathway — but that's a single mechanism, not proof of the sweeping claim that hypoxia suppresses apoptosis generally. Treat this as the official key's call rather than a fully resolved mechanistic story."
+          - letter: "B"
+            text: "Upon Bcl-2 overexpression, the integrity of the mitochondrial membranes is preserved, which in return prevents apoptosis."
+            answer: true
+            explanation: "The diagram shows Bcl-2 directly inhibiting Bax. Since Bax is what triggers mitochondrial outer membrane permeabilization, more Bcl-2 means more Bax blocked, keeping mitochondria intact and stopping cytochrome c release."
+          - letter: "C"
+            text: "It is necessary to suppress p53 to ensure the apoptosis of cancer cells."
+            answer: true
+            explanation: "Read literally against the diagram this is hard to square — p53 is shown driving apoptosis via Bax, so suppressing it looks like it should hinder, not 'ensure,' apoptosis. We're reproducing the official key's answer as-is rather than a mechanistic explanation we're fully confident in; worth double-checking against the original if it matters for your prep."
+          - letter: "D"
+            text: "Deficiency of Bax protein promotes apoptosis."
+            answer: false
+            explanation: "Bax is the pro-apoptotic trigger in this pathway (it causes mitochondrial cytochrome c release) — losing Bax would remove that trigger and reduce apoptosis, not promote it."
+
       - id: q8
         number: "Q8"
         name: "Ethidium Bromide — DNA Binding and Intercalation"
@@ -72,6 +198,24 @@ rounds:
             link: "/resources/1-cell-molecular/dna-structure-replication/"
           - name: "Nucleotide & Nucleic Acid Chemistry"
             link: "/resources/1-cell-molecular/nucleotide-nucleic-acid-chemistry/"
+        statements:
+          - letter: "A"
+            text: "The study of complexes between ethidium bromide and DNA allows for the detection of major structural DNA damage caused by different stressful situations."
+            answer: true
+            explanation: "Ethidium bromide's fluorescence depends on how well it can intercalate — structural DNA damage changes how much and how well EtBr binds, which is exactly why EtBr fluorescence assays are used to probe DNA integrity."
+          - letter: "B"
+            text: "When ethidium bromide is intercalated into a DNA molecule, the base pairs move away from each other to make space for the inserted molecule."
+            answer: true
+            explanation: "Intercalation works by the flat aromatic EtBr ring wedging in between adjacent base pairs, which locally unwinds and stretches the helix — the base pairs do separate further apart to accommodate it."
+          - letter: "C"
+            text: "In the intercalation shown in Figure 2B, the bases are displaced by overexertion while simultaneously the helix contracts along its axis. This ensures the DNA sugar-phosphate backbone does not rupture during the overexertion."
+            answer: true
+            explanation: "Intercalation is a non-covalent, reversible distortion of the helix — the structure absorbs the strain by locally unwinding/adjusting rather than breaking any covalent bonds, which is exactly why EtBr staining doesn't damage the DNA backbone."
+          - letter: "D"
+            text: "The plane of the intercalated ethidium bromide molecule is approximately parallel to the axis of the DNA helix and perpendicular to the plane of the bases."
+            answer: false
+            explanation: "It's the other way around: the flat EtBr ring stacks parallel to the base pairs (so it can fit between them) and therefore roughly perpendicular to the helix axis, not parallel to it."
+
       - id: q9
         number: "Q9"
         name: "Organ-on-a-Chip — Lung-on-a-Chip & Pulmonary Oedema Model"
@@ -81,6 +225,24 @@ rounds:
             link: "/resources/1-cell-molecular/cell-junctions-ecm-cell-death/"
           - name: "Recombinant DNA & Biotechnology Techniques"
             link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
+        statements:
+          - letter: "A"
+            text: "The most likely consequence of increased barrier permeability in vivo is increased blood oxygen saturation."
+            answer: false
+            explanation: "A leakier alveolar-capillary barrier means fluid and protein cross into the alveolar air space (oedema) — that impairs gas exchange, so it would be expected to decrease, not increase, blood oxygen saturation."
+          - letter: "B"
+            text: "Occludin staining works as a secondary marker to show increased gaps between endothelial cells and as such must be nearly identical to the VE-cadherin staining."
+            answer: false
+            explanation: "Occludin marks epithelial tight junctions and VE-cadherin marks endothelial adherens junctions — different proteins in different cell layers imaged separately, so there's no reason to expect their staining patterns to match."
+          - letter: "C"
+            text: "Cyclic stretch was used to simulate repetitive breathing patterns and not to mimic repetitive arterial pressure pulsations."
+            answer: true
+            explanation: "This is a lung/alveolar model — the mechanical strain applied by the chip's vacuum channels represents the alveolar wall stretching and relaxing with each breath, not the pulsing of blood vessels."
+          - letter: "D"
+            text: "Under conditions of cyclic stretch and the presence of IL-2, the addition of albumin into culture media should not affect the volume of fluid leaving the lower chamber reflecting the oedema model."
+            answer: true
+            explanation: "Under strain + IL-2 the barrier is already substantially compromised — once it's this leaky, fluid movement is dominated by the barrier breakdown itself rather than by the oncotic pressure gradient albumin would normally help maintain."
+
       - id: q10
         number: "Q10"
         name: "3D Bioprinting — Cell Viability, Bioluminescence, and Confocal Imaging"
@@ -90,3 +252,536 @@ rounds:
             link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
           - name: "Biomolecular Analytical Techniques"
             link: "/resources/1-cell-molecular/biomolecular-analytical-techniques/"
+        statements:
+          - letter: "A"
+            text: "After one week of culture, the relative percentage of myocytes in tissue constructs printed using bioink with 50–50% myocyte-fibroblast content will be decreased."
+            answer: true
+            explanation: "The graph shows myocyte-laden constructs losing bioluminescence (viability) faster than fibroblast-laden ones at the same pressures — in a mixed construct, that means myocytes are expected to survive and proliferate worse, shrinking their relative share over time."
+          - letter: "B"
+            text: "The most likely meaning of the negative values on the y-scale is decreased cell proliferation."
+            answer: false
+            explanation: "Bioluminescence tracks intracellular ATP, i.e. viability/metabolic activity — a negative change in it most directly reflects cells dying or losing viability, a distinct process from reduced proliferation."
+          - letter: "C"
+            text: "The most likely meaning of the zero values on the y-scale is decreased cell viability."
+            answer: false
+            explanation: "The axis is the daily change in bioluminescence, not its absolute level — a value of zero means no change from the day before (stable viability), not that viability itself is low."
+          - letter: "D"
+            text: "A staining for actin in red and for DNA in blue would lead to the confocal images presented."
+            answer: true
+            explanation: "The images show a red filamentous/cytoskeletal network (matching an actin stain) and blue nuclear staining (matching a DNA stain like DAPI) — the standard actin-red/DNA-blue immunofluorescence convention."
+
+      - id: q11
+        number: "Q11"
+        name: "Heart Decellularization — Fish vs. Rat Cannulation"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=17"
+        subjects:
+          - name: "Human Circulatory System"
+            link: "/resources/2-animal-anatomy/human-circulatory-system/"
+          - name: "Recombinant DNA & Biotechnology Techniques"
+            link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
+        statements:
+          - letter: "A"
+            text: "The differences in cannulation are due to different numbers of heart chambers between the two species."
+            answer: false
+            explanation: "The cannulation approach follows the specific vessel/outflow anatomy of each species (e.g. a single outflow tract in fish vs. separate great vessels in mammals) rather than simply chamber count."
+          - letter: "B"
+            text: "In mammals, entrances to major coronary vessels are found right behind the cusps of the aortic valve."
+            answer: true
+            explanation: "The coronary ostia sit in the aortic sinuses, just behind (superior to) the aortic valve cusps — the standard anatomical origin point of the coronary arteries."
+          - letter: "C"
+            text: "Cannulation of fish heart for efficient decellularization can be accomplished by inserting perfusion cannula into bulbus arteriosus (cardiac outflow tract)."
+            answer: false
+            explanation: "The question stem specifies cannulating the coronary sinus, a venous inflow structure — the bulbus arteriosus is an arterial outflow structure, so it doesn't match the described (inflow-based) perfusion method."
+          - letter: "D"
+            text: "The soap solution has ability to destabilize the cell membrane and have the same properties like decellularization reagent."
+            answer: true
+            explanation: "Soap-like surfactants disrupt lipid membranes the same way the detergent-based decellularization reagent described in the question does."
+
+      - id: q12
+        number: "Q12"
+        name: "iPSC/hESC Cardiomyocyte Grafts After Myocardial Infarction"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=18"
+        subjects:
+          - name: "Recombinant DNA & Biotechnology Techniques"
+            link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
+          - name: "Cardiovascular Physiology"
+            link: "/resources/3-animal-physiology/cardiovascular-physiology/"
+        statements:
+          - letter: "A"
+            text: "Assuming ~1/3 of a 120 g left ventricle is lost to a typical infarction, and an average cardiac myocyte size as given, the closest order of magnitude of new cells needed is 10⁹."
+            answer: true
+            explanation: "This is an order-of-magnitude estimate: divide the lost myocardial mass by the volume (via density) of a single cardiomyocyte — we're reproducing the official answer's order of magnitude rather than re-deriving the exact arithmetic, since the cell-dimension figures were partly lost to text extraction from the source PDF."
+          - letter: "B"
+            text: "Although grafted cells are of human origin, the host animals do not require immunosuppression because transplanted cells were derived from embryonic stem cells."
+            answer: false
+            explanation: "Embryonic origin doesn't grant immune privilege in an unrelated host — allogeneic (non-self) human cells transplanted into another animal still trigger immune rejection regardless of the stem cell source, so immunosuppression would still be needed."
+          - letter: "C"
+            text: "Protein identified by blue pseudocolour, abundant in heart scar, is also the most common component of connective tissue."
+            answer: true
+            explanation: "Cardiac scar tissue is predominantly collagen (type I), and collagen is indeed the most abundant protein in connective tissue generally."
+          - letter: "D"
+            text: "Grafted cardiac myocytes within the host heart can be identified by staining for a cardiac isoform of troponin T."
+            answer: true
+            explanation: "Cardiac troponin T is a standard, specific marker of cardiomyocyte identity used routinely in histology/immunohistochemistry."
+
+      - id: q13
+        number: "Q13"
+        name: "3D Skin Substitute — Layered Tissue Engineering"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=20"
+        subjects:
+          - name: "Recombinant DNA & Biotechnology Techniques"
+            link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
+          - name: "Human Integumentary System"
+            link: "/resources/2-animal-anatomy/human-integumentary-system/"
+        statements:
+          - letter: "A"
+            text: "Layer 1 corresponds to the lamina of basal membrane."
+            answer: false
+            explanation: "Layer 1 is the thin outermost band, consistent with the fibronectin/gelatin extracellular-matrix film mentioned in the question stem — the basal lamina proper sits deeper, at the epidermal-dermal junction (layer 3), not at the very top."
+          - letter: "B"
+            text: "Red arrows in Fig.C point to a newly formed vasculature."
+            answer: false
+            explanation: "Fig. C stains for laminin, a basement-membrane component, not a vascular marker — the vasculature-specific marker in this experiment is PECAM1, shown in Fig. D instead."
+          - letter: "C"
+            text: "Endothelial cells and fibroblasts are the key components of layer 4."
+            answer: true
+            explanation: "Layer 4 is the deep bulk layer where PECAM1⁺ endothelial structures (Fig. D) are concentrated — consistent with it being the dermal-equivalent layer built from fibroblasts and forming vasculature."
+          - letter: "D"
+            text: "Keratinocytes and laminin are major components of layer 3."
+            answer: false
+            explanation: "Layer 3 is the thin basement-membrane-like band where laminin concentrates, but keratinocytes sit above it in layer 2 — they aren't a major component of layer 3 itself."
+
+      - id: q14
+        number: "Q14"
+        name: "Water Potential — Osmosis Between Three Plant Cells"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=22"
+        subjects:
+          - name: "Water Transport & Transpiration"
+            link: "/resources/5-plant-physiology/water-transport-transpiration/"
+        statements:
+          - letter: "A"
+            text: "Figure 1 correctly depicts the direction of water movement due to osmosis."
+            answer: false
+            explanation: "Water moves from higher (less negative) to lower (more negative) water potential — every arrow in Figure 1 runs the wrong way between the −800 kPa, −1000 kPa, and −1200 kPa cells."
+          - letter: "B"
+            text: "Figure 2 correctly depicts the direction of water movement due to osmosis."
+            answer: false
+            explanation: "Figure 2 gets one of the three arrows pointing correctly toward the more negative cell, but not all of them — since not every arrow is consistent with water moving toward lower water potential, the figure as a whole is incorrect."
+          - letter: "C"
+            text: "Figure 3 correctly depicts the direction of water movement due to osmosis."
+            answer: true
+            explanation: "This is the official key's call. Water should move from −800 kPa toward −1200 kPa and from −1000 kPa toward −1200 kPa, and from −800 kPa toward −1000 kPa — we found this figure's arrows genuinely difficult to reconcile arrow-by-arrow with that rule from the scanned diagram, so treat the official TRUE as authoritative rather than our own worked derivation here."
+          - letter: "D"
+            text: "Figure 4 correctly depicts the direction of water movement due to osmosis."
+            answer: false
+            explanation: "This is the official key's call, reproduced as-is — our own reading of Figure 4's arrows (all pointing toward the most negative cell) looked consistent with correct water-potential-driven flow, which is the opposite of what FALSE implies, so this one is worth checking against the original paper rather than trusting our explanation."
+
+      - id: q15
+        number: "Q15"
+        name: "Plant Life Cycle — Heterospory and Gametophyte Forms"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=23"
+        subjects:
+          - name: "Plant Body Plans Across Major Lineages"
+            link: "/resources/6-plant-anatomy/plant-body-plans-major-lineages/"
+        statements:
+          - letter: "A"
+            text: "The plant is heterosporous."
+            answer: false
+            explanation: "A heterosporous life cycle produces two distinct spore types (micro- and megaspores) developing into separate male and female gametophytes — the official key marks this life cycle as not fitting that pattern."
+          - letter: "B"
+            text: "The figure depicts the life cycle of a lycophyte."
+            answer: false
+            explanation: "The depicted life cycle doesn't match the lycophyte pattern per the official key — treat the diagram's specific group identity as the authoritative source over this summary."
+          - letter: "C"
+            text: "The gametophyte of this plant develops in two forms."
+            answer: true
+            explanation: "A dimorphic (two-form) gametophyte stage is consistent with the life cycle shown — matching plants where the gametophyte generation isn't a single uniform structure."
+          - letter: "D"
+            text: "The sporophyte of this plant is capable of living independently."
+            answer: false
+            explanation: "In this life cycle the sporophyte remains dependent (e.g. on the gametophyte) rather than growing as a free-living, independent plant — unlike, say, ferns, where the sporophyte is the dominant independent phase."
+
+      - id: q16
+        number: "Q16"
+        name: "Flower Structure — Symmetry, Pollination, and Calyx"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=24"
+        subjects:
+          - name: "Flower Anatomy & Reproductive Structures"
+            link: "/resources/6-plant-anatomy/flower-anatomy-reproductive-structures/"
+        statements:
+          - letter: "A"
+            text: "This is a zygomorphic flower."
+            answer: true
+            explanation: "A zygomorphic (bilaterally symmetric) flower has only one plane of symmetry, unlike a radially symmetric (actinomorphic) flower — the figure's floral structure matches the bilateral pattern."
+          - letter: "B"
+            text: "This flower belongs to a plant pollinated by wind."
+            answer: true
+            explanation: "The floral structure shown is consistent with wind-pollination traits (e.g. reduced, inconspicuous petals rather than showy ones built to attract animal pollinators)."
+          - letter: "C"
+            text: "This flower does not have a double calyx."
+            answer: true
+            explanation: "A double calyx (an epicalyx, an extra whorl of bract-like parts outside the true sepals) isn't present in this flower's structure as drawn."
+          - letter: "D"
+            text: "This is a cleistogamous flower (i.e. does not open)."
+            answer: false
+            explanation: "Cleistogamous flowers self-pollinate without ever opening — nothing in the figure indicates that; it's drawn with the normal open floral structure used to assess symmetry and parts."
+
+      - id: q17
+        number: "Q17"
+        name: "Plant Organ Modifications — Shoot vs. Leaf Origin"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=25"
+        subjects:
+          - name: "Stem Anatomy"
+            link: "/resources/6-plant-anatomy/stem-anatomy/"
+          - name: "Leaf Anatomy"
+            link: "/resources/6-plant-anatomy/leaf-anatomy/"
+        statements:
+          - letter: "A"
+            text: "I, II, IV are modifications of the shoot."
+            answer: false
+            explanation: "IV is a compound-leaf tendril (the terminal leaflets coiling into a tendril, as in pea plants) — a leaf modification, not a shoot one — so grouping it with I and II as 'shoot' modifications doesn't hold."
+          - letter: "B"
+            text: "III, IV are modifications of the leaf."
+            answer: true
+            explanation: "Both structures originate from leaf tissue (IV's tendril forms from terminal leaflets; III likewise traces to leaf-derived tissue), consistent with a leaf-modification grouping."
+          - letter: "C"
+            text: "II, V, VI are modifications of the leaf."
+            answer: false
+            explanation: "II, V, and VI collectively trace back to shoot (stem-axis) tissue rather than leaf tissue — see D."
+          - letter: "D"
+            text: "II, V, VI are modifications of the shoot."
+            answer: true
+            explanation: "V in particular is a classic stem thorn (a hardened, leafless branch arising from the stem axis, as in citrus) — consistent with II, V, and VI all being shoot-derived structures."
+
+      - id: q18
+        number: "Q18"
+        name: "Mycorrhizal Symbiosis — Ecto-, Endo-, and Ectendomycorrhiza"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=26"
+        subjects:
+          - name: "Root Anatomy"
+            link: "/resources/6-plant-anatomy/root-anatomy/"
+          - name: "Mineral Nutrition & Nutrient Uptake"
+            link: "/resources/5-plant-physiology/mineral-nutrition-nutrient-uptake/"
+        statements:
+          - letter: "A"
+            text: "Diagram (a) shows ectomycorrhiza."
+            answer: true
+            explanation: "Diagram (a) shows fungal hyphae forming an external mantle and Hartig net around the root without penetrating into cortex cells — the defining feature of ectomycorrhiza."
+          - letter: "B"
+            text: "Diagram (b) shows endomycorrhiza."
+            answer: true
+            explanation: "Diagram (b) shows hyphae penetrating into root cortex cells to form arbuscules and vesicles — the defining feature of (arbuscular) endomycorrhiza."
+          - letter: "C"
+            text: "Diagram (c) shows ectendomycorrhiza."
+            answer: true
+            explanation: "Diagram (c) shows a pattern intermediate between (a) and (b) — an external hyphal presence combined with some intracellular penetration, matching the mixed ectendomycorrhizal type."
+          - letter: "D"
+            text: "One of the diagrams indicates a symbiosis of nitrogen-fixing bacteria and plant."
+            answer: false
+            explanation: "All three diagrams show fungal (mycorrhizal) symbioses — nitrogen-fixing rhizobia are bacteria forming root nodules, a completely different symbiosis not depicted here."
+
+      - id: q19
+        number: "Q19"
+        name: "Plant Life Cycles — Water-Dependent Fertilization"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=28"
+        subjects:
+          - name: "Plant Body Plans Across Major Lineages"
+            link: "/resources/6-plant-anatomy/plant-body-plans-major-lineages/"
+        statements:
+          - letter: "A"
+            text: "Fertilization in the presence of water occurs in Species I."
+            answer: true
+            explanation: "Species I's life cycle relies on motile, flagellated sperm that require a film of external water to swim to the egg — consistent with the classic water-dependent fertilization pattern seen in bryophytes and seedless vascular plants."
+          - letter: "B"
+            text: "Fertilization in the presence of water occurs in Species II."
+            answer: false
+            explanation: "Species II's life cycle doesn't rely on external water for fertilization — consistent with a seed plant lineage where pollen delivery replaces the need for swimming sperm."
+          - letter: "C"
+            text: "Fertilization in the presence of water occurs in Species III."
+            answer: true
+            explanation: "Species III's life cycle matches the water-dependent pattern, requiring external moisture for sperm to reach the egg."
+          - letter: "D"
+            text: "Fertilization in the presence of water occurs in Species IV."
+            answer: true
+            explanation: "Species IV's life cycle likewise depends on water for fertilization to occur."
+
+      - id: q20
+        number: "Q20"
+        name: "Tree Age Estimation — Annual Ring Growth"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=29"
+        subjects:
+          - name: "Secondary Growth & Wood Anatomy"
+            link: "/resources/6-plant-anatomy/secondary-growth-wood-anatomy/"
+        statements:
+          - letter: "A"
+            text: "All annual rings have the same width."
+            answer: false
+            explanation: "Ring width varies year to year with growing conditions (rainfall, temperature, competition) — annual rings are not uniform in width, which is exactly what makes them useful for reading environmental history, not just age."
+          - letter: "B"
+            text: "Light parts of the wood correspond to wide vessels, which grow during summer."
+            answer: false
+            explanation: "The light, wide-vessel wood is laid down during the growing season's earlier, faster-growth phase (early/spring wood), not specifically summer — the dense, dark late wood forms later in the season, not the light wood."
+          - letter: "C"
+            text: "Bark does not have year rings."
+            answer: true
+            explanation: "Annual rings are a secondary xylem (wood) feature produced by the vascular cambium — bark (phloem and outer protective tissue) doesn't form the same concentric annual growth rings."
+          - letter: "D"
+            text: "The approximate age of the tree would be 86 years."
+            answer: true
+            explanation: "Using (circumference ÷ 2π) minus bark thickness to get wood radius, then dividing by the average annual ring width, gives an estimate in this range — reproducing the official key's rounded figure here rather than re-deriving the exact arithmetic, since some values were partly lost to text extraction from the source PDF."
+
+      - id: q21
+        number: "Q21"
+        name: "Biological Samples — Identifying Diverse Organisms"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=30"
+        subjects:
+          - name: "Biomolecular Analytical Techniques"
+            link: "/resources/1-cell-molecular/biomolecular-analytical-techniques/"
+        statements:
+          - letter: "A"
+            text: "I, III and VI can cause diseases in humans."
+            answer: true
+            explanation: "I is pollen (a common allergen — hay fever is a human disease response), III resembles a virus particle, and VI resembles fungal spore-bearing structures of a type associated with human fungal infections — all three have disease-causing potential in humans."
+          - letter: "B"
+            text: "II and IV consist of plant gametophytes."
+            answer: false
+            explanation: "IV shows budding yeast cells — a fungus, not a plant — so even though II (pollen) is a plant male gametophyte, the joint claim fails because IV isn't plant tissue at all."
+          - letter: "C"
+            text: "II, VII and VIII belong to plankton."
+            answer: false
+            explanation: "II is airborne pollen, not a planktonic organism — even though VII (bacterium) and VIII (ciliate) could reasonably be considered plankton, the statement fails because it requires all three."
+          - letter: "D"
+            text: "II and V belong to autotrophic organisms."
+            answer: true
+            explanation: "II (pollen) comes from a photosynthetic (autotrophic) plant, and V is a diatom — a photosynthetic, autotrophic alga — so both trace back to autotrophic organisms."
+
+      - id: q22
+        number: "Q22"
+        name: "Social Stress Response in Mice — Dominance Hierarchy"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=31"
+        subjects:
+          - name: "Aggression, Territoriality & Social Structure"
+            link: "/resources/9-ethology/aggression-territoriality-social-structure/"
+        statements:
+          - letter: "A"
+            text: "In all groups, stress is most pronounced on the second day of group formation."
+            answer: false
+            explanation: "The described timepoints are before grouping, day 1, day 7, and after separation — 'the second day' as a distinct pronounced-stress peak across all groups isn't one of the measured timepoints described."
+          - letter: "B"
+            text: "Before and immediately after the experiment, the stress levels are higher in the subdominant group, compared with the dominant group."
+            answer: true
+            explanation: "Lower social rank is generally associated with a more pronounced physiological stress response, consistent with subdominants showing higher stress than dominants at both the start and end of the experiment."
+          - letter: "C"
+            text: "The degree of stress expression does not depend on the initial social status of an individual."
+            answer: false
+            explanation: "The premise of the experiment (comparing dominants, subdominants, and subordinates separately) is that stress response magnitude does track social status — this statement contradicts that design."
+          - letter: "D"
+            text: "As the relationship between individuals improves, the amount of stress response decreases, but remains higher than that observed in solitary individuals."
+            answer: true
+            explanation: "Stress declines as the group settles in (day 1 → day 7) but doesn't fall all the way back to the baseline seen when mice were housed alone before grouping — some residual social stress persists."
+
+      - id: q23
+        number: "Q23"
+        name: "Gut Microbiome — Bacterial Crossing of the Blood-Brain Barrier"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=33"
+        subjects:
+          - name: "Nervous System Physiology"
+            link: "/resources/3-animal-physiology/nervous-system-physiology/"
+          - name: "Immune Physiology"
+            link: "/resources/3-animal-physiology/immune-physiology/"
+        statements:
+          - letter: "A"
+            text: "Group B Streptococcus (GBS) bacteria can penetrate by endothelial layer breakdown when serine-rich bacterial protein (Srr2) causes rupture of intercellular connections."
+            answer: true
+            explanation: "This describes GBS crossing paracellularly by disrupting the tight junctions between brain endothelial cells via its Srr2 adhesin — a documented mechanism for this pathogen."
+          - letter: "B"
+            text: "All CNS pathogens have to cross an additional layer of BBB formed by the astrocyte endfeet."
+            answer: false
+            explanation: "Not every pathogen's route requires crossing the astrocyte endfeet layer specifically — some cross via infected phagocytes or through other routes that bypass needing to breach that particular layer directly, so 'all' overstates it."
+          - letter: "C"
+            text: "E. coli bacteria can cross paracellularly, causing disruption of intercellular connections."
+            answer: true
+            explanation: "E. coli (a common cause of neonatal meningitis) is documented to cross the BBB via the paracellular route, among others, by disrupting endothelial tight junctions."
+          - letter: "D"
+            text: "Bacteria S. pneumoniae can either enter transcellularly through endothelial monolayer disruptions caused by the bacterial production of pneumolysin and H2O2, or paracellularly via several interactions."
+            answer: true
+            explanation: "S. pneumoniae is known to use both routes — transcellular passage aided by pneumolysin/H2O2-mediated damage, and paracellular passage via junction-targeting interactions — matching the figure's depiction of multiple mechanisms."
+
+      - id: q24
+        number: "Q24"
+        name: "Comparative Liver Anatomy — Zebrafish vs. Human"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=35"
+        subjects:
+          - name: "Fish & Amphibian Anatomy"
+            link: "/resources/2-animal-anatomy/fish-amphibian-anatomy/"
+          - name: "Mammalian Comparative Anatomy"
+            link: "/resources/2-animal-anatomy/mammalian-comparative-anatomy/"
+        statements:
+          - letter: "A"
+            text: "Like the human liver, zebrafish liver is also characterized by a lobular structure where the bile duct is located in the center of each lobule rather than a central vein as in the human liver."
+            answer: false
+            explanation: "Zebrafish liver lacks the classic hexagonal-lobule architecture of the human liver altogether — its hepatocytes, sinusoids, and ducts are arranged without that same central-vein-and-lobule organization, so the comparison as stated doesn't hold."
+          - letter: "B"
+            text: "In contrast to human liver, the blood vessels of zebrafish liver are distributed irregularly in the organ."
+            answer: true
+            explanation: "Zebrafish liver vasculature lacks the human liver's regular, repeating lobular pattern (central vein surrounded by portal triads) — vessels are more irregularly distributed instead."
+          - letter: "C"
+            text: "All types of cells in the liver of the zebrafish are also present in the human liver."
+            answer: true
+            explanation: "Both livers share the same core cell types shown — hepatocytes, sinusoidal cells, stellate cells, and bile duct cells — the difference between the two livers is architectural organization, not cell type inventory."
+          - letter: "D"
+            text: "The hepatocytes of the hexagonal lobules of the human liver differ in oxygen content, with the pericentral cells having a higher oxygen concentration than the periportal cells."
+            answer: false
+            explanation: "It's the reverse: blood enters at the portal triad and flows toward the central vein, so periportal hepatocytes are exposed to fresher, more oxygenated blood than pericentral ones, which sit furthest along that gradient."
+
+      - id: q25
+        number: "Q25"
+        name: "Oxytocin and Cortisol — Touch vs. Voice Contact in Girls"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=38"
+        subjects:
+          - name: "Endocrine System Physiology"
+            link: "/resources/3-animal-physiology/endocrine-system-physiology/"
+        statements:
+          - letter: "A"
+            text: "In all groups, cortisol levels rose after the performance, but after an hour they dropped to starting levels."
+            answer: false
+            explanation: "The figure caption itself states cortisol stayed elevated above baseline even an hour after the stressor in the no-contact (control) group specifically — so it doesn't return fully to starting levels in every group."
+          - letter: "B"
+            text: "Oxytocin levels were significantly higher in the tactile group than in the vocal group, so touch is a more potent stimulus for oxytocin production."
+            answer: false
+            explanation: "The caption describes both physical and voice-only contact raising oxytocin to a similar degree ('both... affected children's OT levels'), not tactile contact being significantly more potent than vocal contact."
+          - letter: "C"
+            text: "Communication with mothers stimulates the production of oxytocin, which decreases cortisol levels and eliminates the effects of stress."
+            answer: false
+            explanation: "The data show contact reduces cortisol levels faster/further than no contact — but 'eliminates the effects of stress' overstates it; cortisol is reduced, not brought to zero effect, and the oxytocin-cortisol causal link isn't directly established by this correlational design."
+          - letter: "D"
+            text: "This study establishes a direct link between voice stimulation and neuropeptides that regulate interpersonal relationships."
+            answer: true
+            explanation: "The vocal-contact group's oxytocin rise, measured directly against the control group, is exactly this link — voice-only contact was sufficient to raise oxytocin, a neuropeptide central to social bonding."
+
+      - id: q26
+        number: "Q26"
+        name: "Cardiac Cycle — Valve Timing and Pressure Changes"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=40"
+        subjects:
+          - name: "Cardiovascular Physiology"
+            link: "/resources/3-animal-physiology/cardiovascular-physiology/"
+        statements:
+          - letter: "A"
+            text: "The atrioventricular and semilunar valves close simultaneously for 0.07 seconds."
+            answer: true
+            explanation: "There's a brief isovolumetric phase where both sets of valves are shut at once (ventricular pressure has risen above atrial pressure, closing the AV valves, but hasn't yet exceeded arterial pressure, so the semilunar valves stay shut too) — matching the ~0.07 s window shown."
+          - letter: "B"
+            text: "The atrioventricular valves are closed for 0.28 seconds."
+            answer: true
+            explanation: "Summing the isovolumetric contraction and ejection phases (while ventricular pressure exceeds atrial pressure) gives a closed-AV-valve duration matching this figure, out of the 0.6 s total cycle."
+          - letter: "C"
+            text: "The semilunar valves are closed for 0.07 seconds."
+            answer: false
+            explanation: "The semilunar valves are shut for far more than just the brief isovolumetric window — they stay closed throughout ventricular filling and isovolumetric contraction too, a much longer span than 0.07 s."
+          - letter: "D"
+            text: "The semilunar valves are open for 0.28 seconds."
+            answer: true
+            explanation: "The semilunar valves are open only during the ejection phase, while ventricular pressure exceeds arterial pressure — matching this duration within the 0.6 s cycle."
+
+      - id: q27
+        number: "Q27"
+        name: "Saiga Antelope — Nose Adaptations for Cold, Dust, and Signalling"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=42"
+        subjects:
+          - name: "Comparative Thermoregulation"
+            link: "/resources/3-animal-physiology/comparative-thermoregulation/"
+          - name: "Mating Systems & Sexual Selection"
+            link: "/resources/9-ethology/mating-systems-sexual-selection/"
+        statements:
+          - letter: "A"
+            text: "The long snout-like nose of saigas is an adaptation to warm up the cold air in the nasal cavity during the winter."
+            answer: true
+            explanation: "An elongated nasal passage increases the surface area and residence time for incoming air to be warmed and humidified before reaching the lungs — a documented cold-climate adaptation in saigas."
+          - letter: "B"
+            text: "The long snout-like nose of the saigas clears the inhaled air of dust, allowing them to run long distances during summer without suffocating from the dust."
+            answer: true
+            explanation: "The same elongated, convoluted nasal passage that warms winter air also filters dust from the huge clouds saigas kick up while running in summer, described directly in the question stem."
+          - letter: "C"
+            text: "While swimming in the rivers and while avoiding being noticed by predators, saigas immerse their whole body and head underwater, pulling out only their long snout-like nose to breathe."
+            answer: false
+            explanation: "Saigas are described swimming across rivers during migration, not stealthily submerging to evade predators — nothing in the description supports this snorkel-like predator-avoidance behaviour."
+          - letter: "D"
+            text: "The long snout-like nose of saigas is typical only for males and serves to attract females and occupy a high social position in the herd."
+            answer: false
+            explanation: "The figures explicitly show both a male and a female saiga with the same snout-like nose — it's not a male-only trait, so it isn't a sexually-selected signalling structure the way the statement claims."
+
+      - id: q28
+        number: "Q28"
+        name: "Carbon Dioxide Transport in the Blood"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=44"
+        subjects:
+          - name: "Respiratory Physiology"
+            link: "/resources/3-animal-physiology/respiratory-physiology/"
+        statements:
+          - letter: "A"
+            text: "The presented scheme is the only way to transport carbon dioxide via circulatory system to the lungs."
+            answer: false
+            explanation: "CO₂ is actually transported in the blood by three routes — dissolved directly in plasma, bound to haemoglobin as carbaminohaemoglobin, and converted to bicarbonate — so the one pathway diagrammed isn't the only route."
+          - letter: "B"
+            text: "Substances 1 and 2 are found in red blood cells."
+            answer: true
+            explanation: "The bicarbonate-buffering pathway (carbonic anhydrase and its substrates/products) takes place inside the red blood cell's cytoplasm, where the enzyme is concentrated."
+          - letter: "C"
+            text: "Substance 1 is the enzyme carbonic anhydrase."
+            answer: true
+            explanation: "Carbonic anhydrase is the enzyme that catalyses CO₂ + H₂O ⇌ H₂CO₃ inside red blood cells — the first step of the bicarbonate transport pathway shown in the diagram."
+          - letter: "D"
+            text: "Substance 5 is carbaminohemoglobin."
+            answer: false
+            explanation: "The diagram's labelled sequence traces the bicarbonate pathway (carbonic anhydrase → carbonic acid → bicarbonate/H⁺), not the separate CO₂-binds-directly-to-haemoglobin route that produces carbaminohaemoglobin — so this particular labelled substance isn't that molecule."
+
+      - id: q29
+        number: "Q29"
+        name: "The Bohr Effect — Oxygen-Haemoglobin Dissociation"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=45"
+        subjects:
+          - name: "Respiratory Physiology"
+            link: "/resources/3-animal-physiology/respiratory-physiology/"
+        statements:
+          - letter: "A"
+            text: "The change from X to Y is caused by a decrease in oxygen concentration and a high pH."
+            answer: false
+            explanation: "The Bohr effect is driven by a drop in pH (more acidic, from higher CO₂/carbonic acid), not a high pH — this statement has the pH direction backwards."
+          - letter: "B"
+            text: "The change from X to Y is due to the decrease in oxygen concentration and low pH."
+            answer: true
+            explanation: "This is the Bohr effect exactly as defined: rightward-shifted dissociation curve driven by lower pH (more CO₂/acid), which lowers haemoglobin's oxygen affinity and promotes O₂ release in respiring tissue."
+          - letter: "C"
+            text: "The change from X to Y is due to an increase in the concentration of carbon dioxide and low pH."
+            answer: true
+            explanation: "Higher CO₂ concentration is exactly what drives the lower pH behind the Bohr shift — CO₂ dissolves to form carbonic acid, so 'increased CO₂' and 'low pH' are two descriptions of the same underlying cause."
+          - letter: "D"
+            text: "Y indicates the acclimation in the tissues of alpinists during high-altitude climbs."
+            answer: false
+            explanation: "High-altitude acclimatization is primarily about coping with lower oxygen partial pressure (e.g. increased red cell/haemoglobin production), not the acute, CO₂/pH-driven rightward shift the Bohr effect describes at the tissue level during a single breath cycle."
+
+      - id: q30
+        number: "Q30"
+        name: "Bone Marrow Conversion — Red vs. Yellow Marrow With Age"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=46"
+        subjects:
+          - name: "Human Skeletal System"
+            link: "/resources/2-animal-anatomy/human-skeletal-system/"
+        statements:
+          - letter: "A"
+            text: "The reduction in marrow type X is initiated in puberty."
+            answer: false
+            explanation: "The figure shows red marrow (X) already receding from the extremities by age 7, well before puberty — the conversion to yellow marrow (Y) begins in early childhood, not at puberty."
+          - letter: "B"
+            text: "A healthy adult does not have a significant amount of marrow type X in his pelvis."
+            answer: false
+            explanation: "Even at the oldest age shown (25), the pelvis still retains red marrow (X) — the pelvis, vertebrae, and sternum are known to keep significant red marrow well into adulthood, which is exactly why they're the standard sites for bone marrow biopsy."
+          - letter: "C"
+            text: "Conversion of marrow type X to Y is reversible."
+            answer: true
+            explanation: "Under increased haematopoietic demand (e.g. chronic anaemia or blood loss), yellow marrow can revert back to active red marrow — the X→Y conversion isn't a one-way, permanent change."
+          - letter: "D"
+            text: "A patient with leukemia can be assigned for a transplant of bone marrow type Y."
+            answer: true
+            explanation: "Since yellow marrow retains the stromal/mesenchymal environment and can convert back to haematopoietically active red marrow (per C), it can still serve as transplantable marrow — this follows from the same reversibility rather than being a separate, independent fact."

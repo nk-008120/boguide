@@ -19,12 +19,8 @@ Ethidium bromide is a fluorescent dye which can intercalate into double-stranded
 
 Using Figures 1 and 2, determine whether the following statements are true or false:
 
-{{< tf-quiz id="ibo2022-t1-q8" >}}
-A|The study of complexes between ethidium bromide and DNA allows for the detection of major structural DNA damage caused by different stressful situations.|true|Ethidium bromide's fluorescence depends on how well it can intercalate — structural DNA damage (breaks, unusual conformations) changes how much and how well EtBr binds, which is exactly why EtBr fluorescence assays are used to probe DNA integrity in the lab.
-B|When ethidium bromide is intercalated into a DNA molecule, the base pairs move away from each other to make space for the inserted molecule.|true|Intercalation works by the flat aromatic EtBr ring wedging in between adjacent base pairs, which locally unwinds and stretches the helix — the base pairs do separate further apart than normal to accommodate it.
-C|In the intercalation shown in Figure 2B, the bases are displaced by overexertion while simultaneously the helix contracts along its axis. This ensures the DNA sugar-phosphate backbone does not rupture during the overexertion.|true|Intercalation is a non-covalent, reversible distortion of the helix — the structure absorbs the strain by locally unwinding/adjusting rather than breaking any covalent bonds, which is exactly why EtBr staining doesn't damage the DNA backbone.
-D|The plane of the intercalated ethidium bromide molecule is approximately parallel to the axis of the DNA helix and perpendicular to the plane of the bases.|false|It's the other way around: the flat EtBr ring stacks *parallel* to the base pairs (so it can fit between them) and therefore roughly *perpendicular* to the helix axis, not parallel to the axis.
-{{< /tf-quiz >}}
+{{< papers-quiz olympiad="ibo" year="2022" round="theoretical-1" problem="q8" >}}
+{{< papers-problem-nav olympiad="ibo" year="2022" round="theoretical-1" problem="q8" >}}
 
 ---
 

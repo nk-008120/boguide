@@ -1398,3 +1398,61 @@ html.dark .tf-quiz-reset {
 .tf-quiz-score {
   font-weight: 600;
 }
+
+/* ===================================================================
+   13. PAPERS PROBLEM NAV — Previous/Next between problems in a round
+   {{< papers-problem-nav >}} (layouts/shortcodes/papers-problem-nav.html).
+   Sits below the tf-quiz on each problem page so attempting a question
+   and moving on doesn't require the browser's back button. Styled to
+   match the tf-quiz-submit/-reset pill buttons directly above it.
+   =================================================================== */
+.papers-quiz-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 1.75rem 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(137, 101, 196, 0.15);
+}
+html.dark .papers-quiz-nav {
+  border-top-color: rgba(201, 183, 232, 0.18);
+}
+.papers-nav-btn {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  text-decoration: none !important;
+  color: #8965c4;
+  border: 1px solid rgba(137, 101, 196, 0.4);
+  background: transparent;
+  transition: background 0.15s ease;
+}
+.papers-nav-btn:hover {
+  background: rgba(137, 101, 196, 0.1);
+}
+.papers-nav-next {
+  color: #fff;
+  background: #8965c4;
+  border-color: #8965c4;
+  margin-left: auto;
+}
+.papers-nav-next:hover {
+  background: #7a55b8;
+}
+html.dark .papers-nav-btn {
+  color: #c9b7e8;
+  border-color: rgba(201, 183, 232, 0.4);
+}
+html.dark .papers-nav-btn:hover {
+  background: rgba(201, 183, 232, 0.12);
+}
+html.dark .papers-nav-next {
+  background: #7c5cb8;
+  border-color: #7c5cb8;
+}
+html.dark .papers-nav-next:hover {
+  background: #8f6bcc;
+}

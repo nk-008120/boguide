@@ -1,0 +1,31 @@
+{{- /* Previous/Next navigation between problems in the same round.
+     Usage: {{< papers-problem-nav olympiad="ibo" year="2022" round="theoretical-1" problem="q5" >}}
+     At the first/last problem, the missing side links back to the round overview instead. */ -}}
+{{- $olId := .Get "olympiad" -}}
+{{- $yearId := .Get "year" -}}
+{{- $roundId := .Get "round" -}}
+{{- $problemId := .Get "problem" -}}
+{{- $ol := index hugo.Data.papers $olId -}}
+{{- $yearData := index $ol $yearId -}}
+{{- $round := dict -}}
+{{- range $yearData.rounds }}{{ if eq .id $roundId }}{{ $round = . }}{{ end }}{{ end -}}
+{{- $problems := $round.problems -}}
+{{- $index := -1 -}}
+{{- range $i, $p := $problems }}{{ if eq $p.id $problemId }}{{ $index = $i }}{{ end }}{{ end -}}
+{{- $roundURL := $.Page.Parent.RelPermalink -}}
+{{- $prev := "" -}}
+{{- $next := "" -}}
+{{- if gt $index 0 }}{{ $prev = index $problems (sub $index 1) }}{{ end -}}
+{{- if lt $index (sub (len $problems) 1) }}{{ $next = index $problems (add $index 1) }}{{ end -}}
+<div class="papers-quiz-nav">
+  {{- if $prev }}
+  <a class="papers-nav-btn papers-nav-prev" href="{{ $roundURL }}{{ $prev.id }}/">← Previous: {{ $prev.number }}</a>
+  {{- else }}
+  <a class="papers-nav-btn papers-nav-prev" href="{{ $roundURL }}">← Back to {{ $round.name }}</a>
+  {{- end }}
+  {{- if $next }}
+  <a class="papers-nav-btn papers-nav-next" href="{{ $roundURL }}{{ $next.id }}/">Next: {{ $next.number }} →</a>
+  {{- else }}
+  <a class="papers-nav-btn papers-nav-next" href="{{ $roundURL }}">Back to {{ $round.name }} →</a>
+  {{- end }}
+</div>

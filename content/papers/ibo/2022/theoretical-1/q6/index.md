@@ -15,12 +15,8 @@ There are 3 arrows in the figure: X, Y, Z that show paths of movement of substan
 
 Using the figure, determine whether the following statements are true or false:
 
-{{< tf-quiz id="ibo2022-t1-q6" >}}
-A|Vitamin D can be transported through X.|true|Vitamin D is a small, lipophilic (fat-soluble) steroid-derived molecule, so it can dissolve directly through the phospholipid bilayer without needing a channel or carrier protein — consistent with path X.
-B|Sodium and potassium ions can be transported through X.|false|Na⁺ and K⁺ are charged and strongly hydrated, so they can't cross the hydrophobic lipid bilayer directly — they need a dedicated channel or pump protein, not the direct-diffusion path X.
-C|Large native globular proteins can be transported through Y.|false|A folded globular protein is far too large to pass through an ordinary membrane channel like Y — proteins that size cross membranes via vesicular transport (e.g. exocytosis/endocytosis), not through a channel pore.
-D|Water can be transported through Z.|true|Z is drawn as a wide, paired-loop channel — the structure typical of an aquaporin, the dedicated water-channel protein family that allows bulk water flow across the membrane.
-{{< /tf-quiz >}}
+{{< papers-quiz olympiad="ibo" year="2022" round="theoretical-1" problem="q6" >}}
+{{< papers-problem-nav olympiad="ibo" year="2022" round="theoretical-1" problem="q6" >}}
 
 ---
 

@@ -16,12 +16,8 @@ The diagram shows experimental data comparing the hydrolysis of starch by amylas
 
 What conclusion can be drawn from these data? Determine whether the following statements are true or false:
 
-{{< tf-quiz id="ibo2022-t1-q3" >}}
-A|50°C is the optimal temperature for the initial activity of amylase.|false|The 70°C curve has the steepest initial slope, meaning the initial rate is actually highest at 70°C, not 50°C — 50°C only wins on total glucose produced by 60 minutes, because the enzyme stays active longer there.
-B|At 60°C, all starch is hydrolyzed after 30 minutes.|false|The curve plateauing just means glucose production has stopped (denaturation or substrate exhaustion) — without knowing the total starch present at the start, the plateau alone can't confirm that 100% of it was hydrolysed.
-C|At 70°C amylase is denatured before hydrolysis is complete.|true|The 70°C curve plateaus earliest and at the lowest final glucose level of the three — consistent with the enzyme losing activity (denaturing) quickly, well before all the available starch has been broken down.
-D|The initial reaction rate of starch hydrolysis at 60°C is higher than at 70°C.|false|It's the reverse: the 70°C curve has the steeper initial slope of the two, so its initial rate is higher, not lower, than 60°C's.
-{{< /tf-quiz >}}
+{{< papers-quiz olympiad="ibo" year="2022" round="theoretical-1" problem="q3" >}}
+{{< papers-problem-nav olympiad="ibo" year="2022" round="theoretical-1" problem="q3" >}}
 
 ---
 
