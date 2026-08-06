@@ -6168,145 +6168,11 @@
     </item>
     
     <item>
-      <title>Q53 — Telomerase — Mechanism of Telomere Extension</title>
-      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q3/</link>
+      <title>Q51 — Cancer Cell Metabolism — Aerobic Glycolysis and the Warburg Effect</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q3/</guid>
-      <description>
-        
-        
-        &lt;div class=&#34;topic-meta&#34;&gt;
-  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
-  
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/dna-structure-replication/&#34;&gt;DNA Structure &amp; Replication&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;At the ends of chromosomal DNA molecules of eukaryotes, there are special nucleotide sequences called telomeres, which shorten during each division of the somatic cell. Telomeres do not contain genes, but consist of multiple repeats of a short nucleotide sequence, such as TTAGGG. When DNA replication is completed (Fig. 1a), a single-strand protrusion (TTAGGG) occurs at the 3&amp;rsquo; end of the 5&amp;rsquo;-3&amp;rsquo; (lagging) strand of DNA. The enzyme telomerase containing the CAAUCC sequence in associated RNA allows for a complete duplicate of the DNA molecule along the entire length of the chromosome (Fig. 1b-e).&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q53-figure-1.png&#34; alt=&#34;Figure 1. The mechanism of action of telomerase: (a) replication complete, 3’ overhang present; (b) telomerase binds via RNA:DNA base-pairing; (c) telomerase extends the 3’ overhang using its RNA as template; (d) telomerase translocates; (e) DNA polymerase fills in the complementary strand.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-  &lt;/span&gt;
-&lt;em&gt;Figure 1. The mechanism of action of telomerase. 5&amp;rsquo;-3&amp;rsquo; is the &amp;ldquo;maternal&amp;rdquo; DNA strand, and 3&amp;rsquo;-5&amp;rsquo; is the &amp;ldquo;daughter&amp;rdquo; strand.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Using the information and figures, determine whether the following statements are true or false.&lt;/p&gt;
-&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q3&#34;&gt;
-  &lt;div class=&#34;tf-quiz&#34;&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Telomerase is a ribonucleoprotein — its reverse-transcriptase protein subunit needs the enzyme&amp;#39;s own RNA component (containing the CAAUCC template) to know what sequence to add. Protein alone has no template to copy from.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The protein component of telomerase is sufficient to elongate telomeres.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Figures 1b–d show the parental (mother) strand&amp;#39;s 3&amp;#39; overhang being extended by telomerase&amp;#39;s reverse-transcriptase activity, using the enzyme&amp;#39;s internal CAAUCC RNA as template, then translocating to repeat the process.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; The mother strand of DNA is sequentially elongated on the 3&amp;#39; end, using the telomerase RNA as a template.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Without functional telomerase, telomeres shorten uncorrected with each division, driving premature cellular senescence in high-turnover tissues — consistent with telomerase-deficiency syndromes that present with bone-marrow failure and premature-aging features.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Loss-of-function mutations in the telomerase protein are likely to cause diseases such as progeria or bone-marrow failure.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;HeLa is an immortalized cancer cell line specifically because it keeps telomerase active (not repressed), continually rebuilding its telomeres so the cells can divide indefinitely without triggering senescence.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Telomere length has a threshold value in cells and in HeLa cells telomerase is repressed to maintain this threshold value.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
-    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
-(function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
-  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
-  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
-
-  rows.forEach(function (row) {
-    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
-    btns.forEach(function (btn) {
-      btn.addEventListener(&#39;click&#39;, function () {
-        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-        btn.classList.add(&#39;selected&#39;);
-        row.dataset.selected = btn.dataset.value;
-        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-      });
-    });
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
-    var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
-      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
-      if (!sel) {
-        allAnswered = false;
-        row.classList.add(&#39;unanswered&#39;);
-        return;
-      }
-      row.classList.remove(&#39;unanswered&#39;);
-      var isCorrect = sel === row.dataset.answer;
-      row.classList.toggle(&#39;correct&#39;, isCorrect);
-      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
-      if (isCorrect) correct++;
-      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
-    });
-    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
-    scoreEl.textContent = allAnswered
-      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
-      : &#39;Answer every statement first.&#39;;
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
-    rows.forEach(function (row) {
-      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-      delete row.dataset.selected;
-      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-    });
-    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
-  });
-})();
-&lt;/script&gt;
-
-&lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/q2/&#34;&gt;← Previous: Q52&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/q4/&#34;&gt;Next: Q54 →&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=5&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Q54 — NAD(P)H Fluorescence During the Aerobic–Anaerobic Transition in Yeast</title>
-      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q4/</guid>
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q1/</guid>
       <description>
         
         
@@ -6319,40 +6185,44 @@
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
   &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/bioenergetics-central-metabolism/&#34;&gt;Bioenergetics &amp; Central Metabolism Overview&lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;The metabolic activity of microbial cells can be measured based on the intracellular content of different molecules, such as NAD(P)H, the reduced form of nicotinamide adenine dinucleotide (phosphate), which fluoresces at λ = 440 nm. A sharp increase in fluorescence intensity of NAD(P)H is observed during a forced transition of yeast cells from aerobic to anaerobic conditions (AA transition) (Figure). The relative fluorescence increase (ΔFI) during AA transition was evaluated as a measure of yeast metabolic activity.&lt;/p&gt;
+&lt;p&gt;In quiescent normal cells, under normal physiological conditions, glucose is aerobically metabolized to pyruvate, most of which is transformed to acetyl-CoA by PDC (Pyruvate Dehydrogenase Complex) (Figure 1a). The resulting Acetyl-CoA enters the tricarboxylic acid cycle (TCA, also Krebs or citric acid cycle) in the mitochondria. In anaerobic microenvironment, pyruvate is almost completely converted to lactate in the cytoplasm and the production of Acetyl-CoA is inhibited. In rapidly growing cancer cells, increased expression of Pyruvate Dehydrogenase Kinases (PDKs) inactivates PDC, and inhibits the conversion of pyruvate to Acetyl-CoA (Figure 1b). Instead, the conversion of pyruvate to lactate is activated, and glycolysis takes place in the cell with high intensity.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q54-figure-1.png&#34; alt=&#34;Figure. NAD(P)H fluorescence intensity during the aerobic-anaerobic transition. FI = fluorescence intensity, AS = air sparging (bubbling of air), NS = nitrogen sparging. FI_AN = fluorescence intensity during the anaerobic phase, FI_AE = fluorescence intensity during the aerobic phase.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q51-figure-1.png&#34; alt=&#34;Figure 1a. Metabolic pathway of glucose in quiescent normal cells — oxidative phosphorylation dominates, yielding ~36 mol ATP per glucose via the TCA cycle.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
-&lt;em&gt;Figure. NAD(P)H fluorescence intensity during the aerobic-anaerobic transition.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Determine whether the following statements are true or false:&lt;/p&gt;
-&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q4&#34;&gt;
+&lt;em&gt;Figure 1a. Glucose metabolism in quiescent normal cells.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q51-figure-2.png&#34; alt=&#34;Figure 1b. Metabolic pathway of glucose in proliferating cancer cells — aerobic glycolysis dominates (only ~5% of pyruvate enters the TCA cycle via PDC, inhibited by PDKs), supplemented by glutaminolysis feeding the TCA cycle for anabolic precursors.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 1b. Glucose metabolism in proliferating cancer cells.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Use the information and figures to determine whether the following statements are true or false.&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q1&#34;&gt;
   &lt;div class=&#34;tf-quiz&#34;&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The fluorophore in both molecules is the reduced nicotinamide ring; the 2&amp;#39;-phosphate that distinguishes NADPH from NADH sits away from that ring, so their excitation/emission properties are essentially identical. The oxidized forms (NAD⁺/NADP⁺) lack the electron configuration needed to fluoresce.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The reduced phosphorylated (NADPH) and nonphosphorylated (NADH) pyridine nucleotides have essentially equivalent fluorescence properties while their oxidized forms are non-fluorescent.&lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Quiescent normal cells run pyruvate through PDC into the TCA cycle for ~36 ATP via oxidative phosphorylation. Cancer cells overexpress PDKs, which inactivate PDC and reroute pyruvate to lactate even with oxygen present — exactly the oxidative-phosphorylation-to-aerobic-glycolysis switch (the Warburg effect) described in the statement.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; When the normal cell turns cancerous, it switches its glucose metabolism from oxidative phosphorylation to aerobic glycolysis.&lt;/div&gt;
       &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
       &lt;/div&gt;
       &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;This has the respiratory chain&amp;#39;s role backwards: the chain oxidizes NADH to NAD⁺ (donating electrons to O₂), it doesn&amp;#39;t reduce NAD⁺. Reduction of NAD(P)⁺ happens upstream, in glycolysis and the TCA cycle, not in the respiratory chain itself.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Under aerobic conditions, the oxidized nucleotides in cells are reduced, e.g., in the respiratory chain, which leads to an equilibrium between the formation and depletion of NAD(P)H.&lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Both halves are backwards: cancer cells sharply increase glucose uptake and glycolytic flux (not suppress it), while TCA-cycle ATP production actually falls because PDK-mediated PDC inactivation starves the cycle of acetyl-CoA.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Cancer cells undergo alterations in metabolic pathways that enable them to suppress glucose uptake and glycolysis. This leads to stimulation of ATP production in the TCA cycle in normal conditions.&lt;/div&gt;
       &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
       &lt;/div&gt;
       &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Switching air sparging to nitrogen sparging removes O₂, the respiratory chain&amp;#39;s final electron acceptor, so it can no longer re-oxidize NADH. NAD(P)H accumulates, producing exactly the step-like jump from FI_AE to FI_AN seen in the figure.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; After the sudden alteration from aerobic to anaerobic conditions (AA transition), the microbes are not able to re-oxidize all the reduced NAD(P)H, which can be tracked as an intracellular step-like increase of NAD(P)H fluorescence intensity.&lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Aerobic glycolysis yields far less ATP per glucose than oxidative phosphorylation, but tumor cells compensate with massively increased glucose uptake and glycolytic flux — this is precisely what lets glycolysis sustain their energy balance despite hypoxia.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; In rapidly growing tumors where hypoxia occurs, increased glycolysis can not support sufficient ATP production and bioenergetic homeostasis of cells.&lt;/div&gt;
       &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
       &lt;/div&gt;
       &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The stem defines the relative fluorescence increase (ΔFI) during the AA transition as exactly this — a measure of yeast metabolic activity — since a larger jump reflects more active dehydrogenases generating NAD(P)H before the anaerobic block on its re-oxidation.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Measurements of NAD(P)H fluorescence intensity during AA transition can indicate the increasing metabolic activity of microbes under stress conditions.&lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Figure 1b shows glutamine imported and converted via glutaminase to glutamate, then α-ketoglutarate, refilling the TCA cycle (anaplerosis) despite reduced pyruvate entry. Citrate exported from this cycle feeds lipid synthesis — supporting both anabolic and bioenergetic needs of the proliferating cell.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; In cancer cells, beyond the increase of glycolysis, increased glutaminolysis and fatty acid biosynthesis, generate TCA cycle intermediates, which are often used for anabolic and bioenergetic purposes.&lt;/div&gt;
       &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
@@ -6422,14 +6292,148 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/q3/&#34;&gt;← Previous: Q53&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/q5/&#34;&gt;Next: Q55 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/&#34;&gt;← Back to Theoretical 2&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q2/&#34;&gt;Next: Q52 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=7&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=2&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q52 — Cryopyrin Inflammasome — Western Blot of WT and Mutant Variants</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q2/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/immune-physiology/&#34;&gt;Immune Physiology&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Cryopyrin is a protein involved in the formation of enzymatically active caspase-1 from procaspase-1. p35 is a protein fragment resulting from the cleavage of procaspase-1. The conversion of pro-interleukin-1β to interleukin-1β (IL-1β) is catalyzed by caspase-1. Researchers were interested in the functional properties of wild-type cryopyrin and its two mutants, R260W and D303N. They developed two cell lines: 293-ASC-caspase-1 with a stable expression of both procaspase-1 and ASC (a protein known to interact with cryopyrin) and 293-caspase-1, with a stable expression of procaspase-1 but not ASC. They transfected cells from each cell line with one of the five vectors and then performed a Western Blot of the proteins they were interested in (Figure).&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q52-figure-1.png&#34; alt=&#34;Figure. Western blot results for each cell line: (1) empty vector, (2) vector with WT cryopyrin, (3) vector with the cryopyrin R260W mutant, (4) vector with the cryopyrin D303N mutant, (5) vector with IPAF-ΔLRR, which causes autocleavage of procaspase-1 independent from all other factors. Rows show Procasp-1/p35, Pro-IL-1β/IL-1β, Cryopyrin, and ASC.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure. Results of Western Blot for each cell line, 293-caspase-1 (left) and 293-ASC-caspase-1 (right).&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Using the information and figures, determine whether the following statements are true or false.&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q2&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;In the 293-caspase-1 cells (no ASC), none of the cryopyrin constructs produce detectable p35 or IL-1β, while the same WT construct does produce them in 293-ASC-caspase-1 cells (which express ASC). Cryopyrin therefore needs ASC to activate caspase-1.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; Cryopyrin-dependent IL-1β production is not dependent on ASC.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;R260W shows no detectable p35 or IL-1β in either cell line — indistinguishable from the empty-vector control. A partially active mutant would show reduced but visible cleavage bands, which isn&amp;#39;t observed; R260W behaves as a loss-of-function mutant here, not a partial one.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; The R260W mutant is partially active, as compared to wild type cryopyrin.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The cryopyrin blot shows D303N expressed at a similar size and intensity to WT cryopyrin. A truncating mutation early in the sequence would produce a short or undetectable protein, which is not what&amp;#39;s observed — so D303N is a full-length missense variant, not a truncation.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; The D303N mutant does not contain a truncating mutation early in the gene sequence.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;IPAF-ΔLRR causes procaspase-1 autocleavage independently of cryopyrin or ASC. It produces clear p35 and IL-1β bands in both cell lines regardless of ASC status, giving a maximum-signal benchmark that confirms the caspase-1 cleavage machinery works in each line.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; IPAF-ΔLRR served as a positive control in this experiment for each cell line.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q1/&#34;&gt;← Previous: Q51&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q3/&#34;&gt;Next: Q53 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=4&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
       </description>
