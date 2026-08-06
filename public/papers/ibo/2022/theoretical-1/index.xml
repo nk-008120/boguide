@@ -6665,7 +6665,7 @@
         &lt;div id=&#34;papers-attempt-root&#34; class=&#34;papers-attempt-root&#34;&gt;
 &lt;section id=&#34;attempt-start&#34; class=&#34;attempt-screen&#34;&gt;
   &lt;h2&gt;Timed Attempt — Theoretical 1&lt;/h2&gt;
-  &lt;p&gt;30 questions · 180 minutes. This is a sample duration until the real IBO time limit is confirmed — treat it as approximate for now.&lt;/p&gt;
+  &lt;p&gt;50 questions · 180 minutes. This is a sample duration until the real IBO time limit is confirmed — treat it as approximate for now.&lt;/p&gt;
   &lt;p&gt;Once you start, the page will try to go fullscreen and the timer begins immediately — there&#39;s no pause. You can jump to any question in any order, mark questions for review, and change answers freely before submitting. Subject categories are hidden until after you submit.&lt;/p&gt;
   &lt;div id=&#34;attempt-last-report-summary&#34;&gt;&lt;/div&gt;
   &lt;button type=&#34;button&#34; id=&#34;attempt-start-btn&#34; class=&#34;papers-nav-btn papers-nav-next&#34;&gt;Start Timed Attempt&lt;/button&gt;

@@ -1,0 +1,2083 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BiOGuide for Biology Olympiads – Theoretical 2</title>
+    <link>http://localhost:1313/papers/ibo/2022/theoretical-2/</link>
+    <description>Recent content in Theoretical 2 on BiOGuide for Biology Olympiads</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="http://localhost:1313/papers/ibo/2022/theoretical-2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Q51 — Cancer Cell Metabolism — Aerobic Glycolysis and the Warburg Effect</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q1/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/bioenergetics-central-metabolism/&#34;&gt;Bioenergetics &amp; Central Metabolism Overview&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;In quiescent normal cells, under normal physiological conditions, glucose is aerobically metabolized to pyruvate, most of which is transformed to acetyl-CoA by PDC (Pyruvate Dehydrogenase Complex) (Figure 1a). The resulting Acetyl-CoA enters the tricarboxylic acid cycle (TCA, also Krebs or citric acid cycle) in the mitochondria. In anaerobic microenvironment, pyruvate is almost completely converted to lactate in the cytoplasm and the production of Acetyl-CoA is inhibited. In rapidly growing cancer cells, increased expression of Pyruvate Dehydrogenase Kinases (PDKs) inactivates PDC, and inhibits the conversion of pyruvate to Acetyl-CoA (Figure 1b). Instead, the conversion of pyruvate to lactate is activated, and glycolysis takes place in the cell with high intensity.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q51-figure-1.png&#34; alt=&#34;Figure 1a. Metabolic pathway of glucose in quiescent normal cells — oxidative phosphorylation dominates, yielding ~36 mol ATP per glucose via the TCA cycle.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 1a. Glucose metabolism in quiescent normal cells.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q51-figure-2.png&#34; alt=&#34;Figure 1b. Metabolic pathway of glucose in proliferating cancer cells — aerobic glycolysis dominates (only ~5% of pyruvate enters the TCA cycle via PDC, inhibited by PDKs), supplemented by glutaminolysis feeding the TCA cycle for anabolic precursors.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 1b. Glucose metabolism in proliferating cancer cells.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Use the information and figures to determine whether the following statements are true or false.&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q1&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Quiescent normal cells run pyruvate through PDC into the TCA cycle for ~36 ATP via oxidative phosphorylation. Cancer cells overexpress PDKs, which inactivate PDC and reroute pyruvate to lactate even with oxygen present — exactly the oxidative-phosphorylation-to-aerobic-glycolysis switch (the Warburg effect) described in the statement.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; When the normal cell turns cancerous, it switches its glucose metabolism from oxidative phosphorylation to aerobic glycolysis.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Both halves are backwards: cancer cells sharply increase glucose uptake and glycolytic flux (not suppress it), while TCA-cycle ATP production actually falls because PDK-mediated PDC inactivation starves the cycle of acetyl-CoA.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Cancer cells undergo alterations in metabolic pathways that enable them to suppress glucose uptake and glycolysis. This leads to stimulation of ATP production in the TCA cycle in normal conditions.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Aerobic glycolysis yields far less ATP per glucose than oxidative phosphorylation, but tumor cells compensate with massively increased glucose uptake and glycolytic flux — this is precisely what lets glycolysis sustain their energy balance despite hypoxia.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; In rapidly growing tumors where hypoxia occurs, increased glycolysis can not support sufficient ATP production and bioenergetic homeostasis of cells.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Figure 1b shows glutamine imported and converted via glutaminase to glutamate, then α-ketoglutarate, refilling the TCA cycle (anaplerosis) despite reduced pyruvate entry. Citrate exported from this cycle feeds lipid synthesis — supporting both anabolic and bioenergetic needs of the proliferating cell.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; In cancer cells, beyond the increase of glycolysis, increased glutaminolysis and fatty acid biosynthesis, generate TCA cycle intermediates, which are often used for anabolic and bioenergetic purposes.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/&#34;&gt;← Back to Theoretical 2&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q2/&#34;&gt;Next: Q52 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=2&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q52 — Cryopyrin Inflammasome — Western Blot of WT and Mutant Variants</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q2/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/immune-physiology/&#34;&gt;Immune Physiology&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Cryopyrin is a protein involved in the formation of enzymatically active caspase-1 from procaspase-1. p35 is a protein fragment resulting from the cleavage of procaspase-1. The conversion of pro-interleukin-1β to interleukin-1β (IL-1β) is catalyzed by caspase-1. Researchers were interested in the functional properties of wild-type cryopyrin and its two mutants, R260W and D303N. They developed two cell lines: 293-ASC-caspase-1 with a stable expression of both procaspase-1 and ASC (a protein known to interact with cryopyrin) and 293-caspase-1, with a stable expression of procaspase-1 but not ASC. They transfected cells from each cell line with one of the five vectors and then performed a Western Blot of the proteins they were interested in (Figure).&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q52-figure-1.png&#34; alt=&#34;Figure. Western blot results for each cell line: (1) empty vector, (2) vector with WT cryopyrin, (3) vector with the cryopyrin R260W mutant, (4) vector with the cryopyrin D303N mutant, (5) vector with IPAF-ΔLRR, which causes autocleavage of procaspase-1 independent from all other factors. Rows show Procasp-1/p35, Pro-IL-1β/IL-1β, Cryopyrin, and ASC.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure. Results of Western Blot for each cell line, 293-caspase-1 (left) and 293-ASC-caspase-1 (right).&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Using the information and figures, determine whether the following statements are true or false.&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q2&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;In the 293-caspase-1 cells (no ASC), none of the cryopyrin constructs produce detectable p35 or IL-1β, while the same WT construct does produce them in 293-ASC-caspase-1 cells (which express ASC). Cryopyrin therefore needs ASC to activate caspase-1.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; Cryopyrin-dependent IL-1β production is not dependent on ASC.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;R260W shows no detectable p35 or IL-1β in either cell line — indistinguishable from the empty-vector control. A partially active mutant would show reduced but visible cleavage bands, which isn&amp;#39;t observed; R260W behaves as a loss-of-function mutant here, not a partial one.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; The R260W mutant is partially active, as compared to wild type cryopyrin.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The cryopyrin blot shows D303N expressed at a similar size and intensity to WT cryopyrin. A truncating mutation early in the sequence would produce a short or undetectable protein, which is not what&amp;#39;s observed — so D303N is a full-length missense variant, not a truncation.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; The D303N mutant does not contain a truncating mutation early in the gene sequence.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;IPAF-ΔLRR causes procaspase-1 autocleavage independently of cryopyrin or ASC. It produces clear p35 and IL-1β bands in both cell lines regardless of ASC status, giving a maximum-signal benchmark that confirms the caspase-1 cleavage machinery works in each line.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; IPAF-ΔLRR served as a positive control in this experiment for each cell line.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q1/&#34;&gt;← Previous: Q51&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q3/&#34;&gt;Next: Q53 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=4&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q53 — Telomerase — Mechanism of Telomere Extension</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q3/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/dna-structure-replication/&#34;&gt;DNA Structure &amp; Replication&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;At the ends of chromosomal DNA molecules of eukaryotes, there are special nucleotide sequences called telomeres, which shorten during each division of the somatic cell. Telomeres do not contain genes, but consist of multiple repeats of a short nucleotide sequence, such as TTAGGG. When DNA replication is completed (Fig. 1a), a single-strand protrusion (TTAGGG) occurs at the 3&amp;rsquo; end of the 5&amp;rsquo;-3&amp;rsquo; (lagging) strand of DNA. The enzyme telomerase containing the CAAUCC sequence in associated RNA allows for a complete duplicate of the DNA molecule along the entire length of the chromosome (Fig. 1b-e).&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q53-figure-1.png&#34; alt=&#34;Figure 1. The mechanism of action of telomerase: (a) replication complete, 3’ overhang present; (b) telomerase binds via RNA:DNA base-pairing; (c) telomerase extends the 3’ overhang using its RNA as template; (d) telomerase translocates; (e) DNA polymerase fills in the complementary strand.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 1. The mechanism of action of telomerase. 5&amp;rsquo;-3&amp;rsquo; is the &amp;ldquo;maternal&amp;rdquo; DNA strand, and 3&amp;rsquo;-5&amp;rsquo; is the &amp;ldquo;daughter&amp;rdquo; strand.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Using the information and figures, determine whether the following statements are true or false.&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q3&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Telomerase is a ribonucleoprotein — its reverse-transcriptase protein subunit needs the enzyme&amp;#39;s own RNA component (containing the CAAUCC template) to know what sequence to add. Protein alone has no template to copy from.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The protein component of telomerase is sufficient to elongate telomeres.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Figures 1b–d show the parental (mother) strand&amp;#39;s 3&amp;#39; overhang being extended by telomerase&amp;#39;s reverse-transcriptase activity, using the enzyme&amp;#39;s internal CAAUCC RNA as template, then translocating to repeat the process.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; The mother strand of DNA is sequentially elongated on the 3&amp;#39; end, using the telomerase RNA as a template.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Without functional telomerase, telomeres shorten uncorrected with each division, driving premature cellular senescence in high-turnover tissues — consistent with telomerase-deficiency syndromes that present with bone-marrow failure and premature-aging features.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Loss-of-function mutations in the telomerase protein are likely to cause diseases such as progeria or bone-marrow failure.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;HeLa is an immortalized cancer cell line specifically because it keeps telomerase active (not repressed), continually rebuilding its telomeres so the cells can divide indefinitely without triggering senescence.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Telomere length has a threshold value in cells and in HeLa cells telomerase is repressed to maintain this threshold value.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q2/&#34;&gt;← Previous: Q52&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q4/&#34;&gt;Next: Q54 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=5&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q54 — NAD(P)H Fluorescence During the Aerobic–Anaerobic Transition in Yeast</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q4/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/bioenergetics-central-metabolism/&#34;&gt;Bioenergetics &amp; Central Metabolism Overview&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;The metabolic activity of microbial cells can be measured based on the intracellular content of different molecules, such as NAD(P)H, the reduced form of nicotinamide adenine dinucleotide (phosphate), which fluoresces at λ = 440 nm. A sharp increase in fluorescence intensity of NAD(P)H is observed during a forced transition of yeast cells from aerobic to anaerobic conditions (AA transition) (Figure). The relative fluorescence increase (ΔFI) during AA transition was evaluated as a measure of yeast metabolic activity.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q54-figure-1.png&#34; alt=&#34;Figure. NAD(P)H fluorescence intensity during the aerobic-anaerobic transition. FI = fluorescence intensity, AS = air sparging (bubbling of air), NS = nitrogen sparging. FI_AN = fluorescence intensity during the anaerobic phase, FI_AE = fluorescence intensity during the aerobic phase.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure. NAD(P)H fluorescence intensity during the aerobic-anaerobic transition.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Determine whether the following statements are true or false:&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q4&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The fluorophore in both molecules is the reduced nicotinamide ring; the 2&amp;#39;-phosphate that distinguishes NADPH from NADH sits away from that ring, so their excitation/emission properties are essentially identical. The oxidized forms (NAD⁺/NADP⁺) lack the electron configuration needed to fluoresce.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The reduced phosphorylated (NADPH) and nonphosphorylated (NADH) pyridine nucleotides have essentially equivalent fluorescence properties while their oxidized forms are non-fluorescent.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;This has the respiratory chain&amp;#39;s role backwards: the chain oxidizes NADH to NAD⁺ (donating electrons to O₂), it doesn&amp;#39;t reduce NAD⁺. Reduction of NAD(P)⁺ happens upstream, in glycolysis and the TCA cycle, not in the respiratory chain itself.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Under aerobic conditions, the oxidized nucleotides in cells are reduced, e.g., in the respiratory chain, which leads to an equilibrium between the formation and depletion of NAD(P)H.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Switching air sparging to nitrogen sparging removes O₂, the respiratory chain&amp;#39;s final electron acceptor, so it can no longer re-oxidize NADH. NAD(P)H accumulates, producing exactly the step-like jump from FI_AE to FI_AN seen in the figure.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; After the sudden alteration from aerobic to anaerobic conditions (AA transition), the microbes are not able to re-oxidize all the reduced NAD(P)H, which can be tracked as an intracellular step-like increase of NAD(P)H fluorescence intensity.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The stem defines the relative fluorescence increase (ΔFI) during the AA transition as exactly this — a measure of yeast metabolic activity — since a larger jump reflects more active dehydrogenases generating NAD(P)H before the anaerobic block on its re-oxidation.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Measurements of NAD(P)H fluorescence intensity during AA transition can indicate the increasing metabolic activity of microbes under stress conditions.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q3/&#34;&gt;← Previous: Q53&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q5/&#34;&gt;Next: Q55 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=7&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q55 — X-Irradiation of Yeast — NAD(P)H Fluorescence and Metabolic Recovery</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q5/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/bioenergetics-central-metabolism/&#34;&gt;Bioenergetics &amp; Central Metabolism Overview&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;The metabolic activity of equal-sized cultures of yeast was explored under 3 conditions: non-irradiated, X-irradiated and recovered (during 24-hour post-irradiation incubation), determined as the relative increase in NADPH fluorescence intensity (FI) during forced aerobic-anaerobic (AA) transition, using the equation ΔFI = (FI_AN - FI_AE) × 100, where FI_AN and FI_AE represent the FI under anaerobic and aerobic conditions respectively.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q55-figure-1.png&#34; alt=&#34;Figure. Fluorescence intensity curves of NADPH during the aerobic-anaerobic transition for non-irradiated, X-irradiated, and recovered yeast cells. AS = air sparging, NS = nitrogen sparging.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure. NADPH fluorescence intensity during the aerobic-anaerobic transition, compared across the three conditions.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Using the figure and data above, determine whether the following statements are true or false.&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q5&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;X-irradiated cells still show a real, non-zero fluorescence signal at both the aerobic baseline and (weakly) after the switch to anaerobic conditions — dead cells with no residual metabolism would show no signal at all. Metabolism is heavily suppressed, not completely halted, and the cells are not all dead.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The metabolic activity of yeast cells was disrupted under the influence of X-radiation, i.e. the metabolism of yeast cells stopped, and they all died.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The X-irradiated curve isn&amp;#39;t just lower — it loses the characteristic step-like anaerobic jump entirely, a qualitative change in behavior rather than a simple scaling-down, consistent with radiation altering the cell&amp;#39;s NADP(H) pool rather than only reducing cell number.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Metabolic processes in yeast changed under the influence of X-radiation, and, as a result, the fluorescent properties of intracellular NADP(H) were altered due to the structural damage of NADPH.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Unlike the flat, unresponsive X-irradiated curve, the recovered cells regain a clear step-like rise upon the AA transition — the qualitative hallmark of a functioning respiratory response returns, even though the plateau doesn&amp;#39;t fully reach non-irradiated levels.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; During the post-irradiation incubation period, due to the repair processes in yeast cells, their metabolism was recovered, and they began to function like native yeasts.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Radiation-induced DNA damage and downstream mitochondrial/metabolic dysfunction reduce the cell&amp;#39;s capacity to generate NAD(P)H via glycolysis and the TCA cycle in the first place, so less fluorescent NADPH accumulates even before considering any AA transition.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; The weak fluorescence intensity of intracellular NADPH of X-irradiated yeasts is associated with a decrease in the amount of NADPH due to a severe decrease in metabolism.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q4/&#34;&gt;← Previous: Q54&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q6/&#34;&gt;Next: Q56 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=8&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q56 — Lysosomal Exocytosis in Cancer Cells</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q6/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/endomembrane-system-protein-trafficking/&#34;&gt;Endomembrane System &amp; Protein Trafficking&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Isolated cancer cells carry genetic changes and acquire an aggressive metastatic phenotype. One of these genetic changes is an activation of lysosomal exocytosis. The lysosomal system is one of the important participants of cancer transition, and thus, is a frequent target for cancer therapy. Lysosomal exocytosis is regulated by Ca²⁺ ions, which promote the fusion of lysosomes with the plasma membrane (PM) and the subsequent release of their contents into the extracellular matrix (ECM).&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q56-figure-1.png&#34; alt=&#34;Figure. Schematic representation of downstream effects of lysosomal exocytosis in cancer cells. Endolysosomes and multivesicular bodies (MVB) fuse into the lysosome, which fuses with the plasma membrane to release proteases (cathepsins), exosomes (growth factors, transcription factors, cytokines), and cancer lysosomotrophic drugs into the ECM — converting nearby fibroblasts and macrophages into CAF (cancer-associated fibroblasts) and TAM (tumor-associated macrophages).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure. Downstream effects of lysosomal exocytosis in cancer cells.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Determine whether the following statements are true or false.&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q6&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The figure shows MVBs fusing into the lysosome, which then fuses with the plasma membrane (Ca²⁺-triggered lysosomal exocytosis) to release exosomes carrying growth factors, transcription factors and cytokines into the ECM, where neighbouring macrophages and fibroblasts take them up and convert into TAM and CAF.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; Exosomes, which contain signaling molecules, leave the cell by means of lysosomal exocytosis and promote the conversion of macrophages and fibroblasts into cancer-associated fibroblasts (CAF) and tumor-associated macrophages (TAM).&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Lysosomes are acidic (pH ~4.5–5). A weakly basic drug becomes protonated once inside and can no longer cross the membrane back out — this ion-trapping (lysosomotropism) causes it to accumulate there, matching the &amp;#39;cancer lysosomotrophic drug&amp;#39; shown concentrated inside the lysosome in the figure.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Weakly alkaline chemotherapeutic drugs tend to accumulate in lysosomes&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The figure&amp;#39;s legend explicitly labels the released vesicles as exosomes carrying growth factors, transcription factors and cytokines — signaling cargo that reaches and acts on neighbouring cells after lysosomal exocytosis releases it into the ECM.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Lysosomal exocytosis enables the release of exosomes, which distribute signaling molecules to surround cells.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Once a lysosomotropic drug is sequestered inside the lysosome (per statement B), lysosomal exocytosis expels that lysosome&amp;#39;s contents — including the trapped drug — out of the cell, lowering the intracellular drug concentration and conferring resistance.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; One mechanism for cancer cells to become resistant against chemotherapeutics is the efflux of chemotherapeutic drugs, which could occur through lysosomal exocytosis&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q5/&#34;&gt;← Previous: Q55&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q7/&#34;&gt;Next: Q57 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=10&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q57 — PIP2/PIP3 Signaling in T Cells — PTEN and Antigen Dose</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q7/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/immune-physiology/&#34;&gt;Immune Physiology&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/cell-signaling-communication/&#34;&gt;Cell Signaling &amp; Communication&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;After the antigen binds to the receptors on T cells, phosphatidylinositol-4-phosphate (PIP1) is phosphorylated to yield PIP2, which is then phosphorylated again resulting in PIP3. Both new lipid compounds are crucial messengers of the immune response. Results of a cell culture experiment to analyze this process are shown on the plots. Each trace is a time series for PIP2 or PIP3. There are four experimental groups in total: (1) stimulated with low dosage of the antigen; (2) stimulated with low dosage of antigen, while adding SF1670 (the inhibitor of enzyme PTEN, which is a key enzyme involved in lipid signaling); (3) stimulated with high dosage of antigen; (4) stimulated with high dosage of antigen, while adding SF1670.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q57-figure-1.png&#34; alt=&#34;Figure. Left plot: experimentally measured PIP2 concentration vs time. Right plot: PIP3 concentration vs time. Blue = low dosage stimulation, red = high dosage. Solid lines = no SF1670; dotted lines = SF1670 (PTEN inhibited) used.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure. PIP2 (left) and PIP3 (right) concentration over time under four experimental conditions.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Determine whether the following statement are true or false:&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q7&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Every PIP2 trace in the figure peaks by ~10 minutes and has collapsed back near baseline by 30 minutes even though the antigen stimulus is still present, consistent with PIP2 acting only as a short-lived trigger rather than a sustained signal.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; PIP2 concentration quickly returns to initial levels even when the antigen is still present; thus, it cannot mediate long-term changes in cell fate&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;PTEN converts PIP3 back to PIP2, so intact PTEN does shift the balance toward PIP2 in general — but the statement&amp;#39;s claim that this holds &amp;#39;reliably&amp;#39; overstates it, since the size of the effect clearly differs between the low- and high-dose conditions in the figure rather than being a fixed, dose-independent shift.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Presence of PTEN activity reliably increases the concentration ratio of PIP2 to PIP3&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Comparing low- and high-dose traces, the relative balance between PIP2 and PIP3 differs by dose — high-dose stimulation drives proportionally more PIP3 production — so the PIP2:PIP3 ratio does encode information about how strongly the antigen stimulated the cell.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Concentration ratio of PIP2 to PIP3 contains information on the strength of the antigen.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;With PTEN intact, higher antigen dose also drives stronger PI3K activity converting PIP2 onward into PIP3, so the net PIP2 seen doesn&amp;#39;t simply scale up with antigen dose — more antigen doesn&amp;#39;t reliably mean more PIP2 once that faster consumption is accounted for.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Since antigen binding mediates production of PIP2, more antigen binding will result in more PIP2 under intact PTEN&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q6/&#34;&gt;← Previous: Q56&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q8/&#34;&gt;Next: Q58 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=12&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q58 — TAK1 Kinase and Takinib — Competitive vs Non-Competitive Inhibition</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q8/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/enzyme-kinetics-regulation/&#34;&gt;Enzyme Kinetics &amp; Regulation&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;TAK1 is a protein kinase which transfers a phosphate group from ATP to a substrate. In order to elucidate the action mechanism of Takinib, a novel inhibitor of TAK1, two experiments were carried out. In experiment A, TAK1 was added to the solution of ATP, Takinib and TAK1 substrate, and the initial reaction rate was measured for different ATP concentrations and different amounts of Takinib. In experiment B, TAK1 was pre-incubated with 5 μM ATP for 3 hours and then the same steps as in experiment A were carried out with the pre-incubated TAK1. The results of experiments A and B are summarized below, with the amount of inhibitor used indicated to the right.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q58-figure-1.png&#34; alt=&#34;Figure. Panel A: initial reaction rate vs [ATP] for TAK1 not pre-incubated, at 0, 10, and 50 nM Takinib — Vmax drops with increasing Takinib while the curves rise at a similar rate. Panel B: same but with TAK1 pre-incubated with ATP for 3 hours — curves converge to a similar Vmax regardless of Takinib concentration.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure. Dependence of initial reaction rate on starting ATP concentration, at different Takinib doses, without (A) and with (B) ATP pre-incubation.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Determine whether the following statements are true or false:&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q8&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;In Experiment B (pre-incubated with ATP), the curves for all Takinib concentrations converge toward the same Vmax at saturating ATP, only differing in how quickly they approach it — the classic same-Vmax, shifted-apparent-Km signature of competitive inhibition.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; If TAK1 is pre-incubated with 5 μM ATP for 3 hours, then Takinib, added later, acts as a competitive inhibitor.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;In Experiment A, Takinib lowers Vmax while the curves rise at a similar rate (Km largely unchanged) — a non-competitive pattern, not a Km effect. Only in Experiment B does Takinib behave competitively, so it does not significantly affect Km in both experiments.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; In both experiments, Takinib significantly affects TAK1&amp;#39;s Michaelis constant with respect to ATP.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Takinib&amp;#39;s mode of action changes depending on whether ATP has pre-occupied TAK1: non-competitive (lowered Vmax) without pre-incubation, competitive (shifted Km, same Vmax) with it. That switch implies Takinib can engage a site distinct from the catalytic center, one whose availability depends on prior ATP binding.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Experiments A and B indicate that TAK1 has another interaction site, in addition to the enzymatic active center.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;In Experiment A, Takinib caps the reaction&amp;#39;s Vmax at a lower plateau regardless of how much ATP is added — the defining feature of non-competitive inhibition, where excess substrate cannot outcompete the inhibitor&amp;#39;s effect.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; If TAK1 was not pre-incubated, then the presence of Takinib could be compensated by an excess of ATP.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q7/&#34;&gt;← Previous: Q57&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q9/&#34;&gt;Next: Q59 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=13&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q59 — Mitochondrial Innate Immunity — Yme1L, SLC25A33 and mtDNA Release</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q9/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/mitochondria-chloroplasts-structure-origin/&#34;&gt;Mitochondria &amp; Chloroplasts: Structure &amp; Endosymbiotic Origin&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/immune-physiology/&#34;&gt;Immune Physiology&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Mitochondria are a convergence point of cellular signals and are closely related to signalling pathways of innate immunity. The immune response enhances antiviral immunity and protects nuclear DNA from damage.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q59-figure-1.png&#34; alt=&#34;Figure. mtDNA-dependent innate immunity is coupled to cellular nucleotide metabolism. Yme1L = an ATP-dependent proteolytic complex of the internal mitochondrial membrane responsible for maintaining mitochondrial morphology (and normally degrading SLC25A33); STING = an adaptive protein responsible for stimulating interferons; SLC25A33 = pyrimidine transporter; TREX1 = exonuclease; cGAS = cGMP-AMP-synthase. Yme1L knockout causes SLC25A33 accumulation and impaired pyrimidine synthesis, leading to imbalanced nucleotide pools, mtDNA release, cGAS-STING activation, innate immunity and autophagy; TREX1 degrades released mtDNA, replenishing nucleotide pools.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure. mtDNA-dependent innate immunity coupled to cellular nucleotide metabolism.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Determine whether the following statements are true or false:&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q9&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;The figure shows the opposite: losing Yme1L lets SLC25A33 accumulate (Yme1L normally degrades it) and impairs de novo pyrimidine synthesis. Both effects disrupt pyrimidine metabolism rather than supporting it.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The knockout of Yme1L in cells supports pyrimidine metabolism by maintaining de novo synthesis of nucleotides and proteolysis of SLC25A33.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;SLC25A33 accumulation increases mitochondrial pyrimidine uptake, contributing to imbalanced nucleotide pools that trigger mtDNA release; released mtDNA is sensed by cGAS, activating STING and downstream innate immune signalling — a full causal chain traced in the figure.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; The information presented in this figure indicates that the accumulation of SLC25A33 can cause an immune response.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The figure shows TREX1 degrading released mtDNA fragments, with an explicit arrow from that degradation to &amp;#39;replenishment of nucleotide pools&amp;#39; — feeding back to reduce the nucleotide imbalance that triggered mtDNA release in the first place.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; TREX1-mediated lysis of DNA can restore the imbalance of nucleotides in the cell.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Losing Yme1L drives the pathway toward MORE mtDNA release and cGAS-STING activation, which upregulates interferon-stimulated gene expression, not downregulates it — the opposite of what the statement claims.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; The inhibition of the mitochondrial protease Yme1L downregulates the expression of genes needed for interferon production.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q8/&#34;&gt;← Previous: Q58&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q10/&#34;&gt;Next: Q60 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=14&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q60 — Alzheimer&#39;s Disease — APP Processing by α-, β- and γ-Secretases</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q10/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/protein-structure-folding-function/&#34;&gt;Protein Structure, Folding &amp; Function&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Alzheimer&amp;rsquo;s disease is related to the aggregation of amyloid peptides, followed by the degeneration of neurons and disruption of cholinergic transmission. Among patients suffering from Alzheimer&amp;rsquo;s disease, the β-amyloid peptides (Aβ) are formed from the cleavage of the protein APP. The normal protein (APP) is composed of many α-helices, making it highly soluble. The β-amyloid, in contrast, has a secondary structure rich in β-sheets, which aggregate easily and create insoluble fibers. APP is a multi-domain transmembrane protein. There are three proteases, which take part in the proteolytic processing of APP: α-, β-, and γ-secretases.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q60-figure-1.png&#34; alt=&#34;Figure 1. APP multi-domain protein modification — β-cleavage followed by γ-cleavage releases the amyloidogenic Aβ peptide (red); α-cleavage (which cuts within the Aβ sequence) followed by γ-cleavage instead releases non-amyloidogenic fragments (teal), precluding Aβ formation.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 1. APP multi-domain protein modification by α-, β- and γ-secretases.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Determine whether the following statements are true or false:&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q10&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;α-secretase cuts within the Aβ sequence itself, physically severing it before it can ever form as an intact peptide. The resulting C-terminal fragment, lacking part of the Aβ sequence, can only yield the non-amyloidogenic p3 fragment after γ-cleavage — never full Aβ.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; α-secretase cleaves the mature APP in a certain location and, thus, prevents the formation of β-amyloid.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;β-secretase cleaves at the N-terminal boundary of the Aβ domain, leaving a membrane-bound fragment that still contains the complete Aβ sequence; γ-secretase then cleaves within the membrane at the C-terminal boundary, releasing the intact Aβ peptide. Both cleavages are required.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; β- and γ-secretases take part in the formation of the β-amyloid peptide.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;α-cleavage produces one soluble, secreted N-terminal fragment (sAPPα, released extracellularly — not membrane-bound) and one membrane-anchored C-terminal fragment. Only the C-terminal piece is actually transmembrane.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Two transmembrane protein fragments are formed due to α-secretase activity: the N-terminal fragment and the C-terminal fragment.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;This reproduces the official key&amp;#39;s call. The C-terminal fragment retains APP&amp;#39;s transmembrane span, which would be expected to be largely α-helical like most TM domains — but the key marks this false, likely reflecting the β-sheet-forming propensity of the Aβ-derived portion once it is processed, which the exam appears to weight as the dominant structural feature.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; In the C-terminal transmembrane fragment, formed due to α-secretase activity, the α-helical structure dominates.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q9/&#34;&gt;← Previous: Q59&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q11/&#34;&gt;Next: Q61 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=16&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q61 — RNA Virus Replication Cycles — Genome Classification</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q11/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/nucleotide-nucleic-acid-chemistry/&#34;&gt;Nucleotide &amp; Nucleic Acid Chemistry&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Based on the structure of their genome and specific features of the replication process, RNA viruses are divided into the following groups:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Single-strand (+) RNA viruses&lt;/li&gt;
+&lt;li&gt;Single-strand (-) RNA viruses&lt;/li&gt;
+&lt;li&gt;Double-strand (+-) RNA viruses&lt;/li&gt;
+&lt;li&gt;Retroid viruses (including retroviruses)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q61-figure-1.png&#34; alt=&#34;Figure. Replication cycles of different RNA viruses, by class: Positive-strand RNA, Double-strand RNA, Negative-strand RNA, Retroid RNA. ‘&amp;#43;’ denotes a positive strand of RNA; ‘-’ denotes a negative strand of RNA. Tr = transcription; T = translation; R = replication; E = encapsidation; RdRp = RNA-dependent RNA polymerase; RT = reverse transcriptase.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure. Replication cycles of positive-strand, double-strand, negative-strand, and retroid RNA viruses.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Determine whether the following statements are true or false:&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q11&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;A (&amp;#43;)RNA genome can be read directly by host ribosomes as mRNA, so it must itself encode every protein needed for replication, including the RNA-dependent RNA polymerase used to copy the genome.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The genome of (&amp;#43;)RNA viruses encodes many proteins, including the RNA-dependent RNA-polymerase&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;(&amp;#43;)RNA viruses don&amp;#39;t need to package RdRp in the virion at all — their genome is translated directly upon entry to produce RdRp. Only viruses whose genome can&amp;#39;t be directly translated (negative-strand and double-strand RNA viruses) must carry pre-packaged RdRp.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; In all RNA-containing viruses, the RNA-dependent RNA-polymerase enters the target cell with RNA.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The packaged RdRp of a dsRNA virus transcribes (&amp;#43;) strands, which do double duty: host ribosomes translate them into viral proteins, and the same (&amp;#43;) strands also serve as templates for RdRp to synthesize new (-) strands, rebuilding the double-stranded genome.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; During the replication process of double-strand (&amp;#43;-) RNA viruses, the single-stranded (&amp;#43;) RNA molecules synthesized in the target cells ensure viral protein synthesis by the host cell&amp;#39;s ribosomes and serve as a template for the synthesis of (-) RNA chains with the participation of viral RNA polymerase.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Retroviruses encode reverse transcriptase in their pol gene and package the enzyme into the virion itself, so it&amp;#39;s ready immediately after entry to convert the (&amp;#43;)RNA genome into dsDNA for integration into the host genome.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; The genome of retroviruses encodes the reverse transcriptase enzyme, which is included in the viral particle and ensures the synthesis of DNA from viral RNA upon infection.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q10/&#34;&gt;← Previous: Q60&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q12/&#34;&gt;Next: Q62 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=17&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q62 — Pine Needle Cross-Section — Resin Duct and Mesophyll</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q12/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q12/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/leaf-anatomy/&#34;&gt;Leaf Anatomy&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;The figure depicts a cross-section of a plant organ. Observe the figure and choose whether the following statements are true or false.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q62-figure-1.png&#34; alt=&#34;Figure. Cross-section of a plant organ showing structure a (a ring of cells around a central empty lumen, dashed outline), structure b (mesophyll tissue with dotted inclusions), and space c (an air cavity near the epidermis).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure. Cross-section of a plant organ, with structures a, b, and c labeled.&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q12&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Structure b is the mesophyll tissue filling most of the section, packed with the small dotted inclusions typical of chloroplasts — the site where CO₂ is fixed into sugar via the Calvin cycle.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The cells labeled with b capture and assimilate CO2 into sugars.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Space c is an air cavity near the epidermis, not a stomatal pore — water-loss regulation is the job of guard cells flanking a stoma, which aren&amp;#39;t what&amp;#39;s labeled here.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; The space labeled with c regulates water loss.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Structure a is a ring of epithelial-type cells around a central empty lumen — the profile of a resin duct, not a vascular bundle. It doesn&amp;#39;t function as a water/nutrient transport conduit at all.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; The structure labeled with a carries water and nutrition to different parts of the plants.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The ring of secretory cells surrounding a central canal in structure a is characteristic of a conifer resin duct: the epithelial cells lining the canal produce resin, which accumulates in the central space.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; The structure labeled with a produces and stores resin.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q11/&#34;&gt;← Previous: Q61&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q13/&#34;&gt;Next: Q63 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=19&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q63 — Land Plant Phylogeny — Evaluating Four Cladograms</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q13/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q13/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/plant-body-plans-major-lineages/&#34;&gt;Plant Body Plans Across Major Lineages&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;The following cladograms show the course of the evolution of green algae and land plants.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q63-figure-1.png&#34; alt=&#34;Figure. Four candidate cladograms: (I) green alga, (moss, hornwort); (II) pine, (fern, cycad); (III) club-moss, (fern, liverwort); (IV) green alga, (moss, horsetail).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure. Four candidate cladograms (I–IV) of green algae and land plant relationships.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Observe them and determine if they describe the evolution correctly (true) or incorrectly (false).&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q13&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Cladogram I groups moss and hornwort as sisters with green alga as the outgroup — a reasonable grouping of two bryophyte lineages to the exclusion of a non-land-plant alga.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; Cladogram I.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Cladogram II pairs fern with cycad as sisters, leaving pine as the outgroup — but cycad and pine are both seed plants (gymnosperms) and should form a clade together, to the exclusion of fern, a seedless vascular plant. The tree groups the wrong two taxa.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Cladogram II.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Cladogram III pairs fern with liverwort as sisters, leaving club-moss as the outgroup — but liverwort is a non-vascular bryophyte while fern and club-moss are both vascular plants, so fern should group with club-moss instead, not with liverwort.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Cladogram III.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Cladogram IV groups moss and horsetail as sisters with green alga as the outgroup — correctly keeping the land plants (moss, horsetail) together as a clade separate from the non-land-plant green alga.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Cladogram IV.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q12/&#34;&gt;← Previous: Q62&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q14/&#34;&gt;Next: Q64 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=20&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q64 — The C4 Rice Project — Engineering C4 Photosynthesis into a C3 Crop</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q14/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q14/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/5-plant-physiology/calvin-cycle-photorespiration-c4-cam/&#34;&gt;Calvin Cycle, Photorespiration &amp; C4/CAM Biochemistry&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;The C4 Rice Project aims to introduce C4 photosynthetic traits into rice, &lt;em&gt;Oryza sativa&lt;/em&gt;, a C3 species.&lt;/p&gt;
+&lt;p&gt;Choose whether the following statements are true or false:&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q14&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Converting rice to C4 needs new biochemistry (PEP carboxylase, decarboxylases, coordinated cell-specific expression) and new development (Kranz anatomy — enlarged, chloroplast-differentiated bundle sheath cells), so both dimensions must change.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The modified C4 rice plants will have both altered biochemical and developmental pathways.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;C4 photosynthesis doesn&amp;#39;t eliminate Rubisco — it concentrates CO₂ around it in the bundle sheath cells so it works more efficiently with less photorespiration. Rubisco remains essential and fully functional.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; The enzyme Rubisco will be non-functional in modified C4 rice plants.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;C4 plants gain water-use efficiency from their CO₂-concentrating biochemistry allowing lower stomatal conductance for the same carbon gain, not from anatomically smaller stomatal pores — the C4 Rice Project targets the concentrating mechanism, not stomatal pore size.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; C4 rice plants must have smaller stomatal pore size to decrease rates of transpiration and increase photosynthetic water use efficiency.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The C4 cycle depends on a bundle-sheath-localized decarboxylase (e.g. NADP-malic enzyme) to release CO₂ from the transported C4 acid near Rubisco. Rice lacks this bundle-sheath decarboxylase activity, so the corresponding genes need to be introduced and correctly targeted.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Genes for decarboxylase enzymes will need to be introduced into the C4 rice plants.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q13/&#34;&gt;← Previous: Q63&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q15/&#34;&gt;Next: Q65 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=21&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q65 — Arabidopsis Sun vs Shade Leaves — Cross-Section Comparison</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q15/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q15/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/leaf-anatomy/&#34;&gt;Leaf Anatomy&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;The following images are cross-sections of two different leaves of the same individual of &lt;em&gt;Arabidopsis thaliana&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q65-figure-1.png&#34; alt=&#34;Figure 1. Cross-sections of two leaves of A. thaliana. Left: a thicker leaf with well-developed, elongated palisade mesophyll (label 1) and looser cells beneath (label 2/3). Right: a thinner leaf with less organized mesophyll, palisade (1) and spongy mesophyll (3) labeled.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 1. Cross-sections of two leaves of A. thaliana, with cell types labeled 1, 2, and 3.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Use the information and figures to determine whether the following statements are true or false.&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q15&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Label 1 marks the elongated palisade mesophyll cells, densely packed with chloroplasts — the leaf&amp;#39;s primary site for fixing CO₂ into sugar via the Calvin cycle.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The cells labeled with 1 capture and assimilate CO2 into sugars.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Kranz anatomy is the bundle-sheath-centered wreath arrangement specific to C4 plants. Arabidopsis is a C3 plant, so no cells in either cross-section — including those labeled 2 — display Kranz anatomy.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; The cells labeled with 2 demonstrate Kranz anatomy.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The left cross-section is thicker with well-developed, elongated palisade layers — typical of a sun leaf maximizing carbon-fixation capacity. The right section is thinner with looser, less organized mesophyll — typical of a shade leaf maximizing light capture per unit tissue.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; The leaf on the left was grown under direct sunlight, while the leaf on the right was in the shade.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Cells at label 1 are sun-leaf palisade cells, optimized for carbon fixation under high light and so invest more in Rubisco relative to chlorophyll. Cells at label 3 are spongy mesophyll, optimized for capturing limited light rather than fixing carbon at maximum rate, so they invest relatively more in chlorophyll and less in Rubisco — a lower Rubisco:chlorophyll ratio.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; The cells labeled with 3 have a lower Rubisco/chlorophyll ratio than cells labeled with 1.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q14/&#34;&gt;← Previous: Q64&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/&#34;&gt;Back to Theoretical 2 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=22&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Timed Attempt — Theoretical 2</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/attempt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/attempt/</guid>
+      <description>
+        
+        
+        &lt;div id=&#34;papers-attempt-root&#34; class=&#34;papers-attempt-root&#34;&gt;
+&lt;section id=&#34;attempt-start&#34; class=&#34;attempt-screen&#34;&gt;
+  &lt;h2&gt;Timed Attempt — Theoretical 2&lt;/h2&gt;
+  &lt;p&gt;50 questions · 180 minutes. This is a sample duration until the real IBO time limit is confirmed — treat it as approximate for now.&lt;/p&gt;
+  &lt;p&gt;Once you start, the page will try to go fullscreen and the timer begins immediately — there&#39;s no pause. You can jump to any question in any order, mark questions for review, and change answers freely before submitting. Subject categories are hidden until after you submit.&lt;/p&gt;
+  &lt;div id=&#34;attempt-last-report-summary&#34;&gt;&lt;/div&gt;
+  &lt;button type=&#34;button&#34; id=&#34;attempt-start-btn&#34; class=&#34;papers-nav-btn papers-nav-next&#34;&gt;Start Timed Attempt&lt;/button&gt;
+&lt;/section&gt;
+&lt;section id=&#34;attempt-live&#34; class=&#34;attempt-screen&#34; hidden&gt;
+  &lt;div class=&#34;attempt-topbar&#34;&gt;
+    &lt;div class=&#34;attempt-timer&#34; id=&#34;attempt-timer&#34;&gt;--:--&lt;/div&gt;
+    &lt;button type=&#34;button&#34; id=&#34;attempt-refullscreen-btn&#34; class=&#34;papers-nav-btn&#34; hidden&gt;Re-enter Fullscreen&lt;/button&gt;
+    &lt;button type=&#34;button&#34; id=&#34;attempt-submit-btn&#34; class=&#34;attempt-submit-btn&#34;&gt;Submit Test&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;attempt-layout&#34;&gt;
+    &lt;aside class=&#34;attempt-palette&#34; id=&#34;attempt-palette&#34;&gt;&lt;/aside&gt;
+    &lt;main class=&#34;attempt-main&#34;&gt;
+      &lt;div class=&#34;attempt-question-header&#34;&gt;
+        &lt;span id=&#34;attempt-question-number&#34;&gt;&lt;/span&gt;
+        &lt;button type=&#34;button&#34; id=&#34;attempt-mark-btn&#34; class=&#34;attempt-mark-btn&#34;&gt;☆ Mark for Review&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div id=&#34;attempt-question-body&#34; class=&#34;content&#34;&gt;&lt;/div&gt;
+      &lt;div class=&#34;attempt-question-nav&#34;&gt;
+        &lt;button type=&#34;button&#34; id=&#34;attempt-prev-btn&#34; class=&#34;papers-nav-btn papers-nav-prev&#34;&gt;← Previous&lt;/button&gt;
+        &lt;button type=&#34;button&#34; id=&#34;attempt-clear-btn&#34; class=&#34;papers-nav-btn&#34;&gt;Clear Response&lt;/button&gt;
+        &lt;button type=&#34;button&#34; id=&#34;attempt-next-btn&#34; class=&#34;papers-nav-btn papers-nav-next&#34;&gt;Next →&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/main&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+&lt;section id=&#34;attempt-report&#34; class=&#34;attempt-screen&#34; hidden&gt;&lt;/section&gt;
+&lt;/div&gt;
+&lt;script id=&#34;papers-attempt-data&#34; type=&#34;application/json&#34;&gt;{&#34;basePath&#34;:&#34;/papers/ibo/2022/theoretical-2/&#34;,&#34;durationMinutes&#34;:180,&#34;olympiad&#34;:&#34;ibo&#34;,&#34;problems&#34;:[{&#34;id&#34;:&#34;q1&#34;,&#34;link&#34;:&#34;/papers/ibo/2022/theoretical-2-exam.pdf#page=2&#34;,&#34;name&#34;:&#34;Cancer Cell Metabolism — Aerobic Glycolysis and the Warburg Effect&#34;,&#34;number&#34;:&#34;Q51&#34;,&#34;statements&#34;:[{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;Quiescent normal cells run pyruvate through PDC into the TCA cycle for ~36 ATP via oxidative phosphorylation. Cancer cells overexpress PDKs, which inactivate PDC and reroute pyruvate to lactate even with oxygen present — exactly the oxidative-phosphorylation-to-aerobic-glycolysis switch (the Warburg effect) described in the statement.&#34;,&#34;letter&#34;:&#34;A&#34;,&#34;text&#34;:&#34;When the normal cell turns cancerous, it switches its glucose metabolism from oxidative phosphorylation to aerobic glycolysis.&#34;},{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;Both halves are backwards: cancer cells sharply increase glucose uptake and glycolytic flux (not suppress it), while TCA-cycle ATP production actually falls because PDK-mediated PDC inactivation starves the cycle of acetyl-CoA.&#34;,&#34;letter&#34;:&#34;B&#34;,&#34;text&#34;:&#34;Cancer cells undergo alterations in metabolic pathways that enable them to suppress glucose uptake and glycolysis. This leads to stimulation of ATP production in the TCA cycle in normal conditions.&#34;},{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;Aerobic glycolysis yields far less ATP per glucose than oxidative phosphorylation, but tumor cells compensate with massively increased glucose uptake and glycolytic flux — this is precisely what lets glycolysis sustain their energy balance despite hypoxia.&#34;,&#34;letter&#34;:&#34;C&#34;,&#34;text&#34;:&#34;In rapidly growing tumors where hypoxia occurs, increased glycolysis can not support sufficient ATP production and bioenergetic homeostasis of cells.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;Figure 1b shows glutamine imported and converted via glutaminase to glutamate, then α-ketoglutarate, refilling the TCA cycle (anaplerosis) despite reduced pyruvate entry. Citrate exported from this cycle feeds lipid synthesis — supporting both anabolic and bioenergetic needs of the proliferating cell.&#34;,&#34;letter&#34;:&#34;D&#34;,&#34;text&#34;:&#34;In cancer cells, beyond the increase of glycolysis, increased glutaminolysis and fatty acid biosynthesis, generate TCA cycle intermediates, which are often used for anabolic and bioenergetic purposes.&#34;}],&#34;subjects&#34;:[{&#34;link&#34;:&#34;/resources/1-cell-molecular/bioenergetics-central-metabolism/&#34;,&#34;name&#34;:&#34;Bioenergetics \u0026 Central Metabolism Overview&#34;}]},{&#34;id&#34;:&#34;q2&#34;,&#34;link&#34;:&#34;/papers/ibo/2022/theoretical-2-exam.pdf#page=4&#34;,&#34;name&#34;:&#34;Cryopyrin Inflammasome — Western Blot of WT and Mutant Variants&#34;,&#34;number&#34;:&#34;Q52&#34;,&#34;statements&#34;:[{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;In the 293-caspase-1 cells (no ASC), none of the cryopyrin constructs produce detectable p35 or IL-1β, while the same WT construct does produce them in 293-ASC-caspase-1 cells (which express ASC). Cryopyrin therefore needs ASC to activate caspase-1.&#34;,&#34;letter&#34;:&#34;A&#34;,&#34;text&#34;:&#34;Cryopyrin-dependent IL-1β production is not dependent on ASC.&#34;},{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;R260W shows no detectable p35 or IL-1β in either cell line — indistinguishable from the empty-vector control. A partially active mutant would show reduced but visible cleavage bands, which isn&#39;t observed; R260W behaves as a loss-of-function mutant here, not a partial one.&#34;,&#34;letter&#34;:&#34;B&#34;,&#34;text&#34;:&#34;The R260W mutant is partially active, as compared to wild type cryopyrin.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;The cryopyrin blot shows D303N expressed at a similar size and intensity to WT cryopyrin. A truncating mutation early in the sequence would produce a short or undetectable protein, which is not what&#39;s observed — so D303N is a full-length missense variant, not a truncation.&#34;,&#34;letter&#34;:&#34;C&#34;,&#34;text&#34;:&#34;The D303N mutant does not contain a truncating mutation early in the gene sequence.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;IPAF-ΔLRR causes procaspase-1 autocleavage independently of cryopyrin or ASC. It produces clear p35 and IL-1β bands in both cell lines regardless of ASC status, giving a maximum-signal benchmark that confirms the caspase-1 cleavage machinery works in each line.&#34;,&#34;letter&#34;:&#34;D&#34;,&#34;text&#34;:&#34;IPAF-ΔLRR served as a positive control in this experiment for each cell line.&#34;}],&#34;subjects&#34;:[{&#34;link&#34;:&#34;/resources/3-animal-physiology/immune-physiology/&#34;,&#34;name&#34;:&#34;Immune Physiology&#34;}]},{&#34;id&#34;:&#34;q3&#34;,&#34;link&#34;:&#34;/papers/ibo/2022/theoretical-2-exam.pdf#page=5&#34;,&#34;name&#34;:&#34;Telomerase — Mechanism of Telomere Extension&#34;,&#34;number&#34;:&#34;Q53&#34;,&#34;statements&#34;:[{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;Telomerase is a ribonucleoprotein — its reverse-transcriptase protein subunit needs the enzyme&#39;s own RNA component (containing the CAAUCC template) to know what sequence to add. Protein alone has no template to copy from.&#34;,&#34;letter&#34;:&#34;A&#34;,&#34;text&#34;:&#34;The protein component of telomerase is sufficient to elongate telomeres.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;Figures 1b–d show the parental (mother) strand&#39;s 3&#39; overhang being extended by telomerase&#39;s reverse-transcriptase activity, using the enzyme&#39;s internal CAAUCC RNA as template, then translocating to repeat the process.&#34;,&#34;letter&#34;:&#34;B&#34;,&#34;text&#34;:&#34;The mother strand of DNA is sequentially elongated on the 3&#39; end, using the telomerase RNA as a template.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;Without functional telomerase, telomeres shorten uncorrected with each division, driving premature cellular senescence in high-turnover tissues — consistent with telomerase-deficiency syndromes that present with bone-marrow failure and premature-aging features.&#34;,&#34;letter&#34;:&#34;C&#34;,&#34;text&#34;:&#34;Loss-of-function mutations in the telomerase protein are likely to cause diseases such as progeria or bone-marrow failure.&#34;},{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;HeLa is an immortalized cancer cell line specifically because it keeps telomerase active (not repressed), continually rebuilding its telomeres so the cells can divide indefinitely without triggering senescence.&#34;,&#34;letter&#34;:&#34;D&#34;,&#34;text&#34;:&#34;Telomere length has a threshold value in cells and in HeLa cells telomerase is repressed to maintain this threshold value.&#34;}],&#34;subjects&#34;:[{&#34;link&#34;:&#34;/resources/1-cell-molecular/dna-structure-replication/&#34;,&#34;name&#34;:&#34;DNA Structure \u0026 Replication&#34;}]},{&#34;id&#34;:&#34;q4&#34;,&#34;link&#34;:&#34;/papers/ibo/2022/theoretical-2-exam.pdf#page=7&#34;,&#34;name&#34;:&#34;NAD(P)H Fluorescence During the Aerobic–Anaerobic Transition in Yeast&#34;,&#34;number&#34;:&#34;Q54&#34;,&#34;statements&#34;:[{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;The fluorophore in both molecules is the reduced nicotinamide ring; the 2&#39;-phosphate that distinguishes NADPH from NADH sits away from that ring, so their excitation/emission properties are essentially identical. The oxidized forms (NAD⁺/NADP⁺) lack the electron configuration needed to fluoresce.&#34;,&#34;letter&#34;:&#34;A&#34;,&#34;text&#34;:&#34;The reduced phosphorylated (NADPH) and nonphosphorylated (NADH) pyridine nucleotides have essentially equivalent fluorescence properties while their oxidized forms are non-fluorescent.&#34;},{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;This has the respiratory chain&#39;s role backwards: the chain oxidizes NADH to NAD⁺ (donating electrons to O₂), it doesn&#39;t reduce NAD⁺. Reduction of NAD(P)⁺ happens upstream, in glycolysis and the TCA cycle, not in the respiratory chain itself.&#34;,&#34;letter&#34;:&#34;B&#34;,&#34;text&#34;:&#34;Under aerobic conditions, the oxidized nucleotides in cells are reduced, e.g., in the respiratory chain, which leads to an equilibrium between the formation and depletion of NAD(P)H.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;Switching air sparging to nitrogen sparging removes O₂, the respiratory chain&#39;s final electron acceptor, so it can no longer re-oxidize NADH. NAD(P)H accumulates, producing exactly the step-like jump from FI_AE to FI_AN seen in the figure.&#34;,&#34;letter&#34;:&#34;C&#34;,&#34;text&#34;:&#34;After the sudden alteration from aerobic to anaerobic conditions (AA transition), the microbes are not able to re-oxidize all the reduced NAD(P)H, which can be tracked as an intracellular step-like increase of NAD(P)H fluorescence intensity.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;The stem defines the relative fluorescence increase (ΔFI) during the AA transition as exactly this — a measure of yeast metabolic activity — since a larger jump reflects more active dehydrogenases generating NAD(P)H before the anaerobic block on its re-oxidation.&#34;,&#34;letter&#34;:&#34;D&#34;,&#34;text&#34;:&#34;Measurements of NAD(P)H fluorescence intensity during AA transition can indicate the increasing metabolic activity of microbes under stress conditions.&#34;}],&#34;subjects&#34;:[{&#34;link&#34;:&#34;/resources/1-cell-molecular/bioenergetics-central-metabolism/&#34;,&#34;name&#34;:&#34;Bioenergetics \u0026 Central Metabolism Overview&#34;}]},{&#34;id&#34;:&#34;q5&#34;,&#34;link&#34;:&#34;/papers/ibo/2022/theoretical-2-exam.pdf#page=8&#34;,&#34;name&#34;:&#34;X-Irradiation of Yeast — NAD(P)H Fluorescence and Metabolic Recovery&#34;,&#34;number&#34;:&#34;Q55&#34;,&#34;statements&#34;:[{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;X-irradiated cells still show a real, non-zero fluorescence signal at both the aerobic baseline and (weakly) after the switch to anaerobic conditions — dead cells with no residual metabolism would show no signal at all. Metabolism is heavily suppressed, not completely halted, and the cells are not all dead.&#34;,&#34;letter&#34;:&#34;A&#34;,&#34;text&#34;:&#34;The metabolic activity of yeast cells was disrupted under the influence of X-radiation, i.e. the metabolism of yeast cells stopped, and they all died.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;The X-irradiated curve isn&#39;t just lower — it loses the characteristic step-like anaerobic jump entirely, a qualitative change in behavior rather than a simple scaling-down, consistent with radiation altering the cell&#39;s NADP(H) pool rather than only reducing cell number.&#34;,&#34;letter&#34;:&#34;B&#34;,&#34;text&#34;:&#34;Metabolic processes in yeast changed under the influence of X-radiation, and, as a result, the fluorescent properties of intracellular NADP(H) were altered due to the structural damage of NADPH.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;Unlike the flat, unresponsive X-irradiated curve, the recovered cells regain a clear step-like rise upon the AA transition — the qualitative hallmark of a functioning respiratory response returns, even though the plateau doesn&#39;t fully reach non-irradiated levels.&#34;,&#34;letter&#34;:&#34;C&#34;,&#34;text&#34;:&#34;During the post-irradiation incubation period, due to the repair processes in yeast cells, their metabolism was recovered, and they began to function like native yeasts.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;Radiation-induced DNA damage and downstream mitochondrial/metabolic dysfunction reduce the cell&#39;s capacity to generate NAD(P)H via glycolysis and the TCA cycle in the first place, so less fluorescent NADPH accumulates even before considering any AA transition.&#34;,&#34;letter&#34;:&#34;D&#34;,&#34;text&#34;:&#34;The weak fluorescence intensity of intracellular NADPH of X-irradiated yeasts is associated with a decrease in the amount of NADPH due to a severe decrease in metabolism.&#34;}],&#34;subjects&#34;:[{&#34;link&#34;:&#34;/resources/1-cell-molecular/bioenergetics-central-metabolism/&#34;,&#34;name&#34;:&#34;Bioenergetics \u0026 Central Metabolism Overview&#34;}]},{&#34;id&#34;:&#34;q6&#34;,&#34;link&#34;:&#34;/papers/ibo/2022/theoretical-2-exam.pdf#page=10&#34;,&#34;name&#34;:&#34;Lysosomal Exocytosis in Cancer Cells&#34;,&#34;number&#34;:&#34;Q56&#34;,&#34;statements&#34;:[{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;The figure shows MVBs fusing into the lysosome, which then fuses with the plasma membrane (Ca²⁺-triggered lysosomal exocytosis) to release exosomes carrying growth factors, transcription factors and cytokines into the ECM, where neighbouring macrophages and fibroblasts take them up and convert into TAM and CAF.&#34;,&#34;letter&#34;:&#34;A&#34;,&#34;text&#34;:&#34;Exosomes, which contain signaling molecules, leave the cell by means of lysosomal exocytosis and promote the conversion of macrophages and fibroblasts into cancer-associated fibroblasts (CAF) and tumor-associated macrophages (TAM).&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;Lysosomes are acidic (pH ~4.5–5). A weakly basic drug becomes protonated once inside and can no longer cross the membrane back out — this ion-trapping (lysosomotropism) causes it to accumulate there, matching the &#39;cancer lysosomotrophic drug&#39; shown concentrated inside the lysosome in the figure.&#34;,&#34;letter&#34;:&#34;B&#34;,&#34;text&#34;:&#34;Weakly alkaline chemotherapeutic drugs tend to accumulate in lysosomes&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;The figure&#39;s legend explicitly labels the released vesicles as exosomes carrying growth factors, transcription factors and cytokines — signaling cargo that reaches and acts on neighbouring cells after lysosomal exocytosis releases it into the ECM.&#34;,&#34;letter&#34;:&#34;C&#34;,&#34;text&#34;:&#34;Lysosomal exocytosis enables the release of exosomes, which distribute signaling molecules to surround cells.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;Once a lysosomotropic drug is sequestered inside the lysosome (per statement B), lysosomal exocytosis expels that lysosome&#39;s contents — including the trapped drug — out of the cell, lowering the intracellular drug concentration and conferring resistance.&#34;,&#34;letter&#34;:&#34;D&#34;,&#34;text&#34;:&#34;One mechanism for cancer cells to become resistant against chemotherapeutics is the efflux of chemotherapeutic drugs, which could occur through lysosomal exocytosis&#34;}],&#34;subjects&#34;:[{&#34;link&#34;:&#34;/resources/1-cell-molecular/endomembrane-system-protein-trafficking/&#34;,&#34;name&#34;:&#34;Endomembrane System \u0026 Protein Trafficking&#34;}]},{&#34;id&#34;:&#34;q7&#34;,&#34;link&#34;:&#34;/papers/ibo/2022/theoretical-2-exam.pdf#page=12&#34;,&#34;name&#34;:&#34;PIP2/PIP3 Signaling in T Cells — PTEN and Antigen Dose&#34;,&#34;number&#34;:&#34;Q57&#34;,&#34;statements&#34;:[{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;Every PIP2 trace in the figure peaks by ~10 minutes and has collapsed back near baseline by 30 minutes even though the antigen stimulus is still present, consistent with PIP2 acting only as a short-lived trigger rather than a sustained signal.&#34;,&#34;letter&#34;:&#34;A&#34;,&#34;text&#34;:&#34;PIP2 concentration quickly returns to initial levels even when the antigen is still present; thus, it cannot mediate long-term changes in cell fate&#34;},{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;PTEN converts PIP3 back to PIP2, so intact PTEN does shift the balance toward PIP2 in general — but the statement&#39;s claim that this holds &#39;reliably&#39; overstates it, since the size of the effect clearly differs between the low- and high-dose conditions in the figure rather than being a fixed, dose-independent shift.&#34;,&#34;letter&#34;:&#34;B&#34;,&#34;text&#34;:&#34;Presence of PTEN activity reliably increases the concentration ratio of PIP2 to PIP3&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;Comparing low- and high-dose traces, the relative balance between PIP2 and PIP3 differs by dose — high-dose stimulation drives proportionally more PIP3 production — so the PIP2:PIP3 ratio does encode information about how strongly the antigen stimulated the cell.&#34;,&#34;letter&#34;:&#34;C&#34;,&#34;text&#34;:&#34;Concentration ratio of PIP2 to PIP3 contains information on the strength of the antigen.&#34;},{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;With PTEN intact, higher antigen dose also drives stronger PI3K activity converting PIP2 onward into PIP3, so the net PIP2 seen doesn&#39;t simply scale up with antigen dose — more antigen doesn&#39;t reliably mean more PIP2 once that faster consumption is accounted for.&#34;,&#34;letter&#34;:&#34;D&#34;,&#34;text&#34;:&#34;Since antigen binding mediates production of PIP2, more antigen binding will result in more PIP2 under intact PTEN&#34;}],&#34;subjects&#34;:[{&#34;link&#34;:&#34;/resources/3-animal-physiology/immune-physiology/&#34;,&#34;name&#34;:&#34;Immune Physiology&#34;},{&#34;link&#34;:&#34;/resources/1-cell-molecular/cell-signaling-communication/&#34;,&#34;name&#34;:&#34;Cell Signaling \u0026 Communication&#34;}]},{&#34;id&#34;:&#34;q8&#34;,&#34;link&#34;:&#34;/papers/ibo/2022/theoretical-2-exam.pdf#page=13&#34;,&#34;name&#34;:&#34;TAK1 Kinase and Takinib — Competitive vs Non-Competitive Inhibition&#34;,&#34;number&#34;:&#34;Q58&#34;,&#34;statements&#34;:[{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;In Experiment B (pre-incubated with ATP), the curves for all Takinib concentrations converge toward the same Vmax at saturating ATP, only differing in how quickly they approach it — the classic same-Vmax, shifted-apparent-Km signature of competitive inhibition.&#34;,&#34;letter&#34;:&#34;A&#34;,&#34;text&#34;:&#34;If TAK1 is pre-incubated with 5 μM ATP for 3 hours, then Takinib, added later, acts as a competitive inhibitor.&#34;},{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;In Experiment A, Takinib lowers Vmax while the curves rise at a similar rate (Km largely unchanged) — a non-competitive pattern, not a Km effect. Only in Experiment B does Takinib behave competitively, so it does not significantly affect Km in both experiments.&#34;,&#34;letter&#34;:&#34;B&#34;,&#34;text&#34;:&#34;In both experiments, Takinib significantly affects TAK1&#39;s Michaelis constant with respect to ATP.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;Takinib&#39;s mode of action changes depending on whether ATP has pre-occupied TAK1: non-competitive (lowered Vmax) without pre-incubation, competitive (shifted Km, same Vmax) with it. That switch implies Takinib can engage a site distinct from the catalytic center, one whose availability depends on prior ATP binding.&#34;,&#34;letter&#34;:&#34;C&#34;,&#34;text&#34;:&#34;Experiments A and B indicate that TAK1 has another interaction site, in addition to the enzymatic active center.&#34;},{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;In Experiment A, Takinib caps the reaction&#39;s Vmax at a lower plateau regardless of how much ATP is added — the defining feature of non-competitive inhibition, where excess substrate cannot outcompete the inhibitor&#39;s effect.&#34;,&#34;letter&#34;:&#34;D&#34;,&#34;text&#34;:&#34;If TAK1 was not pre-incubated, then the presence of Takinib could be compensated by an excess of ATP.&#34;}],&#34;subjects&#34;:[{&#34;link&#34;:&#34;/resources/1-cell-molecular/enzyme-kinetics-regulation/&#34;,&#34;name&#34;:&#34;Enzyme Kinetics \u0026 Regulation&#34;}]},{&#34;id&#34;:&#34;q9&#34;,&#34;link&#34;:&#34;/papers/ibo/2022/theoretical-2-exam.pdf#page=14&#34;,&#34;name&#34;:&#34;Mitochondrial Innate Immunity — Yme1L, SLC25A33 and mtDNA Release&#34;,&#34;number&#34;:&#34;Q59&#34;,&#34;statements&#34;:[{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;The figure shows the opposite: losing Yme1L lets SLC25A33 accumulate (Yme1L normally degrades it) and impairs de novo pyrimidine synthesis. Both effects disrupt pyrimidine metabolism rather than supporting it.&#34;,&#34;letter&#34;:&#34;A&#34;,&#34;text&#34;:&#34;The knockout of Yme1L in cells supports pyrimidine metabolism by maintaining de novo synthesis of nucleotides and proteolysis of SLC25A33.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;SLC25A33 accumulation increases mitochondrial pyrimidine uptake, contributing to imbalanced nucleotide pools that trigger mtDNA release; released mtDNA is sensed by cGAS, activating STING and downstream innate immune signalling — a full causal chain traced in the figure.&#34;,&#34;letter&#34;:&#34;B&#34;,&#34;text&#34;:&#34;The information presented in this figure indicates that the accumulation of SLC25A33 can cause an immune response.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;The figure shows TREX1 degrading released mtDNA fragments, with an explicit arrow from that degradation to &#39;replenishment of nucleotide pools&#39; — feeding back to reduce the nucleotide imbalance that triggered mtDNA release in the first place.&#34;,&#34;letter&#34;:&#34;C&#34;,&#34;text&#34;:&#34;TREX1-mediated lysis of DNA can restore the imbalance of nucleotides in the cell.&#34;},{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;Losing Yme1L drives the pathway toward MORE mtDNA release and cGAS-STING activation, which upregulates interferon-stimulated gene expression, not downregulates it — the opposite of what the statement claims.&#34;,&#34;letter&#34;:&#34;D&#34;,&#34;text&#34;:&#34;The inhibition of the mitochondrial protease Yme1L downregulates the expression of genes needed for interferon production.&#34;}],&#34;subjects&#34;:[{&#34;link&#34;:&#34;/resources/1-cell-molecular/mitochondria-chloroplasts-structure-origin/&#34;,&#34;name&#34;:&#34;Mitochondria \u0026 Chloroplasts: Structure \u0026 Endosymbiotic Origin&#34;},{&#34;link&#34;:&#34;/resources/3-animal-physiology/immune-physiology/&#34;,&#34;name&#34;:&#34;Immune Physiology&#34;}]},{&#34;id&#34;:&#34;q10&#34;,&#34;link&#34;:&#34;/papers/ibo/2022/theoretical-2-exam.pdf#page=16&#34;,&#34;name&#34;:&#34;Alzheimer&#39;s Disease — APP Processing by α-, β- and γ-Secretases&#34;,&#34;number&#34;:&#34;Q60&#34;,&#34;statements&#34;:[{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;α-secretase cuts within the Aβ sequence itself, physically severing it before it can ever form as an intact peptide. The resulting C-terminal fragment, lacking part of the Aβ sequence, can only yield the non-amyloidogenic p3 fragment after γ-cleavage — never full Aβ.&#34;,&#34;letter&#34;:&#34;A&#34;,&#34;text&#34;:&#34;α-secretase cleaves the mature APP in a certain location and, thus, prevents the formation of β-amyloid.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;β-secretase cleaves at the N-terminal boundary of the Aβ domain, leaving a membrane-bound fragment that still contains the complete Aβ sequence; γ-secretase then cleaves within the membrane at the C-terminal boundary, releasing the intact Aβ peptide. Both cleavages are required.&#34;,&#34;letter&#34;:&#34;B&#34;,&#34;text&#34;:&#34;β- and γ-secretases take part in the formation of the β-amyloid peptide.&#34;},{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;α-cleavage produces one soluble, secreted N-terminal fragment (sAPPα, released extracellularly — not membrane-bound) and one membrane-anchored C-terminal fragment. Only the C-terminal piece is actually transmembrane.&#34;,&#34;letter&#34;:&#34;C&#34;,&#34;text&#34;:&#34;Two transmembrane protein fragments are formed due to α-secretase activity: the N-terminal fragment and the C-terminal fragment.&#34;},{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;This reproduces the official key&#39;s call. The C-terminal fragment retains APP&#39;s transmembrane span, which would be expected to be largely α-helical like most TM domains — but the key marks this false, likely reflecting the β-sheet-forming propensity of the Aβ-derived portion once it is processed, which the exam appears to weight as the dominant structural feature.&#34;,&#34;letter&#34;:&#34;D&#34;,&#34;text&#34;:&#34;In the C-terminal transmembrane fragment, formed due to α-secretase activity, the α-helical structure dominates.&#34;}],&#34;subjects&#34;:[{&#34;link&#34;:&#34;/resources/1-cell-molecular/protein-structure-folding-function/&#34;,&#34;name&#34;:&#34;Protein Structure, Folding \u0026 Function&#34;}]},{&#34;id&#34;:&#34;q11&#34;,&#34;link&#34;:&#34;/papers/ibo/2022/theoretical-2-exam.pdf#page=17&#34;,&#34;name&#34;:&#34;RNA Virus Replication Cycles — Genome Classification&#34;,&#34;number&#34;:&#34;Q61&#34;,&#34;statements&#34;:[{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;A (+)RNA genome can be read directly by host ribosomes as mRNA, so it must itself encode every protein needed for replication, including the RNA-dependent RNA polymerase used to copy the genome.&#34;,&#34;letter&#34;:&#34;A&#34;,&#34;text&#34;:&#34;The genome of (+)RNA viruses encodes many proteins, including the RNA-dependent RNA-polymerase&#34;},{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;(+)RNA viruses don&#39;t need to package RdRp in the virion at all — their genome is translated directly upon entry to produce RdRp. Only viruses whose genome can&#39;t be directly translated (negative-strand and double-strand RNA viruses) must carry pre-packaged RdRp.&#34;,&#34;letter&#34;:&#34;B&#34;,&#34;text&#34;:&#34;In all RNA-containing viruses, the RNA-dependent RNA-polymerase enters the target cell with RNA.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;The packaged RdRp of a dsRNA virus transcribes (+) strands, which do double duty: host ribosomes translate them into viral proteins, and the same (+) strands also serve as templates for RdRp to synthesize new (-) strands, rebuilding the double-stranded genome.&#34;,&#34;letter&#34;:&#34;C&#34;,&#34;text&#34;:&#34;During the replication process of double-strand (+-) RNA viruses, the single-stranded (+) RNA molecules synthesized in the target cells ensure viral protein synthesis by the host cell&#39;s ribosomes and serve as a template for the synthesis of (-) RNA chains with the participation of viral RNA polymerase.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;Retroviruses encode reverse transcriptase in their pol gene and package the enzyme into the virion itself, so it&#39;s ready immediately after entry to convert the (+)RNA genome into dsDNA for integration into the host genome.&#34;,&#34;letter&#34;:&#34;D&#34;,&#34;text&#34;:&#34;The genome of retroviruses encodes the reverse transcriptase enzyme, which is included in the viral particle and ensures the synthesis of DNA from viral RNA upon infection.&#34;}],&#34;subjects&#34;:[{&#34;link&#34;:&#34;/resources/1-cell-molecular/nucleotide-nucleic-acid-chemistry/&#34;,&#34;name&#34;:&#34;Nucleotide \u0026 Nucleic Acid Chemistry&#34;}]},{&#34;id&#34;:&#34;q12&#34;,&#34;link&#34;:&#34;/papers/ibo/2022/theoretical-2-exam.pdf#page=19&#34;,&#34;name&#34;:&#34;Pine Needle Cross-Section — Resin Duct and Mesophyll&#34;,&#34;number&#34;:&#34;Q62&#34;,&#34;statements&#34;:[{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;Structure b is the mesophyll tissue filling most of the section, packed with the small dotted inclusions typical of chloroplasts — the site where CO₂ is fixed into sugar via the Calvin cycle.&#34;,&#34;letter&#34;:&#34;A&#34;,&#34;text&#34;:&#34;The cells labeled with b capture and assimilate CO2 into sugars.&#34;},{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;Space c is an air cavity near the epidermis, not a stomatal pore — water-loss regulation is the job of guard cells flanking a stoma, which aren&#39;t what&#39;s labeled here.&#34;,&#34;letter&#34;:&#34;B&#34;,&#34;text&#34;:&#34;The space labeled with c regulates water loss.&#34;},{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;Structure a is a ring of epithelial-type cells around a central empty lumen — the profile of a resin duct, not a vascular bundle. It doesn&#39;t function as a water/nutrient transport conduit at all.&#34;,&#34;letter&#34;:&#34;C&#34;,&#34;text&#34;:&#34;The structure labeled with a carries water and nutrition to different parts of the plants.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;The ring of secretory cells surrounding a central canal in structure a is characteristic of a conifer resin duct: the epithelial cells lining the canal produce resin, which accumulates in the central space.&#34;,&#34;letter&#34;:&#34;D&#34;,&#34;text&#34;:&#34;The structure labeled with a produces and stores resin.&#34;}],&#34;subjects&#34;:[{&#34;link&#34;:&#34;/resources/6-plant-anatomy/leaf-anatomy/&#34;,&#34;name&#34;:&#34;Leaf Anatomy&#34;}]},{&#34;id&#34;:&#34;q13&#34;,&#34;link&#34;:&#34;/papers/ibo/2022/theoretical-2-exam.pdf#page=20&#34;,&#34;name&#34;:&#34;Land Plant Phylogeny — Evaluating Four Cladograms&#34;,&#34;number&#34;:&#34;Q63&#34;,&#34;statements&#34;:[{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;Cladogram I groups moss and hornwort as sisters with green alga as the outgroup — a reasonable grouping of two bryophyte lineages to the exclusion of a non-land-plant alga.&#34;,&#34;letter&#34;:&#34;A&#34;,&#34;text&#34;:&#34;Cladogram I.&#34;},{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;Cladogram II pairs fern with cycad as sisters, leaving pine as the outgroup — but cycad and pine are both seed plants (gymnosperms) and should form a clade together, to the exclusion of fern, a seedless vascular plant. The tree groups the wrong two taxa.&#34;,&#34;letter&#34;:&#34;B&#34;,&#34;text&#34;:&#34;Cladogram II.&#34;},{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;Cladogram III pairs fern with liverwort as sisters, leaving club-moss as the outgroup — but liverwort is a non-vascular bryophyte while fern and club-moss are both vascular plants, so fern should group with club-moss instead, not with liverwort.&#34;,&#34;letter&#34;:&#34;C&#34;,&#34;text&#34;:&#34;Cladogram III.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;Cladogram IV groups moss and horsetail as sisters with green alga as the outgroup — correctly keeping the land plants (moss, horsetail) together as a clade separate from the non-land-plant green alga.&#34;,&#34;letter&#34;:&#34;D&#34;,&#34;text&#34;:&#34;Cladogram IV.&#34;}],&#34;subjects&#34;:[{&#34;link&#34;:&#34;/resources/6-plant-anatomy/plant-body-plans-major-lineages/&#34;,&#34;name&#34;:&#34;Plant Body Plans Across Major Lineages&#34;}]},{&#34;id&#34;:&#34;q14&#34;,&#34;link&#34;:&#34;/papers/ibo/2022/theoretical-2-exam.pdf#page=21&#34;,&#34;name&#34;:&#34;The C4 Rice Project — Engineering C4 Photosynthesis into a C3 Crop&#34;,&#34;number&#34;:&#34;Q64&#34;,&#34;statements&#34;:[{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;Converting rice to C4 needs new biochemistry (PEP carboxylase, decarboxylases, coordinated cell-specific expression) and new development (Kranz anatomy — enlarged, chloroplast-differentiated bundle sheath cells), so both dimensions must change.&#34;,&#34;letter&#34;:&#34;A&#34;,&#34;text&#34;:&#34;The modified C4 rice plants will have both altered biochemical and developmental pathways.&#34;},{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;C4 photosynthesis doesn&#39;t eliminate Rubisco — it concentrates CO₂ around it in the bundle sheath cells so it works more efficiently with less photorespiration. Rubisco remains essential and fully functional.&#34;,&#34;letter&#34;:&#34;B&#34;,&#34;text&#34;:&#34;The enzyme Rubisco will be non-functional in modified C4 rice plants.&#34;},{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;C4 plants gain water-use efficiency from their CO₂-concentrating biochemistry allowing lower stomatal conductance for the same carbon gain, not from anatomically smaller stomatal pores — the C4 Rice Project targets the concentrating mechanism, not stomatal pore size.&#34;,&#34;letter&#34;:&#34;C&#34;,&#34;text&#34;:&#34;C4 rice plants must have smaller stomatal pore size to decrease rates of transpiration and increase photosynthetic water use efficiency.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;The C4 cycle depends on a bundle-sheath-localized decarboxylase (e.g. NADP-malic enzyme) to release CO₂ from the transported C4 acid near Rubisco. Rice lacks this bundle-sheath decarboxylase activity, so the corresponding genes need to be introduced and correctly targeted.&#34;,&#34;letter&#34;:&#34;D&#34;,&#34;text&#34;:&#34;Genes for decarboxylase enzymes will need to be introduced into the C4 rice plants.&#34;}],&#34;subjects&#34;:[{&#34;link&#34;:&#34;/resources/5-plant-physiology/calvin-cycle-photorespiration-c4-cam/&#34;,&#34;name&#34;:&#34;Calvin Cycle, Photorespiration \u0026 C4/CAM Biochemistry&#34;}]},{&#34;id&#34;:&#34;q15&#34;,&#34;link&#34;:&#34;/papers/ibo/2022/theoretical-2-exam.pdf#page=22&#34;,&#34;name&#34;:&#34;Arabidopsis Sun vs Shade Leaves — Cross-Section Comparison&#34;,&#34;number&#34;:&#34;Q65&#34;,&#34;statements&#34;:[{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;Label 1 marks the elongated palisade mesophyll cells, densely packed with chloroplasts — the leaf&#39;s primary site for fixing CO₂ into sugar via the Calvin cycle.&#34;,&#34;letter&#34;:&#34;A&#34;,&#34;text&#34;:&#34;The cells labeled with 1 capture and assimilate CO2 into sugars.&#34;},{&#34;answer&#34;:false,&#34;explanation&#34;:&#34;Kranz anatomy is the bundle-sheath-centered wreath arrangement specific to C4 plants. Arabidopsis is a C3 plant, so no cells in either cross-section — including those labeled 2 — display Kranz anatomy.&#34;,&#34;letter&#34;:&#34;B&#34;,&#34;text&#34;:&#34;The cells labeled with 2 demonstrate Kranz anatomy.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;The left cross-section is thicker with well-developed, elongated palisade layers — typical of a sun leaf maximizing carbon-fixation capacity. The right section is thinner with looser, less organized mesophyll — typical of a shade leaf maximizing light capture per unit tissue.&#34;,&#34;letter&#34;:&#34;C&#34;,&#34;text&#34;:&#34;The leaf on the left was grown under direct sunlight, while the leaf on the right was in the shade.&#34;},{&#34;answer&#34;:true,&#34;explanation&#34;:&#34;Cells at label 1 are sun-leaf palisade cells, optimized for carbon fixation under high light and so invest more in Rubisco relative to chlorophyll. Cells at label 3 are spongy mesophyll, optimized for capturing limited light rather than fixing carbon at maximum rate, so they invest relatively more in chlorophyll and less in Rubisco — a lower Rubisco:chlorophyll ratio.&#34;,&#34;letter&#34;:&#34;D&#34;,&#34;text&#34;:&#34;The cells labeled with 3 have a lower Rubisco/chlorophyll ratio than cells labeled with 1.&#34;}],&#34;subjects&#34;:[{&#34;link&#34;:&#34;/resources/6-plant-anatomy/leaf-anatomy/&#34;,&#34;name&#34;:&#34;Leaf Anatomy&#34;}]}],&#34;roundId&#34;:&#34;theoretical-2&#34;,&#34;roundName&#34;:&#34;Theoretical 2&#34;,&#34;year&#34;:&#34;2022&#34;}&lt;/script&gt;
+
+&lt;script src=&#34;http://localhost:1313/js/papers-attempt.js&#34; defer&gt;&lt;/script&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

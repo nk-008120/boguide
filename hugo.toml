@@ -93,9 +93,11 @@ theme = "hextra"
     url = "/resources/4-biosystematics"
 
   [[menu.main]]
-    name = "Papers"
+    name = "BiOrchive"
     url = "/papers/"
     weight = 2
+    [menu.main.params]
+      image = "/biorchive-mark.png"
 
   [[menu.main]]
     name = "About"

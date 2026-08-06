@@ -1,0 +1,15 @@
+<!doctype html>
+<html class="dark">
+<head>
+<link rel="stylesheet" href="/css/custom.css">
+</head>
+<body>
+<div class="biorchive-bg-layer" id="layer"></div>
+<script>
+window.onload = function() {
+  var cs = getComputedStyle(document.getElementById('layer'));
+  document.title = 'opacity=' + cs.opacity + ' filter=' + cs.filter;
+};
+</script>
+</body>
+</html>

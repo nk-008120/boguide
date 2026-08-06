@@ -15,548 +15,6 @@
     
     
     <item>
-      <title>Q53 — Telomerase — Mechanism of Telomere Extension</title>
-      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q3/</guid>
-      <description>
-        
-        
-        &lt;div class=&#34;topic-meta&#34;&gt;
-  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
-  
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/dna-structure-replication/&#34;&gt;DNA Structure &amp; Replication&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;At the ends of chromosomal DNA molecules of eukaryotes, there are special nucleotide sequences called telomeres, which shorten during each division of the somatic cell. Telomeres do not contain genes, but consist of multiple repeats of a short nucleotide sequence, such as TTAGGG. When DNA replication is completed (Fig. 1a), a single-strand protrusion (TTAGGG) occurs at the 3&amp;rsquo; end of the 5&amp;rsquo;-3&amp;rsquo; (lagging) strand of DNA. The enzyme telomerase containing the CAAUCC sequence in associated RNA allows for a complete duplicate of the DNA molecule along the entire length of the chromosome (Fig. 1b-e).&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q53-figure-1.png&#34; alt=&#34;Figure 1. The mechanism of action of telomerase: (a) replication complete, 3’ overhang present; (b) telomerase binds via RNA:DNA base-pairing; (c) telomerase extends the 3’ overhang using its RNA as template; (d) telomerase translocates; (e) DNA polymerase fills in the complementary strand.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-  &lt;/span&gt;
-&lt;em&gt;Figure 1. The mechanism of action of telomerase. 5&amp;rsquo;-3&amp;rsquo; is the &amp;ldquo;maternal&amp;rdquo; DNA strand, and 3&amp;rsquo;-5&amp;rsquo; is the &amp;ldquo;daughter&amp;rdquo; strand.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Using the information and figures, determine whether the following statements are true or false.&lt;/p&gt;
-&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q3&#34;&gt;
-  &lt;div class=&#34;tf-quiz&#34;&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Telomerase is a ribonucleoprotein — its reverse-transcriptase protein subunit needs the enzyme&amp;#39;s own RNA component (containing the CAAUCC template) to know what sequence to add. Protein alone has no template to copy from.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The protein component of telomerase is sufficient to elongate telomeres.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Figures 1b–d show the parental (mother) strand&amp;#39;s 3&amp;#39; overhang being extended by telomerase&amp;#39;s reverse-transcriptase activity, using the enzyme&amp;#39;s internal CAAUCC RNA as template, then translocating to repeat the process.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; The mother strand of DNA is sequentially elongated on the 3&amp;#39; end, using the telomerase RNA as a template.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Without functional telomerase, telomeres shorten uncorrected with each division, driving premature cellular senescence in high-turnover tissues — consistent with telomerase-deficiency syndromes that present with bone-marrow failure and premature-aging features.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Loss-of-function mutations in the telomerase protein are likely to cause diseases such as progeria or bone-marrow failure.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;HeLa is an immortalized cancer cell line specifically because it keeps telomerase active (not repressed), continually rebuilding its telomeres so the cells can divide indefinitely without triggering senescence.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Telomere length has a threshold value in cells and in HeLa cells telomerase is repressed to maintain this threshold value.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
-    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
-(function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
-  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
-  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
-
-  rows.forEach(function (row) {
-    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
-    btns.forEach(function (btn) {
-      btn.addEventListener(&#39;click&#39;, function () {
-        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-        btn.classList.add(&#39;selected&#39;);
-        row.dataset.selected = btn.dataset.value;
-        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-      });
-    });
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
-    var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
-      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
-      if (!sel) {
-        allAnswered = false;
-        row.classList.add(&#39;unanswered&#39;);
-        return;
-      }
-      row.classList.remove(&#39;unanswered&#39;);
-      var isCorrect = sel === row.dataset.answer;
-      row.classList.toggle(&#39;correct&#39;, isCorrect);
-      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
-      if (isCorrect) correct++;
-      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
-    });
-    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
-    scoreEl.textContent = allAnswered
-      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
-      : &#39;Answer every statement first.&#39;;
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
-    rows.forEach(function (row) {
-      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-      delete row.dataset.selected;
-      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-    });
-    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
-  });
-})();
-&lt;/script&gt;
-
-&lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/q2/&#34;&gt;← Previous: Q52&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/q4/&#34;&gt;Next: Q54 →&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=5&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Q54 — NAD(P)H Fluorescence During the Aerobic–Anaerobic Transition in Yeast</title>
-      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q4/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q4/</guid>
-      <description>
-        
-        
-        &lt;div class=&#34;topic-meta&#34;&gt;
-  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
-  
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/bioenergetics-central-metabolism/&#34;&gt;Bioenergetics &amp; Central Metabolism Overview&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;The metabolic activity of microbial cells can be measured based on the intracellular content of different molecules, such as NAD(P)H, the reduced form of nicotinamide adenine dinucleotide (phosphate), which fluoresces at λ = 440 nm. A sharp increase in fluorescence intensity of NAD(P)H is observed during a forced transition of yeast cells from aerobic to anaerobic conditions (AA transition) (Figure). The relative fluorescence increase (ΔFI) during AA transition was evaluated as a measure of yeast metabolic activity.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q54-figure-1.png&#34; alt=&#34;Figure. NAD(P)H fluorescence intensity during the aerobic-anaerobic transition. FI = fluorescence intensity, AS = air sparging (bubbling of air), NS = nitrogen sparging. FI_AN = fluorescence intensity during the anaerobic phase, FI_AE = fluorescence intensity during the aerobic phase.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-  &lt;/span&gt;
-&lt;em&gt;Figure. NAD(P)H fluorescence intensity during the aerobic-anaerobic transition.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Determine whether the following statements are true or false:&lt;/p&gt;
-&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q4&#34;&gt;
-  &lt;div class=&#34;tf-quiz&#34;&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The fluorophore in both molecules is the reduced nicotinamide ring; the 2&amp;#39;-phosphate that distinguishes NADPH from NADH sits away from that ring, so their excitation/emission properties are essentially identical. The oxidized forms (NAD⁺/NADP⁺) lack the electron configuration needed to fluoresce.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The reduced phosphorylated (NADPH) and nonphosphorylated (NADH) pyridine nucleotides have essentially equivalent fluorescence properties while their oxidized forms are non-fluorescent.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;This has the respiratory chain&amp;#39;s role backwards: the chain oxidizes NADH to NAD⁺ (donating electrons to O₂), it doesn&amp;#39;t reduce NAD⁺. Reduction of NAD(P)⁺ happens upstream, in glycolysis and the TCA cycle, not in the respiratory chain itself.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Under aerobic conditions, the oxidized nucleotides in cells are reduced, e.g., in the respiratory chain, which leads to an equilibrium between the formation and depletion of NAD(P)H.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Switching air sparging to nitrogen sparging removes O₂, the respiratory chain&amp;#39;s final electron acceptor, so it can no longer re-oxidize NADH. NAD(P)H accumulates, producing exactly the step-like jump from FI_AE to FI_AN seen in the figure.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; After the sudden alteration from aerobic to anaerobic conditions (AA transition), the microbes are not able to re-oxidize all the reduced NAD(P)H, which can be tracked as an intracellular step-like increase of NAD(P)H fluorescence intensity.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The stem defines the relative fluorescence increase (ΔFI) during the AA transition as exactly this — a measure of yeast metabolic activity — since a larger jump reflects more active dehydrogenases generating NAD(P)H before the anaerobic block on its re-oxidation.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Measurements of NAD(P)H fluorescence intensity during AA transition can indicate the increasing metabolic activity of microbes under stress conditions.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
-    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
-(function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
-  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
-  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
-
-  rows.forEach(function (row) {
-    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
-    btns.forEach(function (btn) {
-      btn.addEventListener(&#39;click&#39;, function () {
-        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-        btn.classList.add(&#39;selected&#39;);
-        row.dataset.selected = btn.dataset.value;
-        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-      });
-    });
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
-    var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
-      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
-      if (!sel) {
-        allAnswered = false;
-        row.classList.add(&#39;unanswered&#39;);
-        return;
-      }
-      row.classList.remove(&#39;unanswered&#39;);
-      var isCorrect = sel === row.dataset.answer;
-      row.classList.toggle(&#39;correct&#39;, isCorrect);
-      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
-      if (isCorrect) correct++;
-      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
-    });
-    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
-    scoreEl.textContent = allAnswered
-      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
-      : &#39;Answer every statement first.&#39;;
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
-    rows.forEach(function (row) {
-      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-      delete row.dataset.selected;
-      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-    });
-    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
-  });
-})();
-&lt;/script&gt;
-
-&lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/q3/&#34;&gt;← Previous: Q53&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/q5/&#34;&gt;Next: Q55 →&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=7&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Q58 — TAK1 Kinase and Takinib — Competitive vs Non-Competitive Inhibition</title>
-      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q8/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q8/</guid>
-      <description>
-        
-        
-        &lt;div class=&#34;topic-meta&#34;&gt;
-  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
-  
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/enzyme-kinetics-regulation/&#34;&gt;Enzyme Kinetics &amp; Regulation&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;TAK1 is a protein kinase which transfers a phosphate group from ATP to a substrate. In order to elucidate the action mechanism of Takinib, a novel inhibitor of TAK1, two experiments were carried out. In experiment A, TAK1 was added to the solution of ATP, Takinib and TAK1 substrate, and the initial reaction rate was measured for different ATP concentrations and different amounts of Takinib. In experiment B, TAK1 was pre-incubated with 5 μM ATP for 3 hours and then the same steps as in experiment A were carried out with the pre-incubated TAK1. The results of experiments A and B are summarized below, with the amount of inhibitor used indicated to the right.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q58-figure-1.png&#34; alt=&#34;Figure. Panel A: initial reaction rate vs [ATP] for TAK1 not pre-incubated, at 0, 10, and 50 nM Takinib — Vmax drops with increasing Takinib while the curves rise at a similar rate. Panel B: same but with TAK1 pre-incubated with ATP for 3 hours — curves converge to a similar Vmax regardless of Takinib concentration.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-  &lt;/span&gt;
-&lt;em&gt;Figure. Dependence of initial reaction rate on starting ATP concentration, at different Takinib doses, without (A) and with (B) ATP pre-incubation.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Determine whether the following statements are true or false:&lt;/p&gt;
-&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q8&#34;&gt;
-  &lt;div class=&#34;tf-quiz&#34;&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;In Experiment B (pre-incubated with ATP), the curves for all Takinib concentrations converge toward the same Vmax at saturating ATP, only differing in how quickly they approach it — the classic same-Vmax, shifted-apparent-Km signature of competitive inhibition.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; If TAK1 is pre-incubated with 5 μM ATP for 3 hours, then Takinib, added later, acts as a competitive inhibitor.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;In Experiment A, Takinib lowers Vmax while the curves rise at a similar rate (Km largely unchanged) — a non-competitive pattern, not a Km effect. Only in Experiment B does Takinib behave competitively, so it does not significantly affect Km in both experiments.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; In both experiments, Takinib significantly affects TAK1&amp;#39;s Michaelis constant with respect to ATP.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Takinib&amp;#39;s mode of action changes depending on whether ATP has pre-occupied TAK1: non-competitive (lowered Vmax) without pre-incubation, competitive (shifted Km, same Vmax) with it. That switch implies Takinib can engage a site distinct from the catalytic center, one whose availability depends on prior ATP binding.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Experiments A and B indicate that TAK1 has another interaction site, in addition to the enzymatic active center.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;In Experiment A, Takinib caps the reaction&amp;#39;s Vmax at a lower plateau regardless of how much ATP is added — the defining feature of non-competitive inhibition, where excess substrate cannot outcompete the inhibitor&amp;#39;s effect.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; If TAK1 was not pre-incubated, then the presence of Takinib could be compensated by an excess of ATP.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
-    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
-(function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
-  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
-  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
-
-  rows.forEach(function (row) {
-    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
-    btns.forEach(function (btn) {
-      btn.addEventListener(&#39;click&#39;, function () {
-        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-        btn.classList.add(&#39;selected&#39;);
-        row.dataset.selected = btn.dataset.value;
-        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-      });
-    });
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
-    var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
-      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
-      if (!sel) {
-        allAnswered = false;
-        row.classList.add(&#39;unanswered&#39;);
-        return;
-      }
-      row.classList.remove(&#39;unanswered&#39;);
-      var isCorrect = sel === row.dataset.answer;
-      row.classList.toggle(&#39;correct&#39;, isCorrect);
-      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
-      if (isCorrect) correct++;
-      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
-    });
-    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
-    scoreEl.textContent = allAnswered
-      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
-      : &#39;Answer every statement first.&#39;;
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
-    rows.forEach(function (row) {
-      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-      delete row.dataset.selected;
-      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-    });
-    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
-  });
-})();
-&lt;/script&gt;
-
-&lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/q7/&#34;&gt;← Previous: Q57&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/q9/&#34;&gt;Next: Q59 →&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=13&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Q61 — RNA Virus Replication Cycles — Genome Classification</title>
-      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q11/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q11/</guid>
-      <description>
-        
-        
-        &lt;div class=&#34;topic-meta&#34;&gt;
-  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
-  
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/nucleotide-nucleic-acid-chemistry/&#34;&gt;Nucleotide &amp; Nucleic Acid Chemistry&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;Based on the structure of their genome and specific features of the replication process, RNA viruses are divided into the following groups:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Single-strand (+) RNA viruses&lt;/li&gt;
-&lt;li&gt;Single-strand (-) RNA viruses&lt;/li&gt;
-&lt;li&gt;Double-strand (+-) RNA viruses&lt;/li&gt;
-&lt;li&gt;Retroid viruses (including retroviruses)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q61-figure-1.png&#34; alt=&#34;Figure. Replication cycles of different RNA viruses, by class: Positive-strand RNA, Double-strand RNA, Negative-strand RNA, Retroid RNA. ‘&amp;#43;’ denotes a positive strand of RNA; ‘-’ denotes a negative strand of RNA. Tr = transcription; T = translation; R = replication; E = encapsidation; RdRp = RNA-dependent RNA polymerase; RT = reverse transcriptase.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-  &lt;/span&gt;
-&lt;em&gt;Figure. Replication cycles of positive-strand, double-strand, negative-strand, and retroid RNA viruses.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Determine whether the following statements are true or false:&lt;/p&gt;
-&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q11&#34;&gt;
-  &lt;div class=&#34;tf-quiz&#34;&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;A (&amp;#43;)RNA genome can be read directly by host ribosomes as mRNA, so it must itself encode every protein needed for replication, including the RNA-dependent RNA polymerase used to copy the genome.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The genome of (&amp;#43;)RNA viruses encodes many proteins, including the RNA-dependent RNA-polymerase&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;(&amp;#43;)RNA viruses don&amp;#39;t need to package RdRp in the virion at all — their genome is translated directly upon entry to produce RdRp. Only viruses whose genome can&amp;#39;t be directly translated (negative-strand and double-strand RNA viruses) must carry pre-packaged RdRp.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; In all RNA-containing viruses, the RNA-dependent RNA-polymerase enters the target cell with RNA.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The packaged RdRp of a dsRNA virus transcribes (&amp;#43;) strands, which do double duty: host ribosomes translate them into viral proteins, and the same (&amp;#43;) strands also serve as templates for RdRp to synthesize new (-) strands, rebuilding the double-stranded genome.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; During the replication process of double-strand (&amp;#43;-) RNA viruses, the single-stranded (&amp;#43;) RNA molecules synthesized in the target cells ensure viral protein synthesis by the host cell&amp;#39;s ribosomes and serve as a template for the synthesis of (-) RNA chains with the participation of viral RNA polymerase.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Retroviruses encode reverse transcriptase in their pol gene and package the enzyme into the virion itself, so it&amp;#39;s ready immediately after entry to convert the (&amp;#43;)RNA genome into dsDNA for integration into the host genome.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; The genome of retroviruses encodes the reverse transcriptase enzyme, which is included in the viral particle and ensures the synthesis of DNA from viral RNA upon infection.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
-    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
-(function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
-  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
-  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
-
-  rows.forEach(function (row) {
-    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
-    btns.forEach(function (btn) {
-      btn.addEventListener(&#39;click&#39;, function () {
-        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-        btn.classList.add(&#39;selected&#39;);
-        row.dataset.selected = btn.dataset.value;
-        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-      });
-    });
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
-    var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
-      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
-      if (!sel) {
-        allAnswered = false;
-        row.classList.add(&#39;unanswered&#39;);
-        return;
-      }
-      row.classList.remove(&#39;unanswered&#39;);
-      var isCorrect = sel === row.dataset.answer;
-      row.classList.toggle(&#39;correct&#39;, isCorrect);
-      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
-      if (isCorrect) correct++;
-      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
-    });
-    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
-    scoreEl.textContent = allAnswered
-      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
-      : &#39;Answer every statement first.&#39;;
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
-    rows.forEach(function (row) {
-      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-      delete row.dataset.selected;
-      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-    });
-    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
-  });
-})();
-&lt;/script&gt;
-
-&lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/q10/&#34;&gt;← Previous: Q60&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/q12/&#34;&gt;Next: Q62 →&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=17&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
       <title>Theoretical 1</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -565,7 +23,9 @@
       <description>
         
         
-        &lt;p&gt;&lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;attempt/&#34; style=&#34;display:inline-block;margin-bottom:1.5rem;&#34;&gt;Start Timed Attempt →&lt;/a&gt;&lt;/p&gt;
+        &lt;div class=&#34;biorchive-bg-layer&#34; aria-hidden=&#34;true&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;attempt/&#34; style=&#34;display:inline-block;margin-bottom:1.5rem;&#34;&gt;Start Timed Attempt →&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;papers-paperlinks&#34;&gt;
   &lt;div class=&#34;papers-paper-row&#34;&gt;&lt;span class=&#34;papers-paper-category&#34;&gt;Theoretical 1&lt;/span&gt;
     &lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Exam &amp;#43; Official Answer Key&lt;/a&gt;
@@ -1036,6 +496,188 @@
         &lt;/div&gt;&lt;/td&gt;
       &lt;td&gt;—&lt;/td&gt;
       &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=74&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var input = document.getElementById(&#39;papers-problem-filter&#39;);
+  if (!input) return;
+  input.addEventListener(&#39;input&#39;, function () {
+    var q = input.value.toLowerCase();
+    document.querySelectorAll(&#39;#papers-problem-table .papers-problem-row&#39;).forEach(function (row) {
+      row.style.display = row.textContent.toLowerCase().indexOf(q) !== -1 ? &#39;&#39; : &#39;none&#39;;
+    });
+  });
+})();
+&lt;/script&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Theoretical 2</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;biorchive-bg-layer&#34; aria-hidden=&#34;true&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;attempt/&#34; style=&#34;display:inline-block;margin-bottom:1.5rem;&#34;&gt;Start Timed Attempt →&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;papers-paperlinks&#34;&gt;
+  &lt;div class=&#34;papers-paper-row&#34;&gt;&lt;span class=&#34;papers-paper-category&#34;&gt;Theoretical 2&lt;/span&gt;
+    &lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Exam &amp;#43; Official Answer Key&lt;/a&gt;
+    &lt;a class=&#34;papers-pill papers-pill-solution&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Community Solutions (unofficial)&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;papers-search&#34;&gt;
+  &lt;input type=&#34;text&#34; id=&#34;papers-problem-filter&#34; class=&#34;papers-search-input&#34; placeholder=&#34;Filter problems…&#34; autocomplete=&#34;off&#34;&gt;
+&lt;/div&gt;
+&lt;div class=&#34;papers-table-wrap&#34;&gt;
+&lt;table class=&#34;papers-problem-table&#34; id=&#34;papers-problem-table&#34;&gt;
+  &lt;thead&gt;&lt;tr&gt;&lt;th&gt;No.&lt;/th&gt;&lt;th&gt;Title&lt;/th&gt;&lt;th&gt;Subjects&lt;/th&gt;&lt;th&gt;Points&lt;/th&gt;&lt;th&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q51&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q1/&#34;&gt;Cancer Cell Metabolism — Aerobic Glycolysis and the Warburg Effect&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/bioenergetics-central-metabolism/&#34;&gt;Bioenergetics &amp;amp; Central Metabolism Overview&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q52&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q2/&#34;&gt;Cryopyrin Inflammasome — Western Blot of WT and Mutant Variants&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/immune-physiology/&#34;&gt;Immune Physiology&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q53&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q3/&#34;&gt;Telomerase — Mechanism of Telomere Extension&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/dna-structure-replication/&#34;&gt;DNA Structure &amp;amp; Replication&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q54&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q4/&#34;&gt;NAD(P)H Fluorescence During the Aerobic–Anaerobic Transition in Yeast&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/bioenergetics-central-metabolism/&#34;&gt;Bioenergetics &amp;amp; Central Metabolism Overview&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q55&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q5/&#34;&gt;X-Irradiation of Yeast — NAD(P)H Fluorescence and Metabolic Recovery&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/bioenergetics-central-metabolism/&#34;&gt;Bioenergetics &amp;amp; Central Metabolism Overview&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q56&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q6/&#34;&gt;Lysosomal Exocytosis in Cancer Cells&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/endomembrane-system-protein-trafficking/&#34;&gt;Endomembrane System &amp;amp; Protein Trafficking&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=10&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q57&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q7/&#34;&gt;PIP2/PIP3 Signaling in T Cells — PTEN and Antigen Dose&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/immune-physiology/&#34;&gt;Immune Physiology&lt;/a&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/cell-signaling-communication/&#34;&gt;Cell Signaling &amp;amp; Communication&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=12&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q58&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q8/&#34;&gt;TAK1 Kinase and Takinib — Competitive vs Non-Competitive Inhibition&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/enzyme-kinetics-regulation/&#34;&gt;Enzyme Kinetics &amp;amp; Regulation&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=13&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q59&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q9/&#34;&gt;Mitochondrial Innate Immunity — Yme1L, SLC25A33 and mtDNA Release&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/mitochondria-chloroplasts-structure-origin/&#34;&gt;Mitochondria &amp;amp; Chloroplasts: Structure &amp;amp; Endosymbiotic Origin&lt;/a&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/immune-physiology/&#34;&gt;Immune Physiology&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=14&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q60&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q10/&#34;&gt;Alzheimer&amp;#39;s Disease — APP Processing by α-, β- and γ-Secretases&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/protein-structure-folding-function/&#34;&gt;Protein Structure, Folding &amp;amp; Function&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=16&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q61&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q11/&#34;&gt;RNA Virus Replication Cycles — Genome Classification&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/nucleotide-nucleic-acid-chemistry/&#34;&gt;Nucleotide &amp;amp; Nucleic Acid Chemistry&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=17&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q62&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q12/&#34;&gt;Pine Needle Cross-Section — Resin Duct and Mesophyll&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/leaf-anatomy/&#34;&gt;Leaf Anatomy&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=19&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q63&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q13/&#34;&gt;Land Plant Phylogeny — Evaluating Four Cladograms&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/plant-body-plans-major-lineages/&#34;&gt;Plant Body Plans Across Major Lineages&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=20&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q64&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q14/&#34;&gt;The C4 Rice Project — Engineering C4 Photosynthesis into a C3 Crop&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/5-plant-physiology/calvin-cycle-photorespiration-c4-cam/&#34;&gt;Calvin Cycle, Photorespiration &amp;amp; C4/CAM Biochemistry&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=21&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q65&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q15/&#34;&gt;Arabidopsis Sun vs Shade Leaves — Cross-Section Comparison&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/6-plant-anatomy/leaf-anatomy/&#34;&gt;Leaf Anatomy&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=22&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
