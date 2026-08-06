@@ -1,0 +1,46 @@
+name: "2023"
+rounds:
+  - id: first-stage
+    name: "First Stage"
+    papers:
+      - category: "Exam"
+        link: "/papers/tbo/2023/first-stage-exam.pdf"
+        solutionLink: "/papers/tbo/2023/first-stage-answer.pdf"
+    problems:
+      - id: q1
+        number: "Q1"
+        name: "Sample Question 1 (placeholder)"
+        link: "/papers/tbo/2023/first-stage-exam.pdf"
+      - id: q2
+        number: "Q2"
+        name: "Sample Question 2 (placeholder)"
+        link: "/papers/tbo/2023/first-stage-exam.pdf"
+      - id: q3
+        number: "Q3"
+        name: "Sample Question 3 (placeholder)"
+        link: "/papers/tbo/2023/first-stage-exam.pdf"
+  - id: second-stage
+    name: "Second Stage"
+    papers:
+      - category: "Part A"
+        link: "/papers/tbo/2023/second-stage-exam-a.pdf"
+        solutionLink: "/papers/tbo/2023/second-stage-answer.pdf"
+      - category: "Part B"
+        link: "/papers/tbo/2023/second-stage-exam-b.pdf"
+        solutionLink: "/papers/tbo/2023/second-stage-answer.pdf"
+  - id: final-theory
+    name: "Final Stage — Theory"
+    papers:
+      - category: "Theory"
+        link: "/papers/tbo/2023/final-theory-exam.pdf"
+  - id: final-practical
+    name: "Final Stage — Practical"
+    papers:
+      - category: "Practical A"
+        link: "/papers/tbo/2023/final-practical-a.pdf"
+      - category: "Practical B"
+        link: "/papers/tbo/2023/final-practical-b.pdf"
+      - category: "Practical C"
+        link: "/papers/tbo/2023/final-practical-c.pdf"
+      - category: "Practical D"
+        link: "/papers/tbo/2023/final-practical-d.pdf"

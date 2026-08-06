@@ -924,12 +924,54 @@ html.dark .content table tbody tr:hover {
 }
 
 /* ===================================================================
-   8. SEARCH MODAL â€” Ctrl/Cmd+K dialog (themes/hextra/assets/css/
+   8. SEARCH â€” navbar trigger + Ctrl/Cmd+K dialog (themes/hextra/assets/css/
    components/search.css). The match-highlight color already inherited
    lilac from the --primary-hue override (section 5 above); this adds
    chrome to the dialog itself so it doesn't read as the one remaining
    stock-Hextra surface on the site.
+
+   The desktop trigger (md+) ships as a flat gray "bg-black/5" pill with
+   gray-500 text â€” stock Hextra, and the one element in the navbar that
+   never got the lilac/sage treatment every other chip (badge-custom,
+   topic-meta-link) already has. Retint it to match that chip language.
+   Mobile stays the untouched icon-only button (already hx:text-current,
+   consistent with the Discord/GitHub icon links beside it), so every
+   rule here is scoped to the md+ breakpoint (Tailwind's default 768px).
    =================================================================== */
+@media (min-width: 768px) {
+  .hextra-search-trigger {
+    background: linear-gradient(135deg, rgba(137, 101, 196, 0.09), rgba(92, 122, 88, 0.07)) !important;
+    border: 1px solid rgba(137, 101, 196, 0.25) !important;
+    border-radius: 999px !important;
+    color: #6d4fa3 !important;
+    transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  }
+  .hextra-search-trigger:hover {
+    background: linear-gradient(135deg, rgba(137, 101, 196, 0.16), rgba(92, 122, 88, 0.12)) !important;
+    border-color: rgba(137, 101, 196, 0.45) !important;
+    color: #4a3570 !important;
+  }
+  html.dark .hextra-search-trigger {
+    background: linear-gradient(135deg, rgba(201, 183, 232, 0.1), rgba(157, 185, 154, 0.08)) !important;
+    border-color: rgba(201, 183, 232, 0.3) !important;
+    color: #c9b7e8 !important;
+  }
+  html.dark .hextra-search-trigger:hover {
+    background: linear-gradient(135deg, rgba(201, 183, 232, 0.18), rgba(157, 185, 154, 0.14)) !important;
+    border-color: rgba(201, 183, 232, 0.5) !important;
+    color: #e6dcf5 !important;
+  }
+}
+.hextra-search-trigger-kbd {
+  background: rgba(137, 101, 196, 0.08) !important;
+  border-color: rgba(137, 101, 196, 0.3) !important;
+  color: #6d4fa3 !important;
+}
+html.dark .hextra-search-trigger-kbd {
+  background: rgba(201, 183, 232, 0.1) !important;
+  border-color: rgba(201, 183, 232, 0.35) !important;
+  color: #c9b7e8 !important;
+}
 .hextra-search-dialog {
   border-radius: 16px !important;
   border-color: rgba(137, 101, 196, 0.25) !important;
@@ -1017,3 +1059,342 @@ html.dark .hextra-search-input-wrapper {
 /* Actual sizing is set directly on each svg's inline style by the JS fix in
    layouts/partials/scripts/mermaid.html (avoids fighting !important CSS
    against a plain inline style, which inline styles would lose). */
+
+/* ===================================================================
+   11. PAPERS ARCHIVE â€” olympiad/year/round/problem browsing
+   Sample backbone for /papers/tbo/... (layouts/shortcodes/papers-*.html).
+   Reuses the lilac/sage palette and the same tint/border formula as the
+   eq-box (section 6) and table (section 7) treatments above, rather than
+   inventing new colors. Card grid deliberately mirrors .hextra-card's
+   proportions without depending on its markup, since the papers-* short-
+   codes render their own <a>/<div> structure.
+   =================================================================== */
+.papers-hero {
+  margin-bottom: 1.5rem;
+}
+.papers-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  color: #5c7a58;
+  background: rgba(92, 122, 88, 0.12);
+  border: 1px solid rgba(92, 122, 88, 0.25);
+  margin-bottom: 0.5rem;
+}
+html.dark .papers-tag {
+  color: #9db99a;
+  background: rgba(157, 185, 154, 0.14);
+  border-color: rgba(157, 185, 154, 0.3);
+}
+.papers-summary {
+  color: rgb(75 85 99);
+  margin-top: 0.5rem;
+}
+html.dark .papers-summary {
+  color: rgb(163 163 163);
+}
+.papers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+.papers-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  border: 1px solid rgba(137, 101, 196, 0.2);
+  background: linear-gradient(135deg, rgba(137, 101, 196, 0.06), rgba(92, 122, 88, 0.05));
+  text-decoration: none !important;
+  color: inherit;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+.papers-card:hover {
+  border-color: rgba(137, 101, 196, 0.5);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+  transform: translateY(-1px);
+}
+html.dark .papers-card {
+  border-color: rgba(201, 183, 232, 0.22);
+  background: linear-gradient(135deg, rgba(201, 183, 232, 0.08), rgba(157, 185, 154, 0.06));
+}
+html.dark .papers-card:hover {
+  border-color: rgba(201, 183, 232, 0.5);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+.papers-card-title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.papers-card-meta {
+  font-size: 0.8rem;
+  color: rgb(107 114 128);
+}
+html.dark .papers-card-meta {
+  color: rgb(163 163 163);
+}
+
+.papers-paperlinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 1rem 0 1.5rem;
+}
+.papers-paper-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid rgba(137, 101, 196, 0.15);
+  background: rgba(137, 101, 196, 0.04);
+}
+html.dark .papers-paper-row {
+  border-color: rgba(201, 183, 232, 0.18);
+  background: rgba(201, 183, 232, 0.05);
+}
+.papers-paper-category {
+  font-weight: 600;
+  margin-right: auto;
+}
+.papers-pill {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  text-decoration: none !important;
+  color: #8965c4;
+  background: rgba(137, 101, 196, 0.12);
+  border: 1px solid rgba(137, 101, 196, 0.3);
+}
+.papers-pill:hover {
+  background: rgba(137, 101, 196, 0.22);
+}
+.papers-pill-solution {
+  color: #5c7a58;
+  background: rgba(92, 122, 88, 0.12);
+  border-color: rgba(92, 122, 88, 0.3);
+}
+.papers-pill-solution:hover {
+  background: rgba(92, 122, 88, 0.22);
+}
+html.dark .papers-pill {
+  color: #c9b7e8;
+  background: rgba(201, 183, 232, 0.14);
+  border-color: rgba(201, 183, 232, 0.35);
+}
+html.dark .papers-pill:hover {
+  background: rgba(201, 183, 232, 0.24);
+}
+html.dark .papers-pill-solution {
+  color: #9db99a;
+  background: rgba(157, 185, 154, 0.14);
+  border-color: rgba(157, 185, 154, 0.35);
+}
+html.dark .papers-pill-solution:hover {
+  background: rgba(157, 185, 154, 0.24);
+}
+
+.papers-search {
+  margin: 0.5rem 0 1rem;
+}
+.papers-search-input {
+  width: 100%;
+  max-width: 320px;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(137, 101, 196, 0.3);
+  background: transparent;
+  color: inherit;
+  font-size: 0.9rem;
+}
+.papers-search-input:focus {
+  outline: none;
+  border-color: #8965c4;
+}
+html.dark .papers-search-input {
+  border-color: rgba(201, 183, 232, 0.35);
+}
+html.dark .papers-search-input:focus {
+  border-color: #c9b7e8;
+}
+
+.papers-table-wrap {
+  overflow-x: auto;
+}
+.papers-problem-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.papers-problem-table th,
+.papers-problem-table td {
+  text-align: left;
+  padding: 0.55rem 0.9rem;
+}
+
+/* Subject-tag pills — cross-links a problem to its matching /resources/ topic
+   page(s), reusing the sage tint (badge-curiosity's palette) rather than the
+   lilac papers-pill, since these point off to a different part of the site. */
+.papers-subject-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+.papers-subject-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  text-decoration: none !important;
+  color: #5c7a58;
+  background: rgba(92, 122, 88, 0.1);
+  border: 1px solid rgba(92, 122, 88, 0.25);
+  white-space: nowrap;
+}
+.papers-subject-tag:hover {
+  background: rgba(92, 122, 88, 0.2);
+}
+html.dark .papers-subject-tag {
+  color: #9db99a;
+  background: rgba(157, 185, 154, 0.12);
+  border-color: rgba(157, 185, 154, 0.3);
+}
+html.dark .papers-subject-tag:hover {
+  background: rgba(157, 185, 154, 0.22);
+}
+
+/* ===================================================================
+   12. TF-QUIZ — attempt-and-mark True/False widget
+   {{< tf-quiz >}} (layouts/shortcodes/tf-quiz.html). Client-side only —
+   no backend, matches the rest of the site. Correct/incorrect/unanswered
+   states reuse the same green/red/amber semantics as the difficulty
+   badges (section 3-ish) rather than inventing a new palette.
+   =================================================================== */
+.tf-quiz-wrap {
+  margin: 1.5rem 0;
+}
+.tf-quiz-row {
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 0.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(137, 101, 196, 0.2);
+  background: rgba(137, 101, 196, 0.03);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+html.dark .tf-quiz-row {
+  border-color: rgba(201, 183, 232, 0.22);
+  background: rgba(201, 183, 232, 0.04);
+}
+.tf-quiz-letter {
+  font-weight: 700;
+  color: #8965c4;
+}
+html.dark .tf-quiz-letter {
+  color: #c9b7e8;
+}
+.tf-quiz-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+}
+.tf-btn {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.3rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(137, 101, 196, 0.3);
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+html.dark .tf-btn {
+  border-color: rgba(201, 183, 232, 0.35);
+}
+.tf-btn.selected {
+  color: #fff;
+  background: #8965c4;
+  border-color: #8965c4;
+}
+html.dark .tf-btn.selected {
+  background: #7c5cb8;
+  border-color: #7c5cb8;
+}
+.tf-quiz-feedback {
+  margin-top: 0.5rem;
+  font-size: 0.88rem;
+}
+.tf-quiz-row.correct {
+  border-color: rgba(22, 163, 74, 0.4);
+  background: rgba(22, 163, 74, 0.06);
+}
+.tf-quiz-row.correct .tf-quiz-feedback {
+  color: #16a34a;
+}
+.tf-quiz-row.incorrect {
+  border-color: rgba(220, 38, 38, 0.4);
+  background: rgba(220, 38, 38, 0.06);
+}
+.tf-quiz-row.incorrect .tf-quiz-feedback {
+  color: #dc2626;
+}
+html.dark .tf-quiz-row.correct {
+  border-color: rgba(74, 222, 128, 0.4);
+  background: rgba(74, 222, 128, 0.08);
+}
+html.dark .tf-quiz-row.correct .tf-quiz-feedback {
+  color: #4ade80;
+}
+html.dark .tf-quiz-row.incorrect {
+  border-color: rgba(248, 113, 113, 0.4);
+  background: rgba(248, 113, 113, 0.08);
+}
+html.dark .tf-quiz-row.incorrect .tf-quiz-feedback {
+  color: #f87171;
+}
+.tf-quiz-row.unanswered {
+  border-color: rgba(245, 158, 11, 0.5);
+}
+.tf-quiz-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.tf-quiz-submit,
+.tf-quiz-reset {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.tf-quiz-submit {
+  color: #fff;
+  background: #8965c4;
+  border: 1px solid #8965c4;
+}
+.tf-quiz-reset {
+  color: #8965c4;
+  background: transparent;
+  border: 1px solid rgba(137, 101, 196, 0.4);
+}
+html.dark .tf-quiz-submit {
+  background: #7c5cb8;
+  border-color: #7c5cb8;
+}
+html.dark .tf-quiz-reset {
+  color: #c9b7e8;
+  border-color: rgba(201, 183, 232, 0.4);
+}
+.tf-quiz-score {
+  font-weight: 600;
+}

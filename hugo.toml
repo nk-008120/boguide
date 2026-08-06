@@ -106,10 +106,26 @@ theme = "hextra"
     name = "Articles"
     url = "/articles/"
     weight = 4
+
+  [[menu.main]]
+    name = "Search"
+    weight = 5
+    [menu.main.params]
+      type = "search"
+
   [[menu.main]]
     name = "Discord"
     url = "https://discord.gg/WpC8y6dbv"
-    weight = 5
+    weight = 6
+    [menu.main.params]
+      icon = "discord"
+
+  [[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/nk-008120/boguide"
+    weight = 7
+    [menu.main.params]
+      icon = "github"
 [params]
   # Navbar settings
   [params.navbar]
