@@ -1,75 +1,68 @@
---- 
-title: "About BiOGuide" 
---- 
- 
-Hey, thanks for visiting! Let’s talk a bit about why we built BiOGuide. 
+---
+title: "About BiOGuide"
+---
 
-The preparation for Biology Olympiads, which most of us are pretty familiar with, involves a lot of challenges, most commonly: Difficulty in resource selection; Scattered notes and textbook references; Incomplete practice availabilty; Practical lack of skills; and many more. This website aims to resolve most of these issues, through a singular, compiled, and modern guide.
+Hey, thanks for visiting! Let's talk a bit about why we built BiOGuide.
 
+Preparing for Biology Olympiads involves a familiar set of challenges: difficulty picking the right resources, scattered notes and textbook references, incomplete practice material, a practical lack of hands-on skills, and more. This website exists to resolve most of those issues through a single, compiled, modern guide.
 
- The main goal of BiOGuide is to be complete and concise. That doesn’t mean it’s just short, dry text without any motivation, we have actively tried to do the exact opposite; but that it contains a lot more of what is needed for the olympiads. Also we have tried to be up to date with our topics, and really tried to modernise the website, but with retaining the practice we all need to understand fast from just text, and data.
+Our goal is to be complete *and* concise. That doesn't mean short, dry text with no motivation behind it — we've actively aimed for the opposite — but rather that the guide contains everything you actually need for the olympiads, kept current, and presented in a modern way that still lets you learn quickly from text and data.
 
- Now, off to the WHAT, WHY and HOW.
+Now, on to the **what**, **why**, and **how**.
 
-<br>
-<br>
+## Ways of Working
 
-<div style="text-align: center;">
-<span style="font-size: 1.5rem; font-weight: bold">Ways Of Working</span>
-</div>
+Every piece of content goes through a standardized process before it's approved for general use:
 
-At BiOGuide, we have certain standardized ways of working principles that all our content has to go through before being approved of to the general use. This process consists of (currently);
-The Founder and Director writing and editing all the content page by page, topic by topic, word by word. Every concept has been personally reviewed.
-A specialised team is then put together to put the content under review, and provide a comprehensive rating. Only content with a rating of greater than 4 (1-5 scale) is then considered for further downstream editing.
-This team also finds relevant previous year problems and puts them under one directory for ease of use later on.
-Finally, the content is published for you!
-We hope that you appreciate the effort and enjoy our website, and most importantly, actively participate in feedback and discussions on our community pages.
+1. The Founder and Director writes and edits all content page by page, topic by topic, word by word — every concept is personally reviewed.
+2. A specialised team then reviews the content and provides a rating. Only content rated above 4 (on a 1–5 scale) moves on to further editing.
+3. This team also collects relevant past-year problems and compiles them into one directory for ease of use later on.
+4. Finally, the content is published for you.
 
-<div style="text-align: center;">
-<span style="font-size: 1.5rem; font-weight: bold">WHAT sets us apart</span>
-</div>
+We hope you appreciate the effort and enjoy the website — and most importantly, that you actively participate in feedback and discussions on our community pages.
 
-First, let me mention some features that we want to add to this website later on;<br>
-1. Paper archive<br>
-2. An indigenous biology competition<br>
-3. An indigenous AI agent to help you through the journey.<br>
-4. A comments and feedback, and a discussion section.
-Your inputs in the <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_FbhYS1IraA1s6F7zFLzkILBZvRceDqdoMqV7yTH6hu0k-g/viewform?usp=header">survey</a> will be helpful in determining the outcomes, visit fast as it is online only from June 3rd - July 21 2026.
+## What Sets Us Apart
 
+Some features we want to add to this website going forward:
 
-When we first started, we looked at the peers of our work, such as <a href="https://biolympiads.com" target="blank">Biolympiads</a> and <a href="https://learntuitive.com/" target="blank"> Leartuitive </a> but, these seemed too outdated and low on activity, and also, a little commercialised. Our BiOGuide <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_FbhYS1IraA1s6F7zFLzkILBZvRceDqdoMqV7yTH6hu0k-g/viewform" target="blanl">Survey</a> supported our reasoning. Hence, we decided to put this together, with the following features we attempted to do specially differently than our peers:
-1. High interactivity
-2. No commercialisation (NPO)
-3. High modernisation
-4. Global relevance
-5. No academic compromise, for and by the students.
+1. A paper archive
+2. An indigenous biology competition
+3. An indigenous AI agent to help guide you through your prep
+4. A comments, feedback, and discussion section
 
-<br>
-<br>
-<div style="text-align: center;">
-<span style="font-size: 1.5rem; font-weight: bold">WHY so much work</span>
-</div>
-We are absolutely captivated by biology and the life sciences. Yet, our own journey preparing for olympiads was filled with roadblocks, despite our relentless efforts. The biggest hurdle was finding the right resources; available textbooks were either incredibly dense or lacked the specific depth required for the IBO.<br><br>That exact roadblock inspired us to build the BO Guide. We don't make anything from this—it is completely free to read, share, and modify! Honestly, the ultimate payoff for us is making the learning curve much friendlier for the next generation of biology enthusiasts.Cracking these competitions isn't just about rote memorisation of cellular pathways or anatomy (though a strong base of core facts is essential). It is about truly understanding how living systems function, tackling complex problems piece by piece, and having the grit to face scenarios you have never encountered before.<br><br> We want to help you build that specific problem-solving intuition, which is why we plan to provide an extensive library of previous year problems with step-by-step solutions!
+Your input in the [survey](https://docs.google.com/forms/d/e/1FAIpQLSc_FbhYS1IraA1s6F7zFLzkILBZvRceDqdoMqV7yTH6hu0k-g/viewform?usp=header) will help determine which of these we prioritize — it's live only from June 3 to July 21, 2026, so visit soon.
 
-<br>
-<br>
-<div style="text-align: center;">
-<span style="font-size: 1.5rem; font-weight: bold">HOW</span>
-</div>
-<div style="text-align: center;">
-<span style="font-size: 1.5rem; font-weight: bold; font-align: center">First, our inspirations:</span>
-</div>
-1. <a href="https://aoguide.app" target="blank"> <span style="font-size: 1.3rem;"> AOGuide </span></a> Due to my astronomical background, i discovered this treasure of a website for AO aspirants. A lot of what we have tried here, and believe me, a lot has been inspired by AOGuide, so a big thanks to the people there.<br>
-2.<span style="font-size: 1.3rem;color: blue;"> Biolympiads and learntuitive</span>: As mentioned above, we have tried to better ourselves, but these peers still serve as a benchmark and an inspiration for us.
+When we first started, we looked at existing resources like [Biolympiads](https://biolympiads.com) and [Learntuitive](https://learntuitive.com/), but found them fairly outdated, low on activity, and somewhat commercialised. Our [BiOGuide survey](https://docs.google.com/forms/d/e/1FAIpQLSc_FbhYS1IraA1s6F7zFLzkILBZvRceDqdoMqV7yTH6hu0k-g/viewform) backed up that impression, so we decided to build something different — deliberately setting out to be:
+
+1. Highly interactive
+2. Non-commercial (a non-profit)
+3. Highly modernised
+4. Globally relevant
+5. Uncompromising academically — built for and by students
+
+## Why So Much Work
+
+We're captivated by biology and the life sciences — but our own journey preparing for olympiads was full of roadblocks despite relentless effort. The biggest one was finding the right resources: available textbooks were either far too dense or didn't go into the specific depth the IBO actually requires.
+
+That roadblock is what inspired BiOGuide. We make nothing from it — it's completely free to read, share, and modify. Honestly, the real payoff for us is making the learning curve friendlier for the next generation of biology enthusiasts.
+
+Cracking these competitions isn't just about rote-memorising cellular pathways or anatomy (though a strong base of core facts is essential) — it's about truly understanding how living systems function, working through complex problems piece by piece, and having the grit to face scenarios you've never seen before. We want to help you build that problem-solving intuition, which is why we plan to provide an extensive library of past-year problems with step-by-step solutions.
+
+## How
+
+### Inspirations
+
+1. **[AOGuide](https://aoguide.app)** — thanks to an astronomy background, I discovered this treasure of a website for AO aspirants. A lot of what we've done here has been inspired by AOGuide, so a big thanks to the people behind it.
+2. **Biolympiads and Learntuitive** — as mentioned above, we've tried to improve on what they offer, but they still serve as a benchmark and an inspiration for us.
 3. More soon!
-<br><br>
-<span style="font-size: 1.5rem; font-weight: bold; font-align: center">Our Tech:</span>
-1.<span style="font-size: 1.3rem;"> Streamlit</span>: The platform that provides the interactive atmosphere that sets us apart. A big thanks to IBO 2026 OC for introducing us to this.
-2. <span style="font-size: 1.3rem;">Snowflake</span>: Streamlit deployment.
-3. <span style="font-size: 1.3rem;">The AOGuide inspirations</span>: Hugo, Hextra Theme, Vercel.
-4. <span style="font-size: 1.3rem;">VS, MathJax, Git.</span>
-<br><br>
 
-<span style="font-size: 1.5rem; font-weight: bold; font-align: center">LICENSING</span>
-<br> <span style="font align: center"> This website has been published under a license of CC BY-NC-SA 4.0. Note that a future BUS-L1.1 license is under consideration for a few extravagant features which will be added way later in the website (do not worry, the website will remain non-profit).
+### Our Tech
 
+1. **Streamlit** — the platform behind the interactive experience that sets us apart. Thanks to the IBO 2026 Organizing Committee for introducing us to it.
+2. **Snowflake** — used for Streamlit deployment.
+3. **Hugo, the Hextra theme, and Vercel** — following AOGuide's own lead here.
+4. **VS Code, MathJax, and Git.**
+
+## Licensing
+
+This website is published under a CC BY-NC-SA 4.0 license. A future BUSL-1.1 license is under consideration for a handful of more ambitious features planned much further down the line — don't worry, the website will remain non-profit regardless.

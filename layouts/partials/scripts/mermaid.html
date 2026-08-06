@@ -1,0 +1,132 @@
+{{- /* Mermaid — project override of themes/hextra/layouts/_partials/scripts/mermaid.html.
+     Adds a post-render sizing fix: Mermaid's default useMaxWidth:true sets width="100%"
+     on the rendered <svg>, which shrinks large diagrams to fit the content column — since
+     Mermaid's own text font-sizes live in that same internal viewBox coordinate system,
+     shrinking the SVG shrinks the text proportionally too, down to illegible sizes for any
+     diagram whose natural size exceeds ~650-900px. Fix: explicitly size each diagram's SVG
+     from its own viewBox (its true natural size) instead of the shrink-to-fit width="100%",
+     and let .mermaid scroll horizontally (assets/css/custom.css) if that's wider than the
+     column. Everything else here is unchanged from the theme's original. */ -}}
+
+{{- $mermaidBase := "" -}}
+{{- $useDefaultCdn := true -}}
+{{- with site.Params.mermaid.base -}}
+  {{- $mermaidBase = . -}}
+  {{- $useDefaultCdn = false -}}
+{{- end -}}
+
+{{- $mermaidJsAsset := "" -}}
+{{- with site.Params.mermaid.js -}}
+  {{- $mermaidJsAsset = . -}}
+{{- end -}}
+
+{{- /* If only js is set without base, use local asset loading */ -}}
+{{- if and $useDefaultCdn (ne $mermaidJsAsset "") -}}
+  {{- $useDefaultCdn = false -}}
+{{- end -}}
+
+{{- /* Set default CDN base if needed */ -}}
+{{- if $useDefaultCdn -}}
+  {{- $mermaidBase = "https://cdn.jsdelivr.net/npm/mermaid@latest/dist" -}}
+{{- end -}}
+
+{{- $isRemoteBase := or (strings.HasPrefix $mermaidBase "http://") (strings.HasPrefix $mermaidBase "https://") -}}
+{{- $minSuffix := cond hugo.IsProduction ".min" "" -}}
+
+{{- /* JS retrieval: get raw JS from either local asset or remote, then process */ -}}
+{{- if $isRemoteBase -}}
+  {{- $jsPath := cond (ne $mermaidJsAsset "") $mermaidJsAsset (printf "mermaid%s.js" $minSuffix) -}}
+  {{- $mermaidJsUrl := urls.JoinPath $mermaidBase $jsPath -}}
+  {{- with try (resources.GetRemote $mermaidJsUrl) -}}
+    {{- with .Err -}}
+      {{- errorf "Could not retrieve Mermaid js file from %s. Reason: %s." $mermaidJsUrl . -}}
+    {{- else with .Value -}}
+      {{- with resources.Copy (printf "js/mermaid%s.js" $minSuffix) . -}}
+        {{- $mermaidJs := . | fingerprint -}}
+        <script defer src="{{ $mermaidJs.RelPermalink }}" integrity="{{ $mermaidJs.Data.Integrity }}" crossorigin="anonymous"></script>
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- else if $mermaidJsAsset -}}
+  {{- with resources.Get $mermaidJsAsset -}}
+    {{- $mermaidJs := . | fingerprint -}}
+    <script defer src="{{ $mermaidJs.RelPermalink }}" integrity="{{ $mermaidJs.Data.Integrity }}" crossorigin="anonymous"></script>
+  {{- else -}}
+    {{- errorf "Mermaid js asset not found at %q" $mermaidJsAsset -}}
+  {{- end -}}
+{{- end -}}
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Store original mermaid code for each diagram
+    document.querySelectorAll(".mermaid").forEach((el) => {
+      el.dataset.original = el.innerHTML;
+    });
+
+    // Shrink each diagram to fit its column, like Mermaid's own default width:100% —
+    // but never shrink past a legible minimum, since that's what was making text on
+    // wide diagrams unreadable. Mermaid's default node/edge label font-size is 16px
+    // in the diagram's own coordinate system, so clamping the shrink factor at 0.75
+    // guarantees labels never render smaller than ~12px, while diagrams that already
+    // fit comfortably keep shrinking to their column exactly as before (no change).
+    var MIN_SCALE = 0.75;
+    function fixMermaidSizing() {
+      document.querySelectorAll(".mermaid svg").forEach((svg) => {
+        if (svg.dataset.sized) return;
+        const viewBox = svg.getAttribute("viewBox");
+        if (!viewBox) return;
+        const parts = viewBox.trim().split(/\s+/).map(Number);
+        if (parts.length !== 4 || !isFinite(parts[2]) || !isFinite(parts[3])) return;
+        const naturalWidth = parts[2];
+        const naturalHeight = parts[3];
+        const container = svg.closest(".mermaid");
+        const containerWidth = (container && container.clientWidth) || naturalWidth;
+        const fitScale = containerWidth / naturalWidth;
+        const scale = Math.min(1, Math.max(fitScale, MIN_SCALE));
+        // Mutating width/height in place on the element Mermaid itself just inserted
+        // doesn't reliably repaint in every environment — clone the (now-sized) node
+        // and swap it in, which does.
+        const sized = svg.cloneNode(true);
+        sized.style.width = (naturalWidth * scale) + "px";
+        sized.style.height = (naturalHeight * scale) + "px";
+        sized.style.maxWidth = "none";
+        sized.removeAttribute("width");
+        sized.removeAttribute("height");
+        sized.dataset.sized = "true";
+        svg.replaceWith(sized);
+      });
+    }
+
+    // startOnLoad is off on purpose: mermaid.run()'s returned promise only resolves
+    // once rendering — including Mermaid's OWN internal post-processing of each
+    // diagram's width/style — is fully finished. Applying our sizing fix only after
+    // that promise resolves avoids a race where the fix runs first and then gets
+    // silently overwritten by Mermaid's own later width="100%". A MutationObserver
+    // guessing "the <svg> exists now" can't make that guarantee, and how much that
+    // race matters in practice depends on rendering speed, so it can pass in testing
+    // and still lose the race in a real browser.
+    function renderMermaid() {
+      const theme = document.documentElement.classList.contains("dark") ? "dark" : "default";
+      mermaid.initialize({ startOnLoad: false, theme: theme });
+      mermaid.run({ querySelector: ".mermaid" }).then(fixMermaidSizing).catch(() => {});
+    }
+
+    renderMermaid();
+
+    let timeout;
+    new MutationObserver(() => {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        document.querySelectorAll(".mermaid").forEach((el) => {
+          // Reset to original content, preserving HTML
+          el.innerHTML = el.dataset.original;
+          el.removeAttribute("data-processed");
+        });
+        renderMermaid();
+      }, 150);
+    }).observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
+  });
+</script>

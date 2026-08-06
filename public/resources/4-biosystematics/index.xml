@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BiOGuide for Biology Olympiads – Biosystematics</title>
-    <link>http://localhost:62792/resources/4-biosystematics/</link>
+    <link>http://localhost:1313/resources/4-biosystematics/</link>
     <description>Recent content in Biosystematics on BiOGuide for Biology Olympiads</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://localhost:62792/resources/4-biosystematics/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/resources/4-biosystematics/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Classification Principles &amp; Nomenclature</title>
-      <link>http://localhost:62792/resources/4-biosystematics/classification-principles-nomenclature/</link>
+      <link>http://localhost:1313/resources/4-biosystematics/classification-principles-nomenclature/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:62792/resources/4-biosystematics/classification-principles-nomenclature/</guid>
+      <guid>http://localhost:1313/resources/4-biosystematics/classification-principles-nomenclature/</guid>
       <description>
         
         
@@ -145,9 +145,9 @@
     &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Taxonomic hierarchy explorer (click-through SVG/JS, no new library)&lt;/strong&gt; — a nested-box or tree diagram from Domain down to Species (e.g. tracing &lt;em&gt;Homo sapiens&lt;/em&gt;), where clicking each rank expands to show sibling taxa at that rank and a one-line description of what distinguishes it, making the abstract &amp;ldquo;eight nested ranks&amp;rdquo; concrete with a real worked lineage.
-&lt;iframe src=&#34;http://localhost:62792/taxonomic-hierarchy-explorer.html&#34; title=&#34;Taxonomic Hierarchy Explorer&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
+&lt;iframe src=&#34;http://localhost:1313/taxonomic-hierarchy-explorer.html&#34; title=&#34;Taxonomic Hierarchy Explorer&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Priority/synonymy resolver (interactive worked example, HTML/JS)&lt;/strong&gt; — presented with a mock scenario (two publication dates, two names for the same specimen), the user picks which name should be the senior synonym and why, then is shown the correct resolution and, in a second scenario, a &lt;em&gt;nomen conservandum&lt;/em&gt; exception case to contrast against the default rule.
-&lt;iframe src=&#34;http://localhost:62792/priority-synonymy-resolver.html&#34; title=&#34;Priority &amp;amp; Synonymy Resolver&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 380px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
+&lt;iframe src=&#34;http://localhost:1313/priority-synonymy-resolver.html&#34; title=&#34;Priority &amp;amp; Synonymy Resolver&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 380px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -170,10 +170,10 @@
     
     <item>
       <title>Species Concepts</title>
-      <link>http://localhost:62792/resources/4-biosystematics/species-concepts/</link>
+      <link>http://localhost:1313/resources/4-biosystematics/species-concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:62792/resources/4-biosystematics/species-concepts/</guid>
+      <guid>http://localhost:1313/resources/4-biosystematics/species-concepts/</guid>
       <description>
         
         
@@ -189,7 +189,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:62792/resources/4-biosystematics/classification-principles-nomenclature/&#34;&gt;Classification Principles Nomenclature&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/4-biosystematics/classification-principles-nomenclature/&#34;&gt;Classification Principles Nomenclature&lt;/a&gt;
     
   
   
@@ -291,9 +291,9 @@
     &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Reproductive isolating mechanism sorter (drag-and-drop, HTML/JS, no new library)&lt;/strong&gt; — a set of named scenarios (e.g. &amp;ldquo;two cricket species sing at different times of night,&amp;rdquo; &amp;ldquo;pollen grains fail to germinate on the wrong species&amp;rsquo; stigma&amp;rdquo;) that the user drags into &amp;ldquo;prezygotic&amp;rdquo; or &amp;ldquo;postzygotic&amp;rdquo; bins, then into the specific mechanism subtype, with immediate correctness feedback — turns a list of six mechanism names into an applied-classification exercise.
-&lt;iframe src=&#34;http://localhost:62792/rim-sorter.html&#34; title=&#34;Reproductive Isolating Mechanism Sorter&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 560px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
+&lt;iframe src=&#34;http://localhost:1313/rim-sorter.html&#34; title=&#34;Reproductive Isolating Mechanism Sorter&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 560px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Ring species map explorer (interactive SVG/JS)&lt;/strong&gt; — a stylized map of a ring species range (e.g. &lt;em&gt;Ensatina&lt;/em&gt; around California&amp;rsquo;s Central Valley) where clicking any two population points on the ring shows whether those two populations interbreed, letting the user &amp;ldquo;discover&amp;rdquo; that adjacent populations always interbreed but the two ends of the ring, brought together, do not.
-&lt;iframe src=&#34;http://localhost:62792/ring-species-map-explorer.html&#34; title=&#34;Ring Species Map Explorer&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 560px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
+&lt;iframe src=&#34;http://localhost:1313/ring-species-map-explorer.html&#34; title=&#34;Ring Species Map Explorer&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 560px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -317,10 +317,10 @@
     
     <item>
       <title>Phylogenetic Trees &amp; Cladistics</title>
-      <link>http://localhost:62792/resources/4-biosystematics/phylogenetic-trees-cladistics/</link>
+      <link>http://localhost:1313/resources/4-biosystematics/phylogenetic-trees-cladistics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:62792/resources/4-biosystematics/phylogenetic-trees-cladistics/</guid>
+      <guid>http://localhost:1313/resources/4-biosystematics/phylogenetic-trees-cladistics/</guid>
       <description>
         
         
@@ -336,7 +336,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:62792/resources/4-biosystematics/classification-principles-nomenclature/&#34;&gt;Classification Principles Nomenclature&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/4-biosystematics/classification-principles-nomenclature/&#34;&gt;Classification Principles Nomenclature&lt;/a&gt;
     
   
   
@@ -465,9 +465,9 @@
     &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Character matrix → cladogram builder (interactive SVG/JS, no new library)&lt;/strong&gt; — the user is given a small character matrix (4-6 taxa, 4-6 binary characters) and an outgroup, and drags taxa into a tree structure; the tool tallies the total number of character-state changes required by the user&amp;rsquo;s tree versus the true most-parsimonious tree, letting the user directly discover why one arrangement beats another rather than being told the answer.
-&lt;iframe src=&#34;http://localhost:62792/cladogram-builder.html&#34; title=&#34;Character Matrix → Cladogram Builder&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
+&lt;iframe src=&#34;http://localhost:1313/cladogram-builder.html&#34; title=&#34;Character Matrix → Cladogram Builder&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Monophyly/paraphyly/polyphyly classifier (click-through quiz, HTML/JS)&lt;/strong&gt; — presented with a series of pre-drawn trees, each with a shaded group of taxa, the user classifies the shaded group as mono-, para-, or polyphyletic and receives immediate feedback with the specific missing/excluded lineage highlighted when wrong.
-&lt;iframe src=&#34;http://localhost:62792/clade-classifier-quiz.html&#34; title=&#34;Monophyly / Paraphyly / Polyphyly Classifier&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 620px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
+&lt;iframe src=&#34;http://localhost:1313/clade-classifier-quiz.html&#34; title=&#34;Monophyly / Paraphyly / Polyphyly Classifier&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 620px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -490,10 +490,10 @@
     
     <item>
       <title>Molecular Systematics</title>
-      <link>http://localhost:62792/resources/4-biosystematics/molecular-systematics/</link>
+      <link>http://localhost:1313/resources/4-biosystematics/molecular-systematics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:62792/resources/4-biosystematics/molecular-systematics/</guid>
+      <guid>http://localhost:1313/resources/4-biosystematics/molecular-systematics/</guid>
       <description>
         
         
@@ -509,7 +509,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:62792/resources/4-biosystematics/phylogenetic-trees-cladistics/&#34;&gt;Phylogenetic Trees Cladistics&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/4-biosystematics/phylogenetic-trees-cladistics/&#34;&gt;Phylogenetic Trees Cladistics&lt;/a&gt;
     
   
   
@@ -619,9 +619,9 @@
     &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Sequence alignment and tree-building walkthrough (interactive SVG/JS, no new library)&lt;/strong&gt; — the user is given 4-5 short unaligned sequences, aligns them by dragging in gap characters, then watches a distance matrix populate and a UPGMA/NJ tree assemble from it step by step, making the abstract &amp;ldquo;distance matrix → tree&amp;rdquo; pipeline into something built rather than asserted.
-&lt;iframe src=&#34;http://localhost:62792/sequence-alignment-tree-walkthrough.html&#34; title=&#34;Sequence Alignment &amp;amp; Tree-Building Walkthrough&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 560px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
+&lt;iframe src=&#34;http://localhost:1313/sequence-alignment-tree-walkthrough.html&#34; title=&#34;Sequence Alignment &amp;amp; Tree-Building Walkthrough&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 560px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Long-branch attraction demonstrator (Plotly or SVG/JS simulation)&lt;/strong&gt; — a simulated 4-taxon tree with two adjustable branch-length sliders; as the user lengthens two non-sister branches, the tool shows parsimony increasingly (and eventually incorrectly) grouping them together, visually demonstrating the LBA artifact as a direct consequence of branch length rather than a described abstraction.
-&lt;iframe src=&#34;http://localhost:62792/long-branch-attraction-demonstrator.html&#34; title=&#34;Long-Branch Attraction Demonstrator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
+&lt;iframe src=&#34;http://localhost:1313/long-branch-attraction-demonstrator.html&#34; title=&#34;Long-Branch Attraction Demonstrator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -645,10 +645,10 @@
     
     <item>
       <title>Domains &amp; Kingdoms</title>
-      <link>http://localhost:62792/resources/4-biosystematics/domains-kingdoms/</link>
+      <link>http://localhost:1313/resources/4-biosystematics/domains-kingdoms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:62792/resources/4-biosystematics/domains-kingdoms/</guid>
+      <guid>http://localhost:1313/resources/4-biosystematics/domains-kingdoms/</guid>
       <description>
         
         
@@ -664,7 +664,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:62792/resources/4-biosystematics/molecular-systematics/&#34;&gt;Molecular Systematics&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/4-biosystematics/molecular-systematics/&#34;&gt;Molecular Systematics&lt;/a&gt;
     
   
   
@@ -819,9 +819,9 @@
     &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Kingdom system timeline slider (interactive HTML/JS)&lt;/strong&gt; — a slider moving through two-kingdom → five-kingdom → six-kingdom → three-domain systems, redrawing the top-level classification tree at each step and highlighting exactly which groups split or merged at each transition, making the historical sequence of revisions visually traceable rather than a memorized list of dates.
-&lt;iframe src=&#34;http://localhost:62792/kingdom-system-timeline-slider.html&#34; title=&#34;Kingdom System Timeline Slider&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 500px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
+&lt;iframe src=&#34;http://localhost:1313/kingdom-system-timeline-slider.html&#34; title=&#34;Kingdom System Timeline Slider&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 500px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Baltimore classification sorter (drag-and-drop, HTML/JS)&lt;/strong&gt; — named real viruses (HIV, influenza, herpesvirus, Hepatitis B, etc.) are dragged into their correct Baltimore class based on given genome-type clues, reinforcing the genome-type-to-class mapping through application rather than memorization.
-&lt;iframe src=&#34;http://localhost:62792/baltimore-classification-sorter.html&#34; title=&#34;Baltimore Classification Sorter&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
+&lt;iframe src=&#34;http://localhost:1313/baltimore-classification-sorter.html&#34; title=&#34;Baltimore Classification Sorter&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -845,10 +845,10 @@
     
     <item>
       <title>Major Taxa Cross-Reference</title>
-      <link>http://localhost:62792/resources/4-biosystematics/major-taxa-cross-reference/</link>
+      <link>http://localhost:1313/resources/4-biosystematics/major-taxa-cross-reference/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:62792/resources/4-biosystematics/major-taxa-cross-reference/</guid>
+      <guid>http://localhost:1313/resources/4-biosystematics/major-taxa-cross-reference/</guid>
       <description>
         
         
@@ -864,7 +864,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:62792/resources/4-biosystematics/domains-kingdoms/&#34;&gt;Domains Kingdoms&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/4-biosystematics/domains-kingdoms/&#34;&gt;Domains Kingdoms&lt;/a&gt;
     
   
   
@@ -1021,9 +1021,9 @@
     &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Animal kingdom phylogeny explorer (Mermaid-based or SVG/JS click-through)&lt;/strong&gt; — a clickable cladogram of the nine phyla in the table above, branching at the acoelomate/pseudocoelomate/coelomate and protostome/deuterostome nodes, where clicking any phylum name jumps to its full structural treatment on the corresponding Animal Anatomy page — a literal cross-reference tool, not just a diagram.
-&lt;iframe src=&#34;http://localhost:62792/animal-phylogeny-explorer.html&#34; title=&#34;Animal Kingdom Phylogeny Explorer&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
+&lt;iframe src=&#34;http://localhost:1313/animal-phylogeny-explorer.html&#34; title=&#34;Animal Kingdom Phylogeny Explorer&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&amp;ldquo;Reptilia&amp;rdquo; paraphyly demonstrator (interactive SVG/JS)&lt;/strong&gt; — two toggleable views of the same amniote cladogram: one shaded to show the traditional &amp;ldquo;Reptilia&amp;rdquo; grouping (visibly excluding a nested branch, birds), the other shaded to show Sauropsida (the full, monophyletic clade) — directly visualizing the paraphyly problem using material already covered structurally elsewhere on the site.
-&lt;iframe src=&#34;http://localhost:62792/reptilia-paraphyly-demonstrator.html&#34; title=&#34;Reptilia Paraphyly Demonstrator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 500px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
+&lt;iframe src=&#34;http://localhost:1313/reptilia-paraphyly-demonstrator.html&#34; title=&#34;Reptilia Paraphyly Demonstrator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 500px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -1048,10 +1048,10 @@
     
     <item>
       <title>Taxonomic Keys &amp; Identification</title>
-      <link>http://localhost:62792/resources/4-biosystematics/taxonomic-keys-identification/</link>
+      <link>http://localhost:1313/resources/4-biosystematics/taxonomic-keys-identification/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:62792/resources/4-biosystematics/taxonomic-keys-identification/</guid>
+      <guid>http://localhost:1313/resources/4-biosystematics/taxonomic-keys-identification/</guid>
       <description>
         
         
@@ -1067,7 +1067,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:62792/resources/4-biosystematics/classification-principles-nomenclature/&#34;&gt;Classification Principles Nomenclature&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/4-biosystematics/classification-principles-nomenclature/&#34;&gt;Classification Principles Nomenclature&lt;/a&gt;
     
   
   
@@ -1159,9 +1159,9 @@
     &lt;a href=&#34;#visual-reference&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Interactive&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Dichotomous key builder/solver (interactive SVG/JS, no new library)&lt;/strong&gt; — given a small set of specimens (illustrated, with 4-5 visible characters each) and a blank couplet-writing interface, the user constructs their own working dichotomous key, and the tool tests it against each specimen, flagging any couplet that fails mutual exclusivity or fails to uniquely resolve a specimen — a direct, hands-on practical-station simulator.
-&lt;iframe src=&#34;http://localhost:62792/dichotomous-key-builder.html&#34; title=&#34;Dichotomous Key Builder/Solver&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 560px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
+&lt;iframe src=&#34;http://localhost:1313/dichotomous-key-builder.html&#34; title=&#34;Dichotomous Key Builder/Solver&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 560px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Multi-access key demo (HTML/JS filter interface)&lt;/strong&gt; — a small candidate-taxon list (8-10 named organisms) with a bank of selectable characters; as the user toggles characters on, the candidate list filters live, demonstrating the any-order, missing-character-tolerant behavior directly against the same rigid dichotomous key built in the tool above.
-&lt;iframe src=&#34;http://localhost:62792/multi-access-key-demo.html&#34; title=&#34;Multi-Access Key Demo&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
+&lt;iframe src=&#34;http://localhost:1313/multi-access-key-demo.html&#34; title=&#34;Multi-Access Key Demo&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
