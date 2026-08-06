@@ -7,6 +7,7 @@ prerequisites: ["Homeostasis-Osmoregulation", "Nervous-System-Physiology"]
 syllabus_tags: ["IBO", "USABO", "cardiovascular-physiology"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

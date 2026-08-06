@@ -7,6 +7,7 @@ prerequisites: ["Invertebrate-Body-Plans-1"]
 syllabus_tags: ["IBO", "USABO", "comparative-anatomy", "invertebrates"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

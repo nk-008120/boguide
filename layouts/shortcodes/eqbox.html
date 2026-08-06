@@ -1,0 +1,8 @@
+{{- /* Wraps a "major"/key display equation in a styled box, aoguide.app-inspired.
+     Usage: {{< eqbox >}}$$ ... $$ {{< /eqbox >}}
+     .Inner is raw markdown, so the $$...$$ inside passes through markdownify as
+     literal text — MathJax (loaded per-page via {{< mathjax >}}) scans and
+     typesets it exactly as it does for any other in-page equation. */ -}}
+<div class="eq-box">
+{{ .Inner | markdownify }}
+</div>

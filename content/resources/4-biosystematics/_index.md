@@ -22,26 +22,26 @@ Start with [Classification Principles & Nomenclature](Classification-Principles-
 ### Foundations
 
 {{< cards cols="2" >}}
-  {{< card link="classification-principles-nomenclature/" title="1. Classification Principles & Nomenclature" subtitle="Taxonomic hierarchy, ICZN/ICN/ICNP, type specimens, synonymy and priority" tag="Beginner" >}}
-  {{< card link="species-concepts/" title="2. Species Concepts" subtitle="Biological, morphological, phylogenetic, ecological concepts; ring species and hybrid zones" tag="Intermediate" >}}
+  {{< card link="classification-principles-nomenclature/" title="1. Classification Principles & Nomenclature" subtitle="Taxonomic hierarchy, ICZN/ICN/ICNP, type specimens, synonymy and priority" tag="Beginner" tagColor="green" >}}
+  {{< card link="species-concepts/" title="2. Species Concepts" subtitle="Biological, morphological, phylogenetic, ecological concepts; ring species and hybrid zones" tag="Intermediate" tagColor="amber" >}}
 {{< /cards >}}
 
 ### Phylogenetics
 
 {{< cards cols="2" >}}
-  {{< card link="phylogenetic-trees-cladistics/" title="3. Phylogenetic Trees & Cladistics" subtitle="Synapomorphy, monophyly/paraphyly/polyphyly, outgroups, parsimony" tag="Intermediate" >}}
-  {{< card link="molecular-systematics/" title="4. Molecular Systematics" subtitle="Sequence alignment, molecular clock, UPGMA/NJ/ML/Bayesian tree-building, DNA barcoding" tag="Advanced" >}}
+  {{< card link="phylogenetic-trees-cladistics/" title="3. Phylogenetic Trees & Cladistics" subtitle="Synapomorphy, monophyly/paraphyly/polyphyly, outgroups, parsimony" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="molecular-systematics/" title="4. Molecular Systematics" subtitle="Sequence alignment, molecular clock, UPGMA/NJ/ML/Bayesian tree-building, DNA barcoding" tag="Advanced" tagColor="purple" >}}
 {{< /cards >}}
 
 ### Classification Survey
 
 {{< cards cols="2" >}}
-  {{< card link="domains-kingdoms/" title="5. Domains & Kingdoms" subtitle="Three-domain system, eukaryotic supergroups, viral classification" tag="Intermediate" >}}
-  {{< card link="major-taxa-cross-reference/" title="6. Major Taxa Cross-Reference" subtitle="Animal phyla synapomorphies and vertebrate classes, cross-linked to Animal Anatomy" tag="Intermediate" >}}
+  {{< card link="domains-kingdoms/" title="5. Domains & Kingdoms" subtitle="Three-domain system, eukaryotic supergroups, viral classification" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="major-taxa-cross-reference/" title="6. Major Taxa Cross-Reference" subtitle="Animal phyla synapomorphies and vertebrate classes, cross-linked to Animal Anatomy" tag="Intermediate" tagColor="amber" >}}
 {{< /cards >}}
 
 ### Practical
 
 {{< cards cols="1" >}}
-  {{< card link="taxonomic-keys-identification/" title="7. Taxonomic Keys & Identification" subtitle="Dichotomous and multi-access keys, character-choice principles for practical stations" tag="Beginner" >}}
+  {{< card link="taxonomic-keys-identification/" title="7. Taxonomic Keys & Identification" subtitle="Dichotomous and multi-access keys, character-choice principles for practical stations" tag="Beginner" tagColor="green" >}}
 {{< /cards >}}

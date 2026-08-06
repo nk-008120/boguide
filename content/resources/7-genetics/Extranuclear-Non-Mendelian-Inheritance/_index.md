@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "USABO", "genetics", "quantitative-genetics"]
 ---
 
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

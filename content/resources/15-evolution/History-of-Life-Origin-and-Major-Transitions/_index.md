@@ -7,6 +7,7 @@ prerequisites: ["Evidence-for-Evolution"]
 syllabus_tags: ["IBO", "USABO", "evolution"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

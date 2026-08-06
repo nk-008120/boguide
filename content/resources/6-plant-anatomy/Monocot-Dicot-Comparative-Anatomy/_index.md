@@ -7,6 +7,7 @@ prerequisites: ["Root-Anatomy", "Stem-Anatomy", "Leaf-Anatomy", "Secondary-Growt
 syllabus_tags: ["IBO", "USABO", "plant-anatomy"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

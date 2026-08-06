@@ -1,5 +1,5 @@
 ---
-title: "Genetics"
+title: "✅ Genetics"
 weight: 7
 description: "Classical transmission genetics for IBO/USABO: Mendelian inheritance and its extensions, sex determination and pedigree analysis, the chromosomal mechanics of linkage and chromosome-number/structure variation, and the quantitative and non-Mendelian inheritance patterns that don't fit either the molecular-mechanism or population-genetics treatments elsewhere on this site."
 ---
@@ -21,23 +21,23 @@ Start with [Mendel's Laws & Probability in Genetics](Mendelian-Inheritance-Proba
 ### Transmission Genetics
 
 {{< cards cols="2" >}}
-  {{< card link="mendelian-inheritance-probability/" title="1. Mendel's Laws & Probability in Genetics" subtitle="Segregation, independent assortment, Punnett squares, test crosses, product/sum rules, chi-square goodness-of-fit" tag="Beginner" >}}
-  {{< card link="extensions-of-mendelian-inheritance/" title="2. Extensions of Mendelian Inheritance" subtitle="Incomplete dominance, codominance, multiple alleles, pleiotropy, lethal alleles, penetrance/expressivity" tag="Beginner" >}}
-  {{< card link="epistasis-gene-interactions-complementation/" title="3. Gene Interactions: Epistasis & Complementation" subtitle="Recessive/dominant/duplicate epistasis, modified dihybrid ratios, the complementation test" tag="Intermediate" >}}
-  {{< card link="sex-determination-sex-linked-inheritance/" title="4. Sex Determination & Sex-Linked Inheritance" subtitle="XY/ZW/XO/haplodiploidy systems, dosage compensation, sex-linked vs. sex-limited vs. sex-influenced traits" tag="Intermediate" >}}
-  {{< card link="pedigree-analysis-human-genetic-disorders/" title="5. Pedigree Analysis & Human Genetic Disorders" subtitle="Reading pedigree patterns, worked human disorder examples, karyotyping and genetic counseling" tag="Intermediate" >}}
+  {{< card link="mendelian-inheritance-probability/" title="1. Mendel's Laws & Probability in Genetics" subtitle="Segregation, independent assortment, Punnett squares, test crosses, product/sum rules, chi-square goodness-of-fit" tag="Beginner" tagColor="green" >}}
+  {{< card link="extensions-of-mendelian-inheritance/" title="2. Extensions of Mendelian Inheritance" subtitle="Incomplete dominance, codominance, multiple alleles, pleiotropy, lethal alleles, penetrance/expressivity" tag="Beginner" tagColor="green" >}}
+  {{< card link="epistasis-gene-interactions-complementation/" title="3. Gene Interactions: Epistasis & Complementation" subtitle="Recessive/dominant/duplicate epistasis, modified dihybrid ratios, the complementation test" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="sex-determination-sex-linked-inheritance/" title="4. Sex Determination & Sex-Linked Inheritance" subtitle="XY/ZW/XO/haplodiploidy systems, dosage compensation, sex-linked vs. sex-limited vs. sex-influenced traits" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="pedigree-analysis-human-genetic-disorders/" title="5. Pedigree Analysis & Human Genetic Disorders" subtitle="Reading pedigree patterns, worked human disorder examples, karyotyping and genetic counseling" tag="Intermediate" tagColor="amber" >}}
 {{< /cards >}}
 
 ### Chromosomal Genetics
 
 {{< cards cols="2" >}}
-  {{< card link="linkage-recombination-genetic-mapping/" title="6. Linkage, Recombination & Genetic Mapping" subtitle="Recombination frequency, map units, the three-point testcross, interference" tag="Advanced" >}}
-  {{< card link="chromosomal-variation-number-structure/" title="7. Chromosomal Variation: Number & Structure" subtitle="Nondisjunction, aneuploidy, polyploidy, deletions, duplications, inversions, translocations" tag="Intermediate" >}}
+  {{< card link="linkage-recombination-genetic-mapping/" title="6. Linkage, Recombination & Genetic Mapping" subtitle="Recombination frequency, map units, the three-point testcross, interference" tag="Advanced" tagColor="purple" >}}
+  {{< card link="chromosomal-variation-number-structure/" title="7. Chromosomal Variation: Number & Structure" subtitle="Nondisjunction, aneuploidy, polyploidy, deletions, duplications, inversions, translocations" tag="Intermediate" tagColor="amber" >}}
 {{< /cards >}}
 
 ### Beyond Mendel
 
 {{< cards cols="2" >}}
-  {{< card link="extranuclear-non-mendelian-inheritance/" title="8. Extranuclear & Non-Mendelian Inheritance" subtitle="Organelle (cytoplasmic) inheritance, maternal effect, genomic imprinting, cytoplasmic male sterility" tag="Intermediate" >}}
-  {{< card link="quantitative-genetics-heritability-inbreeding/" title="9. Quantitative Genetics, Heritability & Inbreeding" subtitle="Polygenic traits, broad/narrow-sense heritability, QTL mapping, the inbreeding coefficient" tag="Advanced" >}}
+  {{< card link="extranuclear-non-mendelian-inheritance/" title="8. Extranuclear & Non-Mendelian Inheritance" subtitle="Organelle (cytoplasmic) inheritance, maternal effect, genomic imprinting, cytoplasmic male sterility" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="quantitative-genetics-heritability-inbreeding/" title="9. Quantitative Genetics, Heritability & Inbreeding" subtitle="Polygenic traits, broad/narrow-sense heritability, QTL mapping, the inbreeding coefficient" tag="Advanced" tagColor="purple" >}}
 {{< /cards >}}

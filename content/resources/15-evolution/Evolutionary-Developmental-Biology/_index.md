@@ -7,6 +7,7 @@ prerequisites: ["Macroevolutionary-Patterns-and-Mass-Extinctions"]
 syllabus_tags: ["IBO", "USABO", "evolution"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

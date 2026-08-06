@@ -7,6 +7,7 @@ prerequisites: ["Speciation-and-Reproductive-Isolation"]
 syllabus_tags: ["IBO", "USABO", "evolution"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

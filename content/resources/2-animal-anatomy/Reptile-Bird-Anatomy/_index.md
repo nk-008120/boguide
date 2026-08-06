@@ -7,6 +7,7 @@ prerequisites: ["Fish-Amphibian-Anatomy"]
 syllabus_tags: ["IBO", "USABO", "comparative-anatomy", "vertebrates"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

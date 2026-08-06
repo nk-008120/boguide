@@ -7,6 +7,7 @@ prerequisites: ["Phylogenetic-Trees-Cladistics"]
 syllabus_tags: ["IBO", "USABO", "biosystematics"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

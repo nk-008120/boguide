@@ -7,6 +7,7 @@ prerequisites: ["Water-Transport-Transpiration"]
 syllabus_tags: ["IBO", "USABO", "plant-physiology"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

@@ -22,30 +22,30 @@ Start with [Water Transport & Transpiration](Water-Transport-Transpiration/) —
 ### Water & Nutrient Transport
 
 {{< cards cols="2" >}}
-  {{< card link="water-transport-transpiration/" title="1. Water Transport & Transpiration" subtitle="Water potential, cohesion-tension theory, apoplast/symplast pathways, root pressure" tag="Intermediate" >}}
-  {{< card link="stomatal-physiology-gas-exchange/" title="2. Stomatal Physiology & Gas Exchange" subtitle="Guard cell turgor mechanism, ABA-triggered closure, photosynthesis-transpiration trade-off" tag="Intermediate" >}}
-  {{< card link="phloem-transport-translocation/" title="3. Phloem Transport & Translocation" subtitle="Pressure-flow (Munch) hypothesis, source-sink dynamics, phloem loading/unloading" tag="Intermediate" >}}
-  {{< card link="mineral-nutrition-nutrient-uptake/" title="4. Mineral Nutrition & Nutrient Uptake" subtitle="Essential elements, active uptake, Rhizobium and mycorrhizal symbioses" tag="Intermediate" >}}
+  {{< card link="water-transport-transpiration/" title="1. Water Transport & Transpiration" subtitle="Water potential, cohesion-tension theory, apoplast/symplast pathways, root pressure" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="stomatal-physiology-gas-exchange/" title="2. Stomatal Physiology & Gas Exchange" subtitle="Guard cell turgor mechanism, ABA-triggered closure, photosynthesis-transpiration trade-off" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="phloem-transport-translocation/" title="3. Phloem Transport & Translocation" subtitle="Pressure-flow (Munch) hypothesis, source-sink dynamics, phloem loading/unloading" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="mineral-nutrition-nutrient-uptake/" title="4. Mineral Nutrition & Nutrient Uptake" subtitle="Essential elements, active uptake, Rhizobium and mycorrhizal symbioses" tag="Intermediate" tagColor="amber" >}}
 {{< /cards >}}
 
 ### Photosynthesis
 
 {{< cards cols="2" >}}
-  {{< card link="light-reactions-photophosphorylation/" title="5. Light Reactions & Photophosphorylation" subtitle="Photosystems I/II, the Z-scheme, water-splitting, chemiosmotic ATP synthesis" tag="Advanced" >}}
-  {{< card link="calvin-cycle-photorespiration-c4-cam/" title="6. Calvin Cycle, Photorespiration & C4/CAM Biochemistry" subtitle="RuBP carboxylation, photorespiration cost, C4/CAM biochemical fixes" tag="Advanced" >}}
+  {{< card link="light-reactions-photophosphorylation/" title="5. Light Reactions & Photophosphorylation" subtitle="Photosystems I/II, the Z-scheme, water-splitting, chemiosmotic ATP synthesis" tag="Advanced" tagColor="purple" >}}
+  {{< card link="calvin-cycle-photorespiration-c4-cam/" title="6. Calvin Cycle, Photorespiration & C4/CAM Biochemistry" subtitle="RuBP carboxylation, photorespiration cost, C4/CAM biochemical fixes" tag="Advanced" tagColor="purple" >}}
 {{< /cards >}}
 
 ### Growth Regulation & Development
 
 {{< cards cols="2" >}}
-  {{< card link="plant-hormones/" title="7. Plant Hormones" subtitle="Auxin, gibberellin, cytokinin, ABA, ethylene, brassinosteroids and their classic experiments" tag="Intermediate" >}}
-  {{< card link="tropisms-nastic-movements/" title="8. Tropisms & Nastic Movements" subtitle="Phototropism, gravitropism, thigmotropism, and turgor-driven nastic movements" tag="Intermediate" >}}
-  {{< card link="photoperiodism-vernalization-flowering/" title="9. Photoperiodism, Vernalization & Flowering" subtitle="Phytochrome, critical night length, vernalization, florigen (FT protein)" tag="Advanced" >}}
-  {{< card link="seed-germination-dormancy-physiology/" title="10. Seed Germination & Dormancy Physiology" subtitle="Imbibition, GA/ABA dormancy balance, epigeal vs. hypogeal germination" tag="Intermediate" >}}
+  {{< card link="plant-hormones/" title="7. Plant Hormones" subtitle="Auxin, gibberellin, cytokinin, ABA, ethylene, brassinosteroids and their classic experiments" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="tropisms-nastic-movements/" title="8. Tropisms & Nastic Movements" subtitle="Phototropism, gravitropism, thigmotropism, and turgor-driven nastic movements" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="photoperiodism-vernalization-flowering/" title="9. Photoperiodism, Vernalization & Flowering" subtitle="Phytochrome, critical night length, vernalization, florigen (FT protein)" tag="Advanced" tagColor="purple" >}}
+  {{< card link="seed-germination-dormancy-physiology/" title="10. Seed Germination & Dormancy Physiology" subtitle="Imbibition, GA/ABA dormancy balance, epigeal vs. hypogeal germination" tag="Intermediate" tagColor="amber" >}}
 {{< /cards >}}
 
 ### Whole-Plant & Stress Physiology
 
 {{< cards cols="1" >}}
-  {{< card link="plant-stress-physiology-defense/" title="11. Plant Stress Physiology & Defense" subtitle="Drought/salinity/temperature responses, hypersensitive response, systemic acquired resistance" tag="Advanced" >}}
+  {{< card link="plant-stress-physiology-defense/" title="11. Plant Stress Physiology & Defense" subtitle="Drought/salinity/temperature responses, hypersensitive response, systemic acquired resistance" tag="Advanced" tagColor="purple" >}}
 {{< /cards >}}

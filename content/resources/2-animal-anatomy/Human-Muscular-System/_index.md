@@ -7,6 +7,7 @@ prerequisites: ["Human-Skeletal-System"]
 syllabus_tags: ["IBO", "USABO", "human-anatomy"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

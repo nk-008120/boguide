@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "USABO", "genetics", "chromosomal-genetics"]
 ---
 
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 
@@ -29,7 +30,9 @@ For two genes assorting independently, a **dihybrid testcross** (AaBb × aabb) p
 
 **Recombination frequency (RF)** is calculated directly from testcross data:
 
+{{< eqbox >}}
 $$ \text{RF} = \frac{\text{number of recombinant offspring}}{\text{total offspring}} \times 100\% $$
+{{< /eqbox >}}
 
 RF ranges from 0% (genes so close together that crossing over between them is never observed) to a **maximum of 50%**, at which point two genes are said to show **independent assortment** — indistinguishable from being on different chromosomes entirely, even if they are in fact on the same chromosome but very far apart. This 50% ceiling is a frequent conceptual trap: RF alone cannot distinguish "unlinked" from "linked but very far apart," since both produce the same 1:1:1:1 testcross pattern.
 

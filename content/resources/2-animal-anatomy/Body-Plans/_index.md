@@ -7,6 +7,7 @@ prerequisites: []
 syllabus_tags: ["IBO", "USABO", "foundations"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 
