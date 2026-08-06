@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "USABO", "genetics", "quantitative-genetics"]
 ---
 
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 
@@ -34,7 +35,9 @@ $$ H^2 = \frac{V_G}{V_P} $$
 
 **Narrow-sense heritability (h²)**, more useful for predicting a trait's response to selective breeding, further partitions genetic variance into **additive** genetic variance (V_A — the component that breeds true and predicts offspring resemblance to parents) versus dominance and epistatic interaction variance (which do not transmit as reliably to offspring):
 
+{{< eqbox >}}
 $$ h^2 = \frac{V_A}{V_P} $$
+{{< /eqbox >}}
 
 **Twin studies** are the standard method for estimating heritability in humans, comparing trait concordance between monozygotic twins (identical genotype) and dizygotic twins (share on average 50% of segregating alleles, like ordinary siblings) raised in comparably shared environments — a substantially higher concordance in monozygotic pairs is taken as evidence of a genetic contribution to the trait.
 

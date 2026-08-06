@@ -1,5 +1,5 @@
 ---
-title: "Ecology"
+title: "✅ Ecology"
 weight: 1
 description: "IBO-level ecology guide: population dynamics, community ecology, ecosystems, biogeography, conservation biology, and global change — with worked examples, equations, and interactive resources."
 ---

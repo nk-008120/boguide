@@ -1,0 +1,66 @@
+{{- /* Project override of themes/hextra/layouts/_markup/render-image.html — wraps every
+     rendered content image in a `.content-image-frame` span (gradient ring + matting,
+     see assets/css/custom.css) so figures read as one consistent "card mount" instead of
+     floating bare on the page. Everything else (URL resolution, lazy-loading, imageZoom's
+     data-zoomable attribute) is unchanged from the theme's original logic. */ -}}
+{{- $alt := .PlainText | safeHTML -}}
+{{- $lazyLoading := .Page.Site.Params.enableImageLazyLoading | default true -}}
+{{- $enableImageZoom := .Page.Site.Params.imageZoom.enable | default false -}}
+{{- if not (eq .Page.Params.imageZoom nil) -}}
+  {{- $enableImageZoom = .Page.Params.imageZoom -}}
+{{- end -}}
+{{- $dest := .Destination -}}
+{{- $url := urls.Parse $dest -}}
+
+{{- $isLocal := not $url.Scheme -}}
+{{- $isPage := and (eq .Page.Kind "page") (not .Page.BundleType) -}}
+{{- $startsWithSlash := hasPrefix $dest "/" -}}
+{{- $startsWithRelative := hasPrefix $dest "../" -}}
+
+{{- if and $dest $isLocal -}}
+  {{- if $startsWithSlash -}}
+    {{- with or (.PageInner.Resources.Get $url.Path) (resources.Get $url.Path) -}}
+      {{/* Images under assets directory */}}
+      {{- $query := cond $url.RawQuery (printf "?%s" $url.RawQuery) "" -}}
+      {{- $fragment := cond $url.Fragment (printf "#%s" $url.Fragment) "" -}}
+      {{- $dest = printf "%s%s%s" .RelPermalink $query $fragment -}}
+    {{- else -}}
+      {{/* Images under static directory */}}
+      {{- $dest = (relURL (strings.TrimPrefix "/" $dest)) -}}
+    {{- end -}}
+  {{- else -}}
+    {{/* Resolve page bundle resource for multilingual permalink */}}
+    {{- with .PageInner.Resources.Get (strings.TrimPrefix "./" $url.Path) -}}
+      {{- $query := cond $url.RawQuery (printf "?%s" $url.RawQuery) "" -}}
+      {{- $fragment := cond $url.Fragment (printf "#%s" $url.Fragment) "" -}}
+      {{- $dest = printf "%s%s%s" .RelPermalink $query $fragment -}}
+    {{- else -}}
+      {{- if and $isPage (not $startsWithRelative) -}}
+        {{ $dest = (printf "../%s" $dest) }}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $attributes := "" -}}
+{{- range $key, $value := .Attributes -}}
+  {{- if $value -}}
+    {{- $pair := printf "%s=%q" $key ($value | transform.HTMLEscape) -}}
+    {{- $attributes = printf "%s %s" $attributes $pair -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $enableImageZoom -}}
+  {{- .Page.Store.Set "hasImageZoom" true -}}
+{{- end -}}
+
+{{- with .Title -}}
+  <figure class="content-image-frame">
+    <img src="{{ $dest | safeURL }}" title="{{ . }}" alt="{{ $alt }}" {{ $attributes | safeHTMLAttr }}{{ if $enableImageZoom }} data-zoomable{{ end }}{{ if $lazyLoading }} loading="lazy"{{ end }} />
+    <figcaption>{{ . }}</figcaption>
+  </figure>
+{{- else -}}
+  <span class="content-image-frame">
+    <img src="{{ $dest | safeURL }}" alt="{{ $alt }}" {{ $attributes | safeHTMLAttr }}{{ if $enableImageZoom }} data-zoomable{{ end }}{{ if $lazyLoading }} loading="lazy"{{ end }} />
+  </span>
+{{- end -}}

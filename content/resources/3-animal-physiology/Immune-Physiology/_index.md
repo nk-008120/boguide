@@ -7,6 +7,7 @@ prerequisites: ["Endocrine-System-Physiology"]
 syllabus_tags: ["IBO", "USABO", "immune-physiology"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

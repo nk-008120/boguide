@@ -7,6 +7,7 @@ prerequisites: ["Reptile-Bird-Anatomy"]
 syllabus_tags: ["IBO", "USABO", "comparative-anatomy", "vertebrates"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

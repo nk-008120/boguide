@@ -7,6 +7,7 @@ prerequisites: ["Mechanisms-of-Behavior"]
 syllabus_tags: ["IBO", "USABO", "ethology"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 
@@ -18,7 +19,9 @@ syllabus_tags: ["IBO", "USABO", "ethology"]
 
 **W.D. Hamilton**'s resolution reframes the unit being maximized: selection favors a gene not by its effect on the *individual carrying it*, but by its effect on the total number of copies of itself propagated into the next generation — including copies present in relatives, weighted by the probability a given relative shares that copy. This total, **inclusive fitness**, is the sum of an individual's own direct reproductive output plus its effect on relatives' reproduction, weighted by relatedness. **Hamilton's rule** states that an altruistic gene will spread when:
 
+{{< eqbox >}}
 $$rB > C$$
+{{< /eqbox >}}
 
 where **r** is the coefficient of relatedness between actor and recipient (the probability the two share a given gene by common descent — 0.5 for full siblings or parent-offspring in a diploid species, 0.25 for half-siblings, 0.125 for first cousins), **B** is the reproductive benefit to the recipient, and **C** is the reproductive cost to the actor. The rule predicts altruism should be more readily favored toward closer relatives (higher r) and when the benefit-to-cost ratio is large — both patterns confirmed in Belding's ground squirrel alarm-calling frequency (higher when close kin are nearby) and in **Florida scrub-jay (*Aphelocoma coerulescens*) helper-at-the-nest behavior**, where non-breeding young help raise siblings rather than breed independently, disproportionately when territory/mate scarcity make independent breeding unlikely to succeed — making the "C" term (cost of forgoing independent breeding) low relative to the "B" term (helping a full sibling, r = 0.5, succeed).
 

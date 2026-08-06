@@ -7,6 +7,7 @@ prerequisites: ["Cardiovascular-Physiology"]
 syllabus_tags: ["IBO", "USABO", "respiratory-physiology"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

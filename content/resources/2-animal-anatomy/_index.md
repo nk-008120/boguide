@@ -21,29 +21,29 @@ Start with [Body Plans & Foundational Concepts](Body-Plans/) — every page belo
 ### Human Anatomy
 
 {{< cards cols="3" >}}
-  {{< card link="human-skeletal-system/" title="1. Skeletal System" subtitle="Ossification, osteon histology, remodeling, named bones, joint structure" tag="Intermediate" >}}
-  {{< card link="human-integumentary-system/" title="2. Integumentary System" subtitle="Epidermal strata, dermal receptors, hair/nail structure" tag="Beginner" >}}
-  {{< card link="human-muscular-system/" title="3. Muscular System" subtitle="Sarcomere structure, NMJ, excitation-contraction coupling, fiber types" tag="Intermediate" >}}
-  {{< card link="human-nervous-system/" title="4. Nervous System" subtitle="CNS/PNS, synapse structure, brain regions, cranial/spinal nerves" tag="Advanced" >}}
-  {{< card link="human-sensory-organs/" title="5. Sensory Organs" subtitle="Eye and ear histology in full detail" tag="Advanced" >}}
-  {{< card link="human-circulatory-system/" title="6. Circulatory System" subtitle="Conduction system, cardiac cycle, blood composition, lymphatics" tag="Intermediate" >}}
-  {{< card link="human-respiratory-system/" title="7. Respiratory System" subtitle="Bronchial tree, alveolar histology, ventilation mechanics" tag="Intermediate" >}}
-  {{< card link="human-digestive-system/" title="8. Digestive System" subtitle="GI histology by region, liver lobule, pancreas" tag="Intermediate" >}}
-  {{< card link="human-excretory-system/" title="9. Excretory System" subtitle="Nephron structure, juxtaglomerular apparatus" tag="Intermediate" >}}
-  {{< card link="human-reproductive-system/" title="10. Reproductive System" subtitle="Gametogenesis, follicular staging, the HPG axis" tag="Advanced" >}}
+  {{< card link="human-skeletal-system/" title="1. Skeletal System" subtitle="Ossification, osteon histology, remodeling, named bones, joint structure" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="human-integumentary-system/" title="2. Integumentary System" subtitle="Epidermal strata, dermal receptors, hair/nail structure" tag="Beginner" tagColor="green" >}}
+  {{< card link="human-muscular-system/" title="3. Muscular System" subtitle="Sarcomere structure, NMJ, excitation-contraction coupling, fiber types" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="human-nervous-system/" title="4. Nervous System" subtitle="CNS/PNS, synapse structure, brain regions, cranial/spinal nerves" tag="Advanced" tagColor="purple" >}}
+  {{< card link="human-sensory-organs/" title="5. Sensory Organs" subtitle="Eye and ear histology in full detail" tag="Advanced" tagColor="purple" >}}
+  {{< card link="human-circulatory-system/" title="6. Circulatory System" subtitle="Conduction system, cardiac cycle, blood composition, lymphatics" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="human-respiratory-system/" title="7. Respiratory System" subtitle="Bronchial tree, alveolar histology, ventilation mechanics" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="human-digestive-system/" title="8. Digestive System" subtitle="GI histology by region, liver lobule, pancreas" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="human-excretory-system/" title="9. Excretory System" subtitle="Nephron structure, juxtaglomerular apparatus" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="human-reproductive-system/" title="10. Reproductive System" subtitle="Gametogenesis, follicular staging, the HPG axis" tag="Advanced" tagColor="purple" >}}
 {{< /cards >}}
 
 ### Vertebrate Anatomy
 
 {{< cards cols="3" >}}
-  {{< card link="fish-amphibian-anatomy/" title="11. Fish & Amphibian Anatomy" subtitle="Gill/lung structure, 2-3 chambered hearts, vs. the human baseline" tag="Intermediate" >}}
-  {{< card link="reptile-bird-anatomy/" title="12. Reptile & Bird Anatomy" subtitle="Amniote adaptations, parabronchial lungs, flight structure" tag="Intermediate" >}}
-  {{< card link="mammalian-comparative-anatomy/" title="13. Mammalian Comparative Anatomy" subtitle="Middle-ear homology, placental types, locomotor adaptations" tag="Advanced" >}}
+  {{< card link="fish-amphibian-anatomy/" title="11. Fish & Amphibian Anatomy" subtitle="Gill/lung structure, 2-3 chambered hearts, vs. the human baseline" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="reptile-bird-anatomy/" title="12. Reptile & Bird Anatomy" subtitle="Amniote adaptations, parabronchial lungs, flight structure" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="mammalian-comparative-anatomy/" title="13. Mammalian Comparative Anatomy" subtitle="Middle-ear homology, placental types, locomotor adaptations" tag="Advanced" tagColor="purple" >}}
 {{< /cards >}}
 
 ### Animal Kingdom Anatomy
 
 {{< cards cols="2" >}}
-  {{< card link="invertebrate-body-plans-1/" title="14. Invertebrate Body Plans I" subtitle="Porifera, Cnidaria, Platyhelminthes, Nematoda, Annelida" tag="Intermediate" >}}
-  {{< card link="invertebrate-body-plans-2/" title="15. Invertebrate Body Plans II" subtitle="Mollusca, Arthropoda, Echinodermata" tag="Intermediate" >}}
+  {{< card link="invertebrate-body-plans-1/" title="14. Invertebrate Body Plans I" subtitle="Porifera, Cnidaria, Platyhelminthes, Nematoda, Annelida" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="invertebrate-body-plans-2/" title="15. Invertebrate Body Plans II" subtitle="Mollusca, Arthropoda, Echinodermata" tag="Intermediate" tagColor="amber" >}}
 {{< /cards >}}

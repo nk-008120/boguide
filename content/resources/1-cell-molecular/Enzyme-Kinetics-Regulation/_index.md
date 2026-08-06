@@ -33,7 +33,9 @@ $$ k_1([E_t] - [ES])[S] = k_{-1}[ES] + k_2[ES] $$
 
 Solving for [ES] and substituting into rate = k₂[ES] yields the central result:
 
+{{< eqbox >}}
 $$ V_0 = \frac{V_{max}[S]}{K_m + [S]} \qquad \text{(Michaelis-Menten equation)} $$
+{{< /eqbox >}}
 
 where $K_m = \dfrac{k_{-1} + k_2}{k_1}$. Note that if product release (k₂) is rate-limiting, $K_m = K_d = k_{-1}/k_1$ — i.e. $K_m$ collapses to the true substrate dissociation constant, and can be read directly as (an inverse measure of) binding affinity. This equivalence does *not* hold in general — only when k₂ is rate-limiting.
 
@@ -67,7 +69,9 @@ The Michaelis-Menten plot ($V_0$ vs. $[S]$) is hyperbolic: near-linear (first-or
 
 Taking the reciprocal linearises the relationship — the **Lineweaver-Burk (double-reciprocal) plot**:
 
+{{< eqbox >}}
 $$ \frac{1}{V_0} = \frac{K_m}{V_{max}} \cdot \frac{1}{[S]} + \frac{1}{V_{max}} $$
+{{< /eqbox >}}
 
 Slope = $K_m/V_{max}$, y-intercept = $1/V_{max}$, x-intercept = $-1/K_m$. Its main use is diagnostic: the *direction* each inhibition type shifts the slope, y-intercept, and x-intercept is what actually distinguishes the four inhibition modes below (see Comparative Structures).
 

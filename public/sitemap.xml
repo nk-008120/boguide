@@ -3,6 +3,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/resources/8-ecology/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resources/1-cell-molecular/</loc>
+  </url><url>
     <loc>http://localhost:1313/resources/14-practical-4/</loc>
   </url><url>
     <loc>http://localhost:1313/resources/2-animal-anatomy/body-plans/</loc>
@@ -11,8 +15,6 @@
   </url><url>
     <loc>http://localhost:1313/resources/4-biosystematics/classification-principles-nomenclature/</loc>
   </url><url>
-    <loc>http://localhost:1313/resources/8-ecology/</loc>
-  </url><url>
     <loc>http://localhost:1313/resources/15-evolution/evidence-for-evolution/</loc>
   </url><url>
     <loc>http://localhost:1313/resources/3-animal-physiology/homeostasis-osmoregulation/</loc>
@@ -20,8 +22,6 @@
     <loc>http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/</loc>
   </url><url>
     <loc>http://localhost:1313/resources/7-genetics/mendelian-inheritance-probability/</loc>
-  </url><url>
-    <loc>http://localhost:1313/resources/1-cell-molecular/</loc>
   </url><url>
     <loc>http://localhost:1313/resources/11-practical-1/</loc>
   </url><url>
@@ -115,6 +115,8 @@
   </url><url>
     <loc>http://localhost:1313/resources/7-genetics/pedigree-analysis-human-genetic-disorders/</loc>
   </url><url>
+    <loc>http://localhost:1313/resources/6-plant-anatomy/</loc>
+  </url><url>
     <loc>http://localhost:1313/resources/5-plant-physiology/calvin-cycle-photorespiration-c4-cam/</loc>
   </url><url>
     <loc>http://localhost:1313/resources/1-cell-molecular/cell-signaling-communication/</loc>
@@ -129,19 +131,17 @@
   </url><url>
     <loc>http://localhost:1313/resources/15-evolution/molecular-evolution-and-neutral-theory/</loc>
   </url><url>
-    <loc>http://localhost:1313/resources/6-plant-anatomy/</loc>
-  </url><url>
     <loc>http://localhost:1313/resources/3-animal-physiology/respiratory-physiology/</loc>
   </url><url>
     <loc>http://localhost:1313/resources/6-plant-anatomy/secondary-growth-wood-anatomy/</loc>
+  </url><url>
+    <loc>http://localhost:1313/resources/7-genetics/</loc>
   </url><url>
     <loc>http://localhost:1313/resources/1-cell-molecular/cell-cycle-mitosis-meiosis/</loc>
   </url><url>
     <loc>http://localhost:1313/resources/7-genetics/chromosomal-variation-number-structure/</loc>
   </url><url>
     <loc>http://localhost:1313/resources/3-animal-physiology/digestive-metabolic-physiology/</loc>
-  </url><url>
-    <loc>http://localhost:1313/resources/7-genetics/</loc>
   </url><url>
     <loc>http://localhost:1313/resources/2-animal-anatomy/human-circulatory-system/</loc>
   </url><url>
@@ -171,11 +171,11 @@
   </url><url>
     <loc>http://localhost:1313/resources/5-plant-physiology/tropisms-nastic-movements/</loc>
   </url><url>
+    <loc>http://localhost:1313/resources/9-ethology/</loc>
+  </url><url>
     <loc>http://localhost:1313/resources/9-ethology/biological-rhythms/</loc>
   </url><url>
     <loc>http://localhost:1313/resources/1-cell-molecular/dna-structure-replication/</loc>
-  </url><url>
-    <loc>http://localhost:1313/resources/9-ethology/</loc>
   </url><url>
     <loc>http://localhost:1313/resources/15-evolution/evolutionary-developmental-biology/</loc>
   </url><url>

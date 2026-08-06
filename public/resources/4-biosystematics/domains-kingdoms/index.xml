@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BiOGuide for Biology Olympiads – Domains &amp; Kingdoms</title>
-    <link>http://localhost:1313/resources/4-biosystematics/domains-kingdoms/</link>
+    <link>http://localhost:62792/resources/4-biosystematics/domains-kingdoms/</link>
     <description>Recent content in Domains &amp; Kingdoms on BiOGuide for Biology Olympiads</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://localhost:1313/resources/4-biosystematics/domains-kingdoms/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:62792/resources/4-biosystematics/domains-kingdoms/index.xml" rel="self" type="application/rss+xml" />
     
     
       

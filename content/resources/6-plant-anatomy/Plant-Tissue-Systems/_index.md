@@ -7,6 +7,7 @@ prerequisites: []
 syllabus_tags: ["IBO", "USABO", "plant-anatomy"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

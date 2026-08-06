@@ -7,6 +7,7 @@ syllabus_tags: ["IBO", "USABO", "genetics", "transmission-genetics"]
 ---
 
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 
@@ -54,7 +55,9 @@ These combine directly: for the probability that an AaBb × AaBb cross produces 
 
 Real crosses never match a predicted ratio *exactly*, because gamete combination at fertilization is a random sampling process. The **chi-square test** asks whether an observed deviation from a predicted ratio (e.g. 3:1) is small enough to be explained by chance alone, or large enough to suggest the underlying hypothesis (e.g. simple dominance, no linkage) is wrong:
 
+{{< eqbox >}}
 $$ \chi^2 = \sum \frac{(O-E)^2}{E} $$
+{{< /eqbox >}}
 
 where *O* is the observed count and *E* is the expected count in each phenotypic class. The resulting χ² value is compared against a critical value from a chi-square distribution table, using **degrees of freedom = (number of phenotypic classes − 1)** — for a monohybrid 3:1 ratio (2 classes), df = 1; for a dihybrid 9:3:3:1 ratio (4 classes), df = 3. At the conventional **p = 0.05** significance threshold, a calculated χ² *below* the critical value means the data **fail to reject** the hypothesized ratio (consistent with it); a χ² *above* the critical value means the observed data deviate significantly from the prediction, and the hypothesis (e.g. simple Mendelian inheritance with no linkage or lethality) should be reconsidered.
 

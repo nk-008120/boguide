@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "USABO", "biochemistry", "laboratory-technique"]
 ---
 
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

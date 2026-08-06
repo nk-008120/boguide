@@ -7,6 +7,7 @@ prerequisites: ["Muscle-Physiology"]
 syllabus_tags: ["IBO", "USABO", "comparative-physiology"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

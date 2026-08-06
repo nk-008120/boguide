@@ -7,6 +7,7 @@ prerequisites: ["Evidence-for-Evolution"]
 syllabus_tags: ["IBO", "USABO", "evolution"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 
@@ -22,7 +23,9 @@ For a single gene locus with two alleles (conventionally **A** dominant and **a*
 
 If a population is **not evolving** at a given locus, genotype frequencies are predicted directly from allele frequencies by simple probability (the chance of independently drawing two given alleles), giving the **Hardy-Weinberg equation**:
 
+{{< eqbox >}}
 $$p^2 + 2pq + q^2 = 1$$
+{{< /eqbox >}}
 
 where $p^2$ is the predicted frequency of homozygous dominant (AA) individuals, $2pq$ is the predicted frequency of heterozygous (Aa) individuals (counting both the A-from-mother/a-from-father and a-from-mother/A-from-father combinations), and $q^2$ is the predicted frequency of homozygous recessive (aa) individuals. A population satisfying this equation, with allele and genotype frequencies remaining constant across generations, is said to be in **Hardy-Weinberg equilibrium (HWE)**. Critically, HWE is reached in a *single generation* of random mating given the assumptions below, regardless of the starting genotype frequencies — HWE describes an equilibrium *ratio*, not a claim that frequencies never change from an arbitrary starting point over multiple generations. (One notable exception worth flagging: this one-generation result assumes both sexes start at the *same* allele frequency; if male and female starting frequencies differ — as can happen at a newly arisen or sex-linked locus — equilibrium is instead approached gradually across several generations as the two sexes' contributions average out, rather than reached immediately.)
 

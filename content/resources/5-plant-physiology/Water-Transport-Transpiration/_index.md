@@ -7,6 +7,7 @@ prerequisites: []
 syllabus_tags: ["IBO", "USABO", "foundations"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 
@@ -18,7 +19,9 @@ Plant Anatomy described the conducting cells water moves through — the dead, l
 
 Water moves passively from a region of higher **water potential (Ψ)** to lower water potential, never the reverse, regardless of the specific physical reason the potential differs — this single rule replaces the need to reason separately about osmosis, capillarity, and bulk flow as different phenomena. Water potential is the sum of two major components:
 
+{{< eqbox >}}
 $$ \Psi = \Psi_s + \Psi_p $$
+{{< /eqbox >}}
 
 - **Solute potential (Ψₛ)**, also called osmotic potential — always negative or zero, since dissolved solutes lower a solution's free energy relative to pure water (Ψ = 0 by convention). A cell with a high solute concentration has a strongly negative Ψₛ and, all else equal, draws water in.
 - **Pressure potential (Ψₚ)** — usually positive in a living, turgid cell (the protoplast pushing outward against a rigid cell wall generates **turgor pressure**), but can be strongly *negative* in the xylem under active transpiration (a tension, pulling rather than pushing) — the specific condition the cohesion-tension theory below depends on.

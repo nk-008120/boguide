@@ -7,6 +7,7 @@ prerequisites: ["Natural-Selection-Modes-and-Fitness"]
 syllabus_tags: ["IBO", "USABO", "evolution"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

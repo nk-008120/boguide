@@ -7,6 +7,7 @@ prerequisites: ["Nervous-System-Physiology"]
 syllabus_tags: ["IBO", "USABO", "muscle-physiology"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

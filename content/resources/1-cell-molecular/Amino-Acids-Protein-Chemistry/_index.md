@@ -39,7 +39,9 @@ Aromaticity ranking (relevant for UV absorbance at 280 nm, used to quantify prot
 
 The **isoelectric point** is the pH at which an amino acid carries zero net charge (it exists as a **zwitterion** — simultaneously protonated at the amino group and deprotonated at the carboxyl group). For an amino acid with no ionizable side chain:
 
+{{< eqbox >}}
 $$ pI = \frac{pK_{a1} + pK_{a2}}{2} $$
+{{< /eqbox >}}
 
 For an amino acid with an ionizable side chain, average the **two pKₐ values that flank the neutral species**, not simply the first two. Lysine has pKₐ values 2.2 (α-COOH), 9.0 (α-NH₃⁺), and 10.5 (side-chain NH₃⁺); its zwitterion exists between pH 9.0 and 10.5, so pI = (9.0 + 10.5)/2 = 9.75 — *not* the average of the first two.
 

@@ -20,21 +20,21 @@ Start with [Homeostasis & Osmoregulation](Homeostasis-Osmoregulation/) — it in
 ### Core Regulatory & Organ-System Physiology
 
 {{< cards cols="3" >}}
-  {{< card link="endocrine-system-physiology/" title="2. Endocrine System Physiology" subtitle="Hormone classes and mechanism, HPA/HPT/HPG axes, endocrine feedback logic" tag="Intermediate" >}}
-  {{< card link="nervous-system-physiology/" title="3. Nervous System Physiology" subtitle="Resting/action potential, synaptic transmission, sensory transduction, reflex arcs" tag="Advanced" >}}
-  {{< card link="muscle-physiology/" title="4. Muscle Physiology" subtitle="Sliding filament mechanism, excitation-contraction coupling, fiber types, energy systems" tag="Intermediate" >}}
-  {{< card link="cardiovascular-physiology/" title="5. Cardiovascular Physiology" subtitle="Cardiac output, Frank-Starling mechanism, baroreceptor reflex, capillary exchange" tag="Advanced" >}}
-  {{< card link="respiratory-physiology/" title="6. Respiratory Physiology" subtitle="O2-Hb dissociation curve, Bohr/Haldane effects, control of ventilation, acid-base balance" tag="Advanced" >}}
-  {{< card link="digestive-metabolic-physiology/" title="7. Digestive & Metabolic Physiology" subtitle="Enzymatic digestion, digestive hormones, absorption mechanisms, metabolic rate" tag="Intermediate" >}}
-  {{< card link="immune-physiology/" title="8. Immune Physiology" subtitle="Innate and adaptive immunity, antigen presentation, clonal selection, immunological memory" tag="Advanced" >}}
-  {{< card link="reproductive-physiology/" title="9. Reproductive Physiology" subtitle="Pregnancy maintenance, parturition as positive feedback, lactation" tag="Advanced" >}}
+  {{< card link="endocrine-system-physiology/" title="2. Endocrine System Physiology" subtitle="Hormone classes and mechanism, HPA/HPT/HPG axes, endocrine feedback logic" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="nervous-system-physiology/" title="3. Nervous System Physiology" subtitle="Resting/action potential, synaptic transmission, sensory transduction, reflex arcs" tag="Advanced" tagColor="purple" >}}
+  {{< card link="muscle-physiology/" title="4. Muscle Physiology" subtitle="Sliding filament mechanism, excitation-contraction coupling, fiber types, energy systems" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="cardiovascular-physiology/" title="5. Cardiovascular Physiology" subtitle="Cardiac output, Frank-Starling mechanism, baroreceptor reflex, capillary exchange" tag="Advanced" tagColor="purple" >}}
+  {{< card link="respiratory-physiology/" title="6. Respiratory Physiology" subtitle="O2-Hb dissociation curve, Bohr/Haldane effects, control of ventilation, acid-base balance" tag="Advanced" tagColor="purple" >}}
+  {{< card link="digestive-metabolic-physiology/" title="7. Digestive & Metabolic Physiology" subtitle="Enzymatic digestion, digestive hormones, absorption mechanisms, metabolic rate" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="immune-physiology/" title="8. Immune Physiology" subtitle="Innate and adaptive immunity, antigen presentation, clonal selection, immunological memory" tag="Advanced" tagColor="purple" >}}
+  {{< card link="reproductive-physiology/" title="9. Reproductive Physiology" subtitle="Pregnancy maintenance, parturition as positive feedback, lactation" tag="Advanced" tagColor="purple" >}}
 {{< /cards >}}
 
 ### Comparative & Whole-Animal Physiology
 
 {{< cards cols="2" >}}
-  {{< card link="comparative-osmoregulation-excretion/" title="10. Comparative Osmoregulation & Excretion" subtitle="Marine/freshwater fish, elasmobranch urea retention, insect Malpighian tubules, desert mammals" tag="Advanced" >}}
-  {{< card link="comparative-thermoregulation/" title="11. Comparative Thermoregulation" subtitle="Endotherm vs. ectotherm, countercurrent heat exchange, torpor/hibernation/estivation" tag="Intermediate" >}}
-  {{< card link="comparative-respiration-circulation/" title="12. Comparative Respiration & Circulation" subtitle="Gill/lung/tracheal gas exchange compared, diving physiology, high-altitude adaptation" tag="Advanced" >}}
-  {{< card link="locomotion-energetics/" title="13. Locomotion & Energetics" subtitle="Metabolic scaling (Kleiber's law), cost of transport, gait transitions, elastic energy storage" tag="Intermediate" >}}
+  {{< card link="comparative-osmoregulation-excretion/" title="10. Comparative Osmoregulation & Excretion" subtitle="Marine/freshwater fish, elasmobranch urea retention, insect Malpighian tubules, desert mammals" tag="Advanced" tagColor="purple" >}}
+  {{< card link="comparative-thermoregulation/" title="11. Comparative Thermoregulation" subtitle="Endotherm vs. ectotherm, countercurrent heat exchange, torpor/hibernation/estivation" tag="Intermediate" tagColor="amber" >}}
+  {{< card link="comparative-respiration-circulation/" title="12. Comparative Respiration & Circulation" subtitle="Gill/lung/tracheal gas exchange compared, diving physiology, high-altitude adaptation" tag="Advanced" tagColor="purple" >}}
+  {{< card link="locomotion-energetics/" title="13. Locomotion & Energetics" subtitle="Metabolic scaling (Kleiber's law), cost of transport, gait transitions, elastic energy storage" tag="Intermediate" tagColor="amber" >}}
 {{< /cards >}}

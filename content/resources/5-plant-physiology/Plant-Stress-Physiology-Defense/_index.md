@@ -7,6 +7,7 @@ prerequisites: []
 syllabus_tags: ["IBO", "USABO", "comparative"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

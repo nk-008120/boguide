@@ -7,6 +7,7 @@ prerequisites: ["Molecular-Systematics"]
 syllabus_tags: ["IBO", "USABO", "biosystematics"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

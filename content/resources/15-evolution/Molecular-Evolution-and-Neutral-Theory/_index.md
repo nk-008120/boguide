@@ -7,6 +7,7 @@ prerequisites: ["Genetic-Drift-Gene-Flow-and-Mutation"]
 syllabus_tags: ["IBO", "USABO", "evolution"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

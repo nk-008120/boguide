@@ -6,6 +6,7 @@ difficulty: "beginner"
 syllabus_tags: ["IBO", "USABO", "evolution"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

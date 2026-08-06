@@ -7,6 +7,7 @@ prerequisites: ["Light-Reactions-Photophosphorylation"]
 syllabus_tags: ["IBO", "USABO", "plant-physiology"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

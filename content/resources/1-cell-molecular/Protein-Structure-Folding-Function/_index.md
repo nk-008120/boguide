@@ -68,7 +68,9 @@ Because most of these forces are non-covalent, tertiary structure is fragile: he
 
 **Cooperativity** means O₂ binding at one subunit raises affinity at the others, producing a **sigmoidal** binding curve (vs. the hyperbolic curve of monomeric myoglobin, which has no cooperativity):
 
+{{< eqbox >}}
 $$ \theta = \frac{[O_2]^{n_H}}{K_d^{n_H} + [O_2]^{n_H}} $$
+{{< /eqbox >}}
 
 For Hb, the Hill coefficient n_H ≈ 2.8 (out of a theoretical maximum of 4 for perfect cooperativity); for myoglobin, n_H = 1. You do not need to derive this equation for most olympiad purposes — understand what n_H *means* (degree of cooperativity) and its bounds.
 

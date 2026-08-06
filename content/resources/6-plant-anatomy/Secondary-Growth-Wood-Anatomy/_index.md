@@ -7,6 +7,7 @@ prerequisites: ["Plant-Tissue-Systems", "Stem-Anatomy"]
 syllabus_tags: ["IBO", "USABO", "plant-anatomy"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

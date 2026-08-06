@@ -7,6 +7,7 @@ prerequisites: ["Classification-Principles-Nomenclature"]
 syllabus_tags: ["IBO", "USABO", "biosystematics"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

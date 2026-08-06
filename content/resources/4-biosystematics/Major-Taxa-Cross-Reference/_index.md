@@ -7,6 +7,7 @@ prerequisites: ["Domains-Kingdoms"]
 syllabus_tags: ["IBO", "USABO", "biosystematics"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 

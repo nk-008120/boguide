@@ -7,6 +7,7 @@ prerequisites: ["Mechanisms-of-Behavior", "Kin-Selection-Altruism-Eusociality"]
 syllabus_tags: ["IBO", "USABO", "ethology"]
 ---
 {{< topic-meta >}}
+{{< mathjax >}}
 
 ## Overview
 
