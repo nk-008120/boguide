@@ -1456,3 +1456,365 @@ html.dark .papers-nav-next {
 html.dark .papers-nav-next:hover {
   background: #8f6bcc;
 }
+
+/* ===================================================================
+   14. TEST ATTEMPT MODE — {{< papers-attempt >}} + assets/js/papers-attempt.js
+   (loaded from static/js/papers-attempt.js). Single SPA-style page per
+   round (content/.../attempt/index.md) — screens are shown/hidden via
+   [hidden], not separate URLs, so fullscreen/timer state survives
+   "navigating" between questions. Reuses tf-quiz-row/-statement/-toggle/
+   -btn classes (section 12) for the in-test answer selectors, and
+   papers-nav-btn (section 12.5) for most buttons, so this section only
+   covers what's genuinely new: the palette, timer chrome, and report.
+   =================================================================== */
+.papers-attempt-root {
+  margin: 1rem 0;
+}
+.attempt-screen h2 {
+  margin-top: 0;
+}
+
+/* Start screen */
+#attempt-last-report-summary {
+  margin: 1rem 0;
+}
+.attempt-last-report {
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  background: rgba(92, 122, 88, 0.08);
+  border: 1px solid rgba(92, 122, 88, 0.2);
+}
+html.dark .attempt-last-report {
+  background: rgba(157, 185, 154, 0.08);
+  border-color: rgba(157, 185, 154, 0.25);
+}
+
+/* Live attempt chrome */
+.attempt-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  background: var(--hextra-bg, #fff);
+  border: 1px solid rgba(137, 101, 196, 0.2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+html.dark .attempt-topbar {
+  background: #1a1a1a;
+  border-color: rgba(201, 183, 232, 0.22);
+}
+.attempt-timer {
+  font-family: ui-monospace, "SF Mono", Consolas, monospace;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #8965c4;
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+  background: rgba(137, 101, 196, 0.08);
+}
+html.dark .attempt-timer {
+  color: #c9b7e8;
+  background: rgba(201, 183, 232, 0.1);
+}
+.attempt-timer-low {
+  color: #dc2626 !important;
+  background: rgba(220, 38, 38, 0.1) !important;
+  animation: attempt-pulse 1s ease-in-out infinite;
+}
+html.dark .attempt-timer-low {
+  color: #f87171 !important;
+  background: rgba(248, 113, 113, 0.14) !important;
+}
+@keyframes attempt-pulse {
+  50% { opacity: 0.55; }
+}
+.attempt-submit-btn {
+  margin-left: auto;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  cursor: pointer;
+  color: #fff;
+  background: #dc2626;
+  border: 1px solid #dc2626;
+}
+.attempt-submit-btn:hover {
+  background: #b91c1c;
+}
+html.dark .attempt-submit-btn {
+  background: #b91c1c;
+  border-color: #b91c1c;
+}
+
+/* Layout: palette + main.
+   flex-wrap must stay "nowrap" above the mobile breakpoint: Hextra's own
+   left sidebar + right TOC can squeeze the content column down to ~650px
+   on an ordinary laptop window, well under 260px (palette) + 480px (main)
+   + gap. If that combination wraps, .attempt-main drops to its own row
+   below the palette in document flow, but the palette's position:sticky
+   keeps it pinned near the top of the viewport regardless — so once you
+   scroll, the "wrapped" main content scrolls up underneath a palette that
+   never left the top of the screen, i.e. they visibly overlap. nowrap +
+   min-width:0 on main keeps them side-by-side (main just shrinks) so that
+   scenario can't happen; the mobile breakpoint below stacks them AND
+   drops position:sticky at the same time, so overlap isn't possible there
+   either — sticky and "not laid out side-by-side" must never coexist. */
+.attempt-layout {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.attempt-palette {
+  flex: 0 0 220px;
+  min-width: 220px;
+  position: sticky;
+  top: 5rem;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(137, 101, 196, 0.2);
+  background: rgba(137, 101, 196, 0.03);
+}
+html.dark .attempt-palette {
+  border-color: rgba(201, 183, 232, 0.22);
+  background: rgba(201, 183, 232, 0.04);
+}
+.attempt-palette-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  margin-bottom: 0.9rem;
+}
+.attempt-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.attempt-dot {
+  display: inline-block;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.attempt-dot.unvisited { background: transparent; }
+.attempt-dot.visited { background: #94a3b8; }
+.attempt-dot.partial { background: #f59e0b; }
+.attempt-dot.answered { background: #16a34a; }
+.attempt-dot.marked { background: #8965c4; }
+.attempt-palette-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.4rem;
+}
+.attempt-palette-btn {
+  aspect-ratio: 1;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid rgba(148, 163, 184, 0.4);
+  background: transparent;
+  color: inherit;
+}
+.attempt-palette-btn.current {
+  border-color: #8965c4;
+  box-shadow: 0 0 0 2px rgba(137, 101, 196, 0.3);
+}
+.attempt-palette-btn.visited { border-color: #94a3b8; background: rgba(148, 163, 184, 0.15); }
+.attempt-palette-btn.partial { border-color: #f59e0b; background: rgba(245, 158, 11, 0.15); }
+.attempt-palette-btn.answered { border-color: #16a34a; background: rgba(22, 163, 74, 0.15); }
+.attempt-palette-btn.marked { box-shadow: inset 0 0 0 2px #8965c4; }
+html.dark .attempt-palette-btn.answered { background: rgba(74, 222, 128, 0.15); border-color: #4ade80; }
+html.dark .attempt-palette-btn.partial { background: rgba(251, 191, 36, 0.15); border-color: #fbbf24; }
+
+.attempt-main {
+  flex: 1 1 480px;
+  min-width: 0;
+}
+.attempt-question-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+.attempt-mark-btn {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+  background: transparent;
+  color: #8965c4;
+  border: 1px solid rgba(137, 101, 196, 0.4);
+}
+.attempt-mark-btn.active {
+  color: #fff;
+  background: #8965c4;
+}
+html.dark .attempt-mark-btn {
+  color: #c9b7e8;
+  border-color: rgba(201, 183, 232, 0.4);
+}
+html.dark .attempt-mark-btn.active {
+  background: #7c5cb8;
+  color: #fff;
+}
+.attempt-answer-block {
+  margin-top: 1.25rem;
+}
+.attempt-question-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 800px) {
+  .attempt-layout {
+    flex-wrap: wrap;
+  }
+  .attempt-palette {
+    position: static;
+    flex-basis: 100%;
+    min-width: 0;
+  }
+}
+
+/* Report screen */
+.attempt-score-hero {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #8965c4;
+  margin: 0.5rem 0 1rem;
+}
+html.dark .attempt-score-hero {
+  color: #c9b7e8;
+}
+.attempt-score-pct {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(107 114 128);
+}
+.attempt-fs-note {
+  font-size: 0.85rem;
+  color: rgb(107 114 128);
+}
+.attempt-subject-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 1rem 0 2rem;
+}
+.attempt-subject-row {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) 2fr auto;
+  align-items: center;
+  gap: 0.75rem;
+}
+.attempt-subject-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.attempt-subject-bar-track {
+  height: 0.6rem;
+  border-radius: 999px;
+  background: rgba(137, 101, 196, 0.1);
+  overflow: hidden;
+}
+.attempt-subject-bar {
+  height: 100%;
+  background: #16a34a;
+  border-radius: 999px;
+}
+.attempt-subject-bar.weak {
+  background: #dc2626;
+}
+.attempt-subject-pct {
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.attempt-outlier-list {
+  font-size: 0.9rem;
+}
+
+/* Report — recommendations (buildRecommendations() in papers-attempt.js) */
+.attempt-rec-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin: 1rem 0 2rem;
+}
+.attempt-rec-card {
+  padding: 0.9rem 1.1rem;
+  border-radius: 12px;
+  /* top/right/bottom only — border-left is set separately per tone class
+     below (and must stay separate: a `border-color` shorthand override
+     here, e.g. for dark mode, would have higher specificity than a lone
+     `.attempt-rec-critical` class and silently win on ALL four sides,
+     wiping out the tone color). */
+  border-width: 1px 1px 1px 4px;
+  border-style: solid;
+  border-top-color: rgba(137, 101, 196, 0.2);
+  border-right-color: rgba(137, 101, 196, 0.2);
+  border-bottom-color: rgba(137, 101, 196, 0.2);
+  background: rgba(137, 101, 196, 0.04);
+}
+.attempt-rec-card h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+}
+.attempt-rec-card p {
+  margin: 0;
+  font-size: 0.88rem;
+  color: rgb(75 85 99);
+}
+html.dark .attempt-rec-card {
+  border-top-color: rgba(201, 183, 232, 0.22);
+  border-right-color: rgba(201, 183, 232, 0.22);
+  border-bottom-color: rgba(201, 183, 232, 0.22);
+  background: rgba(201, 183, 232, 0.05);
+}
+html.dark .attempt-rec-card p {
+  color: rgb(163 163 163);
+}
+.attempt-rec-critical {
+  border-left-color: #dc2626;
+}
+.attempt-rec-weak {
+  border-left-color: #f59e0b;
+}
+.attempt-rec-positive {
+  border-left-color: #16a34a;
+}
+.attempt-rec-neutral {
+  border-left-color: #8965c4;
+}
+
+.attempt-report-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+@media print {
+  .attempt-topbar,
+  .attempt-palette,
+  .attempt-question-nav,
+  .attempt-report-actions,
+  #attempt-start,
+  #attempt-live {
+    display: none !important;
+  }
+}
