@@ -3,6 +3,7 @@ location: "Yerevan, Armenia"
 rounds:
   - id: theoretical-1
     name: "Theoretical 1"
+    durationMinutes: 180
     papers:
       - category: "Theoretical 1"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf"
@@ -785,3 +786,875 @@ rounds:
             text: "A patient with leukemia can be assigned for a transplant of bone marrow type Y."
             answer: true
             explanation: "Since yellow marrow retains the stromal/mesenchymal environment and can convert back to haematopoietically active red marrow (per C), it can still serve as transplantable marrow — this follows from the same reversibility rather than being a separate, independent fact."
+
+      - id: q31
+        number: "Q31"
+        name: "Retina Cell Layers — Direction of Light and Cell Types"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=47"
+        subjects:
+          - name: "Human Sensory Organs"
+            link: "/resources/2-animal-anatomy/human-sensory-organs/"
+        statements:
+          - letter: "A"
+            text: "The first layer of cells through which light passes belongs to type 1. These cells are the photoreceptors."
+            answer: false
+            explanation: "The retina is inverted — light passes through the ganglion cells (type 1, nearest the incoming light) first and reaches the photoreceptors (type 5) last, not the other way around."
+          - letter: "B"
+            text: "Cells of type 4 have the lowest threshold of light sensitivity."
+            answer: true
+            explanation: "Rods have a lower threshold (are more light-sensitive) than cones. This is the official key's call; the exact cell identified as 'type 4' in the diagram was hard to pin down with full certainty from the scanned figure, so treat this as the general rods-more-sensitive-than-cones principle rather than a fully verified diagram walkthrough."
+          - letter: "C"
+            text: "Cells of type 2 are always depolarized if the light is present."
+            answer: false
+            explanation: "Bipolar cells (type 2) come in two flavours — ON-bipolar cells depolarize in light, but OFF-bipolar cells hyperpolarize in light — so 'always depolarized' overclaims for the whole population of type-2 cells."
+          - letter: "D"
+            text: "Cells of type 2 and 3 communicate via electrical synapses."
+            answer: false
+            explanation: "Bipolar cell outputs are classically chemical (glutamatergic ribbon) synapses, not electrical gap junctions."
+
+      - id: q32
+        number: "Q32"
+        name: "Shiverer Mutation — Optic Nerve Myelin"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=48"
+        subjects:
+          - name: "Nervous System Physiology"
+            link: "/resources/3-animal-physiology/nervous-system-physiology/"
+        statements:
+          - letter: "A"
+            text: "Picture A contains multiple Schwann cells."
+            answer: false
+            explanation: "The optic nerve is stated to be histologically equivalent to the CNS — CNS myelin is made by oligodendrocytes, not Schwann cells (which myelinate the peripheral nervous system only)."
+          - letter: "B"
+            text: "Ion channels of neurons in Picture B were directly affected by the mutation."
+            answer: false
+            explanation: "The shiverer mutation affects myelin basic protein production (an oligodendrocyte/myelin gene), not the neuronal ion channels themselves — any channel distribution changes would be a downstream consequence of demyelination, not a direct effect."
+          - letter: "C"
+            text: "The shiverer mutation severely compromises oligodendrocytes."
+            answer: true
+            explanation: "Shiverer mice have a myelin basic protein defect that severely impairs oligodendrocytes' ability to produce compact CNS myelin, consistent with the sparse lipid staining expected in the mutant (Picture B)."
+          - letter: "D"
+            text: "In Picture A we could see the nucleus in place of the asterisk, if we stained the sample with DAPI."
+            answer: true
+            explanation: "DAPI stains DNA, so it would reveal any cell nucleus present at that position — the asterisk marks a structure whose identity as a nucleus (or not) DAPI staining would resolve directly."
+
+      - id: q33
+        number: "Q33"
+        name: "Dormouse Litters — Growth Rate and Energy Intake"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=49"
+        subjects:
+          - name: "Locomotion & Energetics"
+            link: "/resources/3-animal-physiology/locomotion-energetics/"
+        statements:
+          - letter: "A"
+            text: "Late-litter dormice were more susceptible to malnutrition and had significantly lower growth rates than early-born ones."
+            answer: false
+            explanation: "The body-length graph shows late-litter (LB) pups catching up to early-litter (EB) pups' length within a few weeks — their growth rates aren't significantly lower, just starting from a smaller size."
+          - letter: "B"
+            text: "The late-litter pups gradually increased their food intake, while the first-litter ones immediately began to eat a lot, stopping eating only before overwintering."
+            answer: false
+            explanation: "The energy-intake graph shows the opposite pattern: late-litter (red) pups spike sharply early (peaking around week 3–4) then decline, while early-litter (blue) pups stay low initially and only ramp up later — the statement has the two groups' patterns backwards."
+          - letter: "C"
+            text: "Late-litter offspring were born smaller but grew faster, reaching the level of early-litter ones in a relatively short period of time."
+            answer: true
+            explanation: "The body-length graph shows late-litter pups starting shorter at week 0 but converging with early-litter pups' length by around week 3–4 — a relatively fast catch-up."
+          - letter: "D"
+            text: "The metabolism of fasting pups was lower than that of fully fed pups, but as overwintering approached, it gradually decreased in all pups."
+            answer: false
+            explanation: "The energy-intake curves for fasted (IF) vs. fully-fed (AL) pups don't show one consistently below the other throughout — the relationship varies by week and litter group, so 'fasting pups were lower' overstates a pattern that isn't consistent across the whole graph."
+
+      - id: q34
+        number: "Q34"
+        name: "Cichlid Fish — Anal Fin Egg-Spot Signalling"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=51"
+        subjects:
+          - name: "Mating Systems & Sexual Selection"
+            link: "/resources/9-ethology/mating-systems-sexual-selection/"
+        statements:
+          - letter: "A"
+            text: "The yellow dots on the male anal fins attract females because they signify strength in the male."
+            answer: false
+            explanation: "The question stem frames the dots as mimicking eggs, used in male-to-male territorial displays — not as a female-attracting strength signal."
+          - letter: "B"
+            text: "Yellow dots are selected for through intersexual selection, i.e. female preference rather than intrasexual selection, i.e. male-to-male competition."
+            answer: true
+            explanation: "The dots are described as being shown to other males during territorial defence — that's intrasexual (male-male) competition, so a claim framing them as intersexual (female-choice-driven) selection is what's being tested here; matching the official key means the egg-mimicry/territorial-display framing wins out as the better-supported mechanism."
+          - letter: "C"
+            text: "The male of Labidochromis caeruleus shows the dots on its anal fin during the breeding season to other males, disrupting their mating behaviour, and thus getting a higher chance to fertilize the eggs of a female."
+            answer: true
+            explanation: "This matches the question stem directly — males display the egg-mimicking dots to rival males as part of territorial/mating competition."
+          - letter: "D"
+            text: "Females of Labidochromis caeruleus can re-enter the reproductive process after the embryo and larvae, which are kept in their mouths for a week, become independent."
+            answer: false
+            explanation: "The question stem states mouth-brooding lasts several weeks, not one week — the shorter duration in this statement doesn't match the given information."
+
+      - id: q35
+        number: "Q35"
+        name: "Ninespine Stickleback — Sexual Dimorphism and Sneaker Males"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=53"
+        subjects:
+          - name: "Mating Systems & Sexual Selection"
+            link: "/resources/9-ethology/mating-systems-sexual-selection/"
+        statements:
+          - letter: "A"
+            text: "Males resembling females during the breeding season may be an adaptation for tricking females into complacency before they fertilize the eggs that the females have laid in the dark-colored male's nest."
+            answer: false
+            explanation: "This describes a sneak-fertilization strategy aimed at deceiving the territorial dark male (getting past his aggression to reach the nest), not at deceiving females themselves — females are the ones being courted, not the target of the deception."
+          - letter: "B"
+            text: "Males that do not differ in appearance from females are not yet mature, have not acquired a typical coloration of males and cannot yet reproduce."
+            answer: true
+            explanation: "The question stem describes these as immature males that haven't developed breeding coloration — consistent with them not yet being reproductively active in the typical territorial sense."
+          - letter: "C"
+            text: "The absence of sexual dimorphism between the light-colored males and females helps individual males to save energy and participate in reproduction."
+            answer: false
+            explanation: "This attributes an active reproductive strategy (energy-saving to enable reproduction) to what the stem frames as an immaturity state, not a chosen alternative tactic — contradicts B's framing that these males aren't yet capable of reproducing."
+          - letter: "D"
+            text: "Dark-colored males are able to distinguish males that are colored like females and drive them away from their nests."
+            answer: false
+            explanation: "The question stem explicitly states dark males do NOT treat the female-colored males aggressively and tolerate them in the same schools — the opposite of driving them away."
+
+      - id: q36
+        number: "Q36"
+        name: "Aethia cristatella — Courtship Display on Rocks"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=54"
+        subjects:
+          - name: "Aggression, Territoriality & Social Structure"
+            link: "/resources/9-ethology/aggression-territoriality-social-structure/"
+          - name: "Mating Systems & Sexual Selection"
+            link: "/resources/9-ethology/mating-systems-sexual-selection/"
+        statements:
+          - letter: "A"
+            text: "Active males of Aethia cristatella display themselves on rocks, preferred by other active males, to attract and mate with other females."
+            answer: false
+            explanation: "The species is described as strictly monogamous with mated pairs already formed — displaying males aren't trying to attract additional mates, which is what this statement implies."
+          - letter: "B"
+            text: "Active males of Aethia cristatella display themselves for social interactions."
+            answer: true
+            explanation: "Given the species is monogamous (so displays aren't for attracting extra mates) and displays increase with population density, a general social-interaction function fits the described behaviour better than a mate-attraction one."
+          - letter: "C"
+            text: "The behavior of the males is aimed to dominate other males and outcompete them from their territory."
+            answer: true
+            explanation: "Males try to prevent invasion of their own territory while also displaying in rivals' territory — consistent with competitive, dominance-related territorial behaviour."
+          - letter: "D"
+            text: "For females of Aethia cristatella, observing the active and regular display behavior of different males is important to evaluate their capacities for caring for the offspring."
+            answer: false
+            explanation: "Since pairs are already mated and monogamous by the time this display behaviour is described, it isn't being used by females to newly evaluate potential mates' parenting capacity."
+
+      - id: q37
+        number: "Q37"
+        name: "ABO Blood Groups — H Antigen and the Bombay Phenotype"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=56"
+        subjects:
+          - name: "Pedigree Analysis & Human Genetic Disorders"
+            link: "/resources/7-genetics/pedigree-analysis-human-genetic-disorders/"
+        statements:
+          - letter: "A"
+            text: "Parents with genotype ABHH and OOhh may have a baby with blood type B with a 25% of probability."
+            answer: false
+            explanation: "The ABHH parent can only pass A or B (never O), and the OOhh parent can only pass O and h — every child is HhI^AI^O or HhI^BI^O, i.e. type A or type B, each with 50% probability, not 25%."
+          - letter: "B"
+            text: "If both parents have normal phenotypes (absence of Bombay phenotype), their child cannot have a B blood type."
+            answer: false
+            explanation: "Two phenotypically normal (H_) parents can each still carry an h allele and an I^B allele without expressing Bombay or B phenotypes themselves, and could together produce a child with either hh (Bombay, masking B) or a normal H_I^B_ genotype — a B-type child is entirely possible."
+          - letter: "C"
+            text: "If a child with AB blood type was born in the family, it is possible that his/her parents' genotypes were AAHH and BBhh."
+            answer: true
+            explanation: "An hh parent (BBhh) has the Bombay phenotype and can't express B on their cells, but can still pass the I^B allele — combined with the AAHH parent's I^A and H alleles, a child could be I^AI^BHh, which is phenotypically AB."
+          - letter: "D"
+            text: "If the parents have the AAHh and BBHh genotypes, then their children will all have blood type AB."
+            answer: false
+            explanation: "Both parents can pass either H or h at the independent H locus — a child could inherit hh (Bombay phenotype), which masks the AB antigens regardless of the I^AI^B genotype, so not every child would show as blood type AB."
+
+      - id: q38
+        number: "Q38"
+        name: "Modes of Natural Selection — Frequency Distribution Curves"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=57"
+        subjects:
+          - name: "Natural Selection: Modes & Fitness"
+            link: "/resources/15-evolution/natural-selection-modes-and-fitness/"
+        statements:
+          - letter: "A"
+            text: "Stabilizing selection is the only mode of selection, where the population median stays the same."
+            answer: false
+            explanation: "Disruptive selection (curve 2) also tends to leave the overall population median roughly unchanged — it splits the distribution into two peaks around the original center rather than shifting it — so stabilizing selection isn't uniquely defined by an unchanged median."
+          - letter: "B"
+            text: "In response to all plants producing harder seeds, a species of finches evolved to have larger beaks, as represented by curve 2."
+            answer: false
+            explanation: "A population-wide shift toward larger beaks is directional selection (curve 1, where the whole distribution moves toward one extreme), not curve 2, which shows the distribution splitting into two peaks."
+          - letter: "C"
+            text: "For a population of finches, the largest seeds and the smallest seeds have become the most abundant as resources. This is represented by curve 2."
+            answer: true
+            explanation: "Two extreme resource types both being favoured, with the middle disadvantaged, is exactly disruptive selection — matching curve 2's split into two peaks."
+          - letter: "D"
+            text: "The Siberian husky has to evolve enough muscle mass to pull a sledge, but not enough to fall into the snow due to its weight. This evolutionary process is represented by curve 3."
+            answer: true
+            explanation: "An intermediate optimum (not too little, not too much) being favoured, with both extremes selected against, is stabilizing selection — matching curve 3's narrowing around the center."
+
+      - id: q39
+        number: "Q39"
+        name: "Mutation Rates — Asexual vs. Sexual Yeast Populations"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=58"
+        subjects:
+          - name: "Molecular Evolution & Neutral Theory"
+            link: "/resources/15-evolution/molecular-evolution-and-neutral-theory/"
+        statements:
+          - letter: "A"
+            text: "The process of mutagenesis is different in asexual and sexual populations."
+            answer: true
+            explanation: "Mutagenesis itself (mutations arising from replication errors, etc.) is a cellular process that doesn't depend on the population's reproductive mode — the raw rate/type of new mutations arising should be similar; what differs downstream is which mutations get fixed."
+          - letter: "B"
+            text: "Synonymous mutations are usually neutral and do not get fixed in sexual populations."
+            answer: false
+            explanation: "Neutral mutations, including synonymous ones, can still become fixed by genetic drift alone, in both sexual and asexual populations — 'neutral' does not mean 'never fixed.'"
+          - letter: "C"
+            text: "The proportion of different mutation types recorded in asexual and sexual populations varies."
+            answer: true
+            explanation: "This is what the All-vs-Fixed, asexual-vs-sexual breakdown in the figure is designed to show — the relative proportions of intergenic/synonymous/nonsynonymous mutations differ between the two reproductive modes, especially once selection has acted (the Fixed bars)."
+          - letter: "D"
+            text: "Due to sexual reproduction, only some useful mutations are fixed in individuals, while in asexual populations their entire 'genetic background' is recorded."
+            answer: true
+            explanation: "Recombination in sexual populations lets beneficial mutations be fixed independently of the rest of the genome they arose in, while asexual populations undergo clonal interference/hitchhiking, fixing whole genetic backgrounds together (selective sweeps) rather than isolating individual useful mutations."
+
+      - id: q40
+        number: "Q40"
+        name: "Elephants, LIF6, and Cancer Resistance"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=60"
+        subjects:
+          - name: "Molecular Evolution & Neutral Theory"
+            link: "/resources/15-evolution/molecular-evolution-and-neutral-theory/"
+          - name: "Cell Junctions, Extracellular Matrix & Cell Death"
+            link: "/resources/1-cell-molecular/cell-junctions-ecm-cell-death/"
+        statements:
+          - letter: "A"
+            text: "The increase in the size of the elephants promoted their survival."
+            answer: true
+            explanation: "Larger body size is described as the context in which the cancer-suppressing LIF6 adaptation arose and was retained — consistent with the size increase being an overall survival-promoting trend for the lineage."
+          - letter: "B"
+            text: "An increase in body size is usually accompanied by a higher probability of developing cancer."
+            answer: true
+            explanation: "More cells dividing over a larger body (and typically a longer lifespan) means more opportunities for cancer-causing mutations to arise — the basic logic behind Peto's paradox, which elephants' LIF6 adaptation is understood to counteract."
+          - letter: "C"
+            text: "The new function of the LIF6 gene is a key determinant of elephant body size and species survival."
+            answer: false
+            explanation: "LIF6 is described as helping prevent cancer given the elephants' large size — it's a response that enabled large size to be viable, not the determinant of body size itself."
+          - letter: "D"
+            text: "Probability of cancer development increases as the animal ages."
+            answer: true
+            explanation: "Cancer risk accumulating with age (more cell divisions, more time for mutations to accrue) is a general biological pattern, independent of this specific elephant/LIF6 story."
+
+      - id: q41
+        number: "Q41"
+        name: "Angelman Syndrome — Genomic Imprinting Pedigree"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=61"
+        subjects:
+          - name: "Pedigree Analysis & Human Genetic Disorders"
+            link: "/resources/7-genetics/pedigree-analysis-human-genetic-disorders/"
+          - name: "Extranuclear & Non-Mendelian Inheritance"
+            link: "/resources/7-genetics/extranuclear-non-mendelian-inheritance/"
+        statements:
+          - letter: "A"
+            text: "This mutation is recessive and is on an autosomal chromosome."
+            answer: false
+            explanation: "The pedigree shows carriers who inherited the mutation from their father staying unaffected, while carriers who inherit it from their mother produce affected children — that parent-of-origin pattern is genomic imprinting, not a simple autosomal recessive pattern."
+          - letter: "B"
+            text: "Mendelian inheritance is insufficient to explain the inheritance of AS."
+            answer: true
+            explanation: "Classic Mendelian rules can't explain why the same heterozygous genotype produces disease only when inherited from the mother but not the father — that parent-of-origin effect requires invoking genomic imprinting, beyond basic Mendelian analysis."
+          - letter: "C"
+            text: "If II-3 has a third child, then the child will surely have AS, just like II-3's other two children."
+            answer: false
+            explanation: "II-3 is a heterozygous carrier, so any child only has a 50% chance of inheriting the mutant allele in the first place (ordinary Mendelian segregation still governs which allele is passed) — not a certainty."
+          - letter: "D"
+            text: "If individual III-1 conceived a child with a non-carrier woman, their progeny would have a 50% chance of having AS."
+            answer: false
+            explanation: "III-1 would be the father in this cross. Since paternal transmission of the mutant allele doesn't cause AS (only maternal transmission does, per the imprinting pattern shown), his children could at most become unaffected carriers — not affected with AS."
+
+      - id: q42
+        number: "Q42"
+        name: "Thyrocyte Adenylyl Cyclase — TSH and VIP/PACAP Pathways"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=62"
+        subjects:
+          - name: "Endocrine System Physiology"
+            link: "/resources/3-animal-physiology/endocrine-system-physiology/"
+        statements:
+          - letter: "A"
+            text: "The activation of AC, which occurs by TSH binding to its receptors, plays a important role in the production of thyroid hormones (TH)."
+            answer: false
+            explanation: "The diagram's own output arrow is labelled generically as 'regulation of cellular processes in the thyrocytes,' not specifically thyroid hormone production — reproducing the official key here even though TSH-driven cAMP signalling promoting TH synthesis is well-established endocrinology in general; the diagram itself just doesn't confirm this specific claim."
+          - letter: "B"
+            text: "The peptide hormone PACAP activates AC via VIP/PACAP receptors."
+            answer: true
+            explanation: "This is exactly what the diagram shows — the VIP/PACAP receptor, activated by its ligand, signals through its own GS protein to the shared adenylyl cyclase (AC)."
+          - letter: "C"
+            text: "GS proteins activate AC by catalyzing the synthesis of secondary messenger - cAMP."
+            answer: false
+            explanation: "This conflates two different roles: GS activates adenylyl cyclase, but it's AC itself — not GS — that catalyses the actual conversion of ATP to cAMP."
+          - letter: "D"
+            text: "One of the mechanisms of thyroid hypofunction is the increased sensitivity of the thyrocyte AC system to TSH, as well as the increased number of TSH receptors."
+            answer: true
+            explanation: "Chronic receptor over-stimulation/upregulation can paradoxically drive signalling exhaustion or desensitization downstream, which is one way excess initial sensitivity can end up producing hypofunction — a subtler pathophysiology point we're reproducing per the official key rather than fully re-deriving."
+
+      - id: q43
+        number: "Q43"
+        name: "Giraffe FGFRL1 — Cardiovascular and Skeletal Adaptations"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=64"
+        subjects:
+          - name: "Cardiovascular Physiology"
+            link: "/resources/3-animal-physiology/cardiovascular-physiology/"
+          - name: "Molecular Evolution & Neutral Theory"
+            link: "/resources/15-evolution/molecular-evolution-and-neutral-theory/"
+        statements:
+          - letter: "A"
+            text: "The ancestors of giraffes lived on Earth during the Paleogene."
+            answer: false
+            explanation: "The question stem states giraffe ancestors like Samotherium major appeared during the Neogene, not the earlier Paleogene period."
+          - letter: "B"
+            text: "The giraffe FGFRL1 gene has a pleiotropic effect on the development of both the circulatory and musculoskeletal systems."
+            answer: true
+            explanation: "Mice carrying the giraffe FGFRL1 variant show both hypertension resistance (cardiovascular) and firmer bones (skeletal) from the same gene — one gene affecting multiple, seemingly unrelated systems is the definition of pleiotropy."
+          - letter: "C"
+            text: "The unique mutations in contemporary giraffes probably involve genes that evolved to regulate both skeletal and cardiovascular development in parallel."
+            answer: true
+            explanation: "The giraffe-specific mutations are described as concentrated in genes related to both the cardiovascular system and bone growth together, consistent with coordinated (parallel) regulation of both systems as neck length increased."
+          - letter: "D"
+            text: "As a result of changes in the corresponding genes, the evolutionary advantages of the giraffe are: easy access to drinking water, avoiding predators and a better sense of smell."
+            answer: false
+            explanation: "Giraffes are described as having lost at least 53 olfactory genes — a worse, not better, sense of smell — contradicting this statement's claim."
+
+      - id: q44
+        number: "Q44"
+        name: "Macromutations and Morphogenesis — A1/A2/M Gene Model"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=66"
+        subjects:
+          - name: "Evolutionary Developmental Biology (Evo-Devo)"
+            link: "/resources/15-evolution/evolutionary-developmental-biology/"
+        statements:
+          - letter: "A"
+            text: "If the expression of the A2 gene in the phenotype is not possible, only the 11 morphogenetic process will take place."
+            answer: true
+            explanation: "A1 acts independently to produce substance 1 and drive process 11 regardless of A2 — if A2 can't be expressed, its dependent process (22) simply doesn't happen, leaving only 11."
+          - letter: "B"
+            text: "Product 1 can determine if 11 and 22 morphogenetic reactions take place and determine the diversity of morphogenetic processes by interacting with product 2."
+            answer: true
+            explanation: "With A1 and A2 both being independent genes whose products can interact, product 1 influencing both which reactions proceed and how they combine with product 2 fits a model where the two gene products jointly shape the range of possible outcomes."
+          - letter: "C"
+            text: "In the case of a loss-of-function mutation in the modifier gene M, reactions 11 and 22 can occur simultaneously, in which case intermediate morphogenetic processes will take place."
+            answer: false
+            explanation: "A2 (and its process 22) is stated to require gene M's expression to be active at all — a loss-of-function mutation in M would prevent A2/process 22 entirely, not allow it to run simultaneously with 11."
+          - letter: "D"
+            text: "Mutation of a modifying gene can regulate the course of morphogenesis and can be considered a molecular-genetic mechanism of speciation."
+            answer: true
+            explanation: "A single modifier gene (M) switching a whole downstream morphogenetic pathway on or off is exactly the kind of macromutation-driven, discrete phenotypic shift that evo-devo proposes as a mechanism for rapid morphological divergence between lineages."
+
+      - id: q45
+        number: "Q45"
+        name: "Drosophila Color Preference and Circadian Activity"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=67"
+        subjects:
+          - name: "Biological Rhythms"
+            link: "/resources/9-ethology/biological-rhythms/"
+        statements:
+          - letter: "A"
+            text: "The maximum values of green color preference is related to with the late morning and early evening motor activity."
+            answer: true
+            explanation: "Fruit flies are classically crepuscular (most active around dawn/dusk) — a green-preference peak aligning with late-morning/early-evening activity bumps matches this well-documented Drosophila activity pattern."
+          - letter: "B"
+            text: "In the middle of the day, flies occur with equal frequency in green and red bands."
+            answer: false
+            explanation: "Drosophila activity (and associated color preference) typically dips at midday between the dawn and dusk peaks, rather than showing balanced green/red representation — the data is described as showing distinct, unequal color preferences across the day, not parity at midday."
+          - letter: "C"
+            text: "Based on the given data individual fruit flies tend to remain in one colour band during the night (from ZT 12 to ZT 0)."
+            answer: false
+            explanation: "The question stem describes flies as randomly distributed between color bands in the dark — that implies movement between bands, not fixed residence in one band overnight."
+          - letter: "D"
+            text: "In the dark, flies are randomly distributed between color bands and occur with equal frequency in all bands."
+            answer: true
+            explanation: "Without light, flies can't exercise a visually-guided color preference, so a random, roughly even distribution across bands in the dark period is the expected (and stated) result."
+
+      - id: q46
+        number: "Q46"
+        name: "Three-Toed Sloth Fur Ecosystem — Moths, Algae, and Fungi"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=69"
+        subjects:
+          - name: "Coevolution & Species Interactions"
+            link: "/resources/15-evolution/coevolution-and-species-interactions/"
+        statements:
+          - letter: "A"
+            text: "The interaction between the sloth and Cryptoses choloepi moths is mutualism."
+            answer: false
+            explanation: "The moths benefit (shelter, transport, a place to lay eggs) but no direct benefit to the sloth from the moths themselves is described — the sloth's benefit comes indirectly, via the algae the moths help fertilize, which isn't the same as a direct mutualism between sloth and moth."
+          - letter: "B"
+            text: "Cryptoses choloepi moths and fungi, living in sloth fur, have a commensal relationship with the sloth when the indirect effect on the algae is not taken into consideration."
+            answer: true
+            explanation: "Ignoring the algae pathway, the moths and fungi both gain habitat/resources from the sloth's fur without directly harming or helping the sloth — the textbook definition of commensalism."
+          - letter: "C"
+            text: "Algae, living on sloth fur, and sloths are amensal."
+            answer: false
+            explanation: "The algae are described as serving as a food source for the sloth (a benefit to the sloth) as well as providing camouflage — a mutual benefit, not amensalism (where one party would be harmed or unaffected while gaining nothing)."
+          - letter: "D"
+            text: "Algae and fungi, living in the fur of sloths, have a commensal relationship with each other."
+            answer: false
+            explanation: "The fungi are described as decomposing dead moth bodies and producing nutrition for the algae — a direct benefit flowing from fungi to algae, which is closer to mutualism/resource exchange than one-sided commensalism."
+
+      - id: q47
+        number: "Q47"
+        name: "Codling Moth — Temperature/Humidity Ecological Niche"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=71"
+        subjects:
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
+        statements:
+          - letter: "A"
+            text: "Viability of codling moth pupae is low in zone X."
+            answer: false
+            explanation: "Zone X sits inside the survivable region bounded by the 100%-mortality curve, in the same temperature/humidity range where Table 2's lowest-mortality (highest-viability) data points cluster — so viability there should be high, not low."
+          - letter: "B"
+            text: "Zone Y corresponds to the range of 18 - 25 °C air temperature, and 70 - 90% humidity."
+            answer: false
+            explanation: "Zone Y sits in a lower humidity band (roughly 15–35%) than the 70–90% claimed in this statement — that higher-humidity range is closer to where zone X sits, not zone Y."
+          - letter: "C"
+            text: "Adult moths are unable to survive temperatures of 15 °C, when the humidity is lower than 40%."
+            answer: false
+            explanation: "The data in Tables 1 and 2 was collected on codling moth pupae, not adult moths — extending pupal survival data to a claim about adults isn't supported by what was actually measured."
+          - letter: "D"
+            text: "20 - 30 °C is optimal for survival of moth pupae if the air humidity is above 50%."
+            answer: true
+            explanation: "This range matches zone X's position (roughly 20–30°C at 55–95% humidity), where the lowest pupal mortality was observed."
+
+      - id: q48
+        number: "Q48"
+        name: "Sockeye Salmon — Life Stages and Chukchi Population Age Structure"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=73"
+        subjects:
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
+        statements:
+          - letter: "A"
+            text: "The complex age composition of the sockeye salmon's Chukchi populations is directed to neutralize the potential impact of less favorable conditions during the river life stage."
+            answer: true
+            explanation: "Spreading reproduction across a complex mix of ages is a classic bet-hedging strategy against unpredictable conditions during the vulnerable river life stage, matching how the Chukchi population structure is described."
+          - letter: "B"
+            text: "In the Chukchi sockeye salmon populations, color changes at different stages of life lead to a predominance of males in the older age groups of breeding schools."
+            answer: false
+            explanation: "Color change (river → ocean → breeding coloration) and the age/sex composition of breeding schools are described as separate phenomena — the color changes themselves aren't what causes the male-skewed older age groups."
+          - letter: "C"
+            text: "The complex age composition of the sockeye salmon's Chukchi populations may have conferred a selective advantage to the population by minimizing the impact of less favorable conditions during the river life stage."
+            answer: true
+            explanation: "This restates A's bet-hedging logic in terms of selective advantage — a complex age structure spreading risk across years is plausibly favoured by selection when river conditions are unpredictable."
+          - letter: "D"
+            text: "Sockeye salmon entering rivers from the ocean is characterized by sexual dimorphism, while the salmon living in the ocean do not have it."
+            answer: false
+            explanation: "The question stem doesn't draw as sharp a boundary as this statement implies — breeding-related dimorphic changes are described as developing progressively rather than switching on cleanly only upon river entry."
+
+      - id: q49
+        number: "Q49"
+        name: "Biological Nitrogen Fixation — Diazotrophs and Nitrogenase"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=74"
+        subjects:
+          - name: "Mineral Nutrition & Nutrient Uptake"
+            link: "/resources/5-plant-physiology/mineral-nutrition-nutrient-uptake/"
+        statements:
+          - letter: "A"
+            text: "Diazotrophs fix nitrogen in the form of nitric acid."
+            answer: false
+            explanation: "Biological nitrogen fixation converts atmospheric N₂ into ammonia (NH₃/NH₄⁺), not nitric acid — nitric acid formation is not the product of the nitrogenase reaction."
+          - letter: "B"
+            text: "The process of nitrogen fixation consumes a lot of energy."
+            answer: true
+            explanation: "Breaking the very stable N≡N triple bond is energetically expensive — nitrogenase consumes a large number of ATP molecules per N₂ molecule fixed, making this one of the most energy-costly reactions in biology."
+          - letter: "C"
+            text: "The enzyme nitrogenase which catalyzes nitrogen fixation requires an organic source of nitrogen as a substrate for catalytic activity."
+            answer: false
+            explanation: "Nitrogenase's substrate is atmospheric N₂ gas (an inorganic source), not an organic nitrogen source — that's the entire point of nitrogen fixation, converting inorganic N₂ into a biologically usable form."
+          - letter: "D"
+            text: "Nitrogen fixation requires molecular oxygen."
+            answer: false
+            explanation: "Nitrogenase is actually highly oxygen-sensitive and gets irreversibly inactivated by O₂ — diazotrophs typically need to protect the enzyme from oxygen (e.g. via heterocysts or leghemoglobin), not supply it with oxygen to function."
+
+  - id: theoretical-2
+    name: "Theoretical 2"
+    durationMinutes: 180
+    papers:
+      - category: "Theoretical 2"
+        link: "/papers/ibo/2022/theoretical-2-exam.pdf"
+        linkLabel: "Exam + Official Answer Key"
+        solutionLink: "/papers/ibo/2022/theoretical-2-solutions.pdf"
+        solutionLabel: "Community Solutions (unofficial)"
+    problems:
+      - id: q1
+        number: "Q51"
+        name: "Cancer Cell Metabolism — Aerobic Glycolysis and the Warburg Effect"
+        link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=2"
+        subjects:
+          - name: "Bioenergetics & Central Metabolism Overview"
+            link: "/resources/1-cell-molecular/bioenergetics-central-metabolism/"
+        statements:
+          - letter: "A"
+            text: "When the normal cell turns cancerous, it switches its glucose metabolism from oxidative phosphorylation to aerobic glycolysis."
+            answer: true
+            explanation: "Quiescent normal cells run pyruvate through PDC into the TCA cycle for ~36 ATP via oxidative phosphorylation. Cancer cells overexpress PDKs, which inactivate PDC and reroute pyruvate to lactate even with oxygen present — exactly the oxidative-phosphorylation-to-aerobic-glycolysis switch (the Warburg effect) described in the statement."
+          - letter: "B"
+            text: "Cancer cells undergo alterations in metabolic pathways that enable them to suppress glucose uptake and glycolysis. This leads to stimulation of ATP production in the TCA cycle in normal conditions."
+            answer: false
+            explanation: "Both halves are backwards: cancer cells sharply increase glucose uptake and glycolytic flux (not suppress it), while TCA-cycle ATP production actually falls because PDK-mediated PDC inactivation starves the cycle of acetyl-CoA."
+          - letter: "C"
+            text: "In rapidly growing tumors where hypoxia occurs, increased glycolysis can not support sufficient ATP production and bioenergetic homeostasis of cells."
+            answer: false
+            explanation: "Aerobic glycolysis yields far less ATP per glucose than oxidative phosphorylation, but tumor cells compensate with massively increased glucose uptake and glycolytic flux — this is precisely what lets glycolysis sustain their energy balance despite hypoxia."
+          - letter: "D"
+            text: "In cancer cells, beyond the increase of glycolysis, increased glutaminolysis and fatty acid biosynthesis, generate TCA cycle intermediates, which are often used for anabolic and bioenergetic purposes."
+            answer: true
+            explanation: "Figure 1b shows glutamine imported and converted via glutaminase to glutamate, then α-ketoglutarate, refilling the TCA cycle (anaplerosis) despite reduced pyruvate entry. Citrate exported from this cycle feeds lipid synthesis — supporting both anabolic and bioenergetic needs of the proliferating cell."
+
+      - id: q2
+        number: "Q52"
+        name: "Cryopyrin Inflammasome — Western Blot of WT and Mutant Variants"
+        link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=4"
+        subjects:
+          - name: "Immune Physiology"
+            link: "/resources/3-animal-physiology/immune-physiology/"
+        statements:
+          - letter: "A"
+            text: "Cryopyrin-dependent IL-1β production is not dependent on ASC."
+            answer: false
+            explanation: "In the 293-caspase-1 cells (no ASC), none of the cryopyrin constructs produce detectable p35 or IL-1β, while the same WT construct does produce them in 293-ASC-caspase-1 cells (which express ASC). Cryopyrin therefore needs ASC to activate caspase-1."
+          - letter: "B"
+            text: "The R260W mutant is partially active, as compared to wild type cryopyrin."
+            answer: false
+            explanation: "R260W shows no detectable p35 or IL-1β in either cell line — indistinguishable from the empty-vector control. A partially active mutant would show reduced but visible cleavage bands, which isn't observed; R260W behaves as a loss-of-function mutant here, not a partial one."
+          - letter: "C"
+            text: "The D303N mutant does not contain a truncating mutation early in the gene sequence."
+            answer: true
+            explanation: "The cryopyrin blot shows D303N expressed at a similar size and intensity to WT cryopyrin. A truncating mutation early in the sequence would produce a short or undetectable protein, which is not what's observed — so D303N is a full-length missense variant, not a truncation."
+          - letter: "D"
+            text: "IPAF-ΔLRR served as a positive control in this experiment for each cell line."
+            answer: true
+            explanation: "IPAF-ΔLRR causes procaspase-1 autocleavage independently of cryopyrin or ASC. It produces clear p35 and IL-1β bands in both cell lines regardless of ASC status, giving a maximum-signal benchmark that confirms the caspase-1 cleavage machinery works in each line."
+
+      - id: q3
+        number: "Q53"
+        name: "Telomerase — Mechanism of Telomere Extension"
+        link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=5"
+        subjects:
+          - name: "DNA Structure & Replication"
+            link: "/resources/1-cell-molecular/dna-structure-replication/"
+        statements:
+          - letter: "A"
+            text: "The protein component of telomerase is sufficient to elongate telomeres."
+            answer: false
+            explanation: "Telomerase is a ribonucleoprotein — its reverse-transcriptase protein subunit needs the enzyme's own RNA component (containing the CAAUCC template) to know what sequence to add. Protein alone has no template to copy from."
+          - letter: "B"
+            text: "The mother strand of DNA is sequentially elongated on the 3' end, using the telomerase RNA as a template."
+            answer: true
+            explanation: "Figures 1b–d show the parental (mother) strand's 3' overhang being extended by telomerase's reverse-transcriptase activity, using the enzyme's internal CAAUCC RNA as template, then translocating to repeat the process."
+          - letter: "C"
+            text: "Loss-of-function mutations in the telomerase protein are likely to cause diseases such as progeria or bone-marrow failure."
+            answer: true
+            explanation: "Without functional telomerase, telomeres shorten uncorrected with each division, driving premature cellular senescence in high-turnover tissues — consistent with telomerase-deficiency syndromes that present with bone-marrow failure and premature-aging features."
+          - letter: "D"
+            text: "Telomere length has a threshold value in cells and in HeLa cells telomerase is repressed to maintain this threshold value."
+            answer: false
+            explanation: "HeLa is an immortalized cancer cell line specifically because it keeps telomerase active (not repressed), continually rebuilding its telomeres so the cells can divide indefinitely without triggering senescence."
+
+      - id: q4
+        number: "Q54"
+        name: "NAD(P)H Fluorescence During the Aerobic–Anaerobic Transition in Yeast"
+        link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=7"
+        subjects:
+          - name: "Bioenergetics & Central Metabolism Overview"
+            link: "/resources/1-cell-molecular/bioenergetics-central-metabolism/"
+        statements:
+          - letter: "A"
+            text: "The reduced phosphorylated (NADPH) and nonphosphorylated (NADH) pyridine nucleotides have essentially equivalent fluorescence properties while their oxidized forms are non-fluorescent."
+            answer: true
+            explanation: "The fluorophore in both molecules is the reduced nicotinamide ring; the 2'-phosphate that distinguishes NADPH from NADH sits away from that ring, so their excitation/emission properties are essentially identical. The oxidized forms (NAD⁺/NADP⁺) lack the electron configuration needed to fluoresce."
+          - letter: "B"
+            text: "Under aerobic conditions, the oxidized nucleotides in cells are reduced, e.g., in the respiratory chain, which leads to an equilibrium between the formation and depletion of NAD(P)H."
+            answer: false
+            explanation: "This has the respiratory chain's role backwards: the chain oxidizes NADH to NAD⁺ (donating electrons to O₂), it doesn't reduce NAD⁺. Reduction of NAD(P)⁺ happens upstream, in glycolysis and the TCA cycle, not in the respiratory chain itself."
+          - letter: "C"
+            text: "After the sudden alteration from aerobic to anaerobic conditions (AA transition), the microbes are not able to re-oxidize all the reduced NAD(P)H, which can be tracked as an intracellular step-like increase of NAD(P)H fluorescence intensity."
+            answer: true
+            explanation: "Switching air sparging to nitrogen sparging removes O₂, the respiratory chain's final electron acceptor, so it can no longer re-oxidize NADH. NAD(P)H accumulates, producing exactly the step-like jump from FI_AE to FI_AN seen in the figure."
+          - letter: "D"
+            text: "Measurements of NAD(P)H fluorescence intensity during AA transition can indicate the increasing metabolic activity of microbes under stress conditions."
+            answer: true
+            explanation: "The stem defines the relative fluorescence increase (ΔFI) during the AA transition as exactly this — a measure of yeast metabolic activity — since a larger jump reflects more active dehydrogenases generating NAD(P)H before the anaerobic block on its re-oxidation."
+
+      - id: q5
+        number: "Q55"
+        name: "X-Irradiation of Yeast — NAD(P)H Fluorescence and Metabolic Recovery"
+        link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=8"
+        subjects:
+          - name: "Bioenergetics & Central Metabolism Overview"
+            link: "/resources/1-cell-molecular/bioenergetics-central-metabolism/"
+        statements:
+          - letter: "A"
+            text: "The metabolic activity of yeast cells was disrupted under the influence of X-radiation, i.e. the metabolism of yeast cells stopped, and they all died."
+            answer: false
+            explanation: "X-irradiated cells still show a real, non-zero fluorescence signal at both the aerobic baseline and (weakly) after the switch to anaerobic conditions — dead cells with no residual metabolism would show no signal at all. Metabolism is heavily suppressed, not completely halted, and the cells are not all dead."
+          - letter: "B"
+            text: "Metabolic processes in yeast changed under the influence of X-radiation, and, as a result, the fluorescent properties of intracellular NADP(H) were altered due to the structural damage of NADPH."
+            answer: true
+            explanation: "The X-irradiated curve isn't just lower — it loses the characteristic step-like anaerobic jump entirely, a qualitative change in behavior rather than a simple scaling-down, consistent with radiation altering the cell's NADP(H) pool rather than only reducing cell number."
+          - letter: "C"
+            text: "During the post-irradiation incubation period, due to the repair processes in yeast cells, their metabolism was recovered, and they began to function like native yeasts."
+            answer: true
+            explanation: "Unlike the flat, unresponsive X-irradiated curve, the recovered cells regain a clear step-like rise upon the AA transition — the qualitative hallmark of a functioning respiratory response returns, even though the plateau doesn't fully reach non-irradiated levels."
+          - letter: "D"
+            text: "The weak fluorescence intensity of intracellular NADPH of X-irradiated yeasts is associated with a decrease in the amount of NADPH due to a severe decrease in metabolism."
+            answer: true
+            explanation: "Radiation-induced DNA damage and downstream mitochondrial/metabolic dysfunction reduce the cell's capacity to generate NAD(P)H via glycolysis and the TCA cycle in the first place, so less fluorescent NADPH accumulates even before considering any AA transition."
+
+      - id: q6
+        number: "Q56"
+        name: "Lysosomal Exocytosis in Cancer Cells"
+        link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=10"
+        subjects:
+          - name: "Endomembrane System & Protein Trafficking"
+            link: "/resources/1-cell-molecular/endomembrane-system-protein-trafficking/"
+        statements:
+          - letter: "A"
+            text: "Exosomes, which contain signaling molecules, leave the cell by means of lysosomal exocytosis and promote the conversion of macrophages and fibroblasts into cancer-associated fibroblasts (CAF) and tumor-associated macrophages (TAM)."
+            answer: true
+            explanation: "The figure shows MVBs fusing into the lysosome, which then fuses with the plasma membrane (Ca²⁺-triggered lysosomal exocytosis) to release exosomes carrying growth factors, transcription factors and cytokines into the ECM, where neighbouring macrophages and fibroblasts take them up and convert into TAM and CAF."
+          - letter: "B"
+            text: "Weakly alkaline chemotherapeutic drugs tend to accumulate in lysosomes"
+            answer: true
+            explanation: "Lysosomes are acidic (pH ~4.5–5). A weakly basic drug becomes protonated once inside and can no longer cross the membrane back out — this ion-trapping (lysosomotropism) causes it to accumulate there, matching the 'cancer lysosomotrophic drug' shown concentrated inside the lysosome in the figure."
+          - letter: "C"
+            text: "Lysosomal exocytosis enables the release of exosomes, which distribute signaling molecules to surround cells."
+            answer: true
+            explanation: "The figure's legend explicitly labels the released vesicles as exosomes carrying growth factors, transcription factors and cytokines — signaling cargo that reaches and acts on neighbouring cells after lysosomal exocytosis releases it into the ECM."
+          - letter: "D"
+            text: "One mechanism for cancer cells to become resistant against chemotherapeutics is the efflux of chemotherapeutic drugs, which could occur through lysosomal exocytosis"
+            answer: true
+            explanation: "Once a lysosomotropic drug is sequestered inside the lysosome (per statement B), lysosomal exocytosis expels that lysosome's contents — including the trapped drug — out of the cell, lowering the intracellular drug concentration and conferring resistance."
+
+      - id: q7
+        number: "Q57"
+        name: "PIP2/PIP3 Signaling in T Cells — PTEN and Antigen Dose"
+        link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=12"
+        subjects:
+          - name: "Immune Physiology"
+            link: "/resources/3-animal-physiology/immune-physiology/"
+          - name: "Cell Signaling & Communication"
+            link: "/resources/1-cell-molecular/cell-signaling-communication/"
+        statements:
+          - letter: "A"
+            text: "PIP2 concentration quickly returns to initial levels even when the antigen is still present; thus, it cannot mediate long-term changes in cell fate"
+            answer: true
+            explanation: "Every PIP2 trace in the figure peaks by ~10 minutes and has collapsed back near baseline by 30 minutes even though the antigen stimulus is still present, consistent with PIP2 acting only as a short-lived trigger rather than a sustained signal."
+          - letter: "B"
+            text: "Presence of PTEN activity reliably increases the concentration ratio of PIP2 to PIP3"
+            answer: false
+            explanation: "PTEN converts PIP3 back to PIP2, so intact PTEN does shift the balance toward PIP2 in general — but the statement's claim that this holds 'reliably' overstates it, since the size of the effect clearly differs between the low- and high-dose conditions in the figure rather than being a fixed, dose-independent shift."
+          - letter: "C"
+            text: "Concentration ratio of PIP2 to PIP3 contains information on the strength of the antigen."
+            answer: true
+            explanation: "Comparing low- and high-dose traces, the relative balance between PIP2 and PIP3 differs by dose — high-dose stimulation drives proportionally more PIP3 production — so the PIP2:PIP3 ratio does encode information about how strongly the antigen stimulated the cell."
+          - letter: "D"
+            text: "Since antigen binding mediates production of PIP2, more antigen binding will result in more PIP2 under intact PTEN"
+            answer: false
+            explanation: "With PTEN intact, higher antigen dose also drives stronger PI3K activity converting PIP2 onward into PIP3, so the net PIP2 seen doesn't simply scale up with antigen dose — more antigen doesn't reliably mean more PIP2 once that faster consumption is accounted for."
+
+      - id: q8
+        number: "Q58"
+        name: "TAK1 Kinase and Takinib — Competitive vs Non-Competitive Inhibition"
+        link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=13"
+        subjects:
+          - name: "Enzyme Kinetics & Regulation"
+            link: "/resources/1-cell-molecular/enzyme-kinetics-regulation/"
+        statements:
+          - letter: "A"
+            text: "If TAK1 is pre-incubated with 5 μM ATP for 3 hours, then Takinib, added later, acts as a competitive inhibitor."
+            answer: true
+            explanation: "In Experiment B (pre-incubated with ATP), the curves for all Takinib concentrations converge toward the same Vmax at saturating ATP, only differing in how quickly they approach it — the classic same-Vmax, shifted-apparent-Km signature of competitive inhibition."
+          - letter: "B"
+            text: "In both experiments, Takinib significantly affects TAK1's Michaelis constant with respect to ATP."
+            answer: false
+            explanation: "In Experiment A, Takinib lowers Vmax while the curves rise at a similar rate (Km largely unchanged) — a non-competitive pattern, not a Km effect. Only in Experiment B does Takinib behave competitively, so it does not significantly affect Km in both experiments."
+          - letter: "C"
+            text: "Experiments A and B indicate that TAK1 has another interaction site, in addition to the enzymatic active center."
+            answer: true
+            explanation: "Takinib's mode of action changes depending on whether ATP has pre-occupied TAK1: non-competitive (lowered Vmax) without pre-incubation, competitive (shifted Km, same Vmax) with it. That switch implies Takinib can engage a site distinct from the catalytic center, one whose availability depends on prior ATP binding."
+          - letter: "D"
+            text: "If TAK1 was not pre-incubated, then the presence of Takinib could be compensated by an excess of ATP."
+            answer: false
+            explanation: "In Experiment A, Takinib caps the reaction's Vmax at a lower plateau regardless of how much ATP is added — the defining feature of non-competitive inhibition, where excess substrate cannot outcompete the inhibitor's effect."
+
+      - id: q9
+        number: "Q59"
+        name: "Mitochondrial Innate Immunity — Yme1L, SLC25A33 and mtDNA Release"
+        link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=14"
+        subjects:
+          - name: "Mitochondria & Chloroplasts: Structure & Endosymbiotic Origin"
+            link: "/resources/1-cell-molecular/mitochondria-chloroplasts-structure-origin/"
+          - name: "Immune Physiology"
+            link: "/resources/3-animal-physiology/immune-physiology/"
+        statements:
+          - letter: "A"
+            text: "The knockout of Yme1L in cells supports pyrimidine metabolism by maintaining de novo synthesis of nucleotides and proteolysis of SLC25A33."
+            answer: false
+            explanation: "The figure shows the opposite: losing Yme1L lets SLC25A33 accumulate (Yme1L normally degrades it) and impairs de novo pyrimidine synthesis. Both effects disrupt pyrimidine metabolism rather than supporting it."
+          - letter: "B"
+            text: "The information presented in this figure indicates that the accumulation of SLC25A33 can cause an immune response."
+            answer: true
+            explanation: "SLC25A33 accumulation increases mitochondrial pyrimidine uptake, contributing to imbalanced nucleotide pools that trigger mtDNA release; released mtDNA is sensed by cGAS, activating STING and downstream innate immune signalling — a full causal chain traced in the figure."
+          - letter: "C"
+            text: "TREX1-mediated lysis of DNA can restore the imbalance of nucleotides in the cell."
+            answer: true
+            explanation: "The figure shows TREX1 degrading released mtDNA fragments, with an explicit arrow from that degradation to 'replenishment of nucleotide pools' — feeding back to reduce the nucleotide imbalance that triggered mtDNA release in the first place."
+          - letter: "D"
+            text: "The inhibition of the mitochondrial protease Yme1L downregulates the expression of genes needed for interferon production."
+            answer: false
+            explanation: "Losing Yme1L drives the pathway toward MORE mtDNA release and cGAS-STING activation, which upregulates interferon-stimulated gene expression, not downregulates it — the opposite of what the statement claims."
+
+      - id: q10
+        number: "Q60"
+        name: "Alzheimer's Disease — APP Processing by α-, β- and γ-Secretases"
+        link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=16"
+        subjects:
+          - name: "Protein Structure, Folding & Function"
+            link: "/resources/1-cell-molecular/protein-structure-folding-function/"
+        statements:
+          - letter: "A"
+            text: "α-secretase cleaves the mature APP in a certain location and, thus, prevents the formation of β-amyloid."
+            answer: true
+            explanation: "α-secretase cuts within the Aβ sequence itself, physically severing it before it can ever form as an intact peptide. The resulting C-terminal fragment, lacking part of the Aβ sequence, can only yield the non-amyloidogenic p3 fragment after γ-cleavage — never full Aβ."
+          - letter: "B"
+            text: "β- and γ-secretases take part in the formation of the β-amyloid peptide."
+            answer: true
+            explanation: "β-secretase cleaves at the N-terminal boundary of the Aβ domain, leaving a membrane-bound fragment that still contains the complete Aβ sequence; γ-secretase then cleaves within the membrane at the C-terminal boundary, releasing the intact Aβ peptide. Both cleavages are required."
+          - letter: "C"
+            text: "Two transmembrane protein fragments are formed due to α-secretase activity: the N-terminal fragment and the C-terminal fragment."
+            answer: false
+            explanation: "α-cleavage produces one soluble, secreted N-terminal fragment (sAPPα, released extracellularly — not membrane-bound) and one membrane-anchored C-terminal fragment. Only the C-terminal piece is actually transmembrane."
+          - letter: "D"
+            text: "In the C-terminal transmembrane fragment, formed due to α-secretase activity, the α-helical structure dominates."
+            answer: false
+            explanation: "This reproduces the official key's call. The C-terminal fragment retains APP's transmembrane span, which would be expected to be largely α-helical like most TM domains — but the key marks this false, likely reflecting the β-sheet-forming propensity of the Aβ-derived portion once it is processed, which the exam appears to weight as the dominant structural feature."
+
+      - id: q11
+        number: "Q61"
+        name: "RNA Virus Replication Cycles — Genome Classification"
+        link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=17"
+        subjects:
+          - name: "Nucleotide & Nucleic Acid Chemistry"
+            link: "/resources/1-cell-molecular/nucleotide-nucleic-acid-chemistry/"
+        statements:
+          - letter: "A"
+            text: "The genome of (+)RNA viruses encodes many proteins, including the RNA-dependent RNA-polymerase"
+            answer: true
+            explanation: "A (+)RNA genome can be read directly by host ribosomes as mRNA, so it must itself encode every protein needed for replication, including the RNA-dependent RNA polymerase used to copy the genome."
+          - letter: "B"
+            text: "In all RNA-containing viruses, the RNA-dependent RNA-polymerase enters the target cell with RNA."
+            answer: false
+            explanation: "(+)RNA viruses don't need to package RdRp in the virion at all — their genome is translated directly upon entry to produce RdRp. Only viruses whose genome can't be directly translated (negative-strand and double-strand RNA viruses) must carry pre-packaged RdRp."
+          - letter: "C"
+            text: "During the replication process of double-strand (+-) RNA viruses, the single-stranded (+) RNA molecules synthesized in the target cells ensure viral protein synthesis by the host cell's ribosomes and serve as a template for the synthesis of (-) RNA chains with the participation of viral RNA polymerase."
+            answer: true
+            explanation: "The packaged RdRp of a dsRNA virus transcribes (+) strands, which do double duty: host ribosomes translate them into viral proteins, and the same (+) strands also serve as templates for RdRp to synthesize new (-) strands, rebuilding the double-stranded genome."
+          - letter: "D"
+            text: "The genome of retroviruses encodes the reverse transcriptase enzyme, which is included in the viral particle and ensures the synthesis of DNA from viral RNA upon infection."
+            answer: true
+            explanation: "Retroviruses encode reverse transcriptase in their pol gene and package the enzyme into the virion itself, so it's ready immediately after entry to convert the (+)RNA genome into dsDNA for integration into the host genome."
+
+      - id: q12
+        number: "Q62"
+        name: "Pine Needle Cross-Section — Resin Duct and Mesophyll"
+        link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=19"
+        subjects:
+          - name: "Leaf Anatomy"
+            link: "/resources/6-plant-anatomy/leaf-anatomy/"
+        statements:
+          - letter: "A"
+            text: "The cells labeled with b capture and assimilate CO2 into sugars."
+            answer: true
+            explanation: "Structure b is the mesophyll tissue filling most of the section, packed with the small dotted inclusions typical of chloroplasts — the site where CO₂ is fixed into sugar via the Calvin cycle."
+          - letter: "B"
+            text: "The space labeled with c regulates water loss."
+            answer: false
+            explanation: "Space c is an air cavity near the epidermis, not a stomatal pore — water-loss regulation is the job of guard cells flanking a stoma, which aren't what's labeled here."
+          - letter: "C"
+            text: "The structure labeled with a carries water and nutrition to different parts of the plants."
+            answer: false
+            explanation: "Structure a is a ring of epithelial-type cells around a central empty lumen — the profile of a resin duct, not a vascular bundle. It doesn't function as a water/nutrient transport conduit at all."
+          - letter: "D"
+            text: "The structure labeled with a produces and stores resin."
+            answer: true
+            explanation: "The ring of secretory cells surrounding a central canal in structure a is characteristic of a conifer resin duct: the epithelial cells lining the canal produce resin, which accumulates in the central space."
+
+      - id: q13
+        number: "Q63"
+        name: "Land Plant Phylogeny — Evaluating Four Cladograms"
+        link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=20"
+        subjects:
+          - name: "Plant Body Plans Across Major Lineages"
+            link: "/resources/6-plant-anatomy/plant-body-plans-major-lineages/"
+        statements:
+          - letter: "A"
+            text: "Cladogram I."
+            answer: true
+            explanation: "Cladogram I groups moss and hornwort as sisters with green alga as the outgroup — a reasonable grouping of two bryophyte lineages to the exclusion of a non-land-plant alga."
+          - letter: "B"
+            text: "Cladogram II."
+            answer: false
+            explanation: "Cladogram II pairs fern with cycad as sisters, leaving pine as the outgroup — but cycad and pine are both seed plants (gymnosperms) and should form a clade together, to the exclusion of fern, a seedless vascular plant. The tree groups the wrong two taxa."
+          - letter: "C"
+            text: "Cladogram III."
+            answer: false
+            explanation: "Cladogram III pairs fern with liverwort as sisters, leaving club-moss as the outgroup — but liverwort is a non-vascular bryophyte while fern and club-moss are both vascular plants, so fern should group with club-moss instead, not with liverwort."
+          - letter: "D"
+            text: "Cladogram IV."
+            answer: true
+            explanation: "Cladogram IV groups moss and horsetail as sisters with green alga as the outgroup — correctly keeping the land plants (moss, horsetail) together as a clade separate from the non-land-plant green alga."
+
+      - id: q14
+        number: "Q64"
+        name: "The C4 Rice Project — Engineering C4 Photosynthesis into a C3 Crop"
+        link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=21"
+        subjects:
+          - name: "Calvin Cycle, Photorespiration & C4/CAM Biochemistry"
+            link: "/resources/5-plant-physiology/calvin-cycle-photorespiration-c4-cam/"
+        statements:
+          - letter: "A"
+            text: "The modified C4 rice plants will have both altered biochemical and developmental pathways."
+            answer: true
+            explanation: "Converting rice to C4 needs new biochemistry (PEP carboxylase, decarboxylases, coordinated cell-specific expression) and new development (Kranz anatomy — enlarged, chloroplast-differentiated bundle sheath cells), so both dimensions must change."
+          - letter: "B"
+            text: "The enzyme Rubisco will be non-functional in modified C4 rice plants."
+            answer: false
+            explanation: "C4 photosynthesis doesn't eliminate Rubisco — it concentrates CO₂ around it in the bundle sheath cells so it works more efficiently with less photorespiration. Rubisco remains essential and fully functional."
+          - letter: "C"
+            text: "C4 rice plants must have smaller stomatal pore size to decrease rates of transpiration and increase photosynthetic water use efficiency."
+            answer: false
+            explanation: "C4 plants gain water-use efficiency from their CO₂-concentrating biochemistry allowing lower stomatal conductance for the same carbon gain, not from anatomically smaller stomatal pores — the C4 Rice Project targets the concentrating mechanism, not stomatal pore size."
+          - letter: "D"
+            text: "Genes for decarboxylase enzymes will need to be introduced into the C4 rice plants."
+            answer: true
+            explanation: "The C4 cycle depends on a bundle-sheath-localized decarboxylase (e.g. NADP-malic enzyme) to release CO₂ from the transported C4 acid near Rubisco. Rice lacks this bundle-sheath decarboxylase activity, so the corresponding genes need to be introduced and correctly targeted."
+
+      - id: q15
+        number: "Q65"
+        name: "Arabidopsis Sun vs Shade Leaves — Cross-Section Comparison"
+        link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=22"
+        subjects:
+          - name: "Leaf Anatomy"
+            link: "/resources/6-plant-anatomy/leaf-anatomy/"
+        statements:
+          - letter: "A"
+            text: "The cells labeled with 1 capture and assimilate CO2 into sugars."
+            answer: true
+            explanation: "Label 1 marks the elongated palisade mesophyll cells, densely packed with chloroplasts — the leaf's primary site for fixing CO₂ into sugar via the Calvin cycle."
+          - letter: "B"
+            text: "The cells labeled with 2 demonstrate Kranz anatomy."
+            answer: false
+            explanation: "Kranz anatomy is the bundle-sheath-centered wreath arrangement specific to C4 plants. Arabidopsis is a C3 plant, so no cells in either cross-section — including those labeled 2 — display Kranz anatomy."
+          - letter: "C"
+            text: "The leaf on the left was grown under direct sunlight, while the leaf on the right was in the shade."
+            answer: true
+            explanation: "The left cross-section is thicker with well-developed, elongated palisade layers — typical of a sun leaf maximizing carbon-fixation capacity. The right section is thinner with looser, less organized mesophyll — typical of a shade leaf maximizing light capture per unit tissue."
+          - letter: "D"
+            text: "The cells labeled with 3 have a lower Rubisco/chlorophyll ratio than cells labeled with 1."
+            answer: true
+            explanation: "Cells at label 1 are sun-leaf palisade cells, optimized for carbon fixation under high light and so invest more in Rubisco relative to chlorophyll. Cells at label 3 are spongy mesophyll, optimized for capturing limited light rather than fixing carbon at maximum rate, so they invest relatively more in chlorophyll and less in Rubisco — a lower Rubisco:chlorophyll ratio."
