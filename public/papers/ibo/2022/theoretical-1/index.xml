@@ -1,0 +1,1301 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BiOGuide for Biology Olympiads – Theoretical 1</title>
+    <link>http://localhost:1313/papers/ibo/2022/theoretical-1/</link>
+    <description>Recent content in Theoretical 1 on BiOGuide for Biology Olympiads</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="http://localhost:1313/papers/ibo/2022/theoretical-1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Q1 — Alfalfa Mosaic Virus — m6A Demethylation &amp; Viral Replication</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-1/q1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-1/q1/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 1&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/protein-structure-folding-function/&#34;&gt;Protein Structure, Folding &amp; Function&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/biomolecular-analytical-techniques/&#34;&gt;Biomolecular Analytical Techniques&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Alfalfa Mosaic Virus (AMV) consists of a capsid and 4 RNA fragments: R1, R2, R3, R4. Capsid protein (CP) is known to play an important role at different stages of the AMV viral cycle. In particular, CP is involved in the initial translation of replication factors encoded by the viral RNA. CP interacts with the atALKBH9B protein of the host cell, which catalyzes the following reaction in the cell (Figure 1).&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q1-figure-1.png&#34; alt=&#34;Figure 1. Reaction catalyzed by atALKBH9B — demethylation of N6-methyladenosine (m6A) back to adenine on DNA/RNA&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 1. Reaction catalyzed by atALKBH9B.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Methylation of the viral RNA in the host cell inhibits viral replication. CP is thought to neutralize this cellular antiviral mechanism by binding to and recruiting atALKBH9B. To test this hypothesis, researchers have grown &lt;em&gt;Arabidopsis thaliana&lt;/em&gt; individuals with mutations in the atALKBH9B gene (&lt;em&gt;atalkbh9b&lt;/em&gt;). Then the mutants (&lt;em&gt;atalkbh9b&lt;/em&gt;; 4, 5, 6 in Figure 2) and wild types (WT; 1, 2, 3 in Figure 2) have been infected with AMV. Separation of viral RNAs by gel electrophoresis was performed in the two studied plant groups 3 and 6 days post infection (dpi). The results of the experiment are presented in Figure 2.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q1-figure-2.png&#34; alt=&#34;Figure 2. Separation of viral RNAs by gel electrophoresis in WT vs atalkbh9b plants, 3 and 6 days post infection. rRNA is the ribosomal RNA of the host cell, used as a loading control.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 2. Separation of viral RNAs by gel electrophoresis in the two studied plant groups, 3 and 6 days after infection (dpi). rRNA is the ribosomal RNA of the host cell.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Based on the results of the experiment, indicate whether the following statements are true or false:&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo2022-t1-q1&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;In gel electrophoresis, larger nucleic acids migrate more slowly. R1 runs closest to the wells, so it is the largest fragment.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; R1 contains the highest number of nucleotides among the examined viral RNAs.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;atalkbh9b mutants show far weaker viral RNA bands than WT at both time points — consistent with atALKBH9B being needed for AMV to overcome the host&amp;#39;s methylation-based antiviral defence.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; The results of gel electrophoresis do NOT contradict the proposed hypothesis.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;The gel only shows a downstream replication phenotype. Demonstrating direct demethylation would need a molecular assay (e.g. m6A mapping), not just an RNA abundance readout.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; The results indicate that atALKBH9B directly demethylates viral RNAs.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;atALKBH9B removes methyl groups. Suppressing it would leave viral RNA more methylated, not less — the opposite of what the statement claims.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; A drug suppressing the atALKBH9B activity may prevent viral RNA methylation in AMV-infected plant cells.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 1&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=2&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q10 — 3D Bioprinting — Cell Viability, Bioluminescence, and Confocal Imaging</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-1/q10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-1/q10/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 1&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/&#34;&gt;Recombinant DNA &amp; Biotechnology Techniques&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/biomolecular-analytical-techniques/&#34;&gt;Biomolecular Analytical Techniques&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;To create in vitro analogues of live tissue, 3D bioprinters use what is called bioink. Bioink formulations combine live cells with different kinds of biocompatible materials that can be polymerized after extrusion from a printing needle, letting cells proliferate and form 3D structures.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q10-figure-1.png&#34; alt=&#34;Figure 1. A 3D bioprinter extruding bioink from a printing needle.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 1. The 3D printer of living tissues — extruder cartridge, printing needle, and bioink being deposited.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The viability of cells post-printing can be evaluated by daily monitoring of bioluminescence, which essentially measures intracellular ATP. Due to shear stress associated with the extrusion process, cell viability and proliferation within printed constructs can be adversely affected by needle size and extrusion pressure. Bioluminescence data and confocal images were acquired from constructs printed with bioink containing either fibroblasts or myocytes; after several days of culturing, both construct types were stained with the same markers.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q10-figure-2.png&#34; alt=&#34;Figure 2. Confocal images of fibroblast (left) and myocyte (right) laden constructs, showing red and blue staining.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 2. Confocal images from tissue constructs printed with bioink containing fibroblasts (left) or myocytes (right) — red cytoskeletal staining, blue nuclear staining.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q10-figure-3.png&#34; alt=&#34;Figure 3. Daily change in bioluminescence values vs. extrusion pressure, for fibroblast- and myocyte-laden constructs.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 3. Daily change in bioluminescence values vs. pressure (psi). Both fibroblast- and myocyte-laden constructs decline as pressure increases, with myocyte-laden constructs declining faster, dropping to negative values at higher pressures.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Using the information and figures, determine whether the following statements are true or false:&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo2022-t1-q10&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The graph shows myocyte-laden constructs losing bioluminescence (viability) faster than fibroblast-laden ones at the same pressures — in a mixed construct, that means myocytes are expected to survive and proliferate worse than fibroblasts, shrinking their relative share over time.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; After one week of culture, the relative percentage of myocytes in tissue constructs printed using bioink with 50–50% myocyte-fibroblast content will be decreased.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Bioluminescence tracks intracellular ATP, i.e. viability/metabolic activity — a negative *change* in it most directly reflects cells dying or losing viability, which is a distinct process from reduced proliferation (cells simply dividing more slowly).&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; The most likely meaning of the negative values on the y-scale is decreased cell proliferation.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;The axis is the *daily change* in bioluminescence, not its absolute level — a value of zero means no change from the day before (stable viability), not that viability itself is low.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; The most likely meaning of the zero values on the y-scale is decreased cell viability.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The images show a red filamentous/cytoskeletal network (matching an actin stain) and blue nuclear staining (matching a DNA stain like DAPI) — exactly the standard actin-red/DNA-blue immunofluorescence convention.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; A staining for actin in red and for DNA in blue would lead to the confocal images presented.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 1&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=15&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q2 — Enzyme Kinetics — Time to Completion vs Temperature</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-1/q2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-1/q2/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 1&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/enzyme-kinetics-regulation/&#34;&gt;Enzyme Kinetics &amp; Regulation&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Solutions of a specific concentration of enzyme and substrate were mixed to record the rate of the enzymatic reaction. The time required to complete the reaction was measured at various temperatures. The enzyme is completely denatured at 50°C.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q2-figure-1.png&#34; alt=&#34;Four candidate graphs of time-to-completion vs. temperature.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Four candidate graphs of time-taken-for-completion vs. temperature.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;For each graph, determine if it represents the results of the experiment correctly (true) or not (false):&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo2022-t1-q2&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;This is the expected shape: the reaction speeds up (less time) as temperature rises toward the optimum, then slows and eventually can&amp;#39;t complete at all as the enzyme denatures approaching 50°C.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; Graph 1 (U-shaped: high time at low temperature, falling to a minimum around 25–30°C, then rising sharply toward 50°C).&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;The y-axis is time, so a peak at the &amp;#34;optimal&amp;#34; temperature would mean the reaction is slowest there — backwards from what actually happens at an enzyme&amp;#39;s optimum.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Graph 2 (bell-shaped: low time at the extremes, peaking around 30–40°C).&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;This implies the reaction gets slower and slower from the very lowest temperature onward, with no speed-up phase at all on the way to the optimum — contradicts typical enzyme behaviour below the optimum.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Graph 3 (a straight line, time increasing steadily across the whole range).&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;This implies the reaction keeps getting faster right up to 50°C. But the enzyme is fully denatured at exactly 50°C, so the reaction shouldn&amp;#39;t be able to complete at all there — time should shoot up, not reach its lowest value.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Graph 4 (a straight line, time decreasing steadily all the way to 50°C).&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 1&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=4&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q3 — Amylase Activity — Starch Hydrolysis at 50–70°C</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-1/q3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-1/q3/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 1&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/enzyme-kinetics-regulation/&#34;&gt;Enzyme Kinetics &amp; Regulation&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/carbohydrate-chemistry-biology/&#34;&gt;Carbohydrate Chemistry &amp; Biology&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;The diagram shows experimental data comparing the hydrolysis of starch by amylase at 3 different temperatures.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q3-figure-1.png&#34; alt=&#34;Glucose concentration vs. time for amylase at 50°C, 60°C, and 70°C.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Glucose concentration (arbitrary units) vs. time, for amylase-catalysed starch hydrolysis at 50°C, 60°C, and 70°C. The 50°C curve reaches the highest final glucose level and is still rising at 60 minutes; the 60°C curve plateaus earlier at a lower level; the 70°C curve rises fastest at first but plateaus soonest, at the lowest final level.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;What conclusion can be drawn from these data? Determine whether the following statements are true or false:&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo2022-t1-q3&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;The 70°C curve has the steepest initial slope, meaning the initial rate is actually highest at 70°C, not 50°C — 50°C only wins on total glucose produced by 60 minutes, because the enzyme stays active longer there.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; 50°C is the optimal temperature for the initial activity of amylase.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;The curve plateauing just means glucose production has stopped (denaturation or substrate exhaustion) — without knowing the total starch present at the start, the plateau alone can&amp;#39;t confirm that 100% of it was hydrolysed.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; At 60°C, all starch is hydrolyzed after 30 minutes.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The 70°C curve plateaus earliest and at the lowest final glucose level of the three — consistent with the enzyme losing activity (denaturing) quickly, well before all the available starch has been broken down.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; At 70°C amylase is denatured before hydrolysis is complete.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;It&amp;#39;s the reverse: the 70°C curve has the steeper initial slope of the two, so its initial rate is higher, not lower, than 60°C&amp;#39;s.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; The initial reaction rate of starch hydrolysis at 60°C is higher than at 70°C.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 1&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=5&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q4 — Enzyme Inhibition — Substrate Concentration vs Rate Curves</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-1/q4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-1/q4/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 1&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/enzyme-kinetics-regulation/&#34;&gt;Enzyme Kinetics &amp; Regulation&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;The following curves show the effect of substrate concentration on the rate of an enzymatic reaction: Section 1/2 trace the reaction with no inhibitor present (a linear rise, section 1, that plateaus at section 2); Section 3 traces the reaction in the presence of inhibitor X; Section 4 traces the reaction in the presence of inhibitor Y.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q4-figure-1.png&#34; alt=&#34;Rate of reaction vs. substrate concentration, with sections 1–4 marking different parts of the uninhibited and inhibited curves.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Rate of reaction vs. substrate concentration. Section 1: the linear, substrate-limited rise of the uninhibited reaction. Section 2: where the uninhibited reaction plateaus at Vmax. Section 3 (dashed): the inhibitor-X curve, which converges on the same plateau as sections 1–2 at high substrate concentration. Section 4 (dash-dot): the inhibitor-Y curve, which plateaus lower and never converges with the uninhibited curve.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Choose whether the following statements about Sections 1, 2, 3, and 4 of the enzymatic reactions are true or false:&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo2022-t1-q4&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Section 1 is the linear rise where rate increases with substrate concentration — that&amp;#39;s substrate-limited, not enzyme-limited. Enzyme-concentration limitation is what causes the *plateau*, not the rising part.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; Section 1 is limited by (or depends on) enzyme concentration.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;At the plateau (Vmax), every enzyme molecule is already saturated with substrate — adding more substrate can&amp;#39;t raise the rate further, only adding more enzyme could. That&amp;#39;s the definition of being enzyme-limited.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Section 2 is limited by enzyme concentration.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Section 3 still reaches the same plateau as the uninhibited curve once substrate concentration is high enough — the classic signature of competitive inhibition, since enough substrate can out-compete the inhibitor for the active site.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Section 3 is limited by a competitive inhibitor.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Section 4 plateaus at a *lower* rate and never catches up to the uninhibited curve, even at high substrate — unlike competitive inhibition, more substrate can&amp;#39;t overcome this inhibitor, consistent with it acting somewhere substrate concentration can&amp;#39;t rescue.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Section 4 is limited by an uncompetitive inhibitor.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 1&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=6&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q5 — Meselson–Stahl Experiment — DNA Replication Modes</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-1/q5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-1/q5/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 1&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/dna-structure-replication/&#34;&gt;DNA Structure &amp; Replication&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;To find out how DNA replicates, Matthew Meselson and Franklin Stahl performed the following classical experiment. Bacteria were grown in a medium with heavy nitrogen (¹⁵N) until all the DNA was labeled. Then they were grown in a normal nitrogen-containing culture medium (¹⁴N) for 5 generations. The percentage of heavy nitrogen remaining in the DNA was tracked across these 5 generations, under four candidate curves (A–D) representing different hypothetical replication modes.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q5-figure-1.png&#34; alt=&#34;Percentage of 15N in DNA vs. generation, for four candidate curves A–D.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Percentage of ¹⁵N in DNA vs. generation. Curve A rises from 0% toward ~83%. Curve B stays flat at 50% throughout. Curve C starts at 100% and halves each generation, reaching ~3% by generation 5. Curve D starts at 100% and drops to ~0% by generation 3.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Using the information and figure, determine whether the following statements are true or false:&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo2022-t1-q5&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;No replication mode can *increase* the heavy-DNA percentage over generations grown in ¹⁴N medium — no new ¹⁵N is being added to the system, so a rising curve doesn&amp;#39;t match any real replication mode, semiconservative included.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; Curve A corresponds to semi-conservative DNA replication.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Dispersive replication (where each new strand is a patchwork of old and new DNA) still predicts continued dilution of the heavy label generation after generation — a curve that flatlines at 50% forever, with dilution stopping after generation 1, doesn&amp;#39;t fit that pattern.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Curve B corresponds to dispersive DNA replication.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Semiconservative replication predicts the heavy-DNA fraction halving every generation (100% → 50% → 25% → 12.5% → 6.25% → 3.125%), because each new duplex keeps exactly one old (heavy) strand — Curve C&amp;#39;s smooth halving decline matches this exactly.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Curve C corresponds to semi-conservative DNA replication.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Conservative replication (where the original heavy duplex stays fully intact) predicts the heavy fraction shrinking gradually as a proportion of the growing pool of new light DNA — not vanishing to ~0% within just 2–3 generations the way Curve D does.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Curve D corresponds to conservative DNA replication.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 1&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=7&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q6 — Cell Membrane Transport — Arrows X, Y, Z</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-1/q6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-1/q6/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 1&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/plasma-membrane-structure-transport/&#34;&gt;Plasma Membrane Structure &amp; Transport&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;There are 3 arrows in the figure: X, Y, Z that show paths of movement of substances through the cell surface membrane.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q6-figure-1.png&#34; alt=&#34;Cell membrane cross-section with three labelled transport paths, X, Y, and Z.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Cell surface membrane cross-section. X passes directly between the phospholipids/membrane proteins; Y passes through a small embedded channel protein; Z passes through a large paired-loop channel protein.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Using the figure, determine whether the following statements are true or false:&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo2022-t1-q6&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Vitamin D is a small, lipophilic (fat-soluble) steroid-derived molecule, so it can dissolve directly through the phospholipid bilayer without needing a channel or carrier protein — consistent with path X.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; Vitamin D can be transported through X.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Na⁺ and K⁺ are charged and strongly hydrated, so they can&amp;#39;t cross the hydrophobic lipid bilayer directly — they need a dedicated channel or pump protein, not the direct-diffusion path X.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Sodium and potassium ions can be transported through X.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;A folded globular protein is far too large to pass through an ordinary membrane channel like Y — proteins that size cross membranes via vesicular transport (e.g. exocytosis/endocytosis), not through a channel pore.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Large native globular proteins can be transported through Y.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Z is drawn as a wide, paired-loop channel — the structure typical of an aquaporin, the dedicated water-channel protein family that allows bulk water flow across the membrane.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Water can be transported through Z.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 1&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=8&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q7 — Apoptosis — p53/Bax/Bcl-2 Pathway Under Hypoxia</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-1/q7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-1/q7/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 1&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/cell-junctions-ecm-cell-death/&#34;&gt;Cell Junctions, Extracellular Matrix &amp; Cell Death&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Hypoxia is a hallmark of solid tumors and plays a critical role in different steps of tumor progression. To develop an effective treatment against malignant tumors, it is important to understand how cancer cells that develop under hypoxic conditions avoid apoptosis. The figure shows the mechanism of apoptosis.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q7-figure-1.png&#34; alt=&#34;Pathway diagram: Hypoxia inhibits p53, p53 promotes Bax (opposed by Bcl-2), Bax triggers mitochondrial cytochrome c release, activating Apaf-1/Caspase 9, then Caspase 3/7, leading to apoptosis.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Mechanism of apoptosis. p53 protein promotes the expression of Bax and its translocation from cytosol to mitochondria, which leads to mitochondrial protein cytochrome C release to the cytoplasm, activating the caspase cascade.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Using the information and figure, determine whether the following statements are true or false:&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo2022-t1-q7&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;The diagram shows hypoxia inhibiting p53 specifically, which would reduce apoptosis through *this one* pathway — but that&amp;#39;s a single mechanism, not proof of the sweeping claim that hypoxia suppresses apoptosis generally. The question stem itself says cancer cells merely &amp;#34;avoid&amp;#34; apoptosis under hypoxia, implying it takes more than this one link to fully explain it — treat this as the official key&amp;#39;s call, not a fully resolved mechanistic story.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; Hypoxia in cancer cells suppresses apoptosis.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The diagram shows Bcl-2 directly inhibiting Bax. Since Bax is what triggers mitochondrial outer membrane permeabilization, more Bcl-2 means more Bax blocked, keeping mitochondria intact and stopping cytochrome c release — directly preventing the rest of the cascade.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Upon Bcl-2 overexpression, the integrity of the mitochondrial membranes is preserved, which in return prevents apoptosis.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Read literally against the diagram, this is the hardest one to square: p53 is shown *driving* apoptosis (via Bax), so suppressing it looks like it should hinder, not &amp;#34;ensure,&amp;#34; apoptosis through this pathway. We&amp;#39;re reproducing the official key&amp;#39;s answer as-is rather than a mechanistic explanation we&amp;#39;re confident in — worth double-checking this one against the original if it matters for your prep.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; It is necessary to suppress p53 to ensure the apoptosis of cancer cells.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Bax is the pro-apoptotic trigger in this pathway (it&amp;#39;s what causes mitochondrial cytochrome c release) — losing Bax would remove that trigger and *reduce* apoptosis, not promote it.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Deficiency of Bax protein promotes apoptosis.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 1&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=9&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q8 — Ethidium Bromide — DNA Binding and Intercalation</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-1/q8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-1/q8/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 1&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/dna-structure-replication/&#34;&gt;DNA Structure &amp; Replication&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/nucleotide-nucleic-acid-chemistry/&#34;&gt;Nucleotide &amp; Nucleic Acid Chemistry&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Ethidium bromide is a fluorescent dye which can intercalate into double-stranded DNA (Figure 1), resulting in a sharp increase in the fluorescence intensity of ethidium bromide. Ethidium bromide can bind to and intercalate in DNA in different ways (Figure 2).&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q8-figure-1.png&#34; alt=&#34;Figure 1. Ethidium bromide structure and its binding to DNA.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 1. Ethidium bromide and its binding to DNA.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q8-figure-2.png&#34; alt=&#34;Figure 2. Four modes of ethidium bromide binding to DNA, labelled A–D.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 2. Modes of binding of ethidium bromide to DNA. A — minor groove binding. B — intercalation of ethidium bromide into DNA. C — stacking on the terminal base pairs and insertion mode in DNA. D — major groove intercalation between DNA and minor groove binding.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Using Figures 1 and 2, determine whether the following statements are true or false:&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo2022-t1-q8&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Ethidium bromide&amp;#39;s fluorescence depends on how well it can intercalate — structural DNA damage (breaks, unusual conformations) changes how much and how well EtBr binds, which is exactly why EtBr fluorescence assays are used to probe DNA integrity in the lab.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The study of complexes between ethidium bromide and DNA allows for the detection of major structural DNA damage caused by different stressful situations.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Intercalation works by the flat aromatic EtBr ring wedging in between adjacent base pairs, which locally unwinds and stretches the helix — the base pairs do separate further apart than normal to accommodate it.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; When ethidium bromide is intercalated into a DNA molecule, the base pairs move away from each other to make space for the inserted molecule.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Intercalation is a non-covalent, reversible distortion of the helix — the structure absorbs the strain by locally unwinding/adjusting rather than breaking any covalent bonds, which is exactly why EtBr staining doesn&amp;#39;t damage the DNA backbone.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; In the intercalation shown in Figure 2B, the bases are displaced by overexertion while simultaneously the helix contracts along its axis. This ensures the DNA sugar-phosphate backbone does not rupture during the overexertion.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;It&amp;#39;s the other way around: the flat EtBr ring stacks *parallel* to the base pairs (so it can fit between them) and therefore roughly *perpendicular* to the helix axis, not parallel to the axis.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; The plane of the intercalated ethidium bromide molecule is approximately parallel to the axis of the DNA helix and perpendicular to the plane of the bases.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 1&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=10&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q9 — Organ-on-a-Chip — Lung-on-a-Chip &amp; Pulmonary Oedema Model</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-1/q9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-1/q9/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 1&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/cell-junctions-ecm-cell-death/&#34;&gt;Cell Junctions, Extracellular Matrix &amp; Cell Death&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/&#34;&gt;Recombinant DNA &amp; Biotechnology Techniques&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Tissue engineering is trying to develop miniature blocks of tissue from multiple cell types using an approach called &amp;lsquo;organ-on-a-chip&amp;rsquo;. This technology enables in vitro testing of patient-specific effects of different drugs or treatments. Cells collected from a patient are first turned into induced pluripotent stem cells (iPSCs), then differentiated and seeded into specially designed chambers.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q9-figure-1.png&#34; alt=&#34;Figure 1. The endothelial barrier of the alveolus, showing epithelial cells, air space, interstitium, and endothelial cells against the blood capillary.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 1. The endothelial barrier of alveoli — epithelial cells facing air (alveolus), separated from endothelial cells facing blood (capillary) by a thin interstitium.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This &amp;rsquo;lung-on-a-chip&amp;rsquo; models pulmonary oedema progression. Endothelial barrier function was quantified by measuring alveolar-capillary permeability to a fluorescently labeled inulin, a large polysaccharide molecule. Inulin was introduced into the lower chamber together with interleukin-2 (IL-2), one of the major cytokines.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q9-figure-2.png&#34; alt=&#34;Figure 2. The two-chamber organ-on-a-chip device, with epithelial and endothelial cell layers separated by a membrane, and a mechanical vacuum-strain mechanism.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 2. The chip chamber used in the &amp;lsquo;organ-on-a-chip&amp;rsquo; device: epithelial cells over endothelial cells, separated by a porous membrane, with vacuum channels applying cyclic mechanical strain.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Images next to the graph below illustrate immunostaining patterns for junctional proteins — epithelial occludin (green) and endothelial VE-cadherin (red) — in control conditions and after exposure to cyclic mechanical strain (10% at 0.2 Hz) along with IL-2 for 3 days. White arrows indicate intercellular gaps.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q9-figure-3.png&#34; alt=&#34;Figure 3. Barrier permeability over time for four conditions, plus immunostaining images for occludin and VE-cadherin under control vs IL-2 &amp;#43; strain conditions.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 3. Barrier permeability (a.u.) vs. time (hours) for four conditions: IL-2 + 10% strain (highest), IL-2 no strain, 10% strain alone, and control (both near baseline). Right: immunostaining for occludin (Epi, green) and VE-cadherin (Endo, red) — control vs. IL-2 + strain, with white arrows marking intercellular gaps.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Based on the data provided, indicate whether the following statements are true or false:&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo2022-t1-q9&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;A leakier alveolar-capillary barrier means fluid and protein cross into the alveolar air space (oedema) — that impairs gas exchange, so it would be expected to *decrease*, not increase, blood oxygen saturation.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The most likely consequence of increased barrier permeability in vivo is increased blood oxygen saturation.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Occludin marks epithelial tight junctions and VE-cadherin marks endothelial adherens junctions — they&amp;#39;re different junction proteins in different cell layers imaged separately (Epi vs. Endo panels), so there&amp;#39;s no reason to expect their staining patterns to match.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Occludin staining works as a secondary marker to show increased gaps between endothelial cells and as such must be nearly identical to the VE-cadherin staining.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;This is a lung/alveolar model — the mechanical strain applied by the chip&amp;#39;s vacuum channels represents the alveolar wall stretching and relaxing with each breath, not the pulsing of blood vessels.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Cyclic stretch was used to simulate repetitive breathing patterns and not to mimic repetitive arterial pressure pulsations.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Under strain &amp;#43; IL-2 the barrier is already substantially compromised (as the permeability graph shows) — once it&amp;#39;s this leaky, fluid movement is dominated by the barrier breakdown itself rather than by the oncotic pressure gradient albumin would normally help maintain, so adding albumin isn&amp;#39;t expected to meaningfully change the fluid volume crossing it.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Under conditions of cyclic stretch and the presence of IL-2, the addition of albumin into culture media should not affect the volume of fluid leaving the lower chamber reflecting the oedema model.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 1&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=12&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

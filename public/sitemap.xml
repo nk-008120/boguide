@@ -263,10 +263,54 @@
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/papers/tbo/2023/final-practical/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/tbo/2023/final-theory/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/tbo/2023/first-stage/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2022/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/</loc>
+  </url><url>
     <loc>http://localhost:1313/articles/lab-recommendations/</loc>
   </url><url>
     <loc>http://localhost:1313/articles/neuroscience/</loc>
   </url><url>
+    <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q1/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/tbo/2023/first-stage/q1/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q10/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q2/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/tbo/2023/first-stage/q2/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q3/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/tbo/2023/first-stage/q3/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q4/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q5/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q6/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q7/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q8/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q9/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/tbo/2023/second-stage/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/tbo/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/tbo/2023/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/</loc>
   </url>
 </urlset>

@@ -1,0 +1,92 @@
+{{- /* Self-contained True/False attempt-and-mark quiz.
+     Usage:
+       {{< tf-quiz id="q1" >}}
+       A|Statement text|true|One-sentence explanation shown after checking.
+       B|Statement text|false|One-sentence explanation shown after checking.
+       {{< /tf-quiz >}}
+     Each line: letter|statement|true-or-false|explanation. Raw (non-markdown)
+     inner content — angle-bracket shortcode, so .Inner is used as-is. */ -}}
+{{- $id := .Get "id" | default "quiz" -}}
+{{- $raw := trim .Inner "\n" -}}
+{{- $lines := split $raw "\n" -}}
+<div class="tf-quiz-wrap" data-quiz-id="{{ $id }}">
+  <div class="tf-quiz">
+    {{- range $lines }}
+      {{- $line := trim . " " -}}
+      {{- if $line -}}
+        {{- $parts := split $line "|" -}}
+        {{- $letter := index $parts 0 -}}
+        {{- $statement := index $parts 1 -}}
+        {{- $answer := index $parts 2 -}}
+        {{- $explanation := index $parts 3 -}}
+    <div class="tf-quiz-row" data-answer="{{ $answer }}" data-explanation="{{ $explanation }}">
+      <div class="tf-quiz-statement"><span class="tf-quiz-letter">{{ $letter }}.</span> {{ $statement }}</div>
+      <div class="tf-quiz-toggle" role="group" aria-label="Statement {{ $letter }}">
+        <button type="button" class="tf-btn" data-value="true">TRUE</button>
+        <button type="button" class="tf-btn" data-value="false">FALSE</button>
+      </div>
+      <div class="tf-quiz-feedback"></div>
+    </div>
+      {{- end -}}
+    {{- end }}
+  </div>
+  <div class="tf-quiz-actions">
+    <button type="button" class="tf-quiz-submit">Check Answers</button>
+    <button type="button" class="tf-quiz-reset">Try Again</button>
+    <span class="tf-quiz-score" aria-live="polite"></span>
+  </div>
+</div>
+<script>
+(function () {
+  var scripts = document.getElementsByTagName('script');
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
+  var rows = wrap.querySelectorAll('.tf-quiz-row');
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll('.tf-btn');
+    btns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        btns.forEach(function (b) { b.classList.remove('selected'); });
+        btn.classList.add('selected');
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove('correct', 'incorrect', 'unanswered');
+        row.querySelector('.tf-quiz-feedback').textContent = '';
+      });
+    });
+  });
+
+  wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add('unanswered');
+        return;
+      }
+      row.classList.remove('unanswered');
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle('correct', isCorrect);
+      row.classList.toggle('incorrect', !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? '✓ Correct — ' : '✗ Incorrect — ') + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector('.tf-quiz-score');
+    scoreEl.textContent = allAnswered
+      ? 'Score: ' + correct + ' / ' + rows.length
+      : 'Answer every statement first.';
+  });
+
+  wrap.querySelector('.tf-quiz-reset').addEventListener('click', function () {
+    rows.forEach(function (row) {
+      row.classList.remove('correct', 'incorrect', 'unanswered');
+      delete row.dataset.selected;
+      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
+      row.querySelector('.tf-quiz-feedback').textContent = '';
+    });
+    wrap.querySelector('.tf-quiz-score').textContent = '';
+  });
+})();
+</script>

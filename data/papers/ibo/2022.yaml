@@ -1,0 +1,92 @@
+name: "2022"
+location: "Yerevan, Armenia"
+rounds:
+  - id: theoretical-1
+    name: "Theoretical 1"
+    papers:
+      - category: "Theoretical 1"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf"
+        linkLabel: "Exam + Official Answer Key"
+        solutionLink: "/papers/ibo/2022/theoretical-1-solutions.pdf"
+        solutionLabel: "Community Solutions (unofficial)"
+    problems:
+      - id: q1
+        number: "Q1"
+        name: "Alfalfa Mosaic Virus — m6A Demethylation & Viral Replication"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=2"
+        subjects:
+          - name: "Protein Structure, Folding & Function"
+            link: "/resources/1-cell-molecular/protein-structure-folding-function/"
+          - name: "Biomolecular Analytical Techniques"
+            link: "/resources/1-cell-molecular/biomolecular-analytical-techniques/"
+      - id: q2
+        number: "Q2"
+        name: "Enzyme Kinetics — Time to Completion vs Temperature"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=4"
+        subjects:
+          - name: "Enzyme Kinetics & Regulation"
+            link: "/resources/1-cell-molecular/enzyme-kinetics-regulation/"
+      - id: q3
+        number: "Q3"
+        name: "Amylase Activity — Starch Hydrolysis at 50–70°C"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=5"
+        subjects:
+          - name: "Enzyme Kinetics & Regulation"
+            link: "/resources/1-cell-molecular/enzyme-kinetics-regulation/"
+          - name: "Carbohydrate Chemistry & Biology"
+            link: "/resources/1-cell-molecular/carbohydrate-chemistry-biology/"
+      - id: q4
+        number: "Q4"
+        name: "Enzyme Inhibition — Substrate Concentration vs Rate Curves"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=6"
+        subjects:
+          - name: "Enzyme Kinetics & Regulation"
+            link: "/resources/1-cell-molecular/enzyme-kinetics-regulation/"
+      - id: q5
+        number: "Q5"
+        name: "Meselson–Stahl Experiment — DNA Replication Modes"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=7"
+        subjects:
+          - name: "DNA Structure & Replication"
+            link: "/resources/1-cell-molecular/dna-structure-replication/"
+      - id: q6
+        number: "Q6"
+        name: "Cell Membrane Transport — Arrows X, Y, Z"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=8"
+        subjects:
+          - name: "Plasma Membrane Structure & Transport"
+            link: "/resources/1-cell-molecular/plasma-membrane-structure-transport/"
+      - id: q7
+        number: "Q7"
+        name: "Apoptosis — p53/Bax/Bcl-2 Pathway Under Hypoxia"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=9"
+        subjects:
+          - name: "Cell Junctions, Extracellular Matrix & Cell Death"
+            link: "/resources/1-cell-molecular/cell-junctions-ecm-cell-death/"
+      - id: q8
+        number: "Q8"
+        name: "Ethidium Bromide — DNA Binding and Intercalation"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=10"
+        subjects:
+          - name: "DNA Structure & Replication"
+            link: "/resources/1-cell-molecular/dna-structure-replication/"
+          - name: "Nucleotide & Nucleic Acid Chemistry"
+            link: "/resources/1-cell-molecular/nucleotide-nucleic-acid-chemistry/"
+      - id: q9
+        number: "Q9"
+        name: "Organ-on-a-Chip — Lung-on-a-Chip & Pulmonary Oedema Model"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=12"
+        subjects:
+          - name: "Cell Junctions, Extracellular Matrix & Cell Death"
+            link: "/resources/1-cell-molecular/cell-junctions-ecm-cell-death/"
+          - name: "Recombinant DNA & Biotechnology Techniques"
+            link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
+      - id: q10
+        number: "Q10"
+        name: "3D Bioprinting — Cell Viability, Bioluminescence, and Confocal Imaging"
+        link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=15"
+        subjects:
+          - name: "Recombinant DNA & Biotechnology Techniques"
+            link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
+          - name: "Biomolecular Analytical Techniques"
+            link: "/resources/1-cell-molecular/biomolecular-analytical-techniques/"

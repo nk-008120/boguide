@@ -1,0 +1,19 @@
+{{- /* Lists every round for one olympiad/year.
+     Usage: {{< papers-rounds olympiad="tbo" year="2023" >}} on the year's _index.md. */ -}}
+{{- $olId := .Get "olympiad" -}}
+{{- $yearId := .Get "year" -}}
+{{- $ol := index hugo.Data.papers $olId -}}
+{{- $yearData := index $ol $yearId -}}
+{{ with $yearData.location }}<p class="papers-summary">📍 {{ . }}</p>{{ end }}
+<div class="papers-grid">
+  {{- range $yearData.rounds }}
+    {{- $paperCount := len .papers }}
+    <a class="papers-card" href="{{ $.Page.RelPermalink }}{{ .id }}/">
+      <span class="papers-card-title">{{ .name }}</span>
+      <span class="papers-card-meta">
+        {{ $paperCount }} paper{{ if ne $paperCount 1 }}s{{ end }}
+        {{- if .problems }} · {{ len .problems }} problem{{ if ne (len .problems) 1 }}s{{ end }}{{ end }}
+      </span>
+    </a>
+  {{- end }}
+</div>

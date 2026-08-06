@@ -1,0 +1,155 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BiOGuide for Biology Olympiads – IBO 2022</title>
+    <link>http://localhost:1313/papers/ibo/2022/</link>
+    <description>Recent content in IBO 2022 on BiOGuide for Biology Olympiads</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="http://localhost:1313/papers/ibo/2022/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Theoretical 1</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-1/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;papers-paperlinks&#34;&gt;
+  &lt;div class=&#34;papers-paper-row&#34;&gt;&lt;span class=&#34;papers-paper-category&#34;&gt;Theoretical 1&lt;/span&gt;
+    &lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Exam &amp;#43; Official Answer Key&lt;/a&gt;
+    &lt;a class=&#34;papers-pill papers-pill-solution&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-solutions.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Community Solutions (unofficial)&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;papers-search&#34;&gt;
+  &lt;input type=&#34;text&#34; id=&#34;papers-problem-filter&#34; class=&#34;papers-search-input&#34; placeholder=&#34;Filter problems…&#34; autocomplete=&#34;off&#34;&gt;
+&lt;/div&gt;
+&lt;div class=&#34;papers-table-wrap&#34;&gt;
+&lt;table class=&#34;papers-problem-table&#34; id=&#34;papers-problem-table&#34;&gt;
+  &lt;thead&gt;&lt;tr&gt;&lt;th&gt;No.&lt;/th&gt;&lt;th&gt;Title&lt;/th&gt;&lt;th&gt;Subjects&lt;/th&gt;&lt;th&gt;Points&lt;/th&gt;&lt;th&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q1&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q1/&#34;&gt;Alfalfa Mosaic Virus — m6A Demethylation &amp;amp; Viral Replication&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/protein-structure-folding-function/&#34;&gt;Protein Structure, Folding &amp;amp; Function&lt;/a&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/biomolecular-analytical-techniques/&#34;&gt;Biomolecular Analytical Techniques&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q2&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q2/&#34;&gt;Enzyme Kinetics — Time to Completion vs Temperature&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/enzyme-kinetics-regulation/&#34;&gt;Enzyme Kinetics &amp;amp; Regulation&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q3&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q3/&#34;&gt;Amylase Activity — Starch Hydrolysis at 50–70°C&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/enzyme-kinetics-regulation/&#34;&gt;Enzyme Kinetics &amp;amp; Regulation&lt;/a&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/carbohydrate-chemistry-biology/&#34;&gt;Carbohydrate Chemistry &amp;amp; Biology&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q4&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q4/&#34;&gt;Enzyme Inhibition — Substrate Concentration vs Rate Curves&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/enzyme-kinetics-regulation/&#34;&gt;Enzyme Kinetics &amp;amp; Regulation&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=6&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q5&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q5/&#34;&gt;Meselson–Stahl Experiment — DNA Replication Modes&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/dna-structure-replication/&#34;&gt;DNA Structure &amp;amp; Replication&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q6&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q6/&#34;&gt;Cell Membrane Transport — Arrows X, Y, Z&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/plasma-membrane-structure-transport/&#34;&gt;Plasma Membrane Structure &amp;amp; Transport&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q7&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q7/&#34;&gt;Apoptosis — p53/Bax/Bcl-2 Pathway Under Hypoxia&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/cell-junctions-ecm-cell-death/&#34;&gt;Cell Junctions, Extracellular Matrix &amp;amp; Cell Death&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=9&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q8&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q8/&#34;&gt;Ethidium Bromide — DNA Binding and Intercalation&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/dna-structure-replication/&#34;&gt;DNA Structure &amp;amp; Replication&lt;/a&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/nucleotide-nucleic-acid-chemistry/&#34;&gt;Nucleotide &amp;amp; Nucleic Acid Chemistry&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=10&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q9&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q9/&#34;&gt;Organ-on-a-Chip — Lung-on-a-Chip &amp;amp; Pulmonary Oedema Model&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/cell-junctions-ecm-cell-death/&#34;&gt;Cell Junctions, Extracellular Matrix &amp;amp; Cell Death&lt;/a&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/&#34;&gt;Recombinant DNA &amp;amp; Biotechnology Techniques&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=12&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q10&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q10/&#34;&gt;3D Bioprinting — Cell Viability, Bioluminescence, and Confocal Imaging&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/&#34;&gt;Recombinant DNA &amp;amp; Biotechnology Techniques&lt;/a&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/biomolecular-analytical-techniques/&#34;&gt;Biomolecular Analytical Techniques&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=15&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var input = document.getElementById(&#39;papers-problem-filter&#39;);
+  if (!input) return;
+  input.addEventListener(&#39;input&#39;, function () {
+    var q = input.value.toLowerCase();
+    document.querySelectorAll(&#39;#papers-problem-table .papers-problem-row&#39;).forEach(function (row) {
+      row.style.display = row.textContent.toLowerCase().indexOf(q) !== -1 ? &#39;&#39; : &#39;none&#39;;
+    });
+  });
+})();
+&lt;/script&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
