@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap');
 
 .highlight-green {
     color: #2d6a4f;
@@ -17,7 +17,7 @@
     margin: 1rem 0;
 }
 .badge-custom {
-  /* Intermediate difficulty in {{< topic-meta >}} — matches the amber
+  /* Intermediate difficulty in {{< topic-meta >}} â€” matches the amber
      Intermediate accent used on subject-index cards (custom.css,
      "SUBJECT-INDEX CARD COLORING"). This class is ALSO reused for
      prerequisite links (see .topic-meta-link override below), which
@@ -34,7 +34,7 @@ html.dark .badge-custom {
   background-color: rgba(245, 158, 11, 0.2);
   color: #fbbf24;
 }
-/* Prerequisite links (badge-custom + topic-meta-link combo) — decoupled
+/* Prerequisite links (badge-custom + topic-meta-link combo) â€” decoupled
    from the Intermediate-amber badge-custom above into their own lilac
    "link chip" look, since a prerequisite isn't a difficulty signal. */
 .topic-meta-link.badge-custom {
@@ -61,7 +61,7 @@ html.dark .topic-meta-link.badge-custom:hover {
     font-size: 1.1rem
 }
 .badge-exploration {
-  /* Beginner difficulty — matches the green Beginner card accent. */
+  /* Beginner difficulty â€” matches the green Beginner card accent. */
   background-color: #dcfce7;
   color: #166534;
   border-radius: 20px;
@@ -76,7 +76,7 @@ html.dark .badge-exploration {
   color: #4ade80;
 }
 .badge-curiosity {
-  /* Syllabus tags — not a difficulty signal, kept visually distinct via
+  /* Syllabus tags â€” not a difficulty signal, kept visually distinct via
      a sage tint rather than reusing the difficulty green/amber/purple set. */
   background-color: #e8f0e4;
   color: #3d5438;
@@ -94,7 +94,7 @@ html.dark .badge-curiosity {
   border-left-color: #9db99a;
 }
 .badge-challenge {
-  /* Advanced difficulty — matches the purple Advanced card accent. */
+  /* Advanced difficulty â€” matches the purple Advanced card accent. */
   background-color: #f3e8ff;
   color: #6b21a8;
   border-radius: 20px;
@@ -109,7 +109,7 @@ html.dark .badge-challenge {
   background-color: rgba(192, 132, 252, 0.18);
   color: #c084fc;
 }
-/* Thumbnail size only – zoom is handled by Lightbox */
+/* Thumbnail size only â€“ zoom is handled by Lightbox */
 [role="tabpanel"] img,
 .tab-content img {
   max-width: 100%;
@@ -188,7 +188,7 @@ html.dark #boguide-toc a:hover {
   background: rgba(22, 163, 74, 0.2);
   color: #4ade80;
 }
-/* Two cards layout – identical to React site's .topics-grid */
+/* Two cards layout â€“ identical to React site's .topics-grid */
 .two-cards {
   display: flex;
   flex-wrap: wrap;
@@ -386,7 +386,7 @@ html.dark .homepage-bg .collab-note {
   background: rgba(0, 0, 0, 0.2);
   color: #e2e8f0;
 }
-/* topic-meta shortcode — difficulty/prerequisite/tag badge row at top of a page */
+/* topic-meta shortcode â€” difficulty/prerequisite/tag badge row at top of a page */
 .topic-meta {
   display: flex;
   flex-wrap: wrap;
@@ -403,7 +403,7 @@ html.dark .homepage-bg .collab-note {
   text-decoration: none;
 }
 
-/* ── Custom Tooltip / Notification Banner (Top‑Left Corner) ──────────────── */
+/* â”€â”€ Custom Tooltip / Notification Banner (Topâ€‘Left Corner) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .custom-tooltip-box {
   position: fixed;
   top: 80px;                     /* below navbar */
@@ -498,12 +498,12 @@ html.dark .custom-tooltip-box .tooltip-link:hover {
 }
 
 /* ===================================================================
-   FAVOURITE THEME — lilac → sage diagonal gradient background
+   FAVOURITE THEME â€” lilac â†’ sage diagonal gradient background
    4th option in the theme toggle (light / dark / system / favourite),
    see layouts/partials/theme-toggle.html + assets/js/{head,core}/theme.js.
    Palette matches the reference lilac/sage design (diagonal 3-stop base
    + two soft radial glows). Text/link/card/badge colors intentionally
-   stay Light mode's palette — only the page background and chrome
+   stay Light mode's palette â€” only the page background and chrome
    opacity change, so nothing here needs its own contrast pass.
    =================================================================== */
 html.favourite body {
@@ -528,7 +528,7 @@ html.favourite .hextra-nav-container-blur {
 }
 
 /* Homepage paints its own background-image + white overlay directly on <body>
-   (see themes/hextra/layouts/baseof.html + .homepage-bg above) — swap the overlay
+   (see themes/hextra/layouts/baseof.html + .homepage-bg above) â€” swap the overlay
    for transparent so the gradient reads through there too. */
 html.favourite .homepage-bg::before {
   background-color: transparent;
@@ -538,7 +538,7 @@ html.favourite .homepage-bg::before {
    solid white, meant to mask content scrolling out underneath a plain white sidebar/TOC:
    - sidebar's theme-toggle bar (themes/hextra/layouts/_partials/sidebar.html, the
      `data-toggle-animation="show"` wrapper)
-   - the TOC's bottom chrome — scroll-to-top button, plus tags/edit-link when enabled
+   - the TOC's bottom chrome â€” scroll-to-top button, plus tags/edit-link when enabled
      (themes/hextra/layouts/_partials/toc.html, last child of `.hextra-scrollbar`)
    Both stand out as blank white rectangles against the gradient, so remove the fill
    and the fade entirely rather than trying to match the shadow color to the gradient. */
@@ -549,12 +549,12 @@ html.favourite .hextra-toc .hextra-scrollbar > div {
 }
 
 /* ===================================================================
-   SUBJECT-INDEX CARD COLORING — difficulty accent
+   SUBJECT-INDEX CARD COLORING â€” difficulty accent
    Every topic card on a subject's home index (Hextra's {{< cards >}}/
    {{< card >}} shortcodes, e.g. /resources/1-cell-molecular/) now sets
    tagColor to match its existing tag="Beginner/Intermediate/Advanced":
    green (sage-adjacent) / amber / purple (lilac-adjacent). tagColor
-   already colors the corner badge via Hextra's own badge.html — this
+   already colors the corner badge via Hextra's own badge.html â€” this
    just adds a matching left-border accent, detected via :has() off the
    badge's resolved Tailwind class so no theme template needs forking.
    Light mode is used for the badge's own bg/text colors (as shipped by
@@ -582,10 +582,10 @@ html.favourite .hextra-toc .hextra-scrollbar > div {
 }
 
 /* ===================================================================
-   CONTENT IMAGE "CARD MOUNT" — lilac/sage gradient ring + solid matting
+   CONTENT IMAGE "CARD MOUNT" â€” lilac/sage gradient ring + solid matting
    Every content image is wrapped by layouts/_markup/render-image.html in
    a .content-image-frame span/figure. Some source images are opaque-white
-   PNGs, others fully transparent — the matting background-color on the
+   PNGs, others fully transparent â€” the matting background-color on the
    <img> itself normalizes both to look like one consistent framed figure,
    while the wrapper's gradient padding is the visible "border". Colors
    reused from the same lilac/sage reference as the Favourite theme.
@@ -619,7 +619,7 @@ html.dark .content-image-frame img {
   background-color: #242424 !important;
 }
 
-/* figcaption variant (unused today — no content currently uses markdown title syntax —
+/* figcaption variant (unused today â€” no content currently uses markdown title syntax â€”
    kept consistent in case it's ever adopted) */
 .content-image-frame figcaption {
   text-align: center;
@@ -629,12 +629,12 @@ html.dark .content-image-frame img {
 
 /* Tab-thumbnail images already have a purpose-built compact treatment
    ([role="tabpanel"] img above). In practice they never actually pick up
-   render-image.html's .content-image-frame wrapper at all — Hextra's tabs
+   render-image.html's .content-image-frame wrapper at all â€” Hextra's tabs
    shortcode renders each tab's markdown via a separate nested `markdownify`
    call (themes/hextra/layouts/_partials/shortcodes/tabs.html:45) that
    doesn't route through this project's render-hook override, so tab images
    stay bare <img> tags and the existing [role="tabpanel"] img rule keeps
-   applying untouched — exactly the outcome this pass wants. This rule is
+   applying untouched â€” exactly the outcome this pass wants. This rule is
    kept as a defensive no-op in case that Hugo rendering detail ever changes. */
 [role="tabpanel"] .content-image-frame {
   display: inline !important;
@@ -654,18 +654,18 @@ html.dark [role="tabpanel"] .content-image-frame img {
 }
 
 /* ===================================================================
-   1. TYPOGRAPHY — Fraunces display serif headings + Inter body text
+   1. TYPOGRAPHY â€” Fraunces display serif headings + Inter body text
    Every page title (h1) and section heading (h2/h3) previously rendered
    in Hextra's flat default system-sans at fairly uniform weight. A
    light-weight display serif on h1, stepping up to a medium weight on
    h2/h3, gives the same "editorial" headline/body contrast aoguide.app
-   uses. Body copy (paragraphs, lists, sidebar, nav, badges — everything
+   uses. Body copy (paragraphs, lists, sidebar, nav, badges â€” everything
    that doesn't set its own font-family) now uses Inter instead of the
    generic system-sans stack, same pairing as the lilac/sage reference
    site this whole aesthetic pass is drawing from. The fallback chain
    after 'Inter' is Hextra's own original stack, so a failed font load
    degrades to exactly what rendered before this change. Code blocks are
-   untouched — they set their own monospace font more specifically. */
+   untouched â€” they set their own monospace font more specifically. */
 body {
   font-family: 'Inter', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }
@@ -682,10 +682,10 @@ body {
 }
 
 /* ===================================================================
-   2. CALLOUT/ADMONITION POLISH — Hextra's built-in [!NOTE]/[!TIP]/
+   2. CALLOUT/ADMONITION POLISH â€” Hextra's built-in [!NOTE]/[!TIP]/
    [!WARNING]/[!IMPORTANT]/[!CAUTION] blockquote-alerts (.hextra-alert,
    themes/hextra/assets/css/components/alert.css) keep their existing
-   per-type hue semantics — that color-coding is useful signal — this
+   per-type hue semantics â€” that color-coding is useful signal â€” this
    just elevates the visual treatment to match the card/image "colored
    left-accent + soft shadow" language established elsewhere this pass.
    =================================================================== */
@@ -718,7 +718,7 @@ html.dark .hextra-alert {
 }
 
 /* ===================================================================
-   3. HOVER MICRO-INTERACTIONS — subject-index topic cards
+   3. HOVER MICRO-INTERACTIONS â€” subject-index topic cards
    Hextra's default .hextra-card hover (card.html) only changes border/
    background tint. Add a soft lift + glow, matching aoguide's tactile
    card/button hover feel, layered on top of the existing difficulty
@@ -736,13 +736,13 @@ html.dark .hextra-card:hover {
 }
 
 /* ===================================================================
-   4. PRACTICE-PROBLEM ANSWER REVEALS — <details>/<summary>
+   4. PRACTICE-PROBLEM ANSWER REVEALS â€” <details>/<summary>
    Every practice-problem answer site-wide (~40 files) uses the same
-   plain <details><summary>Show answer</summary>...</details> pattern —
+   plain <details><summary>Show answer</summary>...</details> pattern â€”
    grep-confirmed as its ONLY use anywhere in content/, so this is safe
    to style broadly. This recreates the spirit of aoguide's blue
    problem-tab / green solution-tab coloring (screenshot reference)
-   without rewriting ~40 files into Hextra's {{< tabs >}} shortcode —
+   without rewriting ~40 files into Hextra's {{< tabs >}} shortcode â€”
    that would be a large content restructure, not a CSS pass. Instead:
    the reveal toggle becomes a blue pill, and the revealed answer sits
    in a green-tinted panel, echoing the same problem/solution color
@@ -803,14 +803,14 @@ html.dark .content details[open] {
 }
 
 /* ===================================================================
-   5. SMALL-CHROME POLISH — scrollbar + site-wide accent hue
+   5. SMALL-CHROME POLISH â€” scrollbar + site-wide accent hue
    Hextra's own "brand color" customization point is --primary-hue/
-   -saturation/-lightness (themes/hextra/assets/css/styles.css:27-40) —
+   -saturation/-lightness (themes/hextra/assets/css/styles.css:27-40) â€”
    every focus ring, active-sidebar-item highlight, and primary-* badge
    already derives from these variables. Overriding them here (instead
    of fighting Hextra's outline-none + ring-based focus styling with a
-   competing `outline` rule) retints ALL of those to lilac at once —
-   including the previously-default-blue focus ring — plus a matching
+   competing `outline` rule) retints ALL of those to lilac at once â€”
+   including the previously-default-blue focus ring â€” plus a matching
    custom scrollbar thumb, closing the "stock browser chrome" gap.
    =================================================================== */
 :root {
@@ -848,12 +848,12 @@ html.dark ::-webkit-scrollbar-thumb {
 }
 
 /* ===================================================================
-   6. KEY-EQUATION BOX — {{< eqbox >}}$$ ... $$ {{< /eqbox >}}
+   6. KEY-EQUATION BOX â€” {{< eqbox >}}$$ ... $$ {{< /eqbox >}}
    aoguide.app-inspired: the single most important/named result on a
    math-heavy page gets pulled into its own bordered, tinted box instead
    of sitting flush in the paragraph flow like every other equation.
    Applied selectively (layouts/shortcodes/eqbox.html) to the ~9 topic
-   pages with the most display math, not sitewide — a box only means
+   pages with the most display math, not sitewide â€” a box only means
    something if most equations aren't boxed.
    =================================================================== */
 .eq-box {
@@ -877,7 +877,7 @@ html.dark .eq-box {
 }
 
 /* ===================================================================
-   7. TABLE STYLING — comparison/reference tables in prose content
+   7. TABLE STYLING â€” comparison/reference tables in prose content
    Hextra's default (themes/hextra/assets/css/typography.css:35-50) is
    fully stock: transparent header, no zebra striping, plain 1px gray
    borders. Many topic pages carry genuinely important dense reference
@@ -924,7 +924,7 @@ html.dark .content table tbody tr:hover {
 }
 
 /* ===================================================================
-   8. SEARCH MODAL — Ctrl/Cmd+K dialog (themes/hextra/assets/css/
+   8. SEARCH MODAL â€” Ctrl/Cmd+K dialog (themes/hextra/assets/css/
    components/search.css). The match-highlight color already inherited
    lilac from the --primary-hue override (section 5 above); this adds
    chrome to the dialog itself so it doesn't read as the one remaining
@@ -993,3 +993,27 @@ html.dark .hextra-search-input-wrapper {
     content: "";
   }
 }
+
+/* ===================================================================
+   10. MERMAID DIAGRAM SIZING FIX
+   Mermaid ships with useMaxWidth:true by default (themes/hextra/assets/
+   .../scripts/mermaid.html), which sets the rendered <svg> to width:100%
+   with an inline max-width equal to its natural size. When a diagram's
+   natural size (its viewBox, e.g. ~2146x2059 for a moderately complex
+   flowchart) is larger than the content column (~650-900px), width:100%
+   forces the SVG down to container width â€” but since Mermaid draws its
+   labels using font-sizes defined in that SAME internal coordinate
+   system, shrinking the whole viewBox shrinks the text proportionally
+   too, down to a few illegible pixels. This affects every Mermaid
+   diagram site-wide once it's non-trivial in size, not just one page.
+   Fix: let diagrams render at their natural size (legible text) and
+   scroll horizontally instead of being force-fit into a narrow column;
+   also stops small diagrams from being stretched up past their design
+   size, which the same width:100% rule was doing in the other direction.
+   =================================================================== */
+.mermaid {
+  overflow-x: auto;
+}
+/* Actual sizing is set directly on each svg's inline style by the JS fix in
+   layouts/partials/scripts/mermaid.html (avoids fighting !important CSS
+   against a plain inline style, which inline styles would lose). */

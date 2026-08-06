@@ -2046,7 +2046,22 @@
     </article>
   </div>
 
-      <footer class="hextra-footer hx:bg-gray-100 hx:pb-[env(safe-area-inset-bottom)] hx:dark:bg-neutral-900 hx:print:bg-transparent"><div class="hextra-custom-footer hextra-max-footer-width hx:mx-auto hx:pl-[max(env(safe-area-inset-left),1.5rem)] hx:pr-[max(env(safe-area-inset-right),1.5rem)] hx:text-gray-600 hx:dark:text-gray-400"></div><div
+      <footer class="hextra-footer hx:bg-gray-100 hx:pb-[env(safe-area-inset-bottom)] hx:dark:bg-neutral-900 hx:print:bg-transparent"><div class="hextra-custom-footer hextra-max-footer-width hx:mx-auto hx:pl-[max(env(safe-area-inset-left),1.5rem)] hx:pr-[max(env(safe-area-inset-right),1.5rem)] hx:text-gray-600 hx:dark:text-gray-400"><div style="margin-top: 4rem; padding: 1rem; text-align: center; border-top: 1px solid #ccc;">
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+    <img alt="Creative Commons License" style="border-width:0"
+         src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
+  </a><br />
+  <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">
+    BioGuide
+  </span> by
+  <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">
+    nk-008120
+  </span> is licensed under a
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+    Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+  </a>.
+</div>
+</div><div
       class="hextra-max-footer-width hx:mx-auto hx:flex hx:justify-center hx:py-12 hx:pl-[max(env(safe-area-inset-left),1.5rem)] hx:pr-[max(env(safe-area-inset-right),1.5rem)] hx:text-gray-600 hx:dark:text-gray-400 hx:md:justify-start"
     >
       <div class="hx:flex hx:w-full hx:flex-col hx:items-center hx:sm:items-start"><div class="hx:font-semibold"><a class="hx:flex hx:text-sm hx:items-center hx:gap-1 hx:text-current" target="_blank" rel="noopener noreferrer" title="Hextra GitHub Homepage" href="https://github.com/imfing/hextra">
@@ -2102,21 +2117,66 @@
       el.dataset.original = el.innerHTML;
     });
 
-    const theme = document.documentElement.classList.contains("dark") ? "dark" : "default";
-    mermaid.initialize({ startOnLoad: true, theme: theme });
+    
+    
+    
+    
+    
+    
+    var MIN_SCALE = 0.75;
+    function fixMermaidSizing() {
+      document.querySelectorAll(".mermaid svg").forEach((svg) => {
+        if (svg.dataset.sized) return;
+        const viewBox = svg.getAttribute("viewBox");
+        if (!viewBox) return;
+        const parts = viewBox.trim().split(/\s+/).map(Number);
+        if (parts.length !== 4 || !isFinite(parts[2]) || !isFinite(parts[3])) return;
+        const naturalWidth = parts[2];
+        const naturalHeight = parts[3];
+        const container = svg.closest(".mermaid");
+        const containerWidth = (container && container.clientWidth) || naturalWidth;
+        const fitScale = containerWidth / naturalWidth;
+        const scale = Math.min(1, Math.max(fitScale, MIN_SCALE));
+        
+        
+        
+        const sized = svg.cloneNode(true);
+        sized.style.width = (naturalWidth * scale) + "px";
+        sized.style.height = (naturalHeight * scale) + "px";
+        sized.style.maxWidth = "none";
+        sized.removeAttribute("width");
+        sized.removeAttribute("height");
+        sized.dataset.sized = "true";
+        svg.replaceWith(sized);
+      });
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    function renderMermaid() {
+      const theme = document.documentElement.classList.contains("dark") ? "dark" : "default";
+      mermaid.initialize({ startOnLoad: false, theme: theme });
+      mermaid.run({ querySelector: ".mermaid" }).then(fixMermaidSizing).catch(() => {});
+    }
+
+    renderMermaid();
 
     let timeout;
     new MutationObserver(() => {
       clearTimeout(timeout);
       timeout = setTimeout(() => {
-        const theme = document.documentElement.classList.contains("dark") ? "dark" : "default";
         document.querySelectorAll(".mermaid").forEach((el) => {
           
           el.innerHTML = el.dataset.original;
           el.removeAttribute("data-processed");
         });
-        mermaid.initialize({ startOnLoad: true, theme: theme });
-        mermaid.init();
+        renderMermaid();
       }, 150);
     }).observe(document.documentElement, {
       attributes: true,
