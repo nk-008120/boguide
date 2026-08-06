@@ -24,12 +24,8 @@ The viability of cells post-printing can be evaluated by daily monitoring of bio
 
 Using the information and figures, determine whether the following statements are true or false:
 
-{{< tf-quiz id="ibo2022-t1-q10" >}}
-A|After one week of culture, the relative percentage of myocytes in tissue constructs printed using bioink with 50–50% myocyte-fibroblast content will be decreased.|true|The graph shows myocyte-laden constructs losing bioluminescence (viability) faster than fibroblast-laden ones at the same pressures — in a mixed construct, that means myocytes are expected to survive and proliferate worse than fibroblasts, shrinking their relative share over time.
-B|The most likely meaning of the negative values on the y-scale is decreased cell proliferation.|false|Bioluminescence tracks intracellular ATP, i.e. viability/metabolic activity — a negative *change* in it most directly reflects cells dying or losing viability, which is a distinct process from reduced proliferation (cells simply dividing more slowly).
-C|The most likely meaning of the zero values on the y-scale is decreased cell viability.|false|The axis is the *daily change* in bioluminescence, not its absolute level — a value of zero means no change from the day before (stable viability), not that viability itself is low.
-D|A staining for actin in red and for DNA in blue would lead to the confocal images presented.|true|The images show a red filamentous/cytoskeletal network (matching an actin stain) and blue nuclear staining (matching a DNA stain like DAPI) — exactly the standard actin-red/DNA-blue immunofluorescence convention.
-{{< /tf-quiz >}}
+{{< papers-quiz olympiad="ibo" year="2022" round="theoretical-1" problem="q10" >}}
+{{< papers-problem-nav olympiad="ibo" year="2022" round="theoretical-1" problem="q10" >}}
 
 ---
 

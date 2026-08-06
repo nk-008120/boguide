@@ -21,12 +21,8 @@ Methylation of the viral RNA in the host cell inhibits viral replication. CP is 
 
 Based on the results of the experiment, indicate whether the following statements are true or false:
 
-{{< tf-quiz id="ibo2022-t1-q1" >}}
-A|R1 contains the highest number of nucleotides among the examined viral RNAs.|true|In gel electrophoresis, larger nucleic acids migrate more slowly. R1 runs closest to the wells, so it is the largest fragment.
-B|The results of gel electrophoresis do NOT contradict the proposed hypothesis.|true|atalkbh9b mutants show far weaker viral RNA bands than WT at both time points — consistent with atALKBH9B being needed for AMV to overcome the host's methylation-based antiviral defence.
-C|The results indicate that atALKBH9B directly demethylates viral RNAs.|false|The gel only shows a downstream replication phenotype. Demonstrating direct demethylation would need a molecular assay (e.g. m6A mapping), not just an RNA abundance readout.
-D|A drug suppressing the atALKBH9B activity may prevent viral RNA methylation in AMV-infected plant cells.|false|atALKBH9B removes methyl groups. Suppressing it would leave viral RNA more methylated, not less — the opposite of what the statement claims.
-{{< /tf-quiz >}}
+{{< papers-quiz olympiad="ibo" year="2022" round="theoretical-1" problem="q1" >}}
+{{< papers-problem-nav olympiad="ibo" year="2022" round="theoretical-1" problem="q1" >}}
 
 ---
 

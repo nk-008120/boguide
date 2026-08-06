@@ -15,12 +15,8 @@ To find out how DNA replicates, Matthew Meselson and Franklin Stahl performed th
 
 Using the information and figure, determine whether the following statements are true or false:
 
-{{< tf-quiz id="ibo2022-t1-q5" >}}
-A|Curve A corresponds to semi-conservative DNA replication.|false|No replication mode can *increase* the heavy-DNA percentage over generations grown in ¹⁴N medium — no new ¹⁵N is being added to the system, so a rising curve doesn't match any real replication mode, semiconservative included.
-B|Curve B corresponds to dispersive DNA replication.|false|Dispersive replication (where each new strand is a patchwork of old and new DNA) still predicts continued dilution of the heavy label generation after generation — a curve that flatlines at 50% forever, with dilution stopping after generation 1, doesn't fit that pattern.
-C|Curve C corresponds to semi-conservative DNA replication.|true|Semiconservative replication predicts the heavy-DNA fraction halving every generation (100% → 50% → 25% → 12.5% → 6.25% → 3.125%), because each new duplex keeps exactly one old (heavy) strand — Curve C's smooth halving decline matches this exactly.
-D|Curve D corresponds to conservative DNA replication.|false|Conservative replication (where the original heavy duplex stays fully intact) predicts the heavy fraction shrinking gradually as a proportion of the growing pool of new light DNA — not vanishing to ~0% within just 2–3 generations the way Curve D does.
-{{< /tf-quiz >}}
+{{< papers-quiz olympiad="ibo" year="2022" round="theoretical-1" problem="q5" >}}
+{{< papers-problem-nav olympiad="ibo" year="2022" round="theoretical-1" problem="q5" >}}
 
 ---
 
