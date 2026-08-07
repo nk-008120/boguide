@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Vercel serverless functions backing BiOrchive's login + leaderboard (api/). The Hugo static site itself has no build-time dependency on this package.",
   "engines": {
-    "node": "20.x"
+    "node": "22.x"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",
