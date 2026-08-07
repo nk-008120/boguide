@@ -1,5 +1,9 @@
 ---
 title: "BO Papers Archive"
+cascade:
+  - target:
+      path: "/papers/**/q*"
+    layout: "question"
 ---
 
 {{< biorchive-bg >}}

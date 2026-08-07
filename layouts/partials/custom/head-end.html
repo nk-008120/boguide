@@ -1,0 +1,22 @@
+{{- /* Site-wide Supabase auth wiring for BiOrchive's optional login system.
+     Loaded on every page (this hook runs at the end of <head> on all pages,
+     not just /papers/) so login state is available consistently anywhere,
+     e.g. for a future "logged in as X" indicator outside the papers section.
+
+     The anon key is meant to be public — Supabase's security model is Row
+     Level Security, not key secrecy — so baking it into the static HTML at
+     build time is safe. Only the service_role key (used server-side in
+     api/submit-attempt.js) must stay secret.
+
+     HUGO_SUPABASE_URL / HUGO_SUPABASE_ANON_KEY come from the environment
+     Hugo builds in (Vercel project env vars in production, your shell
+     locally — see SETUP.md). Hugo's default security policy allowlists
+     exactly the ^HUGO_ prefix for getenv, so no extra config is needed.
+     If unset (e.g. a fresh checkout with no env vars configured yet), these
+     render as empty strings and papers-auth.js simply no-ops. */ -}}
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js" defer></script>
+<script>
+  window.__SUPABASE_URL = {{ getenv "HUGO_SUPABASE_URL" | jsonify | safeJS }};
+  window.__SUPABASE_ANON_KEY = {{ getenv "HUGO_SUPABASE_ANON_KEY" | jsonify | safeJS }};
+</script>
+<script src="{{ "js/papers-auth.js" | relURL }}" defer></script>

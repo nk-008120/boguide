@@ -1,0 +1,244 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BiOGuide for Biology Olympiads – IBO 2024</title>
+    <link>http://localhost:1313/papers/ibo/2024/</link>
+    <description>Recent content in IBO 2024 on BiOGuide for Biology Olympiads</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="http://localhost:1313/papers/ibo/2024/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Theoretical A</title>
+      <link>http://localhost:1313/papers/ibo/2024/theoretical-a/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2024/theoretical-a/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;biorchive-bg-layer&#34; aria-hidden=&#34;true&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;attempt/&#34; style=&#34;display:inline-block;margin-bottom:1.5rem;&#34;&gt;Start Timed Attempt →&lt;/a&gt;
+&lt;a class=&#34;papers-nav-btn&#34; href=&#34;leaderboard/&#34; style=&#34;display:inline-block;margin-bottom:1.5rem;&#34;&gt;🏆 Leaderboard&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;papers-paperlinks&#34;&gt;
+  &lt;div class=&#34;papers-paper-row&#34;&gt;&lt;span class=&#34;papers-paper-category&#34;&gt;Theoretical A&lt;/span&gt;
+    &lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Exam &amp;#43; Official Answer Key&lt;/a&gt;
+    &lt;a class=&#34;papers-pill papers-pill-solution&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Community Solutions (unofficial)&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;papers-search&#34;&gt;
+  &lt;input type=&#34;text&#34; id=&#34;papers-problem-filter&#34; class=&#34;papers-search-input&#34; placeholder=&#34;Filter problems…&#34; autocomplete=&#34;off&#34;&gt;
+&lt;/div&gt;
+&lt;div class=&#34;papers-table-wrap&#34;&gt;
+&lt;table class=&#34;papers-problem-table&#34; id=&#34;papers-problem-table&#34;&gt;
+  &lt;thead&gt;&lt;tr&gt;&lt;th&gt;No.&lt;/th&gt;&lt;th&gt;Title&lt;/th&gt;&lt;th&gt;Subjects&lt;/th&gt;&lt;th&gt;Points&lt;/th&gt;&lt;th&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q1&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q1/&#34;&gt;Tulip Parsimony and Morphological Characters&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/4-biosystematics/phylogenetic-trees-cladistics/&#34;&gt;Phylogenetic Trees &amp;amp; Cladistics&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=6&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q2&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q2/&#34;&gt;Strigiformes (Owls) Phylogenetic Identification&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/4-biosystematics/phylogenetic-trees-cladistics/&#34;&gt;Phylogenetic Trees &amp;amp; Cladistics&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q3&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q3/&#34;&gt;Bacterial Phylogenomics (RNA Polymerase vs Transposase)&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/4-biosystematics/molecular-systematics/&#34;&gt;Molecular Systematics&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=9&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q4&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q4/&#34;&gt;Tumor Microenvironment: OCR and Extracellular pH&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/bioenergetics-central-metabolism/&#34;&gt;Bioenergetics &amp;amp; Central Metabolism Overview&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=10&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q5&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q5/&#34;&gt;Antibody Mutagenesis and Cardiac Glycoside Binding (ELISA)&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/protein-structure-folding-function/&#34;&gt;Protein Structure, Folding &amp;amp; Function&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=11&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q6&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q6/&#34;&gt;Ramachandran Plot and Peptide Bond Geometry&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/protein-structure-folding-function/&#34;&gt;Protein Structure, Folding &amp;amp; Function&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=13&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q7&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q7/&#34;&gt;Pentose Phosphate Pathway (PPP)&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/bioenergetics-central-metabolism/&#34;&gt;Bioenergetics &amp;amp; Central Metabolism Overview&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=15&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q8&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q8/&#34;&gt;IGF2-H19 Imprinting and CTCF Loops&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/gene-regulation-eukaryotic-epigenetics/&#34;&gt;Gene Regulation: Eukaryotic &amp;amp; Epigenetics&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=17&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q9&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q9/&#34;&gt;ATAD1 Mitochondrial ATPase (Cryo-EM Study)&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/protein-structure-folding-function/&#34;&gt;Protein Structure, Folding &amp;amp; Function&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=19&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q10&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q10/&#34;&gt;Magnetotactic Bacteria Navigation&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/cell-theory-prokaryotes-eukaryotes/&#34;&gt;Cell Theory, Prokaryotes &amp;amp; Eukaryotes&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=21&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q11&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q11/&#34;&gt;Directed Evolution of Enzyme D (NADH-Dependent)&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/&#34;&gt;Recombinant DNA &amp;amp; Biotechnology Techniques&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=22&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q12&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q12/&#34;&gt;DMSO₄ Poisoning Case Study&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/plasma-membrane-structure-transport/&#34;&gt;Plasma Membrane Structure &amp;amp; Transport&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=24&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q13&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q13/&#34;&gt;Nitrogen Limitation of Legumes in Steppes&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/8-ecology/&#34;&gt;Ecology&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=25&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q14&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q14/&#34;&gt;Latitudinal Diversity Gradient: Three Hypotheses&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/8-ecology/&#34;&gt;Ecology&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=26&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q15&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q15/&#34;&gt;ENSO and Ecosystem Effects&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/8-ecology/&#34;&gt;Ecology&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=27&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q16&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q16/&#34;&gt;Fractal Geometry and Scale-Dependent Resource Availability&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/8-ecology/&#34;&gt;Ecology&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q17&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q17/&#34;&gt;Water Scarcity Index (Rws) and Solutions&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/8-ecology/&#34;&gt;Ecology&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=30&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q18&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q18/&#34;&gt;Animal Road Barrier Effect (Traffic Behavior Types)&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=31&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q19&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q19/&#34;&gt;Cumulative Cultural Evolution in Rock Pigeons&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/9-ethology/development-learning/&#34;&gt;Development &amp;amp; Learning&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=33&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q20&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q20/&#34;&gt;Haploid/Diploid Organisms and Multi-Allele Genetics&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/7-genetics/mendelian-inheritance-probability/&#34;&gt;Mendel&amp;#39;s Laws &amp;amp; Probability in Genetics&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=34&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var input = document.getElementById(&#39;papers-problem-filter&#39;);
+  if (!input) return;
+  input.addEventListener(&#39;input&#39;, function () {
+    var q = input.value.toLowerCase();
+    document.querySelectorAll(&#39;#papers-problem-table .papers-problem-row&#39;).forEach(function (row) {
+      row.style.display = row.textContent.toLowerCase().indexOf(q) !== -1 ? &#39;&#39; : &#39;none&#39;;
+    });
+  });
+})();
+&lt;/script&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

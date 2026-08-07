@@ -34,8 +34,7 @@
 </div>
 <script>
 (function () {
-  var scripts = document.getElementsByTagName('script');
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
 
