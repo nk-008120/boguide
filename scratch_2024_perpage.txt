@@ -1,0 +1,3506 @@
+@@PAGE 1@@
+!
+!
+
+                                                                                                                    !
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+All IBO examination questions are published under the following Creative Commons license:
+!
+
+                                                             !
+!
+CC BY-NC-SA (Attribution-NonCommercial-ShareAlike) -
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+The exam papers can be used freely for educational purposes as long as IBO is credited and
+new creations are licensed under identical terms. No commercial use is allowed.
+@@PAGE 2@@
+Theoretical Exam - Part A                                                    G0-1
+                                                                                           English (Official)
+
+General Instructions for Theory Part A
+
+Date: July 11th, 2024
+Time Allowed: 3 hours and 15 minutes (NO additional time)
+The Theory Part A exam consists of 50 tasks across the following topics:
+
+    · Biosystematics: Q1-3
+    · Cell and Molecular Biology: Q4-12
+    · Ecology: Q13-17
+    · Ethology: Q18-19
+    · Genetics & Evolution: Q20-29
+    · Plant Anatomy and Physiology: Q30-37
+    · Animal Anatomy and Physiology: Q38-50
+Supplementary figures are provided in the Appendix.
+
+Each question is worth a maximum of 1.0 point. Marking is done based on the scheme below:
+
+Number of correctly identified 0  1  2                                    3    4
+
+statements
+
+Points      0                     0  0.2                                  0.6  1
+
+Please keep in mind:
+
+Instructions
+
+You can use the question paper for your notes and rough work, we do not assess it.
+
+An answer sheet is provided. Only answers recorded on the answer sheet will be scored. The sheet
+includes several fields that need to be filled out. Follow the instructions below for filling out the answer
+sheet:
+
+In the "Last and First Name" field, write your last name (family name) and first name in English (if
+both do not fit, write only your last name).
+
+In the "Country or Territory" field, write the country or territory you represent at the IBO in En-
+glish.
+
+In the "ID" field, first enter the three digits of your personal ID number in the leftmost column
+(from top to bottom), then shade the corresponding digit in the row to the right of each digit of
+the ID number.
+
+The largest field, "Answers," contains 50 questions, each with four statements labelled A, B, C, and
+D. Each statement has two squares: the "T" square indicates true, and the "F" square indicates
+false.
+
+Ensure that the squares in the "ID" and "Answers" fields are completely shaded with no un-
+shaded areas remaining and without going outside the boundaries. Marks like "+", "x", check-
+marks, or circles will not be read. Black squares must be shaded with a black pen (using a red pen
+or pencil is strictly prohibited).
+@@PAGE 3@@
+Theoretical Exam - Part A              G0-2
+                                                     English (Official)
+
+Do NOT fill out the "charge person" field and do NOT shade any fields that are not specified above.
+Black squares in the corners SHOULD NOT be shaded/corrected as it will interfere with the scan-
+ning process.
+
+Communication with Organizers
+
+You are provided with four types of cards for assistance during the exam:
+
+     · Drinking Water (Blue): Raise this card if you need water.
+
+     · Washroom (Yellow): Raise this card if you need to use the washroom.
+
+     · Correction (White): Raise this card if you made a mistake on your answer sheet and want to fix it.
+
+     · Other Queries (Red): Raise this card if you have any other questions.
+
+If you make a mistake on your answer sheet, use the "Correction (White)" card to request a correction
+pen. Using the correction pen, recolor the wrongly shaded area into white without going outside the
+boundaries. You cannot ask for correction in the last 10 minutes. (Note: Overuse of the correction
+pen may cause scanning errors, try to put in the answers once you are fully confident)
+
+Drinking water  Washroom   Correction  Other queries
+
+During the Exam
+
+At the beginning of the exam, a whistle signal will let you know to open the exam papers and start writing.
+
+15 minutes before the end, please start filling out the answer sheet if you have not already. We do not
+provide extra time to put your answers on the answer sheet.
+
+At the end of the exam, a whistle signal will indicate when to stop writing and put down your pen imme-
+diately.
+
+Continuing to write after the whistle signal will result in disqualification.
+
+No materials, papers, or equipment should be taken out of the examination room.
+@@PAGE 4@@
+Theoretical Exam - Part A  G8-1
+                                         English (Official)
+
+Appendix
+
+Amino acid structures with abbreviations: G-glycine, A-alanine, S-Serine, T-Threonine, C- Cysteine, V
+-Valine, L-Leucine, I- Isoleucine, M- Methionine, P- Proline, F- Phenylalanine, Y- Tyrosine, W- Tryptophan,
+D- Aspartic acid, E- Glutamic acid, N- Asparagine, Q-Glutamine, H- Histidine, K- Lysine, R- Arginine
+@@PAGE 5@@
+Theoretical Exam - Part A                    G8-2
+                                                           English (Official)
+
+Codon table for Amino acids:
+
+                              Second letter
+
+First letter
+                                                           Third letter
+@@PAGE 6@@
+Theoretical Exam - Part A  Q1-1
+                                          English (Official)
+
+Biosystematics
+
+1
+
+Kazakhstan boasts a rich ecosystem harboring numerous species of tulips, some of which are direct
+ancestors to many modern cultivated varieties. These tulips exhibit a diverse range of morphological
+traits, although not all of these traits are reliable indicators of species identification.
+
+In Table 1 below, we outline five distinct types of tulips and their variations across five characteristics
+(A-E), typically utilized in the classification of tulip types.
+
+       Table 1. Morphological comparisons; A - presence/absence of hairs on the stamen, B - number
+       of flowers (2(+) = 2 or more), C - presence/absence of a dense layer of hairs on the bulbs, D -
+       number of leaves, E - color of the stamen filament, Y - yellow, K - black.
+
+It's worth noting that T. borszczowii has the same features as the common ancestor among these tulip
+species.
+
+                 On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+                 ones.
+
+                 A. In a phylogenetic tree constructed using maximum parsimony, the species T.
+                 lemmersii, T. salsola, and T. bifloroformis are expected to constitute a polyphyletic
+                 group.
+
+                 B. The maximum parsimony tree contains at least one character reversal.
+
+                 C. All plants within the genus Tulipa share the characteristic of having leaves
+                 with either arcuate or parallel veins.
+
+                 D. According to the data, the presence of two or more flowers is the most re-
+                 cently evolved characteristic compared to the others.
+@@PAGE 7@@
+Theoretical Exam - Part A  Q1-2
+                                          English (Official)
+
+2
+
+You are given five species of birds from the Strigiformes order (Owls), commonly found in Kazakhstan
+(Figure 1A). However, the genera to which these species belong are unknown to you. To ascertain this,
+you were provided with information depicted in the figures below.
+
+                                                                                           Million years
+
+Figure 1. A Five bird species; the bottom row in each box represents the partial list of the
+birds' inhabiting areas (refer to Figure 2). B Phylogenetic tree of the Strigiformes order with
+their full inhabiting area lists. The number of species that make up the corresponding genus
+is indicated in parentheses.
+@@PAGE 8@@
+Theoretical Exam - Part A  Q1-3
+                                          English (Official)
+
+                                           South America
+                                           Central America
+                                            North America
+                                            Eurasia
+                                            Africa
+                                            Madagascar
+                                            Philippines
+                                            Australia
+                                            New Zealand
+
+Figure 2. Area distribution key; each rectangle corresponds to a certain area.
+
+It is also known that:
+    · Species 3 and 5 share the most recent common ancestor that lived 5 million years ago.
+    · Species 2 and 3 share the most recent common ancestor that lived 20 million years ago.
+    · Species 5 and 4 share the most recent common ancestor that lived 40 million years ago.
+    · The genus to which species 1 belongs has never been found in the Philippines.
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. One of the five listed species is the only representative of its genus.
+
+B. Constructing a phylogenetic tree using this data reveals that species 1 and 4
+are the second most closely related among the five species.
+
+C. Some of the five given species belong to the same genus.
+
+D. A migration (in terms of species dispersal) from America to Africa and Eura-
+sia is a more parsimonious explanation for the geographic distribution of Strix
+compared to a migration in the opposite direction.
+@@PAGE 9@@
+Theoretical Exam - Part A           Q1-4
+                                                   English (Official)
+
+3
+
+Yerzhan studies the evolution of four closely related bacterial strains (A, B, C, D), focusing on RNA poly-
+merase subunit  and transposase. He reconstructed phylogenetic trees for the two corresponding
+genes that code for these proteins (Figure 1X,Y) using the alignment of four sequences (representative
+snapshot is shown on Figure 2) and the most parsimonious solution. He rooted both phylogenies using
+the D strain as an outgroup. Unfortunately, he realized that he forgot to properly label the datasets.
+Consequently, he began comparing these phylogenetic trees to the reference phylogenetic tree recon-
+structed from genes of ribosomal proteins (Figure 1Z).
+
+X                          Y     Z
+
+   C                          A     A
+
+   B                          B     B
+
+   A                          C     C
+
+   D                          D     D
+
+Figure 1. Phylogenetic trees reconstructed from RNA polymerase subunit  (X or Y), trans-
+posase (X or Y) and reference genes of ribosomal proteins (Z).
+
+Figure 2. Alignments of representative regions of two genes from four bacteria strains (A-D)
+
+         On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+         ones.
+
+         A. Phylogenetic tree X was reconstructed from the alignment I.
+
+         B. In the Alignment I, 4 out of 5 positions are useful for determining tree's topol-
+         ogy.
+
+         C. Phylogenetic tree X was reconstructed from the RNA polymerase subunit .
+
+         D. Using species D as an outgroup, there are in total two possible phylogenetic
+         tree topologies for the four species A-D.
+@@PAGE 10@@
+Theoretical Exam - Part A                                 Q2-1
+                                                                         English (Official)
+
+Cell and Molecular Biology
+
+4
+
+The extracellular pH of normal tissues is typically between 7.35 and 7.45. Meanwhile, in the tumor mi-
+croenvironment, extracellular pH is mildly acidic in the range of 6.5­6.9. Figure 1B provides an overview
+of the average extracellular pH values observed in different tumor types compared to their respective
+normal cells. Cancer cells also exhibit changes in the oxygen consumption rates (OCR). This phenomenon
+is demonstrated in Figure 1A by comparing the OCR of normal and cancer cells from three patients.
+
+A                        Normal cells            B        Tumor tissue
+                         Cancer cells                     Normal tissue
+                                               *                                                   8.0
+                                       *                                                      7.8pH
+                                                                                         7.6
+                          *                                                        7.4Skin
+                                                                               7.2Vulvar
+                                                                         7.0  Uterus
+                                                                    6.8        Lung
+                                                               6.6             Breast
+                                                          6.4
+                                                                               Brain
+   Single cell OCR (AU)
+
+                                                                                                        Muscles
+
+                         Patient 1  Patient 2  Patient 3
+
+Figure 1. A Oxygen consumption rates (OCR) in arbitrary units (AU) of normal and cancer
+cells. B Extracellular pH of normal tissue and corresponding tumor tissue. Asterix indicates a
+significant difference.
+
+                         On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+                         ones.
+
+                         A. Difference in oxygen consumption between cancerous and normal cells in-
+                         dicates that tumor cells exhibit decreased metabolic rate.
+
+                         B. Differences in extracellular pH values can be explained by the altered ratio of
+                         glucose fermentation to oxidative phosphorylation in cancer cells compared to
+                         normal ones.
+
+                         C. The tumor microenvironment is typically hyperoxic due to elevated oxygen
+                         consumption by cancer cells.
+
+                         D. The cancer cells of patient 3 are more heterogeneous compared to the cancer
+                         cells of the other two patients.
+@@PAGE 11@@
+Theoretical Exam - Part A  Q2-2
+                                          English (Official)
+
+5
+
+Mutagenesis was performed to determine the effect of single mutations in the binding site of an anti-
+body. The mutants were analyzed for binding to four cardiac glycoside molecules: digoxin, digitoxin,
+digoxigenin, and ouabain. The binding properties of mutated antibodies were tested by ELISA, a tech-
+nique that relies on enzyme-linked antibodies to detect target antigens. After the antibody binds to the
+antigen (in our case, glycoside), the enzyme linked to the antibody catalyzes the added substrate, lead-
+ing to a color change that can be measured by spectrophotometry at 405 nm. The following heatmaps
+represent the ELISA results based on the position of change and the amino acid to which wild-type amino
+acid was mutated.
+
+Figure 1. A Binding data of antibodies mutated in the positions described in the figure to the
+four glycosides. The absorbance, which correlates to the binding strength of digoxigenin (P),
+ouabain (Q), digoxin (R), and digitoxin (S) to the mutated antibodies, was linearly scaled to that
+of the wild-type (labeled in red) which was assigned a value of 1.0 (labels of glycosides P, Q, R,
+and S should not be confused with the one-letter codes of amino acids). B Differences in the
+structure of digoxin (R) and its three analogs. W - sugars.
+@@PAGE 12@@
+Theoretical Exam - Part A  Q2-3
+                                          English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. The strongest binding in position Tyr-33 was for substitution by aromatic
+amino acids.
+
+B. In all shown amino acid positions, at least one substitution improves the an-
+tibody affinity.
+
+C. Antibody with double substitution Tyr-33-Trp and Trp-100-Arg probably could
+be used in cardiac glycoside detection systems.
+
+D. Sugar moieties appear to play a role in the affinities of antibodies to cardiac
+glycoside molecules.
+@@PAGE 13@@
+Theoretical Exam - Part A  Q2-4
+                                          English (Official)
+
+6
+
+The bonds between the central carbon atom and attached groups in peptides can rotate freely. The
+rotation angles of the N-C and C-C bonds are called  and  angles, respectively. To measure the
+ angle, first draw the C-C bond horizontally so that the N group is at 0 degrees (in the same plane
+as the C-C bond). Then rotate the distal N group around the C-C bond until the structure matches
+the structure that you aim to measure as shown in Figure 1C. For the  angle, place the N-C bond
+horizontally and rotate the distal C group. The Ramachandran plot visually represents the combinations
+of  and  angles in a peptide backbone (Figure 1B).
+
+Figure 1. A Part of the peptide with shown  and  angles. B The Ramachandran plot with
+the values of  and  angles for all the amino acid residues except Gly in the rabbit's pyruvate
+kinase. C The  angle values are created by the rotation. D Three structures of amino acids'
+residues.
+@@PAGE 14@@
+Theoretical Exam - Part A  Q2-5
+                                          English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. The structure (a) in Figure 1D is located in Region 2 in Figure 1B.
+
+B. The structure (b) in Figure 1D is located in Region 3 in Figure 1B.
+
+C. The structure (c) in Figure 1D is uncommon in rabbit's pyruvate kinase.
+
+D. Amino acids, other than glycine, with 0 degrees of both  and  angles do
+not occur in rabbit's pyruvate kinase.
+@@PAGE 15@@
+Theoretical Exam - Part A  Q2-6
+                                          English (Official)
+
+7
+
+The Pentose Phosphate Pathway (PPP) is a metabolic pathway occurring in the cytoplasm that mainly
+generates NADPH and ribose 5-phosphate. NADPH is used for the reduction of reactive oxygen species
+(ROS) such as hydrogen peroxide. PPP has oxidative and non-oxidative phases, which are irreversible
+and reversible, respectively.
+
+Figure 1. A Oxidative. B Non-oxidative. G6P ­ glucose 6-phosphate, GA3P ­ glyceralde-
+hyde 3-phosphate, F6P ­ fructose 6-phosphate, R5P ­ ribose 5-phosphate, G6PDH ­ glucose
+6-phosphate dehydrogenase, TKT ­ transketolase, N - nucleotides. CXP - other intermediates
+where X is the position of phosphorylated carbon. Note that all intermediates of PPP are phos-
+phorylated on the last carbon.
+@@PAGE 16@@
+Theoretical Exam - Part A  Q2-7
+                                          English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. In actively dividing cells, the reactions occurring before the first TKT-catalyzed
+reaction are more active than those occurring later.
+
+B. TKT catalyzes a reaction that transfers a one-carbon fragment.
+
+C. Deficiency of G6PDH activity will reduce the level of available NADPH in red
+blood cells.
+
+D. For each molecule of G6P, there will be two molecules of F6P produced
+through both phases.
+@@PAGE 17@@
+Theoretical Exam - Part A                               Q2-8
+                                                                       English (Official)
+
+8
+
+Certain loci in the genome are influenced by epigenetic modifications, but understanding their precise
+mechanisms remains challenging. The IGF2-H19 locus serves as a well-known example, regulated by
+the methylation state of the imprinting control region (ICR). In addition to the two genes, this locus
+contains one enhancer and four CTCF-binding sites (CTCF is a DNA-binding protein), one of which serves
+as an ICR. A proposed model suggests that the spatial interaction among these elements underlies the
+regulatory mechanism governing the expression of IGF2 and H19. CTCF binding does not interrupt with
+the promoter function.
+
+A          IGF2               B
+                                             IGF2
+
+   H19
+
+                                                   H19
+
+C                             Cohesin
+
+           CTCF
+
+D          IGF2               H19      GENES
+
+        1                  2  3             CTCF-BS
+                                       4
+
+Figure 1. A Paternal chromosome, IGF2 active (green arrow) and H19 inactive (red arrow). B
+Maternal chromosome, IGF2 and H19 basal expression (black arrows). Note that diagrams A
+and B reflects real physical distances and that intersection of two blue lines (represeting DNA)
+reflects very close physical proximity of two DNA strands. C DNA loop formed by CTCF and
+cohesin. D IGF2-H19 locus with CTCF-binding sites 1-4 (CTCF-BS).
+@@PAGE 18@@
+Theoretical Exam - Part A  Q2-9
+                                          English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. One CTCF-binding site can be involved in the formation of only one DNA loop.
+
+B. ICR overlaps with CTCF binding site 2.
+
+C. The enhancer is located between CTCF binding sites 3 and 4.
+
+D. ICR methylation directly affects the expression of H19, independent of the
+enhancer.
+@@PAGE 19@@
+Theoretical Exam - Part A  Q2-10
+                                                    English (Official)
+
+9
+
+Cryo-EM is a modern structural study technique that works by averaging multiple low-quality electron
+micrographs, cryo-EM generates high-quality structural maps. It offers flexibility by accommodating
+various molecular sizes and capturing multiple conformations. The structure and mechanism of ATAD1,
+a mitochondrial homohexamer protein, were resolved using cryo-EM. The protein's function was then
+determined using the structural data and fluorescent assays.
+
+Figure 1. A Density map of the average of all conformations obtained by electron microscopy.
+B Top view of the molecular model of ATAD1 hexamer emphasizing C-terminal alpha-helices,
+with a black curve representing the polypeptide chain substrate. C The structure of the central
+pore with its substrate (black) and all interacting amino acids (colored residues). D Fluorescent
+microscopy assay for wild-type ATAD1 and with mutation E193Q (at position 193, Glu  Gln),
+Gos28 is the hypothetical target, MitoTracker is a mitochondrial fluorescent marker, the red
+arrow points to one mitochondrion.
+@@PAGE 20@@
+Theoretical Exam - Part A  Q2-11
+                                                    English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Given that the density map contains an unclear M6 subunit, at any moment
+only one of the ATAD1 subunits is flexible.
+
+B. C-terminal alpha helices shown on the molecular model are made entirely
+from hydrophobic amino acids.
+
+C. Change of charge due to mutation E193Q affects the physical interaction of
+position 193 with the substrate.
+
+D. ATAD1 translocates proteins mislocalized into the matrix of the mitochondria.
+@@PAGE 21@@
+Theoretical Exam - Part A                  Q2-12
+                                                                    English (Official)
+
+10
+
+Magnetotactic bacteria have magnetosomes (magnetite crystals with a lipid membrane) arranged in
+a line, helping them find water with suitable oxygen levels in the oxic-anoxic transition zone (OATZ in
+Figure 1B). These bacteria are classified into two types: polar, which align their body orientation with the
+magnetic field, and axial, which can have two orientations along the magnetic field axis. In the Earth's
+Northern and Southern hemispheres, polar bacteria magnetosomes have opposite polarities. To stay in
+the OATZ, polar bacteria change the rotation direction of their flagella based on oxygen concentration.
+
+A                          B                          Earth's
+                                    Water             magnetic field
+
+                           Depth                      Counter
+
+                                                      Clockwise
+
+                           OATZ
+
+                                           Clockwise
+
+C
+
+                                    Magnetic field
+
+Figure 1. A Magnetotactic bacteria with labeled magnetosomes, the lower image shows the
+magnetic field generated. B Northern hemisphere polar bacteria in water, OATZ - suitable
+oxygen level. C Experimental setup: water-filled tube with two openings in a magnetic field.
+Bacteria start in the anoxic zone (red).
+
+          On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+          ones.
+
+          A. Magnetosomes help bacteria find the shortest path toward OATZ.
+
+          B. Polar bacteria from the southern hemisphere should have a clockwise flagella
+          rotation when above OATZ.
+
+          C. Axial magnetotactic bacteria will form 2 distinct bands in experimental setup.
+
+          D. Polar magnetotactic bacteria from the southern hemisphere will start a coun-
+          terclockwise rotation of flagella when placed into experimental setup.
+@@PAGE 22@@
+Theoretical Exam - Part A                    Q2-13
+                                                                      English (Official)
+
+11
+
+Directed evolution is a process that mimics natural selection by artificially applying selective pressure to
+organisms to screen and select for a desired phenotype. Directed evolution can be employed in protein
+engineering.
+
+The Escherichia coli AL strain was engineered by deleting specific pathways that regenerate NAD+ (Fig-
+ure 1). NAD+ regeneration can be restored by introducing a foreign enzyme, referred to as Enzyme D,
+which converts an exogenous substrate, not naturally connected to the native metabolic network, into a
+non-toxic product using NADH as a cofactor. A library comprising randomized mutants of Enzyme D is
+introduced into the engineered E. coli AL strain.
+
+                                 C
+
+A
+
+   D                       NAD+
+
+                           NADH
+
+                                             NADH            NAD+
+
+                                 Pyruvate                    D-Lactate
+
+B                                Acetyl-CoA
+
+                                             NADH
+
+                                                       NAD+
+                                 Acetaldehyde
+
+                                                       NADH
+
+   E. coli AL strain
+
+                                             NAD+
+
+                                 Ethanol
+
+Figure 1. A: exogenous substrate present in large intestine; B: library variants of enzyme D; C:
+carbon source; D: enzyme D
+@@PAGE 23@@
+Theoretical Exam - Part A  Q2-14
+                                                    English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Library construction is not required for directed evolution, as Enzyme D can
+mutate after selective pressure is applied.
+
+B. Enzyme D is under selective pressure only when the strain AL is growing un-
+der aerobic conditions.
+
+C. This method of directed evolution allows for differentiating between variants
+of NADH-dependent enzymes with low activity or high activity, in order to select
+the variants with the highest activity.
+
+D. E. coli AL strains with variants showing higher activity of Enzyme D have a
+better chance of survival in the human large intestine.
+@@PAGE 24@@
+Theoretical Exam - Part A             Q2-15
+                                                               English (Official)
+
+12
+
+A terminal cervical cancer patient arrived at the emergency room and received intravenous therapy and
+oxygen, but her condition did not improve. Medical personnel noticed a garlic-like odor, typically caused
+by sulfur-containing substances, emanating from her mouth, and white crystals formed in a blood sam-
+ple taken from her. Subsequently, the medical staff began losing consciousness and having convulsions.
+
+This 1994 incident at Riverside General Hospital was initially thought to be mass hysteria, later suspicion
+fell on DMSO4: prior to admission, the patient had applied excessive amounts of DMSO-based ointments
+for analgesic purposes. While DMSO itself is non-toxic to humans, DMSO4 is classified as a warfare agent.
+It rapidly undergoes the following reaction:
+
+ 4 + 22  23 + 24                                                                       (1)
+
+Figure 1. DMSO, DMSO2, and DMSO4 structures. DMSO4 can be produced by successive oxi-
+dation reactions of DMSO and DMSO2.
+
+Compound                        DMSO  DMSO2  DMSO4
+Enthalpy of formation (kJ/mol)  -150  -373   -687
+Solubility in water (g/L)       150   150    28
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Out of the three involved substances, DMSO2 most probably accounts for
+crystals in the collected blood.
+
+B. DMSO can increase the rate of absorption of compounds through biological
+membranes.
+
+C. The enthalpies of formation indicate that DMSO can rapidly change into
+DMSO2 and then into DMSO4 by being exposed to oxygen at room tempera-
+ture.
+
+D. Cervical cancer metastases in the ureters have likely restricted the only path-
+way of eliminating DMSO and its derivatives.
+@@PAGE 25@@
+Theoretical Exam - Part A  Q3-1
+                                          English (Official)
+
+Ecology
+
+13
+
+Legumes can fix nitrogen from the air. Anecdotal evidence showed industrial pollution with nitrogen and
+other macronutrients making legumes less fit for nitrogen-poor steppes and other grasslands, which
+make up half of Kazakhstan.
+
+Figure 1. The graph shows the effect of increased nutrients on the legumes in steppe field plot
+study. They had control soil (CTL), as well as soil enriched with N (nitrogen), P (phosphorus),
+K+ (potassium), and combinations of these elements. The top row is the normalized change
+(NC) after 3 years of treatment, and the bottom row is the NC after 6 years of treatment. Let-
+ters represent NC in A) legume cover B) species richness C) biomass of legumes. Black dots
+represent a statistically significant difference from control. Whiskers stand for the Standard
+Error of Mean (SEM)
+
+          On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+          ones.
+
+          A. Potassium coupled with nitrogen has a non-significant effect on legume
+          cover.
+
+          B. Legume biomass has the opposite response to changes in soil nutrients after
+          3 years and 6 years of treatment.
+
+          C. The graphs support steppe being, in general, a nitrogen-limited ecosystem.
+
+          D. In analogous graphs for non-nitrogen fixing plants, the NC values for
+          nitrogen-enriched soil will be positive.
+@@PAGE 26@@
+Theoretical Exam - Part A                                                                                                        Q3-2
+                                                                                                                                                English (Official)
+
+14
+
+The latitudinal diversity gradient describes a common pattern in the species richness seen in most groups
+of organisms whereby there are less species in the temperate regions than in the tropics. Species rich-
+ness is lowest at the poles and highest on the equator. The ubiquity of this pattern suggests the possi-
+bility of a single general explanation but our understanding of this pattern is incomplete. The current
+latitudinal zones arose approximately 45 million years ago, after a period in which the Earth was primarily
+tropical. The following three hypotheses (Figure 1A-C) could possibly explain this gradient:
+
+A          B                       C                                                                                             tropics
+
+   tropics                 tropics
+
+   temperate
+
+species                                                                                                                          temperate
+   richness
+                                                          species
+                                                             richness
+                                                                                                                    species
+                                                                                                                       richness
+                           temperate
+
+   time                    time                                                                                                  time
+
+Figure 1. A difference in carrying capacity. B difference in diversification rate. C difference in
+the starting point of diversification. Note that in each graph only one factor is changed.
+
+   On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+   ones.
+
+   A. The higher variance in species age in the tropics compared to temperate
+   regions is an argument supporting the hypothesis C.
+
+   B. The reappearance of the diversity gradient even after the global ecosystem
+   catastrophe would argue against the hypothesis C.
+
+   C. Hypothesis B is supported if greater seasonal variation would increase the
+   diversification rate.
+
+   D. The fact that most temperate taxa can be found in the tropics, but not vice
+   versa, supports the hypothesis A.
+@@PAGE 27@@
+Theoretical Exam - Part A                        Q3-3
+                                                                English (Official)
+
+15
+
+Walker circulation is the model that describes how temperature differences across the Pacific Ocean can
+explain local pressure and precipitation:
+
+                warm and dry
+                air becomes colder
+
+warm and moist                                   cold and
+air rises and                                    dry air
+becomes dry                                      sinks
+
+                cold and dry air
+                becomes warm and moist
+
+Western                                 Eastern
+Pacific                                 Pacific
+
+                Figure 1. Walker Circulation.
+
+Alterations in Walker Circulation are called El Niño Southern Oscillation (ENSO). This oscillation has 3
+phases: Neutral (normal Walker Circulation), El Niño (weak or reversed Walker Circulation), and La Niña
+(strong Walker Circulation). Here are some examples of the influence of ENSO on smaller ecosystems:
+@@PAGE 28@@
+Theoretical Exam - Part A                                        Q3-4
+                                                                                English (Official)
+
+                                                      number/m3  corixids
+
+                                                      mg/m3      grazers
+
+                                    1
+
+                                       0°
+
+                                    2
+
+                                       0°
+
+          1980 1982 1984 1986 1988
+
+Figure 2. Top left: Global context of the smaller ecosystems mentioned. A, B, and C represent
+data from the corresponding ecosystems.
+
+Location  Ecosystem/Community                         Changes
+A         Great Salt Lake grazers (native species     Ecosystem in years X, Y, and Z
+          represented by 4 colors) and corixids (in-
+B         vasive freshwater predators)                Size of kangaroo population (in thou-
+C         Australian red kangaroo population          sands)
+                                                      Two consecutive years (1 and 2); color
+          Intertropical Convergence Zone - winds      represents productivity of algae ranging
+          blowing the surface of the water cause      from low (blue) to high (red).
+          upwelling of deep-nutrient-rich water
+
+          On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+          ones.
+
+          A. In neutral Walker Circulation, the Western Pacific has higher terrestrial
+          ecosystem productivity than the Eastern Pacific.
+
+          B. Increase in the number of red kangaroos in 1988 was potentially caused by
+          El Niño.
+
+          C. C1 shows pre-El Niño year and C2 is El Niño year.
+
+          D. Changes during year Y are probably caused by La Niña.
+@@PAGE 29@@
+Theoretical Exam - Part A                                       Q3-5
+                                                                               English (Official)
+
+16
+
+Fractal geometry can be illustrated by Mandelbrot's question: How long is the coast of Britain? The
+answer depends on the scale of measurement.
+
+Analogously, ecosystems exhibit scale-dependent resource availability. For instance, measuring Admi-
+ralty Island's coastline from the perspective of an eagle (using the distance between nests) yields 761
+km, whereas considering barnacles (requiring 2 cm of space) results in 11,000 km.
+
+Figure 1B shows the relationship between the coastline length of Admiralty Island and the scale at which
+it is measured, as defined by the equation on the graph. A similar relationship exists for the amount of
+resources available for a species that operates at a given scale, as well as for its biomass.
+
+A                          B Coastline
+                           Length (km)
+
+                                        a
+                                                             b
+
+                                                                                         Scale (km)
+
+Figure 1. A Admiralty island. B Log-log graph of resolution (scale) and the length of Admiralty
+coastline; a, b - species; Q - resource available or biomass or coastline length, k - constant, L -
+scale, d - fractal dimension describing the complexity of the pattern, more complex patterns
+correspond to higher values of d.
+
+          On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+          ones.
+
+          A. The graph for region 1 will have a steeper slope than the graph for region 2.
+
+          B. The number of individuals in an ecosystem consisting solely of species oper-
+          ating at scale b is larger than the number of individuals in an ecosystem con-
+          sisting solely of species operating at scale a.
+
+          C. According to this theory, along with a decrease in the number of individuals
+          at high trophic levels, all predators should have a larger body size than their
+          prey.
+
+          D. Social behavior, such as the formation of herds, influences the scale of per-
+          spective.
+@@PAGE 30@@
+Theoretical Exam - Part A                 Q3-6
+                                                         English (Official)
+
+17
+
+Water is a common renewable resource on Earth; however, after its use, water loses some of its prop-
+erties, such as purity, heat content, and potential energy. While they eventually will be restored, this
+happens on a geological timescale. Less than 1% of total water is available for human use ­ renewable
+freshwater resources (RFWR) ­ and even from this small fraction of water, only 10% is enough to fulfill the
+needs of humanity. While theoretically, there is more than enough water, many regions still experience
+a water crisis ­ a lack of accessible RFWR or an inability to utilize available RFWR.
+
+Figure 1. The world map with Rws values.
+
+                             =   -                                               (1)
+                                   
+
+                                =                                                (2)
+                                   
+
+Equations: Rws - water scarcity index, Aw - water crowding indicator, W - total annual water withdrawal
+by population, S - total water use from desalinated water, Q - RFWR, C - population size.
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Higher human activity leads to shorter mean residence time of water
+molecules in reservoirs.
+
+B. Low Rws indicates the absence of a water crisis
+C. Correlation between Rws and 1/Aw is weaker in regions with poor water in-
+frastructure.
+
+D. Food import would be a better long-term solution for the water crisis in dry
+regions rather than water import.
+@@PAGE 31@@
+Theoretical Exam - Part A  Q4-1
+                                          English (Official)
+
+Ethology
+
+18
+
+Roads are responsible for habitat fragmentation, impeding wildlife movement via the "Barrier effect,"
+which combines direct mortality from collisions with animal avoidance behaviour. Note that animal re-
+sponse to moving cars can resemble their reaction to natural danger stimuli. The research identified
+four types of animal behavioural responses (see Table 1) based on their perceived danger from traffic.
+Each animal species typically exhibits only one of these behavioral responses
+
+Behavior type  Description
+Speeders
+Avoiders       Their primary response to threats is to flee across the road.
+
+Nonresponders  Avoid the road at much lower traffic volume and remain further from the
+Pausers        road than other types
+
+               Do not cease their movement at any level of traffic intensity
+
+               Reduce their speed by freezing, which increases the time spent on the
+               roadway
+
+Table 1. Types of animal behavioural responses to traffic. Traffic volume entails the number of vehicles
+                                               passing a point on a road segment.
+@@PAGE 32@@
+Theoretical Exam - Part A                         Q4-2
+                                                                 English (Official)
+
+                B             M     A
+
+ 1 Western barn owls             1 Armadillos
+
+             BM                     B             A
+
+Y                                Y
+
+                   A                           Z
+                B                                          M
+
+0            X                   0             X
+
+1 Mule deer                      1 Indiana bats
+
+Y                          A     YB A
+
+                      M                M
+
+0            X                   0             X
+
+Figure 1. The total barrier effect (B, black solid line) from mortality (M, blue dashed line) and
+avoidance (A, red dotted line) for the four response categories. X - traffic volume in arbitrary
+units. Y - magnitude of the barrier effect in term probability (from 0 to 1).
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Nonresponding behaviour is more likely to exist in top predators of a food
+chain.
+
+B. Relative steadiness in the mortality of mule deer after an initial increase dur-
+ing low traffic volume is due to the mule deer's road-avoiding behaviour.
+
+C. Point Z indicates the moment when armadillos are more likely to start paus-
+ing at the road edge than the road surface
+
+D. Indiana bat is probably a speeder.
+@@PAGE 33@@
+Theoretical Exam - Part A                                                  Q4-3
+                                                                                          English (Official)
+
+19
+
+Individual progress and subsequent social learning are important aspects of group living. The progres-
+sive accumulation of culture within a group over time is called Cumulative Cultural Evolution (CCE). The
+following study aimed to investigate the interplay between CCE and collective decision-making. Rock
+pigeons (Columba livia) building routes between two distant points were taken as a model system.
+
+A        Experimental pair                  B
+
+                                                  Route efficiency               ** **
+
+                                                           1
+
+                                                        0.8
+
+         Solo control                       0.6                               Experimental
+         Pair control                       0.4                               pair
+                                            0.2                               Solo control
+                                                                              Pair control
+                                                        1
+   1  6 12 1  6 12 1   6 12 1 6 12 1  6 12                 6 12 1  6 12 1  6 12 1 6 12 1  6 12
+      1       2        3    4         5
+                                                           1       2       3  4           5
+                            Rounds
+                                                                              Rounds
+
+         Flight number                                     Flight number
+
+Figure 1. A In solo and pair controls the same birds fly all 60 times while in the experimental
+group, one of the birds is replaced every round (12 flights) with a new one. After each round,
+the performance on the last flights of the experimental pair and both controls were compared
+(** - significant difference). Route efficiency is calculated relative to the straight line connecting
+two points. B Change in route efficiency across flights, grouped by rounds.
+
+      On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+      ones.
+
+      A. There is evidence of social learning in the pigeon community.
+
+      B. Comparing the mean performance of each group within each round may lead
+      to incorrect interpretations of the experimental results.
+
+      C. In the experimental group, the new pigeon takes an active part in developing
+      the route.
+
+      D. Collective decision-making is the main reason for the difference between the
+      effectiveness of the routes of the experimental group and control groups.
+@@PAGE 34@@
+Theoretical Exam - Part A  Q5-1
+                                          English (Official)
+
+Genetics and Evolution
+
+20
+
+Imagine a planet inhabited by animal-like creatures capable of both meiosis and mitosis, where the fun-
+damental principles of genetics apply. This species is distinguished by two alternating heteromorphic
+generations: haploid and diploid.
+
+The haploid (n) generation consists of intelligent beings who dwell in urban environments and form pairs
+of sexual partners. In contrast, individuals of the diploid (2n) generation are non-rational and aggressive
+and are reared in specialized nurseries. The haploid pairs entrust their offspring to these nurseries,
+where the diploid organisms give rise to a new haploid generation.
+
+In one locus of these organisms, there are three alleles: A1 (most dominant) > A2 > A3 (most recessive).
+Among the 2n generation, 1% of organisms have the A3 phenotype, 8% have the A2 phenotype, and 91%
+have the A1 phenotype.
+The entire population is in genetic equilibrium.
+
+                 On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+                 ones.
+
+                 A. Individuals with the A1 phenotype make up more than 75% of the haploid
+                 generation.
+
+                 B. There are two possible genotypes for individuals with the A2 phenotype in
+                 the 2n generation
+
+                 C. Each haploid organism has one "grandfather" and one "grandmother", from
+                 each of which it has exactly 50% of its genetic material.
+
+                 D. When a recessive lethal mutation that blocks mitosis occurs in this gene, it
+                 can persist in the population for many generations.
+@@PAGE 35@@
+Theoretical Exam - Part A                                           Q5-2
+                                                                                   English (Official)
+
+21
+
+The 'Out of Africa' theory postulates that modern humans originated in Africa and subsequently migrated
+to different parts of the world. Indeed, large-scale analyses of human genomes strongly support this
+theory. An example of such support can be observed in the pronounced negative correlation between
+population genetic diversity and distance from East Africa (Figure 1). Effective population size refers to
+the size of an idealized population with the same genetic diversity as in the observed population as in
+all present genetic diversity within the observed population has been concentrated in a more limited
+number of individuals.
+
+Mean heterozygosity                                                 r: -0.91
+
+     0.45 0.50 0.55 0.60 0.65 0.70 0.75  Africa
+                                         Europe
+                                         Middle East
+                                         South Central Asia
+                                         East Asia
+                                         Oceania
+                                         America
+
+                                         5000  10000         15000  20000            25000
+
+                                               Distance to East Africa (kilometers)
+
+Figure 1. Average heterozygosity in humans vs distance from East Africa.
+@@PAGE 36@@
+Theoretical Exam - Part A  Q5-3
+                                          English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Populations further away from East Africa have larger long-term average ef-
+fective population sizes.
+
+B. A slightly deleterious mutation is less likely to get fixed (frequency = 1) in the
+African population compared to the native American population
+
+C. The reduced genetic diversity in non-African populations is likely due to the
+founder effect.
+
+D. Figure 1 could represent the heterozygosity of DNA polymerase genes.
+@@PAGE 37@@
+Theoretical Exam - Part A        Q5-4
+                                                English (Official)
+
+22
+
+During the first step of ethanol metabolism in humans, alcohol dehydrogenase (ADH) converts ethanol
+to toxic acetaldehyde that can accumulate in the body.
+
+ADH1B gene of alcohol dehydrogenase has 2 alleles with varying levels of enzyme activity: ADH1B*2
+is associated with rapid alcohol metabolism compared to ADH1B*1. The ADH1B*2 distribution has a
+distinct geographical pattern (see Fig.1B).
+
+                              N
+
+1                          2
+
+                              S
+
+                              3
+
+Figure 1. A The historical origins (Areas 1-3) of agriculture emerged 10,000 years BP ("before
+present"). B Global contour plot of the ADH1B*2 allele frequency. The red triangles on the
+map are points of the data collection.
+
+On your answer sheet, indicate "T" for true statements and "F" for false         1.0pt
+ones
+A. The ancestral allele of the ADH1B gene evolved to degrade high amounts of
+exogenous alcohol.
+
+B. ADH1B*2 is likely protective against sustained ethanol abuse.
+
+C. Agriculture in Area 3 has been strongly associated with ethanol production.
+
+D. Based on the given data, it is more plausible that positive selection on the
+ADH1B locus occurred independently in Areas 1 and 2 than negative selection
+occurred elsewhere.
+@@PAGE 38@@
+Theoretical Exam - Part A                                                                                                                 Q5-5
+                                                                                                                                                         English (Official)
+
+23
+
+Aizhan studies polymorphism of locus JR_189021 in Drosophila melanogaster that has only two alleles
+­ A1 and A2. To study the fitness of genotypes, she runs a long-term evolution experiment with ten
+independent populations of 1,000 flies for 150 generations and measures the frequence of allele A1
+in each generation (Figure 1). After completing it, she decided to change the population size and run
+an experiment using the same setup (Experiment #2). Additionally, she estimated the expected theo-
+retical fit using the fitness values of each genotype reported in the literature. The locus is not under
+frequency-dependent selection. Assume that homozygous phenotypes are at the extreme of pheno-
+typic distribution. Allele and genotype frequencies within a given generation can be assumed to follow
+Hardy-Weinberg equilibrium.
+
+Experiment #1                                                                                                                             Experiment #2
+
+Frequency of Allele A1
+                                                                                                                  Frequency of Allele A1
+
+Generation                                                                                                                                Generation
+
+Figure 1. The frequency of allele A1 across 150 generations in experiments #1 and #2. Each
+curve represents a different replicate, while the dashed line is the theoretical fit of all ten pop-
+ulations.
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. In the long term, the locus is under the directional selection.
+
+B. For experiment #2, Aizhan increased the population size.
+
+C. Flies with the A1A2 genotype have the highest fitness.
+
+D. Flies with the A1A1 genotype have higher fitness than flies with the A2A2
+genotype.
+@@PAGE 39@@
+Theoretical Exam - Part A                     Q5-6
+                                                             English (Official)
+
+24
+
+While central dogma claims that synonymous substitutions (which do not change the primary sequence
+of the polypeptide) do not have any effect on protein sequence and its cellular function, codons are not
+used to the same extent in the vast majority of sequenced genomes. This is known as the codon usage
+bias. For example, among four codons that encode glycine in Escherichia coli, GGU and GGC have higher
+abundance than GGA and GGG codons. The primary driver for such unequal codon usage is to match
+the available pool of tRNA molecules.
+
+                 On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+                 ones.
+
+A. Protein coding genes that are involved in ribosomal assembly have very high
+codon usage bias.
+
+B. Transgenic material that was not corrected for codon usage bias of the recip-
+ient's genome will have lower translational efficiency relative to the corrected
+one.
+
+C. Codon usage bias is not found in viruses.
+
+D. Methionine will have one of the strongest codon usage biases because it is
+always the first amino acid in the protein.
+@@PAGE 40@@
+Theoretical Exam - Part A        Q5-7
+                                                English (Official)
+
+25
+
+Mitochondrial RNase P is an endonuclease composed of three subunits (Figure 1B). Mutations in this
+enzyme are often associated with the development of combined oxidative phosphorylation deficiency
+syndrome (COXPD54) in humans. The figures below show various information regarding RNase P and
+its mutations.
+
+C                             X  Y
+      Human
+      Chimpanzee           Z
+      Mouse
+      Rat
+      Zebrafish
+      Drosophila
+
+      Human
+      Chimpanzee
+      Mouse
+      Rat
+      Zebrafish
+      Drosophila
+
+Figure 1. A1 & A2 are pedigrees of two families showing distinct missense mutations resulting
+in the COXPD54 syndrome in shaded individuals; mutation X for A1 and mutation Y for A2.
+B RNase P subunits; (MTS - mitochondrial targeting sequence). C Alignment results of the
+RNase peptide segment across various organisms. Positions affected by the mutations are
+highlighted in orange boxes. The mutations leading to COXPD54 syndrome are Tyr (Y)  His
+(H) in position X; Thr (T)  Ala (A) in position Y; Ala (A)  Val (V) in position Z.
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Within the primary structure, it can be assumed that the mutation at position
+X is located closer to the active site of the enzyme than the mutation at position
+Z.
+
+B. Mutation at position Y involves transversion (purine to pyrimidine change).
+
+C. All of the RNase P subunits assemble within the cytoplasm before being trans-
+ported into the mitochondrion.
+
+D. Knowing that individual II-3 (A1) is the carrier of mutation at position X, the
+probability of the couple II-3 (A1) and II-2 (A2) having a child with the syndrome
+is 1/6. (Assume Mendelian inheritance.)
+@@PAGE 41@@
+Theoretical Exam - Part A                                      Q5-8
+                                                                              English (Official)
+
+26
+
+Mass extinctions occur when environmental changes outpace rates of species adaptation. One way to
+quantify this change is by measuring the addition of inorganic carbon to oceans over time. Significant
+changes in the flux between inorganic and organic carbon reservoirs are termed carbon cycle pertur-
+bation events. Mass change measures the magnitude of change in inorganic carbon mass in oceans.
+Another quantifying metric of a carbon cycle, isotopic shift measures the change in carbon isotopic
+composition during the event.
+
+In the last 220 million years, the biological pump, which transports organic carbon and calcium carbonate
+from the ocean's surface to the deep sea, has significantly strengthened.
+
+A                                      B
+
+   Isotopic                               Mass
+      shift (a.u.)                           change (a.u.)
+
+                     Event                              Event
+                     duration (years)                   duration (a.u.)
+C
+                                       D
+
+   Mass                                   Event
+      change (a.u.)                          duration (years)
+
+                     Date (my)                                 Date (my)
+
+Figure 1. Carbon-shifting processes plots.
+
+A Isotopic shift vs Event duration. B Mass change vs Event duration. Gray shaded area
+around the line represents error margin of the fit line. C Mass change vs Date. D Event
+duration vs Date; my - million years, a.u. - arbitrary units; Red dots: events considered as
+mass extinctions. Blue dots: other carbon perturbation events. Units may differ between
+graphs. Note that mass extinction events are not included in graph D.
+@@PAGE 42@@
+Theoretical Exam - Part A  Q5-9
+                                          English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. One of the mass extinction events is likely caused by mechanisms distinct
+from those seen in other events.
+
+B. The lack of information about minor events that happened early in Earth's
+history alone can explain the trend in Graph C.
+
+C. The line in Graph B represents a critical threshold, above which a carbon
+perturbation event is likely to be associated with extinction catastrophe.
+
+D. A more efficient biological pump results in smaller and shorter carbon per-
+turbation events.
+@@PAGE 43@@
+Theoretical Exam - Part A                       Q5-10
+                                                                         English (Official)
+
+27
+
+Five mutations in beta-lactamase can significantly affect its ability to degrade third-generation antibiotics
+like cefotaxime: Mut1, Mut2, Mut3, Mut4, Mut5. Since they can appear in any order there are 5! (=120)
+potential trajectories of resistance development. However, only 18 of them are evolutionarily accessible.
+The term "evolutionarily accessible" refers to the ability of a particular mutational pathway to produce
+an advantageous phenotype during the evolution. Implications from this simple model could be used to
+understand the evolution of more complex traits.
+
+A                                      B  Cumulative probability
+
+         0.13  1.41  2050  2900           1.00
+         1.41  362   362   1650           0.75
+
+   0.09                          4100
+
+                                          0.50
+
+   Mut1        22.6  362   2050
+
+   Mut2                                   0.25
+   Mut3
+               32.0  362
+
+   Mut4                                   0.00
+   Mut5              362
+
+                                                Trajectory
+
+Figure 1. A Graph showing the ten most probable trajectories leading from wild-type beta-
+lactamase (BL(WT)) to an improved version (BL*), the efficiency of each phenotype indicated on
+the node. Colored arrows represent the five potential mutations. B The cumulative probability
+of each of the 18 possible trajectories.
+
+          On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+          ones.
+
+          A. Some mutations require additional mutations to have a significant effect.
+
+          B. The trajectories 1-18 (Figure 1B) are arranged based on the increasing prob-
+          ability of occurrence.
+
+          C. A mutation's effect on fitness influences the probability of this specific muta-
+          tion occurring.
+
+          D. The final fitness of the trajectory is the primary factor affecting the evolution-
+          ary accessibility of the trajectory.
+@@PAGE 44@@
+Theoretical Exam - Part A                      Q5-11
+                                                                        English (Official)
+
+28
+
+Mutations have different effects ranging from strongly deleterious to highly adaptive. The frequency,
+with which a particular mutation appears de novo, is described by the fundamental property of each
+species - distribution of fitness effects (DFE). There are two direct methods of finding DFE: induce mu-
+tations and check the fitness of each mutation or prepare mutation accumulation lines and compare
+their fitness distribution with the initial line. DFE can also be inferred indirectly from sequencing data
+that compares rates of non-synonymous (N) and synonymous (S) substitutions using the dN/dS ratio
+between different species.
+
+                           Preserved ancestor
+                           line
+
+Ancestor                   Gen 1  Gen 2        Gen N
+line
+
+Figure 1. Scheme of mutation accumulation line experiment.
+
+                            ×  < 1                                                (1)
+
+(1) mutations with s satisfying this inequality are called effectively neutral. Ne - effective population size;
+s - absolute value of strength of selection.
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Individual effectively neutral mutations are fixed only due to genetic drift.
+
+B. Species with large Ne have higher adaptability.
+
+C. The mutation accumulation line method always underestimates the fre-
+quency of deleterious mutations.
+
+D. dN/dS is proportional to the ratio of deleterious mutations.
+@@PAGE 45@@
+Theoretical Exam - Part A                     Q5-12
+                                                                       English (Official)
+
+29
+
+Retroviruses are RNA viruses that have RNA to DNA reverse transcription steps in their life cycle. Some
+can become endogenous retroviruses (ERVs), where they integrate into the host genome and become
+heritable. Retrotransposons are genetic elements that can spread over the genome using RNA inter-
+mediate for translocation. There is some evolutionary relationship between retrotransposons and ERVs.
+ERVs and retrotransposons are valuable parts of our genome that provide extra genetic material for
+evolution.
+
+A     5'-LTR     gag       pro           pol  env  3'-LTR
+
+B     5'-LTR     3'-LTR
+
+C     Frequency                               Beneficial ERV
+      in population                           Deleterious ERV
+100%                                          X
+
+      Thousands                Millions
+      of years                 of years
+
+                 Time
+
+Figure 1. A Common structure of ERV, LTR - identical long terminal repeats, gag - virion struc-
+tural protein, pro - viral protease necessary for virion maturation, pol - reverse transcriptase,
+env - glycoprotein envelope protein. B Solo-LTR (empty ERV derivative). C Changes in frequen-
+cies of beneficial and deleterious ERVs after many generations.
+@@PAGE 46@@
+Theoretical Exam - Part A  Q5-13
+                                                    English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Whether or not the provirus will become an ERV depends on the type of cells
+infected by the retrovirus.
+
+B. ERV should lose at least two genes to no longer be a virus.
+
+C. Solo-LTRs are the least common type of ERV derivatives found in the genome.
+
+D. If an ERV encodes a restriction factor preventing entry of a species-specific
+exogenous retrovirus, it can have an evolutionary history depicted by line X.
+@@PAGE 47@@
+Theoretical Exam - Part A     Q6-1
+                                             English (Official)
+
+Plant Anatomy and Physiology
+
+30
+
+Gibberellin, an essential phytohormone responsible for cell wall suberization, undergoes complex trans-
+port within plants involving a variety of transporters. Below are figures depicting results from studies on
+different membrane transporters of gibberellin.
+
+Figure 1. A Fluorescence intensity (Y) of root endodermal cells in grafted plants (X, root/shoot).
+Samples were treated with a fluorescent marker for suberin (Nile red); asterisks indicate a
+significant difference from the wild type. Col-O - wild type, ga1-3 - mutant lacking gibberellin
+synthesis, npf__ - mutants lacking expression of a specific type of transporter(s). B Cytoplasmic
+(I) and vacuolar (II) concentrations of gibberellin (arbitrary units) in the root.
+
+          On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+          ones.
+
+          A. Transport of gibberellins occurs in the following direction: root  shoot.
+
+          B. Vacuoles of the pericycle cells are involved in the regulation of threshold val-
+          ues of gibberellin concentration.
+
+          C. The npf3.1 mutant is vulnerable to water and mineral imbalances, as well as
+          toxins, compared to wild type.
+
+          D. All the transporters listed are located on the plasma membrane.
+@@PAGE 48@@
+Theoretical Exam - Part A  Q6-2
+                                          English (Official)
+
+31
+
+During the Calvin Cycle, carbon dioxide is fixed by RuBisCo, an enzyme in plants. However, RuBisCo can
+also catalyze reactions with oxygen, which disrupts the photosynthesis.
+
+Photorespiration is a process of recovering ribulose-1,5-bisphosphate (RuBP, the RuBisCo substrate)
+from products of RuBisCo oxygenation. Recent studies suggest it plays a significant role in NADH gen-
+eration, managing the metabolic toxin 2-phosphoglycolate (2-PG), and connecting photosynthesis to
+nutrient assimilation and abiotic stress response pathways.
+
+                           Ser  GLUCONEOGENESIS
+
+Figure 1. A schematic of photorespiration. When overexpressed, the enzyme in dark green
+(square) increases the rate of reactions, the enzyme in orange (stars) does not affect it, and
+the enzyme in magenta (circle) slows it down. GDC = Glycine decarboxylase. C = chloroplast,
+P = peroxisome, M = mitochondrion.
+
+          On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+          ones.
+
+          A. If GDC was inhibited, the cell could still recover the RuBP lost to photorespi-
+          ration through gluconeogenesis.
+
+          B. Rising atmospheric carbon dioxide alone should increase need for photores-
+          piration.
+
+          C. If all shown peroxisome enzymes were overexpressed, photorespiration
+          would take less time per cycle compared to the wild type.
+
+          D. C4 plants rely less on photorespiration than C3 plants.
+@@PAGE 49@@
+Theoretical Exam - Part A  Q6-3
+                                          English (Official)
+
+32
+
+Poaceae (grass family) stomata have a "dumbbell" shape and a stronger connection between guard and
+subsidiary cells. Due to this adaptation, they respond to stimuli faster than non-Poaceae stomata. Specif-
+ically, alternating hyperpolarization (H) and depolarization (D) of cell membranes allow well-synced os-
+motic flow by activating the ion channels, as shown in Figure 1. Non-Poaceae stomata do not sync this
+closely.
+
+Due to the advanced geometry of Poaceae stomata, subsidiary cells actually lose turgor when guard cells
+gain it, and vice versa. That leads to the widest possible open pore, as the subsidiary cell "bends inward"
+to accommodate the growing guard cell.
+
+Figure 1. A) Schematic representation of Poaceae stomata synchronization mechanism. Guard
+cells are GC, and subsidiary cells are SC on the diagram. Question marks imply the effect has
+only partially been verified; blue H2O cylinders are aquaporins. B) Highlighted micrograph of
+a Poaceae (i) and non-Poaceae (ii) stomata.
+@@PAGE 50@@
+Theoretical Exam - Part A  Q6-4
+                                          English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. An electric pulse from an electrode connected to the stomata is able to both
+open and close it.
+
+B. Poaceae stomata would react to environmental stimuli quicker if subsidiary
+cells' cell walls are reinforced with lignin.
+
+C. Continuosly potassium-deficient plants would have a larger maximum open
+stomatal pore area.
+
+D. Increased expression of aquaporins would only affect the rate of open-
+ing/closing.
+
+33
+
+Xanthophylls are yellow-orange colored and fat-soluble photoprotective pigments. This is likely an adap-
+tation to the unforgiving sunlight in dry ecosystems. As excess light leads to the accumulation of protons
+in the thylakoid's lumen, this lower pH triggers a transformation of precursors (Pre-Z) into zeaxanthin
+(Z). All of them are xanthophylls.
+
+When protonated, Z changes the conformation of photosystem II to dissipate extra light energy as heat.
+Reduced ascorbate is a cofactor for de-epoxidase, the enzyme that catalyzes the Pre-ZZ reactions.
+
+Figure 1. A diagram of the thylakoid membrane, where S ­ stroma, L ­ lumen, E ­ epoxidase,
+DE ­ de-epoxidase, PSII ­ photosystem II, C6H7O6­ ­ ascorbate, red wavy arrows ­ heat, and
+green arrows with the plus sign ­ activation.
+@@PAGE 51@@
+Theoretical Exam - Part A  Q6-5
+                                          English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Sun-tolerant plants with the deleted de-epoxidase gene will exhibit shade
+preference instead.
+
+B. A temperate steppe shrub population will have higher xanthophyll leaf con-
+tent as compared to a forest understory shrub of the same species.
+
+C. The hot and sunny subtropical climate would lead to higher total xanthophyll
+concentrations in thylakoids compared to a colder sunny climate.
+
+D. If you have Vitamin C/ascorbate deficiency, you should eat leaves from the
+top of the canopy rather than the bottom.
+@@PAGE 52@@
+Theoretical Exam - Part A  Q6-6
+                                          English (Official)
+
+34
+
+After producing C3 sugars in the Calvin Cycle, plant cells can further produce other carbohydrates for
+structural growth, starch, and soluble carbohydrates. Discounting their structural use, the allocation of
+sugars between starch and soluble carbohydrates within the leaf can be used to assess the yield potential
+of crop plants.
+
+Researchers looked into the change in the ratio of starch to soluble sugars between different growing
+stages across three different breeds of maize (Zea mays). They look into the leaf carbohydrates during
+two vegetative and one reproductive stages. During the latter, the fast-growing kernels require large
+amounts of carbohydrates, making them suitable for future human consumption.
+
+Figure 1. S ­ starch concentration in leaves, TSC ­ total soluble carbohydrate concentration in
+leaves. t ­ hour of the day. A, B, and C are plots for two vegetative stages and the reproductive
+stage respectively. Different shapes represent the three cultivars.
+
+          On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+          ones.
+
+          A. Photosynthesis begins only after 9 am based on the given graphs.
+
+          B. Higher peak TSC levels during the reproductive stage compared to vegetative
+          stages can be explained by kernel growth.
+
+          C. The difference between TSC concentrations at 6h and 24h partially comes
+          from cellular respiration.
+
+          D. In the context of selecting for bigger seeds, lower leaf starch content is a
+          detrimental trait.
+@@PAGE 53@@
+Theoretical Exam - Part A  Q6-7
+                                          English (Official)
+
+35
+
+Fluid dynamics put an upper limit on how high a tree's water column might exist, and above that limit,
+water transport in the xylem will be disrupted. However, trees similar to Californian redwoods routinely
+grow above this limit. Scientists studied Californian Sequoia sempervirens from the alluvial flood plain and
+Sequoiadendron giganteum from the mountain slopes with most likely dry soil. Xylem adaptations have
+higher water and carbon cost upfront than stomatal adaptations, but allow plants to transpire more.
+
+Figure 1. Plots like the one above condense many variables like leaf conductance and wood
+density into two categories. Low PC2 values correspond to more efficient stomatal water use,
+and high PC2 to more efficient xylem water use. PC3 values are inversely proportional to leaf
+mass and wood density. The bigger the symbol, the taller is that particular tree. Middle-size
+symbols are a different shape to make telling apart easier.
+
+          On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+          ones.
+
+          A. S. giganteum wood is on average denser than S. sempervirens wood.
+
+          B. Short S. sempervirens trees are more adapted to resist xylem blockage.
+
+          C. S. giganteum might have higher PC2 scores if it is irrigated for several gener-
+          ations.
+
+          D. S. sempervirens wood density has a strong negative correlation with height.
+@@PAGE 54@@
+Theoretical Exam - Part A  Q6-8
+                                          English (Official)
+
+36
+
+Aquatic carbon primarily exists in the dissolved form, and due to the formation of H2CO3 (carbonic acid),
+there are three main species ­ H2CO3, HCO3-, and CO32-. Despite that, Rubisco only uses CO2 as the
+carbon source.
+
+The oceanic pH is around 8, and freshwater pH is around 7. Generally for aquatic plants, epidermal
+cells take up carbon directly, but diffusion is significantly slower in water than in air. Plants can uptake
+HCO3- faster than CO2. Some plants use intracellular carbonic anhydrase as a quicker carbon sourcing
+mechanism.
+
+Figure 1. Reaction for which carbonic anhydrase (CA) is the catalyst. Percent concentration
+(Mol(%)) of three types of dissolved carbon against water pH. The two lines are the boundaries
+separating three types.
+
+          On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+          ones.
+
+          A. Fully submerged aquatic plants are likely to have thicker cuticle.
+          B. Aquatic plants have adapted to the oceanic pH range by using HCO3- as a
+          CO2 source.
+          C. In stationary freshwater, releasing protons from the epidermis might aid CO2
+          intake.
+
+          D. Plants that use carbonic anhydrase have Rubisco with higher CO2 fixation
+          efficiency than plants that directly use CO2.
+@@PAGE 55@@
+Theoretical Exam - Part A  Q6-9
+                                          English (Official)
+
+37
+
+Figure 1 provides a schematic representation of one eudicot plant's growing root. It illustrates, through
+red arrows, the pathway of water solution movement within a healthy plant under optimal conditions.
+
+Assume that the water solution inside the cells of the B zone has an osmolarity of 0.3 osmoles per liter
+(Osm/L).
+
+Figure 1. Diagram of a plant root; Zone A - soil, Zones B and C - parts of the root.
+
+ On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ ones.
+
+ A. All molecules of water cross through the plasma membrane to enter zone B
+ from zone A.
+
+ B. In a healthy plant and under natural conditions, the concentration of free
+ water molecules in zone B is greater than in zone A.
+
+ C. During a flood, certain plants experience cellular death in zone B. This process
+ results in the formation of voids.
+
+ D. If we clean the roots of this plant and place them in a 0.2 molar NaCl solution,
+ the cells in zone B will begin to lose water.
+@@PAGE 56@@
+Theoretical Exam - Part A                           Q7-1
+                                                                   English (Official)
+
+Animal Anatomy and Physiology
+
+38
+
+An electrocardiogram (ECG) records the heart's electrical activity using electrodes on the skin. Leads I, II,
+and III form Einthoven's triangle and provide key views of the heart's electrical axis by measuring voltage
+differences between the limbs. Lead I measures between the right and left arms, Lead II between the
+right arm and left leg, and Lead III between the left arm and left leg. In modern diagnostic medicine, 12
+leads are used for a more comprehensive analysis of the heart's activity.
+
+AI         P               Q     R  S               T
+
+   II III
+
+B          R                        C mV               1
+                                              +20
+                                                 0            ms
+
+   1 mV P                     T                -90         3
+                                                    2
+           QS
+
+Figure 1. A Leads I, II, and III form Einthoven's triangle with red vectors showing the heart's
+mean current direction and amplitude. B ECG measurements along lead II with P wave, QRS
+complex, and T wave. C Membrane potential of cardiomyocytes from different heart regions
+during the cardiac cycle.
+
+   On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+   ones.
+
+   A. Graph 2 in Figure 1C was registered in a cardiomyocyte from the sinoatrial
+   node.
+
+   B. Full atrioventricular node blockade would result in only the P wave being
+   visible.
+
+   C. The S wave represents repolarization.
+
+   D. The amplitude of the P wave in Figure 1A is larger in the lead II than in the
+   lead III.
+@@PAGE 57@@
+Theoretical Exam - Part A  Q7-2
+                                          English (Official)
+
+39
+
+Snow leopards (Panthera uncia) inhabit high-altitude areas in East and South Kazakhstan and are
+known to hyperventilate. To examine possible differences in the oxygenation properties of big cats'
+hemoglobins (Hbs), O2-equilibrium curves were measured for purified HbA and HbB isoforms of African
+lion and snow leopard hemoglobin under standardized conditions of pH and anion concentrations.
+Furthermore, the effects of KCl and DPG were also analyzed. KCl and DPG (2,3-diphosphoglycerate) are
+allosteric cofactors of hemoglobin.
+
+Figure 1. Hb­O2 equilibrium curves of African lion (A) and snow leopard (B) compared with
+those of human adult Hb. Triangles ­ DPG-added, circles ­ DPG-free; Black-filled shapes ­ HbA,
+gray-filled shapes ­ HbB, white-filled shapes ­ human adult Hb, FS - fractional saturation (ratio
+of Hb­O2 to total Hb). C shows the changes in P50 values from DPG-free Hb with the addition of
+KCl or DPG (P50 is the oxygen partial pressure when hemoglobin is 50% saturated with oxygen).
+1 ­ African Lion and 2 ­ Snow Leopard.
+
+          On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+          ones.
+
+          A. DPG has a stronger allosteric effect on hemoglobin in snow leopards than in
+          humans.
+
+          B. Renal compensation stimulates snow leopards inhabiting high-altitude areas
+          to excrete more bicarbonate (HCO3-) than those inhabiting lowland areas.
+
+          C. The hemoglobin of snow leopards is specifically adapted to low oxygen partial
+          pressure.
+
+          D. KCl causes a stronger increase in affinity to oxygen in African lion's HbA than
+          in snow leopard's HbB.
+@@PAGE 58@@
+Theoretical Exam - Part A  Q7-3
+                                          English (Official)
+
+40
+
+In a study examining the behavioral activity of mice and its dependence on feeding time, mice were kept
+on a 12-hour light/12-hour dark cycle. They were divided into two groups: one that was fed only during
+the light phase, and the other that was fed with the same diet only during the dark phase. The locomotor
+activity and calorie intake (Figure 1) together with the body temperature (Figure 2) were measured for
+mice.
+
+Figure 1. A ­ weekly locomotor activity counts, C ­ caloric intake in kcal, W ­ time in weeks, DA
+­ dark-fed mice activity, LA ­ light-fed mice activity, DC ­ dark-fed mice calories, LC ­ light-fed
+mice calories.
+@@PAGE 59@@
+Theoretical Exam - Part A  Q7-4
+                                          English (Official)
+
+Figure 2. Recordings of body temperature of the two mice groups fed during the light (A) for
+5 days and dark (B) for 7 days phases. The feeding periods are indicated by solid bars on top
+of the panels. The dark phases are depicted in blue.
+
+          On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+          ones.
+
+          A. We can expect light-fed mice to have higher body weight than dark-fed mice.
+
+          B. Night-time feeding is an example of circadian-behavior misalignment in
+          mice.
+
+          C. Night-time feeding altered the circadian body temperature range stronger
+          than light-time feeding.
+
+          D. It can be concluded that the decrease in locomotor activity in light-fed mice
+          occurs due to reduced calorie intake.
+@@PAGE 60@@
+Theoretical Exam - Part A  Q7-5
+                                          English (Official)
+
+41
+
+In Octopus laqueus, two distinct sleep stages are observed: active (AS) and quiet (QS). Active sleep is
+marked by active bouts, which include only specific body and eye movements along with transitions in
+skin patterns, occurring between periods of quiet sleep. There are potential parallels between verte-
+brates' non-REM and REM (Rapid Eye Movement) sleep phases and octopuses' QS and AS stages, respec-
+tively. Researchers measured the occurrence of active bouts in the group of octopuses during the day
+and night and in the interrupted conditions as seen in Figure 1.
+
+Figure 1. A Average number of active bouts per hour over 36 hours before (Q) and after (R)
+2-day sleep deprivation (darkness is depicted in gray background areas). B Probability of the
+next bout (Y-axis) occurring N minutes after (X-axis) a normal (S) or interrupted (T) bout. C
+Active bouts per hour (Y-axis) during 3 days of constant darkness (darkness is depicted in gray
+background areas).
+
+          On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+          ones.
+
+          A. Bouts are more likely to be controlled by internal circadian mechanisms than
+          by external environmental signals.
+
+          B. On average, octopuses of this species have 8 active bouts per night.
+
+          C. The data shows that sleep deprivation in this octopus species increases the
+          average duration of an active bout.
+
+          D. Active bouts can be replenished if they do not occur in the normal amount.
+@@PAGE 61@@
+Theoretical Exam - Part A               Q7-6
+                                                       English (Official)
+
+42
+
+Electric eels (Electrophorus electricus) are predatory fish that utilize electrical and mechanical signals dur-
+ing hunting. They emit two types of electrical impulses: low-voltage, which induces sudden muscle con-
+traction of the prey, and high-voltage, which paralyzes the prey, aiding in capture and consumption.
+
+Electrode                  Eel
+                                                     Electrode
+                                                                Transparent
+                                                                  divider
+
+                                        Non-conductive
+                                        rod
+
+                           Fish corpse
+
+           Plastic bag
+
+           Figure 1. Experiment setup; black arrow - conductive rod.
+
+In the experiment conducted for studying electrolocation mechanisms of eels, a container with two com-
+partments was used, as shown in Figure 1. The lower compartment contained an isolated fresh fish
+corpse attached to electrodes, connecting it to the upper compartment's environment. Additionally,
+several electrically non-conductive rods and one conductive rod were placed beneath the transparent,
+perforated divider.
+
+Results of the experiment indicated that upon placement in the container, the eel began attacking the
+conductive rod, but not the fish corpse (Figure 2). Assume that the fish corpse was supplied with a
+sufficient amount of ATP.
+
+Figure 2. A Impulses recorded from the upper compartment (x-axis - time, y-axis - voltage);
+LW - low voltage impulse, HW - high voltage impulse. B Frames shot form the experiment (BV
+- bottom view, SV - side view); black arrow - conductive rod, red arrow - attack. The fish corpse
+is highlighted in red.
+@@PAGE 62@@
+Theoretical Exam - Part A  Q7-7
+                                          English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Only low-voltage impulses are required for prey electrolocation.
+
+B. The divider blocked the movement of water between the compartments.
+
+C. The first frame in Figure 2B was taken before the corpse began to contract.
+
+D. Eels prefer to rely on their mechanoreceptors rather than electroreceptors
+when localizing the exact location of their prey.
+@@PAGE 63@@
+Theoretical Exam - Part A  Q7-8
+                                          English (Official)
+
+43
+
+Saigas (Saiga tatarica) are herding antelopes that have an enlarged nasal cavity. Figure 1 below shows
+computed tomographic (CT) sections of their head.
+
+Figure 1. Internal structures of the saiga head in successive CT transverse sections. J - lateral
+view of the skull to show the levels of the sections shown in A­I.
+@@PAGE 64@@
+Theoretical Exam - Part A  Q7-9
+                                          English (Official)
+
+The main natural enemy of saigas is the wolf. However, in open areas, saigas are not afraid of wolves
+
+because of difference in their running speeds: saigas ­ 75-80 km/h, wolves ­ 40-45 km/h. At the same
+time, the weight load per 1 cm2 for the saiga is 500 grams, while it is 160 grams for the wolf.
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. The bones at sections A-I correspond only to the darkest areas.
+
+B. Linear flow rate of air in the nostrils ("n" in figure A) is lower than the linear
+flow rate of air in the nasal cavity (vn) in section C.
+
+C. The main function of the structure "wy" in figures (D) and (E) is to remove dust
+particles from the air.
+
+D. Wolves hunt saigas more successfully in summer than in the snowy winter.
+@@PAGE 65@@
+Theoretical Exam - Part A  Q7-10
+                                                    English (Official)
+
+44
+
+Approximately 50% of epididymal sperm express Toll-like receptors 7/8 (TLR7/8), which are encoded on
+the X chromosome. The researchers investigated the effects of their activation in mice sperm cells by a
+specific ligand - R848. To do that they performed several experiments consisting of a swim-up method
+and in vitro fertilization (IVF). The obtained data is presented below.
+
+Figure 1. Swim-up method - technique designed to sort spermatozoa by motility and the ca-
+pability to swim upwards in the tube out of the seminal plasma; U - upper layer, L - lower layer.
+
+Figure 2. A Comparison of straight-line velocity (VSL) of spermatozoa in different glucose con-
+centrations (mM) without (C) and with (R) R848. '*' - significant difference between C and R.
+B Distribution of X chromosome- and Y chromosome-bearing spermatozoa in the upper layer
+without (Ct.) and with R848. C Comparison of sex of the embryos obtained from IVF with un-
+treated sperm cells (Ct.) in contrast to sperm cells from the upper (U) and lower (L) layers of
+the swim-up test tube separated after treatment with R848.
+@@PAGE 66@@
+Theoretical Exam - Part A  Q7-11
+                                                    English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Activation of TLR7/8 on sperm cells increases their motility.
+
+B. Following IVF using the high-mobility sperm, more than 80% of the embryos
+were XY.
+
+C. Ligand activation of TLR7/8 together with the swim-up method could be used
+to sort X chromosome- and Y chromosome-bearing sperm cells.
+
+D. The significant effect of the TLR7/8 activation on sperm motility is observed
+only in the presence of glucose.
+@@PAGE 67@@
+Theoretical Exam - Part A  Q7-12
+                                                    English (Official)
+
+45
+
+To create vascularised tissue in vitro, transgenic rat cardiac cells expressing luciferase were co-cultured
+with or without endothelial cells (EC) and fibroblast growth factor 2 (FGF-2). Luciferase - an enzyme that
+catalyzes the reaction of luciferin to emit bioluminescent light. To mimic in vivo conditions, the newly
+created cardiac tissue was placed on a vascular bed to ensure a media supply (Figure 1A). Media supply
+through the new blood vessels was assessed via fluorescence antibody staining for EC (Figure 1B). Then,
+luciferin was infused from the vascular bed side, and bioluminescence was measured in the cardiac cells
+(Figure 1C).
+
+Figure 1. A 1 - EC co-cultured cardiac cell sheet, 2 - cardiac cells, 3 - endothelial cells, 4 - lay-
+ered cell sheets, 5 - cell sheets overlaid on a vascular bed, 6 - organised vascular network. B
+White arrows show EC; CS - cell sheet, VB - vascular bed. C X - Time (min), Y - Bioluminescence
+(photons per second).
+@@PAGE 68@@
+Theoretical Exam - Part A  Q7-13
+                                                    English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Endothelial cell co-culturing increases the development of blood vessels in
+tissue.
+
+B. FGF-2 inhibits the migration and proliferation of endothelial cells.
+
+C. Assuming identical proliferation rates across all tissues, EC(-) FGF(+) tissues
+demonstrate higher cell survival compared to EC(+) FGF(-) tissues.
+
+D. The high rate of bioluminescence for EC(+) FGF(+), can be explained mainly
+by direct diffusion of the media from the vascular bed through the tissue layers.
+@@PAGE 69@@
+Theoretical Exam - Part A  Q7-14
+                                                    English (Official)
+
+46
+
+The discovery of light-gated cation channels quickly led to the development of new tools and applications,
+notably the optical control of neural activity using algal channel rhodopsin-2 (ChR2).
+
+Viral vectors were used to express ChR2 in rat hippocampal neurons, and ChR2 membrane localization
+was observed. A series of experiments was conducted to investigate the properties of these transduced
+cells, and the resulting data are presented below.
+
+Figure 1. A Voltage traces and spikes in a hippocampal neuron evoked by 1-second periods
+of light (4 repeated experiments). B Voltage traces showing subthreshold depolarizations in
+response to light pulses. C Voltage traces in response to brief light pulse series. Bars below
+the records indicate light pulses.
+@@PAGE 70@@
+Theoretical Exam - Part A  Q7-15
+                                                    English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. During steady illumination, the consistency of spikes is limited by the neu-
+ron's action potential firing frequency limit.
+
+B. There is no action potential initiated during the fourth stimulation in C1 due
+to the absolute refractory period of the neuron.
+
+C. Light-induced depolarization would happen regardless of whether ChR2 is
+selective for sodium alone or both sodium and potassium.
+
+D. Consistent induction of subthreshold depolarizations, compared to action
+potentials, requires more precise tuning of the light pulse length.
+@@PAGE 71@@
+Theoretical Exam - Part A  Q7-16
+                                                    English (Official)
+
+47
+
+The efficiency of animal locomotion can be expressed in terms of the cost of transport (COT), derived
+from oxygen consumption versus velocity data. The oxygen consumption plot represents the amount of
+energy required to achieve and maintain a certain speed. COT represents how efficiently an organism
+can cover a unit distance at a certain speed, and generally has the same trendline shape among different
+animals and different gaits of the single animal species.
+
+O2 consumption
+(mg of O2 / [min/kg])
+
+                                           Velocity (m/s)
+
+                          Figure 1. Oxygen consumption versus velocity graph for cod (fish).
+
+                                    COT =  +  +  2
+                                    Coefficients for cod: a = 0.17; b = -0.22; c = 0.14.
+Table 1. Trendline equation for COT (V is in km/h) and list of coefficients suiting data obtained from cod.
+
+                 On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+                 ones.
+                 A. Flying birds would have a lower oxygen consumption at minimum moving
+                 speed on oxygen consumption versus velocity graph than a cod of comparable
+                 size.
+                 B. The minimum possible COT of the cod is achieved at 0.6 km/h.
+                 C. If you sample the speeds at which a large population of horses move during
+                 the week, you would see that all speeds fall within a single, narrow range.
+                 D. For animals that run, the oxygen consumption versus velocity plot for run-
+                 ning would be more linear than the cod's.
+@@PAGE 72@@
+Theoretical Exam - Part A                       Q7-17
+                                                                         English (Official)
+
+48
+
+During pulmonary function tests, tidal volume, inspiratory reserve volume, and expiratory reserve vol-
+ume can be measured directly, but not residual volume (RV). The helium dilution technique estimates
+RV (Figure 1), by recording Vsf (final spirometer volume) and C2 (final helium concentration). The initial
+spirometer volume is 5L with 10% helium. Helium is not exchanged in the lungs, i.e. not absorbed into
+the blood.
+
+A
+
+B LUNGS                                  Vs
+
+                                    SPIROMETER
+
+                                          Vsf
+
+                 LUNGS              SPIROMETER
+
+Figure 1. A In the first stage, the patient is attached to the spirometer after regular expiration
+and then breathes several times to establish helium equilibrium. Vs - initial spirometer volume.
+B The patient performs a full forced expiration, and the spirometer is detached.
+
+Patients                   Vsf (L)  C2 (%)
+Healthy control            6.1      6.8
+1                          5.6      6.5
+2                          5.6      8
+
+Table 1. Results of the helium dilution test for two male patients and one male control.
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Vsf equals to Vs plus expiratory reserve volume.
+
+B. Patient 2 has an RV of 750 ml.
+
+C. Given that inspiratory capacity is constant for Patient 1, the increase in RV
+with respect to the healthy control can be explained by an increase in lung vol-
+ume.
+
+D. A patient with a single-lung pneumothorax, causing incomplete lung col-
+lapse, would likely have results similar to Patient 2.
+@@PAGE 73@@
+Theoretical Exam - Part A                          Q7-18
+                                                                            English (Official)
+
+49
+
+Esophageal Doppler Monitoring (EDM) is a minimally invasive method to measure blood flow in the aorta
+and assess cardiac output. A Doppler probe is inserted into the esophagus near the aorta. The principle
+behind the measurement is the detection of changes in frequency (Doppler shift) of ultrasound waves
+reflected by moving red blood cells. Using the Doppler effect, described by the following equation, the
+probe calculates blood flow velocity.
+
+                                =  20 cos                                                     (1)
+                                        
+
+where
+
+                  
+                   2
+          cos  =  2        ,    =  1540m/s,  0  =  4  MHz                                     (2)
+
+The resulting waveform provides important data on heart function, such as stroke volume and cardiac
+output, which helps guide clinical decisions in real-time.
+
+       A                      2.5 cm Aorta
+
+                                   Oesophagus
+
+                                                Probe
+
+       B       Velocity
+               (cm/s)
+
+          100
+
+                                                 Time (s)
+
+          0 1/3 2/3 1 4/3 5/3
+
+Figure 1. A Placement of the Doppler probe in the esophagus near the aorta to measure blood
+flow velocity (red arrow). B Doppler waveform showing linear blood velocity (cm/s) over time
+(s), with a peak systolic velocity of 100 cm/s. The area under the curve shows the distance
+traveled by blood.
+@@PAGE 74@@
+Theoretical Exam - Part A  Q7-19
+                                                    English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Tachycardia decreases the intervals between waveforms on the velocity-time
+graph.
+
+B. Without any compensation from the heart, high arterial resistance increases
+peak velocity.
+
+C. If the largest frequency shift observed for a patient was 4.4 kHz, their peak
+velocity is around 120 cm/s
+
+D. According to Figure 1B and 1A, a person's heart ejects 4.9 L of blood per
+minute.
+@@PAGE 75@@
+Theoretical Exam - Part A  Q7-20
+                                                    English (Official)
+
+50
+
+The countercurrent system is a common biological pattern, classified into countercurrent multipliers and
+exchangers. In vertebrates, these systems often involve a specialized network of arteries and veins lying
+close together, known as the rete mirabile. In humans, an example of this system is found in the kidneys,
+where the nephron and vasa recta together form a countercurrent multiplier. This arrangement allows
+for efficient exchange and concentration of solutes and water, which are crucial in urine concentration
+and maintaining the body's fluid balance.
+
+A                          B Glomerulus                                   Vasa recta
+
+              P                                                      290     250  Q 290
+                                                                          100
+
+                           1100                                           700      560
+
+                           12                                                     3
+
+                           2000                                           1800    1600
+
+Figure 1. A Countercurrent osmotic multiplier: solute passes through a reservoir separated
+by a semipermeable membrane; black arrows show water movement driven by pressure P.
+B Nephron diagram: 1 - descending limb, 2 - ascending limb, 3 - collecting duct. Numbers
+indicate osmolarity (mOsmol/kg).
+
+          On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+          ones.
+
+          A. Water movement across the membrane in the countercurrent multiplier (Fig-
+          ure 1A) and loop of Henle is primarily driven by the similar forces.
+
+          B. Sodium reabsorption explains the difference in osmolarity between the de-
+          scending limb and the collecting duct.
+
+          C. The osmolarity in region Q in the tissues surrounding the tubules is between
+          100 and 290 mOsmol/kg.
+
+          D. Blood entering the vasa recta in region Q has higher osmolarity than blood
+          leaving the vasa recta in region Q.
+@@PAGE 76@@
+        Solutions and Sources for the IBO 2024
+                      Theoretical Exams
+
+                        Exam A
+
+      Biosystematics
+      Task #1.
+    . FALSE. Explained by a figure.
+    . FALSE. Explained by a figure.
+    . TRUE. They are monocotyledons.
+    . TRUE. Explained by a figure.
+
+References:
+https://www.plantarium.ru/lang/en/page/image/id/799657.html
+https://www.plantarium.ru/lang/en/page/image/id/767164.html
+https://www.plantarium.ru/lang/en/page/image/id/52277.html
+https://www.plantarium.ru/lang/en/page/image/id/565448.html
+https://www.plantarium.ru/lang/en/page/image/id/199306.html
+@@PAGE 77@@
+      Task #2.
+    . TRUE. By employing deductive reasoning and systematically listing
+
+       options, one can logically identify each of the five owl species displayed
+       on the table. If the process is executed accurately, it becomes evident
+       that the fifth species belongs to the Surnia genus (Surnia ulula), which is
+       the sole representative of its kind.
+    . FALSE. The second most related pair is 3/5 with 2. (1 - Asio, 2 - Athene,
+       3 - Glaucidium, 4 - Otus, 5 - Surnia Ulula).
+    . FALSE. All species belong to different genera.
+    . TRUE. If the most recent common ancestor of the Pulsatrix-Meagscop
+       clade lived in Africa / Eurasia, that would require 2 events of migration to
+       America as well as two events of extinction in Africa and Eurasia. In the
+       opposite case (common ancestor lived in America), we need to assume
+       only a single migration from America to Africa / Eurasia.
+
+References:
+https://en.wikipedia.org/wiki/Long-eared_owl
+https://en.wikipedia.org/wiki/Pallid_scops_owl
+https://en.wikipedia.org/wiki/Eurasian_pygmy_owl
+https://en.wikipedia.org/wiki/Northern_hawk-owl
+https://en.wikipedia.org/wiki/Little_owl
+https://www.bird-phylogeny.de/superorders/strigiformes/
+
+      Task #3.
+    . TRUE. . The most parsimonious solution for alignment I is the topology
+
+       depicted on phylogenetic tree 1 (5 changes across the tree in total). Note,
+       it is given that D is an outgroup.
+    . FALSE. . Sites 3 and 5 are not useful. Site #3 is identical for all taxa. While
+       site #5 has one variation - taxon C has A (not T), it is not helpful for the
+       phylogenetic reconstruction via parsimony - you just need to make one
+       change that leads to the taxon C (T  A) and it'll be the most parsimonious
+       solution for for any tree topology.
+    . FALSE. . Phylogenetic tree 1 is incongruent with the reference tree, while
+       RNA polymerase  is a known conserved gene in Bacteria compared to
+       transposase gene that is part of the transposons.
+@@PAGE 78@@
+    . FALSE. . As species D is an outgroup, the remaining three taxa can be
+       phylogenetic related in three possible ways - D,A,(B,C); D,B,(A,C);
+       D,C,(A,B)
+
+      Cell and Molecular Biology
+
+      Task #4.
+    . FALSE. Since oxygen consumption is higher in tumor cells, we can
+
+       conclude that they have elevated metabolism. They need to consume
+       more oxygen because of a relatively high proliferation rate.
+    . TRUE. The differences in extracellular pH values can be explained by
+       abnormally elevated rates of anaerobic glycolysis in tumor cells, which
+       results in higher production and accumulation of lactic acid. This
+       phenomenon is known as the Warburg effect.
+    . FALSE. Figure 2 demonstrates that the oxygen consumption rate is
+       elevated in tumor cells. Such a high demand can't be satisfied, which
+       leads to the development of hypoxia in the tumor microenvironment.
+    . FALSE. Error bars of the data in Figure 2 demonstrate that the cancer
+       cells of patient 2 display the most variation in the single-cell OCR.
+       Hence, they are more heterogeneous compared to the cells of other
+       patients.
+
+Reference:
+[1]https://pubs.rsc.org/en/content/articlehtml/2018/ra/c8ra02095g#cit10
+(Figure1)
+[2]https://www.nature.com/articles/s41551-019-0376-5 (Figure 2)
+[3]https://www.sciencedirect.com/topics/agricultural-and-biological-
+sciences/acid-base-
+homeostasis#:~:text=It%20is%20well%20documented%20that,between%20
+0.035%20and%200.045%20mEq
+[4]https://aacrjournals.org/cancerres/article/73/5/1524/586608/Acidity-
+Generated-by-the-Tumor-Microenvironment
+@@PAGE 79@@
+      Task #5.
+
+    . TRUE. Tyr-33 substituted for aromatic amino acids such as tryptophan
+       and phenylalanine shows higher affinity values than for other mutants.
+
+    . FALSE. In Figure 1A.1, it can be seen that the original amino acid Asn has
+       a higher affinity to all cardiac glycoside molecules than all mutants.
+
+    . TRUE. The substitutions Tyr-33-Trp and Trp-100-Arg show the highest
+       absorbance ratios in their mutations. Therefore, they can be used for
+       cardiac glycoside detection systems.
+
+    . TRUE. Digoxigenin lacking sugar in R1 behaves differently from other
+       glycosides.
+
+      Reference:
+      Burks, E. A., Chen, G., Georgiou, G., & Iverson, B. L. (1997). In vitro
+scanning saturation mutagenesis of an antibody binding pocket. Proceedings
+of the National Academy of Sciences of the United States of America, 94(2),
+412­417. https://doi.org/10.1073/pnas.94.2.412
+
+      Task #6.
+
+    . FALSE. The structure (a) in Figure 1D has  and  angles of about -100
+       and 120 degrees, respectively. It is mostly located in Region 1 in Figure 2.
+
+    . FALSE. The structure (b) in Figure 1D has  and  angles of about -60
+       and -60 degrees, respectively. It is mostly located in Region 2 in Figure 2.
+
+    . TRUE. The structure (c) in Figure 1D has  and  angles of 90 and -90
+       degrees, respectively. From the Ramachandran plot, it can be seen that
+       amino acids with  and  angles of 90 and -90 degrees are uncommon.
+
+    . TRUE. From the Ramachandran plot, it can be seen that amino acids
+       with  and  angles of 0 degrees are not present in the rabbit's pyruvate
+       kinase. They are prohibited by steric interference between atoms in the
+       polypeptide backbone and amino acid side chains.
+
+Reference:
+Nelson, D. L., & Cox, M. M. (2008). Lehninger principles of biochemistry (5th
+ed.). W.H. Freeman.
+@@PAGE 80@@
+Task #7.
+
+. TRUE. Actively dividing cells that need R5P for nucleotide synthesis. The
+   reactions catalyzed after the first TKT-catalyzed reaction use R5P, which
+   is essentially needed for cells to divide fast. Therefore, only the reactions
+   before the first TKT-catalyzed reaction are more active (than the
+   reactions occurring after the first TKT-catalyzed reaction) in fast-growing
+   cells.
+
+. FALSE. From the reaction pathways, it can be seen that TKT transfers
+   two-carbon fragments.
+
+. TRUE. With G6PDH deficiency less NADPH will be produced. Also, ROS
+   will be reduced by existing NADPH, leading to a decreased level of
+   NADPH.
+
+. FALSE. From the reaction scheme, it is seen that for the production of
+   two molecules of F6P three G6P are needed.
+
+References:
+Jin L, Zhou Y. Crucial role of the pentose phosphate pathway in malignant
+tumors. Oncol Lett. 2019 May;17(5):4213-4221. doi: 10.3892/ol.2019.10112.
+Epub 2019 Mar 5. PMID: 30944616; PMCID: PMC6444344.
+
+Lee, M., Malloy, C., Corbin, I., Li, J., & Jin, E. (2019). PPP and carbon
+rearrangement.  [Photograph].  Wiley              Analytical  Science.
+https://analyticalsciencejournals.onlinelibrary.wiley.com/cms/asset/98de01
+
+c5-8738-44e0-87f2-02ea397c2b4c/nbm4096-fig-0001-m.png
+
+Nelson, D. L., & Cox, M. M. (2008). Lehninger principles of biochemistry (5th
+ed.). W.H. Freeman.
+
+Bozdech, Z., & Ginsburg, H. (2005). Different modes of PPP action.
+
+[Photograph].                  Malaria                        Journal.
+https://media.springernature.com/lw685/springer-
+
+static/image/art%3A10.1186%2F1475-2875-4-
+17/MediaObjects/12936_2005_Article_133_Fig2_HTML.jpg?as=webp
+@@PAGE 81@@
+      Task #8.
+
+    . FALSE. Pictures A and B show that all the bases of all loops are in the
+       same place - therefore each of the CTCFs participates in more than one
+       loop. Picture A shows formation of 2 or 3 loops, if each CTCF-binding site
+       would only participate in one loop, maximum number of loops would be
+       2.
+
+    . FALSE. DNA methylation prevents protein binding (CTCF in this case),
+       thus only 2 loops are formed instead of 3. The site by which a new loop is
+       formed corresponds to the 3rd CTCF site.
+
+    . TRUE. Expression activity of IGF2 depends on the proximity of enhancer,
+       figures A and B imply that this enhancer is located between H19 gene and
+       CTCF binding site 4. Expression of H19 depends on the methylation state
+       of ICR - it is located close to its promoter and in the methylated state
+       transcription factors cannot access DNA.
+
+    . TRUE. As was mentioned in the previous explanation, expression of H19
+       depends on the methylation state of its promoter, which overlaps with
+       the ICR, regardless of the enhancer.
+
+Reference:
+Nativio, R., Wendt, K. S., Ito, Y., Huddleston, J. E., Uribe-Lewis, S., Woodfine,
+K., ... & Murrell, A. (2009). Cohesin is required for higher-order chromatin
+conformation at the imprinted IGF2-H19 locus. *PLoS genetics*, *5*(11),
+e1000739.
+https://doi.org/10.1371/journal.pgen.1000739
+
+      Task #9
+
+    . TRUE. Since cryo-EM works by averaging many low-resolution images of
+       molecules, a region that is different among these images will be not clear
+       in the final density map and that means that this region is more flexible
+       or has more stable conformations.
+
+    . FALSE. From the molecular model, we can see that these helices are
+       holding subunits of ATAD1 together. One side of the helix should have
+       hydrophobic residues to interact with another subunit, another side
+       should be hydrophilic to interact with water.
+@@PAGE 82@@
+    . FALSE. The specificity of the substrate is mainly affected if the central
+       pore has mutations, we see that E193Q is clearly outside of the pore.
+
+    . FALSE. ATAD1 indeed translocates proteins, it can be deduced from the
+       motion of M6 and overall structure, however, it pulls mislocalized
+       transmembrane proteins out of the membrane. This conclusion is made
+       from fluorescent assay (Gos28 is in the membrane) and structure of pore
+       (aromatic amino acids).
+
+Reference:
+Lan Wang, Hannah Toutkoushian, Vladislav Belyy, Claire Y Kokontis, Peter
+Walter (2022) Conserved structural elements specialize ATAD1 as a
+membrane protein extraction machine eLife 11:e73941
+https://doi.org/10.7554/eLife.73941
+
+      Task #10
+
+    . FALSE. The shortest possible path is movements along a vertical line,
+       the real benefit of having magnetosomes is in energy efficiency - bacteria
+       are not spending any energy to align themselves on path towards OATZ
+       (even if this path is not the most efficient).
+
+    . FALSE. Since the polarity of cells is opposite on both hemispheres, the
+       movement of flagella will be the same for bacteria from the southern
+       hemisphere.
+
+    . TRUE. Since axial magnetotactic bacteria do not follow the direction of
+       the field they have two options for movement - to the left and the right.
+
+    . FALSE. The situation describing the beginning of the experiment is
+       bacteria below a certain depth level in figure B. As we can see bacteria
+       move and rotate their flagella clockwise. In the setup C there is no oxygen
+       in the middle and concentration increases towards the ends.
+
+References:
+Bazylinski, D., Frankel, R. Magnetosome formation in prokaryotes. Nat Rev
+Microbiol 2, 217­230 (2004). https://doi.org/10.1038/nrmicro842
+Arash Komeili et al. ,Magnetosomes Are Cell Membrane Invaginations
+Organized by the Actin-Like Protein MamK. Science 311, 242-245 (2006).
+https://doi.org/10.1126/science.1123231
+@@PAGE 83@@
+      Task #11
+
+    . FALSE. Library construction is necessary to make variance, which is one
+       of the important criteria for natural/artificial selection.
+
+    . FALSE. Anaerobic conditions for cultivation are necessary to avoid
+       usage of electron transport chains for the NAD+ regeneration.
+
+    . TRUE. The only connection of this heterologous reaction catalyzed by
+       Enzyme D to native metabolic network is NAD+/NADH usage. Otherwise,
+       the selection pressure cannot affect the enzyme D.
+
+    . TRUE. As the oxygen concentration in the large intestine is very low, the
+       strains having higher Enzyme D activity have higher NAD+ regeneration
+       rate at the anaerobic conditions, which is the case in the large intestine.
+
+Reference:
+https://doi.org/10.1038/s41467-021-27266-9
+
+      Task #12
+
+    . TRUE. DMSO2 is a less hydrophilic molecule than DMSO, and it is stable
+       compared to DMSO4 (which rapidly hydrolyses in water).
+
+    . TRUE. DMSO is a strongly hydrophobic compound used as a solvent for
+       organic molecules and an agent facilitating penetration of organic
+       membranes, including skin.
+
+    . FALSE. Gibbs free energy (which includes enthalpy) influences the
+       feasibility of the reaction, but the reaction rate is the function of the
+       activation energy.
+
+    . FALSE. Methastases block most of the elimination of the DMSO and its
+       derivatives, however, as was mentioned in the text odor was observed
+       indicating elimination through the lungs.
+
+      References:
+      Grant, P. M., Haas, J. S., Whipple, R. E., & Andresen, B. D. (1997). A
+possible chemical explanation for the events associated with the death of
+Gloria Ramirez at Riverside General Hospital. Forensic science international,
+87(3), 219-237.
+@@PAGE 84@@
+      Ecology
+
+      Task #13
+
+    . FALSE. Both NK+ graphs for legume cover are marked with a dot, which
+       means they are both statistically significant.
+
+    . FALSE. Biomass graphs only differ in magnitude between 3 years and 6
+       years.
+
+    . TRUE. Every time there is added nitrogen, the legumes cover, species
+       richness, or biomass on average decline. That is not true for other
+       nutrients, in which legumes do not have a competitive advantage of
+       fixation. Therefore, steppes must indeed be nitrogen-limited, as taking
+       away nitrogen advantage lead to negative effects for the species with that
+       advantage.
+
+    . TRUE. Non-nitrogen fixers do not benefit from low soil nitrogen, so any
+       additional nutrients will drive their growth.
+
+Reference:
+Pedro M. Tognetti, et al. "Negative effects of nitrogen override positive effects
+of phosphorus on grassland legumes worldwide". Proceedings of the National
+Academy of Sciences 118. 28(2021): e2023718118.
+
+      Task #14
+
+    . TRUE. According to the hypothesis C, the tropics have a higher range of
+       ages which would increase the variance in the species age. The
+       temperate zone has less variance due to their later starting point of
+       diversification.
+
+    . TRUE. This means that a pattern has been established regardless of the
+       starting point of diversification caused by the global catastrophe.
+
+    . FALSE. Greater seasonal variation is in the temperate zone. And if it
+       increases the diversification rate in the temperate zone this would go
+       against Hypothesis B.
+
+    . TRUE. This implies that all taxa emerged initially in the tropical regions
+       and specific diversification of temperate species started after the start
+       of the tropical diversification.
+@@PAGE 85@@
+References:
+Mittelbach, G. G., Schemske, D. W., Cornell, H. V., Allen, A. P., Brown, J. M.,
+Bush, M. B., ... & Turelli, M. (2007). Evolution and the latitudinal diversity
+gradient: speciation, extinction and biogeography. Ecology letters, 10(4), 315-
+331. https://doi.org/10.1111/j.1461-0248.2007.01020.x
+
+      Task #15
+
+    . TRUE. When warm and moist air becomes cold, excess moisture is
+       released as precipitation, and increased precipitation leads to larger
+       gross primary production.
+
+    . FALSE. It is La Niña because it will cause an increase in precipitation
+       over Australia (western Pacific region).
+
+    . FALSE. During El Niño, wind over the Pacific decreases, and the depth
+       of transition between warm and cold water increases, due to this
+       upwelling decrease.
+
+    . FALSE. Changes in year Y are caused by a decrease in salinity of a lake
+       which is caused by increased precipitation. Increased precipitation over
+       North America is possible when El Niño happens.
+
+Reference:
+Ryan, J. P., Ueki, I., Chao, Y., Zhang, H., Polito, P. S., and Chavez, F. P. (2006),
+Western Pacific modulation of large phytoplankton blooms in the central and
+eastern equatorial Pacific, *J. Geophys. Res.*, 111, G02013,
+https://doi.org/10.1029/2005JG000084
+Wurtsbaugh, W. . (1992). Food-web modification by an invertebrate predator in
+the Great Salt Lake (USA). *Oecologia*, *89*(2), 168­175.
+https://doi.org/10.1007/BF00317215
+Cairns, S. C., & Grigg, G. C. (1993). Population Dynamics of Red Kangaroos
+(Macropus rufus) in Relation to Rainfall in the South Australian Pastoral Zone.
+*Journal of Applied Ecology*, *30*(3), 444­458.
+https://doi.org/10.2307/2404185
+@@PAGE 86@@
+      Task #16
+
+    . FALSE. Here slope depends on d in the equation, since d is the
+       complexity of the pattern it will have a larger value for rough coastlines
+
+    . FALSE. Since the graph is on a logarithmic scale, there will be more
+       individuals with smaller scales than individuals of average species, even
+       if there are only half of them.
+
+    . FALSE. This scale depends on the resources or territory required for
+       each individual, not the size of the individual.
+
+    . TRUE. In herds, the perspective scale of each individual would depend
+       on the overall perspective scale of the entire herd.
+
+Reference:
+Milne, B. T. 1993. Pattern analysis for landscape evaluation and
+characterization. In M. E. Jensen and P. S. Bourgeron, eds. Ecosystem
+Management: Principles and Applications.
+
+      Task #17
+
+    . TRUE. Water withdrawal increases the speed of water circulation and
+       water molecules travel faster among water reservoirs
+
+    . FALSE. While high Rws always represent a water crisis, low Rws can be
+       explained by a water crisis caused by an inability to utilize available
+       RFWR (large Q and small W).
+
+    . TRUE. Map with 1/Aw will have weighted values of population and water
+       availability and thus some regions with small population density would
+       have opposite values in 1/Aw and Rws
+
+    . TRUE. Food and industrial goods production requires much more water
+       than is required for consumption by humans and thus represents a major
+       water
+
+References:
+      Taikan Oki, Shinjiro Kanae, Global Hydrological Cycles and World Water
+
+Resources.Science313,1068-1072(2006).DOI:10.1126/science.1128845
+@@PAGE 87@@
+      Ethology
+
+      Task #18
+
+    . TRUE. In the case of Western Barn Owls, failing to respond to potentially
+       lethal warnings is perhaps because they are used to hunting, not getting
+       hunted, and alarming sounds such as approaching vehicles are new to
+       them.
+
+    . FALSE. The speeding behavior allows them to exploit traffic gaps for a
+       period when traffic volume is low. The plateau represents a steady
+       increase of probability of mortality associated with the speeding
+       behavior.
+
+    . TRUE. When traffic has reached sufficient volume for an animal to pause
+       before attempting crossing, the probability of avoidance becomes
+       greater than the probability of mortality.
+
+    . FALSE. Even slight traffic volume can restrict movement of avoiders
+       leading to the lowest mortality among others.
+
+References:
+https://www.fs.usda.gov/psw/publications/jacobson/psw_2016_jacobson00
+1.pdf
+
+      Task #19
+
+    . TRUE. Information about effective routes is passed from generation to
+       generation
+
+    . TRUE. In each generation of the experimental group, each new pigeon
+       requires time to learn the route before showing actual performance
+
+    . TRUE. If it would not, there will be no increase in efficiency over
+       generations in the experimental group, which can be explained by
+       "innovations" introduced by a new pigeon in a pair
+
+    . TRUE. Collective decision making increases with the number of animals
+       in the group, but figures show clear difference between experimental and
+       control pair performance, while both of them contain 2 pigeons
+@@PAGE 88@@
+Reference:
+Sasaki, T., Biro, D. Cumulative culture can emerge from collective intelligence
+in animal groups. Nat Commun 8, 15049 (2017).
+https://doi.org/10.1038/ncomms15049
+
+      Genetics & Evolution
+      Task #20
+    . FALSE.
+      p: A1
+      q: A2
+      r: A3
+      p+q+r = 1
+      p2+q2+r2+2pq+2pr+2qr = 1
+      A3A3 = r2 = 0,01; r = 0,1
+      A2 _ = q2+2qr = 0,08
+      q2+2qr+0,08 = 0; q = 0,2
+
+      r = 0,1; q = 0,2; p = 0,7
+      So individual in n generation make up 70%
+   B. TRUE. A2A2 and A2A3
+   B. FALSE. Meiosis does not ensure the distribution of two sets of
+
+       chromosomes (paternal and maternal) at 50% in the haploid daughter
+       cell.
+   B. FALSE. A lethal mutation most likely will not be able to pass through the
+       haploid generation, since it will not be covered by a dominant allele
+References:
+Campbell biology, 10th edition, Jane B. Reece, Lisa A. Urry, Michael L. Cain,
+Steven A. Wasserman, Peter V. Minorsky, Robert B. Jackson (2014), Pearson
+@@PAGE 89@@
+      Task #21
+
+    . FALSE. . More genetically diverse populations have larger effective
+       population sizes.
+
+    . TRUE. . As the African population has higher genetic diversity, the
+       deleterious (or slightly deleterious) mutations are less likely to get fixed
+       (frequency = 1) as the selection plays greater role comparatively to the
+       genetic drift.
+
+    . TRUE. . Since humans started expansion out of Africa, different
+       geographic regions were colonized by different population groups. As a
+       result, all new populations were established by a small number of people
+       from a larger (African) population.
+
+    . FALSE. . As human genomes are almost identical to each other,
+       including conserved DNA polymerases, the opposite is true and the
+       heterozygosity is best studied in highly variable regions, such as
+       microsatellites.
+
+References:
+
+Li, J. Z., Absher, D. M., Tang, H., Southwick, A. M., Casto, A. M., Ramachandran,
+S., ... & Myers, R. M. (2008). Worldwide human relationships inferred from
+genome-wide patterns of variation. science, 319(5866), 1100-1104.
+
+McClellan, J. M., Lehner, T., & King, M. C. (2017). Gene discovery for complex
+traits: lessons from Africa. Cell, 171(2), 261-264.
+
+      Task #22
+
+    . FALSE. The high consumed amount of exogenous ethanol is a
+       consequence of agricultural output i.e. cultivation of certain crops and
+       their intended fermentation, therefore, prior to the extensive
+       development of agriculture, ADH was adjusted to degrade only tiny
+       amounts of endogenous or exogenous alcohol.
+
+    . TRUE. The adverse effect of acetaldehyde accumulation in the body is
+       going to discourage individuals from ethanol consumption.
+@@PAGE 90@@
+    . FALSE. There is a lack of information to claim that, but the evident low
+       frequency of ADH1B*2 gives a clue for absent ethanol consumption-
+       driven positive selection.
+
+    . TRUE. With the given information, the assumption of positive selection
+       geographically correlates with the presence of supposed selective
+       force.
+
+References:
+    https://cyberleninka.ru/article/n/etnogeneticheskie-osobennosti-
+       ustoychivosti-organizma-k-alkogolyu-v-populyatsiyah-narodov-
+       severa/viewer
+    https://www.semanticscholar.org/paper/Distribution-of-the-alcohol-
+       dehydrogenase-allele-in-Borinskaya-
+       Kal'ina/c96185fa0f8e1ac6c89a50b3a1df0eb68b2a9446
+    https://droso4schools.wordpress.com/alcohol/
+    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2823730/
+
+      Task #23
+
+    . FALSE. . The frequency of A1 converges to the ~0.3-0.35 and remains
+       relatively stable, suggesting that selection favors the intermediate
+       genotype (stabilizing selection). The tricky part of the question is that
+       while frequency of A2A2 > A1A2, the relative fitness of A2A2 < A1A2 that
+       is why the populations converge to stable equilibrium. If relative fitness
+       of A2A2 > A1A2, then allele A1 would go extinct over time.
+
+    . FALSE. . As the random fluctuations from generation to generation are
+       more pronounced, it suggests that Aizhan decreased the population size
+       in experiment #2 (genetic drift starts playing a more important role,
+       increasing overall stochasticity due to the random chance).
+
+    . TRUE. . Almost all populations (including the theoretical fit) reach some
+       degree of the stable equilibrium, suggesting the heterozygote advantage
+       (it can be actually easily derived from Hardy-Weinberg equilibrium).
+
+    . FALSE. . The frequency of A1 decreases below 0.5 before reaching some
+       degree of stability, indicating that relative fitness of genotypes is the
+       following one: A1A2>A2A2>A1A1
+@@PAGE 91@@
+      Task #24
+
+    . TRUE. . Ribosomal proteins are essential and universally highly
+       expressed, as translation is the fundamental cellular process. Hence,
+       ribosomal genes tend to have very high codon usage bias to synthesize
+       ribosomal proteins rapidly and efficiently by utilizing the most abundant
+       tRNA pool.
+
+    . TRUE. . As codon usage bias tends to improve the translational
+       efficiency, correction of the transgenic DNA to account for that
+       phenomenon generally leads to more efficient expression of it by the
+       recipient's organism.
+
+    . FALSE. . Viruses tend to have a pronounced codon usage bias.
+       Furthermore, even when viruses don't carry their tRNA molecules, they
+       still rely on their host translational machinery and tRNA. Hence, genetic
+       material of viruses will be selected to fit their host tRNA pool. In addition,
+       multiple phages (bacterial viruses) can also carry their own tRNA
+       molecules to account for their codons content. (multiple explanations
+       possible, not only tRNAs)
+
+    . FALSE. . Methionine cannot have codon usage bias as it is made only
+       from one codon.
+
+Reference:
+Plotkin, J. B., & Kudla, G. (2011). Synonymous but not the same: the causes and
+consequences of codon bias. Nature Reviews Genetics, 12(1), 32-42.
+
+      Task #25
+
+    . FALSE. As it can be seen from the figure 2b, the mutation X is located
+       near to the amino acids that are less conserved rather than the mutation
+       Z, which is located in a highly conservative region. As the active site of an
+       enzyme is crucial for its function, the active sites are likely to be more
+       conserved.
+
+    . FALSE. The genetic code for Threonine (Thr) is AC_, and for Alanine (Ala),
+       it is GC_. Assuming single-nucleotide changes in the mutations, the
+       deduced mutation of A  G leads to the genetic code GC_ for Thr. Given
+       that both A and G are purines, this mutation is identified as a transition
+@@PAGE 92@@
+       (purine  purine or pyrimidine  pyrimidine), not a transversion (A/G 
+       T/C).
+    . FALSE. It can be observed that the two subunits possess MTS, indicating
+       that they are transported into the mitochondrion separately. This
+       suggests that the assembly of RNase takes place within the
+       mitochondrion rather than externally before transport.
+    . TRUE. We know that individual II-3 (A1) is the carrier of mutation X. We
+       need to find the probability that individual II-2 (A2) is a carrier of mutation
+       Y, which is 2/3. The probability of them having a child with the syndrome
+       is 1/4. Therefore, the overall probability of them having a child with the
+       syndrome is 2/3 * 1/4 = 1/6.
+
+References:
+Smith, T.B., Rea, A., Thomas, H.B. et al. Novel homozygous variants in PRORP
+expand the genotypic spectrum of combined oxidative phosphorylation
+deficiency 54. Eur J Hum Genet 31, 1190­1194 (2023).
+https://doi.org/10.1038/s41431-023-01437-2
+Bhatta, A., Dienemann, C., Cramer, P. et al. Structural basis of RNA processing
+by human mitochondrial RNase P. Nat Struct Mol Biol 28, 713­723 (2021).
+https://doi.org/10.1038/s41594-021-00637-y
+
+      Task #26
+
+    . TRUE. Since it is not crossing the threshold line and we see a much
+       longer duration, we can conclude that the nature of the event at the
+       Frasnian-Famennian boundary (FF on the graph) is not the same as all
+       other mass extinctions.
+
+    . FALSE. Based on smaller events graph can be biased, however absence
+       of large recent events supports the general trend.
+
+    . TRUE. Events above that line mean large mass of carbon added in a short
+       period of time, almost all events over that line are mass extinctions
+
+    . TRUE. Since there are more species and they are more efficient, carbon
+       travels faster between reservoirs, and carbon perturbation events
+       happen in a shorter time scale.
+@@PAGE 93@@
+Reference:
+Daniel H. Rothman ,Thresholds of catastrophe in the Earth system.Sci.
+Adv.3,e1700906(2017).DOI:10.1126/sciadv.1700906
+
+Task #27
+
+. TRUE. The efficiency of E104K and G238S increases significantly when
+   they are combined.
+
+. FALSE. Cumulative probability plot is skewed to the right, meaning that
+   trajectories have decreasing probabilities with trajectory 1 being the
+   most probable.
+
+. FALSE. Phenotypic fitness does not influence mutation rate but
+   increases the probability of mutation fixation.
+
+. FALSE. If there will be intermediate form with high fitness and next forms
+   have decreasing fitness, then this route is not always the most probable,
+   regardless of the final fitness. If there will be local fitness maxima
+   evolution would not favor further mutations decreasing fitness (evolution
+   cannot plan).
+
+References:
+
+Daniel M. Weinreich et al. ,Darwinian Evolution Can Follow Only Very Few
+Mutational   Paths  to  Fitter         Proteins.Science312,111-
+114(2006).DOI:10.1126/science.1123539
+
+ Task #28
+
+. TRUE. Effectively neutral mutations, while may not be truly neutral, have
+   negligible effect on the scales of real populations (usually > Ne) => their
+   fixation can be explained only by random genetic drift. For example,
+   suppose, s < 1/Ne, e.g. humans (Ne = 10000) => s < 1*10^-4 (meaning
+   that mutation has a very weak effect so that it is effectively neutral
+   (cannot be efficiently selected within the actual population - its fate
+   completely depends on drift)
+
+. TRUE. Species with larger Ne have less effectively neutral mutations and
+   consequently larger amounts of weakly adaptive mutations.
+@@PAGE 94@@
+    . TRUE. We are not able to track one large group of deleterious mutations
+       - lethal mutations since only survivors are passing their mutations.
+
+    . FALSE. It represents the proportion of effectively neutral mutations,
+       when we compare genomes deleterious mutations should be under
+       negative selection and not present in large amounts - we mostly see
+       effectively neutral mutations at non-silent sites.
+
+      References:
+      Eyre-Walker, A., Keightley, P. The distribution of fitness effects of new
+mutations. Nat Rev Genet 8, 610­618 (2007). https://doi.org/10.1038/nrg2146
+
+      Task #29
+
+    . TRUE. Only infection of germline cells will generate heritable genetic
+       element
+
+    . FALSE. Loss of one gene, for example - env, is enough to lose the
+       property of virion formation and to become a retrotransposon
+
+    . FALSE. Since LTR regions are similar, they are prone to homologous
+       recombination events, where everything between them is lost
+
+    . TRUE. This factor would prevent certain retrovirus from infecting the
+       host and when the exogenous retroviral population becomes too small
+       or extinct, then the population no longer needs this ERV in their genome
+
+References:
+Johnson, W.E. Origins and evolutionary consequences of ancient endogenous
+retroviruses. Nat Rev Microbiol 17, 355­370 (2019).
+https://doi.org/10.1038/s41579-019-0189-2
+@@PAGE 95@@
+      Plant Anatomy and Physiology
+
+      Task #30
+
+    . FALSE.From Figure 1, it's evident that when a shoot from a wild-type
+       plant is grafted onto the root of a gibberellin-deficient plant, there are no
+       observable changes. However, when a ga1-3 shoot is grafted onto a ga1-
+       3 root, there's a decrease in intensity, indicating that gibberellin
+       synthesis occurs in the shoots and is transported to the roots.
+
+    . TRUE. Examining Figure 2 reveals that the wild type exhibits a high
+       concentration of gibberellin in the vacuoles of the pericycle and a
+       relatively low concentration in the endoderm. This pattern is consistent
+       across all mutants except the last one, where the ability to store
+       gibberellin in the vacuole is compromised. Notably, in this mutant, the
+       cytoplasmic concentration of gibberellin in the endoderm and cortex is
+       significantly higher than that of the wild type. This indicates that
+       gibberellin, instead of being stored in the vacuole, is being transported
+       into the endodermal cells, resulting in an elevated concentration. This
+       observation underscores the regulatory role of vacuoles in gibberellin
+       secretion into the endoderm and cortex.
+
+    . TRUE. This mutant exhibits impaired gibberellin transport into the
+       endodermis, resulting in a low level of suberization in these cells. Since
+       endodermal suberization is crucial for the formation of Casparian strips,
+       this mutant will have poorly defined Casparian strips. This will lead to an
+       increase in apoplastic transport into the stele, which increases the
+       chances of obtaining water imbalance or toxin contamination.
+
+    . FALSE. The transporter npf 2.14 is located on the vacuolar membrane.
+       This can be observed in Figure 2, where its absence resulted in a
+       reduction of vacuolar gibberellin concentration to zero.
+
+References:
+https://doi.org/10.1038/s41477-023-01391-3
+@@PAGE 96@@
+      Task #31
+
+    . TRUE. Because GDC, a decarboxylase, removes a CO2, but does not
+       prevent serine production. Serine can go into gluconeogenesis.
+
+    . FALSE. Increased CO2 levels will lead to Rubisco favoring
+       photosynthesis over photorespiration, so LESS need for the latter.
+
+    . FALSE. All enzymes there are either pink or yellow, so overexpressing
+       them would have a negative net effect.
+
+    . TRUE. Because their Calvin cycle happens in cells with high
+       concentration of CO2.
+
+Reference:
+Stefan Timm, Martin Hagemann, Photorespiration--how is it regulated and
+how does it regulate overall plant metabolism?, Journal of Experimental
+Botany, Volume 71, Issue 14, 6 July 2020, Pages 3955­3965,
+https://doi.org/10.1093/jxb/eraa183
+https://commons.wikimedia.org/wiki/File:Photorespiration_allgemein.svg
+
+      Task #32
+
+    . TRUE. Because electrodes could trigger hyperpolarization or
+       depolarization, bypassing light stimuli and causing stomatal
+       opening/closing.
+
+    . FALSE. Lignin makes cells more rigid, preventing subsidiary cells from
+       properly "bending" to allow a wide opening, thus making stomata
+       narrower and less effective.
+
+    . FALSE. Potassium deficiency would lead to lower volume of water flow,
+       as potassium gradients would have lower magnitude, so the cell shape
+       would change less and pore area would be lower
+
+    . TRUE. Since aquaporins are passive channels, they cannot start or end
+       a flow on their own, so adding more of them could only increase the rate
+       of osmosis.
+
+Reference:
+T.D.G. Nunes, D. Zhang, M.T. Raissig Form, development and function of grass
+stomata Plant J., 101 (4) (2020), pp. 780-799
+@@PAGE 97@@
+      Task #33
+
+    . TRUE. Without the xanthophyll cycle, the plants cannot dissipate excess
+       light's energy. Therefore, they will suffer strong oxidative stress under the
+       sun, and would prefer shade.
+
+    . TRUE. The Steppe population is constantly exposed to direct sunlight,
+       while the understory population is hidden by the forest canopy.
+       Therefore, the former would be more adapted to constant daylight,
+       partially through higher xanthophyll concentration. As it is a temperate
+       climate, extra heat does not make this a maladaptive trait.
+
+    . FALSE. High leaf temperature means that using heat as an energy
+       dispersion mechanism is more dangerous, and just reducing de-
+       epoxidase activity would not help as under sunlight the proton
+       concentration would increase regardless, activating more zeaxanthin.
+       Thus, total Pre-Z + Z concentration should be decreased for the plant to
+       survive. Since the climate is always sunny and hot, it is a viable
+       adaptation.
+
+    . TRUE. This is a hypothetical scenario, but if no other option was
+       available, the leaves from the top of the canopy would have to produce
+       more ascorbate (salt of ascorbic acid, also known as vitamin C) to adapt
+       to higher light levels. Thus, eating them gives more vitamin C. From the
+       book: "The pool of reduced ascorbate, which plays a role in the
+       xanthophyll cycle (Fig. 2.17), is also several-fold greater in plants
+       acclimated to high light (Logan et al. 1996)." page 45
+
+References:
+Lambers, H., & Oliveira, R. S. (2019). Photosynthesis, Respiration, and Long-
+Distance Transport. In Plant Physiological Ecology. Springer Nature.
+
+      Task #34
+
+    . FALSE. By 9am, both starch and soluble sugar graphs had positive
+       change for all three stages. Therefore, photosynthesis must have begun
+       before that, as it is the sole source of production of new starch and
+       soluble sugars for photosynthetic cells.
+@@PAGE 98@@
+    . TRUE. Peak value of 120 instead of 72-90 is unlikely to come due to
+       grains growing the seed. TSC is easier to transport through phloem
+       towards the seeds compared to starch, so there is an increased demand
+       for TSC in seed kernels.
+
+    . TRUE. Since the TSC pool includes free cytosolic glucose, which is the
+       fuel for cell respiration, this should be true. Between 24 and 6 hours, that
+       glucose is going to be respired further, reconnecting the graphs.
+
+    . FALSE. Lower leaf starch means more carbohydrates are leaving leaves
+       to go to the seed's endosperm. Since it is a crop, humans will eventually
+       consume endosperm and thus, more starch going to the endosperm is a
+       beneficial trait.
+
+References:
+Liang, X., Gao, Z., Zhang, L., Shen, S., Zhao, X., Liu, Y., Zhou, L., Paul, M. J., &
+Zhou, S. (2019). Seasonal and diurnal patterns of non-structural carbohydrates
+in source and sink tissues in field maize. BMC Plant Biology, 19(1).
+https://doi.org/10.1186/s12870-019-2068-4
+
+      Task #35
+
+    . TRUE. Density is inversely proportional to PC3, and S. giganteum has
+       lower PC3 values than the other species.
+
+    . FALSE. Resistance to xylem blockage is tracked by PC2, and height is
+       tracked by dot size. For S. sempervirens, dot size and PC2 are positively
+       correlated, so it is the taller trees that would have higher resistance to
+       xylem blockage
+
+    . TRUE. In an arid environmentadapted plants, controlling transpiration
+       through changes in leaf shape and structure is a more advantageous
+       tactic to costly branch-level changes to xylem structure. Therefore, the
+       change of the environment to a wetter one will allow the plants to pursue
+       the costlier strategy.
+
+    . FALSE. To compare density and height, we compare the dot size and
+       PC3. Bigger dots tend to be close to 0.5 mark for PC3, and smaller dots
+       cluster at higher PC3. However, they also intermix with big dots near 0.5,
+       so PC3 (density) and dot size (height) don't appear particularly covarying
+       at all. Furthermore, density inversely covarying with height does not
+@@PAGE 99@@
+       make biological sense, as taller trees would want denser, more flexible
+       and taut stems.
+
+References:
+Ambrose, A. R., Sillett, S. C., & Dawson, T. E. (2009). Effects of tree height on
+branch hydraulics, leaf structure and gas exchange in California redwoods.
+Plant Cell and Environment, 32(7), 743­757. https://doi.org/10.1111/j.1365-
+3040.2009.01950.x
+
+      Task #36
+
+    . FALSE. Since diffusion coefficient in water is smaller than air, the
+       aquatic plants prefer thinner cuticles to allow more area to
+       uptake/release the dissolved gasses, as opposed to only stomata of land
+       plants.
+
+    . TRUE. The graph between 7 and 8 shows that HCO3- is at least 90% of
+       total carbon in that range of pH, so it would be advantageous to use it as
+       a carbon source in oceanic ecosystems.
+
+    . TRUE. True, because it would locally lower the pH to levels where CO2
+       dominates and can be more readily uptaken as opposed to its ionic
+       forms.
+
+    . TRUE. Higher efficiency Rubisco would lead to higher forward reaction
+       rate, which would create the asymmetry to give direction to carbonic
+       anhydrase reaction. This assumes the pH stays close enough to its
+       original value, which is possible because cytoplasm is buffered and
+       anhydrase does not consume enough protons to shift the pH too far.
+
+References:
+Lambers, H., & Oliveira, R. S. (2019). Photosynthesis, Respiration, and Long-
+Distance Transport. In Plant Physiological Ecology. Springer Nature.
+@@PAGE 100@@
+      Task #37
+
+    . FALSE. This refers to the Casparian belts, which do not allow water and
+       solutes to pass through the cell walls (apoplastic pathway), only through
+       cell membranes. Casparian belts are located in the endoderm, that is,
+       on the border of zones B and C.
+
+    . FALSE. In order for water to flow from the soil (zone A) to the primary root
+       cortex (zone B), a solution with a higher concentration of dissolved
+       substances must be formed in zone B (that is, in zone B the water
+       potential must be lower). Solutes combine with water molecules due to
+       their charge, reducing the concentration of free water molecules. Thus,
+       for the shown water flow, it is necessary that the concentration of free
+       water molecules in zone B be less than in zone A.
+
+    . TRUE. Oxygen starvation usually occurs during floods. As a result of the
+       described process, empty cavities appear in zone B (primary root cortex),
+       which improves the aeration of root tissues.
+
+    . TRUE. True, because NaCl dissociates in water into two particles. That
+       is, 0.2 moles of NaCl yield 0.4 Osm/L in solution. Thus, the solution will
+       have a higher concentration of dissolved particles than the cells in zone
+       B (i.e., it will be more concentrated).
+
+References:
+Campbell Biology, chapter 36 "Resource acquisition and Transport in Vascular
+Plants"
+https://en.wikipedia.org/wiki/Osmotic_concentration
+
+      Animal Anatomy and Physiology
+
+      Task #38
+
+    . FALSE. The SA node should have its own pace - C3. C1 corresponds to
+       the ventricular myocyte and C2 to the atrial one.
+
+    . FALSE. Repolarization of atria is not visible behind the QRS complex, it
+       would be seen if there is no depolarization of ventricles.
+
+    . FALSE. S wave is depolarization, but moving in the opposite to the lead
+       side.
+@@PAGE 101@@
+    . TRUE. The current direction of the vector P corresponds to the direction
+       of the lead II and is perpendicular to the lead III.
+
+References:
+      Hamid Khederlou, H. (2023). Complete heart block associated with
+
+paraneoplastic hypercalcemia: A case report. European Heart Journal, 7(1).
+https://doi.org/10.1093/ehjcr/ytac492
+
+      Morlin, M. T., Cruz, C. J. G., Melo, P. B. S., Lopes, G. H. R., Soares, E. M. K.
+V. K., Porto, L. G. G., & Molina, G. E. (2020). BRADYCARDIA IN ATHLETES: DOES
+THE TYPE OF SPORT MAKE ANY DIFFERENCE? ­ A SYSTEMATIC REVIEW.
+SciELO Brazil, 26(5). https://doi.org/10.1590/1517-8692202026052019_0001
+
+      Silverthorn, D. U. (2022). Human physiology an integrated approach (11th
+ed.). Pearson, Harlow.
+
+      Teymouri, N., Mesbah, S., Navabian, S. M. H., Shekouh, D., Najafabadi, M.
+M., Norouzkhani, N., Poudineh, M., Qadirifard, M. S., Mehrtabar, S., & Deravi,
+N. (2022). ECG frequency changes in potassium disorders: a narrative review.
+American journal of cardiovascular disease, 12(3), 112­124
+
+      Widemaier, E. P., Vander, A. J., Raff, H., & Strang, K. T. (2019). Vander's
+human physiology : The mechanisms of body function (15th ed.). McGraw-Hill
+Education.
+
+      Task #39
+
+    . FALSE. Snow leopards' hemoglobin shows almost no sensitivity to DPG,
+       as evidenced by nearly identical curves for cofactor-free hemoglobin and
+       hemoglobin with added DPG, unlike the noticeable difference seen in
+       humans between cofactor-free and DPG-added hemoglobin (Figure 1B).
+
+    . TRUE. The hemoglobin of snow leopards inhabiting high-altitude areas
+       has a low affinity to oxygen and causes hypoxia. An enhanced capacity
+       to increase ventilation under severe hypoxia could help compensate for
+       the low O2 affinity of snow leopards, causing respiratory alkalosis. This,
+       in turn, induces increased renal excretion of bicarbonate compared to
+       snow leopards living in lowland areas, returning the pH back to normal.
+
+    . FALSE. From Figures 1A and 1B, it can be observed that the oxygen
+       affinity of hemoglobin in snow leopards is mostly the same as in lions for
+       low oxygen concentrations, which inhabit lowland areas. Therefore, the
+@@PAGE 102@@
+       hemoglobin of snow leopards is not adapted to high altitudes
+       biochemically, and snow leopards rely on other adaptations like
+       hyperventilation.
+    . FALSE. Increased P50 means that the hemoglobin has less affinity to
+       oxygen. The graph shows a positive change in P50, which implies that KCl
+       always lowers affinity. Therefore, KCl causes a stronger decrease in
+       affinity to oxygen for the lion's HbA as opposed to the snow leopard's
+       HbB (Figure 1C).
+
+References:
+      Janecka JE, Nielsen SS, Andersen SD, Hoffmann FG, Weber RE, Anderson
+
+T, Storz JF, Fago A. Genetically based low oxygen affinities of felid hemoglobins:
+lack of biochemical adaptation to high-altitude hypoxia in the snow leopard. J
+Exp Biol. 2015 Aug;218(Pt 15):2402-9. doi: 10.1242/jeb.125369. PMID:
+26246610; PMCID: PMC4528707.
+
+      Zubieta-Calleja G, Zubieta-Castillo G, Zubieta-Calleja L, Ardaya-Zubieta
+G, Paulev PE. Do over 200 million healthy altitude residents really suffer from
+chronic Acid-base disorders? Indian J Clin Biochem. 2011 Jan;26(1):62-5. doi:
+10.1007/s12291-010-0088-9. Epub 2010 Nov 16. PMID: 22211016; PMCID:
+PMC3068777.
+
+      Task #40
+
+    . TRUE. From Figure 1, it can be observed that the light-fed mice were
+       consistently less active than the dark-fed group over time. Light-fed mice
+       also consumed slightly more calories than the dark-fed mice. The
+       combined effect of a small increase in caloric intake and a small
+       decrease in activity contributes to specific differences in body weight.
+
+    . FALSE. Mice are nocturnal animals with higher activity during the dark
+       period (Figure 1) and less temperature fluctuation (Figure 2B). However,
+       light-time feeding resulted in an increase in body weight and fluctuations
+       in body temperature. Therefore, light-time feeding is an example of
+       circadian-behavior misalignment.
+
+    . FALSE. The light-fed mice's body temperature range before the
+       experiment was 36-38 and during the light-time feeding, it became 34-38
+@@PAGE 103@@
+   degrees Celsius (Figure 2A), while the dark-fed mice's body temperature
+   range did not change (Figure 2B).
+. FALSE. From Figure 1, it can be seen that with decreasing locomotor
+   activity in light-fed mice, their caloric intake from the middle of week 2 to
+   the middle of week 6 stays relatively the same.
+
+Reference:
+
+1. Damiola, F., Le Minh, N., Preitner, N., Kornmann, B., Fleury-Olela, F., &
+Schibler, U. (2000). Restricted feeding uncouples circadian oscillators in
+peripheral tissues from the central pacemaker in the suprachiasmatic
+
+nucleus.    Genes         &  development,  14(23),  2950­2961.
+https://doi.org/10.1101/gad.183500
+2. Arble, Deanna M et al. "Circadian timing of food intake contributes to
+
+weight gain." Obesity (Silver Spring, Md.) vol. 17,11 (2009): 2100-2.
+doi:10.1038/oby.2009.264
+
+      Task #41
+
+    . TRUE. The rate of active bouts persisted through prolonged periods of
+       constant light or darkness (Figure 1C), suggesting internal control or
+       circadian rhythm.
+
+    . FALSE. From the figures it is seen that they are nocturnal animals
+       because active and quiet sleep phases occur during the daytime.
+
+    . FALSE. There is no data provided that shows the changes in the average
+       duration of active bouts after sleep deprivation.
+
+    . TRUE. There is an increased amount of bouts after sleep deprivation and
+       there is a higher probability of bout being sooner if the bout is
+       interrupted.
+
+Reference:
+Wake-like skin patterning and neural activity during octopus sleep. Aditi
+Pophale, Kazumichi Shimizu, Tomoyuki Mano, Teresa L. Iglesias, Kerry Martin,
+Makoto Hiroi, Keishu Asada, Paulette García Andaluz, Thi Thu Van Dinh, Leenoy
+Meshulam & Sam Reiter.
+@@PAGE 104@@
+      Task #42
+
+    . FALSE. The electric eel employs low-voltage impulses to detect the
+       presence of prey nearby. However, for direct localization of prey, it
+       utilizes high-voltage impulses. This is evident from the eel's behavior of
+       attacking the conducting rod, mistaking it for prey, as the rod affected the
+       electric field generated by the high-voltage impulses.
+
+    . FALSE. The eel initiated the attack on the rod because it detected the
+       presence of prey nearby. It recognized this when the prey, in response to
+       the low-voltage impulse, twitched, thereby creating a mechanical
+       movement in the water, which the eel sensed.
+
+    . FALSE. The frame indicates the time point when the high-voltage
+       impulses commence (following the low-voltage one). From this, it can be
+       inferred that the corpse has already twitched, and the eel has realized
+       the presence of prey nearby.
+
+    . FALSE. As stated in the explanation of the first point, for direct prey
+       localization prior to attack, the electric eel employs high-voltage
+       impulses. Mechanoreceptors only sense water vibrations after the prey
+       twitches due to the low-voltage impulse.
+
+Reference:
+https://www.nature.com/articles/ncomms9638#citeas
+
+      Task #43
+
+    . FALSE. Not all bones are represented by dark areas. For example, the
+       eye sockets are shown in light gray.
+
+    . FALSE. Conversely, as the passage widens, the airspeed decreases -
+       Poiseuille's Law.
+
+    . FALSE. Structure "l" is tongue (lingua), which has other primary
+       functions
+
+    . FALSE. Due to the large weight load per unit area of support, saigas more
+       often fall into the snow, which makes them easier prey for wolves in
+       winter
+@@PAGE 105@@
+Reference:
+1. Case studies in novel narial anatomy: 3. Structure and function of the nasal
+cavity of saiga (Artiodactyla: Bovidae: Saiga tatarica). Andrew B. Clifford and
+Lawrence M. Witmer.
+https://people.ohio.edu/witmerl/Downloads/2004_Clifford&Witmer_saiga_no
+se.pdf
+2. "  " ("Living Treasures of Kazakhstan")
+«Kazakhstan» Publishing House, Alma-Ata, 1979. Compiled by E. A. Bychkova.
+Scientific editors: E. V. Gvozdev, Academician of the Academy of Sciences of
+the Kazakh SSR; V. I. Kapitonov, Candidate of Biological Sciences.
+
+      Task #44
+
+    . FALSE. . Activation of TLR7/8 receptors on X-chromosome bearing
+       sperm cells decrease their progressive motility (See Graph A of Figure 2).
+
+    . TRUE. . See Graph C of figure 2. High-mobility sperm cells that don't have
+       TLR7/TLR8 receptors (and more likely to have Y chromosome) are in the
+       upper layer.
+
+    . TRUE. . Results shown in graphs B and C of Figure 2 allow us to conclude
+       that this is a viable method of sorting sperm cells by sex.
+
+    . TRUE. . Difference between R and C groups under different glucose
+       concentration from Graph A of Figure 2
+
+      References:
+      Umehara, T., Tsujita, N., Zhu, Z., Ikedo, M., & Shimada, M. (2020). A simple
+sperm-sexing method that activates TLR7/8 on X sperm for the efficient
+production of sexed mouse or cattle embryos. Nature protocols, 15(8), 2645­
+2667. https://doi.org/10.1038/s41596-020-0348-y
+
+Umehara, T., Tsujita, N., & Shimada, M. (2019). Activation of Toll-like receptor
+7/8 encoded by the X chromosome alters sperm motility and provides a novel
+simple technology for sexing sperm. PLoS biology, 17(8), e3000398.
+https://doi.org/10.1371/journal.pbio.3000398
+@@PAGE 106@@
+      Task #45
+
+    . TRUE. . Cross - sections of samples with EC(+) shows luminar structures
+       and better media supply, which shows that EC increases the formation
+       of new vessels, while function of FGF2 is to promote communication
+       with the vascular bed.
+
+    . FALSE. . As you can see in the figures H and G with green fluorescence,
+       the green dots are not actively distributed in the cell sheet area in image
+       G, while at image H, EC are actively distributed around the cs.
+
+    . TRUE. . By assuming that cells have the same proliferation rate (from the
+       same culture of cells), the plateau state in the bioluminescence rate
+       indicates the cell survival rate, because at the plateau point, the number
+       of living cells with luciferase enzyme is the only limiting factor. It is true
+       that EC(-) FGF(+) has higher cell survival than EC(+) FGF(-).
+
+    . FALSE. . For EC(+) FGF(+) the rate can not mainly be explained by simple
+       direct diffusion, because direct diffusion alone can not be that fast as
+       you can see in the example of all EC(-) samples. The combined effect of
+       direct diffusion and transport by newly developed vessels provides a fast
+       increasing state.
+
+References:
+- In vitro fabrication of functional three-dimensional tissues with perfusable
+blood vessels
+https://www.nature.com/articles/ncomms2406
+
+      Task #46
+
+    . FALSE. We can see that neurons can fire action potential with higher
+       frequency (Figure 1C) meaning that this pattern is formed due to different
+       reasons.
+
+    . FALSE. Since the membrane potential rises for the fourth time, the
+       neuron is not in the absolute refractory period, therefore, with an
+       increase in the signal duration, more ions will enter the cell and the
+       potential may reach the threshold value.
+@@PAGE 107@@
+    . TRUE. The potential of sodium is much further from its equilibrium
+       potential than the potential of potassium, therefore, even with the free
+       movement of both cations, more sodium will enter the cell.
+
+    . TRUE. For the generation of action potential any duration of light pulse
+       longer than certain threshold can work, however to get subthreshold
+       depolarization duration of light pulse should be more precise.
+
+Reference:
+Boyden, E., Zhang, F., Bamberg, E. et al. Millisecond-timescale, genetically
+targeted optical control of neural activity. Nat Neurosci 8, 1263­1268 (2005).
+https://doi.org/10.1038/nn1525
+
+      Task #47
+
+    . FALSE. Flying animals require more energy for the beginning of the
+       movement.
+
+    . FALSE. It is possible to find the lowest value by solving an equation or
+       taking the derivative. V = 0.79 km/h.
+
+    . FALSE. Since each type of gait has its minimum, animals would switch
+       between these COT minimums without moving on the intermediate
+       speeds - multimodal distribution (with 3 peaks).
+
+    . TRUE. Cod experiences increasing drag because of the movement in the
+       water, running animals experience negligible air drag.
+
+References:
+Moyes, C. D., & Schulte, P. M. (2016). In Principles of Animal Physiology (pp.
+535­538). essay, Pearson.
+
+      Task #48
+
+    . TRUE. The person does full expiration and the only remaining volume is
+       RV, meaning that the spirometer is now Vs + ERV
+
+    . FALSE. From the description of the process, it is possible to notice that
+       we form a closed system when a person starts to breathe in a spirometer.
+@@PAGE 108@@
+       It means that the amount of helium at the beginning of the experiment
+       should be equal to the final amount: C1Vs = C2(Vsf+RV). As a result, we
+       can calculate RV=(C1Vs)/C2 - Vsf. RV1 = (10*5)/8 - 5.6 = 0.65L = 650 ml
+    . TRUE. Constant inspiratory volume + increased RV = increased lung
+       volume.
+    . TRUE. Patient 2 has decreased RV and decreased ERV, meaning that its
+       total lung volume is also smaller with less RV left inside, pneumothorax
+       can explain this as the patient would only have one functioning lung.
+
+Reference:
+Moyes, C. D., & Schulte, P. M. (2016). In Principles of Animal Physiology (pp.
+574­575). essay, Pearson.
+
+      Task #49
+
+    . TRUE. Tachycardia is increased heart rate, meaning that the time
+       between each heartbeat, and consequently systole, is smaller.
+
+    . FALSE. High arterial pressure means that there is higher pressure in the
+       aorta during the systolic phase and more resistance to ventricular
+       contraction. Higher resistance results in lower peak velocity.
+
+    . TRUE. . By simply rearranging the equation, we get that v = c(delta
+       f)/(2*f0*cos(theta)) = 120 cm/s
+
+    . TRUE. The area under the curve represents the distance traveled by the
+       blood during the entire systole. Blood travel distance = 0.33 * 100 / 2 =
+       16.67 cm. We know the distance and we know that the aorta has a radius
+       of 1.25 cm, meaning that the volume traveled through the aorta is 16.67
+       *(pi * 1.25^2) = 81.8 cm^3. From the graph, it is also seen that the heart
+       rate is 60 bpm, CO = 81.8 * 60 = 4908 cm^3 = 4.9 L.
+
+References
+https://www.deltexmedical.com/downloads/TechnicalReview.pdf
+@@PAGE 109@@
+      Task #50
+
+    . FALSE. While hydrostatic pressure drives blood through the glomerulus,
+       water moves via secondary active transport after the sodium.
+
+    . TRUE. While at the same depth, 1 and 3 have different osmolarities, this
+       is not due to the water movement, but rather because of the reabsorption
+       of the sodium in the collecting duct.
+
+    . FALSE. Osmolarity should be higher than 290 so that water would
+       establish 290 in the descending limb, as well as in the collecting duct.
+
+    . TRUE. In this case, sodium will be left in the kidney and gradually all of
+       the sodium will accumulate in the medulla.
+
+Reference:
+WINTERS, R. W., & DAVIES, R. E. (1961). The role of countercurrent
+mechanisms in urine concentration: a review. Annals of Internal Medicine,
+54(4), 810-826
+

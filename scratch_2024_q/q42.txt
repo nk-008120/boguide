@@ -1,0 +1,53 @@
+--- page 61 ---
+Theoretical Exam - Part A               Q7-6
+                                                       English (Official)
+
+42
+
+Electric eels (Electrophorus electricus) are predatory fish that utilize electrical and mechanical signals dur-
+ing hunting. They emit two types of electrical impulses: low-voltage, which induces sudden muscle con-
+traction of the prey, and high-voltage, which paralyzes the prey, aiding in capture and consumption.
+
+Electrode                  Eel
+                                                     Electrode
+                                                                Transparent
+                                                                  divider
+
+                                        Non-conductive
+                                        rod
+
+                           Fish corpse
+
+           Plastic bag
+
+           Figure 1. Experiment setup; black arrow - conductive rod.
+
+In the experiment conducted for studying electrolocation mechanisms of eels, a container with two com-
+partments was used, as shown in Figure 1. The lower compartment contained an isolated fresh fish
+corpse attached to electrodes, connecting it to the upper compartment's environment. Additionally,
+several electrically non-conductive rods and one conductive rod were placed beneath the transparent,
+perforated divider.
+
+Results of the experiment indicated that upon placement in the container, the eel began attacking the
+conductive rod, but not the fish corpse (Figure 2). Assume that the fish corpse was supplied with a
+sufficient amount of ATP.
+
+Figure 2. A Impulses recorded from the upper compartment (x-axis - time, y-axis - voltage);
+LW - low voltage impulse, HW - high voltage impulse. B Frames shot form the experiment (BV
+- bottom view, SV - side view); black arrow - conductive rod, red arrow - attack. The fish corpse
+is highlighted in red.
+--- page 62 ---
+Theoretical Exam - Part A  Q7-7
+                                          English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Only low-voltage impulses are required for prey electrolocation.
+
+B. The divider blocked the movement of water between the compartments.
+
+C. The first frame in Figure 2B was taken before the corpse began to contract.
+
+D. Eels prefer to rely on their mechanoreceptors rather than electroreceptors
+when localizing the exact location of their prey.

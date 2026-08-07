@@ -1,0 +1,33 @@
+--- page 71 ---
+Theoretical Exam - Part A  Q7-16
+                                                    English (Official)
+
+47
+
+The efficiency of animal locomotion can be expressed in terms of the cost of transport (COT), derived
+from oxygen consumption versus velocity data. The oxygen consumption plot represents the amount of
+energy required to achieve and maintain a certain speed. COT represents how efficiently an organism
+can cover a unit distance at a certain speed, and generally has the same trendline shape among different
+animals and different gaits of the single animal species.
+
+O2 consumption
+(mg of O2 / [min/kg])
+
+                                           Velocity (m/s)
+
+                          Figure 1. Oxygen consumption versus velocity graph for cod (fish).
+
+                                    COT =  +  +  2
+                                    Coefficients for cod: a = 0.17; b = -0.22; c = 0.14.
+Table 1. Trendline equation for COT (V is in km/h) and list of coefficients suiting data obtained from cod.
+
+                 On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+                 ones.
+                 A. Flying birds would have a lower oxygen consumption at minimum moving
+                 speed on oxygen consumption versus velocity graph than a cod of comparable
+                 size.
+                 B. The minimum possible COT of the cod is achieved at 0.6 km/h.
+                 C. If you sample the speeds at which a large population of horses move during
+                 the week, you would see that all speeds fall within a single, narrow range.
+                 D. For animals that run, the oxygen consumption versus velocity plot for run-
+                 ning would be more linear than the cod's.

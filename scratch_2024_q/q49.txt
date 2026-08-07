@@ -1,0 +1,61 @@
+--- page 73 ---
+Theoretical Exam - Part A                          Q7-18
+                                                                            English (Official)
+
+49
+
+Esophageal Doppler Monitoring (EDM) is a minimally invasive method to measure blood flow in the aorta
+and assess cardiac output. A Doppler probe is inserted into the esophagus near the aorta. The principle
+behind the measurement is the detection of changes in frequency (Doppler shift) of ultrasound waves
+reflected by moving red blood cells. Using the Doppler effect, described by the following equation, the
+probe calculates blood flow velocity.
+
+                                =  20 cos                                                     (1)
+                                        
+
+where
+
+                  
+                   2
+          cos  =  2        ,    =  1540m/s,  0  =  4  MHz                                     (2)
+
+The resulting waveform provides important data on heart function, such as stroke volume and cardiac
+output, which helps guide clinical decisions in real-time.
+
+       A                      2.5 cm Aorta
+
+                                   Oesophagus
+
+                                                Probe
+
+       B       Velocity
+               (cm/s)
+
+          100
+
+                                                 Time (s)
+
+          0 1/3 2/3 1 4/3 5/3
+
+Figure 1. A Placement of the Doppler probe in the esophagus near the aorta to measure blood
+flow velocity (red arrow). B Doppler waveform showing linear blood velocity (cm/s) over time
+(s), with a peak systolic velocity of 100 cm/s. The area under the curve shows the distance
+traveled by blood.
+--- page 74 ---
+Theoretical Exam - Part A  Q7-19
+                                                    English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Tachycardia decreases the intervals between waveforms on the velocity-time
+graph.
+
+B. Without any compensation from the heart, high arterial resistance increases
+peak velocity.
+
+C. If the largest frequency shift observed for a patient was 4.4 kHz, their peak
+velocity is around 120 cm/s
+
+D. According to Figure 1B and 1A, a person's heart ejects 4.9 L of blood per
+minute.

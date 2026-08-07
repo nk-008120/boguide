@@ -1,0 +1,48 @@
+--- page 40 ---
+Theoretical Exam - Part A        Q5-7
+                                                English (Official)
+
+25
+
+Mitochondrial RNase P is an endonuclease composed of three subunits (Figure 1B). Mutations in this
+enzyme are often associated with the development of combined oxidative phosphorylation deficiency
+syndrome (COXPD54) in humans. The figures below show various information regarding RNase P and
+its mutations.
+
+C                             X  Y
+      Human
+      Chimpanzee           Z
+      Mouse
+      Rat
+      Zebrafish
+      Drosophila
+
+      Human
+      Chimpanzee
+      Mouse
+      Rat
+      Zebrafish
+      Drosophila
+
+Figure 1. A1 & A2 are pedigrees of two families showing distinct missense mutations resulting
+in the COXPD54 syndrome in shaded individuals; mutation X for A1 and mutation Y for A2.
+B RNase P subunits; (MTS - mitochondrial targeting sequence). C Alignment results of the
+RNase peptide segment across various organisms. Positions affected by the mutations are
+highlighted in orange boxes. The mutations leading to COXPD54 syndrome are Tyr (Y)  His
+(H) in position X; Thr (T)  Ala (A) in position Y; Ala (A)  Val (V) in position Z.
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Within the primary structure, it can be assumed that the mutation at position
+X is located closer to the active site of the enzyme than the mutation at position
+Z.
+
+B. Mutation at position Y involves transversion (purine to pyrimidine change).
+
+C. All of the RNase P subunits assemble within the cytoplasm before being trans-
+ported into the mitochondrion.
+
+D. Knowing that individual II-3 (A1) is the carrier of mutation at position X, the
+probability of the couple II-3 (A1) and II-2 (A2) having a child with the syndrome
+is 1/6. (Assume Mendelian inheritance.)

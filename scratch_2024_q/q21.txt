@@ -1,0 +1,46 @@
+--- page 35 ---
+Theoretical Exam - Part A                                           Q5-2
+                                                                                   English (Official)
+
+21
+
+The 'Out of Africa' theory postulates that modern humans originated in Africa and subsequently migrated
+to different parts of the world. Indeed, large-scale analyses of human genomes strongly support this
+theory. An example of such support can be observed in the pronounced negative correlation between
+population genetic diversity and distance from East Africa (Figure 1). Effective population size refers to
+the size of an idealized population with the same genetic diversity as in the observed population as in
+all present genetic diversity within the observed population has been concentrated in a more limited
+number of individuals.
+
+Mean heterozygosity                                                 r: -0.91
+
+     0.45 0.50 0.55 0.60 0.65 0.70 0.75  Africa
+                                         Europe
+                                         Middle East
+                                         South Central Asia
+                                         East Asia
+                                         Oceania
+                                         America
+
+                                         5000  10000         15000  20000            25000
+
+                                               Distance to East Africa (kilometers)
+
+Figure 1. Average heterozygosity in humans vs distance from East Africa.
+--- page 36 ---
+Theoretical Exam - Part A  Q5-3
+                                          English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Populations further away from East Africa have larger long-term average ef-
+fective population sizes.
+
+B. A slightly deleterious mutation is less likely to get fixed (frequency = 1) in the
+African population compared to the native American population
+
+C. The reduced genetic diversity in non-African populations is likely due to the
+founder effect.
+
+D. Figure 1 could represent the heterozygosity of DNA polymerase genes.

@@ -1,0 +1,36 @@
+--- page 6 ---
+Theoretical Exam - Part A  Q1-1
+                                          English (Official)
+
+Biosystematics
+
+1
+
+Kazakhstan boasts a rich ecosystem harboring numerous species of tulips, some of which are direct
+ancestors to many modern cultivated varieties. These tulips exhibit a diverse range of morphological
+traits, although not all of these traits are reliable indicators of species identification.
+
+In Table 1 below, we outline five distinct types of tulips and their variations across five characteristics
+(A-E), typically utilized in the classification of tulip types.
+
+       Table 1. Morphological comparisons; A - presence/absence of hairs on the stamen, B - number
+       of flowers (2(+) = 2 or more), C - presence/absence of a dense layer of hairs on the bulbs, D -
+       number of leaves, E - color of the stamen filament, Y - yellow, K - black.
+
+It's worth noting that T. borszczowii has the same features as the common ancestor among these tulip
+species.
+
+                 On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+                 ones.
+
+                 A. In a phylogenetic tree constructed using maximum parsimony, the species T.
+                 lemmersii, T. salsola, and T. bifloroformis are expected to constitute a polyphyletic
+                 group.
+
+                 B. The maximum parsimony tree contains at least one character reversal.
+
+                 C. All plants within the genus Tulipa share the characteristic of having leaves
+                 with either arcuate or parallel veins.
+
+                 D. According to the data, the presence of two or more flowers is the most re-
+                 cently evolved characteristic compared to the others.

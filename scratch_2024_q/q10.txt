@@ -1,0 +1,45 @@
+--- page 21 ---
+Theoretical Exam - Part A                  Q2-12
+                                                                    English (Official)
+
+10
+
+Magnetotactic bacteria have magnetosomes (magnetite crystals with a lipid membrane) arranged in
+a line, helping them find water with suitable oxygen levels in the oxic-anoxic transition zone (OATZ in
+Figure 1B). These bacteria are classified into two types: polar, which align their body orientation with the
+magnetic field, and axial, which can have two orientations along the magnetic field axis. In the Earth's
+Northern and Southern hemispheres, polar bacteria magnetosomes have opposite polarities. To stay in
+the OATZ, polar bacteria change the rotation direction of their flagella based on oxygen concentration.
+
+A                          B                          Earth's
+                                    Water             magnetic field
+
+                           Depth                      Counter
+
+                                                      Clockwise
+
+                           OATZ
+
+                                           Clockwise
+
+C
+
+                                    Magnetic field
+
+Figure 1. A Magnetotactic bacteria with labeled magnetosomes, the lower image shows the
+magnetic field generated. B Northern hemisphere polar bacteria in water, OATZ - suitable
+oxygen level. C Experimental setup: water-filled tube with two openings in a magnetic field.
+Bacteria start in the anoxic zone (red).
+
+          On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+          ones.
+
+          A. Magnetosomes help bacteria find the shortest path toward OATZ.
+
+          B. Polar bacteria from the southern hemisphere should have a clockwise flagella
+          rotation when above OATZ.
+
+          C. Axial magnetotactic bacteria will form 2 distinct bands in experimental setup.
+
+          D. Polar magnetotactic bacteria from the southern hemisphere will start a coun-
+          terclockwise rotation of flagella when placed into experimental setup.

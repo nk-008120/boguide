@@ -1,0 +1,30 @@
+--- page 47 ---
+Theoretical Exam - Part A     Q6-1
+                                             English (Official)
+
+Plant Anatomy and Physiology
+
+30
+
+Gibberellin, an essential phytohormone responsible for cell wall suberization, undergoes complex trans-
+port within plants involving a variety of transporters. Below are figures depicting results from studies on
+different membrane transporters of gibberellin.
+
+Figure 1. A Fluorescence intensity (Y) of root endodermal cells in grafted plants (X, root/shoot).
+Samples were treated with a fluorescent marker for suberin (Nile red); asterisks indicate a
+significant difference from the wild type. Col-O - wild type, ga1-3 - mutant lacking gibberellin
+synthesis, npf__ - mutants lacking expression of a specific type of transporter(s). B Cytoplasmic
+(I) and vacuolar (II) concentrations of gibberellin (arbitrary units) in the root.
+
+          On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+          ones.
+
+          A. Transport of gibberellins occurs in the following direction: root  shoot.
+
+          B. Vacuoles of the pericycle cells are involved in the regulation of threshold val-
+          ues of gibberellin concentration.
+
+          C. The npf3.1 mutant is vulnerable to water and mineral imbalances, as well as
+          toxins, compared to wild type.
+
+          D. All the transporters listed are located on the plasma membrane.

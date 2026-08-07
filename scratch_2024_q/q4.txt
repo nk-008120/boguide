@@ -1,0 +1,51 @@
+--- page 10 ---
+Theoretical Exam - Part A                                 Q2-1
+                                                                         English (Official)
+
+Cell and Molecular Biology
+
+4
+
+The extracellular pH of normal tissues is typically between 7.35 and 7.45. Meanwhile, in the tumor mi-
+croenvironment, extracellular pH is mildly acidic in the range of 6.5�6.9. Figure 1B provides an overview
+of the average extracellular pH values observed in different tumor types compared to their respective
+normal cells. Cancer cells also exhibit changes in the oxygen consumption rates (OCR). This phenomenon
+is demonstrated in Figure 1A by comparing the OCR of normal and cancer cells from three patients.
+
+A                        Normal cells            B        Tumor tissue
+                         Cancer cells                     Normal tissue
+                                               *                                                   8.0
+                                       *                                                      7.8pH
+                                                                                         7.6
+                          *                                                        7.4Skin
+                                                                               7.2Vulvar
+                                                                         7.0  Uterus
+                                                                    6.8        Lung
+                                                               6.6             Breast
+                                                          6.4
+                                                                               Brain
+   Single cell OCR (AU)
+
+                                                                                                        Muscles
+
+                         Patient 1  Patient 2  Patient 3
+
+Figure 1. A Oxygen consumption rates (OCR) in arbitrary units (AU) of normal and cancer
+cells. B Extracellular pH of normal tissue and corresponding tumor tissue. Asterix indicates a
+significant difference.
+
+                         On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+                         ones.
+
+                         A. Difference in oxygen consumption between cancerous and normal cells in-
+                         dicates that tumor cells exhibit decreased metabolic rate.
+
+                         B. Differences in extracellular pH values can be explained by the altered ratio of
+                         glucose fermentation to oxidative phosphorylation in cancer cells compared to
+                         normal ones.
+
+                         C. The tumor microenvironment is typically hyperoxic due to elevated oxygen
+                         consumption by cancer cells.
+
+                         D. The cancer cells of patient 3 are more heterogeneous compared to the cancer
+                         cells of the other two patients.
