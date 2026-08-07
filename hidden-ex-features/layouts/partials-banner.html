@@ -1,0 +1,40 @@
+<!-- Custom Tooltip / Notification Banner (Top‑Left) -->
+<div id="topbar-tooltip" class="custom-tooltip-box">
+  <button id="close-tooltip-btn" class="close-btn" aria-label="Close notification">×</button>
+  <div class="tooltip-text">
+    <strong>📢 This Website is still in test & survey phase. Please help us out by filling our Survey form live 17 June – 30 July 2026.</strong>
+  </div>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSc_FbhYS1IraA1s6F7zFLzkILBZvRceDqdoMqV7yTH6hu0k-g/viewform?usp=dialog" class="tooltip-link" target="_blank" rel="noopener noreferrer">
+    Give Survey →
+  </a>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const tooltip = document.getElementById('topbar-tooltip');
+    const closeBtn = document.getElementById('close-tooltip-btn');
+
+    // ── Show the tooltip after 200ms ─────────────────────────────────────────
+    function showTooltip() {
+      if (tooltip) {
+        tooltip.classList.add('show');
+      }
+    }
+
+    // Show after a short delay
+    setTimeout(showTooltip, 200);
+
+    // ── Close button ──────────────────────────────────────────────────────────
+    if (closeBtn && tooltip) {
+      closeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        tooltip.classList.remove('show');
+      });
+    }
+
+    // ── (Optional) Hide after 15 seconds ─────────────────────────────────────
+    // setTimeout(() => {
+    //   if (tooltip) tooltip.classList.remove('show');
+    // }, 15000);
+  });
+</script>
