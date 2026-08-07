@@ -265,6 +265,35 @@ html.dark #boguide-toc a:hover {
   color: white;
 }
 
+/* Smaller variant of .card/.two-cards for a 4-up "quick nav" grid (homepage
+   Main Features section) rather than the 2 big feature-highlight cards this
+   component was originally built for (Articles page). Same component,
+   same hover-lift/color language, just denser. */
+.feature-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: center;
+  max-width: 1100px;
+  margin: 2rem auto;
+}
+.feature-cards .card {
+  flex: 1 1 220px;
+  min-width: 220px;
+  max-width: 260px;
+  padding: 1.5rem;
+}
+.feature-cards .card-icon {
+  font-size: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+.feature-cards .card h3 {
+  font-size: 1.2rem;
+}
+.feature-cards .card p {
+  font-size: 0.9rem;
+}
+
 .collab-note {
   text-align: center;
   padding: 2rem;
@@ -273,10 +302,17 @@ html.dark #boguide-toc a:hover {
   margin-top: 2rem;
 }
 
-/* Define colors if not already in Hextra */
+/* --primary/--secondary drive .card/.btn-outline (Articles page's two
+   feature cards + the new homepage .feature-cards above) — originally a
+   leftover teal/lime pair from before the lilac/sage identity existed.
+   Retinted here rather than left as the one off-brand component sitewide. */
 :root {
-  --primary: #0D7A7A;
-  --secondary: #A8E63D;
+  --primary: #8965c4;
+  --secondary: #5c7a58;
+}
+.dark {
+  --primary: #c9b7e8;
+  --secondary: #9db99a;
 }
 /* === HOMEPAGE BACKGROUND (only when .homepage-bg is present) === */
 
@@ -2076,4 +2112,400 @@ html.dark .team-links a:hover {
       transform: translateX(-14px);
     }
   }
+}
+
+/* ===================================================================
+   17. QUESTION FOCUS / FULLSCREEN MODE — layouts/papers/question.html +
+   static/js/papers-question-focus.js. Applies only to individual q*
+   problem pages (cascaded layout: "question" from content/papers/_index.md),
+   not round overviews or the Timed Attempt page. Strips navbar/sidebar/TOC/
+   footer chrome from the reading pane and, once real Fullscreen (section
+   14 already uses the same API) is engaged, hides the site's own navbar/
+   footer too so the question owns the whole screen. The content pane is
+   scaled (not font-size-cascaded — Hextra's typography uses rem, which
+   wouldn't shrink consistently) down via --focus-scale by
+   papers-question-focus.js until it fits without scrolling; .focus-reader-
+   scroll is the JS-added fallback for content that still doesn't fit at
+   the smallest scale step.
+   =================================================================== */
+.focus-reader-root {
+  display: flex;
+  flex-direction: column;
+  height: calc(100dvh - var(--hextra-navbar-height, 3.5rem));
+  padding: 0 1.5rem;
+}
+.focus-reader-topbar {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(137, 101, 196, 0.15);
+}
+html.dark .focus-reader-topbar {
+  border-bottom-color: rgba(201, 183, 232, 0.18);
+}
+.focus-reader-exit {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  color: #8965c4;
+  white-space: nowrap;
+}
+.focus-reader-exit:hover {
+  text-decoration: underline !important;
+}
+html.dark .focus-reader-exit {
+  color: #c9b7e8;
+}
+.focus-reader-topnav {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.focus-reader-topnav .papers-quiz-nav {
+  margin: 0;
+  padding-top: 0;
+  border-top: 0;
+  gap: 0.5rem;
+}
+.focus-reader-topnav .papers-nav-btn {
+  font-size: 0.8rem;
+  padding: 0.35rem 0.8rem;
+}
+#focus-reader-fs-btn {
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+.focus-reader-content-wrap {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: hidden;
+}
+.focus-reader-content-wrap.focus-reader-scroll {
+  overflow-y: auto;
+}
+.focus-reader-content {
+  width: calc(100% / var(--focus-scale, 1));
+  transform: scale(var(--focus-scale, 1));
+  transform-origin: top left;
+  padding: 1rem 0 1.5rem;
+  font-size: 1.5em;
+}
+.focus-reader-title {
+  margin-top: 0 !important;
+}
+
+/* Real Fullscreen (triggered by #focus-reader-fs-btn) — reclaim the space
+   the site's own navbar/footer normally occupy. */
+html:fullscreen .hextra-nav-container,
+html:-webkit-full-screen .hextra-nav-container,
+html:-ms-fullscreen .hextra-nav-container,
+html:fullscreen .hextra-footer,
+html:-webkit-full-screen .hextra-footer,
+html:-ms-fullscreen .hextra-footer {
+  display: none;
+}
+html:fullscreen .focus-reader-root,
+html:-webkit-full-screen .focus-reader-root,
+html:-ms-fullscreen .focus-reader-root {
+  height: 100dvh;
+}
+
+/* ===================================================================
+   18. FAQ ACCORDION â€” {{< faq-item >}}
+   bionugget.space-inspired. Reuses the site's existing <details>/
+   <summary> reveal mechanism (section 4, practice-problem answers) but
+   deliberately does NOT reuse that rule's blue/green problem-solution
+   colors â€” a FAQ isn't a problem/solution pair, so it gets the site's
+   primary lilac chip language instead. Selectors are prefixed with
+   `.content` throughout (matching or beating `.content details`'s own
+   specificity) so this doesn't inherit that rule's !important styling.
+   Consecutive {{< faq-item >}} blocks visually merge into one grouped
+   list via the adjacent-sibling border collapse below â€” no wrapper
+   shortcode needed, just place them one after another.
+   =================================================================== */
+.content .faq-item {
+  margin: 0 !important;
+  border: 1px solid rgba(137, 101, 196, 0.25) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  overflow: visible !important;
+}
+.content .faq-item + .faq-item {
+  border-top: none !important;
+  margin-top: -1px !important;
+}
+.content .faq-item:first-of-type {
+  border-radius: 12px 12px 0 0 !important;
+}
+.content .faq-item:last-of-type {
+  border-radius: 0 0 12px 12px !important;
+}
+.content .faq-item summary {
+  cursor: pointer !important;
+  list-style: none !important;
+  padding: 14px 18px !important;
+  font-weight: 600 !important;
+  font-family: 'Fraunces', serif;
+  color: inherit !important;
+  background: rgba(137, 101, 196, 0.06) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  transition: background-color 0.2s ease !important;
+}
+.content .faq-item summary::-webkit-details-marker {
+  display: none !important;
+}
+.content .faq-item summary::before {
+  content: '+' !important;
+  font-size: 1.2rem !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  color: #6d4fa3 !important;
+  flex-shrink: 0 !important;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+.content .faq-item[open] summary::before {
+  transform: rotate(45deg) !important;
+}
+.content .faq-item[open] summary {
+  background: rgba(137, 101, 196, 0.12) !important;
+  border-bottom: 1px solid rgba(137, 101, 196, 0.2) !important;
+}
+.content .faq-item > *:not(summary) {
+  padding: 4px 18px 18px !important;
+  margin: 0 !important;
+  font-size: 0.95rem !important;
+}
+html.dark .content .faq-item {
+  border-color: rgba(201, 183, 232, 0.3) !important;
+}
+html.dark .content .faq-item summary {
+  background: rgba(201, 183, 232, 0.08) !important;
+}
+html.dark .content .faq-item summary::before {
+  color: #c9b7e8 !important;
+}
+html.dark .content .faq-item[open] summary {
+  background: rgba(201, 183, 232, 0.14) !important;
+  border-bottom-color: rgba(201, 183, 232, 0.25) !important;
+}
+
+/* ===================================================================
+   19. SCROLL PROGRESS BAR â€” reading progress on content pages
+   Neither aoguide.app nor bionugget.space has this; genuinely useful on
+   BioGuide's long, dense topic pages. Pure CSS (`animation-timeline:
+   scroll()`, Chromium 115+) â€” no DOM element, no JS: a `body::before`
+   pseudo-element scrubbed by document scroll position. Silently absent
+   in unsupported browsers (progressive enhancement, same posture as the
+   view-transition reroutes in section 15). Excluded on the homepage via
+   the `.homepage-bg` body class baseof.html already sets on `.IsHome`
+   â€” a hero/card landing page isn't something you track "reading
+   progress" through.
+   =================================================================== */
+body:not(.homepage-bg)::before {
+  content: "";
+  position: fixed;
+  top: var(--hextra-navbar-height, 60px);
+  left: 0;
+  width: 100%;
+  height: 3px;
+  transform-origin: 0 50%;
+  background: linear-gradient(90deg, #8965c4, #5c7a58);
+  z-index: 21;
+  pointer-events: none;
+  animation: reading-progress-fill auto linear;
+  animation-timeline: scroll(root block);
+}
+html.dark body:not(.homepage-bg)::before {
+  background: linear-gradient(90deg, #c9b7e8, #9db99a);
+}
+@keyframes reading-progress-fill {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@media print {
+  body::before {
+    content: none !important;
+  }
+}
+
+/* ===================================================================
+   19. ACCOUNT PAGE — content/papers/account/index.md +
+   static/js/papers-account.js. Login/signup/password-reset UI for the
+   optional BiOrchive leaderboard login. Reuses the .papers-nav-btn pill
+   button (section 12.5) and the same purple accent as the rest of the
+   papers archive, kept deliberately plain — this is a utility page, not
+   a showcase one.
+   =================================================================== */
+.papers-account-root {
+  max-width: 420px;
+  margin: 1.5rem 0;
+}
+.account-screen p {
+  margin: 0 0 1rem;
+}
+.account-hint {
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+.account-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(137, 101, 196, 0.2);
+}
+html.dark .account-tabs {
+  border-bottom-color: rgba(201, 183, 232, 0.25);
+}
+.account-tab {
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.5rem 0.25rem;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  color: inherit;
+  opacity: 0.6;
+}
+.account-tab.active {
+  opacity: 1;
+  border-bottom-color: #8965c4;
+  color: #8965c4;
+}
+html.dark .account-tab.active {
+  border-bottom-color: #c9b7e8;
+  color: #c9b7e8;
+}
+.account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.account-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.account-form input {
+  font-size: 1rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid rgba(137, 101, 196, 0.35);
+  background: transparent;
+  color: inherit;
+  font-weight: 400;
+}
+html.dark .account-form input {
+  border-color: rgba(201, 183, 232, 0.35);
+}
+.account-form input:focus {
+  outline: none;
+  border-color: #8965c4;
+}
+html.dark .account-form input:focus {
+  border-color: #c9b7e8;
+}
+.account-form button[type="submit"] {
+  align-self: flex-start;
+  cursor: pointer;
+}
+.account-link-btn {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.85rem;
+  color: #8965c4;
+  text-decoration: underline;
+  cursor: pointer;
+}
+html.dark .account-link-btn {
+  color: #c9b7e8;
+}
+.account-msg {
+  font-size: 0.85rem;
+  min-height: 1.2em;
+}
+.account-msg-error {
+  color: #dc2626;
+}
+html.dark .account-msg-error {
+  color: #f87171;
+}
+
+/* Submit-to-leaderboard block on the Timed Attempt report screen
+   (static/js/papers-attempt.js renderLeaderboardSubmit/submitToLeaderboard).
+   Sits directly under the score hero; empty/absent entirely for anonymous
+   users or when login isn't configured, so it never disrupts the existing
+   local-only report layout above and below it. */
+.attempt-leaderboard-block:empty {
+  display: none;
+}
+.attempt-leaderboard-block {
+  margin: 1rem 0 1.5rem;
+}
+.attempt-leaderboard-prompt {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+.attempt-leaderboard-msg {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+}
+.attempt-leaderboard-msg-error {
+  color: #dc2626;
+}
+html.dark .attempt-leaderboard-msg-error {
+  color: #f87171;
+}
+
+/* ===================================================================
+   20. LEADERBOARD TABLES — {{< papers-leaderboard >}} (per-round) and
+   the overall leaderboard page, both driven by
+   static/js/papers-leaderboard.js (per-round) / papers-leaderboard-
+   overall.js (overall) against read-only Supabase views. Reuses the
+   same purple accent + pill-button language as the rest of the archive.
+   =================================================================== */
+.papers-leaderboard-root {
+  margin: 1rem 0 2rem;
+}
+.papers-leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.papers-leaderboard-table th,
+.papers-leaderboard-table td {
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid rgba(137, 101, 196, 0.15);
+}
+html.dark .papers-leaderboard-table th,
+html.dark .papers-leaderboard-table td {
+  border-bottom-color: rgba(201, 183, 232, 0.18);
+}
+.papers-leaderboard-table th {
+  font-weight: 700;
+  opacity: 0.75;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.papers-leaderboard-table tr:first-child td {
+  font-weight: 700;
+}
+.papers-leaderboard-self {
+  background: rgba(137, 101, 196, 0.08);
+}
+html.dark .papers-leaderboard-self {
+  background: rgba(201, 183, 232, 0.1);
 }

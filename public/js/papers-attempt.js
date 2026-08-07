@@ -321,7 +321,7 @@
     var report = computeReport();
     saveReport(report);
     clearLive();
-    renderReport(report);
+    renderReport(report, true);
     showScreen(reportScreen);
   }
 
@@ -448,8 +448,66 @@
     }).join('');
   }
 
+  // ---- optional leaderboard submission ----
+  // Purely additive: anonymous users never see more than a one-line "log in"
+  // link here (or nothing at all, if login isn't configured on this
+  // environment), and the local report/recommendations above are always
+  // computed and shown exactly as before regardless of login state.
+  function renderLeaderboardSubmit(container) {
+    if (!window.PapersAuth || !window.PapersAuth.isConfigured()) return;
+    window.PapersAuth.getSession().then(function (session) {
+      if (!session) {
+        container.innerHTML = '<p class="attempt-leaderboard-prompt">' +
+          '<a href="/papers/account/">Log in</a> to save this result to the leaderboard — completely optional.</p>';
+        return;
+      }
+      container.innerHTML =
+        '<button type="button" class="papers-nav-btn papers-nav-next" id="attempt-submit-leaderboard-btn">Submit to Leaderboard</button>' +
+        '<div class="attempt-leaderboard-msg" id="attempt-leaderboard-msg"></div>';
+      document.getElementById('attempt-submit-leaderboard-btn').addEventListener('click', function () {
+        submitToLeaderboard(session);
+      });
+    });
+  }
+
+  function submitToLeaderboard(session) {
+    var btn = document.getElementById('attempt-submit-leaderboard-btn');
+    var msg = document.getElementById('attempt-leaderboard-msg');
+    if (btn) btn.disabled = true;
+    msg.textContent = 'Submitting…';
+    fetch('/api/submit-attempt', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + session.access_token },
+      body: JSON.stringify({
+        olympiad: DATA.olympiad,
+        year: DATA.year,
+        roundId: DATA.roundId,
+        answers: state.answers,
+        timeSpent: state.timeSpent,
+        fullscreenExits: state.fullscreenExits || 0
+      })
+    }).then(function (r) {
+      return r.json().then(function (body) {
+        if (!r.ok) throw new Error(body.error || 'Submission failed');
+        return body;
+      });
+    }).then(function (result) {
+      msg.innerHTML = 'Submitted — server score: ' + result.totalCorrect + '/' + result.totalStatements +
+        ' (' + result.scorePct + '%), rank #' + result.rank + '. ' +
+        '<a href="' + DATA.basePath + 'leaderboard/">View leaderboard →</a>';
+    }).catch(function (err) {
+      if (btn) btn.disabled = false;
+      setMsgError(msg, 'Error: ' + err.message);
+    });
+  }
+
+  function setMsgError(el, text) {
+    el.textContent = text;
+    el.classList.add('attempt-leaderboard-msg-error');
+  }
+
   // ---- report rendering ----
-  function renderReport(report) {
+  function renderReport(report, canSubmit) {
     var pct = report.totalStatements ? Math.round((report.totalCorrect / report.totalStatements) * 100) : 0;
     var subjectRows = Object.keys(report.subjectStats).sort(function (a, b) {
       var pa = report.subjectStats[a].correct / report.subjectStats[a].total;
@@ -487,6 +545,7 @@
       '<h2>Test Report — ' + escapeHTML(report.roundName) + '</h2>' +
       '<div class="attempt-score-hero">' + report.totalCorrect + ' / ' + report.totalStatements + '<span class="attempt-score-pct"> (' + pct + '%)</span></div>' +
       fsNote +
+      '<div class="attempt-leaderboard-block" id="attempt-leaderboard-block"></div>' +
       '<h3>By Subject</h3>' +
       '<div class="attempt-subject-list">' + subjectRows + '</div>' +
       '<h3>What to Do Next</h3>' +
@@ -504,6 +563,11 @@
       showScreen(startScreen);
       renderLastReportSummary();
     });
+
+    if (canSubmit) {
+      var lbBlock = document.getElementById('attempt-leaderboard-block');
+      if (lbBlock) renderLeaderboardSubmit(lbBlock);
+    }
   }
 
   function renderLastReportSummary() {

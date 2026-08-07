@@ -1,0 +1,20 @@
+{{ define "main" }}
+  {{/* Theme's global menu.js always queries .hextra-sidebar-container (even
+       outside docs pages); this layout intentionally omits the real sidebar
+       partial, so provide a hidden, out-of-flow stand-in to satisfy it. */}}
+  <aside class="hextra-sidebar-container" hidden></aside>
+  <div class="focus-reader-root" id="focus-reader-root" data-back="{{ .Parent.RelPermalink }}">
+    <div class="focus-reader-topbar">
+      <a class="focus-reader-exit" href="{{ .Parent.RelPermalink }}">← {{ .Parent.Title }}</a>
+      <div class="focus-reader-topnav" id="focus-reader-topnav"></div>
+      <button type="button" id="focus-reader-fs-btn" class="papers-nav-btn">⛶ Fullscreen</button>
+    </div>
+    <div class="focus-reader-content-wrap">
+      <main id="focus-reader-content" class="content focus-reader-content">
+        {{ if .Title }}<h1 class="focus-reader-title">{{ .Title }}</h1>{{ end }}
+        {{ .Content }}
+      </main>
+    </div>
+  </div>
+  <script src="{{ "js/papers-question-focus.js" | relURL }}" defer></script>
+{{ end }}

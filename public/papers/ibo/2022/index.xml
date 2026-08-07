@@ -25,7 +25,8 @@
         
         &lt;div class=&#34;biorchive-bg-layer&#34; aria-hidden=&#34;true&#34;&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;attempt/&#34; style=&#34;display:inline-block;margin-bottom:1.5rem;&#34;&gt;Start Timed Attempt →&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;attempt/&#34; style=&#34;display:inline-block;margin-bottom:1.5rem;&#34;&gt;Start Timed Attempt →&lt;/a&gt;
+&lt;a class=&#34;papers-nav-btn&#34; href=&#34;leaderboard/&#34; style=&#34;display:inline-block;margin-bottom:1.5rem;&#34;&gt;🏆 Leaderboard&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;papers-paperlinks&#34;&gt;
   &lt;div class=&#34;papers-paper-row&#34;&gt;&lt;span class=&#34;papers-paper-category&#34;&gt;Theoretical 1&lt;/span&gt;
     &lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Exam &amp;#43; Official Answer Key&lt;/a&gt;
@@ -528,7 +529,8 @@
         
         &lt;div class=&#34;biorchive-bg-layer&#34; aria-hidden=&#34;true&#34;&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;attempt/&#34; style=&#34;display:inline-block;margin-bottom:1.5rem;&#34;&gt;Start Timed Attempt →&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;attempt/&#34; style=&#34;display:inline-block;margin-bottom:1.5rem;&#34;&gt;Start Timed Attempt →&lt;/a&gt;
+&lt;a class=&#34;papers-nav-btn&#34; href=&#34;leaderboard/&#34; style=&#34;display:inline-block;margin-bottom:1.5rem;&#34;&gt;🏆 Leaderboard&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;papers-paperlinks&#34;&gt;
   &lt;div class=&#34;papers-paper-row&#34;&gt;&lt;span class=&#34;papers-paper-category&#34;&gt;Theoretical 2&lt;/span&gt;
     &lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Exam &amp;#43; Official Answer Key&lt;/a&gt;

@@ -1,0 +1,13 @@
+{{- /* Overall aggregate leaderboard across every round a user has submitted
+     to. Usage: {{< papers-leaderboard-overall >}} — no params, queries
+     Supabase's leaderboard_overall view (supabase/schema.sql) directly. */ -}}
+<div id="papers-leaderboard-overall-root" class="papers-leaderboard-root">
+  <p id="papers-leaderboard-overall-status">Loading leaderboard…</p>
+  <table class="papers-leaderboard-table" id="papers-leaderboard-overall-table" hidden>
+    <thead>
+      <tr><th>#</th><th>Name</th><th>Rounds</th><th>Overall</th></tr>
+    </thead>
+    <tbody id="papers-leaderboard-overall-tbody"></tbody>
+  </table>
+</div>
+<script src="{{ "js/papers-leaderboard-overall.js" | relURL }}" defer></script>

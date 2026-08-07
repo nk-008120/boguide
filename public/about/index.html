@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html lang="en" dir="ltr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=54856&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="robots" content="noindex, nofollow" />
   <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
@@ -11,7 +11,7 @@
 <title>About BiOGuide – BiOGuide for Biology Olympiads</title>
   <meta name="description" content="Hey, thanks for visiting! Let’s talk a bit about why we built BiOGuide.
 Preparing for Biology Olympiads involves a familiar set of challenges: difficulty picking the right resources, scattered notes and textbook references, incomplete practice material, a practical lack of hands-on skills, and more. This website exists to resolve most of those issues through a single, compiled, modern guide.
-Our goal is to be complete and concise. That doesn’t mean short, dry text with no motivation behind it — we’ve actively aimed for the opposite — but rather that the guide contains everything you actually need for the olympiads, kept current, and presented in a modern way that still lets you learn quickly from text and data." /><link rel="canonical" href="http://localhost:1313/about/" itemprop="url" />
+Our goal is to be complete and concise. That doesn’t mean short, dry text with no motivation behind it — we’ve actively aimed for the opposite — but rather that the guide contains everything you actually need for the olympiads, kept current, and presented in a modern way that still lets you learn quickly from text and data." /><link rel="canonical" href="http://localhost:54856/about/" itemprop="url" />
 
 <meta property="og:title" content="About BiOGuide">
 <meta
@@ -26,14 +26,14 @@ Our goal is to be complete and concise. That doesn’t mean short, dry text with
   content="
     website
   ">
-<meta property="og:url" content="http://localhost:1313/about/">
+<meta property="og:url" content="http://localhost:54856/about/">
 
 
 	<meta itemprop="name" content="About BiOGuide">
 	<meta itemprop="description" content="Hey, thanks for visiting! Let’s talk a bit about why we built BiOGuide.
 Preparing for Biology Olympiads involves a familiar set of challenges: difficulty picking the right resources, scattered notes and textbook references, incomplete practice material, a practical lack of hands-on skills, and more. This website exists to resolve most of those issues through a single, compiled, modern guide.
 Our goal is to be complete and concise. That doesn’t mean short, dry text with no motivation behind it — we’ve actively aimed for the opposite — but rather that the guide contains everything you actually need for the olympiads, kept current, and presented in a modern way that still lets you learn quickly from text and data.">
-	<meta itemprop="wordCount" content="842">
+	<meta itemprop="wordCount" content="1062">
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="About BiOGuide">
 	<meta name="twitter:description" content="Hey, thanks for visiting! Let’s talk a bit about why we built BiOGuide.
@@ -48,7 +48,13 @@ Our goal is to be complete and concise. That doesn’t mean short, dry text with
 
   
   
-  </head>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js" defer></script>
+<script>
+  window.__SUPABASE_URL = "";
+  window.__SUPABASE_ANON_KEY = "";
+</script>
+<script src="/js/papers-auth.js" defer></script>
+</head>
 <body class="">
     <div class="bioguide-bg-layer" aria-hidden="true"></div>
     <a href="#content" class="hx:sr-only hx:focus-visible:not-sr-only hx:focus-visible:fixed hx:focus-visible:z-50 hx:focus-visible:top-2 hx:focus-visible:left-2 hx:focus-visible:bg-primary-500 hx:focus-visible:text-white hx:focus-visible:px-4 hx:focus-visible:py-2 hx:focus-visible:rounded-md hx:focus-visible:text-sm hx:focus-visible:font-medium">Skip to content</a>
@@ -99,7 +105,7 @@ Our goal is to be complete and concise. That doesn’t mean short, dry text with
     <a class="hx:flex hx:items-center hx:hover:opacity-75 hx:ltr:mr-auto hx:rtl:ml-auto" href="/">
     <img class="hx:mr-2 hx:block hx:dark:hidden" src="/logo.png" alt="Logo" height="40" width="40" />
     <img class="hx:mr-2 hx:hidden hx:dark:block" src="/logo.png" alt="Dark Logo" height="40" width="40" />
-    <span class="hx:mr-2 hx:font-extrabold hx:inline hx:select-none">BiOGuide for Biology Olympiads</span>
+    <span class="hx:mr-2 hx:font-extrabold hx:inline hx:select-none">BiOGuide</span>
 </a>
 <div class="hx:relative hx:hidden hx:md:inline-block">
   <button
@@ -218,6 +224,12 @@ Our goal is to be complete and concise. That doesn’t mean short, dry text with
 ><span class="hx:inline-flex hx:items-center">
     <img src="/biorchive-mark.png" alt="" aria-hidden="true" class="hx:h-5 hx:w-auto hx:inline-block" />
   </span><span class="hx:text-center">BiOrchive</span>
+</a><a
+  title=""
+  href="/papers/leaderboard/"
+  
+  class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1.5 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
+><span class="hx:text-center">Leaderboard</span>
 </a><a
   title=""
   href="/about/"
@@ -379,6 +391,14 @@ Our goal is to be complete and concise. That doesn’t mean short, dry text with
     >
       <span class="hx:min-w-0 [word-break:break-word]">BiOrchive</span>
     </a>
+  </div></li><li><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
+    <a
+      class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
+      href="/papers/leaderboard/"
+      
+    >
+      <span class="hx:min-w-0 [word-break:break-word]">Leaderboard</span>
+    </a>
   </div></li><li><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="true">
     <a
       class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:contrast-more:border hx:contrast-more:border-primary-500 hx:dark:bg-primary-400/10 hx:dark:text-primary-600 hx:contrast-more:dark:border-primary-500"
@@ -514,6 +534,10 @@ Our goal is to be complete and concise. That doesn’t mean short, dry text with
         </a>
       </li>
       <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
+        <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#frequently-asked-questions">Frequently Asked Questions
+        </a>
+      </li>
+      <li class="hx:my-2 hx:scroll-my-6 hx:scroll-py-6">
         <a class="hx:font-medium hx:inline-block hx:rounded-sm hx:text-gray-500 hx:hover:text-gray-900 hx:dark:text-gray-400 hx:dark:hover:text-gray-300 hx:contrast-more:text-gray-900 hx:contrast-more:underline hx:contrast-more:dark:text-gray-50 hx:w-full hx:wrap-break-word hx:hextra-focus-visible-inset" href="#licensing">Licensing
         </a>
       </li></ul>
@@ -598,6 +622,36 @@ Our goal is to be complete and concise. That doesn’t mean short, dry text with
     <div class="team-bio">I&rsquo;m a high schooler in India who kept wishing a resource like this already existed while preparing for the International Biology Olympiad (Silver, 2026), so I built it myself. Astronomy was actually where I started (Gold, IOAA Jr 2025), and I&rsquo;ve since qualified for the national selection camps in both Chemistry and Astronomy too — though biology is the one that stuck, which is probably why I can&rsquo;t help connecting it back to the other two more than a syllabus usually allows. Outside this site, I split my time between chess, code,piano, tabla, violin and the occasional very average sketch. If something on here doesn&rsquo;t make sense or you just want to talk shop, find me at r6394175@gmail. If you find which star is in the image above, begin the mail with it&rsquo;s name, and wait for a surprise!</div>
   </div>
 </div>
+
+<h2>Frequently Asked Questions<span class="hx:absolute hx:-mt-20" id="frequently-asked-questions"></span>
+    <a href="#frequently-asked-questions" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><details class="faq-item">
+  <summary>Is BioGuide free to use?</summary>
+  <div>Yes — completely. The content is published under a CC BY-NC-SA 4.0 license: free to read, share, and adapt for non-commercial use, with attribution. See <a
+    href="#licensing">Licensing</a> below for the details.</div>
+</details>
+
+<details class="faq-item">
+  <summary>Which exams does BioGuide cover?</summary>
+  <div>The syllabus is built around IBO and USABO, with INBO also in scope. Coverage depth is IBO-targeted — broad enough for national olympiads, deep enough for international ones.</div>
+</details>
+
+<details class="faq-item">
+  <summary>How is content reviewed before it&#39;s published?</summary>
+  <div>Every page goes through the same process: written and edited by the Founder and Director, then reviewed and rated by a specialised team — only content rated above 4 (on a 1–5 scale) moves on. See <a
+    href="#ways-of-working">Ways of Working</a> above for the full workflow.</div>
+</details>
+
+<details class="faq-item">
+  <summary>Can I contribute or report an error?</summary>
+  <div>Yes, please do — open a GitHub Issue or PR on the <a
+    href="https://github.com/nk-008120/boguide"target="_blank" rel="noopener">repository</a>, or reach out on <a
+    href="https://discord.gg/WpC8y6dbv"target="_blank" rel="noopener">Discord</a>. Found a mistake, have a better diagram, or want to add a topic? All of that helps.</div>
+</details>
+
+<details class="faq-item">
+  <summary>How is my Login information used?</summary>
+  <div>We encrypt your login information using industry standards. There is no reason to be worried about logging in, but follow the standard rules of Password creation, it is a really cool feature where you can track where you stand in the leaderboard, and attempt tests with some purpose attached. Enjoy!</div>
+</details>
 
 <h2>Licensing<span class="hx:absolute hx:-mt-20" id="licensing"></span>
     <a href="#licensing" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>This website is published under a CC BY-NC-SA 4.0 license. A future BUSL-1.1 license is under consideration for a handful of more ambitious features planned much further down the line — don&rsquo;t worry, the website will remain non-profit regardless.</p>

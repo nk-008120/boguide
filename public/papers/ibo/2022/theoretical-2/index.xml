@@ -15,6 +15,34 @@
     
     
     <item>
+      <title>Leaderboard — Theoretical 2</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/leaderboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/leaderboard/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;a class=&#34;papers-nav-btn&#34; href=&#34;../&#34; style=&#34;display:inline-block;margin-bottom:1.5rem;&#34;&gt;← Back to Theoretical 2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ranked by score, then time. Only submitted, logged-in attempts appear here — &lt;a
+    href=&#34;../attempt/&#34;&gt;attempting without an account&lt;/a&gt; still works exactly as before, it just isn&amp;rsquo;t ranked.&lt;/p&gt;
+&lt;script id=&#34;papers-leaderboard-data&#34; type=&#34;application/json&#34;&gt;{&#34;olympiad&#34;:&#34;ibo&#34;,&#34;roundId&#34;:&#34;theoretical-2&#34;,&#34;roundName&#34;:&#34;Theoretical 2&#34;,&#34;year&#34;:&#34;2022&#34;}&lt;/script&gt;
+&lt;div id=&#34;papers-leaderboard-root&#34; class=&#34;papers-leaderboard-root&#34;&gt;
+  &lt;p id=&#34;papers-leaderboard-status&#34;&gt;Loading leaderboard…&lt;/p&gt;
+  &lt;table class=&#34;papers-leaderboard-table&#34; id=&#34;papers-leaderboard-table&#34; hidden&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;&lt;th&gt;#&lt;/th&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Score&lt;/th&gt;&lt;th&gt;Time&lt;/th&gt;&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody id=&#34;papers-leaderboard-tbody&#34;&gt;&lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+&lt;script src=&#34;http://localhost:1313/js/papers-leaderboard.js&#34; defer&gt;&lt;/script&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Q100 — Cold-Exposure Duration, Acclimation and Mollusc Survival</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q50/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -81,8 +109,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -219,8 +246,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -353,8 +379,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -487,8 +512,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -621,8 +645,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -755,8 +778,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -889,8 +911,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -1024,8 +1045,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -1158,8 +1178,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -1293,8 +1312,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -1427,8 +1445,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -1567,8 +1584,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -1700,8 +1716,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -1834,8 +1849,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -1964,8 +1978,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -2098,8 +2111,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -2232,8 +2244,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -2366,8 +2377,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -2500,8 +2510,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -2634,8 +2643,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -2768,8 +2776,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -2906,8 +2913,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -3040,8 +3046,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -3170,8 +3175,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -3304,8 +3308,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -3438,8 +3441,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -3572,8 +3574,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -3706,8 +3707,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -3840,8 +3840,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -3974,8 +3973,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -4108,8 +4106,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -4246,8 +4243,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -4388,8 +4384,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -4522,8 +4517,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -4712,8 +4706,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -4846,8 +4839,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -4984,8 +4976,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -5118,8 +5109,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -5248,8 +5238,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -5382,8 +5371,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -5517,8 +5505,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -5651,8 +5638,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -5836,8 +5822,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -5966,8 +5951,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -6100,8 +6084,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -6230,8 +6213,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -6365,8 +6347,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -6504,8 +6485,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -6638,8 +6618,7 @@
 &lt;/div&gt;
 &lt;script&gt;
 (function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
   var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
 
@@ -6700,148 +6679,6 @@
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=75&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Q99 — Competitive Displacement Between Two Hare Species in Newfoundland</title>
-      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q49/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q49/</guid>
-      <description>
-        
-        
-        &lt;div class=&#34;topic-meta&#34;&gt;
-  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
-  
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/9-ethology/foraging-anti-predator-behavior/&#34;&gt;Foraging &amp; Anti-Predator Behavior&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;Newfoundland was originally only inhabited by one species of hare, the arctic white hare &lt;em&gt;Lepus arcticus&lt;/em&gt; (up to 70 cm in length and up to 7.0 kg). It has previously been found both in open fields and in the woods of Newfoundland, feeding on grasses, various parts of trees and shrubs. Around 100 years ago, the small white hare &lt;em&gt;Lepus americanus&lt;/em&gt; (up to 52 cm in length and up to 1.55 kg) was introduced to the island. &lt;em&gt;Lepus arcticus&lt;/em&gt; currently inhabits only open areas and &lt;em&gt;Lepus americanus&lt;/em&gt; inhabits only forested areas. The forested areas are also inhabited by a predator of hares — the Canada lynx &lt;em&gt;Lynx canadensis&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q99-figure-1.png&#34; alt=&#34;Photograph of Lepus arcticus, a large white hare standing on snow with long, upright ears.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-  &lt;/span&gt;
-&lt;em&gt;Lepus arcticus (arctic white hare).&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q99-figure-2.png&#34; alt=&#34;Photograph of Lepus americanus, a smaller white hare sitting in snow among sparse forest brush.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-  &lt;/span&gt;
-&lt;em&gt;Lepus americanus (snowshoe hare).&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q99-figure-3.png&#34; alt=&#34;Photograph of Lynx canadensis, a lynx.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-  &lt;/span&gt;
-&lt;em&gt;Lynx canadensis (Canada lynx), the forest-dwelling predator of hares in Newfoundland.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Using the information and images, indicate whether the following statements are true or false.&lt;/p&gt;
-&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q49&#34;&gt;
-  &lt;div class=&#34;tf-quiz&#34;&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;L. americanus is the smaller of the two species (up to 52 cm/1.55 kg vs. L. arcticus&amp;#39;s up to 70 cm/7.0 kg), so &amp;#34;physically stronger&amp;#34; is not a plausible explanation — its advantage in the forest is more likely behavioral/camouflage-based rather than a matter of size or strength.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; Lepus americanus has pushed Lepus arcticus out of the wooded area because it is physically stronger and more adapted to living in a wooded area.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;The text describes L. arcticus feeding on grasses as well as various parts of trees and shrubs, not herbs alone — the &amp;#34;only&amp;#34; in this statement is already contradicted for L. arcticus.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Lepus arcticus feeds only on herbs, and Lepus americanus only on bark and branches of trees.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The lynx inhabits only the forested areas, and L. arcticus now inhabits only the open areas — this geographic separation from the lynx&amp;#39;s habitat directly reduces its predation risk.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Living in the open fields, Lepus arcticus avoids becoming prey to Lynx canadensis.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;The text never establishes that lynx predation specifically caused L. arcticus to move; it is equally or more consistent with L. americanus simply outcompeting L. arcticus for forest resources (competitive exclusion), leaving L. arcticus in open areas as a side effect of competition rather than a direct predator-avoidance response.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Lepus arcticus later moved out of wooded areas to avoid being predated on by Lynx canadensis.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
-    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
-(function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
-  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
-  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
-
-  rows.forEach(function (row) {
-    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
-    btns.forEach(function (btn) {
-      btn.addEventListener(&#39;click&#39;, function () {
-        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-        btn.classList.add(&#39;selected&#39;);
-        row.dataset.selected = btn.dataset.value;
-        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-      });
-    });
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
-    var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
-      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
-      if (!sel) {
-        allAnswered = false;
-        row.classList.add(&#39;unanswered&#39;);
-        return;
-      }
-      row.classList.remove(&#39;unanswered&#39;);
-      var isCorrect = sel === row.dataset.answer;
-      row.classList.toggle(&#39;correct&#39;, isCorrect);
-      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
-      if (isCorrect) correct++;
-      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
-    });
-    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
-    scoreEl.textContent = allAnswered
-      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
-      : &#39;Answer every statement first.&#39;;
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
-    rows.forEach(function (row) {
-      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-      delete row.dataset.selected;
-      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-    });
-    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
-  });
-})();
-&lt;/script&gt;
-
-&lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q48/&#34;&gt;← Previous: Q98&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q50/&#34;&gt;Next: Q100 →&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=77&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
       </description>

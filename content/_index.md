@@ -21,9 +21,56 @@ We cover the full IBO syllabus — 15+ sections, 150+ topic pages,666+ Static fi
 
 ---
 
+## 🧭 Main Features
+
+<div class="feature-cards">
+  <a href="/resources/" class="card">
+    <div class="card-icon">📚</div>
+    <h3>Study Resources</h3>
+    <p>The full IBO/USABO syllabus — 150+ topic pages across 15 sections, with diagrams, comparisons, and practice problems.</p>
+    <span class="btn-outline">Browse Resources →</span>
+  </a>
+  <a href="/about/" class="card">
+    <div class="card-icon">🧬</div>
+    <h3>About BiOGuide</h3>
+    <p>Why we built this, how content gets reviewed before publishing, and who's behind it.</p>
+    <span class="btn-outline">Learn Our Story →</span>
+  </a>
+  <a href="/articles/" class="card">
+    <div class="card-icon">✍️</div>
+    <h3>Articles</h3>
+    <p>Exam-technique tips and lab-practical guides that go beyond the core syllabus notes.</p>
+    <span class="btn-outline">Read Articles →</span>
+  </a>
+  <a href="/papers/" class="card">
+    <div class="card-icon">🗂️</div>
+    <h3>BiOrchive</h3>
+    <p>Past olympiad papers, browsable by year and round, with solutions and an attempt mode.</p>
+    <span class="btn-outline">Explore BiOrchive →</span>
+  </a>
+</div>
+
+---
+
 ## 📖 Syllabus Format Covered: 
 
-{{< section-grid >}}
+{{< cards cols="3" >}}
+  {{< card link="/resources/1-cell-molecular/" title="1. Molecular, Cell Biology & Biochemistry" subtitle="Cell structure, biomolecules, enzymes, membrane transport, and core biochemical pathways." tag="✅ Verified" tagColor="green" >}}
+  {{< card link="/resources/2-animal-anatomy/" title="2. Animal Anatomy" subtitle="Structural anatomy for IBO/USABO, from human systems to comparative vertebrate and invertebrate body plans." tag="✅ Verified" tagColor="green" >}}
+  {{< card link="/resources/3-animal-physiology/" title="3. Animal Physiology" subtitle="The function-side complement to Animal Anatomy: regulatory and organ-system mechanisms across taxa." tag="✅ Verified" tagColor="green" >}}
+  {{< card link="/resources/4-biosystematics/" title="4. Biosystematics" subtitle="Classification and phylogenetics: taxonomic hierarchy, species concepts, cladistics, molecular systematics." >}}
+  {{< card link="/resources/5-plant-physiology/" title="5. Plant Physiology" subtitle="Water/nutrient transport, photosynthetic biochemistry, hormone-driven growth, and stress physiology." tag="✅ Verified" tagColor="green" >}}
+  {{< card link="/resources/6-plant-anatomy/" title="6. Plant Anatomy" subtitle="Plant tissue systems, root/stem/leaf structure, and reproductive anatomy." tag="✅ Verified" tagColor="green" >}}
+  {{< card link="/resources/7-genetics/" title="7. Genetics" subtitle="Mendelian inheritance and its extensions, sex linkage and pedigree analysis, chromosomal linkage/mapping and aberrations, and quantitative/non-Mendelian inheritance." tag="✅ Verified" tagColor="green" >}}
+  {{< card link="/resources/8-ecology/" title="8. Ecology" subtitle="Population dynamics, community ecology, ecosystems, biogeography, and conservation biology." tag="✅ Verified" tagColor="green" >}}
+  {{< card link="/resources/9-ethology/" title="9. Ethology" subtitle="Animal behavior: proximate/ultimate causation, learning, communication, and social structure." tag="✅ Verified" tagColor="green" >}}
+  {{< card link="/resources/10-bioinformatics/" title="10. Bioinformatics" subtitle="Databases, BLAST, alignments, phylogenetics, genome analysis, and protein structure." tag="✅ Verified" tagColor="green" >}}
+  {{< card link="/resources/11-practical-1/" title="11. Practical I" subtitle="Coming soon." >}}
+  {{< card link="/resources/12-practical-2/" title="12. Practical II" subtitle="Coming soon." >}}
+  {{< card link="/resources/13-practical-3/" title="13. Practical III" subtitle="Coming soon." >}}
+  {{< card link="/resources/14-practical-4/" title="14. Plant Computational Biology" subtitle="ImageJ/Fiji image analysis and Streamlit interactive plotting for the IBO practical." tag="✅ Verified" tagColor="green" >}}
+  {{< card link="/resources/15-evolution/" title="15. Evolution" subtitle="Evidence for evolution, population genetics, speciation, macroevolution, and evo-devo." tag="✅ Verified" tagColor="green" >}}
+{{< /cards >}}
 
 ---
 
@@ -135,43 +182,6 @@ Images: See `image-sources.md` for per-image licensing status. A full licensing 
   font-weight: 600;
 }
 
-/* Section grid — used by the {{< section-grid >}} shortcode */
-.section-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.75rem 2rem;
-  margin: 1rem 0 1.5rem;
-  padding: 0;
-  list-style: none;
-}
-
-.section-grid li {
-  padding: 0.3rem 0 0.3rem 1.2rem;
-  position: relative;
-  font-size: 0.95rem;
-  list-style: none;
-}
-
-.section-grid li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: #8965c4;
-  font-weight: 700;
-}
-
-.section-grid .status-complete {
-  color: #16a34a;
-}
-
-.section-grid .status-progress {
-  color: #f59e0b;
-}
-
-.section-grid .status-planned {
-  color: #94a3b8;
-}
-
 /* Interactive showcase */
 .interactive-showcase {
   display: grid;
@@ -252,11 +262,6 @@ Images: See `image-sources.md` for per-image licensing status. A full licensing 
 @media (max-width: 640px) {
   .homepage-wrapper {
     padding: 1rem 1rem 3rem;
-  }
-
-  .section-grid {
-    grid-template-columns: 1fr;
-    gap: 0.25rem;
   }
 
   .interactive-showcase {

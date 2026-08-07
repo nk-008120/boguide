@@ -73,6 +73,28 @@ Cracking these competitions isn't just about rote-memorising cellular pathways o
 I'm a high schooler in India who kept wishing a resource like this already existed while preparing for the International Biology Olympiad (Silver, 2026), so I built it myself. Astronomy was actually where I started (Gold, IOAA Jr 2025), and I've since qualified for the national selection camps in both Chemistry and Astronomy too — though biology is the one that stuck, which is probably why I can't help connecting it back to the other two more than a syllabus usually allows. Outside this site, I split my time between chess, code,piano, tabla, violin and the occasional very average sketch. If something on here doesn't make sense or you just want to talk shop, find me at r6394175@gmail. If you find which star is in the image above, begin the mail with it's name, and wait for a surprise!
 {{< /team-member >}}
 
+## Frequently Asked Questions
+
+{{< faq-item q="Is BioGuide free to use?" >}}
+Yes — completely. The content is published under a CC BY-NC-SA 4.0 license: free to read, share, and adapt for non-commercial use, with attribution. See [Licensing](#licensing) below for the details.
+{{< /faq-item >}}
+
+{{< faq-item q="Which exams does BioGuide cover?" >}}
+The syllabus is built around IBO and USABO, with INBO also in scope. Coverage depth is IBO-targeted — broad enough for national olympiads, deep enough for international ones.
+{{< /faq-item >}}
+
+{{< faq-item q="How is content reviewed before it's published?" >}}
+Every page goes through the same process: written and edited by the Founder and Director, then reviewed and rated by a specialised team — only content rated above 4 (on a 1–5 scale) moves on. See [Ways of Working](#ways-of-working) above for the full workflow.
+{{< /faq-item >}}
+
+{{< faq-item q="Can I contribute or report an error?" >}}
+Yes, please do — open a GitHub Issue or PR on the [repository](https://github.com/nk-008120/boguide), or reach out on [Discord](https://discord.gg/WpC8y6dbv). Found a mistake, have a better diagram, or want to add a topic? All of that helps.
+{{< /faq-item >}}
+
+{{< faq-item q="How is my Login information used?" >}}
+We encrypt your login information using industry standards. There is no reason to be worried about logging in, but follow the standard rules of Password creation, it is a really cool feature where you can track where you stand in the leaderboard, and attempt tests with some purpose attached. Enjoy!
+{{< /faq-item >}}
+
 ## Licensing
 
 This website is published under a CC BY-NC-SA 4.0 license. A future BUSL-1.1 license is under consideration for a handful of more ambitious features planned much further down the line — don't worry, the website will remain non-profit regardless.

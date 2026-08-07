@@ -1,0 +1,30 @@
+{{- /* Emits round identity for a per-round leaderboard page
+     (static/js/papers-leaderboard.js queries Supabase's leaderboard_per_round
+     view with it). Usage:
+     {{< papers-leaderboard olympiad="ibo" year="2022" round="theoretical-1" >}}
+     No answer data here — unlike papers-attempt.html, this page never needs
+     the answer key, so nothing sensitive ships. */ -}}
+{{- $olId := .Get "olympiad" -}}
+{{- $yearId := .Get "year" -}}
+{{- $roundId := .Get "round" -}}
+{{- $ol := index hugo.Data.papers $olId -}}
+{{- $yearData := index $ol $yearId -}}
+{{- $round := dict -}}
+{{- range $yearData.rounds }}{{ if eq .id $roundId }}{{ $round = . }}{{ end }}{{ end -}}
+{{- $payload := dict
+  "olympiad" $olId
+  "year" $yearId
+  "roundId" $roundId
+  "roundName" $round.name
+-}}
+<script id="papers-leaderboard-data" type="application/json">{{ jsonify $payload | safeJS }}</script>
+<div id="papers-leaderboard-root" class="papers-leaderboard-root">
+  <p id="papers-leaderboard-status">Loading leaderboard…</p>
+  <table class="papers-leaderboard-table" id="papers-leaderboard-table" hidden>
+    <thead>
+      <tr><th>#</th><th>Name</th><th>Score</th><th>Time</th></tr>
+    </thead>
+    <tbody id="papers-leaderboard-tbody"></tbody>
+  </table>
+</div>
+<script src="{{ "js/papers-leaderboard.js" | relURL }}" defer></script>
