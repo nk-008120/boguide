@@ -14,6 +14,8 @@ theme = "hextra"
     name = "Notes @ BiOGuide"
     url = "#"
     weight = 1
+    [menu.main.params]
+      image = "/nblogo.png"
 
   [[menu.main]]
     name = "General Resources"
@@ -128,6 +130,13 @@ theme = "hextra"
     weight = 7
     [menu.main.params]
       icon = "github"
+
+  [[menu.main]]
+    name = "Instagram"
+    url = "https://www.instagram.com/bioguideofficial/"
+    weight = 8
+    [menu.main.params]
+      icon = "instagram"
 [params]
   # Navbar settings
   [params.navbar]
