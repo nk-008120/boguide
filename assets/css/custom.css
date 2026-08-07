@@ -281,10 +281,6 @@ html.dark #boguide-toc a:hover {
 /* === HOMEPAGE BACKGROUND (only when .homepage-bg is present) === */
 
 .homepage-bg {
-  background-image: url('/images/hero-bg.png');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   position: relative;
 }
 
@@ -301,14 +297,16 @@ html.dark #boguide-toc a:hover {
   pointer-events: none;
 }
 
-/* Dark overlay when system prefers dark mode */
-@media (prefers-color-scheme: dark) {
-  .homepage-bg::before {
-    background-color: rgba(0, 0, 0, 0.75);
-  }
-  .homepage-bg {
-    color: #e2e8f0;
-  }
+/* Dark overlay — keyed off html.dark (the site's own theme toggle), matching every
+   other dark-mode rule below. Previously this used @media (prefers-color-scheme: dark),
+   which only tracks the OS setting: picking "Dark" in the site's own toggle while the
+   OS/browser is in light mode left this overlay white while the !important text-color
+   rules below still switched to near-white, making all homepage text unreadable. */
+html.dark .homepage-bg::before {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+html.dark .homepage-bg {
+  color: #e2e8f0;
 }
 /* === BIORCHIVE WATERMARK BACKGROUND (added via {{< biorchive-bg >}} shortcode
    on BiOrchive / IBO papers index pages) === */
@@ -326,6 +324,26 @@ html.dark #boguide-toc a:hover {
 }
 html.dark .biorchive-bg-layer {
   opacity: 0.09;
+  filter: invert(1) brightness(1.4);
+}
+
+/* === SITEWIDE BIOGUIDE WATERMARK BACKGROUND (injected via layouts/_default/baseof.html
+   on every page including the homepage, except the BiOrchive/papers section, which
+   keeps its own .biorchive-bg-layer watermark above) === */
+.bioguide-bg-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url('/logobg.webp');
+  background-repeat: no-repeat;
+  background-position: center 15%;
+  background-size: min(65%, 820px);
+  background-attachment: fixed;
+  opacity: 0.065;
+}
+html.dark .bioguide-bg-layer {
+  opacity: 0.117;
   filter: invert(1) brightness(1.4);
 }
 

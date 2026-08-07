@@ -1,0 +1,494 @@
+!
+!
+
+                                                                                                                    !
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+All IBO examination questions are published under the following Creative Commons license:
+!
+
+                                                             !
+!
+CC BY-NC-SA (Attribution-NonCommercial-ShareAlike) -
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+The exam papers can be used freely for educational purposes as long as IBO is credited and
+new creations are licensed under identical terms. No commercial use is allowed.
+Theoretical Exam - Part A                                                    G0-1
+                                                                                           English (Official)
+
+General Instructions for Theory Part A
+
+Date: July 11th, 2024
+Time Allowed: 3 hours and 15 minutes (NO additional time)
+The Theory Part A exam consists of 50 tasks across the following topics:
+
+    · Biosystematics: Q1-3
+    · Cell and Molecular Biology: Q4-12
+    · Ecology: Q13-17
+    · Ethology: Q18-19
+    · Genetics & Evolution: Q20-29
+    · Plant Anatomy and Physiology: Q30-37
+    · Animal Anatomy and Physiology: Q38-50
+Supplementary figures are provided in the Appendix.
+
+Each question is worth a maximum of 1.0 point. Marking is done based on the scheme below:
+
+Number of correctly identified 0  1  2                                    3    4
+
+statements
+
+Points      0                     0  0.2                                  0.6  1
+
+Please keep in mind:
+
+Instructions
+
+You can use the question paper for your notes and rough work, we do not assess it.
+
+An answer sheet is provided. Only answers recorded on the answer sheet will be scored. The sheet
+includes several fields that need to be filled out. Follow the instructions below for filling out the answer
+sheet:
+
+In the "Last and First Name" field, write your last name (family name) and first name in English (if
+both do not fit, write only your last name).
+
+In the "Country or Territory" field, write the country or territory you represent at the IBO in En-
+glish.
+
+In the "ID" field, first enter the three digits of your personal ID number in the leftmost column
+(from top to bottom), then shade the corresponding digit in the row to the right of each digit of
+the ID number.
+
+The largest field, "Answers," contains 50 questions, each with four statements labelled A, B, C, and
+D. Each statement has two squares: the "T" square indicates true, and the "F" square indicates
+false.
+
+Ensure that the squares in the "ID" and "Answers" fields are completely shaded with no un-
+shaded areas remaining and without going outside the boundaries. Marks like "+", "x", check-
+marks, or circles will not be read. Black squares must be shaded with a black pen (using a red pen
+or pencil is strictly prohibited).
+Theoretical Exam - Part A              G0-2
+                                                     English (Official)
+
+Do NOT fill out the "charge person" field and do NOT shade any fields that are not specified above.
+Black squares in the corners SHOULD NOT be shaded/corrected as it will interfere with the scan-
+ning process.
+
+Communication with Organizers
+
+You are provided with four types of cards for assistance during the exam:
+
+     · Drinking Water (Blue): Raise this card if you need water.
+
+     · Washroom (Yellow): Raise this card if you need to use the washroom.
+
+     · Correction (White): Raise this card if you made a mistake on your answer sheet and want to fix it.
+
+     · Other Queries (Red): Raise this card if you have any other questions.
+
+If you make a mistake on your answer sheet, use the "Correction (White)" card to request a correction
+pen. Using the correction pen, recolor the wrongly shaded area into white without going outside the
+boundaries. You cannot ask for correction in the last 10 minutes. (Note: Overuse of the correction
+pen may cause scanning errors, try to put in the answers once you are fully confident)
+
+Drinking water  Washroom   Correction  Other queries
+
+During the Exam
+
+At the beginning of the exam, a whistle signal will let you know to open the exam papers and start writing.
+
+15 minutes before the end, please start filling out the answer sheet if you have not already. We do not
+provide extra time to put your answers on the answer sheet.
+
+At the end of the exam, a whistle signal will indicate when to stop writing and put down your pen imme-
+diately.
+
+Continuing to write after the whistle signal will result in disqualification.
+
+No materials, papers, or equipment should be taken out of the examination room.
+Theoretical Exam - Part A  G8-1
+                                         English (Official)
+
+Appendix
+
+Amino acid structures with abbreviations: G-glycine, A-alanine, S-Serine, T-Threonine, C- Cysteine, V
+-Valine, L-Leucine, I- Isoleucine, M- Methionine, P- Proline, F- Phenylalanine, Y- Tyrosine, W- Tryptophan,
+D- Aspartic acid, E- Glutamic acid, N- Asparagine, Q-Glutamine, H- Histidine, K- Lysine, R- Arginine
+Theoretical Exam - Part A                    G8-2
+                                                           English (Official)
+
+Codon table for Amino acids:
+
+                              Second letter
+
+First letter
+                                                           Third letter
+Theoretical Exam - Part A  Q1-1
+                                          English (Official)
+
+Biosystematics
+
+1
+
+Kazakhstan boasts a rich ecosystem harboring numerous species of tulips, some of which are direct
+ancestors to many modern cultivated varieties. These tulips exhibit a diverse range of morphological
+traits, although not all of these traits are reliable indicators of species identification.
+
+In Table 1 below, we outline five distinct types of tulips and their variations across five characteristics
+(A-E), typically utilized in the classification of tulip types.
+
+       Table 1. Morphological comparisons; A - presence/absence of hairs on the stamen, B - number
+       of flowers (2(+) = 2 or more), C - presence/absence of a dense layer of hairs on the bulbs, D -
+       number of leaves, E - color of the stamen filament, Y - yellow, K - black.
+
+It's worth noting that T. borszczowii has the same features as the common ancestor among these tulip
+species.
+
+                 On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+                 ones.
+
+                 A. In a phylogenetic tree constructed using maximum parsimony, the species T.
+                 lemmersii, T. salsola, and T. bifloroformis are expected to constitute a polyphyletic
+                 group.
+
+                 B. The maximum parsimony tree contains at least one character reversal.
+
+                 C. All plants within the genus Tulipa share the characteristic of having leaves
+                 with either arcuate or parallel veins.
+
+                 D. According to the data, the presence of two or more flowers is the most re-
+                 cently evolved characteristic compared to the others.
+Theoretical Exam - Part A  Q1-2
+                                          English (Official)
+
+2
+
+You are given five species of birds from the Strigiformes order (Owls), commonly found in Kazakhstan
+(Figure 1A). However, the genera to which these species belong are unknown to you. To ascertain this,
+you were provided with information depicted in the figures below.
+
+                                                                                           Million years
+
+Figure 1. A Five bird species; the bottom row in each box represents the partial list of the
+birds' inhabiting areas (refer to Figure 2). B Phylogenetic tree of the Strigiformes order with
+their full inhabiting area lists. The number of species that make up the corresponding genus
+is indicated in parentheses.
+Theoretical Exam - Part A  Q1-3
+                                          English (Official)
+
+                                           South America
+                                           Central America
+                                            North America
+                                            Eurasia
+                                            Africa
+                                            Madagascar
+                                            Philippines
+                                            Australia
+                                            New Zealand
+
+Figure 2. Area distribution key; each rectangle corresponds to a certain area.
+
+It is also known that:
+    · Species 3 and 5 share the most recent common ancestor that lived 5 million years ago.
+    · Species 2 and 3 share the most recent common ancestor that lived 20 million years ago.
+    · Species 5 and 4 share the most recent common ancestor that lived 40 million years ago.
+    · The genus to which species 1 belongs has never been found in the Philippines.
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. One of the five listed species is the only representative of its genus.
+
+B. Constructing a phylogenetic tree using this data reveals that species 1 and 4
+are the second most closely related among the five species.
+
+C. Some of the five given species belong to the same genus.
+
+D. A migration (in terms of species dispersal) from America to Africa and Eura-
+sia is a more parsimonious explanation for the geographic distribution of Strix
+compared to a migration in the opposite direction.
+Theoretical Exam - Part A           Q1-4
+                                                   English (Official)
+
+3
+
+Yerzhan studies the evolution of four closely related bacterial strains (A, B, C, D), focusing on RNA poly-
+merase subunit  and transposase. He reconstructed phylogenetic trees for the two corresponding
+genes that code for these proteins (Figure 1X,Y) using the alignment of four sequences (representative
+snapshot is shown on Figure 2) and the most parsimonious solution. He rooted both phylogenies using
+the D strain as an outgroup. Unfortunately, he realized that he forgot to properly label the datasets.
+Consequently, he began comparing these phylogenetic trees to the reference phylogenetic tree recon-
+structed from genes of ribosomal proteins (Figure 1Z).
+
+X                          Y     Z
+
+   C                          A     A
+
+   B                          B     B
+
+   A                          C     C
+
+   D                          D     D
+
+Figure 1. Phylogenetic trees reconstructed from RNA polymerase subunit  (X or Y), trans-
+posase (X or Y) and reference genes of ribosomal proteins (Z).
+
+Figure 2. Alignments of representative regions of two genes from four bacteria strains (A-D)
+
+         On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+         ones.
+
+         A. Phylogenetic tree X was reconstructed from the alignment I.
+
+         B. In the Alignment I, 4 out of 5 positions are useful for determining tree's topol-
+         ogy.
+
+         C. Phylogenetic tree X was reconstructed from the RNA polymerase subunit .
+
+         D. Using species D as an outgroup, there are in total two possible phylogenetic
+         tree topologies for the four species A-D.
+Theoretical Exam - Part A                                 Q2-1
+                                                                         English (Official)
+
+Cell and Molecular Biology
+
+4
+
+The extracellular pH of normal tissues is typically between 7.35 and 7.45. Meanwhile, in the tumor mi-
+croenvironment, extracellular pH is mildly acidic in the range of 6.5­6.9. Figure 1B provides an overview
+of the average extracellular pH values observed in different tumor types compared to their respective
+normal cells. Cancer cells also exhibit changes in the oxygen consumption rates (OCR). This phenomenon
+is demonstrated in Figure 1A by comparing the OCR of normal and cancer cells from three patients.
+
+A                        Normal cells            B        Tumor tissue
+                         Cancer cells                     Normal tissue
+                                               *                                                   8.0
+                                       *                                                      7.8pH
+                                                                                         7.6
+                          *                                                        7.4Skin
+                                                                               7.2Vulvar
+                                                                         7.0  Uterus
+                                                                    6.8        Lung
+                                                               6.6             Breast
+                                                          6.4
+                                                                               Brain
+   Single cell OCR (AU)
+
+                                                                                                        Muscles
+
+                         Patient 1  Patient 2  Patient 3
+
+Figure 1. A Oxygen consumption rates (OCR) in arbitrary units (AU) of normal and cancer
+cells. B Extracellular pH of normal tissue and corresponding tumor tissue. Asterix indicates a
+significant difference.
+
+                         On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+                         ones.
+
+                         A. Difference in oxygen consumption between cancerous and normal cells in-
+                         dicates that tumor cells exhibit decreased metabolic rate.
+
+                         B. Differences in extracellular pH values can be explained by the altered ratio of
+                         glucose fermentation to oxidative phosphorylation in cancer cells compared to
+                         normal ones.
+
+                         C. The tumor microenvironment is typically hyperoxic due to elevated oxygen
+                         consumption by cancer cells.
+
+                         D. The cancer cells of patient 3 are more heterogeneous compared to the cancer
+                         cells of the other two patients.
+Theoretical Exam - Part A  Q2-2
+                                          English (Official)
+
+5
+
+Mutagenesis was performed to determine the effect of single mutations in the binding site of an anti-
+body. The mutants were analyzed for binding to four cardiac glycoside molecules: digoxin, digitoxin,
+digoxigenin, and ouabain. The binding properties of mutated antibodies were tested by ELISA, a tech-
+nique that relies on enzyme-linked antibodies to detect target antigens. After the antibody binds to the
+antigen (in our case, glycoside), the enzyme linked to the antibody catalyzes the added substrate, lead-
+ing to a color change that can be measured by spectrophotometry at 405 nm. The following heatmaps
+represent the ELISA results based on the position of change and the amino acid to which wild-type amino
+acid was mutated.
+
+Figure 1. A Binding data of antibodies mutated in the positions described in the figure to the
+four glycosides. The absorbance, which correlates to the binding strength of digoxigenin (P),
+ouabain (Q), digoxin (R), and digitoxin (S) to the mutated antibodies, was linearly scaled to that
+of the wild-type (labeled in red) which was assigned a value of 1.0 (labels of glycosides P, Q, R,
+and S should not be confused with the one-letter codes of amino acids). B Differences in the
+structure of digoxin (R) and its three analogs. W - sugars.
+Theoretical Exam - Part A  Q2-3
+                                          English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. The strongest binding in position Tyr-33 was for substitution by aromatic
+amino acids.
+
+B. In all shown amino acid positions, at least one substitution improves the an-
+tibody affinity.
+
+C. Antibody with double substitution Tyr-33-Trp and Trp-100-Arg probably could
+be used in cardiac glycoside detection systems.
+
+D. Sugar moieties appear to play a role in the affinities of antibodies to cardiac
+glycoside molecules.
+Theoretical Exam - Part A  Q2-4
+                                          English (Official)
+
+6
+
+The bonds between the central carbon atom and attached groups in peptides can rotate freely. The
+rotation angles of the N-C and C-C bonds are called  and  angles, respectively. To measure the
+ angle, first draw the C-C bond horizontally so that the N group is at 0 degrees (in the same plane
+as the C-C bond). Then rotate the distal N group around the C-C bond until the structure matches
+the structure that you aim to measure as shown in Figure 1C. For the  angle, place the N-C bond
+horizontally and rotate the distal C group. The Ramachandran plot visually represents the combinations
+of  and  angles in a peptide backbone (Figure 1B).
+
+Figure 1. A Part of the peptide with shown  and  angles. B The Ramachandran plot with
+the values of  and  angles for all the amino acid residues except Gly in the rabbit's pyruvate
+kinase. C The  angle values are created by the rotation. D Three structures of amino acids'
+residues.
+Theoretical Exam - Part A  Q2-5
+                                          English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. The structure (a) in Figure 1D is located in Region 2 in Figure 1B.
+
+B. The structure (b) in Figure 1D is located in Region 3 in Figure 1B.
+
+C. The structure (c) in Figure 1D is uncommon in rabbit's pyruvate kinase.
+
+D. Amino acids, other than glycine, with 0 degrees of both  and  angles do
+not occur in rabbit's pyruvate kinase.
+Theoretical Exam - Part A  Q2-6
+                                          English (Official)
+
+7
+
+The Pentose Phosphate Pathway (PPP) is a metabolic pathway occurring in the cytoplasm that mainly
+generates NADPH and ribose 5-phosphate. NADPH is used for the reduction of reactive oxygen species
+(ROS) such as hydrogen peroxide. PPP has oxidative and non-oxidative phases, which are irreversible
+and reversible, respectively.
+
+Figure 1. A Oxidative. B Non-oxidative. G6P ­ glucose 6-phosphate, GA3P ­ glyceralde-
+hyde 3-phosphate, F6P ­ fructose 6-phosphate, R5P ­ ribose 5-phosphate, G6PDH ­ glucose
+6-phosphate dehydrogenase, TKT ­ transketolase, N - nucleotides. CXP - other intermediates
+where X is the position of phosphorylated carbon. Note that all intermediates of PPP are phos-
+phorylated on the last carbon.
+Theoretical Exam - Part A  Q2-7
+                                          English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. In actively dividing cells, the reactions occurring before the first TKT-catalyzed
+reaction are more active than those occurring later.
+
+B. TKT catalyzes a reaction that transfers a one-carbon fragment.
+
+C. Deficiency of G6PDH activity will reduce the level of available NADPH in red
+blood cells.
+
+D. For each molecule of G6P, there will be two molecules of F6P produced
+through both phases.
+Theoretical Exam - Part A                               Q2-8
+                                                                       English (Official)
+
+8
+
+Certain loci in the genome are influenced by epigenetic modifications, but understanding their precise
+mechanisms remains challenging. The IGF2-H19 locus serves as a well-known example, regulated by
+the methylation state of the imprinting control region (ICR). In addition to the two genes, this locus
+contains one enhancer and four CTCF-binding sites (CTCF is a DNA-binding protein), one of which serves
+as an ICR. A proposed model suggests that the spatial interaction among these elements underlies the
+regulatory mechanism governing the expression of IGF2 and H19. CTCF binding does not interrupt with
+the promoter function.
+
+A          IGF2               B
+                                             IGF2
+
+   H19
+
+                                                   H19
+
+C                             Cohesin
+
+           CTCF
+
+D          IGF2               H19      GENES
+
+        1                  2  3             CTCF-BS
+                                       4
+
+Figure 1. A Paternal chromosome, IGF2 active (green arrow) and H19 inactive (red arrow). B
+Maternal chromosome, IGF2 and H19 basal expression (black arrows). Note that diagrams A
+and B reflects real physical distances and that intersection of two blue lines (represeting DNA)
+reflects very close physical proximity of two DNA strands. C DNA loop formed by CTCF and
+cohesin. D IGF2-H19 locus with CTCF-binding sites 1-4 (CTCF-BS).
+Theoretical Exam - Part A  Q2-9
+                                          English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. One CTCF-binding site can be involved in the formation of only one DNA loop.
+
+B. ICR overlaps with CTCF binding site 2.
+
+C. The enhancer is located between CTCF binding sites 3 and 4.
+
+D. ICR methylation directly affects the expression of H19, independent of the
+enhancer.
+Theoretical Exam - Part A  Q2-10
+                                                    English (Official)
+
+9
+
+Cryo-EM is a modern structural study technique that works by averaging multiple low-quality electron
+micrographs, cryo-EM generates high-quality structural maps. It offers flexibility by accommodating
+various molecular sizes and capturing multiple conformations. The structure and mechanism of ATAD1,
+a mitochondrial homohexamer protein, were resolved using cryo-EM. The protein's function was then
+determined using the structural data and fluorescent assays.
+
+Figure 1. A Density map of the average of all conformations obtained by electron microscopy.
+B Top view of the molecular model of ATAD1 hexamer emphasizing C-terminal alpha-helices,
+with a black curve representing the polypeptide chain substrate. C The structure of the central
+pore with its substrate (black) and all interacting amino acids (colored residues). D Fluorescent
+microscopy assay for wild-type ATAD1 and with mutation E193Q (at position 193, Glu  Gln),
+Gos28 is the hypothetical target, MitoTracker is a mitochondrial fluorescent marker, the red
+arrow points to one mitochondrion.
+Theoretical Exam - Part A  Q2-11
+                                                    English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Given that the density map contains an unclear M6 subunit, at any moment
+only one of the ATAD1 subunits is flexible.
+
+B. C-terminal alpha helices shown on the molecular model are made entirely
+from hydrophobic amino acids.
+
+C. Change of charge due to mutation E193Q affects the physical interaction of
+position 193 with the substrate.
+
+D. ATAD1 translocates proteins mislocalized into the matrix of the mitochondria.
+

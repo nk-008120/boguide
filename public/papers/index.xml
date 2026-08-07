@@ -321,6 +321,140 @@
     </item>
     
     <item>
+      <title>Q100 — Cold-Exposure Duration, Acclimation and Mollusc Survival</title>
+      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q50/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q50/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/comparative-thermoregulation/&#34;&gt;Comparative Thermoregulation&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;One of the modern environmental problems is the spread of invasive alien species, the success of which is due to the adaptive properties of these species. Temperature is one of the most important environmental factors for species. The experiment examined the cold resistance of the &lt;em&gt;Melanoides granifera&lt;/em&gt; mollusc, a representative of the tropical fauna, to low temperatures. The molluscs were initially kept at low temperatures for 8 hours or 168 hours, then transferred to 18°C or 20°C conditions for acclimation (Figure 1). The lowest temperature threshold for survival was investigated.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q100-figure-1.png&#34; alt=&#34;Line graph of survival percentage vs. temperature, with three curves. Curve 1 (8 hours cold exposure, 18°C acclimation) rises from 0% survival at 6°C to 100% by about 9°C. Curve 2 (8 hours cold exposure, 20°C acclimation) is shifted right, reaching 100% survival only around 10°C. Curve 3 (168 hours cold exposure, 20°C acclimation) is shifted much further right, reaching 100% survival only around 16°C.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 1. The survival of molluscs Melanoides granifera after acclimation, as a function of the temperature of cold exposure. Curve 1: survival after 8 hours cold exposure and acclimation at 18°C. Curve 2: survival after 8 hours cold exposure and acclimation at 20°C. Curve 3: survival after 168 hours cold exposure and acclimation at 20°C.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Using the information and the figure, indicate whether the following statements are true or false.&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q50&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Curves 1 and 2 (same 8-hour exposure, different acclimation temperatures) differ from each other, and curves 2 and 3 (same 20°C acclimation, different exposure durations) differ even more sharply — showing both acclimation temperature and exposure duration independently affect survival.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The survival of Melanoides granifera depends on the acclimation temperature and the duration of initial exposure to low temperatures.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Comparing curve 1 (18°C acclimation, 8h exposure) to curve 2 (20°C acclimation, 8h exposure), curve 1 is shifted toward lower temperatures — the mollusc survives down to colder test temperatures when acclimated at the lower (18°C) temperature, showing better cold resistance.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Reducing the acclimation temperature by 2°C leads to an increase in the cold resistance of the mollusc.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Comparing curve 2 (8h initial cold exposure) to curve 3 (168h initial cold exposure, same 20°C acclimation), curve 3 is shifted toward higher, not lower, temperatures for the same survival — meaning the longer initial cold exposure made the molluscs less cold-resistant, not more.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Prolonged exposure to initial low temperatures increases the cold resistance of the mollusc.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Even under its best-case (most cold-tolerant) condition shown, curve 1, survival only becomes substantial above roughly 8-9°C, and 0% survival is seen at 6°C — the mollusc&amp;#39;s fundamental cold intolerance would prevent it from establishing in a temperate zone with sustained temperatures below 10°C, regardless of how well it disperses.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; If the mollusc has a good ability for spreading, it can spread from tropical areas to a temperate zone with temperatures below 10 C and become a successful invasive species.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var scripts = document.getElementsByTagName(&#39;script&#39;);
+  var wrap = scripts[scripts.length - 1].previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q49/&#34;&gt;← Previous: Q99&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/&#34;&gt;Back to Theoretical 2 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=79&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Q11 — Heart Decellularization — Fish vs. Rat Cannulation</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-1/q11/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6300,140 +6434,6 @@
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=2&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Q52 — Cryopyrin Inflammasome — Western Blot of WT and Mutant Variants</title>
-      <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/papers/ibo/2022/theoretical-2/q2/</guid>
-      <description>
-        
-        
-        &lt;div class=&#34;topic-meta&#34;&gt;
-  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
-  
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/immune-physiology/&#34;&gt;Immune Physiology&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;Cryopyrin is a protein involved in the formation of enzymatically active caspase-1 from procaspase-1. p35 is a protein fragment resulting from the cleavage of procaspase-1. The conversion of pro-interleukin-1β to interleukin-1β (IL-1β) is catalyzed by caspase-1. Researchers were interested in the functional properties of wild-type cryopyrin and its two mutants, R260W and D303N. They developed two cell lines: 293-ASC-caspase-1 with a stable expression of both procaspase-1 and ASC (a protein known to interact with cryopyrin) and 293-caspase-1, with a stable expression of procaspase-1 but not ASC. They transfected cells from each cell line with one of the five vectors and then performed a Western Blot of the proteins they were interested in (Figure).&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q52-figure-1.png&#34; alt=&#34;Figure. Western blot results for each cell line: (1) empty vector, (2) vector with WT cryopyrin, (3) vector with the cryopyrin R260W mutant, (4) vector with the cryopyrin D303N mutant, (5) vector with IPAF-ΔLRR, which causes autocleavage of procaspase-1 independent from all other factors. Rows show Procasp-1/p35, Pro-IL-1β/IL-1β, Cryopyrin, and ASC.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-  &lt;/span&gt;
-&lt;em&gt;Figure. Results of Western Blot for each cell line, 293-caspase-1 (left) and 293-ASC-caspase-1 (right).&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Using the information and figures, determine whether the following statements are true or false.&lt;/p&gt;
-&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q2&#34;&gt;
-  &lt;div class=&#34;tf-quiz&#34;&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;In the 293-caspase-1 cells (no ASC), none of the cryopyrin constructs produce detectable p35 or IL-1β, while the same WT construct does produce them in 293-ASC-caspase-1 cells (which express ASC). Cryopyrin therefore needs ASC to activate caspase-1.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; Cryopyrin-dependent IL-1β production is not dependent on ASC.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;R260W shows no detectable p35 or IL-1β in either cell line — indistinguishable from the empty-vector control. A partially active mutant would show reduced but visible cleavage bands, which isn&amp;#39;t observed; R260W behaves as a loss-of-function mutant here, not a partial one.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; The R260W mutant is partially active, as compared to wild type cryopyrin.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The cryopyrin blot shows D303N expressed at a similar size and intensity to WT cryopyrin. A truncating mutation early in the sequence would produce a short or undetectable protein, which is not what&amp;#39;s observed — so D303N is a full-length missense variant, not a truncation.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; The D303N mutant does not contain a truncating mutation early in the gene sequence.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;IPAF-ΔLRR causes procaspase-1 autocleavage independently of cryopyrin or ASC. It produces clear p35 and IL-1β bands in both cell lines regardless of ASC status, giving a maximum-signal benchmark that confirms the caspase-1 cleavage machinery works in each line.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; IPAF-ΔLRR served as a positive control in this experiment for each cell line.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
-    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
-(function () {
-  var scripts = document.getElementsByTagName(&#39;script&#39;);
-  var wrap = scripts[scripts.length - 1].previousElementSibling;
-  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
-  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
-
-  rows.forEach(function (row) {
-    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
-    btns.forEach(function (btn) {
-      btn.addEventListener(&#39;click&#39;, function () {
-        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-        btn.classList.add(&#39;selected&#39;);
-        row.dataset.selected = btn.dataset.value;
-        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-      });
-    });
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
-    var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
-      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
-      if (!sel) {
-        allAnswered = false;
-        row.classList.add(&#39;unanswered&#39;);
-        return;
-      }
-      row.classList.remove(&#39;unanswered&#39;);
-      var isCorrect = sel === row.dataset.answer;
-      row.classList.toggle(&#39;correct&#39;, isCorrect);
-      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
-      if (isCorrect) correct++;
-      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
-    });
-    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
-    scoreEl.textContent = allAnswered
-      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
-      : &#39;Answer every statement first.&#39;;
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
-    rows.forEach(function (row) {
-      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-      delete row.dataset.selected;
-      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-    });
-    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
-  });
-})();
-&lt;/script&gt;
-
-&lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q1/&#34;&gt;← Previous: Q51&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2/q3/&#34;&gt;Next: Q53 →&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=4&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
       </description>
