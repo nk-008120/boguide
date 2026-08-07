@@ -1,0 +1,43 @@
+{{- /* "People behind this" card, aoguide.app/about-inspired.
+     Usage:
+       {{< team-member name="Full Name" role="Founder & Author"
+                        avatar="/team/photo.jpg" website="https://..."
+                        discord="https://discord.gg/..." github="https://github.com/..." >}}
+       Bio paragraph — plain markdown, so *italics*, **bold**, and
+       [links](https://...) all work same as anywhere else in content.
+       {{< /team-member >}}
+     `avatar` is optional — omit it and the circle shows the person's
+     initials on the lilac/sage gradient instead of a broken image. */ -}}
+{{- $name := .Get "name" | default "Team Member" -}}
+{{- $role := .Get "role" -}}
+{{- $avatar := .Get "avatar" -}}
+{{- $website := .Get "website" -}}
+{{- $discord := .Get "discord" -}}
+{{- $github := .Get "github" -}}
+
+{{- $initials := "" -}}
+{{- range first 2 (split $name " ") -}}
+  {{- with . }}{{ $initials = print $initials (substr . 0 1) }}{{ end -}}
+{{- end -}}
+
+<div class="team-card">
+  <div class="team-avatar">
+    {{- if $avatar -}}
+      <img src="{{ $avatar | relURL }}" alt="{{ $name }}" loading="lazy">
+    {{- else -}}
+      <span aria-hidden="true">{{ $initials | upper }}</span>
+    {{- end -}}
+  </div>
+  <div class="team-info">
+    <p class="team-name">{{ $name }}</p>
+    {{- with $role }}<p class="team-role">{{ . }}</p>{{ end }}
+    <div class="team-bio">{{ .Inner | markdownify }}</div>
+    {{- if or $website $discord $github }}
+    <div class="team-links">
+      {{- with $website }}<a href="{{ . }}" target="_blank" rel="noreferrer">Website</a>{{ end }}
+      {{- with $discord }}<a href="{{ . }}" target="_blank" rel="noreferrer">Discord</a>{{ end }}
+      {{- with $github }}<a href="{{ . }}" target="_blank" rel="noreferrer">GitHub</a>{{ end }}
+    </div>
+    {{- end }}
+  </div>
+</div>
