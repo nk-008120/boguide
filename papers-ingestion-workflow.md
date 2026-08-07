@@ -4,11 +4,64 @@
 
 If anything here conflicts with what you observe in the live code, trust the code — this doc can drift.
 
+## Cost-saving variant: delegating explanations to a free AI model
+
+For batches from IBO 2022 Theoretical 2 Q66 onward, the per-statement explanation
+writing (the expensive, repetitive part of step 8 below) can be delegated to a
+free/cheaper AI model instead of done in-session. See
+`papers-ingestion-delegation.md` for the full process, the reusable prompt
+template, and the subject-tag master list to hand that model. Claude still does
+every other step unchanged (page mapping, official answer key, figure
+extraction/placement, YAML/content assembly, validation, build).
+
 ## Current status
 
-- **IBO 2022, Theoretical 1**: Q1–Q49 done (of 50). Q50 remains.
-- Data lives in `data/papers/ibo/2022.yaml`. Figures in `static/papers/ibo/2022/`. Content pages in `content/papers/ibo/2022/theoretical-1/qN/index.md`.
-- Source PDF: `Theory 1 (Official) IBO 2022 + answer key (1)_unlocked.pdf` (in the user's Downloads at time of writing) — 76 pages, unencrypted, pages 1 = license notice, 2–75 = questions, 76 = official answer key (grid of √/X per question A–D). A second file (`IBO2022_T1Sol.pdf`) has detailed community-written explanations — it is **not official** (its own header says so) and should never be labeled as the answer key.
+- **IBO 2022, Theoretical 1**: Q1–Q49 done (of 50). Q50 remains. Source PDF: `Theory 1 (Official) IBO 2022 + answer key (1)_unlocked.pdf` — 76 pages, pages 1 = license, 2–75 = questions, 76 = official answer key. Community (unofficial) solutions: `IBO2022_T1Sol.pdf`.
+- **IBO 2022, Theoretical 2**: **Q51–Q100 all done (ids q1–q50, the full round) — 100% complete.** Batches 2 and 3 (Q66–100, ids q16–q50) ended up skipping the free-model delegation step at the user's request and were written directly by Claude using the same process as Q51–65.
+  - Source PDF: `Theory 2 (Official) IBO 2022 + answer key (1)_unlocked.pdf` — 80 pages, page 1 = license, 2–79 = questions, 80 = official answer key. Copied into the repo at `static/papers/ibo/2022/theoretical-2-exam.pdf`. Community (unofficial) solutions: `IBO2022_T2Sol.pdf`, copied to `static/papers/ibo/2022/theoretical-2-solutions.pdf` (occasionally disagrees with the official key on a handful of sub-questions — trust the official key below when they conflict).
+  - **Batch 2 (Q66–80, ids q16–q30): done.** The user opted out of the free-model delegation step for this batch and had Claude write the explanations directly (same process as Q51–65) — figures were already extracted and placed in `static/papers/ibo/2022/` (see inventory below) before this batch's session started, and several graph-heavy questions (q17/E-F-G pathways, q18/A-B-C-D cells, q19/OSCA-Piezo graphs, q20/phylogeny labels, q21/three figures, q25/q26/q27/q29/q30 graphs) were reasoned from actually viewing the figure PNGs, not just the extracted text.
+    - q66 → `q66-figure-1.png` · q67 → `q67-figure-1.png` · q68 → `q68-figure-1.png` · q69 → `q69-figure-1.png` · q70 → `q70-figure-1.png`
+    - q71 → `q71-figure-1.png`, `q71-figure-2.png` (two figures) · q72 → `q72-figure-1.png` · **q73 → no figure**
+    - q74 → `q74-figure-1.png` · q75 → `q75-figure-1.png` · q76 → `q76-figure-1.png` · q77 → `q77-figure-1.png` · q78 → `q78-figure-1.png` · q79 → `q79-figure-1.png` · q80 → `q80-figure-1.png`
+  - **Batch 3 (Q81–100, ids q31–q50): done.** Claude-authored directly (no delegation), same process as batch 2. One accuracy note: Q92's payoff-matrix table came out garbled from `pdftotext -layout` (merged/shifted-looking cells) — resolved by rendering the page at 250 DPI with `pdftoppm` and reading the table visually before writing explanations; the table in the content page and the reasoning in the YAML are both taken from that visual read, not the raw text extraction.
+    - Source pages 45–79 of `theoretical-2-exam.pdf` (page 80 is the answer key, already transcribed above). Page-to-question map:
+      Q81→p45-46 · Q82→p47-48 · Q83→p49-50 · Q84→p51-52 · Q85→p53 · Q86→p54-55 · Q87→p56-58 · Q88→p59 (no figure) · Q89→p60 · Q90→p61-63 · Q91→p64-65 · Q92→p66 (no figure, table only) · Q93→p67 (no figure) · Q94→p68 · Q95→p69 (no figure) · Q96→p70-72 · Q97→p73-74 · Q98→p75-76 · Q99→p77-78 · Q100→p79.
+    - Figures already extracted and placed in `static/papers/ibo/2022/`:
+      - q81 → `q81-figure-1.png` (melatonin levels during/after light exposure), `q81-figure-2.png` (phase shift vs. log photon dose)
+      - q82 → `q82-figure-1.png` (cholesterol before/after), `q82-figure-2.png` (HDL before/after), `q82-figure-3.png` (LDL before/after) — 3 separate panel images making up the question's single "Figure 1"
+      - q83 → `q83-figure-1.png` (one image, 4 sub-panels A–D: fruit-fly survival curves, axenic/non-axenic/bacteria-exposure)
+      - q84 → `q84-figure-1.png` (heart-mass/body-mass ratio, panels A=WKY, B=SHR)
+      - q85 → `q85-figure-1.png` (one image, 3 sub-panels: paraquat/starvation/high-temp survival, wild-type vs *mth* mutant, males/females)
+      - q86 → `q86-figure-1.png` (panda-covered-in-feces photo), `q86-figure-2.png` (behavior-count histograms + temperature-by-month line graph)
+      - q87 → `q87-figure-1.png` (one image, 3 sub-panels a/b/c: raven social-network graphs by season/rearing group)
+      - **q88 → no figure**
+      - q89 → `q89-figure-1.png` (newt amplexus photo)
+      - q90 → `q90-figure-1.png` (one image, 4 sub-panels A–D: cane-toad tadpole trapping/cannibalism/pre-feeding-duration experiments)
+      - q91 → `q91-figure-1.png` (one image, 2 sub-panels: finch behavioral-activity-score bar charts by geographic origin and syllable type)
+      - **q92 → no figure** (payoff table only, reproduce as a markdown table)
+      - **q93 → no figure**
+      - q94 → `q94-figure-1.png` (canine pedigree)
+      - **q95 → no figure** (Hardy-Weinberg calculation question)
+      - q96 → `q96-figure-1.png` (one image, panels A/B/C: Infliximab transcriptome heatmap + spot-perturbation map + quantitative spot-expression bar charts)
+      - q97 → `q97-figure-1.png` (panels C/D/E: TEL/ALT relative-activity violin plots by age group + TMM scatter plot), `q97-figure-2.png` (panels F/G: gene influence/PI scatter plots for TEL and ALT)
+      - q98 → `q98-figure-1.png` (grape-cultivar genomic SNP-landscape maps, individual cultivars + overview map with migration routes)
+      - q99 → `q99-figure-1.png` (*Lepus arcticus* photo), `q99-figure-2.png` (*Lepus americanus* photo), `q99-figure-3.png` (*Lynx canadensis* photo)
+      - q100 → `q100-figure-1.png` (mollusc cold-exposure survival curves, 3 conditions)
+    - All 20 entries inserted into `data/papers/ibo/2022.yaml`, all 20 content pages written, figure/answer-key validation passed, and a clean server restart + browser spot-check (q31, q32's 3-panel figure, q42's payoff table, q45's quiz scoring 4/4, q50 as the last problem) all confirmed working.
+  - **Official answer key, Q51–100** (√=true X=false, transcribed from the exam PDF's own answer-key page, page 80 — this is the ground truth for the `answer:` field, not the community solutions PDF):
+    ```
+    51: T F F T   52: F F T T   53: F T T F   54: T F T T   55: F T T T
+    56: T T T T   57: T F T F   58: T F T F   59: F T T F   60: T T F F
+    61: T F T T   62: T F F T   63: T F F T   64: T F F T   65: T F T T
+    66: T T T T   67: T F T F   68: F F T F   69: T T T F   70: T F F F
+    71: T T F T   72: T F T T   73: T F T F   74: F T T T   75: T F T T
+    76: F F T T   77: T F F T   78: T T T F   79: T F T F   80: T T F T
+    81: T F F T   82: F T T F   83: T T F T   84: F T T F   85: F F T T
+    86: F T F T   87: F F T F   88: F F T F   89: T T F F   90: F T T F
+    91: T F F F   92: F T F T   93: F F F T   94: T T T F   95: T F F T
+    96: T T T T   97: T T F F   98: T T T F   99: F F T F   100: T T F F
+    ```
+- Data lives in `data/papers/ibo/2022.yaml`. Figures in `static/papers/ibo/2022/`. Content pages in `content/papers/ibo/2022/theoretical-1/qN/index.md` and `.../theoretical-2/qN/index.md` (ids `q1`–`q50` per round, restarting from 1 each round; the `number` field carries the real exam question number, e.g. id `q1` in theoretical-2 displays as `"Q51"`).
 - Other olympiad programmes (TBO — Taiwanese BO) exist as an earlier, smaller sample with placeholder (non-real) problem-level data — see `boarchive-context.md` for that history. This doc is specifically about the real-content IBO ingestion pattern.
 
 Update this section as you complete more batches.
