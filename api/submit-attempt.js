@@ -54,6 +54,15 @@ function recompute(round, answers) {
 }
 
 module.exports = async (req, res) => {
+  try {
+    await handle(req, res);
+  } catch (e) {
+    console.error('[submit-attempt] unhandled error:', e);
+    if (!res.headersSent) res.status(500).json({ error: 'Internal error' });
+  }
+};
+
+async function handle(req, res) {
   if (req.method !== 'POST') {
     res.status(405).json({ error: 'Method not allowed' });
     return;
@@ -72,11 +81,13 @@ module.exports = async (req, res) => {
     const anon = getAnonClient();
     const { data, error } = await anon.auth.getUser(token);
     if (error || !data || !data.user) {
+      console.error('[submit-attempt] auth.getUser rejected:', error);
       res.status(401).json({ error: 'Invalid or expired session' });
       return;
     }
     userId = data.user.id;
   } catch (e) {
+    console.error('[submit-attempt] auth check threw:', e);
     res.status(500).json({ error: 'Auth check failed' });
     return;
   }
@@ -127,6 +138,7 @@ module.exports = async (req, res) => {
   });
 
   if (insertError) {
+    console.error('[submit-attempt] insert failed:', insertError);
     res.status(500).json({ error: 'Could not save attempt' });
     return;
   }

@@ -11,7 +11,8 @@ paste them into the right places. Do these in order.
    somewhere safe, you won't need it for this setup though).
 2. Once the project is ready, go to **Project Settings -> API**. You'll need
    three values from this page later:
-   - **Project URL** (e.g. `https://xxxxx.supabase.co`)
+   - **Project URL** (e.g. `https://xxxxx.supabase.co`) — bare origin only,
+     no trailing path like `/rest/v1/`
    - **anon / public key**
    - **service_role key** (click "Reveal" — keep this one secret, never put
      it in the Hugo/browser-facing env vars)
@@ -53,8 +54,8 @@ In the Vercel project dashboard -> **Settings -> Environment Variables**, add:
 
 | Name | Value | Notes |
 |---|---|---|
-| `HUGO_SUPABASE_URL` | the Project URL from step 1 | public, used at Hugo build time |
-| `HUGO_SUPABASE_ANON_KEY` | the anon/public key from step 1 | public, used at Hugo build time |
+| `HUGO_SUPABASE_URL` | the Project URL from step 1 | public, used at Hugo build time |  DONE 
+| `HUGO_SUPABASE_ANON_KEY` | the anon/public key from step 1 | public, used at Hugo build time |  
 | `SUPABASE_URL` | same Project URL | used by `api/` functions only |
 | `SUPABASE_ANON_KEY` | same anon key | used by `api/` functions only |
 | `SUPABASE_SERVICE_ROLE_KEY` | the service_role key from step 1 | **mark as Sensitive** — this one can bypass all row-level security, never expose it client-side |
