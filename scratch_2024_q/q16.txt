@@ -1,0 +1,45 @@
+--- page 29 ---
+Theoretical Exam - Part A                                       Q3-5
+                                                                               English (Official)
+
+16
+
+Fractal geometry can be illustrated by Mandelbrot's question: How long is the coast of Britain? The
+answer depends on the scale of measurement.
+
+Analogously, ecosystems exhibit scale-dependent resource availability. For instance, measuring Admi-
+ralty Island's coastline from the perspective of an eagle (using the distance between nests) yields 761
+km, whereas considering barnacles (requiring 2 cm of space) results in 11,000 km.
+
+Figure 1B shows the relationship between the coastline length of Admiralty Island and the scale at which
+it is measured, as defined by the equation on the graph. A similar relationship exists for the amount of
+resources available for a species that operates at a given scale, as well as for its biomass.
+
+A                          B Coastline
+                           Length (km)
+
+                                        a
+                                                             b
+
+                                                                                         Scale (km)
+
+Figure 1. A Admiralty island. B Log-log graph of resolution (scale) and the length of Admiralty
+coastline; a, b - species; Q - resource available or biomass or coastline length, k - constant, L -
+scale, d - fractal dimension describing the complexity of the pattern, more complex patterns
+correspond to higher values of d.
+
+          On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+          ones.
+
+          A. The graph for region 1 will have a steeper slope than the graph for region 2.
+
+          B. The number of individuals in an ecosystem consisting solely of species oper-
+          ating at scale b is larger than the number of individuals in an ecosystem con-
+          sisting solely of species operating at scale a.
+
+          C. According to this theory, along with a decrease in the number of individuals
+          at high trophic levels, all predators should have a larger body size than their
+          prey.
+
+          D. Social behavior, such as the formation of herds, influences the scale of per-
+          spective.

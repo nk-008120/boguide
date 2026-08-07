@@ -1,0 +1,37 @@
+--- page 65 ---
+Theoretical Exam - Part A  Q7-10
+                                                    English (Official)
+
+44
+
+Approximately 50% of epididymal sperm express Toll-like receptors 7/8 (TLR7/8), which are encoded on
+the X chromosome. The researchers investigated the effects of their activation in mice sperm cells by a
+specific ligand - R848. To do that they performed several experiments consisting of a swim-up method
+and in vitro fertilization (IVF). The obtained data is presented below.
+
+Figure 1. Swim-up method - technique designed to sort spermatozoa by motility and the ca-
+pability to swim upwards in the tube out of the seminal plasma; U - upper layer, L - lower layer.
+
+Figure 2. A Comparison of straight-line velocity (VSL) of spermatozoa in different glucose con-
+centrations (mM) without (C) and with (R) R848. '*' - significant difference between C and R.
+B Distribution of X chromosome- and Y chromosome-bearing spermatozoa in the upper layer
+without (Ct.) and with R848. C Comparison of sex of the embryos obtained from IVF with un-
+treated sperm cells (Ct.) in contrast to sperm cells from the upper (U) and lower (L) layers of
+the swim-up test tube separated after treatment with R848.
+--- page 66 ---
+Theoretical Exam - Part A  Q7-11
+                                                    English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Activation of TLR7/8 on sperm cells increases their motility.
+
+B. Following IVF using the high-mobility sperm, more than 80% of the embryos
+were XY.
+
+C. Ligand activation of TLR7/8 together with the swim-up method could be used
+to sort X chromosome- and Y chromosome-bearing sperm cells.
+
+D. The significant effect of the TLR7/8 activation on sperm motility is observed
+only in the presence of glucose.

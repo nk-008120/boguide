@@ -1,0 +1,51 @@
+--- page 33 ---
+Theoretical Exam - Part A                                                  Q4-3
+                                                                                          English (Official)
+
+19
+
+Individual progress and subsequent social learning are important aspects of group living. The progres-
+sive accumulation of culture within a group over time is called Cumulative Cultural Evolution (CCE). The
+following study aimed to investigate the interplay between CCE and collective decision-making. Rock
+pigeons (Columba livia) building routes between two distant points were taken as a model system.
+
+A        Experimental pair                  B
+
+                                                  Route efficiency               ** **
+
+                                                           1
+
+                                                        0.8
+
+         Solo control                       0.6                               Experimental
+         Pair control                       0.4                               pair
+                                            0.2                               Solo control
+                                                                              Pair control
+                                                        1
+   1  6 12 1  6 12 1   6 12 1 6 12 1  6 12                 6 12 1  6 12 1  6 12 1 6 12 1  6 12
+      1       2        3    4         5
+                                                           1       2       3  4           5
+                            Rounds
+                                                                              Rounds
+
+         Flight number                                     Flight number
+
+Figure 1. A In solo and pair controls the same birds fly all 60 times while in the experimental
+group, one of the birds is replaced every round (12 flights) with a new one. After each round,
+the performance on the last flights of the experimental pair and both controls were compared
+(** - significant difference). Route efficiency is calculated relative to the straight line connecting
+two points. B Change in route efficiency across flights, grouped by rounds.
+
+      On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+      ones.
+
+      A. There is evidence of social learning in the pigeon community.
+
+      B. Comparing the mean performance of each group within each round may lead
+      to incorrect interpretations of the experimental results.
+
+      C. In the experimental group, the new pigeon takes an active part in developing
+      the route.
+
+      D. Collective decision-making is the main reason for the difference between the
+      effectiveness of the routes of the experimental group and control groups.

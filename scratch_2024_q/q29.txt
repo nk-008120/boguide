@@ -1,0 +1,46 @@
+--- page 45 ---
+Theoretical Exam - Part A                     Q5-12
+                                                                       English (Official)
+
+29
+
+Retroviruses are RNA viruses that have RNA to DNA reverse transcription steps in their life cycle. Some
+can become endogenous retroviruses (ERVs), where they integrate into the host genome and become
+heritable. Retrotransposons are genetic elements that can spread over the genome using RNA inter-
+mediate for translocation. There is some evolutionary relationship between retrotransposons and ERVs.
+ERVs and retrotransposons are valuable parts of our genome that provide extra genetic material for
+evolution.
+
+A     5'-LTR     gag       pro           pol  env  3'-LTR
+
+B     5'-LTR     3'-LTR
+
+C     Frequency                               Beneficial ERV
+      in population                           Deleterious ERV
+100%                                          X
+
+      Thousands                Millions
+      of years                 of years
+
+                 Time
+
+Figure 1. A Common structure of ERV, LTR - identical long terminal repeats, gag - virion struc-
+tural protein, pro - viral protease necessary for virion maturation, pol - reverse transcriptase,
+env - glycoprotein envelope protein. B Solo-LTR (empty ERV derivative). C Changes in frequen-
+cies of beneficial and deleterious ERVs after many generations.
+--- page 46 ---
+Theoretical Exam - Part A  Q5-13
+                                                    English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Whether or not the provirus will become an ERV depends on the type of cells
+infected by the retrovirus.
+
+B. ERV should lose at least two genes to no longer be a virus.
+
+C. Solo-LTRs are the least common type of ERV derivatives found in the genome.
+
+D. If an ERV encodes a restriction factor preventing entry of a species-specific
+exogenous retrovirus, it can have an evolutionary history depicted by line X.

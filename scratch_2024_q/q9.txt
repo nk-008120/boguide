@@ -1,0 +1,36 @@
+--- page 19 ---
+Theoretical Exam - Part A  Q2-10
+                                                    English (Official)
+
+9
+
+Cryo-EM is a modern structural study technique that works by averaging multiple low-quality electron
+micrographs, cryo-EM generates high-quality structural maps. It offers flexibility by accommodating
+various molecular sizes and capturing multiple conformations. The structure and mechanism of ATAD1,
+a mitochondrial homohexamer protein, were resolved using cryo-EM. The protein's function was then
+determined using the structural data and fluorescent assays.
+
+Figure 1. A Density map of the average of all conformations obtained by electron microscopy.
+B Top view of the molecular model of ATAD1 hexamer emphasizing C-terminal alpha-helices,
+with a black curve representing the polypeptide chain substrate. C The structure of the central
+pore with its substrate (black) and all interacting amino acids (colored residues). D Fluorescent
+microscopy assay for wild-type ATAD1 and with mutation E193Q (at position 193, Glu  Gln),
+Gos28 is the hypothetical target, MitoTracker is a mitochondrial fluorescent marker, the red
+arrow points to one mitochondrion.
+--- page 20 ---
+Theoretical Exam - Part A  Q2-11
+                                                    English (Official)
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Given that the density map contains an unclear M6 subunit, at any moment
+only one of the ATAD1 subunits is flexible.
+
+B. C-terminal alpha helices shown on the molecular model are made entirely
+from hydrophobic amino acids.
+
+C. Change of charge due to mutation E193Q affects the physical interaction of
+position 193 with the substrate.
+
+D. ATAD1 translocates proteins mislocalized into the matrix of the mitochondria.

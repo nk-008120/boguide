@@ -1,0 +1,46 @@
+--- page 72 ---
+Theoretical Exam - Part A                       Q7-17
+                                                                         English (Official)
+
+48
+
+During pulmonary function tests, tidal volume, inspiratory reserve volume, and expiratory reserve vol-
+ume can be measured directly, but not residual volume (RV). The helium dilution technique estimates
+RV (Figure 1), by recording Vsf (final spirometer volume) and C2 (final helium concentration). The initial
+spirometer volume is 5L with 10% helium. Helium is not exchanged in the lungs, i.e. not absorbed into
+the blood.
+
+A
+
+B LUNGS                                  Vs
+
+                                    SPIROMETER
+
+                                          Vsf
+
+                 LUNGS              SPIROMETER
+
+Figure 1. A In the first stage, the patient is attached to the spirometer after regular expiration
+and then breathes several times to establish helium equilibrium. Vs - initial spirometer volume.
+B The patient performs a full forced expiration, and the spirometer is detached.
+
+Patients                   Vsf (L)  C2 (%)
+Healthy control            6.1      6.8
+1                          5.6      6.5
+2                          5.6      8
+
+Table 1. Results of the helium dilution test for two male patients and one male control.
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Vsf equals to Vs plus expiratory reserve volume.
+
+B. Patient 2 has an RV of 750 ml.
+
+C. Given that inspiratory capacity is constant for Patient 1, the increase in RV
+with respect to the healthy control can be explained by an increase in lung vol-
+ume.
+
+D. A patient with a single-lung pneumothorax, causing incomplete lung col-
+lapse, would likely have results similar to Patient 2.

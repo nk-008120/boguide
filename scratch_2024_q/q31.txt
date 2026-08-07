@@ -1,0 +1,34 @@
+--- page 48 ---
+Theoretical Exam - Part A  Q6-2
+                                          English (Official)
+
+31
+
+During the Calvin Cycle, carbon dioxide is fixed by RuBisCo, an enzyme in plants. However, RuBisCo can
+also catalyze reactions with oxygen, which disrupts the photosynthesis.
+
+Photorespiration is a process of recovering ribulose-1,5-bisphosphate (RuBP, the RuBisCo substrate)
+from products of RuBisCo oxygenation. Recent studies suggest it plays a significant role in NADH gen-
+eration, managing the metabolic toxin 2-phosphoglycolate (2-PG), and connecting photosynthesis to
+nutrient assimilation and abiotic stress response pathways.
+
+                           Ser  GLUCONEOGENESIS
+
+Figure 1. A schematic of photorespiration. When overexpressed, the enzyme in dark green
+(square) increases the rate of reactions, the enzyme in orange (stars) does not affect it, and
+the enzyme in magenta (circle) slows it down. GDC = Glycine decarboxylase. C = chloroplast,
+P = peroxisome, M = mitochondrion.
+
+          On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+          ones.
+
+          A. If GDC was inhibited, the cell could still recover the RuBP lost to photorespi-
+          ration through gluconeogenesis.
+
+          B. Rising atmospheric carbon dioxide alone should increase need for photores-
+          piration.
+
+          C. If all shown peroxisome enzymes were overexpressed, photorespiration
+          would take less time per cycle compared to the wild type.
+
+          D. C4 plants rely less on photorespiration than C3 plants.

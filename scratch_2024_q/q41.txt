@@ -1,0 +1,31 @@
+--- page 60 ---
+Theoretical Exam - Part A  Q7-5
+                                          English (Official)
+
+41
+
+In Octopus laqueus, two distinct sleep stages are observed: active (AS) and quiet (QS). Active sleep is
+marked by active bouts, which include only specific body and eye movements along with transitions in
+skin patterns, occurring between periods of quiet sleep. There are potential parallels between verte-
+brates' non-REM and REM (Rapid Eye Movement) sleep phases and octopuses' QS and AS stages, respec-
+tively. Researchers measured the occurrence of active bouts in the group of octopuses during the day
+and night and in the interrupted conditions as seen in Figure 1.
+
+Figure 1. A Average number of active bouts per hour over 36 hours before (Q) and after (R)
+2-day sleep deprivation (darkness is depicted in gray background areas). B Probability of the
+next bout (Y-axis) occurring N minutes after (X-axis) a normal (S) or interrupted (T) bout. C
+Active bouts per hour (Y-axis) during 3 days of constant darkness (darkness is depicted in gray
+background areas).
+
+          On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+          ones.
+
+          A. Bouts are more likely to be controlled by internal circadian mechanisms than
+          by external environmental signals.
+
+          B. On average, octopuses of this species have 8 active bouts per night.
+
+          C. The data shows that sleep deprivation in this octopus species increases the
+          average duration of an active bout.
+
+          D. Active bouts can be replenished if they do not occur in the normal amount.

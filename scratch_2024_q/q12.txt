@@ -1,0 +1,40 @@
+--- page 24 ---
+Theoretical Exam - Part A             Q2-15
+                                                               English (Official)
+
+12
+
+A terminal cervical cancer patient arrived at the emergency room and received intravenous therapy and
+oxygen, but her condition did not improve. Medical personnel noticed a garlic-like odor, typically caused
+by sulfur-containing substances, emanating from her mouth, and white crystals formed in a blood sam-
+ple taken from her. Subsequently, the medical staff began losing consciousness and having convulsions.
+
+This 1994 incident at Riverside General Hospital was initially thought to be mass hysteria, later suspicion
+fell on DMSO4: prior to admission, the patient had applied excessive amounts of DMSO-based ointments
+for analgesic purposes. While DMSO itself is non-toxic to humans, DMSO4 is classified as a warfare agent.
+It rapidly undergoes the following reaction:
+
+ 4 + 22  23 + 24                                                                       (1)
+
+Figure 1. DMSO, DMSO2, and DMSO4 structures. DMSO4 can be produced by successive oxi-
+dation reactions of DMSO and DMSO2.
+
+Compound                        DMSO  DMSO2  DMSO4
+Enthalpy of formation (kJ/mol)  -150  -373   -687
+Solubility in water (g/L)       150   150    28
+
+On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+ones.
+
+A. Out of the three involved substances, DMSO2 most probably accounts for
+crystals in the collected blood.
+
+B. DMSO can increase the rate of absorption of compounds through biological
+membranes.
+
+C. The enthalpies of formation indicate that DMSO can rapidly change into
+DMSO2 and then into DMSO4 by being exposed to oxygen at room tempera-
+ture.
+
+D. Cervical cancer metastases in the ureters have likely restricted the only path-
+way of eliminating DMSO and its derivatives.

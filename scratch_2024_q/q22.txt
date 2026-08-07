@@ -1,0 +1,37 @@
+--- page 37 ---
+Theoretical Exam - Part A        Q5-4
+                                                English (Official)
+
+22
+
+During the first step of ethanol metabolism in humans, alcohol dehydrogenase (ADH) converts ethanol
+to toxic acetaldehyde that can accumulate in the body.
+
+ADH1B gene of alcohol dehydrogenase has 2 alleles with varying levels of enzyme activity: ADH1B*2
+is associated with rapid alcohol metabolism compared to ADH1B*1. The ADH1B*2 distribution has a
+distinct geographical pattern (see Fig.1B).
+
+                              N
+
+1                          2
+
+                              S
+
+                              3
+
+Figure 1. A The historical origins (Areas 1-3) of agriculture emerged 10,000 years BP ("before
+present"). B Global contour plot of the ADH1B*2 allele frequency. The red triangles on the
+map are points of the data collection.
+
+On your answer sheet, indicate "T" for true statements and "F" for false         1.0pt
+ones
+A. The ancestral allele of the ADH1B gene evolved to degrade high amounts of
+exogenous alcohol.
+
+B. ADH1B*2 is likely protective against sustained ethanol abuse.
+
+C. Agriculture in Area 3 has been strongly associated with ethanol production.
+
+D. Based on the given data, it is more plausible that positive selection on the
+ADH1B locus occurred independently in Areas 1 and 2 than negative selection
+occurred elsewhere.

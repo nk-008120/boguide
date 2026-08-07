@@ -1,0 +1,30 @@
+--- page 54 ---
+Theoretical Exam - Part A  Q6-8
+                                          English (Official)
+
+36
+
+Aquatic carbon primarily exists in the dissolved form, and due to the formation of H2CO3 (carbonic acid),
+there are three main species � H2CO3, HCO3-, and CO32-. Despite that, Rubisco only uses CO2 as the
+carbon source.
+
+The oceanic pH is around 8, and freshwater pH is around 7. Generally for aquatic plants, epidermal
+cells take up carbon directly, but diffusion is significantly slower in water than in air. Plants can uptake
+HCO3- faster than CO2. Some plants use intracellular carbonic anhydrase as a quicker carbon sourcing
+mechanism.
+
+Figure 1. Reaction for which carbonic anhydrase (CA) is the catalyst. Percent concentration
+(Mol(%)) of three types of dissolved carbon against water pH. The two lines are the boundaries
+separating three types.
+
+          On your answer sheet, indicate "T" for true statements and "F" for false 1.0pt
+          ones.
+
+          A. Fully submerged aquatic plants are likely to have thicker cuticle.
+          B. Aquatic plants have adapted to the oceanic pH range by using HCO3- as a
+          CO2 source.
+          C. In stationary freshwater, releasing protons from the epidermis might aid CO2
+          intake.
+
+          D. Plants that use carbonic anhydrase have Rubisco with higher CO2 fixation
+          efficiency than plants that directly use CO2.

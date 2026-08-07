@@ -1856,3 +1856,116 @@ html.dark .attempt-rec-card p {
     display: none !important;
   }
 }
+
+/* ===================================================================
+   15. ANIMATED REROUTES â€” cross-document View Transitions
+   BioGuide is a static multi-page site (no client router), so "page
+   transition animations" mean the browser's native View Transitions API
+   for cross-document navigation (Chrome/Edge 126+; everywhere else this
+   whole section is inert and navigation just happens instantly as
+   normal â€” no fallback needed, nothing here is required for links to
+   work). `navigation: auto` below opts every internal link into a
+   transition; assets/js/core/view-transitions.js tags which category of
+   link was clicked (card / sidebar / search / prereq) so each gets its
+   own animation via `:active-view-transition-type()` instead of one
+   flat sitewide crossfade. Timing curve reused from the search dialog's
+   own open/close animation (section 8) for continuity.
+   Respects prefers-reduced-motion by not opting in at all â€” navigation
+   falls back to an instant, unanimated page load.
+   =================================================================== */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+
+  /* Fallback crossfade for any internal link JS didn't categorize
+     (breadcrumbs, in-content links, footer, etc.) */
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation-duration: 0.32s;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* "card" â€” subject-index topic card â†’ topic page. Push-forward zoom,
+     echoing the card's own hover lift (section 3). */
+  :root:active-view-transition-type(card)::view-transition-old(root) {
+    animation: vt-card-out 0.32s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  :root:active-view-transition-type(card)::view-transition-new(root) {
+    animation: vt-card-in 0.32s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  @keyframes vt-card-out {
+    to {
+      opacity: 0;
+      transform: scale(0.97);
+    }
+  }
+  @keyframes vt-card-in {
+    from {
+      opacity: 0;
+      transform: scale(1.02);
+    }
+  }
+
+  /* "sidebar" â€” topic-to-topic navigation via the left nav tree. Horizontal
+     drift in the direction of reading/browsing forward through a section. */
+  :root:active-view-transition-type(sidebar)::view-transition-old(root) {
+    animation: vt-sidebar-out 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  :root:active-view-transition-type(sidebar)::view-transition-new(root) {
+    animation: vt-sidebar-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  @keyframes vt-sidebar-out {
+    to {
+      opacity: 0;
+      transform: translateX(-14px);
+    }
+  }
+  @keyframes vt-sidebar-in {
+    from {
+      opacity: 0;
+      transform: translateX(14px);
+    }
+  }
+
+  /* "search" â€” FlexSearch result â†’ destination page. Fade + settle down,
+     handing off from the dialog (which closes with its own animation). */
+  :root:active-view-transition-type(search)::view-transition-old(root) {
+    animation: vt-search-out 0.28s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  :root:active-view-transition-type(search)::view-transition-new(root) {
+    animation: vt-search-in 0.28s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  @keyframes vt-search-out {
+    to {
+      opacity: 0;
+    }
+  }
+  @keyframes vt-search-in {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
+
+  /* "prereq" â€” topic-meta prerequisite chip â†’ a foundational topic.
+     Reversed horizontal drift from "sidebar" to read as "jumping back". */
+  :root:active-view-transition-type(prereq)::view-transition-old(root) {
+    animation: vt-prereq-out 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  :root:active-view-transition-type(prereq)::view-transition-new(root) {
+    animation: vt-prereq-in 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  @keyframes vt-prereq-out {
+    to {
+      opacity: 0;
+      transform: translateX(14px) scale(0.985);
+    }
+  }
+  @keyframes vt-prereq-in {
+    from {
+      opacity: 0;
+      transform: translateX(-14px);
+    }
+  }
+}
