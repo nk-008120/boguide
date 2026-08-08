@@ -1,8 +1,12 @@
-{{- /* Overall aggregate leaderboard across every round a user has submitted
-     to. Usage: {{< papers-leaderboard-overall >}} — no params, queries
-     Supabase's leaderboard_overall view (supabase/schema.sql) directly. */ -}}
-<div id="papers-leaderboard-overall-root" class="papers-leaderboard-root">
+{{- /* Overall aggregate leaderboard ("Hall of Fame") across every round a
+     user has submitted to. Usage: {{< papers-leaderboard-overall >}} — no
+     params, queries Supabase's leaderboard_overall view (supabase/schema.sql
+     + migrations 002/003) directly. Top 3 get a podium (static/js/papers-
+     leaderboard-overall.js renders into #papers-hof-podium); rank 4+ fall
+     into the plain table below it, same shape as the per-round table. */ -}}
+<div id="papers-leaderboard-overall-root" class="papers-leaderboard-root papers-hof-root">
   <p id="papers-leaderboard-overall-status">Loading leaderboard…</p>
+  <div class="papers-hof-podium" id="papers-hof-podium" hidden></div>
   <table class="papers-leaderboard-table" id="papers-leaderboard-overall-table" hidden>
     <thead>
       <tr><th>#</th><th>Name</th><th>Rounds</th><th>Overall</th></tr>

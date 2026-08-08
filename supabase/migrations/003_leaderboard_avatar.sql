@@ -1,0 +1,41 @@
+-- Adds profiles.avatar_url to the leaderboard views so rows can show an
+-- avatar next to the name (Hall of Fame redesign). Run this once, after
+-- 002_profile_fields.sql, in the Supabase SQL editor. Safe to re-run.
+--
+-- Same CREATE OR REPLACE VIEW column-order rule as 002: Postgres only lets
+-- you append new columns at the end of the select list, never insert one
+-- in the middle — avatar_url goes last for that reason, same as country
+-- did in 002.
+
+create or replace view public.leaderboard_per_round as
+select
+  b.*,
+  p.display_name,
+  rank() over (
+    partition by b.olympiad, b.year, b.round_id
+    order by b.score_pct desc, b.duration_sec asc
+  ) as rank,
+  p.country,
+  p.avatar_url
+from public.best_attempt_per_round b
+join public.profiles p on p.id = b.user_id;
+
+create or replace view public.leaderboard_overall as
+select
+  b.user_id,
+  p.display_name,
+  count(*) as rounds_completed,
+  sum(b.total_correct) as total_correct,
+  sum(b.total_statements) as total_statements,
+  round(sum(b.total_correct)::numeric / nullif(sum(b.total_statements), 0) * 100, 1) as overall_pct,
+  sum(b.duration_sec) as total_time_sec,
+  rank() over (
+    order by round(sum(b.total_correct)::numeric / nullif(sum(b.total_statements), 0) * 100, 1) desc,
+             sum(b.total_statements) desc,
+             sum(b.duration_sec) asc
+  ) as rank,
+  p.country,
+  p.avatar_url
+from public.best_attempt_per_round b
+join public.profiles p on p.id = b.user_id
+group by b.user_id, p.display_name, p.country, p.avatar_url;

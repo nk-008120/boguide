@@ -29,26 +29,19 @@
     return m + ':' + (s < 10 ? '0' : '') + s;
   }
 
-  // profiles.country is an ISO 3166-1 alpha-2 code — the flag emoji is just
-  // the two Unicode regional-indicator symbols for those letters, no image
-  // assets or lookup table needed.
-  function countryFlag(code) {
-    if (!code || code.length !== 2) return '';
-    return code.toUpperCase().split('').map(function (c) {
-      return String.fromCodePoint(127397 + c.charCodeAt(0));
-    }).join('');
-  }
-
   function render(rows) {
     if (!rows.length) {
       statusEl.textContent = 'No submissions yet for this round — log in and submit a Timed Attempt to be the first on the board.';
       return;
     }
     tbody.innerHTML = rows.map(function (r) {
-      var flag = countryFlag(r.country);
       return '<tr' + (r.isSelf ? ' class="papers-leaderboard-self"' : '') + '>' +
         '<td>' + r.rank + '</td>' +
-        '<td>' + (flag ? '<span class="papers-leaderboard-flag">' + flag + '</span> ' : '') + escapeHTML(r.display_name) + '</td>' +
+        '<td class="papers-leaderboard-namecell">' +
+          window.PapersAuth.avatarHTML(r.display_name, r.avatar_url) +
+          window.PapersAuth.flagHTML(r.country) +
+          '<span class="papers-leaderboard-name">' + escapeHTML(r.display_name) + '</span>' +
+        '</td>' +
         '<td>' + r.total_correct + '/' + r.total_statements + ' (' + r.score_pct + '%)</td>' +
         '<td>' + formatTime(r.duration_sec) + '</td>' +
         '</tr>';
