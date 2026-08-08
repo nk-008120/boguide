@@ -30,8 +30,8 @@ We hope you appreciate the effort and enjoy the website — and most importantly
 
 Some features we want to add to this website going forward:
 
-1. A paper archive
-2. An indigenous biology competition
+1. ~~A paper archive~~
+2. ~~An indigenous biology competition~~
 3. An indigenous AI agent to help guide you through your prep
 4. A comments, feedback, and discussion section
 
@@ -53,7 +53,9 @@ That roadblock is what inspired BiOGuide. We make nothing from it — it's compl
 
 Cracking these competitions isn't just about rote-memorising cellular pathways or anatomy (though a strong base of core facts is essential) — it's about truly understanding how living systems function, working through complex problems piece by piece, and having the grit to face scenarios you've never seen before. We want to help you build that problem-solving intuition, which is why we plan to provide an extensive library of past-year problems with step-by-step solutions.
 
-## How
+## How Do We find people?
+
+Our chain of command is somewhat summarised by <a href = "https://drive.google.com/file/d/1unOGgOnXPUFKjgCZ62puRivTm-_NBs5d/view?usp=sharing">this document</a> (Suits ball!). As mentioned around 10 times elsewhere, contact r6394175@gmail.com for applications, we could always use some help! Currently, we are looking for all sorts of help, majorly however, in the fields of olympiad specialised content generation, problem design, community and social media managers, and also some intermediate developers. 
 
 ### Inspirations
 
@@ -76,6 +78,8 @@ Cracking these competitions isn't just about rote-memorising cellular pathways o
 
 {{< team-member name="Nishit Kalani" role="Founder, Owner & Managing Partner" avatar="/nkavat.jpg">}}
 I'm a high schooler in India who kept wishing a resource like this already existed while preparing for the International Biology Olympiad (Silver, 2026), so I built it myself. Astronomy was actually where I started (Gold, IOAA Jr 2025), and I've since qualified for the national selection camps in both Chemistry and Astronomy too — though biology is the one that stuck, which is probably why I can't help connecting it back to the other two more than a syllabus usually allows. Outside this site, I split my time between chess, code,piano, tabla, violin and the occasional very average sketch. If something on here doesn't make sense or you just want to talk shop, find me at r6394175@gmail. If you find which star is in the image above, begin the mail with it's name, and wait for a surprise!
+{{< /team-member >}}
+{{< team-member name="Bhavyaa Gunwal" role="Senior Partner" >}}
 {{< /team-member >}}
 
 ## Frequently Asked Questions
