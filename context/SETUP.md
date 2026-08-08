@@ -26,12 +26,30 @@ paste them into the right places. Do these in order.
    `attempt_reports` tables, and `best_attempt_per_round` /
    `leaderboard_per_round` / `leaderboard_overall` views, under
    **Table Editor**.
-4. Also run [supabase/migrations/002_profile_fields.sql](supabase/migrations/002_profile_fields.sql)
-   the same way (SQL Editor -> New query -> paste -> Run). This adds Part 2's
-   `country`/`about`/`education_level` columns and updates the leaderboard
-   views to include `country`. Any future schema change lands as a new
-   numbered file in `supabase/migrations/` rather than editing `schema.sql`
-   retroactively — run new ones in order as they're added.
+4. Also run [supabase/migrations/002_profile_fields.sql](supabase/migrations/002_profile_fields.sql),
+   [003_leaderboard_avatar.sql](supabase/migrations/003_leaderboard_avatar.sql),
+   and [004_moderation_and_deletion.sql](supabase/migrations/004_moderation_and_deletion.sql)
+   the same way, in that order (SQL Editor -> New query -> paste -> Run).
+   002 adds Part 2's `country`/`about`/`education_level` columns; 003 adds
+   `avatar_url` to the leaderboard views; 004 adds `profiles.is_hidden`
+   (moderation — see below) and the `account_deletions` log table (backing
+   the account page's "Delete my account" button). Any future schema change
+   lands as a new numbered file in `supabase/migrations/` rather than editing
+   `schema.sql` retroactively — run new ones in order as they're added.
+
+### Moderation
+
+There's no admin UI yet — to hide a bad `display_name`/profile from the
+leaderboard, run this in the SQL Editor:
+
+```sql
+update public.profiles set is_hidden = true where id = '<user-uuid>';
+```
+
+Find the uuid via **Table Editor -> profiles** (search by `display_name`).
+Hidden profiles disappear from both leaderboard views immediately but keep
+their account and attempt history intact — this only affects visibility, not
+data (`is_hidden = false` un-hides them).
 
 ## 3. Add avatar images
 

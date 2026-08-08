@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BiOGuide for Biology Olympiads – Cell Junctions, Extracellular Matrix &amp; Cell Death</title>
-    <link>http://localhost:1313/resources/1-cell-molecular/cell-junctions-ecm-cell-death/</link>
+    <link>https://boguide.vercel.app/resources/1-cell-molecular/cell-junctions-ecm-cell-death/</link>
     <description>Recent content in Cell Junctions, Extracellular Matrix &amp; Cell Death on BiOGuide for Biology Olympiads</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://localhost:1313/resources/1-cell-molecular/cell-junctions-ecm-cell-death/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://boguide.vercel.app/resources/1-cell-molecular/cell-junctions-ecm-cell-death/index.xml" rel="self" type="application/rss+xml" />
     
     
       

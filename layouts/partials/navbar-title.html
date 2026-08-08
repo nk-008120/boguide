@@ -5,6 +5,20 @@
 {{- $logoDarkPath := .Site.Params.navbar.logo.dark | default $logoPath -}}
 {{- $navTitle := .Site.Params.navbar.title | default .Site.Title -}}
 
+{{- /* Feature 1+2 of LOGIN_ROADMAP.md's Part 2: an always-visible account
+     icon in the leftmost slot of the navbar — a generic login glyph when
+     logged out, the user's chosen avatar when logged in. Reactive state
+     (no reload) is handled by static/js/papers-nav-account.js via
+     PapersAuth.onChange, loaded site-wide from head-end.html so it runs
+     on every page. Placed before the logo/title link (below) so it sits
+     at the true left edge, with the logo+title shifted right of it. */ -}}
+<a href="{{ "account/" | relURL }}" id="nav-account-link" class="nav-account-link" aria-label="Account" title="Account">
+  <svg id="nav-account-icon-default" class="nav-account-icon-default" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <circle cx="12" cy="8" r="4"></circle>
+    <path d="M4 20c1.5-4.2 5-6 8-6s6.5 1.8 8 6"></path>
+  </svg>
+  <img id="nav-account-icon-avatar" class="nav-account-icon-avatar" alt="" hidden>
+</a>
 <a class="hx:flex hx:items-center hx:hover:opacity-75 hx:ltr:mr-auto hx:rtl:ml-auto" href="{{ $logoLink }}">
   {{- $displayTitle := (.Site.Params.navbar.displayTitle | default true) }}
   {{- if (.Site.Params.navbar.displayLogo | default true) }}
@@ -14,16 +28,4 @@
   {{- if $displayTitle }}
     <span class="hx:mr-2 hx:font-extrabold hx:inline hx:select-none">{{- $navTitle -}}</span>
   {{- end }}
-</a>
-{{- /* Feature 1+2 of LOGIN_ROADMAP.md's Part 2: an always-visible account
-     icon right after the logo — a generic login glyph when logged out,
-     the user's chosen avatar when logged in. Reactive state (no reload)
-     is handled by static/js/papers-nav-account.js via PapersAuth.onChange,
-     loaded site-wide from head-end.html so it runs on every page. */ -}}
-<a href="{{ "account/" | relURL }}" id="nav-account-link" class="nav-account-link" aria-label="Account" title="Account">
-  <svg id="nav-account-icon-default" class="nav-account-icon-default" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-    <circle cx="12" cy="8" r="4"></circle>
-    <path d="M4 20c1.5-4.2 5-6 8-6s6.5 1.8 8 6"></path>
-  </svg>
-  <img id="nav-account-icon-avatar" class="nav-account-icon-avatar" alt="" hidden>
 </a>

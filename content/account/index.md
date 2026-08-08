@@ -48,6 +48,7 @@ layout: "wide"
     <label>Email<input type="email" name="email" required autocomplete="email"></label>
     <label>Password<input type="password" name="password" required minlength="6" autocomplete="new-password"></label>
     <button type="submit" class="papers-nav-btn papers-nav-next">Sign Up</button>
+    <p class="account-consent">By signing up, you agree to our <a href="/privacy/">Privacy Policy</a>.</p>
     <div class="account-msg" id="account-signup-msg"></div>
   </form>
 
@@ -104,6 +105,13 @@ layout: "wide"
   </form>
 
   <button type="button" id="account-signout-btn" class="papers-nav-btn account-signout-btn">Log Out</button>
+
+  <div class="account-danger-zone">
+    <h3>Delete account</h3>
+    <p class="account-hint">Permanently deletes your login, profile, and leaderboard history. This can't be undone. See our <a href="/privacy/">Privacy Policy</a> for details.</p>
+    <button type="button" id="account-delete-btn" class="account-delete-btn">Delete my account</button>
+    <div class="account-msg" id="account-delete-msg"></div>
+  </div>
 </section>
 
 </div>
