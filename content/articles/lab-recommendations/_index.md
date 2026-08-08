@@ -1,4 +1,4 @@
 ---
-title: "Lab Recommendations ~ Nishit Kalani"
-description: "Here you will find articles on various topics by bionugetts' team."
+title: "Lab Recommendations ~ TBD"
+description: "Coming Soon! Stay Tunes"
 ---

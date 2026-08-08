@@ -1,0 +1,38 @@
+Theoretical Exam - Part B
+Q6-5
+English (Official)
+35
+Phytochrome B (phyB) is a plant photoreceptor responsible for numerous physiological aspects of plant
+growth. PhyB exists in two states, Pr and Pfr, the interconversion of which is regulated by red and far-red
+light (Figure 1A). Interestingly, temperature can also affect the interconversion between Pr and Pfr. At
+the cellular level, PhyB forms structures called nuclear bodies (NB, Figure 1E).
+K
+H
+NB
+NB
+Pr
+Pfr
+(at 725 nm)
+Growth
+(mm/9h)
+Temperature
+in Celsius
+R
+FR
+log (NB size)
+A
+E
+D
+C
+B
+log (R/FR)
+WT
+mut
+Time (min)
+Absorbance
+Figure 1. A The control of PhyB states by red (R) and far-red (FR) light. B The effect of temper-
+ature on the absorbance of PhyB at 725 nm light (far-red). In each condition, an equal amount
+of PhyB was used. C Hypocotyl growth in wild-type (WT) and phyB null mutant (mut) seedlings.
+D The impact of the ratio of red-to-far-red light on the size of NBs in temperature-irresponsive
+PhyB mutants (only light controls Pr and Pfr interconversion in these mutants). E The NBs from
+two different wild-type plants grown under different conditions.

@@ -1,0 +1,33 @@
+Theoretical Exam - Part B
+Q5-11
+English (Official)
+29
+Cas9 is an enzyme utilized in genome engineering, where it cleaves the DNA at sites complementary to
+the gRNA sequence (Figure 1A). To cleave the DNA, Cas9 requires an NGG (N is any nucleotide) sequence
+next to the target site (Figure 1A). Repair of Cas9-cleaved DNA results in either random mutations or
+precise introduction of the desired change. The latter requires a donor template having a homologous
+sequence to the target site (Figure 1A).
+Genomic DNA
+Cas9
+gRNA
+Donor template
+Recombination
+Mutagenic repair
+A
+B
+C
+gRNA
+DNA:
+DN-1:
+DN-2:
+WT:
+Mut-1:
+Mut-2:
+Mut-3:
+Mut-4:
+Figure 1. A. Repair outcomes of Cas9-mediated DNA cleavage. B. The DNA sequence encoding
+an N-terminal fragment of the target protein, the gRNA sequence (highlighted in green), and
+two donor sequences (DN-1 and DN-2) having the desired change highlighted in blue (the
+sequences highlighted in orange are silent mutations introduced to the Donor sequences) are
+shown. The trinucleotide highlighted in red is NGG. C. The random mutational outcome (in
+pink) at the Cas9-mediated cleavage site without supplying donor sequence is represented.

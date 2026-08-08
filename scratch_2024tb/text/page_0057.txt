@@ -1,0 +1,38 @@
+Theoretical Exam - Part B
+Q6-9
+English (Official)
+37
+Auxin promotes and cytokinins repress apical dominance. To further understand how auxin and its trans-
+port exert apical dominance, scientists treated nodal stem sections containing axillary buds with auxin
+from either end (depicted as A and B in Figure 1) in the presence or absence of auxin transport inhibitor,
+NPA, and measured the auxin content in buds and stems separately. For stems, auxin content was mea-
+sured at the opposite end to the treatment end. (Table 1).
+Next, they observed how grafting between Col (wild-type) and axr1-mut (auxin-insensitive mutant, which
+can still produce auxin) affects stem branching (Figure 2).
+Finally, they tested how tissue-specific expression (compare Tables 2 and 3) of the AXR1 (auxin-sensitive)
+gene affects stem branching in transformed axr1-mut mutants.
+Auxin content in buds
+Auxin content in stems
+End A
+End B
+End A
+End B
+- NPA
+14.2±0.9
+15.8±2.4
+2221.0±232.3
+13.4±0.5
++ NPA
+11.9±0.8
+13.5±0.2
+31.5±2.93
+16.3±0.7
+Table 1. Ends A and B indicate auxin-injection points. Values are in counts per minute +/- standard
+error.
+Stem
+Bud
+Graft combination
+shoot/root
+Figure 1
+Figure 2
+Stem branching

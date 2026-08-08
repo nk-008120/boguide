@@ -1,0 +1,66 @@
+Theoretical Exam - Part B
+Q2-4
+English (Official)
+5
+Ketogenic (high-fat, low-carbohydrate) diet is an efficient treatment for recurrent seizures, as in epilepsy.
+Ketogenic diet is thought to exert its effect via a metabolic pathway shown in Figure 1, as it leads to
+a production of beta-hydroxybutyrate. Increasing the number of reactions in a biochemical pathway
+decreases its overall reaction rate.
+Glucose
+Lactate
+⠀
+Pyruvate
+⠀
+Beta-hydroxybutyrate
+Acetoacetate
+Acetoacetyl-CoA
+Acetyl-CoA
+⠀
+Citrate
+Oxaloacetate
+⠀
+Alpha-ketoglutarate
+⠀
+Aspartate
+⠀
+Glutamate
+⠀
+GABA
+Glutamine
+⠀
+TCA Cycle
+Ketolysis
+Glycolysis
+>
+>
+>
+<
+>
+>
+>
+<
+>
+>
+<
+<
+<
+>
+CO2
+<
+>
+>
+<
+>
+>
+>
+>
+1
+2
+3
+Figure 1.
+Dopamine is known to play a role in muscle control (e.g., its deficiency is one of the causes of Parkin-
+son's disease). A study investigated the interaction of catecholamines (dopamine, noradrenaline, and
+adrenaline, refer to Figure 2A) with a ketogenic diet. The study used Dbh (Figure 2A) knockout (Dbh-/-)
+and heterozygote (Dbh+/-) mice that were fed with either a ketogenic or normal diet. To estimate the
+efficacy of the diet in each group, they were introduced to fluorothyl (a seizure-inducing agent), and the
+latency to the first seizure was measured (Fig. 2B).

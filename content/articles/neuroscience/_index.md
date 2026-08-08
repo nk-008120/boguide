@@ -1,4 +1,4 @@
 ---
-title: "Neuroscience "
-description: "Here you will find articles on various topics by bionugetts' team."
+title: "How to get better at theory exams ~ TBD "
+description: "Coming Soon!"
 ---

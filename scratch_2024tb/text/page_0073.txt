@@ -1,0 +1,40 @@
+Theoretical Exam - Part B
+Q7-14
+English (Official)
+48
+An mRNA vaccine is a type of vaccine where a pathogenic antigen is encoded in an mRNA sequence.
+Upon delivery to the human body, cells translate this mRNA and make protein antigens. Examples of
+mRNA vaccines include vaccines developed against the SARS-CoV-2 virus.
+Before the development of mRNA vaccines, various forms of RNA nucleotide modifications had been
+tested for the immunogenic potential of mRNA itself (Figure 1). Note that under normal physiological
+conditions, RNA can exist outside cells in body fluids.
+in translation
+mRNA
+A
+B
+CD83
+MHC-II
+UN
+Fold increase
+modiﬁcation
+Threshold
+Figure 1. A Activatory response of antigen-presenting dendritic cells to specific RNA nucleotide
+modifications recorded in the cell surface receptor amounts (UN: unmodified). Each dot in
+each panel represents a single dendritic cell. Above the threshold, dendritic cells are activated
+by expressing higher levels of both cell surface receptors (CD83 and MHC-II). B Efficiency of
+modified mRNAs’ translation by cells (UN: unmodified).
+On your answer sheet, indicate "T" for true statements and "F" for false
+ones.
+ 
+A. It is expected that the body’s mRNA is modified to prevent auto-immune re-
+sponse.
+ 
+B. mRNA vaccines having s2U modifications will have the highest efficiency in
+generating viral antigens.
+ 
+C. mRNA vaccines against SARS-CoV-2 are more likely to contain m5C than pseu-
+douridine (Ψ).
+ 
+D. Both leukocytes and erythrocytes can serve as a host to produce antigens
+encoded in mRNA vaccines.
+1.0pt

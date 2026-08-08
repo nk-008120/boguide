@@ -1,0 +1,57 @@
+Theoretical Exam - Part B
+Q6-10
+English (Official)
+Sample
+Stem
+branching
+Wild-type (untransformed)
+16±0.5
+Mutant axr1-mut (untransformed)
+26±2.0
+Table 2. Influence of mutations on stem branching.
+AXR1 expressing tissues
+in transformed axr1-mut mutants
+Stem
+branching
+Epidermis
+Cortex
+Phloem
+Xylem
+Pith
+O
+O
+O
+O
+O
+18±1.0
+O
+X
+X
+X
+X
+25±1.0
+X
+X
+O
+X
+X
+25±1.0
+X
+X
+X
+O
+X
+16±0.5
+Table 3. O: AXR1 is expressed, X: AXR1 is NOT expressed
+On your answer sheet, indicate "T" for true statements and "F" for false
+ones.
+ 
+A. End A is closer to the shoot apical meristem than end B.
+ 
+B. Auxin does not enter into the bud to inhibit axillary bud growth.
+ 
+C. Based on the data, auxin potentially suppresses bud growth by inhibiting
+cytokinin biosynthesis in the root.
+ 
+D. The xylem is critical in mediating the inhibitory action of auxin on bud growth.
+1.0pt

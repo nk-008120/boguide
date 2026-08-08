@@ -1,0 +1,16 @@
+Theoretical Exam - Part B
+Q6-1
+English (Official)
+Plant Anatomy and Physiology
+32
+Venus fly trap is a carnivorous plant. In an experiment, researchers measured how venus fly traps close
+at different temperatures (Figure 1-A and Figure 1-B) and in response to electrical stimulation (Figure
+1-C). The soil was treated with substance A for 4.5 hours before the electrical stimulation (curve 3, Figure
+1-C). After that, soil in the vicinity of the Venus trap was washed several times with distilled water (curve
+4, Figure 1-C).
+Figure 1. For A, B, C X – Time (s) after stimulation. A Trap closure after an electrical stimulation
+at temperatures 20°C and 36°C. Y – y/ymax. When the trap is most widely open, the distance is
+ymax. B The same data from graph A with temperature influence on the speed of trap closure.
+Y – speed (1/s). C Trap closure due to electrical stimulation. Y – speed (1/s). D Y – Rate of
+respiration (µmol/m2*s) in trap leaf due to the repeated trigger hair stimulation in closed traps.
+X – Time(s). Arrow – stimulation begins, blunted arrow – stimulation ends.

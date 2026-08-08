@@ -1,0 +1,43 @@
+Theoretical Exam - Part B
+Q7-1
+English (Official)
+Animal Anatomy and Physiology
+39
+A 65-year-old man with increased plasma cholesterol levels presented with severe pain in his left leg that
+occurred after walking for 15 minutes and was relieved by rest. Repeated pulse pressure measurements
+showed significantly lower pressure in the left leg compared to the right leg and left arm, both of which
+were within the normal range. He was diagnosed with intermittent claudication (a symptom of a range
+of diseases) – intense pain due to the build-up of metabolic acids. Treatments for cardiovascular diseases
+include:
+1) Beta-1 blockers - systemically reduce tension in smooth muscles of blood vessels.
+2) Aspirin - inhibits prostaglandin synthesis (Table 1) and blood clot formation.
+3) Statins - decrease blood cholesterol.
+Receptor type
+Sensitivity threshold without PGs
+Sensitivity
+thresh-
+old with PGs
+Peripheral chemoreceptors
+pH below 6.9
+pH below 6.9
+Heat receptors
+46°C
+38°C
+Mechanoreceptors
+8 millinewton
+3 millinewton
+Table 1. Thresholds (in respective units of measurement) of pain receptors with and without
+prostaglandins (PGs).
+On your answer sheet, indicate "T" for true statements and "F" for false
+ones.
+A. Aspirin and statins can be used to minimize further progression of the con-
+dition, but not to completely cure it.
+ 
+B. Aspirin is not an efficient painkiller for episodes of intermittent claudication.
+ 
+C. Intermittent claudication is a direct result of systemic hypertension in this
+patient.
+ 
+D. If the patient had a chronic heart failure (reduced pumping ability of the
+heart), beta-1 blockers might have been used as a long-term treatment.
+1.0pt

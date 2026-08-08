@@ -1,0 +1,17 @@
+Theoretical Exam - Part B
+Q3-3
+English (Official)
+On your answer sheet, indicate "T" for true statements and "F" for false
+ones.
+ 
+A. The y-intercept for line of species 1 is equal to K1/α.
+ 
+B. This model takes into account the presence of intraspecific competition.
+ 
+C. Suppose that there is a certain community of elks (K1 = 200, α = 1) and deer
+(K2 = 100, β = 2) competing with each other. If the current populations are 120
+elks and 60 deer, the elks will eventually outcompete the deer.
+ 
+D. In only 2 scenarios out of 4 described in Figure 1B both species can stably
+coexist
+1.0pt

@@ -69,7 +69,7 @@ Cracking these competitions isn't just about rote-memorising cellular pathways o
      See the comment block right after this section for exactly what each
      field does and how to add/remove people. -->
 
-{{< team-member name="Nishit Kalani" role="Founder & President" avatar="/nkavat.jpg">}}
+{{< team-member name="Nishit Kalani" role="Founder, Owner & Managing Partner" avatar="/nkavat.jpg">}}
 I'm a high schooler in India who kept wishing a resource like this already existed while preparing for the International Biology Olympiad (Silver, 2026), so I built it myself. Astronomy was actually where I started (Gold, IOAA Jr 2025), and I've since qualified for the national selection camps in both Chemistry and Astronomy too — though biology is the one that stuck, which is probably why I can't help connecting it back to the other two more than a syllabus usually allows. Outside this site, I split my time between chess, code,piano, tabla, violin and the occasional very average sketch. If something on here doesn't make sense or you just want to talk shop, find me at r6394175@gmail. If you find which star is in the image above, begin the mail with it's name, and wait for a surprise!
 {{< /team-member >}}
 

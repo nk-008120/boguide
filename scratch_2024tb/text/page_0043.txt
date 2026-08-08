@@ -1,0 +1,26 @@
+Theoretical Exam - Part B
+Q5-10
+English (Official)
+28
+In a hypothetical human population genes A and B control hair pigmentation, where hair color can be
+either black or white. Both genes A and B are autosomal, have two alleles, exert complete dominance,
+and are unlinked. In addition, these genes follow the Hardy-Weinberg principle and the frequency of the
+dominant allele of gene A is 0.4.
+In this question, you are given a genetic pedigree of individuals from this population, where black
+squares and circles represent black-haired individuals. Genotypes of some individuals are shown as
+well. Note, that the genotype of individual IV-8 for gene A is unknown.
+On your answer sheet, indicate "T" for true statements and "F" for false
+ones.
+ 
+A. There is an epistatic relationship between genes A and B.
+ 
+B. The probability that double heterozygous parents will have a child with white
+hair is 7/16.
+ 
+C. The probability that individual V-1 will have white hair is 0.35.
+ 
+D. Now, assume that you don’t know whether gene A is autosomal or X-linked,
+but you know that it is not located on chromosome Y. In this case, based on the
+pedigree with the indicated genotypes alone, gene A can be located in every
+human chromosome except chromosome Y.
+1.0pt

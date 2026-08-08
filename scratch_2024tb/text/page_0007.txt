@@ -1,0 +1,22 @@
+Theoretical Exam - Part B
+Q2-1
+English (Official)
+Cell and molecular biology
+3
+DNA double-strand breaks (DSBs) occur when both strands of the DNA molecule are broken, leading
+to cell death if not properly repaired. DSBs occur frequently and are primarily repaired through ho-
+mologous recombination (HR) or non-homologous end-joining (NHEJ). As shown in Figure 1, the BRCA1
+protein, when activated by DSBs, inhibits the 53BP1 protein, promoting the HR pathway. Alternatively,
+53BP1 can be recruited to DSB sites, where it promotes the NHEJ pathway. Activation of either HR or
+NHEJ can be sufficient for cell survival. Figure 2 shows the level of BRCA1 protein and cell cycle profile
+of normal cells. 53BP1-deficient cells have similar BRCA1 protein and cell cycle profile as normal cells.
+53BP1 protein level remains relatively same throughout the cell cycle in both normal and BRCA1 deficient
+cells. BRCA1 is required for the activation of HR pathway regardless of the presence of 53BP1.
+HR pathway
+NHEJ pathway
+Survival
+repair
+DSB
+DSB
+repair
+Figure 1. DSB repair pathways in normal cells. The red arrow indicates inhibition.

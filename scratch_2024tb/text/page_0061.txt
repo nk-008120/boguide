@@ -1,0 +1,44 @@
+Theoretical Exam - Part B
+Q7-2
+English (Official)
+40
+Pharmacokinetics studies drug movement in the body, guiding dosage for desired effects based on bio-
+chemical properties. Table 1 shows pharmacokinetic properties that regulate the duration of a drug's
+therapeutic effect.
+Property
+Description
+Absorption
+Influenced by ionization and other biochemical properties of the com-
+pound
+Distribution
+Influenced by polarity, transport protein binding, and blood flow. The
+volume of distribution (V) describes a drug's ability to disperse within
+body fluids. A V close to the total body volume indicates the best distri-
+bution.
+Metabolism
+Primarily occurs in the liver. First-pass metabolism happens when the
+liver metabolizes a drug before it enters systemic circulation. The drug's
+half-life is the time for its concentration in the blood to halve. A prodrug
+is a drug that becomes active after being metabolized (typically in the
+liver).
+Excretion
+Kidneys typically eliminate hydrophilic substances, while hydrophobic
+ones exit via bile. Only 5% of bile salts (as well as drugs) are excreted,
+with the remainder reabsorbed, transported to the liver, and secreted
+again with bile. This is known as enterohepatic circulation.
+Table 1.
+On your answer sheet, indicate "T" for true statements and "F" for false
+ones.
+ 
+A. Oral administration is generally more suitable for prodrugs with high first-
+pass metabolism than for those with low first-pass metabolism.
+ 
+B. Drugs that bind strongly to plasma proteins have a small volume of distribu-
+tion.
+ 
+C. Lipophilic drugs that do not bind to plasma proteins are expected to have a
+shorter half-life compared to lipophilic drugs that can bind to plasma proteins.
+ 
+D. Enterohepatic circulation of oestrogen-containing oral contraceptives pro-
+longs their activity.
+1.0pt

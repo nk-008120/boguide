@@ -1,0 +1,64 @@
+Theoretical Exam - Part B
+Q5-9
+English (Official)
+27
+It is known that human genes H (located on chromosome 1) and K (located on chromosome 5), are highly
+prone to genomic rearrangements, such as deletions, translocations, duplications, and inversions. From
+a given population, three individuals (ID-1, ID-2, and ID-3) are known to have genomic rearrangements
+at these loci. Polymerase Chain Reaction (PCR) was performed to determine the type of rearrangement
+(Figure 1B and C). Primers for PCR were indicated as small arrows in Figure 1A (the arrowhead denotes
+the 3’ end of the primer).
+a
+b
+c
+d
+e
+a+b
+c+e
+c+d
+b+c
+a+e
+b+c
+a+b
+c+e
+c+d
+b+c
+a+e
+a+b
+c+e
+c+d
+a+e
+a+b
+c+e
+c+d
+b+c
+a+e
+ID-1
+ID-2
+ID-3
+Primer set
+M
+Primer set
+M
+WT
+Gene H
+Gene K
+A
+B
+C
+Figure 1. A. The structure of genes K and H, where black regions depict exons, while light gray
+regions are introns. Note that for both genes, the junction between depicted exons codes for
+an active site in their respective protein (enzyme) products. B. PCR results from a wild-type
+(WT) individual (M - DNA size marker). C. PCR results from three tested individuals (ID-1, ID-2,
+and ID-3). Note that the intensity of the bands does not represent the amount of DNA.
+On your answer sheet, indicate "T" for true statements and "F" for false
+ones.
+ 
+A. In ID-1, there is a translocation event between chromosomes 1 and 5.
+ 
+B. ID-2 has an inversion, resulting in a non-functional protein product.
+ 
+C. ID-3 has a deletion.
+ 
+D. ID-1 is homozygous for the rearrangement, while ID-3 is heterozygous.
+1.0pt

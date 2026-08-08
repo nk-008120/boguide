@@ -1,0 +1,29 @@
+Theoretical Exam - Part B
+Q3-5
+English (Official)
+17
+The incompatible insect technique (IIT) controls harmful insects by inducing mating incompatibility with
+the use of Wolbachia bacteria. Wolbachia kills embryos only when an infected sperm fertilizes an un-
+infected egg, while other combinations show no developmental issues. Aedes albopictus is a mosquito
+species with males as active gamete dispersers. A study on IIT effectiveness began with collecting Wol-
+bachia-free fertilized eggs from the wild. After being reared in the lab, newly hatched mosquitoes were
+irradiated to sterilize only females. All mosquitoes were then infected with Wolbachia and released into
+experimental sites, while control sites received wild-type mosquitoes. Hatched eggs were counted, with
+their spatial distribution shown in Figure 1.
+Figure 1. Spatial distribution of hatched eggs. The red polygon marks the experimental site,
+and the blue polygon marks the control site. Yellow circles indicate the number of hatched
+eggs (larger circles denote more eggs)
+On your answer sheet, indicate "T" for true statements and "F" for false
+ones.
+A. The average lifespan of males of Aedes albopictus positively correlates with
+the effectiveness of IIT.
+ 
+B. Reducing the initial irradiation dose can lead to resistance against the Wol-
+bachia strain in successive mosquito generations.
+ 
+C. When 50% of males and females are infected (1:1 sex ratio), 75% of matings
+produce no offspring due to cytoplasmic incompatibility.
+ 
+D. Mosquito migration from control site to experimental site is the most likely
+explanation of the hatched eggs found in the experimental site.
+1.0pt

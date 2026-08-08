@@ -1,0 +1,15 @@
+Theoretical Exam - Part B
+Q2-16
+English (Official)
+On your answer sheet, indicate "T" for true statements and "F" for false
+ones.
+ 
+A. The probability of FRET decreases if the concentration of both donor and
+acceptor in the same solution is increased.
+ 
+B. Using Brim43 as the acceptor, the most optimal donor is G8.
+ 
+C. Protease P3 has the highest activity among tested proteases.
+ 
+D. Z and Q are competitive and non-competitive inhibitors, respectively.
+1.0pt
