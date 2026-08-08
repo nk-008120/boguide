@@ -3541,10 +3541,27 @@ html.dark .papers-pill.bioclash-pill {
 
 /* ===================================================================
    15b. CURTAIN-REVEAL INTRO — #bioclash-curtains (papers-bioclash.js
-   toggles .is-open on click/Enter/Space). Fixed full-viewport overlay,
-   sibling of .bioclash-page so it isn't affected by the hero's own
-   overflow:hidden. Skipped entirely (display:none from the start) for
-   prefers-reduced-motion or once already opened this session — see JS.
+   toggles .is-open on click/Enter/Space, then waits for `transitionend`
+   to bubble up from #bioclash-curtains before hiding the overlay).
+   Fixed full-viewport overlay, sibling of .bioclash-page so it isn't
+   affected by the hero's own overflow:hidden. Hidden by default,
+   revealed synchronously (before first paint) unless already opened this
+   session — see the inline script in content/bioclash/index.md. Not
+   skipped for prefers-reduced-motion: only the duration shrinks (see the
+   media block at the end of this section) — withholding the whole
+   interaction from reduced-motion visitors would mean some real visitors
+   never see the feature at all.
+
+   Deliberately simple: ONE mechanism (a plain `transition`, not
+   `@keyframes`) driving the whole open sequence, and every animated piece
+   shares the SAME duration — so a single bubbled `transitionend` on the
+   outer element correctly signals "everything is done," with no risk of
+   one short-duration piece finishing early and hiding the overlay while
+   the rest is still moving. An earlier version used per-piece keyframe
+   animations (bunch/rotate/scale/burst) which added enough moving parts
+   that the open transition stopped rendering reliably — this trades that
+   flourish for something guaranteed to actually play: the two panels
+   slide fully apart over 3s, valance and prompt just fade out alongside.
    =================================================================== */
 .bioclash-curtains {
   display: none; /* revealed synchronously by the inline script in
@@ -3564,6 +3581,7 @@ html.dark .papers-pill.bioclash-pill {
   top: 0;
   bottom: 0;
   width: 50%;
+  z-index: 1;
   background:
     repeating-linear-gradient(
       90deg,
@@ -3575,7 +3593,7 @@ html.dark .papers-pill.bioclash-pill {
     radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.18), transparent 60%),
     linear-gradient(180deg, #9a1830 0%, #7a0e22 55%, #5c0a1a 100%);
   box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.45);
-  transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+  transition: transform 3s ease;
 }
 .bioclash-curtain-left {
   left: 0;
@@ -3592,17 +3610,17 @@ html.dark .papers-pill.bioclash-pill {
   right: 0;
   height: 7%;
   min-height: 44px;
-  z-index: 1;
+  z-index: 2;
   background: linear-gradient(180deg, #d9ad3d 0%, #c9971f 55%, #a67c19 100%);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
-  transition: opacity 0.3s ease;
+  transition: opacity 3s ease;
 }
 .bioclash-curtain-prompt {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 3;
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -3616,7 +3634,7 @@ html.dark .papers-pill.bioclash-pill {
   letter-spacing: 0.03em;
   white-space: nowrap;
   animation: bioclash-curtain-pulse 2.2s ease-in-out infinite;
-  transition: opacity 0.3s ease;
+  transition: opacity 3s ease;
 }
 .bioclash-curtain-prompt-mark {
   color: #c9971f;
@@ -3625,6 +3643,7 @@ html.dark .papers-pill.bioclash-pill {
   0%, 100% { transform: translate(-50%, -50%) scale(1); }
   50%      { transform: translate(-50%, -50%) scale(1.05); }
 }
+
 .bioclash-curtains.is-open .bioclash-curtain-left {
   transform: translateX(-100%);
 }
@@ -3635,8 +3654,18 @@ html.dark .papers-pill.bioclash-pill {
 .bioclash-curtains.is-open .bioclash-curtain-prompt {
   opacity: 0;
 }
+
+/* Reduced motion shortens the reveal to a still-clearly-visible 0.8s
+   (not a near-instant snap) rather than hiding the curtain outright — see
+   the inline script in content/bioclash/index.md for why visibility
+   itself isn't gated on this media query. */
 @media (prefers-reduced-motion: reduce) {
   .bioclash-curtain-prompt { animation: none; }
+  .bioclash-curtain-panel,
+  .bioclash-curtain-valance,
+  .bioclash-curtain-prompt {
+    transition-duration: 0.8s;
+  }
 }
 
 @media (max-width: 640px) {
