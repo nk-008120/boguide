@@ -1,0 +1,51 @@
+Theoretical Exam - Part B
+Q2-5
+English (Official)
+>
+>
+0
+200
+300
+600
+500
+Ketogenic Diet
+Dbh-/-
+Dbh+/-
+A
+B
+L-DOPA
+Dopamine
+Noradrenaline
+⠀
+Adrenaline
+PNMT
+DBH
+>
+TH
+Threshold
+*
+400
+Normal Diet
+100
+Tyrosine
+⠀
+>
+Figure 2. A Metabolism of catecholamines. B Seizure latency threshold (in milliseconds) after
+provocation with fluorothyl in Dbh +/- and -/- mice fed either the standard or ketogenic diet.
+Asterisk indicates a significant difference.
+On your answer sheet, indicate "T" for true statements and "F" for false
+ones.
+ 
+A. A ketogenic diet facilitates the conversion of alpha-ketoglutarate to gluta-
+mate.
+ 
+B. A mutation reducing the Km of the enzyme that catalyzes reaction 2 in Figure
+1 decreases the value of the seizure latency (in milliseconds) in (Dbh+/-) mice
+with a ketogenic diet.
+ 
+C. L-DOPA can be used as both an anti-convulsant and a treatment for Parkin-
+son's disease.
+ 
+D. The study is certainly conclusive that noradrenaline enhances GABA’s anti-
+seizure functions.
+1.0pt

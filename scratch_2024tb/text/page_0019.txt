@@ -1,0 +1,16 @@
+Theoretical Exam - Part B
+Q2-13
+English (Official)
+11
+Proteasomes, cytoplasmic multiprotein complexes, and lysosomes are major proteolysis (protein degra-
+dation) sites in eukaryotic cells.
+In Figure 1-a, researchers studied the abundance of proteins A, B, and C over time in cultured human
+cells using cycloheximide, an inhibitor of translation elongation in eukaryotic 80S ribosomes. Note that
+cycloheximide does not affect the abundance of protein A, whose half-life is shorter than that of protein
+B.
+In Figure 1-b, they observed how MG132, a proteasome inhibitor, and chloroquine, a lysosome inhibitor,
+affect the abundance of proteins B and C over time under cycloheximide treatment.
+Figure 1. 1-a Y: Protein abundance, X: Time (hours), I: Before adding cycloheximide, II: After
+adding cycloheximide, A: protein A, B: protein B, C: protein C. 1-b Y: Protein abundance, X:
+Time after adding cycloheximide (hours), B: protein B, C: protein C, N: control, M: MG132, Q:
+Chloroquine.

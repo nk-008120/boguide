@@ -1,0 +1,38 @@
+Theoretical Exam - Part B
+Q3-2
+English (Official)
+15
+The Lotka-Volterra model is used to predict the dynamics of competing populations. It is based on the
+following equations and is analyzed by constructing specific lines (Figure 1A).
+𝑑𝑁1
+𝑑𝑡= 𝑟1𝑁1(𝐾1 −𝑁1 −𝛼𝑁2
+𝐾1
+).
+𝑑𝑁2
+𝑑𝑡= 𝑟2𝑁2(𝐾2 −𝑁2 −𝛽𝑁1
+𝐾2
+)
+where, K - carrying capacity, N - number of individuals, r - intrinsic rate of increase, α - competition
+coefficient of species 2 on species 1, β - competition coefficient of species 1 on species 2, and dN/dt =
+population growth rate.
+Species 2
+Species 1
+K1
+K2
+A
+B
+N1
+N2
+N1
+N2
+N1
+N2
+N1
+N2
+Figure 1. A Lotka-Volterra lines. B Combinations of line locations and trends.
+The Lotka-Volterra line represents the number of individuals in a population at equilibrium (dN/dt = 0).
+For two species in competition, there are only 4 combinations of the location of these lines.
+Depending on the initial values of populations, the future changes in populations’ dynamics can be pre-
+dicted. In Figure 1B you can see arrows that show the further direction of populations’ dynamics for
+particular initial values that are indicated by blue dots.
+ 

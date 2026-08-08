@@ -1,0 +1,28 @@
+Theoretical Exam - Part B
+Q2-14
+English (Official)
+On your answer sheet, indicate "T" for true statements and "F" for false
+ones.
+ 
+A. Cycloheximide treatment alone provides direct information on the rate of
+protein synthesis.
+ 
+B. The half-life of protein B is shorter than the half-life of protein C.
+ 
+C. Protein A is more likely to be mitochondrial than proteins B and C.
+ 
+D. Protein B is more likely to be an extracellular protein than protein C.
+1.0pt
+12
+Fӧrster Resonance Energy Transfer (FRET) is a technique used to study the interaction between two chro-
+mophores, donor and acceptor. The donor (D) can be excited by light of a specific wavelength, raising
+the energy of an electron in the molecule. When far away from the acceptor (A), it will emit light via flu-
+orescence. However, when it is within 10 nm of an acceptor molecule, it can "transfer" its energy to the
+acceptor, which then releases the absorbed energy as a different wavelength of light (compare Figures
+1a and 1b).
+For an efficient FRET, the emission spectra of the donor must overlap with the excitation spectra of the
+acceptor. Table 1 lists some chromophores’ excitation and emission spectra, including CFP and YFP.
+Researchers used FRET to find the optimal protease (Figure 2). Here, CFP and YFP fluorescent proteins
+are linked (CFP-YFP) with the protease-target peptide sequence. Researchers also observed the effect of
+two inhibitors on Protease P3 by using FRET (Figure 3). Note that one inhibitor is competitive, while the
+other is non-competitive.

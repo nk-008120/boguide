@@ -1,0 +1,46 @@
+Theoretical Exam - Part B
+Q7-4
+English (Official)
+42
+Human bodies have different types of capillaries that differ in wall structures, depending on the function
+of the organ they are located in.
+Oncotic pressure is a pressure driven by proteins in the solution.
+Below you can see the Starling equation, which governs the fluid exchange across capillaries:
+𝐽𝑣= 𝐾𝑓((𝑃𝑐−𝑃𝑖) −𝜎(𝜋𝑐−𝜋𝑖))
+(1)
+where,
+Kf
+filtration coefficient
+Pc
+capillary hydrodynamic pressure
+Pi
+interstitial hydrodynamic pressure
+πc
+capillary oncotic pressure
+πi
+interstitial oncotic pressure
+σ
+reflection coefficient
+When Jv is positive, there is a net fluid movement out of the capillary (filtration), and when Jv is negative,
+there is a net fluid movement into the capillary (absorption).
+In a simple model, Pc is influenced by arterial and venous pressures, and can be summarized by the
+following formula:
+𝑃𝑐= 0.2𝑃𝑎+ 𝑃𝑣
+1.2
+(2)
+where Pa and Pv- arterial and venous pressures, respectively.
+On your answer sheet, indicate "T" for true statements and "F" for false
+ones.
+ 
+A. In a person with a very low protein content in their diet for a long period of
+time, the filtration level tends to be increased.
+ 
+B. Capillary wall integrity might directly affect the Kf value.
+ 
+C. Venous constriction has a more pronounced effect on Pc value than arterial
+constriction.
+ 
+D. Fluid exchange between capillaries and plasma protein-synthesizing liver
+cells is governed mainly by hydrodynamic pressures rather than oncotic pres-
+sures.
+1.0pt

@@ -1,0 +1,66 @@
+Theoretical Exam - Part B
+Q4-2
+English (Official)
+20
+Mating and male-to-male fighting in Gryllus bimaculatus are influenced by mating cost, sperm depletion,
+and female quality. Scientists studied the impact of female body mass on mating behavior (Figure 1A)
+and the effect of body mass differences in previous male-female encounters on male fighting outcomes
+(Figure 1B). On average, females are heavier than males. Not all encounters led to successful copulation.
+600
+800
+1000 1200
+0
+200
+400
+600
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Female ﬁtness
+Number of matings
+with average males
+Body weight
+diﬀerence (mg)
+Female weight
+(mg)
+1
+2
+3
+A
+B
+C
+D
+1
+2
+1
+2
+*
+*
+Figure 1. A Female weight influence on mating outcome: copulated (1) and not copulated
+(2). B Body weight difference influence on male fighting outcomes: male winning (1) and
+male losing (2); median – solid line, boxes show 25% and 75% quartiles, *p < 0.05. C Three
+hypothetical relationships between female fitness and the number of matings. Line 3 shows
+a system with an idealized relationship between female fitness and the number of matings. D
+G. bimaculatus.
+On your answer sheet, indicate if the following statements are True (T) or False
+(F) based on the data provided.
+ 
+ 
+A. The lighter the female, the more chances of being inseminated.
+ 
+B. During male-to-male fights the heavier one on average wins more often
+ 
+C. Measurement of copulation duration is a good indicator of mating cost in
+terms of sperm depletion.
+ 
+D. If we assume that female of species G. bimaculatus displays a type 1 fitness-
+mating relationship (Figure 1C), then smaller females will have lower fitness
+compared to large-sized ones
+1.0pt

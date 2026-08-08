@@ -1,0 +1,32 @@
+Theoretical Exam - Part B
+Q6-7
+English (Official)
+36
+Researchers studied the effect of photoperiod and CONSTANS (CO) protein, a critical mediator of pho-
+toperiodic cues, on seed mass and size.
+DGF
+SM (mg)
+SM (g)
+WT
+DAP in CO-trans
+Control
+Dex
+Seed size
+WT
+CO LoF
+Ovule size
+A
+B
+C
+Lotus
+japonicus
+Vigna
+umbellata
+Figure 1. A The flowering time and seed mass of two different plant species grown under 16-
+hour-day-8-hour-night (16-8) and 12-hour-day-12-hour-night (12-12), representing long-day
+and short-day photoperiodic conditions (DGF: days between germination and flowering, SM:
+seed mass). B Results showing how CO in seeds affects seed size (mm2 ). Here, they used wild-
+type (WT) and CO-transgenic (CO-trans) seeds. In CO-transgenic seeds, CO is only functional
+upon incubation of seeds with the compound Dex. (DAP: days after pollination). s and ns depict
+significant and non-significant differences between compared samples. C Mature ovule size
+(mm2 )of wild-type (WT) and CO loss-of-function (Co-LoF) mutants.

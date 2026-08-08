@@ -1,0 +1,77 @@
+Theoretical Exam - Part B
+Q4-3
+English (Official)
+21
+Japanese mitten crabs, Eriocheir japonica, can display cannibalistic behavior. The absence of other food
+resources can greatly facilitate cannibalism. As a result of this, some crabs might be injured or killed.
+Injury level is not limited to the number of lost extremities but also includes any other forms of it. Figure
+1 (A,B) displays the probability of cannibalism versus Factor S.
+𝐹𝑎𝑐𝑡𝑜𝑟𝑆= 1 −
+𝑝𝑟𝑒𝑦𝑠𝑖𝑧𝑒
+𝑝𝑟𝑒𝑑𝑎𝑡𝑜𝑟𝑠𝑖𝑧𝑒
+Figure 1-D shows hypothetical results.
+0.0
+0.5
+1.0
+0.0 0.2 0.4
+0.6 0.8 1.0
+0.0
+0.5
+1.0
+0.0 0.2 0.4
+0.6 0.8 1.0
+Factor S
+Factor S
+Probability of
+cannibalistic
+behavior
+Probability of
+cannibalistic
+behavior
+Factor S
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Killed
+Injured
+Number of
+lost legs
+1
+2
+3
+4
+ ≥5
+0
+10
+20
+30
+40
+Injured crabs'
+occurence
+frequency
+0.43
+0.79
+A
+B
+C
+D
+Figure 1. A,B Cannibalism among only male (graph A) and only female (graph B) crabs, n-
+number of crabs. C Y – mean (+SD) of Factor S among killed and injured groups, *p<0.05. D
+Injured crabs’ occurrence frequencies.
+On your answer sheet, indicate "T" for true statements and "F" for false
+ones.
+ 
+ 
+A. Among male crabs, the cannibalism probability is 50% when predator to prey
+size ratio is about 1.75.
+ 
+B. Females have a higher eagerness to cannibalism than males
+ 
+C. In a cannibalistic environment, the occurrence of injured crabs will resemble
+the frequencies displayed in Figure 1D.
+ 
+D. The difference in size affects whether the crab is killed or merely injured
+1.0pt

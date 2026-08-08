@@ -1,0 +1,30 @@
+Theoretical Exam - Part B
+Q5-6
+English (Official)
+25
+A unique phenotype associated with enhanced performance in labyrinth tasks has been identified in
+mice. The trait is X-linked (Figure 1).
+Scientist A introduces 500 male and 500 female mice to an island. The initial allele frequencies in this pop-
+ulation are p = 0.7 (dominant allele) and q = 0.3 (recessive allele). Subsequently, Scientist B brings another
+500 male and 500 female mice which were drawn from a larger population with allele frequencies p=0.8,
+and q=0.2. Both the initial and final populations are assumed to be in Hardy-Weinberg equilibrium. After
+several generations, the combined population on the island is 2,000 mice (Male/Female=1000/1000).
+A female mouse was randomly picked up from Scientist A’s mice population before mixing and was
+crossed with Mouse 3 from the pedigree in Figure 1 (Cross Q).
+Figure 1. Inheritance mode of "Performant" phenotype (black-colored). Mice have the same
+XX/XY system as humans.
+On your answer sheet, indicate "T" for true statements and "F" for false
+ones.
+ 
+A. In the new population of an island, the ratio of "performant" male to "perfor-
+mant" female mice is 5:1
+ 
+B. In the Cross Q, the probability that the male offspring will not have a "per-
+formant" phenotype is 70%
+ 
+C. If a cross between mice 1 and 2 from Figure 1 produces 4 offspring, the
+probability that all are "performant" male mice is less than 0.2 %
+ 
+D. The probability of having a "performant" phenotype is the same for mouse
+A and mouse B
+1.0pt
