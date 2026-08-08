@@ -1,0 +1,32 @@
+{{- /* Feature 4 of LOGIN_ROADMAP.md's Part 2: gate every article behind
+     login with a teaser-and-blur, not a hard redirect. Applied via the
+     cascade in content/articles/_index.md (target "/articles/**"), so any
+     page nested under /articles/ gets this layout automatically.
+
+     This is a presentation-layer gate, not a real access-control boundary:
+     the full article HTML still ships in the page source (just visually
+     hidden via CSS) until static/js/papers-article-gate.js removes the
+     gating classes for a logged-in visitor — same posture as the existing
+     quiz answers elsewhere on the site. If withholding the content
+     server-side ever becomes a requirement, this needs a different
+     mechanism (e.g. fetching the body from an API after auth). */ -}}
+{{ define "main" }}
+  <div class="hx:mx-auto hx:flex hx:max-w-[90rem]">
+    {{ partial "sidebar.html" (dict "context" . "disableSidebar" true "displayPlaceholder" false) }}
+    <main id="content" class="hx:w-full hx:break-words hx:min-h-[calc(100vh-var(--hextra-navbar-height))] hx:min-w-0 hx:pt-4 hx:pb-8 hx:pl-[max(env(safe-area-inset-left),1.5rem)] hx:pr-[max(env(safe-area-inset-left),1.5rem)]">
+      <br class="hx:mt-1.5 hx:text-sm" />
+      {{ if .Title }}<h1 class="hx:text-center hx:mt-2 hx:text-4xl hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100">{{ .Title }}</h1>{{ end }}
+      <div class="content article-gate-root" id="article-gate-root" data-next="{{ .RelPermalink }}">
+        {{ with .Description }}<p class="article-gate-teaser">{{ . }}</p>{{ end }}
+        <div class="article-gate-body" id="article-gate-body">
+          {{ .Content }}
+        </div>
+        <div class="article-gate-cta" id="article-gate-cta" hidden>
+          <p>Log in to keep reading — free, and takes a few seconds.</p>
+          <a class="papers-nav-btn papers-nav-next" id="article-gate-cta-link" href="{{ "account/" | relURL }}">Log in to keep reading</a>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="{{ "js/papers-article-gate.js" | relURL }}" defer></script>
+{{ end }}

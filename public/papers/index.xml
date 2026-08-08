@@ -15,69 +15,6 @@
     
     
     <item>
-      <title>Account</title>
-      <link>http://localhost:1313/papers/account/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/papers/account/</guid>
-      <description>
-        
-        
-        &lt;p&gt;Log in to save your Timed Attempt results to the leaderboard. This is entirely optional — every practice question and timed attempt on BiOrchive works exactly the same without an account.&lt;/p&gt;
-&lt;div id=&#34;papers-account-root&#34; class=&#34;papers-account-root&#34;&gt;
-&lt;section id=&#34;account-unconfigured&#34; class=&#34;account-screen&#34; hidden&gt;
-  &lt;p&gt;The login system isn&#39;t configured on this environment yet, so accounts aren&#39;t available here right now. Everything else on BiOrchive still works as usual.&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id=&#34;account-loading&#34; class=&#34;account-screen&#34;&gt;
-  &lt;p&gt;Loading…&lt;/p&gt;
-&lt;/section&gt;
-&lt;section id=&#34;account-logged-out&#34; class=&#34;account-screen&#34; hidden&gt;
-  &lt;div class=&#34;account-tabs&#34; role=&#34;tablist&#34;&gt;
-    &lt;button type=&#34;button&#34; class=&#34;account-tab active&#34; data-tab=&#34;login&#34; role=&#34;tab&#34;&gt;Log In&lt;/button&gt;
-    &lt;button type=&#34;button&#34; class=&#34;account-tab&#34; data-tab=&#34;signup&#34; role=&#34;tab&#34;&gt;Sign Up&lt;/button&gt;
-  &lt;/div&gt;
-  &lt;form id=&#34;account-login-form&#34; class=&#34;account-form&#34;&gt;
-    &lt;label&gt;Email&lt;input type=&#34;email&#34; name=&#34;email&#34; required autocomplete=&#34;email&#34;&gt;&lt;/label&gt;
-    &lt;label&gt;Password&lt;input type=&#34;password&#34; name=&#34;password&#34; required autocomplete=&#34;current-password&#34;&gt;&lt;/label&gt;
-    &lt;button type=&#34;submit&#34; class=&#34;papers-nav-btn papers-nav-next&#34;&gt;Log In&lt;/button&gt;
-    &lt;button type=&#34;button&#34; id=&#34;account-forgot-btn&#34; class=&#34;account-link-btn&#34;&gt;Forgot password?&lt;/button&gt;
-    &lt;div class=&#34;account-msg&#34; id=&#34;account-login-msg&#34;&gt;&lt;/div&gt;
-  &lt;/form&gt;
-  &lt;form id=&#34;account-signup-form&#34; class=&#34;account-form&#34; hidden&gt;
-    &lt;label&gt;Display name&lt;input type=&#34;text&#34; name=&#34;displayName&#34; required maxlength=&#34;40&#34; placeholder=&#34;Shown on the leaderboard&#34;&gt;&lt;/label&gt;
-    &lt;label&gt;Email&lt;input type=&#34;email&#34; name=&#34;email&#34; required autocomplete=&#34;email&#34;&gt;&lt;/label&gt;
-    &lt;label&gt;Password&lt;input type=&#34;password&#34; name=&#34;password&#34; required minlength=&#34;6&#34; autocomplete=&#34;new-password&#34;&gt;&lt;/label&gt;
-    &lt;button type=&#34;submit&#34; class=&#34;papers-nav-btn papers-nav-next&#34;&gt;Sign Up&lt;/button&gt;
-    &lt;div class=&#34;account-msg&#34; id=&#34;account-signup-msg&#34;&gt;&lt;/div&gt;
-  &lt;/form&gt;
-  &lt;form id=&#34;account-reset-form&#34; class=&#34;account-form&#34; hidden&gt;
-    &lt;p&gt;Enter your email and we&#39;ll send a password reset link.&lt;/p&gt;
-    &lt;label&gt;Email&lt;input type=&#34;email&#34; name=&#34;email&#34; required autocomplete=&#34;email&#34;&gt;&lt;/label&gt;
-    &lt;button type=&#34;submit&#34; class=&#34;papers-nav-btn papers-nav-next&#34;&gt;Send Reset Link&lt;/button&gt;
-    &lt;button type=&#34;button&#34; id=&#34;account-reset-cancel-btn&#34; class=&#34;account-link-btn&#34;&gt;Back to log in&lt;/button&gt;
-    &lt;div class=&#34;account-msg&#34; id=&#34;account-reset-msg&#34;&gt;&lt;/div&gt;
-  &lt;/form&gt;
-&lt;/section&gt;
-&lt;section id=&#34;account-recovery&#34; class=&#34;account-screen&#34; hidden&gt;
-  &lt;h2&gt;Set a new password&lt;/h2&gt;
-  &lt;form id=&#34;account-new-password-form&#34; class=&#34;account-form&#34;&gt;
-    &lt;label&gt;New password&lt;input type=&#34;password&#34; name=&#34;password&#34; required minlength=&#34;6&#34; autocomplete=&#34;new-password&#34;&gt;&lt;/label&gt;
-    &lt;button type=&#34;submit&#34; class=&#34;papers-nav-btn papers-nav-next&#34;&gt;Update Password&lt;/button&gt;
-    &lt;div class=&#34;account-msg&#34; id=&#34;account-recovery-msg&#34;&gt;&lt;/div&gt;
-  &lt;/form&gt;
-&lt;/section&gt;
-&lt;section id=&#34;account-logged-in&#34; class=&#34;account-screen&#34; hidden&gt;
-  &lt;p&gt;Logged in as &lt;strong id=&#34;account-display-name&#34;&gt;&lt;/strong&gt;.&lt;/p&gt;
-  &lt;p class=&#34;account-hint&#34;&gt;Your display name is what appears on the leaderboard.&lt;/p&gt;
-  &lt;button type=&#34;button&#34; id=&#34;account-signout-btn&#34; class=&#34;papers-nav-btn&#34;&gt;Log Out&lt;/button&gt;
-&lt;/section&gt;
-&lt;/div&gt;
-&lt;script src=&#34;http://localhost:1313/js/papers-account.js&#34; defer&gt;&lt;/script&gt;
-
-      </description>
-    </item>
-    
-    <item>
       <title>Leaderboard</title>
       <link>http://localhost:1313/papers/leaderboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -89,7 +26,7 @@
         &lt;p&gt;Overall standings across every round in the &lt;a
     href=&#34;http://localhost:1313/papers/ibo/&#34;&gt;BiOrchive&lt;/a&gt; Timed Attempt archive, combining each logged-in user&amp;rsquo;s best submitted result per round. This is entirely optional — every practice question and timed attempt still works without an account.&lt;/p&gt;
 &lt;p&gt;Not logged in yet? &lt;a
-    href=&#34;http://localhost:1313/papers/account/&#34;&gt;Create an account&lt;/a&gt; to start appearing here.&lt;/p&gt;
+    href=&#34;http://localhost:1313/account/&#34;&gt;Create an account&lt;/a&gt; to start appearing here.&lt;/p&gt;
 &lt;div id=&#34;papers-leaderboard-overall-root&#34; class=&#34;papers-leaderboard-root&#34;&gt;
   &lt;p id=&#34;papers-leaderboard-overall-status&#34;&gt;Loading leaderboard…&lt;/p&gt;
   &lt;table class=&#34;papers-leaderboard-table&#34; id=&#34;papers-leaderboard-overall-table&#34; hidden&gt;
@@ -3809,7 +3746,7 @@
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
   &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q19/&#34;&gt;← Previous: Q19&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/&#34;&gt;Back to Theoretical A →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q21/&#34;&gt;Next: Q21 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
@@ -4088,6 +4025,274 @@
     </item>
     
     <item>
+      <title>Q21 — Out-of-Africa Human Genetic Diversity and Effective Population Size</title>
+      <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q21/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2024/theoretical-a/q21/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/15-evolution/genetic-drift-gene-flow-and-mutation/&#34;&gt;Genetic Drift, Gene Flow &amp; Mutation&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/15-evolution/human-evolution-and-hominid-phylogeny/&#34;&gt;Human Evolution &amp; Hominid Phylogeny&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;The &amp;lsquo;Out of Africa&amp;rsquo; theory postulates that modern humans originated in Africa and subsequently migrated to different parts of the world. Indeed, large-scale analyses of human genomes strongly support this theory. An example of such support can be observed in the pronounced negative correlation between population genetic diversity and distance from East Africa (Figure 1). Effective population size refers to the size of an idealized population with the same genetic diversity as in the observed population, as if all present genetic diversity within the observed population has been concentrated in a more limited number of individuals.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2024/q21-figure-1.png&#34; alt=&#34;Scatter plot of mean heterozygosity in human populations against distance from East Africa in kilometers, showing a strong negative correlation (r = -0.91), with African populations at high heterozygosity/low distance and American populations at low heterozygosity/high distance.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 1. Average heterozygosity in humans vs distance from East Africa.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;On your answer sheet, indicate &amp;ldquo;T&amp;rdquo; for true statements and &amp;ldquo;F&amp;rdquo; for false ones.&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2024-theoretical-a-q21&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. Higher heterozygosity = MORE genetic diversity = LARGER effective population size (Ne). African populations are closer to East Africa AND have HIGHER heterozygosity (greater diversity). Populations further from East Africa have LOWER heterozygosity (reduced diversity), indicating SMALLER long-term average Ne — they went through successive founder bottlenecks during migration. The statement claims populations further from Africa have larger Ne, which is the opposite of what the figure shows.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; Populations further away from East Africa have larger long-term average effective population sizes.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;TRUE. In a large effective population (like African populations, which have high Ne and high diversity), natural selection is EFFICIENT — even slightly deleterious mutations will be eliminated because the selection coefficient s is large enough relative to drift (Ne×s &amp;gt; 1). In small Ne populations (like Native Americans with low heterozygosity), genetic drift dominates and deleterious mutations can fix by chance. Therefore, slightly deleterious mutations are MORE likely to be fixed (reach frequency 1) in the smaller American population than in the large African population.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; A slightly deleterious mutation is less likely to get fixed (frequency = 1) in the African population compared to the native American population.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;TRUE. As humans migrated out of Africa, each new population was founded by a small number of individuals from a larger pre-existing population. These founders carried only a subset of the genetic variation present in the source population. Each subsequent migration further reduced diversity — classic serial founder effects. This &amp;#39;sampling bottleneck&amp;#39; at each founding event explains the stepwise reduction in heterozygosity with distance from Africa: each colonization event removed some rare alleles and reduced overall diversity.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; The reduced genetic diversity in non-African populations is likely due to the founder effect.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. DNA polymerase genes are among the most CONSERVED (highly constrained) genes in the genome — mutations in DNA polymerase active sites are almost always lethal. DNA polymerase sequences are nearly identical across all humans (extremely low heterozygosity). Figure 1 shows heterozygosity AVERAGED across the GENOME, reflecting variation in neutral and weakly selected regions. Heterozygosity is highest in highly variable regions (microsatellites, immune system genes, SNPs in non-functional regions). DNA polymerase genes would show near-zero heterozygosity everywhere, not the geographic gradient shown.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Figure 1 could represent the heterozygosity of DNA polymerase genes.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var wrap = document.currentScript.previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q20/&#34;&gt;← Previous: Q20&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q22/&#34;&gt;Next: Q22 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=35&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q22 — ADH1B Allele Geography and Ethanol Metabolism</title>
+      <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q22/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2024/theoretical-a/q22/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/15-evolution/natural-selection-modes-and-fitness/&#34;&gt;Natural Selection: Modes &amp; Fitness&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;During the first step of ethanol metabolism in humans, alcohol dehydrogenase (ADH) converts ethanol to toxic acetaldehyde that can accumulate in the body.&lt;/p&gt;
+&lt;p&gt;ADH1B gene of alcohol dehydrogenase has 2 alleles with varying levels of enzyme activity: ADH1B&lt;em&gt;2 is associated with rapid alcohol metabolism compared to ADH1B&lt;/em&gt;1. The ADH1B*2 distribution has a distinct geographical pattern (see Figure 1B).&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2024/q22-figure-1.png&#34; alt=&#34;World map showing three historical centers of agriculture (Areas 1-3) and a contour plot of ADH1B*2 allele frequency, with red triangles marking data-collection points.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 1. A The historical origins (Areas 1-3) of agriculture emerged 10,000 years BP (&amp;ldquo;before present&amp;rdquo;). B Global contour plot of the ADH1B&lt;/em&gt;2 allele frequency. The red triangles on the map are points of the data collection.*&lt;/p&gt;
+&lt;p&gt;On your answer sheet, indicate &amp;ldquo;T&amp;rdquo; for true statements and &amp;ldquo;F&amp;rdquo; for false ones.&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2024-theoretical-a-q22&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. The ANCESTRAL allele (ADH1B*1, lower activity) did NOT evolve to degrade high amounts of exogenous alcohol — this is because high-quantity exogenous alcohol consumption was not part of ancestral human behavior before agriculture. The ADH enzyme evolved to handle endogenous alcohol (produced by intestinal fermentation) and small amounts of dietary alcohol from fermented fruits. Large-scale ethanol production and consumption emerged with agriculture (~10,000 years BP). ADH1B*2 (high activity) is the DERIVED allele that arose/became selected in populations with agricultural alcohol production.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The ancestral allele of the ADH1B gene evolved to degrade high amounts of exogenous alcohol.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;TRUE. ADH1B*2 rapidly converts ethanol to ACETALDEHYDE — a toxic intermediate that causes flushing, nausea, tachycardia, and other unpleasant symptoms (the &amp;#39;Asian flush&amp;#39; reaction, similar to effects of disulfiram/Antabuse). This rapid acetaldehyde buildup creates an aversive physiological response to alcohol consumption. The unpleasant consequences discourage sustained heavy drinking — providing a biochemical deterrent to alcohol abuse. Thus ADH1B*2 is protective against sustained ethanol abuse.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; ADH1B*2 is likely protective against sustained ethanol abuse.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. Area 3 represents the Americas. While the Americas developed their own agriculture independently (~9,000-5,000 years BP), the figure shows very LOW frequency of ADH1B*2 in the Americas. If Area 3 (Americas) were strongly associated with ethanol-driven positive selection for ADH1B*2, we would expect HIGH ADH1B*2 frequencies there. The low frequency in Area 3 gives no support for strong association of American agriculture with ethanol production as a selective driver for this allele.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Agriculture in Area 3 has been strongly associated with ethanol production.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;TRUE. ADH1B*2 shows HIGH frequency specifically in East Asian (Area 2) and Near Eastern/Mediterranean (Area 1) populations — geographically coinciding with the two oldest centers of agriculture. The most parsimonious explanation is that ADH1B*2 rose to high frequency in THESE regions due to positive selection driven by the cultural practice of consuming fermented agricultural products (beer, wine). Two independent positive selection events (one in Area 1, one in Area 2) is more parsimonious than assuming negative selection against ADH1B*1 everywhere else — which would require explaining why non-agricultural populations maintained the ancestral allele.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Based on the given data, it is more plausible that positive selection on the ADH1B locus occurred independently in Areas 1 and 2 than negative selection occurred elsewhere.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var wrap = document.currentScript.previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q21/&#34;&gt;← Previous: Q21&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q23/&#34;&gt;Next: Q23 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=37&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Q22 — Social Stress Response in Mice — Dominance Hierarchy</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-1/q22/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4216,6 +4421,136 @@
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=31&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q23 — Drosophila Allele Frequency Experiment and Stabilizing Selection</title>
+      <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q23/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2024/theoretical-a/q23/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/15-evolution/natural-selection-modes-and-fitness/&#34;&gt;Natural Selection: Modes &amp; Fitness&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/15-evolution/population-genetics-hardy-weinberg-equilibrium/&#34;&gt;Population Genetics &amp; Hardy-Weinberg Equilibrium&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Aizhan studies polymorphism of locus JR_189021 in &lt;em&gt;Drosophila melanogaster&lt;/em&gt; that has only two alleles — A1 and A2. To study the fitness of genotypes, she runs a long-term evolution experiment with ten independent populations of 1,000 flies for 150 generations and measures the frequency of allele A1 in each generation (Figure 1). After completing it, she decided to change the population size and run an experiment using the same setup (Experiment #2). Additionally, she estimated the expected theoretical fit using the fitness values of each genotype reported in the literature. The locus is not under frequency-dependent selection. Assume that homozygous phenotypes are at the extreme of phenotypic distribution. Allele and genotype frequencies within a given generation can be assumed to follow Hardy-Weinberg equilibrium.&lt;/p&gt;
+&lt;p&gt;On your answer sheet, indicate &amp;ldquo;T&amp;rdquo; for true statements and &amp;ldquo;F&amp;rdquo; for false ones.&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2024-theoretical-a-q23&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. The data shows that A1 frequency converges to a STABLE EQUILIBRIUM at ~0.3-0.35 in all 10 replicates — it does not go to fixation (0 or 1). Directional selection would drive one allele to fixation (frequency→1). Instead, the system reaches a stable intermediate frequency — this is characteristic of BALANCING (stabilizing) selection, specifically heterozygote advantage (overdominance). The A1A2 heterozygote has the highest fitness, maintaining both alleles at intermediate equilibrium frequencies.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; In the long term, the locus is under the directional selection.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. Experiment #2 shows MORE pronounced random fluctuations from generation to generation across individual replicates compared to Experiment #1. Increased stochasticity (random genetic drift) occurs in SMALLER populations, where sampling effects are stronger. Therefore, to produce more genetic drift and wider variance around the theoretical fit, Aizhan DECREASED the population size in Experiment #2 (smaller Ne → stronger drift → more stochastic trajectories).&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; For experiment #2, Aizhan increased the population size.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;TRUE. Since A1 frequency reaches a stable equilibrium at ~0.3-0.35 (not 0 or 1), both alleles are maintained. Under Hardy-Weinberg, at equilibrium frequency p(A1)≈0.33 and q(A2)≈0.67. For this equilibrium to be stable, the heterozygote A1A2 must have HIGHER fitness than either homozygote (heterozygote advantage/overdominance). All 10 replicates and the theoretical fit converge to this equilibrium — strongly indicating that A1A2 heterozygotes have the highest fitness. This can be algebraically verified from the equilibrium allele frequencies.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Flies with the A1A2 genotype have the highest fitness.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. A1 frequency decreases BELOW 0.5 before reaching its equilibrium at ~0.33. This means A1 allele is less abundant than A2 at equilibrium. Under heterozygote advantage, the equilibrium frequency of each allele reflects the relative fitness costs of the homozygotes. If p(A1)≈0.33 at equilibrium, then A1A1 has LOWER fitness than A2A2, because a less fit homozygote&amp;#39;s allele is maintained at a lower frequency. Therefore: A1A2 &amp;gt; A2A2 &amp;gt; A1A1 in fitness ranking. A1A1 has LOWER fitness than A2A2, making statement D FALSE.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Flies with the A1A1 genotype have higher fitness than flies with the A2A2 genotype.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var wrap = document.currentScript.previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q22/&#34;&gt;← Previous: Q22&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q24/&#34;&gt;Next: Q24 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=38&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -4359,6 +4694,135 @@
     </item>
     
     <item>
+      <title>Q24 — Codon Usage Bias</title>
+      <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q24/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2024/theoretical-a/q24/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/translation-genetic-code/&#34;&gt;Translation &amp; the Genetic Code&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;While central dogma claims that synonymous substitutions (which do not change the primary sequence of the polypeptide) do not have any effect on protein sequence and its cellular function, codons are not used to the same extent in the vast majority of sequenced genomes. This is known as the codon usage bias. For example, among four codons that encode glycine in &lt;em&gt;Escherichia coli&lt;/em&gt;, GGU and GGC have higher abundance than GGA and GGG codons. The primary driver for such unequal codon usage is to match the available pool of tRNA molecules.&lt;/p&gt;
+&lt;p&gt;On your answer sheet, indicate &amp;ldquo;T&amp;rdquo; for true statements and &amp;ldquo;F&amp;rdquo; for false ones.&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2024-theoretical-a-q24&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;TRUE. Ribosomal proteins are among the MOST HIGHLY EXPRESSED proteins in any cell — they are needed in stoichiometric quantities to build ribosomes, which are required for all protein synthesis. Because of this extreme demand for rapid, efficient translation, ribosomal protein genes are under the strongest selection for codon optimization — they must be translated as fast and accurately as possible. Highly expressed genes show the strongest codon usage bias, matching the most abundant tRNAs, and ribosomal assembly genes are no exception.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; Protein coding genes that are involved in ribosomal assembly have very high codon usage bias.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;TRUE. Codon usage bias evolved to match the tRNA pool of each species, maximizing translation speed by pairing frequently used codons with the most abundant tRNAs. When a transgene from Species A is expressed in Species B&amp;#39;s cellular machinery, the transgene&amp;#39;s codons may mismatch Species B&amp;#39;s tRNA abundances — causing slow translation (ribosome pausing), premature termination, or misincorporation. Codon-optimizing the transgene to match the recipient&amp;#39;s tRNA pool significantly increases translational efficiency and protein yield.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Transgenic material that was not corrected for codon usage bias of the recipient&amp;#39;s genome will have lower translational efficiency relative to the corrected one.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. Codon usage bias IS found in viruses. Viruses depend entirely on their host&amp;#39;s translational machinery and tRNA pool. Therefore, viral genomes are under selection to use codons matching the host&amp;#39;s most abundant tRNAs — exhibiting codon usage bias optimized for their host. Additionally, some phages even carry their own tRNA genes to supply tRNAs for their codon preferences. Codon usage bias is a universal phenomenon in all organisms that rely on genetic translation, including viruses.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Codon usage bias is not found in viruses.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. Methionine is encoded by only ONE codon (AUG). Since there is only a single codon for methionine, there is NO alternative synonymous codon to &amp;#39;prefer&amp;#39; over another — codon usage bias requires the existence of MULTIPLE synonymous codons for the same amino acid. With only one codon, there can be no bias between alternatives. Methionine cannot have codon usage bias at all, let alone the strongest bias. (By contrast, amino acids like leucine, serine, and arginine, with 6 synonymous codons, can have the strongest biases.)&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Methionine will have one of the strongest codon usage biases because it is always the first amino acid in the protein.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var wrap = document.currentScript.previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q23/&#34;&gt;← Previous: Q23&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q25/&#34;&gt;Next: Q25 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=39&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Q24 — Comparative Liver Anatomy — Zebrafish vs. Human</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-1/q24/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -4488,6 +4952,140 @@
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=35&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q25 — Mitochondrial RNase P Mutations and COXPD54</title>
+      <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q25/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2024/theoretical-a/q25/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/7-genetics/pedigree-analysis-human-genetic-disorders/&#34;&gt;Pedigree Analysis &amp; Human Genetic Disorders&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/mitochondria-chloroplasts-structure-origin/&#34;&gt;Mitochondria &amp; Chloroplasts: Structure &amp; Endosymbiotic Origin&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Mitochondrial RNase P is an endonuclease composed of three subunits (Figure 1B). Mutations in this enzyme are often associated with the development of combined oxidative phosphorylation deficiency syndrome (COXPD54) in humans. The figures below show various information regarding RNase P and its mutations.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2024/q25-figure-1.png&#34; alt=&#34;Pedigrees A1 and A2 for two families with COXPD54, a diagram of the three RNase P subunits (TRMT10C, SDR5C1, PRORP) with mitochondrial targeting sequences marked, and a multi-species alignment of the RNase peptide segment with mutation positions X, Y, and Z highlighted in orange.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 1. A1 &amp;amp; A2 are pedigrees of two families showing distinct missense mutations resulting in the COXPD54 syndrome in shaded individuals; mutation X for A1 and mutation Y for A2. B RNase P subunits; (MTS - mitochondrial targeting sequence). C Alignment results of the RNase peptide segment across various organisms. Positions affected by the mutations are highlighted in orange boxes. The mutations leading to COXPD54 syndrome are Tyr (Y) → His (H) in position X; Thr (T) → Ala (A) in position Y; Ala (A) → Val (V) in position Z.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;On your answer sheet, indicate &amp;ldquo;T&amp;rdquo; for true statements and &amp;ldquo;F&amp;rdquo; for false ones.&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2024-theoretical-a-q25&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. The alignment (Figure 1C) shows that position Z is in a HIGHLY CONSERVED region (same amino acid across human, chimpanzee, mouse, rat, zebrafish, Drosophila), while position X is in a less conserved region. Active sites of enzymes must be structurally preserved to maintain catalytic function — they are typically the MOST CONSERVED regions. Therefore, position Z (highly conserved) is more likely to be in or near the active site than position X (less conserved). The statement that X is CLOSER to the active site than Z is FALSE.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; Within the primary structure, it can be assumed that the mutation at position X is located closer to the active site of the enzyme than the mutation at position Z.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. The mutation at position Y is Thr (T) → Ala (A). Threonine is encoded by AC_ (where _ is any base). Alanine is encoded by GC_. Assuming a single-nucleotide change: A (adenine) → G (guanine) in the first codon position. Both A and G are PURINES. A purine-to-purine change is a TRANSITION, not a transversion (transversion = purine↔pyrimidine, i.e., A/G ↔ C/T). Therefore, the Thr→Ala mutation involves a transition, not a transversion.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Mutation at position Y involves transversion (purine to pyrimidine change).&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. Two of the three RNase P subunits possess MTS (mitochondrial targeting sequences), as shown in Figure 1B. MTS-containing proteins are synthesized in the CYTOPLASM (on cytoplasmic ribosomes) and then individually imported into the mitochondrion via the MTS/TIM/TOM pathway. They are imported SEPARATELY, not as an assembled complex. Therefore, the RNase P complex assembles INSIDE the mitochondrion after the subunits are individually imported — not in the cytoplasm before import.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; All of the RNase P subunits assemble within the cytoplasm before being transported into the mitochondrion.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;TRUE. From pedigree A2, mutation Y shows autosomal recessive inheritance. Individual II-3 (A1) is a carrier of mutation X (genotype: X_/normal for mutation X, normal/normal for mutation Y). We need the probability that II-2 (A2) is a carrier of mutation Y. From pedigree A2, II-2 is an unaffected parent who has an affected child — the probability of II-2 being a carrier = 2/3 (given that II-2 is unaffected and came from parents who produced affected children, by Bayesian reasoning). Probability of affected child from carrier×carrier cross = 1/4. P(child with syndrome) = (2/3) × (1/4) = 2/12 = 1/6. This matches the statement.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Knowing that individual II-3 (A1) is the carrier of mutation at position X, the probability of the couple II-3 (A1) and II-2 (A2) having a child with the syndrome is 1/6. (Assume Mendelian inheritance.)&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var wrap = document.currentScript.previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q24/&#34;&gt;← Previous: Q24&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q26/&#34;&gt;Next: Q26 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=40&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -4758,6 +5356,273 @@
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=40&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q26 — Mass Extinctions and Carbon Cycle Perturbations</title>
+      <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q26/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2024/theoretical-a/q26/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/15-evolution/macroevolutionary-patterns-and-mass-extinctions/&#34;&gt;Macroevolutionary Patterns &amp; Mass Extinctions&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Mass extinctions occur when environmental changes outpace rates of species adaptation. One way to quantify this change is by measuring the addition of inorganic carbon to oceans over time. Significant changes in the flux between inorganic and organic carbon reservoirs are termed carbon cycle perturbation events. Mass change measures the magnitude of change in inorganic carbon mass in oceans. Another quantifying metric of a carbon cycle, isotopic shift measures the change in carbon isotopic composition during the event.&lt;/p&gt;
+&lt;p&gt;In the last 220 million years, the biological pump, which transports organic carbon and calcium carbonate from the ocean&amp;rsquo;s surface to the deep sea, has significantly strengthened.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2024/q26-figure-1.png&#34; alt=&#34;Four scatter plots of carbon-cycle perturbation events: isotopic shift vs event duration, mass change vs event duration with a threshold line separating mass extinctions from other events, mass change vs date, and event duration vs date, with red dots marking mass extinctions and blue dots marking other events.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 1. Carbon-shifting processes plots. A Isotopic shift vs Event duration. B Mass change vs Event duration. Gray shaded area around the line represents error margin of the fit line. C Mass change vs Date. D Event duration vs Date; my - million years, a.u. - arbitrary units; Red dots: events considered as mass extinctions. Blue dots: other carbon perturbation events. Units may differ between graphs. Note that mass extinction events are not included in graph D.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;On your answer sheet, indicate &amp;ldquo;T&amp;rdquo; for true statements and &amp;ldquo;F&amp;rdquo; for false ones.&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2024-theoretical-a-q26&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;TRUE. Graph B shows that almost ALL mass extinction events (red dots) cluster ABOVE the threshold line — except for ONE event at the Frasnian-Famennian (FF) boundary. The FF event has a very LONG event duration unlike other mass extinctions (which have short-to-medium durations above the threshold). This anomalous FF event — with its very long duration and lower mass change — lies BELOW or near the threshold line, suggesting its mechanism differs from the other mass extinctions (which are typically rapid, high-mass-change events). The FF extinction may have had a different, more gradual driver.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; One of the mass extinction events is likely caused by mechanisms distinct from those seen in other events.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. Graph D shows event duration vs. date for NON-extinction carbon perturbation events (blue dots). If absence of data for early events biased the trend, we would expect fewer data points early in Earth&amp;#39;s history. However, Graph C (mass change vs. date) shows that recent events tend to have SMALLER mass changes — consistent with the strengthened biological pump explanation. The biological pump more efficiently cycles carbon now, making large carbon perturbations shorter and smaller in magnitude. Absence of early data ALONE cannot fully explain the trend in Graph C.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; The lack of information about minor events that happened early in Earth&amp;#39;s history alone can explain the trend in Graph C.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;TRUE. Graph B shows a clear threshold line separating mass extinction events (red, mostly above) from non-extinction events (blue, mostly below). Events with large mass change IN A SHORT TIME (above the threshold) are almost invariably mass extinctions. This threshold can be interpreted biologically: when inorganic carbon is added to oceans faster than biological/geological processes can buffer it (above the threshold), the resulting environmental perturbation is catastrophic and causes extinctions. Events below the threshold are buffered and result in less-severe consequences.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; The line in Graph B represents a critical threshold, above which a carbon perturbation event is likely to be associated with extinction catastrophe.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;TRUE. As the biological pump strengthened over the past 220 Mya, organic carbon and CaCO₃ are transported to deep ocean more efficiently. This means the ocean biosphere can more rapidly process and sequester inorganic carbon — removing it from the surface environment faster. A stronger biological pump → faster carbon sequestration → smaller magnitude of carbon perturbation for a given carbon input → shorter perturbation events (resolved faster). This explains why recent events (Graph C and D) tend to be smaller in mass change and shorter in duration.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; A more efficient biological pump results in smaller and shorter carbon perturbation events.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var wrap = document.currentScript.previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q25/&#34;&gt;← Previous: Q25&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q27/&#34;&gt;Next: Q27 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=41&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q27 — Beta-Lactamase Mutational Trajectories and Epistasis</title>
+      <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q27/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2024/theoretical-a/q27/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/7-genetics/epistasis-gene-interactions-complementation/&#34;&gt;Gene Interactions: Epistasis &amp; Complementation Analysis&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Five mutations in beta-lactamase can significantly affect its ability to degrade third-generation antibiotics like cefotaxime: Mut1, Mut2, Mut3, Mut4, Mut5. Since they can appear in any order there are 5! (=120) potential trajectories of resistance development. However, only 18 of them are evolutionarily accessible. The term &amp;ldquo;evolutionarily accessible&amp;rdquo; refers to the ability of a particular mutational pathway to produce an advantageous phenotype during the evolution. Implications from this simple model could be used to understand the evolution of more complex traits.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2024/q27-figure-1.png&#34; alt=&#34;Graph of the ten most probable mutational trajectories from wild-type beta-lactamase to an improved variant, with enzyme efficiency values labeled at each node and colored arrows for each of the five mutations, alongside a cumulative probability plot for all 18 accessible trajectories.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 1. A Graph showing the ten most probable trajectories leading from wild-type beta-lactamase (BL(WT)) to an improved version (BL&lt;/em&gt;), the efficiency of each phenotype indicated on the node. Colored arrows represent the five potential mutations. B The cumulative probability of each of the 18 possible trajectories.*&lt;/p&gt;
+&lt;p&gt;On your answer sheet, indicate &amp;ldquo;T&amp;rdquo; for true statements and &amp;ldquo;F&amp;rdquo; for false ones.&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2024-theoretical-a-q27&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;TRUE. E104K (Mut1?) and G238S (Mut2?) show epistatic interaction — their individual effects are modest, but when combined, their efficiency increases DRAMATICALLY (from ~22-32 to 362&amp;#43; units). This is a clear case of positive epistasis or sign epistasis: E104K alone has low efficiency, G238S alone has low efficiency, but E104K&amp;#43;G238S together have much higher efficiency than either alone. This means each mutation requires the OTHER to have a significant effect — they are synergistic and cannot independently produce the full benefit.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; Some mutations require additional mutations to have a significant effect.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. The cumulative probability plot (Figure 1B) shows probability values increasing as trajectory number increases from 1 to 18. A CUMULATIVE probability plot always increases with each trajectory added. Trajectory 1 being the HIGHEST individual probability means the leftmost bar of the cumulative distribution rises fastest. The trajectories 1-18 are arranged with DECREASING individual probability (trajectory 1 most probable, 18 least probable), which is confirmed by the cumulative plot being skewed to the right (steep initial rise then flattening). So they are in DECREASING probability order, not increasing.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; The trajectories 1-18 (Figure 1B) are arranged based on the increasing probability of occurrence.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. A mutation&amp;#39;s occurrence rate (mutation RATE — how often it arises de novo) is determined by the physical chemistry of DNA replication errors and is INDEPENDENT of fitness effects. Natural selection acts on mutations AFTER they arise — it affects whether a mutation is FIXED (spread through the population) but does NOT affect the rate at which that mutation occurs. Higher fitness mutations are more likely to be selected and FIXED, not more likely to appear.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; A mutation&amp;#39;s effect on fitness influences the probability of this specific mutation occurring.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. Evolutionary accessibility depends on whether EVERY STEP along the path is beneficial (or at least neutral). If a trajectory passes through an intermediate with LOWER fitness than the current state (a fitness valley), natural selection cannot proceed through that step because it would select AGAINST it. A trajectory ending at the highest final fitness is NOT necessarily the most accessible if it requires passing through low-fitness intermediates. Evolution cannot &amp;#39;plan ahead&amp;#39; — it can only select for immediate fitness advantages. A local fitness maximum along the path acts as an evolutionary trap.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; The final fitness of the trajectory is the primary factor affecting the evolutionary accessibility of the trajectory.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var wrap = document.currentScript.previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+
+  rows.forEach(function (row) {
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    rows.forEach(function (row) {
+      var sel = row.dataset.selected;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (!sel) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      var isCorrect = sel === row.dataset.answer;
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q26/&#34;&gt;← Previous: Q26&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q28/&#34;&gt;Next: Q28 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=43&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
@@ -5038,278 +5903,11 @@
     </item>
     
     <item>
-      <title>Q29 — The Bohr Effect — Oxygen-Haemoglobin Dissociation</title>
-      <link>http://localhost:1313/papers/ibo/2022/theoretical-1/q29/</link>
+      <title>Q28 — Distribution of Fitness Effects and Effective Population Size</title>
+      <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q28/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/papers/ibo/2022/theoretical-1/q29/</guid>
-      <description>
-        
-        
-        &lt;div class=&#34;topic-meta&#34;&gt;
-  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 1&lt;/span&gt;
-  
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/respiratory-physiology/&#34;&gt;Respiratory Physiology&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;The amount of oxygen transported by haemoglobin is affected by the partial pressure of oxygen and carbon dioxide. Under conditions of high partial pressure of carbon dioxide, the release of oxygen from oxyhaemoglobin is stimulated — the Bohr effect.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q29-figure-1.png&#34; alt=&#34;Graph of percentage haemoglobin oxygen saturation vs. partial pressure of oxygen, showing curves X and Y (the Bohr shift).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-  &lt;/span&gt;
-&lt;em&gt;Percentage saturation of haemoglobin with oxygen vs. partial pressure of oxygen — curve X (baseline) and curve Y (Bohr-shifted, rightward).&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Using the information and graph, determine whether the following statements are true or false:&lt;/p&gt;
-&lt;p&gt;&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-1-q29&#34;&gt;
-  &lt;div class=&#34;tf-quiz&#34;&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;The Bohr effect is driven by a drop in pH (more acidic, from higher CO₂/carbonic acid), not a high pH — this statement has the pH direction backwards.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The change from X to Y is caused by a decrease in oxygen concentration and a high pH.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;This is the Bohr effect exactly as defined: rightward-shifted dissociation curve driven by lower pH (more CO₂/acid), which lowers haemoglobin&amp;#39;s oxygen affinity and promotes O₂ release in respiring tissue.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; The change from X to Y is due to the decrease in oxygen concentration and low pH.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Higher CO₂ concentration is exactly what drives the lower pH behind the Bohr shift — CO₂ dissolves to form carbonic acid, so &amp;#39;increased CO₂&amp;#39; and &amp;#39;low pH&amp;#39; are two descriptions of the same underlying cause.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; The change from X to Y is due to an increase in the concentration of carbon dioxide and low pH.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;High-altitude acclimatization is primarily about coping with lower oxygen partial pressure (e.g. increased red cell/haemoglobin production), not the acute, CO₂/pH-driven rightward shift the Bohr effect describes at the tissue level during a single breath cycle.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Y indicates the acclimation in the tissues of alpinists during high-altitude climbs.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
-    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
-(function () {
-  var wrap = document.currentScript.previousElementSibling;
-  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
-  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
-
-  rows.forEach(function (row) {
-    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
-    btns.forEach(function (btn) {
-      btn.addEventListener(&#39;click&#39;, function () {
-        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-        btn.classList.add(&#39;selected&#39;);
-        row.dataset.selected = btn.dataset.value;
-        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-      });
-    });
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
-    var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
-      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
-      if (!sel) {
-        allAnswered = false;
-        row.classList.add(&#39;unanswered&#39;);
-        return;
-      }
-      row.classList.remove(&#39;unanswered&#39;);
-      var isCorrect = sel === row.dataset.answer;
-      row.classList.toggle(&#39;correct&#39;, isCorrect);
-      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
-      if (isCorrect) correct++;
-      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
-    });
-    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
-    scoreEl.textContent = allAnswered
-      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
-      : &#39;Answer every statement first.&#39;;
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
-    rows.forEach(function (row) {
-      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-      delete row.dataset.selected;
-      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-    });
-    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
-  });
-})();
-&lt;/script&gt;
-
-&lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q28/&#34;&gt;← Previous: Q28&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q30/&#34;&gt;Next: Q30 →&lt;/a&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 1&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=45&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Q3 — Amylase Activity — Starch Hydrolysis at 50–70°C</title>
-      <link>http://localhost:1313/papers/ibo/2022/theoretical-1/q3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/papers/ibo/2022/theoretical-1/q3/</guid>
-      <description>
-        
-        
-        &lt;div class=&#34;topic-meta&#34;&gt;
-  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 1&lt;/span&gt;
-  
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/enzyme-kinetics-regulation/&#34;&gt;Enzyme Kinetics &amp; Regulation&lt;/a&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/carbohydrate-chemistry-biology/&#34;&gt;Carbohydrate Chemistry &amp; Biology&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;The diagram shows experimental data comparing the hydrolysis of starch by amylase at 3 different temperatures.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q3-figure-1.png&#34; alt=&#34;Glucose concentration vs. time for amylase at 50°C, 60°C, and 70°C.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-  &lt;/span&gt;
-&lt;em&gt;Glucose concentration (arbitrary units) vs. time, for amylase-catalysed starch hydrolysis at 50°C, 60°C, and 70°C. The 50°C curve reaches the highest final glucose level and is still rising at 60 minutes; the 60°C curve plateaus earlier at a lower level; the 70°C curve rises fastest at first but plateaus soonest, at the lowest final level.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;What conclusion can be drawn from these data? Determine whether the following statements are true or false:&lt;/p&gt;
-&lt;p&gt;&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-1-q3&#34;&gt;
-  &lt;div class=&#34;tf-quiz&#34;&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;The 70°C curve has the steepest initial slope, meaning the initial rate is actually highest at 70°C, not 50°C — 50°C only wins on total glucose produced by 60 minutes, because the enzyme stays active longer there.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; 50°C is the optimal temperature for the initial activity of amylase.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;The curve plateauing just means glucose production has stopped (denaturation or substrate exhaustion) — without knowing the total starch present at the start, the plateau alone can&amp;#39;t confirm that 100% of it was hydrolysed.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; At 60°C, all starch is hydrolyzed after 30 minutes.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The 70°C curve plateaus earliest and at the lowest final glucose level of the three — consistent with the enzyme losing activity (denaturing) quickly, well before all the available starch has been broken down.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; At 70°C amylase is denatured before hydrolysis is complete.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;It&amp;#39;s the reverse: the 70°C curve has the steeper initial slope of the two, so its initial rate is higher, not lower, than 60°C&amp;#39;s.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; The initial reaction rate of starch hydrolysis at 60°C is higher than at 70°C.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
-    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
-(function () {
-  var wrap = document.currentScript.previousElementSibling;
-  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
-  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
-
-  rows.forEach(function (row) {
-    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
-    btns.forEach(function (btn) {
-      btn.addEventListener(&#39;click&#39;, function () {
-        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-        btn.classList.add(&#39;selected&#39;);
-        row.dataset.selected = btn.dataset.value;
-        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-      });
-    });
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
-    var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
-      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
-      if (!sel) {
-        allAnswered = false;
-        row.classList.add(&#39;unanswered&#39;);
-        return;
-      }
-      row.classList.remove(&#39;unanswered&#39;);
-      var isCorrect = sel === row.dataset.answer;
-      row.classList.toggle(&#39;correct&#39;, isCorrect);
-      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
-      if (isCorrect) correct++;
-      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
-    });
-    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
-    scoreEl.textContent = allAnswered
-      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
-      : &#39;Answer every statement first.&#39;;
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
-    rows.forEach(function (row) {
-      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-      delete row.dataset.selected;
-      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-    });
-    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
-  });
-})();
-&lt;/script&gt;
-
-&lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q2/&#34;&gt;← Previous: Q2&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q4/&#34;&gt;Next: Q4 →&lt;/a&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 1&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=5&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Q3 — Bacterial Phylogenomics (RNA Polymerase vs Transposase)</title>
-      <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/papers/ibo/2024/theoretical-a/q3/</guid>
+      <guid>http://localhost:1313/papers/ibo/2024/theoretical-a/q28/</guid>
       <description>
         
         
@@ -5320,102 +5918,42 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/4-biosystematics/molecular-systematics/&#34;&gt;Molecular Systematics&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/15-evolution/genetic-drift-gene-flow-and-mutation/&#34;&gt;Genetic Drift, Gene Flow &amp; Mutation&lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;Yerzhan studies the evolution of four closely related bacterial strains (A, B, C, D), focusing on RNA polymerase subunit β and transposase. He reconstructed phylogenetic trees for the two corresponding genes that code for these proteins (Figure 1X, Y) using the alignment of four sequences (representative snapshot is shown on Figure 2) and the most parsimonious solution. He rooted both phylogenies using the D strain as an outgroup. Unfortunately, he realized that he forgot to properly label the datasets. Consequently, he began comparing these phylogenetic trees to the reference phylogenetic tree reconstructed from genes of ribosomal proteins (Figure 1Z).&lt;/p&gt;
-&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
-
-&lt;div&gt;&lt;pre&gt;&lt;code&gt;    X          Y          Z
-   ┌─ C       ┌─ A       ┌─ A
- ┌─┤         ┌─┤         ┌─┤
- │ └─ B      │ └─ B      │ └─ B
- │           │           │
- ├──── A     ├──── C     ├──── C
- │           │           │
- └────── D   └────── D   └────── D&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
-  &lt;button
-    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
-    title=&#34;Copy code&#34;
-    aria-label=&#34;Copy code&#34;
-    data-copied-label=&#34;Copied!&#34;
-  &gt;
-    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
-  &lt;/button&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;em&gt;Figure 1. Phylogenetic trees reconstructed from RNA polymerase subunit β (X or Y), transposase (X or Y) and reference genes of ribosomal proteins (Z).&lt;/em&gt;&lt;/p&gt;
-&lt;table&gt;
-	&lt;thead&gt;
-			&lt;tr&gt;
-					&lt;th&gt;Position&lt;/th&gt;
-					&lt;th&gt;I&lt;/th&gt;
-					&lt;th&gt;&lt;/th&gt;
-					&lt;th&gt;Position&lt;/th&gt;
-					&lt;th&gt;II&lt;/th&gt;
-			&lt;/tr&gt;
-	&lt;/thead&gt;
-	&lt;tbody&gt;
-			&lt;tr&gt;
-					&lt;td&gt;A&lt;/td&gt;
-					&lt;td&gt;GGACT&lt;/td&gt;
-					&lt;td&gt;&lt;/td&gt;
-					&lt;td&gt;A&lt;/td&gt;
-					&lt;td&gt;CAGTC&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;B&lt;/td&gt;
-					&lt;td&gt;CCATT&lt;/td&gt;
-					&lt;td&gt;&lt;/td&gt;
-					&lt;td&gt;B&lt;/td&gt;
-					&lt;td&gt;GCGTC&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;C&lt;/td&gt;
-					&lt;td&gt;GCATA&lt;/td&gt;
-					&lt;td&gt;&lt;/td&gt;
-					&lt;td&gt;C&lt;/td&gt;
-					&lt;td&gt;GCACA&lt;/td&gt;
-			&lt;/tr&gt;
-			&lt;tr&gt;
-					&lt;td&gt;D&lt;/td&gt;
-					&lt;td&gt;CGACT&lt;/td&gt;
-					&lt;td&gt;&lt;/td&gt;
-					&lt;td&gt;D&lt;/td&gt;
-					&lt;td&gt;GGCCA&lt;/td&gt;
-			&lt;/tr&gt;
-	&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;&lt;em&gt;Figure 2. Alignments of representative regions of two genes from four bacteria strains (A-D).&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Mutations have different effects ranging from strongly deleterious to highly adaptive. The frequency with which a particular mutation appears de novo is described by the fundamental property of each species — distribution of fitness effects (DFE). There are two direct methods of finding DFE: induce mutations and check the fitness of each mutation, or prepare mutation accumulation lines and compare their fitness distribution with the initial line. DFE can also be inferred indirectly from sequencing data that compares rates of non-synonymous (N) and synonymous (S) substitutions using the dN/dS ratio between different species.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2024/q28-figure-1.png&#34; alt=&#34;Schematic of a mutation-accumulation-line experiment: a preserved ancestor line is compared against descendant lines allowed to accumulate mutations over many generations (Gen 1, Gen 2, … Gen N).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Figure 1. Scheme of mutation accumulation line experiment.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;On your answer sheet, indicate &amp;ldquo;T&amp;rdquo; for true statements and &amp;ldquo;F&amp;rdquo; for false ones.&lt;/p&gt;
-&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2024-theoretical-a-q3&#34;&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2024-theoretical-a-q28&#34;&gt;
   &lt;div class=&#34;tf-quiz&#34;&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;TRUE. Alignment I produces Tree X as the most parsimonious solution. When tracing the five alignment positions under parsimony with D as outgroup, the minimum changes across the tree (5 total changes) match the topology of Tree X — with C and B sister to each other, and A more distant. This is the most parsimonious reconstruction from Alignment I.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; Phylogenetic tree X was reconstructed from the alignment I.&lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;TRUE. Effectively neutral mutations (Ne×|s|&amp;lt;1) are, by definition, mutations whose selection coefficient is so small that natural selection cannot effectively distinguish them from truly neutral mutations. For populations of real size, such mutations behave as if they were neutral — their fate is determined entirely by RANDOM GENETIC DRIFT, not by selection. They are fixed (or lost) probabilistically based on drift alone, not because they are favored (or disfavored) by selection. This is precisely the definition of effective neutrality.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; Individual effectively neutral mutations are fixed only due to genetic drift.&lt;/div&gt;
       &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
       &lt;/div&gt;
       &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. In Alignment I, only 3 out of 5 positions are phylogenetically informative (parsimony-informative). Site #3 is identical across all four taxa — it is invariant and contributes no information. Site #5 varies only in taxon C (C has A while others have T), making it an autapomorphy of C; a single change on any tree explains it equally, so it is not useful for discriminating among tree topologies. Only sites with at least two taxa sharing one state and two sharing another (shared derived characters) are informative.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; In the Alignment I, 4 out of 5 positions are useful for determining tree&amp;#39;s topology.&lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;TRUE. With larger Ne, the condition for effective neutrality (Ne×|s|&amp;lt;1) is harder to satisfy — even mutations with small |s| can now be efficiently selected against (or for). Species with large Ne have fewer &amp;#39;effectively neutral&amp;#39; mutations (more of them are genuinely subject to selection). The higher the Ne, the more precisely selection can act, allowing even weakly beneficial mutations to be fixed more reliably. This increased selection efficiency means species with large Ne accumulate MORE beneficial mutations and fewer deleterious ones — leading to higher adaptability.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Species with large Ne have higher adaptability.&lt;/div&gt;
       &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
       &lt;/div&gt;
       &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. Tree X is incongruent with the reference phylogeny (Tree Z). RNA polymerase beta is a conserved housekeeping gene closely tracking organismal evolution — its tree would be expected to match the reference tree (Z). Transposase genes are part of mobile genetic elements (transposons) that can undergo horizontal gene transfer, causing gene tree incongruence with the species tree. Therefore, Tree X (incongruent with Z) corresponds to the transposase gene, not to RNA polymerase beta.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Phylogenetic tree X was reconstructed from the RNA polymerase subunit β.&lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;TRUE. In mutation accumulation line experiments, lines are propagated through severe bottlenecks (usually 1-2 individuals per generation). This maximizes genetic drift, allowing ALL mutations (beneficial, neutral, and deleterious) to accumulate regardless of fitness effect. However, LETHAL mutations cause the individual carrying them to DIE — meaning the line cannot be passed forward, and the lethal mutation cannot be included in the dataset. Only SURVIVORS pass their mutations to offspring. Therefore, the method SYSTEMATICALLY UNDERESTIMATES the frequency of lethal (most deleterious) mutations.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; The mutation accumulation line method always underestimates the frequency of deleterious mutations.&lt;/div&gt;
       &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
       &lt;/div&gt;
       &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. With D fixed as outgroup, the remaining three taxa A, B, C can be arranged in exactly THREE possible unrooted topologies: (A,B) sister to C; (A,C) sister to B; or (B,C) sister to A. With D as outgroup and the tree rooted, these three arrangements give three possible tree topologies, not two. The statement that only two topologies are possible is incorrect.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Using species D as an outgroup, there are in total two possible phylogenetic tree topologies for the four species A-D.&lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. dN/dS represents the ratio of non-synonymous substitution rate to synonymous substitution rate. dN/dS &amp;lt; 1 indicates purifying selection (most non-synonymous changes are deleterious and removed). dN/dS &amp;gt; 1 indicates positive selection. Most DELETERIOUS mutations are under strong NEGATIVE selection and are NOT fixed — they are rapidly eliminated and do NOT appear as substitutions. Therefore, dN/dS is NOT proportional to the proportion of DELETERIOUS mutations; it mainly reflects the proportion of NEUTRAL or BENEFICIAL non-synonymous changes that survive to become fixed substitutions.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; dN/dS is proportional to the ratio of deleterious mutations.&lt;/div&gt;
       &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
@@ -5484,93 +6022,71 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q2/&#34;&gt;← Previous: Q2&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q4/&#34;&gt;Next: Q4 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q27/&#34;&gt;← Previous: Q27&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q29/&#34;&gt;Next: Q29 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=9&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=44&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
-      <title>Q3 — Sample Question 3 (placeholder)</title>
-      <link>http://localhost:1313/papers/tbo/2023/first-stage/q3/</link>
+      <title>Q29 — Endogenous Retroviruses and Retrotransposons</title>
+      <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q29/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/papers/tbo/2023/first-stage/q3/</guid>
+      <guid>http://localhost:1313/papers/ibo/2024/theoretical-a/q29/</guid>
       <description>
         
         
         &lt;div class=&#34;topic-meta&#34;&gt;
-  &lt;span class=&#34;badge-custom&#34;&gt;First Stage&lt;/span&gt;
-  
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Sample data — placeholder&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;p&gt;This is a placeholder problem page demonstrating the archive&amp;rsquo;s deepest browsing level. The First Stage exam PDF isn&amp;rsquo;t split into individual problems in the source material, so this page&amp;rsquo;s title and content are illustrative, not extracted from the real exam.&lt;/p&gt;
-&lt;p&gt;&lt;a
-    href=&#34;http://localhost:1313/papers/tbo/2023/first-stage-exam.pdf&#34;&gt;Open the First Stage exam PDF&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Q30 — Bone Marrow Conversion — Red vs. Yellow Marrow With Age</title>
-      <link>http://localhost:1313/papers/ibo/2022/theoretical-1/q30/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/papers/ibo/2022/theoretical-1/q30/</guid>
-      <description>
-        
-        
-        &lt;div class=&#34;topic-meta&#34;&gt;
-  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 1&lt;/span&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
   &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/2-animal-anatomy/human-skeletal-system/&#34;&gt;Human Skeletal System&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/dna-repair-recombination/&#34;&gt;DNA Repair &amp; Recombination&lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;The figure represents the distribution of bone marrow types X and Y in the lower limbs of humans (&lt;em&gt;Homo sapiens&lt;/em&gt;) at different ages (in years).&lt;/p&gt;
+&lt;p&gt;Retroviruses are RNA viruses that have RNA to DNA reverse transcription steps in their life cycle. Some can become endogenous retroviruses (ERVs), where they integrate into the host genome and become heritable. Retrotransposons are genetic elements that can spread over the genome using RNA intermediate for translocation. There is some evolutionary relationship between retrotransposons and ERVs. ERVs and retrotransposons are valuable parts of our genome that provide extra genetic material for evolution.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q30-figure-1.png&#34; alt=&#34;Five skeletons of the lower limb at ages Birth, 7, 12-14, 18, and 25, showing red marrow (X) receding from the extremities and yellow marrow (Y) spreading toward the pelvis with age.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2024/q29-figure-1.png&#34; alt=&#34;Diagram of a retrovirus genome structure with 5’-LTR, gag, pro, pol, env, and 3’-LTR; a solo-LTR derivative formed by recombination between the two LTRs; and a line graph of beneficial versus deleterious ERV frequency in a population over time.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
-&lt;em&gt;Distribution of marrow type X (red/haematopoietic) and type Y (yellow/fatty) in the lower limb at birth, age 7, 12–14, 18, and 25. Marrow type X recedes from the extremities toward the pelvis as age increases; the pelvis still retains type X marrow even at age 25.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Using the information and figure, determine whether the following statements are true or false:&lt;/p&gt;
-&lt;p&gt;&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-1-q30&#34;&gt;
+&lt;em&gt;Figure 1. A Common structure of ERV, LTR - identical long terminal repeats, gag - virion structural protein, pro - viral protease necessary for virion maturation, pol - reverse transcriptase, env - glycoprotein envelope protein. B Solo-LTR (empty ERV derivative). C Changes in frequencies of beneficial and deleterious ERVs after many generations.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;On your answer sheet, indicate &amp;ldquo;T&amp;rdquo; for true statements and &amp;ldquo;F&amp;rdquo; for false ones.&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2024-theoretical-a-q29&#34;&gt;
   &lt;div class=&#34;tf-quiz&#34;&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;The figure shows red marrow (X) already receding from the extremities by age 7, well before puberty — the conversion to yellow marrow (Y) begins in early childhood, not at puberty.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The reduction in marrow type X is initiated in puberty.&lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;TRUE. Whether a retroviral integration becomes heritable (an ERV) depends entirely on WHICH CELLS are infected. Only integrations into GERMLINE cells (sperm, egg, or their precursors) can be passed to offspring. Integration into SOMATIC cells produces a provirus in that individual only — it is not heritable and cannot become an ERV. If a retrovirus infects only somatic cells (liver, lung, neurons), its integrated DNA is lost when that individual dies. Only germline infection creates the heritable ERVs that become part of the species&amp;#39; genome over generations.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; Whether or not the provirus will become an ERV depends on the type of cells infected by the retrovirus.&lt;/div&gt;
       &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
       &lt;/div&gt;
       &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Even at the oldest age shown (25), the pelvis still retains red marrow (X) — the pelvis, vertebrae, and sternum are known to keep significant red marrow well into adulthood, which is exactly why they&amp;#39;re the standard sites for bone marrow biopsy.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; A healthy adult does not have a significant amount of marrow type X in his pelvis.&lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. To &amp;#39;no longer be a virus,&amp;#39; an ERV must lose the ability to form infectious virions. The MINIMUM requirement to lose virion formation is to lose the env (envelope) gene — which encodes the glycoprotein necessary for viral particle production and cell entry. Loss of env alone is sufficient to prevent formation of a fully infectious, transmissible virus particle. If env is deleted, even if gag, pro, and pol are intact, no infectious virus can be released. Therefore losing ONE gene (env) — not at least two — is sufficient.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; ERV should lose at least two genes to no longer be a virus.&lt;/div&gt;
       &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
       &lt;/div&gt;
       &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Under increased haematopoietic demand (e.g. chronic anaemia or blood loss), yellow marrow can revert back to active red marrow — the X→Y conversion isn&amp;#39;t a one-way, permanent change.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Conversion of marrow type X to Y is reversible.&lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. Solo-LTRs are actually the MOST COMMON form of ERV-derived sequences in many genomes, not the least common. The two LTRs of an integrated ERV are nearly identical in sequence and are prone to homologous recombination between them. This recombination deletes everything between the LTRs (gag, pro, pol, env), leaving only a single LTR (solo-LTR). Over evolutionary time, this process gradually converts full-length ERVs into solo-LTRs. Since solo-LTRs form from all ERV copies that undergo this recombination, they accumulate in abundance while full-length ERVs become rare.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Solo-LTRs are the least common type of ERV derivatives found in the genome.&lt;/div&gt;
       &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
       &lt;/div&gt;
       &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Since yellow marrow retains the stromal/mesenchymal environment and can convert back to haematopoietically active red marrow (per C), it can still serve as transplantable marrow — this follows from the same reversibility rather than being a separate, independent fact.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; A patient with leukemia can be assigned for a transplant of bone marrow type Y.&lt;/div&gt;
+    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;TRUE. If an ERV encodes a restriction factor that blocks entry of a specific exogenous retrovirus (e.g., by encoding a competing env protein that occupies the receptor), this ERV provides a FITNESS BENEFIT — protecting the host from retroviral infection. Initially beneficial → increases in frequency (positive selection). But as the exogenous retrovirus becomes rare or extinct due to the resistance, the selective pressure maintaining the ERV diminishes. The ERV is no longer under positive selection and begins accumulating neutral mutations. Line X — showing initial rapid increase in frequency then long-term maintenance (or slow decline) — matches this trajectory: initial positive selection followed by relaxed selection.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; If an ERV encodes a restriction factor preventing entry of a species-specific exogenous retrovirus, it can have an evolutionary history depicted by line X.&lt;/div&gt;
       &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
         &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
@@ -5639,414 +6155,15 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q29/&#34;&gt;← Previous: Q29&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q31/&#34;&gt;Next: Q31 →&lt;/a&gt;
-&lt;/div&gt;
-&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 1&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=46&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Q31 — Retina Cell Layers — Direction of Light and Cell Types</title>
-      <link>http://localhost:1313/papers/ibo/2022/theoretical-1/q31/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/papers/ibo/2022/theoretical-1/q31/</guid>
-      <description>
-        
-        
-        &lt;div class=&#34;topic-meta&#34;&gt;
-  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 1&lt;/span&gt;
-  
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/2-animal-anatomy/human-sensory-organs/&#34;&gt;Human Sensory Organs&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;The diagram below shows cell layers in the healthy human retina. By carefully observing the diagram, determine whether the following statements are true or false.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q31-figure-1.png&#34; alt=&#34;Diagram of retina cell layers 1-5, with an arrow showing the direction of incoming light.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-  &lt;/span&gt;
-&lt;em&gt;Retina cell layers, numbered 1–5 in the direction light travels through the tissue.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Using the information and figure, determine whether the following statements are true or false:&lt;/p&gt;
-&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-1-q31&#34;&gt;
-  &lt;div class=&#34;tf-quiz&#34;&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;The retina is inverted — light passes through the ganglion cells (type 1, nearest the incoming light) first and reaches the photoreceptors (type 5) last, not the other way around.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The first layer of cells through which light passes belongs to type 1. These cells are the photoreceptors.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Rods have a lower threshold (are more light-sensitive) than cones. This is the official key&amp;#39;s call; the exact cell identified as &amp;#39;type 4&amp;#39; in the diagram was hard to pin down with full certainty from the scanned figure, so treat this as the general rods-more-sensitive-than-cones principle rather than a fully verified diagram walkthrough.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Cells of type 4 have the lowest threshold of light sensitivity.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Bipolar cells (type 2) come in two flavours — ON-bipolar cells depolarize in light, but OFF-bipolar cells hyperpolarize in light — so &amp;#39;always depolarized&amp;#39; overclaims for the whole population of type-2 cells.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Cells of type 2 are always depolarized if the light is present.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;Bipolar cell outputs are classically chemical (glutamatergic ribbon) synapses, not electrical gap junctions.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Cells of type 2 and 3 communicate via electrical synapses.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
-    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
-(function () {
-  var wrap = document.currentScript.previousElementSibling;
-  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
-  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
-
-  rows.forEach(function (row) {
-    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
-    btns.forEach(function (btn) {
-      btn.addEventListener(&#39;click&#39;, function () {
-        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-        btn.classList.add(&#39;selected&#39;);
-        row.dataset.selected = btn.dataset.value;
-        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-      });
-    });
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
-    var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
-      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
-      if (!sel) {
-        allAnswered = false;
-        row.classList.add(&#39;unanswered&#39;);
-        return;
-      }
-      row.classList.remove(&#39;unanswered&#39;);
-      var isCorrect = sel === row.dataset.answer;
-      row.classList.toggle(&#39;correct&#39;, isCorrect);
-      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
-      if (isCorrect) correct++;
-      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
-    });
-    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
-    scoreEl.textContent = allAnswered
-      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
-      : &#39;Answer every statement first.&#39;;
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
-    rows.forEach(function (row) {
-      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-      delete row.dataset.selected;
-      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-    });
-    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
-  });
-})();
-&lt;/script&gt;
-
-&lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q30/&#34;&gt;← Previous: Q30&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q32/&#34;&gt;Next: Q32 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q28/&#34;&gt;← Previous: Q28&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q30/&#34;&gt;Next: Q30 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
-&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 1&lt;/strong&gt;, licensed under &lt;a
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=47&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Q32 — Shiverer Mutation — Optic Nerve Myelin</title>
-      <link>http://localhost:1313/papers/ibo/2022/theoretical-1/q32/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/papers/ibo/2022/theoretical-1/q32/</guid>
-      <description>
-        
-        
-        &lt;div class=&#34;topic-meta&#34;&gt;
-  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 1&lt;/span&gt;
-  
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/nervous-system-physiology/&#34;&gt;Nervous System Physiology&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;The shiverer mutation is known to affect the Central Nervous System (CNS), causing tremors and early death in mice. To investigate its effects, the optic nerve — which, unlike all other nerves, is histologically equivalent to the CNS — was cut transverse and stained for lipids (A – wild type, B – mutant).&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q32-figure-1.png&#34; alt=&#34;Cross-sections of wild-type (A) and shiverer-mutant (B) optic nerve, stained for lipids.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-  &lt;/span&gt;
-&lt;em&gt;Transverse optic nerve cross-sections stained for lipids: A — wild type, B — shiverer mutant.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Using the information and image, determine whether the following statements are true or false:&lt;/p&gt;
-&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-1-q32&#34;&gt;
-  &lt;div class=&#34;tf-quiz&#34;&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;The optic nerve is stated to be histologically equivalent to the CNS — CNS myelin is made by oligodendrocytes, not Schwann cells (which myelinate the peripheral nervous system only).&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; Picture A contains multiple Schwann cells.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;The shiverer mutation affects myelin basic protein production (an oligodendrocyte/myelin gene), not the neuronal ion channels themselves — any channel distribution changes would be a downstream consequence of demyelination, not a direct effect.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; Ion channels of neurons in Picture B were directly affected by the mutation.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;Shiverer mice have a myelin basic protein defect that severely impairs oligodendrocytes&amp;#39; ability to produce compact CNS myelin, consistent with the sparse lipid staining expected in the mutant (Picture B).&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; The shiverer mutation severely compromises oligodendrocytes.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;DAPI stains DNA, so it would reveal any cell nucleus present at that position — the asterisk marks a structure whose identity as a nucleus (or not) DAPI staining would resolve directly.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; In Picture A we could see the nucleus in place of the asterisk, if we stained the sample with DAPI.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
-    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
-(function () {
-  var wrap = document.currentScript.previousElementSibling;
-  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
-  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
-
-  rows.forEach(function (row) {
-    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
-    btns.forEach(function (btn) {
-      btn.addEventListener(&#39;click&#39;, function () {
-        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-        btn.classList.add(&#39;selected&#39;);
-        row.dataset.selected = btn.dataset.value;
-        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-      });
-    });
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
-    var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
-      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
-      if (!sel) {
-        allAnswered = false;
-        row.classList.add(&#39;unanswered&#39;);
-        return;
-      }
-      row.classList.remove(&#39;unanswered&#39;);
-      var isCorrect = sel === row.dataset.answer;
-      row.classList.toggle(&#39;correct&#39;, isCorrect);
-      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
-      if (isCorrect) correct++;
-      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
-    });
-    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
-    scoreEl.textContent = allAnswered
-      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
-      : &#39;Answer every statement first.&#39;;
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
-    rows.forEach(function (row) {
-      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-      delete row.dataset.selected;
-      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-    });
-    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
-  });
-})();
-&lt;/script&gt;
-
-&lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q31/&#34;&gt;← Previous: Q31&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q33/&#34;&gt;Next: Q33 →&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 1&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=48&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Q33 — Dormouse Litters — Growth Rate and Energy Intake</title>
-      <link>http://localhost:1313/papers/ibo/2022/theoretical-1/q33/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/papers/ibo/2022/theoretical-1/q33/</guid>
-      <description>
-        
-        
-        &lt;div class=&#34;topic-meta&#34;&gt;
-  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 1&lt;/span&gt;
-  
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/locomotion-energetics/&#34;&gt;Locomotion &amp; Energetics&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;The active period of the dormouse &lt;em&gt;Eliomys quercinus&lt;/em&gt; is 6–7 months, during which the animals give birth to two litters. The gestation period is 1 month and 1 month is spent feeding the offspring, so first-litter offspring are two months older than second-litter offspring. Scientists studied the effect of birth date on growth rate and activity, dividing pups into unlimited-food (AL, ad libitum) and intermittently-fasted (IF, food withheld 24h twice weekly) subgroups. Growth was measured by body length, activity by metabolic rate (energy consumption, MJ).&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q33-figure-1.png&#34; alt=&#34;Two graphs: body length and energy consumption vs. time, for early-litter (EB) and late-litter (LB) dormouse pups under ad libitum (AL) and intermittently fasted (IF) conditions.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-  &lt;/span&gt;
-&lt;em&gt;EB (early-litter) and LB (late-litter) pups, under AL (ad libitum, unlimited food) and IF (intermittently fasted) conditions. Left: body length vs. time. Right: energy consumption vs. time.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Using the information and graphs, determine whether the following statements are true or false:&lt;/p&gt;
-&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-1-q33&#34;&gt;
-  &lt;div class=&#34;tf-quiz&#34;&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;The body-length graph shows late-litter (LB) pups catching up to early-litter (EB) pups&amp;#39; length within a few weeks — their growth rates aren&amp;#39;t significantly lower, just starting from a smaller size.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; Late-litter dormice were more susceptible to malnutrition and had significantly lower growth rates than early-born ones.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;The energy-intake graph shows the opposite pattern: late-litter (red) pups spike sharply early (peaking around week 3–4) then decline, while early-litter (blue) pups stay low initially and only ramp up later — the statement has the two groups&amp;#39; patterns backwards.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; The late-litter pups gradually increased their food intake, while the first-litter ones immediately began to eat a lot, stopping eating only before overwintering.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;The body-length graph shows late-litter pups starting shorter at week 0 but converging with early-litter pups&amp;#39; length by around week 3–4 — a relatively fast catch-up.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Late-litter offspring were born smaller but grew faster, reaching the level of early-litter ones in a relatively short period of time.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;The energy-intake curves for fasted (IF) vs. fully-fed (AL) pups don&amp;#39;t show one consistently below the other throughout — the relationship varies by week and litter group, so &amp;#39;fasting pups were lower&amp;#39; overstates a pattern that isn&amp;#39;t consistent across the whole graph.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; The metabolism of fasting pups was lower than that of fully fed pups, but as overwintering approached, it gradually decreased in all pups.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
-    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
-(function () {
-  var wrap = document.currentScript.previousElementSibling;
-  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
-  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
-
-  rows.forEach(function (row) {
-    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
-    btns.forEach(function (btn) {
-      btn.addEventListener(&#39;click&#39;, function () {
-        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-        btn.classList.add(&#39;selected&#39;);
-        row.dataset.selected = btn.dataset.value;
-        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-      });
-    });
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
-    var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
-      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
-      if (!sel) {
-        allAnswered = false;
-        row.classList.add(&#39;unanswered&#39;);
-        return;
-      }
-      row.classList.remove(&#39;unanswered&#39;);
-      var isCorrect = sel === row.dataset.answer;
-      row.classList.toggle(&#39;correct&#39;, isCorrect);
-      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
-      if (isCorrect) correct++;
-      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
-    });
-    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
-    scoreEl.textContent = allAnswered
-      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
-      : &#39;Answer every statement first.&#39;;
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
-    rows.forEach(function (row) {
-      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-      delete row.dataset.selected;
-      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-    });
-    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
-  });
-})();
-&lt;/script&gt;
-
-&lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q32/&#34;&gt;← Previous: Q32&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1/q34/&#34;&gt;Next: Q34 →&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 1&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-exam.pdf#page=49&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-1-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=45&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
