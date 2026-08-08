@@ -102,44 +102,52 @@ theme = "hextra"
       image = "/biorchive-mark.png"
 
   [[menu.main]]
+    name = "BiOClash"
+    url = "/bioclash/"
+    weight = 3
+
+  [[menu.main]]
     name = "Leaderboard"
     url = "/papers/leaderboard/"
-    weight = 3
+    weight = 4
+    [menu.main.params]
+      image = "/hof.png"
+      iconOnly = true
 
   [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 4
+    weight = 5
 
   [[menu.main]]
     name = "Articles"
     url = "/articles/"
-    weight = 5
+    weight = 6
 
   [[menu.main]]
     name = "Search"
-    weight = 6
+    weight = 7
     [menu.main.params]
       type = "search"
 
   [[menu.main]]
     name = "Discord"
     url = "https://discord.gg/WpC8y6dbv"
-    weight = 7
+    weight = 8
     [menu.main.params]
       icon = "discord"
 
   [[menu.main]]
     name = "GitHub"
     url = "https://github.com/nk-008120/boguide"
-    weight = 8
+    weight = 9
     [menu.main.params]
       icon = "github"
 
   [[menu.main]]
     name = "Instagram"
     url = "https://www.instagram.com/bioguideofficial/"
-    weight = 9
+    weight = 10
     [menu.main.params]
       icon = "instagram"
 [params]

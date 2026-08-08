@@ -1,11 +1,14 @@
 {{- /* Project override of themes/hextra/layouts/_partials/navbar-link.html — adds support for a
      custom `image` menu param so a menu item (e.g. "Papers" / BiOrchive) can show a raster logo
-     mark instead of a theme icon-set entry. Everything else is unchanged from the theme original. */ -}}
+     mark instead of a theme icon-set entry, and an `iconOnly` param (e.g. Leaderboard / hof.png)
+     that drops the visible text label entirely, keeping it only as the title/aria-label for
+     hover tooltips and screen readers. Everything else is unchanged from the theme original. */ -}}
 {{- $currentPage := .currentPage -}}
 {{- $link := .link -}}
 {{- $item := .item -}}
 {{- $icon := .icon -}}
 {{- $image := $item.Params.image -}}
+{{- $iconOnly := $item.Params.iconOnly -}}
 {{- $external := .external -}}
 
 {{- $active := or ($currentPage.HasMenuCurrent "main" $item) ($currentPage.IsMenuCurrent "main" $item) -}}
@@ -79,7 +82,8 @@
 {{- else -}}
 {{- /* Regular menu item without children */ -}}
 <a
-  title="{{ or (T .Identifier) .Name | safeHTML }}"
+  title="{{ or (T $item.Identifier) $item.Name | safeHTML }}"
+  {{ if $iconOnly }}aria-label="{{ or (T $item.Identifier) $item.Name | safeHTML }}"{{ end }}
   href="{{ $link }}"
   {{ if $external }}target="_blank" rel="noreferrer"{{ end }}
   class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1.5 {{ $activeClass }}"
@@ -93,8 +97,10 @@
     {{- partial "utils/icon" (dict "name" $icon "attributes" `height="1em" class="hx:inline-block"`) -}}
   </span>
   {{- end -}}
+  {{- if not $iconOnly -}}
   <span class="hx:text-center">
     {{- or (T $item.Identifier) $item.Name | safeHTML -}}
   </span>
+  {{- end -}}
 </a>
 {{- end -}}

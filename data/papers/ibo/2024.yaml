@@ -1270,3 +1270,767 @@ rounds:
             text: "Blood entering the vasa recta in region Q has higher osmolarity than blood leaving the vasa recta in region Q."
             answer: true
             explanation: "TRUE. Blood ENTERS the vasa recta at the cortex (region P, osmolarity ≈290 mOsm/kg) and flows deep into the medulla, picking up NaCl and urea from the hypertonic interstitium (osmolarity increases as blood descends). At region Q (deep medulla), blood has equilibrated with the 2000 mOsm/kg interstitium and has high osmolarity. Blood then flows back up, losing solutes back to the interstitium (returns to ≈290 mOsm/kg at cortex). Therefore, blood ENTERING at Q (from the descending vasa recta, high osmolarity after descending through medulla) has HIGHER osmolarity than blood LEAVING at Q (ascending vasa recta, which has already lost solutes on the way back up). Blood entering Q is more concentrated than blood leaving Q."
+
+  - id: theoretical-b
+    name: "Theoretical B"
+    durationMinutes: 195
+    papers:
+      - category: "Theoretical B"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf"
+        linkLabel: "Exam + Official Answer Key"
+    problems:
+      - id: q1
+        number: "Q1"
+        name: "Dichotomous Key Branching & Taxonomic Resolution"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=4"
+        subjects:
+          - name: "Taxonomic Keys & Identification"
+            link: "/resources/4-biosystematics/taxonomic-keys-identification/"
+        statements:
+          - letter: "A"
+            text: "Determining the species of an organism with more complex morphological structures than that of organism X using the provided key will take more than 9 steps."
+            answer: false
+            explanation: "FALSE. The tree is described as complete, with every branch reaching the final (10th) level and no branch terminating early. So no matter how many distinguishing characters an organism has, identifying it can never take more than 9 decision steps to reach the 10th, final level — a more \"complex\" organism doesn't need extra steps in a complete tree like this one."
+          - letter: "B"
+            text: "The maximal number of species that could be identified with the key is 512."
+            answer: true
+            explanation: "TRUE. A 10-level complete binary dichotomous key has 2^9 = 512 terminal branches at its final level (the first level is the root split, so there are 9 further binary splits down to the leaves). Summing the geometric series confirms this: 2^0+2^1+...+2^8 = 512, matching the maximum number of distinct end-classifications the key can produce."
+          - letter: "C"
+            text: "An identification step at level 3 (counting from the top) has four times more possible final taxonomic outcomes than an identification step at level 5."
+            answer: true
+            explanation: "TRUE. At level 3 there are 2^7 = 128 possible different final (level-10) outcomes reachable from that point, and at level 5 there are 2^5 = 32. 128/32 = 4, so a decision at level 3 really does sit upstream of four times as many possible final identifications as one at level 5."
+          - letter: "D"
+            text: "Consider three taxa A, B, and C. If A and B share a more recent common ancestor than A and C, then the paths along the dichotomous key leading to A and B will certainly diverge at an earlier step than the paths leading to A and C."
+            answer: false
+            explanation: "FALSE. A dichotomous key is built from morphological true/false characters, not from actual ancestry — it has no obligation to track the real phylogeny. Two taxa can share a very recent common ancestor yet differ early in the key (if they happen to differ in an early character), while two more distantly related taxa can share several early character states by convergence or retained ancestral traits. Nothing about the key's construction guarantees shared-ancestry recency lines up with where paths diverge."
+
+      - id: q2
+        number: "Q2"
+        name: "Red Deer mtDNA Phylogeny & Bootstrap Support"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=5"
+        subjects:
+          - name: "Molecular Systematics"
+            link: "/resources/4-biosystematics/molecular-systematics/"
+        statements:
+          - letter: "A"
+            text: "In 11 out of 100 bootstrap iterations Dama dama was not a sister group to Cervus spp."
+            answer: true
+            explanation: "TRUE. The branch grouping Dama dama with the Cervus samples carries a bootstrap value of 89, meaning that grouping was recovered in 89 of the 100 resampled trees. That leaves 100−89 = 11 iterations in which Dama dama was NOT recovered as sister to Cervus, exactly matching the statement."
+          - letter: "B"
+            text: "Using the DNA of histone genes instead of mitochondrial DNA for construction of this phylogenetic tree would allow to better differentiate between deer subspecies."
+            answer: false
+            explanation: "FALSE. Histone genes are among the most strongly conserved sequences in the genome (histone proteins are under intense purifying selection because they package DNA), so they accumulate far fewer substitutions than mitochondrial DNA. For resolving fine-scale relationships between closely related subspecies, a slower-evolving marker like histone DNA would give less resolution than the already-used, faster-evolving mitochondrial cytochrome b, not better."
+          - letter: "C"
+            text: "Sample 163 is part of the most weakly supported branch in the tree."
+            answer: false
+            explanation: "FALSE. The weakest bootstrap value anywhere on the tree is 50. Sample 163 instead sits on a branch supported by a bootstrap value of 69 (per the figure), which is noticeably better supported than the tree's actual weakest branch — so 163 is not part of the most weakly supported group."
+          - letter: "D"
+            text: "A bootstrap value of 50 indicates the existence of only one alternative topology."
+            answer: false
+            explanation: "FALSE. A bootstrap value of 50 just means that branch was recovered in half of the 100 resampled trees — it says nothing about how many distinct alternative arrangements make up the other half. Those other 50 iterations could easily be split across several different alternative topologies rather than converging on one single competing arrangement."
+
+      - id: q3
+        number: "Q3"
+        name: "BRCA1/53BP1 and DNA Double-Strand Break Repair Pathway Choice"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=7"
+        subjects:
+          - name: "DNA Repair & Recombination"
+            link: "/resources/1-cell-molecular/dna-repair-recombination/"
+        statements:
+          - letter: "A"
+            text: "The DSB repair pathway choice correlates with cell cycle status."
+            answer: true
+            explanation: "TRUE. Figure 2 shows BRCA1 protein levels rising and falling in step with the cell-cycle-stage distribution over the 20-hour time course — BRCA1 peaks when the G2/M fraction peaks. Since BRCA1 activation determines whether HR or NHEJ is used, and BRCA1 abundance itself tracks cell-cycle stage, pathway choice is tied to where the cell is in the cycle."
+          - letter: "B"
+            text: "BRCA1-deficient cancer cells exhibit an increased reliance on the NHEJ pathway for DNA repair."
+            answer: true
+            explanation: "TRUE. BRCA1 is required to activate the HR pathway (it inhibits 53BP1, which otherwise pushes cells toward NHEJ). Without BRCA1, HR can't be activated, so cells depend on 53BP1-driven NHEJ instead — since either pathway can be enough for survival, losing HR capacity means a greater reliance on NHEJ to repair breaks and survive."
+          - letter: "C"
+            text: "In normal cells, the HR pathway is more active in the G1 phase compared to the G2 phase."
+            answer: false
+            explanation: "FALSE. Figure 2 shows BRCA1 protein (which activates HR) is low early in the cycle and rises to its peak around the G2/M-rich period, not during G1. Since HR activity tracks BRCA1 abundance, HR is actually more active in G2 than G1 — the opposite of what the statement claims. This also fits the biology: HR needs a sister chromatid as a repair template, which is only available after S phase, in G2."
+          - letter: "D"
+            text: "Inhibitors of the transition from the G1 to the S phase will be more detrimental to 53BP1-deficient cells compared to BRCA1-deficient cells."
+            answer: true
+            explanation: "TRUE. 53BP1-deficient cells lose NHEJ and must rely on HR, which needs cells to actually reach S/G2 (for a sister chromatid template) to repair breaks — blocking the G1→S transition traps these cells in G1 with no functional repair pathway available at all. BRCA1-deficient cells, in contrast, still have NHEJ available throughout the cycle including G1, so a G1/S block is comparatively less damaging to them."
+
+      - id: q4
+        number: "Q4"
+        name: "Calcium Channel Signaling in Pancreatic Beta Cells"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=9"
+        subjects:
+          - name: "Cell Signaling & Communication"
+            link: "/resources/1-cell-molecular/cell-signaling-communication/"
+        statements:
+          - letter: "A"
+            text: "In figure 1, cells depolarize after addition of 30mM K+."
+            answer: true
+            explanation: "TRUE. Raising extracellular K+ to 30 mM collapses the normal outward K+ gradient across the plasma membrane, which depolarizes the cell — and Figure 1 shows a sharp calcium spike right after the 30 mM K+ addition (point D), consistent with depolarization opening voltage-gated calcium channels."
+          - letter: "B"
+            text: "From the experiment data provided we can conclude that the Channel A is ligand-gated."
+            answer: false
+            explanation: "FALSE. Channel A opens in response to the depolarization caused by 30 mM K+, which is the signature of a voltage-gated channel, not a ligand-gated one — nothing in the given data shows Channel A responding to a chemical ligand binding rather than to a change in membrane potential."
+          - letter: "C"
+            text: "If we performed a new experiment and replaced 30 mM K with high glucose in control conditions, the calcium concentration would not increase after high glucose stimulation."
+            answer: false
+            explanation: "FALSE. The text states that in these cells, calcium release triggers insulin release in response to high glucose — meaning high glucose is itself a physiological trigger for a calcium rise (via the normal beta-cell glucose-sensing/insulin-secretion pathway), so calcium concentration would be expected to increase after high-glucose stimulation, not stay flat."
+          - letter: "D"
+            text: "If the same experiment as in Figure 1 was conducted in 0mM Ca2+ media, the response of the control cells would show a similar response to the inhibitor Y graph in Figure 1."
+            answer: true
+            explanation: "TRUE. Inhibitor Y blocks Channel A, the initial calcium-influx channel that starts the whole signaling cascade — its trace in Figure 1 shows almost no response. In 0 mM extracellular Ca2+, there's no calcium available to flow in through Channel A in the first place, so the control cells would be expected to show the same essentially flat response as the inhibitor-Y condition, since both scenarios remove the initial Ca2+ influx that the rest of the cascade depends on."
+
+      - id: q5
+        number: "Q5"
+        name: "Ketogenic Diet Metabolism and Catecholamine Seizure Latency"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=10"
+        subjects:
+          - name: "Bioenergetics & Central Metabolism Overview"
+            link: "/resources/1-cell-molecular/bioenergetics-central-metabolism/"
+        statements:
+          - letter: "A"
+            text: "A ketogenic diet facilitates the conversion of alpha-ketoglutarate to glutamate."
+            answer: true
+            explanation: "TRUE. Ketolysis feeds acetyl-CoA into the TCA cycle via citrate (reaction 2), and the text states that increasing the number of reactions in a pathway decreases its rate — so pushing more flux through the longer, ketolysis-fed route increases the pool of TCA intermediates such as oxaloacetate and alpha-ketoglutarate available for transamination into glutamate, favoring that conversion."
+          - letter: "B"
+            text: "A mutation reducing the Km of the enzyme that catalyzes reaction 2 in Figure 1 decreases the value of the seizure latency (in milliseconds) in (Dbh+/-) mice with a ketogenic diet."
+            answer: false
+            explanation: "FALSE. A lower Km means the citrate synthase-type enzyme at reaction 2 works efficiently at lower substrate concentrations, i.e. it becomes MORE active, which would pull carbon through the TCA cycle more effectively and, if anything, support (rather than undercut) the ketogenic diet's seizure-suppressing metabolic shift — this points toward an increased, not decreased, seizure latency, so the statement's direction is wrong."
+          - letter: "C"
+            text: "L-DOPA can be used as both an anti-convulsant and a treatment for Parkinson's disease."
+            answer: true
+            explanation: "TRUE. L-DOPA is the standard dopamine-replacement therapy for Parkinson's disease, and the passage frames catecholamine metabolism downstream of L-DOPA as relevant to the seizure-latency effects being studied — L-DOPA is a precursor that feeds into both the anti-convulsant-relevant and the Parkinson's-relevant catecholamine pathways, supporting both uses."
+          - letter: "D"
+            text: "The study is certainly conclusive that noradrenaline enhances GABA's anti-seizure functions."
+            answer: false
+            explanation: "FALSE. The Dbh+/- vs Dbh-/- comparison (Figure 2B) shows a ketogenic-diet benefit only in mice that can still make noradrenaline (Dbh+/-), which is suggestive, but the experiment never isolates noradrenaline's direct effect on GABA signaling specifically — adrenaline, dopamine, and other diet-driven changes are all still confounded in this design, so \"certainly conclusive\" overstates what a correlational, multi-variable in-vivo study like this can actually establish."
+
+      - id: q6
+        number: "Q6"
+        name: "ProQC — Synthetic Toehold-Switch Quality Control of Translation"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=12"
+        subjects:
+          - name: "Recombinant DNA & Biotechnology Techniques"
+            link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
+        statements:
+          - letter: "A"
+            text: "The ProQC system allows translation only when the cis-trigger binds to the toehold switch."
+            answer: true
+            explanation: "TRUE. The toehold switch's hairpin blocks the RBS by default, silencing translation; only when the cis-trigger (present at the 3' end of a full-length mRNA) base-pairs with the toehold switch does the hairpin open and expose the RBS, turning translation ON — matching the \"Turn ON\" arrow shown looping from the cis-trigger back to the switch in Figure 1."
+          - letter: "B"
+            text: "The ProQC system increases the yield of functional proteins and reduces the waste of cellular resources."
+            answer: true
+            explanation: "TRUE. Because the RBS only opens once the cis-trigger at the far (3') end of the message is reached, ribosomes are prevented from translating truncated or prematurely terminated transcripts that never reached that point — this avoids wasting ribosomes, amino acids, and energy on defective protein products, increasing the proportion of full-length, functional protein made."
+          - letter: "C"
+            text: "This system is not necessary in eukaryotic cells."
+            answer: true
+            explanation: "TRUE. ProQC's whole logic depends on transcription and translation happening in the same physical/temporal window so that only a fully transcribed (cis-trigger-containing) mRNA can turn translation on — in eukaryotes, transcription (nucleus) and translation (cytoplasm) are already spatially and temporally separated, and mRNA processing (5' cap, splicing, polyadenylation) already provides quality control that exports only mature, complete transcripts. That built-in separation makes an add-on system like ProQC unnecessary in eukaryotic cells."
+          - letter: "D"
+            text: "In the ProQC system, the RBS in the toehold switch can be unblocked by trigger RNA transcribed separately from the ProQC system."
+            answer: true
+            explanation: "TRUE. What actually opens the hairpin is base-pairing complementarity with the toehold switch sequence — the switch has no way to distinguish whether that complementary RNA came from the cis-trigger built into its own cassette or from some other RNA transcribed elsewhere in the cell with a matching sequence. Any RNA complementary to the toehold region, from any source, unblocks the RBS."
+
+      - id: q7
+        number: "Q7"
+        name: "DNA Fiber Assay and Replication Fork Progression"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=13"
+        subjects:
+          - name: "DNA Structure & Replication"
+            link: "/resources/1-cell-molecular/dna-structure-replication/"
+        statements:
+          - letter: "A"
+            text: "Panel A can represent replication progression from a single replication fork, while panel B shows replication progression from two forks."
+            answer: true
+            explanation: "TRUE. Panel A shows one continuous CldU(red)-then-IdU(blue) track, exactly the signature of a single fork moving in one direction through the two labeling windows. Panel B shows IdU(blue)-CldU(red)-IdU(blue), i.e. red flanked symmetrically by blue on both sides — the signature of two forks moving outward in opposite directions from one origin that fired between the two labeling pulses."
+          - letter: "B"
+            text: "Both panels C and E demonstrate replication termination."
+            answer: true
+            explanation: "TRUE. Panel C shows two converging forks' CldU/IdU tracks meeting and merging (a classic termination signature where oncoming forks collide). Panel E shows a CldU-only (red) segment with no IdU labeling afterward, indicating the fork stopped incorporating label during the second (IdU) pulse — consistent with the fork having terminated (or collapsed) before that window."
+          - letter: "C"
+            text: "In panel B, CldU is incorporated into either a leading or lagging strand of DNA but not into both."
+            answer: false
+            explanation: "FALSE. Panel B represents bidirectional replication from a single origin fired between the two labeling pulses — one fork moves left, the other right. On one side of the origin the strand being labeled with CldU is the leading strand, and on the other side (opposite fork, opposite direction) the equivalent strand is the lagging strand. So CldU actually ends up incorporated into both a leading strand (on one fork) and a lagging strand (on the other fork), not just one or the other."
+          - letter: "D"
+            text: "The DNA belongs to a bacterial species."
+            answer: false
+            explanation: "FALSE. Panel F clearly shows two separate CldU-labeled segments on the same fiber, meaning at least two separate origins fired on this one DNA molecule. Bacterial chromosomes replicate from a single fixed origin (oriC), so a fiber with multiple independent origins firing on it must be eukaryotic DNA, not bacterial."
+
+      - id: q8
+        number: "Q8"
+        name: "Identifying DNA-Metabolism Enzymes from a Gel Assay"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=14"
+        subjects:
+          - name: "Biomolecular Analytical Techniques"
+            link: "/resources/1-cell-molecular/biomolecular-analytical-techniques/"
+        statements:
+          - letter: "A"
+            text: "Enzyme A is an endonuclease, generating blunt-ended breaks."
+            answer: false
+            explanation: "FALSE. Reaction 2 (enzyme A alone) produces two distinct bands on the gel rather than one, which shows the two strands were cut at different, staggered positions rather than at the same point — that pattern is the signature of a 5'-overhang cut, not a blunt-ended break, even though the internal cutting (rather than end-trimming) does confirm enzyme A acts as an endonuclease."
+          - letter: "B"
+            text: "Enzyme B is an exonuclease with a 3'-5' polarity."
+            answer: true
+            explanation: "TRUE. Reaction 3 (enzyme B alone) shows only the green (blue-fluorescent, 5'-labeled upper strand) band getting progressively shorter (smeared), while the red (3'-labeled lower strand) is untouched — since the labeled 5' end is chemically inert and stays intact while the strand shrinks from its 3' end inward, enzyme B must be chewing the strand back from its free 3' end, i.e. acting as a 3'→5' exonuclease."
+          - letter: "C"
+            text: "Enzyme C is a DNA polymerase."
+            answer: true
+            explanation: "TRUE. In reactions 4 and 5, after enzymes A or B are inactivated, adding enzyme C extends the shortened green strand back up to the full 100 bp double-stranded length seen with the red strand — lengthening a DNA strand by adding nucleotides onto a free 3' end is exactly what a DNA polymerase does."
+          - letter: "D"
+            text: "If an additional reaction were performed with enzyme C alone, the result would be the same as the result of reaction 4."
+            answer: false
+            explanation: "FALSE. Reaction 4's substrate going into the enzyme C step was already the 5'-overhang product left over from enzyme A's cut. Enzyme C alone, applied directly to the original untouched double-stranded substrate (reaction 1), would have no shortened 3' end available to extend, so it would not reproduce the same extended product seen in reaction 4 — the prior digestion step matters."
+
+      - id: q9
+        number: "Q9"
+        name: "Compound X, Polyploidy, and Checkpoint Kinases A/B"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=16"
+        subjects:
+          - name: "Cell Cycle, Mitosis & Meiosis"
+            link: "/resources/1-cell-molecular/cell-cycle-mitosis-meiosis/"
+        statements:
+          - letter: "A"
+            text: "Based on the results, under normal conditions (wild-type, control), cells are mainly in the G2 phase of the cell cycle."
+            answer: false
+            explanation: "FALSE. In the wild-type control histogram, the tallest peak sits at the 2n DNA-content position, which corresponds to cells in G1 (before DNA replication), not G2 (which would show a peak at 4n). The majority of untreated cells are in G1, not G2."
+          - letter: "B"
+            text: "Compound X induces polyploidy."
+            answer: true
+            explanation: "TRUE. In wild-type cells treated with Compound X, a new peak appears out at 8n DNA content — a whole-number multiple of the normal 2n diploid content. Accumulating DNA content beyond the normal 4n (G2/M) ceiling like this is the definition of induced polyploidy."
+          - letter: "C"
+            text: "The effect caused by compound X is independent of protein kinases A and B."
+            answer: false
+            explanation: "FALSE. In cells deficient for checkpoint kinases A and B, Compound X no longer produces the same 8n polyploid peak seen in wild-type cells — the effect is blunted/altered without functional kinases A and B, showing that Compound X's polyploidy-inducing effect actually depends on these kinases, not that it happens independently of them."
+          - letter: "D"
+            text: "Upon treatment with Compound X, protein kinases A and B prevent several rounds of DNA replication within one cell division."
+            answer: false
+            explanation: "FALSE. It's the opposite: wild-type cells (which have functional kinases A and B) are the ones that DO accumulate 8n DNA content under Compound X, meaning multiple replication rounds without division are happening WITH kinases A and B present and active — the kinases are needed for that response to occur, not for blocking it. Kinase-deficient cells show a comparatively more normal profile, which is the pattern of kinases A/B enabling, not preventing, the extra replication rounds."
+
+      - id: q10
+        number: "Q10"
+        name: "Heterodimer Formation, Ligand Signaling, and Stem Cell Differentiation"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=17"
+        subjects:
+          - name: "Cell Signaling & Communication"
+            link: "/resources/1-cell-molecular/cell-signaling-communication/"
+          - name: "Gene Regulation: Eukaryotic & Epigenetics"
+            link: "/resources/1-cell-molecular/gene-regulation-eukaryotic-epigenetics/"
+        statements:
+          - letter: "A"
+            text: "For quick cellular response, the regulation mechanism of protein B's activity is more energy-efficient than that of protein A's."
+            answer: true
+            explanation: "TRUE. Protein A is controlled at the transcriptional level (making new mRNA and protein from scratch), while protein B is controlled post-translationally by simply phosphorylating/dephosphorylating an existing protein pool — transcription plus translation costs vastly more energy and time than flipping a phosphate group on a protein that already exists, making protein B's regulation the faster, cheaper route to a quick response."
+          - letter: "B"
+            text: "Ligand L reduces the affinity of transcription factor X to DNA."
+            answer: false
+            explanation: "FALSE. Fraction II (identified by the presence of Histone H3, a chromatin marker, and the absence of Actin, a cytoplasmic marker) is the DNA-bound fraction, and transcription factor X's abundance in that DNA-bound fraction INCREASES when ligand L is added (+ lane). More transcription factor X ending up bound to DNA after ligand L means ligand L increases, not reduces, its affinity for DNA."
+          - letter: "C"
+            text: "Phosphorylation of protein B prevents the interaction of proteins A and B."
+            answer: true
+            explanation: "TRUE. In the kinase-deficient condition (less phosphorylation of protein B possible), the differentiation marker goes UP relative to control — since differentiation requires the A-B heterodimer to form, more differentiation with less phosphorylation implies phosphorylation normally blocks heterodimer formation between A and B, and removing it (kinase-deficient) frees B to pair with A more readily."
+          - letter: "D"
+            text: "Mutating the serine-121 residue in protein B to aspartate likely causes the same effect on the formation of heterodimers as the activity of the kinase."
+            answer: true
+            explanation: "TRUE. Aspartate's carboxylate side chain carries a negative charge similar to a phosphate group, so a serine→aspartate substitution is a classic phosphomimetic mutation that mimics the permanently-phosphorylated state — of the two other amino acids shown, aspartate (not leucine, which is uncharged/hydrophobic) is structurally suited to mimic phosphoserine. Since kinase activity phosphorylates serine-121 and phosphorylation blocks the A-B interaction (per statement C), a phosphomimetic S121D mutation should reproduce that same kinase-driven, dimerization-blocking effect."
+
+      - id: q11
+        number: "Q11"
+        name: "Proteasome vs. Lysosome Degradation and Protein Half-Life"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=19"
+        subjects:
+          - name: "Endomembrane System & Protein Trafficking"
+            link: "/resources/1-cell-molecular/endomembrane-system-protein-trafficking/"
+        statements:
+          - letter: "A"
+            text: "Cycloheximide treatment alone provides direct information on the rate of protein synthesis."
+            answer: false
+            explanation: "FALSE. Cycloheximide works by blocking translation elongation, shutting synthesis down entirely — once it's added, any change in protein abundance you observe can only reflect ongoing degradation, since production has been switched off. That makes it a tool for measuring degradation/half-life, not a direct readout of the (now-blocked) synthesis rate."
+          - letter: "B"
+            text: "The half-life of protein B is shorter than the half-life of protein C."
+            answer: false
+            explanation: "FALSE. In Figure 1-a (after cycloheximide, region II), protein C's curve declines more steeply than protein B's over the same time window — B stays relatively higher for longer while C drops faster. A faster decline means a shorter half-life, so it's protein C that has the shorter half-life here, not protein B."
+          - letter: "C"
+            text: "Protein A is more likely to be mitochondrial than proteins B and C."
+            answer: true
+            explanation: "TRUE. Protein A's abundance stays completely flat even after cycloheximide is added, meaning cycloheximide isn't affecting its synthesis at all — but cycloheximide specifically blocks eukaryotic 80S cytosolic ribosomes. The one class of proteins in a human cell made on non-cytosolic (bacterial-type 70S-like) ribosomes are those synthesized inside mitochondria, per the endosymbiotic origin of mitochondrial translation machinery — so protein A's cycloheximide-insensitivity points to it being a mitochondrially-translated protein."
+          - letter: "D"
+            text: "Protein B is more likely to be an extracellular protein than protein C."
+            answer: false
+            explanation: "FALSE. Figure 1-b shows protein B's abundance is rescued by MG132 (a proteasome inhibitor) but not by chloroquine, while protein C is rescued by chloroquine (a lysosome inhibitor) — meaning B is degraded by cytoplasmic proteasomes and C is degraded via the lysosome. Proteasomes act on cytosolic proteins, while lysosomes commonly degrade proteins taken up from outside the cell (e.g. by endocytosis) — so it is protein C, not protein B, that fits the extracellular-origin profile better."
+
+      - id: q12
+        number: "Q12"
+        name: "FRET-Based Protease Activity and Inhibitor Mechanism"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=20"
+        subjects:
+          - name: "Biomolecular Analytical Techniques"
+            link: "/resources/1-cell-molecular/biomolecular-analytical-techniques/"
+        statements:
+          - letter: "A"
+            text: "The probability of FRET decreases if the concentration of both donor and acceptor in the same solution is increased."
+            answer: false
+            explanation: "FALSE. FRET efficiency depends on donor and acceptor being within about 10 nm of each other. Raising the concentration of both CFP (donor) and YFP (acceptor) in the same solution shrinks the average distance between random donor-acceptor pairs, which makes productive energy transfer more, not less, likely — so FRET probability should increase with concentration, not decrease."
+          - letter: "B"
+            text: "Using Brim43 as the acceptor, the most optimal donor is G8."
+            answer: false
+            explanation: "FALSE. Efficient FRET needs the donor's emission spectrum to overlap with the acceptor's excitation spectrum. Table 1 shows G8's emission range (670-710 nm) does not overlap with Brim43's excitation range (510-570 nm) — but Brim43's own emission range (600-660 nm) does overlap with G8's excitation range (590-650 nm). So the workable donor-acceptor pairing here runs the opposite direction (Brim43 as donor, G8 as acceptor), not G8 donating to Brim43."
+          - letter: "C"
+            text: "Protease P3 has the highest activity among tested proteases."
+            answer: true
+            explanation: "TRUE. Cleaving the CFP-YFP fusion separates the two fluorophores and destroys FRET, so a bigger drop in the FRET signal after adding a protease means more cleavage happened, i.e. higher protease activity. Panel B shows the CFP-YFP + P3 trace drops the FRET-indicating peak the most among P1/P2/P3, identifying P3 as the most active protease of the three tested."
+          - letter: "D"
+            text: "Z and Q are competitive and non-competitive inhibitors, respectively."
+            answer: true
+            explanation: "TRUE. In panel C, increasing the CFP-YFP substrate concentration overcomes inhibitor Z's effect (emission ratio rises back up as substrate increases) — the classic signature of a competitive inhibitor being out-competed by more substrate. Inhibitor Q's effect stays essentially flat regardless of substrate concentration, meaning more substrate can't reverse it — the signature of a non-competitive inhibitor acting at a site substrate concentration doesn't influence."
+
+      - id: q13
+        number: "Q13"
+        name: "Shelterin, the T-loop, and Chromosome Bridge Formation"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=23"
+        subjects:
+          - name: "DNA Repair & Recombination"
+            link: "/resources/1-cell-molecular/dna-repair-recombination/"
+          - name: "Cell Cycle, Mitosis & Meiosis"
+            link: "/resources/1-cell-molecular/cell-cycle-mitosis-meiosis/"
+        statements:
+          - letter: "A"
+            text: "The structure shown in Figure 1B also protects telomeres from nucleases resolving meiotic recombination."
+            answer: false
+            explanation: "FALSE. The T-loop structure in Figure 1B exists specifically to hide the telomere's single-stranded 3' overhang from the cell's general double-strand-break repair machinery, preventing chromosome end-to-end fusions. The nucleases that resolve meiotic recombination intermediates (Holliday junctions) act on recombining homologous chromosomes during meiosis, a completely separate process from telomere-end protection — the T-loop's job doesn't extend to that unrelated nuclease activity."
+          - letter: "B"
+            text: "Factor Y is more likely to be involved in DNA break repair than factor X."
+            answer: true
+            explanation: "TRUE. Losing factor X alone causes telomere-fusion chains (chromosome bridges), identifying X as the shelterin subunit that normally hides telomeres from repair machinery. But when both X and Y are absent together, those fusions are reduced again compared to X-alone loss — meaning factor Y is needed for the actual fusion (ligation) event to happen, which points to Y being a component of the DNA break repair machinery itself, more so than factor X (which acts upstream, at the protective/shelterin side)."
+          - letter: "C"
+            text: "The bridged chromosome in Figure 1D has at least two centromeres."
+            answer: true
+            explanation: "TRUE. The chromatin bridge in Figure 1D is being pulled toward two opposite spindle poles simultaneously during anaphase, which requires kinetochore-microtubule attachments on both ends. Since each functional kinetochore sits on its own centromere, being pulled in two directions at once means the bridged chromosome (fused sister/homolog ends) has at least two centromeres providing those two separate attachment points."
+          - letter: "D"
+            text: "The force generated by the kinetochore-associated microtubules physically breaks the bridged chromosome."
+            answer: false
+            explanation: "FALSE. The figure's own timing shows the bridge visibly breaking around the 6-minute mark, well into telophase, by which point spindle-pulling forces have already finished and chromosomes are decondensing at the poles. Since there is no active microtubule-generated pulling force left at that stage, the breakage is better explained by other mechanical/enzymatic causes during telophase, not by ongoing kinetochore-microtubule tension."
+
+      - id: q14
+        number: "Q14"
+        name: "Aral Sea Food-Chain Restoration and Salinity Tolerance"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=24"
+        subjects:
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
+        statements:
+          - letter: "A"
+            text: "A fish species introduced for biota restoration must feed on phytoplankton."
+            answer: false
+            explanation: "FALSE. A healthy restored food web needs organisms filling multiple trophic roles — phytoplankton-grazing zooplankton, fish that eat zooplankton or benthic organisms, and so on — not every introduced fish needs to eat phytoplankton directly. In fact a fish feeding directly on phytoplankton at the top of a restoration effort could over-consume the primary producers and destabilize the very food web it's meant to help rebuild."
+          - letter: "B"
+            text: "Species Z is more resistant to high salt concentrations than species W."
+            answer: true
+            explanation: "TRUE. Figure 1B shows species Z's population persisting at high salinity (into the 80-100 mg/mL range) before crashing, while species W's population crashes at a much lower salinity — Z tolerates a higher salt concentration before declining than W does, making Z the more salt-resistant of the two."
+          - letter: "C"
+            text: "It's more likely that the return of species W happened earlier in the Northern Aral than in the Southern."
+            answer: true
+            explanation: "TRUE. The Northern basin receives more freshwater input (from the Syr Darya, which flows more reliably than the overused Amu Darya feeding the Southern basin), so the Northern Aral would be expected to become less saline, sooner. Since species W's return in Figure 1B coincides with salinity dropping to a tolerable level, and the Northern basin reaches lower salinity earlier, W is more likely to have returned there first."
+          - letter: "D"
+            text: "Among the artificially introduced animals, there were organisms that are prey for species Z but not predators of species Z."
+            answer: true
+            explanation: "TRUE. After the artificial introduction (red arrow), species Z's population begins to climb — consistent with the new community including a food source (prey) for Z, letting its population grow. Since Z's numbers increase rather than decline after the introduction, the newly added organisms are acting as a food source, not as new predators of Z."
+
+      - id: q15
+        number: "Q15"
+        name: "Lotka-Volterra Competition Lines and Coexistence Outcomes"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=25"
+        subjects:
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
+        statements:
+          - letter: "A"
+            text: "The y-intercept for line of species 1 is equal to K1/α."
+            answer: false
+            explanation: "FALSE. Setting species 1's growth equation to zero and solving for N2 (the y-axis) when N1 = 0 gives N2 = K1/α — but that is species 1's line's y-intercept, and by the same logic species 2's own equilibrium line (in terms of N2 on the y-axis directly) has its y-intercept at K2, not K1/α. The K1/α value is actually where species 1's line crosses the y-axis, which the graph in Figure 1A already labels as K2 for species 2's line — the statement has assigned the wrong expression to the wrong line's intercept."
+          - letter: "B"
+            text: "This model takes into account the presence of intraspecific competition."
+            answer: true
+            explanation: "TRUE. Each species' growth equation includes its own population size (N1 in species 1's equation, N2 in species 2's) subtracted directly against its own carrying capacity, alongside the interspecific competition term — that self-limiting term (a species' growth slowing as its own numbers approach its own K) is exactly what intraspecific competition means, so the model does account for it, on top of the competition between species."
+          - letter: "C"
+            text: "Suppose that there is a certain community of elks (K1 = 200, α = 1) and deer (K2 = 100, β = 2) competing with each other. If the current populations are 120 elks and 60 deer, the elks will eventually outcompete the deer."
+            answer: true
+            explanation: "TRUE. Plugging the numbers into each equilibrium line: species-1 (elk) line is N1 = 200 − N2 (using α=1), and species-2 (deer) line is N2 = 100 − 2·N1 (using β=2). At the given point (120, 60), elk growth rate ∝ (200 − 120 − 1·60) = 20 > 0 (still growing), while deer growth rate ∝ (100 − 60 − 2·120) = −140 < 0 (already shrinking) — with elk growing and deer declining from this starting point, the trajectory heads toward elk dominance and deer exclusion."
+          - letter: "D"
+            text: "In only 2 scenarios out of 4 described in Figure 1B both species can stably coexist."
+            answer: false
+            explanation: "FALSE. Stable coexistence in the Lotka-Volterra model requires the two equilibrium lines to actually cross, with each species' own line lying outside the other's near its own axis (so each species limits itself more than it's limited by the other). Of the four line-arrangement combinations shown in Figure 1B, only the one configuration where the lines cross in that specific mutually-limiting way gives a stable coexistence point — that's 1 scenario out of 4, not 2."
+
+      - id: q16
+        number: "Q16"
+        name: "Niche Dimensions and Stipa capillata Drought Adaptation"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=27"
+        subjects:
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
+        statements:
+          - letter: "A"
+            text: "Based on the hypothesis, fast-growing plants usually overpopulate nutrient-poor soils."
+            answer: false
+            explanation: "FALSE. Fast growth requires rapidly mobilizing large amounts of nutrients, so \"colonizing\" fast-growers do best on nutrient-RICH soils where that resource demand can actually be met — on nutrient-poor soils they're limited by the very resource their strategy depends on, opening a niche dimension instead for slower-growing, more resource-frugal competitors like Stipa."
+          - letter: "B"
+            text: "Horses grazing in the meadows of Stipa grass can help increase the number of other plant species in the steppe."
+            answer: true
+            explanation: "TRUE. Stipa's weak root system means it can't spread well once dense perennial turf is established, so grazing that reduces Stipa's biomass and opens up ground cover creates a new limiting-factor dimension (reduced Stipa competition) that other, less drought-tolerant but better-rooted turf-forming species can exploit — increasing the niche space available to other plant species."
+          - letter: "C"
+            text: "Uncontrolled ploughing of steppe areas will lead to a decline in the biomass of Stipa grass relative to other perennial grasses."
+            answer: false
+            explanation: "FALSE. Ploughing destroys the established turf layer that normally excludes Stipa (its weak roots can't compete against dense, well-rooted turf). Removing that competing turf via ploughing opens freshly-disturbed, hard/poor soil exactly suited to drought-resistant Stipa's strategy, letting Stipa's relative biomass increase on newly ploughed ground rather than decline."
+          - letter: "D"
+            text: "During the drought season, the biomass of turf may decrease, particularly, owing to the reduced photosynthesis in turf."
+            answer: true
+            explanation: "TRUE. Drought conditions favor Stipa (which is specifically noted as more drought-resistant), implying the shallow-rooted turf species suffer water stress under drought. Water stress forces stomata to close to limit water loss, which cuts CO2 uptake and therefore photosynthesis — so reduced photosynthetic output during drought is a reasonable direct driver of turf biomass decline."
+
+      - id: q17
+        number: "Q17"
+        name: "Incompatible Insect Technique and Wolbachia-Induced Cytoplasmic Incompatibility"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=28"
+        subjects:
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
+        statements:
+          - letter: "A"
+            text: "The average lifespan of males of Aedes albopictus positively correlates with the effectiveness of IIT."
+            answer: true
+            explanation: "TRUE. IIT works by releasing Wolbachia-infected males to mate with wild uninfected females, causing embryonic death. The longer those released males survive, the more uninfected females they can encounter and mate with over time (since males are the active dispersers here), so a longer average male lifespan gives IIT more opportunities to work, positively correlating with its effectiveness."
+          - letter: "B"
+            text: "Reducing the initial irradiation dose can lead to resistance against the Wolbachia strain in successive mosquito generations."
+            answer: true
+            explanation: "TRUE. Irradiation is meant to sterilize all released females so no viable Wolbachia-carrying offspring are produced. A weaker irradiation dose risks leaving some released females fertile — those fertile, Wolbachia-infected females mating with Wolbachia-infected males would produce viable, Wolbachia-infected offspring (no cytoplasmic incompatibility in that combination), letting the Wolbachia strain establish and spread through the wild population across generations instead of being suppressed."
+          - letter: "C"
+            text: "When 50% of males and females are infected (1:1 sex ratio), 75% of matings produce no offspring due to cytoplasmic incompatibility."
+            answer: false
+            explanation: "FALSE. With half of each sex infected, random mating gives four equally likely (25% each) male×female combinations: uninfected×uninfected (viable), infected×infected (viable, both carry Wolbachia), infected♂×uninfected♀ (embryonic death), and uninfected♂×infected♀ (viable, no incompatibility). Only the one infected-male/uninfected-female combination fails, which is 25% of matings, not 75%."
+          - letter: "D"
+            text: "Mosquito migration from control site to experimental site is the most likely explanation of the hatched eggs found in the experimental site."
+            answer: true
+            explanation: "TRUE. All mosquitoes deliberately released into the experimental site were Wolbachia-infected, so eggs hatching there shouldn't happen via the normal IIT-suppressed matings — the two adjacent sites share a landscape with no barrier, so wild (uninfected) mosquitoes drifting in from the nearby control site and mating with each other, or with infected mosquitoes in a viable combination, is the simplest explanation for hatched eggs turning up inside the experimental zone."
+
+      - id: q18
+        number: "Q18"
+        name: "Ant Invasion, Visibility, and a Lion-Zebra-Buffalo Trophic Cascade"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=29"
+        subjects:
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
+        statements:
+          - letter: "A"
+            text: "Based on the given data, the symbiosis between acacia ants and whistling-thorn trees is commensalism (only ants benefit from the interaction)."
+            answer: false
+            explanation: "FALSE. Once big-headed ants exterminate the acacia ants, megaherbivores destroy far more whistling-thorn trees (Figure 1A, the invaded-with-megaherbivores condition has much higher visibility, meaning fewer intact trees) — showing acacia ants had been protecting the trees from herbivory. Since the trees clearly benefit from hosting acacia ants (protection) just as much as the ants benefit from the trees (nutrition and shelter, as stated), this is mutualism, not one-sided commensalism."
+          - letter: "B"
+            text: "Zebras are more vulnerable to lion predation in big-headed ant-invaded areas."
+            answer: false
+            explanation: "FALSE. Ant invasion raises visibility (fewer intact thorn trees to hide behind), and Figure 1B shows the probability of a zebra kill goes DOWN as visibility increases — lions rely on cover to ambush zebras. So in invaded, higher-visibility areas, zebras are actually less, not more, vulnerable to being caught by lions."
+          - letter: "C"
+            text: "Between 2000 and 2020, lions are expected to shift their prey from buffalos to zebras."
+            answer: false
+            explanation: "FALSE. As big-headed ants spread (2000-2020), whistling-thorn coverage declines (per part A's visibility logic) and Figure 1C shows the buffalo-kill line is basically flat/positive at low tree coverage while the zebra-kill line trends upward mainly at higher coverage — meaning declining tree coverage over this period should push lions toward relying on buffalo rather than zebra, the reverse of the direction the statement claims."
+          - letter: "D"
+            text: "The study suggests that lions prefer ambushing zebras to chasing them for long distances."
+            answer: true
+            explanation: "TRUE. Zebra kills happen preferentially at LOW visibility (Figure 1B), which is exactly the condition needed for a short-range surprise ambush rather than a long, open chase where prey could see a pursuing lion coming from far away — the data pattern fits an ambush hunting strategy against zebras specifically."
+
+      - id: q19
+        number: "Q19"
+        name: "Heat-Balling Honeybee Defense Against Hornets"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=31"
+        subjects:
+          - name: "Foraging & Anti-Predator Behavior"
+            link: "/resources/9-ethology/foraging-anti-predator-behavior/"
+        statements:
+          - letter: "A"
+            text: "Venom mass is 2.6-2.8% of V. velutina's body mass."
+            answer: false
+            explanation: "FALSE. Reading Figure 1B, V. velutina's (Vv) body mass is roughly 280 mg and its venom mass is roughly 5.2 mg. That works out to (5.2/280)×100 ≈ 1.9%, clearly below the claimed 2.6-2.8% range."
+          - letter: "B"
+            text: "Amdef bees can't kill any attacking V. velutina."
+            answer: false
+            explanation: "FALSE. Even the \"no sting (control)\" condition — where no bee stings at all, just heat — already reduces hornet survival somewhat at 44°C (that curve dips below 1.0 with p=0.004), simply from the heat-ball effect alone. Since Amdef bees can still generate heat (they just can't sting), the same heat-only killing effect seen in the control condition would still apply to Amdef bees, so they aren't entirely incapable of killing any hornets."
+          - letter: "C"
+            text: "Amdef bees kill hornets as efficiently as the A. cerana species."
+            answer: false
+            explanation: "FALSE. Amdef bees can generate heat but cannot sting, while wild-type A. cerana can do both simultaneously (Ac single sting panel, which combines heat and venom). Since real stinging bees achieve much faster, more complete hornet kill curves than heat alone could plausibly produce, Amdef bees (heat-only) would be expected to underperform full wild-type A. cerana, not match it."
+          - letter: "D"
+            text: "Over 3 hours at 44°C, the same number of A. cerana bees can kill more hornets than A. mellifera bees."
+            answer: false
+            explanation: "FALSE. Comparing the \"Ac single sting\" and \"Am single sting\" panels at 44°C, both curves end up at a similarly low final hornet-survival level (around 0.1) by 180 minutes, with statistically significant reductions in both cases (p<0.0001) — the two species' 44°C sting conditions converge to essentially the same final kill outcome over 3 hours, not a clear A. cerana advantage."
+
+      - id: q20
+        number: "Q20"
+        name: "Female Body Mass, Male Fighting, and Mating Outcomes in Crickets"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=32"
+        subjects:
+          - name: "Mating Systems & Sexual Selection"
+            link: "/resources/9-ethology/mating-systems-sexual-selection/"
+        statements:
+          - letter: "A"
+            text: "The lighter the female, the more chances of being inseminated."
+            answer: false
+            explanation: "FALSE. Figure 1A shows the copulated group (1) has a HIGHER median female weight than the not-copulated group (2) — heavier females were more often the ones that successfully mated, which is the opposite relationship to what the statement claims."
+          - letter: "B"
+            text: "During male-to-male fights the heavier one on average wins more often."
+            answer: true
+            explanation: "TRUE. Figure 1B's body-weight-difference boxplots show the winning-male group (1) has a higher median body weight difference than the losing-male group (2), meaning on average the male with the greater weight advantage was the one who came out on top of the fight — heavier males tend to win male-male contests."
+          - letter: "C"
+            text: "Measurement of copulation duration is a good indicator of mating cost in terms of sperm depletion."
+            answer: false
+            explanation: "FALSE. Nothing in the given data establishes any relationship between how long copulation lasts and how much sperm gets transferred or depleted — the study measures mating occurrence and fighting outcomes, not copulation duration or ejaculate volume, so treating duration as a validated proxy for sperm-depletion cost is not something this data supports."
+          - letter: "D"
+            text: "If we assume that female of species G. bimaculatus displays a type 1 fitness-mating relationship (Figure 1C), then smaller females will have lower fitness compared to large-sized ones."
+            answer: true
+            explanation: "TRUE. Type 1 in Figure 1C shows fitness rising with number of matings before leveling off, and since (per Figure 1A) heavier/larger females are the ones more likely to secure matings, smaller females would be expected to accumulate fewer matings — under a type-1 relationship where more matings still means more fitness (before the plateau), fewer matings for smaller females translates directly into lower fitness compared to larger females."
+
+      - id: q21
+        number: "Q21"
+        name: "Cannibalism Probability and Injury Bias in Japanese Mitten Crabs"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=33"
+        subjects:
+          - name: "Foraging & Anti-Predator Behavior"
+            link: "/resources/9-ethology/foraging-anti-predator-behavior/"
+        statements:
+          - letter: "A"
+            text: "Among male crabs, the cannibalism probability is 50% when predator to prey size ratio is about 1.75."
+            answer: true
+            explanation: "TRUE. At 50% cannibalism probability, graph A (males) shows Factor S = 0.43. Working backward through Factor S = 1 − (prey size/predator size): 0.43 = 1 − x, so x = 0.57 = prey/predator. Inverting that ratio (predator/prey) gives 1/0.57 ≈ 1.75, matching the statement."
+          - letter: "B"
+            text: "Females have a higher eagerness to cannibalism than males"
+            answer: false
+            explanation: "FALSE. Males reach 50% cannibalism probability at a much smaller size difference (Factor S = 0.43) than females do (Factor S = 0.79) — meaning males start cannibalizing at a smaller size advantage over their prey, while females hold back until they're relatively much bigger. That makes males the more \"eager\"/less picky cannibals here, not females."
+          - letter: "C"
+            text: "In a cannibalistic environment, the occurrence of injured crabs will resemble the frequencies displayed in Figure 1D."
+            answer: false
+            explanation: "FALSE. Figure 1D only captures crabs that survived being cannibalized — a badly-injured crab (many lost legs) is also the crab most likely to be finished off and killed rather than merely left injured. That survivor bias means real injury-count frequencies among survivors would skew toward fewer lost legs than Figure 1D's hypothetical distribution suggests, not resemble it directly."
+          - letter: "D"
+            text: "The difference in size affects whether the crab is killed or merely injured"
+            answer: true
+            explanation: "TRUE. Figure 1C plots Factor S (a size-difference measure) separately for the killed and injured groups and shows a real difference in mean Factor S between the two outcomes — a bigger size gap between predator and prey pushes the outcome toward killing rather than just injury."
+
+      - id: q22
+        number: "Q22"
+        name: "Genomic Imprinting at the IGF2-H19 Locus"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=34"
+        subjects:
+          - name: "Extranuclear & Non-Mendelian Inheritance"
+            link: "/resources/7-genetics/extranuclear-non-mendelian-inheritance/"
+        statements:
+          - letter: "A"
+            text: "The figure implies that male infants are more often prone to cancers."
+            answer: false
+            explanation: "FALSE. The imprinting pattern in Figure 1 determines which parental copy of IGF2/H19 is active, but it applies the same way regardless of the baby's own sex — a baby inherits one maternal and one paternal chromosome 11 either way, so this imprinting mechanism doesn't make male infants more cancer-prone than female infants."
+          - letter: "B"
+            text: "Paternal uniparental disomy of chromosome 11, both copies of the pair are inherited from a father, might lead to the symptoms of SRS."
+            answer: false
+            explanation: "FALSE. Two paternal copies means two active (unmethylated-ICR-style) IGF2 genes and no maternal H19 expression — that's a double dose of the pro-growth IGF2 signal, which fits BWS (fetal macrosomia/overgrowth), not SRS (growth restriction). Paternal uniparental disomy would be expected to cause BWS-like overgrowth, not SRS."
+          - letter: "C"
+            text: "Individuals with the maternal IGF2R loss of function will have the phenotype resembling that of the BWS patients."
+            answer: true
+            explanation: "TRUE. IGF2R's job is to bind IGF2 and target it for lysosomal degradation, clearing it away. Losing the maternal (active) copy of IGF2R removes that clearance mechanism, letting IGF2 accumulate — extra IGF2 signaling drives the same pro-proliferative overgrowth phenotype seen in BWS."
+          - letter: "D"
+            text: "The genome imprinting in monogamous species is expected to occur at lower rates than in polygamous species."
+            answer: true
+            explanation: "TRUE. Genomic imprinting is thought to arise from parent-of-origin conflict over maternal resource allocation to offspring — a father benefits from his offspring extracting more resources even at the mother's expense, especially when he isn't the sole/repeated father of her future offspring. In monogamous species that conflict of interest is much weaker (the father's own reproductive success is tied to the same mother's long-term welfare), so imprinting is expected to be favored less strongly than in polygamous species."
+
+      - id: q23
+        number: "Q23"
+        name: "ACE2/CTS1 Mutations and Multicellularity in Yeast"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=35"
+        subjects:
+          - name: "Extensions of Mendelian Inheritance"
+            link: "/resources/7-genetics/extensions-of-mendelian-inheritance/"
+        statements:
+          - letter: "A"
+            text: "When subjected to identical incubation conditions, wild-type yeast cultures exhibit a faster settling rate compared to mutant yeast cultures."
+            answer: false
+            explanation: "FALSE. The ACE2 mutant cells clump into large multicellular clusters (Figure 1A, panel H) instead of separating into single cells like wild-type (panel G). Larger, denser clumps settle out of suspension faster than individual free-floating cells, so it's the mutant culture that should settle faster, not the wild-type."
+          - letter: "B"
+            text: "The mutation in the yeast strain 8 causes a frameshift and is recessive."
+            answer: true
+            explanation: "TRUE. The Figure 2 sequencing trace for strain 8 shows one extra adenine inserted into the poly-A run compared to strain 1 — a single-base insertion shifts the reading frame downstream, a frameshift mutation. And in the cross grid (Figure 1B), every cross involving strain 8 (a blue/wild-type-labeled strain in that grid) with the red mutant strains still gave unicellular (S) offspring, the wild-type phenotype — meaning the mutant allele doesn't dominate over wild-type in a heterozygote, i.e. it's recessive."
+          - letter: "C"
+            text: "The unknown sequencing sample in Figure 2 may be the offspring of a cross between strains 1 and 8."
+            answer: true
+            explanation: "TRUE. The unknown trace (U) shows overlapping, double peaks starting right around the poly-A run — exactly what you'd expect from a heterozygous diploid carrying one strain-1-length allele and one strain-8-length (one-adenine-longer) allele superimposed in the same sequencing read. That heterozygous signature is consistent with U being offspring of a strain 1 × strain 8 cross."
+          - letter: "D"
+            text: "The product of the CTS1 gene likely plays an important role in the final stages of cell division rather than in the initial stages."
+            answer: true
+            explanation: "TRUE. CTS1 expression is sharply reduced in the ACE2 mutant strains (Figure 1C), and those same mutants fail specifically at separating mother and daughter cells after division — division itself still happens, cells just stay physically joined. That points to CTS1's product acting late, at the final cell-wall-splitting step of division, rather than at an earlier stage like DNA replication or spindle formation."
+
+      - id: q24
+        number: "Q24"
+        name: "Robertsonian Translocation and Chromosome 14/21 Anomalies"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=37"
+        subjects:
+          - name: "Chromosomal Variation: Number & Structure"
+            link: "/resources/7-genetics/chromosomal-variation-number-structure/"
+        statements:
+          - letter: "A"
+            text: "This type of translocation can also occur with chromosomes 1 and 2."
+            answer: false
+            explanation: "FALSE. Robertsonian translocation specifically requires two acrocentric chromosomes (centromere near one end, tiny second arm) fusing at their centromeres. Chromosomes 1 and 2 are metacentric (centromere near the middle, two substantial arms), not acrocentric, so they aren't candidates for this particular fusion mechanism."
+          - letter: "B"
+            text: "Not less than 50% of all possible embryos that can arise from the fusion of gametes from a father with Robertsonian translocation 14-21 and a healthy mother are lethal."
+            answer: true
+            explanation: "TRUE. A 14-21 translocation carrier produces six possible gamete types with roughly equal likelihood — normal, balanced-carrier, and four kinds of unbalanced (extra or missing chromosome 14 or 21) gametes. Combined with a normal gamete from the healthy mother, only the normal and balanced-carrier combinations (2 of 6) are viable/non-lethal — the other four (trisomy 14, monosomy 14, monosomy 21, and the unbalanced case leading to trisomy 21 being the only survivable trisomy) are lethal except Down syndrome, which is non-lethal — netting out to 3 non-lethal outcomes of 6, i.e. 50%, so \"not less than 50%\" lethal holds."
+          - letter: "C"
+            text: "In order to determine the cause of the appearance of this karyogram in Figure 1B, it is necessary to carry out karyotyping of the patient's and his parents' somatic cells."
+            answer: true
+            explanation: "TRUE. A missing chromosome 21 in this gamete karyogram could arise either from ordinary meiotic non-disjunction in an otherwise normal parent, or from the parent themselves being a 14-21 balanced-translocation carrier. Those two scenarios have very different genetic-counseling implications (recurrence risk), and the only way to tell them apart is to karyotype the somatic (non-gamete) cells of the patient and their parents to check for a translocation."
+          - letter: "D"
+            text: "In total, 15 different types of Robertsonian translocations may occur in human cells."
+            answer: true
+            explanation: "TRUE. Humans have 5 acrocentric chromosome pairs (13, 14, 15, 21, 22). Robertsonian translocations can form between two different acrocentric chromosomes (5 choose 2 = 10 combinations) or between the two homologs of the same acrocentric chromosome (5 more, one per acrocentric pair) — 10 + 5 = 15 total possible types."
+
+      - id: q25
+        number: "Q25"
+        name: "X-Linked Trait Allele Mixing and Pedigree Probability"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=39"
+        subjects:
+          - name: "Sex Determination & Sex-Linked Inheritance"
+            link: "/resources/7-genetics/sex-determination-sex-linked-inheritance/"
+          - name: "Population Genetics & Hardy-Weinberg Equilibrium"
+            link: "/resources/15-evolution/population-genetics-hardy-weinberg-equilibrium/"
+        statements:
+          - letter: "A"
+            text: "In the new population of an island, the ratio of \"performant\" male to \"performant\" female mice is 5:1"
+            answer: false
+            explanation: "FALSE. The pedigree shows this is an X-linked recessive trait, so a male's affected status depends only on his single X (frequency = q), while a female needs two recessive X's (frequency = q²). Scientist A's 500 males contribute 500×0.3 = 150 affected males, Scientist B's 500 contribute 500×0.2 = 100, for 250 affected males out of 1000 total — an overall recessive-allele frequency q' = 250/1000 = 0.25. Affected females are then q'² × 1000 = 0.0625 × 1000 = 62.5. That's a male:female ratio of 250:62.5 = 4:1, not 5:1."
+          - letter: "B"
+            text: "In the Cross Q, the probability that the male offspring will not have a \"performant\" phenotype is 70%"
+            answer: true
+            explanation: "TRUE. Mouse 3 (the pedigree father in Cross Q) is affected, so his genotype is XᵃY. The random female from Scientist A's population (p=0.7, q=0.3) is XᴬXᴬ with probability 0.49, XᴬXᵃ with probability 0.42, or XᵃXᵃ with probability 0.09. Sons only ever inherit their X from the mother, so: an XᴬXᴬ mother gives 100% unaffected sons, an XᴬXᵃ mother gives 50% unaffected sons, and an XᵃXᵃ mother gives 0% unaffected sons. Weighting by how likely each mother genotype is: 0.49×1 + 0.42×0.5 + 0.09×0 = 0.49 + 0.21 = 0.70, i.e. 70%."
+          - letter: "C"
+            text: "If a cross between mice 1 and 2 from Figure 1 produces 4 offspring, the probability that all are \"performant\" male mice is less than 0.2 %"
+            answer: false
+            explanation: "FALSE. From the pedigree, mouse 1 is XᴬXᵃ (carrier) and mouse 2 is XᵃY (affected). A quarter of all offspring from this cross are affected (XᵃY) sons. The probability all 4 offspring are affected sons is 0.25⁴ ≈ 0.0039, i.e. about 0.39% — that's higher than 0.2%, not lower, so the statement's claim is false."
+          - letter: "D"
+            text: "The probability of having a \"performant\" phenotype is the same for mouse A and mouse B"
+            answer: true
+            explanation: "TRUE. Mice A and B are offspring of an XᵃY (affected) father and an XᴬXᵃ (carrier) mother. That cross gives four equally likely genotype/sex outcomes — XᴬY, XᵃY, XᴬXᵃ, XᵃXᵃ — each at probability 1/4. Being affected requires XᵃY (if male) or XᵃXᵃ (if female), each of which is exactly 1 of those 4 equally likely outcomes, so the unconditional probability of an affected phenotype is the same (1/4) for both mouse A and mouse B."
+
+      - id: q26
+        number: "Q26"
+        name: "Intratumor Heterogeneity and Clonal Evolution Under Treatment"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=41"
+        subjects:
+          - name: "Natural Selection: Modes & Fitness"
+            link: "/resources/15-evolution/natural-selection-modes-and-fitness/"
+        statements:
+          - letter: "A"
+            text: "Intratumor heterogeneity frequently results in treatment failure and drug resistance."
+            answer: true
+            explanation: "TRUE. If a tumor is made of genetically distinct cell populations, a drug targeting only one population's mutation leaves the other populations untouched — those unaffected subclones can then survive treatment and continue growing, driving relapse and apparent drug resistance at the level of the whole tumor."
+          - letter: "B"
+            text: "Mutation in gene D is a better therapeutic target than mutation in gene A."
+            answer: false
+            explanation: "FALSE. In the evolutionary tree (Figure 1B), mutation A sits on the trunk lineage shared by all four regions (R1-R4), while mutation D is a later branch-specific mutation found in only some regions. Targeting a trunk mutation like A hits every tumor cell population; targeting a branch mutation like D only, leaving the trunk-only lineages untouched — making A the better, not worse, therapeutic target."
+          - letter: "C"
+            text: "After treatment with the drug targeting mutation in gene C, Region R1 is more likely to expand than R4."
+            answer: true
+            explanation: "TRUE. Region R1 branches off the tree before mutation C arises, so R1 cells don't carry mutation C and aren't affected by a drug targeting it — while R4 does carry C (it's downstream of that branch point) and would be killed off or suppressed by the same drug. With R4 selectively knocked back, the untouched R1 population has more room to expand."
+          - letter: "D"
+            text: "Based on Figure 1C gene E is a potential oncogene, while gene F is a potential tumor suppressor gene."
+            answer: false
+            explanation: "FALSE. Figure 1C shows gene E's copy number is reduced (a dip below the baseline of 2) while gene F's copy number is amplified (a spike above baseline). Losing extra copies fits a tumor suppressor gene (whose normal job is to restrain growth, so losing copies of it removes a brake), while gaining extra copies fits an oncogene (extra dosage of a growth-promoting gene drives proliferation) — that's the reverse of what the statement claims: E looks like the tumor suppressor and F looks like the oncogene, not the other way around."
+
+      - id: q27
+        number: "Q27"
+        name: "PCR Mapping of Genomic Rearrangements in Genes H and K"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=42"
+        subjects:
+          - name: "Chromosomal Variation: Number & Structure"
+            link: "/resources/7-genetics/chromosomal-variation-number-structure/"
+        statements:
+          - letter: "A"
+            text: "In ID-1, there is a translocation event between chromosomes 1 and 5."
+            answer: true
+            explanation: "TRUE. In the wild-type individual, primer pairs a+e and b+c (which mix a primer from gene H with a primer from gene K, on different chromosomes) give no product, since the two primers are too far apart on separate chromosomes to amplify anything. In ID-1, both of those cross-gene primer pairs now DO give a product — the only way primers from chromosome 1 (gene H) and chromosome 5 (gene K) end up close enough together to amplify is if a translocation moved pieces of the two chromosomes next to each other."
+          - letter: "B"
+            text: "ID-2 has an inversion, resulting in a non-functional protein product."
+            answer: true
+            explanation: "TRUE. ID-2 gives a product with primer pair c+d, which shouldn't normally amplify if c and d are pointing away from each other in the original orientation — getting a product means the segment between them has flipped (inverted) so the primers now face each other. Since primer d sits right at the exon-intron junction that (per the figure's own note) encodes the enzyme's active site, flipping that segment disrupts the coding sequence around the active site, producing a non-functional protein."
+          - letter: "C"
+            text: "ID-3 has a deletion."
+            answer: false
+            explanation: "FALSE. A deletion would remove sequence between two primers and make the resulting PCR product smaller/shorter than wild-type. ID-3's bands instead come out the same size as (or, per the gel, not shorter than) the wild-type products — a duplication or other rearrangement that increases or preserves fragment size fits the data better than a deletion, which should have shrunk the product."
+          - letter: "D"
+            text: "ID-1 is homozygous for the rearrangement, while ID-3 is heterozygous."
+            answer: false
+            explanation: "FALSE. Both ID-1 and ID-3 show a mix of rearrangement-specific PCR products AND normal wild-type-sized products in the same lane set — meaning both individuals carry one rearranged copy and one normal copy of the region, i.e. both are heterozygous for their respective rearrangements, not one homozygous and one heterozygous."
+
+      - id: q28
+        number: "Q28"
+        name: "Epistasis Between Two Hair-Pigmentation Genes"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=43"
+        subjects:
+          - name: "Gene Interactions: Epistasis & Complementation Analysis"
+            link: "/resources/7-genetics/epistasis-gene-interactions-complementation/"
+        statements:
+          - letter: "A"
+            text: "There is an epistatic relationship between genes A and B."
+            answer: true
+            explanation: "TRUE. Tracing genotypes against hair color in the pedigree: whenever an individual carries at least one dominant B allele (B_), they have black hair regardless of what gene A says. Only when an individual is bb does gene A's own genotype (A_ vs aa) actually determine the color. That's the definition of epistasis — gene B's genotype masks gene A's effect on the phenotype."
+          - letter: "B"
+            text: "The probability that double heterozygous parents will have a child with white hair is 7/16."
+            answer: false
+            explanation: "FALSE. An AaBb × AaBb cross gives the classic 9 A_B_ : 3 A_bb : 3 aaB_ : 1 aabb ratio. Since B_ genotypes are always black (regardless of A) and bb genotypes are white only if A_ (not aa), only the 3/16 A_bb class is white-haired — aabb individuals are bb but lack any A allele to produce white specifically in the way epistasis works out here, so they end up black. That makes the white-hair fraction 3/16, not 7/16."
+          - letter: "C"
+            text: "The probability that individual V-1 will have white hair is 0.35."
+            answer: true
+            explanation: "TRUE. White hair requires bb AND at least one A allele. V-1's father is bB, so there's a 0.5 chance V-1 inherits the recessive b from him — combined with a 0.5 chance of inheriting the mother's dominant A allele (mother is Aabb) that alone contributes 0.5 × 0.5 = 0.25 to the white-hair probability. The remaining probability comes from V-1 instead inheriting a from the mother and getting a dominant A from the father, whose own genotype at gene A is unknown and must be estimated from Hardy-Weinberg (with the population's A-allele frequency of 0.4): working through both of those additional paths and adding all three contributing probabilities together comes out to 0.25 + 0.04 + 0.06 = 0.35."
+          - letter: "D"
+            text: "Now, assume that you don't know whether gene A is autosomal or X-linked, but you know that it is not located on chromosome Y. In this case, based on the pedigree with the indicated genotypes alone, gene A can be located in every human chromosome except chromosome Y."
+            answer: false
+            explanation: "FALSE. If gene A were X-linked, a father's single X-linked allele would have to appear in ALL of his daughters (since every daughter gets his one X). The pedigree includes at least one father-daughter pair where the daughter's phenotype doesn't match what strict X-linked inheritance from that father would require — ruling out X-linkage specifically. So gene A can't actually be located on every non-Y chromosome; the X chromosome is excluded too, not just Y."
+
+      - id: q29
+        number: "Q29"
+        name: "Cas9 Target Sites, Donor Design, and Mutation Severity"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=44"
+        subjects:
+          - name: "Recombinant DNA & Biotechnology Techniques"
+            link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
+        statements:
+          - letter: "A"
+            text: "There are a total of two Cas9-targetable sites in the given DNA."
+            answer: false
+            explanation: "FALSE. A Cas9-targetable site just needs an NGG sequence adjacent to a 20-nucleotide complementary region, and NGG can occur on either DNA strand. Scanning both strands of the given sequence turns up three NGG-adjacent candidate sites (two on the top strand, one on the bottom strand), not two."
+          - letter: "B"
+            text: "DN-2 is a better choice than DN-1 for introducing the desired mutation."
+            answer: true
+            explanation: "TRUE. DN-1 keeps the same gRNA-matching sequence and intact NGG as the genomic target, so Cas9 could cut the donor template itself once it's delivered into the cell (destroying the very template meant to fix the break). DN-2 carries a silent mutation that happens to also disrupt the NGG motif, making DN-2 immune to Cas9 cleavage while still encoding the desired change — a donor that can't be cut by the same enzyme is the safer, better choice."
+          - letter: "C"
+            text: "Mutation in Mut-2 is potentially more deleterious than mutation in Mut-3 (find the start codon)."
+            answer: false
+            explanation: "FALSE. Mut-2 changes the third (\"wobble\") position of its codon, and the genetic code is degenerate specifically at that position — many codons differing only in the third base still encode the same amino acid, so a wobble-position substitution often causes no amino-acid change at all. Mut-3 instead changes the first position of its codon, a position with no such redundancy, so it's more likely to actually change the amino acid. That makes Mut-3, not Mut-2, the more likely of the two to be deleterious."
+          - letter: "D"
+            text: "Mutation in Mut-4 is potentially more deleterious than mutation in Mut-1 (find the start codon)."
+            answer: true
+            explanation: "TRUE. Mut-1 deletes exactly three bases, removing one whole codon (one amino acid) while keeping every codon after it in the correct reading frame — a relatively contained change. Mut-4 also deletes three bases, but starting from a position that isn't a multiple of three bases into the frame relative to Mut-1's deletion, shifting the reading frame for everything downstream — a frameshift scrambles the entire rest of the protein, which is far more disruptive than losing a single amino acid."
+
+      - id: q30
+        number: "Q30"
+        name: "Linked Genes Controlling Fruit Fly Wing Pigmentation"
+        link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=46"
+        subjects:
+          - name: "Linkage, Recombination & Genetic Mapping"
+            link: "/resources/7-genetics/linkage-recombination-genetic-mapping/"
+        statements:
+          - letter: "A"
+            text: "The recombination frequency between genes A and B is 20%."
+            answer: true
+            explanation: "TRUE. Counting the F2 classes whose A and B alleles no longer travel together the way they did in the P1 gametes (ABD/abd parental types) against the total offspring gives a recombination frequency of about 20% between the A and B loci — consistent with A and B being real, measurably distinct map positions on the same linkage group rather than tightly co-inherited."
+          - letter: "B"
+            text: "The protein product of gene B is ENZYME."
+            answer: false
+            explanation: "FALSE. Comparing the rare double-recombinant classes where only one of the three genes carries its dominant allele (Abd, aBd, abD) against their wing color shows that only the Abd genotype (dominant A alone) produces orange — identifying gene A, not gene B, as the ENZYME. Comparing the classes with two dominant alleles (ABd, AbD, ABD) then shows B acts as the INHIBITOR (its presence without the ACTIVATOR D keeps wings yellow) and D as the ACTIVATOR."
+          - letter: "C"
+            text: "50% of the offspring of the cross between AAbbDdEE and aaBbddEE should have orange wings."
+            answer: false
+            explanation: "FALSE. Every offspring of this cross is guaranteed Aa (since one parent is AA and the other aa) and EE, so pigmentation comes down entirely to the B and D genotypes. Because one parent is dd and the other is DD, and neither parent is doubly heterozygous at both B and D together, there's no B-D recombination to consider — working through the four equally likely B/D combinations, only the one genotype class that ends up bb dd (functional ENZYME, no INHIBITOR active) comes out yellow, leaving 75% of offspring orange, not 50%."
+          - letter: "D"
+            text: "All the offspring of the cross between AaBbDDEe and AABbddEe should be viable."
+            answer: true
+            explanation: "TRUE. Gene D and gene E have the redundant lethal role in larval development (offspring die only if recessive at both D and E simultaneously). One parent is DD (guaranteeing every offspring gets at least one dominant D allele from that side), so no offspring can ever end up homozygous recessive dd — with a functional D allele always present, the D/E synthetic-lethal condition can never be triggered, so every offspring from this cross survives regardless of its genotype at the other loci."

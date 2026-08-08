@@ -20,6 +20,15 @@ Here you will find the growing archive of translated Biology Olympiad papers fro
   {{< card link="tbo/" title="Taiwanese Biology Olympiad" subtitle="First Stage, Second Stage, and Final Stage (Theory + Practical) — translated papers. 2023 sample year." tag="Sample" tagColor="yellow" >}}
 {{< /cards >}}
 
+<a href="/papers/leaderboard/" class="papers-leaderboard-feature-card">
+  <span class="papers-leaderboard-feature-icon">🏆</span>
+  <span class="papers-leaderboard-feature-text">
+    <span class="papers-leaderboard-feature-title">Hall of Fame — Leaderboard</span>
+    <span class="papers-leaderboard-feature-sub">Complete a Timed Attempt, submit your score, and see where you rank — overall standings and per-round leaderboards. Optional and free, like everything else here.</span>
+  </span>
+  <span class="papers-leaderboard-feature-arrow">→</span>
+</a>
+
 ---
 
 Have papers to contribute — translated or otherwise? Email them to [resourcerepository4boguide@gmail.com](mailto:resourcerepository4boguide@gmail.com).

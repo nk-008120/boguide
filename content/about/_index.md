@@ -1,8 +1,13 @@
 ---
 title: "About BiOGuide"
 ---
+## Contacts:
 
-Hey, thanks for visiting! Let's talk a bit about why we built BiOGuide.
+Before we start blabbering about, please contact us on the following in case you want to talk the relevant:
+**resourcerepository4boguide@gmail.com** - Resources or papers you want to submit, website feedback, website doubts, and requests for features on website!
+**r6394175@gmail.com** - Letter of interest to join team BiOGuide, talking shop, and so on. This is my personal e-mail so please respect the sanctity! (I'm done amn't I?)
+
+Now, thanks for visiting! Let's talk a bit about why we built BiOGuide.
 
 Preparing for Biology Olympiads involves a familiar set of challenges: difficulty picking the right resources, scattered notes and textbook references, incomplete practice material, a practical lack of hands-on skills, and more. This website exists to resolve most of those issues through a single, compiled, modern guide.
 
