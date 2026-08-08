@@ -1,13 +1,64 @@
 /*
- * Drives the login / signup / password-reset forms on content/papers/
- * account/index.md. Page-scoped (not loaded site-wide, unlike papers-
- * auth.js) since form-handling code is only needed here.
+ * Drives the login / signup / password-reset / profile forms on
+ * content/account/index.md (relocated from content/papers/account/ —
+ * see LOGIN_ROADMAP.md Part 2, feature 1; an alias keeps the old URL
+ * working). Page-scoped (not loaded site-wide, unlike papers-auth.js)
+ * since form-handling code is only needed here.
  */
 (function () {
   'use strict';
 
   var root = document.getElementById('papers-account-root');
   if (!root) return;
+
+  // Curated avatar set (feature 2) — actual image files live in
+  // static/avatars/ and are supplied separately (not generated here); this
+  // list just needs to match whatever filenames end up there.
+  var AVATAR_FILES = [
+    'avatar-01.png', 'avatar-02.png', 'avatar-03.png', 'avatar-04.png',
+    'avatar-05.png', 'avatar-06.png', 'avatar-07.png', 'avatar-08.png',
+    'avatar-09.png', 'avatar-10.png', 'avatar-11.png', 'avatar-12.png'
+  ];
+
+  // ISO 3166-1 alpha-2 codes — stored as-is in profiles.country so the
+  // leaderboard can derive a flag emoji client-side with no image assets
+  // (see papers-leaderboard.js / papers-leaderboard-overall.js).
+  var COUNTRIES = [
+    ['AF', 'Afghanistan'], ['AL', 'Albania'], ['DZ', 'Algeria'], ['AR', 'Argentina'],
+    ['AM', 'Armenia'], ['AU', 'Australia'], ['AT', 'Austria'], ['AZ', 'Azerbaijan'],
+    ['BD', 'Bangladesh'], ['BY', 'Belarus'], ['BE', 'Belgium'], ['BJ', 'Benin'],
+    ['BO', 'Bolivia'], ['BA', 'Bosnia and Herzegovina'], ['BW', 'Botswana'], ['BR', 'Brazil'],
+    ['BG', 'Bulgaria'], ['BF', 'Burkina Faso'], ['KH', 'Cambodia'], ['CM', 'Cameroon'],
+    ['CA', 'Canada'], ['CL', 'Chile'], ['CN', 'China'], ['CO', 'Colombia'],
+    ['CR', 'Costa Rica'], ['HR', 'Croatia'], ['CU', 'Cuba'], ['CY', 'Cyprus'],
+    ['CZ', 'Czechia'], ['DK', 'Denmark'], ['DO', 'Dominican Republic'], ['EC', 'Ecuador'],
+    ['EG', 'Egypt'], ['SV', 'El Salvador'], ['EE', 'Estonia'], ['ET', 'Ethiopia'],
+    ['FI', 'Finland'], ['FR', 'France'], ['GE', 'Georgia'], ['DE', 'Germany'],
+    ['GH', 'Ghana'], ['GR', 'Greece'], ['GT', 'Guatemala'], ['HN', 'Honduras'],
+    ['HK', 'Hong Kong'], ['HU', 'Hungary'], ['IS', 'Iceland'], ['IN', 'India'],
+    ['ID', 'Indonesia'], ['IR', 'Iran'], ['IQ', 'Iraq'], ['IE', 'Ireland'],
+    ['IL', 'Israel'], ['IT', 'Italy'], ['CI', "Ivory Coast"], ['JM', 'Jamaica'],
+    ['JP', 'Japan'], ['JO', 'Jordan'], ['KZ', 'Kazakhstan'], ['KE', 'Kenya'],
+    ['KR', 'South Korea'], ['KW', 'Kuwait'], ['KG', 'Kyrgyzstan'], ['LA', 'Laos'],
+    ['LV', 'Latvia'], ['LB', 'Lebanon'], ['LY', 'Libya'], ['LT', 'Lithuania'],
+    ['LU', 'Luxembourg'], ['MO', 'Macau'], ['MG', 'Madagascar'], ['MY', 'Malaysia'],
+    ['ML', 'Mali'], ['MT', 'Malta'], ['MX', 'Mexico'], ['MD', 'Moldova'],
+    ['MN', 'Mongolia'], ['ME', 'Montenegro'], ['MA', 'Morocco'], ['MZ', 'Mozambique'],
+    ['MM', 'Myanmar'], ['NP', 'Nepal'], ['NL', 'Netherlands'], ['NZ', 'New Zealand'],
+    ['NI', 'Nicaragua'], ['NE', 'Niger'], ['NG', 'Nigeria'], ['MK', 'North Macedonia'],
+    ['NO', 'Norway'], ['OM', 'Oman'], ['PK', 'Pakistan'], ['PA', 'Panama'],
+    ['PY', 'Paraguay'], ['PE', 'Peru'], ['PH', 'Philippines'], ['PL', 'Poland'],
+    ['PT', 'Portugal'], ['QA', 'Qatar'], ['RO', 'Romania'], ['RU', 'Russia'],
+    ['RW', 'Rwanda'], ['SA', 'Saudi Arabia'], ['SN', 'Senegal'], ['RS', 'Serbia'],
+    ['SG', 'Singapore'], ['SK', 'Slovakia'], ['SI', 'Slovenia'], ['SO', 'Somalia'],
+    ['ZA', 'South Africa'], ['ES', 'Spain'], ['LK', 'Sri Lanka'], ['SD', 'Sudan'],
+    ['SE', 'Sweden'], ['CH', 'Switzerland'], ['SY', 'Syria'], ['TW', 'Taiwan'],
+    ['TJ', 'Tajikistan'], ['TZ', 'Tanzania'], ['TH', 'Thailand'], ['TN', 'Tunisia'],
+    ['TR', 'Turkey'], ['TM', 'Turkmenistan'], ['UG', 'Uganda'], ['UA', 'Ukraine'],
+    ['AE', 'United Arab Emirates'], ['GB', 'United Kingdom'], ['US', 'United States'],
+    ['UY', 'Uruguay'], ['UZ', 'Uzbekistan'], ['VE', 'Venezuela'], ['VN', 'Vietnam'],
+    ['YE', 'Yemen'], ['ZM', 'Zambia'], ['ZW', 'Zimbabwe'], ['OT', 'Other']
+  ];
 
   var screens = {
     unconfigured: document.getElementById('account-unconfigured'),
@@ -29,6 +80,12 @@
   }
 
   var client = window.PapersAuth.getClient();
+
+  // ---- return-to-article support (feature 4's gate links here with ?next=) ----
+  function getNextParam() {
+    var m = /[?&]next=([^&]+)/.exec(window.location.search);
+    return m ? decodeURIComponent(m[1]) : null;
+  }
 
   // ---- tabs (login / signup) ----
   var tabs = root.querySelectorAll('.account-tab');
@@ -56,15 +113,93 @@
     el.classList.toggle('account-msg-error', !!isError);
   }
 
+  // ---- avatar picker (feature 2) ----
+  var avatarGrid = document.getElementById('account-avatar-grid');
+  var avatarMsg = document.getElementById('account-avatar-msg');
+  var currentUserId = null;
+
+  function renderAvatarGrid(selectedUrl) {
+    avatarGrid.innerHTML = AVATAR_FILES.map(function (file) {
+      var url = '/avatars/' + file;
+      var selected = url === selectedUrl;
+      return '<button type="button" class="account-avatar-option' + (selected ? ' selected' : '') +
+        '" data-url="' + url + '" aria-label="Choose avatar">' +
+        '<img src="' + url + '" alt="" loading="lazy" onerror="this.parentElement.classList.add(\'account-avatar-missing\')">' +
+        '</button>';
+    }).join('');
+    avatarGrid.querySelectorAll('.account-avatar-option').forEach(function (btn) {
+      btn.addEventListener('click', function () { selectAvatar(btn.dataset.url); });
+    });
+  }
+
+  function selectAvatar(url) {
+    if (!currentUserId) return;
+    setMsg(avatarMsg, 'Saving…', false);
+    client.from('profiles').update({ avatar_url: url }).eq('id', currentUserId).then(function (result) {
+      if (result.error) { setMsg(avatarMsg, result.error.message, true); return; }
+      setMsg(avatarMsg, 'Avatar updated.', false);
+      avatarGrid.querySelectorAll('.account-avatar-option').forEach(function (btn) {
+        btn.classList.toggle('selected', btn.dataset.url === url);
+      });
+    });
+  }
+
+  // ---- profile form (feature 3) ----
+  var countrySelect = document.getElementById('account-country-select');
+  countrySelect.innerHTML = '<option value="">Prefer not to say</option>' +
+    COUNTRIES.map(function (c) { return '<option value="' + c[0] + '">' + c[1] + '</option>'; }).join('');
+
+  var profileForm = document.getElementById('account-profile-form');
+  var aboutInput = document.getElementById('account-about-input');
+  var aboutCount = document.getElementById('account-about-count');
+
+  function wordCount(text) {
+    var trimmed = text.trim();
+    return trimmed ? trimmed.split(/\s+/).length : 0;
+  }
+
+  aboutInput.addEventListener('input', function () {
+    var n = wordCount(aboutInput.value);
+    aboutCount.textContent = n + ' / 50 words';
+    aboutCount.classList.toggle('account-word-count-over', n > 50);
+  });
+
+  profileForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var msg = document.getElementById('account-profile-msg');
+    var n = wordCount(aboutInput.value);
+    if (n > 50) { setMsg(msg, 'Keep "About" to 50 words or fewer.', true); return; }
+    if (!currentUserId) return;
+    setMsg(msg, 'Saving…', false);
+    client.from('profiles').update({
+      country: profileForm.country.value || null,
+      education_level: profileForm.educationLevel.value || null,
+      about: aboutInput.value.trim() || null
+    }).eq('id', currentUserId).then(function (result) {
+      if (result.error) { setMsg(msg, result.error.message, true); return; }
+      setMsg(msg, 'Profile saved.', false);
+    });
+  });
+
   // ---- logged-in view ----
   function renderLoggedIn(session) {
+    currentUserId = session.user.id;
     var nameEl = document.getElementById('account-display-name');
     nameEl.textContent = session.user.email;
-    client.from('profiles').select('display_name').eq('id', session.user.id).single()
-      .then(function (result) {
-        if (result.data && result.data.display_name) nameEl.textContent = result.data.display_name;
-      });
+    renderAvatarGrid(null);
+    window.PapersAuth.getProfile(session.user.id).then(function (profile) {
+      if (!profile) return;
+      if (profile.display_name) nameEl.textContent = profile.display_name;
+      if (profile.avatar_url) renderAvatarGrid(profile.avatar_url);
+      countrySelect.value = profile.country || '';
+      profileForm.educationLevel.value = profile.education_level || '';
+      aboutInput.value = profile.about || '';
+      aboutInput.dispatchEvent(new Event('input'));
+    });
     showScreen('loggedIn');
+
+    var next = getNextParam();
+    if (next) window.location.replace(next);
   }
 
   document.getElementById('account-signout-btn').addEventListener('click', function () {
@@ -113,7 +248,7 @@
     var email = resetForm.email.value.trim();
     setMsg(msg, 'Sending…', false);
     client.auth.resetPasswordForEmail(email, {
-      redirectTo: window.location.origin + '/papers/account/'
+      redirectTo: window.location.origin + '/account/'
     }).then(function (result) {
       if (result.error) { setMsg(msg, result.error.message, true); return; }
       setMsg(msg, 'Check your email for a reset link.', false);

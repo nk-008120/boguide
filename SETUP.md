@@ -26,8 +26,24 @@ paste them into the right places. Do these in order.
    `attempt_reports` tables, and `best_attempt_per_round` /
    `leaderboard_per_round` / `leaderboard_overall` views, under
    **Table Editor**.
+4. Also run [supabase/migrations/002_profile_fields.sql](supabase/migrations/002_profile_fields.sql)
+   the same way (SQL Editor -> New query -> paste -> Run). This adds Part 2's
+   `country`/`about`/`education_level` columns and updates the leaderboard
+   views to include `country`. Any future schema change lands as a new
+   numbered file in `supabase/migrations/` rather than editing `schema.sql`
+   retroactively — run new ones in order as they're added.
 
-## 3. Configure Auth
+## 3. Add avatar images
+
+Feature 2 (profile pictures) expects a curated set of images at
+`static/avatars/avatar-01.png` through `avatar-12.png` (12 images — see the
+`AVATAR_FILES` list in `static/js/papers-account.js` if you change the count
+or naming). These are **not included in the repo** — add your own square
+images at those exact paths/filenames. Until they exist, the avatar picker on
+the account page renders empty circles (broken-image icons are hidden via
+CSS) but everything else works fine.
+
+## 4. Configure Auth
 
 In **Authentication -> Providers**, confirm **Email** is enabled (it is by
 default).
@@ -48,7 +64,7 @@ In **Authentication -> URL Configuration**:
   `http://localhost:1313/**` (the second one is so password-reset/email-
   confirmation links work when you're testing with a local `hugo server`).
 
-## 4. Set environment variables in Vercel
+## 5. Set environment variables in Vercel
 
 In the Vercel project dashboard -> **Settings -> Environment Variables**, add:
 
@@ -63,7 +79,7 @@ In the Vercel project dashboard -> **Settings -> Environment Variables**, add:
 Redeploy after saving (Vercel usually does this automatically on the next
 push, or you can trigger a manual redeploy from the dashboard).
 
-## 5. Local development (optional)
+## 6. Local development (optional)
 
 If you want to run `hugo server` locally with the login system working, set
 the same `HUGO_SUPABASE_URL` / `HUGO_SUPABASE_ANON_KEY` as real OS
@@ -93,10 +109,11 @@ done and deployed.
 
 ## Verification checklist
 
-Once steps 1-4 are done and deployed:
+Once steps 1-5 are done and deployed:
 
-- [ ] Visit `/papers/account/`, sign up with a real email, confirm the
-      verification email arrives and confirming it lets you log in.
+- [ ] Visit `/account/`, sign up with a real email, confirm the verification
+      email arrives and confirming it lets you log in. Visiting the old
+      `/papers/account/` URL should redirect here automatically (Hugo alias).
 - [ ] Log out, log back in; try "Forgot password?" and confirm the reset
       email + set-new-password flow completes.
 - [ ] Complete a Timed Attempt (e.g. `/papers/ibo/2022/theoretical-1/attempt/`)
@@ -114,3 +131,18 @@ Once steps 1-4 are done and deployed:
       stored `total_correct`/`total_statements` match what the server
       returned — not anything a client could have sent directly (there is no
       way to write to this table except through the serverless function).
+
+Part 2 additions:
+
+- [ ] While logged in on `/account/`, confirm the navbar icon (top-left, next
+      to the logo) shows the generic login glyph, then pick an avatar in the
+      account page and confirm the navbar icon switches to it without a page
+      reload, and stays switched after navigating to another page.
+- [ ] Fill in country/education level/about on the account page, save, and
+      confirm a submitted leaderboard entry shows the matching flag emoji
+      next to your name on both the per-round and overall leaderboard pages.
+- [ ] Try typing more than 50 words into "About" and confirm the form blocks
+      saving with a message, rather than silently truncating or erroring.
+- [ ] Visit an article under `/articles/` while logged out and confirm the
+      body is blurred with a "Log in to keep reading" prompt; log in from
+      that prompt and confirm it returns you to the same article, unblurred.

@@ -2,6 +2,10 @@
 title: "Articles"
 description: "Here you will find articles on various topics by our team, some times for tips on how to do better even after knowing everyting, sometimes articles based on real intriguing research."
 layout: "wide"
+cascade:
+  - target:
+      path: "/articles/**"
+    layout: "gated-article"
 ---
 
 <div class="two-cards">

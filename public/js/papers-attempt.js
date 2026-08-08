@@ -458,7 +458,7 @@
     window.PapersAuth.getSession().then(function (session) {
       if (!session) {
         container.innerHTML = '<p class="attempt-leaderboard-prompt">' +
-          '<a href="/papers/account/">Log in</a> to save this result to the leaderboard — completely optional.</p>';
+          '<a href="/account/">Log in</a> to save this result to the leaderboard — completely optional.</p>';
         return;
       }
       container.innerHTML =

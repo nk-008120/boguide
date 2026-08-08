@@ -54,10 +54,23 @@
     return c.auth.signOut();
   }
 
+  function getProfile(userId) {
+    var c = getClient();
+    if (!c) return Promise.resolve(null);
+    return c.from('profiles')
+      .select('display_name, avatar_url, country, about, education_level')
+      .eq('id', userId)
+      .single()
+      .then(function (result) {
+        return (result && result.data) || null;
+      });
+  }
+
   window.PapersAuth = {
     isConfigured: isConfigured,
     getClient: getClient,
     getSession: getSession,
+    getProfile: getProfile,
     onChange: onChange,
     signOut: signOut
   };

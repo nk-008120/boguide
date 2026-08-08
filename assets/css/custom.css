@@ -2336,16 +2336,88 @@ html.dark body:not(.homepage-bg)::before {
 }
 
 /* ===================================================================
-   19. ACCOUNT PAGE — content/papers/account/index.md +
-   static/js/papers-account.js. Login/signup/password-reset UI for the
-   optional BiOrchive leaderboard login. Reuses the .papers-nav-btn pill
-   button (section 12.5) and the same purple accent as the rest of the
-   papers archive, kept deliberately plain — this is a utility page, not
-   a showcase one.
+   19. ACCOUNT PAGE — content/account/index.md (relocated from
+   content/papers/account/, alias kept for old links) + static/js/
+   papers-account.js. Split-screen: a branded panel (left) + the actual
+   login/signup/reset/profile forms (right), stacking on narrow screens.
+   Reuses the .papers-nav-btn pill button (section 12.5) and the same
+   purple accent as the rest of the papers archive.
    =================================================================== */
-.papers-account-root {
-  max-width: 420px;
+.account-split {
+  display: flex;
+  gap: 0;
   margin: 1.5rem 0;
+  min-height: 32rem;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(137, 101, 196, 0.2);
+}
+html.dark .account-split {
+  border-color: rgba(201, 183, 232, 0.25);
+}
+.account-branding-panel {
+  flex: 1 1 42%;
+  min-width: 280px;
+  padding: 2.5rem 2rem;
+  background: linear-gradient(135deg, rgba(137, 101, 196, 0.16), rgba(13, 122, 122, 0.12));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+html.dark .account-branding-panel {
+  background: linear-gradient(135deg, rgba(137, 101, 196, 0.22), rgba(13, 122, 122, 0.16));
+}
+.account-branding-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+.account-branding-panel h1 {
+  font-size: 1.6rem;
+  margin: 0 0 0.5rem;
+}
+.account-branding-tagline {
+  opacity: 0.85;
+  margin: 0 0 1.5rem;
+}
+.account-branding-points {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.account-branding-points li {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  font-size: 0.9rem;
+}
+.account-branding-icon {
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+.account-branding-optional {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin: 0;
+}
+.account-form-panel {
+  flex: 1 1 58%;
+  min-width: 300px;
+  padding: 2.5rem 2rem;
+}
+@media (max-width: 760px) {
+  .account-split {
+    flex-direction: column;
+    min-height: 0;
+  }
+  .account-branding-panel,
+  .account-form-panel {
+    flex: 1 1 auto;
+  }
 }
 .account-screen p {
   margin: 0 0 1rem;
@@ -2508,4 +2580,173 @@ html.dark .papers-leaderboard-table td {
 }
 html.dark .papers-leaderboard-self {
   background: rgba(201, 183, 232, 0.1);
+}
+.papers-leaderboard-flag {
+  margin-right: 0.3em;
+}
+
+/* ===================================================================
+   21. AVATAR PICKER + PROFILE FORM (account page, logged-in section) —
+   static/js/papers-account.js renderAvatarGrid()/profileForm. Same
+   purple accent as the rest of the account page (section 19).
+   =================================================================== */
+.account-loggedin-greeting {
+  margin-bottom: 1.5rem;
+}
+.account-avatar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(56px, 1fr));
+  gap: 0.6rem;
+  max-width: 420px;
+  margin-bottom: 0.5rem;
+}
+.account-avatar-option {
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: none;
+  cursor: pointer;
+  overflow: hidden;
+  aspect-ratio: 1;
+  line-height: 0;
+}
+.account-avatar-option img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.account-avatar-option.selected {
+  border-color: #8965c4;
+}
+html.dark .account-avatar-option.selected {
+  border-color: #c9b7e8;
+}
+.account-avatar-option.account-avatar-missing {
+  background: rgba(137, 101, 196, 0.12);
+}
+html.dark .account-avatar-option.account-avatar-missing {
+  background: rgba(201, 183, 232, 0.15);
+}
+.account-avatar-option.account-avatar-missing img {
+  visibility: hidden;
+}
+.account-form select,
+.account-form textarea {
+  font-size: 1rem;
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid rgba(137, 101, 196, 0.35);
+  background: transparent;
+  color: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  resize: vertical;
+}
+html.dark .account-form select,
+html.dark .account-form textarea {
+  border-color: rgba(201, 183, 232, 0.35);
+}
+.account-form select:focus,
+.account-form textarea:focus {
+  outline: none;
+  border-color: #8965c4;
+}
+html.dark .account-form select:focus,
+html.dark .account-form textarea:focus {
+  border-color: #c9b7e8;
+}
+.account-word-count {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  align-self: flex-end;
+}
+.account-word-count-over {
+  opacity: 1;
+  color: #dc2626;
+}
+html.dark .account-word-count-over {
+  color: #f87171;
+}
+.account-signout-btn {
+  margin-top: 1.5rem;
+}
+
+/* ===================================================================
+   22. NAVBAR ACCOUNT ICON — layouts/partials/navbar-title.html +
+   static/js/papers-nav-account.js (site-wide). Generic login glyph when
+   logged out; the user's chosen avatar when logged in.
+   =================================================================== */
+.nav-account-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+  color: inherit;
+  opacity: 0.7;
+  flex-shrink: 0;
+}
+.nav-account-link:hover {
+  opacity: 1;
+}
+.nav-account-icon-avatar {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.nav-account-link-loggedin {
+  opacity: 1;
+}
+.nav-account-link-loggedin .nav-account-icon-avatar {
+  border: 1.5px solid #8965c4;
+}
+html.dark .nav-account-link-loggedin .nav-account-icon-avatar {
+  border-color: #c9b7e8;
+}
+
+/* ===================================================================
+   23. ARTICLE GATING — layouts/gated-article.html + static/js/
+   papers-article-gate.js. Presentation-layer gate: the body is blurred
+   by default (fail-closed if JS doesn't run) and un-blurred only once
+   papers-article-gate.js confirms a logged-in session.
+   =================================================================== */
+.article-gate-teaser {
+  font-size: 1.05rem;
+  opacity: 0.85;
+  margin-bottom: 1.5rem;
+}
+.article-gate-body {
+  position: relative;
+  filter: blur(6px);
+  user-select: none;
+  pointer-events: none;
+  max-height: 14rem;
+  overflow: hidden;
+  transition: filter 0.2s ease;
+}
+.article-gate-unlocked .article-gate-body {
+  filter: none;
+  user-select: auto;
+  pointer-events: auto;
+  max-height: none;
+}
+.article-gate-cta {
+  margin-top: -4rem;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(137, 101, 196, 0.3);
+  background: rgba(137, 101, 196, 0.1);
+  backdrop-filter: blur(3px);
+}
+html.dark .article-gate-cta {
+  border-color: rgba(201, 183, 232, 0.3);
+  background: rgba(201, 183, 232, 0.1);
+}
+.article-gate-cta p {
+  margin-bottom: 0.75rem;
+  font-weight: 600;
 }
