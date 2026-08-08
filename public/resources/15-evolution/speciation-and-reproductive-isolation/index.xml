@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BiOGuide for Biology Olympiads – Speciation &amp; Reproductive Isolation</title>
-    <link>https://boguide.vercel.app/resources/15-evolution/speciation-and-reproductive-isolation/</link>
+    <link>http://localhost:1313/resources/15-evolution/speciation-and-reproductive-isolation/</link>
     <description>Recent content in Speciation &amp; Reproductive Isolation on BiOGuide for Biology Olympiads</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="https://boguide.vercel.app/resources/15-evolution/speciation-and-reproductive-isolation/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/resources/15-evolution/speciation-and-reproductive-isolation/index.xml" rel="self" type="application/rss+xml" />
     
     
       

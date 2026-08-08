@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BiOGuide for Biology Olympiads – ✅ Ethology</title>
-    <link>https://boguide.vercel.app/resources/9-ethology/</link>
+    <link>http://localhost:1313/resources/9-ethology/</link>
     <description>Recent content in ✅ Ethology on BiOGuide for Biology Olympiads</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="https://boguide.vercel.app/resources/9-ethology/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/resources/9-ethology/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Mechanisms of Behavior</title>
-      <link>https://boguide.vercel.app/resources/9-ethology/mechanisms-of-behavior/</link>
+      <link>http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://boguide.vercel.app/resources/9-ethology/mechanisms-of-behavior/</guid>
+      <guid>http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/</guid>
       <description>
         
         
@@ -95,7 +95,7 @@
 &lt;p&gt;A classic exam trap is being asked &amp;ldquo;why does a bird migrate south in autumn?&amp;rdquo; and answering only with the proximate trigger (shortening day length via photoperiod, see &lt;a
     href=&#34;../Biological-Rhythms/&#34;&gt;Biological Rhythms&lt;/a&gt;) when the question is asking for survival value (escaping resource scarcity) or vice versa — both answers are correct, but only for their own question.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/tinbergens-four-questions-gull-chick-example.png&#34; alt=&#34;The four-questions framework arranged as a 2×2 grid: Development and Causation/Mechanism as the two proximate (“how?”) questions, Evolutionary History and Function/Survival Value as the two ultimate (“why?”) questions, with a historical-sequence vs. slice-in-time axis distinguishing the pairs.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/tinbergens-four-questions-gull-chick-example.png&#34; alt=&#34;The four-questions framework arranged as a 2×2 grid: Development and Causation/Mechanism as the two proximate (“how?”) questions, Evolutionary History and Function/Survival Value as the two ultimate (“why?”) questions, with a historical-sequence vs. slice-in-time axis distinguishing the pairs.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: onlinelibrary.wiley.com (Evolutionary Anthropology)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Neural &amp;amp; Hormonal Control of Behavior&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;neural--hormonal-control-of-behavior&#34;&gt;&lt;/span&gt;
@@ -103,25 +103,25 @@
 &lt;h3&gt;Fixed Action Patterns (FAPs)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;fixed-action-patterns-faps&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#fixed-action-patterns-faps&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A &lt;strong&gt;fixed action pattern&lt;/strong&gt; is a stereotyped, species-typical behavior sequence that, once triggered, runs to completion largely independent of further feedback — the defining classical example is the &lt;strong&gt;greylag goose egg-rolling response&lt;/strong&gt; (Konrad Lorenz and Niko Tinbergen): a goose whose egg has rolled outside the nest extends its neck, hooks its bill over the egg, and rolls it back with a fixed side-to-side motion. If the egg is removed partway through, the goose completes the entire rolling motion anyway — proof the sequence is not being continuously guided by feedback from the egg once started. Three properties define an FAP: it is &lt;strong&gt;stereotyped&lt;/strong&gt; (highly consistent motor pattern across individuals of the species), it runs to completion once initiated (&lt;strong&gt;relatively resistant to interruption&lt;/strong&gt;), and it is triggered by a specific, identifiable stimulus rather than general arousal.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/greylag-goose-egg-rolling-fap-sequence.jpg&#34; alt=&#34;Diagram of the greylag goose egg-rolling head-movement cycle, labeled with its three phase transitions (oblique, transition, forward) and the observed transition frequencies between them from Lorenz’s original motion analysis.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/greylag-goose-egg-rolling-fap-sequence.jpg&#34; alt=&#34;Diagram of the greylag goose egg-rolling head-movement cycle, labeled with its three phase transitions (oblique, transition, forward) and the observed transition frequencies between them from Lorenz’s original motion analysis.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: publish.iupress.indiana.edu (&amp;ldquo;How Animals Communicate&amp;rdquo;)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Sign Stimuli and Releasers&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;sign-stimuli-and-releasers&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#sign-stimuli-and-releasers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The specific stimulus feature that triggers a fixed action pattern is a &lt;strong&gt;sign stimulus&lt;/strong&gt; (or, when the signal is itself produced by another individual for the purpose of communication, a &lt;strong&gt;releaser&lt;/strong&gt;). Niko Tinbergen&amp;rsquo;s stickleback fish work is the canonical demonstration: male three-spined sticklebacks attack red-bellied models regardless of how fish-like the rest of the model looks, but ignore highly realistic fish models lacking the red belly — the &lt;strong&gt;red underside alone&lt;/strong&gt; is the sign stimulus for the territorial-attack FAP, not the overall gestalt of &amp;ldquo;rival fish.&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/stickleback-red-belly-sign-stimulus-attack.jpg&#34; alt=&#34;Tinbergen’s stickleback model diagram: a highly realistic fish model with no red belly (top) was ignored, while four crude, non-fish-shaped models with red-painted undersides (bracketed “Models with red bellies”) were attacked.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/stickleback-red-belly-sign-stimulus-attack.jpg&#34; alt=&#34;Tinbergen’s stickleback model diagram: a highly realistic fish model with no red belly (top) was ignored, while four crude, non-fish-shaped models with red-painted undersides (bracketed “Models with red bellies”) were attacked.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: psywww.com (An Introduction to Psychology, &amp;ldquo;Classic ethology&amp;rdquo; chapter)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;A &lt;strong&gt;supernormal stimulus&lt;/strong&gt; is an exaggerated artificial version of a sign stimulus that triggers a stronger response than the natural stimulus itself — Tinbergen showed oystercatchers will preferentially attempt to incubate an oversized artificial egg over their own smaller, natural egg, because egg size (up to a point) is itself acting as a sign stimulus for incubation behavior, and the artificial version simply exceeds the natural range the response evolved under.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/oystercatcher-supernormal-stimulus-egg.jpg&#34; alt=&#34;Tinbergen’s oystercatcher figures: an oystercatcher incubating a “supernormal” clutch of five eggs in preference to its own natural clutch of three (Fig. 42), and an oystercatcher reacting to a giant egg in preference to a normal egg and a herring gull’s egg placed alongside it (Fig. 43).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/oystercatcher-supernormal-stimulus-egg.jpg&#34; alt=&#34;Tinbergen’s oystercatcher figures: an oystercatcher incubating a “supernormal” clutch of five eggs in preference to its own natural clutch of three (Fig. 42), and an oystercatcher reacting to a giant egg in preference to a normal egg and a herring gull’s egg placed alongside it (Fig. 43).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Tinbergen, &amp;ldquo;The Study of Instinct&amp;rdquo; (Oxford, Clarendon Press), via punyamishra.com&lt;/em&gt;&lt;/p&gt;
 &lt;!-- VIDEO: Greylag goose egg-rolling fixed action pattern — Anser anser — shows the stereotyped motion continuing after the egg is removed, which a single still diagram cannot convey --&gt;
 &lt;h3&gt;Motivation&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;motivation&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#motivation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Motivational state&lt;/strong&gt; (or drive) explains why the same sign stimulus doesn&amp;rsquo;t always produce the same response — an animal&amp;rsquo;s internal physiological state (hunger, hormonal state, prior recent performance of the behavior) gates whether and how strongly a triggering stimulus produces its associated FAP. This is formalized loosely in ethology&amp;rsquo;s &lt;strong&gt;psychohydraulic model&lt;/strong&gt; (Konrad Lorenz&amp;rsquo;s now-historical analogy of action-specific energy building up like water behind a dam, released by a sign stimulus acting as the sluice gate) — largely superseded mechanistically today, but still useful for the qualitative point it illustrates: motivation and stimulus jointly determine response, and a sufficiently strong motivational state can even produce the behavior in the sign stimulus&amp;rsquo;s absence (&lt;strong&gt;vacuum activity&lt;/strong&gt;).&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/psychohydraulic-model-diagram.png&#34; alt=&#34;Lorenz’s psychohydraulic model diagram: a “drive” reservoir feeds through a spring-loaded release-mechanism valve into a set of “behavior” spouts, with an external “stimulus” weight on a pulley able to open the valve directly.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/psychohydraulic-model-diagram.png&#34; alt=&#34;Lorenz’s psychohydraulic model diagram: a “drive” reservoir feeds through a spring-loaded release-mechanism valve into a set of “behavior” spouts, with an external “stimulus” weight on a pulley able to open the valve directly.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: vaia.com (&amp;ldquo;The Hydraulic Model of Instinctive Behaviour&amp;rdquo;)&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Comparative Structures&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;comparative-structures&#34;&gt;&lt;/span&gt;
@@ -169,11 +169,11 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Tinbergen&amp;rsquo;s four questions sorter (drag-and-drop, HTML/JS, no new library)&lt;/strong&gt; — a set of example explanations for a single behavior (e.g. gull chick begging) that the user sorts into the four question categories, then into proximate/ultimate — turns the easily-confused four-question framework into an applied classification exercise.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;https://boguide.vercel.app/tinbergen-four-questions-sorter.html&#34; title=&#34;Tinbergen&amp;#39;s Four Questions Sorter&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 440px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;http://localhost:1313/tinbergen-four-questions-sorter.html&#34; title=&#34;Tinbergen&amp;#39;s Four Questions Sorter&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 440px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Sign stimulus threshold slider (SVG/JS)&lt;/strong&gt; — lets the user vary a model stimulus (e.g. belly redness intensity, egg size) along a continuum and see a simulated response-strength curve, including the supernormal region beyond the natural stimulus range, illustrating that response strength scales with the sign stimulus rather than being all-or-nothing.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;https://boguide.vercel.app/sign-stimulus-threshold-slider.html&#34; title=&#34;Sign Stimulus Threshold Slider&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 460px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;http://localhost:1313/sign-stimulus-threshold-slider.html&#34; title=&#34;Sign Stimulus Threshold Slider&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 460px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt; &lt;em&gt;(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here)&lt;/em&gt;&lt;/p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
 			&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/cqzQ2OiiyN0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
@@ -193,10 +193,10 @@
     
     <item>
       <title>Development &amp; Learning</title>
-      <link>https://boguide.vercel.app/resources/9-ethology/development-learning/</link>
+      <link>http://localhost:1313/resources/9-ethology/development-learning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://boguide.vercel.app/resources/9-ethology/development-learning/</guid>
+      <guid>http://localhost:1313/resources/9-ethology/development-learning/</guid>
       <description>
         
         
@@ -212,7 +212,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;https://boguide.vercel.app/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
     
   
   
@@ -246,7 +246,7 @@
 &lt;h3&gt;Critical and Sensitive Periods&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;critical-and-sensitive-periods&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#critical-and-sensitive-periods&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A &lt;strong&gt;critical period&lt;/strong&gt; is a developmental window outside of which a specific experience-dependent behavior cannot be acquired at all; a &lt;strong&gt;sensitive period&lt;/strong&gt; is a window during which the behavior is most easily and strongly acquired but can still form, less readily, outside it — the two terms are frequently conflated in casual use but are testable as a distinction. &lt;strong&gt;Filial imprinting&lt;/strong&gt; in precocial birds is the sharpest example of a true critical period: goslings and ducklings imprint on the first sufficiently large, moving object they encounter within roughly the first 13-16 hours after hatching, and imprinting largely fails to occur if this window is missed. Bird song acquisition (above) is a better example of a genuine sensitive period — later exposure can still produce partial learning, just less complete than exposure during the peak window.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/goose-imprinting-critical-period-timeline.jpg&#34; alt=&#34;Graph of brain thyroid hormone level across developmental day in imprinted vs. dark-reared chicks, with the sensitive period and “memory priming” window bracketed and a dashed threshold line marking the level needed to cause imprinting.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/goose-imprinting-critical-period-timeline.jpg&#34; alt=&#34;Graph of brain thyroid hormone level across developmental day in imprinted vs. dark-reared chicks, with the sensitive period and “memory priming” window bracketed and a dashed threshold line marking the level needed to cause imprinting.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: nature.com (Nature Communications)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Imprinting&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;imprinting&#34;&gt;&lt;/span&gt;
@@ -257,13 +257,13 @@
 &lt;h3&gt;Classical Conditioning&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;classical-conditioning&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#classical-conditioning&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Classical (Pavlovian) conditioning&lt;/strong&gt; is associative learning in which a neutral stimulus comes to elicit a response by being repeatedly paired with a stimulus that already elicits that response. In &lt;strong&gt;Ivan Pavlov&amp;rsquo;s&lt;/strong&gt; dogs: food (&lt;strong&gt;unconditioned stimulus&lt;/strong&gt;, UCS) naturally elicits salivation (&lt;strong&gt;unconditioned response&lt;/strong&gt;, UCR); a bell (&lt;strong&gt;neutral stimulus&lt;/strong&gt;) paired repeatedly with food comes to elicit salivation on its own (now the &lt;strong&gt;conditioned stimulus&lt;/strong&gt;, CS, eliciting a &lt;strong&gt;conditioned response&lt;/strong&gt;, CR). Key associated phenomena worth naming precisely: &lt;strong&gt;extinction&lt;/strong&gt; (the CR weakens if the CS is repeatedly presented without the UCS), &lt;strong&gt;spontaneous recovery&lt;/strong&gt; (an extinguished CR can reappear after a rest period, showing extinction suppresses rather than erases the association), and &lt;strong&gt;stimulus generalization&lt;/strong&gt; (a stimulus similar to the CS also elicits some CR).&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/pavlov-classical-conditioning-diagram.png&#34; alt=&#34;Four-panel diagram of Pavlov’s classical conditioning: before conditioning (food/UCS naturally elicits salivation/UCR; bell alone elicits no response), during conditioning (bell paired with food), and after conditioning (bell alone/CS now elicits salivation/CR).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/pavlov-classical-conditioning-diagram.png&#34; alt=&#34;Four-panel diagram of Pavlov’s classical conditioning: before conditioning (food/UCS naturally elicits salivation/UCR; bell alone elicits no response), during conditioning (bell paired with food), and after conditioning (bell alone/CS now elicits salivation/CR).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ResearchGate, fig. from a classical-conditioning explainer&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Operant Conditioning&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;operant-conditioning&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#operant-conditioning&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Operant conditioning&lt;/strong&gt; is associative learning in which the &lt;em&gt;consequence&lt;/em&gt; of a voluntary behavior changes the future frequency of that behavior — formalized by &lt;strong&gt;B.F. Skinner&lt;/strong&gt; using the &amp;ldquo;Skinner box,&amp;rdquo; where a rat or pigeon&amp;rsquo;s lever-press or key-peck behavior is shaped by what follows it.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/skinner-box-schematic.svg&#34; alt=&#34;Labeled Skinner box schematic: response lever, food dispenser, electrified grid floor, plus loudspeakers and lights used to present auditory/visual stimuli.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/skinner-box-schematic.svg&#34; alt=&#34;Labeled Skinner box schematic: response lever, food dispenser, electrified grid floor, plus loudspeakers and lights used to present auditory/visual stimuli.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Wikipedia, &amp;ldquo;Operant conditioning chamber&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Four consequence categories are commonly tested and commonly confused, since &amp;ldquo;positive/negative&amp;rdquo; refers to whether something is &lt;em&gt;added or removed&lt;/em&gt;, not to whether the outcome is pleasant:&lt;/p&gt;
@@ -304,19 +304,19 @@
 	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/operant-conditioning-quadrant-table-graphic.webp&#34; alt=&#34;Reinforcement/punishment quadrant graphic: vertical axis “increase in behaviour” vs. “decrease in behaviour,” horizontal axis “remove stimulus” vs. “add stimulus,” with positive reinforcement, negative reinforcement, positive punishment, and negative punishment labeled in the four resulting quadrants.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/operant-conditioning-quadrant-table-graphic.webp&#34; alt=&#34;Reinforcement/punishment quadrant graphic: vertical axis “increase in behaviour” vs. “decrease in behaviour,” horizontal axis “remove stimulus” vs. “add stimulus,” with positive reinforcement, negative reinforcement, positive punishment, and negative punishment labeled in the four resulting quadrants.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ResearchGate, fig. illustrating reinforcement/punishment categories&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Reinforcement schedules&lt;/strong&gt; are also directly testable: &lt;strong&gt;continuous reinforcement&lt;/strong&gt; (every response reinforced) produces fast learning but fast extinction; &lt;strong&gt;partial/intermittent schedules&lt;/strong&gt; (fixed-ratio, variable-ratio, fixed-interval, variable-interval) produce slower learning but far greater resistance to extinction — variable-ratio schedules in particular produce the highest, steadiest response rates, the same principle underlying slot-machine-style unpredictable reward.&lt;/p&gt;
 &lt;h3&gt;Observational and Insight Learning&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;observational-and-insight-learning&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#observational-and-insight-learning&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Observational (social) learning&lt;/strong&gt; is acquiring a behavior by watching another individual perform it, without direct trial-and-error by the observer — the best-documented wild case is &lt;strong&gt;milk-bottle-top opening in British great tits (&lt;em&gt;Parus major&lt;/em&gt;)&lt;/strong&gt;, which spread through local populations from a small number of innovating individuals in a pattern consistent with social transmission rather than independent invention at every location. A closely related and more specific case, &lt;strong&gt;social learning of a novel food-processing technique&lt;/strong&gt;, is the well-documented &lt;strong&gt;Japanese macaque (&lt;em&gt;Macaca fuscata&lt;/em&gt;) potato-washing&lt;/strong&gt; case on Koshima Island, where a young female&amp;rsquo;s innovation of washing sand off sweet potatoes spread through her troop over subsequent years, disproportionately through younger animals and closely bonded individuals, a pattern used as evidence for cultural transmission in a non-human primate.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/koshima-macaque-potato-washing-spread.jpg&#34; alt=&#34;Photograph of two Koshima Island Japanese macaques at the water’s edge, one holding and washing a sweet potato before eating it.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/koshima-macaque-potato-washing-spread.jpg&#34; alt=&#34;Photograph of two Koshima Island Japanese macaques at the water’s edge, one holding and washing a sweet potato before eating it.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ResearchGate, photo credited to T. Matsuzawa&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Insight learning&lt;/strong&gt; is the sudden, apparently non-trial-and-error solving of a novel problem by combining previously learned elements — &lt;strong&gt;Wolfgang Köhler&amp;rsquo;s&lt;/strong&gt; captive chimpanzee experiments are the classic case, in which a chimpanzee unable to reach a suspended banana directly abruptly stacked crates or joined two short sticks into a longer one to reach it, without an observable period of gradual trial-and-error immediately preceding the solution.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/kohler-chimpanzee-stick-joining-insight.jpg&#34; alt=&#34;Black-and-white photograph of a Köhler chimpanzee experiment: one chimpanzee climbing a hanging rope/pole above a stack of crates, with other chimpanzees watching from the ground near additional crate materials.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/kohler-chimpanzee-stick-joining-insight.jpg&#34; alt=&#34;Black-and-white photograph of a Köhler chimpanzee experiment: one chimpanzee climbing a hanging rope/pole above a stack of crates, with other chimpanzees watching from the ground near additional crate materials.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: pigeon.psy.tufts.edu (Tufts University, Psych 26 course materials)&lt;/em&gt;&lt;/p&gt;
 &lt;!-- VIDEO: Japanese macaque potato-washing behavior spreading through the Koshima troop — Macaca fuscata — the spread-through-social-contact pattern is the point being taught and is much clearer shown across individuals than described --&gt;
@@ -383,11 +383,11 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Operant conditioning quadrant classifier (drag-and-drop, HTML/JS, no new library)&lt;/strong&gt; — named consequence scenarios sorted into positive/negative reinforcement/punishment, with immediate feedback — directly targets the &amp;ldquo;positive/negative ≠ pleasant/unpleasant&amp;rdquo; confusion that drives most wrong answers on this topic.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;https://boguide.vercel.app/operant-quadrant-classifier.html&#34; title=&#34;Operant Conditioning Quadrant Classifier&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;http://localhost:1313/operant-quadrant-classifier.html&#34; title=&#34;Operant Conditioning Quadrant Classifier&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Reinforcement schedule response-rate simulator (Plotly)&lt;/strong&gt; — lets the user select continuous, fixed-ratio, variable-ratio, fixed-interval, or variable-interval schedules and view a simulated cumulative-response curve for each, then compare extinction rate after reinforcement stops — makes the abstract &amp;ldquo;resistance to extinction&amp;rdquo; claim visually concrete.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;https://boguide.vercel.app/reinforcement-schedule-simulator.html&#34; title=&#34;Reinforcement Schedule Response-Rate Simulator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 520px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;http://localhost:1313/reinforcement-schedule-simulator.html&#34; title=&#34;Reinforcement Schedule Response-Rate Simulator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 520px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt; &lt;em&gt;(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here)&lt;/em&gt;&lt;/p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
 			&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/PQtDTdDr8vs?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
@@ -407,10 +407,10 @@
     
     <item>
       <title>Animal Communication</title>
-      <link>https://boguide.vercel.app/resources/9-ethology/animal-communication/</link>
+      <link>http://localhost:1313/resources/9-ethology/animal-communication/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://boguide.vercel.app/resources/9-ethology/animal-communication/</guid>
+      <guid>http://localhost:1313/resources/9-ethology/animal-communication/</guid>
       <description>
         
         
@@ -426,7 +426,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;https://boguide.vercel.app/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
     
   
   
@@ -466,7 +466,7 @@
 &lt;li&gt;&lt;strong&gt;Electrical&lt;/strong&gt; — restricted to aquatic environments and a small set of lineages (weakly electric fish, e.g. mormyrids and gymnotiforms), used for both navigation and species/individual recognition via electric organ discharge waveform.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/waggle-dance-figure-eight-diagram.svg&#34; alt=&#34;Illustration of a honeybee tracing the waggle dance’s figure-eight pattern, with the straight waggle run highlighted.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/waggle-dance-figure-eight-diagram.svg&#34; alt=&#34;Illustration of a honeybee tracing the waggle dance’s figure-eight pattern, with the straight waggle run highlighted.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Wikipedia, &amp;ldquo;Waggle dance&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -479,14 +479,14 @@
 &lt;li&gt;&lt;strong&gt;The handicap principle&lt;/strong&gt; (Amotz Zahavi) — some signals are reliable specifically &lt;em&gt;because&lt;/em&gt; they are costly to produce or costly to survive while carrying, so only genuinely high-quality individuals can afford to produce them at full intensity. The &lt;strong&gt;peacock&amp;rsquo;s train&lt;/strong&gt; is the standard example: an elaborate, metabolically expensive, predation-risk-increasing display that (the theory argues) is an honest indicator of the male&amp;rsquo;s overall condition precisely because a low-quality male cannot afford to grow and carry it.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/peacock-train-handicap-principle-diagram.png&#34; alt=&#34;Graph of fitness costs and benefits vs. signal intensity, showing separate cost curves for low-quality and high-quality signalers against a shared benefit curve, with the resulting equilibrium signal intensity marked for each quality class.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/peacock-train-handicap-principle-diagram.png&#34; alt=&#34;Graph of fitness costs and benefits vs. signal intensity, showing separate cost curves for low-quality and high-quality signalers against a shared benefit curve, with the resulting equilibrium signal intensity marked for each quality class.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Springer (Biology &amp;amp; Philosophy)&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Deceptive signaling&lt;/strong&gt; does occur where the cost/reliability logic above doesn&amp;rsquo;t hold — mimicry-based deception (e.g. &lt;em&gt;Photuris&lt;/em&gt; firefly females mimicking the flash pattern of &lt;em&gt;Photinus&lt;/em&gt; females to lure and prey on responding &lt;em&gt;Photinus&lt;/em&gt; males) and bluffing displays in aggressive contests (an individual signaling higher fighting ability than it actually has) are both documented, and are kept in check evolutionarily only where the average payoff to receivers of ignoring signals entirely would be worse than the cost of occasional deception.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/photuris-photinus-firefly-flash-mimicry.jpg&#34; alt=&#34;Infographic on firefly flash-pattern communication: how bioluminescence is produced, and the distinct flash patterns of five North American Photinus firefly species used for species recognition.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/photuris-photinus-firefly-flash-mimicry.jpg&#34; alt=&#34;Infographic on firefly flash-pattern communication: how bioluminescence is produced, and the distinct flash patterns of five North American Photinus firefly species used for species recognition.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Facebook (Piedmont Naturalist History)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Ritualization&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;ritualization&#34;&gt;&lt;/span&gt;
@@ -562,11 +562,11 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Waggle dance decoder (interactive SVG/JS)&lt;/strong&gt; — the user sets a sun position and a dance angle on a stylized vertical comb, and the tool computes and displays the corresponding real-world foraging direction, with dance duration mapped to a distance readout — turns the dance-decoding rule into something manipulable rather than memorized.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;https://boguide.vercel.app/waggle-dance-decoder.html&#34; title=&#34;Waggle Dance Decoder&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 420px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;http://localhost:1313/waggle-dance-decoder.html&#34; title=&#34;Waggle Dance Decoder&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 420px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Vervet alarm call playback matcher (audio-triggered HTML/JS, no new library)&lt;/strong&gt; — three labeled call types (leopard/eagle/snake) each paired with the correct evasive-response image, with the calls presented in randomized order for the user to match — mirrors the actual playback-experiment logic Cheney and Seyfarth used.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;https://boguide.vercel.app/vervet-alarm-call-matcher.html&#34; title=&#34;Vervet Alarm Call Playback Matcher&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 360px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;http://localhost:1313/vervet-alarm-call-matcher.html&#34; title=&#34;Vervet Alarm Call Playback Matcher&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 360px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt; &lt;em&gt;(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Two exceptions: the ritualization sequence diagram was sourced but flagged as unusable — see the note under &amp;ldquo;Ritualization&amp;rdquo; above; the modality comparison chart was not sourced and remains unillustrated.)&lt;/em&gt;&lt;/p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
 			&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/q8ZG8Dpc8mM?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
@@ -586,10 +586,10 @@
     
     <item>
       <title>Orientation &amp; Navigation</title>
-      <link>https://boguide.vercel.app/resources/9-ethology/orientation-navigation/</link>
+      <link>http://localhost:1313/resources/9-ethology/orientation-navigation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://boguide.vercel.app/resources/9-ethology/orientation-navigation/</guid>
+      <guid>http://localhost:1313/resources/9-ethology/orientation-navigation/</guid>
       <description>
         
         
@@ -605,7 +605,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;https://boguide.vercel.app/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
     
   
   
@@ -640,7 +640,7 @@
 &lt;li&gt;&lt;strong&gt;Kinesis&lt;/strong&gt; is a change in movement &lt;em&gt;rate&lt;/em&gt; or &lt;em&gt;turning frequency&lt;/em&gt; in response to stimulus intensity, without the movement being directed toward or away from the stimulus source — the standard example is a woodlouse (&lt;em&gt;Porcellio&lt;/em&gt;), which increases its turning rate in dry conditions and decreases it in humid conditions, a purely rate-based response that statistically keeps the animal in humid microhabitats without ever &amp;ldquo;steering&amp;rdquo; toward humidity as such.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/woodlouse-humidity-kinesis-diagram.jpg&#34; alt=&#34;Woodlouse humidity-choice apparatus (a petri dish half-covered by a water-absorbing substance under mesh) and a graph of the number of woodlice not moving vs. relative humidity, rising sharply from low double digits at low humidity to consistently 60-75 at higher humidity.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/woodlouse-humidity-kinesis-diagram.jpg&#34; alt=&#34;Woodlouse humidity-choice apparatus (a petri dish half-covered by a water-absorbing substance under mesh) and a graph of the number of woodlice not moving vs. relative humidity, rising sharply from low double digits at low humidity to consistently 60-75 at higher humidity.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: exam/textbook figure (specific origin not stated by submitter)&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -654,7 +654,7 @@
 &lt;li&gt;&lt;strong&gt;True navigation (map sense)&lt;/strong&gt; — determining one&amp;rsquo;s position relative to a goal from an unfamiliar location and computing the correct heading to reach it, requiring some internal &amp;ldquo;map&amp;rdquo; of position beyond a simple compass bearing. The strongest evidence for true navigation comes from &lt;strong&gt;clock-shift and displacement experiments&lt;/strong&gt;: homing pigeons transported in covered crates to a release site far outside their prior experience, and released with their internal circadian clock experimentally shifted by several hours, show a systematic, predictable &lt;em&gt;error&lt;/em&gt; in initial heading consistent with using a time-compensated sun compass to compute direction — the predictable error itself is what demonstrates the mechanism, since a purely landmark-piloting bird would show no such systematic deflection.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/homing-pigeon-clock-shift-diagram.jpg&#34; alt=&#34;Two circular orientation plots from a pigeon clock-shift experiment: (a) clocks advanced 6 hours and (b) clocks delayed 6 hours, each dot representing one bird’s initial heading and the arrow the mean vector — the two mean vectors are rotated in opposite directions relative to true north/south.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/homing-pigeon-clock-shift-diagram.jpg&#34; alt=&#34;Two circular orientation plots from a pigeon clock-shift experiment: (a) clocks advanced 6 hours and (b) clocks delayed 6 hours, each dot representing one bird’s initial heading and the arrow the mean vector — the two mean vectors are rotated in opposite directions relative to true north/south.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ResearchGate, fig. from a Sun-compass clock-shift study&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Celestial and Magnetic Cues&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;celestial-and-magnetic-cues&#34;&gt;&lt;/span&gt;
@@ -664,21 +664,21 @@
 &lt;li&gt;&lt;strong&gt;Star compass&lt;/strong&gt; — used by nocturnally migrating birds; &lt;strong&gt;Stephen Emlen&amp;rsquo;s&lt;/strong&gt; planetarium experiments with indigo buntings showed that hand-raised birds exposed only to a planetarium sky rotating around an artificial &amp;ldquo;north&amp;rdquo; star oriented their migratory restlessness (&lt;strong&gt;Zugunruhe&lt;/strong&gt;) relative to that artificial rotational center rather than to real celestial north, demonstrating the birds learn the star compass from the &lt;em&gt;pattern of rotation&lt;/em&gt; of the night sky during development rather than being born with fixed knowledge of specific star positions.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/emlen-funnel-diagram.svg&#34; alt=&#34;Diagram of the Emlen funnel apparatus, a funnel-shaped cage lined with ink-marking paper that records a bird’s preferred hopping/scratching direction as ink marks on the funnel wall.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/emlen-funnel-diagram.svg&#34; alt=&#34;Diagram of the Emlen funnel apparatus, a funnel-shaped cage lined with ink-marking paper that records a bird’s preferred hopping/scratching direction as ink marks on the funnel wall.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Wikipedia, &amp;ldquo;Emlen funnel&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Magnetoreception&lt;/strong&gt; — sensitivity to the Earth&amp;rsquo;s magnetic field, well documented in migratory birds, sea turtles, and some fish, with &lt;strong&gt;magnetite-based&lt;/strong&gt; (iron-oxide crystals proposed in or near the beak/head in birds) and &lt;strong&gt;radical-pair/cryptochrome-based&lt;/strong&gt; (a light-dependent chemical mechanism in the eye, proposed as the basis of an &amp;ldquo;inclination compass&amp;rdquo; sensitive to field angle rather than polarity) mechanisms both under active study as complementary or alternative pathways.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/magnetoreception-mechanisms-comparison.jpg&#34; alt=&#34;Diagram of the proposed cryptochrome-based radical-pair magnetoreception pathway: eye → retina layers (rod/cone/bipolar/ganglion cells) → rod cell outer segment discs → cryptochrome protein positioned alongside rhodopsin in the disc membrane.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/magnetoreception-mechanisms-comparison.jpg&#34; alt=&#34;Diagram of the proposed cryptochrome-based radical-pair magnetoreception pathway: eye → retina layers (rod/cone/bipolar/ganglion cells) → rod cell outer segment discs → cryptochrome protein positioned alongside rhodopsin in the disc membrane.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Theoretical and Computational Biophysics Group, Beckman Institute, University of Illinois at Urbana-Champaign (ks.uiuc.edu)&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Loggerhead sea turtle (&lt;em&gt;Caretta caretta&lt;/em&gt;) natal homing&lt;/strong&gt; combines several of the above: hatchlings imprint on the magnetic signature of their natal beach and, after years at sea, adult females use magnetic map cues to return to nest at the same coastline — a heavily tested case because it demonstrates true map-like navigation (not just a compass bearing) over an ocean-basin scale with no landmarks available.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/loggerhead-turtle-natal-homing-map.webp&#34; alt=&#34;Map of loggerhead sea turtle satellite telemetry locations across the Pacific Ocean, density-shaded by hexagon, spanning from Japan/Taiwan across to the western United States/Mexico and a separate cluster around New Caledonia/Australia.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/loggerhead-turtle-natal-homing-map.webp&#34; alt=&#34;Map of loggerhead sea turtle satellite telemetry locations across the Pacific Ocean, density-shaded by hexagon, spanning from Japan/Taiwan across to the western United States/Mexico and a separate cluster around New Caledonia/Australia.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: seaturtlestatus.org (State of the World&amp;rsquo;s Sea Turtles)&lt;/em&gt;&lt;/p&gt;
 &lt;!-- VIDEO: Homing pigeon clock-shift experiment showing the predictable heading error after a 6-hour internal clock shift — Columba livia — the deflection angle relative to true home direction is the entire evidentiary point and is far clearer as an animated vector diagram than a static one --&gt;
@@ -686,7 +686,7 @@
     &lt;a href=&#34;#migration&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Migration&lt;/strong&gt; is a regular, often seasonal, round-trip movement between two or more habitats, distinguished from simple dispersal by its regularity and directionality. The &lt;strong&gt;ultimate (survival-value) explanation&lt;/strong&gt;, per Tinbergen&amp;rsquo;s framework (see &lt;a
     href=&#34;../Mechanisms-of-Behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;), is usually resource seasonality and/or breeding-site quality trade-offs — the &lt;strong&gt;Arctic tern (&lt;em&gt;Sterna paradisaea&lt;/em&gt;)&lt;/strong&gt;&amp;rsquo;s roughly pole-to-pole annual migration (the longest of any animal) lets it exploit summer daylight and food abundance in both hemispheres in turn. Migration carries substantial costs directly testable in a cost-benefit framing: high energetic expenditure (fat reserves built up before departure and depleted en route), significant mortality risk during transit (storms, exhaustion, predation at unfamiliar stopover sites), and time lost that cannot be spent on reproduction or feeding — costs that must be outweighed by the resource/breeding benefit at the destination for migration to be evolutionarily stable, and the reason &lt;strong&gt;partial migration&lt;/strong&gt; (only some individuals of a population migrate in a given year, often condition- or age-dependent) is common and itself an active research topic.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/arctic-tern-migration-route-map.png&#34; alt=&#34;World map with arrows showing a pole-to-pole migratory pattern: routes running from Arctic/high-latitude breeding regions (Canada, Greenland, Northern Europe, Russia) down to Antarctic wintering waters.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/arctic-tern-migration-route-map.png&#34; alt=&#34;World map with arrows showing a pole-to-pole migratory pattern: routes running from Arctic/high-latitude breeding regions (Canada, Greenland, Northern Europe, Russia) down to Antarctic wintering waters.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: go2moon.com&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Comparative Structures&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;comparative-structures&#34;&gt;&lt;/span&gt;
@@ -746,11 +746,11 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Kinesis vs. taxis simulator (SVG/JS)&lt;/strong&gt; — a simulated organism moving on a 2D stimulus gradient, toggled between a kinesis rule (turning rate scales with stimulus intensity, direction random) and a taxis rule (movement directed along the gradient), letting the user see the same starting distribution produce clustering in humid patches under kinesis alone, without any directed steering.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;https://boguide.vercel.app/kinesis-taxis-simulator.html&#34; title=&#34;Kinesis vs. Taxis Simulator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 420px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;http://localhost:1313/kinesis-taxis-simulator.html&#34; title=&#34;Kinesis vs. Taxis Simulator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 420px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Sun-compass clock-shift predictor (SVG/JS)&lt;/strong&gt; — user sets a true home direction and a clock-shift amount (hours), and the tool computes and displays the predicted heading error angle, mirroring the logic of the actual pigeon experiments.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;https://boguide.vercel.app/sun-compass-clock-shift-predictor.html&#34; title=&#34;Sun-Compass Clock-Shift Predictor&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 420px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;http://localhost:1313/sun-compass-clock-shift-predictor.html&#34; title=&#34;Sun-Compass Clock-Shift Predictor&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 420px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt; &lt;em&gt;(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
 			&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/sWZWonlJzSQ?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
@@ -771,10 +771,10 @@
     
     <item>
       <title>Foraging &amp; Anti-Predator Behavior</title>
-      <link>https://boguide.vercel.app/resources/9-ethology/foraging-anti-predator-behavior/</link>
+      <link>http://localhost:1313/resources/9-ethology/foraging-anti-predator-behavior/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://boguide.vercel.app/resources/9-ethology/foraging-anti-predator-behavior/</guid>
+      <guid>http://localhost:1313/resources/9-ethology/foraging-anti-predator-behavior/</guid>
       <description>
         
         
@@ -790,7 +790,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;https://boguide.vercel.app/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
     
   
   
@@ -827,7 +827,7 @@
 &lt;h3&gt;The Marginal Value Theorem&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-marginal-value-theorem&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#the-marginal-value-theorem&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The &lt;strong&gt;marginal value theorem&lt;/strong&gt; (Eric Charnov) addresses a specific sub-problem: when food occurs in discrete, depleting &lt;strong&gt;patches&lt;/strong&gt; (a flower cluster, a fruiting tree, a shoal of prey) separated by non-foraging travel time, how long should a forager stay in a given patch before moving to the next one? As a forager depletes a patch, its intake rate within that patch declines; the marginal value theorem predicts the optimal &lt;strong&gt;giving-up time&lt;/strong&gt; is reached when the current patch&amp;rsquo;s declining intake rate falls to match the &lt;em&gt;average&lt;/em&gt; intake rate achievable across the whole habitat (including travel time to the next patch) — not when the patch is fully depleted. A direct, testable consequence: foragers should stay &lt;em&gt;longer&lt;/em&gt; in each patch as travel time between patches increases (since abandoning a patch early is more costly when the next one is far away), a pattern confirmed experimentally in bumblebees foraging on artificial flower patches with manipulated inter-patch distances.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/marginal-value-theorem-tangent-diagram.jpg&#34; alt=&#34;Charnov’s marginal value theorem graphical solution: cumulative resource intake vs. time foraging in a patch, a diminishing-returns curve, with a tangent line drawn from the negative x-axis (expected transit time) touching the curve at the optimal time in patch.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/marginal-value-theorem-tangent-diagram.jpg&#34; alt=&#34;Charnov’s marginal value theorem graphical solution: cumulative resource intake vs. time foraging in a patch, a diminishing-returns curve, with a tangent line drawn from the negative x-axis (expected transit time) touching the curve at the optimal time in patch.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Wikipedia, &amp;ldquo;Marginal value theorem&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;The Predator-Prey Behavioral Arms Race&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-predator-prey-behavioral-arms-race&#34;&gt;&lt;/span&gt;
@@ -851,14 +851,14 @@
 &lt;li&gt;&lt;strong&gt;Predator swamping/satiation&lt;/strong&gt; — the same mass-synchrony logic as the dilution effect, extended to the case where predator population size cannot track sudden prey abundance (periodical cicada mass emergences are the standard example: a 13- or 17-year emergence cycle produces prey numbers far exceeding what the local predator community can consume in a single season, so a fixed fraction survives regardless of predator numbers).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/periodical-cicada-emergence-timeline.jpg&#34; alt=&#34;Two-panel timeline: predator response/availability curves over time (top) alongside cicada phenology (bottom), showing underground final-instar nymphs giving way to a sharp spike in adult cicada availability at T2, timed against predator response curves.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/periodical-cicada-emergence-timeline.jpg&#34; alt=&#34;Two-panel timeline: predator response/availability curves over time (top) alongside cicada phenology (bottom), showing underground final-instar nymphs giving way to a sharp spike in adult cicada availability at T2, timed against predator response curves.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: exam/textbook figure (specific origin not stated by submitter)&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Startle and deimatic displays&lt;/strong&gt; — sudden exposure of conspicuous markings (e.g. peacock butterfly eyespots flashed open in response to an approaching predator) intended to startle a predator or mimic the appearance of a larger animal&amp;rsquo;s eyes, buying an escape window.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/peacock-butterfly-eyespot-display.jpg&#34; alt=&#34;Peacock butterfly with wings open, its two large wing eyespots circled/highlighted.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/peacock-butterfly-eyespot-display.jpg&#34; alt=&#34;Peacock butterfly with wings open, its two large wing eyespots circled/highlighted.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Yorkshire Museum (Facebook)&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -917,11 +917,11 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Marginal value theorem patch-departure simulator (Plotly)&lt;/strong&gt; — user sets inter-patch travel time and views a graphical solution (tangent-line construction) showing the optimal giving-up point on a declining within-patch intake curve, with the optimal residence time recalculating live as travel time changes.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;https://boguide.vercel.app/marginal-value-theorem-simulator.html&#34; title=&#34;Marginal Value Theorem Patch-Departure Simulator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;http://localhost:1313/marginal-value-theorem-simulator.html&#34; title=&#34;Marginal Value Theorem Patch-Departure Simulator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Group-size vigilance/dilution simulator (SVG/JS)&lt;/strong&gt; — a simulated group of foraging animals where the user adjusts group size and sees per-individual scanning time decrease (vigilance) alongside a separately computed per-individual capture-probability decrease (dilution), demonstrating the two effects are related but mechanistically distinct.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;https://boguide.vercel.app/group-size-vigilance-dilution-simulator.html&#34; title=&#34;Group-Size Vigilance/Dilution Simulator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 420px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;http://localhost:1313/group-size-vigilance-dilution-simulator.html&#34; title=&#34;Group-Size Vigilance/Dilution Simulator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 420px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt; &lt;em&gt;(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Two exceptions flagged as unusable rather than embedded — see the notes under &amp;ldquo;Optimal Foraging Theory&amp;rdquo; and &amp;ldquo;Vigilance and the Dilution Effect&amp;rdquo; above.)&lt;/em&gt;&lt;/p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
 			&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/cZJOtBi1yV0?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
@@ -941,10 +941,10 @@
     
     <item>
       <title>Mating Systems &amp; Sexual Selection</title>
-      <link>https://boguide.vercel.app/resources/9-ethology/mating-systems-sexual-selection/</link>
+      <link>http://localhost:1313/resources/9-ethology/mating-systems-sexual-selection/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://boguide.vercel.app/resources/9-ethology/mating-systems-sexual-selection/</guid>
+      <guid>http://localhost:1313/resources/9-ethology/mating-systems-sexual-selection/</guid>
       <description>
         
         
@@ -960,7 +960,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;https://boguide.vercel.app/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
     
   
   
@@ -997,14 +997,14 @@
     href=&#34;../Animal-Communication/&#34;&gt;Animal Communication&lt;/a&gt;) is the standard example, favored because peahens preferentially mate with more elaborately trained males.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/peacock-train-diagram.png&#34; alt=&#34;Comparative fitness-trade-off figure contrasting an “additive model” (parent-offspring begging conflict) against a “multiplicative model” of mate choice (illustrated with a peacock and peahen), each showing benefit, trade-off, and resulting fitness curves against a shared resource axis.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/peacock-train-diagram.png&#34; alt=&#34;Comparative fitness-trade-off figure contrasting an “additive model” (parent-offspring begging conflict) against a “multiplicative model” of mate choice (illustrated with a peacock and peahen), each showing benefit, trade-off, and resulting fitness curves against a shared resource axis.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Springer/BMC Biology&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Intrasexual selection&lt;/strong&gt; (mate competition) — members of one sex (typically male) compete directly with each other for access to mates, so that traits favoring competitive success (large body size, weapons, aggression) increase in frequency through winning contests rather than through being chosen. Elephant seal male bulls, which fight for control of a harem and show extreme size dimorphism relative to females as a direct result, are the standard example.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/elephant-seal-sexual-dimorphism-diagram.jpg&#34; alt=&#34;Illustration of adult male, adult female, and pup elephant seals to scale, showing the male’s much greater size and distinctive proboscis compared to the female.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/elephant-seal-sexual-dimorphism-diagram.jpg&#34; alt=&#34;Illustration of adult male, adult female, and pup elephant seals to scale, showing the male’s much greater size and distinctive proboscis compared to the female.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ScienceDirect Topics (northern elephant seal)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Both routes can act on the same species simultaneously and even on the same trait — red deer stag antlers are used both for direct male-male combat (intrasexual) and are separately assessed by females as a quality signal during mate choice (intersexual).&lt;/p&gt;
@@ -1049,22 +1049,22 @@
 	&lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/mating-system-diversity-table-graphic.jpg&#34; alt=&#34;Mating system diagram using blue (male) and pink (female) icons and arrows: monogamy (1:1), polygyny (1 male:multiple females), polyandry (multiple males:1 female), polygynandry (multiple:multiple, with parental investment), and promiscuity (multiple:multiple, without parental investment).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/mating-system-diversity-table-graphic.jpg&#34; alt=&#34;Mating system diagram using blue (male) and pink (female) icons and arrows: monogamy (1:1), polygyny (1 male:multiple females), polyandry (multiple males:1 female), polygynandry (multiple:multiple, with parental investment), and promiscuity (multiple:multiple, without parental investment).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Springer, &amp;ldquo;Reference Work Entry&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Sex-role reversal&lt;/strong&gt; in phalaropes and pipefish/seahorses (in the latter, males brood fertilized eggs in a specialized pouch, making male investment per offspring exceed female&amp;rsquo;s) is a heavily tested confirmation of parental investment theory precisely because it demonstrates the &lt;em&gt;investment asymmetry&lt;/em&gt;, not male/female identity per se, is the causal variable — when investment reverses, so does the pattern of choosiness and competition.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/phalarope-sex-role-reversal-diagram.jpg&#34; alt=&#34;Three photographs of red phalaropes in breeding plumage: (1) a typical male, (2-3) females — females are the more brightly colored, more strikingly patterned sex in this species, the reverse of the usual vertebrate pattern.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/phalarope-sex-role-reversal-diagram.jpg&#34; alt=&#34;Three photographs of red phalaropes in breeding plumage: (1) a typical male, (2-3) females — females are the more brightly colored, more strikingly patterned sex in this species, the reverse of the usual vertebrate pattern.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ResearchGate&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Sperm Competition&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;sperm-competition&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#sperm-competition&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Sperm competition&lt;/strong&gt; occurs whenever a female mates with multiple males within a single reproductive cycle, so that sperm from different males compete directly to fertilize the same set of eggs — this creates selection on males for traits that increase paternity share independent of pre-copulatory mate choice or combat. Documented adaptations include: &lt;strong&gt;increased relative testis size&lt;/strong&gt; and sperm production in species/populations with higher female mating promiscuity (confirmed comparatively across primates — chimpanzees, which are highly promiscuous, have much larger relative testis size than gorillas, which are polygynous with low female mating rates, despite gorillas being far larger overall); &lt;strong&gt;mate guarding&lt;/strong&gt; (a male remaining with a female after mating to prevent her from remating before fertilization); and &lt;strong&gt;copulatory plugs&lt;/strong&gt; (a physical barrier left in the female reproductive tract after mating, documented in some rodents and insects, that delays or blocks subsequent males&amp;rsquo; sperm from reaching the eggs).&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/ibo-for-8.png&#34; alt=&#34;IBO 2023 (34th International Biology Olympiad, Theory 2, Q.35) exam question: a table of three primate species’ male body mass, male-to-female body mass ratio, testes-mass-to-body-mass ratio, and typical offspring number, with four multiple-choice questions asking which species is predicted to have the highest male aggression, highest variance in matings per male, multi-male multi-female grouping, and male parental care.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/ibo-for-8.png&#34; alt=&#34;IBO 2023 (34th International Biology Olympiad, Theory 2, Q.35) exam question: a table of three primate species’ male body mass, male-to-female body mass ratio, testes-mass-to-body-mass ratio, and typical offspring number, with four multiple-choice questions asking which species is predicted to have the highest male aggression, highest variance in matings per male, multi-male multi-female grouping, and male parental care.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: International Biology Olympiad 2023, Theory 2 (official exam) — submitted as a substitute for the originally-requested testis-size chart, and a better fit for the IBO/USABO syllabus this guide targets: a real released exam question testing the exact testis-mass/body-mass/mating-system inference logic described in the text.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/ibo-for-82.png&#34; alt=&#34;Official IBO 2023 answer key and reasoning for Q.35, citing Harcourt, Harvey, Larson &amp; Short (1981) “Testis weight, body weight and breeding system in primates,” Nature 293 — the same foundational comparative-primatology paper underlying the chimpanzee-vs-gorilla testis-size claim in the text.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/ibo-for-82.png&#34; alt=&#34;Official IBO 2023 answer key and reasoning for Q.35, citing Harcourt, Harvey, Larson &amp; Short (1981) “Testis weight, body weight and breeding system in primates,” Nature 293 — the same foundational comparative-primatology paper underlying the chimpanzee-vs-gorilla testis-size claim in the text.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: International Biology Olympiad 2023, Theory 2 (official answer key)&lt;/em&gt;&lt;/p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -1128,11 +1128,11 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Parental investment asymmetry predictor (HTML/JS, no new library)&lt;/strong&gt; — user sets relative male and female investment levels on a slider and the tool predicts which sex should be more competitive vs. more choosy, letting the user &amp;ldquo;discover&amp;rdquo; the sex-role-reversal prediction by pushing male investment above female investment.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;https://boguide.vercel.app/parental-investment-predictor.html&#34; title=&#34;Parental Investment Asymmetry Predictor&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 400px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;http://localhost:1313/parental-investment-predictor.html&#34; title=&#34;Parental Investment Asymmetry Predictor&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 400px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Mating system classifier (drag-and-drop, HTML/JS)&lt;/strong&gt; — named species scenarios (with brief mating-behavior descriptions) sorted into monogamy/polygyny/polyandry/promiscuity bins, reinforcing the classification against real examples rather than abstract definitions.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;https://boguide.vercel.app/mating-system-classifier.html&#34; title=&#34;Mating System Classifier&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;http://localhost:1313/mating-system-classifier.html&#34; title=&#34;Mating System Classifier&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt; &lt;em&gt;(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)&lt;/em&gt;&lt;/p&gt;
 &lt;!-- VIDEO: Phalarope courtship behavior showing females competing for mate access — Phalaropus species — the reversed courtship dynamic (typically female-initiated pursuit) is the clearest possible demonstration that investment, not sex identity, drives the behavioral pattern --&gt;
 &lt;!-- Submitted source (youtube.com/watch?v=br6GtnNNJv0, &#34;Phun with Phalaropes! The bird that spins in circles&#34;) is about phalarope feeding-spin behavior, not courtship/mate-competition — not embedded. Send a courtship-specific clip if one is available. --&gt;
@@ -1150,10 +1150,10 @@
     
     <item>
       <title>Kin Selection, Altruism &amp; Eusociality</title>
-      <link>https://boguide.vercel.app/resources/9-ethology/kin-selection-altruism-eusociality/</link>
+      <link>http://localhost:1313/resources/9-ethology/kin-selection-altruism-eusociality/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://boguide.vercel.app/resources/9-ethology/kin-selection-altruism-eusociality/</guid>
+      <guid>http://localhost:1313/resources/9-ethology/kin-selection-altruism-eusociality/</guid>
       <description>
         
         
@@ -1169,7 +1169,7 @@
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;https://boguide.vercel.app/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
     
   
   
@@ -1206,13 +1206,13 @@ $$rB &amp;gt; C$$
 
 &lt;p&gt;where &lt;strong&gt;r&lt;/strong&gt; is the coefficient of relatedness between actor and recipient (the probability the two share a given gene by common descent — 0.5 for full siblings or parent-offspring in a diploid species, 0.25 for half-siblings, 0.125 for first cousins), &lt;strong&gt;B&lt;/strong&gt; is the reproductive benefit to the recipient, and &lt;strong&gt;C&lt;/strong&gt; is the reproductive cost to the actor. The rule predicts altruism should be more readily favored toward closer relatives (higher r) and when the benefit-to-cost ratio is large — both patterns confirmed in Belding&amp;rsquo;s ground squirrel alarm-calling frequency (higher when close kin are nearby) and in &lt;strong&gt;Florida scrub-jay (&lt;em&gt;Aphelocoma coerulescens&lt;/em&gt;) helper-at-the-nest behavior&lt;/strong&gt;, where non-breeding young help raise siblings rather than breed independently, disproportionately when territory/mate scarcity make independent breeding unlikely to succeed — making the &amp;ldquo;C&amp;rdquo; term (cost of forgoing independent breeding) low relative to the &amp;ldquo;B&amp;rdquo; term (helping a full sibling, r = 0.5, succeed).&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/hamiltons-rule-worked-example.webp&#34; alt=&#34;Slide stating Hamilton’s rule (rb &amp;gt; c), defining r as relatedness of donor to recipient, b as benefit to recipient, c as cost to donor, equivalent forms r &amp;gt; c/b and rb − c &amp;gt; 0, and noting that increased relatedness increases altruistic behavior while decreased relatedness increases “spitefulness.”&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/hamiltons-rule-worked-example.webp&#34; alt=&#34;Slide stating Hamilton’s rule (rb &amp;gt; c), defining r as relatedness of donor to recipient, b as benefit to recipient, c as cost to donor, equivalent forms r &amp;gt; c/b and rb − c &amp;gt; 0, and noting that increased relatedness increases altruistic behavior while decreased relatedness increases “spitefulness.”&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: SlideShare&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Reciprocal Altruism&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;reciprocal-altruism&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#reciprocal-altruism&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Reciprocal altruism&lt;/strong&gt; (Robert Trivers) explains apparently altruistic behavior toward &lt;em&gt;non-relatives&lt;/em&gt; (r ≈ 0), where kin selection cannot apply: an individual incurs a cost to help another now, in exchange for the recipient reciprocating later, so long as the arrangement is stable against cheating (an individual receiving help without ever reciprocating). &lt;strong&gt;Vampire bat (&lt;em&gt;Desmodus rotundus&lt;/em&gt;) blood-sharing&lt;/strong&gt; is the canonical field-confirmed case: bats that fail to feed on a given night risk starvation within about 60 hours, and well-fed roost-mates (not necessarily close kin) regurgitate blood to share with a hungry individual, with field data (Gerald Wilkinson) showing sharing is preferentially directed toward individuals who have previously reciprocated, and withheld from previously-observed non-reciprocators — direct evidence the system depends on tracking individual reciprocation history, not indiscriminate generosity, and is vulnerable to and defended against cheating.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/vampire-bat-blood-sharing-network.jpg&#34; alt=&#34;Diagram of Gerald Wilkinson’s vampire bat food-sharing experimental design: separate-groups trials (57 fasting trials over 6 months, bats from two source colonies), controlled-introduction trials (106 fasting trials, pairs and quartets), and mixed-group trials (532 fasting trials over 303 days, combining bats from both source colonies plus captive-born individuals).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/vampire-bat-blood-sharing-network.jpg&#34; alt=&#34;Diagram of Gerald Wilkinson’s vampire bat food-sharing experimental design: separate-groups trials (57 fasting trials over 6 months, bats from two source colonies), controlled-introduction trials (106 fasting trials, pairs and quartets), and mixed-group trials (532 fasting trials over 303 days, combining bats from both source colonies plus captive-born individuals).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: sciencedirect.com (Current Biology)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Eusociality and Haplodiploidy&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;eusociality-and-haplodiploidy&#34;&gt;&lt;/span&gt;
@@ -1222,7 +1222,7 @@ $$rB &amp;gt; C$$
 
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/eusociality-three-criteria-diagram.avif&#34; alt=&#34;Sociality-gradient figure across social insect clades (wasps, bees, termites, ants), showing physical differentiation of reproductive vs. worker castes from “all can reproduce” through a marked “major transition to superorganismality” to “one or few can reproduce,” cross-referenced against which clades show caste-linked gut microbiota variation.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/eusociality-three-criteria-diagram.avif&#34; alt=&#34;Sociality-gradient figure across social insect clades (wasps, bees, termites, ants), showing physical differentiation of reproductive vs. worker castes from “all can reproduce” through a marked “major transition to superorganismality” to “one or few can reproduce,” cross-referenced against which clades show caste-linked gut microbiota variation.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: fiveable.me&lt;/em&gt;&lt;/p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -1232,7 +1232,7 @@ $$rB &amp;gt; C$$
 &lt;h3&gt;The Group Selection Debate&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-group-selection-debate&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#the-group-selection-debate&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Group selection&lt;/strong&gt; (selection favoring traits because they benefit the group/species as a whole, even at a cost to the individual bearing them) was an earlier, now largely rejected explanation for altruism, historically proposed for phenomena like alarm calling (&amp;ldquo;the species benefits from having some individuals warn others&amp;rdquo;). The core theoretical problem, raised forcefully by George C. Williams and others in the 1960s, is that within any group containing both altruists and non-altruists (cheaters who benefit from others&amp;rsquo; altruism without reciprocating), the non-altruists should always out-reproduce the altruists &lt;em&gt;within&lt;/em&gt; that group, so group selection requires implausibly strong between-group selection to overcome this within-group disadvantage in most realistic population structures. Kin selection and reciprocal altruism largely displaced naive group selection as the accepted explanation because both operate at the level of the individual gene&amp;rsquo;s transmission (via relatives or via reciprocation) without requiring group-level selection to do the work — this history is itself a common exam topic, framed as &amp;ldquo;explain why kin selection is a stronger explanation than group selection for [a given altruistic behavior].&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/group-selection-vs-kin-selection-diagram.jpg&#34; alt=&#34;K-G space diagram plotting whole-genome relatedness correlation (K) against how “groupy” a population’s interaction structure is (G), with four quadrants: high-K/low-G kin clustering without defined groups, high-K/high-G well-defined kin-groups, low-K/low-G no clear groups, and low-K/high-G well-defined groups of non-kin — kin selection and group selection shown as overlapping regions of this same space rather than fully separate theories.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/group-selection-vs-kin-selection-diagram.jpg&#34; alt=&#34;K-G space diagram plotting whole-genome relatedness correlation (K) against how “groupy” a population’s interaction structure is (G), with four quadrants: high-K/low-G kin clustering without defined groups, high-K/high-G well-defined kin-groups, low-K/low-G no clear groups, and low-K/high-G well-defined groups of non-kin — kin selection and group selection shown as overlapping regions of this same space rather than fully separate theories.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ResearchGate&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Comparative Structures&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;comparative-structures&#34;&gt;&lt;/span&gt;
@@ -1286,11 +1286,11 @@ $$rB &amp;gt; C$$
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Hamilton&amp;rsquo;s rule calculator (HTML/JS, no new library)&lt;/strong&gt; — user sets relatedness (via a selectable relationship: full sibling, half-sibling, cousin, haplodiploid full sister), benefit, and cost values, and the tool computes rB vs. C and indicates whether the modeled altruistic act is predicted to be favored — turns the inequality into something manipulable against named relationship types.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;https://boguide.vercel.app/hamiltons-rule-calculator.html&#34; title=&#34;Hamilton&amp;#39;s Rule Calculator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;http://localhost:1313/hamiltons-rule-calculator.html&#34; title=&#34;Hamilton&amp;#39;s Rule Calculator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Haplodiploidy relatedness pedigree (interactive SVG/JS)&lt;/strong&gt; — a clickable Hymenoptera family pedigree where selecting any two individuals (e.g. two sisters, a mother and daughter) displays the computed relatedness coefficient and the reasoning (shared paternal haploid genome vs. shared maternal alleles), directly demonstrating why full sisters reach r = 0.75.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;https://boguide.vercel.app/haplodiploidy-relatedness-pedigree.html&#34; title=&#34;Haplodiploidy Relatedness Pedigree&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 460px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;http://localhost:1313/haplodiploidy-relatedness-pedigree.html&#34; title=&#34;Haplodiploidy Relatedness Pedigree&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 460px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt; &lt;em&gt;(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. The haplodiploidy diagram was sourced but flagged as unusable — see the note under &amp;ldquo;Eusociality and Haplodiploidy&amp;rdquo; above.)&lt;/em&gt;&lt;/p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
 			&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/ADWSG_JtcEw?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;
@@ -1310,10 +1310,10 @@ $$rB &amp;gt; C$$
     
     <item>
       <title>Aggression, Territoriality &amp; Social Structure</title>
-      <link>https://boguide.vercel.app/resources/9-ethology/aggression-territoriality-social-structure/</link>
+      <link>http://localhost:1313/resources/9-ethology/aggression-territoriality-social-structure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://boguide.vercel.app/resources/9-ethology/aggression-territoriality-social-structure/</guid>
+      <guid>http://localhost:1313/resources/9-ethology/aggression-territoriality-social-structure/</guid>
       <description>
         
         
@@ -1329,9 +1329,9 @@ $$rB &amp;gt; C$$
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;https://boguide.vercel.app/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;https://boguide.vercel.app/resources/9-ethology/kin-selection-altruism-eusociality/&#34;&gt;Kin Selection Altruism Eusociality&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/9-ethology/kin-selection-altruism-eusociality/&#34;&gt;Kin Selection Altruism Eusociality&lt;/a&gt;
     
   
   
@@ -1364,17 +1364,17 @@ $$rB &amp;gt; C$$
     &lt;a href=&#34;#key-concepts&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Game Theory and the Hawk-Dove Model&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;game-theory-and-the-hawk-dove-model&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#game-theory-and-the-hawk-dove-model&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The &lt;strong&gt;hawk-dove model&lt;/strong&gt; (John Maynard Smith and George Price) is the standard teaching case for why animal contests over a resource (a territory, a mate) so often resolve through ritualized display rather than escalating to injurious fighting, despite an individual &amp;ldquo;hawk&amp;rdquo; strategist (always escalate to real fighting) seemingly gaining more per contest than a &amp;ldquo;dove&amp;rdquo; strategist (only display, retreat if opponent escalates). The model shows why: in a population of all doves, a single hawk mutant does gain an advantage (it wins every contest against non-escalating doves). But in a population of all hawks, the cost of injury from constant serious fighting drives average hawk fitness down substantially, to the point that a dove mutant (which never risks injury, and simply avoids fights it can&amp;rsquo;t win outright) can invade. Under a broad range of realistic parameters, the population settles at a stable &lt;strong&gt;mixture&lt;/strong&gt; of hawk and dove strategies (or, equivalently, individuals playing a mixed hawk/dove strategy probabilistically) — this stable mixture is an &lt;strong&gt;evolutionarily stable strategy (ESS)&lt;/strong&gt;: a strategy that, once common in a population, cannot be displaced by any alternative strategy appearing at low frequency. Real contest behavior across many species (e.g. many bird and fish territorial disputes) matches this ESS prediction well: escalated, potentially injurious fighting is empirically rare relative to ritualized threat displays and quick retreats, consistent with a population near the hawk-dove ESS balance rather than one dominated by unconditional escalation.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/hawk-dove-payoff-matrix.jpg&#34; alt=&#34;Hawk-dove payoff matrix table: hawk-vs-hawk (wins 50% of fights, injured 50%, payoff (V−D)/2), hawk-vs-dove (hawk always wins, payoff V; dove flees, payoff 0), dove-vs-dove (wins 50%, never injured but wastes time, payoff V/2−T), with V = value of the resource, D = cost of injury, T = cost of wasted time.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/hawk-dove-payoff-matrix.jpg&#34; alt=&#34;Hawk-dove payoff matrix table: hawk-vs-hawk (wins 50% of fights, injured 50%, payoff (V−D)/2), hawk-vs-dove (hawk always wins, payoff V; dove flees, payoff 0), dove-vs-dove (wins 50%, never injured but wastes time, payoff V/2−T), with V = value of the resource, D = cost of injury, T = cost of wasted time.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: AI-generated (Grok)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/hawk-dove-ess-fitness-graph.png&#34; alt=&#34;Four-panel evolutionary-game-theory figure: (a) hawk and dove relative fitness lines crossing at the ESS proportion of doves, (b) a “Retaliator” strategy’s fitness relative to hawk, (c) a “Tit-for-Tat” (TFT) strategy’s fitness relative to two hawk-invasion-rate scenarios, (d) the underlying replicator-dynamics equations.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/hawk-dove-ess-fitness-graph.png&#34; alt=&#34;Four-panel evolutionary-game-theory figure: (a) hawk and dove relative fitness lines crossing at the ESS proportion of doves, (b) a “Retaliator” strategy’s fitness relative to hawk, (c) a “Tit-for-Tat” (TFT) strategy’s fitness relative to two hawk-invasion-rate scenarios, (d) the underlying replicator-dynamics equations.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: figure from a formal evolutionary game theory reference&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Dominance Hierarchies&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;dominance-hierarchies&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#dominance-hierarchies&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A &lt;strong&gt;dominance hierarchy&lt;/strong&gt; is a stable, repeatedly-observed ranking of individuals within a group such that higher-ranked individuals consistently win contests over resources against lower-ranked ones, often with little or no actual fighting once the hierarchy is established — the ranking itself, once known by all members, substitutes for repeated costly contests. The clearest classic case is the &lt;strong&gt;linear &amp;ldquo;pecking order&amp;rdquo; in domestic chickens&lt;/strong&gt; (Thorleif Schjelderup-Ebbe, the term&amp;rsquo;s origin): once established, a lower-ranked hen reliably yields access to food to a higher-ranked hen without a fight, and the ranking can be read off directly from which individual yields to which in paired encounters. Hierarchies carry a direct game-theoretic logic: once an individual&amp;rsquo;s relative fighting ability (&lt;strong&gt;resource holding potential&lt;/strong&gt;) relative to a given opponent is established, escalating a contest it is predicted to lose is a poor strategy, so accepting subordinate status and avoiding the fight is often the higher-payoff choice for the lower-ranked individual — dominance hierarchies can be read as a stable, individually-recognized-opponent analog of the population-level hawk-dove ESS above.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/chicken-pecking-order-diagram.webp&#34; alt=&#34;Illustrated cartoon of five chickens in a line from largest/most dominant (rear) to smallest (front), each pecking or chasing the one ahead of it, illustrating the “pecking order” concept as a literal chain of aggression down a ranking.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/chicken-pecking-order-diagram.webp&#34; alt=&#34;Illustrated cartoon of five chickens in a line from largest/most dominant (rear) to smallest (front), each pecking or chasing the one ahead of it, illustrating the “pecking order” concept as a literal chain of aggression down a ranking.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: illustration, specific origin not stated by submitter&lt;/em&gt;&lt;/p&gt;
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -1384,7 +1384,7 @@ $$rB &amp;gt; C$$
 &lt;h3&gt;Territoriality and Resource Defense Economics&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;territoriality-and-resource-defense-economics&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#territoriality-and-resource-defense-economics&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A &lt;strong&gt;territory&lt;/strong&gt; is an area actively defended by an individual or group against conspecific intruders, typically because it contains a limiting resource (food, nest sites, mates). Whether defending a given area is favored is itself an economic, testable question, formalized in the concept of &lt;strong&gt;economic defendability&lt;/strong&gt; (Jerram Brown): a resource is worth defending only when the fitness benefit of exclusive access exceeds the energetic and risk cost of defense, which depends heavily on how resources are distributed in space and time. Densely clumped, predictable resources are cheaply defendable (favoring small, intensely defended territories); sparse or unpredictable resources may cost more to defend than they&amp;rsquo;re worth, favoring non-territorial or only loosely territorial behavior instead — nectar-feeding sunbirds and hummingbirds defending individual flowering shrubs, but abandoning territorial defense of the same patch once flower density drops too low to be worth the energetic cost of chasing off intruders, is a well-documented field-tested example of this exact economic threshold in action.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/optimal-group-size-cost-benefit-curve.jpg&#34; alt=&#34;Graph titled “Territoriality is a balance of costs and benefits”: cost and benefit curves plotted against territory size, with the optimal territory size marked where the vertical gap between the rising cost curve and saturating benefit curve is greatest.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/optimal-group-size-cost-benefit-curve.jpg&#34; alt=&#34;Graph titled “Territoriality is a balance of costs and benefits”: cost and benefit curves plotted against territory size, with the optimal territory size marked where the vertical gap between the rising cost curve and saturating benefit curve is greatest.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: exam/textbook figure (specific origin not stated by submitter)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Costs and Benefits of Group Living&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;costs-and-benefits-of-group-living&#34;&gt;&lt;/span&gt;
@@ -1447,11 +1447,11 @@ $$rB &amp;gt; C$$
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Hawk-dove payoff simulator (Plotly)&lt;/strong&gt; — user sets the cost of injury and value of the resource, and the tool computes and plots average hawk/dove fitness as the proportion of hawks in the population varies, letting the user find the ESS equilibrium point where the two strategies have equal payoff.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;https://boguide.vercel.app/hawk-dove-payoff-simulator.html&#34; title=&#34;Hawk-Dove Payoff Simulator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;http://localhost:1313/hawk-dove-payoff-simulator.html&#34; title=&#34;Hawk-Dove Payoff Simulator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Economic defendability threshold explorer (SVG/JS)&lt;/strong&gt; — user adjusts resource density/predictability and defense cost, and the tool indicates whether territorial defense is predicted to be favored, mirroring the sunbird flower-density field result.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;https://boguide.vercel.app/economic-defendability-explorer.html&#34; title=&#34;Economic Defendability Threshold Explorer&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 400px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;http://localhost:1313/economic-defendability-explorer.html&#34; title=&#34;Economic Defendability Threshold Explorer&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 400px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt; &lt;em&gt;(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. The sunbird-specific item was not sourced and remains unillustrated; the group-size cost/benefit item was replaced by a repurposed territory-economics image placed under &amp;ldquo;Territoriality&amp;rdquo; instead — see the note there.)&lt;/em&gt;&lt;/p&gt;
 &lt;!-- VIDEO: African wild dog coordinated pack hunt showing cooperative group-living benefit in real time — Lycaon pictus — the coordination between individuals during a hunt is the actual mechanism producing the higher per-capita capture success rate cited in text --&gt;
 &lt;!-- No video submitted for this item — comment left in place, unresolved. --&gt;
@@ -1469,10 +1469,10 @@ $$rB &amp;gt; C$$
     
     <item>
       <title>Biological Rhythms</title>
-      <link>https://boguide.vercel.app/resources/9-ethology/biological-rhythms/</link>
+      <link>http://localhost:1313/resources/9-ethology/biological-rhythms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://boguide.vercel.app/resources/9-ethology/biological-rhythms/</guid>
+      <guid>http://localhost:1313/resources/9-ethology/biological-rhythms/</guid>
       <description>
         
         
@@ -1488,7 +1488,7 @@ $$rB &amp;gt; C$$
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;https://boguide.vercel.app/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/9-ethology/mechanisms-of-behavior/&#34;&gt;Mechanisms of Behavior&lt;/a&gt;
     
   
   
@@ -1559,14 +1559,14 @@ $$rB &amp;gt; C$$
 &lt;h3&gt;Endogenous Rhythms and Free-Running Period&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;endogenous-rhythms-and-free-running-period&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#endogenous-rhythms-and-free-running-period&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A defining, heavily tested property of these rhythms is that they are &lt;strong&gt;endogenous&lt;/strong&gt; — generated internally by the organism, not simply a passive response to an external light/dark cycle — demonstrated experimentally by holding an animal (or human volunteer) under &lt;strong&gt;constant conditions&lt;/strong&gt; (continuous dim light, no external time cues) and observing the rhythm persist. Under constant conditions, the rhythm&amp;rsquo;s period is rarely exactly 24 hours; this &lt;strong&gt;free-running period&lt;/strong&gt; typically drifts slightly from 24 hours (commonly a bit longer in humans, closer to 24.2-25 hours in classic isolation studies), and the fact that it drifts away from exactly 24 hours under constant conditions, while staying locked to exactly 24 hours under normal environmental cycling, is itself the evidence that an external synchronizing cue is normally required to keep the internal clock precisely aligned to the real day — covered next.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/circadian-actogram-free-running-reentrainment.webp&#34; alt=&#34;Panel A: single-plotted actogram over ~23 days under constant conditions, activity onset drifting steadily later each day (marked by red guide lines). Panel B: a periodogram (signal amplitude Qp vs. period in hours) showing a clear peak free-running period of 23.58 hours.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/circadian-actogram-free-running-reentrainment.webp&#34; alt=&#34;Panel A: single-plotted actogram over ~23 days under constant conditions, activity onset drifting steadily later each day (marked by red guide lines). Panel B: a periodogram (signal amplitude Qp vs. period in hours) showing a clear peak free-running period of 23.58 hours.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ResearchGate&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Entrainment and Zeitgebers&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;entrainment-and-zeitgebers&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#entrainment-and-zeitgebers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Entrainment&lt;/strong&gt; is the process by which an endogenous rhythm&amp;rsquo;s free-running period is reset and synchronized to match the exact period of an external environmental cycle, and a &lt;strong&gt;zeitgeber&lt;/strong&gt; (&amp;ldquo;time-giver,&amp;rdquo; German) is the specific environmental cue that does the entraining. &lt;strong&gt;Light&lt;/strong&gt; is the dominant zeitgeber for circadian rhythms in most studied animals — a light pulse delivered at different points in the circadian cycle produces a characteristic &lt;strong&gt;phase response curve&lt;/strong&gt;: light early in the subjective night typically delays the clock, light late in the subjective night typically advances it, a pattern with direct practical relevance to jet lag and shift-work adaptation. Non-light zeitgebers also entrain rhythms in specific contexts, including scheduled feeding time (&lt;strong&gt;food-entrainable oscillators&lt;/strong&gt;, capable of driving anticipatory activity before a predictable daily feeding time even in the near-absence of light cues) and, for circannual rhythms specifically, changing day length itself.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Reading a zeitgeber entrainment plot.&lt;/strong&gt; Chronobiology data on non-light zeitgebers is usually presented as a multi-panel figure built around the same double-plotted actogram convention introduced above, worth being able to read directly rather than only in the abstract: a raster of activity (dark tick marks) plotted day-by-day down the page against time-of-day across the width, with the light/dark cycle and the zeitgeber&amp;rsquo;s own schedule (e.g. a scheduled feeding window) shaded as background bands. When the zeitgeber and the light/dark cycle are put into conflict — a food-access window scheduled to drift relative to the light cycle, for instance — activity onset can be seen shifting to track whichever cue the animal is actually entraining to, visible directly as the activity raster bending to follow one shaded band rather than the other across successive days. Companion panels typically report the &lt;strong&gt;distribution of free-running periods&lt;/strong&gt; measured across individual animals (often as a histogram or pie chart, since not every individual entrains identically), and a &lt;strong&gt;phase-shift-vs-phase-angle plot&lt;/strong&gt;: the size and direction of the entrained rhythm&amp;rsquo;s shift relative to the zeitgeber, plotted against how far out of phase the zeitgeber schedule was moved — a food-entrainable-oscillator analog of the light-pulse phase response curve above, showing the same general logic (shifts of opposite sign on either side of a central reference point) applied to a non-light cue.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/zeitgeber.png&#34; alt=&#34;Seven-panel chronobiology figure on food-entrainable circadian rhythms: (a,d) double-plotted actograms of activity relative to dark phase and scheduled food access across ~35 days, (b) pie chart of measured free-running periods (53 animals &amp;lt;28h vs. 8 animals =28h), (c) histogram of period length across animals, (e) periodogram amplitude vs. period with several individual peaks labeled, (f,g) phase shift (ΔTime relative to food access) plotted across successive days and against light-dark/feeding phase angle, respectively.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/zeitgeber.png&#34; alt=&#34;Seven-panel chronobiology figure on food-entrainable circadian rhythms: (a,d) double-plotted actograms of activity relative to dark phase and scheduled food access across ~35 days, (b) pie chart of measured free-running periods (53 animals &amp;lt;28h vs. 8 animals =28h), (c) histogram of period length across animals, (e) periodogram amplitude vs. period with several individual peaks labeled, (f,g) phase shift (ΔTime relative to food access) plotted across successive days and against light-dark/feeding phase angle, respectively.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: user-provided&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Photoperiodism&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;photoperiodism&#34;&gt;&lt;/span&gt;
@@ -1581,11 +1581,11 @@ $$rB &amp;gt; C$$
 &lt;h3&gt;The Suprachiasmatic Nucleus&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-suprachiasmatic-nucleus&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#the-suprachiasmatic-nucleus&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;In mammals, the master circadian pacemaker is the &lt;strong&gt;suprachiasmatic nucleus (SCN)&lt;/strong&gt;, a small paired nucleus in the hypothalamus, situated directly above the optic chiasm — a location that gives it direct input from a dedicated subset of retinal ganglion cells (containing the photopigment &lt;strong&gt;melanopsin&lt;/strong&gt;, distinct from the rod/cone photoreceptors used for vision) carrying ambient light information used for entrainment, independent of the image-forming visual pathway. SCN neurons show self-sustained ~24-hour firing-rate rhythms even when isolated in tissue culture, direct cellular-level confirmation that circadian rhythmicity is generated intrinsically rather than requiring rhythmic input from elsewhere in the brain. The SCN&amp;rsquo;s output governs the timing of numerous downstream physiological rhythms, most notably driving the pineal gland&amp;rsquo;s nightly release of &lt;strong&gt;melatonin&lt;/strong&gt;, whose rise and fall is used by the rest of the body (and by researchers, as a hormonal marker) to read out circadian phase.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/scn-anatomical-diagram.jpg&#34; alt=&#34;Sagittal brain diagram labeled with cerebral cortex, suprachiasmatic nucleus, optic chiasm, hypothalamus, pineal gland, and cerebellum, showing the SCN’s position directly above the optic chiasm.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/scn-anatomical-diagram.jpg&#34; alt=&#34;Sagittal brain diagram labeled with cerebral cortex, suprachiasmatic nucleus, optic chiasm, hypothalamus, pineal gland, and cerebellum, showing the SCN’s position directly above the optic chiasm.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: exam/textbook figure, specific origin not stated by submitter&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://boguide.vercel.app/ETHOLOGYPICS/melatonin-release-24h-timeline.jpg&#34; alt=&#34;Graph of melatonin levels in the bloodstream across roughly 48 hours, low and flat during two “awake” daytime periods and rising to a sharp peak during each intervening “asleep” nighttime period.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/ETHOLOGYPICS/melatonin-release-24h-timeline.jpg&#34; alt=&#34;Graph of melatonin levels in the bloodstream across roughly 48 hours, low and flat during two “awake” daytime periods and rising to a sharp peak during each intervening “asleep” nighttime period.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: exam/textbook figure, specific origin not stated by submitter&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Comparative Structures&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;comparative-structures&#34;&gt;&lt;/span&gt;
@@ -1634,11 +1634,11 @@ $$rB &amp;gt; C$$
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Phase response curve explorer (Plotly)&lt;/strong&gt; — user selects a time within the circadian cycle to deliver a simulated light pulse and views the resulting phase delay or advance, reproducing the qualitative logic behind jet lag direction and recovery time depending on travel direction.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;https://boguide.vercel.app/phase-response-curve-explorer.html&#34; title=&#34;Phase Response Curve Explorer&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;http://localhost:1313/phase-response-curve-explorer.html&#34; title=&#34;Phase Response Curve Explorer&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Free-running vs. entrained rhythm simulator (Plotly)&lt;/strong&gt; — toggles between constant-condition (free-running, drifting period) and normal light/dark cycling (entrained, locked to 24h) for a simulated activity rhythm, plotted as a double-plotted actogram (the standard chronobiology visualization), making the drift-vs-lock distinction visually direct.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;https://boguide.vercel.app/free-running-entrained-actogram.html&#34; title=&#34;Free-Running vs. Entrained Rhythm Simulator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 560px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;http://localhost:1313/free-running-entrained-actogram.html&#34; title=&#34;Free-Running vs. Entrained Rhythm Simulator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 560px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 &lt;p&gt;&lt;strong&gt;Static&lt;/strong&gt; &lt;em&gt;(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. The photoperiod graph was sourced but flagged as unusable — see the note under &amp;ldquo;Photoperiodism&amp;rdquo; above. The rhythm-category item was replaced with a plain markdown table, per explicit instruction, rather than a sourced graphic — see &amp;ldquo;Rhythm Categories&amp;rdquo; above.)&lt;/em&gt;&lt;/p&gt;
 &lt;!-- VIDEO: Actogram data collection setup showing an animal&#39;s activity being recorded under constant dim-light conditions over successive days — the accumulating drift in activity onset time across days is the actual raw evidence for an endogenous, free-running rhythm --&gt;
 &lt;!-- Submitted source (jove.com/v/2157) is hosted on JoVE&#39;s own player, not YouTube — this site has no embed shortcode for it. Content sounds like a strong match (JoVE publishes video methods papers, and &#34;Assaying Locomotor Activity to Study Circadian Rhythms&#34; is very likely real actogram data-collection methodology), but it can&#39;t be embedded without new plumbing. Not embedded; send a YouTube link if one covers the same methodology, or confirm adding a JoVE-embed shortcode is wanted. --&gt;
