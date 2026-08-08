@@ -1,5 +1,44 @@
 # BiOrchive login + optional leaderboard
 
+**Status as of 2026-08-08: this is the original pre-implementation design
+doc, written before any of this was built.** Everything below shipped in
+spirit — Supabase, RLS-locked append-only `attempt_reports`, server-side
+score recomputation, optional/anonymous-friendly login, per-round + overall
+leaderboards — but the concrete implementation now differs from this plan
+in several specifics, and a second phase of features (profiles, avatars,
+a redesigned leaderboard, article gating) was added afterward that isn't
+described here at all. **For current, accurate technical state, read
+`LOGIN_ROADMAP.md` instead of this file** — it's the maintained handoff doc
+and gets updated as things change; this file does not. Keeping this file
+around anyway because the *reasoning* below (why Supabase, why RLS, why an
+append-only table, why raw answers instead of a client-sent score) is still
+accurate and worth having as a record of the original design rationale.
+
+**Concretely, where reality diverged from this plan:**
+- No `layouts/papers/account.html` / `leaderboard-round.html` /
+  `leaderboard-overall.html` layout files were ever created. The account
+  page is raw HTML embedded directly in `content/account/index.md`
+  (originally `content/papers/account/index.md`, relocated in the later
+  phase — see below); both leaderboard page types use the theme's default
+  layout plus a data-emitting shortcode (`{{< papers-leaderboard >}}` /
+  `{{< papers-leaderboard-overall >}}`), not a dedicated layout template.
+- The account/login page was **not** kept out of the top nav as this plan
+  specified. A later phase added a persistent, always-visible navbar
+  icon (leftmost position, avatar when logged in) — a deliberate reversal
+  of this doc's "keep the top nav uncluttered" reasoning, once login
+  stopped being BiOrchive-only and articles also started gating on it.
+- `profiles` grew well beyond `display_name`: avatar picker, country
+  (shown as a leaderboard flag), education level, and a bio field were all
+  added later, none of which this plan anticipated.
+- The overall leaderboard was redesigned from a plain table into a
+  "Hall of Fame" (podium for top 3) with cards linking to each test's own
+  leaderboard — not in this plan.
+- An entirely separate feature not mentioned here at all: login-gated
+  articles (blurred body, "log in to keep reading"), built in the same
+  later phase as the profile fields.
+- The phased rollout at the bottom of this file (Phase 1/2/3) is complete
+  — all three shipped as described, before the additional phase above.
+
 ## Context
 
 BiOrchive's existing Timed Attempt quiz ([static/js/papers-attempt.js](static/js/papers-attempt.js)) is entirely client-side: it scores itself in the browser and keeps only the latest report per round in `localStorage`, with nothing ever leaving the device. The user wants to add a **leaderboard** people can optionally submit their results to, which means introducing a real backend for the first time — and, since that requires accounts anyway, a **login/account system built into the BiOrchive section**, explicitly designed so it can also store per-user test history and "other implications... later on," not just a leaderboard score.

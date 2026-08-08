@@ -14,6 +14,15 @@ template, and the subject-tag master list to hand that model. Claude still does
 every other step unchanged (page mapping, official answer key, figure
 extraction/placement, YAML/content assembly, validation, build).
 
+**Bigger redesign, 2026-08-08**: `papers-ingestion-lean-workflow.md` goes
+further than just delegating explanations — it turns steps 1–6 and 9–12
+below into reusable scripts (zero LLM cost, build once) and pushes answer-key
+transcription and ambiguous-figure description to a human/free model too, so
+Claude's per-batch cost scales with what a validator flags, not with question
+count. Read that doc before starting the *next* new batch/exam — this file's
+steps below are the process it automates, kept here as the reference
+implementation, not as the thing to still do by hand once the scripts exist.
+
 ## Current status
 
 - **IBO 2022, Theoretical 1**: Q1–Q49 done (of 50). Q50 remains. Source PDF: `Theory 1 (Official) IBO 2022 + answer key (1)_unlocked.pdf` — 76 pages, pages 1 = license, 2–75 = questions, 76 = official answer key. Community (unofficial) solutions: `IBO2022_T1Sol.pdf`.

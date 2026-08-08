@@ -206,6 +206,30 @@
     window.PapersAuth.signOut().then(refresh);
   });
 
+  // ---- delete account ----
+  document.getElementById('account-delete-btn').addEventListener('click', function () {
+    var msg = document.getElementById('account-delete-msg');
+    if (!window.confirm('Delete your account? This permanently removes your login, profile, and leaderboard history and cannot be undone.')) return;
+    client.auth.getSession().then(function (result) {
+      var session = result.data && result.data.session;
+      if (!session) { setMsg(msg, 'Your session expired — log in again and retry.', true); return; }
+      setMsg(msg, 'Deleting…', false);
+      fetch('/api/delete-account', {
+        method: 'POST',
+        headers: { Authorization: 'Bearer ' + session.access_token }
+      }).then(function (res) {
+        return res.json().then(function (body) { return { ok: res.ok, body: body }; });
+      }).then(function (result) {
+        if (!result.ok) { setMsg(msg, (result.body && result.body.error) || 'Could not delete your account.', true); return; }
+        window.PapersAuth.signOut().then(function () {
+          window.location.href = '/';
+        });
+      }).catch(function () {
+        setMsg(msg, 'Could not delete your account — try again.', true);
+      });
+    });
+  });
+
   // ---- forms ----
   loginForm.addEventListener('submit', function (e) {
     e.preventDefault();

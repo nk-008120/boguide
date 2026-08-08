@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BiOGuide for Biology Olympiads – First Stage</title>
-    <link>http://localhost:1313/papers/tbo/2023/first-stage/</link>
+    <link>https://boguide.vercel.app/papers/tbo/2023/first-stage/</link>
     <description>Recent content in First Stage on BiOGuide for Biology Olympiads</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://localhost:1313/papers/tbo/2023/first-stage/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://boguide.vercel.app/papers/tbo/2023/first-stage/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Q1 — Sample Question 1 (placeholder)</title>
-      <link>http://localhost:1313/papers/tbo/2023/first-stage/q1/</link>
+      <link>https://boguide.vercel.app/papers/tbo/2023/first-stage/q1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/papers/tbo/2023/first-stage/q1/</guid>
+      <guid>https://boguide.vercel.app/papers/tbo/2023/first-stage/q1/</guid>
       <description>
         
         
@@ -31,17 +31,17 @@
 
 &lt;p&gt;This is a placeholder problem page demonstrating the archive&amp;rsquo;s deepest browsing level. The First Stage exam PDF isn&amp;rsquo;t split into individual problems in the source material, so this page&amp;rsquo;s title and content are illustrative, not extracted from the real exam.&lt;/p&gt;
 &lt;p&gt;&lt;a
-    href=&#34;http://localhost:1313/papers/tbo/2023/first-stage-exam.pdf&#34;&gt;Open the First Stage exam PDF&lt;/a&gt;&lt;/p&gt;
+    href=&#34;https://boguide.vercel.app/papers/tbo/2023/first-stage-exam.pdf&#34;&gt;Open the First Stage exam PDF&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q2 — Sample Question 2 (placeholder)</title>
-      <link>http://localhost:1313/papers/tbo/2023/first-stage/q2/</link>
+      <link>https://boguide.vercel.app/papers/tbo/2023/first-stage/q2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/papers/tbo/2023/first-stage/q2/</guid>
+      <guid>https://boguide.vercel.app/papers/tbo/2023/first-stage/q2/</guid>
       <description>
         
         
@@ -53,17 +53,17 @@
 
 &lt;p&gt;This is a placeholder problem page demonstrating the archive&amp;rsquo;s deepest browsing level. The First Stage exam PDF isn&amp;rsquo;t split into individual problems in the source material, so this page&amp;rsquo;s title and content are illustrative, not extracted from the real exam.&lt;/p&gt;
 &lt;p&gt;&lt;a
-    href=&#34;http://localhost:1313/papers/tbo/2023/first-stage-exam.pdf&#34;&gt;Open the First Stage exam PDF&lt;/a&gt;&lt;/p&gt;
+    href=&#34;https://boguide.vercel.app/papers/tbo/2023/first-stage-exam.pdf&#34;&gt;Open the First Stage exam PDF&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q3 — Sample Question 3 (placeholder)</title>
-      <link>http://localhost:1313/papers/tbo/2023/first-stage/q3/</link>
+      <link>https://boguide.vercel.app/papers/tbo/2023/first-stage/q3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/papers/tbo/2023/first-stage/q3/</guid>
+      <guid>https://boguide.vercel.app/papers/tbo/2023/first-stage/q3/</guid>
       <description>
         
         
@@ -75,7 +75,7 @@
 
 &lt;p&gt;This is a placeholder problem page demonstrating the archive&amp;rsquo;s deepest browsing level. The First Stage exam PDF isn&amp;rsquo;t split into individual problems in the source material, so this page&amp;rsquo;s title and content are illustrative, not extracted from the real exam.&lt;/p&gt;
 &lt;p&gt;&lt;a
-    href=&#34;http://localhost:1313/papers/tbo/2023/first-stage-exam.pdf&#34;&gt;Open the First Stage exam PDF&lt;/a&gt;&lt;/p&gt;
+    href=&#34;https://boguide.vercel.app/papers/tbo/2023/first-stage-exam.pdf&#34;&gt;Open the First Stage exam PDF&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>

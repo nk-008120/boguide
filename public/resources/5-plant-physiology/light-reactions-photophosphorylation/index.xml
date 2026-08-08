@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BiOGuide for Biology Olympiads – Light Reactions &amp; Photophosphorylation</title>
-    <link>http://localhost:1313/resources/5-plant-physiology/light-reactions-photophosphorylation/</link>
+    <link>https://boguide.vercel.app/resources/5-plant-physiology/light-reactions-photophosphorylation/</link>
     <description>Recent content in Light Reactions &amp; Photophosphorylation on BiOGuide for Biology Olympiads</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://localhost:1313/resources/5-plant-physiology/light-reactions-photophosphorylation/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://boguide.vercel.app/resources/5-plant-physiology/light-reactions-photophosphorylation/index.xml" rel="self" type="application/rss+xml" />
     
     
       

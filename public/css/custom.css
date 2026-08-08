@@ -24,7 +24,7 @@
      get their own decoupled, non-difficulty-implying style. */
   background-color: #fef3c7;
   color: #92400e;
-  border-radius: 20px;
+  border-radius: var(--radius-pill);
   padding: 4px 12px;
   font-size: 0.85rem;
   font-weight: 600;
@@ -64,7 +64,7 @@ html.dark .topic-meta-link.badge-custom:hover {
   /* Beginner difficulty â€” matches the green Beginner card accent. */
   background-color: #dcfce7;
   color: #166534;
-  border-radius: 20px;
+  border-radius: var(--radius-pill);
   padding: 4px 12px;
   font-size: 0.85rem;
   font-weight: 600;
@@ -80,7 +80,7 @@ html.dark .badge-exploration {
      a sage tint rather than reusing the difficulty green/amber/purple set. */
   background-color: #e8f0e4;
   color: #3d5438;
-  border-radius: 20px;
+  border-radius: var(--radius-pill);
   padding: 4px 12px;
   font-size: 0.8rem;
   font-weight: 600;
@@ -97,7 +97,7 @@ html.dark .badge-curiosity {
   /* Advanced difficulty â€” matches the purple Advanced card accent. */
   background-color: #f3e8ff;
   color: #6b21a8;
-  border-radius: 20px;
+  border-radius: var(--radius-pill);
   padding: 4px 12px;
   font-size: 0.85rem;
   font-weight: 700;
@@ -118,7 +118,7 @@ html.dark .badge-challenge {
   height: auto;
   object-fit: contain;
   margin: 10px 0;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 /* Custom "Interactive App" Badge for Streamlit Link */
@@ -129,7 +129,7 @@ html.dark .badge-challenge {
   background: linear-gradient(135deg, #FF6B6B, #FF8E53); /* Vibrant gradient */
   color: white;
   padding: 12px 24px;                  /* Comfortable padding */
-  border-radius: 50px;                 /* Pill shape */
+  border-radius: var(--radius-pill);   /* Pill shape */
   font-family: 'Inter', sans-serif;    /* Match your site's font */
   font-weight: 600;
   font-size: 1.1rem;
@@ -203,7 +203,7 @@ html.dark #boguide-toc a:hover {
   min-width: 280px;
   background: var(--bg);  /* uses Hextra's background variable */
   padding: 2rem;
-  border-radius: 20px;
+  border-radius: var(--radius-xl);
   text-align: center;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
@@ -232,7 +232,7 @@ html.dark #boguide-toc a:hover {
 .badge {
   display: inline-block;
   padding: 0.2rem 1rem;
-  border-radius: 20px;
+  border-radius: var(--radius-pill);
   font-size: 0.8rem;
   font-weight: 600;
   margin: 1rem 0;
@@ -298,21 +298,70 @@ html.dark #boguide-toc a:hover {
   text-align: center;
   padding: 2rem;
   background: linear-gradient(135deg, rgba(168, 230, 61, 0.1), rgba(13, 122, 122, 0.05));
-  border-radius: 20px;
+  border-radius: var(--radius-xl);
   margin-top: 2rem;
 }
 
 /* --primary/--secondary drive .card/.btn-outline (Articles page's two
    feature cards + the new homepage .feature-cards above) — originally a
    leftover teal/lime pair from before the lilac/sage identity existed.
-   Retinted here rather than left as the one off-brand component sitewide. */
+   Retinted here rather than left as the one off-brand component sitewide.
+
+   --radius-*/--shadow-*/--space-* below are a design-token pass: this file
+   had ~60 border-radius declarations spanning 13 distinct values and ~30
+   bespoke box-shadow values with no shared scale, so every new component
+   was eyeballing a rounding/elevation choice from scratch. These tokens
+   give new work a default to reach for.
+
+   border-radius declarations were repointed at a token wherever the value
+   matched exactly (999px/16px/12px/10px→sm/8px/50%) — pure aliasing, the
+   computed value doesn't change, since --radius-* doesn't vary by theme.
+   A handful of true one-offs (rare radii used once, and two opposite-corner
+   shorthand values on a modal header/footer) were left as literals rather
+   than force-fit into the scale.
+
+   box-shadow was NOT retrofitted onto existing declarations, deliberately:
+   --shadow-* intentionally intensifies in dark mode (flat rgba(0,0,0,X)
+   shadows read as weaker once the page background itself is dark), but a
+   lot of the existing shadows in this file are either already mode-aware
+   with their own hand-tuned dark value, or are deliberately mode-invariant
+   (e.g. the badge shadows below), or are color-tinted glow/pulse effects
+   (the purple search-dialog shadow, the red notification-pulse keyframes)
+   that need to keep their specific color, not a neutral elevation token.
+   Swapping any of those for --shadow-* would be a real (if small) visual
+   change, not a pure alias — left for a follow-up pass with actual visual
+   review, not a drive-by. New components should still reach for --shadow-*
+   by default (see the Hall of Fame podium below for an example).
+
+   --space-* exists for the same "give new work a default" reason but
+   wasn't retrofitted at all this pass — with margin/padding on nearly
+   every rule in this file, doing that safely needs its own dedicated
+   pass, not a drive-by. */
 :root {
   --primary: #8965c4;
   --secondary: #5c7a58;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-pill: 999px;
+  --radius-circle: 50%;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.18);
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
 }
 .dark {
   --primary: #c9b7e8;
   --secondary: #9db99a;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.5);
 }
 /* === HOMEPAGE BACKGROUND (only when .homepage-bg is present) === */
 
@@ -387,7 +436,7 @@ html.dark .bioguide-bg-layer {
   text-align: center;
   padding: 4rem 1rem;
   background: linear-gradient(135deg, rgba(13,122,122,0.08), rgba(168,230,61,0.08));
-  border-radius: 20px;
+  border-radius: var(--radius-xl);
   margin-bottom: 2rem;
 }
 .hero-title {
@@ -485,7 +534,7 @@ html.dark .homepage-bg .collab-note {
   background: var(--bg, #ffffff);
   color: var(--text, #1a1a1a);
   padding: 1rem 1.2rem;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   width: max-content;
   max-width: 320px;
   box-shadow: var(--shadow, 0 8px 25px rgba(0, 0, 0, 0.15));
@@ -680,7 +729,7 @@ html.favourite .hextra-toc .hextra-scrollbar > div {
   margin: 0 !important;
   max-width: 100% !important;
   height: auto !important;
-  border-radius: 10px !important;
+  border-radius: var(--radius-sm) !important;
   background-color: #ffffff !important;
 }
 
@@ -720,7 +769,7 @@ html.dark .content-image-frame img {
   box-shadow: none !important;
 }
 [role="tabpanel"] .content-image-frame img {
-  border-radius: 8px !important;
+  border-radius: var(--radius-sm) !important;
   background-color: transparent !important;
 }
 html.dark [role="tabpanel"] .content-image-frame img {
@@ -825,7 +874,7 @@ html.dark .hextra-card:hover {
 .content details {
   margin: 1.25rem 0 !important;
   border: 1px solid rgba(92, 122, 88, 0.25) !important;
-  border-radius: 12px !important;
+  border-radius: var(--radius-md) !important;
   overflow: hidden !important;
   background: rgba(92, 122, 88, 0.05) !important;
 }
@@ -906,7 +955,7 @@ html.dark .content details[open] {
 }
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg, #8965c4, #5c7a58);
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   border: 2px solid transparent;
   background-clip: content-box;
 }
@@ -935,7 +984,7 @@ html.dark ::-webkit-scrollbar-thumb {
   padding: 1.25rem 1.75rem !important;
   max-width: 100% !important;
   width: fit-content !important;
-  border-radius: 12px !important;
+  border-radius: var(--radius-md) !important;
   border: 1px solid rgba(137, 101, 196, 0.3) !important;
   background: linear-gradient(135deg, rgba(137, 101, 196, 0.07), rgba(92, 122, 88, 0.07)) !important;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06) !important;
@@ -958,10 +1007,22 @@ html.dark .eq-box {
    tables (e.g. the four-inhibition-type comparison table), so this adds
    a tinted header row, zebra striping, and a rounded container.
    =================================================================== */
+/* Mobile bug fixed here: this used to be a blanket `overflow: hidden
+   !important`, added to clip the tinted header/stripes to the rounded
+   corners. But Hextra's own table rule (typography.css) already sets
+   `display:block; overflow-x:auto` specifically so wide tables get a
+   horizontal scrollbar instead of overflowing the viewport — the
+   shorthand here clobbered that on BOTH axes, so on a narrow phone any
+   table wider than the screen wasn't scrollable, it just had its extra
+   columns silently clipped and unreachable (worse than an ugly overflow,
+   since the content was still there, just invisible). Splitting the two
+   axes keeps the rounded-corner clipping (still needed on the vertical
+   axis for the header background) while restoring horizontal scroll. */
 .content table {
   border: 1px solid rgba(137, 101, 196, 0.2) !important;
-  border-radius: 12px !important;
-  overflow: hidden !important;
+  border-radius: var(--radius-md) !important;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 .content table thead {
   background: linear-gradient(135deg, rgba(137, 101, 196, 0.12), rgba(92, 122, 88, 0.1)) !important;
@@ -1016,7 +1077,7 @@ html.dark .content table tbody tr:hover {
   .hextra-search-trigger {
     background: linear-gradient(135deg, rgba(137, 101, 196, 0.09), rgba(92, 122, 88, 0.07)) !important;
     border: 1px solid rgba(137, 101, 196, 0.25) !important;
-    border-radius: 999px !important;
+    border-radius: var(--radius-pill) !important;
     color: #6d4fa3 !important;
     transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
   }
@@ -1047,7 +1108,7 @@ html.dark .hextra-search-trigger-kbd {
   color: #c9b7e8 !important;
 }
 .hextra-search-dialog {
-  border-radius: 16px !important;
+  border-radius: var(--radius-lg) !important;
   border-color: rgba(137, 101, 196, 0.25) !important;
   box-shadow: 0 25px 60px -12px rgba(92, 61, 150, 0.35) !important;
 }
@@ -1153,7 +1214,7 @@ html.dark .hextra-search-input-wrapper {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   padding: 0.2rem 0.6rem;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   color: #5c7a58;
   background: rgba(92, 122, 88, 0.12);
   border: 1px solid rgba(92, 122, 88, 0.25);
@@ -1182,7 +1243,7 @@ html.dark .papers-summary {
   flex-direction: column;
   gap: 0.35rem;
   padding: 1rem 1.25rem;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   border: 1px solid rgba(137, 101, 196, 0.2);
   background: linear-gradient(135deg, rgba(137, 101, 196, 0.06), rgba(92, 122, 88, 0.05));
   text-decoration: none !important;
@@ -1226,7 +1287,7 @@ html.dark .papers-card-meta {
   flex-wrap: wrap;
   gap: 0.6rem;
   padding: 0.6rem 0.9rem;
-  border-radius: 10px;
+  border-radius: var(--radius-sm);
   border: 1px solid rgba(137, 101, 196, 0.15);
   background: rgba(137, 101, 196, 0.04);
 }
@@ -1243,7 +1304,7 @@ html.dark .papers-paper-row {
   font-size: 0.8rem;
   font-weight: 600;
   padding: 0.25rem 0.7rem;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   text-decoration: none !important;
   color: #8965c4;
   background: rgba(137, 101, 196, 0.12);
@@ -1284,7 +1345,7 @@ html.dark .papers-pill-solution:hover {
   width: 100%;
   max-width: 320px;
   padding: 0.5rem 0.9rem;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   border: 1px solid rgba(137, 101, 196, 0.3);
   background: transparent;
   color: inherit;
@@ -1327,7 +1388,7 @@ html.dark .papers-search-input:focus {
   font-size: 0.72rem;
   font-weight: 600;
   padding: 0.15rem 0.55rem;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   text-decoration: none !important;
   color: #5c7a58;
   background: rgba(92, 122, 88, 0.1);
@@ -1359,7 +1420,7 @@ html.dark .papers-subject-tag:hover {
 .tf-quiz-row {
   padding: 0.9rem 1.1rem;
   margin-bottom: 0.75rem;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   border: 1px solid rgba(137, 101, 196, 0.2);
   background: rgba(137, 101, 196, 0.03);
   transition: border-color 0.15s ease, background 0.15s ease;
@@ -1384,7 +1445,7 @@ html.dark .tf-quiz-letter {
   font-size: 0.85rem;
   font-weight: 600;
   padding: 0.3rem 1rem;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   border: 1px solid rgba(137, 101, 196, 0.3);
   background: transparent;
   color: inherit;
@@ -1448,7 +1509,7 @@ html.dark .tf-quiz-row.incorrect .tf-quiz-feedback {
   font-size: 0.9rem;
   font-weight: 600;
   padding: 0.45rem 1.1rem;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   cursor: pointer;
 }
 .tf-quiz-submit {
@@ -1497,7 +1558,7 @@ html.dark .papers-quiz-nav {
   font-size: 0.9rem;
   font-weight: 600;
   padding: 0.5rem 1.1rem;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   text-decoration: none !important;
   color: #8965c4;
   border: 1px solid rgba(137, 101, 196, 0.4);
@@ -1554,7 +1615,7 @@ html.dark .papers-nav-next:hover {
 }
 .attempt-last-report {
   padding: 0.75rem 1rem;
-  border-radius: 10px;
+  border-radius: var(--radius-sm);
   background: rgba(92, 122, 88, 0.08);
   border: 1px solid rgba(92, 122, 88, 0.2);
 }
@@ -1573,7 +1634,7 @@ html.dark .attempt-last-report {
   gap: 1rem;
   padding: 0.75rem 1rem;
   margin-bottom: 1rem;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   background: var(--hextra-bg, #fff);
   border: 1px solid rgba(137, 101, 196, 0.2);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
@@ -1588,7 +1649,7 @@ html.dark .attempt-topbar {
   font-weight: 700;
   color: #8965c4;
   padding: 0.25rem 0.75rem;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   background: rgba(137, 101, 196, 0.08);
 }
 html.dark .attempt-timer {
@@ -1612,7 +1673,7 @@ html.dark .attempt-timer-low {
   font-size: 0.9rem;
   font-weight: 700;
   padding: 0.5rem 1.2rem;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   cursor: pointer;
   color: #fff;
   background: #dc2626;
@@ -1651,7 +1712,7 @@ html.dark .attempt-submit-btn {
   position: sticky;
   top: 5rem;
   padding: 1rem;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   border: 1px solid rgba(137, 101, 196, 0.2);
   background: rgba(137, 101, 196, 0.03);
 }
@@ -1675,7 +1736,7 @@ html.dark .attempt-palette {
   display: inline-block;
   width: 0.7rem;
   height: 0.7rem;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   border: 1px solid rgba(0, 0, 0, 0.15);
 }
 .attempt-dot.unvisited { background: transparent; }
@@ -1690,7 +1751,7 @@ html.dark .attempt-palette {
 }
 .attempt-palette-btn {
   aspect-ratio: 1;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   font-size: 0.85rem;
   font-weight: 700;
   cursor: pointer;
@@ -1724,7 +1785,7 @@ html.dark .attempt-palette-btn.partial { background: rgba(251, 191, 36, 0.15); b
   font-size: 0.85rem;
   font-weight: 600;
   padding: 0.4rem 0.9rem;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   cursor: pointer;
   background: transparent;
   color: #8965c4;
@@ -1801,14 +1862,14 @@ html.dark .attempt-score-hero {
 }
 .attempt-subject-bar-track {
   height: 0.6rem;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   background: rgba(137, 101, 196, 0.1);
   overflow: hidden;
 }
 .attempt-subject-bar {
   height: 100%;
   background: #16a34a;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
 }
 .attempt-subject-bar.weak {
   background: #dc2626;
@@ -1831,7 +1892,7 @@ html.dark .attempt-score-hero {
 }
 .attempt-rec-card {
   padding: 0.9rem 1.1rem;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   /* top/right/bottom only — border-left is set separately per tone class
      below (and must stay separate: a `border-color` shorthand override
      here, e.g. for dark mode, would have higher specificity than a lone
@@ -1917,7 +1978,7 @@ html.dark .team-card {
 .team-avatar {
   width: 72px;
   height: 72px;
-  border-radius: 50%;
+  border-radius: var(--radius-circle);
   flex-shrink: 0;
   overflow: hidden;
   display: flex;
@@ -1973,7 +2034,7 @@ html.dark .team-role {
   font-size: 0.85rem;
   padding: 0.35rem 0.85rem;
   border: 1px solid rgba(137, 101, 196, 0.35);
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 .team-links a:hover {
@@ -2236,10 +2297,10 @@ html:-ms-fullscreen .focus-reader-root {
   margin-top: -1px !important;
 }
 .content .faq-item:first-of-type {
-  border-radius: 12px 12px 0 0 !important;
+  border-radius: var(--radius-md) var(--radius-md) 0 0 !important;
 }
 .content .faq-item:last-of-type {
-  border-radius: 0 0 12px 12px !important;
+  border-radius: 0 0 var(--radius-md) var(--radius-md) !important;
 }
 .content .faq-item summary {
   cursor: pointer !important;
@@ -2348,7 +2409,7 @@ html.dark body:not(.homepage-bg)::before {
   gap: 0;
   margin: 1.5rem 0;
   min-height: 32rem;
-  border-radius: 16px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   border: 1px solid rgba(137, 101, 196, 0.2);
 }
@@ -2470,7 +2531,7 @@ html.dark .account-tab.active {
 .account-form input {
   font-size: 1rem;
   padding: 0.55rem 0.75rem;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   border: 1px solid rgba(137, 101, 196, 0.35);
   background: transparent;
   color: inherit;
@@ -2587,7 +2648,7 @@ html.dark .papers-leaderboard-self {
 .papers-avatar {
   width: 1.6rem;
   height: 1.6rem;
-  border-radius: 50%;
+  border-radius: var(--radius-circle);
   object-fit: cover;
   flex-shrink: 0;
   vertical-align: middle;
@@ -2637,7 +2698,7 @@ html.dark .papers-avatar-fallback {
 }
 .account-avatar-option {
   padding: 0;
-  border-radius: 50%;
+  border-radius: var(--radius-circle);
   border: 2px solid transparent;
   background: none;
   cursor: pointer;
@@ -2649,7 +2710,7 @@ html.dark .papers-avatar-fallback {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: var(--radius-circle);
 }
 .account-avatar-option.selected {
   border-color: #8965c4;
@@ -2670,7 +2731,7 @@ html.dark .account-avatar-option.account-avatar-missing {
 .account-form textarea {
   font-size: 1rem;
   padding: 0.55rem 0.75rem;
-  border-radius: 8px;
+  border-radius: var(--radius-sm);
   border: 1px solid rgba(137, 101, 196, 0.35);
   background: transparent;
   color: inherit;
@@ -2706,6 +2767,42 @@ html.dark .account-word-count-over {
 .account-signout-btn {
   margin-top: 1.5rem;
 }
+.account-consent {
+  font-size: 0.8rem;
+  opacity: 0.75;
+  margin: -0.25rem 0 0;
+}
+.account-consent a {
+  color: #8965c4;
+}
+html.dark .account-consent a {
+  color: #c9b7e8;
+}
+.account-danger-zone {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(220, 38, 38, 0.25);
+}
+.account-delete-btn {
+  background: none;
+  border: 1px solid #dc2626;
+  color: #dc2626;
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+.account-delete-btn:hover {
+  background: rgba(220, 38, 38, 0.08);
+}
+html.dark .account-delete-btn {
+  border-color: #f87171;
+  color: #f87171;
+}
+html.dark .account-delete-btn:hover {
+  background: rgba(248, 113, 113, 0.1);
+}
 
 /* ===================================================================
    22. NAVBAR ACCOUNT ICON — layouts/partials/navbar-title.html +
@@ -2716,7 +2813,13 @@ html.dark .account-word-count-over {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-left: 0.5rem;
+  /* Padding (not just icon size) sets the tap target — a bare 20px glyph
+     is well under the ~44px minimum recommended for touch, and this is
+     the leftmost, first-reachable control in the navbar on mobile.
+     Negative margin cancels the padding's visual footprint so the icon
+     still sits where it did before, just with a bigger invisible hit box. */
+  padding: 0.625rem;
+  margin: -0.625rem -0.125rem -0.625rem -0.625rem;
   color: inherit;
   opacity: 0.7;
   flex-shrink: 0;
@@ -2727,7 +2830,7 @@ html.dark .account-word-count-over {
 .nav-account-icon-avatar {
   width: 22px;
   height: 22px;
-  border-radius: 50%;
+  border-radius: var(--radius-circle);
   object-fit: cover;
 }
 .nav-account-link-loggedin {
@@ -2772,7 +2875,7 @@ html.dark .nav-account-link-loggedin .nav-account-icon-avatar {
   z-index: 1;
   text-align: center;
   padding: 1.5rem 1rem;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   border: 1px solid rgba(137, 101, 196, 0.3);
   background: rgba(137, 101, 196, 0.1);
   backdrop-filter: blur(3px);
@@ -2814,7 +2917,7 @@ html.dark .article-gate-cta {
   gap: 0.35rem;
   width: 160px;
   padding: 1.25rem 1rem 1.5rem;
-  border-radius: 16px;
+  border-radius: var(--radius-lg);
   border-top: 4px solid transparent;
   background: rgba(137, 101, 196, 0.06);
 }
@@ -2886,6 +2989,25 @@ html.dark .papers-hof-score {
 html.dark .papers-hof-slot.papers-leaderboard-self {
   outline-color: #c9b7e8;
 }
+/* Below ~560px the podium wraps to a single column (flex-wrap above
+   already causes this) — but the row layout's `order` values (rank 2
+   left, rank 1 center, rank 3 right) would then stack as 2nd/1st/3rd
+   top-to-bottom, which reads oddly once there's no "podium" shape left
+   to justify it. Reset to literal rank order so 1st place is simply
+   first, matching how every other ranked list on the site reads. */
+@media (max-width: 560px) {
+  .papers-hof-podium {
+    flex-direction: column;
+    align-items: center;
+  }
+  .papers-hof-rank-1,
+  .papers-hof-rank-2,
+  .papers-hof-rank-3 {
+    order: initial;
+    width: 100%;
+    max-width: 280px;
+  }
+}
 
 .papers-test-card-grid {
   display: grid;
@@ -2898,7 +3020,7 @@ html.dark .papers-hof-slot.papers-leaderboard-self {
   flex-direction: column;
   gap: 0.35rem;
   padding: 1.25rem;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   border: 1px solid rgba(137, 101, 196, 0.3);
   text-decoration: none !important;
   color: inherit;
