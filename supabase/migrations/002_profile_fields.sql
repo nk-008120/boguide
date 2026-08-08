@@ -50,17 +50,23 @@ grant update (country, about, education_level) on public.profiles to authenticat
 
 -- ============================================================
 -- Leaderboard views — add country so the leaderboard can render a flag.
--- create or replace view preserves the existing grants on these views.
+-- create or replace view preserves the existing grants on these views, but
+-- Postgres only allows CREATE OR REPLACE VIEW to *append* new columns at
+-- the end of the select list — inserting one in the middle shifts every
+-- column after it, which Postgres reads as renaming that column (hence
+-- "cannot change name of view column ... to ..."). country goes last here
+-- for exactly that reason, even though it'd read more naturally next to
+-- display_name.
 -- ============================================================
 create or replace view public.leaderboard_per_round as
 select
   b.*,
   p.display_name,
-  p.country,
   rank() over (
     partition by b.olympiad, b.year, b.round_id
     order by b.score_pct desc, b.duration_sec asc
-  ) as rank
+  ) as rank,
+  p.country
 from public.best_attempt_per_round b
 join public.profiles p on p.id = b.user_id;
 
@@ -68,7 +74,6 @@ create or replace view public.leaderboard_overall as
 select
   b.user_id,
   p.display_name,
-  p.country,
   count(*) as rounds_completed,
   sum(b.total_correct) as total_correct,
   sum(b.total_statements) as total_statements,
@@ -78,7 +83,8 @@ select
     order by round(sum(b.total_correct)::numeric / nullif(sum(b.total_statements), 0) * 100, 1) desc,
              sum(b.total_statements) desc,
              sum(b.duration_sec) asc
-  ) as rank
+  ) as rank,
+  p.country
 from public.best_attempt_per_round b
 join public.profiles p on p.id = b.user_id
 group by b.user_id, p.display_name, p.country;

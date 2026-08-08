@@ -1,7 +1,9 @@
 /*
- * Renders the overall/aggregate leaderboard from Supabase's
- * leaderboard_overall view (sum of each user's best-per-round results —
- * see supabase/schema.sql). Same read-only posture as papers-leaderboard.js.
+ * Renders the "Hall of Fame" — the overall/aggregate leaderboard from
+ * Supabase's leaderboard_overall view (sum of each user's best-per-round
+ * results — see supabase/schema.sql + migrations 002/003). Same read-only
+ * posture as papers-leaderboard.js. Ranks 1-3 get a podium spotlight;
+ * rank 4+ continue as a plain table below it.
  */
 (function () {
   'use strict';
@@ -10,6 +12,7 @@
   if (!root) return;
 
   var statusEl = document.getElementById('papers-leaderboard-overall-status');
+  var podium = document.getElementById('papers-hof-podium');
   var table = document.getElementById('papers-leaderboard-overall-table');
   var tbody = document.getElementById('papers-leaderboard-overall-tbody');
 
@@ -19,14 +22,31 @@
     return d.innerHTML;
   }
 
-  // profiles.country is an ISO 3166-1 alpha-2 code — the flag emoji is just
-  // the two Unicode regional-indicator symbols for those letters, no image
-  // assets or lookup table needed.
-  function countryFlag(code) {
-    if (!code || code.length !== 2) return '';
-    return code.toUpperCase().split('').map(function (c) {
-      return String.fromCodePoint(127397 + c.charCodeAt(0));
-    }).join('');
+  var MEDALS = { 1: '🥇', 2: '🥈', 3: '🥉' };
+
+  function renderPodiumSlot(r) {
+    return (
+      '<div class="papers-hof-slot papers-hof-rank-' + r.rank + (r.isSelf ? ' papers-leaderboard-self' : '') + '">' +
+      '<div class="papers-hof-medal">' + MEDALS[r.rank] + '</div>' +
+      '<div class="papers-hof-avatar-wrap">' + window.PapersAuth.avatarHTML(r.display_name, r.avatar_url) + '</div>' +
+      '<div class="papers-hof-name">' + window.PapersAuth.flagHTML(r.country) + '<span>' + escapeHTML(r.display_name) + '</span></div>' +
+      '<div class="papers-hof-score">' + r.total_correct + '/' + r.total_statements + ' (' + r.overall_pct + '%)</div>' +
+      '<div class="papers-hof-rounds">' + r.rounds_completed + ' round' + (r.rounds_completed === 1 ? '' : 's') + '</div>' +
+      '</div>'
+    );
+  }
+
+  function renderRow(r) {
+    return '<tr' + (r.isSelf ? ' class="papers-leaderboard-self"' : '') + '>' +
+      '<td>' + r.rank + '</td>' +
+      '<td class="papers-leaderboard-namecell">' +
+        window.PapersAuth.avatarHTML(r.display_name, r.avatar_url) +
+        window.PapersAuth.flagHTML(r.country) +
+        '<span class="papers-leaderboard-name">' + escapeHTML(r.display_name) + '</span>' +
+      '</td>' +
+      '<td>' + r.rounds_completed + '</td>' +
+      '<td>' + r.total_correct + '/' + r.total_statements + ' (' + r.overall_pct + '%)</td>' +
+      '</tr>';
   }
 
   function render(rows) {
@@ -34,17 +54,21 @@
       statusEl.textContent = 'No submissions yet — log in and submit a Timed Attempt to be the first on the board.';
       return;
     }
-    tbody.innerHTML = rows.map(function (r) {
-      var flag = countryFlag(r.country);
-      return '<tr' + (r.isSelf ? ' class="papers-leaderboard-self"' : '') + '>' +
-        '<td>' + r.rank + '</td>' +
-        '<td>' + (flag ? '<span class="papers-leaderboard-flag">' + flag + '</span> ' : '') + escapeHTML(r.display_name) + '</td>' +
-        '<td>' + r.rounds_completed + '</td>' +
-        '<td>' + r.total_correct + '/' + r.total_statements + ' (' + r.overall_pct + '%)</td>' +
-        '</tr>';
-    }).join('');
+
+    var top3 = rows.filter(function (r) { return r.rank <= 3; });
+    var rest = rows.filter(function (r) { return r.rank > 3; });
+
+    if (top3.length) {
+      podium.innerHTML = top3.map(renderPodiumSlot).join('');
+      podium.hidden = false;
+    }
+
+    if (rest.length) {
+      tbody.innerHTML = rest.map(renderRow).join('');
+      table.hidden = false;
+    }
+
     statusEl.hidden = true;
-    table.hidden = false;
   }
 
   function load() {

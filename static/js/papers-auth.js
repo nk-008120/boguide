@@ -66,12 +66,49 @@
       });
   }
 
+  function escapeHTML(s) {
+    var d = document.createElement('div');
+    d.textContent = s == null ? '' : s;
+    return d.innerHTML;
+  }
+
+  // Shared avatar/flag markup for anywhere a profile row gets rendered
+  // (navbar icon, leaderboard rows) so the "no avatar yet" / "no country
+  // set" / "Other" fallbacks only have to be handled once.
+  function avatarHTML(displayName, avatarUrl) {
+    if (avatarUrl) {
+      return '<img class="papers-avatar" src="' + escapeHTML(avatarUrl) + '" alt="" loading="lazy" onerror="this.outerHTML=window.PapersAuth.avatarFallbackHTML(' + JSON.stringify(displayName || '') + ')">';
+    }
+    return avatarFallbackHTML(displayName);
+  }
+
+  function avatarFallbackHTML(displayName) {
+    var initial = (displayName || '?').trim().charAt(0).toUpperCase() || '?';
+    return '<span class="papers-avatar papers-avatar-fallback">' + escapeHTML(initial) + '</span>';
+  }
+
+  // profiles.country is an ISO 3166-1 alpha-2 code, or the sentinel "OT"
+  // for "Other" (papers-account.js's country picker) — real flag images
+  // from flagcdn.com render identically across every OS/browser, unlike
+  // the regional-indicator emoji this used to be (Windows Chrome has no
+  // flag glyphs and falls back to showing the bare two-letter code).
+  function flagHTML(code) {
+    if (!code || code.length !== 2 || code.toUpperCase() === 'OT') return '';
+    var lower = code.toLowerCase();
+    return '<img class="papers-flag" src="https://flagcdn.com/24x18/' + lower + '.png" ' +
+      'srcset="https://flagcdn.com/48x36/' + lower + '.png 2x" width="24" height="18" ' +
+      'alt="' + escapeHTML(code.toUpperCase()) + '" loading="lazy" onerror="this.remove()">';
+  }
+
   window.PapersAuth = {
     isConfigured: isConfigured,
     getClient: getClient,
     getSession: getSession,
     getProfile: getProfile,
     onChange: onChange,
-    signOut: signOut
+    signOut: signOut,
+    avatarHTML: avatarHTML,
+    avatarFallbackHTML: avatarFallbackHTML,
+    flagHTML: flagHTML
   };
 })();

@@ -2581,8 +2581,43 @@ html.dark .papers-leaderboard-table td {
 html.dark .papers-leaderboard-self {
   background: rgba(201, 183, 232, 0.1);
 }
-.papers-leaderboard-flag {
-  margin-right: 0.3em;
+/* Shared avatar/flag markup (window.PapersAuth.avatarHTML/flagHTML in
+   papers-auth.js) — used in leaderboard rows here and reused as-is by the
+   Hall of Fame podium in section 24. */
+.papers-avatar {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+.papers-avatar-fallback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #8965c4;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+html.dark .papers-avatar-fallback {
+  background: #7c5cb8;
+}
+.papers-flag {
+  border-radius: 2px;
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+.papers-leaderboard-namecell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.papers-leaderboard-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* ===================================================================
@@ -2749,4 +2784,147 @@ html.dark .article-gate-cta {
 .article-gate-cta p {
   margin-bottom: 0.75rem;
   font-weight: 600;
+}
+
+/* ===================================================================
+   24. HALL OF FAME PODIUM + TEST CARDS — content/papers/leaderboard/
+   index.md + static/js/papers-leaderboard-overall.js. Top 3 rows get a
+   podium spotlight (gold/silver/bronze, rank 1 tallest and centered);
+   rank 4+ fall through to the plain .papers-leaderboard-table from
+   section 20. Below the podium, a small card grid links out to each
+   test's own per-round leaderboard page.
+   =================================================================== */
+.papers-hof-intro h1 {
+  margin: 0 0 0.75rem;
+  font-size: 1.9rem;
+}
+.papers-hof-podium {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin: 2rem 0 2.5rem;
+}
+.papers-hof-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.35rem;
+  width: 160px;
+  padding: 1.25rem 1rem 1.5rem;
+  border-radius: 16px;
+  border-top: 4px solid transparent;
+  background: rgba(137, 101, 196, 0.06);
+}
+html.dark .papers-hof-slot {
+  background: rgba(201, 183, 232, 0.08);
+}
+.papers-hof-rank-1 {
+  order: 2;
+  width: 190px;
+  padding-top: 1.75rem;
+  padding-bottom: 2rem;
+  border-top-color: #e5b400;
+  background: linear-gradient(180deg, rgba(229, 180, 0, 0.14), rgba(137, 101, 196, 0.06));
+}
+.papers-hof-rank-2 {
+  order: 1;
+  border-top-color: #a8adb4;
+}
+.papers-hof-rank-3 {
+  order: 3;
+  border-top-color: #c07a3e;
+}
+.papers-hof-medal {
+  font-size: 2rem;
+  line-height: 1;
+}
+.papers-hof-rank-1 .papers-hof-medal {
+  font-size: 2.5rem;
+}
+.papers-hof-avatar-wrap .papers-avatar {
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.3rem;
+}
+.papers-hof-rank-1 .papers-avatar {
+  width: 4.25rem;
+  height: 4.25rem;
+  font-size: 1.7rem;
+}
+.papers-hof-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  font-weight: 700;
+  max-width: 100%;
+}
+.papers-hof-name span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.papers-hof-score {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #8965c4;
+}
+html.dark .papers-hof-score {
+  color: #c9b7e8;
+}
+.papers-hof-rounds {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
+.papers-hof-slot.papers-leaderboard-self {
+  outline: 2px solid #8965c4;
+  outline-offset: 2px;
+}
+html.dark .papers-hof-slot.papers-leaderboard-self {
+  outline-color: #c9b7e8;
+}
+
+.papers-test-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 2rem;
+}
+.papers-test-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1.25rem;
+  border-radius: 12px;
+  border: 1px solid rgba(137, 101, 196, 0.3);
+  text-decoration: none !important;
+  color: inherit;
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+.papers-test-card:hover {
+  background: rgba(137, 101, 196, 0.08);
+  transform: translateY(-2px);
+}
+html.dark .papers-test-card {
+  border-color: rgba(201, 183, 232, 0.3);
+}
+html.dark .papers-test-card:hover {
+  background: rgba(201, 183, 232, 0.1);
+}
+.papers-test-card-badge {
+  font-size: 1.5rem;
+}
+.papers-test-card-title {
+  font-weight: 700;
+}
+.papers-test-card-sub {
+  font-size: 0.85rem;
+  color: #8965c4;
+  opacity: 0.85;
+}
+html.dark .papers-test-card-sub {
+  color: #c9b7e8;
 }
