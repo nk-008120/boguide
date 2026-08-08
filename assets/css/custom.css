@@ -1,4 +1,7 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap');
+/* Body serif for the BiOClash landing page (section 15 below) — deliberately NOT
+   Fraunces/Inter, since BiOClash must not reuse BiOGuide's existing typography. */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap');
 
 .highlight-green {
     color: #2d6a4f;
@@ -3009,6 +3012,78 @@ html.dark .papers-hof-slot.papers-leaderboard-self {
   }
 }
 
+/* Featured Leaderboard card on content/papers/_index.md (BiOrchive landing
+   page) — the nav bar's dedicated "Leaderboard" entry was removed in favor
+   of surfacing it here instead, so this needs to actually stand out among
+   the plain {{< cards >}} grid above it. Reuses the same gold the Hall of
+   Fame podium (section 24 below) already uses for 1st place, so it reads
+   as "the same trophy gold," not a new color introduced just for this. */
+.papers-leaderboard-feature-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 1.75rem 0 2.25rem;
+  padding: 1.5rem 1.75rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(229, 180, 0, 0.4);
+  background: linear-gradient(135deg, rgba(229, 180, 0, 0.14), rgba(137, 101, 196, 0.07));
+  text-decoration: none !important;
+  color: inherit;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.papers-leaderboard-feature-card:hover {
+  transform: translateY(-3px);
+  border-color: #e5b400;
+  box-shadow: 0 10px 28px rgba(229, 180, 0, 0.22);
+}
+html.dark .papers-leaderboard-feature-card {
+  border-color: rgba(229, 180, 0, 0.35);
+  background: linear-gradient(135deg, rgba(229, 180, 0, 0.12), rgba(201, 183, 232, 0.08));
+}
+html.dark .papers-leaderboard-feature-card:hover {
+  box-shadow: 0 10px 28px rgba(229, 180, 0, 0.15);
+}
+.papers-leaderboard-feature-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+  filter: drop-shadow(0 2px 5px rgba(229, 180, 0, 0.4));
+}
+.papers-leaderboard-feature-text {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.papers-leaderboard-feature-title {
+  font-family: 'Fraunces', Georgia, serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.papers-leaderboard-feature-sub {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  line-height: 1.45;
+}
+.papers-leaderboard-feature-arrow {
+  font-size: 1.5rem;
+  color: #e5b400;
+  flex-shrink: 0;
+  transition: transform 0.15s ease;
+}
+.papers-leaderboard-feature-card:hover .papers-leaderboard-feature-arrow {
+  transform: translateX(4px);
+}
+@media (max-width: 560px) {
+  .papers-leaderboard-feature-card {
+    flex-wrap: wrap;
+  }
+  .papers-leaderboard-feature-arrow {
+    display: none;
+  }
+}
+
 .papers-test-card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -3049,4 +3124,524 @@ html.dark .papers-test-card:hover {
 }
 html.dark .papers-test-card-sub {
   color: #c9b7e8;
+}
+
+/* ===================================================================
+   15. BIOCLASH LANDING PAGE — content/bioclash/index.md (layout: "wide")
+   Deliberately its own palette/typography, NOT the site's lilac/sage +
+   Fraunces/Inter identity (hard requirement — this page represents a
+   separate, original competition, not a BiOGuide-notes page). Everything
+   here is scoped under .bioclash-page (plus the curtain overlay, a sibling
+   of .bioclash-page inside #bioclash-root) so none of it leaks elsewhere.
+
+   Typography: headings use a real Computer Modern font — the same font
+   family KaTeX itself ships (KaTeX_Main, loaded from KaTeX's own CDN dist,
+   confirmed via grep that no @font-face for it exists sitewide yet, since
+   KaTeX's CSS only loads on pages that actually render math and scopes the
+   font under .katex). Declared here under a distinct family name
+   ('BiOClash Display') rather than reusing the literal 'KaTeX_Main' name,
+   so this doesn't collide with or depend on KaTeX's own stylesheet ever
+   loading on this page. Body copy uses Source Serif 4 (new @import at the
+   top of this file) — a different serif from the site's existing Fraunces.
+   Section headings are auto-numbered via a CSS counter ("§ 01 —") as a
+   direct nod to LaTeX's own \section auto-numbering.
+   =================================================================== */
+@font-face {
+  font-family: 'BiOClash Display';
+  src: url('https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Main-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'BiOClash Display';
+  src: url('https://cdn.jsdelivr.net/npm/katex@latest/dist/fonts/KaTeX_Main-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* wide.html auto-renders {{ if .Title }}<h1>{{ .Title }}</h1>{{ end }} above
+   .content whenever front matter sets a title (needed here for the browser
+   tab / SEO) — hide that auto h1 specifically on this page, since the hero
+   below hand-authors its own wordmark. */
+main#content:has(#bioclash-root) > h1 {
+  display: none !important;
+}
+
+.bioclash-page {
+  --bc-parchment: #F6F1E4;
+  --bc-ink: #1C1A17;
+  --bc-crimson: #B3122E;
+  --bc-crimson-deep: #7A0E22;
+  --bc-gold: #C9971F;
+  --bc-teal: #0E6B5C;
+  --bc-card-bg: rgba(255, 255, 255, 0.55);
+  --bc-border: rgba(28, 26, 23, 0.16);
+  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  font-size: 1.06rem;
+  color: var(--bc-ink);
+  line-height: 1.7;
+  counter-reset: bioclash-section;
+  /* Faint ruled-ledger texture — an "exam paper" nod behind the body
+     sections (not the hero, which already carries the DNA motif). */
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0,
+    transparent 2.05rem,
+    var(--bc-border) 2.05rem,
+    transparent calc(2.05rem + 1px)
+  );
+  background-position: 0 8rem;
+}
+html.dark .bioclash-page {
+  --bc-parchment: #171410;
+  --bc-ink: #EFE7D6;
+  --bc-crimson: #E1596A;
+  --bc-crimson-deep: #B23347;
+  --bc-gold: #E3B54A;
+  --bc-teal: #3FBFA6;
+  --bc-card-bg: rgba(239, 231, 214, 0.06);
+  --bc-border: rgba(239, 231, 214, 0.14);
+}
+.bioclash-page h1,
+.bioclash-page h2 {
+  font-family: 'BiOClash Display', Georgia, 'Times New Roman', serif !important;
+}
+.bioclash-page h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: var(--bc-ink);
+}
+.bioclash-page h2::before {
+  counter-increment: bioclash-section;
+  content: '§ ' counter(bioclash-section, decimal-leading-zero);
+  flex-shrink: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--bc-gold);
+  letter-spacing: 0.02em;
+}
+.bioclash-page a {
+  color: var(--bc-crimson);
+  text-decoration-color: rgba(179, 18, 46, 0.35);
+  text-underline-offset: 0.15em;
+}
+.bioclash-page a:hover {
+  text-decoration-color: currentColor;
+}
+
+/* Ornamental divider between body sections — a thin rule broken by a
+   centered diamond mark, the classic typographic section break, instead of
+   a plain gap. Pure CSS (no extra markup) so any future section added the
+   same way (a sibling .bioclash-section) picks it up automatically. */
+.bioclash-section + .bioclash-section {
+  position: relative;
+  margin-top: 2.75rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--bc-border);
+}
+.bioclash-section + .bioclash-section::before {
+  content: '❖';
+  position: absolute;
+  top: -0.7em;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bc-parchment);
+  padding: 0 0.85rem;
+  color: var(--bc-gold);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* First paragraph of the page gets a small dropcap — a light, one-time
+   flourish rather than applying it to every section (which would just
+   read as noisy repetition). Targeted via "hero + section" rather than
+   .bioclash-section:first-of-type: :first-of-type matches the first sibling
+   of a given TAG name regardless of class, and .bioclash-hero is also a
+   <section>, so that selector would never actually match. */
+.bioclash-hero + .bioclash-section p:first-of-type::first-letter {
+  font-family: 'BiOClash Display', Georgia, serif;
+  font-size: 2.6em;
+  font-weight: 700;
+  float: left;
+  line-height: 0.85;
+  padding: 0.05em 0.1em 0 0;
+  color: var(--bc-crimson);
+}
+
+/* --- Hero: flamboyant, animated, self-contained (not a fixed sitewide
+   watermark like .biorchive-bg-layer/.bioguide-bg-layer, and not the
+   Favourite theme's lilac→sage gradient) --- */
+.bioclash-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  text-align: center;
+  padding: 4.5rem 1.5rem 3.25rem;
+  border-radius: var(--radius-xl);
+  background: var(--bc-parchment);
+  border: 1px solid var(--bc-border);
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 2.75rem;
+}
+/* Thin gold double-rule frame just inside the hero border — a printed
+   exam-paper/certificate border, echoed again around the primary button. */
+.bioclash-hero::after {
+  content: '';
+  position: absolute;
+  inset: 10px;
+  border: 1px solid rgba(201, 151, 31, 0.35);
+  border-radius: calc(var(--radius-xl) - 6px);
+  pointer-events: none;
+}
+.bioclash-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+.bioclash-dna-strand {
+  position: absolute;
+  width: 70px;
+  height: auto;
+}
+.bioclash-dna-1 { left: 3%;  top: -12%; height: 145%; opacity: 0.35; color: var(--bc-crimson); animation: bioclash-sway 9s ease-in-out infinite; }
+.bioclash-dna-2 { left: 18%; top: -18%; height: 155%; opacity: 0.22; color: var(--bc-teal);    animation: bioclash-sway 11s ease-in-out infinite; animation-delay: -3s; }
+.bioclash-dna-3 { right: 3%; top: -12%; height: 145%; opacity: 0.35; color: var(--bc-gold);    animation: bioclash-sway-rev 10s ease-in-out infinite; animation-delay: -5s; }
+.bioclash-dna-4 { right: 16%; top: -20%; height: 158%; opacity: 0.2;  color: var(--bc-crimson); animation: bioclash-sway-rev 12s ease-in-out infinite; }
+.bioclash-dna-5 { left: calc(50% - 35px); top: -22%; height: 160%; opacity: 0.14; color: var(--bc-teal); animation: bioclash-sway 14s ease-in-out infinite; animation-delay: -7s; }
+@keyframes bioclash-sway {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50%      { transform: translateY(14px) rotate(2deg); }
+}
+@keyframes bioclash-sway-rev {
+  0%, 100% { transform: translateY(0) rotate(2deg); }
+  50%      { transform: translateY(-14px) rotate(-2deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bioclash-dna-strand { animation: none !important; }
+}
+
+.bioclash-eyebrow {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  font-family: 'BiOClash Display', Georgia, serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--bc-gold);
+  margin-bottom: 1rem;
+}
+.bioclash-eyebrow::before,
+.bioclash-eyebrow::after {
+  content: '';
+  width: 1.6rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.6;
+}
+.bioclash-wordmark {
+  position: relative;
+  z-index: 1;
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 0 1rem;
+  color: var(--bc-crimson);
+  letter-spacing: -0.01em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4), 0 6px 24px rgba(179, 18, 46, 0.18);
+}
+html.dark .bioclash-wordmark {
+  text-shadow: 0 6px 24px rgba(225, 89, 106, 0.25);
+}
+.bioclash-tagline {
+  position: relative;
+  z-index: 1;
+  font-style: italic;
+  font-size: 1.25rem;
+  max-width: 34rem;
+  margin: 0 auto 1.5rem;
+  opacity: 0.88;
+}
+.bioclash-countdown {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  font-family: 'BiOClash Display', Georgia, serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-pill);
+  background: var(--bc-card-bg);
+  border: 1px solid var(--bc-gold);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 2rem;
+}
+.bioclash-hero-actions {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* --- Buttons: a refined "medal ribbon" treatment (gradient + inset gold
+   ring + shine sweep on hover) instead of a flat solid block. --- */
+.bioclash-btn {
+  display: inline-block;
+  padding: 0.75rem 1.9rem;
+  border-radius: var(--radius-pill);
+  font-family: 'BiOClash Display', Georgia, serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.bioclash-btn-primary {
+  position: relative;
+  overflow: hidden;
+  color: var(--bc-parchment);
+  background: linear-gradient(135deg, var(--bc-crimson) 0%, var(--bc-crimson-deep) 100%);
+  box-shadow: 0 0 0 1px var(--bc-gold) inset, 0 0 0 4px rgba(201, 151, 31, 0.12), var(--shadow-md);
+}
+.bioclash-btn-primary::before,
+.bioclash-btn-primary::after {
+  content: '✦';
+  display: inline-block;
+  margin: 0 0.55em;
+  font-size: 0.75em;
+  opacity: 0.75;
+  vertical-align: 0.05em;
+}
+.bioclash-btn-primary::before { margin-left: 0; }
+.bioclash-btn-primary::after { margin-right: 0; }
+.bioclash-btn-primary span {
+  position: relative;
+  z-index: 1;
+}
+.bioclash-btn-primary .bioclash-btn-shine {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 30%, rgba(255, 255, 255, 0.45) 50%, transparent 70%);
+  transform: translateX(-120%);
+  transition: transform 0.65s ease;
+  pointer-events: none;
+}
+.bioclash-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 0 1px var(--bc-gold) inset, 0 0 0 4px rgba(201, 151, 31, 0.2), var(--shadow-lg);
+}
+.bioclash-btn-primary:hover .bioclash-btn-shine {
+  transform: translateX(120%);
+}
+.bioclash-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  color: var(--bc-ink) !important;
+  background: var(--bc-card-bg);
+  border: 1px solid var(--bc-border);
+  text-decoration: none !important;
+  font-size: 1.2rem;
+  transition: background 0.15s ease, transform 0.15s ease, border-color 0.15s ease;
+}
+.bioclash-icon-link:hover {
+  transform: translateY(-2px);
+  background: var(--bc-gold);
+  border-color: var(--bc-gold);
+  color: #fff !important;
+}
+
+/* --- Body sections --- */
+.bioclash-section {
+  position: relative;
+  max-width: 42rem;
+  margin: 0 auto 2.25rem;
+}
+.bioclash-planning-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.bioclash-planning-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+.papers-pill.bioclash-pill {
+  font-family: 'BiOClash Display', Georgia, serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--bc-parchment);
+  background: var(--bc-crimson);
+  border: 1px solid var(--bc-gold);
+  flex-shrink: 0;
+}
+html.dark .papers-pill.bioclash-pill {
+  color: var(--bc-ink);
+  background: var(--bc-gold);
+  border-color: var(--bc-crimson);
+}
+
+/* --- Notify widget --- */
+.bioclash-notify-section {
+  text-align: center;
+}
+.bioclash-notify {
+  max-width: 28rem;
+  margin: 0 auto;
+  padding: 1.75rem;
+  border-radius: var(--radius-lg);
+  background: var(--bc-card-bg);
+  border: 1px solid var(--bc-gold);
+  box-shadow: var(--shadow-sm);
+}
+.bioclash-notify-msg {
+  margin: 0 0 1rem;
+}
+.bioclash-notify-confirmed {
+  color: var(--bc-teal);
+  font-weight: 600;
+}
+.bioclash-link-btn {
+  background: none;
+  border: none;
+  color: var(--bc-crimson);
+  text-decoration: underline;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+}
+.bioclash-notify-alt {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 1rem;
+}
+
+/* ===================================================================
+   15b. CURTAIN-REVEAL INTRO — #bioclash-curtains (papers-bioclash.js
+   toggles .is-open on click/Enter/Space). Fixed full-viewport overlay,
+   sibling of .bioclash-page so it isn't affected by the hero's own
+   overflow:hidden. Skipped entirely (display:none from the start) for
+   prefers-reduced-motion or once already opened this session — see JS.
+   =================================================================== */
+.bioclash-curtains {
+  display: none; /* revealed synchronously by the inline script in
+    content/bioclash/index.md, before first paint, if it should show at all */
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  cursor: pointer;
+  overflow: hidden;
+}
+.bioclash-curtains:focus-visible {
+  outline: 3px solid var(--bc-gold, #c9971f);
+  outline-offset: -6px;
+}
+.bioclash-curtain-panel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.16) 0,
+      rgba(0, 0, 0, 0.16) 3px,
+      transparent 3px,
+      transparent 22px
+    ),
+    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.18), transparent 60%),
+    linear-gradient(180deg, #9a1830 0%, #7a0e22 55%, #5c0a1a 100%);
+  box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.45);
+  transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.bioclash-curtain-left {
+  left: 0;
+  border-right: 3px double #c9971f;
+}
+.bioclash-curtain-right {
+  right: 0;
+  border-left: 3px double #c9971f;
+}
+.bioclash-curtain-valance {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 7%;
+  min-height: 44px;
+  z-index: 1;
+  background: linear-gradient(180deg, #d9ad3d 0%, #c9971f 55%, #a67c19 100%);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  transition: opacity 0.3s ease;
+}
+.bioclash-curtain-prompt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1.75rem;
+  border-radius: var(--radius-pill, 999px);
+  background: rgba(0, 0, 0, 0.28);
+  border: 1px solid rgba(201, 151, 31, 0.6);
+  color: #f6f1e4;
+  font-family: 'BiOClash Display', Georgia, serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  animation: bioclash-curtain-pulse 2.2s ease-in-out infinite;
+  transition: opacity 0.3s ease;
+}
+.bioclash-curtain-prompt-mark {
+  color: #c9971f;
+}
+@keyframes bioclash-curtain-pulse {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  50%      { transform: translate(-50%, -50%) scale(1.05); }
+}
+.bioclash-curtains.is-open .bioclash-curtain-left {
+  transform: translateX(-100%);
+}
+.bioclash-curtains.is-open .bioclash-curtain-right {
+  transform: translateX(100%);
+}
+.bioclash-curtains.is-open .bioclash-curtain-valance,
+.bioclash-curtains.is-open .bioclash-curtain-prompt {
+  opacity: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .bioclash-curtain-prompt { animation: none; }
+}
+
+@media (max-width: 640px) {
+  .bioclash-wordmark { font-size: 2.75rem; }
+  .bioclash-tagline { font-size: 1.05rem; }
+  .bioclash-dna-strand { width: 46px; }
+  .bioclash-curtain-prompt { white-space: normal; text-align: center; max-width: 80vw; }
 }

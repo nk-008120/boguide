@@ -28,14 +28,17 @@ paste them into the right places. Do these in order.
    **Table Editor**.
 4. Also run [supabase/migrations/002_profile_fields.sql](supabase/migrations/002_profile_fields.sql),
    [003_leaderboard_avatar.sql](supabase/migrations/003_leaderboard_avatar.sql),
-   and [004_moderation_and_deletion.sql](supabase/migrations/004_moderation_and_deletion.sql)
+   [004_moderation_and_deletion.sql](supabase/migrations/004_moderation_and_deletion.sql),
+   and [005_bioclash_notify.sql](supabase/migrations/005_bioclash_notify.sql)
    the same way, in that order (SQL Editor -> New query -> paste -> Run).
    002 adds Part 2's `country`/`about`/`education_level` columns; 003 adds
    `avatar_url` to the leaderboard views; 004 adds `profiles.is_hidden`
    (moderation — see below) and the `account_deletions` log table (backing
-   the account page's "Delete my account" button). Any future schema change
-   lands as a new numbered file in `supabase/migrations/` rather than editing
-   `schema.sql` retroactively — run new ones in order as they're added.
+   the account page's "Delete my account" button); 005 adds
+   `profiles.notify_bioclash`, the opt-in flag behind the BiOClash landing
+   page's (`/bioclash/`) login-based "get notified" widget. Any future schema
+   change lands as a new numbered file in `supabase/migrations/` rather than
+   editing `schema.sql` retroactively — run new ones in order as they're added.
 
 ### Moderation
 
@@ -164,3 +167,9 @@ Part 2 additions:
 - [ ] Visit an article under `/articles/` while logged out and confirm the
       body is blurred with a "Log in to keep reading" prompt; log in from
       that prompt and confirm it returns you to the same article, unblurred.
+- [ ] Visit `/bioclash/` while logged out, click "Log in to get notified",
+      confirm it lands on `/account/?next=%2Fbioclash%2F`; log in and confirm
+      you're returned to `/bioclash/` with the widget now showing "You're
+      opted in ✓". In the Supabase Table Editor, confirm that user's
+      `profiles.notify_bioclash` is `true`. Click "Opt out" and confirm it
+      flips back to `false` and the login CTA reappears.
