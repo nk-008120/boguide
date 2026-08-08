@@ -266,7 +266,9 @@
   href="/bioclash/"
   
   class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1.5 hx:font-medium"
-><span class="hx:text-center">BiOClash</span></a><a
+><span class="hx:inline-flex hx:items-center">
+    <img src="/bioclashlogo-transparent.png" alt="" aria-hidden="true" class="hx:h-5 hx:w-auto hx:inline-block" />
+  </span><span class="hx:text-center">BiOClash</span></a><a
   title="Leaderboard"
   aria-label="Leaderboard"
   href="/papers/leaderboard/"
@@ -568,17 +570,21 @@
 <script>
 /* Synchronous (not defer) and runs exactly here, before the rest of the
    page paints — deliberately NOT in papers-bioclash.js. The curtain is
-   display:none by default in CSS; this decides whether to reveal it
-   BEFORE first paint, so a visitor who shouldn't see it (already opened
-   this session, or prefers-reduced-motion) never sees it flash on then
-   get hidden a beat later by the deferred script. */
+   display:none by default in CSS; this decides whether to reveal it BEFORE
+   first paint, so a repeat visitor who's already opened it this session
+   never sees it flash on then get hidden a beat later by the deferred
+   script. Deliberately does NOT skip for prefers-reduced-motion — that
+   only shortens the open animation (see custom.css section 15b's
+   reduced-motion block), it doesn't hide the curtain outright. Withholding
+   the whole click-to-reveal interaction from reduced-motion visitors would
+   mean some real visitors never see the feature at all; softening the
+   motion is the correct accessibility response here, not removing it. */
 (function () {
   var el = document.getElementById('bioclash-curtains');
   if (!el) return;
-  var skip = false;
-  try { skip = sessionStorage.getItem('bioclash-curtains-opened') === '1'; } catch (e) {}
-  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) skip = true;
-  if (!skip) el.style.display = 'block';
+  var alreadyOpened = false;
+  try { alreadyOpened = sessionStorage.getItem('bioclash-curtains-opened') === '1'; } catch (e) {}
+  if (!alreadyOpened) el.style.display = 'block';
 })();
 </script>
 <section class="bioclash-hero">

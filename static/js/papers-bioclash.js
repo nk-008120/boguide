@@ -16,20 +16,24 @@
   'use strict';
 
   // ---- Curtain-reveal intro (#bioclash-curtains, CSS in custom.css
-  // section 15b). Whether the curtain is shown at all (vs. skipped for
-  // prefers-reduced-motion or already opened this session) is decided
-  // synchronously by the inline <script> right after the curtain markup in
-  // content/bioclash/index.md, before first paint — this deferred script
-  // only wires up the open interaction, so there's nothing left here that
-  // could show-then-hide a beat late. ----
+  // section 15b). Whether the curtain is shown at all (vs. skipped once
+  // already opened this session) is decided synchronously by the inline
+  // <script> right after the curtain markup in content/bioclash/index.md,
+  // before first paint — this deferred script only wires up the open
+  // interaction, so there's nothing left here that could show-then-hide a
+  // beat late. ----
   var curtains = document.getElementById('bioclash-curtains');
   if (curtains) {
     var openCurtains = function () {
       curtains.classList.add('is-open');
       try { sessionStorage.setItem('bioclash-curtains-opened', '1'); } catch (e) {}
       var hide = function () { curtains.style.display = 'none'; };
+      // Panels, valance, and prompt all share the same transition-duration
+      // (3s normally, 0.8s under reduced motion — see custom.css), so the
+      // first `transitionend` to bubble up from #bioclash-curtains reliably
+      // means everything actually finished, not just the fastest piece.
       curtains.addEventListener('transitionend', hide, { once: true });
-      setTimeout(hide, 1400); // fallback in case transitionend never fires
+      setTimeout(hide, 3500); // fallback in case transitionend never fires
     };
     curtains.addEventListener('click', openCurtains);
     curtains.addEventListener('keydown', function (e) {

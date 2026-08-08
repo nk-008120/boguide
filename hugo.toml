@@ -105,6 +105,8 @@ theme = "hextra"
     name = "BiOClash"
     url = "/bioclash/"
     weight = 3
+    [menu.main.params]
+      image = "/bioclashlogo-transparent.png"
 
   [[menu.main]]
     name = "Leaderboard"
