@@ -1,6 +1,7 @@
 ---
 title: "BiOClash — an independent biology competition"
 layout: "wide"
+images: ["/og-bioclash.png"]
 ---
 
 <div id="bioclash-root" class="bioclash-page">

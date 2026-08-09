@@ -1,9 +1,13 @@
 ---
 title: "BO Papers Archive"
+images: ["/og-biorchive.png"]
 cascade:
   - target:
       path: "/papers/**/q*"
     layout: "question"
+  - target:
+      path: "/papers/**"
+    images: ["/og-biorchive.png"]
 ---
 
 {{< biorchive-bg >}}

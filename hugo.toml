@@ -1,4 +1,4 @@
-baseURL = "https://boguide.vercel.app/"
+baseURL = "https://bioguide.world/"
 title = "BiOGuide for Biology Olympiads"
 theme = "hextra"
 
@@ -158,6 +158,11 @@ theme = "hextra"
     [menu.main.params]
       icon = "instagram"
 [params]
+  # Default social-share preview image (Open Graph/Twitter Card) for any
+  # page that doesn't set its own via front-matter `images:` — see
+  # content/bioclash/index.md and content/papers/_index.md for the two
+  # sub-brand overrides.
+  images = ["/og-default.png"]
   # Navbar settings
   [params.navbar]
     title = "BiOGuide"
