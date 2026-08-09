@@ -36,11 +36,11 @@ We cover the full IBO syllabus — 15+ sections, 150+ topic pages,666+ Static fi
     <p>Why we built this, how content gets reviewed before publishing, and who's behind it.</p>
     <span class="btn-outline">Learn Our Story →</span>
   </a>
-  <a href="/articles/" class="card">
+  <a href="/bioinsights/" class="card">
     <div class="card-icon">✍️</div>
-    <h3>Articles</h3>
+    <h3>BiOInsights</h3>
     <p>Exam-technique tips and lab-practical guides that go beyond the core syllabus notes.</p>
-    <span class="btn-outline">Read Articles →</span>
+    <span class="btn-outline">Read BiOInsights →</span>
   </a>
   <a href="/papers/" class="card">
     <div class="card-icon">🗂️</div>

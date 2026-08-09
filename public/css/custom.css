@@ -1,4 +1,9 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap');
+﻿/* TEMPORARY 2026-08-09: site-wide typography swapped for trial —
+   Cormorant Garamond (headings) + Montserrat (body) — replacing the
+   Fraunces/Inter pair below. Revert by restoring the commented-out
+   import and swapping the font-family values in section 1 back. */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap'); */
 /* Body serif for the BiOClash landing page (section 15 below) — deliberately NOT
    Fraunces/Inter, since BiOClash must not reuse BiOGuide's existing typography. */
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap');
@@ -133,7 +138,7 @@ html.dark .badge-challenge {
   color: white;
   padding: 12px 24px;                  /* Comfortable padding */
   border-radius: var(--radius-pill);   /* Pill shape */
-  font-family: 'Inter', sans-serif;    /* Match your site's font */
+  font-family: 'Montserrat', sans-serif;    /* Match your site's font */
   font-weight: 600;
   font-size: 1.1rem;
   text-decoration: none;
@@ -270,7 +275,7 @@ html.dark #boguide-toc a:hover {
 
 /* Smaller variant of .card/.two-cards for a 4-up "quick nav" grid (homepage
    Main Features section) rather than the 2 big feature-highlight cards this
-   component was originally built for (Articles page). Same component,
+   component was originally built for (BiOInsights page). Same component,
    same hover-lift/color language, just denser. */
 .feature-cards {
   display: flex;
@@ -305,7 +310,7 @@ html.dark #boguide-toc a:hover {
   margin-top: 2rem;
 }
 
-/* --primary/--secondary drive .card/.btn-outline (Articles page's two
+/* --primary/--secondary drive .card/.btn-outline (BiOInsights page's two
    feature cards + the new homepage .feature-cards above) — originally a
    leftover teal/lime pair from before the lilac/sage identity existed.
    Retinted here rather than left as the one off-brand component sitewide.
@@ -780,30 +785,31 @@ html.dark [role="tabpanel"] .content-image-frame img {
 }
 
 /* ===================================================================
-   1. TYPOGRAPHY â€” Fraunces display serif headings + Inter body text
-   Every page title (h1) and section heading (h2/h3) previously rendered
-   in Hextra's flat default system-sans at fairly uniform weight. A
-   light-weight display serif on h1, stepping up to a medium weight on
-   h2/h3, gives the same "editorial" headline/body contrast aoguide.app
-   uses. Body copy (paragraphs, lists, sidebar, nav, badges â€” everything
-   that doesn't set its own font-family) now uses Inter instead of the
-   generic system-sans stack, same pairing as the lilac/sage reference
-   site this whole aesthetic pass is drawing from. The fallback chain
-   after 'Inter' is Hextra's own original stack, so a failed font load
-   degrades to exactly what rendered before this change. Code blocks are
-   untouched â€” they set their own monospace font more specifically. */
+   1. TYPOGRAPHY — normally Fraunces display serif headings + Inter body
+   text (see the commented-out @import above and this section's history
+   for that pairing). TEMPORARILY swapped 2026-08-09 to Cormorant
+   Garamond headings + Montserrat body for a trial — see the @import near
+   the top of this file to revert. Every page title (h1) and section
+   heading (h2/h3) previously rendered in Hextra's flat default
+   system-sans at fairly uniform weight; body copy (paragraphs, lists,
+   sidebar, nav, badges — everything that doesn't set its own
+   font-family) uses the body font instead of the generic system-sans
+   stack. The fallback chain after the body font name is Hextra's own
+   original stack, so a failed font load degrades to something
+   reasonable. Code blocks are untouched — they set their own monospace
+   font more specifically. */
 body {
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-family: 'Montserrat', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }
 .content h1 {
-  font-family: 'Fraunces', Georgia, serif !important;
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
   font-weight: 300 !important;
   font-size: 2.5rem !important;
   letter-spacing: -0.01em !important;
 }
 .content h2,
 .content h3 {
-  font-family: 'Fraunces', Georgia, serif !important;
+  font-family: 'Cormorant Garamond', Georgia, serif !important;
   font-weight: 500 !important;
 }
 
@@ -1988,7 +1994,7 @@ html.dark .team-card {
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #8965c4, #5c7a58);
-  font-family: 'Fraunces', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
   font-size: 1.4rem;
   color: #fff;
@@ -2006,7 +2012,7 @@ html.dark .team-avatar {
   min-width: 0;
 }
 .team-name {
-  font-family: 'Fraunces', serif;
+  font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
   font-size: 1.15rem;
   margin: 0 0 0.15rem !important;
@@ -2310,7 +2316,7 @@ html:-ms-fullscreen .focus-reader-root {
   list-style: none !important;
   padding: 14px 18px !important;
   font-weight: 600 !important;
-  font-family: 'Fraunces', serif;
+  font-family: 'Cormorant Garamond', serif;
   color: inherit !important;
   background: rgba(137, 101, 196, 0.06) !important;
   display: flex !important;
@@ -3057,7 +3063,7 @@ html.dark .papers-leaderboard-feature-card:hover {
   gap: 0.3rem;
 }
 .papers-leaderboard-feature-title {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 600;
   font-size: 1.2rem;
 }

@@ -1,6 +1,7 @@
 /*
- * Article gating (LOGIN_ROADMAP.md Part 2, feature 4) — loaded only on
- * pages using layouts/gated-article.html. The body is blurred by default
+ * BiOInsights gating (LOGIN_ROADMAP.md Part 2, feature 4; section renamed
+ * from "Articles" 2026-08-09) — loaded only on pages using
+ * layouts/gated-article.html. The body is blurred by default
  * (CSS, .article-gate-body at rest) so a visitor without JS never sees an
  * unlocked article; this script removes the blur for a logged-in visitor
  * and otherwise shows a "log in to keep reading" CTA that returns here

@@ -19,8 +19,8 @@ The [Human Respiratory System](../../2-animal-anatomy/human-respiratory-system/)
 
 Hemoglobin's oxygen-binding curve (percent saturation vs. partial pressure of O₂, PO₂) is **sigmoidal**, not linear or hyperbolic, because hemoglobin's four subunits bind O₂ **cooperatively**: binding of the first O₂ molecule causes a conformational shift (T-state to R-state) that increases the remaining subunits' affinity for O₂, so each successive binding event becomes progressively easier. This sigmoidal shape has a direct functional payoff: across the steep middle portion of the curve, a relatively small drop in PO₂ (as blood moves from the lung capillaries to metabolically active peripheral tissue) causes a large drop in hemoglobin saturation — i.e., a large amount of O₂ is unloaded precisely where it's needed, rather than hemoglobin releasing O₂ only gradually and non-specifically everywhere.
 
-![Sigmoidal oxygen-hemoglobin dissociation curve (% saturation of hemoglobin vs. PO2), with the resting physiological range marked between tissues at rest (PO2 40 mmHg) and alveoli (PO2 100 mmHg), P50 = 28 mmHg labeled, and a separate near-flat trace showing the small O2 fraction dissolved directly in plasma](/ANIMALPHYSIOPICS/oxygen-hemoglobin-dissociation-curve.jpg)
-*Source: © PhysiologyWeb (physiologyweb.com)*
+![Sigmoidal oxygen-hemoglobin dissociation curve (% Hb saturation vs. PO2), with P50 marked at 50% saturation and systemic arterial blood marked near 100% saturation; left-shift (increased affinity, decreased P50 — from decreased PCO2/increased pH, decreased temperature, fetal Hb) and right-shift (decreased affinity, increased P50 — from increased PCO2/decreased pH, increased temperature, increased altitude) factors labeled below](/ANIMALPHYSIOPICS/oxygen-hemoglobin-dissociation-curve.png)
+*Source: [DITKI (Dynamic Interactive Teaching Kits) — Physiology Glossary](https://ditki.com/course/physiology/glossary/physiological-process/oxygen-hemoglobin-dissociation-curve)*
 
 ### The Bohr Effect
 

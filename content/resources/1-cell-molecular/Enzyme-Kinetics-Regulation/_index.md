@@ -49,8 +49,20 @@ $$ V_0 = [E_t] \cdot [S] \cdot \frac{k_{cat}}{K_m} $$
 
 The ratio **k_cat/K_m**, the **specificity constant**, is the best single number for comparing catalytic efficiency across different enzymes or different substrates of the same enzyme — it is a second-order rate constant (units M⁻¹s⁻¹) describing the E + S → E + P conversion as a whole. There is a physical ceiling on this ratio: the **diffusion-controlled limit**, ~10⁸–10⁹ M⁻¹s⁻¹, set by how fast E and S can encounter each other in solution. Enzymes approaching this limit are said to have achieved **catalytic perfection** — they convert essentially every productive encounter into product.
 
-![Table 6-8: enzymes for which kcat/Km approaches the diffusion-controlled limit (10⁸-10⁹ M⁻¹s⁻¹), including acetylcholinesterase, carbonic anhydrase, catalase, crotonase, fumarase, and β-lactamase](/MCBBPICS/table68.png)
-*This is a direct scan of Table 6-8 from Lehninger's Principles of Biochemistry, with a "Source: Fersht, A. (1999) Structure and Mechanism in Protein Science, W. H. Freeman and Company" citation baked into the image.*
+**Enzymes for which k꜀ₐₜ/Kₘ approaches the diffusion-controlled limit (10⁸–10⁹ M⁻¹s⁻¹):**
+
+| Enzyme | Substrate | k꜀ₐₜ (s⁻¹) | Kₘ (M) | k꜀ₐₜ/Kₘ (M⁻¹s⁻¹) |
+|---|---|---|---|---|
+| Acetylcholinesterase | Acetylcholine | 1.4 × 10⁴ | 9 × 10⁻⁵ | 1.6 × 10⁸ |
+| Carbonic anhydrase | CO₂ | 1 × 10⁶ | 1.2 × 10⁻² | 8.3 × 10⁷ |
+| Carbonic anhydrase | HCO₃⁻ | 4 × 10⁵ | 2.6 × 10⁻² | 1.5 × 10⁷ |
+| Catalase | H₂O₂ | 4 × 10⁷ | 1.1 × 10⁰ | 4 × 10⁷ |
+| Crotonase | Crotonyl-CoA | 5.7 × 10³ | 2 × 10⁻⁵ | 2.8 × 10⁸ |
+| Fumarase | Fumarate | 8 × 10² | 5 × 10⁻⁶ | 1.6 × 10⁸ |
+| Fumarase | Malate | 9 × 10² | 2.5 × 10⁻⁵ | 3.6 × 10⁷ |
+| β-Lactamase | Benzylpenicillin | 2.0 × 10³ | 2 × 10⁻⁵ | 1 × 10⁸ |
+
+*Data: Fersht, A. (1999). Structure and Mechanism in Protein Science, p. 166, W. H. Freeman and Company. (Redrawn as a table rather than reproduced as a textbook scan — the underlying rate constants are data, not the copyrighted expression.)*
 
 **Worked example.** An enzyme "happyase" catalyses SAD ⇌ HAPPY, with $k_{cat} = 600\ \text{s}^{-1}$. At $[E_t] = 20\ \text{nM}$ and $[\text{SAD}] = 40\ \mu\text{M}$, $V_0 = 9.6\ \mu\text{M s}^{-1}$. Find $K_m$.
 

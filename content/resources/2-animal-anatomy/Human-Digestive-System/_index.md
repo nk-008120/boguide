@@ -145,8 +145,8 @@ Absorptive surface amplification, structurally layered: **plicae circulares** (c
 
 Begins at the **cecum** (a blind pouch, bearing the **vermiform appendix** — lymphoid tissue of debated but likely immune/microbiome-reservoir function), continuing through the **ascending, transverse, descending, and sigmoid colon** to the **rectum** and **anal canal** (bearing an internal involuntary smooth-muscle sphincter and an external voluntary skeletal-muscle sphincter — a structural pairing directly analogous to the LES/pyloric-sphincter pattern of involuntary control, but here paired with a voluntary override). Structurally distinct from the small intestine: no villi (absorptive surface reduced, since the primary remaining job is water/electrolyte reabsorption and waste consolidation, not nutrient absorption), and the longitudinal muscle layer is gathered into three thickened bands, the **teniae coli**, whose tonic contraction gathers the wall into pouches, **haustra** — a distinctive gross-anatomical signature of the colon on imaging or a specimen. The colon houses a dense resident microbial population (the gut microbiome), structurally supported by this large, slow-transit surface, contributing to fermentation of otherwise-undigested material and synthesis of some vitamins.
 
-![Full colon gross anatomy: cecum, ileal orifice, vermiform appendix, ascending/transverse/descending colon, sigmoid colon, rectum, with all three teniae coli (free, omental, mesocolic) and haustra clearly labeled throughout.](/ANATOMYPICS/colon-teniae-coli-haustra.jpg)
-*Source: a Netter Atlas illustration, user-sourced originally via a ScienceDirect topic page.*
+![Full colon gross anatomy: right colic (hepatic) and left colic (splenic) flexures, transverse/ascending/descending colon, taenia coli, epiploic appendages, haustra, ileocecal sphincter (valve), cecum, vermiform appendix, sigmoid colon, rectum, anal canal, and anus.](/ANATOMYPICS/colon-teniae-coli-haustra.jpg)
+*Source: [Outlander Anatomy — "Anatomy Lesson 48: The Big Guy (G.I. Tract 5)"](https://www.outlanderanatomy.com/anatomy-lesson-48-the-big-guy-g-t-tract-5/)*
 
 ### Liver
 

@@ -196,8 +196,8 @@ This table is worth returning to directly when reading the [Invertebrate Body Pl
 ![Protostomes vs. deuterostomes compared across all three axes: eight-cell-stage cleavage (spiral/determinate vs. radial/indeterminate), coelom formation (schizocoelous splitting of solid mesoderm vs. enterocoelous folding of the archenteron), and blastopore fate (mouth vs. anus).](/ANATOMYPICS/cleavage-patterns-spiral-radial.jpg)
 *Source: textbook figure via Weebly-hosted course page*
 
-![Four-stage schizocoely (protostome) vs. enterocoely (deuterostome) coelom formation, from the blastopore-stage embryo through the fully formed coelom.](/ANATOMYPICS/coelom-formation-schizocoely-enterocoely.jpg)
-*Source: Brooks/Cole – Thomson Learning*
+![Schizocoely (protostome) vs. enterocoely (deuterostome) coelom formation compared side by side: schizocoely as solid blocks of mesoderm splitting to form the coelom, enterocoely as archenteron buds pinching off to form coelomic pouches — mesoderm, blastopore, coelom, and archenteron labeled on both.](/ANATOMYPICS/coelom-formation-schizocoely-enterocoely.webp)
+*Source: ["Coelom Formation in Protostomes and Deuterostomes and Types of Coelom," SlideShare](https://www.slideshare.net/slideshow/coelom-formation-in-protostomes-and-deuterostomes-and-types-of-coelom/251375050)*
 
 ### Coelom Types
 

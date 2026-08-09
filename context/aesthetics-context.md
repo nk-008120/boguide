@@ -2,6 +2,11 @@
 
 **Purpose:** orient a fresh context window continuing the visual-design pass. A full session's worth of work already landed (theme system, card/image/typography overhauls, several real bugs found and fixed). This file tells you what exists and how it's built, so you don't have to re-derive it — but **look at the live site yourself** before changing anything; this doc doesn't replace that.
 
+**Note, 2026-08-09**: two new page families were built this session that **deliberately do not use** the identity documented below — this is intentional, not drift, so don't "fix" it back to lilac/sage if you notice:
+- `/bioclash/` and the "BiOClash Champions" section of `/papers/leaderboard/` use a wholly separate palette/typography (Exam-Paper Crimson: parchment/crimson/gold, headings in a Computer-Modern-derived font) — a hard requirement from the founder, confirmed explicitly before building (see `bioclash-planner.md`'s status header). Scoped entirely under `.bioclash-page` in `custom.css`; nothing else on the site references those tokens.
+- `/discussions/` (new) and the rest of `/papers/leaderboard/` (the pre-existing "Practice Leaderboard" + per-round cards) **do** use the normal lilac/sage identity below — reused, not reinvented, for those.
+- `custom.css` grew substantially this session (new numbered sections for BiOClash, the Champions podium, and Discussions) — still one file, same numbered-section convention, just longer.
+
 ## What BioGuide is
 
 A static study-guide site for IBO/USABO (biology olympiad) prep, built with **Hugo** (v0.162, extended) on the **Hextra** theme (`theme = "hextra"` in `hugo.toml`). Content lives under `content/resources/`, organized into numbered subject sections (`1-cell-molecular/`, `7-genetics/`, etc.), each following the page template in `handoff.md` (Overview/Key Concepts/Comparative Structures/Common Exam Questions/Visual Reference/Practice Problems). `content/about/`, `content/papers/`, `content/articles/`, and `content/resources/_index.md` (General Resources) round out the rest of the site.
@@ -65,5 +70,5 @@ Everything customization-related lives here (no other CSS files were added). It'
 ## What's left / not yet touched
 
 - Widget iframes (separate, large job — see above)
-- Papers and Articles pages haven't been specifically audited/restyled this session
+- Articles pages haven't been specifically audited/restyled. Papers *has* been touched since this doc was last current — `/papers/leaderboard/` was restructured 2026-08-09 (BiOClash Champions section added, existing Hall of Fame relabeled/demoted) — but that was functional/content work, not a systematic restyle pass of the whole `/papers/` tree.
 - The `{{< iframe >}}`-embedded Streamlit interactive tools' own visual language hasn't been unified with the lilac/sage identity

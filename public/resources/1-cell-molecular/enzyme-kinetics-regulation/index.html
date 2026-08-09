@@ -27,7 +27,7 @@
 
 	<meta itemprop="name" content="Enzyme Kinetics & Regulation">
 	<meta itemprop="description" content="Steady-state kinetics and the Michaelis-Menten equation, kcat and the specificity constant, Lineweaver-Burk analysis, and the four modes of reversible enzyme inhibition with their kinetic signatures.">
-	<meta itemprop="wordCount" content="1757">
+	<meta itemprop="wordCount" content="1869">
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="Enzyme Kinetics & Regulation">
 	<meta name="twitter:description" content="Steady-state kinetics and the Michaelis-Menten equation, kcat and the specificity constant, Lineweaver-Burk analysis, and the four modes of reversible enzyme inhibition with their kinetic signatures.">
@@ -247,12 +247,12 @@
   
   class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1.5 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
 ><span class="hx:text-center">About</span></a><a
-  title="Articles"
+  title="BiOInsights"
   
-  href="/articles/"
+  href="/bioinsights/"
   
   class="hx:text-sm hx:contrast-more:text-gray-700 hx:contrast-more:dark:text-gray-100 hx:relative hx:-ml-2 hx:hidden hx:whitespace-nowrap hx:p-2 hx:md:inline-flex hx:items-center hx:gap-1.5 hx:text-gray-600 hx:hover:text-gray-800 hx:dark:text-gray-400 hx:dark:hover:text-gray-200"
-><span class="hx:text-center">Articles</span></a><a
+><span class="hx:text-center">BiOInsights</span></a><a
   title="Discussions"
   
   href="/discussions/"
@@ -434,10 +434,10 @@
   </div></li><li><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
     <a
       class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:grow hx:cursor-pointer hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] hx:hextra-focus-visible-inset hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:contrast-more:border hx:contrast-more:border-transparent hx:contrast-more:text-gray-900 hx:contrast-more:hover:border-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50 hx:contrast-more:dark:text-gray-50 hx:contrast-more:dark:hover:border-gray-50"
-      href="/articles/"
+      href="/bioinsights/"
       
     >
-      <span class="hx:min-w-0 [word-break:break-word]">Articles</span>
+      <span class="hx:min-w-0 [word-break:break-word]">BiOInsights</span>
     </a>
   </div></li><li><div class="hextra-sidebar-item hx:group hx:relative hx:flex hx:items-center" data-active="false">
     <a
@@ -1907,10 +1907,77 @@ $$ V_0 = \frac{V_{max}[S]}{K_m + [S]} \qquad \text{(Michaelis-Menten equation)} 
 <p>At low [S] (specifically [S] ≪ $K_m$), the Michaelis-Menten equation reduces to:</p>
 <p>$$ V_0 = [E_t] \cdot [S] \cdot \frac{k_{cat}}{K_m} $$</p>
 <p>The ratio <strong>k_cat/K_m</strong>, the <strong>specificity constant</strong>, is the best single number for comparing catalytic efficiency across different enzymes or different substrates of the same enzyme — it is a second-order rate constant (units M⁻¹s⁻¹) describing the E + S → E + P conversion as a whole. There is a physical ceiling on this ratio: the <strong>diffusion-controlled limit</strong>, ~10⁸–10⁹ M⁻¹s⁻¹, set by how fast E and S can encounter each other in solution. Enzymes approaching this limit are said to have achieved <strong>catalytic perfection</strong> — they convert essentially every productive encounter into product.</p>
-<p><span class="content-image-frame">
-    <img src="/MCBBPICS/table68.png" alt="Table 6-8: enzymes for which kcat/Km approaches the diffusion-controlled limit (10⁸-10⁹ M⁻¹s⁻¹), including acetylcholinesterase, carbonic anhydrase, catalase, crotonase, fumarase, and β-lactamase"  data-zoomable loading="lazy" />
-  </span>
-<em>This is a direct scan of Table 6-8 from Lehninger&rsquo;s Principles of Biochemistry, with a &ldquo;Source: Fersht, A. (1999) Structure and Mechanism in Protein Science, W. H. Freeman and Company&rdquo; citation baked into the image.</em></p>
+<p><strong>Enzymes for which k꜀ₐₜ/Kₘ approaches the diffusion-controlled limit (10⁸–10⁹ M⁻¹s⁻¹):</strong></p>
+<table>
+	<thead>
+			<tr>
+					<th>Enzyme</th>
+					<th>Substrate</th>
+					<th>k꜀ₐₜ (s⁻¹)</th>
+					<th>Kₘ (M)</th>
+					<th>k꜀ₐₜ/Kₘ (M⁻¹s⁻¹)</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>Acetylcholinesterase</td>
+					<td>Acetylcholine</td>
+					<td>1.4 × 10⁴</td>
+					<td>9 × 10⁻⁵</td>
+					<td>1.6 × 10⁸</td>
+			</tr>
+			<tr>
+					<td>Carbonic anhydrase</td>
+					<td>CO₂</td>
+					<td>1 × 10⁶</td>
+					<td>1.2 × 10⁻²</td>
+					<td>8.3 × 10⁷</td>
+			</tr>
+			<tr>
+					<td>Carbonic anhydrase</td>
+					<td>HCO₃⁻</td>
+					<td>4 × 10⁵</td>
+					<td>2.6 × 10⁻²</td>
+					<td>1.5 × 10⁷</td>
+			</tr>
+			<tr>
+					<td>Catalase</td>
+					<td>H₂O₂</td>
+					<td>4 × 10⁷</td>
+					<td>1.1 × 10⁰</td>
+					<td>4 × 10⁷</td>
+			</tr>
+			<tr>
+					<td>Crotonase</td>
+					<td>Crotonyl-CoA</td>
+					<td>5.7 × 10³</td>
+					<td>2 × 10⁻⁵</td>
+					<td>2.8 × 10⁸</td>
+			</tr>
+			<tr>
+					<td>Fumarase</td>
+					<td>Fumarate</td>
+					<td>8 × 10²</td>
+					<td>5 × 10⁻⁶</td>
+					<td>1.6 × 10⁸</td>
+			</tr>
+			<tr>
+					<td>Fumarase</td>
+					<td>Malate</td>
+					<td>9 × 10²</td>
+					<td>2.5 × 10⁻⁵</td>
+					<td>3.6 × 10⁷</td>
+			</tr>
+			<tr>
+					<td>β-Lactamase</td>
+					<td>Benzylpenicillin</td>
+					<td>2.0 × 10³</td>
+					<td>2 × 10⁻⁵</td>
+					<td>1 × 10⁸</td>
+			</tr>
+	</tbody>
+</table>
+<p><em>Data: Fersht, A. (1999). Structure and Mechanism in Protein Science, p. 166, W. H. Freeman and Company. (Redrawn as a table rather than reproduced as a textbook scan — the underlying rate constants are data, not the copyrighted expression.)</em></p>
 <p><strong>Worked example.</strong> An enzyme &ldquo;happyase&rdquo; catalyses SAD ⇌ HAPPY, with $k_{cat} = 600\ \text{s}^{-1}$. At $[E_t] = 20\ \text{nM}$ and $[\text{SAD}] = 40\ \mu\text{M}$, $V_0 = 9.6\ \mu\text{M s}^{-1}$. Find $K_m$.</p>
 <p>First, $V_{max} = k_{cat}[E_t] = 600\ \text{s}^{-1} \times 0.020\ \mu\text{M} = 12\ \mu\text{M s}^{-1}$. Using the ratio form:</p>
 <p>$$ \frac{V_0}{V_{max}} = \frac{[S]}{K_m + [S]} ;\Rightarrow; \frac{9.6}{12} = \frac{40}{K_m + 40} ;\Rightarrow; 0.8(K_m + 40) = 40 ;\Rightarrow; K_m = 10\ \mu\text{M} $$</p>

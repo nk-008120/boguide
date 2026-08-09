@@ -15,9 +15,9 @@
   // static/avatars/ and are supplied separately (not generated here); this
   // list just needs to match whatever filenames end up there.
   var AVATAR_FILES = [
-    'avatar-01.png', 'avatar-02.png', 'avatar-03.png', 'avatar-04.png',
-    'avatar-05.png', 'avatar-06.png', 'avatar-07.png', 'avatar-08.png',
-    'avatar-09.png', 'avatar-10.png', 'avatar-11.png', 'avatar-12.png'
+    'avatar-01.jpg', 'avatar-02.jpg', 'avatar-03.jpg', 'avatar-04.png',
+    'avatar-05.png', 'avatar-06.png', 'avatar-07.jpg', 'avatar-08.jpg',
+    'avatar-09.png', 'avatar-10.jpg', 'avatar-11.jpg', 'avatar-12.svg'
   ];
 
   // ISO 3166-1 alpha-2 codes — stored as-is in profiles.country so the

@@ -31,8 +31,15 @@ paste them into the right places. Do these in order.
    [004_moderation_and_deletion.sql](supabase/migrations/004_moderation_and_deletion.sql),
    [005_bioclash_notify.sql](supabase/migrations/005_bioclash_notify.sql),
    [006_bioclash_results.sql](supabase/migrations/006_bioclash_results.sql),
-   and [007_discussions.sql](supabase/migrations/007_discussions.sql)
+   [007_discussions.sql](supabase/migrations/007_discussions.sql),
+   and [008_discussions_user_id_default.sql](supabase/migrations/008_discussions_user_id_default.sql)
    the same way, in that order (SQL Editor -> New query -> paste -> Run).
+   **008 is a production hotfix — run it before promoting Discussions to real
+   users.** Without it, every "Start a discussion" / "Reply" click fails with
+   `new row violates row-level security policy for table "discussion_threads"`
+   — the insert never sent `user_id`, and the RLS policy has no way to
+   approve a row where that column is NULL. 008 defaults `user_id` to
+   `auth.uid()` server-side; no code or grant change was needed.
    002 adds Part 2's `country`/`about`/`education_level` columns; 003 adds
    `avatar_url` to the leaderboard views; 004 adds `profiles.is_hidden`
    (moderation — see below) and the `account_deletions` log table (backing
@@ -109,13 +116,16 @@ data (`is_hidden = false` un-hides them).
 
 ## 3. Add avatar images
 
-Feature 2 (profile pictures) expects a curated set of images at
-`static/avatars/avatar-01.png` through `avatar-12.png` (12 images — see the
-`AVATAR_FILES` list in `static/js/papers-account.js` if you change the count
-or naming). These are **not included in the repo** — add your own square
-images at those exact paths/filenames. Until they exist, the avatar picker on
-the account page renders empty circles (broken-image icons are hidden via
-CSS) but everything else works fine.
+**Done, 2026-08-09.** All 12 avatars now exist at `static/avatars/` and
+`AVATAR_FILES` in `static/js/papers-account.js` matches their real filenames
+(mixed extensions — jpg/png/svg — not all `.png`, which is fine, the picker
+just uses whatever's in the list). Two files originally supplied as `.avif`
+were converted to `.png`: `profiles.avatar_url` has a CHECK constraint
+(`002_profile_fields.sql`) that only allows
+`png|jpg|jpeg|webp|svg` — `.avif` would have passed the picker UI but then
+silently failed to save to the database. If more avatars are added later,
+keep new files to one of those five extensions, or extend the CHECK
+constraint in a new migration first.
 
 ## 4. Configure Auth
 
@@ -152,6 +162,18 @@ In the Vercel project dashboard -> **Settings -> Environment Variables**, add:
 
 Redeploy after saving (Vercel usually does this automatically on the next
 push, or you can trigger a manual redeploy from the dashboard).
+
+### Supabase keep-alive (added 2026-08-09)
+
+Free-tier Supabase projects auto-pause after 7 days with no API activity —
+now a real risk since login, the leaderboard, BiOClash, and Discussions all
+depend on this one project. `vercel.json` now has a `crons` entry hitting
+`api/keepalive.js` (a trivial read-only `profiles` query) once a day at
+06:00 UTC. **Nothing manual to do** — Vercel Cron reads `vercel.json`
+automatically on deploy, no dashboard toggle needed on the Hobby plan for a
+single once-daily job. Worth a one-time check after the next deploy:
+**Vercel dashboard -> your project -> Cron Jobs** should show `/api/keepalive`
+with a recent successful run.
 
 ## 6. Local development (optional)
 
