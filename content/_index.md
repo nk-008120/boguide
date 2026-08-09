@@ -1,5 +1,5 @@
 ---
-title: "BioGuide"
+title: "BiOGuide"
 description: "Biology Olympiad Preparation Hub — Free study guides, interactive simulators, and practice for IBO, USABO, and INBO."
 layout: "wide"
 ---
