@@ -29,8 +29,8 @@ graph LR;
     end
 ```
 
-![Fish gill structure and countercurrent exchange: water flows from the mouth over the gill arch and filaments to the lamellae, while blood flows through capillaries within the lamellae in the opposite direction — a simplified capillary trace shows water O2 saturation falling from 100% to 15% along the exchange surface while blood O2 saturation simultaneously rises from 15% to 80%, always meeting less-depleted water further along](/ANIMALPHYSIOPICS/gill-countercurrent-gas-exchange.jpg)
-*Source: © 2009 Pearson Education, Inc.*
+![Fish gill structure and countercurrent exchange: (A) water enters through the mouth and flows over the gills via the gill arches under the opercular flap, exiting via the opercular cavity; (B) gill filaments and secondary lamellae; (C) blood perfusion of the secondary lamellae runs counter to the direction of water flow, so oxygenated blood leaves where the highest-O2 water enters](/ANIMALPHYSIOPICS/gill-countercurrent-gas-exchange.jpg)
+*Source: [ScienceDirect Topics — Gill](https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/gill)*
 
 ### Tidal Ventilation: The Mammalian Limit
 

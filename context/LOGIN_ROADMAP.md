@@ -17,6 +17,24 @@ sections below are kept as-written (the original plan) since they're still
 an accurate description of *why* things are built the way they are; treat
 them as background, not a to-do list.
 
+**Update, 2026-08-09: three more migrations extended this same system** —
+not documented in detail here, since `SETUP.md` is now the single place
+that lists every migration in run order with what each does; don't let this
+file drift out of sync with it again. Briefly: `005_bioclash_notify.sql`
+adds `profiles.notify_bioclash` (a login-based opt-in for the BiOClash
+landing page's "get notified" widget); `006_bioclash_results.sql` adds a
+`bioclash_results` table + `bioclash_leaderboard` view (manually populated
+by the founder once a real BiOClash season concludes — no scoring engine
+exists yet, so this starts empty); `007_discussions.sql` adds
+`discussion_threads`/`discussion_comments` + their feed views (public
+comment/feedback threads at `/discussions/`, posting requires login,
+closing a thread is a manual owner action enforced at the RLS level, same
+posture as the existing `profiles.is_hidden` moderation flag below — which
+these two new features both reuse for filtering, not a new moderation
+mechanism). All three follow this file's existing patterns exactly: RLS
+public-read where appropriate, no client insert/update path for anything
+requiring owner judgment, manual SQL-editor action instead of an admin UI.
+
 ---
 
 ## Part 1 — Current state (what's already built and live)

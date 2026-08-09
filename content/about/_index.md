@@ -33,11 +33,9 @@ Some features we want to add to this website going forward:
 1. ~~A paper archive~~
 2. ~~An indigenous biology competition~~
 3. An indigenous AI agent to help guide you through your prep
-4. A comments, feedback, and discussion section
+4. ~~A comments, feedback, and discussion section~~
 
-Your input in the [survey](https://docs.google.com/forms/d/e/1FAIpQLSc_FbhYS1IraA1s6F7zFLzkILBZvRceDqdoMqV7yTH6hu0k-g/viewform?usp=header) will help determine which of these we prioritize — it's live only from June 3 to July 21, 2026, so visit soon.
-
-When we first started, we looked at existing resources like [Biolympiads](https://biolympiads.com) and [Learntuitive](https://learntuitive.com/), but found them fairly outdated, low on activity, and somewhat commercialised. Our [BiOGuide survey](https://docs.google.com/forms/d/e/1FAIpQLSc_FbhYS1IraA1s6F7zFLzkILBZvRceDqdoMqV7yTH6hu0k-g/viewform) backed up that impression, so we decided to build something different — deliberately setting out to be:
+When we first started, we looked at existing resources like [Biolympiads](https://biolympiads.com) and [Learntuitive](https://learntuitive.com/), but found them fairly outdated, low on activity, and somewhat commercialised. 
 
 1. Highly interactive
 2. Non-commercial (a non-profit)
@@ -55,7 +53,7 @@ Cracking these competitions isn't just about rote-memorising cellular pathways o
 
 ## How Do We find people?
 
-Our chain of command is somewhat summarised by <a href = "https://drive.google.com/file/d/1unOGgOnXPUFKjgCZ62puRivTm-_NBs5d/view?usp=sharing">this document</a> (Suits ball!). As mentioned around 10 times elsewhere, contact r6394175@gmail.com for applications, we could always use some help! Currently, we are looking for all sorts of help, majorly however, in the fields of olympiad specialised content generation, problem design, community and social media managers, and also some intermediate developers. 
+Our chain of command is somewhat summarised by <a href = "https://drive.google.com/file/d/1unOGgOnXPUFKjgCZ62puRivTm-_NBs5d/view?usp=sharing" target = "_blank">this document</a> (Suits ball!). As mentioned around 10 times elsewhere, contact r6394175@gmail.com for applications, we could always use some help! Currently, we are looking for all sorts of help, majorly however, in the fields of olympiad specialised content generation, problem design, community and social media managers, and also some intermediate developers. 
 
 ### Inspirations
 

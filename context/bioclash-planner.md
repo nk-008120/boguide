@@ -1,3 +1,38 @@
+**Status as of 2026-08-09: implemented.** This is the original requirements
+doc (the founder's raw ask), kept as-is below as the record of what was
+actually requested — it does not describe current state, read it as intent,
+not as a to-do list. What actually shipped:
+- Landing page at `/bioclash/`: hero with curtain-reveal intro (click/Enter
+  to open, respects `prefers-reduced-motion` by shortening rather than
+  skipping the animation), countdown to the September 11 "Season 1" target,
+  a status-honest "what it is"/"what's planned" section (future-tense
+  throughout, per the instruction below about not over-committing), and a
+  login-based "get notified" mechanism (`profiles.notify_bioclash`).
+- New palette (Exam-Paper Crimson: parchment/crimson/gold, explicitly not
+  the site's lilac/sage) and typography (headings reuse KaTeX's own
+  Computer-Modern-derived font files, already loaded sitewide for math, as
+  the LaTeX nod this doc asks for) — confirmed with the founder before
+  building, since this was flagged as a subjective call not to guess at.
+  Full CSS in `assets/css/custom.css`'s "BIOCLASH" sections.
+- A flamboyant, animated hero background (DNA-strand motif) distinct from
+  both BiOGuide's default gradient and BiOrchive's own watermark, per the
+  hard requirement below.
+- A "BiOClash Champions" section on `/papers/leaderboard/` — see
+  `SETUP.md` — currently empty (no season has run) since there is
+  deliberately no scoring/competition engine yet, only the display
+  mechanism, per this doc's own "not the competition system itself" framing.
+- **One line from the original ask below was NOT shipped verbatim**: "podium
+  winners get honorary Junior Partner position at BiOGuide" was softened in
+  the actual copy (to something like "may be recognized with...") after
+  confirming with the founder that the flat, unconditional commitment as
+  originally phrased wasn't actually intended to ship as-is.
+- Icons/Discord/Instagram links, the non-commercial "why" framing tied to
+  `about/_index.md`, and the navbar entry were all built as specified below.
+
+Original requirements follow, unedited:
+
+---
+
 Now, we need to do major another addition to the website!  We want to add a Biology competition - The BiOClash to the website. Create a plan on what the BiOClash home page will consist of, and how you will handle the technical side. These are the features i want in it :                                                                           Design — NOT matching your existing identity
 
 Palette: Decide a new palette.

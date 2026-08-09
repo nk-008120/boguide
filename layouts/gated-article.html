@@ -1,7 +1,9 @@
-{{- /* Feature 4 of LOGIN_ROADMAP.md's Part 2: gate every article behind
-     login with a teaser-and-blur, not a hard redirect. Applied via the
-     cascade in content/articles/_index.md (target "/articles/**"), so any
-     page nested under /articles/ gets this layout automatically.
+{{- /* Feature 4 of LOGIN_ROADMAP.md's Part 2: gate every BiOInsights piece
+     behind login with a teaser-and-blur, not a hard redirect. Applied via the
+     cascade in content/bioinsights/_index.md (target "/bioinsights/**"), so
+     any page nested under /bioinsights/ gets this layout automatically
+     (section renamed from "Articles" 2026-08-09; old /articles/ URLs
+     redirect via aliases).
 
      This is a presentation-layer gate, not a real access-control boundary:
      the full article HTML still ships in the page source (just visually

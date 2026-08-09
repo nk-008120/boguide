@@ -15,7 +15,7 @@ layout: "wide"
     <li><span class="account-branding-icon">📖</span><div><strong>BiOGuide Member Status</strong><br>Access to Pre-registration for the Biannual BiOClash, and occasional provisions of Outside Counsel roles.</div></li>
     <li><span class="account-branding-icon">🏆</span><div><strong>Leaderboard</strong><br>Save Timed Attempt results and see how you stack up, per round and overall.</div></li>
     <li><span class="account-branding-icon">🙂</span><div><strong>Profile</strong><br>Pick an avatar and share your country, education level, and a short bio.</div></li>
-    <li><span class="account-branding-icon">📖</span><div><strong>Articles</strong><br>Full access to every article, not just the teaser.</div></li>
+    <li><span class="account-branding-icon">📖</span><div><strong>BiOInsights</strong><br>Full access to every piece, not just the teaser.</div></li>
   </ul>
   <p class="account-branding-optional">Everything else on BiOGuide — practice questions, timed attempts, topic notes — still works exactly the same without an account.</p>
 </div>

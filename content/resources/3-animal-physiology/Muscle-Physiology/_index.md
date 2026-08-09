@@ -49,8 +49,8 @@ Released Ca²⁺ binds **troponin**, a regulatory protein complex on the thin (a
 4. **Detachment** — a fresh ATP molecule binds myosin, causing it to release actin.
 5. **Cocking** — myosin hydrolyzes the bound ATP to ADP+Pi, re-cocking the head to its high-energy conformation, ready to bind actin again if Ca²⁺/troponin/tropomyosin still permit it.
 
-![The five-step cross-bridge cycle drawn as a circular sequence: (1) binding of myosin to actin (releasing inorganic phosphate), (2) power stroke (actin pulled toward the sarcomere middle, ADP released), (3) rigor (myosin in low-energy form, tightly bound), (4) unbinding of myosin and actin (new ATP binds), (5) cocking of the myosin head (ATP hydrolyzed, myosin returns to high-energy form)](/ANIMALPHYSIOPICS/cross-bridge-cycle-five-steps.jpg)
-*Source: © 2011 Pearson Education, Inc.*
+![The myosin cross-bridge cycle on a single actin filament, five stages top to bottom: Attached (rigor configuration, no bound nucleotide), Released (ATP binds, affinity for actin drops), Cocked (ATP hydrolyzed to ADP+Pi, lever arm swings ~5nm), Re-binding and power stroke (weak rebinding to a new actin site, Pi release triggers the force-generating power stroke, ADP released), Force generating (back to a rigor-configuration attachment, head now at a new position on the filament)](/ANIMALPHYSIOPICS/cross-bridge-cycle-five-steps.png)
+*Source: Bruce Alberts et al., Molecular Biology of the Cell, on the myosin/actin cross-bridge cycle.*
 
 This cycle repeats asynchronously across the many myosin heads in a sarcomere for as long as cytosolic Ca²⁺ remains elevated. Contraction ends when Ca²⁺ is actively pumped back into the sarcoplasmic reticulum (by a dedicated Ca²⁺-ATPase), allowing tropomyosin to re-block the actin binding sites — relaxation, like contraction, is an active, ATP-dependent process, not merely the passive absence of stimulation.
 

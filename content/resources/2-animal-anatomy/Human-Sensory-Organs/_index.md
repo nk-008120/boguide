@@ -204,8 +204,8 @@ The cochlea is a coiled tube divided lengthwise into three fluid-filled channels
 
 The vestibular apparatus detects head position and movement using the same hair-cell mechanoreceptor principle as the cochlea, in two structurally distinct components: three **semicircular canals**, oriented in three roughly perpendicular planes, each with a swelling (**ampulla**) at its base containing a **crista ampullaris** — a hair-cell patch capped by a gelatinous **cupula** that is deflected by inertial lag in the endolymph during rotational (angular) acceleration, detecting head rotation in that canal's plane; and two **otolith organs**, the **utricle** and **saccule**, each containing a **macula** — a hair-cell patch overlaid by a gelatinous layer embedded with dense calcium carbonate crystals (**otoliths/otoconia**), whose inertial lag during linear acceleration or in response to gravity shears the underlying hair cells, detecting linear acceleration and static head tilt.
 
-![Vestibular system overview (utricle, saccule, semicircular canals with ampullae) plus an enlarged crista (cupula, hair bundles, hair cells, nerve fiber) and an enlarged macula (otoconia, otolithic membrane, stereocilia, kinocilium, type I/II hair cells, supporting cells, nerve fiber, basement membrane).](/ANATOMYPICS/semicircular-canal-otolith-organ-structure.jpg)
-*Source: Encyclopædia Britannica, Inc.*
+![The internal ear: bony and membranous labyrinth, with the three semicircular ducts (anterior, lateral, posterior) and their cristae within ampullae, the utricle and saccule, the vestibulocochlear nerve, and the cochlea (vestibular duct, cochlear duct, tympanic duct).](/ANATOMYPICS/semicircular-canal-otolith-organ-structure.png)
+*Source: [Wikipedia — Saccule](https://en.wikipedia.org/wiki/Saccule) (Wikimedia Commons; check the file's own page there for exact attribution wording before reuse elsewhere).*
 
 ## Comparative Structures
 

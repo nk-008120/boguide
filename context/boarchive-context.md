@@ -1,6 +1,23 @@
 # BioGuide Papers Archive — Context Handoff
 
-**Purpose:** orient a fresh context window to build a Biology Olympiad papers archive comparable to [aoxiv.aoguide.app](https://aoxiv.aoguide.app) (astronomy olympiad archive, sister project to aoguide.app — the same site whose CSS/design language inspired the "Favourite" theme this session; see `aesthetics-context.md`). This is a **new, large feature**, separate from the aesthetics work — different scope, likely different implementation approach. This doc is research, not a locked plan; verify anything load-bearing yourself before building.
+**Status as of 2026-08-09: superseded — this is the original pre-build
+research/planning doc, kept as a historical record of the design rationale,
+not as current state.** The papers archive (BiOrchive) described here as a
+future/undecided thing has long since been built and is live at
+`/papers/`, with real IBO 2022/2024 content, a login/leaderboard layer, and
+now (2026-08-09) a "BiOClash Champions" section too. **For current, accurate
+state, read `papers-ingestion-workflow.md`** (exam completion status,
+ingestion process) **and `LOGIN_ROADMAP.md`** (login/leaderboard
+architecture) instead of this file. The "Open questions" section below was
+answered long ago (the answers: MVP first not full aoXiv parity, IBO/USABO
+real exam PDFs as the actual content source, Hugo `data/*.yaml` as the data
+architecture, no contribute/login flow for content itself, extend the
+site's own identity rather than a separate sub-brand) — none of that
+resolution is recorded here, only in what was actually built. Kept around
+because the aoXiv research itself is still accurate and might be useful if
+the "comparable to aoXiv" ambition is ever revisited at greater scope.
+
+**Purpose (original, historical):** orient a fresh context window to build a Biology Olympiad papers archive comparable to [aoxiv.aoguide.app](https://aoxiv.aoguide.app) (astronomy olympiad archive, sister project to aoguide.app — the same site whose CSS/design language inspired the "Favourite" theme this session; see `aesthetics-context.md`). This is a **new, large feature**, separate from the aesthetics work — different scope, likely different implementation approach. This doc is research, not a locked plan; verify anything load-bearing yourself before building.
 
 ## What aoXiv actually is (researched directly, not guessed)
 
