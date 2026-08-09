@@ -166,6 +166,34 @@
     </item>
     
     <item>
+      <title>Leaderboard — Theoretical B</title>
+      <link>http://localhost:1313/papers/ibo/2024/theoretical-b/leaderboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2024/theoretical-b/leaderboard/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;a class=&#34;papers-nav-btn&#34; href=&#34;../&#34; style=&#34;display:inline-block;margin-bottom:1.5rem;&#34;&gt;← Back to Theoretical B&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Ranked by score, then time. Only submitted, logged-in attempts appear here — &lt;a
+    href=&#34;../attempt/&#34;&gt;attempting without an account&lt;/a&gt; still works exactly as before, it just isn&amp;rsquo;t ranked.&lt;/p&gt;
+&lt;script id=&#34;papers-leaderboard-data&#34; type=&#34;application/json&#34;&gt;{&#34;olympiad&#34;:&#34;ibo&#34;,&#34;roundId&#34;:&#34;theoretical-b&#34;,&#34;roundName&#34;:&#34;Theoretical B&#34;,&#34;year&#34;:&#34;2024&#34;}&lt;/script&gt;
+&lt;div id=&#34;papers-leaderboard-root&#34; class=&#34;papers-leaderboard-root&#34;&gt;
+  &lt;p id=&#34;papers-leaderboard-status&#34;&gt;Loading leaderboard…&lt;/p&gt;
+  &lt;table class=&#34;papers-leaderboard-table&#34; id=&#34;papers-leaderboard-table&#34; hidden&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;&lt;th&gt;#&lt;/th&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Score&lt;/th&gt;&lt;th&gt;Time&lt;/th&gt;&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody id=&#34;papers-leaderboard-tbody&#34;&gt;&lt;/tbody&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+&lt;script src=&#34;http://localhost:1313/js/papers-leaderboard.js&#34; defer&gt;&lt;/script&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
       <title>Q1 — Alfalfa Mosaic Virus — m6A Demethylation &amp; Viral Replication</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-1/q1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -6081,140 +6109,6 @@
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=35&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
-
-      </description>
-    </item>
-    
-    <item>
-      <title>Q22 — ADH1B Allele Geography and Ethanol Metabolism</title>
-      <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q22/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/papers/ibo/2024/theoretical-a/q22/</guid>
-      <description>
-        
-        
-        &lt;div class=&#34;topic-meta&#34;&gt;
-  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
-  
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
-&lt;/div&gt;
-
-&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/15-evolution/natural-selection-modes-and-fitness/&#34;&gt;Natural Selection: Modes &amp; Fitness&lt;/a&gt;
-&lt;/div&gt;
-&lt;p&gt;During the first step of ethanol metabolism in humans, alcohol dehydrogenase (ADH) converts ethanol to toxic acetaldehyde that can accumulate in the body.&lt;/p&gt;
-&lt;p&gt;ADH1B gene of alcohol dehydrogenase has 2 alleles with varying levels of enzyme activity: ADH1B&lt;em&gt;2 is associated with rapid alcohol metabolism compared to ADH1B&lt;/em&gt;1. The ADH1B*2 distribution has a distinct geographical pattern (see Figure 1B).&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2024/q22-figure-1.png&#34; alt=&#34;World map showing three historical centers of agriculture (Areas 1-3) and a contour plot of ADH1B*2 allele frequency, with red triangles marking data-collection points.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
-  &lt;/span&gt;
-&lt;em&gt;Figure 1. A The historical origins (Areas 1-3) of agriculture emerged 10,000 years BP (&amp;ldquo;before present&amp;rdquo;). B Global contour plot of the ADH1B&lt;/em&gt;2 allele frequency. The red triangles on the map are points of the data collection.*&lt;/p&gt;
-&lt;p&gt;On your answer sheet, indicate &amp;ldquo;T&amp;rdquo; for true statements and &amp;ldquo;F&amp;rdquo; for false ones.&lt;/p&gt;
-&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2024-theoretical-a-q22&#34;&gt;
-  &lt;div class=&#34;tf-quiz&#34;&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. The ANCESTRAL allele (ADH1B*1, lower activity) did NOT evolve to degrade high amounts of exogenous alcohol — this is because high-quantity exogenous alcohol consumption was not part of ancestral human behavior before agriculture. The ADH enzyme evolved to handle endogenous alcohol (produced by intestinal fermentation) and small amounts of dietary alcohol from fermented fruits. Large-scale ethanol production and consumption emerged with agriculture (~10,000 years BP). ADH1B*2 (high activity) is the DERIVED allele that arose/became selected in populations with agricultural alcohol production.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;A.&lt;/span&gt; The ancestral allele of the ADH1B gene evolved to degrade high amounts of exogenous alcohol.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement A&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;TRUE. ADH1B*2 rapidly converts ethanol to ACETALDEHYDE — a toxic intermediate that causes flushing, nausea, tachycardia, and other unpleasant symptoms (the &amp;#39;Asian flush&amp;#39; reaction, similar to effects of disulfiram/Antabuse). This rapid acetaldehyde buildup creates an aversive physiological response to alcohol consumption. The unpleasant consequences discourage sustained heavy drinking — providing a biochemical deterrent to alcohol abuse. Thus ADH1B*2 is protective against sustained ethanol abuse.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;B.&lt;/span&gt; ADH1B*2 is likely protective against sustained ethanol abuse.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement B&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;false&#34; data-explanation=&#34;FALSE. Area 3 represents the Americas. While the Americas developed their own agriculture independently (~9,000-5,000 years BP), the figure shows very LOW frequency of ADH1B*2 in the Americas. If Area 3 (Americas) were strongly associated with ethanol-driven positive selection for ADH1B*2, we would expect HIGH ADH1B*2 frequencies there. The low frequency in Area 3 gives no support for strong association of American agriculture with ethanol production as a selective driver for this allele.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;C.&lt;/span&gt; Agriculture in Area 3 has been strongly associated with ethanol production.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement C&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&#34;tf-quiz-row&#34; data-answer=&#34;true&#34; data-explanation=&#34;TRUE. ADH1B*2 shows HIGH frequency specifically in East Asian (Area 2) and Near Eastern/Mediterranean (Area 1) populations — geographically coinciding with the two oldest centers of agriculture. The most parsimonious explanation is that ADH1B*2 rose to high frequency in THESE regions due to positive selection driven by the cultural practice of consuming fermented agricultural products (beer, wine). Two independent positive selection events (one in Area 1, one in Area 2) is more parsimonious than assuming negative selection against ADH1B*1 everywhere else — which would require explaining why non-agricultural populations maintained the ancestral allele.&#34;&gt;
-      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;D.&lt;/span&gt; Based on the given data, it is more plausible that positive selection on the ADH1B locus occurred independently in Areas 1 and 2 than negative selection occurred elsewhere.&lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement D&#34;&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
-        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
-      &lt;/div&gt;
-      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
-    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
-    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
-(function () {
-  var wrap = document.currentScript.previousElementSibling;
-  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
-  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
-
-  rows.forEach(function (row) {
-    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
-    btns.forEach(function (btn) {
-      btn.addEventListener(&#39;click&#39;, function () {
-        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-        btn.classList.add(&#39;selected&#39;);
-        row.dataset.selected = btn.dataset.value;
-        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-      });
-    });
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
-    var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
-      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
-      if (!sel) {
-        allAnswered = false;
-        row.classList.add(&#39;unanswered&#39;);
-        return;
-      }
-      row.classList.remove(&#39;unanswered&#39;);
-      var isCorrect = sel === row.dataset.answer;
-      row.classList.toggle(&#39;correct&#39;, isCorrect);
-      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
-      if (isCorrect) correct++;
-      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
-    });
-    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
-    scoreEl.textContent = allAnswered
-      ? &#39;Score: &#39; + correct + &#39; / &#39; + rows.length
-      : &#39;Answer every statement first.&#39;;
-  });
-
-  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
-    rows.forEach(function (row) {
-      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
-      delete row.dataset.selected;
-      row.querySelectorAll(&#39;.tf-btn&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
-      row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
-    });
-    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
-  });
-})();
-&lt;/script&gt;
-
-&lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q21/&#34;&gt;← Previous: Q21&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a/q23/&#34;&gt;Next: Q23 →&lt;/a&gt;
-&lt;/div&gt;
-
-&lt;hr&gt;
-&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
-    href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=37&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
       </description>

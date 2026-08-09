@@ -30,7 +30,8 @@ paste them into the right places. Do these in order.
    [003_leaderboard_avatar.sql](supabase/migrations/003_leaderboard_avatar.sql),
    [004_moderation_and_deletion.sql](supabase/migrations/004_moderation_and_deletion.sql),
    [005_bioclash_notify.sql](supabase/migrations/005_bioclash_notify.sql),
-   and [006_bioclash_results.sql](supabase/migrations/006_bioclash_results.sql)
+   [006_bioclash_results.sql](supabase/migrations/006_bioclash_results.sql),
+   and [007_discussions.sql](supabase/migrations/007_discussions.sql)
    the same way, in that order (SQL Editor -> New query -> paste -> Run).
    002 adds Part 2's `country`/`about`/`education_level` columns; 003 adds
    `avatar_url` to the leaderboard views; 004 adds `profiles.is_hidden`
@@ -42,9 +43,12 @@ paste them into the right places. Do these in order.
    "BiOClash Champions" podium on `/papers/leaderboard/` (see "Recording
    BiOClash results" below — there's no automated scoring for BiOClash yet,
    so this table starts empty and the podium shows an honest "no champions
-   crowned yet" state until you populate it by hand). Any future schema
-   change lands as a new numbered file in `supabase/migrations/` rather than
-   editing `schema.sql` retroactively — run new ones in order as they're added.
+   crowned yet" state until you populate it by hand); 007 adds
+   `discussion_threads`/`discussion_comments` and their feed views backing
+   `/discussions/` (see "Closing a discussion thread" below). Any future
+   schema change lands as a new numbered file in `supabase/migrations/`
+   rather than editing `schema.sql` retroactively — run new ones in order
+   as they're added.
 
 ### Recording BiOClash results
 
@@ -68,10 +72,31 @@ new season's results automatically retires the old one — no code change
 needed. To correct a mistake, just `update`/`delete` the row directly
 (there's no self-serve edit path, same as every other admin action today).
 
+### Closing a discussion thread
+
+There's no in-app way to close a thread, by design — it's an owner-only
+action done by hand in the SQL Editor:
+
+```sql
+update public.discussion_threads set is_closed = true where id = '<thread-uuid>';
+```
+
+Find the uuid from the thread's URL (`/discussions/?thread=<uuid>`) or via
+**Table Editor -> discussion_threads**. Once closed, the RLS policy on
+`discussion_comments` blocks any new replies at the database level — not
+just hidden in the UI — even from a logged-in user hitting the API
+directly. Re-open a thread the same way (`is_closed = false`). To remove a
+thread entirely (spam, abuse), delete the row — comments cascade-delete
+with it. A single bad comment can be deleted the same way from
+`discussion_comments` without touching the thread.
+
 ### Moderation
 
 There's no admin UI yet — to hide a bad `display_name`/profile from the
-leaderboard, run this in the SQL Editor:
+leaderboard (and now also from Discussions — hidden users' threads/comments
+drop out of `discussion_threads_feed`/`discussion_comments_feed` the same
+way they already drop out of the leaderboard views), run this in the SQL
+Editor:
 
 ```sql
 update public.profiles set is_hidden = true where id = '<user-uuid>';
@@ -208,3 +233,13 @@ Part 2 additions:
       (see "Recording BiOClash results" above), reload, and confirm the
       podium renders with the right names/avatars/flags and the season
       label; delete the test rows afterward.
+- [ ] Visit `/discussions/` while logged out and confirm you can read the
+      (empty, at first) thread list, and see "Log in to start a discussion"
+      rather than a form. Log in, post a thread, confirm it redirects to
+      `/discussions/?thread=<id>` and shows your post. Log in as a second
+      account (or log out and back in as another user) and post a reply;
+      confirm it appears. Close the thread via the SQL snippet above,
+      reload the thread page, and confirm the reply form is replaced by
+      "This thread is closed" — then confirm attempting to insert a comment
+      on that thread directly via the Supabase client (e.g. browser
+      devtools console) is rejected by RLS, not just hidden by the UI.

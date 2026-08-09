@@ -3877,3 +3877,203 @@ html.dark .papers-pill.bioclash-pill {
   letter-spacing: 0.04em;
   opacity: 0.7;
 }
+
+/* ===================================================================
+   16. DISCUSSIONS — content/discussions/index.md + static/js/discussions.js
+   Public comments/feedback threads. Deliberately the site's normal
+   lilac/sage identity (--primary/--secondary, --radius-*/--shadow-*), NOT
+   BiOClash's crimson/gold — this is a general BiOGuide feature, not tied
+   to the competition. One static page acts as both list and per-thread
+   detail view (see discussions.js for why); this section styles both.
+   =================================================================== */
+.discussions-page {
+  max-width: 46rem;
+  margin: 0 auto;
+}
+.discussions-intro {
+  opacity: 0.85;
+  margin-bottom: 1.75rem;
+}
+.discussions-status {
+  opacity: 0.75;
+  font-style: italic;
+}
+.discussions-closed-note {
+  font-style: normal;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  background: rgba(92, 122, 88, 0.08);
+  border: 1px solid rgba(92, 122, 88, 0.2);
+}
+html.dark .discussions-closed-note {
+  background: rgba(157, 185, 154, 0.08);
+  border-color: rgba(157, 185, 154, 0.25);
+}
+
+/* --- Forms (new thread / new comment) --- */
+.discussions-new-thread {
+  margin-bottom: 2rem;
+}
+.discussions-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 0.75rem 0 1.5rem;
+}
+.discussions-form input,
+.discussions-form textarea {
+  width: 100%;
+  padding: 0.6rem 0.9rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(137, 101, 196, 0.3);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  resize: vertical;
+}
+.discussions-form input:focus,
+.discussions-form textarea:focus {
+  outline: none;
+  border-color: #8965c4;
+}
+html.dark .discussions-form input,
+html.dark .discussions-form textarea {
+  border-color: rgba(201, 183, 232, 0.35);
+}
+html.dark .discussions-form input:focus,
+html.dark .discussions-form textarea:focus {
+  border-color: #c9b7e8;
+}
+.discussions-form button {
+  align-self: flex-start;
+}
+.discussions-msg {
+  font-size: 0.9rem;
+  min-height: 1.2em;
+  opacity: 0.85;
+}
+
+/* --- Thread list --- */
+.discussions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.discussions-thread-card {
+  display: block;
+  padding: 1.1rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(137, 101, 196, 0.2);
+  background: rgba(137, 101, 196, 0.03);
+  text-decoration: none !important;
+  color: inherit;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+.discussions-thread-card:hover {
+  border-color: rgba(137, 101, 196, 0.5);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px);
+}
+html.dark .discussions-thread-card {
+  border-color: rgba(201, 183, 232, 0.22);
+  background: rgba(201, 183, 232, 0.04);
+}
+html.dark .discussions-thread-card:hover {
+  border-color: rgba(201, 183, 232, 0.5);
+}
+.discussions-thread-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+.discussions-thread-title {
+  font-weight: 700;
+}
+.discussions-thread-excerpt {
+  font-size: 0.92rem;
+  opacity: 0.85;
+  margin: 0 0 0.6rem;
+}
+
+/* --- Badges --- */
+.discussions-badge {
+  display: inline-block;
+  flex-shrink: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.6rem;
+  border-radius: var(--radius-pill);
+}
+.discussions-badge-open {
+  color: #166534;
+  background: #dcfce7;
+}
+.discussions-badge-closed {
+  color: #6b7280;
+  background: #e5e7eb;
+}
+html.dark .discussions-badge-open {
+  color: #4ade80;
+  background: rgba(74, 222, 128, 0.15);
+}
+html.dark .discussions-badge-closed {
+  color: #cbd5e1;
+  background: rgba(203, 213, 225, 0.12);
+}
+
+/* --- Shared meta row (avatar + flag + name + dots + date) --- */
+.discussions-thread-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+.discussions-meta-dot {
+  opacity: 0.6;
+}
+
+/* --- Detail view --- */
+.discussions-back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+.discussions-thread-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+.discussions-thread-body {
+  white-space: pre-wrap;
+  line-height: 1.65;
+  margin: 1rem 0 2rem;
+}
+
+/* --- Comments --- */
+.discussions-comments {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.discussions-comment {
+  padding: 0.9rem 1.1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(137, 101, 196, 0.15);
+  background: rgba(137, 101, 196, 0.03);
+}
+html.dark .discussions-comment {
+  border-color: rgba(201, 183, 232, 0.18);
+  background: rgba(201, 183, 232, 0.04);
+}
+.discussions-comment-body {
+  white-space: pre-wrap;
+  margin: 0.4rem 0 0;
+}
