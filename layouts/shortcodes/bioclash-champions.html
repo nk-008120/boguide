@@ -1,0 +1,24 @@
+{{- /* BiOClash "Champions" leaderboard — the most recent season's placements
+     from Supabase's bioclash_leaderboard view (supabase/migrations/
+     006_bioclash_results.sql). Usage: {{< bioclash-champions >}} — no
+     params. Deliberately separate from the papers-leaderboard-* family
+     (this isn't a BiOrchive Timed Attempt result): results are entered by
+     hand by the project owner once a season concludes, since BiOClash has
+     no scoring engine yet. Top 3 get a podium (static/js/bioclash-
+     champions.js renders into #bioclash-champions-podium); placement 4+
+     (if a season ever lists more) fall into a plain table below it. */ -}}
+<div id="bioclash-champions-root" class="bioclash-page bioclash-champions-section">
+  <div class="bioclash-champions-frame">
+    <p class="bioclash-eyebrow">Season 1</p>
+    <h2 class="bioclash-champions-heading">BiOClash Champions</h2>
+    <p id="bioclash-champions-status" class="bioclash-champions-status">Loading champions…</p>
+    <div class="bioclash-champions-podium" id="bioclash-champions-podium" hidden></div>
+    <table class="bioclash-champions-table" id="bioclash-champions-table" hidden>
+      <thead>
+        <tr><th>#</th><th>Name</th><th>Score</th></tr>
+      </thead>
+      <tbody id="bioclash-champions-tbody"></tbody>
+    </table>
+  </div>
+</div>
+<script src="{{ "js/bioclash-champions.js" | relURL }}" defer></script>

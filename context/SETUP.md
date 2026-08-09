@@ -29,16 +29,44 @@ paste them into the right places. Do these in order.
 4. Also run [supabase/migrations/002_profile_fields.sql](supabase/migrations/002_profile_fields.sql),
    [003_leaderboard_avatar.sql](supabase/migrations/003_leaderboard_avatar.sql),
    [004_moderation_and_deletion.sql](supabase/migrations/004_moderation_and_deletion.sql),
-   and [005_bioclash_notify.sql](supabase/migrations/005_bioclash_notify.sql)
+   [005_bioclash_notify.sql](supabase/migrations/005_bioclash_notify.sql),
+   and [006_bioclash_results.sql](supabase/migrations/006_bioclash_results.sql)
    the same way, in that order (SQL Editor -> New query -> paste -> Run).
    002 adds Part 2's `country`/`about`/`education_level` columns; 003 adds
    `avatar_url` to the leaderboard views; 004 adds `profiles.is_hidden`
    (moderation — see below) and the `account_deletions` log table (backing
    the account page's "Delete my account" button); 005 adds
    `profiles.notify_bioclash`, the opt-in flag behind the BiOClash landing
-   page's (`/bioclash/`) login-based "get notified" widget. Any future schema
+   page's (`/bioclash/`) login-based "get notified" widget; 006 adds the
+   `bioclash_results` table + `bioclash_leaderboard` view backing the
+   "BiOClash Champions" podium on `/papers/leaderboard/` (see "Recording
+   BiOClash results" below — there's no automated scoring for BiOClash yet,
+   so this table starts empty and the podium shows an honest "no champions
+   crowned yet" state until you populate it by hand). Any future schema
    change lands as a new numbered file in `supabase/migrations/` rather than
    editing `schema.sql` retroactively — run new ones in order as they're added.
+
+### Recording BiOClash results
+
+There's no scoring engine or admin UI for BiOClash yet — once a season
+concludes and you know the placements, enter them by hand in the SQL
+Editor. Find each winner's uuid via **Table Editor -> profiles** (search by
+`display_name`), then:
+
+```sql
+insert into public.bioclash_results (user_id, season, placement, score_label)
+values
+  ('<uuid-1>', 'Season 1 — Fall 2026', 1, '94/100'),
+  ('<uuid-2>', 'Season 1 — Fall 2026', 2, '89/100'),
+  ('<uuid-3>', 'Season 1 — Fall 2026', 3, '85/100');
+```
+
+`score_label` is optional free text (leave it out / pass `null` if you'd
+rather not show a score). The Champions podium always shows whichever
+`season` value has the most recent `awarded_at` timestamp, so inserting a
+new season's results automatically retires the old one — no code change
+needed. To correct a mistake, just `update`/`delete` the row directly
+(there's no self-serve edit path, same as every other admin action today).
 
 ### Moderation
 
@@ -173,3 +201,10 @@ Part 2 additions:
       opted in ✓". In the Supabase Table Editor, confirm that user's
       `profiles.notify_bioclash` is `true`. Click "Opt out" and confirm it
       flips back to `false` and the login CTA reappears.
+- [ ] Visit `/papers/leaderboard/` with `bioclash_results` still empty and
+      confirm the "BiOClash Champions" section shows the "no champions
+      crowned yet" message with a working link to `/bioclash/`, rather than
+      an empty podium or a broken query. Insert a test season's results
+      (see "Recording BiOClash results" above), reload, and confirm the
+      podium renders with the right names/avatars/flags and the season
+      label; delete the test rows afterward.
