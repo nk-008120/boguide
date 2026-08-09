@@ -3169,6 +3169,33 @@ main#content:has(#bioclash-root) > h1 {
   display: none !important;
 }
 
+/* Sitewide watermark for the BiOClash section — layouts/_default/baseof.html
+   swaps in this class instead of the default .bioguide-bg-layer whenever
+   .Section is "bioclash" (same opt-out mechanism BiOrchive/papers already
+   uses for its own .biorchive-bg-layer), so the page's fixed background
+   mark is the BiOClash crest, not the BiOGuide logo. Sits behind the hero
+   (which paints its own opaque parchment background over it) but shows
+   through the body sections below, same as the other two sitewide marks.
+   No dark-mode color invert (unlike .bioguide-bg-layer) — the crest is
+   already a full-color crimson/gold mark, not a flat dark logo, and reads
+   fine on both light and dark page backgrounds; only opacity is tuned up
+   slightly for dark mode so it stays visible against the darker page. */
+.bioclash-bg-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: url('/bioclashlogo-transparent.png');
+  background-repeat: no-repeat;
+  background-position: center 12%;
+  background-size: min(38%, 480px);
+  background-attachment: fixed;
+  opacity: 0.09;
+}
+html.dark .bioclash-bg-layer {
+  opacity: 0.16;
+}
+
 .bioclash-page {
   --bc-parchment: #F6F1E4;
   --bc-ink: #1C1A17;
@@ -3673,4 +3700,180 @@ html.dark .papers-pill.bioclash-pill {
   .bioclash-tagline { font-size: 1.05rem; }
   .bioclash-dna-strand { width: 46px; }
   .bioclash-curtain-prompt { white-space: normal; text-align: center; max-width: 80vw; }
+  .bioclash-champions-podium { flex-direction: column; align-items: center; }
+  .bioclash-champion-rank-1,
+  .bioclash-champion-rank-2,
+  .bioclash-champion-rank-3 {
+    order: initial;
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/* ===================================================================
+   15c. BIOCLASH CHAMPIONS PODIUM — {{< bioclash-champions >}}, embedded on
+   the main leaderboard page (content/papers/leaderboard/index.md) above
+   the site's own practice-test Hall of Fame. Wrapped in .bioclash-page
+   (section 15's palette/typography) so it reads as a deliberately distinct,
+   "heavier" showcase against the rest of that page's lilac/sage identity —
+   the same crimson/gold/parchment crest treatment as the /bioclash/ landing
+   page itself, reused wholesale rather than a new one-off palette. Podium
+   layout mirrors .papers-hof-slot's asymmetric rank-1/2/3 structure
+   (section 24) — same proven shape, different skin. Empty state (no season
+   has concluded yet) is handled entirely by static/js/bioclash-champions.js
+   swapping the status text — no separate CSS state needed here.
+   =================================================================== */
+.bioclash-champions-section {
+  margin: 2.5rem 0 3rem;
+}
+.bioclash-champions-frame {
+  position: relative;
+  isolation: isolate;
+  text-align: center;
+  padding: 3rem 1.5rem 2.5rem;
+  border-radius: var(--radius-xl);
+  background: var(--bc-parchment);
+  border: 1px solid var(--bc-border);
+  box-shadow: var(--shadow-lg);
+}
+.bioclash-champions-frame::after {
+  content: '';
+  position: absolute;
+  inset: 10px;
+  border: 1px solid rgba(201, 151, 31, 0.35);
+  border-radius: calc(var(--radius-xl) - 6px);
+  pointer-events: none;
+}
+.bioclash-champions-heading {
+  position: relative;
+  z-index: 1;
+  font-size: 2.4rem;
+  color: var(--bc-crimson);
+  margin: 0 0 0.5rem;
+}
+/* Override section 15's sitewide .bioclash-page h2 auto-numbering
+   (counter-based "§ 01 — ...") for this one heading — that numbering only
+   reads as intentional in the context of the /bioclash/ page's own
+   multi-section flow; here it's a single standalone heading.
+   `.bioclash-page h2::before` (class+type+pseudo, specificity 0-1-2) is
+   MORE specific than a single class + pseudo-element (0-1-1), so a plain
+   `.bioclash-champions-heading::before` override loses regardless of
+   source order — match class+type to beat it instead of reaching for
+   !important. */
+.bioclash-page h2.bioclash-champions-heading::before {
+  content: none;
+}
+.bioclash-champions-status {
+  position: relative;
+  z-index: 1;
+  font-style: italic;
+  opacity: 0.85;
+}
+.bioclash-champions-status a {
+  margin-left: 0.35rem;
+}
+.bioclash-champions-season-label {
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  color: var(--bc-gold);
+  opacity: 1;
+}
+.bioclash-champions-podium {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 2rem 0 1rem;
+}
+.bioclash-champion-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.4rem;
+  width: 170px;
+  padding: 1.4rem 1rem 1.6rem;
+  border-radius: var(--radius-lg);
+  background: var(--bc-card-bg);
+  border: 1px solid var(--bc-border);
+  border-top: 4px solid transparent;
+}
+.bioclash-champion-rank-1 {
+  order: 2;
+  width: 200px;
+  padding-top: 1.9rem;
+  padding-bottom: 2.1rem;
+  border-top-color: var(--bc-gold);
+  background: linear-gradient(180deg, rgba(201, 151, 31, 0.18), var(--bc-card-bg));
+  box-shadow: var(--shadow-md);
+}
+.bioclash-champion-rank-2 {
+  order: 1;
+  border-top-color: #a8adb4;
+}
+.bioclash-champion-rank-3 {
+  order: 3;
+  border-top-color: #c07a3e;
+}
+.bioclash-champion-medal {
+  font-size: 2.1rem;
+  line-height: 1;
+}
+.bioclash-champion-rank-1 .bioclash-champion-medal {
+  font-size: 2.6rem;
+}
+.bioclash-champion-avatar-wrap .papers-avatar {
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.3rem;
+}
+.bioclash-champion-rank-1 .papers-avatar {
+  width: 4.25rem;
+  height: 4.25rem;
+  font-size: 1.7rem;
+}
+.bioclash-champion-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  font-weight: 700;
+  font-family: 'BiOClash Display', Georgia, serif;
+  max-width: 100%;
+}
+.bioclash-champion-name span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bioclash-champion-score {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--bc-crimson);
+}
+.bioclash-champions-table {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 32rem;
+  margin: 1rem auto 0;
+  border-collapse: collapse;
+  text-align: left;
+}
+.bioclash-champions-table th,
+.bioclash-champions-table td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--bc-border);
+}
+.bioclash-champions-table th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.7;
 }
