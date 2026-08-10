@@ -20,7 +20,7 @@ function allBlocks(paper) {
   const out = [];
   for (const part of paper.parts || []) {
     for (const block of part.blocks || []) {
-      out.push({ ...block, partId: part.id, partName: part.name });
+      out.push({ ...block, partId: part.id, partName: part.name, partIntro: part.intro || null });
     }
   }
   return out;
@@ -30,26 +30,33 @@ function findBlock(paper, blockId) {
   return allBlocks(paper).find((b) => b.id === blockId) || null;
 }
 
-// The very first block(s) a fresh attempt starts with: every block in the
-// first part EXCEPT any block that is itself the `reveals` target of some
-// other block. That exclusion is the whole point — a reveal-gated block
-// (whether it's a reveal_content block or an ordinary question block made
-// visible by a prior lock) must never be reachable until its gating lock
-// actually fires, no matter which part it happens to be listed under in
-// the YAML. (Bug fixed 2026-08-10: this previously returned every block in
-// part 1 unconditionally, which included part-a-reveal — meaning the
-// "Timeline Confirmed" answer reveal was created, and visible, from the
-// very start of the attempt, before Part A was ever locked.)
+// Every block in the ENTIRE paper EXCEPT any block that is itself the
+// `reveals` target of some other block. That exclusion is the whole point
+// — a reveal-gated block must never be reachable until its gating lock
+// actually fires. Everything else starts visible together, not part by
+// part: ordinary "recoverable" questions (the paper's own term — answerable
+// and revisable at any point) carry no secret-dependent information, so
+// there's no security reason to drip-feed them in; a real timed paper lets
+// you see and navigate the whole thing too, except specifically-locked
+// sections.
+//
+// (Two bugs fixed here 2026-08-10, both from the same root cause — this
+// function used to only ever return part 1's blocks:
+// 1. The "Timeline Confirmed" reveal (part-a-reveal) was visible from the
+//    very start, before Part A was ever locked — the ORIGINAL version of
+//    this fix (scoping to part 1, still excluding reveals targets) closed
+//    that specific leak.
+// 2. But scoping to "part 1 only" also meant NOTHING beyond Part A could
+//    ever become reachable — Part B's block isn't the `reveals` target of
+//    anything, so once Part A's reveal appeared, the attempt was
+//    permanently stuck with no way to proceed. This version fixes that by
+//    spanning every part, not just the first.)
 function initialBlocks(paper) {
   const gatedIds = new Set();
   for (const block of allBlocks(paper)) {
     if (block.reveals) gatedIds.add(block.reveals);
   }
-  const first = (paper.parts || [])[0];
-  if (!first) return [];
-  return (first.blocks || [])
-    .filter((b) => !gatedIds.has(b.id))
-    .map((b) => ({ ...b, partId: first.id, partName: first.name }));
+  return allBlocks(paper).filter((b) => !gatedIds.has(b.id));
 }
 
 // Deterministic per-user shuffle, so the same user always sees the same
@@ -87,6 +94,11 @@ function toClientBlock(block, userId) {
     id: block.id,
     partId: block.partId,
     partName: block.partName,
+    partIntro: block.partIntro || null,
+    label: block.label || null,
+    table: block.table || null,
+    tables: block.tables || null,
+    images: block.images || null,
     type: block.type,
     locksAfterSubmit: !!block.locksAfterSubmit,
     lockWarning: block.lockWarning || null

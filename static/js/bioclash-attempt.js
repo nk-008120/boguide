@@ -202,6 +202,41 @@
     return block.answer && block.answer[key];
   }
 
+  // table: { headers: [...], rows: [[...], ...] } — reference material shown
+  // as plain read-only HTML, used for both block-level tables (shared
+  // context for several questions, e.g. Q9.ii's scenario/lane tables) and
+  // a component's own table (e.g. Q12's primer-sequence table).
+  function renderTable(tableData) {
+    var wrap = document.createElement('div');
+    wrap.className = 'bioclash-table-wrap';
+    var table = document.createElement('table');
+    table.className = 'bioclash-ref-table';
+    if (tableData.headers) {
+      var thead = document.createElement('thead');
+      var hr = document.createElement('tr');
+      tableData.headers.forEach(function (h) {
+        var th = document.createElement('th');
+        th.textContent = h;
+        hr.appendChild(th);
+      });
+      thead.appendChild(hr);
+      table.appendChild(thead);
+    }
+    var tbody = document.createElement('tbody');
+    (tableData.rows || []).forEach(function (row) {
+      var tr = document.createElement('tr');
+      row.forEach(function (cell) {
+        var td = document.createElement('td');
+        td.textContent = cell;
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
+    wrap.appendChild(table);
+    return wrap;
+  }
+
   function renderComponent(block, component) {
     var wrap = document.createElement('div');
     wrap.className = 'bioclash-component';
@@ -217,6 +252,8 @@
       img.alt = '';
       wrap.appendChild(img);
     }
+
+    if (component.table) wrap.appendChild(renderTable(component.table));
 
     var current = componentValue(block, component.key);
     var input;
@@ -380,12 +417,57 @@
     if (!bodyEl) return;
     bodyEl.innerHTML = '';
 
+    var lastPartId = null;
     state.blocks.forEach(function (block) {
+      // Part heading + narrative intro shown once, the first time a block
+      // from that part appears — not repeated on every block within it.
+      if (block.partId !== lastPartId) {
+        lastPartId = block.partId;
+        var heading = document.createElement('h3');
+        heading.className = 'bioclash-part-heading';
+        heading.textContent = block.partName || '';
+        bodyEl.appendChild(heading);
+        if (block.partIntro) {
+          var intro = document.createElement('p');
+          intro.className = 'bioclash-part-intro';
+          intro.textContent = block.partIntro;
+          bodyEl.appendChild(intro);
+        }
+      }
+
       var section = document.createElement('section');
       section.className = 'bioclash-block bioclash-block-' + block.status;
-      var heading = document.createElement('h3');
-      heading.textContent = block.partName || '';
-      section.appendChild(heading);
+      if (block.label) {
+        var label = document.createElement('h4');
+        label.className = 'bioclash-block-label';
+        label.textContent = block.label;
+        section.appendChild(label);
+      }
+      if (block.table) section.appendChild(renderTable(block.table));
+      (block.tables || []).forEach(function (t) {
+        if (t.title) {
+          var tTitle = document.createElement('p');
+          tTitle.className = 'bioclash-table-title';
+          tTitle.textContent = t.title;
+          section.appendChild(tTitle);
+        }
+        section.appendChild(renderTable(t));
+      });
+      (block.images || []).forEach(function (imgSpec) {
+        var figWrap = document.createElement('figure');
+        figWrap.className = 'bioclash-block-figure';
+        var img = document.createElement('img');
+        img.src = imgSpec.src;
+        img.className = 'bioclash-component-image';
+        img.alt = imgSpec.caption || '';
+        figWrap.appendChild(img);
+        if (imgSpec.caption) {
+          var cap = document.createElement('figcaption');
+          cap.textContent = imgSpec.caption;
+          figWrap.appendChild(cap);
+        }
+        section.appendChild(figWrap);
+      });
 
       if (block.lockWarning && block.status === 'active') {
         var warnBanner = document.createElement('p');
