@@ -2,10 +2,7 @@
 # Source: BiOGuide-BiOClash-Problem_1_3.docx (academic content, verbatim/
 # near-verbatim) + BiOClash-Loki-Narrative_1.md (narrative calibration —
 # light Mobius/TVA framing at part transitions only, never inside the
-# actual question prompts, matching that document's own restraint) +
-# data/bioclash/daquestions.md (source for the DATA ANALYSIS part, added
-# 2026-08-11 — see context/bioclash-mb01-exam-mechanism.md for the full
-# rationale).
+# actual question prompts, matching that document's own restraint).
 #
 # durationMinutes below is a PLACEHOLDER (240) — confirm the real number.
 #
@@ -16,15 +13,6 @@
 # referencing an image file, so the questions are fully functional now;
 # swap in a real `imageRef`/`images` entry once art exists, no schema
 # change needed.
-#
-# A block's `reveals` field accepts a single block id OR an array of block
-# ids. `revealsParts` (array of part ids) reveals every block belonging to
-# those parts at once, except any block that is itself still gated by its
-# OWN un-fired `reveals`/`revealsParts` (e.g. q10-4-rest stays hidden even
-# once Part E as a whole is revealed, until q10-4a is separately locked).
-# Used to gate the whole of Part B–F behind the Data Analysis section
-# (da-fzd-mystery), so the paper can no longer be read end-to-end before
-# Part A is committed — see api/_lib/bioclash.js.
 
 id: mb-01
 title: "Case File MB-01 — Molecular Biology & Biochemistry"
@@ -57,11 +45,11 @@ parts:
             prompt: >
               Context: RNF43 and ZNRF3 are two closely related membrane-bound E3 ubiquitin ligases.
               Both do the same basic job: they tag Frizzled (FZD) receptors — the primary receptors
-              for WNT ligands — for internalisation and degradation, which shuts down WNT signalling.
+              for WNT ligands, which shuts down WNT signalling.
               RNF43/ZNRF3 are themselves induced by WNT/β-catenin signalling. Every cell surface is a
               timeline of its own, and two enforcers are tasked with keeping it clean: RNF43 and ZNRF3.
               For years the Authority assumed the two ligases were interchangeable case-workers,
-              pruning any Frizzled (FZD) variant that crossed their path. Below are five
+              pruning any Frizzled (FZD(total=9)) variant that crossed their path. Below are five
               reconstructions of how the enforcers' actual jurisdiction was tested. Exactly one
               matches the timeline that really happened. Identify the correct workflow.
             options:
@@ -78,11 +66,10 @@ parts:
                   the preferred one.
               - key: "III"
                 text: >
-                  Generate RNF43/ZNRF3 double-knockout HEK293T cells to remove endogenous
-                  ligase activity. Individually co-express each of the nine testable human
-                  FZD subtypes with RNF43, ZNRF3, or an empty vector, and quantify the ratio
-                  of mature to immature FZD protein by Western blot. Confirm the strongest
-                  hits. Localise the region conferring specificity using chimeric constructs.
+                  Generate RNF43/ZNRF3 double-knockout HEK293T cells for reference. 
+                  Individually co-express each of the nine testable human
+                  FZD subtypes with RNF43, ZNRF3, or an empty vector, and quantify
+                  Localise the region conferring specificity using chimeric constructs.
               - key: "IV"
                 text: >
                   In RNF43/ZNRF3 double-knockout cells, build a single chimera in which both
@@ -110,8 +97,8 @@ parts:
       declassified into a case file. The agent is working the RNF43/ZNRF3 problem from a
       different angle entirely — not "which workflow," but "what do the readouts actually
       show." No confirmed timeline yet. No Workflow III. Just his own data, in front of
-      him, and the question of whether he can trust what it's telling him. Below is /static/MB-01PICS/signallingpath.png
-      — the two main WNT/β-catenin signalling routes in the cell, with Frizzled (FZD) sitting
+      him, and the question of whether he can trust what it's telling him. Below is an image showing
+      the two main WNT/β-catenin signalling routes in the cell, with Frizzled (FZD) sitting
       at the entrance to both. Answer strictly from the data provided.
     blocks:
       - id: da-context1
@@ -163,11 +150,13 @@ parts:
                   signalling produces more light output.
               - key: B
                 text: >
-                  Luminescence is inversely proportional to WNT/β-catenin signalling activity —
+                  Luminescence is directly proportional to WNT/β-catenin signalling activity —
                   active signalling represses the reporter promoter, so more signalling
-                  produces less light output.
+                  produces more light output.
               - key: C
-                text: "Luminescence directly measures RNF43/ZNRF3 protein levels, independent of β-catenin activity."
+                text: "Luminescence is inversely proportional to WNT/β-catenin signalling activity —
+                  active signalling represses the reporter promoter, so more signalling
+                  produces less light output."
               - key: D
                 text: "Luminescence directly measures Frizzled receptor internalisation rate, with no relationship to transcriptional activity."
             correctKey: A
@@ -188,15 +177,11 @@ parts:
             type: mcq
             marks: 2
             prompt: >
-              Every sample here was pretreated with the porcupine inhibitor C59, which blocks
-              secretion of endogenous WNT ligands. What is the purpose of this step?
+              Every sample here was pretreated with the porcupine inhibitor C59 to remove noise. How does C59 achieve this?
             options:
               - key: A
                 text: >
-                  To block secretion of the cells' own endogenous WNT ligands, so that any
-                  pathway activation observed is due exclusively to the exogenously added
-                  recombinant WNT3A (canonical) or WNT5A (non-canonical) — allowing precise
-                  control over which pathway is being tested.
+                  To block secretion of the cells' own endogenous WNT ligands.
               - key: B
                 text: "To directly inhibit RNF43/ZNRF3 enzymatic activity, preventing FZD ubiquitination regardless of WNT ligand status."
               - key: C
@@ -321,25 +306,18 @@ parts:
       - id: context-reveal
         type: reveal_content
         content: >
-          TIMELINE CONFIRMED — THE ENFORCERS' ACTUAL METHOD. Workflow III is the workflow
-          used in the published study (restated in full): Generate RNF43/ZNRF3
-          double-knockout HEK293T cells to remove endogenous ligase activity. Individually
-          co-express each of the nine testable human FZD subtypes with RNF43, ZNRF3, or an
-          empty vector, and quantify the ratio of mature (surface-trafficked) to immature
-          (ER-retained) FZD protein by Western blot. Confirm the strongest hits (FZD5, FZD6)
-          using pulse-chase surface labelling and flow cytometry. Localise the region
-          conferring specificity using chimeric RNF43/ZNRF3 constructs that swap exactly one
-          domain at a time.
+          TIMELINE CONFIRMED. Workflow III is the workflow used in the published study:
+          generate RNF43/ZNRF3 double-knockout HEK293T cells to remove endogenous ligase
+          activity, individually co-express each of the nine testable human FZD subtypes with
+          RNF43, ZNRF3, or an empty vector, and quantify the ratio of mature to immature FZD
+          protein using a technique you'll be asked to identify later. Confirm the strongest
+          hits (FZD5, FZD6) using further orthogonal methods, then localise the region
+          conferring specificity using engineered constructs that swap exactly one domain at a
+          time.
 
-          SUMMARY OF THE REGULATORY CIRCUIT. The data above establishes a clear feedback and
-          modulation loop. RNF43 and ZNRF3 reduce the surface expression of WNT receptors.
-          Ligand-independent activation: the loss of these brakes (R/ZdKO) leaves cells
-          hyper-responsive to any available WNT ligand. RSPO mechanism: RSPO1 acts as a
-          "natural knockout" of these ligases — by sequestering RNF43/ZNRF3, RSPO1 mimics the
-          R/ZdKO phenotype, which is exactly why RSPO1 adds nothing further in cells where the
-          ligases are already deleted. Pathway breadth: because DVL2 sits downstream of
-          multiple WNT pathways, RNF43/ZNRF3 regulation is a broad-spectrum control mechanism
-          affecting both canonical (β-catenin) and non-canonical signalling.
+          A regulatory logic is starting to take shape from what you've already worked out
+          above. You'll get the rest of the confirmed dataset, and the chance to test that
+          logic properly, once you reach Part B.
 
           Mobius: "Good. Now it gets interesting." It never means good news when he says that.
       - id: da-fzd-mystery
@@ -435,39 +413,25 @@ parts:
     name: "PART B — Reading the Aftermath"
     marks: 10
     intro: >
-      The other four reconstructions grey out, one line stamped across each. Reconstruction
-      III stays lit. Using the confirmed timeline, evaluate each statement below.
+      The other four reconstructions grey out, agents of the TVA are sent to prune each branch.
+      Using the confirmed timeline, evaluate each statement below.
     blocks:
       - id: part-b-context
         type: reveal_content
         content: >
-          STUDY CONTEXT — DECLASSIFIED FOR PART B ONWARD. Workflow III is the workflow used
-          in the published study (restated in full): Generate RNF43/ZNRF3 double-knockout
-          HEK293T cells to remove endogenous ligase activity. Individually co-express each of
-          the nine testable human FZD subtypes with RNF43, ZNRF3, or an empty vector, and
-          quantify the ratio of mature (surface-trafficked) to immature (ER-retained) FZD
-          protein by Western blot. Confirm the strongest hits (FZD5, FZD6) using pulse-chase
-          surface labelling and flow cytometry. Localise the region conferring specificity
-          using chimeric RNF43/ZNRF3 constructs that swap exactly one domain at a time.
-
-          THE FINDINGS. RNF43 preferentially down-regulates FZD1, FZD5 and FZD7; ZNRF3
-          preferentially down-regulates FZD6. Both ligases can act on most FZDs, but with
-          clearly different efficiencies — partial specialisation, not strict redundancy.
-          Swapping RNF43's transmembrane domain (TMD) onto ZNRF3 increased ZNRF3's efficacy at
-          degrading FZD5 (gain of function); swapping ZNRF3's TMD onto RNF43 reduced RNF43's
-          efficacy at FZD5 (loss of function). Neither swap affected FZD6 handling — the TMD,
-          not the extracellular domain (ECD) or the catalytic RING domain, is the key
-          determinant of specificity, at least for the FZD5 pair. Tissue correlation: FZD5
-          dominates in pancreas, colon, small intestine and liver; FZD6 dominates in adrenal
-          gland and skin. Cancers from FZD6-dominant tissues skew toward ZNRF3 mutations;
-          cancers from FZD5-dominant tissues (notably pancreatic ductal adenocarcinoma) skew
-          toward RNF43 mutations — consistent with the measured biochemical preference.
-          RNF43/ZNRF3 are themselves induced by WNT/β-catenin signalling, forming a classic
-          negative feedback loop: losing them removes the brake, so cells become hypersensitive
-          to WNT and can develop into WNT-driven tumours.
-
-          Mobius slides the rest of the file across the desk. "Everything you need is in here
-          now. No more surprises — just judgement."
+          THE REST OF THE FILE. Two more pieces of the confirmed dataset, held back until now.
+          Read them yourself — nothing below states what they mean.
+        images:
+          - src: "/MB-01PICS/tissuetype-cropped.jpg"
+            caption: >
+              FZD1–10 mRNA expression (consensus NX, Human Protein Atlas) across eight human
+              tissues.
+          - src: "/MB-01PICS/tmdexpress-cropped.jpg"
+            caption: >
+              Mature:immature ratio of V5-tagged FZD5 (panel F) and FZD6 (panel G), normalised
+              to control, in R/ZdKO cells re-expressing RNF43, ZNRF3, or the reciprocal
+              single-domain swap chimeras RZR (RNF43 with its transmembrane domain replaced by
+              ZNRF3's) and ZRZ (ZNRF3 with its transmembrane domain replaced by RNF43's).
       - id: part-b-statements
         locksAfterSubmit: false
         label: "Q1–5"
@@ -611,7 +575,13 @@ parts:
           - key: method
             type: free_text
             marks: 1
-            prompt: "Workflow II (the flawed workflow from Part A) used a technique that was blanked out. Name the method used to quantify FZD5/FZD6 transcript levels in Workflow II."
+            prompt: >
+              Workflow II (the flawed workflow from Part A, restated in full since you can no
+              longer scroll back to see it): "In RNF43/ZNRF3 double-knockout HEK293T cells,
+              co-express RNF43 or ZNRF3 with FZD5 or FZD6, then quantify FZD5 and FZD6 mRNA
+              transcript levels, concluding that whichever ligase produces the larger drop in
+              transcript is the preferred one." This used a technique that was blanked out.
+              Name the method used to quantify FZD5/FZD6 transcript levels in Workflow II.
       - id: q9-ii
         locksAfterSubmit: false
         label: "Q9.ii — The Genotyping Problem"
@@ -619,11 +589,11 @@ parts:
           - title: "Scenario A–F (Figure 1)"
             headers: ["Scenario", "Description", "Expected PCR product(s)"]
             rows:
-              - ["A", "No insertion at either allele (wild-type)", "1000 bp only (P1+P2)"]
-              - ["B", "Both alleles: PURO inserted, forward orientation", "350 bp only (P1+P3)"]
-              - ["C", "Both alleles: PURO inserted, reverse orientation", "420 bp only (P2+P3)"]
-              - ["D", "PURO integrated off-target elsewhere in the genome (RNF43 locus unmodified)", "1000 bp only (P1+P2)"]
-              - ["E", "Heterozygous: one allele PURO-forward, other allele wild-type", "1000 bp AND 350 bp"]
+              - ["A", "No insertion at either allele (wild-type)", "Lost in a pruning process"]
+              - ["B", "Both alleles: PURO inserted, forward orientation", "Lost in a pruning process"]
+              - ["C", "Both alleles: PURO inserted, reverse orientation", "Lost in a pruning process"]
+              - ["D", "PURO integrated off-target elsewhere in the genome (RNF43 locus unmodified)", "Lost in a pruning process"]
+              - ["E", "Heterozygous: one allele PURO-forward, other allele wild-type", "Lost in a pruning process"]
               - ["F", "Heterozygous: one allele PURO-reverse, other allele wild-type", "1000 bp AND 420 bp"]
           - title: "Five candidate clones, screened by this PCR"
             headers: ["Clone", "PCR result"]
@@ -973,19 +943,33 @@ parts:
               - ["5′ end", "5′-CGTACGATCGGATCT...-3′ / 3′-GCATGCTAGCCTAGA...-5′"]
               - ["3′ end", "5′-...GCTAGGCATCGTACG-3′ / 3′-...CGATCCGTAGCATGC-5′"]
         components:
-          - key: q12
-            type: free_text
-            marks: 6
+          - key: q12a
+            type: true_false
+            marks: 1.5
             prompt: >
               The gRNA cassette must be PCR-amplified with restriction sites added at each
               end, then ligated into vector B at its BamHI (GGATCC) and XhoI (CTCGAG) sites,
               with a 3-base buffer for efficient cutting near a fragment end. For each
-              candidate primer, state TRUE or FALSE — is it correctly designed to add the
-              stated site (with a 3-base buffer)? A) Forward, adds BamHI to 5′ end:
-              5′-GGG GGATCC CGTACGATCGGATCT-3′. B) Forward, adds BamHI to 5′ end:
-              5′-GG GGATCC CGTACGATCGGATCT-3′. C) Reverse, adds XhoI to 3′ end:
-              5′-GGG CTCGAG CGTACGATGCCTAGC-3′. D) Reverse, adds XhoI to 3′ end:
-              5′-GGG CTCGAG GCTAGGCATCGTACG-3′.
+              candidate primer, state TRUE if it is correctly designed to add the stated site
+              (with a 3-base buffer), FALSE if not.
+
+              A) Forward, adds BamHI to 5′ end: 5′-GGG GGATCC CGTACGATCGGATCT-3′.
+            correctValue: true
+          - key: q12b
+            type: true_false
+            marks: 1.5
+            prompt: "B) Forward, adds BamHI to 5′ end: 5′-GG GGATCC CGTACGATCGGATCT-3′."
+            correctValue: false
+          - key: q12c
+            type: true_false
+            marks: 1.5
+            prompt: "C) Reverse, adds XhoI to 3′ end: 5′-GGG CTCGAG CGTACGATGCCTAGC-3′."
+            correctValue: true
+          - key: q12d
+            type: true_false
+            marks: 1.5
+            prompt: "D) Reverse, adds XhoI to 3′ end: 5′-GGG CTCGAG GCTAGGCATCGTACG-3′."
+            correctValue: false
       - id: q13
         locksAfterSubmit: false
         label: "Q13 — Confirming the Clone"
@@ -1037,6 +1021,9 @@ parts:
       - id: q14
         locksAfterSubmit: false
         label: "Q14 — Golden Gate Assembly"
+        images:
+          - src: "/MB-01PICS/goldengate.png"
+            caption: "The Golden Gate assembly described below, visualised: Vector + Spacer (S) + Scaffold (T), joined by their BsaI overhangs."
         components:
           - key: q14a
             type: true_false
@@ -1044,11 +1031,17 @@ parts:
             prompt: >
               The final gRNA cassette is assembled from the RNF43-targeting Spacer (S) and
               tracrRNA Scaffold (T) into a vector backbone using BsaI (Type IIS, cuts outside
-              its recognition sequence leaving a custom 4-nt overhang). Overhangs after BsaI
-              digestion: Vector — left end AACG, right end TTGC. Spacer (S) — 5′ overhang
-              AACG, 3′ overhang CCGA. Scaffold (T) — 5′ overhang CCGA, 3′ overhang TTGC. Each
-              overhang pairs with only one other overhang. State TRUE if the candidate outcome
-              below can be observed after BsaI + DNA ligase treatment, FALSE if it cannot.
+              its recognition sequence leaving a custom 4-nt overhang).
+
+              Overhangs after BsaI digestion: Vector — left end AACG, right end TTGC.
+
+              Spacer (S) — 5′ overhang AACG, 3′ overhang CCGA. Scaffold (T) — 5′ overhang
+              CCGA, 3′ overhang TTGC.
+
+              Each overhang pairs with only one other overhang.
+
+              State TRUE if the candidate outcome below can be observed after BsaI + DNA
+              ligase treatment, FALSE if it cannot.
 
               (a) Vector — S (forward) — T (forward) — Vector.
             correctValue: true

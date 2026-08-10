@@ -4373,7 +4373,13 @@ html.dark #bioclash-attempt-report {
 }
 .bioclash-block-locked { opacity: 0.85; }
 .bioclash-component { margin: 1rem 0; }
-.bioclash-component-prompt { font-weight: 600; margin-bottom: 0.5rem; }
+/* pre-line: collapses runs of spaces (so YAML's line-wrapping within a
+   paragraph still reflows normally) but keeps the blank-line paragraph
+   breaks a `>` folded scalar produces — without this, a multi-statement
+   prompt (e.g. Q14's lettered BsaI outcomes) renders as one unbroken
+   run-on line no matter how it's spaced in the source YAML, since HTML
+   collapses newlines by default. */
+.bioclash-component-prompt { font-weight: 600; margin-bottom: 0.5rem; white-space: pre-line; }
 .bioclash-component-image { max-width: 100%; border-radius: var(--radius-md); margin: 0.5rem 0; }
 .bioclash-mcq-options, .bioclash-tf-options {
   display: flex;
@@ -4409,6 +4415,7 @@ html.dark #bioclash-attempt-report {
   padding: 0.75rem 1rem;
   border-left: 3px solid var(--bc-gold);
   background: rgba(201, 151, 31, 0.08);
+  white-space: pre-line; /* same paragraph-break fix as .bioclash-component-prompt */
 }
 
 /* Part-by-part Prev/Next navigation (bioclash-attempt.js renderPartNav) —
