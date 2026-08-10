@@ -5,8 +5,15 @@ layout: "wide"
 
 <aside class="hextra-sidebar-container" hidden></aside>
 
-<div id="bioclash-attempt-root" class="bioclash-page" data-paper-id="mb-01">
+<div id="bioclash-attempt-root" class="bioclash-page bioclash-case-file" data-paper-id="mb-01">
+  <div class="bioclash-attempt-glow-bg" aria-hidden="true"></div>
   <div id="bioclash-attempt-watermark" class="bioclash-attempt-watermark" aria-hidden="true"></div>
+
+  <div class="bioclash-case-header">
+    <p class="bioclash-case-header-agency">TIME VARIANCE AUTHORITY</p>
+    <p class="bioclash-case-header-division">SACRED TIMELINE ARCHIVES · BIOLOGY DIVISION</p>
+    <p class="bioclash-case-header-mark">B I O C L A S H</p>
+  </div>
 
   <section id="bioclash-attempt-start">
     <h1>Case File MB-01 — Molecular Biology &amp; Biochemistry</h1>

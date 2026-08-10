@@ -4089,8 +4089,108 @@ html.dark .discussions-comment {
    The timed-attempt UI itself. Reuses .bioclash-page's --bc-* variables
    (defined in section 15) rather than redefining the palette, so this
    inherits the same crimson/gold/parchment identity as the landing page
-   without duplicating color decisions. */
+   without duplicating color decisions. bioclash-attempt.js forces
+   html.dark for the duration of an attempt (removing "light"/"favourite"),
+   so the dark-mode --bc-* values below are what actually render here in
+   practice — the light-mode fallback still exists for anyone hitting this
+   page's HTML with JS disabled. */
 #bioclash-attempt-root { position: relative; }
+
+/* A more dramatic, dedicated background than the sitewide, subtle
+   .bioclash-bg-layer watermark (section 15) — that one is tuned for
+   showing through ordinary page content across the whole /bioclash/
+   section; this is a deliberately bigger, glowing "case file under a
+   desk lamp" treatment specific to being mid-attempt. */
+.bioclash-attempt-glow-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 50% 20%, rgba(179, 18, 46, 0.22) 0%, rgba(23, 20, 16, 0.96) 55%, #0b0906 100%);
+}
+.bioclash-attempt-glow-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/bioclashlogo-transparent.png');
+  background-repeat: no-repeat;
+  background-position: center 16%;
+  background-size: min(55%, 620px);
+  filter: drop-shadow(0 0 35px var(--bc-gold)) drop-shadow(0 0 80px var(--bc-crimson));
+  opacity: 0.5;
+  animation: bioclash-glow-pulse 6s ease-in-out infinite;
+}
+@keyframes bioclash-glow-pulse {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 0.6; }
+}
+
+/* Case-file header banner — same copy/hierarchy as the landing page's own
+   TVA masthead (content/bioclash/_index.md), reused here so the attempt
+   page reads as a continuation of the same document, not a separate app. */
+.bioclash-case-header {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 1.5rem 1rem 1rem;
+  border-bottom: 1px solid var(--bc-border);
+  margin-bottom: 1.5rem;
+}
+.bioclash-case-header-agency {
+  font-family: 'BiOClash Display', Georgia, serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.25em;
+  color: var(--bc-gold);
+  margin: 0;
+}
+.bioclash-case-header-division {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  color: var(--bc-ink);
+  opacity: 0.7;
+  margin: 0.15rem 0 0.5rem;
+}
+.bioclash-case-header-mark {
+  font-family: 'BiOClash Display', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  color: var(--bc-crimson);
+  margin: 0;
+}
+
+/* Per-part heading — dressed as a case-file section stamp rather than a
+   plain <h3>, so every block (present or future) inherits the same
+   TVA-document look automatically, regardless of what content pass adds
+   the question text later. */
+.bioclash-block h3 {
+  font-family: 'BiOClash Display', Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 1rem;
+  color: var(--bc-gold);
+  border-bottom: 1px dashed var(--bc-border);
+  padding-bottom: 0.4rem;
+  margin: 0 0 1rem;
+}
+.bioclash-block-active {
+  border-color: var(--bc-crimson);
+  box-shadow: 0 0 0 1px rgba(179, 18, 46, 0.15), 0 0 24px rgba(179, 18, 46, 0.08);
+}
+.bioclash-component-hint {
+  font-style: italic;
+  opacity: 0.75;
+}
+.bioclash-nonrecoverable-banner {
+  font-weight: 700;
+  color: var(--bc-crimson);
+  border: 1px solid var(--bc-crimson);
+  border-radius: var(--radius-md);
+  padding: 0.5rem 0.75rem;
+  background: rgba(179, 18, 46, 0.08);
+  margin-bottom: 1rem;
+}
 .bioclash-attempt-watermark {
   position: fixed;
   inset: 0;

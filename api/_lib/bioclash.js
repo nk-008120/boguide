@@ -30,13 +30,26 @@ function findBlock(paper, blockId) {
   return allBlocks(paper).find((b) => b.id === blockId) || null;
 }
 
-// The very first answerable (non-reveal) block(s) of the paper — what a
-// fresh attempt starts with. Currently: the first part's blocks. Reveal-
-// type blocks are never included here; they only ever appear via a lock.
+// The very first block(s) a fresh attempt starts with: every block in the
+// first part EXCEPT any block that is itself the `reveals` target of some
+// other block. That exclusion is the whole point — a reveal-gated block
+// (whether it's a reveal_content block or an ordinary question block made
+// visible by a prior lock) must never be reachable until its gating lock
+// actually fires, no matter which part it happens to be listed under in
+// the YAML. (Bug fixed 2026-08-10: this previously returned every block in
+// part 1 unconditionally, which included part-a-reveal — meaning the
+// "Timeline Confirmed" answer reveal was created, and visible, from the
+// very start of the attempt, before Part A was ever locked.)
 function initialBlocks(paper) {
+  const gatedIds = new Set();
+  for (const block of allBlocks(paper)) {
+    if (block.reveals) gatedIds.add(block.reveals);
+  }
   const first = (paper.parts || [])[0];
   if (!first) return [];
-  return (first.blocks || []).map((b) => ({ ...b, partId: first.id, partName: first.name }));
+  return (first.blocks || [])
+    .filter((b) => !gatedIds.has(b.id))
+    .map((b) => ({ ...b, partId: first.id, partName: first.name }));
 }
 
 // Deterministic per-user shuffle, so the same user always sees the same
@@ -94,6 +107,14 @@ function toClientBlock(block, userId) {
     if (c.type === 'mcq') {
       const seed = `${userId}:${block.id}:${c.key}`;
       comp.options = seededShuffle((c.options || []).map((o) => ({ key: o.key, text: o.text })), seed);
+    } else if (c.type === 'free_text_for_others') {
+      // No options of its own — options are computed client-side at render
+      // time from the sibling component named in refersTo, restricted to
+      // whichever ones are NOT currently selected there. See
+      // bioclash-attempt.js's renderFreeTextForOthers().
+      comp.refersTo = c.refersTo;
+      comp.marksEach = c.marksEach;
+      comp.promptTemplate = c.promptTemplate;
     }
     // true_false, free_text, numeric, fill_blank: no options to shuffle,
     // and correctValue/expected/tolerance/correctKey are simply never
