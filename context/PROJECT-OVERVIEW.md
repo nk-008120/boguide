@@ -117,6 +117,7 @@ Don't re-derive these — read them directly:
 | Login/leaderboard architecture, every file, every bug fixed | `LOGIN_ROADMAP.md` |
 | BiOClash notify/Champions tables, Discussions tables, migration run order | `SETUP.md` |
 | BiOClash original requirements/tone (now implemented — see the doc's own status header) | `bioclash-planner.md` |
+| BiOClash MB-01 exam delivery mechanism (lock/reveal state machine, DB schema, API endpoints, bugs fixed, what's unverified) — code-complete 2026-08-10, gated to one debug account, not yet run against production | `bioclash-mb01-exam-mechanism.md` |
 | Papers/BiOrchive ingestion process, current exam completion status | `papers-ingestion-workflow.md` |
 | Content-writing pattern/depth calibration for study pages | `handoff.md` |
 | Image sourcing process + full licensing ledger | `visual-reference-workflow.md`, `image-sources.md` |

@@ -4112,36 +4112,46 @@ body.bioclash-attempt-active .hextra-theme-toggle {
 /* A more dramatic, dedicated background than the sitewide, subtle
    .bioclash-bg-layer watermark (section 15) — that one is tuned for
    showing through ordinary page content across the whole /bioclash/
-   section; this is a deliberately bigger, glowing "case file under a
-   desk lamp" treatment specific to being mid-attempt. */
+   section; this is a bigger, atmospheric treatment specific to being
+   mid-attempt. Uses the real Loki/TVA-style art (green radiating light
+   through the BiOClash crest) rather than a synthesized gradient+filter —
+   swapped in 2026-08-10 to the actual supplied asset, wide crop by
+   default, tall crop under the mobile breakpoint (each fits its own
+   aspect ratio better than stretching one to fit both). Text readability
+   never depends on this layer's exact brightness — every screen on this
+   page sits in its own solid, explicitly-colored panel (below), so this
+   is free to be a real background image rather than something tuned down
+   to near-invisibility. */
 .bioclash-attempt-glow-bg {
   position: fixed;
   inset: 0;
   z-index: 0;
   pointer-events: none;
   overflow: hidden;
-  background: radial-gradient(ellipse at 50% 15%, rgba(179, 18, 46, 0.16) 0%, rgba(23, 20, 16, 0.97) 45%, #0b0906 100%);
+  background-image: url('/BIOCLASHPICS/mb01-bg-loki-wide.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.bioclash-attempt-glow-bg::before {
+@media (max-width: 700px) {
+  .bioclash-attempt-glow-bg {
+    background-image: url('/BIOCLASHPICS/mb01-bg-loki-tall.png');
+    background-position: center top;
+  }
+}
+.bioclash-attempt-glow-bg::after {
+  /* Gentle breathing vignette on top of the static art — the "glow" is
+     this animating, not the image itself, so the crest/light-beams stay
+     crisp rather than pulsing in and out. */
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('/bioclashlogo-transparent.png');
-  background-repeat: no-repeat;
-  background-position: center 8%;
-  /* Capped small and pinned near the top — this is a faint emblem behind
-     the header, not something that should ever compete with body text
-     further down the page. Previous version (55%/620px, opacity up to 0.6)
-     was too large and too bright and made text unreadable — fixed
-     2026-08-10 after exactly that report. */
-  background-size: min(28%, 320px);
-  filter: drop-shadow(0 0 25px var(--bc-gold));
-  opacity: 0.18;
+  background: radial-gradient(ellipse at 50% 20%, transparent 0%, rgba(6, 12, 8, 0.35) 70%, rgba(4, 8, 6, 0.55) 100%);
   animation: bioclash-glow-pulse 8s ease-in-out infinite;
 }
 @keyframes bioclash-glow-pulse {
-  0%, 100% { opacity: 0.12; }
-  50% { opacity: 0.22; }
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 0.95; }
 }
 
 /* Case-file header banner — same copy/hierarchy as the landing page's own
