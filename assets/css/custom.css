@@ -4250,6 +4250,68 @@ html.dark #bioclash-attempt-report {
   background: rgba(179, 18, 46, 0.08);
   margin-bottom: 1rem;
 }
+.bioclash-part-heading {
+  font-family: 'BiOClash Display', Georgia, serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1.3rem;
+  color: var(--bc-crimson);
+  border-bottom: 2px solid var(--bc-gold);
+  padding-bottom: 0.5rem;
+  margin: 2rem 0 0.5rem;
+}
+.bioclash-part-heading:first-child { margin-top: 0; }
+.bioclash-part-intro {
+  font-style: italic;
+  opacity: 0.85;
+  margin: 0 0 1.25rem;
+  line-height: 1.6;
+  border-left: 2px solid var(--bc-gold);
+  padding-left: 0.85rem;
+}
+.bioclash-block-label {
+  font-family: 'BiOClash Display', Georgia, serif;
+  font-size: 0.95rem;
+  color: var(--bc-gold);
+  margin: 0 0 0.75rem;
+}
+.bioclash-table-wrap {
+  overflow-x: auto;
+  margin: 0.75rem 0 1.25rem;
+  border: 1px solid var(--bc-border);
+  border-radius: var(--radius-md);
+}
+.bioclash-ref-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.bioclash-ref-table th,
+.bioclash-ref-table td {
+  padding: 0.45rem 0.7rem;
+  text-align: left;
+  border-bottom: 1px solid var(--bc-border);
+  white-space: nowrap;
+}
+.bioclash-ref-table th {
+  background: rgba(201, 151, 31, 0.1);
+  color: var(--bc-gold);
+  font-weight: 600;
+}
+.bioclash-table-title {
+  font-weight: 600;
+  margin: 1rem 0 0.25rem;
+}
+.bioclash-block-figure {
+  margin: 0.75rem 0 1.25rem;
+  text-align: center;
+}
+.bioclash-block-figure figcaption {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin-top: 0.4rem;
+  font-style: italic;
+}
 .bioclash-attempt-watermark {
   position: fixed;
   inset: 0;
