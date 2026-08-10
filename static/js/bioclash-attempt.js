@@ -18,11 +18,28 @@
 
   // Force the BiOClash dark/glowing case-file look for the duration of an
   // attempt, overriding whatever theme (including "favourite," the sitewide
-  // default) the visitor has stored — this only touches the live DOM class,
+  // default) the visitor has stored. This only touches the live DOM class,
   // never localStorage, so leaving this page and loading any other page
   // still respects their real stored preference on next load.
-  document.documentElement.classList.remove('light', 'favourite');
-  document.documentElement.classList.add('dark');
+  //
+  // A single one-time class swap isn't enough: assets/js/core/theme.js (a
+  // project override of Hextra's own theme script) unconditionally re-reads
+  // localStorage and re-applies the stored theme on every page load, as a
+  // deferred script — and because that script tag loads near the end of
+  // <body> while this one is embedded earlier, inside the page content, it
+  // runs AFTER this file and clobbers the forced "dark" class right back to
+  // "favourite" a moment later. Rather than depend on winning a script-order
+  // race, a MutationObserver reasserts "dark" for as long as this page is
+  // mounted, regardless of what else touches the class list or when.
+  function forceDark() {
+    var cl = document.documentElement.classList;
+    if (cl.contains('light') || cl.contains('favourite') || !cl.contains('dark')) {
+      cl.remove('light', 'favourite');
+      cl.add('dark');
+    }
+  }
+  forceDark();
+  new MutationObserver(forceDark).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
 
   var startScreen = document.getElementById('bioclash-attempt-start');
   var liveScreen = document.getElementById('bioclash-attempt-live');
