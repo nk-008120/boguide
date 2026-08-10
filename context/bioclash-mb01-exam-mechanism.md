@@ -3,9 +3,12 @@
 This file exists so a fresh Claude session (after `/clear`) can pick up
 exactly where this one left off, without re-deriving the architecture or
 re-discovering the same bugs. Read this whole file before touching any of
-this system. Companion doc: `LOGIN_ROADMAP.md` (the underlying Supabase
+this system. Companion docs: `LOGIN_ROADMAP.md` (the underlying Supabase
 auth/leaderboard system this builds on top of — read that too if you need
-the auth/RLS patterns from first principles).
+the auth/RLS patterns from first principles), and
+`context/anti-cheating-measures.md` (every anti-cheat layer, including the
+single-active-session mechanism added 2026-08-11 — migration 010, touches
+every bioclash-*.js endpoint).
 
 **Status as of 2026-08-11: code-complete, locally verified, NOT yet run
 against production.** Migration 009 has not been executed in the Supabase

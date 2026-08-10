@@ -4228,6 +4228,20 @@ html.dark #bioclash-attempt-report {
 #bioclash-attempt-report {
   line-height: 1.7;
 }
+.bioclash-honor-code {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--bc-border);
+  border-radius: var(--radius-md);
+  background: rgba(201, 151, 31, 0.06);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.bioclash-honor-code input { margin-top: 0.2rem; flex: 0 0 auto; }
 
 /* Per-part heading — dressed as a case-file section stamp rather than a
    plain <h3>, so every block (present or future) inherits the same
@@ -4259,6 +4273,21 @@ html.dark #bioclash-attempt-report {
   padding: 0.5rem 0.75rem;
   background: rgba(179, 18, 46, 0.08);
   margin-bottom: 1rem;
+}
+/* Anti-cheat: single-active-session takeover (bioclash-attempt.js
+   handleSessionSuperseded()) — deliberately louder/more solid than the
+   non-recoverable banner above, since this means the whole page is now
+   inert, not just one question. */
+.bioclash-superseded-banner {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  font-weight: 700;
+  color: #fff;
+  background: var(--bc-crimson-deep);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
 }
 .bioclash-part-heading {
   font-family: 'BiOClash Display', Georgia, serif;
@@ -4370,6 +4399,23 @@ html.dark #bioclash-attempt-report {
   border-radius: var(--radius-lg);
   padding: 1.25rem 1.5rem;
   margin-bottom: 1.25rem;
+  /* Anti-cheat, deterrent tier only (a determined technical user bypasses
+     this via devtools in seconds — it raises the floor against casual
+     screenshot/copy-paste sharing, it is not a security boundary; see
+     context/anti-cheating-measures.md). Reversed below for the actual
+     answer inputs, which must stay normally selectable/editable. */
+  -webkit-user-select: none;
+  user-select: none;
+}
+.bioclash-block input,
+.bioclash-block textarea {
+  -webkit-user-select: text;
+  user-select: text;
+}
+.bioclash-component-image,
+.bioclash-block-figure img {
+  -webkit-user-drag: none;
+  user-drag: none;
 }
 .bioclash-block-locked { opacity: 0.85; }
 .bioclash-component { margin: 1rem 0; }

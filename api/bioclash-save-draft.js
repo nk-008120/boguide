@@ -27,7 +27,7 @@ module.exports = async (req, res) => {
     }
     const userId = userData.user.id;
 
-    const { paperId, blockId, componentAnswers, fullscreenExits, visibilityLosses } = req.body || {};
+    const { paperId, blockId, componentAnswers, fullscreenExits, visibilityLosses, sessionToken } = req.body || {};
     const paper = loadPaper(paperId);
     if (!paper) {
       res.status(400).json({ error: 'Unknown paper' });
@@ -51,7 +51,7 @@ module.exports = async (req, res) => {
 
     const { data: attempt, error: attemptError } = await admin
       .from('bioclash_attempts')
-      .select('id, status, end_at')
+      .select('id, status, end_at, active_session_token')
       .eq('user_id', userId)
       .eq('paper_id', paperId)
       .maybeSingle();
@@ -64,13 +64,20 @@ module.exports = async (req, res) => {
       res.status(409).json({ error: 'Time has expired' });
       return;
     }
+    // Anti-cheat: single-active-session enforcement, the actual write-side
+    // gate (bioclash-heartbeat.js is just the UX signal) — see
+    // supabase/migrations/010_bioclash_anticheat.sql.
+    if (!sessionToken || sessionToken !== attempt.active_session_token) {
+      res.status(409).json({ error: 'This attempt is now active in another tab or device.', reason: 'superseded' });
+      return;
+    }
 
     // Conditional update: only ever writes a row that's still 'active' —
     // a recoverable block should never be 'locked' in the first place, but
     // this guards against a malformed/malicious request regardless.
     const { data: updated, error: updateError } = await admin
       .from('bioclash_attempt_blocks')
-      .update({ answer: componentAnswers })
+      .update({ answer: componentAnswers, updated_at: new Date().toISOString() })
       .eq('attempt_id', attempt.id)
       .eq('block_id', blockId)
       .eq('status', 'active')

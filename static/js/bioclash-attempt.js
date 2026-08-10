@@ -81,6 +81,7 @@
   var reportScreen = document.getElementById('bioclash-attempt-report');
   var startBtn = document.getElementById('bioclash-attempt-start-btn');
   var startStatus = document.getElementById('bioclash-attempt-start-status');
+  var honorCodeCheckbox = document.getElementById('bioclash-attempt-honor-code');
   var timerEl = document.getElementById('bioclash-attempt-timer');
   var bodyEl = document.getElementById('bioclash-attempt-body');
   var submitBtn = document.getElementById('bioclash-attempt-submit-btn');
@@ -93,9 +94,12 @@
     fullscreenExits: 0,
     visibilityLosses: 0,
     currentPartIndex: 0,       // which part is on screen — see renderBlocks()
-    currentPartIndexSet: false // true once boot/resume has picked a starting part
+    currentPartIndexSet: false, // true once boot/resume has picked a starting part
+    sessionToken: null,        // anti-cheat: single-active-session — see startHeartbeat()
+    superseded: false          // true once another tab/device has taken over
   };
   var timerInterval = null;
+  var heartbeatInterval = null;
   var draftTimers = {};   // blockId -> debounce timeout
 
   function authHeaders(session) {
@@ -138,6 +142,39 @@
     }
   }
 
+  // Anti-cheat: single-active-session enforcement. state.sessionToken is
+  // (re)issued by the server on every start-attempt/attempt-state call —
+  // i.e. every fresh page load — and this polls to check it's still the
+  // current one. If a second tab/device opens the same attempt, ITS boot
+  // call overwrites the token server-side, and this client's next
+  // heartbeat comes back 409 — at which point the UI locks itself. The
+  // real enforcement is server-side (save-draft/lock-block check the same
+  // token before writing), this is just what makes it visible promptly
+  // instead of the student only finding out when an answer silently fails
+  // to save. See supabase/migrations/010_bioclash_anticheat.sql.
+  function startHeartbeat(session) {
+    clearInterval(heartbeatInterval);
+    heartbeatInterval = setInterval(function () {
+      if (!state.sessionToken) return;
+      apiPost('/api/bioclash-heartbeat', session, { paperId: PAPER_ID, sessionToken: state.sessionToken }).then(function (result) {
+        if (result.body && result.body.reason === 'superseded') handleSessionSuperseded();
+      });
+    }, 20000);
+  }
+
+  function handleSessionSuperseded() {
+    if (state.superseded) return;
+    state.superseded = true;
+    clearInterval(heartbeatInterval);
+    clearInterval(timerInterval);
+    if (!liveScreen) return;
+    liveScreen.querySelectorAll('input, textarea, button').forEach(function (el) { el.disabled = true; });
+    var banner = document.createElement('div');
+    banner.className = 'bioclash-superseded-banner';
+    banner.textContent = '⛔ This attempt is now open in another tab or device. This session has been locked. Close this tab, or reload to reclaim it here instead.';
+    liveScreen.insertBefore(banner, liveScreen.firstChild);
+  }
+
   function enterFullscreen() {
     var el = document.documentElement;
     var req = el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen;
@@ -153,6 +190,23 @@
     if (document.hidden && liveScreen && !liveScreen.hidden) {
       state.visibilityLosses += 1;
     }
+  });
+
+  // Anti-cheat, deterrent tier (see the matching CSS comment on
+  // .bioclash-block): block copy/cut/right-click/drag-select on question
+  // content specifically, while leaving every input/textarea completely
+  // normal — a student must still be able to select, cut, and paste their
+  // own answer text freely while editing it.
+  function isEditableTarget(el) {
+    return !!(el && el.closest && el.closest('input, textarea'));
+  }
+  ['copy', 'cut', 'contextmenu', 'selectstart', 'dragstart'].forEach(function (evt) {
+    document.addEventListener(evt, function (e) {
+      if (!liveScreen || liveScreen.hidden) return;
+      if (!liveScreen.contains(e.target)) return;
+      if (isEditableTarget(e.target)) return;
+      e.preventDefault();
+    }, true);
   });
 
   function withSession(fn) {
@@ -182,6 +236,7 @@
     state.blocks = data.blocks || [];
     state.fullscreenExits = data.fullscreenExits || 0;
     state.visibilityLosses = data.visibilityLosses || 0;
+    if (data.sessionToken) state.sessionToken = data.sessionToken;
     renderWatermark(data.watermark);
 
     if (data.status === 'submitted') {
@@ -197,6 +252,7 @@
     clearInterval(timerInterval);
     timerInterval = setInterval(tickTimer, 1000);
     tickTimer();
+    startHeartbeat(session);
     renderBlocks(session);
   }
 
@@ -429,7 +485,13 @@
         blockId: block.id,
         componentAnswers: answers,
         fullscreenExits: state.fullscreenExits,
-        visibilityLosses: state.visibilityLosses
+        visibilityLosses: state.visibilityLosses,
+        sessionToken: state.sessionToken
+      }).then(function (result) {
+        // Defense in depth: the heartbeat is the primary signal, but if a
+        // save happens to land in the gap before the next heartbeat fires,
+        // catch the same 409 here too.
+        if (result.body && result.body.reason === 'superseded') handleSessionSuperseded();
       });
     }, 800);
   }
@@ -545,7 +607,18 @@
 
     var label = document.createElement('span');
     label.className = 'bioclash-part-nav-label';
-    label.textContent = 'Page ' + (pageIdx + 1) + ' of ' + list.length + ': ' + (list[pageIdx].name || '');
+    // The last page in `list` isn't necessarily the last page of the whole
+    // paper — it's just the last one earned SO FAR. If that page's own
+    // block is still an active non-recoverable lock, locking it will grow
+    // `list` further (e.g. "Page 6 of 6" while sitting on the Data
+    // Analysis section's final question, right before it reveals Part
+    // B–F and the true count becomes 11) — showing a bare "6 of 6" reads
+    // as "this is the last page," which is exactly the wrong moment to
+    // imply that. The "+" marks the total as provisional whenever that's
+    // the case, at every step of a reveal chain, not just this one.
+    var lastPage = list[list.length - 1];
+    var totalProvisional = lastPage.blocks.some(function (b) { return b.locksAfterSubmit && b.status === 'active'; });
+    label.textContent = 'Page ' + (pageIdx + 1) + ' of ' + list.length + (totalProvisional ? '+' : '') + ': ' + (list[pageIdx].name || '');
 
     var nextBtn = document.createElement('button');
     nextBtn.type = 'button';
@@ -696,8 +769,13 @@
             blockId: block.id,
             componentAnswers: answers,
             fullscreenExits: state.fullscreenExits,
-            visibilityLosses: state.visibilityLosses
+            visibilityLosses: state.visibilityLosses,
+            sessionToken: state.sessionToken
           }).then(function (result) {
+            if (result.body && result.body.reason === 'superseded') {
+              handleSessionSuperseded();
+              return;
+            }
             if (!result.ok) {
               window.alert(result.body.error || 'Could not lock this block.');
               lockBtn.disabled = false;
@@ -751,6 +829,7 @@
   function renderReport(data) {
     showScreen(reportScreen);
     clearInterval(timerInterval);
+    clearInterval(heartbeatInterval);
     if (!reportScreen) return;
     reportScreen.innerHTML =
       '<h2>Submitted</h2>' +
@@ -774,8 +853,25 @@
 
   if (submitBtn) submitBtn.addEventListener('click', function () { doSubmit(false); });
 
+  // Honor-code affirmation: the Start button stays disabled until this is
+  // checked (HTML also ships it `disabled` by default, so a visitor who
+  // never sees this script run still can't start blind). The click
+  // handler re-checks it directly too, in case the disabled attribute was
+  // ever removed out from under it (e.g. via devtools) — this is a policy
+  // gate, not a security boundary, so it doesn't need to be bulletproof,
+  // just not trivially skippable by accident.
+  if (honorCodeCheckbox && startBtn) {
+    honorCodeCheckbox.addEventListener('change', function () {
+      startBtn.disabled = !honorCodeCheckbox.checked;
+    });
+  }
+
   if (startBtn) {
     startBtn.addEventListener('click', function () {
+      if (honorCodeCheckbox && !honorCodeCheckbox.checked) {
+        if (startStatus) startStatus.textContent = 'Please confirm the affirmation above before starting.';
+        return;
+      }
       withSession(function (session) {
         startBtn.disabled = true;
         enterFullscreen();
