@@ -91,7 +91,9 @@
     endAt: null,
     blocks: [],           // in the order the server has revealed them
     fullscreenExits: 0,
-    visibilityLosses: 0
+    visibilityLosses: 0,
+    currentPartIndex: 0,       // which part is on screen — see renderBlocks()
+    currentPartIndexSet: false // true once boot/resume has picked a starting part
   };
   var timerInterval = null;
   var draftTimers = {};   // blockId -> debounce timeout
@@ -413,28 +415,113 @@
     }, 800);
   }
 
+  // Every distinct part currently visible, in the order its blocks first
+  // appear in state.blocks (== paper document order, since the server only
+  // ever appends newly-revealed blocks). Recomputed on every render rather
+  // than cached, since state.blocks grows as locks fire.
+  function partList() {
+    var seen = {};
+    var list = [];
+    state.blocks.forEach(function (block) {
+      if (seen[block.partId]) return;
+      seen[block.partId] = true;
+      list.push({ id: block.partId, name: block.partName, intro: block.partIntro });
+    });
+    return list;
+  }
+
+  // A part is sealed against Prev navigation once you've moved past it if
+  // EVERY block in it requires a non-recoverable lock (Part A; the Data
+  // Analysis section) — not merely contains one, the way Part E contains
+  // Q10.4A among many ordinary recoverable questions. Q10.4A's own answer
+  // is already protected at the block level (a locked block renders
+  // read-only, see below) — sealing all of Part E from navigation on top
+  // of that would break "freely switch between the recoverable parts,"
+  // which is the whole point of this navigation model.
+  function partIsFullyLocked(partId) {
+    var blocksInPart = state.blocks.filter(function (b) { return b.partId === partId; });
+    if (!blocksInPart.length) return false;
+    return blocksInPart.every(function (b) { return b.locksAfterSubmit || b.type === 'reveal_content'; });
+  }
+
+  function renderPartNav(list, partIdx, session) {
+    var nav = document.createElement('div');
+    nav.className = 'bioclash-part-nav';
+
+    var prevBtn = document.createElement('button');
+    prevBtn.type = 'button';
+    prevBtn.className = 'papers-nav-btn bioclash-part-nav-btn';
+    prevBtn.textContent = '← Previous Part';
+    var prevTarget = partIdx - 1;
+    var prevDisabled = prevTarget < 0 || partIsFullyLocked(list[prevTarget].id);
+    prevBtn.disabled = prevDisabled;
+    prevBtn.title = prevDisabled && prevTarget >= 0
+      ? 'This part is non-recoverable and already behind you.'
+      : '';
+    prevBtn.addEventListener('click', function () {
+      state.currentPartIndex = prevTarget;
+      renderBlocks(session);
+    });
+
+    var label = document.createElement('span');
+    label.className = 'bioclash-part-nav-label';
+    label.textContent = 'Part ' + (partIdx + 1) + ' of ' + list.length + ': ' + (list[partIdx].name || '');
+
+    var nextBtn = document.createElement('button');
+    nextBtn.type = 'button';
+    nextBtn.className = 'papers-nav-btn bioclash-part-nav-btn';
+    nextBtn.textContent = 'Next Part →';
+    var nextTarget = partIdx + 1;
+    // No special-case logic needed here: the next part simply doesn't
+    // exist in state.blocks yet if it hasn't been earned (server never
+    // sends it), so this is naturally disabled until it has been.
+    nextBtn.disabled = nextTarget >= list.length;
+    nextBtn.addEventListener('click', function () {
+      state.currentPartIndex = nextTarget;
+      renderBlocks(session);
+    });
+
+    nav.appendChild(prevBtn);
+    nav.appendChild(label);
+    nav.appendChild(nextBtn);
+    return nav;
+  }
+
   function renderBlocks(session) {
     if (!bodyEl) return;
     bodyEl.innerHTML = '';
 
-    var lastPartId = null;
-    state.blocks.forEach(function (block) {
-      // Part heading + narrative intro shown once, the first time a block
-      // from that part appears — not repeated on every block within it.
-      if (block.partId !== lastPartId) {
-        lastPartId = block.partId;
-        var heading = document.createElement('h3');
-        heading.className = 'bioclash-part-heading';
-        heading.textContent = block.partName || '';
-        bodyEl.appendChild(heading);
-        if (block.partIntro) {
-          var intro = document.createElement('p');
-          intro.className = 'bioclash-part-intro';
-          intro.textContent = block.partIntro;
-          bodyEl.appendChild(intro);
-        }
-      }
+    var list = partList();
+    if (!list.length) return;
+    if (!state.currentPartIndexSet) {
+      // First render this page load (fresh start, or a resume after
+      // refresh): land on the furthest part already reached, not back at
+      // Part A — a refresh shouldn't feel like starting over. Explicit
+      // Prev/Next clicks and the auto-advance-on-lock below both set this
+      // flag too, so this branch only ever fires once per page load.
+      state.currentPartIndex = list.length - 1;
+      state.currentPartIndexSet = true;
+    }
+    if (state.currentPartIndex >= list.length) state.currentPartIndex = list.length - 1;
+    if (state.currentPartIndex < 0) state.currentPartIndex = 0;
+    var partIdx = state.currentPartIndex;
+    var currentPart = list[partIdx];
 
+    bodyEl.appendChild(renderPartNav(list, partIdx, session));
+
+    var heading = document.createElement('h3');
+    heading.className = 'bioclash-part-heading';
+    heading.textContent = currentPart.name || '';
+    bodyEl.appendChild(heading);
+    if (currentPart.intro) {
+      var intro = document.createElement('p');
+      intro.className = 'bioclash-part-intro';
+      intro.textContent = currentPart.intro;
+      bodyEl.appendChild(intro);
+    }
+
+    var visibleBlocks = state.blocks.filter(function (b) { return b.partId === currentPart.id; });
+    visibleBlocks.forEach(function (block) {
       var section = document.createElement('section');
       section.className = 'bioclash-block bioclash-block-' + block.status;
       if (block.label) {
@@ -537,12 +624,24 @@
               return;
             }
             block.status = 'locked';
-            if (result.body.revealedBlock) {
+            var newPartId = null;
+            (result.body.revealedBlocks || []).forEach(function (revealed) {
               // Defensive dedup: never add a block id that's already
               // present, even though the real fix is server-side
               // (initialBlocks() no longer pre-creates reveal-gated blocks).
-              var already = state.blocks.some(function (b) { return b.id === result.body.revealedBlock.id; });
-              if (!already) state.blocks.push(result.body.revealedBlock);
+              var already = state.blocks.some(function (b) { return b.id === revealed.id; });
+              if (already) return;
+              state.blocks.push(revealed);
+              if (revealed.partId !== block.partId) newPartId = revealed.partId;
+            });
+            // "Lock & Continue" means continue: if this lock opened up a
+            // whole new part (Part A → Data Analysis, Data Analysis →
+            // Part B–F), jump straight there rather than leaving the
+            // student stranded on a now-fully-locked page with nothing
+            // left to do but hunt for a Next button.
+            if (newPartId) {
+              var newIdx = partList().map(function (p) { return p.id; }).indexOf(newPartId);
+              if (newIdx >= 0) state.currentPartIndex = newIdx;
             }
             renderBlocks(session);
           });
@@ -552,6 +651,8 @@
 
       bodyEl.appendChild(section);
     });
+
+    bodyEl.appendChild(renderPartNav(list, partIdx, session));
   }
 
   function renderReport(data) {

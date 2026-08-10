@@ -2,7 +2,10 @@
 # Source: BiOGuide-BiOClash-Problem_1_3.docx (academic content, verbatim/
 # near-verbatim) + BiOClash-Loki-Narrative_1.md (narrative calibration —
 # light Mobius/TVA framing at part transitions only, never inside the
-# actual question prompts, matching that document's own restraint).
+# actual question prompts, matching that document's own restraint) +
+# data/bioclash/daquestions.md (source for the DATA ANALYSIS part, added
+# 2026-08-11 — see context/bioclash-mb01-exam-mechanism.md for the full
+# rationale).
 #
 # durationMinutes below is a PLACEHOLDER (240) — confirm the real number.
 #
@@ -13,13 +16,22 @@
 # referencing an image file, so the questions are fully functional now;
 # swap in a real `imageRef`/`images` entry once art exists, no schema
 # change needed.
+#
+# A block's `reveals` field accepts a single block id OR an array of block
+# ids. `revealsParts` (array of part ids) reveals every block belonging to
+# those parts at once, except any block that is itself still gated by its
+# OWN un-fired `reveals`/`revealsParts` (e.g. q10-4-rest stays hidden even
+# once Part E as a whole is revealed, until q10-4a is separately locked).
+# Used to gate the whole of Part B–F behind the Data Analysis section
+# (da-fzd-mystery), so the paper can no longer be read end-to-end before
+# Part A is committed — see api/_lib/bioclash.js.
 
 id: mb-01
 title: "Case File MB-01 — Molecular Biology & Biochemistry"
 season: mb-01
 accessMode: allowlist
 durationMinutes: 240    # PLACEHOLDER
-totalMarks: 133
+totalMarks: 165
 
 parts:
   - id: part-a
@@ -36,19 +48,22 @@ parts:
     blocks:
       - id: part-a-lock
         locksAfterSubmit: true
-        reveals: part-a-reveal
+        reveals: da-context1
         lockWarning: "Once you proceed past this point, you cannot return and change your answer here."
         components:
           - key: workflow-pick
             type: mcq
             marks: 2
             prompt: >
-              Every cell surface is a timeline of its own, and two enforcers are tasked with
-              keeping it clean: RNF43 and ZNRF3. For years the Authority assumed the two
-              ligases were interchangeable case-workers, pruning any Frizzled (FZD) variant
-              that crossed their path. Below are five reconstructions of how the enforcers'
-              actual jurisdiction was tested. Exactly one matches the timeline that really
-              happened. Identify the correct workflow.
+              Context: RNF43 and ZNRF3 are two closely related membrane-bound E3 ubiquitin ligases.
+              Both do the same basic job: they tag Frizzled (FZD) receptors — the primary receptors
+              for WNT ligands — for internalisation and degradation, which shuts down WNT signalling.
+              RNF43/ZNRF3 are themselves induced by WNT/β-catenin signalling. Every cell surface is a
+              timeline of its own, and two enforcers are tasked with keeping it clean: RNF43 and ZNRF3.
+              For years the Authority assumed the two ligases were interchangeable case-workers,
+              pruning any Frizzled (FZD) variant that crossed their path. Below are five
+              reconstructions of how the enforcers' actual jurisdiction was tested. Exactly one
+              matches the timeline that really happened. Identify the correct workflow.
             options:
               - key: "I"
                 text: >
@@ -86,7 +101,224 @@ parts:
             refersTo: workflow-pick
             marksEach: 2
             promptTemplate: "State, in one sentence, the specific methodological flaw that rules out Workflow {option}."
-      - id: part-a-reveal
+
+  - id: part-da
+    name: "DATA ANALYSIS — The Agent's Desk"
+    marks: 32
+    intro: >
+      2000 BCE. Desk of a Time Variance Authority agent, long before any of this was
+      declassified into a case file. The agent is working the RNF43/ZNRF3 problem from a
+      different angle entirely — not "which workflow," but "what do the readouts actually
+      show." No confirmed timeline yet. No Workflow III. Just his own data, in front of
+      him, and the question of whether he can trust what it's telling him. Below is /static/MB-01PICS/signallingpath.png
+      — the two main WNT/β-catenin signalling routes in the cell, with Frizzled (FZD) sitting
+      at the entrance to both. Answer strictly from the data provided.
+    blocks:
+      - id: da-context1
+        locksAfterSubmit: true
+        reveals: da-context2a
+        label: "Context 1 — WNT/β-catenin Luciferase Reporter Assay"
+        lockWarning: "Once you proceed past this point, you cannot return and change your answers in this context."
+        images:
+          - src: "/MB-01PICS/signallingpath.png"
+            caption: "The two main WNT/β-catenin signalling pathways; FZD is essential to both."
+          - src: "/MB-01PICS/supressiondata1.jpg"
+            caption: >
+              WNT/β-catenin-mediated luciferase reporter assay, WT HEK293T vs. Cas9-control
+              vs. two clonal RNF43/ZNRF3 double-knockout (R/ZdKO) lines, overnight-stimulated
+              with WNT3A and/or RSPO1-conditioned medium vs. control medium. Mean reporter
+              activity ± SD, n = 2 wells, representative experiment (N = 2).
+        components:
+          - key: da-c1-synergy
+            type: true_false
+            marks: 1
+            prompt: "The addition of RSPO1, when combined with WNT3A, exhibits a synergistic effect on reporter activity."
+            correctValue: true
+          - key: da-c1-ko-changes
+            type: mcq
+            marks: 2
+            prompt: "What changes can be seen in the R/ZdKO (knockout) lines relative to WT/control, across the conditions tested?"
+            options:
+              - key: A
+                text: "Increased basal activity, hypersensitivity to WNT, loss of RSPO1 synergy."
+              - key: B
+                text: "Decreased basal activity, hypersensitivity to WNT, loss of RSPO1 synergy."
+              - key: C
+                text: "Increased basal activity, hyposensitivity to WNT, loss of RSPO1 synergy."
+              - key: D
+                text: "Decreased basal activity, hyposensitivity to WNT, loss of RSPO1 synergy."
+            correctKey: A
+          - key: da-c1-luciferase-mechanism
+            type: mcq
+            marks: 2
+            prompt: >
+              In this assay, a β-catenin/TCF-responsive promoter drives expression of a
+              luciferase reporter gene. Which statement correctly describes how the
+              luminescence readout relates to WNT/β-catenin signalling activity?
+            options:
+              - key: A
+                text: >
+                  Luminescence is directly proportional to WNT/β-catenin signalling activity —
+                  active β-catenin/TCF complexes drive reporter transcription, so more
+                  signalling produces more light output.
+              - key: B
+                text: >
+                  Luminescence is inversely proportional to WNT/β-catenin signalling activity —
+                  active signalling represses the reporter promoter, so more signalling
+                  produces less light output.
+              - key: C
+                text: "Luminescence directly measures RNF43/ZNRF3 protein levels, independent of β-catenin activity."
+              - key: D
+                text: "Luminescence directly measures Frizzled receptor internalisation rate, with no relationship to transcriptional activity."
+            correctKey: A
+      - id: da-context2a
+        locksAfterSubmit: true
+        reveals: da-context2b
+        label: "Context 2 — DVL2 Phosphorylation (I)"
+        lockWarning: "Once you proceed past this point, you cannot return and change your answers in this context."
+        images:
+          - src: "/MB-01PICS/supressiondata2.jpg"
+            caption: >
+              Analysis of DVL2 phosphorylation in WT and R/ZdKO HEK293T cells, 3 h after
+              stimulation with recombinant WNT3A or WNT5A and/or RSPO1-CM, all samples
+              pretreated with porcupine inhibitor C59 (5 μM). p-DVL2:DVL2 band-density ratio,
+              normalised to the C59 control. Representative experiment (N = 3).
+        components:
+          - key: da-c2-c59-purpose
+            type: mcq
+            marks: 2
+            prompt: >
+              Every sample here was pretreated with the porcupine inhibitor C59, which blocks
+              secretion of endogenous WNT ligands. What is the purpose of this step?
+            options:
+              - key: A
+                text: >
+                  To block secretion of the cells' own endogenous WNT ligands, so that any
+                  pathway activation observed is due exclusively to the exogenously added
+                  recombinant WNT3A (canonical) or WNT5A (non-canonical) — allowing precise
+                  control over which pathway is being tested.
+              - key: B
+                text: "To directly inhibit RNF43/ZNRF3 enzymatic activity, preventing FZD ubiquitination regardless of WNT ligand status."
+              - key: C
+                text: "To activate Frizzled receptors independently of any WNT ligand, providing a ligand-free positive control for pathway activation."
+              - key: D
+                text: "To block RSPO1 binding to LGR4/5/6, isolating the WNT3A/WNT5A-driven component of signalling from any RSPO contribution."
+            correctKey: A
+          - key: da-c2-q5a
+            type: true_false
+            marks: 1
+            prompt: >
+              Interpreting the graph: in R/ZdKO cells, the ratio of phosphorylated to
+              non-phosphorylated DVL2 is significantly LOWERED compared to WT, across both
+              WNT3A and WNT5A treatments.
+            correctValue: false
+          - key: da-c2-q5b
+            type: true_false
+            marks: 1
+            prompt: >
+              Interpreting the graph: in R/ZdKO cells, the ratio of phosphorylated to
+              non-phosphorylated DVL2 is significantly ELEVATED compared to WT, across both
+              WNT3A and WNT5A treatments.
+            correctValue: true
+          - key: da-c2-q5c
+            type: true_false
+            marks: 1
+            prompt: "Interpreting the graph: in WT cells, WNT3A and WNT5A both induce a detectable shift in DVL2 mobility (increased p-DVL2)."
+            correctValue: true
+          - key: da-c2-q5d
+            type: true_false
+            marks: 1
+            prompt: "Interpreting the graph: in WT cells, WNT3A and WNT5A both induce a detectable shift in DVL2 mobility (decreased p-DVL2)."
+            correctValue: false
+      - id: da-context2b
+        locksAfterSubmit: true
+        reveals: da-context3
+        label: "Context 2 — DVL2 Phosphorylation (II)"
+        lockWarning: "Once you proceed past this point, you cannot return and change your answers in this context."
+        components:
+          - key: da-c2-q6a
+            type: true_false
+            marks: 1
+            prompt: >
+              The correct interpretation is that in R/ZdKO cells, p-DVL2:DVL2 is significantly
+              elevated compared to WT across both WNT3A and WNT5A treatments, and that WT cells
+              show a detectable WNT3A/WNT5A-induced increase in p-DVL2. Now judge this
+              hypothesis: this suggests that RNF43 and ZNRF3 do not just regulate the canonical
+              pathway, but also modulate non-canonical WNT signalling by controlling the
+              availability of FZD receptors at the plasma membrane.
+            correctValue: true
+          - key: da-c2-q6b
+            type: true_false
+            marks: 1
+            prompt: >
+              Since DVL2 phosphorylation increases similarly in R/ZdKO cells for both WNT3A
+              and WNT5A stimulation, RNF43 and ZNRF3 must directly phosphorylate DVL2
+              themselves, rather than acting on the receptor upstream of it.
+            correctValue: false
+          - key: da-c2-q6c
+            type: true_false
+            marks: 1
+            prompt: >
+              Because FZD is common to both canonical and non-canonical WNT pathways, this
+              result is consistent with RNF43/ZNRF3 acting as broad-spectrum negative
+              regulators upstream of pathway branching, at the level of receptor availability
+              rather than at a pathway-specific downstream node.
+            correctValue: true
+          - key: da-c2-q6d
+            type: true_false
+            marks: 1
+            prompt: >
+              This result implies that RNF43 and ZNRF3 selectively degrade only WNT5A-bound
+              FZD receptors, leaving WNT3A-bound FZD receptors unaffected at the membrane.
+            correctValue: false
+      - id: da-context3
+        locksAfterSubmit: true
+        reveals: [context-reveal, da-fzd-mystery]
+        label: "Context 3 — Rescue by Re-expression"
+        lockWarning: "Once you proceed past this point, you cannot return and change your answers in this context."
+        images:
+          - src: "/MB-01PICS/supressiondata3.jpg"
+            caption: >
+              DVL2 phosphorylation in R/ZdKO cells overexpressing RNF43, ZNRF3, or a control
+              vector, 3 h after WNT3A or WNT5A stimulation (all samples pretreated with C59).
+              p-DVL2:DVL2 ratios normalised to control-vector cells. Arrowheads mark
+              full-length ZNRF3 and RNF43. Representative experiment (N = 2–4).
+        components:
+          - key: da-c3-q7a
+            type: true_false
+            marks: 1
+            prompt: >
+              Re-introduction of either RNF43 or ZNRF3 into R/ZdKO cells significantly reduced
+              p-DVL2 levels induced by both WNT3A and WNT5A stimulation, confirming that either
+              ligase alone is sufficient to restore receptor-level down-regulation of the
+              pathway.
+            correctValue: true
+          - key: da-c3-q7b
+            type: true_false
+            marks: 1
+            prompt: >
+              Only RNF43 re-introduction reduced p-DVL2 levels in R/ZdKO cells; ZNRF3
+              re-introduction had no measurable effect on either WNT3A- or WNT5A-induced
+              phosphorylation, indicating RNF43 is the dominant physiological regulator.
+            correctValue: false
+          - key: da-c3-q7c
+            type: true_false
+            marks: 1
+            prompt: >
+              The rescue of p-DVL2 suppression by either ligase demonstrates that RNF43 and
+              ZNRF3 are functionally redundant at the level of FZD receptor down-regulation,
+              even though they may differ in their precise substrate preferences among
+              individual FZD subtypes.
+            correctValue: true
+          - key: da-c3-q7d
+            type: true_false
+            marks: 1
+            prompt: >
+              Since re-expressing RNF43 or ZNRF3 lowered p-DVL2 levels, this proves that both
+              ligases act by directly dephosphorylating DVL2, rather than by removing FZD
+              receptors from the cell surface.
+            correctValue: false
+      - id: context-reveal
         type: reveal_content
         content: >
           TIMELINE CONFIRMED — THE ENFORCERS' ACTUAL METHOD. Workflow III is the workflow
@@ -97,8 +329,107 @@ parts:
           (ER-retained) FZD protein by Western blot. Confirm the strongest hits (FZD5, FZD6)
           using pulse-chase surface labelling and flow cytometry. Localise the region
           conferring specificity using chimeric RNF43/ZNRF3 constructs that swap exactly one
-          domain at a time. Mobius: "Good. Now it gets interesting." It never means good news
-          when he says that.
+          domain at a time.
+
+          SUMMARY OF THE REGULATORY CIRCUIT. The data above establishes a clear feedback and
+          modulation loop. RNF43 and ZNRF3 reduce the surface expression of WNT receptors.
+          Ligand-independent activation: the loss of these brakes (R/ZdKO) leaves cells
+          hyper-responsive to any available WNT ligand. RSPO mechanism: RSPO1 acts as a
+          "natural knockout" of these ligases — by sequestering RNF43/ZNRF3, RSPO1 mimics the
+          R/ZdKO phenotype, which is exactly why RSPO1 adds nothing further in cells where the
+          ligases are already deleted. Pathway breadth: because DVL2 sits downstream of
+          multiple WNT pathways, RNF43/ZNRF3 regulation is a broad-spectrum control mechanism
+          affecting both canonical (β-catenin) and non-canonical signalling.
+
+          Mobius: "Good. Now it gets interesting." It never means good news when he says that.
+      - id: da-fzd-mystery
+        locksAfterSubmit: true
+        revealsParts: [part-b, part-c, part-d, part-e, part-f]
+        label: "Data Analysis Question 2 — The FZD Mystery"
+        lockWarning: "Once you proceed past this point, you cannot return and change your answers here."
+        images:
+          - src: "/MB-01PICS/context2.jpg"
+            caption: >
+              R/ZdKO cells transfected with V5-tagged FZD1–10, with RNF43 or ZNRF3
+              re-introduced. Panels A/B: control vs. ligase-expressing lysates by Western
+              blot. Panels C/D: SNAP-tagged FZD5/FZD6 surface visualisation. Panels E/F:
+              quantified mean surface-intensity for FZD5 (± RNF43) and FZD6 (± ZNRF3).
+        components:
+          - key: da-fzd-bands
+            type: free_text
+            marks: 2
+            prompt: >
+              In Panel A, the "control" lanes (absence of ligases) show two distinct bands
+              for most FZDs — a slower-migrating upper band and a faster-migrating lower
+              band. The upper band represents the mature (surface-trafficked, fully
+              glycosylated) or immature (ER-retained, core-glycosylated) form, and the lower
+              band represents the other. Write your answer as "upper = ___" and "lower = ___".
+          - key: da-fzd-panelAB-a
+            type: true_false
+            marks: 1
+            prompt: "RNF43 and ZNRF3 each show strict specificity, degrading only one or two Frizzled subtypes while leaving all others completely unaffected."
+            correctValue: false
+          - key: da-fzd-panelAB-b
+            type: true_false
+            marks: 1
+            prompt: "Panel A shows that in the absence of ligase co-expression, most FZD subtypes already run as a single band, since the mature and immature forms are indistinguishable by molecular weight."
+            correctValue: false
+          - key: da-fzd-panelAB-c
+            type: true_false
+            marks: 1
+            prompt: "Panel B shows that co-expression of RNF43 or ZNRF3 markedly reduces the upper (mature) band intensity for nearly every FZD subtype tested, consistent with broad-spectrum receptor down-regulation."
+            correctValue: true
+          - key: da-fzd-panelAB-d
+            type: true_false
+            marks: 1
+            prompt: "Both ligases have a remarkably broad substrate range, targeting almost the entire Frizzled family for degradation."
+            correctValue: true
+          - key: da-fzd-microscopy
+            type: mcq
+            marks: 1
+            prompt: "To determine whether degradation occurs at the plasma membrane, the researchers used SNAP-tagged FZD5 and FZD6 to visualise the receptors using which type of microscopy?"
+            options:
+              - key: A
+                text: "Fluorescence"
+              - key: B
+                text: "Bright field"
+              - key: C
+                text: "Stain"
+              - key: D
+                text: "Confocal"
+            correctKey: D
+          - key: da-fzd-panelCD-a
+            type: true_false
+            marks: 1
+            prompt: "RNF43 and ZNRF3 respectively substantially disrupt FZD6 and FZD5 surface signal."
+            correctValue: false
+          - key: da-fzd-panelCD-b
+            type: true_false
+            marks: 1
+            prompt: "RNF43 and ZNRF3 respectively substantially disrupt FZD5 and FZD6 surface signal."
+            correctValue: true
+          - key: da-fzd-panelCD-c
+            type: true_false
+            marks: 1
+            prompt: "ZNRF3 and RNF43 respectively substantially disrupt FZD5 and FZD6 surface signal."
+            correctValue: false
+          - key: da-fzd-panelCD-d
+            type: true_false
+            marks: 1
+            prompt: "ZNRF3 and RNF43 respectively substantially disrupt FZD6 and FZD5 surface signal."
+            correctValue: true
+          - key: da-fzd-pct-rnf43-fzd5
+            type: numeric
+            marks: 1
+            prompt: "From Panel E, by what percentage of control's mean surface intensity has FZD5 intensity decreased in the presence of RNF43? Answer as a number (%)."
+            expected: 52.27
+            tolerance: 0.5
+          - key: da-fzd-pct-znrf3-fzd6
+            type: numeric
+            marks: 1
+            prompt: "From Panel F, by what percentage of control's mean surface intensity has FZD6 intensity decreased in the presence of ZNRF3? Answer as a number (%)."
+            expected: 39.68
+            tolerance: 0.5
 
   - id: part-b
     name: "PART B — Reading the Aftermath"
@@ -107,6 +438,36 @@ parts:
       The other four reconstructions grey out, one line stamped across each. Reconstruction
       III stays lit. Using the confirmed timeline, evaluate each statement below.
     blocks:
+      - id: part-b-context
+        type: reveal_content
+        content: >
+          STUDY CONTEXT — DECLASSIFIED FOR PART B ONWARD. Workflow III is the workflow used
+          in the published study (restated in full): Generate RNF43/ZNRF3 double-knockout
+          HEK293T cells to remove endogenous ligase activity. Individually co-express each of
+          the nine testable human FZD subtypes with RNF43, ZNRF3, or an empty vector, and
+          quantify the ratio of mature (surface-trafficked) to immature (ER-retained) FZD
+          protein by Western blot. Confirm the strongest hits (FZD5, FZD6) using pulse-chase
+          surface labelling and flow cytometry. Localise the region conferring specificity
+          using chimeric RNF43/ZNRF3 constructs that swap exactly one domain at a time.
+
+          THE FINDINGS. RNF43 preferentially down-regulates FZD1, FZD5 and FZD7; ZNRF3
+          preferentially down-regulates FZD6. Both ligases can act on most FZDs, but with
+          clearly different efficiencies — partial specialisation, not strict redundancy.
+          Swapping RNF43's transmembrane domain (TMD) onto ZNRF3 increased ZNRF3's efficacy at
+          degrading FZD5 (gain of function); swapping ZNRF3's TMD onto RNF43 reduced RNF43's
+          efficacy at FZD5 (loss of function). Neither swap affected FZD6 handling — the TMD,
+          not the extracellular domain (ECD) or the catalytic RING domain, is the key
+          determinant of specificity, at least for the FZD5 pair. Tissue correlation: FZD5
+          dominates in pancreas, colon, small intestine and liver; FZD6 dominates in adrenal
+          gland and skin. Cancers from FZD6-dominant tissues skew toward ZNRF3 mutations;
+          cancers from FZD5-dominant tissues (notably pancreatic ductal adenocarcinoma) skew
+          toward RNF43 mutations — consistent with the measured biochemical preference.
+          RNF43/ZNRF3 are themselves induced by WNT/β-catenin signalling, forming a classic
+          negative feedback loop: losing them removes the brake, so cells become hypersensitive
+          to WNT and can develop into WNT-driven tumours.
+
+          Mobius slides the rest of the file across the desk. "Everything you need is in here
+          now. No more surprises — just judgement."
       - id: part-b-statements
         locksAfterSubmit: false
         label: "Q1–5"
@@ -232,8 +593,8 @@ parts:
               decimal, e.g. 0.13) that a randomly picked single-cell clone carries
               loss-of-function mutations at both alleles of RNF43 AND both alleles of ZNRF3
               (all four alleles).
-            expected: 0.1296
-            tolerance: 0.001
+            expected: 0.13
+            tolerance: 0.01
 
   - id: part-d
     name: "PART D — The qPCR Variant"
@@ -639,52 +1000,97 @@ parts:
           - src: "/BIOCLASHPICS/mb01-fig4-plasmid-maps-gel.png"
             caption: "Figure 4. Plasmid maps and digestion gel."
         components:
-          - key: q13
-            type: free_text
-            marks: 10
+          - key: q13f
+            type: true_false
+            marks: 2
             prompt: >
               Empty vector B (3000 bp, circular) carries one BamHI site and, separately, one
               BglII site elsewhere in its backbone — compatible-overhang enzymes (same 5′-GATC
               overhang), same as SalI/XhoI. The gRNA cassette (500 bp) was excised with BamHI
               and ligated into vector B linearised at its BglII site; a BamHI-cut end ligated
               to a BglII-cut end reconstitutes neither site, destroying both at that junction
-              — but any BamHI/BglII site elsewhere survives. Indicate TRUE or FALSE for each:
+              — but any BamHI/BglII site elsewhere survives. Indicate TRUE or FALSE for each
+              statement below.
+
               F) BamHI digestion of the recombinant plasmid produces two DNA fragments.
-              G) BglII digestion of the recombinant plasmid fails to linearise it.
-              H) A BamHI site exists outside the insert in the recombinant plasmid, unrelated
-              to the cloning junction. I) Digesting the recombinant plasmid with BamHI and
-              BglII together produces a 1000 bp fragment. J) The empty vector's BamHI + BglII
-              fragment sizes (1000 bp + 2000 bp) sum to its full 3000 bp length.
+            correctValue: false
+          - key: q13g
+            type: true_false
+            marks: 2
+            prompt: "G) BglII digestion of the recombinant plasmid fails to linearise it."
+            correctValue: true
+          - key: q13h
+            type: true_false
+            marks: 2
+            prompt: "H) A BamHI site exists outside the insert in the recombinant plasmid, unrelated to the cloning junction."
+            correctValue: true
+          - key: q13i
+            type: true_false
+            marks: 2
+            prompt: "I) Digesting the recombinant plasmid with BamHI and BglII together produces a 1000 bp fragment."
+            correctValue: false
+          - key: q13j
+            type: true_false
+            marks: 2
+            prompt: "J) The empty vector's BamHI + BglII fragment sizes (1000 bp + 2000 bp) sum to its full 3000 bp length."
+            correctValue: true
       - id: q14
         locksAfterSubmit: false
         label: "Q14 — Golden Gate Assembly"
         components:
-          - key: q14
-            type: free_text
-            marks: 8
+          - key: q14a
+            type: true_false
+            marks: 2
             prompt: >
               The final gRNA cassette is assembled from the RNF43-targeting Spacer (S) and
               tracrRNA Scaffold (T) into a vector backbone using BsaI (Type IIS, cuts outside
               its recognition sequence leaving a custom 4-nt overhang). Overhangs after BsaI
               digestion: Vector — left end AACG, right end TTGC. Spacer (S) — 5′ overhang
               AACG, 3′ overhang CCGA. Scaffold (T) — 5′ overhang CCGA, 3′ overhang TTGC. Each
-              overhang pairs with only one other overhang. State whether each candidate
-              outcome can be observed after BsaI + DNA ligase treatment: (a) Vector — S
-              (forward) — T (forward) — Vector. (b) Vector — T (forward) — S (forward) —
-              Vector. (c) Vector — S (reversed) — T (forward) — Vector. (d) Vector — S
-              (forward) — T (reversed) — Vector.
+              overhang pairs with only one other overhang. State TRUE if the candidate outcome
+              below can be observed after BsaI + DNA ligase treatment, FALSE if it cannot.
+
+              (a) Vector — S (forward) — T (forward) — Vector.
+            correctValue: true
+          - key: q14b
+            type: true_false
+            marks: 2
+            prompt: "(b) Vector — T (forward) — S (forward) — Vector."
+            correctValue: false
+          - key: q14c
+            type: true_false
+            marks: 2
+            prompt: "(c) Vector — S (reversed) — T (forward) — Vector."
+            correctValue: false
+          - key: q14d
+            type: true_false
+            marks: 2
+            prompt: "(d) Vector — S (forward) — T (reversed) — Vector."
+            correctValue: false
       - id: q15
         locksAfterSubmit: false
         label: "Q15 — Reading the Gel"
         components:
           - key: q15a
-            type: free_text
+            type: mcq
             marks: 2
             prompt: >
               A single batch of the finished gRNA plasmid, all identical in base-pair length,
-              separated into multiple topological forms on a gel: supercoiled, linear,
-              nicked/open-circular, and relaxed closed-circular. Rank these four forms from
-              fastest to slowest migration on a standard agarose gel.
+              separated into multiple topological forms on a gel: supercoiled (S), linear (L),
+              nicked/open-circular (N), and relaxed closed-circular (RC). Rank these four forms
+              from fastest to slowest migration on a standard agarose gel.
+            options:
+              - key: A
+                text: "S > L > RC > N"
+              - key: B
+                text: "L > S > RC > N"
+              - key: C
+                text: "RC > S > L > N"
+              - key: D
+                text: "N > L > RC > S"
+              - key: E
+                text: "N > RC > L > S"
+            correctKey: A
           - key: q15b
             type: free_text
             marks: 2

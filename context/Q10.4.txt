@@ -1,0 +1,25 @@
+Q10.4.  PROTEIN FUNCTION  [12 marks]
+RING domains coordinate two zinc ions via a cross-brace arrangement of conserved cysteine and histidine residues, and this zinc coordination is essential for maintaining the domain’s catalytically active fold. One such zinc-coordinating residue in RNF43’s RING domain is encoded by the codon 5′-UGU-3′.
+Q10.4A.  A single-nucleotide substitution (SNP) changes this UGU codon into one of the four codons below. Using the genetic code table in the appendix, and assuming the protein’s local structure collapses in proportion to how far the new amino acid’s side-chain properties diverge from the original, which substitution is predicted to be LEAST disruptive? [2]
+⛔ NON-RECOVERABLE — once you proceed past this point, you cannot return and change your answer here.
+1)  AUG
+2)  UCU
+3)  AAU
+4)  CAA
+
+Q10.4B.  The prediction in Q10.4A rests on a simplification that does not hold up well here. The codon in question translates to methionine. The protein’s local structure still changes substantially despite this substitution. Why? [3]
+1)  Methionine, unlike cysteine, is a hydrophobic amino acid, so placing it at this position destabilises the RING domain’s hydrophobic core.
+2)  Although both are sulfur-containing, methionine’s thioether sulfur cannot coordinate zinc the way cysteine’s thiol does, and its longer side chain disrupts the tight packing of the zinc-binding cross-brace — so the fold, and function, are still compromised.
+3)  Methionine’s side chain is longer than cysteine’s, which increases local flexibility around the zinc-binding loop and thereby further stabilises it.
+4)  Since methionine and cysteine are both classified as sulfur-containing amino acids, their side chains are functionally interchangeable, so the fold and function are essentially unaffected.
+
+Q10.4C.  Now suppose the same original residue is instead mutated to serine. How would this affect downstream WNT signalling? [3]
+1)  Serine’s near-identical size and shape to cysteine preserve the RING domain fold and zinc coordination, so downstream WNT signalling is unaffected.
+2)  Serine cannot coordinate zinc via its hydroxyl group as effectively as cysteine’s thiol, destabilising the RING domain fold, abolishing catalytic activity, and causing WNT hyperactivation (elevated downstream signalling).
+3)  Serine’s hydroxyl group forms an even stronger coordination bond with zinc than cysteine’s thiol, enhancing RING domain stability and further suppressing WNT signalling.
+4)  Since serine and cysteine are both broadly polar, the substitution has no meaningful structural effect, and downstream signalling proceeds normally via a compensatory pathway.
+
+Q10.4D.  R-spondin (RSPO) binding to its receptor LGR5 shows positive cooperativity, described by the Hill equation Y = [RSPO]ⁿ / (K₀.₅ⁿ + [RSPO]ⁿ), where Y is fractional receptor occupancy and n is the Hill coefficient.
+(i)  Given n = 2 and K₀.₅ = 10 nM, calculate the [RSPO] concentration required to reach 90% receptor occupancy. [3]
+[FIGURE 6 — to be inserted: RSPO–LGR5 occupancy curves for n=0.5, 1, 4. See Figure Brief 6 in the appendix.]
+(ii)  The graph above shows three theoretical occupancy curves sharing the same K₀.₅ but different Hill coefficients (n=0.5, n=1, n=4). Identify which curve corresponds to which n, and explain why a higher Hill coefficient makes the pathway’s response to RSPO more “switch-like” (ultrasensitive) rather than graded. [3]

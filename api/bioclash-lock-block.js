@@ -7,7 +7,7 @@
 // grace window past the attempt's end_at: if the server's clock says time
 // is up, this rejects before touching the block at all.
 const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
-const { loadPaper, findBlock, toClientBlock } = require('./_lib/bioclash');
+const { loadPaper, findBlock, toClientBlock, blocksRevealedByLock } = require('./_lib/bioclash');
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
@@ -84,38 +84,40 @@ module.exports = async (req, res) => {
       return;
     }
 
-    let revealedBlock = null;
-    if (paperBlock.reveals) {
-      const revealPaperBlock = findBlock(paper, paperBlock.reveals);
-      if (revealPaperBlock) {
-        // Create the revealed block's row only if it doesn't already exist
-        // (idempotent — a retried/duplicate successful response shouldn't
-        // error out on the insert).
-        const { data: existingReveal, error: existingRevealError } = await admin
+    // A single lock can now reveal more than one block at once — either a
+    // few specific ones (`reveals`) or a whole part's worth (`revealsParts`,
+    // e.g. the Data Analysis section's final lock opening up Part B–F
+    // together). See blocksRevealedByLock()'s own comment in
+    // api/_lib/bioclash.js for exactly how the two combine.
+    const revealedBlocks = [];
+    for (const revealPaperBlock of blocksRevealedByLock(paper, paperBlock)) {
+      // Create the revealed block's row only if it doesn't already exist
+      // (idempotent — a retried/duplicate successful response shouldn't
+      // error out on the insert).
+      const { data: existingReveal, error: existingRevealError } = await admin
+        .from('bioclash_attempt_blocks')
+        .select('id, status, answer')
+        .eq('attempt_id', attempt.id)
+        .eq('block_id', revealPaperBlock.id)
+        .maybeSingle();
+      if (existingRevealError) throw existingRevealError;
+
+      let revealRow = existingReveal;
+      if (!revealRow) {
+        const { data: created, error: createError } = await admin
           .from('bioclash_attempt_blocks')
+          .insert({ attempt_id: attempt.id, block_id: revealPaperBlock.id })
           .select('id, status, answer')
-          .eq('attempt_id', attempt.id)
-          .eq('block_id', revealPaperBlock.id)
-          .maybeSingle();
-        if (existingRevealError) throw existingRevealError;
-
-        let revealRow = existingReveal;
-        if (!revealRow) {
-          const { data: created, error: createError } = await admin
-            .from('bioclash_attempt_blocks')
-            .insert({ attempt_id: attempt.id, block_id: revealPaperBlock.id })
-            .select('id, status, answer')
-            .single();
-          if (createError) throw createError;
-          revealRow = created;
-        }
-
-        revealedBlock = {
-          ...toClientBlock(revealPaperBlock, userId),
-          status: revealRow.status,
-          answer: revealRow.answer
-        };
+          .single();
+        if (createError) throw createError;
+        revealRow = created;
       }
+
+      revealedBlocks.push({
+        ...toClientBlock(revealPaperBlock, userId),
+        status: revealRow.status,
+        answer: revealRow.answer
+      });
     }
 
     // Soft anti-cheat signals only — see bioclash-save-draft.js for the
@@ -127,7 +129,7 @@ module.exports = async (req, res) => {
       await admin.from('bioclash_attempts').update(patch).eq('id', attempt.id);
     }
 
-    res.status(200).json({ ok: true, locked: blockId, revealedBlock });
+    res.status(200).json({ ok: true, locked: blockId, revealedBlocks });
   } catch (err) {
     console.error('bioclash-lock-block failed:', err);
     res.status(500).json({ error: 'Could not lock block' });

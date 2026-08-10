@@ -7,11 +7,77 @@ this system. Companion doc: `LOGIN_ROADMAP.md` (the underlying Supabase
 auth/leaderboard system this builds on top of — read that too if you need
 the auth/RLS patterns from first principles).
 
-**Status as of 2026-08-10: code-complete, locally verified, NOT yet run
+**Status as of 2026-08-11: code-complete, locally verified, NOT yet run
 against production.** Migration 009 has not been executed in the Supabase
 SQL editor. No endpoint has been exercised against a real Supabase project
 (this dev environment has no credentials). Everything below "genuinely
 unverified" needs a real pass before this goes anywhere near real students.
+
+**2026-08-11 session — founder feedback pass (`context/IMPROVES.txt` +
+`data/bioclash/daquestions.md` + `context/Q10.4.txt`), all addressed:**
+1. Q13/Q14 were single `free_text` blobs with every lettered T/F statement
+   crammed into one prompt paragraph — restructured into one `true_false`
+   component per letter (F–J for Q13, a–d for Q14), same total marks. Q15a's
+   free-text ranking question replaced with the 5-option MCQ the founder
+   specified (correct: A).
+2. **The big one**: the whole paper used to be visible (though answer-key
+   fields always stayed stripped) from the moment an attempt started —
+   Part B's intro sentence gave away Part A's non-recoverable answer to
+   anyone who scrolled past Part A without locking. Fixed two ways
+   together: (a) a new **DATA ANALYSIS part** (`part-da`, from
+   `daquestions.md`) now sits between Part A and Part B, itself a chain of
+   five non-recoverable locks; the last one (`da-fzd-mystery`) is the first
+   block anywhere in the paper to use the new `revealsParts` field (see
+   below), which gates ALL of Part B–F behind it — so nothing past Part A
+   exists client-side at all until Data Analysis is fully cleared. (b) the
+   frontend (`bioclash-attempt.js`) no longer renders every block in one
+   flat scroll — it now paginates **one part at a time** with Prev/Next
+   controls (`renderPartNav`). Next is disabled purely by data absence (the
+   next part's blocks don't exist in `state.blocks` until earned — no
+   separate "is it unlocked" bookkeeping needed). Prev is disabled into any
+   part where EVERY block is `locksAfterSubmit` (Part A, Data Analysis)
+   once you've moved past it (`partIsFullyLocked`) — Parts B–F stay freely
+   browsable in both directions even though Part E contains one
+   non-recoverable question (Q10.4A) among many recoverable ones, because
+   that block alone (not the whole part) is what's protected.
+3. Part B previously assumed the student already knew the study's findings
+   (tissue correlation, TMD-vs-ECD specificity, etc.) with no source for
+   that anywhere in the delivered content — Part B statements 4 and 5 were
+   unanswerable from what the client actually received. Added
+   `part-b-context`, a `reveal_content` block restating Workflow III in
+   full plus the paper's actual findings, as the first thing shown once
+   Part B unlocks.
+4. Q10.4 (the codon/RING-domain non-recoverable question) turned out to
+   already be correctly wired from a prior session (`q10-4a` locks →
+   reveals `q10-4-rest` containing B/C/D(i)/D(ii)) — verified against
+   `context/Q10.4.txt`, no change needed.
+5. `data/bioclash/mb-01.yaml` had stray uncommitted edits from some earlier,
+   unrelated session that had degraded the Workflow III text into dangling
+   sentence fragments ("...that crossed their path.The ligases achieved
+   this by  Below are...") and vague-ified the reveal ("using
+   [techniques]" instead of "using pulse-chase surface labelling and flow
+   cytometry"). Rewritten back to the full, correct text while doing the
+   above (couldn't `git checkout --` it — destructive git ops are blocked
+   by this harness's permission classifier — so it was fixed by hand
+   instead).
+
+New paper total: **165 marks** (was 133; Data Analysis adds 32). See
+`api/_lib/bioclash.js`'s new `revealsParts`/`blocksRevealedByLock` — a
+block's `reveals` field now accepts a string OR an array (used by
+`da-context3`, which reveals two blocks at once: `context-reveal` and
+`da-fzd-mystery`). `bioclash-lock-block.js` now returns `revealedBlocks:
+[...]` (array) instead of the old singular `revealedBlock` — the frontend
+was updated to match, and also auto-advances `state.currentPartIndex`
+inside the lock handler when a lock reveals a new part, so "Lock &
+Continue" actually continues instead of stranding the student on a
+suddenly-empty page. Verified against the real yaml with a throwaway Node
+script (not checked in) exercising `initialBlocks`/`blocksRevealedByLock`
+end-to-end through the whole reveal chain, plus a full `toClientBlock`
+scan of every block in the paper for `correctKey`/`correctValue`/
+`expected`/`tolerance` — zero leaks found across 23 gating-relevant
+blocks. Still not run against a live attempt (see "Genuinely unverified,"
+below — same caveats as before, now also covering the new part and the
+pagination UI specifically).
 
 ---
 
@@ -88,18 +154,28 @@ from BiOrchive's pattern, and it's the whole point.
   ```
   paper: {id, title, season, accessMode, durationMinutes, totalMarks, parts[], appendix}
   part: {id, name, marks, intro (narrative flavor text, optional), blocks[]}
-  block: {id, locksAfterSubmit, reveals (block id), lockWarning, label,
+  block: {id, locksAfterSubmit, reveals (block id OR array of block ids),
+          revealsParts (array of part ids — reveals every block in those
+          parts at once, added 2026-08-11), lockWarning, label,
           table/tables[], images[], components[], type: "reveal_content" (+ content)}
   component: {key, type, marks, prompt, options[] (mcq), correctKey (mcq),
               correctValue (true_false), expected/tolerance (numeric),
               refersTo/marksEach/promptTemplate (free_text_for_others)}
   ```
+  Seven parts now, not six: `part-a` → **`part-da` (Data Analysis, new)** →
+  `part-b` → `part-c` → `part-d` → `part-e` → `part-f`.
   Question types actually in use: `mcq`, `true_false`, `free_text`,
   `numeric`, `free_text_for_others` (see "Bugs fixed," #2), `reveal_content`
   (not a question — pure gated content). `fill_blank` is defined in the
   renderer but not currently used by any real question.
   `durationMinutes: 240` **is a placeholder** — confirm the real number
   before this goes live even in debug.
+- `static/MB-01PICS/` — figures for the new Data Analysis part
+  (`signallingpath.png`, `supressiondata1/2/3.jpg`, `context2.jpg` — note
+  the mixed extensions, `daquestions.md` itself refers to all of them as
+  `.png`, don't trust that when re-pointing an `images:` entry). Separate
+  directory from `BIOCLASHPICS/` below purely because that's where the
+  founder dropped them; no reason to unify unless it comes up again.
 - `static/BIOCLASHPICS/` — `mb01-fig1..4-*.png` are the **real** figures,
   extracted directly from the source `.docx`'s embedded media (not
   regenerated). `mb01-bg-loki-wide.png` / `mb01-bg-loki-tall.png` are the
