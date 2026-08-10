@@ -3,7 +3,7 @@
 // called on every page load/refresh. Never creates anything (that's
 // start-attempt's job); if no attempt exists yet, says so plainly.
 const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
-const { loadPaper, toClientBlock, findBlock, watermarkCode } = require('./_lib/bioclash');
+const { loadPaper, toClientBlock, findBlock, watermarkCode, newSessionToken } = require('./_lib/bioclash');
 
 module.exports = async (req, res) => {
   if (req.method !== 'GET') {
@@ -62,6 +62,17 @@ module.exports = async (req, res) => {
       return;
     }
 
+    // Claim the session on every load/resume of an existing attempt — see
+    // supabase/migrations/010_bioclash_anticheat.sql. This is the second
+    // (and, in practice, main) claim point: start-attempt only ever fires
+    // once per attempt, but every page load/refresh comes through here.
+    const sessionToken = newSessionToken();
+    const { error: claimError } = await admin
+      .from('bioclash_attempts')
+      .update({ active_session_token: sessionToken, active_session_claimed_at: new Date().toISOString() })
+      .eq('id', attempt.id);
+    if (claimError) throw claimError;
+
     if (attempt.status === 'in_progress' && new Date(attempt.end_at).getTime() <= Date.now()) {
       await admin.from('bioclash_attempts').update({ status: 'expired' }).eq('id', attempt.id);
       attempt.status = 'expired';
@@ -90,6 +101,7 @@ module.exports = async (req, res) => {
       visibilityLosses: attempt.visibility_losses,
       paperTitle: paper.title,
       watermark: watermarkCode(userId, paperId),
+      sessionToken,
       blocks
     });
   } catch (err) {

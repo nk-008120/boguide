@@ -221,6 +221,18 @@ function watermarkCode(userId, paperId) {
   return crypto.createHash('sha256').update(`${userId}:${paperId}`).digest('hex').slice(0, 8);
 }
 
+// Single-active-session enforcement (anti-cheat, 2026-08-11). A fresh token
+// is minted every time start-attempt or attempt-state is called (the only
+// two points a fresh page load "claims" an attempt) and stored on the
+// bioclash_attempts row. bioclash-heartbeat.js polls to verify a client
+// still holds the current token without ever reclaiming it itself, and
+// save-draft/lock-block both require it match before writing an answer —
+// see supabase/migrations/010_bioclash_anticheat.sql for the full design
+// note and context/anti-cheating-measures.md for the write-up.
+function newSessionToken() {
+  return crypto.randomUUID();
+}
+
 module.exports = {
   loadPaper,
   allBlocks,
@@ -230,5 +242,6 @@ module.exports = {
   seededShuffle,
   toClientBlock,
   componentIsCorrect,
-  watermarkCode
+  watermarkCode,
+  newSessionToken
 };

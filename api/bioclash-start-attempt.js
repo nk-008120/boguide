@@ -3,7 +3,7 @@
 // returns a correct answer, an un-reached block, or a reveal the caller
 // hasn't actually earned yet — see api/_lib/bioclash.js's toClientBlock().
 const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
-const { loadPaper, initialBlocks, toClientBlock, findBlock, watermarkCode } = require('./_lib/bioclash');
+const { loadPaper, initialBlocks, toClientBlock, findBlock, watermarkCode, newSessionToken } = require('./_lib/bioclash');
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
@@ -64,11 +64,19 @@ module.exports = async (req, res) => {
       return;
     }
 
+    const sessionToken = newSessionToken();
+
     if (!attempt) {
       const endAt = new Date(Date.now() + (paper.durationMinutes || 240) * 60000).toISOString();
       const { data: created, error: createError } = await admin
         .from('bioclash_attempts')
-        .insert({ user_id: userId, paper_id: paperId, end_at: endAt })
+        .insert({
+          user_id: userId,
+          paper_id: paperId,
+          end_at: endAt,
+          active_session_token: sessionToken,
+          active_session_claimed_at: new Date().toISOString()
+        })
         .select('*')
         .single();
       if (createError) throw createError;
@@ -82,6 +90,16 @@ module.exports = async (req, res) => {
         const { error: blocksError } = await admin.from('bioclash_attempt_blocks').insert(blockRows);
         if (blocksError) throw blocksError;
       }
+    } else {
+      // Not the normal path (the frontend only ever calls this once, to
+      // create a brand-new attempt — see bioclash-attempt-state.js for the
+      // resume path) but claim the session here too for robustness if it
+      // ever is hit on an existing attempt.
+      const { error: claimError } = await admin
+        .from('bioclash_attempts')
+        .update({ active_session_token: sessionToken, active_session_claimed_at: new Date().toISOString() })
+        .eq('id', attempt.id);
+      if (claimError) throw claimError;
     }
 
     if (attempt.status === 'in_progress' && new Date(attempt.end_at).getTime() <= Date.now()) {
@@ -112,6 +130,7 @@ module.exports = async (req, res) => {
       visibilityLosses: attempt.visibility_losses,
       paperTitle: paper.title,
       watermark: watermarkCode(userId, paperId),
+      sessionToken,
       blocks
     });
   } catch (err) {

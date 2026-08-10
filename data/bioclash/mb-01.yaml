@@ -220,6 +220,14 @@ parts:
         reveals: da-context3
         label: "Context 2 — DVL2 Phosphorylation (II)"
         lockWarning: "Once you proceed past this point, you cannot return and change your answers in this context."
+        images:
+          - src: "/MB-01PICS/supressiondata2.jpg"
+            caption: >
+              Same graph as the previous page — Analysis of DVL2 phosphorylation in WT and
+              R/ZdKO HEK293T cells, 3 h after stimulation with recombinant WNT3A or WNT5A
+              and/or RSPO1-CM, all samples pretreated with porcupine inhibitor C59 (5 μM).
+              p-DVL2:DVL2 band-density ratio, normalised to the C59 control. Representative
+              experiment (N = 3).
         components:
           - key: da-c2-q6a
             type: true_false
