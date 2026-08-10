@@ -1,11 +1,18 @@
 ---
 title: "About BiOGuide"
 ---
+
+## 📊 Recent Updates
+
+{{< recent-updates >}}
+
 ## Contacts:
 
 Before we start blabbering about, please contact us on the following in case you want to talk the relevant:
 **resourcerepository4boguide@gmail.com** - Resources or papers you want to submit, website feedback, website doubts, and requests for features on website!
 **r6394175@gmail.com** - Letter of interest to join team BiOGuide, talking shop, and so on. This is my personal e-mail so please respect the sanctity! (I'm done amn't I?)
+
+As of August 8 2026, this website has been a one man project. Hence, as we are now under production, we encourage you to join our team if you are up for this position.
 
 Now, thanks for visiting! Let's talk a bit about why we built BiOGuide.
 

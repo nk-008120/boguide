@@ -16,6 +16,14 @@
 
   var PAPER_ID = root.getAttribute('data-paper-id');
 
+  // Force the BiOClash dark/glowing case-file look for the duration of an
+  // attempt, overriding whatever theme (including "favourite," the sitewide
+  // default) the visitor has stored — this only touches the live DOM class,
+  // never localStorage, so leaving this page and loading any other page
+  // still respects their real stored preference on next load.
+  document.documentElement.classList.remove('light', 'favourite');
+  document.documentElement.classList.add('dark');
+
   var startScreen = document.getElementById('bioclash-attempt-start');
   var liveScreen = document.getElementById('bioclash-attempt-live');
   var reportScreen = document.getElementById('bioclash-attempt-report');
@@ -210,6 +218,78 @@
     return { el: wrap, input: input };
   }
 
+  // free_text_for_others: one textbox per option NOT currently selected in
+  // the sibling component named by `refersTo` — recomputed live whenever
+  // that selection changes. Deliberately never a fixed set of options: a
+  // fixed subset (e.g. hardcoding 4 of 5 workflow letters in the YAML, as
+  // an earlier version of this did) structurally reveals the answer, since
+  // the one option never asked about is trivially the correct one. `ref`
+  // must already be rendered — renderBlocks() guarantees this by rendering
+  // every other component first and free_text_for_others components last.
+  function renderFreeTextForOthers(block, component, inputs, onChange) {
+    var ref = inputs[component.refersTo];
+    var wrap = document.createElement('div');
+    wrap.className = 'bioclash-component bioclash-free-text-for-others';
+    var saved = componentValue(block, component.key) || {}; // {optionKey: text}, persists across rebuilds
+    var boxes = {};
+
+    function optionKeys() {
+      if (!ref) return [];
+      return Array.prototype.map.call(ref.input.querySelectorAll('input[type=radio]'), function (r) { return r.value; });
+    }
+    function selectedKey() {
+      if (!ref) return null;
+      var checked = ref.input.querySelector('input:checked');
+      return checked ? checked.value : null;
+    }
+    function flushBoxesToSaved() {
+      Object.keys(boxes).forEach(function (k) { saved[k] = boxes[k].value; });
+    }
+
+    function rebuild() {
+      flushBoxesToSaved();
+      wrap.innerHTML = '';
+      boxes = {};
+      var sel = selectedKey();
+      if (!sel) {
+        var hint = document.createElement('p');
+        hint.className = 'bioclash-component-hint';
+        hint.textContent = 'Pick an answer above first — the questions for the other options appear here.';
+        wrap.appendChild(hint);
+        return;
+      }
+      optionKeys().filter(function (k) { return k !== sel; }).forEach(function (k) {
+        var p = document.createElement('p');
+        p.className = 'bioclash-component-prompt';
+        p.textContent = component.promptTemplate.replace('{option}', k) + (component.marksEach ? ' [' + component.marksEach + ']' : '');
+        wrap.appendChild(p);
+        var ta = document.createElement('textarea');
+        ta.className = 'bioclash-freetext-input';
+        ta.rows = 2;
+        ta.value = saved[k] || '';
+        ta.addEventListener('input', function () { saved[k] = ta.value; onChange(); });
+        wrap.appendChild(ta);
+        boxes[k] = ta;
+      });
+    }
+
+    rebuild();
+    if (ref) ref.input.addEventListener('change', rebuild);
+
+    return {
+      el: wrap,
+      getAnswer: function () {
+        flushBoxesToSaved();
+        var sel = selectedKey();
+        var out = {};
+        optionKeys().filter(function (k) { return k !== sel; }).forEach(function (k) {
+          if (saved[k]) out[k] = saved[k];
+        });
+        return out;
+      }
+    };
+  }
+
   function collectAnswers(block, inputs) {
     var answers = {};
     (block.components || []).forEach(function (component) {
@@ -219,6 +299,8 @@
         var checked = entry.el.querySelector('input:checked');
         if (!checked) return;
         answers[component.key] = component.type === 'true_false' ? checked.value === 'true' : checked.value;
+      } else if (component.type === 'free_text_for_others') {
+        answers[component.key] = entry.getAnswer();
       } else if (component.type === 'numeric') {
         if (entry.input.value !== '') answers[component.key] = Number(entry.input.value);
       } else {
@@ -253,6 +335,13 @@
       heading.textContent = block.partName || '';
       section.appendChild(heading);
 
+      if (block.lockWarning && block.status === 'active') {
+        var warnBanner = document.createElement('p');
+        warnBanner.className = 'bioclash-nonrecoverable-banner';
+        warnBanner.textContent = '⛔ NON-RECOVERABLE — ' + block.lockWarning;
+        section.appendChild(warnBanner);
+      }
+
       if (block.type === 'reveal_content') {
         var content = document.createElement('div');
         content.className = 'bioclash-reveal-content';
@@ -263,7 +352,11 @@
       }
 
       var inputs = {};
+      var deferred = [];
+      // Pass 1: everything except free_text_for_others, so any component it
+      // refers to (via refersTo) is already rendered by the time pass 2 runs.
       (block.components || []).forEach(function (component) {
+        if (component.type === 'free_text_for_others') { deferred.push(component); return; }
         var rendered = renderComponent(block, component);
         inputs[component.key] = rendered;
         section.appendChild(rendered.el);
@@ -271,6 +364,15 @@
           rendered.el.addEventListener('input', function () { scheduleDraftSave(block, inputs, session); });
           rendered.el.addEventListener('change', function () { scheduleDraftSave(block, inputs, session); });
         }
+      });
+      // Pass 2: free_text_for_others, now that its referenced sibling exists.
+      deferred.forEach(function (component) {
+        var onChange = (block.status === 'active' && !block.locksAfterSubmit)
+          ? function () { scheduleDraftSave(block, inputs, session); }
+          : function () {};
+        var rendered = renderFreeTextForOthers(block, component, inputs, onChange);
+        inputs[component.key] = rendered;
+        section.appendChild(rendered.el);
       });
 
       if (block.status === 'locked') {
@@ -301,7 +403,13 @@
               return;
             }
             block.status = 'locked';
-            if (result.body.revealedBlock) state.blocks.push(result.body.revealedBlock);
+            if (result.body.revealedBlock) {
+              // Defensive dedup: never add a block id that's already
+              // present, even though the real fix is server-side
+              // (initialBlocks() no longer pre-creates reveal-gated blocks).
+              var already = state.blocks.some(function (b) { return b.id === result.body.revealedBlock.id; });
+              if (!already) state.blocks.push(result.body.revealedBlock);
+            }
             renderBlocks(session);
           });
         });

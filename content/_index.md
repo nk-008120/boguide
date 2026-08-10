@@ -99,7 +99,9 @@ We cover the full IBO syllabus — 15+ sections, 150+ topic pages,666+ Static fi
 
 ## 🤝 Contribute to BioGuide
 
-BioGuide follows AOGuide's open contribution model:
+As of August 8 2026, this website has only been a one man project and we are currently assembling a team of people who think this is worth contributing to. So please help yourself!
+
+BioGuide follows this open contribution model:
 
 - **Found an error?** Open a GitHub Issue or submit a PR
 - **Want to add a topic?** Follow the template in `handoff.md`
@@ -242,20 +244,59 @@ Images: See `image-sources.md` for per-image licensing status. A full licensing 
   font-weight: 400;
 }
 
-/* Recent updates styling */
-.recent-updates ul {
+/* Recent updates styling — table, not a list, so each contribution can
+   carry an explicit Contributor column. Wrapped in its own scroll
+   container (not the whole page) so a long "Update" cell on a narrow
+   screen scrolls the table only, never the page itself. */
+.recent-updates-table-wrap {
   margin: 0.5rem 0 0;
-  padding: 0;
+  overflow-x: auto;
+  border: 1px solid #e9e9f0;
+  border-radius: 12px;
 }
 
-.recent-updates li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #f0f0f0;
+.recent-updates-table {
+  width: 100%;
+  border-collapse: collapse;
   font-size: 0.95rem;
 }
 
-.recent-updates li:last-child {
-  border-bottom: none;
+.recent-updates-table th,
+.recent-updates-table td {
+  padding: 0.65rem 1rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.recent-updates-table th {
+  background: rgba(137, 101, 196, 0.08);
+  color: #8965c4;
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.recent-updates-table td:first-child,
+.recent-updates-table td:last-child {
+  white-space: nowrap;
+  color: #64748b;
+}
+
+.recent-updates-table tbody tr {
+  border-top: 1px solid #f0f0f0;
+}
+
+html.dark .recent-updates-table-wrap {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+html.dark .recent-updates-table th {
+  background: rgba(201, 183, 232, 0.08);
+}
+html.dark .recent-updates-table tbody tr {
+  border-top-color: rgba(255, 255, 255, 0.08);
 }
 
 /* Responsive */

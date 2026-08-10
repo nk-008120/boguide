@@ -28,7 +28,7 @@
 
 	<meta itemprop="name" content="BiOGuide">
 	<meta itemprop="description" content="Biology Olympiad Preparation Hub — Free study guides, interactive simulators, and practice for IBO, USABO, and INBO.">
-	<meta itemprop="wordCount" content="787">
+	<meta itemprop="wordCount" content="836">
 	<meta itemprop="image" content="http://localhost:1313/og-default.png">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:image" content="http://localhost:1313/og-default.png">
@@ -702,7 +702,8 @@
 </div>
 <hr>
 <h2>🤝 Contribute to BioGuide<span class="hx:absolute hx:-mt-20" id="-contribute-to-bioguide"></span>
-    <a href="#-contribute-to-bioguide" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>BioGuide follows AOGuide&rsquo;s open contribution model:</p>
+    <a href="#-contribute-to-bioguide" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>As of August 8 2026, this website has only been a one man project and we are currently assembling a team of people who think this is worth contributing to. So please help yourself!</p>
+<p>BioGuide follows this open contribution model:</p>
 <ul>
 <li><strong>Found an error?</strong> Open a GitHub Issue or submit a PR</li>
 <li><strong>Want to add a topic?</strong> Follow the template in <code>handoff.md</code></li>
@@ -719,14 +720,52 @@
     href="https://github.com/nk-008120/boguide"target="_blank" rel="noopener">Contribute on GitHub →</a></strong></p>
 <hr>
 <h2>📊 Recent Updates<span class="hx:absolute hx:-mt-20" id="-recent-updates"></span>
-    <a href="#-recent-updates" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ul>
-  <li><strong>Aug 2026:</strong> <a href="/discussions/">Discussions</a> — open feedback and comment threads for the whole community, no gatekeeping to read, an account to post.</li>
-  <li><strong>Aug 2026:</strong> <a href="/bioclash/">BiOClash</a> — an original biology competition we're building, plus a Champions leaderboard on the <a href="/papers/leaderboard/">Hall of Fame</a> page ready for Season 1's results.</li>
-  <li><strong>Aug 2026:</strong> Accounts, profiles, and a Hall of Fame leaderboard for BiOrchive Timed Attempts — completely optional, everything still works without logging in.</li>
-  <li><strong>Aug 2026:</strong> Cell &amp; Molecular Biology (23 pages) — complete with 80+ images and interactive widgets.</li>
-  <li><strong>Aug 2026:</strong> Ethology (9 pages) — complete with 18 interactive widgets.</li>
-  <li><strong>Jul 2026:</strong> Plant Anatomy (10 pages) — complete with 48 images and 20 interactive widgets.</li>
-</ul>
+    <a href="#-recent-updates" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><div class="recent-updates">
+<div class="recent-updates-table-wrap">
+<table class="recent-updates-table">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Update</th>
+      <th>Contributor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Aug 2026</td>
+      <td><a href="/discussions/">Discussions</a> — open feedback and comment threads for the whole community, no gatekeeping to read, an account to post.</td>
+      <td>Nishit Kalani</td>
+    </tr>
+    <tr>
+      <td>Aug 2026</td>
+      <td><a href="/bioclash/">BiOClash</a> — an original biology competition we're building, plus a Champions leaderboard on the <a href="/papers/leaderboard/">Hall of Fame</a> page ready for Season 1's results.</td>
+      <td>Nishit Kalani</td>
+    </tr>
+    <tr>
+      <td>Aug 2026</td>
+      <td>Accounts, profiles, and a Hall of Fame leaderboard for BiOrchive Timed Attempts — completely optional, everything still works without logging in.</td>
+      <td>Nishit Kalani</td>
+    </tr>
+    <tr>
+      <td>Aug 2026</td>
+      <td>Cell &amp; Molecular Biology (23 pages) — complete with 80+ images and interactive widgets.</td>
+      <td>Nishit Kalani</td>
+    </tr>
+    <tr>
+      <td>Aug 2026</td>
+      <td>Ethology (9 pages) — complete with 18 interactive widgets.</td>
+      <td>Nishit Kalani</td>
+    </tr>
+    <tr>
+      <td>Jul 2026</td>
+      <td>Plant Anatomy (10 pages) — complete with 48 images and 20 interactive widgets.</td>
+      <td>Nishit Kalani</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
 <hr>
 <h2>💬 Join the Community<span class="hx:absolute hx:-mt-20" id="-join-the-community"></span>
     <a href="#-join-the-community" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ul>
@@ -845,20 +884,59 @@
   font-weight: 400;
 }
 
-/* Recent updates styling */
-.recent-updates ul {
+/* Recent updates styling — table, not a list, so each contribution can
+   carry an explicit Contributor column. Wrapped in its own scroll
+   container (not the whole page) so a long "Update" cell on a narrow
+   screen scrolls the table only, never the page itself. */
+.recent-updates-table-wrap {
   margin: 0.5rem 0 0;
-  padding: 0;
+  overflow-x: auto;
+  border: 1px solid #e9e9f0;
+  border-radius: 12px;
 }
 
-.recent-updates li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #f0f0f0;
+.recent-updates-table {
+  width: 100%;
+  border-collapse: collapse;
   font-size: 0.95rem;
 }
 
-.recent-updates li:last-child {
-  border-bottom: none;
+.recent-updates-table th,
+.recent-updates-table td {
+  padding: 0.65rem 1rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.recent-updates-table th {
+  background: rgba(137, 101, 196, 0.08);
+  color: #8965c4;
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.recent-updates-table td:first-child,
+.recent-updates-table td:last-child {
+  white-space: nowrap;
+  color: #64748b;
+}
+
+.recent-updates-table tbody tr {
+  border-top: 1px solid #f0f0f0;
+}
+
+html.dark .recent-updates-table-wrap {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+html.dark .recent-updates-table th {
+  background: rgba(201, 183, 232, 0.08);
+}
+html.dark .recent-updates-table tbody tr {
+  border-top-color: rgba(255, 255, 255, 0.08);
 }
 
 /* Responsive */

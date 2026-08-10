@@ -70,22 +70,21 @@ parts:
                   observation that FZD5-dominant tissues show more RNF43 mutations and
                   FZD6-dominant tissues show more ZNRF3 mutations in tumours.
             correctKey: "III"
-          - key: flaw-I
-            type: free_text
-            marks: 2
-            prompt: "State, in one sentence, the specific methodological flaw that rules out Workflow I."
-          - key: flaw-II
-            type: free_text
-            marks: 2
-            prompt: "State, in one sentence, the specific methodological flaw that rules out Workflow II."
-          - key: flaw-IV
-            type: free_text
-            marks: 2
-            prompt: "State, in one sentence, the specific methodological flaw that rules out Workflow IV."
-          - key: flaw-V
-            type: free_text
-            marks: 2
-            prompt: "State, in one sentence, the specific methodological flaw that rules out Workflow V."
+          # This paper asks for a flaw explanation for "each of the remaining
+          # four" — i.e. whichever four options the student did NOT pick as
+          # correct, not four options fixed in the YAML ahead of time.
+          # Hardcoding four specific letters here (as an earlier version of
+          # this file did) structurally leaks the answer: with only 4 boxes
+          # labeled among 5 options, the one letter never asked about is
+          # trivially the correct one. free_text_for_others is rendered
+          # dynamically client-side — one box per option NOT currently
+          # selected in `refersTo`, recomputed live if the student changes
+          # their pick — so the set of boxes never betrays the answer.
+          - key: workflow-flaws
+            type: free_text_for_others
+            refersTo: workflow-pick
+            marksEach: 2
+            promptTemplate: "State, in one sentence, the specific methodological flaw that rules out Workflow {option}."
       - id: part-a-reveal
         type: reveal_content
         content: >
