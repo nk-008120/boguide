@@ -38,6 +38,41 @@
       cl.add('dark');
     }
   }
+
+  // The navbar's theme-toggle button is sitewide chrome (rendered by the
+  // theme's own layout, not something this page's content controls) and
+  // stays clickable here by default. If a visitor used it while on this
+  // page, assets/js/core/theme.js's click handler would call
+  // localStorage.setItem('color-theme', ...) — the MutationObserver above
+  // would still force this page back to dark, but the visitor's SITEWIDE
+  // preference would have been silently overwritten for every other page
+  // too. Marking <body> lets a scoped CSS rule (section 24 of custom.css)
+  // hide the control outright for the duration of an attempt, so there is
+  // no interactive path to a theme write at all here — "favourite" (or
+  // whatever the visitor actually has stored) stays exactly what it was
+  // the moment they leave this page.
+  document.body.classList.add('bioclash-attempt-active');
+
+  // Belt-and-suspenders on top of the CSS hide above: a capturing-phase
+  // listener intercepts any click reaching the toggle or its menu options
+  // — including one fired programmatically (bypassing the fact that a
+  // hidden element has no real hit-testable area for an actual mouse
+  // click) — and stops it before core/theme.js's own handler ever runs.
+  // localStorage snapshotted once at load and force-restored afterward
+  // either way, so even a change that somehow still landed doesn't stick.
+  var themeAtLoad = localStorage.getItem('color-theme');
+  document.addEventListener('click', function (e) {
+    if (e.target.closest('.hextra-theme-toggle, .hextra-theme-toggle-options')) {
+      e.stopImmediatePropagation();
+      e.preventDefault();
+    }
+  }, true);
+  new MutationObserver(function () {
+    if (localStorage.getItem('color-theme') !== themeAtLoad) {
+      if (themeAtLoad === null) localStorage.removeItem('color-theme');
+      else localStorage.setItem('color-theme', themeAtLoad);
+    }
+  }).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
   forceDark();
   new MutationObserver(forceDark).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
 
