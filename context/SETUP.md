@@ -32,8 +32,16 @@ paste them into the right places. Do these in order.
    [005_bioclash_notify.sql](supabase/migrations/005_bioclash_notify.sql),
    [006_bioclash_results.sql](supabase/migrations/006_bioclash_results.sql),
    [007_discussions.sql](supabase/migrations/007_discussions.sql),
-   and [008_discussions_user_id_default.sql](supabase/migrations/008_discussions_user_id_default.sql)
+   [008_discussions_user_id_default.sql](supabase/migrations/008_discussions_user_id_default.sql),
+   and [009_bioclash_attempts.sql](supabase/migrations/009_bioclash_attempts.sql)
    the same way, in that order (SQL Editor -> New query -> paste -> Run).
+   **009 requires the `nishitkalani@gmail.com` account to already exist**
+   (real signup) for its allowlist-seed step to actually insert a row — if
+   it doesn't exist yet, sign up first, then re-run 009 (safe to re-run,
+   `on conflict do nothing`). Without that row, `bioclash-start-attempt`
+   will 403 even the founder's own account, since MB-01 is debug-phase-only
+   (`accessMode: allowlist` in `data/bioclash/mb-01.yaml`) — nobody else is
+   meant to have access yet, by design.
    **008 is a production hotfix — run it before promoting Discussions to real
    users.** Without it, every "Start a discussion" / "Reply" click fails with
    `new row violates row-level security policy for table "discussion_threads"`

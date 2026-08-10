@@ -1,0 +1,190 @@
+# BiOClash Case File MB-01 — Molecular Biology & Biochemistry.
+# Source: BiOGuide-BiOClash-Problem_1_3.docx.
+#
+# SCOPE NOTE (per the implementation plan): this file proves the schema
+# handles both real lock points in the paper (Part A, and Q10.4A/B) end to
+# end. It does NOT yet contain the full 133-mark paper — Parts C, D, and F,
+# and the remainder of Part E, are deliberately left as a follow-up content
+# pass, not bundled into building the delivery mechanism itself. Part B is
+# included with 2 of its 5 statements as a recoverable-block example; add
+# the rest the same way.
+#
+# durationMinutes below is a PLACEHOLDER (240) — confirm the real number
+# before this goes live even in debug.
+
+id: mb-01
+title: "Case File MB-01 — Molecular Biology & Biochemistry"
+season: mb-01
+accessMode: allowlist   # "allowlist" (debug phase, checked against bioclash_paper_access) | "open" (public)
+durationMinutes: 240    # PLACEHOLDER
+totalMarks: 133
+
+parts:
+  - id: part-a
+    name: "PART A — Reconstructing the Timeline"
+    marks: 10
+    blocks:
+      - id: part-a-lock
+        locksAfterSubmit: true
+        reveals: part-a-reveal
+        lockWarning: "Once you proceed past this point, you cannot return and change your answer here."
+        components:
+          - key: workflow-pick
+            type: mcq
+            marks: 2
+            prompt: >
+              Every cell surface is a timeline of its own, and two enforcers are tasked with
+              keeping it clean: RNF43 and ZNRF3. Below are five reconstructions of how the
+              enforcers' actual jurisdiction was tested. Exactly one of the five workflows
+              below (I–V) is the workflow actually used in the published study. Identify the
+              correct workflow.
+            options:
+              - key: "I"
+                text: >
+                  Add RNF43 or ZNRF3 expression constructs into standard wild-type HEK293T
+                  cells, which still carry their own endogenous copies of both genes, and
+                  measure Frizzled down-regulation directly.
+              - key: "II"
+                text: >
+                  In RNF43/ZNRF3 double-knockout HEK293T cells, co-express RNF43 or ZNRF3
+                  with FZD5 or FZD6, then quantify FZD5 and FZD6 mRNA transcript levels,
+                  concluding that whichever ligase produces the larger drop in transcript is
+                  the preferred one.
+              - key: "III"
+                text: >
+                  Generate RNF43/ZNRF3 double-knockout HEK293T cells to remove endogenous
+                  ligase activity. Individually co-express each of the nine testable human
+                  FZD subtypes with RNF43, ZNRF3, or an empty vector, and quantify the ratio
+                  of mature to immature FZD protein by Western blot. Confirm the strongest
+                  hits. Localise the region conferring specificity using chimeric constructs.
+              - key: "IV"
+                text: >
+                  In RNF43/ZNRF3 double-knockout cells, build a single chimera in which both
+                  the extracellular domain and the transmembrane domain of RNF43 are replaced
+                  simultaneously with the corresponding regions of ZNRF3, then test whether
+                  this chimera retains the ability to down-regulate FZD5.
+              - key: "V"
+                text: >
+                  Using public tissue-expression databases and cancer genomics datasets,
+                  conclude that RNF43 prefers FZD5 and ZNRF3 prefers FZD6, based on the
+                  observation that FZD5-dominant tissues show more RNF43 mutations and
+                  FZD6-dominant tissues show more ZNRF3 mutations in tumours.
+            correctKey: "III"
+          - key: flaw-I
+            type: free_text
+            marks: 2
+            prompt: "State, in one sentence, the specific methodological flaw that rules out Workflow I."
+          - key: flaw-II
+            type: free_text
+            marks: 2
+            prompt: "State, in one sentence, the specific methodological flaw that rules out Workflow II."
+          - key: flaw-IV
+            type: free_text
+            marks: 2
+            prompt: "State, in one sentence, the specific methodological flaw that rules out Workflow IV."
+          - key: flaw-V
+            type: free_text
+            marks: 2
+            prompt: "State, in one sentence, the specific methodological flaw that rules out Workflow V."
+      - id: part-a-reveal
+        type: reveal_content
+        content: >
+          **TIMELINE CONFIRMED — THE ENFORCERS' ACTUAL METHOD** (reveal only after completing
+          Part A). Workflow III is the workflow used in the published study (restated in
+          full): Generate RNF43/ZNRF3 double-knockout HEK293T cells to remove endogenous
+          ligase activity. Individually co-express each of the nine testable human FZD
+          subtypes with RNF43, ZNRF3, or an empty vector, and quantify the ratio of mature
+          (surface-trafficked) to immature (ER-retained) FZD protein by Western blot. Confirm
+          the strongest hits (FZD5, FZD6) using pulse-chase surface labelling and flow
+          cytometry. Localise the region conferring specificity using chimeric RNF43/ZNRF3
+          constructs that swap exactly one domain at a time.
+
+  - id: part-b
+    name: "PART B — Reading the Aftermath"
+    marks: 10
+    blocks:
+      - id: part-b-statements
+        locksAfterSubmit: false
+        components:
+          - key: stmt-1
+            type: true_false
+            marks: 2
+            prompt: "RNF43/ZNRF3 exert a negative feedback logic on the WNT signalling pathway."
+            correctValue: true
+          - key: stmt-2
+            type: true_false
+            marks: 2
+            prompt: >
+              Since RNF43 and ZNRF3 perform the same biochemical function, losing either
+              one should produce identical phenotypes in an organism.
+            correctValue: false
+          # stmt-3, stmt-4, stmt-5 — follow-up content pass, same shape.
+
+  - id: part-e
+    name: "PART E — Protein Under the Loom"
+    marks: 45
+    blocks:
+      - id: q10-4a
+        locksAfterSubmit: true
+        reveals: q10-4b-reveal
+        lockWarning: "Once you proceed past this point, you cannot return and change your answer here."
+        components:
+          - key: codon-pick
+            type: mcq
+            marks: 2
+            prompt: >
+              RING domains coordinate two zinc ions via a cross-brace arrangement of conserved
+              cysteine and histidine residues. One such zinc-coordinating residue in RNF43's
+              RING domain is encoded by the codon 5'-UGU-3'. A single-nucleotide substitution
+              (SNP) changes this UGU codon into one of the four codons below. Using the genetic
+              code table in the appendix, and assuming the protein's local structure collapses
+              in proportion to how far the new amino acid's side-chain properties diverge from
+              the original, which substitution is predicted to be LEAST disruptive?
+            options:
+              - key: "1"
+                text: "AUG"
+              - key: "2"
+                text: "UCU"
+              - key: "3"
+                text: "AAU"
+              - key: "4"
+                text: "CAA"
+            correctKey: "2"
+      - id: q10-4b-reveal
+        type: reveal_content
+        content: >
+          The prediction in Q10.4A rests on a simplification that does not hold up well here.
+          The codon in question translates to methionine. The protein's local structure still
+          changes substantially despite this substitution — Q10.4B (below) asks why.
+      - id: part-e-post-reveal
+        locksAfterSubmit: false
+        unlocksAfter: q10-4b-reveal
+        components:
+          - key: q10-4b
+            type: mcq
+            marks: 3
+            prompt: "The protein's local structure still changes substantially despite the UGU→AUG substitution. Why?"
+            options:
+              - key: "1"
+                text: >
+                  Methionine, unlike cysteine, is a hydrophobic amino acid, so placing it at
+                  this position destabilises the RING domain's hydrophobic core.
+              - key: "2"
+                text: >
+                  Although both are sulfur-containing, methionine's thioether sulfur cannot
+                  coordinate zinc the way cysteine's thiol does, and its longer side chain
+                  disrupts the tight packing of the zinc-binding cross-brace — so the fold,
+                  and function, are still compromised.
+              - key: "3"
+                text: >
+                  Methionine's side chain is longer than cysteine's, which increases local
+                  flexibility around the zinc-binding loop and thereby further stabilises it.
+              - key: "4"
+                text: >
+                  Since methionine and cysteine are both classified as sulfur-containing amino
+                  acids, their side chains are functionally interchangeable, so the fold and
+                  function are essentially unaffected.
+            correctKey: "2"
+          # q10-4c, q10-4d(i), q10-4d(ii) — follow-up content pass, same shape.
+          # Remainder of Part E (Q10.1, Q10.2, Q10.3, Q10.5) and all of
+          # Parts C, D, F — follow-up content pass.
