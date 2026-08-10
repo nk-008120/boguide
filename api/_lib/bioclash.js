@@ -30,15 +30,43 @@ function findBlock(paper, blockId) {
   return allBlocks(paper).find((b) => b.id === blockId) || null;
 }
 
-// Every block in the ENTIRE paper EXCEPT any block that is itself the
-// `reveals` target of some other block. That exclusion is the whole point
-// — a reveal-gated block must never be reachable until its gating lock
-// actually fires. Everything else starts visible together, not part by
-// part: ordinary "recoverable" questions (the paper's own term — answerable
-// and revisable at any point) carry no secret-dependent information, so
-// there's no security reason to drip-feed them in; a real timed paper lets
-// you see and navigate the whole thing too, except specifically-locked
-// sections.
+// A block's `reveals` (block ids) and `revealsParts` (part ids) fields may
+// each be a single string or an array — normalise to an array either way.
+function asArray(v) {
+  if (!v) return [];
+  return Array.isArray(v) ? v : [v];
+}
+
+// Every block id that is the `reveals` target of some other block, across
+// the whole paper.
+function gatedBlockIds(paper) {
+  const set = new Set();
+  for (const block of allBlocks(paper)) {
+    for (const id of asArray(block.reveals)) set.add(id);
+  }
+  return set;
+}
+
+// Every part id that is the `revealsParts` target of some other block,
+// across the whole paper.
+function gatedPartIds(paper) {
+  const set = new Set();
+  for (const block of allBlocks(paper)) {
+    for (const id of asArray(block.revealsParts)) set.add(id);
+  }
+  return set;
+}
+
+// Every block in the ENTIRE paper EXCEPT any block that is itself gated —
+// either it's the specific `reveals` target of some other block, or its
+// whole part is the `revealsParts` target of some other block. That
+// exclusion is the whole point — a reveal-gated block must never be
+// reachable until its gating lock actually fires. Everything else starts
+// visible together, not part by part: ordinary "recoverable" questions (the
+// paper's own term — answerable and revisable at any point) carry no
+// secret-dependent information, so there's no security reason to drip-feed
+// them in; a real timed paper lets you see and navigate the whole thing
+// too, except specifically-locked sections.
 //
 // (Two bugs fixed here 2026-08-10, both from the same root cause — this
 // function used to only ever return part 1's blocks:
@@ -50,13 +78,42 @@ function findBlock(paper, blockId) {
 //    ever become reachable — Part B's block isn't the `reveals` target of
 //    anything, so once Part A's reveal appeared, the attempt was
 //    permanently stuck with no way to proceed. This version fixes that by
-//    spanning every part, not just the first.)
+//    spanning every part, not just the first.
+//
+// `revealsParts` was added 2026-08-11 so a single lock — the end of the
+// Data Analysis section — can gate ALL of Part B–F at once (closing the
+// "scroll ahead and read the whole paper" leak: previously every
+// recoverable part was visible from the very start, which included Part
+// B's intro text giving away Part A's non-recoverable answer). A block
+// whose part is bulk-revealed this way still respects its OWN `reveals`
+// gate underneath — e.g. q10-4-rest stays hidden even once Part E at large
+// is revealed, until q10-4a is separately locked.)
 function initialBlocks(paper) {
-  const gatedIds = new Set();
-  for (const block of allBlocks(paper)) {
-    if (block.reveals) gatedIds.add(block.reveals);
+  const gatedIds = gatedBlockIds(paper);
+  const gatedParts = gatedPartIds(paper);
+  return allBlocks(paper).filter((b) => !gatedIds.has(b.id) && !gatedParts.has(b.partId));
+}
+
+// Every block that locking `block` reveals: its own explicit `reveals`
+// target(s), plus every block belonging to any part named in
+// `revealsParts` — except a block that is STILL gated by some OTHER lock's
+// `reveals` (see initialBlocks' comment above; q10-4-rest is the running
+// example). Used by bioclash-lock-block.js so a single lock can hand back
+// more than one newly-visible block.
+function blocksRevealedByLock(paper, block) {
+  const directTargets = new Set(asArray(block.reveals));
+  const partTargets = new Set(asArray(block.revealsParts));
+  if (directTargets.size === 0 && partTargets.size === 0) return [];
+  const gatedIds = gatedBlockIds(paper);
+  const out = [];
+  for (const b of allBlocks(paper)) {
+    if (directTargets.has(b.id)) {
+      out.push(b);
+    } else if (partTargets.has(b.partId) && !gatedIds.has(b.id)) {
+      out.push(b);
+    }
   }
-  return allBlocks(paper).filter((b) => !gatedIds.has(b.id));
+  return out;
 }
 
 // Deterministic per-user shuffle, so the same user always sees the same
@@ -169,6 +226,7 @@ module.exports = {
   allBlocks,
   findBlock,
   initialBlocks,
+  blocksRevealedByLock,
   seededShuffle,
   toClientBlock,
   componentIsCorrect,

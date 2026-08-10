@@ -4410,4 +4410,38 @@ html.dark #bioclash-attempt-report {
   border-left: 3px solid var(--bc-gold);
   background: rgba(201, 151, 31, 0.08);
 }
+
+/* Part-by-part Prev/Next navigation (bioclash-attempt.js renderPartNav) —
+   replaces the old flat, scroll-through-everything layout so a student
+   can't read ahead into a part they haven't earned yet by scrolling past
+   a still-active non-recoverable question. Rendered both above and below
+   each part's questions so it's reachable without a long scroll back up. */
+.bioclash-part-nav {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 0.85rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid var(--bc-border);
+  border-radius: var(--radius-md);
+  background: var(--bc-card-bg);
+}
+.bioclash-part-nav-label {
+  font-family: 'BiOClash Display', Georgia, serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  color: var(--bc-gold);
+  text-align: center;
+  flex: 1;
+}
+.bioclash-part-nav-btn {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+.bioclash-part-nav-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }

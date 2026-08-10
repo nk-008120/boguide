@@ -1,0 +1,16 @@
+Read the attached file.
+ There are many problems with the current exam page and we really need to solve them. Currently, the test-taker can:                        
+    1. Q13,Q14 have formatting errors. Please correct it. Options should be distinguishable.Space them.
+    2. Read through the whole question paper at once. Let me explain how this could be a real problem. Say the user reads the first question, decides to not to lock, scrolls a little down, and finds the sentence : "The other four reconstructions grey out, one line stamped across each. Reconstruction III stays lit. Using the confirmed timeline, evaluate each statement below."  They immediately know and go back to Part A and lock the 3rd option. Seperate parts by previous and next buttons, and students cannot go back to the Part A (non-recoverable part), BUT CAN EASILY SWITCH BETWEEN OTHER PARTS TO RECONSIDER ANSWERS. Also mention the full workflow of the experiment in PART B AGAIN - Workflow III is the workflow used in the published study (restated in full): Generate RNF43/ZNRF3 double-knockout HEK293T cells to remove endogenous ligase activity. Individually co-express each of the nine testable human FZD subtypes with RNF43, ZNRF3, or an empty vector, and quantify the ratio of mature (surface-trafficked) to immature (ER-retained) FZD protein by Western blot. Confirm the strongest hits (FZD5, FZD6) using pulse-chase surface labelling and flow cytometry. Localise the region conferring specificity using chimeric RNF43/ZNRF3 constructs that swap exactly one domain at a time.
+     Note that question 10.4 is also a non recoverable question, but it was supposed to have three parts (due to some bug it only has 1, but it has 3 which are now in /context/Q10.4.txt), Now let me tell you how this non recoverable question should work. When the person fills in the Q10.1, and selects to lock answer, only then do Q10.2-Q10.4 appear right below it. And then the student can proceed to answer those.                                                                      
+    3. Replace Q15's part "A single batch of the finished gRNA plasmid, all identical in base-pair length, separated into multiple topological forms on a gel: supercoiled, linear, nicked/open-circular, and relaxed closed-circular. Rank these four forms from fastest to slowest migration on a standard agarose gel."   With multi option question:
+    "A single batch of the finished gRNA plasmid, all identical in base-pair length, separated into multiple topological forms on a gel: supercoiled (S), linear(L), nicked/open-circular(N), and relaxed closed-circular(RC). Rank these four forms from fastest to slowest migration on a standard agarose gel.
+    A) S>L>RC>N
+    B) L>S>RC>N
+    C) RC>S>L>N
+    D) N>L>RC>S
+    E) N>RC>L>S   
+    /* Correct option is A.
+    4. HOW ARE STUDENTS SUPPOSED TO ANSWER PART B WITHOUT GETTING THE RELEVANT INFORMATION??? So when they lock part A and move on to part B, They should be given Context of the study. 
+    5. We will add a data analysis portion right after part A. These have been summed up in daquestions.md.
+    
