@@ -4096,6 +4096,19 @@ html.dark .discussions-comment {
    page's HTML with JS disabled. */
 #bioclash-attempt-root { position: relative; }
 
+/* Removes the ONLY interactive path to changing the theme while an
+   attempt is active — bioclash-attempt.js adds this body class. Without
+   this, the sitewide theme-toggle button in the navbar would still be
+   clickable here; using it would write a new value to localStorage
+   (assets/js/core/theme.js), silently changing the visitor's theme on
+   every OTHER page too, even though the MutationObserver would keep
+   forcing this one page back to dark regardless. Hiding the control
+   outright is simpler and more certain than trying to intercept every way
+   its click handler could fire. */
+body.bioclash-attempt-active .hextra-theme-toggle {
+  display: none !important;
+}
+
 /* A more dramatic, dedicated background than the sitewide, subtle
    .bioclash-bg-layer watermark (section 15) — that one is tuned for
    showing through ordinary page content across the whole /bioclash/
