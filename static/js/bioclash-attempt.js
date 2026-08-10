@@ -259,6 +259,16 @@
 
     var current = componentValue(block, component.key);
     var input;
+    // Once a block is locked, its answer is final — the inputs must both
+    // show that answer AND refuse further interaction. Previously locked
+    // inputs stayed enabled with nothing checked (componentValue() only
+    // ever read from block.answer, which was never populated locally after
+    // a lock — see the lock button handler below), so a "locked" question
+    // looked blank and toggleable even though clicking it did nothing.
+    // Confusing, not actually insecure. Fixed by (a) the lock handler now
+    // storing the submitted answers onto the local block object, and (b)
+    // disabling every input here whenever the block is locked.
+    var locked = block.status === 'locked';
 
     if (component.type === 'mcq') {
       var optWrap = document.createElement('div');
@@ -271,8 +281,14 @@
         radio.name = block.id + '-' + component.key;
         radio.value = opt.key;
         radio.checked = current === opt.key;
+        radio.disabled = locked;
         label.appendChild(radio);
-        label.appendChild(document.createTextNode(' ' + opt.text));
+        // The option's own key is shown (e.g. "I) ...", "A) ...") so a
+        // follow-up question that refers back to a specific option by key
+        // (e.g. Part A's "the flaw that rules out Workflow I") is
+        // answerable at all — per-user shuffling means display position
+        // alone can't identify which option is which.
+        label.appendChild(document.createTextNode(' ' + opt.key + ') ' + opt.text));
         optWrap.appendChild(label);
       });
       input = optWrap;
@@ -287,6 +303,7 @@
         radio.name = block.id + '-' + component.key;
         radio.value = String(val);
         radio.checked = current === val;
+        radio.disabled = locked;
         label.appendChild(radio);
         label.appendChild(document.createTextNode(' ' + (val ? 'TRUE' : 'FALSE')));
         tfWrap.appendChild(label);
@@ -298,12 +315,14 @@
       input.step = 'any';
       input.className = 'bioclash-numeric-input';
       if (current !== undefined) input.value = current;
+      input.disabled = locked;
     } else {
       // free_text, fill_blank
       input = document.createElement('textarea');
       input.className = 'bioclash-freetext-input';
       input.rows = component.type === 'fill_blank' ? 1 : 3;
       if (current !== undefined) input.value = current;
+      input.disabled = locked;
     }
     wrap.appendChild(input);
     return { el: wrap, input: input };
@@ -415,48 +434,109 @@
     }, 800);
   }
 
-  // Every distinct part currently visible, in the order its blocks first
-  // appear in state.blocks (== paper document order, since the server only
-  // ever appends newly-revealed blocks). Recomputed on every render rather
-  // than cached, since state.blocks grows as locks fire.
-  function partList() {
-    var seen = {};
-    var list = [];
-    state.blocks.forEach(function (block) {
-      if (seen[block.partId]) return;
-      seen[block.partId] = true;
-      list.push({ id: block.partId, name: block.partName, intro: block.partIntro });
+  // A "page" is the pagination unit — usually a whole part, but a part
+  // made ENTIRELY of sequential non-recoverable locks (Part A; the Data
+  // Analysis section) instead gets one page PER BLOCK. Locking one block
+  // in such a part used to just append the newly-revealed block further
+  // down the SAME page, below the now-locked, greyed-out one the student
+  // had just finished with — nothing visibly changed except more content
+  // appearing off-screen, which read as "I locked it and nothing
+  // happened." A reveal_content block never gets a page of its own: it has
+  // no lock button and nothing to interact with, so it's shown as leading
+  // context on whichever real block's page follows it instead (this is
+  // how "Timeline Confirmed" + the regulatory-circuit summary become part
+  // of the Data Analysis Question 2 page rather than an empty stop of
+  // their own).
+  //
+  // Recomputed on every render rather than cached, since state.blocks
+  // grows as locks fire; state.blocks is always in paper document order
+  // (the server only ever appends newly-revealed blocks in that order).
+  function pageList() {
+    var byPart = {};
+    state.blocks.forEach(function (b) { (byPart[b.partId] = byPart[b.partId] || []).push(b); });
+    var chainParts = {};
+    Object.keys(byPart).forEach(function (pid) {
+      chainParts[pid] = byPart[pid].every(function (b) { return b.locksAfterSubmit || b.type === 'reveal_content'; });
     });
-    return list;
+
+    var pages = [];
+    var partSeen = {};
+    var pendingReveals = [];
+    var i = 0;
+    while (i < state.blocks.length) {
+      var block = state.blocks[i];
+      if (chainParts[block.partId]) {
+        if (block.type === 'reveal_content') {
+          pendingReveals.push(block);
+          i++;
+          continue;
+        }
+        var leading = pendingReveals.filter(function (r) { return r.partId === block.partId; });
+        pendingReveals = pendingReveals.filter(function (r) { return r.partId !== block.partId; });
+        pages.push({
+          id: block.id,
+          partId: block.partId,
+          name: block.partName,
+          intro: partSeen[block.partId] ? null : block.partIntro,
+          leading: leading,
+          blocks: [block]
+        });
+        partSeen[block.partId] = true;
+        i++;
+      } else {
+        var pid = block.partId;
+        var group = [];
+        while (i < state.blocks.length && state.blocks[i].partId === pid) {
+          group.push(state.blocks[i]);
+          i++;
+        }
+        pages.push({
+          id: pid,
+          partId: pid,
+          name: block.partName,
+          intro: partSeen[pid] ? null : block.partIntro,
+          leading: [],
+          blocks: group
+        });
+        partSeen[pid] = true;
+      }
+    }
+    return pages;
   }
 
-  // A part is sealed against Prev navigation once you've moved past it if
-  // EVERY block in it requires a non-recoverable lock (Part A; the Data
-  // Analysis section) — not merely contains one, the way Part E contains
-  // Q10.4A among many ordinary recoverable questions. Q10.4A's own answer
-  // is already protected at the block level (a locked block renders
-  // read-only, see below) — sealing all of Part E from navigation on top
-  // of that would break "freely switch between the recoverable parts,"
-  // which is the whole point of this navigation model.
-  function partIsFullyLocked(partId) {
-    var blocksInPart = state.blocks.filter(function (b) { return b.partId === partId; });
-    if (!blocksInPart.length) return false;
-    return blocksInPart.every(function (b) { return b.locksAfterSubmit || b.type === 'reveal_content'; });
+  // A page is sealed against Prev navigation once you've moved past it if
+  // EVERY block on it requires a non-recoverable lock — true for every
+  // per-block chain page (Part A; each Data Analysis step) and false for
+  // an ordinary part-page like Part E, where Q10.4A being non-recoverable
+  // doesn't mean the rest of Part E should stop being freely browsable.
+  // Q10.4A's own answer is protected at the block level regardless (a
+  // locked block renders read-only — see renderComponent()).
+  function pageIsSealed(page) {
+    return page.blocks.every(function (b) { return b.locksAfterSubmit || b.type === 'reveal_content'; });
   }
 
-  function renderPartNav(list, partIdx, session) {
+  function findPageIndexForBlockId(list, blockId) {
+    for (var i = 0; i < list.length; i++) {
+      var page = list[i];
+      if (page.blocks.some(function (b) { return b.id === blockId; })) return i;
+      if (page.leading.some(function (b) { return b.id === blockId; })) return i;
+    }
+    return -1;
+  }
+
+  function renderPartNav(list, pageIdx, session) {
     var nav = document.createElement('div');
     nav.className = 'bioclash-part-nav';
 
     var prevBtn = document.createElement('button');
     prevBtn.type = 'button';
     prevBtn.className = 'papers-nav-btn bioclash-part-nav-btn';
-    prevBtn.textContent = '← Previous Part';
-    var prevTarget = partIdx - 1;
-    var prevDisabled = prevTarget < 0 || partIsFullyLocked(list[prevTarget].id);
+    prevBtn.textContent = '← Previous';
+    var prevTarget = pageIdx - 1;
+    var prevDisabled = prevTarget < 0 || pageIsSealed(list[prevTarget]);
     prevBtn.disabled = prevDisabled;
     prevBtn.title = prevDisabled && prevTarget >= 0
-      ? 'This part is non-recoverable and already behind you.'
+      ? 'This question is non-recoverable and already behind you.'
       : '';
     prevBtn.addEventListener('click', function () {
       state.currentPartIndex = prevTarget;
@@ -465,16 +545,16 @@
 
     var label = document.createElement('span');
     label.className = 'bioclash-part-nav-label';
-    label.textContent = 'Part ' + (partIdx + 1) + ' of ' + list.length + ': ' + (list[partIdx].name || '');
+    label.textContent = 'Page ' + (pageIdx + 1) + ' of ' + list.length + ': ' + (list[pageIdx].name || '');
 
     var nextBtn = document.createElement('button');
     nextBtn.type = 'button';
     nextBtn.className = 'papers-nav-btn bioclash-part-nav-btn';
-    nextBtn.textContent = 'Next Part →';
-    var nextTarget = partIdx + 1;
-    // No special-case logic needed here: the next part simply doesn't
-    // exist in state.blocks yet if it hasn't been earned (server never
-    // sends it), so this is naturally disabled until it has been.
+    nextBtn.textContent = 'Next →';
+    var nextTarget = pageIdx + 1;
+    // No special-case logic needed here: the next page simply doesn't
+    // exist yet if it hasn't been earned (server never sends its block),
+    // so this is naturally disabled until it has been.
     nextBtn.disabled = nextTarget >= list.length;
     nextBtn.addEventListener('click', function () {
       state.currentPartIndex = nextTarget;
@@ -491,11 +571,11 @@
     if (!bodyEl) return;
     bodyEl.innerHTML = '';
 
-    var list = partList();
+    var list = pageList();
     if (!list.length) return;
     if (!state.currentPartIndexSet) {
       // First render this page load (fresh start, or a resume after
-      // refresh): land on the furthest part already reached, not back at
+      // refresh): land on the furthest page already reached, not back at
       // Part A — a refresh shouldn't feel like starting over. Explicit
       // Prev/Next clicks and the auto-advance-on-lock below both set this
       // flag too, so this branch only ever fires once per page load.
@@ -504,23 +584,23 @@
     }
     if (state.currentPartIndex >= list.length) state.currentPartIndex = list.length - 1;
     if (state.currentPartIndex < 0) state.currentPartIndex = 0;
-    var partIdx = state.currentPartIndex;
-    var currentPart = list[partIdx];
+    var pageIdx = state.currentPartIndex;
+    var currentPage = list[pageIdx];
 
-    bodyEl.appendChild(renderPartNav(list, partIdx, session));
+    bodyEl.appendChild(renderPartNav(list, pageIdx, session));
 
     var heading = document.createElement('h3');
     heading.className = 'bioclash-part-heading';
-    heading.textContent = currentPart.name || '';
+    heading.textContent = currentPage.name || '';
     bodyEl.appendChild(heading);
-    if (currentPart.intro) {
+    if (currentPage.intro) {
       var intro = document.createElement('p');
       intro.className = 'bioclash-part-intro';
-      intro.textContent = currentPart.intro;
+      intro.textContent = currentPage.intro;
       bodyEl.appendChild(intro);
     }
 
-    var visibleBlocks = state.blocks.filter(function (b) { return b.partId === currentPart.id; });
+    var visibleBlocks = currentPage.leading.concat(currentPage.blocks);
     visibleBlocks.forEach(function (block) {
       var section = document.createElement('section');
       section.className = 'bioclash-block bioclash-block-' + block.status;
@@ -624,7 +704,19 @@
               return;
             }
             block.status = 'locked';
-            var newPartId = null;
+            // Persist what was actually submitted onto the local block
+            // object — componentValue()/renderComponent() read from
+            // block.answer, and locksAfterSubmit blocks never go through
+            // scheduleDraftSave (which would otherwise have kept it
+            // updated), so without this the just-locked answer would
+            // render as blank on the very next renderBlocks() call below.
+            block.answer = answers;
+            // Track the FIRST newly-added block (in the server's document
+            // order) — a lock can reveal many blocks at once (e.g. the
+            // Data Analysis section's final lock reveals the whole of
+            // Part B–F together), and jumping to whichever one happened
+            // to be pushed last would land on Part F instead of Part B.
+            var firstNewBlockId = null;
             (result.body.revealedBlocks || []).forEach(function (revealed) {
               // Defensive dedup: never add a block id that's already
               // present, even though the real fix is server-side
@@ -632,15 +724,16 @@
               var already = state.blocks.some(function (b) { return b.id === revealed.id; });
               if (already) return;
               state.blocks.push(revealed);
-              if (revealed.partId !== block.partId) newPartId = revealed.partId;
+              if (firstNewBlockId === null) firstNewBlockId = revealed.id;
             });
-            // "Lock & Continue" means continue: if this lock opened up a
-            // whole new part (Part A → Data Analysis, Data Analysis →
-            // Part B–F), jump straight there rather than leaving the
-            // student stranded on a now-fully-locked page with nothing
-            // left to do but hunt for a Next button.
-            if (newPartId) {
-              var newIdx = partList().map(function (p) { return p.id; }).indexOf(newPartId);
+            // "Lock & Continue" means continue: jump straight to wherever
+            // this lock's first newly-revealed block landed, rather than
+            // leaving the student stranded on a now-fully-locked page with
+            // nothing left to do but hunt for a Next button. A no-op when
+            // that block shares the current page (e.g. q10-4a revealing
+            // q10-4-rest onto the same Part E page).
+            if (firstNewBlockId !== null) {
+              var newIdx = findPageIndexForBlockId(pageList(), firstNewBlockId);
               if (newIdx >= 0) state.currentPartIndex = newIdx;
             }
             renderBlocks(session);
@@ -652,7 +745,7 @@
       bodyEl.appendChild(section);
     });
 
-    bodyEl.appendChild(renderPartNav(list, partIdx, session));
+    bodyEl.appendChild(renderPartNav(list, pageIdx, session));
   }
 
   function renderReport(data) {
