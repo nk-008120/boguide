@@ -4107,7 +4107,7 @@ html.dark .discussions-comment {
   z-index: 0;
   pointer-events: none;
   overflow: hidden;
-  background: radial-gradient(ellipse at 50% 20%, rgba(179, 18, 46, 0.22) 0%, rgba(23, 20, 16, 0.96) 55%, #0b0906 100%);
+  background: radial-gradient(ellipse at 50% 15%, rgba(179, 18, 46, 0.16) 0%, rgba(23, 20, 16, 0.97) 45%, #0b0906 100%);
 }
 .bioclash-attempt-glow-bg::before {
   content: '';
@@ -4115,15 +4115,20 @@ html.dark .discussions-comment {
   inset: 0;
   background-image: url('/bioclashlogo-transparent.png');
   background-repeat: no-repeat;
-  background-position: center 16%;
-  background-size: min(55%, 620px);
-  filter: drop-shadow(0 0 35px var(--bc-gold)) drop-shadow(0 0 80px var(--bc-crimson));
-  opacity: 0.5;
-  animation: bioclash-glow-pulse 6s ease-in-out infinite;
+  background-position: center 8%;
+  /* Capped small and pinned near the top — this is a faint emblem behind
+     the header, not something that should ever compete with body text
+     further down the page. Previous version (55%/620px, opacity up to 0.6)
+     was too large and too bright and made text unreadable — fixed
+     2026-08-10 after exactly that report. */
+  background-size: min(28%, 320px);
+  filter: drop-shadow(0 0 25px var(--bc-gold));
+  opacity: 0.18;
+  animation: bioclash-glow-pulse 8s ease-in-out infinite;
 }
 @keyframes bioclash-glow-pulse {
-  0%, 100% { opacity: 0.35; }
-  50% { opacity: 0.6; }
+  0%, 100% { opacity: 0.12; }
+  50% { opacity: 0.22; }
 }
 
 /* Case-file header banner — same copy/hierarchy as the landing page's own
@@ -4158,6 +4163,47 @@ html.dark .discussions-comment {
   letter-spacing: 0.3em;
   color: var(--bc-crimson);
   margin: 0;
+}
+
+/* Solid readability panel for the three main screens (start / live /
+   report). Readability must never depend on how faint the glow background
+   happens to be tuned to at any given moment — these screens get an
+   actually opaque backdrop and an explicit ink color, full stop, not just
+   inherited/assumed contrast. Fixed 2026-08-10: the report screen in
+   particular had no panel at all and was unreadable against the glow. */
+#bioclash-attempt-start,
+#bioclash-attempt-live,
+#bioclash-attempt-report {
+  position: relative;
+  z-index: 1;
+  max-width: 52rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.75rem;
+  border-radius: var(--radius-lg);
+  background: var(--bc-parchment);
+  border: 1px solid var(--bc-border);
+  color: var(--bc-ink) !important;
+}
+html.dark #bioclash-attempt-start,
+html.dark #bioclash-attempt-live,
+html.dark #bioclash-attempt-report {
+  /* Dark mode's --bc-parchment (#171410) is already near-opaque — bump it
+     to fully opaque here specifically, since this panel's whole job is
+     guaranteed contrast, not letting the glow show through underneath. */
+  background: #1c1814;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+#bioclash-attempt-start *,
+#bioclash-attempt-live *,
+#bioclash-attempt-report * {
+  color: inherit;
+}
+#bioclash-attempt-start h1,
+#bioclash-attempt-report h2 {
+  color: var(--bc-gold) !important;
+}
+#bioclash-attempt-report {
+  line-height: 1.7;
 }
 
 /* Per-part heading — dressed as a case-file section stamp rather than a
