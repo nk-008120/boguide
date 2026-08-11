@@ -80,6 +80,8 @@ images: ["/og-bioclash.png"]
     <li><span class="papers-pill bioclash-pill">Format</span> Planning timed, solo rounds — heavily scrutinized and difficult.</li>
     <li><span class="papers-pill bioclash-pill">Scope</span> Aiming to cover the full IBO syllabus.</li>
     <li><span class="papers-pill bioclash-pill">Frequency</span> Planning a full season of subject-focused rounds spread across the year — Molecular Biology &amp; Biochemistry, Animal Anatomy &amp; Physiology, Genetics &amp; Evolution, Plant Anatomy &amp; Physiology, Ecology, Ethology, and Biosystematics — capped off by a Full Syllabus round in the weeks before IBO, with placements across the season aiming to add up to one cumulative season ranking.</li>
+    <li><span class="papers-pill bioclash-pill">Timing</span> Subject rounds are planned to run 90 minutes, with the Full Syllabus round given longer — an optional short extension is planned to be available during an attempt, at a competitive cost rather than as free extra time.</li>
+    <li><span class="papers-pill bioclash-pill">Scoring</span> Planning to rank each round by standardized performance relative to that round's own field, not raw marks — closer to how many real olympiads report results than a simple percentage. Season standing is planned to be a weighted composite across every round, not just an average.</li>
     <li><span class="papers-pill bioclash-pill">Recognition</span> Podium finishers may be recognized with an honorary Junior Partner position at BiOGuide.</li>
   </ul>
 </section>
