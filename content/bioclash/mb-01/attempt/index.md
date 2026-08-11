@@ -50,7 +50,7 @@ layout: "wide"
           <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-extension">
           <span><strong>Extra time has a cost, not a free grant.</strong> If offered, requesting
           additional time affects my standardized ranking for this round — refer to the attatched document at 
-          https://bioguide.world/bioclashmb/scoringref.png. This coefficient may change, but concept remains same.</span>
+          https://bioguide.world/scoringref.png. This coefficient may change, but concept remains same.</span>
         </label></li>
         <li><label class="bioclash-directive-item">
           <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-video">
