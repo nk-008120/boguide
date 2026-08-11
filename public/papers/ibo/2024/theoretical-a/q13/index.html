@@ -333,32 +333,32 @@ Figure 1. The graph shows the effect of increased nutrients on the legumes in st
 <em>Figure 1. The graph shows the effect of increased nutrients on the legumes in steppe field plot study. They had control soil (CTL), as well as soil enriched with N (nitrogen), P (phosphorus), K⁺ (potassium), and combinations of these elements. The top row is the normalized change (NC) after 3 years of treatment, and the bottom row is the NC after 6 years of treatment. Letters represent NC in A) legume cover B) species richness C) biomass of legumes. Black dots represent a statistically significant difference from control. Whiskers stand for the Standard Error of Mean (SEM).</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-a-q13">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Looking at the NK&#43; graphs for legume cover (panel A): BOTH NK&#43; data points (at 3 years AND 6 years) show black dots, meaning both are statistically significant — they show significant effects from control. The statement claims NK&#43; has a NON-significant effect, but the significant black dots directly contradict this. The NK&#43; combination significantly affects legume cover at both time points.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Looking at the NK&#43; graphs for legume cover (panel A): BOTH NK&#43; data points (at 3 years AND 6 years) show black dots, meaning both are statistically significant — they show significant effects from control. The statement claims NK&#43; has a NON-significant effect, but the significant black dots directly contradict this. The NK&#43; combination significantly affects legume cover at both time points.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Potassium coupled with nitrogen has a non-significant effect on legume cover.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. The legume biomass graphs (panel C) at 3 years and 6 years both show generally negative or similar patterns — there is no OPPOSITE response between the two time points. While the magnitudes may differ (effects may strengthen over time, particularly for nitrogen-containing treatments), the direction of response (generally negative for N-containing treatments) is consistent between 3 and 6 years, not opposite.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. The legume biomass graphs (panel C) at 3 years and 6 years both show generally negative or similar patterns — there is no OPPOSITE response between the two time points. While the magnitudes may differ (effects may strengthen over time, particularly for nitrogen-containing treatments), the direction of response (generally negative for N-containing treatments) is consistent between 3 and 6 years, not opposite.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Legume biomass has the opposite response to changes in soil nutrients after 3 years and 6 years of treatment.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Every treatment containing ADDED NITROGEN (N alone, NK&#43;, NP, NPK&#43;) consistently shows NEGATIVE NC values for legume cover, species richness, and biomass. Nitrogen addition reduces legume fitness because legumes&#39; competitive advantage comes from nitrogen fixation — when soil N is enriched externally, non-fixing plants gain equal access to N and outcompete legumes. The fact that N addition consistently HARMS legumes while P and K&#43; alone have less severe effects confirms that steppes are nitrogen-limited ecosystems where legumes thrive by fixing atmospheric N₂.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Every treatment containing ADDED NITROGEN (N alone, NK&#43;, NP, NPK&#43;) consistently shows NEGATIVE NC values for legume cover, species richness, and biomass. Nitrogen addition reduces legume fitness because legumes&#39; competitive advantage comes from nitrogen fixation — when soil N is enriched externally, non-fixing plants gain equal access to N and outcompete legumes. The fact that N addition consistently HARMS legumes while P and K&#43; alone have less severe effects confirms that steppes are nitrogen-limited ecosystems where legumes thrive by fixing atmospheric N₂.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> The graphs support steppe being, in general, a nitrogen-limited ecosystem.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Non-nitrogen-fixing plants do not have the competitive advantage of biological N₂ fixation. In nitrogen-limited steppe soils, they are disadvantaged. When nitrogen is ADDED to the soil, non-fixing plants can now access nitrogen equally with legumes. Therefore, added nitrogen would BENEFIT non-fixing plants — their NC values for cover, richness, and biomass would be POSITIVE in response to nitrogen enrichment. Unlike legumes (which lose their competitive edge), non-fixers would thrive with supplemental nitrogen.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Non-nitrogen-fixing plants do not have the competitive advantage of biological N₂ fixation. In nitrogen-limited steppe soils, they are disadvantaged. When nitrogen is ADDED to the soil, non-fixing plants can now access nitrogen equally with legumes. Therefore, added nitrogen would BENEFIT non-fixing plants — their NC values for cover, richness, and biomass would be POSITIVE in response to nitrogen enrichment. Unlike legumes (which lose their competitive edge), non-fixers would thrive with supplemental nitrogen.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> In analogous graphs for non-nitrogen fixing plants, the NC values for nitrogen-enriched soil will be positive.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -378,8 +378,24 @@ Figure 1. The graph shows the effect of increased nutrients on the legumes in st
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -394,16 +410,32 @@ Figure 1. The graph shows the effect of increased nutrients on the legumes in st
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -411,7 +443,7 @@ Figure 1. The graph shows the effect of increased nutrients on the legumes in st
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -419,8 +451,13 @@ Figure 1. The graph shows the effect of increased nutrients on the legumes in st
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

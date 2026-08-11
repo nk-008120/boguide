@@ -326,32 +326,32 @@ Three-toed sloths (Bradypus sp.), found in South and Central America, spend thei
 <em>Figure 1. Relationships between the three-toed sloth and the organisms living in its fur: algae (Trichophilus spp.), fungi (Ascomycota spp.), and moths (Cryptoses spp.).</em></p>
 <p>Using this information, determine whether the following statements are true or false:</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-1-q46">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="The moths benefit (shelter, transport, a place to lay eggs) but no direct benefit to the sloth from the moths themselves is described — the sloth&#39;s benefit comes indirectly, via the algae the moths help fertilize, which isn&#39;t the same as a direct mutualism between sloth and moth.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="The moths benefit (shelter, transport, a place to lay eggs) but no direct benefit to the sloth from the moths themselves is described — the sloth&#39;s benefit comes indirectly, via the algae the moths help fertilize, which isn&#39;t the same as a direct mutualism between sloth and moth.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> The interaction between the sloth and Cryptoses choloepi moths is mutualism.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Ignoring the algae pathway, the moths and fungi both gain habitat/resources from the sloth&#39;s fur without directly harming or helping the sloth — the textbook definition of commensalism.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Ignoring the algae pathway, the moths and fungi both gain habitat/resources from the sloth&#39;s fur without directly harming or helping the sloth — the textbook definition of commensalism.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Cryptoses choloepi moths and fungi, living in sloth fur, have a commensal relationship with the sloth when the indirect effect on the algae is not taken into consideration.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="The algae are described as serving as a food source for the sloth (a benefit to the sloth) as well as providing camouflage — a mutual benefit, not amensalism (where one party would be harmed or unaffected while gaining nothing).">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="The algae are described as serving as a food source for the sloth (a benefit to the sloth) as well as providing camouflage — a mutual benefit, not amensalism (where one party would be harmed or unaffected while gaining nothing).">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Algae, living on sloth fur, and sloths are amensal.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="The fungi are described as decomposing dead moth bodies and producing nutrition for the algae — a direct benefit flowing from fungi to algae, which is closer to mutualism/resource exchange than one-sided commensalism.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="The fungi are described as decomposing dead moth bodies and producing nutrition for the algae — a direct benefit flowing from fungi to algae, which is closer to mutualism/resource exchange than one-sided commensalism.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Algae and fungi, living in the fur of sloths, have a commensal relationship with each other.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -371,8 +371,24 @@ Three-toed sloths (Bradypus sp.), found in South and Central America, spend thei
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -387,16 +403,32 @@ Three-toed sloths (Bradypus sp.), found in South and Central America, spend thei
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -404,7 +436,7 @@ Three-toed sloths (Bradypus sp.), found in South and Central America, spend thei
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -412,8 +444,13 @@ Three-toed sloths (Bradypus sp.), found in South and Central America, spend thei
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

@@ -326,32 +326,32 @@ The following curves show the effect of substrate concentration on the rate of a
 <em>Rate of reaction vs. substrate concentration. Section 1: the linear, substrate-limited rise of the uninhibited reaction. Section 2: where the uninhibited reaction plateaus at Vmax. Section 3 (dashed): the inhibitor-X curve, which converges on the same plateau as sections 1–2 at high substrate concentration. Section 4 (dash-dot): the inhibitor-Y curve, which plateaus lower and never converges with the uninhibited curve.</em></p>
 <p>Choose whether the following statements about Sections 1, 2, 3, and 4 of the enzymatic reactions are true or false:</p>
 <p><div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-1-q4">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Section 1 is the linear rise where rate increases with substrate concentration — that&#39;s substrate-limited, not enzyme-limited. Enzyme-concentration limitation is what causes the plateau, not the rising part.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Section 1 is the linear rise where rate increases with substrate concentration — that&#39;s substrate-limited, not enzyme-limited. Enzyme-concentration limitation is what causes the plateau, not the rising part.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Section 1 is limited by (or depends on) enzyme concentration.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="At the plateau (Vmax), every enzyme molecule is already saturated with substrate — adding more substrate can&#39;t raise the rate further, only adding more enzyme could. That&#39;s the definition of being enzyme-limited.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="At the plateau (Vmax), every enzyme molecule is already saturated with substrate — adding more substrate can&#39;t raise the rate further, only adding more enzyme could. That&#39;s the definition of being enzyme-limited.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Section 2 is limited by enzyme concentration.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Section 3 still reaches the same plateau as the uninhibited curve once substrate concentration is high enough — the classic signature of competitive inhibition, since enough substrate can out-compete the inhibitor for the active site.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Section 3 still reaches the same plateau as the uninhibited curve once substrate concentration is high enough — the classic signature of competitive inhibition, since enough substrate can out-compete the inhibitor for the active site.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Section 3 is limited by a competitive inhibitor.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Section 4 plateaus at a lower rate and never catches up to the uninhibited curve, even at high substrate — unlike competitive inhibition, more substrate can&#39;t overcome this inhibitor, consistent with it acting somewhere substrate concentration can&#39;t rescue.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Section 4 plateaus at a lower rate and never catches up to the uninhibited curve, even at high substrate — unlike competitive inhibition, more substrate can&#39;t overcome this inhibitor, consistent with it acting somewhere substrate concentration can&#39;t rescue.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Section 4 is limited by an uncompetitive inhibitor.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -371,8 +371,24 @@ The following curves show the effect of substrate concentration on the rate of a
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -387,16 +403,32 @@ The following curves show the effect of substrate concentration on the rate of a
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -404,7 +436,7 @@ The following curves show the effect of substrate concentration on the rate of a
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -412,8 +444,13 @@ The following curves show the effect of substrate concentration on the rate of a
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

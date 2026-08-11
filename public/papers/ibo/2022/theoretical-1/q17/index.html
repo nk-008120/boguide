@@ -339,32 +339,32 @@ Using the information and figures, determine whether the following statements ar
 <em>Six modified plant organs (I–VI): tendrils, thorns, and spines, each arising from either stem or leaf tissue.</em></p>
 <p>Using the information and figures, determine whether the following statements are true or false:</p>
 <p><div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-1-q17">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="IV is a compound-leaf tendril (the terminal leaflets coiling into a tendril, as in pea plants) — a leaf modification, not a shoot one — so grouping it with I and II as &#39;shoot&#39; modifications doesn&#39;t hold.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="IV is a compound-leaf tendril (the terminal leaflets coiling into a tendril, as in pea plants) — a leaf modification, not a shoot one — so grouping it with I and II as &#39;shoot&#39; modifications doesn&#39;t hold.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> I, II, IV are modifications of the shoot.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Both structures originate from leaf tissue (IV&#39;s tendril forms from terminal leaflets; III likewise traces to leaf-derived tissue), consistent with a leaf-modification grouping.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Both structures originate from leaf tissue (IV&#39;s tendril forms from terminal leaflets; III likewise traces to leaf-derived tissue), consistent with a leaf-modification grouping.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> III, IV are modifications of the leaf.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="II, V, and VI collectively trace back to shoot (stem-axis) tissue rather than leaf tissue — see D.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="II, V, and VI collectively trace back to shoot (stem-axis) tissue rather than leaf tissue — see D.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> II, V, VI are modifications of the leaf.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="V in particular is a classic stem thorn (a hardened, leafless branch arising from the stem axis, as in citrus) — consistent with II, V, and VI all being shoot-derived structures.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="V in particular is a classic stem thorn (a hardened, leafless branch arising from the stem axis, as in citrus) — consistent with II, V, and VI all being shoot-derived structures.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> II, V, VI are modifications of the shoot.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -384,8 +384,24 @@ Using the information and figures, determine whether the following statements ar
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -400,16 +416,32 @@ Using the information and figures, determine whether the following statements ar
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -417,7 +449,7 @@ Using the information and figures, determine whether the following statements ar
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -425,8 +457,13 @@ Using the information and figures, determine whether the following statements ar
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

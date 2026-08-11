@@ -338,32 +338,32 @@ Figure 1. Red Deer in the National Park “Kölsay kölderi”.">
 <em>Figure 2. Phylogenetic tree of Red Deer. The numbers on each branch are called bootstrap values. They indicate how many times out of 100 iterations the same branch is observed when repeating the generation of a phylogenetic tree on a resampled set of data. (all the tips with numbers or letters indicate various groups of Cervus elaphus)</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q2">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. The branch grouping Dama dama with the Cervus samples carries a bootstrap value of 89, meaning that grouping was recovered in 89 of the 100 resampled trees. That leaves 100−89 = 11 iterations in which Dama dama was NOT recovered as sister to Cervus, exactly matching the statement.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. The branch grouping Dama dama with the Cervus samples carries a bootstrap value of 89, meaning that grouping was recovered in 89 of the 100 resampled trees. That leaves 100−89 = 11 iterations in which Dama dama was NOT recovered as sister to Cervus, exactly matching the statement.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> In 11 out of 100 bootstrap iterations Dama dama was not a sister group to Cervus spp.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Histone genes are among the most strongly conserved sequences in the genome (histone proteins are under intense purifying selection because they package DNA), so they accumulate far fewer substitutions than mitochondrial DNA. For resolving fine-scale relationships between closely related subspecies, a slower-evolving marker like histone DNA would give less resolution than the already-used, faster-evolving mitochondrial cytochrome b, not better.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Histone genes are among the most strongly conserved sequences in the genome (histone proteins are under intense purifying selection because they package DNA), so they accumulate far fewer substitutions than mitochondrial DNA. For resolving fine-scale relationships between closely related subspecies, a slower-evolving marker like histone DNA would give less resolution than the already-used, faster-evolving mitochondrial cytochrome b, not better.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Using the DNA of histone genes instead of mitochondrial DNA for construction of this phylogenetic tree would allow to better differentiate between deer subspecies.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. The weakest bootstrap value anywhere on the tree is 50. Sample 163 instead sits on a branch supported by a bootstrap value of 69 (per the figure), which is noticeably better supported than the tree&#39;s actual weakest branch — so 163 is not part of the most weakly supported group.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. The weakest bootstrap value anywhere on the tree is 50. Sample 163 instead sits on a branch supported by a bootstrap value of 69 (per the figure), which is noticeably better supported than the tree&#39;s actual weakest branch — so 163 is not part of the most weakly supported group.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Sample 163 is part of the most weakly supported branch in the tree.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. A bootstrap value of 50 just means that branch was recovered in half of the 100 resampled trees — it says nothing about how many distinct alternative arrangements make up the other half. Those other 50 iterations could easily be split across several different alternative topologies rather than converging on one single competing arrangement.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. A bootstrap value of 50 just means that branch was recovered in half of the 100 resampled trees — it says nothing about how many distinct alternative arrangements make up the other half. Those other 50 iterations could easily be split across several different alternative topologies rather than converging on one single competing arrangement.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> A bootstrap value of 50 indicates the existence of only one alternative topology.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -383,8 +383,24 @@ Figure 1. Red Deer in the National Park “Kölsay kölderi”.">
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -399,16 +415,32 @@ Figure 1. Red Deer in the National Park “Kölsay kölderi”.">
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -416,7 +448,7 @@ Figure 1. Red Deer in the National Park “Kölsay kölderi”.">
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -424,8 +456,13 @@ Figure 1. Red Deer in the National Park “Kölsay kölderi”.">
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

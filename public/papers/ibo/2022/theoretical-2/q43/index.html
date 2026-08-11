@@ -31,14 +31,12 @@ In his book &ldquo;The Origin of Species&rdquo;, Darwin recognized that the rela
 By considering the modern understanding of insect evolution, determine whether the following statements are true or false.
 
   
-    
       A. Worker ants are the most numerous members of the colony as they have achieved greatest reproductive success.
       
         TRUE
         FALSE
       
       
-    
     
       B. Worker ants phenotypically resemble their parents, as they carry parental genes.
       
@@ -47,14 +45,12 @@ By considering the modern understanding of insect evolution, determine whether t
       
       
     
-    
       C. As widespread sterility in some insect colonies leads to decreased reproductive success for some individuals, it must have come about due to genetic drift.
       
         TRUE
         FALSE
       
       
-    
     
       D. The colony&#39;s evolutionary fitness depends on the queen&#39;s reproductive success.
       
@@ -379,32 +375,32 @@ A. Worker ants are the most numerous members of the colony as they have achieved
 <p>In his book &ldquo;The Origin of Species&rdquo;, Darwin recognized that the relationships between castes of social insects in the colony can present complications for his theory of natural selection.</p>
 <p>By considering the modern understanding of insect evolution, determine whether the following statements are true or false.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-2-q43">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Workers are typically sterile and do not reproduce directly at all, so their numerical abundance in the colony is not evidence of &#34;reproductive success&#34; — those two things are different; direct reproductive success in the colony belongs to the queen, not the numerous but non-reproducing workers.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Workers are typically sterile and do not reproduce directly at all, so their numerical abundance in the colony is not evidence of &#34;reproductive success&#34; — those two things are different; direct reproductive success in the colony belongs to the queen, not the numerous but non-reproducing workers.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Worker ants are the most numerous members of the colony as they have achieved greatest reproductive success.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Although workers inherit genes from their parents, caste (sterile wingless worker vs. reproductive queen/male) is largely determined by developmental and environmental factors rather than by a direct genotype-to-phenotype match, so carrying parental genes does not mean workers phenotypically resemble their reproductive parents.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Although workers inherit genes from their parents, caste (sterile wingless worker vs. reproductive queen/male) is largely determined by developmental and environmental factors rather than by a direct genotype-to-phenotype match, so carrying parental genes does not mean workers phenotypically resemble their reproductive parents.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Worker ants phenotypically resemble their parents, as they carry parental genes.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Modern kin-selection theory (Hamilton&#39;s rule) explains worker sterility as a product of natural selection — genes that sacrifice a worker&#39;s own reproduction to boost the reproductive success of close relatives can still spread — not as a random, non-adaptive outcome of genetic drift.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Modern kin-selection theory (Hamilton&#39;s rule) explains worker sterility as a product of natural selection — genes that sacrifice a worker&#39;s own reproduction to boost the reproductive success of close relatives can still spread — not as a random, non-adaptive outcome of genetic drift.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> As widespread sterility in some insect colonies leads to decreased reproductive success for some individuals, it must have come about due to genetic drift.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Since workers are largely sterile, the colony&#39;s reproductive output — and thus its evolutionary fitness — is overwhelmingly determined by the reproductive success of the queen (and other reproductive castes), not the non-reproducing worker caste.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Since workers are largely sterile, the colony&#39;s reproductive output — and thus its evolutionary fitness — is overwhelmingly determined by the reproductive success of the queen (and other reproductive castes), not the non-reproducing worker caste.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> The colony&#39;s evolutionary fitness depends on the queen&#39;s reproductive success.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -424,8 +420,24 @@ A. Worker ants are the most numerous members of the colony as they have achieved
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -440,16 +452,32 @@ A. Worker ants are the most numerous members of the colony as they have achieved
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -457,7 +485,7 @@ A. Worker ants are the most numerous members of the colony as they have achieved
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -465,8 +493,13 @@ A. Worker ants are the most numerous members of the colony as they have achieved
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

@@ -332,32 +332,32 @@ The gut microbiome comprises a vast ecosystem of commensal bacteria, archaea, fu
 <em>Figure 2. Mechanisms for four common meningitis-causing bacteria to cross the blood-brain barrier: N. meningitidis, E. coli, Group B Streptococcus (GBS), and S. pneumoniae.</em></p>
 <p>Using the information and figure, determine whether the following statements are true or false:</p>
 <p><div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-1-q23">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="This describes GBS crossing paracellularly by disrupting the tight junctions between brain endothelial cells via its Srr2 adhesin — a documented mechanism for this pathogen.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="This describes GBS crossing paracellularly by disrupting the tight junctions between brain endothelial cells via its Srr2 adhesin — a documented mechanism for this pathogen.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Group B Streptococcus (GBS) bacteria can penetrate by endothelial layer breakdown when serine-rich bacterial protein (Srr2) causes rupture of intercellular connections.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Not every pathogen&#39;s route requires crossing the astrocyte endfeet layer specifically — some cross via infected phagocytes or through other routes that bypass needing to breach that particular layer directly, so &#39;all&#39; overstates it.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Not every pathogen&#39;s route requires crossing the astrocyte endfeet layer specifically — some cross via infected phagocytes or through other routes that bypass needing to breach that particular layer directly, so &#39;all&#39; overstates it.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> All CNS pathogens have to cross an additional layer of BBB formed by the astrocyte endfeet.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="E. coli (a common cause of neonatal meningitis) is documented to cross the BBB via the paracellular route, among others, by disrupting endothelial tight junctions.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="E. coli (a common cause of neonatal meningitis) is documented to cross the BBB via the paracellular route, among others, by disrupting endothelial tight junctions.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> E. coli bacteria can cross paracellularly, causing disruption of intercellular connections.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="S. pneumoniae is known to use both routes — transcellular passage aided by pneumolysin/H2O2-mediated damage, and paracellular passage via junction-targeting interactions — matching the figure&#39;s depiction of multiple mechanisms.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="S. pneumoniae is known to use both routes — transcellular passage aided by pneumolysin/H2O2-mediated damage, and paracellular passage via junction-targeting interactions — matching the figure&#39;s depiction of multiple mechanisms.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Bacteria S. pneumoniae can either enter transcellularly through endothelial monolayer disruptions caused by the bacterial production of pneumolysin and H2O2, or paracellularly via several interactions.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -377,8 +377,24 @@ The gut microbiome comprises a vast ecosystem of commensal bacteria, archaea, fu
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -393,16 +409,32 @@ The gut microbiome comprises a vast ecosystem of commensal bacteria, archaea, fu
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -410,7 +442,7 @@ The gut microbiome comprises a vast ecosystem of commensal bacteria, archaea, fu
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -418,8 +450,13 @@ The gut microbiome comprises a vast ecosystem of commensal bacteria, archaea, fu
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

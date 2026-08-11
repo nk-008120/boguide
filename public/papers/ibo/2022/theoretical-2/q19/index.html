@@ -326,32 +326,32 @@ Mechanically activated channels (MA) transfer physical force into electrical cur
 <em>Figure 1. Left half (panel a): response to hyperosmolarity, recorded in picoamps. Right half (panel b): response to mechanical stretch stimuli, recorded in nanoamps, by patch-clamp recording. Imax is the current peak. Mock cells do not express any of these proteins, while PIEZO1, OSCA1.1 and OSCA1.2 cells were transfected to express the corresponding protein. Lines connect biological replicates.</em></p>
 <p>Use the information and figures to determine whether the statements are true or false.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-2-q19">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Plants express OSCA-family mechanically activated channels, and root growth constantly involves sensing mechanical resistance from soil particles and gravitational forces — MA channels are a plausible and well-supported mechanism for roots detecting and adapting to these physical cues.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Plants express OSCA-family mechanically activated channels, and root growth constantly involves sensing mechanical resistance from soil particles and gravitational forces — MA channels are a plausible and well-supported mechanism for roots detecting and adapting to these physical cues.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> In plants, the MA channels can play a role in adaptation of the roots to the soil environment and gravity.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Panel a shows hyperosmolarity currents in OSCA1.1/OSCA1.2 cells measured in picoamps (tens of pA), while panel b shows their mechanical-stretch currents measured in nanoamps (several nA) — roughly two orders of magnitude larger. So relative to their mechanical response, the hyperosmolarity response is much smaller.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Panel a shows hyperosmolarity currents in OSCA1.1/OSCA1.2 cells measured in picoamps (tens of pA), while panel b shows their mechanical-stretch currents measured in nanoamps (several nA) — roughly two orders of magnitude larger. So relative to their mechanical response, the hyperosmolarity response is much smaller.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> OSCA-expressing cells respond to hyperosmolarity less intensely, as compared to mechanical stimuli.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Panel b shows the mean mechanical-stimulus current for OSCA1.1 (~2 nA) and OSCA1.2 (~4 nA) falling in the same order-of-magnitude range as mPIEZO1 (~3 nA), all clearly elevated above the near-zero Mock control — showing OSCA channels produce a mechanical response comparable in scale to the well-characterized Piezo1 channel.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Panel b shows the mean mechanical-stimulus current for OSCA1.1 (~2 nA) and OSCA1.2 (~4 nA) falling in the same order-of-magnitude range as mPIEZO1 (~3 nA), all clearly elevated above the near-zero Mock control — showing OSCA channels produce a mechanical response comparable in scale to the well-characterized Piezo1 channel.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> OSCA-expressing cells have a similar response to mechanical stimuli as Piezo1 expressing cells.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Panel b shows OSCA1.2-expressing cells generate a mean mechanical current of roughly 4 nA, significantly above the near-zero Mock control (marked ***), so the data clearly show OSCA1.2 does contribute to sensing mechanical stimuli.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Panel b shows OSCA1.2-expressing cells generate a mean mechanical current of roughly 4 nA, significantly above the near-zero Mock control (marked ***), so the data clearly show OSCA1.2 does contribute to sensing mechanical stimuli.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> From the graphs, we can conclude that OSCA 1.2 protein has no role in sensing mechanical stimuli.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -371,8 +371,24 @@ Mechanically activated channels (MA) transfer physical force into electrical cur
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -387,16 +403,32 @@ Mechanically activated channels (MA) transfer physical force into electrical cur
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -404,7 +436,7 @@ Mechanically activated channels (MA) transfer physical force into electrical cur
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -412,8 +444,13 @@ Mechanically activated channels (MA) transfer physical force into electrical cur
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

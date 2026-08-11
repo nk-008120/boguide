@@ -333,32 +333,32 @@ Figure 1. Results showing how the DNA amount in a dividing cell is affected unde
 <em>Figure 1. Results showing how the DNA amount in a dividing cell is affected under indicated conditions (Horizontal X-axis: DNA amount, where 2n represents the DNA content in a non-dividing diploid normal cell. Vertical Y-axis: Cell number).</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q9">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. In the wild-type control histogram, the tallest peak sits at the 2n DNA-content position, which corresponds to cells in G1 (before DNA replication), not G2 (which would show a peak at 4n). The majority of untreated cells are in G1, not G2.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. In the wild-type control histogram, the tallest peak sits at the 2n DNA-content position, which corresponds to cells in G1 (before DNA replication), not G2 (which would show a peak at 4n). The majority of untreated cells are in G1, not G2.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Based on the results, under normal conditions (wild-type, control), cells are mainly in the G2 phase of the cell cycle.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. In wild-type cells treated with Compound X, a new peak appears out at 8n DNA content — a whole-number multiple of the normal 2n diploid content. Accumulating DNA content beyond the normal 4n (G2/M) ceiling like this is the definition of induced polyploidy.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. In wild-type cells treated with Compound X, a new peak appears out at 8n DNA content — a whole-number multiple of the normal 2n diploid content. Accumulating DNA content beyond the normal 4n (G2/M) ceiling like this is the definition of induced polyploidy.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Compound X induces polyploidy.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. In cells deficient for checkpoint kinases A and B, Compound X no longer produces the same 8n polyploid peak seen in wild-type cells — the effect is blunted/altered without functional kinases A and B, showing that Compound X&#39;s polyploidy-inducing effect actually depends on these kinases, not that it happens independently of them.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. In cells deficient for checkpoint kinases A and B, Compound X no longer produces the same 8n polyploid peak seen in wild-type cells — the effect is blunted/altered without functional kinases A and B, showing that Compound X&#39;s polyploidy-inducing effect actually depends on these kinases, not that it happens independently of them.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> The effect caused by compound X is independent of protein kinases A and B.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. It&#39;s the opposite: wild-type cells (which have functional kinases A and B) are the ones that DO accumulate 8n DNA content under Compound X, meaning multiple replication rounds without division are happening WITH kinases A and B present and active — the kinases are needed for that response to occur, not for blocking it. Kinase-deficient cells show a comparatively more normal profile, which is the pattern of kinases A/B enabling, not preventing, the extra replication rounds.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. It&#39;s the opposite: wild-type cells (which have functional kinases A and B) are the ones that DO accumulate 8n DNA content under Compound X, meaning multiple replication rounds without division are happening WITH kinases A and B present and active — the kinases are needed for that response to occur, not for blocking it. Kinase-deficient cells show a comparatively more normal profile, which is the pattern of kinases A/B enabling, not preventing, the extra replication rounds.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Upon treatment with Compound X, protein kinases A and B prevent several rounds of DNA replication within one cell division.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -378,8 +378,24 @@ Figure 1. Results showing how the DNA amount in a dividing cell is affected unde
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -394,16 +410,32 @@ Figure 1. Results showing how the DNA amount in a dividing cell is affected unde
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -411,7 +443,7 @@ Figure 1. Results showing how the DNA amount in a dividing cell is affected unde
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -419,8 +451,13 @@ Figure 1. Results showing how the DNA amount in a dividing cell is affected unde
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

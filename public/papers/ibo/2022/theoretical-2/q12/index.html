@@ -332,32 +332,32 @@ Figure. Cross-section of a plant organ, with structures a, b, and c labeled.">
   </span>
 <em>Figure. Cross-section of a plant organ, with structures a, b, and c labeled.</em></p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-2-q12">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Structure b is the mesophyll tissue filling most of the section, packed with the small dotted inclusions typical of chloroplasts — the site where CO₂ is fixed into sugar via the Calvin cycle.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Structure b is the mesophyll tissue filling most of the section, packed with the small dotted inclusions typical of chloroplasts — the site where CO₂ is fixed into sugar via the Calvin cycle.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> The cells labeled with b capture and assimilate CO2 into sugars.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Space c is an air cavity near the epidermis, not a stomatal pore — water-loss regulation is the job of guard cells flanking a stoma, which aren&#39;t what&#39;s labeled here.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Space c is an air cavity near the epidermis, not a stomatal pore — water-loss regulation is the job of guard cells flanking a stoma, which aren&#39;t what&#39;s labeled here.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> The space labeled with c regulates water loss.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Structure a is a ring of epithelial-type cells around a central empty lumen — the profile of a resin duct, not a vascular bundle. It doesn&#39;t function as a water/nutrient transport conduit at all.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Structure a is a ring of epithelial-type cells around a central empty lumen — the profile of a resin duct, not a vascular bundle. It doesn&#39;t function as a water/nutrient transport conduit at all.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> The structure labeled with a carries water and nutrition to different parts of the plants.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="The ring of secretory cells surrounding a central canal in structure a is characteristic of a conifer resin duct: the epithelial cells lining the canal produce resin, which accumulates in the central space.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="The ring of secretory cells surrounding a central canal in structure a is characteristic of a conifer resin duct: the epithelial cells lining the canal produce resin, which accumulates in the central space.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> The structure labeled with a produces and stores resin.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -377,8 +377,24 @@ Figure. Cross-section of a plant organ, with structures a, b, and c labeled.">
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -393,16 +409,32 @@ Figure. Cross-section of a plant organ, with structures a, b, and c labeled.">
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -410,7 +442,7 @@ Figure. Cross-section of a plant organ, with structures a, b, and c labeled.">
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -418,8 +450,13 @@ Figure. Cross-section of a plant organ, with structures a, b, and c labeled.">
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

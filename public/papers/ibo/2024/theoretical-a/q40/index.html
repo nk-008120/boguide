@@ -330,32 +330,32 @@ In a study examining the behavioral activity of mice and its dependence on feedi
 <em>Figure 2. Recordings of body temperature of the two mice groups fed during the light (A) for 5 days and dark (B) for 7 days phases. The feeding periods are indicated by solid bars on top of the panels. The dark phases are depicted in blue.</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-a-q40">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. From Figure 1, light-fed mice consistently show LOWER locomotor activity than dark-fed mice over weeks (LA &lt; DA). Despite this, light-fed mice consume slightly MORE calories (LC ≥ DC). Less physical activity &#43; same or more caloric intake → energy surplus → weight gain. This metabolic imbalance means light-fed mice are likely to accumulate more body fat and have HIGHER body weight than dark-fed mice, which behave in alignment with their natural (nocturnal) feeding schedule.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. From Figure 1, light-fed mice consistently show LOWER locomotor activity than dark-fed mice over weeks (LA &lt; DA). Despite this, light-fed mice consume slightly MORE calories (LC ≥ DC). Less physical activity &#43; same or more caloric intake → energy surplus → weight gain. This metabolic imbalance means light-fed mice are likely to accumulate more body fat and have HIGHER body weight than dark-fed mice, which behave in alignment with their natural (nocturnal) feeding schedule.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> We can expect light-fed mice to have higher body weight than dark-fed mice.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Mice are NOCTURNAL animals — they are naturally active and feed during the DARK phase. Dark-phase feeding is ALIGNED with the mice&#39;s natural circadian biology. It is LIGHT-PHASE feeding that creates misalignment — forcing the mice to eat during their natural rest period. Therefore, light-time feeding (not night-time/dark-time feeding) is the example of circadian-behavior misalignment. The statement incorrectly labels night-time feeding as misalignment when it is actually the normal/aligned behavior for mice.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Mice are NOCTURNAL animals — they are naturally active and feed during the DARK phase. Dark-phase feeding is ALIGNED with the mice&#39;s natural circadian biology. It is LIGHT-PHASE feeding that creates misalignment — forcing the mice to eat during their natural rest period. Therefore, light-time feeding (not night-time/dark-time feeding) is the example of circadian-behavior misalignment. The statement incorrectly labels night-time feeding as misalignment when it is actually the normal/aligned behavior for mice.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Night-time feeding is an example of circadian-behavior misalignment in mice.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Figure 2 shows body temperature recordings. LIGHT-fed mice (Figure 2A) show a WIDER temperature range than dark-fed mice: before experiment ~36-38°C, during light-time feeding ~34-38°C (range increases to 4°C). DARK-fed mice (Figure 2B) maintain their normal body temperature range without significant widening. Therefore, LIGHT-TIME feeding (not night-time feeding) altered the circadian body temperature range more strongly.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Figure 2 shows body temperature recordings. LIGHT-fed mice (Figure 2A) show a WIDER temperature range than dark-fed mice: before experiment ~36-38°C, during light-time feeding ~34-38°C (range increases to 4°C). DARK-fed mice (Figure 2B) maintain their normal body temperature range without significant widening. Therefore, LIGHT-TIME feeding (not night-time feeding) altered the circadian body temperature range more strongly.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Night-time feeding altered the circadian body temperature range stronger than light-time feeding.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Figure 1 shows that light-fed mice show DECREASING locomotor activity over time, but their CALORIC INTAKE (LC) from approximately mid-week 2 to mid-week 6 remains RELATIVELY STABLE — it does not decrease proportionally with activity. If the reduced activity were CAUSED by reduced calorie intake, we would expect calorie intake to drop simultaneously with activity. Since calorie intake stays relatively stable while activity decreases, the drop in locomotor activity cannot be simply explained by reduced calorie intake.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Figure 1 shows that light-fed mice show DECREASING locomotor activity over time, but their CALORIC INTAKE (LC) from approximately mid-week 2 to mid-week 6 remains RELATIVELY STABLE — it does not decrease proportionally with activity. If the reduced activity were CAUSED by reduced calorie intake, we would expect calorie intake to drop simultaneously with activity. Since calorie intake stays relatively stable while activity decreases, the drop in locomotor activity cannot be simply explained by reduced calorie intake.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> It can be concluded that the decrease in locomotor activity in light-fed mice occurs due to reduced calorie intake.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -375,8 +375,24 @@ In a study examining the behavioral activity of mice and its dependence on feedi
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -391,16 +407,32 @@ In a study examining the behavioral activity of mice and its dependence on feedi
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -408,7 +440,7 @@ In a study examining the behavioral activity of mice and its dependence on feedi
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -416,8 +448,13 @@ In a study examining the behavioral activity of mice and its dependence on feedi
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

@@ -326,32 +326,32 @@ Cas9 is an enzyme utilized in genome engineering, where it cleaves the DNA at si
 <em>Figure 1. A. Repair outcomes of Cas9-mediated DNA cleavage. B. The DNA sequence encoding an N-terminal fragment of the target protein, the gRNA sequence (highlighted in green), and two donor sequences (DN-1 and DN-2) having the desired change highlighted in blue (the sequences highlighted in orange are silent mutations introduced to the Donor sequences) are shown. The trinucleotide highlighted in red is NGG. C. The random mutational outcome (in pink) at the Cas9-mediated cleavage site without supplying donor sequence is represented.</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q29">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. A Cas9-targetable site just needs an NGG sequence adjacent to a 20-nucleotide complementary region, and NGG can occur on either DNA strand. Scanning both strands of the given sequence turns up three NGG-adjacent candidate sites (two on the top strand, one on the bottom strand), not two.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. A Cas9-targetable site just needs an NGG sequence adjacent to a 20-nucleotide complementary region, and NGG can occur on either DNA strand. Scanning both strands of the given sequence turns up three NGG-adjacent candidate sites (two on the top strand, one on the bottom strand), not two.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> There are a total of two Cas9-targetable sites in the given DNA.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. DN-1 keeps the same gRNA-matching sequence and intact NGG as the genomic target, so Cas9 could cut the donor template itself once it&#39;s delivered into the cell (destroying the very template meant to fix the break). DN-2 carries a silent mutation that happens to also disrupt the NGG motif, making DN-2 immune to Cas9 cleavage while still encoding the desired change — a donor that can&#39;t be cut by the same enzyme is the safer, better choice.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. DN-1 keeps the same gRNA-matching sequence and intact NGG as the genomic target, so Cas9 could cut the donor template itself once it&#39;s delivered into the cell (destroying the very template meant to fix the break). DN-2 carries a silent mutation that happens to also disrupt the NGG motif, making DN-2 immune to Cas9 cleavage while still encoding the desired change — a donor that can&#39;t be cut by the same enzyme is the safer, better choice.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> DN-2 is a better choice than DN-1 for introducing the desired mutation.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Mut-2 changes the third (&#34;wobble&#34;) position of its codon, and the genetic code is degenerate specifically at that position — many codons differing only in the third base still encode the same amino acid, so a wobble-position substitution often causes no amino-acid change at all. Mut-3 instead changes the first position of its codon, a position with no such redundancy, so it&#39;s more likely to actually change the amino acid. That makes Mut-3, not Mut-2, the more likely of the two to be deleterious.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Mut-2 changes the third (&#34;wobble&#34;) position of its codon, and the genetic code is degenerate specifically at that position — many codons differing only in the third base still encode the same amino acid, so a wobble-position substitution often causes no amino-acid change at all. Mut-3 instead changes the first position of its codon, a position with no such redundancy, so it&#39;s more likely to actually change the amino acid. That makes Mut-3, not Mut-2, the more likely of the two to be deleterious.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Mutation in Mut-2 is potentially more deleterious than mutation in Mut-3 (find the start codon).</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Mut-1 deletes exactly three bases, removing one whole codon (one amino acid) while keeping every codon after it in the correct reading frame — a relatively contained change. Mut-4 also deletes three bases, but starting from a position that isn&#39;t a multiple of three bases into the frame relative to Mut-1&#39;s deletion, shifting the reading frame for everything downstream — a frameshift scrambles the entire rest of the protein, which is far more disruptive than losing a single amino acid.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Mut-1 deletes exactly three bases, removing one whole codon (one amino acid) while keeping every codon after it in the correct reading frame — a relatively contained change. Mut-4 also deletes three bases, but starting from a position that isn&#39;t a multiple of three bases into the frame relative to Mut-1&#39;s deletion, shifting the reading frame for everything downstream — a frameshift scrambles the entire rest of the protein, which is far more disruptive than losing a single amino acid.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Mutation in Mut-4 is potentially more deleterious than mutation in Mut-1 (find the start codon).</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -371,8 +371,24 @@ Cas9 is an enzyme utilized in genome engineering, where it cleaves the DNA at si
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -387,16 +403,32 @@ Cas9 is an enzyme utilized in genome engineering, where it cleaves the DNA at si
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -404,7 +436,7 @@ Cas9 is an enzyme utilized in genome engineering, where it cleaves the DNA at si
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -412,8 +444,13 @@ Cas9 is an enzyme utilized in genome engineering, where it cleaves the DNA at si
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

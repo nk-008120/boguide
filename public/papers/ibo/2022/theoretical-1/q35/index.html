@@ -330,32 +330,32 @@ Sexual dimorphism is characteristic of the Ninespine stickleback Pungitius pungi
 <em>Figure 2. Ninespine stickleback female. Some adult males also have this coloration.</em></p>
 <p>Using the information and images, determine whether the following statements are true or false:</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-1-q35">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="This describes a sneak-fertilization strategy aimed at deceiving the territorial dark male (getting past his aggression to reach the nest), not at deceiving females themselves — females are the ones being courted, not the target of the deception.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="This describes a sneak-fertilization strategy aimed at deceiving the territorial dark male (getting past his aggression to reach the nest), not at deceiving females themselves — females are the ones being courted, not the target of the deception.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Males resembling females during the breeding season may be an adaptation for tricking females into complacency before they fertilize the eggs that the females have laid in the dark-colored male&#39;s nest.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="The question stem describes these as immature males that haven&#39;t developed breeding coloration — consistent with them not yet being reproductively active in the typical territorial sense.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="The question stem describes these as immature males that haven&#39;t developed breeding coloration — consistent with them not yet being reproductively active in the typical territorial sense.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Males that do not differ in appearance from females are not yet mature, have not acquired a typical coloration of males and cannot yet reproduce.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="This attributes an active reproductive strategy (energy-saving to enable reproduction) to what the stem frames as an immaturity state, not a chosen alternative tactic — contradicts B&#39;s framing that these males aren&#39;t yet capable of reproducing.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="This attributes an active reproductive strategy (energy-saving to enable reproduction) to what the stem frames as an immaturity state, not a chosen alternative tactic — contradicts B&#39;s framing that these males aren&#39;t yet capable of reproducing.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> The absence of sexual dimorphism between the light-colored males and females helps individual males to save energy and participate in reproduction.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="The question stem explicitly states dark males do NOT treat the female-colored males aggressively and tolerate them in the same schools — the opposite of driving them away.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="The question stem explicitly states dark males do NOT treat the female-colored males aggressively and tolerate them in the same schools — the opposite of driving them away.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Dark-colored males are able to distinguish males that are colored like females and drive them away from their nests.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -375,8 +375,24 @@ Sexual dimorphism is characteristic of the Ninespine stickleback Pungitius pungi
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -391,16 +407,32 @@ Sexual dimorphism is characteristic of the Ninespine stickleback Pungitius pungi
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -408,7 +440,7 @@ Sexual dimorphism is characteristic of the Ninespine stickleback Pungitius pungi
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -416,8 +448,13 @@ Sexual dimorphism is characteristic of the Ninespine stickleback Pungitius pungi
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

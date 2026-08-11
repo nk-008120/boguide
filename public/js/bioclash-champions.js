@@ -1,12 +1,18 @@
 /*
  * Renders the BiOClash "Champions" podium from Supabase's
  * bioclash_leaderboard view (supabase/migrations/006_bioclash_results.sql)
- * — a manually-populated results table, not an automated scoring pipeline
- * (BiOClash has no question bank or timed-round system yet). Read-only,
- * same posture as papers-leaderboard-overall.js. The view is ordered
- * newest-result-first; this takes the top row's `season` value as "the
- * current season" and renders only that group, so a future season's
- * results naturally replace the old ones with no code change.
+ * — a manually-populated results table, not an automated scoring pipeline.
+ * Read-only, same posture as papers-leaderboard-overall.js.
+ *
+ * Two modes, both driven by the shortcode's `data-round` attribute (see
+ * layouts/shortcodes/bioclash-champions.html):
+ *  - No round given: takes the top row's `season` value as "the most
+ *    recent round" and renders only that group — a newly concluded round's
+ *    results naturally take over with no code change.
+ *  - round="mb-01" (added 2026-08-11): filters to exactly that round's
+ *    `season` value (case-insensitive), regardless of whether a more
+ *    recent round has since concluded — this is what gives every past
+ *    round its own permanent leaderboard page.
  */
 (function () {
   'use strict';
@@ -14,6 +20,9 @@
   var root = document.getElementById('bioclash-champions-root');
   if (!root) return;
 
+  var roundFilter = (root.getAttribute('data-round') || '').trim();
+
+  var eyebrowEl = document.getElementById('bioclash-champions-eyebrow');
   var statusEl = document.getElementById('bioclash-champions-status');
   var podium = document.getElementById('bioclash-champions-podium');
   var table = document.getElementById('bioclash-champions-table');
@@ -52,7 +61,9 @@
 
   function render(rows) {
     if (!rows.length) {
-      statusEl.textContent = 'Season 1 hasn’t concluded yet — no champions crowned. ' ;
+      statusEl.textContent = roundFilter
+        ? (roundFilter + ' hasn’t concluded yet — no champions crowned. ')
+        : 'No round has concluded yet — no champions crowned. ';
       var link = document.createElement('a');
       link.href = '/bioclash/';
       link.textContent = 'Get notified when it opens →';
@@ -60,7 +71,18 @@
       return;
     }
 
-    var season = rows[0].season;
+    var season;
+    if (roundFilter) {
+      var match = rows.find(function (r) { return (r.season || '').toLowerCase() === roundFilter.toLowerCase(); });
+      if (!match) {
+        statusEl.textContent = roundFilter + ' hasn’t concluded yet — no champions crowned. ';
+        return;
+      }
+      season = match.season;
+    } else {
+      season = rows[0].season;
+    }
+
     var seasonRows = rows.filter(function (r) { return r.season === season; })
       .sort(function (a, b) { return a.placement - b.placement; });
 
@@ -77,8 +99,9 @@
       table.hidden = false;
     }
 
-    statusEl.textContent = season;
-    statusEl.classList.add('bioclash-champions-season-label');
+    if (eyebrowEl) eyebrowEl.textContent = season;
+    statusEl.textContent = '';
+    statusEl.classList.remove('bioclash-champions-season-label');
   }
 
   function load() {

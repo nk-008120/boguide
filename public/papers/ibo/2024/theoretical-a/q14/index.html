@@ -326,32 +326,32 @@ The latitudinal diversity gradient describes a common pattern in the species ric
 <em>Figure 1. A difference in carrying capacity. B difference in diversification rate. C difference in the starting point of diversification. Note that in each graph only one factor is changed.</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-a-q14">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Hypothesis C posits that tropics started diversifying EARLIER than temperate regions (because temperate zones only formed ~45 Mya). If species in the tropics have been evolving for much longer, they would contain species of widely varying ages — very old species that originated long ago AND recently diverged species. Temperate regions, having started later, would have more uniformly young species. This GREATER VARIANCE in species age in tropics compared to the more uniform (younger) age distribution in temperate regions is a direct prediction of and argument for Hypothesis C.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Hypothesis C posits that tropics started diversifying EARLIER than temperate regions (because temperate zones only formed ~45 Mya). If species in the tropics have been evolving for much longer, they would contain species of widely varying ages — very old species that originated long ago AND recently diverged species. Temperate regions, having started later, would have more uniformly young species. This GREATER VARIANCE in species age in tropics compared to the more uniform (younger) age distribution in temperate regions is a direct prediction of and argument for Hypothesis C.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> The higher variance in species age in the tropics compared to temperate regions is an argument supporting the hypothesis C.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Hypothesis C explains the current diversity gradient specifically because of the HEAD START that tropical species had — they diversified before temperate zones existed. If a global catastrophe reset all diversity (wiped out all species), the diversity gradient would subsequently reappear even if both zones started from scratch at the same time, provided that the tropics have higher carrying capacity (Hypothesis A) or faster diversification (Hypothesis B). But if the gradient reappears, it would argue AGAINST Hypothesis C specifically — because Hypothesis C relies on the head-start timing advantage, which a reset would eliminate.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Hypothesis C explains the current diversity gradient specifically because of the HEAD START that tropical species had — they diversified before temperate zones existed. If a global catastrophe reset all diversity (wiped out all species), the diversity gradient would subsequently reappear even if both zones started from scratch at the same time, provided that the tropics have higher carrying capacity (Hypothesis A) or faster diversification (Hypothesis B). But if the gradient reappears, it would argue AGAINST Hypothesis C specifically — because Hypothesis C relies on the head-start timing advantage, which a reset would eliminate.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> The reappearance of the diversity gradient even after the global ecosystem catastrophe would argue against the hypothesis C.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Hypothesis B proposes that tropical regions have a higher DIVERSIFICATION RATE (more speciation relative to extinction). Greater seasonal variation occurs in TEMPERATE regions, not tropics. If greater seasonal variation INCREASED diversification rate, it would increase temperate diversification above tropical — which would REDUCE or reverse the diversity gradient, contradicting Hypothesis B. Thus, finding that seasonal variation increases diversification rate would actually ARGUE AGAINST Hypothesis B (which requires tropics to diversify faster than temperate).">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Hypothesis B proposes that tropical regions have a higher DIVERSIFICATION RATE (more speciation relative to extinction). Greater seasonal variation occurs in TEMPERATE regions, not tropics. If greater seasonal variation INCREASED diversification rate, it would increase temperate diversification above tropical — which would REDUCE or reverse the diversity gradient, contradicting Hypothesis B. Thus, finding that seasonal variation increases diversification rate would actually ARGUE AGAINST Hypothesis B (which requires tropics to diversify faster than temperate).">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Hypothesis B is supported if greater seasonal variation would increase the diversification rate.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. If most temperate taxa can be found in the tropics (but tropical-only taxa exist in large numbers without temperate equivalents), it implies that the tropical biome is the ANCESTRAL source from which all major taxa originated. Temperate taxa are a subset of the tropical diversity — they represent lineages that colonized temperate zones later. This pattern of ecological overlap (tropical taxa containing all temperate taxa plus many more) supports Hypothesis A: tropics have a higher carrying capacity that has supported diversification of all major groups, while temperate regions host only those that could colonize them.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. If most temperate taxa can be found in the tropics (but tropical-only taxa exist in large numbers without temperate equivalents), it implies that the tropical biome is the ANCESTRAL source from which all major taxa originated. Temperate taxa are a subset of the tropical diversity — they represent lineages that colonized temperate zones later. This pattern of ecological overlap (tropical taxa containing all temperate taxa plus many more) supports Hypothesis A: tropics have a higher carrying capacity that has supported diversification of all major groups, while temperate regions host only those that could colonize them.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> The fact that most temperate taxa can be found in the tropics, but not vice versa, supports the hypothesis A.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -371,8 +371,24 @@ The latitudinal diversity gradient describes a common pattern in the species ric
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -387,16 +403,32 @@ The latitudinal diversity gradient describes a common pattern in the species ric
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -404,7 +436,7 @@ The latitudinal diversity gradient describes a common pattern in the species ric
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -412,8 +444,13 @@ The latitudinal diversity gradient describes a common pattern in the species ric
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

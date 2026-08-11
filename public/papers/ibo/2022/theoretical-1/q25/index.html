@@ -330,32 +330,32 @@ Oxytocin is a neuropeptide that plays a crucial role in shaping social relations
 <em>Figure 2. Oxytocin content in urine, relative to creatinine. Black — control, Blue — vocal, Red — tactile. Both physical and speech-only contact raised oxytocin within 15 minutes post-stressor, an effect maintained up to 1 hour post-stressor.</em></p>
 <p>Using the information and figures, determine whether the following statements are true or false:</p>
 <p><div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-1-q25">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="The figure caption itself states cortisol stayed elevated above baseline even an hour after the stressor in the no-contact (control) group specifically — so it doesn&#39;t return fully to starting levels in every group.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="The figure caption itself states cortisol stayed elevated above baseline even an hour after the stressor in the no-contact (control) group specifically — so it doesn&#39;t return fully to starting levels in every group.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> In all groups, cortisol levels rose after the performance, but after an hour they dropped to starting levels.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="The caption describes both physical and voice-only contact raising oxytocin to a similar degree (&#39;both... affected children&#39;s OT levels&#39;), not tactile contact being significantly more potent than vocal contact.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="The caption describes both physical and voice-only contact raising oxytocin to a similar degree (&#39;both... affected children&#39;s OT levels&#39;), not tactile contact being significantly more potent than vocal contact.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Oxytocin levels were significantly higher in the tactile group than in the vocal group, so touch is a more potent stimulus for oxytocin production.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="The data show contact reduces cortisol levels faster/further than no contact — but &#39;eliminates the effects of stress&#39; overstates it; cortisol is reduced, not brought to zero effect, and the oxytocin-cortisol causal link isn&#39;t directly established by this correlational design.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="The data show contact reduces cortisol levels faster/further than no contact — but &#39;eliminates the effects of stress&#39; overstates it; cortisol is reduced, not brought to zero effect, and the oxytocin-cortisol causal link isn&#39;t directly established by this correlational design.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Communication with mothers stimulates the production of oxytocin, which decreases cortisol levels and eliminates the effects of stress.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="The vocal-contact group&#39;s oxytocin rise, measured directly against the control group, is exactly this link — voice-only contact was sufficient to raise oxytocin, a neuropeptide central to social bonding.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="The vocal-contact group&#39;s oxytocin rise, measured directly against the control group, is exactly this link — voice-only contact was sufficient to raise oxytocin, a neuropeptide central to social bonding.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> This study establishes a direct link between voice stimulation and neuropeptides that regulate interpersonal relationships.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -375,8 +375,24 @@ Oxytocin is a neuropeptide that plays a crucial role in shaping social relations
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -391,16 +407,32 @@ Oxytocin is a neuropeptide that plays a crucial role in shaping social relations
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -408,7 +440,7 @@ Oxytocin is a neuropeptide that plays a crucial role in shaping social relations
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -416,8 +448,13 @@ Oxytocin is a neuropeptide that plays a crucial role in shaping social relations
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

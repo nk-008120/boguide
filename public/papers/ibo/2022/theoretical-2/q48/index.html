@@ -326,32 +326,32 @@ The evolution of grape species is closely connected to the historical and cultur
 <em>Figure. Genomic maps of grape cultivars: individual cultivar SNP-landscapes and an overview landscape annotated with geographic regions and the two proposed migration routes of cultivated grapes.</em></p>
 <p>Based on the results, indicate whether the following statements are true or false.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-2-q48">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="The overview SNP-landscape map shows its tallest, most numerous mutation &#34;peaks&#34; concentrated right around the Caucasus and Armenia/Lebanon/Middle Asia labels — a high-diversity signature consistent with these being the ancestral regions where grape cultivation has the longest history.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="The overview SNP-landscape map shows its tallest, most numerous mutation &#34;peaks&#34; concentrated right around the Caucasus and Armenia/Lebanon/Middle Asia labels — a high-diversity signature consistent with these being the ancestral regions where grape cultivation has the longest history.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> The results support the archaeological theory that the cultivation of grapes began in the South Caucasus (Georgia, Armenia) and Barber Mahik (Eastern Anatolia, Northern Lebanon and Syria).</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="The map shows two distinct migration routes (the northern &#34;Greek&#34; route and the southern &#34;Phoenician&#34; route) diverging around a deep blue low-exchange &#34;valley&#34; explicitly labeled the Mediterranean &amp; Black Sea — consistent with that body of water being the barrier that split cultivar evolution into two branches.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="The map shows two distinct migration routes (the northern &#34;Greek&#34; route and the southern &#34;Phoenician&#34; route) diverging around a deep blue low-exchange &#34;valley&#34; explicitly labeled the Mediterranean &amp; Black Sea — consistent with that body of water being the barrier that split cultivar evolution into two branches.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> The main reason for dichotomous branching in the evolution of grape cultivars is the Mediterranean Sea, which is the biggest barrier to genetic exchange.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="The Pyrenees sits at the single deepest, most isolated blue point on the landscape, while the Strait of Gibraltar is drawn as the point where the northern and southern migration routes actually reconnect — making Gibraltar more of a connecting point and the Pyrenees the more substantial barrier.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="The Pyrenees sits at the single deepest, most isolated blue point on the landscape, while the Strait of Gibraltar is drawn as the point where the northern and southern migration routes actually reconnect — making Gibraltar more of a connecting point and the Pyrenees the more substantial barrier.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> The Pyrenees is a greater barrier for plant genetic exchange than the Strait of Gibraltar.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Mencia (Spain) and Mireille (France) are cultivated in geographically distinct regions, so any genetic divergence between them would be allopatric (arising from geographic separation) — sympatric speciation specifically requires divergence without geographic separation, which does not apply here.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Mencia (Spain) and Mireille (France) are cultivated in geographically distinct regions, so any genetic divergence between them would be allopatric (arising from geographic separation) — sympatric speciation specifically requires divergence without geographic separation, which does not apply here.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Genetic differences in Spanish Mencia and French Mireille cultivars can be explained by sympatric speciation.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -371,8 +371,24 @@ The evolution of grape species is closely connected to the historical and cultur
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -387,16 +403,32 @@ The evolution of grape species is closely connected to the historical and cultur
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -404,7 +436,7 @@ The evolution of grape species is closely connected to the historical and cultur
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -412,8 +444,13 @@ The evolution of grape species is closely connected to the historical and cultur
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

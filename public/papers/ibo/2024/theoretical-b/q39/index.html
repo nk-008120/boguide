@@ -354,32 +354,32 @@ A 65-year-old man with increased plasma cholesterol levels presented with severe
 <p><em>Table 1. Thresholds (in respective units of measurement) of pain receptors with and without prostaglandins (PGs).</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q39">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. This patient&#39;s symptoms point to atherosclerosis (plaque buildup narrowing the leg&#39;s arteries, restricting blood flow enough to cause pain on exertion). Statins lower blood cholesterol, slowing further plaque deposition, and aspirin inhibits clot formation, reducing the risk of a plaque triggering an acute blockage — both slow progression of the underlying disease process. Neither drug dissolves or removes plaque that has already formed, so existing arterial narrowing remains; the disease is managed, not cured.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. This patient&#39;s symptoms point to atherosclerosis (plaque buildup narrowing the leg&#39;s arteries, restricting blood flow enough to cause pain on exertion). Statins lower blood cholesterol, slowing further plaque deposition, and aspirin inhibits clot formation, reducing the risk of a plaque triggering an acute blockage — both slow progression of the underlying disease process. Neither drug dissolves or removes plaque that has already formed, so existing arterial narrowing remains; the disease is managed, not cured.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Aspirin and statins can be used to minimize further progression of the condition, but not to completely cure it.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. The pain of intermittent claudication comes from ischemia forcing anaerobic metabolism in the underperfused muscle, dropping local pH below the peripheral chemoreceptors&#39; pain threshold (below pH 6.9). Table 1 shows that this chemoreceptor threshold is identical with or without prostaglandins (both &#39;below 6.9&#39;) — unlike the heat and mechanoreceptor thresholds, which shift substantially when prostaglandins are removed. Since aspirin works by blocking prostaglandin synthesis, and the pH-sensing pathway responsible for this specific pain doesn&#39;t depend on prostaglandins at all, aspirin has little to offer as a painkiller here.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. The pain of intermittent claudication comes from ischemia forcing anaerobic metabolism in the underperfused muscle, dropping local pH below the peripheral chemoreceptors&#39; pain threshold (below pH 6.9). Table 1 shows that this chemoreceptor threshold is identical with or without prostaglandins (both &#39;below 6.9&#39;) — unlike the heat and mechanoreceptor thresholds, which shift substantially when prostaglandins are removed. Since aspirin works by blocking prostaglandin synthesis, and the pH-sensing pathway responsible for this specific pain doesn&#39;t depend on prostaglandins at all, aspirin has little to offer as a painkiller here.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Aspirin is not an efficient painkiller for episodes of intermittent claudication.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Systemic hypertension would be expected to raise pressure throughout the circulation fairly uniformly, but this patient&#39;s pulse pressure is specifically and significantly lower in the affected left leg while remaining normal in the right leg and left arm — a localized deficit, not a systemic one. That pattern points to a local obstruction (an atherosclerotic plaque restricting flow to that one limb), not systemic hypertension.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Systemic hypertension would be expected to raise pressure throughout the circulation fairly uniformly, but this patient&#39;s pulse pressure is specifically and significantly lower in the affected left leg while remaining normal in the right leg and left arm — a localized deficit, not a systemic one. That pattern points to a local obstruction (an atherosclerotic plaque restricting flow to that one limb), not systemic hypertension.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Intermittent claudication is a direct result of systemic hypertension in this patient.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. The passage describes beta-1 blockers as reducing tension in vascular smooth muscle systemically, i.e. acting as vasodilators that lower peripheral resistance and the afterload the heart must pump against. In chronic heart failure, reducing the workload placed on an already-struggling heart is a legitimate, established long-term strategy, so beta-1 blockers could plausibly be used in that scenario.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. The passage describes beta-1 blockers as reducing tension in vascular smooth muscle systemically, i.e. acting as vasodilators that lower peripheral resistance and the afterload the heart must pump against. In chronic heart failure, reducing the workload placed on an already-struggling heart is a legitimate, established long-term strategy, so beta-1 blockers could plausibly be used in that scenario.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> If the patient had a chronic heart failure (reduced pumping ability of the heart), beta-1 blockers might have been used as a long-term treatment.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -399,8 +399,24 @@ A 65-year-old man with increased plasma cholesterol levels presented with severe
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -415,16 +431,32 @@ A 65-year-old man with increased plasma cholesterol levels presented with severe
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -432,7 +464,7 @@ A 65-year-old man with increased plasma cholesterol levels presented with severe
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -440,8 +472,13 @@ A 65-year-old man with increased plasma cholesterol levels presented with severe
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

@@ -326,32 +326,32 @@ The metabolic activity of microbial cells can be measured based on the intracell
 <em>Figure. NAD(P)H fluorescence intensity during the aerobic-anaerobic transition.</em></p>
 <p>Determine whether the following statements are true or false:</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-2-q4">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="The fluorophore in both molecules is the reduced nicotinamide ring; the 2&#39;-phosphate that distinguishes NADPH from NADH sits away from that ring, so their excitation/emission properties are essentially identical. The oxidized forms (NAD⁺/NADP⁺) lack the electron configuration needed to fluoresce.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="The fluorophore in both molecules is the reduced nicotinamide ring; the 2&#39;-phosphate that distinguishes NADPH from NADH sits away from that ring, so their excitation/emission properties are essentially identical. The oxidized forms (NAD⁺/NADP⁺) lack the electron configuration needed to fluoresce.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> The reduced phosphorylated (NADPH) and nonphosphorylated (NADH) pyridine nucleotides have essentially equivalent fluorescence properties while their oxidized forms are non-fluorescent.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="This has the respiratory chain&#39;s role backwards: the chain oxidizes NADH to NAD⁺ (donating electrons to O₂), it doesn&#39;t reduce NAD⁺. Reduction of NAD(P)⁺ happens upstream, in glycolysis and the TCA cycle, not in the respiratory chain itself.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="This has the respiratory chain&#39;s role backwards: the chain oxidizes NADH to NAD⁺ (donating electrons to O₂), it doesn&#39;t reduce NAD⁺. Reduction of NAD(P)⁺ happens upstream, in glycolysis and the TCA cycle, not in the respiratory chain itself.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Under aerobic conditions, the oxidized nucleotides in cells are reduced, e.g., in the respiratory chain, which leads to an equilibrium between the formation and depletion of NAD(P)H.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Switching air sparging to nitrogen sparging removes O₂, the respiratory chain&#39;s final electron acceptor, so it can no longer re-oxidize NADH. NAD(P)H accumulates, producing exactly the step-like jump from FI_AE to FI_AN seen in the figure.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Switching air sparging to nitrogen sparging removes O₂, the respiratory chain&#39;s final electron acceptor, so it can no longer re-oxidize NADH. NAD(P)H accumulates, producing exactly the step-like jump from FI_AE to FI_AN seen in the figure.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> After the sudden alteration from aerobic to anaerobic conditions (AA transition), the microbes are not able to re-oxidize all the reduced NAD(P)H, which can be tracked as an intracellular step-like increase of NAD(P)H fluorescence intensity.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="The stem defines the relative fluorescence increase (ΔFI) during the AA transition as exactly this — a measure of yeast metabolic activity — since a larger jump reflects more active dehydrogenases generating NAD(P)H before the anaerobic block on its re-oxidation.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="The stem defines the relative fluorescence increase (ΔFI) during the AA transition as exactly this — a measure of yeast metabolic activity — since a larger jump reflects more active dehydrogenases generating NAD(P)H before the anaerobic block on its re-oxidation.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Measurements of NAD(P)H fluorescence intensity during AA transition can indicate the increasing metabolic activity of microbes under stress conditions.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -371,8 +371,24 @@ The metabolic activity of microbial cells can be measured based on the intracell
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -387,16 +403,32 @@ The metabolic activity of microbial cells can be measured based on the intracell
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -404,7 +436,7 @@ The metabolic activity of microbial cells can be measured based on the intracell
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -412,8 +444,13 @@ The metabolic activity of microbial cells can be measured based on the intracell
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

@@ -335,32 +335,32 @@ Hepatic architecture of zebrafish (left) vs. human (right), showing bile ducts, 
 <em>Hepatic architecture of zebrafish (left) vs. human (right), showing bile ducts, sinusoids, hepatic artery/vein, central vein, portal triad, hepatocytes, and stellate cells.</em></p>
 <p>Based on the figure, determine whether the following statements are true or false.</p>
 <p><div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-1-q24">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Zebrafish liver lacks the classic hexagonal-lobule architecture of the human liver altogether — its hepatocytes, sinusoids, and ducts are arranged without that same central-vein-and-lobule organization, so the comparison as stated doesn&#39;t hold.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Zebrafish liver lacks the classic hexagonal-lobule architecture of the human liver altogether — its hepatocytes, sinusoids, and ducts are arranged without that same central-vein-and-lobule organization, so the comparison as stated doesn&#39;t hold.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Like the human liver, zebrafish liver is also characterized by a lobular structure where the bile duct is located in the center of each lobule rather than a central vein as in the human liver.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Zebrafish liver vasculature lacks the human liver&#39;s regular, repeating lobular pattern (central vein surrounded by portal triads) — vessels are more irregularly distributed instead.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Zebrafish liver vasculature lacks the human liver&#39;s regular, repeating lobular pattern (central vein surrounded by portal triads) — vessels are more irregularly distributed instead.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> In contrast to human liver, the blood vessels of zebrafish liver are distributed irregularly in the organ.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Both livers share the same core cell types shown — hepatocytes, sinusoidal cells, stellate cells, and bile duct cells — the difference between the two livers is architectural organization, not cell type inventory.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Both livers share the same core cell types shown — hepatocytes, sinusoidal cells, stellate cells, and bile duct cells — the difference between the two livers is architectural organization, not cell type inventory.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> All types of cells in the liver of the zebrafish are also present in the human liver.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="It&#39;s the reverse: blood enters at the portal triad and flows toward the central vein, so periportal hepatocytes are exposed to fresher, more oxygenated blood than pericentral ones, which sit furthest along that gradient.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="It&#39;s the reverse: blood enters at the portal triad and flows toward the central vein, so periportal hepatocytes are exposed to fresher, more oxygenated blood than pericentral ones, which sit furthest along that gradient.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> The hepatocytes of the hexagonal lobules of the human liver differ in oxygen content, with the pericentral cells having a higher oxygen concentration than the periportal cells.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -380,8 +380,24 @@ Hepatic architecture of zebrafish (left) vs. human (right), showing bile ducts, 
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -396,16 +412,32 @@ Hepatic architecture of zebrafish (left) vs. human (right), showing bile ducts, 
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -413,7 +445,7 @@ Hepatic architecture of zebrafish (left) vs. human (right), showing bile ducts, 
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -421,8 +453,13 @@ Hepatic architecture of zebrafish (left) vs. human (right), showing bile ducts, 
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

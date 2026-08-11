@@ -332,32 +332,32 @@ In Figure 1-a, researchers studied the abundance of proteins A, B, and C over ti
 <em>Figure 1. 1-a Y: Protein abundance, X: Time (hours), I: Before adding cycloheximide, II: After adding cycloheximide, A: protein A, B: protein B, C: protein C. 1-b Y: Protein abundance, X: Time after adding cycloheximide (hours), B: protein B, C: protein C, N: control, M: MG132, Q: Chloroquine.</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q11">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Cycloheximide works by blocking translation elongation, shutting synthesis down entirely — once it&#39;s added, any change in protein abundance you observe can only reflect ongoing degradation, since production has been switched off. That makes it a tool for measuring degradation/half-life, not a direct readout of the (now-blocked) synthesis rate.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Cycloheximide works by blocking translation elongation, shutting synthesis down entirely — once it&#39;s added, any change in protein abundance you observe can only reflect ongoing degradation, since production has been switched off. That makes it a tool for measuring degradation/half-life, not a direct readout of the (now-blocked) synthesis rate.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Cycloheximide treatment alone provides direct information on the rate of protein synthesis.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. In Figure 1-a (after cycloheximide, region II), protein C&#39;s curve declines more steeply than protein B&#39;s over the same time window — B stays relatively higher for longer while C drops faster. A faster decline means a shorter half-life, so it&#39;s protein C that has the shorter half-life here, not protein B.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. In Figure 1-a (after cycloheximide, region II), protein C&#39;s curve declines more steeply than protein B&#39;s over the same time window — B stays relatively higher for longer while C drops faster. A faster decline means a shorter half-life, so it&#39;s protein C that has the shorter half-life here, not protein B.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> The half-life of protein B is shorter than the half-life of protein C.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Protein A&#39;s abundance stays completely flat even after cycloheximide is added, meaning cycloheximide isn&#39;t affecting its synthesis at all — but cycloheximide specifically blocks eukaryotic 80S cytosolic ribosomes. The one class of proteins in a human cell made on non-cytosolic (bacterial-type 70S-like) ribosomes are those synthesized inside mitochondria, per the endosymbiotic origin of mitochondrial translation machinery — so protein A&#39;s cycloheximide-insensitivity points to it being a mitochondrially-translated protein.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Protein A&#39;s abundance stays completely flat even after cycloheximide is added, meaning cycloheximide isn&#39;t affecting its synthesis at all — but cycloheximide specifically blocks eukaryotic 80S cytosolic ribosomes. The one class of proteins in a human cell made on non-cytosolic (bacterial-type 70S-like) ribosomes are those synthesized inside mitochondria, per the endosymbiotic origin of mitochondrial translation machinery — so protein A&#39;s cycloheximide-insensitivity points to it being a mitochondrially-translated protein.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Protein A is more likely to be mitochondrial than proteins B and C.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Figure 1-b shows protein B&#39;s abundance is rescued by MG132 (a proteasome inhibitor) but not by chloroquine, while protein C is rescued by chloroquine (a lysosome inhibitor) — meaning B is degraded by cytoplasmic proteasomes and C is degraded via the lysosome. Proteasomes act on cytosolic proteins, while lysosomes commonly degrade proteins taken up from outside the cell (e.g. by endocytosis) — so it is protein C, not protein B, that fits the extracellular-origin profile better.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Figure 1-b shows protein B&#39;s abundance is rescued by MG132 (a proteasome inhibitor) but not by chloroquine, while protein C is rescued by chloroquine (a lysosome inhibitor) — meaning B is degraded by cytoplasmic proteasomes and C is degraded via the lysosome. Proteasomes act on cytosolic proteins, while lysosomes commonly degrade proteins taken up from outside the cell (e.g. by endocytosis) — so it is protein C, not protein B, that fits the extracellular-origin profile better.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Protein B is more likely to be an extracellular protein than protein C.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -377,8 +377,24 @@ In Figure 1-a, researchers studied the abundance of proteins A, B, and C over ti
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -393,16 +409,32 @@ In Figure 1-a, researchers studied the abundance of proteins A, B, and C over ti
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -410,7 +442,7 @@ In Figure 1-a, researchers studied the abundance of proteins A, B, and C over ti
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -418,8 +450,13 @@ In Figure 1-a, researchers studied the abundance of proteins A, B, and C over ti
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

@@ -335,32 +335,32 @@ Root cross-section, split into sectors (a), (b), and (c), each showing a differe
 <em>Root cross-section, split into sectors (a), (b), and (c), each showing a different fungal association: (a) external mantle + hyphae, (b) arbuscules, vesicles, and spores penetrating the cortex, (c) external hyphae with a different branching pattern.</em></p>
 <p>Using the schematic image, determine whether the following statements are true or false.</p>
 <p><div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-1-q18">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Diagram (a) shows fungal hyphae forming an external mantle and Hartig net around the root without penetrating into cortex cells — the defining feature of ectomycorrhiza.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Diagram (a) shows fungal hyphae forming an external mantle and Hartig net around the root without penetrating into cortex cells — the defining feature of ectomycorrhiza.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Diagram (a) shows ectomycorrhiza.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Diagram (b) shows hyphae penetrating into root cortex cells to form arbuscules and vesicles — the defining feature of (arbuscular) endomycorrhiza.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Diagram (b) shows hyphae penetrating into root cortex cells to form arbuscules and vesicles — the defining feature of (arbuscular) endomycorrhiza.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Diagram (b) shows endomycorrhiza.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Diagram (c) shows a pattern intermediate between (a) and (b) — an external hyphal presence combined with some intracellular penetration, matching the mixed ectendomycorrhizal type.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Diagram (c) shows a pattern intermediate between (a) and (b) — an external hyphal presence combined with some intracellular penetration, matching the mixed ectendomycorrhizal type.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Diagram (c) shows ectendomycorrhiza.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="All three diagrams show fungal (mycorrhizal) symbioses — nitrogen-fixing rhizobia are bacteria forming root nodules, a completely different symbiosis not depicted here.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="All three diagrams show fungal (mycorrhizal) symbioses — nitrogen-fixing rhizobia are bacteria forming root nodules, a completely different symbiosis not depicted here.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> One of the diagrams indicates a symbiosis of nitrogen-fixing bacteria and plant.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -380,8 +380,24 @@ Root cross-section, split into sectors (a), (b), and (c), each showing a differe
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -396,16 +412,32 @@ Root cross-section, split into sectors (a), (b), and (c), each showing a differe
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -413,7 +445,7 @@ Root cross-section, split into sectors (a), (b), and (c), each showing a differe
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -421,8 +453,13 @@ Root cross-section, split into sectors (a), (b), and (c), each showing a differe
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

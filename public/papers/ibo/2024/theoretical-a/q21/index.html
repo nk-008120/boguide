@@ -328,32 +328,32 @@ The &lsquo;Out of Africa&rsquo; theory postulates that modern humans originated 
 <em>Figure 1. Average heterozygosity in humans vs distance from East Africa.</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-a-q21">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Higher heterozygosity = MORE genetic diversity = LARGER effective population size (Ne). African populations are closer to East Africa AND have HIGHER heterozygosity (greater diversity). Populations further from East Africa have LOWER heterozygosity (reduced diversity), indicating SMALLER long-term average Ne — they went through successive founder bottlenecks during migration. The statement claims populations further from Africa have larger Ne, which is the opposite of what the figure shows.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Higher heterozygosity = MORE genetic diversity = LARGER effective population size (Ne). African populations are closer to East Africa AND have HIGHER heterozygosity (greater diversity). Populations further from East Africa have LOWER heterozygosity (reduced diversity), indicating SMALLER long-term average Ne — they went through successive founder bottlenecks during migration. The statement claims populations further from Africa have larger Ne, which is the opposite of what the figure shows.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Populations further away from East Africa have larger long-term average effective population sizes.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. In a large effective population (like African populations, which have high Ne and high diversity), natural selection is EFFICIENT — even slightly deleterious mutations will be eliminated because the selection coefficient s is large enough relative to drift (Ne×s &gt; 1). In small Ne populations (like Native Americans with low heterozygosity), genetic drift dominates and deleterious mutations can fix by chance. Therefore, slightly deleterious mutations are MORE likely to be fixed (reach frequency 1) in the smaller American population than in the large African population.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. In a large effective population (like African populations, which have high Ne and high diversity), natural selection is EFFICIENT — even slightly deleterious mutations will be eliminated because the selection coefficient s is large enough relative to drift (Ne×s &gt; 1). In small Ne populations (like Native Americans with low heterozygosity), genetic drift dominates and deleterious mutations can fix by chance. Therefore, slightly deleterious mutations are MORE likely to be fixed (reach frequency 1) in the smaller American population than in the large African population.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> A slightly deleterious mutation is less likely to get fixed (frequency = 1) in the African population compared to the native American population.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. As humans migrated out of Africa, each new population was founded by a small number of individuals from a larger pre-existing population. These founders carried only a subset of the genetic variation present in the source population. Each subsequent migration further reduced diversity — classic serial founder effects. This &#39;sampling bottleneck&#39; at each founding event explains the stepwise reduction in heterozygosity with distance from Africa: each colonization event removed some rare alleles and reduced overall diversity.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. As humans migrated out of Africa, each new population was founded by a small number of individuals from a larger pre-existing population. These founders carried only a subset of the genetic variation present in the source population. Each subsequent migration further reduced diversity — classic serial founder effects. This &#39;sampling bottleneck&#39; at each founding event explains the stepwise reduction in heterozygosity with distance from Africa: each colonization event removed some rare alleles and reduced overall diversity.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> The reduced genetic diversity in non-African populations is likely due to the founder effect.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. DNA polymerase genes are among the most CONSERVED (highly constrained) genes in the genome — mutations in DNA polymerase active sites are almost always lethal. DNA polymerase sequences are nearly identical across all humans (extremely low heterozygosity). Figure 1 shows heterozygosity AVERAGED across the GENOME, reflecting variation in neutral and weakly selected regions. Heterozygosity is highest in highly variable regions (microsatellites, immune system genes, SNPs in non-functional regions). DNA polymerase genes would show near-zero heterozygosity everywhere, not the geographic gradient shown.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. DNA polymerase genes are among the most CONSERVED (highly constrained) genes in the genome — mutations in DNA polymerase active sites are almost always lethal. DNA polymerase sequences are nearly identical across all humans (extremely low heterozygosity). Figure 1 shows heterozygosity AVERAGED across the GENOME, reflecting variation in neutral and weakly selected regions. Heterozygosity is highest in highly variable regions (microsatellites, immune system genes, SNPs in non-functional regions). DNA polymerase genes would show near-zero heterozygosity everywhere, not the geographic gradient shown.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Figure 1 could represent the heterozygosity of DNA polymerase genes.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -373,8 +373,24 @@ The &lsquo;Out of Africa&rsquo; theory postulates that modern humans originated 
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -389,16 +405,32 @@ The &lsquo;Out of Africa&rsquo; theory postulates that modern humans originated 
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -406,7 +438,7 @@ The &lsquo;Out of Africa&rsquo; theory postulates that modern humans originated 
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -414,8 +446,13 @@ The &lsquo;Out of Africa&rsquo; theory postulates that modern humans originated 
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

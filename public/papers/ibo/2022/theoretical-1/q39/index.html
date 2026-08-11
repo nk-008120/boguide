@@ -326,32 +326,32 @@ To understand the molecular mechanisms behind the origins of adaptation during a
 <em>Mutations in asexual and sexual populations of the yeast Saccharomyces cerevisiae, broken down by mutation type (intergenic/synonymous/nonsynonymous) and by All vs. Fixed.</em></p>
 <p>Using the information and analysis, determine whether the following statements are true or false:</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-1-q39">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Mutagenesis itself (mutations arising from replication errors, etc.) is a cellular process that doesn&#39;t depend on the population&#39;s reproductive mode — the raw rate/type of new mutations arising should be similar; what differs downstream is which mutations get fixed.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Mutagenesis itself (mutations arising from replication errors, etc.) is a cellular process that doesn&#39;t depend on the population&#39;s reproductive mode — the raw rate/type of new mutations arising should be similar; what differs downstream is which mutations get fixed.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> The process of mutagenesis is different in asexual and sexual populations.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Neutral mutations, including synonymous ones, can still become fixed by genetic drift alone, in both sexual and asexual populations — &#39;neutral&#39; does not mean &#39;never fixed.&#39;">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Neutral mutations, including synonymous ones, can still become fixed by genetic drift alone, in both sexual and asexual populations — &#39;neutral&#39; does not mean &#39;never fixed.&#39;">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Synonymous mutations are usually neutral and do not get fixed in sexual populations.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="This is what the All-vs-Fixed, asexual-vs-sexual breakdown in the figure is designed to show — the relative proportions of intergenic/synonymous/nonsynonymous mutations differ between the two reproductive modes, especially once selection has acted (the Fixed bars).">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="This is what the All-vs-Fixed, asexual-vs-sexual breakdown in the figure is designed to show — the relative proportions of intergenic/synonymous/nonsynonymous mutations differ between the two reproductive modes, especially once selection has acted (the Fixed bars).">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> The proportion of different mutation types recorded in asexual and sexual populations varies.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Recombination in sexual populations lets beneficial mutations be fixed independently of the rest of the genome they arose in, while asexual populations undergo clonal interference/hitchhiking, fixing whole genetic backgrounds together (selective sweeps) rather than isolating individual useful mutations.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Recombination in sexual populations lets beneficial mutations be fixed independently of the rest of the genome they arose in, while asexual populations undergo clonal interference/hitchhiking, fixing whole genetic backgrounds together (selective sweeps) rather than isolating individual useful mutations.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Due to sexual reproduction, only some useful mutations are fixed in individuals, while in asexual populations their entire &#39;genetic background&#39; is recorded.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -371,8 +371,24 @@ To understand the molecular mechanisms behind the origins of adaptation during a
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -387,16 +403,32 @@ To understand the molecular mechanisms behind the origins of adaptation during a
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -404,7 +436,7 @@ To understand the molecular mechanisms behind the origins of adaptation during a
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -412,8 +444,13 @@ To understand the molecular mechanisms behind the origins of adaptation during a
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

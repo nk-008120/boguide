@@ -335,32 +335,32 @@ Lung volumes of mild, moderate, and severe COPD patients were studied at rest, a
 <em>Figure 2. End-expiratory and end-inspiratory volumes at rest (R), 1/3 Wmax, and 2/3 Wmax. Y — volume % of TLC. Panels T, E, and Z represent three COPD severity groups, not necessarily in mild/moderate/severe order.</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q45">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Panel C shows person 1 has a higher end-expiratory lung volume (EELV) than person 2, meaning person 1&#39;s lungs never fully deflate and always retain some residual positive pressure/volume at the end of a breath out. That chronic partial inflation keeps the inspiratory muscles (like the diaphragm) shortened even at rest, shifting them away from their optimal sarcomere length for force generation (length-tension relationship) — so person 1&#39;s inspiratory muscles generate less force than person 2&#39;s, whose muscles reach a more normal, fully-deflated resting length each cycle.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Panel C shows person 1 has a higher end-expiratory lung volume (EELV) than person 2, meaning person 1&#39;s lungs never fully deflate and always retain some residual positive pressure/volume at the end of a breath out. That chronic partial inflation keeps the inspiratory muscles (like the diaphragm) shortened even at rest, shifting them away from their optimal sarcomere length for force generation (length-tension relationship) — so person 1&#39;s inspiratory muscles generate less force than person 2&#39;s, whose muscles reach a more normal, fully-deflated resting length each cycle.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Inspiratory muscles of person 1 generate lower force than person 2.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Panel B compares mild (L), moderate (M), and severe (S) COPD lung-volume bar charts, and the total bar height (representing TLC) visibly grows larger going from moderate to severe, driven mainly by an expanding residual volume (RV) from air trapping. TLC&#39;s absolute value does increase with COPD severity, not just the relative proportions within a fixed total, contradicting the statement.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Panel B compares mild (L), moderate (M), and severe (S) COPD lung-volume bar charts, and the total bar height (representing TLC) visibly grows larger going from moderate to severe, driven mainly by an expanding residual volume (RV) from air trapping. TLC&#39;s absolute value does increase with COPD severity, not just the relative proportions within a fixed total, contradicting the statement.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> In severe COPD compared to moderate, TLC does not increase, only the volume proportions of it change.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE, matching the official key. Reading Figure 2&#39;s end-inspiratory/end-expiratory volume markers correctly (solid line = end-inspiratory volume, dashed line = end-expiratory volume, with the paired arrows showing tidal volume and reserve capacity) and matching those values against the lung-volume changes established in Figure 1B gives the assignment panel T = severe, panel Z = moderate, panel E = mild — the reverse mapping of what the statement proposes for T and E (Z does happen to land correctly on moderate by coincidence, but T and E are swapped).">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE, matching the official key. Reading Figure 2&#39;s end-inspiratory/end-expiratory volume markers correctly (solid line = end-inspiratory volume, dashed line = end-expiratory volume, with the paired arrows showing tidal volume and reserve capacity) and matching those values against the lung-volume changes established in Figure 1B gives the assignment panel T = severe, panel Z = moderate, panel E = mild — the reverse mapping of what the statement proposes for T and E (Z does happen to land correctly on moderate by coincidence, but T and E are swapped).">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> In Figure 2, panel T corresponds to mild, Z to moderate, and E to severe cases of COPD</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Figure 1C&#39;s Y-axis (the pressure-volume curve, plotted against percent of vital capacity) represents vital capacity specifically, which by definition excludes residual volume (VC = TLC − RV). Since the graph&#39;s volume axis doesn&#39;t include RV at all, no comparison of RV between person 1 and person 2 can actually be read off this figure — the statement draws a conclusion the data shown don&#39;t support.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Figure 1C&#39;s Y-axis (the pressure-volume curve, plotted against percent of vital capacity) represents vital capacity specifically, which by definition excludes residual volume (VC = TLC − RV). Since the graph&#39;s volume axis doesn&#39;t include RV at all, no comparison of RV between person 1 and person 2 can actually be read off this figure — the statement draws a conclusion the data shown don&#39;t support.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> According to Figure 1C, person 2 has higher RV than person 1.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -380,8 +380,24 @@ Lung volumes of mild, moderate, and severe COPD patients were studied at rest, a
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -396,16 +412,32 @@ Lung volumes of mild, moderate, and severe COPD patients were studied at rest, a
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -413,7 +445,7 @@ Lung volumes of mild, moderate, and severe COPD patients were studied at rest, a
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -421,8 +453,13 @@ Lung volumes of mild, moderate, and severe COPD patients were studied at rest, a
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

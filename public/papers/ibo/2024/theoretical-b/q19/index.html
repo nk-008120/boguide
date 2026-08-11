@@ -326,32 +326,32 @@ Honeybees like Apis cerana (Ac) and Apis mellifera (Am) defend against hornets (
 <em>Figure 1. A Graphs show the proportion of surviving hornets over time. p &lt; 0.05 indicates statistical significance. B Body mass, venom mass, and stinger length for three species.</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q19">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Reading Figure 1B, V. velutina&#39;s (Vv) body mass is roughly 280 mg and its venom mass is roughly 5.2 mg. That works out to (5.2/280)×100 ≈ 1.9%, clearly below the claimed 2.6-2.8% range.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Reading Figure 1B, V. velutina&#39;s (Vv) body mass is roughly 280 mg and its venom mass is roughly 5.2 mg. That works out to (5.2/280)×100 ≈ 1.9%, clearly below the claimed 2.6-2.8% range.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Venom mass is 2.6-2.8% of V. velutina&#39;s body mass.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Even the &#34;no sting (control)&#34; condition — where no bee stings at all, just heat — already reduces hornet survival somewhat at 44°C (that curve dips below 1.0 with p=0.004), simply from the heat-ball effect alone. Since Amdef bees can still generate heat (they just can&#39;t sting), the same heat-only killing effect seen in the control condition would still apply to Amdef bees, so they aren&#39;t entirely incapable of killing any hornets.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Even the &#34;no sting (control)&#34; condition — where no bee stings at all, just heat — already reduces hornet survival somewhat at 44°C (that curve dips below 1.0 with p=0.004), simply from the heat-ball effect alone. Since Amdef bees can still generate heat (they just can&#39;t sting), the same heat-only killing effect seen in the control condition would still apply to Amdef bees, so they aren&#39;t entirely incapable of killing any hornets.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Amdef bees can&#39;t kill any attacking V. velutina.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Amdef bees can generate heat but cannot sting, while wild-type A. cerana can do both simultaneously (Ac single sting panel, which combines heat and venom). Since real stinging bees achieve much faster, more complete hornet kill curves than heat alone could plausibly produce, Amdef bees (heat-only) would be expected to underperform full wild-type A. cerana, not match it.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Amdef bees can generate heat but cannot sting, while wild-type A. cerana can do both simultaneously (Ac single sting panel, which combines heat and venom). Since real stinging bees achieve much faster, more complete hornet kill curves than heat alone could plausibly produce, Amdef bees (heat-only) would be expected to underperform full wild-type A. cerana, not match it.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Amdef bees kill hornets as efficiently as the A. cerana species.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Comparing the &#34;Ac single sting&#34; and &#34;Am single sting&#34; panels at 44°C, both curves end up at a similarly low final hornet-survival level (around 0.1) by 180 minutes, with statistically significant reductions in both cases (p&lt;0.0001) — the two species&#39; 44°C sting conditions converge to essentially the same final kill outcome over 3 hours, not a clear A. cerana advantage.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Comparing the &#34;Ac single sting&#34; and &#34;Am single sting&#34; panels at 44°C, both curves end up at a similarly low final hornet-survival level (around 0.1) by 180 minutes, with statistically significant reductions in both cases (p&lt;0.0001) — the two species&#39; 44°C sting conditions converge to essentially the same final kill outcome over 3 hours, not a clear A. cerana advantage.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Over 3 hours at 44°C, the same number of A. cerana bees can kill more hornets than A. mellifera bees.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -371,8 +371,24 @@ Honeybees like Apis cerana (Ac) and Apis mellifera (Am) defend against hornets (
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -387,16 +403,32 @@ Honeybees like Apis cerana (Ac) and Apis mellifera (Am) defend against hornets (
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -404,7 +436,7 @@ Honeybees like Apis cerana (Ac) and Apis mellifera (Am) defend against hornets (
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -412,8 +444,13 @@ Honeybees like Apis cerana (Ac) and Apis mellifera (Am) defend against hornets (
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

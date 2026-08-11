@@ -31,14 +31,12 @@ The C4 Rice Project aims to introduce C4 photosynthetic traits into rice, Oryza 
 Choose whether the following statements are true or false:
 
   
-    
       A. The modified C4 rice plants will have both altered biochemical and developmental pathways.
       
         TRUE
         FALSE
       
       
-    
     
       B. The enzyme Rubisco will be non-functional in modified C4 rice plants.
       
@@ -47,14 +45,12 @@ Choose whether the following statements are true or false:
       
       
     
-    
       C. C4 rice plants must have smaller stomatal pore size to decrease rates of transpiration and increase photosynthetic water use efficiency.
       
         TRUE
         FALSE
       
       
-    
     
       D. Genes for decarboxylase enzymes will need to be introduced into the C4 rice plants.
       
@@ -379,32 +375,32 @@ A. The modified C4 rice plants will have both altered biochemical and developmen
 <p>The C4 Rice Project aims to introduce C4 photosynthetic traits into rice, <em>Oryza sativa</em>, a C3 species.</p>
 <p>Choose whether the following statements are true or false:</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-2-q14">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Converting rice to C4 needs new biochemistry (PEP carboxylase, decarboxylases, coordinated cell-specific expression) and new development (Kranz anatomy — enlarged, chloroplast-differentiated bundle sheath cells), so both dimensions must change.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Converting rice to C4 needs new biochemistry (PEP carboxylase, decarboxylases, coordinated cell-specific expression) and new development (Kranz anatomy — enlarged, chloroplast-differentiated bundle sheath cells), so both dimensions must change.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> The modified C4 rice plants will have both altered biochemical and developmental pathways.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="C4 photosynthesis doesn&#39;t eliminate Rubisco — it concentrates CO₂ around it in the bundle sheath cells so it works more efficiently with less photorespiration. Rubisco remains essential and fully functional.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="C4 photosynthesis doesn&#39;t eliminate Rubisco — it concentrates CO₂ around it in the bundle sheath cells so it works more efficiently with less photorespiration. Rubisco remains essential and fully functional.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> The enzyme Rubisco will be non-functional in modified C4 rice plants.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="C4 plants gain water-use efficiency from their CO₂-concentrating biochemistry allowing lower stomatal conductance for the same carbon gain, not from anatomically smaller stomatal pores — the C4 Rice Project targets the concentrating mechanism, not stomatal pore size.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="C4 plants gain water-use efficiency from their CO₂-concentrating biochemistry allowing lower stomatal conductance for the same carbon gain, not from anatomically smaller stomatal pores — the C4 Rice Project targets the concentrating mechanism, not stomatal pore size.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> C4 rice plants must have smaller stomatal pore size to decrease rates of transpiration and increase photosynthetic water use efficiency.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="The C4 cycle depends on a bundle-sheath-localized decarboxylase (e.g. NADP-malic enzyme) to release CO₂ from the transported C4 acid near Rubisco. Rice lacks this bundle-sheath decarboxylase activity, so the corresponding genes need to be introduced and correctly targeted.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="The C4 cycle depends on a bundle-sheath-localized decarboxylase (e.g. NADP-malic enzyme) to release CO₂ from the transported C4 acid near Rubisco. Rice lacks this bundle-sheath decarboxylase activity, so the corresponding genes need to be introduced and correctly targeted.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Genes for decarboxylase enzymes will need to be introduced into the C4 rice plants.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -424,8 +420,24 @@ A. The modified C4 rice plants will have both altered biochemical and developmen
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -440,16 +452,32 @@ A. The modified C4 rice plants will have both altered biochemical and developmen
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -457,7 +485,7 @@ A. The modified C4 rice plants will have both altered biochemical and developmen
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -465,8 +493,13 @@ A. The modified C4 rice plants will have both altered biochemical and developmen
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

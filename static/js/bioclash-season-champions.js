@@ -60,10 +60,10 @@
 
   function render(rows) {
     if (!rows.length) {
-      statusEl.textContent = 'No season standings yet — check back once a round has concluded. ';
+      statusEl.textContent = 'No season standings yet — be the first to claim a spot. To get your name here, ';
       var link = document.createElement('a');
-      link.href = '/bioclash/';
-      link.textContent = 'Get notified when it opens →';
+      link.href = '/account/?next=/papers/leaderboard/';
+      link.textContent = 'register for BiOClash Season 1 →';
       statusEl.appendChild(link);
       return;
     }

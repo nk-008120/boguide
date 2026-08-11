@@ -337,32 +337,32 @@ Three adjacent plant cells: top cell −1200 kPa, bottom-left cell −800 kPa, b
   </span>
 <em>Four candidate diagrams (1–4), each showing a different combination of arrow directions for water movement between the top, bottom-left, and bottom-right cells.</em></p>
 <p><div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-1-q14">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Water moves from higher (less negative) to lower (more negative) water potential — every arrow in Figure 1 runs the wrong way between the −800 kPa, −1000 kPa, and −1200 kPa cells.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Water moves from higher (less negative) to lower (more negative) water potential — every arrow in Figure 1 runs the wrong way between the −800 kPa, −1000 kPa, and −1200 kPa cells.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Figure 1 correctly depicts the direction of water movement due to osmosis.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Figure 2 gets one of the three arrows pointing correctly toward the more negative cell, but not all of them — since not every arrow is consistent with water moving toward lower water potential, the figure as a whole is incorrect.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Figure 2 gets one of the three arrows pointing correctly toward the more negative cell, but not all of them — since not every arrow is consistent with water moving toward lower water potential, the figure as a whole is incorrect.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Figure 2 correctly depicts the direction of water movement due to osmosis.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="This is the official key&#39;s call. Water should move from −800 kPa toward −1200 kPa and from −1000 kPa toward −1200 kPa, and from −800 kPa toward −1000 kPa — we found this figure&#39;s arrows genuinely difficult to reconcile arrow-by-arrow with that rule from the scanned diagram, so treat the official TRUE as authoritative rather than our own worked derivation here.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="This is the official key&#39;s call. Water should move from −800 kPa toward −1200 kPa and from −1000 kPa toward −1200 kPa, and from −800 kPa toward −1000 kPa — we found this figure&#39;s arrows genuinely difficult to reconcile arrow-by-arrow with that rule from the scanned diagram, so treat the official TRUE as authoritative rather than our own worked derivation here.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Figure 3 correctly depicts the direction of water movement due to osmosis.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="This is the official key&#39;s call, reproduced as-is — our own reading of Figure 4&#39;s arrows (all pointing toward the most negative cell) looked consistent with correct water-potential-driven flow, which is the opposite of what FALSE implies, so this one is worth checking against the original paper rather than trusting our explanation.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="This is the official key&#39;s call, reproduced as-is — our own reading of Figure 4&#39;s arrows (all pointing toward the most negative cell) looked consistent with correct water-potential-driven flow, which is the opposite of what FALSE implies, so this one is worth checking against the original paper rather than trusting our explanation.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Figure 4 correctly depicts the direction of water movement due to osmosis.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -382,8 +382,24 @@ Three adjacent plant cells: top cell −1200 kPa, bottom-left cell −800 kPa, b
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -398,16 +414,32 @@ Three adjacent plant cells: top cell −1200 kPa, bottom-left cell −800 kPa, b
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -415,7 +447,7 @@ Three adjacent plant cells: top cell −1200 kPa, bottom-left cell −800 kPa, b
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -423,8 +455,13 @@ Three adjacent plant cells: top cell −1200 kPa, bottom-left cell −800 kPa, b
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

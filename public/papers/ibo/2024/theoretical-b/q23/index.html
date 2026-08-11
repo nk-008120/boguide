@@ -330,32 +330,32 @@ Sometimes a formation of multicellular, organized structures can be observed in 
 <em>Figure 2. Ace2 gene region sequencing results; U - unknown.</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q23">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. The ACE2 mutant cells clump into large multicellular clusters (Figure 1A, panel H) instead of separating into single cells like wild-type (panel G). Larger, denser clumps settle out of suspension faster than individual free-floating cells, so it&#39;s the mutant culture that should settle faster, not the wild-type.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. The ACE2 mutant cells clump into large multicellular clusters (Figure 1A, panel H) instead of separating into single cells like wild-type (panel G). Larger, denser clumps settle out of suspension faster than individual free-floating cells, so it&#39;s the mutant culture that should settle faster, not the wild-type.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> When subjected to identical incubation conditions, wild-type yeast cultures exhibit a faster settling rate compared to mutant yeast cultures.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. The Figure 2 sequencing trace for strain 8 shows one extra adenine inserted into the poly-A run compared to strain 1 — a single-base insertion shifts the reading frame downstream, a frameshift mutation. And in the cross grid (Figure 1B), every cross involving strain 8 (a blue/wild-type-labeled strain in that grid) with the red mutant strains still gave unicellular (S) offspring, the wild-type phenotype — meaning the mutant allele doesn&#39;t dominate over wild-type in a heterozygote, i.e. it&#39;s recessive.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. The Figure 2 sequencing trace for strain 8 shows one extra adenine inserted into the poly-A run compared to strain 1 — a single-base insertion shifts the reading frame downstream, a frameshift mutation. And in the cross grid (Figure 1B), every cross involving strain 8 (a blue/wild-type-labeled strain in that grid) with the red mutant strains still gave unicellular (S) offspring, the wild-type phenotype — meaning the mutant allele doesn&#39;t dominate over wild-type in a heterozygote, i.e. it&#39;s recessive.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> The mutation in the yeast strain 8 causes a frameshift and is recessive.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. The unknown trace (U) shows overlapping, double peaks starting right around the poly-A run — exactly what you&#39;d expect from a heterozygous diploid carrying one strain-1-length allele and one strain-8-length (one-adenine-longer) allele superimposed in the same sequencing read. That heterozygous signature is consistent with U being offspring of a strain 1 × strain 8 cross.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. The unknown trace (U) shows overlapping, double peaks starting right around the poly-A run — exactly what you&#39;d expect from a heterozygous diploid carrying one strain-1-length allele and one strain-8-length (one-adenine-longer) allele superimposed in the same sequencing read. That heterozygous signature is consistent with U being offspring of a strain 1 × strain 8 cross.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> The unknown sequencing sample in Figure 2 may be the offspring of a cross between strains 1 and 8.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. CTS1 expression is sharply reduced in the ACE2 mutant strains (Figure 1C), and those same mutants fail specifically at separating mother and daughter cells after division — division itself still happens, cells just stay physically joined. That points to CTS1&#39;s product acting late, at the final cell-wall-splitting step of division, rather than at an earlier stage like DNA replication or spindle formation.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. CTS1 expression is sharply reduced in the ACE2 mutant strains (Figure 1C), and those same mutants fail specifically at separating mother and daughter cells after division — division itself still happens, cells just stay physically joined. That points to CTS1&#39;s product acting late, at the final cell-wall-splitting step of division, rather than at an earlier stage like DNA replication or spindle formation.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> The product of the CTS1 gene likely plays an important role in the final stages of cell division rather than in the initial stages.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -375,8 +375,24 @@ Sometimes a formation of multicellular, organized structures can be observed in 
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -391,16 +407,32 @@ Sometimes a formation of multicellular, organized structures can be observed in 
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -408,7 +440,7 @@ Sometimes a formation of multicellular, organized structures can be observed in 
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -416,8 +448,13 @@ Sometimes a formation of multicellular, organized structures can be observed in 
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

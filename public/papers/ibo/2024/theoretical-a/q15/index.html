@@ -364,32 +364,32 @@ Figure 1. Walker Circulation.">
 </table>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-a-q15">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Under neutral Walker Circulation, the Western Pacific has warm surface water and moist rising air, leading to high precipitation and cloud cover in the western tropical Pacific. This higher rainfall supports lush vegetation and higher terrestrial ecosystem productivity in the Western Pacific region. In the Eastern Pacific, cold, dry air descends, limiting precipitation and terrestrial productivity. Therefore, Western Pacific terrestrial ecosystems ARE more productive than Eastern Pacific under neutral/normal conditions.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Under neutral Walker Circulation, the Western Pacific has warm surface water and moist rising air, leading to high precipitation and cloud cover in the western tropical Pacific. This higher rainfall supports lush vegetation and higher terrestrial ecosystem productivity in the Western Pacific region. In the Eastern Pacific, cold, dry air descends, limiting precipitation and terrestrial productivity. Therefore, Western Pacific terrestrial ecosystems ARE more productive than Eastern Pacific under neutral/normal conditions.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> In neutral Walker Circulation, the Western Pacific has higher terrestrial ecosystem productivity than the Eastern Pacific.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. The increase in Australian red kangaroos in 1988 was likely caused by LA NIÑA, not El Niño. La Niña strengthens the Walker Circulation, causing increased rainfall in the Western Pacific (including Australia&#39;s interior and eastern regions). More rainfall means more plant growth and better food availability for kangaroos, leading to population increase. El Niño brings DROUGHT to Australia (western Pacific dries out), which would DECREASE kangaroo populations, not increase them.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. The increase in Australian red kangaroos in 1988 was likely caused by LA NIÑA, not El Niño. La Niña strengthens the Walker Circulation, causing increased rainfall in the Western Pacific (including Australia&#39;s interior and eastern regions). More rainfall means more plant growth and better food availability for kangaroos, leading to population increase. El Niño brings DROUGHT to Australia (western Pacific dries out), which would DECREASE kangaroo populations, not increase them.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Increase in the number of red kangaroos in 1988 was potentially caused by El Niño.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. During El Niño, easterly trade winds weaken and warm water spreads east. In the ITCZ, wind-driven upwelling DECREASES because the winds are weaker. Less upwelling means less nutrient-rich deep water reaching the surface — resulting in LOWER phytoplankton productivity (C2 would show blue/low productivity). C1 (pre-El Niño) would show higher red/productive values. Therefore C2 is the El Niño year (low upwelling, low productivity) and C1 is the pre-El Niño year (higher upwelling, higher productivity). The statement has the assignment backwards.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. During El Niño, easterly trade winds weaken and warm water spreads east. In the ITCZ, wind-driven upwelling DECREASES because the winds are weaker. Less upwelling means less nutrient-rich deep water reaching the surface — resulting in LOWER phytoplankton productivity (C2 would show blue/low productivity). C1 (pre-El Niño) would show higher red/productive values. Therefore C2 is the El Niño year (low upwelling, low productivity) and C1 is the pre-El Niño year (higher upwelling, higher productivity). The statement has the assignment backwards.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> C1 shows pre-El Niño year and C2 is El Niño year.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Changes in Year Y in the Great Salt Lake data correspond to an influx of corixids (invasive freshwater predators) that decimated native grazers, leading to a collapse in grazer diversity and abundance. This ecological cascade was triggered by changes in SALINITY of the lake — specifically a decrease in salinity caused by increased precipitation over North America. Increased precipitation over North America (including Utah) is associated with EL NIÑO, not La Niña. Therefore, Year Y changes are associated with El Niño effects, not La Niña.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Changes in Year Y in the Great Salt Lake data correspond to an influx of corixids (invasive freshwater predators) that decimated native grazers, leading to a collapse in grazer diversity and abundance. This ecological cascade was triggered by changes in SALINITY of the lake — specifically a decrease in salinity caused by increased precipitation over North America. Increased precipitation over North America (including Utah) is associated with EL NIÑO, not La Niña. Therefore, Year Y changes are associated with El Niño effects, not La Niña.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Changes during year Y are probably caused by La Niña.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -409,8 +409,24 @@ Figure 1. Walker Circulation.">
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -425,16 +441,32 @@ Figure 1. Walker Circulation.">
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -442,7 +474,7 @@ Figure 1. Walker Circulation.">
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -450,8 +482,13 @@ Figure 1. Walker Circulation.">
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

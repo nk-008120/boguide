@@ -326,32 +326,32 @@ Mating and male-to-male fighting in Gryllus bimaculatus are influenced by mating
 *Figure 1. A Female weight influence on mating outcome: copulated (1) and not copulated (2). B Body weight difference influence on male fighting outcomes: male winning (1) and male losing (2); median – solid line, boxes show 25% and 75% quartiles, <em>p &lt; 0.05. C Three hypothetical relationships between female fitness and the number of matings. Line 3 shows a system with an idealized relationship between female fitness and the number of matings. D G. bimaculatus.</em></p>
 <p>On your answer sheet, indicate if the following statements are True (T) or False (F) based on the data provided.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q20">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Figure 1A shows the copulated group (1) has a HIGHER median female weight than the not-copulated group (2) — heavier females were more often the ones that successfully mated, which is the opposite relationship to what the statement claims.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Figure 1A shows the copulated group (1) has a HIGHER median female weight than the not-copulated group (2) — heavier females were more often the ones that successfully mated, which is the opposite relationship to what the statement claims.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> The lighter the female, the more chances of being inseminated.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Figure 1B&#39;s body-weight-difference boxplots show the winning-male group (1) has a higher median body weight difference than the losing-male group (2), meaning on average the male with the greater weight advantage was the one who came out on top of the fight — heavier males tend to win male-male contests.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Figure 1B&#39;s body-weight-difference boxplots show the winning-male group (1) has a higher median body weight difference than the losing-male group (2), meaning on average the male with the greater weight advantage was the one who came out on top of the fight — heavier males tend to win male-male contests.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> During male-to-male fights the heavier one on average wins more often.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Nothing in the given data establishes any relationship between how long copulation lasts and how much sperm gets transferred or depleted — the study measures mating occurrence and fighting outcomes, not copulation duration or ejaculate volume, so treating duration as a validated proxy for sperm-depletion cost is not something this data supports.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Nothing in the given data establishes any relationship between how long copulation lasts and how much sperm gets transferred or depleted — the study measures mating occurrence and fighting outcomes, not copulation duration or ejaculate volume, so treating duration as a validated proxy for sperm-depletion cost is not something this data supports.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Measurement of copulation duration is a good indicator of mating cost in terms of sperm depletion.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Type 1 in Figure 1C shows fitness rising with number of matings before leveling off, and since (per Figure 1A) heavier/larger females are the ones more likely to secure matings, smaller females would be expected to accumulate fewer matings — under a type-1 relationship where more matings still means more fitness (before the plateau), fewer matings for smaller females translates directly into lower fitness compared to larger females.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Type 1 in Figure 1C shows fitness rising with number of matings before leveling off, and since (per Figure 1A) heavier/larger females are the ones more likely to secure matings, smaller females would be expected to accumulate fewer matings — under a type-1 relationship where more matings still means more fitness (before the plateau), fewer matings for smaller females translates directly into lower fitness compared to larger females.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> If we assume that female of species G. bimaculatus displays a type 1 fitness-mating relationship (Figure 1C), then smaller females will have lower fitness compared to large-sized ones.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -371,8 +371,24 @@ Mating and male-to-male fighting in Gryllus bimaculatus are influenced by mating
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -387,16 +403,32 @@ Mating and male-to-male fighting in Gryllus bimaculatus are influenced by mating
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -404,7 +436,7 @@ Mating and male-to-male fighting in Gryllus bimaculatus are influenced by mating
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -412,8 +444,13 @@ Mating and male-to-male fighting in Gryllus bimaculatus are influenced by mating
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

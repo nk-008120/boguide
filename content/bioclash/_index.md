@@ -5,6 +5,7 @@ images: ["/og-bioclash.png"]
 ---
 
 <div id="bioclash-root" class="bioclash-page">
+<div class="bioclash-landing-bg" aria-hidden="true"></div>
 
 <div id="bioclash-curtains" class="bioclash-curtains" role="button" tabindex="0" aria-label="Click, or press Enter, to raise the curtain and reveal BiOClash">
   <div class="bioclash-curtain-valance" aria-hidden="true"></div>
@@ -68,13 +69,13 @@ images: ["/og-bioclash.png"]
   </div>
 </section>
 
-<section class="bioclash-section">
+<section class="bioclash-section bioclash-panel">
   <h2>What it is</h2>
   <p>BiOClash is an original biology competition — not a translated IBO/USABO paper archive like BiOrchive, but questions written and reviewed by BiOGuide itself. It's the one part of this site where the content is genuinely ours, not a licensed reproduction.</p>
   <p>Right now, it's still being built. Here's what we're planning, and how to hear the moment it's ready.</p>
 </section>
 
-<section class="bioclash-section">
+<section class="bioclash-section bioclash-panel">
   <h2>What's being planned</h2>
   <ul class="bioclash-planning-list">
     <li><span class="papers-pill bioclash-pill">Format</span> Planning timed, solo rounds — heavily scrutinized and difficult.</li>
@@ -86,17 +87,17 @@ images: ["/og-bioclash.png"]
   </ul>
 </section>
 
-<section class="bioclash-section">
+<section class="bioclash-section bioclash-panel">
   <h2>Why it exists</h2>
   <p>Plenty of biology competitions already exist — but most are institutional, expensive to access, or slow to modernize. BiOGuide itself runs on the same principles as everything else here: <a href="/about/">non-commercial, built by students, for students</a>. BiOClash is that same approach applied to the competition format itself, not just notes and papers.</p>
 </section>
 
-<section class="bioclash-section">
+<section class="bioclash-section bioclash-panel">
   <h2>Get involved</h2>
   <p>BiOClash is green-field — nothing is set in stone yet. If you'd want to help design questions, write rounds, or shape the format, this is one of the most open-ended ways to join as a Content Reviewer or Partner. Reach out: <a href="mailto:resourcerepository4boguide@gmail.com">resourcerepository4boguide@gmail.com</a>.</p>
 </section>
 
-<section id="bioclash-notify-section" class="bioclash-section bioclash-notify-section">
+<section id="bioclash-notify-section" class="bioclash-section bioclash-panel bioclash-notify-section">
   <h2>Get notified</h2>
   <div id="bioclash-notify" class="bioclash-notify" data-next="/bioclash/">
     <p class="bioclash-notify-msg">Loading…</p>
@@ -107,3 +108,4 @@ images: ["/og-bioclash.png"]
 </div>
 
 <script src="/js/papers-bioclash.js" defer></script>
+<script src="/js/bioclash-landing-theme.js" defer></script>

@@ -327,32 +327,32 @@ Identifying new applications for approved drugs outside of the scope of their or
 <em>Figure 1. Evaluation of Infliximab&rsquo;s effect on UC, CD, COPD, and sarcoidosis. (A) Global transcriptome summary heatmap with identified potentially therapeutically relevant gene clusters — spots (A, D, F, T, U, V, X). (B) Drug- and disease-spot perturbation heatmap. (C) Quantitative analysis of spot expression profiles.</em></p>
 <p>Based on these results, determine whether the following statements are true or false.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-2-q46">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Spot U is upregulated in UC, CD and sarcoidosis in the perturbation map, and the &#34;drug responders vs. baseline&#34; row shows spot U being downregulated by Infliximab treatment — an opposing (antagonistic) shift that reverses the disease-associated upregulation.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Spot U is upregulated in UC, CD and sarcoidosis in the perturbation map, and the &#34;drug responders vs. baseline&#34; row shows spot U being downregulated by Infliximab treatment — an opposing (antagonistic) shift that reverses the disease-associated upregulation.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Spot U&#39;s expression, which was upregulated in UC, CD, and sarcoidosis, can be antagonistically targeted by Infliximab.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Spot F is upregulated in the UC-vs-healthy comparison, and it is also one of the few spots showing a colored (non-white) cell in the &#34;drug responders vs. non-responders&#34; row — meaning its expression differs specifically between patients who do and don&#39;t respond to Infliximab.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Spot F is upregulated in the UC-vs-healthy comparison, and it is also one of the few spots showing a colored (non-white) cell in the &#34;drug responders vs. non-responders&#34; row — meaning its expression differs specifically between patients who do and don&#39;t respond to Infliximab.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Spot F, which was upregulated in UC, is associated with response to infliximab.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Checking each spot against the four disease-vs-healthy rows: A and D are perturbed in UC, F in UC, T and V and X in sarcoidosis, and U in UC, CD and sarcoidosis — every one of the seven spots (A, D, F, T, U, V, X) has at least one colored cell in a disease row.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Checking each spot against the four disease-vs-healthy rows: A and D are perturbed in UC, F in UC, T and V and X in sarcoidosis, and U in UC, CD and sarcoidosis — every one of the seven spots (A, D, F, T, U, V, X) has at least one colored cell in a disease row.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Expression perturbation in each of the studied spots is associated with at least one disease from the experiment.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="The &#34;UC vs. healthy&#34; row in the perturbation map shows both spot A and spot D as downregulated (dark blue), directly matching the statement.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="The &#34;UC vs. healthy&#34; row in the perturbation map shows both spot A and spot D as downregulated (dark blue), directly matching the statement.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> UC is characterized by downregulation of spots A and D.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -372,8 +372,24 @@ Identifying new applications for approved drugs outside of the scope of their or
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -388,16 +404,32 @@ Identifying new applications for approved drugs outside of the scope of their or
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -405,7 +437,7 @@ Identifying new applications for approved drugs outside of the scope of their or
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -413,8 +445,13 @@ Identifying new applications for approved drugs outside of the scope of their or
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

@@ -331,32 +331,32 @@ In the first experiment, the late-stage tadpoles of native South American and in
 <em>Figure: A, B — Graphs of movement of tadpoles in the aquarium (A – South American, B – Australian). Horizontal axis – time, vertical axis – the proportion of tadpoles. White circles – tadpoles swimming towards clean water, black circles – tadpoles swimming towards larvae. C — the proportion of larvae cannibalized; D — duration of the pre-feeding stages determined in separate aquariums, one with clean water (control), the other with late-stage larvae (experimental). Solid lines: p &lt; 0.05.</em></p>
 <p>Using the information and the figures above, determine which of the statements are true or which are false.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-2-q40">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Panel A shows French Guiana (South American) tadpoles trapped at similar rates in the clean-water control trap and the hatchling-baited trap (roughly 35-40% each), showing no strong preference for clean water over water containing potential prey.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Panel A shows French Guiana (South American) tadpoles trapped at similar rates in the clean-water control trap and the hatchling-baited trap (roughly 35-40% each), showing no strong preference for clean water over water containing potential prey.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> South American tadpoles prefer clean water.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Panel C shows a higher proportion of cannibalized larvae in the Australian population than the South American one, and panel B shows a strong, consistent attraction to hatchlings (~85% trapped) in the invasive population, together indicating cannibalism is a reliable, established feeding strategy there.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Panel C shows a higher proportion of cannibalized larvae in the Australian population than the South American one, and panel B shows a strong, consistent attraction to hatchlings (~85% trapped) in the invasive population, together indicating cannibalism is a reliable, established feeding strategy there.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Cannibalism has been reported more frequently in the Australian toad population than in the South American population, becoming a stable form of feeding behavior.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Panel D shows the Australian population&#39;s pre-feeding stage duration decreasing significantly (solid lines, p&lt;0.05) when exposed to late-stage tadpoles that would cannibalize them — consistent with faster development having evolved as a defense against the higher cannibalism pressure in the invasive population.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Panel D shows the Australian population&#39;s pre-feeding stage duration decreasing significantly (solid lines, p&lt;0.05) when exposed to late-stage tadpoles that would cannibalize them — consistent with faster development having evolved as a defense against the higher cannibalism pressure in the invasive population.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> In the Australian population, the early larval stage has been significantly reduced in duration, which can be seen as an adaptation to avoid cannibalism.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Panel D marks the French Guiana comparison with dashed lines (not statistically significant) while the Australian comparison uses solid lines (p&lt;0.05) — so a reliable decrease in pre-feeding duration is only established for the Australian population, not for both.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Panel D marks the French Guiana comparison with dashed lines (not statistically significant) while the Australian comparison uses solid lines (p&lt;0.05) — so a reliable decrease in pre-feeding duration is only established for the Australian population, not for both.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> A decrease in the duration of the early larval stage was observed in the experimental groups of both South American and Australian toads.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -376,8 +376,24 @@ In the first experiment, the late-stage tadpoles of native South American and in
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -392,16 +408,32 @@ In the first experiment, the late-stage tadpoles of native South American and in
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -409,7 +441,7 @@ In the first experiment, the late-stage tadpoles of native South American and in
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -417,8 +449,13 @@ In the first experiment, the late-stage tadpoles of native South American and in
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

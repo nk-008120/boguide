@@ -328,32 +328,32 @@ A scientist in a lab is investigating two types of calcium channels in pancreati
 <em>Figure 1. Calcium concentration under different conditions. A - control, B - inhibitor X, C - inhibitor Y, D - 30mM K+, E - calcium concentration (a.u.), F - time (mins). (cell media before D is applied: 2mM Ca2+, 5mM K+, low glucose)</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q4">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Raising extracellular K&#43; to 30 mM collapses the normal outward K&#43; gradient across the plasma membrane, which depolarizes the cell — and Figure 1 shows a sharp calcium spike right after the 30 mM K&#43; addition (point D), consistent with depolarization opening voltage-gated calcium channels.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Raising extracellular K&#43; to 30 mM collapses the normal outward K&#43; gradient across the plasma membrane, which depolarizes the cell — and Figure 1 shows a sharp calcium spike right after the 30 mM K&#43; addition (point D), consistent with depolarization opening voltage-gated calcium channels.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> In figure 1, cells depolarize after addition of 30mM K&#43;.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Channel A opens in response to the depolarization caused by 30 mM K&#43;, which is the signature of a voltage-gated channel, not a ligand-gated one — nothing in the given data shows Channel A responding to a chemical ligand binding rather than to a change in membrane potential.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Channel A opens in response to the depolarization caused by 30 mM K&#43;, which is the signature of a voltage-gated channel, not a ligand-gated one — nothing in the given data shows Channel A responding to a chemical ligand binding rather than to a change in membrane potential.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> From the experiment data provided we can conclude that the Channel A is ligand-gated.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. The text states that in these cells, calcium release triggers insulin release in response to high glucose — meaning high glucose is itself a physiological trigger for a calcium rise (via the normal beta-cell glucose-sensing/insulin-secretion pathway), so calcium concentration would be expected to increase after high-glucose stimulation, not stay flat.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. The text states that in these cells, calcium release triggers insulin release in response to high glucose — meaning high glucose is itself a physiological trigger for a calcium rise (via the normal beta-cell glucose-sensing/insulin-secretion pathway), so calcium concentration would be expected to increase after high-glucose stimulation, not stay flat.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> If we performed a new experiment and replaced 30 mM K with high glucose in control conditions, the calcium concentration would not increase after high glucose stimulation.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Inhibitor Y blocks Channel A, the initial calcium-influx channel that starts the whole signaling cascade — its trace in Figure 1 shows almost no response. In 0 mM extracellular Ca2&#43;, there&#39;s no calcium available to flow in through Channel A in the first place, so the control cells would be expected to show the same essentially flat response as the inhibitor-Y condition, since both scenarios remove the initial Ca2&#43; influx that the rest of the cascade depends on.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Inhibitor Y blocks Channel A, the initial calcium-influx channel that starts the whole signaling cascade — its trace in Figure 1 shows almost no response. In 0 mM extracellular Ca2&#43;, there&#39;s no calcium available to flow in through Channel A in the first place, so the control cells would be expected to show the same essentially flat response as the inhibitor-Y condition, since both scenarios remove the initial Ca2&#43; influx that the rest of the cascade depends on.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> If the same experiment as in Figure 1 was conducted in 0mM Ca2&#43; media, the response of the control cells would show a similar response to the inhibitor Y graph in Figure 1.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -373,8 +373,24 @@ A scientist in a lab is investigating two types of calcium channels in pancreati
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -389,16 +405,32 @@ A scientist in a lab is investigating two types of calcium channels in pancreati
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -406,7 +438,7 @@ A scientist in a lab is investigating two types of calcium channels in pancreati
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -414,8 +446,13 @@ A scientist in a lab is investigating two types of calcium channels in pancreati
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

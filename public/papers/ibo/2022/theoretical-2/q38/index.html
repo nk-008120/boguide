@@ -322,32 +322,32 @@ Researchers developed two groups of common pigeons, Columba livia, &ldquo;free c
 <p>Researchers developed two groups of common pigeons, <em>Columba livia</em>, &ldquo;free choice&rdquo; and &ldquo;random union&rdquo;. In the first group, all the pigeons, both females and males, were released into a single cage, where they were able to freely court and form pairs. In the second, &ldquo;random union&rdquo; group, each of multiple cages was filled with one male and one female together, until they began to court and form pairs, after which the pairs were released into a common cage. In the &ldquo;free choice&rdquo; group, the courtship process took significantly longer than in the &ldquo;random union&rdquo; group. However, the pairs of the &ldquo;free choice&rdquo; group started to breed earlier and laid more fertilized eggs. In both groups, the attractiveness of different individuals for the opposite sex (both males and females) was very different. In the &ldquo;free choice&rdquo; group, the couples formed from individuals with similar levels of attractiveness (both partners had high, medium or low attractiveness), while in the &ldquo;random union&rdquo; group this pairing pattern was not present.</p>
 <p>Using the information above, determine which of the statements are true or which are false.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-2-q38">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="&#34;Only explanation&#34; overclaims — the same assortative pattern could also arise passively (e.g. the most attractive individuals pairing off first, leaving similarly middling or low-attractiveness individuals to pair with each other by elimination) without any individual actively aiming for a similarly attractive partner.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="&#34;Only explanation&#34; overclaims — the same assortative pattern could also arise passively (e.g. the most attractive individuals pairing off first, leaving similarly middling or low-attractiveness individuals to pair with each other by elimination) without any individual actively aiming for a similarly attractive partner.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> The only explanation for the pairing pattern observed in the &#34;free-choice&#34; group is that the birds were aiming to pair with a similarly attractive individual.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="The text explicitly states the attractiveness-matched pairing pattern was not present in the random-union group, so whatever their reproductive outcome was, it cannot be explained by attractiveness-matched pairing since that pattern simply wasn&#39;t there.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="The text explicitly states the attractiveness-matched pairing pattern was not present in the random-union group, so whatever their reproductive outcome was, it cannot be explained by attractiveness-matched pairing since that pattern simply wasn&#39;t there.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> The reproductive rate in the &#34;random union&#34; group of common pigeons is due to the possibility of forming pairs of males and females of the matching level of attractiveness.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="The free-choice group&#39;s earlier breeding and greater egg output are confounded with other differences between the two setups, such as the much longer courtship period that let more motivated or compatible pairs self-select — so the improvement can&#39;t be attributed solely and causally to &#34;freedom to choose&#34; itself.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="The free-choice group&#39;s earlier breeding and greater egg output are confounded with other differences between the two setups, such as the much longer courtship period that let more motivated or compatible pairs self-select — so the improvement can&#39;t be attributed solely and causally to &#34;freedom to choose&#34; itself.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> The freedom to choose a partner increases the reproductive capacity of common pigeons.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="In the free-choice group, individuals of all attractiveness levels (high, medium, and low) still found partners and paired off — assortative mating by attractiveness does not exclude less-attractive individuals from reproducing, so it doesn&#39;t by itself drive a directional shift toward more attractive traits in the population.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="In the free-choice group, individuals of all attractiveness levels (high, medium, and low) still found partners and paired off — assortative mating by attractiveness does not exclude less-attractive individuals from reproducing, so it doesn&#39;t by itself drive a directional shift toward more attractive traits in the population.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Results of this experiment suggest that over time the population of common pigeon will be selected for more attractive traits.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -367,8 +367,24 @@ Researchers developed two groups of common pigeons, Columba livia, &ldquo;free c
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -383,16 +399,32 @@ Researchers developed two groups of common pigeons, Columba livia, &ldquo;free c
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -400,7 +432,7 @@ Researchers developed two groups of common pigeons, Columba livia, &ldquo;free c
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -408,8 +440,13 @@ Researchers developed two groups of common pigeons, Columba livia, &ldquo;free c
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

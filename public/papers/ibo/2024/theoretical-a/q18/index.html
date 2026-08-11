@@ -353,32 +353,32 @@ Roads are responsible for habitat fragmentation, impeding wildlife movement via 
 <em>Figure 1. The total barrier effect (B, black solid line) from mortality (M, blue dashed line) and avoidance (A, red dotted line) for the four response categories. X - traffic volume in arbitrary units. Y - magnitude of the barrier effect in term probability (from 0 to 1).</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-a-q18">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Top predators have few natural predators and therefore have evolved with limited anti-predator responses. When they encounter roads and moving vehicles, they may fail to recognize the danger — vehicles are evolutionarily novel stimuli. Western barn owls (apex predators in their niche) fit this description: they do not flee from approaching traffic, consistent with the nonresponding behavior. Top predators&#39; evolutionary history of being the dominant threat (not prey) means alarm/flee responses to novel moving objects are poorly developed.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Top predators have few natural predators and therefore have evolved with limited anti-predator responses. When they encounter roads and moving vehicles, they may fail to recognize the danger — vehicles are evolutionarily novel stimuli. Western barn owls (apex predators in their niche) fit this description: they do not flee from approaching traffic, consistent with the nonresponding behavior. Top predators&#39; evolutionary history of being the dominant threat (not prey) means alarm/flee responses to novel moving objects are poorly developed.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Nonresponding behaviour is more likely to exist in top predators of a food chain.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Mule deer are SPEEDERS — they flee across the road when threatened. The &#39;relative steadiness in mortality after an initial increase&#39; observed in the deer mortality curve occurs because speeders exploit GAPS between vehicles at low traffic volumes (successfully crossing) but then mortality plateaus as traffic increases (fewer gaps). This plateau is NOT due to avoidance behavior — speeders by definition do not avoid roads. The plateau reflects the balance between successful gap-exploitation and collision risk, not avoidance.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Mule deer are SPEEDERS — they flee across the road when threatened. The &#39;relative steadiness in mortality after an initial increase&#39; observed in the deer mortality curve occurs because speeders exploit GAPS between vehicles at low traffic volumes (successfully crossing) but then mortality plateaus as traffic increases (fewer gaps). This plateau is NOT due to avoidance behavior — speeders by definition do not avoid roads. The plateau reflects the balance between successful gap-exploitation and collision risk, not avoidance.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Relative steadiness in the mortality of mule deer after an initial increase during low traffic volume is due to the mule deer&#39;s road-avoiding behaviour.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Point Z on the armadillo graph represents the traffic volume at which the AVOIDANCE probability (A) becomes greater than the MORTALITY probability (M). Before Z, mortality exceeds avoidance; after Z, avoidance dominates. This means Z is the point where armadillos are more likely to STOP at the road edge (avoiding crossing — pausing before the road) rather than attempt crossing (where they would face mortality on the road surface). The probability of pausing at the road EDGE exceeds the probability of death on the road SURFACE at point Z.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Point Z on the armadillo graph represents the traffic volume at which the AVOIDANCE probability (A) becomes greater than the MORTALITY probability (M). Before Z, mortality exceeds avoidance; after Z, avoidance dominates. This means Z is the point where armadillos are more likely to STOP at the road edge (avoiding crossing — pausing before the road) rather than attempt crossing (where they would face mortality on the road surface). The probability of pausing at the road EDGE exceeds the probability of death on the road SURFACE at point Z.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Point Z indicates the moment when armadillos are more likely to start pausing at the road edge than the road surface</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Indiana bats show a pattern where even very slight traffic volume strongly restricts their movement (avoidance curve rises steeply at very low traffic). This is characteristic of AVOIDERS — animals that avoid roads at very low traffic volumes and stay further from roads. Speeders would show a different pattern (low mortality at low traffic with successful crossings). The Indiana bat graph shows strong avoidance behavior at minimal traffic, making it an avoider, not a speeder.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Indiana bats show a pattern where even very slight traffic volume strongly restricts their movement (avoidance curve rises steeply at very low traffic). This is characteristic of AVOIDERS — animals that avoid roads at very low traffic volumes and stay further from roads. Speeders would show a different pattern (low mortality at low traffic with successful crossings). The Indiana bat graph shows strong avoidance behavior at minimal traffic, making it an avoider, not a speeder.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Indiana bat is probably a speeder.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -398,8 +398,24 @@ Roads are responsible for habitat fragmentation, impeding wildlife movement via 
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -414,16 +430,32 @@ Roads are responsible for habitat fragmentation, impeding wildlife movement via 
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -431,7 +463,7 @@ Roads are responsible for habitat fragmentation, impeding wildlife movement via 
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -439,8 +471,13 @@ Roads are responsible for habitat fragmentation, impeding wildlife movement via 
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });
