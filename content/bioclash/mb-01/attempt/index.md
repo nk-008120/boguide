@@ -17,7 +17,7 @@ layout: "wide"
 
   <section id="bioclash-attempt-start">
     <h1>Case File MB-01 — Molecular Biology &amp; Biochemistry</h1>
-    <p>This is a debug-phase build. If you can see a Start button below, you have access.</p>
+    <p>Please confirm login status and READ CAREFULLY before proceeding.</p>
     <p class="bioclash-nonrecoverable-banner">⚠ Once you start, do not switch away from,
     minimize, or leave this tab in the background for extended periods. Doing so can, in
     rare cases, cause a session error that prevents you from saving or locking an answer.
@@ -29,52 +29,52 @@ layout: "wide"
         <li><label class="bioclash-directive-item">
           <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-wait">
           <span><strong>Locking, Next, and Submit all take a moment.</strong> After clicking
-          "Lock &amp; Continue," "Next," or "Submit Attempt," I will wait a few seconds for it
-          to finish — these go through the server and can take 2–3 seconds. I will not click
+          "Lock &amp; Continue," "Next," or "Submit Attempt," wait a few seconds for it
+          to finish — these go through the server and can take 2–3 seconds.Do not click
           again or refresh while waiting; clicking repeatedly won't speed anything up and can
           cause problems.</span>
         </label></li>
         <li><label class="bioclash-directive-item">
           <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-locks">
           <span><strong>Locked answers are final.</strong> Any question marked non-recoverable
-          cannot be revisited or changed once locked in — I will read carefully before
+          cannot be revisited or changed once locked in — read carefully before
           confirming.</span>
         </label></li>
         <li><label class="bioclash-directive-item">
           <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-tab">
-          <span><strong>This is one continuous, one-tab attempt.</strong> I will not close this
-          tab, and will not open the attempt in a second tab or device — either may be logged
-          and can interrupt my attempt.</span>
+          <span><strong>This is one continuous, one-tab attempt.</strong>Do not close this
+          tab, and do not open the attempt in a second tab or device — either may be logged
+          and can interrupt your attempt and cause unwanted errors.</span>
         </label></li>
         <li><label class="bioclash-directive-item">
           <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-extension">
           <span><strong>Extra time has a cost, not a free grant.</strong> If offered, requesting
-          additional time affects my standardized ranking for this round — I understand I'll
-          always be shown the cost before confirming each request.</span>
+          additional time affects my standardized ranking for this round — refer to the attatched document at 
+          https://bioguide.world/bioclashmb/scoringref.png. This coefficient may change, but concept remains same.</span>
         </label></li>
         <li><label class="bioclash-directive-item">
           <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-video">
-          <span><strong>I will record myself via my device's front camera for my entire
-          attempt</strong>, and upload that recording after I submit, to the link provided on
-          the results screen. I understand results are only verified once that recording has
-          been reviewed.</span>
+          <span><strong>PARTICIPANTS MUST RECORD THEMSELVES via their device's front camera for there entire
+          attempt</strong>, and upload that recording after they submit, to the link provided on
+          the results screen. Please understand results are only verified once that recording has
+          been reviewed. A lot of effort goes behind this. ALL VIDEOS ARE DELETED IN 5 WORKING DAYS OF SUBMISSION!
+          BiOGuide takes full resposibility of student privacy!!!</span>
         </label></li>
         <li><label class="bioclash-directive-item">
           <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-screenshots">
           <span><strong>Screenshots and screen recording of any question content are
-          prohibited</strong> for the duration of my attempt.</span>
+          prohibited</strong> for the duration of your attempt. ATTEMPTING TO DO SO MAY RESULT IN ERRORS.</span>
         </label></li>
         <li><label class="bioclash-directive-item">
           <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-scoring">
-          <span><strong>My result is not a raw percentage.</strong> Scores are standardized
+          <span><strong>Your result is not a raw percentage.</strong> Scores are standardized
           against everyone who took the same round, similar to how many real olympiads report
-          results — I understand I should not compare my raw mark total directly against a
-          friend's; standing relative to the field is what determines placement.</span>
+          results. Do not worry about how hard the test is. Tilt your head up and solve! ENJOY!</span>
         </label></li>
         <li><label class="bioclash-directive-item">
           <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-grading">
-          <span><strong>Grading takes time.</strong> Most of this paper is graded by hand — I
-          understand my real result won't appear immediately after I submit.</span>
+          <span><strong>Grading takes time.</strong> Most of this paper is graded by hand — Kindly
+          understand your real result won't appear immediately after you submit. The counter at the end is meaningless and should not be taken into account. It is for other references of the creators.</span>
         </label></li>
       </ul>
     </div>
