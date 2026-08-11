@@ -23,12 +23,16 @@
 # round is actually scheduled.
 #
 # Figures 5, 6, 7 (Q8b's CRISPR panels, Q10.4D(ii)'s Hill-coefficient
-# curves, Q10.5(c)'s Lineweaver-Burk plot) were never generated in the
-# source document (marked "[to be inserted]" there) — until real images
-# exist, those three questions describe the figure in words instead of
-# referencing an image file, so the questions are fully functional now;
-# swap in a real `imageRef`/`images` entry once art exists, no schema
-# change needed.
+# curves, Q10.5(c)'s Lineweaver-Burk plot) — real art received 2026-08-11
+# and wired in via `imageRef` on q8b (/MB-01PICS/crispr.jpg — note the
+# .jpg extension, not .png, despite the other two being .png),
+# q10-4d-ii (/MB-01PICS/hillloki.png), and both q10-5's inhibition-type
+# and distinguish-inhibition components (/MB-01PICS/lbgraph.png, same
+# image on both since distinguish-inhibition reasons about the same
+# plotted pattern inhibition-type introduces). No prompt wording was
+# redesigned beyond removing the now-stale "figure doesn't exist yet"
+# caveats — the descriptive text was already written to double as the
+# question content regardless of image presence.
 
 id: mb-01
 title: "Case File MB-01 — Molecular Biology & Biochemistry"
@@ -558,11 +562,11 @@ parts:
           - key: q8b
             type: mcq
             marks: 2
+            imageRef: "/MB-01PICS/crispr.jpg"
             prompt: >
               Four candidate diagrams of the CRISPR-Cas9 cutting-and-repair mechanism were
-              proposed (Figure 5, panels A–D — described below since the figure art doesn't
-              exist yet). Exactly ONE correctly represents how CRISPR-Cas9 achieves a gene
-              knockout. Select it.
+              proposed (Figure 5, panels A–D, shown above). Exactly ONE correctly represents
+              how CRISPR-Cas9 achieves a gene knockout. Select it.
             options:
               - key: A
                 text: >
@@ -877,13 +881,15 @@ parts:
           - key: q10-4d-ii
             type: free_text
             marks: 3
+            imageRef: "/MB-01PICS/hillloki.png"
             prompt: >
-              Three theoretical RSPO–LGR5 occupancy curves share the same K₀.₅ = 10 nM but
-              different Hill coefficients — n=0.5 (a shallow, gradually-rising,
-              non-sigmoidal curve), n=1 (the classic hyperbolic Michaelis-Menten shape), and
-              n=4 (a steep S-shaped sigmoidal curve, flat at low [RSPO] then rising sharply
-              around [RSPO]=10nM). Explain why a higher Hill coefficient makes the pathway's
-              response to RSPO more "switch-like" (ultrasensitive) rather than graded.
+              The graph above shows three theoretical RSPO–LGR5 occupancy curves sharing the
+              same K₀.₅ = 10 nM but different Hill coefficients — n=0.5 (a shallow,
+              gradually-rising, non-sigmoidal curve), n=1 (the classic hyperbolic
+              Michaelis-Menten shape), and n=4 (a steep S-shaped sigmoidal curve, flat at low
+              [RSPO] then rising sharply around [RSPO]=10nM). Explain why a higher Hill
+              coefficient makes the pathway's response to RSPO more "switch-like"
+              (ultrasensitive) rather than graded.
       - id: q10-5
         locksAfterSubmit: false
         label: "Q10.5 — Enzyme Kinetics"
@@ -906,21 +912,23 @@ parts:
           - key: inhibition-type
             type: free_text
             marks: 2
+            imageRef: "/MB-01PICS/lbgraph.png"
             prompt: >
               A candidate small-molecule inhibitor of RNF43 was tested at a single fixed
-              concentration against FZD5 ubiquitination. The resulting Lineweaver-Burk plot
-              (described, since the figure art doesn't exist yet: two straight lines sharing
-              the EXACT SAME x-intercept, i.e. unchanged −1/Km, but with the inhibitor line's
-              y-intercept noticeably HIGHER, i.e. reduced Vmax) — identify the type of
-              inhibition, justifying your answer using the intercepts.
+              concentration against FZD5 ubiquitination. The resulting Lineweaver-Burk plot is
+              shown above: two straight lines sharing the EXACT SAME x-intercept, i.e.
+              unchanged −1/Km, but with the inhibitor line's y-intercept noticeably HIGHER,
+              i.e. reduced Vmax — identify the type of inhibition, justifying your answer
+              using the intercepts.
           - key: distinguish-inhibition
             type: free_text
             marks: 4
+            imageRef: "/MB-01PICS/lbgraph.png"
             prompt: >
               How would you experimentally distinguish irreversible inhibition from
               (reversible) noncompetitive inhibition, given that both can produce an
-              identical Lineweaver-Burk pattern (unchanged Km, reduced Vmax) at a single
-              fixed inhibitor concentration?
+              identical Lineweaver-Burk pattern (unchanged Km, reduced Vmax, shown above) at a
+              single fixed inhibitor concentration?
 
   - id: part-f
     name: "PART F — The Guide RNA Supply Chain"
