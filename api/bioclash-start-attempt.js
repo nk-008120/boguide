@@ -3,7 +3,7 @@
 // returns a correct answer, an un-reached block, or a reveal the caller
 // hasn't actually earned yet — see api/_lib/bioclash.js's toClientBlock().
 const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
-const { loadPaper, initialBlocks, toClientBlock, findBlock, watermarkCode, newSessionToken } = require('./_lib/bioclash');
+const { loadPaper, initialBlocks, toClientBlock, findBlock, watermarkCode, newSessionToken, computeTotalPages } = require('./_lib/bioclash');
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
@@ -131,6 +131,8 @@ module.exports = async (req, res) => {
       paperTitle: paper.title,
       watermark: watermarkCode(userId, paperId),
       sessionToken,
+      totalPages: computeTotalPages(paper),
+      reachedFinalPage: !!attempt.reached_final_page,
       blocks
     });
   } catch (err) {

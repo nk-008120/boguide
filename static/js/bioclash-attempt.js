@@ -16,6 +16,12 @@
 
   var PAPER_ID = root.getAttribute('data-paper-id');
 
+  // Front-camera recording upload link, shown on the report screen after
+  // submit (see the honor-code text in content/bioclash/mb-01/attempt/
+  // index.md for the matching policy wording). Not yet provided by the
+  // founder — replace with the real Drive folder link before this goes live.
+  var RECORDING_UPLOAD_URL = 'TODO-REPLACE-WITH-DRIVE-LINK';
+
   // Force the BiOClash dark/glowing case-file look for the duration of an
   // attempt, overriding whatever theme (including "favourite," the sitewide
   // default) the visitor has stored. This only touches the live DOM class,
@@ -96,7 +102,9 @@
     currentPartIndex: 0,       // which part is on screen — see renderBlocks()
     currentPartIndexSet: false, // true once boot/resume has picked a starting part
     sessionToken: null,        // anti-cheat: single-active-session — see startHeartbeat()
-    superseded: false          // true once another tab/device has taken over
+    superseded: false,         // true once another tab/device has taken over
+    totalPages: null,          // true total page count for the whole paper — see renderPartNav()
+    reachedFinalPageLocally: false // submit-gate — see renderBlocks()/doSubmit()
   };
   var timerInterval = null;
   var heartbeatInterval = null;
@@ -106,14 +114,31 @@
     return { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + session.access_token };
   }
 
-  function apiPost(path, session, body) {
-    return fetch(path, { method: 'POST', headers: authHeaders(session), body: JSON.stringify(body || {}) })
-      .then(function (r) { return r.json().then(function (json) { return { ok: r.ok, status: r.status, body: json }; }); });
+  // Fetches a FRESH session immediately before every request rather than
+  // reusing one captured once at boot/start. Supabase's client auto-
+  // refreshes its stored token in the background (autoRefreshToken: true,
+  // papers-auth.js), but that only helps if something actually asks it for
+  // the current session each time — a session object threaded through
+  // render closures for the rest of the page's life goes stale (JWT expiry
+  // on a long attempt, or background-tab refresh throttling) and every
+  // subsequent write starts failing with a generic "Invalid session" 401,
+  // with no way to recover short of a full page reload. Root cause of a
+  // real incident hit mid-attempt — see the warning banner on the start
+  // screen for the user-facing side of this.
+  function apiPost(path, body) {
+    return window.PapersAuth.getSession().then(function (session) {
+      if (!session) return { ok: false, status: 401, body: { error: 'Invalid session' } };
+      return fetch(path, { method: 'POST', headers: authHeaders(session), body: JSON.stringify(body || {}) })
+        .then(function (r) { return r.json().then(function (json) { return { ok: r.ok, status: r.status, body: json }; }); });
+    });
   }
 
-  function apiGet(path, session) {
-    return fetch(path, { headers: { 'Authorization': 'Bearer ' + session.access_token } })
-      .then(function (r) { return r.json().then(function (json) { return { ok: r.ok, status: r.status, body: json }; }); });
+  function apiGet(path) {
+    return window.PapersAuth.getSession().then(function (session) {
+      if (!session) return { ok: false, status: 401, body: { error: 'Invalid session' } };
+      return fetch(path, { headers: { 'Authorization': 'Bearer ' + session.access_token } })
+        .then(function (r) { return r.json().then(function (json) { return { ok: r.ok, status: r.status, body: json }; }); });
+    });
   }
 
   function showScreen(el) {
@@ -152,14 +177,26 @@
   // token before writing), this is just what makes it visible promptly
   // instead of the student only finding out when an answer silently fails
   // to save. See supabase/migrations/010_bioclash_anticheat.sql.
-  function startHeartbeat(session) {
+  function startHeartbeat() {
     clearInterval(heartbeatInterval);
     heartbeatInterval = setInterval(function () {
       if (!state.sessionToken) return;
-      apiPost('/api/bioclash-heartbeat', session, { paperId: PAPER_ID, sessionToken: state.sessionToken }).then(function (result) {
+      apiPost('/api/bioclash-heartbeat', { paperId: PAPER_ID, sessionToken: state.sessionToken }).then(function (result) {
         if (result.body && result.body.reason === 'superseded') handleSessionSuperseded();
       });
     }, 20000);
+  }
+
+  // Submit-gate signal (supabase/migrations/011_bioclash_final_page.sql):
+  // fired once, the instant renderBlocks() first lands on the paper's true
+  // last page — not left to wait for the next periodic heartbeat above, or
+  // a student who reaches the last page and submits within seconds could be
+  // wrongly blocked by a server that hasn't heard about it yet.
+  function markFinalPageReached() {
+    if (state.reachedFinalPageLocally) return;
+    state.reachedFinalPageLocally = true;
+    if (!state.sessionToken) return;
+    apiPost('/api/bioclash-heartbeat', { paperId: PAPER_ID, sessionToken: state.sessionToken, reachedFinalPage: true });
   }
 
   function handleSessionSuperseded() {
@@ -230,13 +267,17 @@
     watermarkEl.textContent = new Array(40).fill(code).join('   ');
   }
 
-  function renderState(data, session) {
+  function renderState(data) {
     state.attemptId = data.attemptId;
     state.endAt = data.endAt;
     state.blocks = data.blocks || [];
     state.fullscreenExits = data.fullscreenExits || 0;
     state.visibilityLosses = data.visibilityLosses || 0;
     if (data.sessionToken) state.sessionToken = data.sessionToken;
+    if (data.totalPages) state.totalPages = data.totalPages;
+    // Seeded from the server so a resume-after-refresh doesn't lose credit
+    // for having already reached the last page in an earlier page load.
+    if (data.reachedFinalPage) state.reachedFinalPageLocally = true;
     renderWatermark(data.watermark);
 
     if (data.status === 'submitted') {
@@ -252,8 +293,8 @@
     clearInterval(timerInterval);
     timerInterval = setInterval(tickTimer, 1000);
     tickTimer();
-    startHeartbeat(session);
-    renderBlocks(session);
+    startHeartbeat();
+    renderBlocks();
   }
 
   function componentValue(block, key) {
@@ -476,11 +517,11 @@
     return answers;
   }
 
-  function scheduleDraftSave(block, inputs, session) {
+  function scheduleDraftSave(block, inputs) {
     clearTimeout(draftTimers[block.id]);
     draftTimers[block.id] = setTimeout(function () {
       var answers = collectAnswers(block, inputs);
-      apiPost('/api/bioclash-save-draft', session, {
+      apiPost('/api/bioclash-save-draft', {
         paperId: PAPER_ID,
         blockId: block.id,
         componentAnswers: answers,
@@ -586,7 +627,7 @@
     return -1;
   }
 
-  function renderPartNav(list, pageIdx, session) {
+  function renderPartNav(list, pageIdx) {
     var nav = document.createElement('div');
     nav.className = 'bioclash-part-nav';
 
@@ -602,23 +643,17 @@
       : '';
     prevBtn.addEventListener('click', function () {
       state.currentPartIndex = prevTarget;
-      renderBlocks(session);
+      renderBlocks();
     });
 
     var label = document.createElement('span');
     label.className = 'bioclash-part-nav-label';
-    // The last page in `list` isn't necessarily the last page of the whole
-    // paper — it's just the last one earned SO FAR. If that page's own
-    // block is still an active non-recoverable lock, locking it will grow
-    // `list` further (e.g. "Page 6 of 6" while sitting on the Data
-    // Analysis section's final question, right before it reveals Part
-    // B–F and the true count becomes 11) — showing a bare "6 of 6" reads
-    // as "this is the last page," which is exactly the wrong moment to
-    // imply that. The "+" marks the total as provisional whenever that's
-    // the case, at every step of a reveal chain, not just this one.
-    var lastPage = list[list.length - 1];
-    var totalProvisional = lastPage.blocks.some(function (b) { return b.locksAfterSubmit && b.status === 'active'; });
-    label.textContent = 'Page ' + (pageIdx + 1) + ' of ' + list.length + (totalProvisional ? '+' : '') + ': ' + (list[pageIdx].name || '');
+    // state.totalPages is the TRUE total for the whole paper (sent by the
+    // server up front — see computeTotalPages() in api/_lib/bioclash.js),
+    // not just how many pages this client has earned so far — so this is
+    // accurate from page 1, not just once every part has been revealed.
+    var total = state.totalPages || list.length;
+    label.textContent = 'Page ' + (pageIdx + 1) + ' of ' + total + ': ' + (list[pageIdx].name || '');
 
     var nextBtn = document.createElement('button');
     nextBtn.type = 'button';
@@ -631,7 +666,7 @@
     nextBtn.disabled = nextTarget >= list.length;
     nextBtn.addEventListener('click', function () {
       state.currentPartIndex = nextTarget;
-      renderBlocks(session);
+      renderBlocks();
     });
 
     nav.appendChild(prevBtn);
@@ -640,7 +675,7 @@
     return nav;
   }
 
-  function renderBlocks(session) {
+  function renderBlocks() {
     if (!bodyEl) return;
     bodyEl.innerHTML = '';
 
@@ -660,7 +695,18 @@
     var pageIdx = state.currentPartIndex;
     var currentPage = list[pageIdx];
 
-    bodyEl.appendChild(renderPartNav(list, pageIdx, session));
+    // Submit-gate: this is the paper's true last page once pageIdx is the
+    // last INDEX of the true total, not just the last page earned so far
+    // (see markFinalPageReached()/computeTotalPages()).
+    if (state.totalPages && pageIdx === state.totalPages - 1) markFinalPageReached();
+    if (submitBtn) {
+      submitBtn.disabled = !state.reachedFinalPageLocally;
+      submitBtn.title = state.reachedFinalPageLocally
+        ? ''
+        : 'You must reach the final page of the paper at least once before you can submit.';
+    }
+
+    bodyEl.appendChild(renderPartNav(list, pageIdx));
 
     var heading = document.createElement('h3');
     heading.className = 'bioclash-part-heading';
@@ -735,14 +781,14 @@
         inputs[component.key] = rendered;
         section.appendChild(rendered.el);
         if (block.status === 'active' && !block.locksAfterSubmit) {
-          rendered.el.addEventListener('input', function () { scheduleDraftSave(block, inputs, session); });
-          rendered.el.addEventListener('change', function () { scheduleDraftSave(block, inputs, session); });
+          rendered.el.addEventListener('input', function () { scheduleDraftSave(block, inputs); });
+          rendered.el.addEventListener('change', function () { scheduleDraftSave(block, inputs); });
         }
       });
       // Pass 2: free_text_for_others, now that its referenced sibling exists.
       deferred.forEach(function (component) {
         var onChange = (block.status === 'active' && !block.locksAfterSubmit)
-          ? function () { scheduleDraftSave(block, inputs, session); }
+          ? function () { scheduleDraftSave(block, inputs); }
           : function () {};
         var rendered = renderFreeTextForOthers(block, component, inputs, onChange);
         inputs[component.key] = rendered;
@@ -764,7 +810,7 @@
           if (!window.confirm(warn + '\n\nAre you sure you want to lock this in?')) return;
           lockBtn.disabled = true;
           var answers = collectAnswers(block, inputs);
-          apiPost('/api/bioclash-lock-block', session, {
+          apiPost('/api/bioclash-lock-block', {
             paperId: PAPER_ID,
             blockId: block.id,
             componentAnswers: answers,
@@ -814,7 +860,18 @@
               var newIdx = findPageIndexForBlockId(pageList(), firstNewBlockId);
               if (newIdx >= 0) state.currentPartIndex = newIdx;
             }
-            renderBlocks(session);
+            renderBlocks();
+            // The confirm() dialog above forces the browser out of
+            // fullscreen (native behavior on a JS dialog) and the page
+            // transition can leave the student mid-scroll — recover both
+            // automatically. Skipped only for q10-4a: it reveals onto the
+            // SAME page (Part E) rather than transitioning, so there's no
+            // page to land back at the top of, and yanking the scroll
+            // position would just hide the content that appeared below.
+            if (block.id !== 'q10-4a') {
+              window.scrollTo({ top: 0, behavior: 'auto' });
+              enterFullscreen();
+            }
           });
         });
         section.appendChild(lockBtn);
@@ -823,7 +880,7 @@
       bodyEl.appendChild(section);
     });
 
-    bodyEl.appendChild(renderPartNav(list, pageIdx, session));
+    bodyEl.appendChild(renderPartNav(list, pageIdx));
   }
 
   function renderReport(data) {
@@ -835,19 +892,29 @@
       '<h2>Submitted</h2>' +
       '<p>Auto-gradable score (partial — most of this paper is graded offline): ' +
       (data.autoScoreCorrect != null ? data.autoScoreCorrect + ' / ' + data.autoScoreTotal : '—') + '</p>' +
-      '<p>' + (data.note || 'Your full result will follow separately once grading is complete.') + '</p>';
+      '<p>' + (data.note || 'Your full result will follow separately once grading is complete.') + '</p>' +
+      '<div class="bioclash-recording-upload">' +
+      '<p><strong>Your attempt is not verified yet.</strong> Upload your full front-camera ' +
+      'recording of this attempt to the folder below as soon as possible. Results are only ' +
+      'verified once this recording has been reviewed — an unverified attempt may still be ' +
+      'scored, but whether it is announced or considered at all is entirely at BiOGuide\'s ' +
+      'discretion.</p>' +
+      '<p><a href="' + RECORDING_UPLOAD_URL + '" target="_blank" rel="noopener" class="papers-nav-btn">Upload your recording</a></p>' +
+      '</div>';
   }
 
   function doSubmit(silent) {
-    withSession(function (session) {
-      if (!silent && !window.confirm('Submit your attempt now? This cannot be undone.')) return;
-      apiPost('/api/bioclash-submit-attempt', session, { paperId: PAPER_ID }).then(function (result) {
-        if (!result.ok) {
-          if (!silent) window.alert(result.body.error || 'Could not submit.');
-          return;
-        }
-        renderReport(result.body);
-      });
+    if (!silent && !state.reachedFinalPageLocally) {
+      window.alert('You must reach the final page of the paper at least once before you can submit.');
+      return;
+    }
+    if (!silent && !window.confirm('Submit your attempt now? This cannot be undone.')) return;
+    apiPost('/api/bioclash-submit-attempt', { paperId: PAPER_ID, force: !!silent }).then(function (result) {
+      if (!result.ok) {
+        if (!silent) window.alert(result.body.error || 'Could not submit.');
+        return;
+      }
+      renderReport(result.body);
     });
   }
 
@@ -872,16 +939,16 @@
         if (startStatus) startStatus.textContent = 'Please confirm the affirmation above before starting.';
         return;
       }
-      withSession(function (session) {
+      withSession(function () {
         startBtn.disabled = true;
         enterFullscreen();
-        apiPost('/api/bioclash-start-attempt', session, { paperId: PAPER_ID }).then(function (result) {
+        apiPost('/api/bioclash-start-attempt', { paperId: PAPER_ID }).then(function (result) {
           startBtn.disabled = false;
           if (!result.ok) {
             if (startStatus) startStatus.textContent = result.body.error || 'Could not start.';
             return;
           }
-          renderState(result.body, session);
+          renderState(result.body);
         });
       });
     });
@@ -893,14 +960,14 @@
   });
 
   // Boot: check for a resumable attempt before showing the Start screen.
-  withSession(function (session) {
-    apiGet('/api/bioclash-attempt-state?paperId=' + encodeURIComponent(PAPER_ID), session).then(function (result) {
+  withSession(function () {
+    apiGet('/api/bioclash-attempt-state?paperId=' + encodeURIComponent(PAPER_ID)).then(function (result) {
       if (!result.ok) {
         if (startStatus) startStatus.textContent = result.body.error || 'Could not load.';
         return;
       }
       if (result.body.status && result.body.status !== 'not_started') {
-        renderState(result.body, session);
+        renderState(result.body);
       }
       // else: leave the Start screen showing, nothing to resume yet.
     });

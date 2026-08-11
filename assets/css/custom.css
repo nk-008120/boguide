@@ -1621,6 +1621,13 @@ html.dark .papers-quiz-nav {
 .papers-nav-btn:hover {
   background: rgba(137, 101, 196, 0.1);
 }
+.papers-nav-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.papers-nav-btn:disabled:hover {
+  background: transparent;
+}
 .papers-nav-next {
   color: #fff;
   background: #8965c4;
@@ -4271,6 +4278,18 @@ html.dark #bioclash-attempt-report {
 }
 #bioclash-attempt-report {
   line-height: 1.7;
+}
+.bioclash-recording-upload {
+  margin-top: 1.25rem;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid var(--bc-crimson);
+  border-radius: var(--radius-md);
+  background: rgba(179, 18, 46, 0.08);
+}
+.bioclash-recording-upload p:first-child { margin-top: 0; }
+.bioclash-recording-upload .papers-nav-btn {
+  display: inline-block;
+  margin-top: 0.25rem;
 }
 .bioclash-honor-code {
   display: flex;

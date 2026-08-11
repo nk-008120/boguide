@@ -37,7 +37,7 @@ module.exports = async (req, res) => {
     }
     const userId = userData.user.id;
 
-    const { paperId, sessionToken } = req.body || {};
+    const { paperId, sessionToken, reachedFinalPage } = req.body || {};
     if (!paperId || !sessionToken) {
       res.status(400).json({ error: 'paperId and sessionToken are required' });
       return;
@@ -65,7 +65,14 @@ module.exports = async (req, res) => {
       return;
     }
 
-    await admin.from('bioclash_attempts').update({ active_session_claimed_at: new Date().toISOString() }).eq('id', attempt.id);
+    // reachedFinalPage: submit-gate signal (see supabase/migrations/011_
+    // bioclash_final_page.sql) — the frontend fires this the instant it
+    // first renders the paper's true last page, piggybacking on this
+    // endpoint rather than adding a dedicated one. Once true server-side it
+    // never needs to go back to false, so this only ever sets it.
+    const patch = { active_session_claimed_at: new Date().toISOString() };
+    if (reachedFinalPage === true) patch.reached_final_page = true;
+    await admin.from('bioclash_attempts').update(patch).eq('id', attempt.id);
 
     res.status(200).json({ ok: true, active: true });
   } catch (err) {
