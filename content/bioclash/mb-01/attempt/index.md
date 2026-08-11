@@ -27,8 +27,9 @@ layout: "wide"
       <input type="checkbox" id="bioclash-attempt-honor-code">
       <span>I confirm I am completing this attempt independently — without assistance from
       another person or an AI tool, and without consulting outside notes or the internet
-      beyond what this page provides. Screenshots and screen recording of any question
-      content are prohibited for the duration of this attempt. I will record myself via my
+      beyond what this page provides. I will not close this browser tab at any point during
+      my attempt — doing so may be logged and reviewed. Screenshots and screen recording of
+      any question content are prohibited for the duration of this attempt. I will record myself via my
       device's front camera for the entire duration of this attempt, and will upload that
       recording to the folder linked on the submission screen as soon as I finish. My
       results will only be verified once that recording has been reviewed; BiOGuide may
@@ -43,6 +44,7 @@ layout: "wide"
   <section id="bioclash-attempt-live" hidden>
     <div class="bioclash-attempt-topbar">
       <div id="bioclash-attempt-timer" class="bioclash-attempt-timer">--:--</div>
+      <button type="button" id="bioclash-attempt-extend-btn" class="papers-nav-btn bioclash-extend-btn" hidden></button>
       <button type="button" id="bioclash-attempt-submit-btn" class="papers-nav-btn">Submit Attempt</button>
     </div>
     <div id="bioclash-attempt-body"></div>

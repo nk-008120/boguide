@@ -35,6 +35,8 @@ module.exports = async (req, res) => {
 
     const admin = getAdminClient();
 
+    // See the matching comment in bioclash-start-attempt.js — accessMode
+    // 'open' intentionally takes no branch here, any logged-in user passes.
     if (paper.accessMode === 'allowlist') {
       const { data: accessRow, error: accessError } = await admin
         .from('bioclash_paper_access')
@@ -104,6 +106,10 @@ module.exports = async (req, res) => {
       sessionToken,
       totalPages: computeTotalPages(paper),
       reachedFinalPage: !!attempt.reached_final_page,
+      extensionBlocksUsed: attempt.extension_blocks_used || 0,
+      maxExtensionBlocks: paper.maxExtensionBlocks || 0,
+      extensionBlockMinutes: paper.extensionBlockMinutes || 0,
+      extensionCostSchedule: paper.extensionCostSchedule || [],
       blocks
     });
   } catch (err) {

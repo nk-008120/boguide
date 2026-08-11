@@ -35,6 +35,13 @@ module.exports = async (req, res) => {
 
     const admin = getAdminClient();
 
+    // accessMode: 'open' (2026-08-11 — every logged-in user, matching how
+    // the founder's own allowlisted account already behaved) intentionally
+    // takes no branch here and falls straight through unrestricted — the
+    // anon.auth.getUser(token) check above already guarantees the caller
+    // is authenticated, which is the entire bar for 'open'. Only
+    // 'allowlist' rounds get an extra gate; a future invitational-only
+    // round can still use it.
     if (paper.accessMode === 'allowlist') {
       const { data: accessRow, error: accessError } = await admin
         .from('bioclash_paper_access')
@@ -62,6 +69,23 @@ module.exports = async (req, res) => {
     if (attempt && attempt.status === 'submitted') {
       res.status(403).json({ error: 'You have already submitted this paper.' });
       return;
+    }
+
+    // Per-round open/close window (2026-08-11) — only gates a genuinely
+    // FRESH start (no existing attempt row yet). An attempt already in
+    // progress when closesAt passes keeps running against its own end_at
+    // exactly as before; a round with neither field set (e.g. MB-01, still
+    // debug-phase — see data/bioclash/mb-01.yaml) has no window at all.
+    if (!attempt) {
+      const now = Date.now();
+      if (paper.opensAt && now < new Date(paper.opensAt).getTime()) {
+        res.status(403).json({ error: 'This round has not opened yet.' });
+        return;
+      }
+      if (paper.closesAt && now > new Date(paper.closesAt).getTime()) {
+        res.status(403).json({ error: 'This round is no longer accepting new attempts.' });
+        return;
+      }
     }
 
     const sessionToken = newSessionToken();
@@ -133,6 +157,10 @@ module.exports = async (req, res) => {
       sessionToken,
       totalPages: computeTotalPages(paper),
       reachedFinalPage: !!attempt.reached_final_page,
+      extensionBlocksUsed: attempt.extension_blocks_used || 0,
+      maxExtensionBlocks: paper.maxExtensionBlocks || 0,
+      extensionBlockMinutes: paper.extensionBlockMinutes || 0,
+      extensionCostSchedule: paper.extensionCostSchedule || [],
       blocks
     });
   } catch (err) {

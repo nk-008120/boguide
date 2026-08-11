@@ -79,7 +79,7 @@ images: ["/og-bioclash.png"]
   <ul class="bioclash-planning-list">
     <li><span class="papers-pill bioclash-pill">Format</span> Planning timed, solo rounds — heavily scrutinized and difficult.</li>
     <li><span class="papers-pill bioclash-pill">Scope</span> Aiming to cover the full IBO syllabus.</li>
-    <li><span class="papers-pill bioclash-pill">Frequency</span> Open seasons planned for spring and fall, with invitational rounds aimed at December and June.</li>
+    <li><span class="papers-pill bioclash-pill">Frequency</span> Planning a full season of subject-focused rounds spread across the year — Molecular Biology &amp; Biochemistry, Animal Anatomy &amp; Physiology, Genetics &amp; Evolution, Plant Anatomy &amp; Physiology, Ecology, Ethology, and Biosystematics — capped off by a Full Syllabus round in the weeks before IBO, with placements across the season aiming to add up to one cumulative season ranking.</li>
     <li><span class="papers-pill bioclash-pill">Recognition</span> Podium finishers may be recognized with an honorary Junior Partner position at BiOGuide.</li>
   </ul>
 </section>
