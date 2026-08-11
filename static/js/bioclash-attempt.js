@@ -16,27 +16,8 @@
 
   var PAPER_ID = root.getAttribute('data-paper-id');
 
-  // Front-camera recording upload link, shown on the report screen after
-  // submit (see the honor-code text in content/bioclash/mb-01/attempt/
-  // index.md for the matching policy wording). Not yet provided by the
-  // founder — replace with the real Drive folder link before this goes live.
-  var RECORDING_UPLOAD_URL = 'https://drive.google.com/drive/folders/136k1ea_kkUrAxfDctoHwb2QdCqZFaqIH?usp=drive_link';
+  var RECORDING_UPLOAD_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSckhuzgocCdJklygS8cs-CVqa9E8rXOE_l0pnCGKc_ZsabQpA/viewform?usp=publish-editor';
 
-  // Force the BiOClash dark/glowing case-file look for the duration of an
-  // attempt, overriding whatever theme (including "favourite," the sitewide
-  // default) the visitor has stored. This only touches the live DOM class,
-  // never localStorage, so leaving this page and loading any other page
-  // still respects their real stored preference on next load.
-  //
-  // A single one-time class swap isn't enough: assets/js/core/theme.js (a
-  // project override of Hextra's own theme script) unconditionally re-reads
-  // localStorage and re-applies the stored theme on every page load, as a
-  // deferred script — and because that script tag loads near the end of
-  // <body> while this one is embedded earlier, inside the page content, it
-  // runs AFTER this file and clobbers the forced "dark" class right back to
-  // "favourite" a moment later. Rather than depend on winning a script-order
-  // race, a MutationObserver reasserts "dark" for as long as this page is
-  // mounted, regardless of what else touches the class list or when.
   function forceDark() {
     var cl = document.documentElement.classList;
     if (cl.contains('light') || cl.contains('favourite') || !cl.contains('dark')) {
