@@ -1,0 +1,2488 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BiOGuide for Biology Olympiads – Theoretical A</title>
+    <link>http://localhost:1313/papers/ibo/2019/theoretical-a/</link>
+    <description>Recent content in Theoretical A on BiOGuide for Biology Olympiads</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="http://localhost:1313/papers/ibo/2019/theoretical-a/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Q1 — C. elegans Apoptosis Gene Network</title>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q1/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/cell-junctions-ecm-cell-death/&#34;&gt;Cell Junctions, Extracellular Matrix &amp; Cell Death&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;The effect of knocking out specific genes in worms on apoptosis (programmed cell death) was studied.&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;GENE&lt;/th&gt;
+					&lt;th&gt;MANIPULATION&lt;/th&gt;
+					&lt;th&gt;CELL DEATH&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;ced9&lt;/td&gt;
+					&lt;td&gt;knock-out&lt;/td&gt;
+					&lt;td&gt;increased&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;ced4&lt;/td&gt;
+					&lt;td&gt;knock-out&lt;/td&gt;
+					&lt;td&gt;reduced&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;ced3&lt;/td&gt;
+					&lt;td&gt;knock-out&lt;/td&gt;
+					&lt;td&gt;reduced&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;egl1&lt;/td&gt;
+					&lt;td&gt;knock-out&lt;/td&gt;
+					&lt;td&gt;reduced&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;ced4 &amp;amp; ced9&lt;/td&gt;
+					&lt;td&gt;knock-out&lt;/td&gt;
+					&lt;td&gt;reduced&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;ced9 &amp;amp; ced3&lt;/td&gt;
+					&lt;td&gt;knock-out&lt;/td&gt;
+					&lt;td&gt;reduced&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;ced9 &amp;amp; egl1&lt;/td&gt;
+					&lt;td&gt;knock-out&lt;/td&gt;
+					&lt;td&gt;increased&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;This question originally asked you to fill in a four-box pathway diagram on a separate physical answer sheet (not part of this PDF) — reproduced here as two free-response questions instead, working from the same epistasis data.&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2019-theoretical-a-q1&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;free_response&#34; data-answer=&#34;&#34;
+         data-explanation=&#34;Epistasis logic: ced9 knock-out alone INCREASES death, so Ced9 normally suppresses death. ced4, ced3 and egl1 knock-outs alone all REDUCE death, so each normally promotes death. In the double knockouts, ced4&amp;amp;ced9 and ced9&amp;amp;ced3 both give the REDUCED phenotype (i.e. ced4/ced3 are epistatic to ced9 — they act downstream of it), while ced9&amp;amp;egl1 gives the INCREASED phenotype (ced9 is epistatic to egl1 — ced9 acts downstream of egl1). That ordering — egl1 upstream of ced9, ced9 upstream of ced4/ced3 — matches the real, well-characterised C. elegans apoptosis pathway: EGL-1 inhibits CED-9; CED-9 inhibits CED-4; CED-4 activates the executioner caspase CED-3. The official key credits either order for the Ced3/Ced4 pair at the two downstream positions.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q1.1.&lt;/span&gt; The effect of knocking out ced9, ced4, ced3 and egl1 (singly and in the pairwise combinations ced4&amp;amp;ced9, ced9&amp;amp;ced3, ced9&amp;amp;egl1) on apoptosis was studied (see the table on the question page). Using this epistasis data, write the letters A (Ced3), B (Ced4), C (Ced9) and D (Egl1) into the correct position of a four-step linear pathway model of the control of cell death (CD).&lt;/div&gt;
+      &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-reveal-btn&#34;&gt;Reveal Model Answer&lt;/button&gt;
+      &lt;div class=&#34;tf-quiz-feedback tf-model-answer&#34; hidden&gt;Pathway order: Egl1 (D) ⊣ Ced9 (C) ⊣ Ced4 (B) → Ced3 (A) → cell death (CD). — Epistasis logic: ced9 knock-out alone INCREASES death, so Ced9 normally suppresses death. ced4, ced3 and egl1 knock-outs alone all REDUCE death, so each normally promotes death. In the double knockouts, ced4&amp;amp;ced9 and ced9&amp;amp;ced3 both give the REDUCED phenotype (i.e. ced4/ced3 are epistatic to ced9 — they act downstream of it), while ced9&amp;amp;egl1 gives the INCREASED phenotype (ced9 is epistatic to egl1 — ced9 acts downstream of egl1). That ordering — egl1 upstream of ced9, ced9 upstream of ced4/ced3 — matches the real, well-characterised C. elegans apoptosis pathway: EGL-1 inhibits CED-9; CED-9 inhibits CED-4; CED-4 activates the executioner caspase CED-3. The official key credits either order for the Ced3/Ced4 pair at the two downstream positions.&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;free_response&#34; data-answer=&#34;&#34;
+         data-explanation=&#34;Directly follows from the epistasis reasoning above: Egl-1 represses Ced-9, Ced-9 represses Ced-4, and Ced-4 activates Ced-3 (which then executes cell death).&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q1.2.&lt;/span&gt; Indicate whether each of the three interactions in the pathway above (D⊣C, C⊣B, B→A) is activating (&amp;#43;) or repressing (–).&lt;/div&gt;
+      &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-reveal-btn&#34;&gt;Reveal Model Answer&lt;/button&gt;
+      &lt;div class=&#34;tf-quiz-feedback tf-model-answer&#34; hidden&gt;Egl1 ⊣ Ced9: repressing (–). Ced9 ⊣ Ced4: repressing (–). Ced4 → Ced3: activating (&amp;#43;). — Directly follows from the epistasis reasoning above: Egl-1 represses Ced-9, Ced-9 represses Ced-4, and Ced-4 activates Ced-3 (which then executes cell death).&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var wrap = document.currentScript.previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== &#39;free_response&#39;; });
+
+  rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === &#39;free_response&#39;) {
+      var revealBtn = row.querySelector(&#39;.tf-reveal-btn&#39;);
+      var answerBox = row.querySelector(&#39;.tf-model-answer&#39;);
+      revealBtn.addEventListener(&#39;click&#39;, function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? &#39;Reveal Model Answer&#39; : &#39;Hide Model Answer&#39;;
+      });
+      return; 
+    }
+
+    if (type === &#39;numeric&#39;) return; 
+
+    
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      var isCorrect, hasAnswer;
+
+      if (type === &#39;numeric&#39;) {
+        var raw = row.querySelector(&#39;.tf-numeric-input&#39;).value;
+        hasAnswer = raw !== &#39;&#39;;
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) &amp;&amp; Math.abs(val - expected) &lt;= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + gradableRows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn.selected&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      if (row.dataset.type === &#39;numeric&#39;) {
+        var input = row.querySelector(&#39;.tf-numeric-input&#39;);
+        if (input) input.value = &#39;&#39;;
+      }
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (fb &amp;&amp; !fb.classList.contains(&#39;tf-model-answer&#39;)) fb.textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/&#34;&gt;← Back to Theoretical A&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q2/&#34;&gt;Next: Q2 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=5&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q10 — Pressure and Volume Changes During Breathing</title>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q10/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/respiratory-physiology/&#34;&gt;Respiratory Physiology&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Animal Anatomy and Physiology&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The graph below illustrates the pressure and volume changes during breathing.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q10-figure-1.png&#34; alt=&#34;Graph with left axis Hgmm (750–765) and right axis cm³ (2500–3000), x-axis split into phase I and phase II by a dashed vertical line. Curve A oscillates around 760: dips slightly during phase I, rises to a peak (~763) during phase II, then returns to 760. Curve B stays in the 755–758 range throughout, always below 760. Curve C rises from ~751 to ~760 during phase I, then falls steadily to 750 by the end of phase II.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Fig.1.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Identify what is represented by letters A, B and C, and the Roman numerals I. and II. Match these symbols (A–C and I–II) with the descriptions below. Every symbol matches one description only, but there are descriptions that do not match any of those — mark those as &amp;ldquo;No match&amp;rdquo;.&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2019-theoretical-a-q10&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;O&#34;
+         data-explanation=&#34;The intrapleural space&amp;#39;s volume doesn&amp;#39;t meaningfully change during normal breathing in the way this graph tracks — only its pressure does (see Q10.5). No curve on this graph represents it.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q10.1.&lt;/span&gt; The graph shows three curves (A, B, C) and two phases (I, II) during a breathing cycle. Every symbol matches at most one description below; some descriptions match none of the symbols (mark those &amp;#34;no match&amp;#34;). What matches &amp;#34;volume changes of the intrapleural space during breathing&amp;#34;?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q10.1&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Curve A&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Curve B&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Curve C&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;I&#34;&gt;I) Phase I&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;II&#34;&gt;II) Phase II&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;O&#34;&gt;O) No match&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;I&#34;
+         data-explanation=&#34;Phase I is where lung volume (curve C) is rising and alveolar pressure (curve A) is at or below atmospheric — consistent with air being drawn in, i.e. inhalation.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q10.2.&lt;/span&gt; What matches &amp;#34;inhalation phase of breathing&amp;#34;?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q10.2&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Curve A&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Curve B&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Curve C&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;I&#34;&gt;I) Phase I&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;II&#34;&gt;II) Phase II&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;O&#34;&gt;O) No match&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;A&#34;
+         data-explanation=&#34;Curve A oscillates around the atmospheric baseline (760 mmHg) — dipping slightly below during inhalation (drawing air in) and rising above during exhalation (pushing air out) — the signature of alveolar/lung pressure.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q10.3.&lt;/span&gt; What matches &amp;#34;pressure change in the lungs (alveolar pressure) during breathing&amp;#34;?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q10.3&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Curve A&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Curve B&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Curve C&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;I&#34;&gt;I) Phase I&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;II&#34;&gt;II) Phase II&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;O&#34;&gt;O) No match&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;O&#34;
+         data-explanation=&#34;This graph shows respiratory mechanics only — no curve represents cardiac (left ventricular) pressure.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q10.4.&lt;/span&gt; What matches &amp;#34;pressure change in the left ventricle of the heart during breathing&amp;#34;?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q10.4&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Curve A&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Curve B&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Curve C&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;I&#34;&gt;I) Phase I&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;II&#34;&gt;II) Phase II&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;O&#34;&gt;O) No match&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;B&#34;
+         data-explanation=&#34;Curve B stays below atmospheric pressure throughout (always negative relative to 760 mmHg), consistent with intrapleural pressure — which is always sub-atmospheric and fluctuates modestly rather than swinging as widely as alveolar pressure or volume.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q10.5.&lt;/span&gt; What matches &amp;#34;pressure change of the intrapleural space during breathing&amp;#34;?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q10.5&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Curve A&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Curve B&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Curve C&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;I&#34;&gt;I) Phase I&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;II&#34;&gt;II) Phase II&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;O&#34;&gt;O) No match&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;C&#34;
+         data-explanation=&#34;Curve C rises through phase I (inhalation fills the lungs) and falls through phase II (exhalation empties them), reaching its lowest point right at the end of exhalation — exactly the expected shape for lung volume.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q10.6.&lt;/span&gt; What matches &amp;#34;volume change of the lung during breathing&amp;#34;?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q10.6&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Curve A&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Curve B&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Curve C&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;I&#34;&gt;I) Phase I&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;II&#34;&gt;II) Phase II&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;O&#34;&gt;O) No match&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;II&#34;
+         data-explanation=&#34;Phase II is where lung volume (curve C) is falling and alveolar pressure (curve A) rises above atmospheric — air is being pushed out, i.e. exhalation.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q10.7.&lt;/span&gt; What matches &amp;#34;exhalation phase of breathing&amp;#34;?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q10.7&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Curve A&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Curve B&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Curve C&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;I&#34;&gt;I) Phase I&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;II&#34;&gt;II) Phase II&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;O&#34;&gt;O) No match&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;O&#34;
+         data-explanation=&#34;This graph tracks lung/pleural mechanics only — no curve represents abdominal cavity volume, even though diaphragm movement during breathing does affect it in reality.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q10.8.&lt;/span&gt; What matches &amp;#34;volume change of the abdominal cavity during breathing&amp;#34;?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q10.8&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Curve A&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Curve B&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Curve C&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;I&#34;&gt;I) Phase I&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;II&#34;&gt;II) Phase II&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;O&#34;&gt;O) No match&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var wrap = document.currentScript.previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== &#39;free_response&#39;; });
+
+  rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === &#39;free_response&#39;) {
+      var revealBtn = row.querySelector(&#39;.tf-reveal-btn&#39;);
+      var answerBox = row.querySelector(&#39;.tf-model-answer&#39;);
+      revealBtn.addEventListener(&#39;click&#39;, function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? &#39;Reveal Model Answer&#39; : &#39;Hide Model Answer&#39;;
+      });
+      return; 
+    }
+
+    if (type === &#39;numeric&#39;) return; 
+
+    
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      var isCorrect, hasAnswer;
+
+      if (type === &#39;numeric&#39;) {
+        var raw = row.querySelector(&#39;.tf-numeric-input&#39;).value;
+        hasAnswer = raw !== &#39;&#39;;
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) &amp;&amp; Math.abs(val - expected) &lt;= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + gradableRows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn.selected&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      if (row.dataset.type === &#39;numeric&#39;) {
+        var input = row.querySelector(&#39;.tf-numeric-input&#39;);
+        if (input) input.value = &#39;&#39;;
+      }
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (fb &amp;&amp; !fb.classList.contains(&#39;tf-model-answer&#39;)) fb.textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q9/&#34;&gt;← Previous: Q9&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/&#34;&gt;Back to Theoretical A →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=21&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q2 — CLK Mutation and Circadian PER Oscillations</title>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q2/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/9-ethology/biological-rhythms/&#34;&gt;Biological Rhythms&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Hall, Rosbash and Young were awarded the 2017 Nobel Prize for their discoveries of the molecular mechanisms that control circadian rhythms. &amp;lsquo;Period&amp;rsquo; (&lt;em&gt;PER&lt;/em&gt;) is a gene of the &lt;em&gt;Drosophila&lt;/em&gt; that undergoes strict circadian oscillations. Mutations to &lt;em&gt;PER&lt;/em&gt; alter or abolish the periodicity and phase of these rhythms. Another gene regulating the circadian rhythm is &amp;lsquo;clock&amp;rsquo; (&lt;em&gt;CLK&lt;/em&gt;). &lt;em&gt;Drosophila&lt;/em&gt; with a certain mutation in the &lt;em&gt;CLK&lt;/em&gt; gene sometimes have disrupted circadian rhythms as shown in Table 1.&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Condition&lt;/th&gt;
+					&lt;th&gt;Genotype&lt;/th&gt;
+					&lt;th&gt;Period of activity (h)&lt;/th&gt;
+					&lt;th&gt;% arrhythmic&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;12 hr light : 12 hr dark&lt;/td&gt;
+					&lt;td&gt;CLK +/+&lt;/td&gt;
+					&lt;td&gt;24.3&lt;/td&gt;
+					&lt;td&gt;0&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;12 hr light : 12 hr dark&lt;/td&gt;
+					&lt;td&gt;CLK +/-&lt;/td&gt;
+					&lt;td&gt;24.3&lt;/td&gt;
+					&lt;td&gt;36&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;12 hr light : 12 hr dark&lt;/td&gt;
+					&lt;td&gt;CLK -/-&lt;/td&gt;
+					&lt;td&gt;24.2&lt;/td&gt;
+					&lt;td&gt;86&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Constant darkness&lt;/td&gt;
+					&lt;td&gt;CLK +/+&lt;/td&gt;
+					&lt;td&gt;24.3&lt;/td&gt;
+					&lt;td&gt;1&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Constant darkness&lt;/td&gt;
+					&lt;td&gt;CLK +/-&lt;/td&gt;
+					&lt;td&gt;24.8&lt;/td&gt;
+					&lt;td&gt;47&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;Constant darkness&lt;/td&gt;
+					&lt;td&gt;CLK -/-&lt;/td&gt;
+					&lt;td&gt;ARR (arrhythmic)&lt;/td&gt;
+					&lt;td&gt;100&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;em&gt;Table 1.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Cloning revealed that these identified &lt;em&gt;CLK&lt;/em&gt; mutant flies have a premature stop codon that truncates the protein, making it non-functional. To determine the &lt;em&gt;in vivo&lt;/em&gt; regulatory pattern of the &lt;em&gt;PER&lt;/em&gt; gene, they generated transgenic &lt;em&gt;Drosophila&lt;/em&gt; strains carrying a luciferase cDNA fused to the promoter region of the &lt;em&gt;PER&lt;/em&gt; gene. Then they assayed the activity of luciferase (quantified in counts/s) in &lt;em&gt;Drosophila&lt;/em&gt; of the various &lt;em&gt;CLK&lt;/em&gt; genotypes. Results are shown in Figure 1. Note that the luciferase activity is proportional to the expression of the examined gene.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q2-figure-1.png&#34; alt=&#34;Luciferase (PER-promoter) activity over five days for CLK&amp;#43;/&amp;#43;, CLK&amp;#43;/- and CLK-/- flies, alternating 12h light/12h dark. CLK&amp;#43;/&amp;#43; shows the tallest, most sharply cycling peaks; CLK&amp;#43;/- cycles at the same times but with lower amplitude; CLK-/- is essentially flat throughout.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Fig.1. Axis 1 = Time (hours), white bars represent a 12 hour period of light, dark bars represent a 12 hour period of darkness. Axis 2 = Counts per Second.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Indicate with an &lt;strong&gt;X&lt;/strong&gt; if each of the following statements are true (T) or false (F).&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2019-theoretical-a-q2&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;false&#34;
+         data-explanation=&#34;FALSE. The CLK mutation is a premature stop codon that makes CLK itself non-functional — CLK is a transcription factor driving PER expression, not a component of the PER degradation machinery. The luciferase data show a defect in PER promoter transcriptional cycling, not in protein turnover.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q2.1.&lt;/span&gt; Behavioural effects of CLK mutation are largely due to a defect in the degradation of circadian rhythm proteins, including PER.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q2.1&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;true&#34;
+         data-explanation=&#34;TRUE. In CLK-/- flies, luciferase (PER promoter) activity is essentially flat/arrhythmic at the molecular level (matching the ARR = 100% arrhythmic result in Table 1&amp;#39;s Row 2), i.e. every CLK-/- fly loses the molecular rhythm — fully penetrant.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q2.2.&lt;/span&gt; The main effects of CLK mutation are fully penetrant at the molecular level.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q2.2&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;false&#34;
+         data-explanation=&#34;FALSE. Table 1 shows CLK-/- flies are not 100% arrhythmic behaviourally in the light:dark condition (Row 1), and even in constant darkness a docile fraction can still show some periodicity before full arrhythmicity sets in — behavioural penetrance is incomplete/graded, unlike the all-or-nothing molecular phenotype.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q2.3.&lt;/span&gt; The main effects of CLK mutation are fully penetrant at the behavioural level.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q2.3&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;false&#34;
+         data-explanation=&#34;FALSE. Figure 1 shows CLK&amp;#43;/- flies cycling with the same period/frequency as CLK&amp;#43;/&amp;#43; — the peaks line up at the same time points, just with lower amplitude. Frequency (how often it cycles) is unchanged; only the amplitude of luciferase counts is reduced.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q2.4.&lt;/span&gt; PER promoter activity cycled with a reduced frequency in CLK &amp;#43;/- flies compared to CLK &amp;#43;/&amp;#43; flies.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q2.4&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;true&#34;
+         data-explanation=&#34;TRUE. A dose-dependent reduction in PER-promoter-driven luciferase amplitude (CLK&amp;#43;/&amp;#43; &amp;gt; CLK&amp;#43;/- &amp;gt; CLK-/-) with unchanged timing is exactly the signature expected if CLK directly activates PER transcription — fewer functional CLK copies mean weaker (but not necessarily mistimed) activation of the PER promoter.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q2.5.&lt;/span&gt; The results shown could be explained by CLK acting as a transcription factor on PER.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q2.5&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;true&#34;
+         data-explanation=&#34;TRUE. Table 1, Row 2 (constant darkness), CLK&amp;#43;/&amp;#43; genotype shows a period of 24.3 hours — consistent with the free-running circadian period of wild-type Drosophila being close to, but not exactly, 24 hours.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q2.6.&lt;/span&gt; In constant dark, the circadian periodicity of wild-type Drosophila is approximately 24 hours.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q2.6&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var wrap = document.currentScript.previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== &#39;free_response&#39;; });
+
+  rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === &#39;free_response&#39;) {
+      var revealBtn = row.querySelector(&#39;.tf-reveal-btn&#39;);
+      var answerBox = row.querySelector(&#39;.tf-model-answer&#39;);
+      revealBtn.addEventListener(&#39;click&#39;, function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? &#39;Reveal Model Answer&#39; : &#39;Hide Model Answer&#39;;
+      });
+      return; 
+    }
+
+    if (type === &#39;numeric&#39;) return; 
+
+    
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      var isCorrect, hasAnswer;
+
+      if (type === &#39;numeric&#39;) {
+        var raw = row.querySelector(&#39;.tf-numeric-input&#39;).value;
+        hasAnswer = raw !== &#39;&#39;;
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) &amp;&amp; Math.abs(val - expected) &lt;= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + gradableRows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn.selected&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      if (row.dataset.type === &#39;numeric&#39;) {
+        var input = row.querySelector(&#39;.tf-numeric-input&#39;);
+        if (input) input.value = &#39;&#39;;
+      }
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (fb &amp;&amp; !fb.classList.contains(&#39;tf-model-answer&#39;)) fb.textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q1/&#34;&gt;← Previous: Q1&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q3/&#34;&gt;Next: Q3 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=6&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q3 — GPCR Signalling and a Toxin Acting on the Gs Cycle</title>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q3/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/cell-signaling-communication/&#34;&gt;Cell Signaling &amp; Communication&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;G protein-coupled receptors (GPCRs) interact with G proteins that subsequently affect cell function through the generation of second messengers. Cyclic AMP (cAMP) generated by adenylyl cyclase controls cell functions via activation of protein kinases. GPCRs may either activate or inhibit the cyclase through the G proteins Gs and Gi, respectively. The difference between Gs and Gi resides in the α subunit, which binds and hydrolyses GTP. The Gs protein cycle is illustrated below.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q3-figure-1.png&#34; alt=&#34;The Gs G-protein cycle: (1) GTP displaces GDP on the receptor-bound Gs heterotrimer; (2) the activated receptor dissociates; (3) GTP-bound αs splits from βγ and activates adenylyl cyclase (AC), converting ATP to cAMP; (4) αs hydrolyses GTP to GDP &amp;#43; Pi, and βγ/αs-GDP reassociate, resetting the cycle.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Fig.1.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;A lab is working on a pair of newly identified GPCRs, &amp;ldquo;GPCR-A&amp;rdquo; and &amp;ldquo;GPCR-B&amp;rdquo;. Each binds the same small ligand with the same affinity but activates different G-proteins that act on adenylyl cyclase. When activated, GPCR-A causes an increase in adenylyl cyclase activity, while GPCR-B causes a decrease in adenylyl cyclase activity. They have a cell line that expresses both GPCR-A, GPCR-B, the corresponding G-proteins, and adenylyl cyclase. There is a basal level of adenylyl cyclase activity that produces a baseline cAMP concentration.&lt;/p&gt;
+&lt;p&gt;A member of the lab studying a pathogenic bacterium has discovered that it secretes a toxin that interferes with the mentioned signalling pathway. To determine how this toxin acts, she did an experiment in which she looked at intracellular cAMP levels in untreated and toxin treated cells (the original ligand of the receptors was not added in either of the experiments).&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q3-figure-2.png&#34; alt=&#34;Bar chart: intracellular cAMP concentration, untreated (Legend 1, low, ~1.3 pmol/mL) vs. toxin-treated (Legend 2, high, ~19 pmol/mL) — no ligand added in either condition.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Fig.2. Axis = cAMP concentration (pmol/mL). Legend 1 = Toxin −. Legend 2 = Toxin +.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Indicate with an &lt;strong&gt;X&lt;/strong&gt; whether each of the following mutations increase (A), leave not changed (B), or decrease (C) the intracellular levels of cAMP upon ligand addition, in the absence of the toxin. Remember, both GPCR-A and GPCR-B bind the same ligand! (Q3.1–Q3.6)&lt;/p&gt;
+&lt;p&gt;What is/are the &lt;strong&gt;possible&lt;/strong&gt; explanation(s) for the mechanism by which the toxin affects adenylyl cyclase activity, based on Fig.2? Indicate TRUE or FALSE for each. (Q3.7–Q3.11)&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2019-theoretical-a-q3&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;C&#34;
+         data-explanation=&#34;GPCR-A normally raises cAMP by activating Gs → adenylyl cyclase. If the mutation prevents G protein activation, GPCR-A can no longer trigger that rise, so the ligand-induced cAMP increase is lost — cAMP ends up lower than the normal (functional-GPCR-A) response, i.e. decreased.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q3.1.&lt;/span&gt; A mutation in GPCR-A (which activates adenylyl cyclase) that PREVENTS G protein activation — effect on intracellular cAMP upon ligand addition (no toxin)?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q3.1&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Increased&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Not changed&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Decreased&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;A&#34;
+         data-explanation=&#34;GPCR-B normally lowers cAMP by activating Gi, which inhibits adenylyl cyclase. If GPCR-B can no longer activate its G protein, that inhibitory brake is lost, so GPCR-A&amp;#39;s stimulatory effect (both receptors bind the same ligand) goes unopposed — net cAMP increases relative to the normal dual-receptor response.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q3.2.&lt;/span&gt; A mutation in GPCR-B (which inhibits adenylyl cyclase) that PREVENTS G protein activation — effect on intracellular cAMP upon ligand addition (no toxin)?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q3.2&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Increased&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Not changed&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Decreased&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;C&#34;
+         data-explanation=&#34;GDP release (step 1 in Fig.1) is required before GTP can load onto Gs and activate it. Blocking GDP release locks Gs in its inactive, GDP-bound state permanently — GPCR-A can no longer stimulate adenylyl cyclase via Gs, so cAMP decreases.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q3.3.&lt;/span&gt; A mutation in Gs that PREVENTS release of bound GDP — effect on cAMP upon ligand addition (no toxin)?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q3.3&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Increased&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Not changed&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Decreased&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;A&#34;
+         data-explanation=&#34;By the same logic as Gs, locking Gi in its inactive GDP-bound state means GPCR-B can never activate Gi to inhibit adenylyl cyclase — the inhibitory arm is permanently disabled, so cAMP is higher than normal.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q3.4.&lt;/span&gt; A mutation in Gi that PREVENTS release of bound GDP — effect on cAMP upon ligand addition (no toxin)?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q3.4&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Increased&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Not changed&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Decreased&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;A&#34;
+         data-explanation=&#34;GTP hydrolysis (step 4 in Fig.1) normally terminates Gs signalling. Blocking it leaves the GTP-bound, active αs subunit locked on, continuously stimulating adenylyl cyclase — cAMP rises above the normal transient response.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q3.5.&lt;/span&gt; A mutation in Gs that PREVENTS GTP hydrolysis — effect on cAMP upon ligand addition (no toxin)?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q3.5&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Increased&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Not changed&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Decreased&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;C&#34;
+         data-explanation=&#34;By the same logic, locking Gi permanently GTP-bound/active means adenylyl cyclase is continuously inhibited — cAMP falls below the normal response.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q3.6.&lt;/span&gt; A mutation in Gi that PREVENTS GTP hydrolysis — effect on cAMP upon ligand addition (no toxin)?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q3.6&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Increased&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Not changed&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Decreased&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;true&#34;
+         data-explanation=&#34;TRUE (a possible explanation). Fig.2 shows toxin treatment causes a large INCREASE in cAMP (with no ligand added, so this must reflect a change in basal/tonic signalling balance). If the toxin blocks Gi activation, the tonic inhibitory tone on adenylyl cyclase is lost, consistent with elevated cAMP.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q3.7.&lt;/span&gt; The toxin inhibits activation of Gi in response to receptor stimulation.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q3.7&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;true&#34;
+         data-explanation=&#34;TRUE (a possible explanation). Blocking GTP hydrolysis in Gs (as in Q3.5) locks Gs active, continuously stimulating adenylyl cyclase — also consistent with the large cAMP increase seen in Fig.2, independent of new ligand binding.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q3.8.&lt;/span&gt; The toxin inhibits GTP hydrolysis in Gs.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q3.8&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;false&#34;
+         data-explanation=&#34;FALSE. If the toxin activated ALL G proteins (both Gs and Gi) persistently, the stimulatory and inhibitory effects on adenylyl cyclase would tend to cancel out, not produce the large net cAMP increase actually observed — this explanation doesn&amp;#39;t fit the data as cleanly as toxin acting selectively on the Gi/Gs balance.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q3.9.&lt;/span&gt; The toxin mimics GTP and causes persistent activation of all G proteins.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q3.9&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;false&#34;
+         data-explanation=&#34;FALSE. Fig.2&amp;#39;s experiment specifically excludes ligand addition, so an effect purely at the level of GPCR-A itself (upstream of the G protein) can&amp;#39;t explain a receptor-independent cAMP change — and inhibiting a stimulatory receptor would be expected to lower, not raise, cAMP.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q3.10.&lt;/span&gt; The toxin is an inhibitor of GPCR-A receptor.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q3.10&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;false&#34;
+         data-explanation=&#34;FALSE. GPCR-B is inhibitory (lowers cAMP via Gi) — activating it would be expected to decrease cAMP, the opposite of the large increase actually observed in Fig.2.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q3.11.&lt;/span&gt; The toxin is an activator of GPCR-B receptor.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q3.11&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var wrap = document.currentScript.previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== &#39;free_response&#39;; });
+
+  rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === &#39;free_response&#39;) {
+      var revealBtn = row.querySelector(&#39;.tf-reveal-btn&#39;);
+      var answerBox = row.querySelector(&#39;.tf-model-answer&#39;);
+      revealBtn.addEventListener(&#39;click&#39;, function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? &#39;Reveal Model Answer&#39; : &#39;Hide Model Answer&#39;;
+      });
+      return; 
+    }
+
+    if (type === &#39;numeric&#39;) return; 
+
+    
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      var isCorrect, hasAnswer;
+
+      if (type === &#39;numeric&#39;) {
+        var raw = row.querySelector(&#39;.tf-numeric-input&#39;).value;
+        hasAnswer = raw !== &#39;&#39;;
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) &amp;&amp; Math.abs(val - expected) &lt;= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + gradableRows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn.selected&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      if (row.dataset.type === &#39;numeric&#39;) {
+        var input = row.querySelector(&#39;.tf-numeric-input&#39;);
+        if (input) input.value = &#39;&#39;;
+      }
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (fb &amp;&amp; !fb.classList.contains(&#39;tf-model-answer&#39;)) fb.textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q2/&#34;&gt;← Previous: Q2&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q4/&#34;&gt;Next: Q4 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=8&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q4 — CDK Knockout and Liver Regeneration</title>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q4/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/cell-cycle-mitosis-meiosis/&#34;&gt;Cell Cycle, Mitosis &amp; Meiosis&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;CDK is a family of cyclin dependent kinases which drive the cell cycle. A portion of the liver was removed in WT mice, or in livers which had a particular &lt;em&gt;CDK&lt;/em&gt; gene knocked-out. Mice were allowed to regenerate, then their regenerated livers were weighed, measured and stained. Individual liver cells were removed and stained for total DNA content, or for newly synthesised DNA (Figure 1).&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q4-figure-1.png&#34; alt=&#34;Five-panel figure: (top) photos of a regenerated wild-type liver vs. a CDK-/- liver, similar size; (scatter plot) liver mass at 4 and 21 days, WT and CDK-/- overlapping; (histology) H&amp;E-stained hepatocyte nuclei, CDK-/- nuclei visibly larger; (DNA-content histogram) WT shows one main peak, CDK-/- shows several higher-ploidy peaks; (flow cytometry) newly-synthesised DNA vs. total DNA content, WT and CDK-/- patterns similar.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Fig.1. Axis 1 = Liver mass. Axis 2 = DNA content. Axis 3 = # of cells. Axis 4 = DNA content. Axis 5 = Newly synthesised DNA. Legend 1 = 4 days. Legend 2 = 21 days (left side = wild-type, right side = CDK-/-).&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Indicate with an &lt;strong&gt;X&lt;/strong&gt; whether you would expect the number or amount of each of the following structures to increase (A), not change (B), or decrease (C) in &lt;em&gt;CDK&lt;/em&gt; knock-out livers versus wild-type ones.&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2019-theoretical-a-q4&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;B&#34;
+         data-explanation=&#34;The Axis-1 scatter plot (liver mass) shows overlapping WT and CDK-/- ranges at both the 4-day and 21-day time points — regeneration still restores liver MASS to a comparable degree, just by a different cellular route (hypertrophy instead of proliferation).&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q4.1.&lt;/span&gt; In CDK knock-out livers vs. wild-type, after regeneration — Liver mass:&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q4.1&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Increased&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Not changed&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Decreased&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;C&#34;
+         data-explanation=&#34;Without functional CDK, cells cannot complete the cell-division cycle, so the liver cannot regenerate mass by making more (smaller) cells — hepatocyte number decreases even though total mass is preserved (see Q4.1).&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q4.2.&lt;/span&gt; In CDK knock-out livers vs. wild-type, after regeneration — Hepatocyte number:&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q4.2&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Increased&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Not changed&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Decreased&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;A&#34;
+         data-explanation=&#34;The DNA-content histogram (Axis 2/3) shows CDK-/- hepatocytes with extra higher-DNA-content peaks compared to WT — cells keep replicating their DNA (endoreduplicating) without completing division, becoming polyploid, which is exactly how the missing mass gets made up with fewer, larger cells.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q4.3.&lt;/span&gt; In CDK knock-out livers vs. wild-type, after regeneration — Average hepatocyte ploidy:&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q4.3&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Increased&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Not changed&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Decreased&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;C&#34;
+         data-explanation=&#34;CDK activity is required to enter mitosis. Without it, cells arrest before mitosis (even though they can still replicate DNA), so far fewer cells ever assemble a mitotic spindle.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q4.4.&lt;/span&gt; In CDK knock-out livers vs. wild-type, after regeneration — Number of mitotic spindles:&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q4.4&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Increased&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Not changed&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Decreased&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;B&#34;
+         data-explanation=&#34;The newly-synthesised-DNA flow-cytometry plots (Axis 4/5) look similar between WT and CDK-/- — S-phase (DNA replication) still proceeds essentially normally; it&amp;#39;s specifically mitotic entry/completion that&amp;#39;s blocked, which is why cells become polyploid rather than simply failing to replicate at all.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q4.5.&lt;/span&gt; In CDK knock-out livers vs. wild-type, after regeneration — DNA synthesis:&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q4.5&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Increased&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Not changed&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Decreased&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var wrap = document.currentScript.previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== &#39;free_response&#39;; });
+
+  rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === &#39;free_response&#39;) {
+      var revealBtn = row.querySelector(&#39;.tf-reveal-btn&#39;);
+      var answerBox = row.querySelector(&#39;.tf-model-answer&#39;);
+      revealBtn.addEventListener(&#39;click&#39;, function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? &#39;Reveal Model Answer&#39; : &#39;Hide Model Answer&#39;;
+      });
+      return; 
+    }
+
+    if (type === &#39;numeric&#39;) return; 
+
+    
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      var isCorrect, hasAnswer;
+
+      if (type === &#39;numeric&#39;) {
+        var raw = row.querySelector(&#39;.tf-numeric-input&#39;).value;
+        hasAnswer = raw !== &#39;&#39;;
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) &amp;&amp; Math.abs(val - expected) &lt;= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + gradableRows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn.selected&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      if (row.dataset.type === &#39;numeric&#39;) {
+        var input = row.querySelector(&#39;.tf-numeric-input&#39;);
+        if (input) input.value = &#39;&#39;;
+      }
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (fb &amp;&amp; !fb.classList.contains(&#39;tf-model-answer&#39;)) fb.textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q3/&#34;&gt;← Previous: Q3&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q5/&#34;&gt;Next: Q5 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=10&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q5 — UCP Family and Non-Shivering Thermogenesis</title>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q5/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/comparative-thermoregulation/&#34;&gt;Comparative Thermoregulation&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;One way of heat production is non-shivering thermogenesis, mediated by norepinephrine via upregulation of mitochondrial uncoupling channel proteins (UCP) in brown adipose tissue (BAT). UCP increases the H⁺ conductance of the inner mitochondrial membrane to dissipate the mitochondrial H⁺ gradient and convert the energy of substrate oxidation into heat. To identify the member(s) of the UCP family responsible for the process, we carried out two experiments.&lt;/p&gt;
+&lt;p&gt;Figure 1 compares relative effects of acclimation to a cool environment for mice (from thermoneutrality at 30°C to the relative cold of 18°C) on the mRNA levels of different members of the uncoupling protein family in BAT.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q5-figure-1.png&#34; alt=&#34;Line graph: UCP1, UCP2 and UCP3 mRNA (% of 30°C level) at acclimation temperatures 18°C, 24°C and 30°C. UCP1 is highest overall and rises steeply from ~100 (at 30°C) to ~1700 (at 18°C). UCP3 rises more modestly, from ~100 to ~700. UCP2 stays low and flat throughout.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Fig.1. Axis 1 = Acclimation temperature (°C). Axis 2 = % of 30°C level.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In a following experiment, three transgenic mouse strains were generated, bearing a single knock out mutation of either UCP1 or UCP3 and another bearing knock out mutations of both UCP1 and UCP3. We then measured metabolic rate in warm acclimated (30°C) and cool acclimated (18°C) conditions. In each case, besides the basal metabolic rate, we also measured metabolic rate following the injection of norepinephrine (NE).&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q5-figure-2.png&#34; alt=&#34;Bar chart, four groups (normal, UCP1-KO, UCP3-KO, UCP1&amp;#43;UCP3 double-KO mice) × warm/cool acclimation × ± NE. Normal mice: warm 7.5→15 with NE, cool 10→26 with NE. UCP1-KO: warm 7.5→12, cool 10→15. UCP3-KO: warm 6→13, cool 8→24. Double-KO: warm 7.5→12, cool 10→15.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Fig.2. Axis = Metabolic rate (ml O₂·min⁻¹·kg⁻¹). Title 1 = Normal mice. Title 2 = UCP1-knockout mice. Title 3 = UCP3-knockout mice. Title 4 = UCP3-UCP1-double knockout mice. Legend 1 = Warm-acclimated. Legend 2 = Cool-acclimated.&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2019-theoretical-a-q5&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;numeric&#34; data-expected=&#34;11&#34; data-tolerance=&#34;0.5&#34;
+         data-explanation=&#34;Compare the NE-stimulated, cool-acclimated response with UCP1 present (Title 1, normal mice: 26) against the same condition with UCP1 absent (Title 2, UCP1-knockout: 15). The difference, 26 − 15 = 11 ml O2·min⁻¹·kg⁻¹, isolates the portion of the NE response that specifically depends on UCP1.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q5.1.&lt;/span&gt; Estimate the increase in metabolic rate due to UCP1-dependent thermogenesis after NE stimulation in cool-acclimated mice (in ml O2·min⁻¹·kg⁻¹).&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-numeric&#34;&gt;
+        &lt;input type=&#34;number&#34; step=&#34;any&#34; class=&#34;tf-numeric-input&#34; placeholder=&#34;Your answer&#34;&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;numeric&#34; data-expected=&#34;0.125&#34; data-tolerance=&#34;0.01&#34;
+         data-explanation=&#34;Use the double UCP1/UCP3 knockout (Title 4), where any remaining NE-induced increase in metabolic rate is by definition independent of both proteins: 15 − 10 = 5 ml O2·min⁻¹·kg⁻¹. Converting to an absolute rate for a 25 g (0.025 kg) mouse: 5 × 0.025 = 0.125 ml O2·min⁻¹.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q5.2.&lt;/span&gt; Calculate the increase in O2 consumption in a 25-gram cool-acclimated mouse that results from NE stimulation but cannot be explained by UCP1 or UCP3 activity (in ml·min⁻¹).&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-numeric&#34;&gt;
+        &lt;input type=&#34;number&#34; step=&#34;any&#34; class=&#34;tf-numeric-input&#34; placeholder=&#34;Your answer&#34;&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;false&#34;
+         data-explanation=&#34;FALSE. UCP1 is a passive channel that increases the membrane&amp;#39;s H&amp;#43; conductance, allowing protons to leak down their existing electrochemical gradient — it does not actively pump ions against a gradient (that would require its own energy source, which would be self-defeating for a protein whose entire job is to dissipate the gradient).&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q5.3.&lt;/span&gt; UCP1 actively pumps H&amp;#43; ions across the inner mitochondrial membrane.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q5.3&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;true&#34;
+         data-explanation=&#34;TRUE. Fig.1 shows UCP1 mRNA is both the most highly expressed of the three UCPs at cold acclimation (18°C) and shows by far the largest fold-increase going from 30°C to 18°C — the strongest, most cold-responsive signal of the three.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q5.4.&lt;/span&gt; The results from this experiment suggest that UCP1 is the most important UCP for non-shivering thermogenesis in response to cold.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q5.4&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;false&#34;
+         data-explanation=&#34;FALSE. DNP uncouples oxidative phosphorylation, converting the energy of substrate oxidation into heat rather than ATP — cells still oxidise substrate (often at an accelerated rate to compensate), so the actual clinical picture of DNP overdose is dangerous HYPERTHERMIA, not hypothermia.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q5.5.&lt;/span&gt; Patients taking DNP experience hypothermia as their cells are not able to generate energy.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q5.5&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;true&#34;
+         data-explanation=&#34;TRUE per the official key. With oxidative phosphorylation uncoupled, cells become more reliant on substrate-level phosphorylation (glycolysis) to maintain ATP supply — providing glucose supports this compensatory glycolytic ATP production while the mitochondrial proton gradient remains dissipated.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q5.6.&lt;/span&gt; A patient with mild DNP overdose can be treated by glucose administration.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q5.6&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;true&#34;
+         data-explanation=&#34;TRUE. UCP1-mediated uncoupling in brown adipose tissue, described throughout this very question, is itself a normal, regulated physiological process (non-shivering thermogenesis) — not something that only happens pathologically.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q5.7.&lt;/span&gt; Mitochondrial uncoupling occurs under certain physiological conditions in animals.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q5.7&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;false&#34;
+         data-explanation=&#34;FALSE. The opposite is true — because DNP makes ATP production inefficient, cells (and mitochondria) increase substrate oxidation and O2 consumption to try to compensate, which is exactly why DNP was historically (and dangerously) used as a weight-loss drug.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q5.8.&lt;/span&gt; DNP reduces the oxygen consumption of cells.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q5.8&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;true&#34;
+         data-explanation=&#34;TRUE. DNP lets H&amp;#43; leak from the intermembrane space (where the proton-pumping electron transport chain has concentrated them, making it acidic) back down its gradient into the matrix. Losing H&amp;#43; from the intermembrane space raises its pH (makes it less acidic).&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q5.9.&lt;/span&gt; DNP increases the pH in the mitochondrial intermembrane space.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q5.9&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var wrap = document.currentScript.previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== &#39;free_response&#39;; });
+
+  rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === &#39;free_response&#39;) {
+      var revealBtn = row.querySelector(&#39;.tf-reveal-btn&#39;);
+      var answerBox = row.querySelector(&#39;.tf-model-answer&#39;);
+      revealBtn.addEventListener(&#39;click&#39;, function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? &#39;Reveal Model Answer&#39; : &#39;Hide Model Answer&#39;;
+      });
+      return; 
+    }
+
+    if (type === &#39;numeric&#39;) return; 
+
+    
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      var isCorrect, hasAnswer;
+
+      if (type === &#39;numeric&#39;) {
+        var raw = row.querySelector(&#39;.tf-numeric-input&#39;).value;
+        hasAnswer = raw !== &#39;&#39;;
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) &amp;&amp; Math.abs(val - expected) &lt;= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + gradableRows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn.selected&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      if (row.dataset.type === &#39;numeric&#39;) {
+        var input = row.querySelector(&#39;.tf-numeric-input&#39;);
+        if (input) input.value = &#39;&#39;;
+      }
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (fb &amp;&amp; !fb.classList.contains(&#39;tf-model-answer&#39;)) fb.textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q4/&#34;&gt;← Previous: Q4&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q6/&#34;&gt;Next: Q6 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=12&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q6 — A Two-Polypeptide Gene with an Intron</title>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q6/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/dna-structure-replication/&#34;&gt;DNA Structure &amp; Replication&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;You are studying a small protein-coding locus, the sequence of which is shown below (5&amp;rsquo; transcriptional START to 3&amp;rsquo; transcriptional STOP). This part is responsible for coding of two different polypeptides. There is a short intron sequence, shown in &lt;strong&gt;bold&lt;/strong&gt;. A C:G base pair discussed in Q6.5 is &lt;u&gt;underlined&lt;/u&gt;.&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
+
+&lt;div&gt;&lt;pre&gt;&lt;code&gt;5&amp;#39;-CTACGTACTATGTATTCCGATCTATACTCGATCTAGTCGCATTCCGATAAGATCGTAC-3&amp;#39;
+3&amp;#39;-GATGCATGATACATAAGGCTAGATATGAGCTAGATCAGCGTAAGGCTATTCTAGCATG-5&amp;#39;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx:opacity-0 hx:transition hx:group-hover/code:opacity-100 hx:flex hx:gap-1 hx:absolute hx:m-[11px] hx:right-0 hx:top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx:group/copybtn hx:cursor-pointer hx:transition-all hx:active:opacity-50 hx:bg-primary-700/5 hx:border hx:border-black/5 hx:text-gray-600 hx:hover:text-gray-900 hx:rounded-md hx:p-1.5 hx:dark:bg-primary-300/10 hx:dark:border-white/10 hx:dark:text-gray-400 hx:dark:hover:text-gray-50&#34;
+    title=&#34;Copy code&#34;
+    aria-label=&#34;Copy code&#34;
+    data-copied-label=&#34;Copied!&#34;
+  &gt;
+    &lt;div class=&#34;hextra-copy-icon hx:group-[.copied]/copybtn:hidden hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;hextra-success-icon hx:hidden hx:group-[.copied]/copybtn:block hx:pointer-events-none hx:h-4 hx:w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;(intron, bold in the original: &lt;strong&gt;GATCTATA&lt;/strong&gt; / &lt;strong&gt;CTAGATAT&lt;/strong&gt; — the underlined base pair for Q6.5 is the C:G pair immediately after the intron.)&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2019-theoretical-a-q6&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;numeric&#34; data-expected=&#34;50&#34; data-tolerance=&#34;0&#34;
+         data-explanation=&#34;Splicing removes the 8-nucleotide intron from the 58-nucleotide pre-mRNA: 58 − 8 = 50 nucleotides.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q6.1.&lt;/span&gt; The 58 bp locus shown codes for two different polypeptides and contains a short (8 bp) intron. How many nucleotides long would the final processed mRNA be (not including the 5&amp;#39; cap and 3&amp;#39; polyA tail)?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-numeric&#34;&gt;
+        &lt;input type=&#34;number&#34; step=&#34;any&#34; class=&#34;tf-numeric-input&#34; placeholder=&#34;Your answer&#34;&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;A&#34;
+         data-explanation=&#34;RNA polymerase always reads its template 3&amp;#39;→5&amp;#39; while synthesising mRNA 5&amp;#39;→3&amp;#39;. Translating the resulting mRNA against the genetic code (starting from the first available ATG) only produces a sensible open reading frame — ending in an in-frame stop codon at a position consistent with the rest of the question — when the strand printed reading 5&amp;#39;→3&amp;#39; serves as the template, so that the actual coding (sense) sequence is complementary to it.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q6.2.&lt;/span&gt; Which strand is used as the template in transcription for the shorter polypeptide — the strand shown reading 5&amp;#39;→3&amp;#39;, or the strand shown reading 3&amp;#39;→5&amp;#39; (both read left to right as printed)?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q6.2&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) The strand shown reading 5&amp;#39;→3&amp;#39; (top row as printed)&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) The strand shown reading 3&amp;#39;→5&amp;#39; (bottom row as printed)&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;numeric&#34; data-expected=&#34;1.25&#34; data-tolerance=&#34;0.02&#34;
+         data-explanation=&#34;Translating from the first ATG: the spliced (intron-removed) transcript encodes a 10-residue polypeptide before its stop codon, while the intron-retained transcript shifts into a different downstream frame and terminates earlier, at 8 residues. 10 / 8 = 1.25.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q6.3.&lt;/span&gt; What is the ratio of the numbers of amino acids in the longer/shorter polypeptide (including the amino acid built in because of the START codon)? Give your answer to the nearest second decimal place.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-numeric&#34;&gt;
+        &lt;input type=&#34;number&#34; step=&#34;any&#34; class=&#34;tf-numeric-input&#34; placeholder=&#34;Your answer&#34;&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;free_response&#34; data-answer=&#34;&#34;
+         data-explanation=&#34;The shorter polypeptide&amp;#39;s first three codons translate to Met–Arg–Leu, so its third residue is Leucine (L).&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q6.4.&lt;/span&gt; What is the third amino acid of the shorter polypeptide, if the initiator Met is counted as the first? Give the one-letter amino acid code.&lt;/div&gt;
+      &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-reveal-btn&#34;&gt;Reveal Model Answer&lt;/button&gt;
+      &lt;div class=&#34;tf-quiz-feedback tf-model-answer&#34; hidden&gt;L (Leucine) — The shorter polypeptide&amp;#39;s first three codons translate to Met–Arg–Leu, so its third residue is Leucine (L).&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;D&#34;
+         data-explanation=&#34;A single base substitution within a codon that is neither synonymous (same amino acid) nor a premature stop simply swaps in a different amino acid at that position — the definition of a missense mutation. It doesn&amp;#39;t shift the reading frame (only one base changes, not an insertion/deletion) and it isn&amp;#39;t silent (the codon identity changes) or nonsense (no stop codon is created here).&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q6.5.&lt;/span&gt; The C:G base pair underlined in the sequence was changed to an A:T base pair, creating a mutant form of this gene. What kind of mutation would this be for the shorter polypeptide?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q6.5&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) A frameshift mutation&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) A nonsense mutation&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) A silent mutation&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;D&#34;&gt;D) A missense mutation&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var wrap = document.currentScript.previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== &#39;free_response&#39;; });
+
+  rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === &#39;free_response&#39;) {
+      var revealBtn = row.querySelector(&#39;.tf-reveal-btn&#39;);
+      var answerBox = row.querySelector(&#39;.tf-model-answer&#39;);
+      revealBtn.addEventListener(&#39;click&#39;, function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? &#39;Reveal Model Answer&#39; : &#39;Hide Model Answer&#39;;
+      });
+      return; 
+    }
+
+    if (type === &#39;numeric&#39;) return; 
+
+    
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      var isCorrect, hasAnswer;
+
+      if (type === &#39;numeric&#39;) {
+        var raw = row.querySelector(&#39;.tf-numeric-input&#39;).value;
+        hasAnswer = raw !== &#39;&#39;;
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) &amp;&amp; Math.abs(val - expected) &lt;= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + gradableRows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn.selected&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      if (row.dataset.type === &#39;numeric&#39;) {
+        var input = row.querySelector(&#39;.tf-numeric-input&#39;);
+        if (input) input.value = &#39;&#39;;
+      }
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (fb &amp;&amp; !fb.classList.contains(&#39;tf-model-answer&#39;)) fb.textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q5/&#34;&gt;← Previous: Q5&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q7/&#34;&gt;Next: Q7 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=14&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q7 — Thermus szegediensis: Nutrition and Complementation</title>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q7/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/cell-theory-prokaryotes-eukaryotes/&#34;&gt;Cell Theory, Prokaryotes &amp; Eukaryotes&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;A microbiology lab studies the microbe &lt;em&gt;Thermus szegediensis&lt;/em&gt;, recently isolated from a thermal spring in Szeged. In a sequence of experiments (Exp), they first grew &lt;em&gt;T. szegediensis&lt;/em&gt; under different conditions to test its nutritional requirements.&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;Conditions&lt;/th&gt;
+					&lt;th&gt;Exp 1&lt;/th&gt;
+					&lt;th&gt;Exp 2&lt;/th&gt;
+					&lt;th&gt;Exp 3&lt;/th&gt;
+					&lt;th&gt;Exp 4&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;light&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;oxygen&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;nitrogen&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;phosphorus&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;thermal water salts&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;glucose&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;trace minerals&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;Growth?&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;yes&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;yes&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;yes&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;strong&gt;yes&lt;/strong&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;em&gt;Table 1.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The lab was further interested in finding genes important for the microbe to exist at high temperatures. They isolated 6 mutants (M1–M6), then performed a complementation test between each (&amp;quot;+&amp;quot; = growth, &amp;ldquo;−&amp;rdquo; = no growth) at T = 56°C.&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;M1&lt;/th&gt;
+					&lt;th&gt;M2&lt;/th&gt;
+					&lt;th&gt;M3&lt;/th&gt;
+					&lt;th&gt;M4&lt;/th&gt;
+					&lt;th&gt;M5&lt;/th&gt;
+					&lt;th&gt;M6&lt;/th&gt;
+					&lt;th&gt;WT&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;M1&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;M2&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;M3&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;M4&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;M5&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;M6&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;WT&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;+&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;em&gt;Table 2.&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2019-theoretical-a-q7&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;B&#34;
+         data-explanation=&#34;Growth with neither light nor glucose rules out a dependence on either photosynthesis or an organic carbon/energy source — it must derive both energy and carbon from inorganic sources (likely reduced inorganic compounds in the thermal water), the definition of a chemoautotroph.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q7.1.&lt;/span&gt; A microbiology lab studies Thermus szegediensis, isolated from a thermal spring. It was grown under different combinations of light and glucose (all other nutrients, including thermal water salts, always present) — see Table 1 on the exam page. It grew in all four conditions, including with neither light nor glucose. Which of the following best describes T. szegediensis?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q7.1&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Photoautotroph&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Chemoautotroph&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Photoheterotroph&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;D&#34;&gt;D) Chemoheterotroph&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;C&#34;
+         data-explanation=&#34;As a chemoautotroph isolated from a sulfur-rich thermal spring environment, T. szegediensis most plausibly oxidises a reduced sulfur compound like H2S for energy — classic chemolithotrophic metabolism seen in many thermophiles.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q7.2.&lt;/span&gt; Which of the following does T. szegediensis most likely use as an energy source to produce complex organic compounds?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q7.2&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) SO4^2-&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Light&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) H2S&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;D&#34;&gt;D) NO3^-&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;E&#34;&gt;E) H2O&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;F&#34;&gt;F) Chlorophyll&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;G&#34;&gt;G) lactic acid&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;B&#34;
+         data-explanation=&#34;M1 × WT grows (&amp;#43;), so a single WT copy rescues the phenotype — recessive.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q7.3 (M1).&lt;/span&gt; The lab isolated 6 mutants (M1–M6) unable to grow at 56°C and tested pairwise complementation (Table 2). A mutant that still fails to grow even when crossed with WT reveals a dominant mutation; one that grows when crossed with WT is recessive. Classify M1.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q7.3 (M1)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Dominant&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Recessive&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;A&#34;
+         data-explanation=&#34;M2 × WT still fails to grow (−) — a WT copy cannot rescue it, so the mutation is dominant. M2 is the only one of the six mutants with this property.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q7.3 (M2).&lt;/span&gt; Classify M2 as dominant or recessive.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q7.3 (M2)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Dominant&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Recessive&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;B&#34;
+         data-explanation=&#34;M3 × WT grows (&amp;#43;) — recessive.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q7.3 (M3).&lt;/span&gt; Classify M3 as dominant or recessive.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q7.3 (M3)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Dominant&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Recessive&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;B&#34;
+         data-explanation=&#34;M4 × WT grows (&amp;#43;) — recessive.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q7.3 (M4).&lt;/span&gt; Classify M4 as dominant or recessive.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q7.3 (M4)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Dominant&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Recessive&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;B&#34;
+         data-explanation=&#34;M5 × WT grows (&amp;#43;) — recessive.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q7.3 (M5).&lt;/span&gt; Classify M5 as dominant or recessive.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q7.3 (M5)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Dominant&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Recessive&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;B&#34;
+         data-explanation=&#34;M6 × WT grows (&amp;#43;) — recessive.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q7.3 (M6).&lt;/span&gt; Classify M6 as dominant or recessive.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q7.3 (M6)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Dominant&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Recessive&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;free_response&#34; data-answer=&#34;&#34;
+         data-explanation=&#34;Among the five recessive mutants, pairwise complementation groups them as {M1, M4} (fail to complement each other — same gene) and {M3, M5, M6} (all mutually fail to complement — same gene), giving 2 genes among the recessive set. M2&amp;#39;s dominant mutation can&amp;#39;t be placed into either group by standard complementation testing, so it&amp;#39;s counted as a plausible third, distinct gene — hence &amp;#39;2 or 3&amp;#39; both earn credit.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q7.4.&lt;/span&gt; From the data in Table 2, at least how many different genes can you identify as being important for allowing T. szegediensis to exist at high temperatures?&lt;/div&gt;
+      &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-reveal-btn&#34;&gt;Reveal Model Answer&lt;/button&gt;
+      &lt;div class=&#34;tf-quiz-feedback tf-model-answer&#34; hidden&gt;2 or 3 (both accepted by the official key) — Among the five recessive mutants, pairwise complementation groups them as {M1, M4} (fail to complement each other — same gene) and {M3, M5, M6} (all mutually fail to complement — same gene), giving 2 genes among the recessive set. M2&amp;#39;s dominant mutation can&amp;#39;t be placed into either group by standard complementation testing, so it&amp;#39;s counted as a plausible third, distinct gene — hence &amp;#39;2 or 3&amp;#39; both earn credit.&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;free_response&#34; data-answer=&#34;&#34;
+         data-explanation=&#34;Failure to complement (&amp;#34;−&amp;#34;) means two mutations are in the same gene. M1×M4 = −, so they share a gene. M3×M5, M3×M6 and M5×M6 are all −, so M3/M5/M6 all share a (different) gene. Every other pairwise cross among the recessive mutants is &amp;#34;&amp;#43;&amp;#34; (complementation, i.e. different genes), consistent with exactly these two groups.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q7.5.&lt;/span&gt; Indicate which mutants have mutations in the same genes (based on Table 2&amp;#39;s complementation results).&lt;/div&gt;
+      &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-reveal-btn&#34;&gt;Reveal Model Answer&lt;/button&gt;
+      &lt;div class=&#34;tf-quiz-feedback tf-model-answer&#34; hidden&gt;M1 and M4 share a gene. M3, M5 and M6 all share a (different) gene. M2 (dominant) and the recessive-only pairs above are the two identifiable groups. — Failure to complement (&amp;#34;−&amp;#34;) means two mutations are in the same gene. M1×M4 = −, so they share a gene. M3×M5, M3×M6 and M5×M6 are all −, so M3/M5/M6 all share a (different) gene. Every other pairwise cross among the recessive mutants is &amp;#34;&amp;#43;&amp;#34; (complementation, i.e. different genes), consistent with exactly these two groups.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var wrap = document.currentScript.previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== &#39;free_response&#39;; });
+
+  rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === &#39;free_response&#39;) {
+      var revealBtn = row.querySelector(&#39;.tf-reveal-btn&#39;);
+      var answerBox = row.querySelector(&#39;.tf-model-answer&#39;);
+      revealBtn.addEventListener(&#39;click&#39;, function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? &#39;Reveal Model Answer&#39; : &#39;Hide Model Answer&#39;;
+      });
+      return; 
+    }
+
+    if (type === &#39;numeric&#39;) return; 
+
+    
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      var isCorrect, hasAnswer;
+
+      if (type === &#39;numeric&#39;) {
+        var raw = row.querySelector(&#39;.tf-numeric-input&#39;).value;
+        hasAnswer = raw !== &#39;&#39;;
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) &amp;&amp; Math.abs(val - expected) &lt;= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + gradableRows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn.selected&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      if (row.dataset.type === &#39;numeric&#39;) {
+        var input = row.querySelector(&#39;.tf-numeric-input&#39;);
+        if (input) input.value = &#39;&#39;;
+      }
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (fb &amp;&amp; !fb.classList.contains(&#39;tf-model-answer&#39;)) fb.textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q6/&#34;&gt;← Previous: Q6&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q8/&#34;&gt;Next: Q8 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=15&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q8 — Beadle &amp; Tatum: One Gene, One Enzyme</title>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q8/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/7-genetics/mendelian-inheritance-probability/&#34;&gt;Mendel&#39;s Laws &amp; Probability in Genetics&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Beadle and Tatum proposed that one gene produces one enzyme. They mutated mould and observed that different colonies required a different supplement to their normal media to survive.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q8-figure-1.png&#34; alt=&#34;Five agar plates: Legend 1 (Rich Medium) shows all 8 numbered colonies growing; Legend 2 (Minimal Medium) shows only colonies 1 and 7; Legend 3 (Minimal &amp;#43; Phenylalanine) shows 1, 3, 5, 7; Legend 4 (Minimal &amp;#43; Leucine) shows 1, 2, 7, 8; Legend 5 (Minimal &amp;#43; Arginine) shows 1, 4, 6, 7.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Fig.1. Legend 1 = Rich Medium. Legend 2 = Minimal Medium. Legend 3 = Minimal Medium + Phenylalanine. Legend 4 = Minimal Medium + Leucine. Legend 5 = Minimal Medium + Arginine.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Indicate which colonies (1–8) each statement is true for, based on Figure 1.&lt;/p&gt;
+&lt;p&gt;In another experiment, a different set of mutants was plated as seen in Figure 2.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q8-figure-2.png&#34; alt=&#34;Two agar plates: Legend 1 (Rich Medium) shows all 8 numbered colonies; Legend 2 (Rich Medium without Arginine) shows only colonies 1, 4, 6, 7.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Fig.2. Legend 1 = Rich Medium. Legend 2 = Rich Medium without Arginine.&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2019-theoretical-a-q8&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;true&#34;
+         data-explanation=&#34;Colony 1 appears on Legend 2 (plain minimal medium) — it needs no supplement, exactly like wild-type.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q8.1 (colony 1).&lt;/span&gt; Colony 1 has the same nutritional requirements as WT (grows on minimal medium alone, no supplement needed).&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q8.1 (colony 1)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;false&#34;
+         data-explanation=&#34;Colony 2 does not appear on Legend 2 (minimal medium) — it&amp;#39;s auxotrophic, unlike WT.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q8.1 (colony 2).&lt;/span&gt; Colony 2 has the same nutritional requirements as WT.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q8.1 (colony 2)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;false&#34;
+         data-explanation=&#34;Colony 3 is absent from Legend 2 — it requires a supplement (appears with phenylalanine, Legend 3).&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q8.1 (colony 3).&lt;/span&gt; Colony 3 has the same nutritional requirements as WT.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q8.1 (colony 3)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;false&#34;
+         data-explanation=&#34;Colony 4 is absent from Legend 2 — it requires a supplement (appears with leucine and arginine).&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q8.1 (colony 4).&lt;/span&gt; Colony 4 has the same nutritional requirements as WT.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q8.1 (colony 4)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;false&#34;
+         data-explanation=&#34;Colony 5 is absent from Legend 2 — it requires phenylalanine to grow.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q8.1 (colony 5).&lt;/span&gt; Colony 5 has the same nutritional requirements as WT.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q8.1 (colony 5)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;false&#34;
+         data-explanation=&#34;Colony 6 is absent from Legend 2 — it requires arginine to grow.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q8.1 (colony 6).&lt;/span&gt; Colony 6 has the same nutritional requirements as WT.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q8.1 (colony 6)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;true&#34;
+         data-explanation=&#34;Colony 7 grows on every single medium shown, including plain minimal medium (Legend 2) — same as WT.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q8.1 (colony 7).&lt;/span&gt; Colony 7 has the same nutritional requirements as WT.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q8.1 (colony 7)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;false&#34;
+         data-explanation=&#34;Colony 8 is absent from Legend 2 — it requires leucine to grow.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q8.1 (colony 8).&lt;/span&gt; Colony 8 has the same nutritional requirements as WT.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q8.1 (colony 8)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;false&#34;
+         data-explanation=&#34;Colony 1 grows on plain minimal medium already (see Q8.1) — it isn&amp;#39;t an arginine auxotroph, so it&amp;#39;s uninformative for this purpose.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q8.2 (colony 1).&lt;/span&gt; Colony 1 would be useful for discovering genes involved in the arginine synthesis pathway (i.e. it needs arginine specifically, and grows on minimal medium only when arginine is added, not otherwise).&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q8.2 (colony 1)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;true&#34;
+         data-explanation=&#34;Colony 4 fails on plain minimal medium but grows once arginine is added (Legend 5) — a specific arginine auxotroph, exactly the kind of mutant used to dissect this pathway.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q8.2 (colony 4).&lt;/span&gt; Colony 4 would be useful for discovering genes involved in the arginine synthesis pathway.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q8.2 (colony 4)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;true&#34;
+         data-explanation=&#34;Colony 6 fails on plain minimal medium but grows once arginine is added (Legend 5) — the same reasoning as colony 4.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q8.2 (colony 6).&lt;/span&gt; Colony 6 would be useful for discovering genes involved in the arginine synthesis pathway.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q8.2 (colony 6)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;false&#34;
+         data-explanation=&#34;Colony 7 already grows on plain minimal medium (see Q8.1) — it isn&amp;#39;t an arginine auxotroph, so it&amp;#39;s uninformative for this purpose.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q8.2 (colony 7).&lt;/span&gt; Colony 7 would be useful for discovering genes involved in the arginine synthesis pathway.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q8.2 (colony 7)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;true&#34;
+         data-explanation=&#34;Colony 2 grows on rich medium (Legend 1) but disappears once arginine is withheld (Legend 2) — it can&amp;#39;t synthesise its own arginine and depends on it being supplied.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q8.3 (colony 2).&lt;/span&gt; In Fig.2 (Legend 1 = Rich Medium, Legend 2 = Rich Medium without Arginine), colony 2 cannot produce its own arginine.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q8.3 (colony 2)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;true&#34;
+         data-explanation=&#34;Colony 3 grows on rich medium but is absent once arginine is removed — an arginine auxotroph.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q8.3 (colony 3).&lt;/span&gt; In Fig.2, colony 3 cannot produce its own arginine.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q8.3 (colony 3)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;false&#34;
+         data-explanation=&#34;Colony 4 still grows even without arginine in Fig.2 — it can make its own, so this figure&amp;#39;s mutants must involve a different step/gene than colony 4&amp;#39;s original defect.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q8.3 (colony 4).&lt;/span&gt; In Fig.2, colony 4 cannot produce its own arginine.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q8.3 (colony 4)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;true&#34;
+         data-explanation=&#34;Colony 5 grows on rich medium but disappears once arginine is withheld — an arginine auxotroph.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q8.3 (colony 5).&lt;/span&gt; In Fig.2, colony 5 cannot produce its own arginine.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q8.3 (colony 5)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;true&#34;
+         data-explanation=&#34;Colony 8 grows on rich medium but disappears once arginine is withheld — an arginine auxotroph.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q8.3 (colony 8).&lt;/span&gt; In Fig.2, colony 8 cannot produce its own arginine.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle&#34; role=&#34;group&#34; aria-label=&#34;Statement Q8.3 (colony 8)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;true&#34;&gt;TRUE&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn&#34; data-value=&#34;false&#34;&gt;FALSE&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;numeric&#34; data-expected=&#34;4&#34; data-tolerance=&#34;0&#34;
+         data-explanation=&#34;The complementation table resolves into four groups: {1, 7}, {2, 4, 6, 8}, {3, 9}, and {5} alone (strain 5 complements every other strain, including itself only trivially on the diagonal) — four distinct genes.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q8.4.&lt;/span&gt; A different set of 9 haploid yeast strains, each with a single mutation in the amino acid production pathway, were crossed pairwise to make diploids and tested for growth on medium lacking the amino acid (Table 1 on the exam page; &amp;#34;−&amp;#34; = no growth = failure to complement). Based on these results, at least how many genes are involved in this synthesis pathway?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-numeric&#34;&gt;
+        &lt;input type=&#34;number&#34; step=&#34;any&#34; class=&#34;tf-numeric-input&#34; placeholder=&#34;Your answer&#34;&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var wrap = document.currentScript.previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== &#39;free_response&#39;; });
+
+  rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === &#39;free_response&#39;) {
+      var revealBtn = row.querySelector(&#39;.tf-reveal-btn&#39;);
+      var answerBox = row.querySelector(&#39;.tf-model-answer&#39;);
+      revealBtn.addEventListener(&#39;click&#39;, function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? &#39;Reveal Model Answer&#39; : &#39;Hide Model Answer&#39;;
+      });
+      return; 
+    }
+
+    if (type === &#39;numeric&#39;) return; 
+
+    
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      var isCorrect, hasAnswer;
+
+      if (type === &#39;numeric&#39;) {
+        var raw = row.querySelector(&#39;.tf-numeric-input&#39;).value;
+        hasAnswer = raw !== &#39;&#39;;
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) &amp;&amp; Math.abs(val - expected) &lt;= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + gradableRows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn.selected&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      if (row.dataset.type === &#39;numeric&#39;) {
+        var input = row.querySelector(&#39;.tf-numeric-input&#39;);
+        if (input) input.value = &#39;&#39;;
+      }
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (fb &amp;&amp; !fb.classList.contains(&#39;tf-model-answer&#39;)) fb.textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Q8.4 uses a different set of arginine-synthesis mutant strains: 9 haploid yeast strains, each with a single mutation in the amino acid production pathway, crossed pairwise to make diploid progeny grown on medium deficient in the amino acid of interest (&amp;quot;−&amp;quot; = no growth):&lt;/p&gt;
+&lt;table&gt;
+	&lt;thead&gt;
+			&lt;tr&gt;
+					&lt;th&gt;&lt;/th&gt;
+					&lt;th&gt;1&lt;/th&gt;
+					&lt;th&gt;2&lt;/th&gt;
+					&lt;th&gt;3&lt;/th&gt;
+					&lt;th&gt;4&lt;/th&gt;
+					&lt;th&gt;5&lt;/th&gt;
+					&lt;th&gt;6&lt;/th&gt;
+					&lt;th&gt;7&lt;/th&gt;
+					&lt;th&gt;8&lt;/th&gt;
+					&lt;th&gt;9&lt;/th&gt;
+			&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;1&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;2&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;3&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;4&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;5&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;6&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;7&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;8&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+					&lt;td&gt;&lt;strong&gt;9&lt;/strong&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;−&lt;/td&gt;
+			&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;em&gt;Table 1.&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q7/&#34;&gt;← Previous: Q7&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q9/&#34;&gt;Next: Q9 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=17&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Q9 — Bulb1/Bulb2 and the UV-B Response in Arabidopsis</title>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q9/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;topic-meta&#34;&gt;
+  &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
+  
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/5-plant-physiology/photoperiodism-vernalization-flowering/&#34;&gt;Photoperiodism, Vernalization &amp; Flowering&lt;/a&gt;
+&lt;/div&gt;
+&lt;p&gt;Bulb1 and Bulb2 are transcription factors involved in the survival response of plants exposed to UV radiation. Wild-type (wt) and homozygous mutant (&lt;em&gt;Bulb1-/-&lt;/em&gt;) &lt;em&gt;Arabidopsis&lt;/em&gt; plants were exposed to UV-B for various times and their RNA extracted. RNA was dissolved in 20 µl of buffer. A 2 µl aliquot was taken from one of the stock solutions and diluted to 1 ml. The absorbance of the solution at 260 nm was found to be 0.046.&lt;/p&gt;
+&lt;p&gt;The RNA samples were used for measurement of &lt;em&gt;bulb2&lt;/em&gt; transcript levels by quantitative PCR (Figure 1A). In a different experiment, Bulb1 and Bulb2 protein levels in wild-type &lt;em&gt;Arabidopsis&lt;/em&gt;, exposed to UV-B radiation for various times, were assessed (Figure 1B).&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q9-figure-1.png&#34; alt=&#34;Panel A: bar chart of bulb2 transcript fold-change (relative to control) at 0/4/8/16h UV-B, in WT (rising sharply to ~9-fold at 8h then falling by 16h) vs. Bulb1-/- (flat, near baseline throughout). Panel B: blot-style panel showing Bulb1 protein constant across 0/1/2/4/8h UV-B, Bulb2 protein absent at 0-1h then appearing and increasing from 2h through 8h, Actin loading control constant throughout.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+  &lt;/span&gt;
+&lt;em&gt;Fig.1. Axis = Fold change relative to control. wt = Wild-type.&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2019-theoretical-a-q9&#34;&gt;
+  &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;numeric&#34; data-expected=&#34;920&#34; data-tolerance=&#34;5&#34;
+         data-explanation=&#34;The diluted sample&amp;#39;s concentration is (0.046 / 1.0) × 40 = 1.84 µg/ml. The dilution was 2 µl → 1000 µl, a 500-fold dilution, so the original stock was 1.84 × 500 = 920 µg/ml.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q9.1.&lt;/span&gt; Bulb1 and Bulb2 are transcription factors involved in the UV-B survival response in Arabidopsis. RNA extracted from plant tissue was dissolved in 20 µl of buffer. A 2 µl aliquot was diluted to 1 ml, and its absorbance at 260 nm was 0.046. Given that a 40 µg/ml RNA solution gives an absorbance of 1.0 at 260 nm, calculate the concentration of the ORIGINAL (undiluted) stock solution, in µg/ml.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-numeric&#34;&gt;
+        &lt;input type=&#34;number&#34; step=&#34;any&#34; class=&#34;tf-numeric-input&#34; placeholder=&#34;Your answer&#34;&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;numeric&#34; data-expected=&#34;2.17&#34; data-tolerance=&#34;0.02&#34;
+         data-explanation=&#34;920 µg/ml = 0.92 µg/µl. Volume needed = 2 µg ÷ 0.92 µg/µl ≈ 2.17 µl.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q9.2.&lt;/span&gt; Each experiment requires 2 µg of RNA. What volume of the stock solution (920 µg/ml) would be needed? Give your answer in µl, to two decimal places.&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-numeric&#34;&gt;
+        &lt;input type=&#34;number&#34; step=&#34;any&#34; class=&#34;tf-numeric-input&#34; placeholder=&#34;Your answer&#34;&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;numeric&#34; data-expected=&#34;9&#34; data-tolerance=&#34;0&#34;
+         data-explanation=&#34;20 µl ÷ 2.17 µl per experiment ≈ 9.2 — only 9 whole experiments can actually be carried out with the stock on hand.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q9.3.&lt;/span&gt; How many experiments could the researchers conceivably carry out with the original 20 µl stock of RNA?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-numeric&#34;&gt;
+        &lt;input type=&#34;number&#34; step=&#34;any&#34; class=&#34;tf-numeric-input&#34; placeholder=&#34;Your answer&#34;&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;G&#34;
+         data-explanation=&#34;Bulb1 protein LEVEL doesn&amp;#39;t change with UV-B (Fig.1B), so UV-B can&amp;#39;t be acting on Bulb1 transcription, translation, or degradation — yet Bulb1 is clearly required for the downstream response (it&amp;#39;s lost entirely in Bulb1-/- plants). The only remaining way UV-B could activate already-present Bulb1 is by triggering its movement into the nucleus, where it can act as a transcription factor.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q9.4 (box 1).&lt;/span&gt; The RNA samples were used to measure bulb2 transcript levels by qPCR in WT and Bulb1-/- plants exposed to UV-B for various times (Fig.1A) — bulb2 transcript rises sharply with UV-B exposure in WT but stays flat in Bulb1-/- plants. Separately, Bulb1 and Bulb2 PROTEIN levels were assessed by blot in WT over a UV-B time-course (Fig.1B) — Bulb1 protein stays constant throughout, while Bulb2 protein only appears after UV-B exposure and increases over time. Build a 3-step model: UV-B → [box 1] → [box 2] → [box 3] → UV protection. What is box 1?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q9.4 (box 1)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Bulb1 transcription&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Bulb2 transcription&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Bulb1 translation&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;D&#34;&gt;D) Bulb2 translation&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;E&#34;&gt;E) Bulb1 degradation&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;F&#34;&gt;F) Bulb2 degradation&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;G&#34;&gt;G) Bulb1 nuclear translocation&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;H&#34;&gt;H) Bulb2 nuclear translocation&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;B&#34;
+         data-explanation=&#34;Fig.1A shows bulb2 transcript levels rise sharply after UV-B in WT but not in Bulb1-/- plants — Bulb1 (now in the nucleus) is required to drive bulb2 transcription.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q9.4 (box 2).&lt;/span&gt; What is box 2 in the pathway (UV-B → Bulb1 nuclear translocation → [box 2] → [box 3] → UV protection)?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q9.4 (box 2)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Bulb1 transcription&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Bulb2 transcription&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Bulb1 translation&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;D&#34;&gt;D) Bulb2 translation&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;E&#34;&gt;E) Bulb1 degradation&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;F&#34;&gt;F) Bulb2 degradation&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;G&#34;&gt;G) Bulb1 nuclear translocation&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;H&#34;&gt;H) Bulb2 nuclear translocation&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;D&#34;
+         data-explanation=&#34;Fig.1B shows Bulb2 protein only appears after UV-B exposure, following the rise in its transcript — i.e. the new transcript is translated into Bulb2 protein, which then goes on to confer UV protection.&#34;&gt;
+      &lt;div class=&#34;tf-quiz-statement&#34;&gt;&lt;span class=&#34;tf-quiz-letter&#34;&gt;Q9.4 (box 3).&lt;/span&gt; What is box 3 in the pathway (UV-B → Bulb1 nuclear translocation → Bulb2 transcription → [box 3] → UV protection)?&lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-toggle tf-quiz-mcq&#34; role=&#34;group&#34; aria-label=&#34;Statement Q9.4 (box 3)&#34;&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;A&#34;&gt;A) Bulb1 transcription&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;B&#34;&gt;B) Bulb2 transcription&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;C&#34;&gt;C) Bulb1 translation&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;D&#34;&gt;D) Bulb2 translation&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;E&#34;&gt;E) Bulb1 degradation&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;F&#34;&gt;F) Bulb2 degradation&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;G&#34;&gt;G) Bulb1 nuclear translocation&lt;/button&gt;
+        &lt;button type=&#34;button&#34; class=&#34;tf-btn tf-btn-mcq&#34; data-value=&#34;H&#34;&gt;H) Bulb2 nuclear translocation&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&#34;tf-quiz-feedback&#34;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tf-quiz-actions&#34;&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-submit&#34;&gt;Check Answers&lt;/button&gt;
+    &lt;button type=&#34;button&#34; class=&#34;tf-quiz-reset&#34;&gt;Try Again&lt;/button&gt;
+    &lt;span class=&#34;tf-quiz-score&#34; aria-live=&#34;polite&#34;&gt;&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var wrap = document.currentScript.previousElementSibling;
+  if (!wrap || !wrap.classList.contains(&#39;tf-quiz-wrap&#39;)) return;
+  var rows = wrap.querySelectorAll(&#39;.tf-quiz-row&#39;);
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== &#39;free_response&#39;; });
+
+  rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === &#39;free_response&#39;) {
+      var revealBtn = row.querySelector(&#39;.tf-reveal-btn&#39;);
+      var answerBox = row.querySelector(&#39;.tf-model-answer&#39;);
+      revealBtn.addEventListener(&#39;click&#39;, function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? &#39;Reveal Model Answer&#39; : &#39;Hide Model Answer&#39;;
+      });
+      return; 
+    }
+
+    if (type === &#39;numeric&#39;) return; 
+
+    
+    var btns = row.querySelectorAll(&#39;.tf-btn&#39;);
+    btns.forEach(function (btn) {
+      btn.addEventListener(&#39;click&#39;, function () {
+        btns.forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+        btn.classList.add(&#39;selected&#39;);
+        row.dataset.selected = btn.dataset.value;
+        row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+        row.querySelector(&#39;.tf-quiz-feedback&#39;).textContent = &#39;&#39;;
+      });
+    });
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-submit&#39;).addEventListener(&#39;click&#39;, function () {
+    var correct = 0, allAnswered = true;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      var isCorrect, hasAnswer;
+
+      if (type === &#39;numeric&#39;) {
+        var raw = row.querySelector(&#39;.tf-numeric-input&#39;).value;
+        hasAnswer = raw !== &#39;&#39;;
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) &amp;&amp; Math.abs(val - expected) &lt;= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
+        allAnswered = false;
+        row.classList.add(&#39;unanswered&#39;);
+        return;
+      }
+      row.classList.remove(&#39;unanswered&#39;);
+      row.classList.toggle(&#39;correct&#39;, isCorrect);
+      row.classList.toggle(&#39;incorrect&#39;, !isCorrect);
+      if (isCorrect) correct++;
+      fb.textContent = (isCorrect ? &#39;✓ Correct — &#39; : &#39;✗ Incorrect — &#39;) + row.dataset.explanation;
+    });
+    var scoreEl = wrap.querySelector(&#39;.tf-quiz-score&#39;);
+    scoreEl.textContent = allAnswered
+      ? &#39;Score: &#39; + correct + &#39; / &#39; + gradableRows.length
+      : &#39;Answer every statement first.&#39;;
+  });
+
+  wrap.querySelector(&#39;.tf-quiz-reset&#39;).addEventListener(&#39;click&#39;, function () {
+    rows.forEach(function (row) {
+      row.classList.remove(&#39;correct&#39;, &#39;incorrect&#39;, &#39;unanswered&#39;);
+      delete row.dataset.selected;
+      row.querySelectorAll(&#39;.tf-btn.selected&#39;).forEach(function (b) { b.classList.remove(&#39;selected&#39;); });
+      if (row.dataset.type === &#39;numeric&#39;) {
+        var input = row.querySelector(&#39;.tf-numeric-input&#39;);
+        if (input) input.value = &#39;&#39;;
+      }
+      var fb = row.querySelector(&#39;.tf-quiz-feedback&#39;);
+      if (fb &amp;&amp; !fb.classList.contains(&#39;tf-model-answer&#39;)) fb.textContent = &#39;&#39;;
+    });
+    wrap.querySelector(&#39;.tf-quiz-score&#39;).textContent = &#39;&#39;;
+  });
+})();
+&lt;/script&gt;
+
+&lt;div class=&#34;papers-quiz-nav&#34;&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q8/&#34;&gt;← Previous: Q8&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q10/&#34;&gt;Next: Q10 →&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=19&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -10,11 +10,42 @@ the auth/RLS patterns from first principles), and
 single-active-session mechanism added 2026-08-11 — migration 010, touches
 every bioclash-*.js endpoint).
 
-**Status as of 2026-08-11: code-complete, locally verified, NOT yet run
-against production.** Migration 009 has not been executed in the Supabase
-SQL editor. No endpoint has been exercised against a real Supabase project
-(this dev environment has no credentials). Everything below "genuinely
-unverified" needs a real pass before this goes anywhere near real students.
+**Status as of 2026-08-11 (end of day): code-complete, partially exercised
+against production.** The founder deployed and hit a real, confirmed
+production error trying to start an attempt — see "CONFIRMED production
+incident" immediately below before doing anything else. This dev
+environment still has no Supabase credentials of its own; every fix this
+session was reasoned from the error text the founder pasted back, not from
+directly querying the database.
+
+### CONFIRMED production incident, 2026-08-11 — read this first
+
+Founder hit **"Could not start attempt"** (generic 500) on the deployed
+site. Actual logged error, obtained from Vercel's function logs:
+```
+code: 'PGRST204', message: "Could not find the 'active_session_claimed_at' column of 'bioclash_attempts' in the schema cache"
+```
+Root cause: **migration 010 (single-active-session columns) had never
+been run against the real Supabase project** — the code added a hard
+dependency on `active_session_token`/`active_session_claimed_at` existing,
+but only the migration *file* existed, never executed. This is a general
+lesson, not just a one-off: **every migration in this repo is written
+speculatively and stays inert until someone actually runs it in the
+Supabase SQL editor** — "the file exists" and "the column exists in
+production" are not the same fact, and nothing in this codebase's tooling
+catches that gap automatically.
+
+Fix given to the founder (not independently confirmed working — no
+access to their Supabase project to verify): run **both**
+`009_bioclash_attempts.sql` and `010_bioclash_anticheat.sql` in the SQL
+editor (both idempotent — `create table if not exists` / `add column if
+not exists` throughout, safe to re-run regardless of partial prior state),
+then explicitly `NOTIFY pgrst, 'reload schema';` (or use Settings → API →
+"Reload schema cache" in the dashboard) — PostgREST caches the schema and
+doesn't always pick up SQL-editor DDL changes immediately, which is a
+plausible second contributor even if 010 actually had been run before.
+**A fresh session should ask the founder to confirm attempt-start now
+works before trusting anything else in this file's "verified" claims.**
 
 **2026-08-11 session — founder feedback pass (`context/IMPROVES.txt` +
 `data/bioclash/daquestions.md` + `context/Q10.4.txt`), all addressed:**
@@ -82,12 +113,123 @@ blocks. Still not run against a live attempt (see "Genuinely unverified,"
 below — same caveats as before, now also covering the new part and the
 pagination UI specifically).
 
+**2026-08-11, later same day — founder debugging pass (`context/debug01.md`),
+all flagged items addressed:**
+1. **Locked answers rendered blank and inputs stayed clickable.**
+   `block.answer` was never populated locally after a lock succeeded (only
+   sent to the server), so `componentValue()` read `undefined` on
+   re-render and the radios looked cleared — and nothing disabled them, so
+   they were pointlessly still toggleable. Fixed in the lock button
+   handler (`block.answer = answers` on success) and in
+   `renderComponent()` (every input gets `disabled = true` whenever
+   `block.status === 'locked'`).
+2. **MCQ options never showed their own key.** Only `opt.text` was
+   rendered, never `opt.key` — harmless for an ordinary A/B/C/D question,
+   but broke Part A's `workflow-flaws` follow-up outright: it references
+   "Workflow I"/"III"/etc. by roman numeral, and with per-user shuffling
+   there was no way to tell which displayed (and now-hidden-after-pick)
+   option WAS "Workflow I" without the key ever being shown. Fixed
+   generally — every `mcq` option now renders as `"<key>) <text>"` — not
+   special-cased to Part A, since this was a real bug for any MCQ whose
+   options need to be individually referable later.
+3. **Data Analysis felt broken mid-flow: locking a question just silently
+   grew the same page instead of visibly moving forward.** Root cause: the
+   pagination model paginated **per part**, and the whole Data Analysis
+   section is one part — so every one of its 5 sequential non-recoverable
+   locks appended new content below the just-locked (now greyed-out) block
+   on the *same* page. Fixed by changing the pagination unit: `pageList()`
+   in `bioclash-attempt.js` now paginates **per block** for any part whose
+   currently-loaded blocks are ALL `locksAfterSubmit`/`reveal_content`
+   ("chain parts" — Part A, Data Analysis), and per-part as before for
+   ordinary recoverable parts (B–F). A `reveal_content` block never gets
+   its own page — it always merges as leading content onto the next real
+   block's page, which is how `context-reveal` + `da-fzd-mystery` become
+   one combined "Data Analysis Question 2" page instead of an empty stop.
+   `pageIsSealed()` (was `partIsFullyLocked()`) got the same generalization
+   and is what Prev-navigation checks. The lock handler's auto-advance
+   also had a real bug fixed here: it picked whichever newly-revealed
+   block happened to be pushed *last* (so locking Data Analysis's final
+   question landed on Part F, not Part B) — now tracks the *first* newly
+   revealed block instead (`findPageIndexForBlockId`), traced against a
+   synthetic repro of the exact scenario before considering it fixed.
+4. **Page counter looked like "you're on the last page" right before it
+   wasn't.** While mid-chain (e.g. sitting on Data Analysis's final
+   question), the total was accurate-but-misleading — "6 of 6" — because
+   the count only reflects pages earned SO FAR, and locking that page was
+   about to reveal 5 more. Fixed generally: whenever the current last page
+   in the list is still an active non-recoverable lock, the label appends
+   `+` ("Page 6 of 6+"), at every step of any chain, not hardcoded to the
+   Data Analysis→Part B boundary.
+5. **Context 2's second page had no image.** Splitting Data Analysis into
+   per-block pages (item 3) meant `da-context2b`'s "interpreting the
+   graph" questions no longer had the graph visible — it only lived on
+   `da-context2a`'s page. Fixed by attaching the same `supressiondata2.jpg`
+   to both blocks' `images:`.
+6. **C59/Workflow-III/luciferase text was too revealing** (founder's own
+   direct edits, done before this pass — "learned from," not re-done) —
+   confirms the general pattern: distractors/reveals should never restate
+   the reasoning that makes the correct answer obvious, keep prompts terse.
+7. **Q9.i's restated Workflow II text was malformed** (doubled stray
+   closing quotes from an earlier manual edit) — reformatted cleanly.
+8. **Q12–Q15's formatting fix from earlier in the day had been reverted**
+   by an unrelated intervening edit (Q9.i/Q9.ii's redaction pass) — redone:
+   Q12 A–D and Q13 F–J and Q14 a–d as individual `true_false` components
+   (was: crammed free-text blobs), goldengate.png attached to Q14. Root
+   cause of "even when spaced it doesn't visualise" turned out to be a
+   real, general bug, not just missing line breaks: `.bioclash-component-
+   prompt`/`.bioclash-reveal-content` had no `white-space` CSS rule at all,
+   so a `>` folded YAML scalar's blank-line paragraph breaks were being
+   silently collapsed by the browser regardless of source formatting.
+   Fixed with `white-space: pre-line` on both classes — this was silently
+   breaking every multi-paragraph prompt in the paper, not just Q12–15.
+
+**Images 9/10 (from the earlier "founder feedback pass" above) resolved
+this session too** — the founder supplied two REAL published-paper figures
+(`tissuetype.jpg`, `tmdexpress.jpg`, not AI-generated) as candidates for
+Part B's context and the DA→Part B reveal. Both turned out to be far MORE
+revealing than the prose they'd have replaced (`tissuetype.jpg`'s panel B
+is a literal mutation-frequency-by-cancer-type table — directly answers
+stmt-5; `tmdexpress.jpg`'s panels A–D are an entirely different
+experiment, S323x/S262x truncations, whose quantified bar graph directly
+answers Q10.2). Cropped to `tissuetype-cropped.jpg` (panel A only,
+grayscaled to strip the RNF43/ZNRF3-preferred colour-coding) and
+`tmdexpress-cropped.jpg` (panels F/G only — the RZR/ZRZ TMD-swap bar
+graphs) before use. `context-reveal` was shortened further (technique
+names redacted — Part C's Q6/Q7 independently test identifying them) and
+`part-b-context` now shows the two cropped figures with purely descriptive
+captions instead of restating findings in prose.
+
+**Anti-cheating measures added this session** — see
+`context/anti-cheating-measures.md` for the full write-up (what's real
+enforcement vs. deterrent, why screen recording was explored but not
+built). Summary: honor-code checkbox gating the Start button (with a
+clause reserving the right to request a recording/verification — no
+capture infrastructure built), copy/select/right-click blocked on question
+content (deterrent tier, not a security boundary), single-active-session
+enforcement (the one real new security boundary — migration 010, see the
+production incident above for the exact way this bit before the migration
+was ever run), and `created_at`/`updated_at` on `bioclash_attempt_blocks`
+for post-hoc dwell-time review (query is in that doc).
+
+**Docx reference doc synced to match, 2026-08-11**: the original
+`BiOGuide-BiOClash-Problem_1_3.docx` was open in Word (locked) and
+couldn't be overwritten, so the synced version — full Data Analysis
+section with all 5 real images embedded, matching marking notes, Q15(a)
+as the MCQ, 165-mark total, and design notes at both redaction points
+explaining why the live delivery reads differently from this master copy
+— is `BiOGuide-BiOClash-Problem_1_4.docx`, also in the founder's Downloads
+folder. **If a future session needs to sync the docx again, check which
+version number is now current before assuming `_1_4` still is** — ask
+rather than guess, since this file lives outside the repo and its
+filename can't be grepped for.
+
 ---
 
 ## What this is
 
 BiOClash's first real competition paper: **Case File MB-01**, Molecular
-Biology & Biochemistry, 133 marks, TVA/Loki-themed. This is a **parallel
+Biology & Biochemistry, 165 marks (was 133 before the Data Analysis part
+was added — see the 2026-08-11 session notes above), TVA/Loki-themed. This is a **parallel
 system to BiOrchive's existing practice/timed-attempt infrastructure**
 (`papers-attempt.js`, `papers-quiz.html`, `data/papers/*.yaml`) — not a
 refactor of it, and BiOrchive is untouched. The reason it had to be
@@ -111,8 +253,9 @@ Question **content** (text, options, correct answers, marks, which
 questions lock/reveal what) lives in `data/bioclash/mb-01.yaml`, built with
 the static site — same split as BiOrchive's `data/papers/*.yaml`. Attempt
 **state** (what's locked, what's been answered, timing, anti-cheat
-counters) lives in three new Supabase tables, written exclusively through
-five Vercel serverless functions using the service-role key — the client
+counters, single-active-session token) lives in three Supabase tables,
+written exclusively through six Vercel serverless functions using the
+service-role key — the client
 never has a Supabase write path for any of this, matching this repo's
 existing house style for every sensitive table (`attempt_reports`,
 `account_deletions`, `bioclash_results`). The frontend
@@ -127,7 +270,8 @@ from BiOrchive's pattern, and it's the whole point.
 
 **Database**
 - [supabase/migrations/009_bioclash_attempts.sql](supabase/migrations/009_bioclash_attempts.sql)
-  — **not yet run**. Adds three tables:
+  — status unclear, see the CONFIRMED production incident above (may or
+  may not have been run — verify, don't assume). Adds three tables:
   - `bioclash_paper_access` — allowlist, `(paper_id, user_id)`. Empty by
     default; a row must exist for a user to do anything. Seeds the
     founder's own account by email lookup — **requires that account to
@@ -150,6 +294,13 @@ from BiOrchive's pattern, and it's the whole point.
     client writes, force every write through a service-role endpoint,"
     confirmed by direct audit of every other migration before this one was
     written.
+- [supabase/migrations/010_bioclash_anticheat.sql](supabase/migrations/010_bioclash_anticheat.sql)
+  — **confirmed NOT run as of the production incident above; run it, then
+  verify.** Adds `active_session_token`/`active_session_claimed_at` to
+  `bioclash_attempts` (single-active-session enforcement) and
+  `created_at`/`updated_at` to `bioclash_attempt_blocks` (dwell-time
+  analytics). Full design rationale in
+  `context/anti-cheating-measures.md`, not repeated here.
 
 **Content**
 - [data/bioclash/mb-01.yaml](data/bioclash/mb-01.yaml) — the full 133-mark
@@ -217,6 +368,13 @@ from BiOrchive's pattern, and it's the whole point.
   only — free_text is always offline-graded, which is the majority of this
   paper's marks). Does **not** write to `bioclash_results` — that stays a
   manually-populated final-placements table, untouched by this feature.
+  Deliberately does NOT check the session token (see
+  `context/anti-cheating-measures.md`'s single-active-session section for
+  why that's safe to skip here specifically).
+- `api/bioclash-heartbeat.js` — `POST {paperId, sessionToken}`, new
+  2026-08-11. Verifies (never reclaims) the single-active-session token;
+  polled every ~20s by the frontend while an attempt is live. 409 with
+  `reason: 'superseded'` is what triggers the frontend's lockout banner.
 
 **Frontend**
 - [static/js/bioclash-attempt.js](static/js/bioclash-attempt.js) — the SPA
@@ -340,15 +498,18 @@ the fast path back to full context.
 
 ## Genuinely unverified — needs a real Supabase project
 
-Everything in this session was checked against local logic (Node scripts
-directly exercising `api/_lib/bioclash.js`'s leak-safety and gating
-behavior) and a local, unconfigured Hugo build — never against a live
-attempt with real credentials, since this dev environment has none of
-those. Before this goes anywhere near a real student:
+Everything through the 2026-08-11 sessions was checked against local logic
+(Node scripts directly exercising `api/_lib/bioclash.js`'s leak-safety and
+gating behavior, and standalone re-implementations of the pagination logic
+run against synthetic state) and a local, unconfigured Hugo build — the
+ONE piece of real-world signal so far is the production incident at the
+top of this file (start-attempt actually failing, actually diagnosed from
+a real logged error), which is progress but is not the same as a clean
+verified pass. Before this goes anywhere near a real student:
 
-1. Run migration 009 in the Supabase SQL editor. Confirm
-   `nishitkalani@gmail.com` already has an account, or sign up first and
-   re-run the seed block.
+1. **Confirm the production incident is actually resolved** — the founder
+   has not yet reported back that `start-attempt` works after running
+   migrations 009+010 and reloading the schema cache. Don't assume yes.
 2. With `vercel dev` + real env vars (see `SETUP.md` for the local-dev
    pattern this whole system already uses): log in as the allowlisted
    account, call `start-attempt`, confirm only Part A-equivalent content
@@ -358,10 +519,26 @@ those. Before this goes anywhere near a real student:
    endpoint 403s.
 4. Walk the full adversarial test plan from the original design doc (still
    not executed against a real backend): replay a captured `lock-block`
-   request, refresh mid-lock, two tabs on the same attempt, let time expire
-   exactly at a lock click, view-source at every screen.
-5. Set a real `durationMinutes`.
-6. Decide when Layer 1 (linking the attempt page from `/bioclash/`) and
+   request, refresh mid-lock, let time expire exactly at a lock click,
+   view-source at every screen.
+5. **Single-active-session, specifically** (built 2026-08-11, zero live
+   testing): open the same attempt in two real tabs, confirm the first
+   one's next heartbeat 409s and the lockout banner appears, confirm a
+   save-draft/lock-block from the stale tab is actually rejected
+   server-side (not just that the UI looks locked), then refresh the
+   stale tab and confirm it correctly reclaims and un-superseded the other
+   one. Also worth specifically watching for the false-positive shape
+   called out in `context/anti-cheating-measures.md` (mobile browsers
+   silently reloading a backgrounded tab).
+6. **Pagination, specifically** (the whole per-block-vs-per-part model was
+   rewritten 2026-08-11 debugging pass, verified only via a standalone
+   reimplementation against synthetic data, never a real browser): walk
+   Part A → all 5 Data Analysis pages → Part B–F in a real browser,
+   confirm each Prev/Next transition, the sealed-page behavior, and the
+   "+" provisional-count indicator all look right, not just that the
+   underlying array logic is correct in isolation.
+7. Set a real `durationMinutes`.
+8. Decide when Layer 1 (linking the attempt page from `/bioclash/`) and
    Layer 2 (widening `bioclash_paper_access` beyond one account) actually
    flip — neither is part of what's built; both are separate, deliberate
    go-live decisions.

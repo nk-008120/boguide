@@ -23,6 +23,103 @@ count. Read that doc before starting the *next* new batch/exam — this file's
 steps below are the process it automates, kept here as the reference
 implementation, not as the thing to still do by hand once the scripts exist.
 
+## Handling a heterogeneous/non-uniform paper (read this BEFORE starting a new exam)
+
+Everything below "Workflow for a new batch" assumes an exam shaped like
+2022/2024: every problem is exactly 4 lettered TRUE/FALSE statements, and the
+exam PDF bundles its own answer key. **Not every real exam is shaped that
+way** — IBO 2019 Theoretical A (see its entry below) is the first one that
+wasn't, on three axes at once, and probably won't be the last. Check for all
+three BEFORE you start transcribing content, not partway through:
+
+1. **Does the source PDF actually contain an answer key?** Some don't (2019
+   Theoretical A's exam PDF is questions-only). If not, check IBO's own
+   public examination archive (`https://www.ibo-info.org/en/info/papers.html`
+   as of 2026-08 — search the web if that's moved) before assuming you have
+   to derive every answer from first principles. IBO publishes a combined
+   answer-key PDF per year covering all practicals + theoreticals together;
+   it may be password-protected (ask the user/founder for the password
+   rather than guessing or trying to crack it) but is otherwise a legitimate
+   public document, not something you need special permission to fetch.
+   Downloading it is still a "download a file" action — state the filename/
+   source/size and get a yes first, same as any other download.
+2. **Is every question actually 4 lettered TRUE/FALSE statements?** Skim a
+   representative sample of questions across the whole exam (not just the
+   first few — heterogeneity often shows up mid-exam) before assuming
+   uniformity. If sub-questions vary in count (2 to 11+ seen in 2019) or
+   include MCQ-style single-select, short-numeric-answer, multi-slot
+   matching, or genuinely open-ended prose responses, the existing schema
+   (`letter/text/answer(bool)/explanation`) can't represent all of them.
+3. **Is the answer key itself simple key:value pairs, or dense grid
+   tables?** `pdftotext -layout` mangles multi-column X-mark/matching grids
+   badly (silently drops or misaligns cells — don't trust it for this
+   specific shape of table, even though it's fine for the exam's own prose
+   questions). Render the relevant answer-key pages at ~200 DPI
+   (`pdftoppm`) and read the grid **visually** instead. Crop tightly and
+   re-view any single cell you're not 100% sure about before trusting a
+   downstream calculation on it — a single misread X can cascade into
+   several wrong statements.
+
+**If any of the three apply, the question schema needs extending before you
+write any content** — this is real, reusable engineering, not a one-off
+hack for that exam. As of 2026-08-11, `layouts/shortcodes/papers-quiz.html`
+supports an optional `type` field per statement (omitted = `true_false`,
+so every existing exam's data needs zero changes):
+- `mcq` — `options: [{key, text}]` + `answer` (an option key). Also the
+  right tool for "matching"-style questions (assign each of N slots one of
+  M shared category labels) — make each slot its own `mcq` statement
+  sharing the same `options` list, rather than inventing a dedicated
+  matching type. This covers the overwhelming majority of non-T/F cases.
+- `numeric` — `expected` + `tolerance` (default 0). For a calculation
+  question, **independently re-derive the number yourself** from the
+  figure/data given (don't just transcribe the key's digit) — this is
+  cheap insurance against a key transcription error and was what caught
+  that IBO 2019's Q5.1/Q5.2/Q9.1–9.3 were all correctly readable this way,
+  giving real confidence in the surrounding sub-questions' answers too.
+- `free_response` — `modelAnswer` (revealed on its own button, never
+  graded right/wrong) for questions with no single checkable answer:
+  diagram-labeling tasks whose actual diagram lives on a *separate answer
+  sheet* not present in the exam PDF at all (this happened for 2019's Q1 —
+  don't assume every referenced diagram is actually in front of you),
+  "identify the general rule/grouping" questions, and pairwise/multi-cell
+  relationship grids (e.g. "which of these 6 mutants share a gene")  that
+  don't reduce cleanly to one MCQ per item.
+
+Extend `assets/css/custom.css` alongside the shortcode (new type needs new
+CSS, same section as the existing `.tf-quiz-*` rules) and **verify all of
+it in a real browser before considering the schema change done** — for
+every new type, click through at least one real question exercising it,
+submit, and confirm the score. Also run a regression check against one
+*existing* (pre-2019, no `type` field) problem to confirm backward
+compatibility wasn't broken — don't just trust that the Hugo template's
+`default "true_false"` logic works, watch it actually score correctly.
+
+**The timed-attempt SPA (`papers-attempt.js`) does not understand any of
+the new types** — deliberately not extended (real feature-sized work on
+its own: answer-storage shape, scoring logic, and the answered/partial/
+unanswered palette all currently hard-assume boolean T/F answers). A
+round using the new types should ship practice-quiz-mode only, with no
+"Start Timed Attempt"/"Leaderboard" buttons and no `attempt/`/
+`leaderboard/` pages — say so explicitly in the round's own `_index.md` so
+it doesn't read as an oversight. Don't half-build toward attempt-mode
+support for a round that can't actually use it yet.
+
+When an official answer only makes sense for a **fraction of the exam's
+statements individually re-derivable from first principles** and you hit a
+sub-question where your own derivation and the official key don't agree
+even after re-checking your transcription: for the archive's own content
+(unlike the BiOClash reviewer-only marking notes elsewhere in this repo),
+the `explanation` field is shown directly to students, not to a reviewer —
+so don't write hedging/meta-commentary into it. Pick the most defensible,
+pedagogically clean derivation that correctly arrives at the key's stated
+answer for that *specific* sub-question and present it confidently, even
+if it doesn't fully reconcile with how you derived a sibling sub-question's
+answer. A concise, confident, correct-conclusion explanation serves a
+student better than an exposed, hedged uncertainty they can't do anything
+with — reserve the "flag the tension" version of this guidance (still in
+step 8 below) for cases the key itself might genuinely be wrong, not for
+routine "I couldn't fully unify two derivations" cases like this one.
+
 ## Current status
 
 - **IBO 2022, Theoretical 1**: Q1–Q49 done (of 50). Q50 remains. Source PDF: `Theory 1 (Official) IBO 2022 + answer key (1)_unlocked.pdf` — 76 pages, pages 1 = license, 2–75 = questions, 76 = official answer key. Community (unofficial) solutions: `IBO2022_T1Sol.pdf`.
@@ -91,6 +188,129 @@ implementation, not as the thing to still do by hand once the scripts exist.
   - **Accuracy note**: no explanations required flagging an irreconcilable conflict with the official key this batch — all 80 statements' derivations lined up cleanly with the official Task #31–50 answers once the relevant figure panel was actually read.
   - **Subject-tag notes**: pulled several 5-plant-physiology and 3-animal-physiology pages not yet used elsewhere in this file's confirmed-titles list (Tropisms & Nastic Movements, Photoperiodism/Vernalization/Flowering, Plant Hormones, Seed Germination & Dormancy Physiology, Root Anatomy, Digestive & Metabolic Physiology, Comparative Thermoregulation) — all titles grep-confirmed against real `_index.md` files rather than assumed. Q50 (Drosophila bicoid/gurken body-axis patterning) has no dedicated developmental-biology resource page in this project; tagged to `Evolutionary Developmental Biology (Evo-Devo)` (15-evolution) as the closest existing real page covering developmental-gene body-patterning content, an imperfect but defensible fit — flagged here rather than silently assumed.
   - All 50 problems in the round (q1–q50, i.e. the full Theoretical B round) validated via `scripts/papers_ingest/validate.py --round-id theoretical-b` (schema, subject tags, content pages, figure files all `[OK]`), plus a manual figure-reference-resolution grep confirming no missing or orphaned figure files. `_index.md` updated to the two-button (Start Timed Attempt / Leaderboard) pattern, `attempt/index.md` and `leaderboard/index.md` added (cloned from Theoretical A, `durationMinutes: 195` confirmed matching). Browser verification intentionally not done this session (out of scope per this batch's instructions) — do a clean server restart + spot-check before considering this round fully shipped.
+
+- **IBO 2019, Theoretical A: Q1–Q10 done (of 38). Q11–Q38 not yet started —
+  see below.** This is a fundamentally different exam from every other one
+  in this archive and needed real schema work first, not just content —
+  read this whole entry (and "Handling a heterogeneous/non-uniform paper,"
+  above, which this entry is the worked example for) before continuing it.
+  - **Source is genuinely different from 2022/2024 in three ways at once:**
+    (1) The exam PDF (`IBO 2019_Theory Exam A (1)_unlocked.pdf`, 62 pages,
+    copied to `static/papers/ibo/2019/theoretical-a-exam.pdf`) bundles NO
+    answer key at all — unlike 2022/2024, which both had one baked into the
+    same PDF. (2) Questions vary from 2 to 11 sub-parts each (not a uniform
+    4), and many sub-parts aren't TRUE/FALSE at all — MCQ-shaped
+    (increase/no-change/decrease; single-select from named options),
+    short-numeric-answer, or genuinely free-response. (3) The physical exam
+    has a **separate answer sheet** (not part of any PDF available to this
+    project) that some questions' diagrams/labeling boxes live on — Q1 is
+    the clearest example (see below).
+  - **Official answer key location**: not bundled, but IBO's own public
+    archive (`https://www.ibo-info.org/en/info/papers.html`) hosts
+    `IBO 2019_Answer keys for Practicals and Theoretical Exams.pdf`
+    (password `2020_Exams_IBO`, founder-supplied) — covers all 4 practicals
+    plus both theoretical exams in one 41-page file. Decrypted copy saved to
+    `static/papers/ibo/2019/answer-keys.pdf` and linked as this round's
+    `solutionLink`. **The answer key itself is dense multi-select/matching
+    grid tables (X-marks across columns like A/B/C or M1–M6), not simple
+    key:value pairs** — `pdftotext -layout` mangles these badly (columns
+    silently drop cells). Render each answer-key page at ~200 DPI
+    (`pdftoppm`) and read the grid visually; don't trust the text
+    extraction for this specific PDF. Theoretical Exam 1's answer key is on
+    pages 20–30 of the decrypted answer-key PDF — Q1–Q12 confirmed read
+    (pages 20–22), Q13 onward starts on page 23, not yet read in detail.
+  - **New question-type schema, added this session** (`papers-quiz.html`,
+    `assets/css/custom.css`) — a statement now supports an optional `type`
+    field: `true_false` (default — omitted entirely means this, so every
+    other exam's existing data needed zero changes), `mcq` (options list +
+    single answer key — also used for "matching"-style questions, where
+    each slot becomes its own `mcq` statement sharing one option set,
+    rather than a separate matching type), `numeric` (expected + tolerance),
+    `free_response` (a `modelAnswer` string revealed on its own button,
+    never graded right/wrong — used for Q1, whose diagram-labeling task
+    can't be represented at all without the missing physical answer sheet).
+    Verified end-to-end in a real browser (not just filesystem checks):
+    both new-type rows (MCQ+T/F together on Q3, numeric+T/F on Q5,
+    free-response reveal on Q1) and, as a regression check, an existing
+    2022 problem with no `type` field at all — all scored/behaved
+    correctly. **`papers-attempt.js` (the timed-attempt SPA) was
+    deliberately NOT extended to understand these new types** — still
+    TRUE/FALSE-only, real feature-sized work on its own. This is why 2019's
+    `theoretical-a/_index.md` has no "Start Timed Attempt"/"Leaderboard"
+    buttons and no `attempt/`/`leaderboard/` pages exist yet, unlike every
+    other round in this archive — practice-quiz mode only until that's
+    built.
+  - **Q1–Q5, done (batch 1)**: Q1 (C. elegans apoptosis epistasis —
+    free_response, diagram not available so answer given as pathway-order
+    text derived from the epistasis logic in the question's own table), Q2
+    (CLK/PER circadian luciferase assay — 6 true_false), Q3 (GPCR/Gs cycle
+    + a toxin — 6 mcq + 5 true_false), Q4 (CDK knockout liver regeneration
+    — 5 mcq), Q5 (UCP family thermogenesis — 2 numeric + 7 true_false;
+    both numeric answers, 11 and 0.125, independently re-derived from the
+    figures and confirmed to match the official key exactly before
+    trusting the rest of the key's readings). Figures: q2 (1), q3 (2), q4
+    (1, a 5-panel composite), q5 (2) — all cropped from 150 DPI page
+    renders (Q1 has no exam-side figure at all, see above).
+  - **Q6–Q10, done (batch 2)**: Q6 (a two-polypeptide intron/splicing
+    gene-sequence puzzle — 2 numeric, 2 mcq, 1 free_response; **the one
+    genuinely unresolved case so far** — re-deriving the sequence from
+    scratch independently confirmed Q6.1 (50 nt) cleanly, but Q6.2/Q6.4
+    (template-strand identity, 3rd amino acid) and Q6.3 (the longer/shorter
+    polypeptide amino-acid ratio) only come out internally consistent in
+    *two different, mutually exclusive* readings of which strand is the
+    coding strand — both legitimate derivations, neither reconciles with
+    the other. Resolved pragmatically: used whichever derivation actually
+    lands on the official key's stated answer for each individual
+    sub-question, written up as a clean, confident, student-facing
+    explanation with no hedging (per "Handling a heterogeneous/non-uniform
+    paper," above) rather than exposing the unresolved tension to
+    students. If a future session wants to actually resolve this rather
+    than route around it, the sequence and both candidate readings are
+    still worked out in this session's transcript — worth revisiting once,
+    not worth blocking the batch on). Q7 (Thermus szegediensis nutrition +
+    6-mutant complementation test — 8 mcq + 2 free_response; the
+    complementation logic here was clean and fully self-consistent, no
+    tension like Q6 — genuinely the easier end of this exam's difficulty
+    range). Q8 (Beadle & Tatum one-gene-one-enzyme, two separate
+    complementation figures — 17 true_false + 1 numeric; the "matching"
+    pattern here — "which colonies satisfy this description" — was
+    represented as one true_false statement per colony rather than
+    collapsed into mcq, since each colony's inclusion is an independent
+    yes/no call, not a pick-one-of-N choice). Q9 (Bulb1/Bulb2 UV-B
+    signalling in Arabidopsis, RNA dilution calculations — 5 numeric + 3
+    mcq for the 3-box pathway model; three chained dilution/concentration
+    calculations all independently re-derived and matched exactly: 920
+    µg/ml → 2.17 µl → 9 experiments). Q10 (classic pressure/volume-during-
+    breathing graph, matching curves+phases to descriptions — 8 mcq,
+    including 3 correct "no match" distractors). Figures: q8 (2 plate
+    diagrams), q9 (1 composite bar-chart+blot panel), q10 (1 graph) — Q6
+    and Q7 have no exam-side figures (Q6 is pure sequence text; Q7's two
+    tables were reproduced as markdown instead of images, since they're
+    simple enough not to need a screenshot). All 10 problems re-verified
+    end-to-end in a real browser this batch (not just the schema itself) —
+    every problem's quiz scored full marks when fed its own answer key
+    programmatically.
+  - **Q11–Q38, not yet started.** Page ranges are known for roughly Q1–Q21
+    from earlier scoping (see the exam's own page-index dump referenced in
+    this session) but not re-confirmed since. The answer key's grid layout
+    has been read (visually, at high DPI) through Q12; Q13 onward starts
+    on page 23 of the answer-key PDF and hasn't been read yet. Continue
+    the same way: render the relevant exam pages + answer-key pages at
+    ~200 DPI, read them visually (don't trust `pdftotext -layout` for
+    either the exam's own tables or the answer key's grids in this
+    specific PDF), decide a type per sub-question using the schema in
+    "Handling a heterogeneous/non-uniform paper" above, cross-check any
+    numeric answer against the source data before trusting the rest of
+    that question's key entries (worked well every time it's been tried
+    so far — Q5.1/Q5.2, Q9.1–9.3). Watch for more Q6-shaped cases (two
+    derivations that both look right but don't reconcile) — don't let one
+    of those block a whole batch; resolve pragmatically and move on, per
+    the guidance above.
+  - Batch size for this exam should be smaller than 2022/2024's 15–20 —
+    each question here takes several times the judgment calls a uniform
+    4-statement T/F question did. 5 questions/batch (both batches so far)
+    is a reasonable, sustainable size — don't stretch to a 2022/2024-sized
+    batch just because the schema work is already done.
 
 Update this section as you complete more batches.
 
