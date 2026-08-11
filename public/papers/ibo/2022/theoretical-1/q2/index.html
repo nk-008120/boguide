@@ -333,32 +333,32 @@ Four candidate graphs of time-taken-for-completion vs. temperature.">
 <em>Four candidate graphs of time-taken-for-completion vs. temperature.</em></p>
 <p>For each graph, determine if it represents the results of the experiment correctly (true) or not (false):</p>
 <p><div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-1-q2">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="This is the expected shape: the reaction speeds up (less time) as temperature rises toward the optimum, then slows and eventually can&#39;t complete at all as the enzyme denatures approaching 50°C.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="This is the expected shape: the reaction speeds up (less time) as temperature rises toward the optimum, then slows and eventually can&#39;t complete at all as the enzyme denatures approaching 50°C.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Graph 1 (U-shaped: high time at low temperature, falling to a minimum around 25–30°C, then rising sharply toward 50°C).</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="The y-axis is time, so a peak at the &#39;optimal&#39; temperature would mean the reaction is slowest there — backwards from what actually happens at an enzyme&#39;s optimum.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="The y-axis is time, so a peak at the &#39;optimal&#39; temperature would mean the reaction is slowest there — backwards from what actually happens at an enzyme&#39;s optimum.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Graph 2 (bell-shaped: low time at the extremes, peaking around 30–40°C).</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="This implies the reaction gets slower and slower from the very lowest temperature onward, with no speed-up phase at all on the way to the optimum — contradicts typical enzyme behaviour below the optimum.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="This implies the reaction gets slower and slower from the very lowest temperature onward, with no speed-up phase at all on the way to the optimum — contradicts typical enzyme behaviour below the optimum.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Graph 3 (a straight line, time increasing steadily across the whole range).</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="This implies the reaction keeps getting faster right up to 50°C. But the enzyme is fully denatured at exactly 50°C, so the reaction shouldn&#39;t be able to complete at all there — time should shoot up, not reach its lowest value.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="This implies the reaction keeps getting faster right up to 50°C. But the enzyme is fully denatured at exactly 50°C, so the reaction shouldn&#39;t be able to complete at all there — time should shoot up, not reach its lowest value.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Graph 4 (a straight line, time decreasing steadily all the way to 50°C).</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -378,8 +378,24 @@ Four candidate graphs of time-taken-for-completion vs. temperature.">
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -394,16 +410,32 @@ Four candidate graphs of time-taken-for-completion vs. temperature.">
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -411,7 +443,7 @@ Four candidate graphs of time-taken-for-completion vs. temperature.">
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -419,8 +451,13 @@ Four candidate graphs of time-taken-for-completion vs. temperature.">
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

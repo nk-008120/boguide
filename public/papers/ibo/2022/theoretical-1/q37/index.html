@@ -322,32 +322,32 @@ There are glycoproteins on the surface of human red blood cells with antigenic p
 <p>There are glycoproteins on the surface of human red blood cells with antigenic properties called H-antigen. The A allele encodes an enzyme converting part of the H-antigen into A antigen (blood type A); the B allele converts it to B antigen (blood type B); the O allele encodes an inactive enzyme that doesn&rsquo;t modify H-antigen. In rare cases (Bombay phenotype), the initial H antigen doesn&rsquo;t appear on erythrocytes at all — even with A and B alleles present, no A or B antigens are produced. Synthesis of the H antigen is encoded by the H gene, whose recessive allele is h.</p>
 <p>Using the information, determine whether the following statements are true or false:</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-1-q37">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="The ABHH parent can only pass A or B (never O), and the OOhh parent can only pass O and h — every child is HhI^AI^O or HhI^BI^O, i.e. type A or type B, each with 50% probability, not 25%.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="The ABHH parent can only pass A or B (never O), and the OOhh parent can only pass O and h — every child is HhI^AI^O or HhI^BI^O, i.e. type A or type B, each with 50% probability, not 25%.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Parents with genotype ABHH and OOhh may have a baby with blood type B with a 25% of probability.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Two phenotypically normal (H_) parents can each still carry an h allele and an I^B allele without expressing Bombay or B phenotypes themselves, and could together produce a child with either hh (Bombay, masking B) or a normal H_I^B_ genotype — a B-type child is entirely possible.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Two phenotypically normal (H_) parents can each still carry an h allele and an I^B allele without expressing Bombay or B phenotypes themselves, and could together produce a child with either hh (Bombay, masking B) or a normal H_I^B_ genotype — a B-type child is entirely possible.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> If both parents have normal phenotypes (absence of Bombay phenotype), their child cannot have a B blood type.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="An hh parent (BBhh) has the Bombay phenotype and can&#39;t express B on their cells, but can still pass the I^B allele — combined with the AAHH parent&#39;s I^A and H alleles, a child could be I^AI^BHh, which is phenotypically AB.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="An hh parent (BBhh) has the Bombay phenotype and can&#39;t express B on their cells, but can still pass the I^B allele — combined with the AAHH parent&#39;s I^A and H alleles, a child could be I^AI^BHh, which is phenotypically AB.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> If a child with AB blood type was born in the family, it is possible that his/her parents&#39; genotypes were AAHH and BBhh.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Both parents can pass either H or h at the independent H locus — a child could inherit hh (Bombay phenotype), which masks the AB antigens regardless of the I^AI^B genotype, so not every child would show as blood type AB.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Both parents can pass either H or h at the independent H locus — a child could inherit hh (Bombay phenotype), which masks the AB antigens regardless of the I^AI^B genotype, so not every child would show as blood type AB.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> If the parents have the AAHh and BBHh genotypes, then their children will all have blood type AB.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -367,8 +367,24 @@ There are glycoproteins on the surface of human red blood cells with antigenic p
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -383,16 +399,32 @@ There are glycoproteins on the surface of human red blood cells with antigenic p
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -400,7 +432,7 @@ There are glycoproteins on the surface of human red blood cells with antigenic p
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -408,8 +440,13 @@ There are glycoproteins on the surface of human red blood cells with antigenic p
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

@@ -332,32 +332,32 @@ Particularly, Beckwith–Wiedemann syndrome (BWS) is characterized by fetal macr
 <em>Figure 1. Maternal and Paternal structures of the IGF2-H19 cluster. ICR - imprinting control region; En - Enhancer, Met - methylated, unMet - unmethylated.</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q22">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. The imprinting pattern in Figure 1 determines which parental copy of IGF2/H19 is active, but it applies the same way regardless of the baby&#39;s own sex — a baby inherits one maternal and one paternal chromosome 11 either way, so this imprinting mechanism doesn&#39;t make male infants more cancer-prone than female infants.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. The imprinting pattern in Figure 1 determines which parental copy of IGF2/H19 is active, but it applies the same way regardless of the baby&#39;s own sex — a baby inherits one maternal and one paternal chromosome 11 either way, so this imprinting mechanism doesn&#39;t make male infants more cancer-prone than female infants.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> The figure implies that male infants are more often prone to cancers.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Two paternal copies means two active (unmethylated-ICR-style) IGF2 genes and no maternal H19 expression — that&#39;s a double dose of the pro-growth IGF2 signal, which fits BWS (fetal macrosomia/overgrowth), not SRS (growth restriction). Paternal uniparental disomy would be expected to cause BWS-like overgrowth, not SRS.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Two paternal copies means two active (unmethylated-ICR-style) IGF2 genes and no maternal H19 expression — that&#39;s a double dose of the pro-growth IGF2 signal, which fits BWS (fetal macrosomia/overgrowth), not SRS (growth restriction). Paternal uniparental disomy would be expected to cause BWS-like overgrowth, not SRS.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Paternal uniparental disomy of chromosome 11, both copies of the pair are inherited from a father, might lead to the symptoms of SRS.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. IGF2R&#39;s job is to bind IGF2 and target it for lysosomal degradation, clearing it away. Losing the maternal (active) copy of IGF2R removes that clearance mechanism, letting IGF2 accumulate — extra IGF2 signaling drives the same pro-proliferative overgrowth phenotype seen in BWS.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. IGF2R&#39;s job is to bind IGF2 and target it for lysosomal degradation, clearing it away. Losing the maternal (active) copy of IGF2R removes that clearance mechanism, letting IGF2 accumulate — extra IGF2 signaling drives the same pro-proliferative overgrowth phenotype seen in BWS.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Individuals with the maternal IGF2R loss of function will have the phenotype resembling that of the BWS patients.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Genomic imprinting is thought to arise from parent-of-origin conflict over maternal resource allocation to offspring — a father benefits from his offspring extracting more resources even at the mother&#39;s expense, especially when he isn&#39;t the sole/repeated father of her future offspring. In monogamous species that conflict of interest is much weaker (the father&#39;s own reproductive success is tied to the same mother&#39;s long-term welfare), so imprinting is expected to be favored less strongly than in polygamous species.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Genomic imprinting is thought to arise from parent-of-origin conflict over maternal resource allocation to offspring — a father benefits from his offspring extracting more resources even at the mother&#39;s expense, especially when he isn&#39;t the sole/repeated father of her future offspring. In monogamous species that conflict of interest is much weaker (the father&#39;s own reproductive success is tied to the same mother&#39;s long-term welfare), so imprinting is expected to be favored less strongly than in polygamous species.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> The genome imprinting in monogamous species is expected to occur at lower rates than in polygamous species.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -377,8 +377,24 @@ Particularly, Beckwith–Wiedemann syndrome (BWS) is characterized by fetal macr
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -393,16 +409,32 @@ Particularly, Beckwith–Wiedemann syndrome (BWS) is characterized by fetal macr
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -410,7 +442,7 @@ Particularly, Beckwith–Wiedemann syndrome (BWS) is characterized by fetal macr
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -418,8 +450,13 @@ Particularly, Beckwith–Wiedemann syndrome (BWS) is characterized by fetal macr
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

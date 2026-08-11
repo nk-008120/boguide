@@ -326,32 +326,32 @@ Using this data, and assuming Hardy-Weinberg equilibrium, determine whether the 
 <p>Familial Mediterranean Fever (FMF) is a genetic disorder commonly associated with Eastern Mediterranean populations. A genetic segregation analysis of some of the Armenian populations showed that the frequency of the underlying autosomal recessive allele is roughly 0.073.</p>
 <p>Using this data, and assuming Hardy-Weinberg equilibrium, determine whether the following statements are true or false. In your calculations, round the final answers to the nearest integer.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-2-q45">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="With q = 0.073, the frequency of affected (aa) individuals is q² = 0.073² ≈ 0.00533, and 1/0.00533 ≈ 188 — so about 1 in 188 individuals is expected to have FMF.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="With q = 0.073, the frequency of affected (aa) individuals is q² = 0.073² ≈ 0.00533, and 1/0.00533 ≈ 188 — so about 1 in 188 individuals is expected to have FMF.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> On average, approximately 1 in 188 individuals in this population has FMF.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Carrier frequency is 2pq = 2(0.927)(0.073) ≈ 0.135, so in 100 people we&#39;d expect about 14 carriers, not 7 — 7 would only match q alone (0.073×100), not the actual carrier frequency 2pq.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Carrier frequency is 2pq = 2(0.927)(0.073) ≈ 0.135, so in 100 people we&#39;d expect about 14 carriers, not 7 — 7 would only match q alone (0.073×100), not the actual carrier frequency 2pq.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> In a random sample of 100 people from this population, we can expect approximately 7 carriers.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="P(at least one carrier) = 1 − (1−0.135)² ≈ 1 − 0.748 = 0.252, and 63 × 0.252 ≈ 16 couples — about twice the stated 8.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="P(at least one carrier) = 1 − (1−0.135)² ≈ 1 − 0.748 = 0.252, and 63 × 0.252 ≈ 16 couples — about twice the stated 8.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> In a random sample of 63 married couples from this population, we can expect 8 couples, where at least one partner is a carrier.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Among non-symptomatic individuals, P(carrier) = 2pq/(p²&#43;2pq) ≈ 0.136; the child is affected only if the unknown parent is also a carrier (prob. 0.136) and both parents each pass the recessive allele (prob. 0.5×0.5): 0.136 × 0.25 ≈ 0.034 ≈ 1/29.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Among non-symptomatic individuals, P(carrier) = 2pq/(p²&#43;2pq) ≈ 0.136; the child is affected only if the unknown parent is also a carrier (prob. 0.136) and both parents each pass the recessive allele (prob. 0.5×0.5): 0.136 × 0.25 ≈ 0.034 ≈ 1/29.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> The child of a carrier and a non-symptomatic individual of unknown genotype from this population has a 1 in 29 probability of having the disease.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -371,8 +371,24 @@ Using this data, and assuming Hardy-Weinberg equilibrium, determine whether the 
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -387,16 +403,32 @@ Using this data, and assuming Hardy-Weinberg equilibrium, determine whether the 
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -404,7 +436,7 @@ Using this data, and assuming Hardy-Weinberg equilibrium, determine whether the 
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -412,8 +444,13 @@ Using this data, and assuming Hardy-Weinberg equilibrium, determine whether the 
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

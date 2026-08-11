@@ -326,32 +326,32 @@ Venus flytrap is a carnivorous plant. In an experiment, researchers measured how
 <em>Figure 1. For A, B, C: X — time (s) after stimulation. A Trap closure after an electrical stimulation at temperatures 20°C and 36°C; Y = y/ymax, where ymax is the trap&rsquo;s maximally open distance. B The same data from graph A, showing temperature&rsquo;s influence on the speed of trap closure; Y = speed (1/s). C Trap-closure speed due to electrical stimulation; Y = speed (1/s). D Y = rate of respiration (µmol/m²·s) in the trap leaf due to repeated trigger-hair stimulation in already-closed traps; X = time (s). Arrow = stimulation begins, blunted arrow = stimulation ends.</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q32">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE, matching the official key. Cross-referencing panel A&#39;s two closure curves against panel B&#39;s explicitly temperature-labeled speed curves (20°C and 36°C) lines up curve 1 with the 20°C condition and curve 2 with the 36°C condition — both panels come from the same underlying closure-kinetics dataset, just plotted as position (A) versus speed (B).">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE, matching the official key. Cross-referencing panel A&#39;s two closure curves against panel B&#39;s explicitly temperature-labeled speed curves (20°C and 36°C) lines up curve 1 with the 20°C condition and curve 2 with the 36°C condition — both panels come from the same underlying closure-kinetics dataset, just plotted as position (A) versus speed (B).">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> On graph A curve 1 is obtained under 20°C, while curve 2 is under 36°C</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. The question stem states that after treating the soil with substance A for 4.5 hours (curve 3, panel C), the soil was then washed several times with distilled water and stimulation was repeated (curve 4, panel C). Panel C shows curve 4 recovering to a fast, high-amplitude closure response much closer to the untreated baseline than curve 3&#39;s suppressed response — the closure speed comes back after washing out substance A, so the effect is reversible, not permanent.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. The question stem states that after treating the soil with substance A for 4.5 hours (curve 3, panel C), the soil was then washed several times with distilled water and stimulation was repeated (curve 4, panel C). Panel C shows curve 4 recovering to a fast, high-amplitude closure response much closer to the untreated baseline than curve 3&#39;s suppressed response — the closure speed comes back after washing out substance A, so the effect is reversible, not permanent.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> The effect of substance A is irreversible</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. In panel C, curve 3 (during substance A treatment) is not just shifted later in time relative to the untreated curves — its peak speed is also much lower and broader than the sharp, high peaks of curves 1/2/4. Substance A therefore suppresses the speed of closure as well as delaying it, not one without the other.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. In panel C, curve 3 (during substance A treatment) is not just shifted later in time relative to the untreated curves — its peak speed is also much lower and broader than the sharp, high peaks of curves 1/2/4. Substance A therefore suppresses the speed of closure as well as delaying it, not one without the other.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Substance A delays the trap closure but does not affect the speed of the closure</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Panel D plots respiration rate against time after repeated trigger-hair stimulation in traps that are already closed (so no further mechanical closure work is being done). Respiration still rises sharply after each stimulation and stays elevated for an extended period, which means the extra respiratory cost cannot solely be the energetic cost of the closing movement itself — some other trigger-hair-stimulation-linked process (e.g. active transport, wound/defense signaling, ion pumping to reset the trap) must also be consuming ATP.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Panel D plots respiration rate against time after repeated trigger-hair stimulation in traps that are already closed (so no further mechanical closure work is being done). Respiration still rises sharply after each stimulation and stays elevated for an extended period, which means the extra respiratory cost cannot solely be the energetic cost of the closing movement itself — some other trigger-hair-stimulation-linked process (e.g. active transport, wound/defense signaling, ion pumping to reset the trap) must also be consuming ATP.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Graph D shows that there are several causes of increased respiration aside from energy expenditure for trap closure.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -371,8 +371,24 @@ Venus flytrap is a carnivorous plant. In an experiment, researchers measured how
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -387,16 +403,32 @@ Venus flytrap is a carnivorous plant. In an experiment, researchers measured how
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -404,7 +436,7 @@ Venus flytrap is a carnivorous plant. In an experiment, researchers measured how
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -412,8 +444,13 @@ Venus flytrap is a carnivorous plant. In an experiment, researchers measured how
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

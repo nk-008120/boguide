@@ -326,32 +326,32 @@ The incompatible insect technique (IIT) controls harmful insects by inducing mat
 <em>Figure 1. Spatial distribution of hatched eggs. The red polygon marks the experimental site, and the blue polygon marks the control site. Yellow circles indicate the number of hatched eggs (larger circles denote more eggs).</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q17">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. IIT works by releasing Wolbachia-infected males to mate with wild uninfected females, causing embryonic death. The longer those released males survive, the more uninfected females they can encounter and mate with over time (since males are the active dispersers here), so a longer average male lifespan gives IIT more opportunities to work, positively correlating with its effectiveness.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. IIT works by releasing Wolbachia-infected males to mate with wild uninfected females, causing embryonic death. The longer those released males survive, the more uninfected females they can encounter and mate with over time (since males are the active dispersers here), so a longer average male lifespan gives IIT more opportunities to work, positively correlating with its effectiveness.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> The average lifespan of males of Aedes albopictus positively correlates with the effectiveness of IIT.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Irradiation is meant to sterilize all released females so no viable Wolbachia-carrying offspring are produced. A weaker irradiation dose risks leaving some released females fertile — those fertile, Wolbachia-infected females mating with Wolbachia-infected males would produce viable, Wolbachia-infected offspring (no cytoplasmic incompatibility in that combination), letting the Wolbachia strain establish and spread through the wild population across generations instead of being suppressed.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Irradiation is meant to sterilize all released females so no viable Wolbachia-carrying offspring are produced. A weaker irradiation dose risks leaving some released females fertile — those fertile, Wolbachia-infected females mating with Wolbachia-infected males would produce viable, Wolbachia-infected offspring (no cytoplasmic incompatibility in that combination), letting the Wolbachia strain establish and spread through the wild population across generations instead of being suppressed.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Reducing the initial irradiation dose can lead to resistance against the Wolbachia strain in successive mosquito generations.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. With half of each sex infected, random mating gives four equally likely (25% each) male×female combinations: uninfected×uninfected (viable), infected×infected (viable, both carry Wolbachia), infected♂×uninfected♀ (embryonic death), and uninfected♂×infected♀ (viable, no incompatibility). Only the one infected-male/uninfected-female combination fails, which is 25% of matings, not 75%.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. With half of each sex infected, random mating gives four equally likely (25% each) male×female combinations: uninfected×uninfected (viable), infected×infected (viable, both carry Wolbachia), infected♂×uninfected♀ (embryonic death), and uninfected♂×infected♀ (viable, no incompatibility). Only the one infected-male/uninfected-female combination fails, which is 25% of matings, not 75%.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> When 50% of males and females are infected (1:1 sex ratio), 75% of matings produce no offspring due to cytoplasmic incompatibility.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. All mosquitoes deliberately released into the experimental site were Wolbachia-infected, so eggs hatching there shouldn&#39;t happen via the normal IIT-suppressed matings — the two adjacent sites share a landscape with no barrier, so wild (uninfected) mosquitoes drifting in from the nearby control site and mating with each other, or with infected mosquitoes in a viable combination, is the simplest explanation for hatched eggs turning up inside the experimental zone.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. All mosquitoes deliberately released into the experimental site were Wolbachia-infected, so eggs hatching there shouldn&#39;t happen via the normal IIT-suppressed matings — the two adjacent sites share a landscape with no barrier, so wild (uninfected) mosquitoes drifting in from the nearby control site and mating with each other, or with infected mosquitoes in a viable combination, is the simplest explanation for hatched eggs turning up inside the experimental zone.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Mosquito migration from control site to experimental site is the most likely explanation of the hatched eggs found in the experimental site.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -371,8 +371,24 @@ The incompatible insect technique (IIT) controls harmful insects by inducing mat
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -387,16 +403,32 @@ The incompatible insect technique (IIT) controls harmful insects by inducing mat
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -404,7 +436,7 @@ The incompatible insect technique (IIT) controls harmful insects by inducing mat
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -412,8 +444,13 @@ The incompatible insect technique (IIT) controls harmful insects by inducing mat
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

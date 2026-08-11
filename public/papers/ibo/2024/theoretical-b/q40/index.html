@@ -379,32 +379,32 @@ Property Description Absorption — Distribution Influenced by ionization and ot
 <p><em>Table 1. Pharmacokinetic properties regulating the duration of a drug&rsquo;s therapeutic effect.</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q40">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. A prodrug only becomes therapeutically active after being metabolized, typically in the liver. Oral drugs are absorbed from the gut and routed through the liver before reaching systemic circulation (first-pass metabolism) — a prodrug with high first-pass metabolism gets converted to its active form quickly and efficiently on that very first pass, reaching a therapeutic concentration sooner than a prodrug with low first-pass metabolism would (which needs repeated circulation through the liver to accumulate enough of the active form). High first-pass metabolism therefore works in a prodrug&#39;s favor when given orally.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. A prodrug only becomes therapeutically active after being metabolized, typically in the liver. Oral drugs are absorbed from the gut and routed through the liver before reaching systemic circulation (first-pass metabolism) — a prodrug with high first-pass metabolism gets converted to its active form quickly and efficiently on that very first pass, reaching a therapeutic concentration sooner than a prodrug with low first-pass metabolism would (which needs repeated circulation through the liver to accumulate enough of the active form). High first-pass metabolism therefore works in a prodrug&#39;s favor when given orally.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Oral administration is generally more suitable for prodrugs with high first-pass metabolism than for those with low first-pass metabolism.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Volume of distribution (V) describes how far a drug disperses beyond the bloodstream into body fluids/tissues; a V close to total body volume means wide distribution. A drug that binds strongly to plasma proteins is largely confined to the vascular compartment (roughly the plasma volume) rather than diffusing freely into cells and tissues, since the protein-bound fraction can&#39;t cross membranes — that confinement to a small compartment corresponds to a small V.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Volume of distribution (V) describes how far a drug disperses beyond the bloodstream into body fluids/tissues; a V close to total body volume means wide distribution. A drug that binds strongly to plasma proteins is largely confined to the vascular compartment (roughly the plasma volume) rather than diffusing freely into cells and tissues, since the protein-bound fraction can&#39;t cross membranes — that confinement to a small compartment corresponds to a small V.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Drugs that bind strongly to plasma proteins have a small volume of distribution.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. A lipophilic drug not bound to plasma protein is free to leave the bloodstream and enter tissues, including the liver, readily; the liver receives a large fraction of cardiac output, so this free drug reaches hepatic metabolism quickly and is cleared faster. A lipophilic drug bound to plasma protein is largely held back in the vascular compartment (protein-bound drug isn&#39;t available for metabolism), delaying its clearance and giving it a longer half-life. So the unbound lipophilic drug should indeed have the shorter half-life of the two.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. A lipophilic drug not bound to plasma protein is free to leave the bloodstream and enter tissues, including the liver, readily; the liver receives a large fraction of cardiac output, so this free drug reaches hepatic metabolism quickly and is cleared faster. A lipophilic drug bound to plasma protein is largely held back in the vascular compartment (protein-bound drug isn&#39;t available for metabolism), delaying its clearance and giving it a longer half-life. So the unbound lipophilic drug should indeed have the shorter half-life of the two.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Lipophilic drugs that do not bind to plasma proteins are expected to have a shorter half-life compared to lipophilic drugs that can bind to plasma proteins.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Enterohepatic circulation means only a small fraction (about 5%, per the passage) of a compound secreted in bile is actually excreted, with the rest reabsorbed from the intestine, sent back to the liver, and re-secreted in bile again — a recycling loop that keeps the compound in circulation rather than clearing it promptly. Estrogens undergo this same recycling, so more of the dose stays active in the body for longer than it otherwise would if excreted in one pass, prolonging the contraceptive&#39;s activity.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Enterohepatic circulation means only a small fraction (about 5%, per the passage) of a compound secreted in bile is actually excreted, with the rest reabsorbed from the intestine, sent back to the liver, and re-secreted in bile again — a recycling loop that keeps the compound in circulation rather than clearing it promptly. Estrogens undergo this same recycling, so more of the dose stays active in the body for longer than it otherwise would if excreted in one pass, prolonging the contraceptive&#39;s activity.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Enterohepatic circulation of oestrogen-containing oral contraceptives prolongs their activity.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -424,8 +424,24 @@ Property Description Absorption — Distribution Influenced by ionization and ot
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -440,16 +456,32 @@ Property Description Absorption — Distribution Influenced by ionization and ot
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -457,7 +489,7 @@ Property Description Absorption — Distribution Influenced by ionization and ot
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -465,8 +497,13 @@ Property Description Absorption — Distribution Influenced by ionization and ot
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

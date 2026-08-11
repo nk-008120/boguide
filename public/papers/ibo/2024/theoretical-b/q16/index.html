@@ -328,32 +328,32 @@ The &ldquo;hypothesis of intra-niche dimensions&rdquo; states that stable coexis
 <em>Figure 1. Stipa capillata.</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q16">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Fast growth requires rapidly mobilizing large amounts of nutrients, so &#34;colonizing&#34; fast-growers do best on nutrient-RICH soils where that resource demand can actually be met — on nutrient-poor soils they&#39;re limited by the very resource their strategy depends on, opening a niche dimension instead for slower-growing, more resource-frugal competitors like Stipa.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Fast growth requires rapidly mobilizing large amounts of nutrients, so &#34;colonizing&#34; fast-growers do best on nutrient-RICH soils where that resource demand can actually be met — on nutrient-poor soils they&#39;re limited by the very resource their strategy depends on, opening a niche dimension instead for slower-growing, more resource-frugal competitors like Stipa.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Based on the hypothesis, fast-growing plants usually overpopulate nutrient-poor soils.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Stipa&#39;s weak root system means it can&#39;t spread well once dense perennial turf is established, so grazing that reduces Stipa&#39;s biomass and opens up ground cover creates a new limiting-factor dimension (reduced Stipa competition) that other, less drought-tolerant but better-rooted turf-forming species can exploit — increasing the niche space available to other plant species.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Stipa&#39;s weak root system means it can&#39;t spread well once dense perennial turf is established, so grazing that reduces Stipa&#39;s biomass and opens up ground cover creates a new limiting-factor dimension (reduced Stipa competition) that other, less drought-tolerant but better-rooted turf-forming species can exploit — increasing the niche space available to other plant species.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Horses grazing in the meadows of Stipa grass can help increase the number of other plant species in the steppe.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Ploughing destroys the established turf layer that normally excludes Stipa (its weak roots can&#39;t compete against dense, well-rooted turf). Removing that competing turf via ploughing opens freshly-disturbed, hard/poor soil exactly suited to drought-resistant Stipa&#39;s strategy, letting Stipa&#39;s relative biomass increase on newly ploughed ground rather than decline.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Ploughing destroys the established turf layer that normally excludes Stipa (its weak roots can&#39;t compete against dense, well-rooted turf). Removing that competing turf via ploughing opens freshly-disturbed, hard/poor soil exactly suited to drought-resistant Stipa&#39;s strategy, letting Stipa&#39;s relative biomass increase on newly ploughed ground rather than decline.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Uncontrolled ploughing of steppe areas will lead to a decline in the biomass of Stipa grass relative to other perennial grasses.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Drought conditions favor Stipa (which is specifically noted as more drought-resistant), implying the shallow-rooted turf species suffer water stress under drought. Water stress forces stomata to close to limit water loss, which cuts CO2 uptake and therefore photosynthesis — so reduced photosynthetic output during drought is a reasonable direct driver of turf biomass decline.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Drought conditions favor Stipa (which is specifically noted as more drought-resistant), implying the shallow-rooted turf species suffer water stress under drought. Water stress forces stomata to close to limit water loss, which cuts CO2 uptake and therefore photosynthesis — so reduced photosynthetic output during drought is a reasonable direct driver of turf biomass decline.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> During the drought season, the biomass of turf may decrease, particularly, owing to the reduced photosynthesis in turf.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -373,8 +373,24 @@ The &ldquo;hypothesis of intra-niche dimensions&rdquo; states that stable coexis
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -389,16 +405,32 @@ The &ldquo;hypothesis of intra-niche dimensions&rdquo; states that stable coexis
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -406,7 +438,7 @@ The &ldquo;hypothesis of intra-niche dimensions&rdquo; states that stable coexis
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -414,8 +446,13 @@ The &ldquo;hypothesis of intra-niche dimensions&rdquo; states that stable coexis
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

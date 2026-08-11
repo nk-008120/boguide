@@ -329,32 +329,32 @@ Water is a common renewable resource on Earth; however, after its use, water los
 <p>Equations: R<sub>ws</sub> - water scarcity index, A<sub>w</sub> - water crowding indicator, W - total annual water withdrawal by population, S - total water use from desalinated water, Q - RFWR, C - population size.</p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-a-q17">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Water withdrawal by humans (W) cycles water more rapidly through anthropogenic uses and back to the environment. Natural water residence time in reservoirs (lakes, groundwater) can be thousands of years. When humans extract and use water, it rapidly flows through water treatment, consumption, wastewater treatment, and discharge — dramatically accelerating the transit of water molecules through the cycle compared to natural residence times. Higher W → shorter mean residence time of individual water molecules in natural reservoirs.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Water withdrawal by humans (W) cycles water more rapidly through anthropogenic uses and back to the environment. Natural water residence time in reservoirs (lakes, groundwater) can be thousands of years. When humans extract and use water, it rapidly flows through water treatment, consumption, wastewater treatment, and discharge — dramatically accelerating the transit of water molecules through the cycle compared to natural residence times. Higher W → shorter mean residence time of individual water molecules in natural reservoirs.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Higher human activity leads to shorter mean residence time of water molecules in reservoirs.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Low Rws does NOT necessarily indicate the absence of a water crisis. Rws = (W-S)/Q. Low Rws occurs when W is small relative to Q. But a water crisis can result from INABILITY TO UTILIZE available RFWR — for example, a region might have large Q but poor infrastructure, making the water inaccessible despite technical abundance. Additionally, very small populations in water-rich areas would have low Rws. Low Rws indicates low water extraction pressure but does not guarantee that the population has adequate access to or use of that water.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Low Rws does NOT necessarily indicate the absence of a water crisis. Rws = (W-S)/Q. Low Rws occurs when W is small relative to Q. But a water crisis can result from INABILITY TO UTILIZE available RFWR — for example, a region might have large Q but poor infrastructure, making the water inaccessible despite technical abundance. Additionally, very small populations in water-rich areas would have low Rws. Low Rws indicates low water extraction pressure but does not guarantee that the population has adequate access to or use of that water.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Low Rws indicates the absence of a water crisis</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. 1/Aw = C/Q (population density per unit renewable freshwater). In regions with GOOD water infrastructure, Rws and 1/Aw should correlate well — dense populations in water-poor regions extract more (high Rws and high 1/Aw). In regions with POOR infrastructure, even if 1/Aw suggests high demand (large C/Q), actual water withdrawal W is low (because the infrastructure to extract water is lacking), giving low Rws. This decoupling of demand (1/Aw) from actual extraction (Rws) in poor-infrastructure regions WEAKENS the correlation between Rws and 1/Aw there.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. 1/Aw = C/Q (population density per unit renewable freshwater). In regions with GOOD water infrastructure, Rws and 1/Aw should correlate well — dense populations in water-poor regions extract more (high Rws and high 1/Aw). In regions with POOR infrastructure, even if 1/Aw suggests high demand (large C/Q), actual water withdrawal W is low (because the infrastructure to extract water is lacking), giving low Rws. This decoupling of demand (1/Aw) from actual extraction (Rws) in poor-infrastructure regions WEAKENS the correlation between Rws and 1/Aw there.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Correlation between Rws and 1/Aw is weaker in regions with poor water infrastructure.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Virtual water — water embedded in imported food — represents a much more efficient transfer of water scarcity relief than physical water import. Producing 1 kg of grain requires roughly 1,000–3,000 liters of water. If a water-scarce country IMPORTS grain instead of producing it locally, it effectively imports that embedded water — far more water-efficient than desalination or long-distance water transport. Food import allows water-scarce countries to meet nutritional needs without depleting their own RFWR, making it a superior long-term strategy compared to unsustainable water import.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Virtual water — water embedded in imported food — represents a much more efficient transfer of water scarcity relief than physical water import. Producing 1 kg of grain requires roughly 1,000–3,000 liters of water. If a water-scarce country IMPORTS grain instead of producing it locally, it effectively imports that embedded water — far more water-efficient than desalination or long-distance water transport. Food import allows water-scarce countries to meet nutritional needs without depleting their own RFWR, making it a superior long-term strategy compared to unsustainable water import.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Food import would be a better long-term solution for the water crisis in dry regions rather than water import.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -374,8 +374,24 @@ Water is a common renewable resource on Earth; however, after its use, water los
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -390,16 +406,32 @@ Water is a common renewable resource on Earth; however, after its use, water los
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -407,7 +439,7 @@ Water is a common renewable resource on Earth; however, after its use, water los
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -415,8 +447,13 @@ Water is a common renewable resource on Earth; however, after its use, water los
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

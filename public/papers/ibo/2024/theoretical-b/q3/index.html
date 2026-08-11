@@ -330,32 +330,32 @@ DNA double-strand breaks (DSBs) occur when both strands of the DNA molecule are 
 <em>Figure 2. Normal cells were sampled over 20 hours and BRCA1 protein concentration relative to the maximum and the proportions of cells in various stages of cell cycle are analyzed. Y1 = BRCA1 protein (%). Y2 = % of Cells. X = Hours.</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q3">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Figure 2 shows BRCA1 protein levels rising and falling in step with the cell-cycle-stage distribution over the 20-hour time course — BRCA1 peaks when the G2/M fraction peaks. Since BRCA1 activation determines whether HR or NHEJ is used, and BRCA1 abundance itself tracks cell-cycle stage, pathway choice is tied to where the cell is in the cycle.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Figure 2 shows BRCA1 protein levels rising and falling in step with the cell-cycle-stage distribution over the 20-hour time course — BRCA1 peaks when the G2/M fraction peaks. Since BRCA1 activation determines whether HR or NHEJ is used, and BRCA1 abundance itself tracks cell-cycle stage, pathway choice is tied to where the cell is in the cycle.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> The DSB repair pathway choice correlates with cell cycle status.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. BRCA1 is required to activate the HR pathway (it inhibits 53BP1, which otherwise pushes cells toward NHEJ). Without BRCA1, HR can&#39;t be activated, so cells depend on 53BP1-driven NHEJ instead — since either pathway can be enough for survival, losing HR capacity means a greater reliance on NHEJ to repair breaks and survive.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. BRCA1 is required to activate the HR pathway (it inhibits 53BP1, which otherwise pushes cells toward NHEJ). Without BRCA1, HR can&#39;t be activated, so cells depend on 53BP1-driven NHEJ instead — since either pathway can be enough for survival, losing HR capacity means a greater reliance on NHEJ to repair breaks and survive.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> BRCA1-deficient cancer cells exhibit an increased reliance on the NHEJ pathway for DNA repair.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Figure 2 shows BRCA1 protein (which activates HR) is low early in the cycle and rises to its peak around the G2/M-rich period, not during G1. Since HR activity tracks BRCA1 abundance, HR is actually more active in G2 than G1 — the opposite of what the statement claims. This also fits the biology: HR needs a sister chromatid as a repair template, which is only available after S phase, in G2.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Figure 2 shows BRCA1 protein (which activates HR) is low early in the cycle and rises to its peak around the G2/M-rich period, not during G1. Since HR activity tracks BRCA1 abundance, HR is actually more active in G2 than G1 — the opposite of what the statement claims. This also fits the biology: HR needs a sister chromatid as a repair template, which is only available after S phase, in G2.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> In normal cells, the HR pathway is more active in the G1 phase compared to the G2 phase.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. 53BP1-deficient cells lose NHEJ and must rely on HR, which needs cells to actually reach S/G2 (for a sister chromatid template) to repair breaks — blocking the G1→S transition traps these cells in G1 with no functional repair pathway available at all. BRCA1-deficient cells, in contrast, still have NHEJ available throughout the cycle including G1, so a G1/S block is comparatively less damaging to them.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. 53BP1-deficient cells lose NHEJ and must rely on HR, which needs cells to actually reach S/G2 (for a sister chromatid template) to repair breaks — blocking the G1→S transition traps these cells in G1 with no functional repair pathway available at all. BRCA1-deficient cells, in contrast, still have NHEJ available throughout the cycle including G1, so a G1/S block is comparatively less damaging to them.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Inhibitors of the transition from the G1 to the S phase will be more detrimental to 53BP1-deficient cells compared to BRCA1-deficient cells.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -375,8 +375,24 @@ DNA double-strand breaks (DSBs) occur when both strands of the DNA molecule are 
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -391,16 +407,32 @@ DNA double-strand breaks (DSBs) occur when both strands of the DNA molecule are 
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -408,7 +440,7 @@ DNA double-strand breaks (DSBs) occur when both strands of the DNA molecule are 
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -416,8 +448,13 @@ DNA double-strand breaks (DSBs) occur when both strands of the DNA molecule are 
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

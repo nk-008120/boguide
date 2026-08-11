@@ -331,32 +331,32 @@ There are two mechanisms of telomere lengthening in a cell: the telomerase-depen
 <em>Figure (panels F–G). Gene influence on TEL and ALT pathway activity in testis, measured by Partial Influence (PI).</em></p>
 <p>Using this information and analysis, determine whether the following statements are true or false.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-2-q47">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="In panel G (gene influence on ALT activity), RAD51 has the highest positive partial-influence (PI) value of all the plotted genes, meaning it contributes the most to activating the ALT pathway in testis among the genes shown.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="In panel G (gene influence on ALT activity), RAD51 has the highest positive partial-influence (PI) value of all the plotted genes, meaning it contributes the most to activating the ALT pathway in testis among the genes shown.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> RAD51 is the most critical factor resulting in activation of the ALT in testis.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="In panel F (gene influence on TEL activity), TERC stands out with a strongly negative PI (around −10), far below every other plotted gene — a large negative PI means the gene suppresses, i.e., decreases, activation of the TEL pathway.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="In panel F (gene influence on TEL activity), TERC stands out with a strongly negative PI (around −10), far below every other plotted gene — a large negative PI means the gene suppresses, i.e., decreases, activation of the TEL pathway.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> TERC decreases the activation of the TEL pathway in testis</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Panel C shows only the 20-29 group standing out as significantly different (marked with the significance bracket); the remaining age groups (30-39 through 70-79) show highly overlapping, widely variable distributions rather than clustering into one clean second group, so &#34;clearly divided into two groups&#34; overstates the pattern.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Panel C shows only the 20-29 group standing out as significantly different (marked with the significance bracket); the remaining age groups (30-39 through 70-79) show highly overlapping, widely variable distributions rather than clustering into one clean second group, so &#34;clearly divided into two groups&#34; overstates the pattern.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> The relative activity values of the TEL pathway are clearly divided into two age groups</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Panel C does show TEL activity highest in the 20-29 group and lower afterward, consistent with the first half of the claim; but panel D&#39;s ALT violin plots look broadly similar and overlapping across all age groups with no clear upward trend toward older ages, so the second half of the claim is not supported by the figure.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Panel C does show TEL activity highest in the 20-29 group and lower afterward, consistent with the first half of the claim; but panel D&#39;s ALT violin plots look broadly similar and overlapping across all age groups with no clear upward trend toward older ages, so the second half of the claim is not supported by the figure.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> TEL pathway activity predominates at a younger age, while the ALT pathway is more important in older age</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -376,8 +376,24 @@ There are two mechanisms of telomere lengthening in a cell: the telomerase-depen
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -392,16 +408,32 @@ There are two mechanisms of telomere lengthening in a cell: the telomerase-depen
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -409,7 +441,7 @@ There are two mechanisms of telomere lengthening in a cell: the telomerase-depen
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -417,8 +449,13 @@ There are two mechanisms of telomere lengthening in a cell: the telomerase-depen
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

@@ -330,32 +330,32 @@ Scientists studied how GAPLESS proteins affect apoplastic transport (transport t
 <em>Figure 2. Red dye penetration in wild-type versus GAPLESS loss-of-function mutant root cross-sections, both taken at the position-B level. Yellow arrows indicate the endodermal cell layer. Scale bars shown in white.</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q34">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Small, non-polar molecules can typically diffuse straight through the phospholipid bilayer of the plasma membrane. The experiment&#39;s whole logic depends on the dye being excluded from crossing into cells at the mature endodermis (blocked by the Casparian strip forcing an apoplast-only route) — if it were a small non-polar molecule, it would simply pass through cell membranes and the endodermal barrier wouldn&#39;t matter, undermining the entire assay. The dye&#39;s exclusion behavior is only informative because it can&#39;t cross membranes on its own.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Small, non-polar molecules can typically diffuse straight through the phospholipid bilayer of the plasma membrane. The experiment&#39;s whole logic depends on the dye being excluded from crossing into cells at the mature endodermis (blocked by the Casparian strip forcing an apoplast-only route) — if it were a small non-polar molecule, it would simply pass through cell membranes and the endodermal barrier wouldn&#39;t matter, undermining the entire assay. The dye&#39;s exclusion behavior is only informative because it can&#39;t cross membranes on its own.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> The red dye used in the experiment is a small, non-polar molecule.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Figure 1&#39;s cross-section A shows the red dye still penetrating all the way through the endodermal cell layer into the vascular cylinder, while cross-section B shows the dye excluded, stopping at the endodermis. Younger tissue nearer the root tip has a less mature, more permeable Casparian strip/endodermis, so the more-permeable section (A) is the one closer to the root tip, not B — the statement has the positions backwards.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Figure 1&#39;s cross-section A shows the red dye still penetrating all the way through the endodermal cell layer into the vascular cylinder, while cross-section B shows the dye excluded, stopping at the endodermis. Younger tissue nearer the root tip has a less mature, more permeable Casparian strip/endodermis, so the more-permeable section (A) is the one closer to the root tip, not B — the statement has the positions backwards.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> In Figure 1, position B is closer to the root tip than position A.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Figure 2 compares wild-type roots, where the dye is blocked at the endodermis exactly as in cross-section B, against the GAPLESS loss-of-function mutant, where the dye now leaks past the endodermal layer (yellow arrow) into the vascular cylinder. Losing GAPLESS function specifically removes the apoplastic block, meaning functional GAPLESS protein is what normally seals off that route from the cortex into the vasculature.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Figure 2 compares wild-type roots, where the dye is blocked at the endodermis exactly as in cross-section B, against the GAPLESS loss-of-function mutant, where the dye now leaks past the endodermal layer (yellow arrow) into the vascular cylinder. Losing GAPLESS function specifically removes the apoplastic block, meaning functional GAPLESS protein is what normally seals off that route from the cortex into the vasculature.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Based on Figure 2, GAPLESS proteins prevent the transport of substances from the cortex to the vascular system via the apoplast.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. The arrangement of vascular tissue visible in Figure 2&#39;s cross-sections (a ring of discrete bundles around a central pith rather than a continuous vascular cylinder with a true interfascicular cambium) is characteristic of a monocot. Monocots generally lack a functional vascular cambium and do not undergo the kind of secondary (radial) growth that would make a stem&#39;s diameter keep increasing year after year the way a woody eudicot&#39;s does.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. The arrangement of vascular tissue visible in Figure 2&#39;s cross-sections (a ring of discrete bundles around a central pith rather than a continuous vascular cylinder with a true interfascicular cambium) is characteristic of a monocot. Monocots generally lack a functional vascular cambium and do not undergo the kind of secondary (radial) growth that would make a stem&#39;s diameter keep increasing year after year the way a woody eudicot&#39;s does.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> The stem of the plant species used in this study most likely increases in diameter year by year.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -375,8 +375,24 @@ Scientists studied how GAPLESS proteins affect apoplastic transport (transport t
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -391,16 +407,32 @@ Scientists studied how GAPLESS proteins affect apoplastic transport (transport t
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -408,7 +440,7 @@ Scientists studied how GAPLESS proteins affect apoplastic transport (transport t
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -416,8 +448,13 @@ Scientists studied how GAPLESS proteins affect apoplastic transport (transport t
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

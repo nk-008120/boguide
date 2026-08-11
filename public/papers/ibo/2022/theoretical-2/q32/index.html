@@ -334,32 +334,32 @@ A herbal treatment was tested on patients with lipid imbalance in their blood. P
 <em>Figure 1. Summary of the results of a controlled experimental trial of the herbal preparation intervention. * and ** indicate statistically significant differences compared to placebo.</em></p>
 <p>Using the information and the data in the graphs, determine which of the statements are true or which are false.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-2-q32">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Both the intervention and placebo groups received statin therapy throughout the trial, so there is no statin-free comparison group in this design — the data can&#39;t isolate the statin&#39;s own effect on cholesterol from everything else happening in the trial.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Both the intervention and placebo groups received statin therapy throughout the trial, so there is no statin-free comparison group in this design — the data can&#39;t isolate the statin&#39;s own effect on cholesterol from everything else happening in the trial.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> The results in this figure alone are sufficient to assert that statin therapy decreases cholesterol levels in the blood.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="The herbal preparation was only ever tested on top of background statin therapy (both groups received it), so this trial gives no information about what the herbal preparation would do on its own, without a statin.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="The herbal preparation was only ever tested on top of background statin therapy (both groups received it), so this trial gives no information about what the herbal preparation would do on its own, without a statin.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> The information presented here is not sufficient to claim that herbal preparation would reduce LDL levels in the absence of a statin therapy.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Lower LDL is well established as a marker associated with reduced cardiovascular risk, so the significantly greater LDL reduction seen in the intervention group after 6 weeks is a reasonable basis to infer a potentially improved cardiovascular prognosis.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Lower LDL is well established as a marker associated with reduced cardiovascular risk, so the significantly greater LDL reduction seen in the intervention group after 6 weeks is a reasonable basis to infer a potentially improved cardiovascular prognosis.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> The reduced LDL concentration in the intervention group relative to the control group could imply an improved cardiovascular prognosis for patients in the intervention group.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="The premise doesn&#39;t hold up: the &#34;Before&#34; bars for LDL in the intervention and placebo groups are very close (overlapping error bars), so the intervention group did not start with a meaningfully lower LDL level — the later difference is not an artifact of an unequal starting point.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="The premise doesn&#39;t hold up: the &#34;Before&#34; bars for LDL in the intervention and placebo groups are very close (overlapping error bars), so the intervention group did not start with a meaningfully lower LDL level — the later difference is not an artifact of an unequal starting point.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> The LDL-reducing effect of the herbal preparation after 6 weeks cannot be established since the case group had a lower LDL concentration to start with.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -379,8 +379,24 @@ A herbal treatment was tested on patients with lipid imbalance in their blood. P
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -395,16 +411,32 @@ A herbal treatment was tested on patients with lipid imbalance in their blood. P
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -412,7 +444,7 @@ A herbal treatment was tested on patients with lipid imbalance in their blood. P
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -420,8 +452,13 @@ A herbal treatment was tested on patients with lipid imbalance in their blood. P
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

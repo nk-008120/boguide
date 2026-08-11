@@ -328,32 +328,32 @@ Angelman Syndrome (AS) is caused by a mutation of the ube3a gene. Affected indiv
 <em>Pedigree of a family with Angelman Syndrome. Dot = UBE3A mutation carrier; filled teal shape = individual with Angelman syndrome.</em></p>
 <p>Using the information and pedigree, determine whether the following statements are true or false:</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-1-q41">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="The pedigree shows carriers who inherited the mutation from their father staying unaffected, while carriers who inherit it from their mother produce affected children — that parent-of-origin pattern is genomic imprinting, not a simple autosomal recessive pattern.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="The pedigree shows carriers who inherited the mutation from their father staying unaffected, while carriers who inherit it from their mother produce affected children — that parent-of-origin pattern is genomic imprinting, not a simple autosomal recessive pattern.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> This mutation is recessive and is on an autosomal chromosome.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Classic Mendelian rules can&#39;t explain why the same heterozygous genotype produces disease only when inherited from the mother but not the father — that parent-of-origin effect requires invoking genomic imprinting, beyond basic Mendelian analysis.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Classic Mendelian rules can&#39;t explain why the same heterozygous genotype produces disease only when inherited from the mother but not the father — that parent-of-origin effect requires invoking genomic imprinting, beyond basic Mendelian analysis.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Mendelian inheritance is insufficient to explain the inheritance of AS.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="II-3 is a heterozygous carrier, so any child only has a 50% chance of inheriting the mutant allele in the first place (ordinary Mendelian segregation still governs which allele is passed) — not a certainty.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="II-3 is a heterozygous carrier, so any child only has a 50% chance of inheriting the mutant allele in the first place (ordinary Mendelian segregation still governs which allele is passed) — not a certainty.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> If II-3 has a third child, then the child will surely have AS, just like II-3&#39;s other two children.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="III-1 would be the father in this cross. Since paternal transmission of the mutant allele doesn&#39;t cause AS (only maternal transmission does, per the imprinting pattern shown), his children could at most become unaffected carriers — not affected with AS.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="III-1 would be the father in this cross. Since paternal transmission of the mutant allele doesn&#39;t cause AS (only maternal transmission does, per the imprinting pattern shown), his children could at most become unaffected carriers — not affected with AS.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> If individual III-1 conceived a child with a non-carrier woman, their progeny would have a 50% chance of having AS.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -373,8 +373,24 @@ Angelman Syndrome (AS) is caused by a mutation of the ube3a gene. Affected indiv
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -389,16 +405,32 @@ Angelman Syndrome (AS) is caused by a mutation of the ube3a gene. Affected indiv
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -406,7 +438,7 @@ Angelman Syndrome (AS) is caused by a mutation of the ube3a gene. Affected indiv
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -414,8 +446,13 @@ Angelman Syndrome (AS) is caused by a mutation of the ube3a gene. Affected indiv
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

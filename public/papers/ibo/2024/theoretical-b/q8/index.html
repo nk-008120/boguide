@@ -327,32 +327,32 @@ An in vitro experiment with enzymes involved in DNA metabolism was performed usi
 <em>Figure 1 (substrate diagram) and Figure 2 (gel result), with Table 1 (reaction scheme): reaction 1 = DNA substrate alone; reaction 2 = + enzyme A; reaction 3 = + enzyme B; reaction 4 = + enzyme A, then inactivate A, then + enzyme C; reaction 5 = + enzyme B, then inactivate B, then + enzyme C.</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q8">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Reaction 2 (enzyme A alone) produces two distinct bands on the gel rather than one, which shows the two strands were cut at different, staggered positions rather than at the same point — that pattern is the signature of a 5&#39;-overhang cut, not a blunt-ended break, even though the internal cutting (rather than end-trimming) does confirm enzyme A acts as an endonuclease.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Reaction 2 (enzyme A alone) produces two distinct bands on the gel rather than one, which shows the two strands were cut at different, staggered positions rather than at the same point — that pattern is the signature of a 5&#39;-overhang cut, not a blunt-ended break, even though the internal cutting (rather than end-trimming) does confirm enzyme A acts as an endonuclease.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Enzyme A is an endonuclease, generating blunt-ended breaks.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Reaction 3 (enzyme B alone) shows only the green (blue-fluorescent, 5&#39;-labeled upper strand) band getting progressively shorter (smeared), while the red (3&#39;-labeled lower strand) is untouched — since the labeled 5&#39; end is chemically inert and stays intact while the strand shrinks from its 3&#39; end inward, enzyme B must be chewing the strand back from its free 3&#39; end, i.e. acting as a 3&#39;→5&#39; exonuclease.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Reaction 3 (enzyme B alone) shows only the green (blue-fluorescent, 5&#39;-labeled upper strand) band getting progressively shorter (smeared), while the red (3&#39;-labeled lower strand) is untouched — since the labeled 5&#39; end is chemically inert and stays intact while the strand shrinks from its 3&#39; end inward, enzyme B must be chewing the strand back from its free 3&#39; end, i.e. acting as a 3&#39;→5&#39; exonuclease.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Enzyme B is an exonuclease with a 3&#39;-5&#39; polarity.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. In reactions 4 and 5, after enzymes A or B are inactivated, adding enzyme C extends the shortened green strand back up to the full 100 bp double-stranded length seen with the red strand — lengthening a DNA strand by adding nucleotides onto a free 3&#39; end is exactly what a DNA polymerase does.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. In reactions 4 and 5, after enzymes A or B are inactivated, adding enzyme C extends the shortened green strand back up to the full 100 bp double-stranded length seen with the red strand — lengthening a DNA strand by adding nucleotides onto a free 3&#39; end is exactly what a DNA polymerase does.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Enzyme C is a DNA polymerase.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Reaction 4&#39;s substrate going into the enzyme C step was already the 5&#39;-overhang product left over from enzyme A&#39;s cut. Enzyme C alone, applied directly to the original untouched double-stranded substrate (reaction 1), would have no shortened 3&#39; end available to extend, so it would not reproduce the same extended product seen in reaction 4 — the prior digestion step matters.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Reaction 4&#39;s substrate going into the enzyme C step was already the 5&#39;-overhang product left over from enzyme A&#39;s cut. Enzyme C alone, applied directly to the original untouched double-stranded substrate (reaction 1), would have no shortened 3&#39; end available to extend, so it would not reproduce the same extended product seen in reaction 4 — the prior digestion step matters.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> If an additional reaction were performed with enzyme C alone, the result would be the same as the result of reaction 4.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -372,8 +372,24 @@ An in vitro experiment with enzymes involved in DNA metabolism was performed usi
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -388,16 +404,32 @@ An in vitro experiment with enzymes involved in DNA metabolism was performed usi
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -405,7 +437,7 @@ An in vitro experiment with enzymes involved in DNA metabolism was performed usi
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -413,8 +445,13 @@ An in vitro experiment with enzymes involved in DNA metabolism was performed usi
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

@@ -333,32 +333,32 @@ Changes in glucose, insulin and glucagon levels in healthy individuals (“Norma
 <em>Changes in glucose, insulin and glucagon levels in healthy individuals (&ldquo;Normal&rdquo;) and individuals with type 2 diabetes (T2DM), before and after a meal.</em></p>
 <p>Based on this biochemical analysis, determine whether the following statements are true or false.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-2-q26">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="The glucagon graph shows glucagon actually falling after a meal in healthy individuals, not rising — the post-meal glucose increase comes from intestinal absorption of dietary glucose, while glucagon (which raises blood glucose during fasting via glycogenolysis) is suppressed at this time.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="The glucagon graph shows glucagon actually falling after a meal in healthy individuals, not rising — the post-meal glucose increase comes from intestinal absorption of dietary glucose, while glucagon (which raises blood glucose during fasting via glycogenolysis) is suppressed at this time.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> The increase in glucose levels in the plasma of healthy people after a meal is due to heightened glucagon levels.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="The insulin graph shows the opposite: healthy individuals mount a much larger insulin peak (around 140 mg/ml) than T2DM patients (around 45-50 mg/ml), even though T2DM patients have the larger glucose excursion — reflecting the blunted insulin response characteristic of type 2 diabetes.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="The insulin graph shows the opposite: healthy individuals mount a much larger insulin peak (around 140 mg/ml) than T2DM patients (around 45-50 mg/ml), even though T2DM patients have the larger glucose excursion — reflecting the blunted insulin response characteristic of type 2 diabetes.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> The increase in glucose levels in the plasma leads to a more pronounced increase in insulin levels in type 2 diabetes (T2DM) patients than in healthy individuals.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="In the healthy curves, as glucose and insulin both rise after the meal, glucagon drops — consistent with glucose directly inhibiting alpha cells and insulin further suppressing glucagon secretion through paracrine signaling within the islets.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="In the healthy curves, as glucose and insulin both rise after the meal, glucagon drops — consistent with glucose directly inhibiting alpha cells and insulin further suppressing glucagon secretion through paracrine signaling within the islets.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Glucagon production in healthy people is suppressed by an increase in glucose levels in plasma and by subsequent stimulation of insulin production.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="The T2DM glucagon curve rises after the meal (from about 120 to 145 mg/ml) instead of falling, showing that the normal glucose-mediated suppression of glucagon is lost and, in this case, reversed into stimulation.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="The T2DM glucagon curve rises after the meal (from about 120 to 145 mg/ml) instead of falling, showing that the normal glucose-mediated suppression of glucagon is lost and, in this case, reversed into stimulation.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> In T2DM patients, the suppressive effect of glucose on glucagon disappears, and may even be replaced by the stimulation of glucagon production.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -378,8 +378,24 @@ Changes in glucose, insulin and glucagon levels in healthy individuals (“Norma
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -394,16 +410,32 @@ Changes in glucose, insulin and glucagon levels in healthy individuals (“Norma
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -411,7 +443,7 @@ Changes in glucose, insulin and glucagon levels in healthy individuals (“Norma
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -419,8 +451,13 @@ Changes in glucose, insulin and glucagon levels in healthy individuals (“Norma
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

@@ -332,32 +332,32 @@ Groundbreaking studies by Shinya Yamanaka&rsquo;s group broke the long-standing 
 <em>Fig. 2. Cross-section of the ventricular wall of an infarcted monkey heart with grafts of cardiac myocytes derived from hESC. The iPSCs were genetically modified to express green fluorescent protein (GFP).</em></p>
 <p>Using the information and figures, determine whether the following statements are true or false:</p>
 <p><div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-1-q12">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="This is an order-of-magnitude estimate: divide the lost myocardial mass by the volume (via density) of a single cardiomyocyte — we&#39;re reproducing the official answer&#39;s order of magnitude rather than re-deriving the exact arithmetic, since the cell-dimension figures were partly lost to text extraction from the source PDF.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="This is an order-of-magnitude estimate: divide the lost myocardial mass by the volume (via density) of a single cardiomyocyte — we&#39;re reproducing the official answer&#39;s order of magnitude rather than re-deriving the exact arithmetic, since the cell-dimension figures were partly lost to text extraction from the source PDF.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Assuming ~1/3 of a 120 g left ventricle is lost to a typical infarction, and an average cardiac myocyte size as given, the closest order of magnitude of new cells needed is 10⁹.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Embryonic origin doesn&#39;t grant immune privilege in an unrelated host — allogeneic (non-self) human cells transplanted into another animal still trigger immune rejection regardless of the stem cell source, so immunosuppression would still be needed.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Embryonic origin doesn&#39;t grant immune privilege in an unrelated host — allogeneic (non-self) human cells transplanted into another animal still trigger immune rejection regardless of the stem cell source, so immunosuppression would still be needed.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Although grafted cells are of human origin, the host animals do not require immunosuppression because transplanted cells were derived from embryonic stem cells.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Cardiac scar tissue is predominantly collagen (type I), and collagen is indeed the most abundant protein in connective tissue generally.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Cardiac scar tissue is predominantly collagen (type I), and collagen is indeed the most abundant protein in connective tissue generally.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Protein identified by blue pseudocolour, abundant in heart scar, is also the most common component of connective tissue.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Cardiac troponin T is a standard, specific marker of cardiomyocyte identity used routinely in histology/immunohistochemistry.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Cardiac troponin T is a standard, specific marker of cardiomyocyte identity used routinely in histology/immunohistochemistry.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Grafted cardiac myocytes within the host heart can be identified by staining for a cardiac isoform of troponin T.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -377,8 +377,24 @@ Groundbreaking studies by Shinya Yamanaka&rsquo;s group broke the long-standing 
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -393,16 +409,32 @@ Groundbreaking studies by Shinya Yamanaka&rsquo;s group broke the long-standing 
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -410,7 +442,7 @@ Groundbreaking studies by Shinya Yamanaka&rsquo;s group broke the long-standing 
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -418,8 +450,13 @@ Groundbreaking studies by Shinya Yamanaka&rsquo;s group broke the long-standing 
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

@@ -326,32 +326,32 @@ It is known that human genes H (located on chromosome 1) and K (located on chrom
 <em>Figure 1. A. The structure of genes K and H, where black regions depict exons, while light gray regions are introns. Note that for both genes, the junction between depicted exons codes for an active site in their respective protein (enzyme) products. B. PCR results from a wild-type (WT) individual (M - DNA size marker). C. PCR results from three tested individuals (ID-1, ID-2, and ID-3). Note that the intensity of the bands does not represent the amount of DNA.</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q27">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. In the wild-type individual, primer pairs a&#43;e and b&#43;c (which mix a primer from gene H with a primer from gene K, on different chromosomes) give no product, since the two primers are too far apart on separate chromosomes to amplify anything. In ID-1, both of those cross-gene primer pairs now DO give a product — the only way primers from chromosome 1 (gene H) and chromosome 5 (gene K) end up close enough together to amplify is if a translocation moved pieces of the two chromosomes next to each other.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. In the wild-type individual, primer pairs a&#43;e and b&#43;c (which mix a primer from gene H with a primer from gene K, on different chromosomes) give no product, since the two primers are too far apart on separate chromosomes to amplify anything. In ID-1, both of those cross-gene primer pairs now DO give a product — the only way primers from chromosome 1 (gene H) and chromosome 5 (gene K) end up close enough together to amplify is if a translocation moved pieces of the two chromosomes next to each other.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> In ID-1, there is a translocation event between chromosomes 1 and 5.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. ID-2 gives a product with primer pair c&#43;d, which shouldn&#39;t normally amplify if c and d are pointing away from each other in the original orientation — getting a product means the segment between them has flipped (inverted) so the primers now face each other. Since primer d sits right at the exon-intron junction that (per the figure&#39;s own note) encodes the enzyme&#39;s active site, flipping that segment disrupts the coding sequence around the active site, producing a non-functional protein.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. ID-2 gives a product with primer pair c&#43;d, which shouldn&#39;t normally amplify if c and d are pointing away from each other in the original orientation — getting a product means the segment between them has flipped (inverted) so the primers now face each other. Since primer d sits right at the exon-intron junction that (per the figure&#39;s own note) encodes the enzyme&#39;s active site, flipping that segment disrupts the coding sequence around the active site, producing a non-functional protein.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> ID-2 has an inversion, resulting in a non-functional protein product.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. A deletion would remove sequence between two primers and make the resulting PCR product smaller/shorter than wild-type. ID-3&#39;s bands instead come out the same size as (or, per the gel, not shorter than) the wild-type products — a duplication or other rearrangement that increases or preserves fragment size fits the data better than a deletion, which should have shrunk the product.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. A deletion would remove sequence between two primers and make the resulting PCR product smaller/shorter than wild-type. ID-3&#39;s bands instead come out the same size as (or, per the gel, not shorter than) the wild-type products — a duplication or other rearrangement that increases or preserves fragment size fits the data better than a deletion, which should have shrunk the product.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> ID-3 has a deletion.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Both ID-1 and ID-3 show a mix of rearrangement-specific PCR products AND normal wild-type-sized products in the same lane set — meaning both individuals carry one rearranged copy and one normal copy of the region, i.e. both are heterozygous for their respective rearrangements, not one homozygous and one heterozygous.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Both ID-1 and ID-3 show a mix of rearrangement-specific PCR products AND normal wild-type-sized products in the same lane set — meaning both individuals carry one rearranged copy and one normal copy of the region, i.e. both are heterozygous for their respective rearrangements, not one homozygous and one heterozygous.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> ID-1 is homozygous for the rearrangement, while ID-3 is heterozygous.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -371,8 +371,24 @@ It is known that human genes H (located on chromosome 1) and K (located on chrom
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -387,16 +403,32 @@ It is known that human genes H (located on chromosome 1) and K (located on chrom
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -404,7 +436,7 @@ It is known that human genes H (located on chromosome 1) and K (located on chrom
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -412,8 +444,13 @@ It is known that human genes H (located on chromosome 1) and K (located on chrom
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

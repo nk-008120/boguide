@@ -333,32 +333,32 @@ Figure 1. A. A hypothetical tumor sample. B. The evolutionary relationship betwe
 <em>Figure 1. A. A hypothetical tumor sample. B. The evolutionary relationship between the tumor regions of the sample, shown in A. Labels A-J refer to random mutations in genes of different tumor cells. C. The copy number alterations of genes E and F (the number of times a gene is present in the genome) along the chromosome (X: position along the chromosome, Y: copy number) from the tumor sample, shown in A. Note that the genetic defects related to genes E and F are known to be due to copy number alterations.</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q26">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. If a tumor is made of genetically distinct cell populations, a drug targeting only one population&#39;s mutation leaves the other populations untouched — those unaffected subclones can then survive treatment and continue growing, driving relapse and apparent drug resistance at the level of the whole tumor.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. If a tumor is made of genetically distinct cell populations, a drug targeting only one population&#39;s mutation leaves the other populations untouched — those unaffected subclones can then survive treatment and continue growing, driving relapse and apparent drug resistance at the level of the whole tumor.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Intratumor heterogeneity frequently results in treatment failure and drug resistance.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. In the evolutionary tree (Figure 1B), mutation A sits on the trunk lineage shared by all four regions (R1-R4), while mutation D is a later branch-specific mutation found in only some regions. Targeting a trunk mutation like A hits every tumor cell population; targeting a branch mutation like D only, leaving the trunk-only lineages untouched — making A the better, not worse, therapeutic target.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. In the evolutionary tree (Figure 1B), mutation A sits on the trunk lineage shared by all four regions (R1-R4), while mutation D is a later branch-specific mutation found in only some regions. Targeting a trunk mutation like A hits every tumor cell population; targeting a branch mutation like D only, leaving the trunk-only lineages untouched — making A the better, not worse, therapeutic target.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Mutation in gene D is a better therapeutic target than mutation in gene A.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Region R1 branches off the tree before mutation C arises, so R1 cells don&#39;t carry mutation C and aren&#39;t affected by a drug targeting it — while R4 does carry C (it&#39;s downstream of that branch point) and would be killed off or suppressed by the same drug. With R4 selectively knocked back, the untouched R1 population has more room to expand.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Region R1 branches off the tree before mutation C arises, so R1 cells don&#39;t carry mutation C and aren&#39;t affected by a drug targeting it — while R4 does carry C (it&#39;s downstream of that branch point) and would be killed off or suppressed by the same drug. With R4 selectively knocked back, the untouched R1 population has more room to expand.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> After treatment with the drug targeting mutation in gene C, Region R1 is more likely to expand than R4.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Figure 1C shows gene E&#39;s copy number is reduced (a dip below the baseline of 2) while gene F&#39;s copy number is amplified (a spike above baseline). Losing extra copies fits a tumor suppressor gene (whose normal job is to restrain growth, so losing copies of it removes a brake), while gaining extra copies fits an oncogene (extra dosage of a growth-promoting gene drives proliferation) — that&#39;s the reverse of what the statement claims: E looks like the tumor suppressor and F looks like the oncogene, not the other way around.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Figure 1C shows gene E&#39;s copy number is reduced (a dip below the baseline of 2) while gene F&#39;s copy number is amplified (a spike above baseline). Losing extra copies fits a tumor suppressor gene (whose normal job is to restrain growth, so losing copies of it removes a brake), while gaining extra copies fits an oncogene (extra dosage of a growth-promoting gene drives proliferation) — that&#39;s the reverse of what the statement claims: E looks like the tumor suppressor and F looks like the oncogene, not the other way around.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Based on Figure 1C gene E is a potential oncogene, while gene F is a potential tumor suppressor gene.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -378,8 +378,24 @@ Figure 1. A. A hypothetical tumor sample. B. The evolutionary relationship betwe
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -394,16 +410,32 @@ Figure 1. A. A hypothetical tumor sample. B. The evolutionary relationship betwe
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -411,7 +443,7 @@ Figure 1. A. A hypothetical tumor sample. B. The evolutionary relationship betwe
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -419,8 +451,13 @@ Figure 1. A. A hypothetical tumor sample. B. The evolutionary relationship betwe
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

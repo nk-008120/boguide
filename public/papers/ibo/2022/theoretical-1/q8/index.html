@@ -339,32 +339,32 @@ Figure 1. Ethidium bromide and its binding to DNA.">
 <em>Figure 2. Modes of binding of ethidium bromide to DNA. A — minor groove binding. B — intercalation of ethidium bromide into DNA. C — stacking on the terminal base pairs and insertion mode in DNA. D — major groove intercalation between DNA and minor groove binding.</em></p>
 <p>Using Figures 1 and 2, determine whether the following statements are true or false:</p>
 <p><div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-1-q8">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Ethidium bromide&#39;s fluorescence depends on how well it can intercalate — structural DNA damage changes how much and how well EtBr binds, which is exactly why EtBr fluorescence assays are used to probe DNA integrity.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Ethidium bromide&#39;s fluorescence depends on how well it can intercalate — structural DNA damage changes how much and how well EtBr binds, which is exactly why EtBr fluorescence assays are used to probe DNA integrity.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> The study of complexes between ethidium bromide and DNA allows for the detection of major structural DNA damage caused by different stressful situations.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Intercalation works by the flat aromatic EtBr ring wedging in between adjacent base pairs, which locally unwinds and stretches the helix — the base pairs do separate further apart to accommodate it.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Intercalation works by the flat aromatic EtBr ring wedging in between adjacent base pairs, which locally unwinds and stretches the helix — the base pairs do separate further apart to accommodate it.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> When ethidium bromide is intercalated into a DNA molecule, the base pairs move away from each other to make space for the inserted molecule.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Intercalation is a non-covalent, reversible distortion of the helix — the structure absorbs the strain by locally unwinding/adjusting rather than breaking any covalent bonds, which is exactly why EtBr staining doesn&#39;t damage the DNA backbone.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Intercalation is a non-covalent, reversible distortion of the helix — the structure absorbs the strain by locally unwinding/adjusting rather than breaking any covalent bonds, which is exactly why EtBr staining doesn&#39;t damage the DNA backbone.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> In the intercalation shown in Figure 2B, the bases are displaced by overexertion while simultaneously the helix contracts along its axis. This ensures the DNA sugar-phosphate backbone does not rupture during the overexertion.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="It&#39;s the other way around: the flat EtBr ring stacks parallel to the base pairs (so it can fit between them) and therefore roughly perpendicular to the helix axis, not parallel to it.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="It&#39;s the other way around: the flat EtBr ring stacks parallel to the base pairs (so it can fit between them) and therefore roughly perpendicular to the helix axis, not parallel to it.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> The plane of the intercalated ethidium bromide molecule is approximately parallel to the axis of the DNA helix and perpendicular to the plane of the bases.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -384,8 +384,24 @@ Figure 1. Ethidium bromide and its binding to DNA.">
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -400,16 +416,32 @@ Figure 1. Ethidium bromide and its binding to DNA.">
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -417,7 +449,7 @@ Figure 1. Ethidium bromide and its binding to DNA.">
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -425,8 +457,13 @@ Figure 1. Ethidium bromide and its binding to DNA.">
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

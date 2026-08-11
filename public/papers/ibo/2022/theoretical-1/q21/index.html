@@ -333,32 +333,32 @@ Eight biological samples (I–VIII): I — germinating pollen grain, II — spik
 <em>Eight biological samples (I–VIII): I — germinating pollen grain, II — spiky pollen grain (SEM), III — virus particle, IV — budding yeast, V — diatom (SEM), VI — fungal spore-bearing structure, VII — flagellated bacterium, VIII — ciliate protozoan.</em></p>
 <p>Using the images, determine whether the following statements are true or false:</p>
 <p><div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-1-q21">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="I is pollen (a common allergen — hay fever is a human disease response), III resembles a virus particle, and VI resembles fungal spore-bearing structures of a type associated with human fungal infections — all three have disease-causing potential in humans.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="I is pollen (a common allergen — hay fever is a human disease response), III resembles a virus particle, and VI resembles fungal spore-bearing structures of a type associated with human fungal infections — all three have disease-causing potential in humans.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> I, III and VI can cause diseases in humans.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="IV shows budding yeast cells — a fungus, not a plant — so even though II (pollen) is a plant male gametophyte, the joint claim fails because IV isn&#39;t plant tissue at all.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="IV shows budding yeast cells — a fungus, not a plant — so even though II (pollen) is a plant male gametophyte, the joint claim fails because IV isn&#39;t plant tissue at all.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> II and IV consist of plant gametophytes.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="II is airborne pollen, not a planktonic organism — even though VII (bacterium) and VIII (ciliate) could reasonably be considered plankton, the statement fails because it requires all three.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="II is airborne pollen, not a planktonic organism — even though VII (bacterium) and VIII (ciliate) could reasonably be considered plankton, the statement fails because it requires all three.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> II, VII and VIII belong to plankton.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="II (pollen) comes from a photosynthetic (autotrophic) plant, and V is a diatom — a photosynthetic, autotrophic alga — so both trace back to autotrophic organisms.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="II (pollen) comes from a photosynthetic (autotrophic) plant, and V is a diatom — a photosynthetic, autotrophic alga — so both trace back to autotrophic organisms.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> II and V belong to autotrophic organisms.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -378,8 +378,24 @@ Eight biological samples (I–VIII): I — germinating pollen grain, II — spik
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -394,16 +410,32 @@ Eight biological samples (I–VIII): I — germinating pollen grain, II — spik
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -411,7 +443,7 @@ Eight biological samples (I–VIII): I — germinating pollen grain, II — spik
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -419,8 +451,13 @@ Eight biological samples (I–VIII): I — germinating pollen grain, II — spik
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

@@ -322,32 +322,32 @@ Immune checkpoint molecules regulate the immune system and prevent excessive imm
 <p>Immune checkpoint molecules regulate the immune system and prevent excessive immune response. The programmed death molecule 1 or PD-1 is expressed on the T cells and is involved in a co-inhibitory pathway that suppresses T cell function. PD-1 has an important role in the immune system development, and allows tolerance to its own proteins. There are two known ligands for PD-1, the PD-L1 and PD-L2, and they are both known to induce the co-inhibitory signaling. Cancer cells take advantage of this signaling pathway to avoid being killed by immune cells. Researchers have found a way to target those molecules and this resulted in reduction of tumor volume, mediated through the immune system.</p>
 <p>Determine whether the following statements are true or false.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-2-q23">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="PD-1 normally delivers a co-inhibitory signal that dampens T cell activity and enforces tolerance to the body&#39;s own proteins. Losing this brake through PD-1 dysfunction removes an important check on self-reactive T cells, which is a well-documented route to autoimmune disease.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="PD-1 normally delivers a co-inhibitory signal that dampens T cell activity and enforces tolerance to the body&#39;s own proteins. Losing this brake through PD-1 dysfunction removes an important check on self-reactive T cells, which is a well-documented route to autoimmune disease.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> PD-1 dysfunction can lead to development of autoimmune diseases.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="PD-1/PD-L1 binding does the opposite — it delivers a co-inhibitory signal that suppresses T cell function, which is exactly the mechanism cancer cells exploit to dampen antitumor immunity rather than activate it.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="PD-1/PD-L1 binding does the opposite — it delivers a co-inhibitory signal that suppresses T cell function, which is exactly the mechanism cancer cells exploit to dampen antitumor immunity rather than activate it.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> PD-1, when binding to its ligand-PD-L1, activates antitumor immune response.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="By blocking PD-1/PD-L1 signaling, checkpoint inhibition removes the co-inhibitory signal that had been letting tumor cells look tolerable to T cells; freed from that suppression, T cells can then recognize and destroy the tumor cells — consistent with the text&#39;s note that targeting this pathway reduced tumor volume through the immune system.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="By blocking PD-1/PD-L1 signaling, checkpoint inhibition removes the co-inhibitory signal that had been letting tumor cells look tolerable to T cells; freed from that suppression, T cells can then recognize and destroy the tumor cells — consistent with the text&#39;s note that targeting this pathway reduced tumor volume through the immune system.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> The inhibition of the PD-1/PD-L1-axis prevents T cells from recognizing tumor cells as &#34;self&#34; and enables their destruction</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="Blocking a co-inhibitory checkpoint removes a brake on T cell activity, which would be expected to worsen, not resolve, autoimmunity — this is exactly why checkpoint-inhibitor cancer therapies carry a known risk of triggering autoimmune side effects.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="Blocking a co-inhibitory checkpoint removes a brake on T cell activity, which would be expected to worsen, not resolve, autoimmunity — this is exactly why checkpoint-inhibitor cancer therapies carry a known risk of triggering autoimmune side effects.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> The inhibition of the PD1-PD-L2 axis will lead to recovery from an autoimmune disorder.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -367,8 +367,24 @@ Immune checkpoint molecules regulate the immune system and prevent excessive imm
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -383,16 +399,32 @@ Immune checkpoint molecules regulate the immune system and prevent excessive imm
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -400,7 +432,7 @@ Immune checkpoint molecules regulate the immune system and prevent excessive imm
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -408,8 +440,13 @@ Immune checkpoint molecules regulate the immune system and prevent excessive imm
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

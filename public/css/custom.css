@@ -1543,6 +1543,50 @@ html.dark .tf-quiz-reset {
   font-weight: 600;
 }
 
+/* New statement types added 2026-08-11 for IBO 2019 (see papers-quiz.html's
+   own header comment for the full schema) — reuse .tf-btn's visual
+   language rather than inventing a new one. */
+.tf-quiz-mcq {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tf-btn-mcq {
+  width: 100%;
+  text-align: left;
+  border-radius: var(--radius-md);
+}
+.tf-quiz-numeric {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+}
+.tf-numeric-input {
+  font: inherit;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(137, 101, 196, 0.3);
+  background: transparent;
+  color: inherit;
+  width: 8rem;
+}
+html.dark .tf-numeric-input {
+  border-color: rgba(201, 183, 232, 0.35);
+}
+.tf-numeric-unit {
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+.tf-model-answer {
+  margin-top: 0.6rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: var(--radius-md);
+  background: rgba(137, 101, 196, 0.08);
+}
+html.dark .tf-model-answer {
+  background: rgba(201, 183, 232, 0.08);
+}
+
 /* ===================================================================
    13. PAPERS PROBLEM NAV — Previous/Next between problems in a round
    {{< papers-problem-nav >}} (layouts/shortcodes/papers-problem-nav.html).
@@ -1576,6 +1620,13 @@ html.dark .papers-quiz-nav {
 }
 .papers-nav-btn:hover {
   background: rgba(137, 101, 196, 0.1);
+}
+.papers-nav-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.papers-nav-btn:disabled:hover {
+  background: transparent;
 }
 .papers-nav-next {
   color: #fff;
@@ -3174,6 +3225,12 @@ html.dark .papers-test-card-sub {
 main#content:has(#bioclash-root) > h1 {
   display: none !important;
 }
+/* overflow-x:hidden here (not sitewide) is the same safety net added for
+   #bioclash-leaderboard-root after that page's own glow/wing bleed was
+   found to force a real horizontal scrollbar at every width — cheap
+   insurance against the same class of bug turning up here once this page
+   also carries a full-bleed fixed background. */
+#bioclash-root { position: relative; overflow-x: hidden; }
 
 /* Sitewide watermark for the BiOClash section — layouts/_default/baseof.html
    swaps in this class instead of the default .bioguide-bg-layer whenever
@@ -3182,24 +3239,40 @@ main#content:has(#bioclash-root) > h1 {
    mark is the BiOClash crest, not the BiOGuide logo. Sits behind the hero
    (which paints its own opaque parchment background over it) but shows
    through the body sections below, same as the other two sitewide marks.
-   No dark-mode color invert (unlike .bioguide-bg-layer) — the crest is
-   already a full-color crimson/gold mark, not a flat dark logo, and reads
-   fine on both light and dark page backgrounds; only opacity is tuned up
-   slightly for dark mode so it stays visible against the darker page. */
+   Swapped 2026-08-12 from the flat transparent crest logo to the same
+   green-ray "loki" crest art already used on the attempt page's
+   .bioclash-attempt-glow-bg (mb01-bg-loki-wide/tall.png — the loki1/loki2
+   assets requested for this turned out to be byte-identical copies of
+   those, so this reuses them directly rather than duplicating the file).
+   Kept deliberately faint (opacity, not full .bioclash-attempt-glow-bg-
+   style cover) since most pages under /bioclash/ — e.g. the MB-01
+   leaderboard — do NOT force dark mode and need this to stay legible in
+   light mode too, unlike the landing page's own much more prominent
+   .bioclash-landing-bg (section 15 below), which is allowed to go big
+   because that page forces dark. No dark-mode color invert (unlike
+   .bioguide-bg-layer) — the art is already full-color, not a flat dark
+   logo; only opacity is tuned up for dark mode so it stays visible. */
 .bioclash-bg-layer {
   position: fixed;
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background-image: url('/bioclashlogo-transparent.png');
+  background-image: url('/BIOCLASHPICS/mb01-bg-loki-wide.png');
   background-repeat: no-repeat;
-  background-position: center 12%;
-  background-size: min(38%, 480px);
+  background-position: center 10%;
+  background-size: min(60%, 820px);
   background-attachment: fixed;
-  opacity: 0.09;
+  opacity: 0.11;
 }
 html.dark .bioclash-bg-layer {
-  opacity: 0.16;
+  opacity: 0.22;
+}
+@media (max-width: 700px) {
+  .bioclash-bg-layer {
+    background-image: url('/BIOCLASHPICS/mb01-bg-loki-tall.png');
+    background-position: center top;
+    background-size: min(85%, 460px);
+  }
 }
 
 .bioclash-page {
@@ -3337,6 +3410,28 @@ html.dark .bioclash-page {
   inset: 0;
   z-index: -1;
   pointer-events: none;
+  background-image: url('/BIOCLASHPICS/mb01-bg-loki-wide.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 700px) {
+  .bioclash-hero-bg {
+    background-image: url('/BIOCLASHPICS/mb01-bg-loki-tall.png');
+    background-position: center top;
+  }
+}
+/* Scrim so the hero's text/eyebrow/countdown/buttons — all plain z-index:1
+   content with no card of their own underneath, painted straight over
+   this photo — stay legible regardless of exactly how bright the art is
+   at any given point. Darkest at the very top (where the eyebrow/wordmark
+   sit) and bottom (where the buttons sit), lighter through the middle so
+   the photo itself still reads as the actual backdrop, not just a tint. */
+.bioclash-hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(6, 10, 6, 0.72) 0%, rgba(6, 10, 6, 0.32) 35%, rgba(6, 10, 6, 0.38) 65%, rgba(6, 10, 6, 0.7) 100%);
 }
 .bioclash-dna-strand {
   position: absolute;
@@ -3506,6 +3601,28 @@ html.dark .bioclash-wordmark {
   max-width: 42rem;
   margin: 0 auto 2.25rem;
 }
+/* .bioclash-panel (section 15e, further down) sets its own margin for the
+   leaderboard page's full-width panels — on this page it's added ALONGSIDE
+   .bioclash-section on the same elements, so this combined, more specific
+   selector restores the narrow reading-width centering .bioclash-section
+   normally provides, layered on top of .bioclash-panel's padding/
+   background/border. Also opts these sections out of the "❖" divider
+   below (.bioclash-section + .bioclash-section): each section is now its
+   own full-bordered card with its own margin already separating it from
+   the next one, so that border-top-plus-diamond divider would just double
+   up against each card's own border instead of adding anything. */
+.bioclash-section.bioclash-panel {
+  max-width: 42rem;
+  margin: 2.5rem auto;
+}
+.bioclash-section.bioclash-panel + .bioclash-section.bioclash-panel {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: none;
+}
+.bioclash-section.bioclash-panel + .bioclash-section.bioclash-panel::before {
+  display: none;
+}
 .bioclash-planning-list {
   list-style: none;
   padding: 0;
@@ -3542,6 +3659,8 @@ html.dark .papers-pill.bioclash-pill {
   text-align: center;
 }
 .bioclash-notify {
+  position: relative;
+  isolation: isolate;
   max-width: 28rem;
   margin: 0 auto;
   padding: 1.75rem;
@@ -3549,6 +3668,14 @@ html.dark .papers-pill.bioclash-pill {
   background: var(--bc-card-bg);
   border: 1px solid var(--bc-gold);
   box-shadow: var(--shadow-sm);
+}
+html.dark .bioclash-notify {
+  /* --bc-card-bg is a translucent 6% tint in dark mode (fine for cards
+     sitting on the page's flat ruled-ledger background) — bumped to a
+     real opaque backing here now that this card sits directly over the
+     new photo background instead, same reasoning as .bioclash-panel. */
+  background: #1c1814;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.4), var(--shadow-sm);
 }
 .bioclash-notify-msg {
   margin: 0 0 1rem;
@@ -3884,6 +4011,303 @@ html.dark .papers-pill.bioclash-pill {
   opacity: 0.7;
 }
 
+/* 15d. BIOCLASH SEASON CHAMPIONS — {{< bioclash-season-champions >}}, the
+   cumulative cross-round standing (bioclash_season_standings view). The
+   founder's explicit ask was for this to be the grandest, most "glowing"
+   treatment on the site — deliberately reuses two techniques already
+   proven elsewhere rather than inventing new ones: the pulsing
+   radial-gradient vignette from .bioclash-attempt-glow-bg::after
+   (@keyframes bioclash-glow-pulse, defined in section 24) behind the
+   frame, and a gold box-shadow ring in the spirit of .bioclash-btn-
+   primary's, animated to breathe rather than static. Podium/table markup
+   reuses .bioclash-champion-slot/-rank-1/2/3/.bioclash-champions-table
+   verbatim (same classes as the ordinary Champions section above) so it
+   inherits that styling and responsive stacking for free — only the
+   frame/glow around it is new. */
+.bioclash-season-champions-section {
+  position: relative;
+  margin: 3rem 0 3.5rem;
+}
+.bioclash-season-champions-glow {
+  position: absolute;
+  inset: -2.5rem;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: var(--radius-xl);
+  background: radial-gradient(ellipse at 50% 25%, rgba(201, 151, 31, 0.4) 0%, rgba(179, 18, 46, 0.14) 45%, transparent 75%);
+  filter: blur(32px);
+  animation: bioclash-glow-pulse 8s ease-in-out infinite;
+}
+.bioclash-season-champions-frame {
+  position: relative;
+  z-index: 1;
+  padding: 3.5rem 2rem 3rem;
+  box-shadow:
+    0 0 0 1px var(--bc-gold) inset,
+    0 0 0 6px rgba(201, 151, 31, 0.15),
+    var(--shadow-lg),
+    0 0 60px rgba(201, 151, 31, 0.25);
+  animation: bioclash-season-ring-pulse 4s ease-in-out infinite;
+}
+@keyframes bioclash-season-ring-pulse {
+  0%, 100% {
+    box-shadow:
+      0 0 0 1px var(--bc-gold) inset,
+      0 0 0 6px rgba(201, 151, 31, 0.15),
+      var(--shadow-lg),
+      0 0 60px rgba(201, 151, 31, 0.25);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1px var(--bc-gold) inset,
+      0 0 0 9px rgba(201, 151, 31, 0.22),
+      var(--shadow-lg),
+      0 0 90px rgba(201, 151, 31, 0.4);
+  }
+}
+.bioclash-season-champions-heading {
+  font-size: 2.6rem;
+}
+.bioclash-season-champions-note {
+  position: relative;
+  z-index: 1;
+  font-size: 0.8rem;
+  font-style: italic;
+  opacity: 0.75;
+  max-width: 32rem;
+  margin: 0 auto 1.5rem;
+}
+/* Chasing border glow — replaces the earlier flanking-wing idea per
+   founder feedback ("remove the wings, make the glow move around the
+   rectangle perimeter"). A plain sibling div (NOT a pseudo-element of the
+   frame itself — a negative-z-index pseudo on .bioclash-season-champions-
+   frame would paint AFTER the frame's own opaque background within the
+   stacking context isolation:isolate gives it, i.e. on top of the
+   parchment face, not behind it) placed before the frame in DOM order, so
+   it paints first and the frame's opaque background covers everything
+   except the few px it pokes out on each side — that sliver is what's
+   actually visible, giving the impression of a ring "around" the frame
+   rather than a layer under it. Inside that thin ring, an oversized conic
+   gradient rotates via `transform: rotate()` (smooth in every browser,
+   unlike animating a custom property without @property support) — a
+   gold/crimson comet sweeps continuously around the perimeter. Sized via
+   `inset` relative to .bioclash-season-champions-section, same trick
+   .bioclash-season-champions-glow already uses, since the frame is that
+   section's only in-flow child. */
+.bioclash-season-champions-chase {
+  position: absolute;
+  inset: -5px;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  filter: blur(3px);
+}
+.bioclash-season-champions-chase::before {
+  content: '';
+  position: absolute;
+  inset: -60%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 268deg,
+    var(--bc-gold) 300deg,
+    var(--bc-crimson) 322deg,
+    var(--bc-crimson-deep) 336deg,
+    transparent 360deg
+  );
+  animation: bioclash-chase-spin 5s linear infinite;
+}
+@keyframes bioclash-chase-spin {
+  to { transform: rotate(360deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bioclash-season-champions-glow,
+  .bioclash-season-champions-frame,
+  .bioclash-season-champions-chase::before {
+    animation: none !important;
+  }
+}
+@media (max-width: 700px) {
+  .bioclash-season-champions-frame { padding: 2.5rem 1.25rem 2rem; }
+  .bioclash-season-champions-heading { font-size: 2rem; }
+  /* The -2.5rem inset below is tuned for desktop's wider gutters — on
+     narrow viewports it bled past the page's own horizontal padding and
+     forced a sitewide horizontal scrollbar (the section itself is exactly
+     content-width, so a -40px bleed on each side had nowhere to go).
+     Shrinking the bleed on mobile keeps the glow visible around the frame
+     without pushing past the viewport edge. */
+  .bioclash-season-champions-glow { inset: -0.75rem; }
+}
+
+/* 15e. LEADERBOARD PAGE RESKIN — content/papers/leaderboard/index.md. The
+   page wraps its entire body in #bioclash-leaderboard-root.bioclash-page
+   (see static/js/bioclash-leaderboard-theme.js for the forced-dark
+   mechanism, same approach as bioclash-attempt.js), so every --bc-* var
+   from section 15 is already available here. The sections below
+   (Hall of Fame / "Rounds This Season" / "Test Leaderboards") predate this
+   redesign and use the site's generic purple palette (#8965c4/#c9b7e8)
+   elsewhere (e.g. plain IBO leaderboard pages) — those base rules must stay
+   untouched, so the BiOClash identity is layered on here purely via
+   .bioclash-page-scoped overrides rather than editing the shared classes. */
+/* overflow-x:hidden here (not on html/body sitewide) is the safety net for
+   the season-champions glow/wing decorative bleed (each pokes ~16px past
+   its own section at full-bleed widths, since this page has no side gutter
+   to absorb it) — confirmed via testing this caused a real horizontal
+   scrollbar at BOTH mobile and desktop widths, not just mobile. Scoped to
+   this page's own root rather than html/body so it can't affect any other
+   page's layout. Safe against clipping the frame's own vertical
+   box-shadow glow too: that bleed stays well inside this root's much
+   taller full-page box (the root contains several more sections below),
+   so only the horizontal edges — where the actual bug was — ever clip. */
+#bioclash-leaderboard-root { position: relative; overflow-x: hidden; }
+/* This page only ever renders as html.dark (forced by
+   bioclash-leaderboard-theme.js), so the html.dark-prefixed selectors below
+   are what actually apply for real visitors — they exist specifically to
+   out-specificity the sitewide html.dark purple rules for these same
+   classes (e.g. html.dark .papers-hof-score at line ~3038), which a plain
+   .bioclash-page prefix alone cannot beat (an extra `html` type selector
+   in the competing rule wins specificity even though .bioclash-page comes
+   later in the file). The unprefixed .bioclash-page rules stay too, purely
+   for the light-mode fallback a JS-disabled visitor would see. */
+.bioclash-page .papers-hof-score,
+.bioclash-page .papers-test-card-sub,
+html.dark .bioclash-page .papers-hof-score,
+html.dark .bioclash-page .papers-test-card-sub {
+  color: var(--bc-crimson);
+}
+.bioclash-page .papers-hof-slot,
+html.dark .bioclash-page .papers-hof-slot {
+  background: var(--bc-card-bg);
+  border: 1px solid var(--bc-border);
+}
+.bioclash-page .papers-hof-rank-1 {
+  border-top-color: var(--bc-gold);
+  background: linear-gradient(180deg, rgba(201, 151, 31, 0.18), var(--bc-card-bg));
+}
+.bioclash-page .papers-hof-rank-2 {
+  border-top-color: #a8adb4;
+}
+.bioclash-page .papers-hof-rank-3 {
+  border-top-color: #c07a3e;
+}
+.bioclash-page .papers-test-card,
+html.dark .bioclash-page .papers-test-card {
+  border-color: var(--bc-border);
+  background: var(--bc-card-bg);
+}
+.bioclash-page .papers-test-card:hover,
+html.dark .bioclash-page .papers-test-card:hover {
+  background: rgba(201, 151, 31, 0.12);
+}
+
+/* Whole-page citadel backdrop — MB-01PICS/citadel.webp behind the ENTIRE
+   leaderboard page (moved here from a Hall-of-Fame-only treatment per
+   founder correction: the image was meant for the whole page, not just
+   one section). Same fixed full-viewport pattern as
+   .bioclash-attempt-glow-bg, added as the first child of
+   #bioclash-leaderboard-root. The source photo (a gothic vaulted citadel
+   interior) is busiest/brightest in its upper-middle third, not at the
+   edges, so unlike .bioclash-attempt-glow-bg's center-bright vignette this
+   scrim is closer to flat — slightly stronger at the top (where the
+   masthead sits directly on the image, unpaneled) and easing off toward
+   the bottom (where the photo is already naturally darkest). Every actual
+   content block on the page still gets its own opaque panel (see
+   .bioclash-leaderboard-panel and the champions frames' `isolation:
+   isolate`, both below) — the scrim alone is a second line of defense, not
+   the only thing standing between text and a busy photo. */
+.bioclash-leaderboard-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background-image: url('/MB-01PICS/citadel.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bioclash-leaderboard-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 6, 12, 0.65) 0%, rgba(8, 6, 12, 0.54) 30%, rgba(6, 5, 9, 0.46) 60%, rgba(6, 5, 9, 0.58) 100%);
+}
+
+/* Whole-page background for the /bioclash/ landing page itself — same
+   full-bleed fixed pattern as .bioclash-leaderboard-bg, added as the first
+   child of #bioclash-root. Reuses the same loki art as the hero's own
+   internal background (.bioclash-hero-bg above) and the faint sitewide
+   .bioclash-bg-layer, so the whole page reads as one consistent backdrop
+   rather than three different treatments — the hero is just the brightest,
+   least-scrimmed part of it. Sits ABOVE the fainter sitewide
+   .bioclash-bg-layer (later in DOM, same z-index:0 tier) and effectively
+   replaces it for this one page; .bioclash-bg-layer stays untouched for
+   every other /bioclash/* page that doesn't have this. */
+.bioclash-landing-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background-image: url('/BIOCLASHPICS/mb01-bg-loki-wide.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 700px) {
+  .bioclash-landing-bg {
+    background-image: url('/BIOCLASHPICS/mb01-bg-loki-tall.png');
+    background-position: center top;
+  }
+}
+.bioclash-landing-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(6, 8, 6, 0.68) 0%, rgba(6, 8, 6, 0.56) 30%, rgba(5, 7, 5, 0.5) 60%, rgba(5, 7, 5, 0.62) 100%);
+}
+
+/* Generic opaque "case file" panel for the plain markdown sections (Rounds
+   This Season / Hall of Fame / Test Leaderboards) — these predate the
+   citadel backdrop and, unwrapped, would sit directly on the fixed image
+   both illegibly AND, per the same stacking rule .bioclash-champions-frame
+   relies on via `isolation: isolate`, below the position:fixed bg layer
+   entirely (see the "Fixed 2026-08-10" panel comment in section 24 for the
+   attempt page hitting this exact bug first). `isolation: isolate` alone
+   (no manual z-index bookkeeping) is enough: it gives the panel its own
+   stacking context, which — combined with coming later in DOM order than
+   .bioclash-leaderboard-bg — reliably paints it on top. */
+/* .bioclash-panel is the generic name — .bioclash-leaderboard-panel is kept
+   as an alias so the already-shipped leaderboard page's markup doesn't need
+   touching. Reused as-is (not copied) by the /bioclash/ landing page's
+   plain sections (content/bioclash/_index.md) once that page also got a
+   real photo background behind it, for the same reason: unwrapped text
+   would sit directly on the photo AND, per the isolation:isolate trick
+   noted here, plain non-isolated content can end up painting BEHIND a
+   position:fixed z-index:0 background layer entirely, not just illegibly
+   on top of it. */
+.bioclash-panel,
+.bioclash-leaderboard-panel {
+  position: relative;
+  isolation: isolate;
+  margin: 2.5rem 0;
+  padding: 2rem 1.75rem;
+  border-radius: var(--radius-xl);
+  background: var(--bc-parchment);
+  border: 1px solid var(--bc-border);
+  box-shadow: var(--shadow-lg);
+}
+html.dark .bioclash-panel,
+html.dark .bioclash-leaderboard-panel {
+  /* Same reasoning as html.dark #bioclash-attempt-start (section 24): bump
+     to a fully opaque near-black rather than trusting --bc-parchment's
+     already-near-opaque dark value, since this panel's whole job is
+     guaranteed contrast against the photo underneath. */
+  background: #1c1814;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.45), var(--shadow-lg);
+}
+
 /* ===================================================================
    16. DISCUSSIONS — content/discussions/index.md + static/js/discussions.js
    Public comments/feedback threads. Deliberately the site's normal
@@ -4105,7 +4529,9 @@ html.dark .discussions-comment {
    forcing this one page back to dark regardless. Hiding the control
    outright is simpler and more certain than trying to intercept every way
    its click handler could fire. */
-body.bioclash-attempt-active .hextra-theme-toggle {
+body.bioclash-attempt-active .hextra-theme-toggle,
+body.bioclash-leaderboard-active .hextra-theme-toggle,
+body.bioclash-landing-active .hextra-theme-toggle {
   display: none !important;
 }
 
@@ -4228,6 +4654,73 @@ html.dark #bioclash-attempt-report {
 #bioclash-attempt-report {
   line-height: 1.7;
 }
+.bioclash-recording-upload {
+  margin-top: 1.25rem;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid var(--bc-crimson);
+  border-radius: var(--radius-md);
+  background: rgba(179, 18, 46, 0.08);
+}
+.bioclash-recording-upload p:first-child { margin-top: 0; }
+.bioclash-recording-upload .papers-nav-btn {
+  display: inline-block;
+  margin-top: 0.25rem;
+}
+.bioclash-honor-code {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--bc-border);
+  border-radius: var(--radius-md);
+  background: rgba(201, 151, 31, 0.06);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.bioclash-honor-code input { margin-top: 0.2rem; flex: 0 0 auto; }
+
+/* Student-facing operational directives on the attempt start screen
+   (2026-08-11) — deliberately separate from .bioclash-honor-code (that
+   stays a focused AFFIRMATION) and from the tab-switching
+   .bioclash-nonrecoverable-banner above it (a specific known-bug warning)
+   — this is the general "here's how the mechanics behave" checklist:
+   wait-after-clicking, non-recoverable locks, extension cost, video
+   requirement, screenshot rule, and how results are actually scored.
+   Each item is now its own checkbox (2026-08-11, same requirement as the
+   honor code below it) — bioclash-attempt.js's startBtn gate requires
+   EVERY .bioclash-directive-checkbox checked, not just the honor code. */
+.bioclash-attempt-directives {
+  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--bc-border);
+  border-radius: var(--radius-md);
+  background: rgba(201, 151, 31, 0.04);
+}
+.bioclash-attempt-directives h2 {
+  font-family: 'BiOClash Display', Georgia, serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--bc-gold);
+  margin: 0 0 0.75rem;
+}
+.bioclash-directive-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.bioclash-directive-list li { margin-bottom: 0.6rem; }
+.bioclash-directive-list li:last-child { margin-bottom: 0; }
+.bioclash-directive-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.bioclash-directive-item input { margin-top: 0.2rem; flex: 0 0 auto; }
 
 /* Per-part heading — dressed as a case-file section stamp rather than a
    plain <h3>, so every block (present or future) inherits the same
@@ -4259,6 +4752,51 @@ html.dark #bioclash-attempt-report {
   padding: 0.5rem 0.75rem;
   background: rgba(179, 18, 46, 0.08);
   margin-bottom: 1rem;
+}
+/* Anti-cheat: single-active-session takeover (bioclash-attempt.js
+   handleSessionSuperseded()) — deliberately louder/more solid than the
+   non-recoverable banner above, since this means the whole page is now
+   inert, not just one question. */
+.bioclash-superseded-banner {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  font-weight: 700;
+  color: #fff;
+  background: var(--bc-crimson-deep);
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+}
+/* Screenshot/recording deterrent (2026-08-11) — toggled on document.body
+   by bioclash-attempt.js's applyContentBlur()/removeContentBlur(), driven
+   by the existing fullscreenchange/visibilitychange listeners. Blurs only
+   the live attempt body, not the whole page chrome, and shows a plain
+   "come back" message via ::after rather than hiding content silently —
+   the point is friction and a visible signal, not stealth. */
+body.bioclash-attempt-blurred #bioclash-attempt-body {
+  filter: blur(24px);
+  pointer-events: none;
+  user-select: none;
+}
+body.bioclash-attempt-blurred #bioclash-attempt-live {
+  position: relative;
+}
+body.bioclash-attempt-blurred #bioclash-attempt-live::after {
+  content: 'Content hidden — return to this tab to continue.';
+  position: fixed;
+  inset: 0;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  font-family: 'BiOClash Display', Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--bc-gold);
+  background: rgba(4, 8, 6, 0.88);
 }
 .bioclash-part-heading {
   font-family: 'BiOClash Display', Georgia, serif;
@@ -4359,6 +4897,19 @@ html.dark #bioclash-attempt-report {
   font-weight: 700;
   color: var(--bc-crimson-deep);
 }
+/* Live time-extension request button (2026-08-11) — deliberately styled
+   distinct from the neutral Prev/Next/Lock buttons and the crimson-leaning
+   Submit button, since clicking it has a real, irreversible ranking cost
+   (see bioclash-attempt.js's requestExtension()) — gold signals "this is a
+   deliberate trade-off," not a routine navigation action. */
+.bioclash-extend-btn {
+  border-color: var(--bc-gold);
+  color: var(--bc-gold);
+}
+html.dark .bioclash-extend-btn {
+  border-color: var(--bc-gold);
+  color: var(--bc-gold);
+}
 .bioclash-timer-low { color: var(--bc-crimson); animation: bioclash-timer-pulse 1s infinite; }
 @keyframes bioclash-timer-pulse { 50% { opacity: 0.4; } }
 
@@ -4370,10 +4921,33 @@ html.dark #bioclash-attempt-report {
   border-radius: var(--radius-lg);
   padding: 1.25rem 1.5rem;
   margin-bottom: 1.25rem;
+  /* Anti-cheat, deterrent tier only (a determined technical user bypasses
+     this via devtools in seconds — it raises the floor against casual
+     screenshot/copy-paste sharing, it is not a security boundary; see
+     context/anti-cheating-measures.md). Reversed below for the actual
+     answer inputs, which must stay normally selectable/editable. */
+  -webkit-user-select: none;
+  user-select: none;
+}
+.bioclash-block input,
+.bioclash-block textarea {
+  -webkit-user-select: text;
+  user-select: text;
+}
+.bioclash-component-image,
+.bioclash-block-figure img {
+  -webkit-user-drag: none;
+  user-drag: none;
 }
 .bioclash-block-locked { opacity: 0.85; }
 .bioclash-component { margin: 1rem 0; }
-.bioclash-component-prompt { font-weight: 600; margin-bottom: 0.5rem; }
+/* pre-line: collapses runs of spaces (so YAML's line-wrapping within a
+   paragraph still reflows normally) but keeps the blank-line paragraph
+   breaks a `>` folded scalar produces — without this, a multi-statement
+   prompt (e.g. Q14's lettered BsaI outcomes) renders as one unbroken
+   run-on line no matter how it's spaced in the source YAML, since HTML
+   collapses newlines by default. */
+.bioclash-component-prompt { font-weight: 600; margin-bottom: 0.5rem; white-space: pre-line; }
 .bioclash-component-image { max-width: 100%; border-radius: var(--radius-md); margin: 0.5rem 0; }
 .bioclash-mcq-options, .bioclash-tf-options {
   display: flex;
@@ -4409,5 +4983,40 @@ html.dark #bioclash-attempt-report {
   padding: 0.75rem 1rem;
   border-left: 3px solid var(--bc-gold);
   background: rgba(201, 151, 31, 0.08);
+  white-space: pre-line; /* same paragraph-break fix as .bioclash-component-prompt */
 }
+
+/* Part-by-part Prev/Next navigation (bioclash-attempt.js renderPartNav) —
+   replaces the old flat, scroll-through-everything layout so a student
+   can't read ahead into a part they haven't earned yet by scrolling past
+   a still-active non-recoverable question. Rendered both above and below
+   each part's questions so it's reachable without a long scroll back up. */
+.bioclash-part-nav {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 0.85rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid var(--bc-border);
+  border-radius: var(--radius-md);
+  background: var(--bc-card-bg);
+}
+.bioclash-part-nav-label {
+  font-family: 'BiOClash Display', Georgia, serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  color: var(--bc-gold);
+  text-align: center;
+  flex: 1;
+}
+.bioclash-part-nav-btn {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+.bioclash-part-nav-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }

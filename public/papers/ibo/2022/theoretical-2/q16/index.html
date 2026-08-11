@@ -333,32 +333,32 @@ Rate of transpiration from the abaxial and adaxial surfaces of a eudicot leaf as
 <em>Rate of transpiration from the abaxial and adaxial surfaces of a eudicot leaf as a function of light intensity.</em></p>
 <p>Use the information and figure to determine whether the following statements are true or false.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-2-q16">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="The spongy mesophyll layer, which lies just beneath the lower (abaxial) epidermis, has large intercellular air spaces that let water vapor diffuse quickly to the more numerous abaxial stomata, contributing to the faster transpiration seen from the lower surface in the figure.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="The spongy mesophyll layer, which lies just beneath the lower (abaxial) epidermis, has large intercellular air spaces that let water vapor diffuse quickly to the more numerous abaxial stomata, contributing to the faster transpiration seen from the lower surface in the figure.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Spongy mesophyll causes faster transpiration because it has more air cavities.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="As water evaporates from the moist mesophyll cell walls into the intercellular air spaces and out through the stomata, the mesophyll cells lose water and their water potential drops, which is exactly what pulls more water up through the xylem via the cohesion-tension mechanism.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="As water evaporates from the moist mesophyll cell walls into the intercellular air spaces and out through the stomata, the mesophyll cells lose water and their water potential drops, which is exactly what pulls more water up through the xylem via the cohesion-tension mechanism.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Transpiration decreases the water potential in the leaves</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="In a typical eudicot (hypostomatous) leaf, the adaxial (upper) surface carries far fewer stomata than the abaxial (lower) surface, so at any given light intensity the upper surface has less total stomatal pore area for water vapor to escape through — matching the lower transpiration curve for the adaxial surface in the figure.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="In a typical eudicot (hypostomatous) leaf, the adaxial (upper) surface carries far fewer stomata than the abaxial (lower) surface, so at any given light intensity the upper surface has less total stomatal pore area for water vapor to escape through — matching the lower transpiration curve for the adaxial surface in the figure.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> Transpiration from the upper surface is slower because it has fewer stomata.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="Air movement strips away the humid boundary layer that builds up next to a leaf surface, steepening the water-vapor concentration gradient between the leaf interior and the outside air. This speeds up diffusion of water vapor out of the stomata on both the adaxial and abaxial surfaces, regardless of how many stomata each surface has.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="Air movement strips away the humid boundary layer that builds up next to a leaf surface, steepening the water-vapor concentration gradient between the leaf interior and the outside air. This speeds up diffusion of water vapor out of the stomata on both the adaxial and abaxial surfaces, regardless of how many stomata each surface has.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Air movement would increase transpiration rates from both surfaces.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -378,8 +378,24 @@ Rate of transpiration from the abaxial and adaxial surfaces of a eudicot leaf as
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -394,16 +410,32 @@ Rate of transpiration from the abaxial and adaxial surfaces of a eudicot leaf as
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -411,7 +443,7 @@ Rate of transpiration from the abaxial and adaxial surfaces of a eudicot leaf as
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -419,8 +451,13 @@ Rate of transpiration from the abaxial and adaxial surfaces of a eudicot leaf as
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

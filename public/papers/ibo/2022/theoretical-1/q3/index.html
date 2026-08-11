@@ -335,32 +335,32 @@ Glucose concentration (arbitrary units) vs. time, for amylase-catalysed starch h
 <em>Glucose concentration (arbitrary units) vs. time, for amylase-catalysed starch hydrolysis at 50°C, 60°C, and 70°C. The 50°C curve reaches the highest final glucose level and is still rising at 60 minutes; the 60°C curve plateaus earlier at a lower level; the 70°C curve rises fastest at first but plateaus soonest, at the lowest final level.</em></p>
 <p>What conclusion can be drawn from these data? Determine whether the following statements are true or false:</p>
 <p><div class="tf-quiz-wrap" data-quiz-id="ibo-2022-theoretical-1-q3">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="The 70°C curve has the steepest initial slope, meaning the initial rate is actually highest at 70°C, not 50°C — 50°C only wins on total glucose produced by 60 minutes, because the enzyme stays active longer there.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="The 70°C curve has the steepest initial slope, meaning the initial rate is actually highest at 70°C, not 50°C — 50°C only wins on total glucose produced by 60 minutes, because the enzyme stays active longer there.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> 50°C is the optimal temperature for the initial activity of amylase.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="The curve plateauing just means glucose production has stopped (denaturation or substrate exhaustion) — without knowing the total starch present at the start, the plateau alone can&#39;t confirm that 100% of it was hydrolysed.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="The curve plateauing just means glucose production has stopped (denaturation or substrate exhaustion) — without knowing the total starch present at the start, the plateau alone can&#39;t confirm that 100% of it was hydrolysed.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> At 60°C, all starch is hydrolyzed after 30 minutes.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="The 70°C curve plateaus earliest and at the lowest final glucose level of the three — consistent with the enzyme losing activity (denaturing) quickly, well before all the available starch has been broken down.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="The 70°C curve plateaus earliest and at the lowest final glucose level of the three — consistent with the enzyme losing activity (denaturing) quickly, well before all the available starch has been broken down.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> At 70°C amylase is denatured before hydrolysis is complete.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="It&#39;s the reverse: the 70°C curve has the steeper initial slope of the two, so its initial rate is higher, not lower, than 60°C&#39;s.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="It&#39;s the reverse: the 70°C curve has the steeper initial slope of the two, so its initial rate is higher, not lower, than 60°C&#39;s.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> The initial reaction rate of starch hydrolysis at 60°C is higher than at 70°C.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -380,8 +380,24 @@ Glucose concentration (arbitrary units) vs. time, for amylase-catalysed starch h
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -396,16 +412,32 @@ Glucose concentration (arbitrary units) vs. time, for amylase-catalysed starch h
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -413,7 +445,7 @@ Glucose concentration (arbitrary units) vs. time, for amylase-catalysed starch h
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -421,8 +453,13 @@ Glucose concentration (arbitrary units) vs. time, for amylase-catalysed starch h
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

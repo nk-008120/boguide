@@ -327,32 +327,32 @@ The Aral Sea, located in the southwest of Kazakhstan, was one of the largest sal
 <em>Figure 1. A The Aral Sea before and after. B Graph of changes in the salinity of both basins (mg/mL) and quantity metric of adult organisms (arbitrary units). A – salinity, W – species W, Z – species Z. The red arrow indicates the artificial introduction of a community of new species.</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q14">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. A healthy restored food web needs organisms filling multiple trophic roles — phytoplankton-grazing zooplankton, fish that eat zooplankton or benthic organisms, and so on — not every introduced fish needs to eat phytoplankton directly. In fact a fish feeding directly on phytoplankton at the top of a restoration effort could over-consume the primary producers and destabilize the very food web it&#39;s meant to help rebuild.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. A healthy restored food web needs organisms filling multiple trophic roles — phytoplankton-grazing zooplankton, fish that eat zooplankton or benthic organisms, and so on — not every introduced fish needs to eat phytoplankton directly. In fact a fish feeding directly on phytoplankton at the top of a restoration effort could over-consume the primary producers and destabilize the very food web it&#39;s meant to help rebuild.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> A fish species introduced for biota restoration must feed on phytoplankton.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Figure 1B shows species Z&#39;s population persisting at high salinity (into the 80-100 mg/mL range) before crashing, while species W&#39;s population crashes at a much lower salinity — Z tolerates a higher salt concentration before declining than W does, making Z the more salt-resistant of the two.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Figure 1B shows species Z&#39;s population persisting at high salinity (into the 80-100 mg/mL range) before crashing, while species W&#39;s population crashes at a much lower salinity — Z tolerates a higher salt concentration before declining than W does, making Z the more salt-resistant of the two.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Species Z is more resistant to high salt concentrations than species W.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. The Northern basin receives more freshwater input (from the Syr Darya, which flows more reliably than the overused Amu Darya feeding the Southern basin), so the Northern Aral would be expected to become less saline, sooner. Since species W&#39;s return in Figure 1B coincides with salinity dropping to a tolerable level, and the Northern basin reaches lower salinity earlier, W is more likely to have returned there first.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. The Northern basin receives more freshwater input (from the Syr Darya, which flows more reliably than the overused Amu Darya feeding the Southern basin), so the Northern Aral would be expected to become less saline, sooner. Since species W&#39;s return in Figure 1B coincides with salinity dropping to a tolerable level, and the Northern basin reaches lower salinity earlier, W is more likely to have returned there first.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> It&#39;s more likely that the return of species W happened earlier in the Northern Aral than in the Southern.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. After the artificial introduction (red arrow), species Z&#39;s population begins to climb — consistent with the new community including a food source (prey) for Z, letting its population grow. Since Z&#39;s numbers increase rather than decline after the introduction, the newly added organisms are acting as a food source, not as new predators of Z.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. After the artificial introduction (red arrow), species Z&#39;s population begins to climb — consistent with the new community including a food source (prey) for Z, letting its population grow. Since Z&#39;s numbers increase rather than decline after the introduction, the newly added organisms are acting as a food source, not as new predators of Z.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> Among the artificially introduced animals, there were organisms that are prey for species Z but not predators of species Z.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -372,8 +372,24 @@ The Aral Sea, located in the southwest of Kazakhstan, was one of the largest sal
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -388,16 +404,32 @@ The Aral Sea, located in the southwest of Kazakhstan, was one of the largest sal
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -405,7 +437,7 @@ The Aral Sea, located in the southwest of Kazakhstan, was one of the largest sal
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -413,8 +445,13 @@ The Aral Sea, located in the southwest of Kazakhstan, was one of the largest sal
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

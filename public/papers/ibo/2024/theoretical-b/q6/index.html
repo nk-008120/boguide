@@ -326,32 +326,32 @@ ProQC is a synthetic biology tool used for the quality control of protein expres
 <em>Figure 1. Schematic diagram of one of the possible conformations of the ProQC system.</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q6">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. The toehold switch&#39;s hairpin blocks the RBS by default, silencing translation; only when the cis-trigger (present at the 3&#39; end of a full-length mRNA) base-pairs with the toehold switch does the hairpin open and expose the RBS, turning translation ON — matching the &#34;Turn ON&#34; arrow shown looping from the cis-trigger back to the switch in Figure 1.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. The toehold switch&#39;s hairpin blocks the RBS by default, silencing translation; only when the cis-trigger (present at the 3&#39; end of a full-length mRNA) base-pairs with the toehold switch does the hairpin open and expose the RBS, turning translation ON — matching the &#34;Turn ON&#34; arrow shown looping from the cis-trigger back to the switch in Figure 1.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> The ProQC system allows translation only when the cis-trigger binds to the toehold switch.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Because the RBS only opens once the cis-trigger at the far (3&#39;) end of the message is reached, ribosomes are prevented from translating truncated or prematurely terminated transcripts that never reached that point — this avoids wasting ribosomes, amino acids, and energy on defective protein products, increasing the proportion of full-length, functional protein made.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Because the RBS only opens once the cis-trigger at the far (3&#39;) end of the message is reached, ribosomes are prevented from translating truncated or prematurely terminated transcripts that never reached that point — this avoids wasting ribosomes, amino acids, and energy on defective protein products, increasing the proportion of full-length, functional protein made.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> The ProQC system increases the yield of functional proteins and reduces the waste of cellular resources.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. ProQC&#39;s whole logic depends on transcription and translation happening in the same physical/temporal window so that only a fully transcribed (cis-trigger-containing) mRNA can turn translation on — in eukaryotes, transcription (nucleus) and translation (cytoplasm) are already spatially and temporally separated, and mRNA processing (5&#39; cap, splicing, polyadenylation) already provides quality control that exports only mature, complete transcripts. That built-in separation makes an add-on system like ProQC unnecessary in eukaryotic cells.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. ProQC&#39;s whole logic depends on transcription and translation happening in the same physical/temporal window so that only a fully transcribed (cis-trigger-containing) mRNA can turn translation on — in eukaryotes, transcription (nucleus) and translation (cytoplasm) are already spatially and temporally separated, and mRNA processing (5&#39; cap, splicing, polyadenylation) already provides quality control that exports only mature, complete transcripts. That built-in separation makes an add-on system like ProQC unnecessary in eukaryotic cells.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> This system is not necessary in eukaryotic cells.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. What actually opens the hairpin is base-pairing complementarity with the toehold switch sequence — the switch has no way to distinguish whether that complementary RNA came from the cis-trigger built into its own cassette or from some other RNA transcribed elsewhere in the cell with a matching sequence. Any RNA complementary to the toehold region, from any source, unblocks the RBS.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. What actually opens the hairpin is base-pairing complementarity with the toehold switch sequence — the switch has no way to distinguish whether that complementary RNA came from the cis-trigger built into its own cassette or from some other RNA transcribed elsewhere in the cell with a matching sequence. Any RNA complementary to the toehold region, from any source, unblocks the RBS.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> In the ProQC system, the RBS in the toehold switch can be unblocked by trigger RNA transcribed separately from the ProQC system.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -371,8 +371,24 @@ ProQC is a synthetic biology tool used for the quality control of protein expres
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -387,16 +403,32 @@ ProQC is a synthetic biology tool used for the quality control of protein expres
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -404,7 +436,7 @@ ProQC is a synthetic biology tool used for the quality control of protein expres
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -412,8 +444,13 @@ ProQC is a synthetic biology tool used for the quality control of protein expres
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

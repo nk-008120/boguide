@@ -342,32 +342,32 @@ Japanese mitten crabs, Eriocheir japonica, can display cannibalistic behavior. T
 *Figure 1. A,B Cannibalism among only male (graph A) and only female (graph B) crabs, n-number of crabs. C Y – mean (+SD) of Factor S among killed and injured groups, <em>p&lt;0.05. D Injured crabs&rsquo; occurrence frequencies.</em></p>
 <p>On your answer sheet, indicate &ldquo;T&rdquo; for true statements and &ldquo;F&rdquo; for false ones.</p>
 <div class="tf-quiz-wrap" data-quiz-id="ibo-2024-theoretical-b-q21">
-  <div class="tf-quiz">
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. At 50% cannibalism probability, graph A (males) shows Factor S = 0.43. Working backward through Factor S = 1 − (prey size/predator size): 0.43 = 1 − x, so x = 0.57 = prey/predator. Inverting that ratio (predator/prey) gives 1/0.57 ≈ 1.75, matching the statement.">
+  <div class="tf-quiz"><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. At 50% cannibalism probability, graph A (males) shows Factor S = 0.43. Working backward through Factor S = 1 − (prey size/predator size): 0.43 = 1 − x, so x = 0.57 = prey/predator. Inverting that ratio (predator/prey) gives 1/0.57 ≈ 1.75, matching the statement.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">A.</span> Among male crabs, the cannibalism probability is 50% when predator to prey size ratio is about 1.75.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement A">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Males reach 50% cannibalism probability at a much smaller size difference (Factor S = 0.43) than females do (Factor S = 0.79) — meaning males start cannibalizing at a smaller size advantage over their prey, while females hold back until they&#39;re relatively much bigger. That makes males the more &#34;eager&#34;/less picky cannibals here, not females.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Males reach 50% cannibalism probability at a much smaller size difference (Factor S = 0.43) than females do (Factor S = 0.79) — meaning males start cannibalizing at a smaller size advantage over their prey, while females hold back until they&#39;re relatively much bigger. That makes males the more &#34;eager&#34;/less picky cannibals here, not females.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">B.</span> Females have a higher eagerness to cannibalism than males</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement B">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="false" data-explanation="FALSE. Figure 1D only captures crabs that survived being cannibalized — a badly-injured crab (many lost legs) is also the crab most likely to be finished off and killed rather than merely left injured. That survivor bias means real injury-count frequencies among survivors would skew toward fewer lost legs than Figure 1D&#39;s hypothetical distribution suggests, not resemble it directly.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="false"
+         data-explanation="FALSE. Figure 1D only captures crabs that survived being cannibalized — a badly-injured crab (many lost legs) is also the crab most likely to be finished off and killed rather than merely left injured. That survivor bias means real injury-count frequencies among survivors would skew toward fewer lost legs than Figure 1D&#39;s hypothetical distribution suggests, not resemble it directly.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">C.</span> In a cannibalistic environment, the occurrence of injured crabs will resemble the frequencies displayed in Figure 1D.</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement C">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
-    </div>
-    <div class="tf-quiz-row" data-answer="true" data-explanation="TRUE. Figure 1C plots Factor S (a size-difference measure) separately for the killed and injured groups and shows a real difference in mean Factor S between the two outcomes — a bigger size gap between predator and prey pushes the outcome toward killing rather than just injury.">
+    </div><div class="tf-quiz-row" data-type="true_false" data-answer="true"
+         data-explanation="TRUE. Figure 1C plots Factor S (a size-difference measure) separately for the killed and injured groups and shows a real difference in mean Factor S between the two outcomes — a bigger size gap between predator and prey pushes the outcome toward killing rather than just injury.">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">D.</span> The difference in size affects whether the crab is killed or merely injured</div>
       <div class="tf-quiz-toggle" role="group" aria-label="Statement D">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
@@ -387,8 +387,24 @@ Japanese mitten crabs, Eriocheir japonica, can display cannibalistic behavior. T
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; 
+    }
+
+    if (type === 'numeric') return; 
+
+    
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -403,16 +419,32 @@ Japanese mitten crabs, Eriocheir japonica, can display cannibalistic behavior. T
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -420,7 +452,7 @@ Japanese mitten crabs, Eriocheir japonica, can display cannibalistic behavior. T
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -428,8 +460,13 @@ Japanese mitten crabs, Eriocheir japonica, can display cannibalistic behavior. T
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });
