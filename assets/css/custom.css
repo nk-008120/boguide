@@ -1543,6 +1543,50 @@ html.dark .tf-quiz-reset {
   font-weight: 600;
 }
 
+/* New statement types added 2026-08-11 for IBO 2019 (see papers-quiz.html's
+   own header comment for the full schema) — reuse .tf-btn's visual
+   language rather than inventing a new one. */
+.tf-quiz-mcq {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tf-btn-mcq {
+  width: 100%;
+  text-align: left;
+  border-radius: var(--radius-md);
+}
+.tf-quiz-numeric {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+}
+.tf-numeric-input {
+  font: inherit;
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(137, 101, 196, 0.3);
+  background: transparent;
+  color: inherit;
+  width: 8rem;
+}
+html.dark .tf-numeric-input {
+  border-color: rgba(201, 183, 232, 0.35);
+}
+.tf-numeric-unit {
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+.tf-model-answer {
+  margin-top: 0.6rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: var(--radius-md);
+  background: rgba(137, 101, 196, 0.08);
+}
+html.dark .tf-model-answer {
+  background: rgba(201, 183, 232, 0.08);
+}
+
 /* ===================================================================
    13. PAPERS PROBLEM NAV — Previous/Next between problems in a round
    {{< papers-problem-nav >}} (layouts/shortcodes/papers-problem-nav.html).

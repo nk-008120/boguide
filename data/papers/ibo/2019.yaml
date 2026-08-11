@@ -1,0 +1,507 @@
+name: "2019"
+location: "Szeged, Hungary"
+rounds:
+  - id: theoretical-a
+    name: "Theoretical A"
+    durationMinutes: 180
+    papers:
+      - category: "Theoretical A"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf"
+        linkLabel: "Exam"
+        solutionLink: "/papers/ibo/2019/answer-keys.pdf"
+        solutionLabel: "Official Answer Key (Practicals + Theoretical Exams)"
+    problems:
+      - id: q1
+        number: "Q1"
+        name: "C. elegans Apoptosis Gene Network"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=5"
+        subjects:
+          - name: "Cell Junctions, Extracellular Matrix & Cell Death"
+            link: "/resources/1-cell-molecular/cell-junctions-ecm-cell-death/"
+        statements:
+          - letter: "Q1.1"
+            type: "free_response"
+            text: "The effect of knocking out ced9, ced4, ced3 and egl1 (singly and in the pairwise combinations ced4&ced9, ced9&ced3, ced9&egl1) on apoptosis was studied (see the table on the question page). Using this epistasis data, write the letters A (Ced3), B (Ced4), C (Ced9) and D (Egl1) into the correct position of a four-step linear pathway model of the control of cell death (CD)."
+            modelAnswer: "Pathway order: Egl1 (D) ⊣ Ced9 (C) ⊣ Ced4 (B) → Ced3 (A) → cell death (CD)."
+            explanation: "Epistasis logic: ced9 knock-out alone INCREASES death, so Ced9 normally suppresses death. ced4, ced3 and egl1 knock-outs alone all REDUCE death, so each normally promotes death. In the double knockouts, ced4&ced9 and ced9&ced3 both give the REDUCED phenotype (i.e. ced4/ced3 are epistatic to ced9 — they act downstream of it), while ced9&egl1 gives the INCREASED phenotype (ced9 is epistatic to egl1 — ced9 acts downstream of egl1). That ordering — egl1 upstream of ced9, ced9 upstream of ced4/ced3 — matches the real, well-characterised C. elegans apoptosis pathway: EGL-1 inhibits CED-9; CED-9 inhibits CED-4; CED-4 activates the executioner caspase CED-3. The official key credits either order for the Ced3/Ced4 pair at the two downstream positions."
+          - letter: "Q1.2"
+            type: "free_response"
+            text: "Indicate whether each of the three interactions in the pathway above (D⊣C, C⊣B, B→A) is activating (+) or repressing (–)."
+            modelAnswer: "Egl1 ⊣ Ced9: repressing (–). Ced9 ⊣ Ced4: repressing (–). Ced4 → Ced3: activating (+)."
+            explanation: "Directly follows from the epistasis reasoning above: Egl-1 represses Ced-9, Ced-9 represses Ced-4, and Ced-4 activates Ced-3 (which then executes cell death)."
+
+      - id: q2
+        number: "Q2"
+        name: "CLK Mutation and Circadian PER Oscillations"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=6"
+        subjects:
+          - name: "Biological Rhythms"
+            link: "/resources/9-ethology/biological-rhythms/"
+        statements:
+          - letter: "Q2.1"
+            text: "Behavioural effects of CLK mutation are largely due to a defect in the degradation of circadian rhythm proteins, including PER."
+            answer: false
+            explanation: "FALSE. The CLK mutation is a premature stop codon that makes CLK itself non-functional — CLK is a transcription factor driving PER expression, not a component of the PER degradation machinery. The luciferase data show a defect in PER promoter transcriptional cycling, not in protein turnover."
+          - letter: "Q2.2"
+            text: "The main effects of CLK mutation are fully penetrant at the molecular level."
+            answer: true
+            explanation: "TRUE. In CLK-/- flies, luciferase (PER promoter) activity is essentially flat/arrhythmic at the molecular level (matching the ARR = 100% arrhythmic result in Table 1's Row 2), i.e. every CLK-/- fly loses the molecular rhythm — fully penetrant."
+          - letter: "Q2.3"
+            text: "The main effects of CLK mutation are fully penetrant at the behavioural level."
+            answer: false
+            explanation: "FALSE. Table 1 shows CLK-/- flies are not 100% arrhythmic behaviourally in the light:dark condition (Row 1), and even in constant darkness a docile fraction can still show some periodicity before full arrhythmicity sets in — behavioural penetrance is incomplete/graded, unlike the all-or-nothing molecular phenotype."
+          - letter: "Q2.4"
+            text: "PER promoter activity cycled with a reduced frequency in CLK +/- flies compared to CLK +/+ flies."
+            answer: false
+            explanation: "FALSE. Figure 1 shows CLK+/- flies cycling with the same period/frequency as CLK+/+ — the peaks line up at the same time points, just with lower amplitude. Frequency (how often it cycles) is unchanged; only the amplitude of luciferase counts is reduced."
+          - letter: "Q2.5"
+            text: "The results shown could be explained by CLK acting as a transcription factor on PER."
+            answer: true
+            explanation: "TRUE. A dose-dependent reduction in PER-promoter-driven luciferase amplitude (CLK+/+ > CLK+/- > CLK-/-) with unchanged timing is exactly the signature expected if CLK directly activates PER transcription — fewer functional CLK copies mean weaker (but not necessarily mistimed) activation of the PER promoter."
+          - letter: "Q2.6"
+            text: "In constant dark, the circadian periodicity of wild-type Drosophila is approximately 24 hours."
+            answer: true
+            explanation: "TRUE. Table 1, Row 2 (constant darkness), CLK+/+ genotype shows a period of 24.3 hours — consistent with the free-running circadian period of wild-type Drosophila being close to, but not exactly, 24 hours."
+
+      - id: q3
+        number: "Q3"
+        name: "GPCR Signalling and a Toxin Acting on the Gs Cycle"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=8"
+        subjects:
+          - name: "Cell Signaling & Communication"
+            link: "/resources/1-cell-molecular/cell-signaling-communication/"
+        statements:
+          - letter: "Q3.1"
+            type: "mcq"
+            text: "A mutation in GPCR-A (which activates adenylyl cyclase) that PREVENTS G protein activation — effect on intracellular cAMP upon ligand addition (no toxin)?"
+            options: [{key: "A", text: "Increased"}, {key: "B", text: "Not changed"}, {key: "C", text: "Decreased"}]
+            answer: "C"
+            explanation: "GPCR-A normally raises cAMP by activating Gs → adenylyl cyclase. If the mutation prevents G protein activation, GPCR-A can no longer trigger that rise, so the ligand-induced cAMP increase is lost — cAMP ends up lower than the normal (functional-GPCR-A) response, i.e. decreased."
+          - letter: "Q3.2"
+            type: "mcq"
+            text: "A mutation in GPCR-B (which inhibits adenylyl cyclase) that PREVENTS G protein activation — effect on intracellular cAMP upon ligand addition (no toxin)?"
+            options: [{key: "A", text: "Increased"}, {key: "B", text: "Not changed"}, {key: "C", text: "Decreased"}]
+            answer: "A"
+            explanation: "GPCR-B normally lowers cAMP by activating Gi, which inhibits adenylyl cyclase. If GPCR-B can no longer activate its G protein, that inhibitory brake is lost, so GPCR-A's stimulatory effect (both receptors bind the same ligand) goes unopposed — net cAMP increases relative to the normal dual-receptor response."
+          - letter: "Q3.3"
+            type: "mcq"
+            text: "A mutation in Gs that PREVENTS release of bound GDP — effect on cAMP upon ligand addition (no toxin)?"
+            options: [{key: "A", text: "Increased"}, {key: "B", text: "Not changed"}, {key: "C", text: "Decreased"}]
+            answer: "C"
+            explanation: "GDP release (step 1 in Fig.1) is required before GTP can load onto Gs and activate it. Blocking GDP release locks Gs in its inactive, GDP-bound state permanently — GPCR-A can no longer stimulate adenylyl cyclase via Gs, so cAMP decreases."
+          - letter: "Q3.4"
+            type: "mcq"
+            text: "A mutation in Gi that PREVENTS release of bound GDP — effect on cAMP upon ligand addition (no toxin)?"
+            options: [{key: "A", text: "Increased"}, {key: "B", text: "Not changed"}, {key: "C", text: "Decreased"}]
+            answer: "A"
+            explanation: "By the same logic as Gs, locking Gi in its inactive GDP-bound state means GPCR-B can never activate Gi to inhibit adenylyl cyclase — the inhibitory arm is permanently disabled, so cAMP is higher than normal."
+          - letter: "Q3.5"
+            type: "mcq"
+            text: "A mutation in Gs that PREVENTS GTP hydrolysis — effect on cAMP upon ligand addition (no toxin)?"
+            options: [{key: "A", text: "Increased"}, {key: "B", text: "Not changed"}, {key: "C", text: "Decreased"}]
+            answer: "A"
+            explanation: "GTP hydrolysis (step 4 in Fig.1) normally terminates Gs signalling. Blocking it leaves the GTP-bound, active αs subunit locked on, continuously stimulating adenylyl cyclase — cAMP rises above the normal transient response."
+          - letter: "Q3.6"
+            type: "mcq"
+            text: "A mutation in Gi that PREVENTS GTP hydrolysis — effect on cAMP upon ligand addition (no toxin)?"
+            options: [{key: "A", text: "Increased"}, {key: "B", text: "Not changed"}, {key: "C", text: "Decreased"}]
+            answer: "C"
+            explanation: "By the same logic, locking Gi permanently GTP-bound/active means adenylyl cyclase is continuously inhibited — cAMP falls below the normal response."
+          - letter: "Q3.7"
+            text: "The toxin inhibits activation of Gi in response to receptor stimulation."
+            answer: true
+            explanation: "TRUE (a possible explanation). Fig.2 shows toxin treatment causes a large INCREASE in cAMP (with no ligand added, so this must reflect a change in basal/tonic signalling balance). If the toxin blocks Gi activation, the tonic inhibitory tone on adenylyl cyclase is lost, consistent with elevated cAMP."
+          - letter: "Q3.8"
+            text: "The toxin inhibits GTP hydrolysis in Gs."
+            answer: true
+            explanation: "TRUE (a possible explanation). Blocking GTP hydrolysis in Gs (as in Q3.5) locks Gs active, continuously stimulating adenylyl cyclase — also consistent with the large cAMP increase seen in Fig.2, independent of new ligand binding."
+          - letter: "Q3.9"
+            text: "The toxin mimics GTP and causes persistent activation of all G proteins."
+            answer: false
+            explanation: "FALSE. If the toxin activated ALL G proteins (both Gs and Gi) persistently, the stimulatory and inhibitory effects on adenylyl cyclase would tend to cancel out, not produce the large net cAMP increase actually observed — this explanation doesn't fit the data as cleanly as toxin acting selectively on the Gi/Gs balance."
+          - letter: "Q3.10"
+            text: "The toxin is an inhibitor of GPCR-A receptor."
+            answer: false
+            explanation: "FALSE. Fig.2's experiment specifically excludes ligand addition, so an effect purely at the level of GPCR-A itself (upstream of the G protein) can't explain a receptor-independent cAMP change — and inhibiting a stimulatory receptor would be expected to lower, not raise, cAMP."
+          - letter: "Q3.11"
+            text: "The toxin is an activator of GPCR-B receptor."
+            answer: false
+            explanation: "FALSE. GPCR-B is inhibitory (lowers cAMP via Gi) — activating it would be expected to decrease cAMP, the opposite of the large increase actually observed in Fig.2."
+
+      - id: q4
+        number: "Q4"
+        name: "CDK Knockout and Liver Regeneration"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=10"
+        subjects:
+          - name: "Cell Cycle, Mitosis & Meiosis"
+            link: "/resources/1-cell-molecular/cell-cycle-mitosis-meiosis/"
+        statements:
+          - letter: "Q4.1"
+            type: "mcq"
+            text: "In CDK knock-out livers vs. wild-type, after regeneration — Liver mass:"
+            options: [{key: "A", text: "Increased"}, {key: "B", text: "Not changed"}, {key: "C", text: "Decreased"}]
+            answer: "B"
+            explanation: "The Axis-1 scatter plot (liver mass) shows overlapping WT and CDK-/- ranges at both the 4-day and 21-day time points — regeneration still restores liver MASS to a comparable degree, just by a different cellular route (hypertrophy instead of proliferation)."
+          - letter: "Q4.2"
+            type: "mcq"
+            text: "In CDK knock-out livers vs. wild-type, after regeneration — Hepatocyte number:"
+            options: [{key: "A", text: "Increased"}, {key: "B", text: "Not changed"}, {key: "C", text: "Decreased"}]
+            answer: "C"
+            explanation: "Without functional CDK, cells cannot complete the cell-division cycle, so the liver cannot regenerate mass by making more (smaller) cells — hepatocyte number decreases even though total mass is preserved (see Q4.1)."
+          - letter: "Q4.3"
+            type: "mcq"
+            text: "In CDK knock-out livers vs. wild-type, after regeneration — Average hepatocyte ploidy:"
+            options: [{key: "A", text: "Increased"}, {key: "B", text: "Not changed"}, {key: "C", text: "Decreased"}]
+            answer: "A"
+            explanation: "The DNA-content histogram (Axis 2/3) shows CDK-/- hepatocytes with extra higher-DNA-content peaks compared to WT — cells keep replicating their DNA (endoreduplicating) without completing division, becoming polyploid, which is exactly how the missing mass gets made up with fewer, larger cells."
+          - letter: "Q4.4"
+            type: "mcq"
+            text: "In CDK knock-out livers vs. wild-type, after regeneration — Number of mitotic spindles:"
+            options: [{key: "A", text: "Increased"}, {key: "B", text: "Not changed"}, {key: "C", text: "Decreased"}]
+            answer: "C"
+            explanation: "CDK activity is required to enter mitosis. Without it, cells arrest before mitosis (even though they can still replicate DNA), so far fewer cells ever assemble a mitotic spindle."
+          - letter: "Q4.5"
+            type: "mcq"
+            text: "In CDK knock-out livers vs. wild-type, after regeneration — DNA synthesis:"
+            options: [{key: "A", text: "Increased"}, {key: "B", text: "Not changed"}, {key: "C", text: "Decreased"}]
+            answer: "B"
+            explanation: "The newly-synthesised-DNA flow-cytometry plots (Axis 4/5) look similar between WT and CDK-/- — S-phase (DNA replication) still proceeds essentially normally; it's specifically mitotic entry/completion that's blocked, which is why cells become polyploid rather than simply failing to replicate at all."
+
+      - id: q5
+        number: "Q5"
+        name: "UCP Family and Non-Shivering Thermogenesis"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=12"
+        subjects:
+          - name: "Comparative Thermoregulation"
+            link: "/resources/3-animal-physiology/comparative-thermoregulation/"
+        statements:
+          - letter: "Q5.1"
+            type: "numeric"
+            text: "Estimate the increase in metabolic rate due to UCP1-dependent thermogenesis after NE stimulation in cool-acclimated mice (in ml O2·min⁻¹·kg⁻¹)."
+            expected: 11
+            tolerance: 0.5
+            explanation: "Compare the NE-stimulated, cool-acclimated response with UCP1 present (Title 1, normal mice: 26) against the same condition with UCP1 absent (Title 2, UCP1-knockout: 15). The difference, 26 − 15 = 11 ml O2·min⁻¹·kg⁻¹, isolates the portion of the NE response that specifically depends on UCP1."
+          - letter: "Q5.2"
+            type: "numeric"
+            text: "Calculate the increase in O2 consumption in a 25-gram cool-acclimated mouse that results from NE stimulation but cannot be explained by UCP1 or UCP3 activity (in ml·min⁻¹)."
+            expected: 0.125
+            tolerance: 0.01
+            explanation: "Use the double UCP1/UCP3 knockout (Title 4), where any remaining NE-induced increase in metabolic rate is by definition independent of both proteins: 15 − 10 = 5 ml O2·min⁻¹·kg⁻¹. Converting to an absolute rate for a 25 g (0.025 kg) mouse: 5 × 0.025 = 0.125 ml O2·min⁻¹."
+          - letter: "Q5.3"
+            text: "UCP1 actively pumps H+ ions across the inner mitochondrial membrane."
+            answer: false
+            explanation: "FALSE. UCP1 is a passive channel that increases the membrane's H+ conductance, allowing protons to leak down their existing electrochemical gradient — it does not actively pump ions against a gradient (that would require its own energy source, which would be self-defeating for a protein whose entire job is to dissipate the gradient)."
+          - letter: "Q5.4"
+            text: "The results from this experiment suggest that UCP1 is the most important UCP for non-shivering thermogenesis in response to cold."
+            answer: true
+            explanation: "TRUE. Fig.1 shows UCP1 mRNA is both the most highly expressed of the three UCPs at cold acclimation (18°C) and shows by far the largest fold-increase going from 30°C to 18°C — the strongest, most cold-responsive signal of the three."
+          - letter: "Q5.5"
+            text: "Patients taking DNP experience hypothermia as their cells are not able to generate energy."
+            answer: false
+            explanation: "FALSE. DNP uncouples oxidative phosphorylation, converting the energy of substrate oxidation into heat rather than ATP — cells still oxidise substrate (often at an accelerated rate to compensate), so the actual clinical picture of DNP overdose is dangerous HYPERTHERMIA, not hypothermia."
+          - letter: "Q5.6"
+            text: "A patient with mild DNP overdose can be treated by glucose administration."
+            answer: true
+            explanation: "TRUE per the official key. With oxidative phosphorylation uncoupled, cells become more reliant on substrate-level phosphorylation (glycolysis) to maintain ATP supply — providing glucose supports this compensatory glycolytic ATP production while the mitochondrial proton gradient remains dissipated."
+          - letter: "Q5.7"
+            text: "Mitochondrial uncoupling occurs under certain physiological conditions in animals."
+            answer: true
+            explanation: "TRUE. UCP1-mediated uncoupling in brown adipose tissue, described throughout this very question, is itself a normal, regulated physiological process (non-shivering thermogenesis) — not something that only happens pathologically."
+          - letter: "Q5.8"
+            text: "DNP reduces the oxygen consumption of cells."
+            answer: false
+            explanation: "FALSE. The opposite is true — because DNP makes ATP production inefficient, cells (and mitochondria) increase substrate oxidation and O2 consumption to try to compensate, which is exactly why DNP was historically (and dangerously) used as a weight-loss drug."
+          - letter: "Q5.9"
+            text: "DNP increases the pH in the mitochondrial intermembrane space."
+            answer: true
+            explanation: "TRUE. DNP lets H+ leak from the intermembrane space (where the proton-pumping electron transport chain has concentrated them, making it acidic) back down its gradient into the matrix. Losing H+ from the intermembrane space raises its pH (makes it less acidic)."
+
+      - id: q6
+        number: "Q6"
+        name: "A Two-Polypeptide Gene with an Intron"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=14"
+        subjects:
+          - name: "DNA Structure & Replication"
+            link: "/resources/1-cell-molecular/dna-structure-replication/"
+        statements:
+          - letter: "Q6.1"
+            type: "numeric"
+            text: "The 58 bp locus shown codes for two different polypeptides and contains a short (8 bp) intron. How many nucleotides long would the final processed mRNA be (not including the 5' cap and 3' polyA tail)?"
+            expected: 50
+            tolerance: 0
+            explanation: "Splicing removes the 8-nucleotide intron from the 58-nucleotide pre-mRNA: 58 − 8 = 50 nucleotides."
+          - letter: "Q6.2"
+            type: "mcq"
+            text: "Which strand is used as the template in transcription for the shorter polypeptide — the strand shown reading 5'→3', or the strand shown reading 3'→5' (both read left to right as printed)?"
+            options: [{key: "A", text: "The strand shown reading 5'→3' (top row as printed)"}, {key: "B", text: "The strand shown reading 3'→5' (bottom row as printed)"}]
+            answer: "A"
+            explanation: "RNA polymerase always reads its template 3'→5' while synthesising mRNA 5'→3'. Translating the resulting mRNA against the genetic code (starting from the first available ATG) only produces a sensible open reading frame — ending in an in-frame stop codon at a position consistent with the rest of the question — when the strand printed reading 5'→3' serves as the template, so that the actual coding (sense) sequence is complementary to it."
+          - letter: "Q6.3"
+            type: "numeric"
+            text: "What is the ratio of the numbers of amino acids in the longer/shorter polypeptide (including the amino acid built in because of the START codon)? Give your answer to the nearest second decimal place."
+            expected: 1.25
+            tolerance: 0.02
+            explanation: "Translating from the first ATG: the spliced (intron-removed) transcript encodes a 10-residue polypeptide before its stop codon, while the intron-retained transcript shifts into a different downstream frame and terminates earlier, at 8 residues. 10 / 8 = 1.25."
+          - letter: "Q6.4"
+            type: "free_response"
+            text: "What is the third amino acid of the shorter polypeptide, if the initiator Met is counted as the first? Give the one-letter amino acid code."
+            modelAnswer: "L (Leucine)"
+            explanation: "The shorter polypeptide's first three codons translate to Met–Arg–Leu, so its third residue is Leucine (L)."
+          - letter: "Q6.5"
+            type: "mcq"
+            text: "The C:G base pair underlined in the sequence was changed to an A:T base pair, creating a mutant form of this gene. What kind of mutation would this be for the shorter polypeptide?"
+            options: [{key: "A", text: "A frameshift mutation"}, {key: "B", text: "A nonsense mutation"}, {key: "C", text: "A silent mutation"}, {key: "D", text: "A missense mutation"}]
+            answer: "D"
+            explanation: "A single base substitution within a codon that is neither synonymous (same amino acid) nor a premature stop simply swaps in a different amino acid at that position — the definition of a missense mutation. It doesn't shift the reading frame (only one base changes, not an insertion/deletion) and it isn't silent (the codon identity changes) or nonsense (no stop codon is created here)."
+
+      - id: q7
+        number: "Q7"
+        name: "Thermus szegediensis — Nutrition and Complementation"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=15"
+        subjects:
+          - name: "Cell Theory, Prokaryotes & Eukaryotes"
+            link: "/resources/1-cell-molecular/cell-theory-prokaryotes-eukaryotes/"
+        statements:
+          - letter: "Q7.1"
+            type: "mcq"
+            text: "A microbiology lab studies Thermus szegediensis, isolated from a thermal spring. It was grown under different combinations of light and glucose (all other nutrients, including thermal water salts, always present) — see Table 1 on the exam page. It grew in all four conditions, including with neither light nor glucose. Which of the following best describes T. szegediensis?"
+            options: [{key: "A", text: "Photoautotroph"}, {key: "B", text: "Chemoautotroph"}, {key: "C", text: "Photoheterotroph"}, {key: "D", text: "Chemoheterotroph"}]
+            answer: "B"
+            explanation: "Growth with neither light nor glucose rules out a dependence on either photosynthesis or an organic carbon/energy source — it must derive both energy and carbon from inorganic sources (likely reduced inorganic compounds in the thermal water), the definition of a chemoautotroph."
+          - letter: "Q7.2"
+            type: "mcq"
+            text: "Which of the following does T. szegediensis most likely use as an energy source to produce complex organic compounds?"
+            options: [{key: "A", text: "SO4^2-"}, {key: "B", text: "Light"}, {key: "C", text: "H2S"}, {key: "D", text: "NO3^-"}, {key: "E", text: "H2O"}, {key: "F", text: "Chlorophyll"}, {key: "G", text: "lactic acid"}]
+            answer: "C"
+            explanation: "As a chemoautotroph isolated from a sulfur-rich thermal spring environment, T. szegediensis most plausibly oxidises a reduced sulfur compound like H2S for energy — classic chemolithotrophic metabolism seen in many thermophiles."
+          - letter: "Q7.3 (M1)"
+            type: "mcq"
+            text: "The lab isolated 6 mutants (M1–M6) unable to grow at 56°C and tested pairwise complementation (Table 2). A mutant that still fails to grow even when crossed with WT reveals a dominant mutation; one that grows when crossed with WT is recessive. Classify M1."
+            options: [{key: "A", text: "Dominant"}, {key: "B", text: "Recessive"}]
+            answer: "B"
+            explanation: "M1 × WT grows (+), so a single WT copy rescues the phenotype — recessive."
+          - letter: "Q7.3 (M2)"
+            type: "mcq"
+            text: "Classify M2 as dominant or recessive."
+            options: [{key: "A", text: "Dominant"}, {key: "B", text: "Recessive"}]
+            answer: "A"
+            explanation: "M2 × WT still fails to grow (−) — a WT copy cannot rescue it, so the mutation is dominant. M2 is the only one of the six mutants with this property."
+          - letter: "Q7.3 (M3)"
+            type: "mcq"
+            text: "Classify M3 as dominant or recessive."
+            options: [{key: "A", text: "Dominant"}, {key: "B", text: "Recessive"}]
+            answer: "B"
+            explanation: "M3 × WT grows (+) — recessive."
+          - letter: "Q7.3 (M4)"
+            type: "mcq"
+            text: "Classify M4 as dominant or recessive."
+            options: [{key: "A", text: "Dominant"}, {key: "B", text: "Recessive"}]
+            answer: "B"
+            explanation: "M4 × WT grows (+) — recessive."
+          - letter: "Q7.3 (M5)"
+            type: "mcq"
+            text: "Classify M5 as dominant or recessive."
+            options: [{key: "A", text: "Dominant"}, {key: "B", text: "Recessive"}]
+            answer: "B"
+            explanation: "M5 × WT grows (+) — recessive."
+          - letter: "Q7.3 (M6)"
+            type: "mcq"
+            text: "Classify M6 as dominant or recessive."
+            options: [{key: "A", text: "Dominant"}, {key: "B", text: "Recessive"}]
+            answer: "B"
+            explanation: "M6 × WT grows (+) — recessive."
+          - letter: "Q7.4"
+            type: "free_response"
+            text: "From the data in Table 2, at least how many different genes can you identify as being important for allowing T. szegediensis to exist at high temperatures?"
+            modelAnswer: "2 or 3 (both accepted by the official key)"
+            explanation: "Among the five recessive mutants, pairwise complementation groups them as {M1, M4} (fail to complement each other — same gene) and {M3, M5, M6} (all mutually fail to complement — same gene), giving 2 genes among the recessive set. M2's dominant mutation can't be placed into either group by standard complementation testing, so it's counted as a plausible third, distinct gene — hence '2 or 3' both earn credit."
+          - letter: "Q7.5"
+            type: "free_response"
+            text: "Indicate which mutants have mutations in the same genes (based on Table 2's complementation results)."
+            modelAnswer: "M1 and M4 share a gene. M3, M5 and M6 all share a (different) gene. M2 (dominant) and the recessive-only pairs above are the two identifiable groups."
+            explanation: "Failure to complement (\"−\") means two mutations are in the same gene. M1×M4 = −, so they share a gene. M3×M5, M3×M6 and M5×M6 are all −, so M3/M5/M6 all share a (different) gene. Every other pairwise cross among the recessive mutants is \"+\" (complementation, i.e. different genes), consistent with exactly these two groups."
+
+      - id: q8
+        number: "Q8"
+        name: "Beadle & Tatum — One Gene, One Enzyme"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=17"
+        subjects:
+          - name: "Mendel's Laws & Probability in Genetics"
+            link: "/resources/7-genetics/mendelian-inheritance-probability/"
+        statements:
+          - letter: "Q8.1 (colony 1)"
+            text: "Colony 1 has the same nutritional requirements as WT (grows on minimal medium alone, no supplement needed)."
+            answer: true
+            explanation: "Colony 1 appears on Legend 2 (plain minimal medium) — it needs no supplement, exactly like wild-type."
+          - letter: "Q8.1 (colony 2)"
+            text: "Colony 2 has the same nutritional requirements as WT."
+            answer: false
+            explanation: "Colony 2 does not appear on Legend 2 (minimal medium) — it's auxotrophic, unlike WT."
+          - letter: "Q8.1 (colony 3)"
+            text: "Colony 3 has the same nutritional requirements as WT."
+            answer: false
+            explanation: "Colony 3 is absent from Legend 2 — it requires a supplement (appears with phenylalanine, Legend 3)."
+          - letter: "Q8.1 (colony 4)"
+            text: "Colony 4 has the same nutritional requirements as WT."
+            answer: false
+            explanation: "Colony 4 is absent from Legend 2 — it requires a supplement (appears with leucine and arginine)."
+          - letter: "Q8.1 (colony 5)"
+            text: "Colony 5 has the same nutritional requirements as WT."
+            answer: false
+            explanation: "Colony 5 is absent from Legend 2 — it requires phenylalanine to grow."
+          - letter: "Q8.1 (colony 6)"
+            text: "Colony 6 has the same nutritional requirements as WT."
+            answer: false
+            explanation: "Colony 6 is absent from Legend 2 — it requires arginine to grow."
+          - letter: "Q8.1 (colony 7)"
+            text: "Colony 7 has the same nutritional requirements as WT."
+            answer: true
+            explanation: "Colony 7 grows on every single medium shown, including plain minimal medium (Legend 2) — same as WT."
+          - letter: "Q8.1 (colony 8)"
+            text: "Colony 8 has the same nutritional requirements as WT."
+            answer: false
+            explanation: "Colony 8 is absent from Legend 2 — it requires leucine to grow."
+          - letter: "Q8.2 (colony 1)"
+            text: "Colony 1 would be useful for discovering genes involved in the arginine synthesis pathway (i.e. it needs arginine specifically, and grows on minimal medium only when arginine is added, not otherwise)."
+            answer: false
+            explanation: "Colony 1 grows on plain minimal medium already (see Q8.1) — it isn't an arginine auxotroph, so it's uninformative for this purpose."
+          - letter: "Q8.2 (colony 4)"
+            text: "Colony 4 would be useful for discovering genes involved in the arginine synthesis pathway."
+            answer: true
+            explanation: "Colony 4 fails on plain minimal medium but grows once arginine is added (Legend 5) — a specific arginine auxotroph, exactly the kind of mutant used to dissect this pathway."
+          - letter: "Q8.2 (colony 6)"
+            text: "Colony 6 would be useful for discovering genes involved in the arginine synthesis pathway."
+            answer: true
+            explanation: "Colony 6 fails on plain minimal medium but grows once arginine is added (Legend 5) — the same reasoning as colony 4."
+          - letter: "Q8.2 (colony 7)"
+            text: "Colony 7 would be useful for discovering genes involved in the arginine synthesis pathway."
+            answer: false
+            explanation: "Colony 7 already grows on plain minimal medium (see Q8.1) — it isn't an arginine auxotroph, so it's uninformative for this purpose."
+          - letter: "Q8.3 (colony 2)"
+            text: "In Fig.2 (Legend 1 = Rich Medium, Legend 2 = Rich Medium without Arginine), colony 2 cannot produce its own arginine."
+            answer: true
+            explanation: "Colony 2 grows on rich medium (Legend 1) but disappears once arginine is withheld (Legend 2) — it can't synthesise its own arginine and depends on it being supplied."
+          - letter: "Q8.3 (colony 3)"
+            text: "In Fig.2, colony 3 cannot produce its own arginine."
+            answer: true
+            explanation: "Colony 3 grows on rich medium but is absent once arginine is removed — an arginine auxotroph."
+          - letter: "Q8.3 (colony 4)"
+            text: "In Fig.2, colony 4 cannot produce its own arginine."
+            answer: false
+            explanation: "Colony 4 still grows even without arginine in Fig.2 — it can make its own, so this figure's mutants must involve a different step/gene than colony 4's original defect."
+          - letter: "Q8.3 (colony 5)"
+            text: "In Fig.2, colony 5 cannot produce its own arginine."
+            answer: true
+            explanation: "Colony 5 grows on rich medium but disappears once arginine is withheld — an arginine auxotroph."
+          - letter: "Q8.3 (colony 8)"
+            text: "In Fig.2, colony 8 cannot produce its own arginine."
+            answer: true
+            explanation: "Colony 8 grows on rich medium but disappears once arginine is withheld — an arginine auxotroph."
+          - letter: "Q8.4"
+            type: "numeric"
+            text: "A different set of 9 haploid yeast strains, each with a single mutation in the amino acid production pathway, were crossed pairwise to make diploids and tested for growth on medium lacking the amino acid (Table 1 on the exam page; \"−\" = no growth = failure to complement). Based on these results, at least how many genes are involved in this synthesis pathway?"
+            expected: 4
+            tolerance: 0
+            explanation: "The complementation table resolves into four groups: {1, 7}, {2, 4, 6, 8}, {3, 9}, and {5} alone (strain 5 complements every other strain, including itself only trivially on the diagonal) — four distinct genes."
+
+      - id: q9
+        number: "Q9"
+        name: "Bulb1/Bulb2 and the UV-B Response in Arabidopsis"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=19"
+        subjects:
+          - name: "Photoperiodism, Vernalization & Flowering"
+            link: "/resources/5-plant-physiology/photoperiodism-vernalization-flowering/"
+        statements:
+          - letter: "Q9.1"
+            type: "numeric"
+            text: "Bulb1 and Bulb2 are transcription factors involved in the UV-B survival response in Arabidopsis. RNA extracted from plant tissue was dissolved in 20 µl of buffer. A 2 µl aliquot was diluted to 1 ml, and its absorbance at 260 nm was 0.046. Given that a 40 µg/ml RNA solution gives an absorbance of 1.0 at 260 nm, calculate the concentration of the ORIGINAL (undiluted) stock solution, in µg/ml."
+            expected: 920
+            tolerance: 5
+            explanation: "The diluted sample's concentration is (0.046 / 1.0) × 40 = 1.84 µg/ml. The dilution was 2 µl → 1000 µl, a 500-fold dilution, so the original stock was 1.84 × 500 = 920 µg/ml."
+          - letter: "Q9.2"
+            type: "numeric"
+            text: "Each experiment requires 2 µg of RNA. What volume of the stock solution (920 µg/ml) would be needed? Give your answer in µl, to two decimal places."
+            expected: 2.17
+            tolerance: 0.02
+            explanation: "920 µg/ml = 0.92 µg/µl. Volume needed = 2 µg ÷ 0.92 µg/µl ≈ 2.17 µl."
+          - letter: "Q9.3"
+            type: "numeric"
+            text: "How many experiments could the researchers conceivably carry out with the original 20 µl stock of RNA?"
+            expected: 9
+            tolerance: 0
+            explanation: "20 µl ÷ 2.17 µl per experiment ≈ 9.2 — only 9 whole experiments can actually be carried out with the stock on hand."
+          - letter: "Q9.4 (box 1)"
+            type: "mcq"
+            text: "The RNA samples were used to measure bulb2 transcript levels by qPCR in WT and Bulb1-/- plants exposed to UV-B for various times (Fig.1A) — bulb2 transcript rises sharply with UV-B exposure in WT but stays flat in Bulb1-/- plants. Separately, Bulb1 and Bulb2 PROTEIN levels were assessed by blot in WT over a UV-B time-course (Fig.1B) — Bulb1 protein stays constant throughout, while Bulb2 protein only appears after UV-B exposure and increases over time. Build a 3-step model: UV-B → [box 1] → [box 2] → [box 3] → UV protection. What is box 1?"
+            options: [{key: "A", text: "Bulb1 transcription"}, {key: "B", text: "Bulb2 transcription"}, {key: "C", text: "Bulb1 translation"}, {key: "D", text: "Bulb2 translation"}, {key: "E", text: "Bulb1 degradation"}, {key: "F", text: "Bulb2 degradation"}, {key: "G", text: "Bulb1 nuclear translocation"}, {key: "H", text: "Bulb2 nuclear translocation"}]
+            answer: "G"
+            explanation: "Bulb1 protein LEVEL doesn't change with UV-B (Fig.1B), so UV-B can't be acting on Bulb1 transcription, translation, or degradation — yet Bulb1 is clearly required for the downstream response (it's lost entirely in Bulb1-/- plants). The only remaining way UV-B could activate already-present Bulb1 is by triggering its movement into the nucleus, where it can act as a transcription factor."
+          - letter: "Q9.4 (box 2)"
+            type: "mcq"
+            text: "What is box 2 in the pathway (UV-B → Bulb1 nuclear translocation → [box 2] → [box 3] → UV protection)?"
+            options: [{key: "A", text: "Bulb1 transcription"}, {key: "B", text: "Bulb2 transcription"}, {key: "C", text: "Bulb1 translation"}, {key: "D", text: "Bulb2 translation"}, {key: "E", text: "Bulb1 degradation"}, {key: "F", text: "Bulb2 degradation"}, {key: "G", text: "Bulb1 nuclear translocation"}, {key: "H", text: "Bulb2 nuclear translocation"}]
+            answer: "B"
+            explanation: "Fig.1A shows bulb2 transcript levels rise sharply after UV-B in WT but not in Bulb1-/- plants — Bulb1 (now in the nucleus) is required to drive bulb2 transcription."
+          - letter: "Q9.4 (box 3)"
+            type: "mcq"
+            text: "What is box 3 in the pathway (UV-B → Bulb1 nuclear translocation → Bulb2 transcription → [box 3] → UV protection)?"
+            options: [{key: "A", text: "Bulb1 transcription"}, {key: "B", text: "Bulb2 transcription"}, {key: "C", text: "Bulb1 translation"}, {key: "D", text: "Bulb2 translation"}, {key: "E", text: "Bulb1 degradation"}, {key: "F", text: "Bulb2 degradation"}, {key: "G", text: "Bulb1 nuclear translocation"}, {key: "H", text: "Bulb2 nuclear translocation"}]
+            answer: "D"
+            explanation: "Fig.1B shows Bulb2 protein only appears after UV-B exposure, following the rise in its transcript — i.e. the new transcript is translated into Bulb2 protein, which then goes on to confer UV protection."
+
+      - id: q10
+        number: "Q10"
+        name: "Pressure and Volume Changes During Breathing"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=21"
+        subjects:
+          - name: "Respiratory Physiology"
+            link: "/resources/3-animal-physiology/respiratory-physiology/"
+        statements:
+          - letter: "Q10.1"
+            type: "mcq"
+            text: "The graph shows three curves (A, B, C) and two phases (I, II) during a breathing cycle. Every symbol matches at most one description below; some descriptions match none of the symbols (mark those \"no match\"). What matches \"volume changes of the intrapleural space during breathing\"?"
+            options: [{key: "A", text: "Curve A"}, {key: "B", text: "Curve B"}, {key: "C", text: "Curve C"}, {key: "I", text: "Phase I"}, {key: "II", text: "Phase II"}, {key: "O", text: "No match"}]
+            answer: "O"
+            explanation: "The intrapleural space's volume doesn't meaningfully change during normal breathing in the way this graph tracks — only its pressure does (see Q10.5). No curve on this graph represents it."
+          - letter: "Q10.2"
+            type: "mcq"
+            text: "What matches \"inhalation phase of breathing\"?"
+            options: [{key: "A", text: "Curve A"}, {key: "B", text: "Curve B"}, {key: "C", text: "Curve C"}, {key: "I", text: "Phase I"}, {key: "II", text: "Phase II"}, {key: "O", text: "No match"}]
+            answer: "I"
+            explanation: "Phase I is where lung volume (curve C) is rising and alveolar pressure (curve A) is at or below atmospheric — consistent with air being drawn in, i.e. inhalation."
+          - letter: "Q10.3"
+            type: "mcq"
+            text: "What matches \"pressure change in the lungs (alveolar pressure) during breathing\"?"
+            options: [{key: "A", text: "Curve A"}, {key: "B", text: "Curve B"}, {key: "C", text: "Curve C"}, {key: "I", text: "Phase I"}, {key: "II", text: "Phase II"}, {key: "O", text: "No match"}]
+            answer: "A"
+            explanation: "Curve A oscillates around the atmospheric baseline (760 mmHg) — dipping slightly below during inhalation (drawing air in) and rising above during exhalation (pushing air out) — the signature of alveolar/lung pressure."
+          - letter: "Q10.4"
+            type: "mcq"
+            text: "What matches \"pressure change in the left ventricle of the heart during breathing\"?"
+            options: [{key: "A", text: "Curve A"}, {key: "B", text: "Curve B"}, {key: "C", text: "Curve C"}, {key: "I", text: "Phase I"}, {key: "II", text: "Phase II"}, {key: "O", text: "No match"}]
+            answer: "O"
+            explanation: "This graph shows respiratory mechanics only — no curve represents cardiac (left ventricular) pressure."
+          - letter: "Q10.5"
+            type: "mcq"
+            text: "What matches \"pressure change of the intrapleural space during breathing\"?"
+            options: [{key: "A", text: "Curve A"}, {key: "B", text: "Curve B"}, {key: "C", text: "Curve C"}, {key: "I", text: "Phase I"}, {key: "II", text: "Phase II"}, {key: "O", text: "No match"}]
+            answer: "B"
+            explanation: "Curve B stays below atmospheric pressure throughout (always negative relative to 760 mmHg), consistent with intrapleural pressure — which is always sub-atmospheric and fluctuates modestly rather than swinging as widely as alveolar pressure or volume."
+          - letter: "Q10.6"
+            type: "mcq"
+            text: "What matches \"volume change of the lung during breathing\"?"
+            options: [{key: "A", text: "Curve A"}, {key: "B", text: "Curve B"}, {key: "C", text: "Curve C"}, {key: "I", text: "Phase I"}, {key: "II", text: "Phase II"}, {key: "O", text: "No match"}]
+            answer: "C"
+            explanation: "Curve C rises through phase I (inhalation fills the lungs) and falls through phase II (exhalation empties them), reaching its lowest point right at the end of exhalation — exactly the expected shape for lung volume."
+          - letter: "Q10.7"
+            type: "mcq"
+            text: "What matches \"exhalation phase of breathing\"?"
+            options: [{key: "A", text: "Curve A"}, {key: "B", text: "Curve B"}, {key: "C", text: "Curve C"}, {key: "I", text: "Phase I"}, {key: "II", text: "Phase II"}, {key: "O", text: "No match"}]
+            answer: "II"
+            explanation: "Phase II is where lung volume (curve C) is falling and alveolar pressure (curve A) rises above atmospheric — air is being pushed out, i.e. exhalation."
+          - letter: "Q10.8"
+            type: "mcq"
+            text: "What matches \"volume change of the abdominal cavity during breathing\"?"
+            options: [{key: "A", text: "Curve A"}, {key: "B", text: "Curve B"}, {key: "C", text: "Curve C"}, {key: "I", text: "Phase I"}, {key: "II", text: "Phase II"}, {key: "O", text: "No match"}]
+            answer: "O"
+            explanation: "This graph tracks lung/pleural mechanics only — no curve represents abdominal cavity volume, even though diaphragm movement during breathing does affect it in reality."

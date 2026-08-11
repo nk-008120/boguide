@@ -6,13 +6,19 @@ strength (deterrent vs. real enforcement), and what's deliberately been
 left for later. Read `context/bioclash-mb01-exam-mechanism.md` first if
 you haven't — this doc assumes that architecture.
 
-**Status: same as the rest of the delivery mechanism — code-complete,
-locally syntax/logic-verified, NOT yet run against a real Supabase
-project.** Migration 010 (below) has not been executed. The
-single-active-session feature in particular needs a real two-tab test
-against a live attempt before this goes anywhere near a student — the
-logic has been traced through by hand and in isolated simulation, not
-observed end-to-end.
+**Status: CONFIRMED migration 010 was not run** — this is no longer a
+theoretical caveat. The founder deployed and hit a real production 500 on
+`start-attempt` (`PGRST204: Could not find the 'active_session_claimed_at'
+column`) because this migration's columns didn't exist yet. Fix
+instructions were given (run 009 then 010 in the Supabase SQL editor, then
+`NOTIFY pgrst, 'reload schema';`) but **not yet confirmed working** — a
+fresh session should verify this actually resolved before trusting
+anything else here. See `context/bioclash-mb01-exam-mechanism.md`'s own
+top section for the full incident writeup (kept there, not duplicated).
+Once the migration is confirmed applied, the single-active-session feature
+still needs a real two-tab test against a live attempt — the logic has
+been traced through by hand and in isolated simulation, not observed
+end-to-end.
 
 ---
 

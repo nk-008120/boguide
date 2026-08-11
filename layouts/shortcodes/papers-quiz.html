@@ -1,7 +1,24 @@
-{{- /* Attempt-and-mark True/False quiz, data-driven from data/papers/<ol>/<year>.yaml.
+{{- /* Attempt-and-mark quiz, data-driven from data/papers/<ol>/<year>.yaml.
      Usage: {{< papers-quiz olympiad="ibo" year="2022" round="theoretical-1" problem="q1" >}}
-     Looks up problems[].statements (letter/text/answer/explanation) for the given
-     problem id — single source of truth shared with any future exam/attempt mode. */ -}}
+     Looks up problems[].statements for the given problem id — single source
+     of truth shared with any future exam/attempt mode.
+
+     Each statement supports an optional `type` field (added 2026-08-11 for
+     IBO 2019, whose questions are far more heterogeneous than 2022/2024's
+     uniform 4-statement TRUE/FALSE format) — omitted/absent means
+     "true_false", so every pre-existing exam's data needs zero changes:
+       - true_false (default): letter, text, answer (bool), explanation
+       - mcq: letter, text, options: [{key, text}], answer (an option key),
+         explanation. Also used for "matching"-style questions from the
+         source exam (e.g. "assign each of 5 slots one of 3 category
+         letters") — each slot becomes its own mcq statement sharing the
+         same options list, rather than inventing a separate matching type.
+       - numeric: letter, text, expected (number), tolerance (number,
+         default 0), unit (optional, shown after the input), explanation
+       - free_response: letter, text, modelAnswer, explanation (optional).
+         Not graded right/wrong (the source exam gives a descriptive model
+         answer, not a single checkable value) — revealed on its own,
+         independent of Check Answers, and excluded from the score. */ -}}
 {{- $olId := .Get "olympiad" -}}
 {{- $yearId := .Get "year" -}}
 {{- $roundId := .Get "round" -}}
@@ -16,13 +33,39 @@
 <div class="tf-quiz-wrap" data-quiz-id="{{ $olId }}-{{ $yearId }}-{{ $roundId }}-{{ $problemId }}">
   <div class="tf-quiz">
     {{- range $statements }}
-    <div class="tf-quiz-row" data-answer="{{ .answer }}" data-explanation="{{ .explanation }}">
+    {{- $type := .type | default "true_false" -}}
+    <div class="tf-quiz-row" data-type="{{ $type }}"
+         {{- if eq $type "numeric" }} data-expected="{{ .expected }}" data-tolerance="{{ .tolerance | default 0 }}"
+         {{- else }} data-answer="{{ .answer }}"{{ end }}
+         data-explanation="{{ .explanation }}">
       <div class="tf-quiz-statement"><span class="tf-quiz-letter">{{ .letter }}.</span> {{ .text }}</div>
+
+      {{- if eq $type "mcq" }}
+      <div class="tf-quiz-toggle tf-quiz-mcq" role="group" aria-label="Statement {{ .letter }}">
+        {{- range .options }}
+        <button type="button" class="tf-btn tf-btn-mcq" data-value="{{ .key }}">{{ .key }}) {{ .text }}</button>
+        {{- end }}
+      </div>
+      <div class="tf-quiz-feedback"></div>
+
+      {{- else if eq $type "numeric" }}
+      <div class="tf-quiz-numeric">
+        <input type="number" step="any" class="tf-numeric-input" placeholder="Your answer">
+        {{- with .unit }}<span class="tf-numeric-unit">{{ . }}</span>{{ end }}
+      </div>
+      <div class="tf-quiz-feedback"></div>
+
+      {{- else if eq $type "free_response" }}
+      <button type="button" class="tf-btn tf-reveal-btn">Reveal Model Answer</button>
+      <div class="tf-quiz-feedback tf-model-answer" hidden>{{ .modelAnswer }}{{ with .explanation }} — {{ . }}{{ end }}</div>
+
+      {{- else }}
       <div class="tf-quiz-toggle" role="group" aria-label="Statement {{ .letter }}">
         <button type="button" class="tf-btn" data-value="true">TRUE</button>
         <button type="button" class="tf-btn" data-value="false">FALSE</button>
       </div>
       <div class="tf-quiz-feedback"></div>
+      {{- end }}
     </div>
     {{- end }}
   </div>
@@ -37,8 +80,24 @@
   var wrap = document.currentScript.previousElementSibling;
   if (!wrap || !wrap.classList.contains('tf-quiz-wrap')) return;
   var rows = wrap.querySelectorAll('.tf-quiz-row');
+  var gradableRows = Array.prototype.filter.call(rows, function (r) { return r.dataset.type !== 'free_response'; });
 
   rows.forEach(function (row) {
+    var type = row.dataset.type;
+
+    if (type === 'free_response') {
+      var revealBtn = row.querySelector('.tf-reveal-btn');
+      var answerBox = row.querySelector('.tf-model-answer');
+      revealBtn.addEventListener('click', function () {
+        answerBox.hidden = !answerBox.hidden;
+        revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+      });
+      return; // not part of the toggle/select/submit flow below
+    }
+
+    if (type === 'numeric') return; // no click-to-select state, just an input
+
+    // true_false and mcq both work the same way: a row of buttons, click to select.
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -53,16 +112,32 @@
 
   wrap.querySelector('.tf-quiz-submit').addEventListener('click', function () {
     var correct = 0, allAnswered = true;
-    rows.forEach(function (row) {
-      var sel = row.dataset.selected;
+    gradableRows.forEach(function (row) {
+      var type = row.dataset.type;
       var fb = row.querySelector('.tf-quiz-feedback');
-      if (!sel) {
+      var isCorrect, hasAnswer;
+
+      if (type === 'numeric') {
+        var raw = row.querySelector('.tf-numeric-input').value;
+        hasAnswer = raw !== '';
+        if (hasAnswer) {
+          var val = parseFloat(raw);
+          var expected = parseFloat(row.dataset.expected);
+          var tolerance = parseFloat(row.dataset.tolerance) || 0;
+          isCorrect = !isNaN(val) && Math.abs(val - expected) <= tolerance;
+        }
+      } else {
+        var sel = row.dataset.selected;
+        hasAnswer = !!sel;
+        if (hasAnswer) isCorrect = sel === row.dataset.answer;
+      }
+
+      if (!hasAnswer) {
         allAnswered = false;
         row.classList.add('unanswered');
         return;
       }
       row.classList.remove('unanswered');
-      var isCorrect = sel === row.dataset.answer;
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
@@ -70,7 +145,7 @@
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered
-      ? 'Score: ' + correct + ' / ' + rows.length
+      ? 'Score: ' + correct + ' / ' + gradableRows.length
       : 'Answer every statement first.';
   });
 
@@ -78,8 +153,13 @@
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
-      row.querySelector('.tf-quiz-feedback').textContent = '';
+      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      if (row.dataset.type === 'numeric') {
+        var input = row.querySelector('.tf-numeric-input');
+        if (input) input.value = '';
+      }
+      var fb = row.querySelector('.tf-quiz-feedback');
+      if (fb && !fb.classList.contains('tf-model-answer')) fb.textContent = '';
     });
     wrap.querySelector('.tf-quiz-score').textContent = '';
   });

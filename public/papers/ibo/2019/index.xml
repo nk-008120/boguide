@@ -1,0 +1,153 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BiOGuide for Biology Olympiads – IBO 2019</title>
+    <link>http://localhost:1313/papers/ibo/2019/</link>
+    <description>Recent content in IBO 2019 on BiOGuide for Biology Olympiads</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="http://localhost:1313/papers/ibo/2019/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Theoretical A</title>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/</guid>
+      <description>
+        
+        
+        &lt;div class=&#34;biorchive-bg-layer&#34; aria-hidden=&#34;true&#34;&gt;&lt;/div&gt;
+
+&lt;p class=&#34;papers-summary&#34;&gt;Practice mode only for now — this exam&#39;s questions are too varied in format (labeling, multi-select matching, short-answer calculations, free-response) for the timed-attempt mode, which currently only scores simple TRUE/FALSE statements. Use each problem&#39;s own quiz to check your answers.&lt;/p&gt;
+&lt;div class=&#34;papers-paperlinks&#34;&gt;
+  &lt;div class=&#34;papers-paper-row&#34;&gt;&lt;span class=&#34;papers-paper-category&#34;&gt;Theoretical A&lt;/span&gt;
+    &lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Exam&lt;/a&gt;
+    &lt;a class=&#34;papers-pill papers-pill-solution&#34; href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Official Answer Key (Practicals &amp;#43; Theoretical Exams)&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;papers-search&#34;&gt;
+  &lt;input type=&#34;text&#34; id=&#34;papers-problem-filter&#34; class=&#34;papers-search-input&#34; placeholder=&#34;Filter problems…&#34; autocomplete=&#34;off&#34;&gt;
+&lt;/div&gt;
+&lt;div class=&#34;papers-table-wrap&#34;&gt;
+&lt;table class=&#34;papers-problem-table&#34; id=&#34;papers-problem-table&#34;&gt;
+  &lt;thead&gt;&lt;tr&gt;&lt;th&gt;No.&lt;/th&gt;&lt;th&gt;Title&lt;/th&gt;&lt;th&gt;Subjects&lt;/th&gt;&lt;th&gt;Points&lt;/th&gt;&lt;th&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q1&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q1/&#34;&gt;C. elegans Apoptosis Gene Network&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/cell-junctions-ecm-cell-death/&#34;&gt;Cell Junctions, Extracellular Matrix &amp;amp; Cell Death&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q2&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q2/&#34;&gt;CLK Mutation and Circadian PER Oscillations&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/9-ethology/biological-rhythms/&#34;&gt;Biological Rhythms&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=6&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q3&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q3/&#34;&gt;GPCR Signalling and a Toxin Acting on the Gs Cycle&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/cell-signaling-communication/&#34;&gt;Cell Signaling &amp;amp; Communication&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q4&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q4/&#34;&gt;CDK Knockout and Liver Regeneration&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/cell-cycle-mitosis-meiosis/&#34;&gt;Cell Cycle, Mitosis &amp;amp; Meiosis&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=10&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q5&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q5/&#34;&gt;UCP Family and Non-Shivering Thermogenesis&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/comparative-thermoregulation/&#34;&gt;Comparative Thermoregulation&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=12&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q6&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q6/&#34;&gt;A Two-Polypeptide Gene with an Intron&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/dna-structure-replication/&#34;&gt;DNA Structure &amp;amp; Replication&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=14&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q7&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q7/&#34;&gt;Thermus szegediensis — Nutrition and Complementation&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/cell-theory-prokaryotes-eukaryotes/&#34;&gt;Cell Theory, Prokaryotes &amp;amp; Eukaryotes&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=15&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q8&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q8/&#34;&gt;Beadle &amp;amp; Tatum — One Gene, One Enzyme&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/7-genetics/mendelian-inheritance-probability/&#34;&gt;Mendel&amp;#39;s Laws &amp;amp; Probability in Genetics&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=17&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q9&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q9/&#34;&gt;Bulb1/Bulb2 and the UV-B Response in Arabidopsis&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/5-plant-physiology/photoperiodism-vernalization-flowering/&#34;&gt;Photoperiodism, Vernalization &amp;amp; Flowering&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=19&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class=&#34;papers-problem-row&#34;&gt;
+      &lt;td&gt;Q10&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q10/&#34;&gt;Pressure and Volume Changes During Breathing&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;div class=&#34;papers-subject-tags&#34;&gt;
+          &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/respiratory-physiology/&#34;&gt;Respiratory Physiology&lt;/a&gt;
+        &lt;/div&gt;&lt;/td&gt;
+      &lt;td&gt;—&lt;/td&gt;
+      &lt;td&gt;&lt;a class=&#34;papers-pill&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=21&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function () {
+  var input = document.getElementById(&#39;papers-problem-filter&#39;);
+  if (!input) return;
+  input.addEventListener(&#39;input&#39;, function () {
+    var q = input.value.toLowerCase();
+    document.querySelectorAll(&#39;#papers-problem-table .papers-problem-row&#39;).forEach(function (row) {
+      row.style.display = row.textContent.toLowerCase().indexOf(q) !== -1 ? &#39;&#39; : &#39;none&#39;;
+    });
+  });
+})();
+&lt;/script&gt;
+
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
