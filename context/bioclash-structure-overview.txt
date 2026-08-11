@@ -1,0 +1,353 @@
+BIOCLASH — COMPLETE STRUCTURE OVERVIEW
+For internal team-meeting use. Non-technical — focused on what matters to a
+SCORER, a TEST-TAKER, and a CREATOR. Written 2026-08-11.
+
+====================================================================
+GLOSSARY (a few recurring terms, defined once)
+====================================================================
+
+Season         — the full year's competition cycle (e.g. "2026-27 season").
+                 One champion is crowned per season.
+
+Round          — one individual timed competition within a season (e.g. the
+                 Cell Biology round, or the Full Syllabus Test). Each round
+                 is presented as a themed "Case File."
+
+Standardized   — a student's score compared against everyone else who took
+score /          the SAME round, rather than a raw percentage. Shows how far
+"Z-score"        above or below average a student performed. This is what
+                 lets an easy round and a hard round be compared fairly on
+                 one season ranking, instead of an easy round's scores
+                 looking artificially better.
+
+Non-recoverable — a question that, once answered and confirmed, can never be
+lock              revisited or changed. Used specifically for questions
+                  where the reveal of the correct answer (or related
+                  content) would spoil something else in the paper.
+
+Extension block — an optional +30 minutes a test-taker can request mid-round.
+                  Not free — it costs a small, pre-declared amount off that
+                  student's standardized score for the round.
+
+====================================================================
+1. WHAT BIOCLASH IS
+====================================================================
+
+BiOClash is BiOGuide's own original biology competition — not a reproduction
+of IBO/USABO papers (that's BiOrchive, a separate part of the site). Every
+question is written and reviewed in-house. Rounds are presented with a light
+Time Variance Authority / Loki-inspired narrative wrapper, but the actual
+academic content stays serious and exam-standard throughout — the theming is
+flavor at the edges, never inside the real questions.
+
+====================================================================
+2. THE SEASON CALENDAR
+====================================================================
+
+A season is made of EIGHT rounds: seven subject-focused rounds spread across
+the year, plus one capstone round covering everything.
+
+  Subject round               Season weight
+  ---------------------------------------------
+  Cell Biology                     20%,Sep
+  Animal Anatomy & Physiology      25%,Nov
+  Genetics & Evolution             20%,Jan
+  Plant Anatomy & Physiology       15%,Mar
+  Ecology                          10%,May
+  Ethology                          5%,May
+  Biosystematics                    5%,May
+  ---------------------------------------------
+  Full Syllabus Test (FST)        100%   <- the capstone, worth as much as
+                                            all seven subject rounds combined
+
+The FST opens roughly 3 weeks before IBO each year, with results announced
+about 1 week before IBO — its date moves with IBO's actual date each year,
+it isn't fixed to a calendar month.
+
+A student's contribution to the season ranking, from each round, is that
+round's standardized score multiplied by that round's weight above. These
+add up across every round a student took part in — a round not attempted
+simply contributes nothing, it isn't a penalty beyond the missed opportunity.
+
+====================================================================
+3. FOR TEST-TAKERS
+====================================================================
+
+STARTING A ROUND
+  Each round is open for a window before it closes to new starts — 3 days
+  for a subject round, a full week for the Full Syllabus round. A student
+  can begin any time within that window; once they click Start, their own
+  personal timer begins from that moment (not from when the window opened).
+
+TIME LIMITS
+  Subject rounds: 90 minutes.
+  Full Syllabus Test: 180 minutes (3 hours).
+  If more time is needed, a student can request up to three extra 30-minute
+  blocks DURING their attempt — but each block costs a small, pre-declared
+  amount off that student's standardized ranking for the round, and the
+  exact cost is always shown before they confirm. Finishing without needing
+  any extra time earns a small bonus, bigger if many other students in that
+  same round did need extra time.
+
+ONE CONTINUOUS SITTING
+  There is no pause/break feature. Once started, the clock runs until the
+  student submits or time runs out. Only one browser tab or device can hold
+  a given attempt open at a time — opening it elsewhere locks the original
+  one out.
+
+LOCKED, NON-RECOVERABLE QUESTIONS
+  Some questions must be answered and locked in permanently before a
+  student can continue — there's no going back to change them. These are
+  used specifically where the content that gets revealed next would give
+  away the correct answer if the student were still allowed to change it.
+
+CONTENT UNLOCKS PROGRESSIVELY
+  A student only ever sees what they've actually earned so far — later
+  parts of the paper aren't just hidden by styling, they genuinely don't
+  exist on the page yet. There's no way to scroll ahead and preview
+  upcoming questions.
+
+BEFORE SUBMITTING
+  A student must reach the very last page of the round at least once before
+  they're allowed to submit manually — meant to stop an accidental early
+  submit. The hard time limit still overrides this the moment it expires,
+  regardless.
+
+INTEGRITY COMMITMENTS
+  Before starting, a student checks off a list of individual commitments
+  (not one blanket agreement) — not switching tabs or windows, not taking
+  screenshots or recording the screen, waiting a few seconds after major
+  button clicks instead of clicking repeatedly, and recording their own
+  front camera for the whole attempt and uploading it afterward for
+  verification.
+
+HOW RESULTS ARE JUDGED
+  A result is NOT a raw percentage. It's standardized against everyone else
+  who took that same round (similar to how real olympiads often report
+  results), so an easy round and a hard round can be compared fairly on one
+  scale. Students should not compare a raw mark total directly against a
+  friend's — relative standing within the round is what actually counts.
+
+RESULTS TAKE TIME
+  Most marks come from free-response answers, graded by a person, not a
+  computer — results are never instant after submitting.
+
+====================================================================
+4. FOR SCORERS
+====================================================================
+
+WHEN GRADING STARTS
+  Once a round's window closes, every submitted (or timed-out) attempt is
+  ready to be graded.
+
+GRADING
+  Multiple-choice, true/false, and numeric questions can be checked
+  mechanically against the answer key. Free-response questions need a
+  human judgment call against that round's marking notes. Every correct
+  answer's mark value adds up into a student's RAW SCORE for the round.
+
+TURNING RAW SCORES INTO A RANKING
+  Raw scores are converted into a STANDARDIZED score relative to everyone
+  else who completed that same round — this reflects how far above or
+  below the round's own average a student performed, not a raw percentage.
+  This is what makes an easy round and a hard round comparable on one
+  scale later.
+
+  If a student used any extra-time blocks, that's factored in at this same
+  stage — using extra time costs a small, pre-declared amount off their
+  standardized score; finishing without needing any earns a small bonus.
+  This can only be done once every score in the round is known.
+
+  IMPORTANT: with a small number of test-takers (likely the case for most
+  rounds, especially early on), standardized scores can be sensitive to a
+  single unusually strong or weak result skewing everyone else's number.
+  Always sanity-check the spread of scores before treating them as final —
+  don't just run the numbers and publish blindly.
+
+SEASON WEIGHTING
+  Each round has a fixed weight toward the season standing (see the
+  calendar above). A student's contribution to the season ranking, per
+  round, is: that round's standardized score x that round's weight. These
+  sum across every round a student attempted that season.
+
+LEADERBOARDS
+  Every round gets its own permanent leaderboard once results are entered
+  — it never gets overwritten by a later round. Separately, there is ONE
+  cumulative season leaderboard, summing every round's weighted
+  contribution, which is the most prominent ranking on the site.
+
+STILL TO BUILD
+  A cross-submission similarity check for free-response answers (to catch
+  copied or collaborated answers) is planned but not built yet — it's
+  intentionally deferred until there's a real batch of multi-student
+  submissions to build and calibrate it against.
+
+THE MATH, BRIEFLY
+  For anyone who wants the actual formulas rather than just the plain-
+  English description above. Nothing here is code — just arithmetic a
+  scorer could work through by hand or in a spreadsheet.
+
+  Step 1 — Raw score.
+    raw_i = student i's total marks earned in round R. No formula, just
+    the sum of every component's marks that was graded correct.
+
+  Step 2 — Standardize into a Z-score, using the WHOLE field that
+  completed round R (n students):
+
+    mean_R  = (raw_1 + raw_2 + ... + raw_n) / n
+
+    stdev_R = square root of [ ((raw_1 - mean_R)^2 + (raw_2 - mean_R)^2
+              + ... + (raw_n - mean_R)^2) / n ]
+
+    z_i     = (raw_i - mean_R) / stdev_R
+
+    By construction, the Z-scores for any round always average to 0, with
+    a spread of 1 — that's what makes a Z-score from an easy round
+    directly comparable to a Z-score from a hard round, even though the
+    raw marks behind them mean completely different things.
+
+  Step 3 — Adjust for extension blocks used, to get the TIME-NORMALIZED
+  Z-score (the number that actually gets used everywhere else):
+
+    Let q = the fraction of round R's field that used ONE OR MORE
+    extension blocks (e.g. if 3 of 10 students used at least one block,
+    q = 0.3).
+
+    cost(blocks used)  = the round's pre-declared marginal cost, summed
+                          up through however many blocks that student
+                          used (e.g. a schedule of 0.10, then +0.20, then
+                          +0.35 means using all three blocks costs
+                          0.10 + 0.20 + 0.35 = 0.65 total)
+
+    bonus(blocks used) = a small fixed bonus amount x q, but ONLY for a
+                          student who used zero blocks — everyone else
+                          gets no bonus
+
+    time_normalized_z_i = z_i - cost(blocks used) + bonus(blocks used)
+
+  Step 4 — Roll every round a student attempted into one season number:
+
+    season_index = (round 1's weight x round 1's time-normalized Z)
+                  + (round 2's weight x round 2's time-normalized Z)
+                  + ... for every round attempted that season
+
+    A round never attempted simply isn't in the sum — no penalty term,
+    it just contributes zero.
+
+  A worked example (4 students, one round, illustrative numbers only):
+
+    Student | Raw  | Blocks used | Z      | Cost  | Bonus | Time-norm. Z
+    --------|------|--------------|--------|-------|-------|-------------
+    Alice   | 140  | 0            | +1.28  | 0     | +0.11 | +1.40
+    Carol   | 125  | 1            | +0.47  | -0.10 | 0     | +0.37
+    Bob     | 110  | 2            | -0.34  | -0.30 | 0     | -0.64
+    Dan     |  90  | 3            | -1.42  | -0.65 | 0     | -2.07
+
+    (Round mean here was 116.25, standard deviation 18.50, and 3 of the
+    4 students used at least one extension block, so q = 0.75 — that's
+    why Alice's zero-block bonus is fairly generous here: most of the
+    field needed extra time and she didn't.)
+
+  A note on small classes: for any round with n students, no single
+  Z-score can mathematically go beyond the square root of (n - 1). With
+  4 students that ceiling is about 1.73; with 10 it's 3; with 30 it's
+  about 5.4. Small rounds will often look "noisier" than this — one
+  unusually strong or weak result can swing everyone else's number more
+  than it would in a larger field. This is exactly why the "sanity-check
+  before publishing" note above matters.
+
+====================================================================
+5. FOR CREATORS
+====================================================================
+
+ROUND STRUCTURE
+  Each round is built as a "Case File" — a themed paper made of several
+  parts, each part covering a chunk of that round's subject scope.
+
+RECOVERABLE VS. NON-RECOVERABLE PARTS
+  A part can either stay freely revisable until final submission, or
+  contain "non-recoverable" questions that lock permanently the moment
+  they're answered. Use non-recoverable locks specifically where the next
+  reveal would spoil the correct answer if a student could still go back
+  and change it — not as a default for every question.
+
+QUESTION TYPES AVAILABLE
+  Multiple choice, true/false, numeric, free-response, plain
+  informational/context blocks (not questions, just required reading), and
+  one specialised type that dynamically asks "why is each of the OTHER
+  options wrong" based on whichever option the student actually picked —
+  useful specifically so there's never a predictable, un-asked-about
+  leftover option that gives the answer away by elimination.
+
+NOTHING IS VISIBLE BEFORE IT'S EARNED
+  A student never sees content before they've unlocked it — not hidden by
+  styling, genuinely absent until earned. When writing a round, be
+  deliberate about what a LATER part's setup or narrative text reveals —
+  wording that reads naturally can accidentally spoil an earlier
+  non-recoverable answer if it isn't checked carefully against everything
+  that comes before it.
+
+MARKS AND DURATION SHOULD MATCH
+  Every question carries an explicit mark value, and a round has a total
+  mark count. A round's time limit (90 minutes for a subject round, 180
+  for the Full Syllabus round, plus the extension mechanic on top) should
+  be scoped to roughly match how much content and how many marks the round
+  actually contains — not simply copied from a different round without
+  checking the fit. (Flagging this because the very first round built,
+  Cell Biology, has more content than its current 90-minute slot
+  comfortably fits — a known, unresolved sizing mismatch worth discussing,
+  not something to silently copy into future rounds.)
+
+WHO CAN ATTEMPT A ROUND
+  This has changed: rounds used to be restricted to one specific invited
+  account for internal testing. Now, once a round is live, ANY logged-in
+  site user can attempt it — going live is a real, public event now, not a
+  private test.
+
+ANSWER KEYS AND MARKING NOTES
+  Reference material used for grading a round must be kept somewhere a
+  student can never reach — never shipped to a student's device at any
+  point, even in a hidden or stripped-down form.
+
+====================================================================
+6. INTEGRITY & FAIR PLAY (shared context for everyone)
+====================================================================
+
+TWO HONEST CATEGORIES
+  Everything protecting the competition's integrity falls into one of two
+  categories, and the team should always know which is which internally,
+  even where students aren't told the difference:
+    - REAL, technical enforcement — e.g. content genuinely never being
+      sent to a student before it's earned, or a locked answer genuinely
+      being unchangeable afterward.
+    - AGREED-TO RULES with logging for review — e.g. the video-recording
+      requirement, the no-screenshot rule, or not closing the browser tab.
+      These rely on the student's honesty; a website cannot fully enforce
+      them. They still have real value (they raise the effort/risk of
+      casual cheating and create a record if a case needs review), but
+      they are not the same kind of guarantee as the first category.
+
+BIGGEST OPEN RISK
+  Nothing currently technically confirms that the person taking a round is
+  actually the enrolled student — this is a known, accepted trust-based
+  risk while the platform is still small. Worth revisiting if it ever
+  becomes a real, demonstrated problem, not something to solve
+  preemptively right now.
+
+NOTHING IS AUTO-PENALIZED
+  Every "soft" signal collected during an attempt (switching tabs,
+  losing the window's focus, closing the tab) is logged purely for a
+  human to optionally review later — none of it automatically changes a
+  student's score or standing.
+
+====================================================================
+7. RECOGNITION
+====================================================================
+
+  - Every round crowns its own top finishers and keeps that record
+    permanently, separate from every other round.
+  - Across the whole season, the cumulative standardized ranking crowns
+    one overall season champion — the single most prominent ranking shown
+    on the site.
+  - Top season finishers may be recognized with an honorary position on
+    the BiOGuide team.
