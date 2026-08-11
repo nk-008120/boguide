@@ -20,7 +20,7 @@
   // submit (see the honor-code text in content/bioclash/mb-01/attempt/
   // index.md for the matching policy wording). Not yet provided by the
   // founder — replace with the real Drive folder link before this goes live.
-  var RECORDING_UPLOAD_URL = 'TODO-REPLACE-WITH-DRIVE-LINK';
+  var RECORDING_UPLOAD_URL = 'https://drive.google.com/drive/folders/136k1ea_kkUrAxfDctoHwb2QdCqZFaqIH?usp=drive_link';
 
   // Force the BiOClash dark/glowing case-file look for the duration of an
   // attempt, overriding whatever theme (including "favourite," the sitewide
@@ -91,6 +91,7 @@
   var timerEl = document.getElementById('bioclash-attempt-timer');
   var bodyEl = document.getElementById('bioclash-attempt-body');
   var submitBtn = document.getElementById('bioclash-attempt-submit-btn');
+  var extendBtn = document.getElementById('bioclash-attempt-extend-btn');
   var watermarkEl = document.getElementById('bioclash-attempt-watermark');
 
   var state = {
@@ -104,7 +105,14 @@
     sessionToken: null,        // anti-cheat: single-active-session — see startHeartbeat()
     superseded: false,         // true once another tab/device has taken over
     totalPages: null,          // true total page count for the whole paper — see renderPartNav()
-    reachedFinalPageLocally: false // submit-gate — see renderBlocks()/doSubmit()
+    reachedFinalPageLocally: false, // submit-gate — see renderBlocks()/doSubmit()
+    extensionBlocksUsed: 0,     // live time-extension mechanic — see updateExtendButton()
+    maxExtensionBlocks: 0,
+    extensionBlockMinutes: 0,
+    extensionCostSchedule: [],
+    lockFlowActive: false      // true for the duration of a Lock & Continue click —
+                                // suppresses the screenshot-blur response to the
+                                // fullscreen exit that window.confirm() itself causes
   };
   var timerInterval = null;
   var heartbeatInterval = null;
@@ -199,6 +207,55 @@
     apiPost('/api/bioclash-heartbeat', { paperId: PAPER_ID, sessionToken: state.sessionToken, reachedFinalPage: true });
   }
 
+  // Live time-extension mechanic (2026-08-11) — see
+  // context/bioclash-season-points-plan.md for the full cost/bonus formula
+  // this feeds. Requesting a block only ever extends end_at (tickTimer()
+  // already reads state.endAt fresh every tick, so no other timer logic
+  // needs to change); the actual Z-score cost is computed later, post-
+  // round, by scripts/bioclash-score-round.js — this button only shows the
+  // PRE-DECLARED marginal cost so a student knows what they're committing
+  // to before asking for it, never a live/participation-dependent number
+  // (that isn't knowable until the round closes).
+  function updateExtendButton() {
+    if (!extendBtn) return;
+    var remaining = state.maxExtensionBlocks - state.extensionBlocksUsed;
+    if (!state.maxExtensionBlocks || remaining <= 0) {
+      extendBtn.hidden = true;
+      return;
+    }
+    var nextCost = state.extensionCostSchedule[state.extensionBlocksUsed];
+    extendBtn.hidden = false;
+    extendBtn.disabled = false;
+    extendBtn.textContent = '+' + state.extensionBlockMinutes + ' min' +
+      (nextCost != null ? ' (costs ~' + nextCost.toFixed(2) + ' Z)' : '');
+  }
+
+  function requestExtension() {
+    if (!extendBtn) return;
+    var nextCost = state.extensionCostSchedule[state.extensionBlocksUsed];
+    var warn = 'Requesting +' + state.extensionBlockMinutes + ' minutes will cost ' +
+      (nextCost != null ? 'approximately ' + nextCost.toFixed(2) : 'a') +
+      ' point off this round’s standardized ranking once results are finalized. ' +
+      'This cannot be undone.\n\nContinue?';
+    if (!window.confirm(warn)) return;
+    extendBtn.disabled = true;
+    apiPost('/api/bioclash-request-extension', { paperId: PAPER_ID, sessionToken: state.sessionToken }).then(function (result) {
+      if (result.body && result.body.reason === 'superseded') {
+        handleSessionSuperseded();
+        return;
+      }
+      if (!result.ok) {
+        window.alert(result.body.error || 'Could not grant extension.');
+        extendBtn.disabled = false;
+        return;
+      }
+      state.endAt = result.body.endAt;
+      state.extensionBlocksUsed = result.body.extensionBlocksUsed;
+      updateExtendButton();
+    });
+  }
+  if (extendBtn) extendBtn.addEventListener('click', requestExtension);
+
   function handleSessionSuperseded() {
     if (state.superseded) return;
     state.superseded = true;
@@ -218,15 +275,48 @@
     if (req) { try { req.call(el).catch(function () {}); } catch (e) {} }
   }
 
+  // Screenshot/recording deterrent (2026-08-11): blurs the live attempt
+  // content whenever the window loses focus or the page is hidden — no web
+  // technology can detect a raw Print-Screen-to-clipboard capture or a
+  // phone camera photographing the monitor (neither ever touches the
+  // browser, on any OS), but this DOES catch the window-focus-stealing
+  // methods most students actually reach for: Windows Snipping Tool/Snip &
+  // Sketch, alt-tabbing to another app to start a recorder, etc. Reuses
+  // the SAME fullscreenchange/visibilitychange listeners that already
+  // increment the soft fullscreenExits/visibilityLosses counters below —
+  // this just adds a visual response on top, no new event wiring.
+  function applyContentBlur() {
+    document.body.classList.add('bioclash-attempt-blurred');
+  }
+  function removeContentBlur() {
+    document.body.classList.remove('bioclash-attempt-blurred');
+  }
+
   document.addEventListener('fullscreenchange', function () {
-    if (!document.fullscreenElement && liveScreen && !liveScreen.hidden) {
+    if (!liveScreen || liveScreen.hidden) return;
+    if (!document.fullscreenElement) {
       state.fullscreenExits += 1;
+      // A Lock & Continue click's own window.confirm() dialog forces the
+      // browser out of fullscreen as a side effect (see the lock button
+      // handler) — that's an expected, benign cause, not a cheating
+      // signal, so don't flash the blur overlay for it. The counter above
+      // still increments regardless, matching existing behavior.
+      if (!state.lockFlowActive) applyContentBlur();
+    } else {
+      removeContentBlur();
     }
   });
   document.addEventListener('visibilitychange', function () {
-    if (document.hidden && liveScreen && !liveScreen.hidden) {
+    if (!liveScreen || liveScreen.hidden) return;
+    if (document.hidden) {
       state.visibilityLosses += 1;
+      if (!state.lockFlowActive) applyContentBlur();
+    } else {
+      removeContentBlur();
     }
+  });
+  window.addEventListener('focus', function () {
+    if (liveScreen && !liveScreen.hidden) removeContentBlur();
   });
 
   // Anti-cheat, deterrent tier (see the matching CSS comment on
@@ -278,6 +368,10 @@
     // Seeded from the server so a resume-after-refresh doesn't lose credit
     // for having already reached the last page in an earlier page load.
     if (data.reachedFinalPage) state.reachedFinalPageLocally = true;
+    state.extensionBlocksUsed = data.extensionBlocksUsed || 0;
+    state.maxExtensionBlocks = data.maxExtensionBlocks || 0;
+    state.extensionBlockMinutes = data.extensionBlockMinutes || 0;
+    state.extensionCostSchedule = data.extensionCostSchedule || [];
     renderWatermark(data.watermark);
 
     if (data.status === 'submitted') {
@@ -294,6 +388,7 @@
     timerInterval = setInterval(tickTimer, 1000);
     tickTimer();
     startHeartbeat();
+    updateExtendButton();
     renderBlocks();
   }
 
@@ -807,7 +902,11 @@
         lockBtn.textContent = 'Lock & Continue';
         lockBtn.addEventListener('click', function () {
           var warn = block.lockWarning || 'Once you continue, you cannot change this answer.';
-          if (!window.confirm(warn + '\n\nAre you sure you want to lock this in?')) return;
+          state.lockFlowActive = true;
+          if (!window.confirm(warn + '\n\nAre you sure you want to lock this in?')) {
+            state.lockFlowActive = false;
+            return;
+          }
           lockBtn.disabled = true;
           var answers = collectAnswers(block, inputs);
           apiPost('/api/bioclash-lock-block', {
@@ -819,10 +918,12 @@
             sessionToken: state.sessionToken
           }).then(function (result) {
             if (result.body && result.body.reason === 'superseded') {
+              state.lockFlowActive = false;
               handleSessionSuperseded();
               return;
             }
             if (!result.ok) {
+              state.lockFlowActive = false;
               window.alert(result.body.error || 'Could not lock this block.');
               lockBtn.disabled = false;
               return;
@@ -872,6 +973,7 @@
               window.scrollTo({ top: 0, behavior: 'auto' });
               enterFullscreen();
             }
+            state.lockFlowActive = false;
           });
         });
         section.appendChild(lockBtn);
@@ -955,8 +1057,19 @@
   }
 
   window.addEventListener('beforeunload', function () {
-    // Best-effort: the debounced draft save already covers normal editing;
-    // this just flushes anti-cheat counters on the way out.
+    // Best-effort: the debounced draft save already covers normal editing.
+    // Tab-close soft signal (2026-08-11) — sendBeacon specifically because
+    // a normal fetch() can be aborted mid-flight when a page unloads,
+    // while sendBeacon is designed to reliably complete a small POST
+    // during unload. Only fires during a genuinely live attempt (a
+    // sessionToken only exists once one has been started) — closing the
+    // Start or Report screen's tab is not a tab-close-during-an-attempt
+    // event. See api/bioclash-log-tab-close.js for why this can't use the
+    // normal Bearer-token auth every other endpoint uses.
+    if (state.sessionToken && liveScreen && !liveScreen.hidden && navigator.sendBeacon) {
+      var payload = new Blob([JSON.stringify({ paperId: PAPER_ID, sessionToken: state.sessionToken })], { type: 'application/json' });
+      navigator.sendBeacon('/api/bioclash-log-tab-close', payload);
+    }
   });
 
   // Boot: check for a resumable attempt before showing the Start screen.

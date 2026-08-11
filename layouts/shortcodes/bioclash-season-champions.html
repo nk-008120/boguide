@@ -1,0 +1,34 @@
+{{- /* BiOClash "Season Champions" — the cumulative, weighted Z-score
+     standing across every round in the current season
+     (bioclash_season_standings view, supabase/migrations/
+     013_bioclash_season_scoring.sql). Usage: {{< bioclash-season-champions >}}
+     — no params, always shows the most recent season_year present.
+     Deliberately the grandest visual treatment on the site (explicit
+     founder ask) — reuses this codebase's own proven glow techniques (the
+     pulsing radial-gradient vignette from .bioclash-attempt-glow-bg, the
+     gold box-shadow ring from .bioclash-btn-primary) scaled up, rather
+     than inventing new effects. Podium markup/classes intentionally match
+     bioclash-champions.html's (.bioclash-champion-slot/-rank-1/2/3) so it
+     inherits that styling for free — only the FRAME around it
+     (.bioclash-season-champions-*, assets/css/custom.css section 15c)
+     is new. See context/bioclash-season-points-plan.md for what the
+     "Season Index" number actually means — shown publicly per the
+     founder's explicit decision, with the note below since it's an
+     unbounded standardized composite, not a percentage. */ -}}
+<div id="bioclash-season-champions-root" class="bioclash-page bioclash-season-champions-section">
+  <div class="bioclash-season-champions-glow" aria-hidden="true"></div>
+  <div class="bioclash-champions-frame bioclash-season-champions-frame">
+    <p class="bioclash-eyebrow" id="bioclash-season-champions-eyebrow">Season Champions</p>
+    <h2 class="bioclash-champions-heading bioclash-season-champions-heading">BiOClash Season Champions</h2>
+    <p class="bioclash-season-champions-note">Season Index — a standardized composite across every round this season; higher is better, not a percentage.</p>
+    <p id="bioclash-season-champions-status" class="bioclash-champions-status">Loading season standings…</p>
+    <div class="bioclash-champions-podium" id="bioclash-season-champions-podium" hidden></div>
+    <table class="bioclash-champions-table" id="bioclash-season-champions-table" hidden>
+      <thead>
+        <tr><th>#</th><th>Name</th><th>Season Index</th></tr>
+      </thead>
+      <tbody id="bioclash-season-champions-tbody"></tbody>
+    </table>
+  </div>
+</div>
+<script src="{{ "js/bioclash-season-champions.js" | relURL }}" defer></script>

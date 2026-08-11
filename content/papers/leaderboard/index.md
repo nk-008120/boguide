@@ -2,7 +2,21 @@
 title: "Leaderboard"
 ---
 
+{{< bioclash-season-champions >}}
+
 {{< bioclash-champions >}}
+
+## Rounds This Season
+
+Every concluded BiOClash round keeps its own permanent leaderboard — this season's so far:
+
+<div class="papers-test-card-grid">
+  <a class="papers-test-card" href="/bioclash/mb-01/leaderboard/">
+    <span class="papers-test-card-badge">🏆</span>
+    <span class="papers-test-card-title">Case File MB-01 — Molecular Biology &amp; Biochemistry</span>
+    <span class="papers-test-card-sub">Per-round rankings →</span>
+  </a>
+</div>
 
 <div class="papers-hof-intro">
 

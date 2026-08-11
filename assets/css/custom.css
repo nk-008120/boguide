@@ -3935,6 +3935,83 @@ html.dark .papers-pill.bioclash-pill {
   opacity: 0.7;
 }
 
+/* 15d. BIOCLASH SEASON CHAMPIONS — {{< bioclash-season-champions >}}, the
+   cumulative cross-round standing (bioclash_season_standings view). The
+   founder's explicit ask was for this to be the grandest, most "glowing"
+   treatment on the site — deliberately reuses two techniques already
+   proven elsewhere rather than inventing new ones: the pulsing
+   radial-gradient vignette from .bioclash-attempt-glow-bg::after
+   (@keyframes bioclash-glow-pulse, defined in section 24) behind the
+   frame, and a gold box-shadow ring in the spirit of .bioclash-btn-
+   primary's, animated to breathe rather than static. Podium/table markup
+   reuses .bioclash-champion-slot/-rank-1/2/3/.bioclash-champions-table
+   verbatim (same classes as the ordinary Champions section above) so it
+   inherits that styling and responsive stacking for free — only the
+   frame/glow around it is new. */
+.bioclash-season-champions-section {
+  position: relative;
+  margin: 3rem 0 3.5rem;
+}
+.bioclash-season-champions-glow {
+  position: absolute;
+  inset: -2.5rem;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: var(--radius-xl);
+  background: radial-gradient(ellipse at 50% 25%, rgba(201, 151, 31, 0.4) 0%, rgba(179, 18, 46, 0.14) 45%, transparent 75%);
+  filter: blur(32px);
+  animation: bioclash-glow-pulse 8s ease-in-out infinite;
+}
+.bioclash-season-champions-frame {
+  position: relative;
+  z-index: 1;
+  padding: 3.5rem 2rem 3rem;
+  box-shadow:
+    0 0 0 1px var(--bc-gold) inset,
+    0 0 0 6px rgba(201, 151, 31, 0.15),
+    var(--shadow-lg),
+    0 0 60px rgba(201, 151, 31, 0.25);
+  animation: bioclash-season-ring-pulse 4s ease-in-out infinite;
+}
+@keyframes bioclash-season-ring-pulse {
+  0%, 100% {
+    box-shadow:
+      0 0 0 1px var(--bc-gold) inset,
+      0 0 0 6px rgba(201, 151, 31, 0.15),
+      var(--shadow-lg),
+      0 0 60px rgba(201, 151, 31, 0.25);
+  }
+  50% {
+    box-shadow:
+      0 0 0 1px var(--bc-gold) inset,
+      0 0 0 9px rgba(201, 151, 31, 0.22),
+      var(--shadow-lg),
+      0 0 90px rgba(201, 151, 31, 0.4);
+  }
+}
+.bioclash-season-champions-heading {
+  font-size: 2.6rem;
+}
+.bioclash-season-champions-note {
+  position: relative;
+  z-index: 1;
+  font-size: 0.8rem;
+  font-style: italic;
+  opacity: 0.75;
+  max-width: 32rem;
+  margin: 0 auto 1.5rem;
+}
+@media (prefers-reduced-motion: reduce) {
+  .bioclash-season-champions-glow,
+  .bioclash-season-champions-frame {
+    animation: none !important;
+  }
+}
+@media (max-width: 700px) {
+  .bioclash-season-champions-frame { padding: 2.5rem 1.25rem 2rem; }
+  .bioclash-season-champions-heading { font-size: 2rem; }
+}
+
 /* ===================================================================
    16. DISCUSSIONS — content/discussions/index.md + static/js/discussions.js
    Public comments/feedback threads. Deliberately the site's normal
@@ -4352,6 +4429,36 @@ html.dark #bioclash-attempt-report {
   padding: 0.75rem 1rem;
   margin-bottom: 1.25rem;
 }
+/* Screenshot/recording deterrent (2026-08-11) — toggled on document.body
+   by bioclash-attempt.js's applyContentBlur()/removeContentBlur(), driven
+   by the existing fullscreenchange/visibilitychange listeners. Blurs only
+   the live attempt body, not the whole page chrome, and shows a plain
+   "come back" message via ::after rather than hiding content silently —
+   the point is friction and a visible signal, not stealth. */
+body.bioclash-attempt-blurred #bioclash-attempt-body {
+  filter: blur(24px);
+  pointer-events: none;
+  user-select: none;
+}
+body.bioclash-attempt-blurred #bioclash-attempt-live {
+  position: relative;
+}
+body.bioclash-attempt-blurred #bioclash-attempt-live::after {
+  content: 'Content hidden — return to this tab to continue.';
+  position: fixed;
+  inset: 0;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  font-family: 'BiOClash Display', Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--bc-gold);
+  background: rgba(4, 8, 6, 0.88);
+}
 .bioclash-part-heading {
   font-family: 'BiOClash Display', Georgia, serif;
   text-transform: uppercase;
@@ -4450,6 +4557,19 @@ html.dark #bioclash-attempt-report {
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--bc-crimson-deep);
+}
+/* Live time-extension request button (2026-08-11) — deliberately styled
+   distinct from the neutral Prev/Next/Lock buttons and the crimson-leaning
+   Submit button, since clicking it has a real, irreversible ranking cost
+   (see bioclash-attempt.js's requestExtension()) — gold signals "this is a
+   deliberate trade-off," not a routine navigation action. */
+.bioclash-extend-btn {
+  border-color: var(--bc-gold);
+  color: var(--bc-gold);
+}
+html.dark .bioclash-extend-btn {
+  border-color: var(--bc-gold);
+  color: var(--bc-gold);
 }
 .bioclash-timer-low { color: var(--bc-crimson); animation: bioclash-timer-pulse 1s infinite; }
 @keyframes bioclash-timer-pulse { 50% { opacity: 0.4; } }
