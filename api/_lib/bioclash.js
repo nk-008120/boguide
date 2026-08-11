@@ -213,6 +213,42 @@ function componentIsCorrect(component, submitted) {
   }
 }
 
+// True total page count for the WHOLE paper, computed the same way the
+// frontend's pageList() (bioclash-attempt.js) paginates: a part made
+// entirely of locksAfterSubmit/reveal_content blocks ("chain part" — Part
+// A, Data Analysis) gets one page per non-reveal_content block; an
+// ordinary part gets exactly one page total. Run over allBlocks(paper) —
+// the FULL paper, not whatever's been revealed to a given attempt yet — so
+// the count is fixed and known from the very first render, not something
+// that only becomes accurate once every block has actually been earned.
+// Safe to send to the client before anything is unlocked: it's a
+// structural count (how many parts/blocks exist and whether they lock),
+// never anything answer-bearing.
+function computeTotalPages(paper) {
+  const blocks = allBlocks(paper);
+  const byPart = {};
+  for (const b of blocks) (byPart[b.partId] = byPart[b.partId] || []).push(b);
+  const chainParts = {};
+  for (const pid of Object.keys(byPart)) {
+    chainParts[pid] = byPart[pid].every((b) => b.locksAfterSubmit || b.type === 'reveal_content');
+  }
+  let pages = 0;
+  let i = 0;
+  while (i < blocks.length) {
+    const block = blocks[i];
+    if (chainParts[block.partId]) {
+      if (block.type === 'reveal_content') { i++; continue; }
+      pages += 1;
+      i += 1;
+    } else {
+      const pid = block.partId;
+      while (i < blocks.length && blocks[i].partId === pid) i++;
+      pages += 1;
+    }
+  }
+  return pages;
+}
+
 // Short, deterministic, non-reversible per-user/per-paper code rendered as
 // a faint watermark on the attempt page — a deterrent/attribution tool for
 // leaked screenshots, not a leak-prevention mechanism. Server-generated so
@@ -243,5 +279,6 @@ module.exports = {
   toClientBlock,
   componentIsCorrect,
   watermarkCode,
-  newSessionToken
+  newSessionToken,
+  computeTotalPages
 };

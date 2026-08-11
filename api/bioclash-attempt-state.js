@@ -3,7 +3,7 @@
 // called on every page load/refresh. Never creates anything (that's
 // start-attempt's job); if no attempt exists yet, says so plainly.
 const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
-const { loadPaper, toClientBlock, findBlock, watermarkCode, newSessionToken } = require('./_lib/bioclash');
+const { loadPaper, toClientBlock, findBlock, watermarkCode, newSessionToken, computeTotalPages } = require('./_lib/bioclash');
 
 module.exports = async (req, res) => {
   if (req.method !== 'GET') {
@@ -102,6 +102,8 @@ module.exports = async (req, res) => {
       paperTitle: paper.title,
       watermark: watermarkCode(userId, paperId),
       sessionToken,
+      totalPages: computeTotalPages(paper),
+      reachedFinalPage: !!attempt.reached_final_page,
       blocks
     });
   } catch (err) {

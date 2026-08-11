@@ -6,7 +6,7 @@
 // which stays a manually-populated final-placements table filled in by the
 // founder after real offline grading of a whole season concludes.
 const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
-const { loadPaper, findBlock, componentIsCorrect } = require('./_lib/bioclash');
+const { loadPaper, findBlock, componentIsCorrect, computeTotalPages } = require('./_lib/bioclash');
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
@@ -29,7 +29,7 @@ module.exports = async (req, res) => {
     }
     const userId = userData.user.id;
 
-    const { paperId } = req.body || {};
+    const { paperId, force } = req.body || {};
     const paper = loadPaper(paperId);
     if (!paper) {
       res.status(400).json({ error: 'Unknown paper' });
@@ -40,13 +40,25 @@ module.exports = async (req, res) => {
 
     const { data: attempt, error: attemptError } = await admin
       .from('bioclash_attempts')
-      .select('id, status')
+      .select('id, status, reached_final_page')
       .eq('user_id', userId)
       .eq('paper_id', paperId)
       .maybeSingle();
     if (attemptError) throw attemptError;
     if (!attempt || attempt.status !== 'in_progress') {
       res.status(409).json({ error: 'No active attempt to submit' });
+      return;
+    }
+    // Submit-gate: a manual submit must have reached the paper's true last
+    // page at least once — see supabase/migrations/011_bioclash_final_page.sql.
+    // force:true (sent only by the frontend's timer-expiry auto-submit)
+    // always bypasses this: a hard time cutoff must be honored regardless
+    // of how far the student got.
+    if (force !== true && !attempt.reached_final_page) {
+      const totalPages = computeTotalPages(paper);
+      res.status(403).json({
+        error: `You must reach page ${totalPages} of ${totalPages} at least once before submitting.`
+      });
       return;
     }
 
