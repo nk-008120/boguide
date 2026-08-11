@@ -88,6 +88,7 @@
   var startBtn = document.getElementById('bioclash-attempt-start-btn');
   var startStatus = document.getElementById('bioclash-attempt-start-status');
   var honorCodeCheckbox = document.getElementById('bioclash-attempt-honor-code');
+  var directiveCheckboxes = Array.prototype.slice.call(document.querySelectorAll('.bioclash-directive-checkbox'));
   var timerEl = document.getElementById('bioclash-attempt-timer');
   var bodyEl = document.getElementById('bioclash-attempt-body');
   var submitBtn = document.getElementById('bioclash-attempt-submit-btn');
@@ -1022,23 +1023,29 @@
 
   if (submitBtn) submitBtn.addEventListener('click', function () { doSubmit(false); });
 
-  // Honor-code affirmation: the Start button stays disabled until this is
-  // checked (HTML also ships it `disabled` by default, so a visitor who
-  // never sees this script run still can't start blind). The click
-  // handler re-checks it directly too, in case the disabled attribute was
-  // ever removed out from under it (e.g. via devtools) — this is a policy
-  // gate, not a security boundary, so it doesn't need to be bulletproof,
-  // just not trivially skippable by accident.
-  if (honorCodeCheckbox && startBtn) {
-    honorCodeCheckbox.addEventListener('change', function () {
-      startBtn.disabled = !honorCodeCheckbox.checked;
-    });
+  // Honor-code affirmation + per-directive checkboxes (2026-08-11 — each
+  // "Before you start" item is now its own checkbox, same requirement as
+  // the honor code): the Start button stays disabled until EVERY one of
+  // these is checked (HTML also ships it `disabled` by default, so a
+  // visitor who never sees this script run still can't start blind). The
+  // click handler re-checks directly too, in case the disabled attribute
+  // was ever removed out from under it (e.g. via devtools) — this is a
+  // policy gate, not a security boundary, so it doesn't need to be
+  // bulletproof, just not trivially skippable by accident.
+  function allDirectivesConfirmed() {
+    return !!honorCodeCheckbox && honorCodeCheckbox.checked &&
+      directiveCheckboxes.every(function (cb) { return cb.checked; });
   }
+  function updateStartButtonGate() {
+    if (startBtn) startBtn.disabled = !allDirectivesConfirmed();
+  }
+  if (honorCodeCheckbox) honorCodeCheckbox.addEventListener('change', updateStartButtonGate);
+  directiveCheckboxes.forEach(function (cb) { cb.addEventListener('change', updateStartButtonGate); });
 
   if (startBtn) {
     startBtn.addEventListener('click', function () {
-      if (honorCodeCheckbox && !honorCodeCheckbox.checked) {
-        if (startStatus) startStatus.textContent = 'Please confirm the affirmation above before starting.';
+      if (!allDirectivesConfirmed()) {
+        if (startStatus) startStatus.textContent = 'Please confirm every item above before starting.';
         return;
       }
       withSession(function () {

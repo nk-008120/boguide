@@ -4383,6 +4383,47 @@ html.dark #bioclash-attempt-report {
 }
 .bioclash-honor-code input { margin-top: 0.2rem; flex: 0 0 auto; }
 
+/* Student-facing operational directives on the attempt start screen
+   (2026-08-11) — deliberately separate from .bioclash-honor-code (that
+   stays a focused AFFIRMATION) and from the tab-switching
+   .bioclash-nonrecoverable-banner above it (a specific known-bug warning)
+   — this is the general "here's how the mechanics behave" checklist:
+   wait-after-clicking, non-recoverable locks, extension cost, video
+   requirement, screenshot rule, and how results are actually scored.
+   Each item is now its own checkbox (2026-08-11, same requirement as the
+   honor code below it) — bioclash-attempt.js's startBtn gate requires
+   EVERY .bioclash-directive-checkbox checked, not just the honor code. */
+.bioclash-attempt-directives {
+  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--bc-border);
+  border-radius: var(--radius-md);
+  background: rgba(201, 151, 31, 0.04);
+}
+.bioclash-attempt-directives h2 {
+  font-family: 'BiOClash Display', Georgia, serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--bc-gold);
+  margin: 0 0 0.75rem;
+}
+.bioclash-directive-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.bioclash-directive-list li { margin-bottom: 0.6rem; }
+.bioclash-directive-list li:last-child { margin-bottom: 0; }
+.bioclash-directive-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.bioclash-directive-item input { margin-top: 0.2rem; flex: 0 0 auto; }
+
 /* Per-part heading — dressed as a case-file section stamp rather than a
    plain <h3>, so every block (present or future) inherits the same
    TVA-document look automatically, regardless of what content pass adds
