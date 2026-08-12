@@ -17,7 +17,7 @@
 -- ============================================================
 -- bioclash_paper_access — debug/invitational allowlist.
 -- Empty by default: nobody has access to a paper unless a row exists here.
--- Manually populated by the founder via the SQL editor (same lever as the
+-- Manually populated via the SQL editor (same lever as the
 -- is_hidden moderation flag and bioclash_results placements) — this also
 -- doubles as the future mechanism for "invitational" seasons, not just
 -- today's single-tester debug phase.
@@ -38,7 +38,7 @@ create policy bioclash_access_select_own on public.bioclash_paper_access
 
 grant select on public.bioclash_paper_access to authenticated;
 
--- Seed the founder's own access for the debug phase. Requires the account
+-- Seed access for the debug-phase test account. Requires the account
 -- to already exist (real signup) — if the select finds no matching user,
 -- this simply inserts nothing; re-run after signing up. Safe to re-run
 -- regardless (on conflict do nothing).

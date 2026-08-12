@@ -39,7 +39,7 @@ paste them into the right places. Do these in order.
    (real signup) for its allowlist-seed step to actually insert a row — if
    it doesn't exist yet, sign up first, then re-run 009 (safe to re-run,
    `on conflict do nothing`). Without that row, `bioclash-start-attempt`
-   will 403 even the founder's own account, since MB-01 is debug-phase-only
+   will 403 even the primary test account, since MB-01 is debug-phase-only
    (`accessMode: allowlist` in `data/bioclash/mb-01.yaml`) — nobody else is
    meant to have access yet, by design.
    **008 is a production hotfix — run it before promoting Discussions to real

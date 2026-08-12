@@ -1,6 +1,6 @@
 # BiOClash — compiling results after a round closes
 
-Operational runbook, written 2026-08-11, for the founder to actually execute (no
+Operational runbook, written 2026-08-11, to actually execute by hand (no
 step here runs automatically — everything is manual by design, matching this
 project's established "hand-graded, hand-entered" posture for BiOClash). Read
 `context/bioclash-mb01-exam-mechanism.md` and `context/bioclash-season-points-plan.md`

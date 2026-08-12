@@ -1,9 +1,9 @@
 # BiOClash — year-round season structure + points system
 
-Status as of 2026-08-11: **evaluation + proposal, nothing implemented. Round-1 founder
+Status as of 2026-08-11: **evaluation + proposal, nothing implemented. Round-1
 decisions incorporated below (time structure, points formula, identity-risk stance) —
-see each section for what's now DECIDED vs. still open.** Written in response to the
-founder describing a new idea (subject-wise rounds spread across the year, culminating
+see each section for what's now DECIDED vs. still open.** Written in response to a
+new idea (subject-wise rounds spread across the year, culminating
 in a pre-IBO Full Syllabus round, with a cross-round points system deciding an annual
 champion) and asking for an evaluation of (1) current anti-cheat measures, (2) MB-01's
 time allotment, and (3) a completed plan for the year-round structure. Companion docs:
@@ -39,7 +39,7 @@ changes:
    unenforced by anything technical (no upload infra was built — see
    `anti-cheating-measures.md`'s "explored, not built" section) — it only becomes
    real if a human actually reviews a flagged recording after the fact.
-   **DECIDED (founder, 2026-08-11): accepted as a bounded honor-system risk for Year
+   **DECIDED (2026-08-11): accepted as a bounded honor-system risk for Year
    1.** Keep the honor code + after-the-fact recording review as the only defense;
    revisit only if a real case comes up. No build work follows from this item for
    now — noted here so a future session doesn't rediscover the gap and assume it's
@@ -56,7 +56,7 @@ changes:
    still the right medium-effort fix and gets more valuable as participant count
    grows. Worth doing before AS-01, not urgent for a single-person MB-01 debug pass.
 4. **Multi-day open windows are a new leakage vector this plan introduces.** The
-   founder's own framing ("a week where you can attempt") is good for accessibility
+   framing ("a week where you can attempt") is good for accessibility
    (timezones, one bad day doesn't cost you the round) but means early test-takers
    can leak *structure* — topics covered, difficulty, what a free-text question
    actually asks — to later ones, even though per-user MCQ shuffling
@@ -73,13 +73,13 @@ changes:
    urgency at 5 questions; revisit if a future round leans harder on numeric/
    calculation questions.
 6. **Screenshot/recording "prohibition"** — correctly framed in the honor code as a
-   stated rule, not a technical claim (per the founder's explicit instruction on the
+   stated rule, not a technical claim (per explicit instruction given during the
    MB-01 debugging pass). Internally, for planning purposes: this **cannot** be
    enforced from a browser, full stop — no future engineering effort changes that.
    Don't let a future session's roadmap quietly assume otherwise.
 7. **`bioclash_paper_access` is currently a hand-seeded allowlist of one account.**
    Scaling to real multi-round competitions needs an actual open-registration path
-   (or at least a founder-run bulk-allowlist process) — this is a real prerequisite
+   (or at least a manually-run bulk-allowlist process) — this is a real prerequisite
    piece of work the points-system plan below depends on, not something either this
    doc or the MB-01 debugging session touched.
 
@@ -92,7 +92,7 @@ naming explicitly now that a full season's ranking will ride on it.
 
 ---
 
-## 2. Time allotment — evaluation, and the founder's decision
+## 2. Time allotment — evaluation, and the decision
 
 **Original evaluation (for context):** the raw pacing of MB-01's 240-minute
 placeholder wasn't actually unreasonable in isolation — 165 marks / 240 min ≈ 0.69
@@ -104,7 +104,7 @@ papers on two separate days), no scheduled break anywhere in the delivery system
 `api/bioclash-lock-block.js`), and subject rounds being scoped the same size as what
 the Full Syllabus capstone should be, which flattens the capstone's marquee status.
 
-**DECIDED (founder, 2026-08-11), superseding the above:**
+**DECIDED (2026-08-11), superseding the above:**
 - Subject rounds: **90 minutes base**, with an optional **+30 minute extension**
   available at a competitive-ranking cost (see the extension mechanic below) — not
   a flat time increase, a genuine trade-off.
@@ -123,7 +123,7 @@ Data Analysis interpretation, Hill-equation and percentage calculations, and 19
 free-text components) at 90 minutes is ≈1.83 marks/min — more than double real IBO
 pacing, and MB-01's content specifically leans toward the slower question types
 (multi-part reasoning, calculation, extended free-text), not toward fast MCQ/TF
-churn. Read literally, the founder's 90-minute decision cannot apply to MB-01's
+churn. Read literally, the 90-minute decision cannot apply to MB-01's
 *current* content without either:
 - (a) **Trimming MB-01 substantially** before it's ever run for real — cutting marks/
   components down to something that actually fits 90(+30) minutes, most likely by
@@ -135,7 +135,7 @@ churn. Read literally, the founder's 90-minute decision cannot apply to MB-01's
   it's the season's first/pilot round, and future subject rounds should hit 90
   minutes some other way (fewer marks) rather than matching MB-01's mark count.
 
-**This needs a founder call before MB-01 is scheduled for real students** — it's not
+**This needs a decision before MB-01 is scheduled for real students** — it's not
 something to guess at, since it changes how much of the already-written content
 survives. See "Open decisions" at the end.
 
@@ -147,7 +147,7 @@ survives. See "Open decisions" at the end.
 
 Today, `data/bioclash/mb-01.yaml`'s `season: mb-01` field and `bioclash_results.season
 = 'Season 1 — Fall 2026'` both use "season" to mean *one round*. That collides head-on
-with the founder's new idea, where "season" means *the whole year*. Proposing clean
+with the new idea, where "season" means *the whole year*. Proposing clean
 separation:
 - **Season** = the annual cycle, e.g. `"2026–27"`. One champion crowned per season.
 - **Round** = one timed competition within a season — MB-01, AS-01, etc. Each round
@@ -155,7 +155,7 @@ separation:
 
 ### DECIDED: the season's 8 rounds and their weights
 
-The founder specified 7 named subject rounds plus the Full Syllabus Test, each
+7 named subject rounds plus the Full Syllabus Test were specified, each
 carrying an explicit weight toward the season total (total denominator 200% — the 7
 subject weights sum to 100%, FST alone is worth another 100%):
 
@@ -176,7 +176,7 @@ existing resource categories into one round) — reinforcing the same synergy no
 before: a student who underperforms a round has an obvious matching resource category
 to review. Two resource categories are deliberately NOT rounds: Bioinformatics
 (category 10) and the four Practical categories (11–14) — practicals don't map to a
-written timed-attempt format at all, and Bioinformatics isn't in the founder's weight
+written timed-attempt format at all, and Bioinformatics isn't in the weight
 table; worth a quick confirm that the omission is intentional rather than an oversight
 (see "Open decisions").
 
@@ -185,27 +185,27 @@ rounds a year**, not 5–6 as this doc first proposed — each needs a paper wri
 delivered, offline-graded (mostly by hand, per the existing free-text-heavy pattern),
 and its results entered. Two of the seven subject weights (Ethology, Biosystematics —
 5% each) are low enough that combining them into one round is worth considering purely
-to reduce founder workload, without changing how the weights themselves are scored
+to reduce grading workload, without changing how the weights themselves are scored
 (a combined round could still report two separate sub-percentages feeding the two
 weighted terms). Not assuming this — flagging it as a real lever.
 
 Suggested spacing (8 rounds from September through the FST window, IBO-date-anchored
 for FST specifically, not fixed to a calendar month): September (MB-01, shipped),
 October, November, December/January, February, March, April, then FST 3 weeks before
-IBO. Exact month assignment to each named round is the founder's call — the table
+IBO. Exact month assignment to each named round is still to be decided — the table
 above intentionally doesn't prescribe it.
 
 ### DECIDED: time structure per round, and the extension mechanic
 
 Base times (see Section 2): **90 min for subject rounds, 150 min for FST**, each with
 an optional **+30 min extension** taken at a *competitive-ranking cost*, not a flat
-time grant. The founder asked for this mechanism to be designed — here's the concrete
+time grant. This mechanism needed to be designed — here's the concrete
 version:
 
 **Core idea**: the penalty for taking extra time, and the bonus for not needing it,
 both scale with how *unusual* your choice was relative to the rest of that round's
 field — a pari-mutuel-style, self-balancing adjustment, not a fixed cost. This
-directly matches what the founder described ("if a lot of students opt for
+directly matches the described intent ("if a lot of students opt for
 extensions... you get a relatively scaled bonus too").
 
 1. **The choice is made at attempt start**, alongside the honor-code checkbox — a new
@@ -220,7 +220,7 @@ extensions... you get a relatively scaled bonus too").
    incentive. The adjustment only ever touches the *effective score used to compute
    that round's placement* (and, through placement, the season weight contribution) —
    computed once the round's window closes and every attempt in it is graded, fitting
-   the existing "founder finalizes results by hand after grading" workflow with no new
+   the existing "results are finalized by hand after grading" workflow with no new
    live infrastructure needed.
 3. **The formula.** Let `p` = the fraction of that round's participants who used the
    extension (0 to 1), and `M` = a per-round "adjustment ceiling," e.g. 5% of that
@@ -247,7 +247,7 @@ extensions... you get a relatively scaled bonus too").
 ### DECIDED: season points — weighted score-percentage, not placement-based
 
 This **replaces** the F1-style placement-points table this doc originally proposed —
-the founder's actual answer is a different, and arguably more robust, model: each
+the actual answer is a different, and arguably more robust, model: each
 round contributes to the season total in proportion to **how well a student actually
 performed in it** (score percentage), not their rank relative to whoever else showed
 up that round. This sidesteps the "small field makes 1st place too easy" fairness
@@ -278,7 +278,7 @@ championship is a new, second thing: the weighted sum above, aggregated across a
 rounds a student attempted (a round not attempted simply contributes 0 to its term —
 no separate "missed round" penalty beyond the lost weight itself; no dropped-round
 forgiveness was requested and none is assumed here, but the lever from the original
-draft still stands if the founder wants it later).
+draft still stands if wanted later).
 
 **Tie-break order for the final season ranking:**
 1. Total season score (out of 200%).
@@ -340,13 +340,13 @@ that round's `p` (extension-uptake fraction) and each participant's
 `effective_score_pct`, **then** hand-entering the result rows — this was already a
 real workload for one round; the confirmed 8-round calendar multiplies it, and the
 extension mechanic adds a small but real extra computation step per round (still
-just arithmetic per participant, not a new subsystem). Worth an honest gut-check with
-the founder on whether that's sustainable once real students — not a single debug
+just arithmetic per participant, not a new subsystem). Worth an honest gut-check
+on whether that's sustainable once real students — not a single debug
 account — are attempting each of 8 rounds a year.
 
 ---
 
-## Open decisions for the founder before implementation starts
+## Open decisions before implementation starts
 
 1. **MB-01's 165 marks vs. the 90-minute base decision** — trim MB-01's content,
    treat it as a pilot exception, or something else? (Section 2 — needs resolving
@@ -354,7 +354,7 @@ account — are attempting each of 8 rounds a year.
 2. Is Bioinformatics deliberately left out of the 7 named subject rounds, or should it
    be folded in somewhere (an 8th subject round, or merged into an existing one)?
 3. Combine the two 5%-weight rounds (Ethology, Biosystematics) into one round to ease
-   founder grading load, while still scoring them as two separate weighted terms — yes
+   grading load, while still scoring them as two separate weighted terms — yes
    or keep them fully separate?
 4. `adjustmentCeilingPct` (`M`) starting values per round — the doc didn't propose a
    number beyond "e.g. 5% for subject rounds, maybe smaller for FST" — confirm or set

@@ -53,7 +53,7 @@ the classic mistake:
 - **Per-user/per-paper watermark** (`watermarkCode`) — faint overlay,
   deters and attributes leaked screenshots.
 - **Fullscreen-exit / tab-visibility counters** — soft signals only,
-  logged for founder review, never auto-penalizing.
+  logged for manual review, never auto-penalizing.
 
 ## Added this session
 
@@ -140,8 +140,8 @@ already-existing `locked_at` (previously written but never read for
 anything), this gives real dwell-time data for every non-recoverable
 block after the fact.
 
-This only has to be run manually, from the Supabase SQL editor, by the
-founder — there's no dashboard for it and none is planned unless it turns
+This only has to be run manually, from the Supabase SQL editor —
+there's no dashboard for it and none is planned unless it turns
 out to be needed regularly:
 
 ```sql

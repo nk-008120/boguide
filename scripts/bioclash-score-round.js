@@ -6,8 +6,8 @@
 // points-plan.md. This never runs automatically — a round can only be
 // scored once its open window has closed and every attempt is fully
 // graded (most marks are manually graded free-text, same as always), so
-// this is meant to be run by hand against a JSON file the founder
-// compiles from the grading pass, exactly the "hand it to you" workflow
+// this is meant to be run by hand against a JSON file compiled
+// from the grading pass, exactly the "hand it to you" workflow
 // already established for bioclash_results entry generally.
 //
 // Usage:

@@ -154,8 +154,8 @@ installed in this environment; no new dependencies needed.
 - **You / a team member (reasonable, bounded effort, no AI needed):**
   transcribing one answer-key page per exam (~10–20 min), describing the
   ~25% of figures that are genuinely ambiguous, a final read-through of a
-  finished batch before it ships (this is the same review role the founder's
-  own "specialised team" process on the About page already describes — this
+  finished batch before it ships (this is the same review role the
+  "specialised team" process on the About page already describes — this
   pipeline just plugs that team in earlier, at the cheap stages, instead of
   only at the end).
 - **Free AI model (Gemini via AI Studio's free tier, ChatGPT's free tier,

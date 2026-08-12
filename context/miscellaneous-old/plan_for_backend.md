@@ -41,13 +41,13 @@ accurate and worth having as a record of the original design rationale.
 
 ## Context
 
-BiOrchive's existing Timed Attempt quiz ([static/js/papers-attempt.js](static/js/papers-attempt.js)) is entirely client-side: it scores itself in the browser and keeps only the latest report per round in `localStorage`, with nothing ever leaving the device. The user wants to add a **leaderboard** people can optionally submit their results to, which means introducing a real backend for the first time — and, since that requires accounts anyway, a **login/account system built into the BiOrchive section**, explicitly designed so it can also store per-user test history and "other implications... later on," not just a leaderboard score.
+BiOrchive's existing Timed Attempt quiz ([static/js/papers-attempt.js](static/js/papers-attempt.js)) is entirely client-side: it scores itself in the browser and keeps only the latest report per round in `localStorage`, with nothing ever leaving the device. The goal is to add a **leaderboard** people can optionally submit their results to, which means introducing a real backend for the first time — and, since that requires accounts anyway, a **login/account system built into the BiOrchive section**, explicitly designed so it can also store per-user test history and "other implications... later on," not just a leaderboard score.
 
 Two facts from research shape everything below:
 1. **The site is 100% static today** — no `api/` directory, no root `package.json`, no `.env`, no database, no auth code anywhere (confirmed by full-repo search). This is genuinely new infrastructure, not an extension of something existing.
 2. **The current quiz ships real answers client-side** in the page source ([layouts/shortcodes/papers-attempt.html](layouts/shortcodes/papers-attempt.html) embeds the full answer key as JSON). A leaderboard **must never trust a client-submitted score** — anyone could open devtools and post a perfect score. The server has to independently recompute correctness from the same source-of-truth data ([data/papers/\<olympiad\>/\<year\>.yaml](data/papers)) that Hugo already treats as canonical.
 
-Decisions already made with the user: Vercel serverless functions for backend logic; **Supabase** (Postgres + Auth in one project) as the vendor; **email + password** login; login stays **fully optional** — anonymous users keep today's experience unchanged; leaderboard is **per-round + one overall aggregate**.
+Decisions already made: Vercel serverless functions for backend logic; **Supabase** (Postgres + Auth in one project) as the vendor; **email + password** login; login stays **fully optional** — anonymous users keep today's experience unchanged; leaderboard is **per-round + one overall aggregate**.
 
 ## Approach
 
@@ -110,7 +110,7 @@ A small `layouts/shortcodes/papers-leaderboard.html` shortcode (mirroring [layou
 
 **The only existing file touched**: [static/js/papers-attempt.js](static/js/papers-attempt.js)'s `renderReport()` gets an *additive* branch — anonymous users see exactly today's screen (at most one unobtrusive "log in to save this" link, never blocking); logged-in users additionally get a "Submit to Leaderboard" button that posts raw answers to `/api/submit-attempt` and shows the server's authoritative rank/score. Local `saveReport`/`loadReport`/recommendations/retake flow are untouched.
 
-### 5. What the user must do outside the repo (I can't perform these)
+### 5. What must be done outside the repo (I can't perform these)
 
 1. Create the Supabase project; note the Project URL, `anon` key, `service_role` key.
 2. Decide email delivery (Supabase's default sender is fine to start; custom SMTP later) and turn on "Confirm email" in Auth settings (recommended, to keep the leaderboard free of throwaway-email spam) — plus set Site URL/Redirect URLs to `https://boguide.vercel.app` and `http://localhost:1313`.

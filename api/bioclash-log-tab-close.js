@@ -2,7 +2,7 @@
 // Soft anti-cheat signal (2026-08-11 season-system planning pass), same
 // posture as fullscreen_exits/visibility_losses: there is no technical way
 // to prevent a tab from closing, so this only logs that it happened, for
-// founder post-hoc review — never auto-penalizing, never gating anything.
+// post-hoc review — never auto-penalizing, never gating anything.
 // Fired via navigator.sendBeacon() from bioclash-attempt.js's
 // beforeunload listener specifically BECAUSE a normal fetch() can be
 // aborted mid-flight when a page unloads, while sendBeacon is designed to

@@ -91,8 +91,7 @@ module.exports = async (req, res) => {
 
     // Soft anti-cheat signals only — trusted as reported, same posture as
     // fullscreen_exits already has in the existing papers-attempt system.
-    // Never used to auto-penalize; surfaced only for the founder to glance
-    // at post-hoc.
+    // Never used to auto-penalize; surfaced only for post-hoc review.
     if (Number.isFinite(fullscreenExits) || Number.isFinite(visibilityLosses)) {
       const patch = {};
       if (Number.isFinite(fullscreenExits)) patch.fullscreen_exits = fullscreenExits;

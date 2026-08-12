@@ -3,8 +3,8 @@
 // true_false/numeric components only — free_text is always offline-graded,
 // by design, and is the majority of this paper's marks) purely so the
 // student sees something immediately; does NOT write to bioclash_results,
-// which stays a manually-populated final-placements table filled in by the
-// founder after real offline grading of a whole season concludes.
+// which stays a manually-populated final-placements table filled in by
+// hand after real offline grading of a whole season concludes.
 const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
 const { loadPaper, findBlock, componentIsCorrect, computeTotalPages } = require('./_lib/bioclash');
 

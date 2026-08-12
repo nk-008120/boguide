@@ -147,4 +147,4 @@ directory-slug → exact page title, `/resources/<section>/<lowercased-slug>/`. 
 ## Current status
 
 - IBO 2022 Theoretical 1: Q1–Q49 done (Q50 remains).
-- IBO 2022 Theoretical 2: **Q51–Q100 all done (the full round)** — Q51–65 pre-dates this delegation workflow; Q66–100 ended up being written directly by Claude at the user's request rather than through this delegation process (see `papers-ingestion-workflow.md`'s status section for details). This delegation workflow remains available/documented for future exams or rounds where offloading explanation-writing is worth it.
+- IBO 2022 Theoretical 2: **Q51–Q100 all done (the full round)** — Q51–65 pre-dates this delegation workflow; Q66–100 ended up being written directly by Claude at explicit request rather than through this delegation process (see `papers-ingestion-workflow.md`'s status section for details). This delegation workflow remains available/documented for future exams or rounds where offloading explanation-writing is worth it.
