@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tree Trunk Cross-Section Explorer | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .layout { display: flex; gap: 1.2rem; align-items: flex-start; flex-wrap: wrap; }
+  .region { cursor: pointer; stroke: #fff; stroke-width: 0.5; }
+  .region:hover { opacity: 0.85; }
+  .region.active { stroke: #1a472a; stroke-width: 2.5; }
+  .controls { margin-bottom: 8px; font-size: 0.82rem; }
+  .note {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+    flex: 1;
+    min-width: 240px;
+    min-height: 6em;
+  }
+  .ring-count { font-size: 0.78rem; color: #64748b; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Tree Trunk Cross-Section Explorer</h3>
+  <div class="subtitle">Click a region to see its composition and function. Toggle growth rings to count earlywood/latewood bands.</div>
+  <div class="layout">
+    <div>
+      <div class="controls"><label><input type="checkbox" id="ringToggle"> Show growth rings</label></div>
+      <svg id="trunkSvg" viewBox="0 0 240 240" width="240" height="240">
+        <circle class="region" data-key="bark" cx="120" cy="120" r="105" fill="#7a5230"/>
+        <circle class="region" data-key="phloem" cx="120" cy="120" r="96" fill="#7fb8e0"/>
+        <circle class="region" data-key="cambium" cx="120" cy="120" r="90" fill="#2d6a4f"/>
+        <circle class="region" data-key="sapwood" cx="120" cy="120" r="86" fill="#e0c088"/>
+        <g id="ringGroup"></g>
+        <circle class="region" data-key="heartwood" cx="120" cy="120" r="45" fill="#a06a3a"/>
+        <circle class="region" data-key="pith" cx="120" cy="120" r="10" fill="#f1e6c8"/>
+      </svg>
+      <div class="ring-count" id="ringCount"></div>
+    </div>
+    <div class="note" id="note">Click any layer, from bark to pith, to read its composition and function.</div>
+  </div>
+</div>
+<script>
+(function(){
+  var facts = {
+    bark: '<b>Bark</b> (functional term, not one tissue): everything external to the vascular cambium — periderm, plus any cortex remnants and the secondary phloem beneath it.',
+    phloem: '<b>Secondary phloem</b> — living transport tissue, produced outward by the vascular cambium. Stays thin because it is progressively crushed and sloughed off as the trunk thickens.',
+    cambium: '<b>Vascular cambium</b> — the lateral meristem responsible for all secondary growth, producing secondary xylem inward and secondary phloem outward every growing season.',
+    sapwood: '<b>Sapwood</b> — the outermost, most recently produced xylem layers, still functional in water transport.',
+    heartwood: '<b>Heartwood</b> — older, inner xylem, no longer functional in transport (often blocked by tyloses), impregnated with resins/tannins/gums (hence the darker color), providing purely structural support.',
+    pith: '<b>Pith</b> — central parenchyma tissue, a remnant of the stem\'s original primary growth, now surrounded by many years of accumulated secondary xylem.'
+  };
+  var note = document.getElementById('note');
+  var regions = document.querySelectorAll('.region');
+  regions.forEach(function(r){
+    r.addEventListener('click', function(){
+      regions.forEach(function(o){ o.classList.remove('active'); });
+      r.classList.add('active');
+      note.innerHTML = facts[r.getAttribute('data-key')];
+    });
+  });
+
+  var ringToggle = document.getElementById('ringToggle');
+  var ringGroup = document.getElementById('ringGroup');
+  var ringCount = document.getElementById('ringCount');
+  var bandRadii = [86,80,74,68,62,56,50];
+
+  function drawRings(){
+    if (!ringToggle.checked){
+      ringGroup.innerHTML = '';
+      ringCount.textContent = '';
+      return;
+    }
+    var html = '';
+    for (var i=0;i<bandRadii.length;i++){
+      html += '<circle class="region" data-key="sapwood" cx="120" cy="120" r="'+bandRadii[i]+'" fill="'+(i%2===0?'#e0c088':'#c9a86a')+'"/>';
+    }
+    ringGroup.innerHTML = html;
+
+    ringGroup.querySelectorAll('.region').forEach(function(r){
+      r.addEventListener('click', function(){
+        document.querySelectorAll('.region').forEach(function(o){ o.classList.remove('active'); });
+        r.classList.add('active');
+        note.innerHTML = facts.sapwood + ' <br><br>Each light/dark pair here is one <b>annual growth ring</b>: wide, thin-walled <b>earlywood</b> next to narrow, thick-walled <b>latewood</b> — count the pairs to count years of growth.';
+      });
+    });
+    ringCount.textContent = 'Growth rings shown: ' + Math.floor(bandRadii.length/2) + ' complete earlywood/latewood pairs (illustrative, not to scale).';
+  }
+
+  ringToggle.addEventListener('change', drawRings);
+})();
+</script>
+</body>
+</html>

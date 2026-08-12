@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sun-Compass Clock-Shift Predictor | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .layout { display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap; }
+  .col-panel { flex: 0 0 220px; }
+  .controls { flex: 1; min-width: 260px; }
+  label { font-size: 0.85rem; font-weight: 600; color: #334155; display:block; margin-bottom: 4px; margin-top: 12px; }
+  input[type=range] { width: 100%; }
+  .readout {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-top: 14px;
+    font-size: 0.92rem;
+  }
+  .readout b { color: #1d70a2; }
+  .readout .err { color: #d9534f; }
+  .note { font-size: 0.8rem; color: #4b5563; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Sun-Compass Clock-Shift Predictor</h3>
+  <div class="subtitle">Set the true home direction and how far a pigeon's internal clock has been shifted — see the predicted heading error.</div>
+  <div class="layout">
+    <div class="col-panel">
+      <svg id="roseSvg" viewBox="0 0 220 220" width="220" height="220">
+        <circle cx="110" cy="110" r="95" fill="#f8fafc" stroke="#cbd5e1" stroke-width="2"/>
+        <text x="110" y="20" text-anchor="middle" font-size="11" fill="#94a3b8">N</text>
+        <text x="200" y="115" text-anchor="middle" font-size="11" fill="#94a3b8">E</text>
+        <text x="110" y="205" text-anchor="middle" font-size="11" fill="#94a3b8">S</text>
+        <text x="20" y="115" text-anchor="middle" font-size="11" fill="#94a3b8">W</text>
+        <line id="trueLine" x1="110" y1="110" x2="110" y2="30" stroke="#166534" stroke-width="4" stroke-linecap="round"/>
+        <line id="predLine" x1="110" y1="110" x2="110" y2="30" stroke="#d9534f" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+        <circle cx="110" cy="110" r="4" fill="#1a472a"/>
+      </svg>
+      <div style="font-size:0.75rem; color:#4b5563; margin-top:6px;">
+        <span style="color:#166534; font-weight:600;">Green</span> = true home direction &nbsp;
+        <span style="color:#d9534f; font-weight:600;">Red</span> = predicted (clock-shifted) heading
+      </div>
+    </div>
+    <div class="controls">
+      <label for="homeSlider">True home direction: <span id="homeLabel">0°</span> (N)</label>
+      <input type="range" id="homeSlider" min="0" max="359" value="0">
+
+      <label for="shiftSlider">Clock shift: <span id="shiftLabel">+6 hours</span></label>
+      <input type="range" id="shiftSlider" min="-12" max="12" step="1" value="6">
+
+      <div class="readout">
+        Predicted initial heading: <b id="predVal">90°</b><br>
+        Heading error: <b class="err" id="errVal">90°</b>
+      </div>
+      <div class="note">Rule: the sun moves ~15°/hour, so a clock shifted by <i>H</i> hours produces a predicted-heading error of <i>H</i> × 15°, in a direction set by the sign of the shift.</div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var homeSlider = document.getElementById('homeSlider');
+  var shiftSlider = document.getElementById('shiftSlider');
+  var homeLabel = document.getElementById('homeLabel');
+  var shiftLabel = document.getElementById('shiftLabel');
+  var predVal = document.getElementById('predVal');
+  var errVal = document.getElementById('errVal');
+  var trueLine = document.getElementById('trueLine');
+  var predLine = document.getElementById('predLine');
+
+  var compassNames = ['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSW','SW','WSW','W','WNW','NW','NNW'];
+  function compassName(deg){
+    var idx = Math.round(((deg % 360) + 360) % 360 / 22.5) % 16;
+    return compassNames[idx];
+  }
+
+  function lineEnd(deg, len){
+    var rad = (deg - 90) * Math.PI / 180;
+    return { x: 110 + len * Math.cos(rad), y: 110 + len * Math.sin(rad) };
+  }
+
+  function update(){
+    var home = parseInt(homeSlider.value, 10);
+    var shift = parseInt(shiftSlider.value, 10);
+
+    homeLabel.textContent = home + '° (' + compassName(home) + ')';
+    shiftLabel.textContent = (shift >= 0 ? '+' : '') + shift + ' hours';
+
+    var errorDeg = shift * 15;
+    var predicted = ((home + errorDeg) % 360 + 360) % 360;
+
+    predVal.textContent = Math.round(predicted) + '° (' + compassName(predicted) + ')';
+    errVal.textContent = Math.abs(errorDeg) + '°' + (errorDeg !== 0 ? (errorDeg > 0 ? ' clockwise' : ' counterclockwise') : ' (no shift)');
+
+    var tp = lineEnd(home, 80);
+    trueLine.setAttribute('x2', tp.x);
+    trueLine.setAttribute('y2', tp.y);
+    var pp = lineEnd(predicted, 80);
+    predLine.setAttribute('x2', pp.x);
+    predLine.setAttribute('y2', pp.y);
+  }
+
+  homeSlider.addEventListener('input', update);
+  shiftSlider.addEventListener('input', update);
+
+  update();
+})();
+</script>
+</body>
+</html>

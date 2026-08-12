@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prokaryotic/Eukaryotic Cell Explorer | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .cells { display: flex; gap: 1rem; }
+  .cellpanel { flex: 1; text-align: center; }
+  .cellpanel h4 { font-size: 0.85rem; margin: 0 0 6px; color: #64748b; }
+  .cellpanel svg { width: 100%; height: 200px; background: #f8fafc; border-radius: 12px; }
+  .clickable { cursor: pointer; }
+  .clickable:hover { opacity: 0.7; }
+  #desc { margin-top: 1rem; padding: 10px; background: #f1f5f9; border-radius: 10px; font-size: 0.85rem; min-height: 40px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Prokaryotic vs. Eukaryotic Cell Explorer</h3>
+  <div class="subtitle">Click any structure in either cell to reveal a short description.</div>
+  <div class="cells">
+    <div class="cellpanel">
+      <h4>Prokaryotic</h4>
+      <svg viewBox="0 0 200 160">
+        <ellipse cx="100" cy="80" rx="85" ry="55" fill="#eaf2f8" stroke="#1d70a2" stroke-width="3" class="clickable" data-k="wall"/>
+        <path d="M 40 60 Q 100 40 160 55" fill="none" stroke="#334155" stroke-width="4" class="clickable" data-k="nucleoid"/>
+        <circle cx="140" cy="100" r="10" fill="#fbbf24" class="clickable" data-k="plasmid"/>
+        <circle cx="60" cy="100" r="4" fill="#64748b"/>
+        <circle cx="75" cy="55" r="4" fill="#64748b"/>
+        <circle cx="120" cy="115" r="4" fill="#64748b" class="clickable" data-k="ribosome"/>
+      </svg>
+    </div>
+    <div class="cellpanel">
+      <h4>Eukaryotic</h4>
+      <svg viewBox="0 0 200 160">
+        <ellipse cx="100" cy="80" rx="85" ry="55" fill="#f0f9f4" stroke="#2d6a4f" stroke-width="3" class="clickable" data-k="membrane"/>
+        <circle cx="100" cy="80" r="26" fill="#c7d2fe" stroke="#4338ca" stroke-width="2" class="clickable" data-k="nucleus"/>
+        <ellipse cx="150" cy="55" rx="16" ry="9" fill="#fca5a5" stroke="#b91c1c" stroke-width="2" class="clickable" data-k="mito"/>
+        <path d="M 45 110 q 10 -12 22 0 q 10 -12 22 0" fill="none" stroke="#94a3b8" stroke-width="3" class="clickable" data-k="er"/>
+      </svg>
+    </div>
+  </div>
+  <div id="desc">Click any structure above.</div>
+</div>
+<script>
+(function(){
+  var info = {
+    wall: 'Cell wall: rigid outer layer (peptidoglycan in bacteria) giving prokaryotic cells structural support.',
+    nucleoid: 'Nucleoid: the region where the single circular chromosome is concentrated — not membrane-bound.',
+    plasmid: 'Plasmid: small circular extrachromosomal DNA, often carrying conditionally useful genes like antibiotic resistance.',
+    ribosome: 'Ribosome (70S): translates mRNA into protein — smaller than the eukaryotic 80S ribosome, the target of several antibiotics.',
+    membrane: 'Plasma membrane: the eukaryotic cell\'s outer boundary, selectively permeable, underlying a much larger cell than most prokaryotes.',
+    nucleus: 'Nucleus: membrane-bound compartment housing the linear, histone-complexed chromosomes — the defining eukaryotic feature.',
+    mito: 'Mitochondrion: double-membrane, semi-autonomous organelle producing most of the cell\'s ATP via oxidative phosphorylation.',
+    er: 'Endoplasmic reticulum: part of the endomembrane system, involved in protein folding/lipid synthesis depending on rough vs. smooth region.'
+  };
+  var desc = document.getElementById('desc');
+  document.querySelectorAll('.clickable').forEach(function(el){
+    el.addEventListener('click', function(){
+      var k = el.getAttribute('data-k');
+      desc.textContent = info[k] || '';
+    });
+  });
+})();
+</script>
+</body>
+</html>

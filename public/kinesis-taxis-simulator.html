@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kinesis vs. Taxis Simulator | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .toggle { margin-bottom: 12px; }
+  .toggle button {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    color: #334155;
+    padding: 7px 14px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  .toggle button.active { background: #2d6a4f; color: #fff; border-color: #2d6a4f; }
+  .btn {
+    background: #1d70a2;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  .btn.secondary { background: #94a3b8; }
+  .readout {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-top: 12px;
+    font-size: 0.88rem;
+  }
+  .readout b { color: #1d70a2; }
+  .note { font-size: 0.8rem; color: #4b5563; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Kinesis vs. Taxis Simulator</h3>
+  <div class="subtitle">Dry on the left, humid on the right. Watch whether the same starting scatter clusters in the humid zone through undirected turning-rate changes (kinesis) or direct steering (taxis).</div>
+  <div class="toggle">
+    <button class="active" id="btnKinesis">Kinesis (woodlouse rule)</button>
+    <button id="btnTaxis">Taxis (directed)</button>
+  </div>
+  <svg id="arena" viewBox="0 0 560 220" width="100%" height="220" style="border-radius:12px;"></svg>
+  <div>
+    <button class="btn" id="stepBtn">Run 80 steps</button>
+    <button class="btn secondary" id="resetBtn">Reset scatter</button>
+  </div>
+  <div class="readout">In humid half (right): <b id="pctVal">50%</b> of individuals</div>
+  <div class="note" id="note">Kinesis: turning rate and overall activity (including brief pauses) are high in dry conditions and low in humid conditions — no steering toward humidity, yet individuals still end up concentrated there because they simply move around less once they arrive.</div>
+</div>
+<script>
+(function(){
+  var svg = document.getElementById('arena');
+  var mode = 'kinesis';
+  var W = 560, H = 220;
+  var N = 32;
+  var dots = [];
+
+  var defsHTML = '<defs><linearGradient id="grad" x1="0" y1="0" x2="1" y2="0">' +
+    '<stop offset="0%" stop-color="#fde68a"/><stop offset="100%" stop-color="#7fb8e0"/></linearGradient></defs>' +
+    '<rect x="0" y="0" width="' + W + '" height="' + H + '" fill="url(#grad)" opacity="0.35"/>' +
+    '<line x1="' + (W/2) + '" y1="0" x2="' + (W/2) + '" y2="' + H + '" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,4"/>' +
+    '<text x="20" y="18" font-size="11" fill="#92400e" font-weight="600">Dry</text>' +
+    '<text x="520" y="18" font-size="11" fill="#1d4ed8" font-weight="600">Humid</text>';
+
+  function humidityAt(x){
+    return x / W;
+  }
+
+  function makeDots(){
+    dots = [];
+    for (var i = 0; i < N; i++){
+      dots.push({
+        x: 40 + Math.random() * (W - 80),
+        y: 20 + Math.random() * (H - 40),
+        dir: Math.random() * Math.PI * 2,
+        pause: 0
+      });
+    }
+  }
+
+  function render(){
+    svg.innerHTML = defsHTML;
+    dots.forEach(function(d){
+      var c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      c.setAttribute('cx', d.x);
+      c.setAttribute('cy', d.y);
+      c.setAttribute('r', 5);
+      c.setAttribute('fill', '#2d6a4f');
+      c.setAttribute('opacity', '0.85');
+      svg.appendChild(c);
+    });
+    var inHumid = dots.filter(function(d){ return d.x > W/2; }).length;
+    document.getElementById('pctVal').textContent = Math.round(inHumid / N * 100) + '%';
+  }
+
+  function stepOnce(){
+    dots.forEach(function(d){
+      var h = humidityAt(d.x);
+      if (mode === 'kinesis'){
+        if (d.pause > 0){
+          d.pause--;
+        } else {
+          if (Math.random() < h * 0.6){
+            d.pause = 6 + Math.floor(Math.random() * 12);
+          } else {
+            var turnProb = 0.9 - 0.75 * h;
+            if (Math.random() < turnProb){
+              d.dir += (Math.random() - 0.5) * 3.0;
+            }
+            var speed = 6 - 3.5 * h;
+            d.x += Math.cos(d.dir) * speed;
+            d.y += Math.sin(d.dir) * speed;
+          }
+        }
+      } else {
+        var speed = 4;
+        d.x += speed * 0.7 + (Math.random() - 0.5) * 2;
+        d.y += (Math.random() - 0.5) * 3;
+      }
+      if (d.x < 10) { d.x = 10; }
+      if (d.x > W - 10) { d.x = W - 10; }
+      if (d.y < 10) { d.y = 10; }
+      if (d.y > H - 10) { d.y = H - 10; }
+    });
+  }
+
+  function runSteps(n){
+    for (var i = 0; i < n; i++){ stepOnce(); }
+    render();
+  }
+
+  document.getElementById('stepBtn').addEventListener('click', function(){ runSteps(80); });
+  document.getElementById('resetBtn').addEventListener('click', function(){ makeDots(); render(); });
+
+  document.getElementById('btnKinesis').addEventListener('click', function(){
+    mode = 'kinesis';
+    this.classList.add('active');
+    document.getElementById('btnTaxis').classList.remove('active');
+    document.getElementById('note').textContent = 'Kinesis: turning rate and overall activity (including brief pauses) are high in dry conditions and low in humid conditions — no steering toward humidity, yet individuals still end up concentrated there because they simply move around less once they arrive.';
+    makeDots();
+    render();
+  });
+  document.getElementById('btnTaxis').addEventListener('click', function(){
+    mode = 'taxis';
+    this.classList.add('active');
+    document.getElementById('btnKinesis').classList.remove('active');
+    document.getElementById('note').textContent = 'Taxis: movement is directly steered toward the humid side — a directed drift, not just a change in turning rate.';
+    makeDots();
+    render();
+  });
+
+  makeDots();
+  render();
+})();
+</script>
+</body>
+</html>

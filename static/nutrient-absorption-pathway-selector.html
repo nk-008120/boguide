@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nutrient Absorption Pathway Selector | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 660px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .toggle-row { display:flex; gap:8px; margin-bottom: 1rem; }
+  .toggle-btn {
+    flex: 1; padding: 8px 6px; border-radius: 999px; border: 2px solid #cbd5e1;
+    background: #f8fafc; font-size: 0.8rem; font-weight: 600; cursor: pointer; color:#475569;
+  }
+  .toggle-btn.active { background:#1d70a2; border-color:#1d70a2; color:#fff; }
+  .step-label { font-size: 0.82rem; color:#6b7280; text-align:center; margin-top: 0.6rem; }
+  svg text { font-family: 'Inter', system-ui, sans-serif; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Nutrient Absorption Pathway Selector</h3>
+  <div class="subtitle">Select a nutrient class, then click "Step" to animate its path from the intestinal lumen into either the blood capillary or the lymphatic lacteal.</div>
+  <div class="toggle-row">
+    <button class="toggle-btn active" data-mode="carb">Carbohydrate/protein</button>
+    <button class="toggle-btn" data-mode="lipid">Lipid</button>
+  </div>
+  <svg id="svgArea" viewBox="0 0 560 260" width="100%"></svg>
+  <div class="step-label" id="stepLabel"></div>
+  <div style="text-align:center; margin-top:0.6rem;">
+    <button id="stepBtn" style="background:#2d6a4f;color:#fff;border:none;border-radius:999px;padding:8px 18px;font-size:0.85rem;font-weight:600;cursor:pointer;">Step</button>
+    <button id="resetBtn" style="background:#f1f5f9;color:#334155;border:none;border-radius:999px;padding:8px 18px;font-size:0.85rem;font-weight:600;cursor:pointer;">Reset</button>
+  </div>
+</div>
+<script>
+(function(){
+  var NS = "http://www.w3.org/2000/svg";
+  var svg = document.getElementById('svgArea');
+  var stepLabel = document.getElementById('stepLabel');
+  var toggleBtns = document.querySelectorAll('.toggle-btn');
+  var mode = 'carb';
+  var step = 0;
+
+  var carbSteps = [
+    'Monosaccharide/amino acid in intestinal lumen',
+    'Na+-coupled cotransporter moves nutrient into epithelial cell (secondary active transport)',
+    'Nutrient exits epithelial cell at basolateral membrane',
+    'Enters the blood capillary directly'
+  ];
+  var lipidSteps = [
+    'Fatty acids/monoglycerides packaged into micelles in the lumen',
+    'Micelle contents diffuse across the brush border membrane (lipid-soluble)',
+    'Reassembled into triglycerides, packaged into chylomicrons in the epithelial cell',
+    'Chylomicrons exit into the lacteal (lymphatic capillary), not the blood capillary'
+  ];
+
+  function el(tag, attrs){
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs){ e.setAttribute(k, attrs[k]); }
+    return e;
+  }
+
+  function positionsFor(mode){
+    return [60, 200, 340, 480];
+  }
+
+  function render(){
+    svg.innerHTML = '';
+    var steps = mode === 'carb' ? carbSteps : lipidSteps;
+    var xs = positionsFor(mode);
+    var laneY = 140;
+
+    svg.appendChild(el('rect', {x:20, y:110, width:100, height:60, fill:'#fef3c7', stroke:'#b45309', rx:8}));
+    svg.appendChild(el('text', {x:30, y:105, 'font-size':11, fill:'#b45309', 'font-weight':700})).textContent = 'Lumen';
+    svg.appendChild(el('rect', {x:160, y:80, width:120, height:120, fill:'#f1f5f9', stroke:'#94a3b8', rx:8}));
+    svg.appendChild(el('text', {x:170, y:75, 'font-size':11, fill:'#334155', 'font-weight':700})).textContent = 'Epithelial cell';
+    if (mode === 'carb'){
+      svg.appendChild(el('rect', {x:420, y:110, width:120, height:60, fill:'#fee2e2', stroke:'#dc2626', rx:8}));
+      svg.appendChild(el('text', {x:430, y:105, 'font-size':11, fill:'#dc2626', 'font-weight':700})).textContent = 'Blood capillary';
+    } else {
+      svg.appendChild(el('rect', {x:420, y:110, width:120, height:60, fill:'#dcfce7', stroke:'#166534', rx:8}));
+      svg.appendChild(el('text', {x:430, y:105, 'font-size':11, fill:'#166534', 'font-weight':700})).textContent = 'Lacteal (lymphatic)';
+    }
+
+    var px = xs[Math.min(step, xs.length-1)];
+    svg.appendChild(el('circle', {cx: px, cy: laneY, r: 12, fill: mode === 'carb' ? '#dc2626' : '#166534'}));
+
+    var desc = el('text', {x: 280, y: 220, 'font-size':12, fill:'#1a472a', 'text-anchor':'middle', 'font-weight':600});
+    var wrapped = steps[step];
+    desc.textContent = wrapped;
+    svg.appendChild(desc);
+
+    var title = el('text', {x: 280, y: 20, 'font-size':13, 'font-weight':700, fill:'#1a472a', 'text-anchor':'middle'});
+    title.textContent = (mode === 'carb' ? 'Carbohydrate/protein pathway' : 'Lipid pathway') + ' — step ' + (step+1) + ' of ' + steps.length;
+    svg.appendChild(title);
+
+    stepLabel.textContent = 'Step ' + (step+1) + ' of ' + steps.length;
+  }
+
+  toggleBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      toggleBtns.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      mode = btn.dataset.mode;
+      step = 0;
+      render();
+    });
+  });
+
+  document.getElementById('stepBtn').addEventListener('click', function(){
+    var steps = mode === 'carb' ? carbSteps : lipidSteps;
+    if (step < steps.length - 1) step++;
+    render();
+  });
+  document.getElementById('resetBtn').addEventListener('click', function(){
+    step = 0;
+    render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "boguide-api",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Vercel serverless functions backing BiOrchive's login + leaderboard (api/). The Hugo static site itself has no build-time dependency on this package.",
+  "engines": {
+    "node": "22.x"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "js-yaml": "^4.1.0"
+  }
+}

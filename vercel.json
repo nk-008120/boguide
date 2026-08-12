@@ -1,0 +1,20 @@
+{
+  "redirects": [
+    {
+      "source": "/bionuggets",
+      "destination": "https://bionuggets2009.vercel.app/bionuggets",
+      "statusCode": 302
+    }
+  ],
+  "functions": {
+    "api/submit-attempt.js": {
+      "includeFiles": "data/papers/**"
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/keepalive",
+      "schedule": "0 6 * * *"
+    }
+  ]
+}

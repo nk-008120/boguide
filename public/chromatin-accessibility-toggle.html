@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chromatin Accessibility Toggle | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .slider-row { display: flex; align-items: center; gap: 12px; margin-bottom: 1rem; }
+  .slider-row input[type=range] { flex: 1; accent-color: #2d6a4f; }
+  #acetylVal { font-weight: 700; min-width: 90px; text-align: right; color: #2d6a4f; }
+  #chromSvg { width: 100%; height: 140px; background: #f8fafc; border-radius: 14px; }
+  #status { margin-top: 10px; padding: 10px; border-radius: 10px; font-size: 0.85rem; text-align: center; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Chromatin Accessibility Toggle</h3>
+  <div class="subtitle">Drag the histone acetylation slider and watch nucleosome packing loosen (euchromatin) or tighten (heterochromatin), and TF/polymerase access change accordingly.</div>
+  <div class="slider-row">
+    <input type="range" id="acetylSlider" min="0" max="100" value="20">
+    <span id="acetylVal">20% acetylated</span>
+  </div>
+  <svg id="chromSvg" viewBox="0 0 400 140"></svg>
+  <div id="status"></div>
+</div>
+<script>
+(function(){
+  var ns = 'http://www.w3.org/2000/svg';
+  var svg = document.getElementById('chromSvg');
+  var slider = document.getElementById('acetylSlider');
+  var acetylVal = document.getElementById('acetylVal');
+  var status = document.getElementById('status');
+
+  function draw(pct){
+    svg.innerHTML = '';
+    var spread = 10 + (pct/100) * 30;
+    var n = 6;
+    var startX = 40;
+    var y = 60;
+    var prevX = null;
+    for (var i = 0; i < n; i++){
+      var x = startX + i * (24 + spread);
+      if (prevX !== null){
+        var line = document.createElementNS(ns,'line');
+        line.setAttribute('x1', prevX); line.setAttribute('y1', y);
+        line.setAttribute('x2', x); line.setAttribute('y2', y);
+        line.setAttribute('stroke', '#334155'); line.setAttribute('stroke-width','2');
+        svg.appendChild(line);
+      }
+      var bead = document.createElementNS(ns,'circle');
+      bead.setAttribute('cx', x); bead.setAttribute('cy', y); bead.setAttribute('r', 14);
+      bead.setAttribute('fill', pct > 50 ? '#93c5fd' : '#475569');
+      svg.appendChild(bead);
+      prevX = x;
+    }
+
+    if (pct > 50){
+      var tf = document.createElementNS(ns,'circle');
+      tf.setAttribute('cx', startX + 2*(24+spread)); tf.setAttribute('cy', 100); tf.setAttribute('r', 8); tf.setAttribute('fill', '#22c55e');
+      svg.appendChild(tf);
+      var tflabel = document.createElementNS(ns,'text');
+      tflabel.setAttribute('x', startX + 2*(24+spread)); tflabel.setAttribute('y', 122); tflabel.setAttribute('font-size',9); tflabel.setAttribute('text-anchor','middle'); tflabel.setAttribute('fill','#166534');
+      tflabel.textContent = 'TF/Pol II bound';
+      svg.appendChild(tflabel);
+    } else {
+      var blockedLabel = document.createElementNS(ns,'text');
+      blockedLabel.setAttribute('x', 200); blockedLabel.setAttribute('y', 122); blockedLabel.setAttribute('font-size',9); blockedLabel.setAttribute('text-anchor','middle'); blockedLabel.setAttribute('fill','#991b1b');
+      blockedLabel.textContent = 'DNA inaccessible to TF/Pol II';
+      svg.appendChild(blockedLabel);
+    }
+  }
+
+  function update(){
+    var pct = parseInt(slider.value, 10);
+    acetylVal.textContent = pct + '% acetylated';
+    draw(pct);
+    if (pct > 50){
+      status.textContent = 'Euchromatin — loosely packed, transcriptionally accessible';
+      status.style.background = '#dcfce7'; status.style.color = '#166534';
+    } else {
+      status.textContent = 'Heterochromatin — densely packed, transcriptionally silent';
+      status.style.background = '#fee2e2'; status.style.color = '#991b1b';
+    }
+  }
+
+  slider.addEventListener('input', update);
+  update();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cross-Bridge Cycle Stepper | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .controls { display: flex; gap: 10px; align-items:center; margin-bottom: 1rem; }
+  button {
+    background: #2d6a4f; color: #fff; border: none; border-radius: 999px;
+    padding: 8px 18px; font-size: 0.85rem; font-weight: 600; cursor: pointer;
+  }
+  button.secondary { background: #f1f5f9; color: #334155; }
+  .step-label { font-size: 0.8rem; color: #6b7280; margin-left: auto; }
+  .readout { margin-top: 0.8rem; background:#eef2e6; border-radius:12px; padding:10px 14px; font-size:0.85rem; }
+  .readout b { color:#2d6a4f; }
+  svg text { font-family: 'Inter', system-ui, sans-serif; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Cross-Bridge Cycle Stepper</h3>
+  <div class="subtitle">Click "Step" to advance the myosin head through one full cross-bridge cycle. Watch the nucleotide state at each step and the thin filament sliding after each cycle completes.</div>
+  <div class="controls">
+    <button id="stepBtn">Step</button>
+    <button id="resetBtn" class="secondary">Reset</button>
+    <span class="step-label" id="stepLabel"></span>
+  </div>
+  <svg id="svgArea" viewBox="0 0 560 220" width="100%"></svg>
+  <div class="readout" id="readout"></div>
+</div>
+<script>
+(function(){
+  var NS = "http://www.w3.org/2000/svg";
+  var svg = document.getElementById('svgArea');
+  var stepBtn = document.getElementById('stepBtn');
+  var resetBtn = document.getElementById('resetBtn');
+  var stepLabel = document.getElementById('stepLabel');
+  var readout = document.getElementById('readout');
+
+  var steps = [
+    {name: 'Cross-bridge formation', nucleotide: 'ADP + Pi (bound)', desc: 'Myosin head binds the now-exposed site on actin.', angle: 0, gap: 0},
+    {name: 'Power stroke', nucleotide: 'Pi released, then ADP', desc: 'Head pivots, pulling the thin filament toward the sarcomere center.', angle: -35, gap: 0},
+    {name: 'Rigor', nucleotide: 'None (no bound nucleotide)', desc: 'Myosin remains tightly bound — the rigor state (rigor mortis without fresh ATP).', angle: -35, gap: 0},
+    {name: 'Detachment', nucleotide: 'Fresh ATP binds', desc: 'ATP binding causes myosin to release actin.', angle: -35, gap: 22},
+    {name: 'Cocking', nucleotide: 'ATP hydrolyzed → ADP + Pi', desc: 'Myosin re-cocks to its high-energy conformation, ready to bind the next site.', angle: 0, gap: 22}
+  ];
+
+  var stepIdx = 0;
+  var cycleCount = 0;
+  var actinOffset = 0;
+  var slideAmount = 40;
+
+  function el(tag, attrs){
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs){ e.setAttribute(k, attrs[k]); }
+    return e;
+  }
+
+  function render(){
+    svg.innerHTML = '';
+    var s = steps[stepIdx];
+    var baseX = 460, baseY = 80;
+
+    svg.appendChild(el('rect', {x: 380, y: 100, width: 160, height: 14, fill:'#94a3b8', rx:4}));
+    var mLabel = el('text', {x: 385, y: 132, 'font-size':11, fill:'#475569'});
+    mLabel.textContent = 'Thick filament (myosin)';
+    svg.appendChild(mLabel);
+
+    var thinX = 20 - actinOffset - (s.gap ? 0 : 0);
+    svg.appendChild(el('rect', {x: thinX, y: 60, width: 480, height: 10, fill:'#f59e0b', rx:4}));
+    var aLabel = el('text', {x: thinX+4, y: 55, 'font-size':11, fill:'#b45309'});
+    aLabel.textContent = 'Thin filament (actin) — binding site marked ●';
+    svg.appendChild(aLabel);
+
+    var siteX = baseX - actinOffset;
+    svg.appendChild(el('circle', {cx: siteX, cy: 65, r:5, fill:'#dc2626'}));
+
+    var armLen = 55;
+    var angleRad = s.angle * Math.PI/180;
+    var tipX = baseX - armLen*Math.cos(-angleRad*0 + 0);
+    var pivotX = baseX, pivotY = baseY+20;
+    var headAngle = s.angle;
+    var rad = headAngle*Math.PI/180;
+    var headX = pivotX - armLen*Math.cos(0) ;
+
+    var armX2 = pivotX - 70*Math.cos(rad);
+    var armY2 = pivotY + 70*Math.sin(-rad) - (s.gap || 0);
+    svg.appendChild(el('line', {x1: pivotX, y1: pivotY-20, x2: armX2, y2: 65 - (s.gap||0), stroke:'#2d6a4f', 'stroke-width':6, 'stroke-linecap':'round'}));
+    svg.appendChild(el('circle', {cx: armX2, cy: 65-(s.gap||0), r: 10, fill:'#2d6a4f'}));
+
+    var badge = el('text', {x: armX2-10, y: 65-(s.gap||0)-18, 'font-size':10, fill:'#1a472a', 'font-weight':700});
+    badge.textContent = s.nucleotide;
+    svg.appendChild(badge);
+
+    var title = el('text', {x: 280, y: 20, 'font-size':14, 'font-weight':700, fill:'#1a472a', 'text-anchor':'middle'});
+    title.textContent = 'Step ' + (stepIdx+1) + ' of 5: ' + s.name;
+    svg.appendChild(title);
+
+    var cycleTxt = el('text', {x: 280, y: 200, 'font-size':11, fill:'#6b7280', 'text-anchor':'middle'});
+    cycleTxt.textContent = 'Completed cycles: ' + cycleCount + ' (each full cycle slides the thin filament ' + slideAmount + 'px toward the sarcomere center)';
+    svg.appendChild(cycleTxt);
+
+    stepLabel.textContent = 'Step ' + (stepIdx+1) + '/5';
+    readout.innerHTML = '<b>' + s.name + '</b> — ' + s.desc + ' Nucleotide state: <b>' + s.nucleotide + '</b>.';
+  }
+
+  stepBtn.addEventListener('click', function(){
+    stepIdx++;
+    if (stepIdx >= steps.length){
+      stepIdx = 0;
+      cycleCount++;
+      actinOffset += slideAmount;
+    }
+    render();
+  });
+
+  resetBtn.addEventListener('click', function(){
+    stepIdx = 0; cycleCount = 0; actinOffset = 0;
+    render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

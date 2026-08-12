@@ -1,0 +1,20 @@
+{{- /* Lists every year on file for one olympiad programme.
+     Usage: {{< papers-years olympiad="tbo" >}} on the programme's _index.md.
+     Reads data/papers/<olympiad>/index.yaml (metadata) + one file per year. */ -}}
+{{- $olId := .Get "olympiad" -}}
+{{- $ol := index hugo.Data.papers $olId -}}
+{{- $meta := $ol.index -}}
+<div class="papers-hero">
+  {{ with $meta.tag }}<span class="papers-tag">{{ . }}</span>{{ end }}
+  {{ with $meta.summary }}<p class="papers-summary">{{ . }}</p>{{ end }}
+</div>
+<div class="papers-grid">
+  {{- range $yearId, $yearData := $ol }}
+    {{- if ne $yearId "index" }}
+    <a class="papers-card" href="{{ $.Page.RelPermalink }}{{ $yearId }}/">
+      <span class="papers-card-title">{{ $yearData.name | default $yearId }}</span>
+      <span class="papers-card-meta">{{ len $yearData.rounds }} round{{ if ne (len $yearData.rounds) 1 }}s{{ end }}</span>
+    </a>
+    {{- end }}
+  {{- end }}
+</div>

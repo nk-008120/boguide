@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ribosome Translocation Animator | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .controls { display: flex; gap: 10px; align-items: center; justify-content: center; margin-bottom: 1rem; }
+  .controls button { background: #2d6a4f; color: #fff; border: none; border-radius: 999px; padding: 8px 18px; font-size: 0.82rem; cursor: pointer; }
+  .controls button:disabled { background: #cbd5e1; cursor: not-allowed; }
+  #stepLabel { font-weight: 700; min-width: 220px; text-align: center; }
+  #riboSvg { width: 100%; height: 200px; background: #f8fafc; border-radius: 14px; }
+  #desc { margin-top: 10px; padding: 10px; background: #f1f5f9; border-radius: 10px; font-size: 0.84rem; min-height: 40px; }
+  #chainLabel { text-align: center; margin-top: 6px; font-size: 0.8rem; color: #64748b; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Ribosome Translocation: Elongation Cycle</h3>
+  <div class="subtitle">Step through initiation, then repeated elongation cycles (A-site charging, peptide bond formation, translocation), then termination — watch the growing polypeptide chain extend each cycle.</div>
+  <div class="controls">
+    <button id="prevBtn">&larr; Prev</button>
+    <div id="stepLabel"></div>
+    <button id="nextBtn">Next &rarr;</button>
+  </div>
+  <svg id="riboSvg" viewBox="0 0 400 200"></svg>
+  <div id="desc"></div>
+  <div id="chainLabel"></div>
+</div>
+<script>
+(function(){
+  var ns = 'http://www.w3.org/2000/svg';
+  var svg = document.getElementById('riboSvg');
+  var steps = [
+    { label: 'Initiation', chain: 0, desc: 'Small subunit + initiator tRNA (Met) assemble at the AUG start codon; large subunit joins, positioning Met-tRNA in the P site.', sites: {P:'Met'} },
+    { label: 'Elongation 1: A-site charging', chain: 0, desc: 'A charged tRNA matching the next codon enters the A site.', sites: {P:'Met', A:'aa2'} },
+    { label: 'Elongation 1: peptide bond', chain: 1, desc: 'Peptide bond forms between the P-site and A-site amino acids — the chain is now 2 residues.', sites: {P:'Met', A:'aa2-bonded'} },
+    { label: 'Elongation 1: translocation', chain: 1, desc: 'The ribosome translocates one codon; tRNAs shift A->P and P->E; the A site is now free for the next tRNA.', sites: {E:'(empty tRNA)', P:'aa2'} },
+    { label: 'Elongation 2: A-site charging', chain: 1, desc: 'A new charged tRNA enters the now-empty A site.', sites: {P:'aa2', A:'aa3'} },
+    { label: 'Elongation 2: peptide bond', chain: 2, desc: 'Another peptide bond forms — the chain is now 3 residues.', sites: {P:'aa2', A:'aa3-bonded'} },
+    { label: 'Termination', chain: 2, desc: 'A stop codon enters the A site; no tRNA recognises it. A release factor binds, hydrolysing the completed polypeptide and disassembling the ribosome.', sites: {} }
+  ];
+  var idx = 0;
+  var stepLabel = document.getElementById('stepLabel');
+  var desc = document.getElementById('desc');
+  var chainLabel = document.getElementById('chainLabel');
+
+  function draw(sites, chainLen){
+    svg.innerHTML = '';
+    function rect(x,y,w,h,fill){
+      var r = document.createElementNS(ns,'rect');
+      r.setAttribute('x',x);r.setAttribute('y',y);r.setAttribute('width',w);r.setAttribute('height',h);r.setAttribute('fill',fill);r.setAttribute('rx','6');
+      svg.appendChild(r);
+    }
+    function label(x,y,text,size,color){
+      var t = document.createElementNS(ns,'text');
+      t.setAttribute('x',x);t.setAttribute('y',y);t.setAttribute('font-size',size||10);t.setAttribute('fill',color||'#334155');t.setAttribute('text-anchor','middle');
+      t.textContent = text;
+      svg.appendChild(t);
+    }
+
+    var line = document.createElementNS(ns,'line');
+    line.setAttribute('x1',20);line.setAttribute('y1',150);line.setAttribute('x2',380);line.setAttribute('y2',150);
+    line.setAttribute('stroke','#94a3b8');line.setAttribute('stroke-width','3');
+    svg.appendChild(line);
+
+    rect(100,60,200,80,'#c7d2fe');
+    label(200,50,'Ribosome (large + small subunit)',9,'#4338ca');
+
+    var sitePositions = { E: 140, P: 200, A: 260 };
+    ['E','P','A'].forEach(function(s){
+      rect(sitePositions[s]-18, 100, 36, 30, '#e2e8f0');
+      label(sitePositions[s], 145, s + ' site', 9, '#64748b');
+      if (sites[s]){
+        var occ = document.createElementNS(ns,'circle');
+        occ.setAttribute('cx', sitePositions[s]); occ.setAttribute('cy', 115); occ.setAttribute('r', 10);
+        occ.setAttribute('fill', s === 'A' && sites[s].indexOf('bonded') !== -1 ? '#166534' : '#f59e0b');
+        svg.appendChild(occ);
+      }
+    });
+
+    for (var i = 0; i < chainLen; i++){
+      var bead = document.createElementNS(ns,'circle');
+      bead.setAttribute('cx', 200 - (chainLen - 1 - i) * 10);
+      bead.setAttribute('cy', 40 + i*0);
+      bead.setAttribute('cy', 90);
+      bead.setAttribute('r', 5);
+      bead.setAttribute('fill', '#2d6a4f');
+      svg.appendChild(bead);
+    }
+  }
+
+  function update(){
+    var s = steps[idx];
+    stepLabel.textContent = s.label + ' (' + (idx+1) + '/' + steps.length + ')';
+    desc.textContent = s.desc;
+    draw(s.sites, s.chain);
+    chainLabel.textContent = 'Growing polypeptide length: ' + s.chain + ' residue' + (s.chain===1?'':'s');
+    document.getElementById('prevBtn').disabled = idx === 0;
+    document.getElementById('nextBtn').disabled = idx === steps.length - 1;
+  }
+
+  document.getElementById('prevBtn').addEventListener('click', function(){ if (idx>0){idx--; update();} });
+  document.getElementById('nextBtn').addEventListener('click', function(){ if (idx<steps.length-1){idx++; update();} });
+  update();
+})();
+</script>
+</body>
+</html>

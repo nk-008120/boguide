@@ -1,0 +1,27 @@
+{{- /* Emits a round's full problem/statement/subject data as a JSON blob for the
+     client-side timed-attempt controller (assets/js/papers-attempt.js) to consume.
+     Usage: {{< papers-attempt olympiad="ibo" year="2022" round="theoretical-1" >}}
+     Same underlying YAML as papers-quiz.html — single source of truth, just
+     exported wholesale instead of looked up one problem at a time. Note: like
+     papers-quiz.html, this embeds real answers in page source — there is no
+     backend, so there is no way to truly hide them from someone reading
+     devtools. That's an accepted, unenforceable-by-design tradeoff of a
+     stateless quiz, not a bug to fix here. */ -}}
+{{- $olId := .Get "olympiad" -}}
+{{- $yearId := .Get "year" -}}
+{{- $roundId := .Get "round" -}}
+{{- $ol := index hugo.Data.papers $olId -}}
+{{- $yearData := index $ol $yearId -}}
+{{- $round := dict -}}
+{{- range $yearData.rounds }}{{ if eq .id $roundId }}{{ $round = . }}{{ end }}{{ end -}}
+{{- $basePath := printf "/papers/%s/%s/%s/" $olId $yearId $roundId -}}
+{{- $payload := dict
+  "olympiad" $olId
+  "year" $yearId
+  "roundId" $roundId
+  "roundName" $round.name
+  "durationMinutes" ($round.durationMinutes | default 180)
+  "basePath" $basePath
+  "problems" $round.problems
+-}}
+<script id="papers-attempt-data" type="application/json">{{ jsonify $payload | safeJS }}</script>

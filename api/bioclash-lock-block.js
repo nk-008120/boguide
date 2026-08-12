@@ -1,0 +1,123 @@
+const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
+const { loadPaper, findBlock, toClientBlock, blocksRevealedByLock } = require('./_lib/bioclash');
+
+module.exports = async (req, res) => {
+  if (req.method !== 'POST') {
+    res.status(405).json({ error: 'Method not allowed' });
+    return;
+  }
+  try {
+    const authHeader = req.headers.authorization || '';
+    const token = authHeader.startsWith('Bearer ') ? authHeader.slice(7) : null;
+    if (!token) {
+      res.status(401).json({ error: 'Missing Authorization header' });
+      return;
+    }
+
+    const anon = getAnonClient();
+    const { data: userData, error: userError } = await anon.auth.getUser(token);
+    if (userError || !userData || !userData.user) {
+      res.status(401).json({ error: 'Invalid session' });
+      return;
+    }
+    const userId = userData.user.id;
+
+    const { paperId, blockId, componentAnswers, fullscreenExits, visibilityLosses, sessionToken } = req.body || {};
+    const paper = loadPaper(paperId);
+    if (!paper) {
+      res.status(400).json({ error: 'Unknown paper' });
+      return;
+    }
+    const paperBlock = findBlock(paper, blockId);
+    if (!paperBlock) {
+      res.status(400).json({ error: 'Unknown block' });
+      return;
+    }
+    if (!paperBlock.locksAfterSubmit) {
+      res.status(400).json({ error: 'This block is recoverable — use save-draft instead.' });
+      return;
+    }
+    if (!componentAnswers || typeof componentAnswers !== 'object') {
+      res.status(400).json({ error: 'componentAnswers must be an object' });
+      return;
+    }
+
+    const admin = getAdminClient();
+
+    const { data: attempt, error: attemptError } = await admin
+      .from('bioclash_attempts')
+      .select('id, status, end_at, active_session_token')
+      .eq('user_id', userId)
+      .eq('paper_id', paperId)
+      .maybeSingle();
+    if (attemptError) throw attemptError;
+    if (!attempt || attempt.status !== 'in_progress') {
+      res.status(409).json({ error: 'No active attempt' });
+      return;
+    }
+
+    if (new Date(attempt.end_at).getTime() <= Date.now()) {
+      res.status(409).json({ error: 'Time has expired' });
+      return;
+    }
+
+    if (!sessionToken || sessionToken !== attempt.active_session_token) {
+      res.status(409).json({ error: 'This attempt is now active in another tab or device.', reason: 'superseded' });
+      return;
+    }
+
+    const { data: lockedRow, error: lockError } = await admin
+      .from('bioclash_attempt_blocks')
+      .update({ status: 'locked', locked_at: new Date().toISOString(), updated_at: new Date().toISOString(), answer: componentAnswers })
+      .eq('attempt_id', attempt.id)
+      .eq('block_id', blockId)
+      .eq('status', 'active')
+      .select('id')
+      .maybeSingle();
+    if (lockError) throw lockError;
+    if (!lockedRow) {
+      res.status(409).json({ error: 'This block is already locked.' });
+      return;
+    }
+
+    const revealedBlocks = [];
+    for (const revealPaperBlock of blocksRevealedByLock(paper, paperBlock)) {
+      const { data: existingReveal, error: existingRevealError } = await admin
+        .from('bioclash_attempt_blocks')
+        .select('id, status, answer')
+        .eq('attempt_id', attempt.id)
+        .eq('block_id', revealPaperBlock.id)
+        .maybeSingle();
+      if (existingRevealError) throw existingRevealError;
+
+      let revealRow = existingReveal;
+      if (!revealRow) {
+        const { data: created, error: createError } = await admin
+          .from('bioclash_attempt_blocks')
+          .insert({ attempt_id: attempt.id, block_id: revealPaperBlock.id })
+          .select('id, status, answer')
+          .single();
+        if (createError) throw createError;
+        revealRow = created;
+      }
+
+      revealedBlocks.push({
+        ...toClientBlock(revealPaperBlock, userId),
+        status: revealRow.status,
+        answer: revealRow.answer
+      });
+    }
+
+    if (Number.isFinite(fullscreenExits) || Number.isFinite(visibilityLosses)) {
+      const patch = {};
+      if (Number.isFinite(fullscreenExits)) patch.fullscreen_exits = fullscreenExits;
+      if (Number.isFinite(visibilityLosses)) patch.visibility_losses = visibilityLosses;
+      await admin.from('bioclash_attempts').update(patch).eq('id', attempt.id);
+    }
+
+    res.status(200).json({ ok: true, locked: blockId, revealedBlocks });
+  } catch (err) {
+    console.error('bioclash-lock-block failed:', err);
+    res.status(500).json({ error: 'Could not lock block' });
+  }
+};

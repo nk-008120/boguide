@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Membrane Transport Simulator | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .modebtns { display: flex; gap: 6px; margin-bottom: 1rem; flex-wrap: wrap; }
+  .modebtns button { flex: 1; min-width: 120px; padding: 8px; border-radius: 10px; border: 2px solid #e2e8f0; background: #f8fafc; cursor: pointer; font-size: 0.76rem; font-weight: 700; }
+  .modebtns button.active { background: #2d6a4f; color: #fff; border-color: #2d6a4f; }
+  .slider-row { display: flex; align-items: center; gap: 10px; margin-bottom: 1rem; }
+  .slider-row input[type=range] { flex: 1; accent-color: #2d6a4f; }
+  #membraneSvg { width: 100%; height: 140px; background: #f8fafc; border-radius: 14px; }
+  #energyNote { text-align: center; margin-top: 10px; padding: 8px; border-radius: 10px; font-size: 0.82rem; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Membrane Transport Mode Simulator</h3>
+  <div class="subtitle">Set the gradient direction with the slider, pick a transport mode, and watch solute movement direction/rate and energy cost update.</div>
+  <div class="modebtns">
+    <button id="btnSimple" class="active">Simple diffusion</button>
+    <button id="btnFacilitated">Facilitated diffusion</button>
+    <button id="btnActive">Active transport</button>
+  </div>
+  <div class="slider-row">
+    <span style="font-size:0.78rem;">Low outside</span>
+    <input type="range" id="gradSlider" min="-1" max="1" step="0.01" value="0.6">
+    <span style="font-size:0.78rem;">High outside</span>
+  </div>
+  <svg id="membraneSvg" viewBox="0 0 400 140"></svg>
+  <div id="energyNote"></div>
+</div>
+<script>
+(function(){
+  var ns = 'http://www.w3.org/2000/svg';
+  var svg = document.getElementById('membraneSvg');
+  var mode = 'simple';
+  var slider = document.getElementById('gradSlider');
+
+  document.getElementById('btnSimple').addEventListener('click', function(){ setMode('simple', this); });
+  document.getElementById('btnFacilitated').addEventListener('click', function(){ setMode('facilitated', this); });
+  document.getElementById('btnActive').addEventListener('click', function(){ setMode('active', this); });
+  slider.addEventListener('input', render);
+
+  function setMode(m, btn){
+    mode = m;
+    document.querySelectorAll('.modebtns button').forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    render();
+  }
+
+  function render(){
+    svg.innerHTML = '';
+    var grad = parseFloat(slider.value);
+    var membraneY1 = 55, membraneY2 = 85;
+    var rect = document.createElementNS(ns,'rect');
+    rect.setAttribute('x',0);rect.setAttribute('y',membraneY1);rect.setAttribute('width',400);rect.setAttribute('height',membraneY2-membraneY1);
+    rect.setAttribute('fill','#fde68a'); rect.setAttribute('opacity','0.6');
+    svg.appendChild(rect);
+
+    var passiveDir = grad > 0 ? 1 : -1;
+    var actualDir, energyReq, rateLabel;
+    if (mode === 'simple'){
+      actualDir = passiveDir;
+      energyReq = 'No energy required — moves down its own gradient.';
+      rateLabel = 'No protein needed.';
+    } else if (mode === 'facilitated'){
+      actualDir = passiveDir;
+      energyReq = 'No direct energy required — moves down its gradient via a channel/carrier protein.';
+      rateLabel = 'Protein-assisted, still passive.';
+      drawProtein();
+    } else {
+      actualDir = -passiveDir;
+      energyReq = 'Requires direct energy input (e.g. ATP hydrolysis) — moves against its own gradient.';
+      rateLabel = 'Pump protein, energy-coupled.';
+      drawProtein();
+    }
+
+    var arrow = document.createElementNS(ns,'line');
+    var startY = actualDir > 0 ? 30 : 110;
+    var endY = actualDir > 0 ? 110 : 30;
+    arrow.setAttribute('x1',200);arrow.setAttribute('y1',startY);arrow.setAttribute('x2',200);arrow.setAttribute('y2',endY);
+    arrow.setAttribute('stroke','#2d6a4f');arrow.setAttribute('stroke-width','4');arrow.setAttribute('marker-end','url(#arrowhead)');
+    var defs = document.createElementNS(ns,'defs');
+    var marker = document.createElementNS(ns,'marker');
+    marker.setAttribute('id','arrowhead');marker.setAttribute('markerWidth','8');marker.setAttribute('markerHeight','8');marker.setAttribute('refX','4');marker.setAttribute('refY','4');marker.setAttribute('orient','auto');
+    var path = document.createElementNS(ns,'path');
+    path.setAttribute('d','M0,0 L8,4 L0,8 Z'); path.setAttribute('fill','#2d6a4f');
+    marker.appendChild(path); defs.appendChild(marker); svg.appendChild(defs);
+    svg.appendChild(arrow);
+
+    function drawProtein(){
+      var p = document.createElementNS(ns,'rect');
+      p.setAttribute('x',190);p.setAttribute('y',membraneY1-5);p.setAttribute('width',20);p.setAttribute('height',(membraneY2-membraneY1)+10);
+      p.setAttribute('fill','#7c3aed');p.setAttribute('rx','6');
+      svg.appendChild(p);
+    }
+
+    var label = document.createElementNS(ns,'text');
+    label.setAttribute('x',10);label.setAttribute('y',15);label.setAttribute('font-size',10);label.setAttribute('fill','#64748b');
+    label.textContent = 'Outside';
+    svg.appendChild(label);
+    var label2 = document.createElementNS(ns,'text');
+    label2.setAttribute('x',10);label2.setAttribute('y',132);label2.setAttribute('font-size',10);label2.setAttribute('fill','#64748b');
+    label2.textContent = 'Inside (cytoplasm)';
+    svg.appendChild(label2);
+
+    var note = document.getElementById('energyNote');
+    note.textContent = energyReq + ' ' + rateLabel;
+    note.style.background = mode === 'active' ? '#fef9c3' : '#dcfce7';
+    note.style.color = mode === 'active' ? '#92400e' : '#166534';
+  }
+
+  render();
+})();
+</script>
+</body>
+</html>

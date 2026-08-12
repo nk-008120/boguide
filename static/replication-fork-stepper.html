@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Replication Fork Step-Through | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .controls { display: flex; gap: 10px; align-items: center; justify-content: center; margin-bottom: 1rem; }
+  .controls button { background: #2d6a4f; color: #fff; border: none; border-radius: 999px; padding: 8px 18px; font-size: 0.82rem; cursor: pointer; }
+  .controls button:disabled { background: #cbd5e1; cursor: not-allowed; }
+  #stepLabel { font-weight: 700; min-width: 200px; text-align: center; }
+  #forkSvg { width: 100%; height: 220px; background: #f8fafc; border-radius: 14px; }
+  #desc { margin-top: 10px; padding: 10px; background: #f1f5f9; border-radius: 10px; font-size: 0.84rem; min-height: 40px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Replication Fork: Step Through</h3>
+  <div class="subtitle">Step through the enzymes acting at a single replication fork, from unwinding to Okazaki fragment ligation.</div>
+  <div class="controls">
+    <button id="prevBtn">&larr; Prev</button>
+    <div id="stepLabel"></div>
+    <button id="nextBtn">Next &rarr;</button>
+  </div>
+  <svg id="forkSvg" viewBox="0 0 400 220"></svg>
+  <div id="desc"></div>
+</div>
+<script>
+(function(){
+  var ns = 'http://www.w3.org/2000/svg';
+  var svg = document.getElementById('forkSvg');
+  var steps = [
+    { label: 'Unwinding', desc: 'Helicase unwinds the parental duplex at the origin, separating the two template strands and opening the fork.', show: ['parent','helicase'] },
+    { label: 'SSB coating', desc: 'Single-strand binding proteins coat the exposed single strands, preventing them from re-annealing before synthesis reaches them.', show: ['parent','helicase','ssb'] },
+    { label: 'Primer laid', desc: 'Primase synthesises a short RNA primer, providing the free 3\'-OH end DNA polymerase requires to begin extension.', show: ['parent','helicase','ssb','primer'] },
+    { label: 'Leading strand synthesis', desc: 'DNA polymerase extends the leading strand continuously, 5\'->3\', in the same direction the fork is opening — needs only one primer.', show: ['parent','helicase','ssb','primer','leading'] },
+    { label: 'Lagging strand: Okazaki fragments', desc: 'The lagging strand is synthesised discontinuously as separate Okazaki fragments, each newly primed, in the direction opposite to fork movement.', show: ['parent','helicase','ssb','leading','okazaki'] },
+    { label: 'Ligation', desc: 'RNA primers on the lagging strand are removed and replaced with DNA; ligase seals the nicks between adjacent Okazaki fragments into one continuous strand.', show: ['parent','helicase','ssb','leading','okazaki','ligated'] }
+  ];
+  var idx = 0;
+  var stepLabel = document.getElementById('stepLabel');
+  var desc = document.getElementById('desc');
+
+  function draw(show){
+    svg.innerHTML = '';
+    function line(x1,y1,x2,y2,color,w,dash){
+      var l = document.createElementNS(ns,'line');
+      l.setAttribute('x1',x1);l.setAttribute('y1',y1);l.setAttribute('x2',x2);l.setAttribute('y2',y2);
+      l.setAttribute('stroke',color);l.setAttribute('stroke-width',w);l.setAttribute('stroke-linecap','round');
+      if (dash) l.setAttribute('stroke-dasharray', dash);
+      svg.appendChild(l);
+    }
+    function label(x,y,text,size,color){
+      var t = document.createElementNS(ns,'text');
+      t.setAttribute('x',x);t.setAttribute('y',y);t.setAttribute('font-size',size||10);t.setAttribute('fill',color||'#334155');
+      t.textContent = text;
+      svg.appendChild(t);
+    }
+
+    line(20, 40, 180, 40, '#94a3b8', 4);
+    line(20, 60, 180, 60, '#94a3b8', 4);
+    line(180, 40, 360, 15, '#94a3b8', 4);
+    line(180, 60, 360, 100, '#94a3b8', 4);
+    label(15, 30, "Parental DNA", 10, '#64748b');
+    if (show.indexOf('helicase') !== -1){
+      var hx = document.createElementNS(ns,'circle');
+      hx.setAttribute('cx',180);hx.setAttribute('cy',50);hx.setAttribute('r',12);hx.setAttribute('fill','#7c3aed');
+      svg.appendChild(hx);
+      label(160,80,'Helicase',10,'#7c3aed');
+    }
+    if (show.indexOf('ssb') !== -1){
+      [200,220,240].forEach(function(x,i){
+        var c = document.createElementNS(ns,'circle');
+        c.setAttribute('cx',x);c.setAttribute('cy',20+i*3);c.setAttribute('r',5);c.setAttribute('fill','#fbbf24');
+        svg.appendChild(c);
+      });
+      label(200,105,'SSB proteins',10,'#b45309');
+    }
+    if (show.indexOf('primer') !== -1){
+      line(200, 100, 230, 96, '#22c55e', 3);
+      label(200,118,'RNA primer',9,'#16a34a');
+    }
+    if (show.indexOf('leading') !== -1){
+      line(180, 15, 370, -12 > 0 ? 5 : 5, '#1d70a2', 3);
+      line(200, 12, 360, -8, '#1d70a2', 3);
+      label(250,5,'Leading strand (continuous)',9,'#1d70a2');
+    }
+    if (show.indexOf('okazaki') !== -1){
+      line(210, 95, 250, 105, '#d9534f', 3);
+      line(260, 108, 300, 118, '#d9534f', 3);
+      line(310, 121, 350, 131, '#d9534f', 3);
+      label(230,145,'Okazaki fragments (lagging)',9,'#d9534f');
+    }
+    if (show.indexOf('ligated') !== -1){
+      var g = document.createElementNS(ns,'circle');
+      g.setAttribute('cx',280);g.setAttribute('cy',112);g.setAttribute('r',6);g.setAttribute('fill','#166534');
+      svg.appendChild(g);
+      label(260,175,'Ligase seals nicks between fragments',9,'#166534');
+    }
+  }
+
+  function update(){
+    var s = steps[idx];
+    stepLabel.textContent = s.label + ' (' + (idx+1) + '/' + steps.length + ')';
+    desc.textContent = s.desc;
+    draw(s.show);
+    document.getElementById('prevBtn').disabled = idx === 0;
+    document.getElementById('nextBtn').disabled = idx === steps.length - 1;
+  }
+
+  document.getElementById('prevBtn').addEventListener('click', function(){ if (idx>0){idx--; update();} });
+  document.getElementById('nextBtn').addEventListener('click', function(){ if (idx<steps.length-1){idx++; update();} });
+  update();
+})();
+</script>
+</body>
+</html>

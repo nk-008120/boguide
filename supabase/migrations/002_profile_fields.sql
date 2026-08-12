@@ -1,0 +1,60 @@
+alter table public.profiles
+  add column if not exists country text,
+  add column if not exists about text,
+  add column if not exists education_level text;
+
+alter table public.profiles drop constraint if exists profiles_education_level_check;
+alter table public.profiles
+  add constraint profiles_education_level_check
+  check (education_level is null or education_level in (
+    'grade-8', 'grade-9', 'grade-10', 'grade-11', 'grade-12',
+    'undergraduate', 'graduate', 'other'
+  ));
+
+alter table public.profiles drop constraint if exists profiles_country_check;
+alter table public.profiles
+  add constraint profiles_country_check
+  check (country is null or country ~ '^[A-Z]{2}$');
+
+alter table public.profiles drop constraint if exists profiles_about_check;
+alter table public.profiles
+  add constraint profiles_about_check
+  check (about is null or char_length(about) <= 400);
+
+alter table public.profiles drop constraint if exists profiles_avatar_url_check;
+alter table public.profiles
+  add constraint profiles_avatar_url_check
+  check (avatar_url is null or avatar_url ~ '^/avatars/[A-Za-z0-9_-]+\.(png|jpg|jpeg|webp|svg)$');
+
+grant update (country, about, education_level) on public.profiles to authenticated;
+
+create or replace view public.leaderboard_per_round as
+select
+  b.*,
+  p.display_name,
+  rank() over (
+    partition by b.olympiad, b.year, b.round_id
+    order by b.score_pct desc, b.duration_sec asc
+  ) as rank,
+  p.country
+from public.best_attempt_per_round b
+join public.profiles p on p.id = b.user_id;
+
+create or replace view public.leaderboard_overall as
+select
+  b.user_id,
+  p.display_name,
+  count(*) as rounds_completed,
+  sum(b.total_correct) as total_correct,
+  sum(b.total_statements) as total_statements,
+  round(sum(b.total_correct)::numeric / nullif(sum(b.total_statements), 0) * 100, 1) as overall_pct,
+  sum(b.duration_sec) as total_time_sec,
+  rank() over (
+    order by round(sum(b.total_correct)::numeric / nullif(sum(b.total_statements), 0) * 100, 1) desc,
+             sum(b.total_statements) desc,
+             sum(b.duration_sec) asc
+  ) as rank,
+  p.country
+from public.best_attempt_per_round b
+join public.profiles p on p.id = b.user_id
+group by b.user_id, p.display_name, p.country;

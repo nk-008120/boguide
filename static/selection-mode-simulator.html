@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selection Mode Simulator | BioGuide</title>
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js"></script>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .controls { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 0.8rem; align-items: center; }
+  .mode-btn {
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 2px solid #cbd5e1;
+    background: #f8fafc;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #475569;
+  }
+  .mode-btn.active { background: #1d70a2; border-color: #1d70a2; color: #fff; }
+  #plot-div { width: 100%; height: 340px; }
+  .actions { display: flex; gap: 10px; justify-content: center; margin-top: 0.6rem; }
+  .action-btn {
+    background: #2d6a4f; color: #fff; border: none; padding: 8px 20px;
+    border-radius: 999px; font-size: 0.85rem; cursor: pointer;
+  }
+  .action-btn.secondary { background: #94a3b8; }
+  #genLabel { text-align: center; font-size: 0.82rem; color: #4b5563; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Selection Mode Simulator</h3>
+  <div class="subtitle">Pick a mode, then run generations to watch the trait distribution shift.</div>
+  <div class="controls">
+    <button class="mode-btn active" data-mode="directional">Directional</button>
+    <button class="mode-btn" data-mode="stabilizing">Stabilizing</button>
+    <button class="mode-btn" data-mode="disruptive">Disruptive</button>
+  </div>
+  <div id="plot-div"></div>
+  <div id="genLabel">Generation 0</div>
+  <div class="actions">
+    <button class="action-btn" id="runBtn">Run one generation</button>
+    <button class="action-btn secondary" id="resetBtn">Reset population</button>
+  </div>
+</div>
+<script>
+(function(){
+  var mode = 'directional';
+  var generation = 0;
+  var pop = [];
+  var N = 300;
+
+  function randNormal(mean, sd){
+    var u1 = Math.random(), u2 = Math.random();
+    var z = Math.sqrt(-2*Math.log(u1)) * Math.cos(2*Math.PI*u2);
+    return mean + z*sd;
+  }
+
+  function initPop(){
+    pop = [];
+    for (var i = 0; i < N; i++){ pop.push(randNormal(50, 10)); }
+    generation = 0;
+  }
+
+  function fitness(x, m){
+    if (m === 'directional'){
+      return Math.max(0.02, (x - 20) / 60);
+    } else if (m === 'stabilizing'){
+      return Math.exp(-Math.pow(x-50, 2) / (2*12*12));
+    } else {
+      return 0.15 + Math.exp(-Math.pow(x-50, 2) / (2*8*8)) * -1 + 1;
+    }
+  }
+
+  function weightedResample(){
+    var weights = pop.map(function(x){ return Math.max(0.001, fitness(x, mode)); });
+    var total = weights.reduce(function(a,b){ return a+b; }, 0);
+    var cum = [];
+    var running = 0;
+    for (var i = 0; i < weights.length; i++){ running += weights[i]; cum.push(running); }
+    var next = [];
+    for (var j = 0; j < N; j++){
+      var r = Math.random() * total;
+      var lo = 0, hi = cum.length - 1;
+      while (lo < hi){
+        var mid = (lo+hi) >> 1;
+        if (cum[mid] < r) lo = mid+1; else hi = mid;
+      }
+      next.push(pop[lo] + randNormal(0, 1.2));
+    }
+    pop = next;
+    generation++;
+  }
+
+  function render(){
+    var trace = {
+      x: pop,
+      type: 'histogram',
+      xbins: { start: 0, end: 100, size: 4 },
+      marker: { color: '#2d6a4f', opacity: 0.85 }
+    };
+    var layout = {
+      margin: { t: 10, r: 10, b: 40, l: 40 },
+      xaxis: { title: 'Trait value', range: [0, 100] },
+      yaxis: { title: 'Count' },
+      bargap: 0.05
+    };
+    Plotly.react('plot-div', [trace], layout, { responsive: true, displayModeBar: false });
+    document.getElementById('genLabel').textContent = 'Generation ' + generation;
+  }
+
+  document.querySelectorAll('.mode-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.mode-btn').forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      mode = btn.dataset.mode;
+    });
+  });
+
+  document.getElementById('runBtn').addEventListener('click', function(){
+    weightedResample();
+    render();
+  });
+  document.getElementById('resetBtn').addEventListener('click', function(){
+    initPop();
+    render();
+  });
+
+  initPop();
+  render();
+})();
+</script>
+</body>
+</html>

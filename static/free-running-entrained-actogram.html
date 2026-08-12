@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free-Running vs. Entrained Rhythm Simulator | BioGuide</title>
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js"></script>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .toggle { margin-bottom: 12px; }
+  .toggle button {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    color: #334155;
+    padding: 7px 14px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  .toggle button.active { background: #2d6a4f; color: #fff; border-color: #2d6a4f; }
+  .readout {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin: 12px 0;
+    font-size: 0.9rem;
+  }
+  .readout b { color: #1d70a2; }
+  #plot { width: 100%; height: 400px; }
+  .note { font-size: 0.8rem; color: #4b5563; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Free-Running vs. Entrained Rhythm Simulator</h3>
+  <div class="subtitle">A double-plotted actogram — each row is one day, each day's data repeated on both halves so a run of activity crossing midnight reads as one continuous bar.</div>
+  <div class="toggle">
+    <button class="active" id="btnConstant">Constant conditions (free-running)</button>
+    <button id="btnEntrained">Normal light/dark cycle (entrained)</button>
+  </div>
+  <div id="plot"></div>
+  <div class="readout">
+    Activity onset, day 1: <b id="onsetDay1">—</b> &nbsp;|&nbsp;
+    Activity onset, day 20: <b id="onsetDay20">—</b> &nbsp;|&nbsp;
+    Drift: <b id="driftVal">—</b>
+  </div>
+  <div class="note">Free-running period used here: 24.5 h/day (a common finding when isolating an animal from all external time cues) — a small daily drift that adds up visibly over 20 days.</div>
+</div>
+<script>
+(function(){
+  var days = 20;
+  var activityDuration = 10;
+  var onset0 = 12;
+  var freeRunPeriod = 24.5;
+  var mode = 'constant';
+
+  function onsetForDay(i){
+    if (mode === 'constant'){
+      return onset0 + i * (freeRunPeriod - 24);
+    }
+    return onset0;
+  }
+
+  function render(){
+    var shapes = [];
+    for (var i = 0; i < days; i++){
+      var onset = onsetForDay(i);
+      var y = -i;
+      shapes.push({ type: 'line', x0: onset, x1: onset + activityDuration, y0: y, y1: y, line: { color: '#2d6a4f', width: 5 } });
+      shapes.push({ type: 'line', x0: onset + 24, x1: onset + activityDuration + 24, y0: y, y1: y, line: { color: '#2d6a4f', width: 5 } });
+    }
+    shapes.push({ type: 'line', x0: 24, x1: 24, y0: 1, y1: -days, line: { color: '#94a3b8', width: 1, dash: 'dot' } });
+
+    Plotly.react('plot', [
+      { x: [0], y: [1], mode: 'markers', marker: { opacity: 0 }, showlegend: false }
+    ], {
+      margin: { t: 10, r: 15, l: 45, b: 40 },
+      xaxis: { title: 'Hour (double-plotted, two days per row)', range: [0, 48], dtick: 6 },
+      yaxis: { title: 'Day', range: [-days, 1], tickvals: [], showticklabels: false },
+      shapes: shapes,
+      font: { family: 'Inter, system-ui, sans-serif', size: 11 }
+    }, { displayModeBar: false, responsive: true });
+
+    var o1 = onsetForDay(0);
+    var o20 = onsetForDay(days - 1);
+    document.getElementById('onsetDay1').textContent = o1.toFixed(1) + ' h';
+    document.getElementById('onsetDay20').textContent = o20.toFixed(1) + ' h';
+    var drift = o20 - o1;
+    document.getElementById('driftVal').textContent = drift < 0.05 && drift > -0.05
+      ? 'none — locked to a 24 h cycle'
+      : drift.toFixed(1) + ' h later by day 20';
+  }
+
+  document.getElementById('btnConstant').addEventListener('click', function(){
+    mode = 'constant';
+    this.classList.add('active');
+    document.getElementById('btnEntrained').classList.remove('active');
+    render();
+  });
+  document.getElementById('btnEntrained').addEventListener('click', function(){
+    mode = 'entrained';
+    this.classList.add('active');
+    document.getElementById('btnConstant').classList.remove('active');
+    render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

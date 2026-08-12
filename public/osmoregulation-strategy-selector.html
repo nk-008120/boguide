@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Osmoregulation Strategy Selector | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .select-row { display:flex; flex-wrap:wrap; gap: 6px; margin-bottom: 1rem; }
+  .select-btn {
+    padding: 7px 11px; border-radius: 999px; border: 2px solid #cbd5e1;
+    background: #f8fafc; font-size: 0.74rem; font-weight: 600; cursor: pointer; color:#475569;
+  }
+  .select-btn.active { background:#1d70a2; border-color:#1d70a2; color:#fff; }
+  svg text { font-family: 'Inter', system-ui, sans-serif; }
+  .desc { margin-top: 0.8rem; background:#eef2e6; border-radius:12px; padding:10px 14px; font-size:0.85rem; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Osmoregulation Strategy Selector</h3>
+  <div class="subtitle">Select an animal to see its specific water/ion flux diagram and the active-transport mechanism compensating for it. Compare the marine bony fish and elasmobranch directly to see the opposite-strategy contrast.</div>
+  <div class="select-row" id="selectRow"></div>
+  <svg id="svgArea" viewBox="0 0 500 220" width="100%"></svg>
+  <div class="desc" id="desc"></div>
+</div>
+<script>
+(function(){
+  var NS = "http://www.w3.org/2000/svg";
+  var svg = document.getElementById('svgArea');
+  var selectRow = document.getElementById('selectRow');
+  var desc = document.getElementById('desc');
+
+  var animals = {
+    marineFish: {
+      label: 'Marine bony fish', bodyColor:'#93c5fd',
+      arrows: [
+        {dir:'in', label:'Drinks seawater', y:70},
+        {dir:'out', label:'Cl⁻/Na⁺ pumped out at gills', y:110},
+        {dir:'out', label:'Concentrated urine (small volume)', y:150}
+      ],
+      desc: 'Hypoosmotic to seawater — constantly loses water, gains ions. Drinks continuously, actively excretes excess ions via gill chloride cells.'
+    },
+    elasmobranch: {
+      label: 'Elasmobranch', bodyColor:'#a5b4fc',
+      arrows: [
+        {dir:'none', label:'Blood urea/TMAO retained — near-isosmotic to seawater', y:90},
+        {dir:'small', label:'Minimal net water/ion flux', y:140}
+      ],
+      desc: 'Same hypoosmotic challenge as bony fish, opposite solution: raises blood osmolarity toward seawater with urea/TMAO, largely eliminating the osmotic gradient.'
+    },
+    freshwaterFish: {
+      label: 'Freshwater fish', bodyColor:'#67e8f9',
+      arrows: [
+        {dir:'in', label:'Water enters passively (never drinks)', y:70},
+        {dir:'in', label:'Ions actively imported at gills', y:110},
+        {dir:'out', label:'Large volume of dilute urine', y:150}
+      ],
+      desc: 'Hyperosmotic to fresh water — constantly gains water, loses ions. Never drinks; excretes large dilute urine volume; gills actively import ions.'
+    },
+    insect: {
+      label: 'Insect', bodyColor:'#fde68a',
+      arrows: [
+        {dir:'out', label:'Malpighian tubules secrete K⁺/water/uric acid', y:80},
+        {dir:'in', label:'Rectum reabsorbs most water/ions', y:130},
+        {dir:'out', label:'Nearly dry uric acid paste excreted', y:170}
+      ],
+      desc: 'Terrestrial, water-limited. Two-stage secretion (Malpighian tubule) then reabsorption (rectum) — structurally independent of the vertebrate nephron.'
+    },
+    marineBird: {
+      label: 'Marine bird/reptile', bodyColor:'#86efac',
+      arrows: [
+        {dir:'in', label:'Drinks seawater', y:70},
+        {dir:'out', label:'Concentrated salt secreted via nasal gland', y:120},
+        {dir:'small', label:'Kidney unaffected (uric-acid waste)', y:160}
+      ],
+      desc: 'Drinks seawater but lacks gill ion-excretion; a dedicated nasal salt gland (countercurrent-multiplier-like) handles the resulting ion load instead.'
+    },
+    desertMammal: {
+      label: 'Desert mammal (kangaroo rat)', bodyColor:'#fca5a5',
+      arrows: [
+        {dir:'none', label:'No drinking — relies on metabolic water', y:80},
+        {dir:'out', label:'Extremely concentrated urine (elongated loop of Henle)', y:130},
+        {dir:'small', label:'Cooled exhaled air reclaims water vapor', y:170}
+      ],
+      desc: 'No free water available. Elongated loop of Henle builds a steeper countercurrent gradient than typical mammals, maximizing urine concentration.'
+    }
+  };
+
+  var order = ['marineFish','elasmobranch','freshwaterFish','insect','marineBird','desertMammal'];
+  var current = 'marineFish';
+
+  function el(tag, attrs){
+    var e = document.createElementNS(NS, tag);
+    for (var k in attrs){ e.setAttribute(k, attrs[k]); }
+    return e;
+  }
+
+  order.forEach(function(key){
+    var btn = document.createElement('button');
+    btn.className = 'select-btn' + (key === current ? ' active' : '');
+    btn.textContent = animals[key].label;
+    btn.dataset.key = key;
+    btn.addEventListener('click', function(){
+      document.querySelectorAll('.select-btn').forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      current = key;
+      render();
+    });
+    selectRow.appendChild(btn);
+  });
+
+  function render(){
+    svg.innerHTML = '';
+    var a = animals[current];
+    svg.appendChild(el('ellipse', {cx:250, cy:120, rx:100, ry:60, fill:a.bodyColor, opacity:0.5}));
+    var title = el('text', {x:250, y:25, 'font-size':14, 'font-weight':700, fill:'#1a472a', 'text-anchor':'middle'});
+    title.textContent = a.label;
+    svg.appendChild(title);
+
+    a.arrows.forEach(function(arrow){
+      var arrowChar = arrow.dir === 'in' ? '→' : (arrow.dir === 'out' ? '←' : '↔');
+      var arrowColor = arrow.dir === 'in' ? '#1d70a2' : (arrow.dir === 'out' ? '#b45309' : '#6b7280');
+      svg.appendChild(el('text', {x:60, y:arrow.y, 'font-size':16, fill:arrowColor})).textContent = arrowChar;
+      var lab = el('text', {x:85, y:arrow.y+4, 'font-size':11.5, fill:'#334155'});
+      lab.textContent = arrow.label;
+      svg.appendChild(lab);
+    });
+
+    desc.textContent = a.desc;
+  }
+
+  render();
+})();
+</script>
+</body>
+</html>

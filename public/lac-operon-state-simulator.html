@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>lac Operon State Simulator | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .toggles { display: flex; gap: 10px; margin-bottom: 1rem; }
+  .togglebox { flex: 1; padding: 10px; border-radius: 10px; border: 2px solid #e2e8f0; background: #f8fafc; text-align: center; cursor: pointer; }
+  .togglebox.on { background: #dcfce7; border-color: #22c55e; }
+  .togglebox .lbl { font-weight: 700; font-size: 0.85rem; }
+  .togglebox .val { font-size: 0.78rem; color: #4b5563; margin-top: 3px; }
+  #operonSvg { width: 100%; height: 130px; background: #f8fafc; border-radius: 14px; }
+  #output { margin-top: 10px; padding: 10px; border-radius: 10px; font-size: 0.85rem; text-align: center; font-weight: 700; }
+  #logic { margin-top: 8px; font-size: 0.8rem; color: #4b5563; text-align: center; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>lac Operon: AND-Gate Logic</h3>
+  <div class="subtitle">Toggle lactose and glucose independently and watch the repressor/CAP states and transcription output update live.</div>
+  <div class="toggles">
+    <div class="togglebox" id="lacToggle"><div class="lbl">Lactose</div><div class="val" id="lacVal">Absent</div></div>
+    <div class="togglebox on" id="glcToggle"><div class="lbl">Glucose</div><div class="val" id="glcVal">Present</div></div>
+  </div>
+  <svg id="operonSvg" viewBox="0 0 400 130"></svg>
+  <div id="output"></div>
+  <div id="logic"></div>
+</div>
+<script>
+(function(){
+  var ns = 'http://www.w3.org/2000/svg';
+  var svg = document.getElementById('operonSvg');
+  var lactose = false, glucose = true;
+
+  document.getElementById('lacToggle').addEventListener('click', function(){
+    lactose = !lactose;
+    this.classList.toggle('on', lactose);
+    document.getElementById('lacVal').textContent = lactose ? 'Present' : 'Absent';
+    update();
+  });
+  document.getElementById('glcToggle').addEventListener('click', function(){
+    glucose = !glucose;
+    this.classList.toggle('on', glucose);
+    document.getElementById('glcVal').textContent = glucose ? 'Present' : 'Absent';
+    update();
+  });
+
+  function draw(repressorBound, capBound, transcribing){
+    svg.innerHTML = '';
+    function rect(x,y,w,h,fill,stroke){
+      var r = document.createElementNS(ns,'rect');
+      r.setAttribute('x',x);r.setAttribute('y',y);r.setAttribute('width',w);r.setAttribute('height',h);
+      r.setAttribute('fill',fill);r.setAttribute('stroke',stroke||'#334155');r.setAttribute('stroke-width','1.5');r.setAttribute('rx','4');
+      svg.appendChild(r);
+    }
+    function label(x,y,text,size,color){
+      var t = document.createElementNS(ns,'text');
+      t.setAttribute('x',x);t.setAttribute('y',y);t.setAttribute('font-size',size||10);t.setAttribute('fill',color||'#334155');t.setAttribute('text-anchor','middle');
+      t.textContent = text;
+      svg.appendChild(t);
+    }
+    rect(20,50,40,20,'#e2e8f0'); label(40,64,'CAP site',8);
+    rect(70,50,40,20,'#fde68a'); label(90,64,'Promoter',8);
+    rect(120,50,40,20,'#fca5a5'); label(140,64,'Operator',8);
+    rect(170,50,180,20,'#bbf7d0'); label(260,64,'lacZ-Y-A',9);
+
+    if (capBound){
+      var cap = document.createElementNS(ns,'circle');
+      cap.setAttribute('cx',40);cap.setAttribute('cy',35);cap.setAttribute('r',9);cap.setAttribute('fill','#7c3aed');
+      svg.appendChild(cap);
+      label(40,20,'CAP (active)',8,'#7c3aed');
+    }
+    if (repressorBound){
+      var rep = document.createElementNS(ns,'circle');
+      rep.setAttribute('cx',140);rep.setAttribute('cy',35);rep.setAttribute('r',9);rep.setAttribute('fill','#d9534f');
+      svg.appendChild(rep);
+      label(140,20,'Repressor bound',8,'#d9534f');
+    } else {
+      label(140,20,'Operator open',8,'#166534');
+    }
+    if (transcribing){
+      var arrow = document.createElementNS(ns,'text');
+      arrow.setAttribute('x',260);arrow.setAttribute('y',100);arrow.setAttribute('font-size',11);arrow.setAttribute('fill','#166534');arrow.setAttribute('text-anchor','middle');
+      arrow.textContent = 'mRNA -->';
+      svg.appendChild(arrow);
+    }
+  }
+
+  function update(){
+    var repressorBound = !lactose;
+    var capBound = !glucose;
+    var transcribing = !repressorBound && capBound;
+    draw(repressorBound, capBound, transcribing);
+    var out = document.getElementById('output');
+    var logic = document.getElementById('logic');
+    if (transcribing){
+      out.textContent = 'Operon: ON (strong transcription)';
+      out.style.background = '#dcfce7'; out.style.color = '#166534';
+    } else if (!repressorBound && !capBound){
+      out.textContent = 'Operon: OFF (repressor released, but CAP inactive)';
+      out.style.background = '#fef9c3'; out.style.color = '#92400e';
+    } else {
+      out.textContent = 'Operon: OFF (repressor bound)';
+      out.style.background = '#fee2e2'; out.style.color = '#991b1b';
+    }
+    logic.textContent = 'AND-gate: needs lactose present (repressor released) AND glucose absent (CAP active) for strong expression.';
+  }
+
+  update();
+})();
+</script>
+</body>
+</html>

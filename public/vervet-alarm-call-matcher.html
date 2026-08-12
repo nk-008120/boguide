@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vervet Alarm Call Playback Matcher | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .calls { display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; }
+  .call-btn {
+    flex: 1;
+    min-width: 140px;
+    background: #f1f5f9;
+    border: 2px solid #cbd5e1;
+    border-radius: 14px;
+    padding: 14px 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #334155;
+    cursor: pointer;
+    text-align: center;
+  }
+  .call-btn.selected { border-color: #1d70a2; background: #e0f2fe; }
+  .call-btn.matched { border-color: #166534; background: #dcfce7; cursor: default; }
+  .responses { display: flex; gap: 10px; flex-wrap: wrap; }
+  .response-btn {
+    flex: 1;
+    min-width: 140px;
+    background: #fff;
+    border: 2px dashed #cbd5e1;
+    border-radius: 14px;
+    padding: 14px 10px;
+    font-size: 0.82rem;
+    color: #334155;
+    cursor: pointer;
+    text-align: center;
+  }
+  .response-btn.matched { border-style: solid; border-color: #166534; background: #dcfce7; cursor: default; }
+  .btn {
+    background: #2d6a4f;
+    color: #fff;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 999px;
+    font-size: 0.88rem;
+    cursor: pointer;
+    margin-top: 16px;
+  }
+  .note { font-size: 0.82rem; color: #4b5563; margin-top: 12px; min-height: 1.6em; }
+  .warn { color: #b91c1c; font-weight: 600; }
+  .ok { color: #166534; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Vervet Alarm Call Playback Matcher</h3>
+  <div class="subtitle">Play each call (a synthesized stand-in for the real recording), then click the escape response you think it triggers — mirroring Cheney &amp; Seyfarth's field playback experiments.</div>
+  <div class="calls" id="calls"></div>
+  <div class="responses" id="responses"></div>
+  <button class="btn" id="resetBtn">Reset</button>
+  <div class="note" id="note">Play a call, then click the response you think it triggers.</div>
+</div>
+<script>
+(function(){
+  var predators = [
+    { id: 'leopard', label: 'Leopard call', response: 'climb', responseLabel: 'Climb a tree' },
+    { id: 'eagle', label: 'Eagle call', response: 'lookup', responseLabel: 'Look up' },
+    { id: 'snake', label: 'Snake call', response: 'lookdown', responseLabel: 'Look down into the grass' }
+  ];
+  var callsDiv = document.getElementById('calls');
+  var responsesDiv = document.getElementById('responses');
+  var note = document.getElementById('note');
+  var selected = null;
+  var matchedCount = 0;
+  var audioCtx = null;
+
+  function shuffled(arr){
+    var a = arr.slice();
+    for (var i = a.length - 1; i > 0; i--){
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = a[i]; a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+
+  function playTone(predatorId){
+    try {
+      if (!audioCtx) { audioCtx = new (window.AudioContext || window.webkitAudioContext)(); }
+      var patterns = {
+        leopard: [{f:180, d:0.18}, {f:160, d:0.18}, {f:150, d:0.22}],
+        eagle:   [{f:1400, d:0.35}],
+        snake:   [{f:900, d:0.06}, {f:950, d:0.06}, {f:1000, d:0.06}, {f:1050,d:0.06}]
+      };
+      var seq = patterns[predatorId] || [{f:500, d:0.2}];
+      var t = audioCtx.currentTime;
+      seq.forEach(function(note){
+        var osc = audioCtx.createOscillator();
+        var gain = audioCtx.createGain();
+        osc.frequency.value = note.f;
+        osc.type = predatorId === 'eagle' ? 'sine' : (predatorId === 'snake' ? 'square' : 'sawtooth');
+        gain.gain.setValueAtTime(0.001, t);
+        gain.gain.exponentialRampToValueAtTime(0.15, t + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.001, t + note.d);
+        osc.connect(gain).connect(audioCtx.destination);
+        osc.start(t);
+        osc.stop(t + note.d + 0.02);
+        t += note.d + 0.04;
+      });
+    } catch(e) {  }
+  }
+
+  function build(){
+    callsDiv.innerHTML = '';
+    responsesDiv.innerHTML = '';
+    selected = null;
+    matchedCount = 0;
+    note.textContent = 'Play a call, then click the response you think it triggers.';
+    note.className = 'note';
+
+    var order = shuffled(predators);
+    order.forEach(function(p, idx){
+      var btn = document.createElement('button');
+      btn.className = 'call-btn';
+      btn.textContent = 'Play call ' + (idx + 1);
+      btn.dataset.predator = p.id;
+      btn.addEventListener('click', function(){
+        if (btn.classList.contains('matched')) { return; }
+        document.querySelectorAll('.call-btn').forEach(function(b){ b.classList.remove('selected'); });
+        btn.classList.add('selected');
+        selected = btn;
+        playTone(p.id);
+      });
+      callsDiv.appendChild(btn);
+    });
+
+    shuffled(predators).forEach(function(p){
+      var btn = document.createElement('button');
+      btn.className = 'response-btn';
+      btn.textContent = p.responseLabel;
+      btn.dataset.response = p.response;
+      btn.addEventListener('click', function(){
+        if (btn.classList.contains('matched')) { return; }
+        if (!selected) {
+          note.innerHTML = '<span class="warn">Play a call first, then click a response.</span>';
+          return;
+        }
+        var predatorId = selected.dataset.predator;
+        var correctResponse = predators.find(function(p2){ return p2.id === predatorId; }).response;
+        if (correctResponse === p.response){
+          selected.classList.add('matched');
+          selected.classList.remove('selected');
+          btn.classList.add('matched');
+          matchedCount++;
+          selected = null;
+          if (matchedCount === predators.length){
+            note.innerHTML = '<span class="ok">All three calls matched to their correct evasive response.</span>';
+          } else {
+            note.textContent = matchedCount + ' of ' + predators.length + ' matched.';
+          }
+        } else {
+          note.innerHTML = '<span class="warn">Not the right response for that call — try again.</span>';
+        }
+      });
+      responsesDiv.appendChild(btn);
+    });
+  }
+
+  document.getElementById('resetBtn').addEventListener('click', build);
+
+  build();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reproductive Isolating Mechanism Sorter | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .stage-label { font-size: 0.78rem; font-weight: 700; color: #64748b; margin-bottom: 8px; }
+  #tray { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 1rem; min-height: 40px; }
+  .chip {
+    background: #eaf2f8;
+    border: 2px solid #1d70a2;
+    border-radius: 14px;
+    padding: 8px 14px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #1d3557;
+    cursor: grab;
+    user-select: none;
+    max-width: 260px;
+  }
+  .chip.dragging { opacity: 0.4; }
+  .bins { display: flex; gap: 1rem; margin-bottom: 1rem; }
+  .bin {
+    flex: 1;
+    min-height: 100px;
+    border-radius: 16px;
+    border: 3px dashed #cbd5e1;
+    padding: 10px;
+    background: #f8fafc;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .bin.over { background: #eef6ee; border-color: #2d6a4f; }
+  .bin h4 { margin: 0 0 8px 0; text-align: center; color: #334155; font-size: 0.9rem; }
+  .placed-item { margin-bottom: 8px; }
+  .placed-label {
+    display: block;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    background: #dcfce7;
+    color: #166534;
+    border: 1px solid #86efac;
+  }
+  select.mech-select {
+    width: 100%;
+    margin-top: 4px;
+    padding: 5px 8px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 0.78rem;
+  }
+  select.mech-select.correct { border-color: #86efac; background: #dcfce7; }
+  .mech-explain { font-size: 0.72rem; color: #4b5563; margin-top: 4px; display: none; }
+  .mech-explain.show { display: block; }
+  #score { text-align: center; font-size: 0.88rem; color: #4b5563; margin-top: 0.5rem; }
+  #resetBtn {
+    display: block;
+    margin: 1rem auto 0;
+    background: #2d6a4f;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Reproductive Isolating Mechanism Sorter</h3>
+  <div class="subtitle">Round 1: drag each scenario into Prezygotic or Postzygotic. Round 2: once sorted, name the specific mechanism.</div>
+  <div class="stage-label" id="stageLabel">Round 1 of 2 — Prezygotic or Postzygotic?</div>
+  <div id="tray"></div>
+  <div class="bins">
+    <div class="bin" id="bin-pre" data-answer="pre"><h4>Prezygotic</h4></div>
+    <div class="bin" id="bin-post" data-answer="post"><h4>Postzygotic</h4></div>
+  </div>
+  <div id="score">0 of 7 sorted</div>
+  <button id="resetBtn">Reset</button>
+</div>
+<script>
+(function(){
+  var items = [
+    { id: 'i1', label: 'Two snake populations occupy the same broad region, but one lives only in aquatic marshes and the other on rocky hillsides, rarely encountering each other.', stage: 'pre', mech: 'habitat', mechLabel: 'Habitat isolation', explain: 'Populations occupy different environments and rarely meet, preventing mating from being attempted at all.' },
+    { id: 'i2', label: 'Two fish species breed in the same lake, but one spawns in spring and the other in autumn.', stage: 'pre', mech: 'temporal', mechLabel: 'Temporal isolation', explain: 'Breeding at different times of year prevents the two populations from encountering receptive mates.' },
+    { id: 'i3', label: 'Two cricket species produce mating calls that are only recognized by their own species, even when both are present in the same field.', stage: 'pre', mech: 'behavioral', mechLabel: 'Behavioral isolation', explain: 'Courtship signals are not recognized between populations, so mating is never initiated.' },
+    { id: 'i4', label: 'Two orchid species have flowers shaped to fit only their own specific pollinator, physically preventing cross-pollination.', stage: 'pre', mech: 'mechanical', mechLabel: 'Mechanical isolation', explain: 'Incompatible reproductive structures physically prevent successful mating or pollen transfer.' },
+    { id: 'i5', label: 'Pollen grains from one plant species fail to germinate on the stigma of a related species, even when deposited there.', stage: 'pre', mech: 'gametic', mechLabel: 'Gametic isolation', explain: 'Sperm/pollen and egg fail to fuse biochemically even on direct contact.' },
+    { id: 'i6', label: 'A horse and a donkey mate and produce a mule — viable, but unable to produce its own offspring.', stage: 'post', mech: 'fertility', mechLabel: 'Reduced hybrid fertility', explain: 'The hybrid survives to adulthood but is sterile — the classic mule example.' },
+    { id: 'i7', label: 'First-generation hybrids between two populations are viable and fertile, but when those hybrids interbreed, their offspring (the F2 generation) show sharply reduced viability.', stage: 'post', mech: 'breakdown', mechLabel: 'Hybrid breakdown', explain: 'The F1 hybrids themselves are fine, but the problem appears one generation later, in the F2.' }
+  ];
+  var mechOptions = {
+    pre: [
+      { v: 'habitat', l: 'Habitat isolation' },
+      { v: 'temporal', l: 'Temporal isolation' },
+      { v: 'behavioral', l: 'Behavioral isolation' },
+      { v: 'mechanical', l: 'Mechanical isolation' },
+      { v: 'gametic', l: 'Gametic isolation' }
+    ],
+    post: [
+      { v: 'viability', l: 'Reduced hybrid viability' },
+      { v: 'fertility', l: 'Reduced hybrid fertility' },
+      { v: 'breakdown', l: 'Hybrid breakdown' }
+    ]
+  };
+
+  var tray = document.getElementById('tray');
+  var bins = [document.getElementById('bin-pre'), document.getElementById('bin-post')];
+  var scoreEl = document.getElementById('score');
+  var stageLabel = document.getElementById('stageLabel');
+  var placedCount = 0;
+  var round2Correct = 0;
+  var dragged = null;
+
+  function shuffle(arr){
+    for (var i = arr.length - 1; i > 0; i--){
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = arr[i]; arr[i] = arr[j]; arr[j] = t;
+    }
+    return arr;
+  }
+
+  function makeChip(item){
+    var chip = document.createElement('div');
+    chip.className = 'chip';
+    chip.textContent = item.label;
+    chip.draggable = true;
+    chip.dataset.id = item.id;
+    chip.addEventListener('dragstart', function(e){
+      dragged = item;
+      chip.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+    chip.addEventListener('dragend', function(){ chip.classList.remove('dragging'); });
+    return chip;
+  }
+
+  function buildMechSelect(item, container){
+    var wrap = document.createElement('div');
+    var sel = document.createElement('select');
+    sel.className = 'mech-select';
+    var placeholder = document.createElement('option');
+    placeholder.textContent = 'Which specific mechanism?';
+    placeholder.value = '';
+    sel.appendChild(placeholder);
+    shuffle(mechOptions[item.stage].slice()).forEach(function(opt){
+      var o = document.createElement('option');
+      o.value = opt.v;
+      o.textContent = opt.l;
+      sel.appendChild(o);
+    });
+    var explainEl = document.createElement('div');
+    explainEl.className = 'mech-explain';
+    sel.addEventListener('change', function(){
+      if (sel.dataset.locked === '1') return;
+      if (sel.value === item.mech){
+        sel.classList.add('correct');
+        sel.disabled = true;
+        sel.dataset.locked = '1';
+        explainEl.textContent = item.mechLabel + ' — ' + item.explain;
+        explainEl.className = 'mech-explain show';
+        round2Correct++;
+        updateScore();
+      } else {
+        explainEl.textContent = 'Not quite — try another option.';
+        explainEl.className = 'mech-explain show';
+      }
+    });
+    wrap.appendChild(sel);
+    wrap.appendChild(explainEl);
+    container.appendChild(wrap);
+  }
+
+  function updateScore(){
+    if (placedCount < items.length){
+      scoreEl.textContent = placedCount + ' of ' + items.length + ' sorted';
+    } else {
+      scoreEl.textContent = 'Round 2: ' + round2Correct + ' of ' + items.length + ' mechanisms identified';
+    }
+  }
+
+  function reset(){
+    tray.innerHTML = '';
+    bins.forEach(function(b){
+      Array.prototype.slice.call(b.querySelectorAll('.placed-item')).forEach(function(p){ p.remove(); });
+    });
+    placedCount = 0;
+    round2Correct = 0;
+    stageLabel.textContent = 'Round 1 of 2 — Prezygotic or Postzygotic?';
+    updateScore();
+    shuffle(items.slice()).forEach(function(item){ tray.appendChild(makeChip(item)); });
+  }
+
+  bins.forEach(function(bin){
+    bin.addEventListener('dragover', function(e){
+      e.preventDefault();
+      bin.classList.add('over');
+    });
+    bin.addEventListener('dragleave', function(){ bin.classList.remove('over'); });
+    bin.addEventListener('drop', function(e){
+      e.preventDefault();
+      bin.classList.remove('over');
+      if (!dragged) return;
+      var item = dragged;
+      var correct = item.stage === bin.dataset.answer;
+      if (correct){
+        var entry = document.createElement('div');
+        entry.className = 'placed-item';
+        var lbl = document.createElement('div');
+        lbl.className = 'placed-label';
+        lbl.textContent = item.label;
+        entry.appendChild(lbl);
+        bin.appendChild(entry);
+        buildMechSelect(item, entry);
+        var chipEl = tray.querySelector('[data-id="' + item.id + '"]');
+        if (chipEl) chipEl.remove();
+        placedCount++;
+        if (placedCount === items.length){
+          stageLabel.textContent = 'Round 2 of 2 — name the specific mechanism for each';
+        }
+        updateScore();
+      } else {
+        var chipEl2 = tray.querySelector('[data-id="' + item.id + '"]');
+        if (chipEl2){
+          chipEl2.style.borderColor = '#d9534f';
+          setTimeout(function(){ chipEl2.style.borderColor = '#1d70a2'; }, 700);
+        }
+      }
+      dragged = null;
+    });
+  });
+
+  document.getElementById('resetBtn').addEventListener('click', reset);
+  reset();
+})();
+</script>
+</body>
+</html>

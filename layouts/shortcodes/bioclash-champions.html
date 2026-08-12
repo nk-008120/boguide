@@ -1,0 +1,30 @@
+{{- /* BiOClash "Champions" leaderboard — one round's placements from
+     Supabase's bioclash_leaderboard view (supabase/migrations/
+     006_bioclash_results.sql). Usage:
+       {{< bioclash-champions >}}             — shows the MOST RECENT round
+       {{< bioclash-champions round="mb-01" >}} — shows that specific round,
+         permanently (added 2026-08-11 so every past round keeps its own
+         dedicated leaderboard page instead of being replaced by the next
+         one — see context/bioclash-season-points-plan.md and the new
+         "Rounds This Season" card grid on content/papers/leaderboard/).
+     Deliberately separate from the papers-leaderboard-* family (this isn't
+     a BiOrchive Timed Attempt result): results are entered by hand by the
+     project owner once a round concludes, since BiOClash has no automated
+     scoring engine. Top 3 get a podium (static/js/bioclash-champions.js
+     renders into #bioclash-champions-podium); placement 4+ falls into a
+     plain table below it. */ -}}
+<div id="bioclash-champions-root" class="bioclash-page bioclash-champions-section" data-round="{{ .Get "round" }}">
+  <div class="bioclash-champions-frame">
+    <p class="bioclash-eyebrow" id="bioclash-champions-eyebrow">{{ if .Get "round" }}{{ .Get "round" | upper }}{{ else }}Latest round{{ end }}</p>
+    <h2 class="bioclash-champions-heading">BiOClash Champions</h2>
+    <p id="bioclash-champions-status" class="bioclash-champions-status">Loading champions…</p>
+    <div class="bioclash-champions-podium" id="bioclash-champions-podium" hidden></div>
+    <table class="bioclash-champions-table" id="bioclash-champions-table" hidden>
+      <thead>
+        <tr><th>#</th><th>Name</th><th>Score</th></tr>
+      </thead>
+      <tbody id="bioclash-champions-tbody"></tbody>
+    </table>
+  </div>
+</div>
+<script src="{{ "js/bioclash-champions.js" | relURL }}" defer></script>

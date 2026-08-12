@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monophyly / Paraphyly / Polyphyly Classifier | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .step-label { font-size: 0.78rem; font-weight: 700; color: #64748b; margin-bottom: 6px; }
+  svg { display: block; margin: 0 auto; }
+  .leaf-dot { stroke: #475569; stroke-width: 2; fill: #cbd5e1; }
+  .leaf-dot.shaded { fill: #2d6a4f; stroke: #1a472a; }
+  .leaf-dot.missing { fill: #fff; stroke: #d9534f; stroke-width: 3; stroke-dasharray: 4,3; }
+  .leaf-label { font-size: 13px; font-weight: 600; fill: #334155; }
+  .mrca-marker { fill: none; stroke: #d97706; stroke-width: 3; }
+  .choices { display: flex; gap: 8px; margin: 14px 0; }
+  .choice-btn {
+    flex: 1;
+    padding: 10px 6px;
+    border-radius: 10px;
+    border: 2px solid #cbd5e1;
+    background: #fff;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #334155;
+  }
+  .choice-btn.correct { background: #dcfce7; border-color: #86efac; color: #166534; }
+  .choice-btn.wrong { background: #fee2e2; border-color: #fca5a5; color: #991b1b; }
+  .choice-btn:disabled { cursor: default; }
+  #feedback {
+    background: #f1f5f9;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    display: none;
+    margin-bottom: 10px;
+  }
+  #feedback.show { display: block; }
+  #nextBtn {
+    display: none;
+    background: #2d6a4f;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  #nextBtn.show { display: inline-block; }
+  #scoreLine { text-align: center; font-size: 0.82rem; color: #64748b; margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Monophyly / Paraphyly / Polyphyly Classifier</h3>
+  <div class="subtitle">Each shaded group below is a named, real classification. Classify it, then see why.</div>
+  <div class="step-label" id="stepLabel"></div>
+  <svg id="svg" width="440" height="360" viewBox="0 0 440 360"></svg>
+  <div class="choices" id="choices"></div>
+  <div id="feedback"></div>
+  <button id="nextBtn">Next →</button>
+  <div id="scoreLine"></div>
+</div>
+<script>
+(function(){
+  var leaves = {
+    Mammal: { x: 380, y: 50 },
+    Lizard: { x: 380, y: 120 },
+    Turtle: { x: 380, y: 190 },
+    Crocodilian: { x: 380, y: 260 },
+    Bird: { x: 380, y: 330 }
+  };
+  var nodes = {
+    n4: { x: 300, y: (260 + 330) / 2, c: ['Crocodilian', 'Bird'] },
+    n3: { x: 230, y: null, c: ['Turtle', 'n4'] },
+    n2: { x: 160, y: null, c: ['Lizard', 'n3'] },
+    n1: { x: 90, y: null, c: ['Mammal', 'n2'] }
+  };
+  function pos(id){ return leaves[id] || nodes[id]; }
+  nodes.n3.y = (pos('Turtle').y + pos('n4').y) / 2;
+  nodes.n2.y = (pos('Lizard').y + pos('n3').y) / 2;
+  nodes.n1.y = (pos('Mammal').y + pos('n2').y) / 2;
+
+  var scenarios = [
+    { group: ['Lizard','Turtle','Crocodilian'], answer: 'para', name: '"Reptilia" (traditional sense)',
+      explain: 'Paraphyletic. This group is the common ancestor of Lizard/Turtle/Crocodilian/Bird plus <b>all but one</b> descendant — Bird is excluded even though it nests inside the same lineage. This is exactly why traditional "Reptilia" is not a valid cladistic taxon.', missing: ['Bird'] },
+    { group: ['Lizard','Turtle','Crocodilian','Bird'], answer: 'mono', name: 'Sauropsida',
+      explain: 'Monophyletic. This is the full set of descendants of one common ancestor — a true clade, and the modern replacement for "Reptilia."', missing: [] },
+    { group: ['Crocodilian','Bird'], answer: 'mono', name: 'Archosauria',
+      explain: 'Monophyletic. Crocodilian and Bird share a more recent common ancestor with each other than with any other taxon here, and this group contains that ancestor plus all of its descendants.', missing: [] },
+    { group: ['Bird','Mammal'], answer: 'poly', name: '"Warm-blooded amniotes"',
+      explain: 'Polyphyletic. Bird and Mammal are united by a convergently-evolved trait (endothermy), not by shared recent ancestry — their most recent common ancestor (the base of this whole tree) was not endothermic, and every taxon in between is excluded from the group despite being just as closely related to the ancestor.', missing: [], mrca: 'n1' },
+    { group: ['Lizard','Turtle','Bird'], answer: 'para', name: 'Sauropsida minus Crocodilian',
+      explain: 'Paraphyletic. Just like the "Reptilia" example, this excludes one nested descendant — this time Crocodilian — from an otherwise complete ancestor-plus-descendants group.', missing: ['Crocodilian'] }
+  ];
+  var idx = 0;
+  var score = 0;
+  var answered = false;
+  var svg = document.getElementById('svg');
+  var svgns = 'http://www.w3.org/2000/svg';
+
+  function el(tag, attrs){
+    var e = document.createElementNS(svgns, tag);
+    for (var k in attrs){ e.setAttribute(k, attrs[k]); }
+    return e;
+  }
+
+  function drawTree(shadedSet, missingSet, mrcaId){
+    svg.innerHTML = '';
+    function fork(nodeId){
+      var node = nodes[nodeId];
+      var c1 = pos(node.c[0]), c2 = pos(node.c[1]);
+      svg.appendChild(el('line', { x1: node.x, y1: c1.y, x2: node.x, y2: c2.y, stroke: '#94a3b8', 'stroke-width': 2 }));
+      svg.appendChild(el('line', { x1: node.x, y1: c1.y, x2: c1.x, y2: c1.y, stroke: '#94a3b8', 'stroke-width': 2 }));
+      svg.appendChild(el('line', { x1: node.x, y1: c2.y, x2: c2.x, y2: c2.y, stroke: '#94a3b8', 'stroke-width': 2 }));
+      node.c.forEach(function(cid){ if (nodes[cid]) fork(cid); });
+    }
+    svg.appendChild(el('line', { x1: 30, y1: nodes.n1.y, x2: nodes.n1.x, y2: nodes.n1.y, stroke: '#94a3b8', 'stroke-width': 2 }));
+    fork('n1');
+    if (mrcaId){
+      var m = nodes[mrcaId];
+      svg.appendChild(el('circle', { class: 'mrca-marker', cx: m.x, cy: m.y, r: 10 }));
+      svg.appendChild(el('text', { x: m.x - 14, y: m.y - 14, 'font-size': 10, fill: '#d97706', 'font-weight': 700 })).textContent = 'MRCA';
+    }
+    Object.keys(leaves).forEach(function(name){
+      var p = leaves[name];
+      var shaded = shadedSet.indexOf(name) !== -1;
+      var missing = missingSet.indexOf(name) !== -1;
+      var cls = 'leaf-dot' + (shaded ? ' shaded' : '') + (missing ? ' missing' : '');
+      svg.appendChild(el('circle', { class: cls, cx: p.x, cy: p.y, r: 11 }));
+      var t = el('text', { class: 'leaf-label', x: p.x + 20, y: p.y + 5 });
+      t.textContent = name + (missing ? ' (excluded)' : '');
+      svg.appendChild(t);
+    });
+  }
+
+  var stepLabel = document.getElementById('stepLabel');
+  var choicesEl = document.getElementById('choices');
+  var feedback = document.getElementById('feedback');
+  var nextBtn = document.getElementById('nextBtn');
+  var scoreLine = document.getElementById('scoreLine');
+  var options = [ ['mono','Monophyletic'], ['para','Paraphyletic'], ['poly','Polyphyletic'] ];
+
+  function render(){
+    answered = false;
+    var s = scenarios[idx];
+    stepLabel.textContent = 'Scenario ' + (idx + 1) + ' of ' + scenarios.length + ' — shaded group: "' + s.name + '"';
+    drawTree(s.group, [], null);
+    feedback.className = '';
+    feedback.innerHTML = '';
+    nextBtn.className = '';
+    choicesEl.innerHTML = '';
+    options.forEach(function(opt){
+      var btn = document.createElement('button');
+      btn.className = 'choice-btn';
+      btn.textContent = opt[1];
+      btn.addEventListener('click', function(){
+        if (answered) return;
+        answered = true;
+        var isCorrect = opt[0] === s.answer;
+        btn.classList.add(isCorrect ? 'correct' : 'wrong');
+        if (!isCorrect){
+          Array.prototype.forEach.call(choicesEl.children, function(c){
+            if (c.textContent === options.filter(function(o){ return o[0] === s.answer; })[0][1]) c.classList.add('correct');
+          });
+        } else {
+          score++;
+        }
+        Array.prototype.forEach.call(choicesEl.children, function(c){ c.disabled = true; });
+        feedback.innerHTML = s.explain;
+        feedback.className = 'show';
+        drawTree(s.group, s.missing || [], s.mrca || null);
+        nextBtn.className = idx < scenarios.length - 1 ? 'show' : '';
+        scoreLine.textContent = idx === scenarios.length - 1 ? 'Final score: ' + score + ' of ' + scenarios.length : '';
+      });
+      choicesEl.appendChild(btn);
+    });
+  }
+
+  nextBtn.addEventListener('click', function(){
+    idx++;
+    render();
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>

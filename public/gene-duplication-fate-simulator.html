@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gene Duplication Fate Simulator | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 680px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .selectors { display: flex; gap: 14px; margin-bottom: 1rem; flex-wrap: wrap; }
+  .selectors label { flex: 1; min-width: 220px; font-size: 0.82rem; font-weight: 600; display: flex; flex-direction: column; gap: 4px; }
+  .selectors select { padding: 6px 8px; border-radius: 8px; border: 1px solid #cbd5e1; }
+  .paralog { margin-bottom: 1rem; }
+  .paralog-label { font-size: 0.82rem; font-weight: 700; color: #334155; margin-bottom: 4px; }
+  .identity-track { background: #f1f5f9; border-radius: 999px; height: 20px; overflow: hidden; position: relative; }
+  .identity-fill { height: 100%; transition: width 0.3s, background 0.3s; }
+  .status { font-size: 0.78rem; color: #4b5563; margin-top: 4px; min-height: 18px; }
+  .actions { display: flex; gap: 10px; justify-content: center; margin-top: 1rem; }
+  .action-btn {
+    background: #2d6a4f; color: #fff; border: none; padding: 8px 20px;
+    border-radius: 999px; font-size: 0.85rem; cursor: pointer;
+  }
+  .action-btn.secondary { background: #94a3b8; }
+  #genLabel { text-align: center; font-size: 0.82rem; color: #4b5563; margin-top: 8px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Gene Duplication Fate Simulator</h3>
+  <div class="subtitle">Pick a fate for each post-duplication paralog, then run generations to watch their sequence identity to the ancestral gene diverge differently.</div>
+  <div class="selectors">
+    <label>Paralog A fate
+      <select id="fateA">
+        <option value="retain">Retain function (purifying selection)</option>
+        <option value="pseudo">Pseudogenize</option>
+        <option value="neo">Neofunctionalize</option>
+      </select>
+    </label>
+    <label>Paralog B fate
+      <select id="fateB">
+        <option value="pseudo">Pseudogenize</option>
+        <option value="retain">Retain function (purifying selection)</option>
+        <option value="neo">Neofunctionalize</option>
+      </select>
+    </label>
+  </div>
+  <div class="paralog">
+    <div class="paralog-label">Paralog A</div>
+    <div class="identity-track"><div class="identity-fill" id="fillA" style="width:100%; background:#2d6a4f;"></div></div>
+    <div class="status" id="statusA"></div>
+  </div>
+  <div class="paralog">
+    <div class="paralog-label">Paralog B</div>
+    <div class="identity-track"><div class="identity-fill" id="fillB" style="width:100%; background:#2d6a4f;"></div></div>
+    <div class="status" id="statusB"></div>
+  </div>
+  <div class="actions">
+    <button class="action-btn" id="runBtn">Advance 10 generations</button>
+    <button class="action-btn secondary" id="resetBtn">Reset (re-duplicate)</button>
+  </div>
+  <div id="genLabel">Generation 0</div>
+</div>
+<script>
+(function(){
+  var gen = 0;
+  var identity = { A: 100, B: 100 };
+  var eventFired = { A: false, B: false };
+
+  function decayRate(fate){
+    if (fate === 'retain') return 0.05;
+    if (fate === 'neo') return 0.25;
+    return 0.5;
+  }
+
+  function colorFor(fate, id){
+    if (fate === 'retain') return '#2d6a4f';
+    if (fate === 'neo') return '#c77d2e';
+    return '#94a3b8';
+  }
+
+  function statusText(fate, id, key){
+    if (fate === 'retain'){
+      return 'Purifying selection keeps this copy close to the ancestral sequence (' + id.toFixed(1) + '% identity).';
+    }
+    if (fate === 'neo'){
+      var txt = 'Diverging under relaxed constraint (' + id.toFixed(1) + '% identity).';
+      if (id < 75 && !eventFired[key]){
+        eventFired[key] = true;
+      }
+      if (eventFired[key]) txt += ' Accumulated changes have plausibly acquired a <b>new function</b>.';
+      return txt;
+    }
+    var txt2 = 'Freed from purifying selection, drifting toward disability (' + id.toFixed(1) + '% identity).';
+    if (id < 60 && !eventFired[key]){ eventFired[key] = true; }
+    if (eventFired[key]) txt2 += ' Likely carries a <b>disabling mutation</b> — functionally a pseudogene now.';
+    return txt2;
+  }
+
+  function render(){
+    var fateA = document.getElementById('fateA').value;
+    var fateB = document.getElementById('fateB').value;
+    document.getElementById('fillA').style.width = identity.A + '%';
+    document.getElementById('fillA').style.background = colorFor(fateA, identity.A);
+    document.getElementById('fillB').style.width = identity.B + '%';
+    document.getElementById('fillB').style.background = colorFor(fateB, identity.B);
+    document.getElementById('statusA').innerHTML = statusText(fateA, identity.A, 'A');
+    document.getElementById('statusB').innerHTML = statusText(fateB, identity.B, 'B');
+    document.getElementById('genLabel').textContent = 'Generation ' + gen;
+  }
+
+  document.getElementById('runBtn').addEventListener('click', function(){
+    var fateA = document.getElementById('fateA').value;
+    var fateB = document.getElementById('fateB').value;
+    for (var i = 0; i < 10; i++){
+      identity.A = Math.max(30, identity.A - decayRate(fateA) * (2 + Math.random()*2));
+      identity.B = Math.max(30, identity.B - decayRate(fateB) * (2 + Math.random()*2));
+      gen++;
+    }
+    render();
+  });
+
+  document.getElementById('resetBtn').addEventListener('click', function(){
+    gen = 0;
+    identity = { A: 100, B: 100 };
+    eventFired = { A: false, B: false };
+    render();
+  });
+
+  document.getElementById('fateA').addEventListener('change', render);
+  document.getElementById('fateB').addEventListener('change', render);
+
+  render();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Endosymbiosis Evidence Checklist | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 620px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .layout { display: flex; gap: 1.4rem; align-items: flex-start; flex-wrap: wrap; }
+  .organelle-panel { flex: 0 0 130px; text-align: center; }
+  .organelle-panel svg { width: 110px; height: 110px; }
+  #verdict { font-weight: 700; margin-top: 8px; font-size: 0.85rem; color: #64748b; }
+  .checklist { flex: 1; min-width: 280px; }
+  .item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    border: 1px solid #e2e8f0;
+    background: #f8fafc;
+  }
+  .item.checked.valid { background: #dcfce7; border-color: #86efac; }
+  .item.checked.invalid { background: #fee2e2; border-color: #fca5a5; }
+  .item input { margin-top: 3px; }
+  .item .label { font-size: 0.88rem; font-weight: 600; }
+  .item .fb { font-size: 0.78rem; color: #4b5563; display: block; margin-top: 3px; }
+  #meter-wrap { margin-top: 1rem; background: #f1f5f9; border-radius: 999px; height: 10px; overflow: hidden; }
+  #meter { height: 100%; width: 0%; background: #2d6a4f; transition: width 0.25s; }
+  #meterLabel { font-size: 0.8rem; color: #4b5563; margin-top: 6px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Endosymbiosis Evidence Checklist</h3>
+  <div class="subtitle">Organelle X is unlabeled below. Check off which lines of evidence actually support a bacterial (endosymbiotic) origin — not every option belongs.</div>
+  <div class="layout">
+    <div class="organelle-panel">
+      <svg viewBox="0 0 100 100">
+        <ellipse cx="50" cy="50" rx="42" ry="30" fill="#eaf2f8" stroke="#1d70a2" stroke-width="3"/>
+        <ellipse id="innerMembrane" cx="50" cy="50" rx="30" ry="18" fill="none" stroke="#1d70a2" stroke-width="2" stroke-dasharray="4 3" opacity="0"/>
+        <text x="50" y="54" text-anchor="middle" font-size="13" font-weight="700" fill="#1d70a2">X</text>
+      </svg>
+      <div id="verdict">Case: 0 / 4</div>
+    </div>
+    <div class="checklist" id="checklist"></div>
+  </div>
+  <div id="meter-wrap"><div id="meter"></div></div>
+  <div id="meterLabel">Build the case for bacterial origin by checking valid evidence.</div>
+</div>
+<script>
+(function(){
+  var evidence = [
+    { label: 'Double membrane', valid: true, fb: 'Consistent with engulfment: an inner membrane from the original bacterium, an outer one from the host’s engulfing vacuole.' },
+    { label: 'Own circular DNA', valid: true, fb: 'A small circular genome resembling a bacterial chromosome, distinct from the linear nuclear genome.' },
+    { label: 'Membrane-bound nucleus', valid: false, fb: 'This is a general eukaryotic cell feature, not something Organelle X itself has — it doesn’t bear on X’s own origin.' },
+    { label: '70S (bacterial-size) ribosomes', valid: true, fb: 'Bacterial-sized ribosomes distinct from the 80S cytoplasmic ribosome, sensitive to some antibiotics that block bacterial translation.' },
+    { label: 'Binary fission division', valid: true, fb: 'Replicates by splitting in two, independent of the host cell’s mitotic cycle — the same mechanism bacteria use.' },
+    { label: 'Produces ATP via glycolysis in the cytoplasm', valid: false, fb: 'Glycolysis happens in the cytoplasm generally and isn’t a distinguishing feature of this organelle’s ancestry.' }
+  ];
+  var totalValid = evidence.filter(function(e){ return e.valid; }).length;
+  var checkedValid = 0;
+  var list = document.getElementById('checklist');
+  var meter = document.getElementById('meter');
+  var meterLabel = document.getElementById('meterLabel');
+  var verdict = document.getElementById('verdict');
+  var innerMembrane = document.getElementById('innerMembrane');
+
+  evidence.forEach(function(ev, i){
+    var row = document.createElement('label');
+    row.className = 'item';
+    var cb = document.createElement('input');
+    cb.type = 'checkbox';
+    var textWrap = document.createElement('span');
+    textWrap.innerHTML = '<span class="label">' + ev.label + '</span>';
+    row.appendChild(cb);
+    row.appendChild(textWrap);
+    list.appendChild(row);
+
+    cb.addEventListener('change', function(){
+      if (cb.checked){
+        row.classList.add('checked', ev.valid ? 'valid' : 'invalid');
+        var fbEl = document.createElement('span');
+        fbEl.className = 'fb';
+        fbEl.textContent = ev.fb;
+        textWrap.appendChild(fbEl);
+        if (ev.valid){ checkedValid++; }
+      } else {
+        row.classList.remove('checked', 'valid', 'invalid');
+        var fbEl2 = textWrap.querySelector('.fb');
+        if (fbEl2) fbEl2.remove();
+        if (ev.valid){ checkedValid--; }
+      }
+      update();
+    });
+  });
+
+  function update(){
+    var pct = Math.round((checkedValid / totalValid) * 100);
+    meter.style.width = pct + '%';
+    verdict.textContent = 'Case: ' + checkedValid + ' / ' + totalValid;
+    innerMembrane.style.opacity = pct > 0 ? Math.min(1, pct/100) : 0;
+    if (checkedValid >= totalValid){
+      meterLabel.innerHTML = '<b>Case complete</b> — Organelle X’s evidence profile matches a mitochondrion (or chloroplast): formerly free-living bacteria, retained as permanent symbionts.';
+      verdict.style.color = '#166534';
+    } else if (checkedValid > 0){
+      meterLabel.textContent = 'Case building — ' + (totalValid - checkedValid) + ' more valid line(s) of evidence to go.';
+      verdict.style.color = '#64748b';
+    } else {
+      meterLabel.textContent = 'Build the case for bacterial origin by checking valid evidence.';
+      verdict.style.color = '#64748b';
+    }
+  }
+})();
+</script>
+</body>
+</html>

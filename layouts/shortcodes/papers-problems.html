@@ -1,0 +1,64 @@
+{{- /* Renders a round's paper links (exam/answer PDFs) and, if present, a
+     filterable table of individual problems, each linking to its own page.
+     Usage: {{< papers-problems olympiad="tbo" year="2023" round="first-stage" >}}
+     on the round's _index.md. */ -}}
+{{- $olId := .Get "olympiad" -}}
+{{- $yearId := .Get "year" -}}
+{{- $roundId := .Get "round" -}}
+{{- $ol := index hugo.Data.papers $olId -}}
+{{- $yearData := index $ol $yearId -}}
+{{- $round := dict -}}
+{{- range $yearData.rounds }}{{ if eq .id $roundId }}{{ $round = . }}{{ end }}{{ end -}}
+
+<div class="papers-paperlinks">
+  {{- range $round.papers }}
+  <div class="papers-paper-row">
+    {{- $paper := . -}}
+    <span class="papers-paper-category">{{ .category }}</span>
+    {{ with .link }}<a class="papers-pill" href="{{ . }}" target="_blank" rel="noopener">{{ $paper.linkLabel | default "Exam" }}</a>{{ end }}
+    {{ with .solutionLink }}<a class="papers-pill papers-pill-solution" href="{{ . }}" target="_blank" rel="noopener">{{ $paper.solutionLabel | default "Answer" }}</a>{{ end }}
+  </div>
+  {{- end }}
+</div>
+
+{{- if $round.problems }}
+<div class="papers-search">
+  <input type="text" id="papers-problem-filter" class="papers-search-input" placeholder="Filter problems…" autocomplete="off">
+</div>
+<div class="papers-table-wrap">
+<table class="papers-problem-table" id="papers-problem-table">
+  <thead><tr><th>No.</th><th>Title</th><th>Subjects</th><th>Points</th><th></th></tr></thead>
+  <tbody>
+    {{- range $round.problems }}
+    <tr class="papers-problem-row">
+      <td>{{ .number }}</td>
+      <td><a href="{{ $.Page.RelPermalink }}{{ .id }}/">{{ .name }}</a></td>
+      <td>
+        {{- if .subjects -}}
+        <div class="papers-subject-tags">
+          {{- range .subjects }}
+          <a class="papers-subject-tag" href="{{ .link }}">{{ .name }}</a>
+          {{- end }}
+        </div>
+        {{- else -}}—{{- end -}}
+      </td>
+      <td>{{ .maxScore | default "—" }}</td>
+      <td>{{ with .link }}<a class="papers-pill" href="{{ . }}" target="_blank" rel="noopener">PDF</a>{{ end }}</td>
+    </tr>
+    {{- end }}
+  </tbody>
+</table>
+</div>
+<script>
+(function () {
+  var input = document.getElementById('papers-problem-filter');
+  if (!input) return;
+  input.addEventListener('input', function () {
+    var q = input.value.toLowerCase();
+    document.querySelectorAll('#papers-problem-table .papers-problem-row').forEach(function (row) {
+      row.style.display = row.textContent.toLowerCase().indexOf(q) !== -1 ? '' : 'none';
+    });
+  });
+})();
+</script>
+{{- end }}

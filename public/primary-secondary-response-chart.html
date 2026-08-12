@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Primary vs. Secondary Immune Response | BioGuide</title>
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js" charset="utf-8"></script>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 760px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .readout { background:#eef2e6; border-radius: 12px; padding: 10px 14px; font-size: 0.85rem; margin-top: 0.8rem; }
+  .readout b { color:#2d6a4f; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Primary vs. Secondary Immune Response</h3>
+  <div class="subtitle">Antibody titer after a first exposure to an antigen (primary response) compared to a second exposure to the same antigen (secondary response) on the same time axis.</div>
+  <div id="plot" style="width:100%; height:400px;"></div>
+  <div class="readout">
+    <b>Primary response:</b> long lag (~5-10 days), lower peak, mostly IgM early.<br>
+    <b>Secondary response:</b> short lag (~1-2 days), much higher peak, dominated by IgG — the direct effect of pre-existing memory B cells.
+  </div>
+</div>
+<script>
+(function(){
+  var N = 200, tMax = 42;
+  var t = [], primary = [], secondary = [];
+  for (var i=0;i<N;i++){
+    var tt = i/(N-1)*tMax;
+    t.push(tt);
+    var p = tt < 21 ? 20 * Math.max(0, 1 - Math.exp(-Math.max(0,tt-6)/3)) * Math.exp(-Math.max(0,tt-12)/12) : 20*Math.exp(-(tt-21+9)/12)*0 ;
+
+    var primaryVal = 25 * Math.exp(-Math.pow((tt-11)/5,2));
+    var secondaryVal = tt > 21 ? 100 * Math.exp(-Math.pow((tt-26)/6,2)) : 0;
+    primary.push(primaryVal);
+    secondary.push(primaryVal + secondaryVal);
+  }
+
+  Plotly.newPlot('plot', [
+    {x:t, y:primary, name:'Primary response only (hypothetical, no re-exposure)', mode:'lines', line:{color:'#94a3b8', width:2, dash:'dot'}},
+    {x:t, y:secondary, name:'Actual response (2nd exposure at day 21)', mode:'lines', line:{color:'#1a472a', width:3}}
+  ], {
+    xaxis: {title:'Days since first exposure', range:[0,tMax], gridcolor:'#e9ecef'},
+    yaxis: {title:'Antibody titer (relative)', range:[0,110], gridcolor:'#e9ecef'},
+    shapes: [
+      {type:'line', x0:0, x1:0, y0:0, y1:110, line:{color:'#b45309', width:1, dash:'dot'}},
+      {type:'line', x0:21, x1:21, y0:0, y1:110, line:{color:'#166534', width:1, dash:'dot'}}
+    ],
+    annotations: [
+      {x:0, y:108, text:'1st exposure', showarrow:false, font:{size:10, color:'#b45309'}, xanchor:'left'},
+      {x:21, y:108, text:'2nd exposure (same antigen)', showarrow:false, font:{size:10, color:'#166534'}, xanchor:'left'}
+    ],
+    legend: {orientation:'h', y:-0.2},
+    margin: {t:20, l:55, r:20, b:45},
+    plot_bgcolor:'#ffffff', paper_bgcolor:'#ffffff'
+  }, {responsive:true, displayModeBar:false});
+})();
+</script>
+</body>
+</html>

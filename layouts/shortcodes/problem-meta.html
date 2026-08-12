@@ -1,0 +1,13 @@
+{{- /* Badge row for an individual problem page.
+     Usage: {{< problem-meta category="First Stage" points="TBD" >}}
+     `note` overrides the trailing provenance badge (default: "Sample data —
+     placeholder", for fabricated demo content). Pass note="" to omit the
+     badge entirely, or a custom string for real-but-caveated content. */ -}}
+{{- $category := .Get "category" -}}
+{{- $points := .Get "points" -}}
+{{- $note := .Get "note" | default "Sample data — placeholder" -}}
+<div class="topic-meta">
+  {{ with $category }}<span class="badge-custom">{{ . }}</span>{{ end }}
+  {{ with $points }}<span class="badge-custom">{{ . }} pts</span>{{ end }}
+  {{ with $note }}<span class="badge-curiosity">{{ . }}</span>{{ end }}
+</div>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rotating Invisible Grid Puzzle</title>
+<style>
+  :root {
+    --bg: #0f1216;
+    --panel: #171b21;
+    --panel2: #1e242c;
+    --border: #2b323b;
+    --text: #e6e9ee;
+    --muted: #8b94a1;
+    --accent: #5b9dff;
+    --good: #3ecf8e;
+    --bad: #ff6b6b;
+    --warn: #f5a623;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 24px;
+  }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  h2 { font-size: 17px; margin: 0 0 10px; }
+  p.sub { color: var(--muted); margin: 0 0 20px; font-size: 14px; }
+  .tabs { display: flex; gap: 8px; margin-bottom: 18px; }
+  .tab-btn {
+    background: var(--panel); color: var(--text); border: 1px solid var(--border);
+    padding: 8px 16px; border-radius: 8px; cursor: pointer; font-size: 14px;
+  }
+  .tab-btn.active { background: var(--accent); color: #0b1220; border-color: var(--accent); font-weight: 600; }
+  .tabpage { display: none; }
+  .tabpage.active { display: block; }
+  .layout { display: flex; gap: 24px; flex-wrap: wrap; align-items: flex-start; }
+  .panel {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 12px;
+    padding: 18px; flex: 1 1 320px;
+  }
+  .grid-stage { display: flex; flex-direction: column; align-items: center; gap: 16px; }
+  .grid-frame {
+    width: 220px; height: 220px; position: relative;
+    transition: transform 0.7s cubic-bezier(.3,.9,.3,1);
+  }
+  .grid-2x2 {
+    width: 100%; height: 100%; display: grid;
+    grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 8px;
+  }
+  .cell {
+    background: var(--panel2); border: 2px solid var(--border); border-radius: 10px;
+    display: flex; align-items: center; justify-content: center; flex-direction: column;
+    cursor: pointer; user-select: none; font-size: 13px; color: var(--muted);
+    transition: border-color .15s, background .15s;
+  }
+  .cell .lbl { font-weight: 600; color: var(--text); }
+  .cell.selected { border-color: var(--accent); background: #223047; }
+  .cell.selected .lbl { color: var(--accent); }
+  .cell .mark { font-size: 22px; margin-top: 2px; }
+  .cell.revealed.circle { border-color: var(--warn); }
+  .cell.revealed.circle .mark::after { content: "●"; color: var(--warn); }
+  .cell.revealed.nocircle .mark::after { content: "○"; color: var(--muted); }
+  .controls { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+  button.action {
+    background: var(--accent); color: #0b1220; border: none; border-radius: 8px;
+    padding: 9px 16px; font-size: 14px; font-weight: 600; cursor: pointer;
+  }
+  button.action.secondary { background: var(--panel2); color: var(--text); border: 1px solid var(--border); }
+  button.action:disabled { opacity: .4; cursor: not-allowed; }
+  .stat-row { display: flex; gap: 18px; font-size: 13px; color: var(--muted); }
+  .stat-row b { color: var(--text); }
+  .log {
+    background: var(--panel2); border: 1px solid var(--border); border-radius: 8px;
+    padding: 10px 12px; max-height: 260px; overflow-y: auto; font-size: 13px; font-family: monospace;
+  }
+  .log div { padding: 2px 0; border-bottom: 1px dashed #2b323b33; }
+  .result-banner { padding: 10px 14px; border-radius: 8px; font-weight: 600; font-size: 14px; margin-bottom: 4px; }
+  .result-banner.win { background: #123528; color: var(--good); border: 1px solid var(--good); }
+  .result-banner.lose { background: #3a1e1e; color: var(--bad); border: 1px solid var(--bad); }
+  label { font-size: 13px; color: var(--muted); display: block; margin: 10px 0 4px; }
+  select, textarea, input[type=number] {
+    width: 100%; background: var(--panel2); color: var(--text); border: 1px solid var(--border);
+    border-radius: 6px; padding: 8px; font-size: 13px; font-family: monospace;
+  }
+  textarea { min-height: 90px; resize: vertical; }
+  details { background: var(--panel2); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; margin-top: 14px; }
+  details summary { cursor: pointer; font-weight: 600; font-size: 14px; }
+  details p, details li { font-size: 13.5px; color: var(--text); line-height: 1.55; }
+  code { background: #0009; padding: 1px 5px; border-radius: 4px; font-size: 12.5px; }
+  table.demo { border-collapse: collapse; width: 100%; font-size: 12.5px; margin-top: 10px; }
+  table.demo th, table.demo td { border: 1px solid var(--border); padding: 4px 8px; text-align: center; }
+  table.demo tr.hit td { background: #123528; color: var(--good); font-weight: 700; }
+  .verify-report { margin-top: 14px; font-size: 13.5px; }
+  .verify-report .pass { color: var(--good); font-weight: 700; }
+  .verify-report .fail { color: var(--bad); font-weight: 700; }
+  .badge { display: inline-block; font-size: 11px; padding: 2px 7px; border-radius: 999px; background: var(--panel2); border: 1px solid var(--border); color: var(--muted); margin-left: 8px; }
+</style>
+</head>
+<body>
+
+<h1>Rotating Invisible Grid Puzzle</h1>
+<p class="sub">2×2 grid, 4 invisible cells. Toggle a subset each round, then the grid secretly
+spins 90°/180°/270°/360° &mdash; you only see the angle. Goal: drive every cell to "no circle".</p>
+
+<div class="tabs">
+  <button class="tab-btn active" data-tab="play">Play</button>
+  <button class="tab-btn" data-tab="lab">Solver / Verify Lab</button>
+</div>
+
+<div class="tabpage active" id="tab-play">
+  <div class="layout">
+    <div class="panel grid-stage">
+      <h2>Game board</h2>
+      <div class="grid-frame" id="gridFrame">
+        <div class="grid-2x2" id="gridCells"></div>
+      </div>
+      <div class="controls">
+        <button class="action" id="btnSpin">Spin (confirm round)</button>
+        <button class="action secondary" id="btnReveal">Reveal</button>
+        <button class="action secondary" id="btnNewGame">New Game</button>
+      </div>
+      <div id="banner"></div>
+      <div class="stat-row">
+        <span>Round: <b id="statRound">0</b></span>
+        <span>Games played: <b id="statGames">0</b></span>
+        <span>Wins: <b id="statWins">0</b></span>
+        <span>Win rate: <b id="statRate">&mdash;</b></span>
+      </div>
+    </div>
+    <div class="panel">
+      <h2>Round history</h2>
+      <div class="log" id="log"><div>No rounds yet. Click cells to select toggles, then Spin.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="tabpage" id="tab-lab">
+  <div class="layout">
+    <div class="panel" style="flex:1 1 380px;">
+      <h2>Define a strategy</h2>
+      <label>Preset</label>
+      <select id="presetSelect">
+        <option value="all">Always toggle all four</option>
+        <option value="diag">Toggle TL + BR every round</option>
+        <option value="none">Never toggle anything</option>
+        <option value="reactive">React to last observed angle</option>
+        <option value="custom">Custom function (edit below)</option>
+      </select>
+      <label>Strategy body &mdash; receives <code>history</code> (array of past angles, e.g. <code>[90,270]</code>), must <code>return</code> an array of labels from <code>"TL","TR","BR","BL"</code></label>
+      <textarea id="strategyCode">if (history.length === 0) return ["TL","BR"];
+const last = history[history.length - 1];
+if (last === 90) return ["TL","TR"];
+if (last === 180) return [];
+if (last === 270) return ["BR","BL"];
+return ["TL"];</textarea>
+      <label>Rounds to check (D) &mdash; total cases = 16 &times; 4^D</label>
+      <input type="number" id="depthInput" value="6" min="1" max="8">
+      <div class="controls" style="justify-content:flex-start; margin-top:14px;">
+        <button class="action" id="btnVerify">Run brute-force verification</button>
+      </div>
+      <div class="verify-report" id="verifyReport"></div>
+    </div>
+    <div class="panel" style="flex:1 1 320px;">
+      <h2>Bijection demo <span class="badge">first rotation sequence checked</span></h2>
+      <p class="sub" style="margin-bottom:8px;">For one fixed, realized rotation sequence, every one
+      of the 16 possible initial configurations maps to a final state. Because toggles never depend
+      on the hidden state, this map is always a bijection &mdash; 16 distinct outputs, so at most one
+      input can land on "all no circle".</p>
+      <div id="demoTable">Run a verification to populate this.</div>
+    </div>
+  </div>
+
+  <details>
+    <summary>Why no finite strategy can ever guarantee a win</summary>
+    <p>Represent the 4 cell states as a bit vector in GF(2)<sup>4</sup>. A round applies
+    <code>state &larr; P(state XOR t)</code>, where <code>t</code> is the toggle (chosen only from
+    the history of previously observed angles) and <code>P</code> is the permutation matrix for the
+    observed rotation (90&deg;/180&deg;/270&deg; are cyclic shifts, 360&deg; is the identity).</p>
+    <p>Because the toggle at each round depends only on prior observed angles &mdash; never on the
+    invisible state &mdash; the entire sequence of toggles for one <em>fixed, already-realized</em>
+    sequence of rotations is fixed in advance, independent of the actual initial state x0. So for
+    that one fixed rotation sequence, the whole D-round process is a single affine map
+    <code>x0 &rarr; state_D = M&middot;x0 XOR c</code>, where <code>M</code> is a product of
+    permutation matrices &mdash; always invertible.</p>
+    <p>An invertible map on a 16-element space is a <b>bijection</b>: it sends the 16 distinct
+    initial configurations to 16 distinct final states. It is therefore impossible for all 16 to
+    land on the same target (all "no circle") &mdash; at most one of the 16 initial configurations
+    can be solved by any given rotation sequence. Since the adversary (nature) can realize any
+    rotation sequence, no finite strategy can guarantee a win for every configuration.</p>
+    <p>This holds regardless of which angles are offered (90/180/270/360 or any other rotation
+    set) &mdash; only two facts matter: rotations are permutations (hence invertible), and toggles
+    are chosen blind to the state. It also explains why the classic "four blindfolded cups on a
+    spinning table" puzzle <em>is</em> solvable: its goal is "all cups the same" &mdash; two target
+    states, not one &mdash; so the bijection argument doesn't force a contradiction there.</p>
+  </details>
+</div>
+
+<script>
+const CYCLE = ["TL","TR","BR","BL"];
+const ANGLES = [90, 180, 270, 360];
+
+function randomState() {
+  return CYCLE.map(() => Math.random() < 0.5 ? 1 : 0);
+}
+function toggle(state, labels) {
+  const next = state.slice();
+  labels.forEach(l => {
+    const i = CYCLE.indexOf(l);
+    next[i] = next[i] ^ 1;
+  });
+  return next;
+}
+function rotateState(state, angle) {
+  const steps = (angle / 90) % 4;
+  const next = new Array(4);
+  for (let j = 0; j < 4; j++) next[j] = state[(j - steps + 4) % 4];
+  return next;
+}
+function isZero(state) { return state.every(b => b === 0); }
+
+let game = null;
+let stats = { games: 0, wins: 0 };
+let totalSpin = 0;
+
+function newGame() {
+  game = { state: randomState(), selected: new Set(), history: [], round: 0, over: false };
+  document.getElementById("statRound").textContent = "0";
+  document.getElementById("log").innerHTML = "<div>No rounds yet. Click cells to select toggles, then Spin.</div>";
+  document.getElementById("banner").innerHTML = "";
+  renderCells();
+}
+
+function renderCells() {
+  const el = document.getElementById("gridCells");
+  el.innerHTML = "";
+  CYCLE.forEach(label => {
+    const cell = document.createElement("div");
+    cell.className = "cell" + (game.selected.has(label) ? " selected" : "");
+    cell.innerHTML = `<div class="lbl">${label}</div><div class="mark">${game.selected.has(label) ? "toggle" : ""}</div>`;
+    if (!game.over) {
+      cell.onclick = () => {
+        if (game.selected.has(label)) game.selected.delete(label);
+        else game.selected.add(label);
+        renderCells();
+      };
+    }
+    el.appendChild(cell);
+  });
+}
+
+function appendLog(text) {
+  const log = document.getElementById("log");
+  if (log.children.length === 1 && log.children[0].textContent.startsWith("No rounds")) log.innerHTML = "";
+  const div = document.createElement("div");
+  div.textContent = text;
+  log.appendChild(div);
+  log.scrollTop = log.scrollHeight;
+}
+
+document.getElementById("btnSpin").onclick = () => {
+  if (!game || game.over) return;
+  const labels = Array.from(game.selected);
+  game.state = toggle(game.state, labels);
+  const angle = ANGLES[Math.floor(Math.random() * ANGLES.length)];
+  game.state = rotateState(game.state, angle);
+  game.history.push(angle);
+  game.round++;
+  game.selected.clear();
+  totalSpin += angle;
+  document.getElementById("gridFrame").style.transform = `rotate(${totalSpin}deg)`;
+  document.getElementById("statRound").textContent = String(game.round);
+  appendLog(`Round ${game.round}: toggled {${labels.length ? labels.join(", ") : "none"}} → rotated ${angle}°`);
+  renderCells();
+};
+
+document.getElementById("btnReveal").onclick = () => {
+  if (!game || game.over) return;
+  game.over = true;
+  stats.games++;
+  const win = isZero(game.state);
+  if (win) stats.wins++;
+  document.getElementById("statGames").textContent = String(stats.games);
+  document.getElementById("statWins").textContent = String(stats.wins);
+  document.getElementById("statRate").textContent = (100 * stats.wins / stats.games).toFixed(1) + "%";
+  const el = document.getElementById("gridCells");
+  Array.from(el.children).forEach((cellEl, i) => {
+    const label = CYCLE[i];
+    const bit = game.state[CYCLE.indexOf(label)];
+    cellEl.classList.add("revealed", bit ? "circle" : "nocircle");
+    cellEl.querySelector(".mark").innerHTML = "";
+  });
+  document.getElementById("banner").innerHTML =
+    `<div class="result-banner ${win ? "win" : "lose"}">${win ? "Solved — all cells are no-circle." : "Not solved — at least one cell still has a circle."}</div>`;
+  renderCells2Locked();
+};
+function renderCells2Locked() {
+  const el = document.getElementById("gridCells");
+  Array.from(el.children).forEach(c => c.onclick = null);
+}
+
+document.getElementById("btnNewGame").onclick = newGame;
+
+document.querySelectorAll(".tab-btn").forEach(btn => {
+  btn.onclick = () => {
+    document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+    document.querySelectorAll(".tabpage").forEach(p => p.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById("tab-" + btn.dataset.tab).classList.add("active");
+  };
+});
+
+const PRESETS = {
+  all: `return ["TL","TR","BR","BL"];`,
+  diag: `return ["TL","BR"];`,
+  none: `return [];`,
+  reactive: `if (history.length === 0) return ["TL","BR"];
+const last = history[history.length - 1];
+if (last === 90) return ["TL","TR"];
+if (last === 180) return [];
+if (last === 270) return ["BR","BL"];
+return ["TL"];`,
+};
+document.getElementById("presetSelect").onchange = (e) => {
+  const v = e.target.value;
+  if (PRESETS[v]) document.getElementById("strategyCode").value = PRESETS[v];
+};
+
+function buildStrategyFn() {
+  const code = document.getElementById("strategyCode").value;
+  return new Function("history", code);
+}
+
+document.getElementById("btnVerify").onclick = () => {
+  const report = document.getElementById("verifyReport");
+  const demo = document.getElementById("demoTable");
+  let strategyFn;
+  try {
+    strategyFn = buildStrategyFn();
+  } catch (err) {
+    report.innerHTML = `<span class="fail">Strategy code error: ${err.message}</span>`;
+    return;
+  }
+  const D = Math.max(1, Math.min(8, parseInt(document.getElementById("depthInput").value, 10) || 6));
+  const totalPaths = Math.pow(4, D);
+
+  let totalCases = 0, passCases = 0;
+  let counterexample = null;
+  let bijectionRows = null;
+  let perPathHitCounts = { zero: 0, one: 0, more: 0 };
+
+  for (let path = 0; path < totalPaths; path++) {
+    let p = path;
+    const angles = [];
+    const toggles = [];
+    let hist = [];
+    for (let r = 0; r < D; r++) {
+      const digit = p % 4; p = Math.floor(p / 4);
+      const angle = ANGLES[digit];
+      let labels;
+      try {
+        labels = strategyFn(hist.slice()) || [];
+      } catch (err) {
+        report.innerHTML = `<span class="fail">Strategy threw at runtime: ${err.message}</span>`;
+        return;
+      }
+      toggles.push(labels);
+      angles.push(angle);
+      hist.push(angle);
+    }
+
+    let hits = 0;
+    const rowsForThisPath = [];
+    for (let x0 = 0; x0 < 16; x0++) {
+      let state = CYCLE.map((_, i) => (x0 >> i) & 1);
+      const initialState = state.slice();
+      for (let r = 0; r < D; r++) {
+        state = toggle(state, toggles[r]);
+        state = rotateState(state, angles[r]);
+      }
+      totalCases++;
+      const win = isZero(state);
+      if (win) { passCases++; hits++; }
+      if (!win && !counterexample) {
+        counterexample = { x0: initialState.slice(), angles: angles.slice(), toggles: toggles.map(t => t.slice()), final: state.slice() };
+      }
+      if (path === 0) rowsForThisPath.push({ x0: initialState.slice(), final: state.slice(), win });
+    }
+    if (path === 0) bijectionRows = rowsForThisPath;
+    if (hits === 0) perPathHitCounts.zero++;
+    else if (hits === 1) perPathHitCounts.one++;
+    else perPathHitCounts.more++;
+  }
+
+  const fmt = s => s.map((b,i) => b ? CYCLE[i] : null).filter(Boolean).join(",") || "none";
+  let html = "";
+  if (passCases === totalCases) {
+    html += `<div class="pass">PASS — all ${totalCases.toLocaleString()} cases (16 initial states × ${totalPaths.toLocaleString()} rotation sequences) reached all-zero.</div>`;
+  } else {
+    html += `<div class="fail">FAIL — ${passCases.toLocaleString()} / ${totalCases.toLocaleString()} cases reached all-zero (as the impossibility proof predicts, this can never be 100% once D ≥ 1 for a fixed non-degenerate goal).</div>`;
+  }
+  html += `<p>Per rotation sequence: ${perPathHitCounts.one} of ${totalPaths.toLocaleString()} sequences solve exactly 1 of the 16 initial states` +
+          (perPathHitCounts.zero ? `, ${perPathHitCounts.zero} solve 0` : "") +
+          (perPathHitCounts.more ? `, ${perPathHitCounts.more} solve more than 1 (would contradict invertibility — check your custom code for a bug)` : "") +
+          `.</p>`;
+  if (counterexample) {
+    html += `<p><b>Counterexample:</b> initial state {circles at: ${fmt(counterexample.x0)}}, rotation sequence [${counterexample.angles.join("°, ")}°] →
+    final state {circles at: ${fmt(counterexample.final)}} (not all no-circle).</p>`;
+  }
+  report.innerHTML = html;
+
+  let demoHtml = `<table class="demo"><tr><th>Initial (circles at)</th><th>Final (circles at)</th></tr>`;
+  bijectionRows.forEach(row => {
+    demoHtml += `<tr class="${row.win ? "hit" : ""}"><td>{${fmt(row.x0)}}</td><td>{${fmt(row.final)}}</td></tr>`;
+  });
+  demoHtml += `</table>`;
+  demo.innerHTML = demoHtml;
+};
+
+newGame();
+</script>
+</body>
+</html>

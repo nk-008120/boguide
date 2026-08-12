@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Synaptic Summation Sandbox | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .inputs-row { display:flex; gap: 10px; margin-bottom: 1rem; flex-wrap: wrap; }
+  .input-list { flex: 1; min-width: 260px; background:#f8fafc; border-radius:14px; padding: 10px 14px; }
+  .input-list h4 { margin: 0 0 8px 0; font-size: 0.8rem; color:#334155; }
+  .input-item { display:flex; align-items:center; gap:8px; margin-bottom: 6px; font-size:0.78rem; }
+  .input-item input[type=range] { flex:1; }
+  .add-remove { display:flex; gap:6px; margin-top: 6px; }
+  .add-remove button {
+    border-radius: 999px; border:none; padding: 4px 12px; font-size:0.75rem; font-weight:700; cursor:pointer;
+  }
+  .btn-epsp { background:#dcfce7; color:#166534; }
+  .btn-ipsp { background:#fee2e2; color:#991b1b; }
+  canvas { width:100%; height: 200px; background:#fff; border-radius: 14px; border: 1px solid #e2e8f0; }
+  .result { margin-top: 0.8rem; font-size: 0.85rem; text-align:center; padding: 8px; border-radius: 12px; background:#f1f5f9; }
+  .result.fired { background:#dcfce7; color:#166534; font-weight:700; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Synaptic Summation Sandbox</h3>
+  <div class="subtitle">Add EPSP and IPSP inputs and adjust their timing (ms) and size (mV). Watch the combined postsynaptic potential and see whether it crosses threshold.</div>
+  <div class="inputs-row">
+    <div class="input-list" id="epspList">
+      <h4>EPSPs (depolarizing)</h4>
+      <div id="epspItems"></div>
+      <div class="add-remove"><button class="btn-epsp" id="addEpsp">+ Add EPSP</button></div>
+    </div>
+    <div class="input-list" id="ipspList">
+      <h4>IPSPs (hyperpolarizing)</h4>
+      <div id="ipspItems"></div>
+      <div class="add-remove"><button class="btn-ipsp" id="addIpsp">+ Add IPSP</button></div>
+    </div>
+  </div>
+  <canvas id="canvas" width="640" height="200"></canvas>
+  <div class="result" id="result"></div>
+</div>
+<script>
+(function(){
+  var epsps = [{t: 20, amp: 8}, {t: 35, amp: 8}];
+  var ipsps = [];
+  var restingV = -70, thresholdV = -55;
+  var duration = 100;
+
+  var epspItems = document.getElementById('epspItems');
+  var ipspItems = document.getElementById('ipspItems');
+  var canvas = document.getElementById('canvas');
+  var ctx = canvas.getContext('2d');
+  var result = document.getElementById('result');
+
+  function renderInputList(container, arr, colorClass){
+    container.innerHTML = '';
+    arr.forEach(function(item, idx){
+      var row = document.createElement('div');
+      row.className = 'input-item';
+      row.innerHTML =
+        '<span>t=</span><input type="range" min="0" max="' + duration + '" value="' + item.t + '" class="t-slider">' +
+        '<span class="t-val">' + item.t + 'ms</span>' +
+        '<button class="remove-btn" style="background:none;border:none;color:#94a3b8;cursor:pointer;">✕</button>';
+      var tSlider = row.querySelector('.t-slider');
+      var tVal = row.querySelector('.t-val');
+      tSlider.addEventListener('input', function(){
+        item.t = parseInt(tSlider.value, 10);
+        tVal.textContent = item.t + 'ms';
+        draw();
+      });
+      row.querySelector('.remove-btn').addEventListener('click', function(){
+        arr.splice(idx, 1);
+        renderInputList(container, arr);
+        draw();
+      });
+      container.appendChild(row);
+    });
+  }
+
+  document.getElementById('addEpsp').addEventListener('click', function(){
+    epsps.push({t: 50, amp: 8});
+    renderInputList(epspItems, epsps);
+    draw();
+  });
+  document.getElementById('addIpsp').addEventListener('click', function(){
+    ipsps.push({t: 50, amp: 8});
+    renderInputList(ipspItems, ipsps);
+    draw();
+  });
+
+  function psp(tt, onset, amp, sign){
+    var dt = tt - onset;
+    if (dt < 0) return 0;
+    var tau = 8;
+    return sign * amp * (dt/tau) * Math.exp(1 - dt/tau);
+  }
+
+  function computeTrace(){
+    var pts = [];
+    var maxV = -1e9;
+    for (var tt = 0; tt <= duration; tt += 0.5){
+      var v = restingV;
+      epsps.forEach(function(e){ v += psp(tt, e.t, e.amp, 1); });
+      ipsps.forEach(function(e){ v += psp(tt, e.t, e.amp, -1); });
+      pts.push({t: tt, v: v});
+      if (v > maxV) maxV = v;
+    }
+    return {pts: pts, maxV: maxV};
+  }
+
+  function draw(){
+    var data = computeTrace();
+    var w = canvas.width, h = canvas.height;
+    ctx.clearRect(0,0,w,h);
+    var yMin = -90, yMax = -30;
+    function yToPx(v){ return h - ( (v - yMin) / (yMax - yMin) ) * h; }
+    function xToPx(t){ return (t/duration) * w; }
+
+    ctx.strokeStyle = '#b91c1c';
+    ctx.setLineDash([5,4]);
+    ctx.beginPath();
+    ctx.moveTo(0, yToPx(thresholdV));
+    ctx.lineTo(w, yToPx(thresholdV));
+    ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.fillStyle = '#b91c1c';
+    ctx.font = '11px Inter, sans-serif';
+    ctx.fillText('threshold (-55 mV)', 8, yToPx(thresholdV) - 6);
+
+    ctx.strokeStyle = '#94a3b8';
+    ctx.setLineDash([2,3]);
+    ctx.beginPath();
+    ctx.moveTo(0, yToPx(restingV));
+    ctx.lineTo(w, yToPx(restingV));
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    ctx.strokeStyle = '#1a472a';
+    ctx.lineWidth = 2.5;
+    ctx.beginPath();
+    data.pts.forEach(function(p, i){
+      var x = xToPx(p.t), y = yToPx(Math.max(yMin, Math.min(yMax, p.v)));
+      if (i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+    });
+    ctx.stroke();
+
+    var fired = data.maxV >= thresholdV;
+    result.textContent = fired
+      ? 'Threshold reached (peak ' + data.maxV.toFixed(1) + ' mV) — action potential fires!'
+      : 'Subthreshold (peak ' + data.maxV.toFixed(1) + ' mV) — no action potential.';
+    result.classList.toggle('fired', fired);
+  }
+
+  renderInputList(epspItems, epsps);
+  renderInputList(ipspItems, ipsps);
+  draw();
+})();
+</script>
+</body>
+</html>

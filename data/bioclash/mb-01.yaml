@@ -1,0 +1,1099 @@
+id: mb-01
+title: "Case File MB-01 — Molecular Biology & Biochemistry"
+season: mb-01
+accessMode: open
+durationMinutes: 240
+totalMarks: 165
+
+extensionBlockMinutes: 30
+maxExtensionBlocks: 3
+extensionCostSchedule: [0.10, 0.20, 0.35]
+extensionBonusCeiling: 0.15
+
+parts:
+  - id: part-a
+    name: "PART A — Reconstructing the Timeline"
+    marks: 10
+    intro: >
+      Mobius hands me a folder. Someone already solved this — civilians, no
+      idea they'd touched a Sacred Timeline question. We don't have their
+      real case file. We have five reconstructions of how they got there.
+      Four are not sacred. "This pick is non-recoverable," Mobius says,
+      tapping a red seal on the folder. "Commit, and that's the file. No
+      backsies." Fine by me. I don't make mistakes — I recalibrate
+      expectations.
+    blocks:
+      - id: part-a-lock
+        locksAfterSubmit: true
+        reveals: da-context1
+        lockWarning: "Once you proceed past this point, you cannot return and change your answer here."
+        components:
+          - key: workflow-pick
+            type: mcq
+            marks: 2
+            prompt: >
+              Context: RNF43 and ZNRF3 are two closely related membrane-bound E3 ubiquitin ligases.
+              Both do the same basic job: they tag Frizzled (FZD) receptors — the primary receptors
+              for WNT ligands, which shuts down WNT signalling.
+              RNF43/ZNRF3 are themselves induced by WNT/β-catenin signalling. Every cell surface is a
+              timeline of its own, and two enforcers are tasked with keeping it clean: RNF43 and ZNRF3.
+              For years the Authority assumed the two ligases were interchangeable case-workers,
+              pruning any Frizzled (FZD(total=9)) variant that crossed their path. Below are five
+              reconstructions of how the enforcers' actual jurisdiction was tested. Exactly one
+              matches the timeline that really happened. Identify the correct workflow.
+            options:
+              - key: "I"
+                text: >
+                  Add RNF43 or ZNRF3 expression constructs into standard wild-type HEK293T
+                  cells, which still carry their own endogenous copies of both genes, and
+                  measure Frizzled down-regulation directly.
+              - key: "II"
+                text: >
+                  In RNF43/ZNRF3 double-knockout HEK293T cells, co-express RNF43 or ZNRF3
+                  with FZD5 or FZD6, then quantify FZD5 and FZD6 mRNA transcript levels,
+                  concluding that whichever ligase produces the larger drop in transcript is
+                  the preferred one.
+              - key: "III"
+                text: >
+                  Generate RNF43/ZNRF3 double-knockout HEK293T cells for reference.
+                  Individually co-express each of the nine testable human
+                  FZD subtypes with RNF43, ZNRF3, or an empty vector, and quantify
+                  Localise the region conferring specificity using chimeric constructs.
+              - key: "IV"
+                text: >
+                  In RNF43/ZNRF3 double-knockout cells, build a single chimera in which both
+                  the extracellular domain and the transmembrane domain of RNF43 are replaced
+                  simultaneously with the corresponding regions of ZNRF3, then test whether
+                  this chimera retains the ability to down-regulate FZD5.
+              - key: "V"
+                text: >
+                  Using public tissue-expression databases and cancer genomics datasets,
+                  conclude that RNF43 prefers FZD5 and ZNRF3 prefers FZD6, based on the
+                  observation that FZD5-dominant tissues show more RNF43 mutations and
+                  FZD6-dominant tissues show more ZNRF3 mutations in tumours.
+            correctKey: "III"
+          - key: workflow-flaws
+            type: free_text_for_others
+            refersTo: workflow-pick
+            marksEach: 2
+            promptTemplate: "State, in one sentence, the specific methodological flaw that rules out Workflow {option}."
+
+  - id: part-da
+    name: "DATA ANALYSIS — The Agent's Desk"
+    marks: 32
+    intro: >
+      2000 BCE. Desk of a Time Variance Authority agent, long before any of this was
+      declassified into a case file. The agent is working the RNF43/ZNRF3 problem from a
+      different angle entirely — not "which workflow," but "what do the readouts actually
+      show." No confirmed timeline yet. No Workflow III. Just his own data, in front of
+      him, and the question of whether he can trust what it's telling him. Below is an image showing
+      the two main WNT/β-catenin signalling routes in the cell, with Frizzled (FZD) sitting
+      at the entrance to both. Answer strictly from the data provided.
+    blocks:
+      - id: da-context1
+        locksAfterSubmit: true
+        reveals: da-context2a
+        label: "Context 1 — WNT/β-catenin Luciferase Reporter Assay"
+        lockWarning: "Once you proceed past this point, you cannot return and change your answers in this context."
+        images:
+          - src: "/MB-01PICS/signallingpath.png"
+            caption: "The two main WNT/β-catenin signalling pathways; FZD is essential to both."
+          - src: "/MB-01PICS/supressiondata1.jpg"
+            caption: >
+              WNT/β-catenin-mediated luciferase reporter assay, WT HEK293T vs. Cas9-control
+              vs. two clonal RNF43/ZNRF3 double-knockout (R/ZdKO) lines, overnight-stimulated
+              with WNT3A and/or RSPO1-conditioned medium vs. control medium. Mean reporter
+              activity ± SD, n = 2 wells, representative experiment (N = 2).
+        components:
+          - key: da-c1-synergy
+            type: true_false
+            marks: 1
+            prompt: "The addition of RSPO1, when combined with WNT3A, exhibits a synergistic effect on reporter activity."
+            correctValue: true
+          - key: da-c1-ko-changes
+            type: mcq
+            marks: 2
+            prompt: "What changes can be seen in the R/ZdKO (knockout) lines relative to WT/control, across the conditions tested?"
+            options:
+              - key: A
+                text: "Increased basal activity, hypersensitivity to WNT, loss of RSPO1 synergy."
+              - key: B
+                text: "Decreased basal activity, hypersensitivity to WNT, loss of RSPO1 synergy."
+              - key: C
+                text: "Increased basal activity, hyposensitivity to WNT, loss of RSPO1 synergy."
+              - key: D
+                text: "Decreased basal activity, hyposensitivity to WNT, loss of RSPO1 synergy."
+            correctKey: A
+          - key: da-c1-luciferase-mechanism
+            type: mcq
+            marks: 2
+            prompt: >
+              In this assay, a β-catenin/TCF-responsive promoter drives expression of a
+              luciferase reporter gene. Which statement correctly describes how the
+              luminescence readout relates to WNT/β-catenin signalling activity?
+            options:
+              - key: A
+                text: >
+                  Luminescence is directly proportional to WNT/β-catenin signalling activity —
+                  active β-catenin/TCF complexes drive reporter transcription, so more
+                  signalling produces more light output.
+              - key: B
+                text: >
+                  Luminescence is directly proportional to WNT/β-catenin signalling activity —
+                  active signalling represses the reporter promoter, so more signalling
+                  produces more light output.
+              - key: C
+                text: "Luminescence is inversely proportional to WNT/β-catenin signalling activity —
+                  active signalling represses the reporter promoter, so more signalling
+                  produces less light output."
+              - key: D
+                text: "Luminescence directly measures Frizzled receptor internalisation rate, with no relationship to transcriptional activity."
+            correctKey: A
+      - id: da-context2a
+        locksAfterSubmit: true
+        reveals: da-context2b
+        label: "Context 2 — DVL2 Phosphorylation (I)"
+        lockWarning: "Once you proceed past this point, you cannot return and change your answers in this context."
+        images:
+          - src: "/MB-01PICS/supressiondata2.jpg"
+            caption: >
+              Analysis of DVL2 phosphorylation in WT and R/ZdKO HEK293T cells, 3 h after
+              stimulation with recombinant WNT3A or WNT5A and/or RSPO1-CM, all samples
+              pretreated with porcupine inhibitor C59 (5 μM). p-DVL2:DVL2 band-density ratio,
+              normalised to the C59 control. Representative experiment (N = 3).
+        components:
+          - key: da-c2-c59-purpose
+            type: mcq
+            marks: 2
+            prompt: >
+              Every sample here was pretreated with the porcupine inhibitor C59 to remove noise. How does C59 achieve this?
+            options:
+              - key: A
+                text: >
+                  To block secretion of the cells' own endogenous WNT ligands.
+              - key: B
+                text: "To directly inhibit RNF43/ZNRF3 enzymatic activity, preventing FZD ubiquitination regardless of WNT ligand status."
+              - key: C
+                text: "To activate Frizzled receptors independently of any WNT ligand, providing a ligand-free positive control for pathway activation."
+              - key: D
+                text: "To block RSPO1 binding to LGR4/5/6, isolating the WNT3A/WNT5A-driven component of signalling from any RSPO contribution."
+            correctKey: A
+          - key: da-c2-q5a
+            type: true_false
+            marks: 1
+            prompt: >
+              Interpreting the graph: in R/ZdKO cells, the ratio of phosphorylated to
+              non-phosphorylated DVL2 is significantly LOWERED compared to WT, across both
+              WNT3A and WNT5A treatments.
+            correctValue: false
+          - key: da-c2-q5b
+            type: true_false
+            marks: 1
+            prompt: >
+              Interpreting the graph: in R/ZdKO cells, the ratio of phosphorylated to
+              non-phosphorylated DVL2 is significantly ELEVATED compared to WT, across both
+              WNT3A and WNT5A treatments.
+            correctValue: true
+          - key: da-c2-q5c
+            type: true_false
+            marks: 1
+            prompt: "Interpreting the graph: in WT cells, WNT3A and WNT5A both induce a detectable shift in DVL2 mobility (increased p-DVL2)."
+            correctValue: true
+          - key: da-c2-q5d
+            type: true_false
+            marks: 1
+            prompt: "Interpreting the graph: in WT cells, WNT3A and WNT5A both induce a detectable shift in DVL2 mobility (decreased p-DVL2)."
+            correctValue: false
+      - id: da-context2b
+        locksAfterSubmit: true
+        reveals: da-context3
+        label: "Context 2 — DVL2 Phosphorylation (II)"
+        lockWarning: "Once you proceed past this point, you cannot return and change your answers in this context."
+        images:
+          - src: "/MB-01PICS/supressiondata2.jpg"
+            caption: >
+              Same graph as the previous page — Analysis of DVL2 phosphorylation in WT and
+              R/ZdKO HEK293T cells, 3 h after stimulation with recombinant WNT3A or WNT5A
+              and/or RSPO1-CM, all samples pretreated with porcupine inhibitor C59 (5 μM).
+              p-DVL2:DVL2 band-density ratio, normalised to the C59 control. Representative
+              experiment (N = 3).
+        components:
+          - key: da-c2-q6a
+            type: true_false
+            marks: 1
+            prompt: >
+              The correct interpretation is that in R/ZdKO cells, p-DVL2:DVL2 is significantly
+              elevated compared to WT across both WNT3A and WNT5A treatments, and that WT cells
+              show a detectable WNT3A/WNT5A-induced increase in p-DVL2. Now judge this
+              hypothesis: this suggests that RNF43 and ZNRF3 do not just regulate the canonical
+              pathway, but also modulate non-canonical WNT signalling by controlling the
+              availability of FZD receptors at the plasma membrane.
+            correctValue: true
+          - key: da-c2-q6b
+            type: true_false
+            marks: 1
+            prompt: >
+              Since DVL2 phosphorylation increases similarly in R/ZdKO cells for both WNT3A
+              and WNT5A stimulation, RNF43 and ZNRF3 must directly phosphorylate DVL2
+              themselves, rather than acting on the receptor upstream of it.
+            correctValue: false
+          - key: da-c2-q6c
+            type: true_false
+            marks: 1
+            prompt: >
+              Because FZD is common to both canonical and non-canonical WNT pathways, this
+              result is consistent with RNF43/ZNRF3 acting as broad-spectrum negative
+              regulators upstream of pathway branching, at the level of receptor availability
+              rather than at a pathway-specific downstream node.
+            correctValue: true
+          - key: da-c2-q6d
+            type: true_false
+            marks: 1
+            prompt: >
+              This result implies that RNF43 and ZNRF3 selectively degrade only WNT5A-bound
+              FZD receptors, leaving WNT3A-bound FZD receptors unaffected at the membrane.
+            correctValue: false
+      - id: da-context3
+        locksAfterSubmit: true
+        reveals: [context-reveal, da-fzd-mystery]
+        label: "Context 3 — Rescue by Re-expression"
+        lockWarning: "Once you proceed past this point, you cannot return and change your answers in this context."
+        images:
+          - src: "/MB-01PICS/supressiondata3.jpg"
+            caption: >
+              DVL2 phosphorylation in R/ZdKO cells overexpressing RNF43, ZNRF3, or a control
+              vector, 3 h after WNT3A or WNT5A stimulation (all samples pretreated with C59).
+              p-DVL2:DVL2 ratios normalised to control-vector cells. Arrowheads mark
+              full-length ZNRF3 and RNF43. Representative experiment (N = 2–4).
+        components:
+          - key: da-c3-q7a
+            type: true_false
+            marks: 1
+            prompt: >
+              Re-introduction of either RNF43 or ZNRF3 into R/ZdKO cells significantly reduced
+              p-DVL2 levels induced by both WNT3A and WNT5A stimulation, confirming that either
+              ligase alone is sufficient to restore receptor-level down-regulation of the
+              pathway.
+            correctValue: true
+          - key: da-c3-q7b
+            type: true_false
+            marks: 1
+            prompt: >
+              Only RNF43 re-introduction reduced p-DVL2 levels in R/ZdKO cells; ZNRF3
+              re-introduction had no measurable effect on either WNT3A- or WNT5A-induced
+              phosphorylation, indicating RNF43 is the dominant physiological regulator.
+            correctValue: false
+          - key: da-c3-q7c
+            type: true_false
+            marks: 1
+            prompt: >
+              The rescue of p-DVL2 suppression by either ligase demonstrates that RNF43 and
+              ZNRF3 are functionally redundant at the level of FZD receptor down-regulation,
+              even though they may differ in their precise substrate preferences among
+              individual FZD subtypes.
+            correctValue: true
+          - key: da-c3-q7d
+            type: true_false
+            marks: 1
+            prompt: >
+              Since re-expressing RNF43 or ZNRF3 lowered p-DVL2 levels, this proves that both
+              ligases act by directly dephosphorylating DVL2, rather than by removing FZD
+              receptors from the cell surface.
+            correctValue: false
+      - id: context-reveal
+        type: reveal_content
+        content: >
+          TIMELINE CONFIRMED. Workflow III is the workflow used in the published study:
+          generate RNF43/ZNRF3 double-knockout HEK293T cells to remove endogenous ligase
+          activity, individually co-express each of the nine testable human FZD subtypes with
+          RNF43, ZNRF3, or an empty vector, and quantify the ratio of mature to immature FZD
+          protein using a technique you'll be asked to identify later. Confirm the strongest
+          hits (FZD5, FZD6) using further orthogonal methods, then localise the region
+          conferring specificity using engineered constructs that swap exactly one domain at a
+          time.
+
+          A regulatory logic is starting to take shape from what you've already worked out
+          above. You'll get the rest of the confirmed dataset, and the chance to test that
+          logic properly, once you reach Part B.
+
+          Mobius: "Good. Now it gets interesting." It never means good news when he says that.
+      - id: da-fzd-mystery
+        locksAfterSubmit: true
+        revealsParts: [part-b, part-c, part-d, part-e, part-f]
+        label: "Data Analysis Question 2 — The FZD Mystery"
+        lockWarning: "Once you proceed past this point, you cannot return and change your answers here."
+        images:
+          - src: "/MB-01PICS/context2.jpg"
+            caption: >
+              R/ZdKO cells transfected with V5-tagged FZD1–10, with RNF43 or ZNRF3
+              re-introduced. Panels A/B: control vs. ligase-expressing lysates by Western
+              blot. Panels C/D: SNAP-tagged FZD5/FZD6 surface visualisation. Panels E/F:
+              quantified mean surface-intensity for FZD5 (± RNF43) and FZD6 (± ZNRF3).
+        components:
+          - key: da-fzd-bands
+            type: free_text
+            marks: 2
+            prompt: >
+              In Panel A, the "control" lanes (absence of ligases) show two distinct bands
+              for most FZDs — a slower-migrating upper band and a faster-migrating lower
+              band. The upper band represents the mature (surface-trafficked, fully
+              glycosylated) or immature (ER-retained, core-glycosylated) form, and the lower
+              band represents the other. Write your answer as "upper = ___" and "lower = ___".
+          - key: da-fzd-panelAB-a
+            type: true_false
+            marks: 1
+            prompt: "RNF43 and ZNRF3 each show strict specificity, degrading only one or two Frizzled subtypes while leaving all others completely unaffected."
+            correctValue: false
+          - key: da-fzd-panelAB-b
+            type: true_false
+            marks: 1
+            prompt: "Panel A shows that in the absence of ligase co-expression, most FZD subtypes already run as a single band, since the mature and immature forms are indistinguishable by molecular weight."
+            correctValue: false
+          - key: da-fzd-panelAB-c
+            type: true_false
+            marks: 1
+            prompt: "Panel B shows that co-expression of RNF43 or ZNRF3 markedly reduces the upper (mature) band intensity for nearly every FZD subtype tested, consistent with broad-spectrum receptor down-regulation."
+            correctValue: true
+          - key: da-fzd-panelAB-d
+            type: true_false
+            marks: 1
+            prompt: "Both ligases have a remarkably broad substrate range, targeting almost the entire Frizzled family for degradation."
+            correctValue: true
+          - key: da-fzd-microscopy
+            type: mcq
+            marks: 1
+            prompt: "To determine whether degradation occurs at the plasma membrane, the researchers used SNAP-tagged FZD5 and FZD6 to visualise the receptors using which type of microscopy?"
+            options:
+              - key: A
+                text: "Fluorescence"
+              - key: B
+                text: "Bright field"
+              - key: C
+                text: "Stain"
+              - key: D
+                text: "Confocal"
+            correctKey: D
+          - key: da-fzd-panelCD-a
+            type: true_false
+            marks: 1
+            prompt: "RNF43 and ZNRF3 respectively substantially disrupt FZD6 and FZD5 surface signal."
+            correctValue: false
+          - key: da-fzd-panelCD-b
+            type: true_false
+            marks: 1
+            prompt: "RNF43 and ZNRF3 respectively substantially disrupt FZD5 and FZD6 surface signal."
+            correctValue: true
+          - key: da-fzd-panelCD-c
+            type: true_false
+            marks: 1
+            prompt: "ZNRF3 and RNF43 respectively substantially disrupt FZD5 and FZD6 surface signal."
+            correctValue: false
+          - key: da-fzd-panelCD-d
+            type: true_false
+            marks: 1
+            prompt: "ZNRF3 and RNF43 respectively substantially disrupt FZD6 and FZD5 surface signal."
+            correctValue: true
+          - key: da-fzd-pct-rnf43-fzd5
+            type: numeric
+            marks: 1
+            prompt: "From Panel E, by what percentage of control's mean surface intensity has FZD5 intensity decreased in the presence of RNF43? Answer as a number (%)."
+            expected: 52.27
+            tolerance: 0.5
+          - key: da-fzd-pct-znrf3-fzd6
+            type: numeric
+            marks: 1
+            prompt: "From Panel F, by what percentage of control's mean surface intensity has FZD6 intensity decreased in the presence of ZNRF3? Answer as a number (%)."
+            expected: 39.68
+            tolerance: 0.5
+
+  - id: part-b
+    name: "PART B — Reading the Aftermath"
+    marks: 10
+    intro: >
+      The other four reconstructions grey out, agents of the TVA are sent to prune each branch.
+      Using the confirmed timeline, evaluate each statement below.
+    blocks:
+      - id: part-b-context
+        type: reveal_content
+        content: >
+          THE REST OF THE FILE. Two more pieces of the confirmed dataset, held back until now.
+          Read them yourself — nothing below states what they mean.
+        images:
+          - src: "/MB-01PICS/tissuetype-cropped.jpg"
+            caption: >
+              FZD1–10 mRNA expression (consensus NX, Human Protein Atlas) across eight human
+              tissues.
+          - src: "/MB-01PICS/tmdexpress-cropped.jpg"
+            caption: >
+              Mature:immature ratio of V5-tagged FZD5 (panel F) and FZD6 (panel G), normalised
+              to control, in R/ZdKO cells re-expressing RNF43, ZNRF3, or the reciprocal
+              single-domain swap chimeras RZR (RNF43 with its transmembrane domain replaced by
+              ZNRF3's) and ZRZ (ZNRF3 with its transmembrane domain replaced by RNF43's).
+      - id: part-b-statements
+        locksAfterSubmit: false
+        label: "Q1–5"
+        components:
+          - key: stmt-1
+            type: true_false
+            marks: 2
+            prompt: "RNF43/ZNRF3 exert a negative feedback logic on the WNT signalling pathway. Justify your answer in 1–2 sentences."
+            correctValue: true
+          - key: stmt-2
+            type: true_false
+            marks: 2
+            prompt: "Since RNF43 and ZNRF3 perform the same biochemical function, losing either one should produce identical phenotypes in an organism. Justify your answer in 1–2 sentences."
+            correctValue: false
+          - key: stmt-3
+            type: true_false
+            marks: 2
+            prompt: "The ratio of mature (surface-trafficked) to immature (ER-retained) FZD protein is directly proportional to RNF43 and ZNRF3 activity. Justify your answer in 1–2 sentences."
+            correctValue: false
+          - key: stmt-4
+            type: true_false
+            marks: 2
+            prompt: "The extracellular domain of RNF43 is the primary determinant of its preference for FZD5 over other Frizzled homologues. Justify your answer in 1–2 sentences."
+            correctValue: false
+          - key: stmt-5
+            type: true_false
+            marks: 2
+            prompt: "A cancer arising from a tissue where FZD6 is the dominant Frizzled homologue is more likely to carry loss-of-function mutations in ZNRF3 than in RNF43. Justify your answer in 1–2 sentences."
+            correctValue: true
+
+  - id: part-c
+    name: "PART C — Under the Hood"
+    marks: 11
+    intro: >
+      The Authority's field notes on the timeline were only partially declassified — some
+      entries were redacted before reaching me. Answer using your own knowledge of the
+      underlying techniques.
+    blocks:
+      - id: part-c-questions
+        locksAfterSubmit: false
+        label: "Q6–8"
+        tables:
+          - title: "FIELD NOTES — PARTIALLY REDACTED BY THE AUTHORITY"
+            headers: ["Step", "Note"]
+            rows:
+              - ["1", "Generate HEK293T cells with both RNF43 and ZNRF3 knocked out (via CRISPR) as a clean background."]
+              - ["2", "Confirm the knockout behaves as expected via a luciferase reporter and R-spondin insensitivity."]
+              - ["3", "Screen all FZD subtypes for ligase preference by co-expressing each with RNF43, ZNRF3, or a control vector, then run ██████ blots, reading out the mature:immature FZD ratio."]
+              - ["4", "Zoom into the strongest hits (FZD5, FZD6) using orthogonal confirmation: ████████████████."]
+              - ["5", "Find the molecular basis for specificity using single-domain chimeric/truncated RNF43 constructs (ECD, TMD, or C-terminal tail, one at a time)."]
+              - ["6", "Directly test the TMD hypothesis with reciprocal TMD-swapped RNF43/ZNRF3 chimeras."]
+              - ["7", "Connect it back to tissue biology via public expression and cancer mutation datasets."]
+        components:
+          - key: q6
+            type: mcq
+            marks: 2
+            prompt: "In Step 4 of the field notes above, the confirming lab techniques used were:"
+            options:
+              - key: A
+                text: "Pulse-chase surface labelling (an extracellular SNAP-tag chased over time) and flow cytometry."
+              - key: B
+                text: "Co-immunoprecipitation (Co-IP) followed by mass spectrometry."
+              - key: C
+                text: "Cycloheximide chase assay combined with confocal immunofluorescence microscopy."
+              - key: D
+                text: "Fluorescence recovery after photobleaching (FRAP) combined with Western blotting."
+            correctKey: A
+          - key: q7
+            type: mcq
+            marks: 1
+            prompt: "In Step 3 of the field notes above, the blank should be replaced by which kind of blot?"
+            options:
+              - key: A
+                text: "Western"
+              - key: B
+                text: "Northern"
+              - key: C
+                text: "Southern"
+              - key: D
+                text: "Electrophoretic mobility shift assay (EMSA)"
+            correctKey: A
+          - key: q8a
+            type: free_text
+            marks: 2
+            prompt: >
+              Step 1 of the timeline — CRISPR knockout generation. Besides CRISPR-Cas9, name
+              two other methods historically used to knock out or knock down a gene's
+              function, and state one key difference between a "knockout" and a "knockdown".
+          - key: q8b
+            type: mcq
+            marks: 2
+            imageRef: "/MB-01PICS/crispr.jpg"
+            prompt: >
+              Four candidate diagrams of the CRISPR-Cas9 cutting-and-repair mechanism were
+              proposed (Figure 5, panels A–D, shown above). Exactly ONE correctly represents
+              how CRISPR-Cas9 achieves a gene knockout. Select it.
+            options:
+              - key: A
+                text: >
+                  Panel A: Cas9 makes a blunt cut through BOTH DNA strands ~3 bp upstream of
+                  the PAM. Repair via NHEJ introduces an indel, shifting the downstream
+                  reading frame.
+              - key: B
+                text: "Panel B: Cas9 nicks only ONE of the two DNA strands; the nick is simply resealed with no change to the sequence."
+              - key: C
+                text: >
+                  Panel C: Cas9 makes a double-strand cut roughly in the MIDDLE of the
+                  20-nucleotide guide-paired region, far from the PAM.
+              - key: D
+                text: >
+                  Panel D: Cas9 cuts correctly near the PAM, but repair uses an intact
+                  homologous chromosome to restore the original sequence exactly, with no
+                  indel.
+            correctKey: A
+          - key: q8c
+            type: numeric
+            marks: 4
+            prompt: >
+              Human somatic cell lines such as HEK293T carry two alleles of each autosomal
+              gene. Suppose CRISPR-Cas9 editing independently produces a loss-of-function
+              (frameshift-null) mutation at any single given allele with probability 0.6.
+              Assuming all editing outcomes are independent, calculate the probability (as a
+              decimal, e.g. 0.13) that a randomly picked single-cell clone carries
+              loss-of-function mutations at both alleles of RNF43 AND both alleles of ZNRF3
+              (all four alleles).
+            expected: 0.13
+            tolerance: 0.01
+
+  - id: part-d
+    name: "PART D — The qPCR Variant"
+    marks: 23
+    intro: >
+      Before Reconstruction III's clones could be trusted, someone had to prove they were
+      actually clones — not just Variants of the same mistake wearing a different case
+      number. This is that paperwork.
+    blocks:
+      - id: q9-i
+        locksAfterSubmit: false
+        label: "Q9.i"
+        components:
+          - key: method
+            type: free_text
+            marks: 1
+            prompt: >
+              Workflow II (the flawed workflow from Part A, restated in full since you can no
+              longer scroll back to see it): "In RNF43/ZNRF3 double-knockout HEK293T cells,
+              co-express RNF43 or ZNRF3 with FZD5 or FZD6, then quantify FZD5 and FZD6 mRNA
+              transcript levels, concluding that whichever ligase produces the larger drop in
+              transcript is the preferred one." This used a technique that was blanked out.
+              Name the method used to quantify FZD5/FZD6 transcript levels in Workflow II.
+      - id: q9-ii
+        locksAfterSubmit: false
+        label: "Q9.ii — The Genotyping Problem"
+        tables:
+          - title: "Scenario A–F (Figure 1)"
+            headers: ["Scenario", "Description", "Expected PCR product(s)"]
+            rows:
+              - ["A", "No insertion at either allele (wild-type)", "Lost in a pruning process"]
+              - ["B", "Both alleles: PURO inserted, forward orientation", "Lost in a pruning process"]
+              - ["C", "Both alleles: PURO inserted, reverse orientation", "Lost in a pruning process"]
+              - ["D", "PURO integrated off-target elsewhere in the genome (RNF43 locus unmodified)", "Lost in a pruning process"]
+              - ["E", "Heterozygous: one allele PURO-forward, other allele wild-type", "Lost in a pruning process"]
+              - ["F", "Heterozygous: one allele PURO-reverse, other allele wild-type", "1000 bp AND 420 bp"]
+          - title: "Five candidate clones, screened by this PCR"
+            headers: ["Clone", "PCR result"]
+            rows:
+              - ["Lane 1", "1000 bp only"]
+              - ["Lane 2", "350 bp only"]
+              - ["Lane 3", "1000 bp AND 350 bp"]
+              - ["Lane 4", "420 bp only"]
+              - ["Lane 5", "1000 bp AND 420 bp"]
+        images:
+          - src: "/BIOCLASHPICS/mb01-fig1-gene-insertion-scenarios.png"
+            caption: "Figure 1. Gene insertion scenarios A–F."
+          - src: "/BIOCLASHPICS/mb01-fig2-gel-lanes-1-5.png"
+            caption: "Figure 2. Gel image of Lanes 1–5."
+        components:
+          - key: lanes
+            type: free_text
+            marks: 6
+            prompt: >
+              RNF43 knockout clones are generated by CRISPR-HDR insertion of a 500 bp
+              puromycin-resistance cassette (PURO) into a 1000 bp target region. P1 and P2
+              anneal to the two ends of the target region (facing inward); P3 anneals within
+              PURO, pairing productively with only one of P1 or P2 depending on orientation.
+              The shorter product dominates amplification. For EACH of Lanes 1–5, state ALL
+              scenario letters (A–F) consistent with its band pattern.
+          - key: unresolved
+            type: free_text
+            marks: 3
+            prompt: >
+              Exactly one scenario letter has no matching lane among Clones 1–5. Identify it,
+              and separately, identify the lane(s) that cannot be resolved into a single
+              unambiguous scenario at all. Explain both.
+          - key: cases-calc
+            type: free_text
+            marks: 4
+            prompt: >
+              Generalising the restriction-digest approach: let L = target region length (bp),
+              a = distance from P1 to the PURO insertion point (bp), y = distance from PURO's
+              own 5′ end to an internal restriction site (0 < y < 500). A restriction enzyme
+              cuts the full P1–P2 product (length L + 500) once, at this site, in both
+              orientations. For Case 1 (L=1200, a=200, y=150) and Case 4 (L=1400, a=400,
+              y=100), calculate the two fragment sizes produced in the FORWARD orientation,
+              and the two fragment sizes produced in the REVERSE orientation.
+            table:
+              headers: ["Case", "L (bp)", "a (bp)", "y (bp)"]
+              rows:
+                - ["1", "1200", "200", "150"]
+                - ["2", "1200", "600", "150"]
+                - ["3", "1000", "300", "250"]
+                - ["4", "1400", "400", "100"]
+          - key: cases-rule
+            type: free_text
+            marks: 5
+            prompt: >
+              Cases 2 and 3 (see the table above) each fail to resolve orientation by this
+              method — but for two DIFFERENT underlying reasons. Identify the general
+              condition responsible in each case (one involving a, one involving y), and
+              state it as a rule that would apply beyond just these two examples.
+
+  - id: part-e
+    name: "PART E — Protein Under the Loom"
+    marks: 45
+    intro: >
+      Zoom far enough into anything on the Sacred Timeline and you reach the Loom — the
+      point where a single thread's structure is all that's left to argue about. Step 5 of
+      the timeline (mapping RNF43's specificity to its transmembrane domain) touches five
+      foundational areas of protein biochemistry. One thread at a time.
+    blocks:
+      - id: q10-1
+        locksAfterSubmit: false
+        label: "Q10.1 — Amino Acids"
+        components:
+          - key: category
+            type: free_text
+            marks: 2
+            prompt: >
+              The transmembrane domain (TMD) that determines RNF43/ZNRF3 substrate
+              specificity is a single membrane-spanning stretch of ~21 amino acids, folded as
+              an alpha helix. Which category of amino acid side chains would you expect to
+              dominate the composition of a functional TMD, and why?
+          - key: helix-length
+            type: numeric
+            marks: 2
+            prompt: >
+              Using a rise of 1.5 Å per residue along an alpha helix, calculate the
+              approximate length (in Å) of this 21-residue helix.
+            expected: 31.5
+            tolerance: 0.5
+      - id: q10-2
+        locksAfterSubmit: false
+        label: "Q10.2 — Protein Folding"
+        images:
+          - src: "/BIOCLASHPICS/mb01-fig3-ramachandran-plot.png"
+            caption: "Figure 3. Ramachandran plot with points X, Y, Z."
+        components:
+          - key: modular-folding
+            type: free_text
+            marks: 3
+            prompt: >
+              In the full study, RNF43 truncated just after the RING domain retained partial
+              ability to down-regulate FZD5, whereas RNF43 truncated just before the RING
+              domain lost this ability entirely. Using the concept of modular/independent
+              domain folding, explain why removing the C-terminal tail downstream of the RING
+              domain does not abolish catalytic function, while truncating upstream of (i.e.
+              removing) the RING domain itself abolishes function completely.
+          - key: point-x
+            type: true_false
+            marks: 1.5
+            prompt: "Point X, at Φ=−60°, Ψ=−45° (see Figure 3), most likely corresponds to a residue within the TMD alpha helix described in Q10.1."
+            correctValue: true
+          - key: point-z
+            type: true_false
+            marks: 1.5
+            prompt: "Point Z, at Φ=0°, Ψ=0°, could plausibly represent a glycine residue, since glycine's small side chain permits any backbone conformation."
+            correctValue: false
+          - key: point-y
+            type: true_false
+            marks: 1.5
+            prompt: "Point Y, at Φ=−120°, Ψ=+120°, falls within the beta-sheet (extended strand) region of the plot."
+            correctValue: true
+          - key: gly-area
+            type: true_false
+            marks: 1.5
+            prompt: "A non-glycine residue would be expected to occupy a larger fraction of the total Ramachandran plot area than glycine."
+            correctValue: false
+          - key: proline
+            type: free_text
+            marks: 2
+            prompt: >
+              Proline's side chain forms a covalent ring back to its own backbone nitrogen.
+              Predict, in general terms, how proline's allowed region on a Ramachandran plot
+              would differ from a typical (non-Gly, non-Pro) residue's, and briefly state why.
+      - id: q10-3
+        locksAfterSubmit: false
+        label: "Q10.3 — Protein Modifications"
+        components:
+          - key: e1e2e3
+            type: free_text
+            marks: 2
+            prompt: >
+              RNF43/ZNRF3 are E3 ubiquitin ligases that act in a three-enzyme (E1–E2–E3)
+              cascade to attach ubiquitin to FZD receptors, routing them for lysosomal
+              (not proteasomal) degradation. Briefly describe the role of each of E1, E2 and
+              E3 in this cascade.
+          - key: linkage
+            type: free_text
+            marks: 2
+            prompt: >
+              Polyubiquitin chains can be linked through different lysine residues on
+              ubiquitin (e.g. K48 or K63). Which linkage type is more consistent with
+              directing FZD receptors toward lysosomal/endocytic degradation, and why?
+      - id: q10-4a
+        locksAfterSubmit: true
+        reveals: q10-4-rest
+        label: "Q10.4 — Protein Function"
+        lockWarning: "Once you proceed past this point, you cannot return and change your answer here."
+        tables:
+          - title: "APPENDIX — Standard Genetic Code (RNA Codon Table, 5′→3′)"
+            headers: ["Codon", "AA", "Codon", "AA", "Codon", "AA", "Codon", "AA"]
+            rows:
+              - ["UUU Phe", "UCU Ser", "UAU Tyr", "UGU Cys"]
+              - ["UUC Phe", "UCC Ser", "UAC Tyr", "UGC Cys"]
+              - ["UUA Leu", "UCA Ser", "UAA Stop", "UGA Stop"]
+              - ["UUG Leu", "UCG Ser", "UAG Stop", "UGG Trp"]
+              - ["CUU Leu", "CCU Pro", "CAU His", "CGU Arg"]
+              - ["CUC Leu", "CCC Pro", "CAC His", "CGC Arg"]
+              - ["CUA Leu", "CCA Pro", "CAA Gln", "CGA Arg"]
+              - ["CUG Leu", "CCG Pro", "CAG Gln", "CGG Arg"]
+              - ["AUU Ile", "ACU Thr", "AAU Asn", "AGU Ser"]
+              - ["AUC Ile", "ACC Thr", "AAC Asn", "AGC Ser"]
+              - ["AUA Ile", "ACA Thr", "AAA Lys", "AGA Arg"]
+              - ["AUG Met", "ACG Thr", "AAG Lys", "AGG Arg"]
+              - ["GUU Val", "GCU Ala", "GAU Asp", "GGU Gly"]
+              - ["GUC Val", "GCC Ala", "GAC Asp", "GGC Gly"]
+              - ["GUA Val", "GCA Ala", "GAA Glu", "GGA Gly"]
+              - ["GUG Val", "GCG Ala", "GAG Glu", "GGG Gly"]
+        components:
+          - key: codon-pick
+            type: mcq
+            marks: 2
+            prompt: >
+              RING domains coordinate two zinc ions via a cross-brace arrangement of
+              conserved cysteine and histidine residues. One such zinc-coordinating residue
+              in RNF43's RING domain is encoded by the codon 5′-UGU-3′. A single-nucleotide
+              substitution (SNP) changes this UGU codon into one of the four codons below.
+              Using the genetic code table in the appendix, and assuming the protein's local
+              structure collapses in proportion to how far the new amino acid's side-chain
+              properties diverge from the original, which substitution is predicted to be
+              LEAST disruptive?
+            options:
+              - key: "1"
+                text: "AUG"
+              - key: "2"
+                text: "UCU"
+              - key: "3"
+                text: "AAU"
+              - key: "4"
+                text: "CAA"
+            correctKey: "2"
+      - id: q10-4-rest
+        locksAfterSubmit: false
+        label: "Q10.4B–D"
+        components:
+          - key: q10-4b
+            type: mcq
+            marks: 3
+            prompt: >
+              The prediction in the previous question rests on a simplification that does not
+              hold up well here. The codon in question translates to methionine. The
+              protein's local structure still changes substantially despite this
+              substitution. Why?
+            options:
+              - key: "1"
+                text: "Methionine, unlike cysteine, is a hydrophobic amino acid, so placing it at this position destabilises the RING domain's hydrophobic core."
+              - key: "2"
+                text: "Although both are sulfur-containing, methionine's thioether sulfur cannot coordinate zinc the way cysteine's thiol does, and its longer side chain disrupts the tight packing of the zinc-binding cross-brace — so the fold, and function, are still compromised."
+              - key: "3"
+                text: "Methionine's side chain is longer than cysteine's, which increases local flexibility around the zinc-binding loop and thereby further stabilises it."
+              - key: "4"
+                text: "Since methionine and cysteine are both classified as sulfur-containing amino acids, their side chains are functionally interchangeable, so the fold and function are essentially unaffected."
+            correctKey: "2"
+          - key: q10-4c
+            type: mcq
+            marks: 3
+            prompt: "Now suppose the same original residue is instead mutated to serine. How would this affect downstream WNT signalling?"
+            options:
+              - key: "1"
+                text: "Serine's near-identical size and shape to cysteine preserve the RING domain fold and zinc coordination, so downstream WNT signalling is unaffected."
+              - key: "2"
+                text: "Serine cannot coordinate zinc via its hydroxyl group as effectively as cysteine's thiol, destabilising the RING domain fold, abolishing catalytic activity, and causing WNT hyperactivation (elevated downstream signalling)."
+              - key: "3"
+                text: "Serine's hydroxyl group forms an even stronger coordination bond with zinc than cysteine's thiol, enhancing RING domain stability and further suppressing WNT signalling."
+              - key: "4"
+                text: "Since serine and cysteine are both broadly polar, the substitution has no meaningful structural effect, and downstream signalling proceeds normally via a compensatory pathway."
+            correctKey: "2"
+          - key: q10-4d-i
+            type: numeric
+            marks: 3
+            prompt: >
+              R-spondin (RSPO) binding to its receptor LGR5 shows positive cooperativity,
+              described by the Hill equation Y = [RSPO]ⁿ / (K₀.₅ⁿ + [RSPO]ⁿ), where Y is
+              fractional receptor occupancy. Given n = 2 and K₀.₅ = 10 nM, calculate the
+              [RSPO] concentration (in nM) required to reach 90% receptor occupancy.
+            expected: 30
+            tolerance: 0.5
+          - key: q10-4d-ii
+            type: free_text
+            marks: 3
+            imageRef: "/MB-01PICS/hillloki.png"
+            prompt: >
+              The graph above shows three theoretical RSPO–LGR5 occupancy curves sharing the
+              same K₀.₅ = 10 nM but different Hill coefficients — n=0.5 (a shallow,
+              gradually-rising, non-sigmoidal curve), n=1 (the classic hyperbolic
+              Michaelis-Menten shape), and n=4 (a steep S-shaped sigmoidal curve, flat at low
+              [RSPO] then rising sharply around [RSPO]=10nM). Explain why a higher Hill
+              coefficient makes the pathway's response to RSPO more "switch-like"
+              (ultrasensitive) rather than graded.
+      - id: q10-5
+        locksAfterSubmit: false
+        label: "Q10.5 — Enzyme Kinetics"
+        components:
+          - key: velocities
+            type: free_text
+            marks: 2
+            prompt: >
+              Assume RNF43-mediated ubiquitination follows Michaelis-Menten kinetics.
+              FZD5: Km = 2 µM, Vmax = 10 units/min. Lower-affinity substrate (e.g. FZD9):
+              Km = 20 µM, Vmax = 10 units/min. Calculate the initial reaction velocity (v)
+              for each substrate at [S] = 2 µM, using v = Vmax[S] / (Km + [S]).
+          - key: preference
+            type: free_text
+            marks: 2
+            prompt: >
+              Based on your answers above, briefly explain which substrate RNF43 would
+              preferentially process at this concentration, and how this relates to the
+              paper's finding of partial (not absolute) substrate specificity.
+          - key: inhibition-type
+            type: free_text
+            marks: 2
+            imageRef: "/MB-01PICS/lbgraph.png"
+            prompt: >
+              A candidate small-molecule inhibitor of RNF43 was tested at a single fixed
+              concentration against FZD5 ubiquitination. The resulting Lineweaver-Burk plot is
+              shown above: two straight lines sharing the EXACT SAME x-intercept, i.e.
+              unchanged −1/Km, but with the inhibitor line's y-intercept noticeably HIGHER,
+              i.e. reduced Vmax — identify the type of inhibition, justifying your answer
+              using the intercepts.
+          - key: distinguish-inhibition
+            type: free_text
+            marks: 4
+            imageRef: "/MB-01PICS/lbgraph.png"
+            prompt: >
+              How would you experimentally distinguish irreversible inhibition from
+              (reversible) noncompetitive inhibition, given that both can produce an
+              identical Lineweaver-Burk pattern (unchanged Km, reduced Vmax, shown above) at a
+              single fixed inhibitor concentration?
+
+  - id: part-f
+    name: "PART F — The Guide RNA Supply Chain"
+    marks: 34
+    intro: >
+      Nothing gets pruned, replaced, or edited without a work order first. Before Step 1 of
+      any of this could happen, somebody in Requisitions had to build the tool that makes
+      the cut — from choosing the right piece of the gene, to cloning it, to confirming the
+      clone, to assembling the final construct, to reading the gel it all comes out on.
+    blocks:
+      - id: q11
+        locksAfterSubmit: false
+        label: "Q11 — The Right Piece of the Gene"
+        components:
+          - key: q11a
+            type: mcq
+            marks: 2
+            prompt: >
+              The 20-nucleotide spacer sequence of the gRNA must match a target site within
+              RNF43. Cas9 acts on genomic DNA directly, but RNF43 (like most human genes) is
+              spliced, producing multiple mRNA isoforms from the same locus. Which strategy
+              for choosing the gRNA spacer target site is most likely to guarantee a
+              functional knockout across all RNF43 splice isoforms?
+            options:
+              - key: "1"
+                text: "Target a variable, alternatively-spliced exon near the C-terminus, since C-terminal disruptions are generally most deleterious to protein function."
+              - key: "2"
+                text: "Target the first constitutive exon common to all isoforms, as close to the start codon as possible, to maximise the chance of an early frameshift disrupting the protein in every isoform."
+              - key: "3"
+                text: "Target the constitutive exon with the highest GC content, since higher GC content improves Cas9 cutting efficiency regardless of exon position."
+              - key: "4"
+                text: "Target the LAST constitutive exon common to all isoforms, since this maximises the amount of intact protein sequence available for verification by downstream sequencing."
+            correctKey: "2"
+          - key: q11b
+            type: mcq
+            marks: 2
+            prompt: "Which method would correctly confirm the exact exonic sequence of RNF43 to target, starting from total RNA extracted from a human cell line?"
+            options:
+              - key: "1"
+                text: "Directly Sanger-sequence the genomic DNA using primers flanking the predicted exon boundaries, without any RNA-based step."
+              - key: "2"
+                text: "Reverse-transcribe the total RNA into cDNA (oligo-dT or random-hexamer primed), then PCR-amplify and sequence the candidate exon region from the cDNA using exon-specific primers."
+              - key: "3"
+                text: "Reverse-transcribe the total RNA into cDNA, then transfect this cDNA into HEK293T cells and observe which protein isoform is expressed."
+              - key: "4"
+                text: "Perform reverse transcription directly on the genomic DNA using reverse transcriptase to generate cDNA, then sequence the product."
+            correctKey: "2"
+      - id: q12
+        locksAfterSubmit: false
+        label: "Q12 — Cloning the Cassette"
+        tables:
+          - title: "Cassette insert ends (double-stranded)"
+            headers: ["End", "Sequence"]
+            rows:
+              - ["5′ end", "5′-CGTACGATCGGATCT...-3′ / 3′-GCATGCTAGCCTAGA...-5′"]
+              - ["3′ end", "5′-...GCTAGGCATCGTACG-3′ / 3′-...CGATCCGTAGCATGC-5′"]
+        components:
+          - key: q12a
+            type: true_false
+            marks: 1.5
+            prompt: >
+              The gRNA cassette must be PCR-amplified with restriction sites added at each
+              end, then ligated into vector B at its BamHI (GGATCC) and XhoI (CTCGAG) sites,
+              with a 3-base buffer for efficient cutting near a fragment end. For each
+              candidate primer, state TRUE if it is correctly designed to add the stated site
+              (with a 3-base buffer), FALSE if not.
+
+              A) Forward, adds BamHI to 5′ end: 5′-GGG GGATCC CGTACGATCGGATCT-3′.
+            correctValue: true
+          - key: q12b
+            type: true_false
+            marks: 1.5
+            prompt: "B) Forward, adds BamHI to 5′ end: 5′-GG GGATCC CGTACGATCGGATCT-3′."
+            correctValue: false
+          - key: q12c
+            type: true_false
+            marks: 1.5
+            prompt: "C) Reverse, adds XhoI to 3′ end: 5′-GGG CTCGAG CGTACGATGCCTAGC-3′."
+            correctValue: true
+          - key: q12d
+            type: true_false
+            marks: 1.5
+            prompt: "D) Reverse, adds XhoI to 3′ end: 5′-GGG CTCGAG GCTAGGCATCGTACG-3′."
+            correctValue: false
+      - id: q13
+        locksAfterSubmit: false
+        label: "Q13 — Confirming the Clone"
+        tables:
+          - title: "Empty vector B (3000 bp) vs. recombinant plasmid (3500 bp)"
+            headers: ["Digestion", "Empty vector B (3000 bp)", "Recombinant plasmid (3500 bp)"]
+            rows:
+              - ["BamHI alone", "3000 bp (1 site — linearised)", "3500 bp (1 site — linearised)"]
+              - ["BglII alone", "3000 bp (1 site — linearised)", "no cutting — remains circular"]
+              - ["BamHI + BglII", "2000 bp + 1000 bp", "3500 bp (only BamHI cuts)"]
+        images:
+          - src: "/BIOCLASHPICS/mb01-fig4-plasmid-maps-gel.png"
+            caption: "Figure 4. Plasmid maps and digestion gel."
+        components:
+          - key: q13f
+            type: true_false
+            marks: 2
+            prompt: >
+              Empty vector B (3000 bp, circular) carries one BamHI site and, separately, one
+              BglII site elsewhere in its backbone — compatible-overhang enzymes (same 5′-GATC
+              overhang), same as SalI/XhoI. The gRNA cassette (500 bp) was excised with BamHI
+              and ligated into vector B linearised at its BglII site; a BamHI-cut end ligated
+              to a BglII-cut end reconstitutes neither site, destroying both at that junction
+              — but any BamHI/BglII site elsewhere survives. Indicate TRUE or FALSE for each
+              statement below.
+
+              F) BamHI digestion of the recombinant plasmid produces two DNA fragments.
+            correctValue: false
+          - key: q13g
+            type: true_false
+            marks: 2
+            prompt: "G) BglII digestion of the recombinant plasmid fails to linearise it."
+            correctValue: true
+          - key: q13h
+            type: true_false
+            marks: 2
+            prompt: "H) A BamHI site exists outside the insert in the recombinant plasmid, unrelated to the cloning junction."
+            correctValue: true
+          - key: q13i
+            type: true_false
+            marks: 2
+            prompt: "I) Digesting the recombinant plasmid with BamHI and BglII together produces a 1000 bp fragment."
+            correctValue: false
+          - key: q13j
+            type: true_false
+            marks: 2
+            prompt: "J) The empty vector's BamHI + BglII fragment sizes (1000 bp + 2000 bp) sum to its full 3000 bp length."
+            correctValue: true
+      - id: q14
+        locksAfterSubmit: false
+        label: "Q14 — Golden Gate Assembly"
+        images:
+          - src: "/MB-01PICS/goldengate.png"
+            caption: "The Golden Gate assembly described below, visualised: Vector + Spacer (S) + Scaffold (T), joined by their BsaI overhangs."
+        components:
+          - key: q14a
+            type: true_false
+            marks: 2
+            prompt: >
+              The final gRNA cassette is assembled from the RNF43-targeting Spacer (S) and
+              tracrRNA Scaffold (T) into a vector backbone using BsaI (Type IIS, cuts outside
+              its recognition sequence leaving a custom 4-nt overhang).
+
+              Overhangs after BsaI digestion: Vector — left end AACG, right end TTGC.
+
+              Spacer (S) — 5′ overhang AACG, 3′ overhang CCGA. Scaffold (T) — 5′ overhang
+              CCGA, 3′ overhang TTGC.
+
+              Each overhang pairs with only one other overhang.
+
+              State TRUE if the candidate outcome below can be observed after BsaI + DNA
+              ligase treatment, FALSE if it cannot.
+
+              (a) Vector — S (forward) — T (forward) — Vector.
+            correctValue: true
+          - key: q14b
+            type: true_false
+            marks: 2
+            prompt: "(b) Vector — T (forward) — S (forward) — Vector."
+            correctValue: false
+          - key: q14c
+            type: true_false
+            marks: 2
+            prompt: "(c) Vector — S (reversed) — T (forward) — Vector."
+            correctValue: false
+          - key: q14d
+            type: true_false
+            marks: 2
+            prompt: "(d) Vector — S (forward) — T (reversed) — Vector."
+            correctValue: false
+      - id: q15
+        locksAfterSubmit: false
+        label: "Q15 — Reading the Gel"
+        components:
+          - key: q15a
+            type: mcq
+            marks: 2
+            prompt: >
+              A single batch of the finished gRNA plasmid, all identical in base-pair length,
+              separated into multiple topological forms on a gel: supercoiled (S), linear (L),
+              nicked/open-circular (N), and relaxed closed-circular (RC). Rank these four forms
+              from fastest to slowest migration on a standard agarose gel.
+            options:
+              - key: A
+                text: "S > L > RC > N"
+              - key: B
+                text: "L > S > RC > N"
+              - key: C
+                text: "RC > S > L > N"
+              - key: D
+                text: "N > L > RC > S"
+              - key: E
+                text: "N > RC > L > S"
+            correctKey: A
+          - key: q15b
+            type: free_text
+            marks: 2
+            prompt: "Explain, in 1–2 sentences, why molecules of identical base-pair length can migrate differently on the gel at all."
+          - key: q15c
+            type: free_text
+            marks: 2
+            prompt: "Explain why the nicked and relaxed closed-circular forms are difficult to distinguish from one another on a standard single-dimension agarose gel, even though they are chemically distinct."
+
+appendix:
+  title: "APPENDIX — Standard Genetic Code (RNA Codon Table)"
+  note: "For reference in Q10.4A. Codons read 5′→3′."

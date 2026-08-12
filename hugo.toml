@@ -1,0 +1,186 @@
+baseURL = "https://bioguide.world/"
+title = "BiOGuide for Biology Olympiads"
+theme = "hextra"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.katex]
+    enable = true
+
+[menu]
+  [[menu.main]]
+    name = "Notes @ BiOGuide"
+    url = "#"
+    weight = 1
+    [menu.main.params]
+      image = "/nblogo.png"
+
+  [[menu.main]]
+    name = "General Resources"
+    parent = "Notes @ BiOGuide"
+    url = "/resources/"
+    weight = 1
+
+  # 1. Cell & Molecular Biology (main entry – clickable, links to the section page)
+  [[menu.main]]
+    name = "1. ✅ Cell & Molecular Biology"
+    parent = "Notes @ BiOGuide"
+    url = "/resources/1-cell-molecular/"
+    weight = 2
+
+  [[menu.main]]
+    name = "2. ✅ Genetics"
+    parent = "Notes @ BiOGuide"
+    url = "/resources/7-genetics/"
+    weight = 5
+
+  [[menu.main]]
+    name = "3. ✅ Bioinformatics"
+    parent = "Notes @ BiOGuide"
+    url = "/resources/10-bioinformatics/"
+    weight = 6
+
+  [[menu.main]]
+    name = "4. ✅ Plant computational Biology"
+    parent = "Notes @ BiOGuide"
+    url = "/resources/14-practical-4/"
+    weight = 7
+  [[menu.main]]
+    name = "5. ✅ Plant Physiology"
+    parent = "Notes @ BiOGuide"
+    url = "/resources/5-plant-physiology"
+    weight = 8
+
+  [[menu.main]]
+    name = "6. ✅ Evolution"
+    parent = "Notes @ BiOGuide"
+    url = "/resources/15-evolution"
+    weight = 9
+
+  [[menu.main]]
+    name = "7. ✅ Animal Physiology"
+    parent = "Notes @ BiOGuide"
+    url = "/resources/3-animal-physiology"
+    weight = 10
+
+  [[menu.main]]
+    name = "8. ✅ Animal Anatomy"
+    parent = "Notes @ BiOGuide"
+    url = "/resources/2-animal-anatomy"
+    weight = 11
+
+  [[menu.main]]
+    name = "9. ✅ Plant Anatomy"
+    parent = "Notes @ BiOGuide"
+    url = "/resources/6-plant-anatomy"
+    weight = 12
+
+  [[menu.main]]
+    name = "10. ✅ Ecology "
+    parent = "Notes @ BiOGuide"
+    url = "/resources/8-ecology"
+    weight = 13
+    
+  [[menu.main]]  
+    name = "11. ✅ Ethology"
+    parent = "Notes @ BiOGuide"
+    url = "/resources/9-ethology"
+    weight = 14
+
+  [[menu.main]]
+    name = "12. Biosystematics"
+    parent = "Notes @ BiOGuide"
+    url = "/resources/4-biosystematics"
+
+  [[menu.main]]
+    name = "BiOrchive"
+    url = "/papers/"
+    weight = 2
+    [menu.main.params]
+      image = "/biorchive-mark.png"
+
+  [[menu.main]]
+    name = "BiOClash"
+    url = "/bioclash/"
+    weight = 3
+    [menu.main.params]
+      image = "/bioclashlogo-transparent.png"
+
+  [[menu.main]]
+    name = "Leaderboard"
+    url = "/papers/leaderboard/"
+    weight = 4
+    [menu.main.params]
+      image = "/hof.png"
+      iconOnly = true
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 5
+
+  [[menu.main]]
+    name = "BiOInsights"
+    url = "/bioinsights/"
+    weight = 6
+
+  [[menu.main]]
+    name = "Discussions"
+    url = "/discussions/"
+    weight = 7
+
+  [[menu.main]]
+    name = "Search"
+    weight = 8
+    [menu.main.params]
+      type = "search"
+
+  [[menu.main]]
+    name = "Discord"
+    url = "https://discord.gg/WpC8y6dbv"
+    weight = 9
+    [menu.main.params]
+      icon = "discord"
+
+  [[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/nk-008120/boguide"
+    weight = 10
+    [menu.main.params]
+      icon = "github"
+
+  [[menu.main]]
+    name = "Instagram"
+    url = "https://www.instagram.com/bioguideofficial/"
+    weight = 11
+    [menu.main.params]
+      icon = "instagram"
+[params]
+  # Default social-share preview image (Open Graph/Twitter Card) for any
+  # page that doesn't set its own via front-matter `images:` — see
+  # content/bioclash/index.md and content/papers/_index.md for the two
+  # sub-brand overrides.
+  images = ["/og-default.png"]
+  # Navbar settings
+  [params.navbar]
+    title = "BiOGuide"
+    [params.navbar.logo]
+      path = "/logo.png"
+      width = 40
+      height = 40
+      alt = "BioGuide Logo"
+  # Image zoom
+  [params.imageZoom]
+    enable = true
+  [params.theme]
+    default = "favourite"
+    allowUserToggle = "True"
+  # Footer
+  [params.footer]
+    copyright = "© 2026 BioGuide for IBO Vilnius"
+  # Table of contents
+  toc = true
+  # Custom CSS (relative to static/ folder)
+  custom_css = ["css/custom.css"]

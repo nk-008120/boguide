@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mass Extinction Timeline Explorer | BioGuide</title>
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js"></script>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  #plot-div { width: 100%; height: 320px; }
+  #info {
+    background: #f8fafc;
+    border-radius: 14px;
+    padding: 1rem 1.2rem;
+    margin-top: 1rem;
+    min-height: 100px;
+  }
+  #info h4 { margin: 0 0 4px 0; color: #1a472a; }
+  #info .date { font-size: 0.8rem; color: #64748b; margin-bottom: 6px; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Mass Extinction Timeline Explorer</h3>
+  <div class="subtitle">Click any of the five marked drops to see the proposed cause and post-extinction recovery pattern.</div>
+  <div id="plot-div"></div>
+  <div id="info">Click a marked point on the chart to see details.</div>
+</div>
+<script>
+(function(){
+  var events = [
+    { name: 'End-Ordovician', age: 444, loss: 85, cause: 'Glaciation and sea-level drop.', recovery: 'Recovery was relatively rapid once climate stabilized; no major shift in dominant marine groups.' },
+    { name: 'Late Devonian', age: 375, loss: 75, cause: 'Possible ocean anoxia linked to climate change.', recovery: 'Reef-building organisms were especially hard hit and reef ecosystems took tens of millions of years to recover.' },
+    { name: 'End-Permian ("the Great Dying")', age: 252, loss: 96, cause: 'Massive Siberian Traps volcanism, ocean acidification/anoxia.', recovery: 'The most severe of the five — recovery of full ecosystem complexity took an estimated several million years, the slowest of any of the big five.' },
+    { name: 'End-Triassic', age: 201, loss: 80, cause: 'Central Atlantic Magmatic Province volcanism.', recovery: 'Cleared ecological space that dinosaurs subsequently radiated into during the early Jurassic.' },
+    { name: 'End-Cretaceous (K-Pg)', age: 66, loss: 76, cause: 'Chicxulub asteroid impact, evidenced by a global iridium-enriched sediment layer.', recovery: 'Removal of non-avian dinosaurs permitted the subsequent adaptive radiation of placental mammals into newly open niches.' }
+  ];
+
+  var ages = [];
+  var diversity = [];
+  var baseline = 100;
+  for (var a = 541; a >= 0; a -= 3){
+    ages.push(a);
+  }
+  ages.forEach(function(a){
+    var d = baseline + (541 - a) * 0.9;
+    events.forEach(function(ev){
+      if (a <= ev.age + 3 && a > ev.age - 15){
+        var t = (ev.age + 3 - a) / 18;
+        d *= (1 - (ev.loss/100) * Math.min(1, t*3));
+      } else if (a <= ev.age - 15){
+      }
+    });
+    diversity.push(Math.max(20, d));
+  });
+
+  var mainTrace = {
+    x: ages.map(function(a){ return -a; }),
+    y: diversity,
+    mode: 'lines',
+    line: { color: '#2d6a4f', width: 2 },
+    name: 'Diversity (illustrative)',
+    hoverinfo: 'skip'
+  };
+
+  var markerTrace = {
+    x: events.map(function(e){ return -e.age; }),
+    y: events.map(function(e, i){
+      var idx = ages.findIndex(function(a){ return a <= e.age; });
+      return diversity[idx] || 60;
+    }),
+    mode: 'markers',
+    marker: { size: 14, color: '#d9534f', line: { width: 2, color: '#7f1d1d' } },
+    name: 'Mass extinctions',
+    text: events.map(function(e){ return e.name; }),
+    hovertemplate: '%{text}<extra></extra>'
+  };
+
+  var layout = {
+    margin: { t: 10, r: 10, b: 40, l: 50 },
+    xaxis: { title: 'Millions of years ago', autorange: 'reversed' },
+    yaxis: { title: 'Relative diversity (illustrative)' },
+    showlegend: false
+  };
+
+  Plotly.newPlot('plot-div', [mainTrace, markerTrace], layout, { responsive: true, displayModeBar: false }).then(function(gd){
+    gd.on('plotly_click', function(data){
+      var pt = data.points[0];
+      if (pt.curveNumber !== 1) return;
+      var ev = events[pt.pointIndex];
+      document.getElementById('info').innerHTML =
+        '<h4>' + ev.name + '</h4>' +
+        '<div class="date">~' + ev.age + ' million years ago — est. ' + ev.loss + '% species loss</div>' +
+        '<div><b>Proposed cause:</b> ' + ev.cause + '</div>' +
+        '<div style="margin-top:6px;"><b>Recovery/radiation:</b> ' + ev.recovery + '</div>';
+    });
+  });
+})();
+</script>
+</body>
+</html>
