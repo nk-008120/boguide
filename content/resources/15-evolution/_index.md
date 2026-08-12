@@ -6,14 +6,14 @@ description: "Evolutionary theory for IBO/USABO: the evidence for common descent
 
 ## How this section is organized
 
-Evolution is the mechanistic and historical layer underlying nearly every other section in this guide — it doesn't re-derive the classification vocabulary already covered in [Biosystematics](../4-biosystematics/) or the behavioral-ecology theory already covered in [Ethology](../9-ethology/), but builds directly on both, cross-linking back to them rather than re-explaining species concepts, phylogenetic tree-building, or kin selection and sexual selection theory from scratch. The section runs in four tiers, each building on the last:
+Evolution is the mechanistic and historical layer underlying nearly every other section in this guide: it doesn't re-derive the classification vocabulary already covered in [Biosystematics](../4-biosystematics/) or the behavioral-ecology theory already covered in [Ethology](../9-ethology/), but builds directly on both, cross-linking back to them rather than re-explaining species concepts, phylogenetic tree-building, or kin selection and sexual selection theory from scratch. The section runs in four tiers, each building on the last:
 
-- **Foundations & Evidence** (2 pages) — the independent lines of evidence for common descent, and the deep history of life from abiogenesis through the origin of the eukaryotic cell and multicellularity.
-- **Mechanisms of Change** (4 pages) — the population-genetic toolkit: the Hardy-Weinberg null model, and the three real mechanisms (selection, drift/flow/mutation, and molecular-level neutral change) that move a population away from it.
+- **Foundations & Evidence** (2 pages): the independent lines of evidence for common descent, and the deep history of life from abiogenesis through the origin of the eukaryotic cell and multicellularity.
+- **Mechanisms of Change** (4 pages), the population-genetic toolkit: the Hardy-Weinberg null model, and the three real mechanisms (selection, drift/flow/mutation, and molecular-level neutral change) that move a population away from it.
 - **Speciation & Macroevolution** (3 pages) — how one lineage becomes two, the large-scale patterns visible only across many lineages and long timescales, and the developmental mechanisms that translate genetic change into body-plan change.
 - **Applied & Synthesis** (2 pages) — two case studies that apply the whole toolkit above: coevolution between interacting species, and the hominin fossil record.
 
-Start with [Evidence for Evolution](Evidence-for-Evolution/) — it establishes the vocabulary (homology, vestigial structures, transitional forms) that every later page assumes.
+Start with [Evidence for Evolution](Evidence-for-Evolution/): it establishes the vocabulary (homology, vestigial structures, transitional forms) that every later page assumes.
 
 {{< cards cols="1" >}}
   {{< card link="evidence-for-evolution/" title="1. Evidence for Evolution" subtitle="Fossil record, biogeography, homology vs. analogy, comparative embryology, molecular evidence — read this first." >}}

@@ -11,7 +11,7 @@ syllabus_tags: ["IBO", "USABO", "foundations"]
 
 ## Overview
 
-Before comparing a human heart to a fish heart, or a human gut to an earthworm's, you need a precise, shared vocabulary for describing *any* animal body — not just the four broad categories (symmetry, tissue type, germ layer, coelom type) but the underlying mechanisms that produce them. This page is deliberately more mechanistic than a typical "definitions" page: every later page in this section — the ten Human Anatomy pages, the three Vertebrate Anatomy pages, and the two Animal Kingdom pages — assumes fluency with the material here, including the histological and developmental detail, not just the terms.
+Before comparing a human heart to a fish heart, or a human gut to an earthworm's, you need a precise, shared vocabulary for describing *any* animal body, not just the four broad categories (symmetry, tissue type, germ layer, coelom type) but the underlying mechanisms that produce them. This page is deliberately more mechanistic than a typical "definitions" page: every later page in this section (the ten Human Anatomy pages, the three Vertebrate Anatomy pages, and the two Animal Kingdom pages) assumes fluency with the material here, including the histological and developmental detail, not just the terms.
 
 ## Key Concepts
 
@@ -26,7 +26,7 @@ Before comparing a human heart to a fish heart, or a human gut to an earthworm's
 
 Bilateral symmetry is mechanistically linked to **cephalization**: an animal that moves consistently in one direction (enabled by having distinct anterior/posterior ends) experiences new environmental stimuli at its anterior end first, creating selective pressure to concentrate sensory structures and integrative nervous tissue there. This is why cephalization (a defined head bearing a brain/cerebral ganglion and major sense organs) tracks so closely with bilateral symmetry across the phyla covered in [Invertebrate Body Plans I](../invertebrate-body-plans-1/) and [II](../invertebrate-body-plans-2/).
 
-Adult echinoderms display **secondary radial symmetry** — bilaterally symmetric, free-swimming larvae undergo a metamorphic shift to pentaradial symmetry as they settle and adopt a sessile-to-slow-moving adult lifestyle, where an all-around sensory field is more useful than a directional one. This dissociation between developmental/phylogenetic classification and adult body plan is one of the most reliably tested inference points on IBO papers.
+Adult echinoderms display **secondary radial symmetry**: bilaterally symmetric, free-swimming larvae undergo a metamorphic shift to pentaradial symmetry as they settle and adopt a sessile-to-slow-moving adult lifestyle, where an all-around sensory field is more useful than a directional one. This dissociation between developmental/phylogenetic classification and adult body plan is one of the most reliably tested inference points on IBO papers.
 
 For labeled photo examples of each symmetry type, see [Animal Characterization Based on Body Symmetry](https://bio.libretexts.org/Bookshelves/Introductory_and_General_Biology/General_Biology_(Boundless)/27%3A_Introduction_to_Animal_Diversity/27.02%3A_Features_Used_to_Classify_Animals/27.2A%3A_Animal_Characterization_Based_on_Body_Symmetry) (LibreTexts).
 
@@ -34,11 +34,11 @@ For labeled photo examples of each symmetry type, see [Animal Characterization B
 
 The four primary tissue types, in more structural/functional detail than a simple list:
 
-**Epithelial tissue** — classified along two independent axes: cell shape (squamous = flat, cuboidal = cube-shaped, columnar = tall/rectangular) and layering (simple = one cell layer, stratified = multiple layers, pseudostratified = one layer but with nuclei at staggered heights, giving a false appearance of stratification). Function follows structure tightly: **simple squamous** (minimal diffusion distance) lines alveoli and capillaries; **simple columnar** (often with microvilli/cilia, tall cells accommodate more organelles for active transport/secretion) lines the intestine and respiratory tract; **stratified squamous** (the surface layer sacrificial, protecting the basal proliferative layer) covers the epidermis and esophagus; **pseudostratified ciliated columnar** lines the trachea, where coordinated ciliary beating physically sweeps trapped particles. Epithelial tissue is avascular (no blood vessels penetrate it — nutrients diffuse from the underlying connective tissue across a **basement membrane**) and has high mitotic turnover.
+**Epithelial tissue** is classified along two independent axes: cell shape (squamous = flat, cuboidal = cube-shaped, columnar = tall/rectangular) and layering (simple = one cell layer, stratified = multiple layers, pseudostratified = one layer but with nuclei at staggered heights, giving a false appearance of stratification). Function follows structure tightly: **simple squamous** (minimal diffusion distance) lines alveoli and capillaries; **simple columnar** (often with microvilli/cilia, tall cells accommodate more organelles for active transport/secretion) lines the intestine and respiratory tract; **stratified squamous** (the surface layer sacrificial, protecting the basal proliferative layer) covers the epidermis and esophagus; **pseudostratified ciliated columnar** lines the trachea, where coordinated ciliary beating physically sweeps trapped particles. Epithelial tissue is avascular (no blood vessels penetrate it; nutrients diffuse from the underlying connective tissue across a **basement membrane**) and has high mitotic turnover.
 
-**Connective tissue** — unified by having cells sparsely distributed within an extracellular matrix (ECM) rather than packed cell-to-cell like epithelium; the ECM composition (ratio of ground substance to fiber type — collagen for tensile strength, elastin for recoil) determines mechanical properties. **Loose connective tissue** (sparse fibers, viscous ground substance) surrounds organs and vessels; **dense regular connective tissue** (parallel collagen bundles) forms tendons and ligaments; **dense irregular connective tissue** (collagen in multiple directions, resisting multidirectional stress) forms the dermis; **cartilage** (chondrocytes in lacunae, avascular, matrix rich in collagen + proteoglycans) and **bone** (osteocytes, mineralized collagen matrix — full detail on the [Human Skeletal System](../human-skeletal-system/) page) are rigid connective tissues; **blood** counts as connective tissue because it is cells (formed elements) suspended in a fluid extracellular matrix (plasma) — detailed on the [Human Circulatory System](../human-circulatory-system/) page.
+**Connective tissue** is unified by having cells sparsely distributed within an extracellular matrix (ECM) rather than packed cell-to-cell like epithelium; the ECM composition (ratio of ground substance to fiber type — collagen for tensile strength, elastin for recoil) determines mechanical properties. **Loose connective tissue** (sparse fibers, viscous ground substance) surrounds organs and vessels; **dense regular connective tissue** (parallel collagen bundles) forms tendons and ligaments; **dense irregular connective tissue** (collagen in multiple directions, resisting multidirectional stress) forms the dermis; **cartilage** (chondrocytes in lacunae, avascular, matrix rich in collagen + proteoglycans) and **bone** (osteocytes, mineralized collagen matrix; full detail on the [Human Skeletal System](../human-skeletal-system/) page) are rigid connective tissues; **blood** counts as connective tissue because it is cells (formed elements) suspended in a fluid extracellular matrix (plasma) — detailed on the [Human Circulatory System](../human-circulatory-system/) page.
 
-**Muscle tissue** and **nervous tissue** — structural detail deferred to the [Human Muscular System](../human-muscular-system/) and [Human Nervous System](../human-nervous-system/) pages respectively, since both require dedicated treatment beyond a definitional summary.
+**Muscle tissue** and **nervous tissue**: structural detail deferred to the [Human Muscular System](../human-muscular-system/) and [Human Nervous System](../human-nervous-system/) pages respectively, since both require dedicated treatment beyond a definitional summary.
 
 <span class="badge-custom">Exam tip</span> A classic IBO practical station shows an unlabeled micrograph and asks for tissue identification from structure alone — practice distinguishing simple squamous (thin, flat, single layer) from stratified squamous (thick, multiple layers, protective) from simple/pseudostratified columnar (tall cells, often ciliated) before the practical exam, not just memorizing the names.
 
@@ -46,7 +46,7 @@ The four primary tissue types, in more structural/functional detail than a simpl
 
 **Gastrulation** is the process converting a hollow ball of cells (the blastula) into a multilayered embryo, mechanistically achieved through coordinated cell movements — invagination (in-folding, as in sea urchin gastrulation), involution (inward turning at the blastopore lip), and epiboly (a sheet of cells spreading to enclose deeper layers) act together depending on the species. The process produces two or three primary germ layers:
 
-- **Diploblastic** animals (ectoderm + endoderm only, no mesoderm) — Cnidaria and Ctenophora.
+- **Diploblastic** animals (ectoderm + endoderm only, no mesoderm): Cnidaria and Ctenophora.
 - **Triploblastic** animals (ectoderm, mesoderm, and endoderm) — every bilaterally symmetric animal.
 
 ```mermaid
@@ -76,7 +76,7 @@ graph TD;
       <button id="germQuizToggle" style="padding:6px 14px; border:none; border-radius:30px; background:#2d6a4f; color:white; cursor:pointer; font-weight:500; font-size:0.85rem;">Quiz me</button>
     </div>
   </div>
-  <p style="font-size:0.85rem; color:#6b7280; margin:0 0 1rem 0;">Extends the germ-layer diagram above. Click a germ layer's name to isolate and highlight only its derivatives, dimming the rest. Toggle "Quiz me" to hide every derivative name and test yourself — click a hidden item to reveal just that one.</p>
+  <p style="font-size:0.85rem; color:#6b7280; margin:0 0 1rem 0;">Extends the germ-layer diagram above. Click a germ layer's name to isolate and highlight only its derivatives, dimming the rest. Toggle "Quiz me" to hide every derivative name and test yourself. Click a hidden item to reveal just that one.</p>
   <div style="display:flex; gap:1rem; flex-wrap:wrap;" id="germTreeColumns">
     <div class="germ-col" data-layer="ectoderm" style="flex:1; min-width:180px; border-radius:16px; padding:0.8rem; background:#eaf3fa; border:2px solid transparent; transition:opacity 0.25s, border-color 0.25s;">
       <div class="germ-header" style="cursor:pointer; font-weight:700; color:#2565a0; padding:4px 8px; border-radius:8px; margin-bottom:0.5rem;">Ectoderm</div>
@@ -174,7 +174,7 @@ graph TD;
 })();
 </script>
 
-In triploblastic embryos, the mesoderm arises adjacent to the **notochord** (a transient rod of mesodermal tissue, present at some developmental stage in every chordate, including humans — see the [Fish & Amphibian Anatomy](../fish-amphibian-anatomy/) page for its role in non-human chordates). The notochord performs **primary embryonic induction**: it signals the overlying ectoderm to thicken into the **neural plate**, which then rolls into the **neural tube** — the direct embryonic precursor of the entire CNS (detailed on the [Human Nervous System](../human-nervous-system/) page). This is a mechanistic, not just descriptive, link between germ-layer formation and organ-system origin, and a frequently tested inductive-signaling example.
+In triploblastic embryos, the mesoderm arises adjacent to the **notochord** (a transient rod of mesodermal tissue, present at some developmental stage in every chordate, including humans; see the [Fish & Amphibian Anatomy](../fish-amphibian-anatomy/) page for its role in non-human chordates). The notochord performs **primary embryonic induction**: it signals the overlying ectoderm to thicken into the **neural plate**, which then rolls into the **neural tube**, the direct embryonic precursor of the entire CNS (detailed on the [Human Nervous System](../human-nervous-system/) page). This is a mechanistic, not just descriptive, link between germ-layer formation and organ-system origin, and a frequently tested inductive-signaling example.
 
 ![Four-stage neurulation sequence: the neural plate thickens from ectoderm over the notochord and mesoderm, bends dorsally to bring the neural plate borders together as the neural crest, closes into a neural tube separating from the epidermis, and finally shows the notochord persisting only as the intervertebral disc nucleus pulposus while adjacent mesoderm forms the somites.](/ANATOMYPICS/notochord-neural-tube-formation.jpg)
 *Source: Wikimedia Commons, CC BY 3.0 (OpenStax College).*
@@ -185,7 +185,7 @@ Early cell division (**cleavage**) of the fertilized egg follows one of two patt
 
 | Feature | Protostomes | Deuterostomes |
 |---|---|---|
-| Cleavage geometry | **Spiral** — daughter cells offset diagonally over the parent cells | **Radial** — daughter cells stack directly over parent cells |
+| Cleavage geometry | **Spiral**: daughter cells offset diagonally over the parent cells | **Radial**: daughter cells stack directly over parent cells |
 | Developmental fate | **Determinate (mosaic)** — each blastomere's fate is fixed early; isolating one blastomere produces an incomplete embryo | **Indeterminate (regulative)** — early blastomeres retain the potential to form a complete embryo if isolated (the developmental basis of identical twinning in humans) |
 | Blastopore fate | Becomes the **mouth** | Becomes the **anus**; the mouth forms secondarily |
 | Coelom formation | **Schizocoely** — the coelom forms by a splitting of a solid mass of mesoderm | **Enterocoely** — the coelom forms by an outpocketing of the archenteron (embryonic gut) wall |
@@ -225,7 +225,7 @@ The **coelom** is a fluid-filled body cavity fully lined by mesoderm-derived tis
     </div>
     <div style="flex:1; min-width:220px;">
       <div style="font-weight:700; font-size:1.1rem; color:#1a472a; margin-bottom:0.3rem;" id="coelomStageLabel">Acoelomate</div>
-      <div style="font-size:0.9rem; color:#4b5563; margin-bottom:1rem; min-height:3.6em;" id="coelomStageDesc">Mesenchyme (mesoderm-derived packing tissue) fills the entire space between gut and body wall — no cavity.</div>
+      <div style="font-size:0.9rem; color:#4b5563; margin-bottom:1rem; min-height:3.6em;" id="coelomStageDesc">Mesenchyme (mesoderm-derived packing tissue) fills the entire space between gut and body wall; no cavity.</div>
       <input type="range" id="coelomSlider" min="0" max="100" step="1" value="0" style="width:100%; accent-color:#2d6a4f;">
       <div style="display:flex; justify-content:space-between; font-size:0.72rem; color:#6b7280; margin-top:0.2rem;">
         <span>Acoelomate</span><span>Pseudocoelomate</span><span>Eucoelomate</span>
@@ -271,19 +271,19 @@ The **coelom** is a fluid-filled body cavity fully lined by mesoderm-derived tis
     var label, desc;
     if (v === 0) {
       label = 'Acoelomate';
-      desc = 'Mesenchyme (mesoderm-derived packing tissue) fills the entire space between gut and body wall — no cavity.';
+      desc = 'Mesenchyme (mesoderm-derived packing tissue) fills the entire space between gut and body wall; no cavity.';
     } else if (v < 50) {
       label = 'Acoelomate → Pseudocoelomate (morphing)';
       desc = 'The solid mesenchyme is thinning as a fluid-filled cavity begins to open between gut and body wall.';
     } else if (v === 50) {
       label = 'Pseudocoelomate';
-      desc = 'A body cavity derived from the blastocoel is present, but mesoderm lines only the body-wall side — the gut wall has no peritoneum.';
+      desc = 'A body cavity derived from the blastocoel is present, but mesoderm lines only the body-wall side. The gut wall has no peritoneum.';
     } else if (v < 100) {
       label = 'Pseudocoelomate → Eucoelomate (morphing)';
       desc = 'A visceral peritoneum is growing around the gut wall, extending the mesoderm lining to both sides of the cavity.';
     } else {
       label = 'Eucoelomate (coelomate)';
-      desc = 'The coelom is fully lined by mesoderm on both sides — parietal peritoneum against the body wall, visceral peritoneum around the gut.';
+      desc = 'The coelom is fully lined by mesoderm on both sides: parietal peritoneum against the body wall, visceral peritoneum around the gut.';
     }
     stageLabel.textContent = label;
     stageDesc.textContent = desc;
@@ -294,14 +294,14 @@ The **coelom** is a fluid-filled body cavity fully lined by mesoderm-derived tis
 })();
 </script>
 
-A coelom performs concrete mechanical work: it cushions internal organs, allows the gut to move independently of the body wall (necessary for effective peristalsis, since a fluid-filled cavity transmits muscular force without the gut and body wall dragging against each other), and — in soft-bodied coelomates lacking a rigid skeleton — doubles as a **hydrostatic skeleton**, an incompressible fluid volume that transmits force when surrounding muscle contracts (detailed with earthworm locomotion on the [Invertebrate Body Plans I](../invertebrate-body-plans-1/) page).
+A coelom performs concrete mechanical work: it cushions internal organs, allows the gut to move independently of the body wall (necessary for effective peristalsis, since a fluid-filled cavity transmits muscular force without the gut and body wall dragging against each other), and, in soft-bodied coelomates lacking a rigid skeleton, doubles as a **hydrostatic skeleton**, an incompressible fluid volume that transmits force when surrounding muscle contracts (detailed with earthworm locomotion on the [Invertebrate Body Plans I](../invertebrate-body-plans-1/) page).
 
 ![Acoelomate (flatworm), pseudocoelomate (roundworm), and eucoelomate (segmented worm) body plans compared, each with a representative animal above and a labeled cross-section below showing ectoderm, mesoderm, endoderm, and the body cavity (if any).](/ANATOMYPICS/coelom-types-comparison.jpg)
 *Source: not yet confirmed — flagged CHECK pending source information.*
 
 ### Segmentation
 
-**Metameric segmentation** — a body built from a linear series of repeated units (segments/somites) — arises from a mechanistically conserved genetic toolkit across distantly related phyla: **Hox gene** expression along the anterior-posterior axis specifies regional identity segment by segment, with the same broad gene family (though not identical genes) implicated in annelid, arthropod, and vertebrate segmentation. In vertebrates this produces **somites** (blocks of paraxial mesoderm flanking the developing neural tube), which give rise to the segmented vertebral column, associated ribs, and the segmental pattern of spinal nerves — a structural echo of the more completely segmented adult bodies of annelids and arthropods, covered on the [Invertebrate Body Plans I](../invertebrate-body-plans-1/) page.
+**Metameric segmentation**, a body built from a linear series of repeated units (segments/somites), arises from a mechanistically conserved genetic toolkit across distantly related phyla: **Hox gene** expression along the anterior-posterior axis specifies regional identity segment by segment, with the same broad gene family (though not identical genes) implicated in annelid, arthropod, and vertebrate segmentation. In vertebrates this produces **somites** (blocks of paraxial mesoderm flanking the developing neural tube), which give rise to the segmented vertebral column, associated ribs, and the segmental pattern of spinal nerves — a structural echo of the more completely segmented adult bodies of annelids and arthropods, covered on the [Invertebrate Body Plans I](../invertebrate-body-plans-1/) page.
 
 ## Comparative Structures
 

@@ -17,33 +17,33 @@ syllabus_tags: ["IBO", "USABO", "plant-physiology"]
 
 ### Phytochrome and the Red/Far-Red Switch
 
-**Phytochrome** is a photoreversible pigment-protein that exists in two interconvertible forms: **Pr** (absorbs red light, ~660 nm) and **Pfr** (absorbs far-red light, ~730 nm) — absorbing red light converts Pr to Pfr, and absorbing far-red light converts Pfr back to Pr. Sunlight contains far more red than far-red light, so Pfr accumulates during the day; in darkness, Pfr slowly and spontaneously reverts to Pr over the course of the night (rather than requiring far-red light specifically), at a roughly constant rate. This slow, dark-driven Pfr-to-Pr conversion is what allows phytochrome to function as a night-length timer: the longer an uninterrupted dark period lasts, the more completely Pfr reverts to Pr, so the Pfr:Pr ratio present at dawn is a direct molecular readout of how long the preceding night was. Critically, this makes phytochrome sensitive to **night length**, not day length directly, which is the basis for the terminology correction in the next section.
+**Phytochrome** is a photoreversible pigment-protein that exists in two interconvertible forms: **Pr** (absorbs red light, ~660 nm) and **Pfr** (absorbs far-red light, ~730 nm). Absorbing red light converts Pr to Pfr, and absorbing far-red light converts Pfr back to Pr. Sunlight contains far more red than far-red light, so Pfr accumulates during the day; in darkness, Pfr slowly and spontaneously reverts to Pr over the course of the night (rather than requiring far-red light specifically), at a roughly constant rate. This slow, dark-driven Pfr-to-Pr conversion is what allows phytochrome to function as a night-length timer: the longer an uninterrupted dark period lasts, the more completely Pfr reverts to Pr, so the Pfr:Pr ratio present at dawn is a direct molecular readout of how long the preceding night was. Critically, this makes phytochrome sensitive to **night length**, not day length directly, which is the basis for the terminology correction in the next section.
 
 ![Phytochrome Pr/Pfr photoreversible cycle: red light (670 nm) converts the inactive Pr form to the active Pfr form; far-red light (730 nm) or, more slowly, darkness converts Pfr back to Pr](/PLANTPHYSIOPICS/phytochrome-pr-pfr-cycle.png)
 *Source: Preach Bio*
 
 ### Short-Day, Long-Day, and Day-Neutral Plants
 
-Flowering-time classification is conventionally named by day length but mechanistically determined by **critical night length**, a fact demonstrable by a single classic experiment: interrupting a long night with a brief pulse of red light in the middle prevents flowering in a short-day plant just as effectively as shortening the night itself, while interrupting a short night has no equivalent effect — showing that the plant is measuring the uninterrupted dark period, not daylight directly.
+Flowering-time classification is conventionally named by day length but mechanistically determined by **critical night length**, a fact demonstrable by a single classic experiment: interrupting a long night with a brief pulse of red light in the middle prevents flowering in a short-day plant just as effectively as shortening the night itself, while interrupting a short night has no equivalent effect, showing that the plant is measuring the uninterrupted dark period, not daylight directly.
 
 {{< youtube yvyZTzq_d7Q >}}
 
 On that basis:
 
 - **Short-day (long-night) plants** — flower only when the uninterrupted night exceeds a species-specific critical length (i.e., when days are short), because a sufficiently long night allows Pfr to fall low enough to permit the floral transition. A brief red-light interruption in the middle of an otherwise long night restores enough Pfr to block flowering.
-- **Long-day (short-night) plants** — flower only when the uninterrupted night is shorter than the critical length (i.e., when days are long), because flowering here requires that Pfr remain relatively high through the night, which only occurs if the dark period is short enough to prevent much Pfr-to-Pr reversion.
+- **Long-day (short-night) plants**: flower only when the uninterrupted night is shorter than the critical length (i.e., when days are long), because flowering here requires that Pfr remain relatively high through the night, which only occurs if the dark period is short enough to prevent much Pfr-to-Pr reversion.
 - **Day-neutral plants** — flower based on developmental stage (e.g., reaching a minimum leaf number) rather than photoperiod at all.
 
 ### Vernalization
 
-Some species (many biennials and winter annuals) additionally require **vernalization** — a prolonged period of cold exposure, typically during winter, before they become competent to flower even under an otherwise inductive photoperiod the following season. Mechanistically, vernalization involves epigenetic silencing of a floral repressor gene (in the well-studied case, sustained cold progressively represses the *FLC* repressor via chromatin modification), a change that persists through subsequent cell divisions in the meristem (a form of cellular, mitotically heritable memory of the cold exposure) even after the cold period ends and temperatures rise — which is why a single winter's cold, not the plant's continued exposure to cold at flowering time, is sufficient to unlock the response. Vernalization and photoperiod act as independent checkpoints: a species requiring both will not flower on photoperiod alone without prior cold exposure, nor on cold exposure alone without the correct subsequent photoperiod.
+Some species (many biennials and winter annuals) additionally require **vernalization**: a prolonged period of cold exposure, typically during winter, before they become competent to flower even under an otherwise inductive photoperiod the following season. Mechanistically, vernalization involves epigenetic silencing of a floral repressor gene (in the well-studied case, sustained cold progressively represses the *FLC* repressor via chromatin modification), a change that persists through subsequent cell divisions in the meristem (a form of cellular, mitotically heritable memory of the cold exposure) even after the cold period ends and temperatures rise — which is why a single winter's cold, not the plant's continued exposure to cold at flowering time, is sufficient to unlock the response. Vernalization and photoperiod act as independent checkpoints: a species requiring both will not flower on photoperiod alone without prior cold exposure, nor on cold exposure alone without the correct subsequent photoperiod.
 
 ![Vernalization outcome and the classical (pre-molecular) flower-inducing-substance model: left, a slightly germinated seed either chilled (flowers) or not chilled (fails to flower) at the same ordinary growing temperature; right, the classical "vernalin"/"florigen" translocation model proposed to carry the vernalization-induced signal from leaf to flower bud, with devernalization by high temperature](/PLANTPHYSIOPICS/vernalization-flc-timeline.png)
 *Source: SlideShare*
 
 ### Florigen: The Mobile Flowering Signal
 
-Photoperiod is sensed in leaves (where phytochrome and the night-length-measuring clock operate), but the floral transition itself occurs at the **shoot apical meristem**, often at a considerable distance — classic grafting experiments (an induced leaf grafted onto an otherwise non-induced plant of the same species triggers flowering in the recipient) demonstrated decades before its molecular identity was known that a mobile, graft-transmissible signal, not an electrical or purely local response, carries the flowering decision from leaf to apex.
+Photoperiod is sensed in leaves (where phytochrome and the night-length-measuring clock operate), but the floral transition itself occurs at the **shoot apical meristem**, often at a considerable distance: classic grafting experiments (an induced leaf grafted onto an otherwise non-induced plant of the same species triggers flowering in the recipient) demonstrated decades before its molecular identity was known that a mobile, graft-transmissible signal, not an electrical or purely local response, carries the flowering decision from leaf to apex.
 
 ![Grafting technique terminology (in vitro micrografting vs. conventional grafting): scion/microscion, rootstock/microrootstock, and the graft union where callus cells from both sides interconnect the vascular systems](/PLANTPHYSIOPICS/grafting-experiment-florigen.png)
 *Source: not identified*
@@ -132,7 +132,7 @@ graph TD;
 })();
 </script>
 
-- **Grafting experiment reconstructor (click-through)** — a two-plant diagram (induced donor, non-induced recipient) where clicking "graft" transmits a visible signal marker across the graft union to the recipient's apex, which then transitions to flowering — reproducing the classic experiment's logic before revealing FT protein as the modern molecular identity of that signal.
+- **Grafting experiment reconstructor (click-through)** — a two-plant diagram (induced donor, non-induced recipient) where clicking "graft" transmits a visible signal marker across the graft union to the recipient's apex, which then transitions to flowering, reproducing the classic experiment's logic before revealing FT protein as the modern molecular identity of that signal.
 
 <div id="graft-widget" style="background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:'Inter','Segoe UI',Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
   <svg viewBox="0 0 320 140" width="100%" style="max-width:340px; display:block; margin:0 auto;">
@@ -171,7 +171,7 @@ graph TD;
     reset();
     graftLine.style.opacity = 1;
     signalDot.style.opacity = 1;
-    note.textContent = 'Grafting connects the vascular tissue of both plants — a mobile signal can now travel between them.';
+    note.textContent = 'Grafting connects the vascular tissue of both plants: a mobile signal can now travel between them.';
     setTimeout(function(){
       signalDot.setAttribute('cx', 240);
       note.textContent = 'The mobile signal travels from the induced donor across the graft union toward the recipient apex.';

@@ -1,7 +1,7 @@
 ---
 title: "Orientation & Navigation"
 weight: 4
-description: "Kinesis vs. taxis, piloting/compass/map navigation senses, celestial and magnetic cues, and migration patterns and costs — how animals orient and move through space, completing the Communication & Orientation tier."
+description: "Kinesis vs. taxis, piloting/compass/map navigation senses, celestial and magnetic cues, and migration patterns and costs: how animals orient and move through space, completing the Communication & Orientation tier."
 difficulty: "intermediate"
 prerequisites: ["Mechanisms-of-Behavior"]
 syllabus_tags: ["IBO", "USABO", "ethology"]
@@ -11,7 +11,7 @@ syllabus_tags: ["IBO", "USABO", "ethology"]
 
 ## Overview
 
-Where [Animal Communication](../Animal-Communication/) covers signals passed between individuals, this page covers an animal's relationship to physical space itself — the simple stimulus-response movements that keep an animal in a favorable environment, and the far more sophisticated sensory systems that let some species navigate across thousands of kilometers back to a specific natal site. IBO/USABO questions on this topic are heavily example-driven and frequently ask for the specific named sensory mechanism (magnetite-based magnetoreception, sun-compass, star-compass) behind a described navigational feat, so precision about *which* mechanism is being tested in a given scenario matters more than a general "instinct" answer.
+Where [Animal Communication](../Animal-Communication/) covers signals passed between individuals, this page covers an animal's relationship to physical space itself: the simple stimulus-response movements that keep an animal in a favorable environment, and the far more sophisticated sensory systems that let some species navigate across thousands of kilometers back to a specific natal site. IBO/USABO questions on this topic are heavily example-driven and frequently ask for the specific named sensory mechanism (magnetite-based magnetoreception, sun-compass, star-compass) behind a described navigational feat, so precision about *which* mechanism is being tested in a given scenario matters more than a general "instinct" answer.
 
 ## Key Concepts
 
@@ -19,7 +19,7 @@ Where [Animal Communication](../Animal-Communication/) covers signals passed bet
 
 Both are simple, largely innate orientation responses to an environmental gradient, but differ in whether movement direction is tied to the stimulus direction:
 
-- **Kinesis** is a change in movement *rate* or *turning frequency* in response to stimulus intensity, without the movement being directed toward or away from the stimulus source — the standard example is a woodlouse (*Porcellio*), which increases its turning rate in dry conditions and decreases it in humid conditions, a purely rate-based response that statistically keeps the animal in humid microhabitats without ever "steering" toward humidity as such.
+- **Kinesis** is a change in movement *rate* or *turning frequency* in response to stimulus intensity, without the movement being directed toward or away from the stimulus source. The standard example is a woodlouse (*Porcellio*), which increases its turning rate in dry conditions and decreases it in humid conditions, a purely rate-based response that statistically keeps the animal in humid microhabitats without ever "steering" toward humidity as such.
 
 ![Woodlouse humidity-choice apparatus (a petri dish half-covered by a water-absorbing substance under mesh) and a graph of the number of woodlice not moving vs. relative humidity, rising sharply from low double digits at low humidity to consistently 60-75 at higher humidity.](/ETHOLOGYPICS/woodlouse-humidity-kinesis-diagram.jpg)
 *Source: exam/textbook figure (specific origin not stated by submitter)*
@@ -30,9 +30,9 @@ Both are simple, largely innate orientation responses to an environmental gradie
 
 Navigation ability is conventionally split into three mechanisms of increasing sophistication, and exam scenarios often hinge on identifying which one a described experiment is isolating:
 
-- **Piloting** — navigating using familiar landmarks already learned from direct prior experience of a route; fails entirely in unfamiliar territory.
-- **Compass sense** — maintaining a constant, learned or innate compass bearing (e.g. "fly southwest") without reference to landmarks; sufficient to hold a direction but not to correct for being displaced off-course.
-- **True navigation (map sense)** — determining one's position relative to a goal from an unfamiliar location and computing the correct heading to reach it, requiring some internal "map" of position beyond a simple compass bearing. The strongest evidence for true navigation comes from **clock-shift and displacement experiments**: homing pigeons transported in covered crates to a release site far outside their prior experience, and released with their internal circadian clock experimentally shifted by several hours, show a systematic, predictable *error* in initial heading consistent with using a time-compensated sun compass to compute direction — the predictable error itself is what demonstrates the mechanism, since a purely landmark-piloting bird would show no such systematic deflection.
+- **Piloting**: navigating using familiar landmarks already learned from direct prior experience of a route; fails entirely in unfamiliar territory.
+- **Compass sense**: maintaining a constant, learned or innate compass bearing (e.g. "fly southwest") without reference to landmarks; sufficient to hold a direction but not to correct for being displaced off-course.
+- **True navigation (map sense)**: determining one's position relative to a goal from an unfamiliar location and computing the correct heading to reach it, requiring some internal "map" of position beyond a simple compass bearing. The strongest evidence for true navigation comes from **clock-shift and displacement experiments**: homing pigeons transported in covered crates to a release site far outside their prior experience, and released with their internal circadian clock experimentally shifted by several hours, show a systematic, predictable *error* in initial heading consistent with using a time-compensated sun compass to compute direction. The predictable error itself is what demonstrates the mechanism, since a purely landmark-piloting bird would show no such systematic deflection.
 
 ![Two circular orientation plots from a pigeon clock-shift experiment: (a) clocks advanced 6 hours and (b) clocks delayed 6 hours, each dot representing one bird's initial heading and the arrow the mean vector — the two mean vectors are rotated in opposite directions relative to true north/south.](/ETHOLOGYPICS/homing-pigeon-clock-shift-diagram.jpg)
 *Source: ResearchGate, fig. from a Sun-compass clock-shift study*
@@ -52,7 +52,7 @@ Two sensory systems underlie compass and map navigation in the best-studied spec
 ![Diagram of the proposed cryptochrome-based radical-pair magnetoreception pathway: eye → retina layers (rod/cone/bipolar/ganglion cells) → rod cell outer segment discs → cryptochrome protein positioned alongside rhodopsin in the disc membrane.](/ETHOLOGYPICS/magnetoreception-mechanisms-comparison.jpg)
 *Source: Theoretical and Computational Biophysics Group, Beckman Institute, University of Illinois at Urbana-Champaign (ks.uiuc.edu)*
 
-- **Loggerhead sea turtle (*Caretta caretta*) natal homing** combines several of the above: hatchlings imprint on the magnetic signature of their natal beach and, after years at sea, adult females use magnetic map cues to return to nest at the same coastline — a heavily tested case because it demonstrates true map-like navigation (not just a compass bearing) over an ocean-basin scale with no landmarks available.
+- **Loggerhead sea turtle (*Caretta caretta*) natal homing** combines several of the above: hatchlings imprint on the magnetic signature of their natal beach and, after years at sea, adult females use magnetic map cues to return to nest at the same coastline, a heavily tested case because it demonstrates true map-like navigation (not just a compass bearing) over an ocean-basin scale with no landmarks available.
 
 ![Map of loggerhead sea turtle satellite telemetry locations across the Pacific Ocean, density-shaded by hexagon, spanning from Japan/Taiwan across to the western United States/Mexico and a separate cluster around New Caledonia/Australia.](/ETHOLOGYPICS/loggerhead-turtle-natal-homing-map.webp)
 *Source: seaturtlestatus.org (State of the World's Sea Turtles)*
@@ -61,7 +61,7 @@ Two sensory systems underlie compass and map navigation in the best-studied spec
 
 ### Migration
 
-**Migration** is a regular, often seasonal, round-trip movement between two or more habitats, distinguished from simple dispersal by its regularity and directionality. The **ultimate (survival-value) explanation**, per Tinbergen's framework (see [Mechanisms of Behavior](../Mechanisms-of-Behavior/)), is usually resource seasonality and/or breeding-site quality trade-offs — the **Arctic tern (*Sterna paradisaea*)**'s roughly pole-to-pole annual migration (the longest of any animal) lets it exploit summer daylight and food abundance in both hemispheres in turn. Migration carries substantial costs directly testable in a cost-benefit framing: high energetic expenditure (fat reserves built up before departure and depleted en route), significant mortality risk during transit (storms, exhaustion, predation at unfamiliar stopover sites), and time lost that cannot be spent on reproduction or feeding — costs that must be outweighed by the resource/breeding benefit at the destination for migration to be evolutionarily stable, and the reason **partial migration** (only some individuals of a population migrate in a given year, often condition- or age-dependent) is common and itself an active research topic.
+**Migration** is a regular, often seasonal, round-trip movement between two or more habitats, distinguished from simple dispersal by its regularity and directionality. The **ultimate (survival-value) explanation**, per Tinbergen's framework (see [Mechanisms of Behavior](../Mechanisms-of-Behavior/)), is usually resource seasonality and/or breeding-site quality trade-offs: the **Arctic tern (*Sterna paradisaea*)**'s roughly pole-to-pole annual migration (the longest of any animal) lets it exploit summer daylight and food abundance in both hemispheres in turn. Migration carries substantial costs directly testable in a cost-benefit framing: high energetic expenditure (fat reserves built up before departure and depleted en route), significant mortality risk during transit (storms, exhaustion, predation at unfamiliar stopover sites), and time lost that cannot be spent on reproduction or feeding, costs that must be outweighed by the resource/breeding benefit at the destination for migration to be evolutionarily stable, and the reason **partial migration** (only some individuals of a population migrate in a given year, often condition- or age-dependent) is common and itself an active research topic.
 
 ![World map with arrows showing a pole-to-pole migratory pattern: routes running from Arctic/high-latitude breeding regions (Canada, Greenland, Northern Europe, Russia) down to Antarctic wintering waters.](/ETHOLOGYPICS/arctic-tern-migration-route-map.png)
 *Source: go2moon.com*
@@ -89,7 +89,7 @@ Two sensory systems underlie compass and map navigation in the best-studied spec
 
 **Interactive**
 
-- **Kinesis vs. taxis simulator (SVG/JS)** — a simulated organism moving on a 2D stimulus gradient, toggled between a kinesis rule (turning rate scales with stimulus intensity, direction random) and a taxis rule (movement directed along the gradient), letting the user see the same starting distribution produce clustering in humid patches under kinesis alone, without any directed steering.
+- **Kinesis vs. taxis simulator (SVG/JS)**: a simulated organism moving on a 2D stimulus gradient, toggled between a kinesis rule (turning rate scales with stimulus intensity, direction random) and a taxis rule (movement directed along the gradient), letting the user see the same starting distribution produce clustering in humid patches under kinesis alone, without any directed steering.
 
 {{< iframe src="/kinesis-taxis-simulator.html" title="Kinesis vs. Taxis Simulator" height="420px" >}}
 

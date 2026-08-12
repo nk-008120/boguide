@@ -17,7 +17,7 @@ Photosynthesis is conventionally split into two linked stages: the **light react
 
 ### Photosystem Structure and Light Capture
 
-A **photosystem** is a large pigment-protein complex embedded in the thylakoid membrane, consisting of a **light-harvesting complex** (an antenna of chlorophyll *a*, chlorophyll *b*, and accessory carotenoid pigments, each absorbing a slightly different wavelength range so the complex collectively captures a broader slice of the visible spectrum than any single pigment could) surrounding a **reaction center** — a specific pair of chlorophyll *a* molecules where the captured energy is ultimately used to eject an electron. Energy absorbed anywhere in the antenna is passed molecule to molecule by **resonance energy transfer** until it reaches the reaction center, where it excites an electron enough to be donated to a primary electron acceptor — the point at which light energy first becomes chemical (redox) energy.
+A **photosystem** is a large pigment-protein complex embedded in the thylakoid membrane, consisting of a **light-harvesting complex** (an antenna of chlorophyll *a*, chlorophyll *b*, and accessory carotenoid pigments, each absorbing a slightly different wavelength range so the complex collectively captures a broader slice of the visible spectrum than any single pigment could) surrounding a **reaction center**: a specific pair of chlorophyll *a* molecules where the captured energy is ultimately used to eject an electron. Energy absorbed anywhere in the antenna is passed molecule to molecule by **resonance energy transfer** until it reaches the reaction center, where it excites an electron enough to be donated to a primary electron acceptor, the point at which light energy first becomes chemical (redox) energy.
 
 Two spectrally distinct photosystems exist in the thylakoid membrane, named historically by order of discovery rather than order of function:
 
@@ -31,11 +31,11 @@ Two spectrally distinct photosystems exist in the thylakoid membrane, named hist
 
 The two photosystems operate in series, connected by an electron transport chain, in a pathway conventionally drawn as a redox-potential diagram shaped like the letter Z (rising at each photosystem, falling between them):
 
-1. Light excites **P680** in PSII, ejecting an electron to the primary acceptor. The resulting P680⁺ is an extremely strong oxidant — strong enough to pull electrons from water itself.
+1. Light excites **P680** in PSII, ejecting an electron to the primary acceptor. The resulting P680⁺ is an extremely strong oxidant, strong enough to pull electrons from water itself.
 2. The **oxygen-evolving complex** (a manganese-cluster catalytic site associated with PSII) splits water: $$ 2\text{H}_2\text{O} \rightarrow 4\text{H}^+ + 4e^- + \text{O}_2 $$ replacing the electrons P680 lost, and releasing O₂ as a byproduct — the source of essentially all atmospheric photosynthetic oxygen, and the reaction the entire light-reaction system exists to drive.
 3. The ejected electron passes down an electron transport chain (plastoquinone → cytochrome b₆f complex → plastocyanin), losing energy at each step; this energy loss is harnessed at the cytochrome b₆f complex to pump additional protons into the thylakoid lumen (see chemiosmosis below).
 4. The electron reaches **PSI**, replacing an electron that PSI's own reaction center, P700, lost when it absorbed light independently.
-5. The electron ejected from P700 passes through a short second transport chain (ferredoxin) to **NADP⁺ reductase**, which reduces NADP⁺ to **NADPH** — the second energy carrier the Calvin cycle requires.
+5. The electron ejected from P700 passes through a short second transport chain (ferredoxin) to **NADP⁺ reductase**, which reduces NADP⁺ to **NADPH**, the second energy carrier the Calvin cycle requires.
 
 Because electrons flow in one direction only, from water through both photosystems to NADP⁺, and are never recycled back to PSII, this route is called **linear (noncyclic) electron flow**, and it produces both ATP (via the proton gradient built up along the way) and NADPH in a fixed ratio.
 
@@ -56,14 +56,14 @@ graph LR;
 
 ### Chemiosmotic ATP Synthesis
 
-Protons accumulate in the thylakoid lumen from two sources acting together: directly from water-splitting (step 2 above) and from active pumping by the cytochrome b₆f complex (step 3). Because the thylakoid membrane is otherwise impermeable to H⁺, this produces a steep proton gradient (both a concentration gradient and, since the lumen becomes positively charged, an electrical gradient) across the membrane — a **proton motive force** conceptually identical to the one driving oxidative phosphorylation in mitochondrial respiration, but built from light-driven electron transport instead. Protons can only cross back out through **ATP synthase**, a membrane-embedded enzyme that couples the energetically favorable flow of H⁺ down its gradient to the energetically unfavorable synthesis of ATP from ADP + Pᵢ — the process of **photophosphorylation**, mechanistically chemiosmotic (a proton gradient across a membrane driving ATP synthase) rather than substrate-level.
+Protons accumulate in the thylakoid lumen from two sources acting together: directly from water-splitting (step 2 above) and from active pumping by the cytochrome b₆f complex (step 3). Because the thylakoid membrane is otherwise impermeable to H⁺, this produces a steep proton gradient (both a concentration gradient and, since the lumen becomes positively charged, an electrical gradient) across the membrane — a **proton motive force** conceptually identical to the one driving oxidative phosphorylation in mitochondrial respiration, but built from light-driven electron transport instead. Protons can only cross back out through **ATP synthase**, a membrane-embedded enzyme that couples the energetically favorable flow of H⁺ down its gradient to the energetically unfavorable synthesis of ATP from ADP + Pᵢ, the process of **photophosphorylation**, mechanistically chemiosmotic (a proton gradient across a membrane driving ATP synthase) rather than substrate-level.
 
 ![Chemiosmotic ATP synthesis across the thylakoid membrane: water-splitting and photosystem II electron transport deposit H+ in the lumen, PSII/electron carriers move electrons toward NADP+ reduction in the stroma, and ATP synthase uses the resulting H+ gradient to phosphorylate ADP, producing ATP for the Calvin cycle](/PLANTPHYSIOPICS/thylakoid-chemiosmosis.png)
 *Source: © Merriam-Webster, Inc.*
 
 ### Cyclic Electron Flow
 
-When a chloroplast's NADPH supply is already saturated relative to its ATP demand (common when Calvin cycle activity, and therefore NADPH consumption, is limited relative to other cellular ATP needs), electrons ejected from PSI's P700 can be redirected back into the cytochrome b₆f complex instead of continuing to NADP⁺ reductase — a route called **cyclic electron flow**. This bypasses PSII entirely (no water-splitting, no O₂ released, no NADPH produced) but still pumps protons via cytochrome b₆f, generating additional ATP without additional NADPH — a way to fine-tune the ATP:NADPH ratio the Calvin cycle actually needs (a ratio the strict linear pathway alone cannot supply, since it always produces both products in a fixed proportion).
+When a chloroplast's NADPH supply is already saturated relative to its ATP demand (common when Calvin cycle activity, and therefore NADPH consumption, is limited relative to other cellular ATP needs), electrons ejected from PSI's P700 can be redirected back into the cytochrome b₆f complex instead of continuing to NADP⁺ reductase, a route called **cyclic electron flow**. This bypasses PSII entirely (no water-splitting, no O₂ released, no NADPH produced) but still pumps protons via cytochrome b₆f, generating additional ATP without additional NADPH — a way to fine-tune the ATP:NADPH ratio the Calvin cycle actually needs (a ratio the strict linear pathway alone cannot supply, since it always produces both products in a fixed proportion).
 
 ![Cyclic photophosphorylation: an electron ejected from the PSI special pair (reaction center) passes through ferredoxin, a plastoquinone-like carrier, and cytochrome b/cytochrome f back to PSI, pumping protons that drive ATP synthesis (ADP + Pi to ATP) without involving PSII or producing NADPH](/PLANTPHYSIOPICS/cyclic-electron-flow.png)
 *Source: Biology Reader (credit in image)*
@@ -131,7 +131,7 @@ When a chloroplast's NADPH supply is already saturated relative to its ATP deman
     {x:240,y:175,text:'The electron reaches P700 (PSI), replacing an electron PSI lost when it absorbed light independently.'},
     {x:240,y:40,text:'Light excites P700 to P700*, ejecting a new high-energy electron.'},
     {x:340,y:150,text:'The electron passes to ferredoxin.'},
-    {x:400,y:155,text:'NADP+ reductase uses the electron to reduce NADP+ to NADPH — the second energy carrier for the Calvin cycle.'}
+    {x:400,y:155,text:'NADP+ reductase uses the electron to reduce NADP+ to NADPH, the second energy carrier for the Calvin cycle.'}
   ];
   var i = 0;
   function render(){
@@ -148,7 +148,7 @@ When a chloroplast's NADPH supply is already saturated relative to its ATP deman
 })();
 </script>
 
-- **Linear vs. cyclic electron flow toggle** — the same thylakoid membrane diagram toggles between full linear flow (both photosystems, O2 released, NADPH produced) and cyclic flow (PSI only, electron rerouted back to cytochrome b6f, no O2/NADPH), making the "PSII bypass" visible as a rerouting rather than a separate diagram to memorize.
+- **Linear vs. cyclic electron flow toggle**: the same thylakoid membrane diagram toggles between full linear flow (both photosystems, O2 released, NADPH produced) and cyclic flow (PSI only, electron rerouted back to cytochrome b6f, no O2/NADPH), making the "PSII bypass" visible as a rerouting rather than a separate diagram to memorize.
 
 <div id="cyclic-widget" style="background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:'Inter','Segoe UI',Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
   <svg viewBox="0 0 400 160" width="100%" style="max-width:420px; display:block; margin:0 auto;">
@@ -203,7 +203,7 @@ When a chloroplast's NADPH supply is already saturated relative to its ATP deman
     cyclicBtn.style.background = isLinear ? '#94a3b8' : '#2d6a4f';
     note.textContent = isLinear
       ? 'Linear flow: both photosystems in series, water split, O2 released, NADPH produced.'
-      : 'Cyclic flow: PSII is bypassed entirely — the electron ejected from PSI loops back through cytochrome b6f instead of continuing to NADP+ reductase. No water-splitting, no O2, no NADPH — but the proton pumping at cytochrome b6f still generates extra ATP.';
+      : 'Cyclic flow: PSII is bypassed entirely. The electron ejected from PSI loops back through cytochrome b6f instead of continuing to NADP+ reductase. No water-splitting, no O2, no NADPH, but the proton pumping at cytochrome b6f still generates extra ATP.';
   }
   linearBtn.addEventListener('click', function(){ setLinear(true); });
   cyclicBtn.addEventListener('click', function(){ setLinear(false); });

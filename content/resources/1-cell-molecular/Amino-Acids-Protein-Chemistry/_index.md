@@ -12,7 +12,7 @@ syllabus_tags: ["IBO", "USABO", "biochemistry"]
 
 ## Overview
 
-Amino acids are the monomer units of proteins: a central (α) carbon bonded to an amino group, a carboxyl group, a hydrogen, and a variable **R group** (side chain) that gives each of the 20 standard amino acids its distinct chemical identity — polarity, charge, size, and reactivity. Nearly everything a protein can do — fold into a stable shape, bind a ligand, catalyse a reaction, insert into a membrane — traces back to the specific combination of R groups along its chain. This page covers the chemical vocabulary (classification, ionization, metabolism) that every later Biochemistry and Molecular Biology page assumes.
+Amino acids are the monomer units of proteins: a central (α) carbon bonded to an amino group, a carboxyl group, a hydrogen, and a variable **R group** (side chain) that gives each of the 20 standard amino acids its distinct chemical identity: polarity, charge, size, and reactivity. Nearly everything a protein can do — fold into a stable shape, bind a ligand, catalyse a reaction, insert into a membrane — traces back to the specific combination of R groups along its chain. This page covers the chemical vocabulary (classification, ionization, metabolism) that every later Biochemistry and Molecular Biology page assumes.
 
 ## Key Concepts
 
@@ -23,9 +23,9 @@ The 20 R groups sort into four broad chemical classes:
 ![General structure of an amino acid: a central α-carbon bonded to an amino group, a carboxyl group, a hydrogen, and the variable R group that distinguishes each of the 20 standard amino acids](/MCBBPICS/Amino_Acid.png)
 *Source: unattributed pre-existing site asset*
 
-- **Nonpolar/aliphatic (9)**: Gly, Ala, Val, Leu, Ile, Pro, Phe, Trp, Met — hydrocarbon chains or aromatic rings, cluster away from water.
+- **Nonpolar/aliphatic (9)**: Gly, Ala, Val, Leu, Ile, Pro, Phe, Trp, Met, hydrocarbon chains or aromatic rings that cluster away from water.
 - **Polar neutral**: contain a hydroxyl (Ser, Thr, Tyr), sulfhydryl (Cys), or amide (Asn, Gln) group in the R group.
-- **Polar acidic (2)**: Asp, Glu — carry a second carboxylic acid/carboxylate group beyond the backbone one; negatively charged at physiological pH.
+- **Polar acidic (2)**: Asp, Glu, carrying a second carboxylic acid/carboxylate group beyond the backbone one; negatively charged at physiological pH.
 - **Polar basic (3)**: Lys, Arg, His — carry an additional amine group; positively charged (Lys, Arg fully; His only partially, pKₐ ≈ 6) at physiological pH.
 
 ![All 20 standard amino acids' chemical structures grouped by class (aliphatic, aromatic, acidic, basic, hydroxylic, sulfur-containing, amidic), each circle color-coded by class and marked solid/dashed for non-essential/essential](/MCBBPICS/Amino_Acid2.png)
@@ -37,13 +37,13 @@ Aromaticity ranking (relevant for UV absorbance at 280 nm, used to quantify prot
 
 ### Isoelectric point (pI) and titration behaviour
 
-The **isoelectric point** is the pH at which an amino acid carries zero net charge (it exists as a **zwitterion** — simultaneously protonated at the amino group and deprotonated at the carboxyl group). For an amino acid with no ionizable side chain:
+The **isoelectric point** is the pH at which an amino acid carries zero net charge (it exists as a **zwitterion**, simultaneously protonated at the amino group and deprotonated at the carboxyl group). For an amino acid with no ionizable side chain:
 
 {{< eqbox >}}
 $$ pI = \frac{pK_{a1} + pK_{a2}}{2} $$
 {{< /eqbox >}}
 
-For an amino acid with an ionizable side chain, average the **two pKₐ values that flank the neutral species**, not simply the first two. Lysine has pKₐ values 2.2 (α-COOH), 9.0 (α-NH₃⁺), and 10.5 (side-chain NH₃⁺); its zwitterion exists between pH 9.0 and 10.5, so pI = (9.0 + 10.5)/2 = 9.75 — *not* the average of the first two.
+For an amino acid with an ionizable side chain, average the **two pKₐ values that flank the neutral species**, not simply the first two. Lysine has pKₐ values 2.2 (α-COOH), 9.0 (α-NH₃⁺), and 10.5 (side-chain NH₃⁺); its zwitterion exists between pH 9.0 and 10.5, so pI = (9.0 + 10.5)/2 = 9.75, *not* the average of the first two.
 
 **Reading a titration curve**: each inflection point marks a pKₐ; the flat **buffering plateaus** (±1 pH unit around each pKₐ) are where the amino acid best resists pH change, because protonated and deprotonated forms coexist near 1:1. A polyprotic amino acid like lysine shows three inflection points and three buffering plateaus.
 
@@ -58,7 +58,7 @@ $$ \text{pH} = pK_a + \log\frac{[\text{A}^-]}{[\text{HA}]} \quad \text{(Henderso
 
 ### Essential and conditionally essential amino acids
 
-Nine amino acids cannot be synthesised by humans and must come from diet: **His, Ile, Leu, Lys, Met, Phe, Thr, Trp, Val** (mnemonic: *PVT TIM HaLL*). A further group is **conditionally essential** — required only under specific physiological load:
+Nine amino acids cannot be synthesised by humans and must come from diet: **His, Ile, Leu, Lys, Met, Phe, Thr, Trp, Val** (mnemonic: *PVT TIM HaLL*). A further group is **conditionally essential**, required only under specific physiological load:
 
 | Amino acid | Becomes essential when… |
 |---|---|
@@ -71,7 +71,7 @@ Nine amino acids cannot be synthesised by humans and must come from diet: **His,
 
 ### Amino acid catabolism: transamination and deamination
 
-Amino acids aren't stored — excess is broken down via two linked reactions.
+Amino acids aren't stored. Excess is broken down via two linked reactions.
 
 **Transamination** (PLP-dependent aminotransferases, e.g. AST, ALT — elevated serum AST/ALT is a clinical marker of hepatocyte damage) transfers the α-amino group onto α-ketoglutarate:
 
@@ -87,7 +87,7 @@ The remaining carbon skeleton is **glucogenic** (feeds gluconeogenesis) or **ket
 |---|---|---|
 | Ala, Asp, Glu, Gly, Ser, Val, His, Arg, Pro, Thr, Met, Cys | **Leu, Lys** | Ile, Phe, Tyr, Trp |
 
-Leu and Lys are the *only* exclusively ketogenic amino acids — a frequent exam discriminator.
+Leu and Lys are the *only* exclusively ketogenic amino acids, a frequent exam discriminator.
 
 ### Post-translational chemistry: phosphorylation and glycosylation
 
@@ -96,7 +96,7 @@ Two reversible modifications regulate protein function, stability, and localisat
 - **Phosphorylation** targets Ser, Thr, Tyr (and His in bacteria) — their nucleophilic –OH (or, for His, imidazole N) groups let kinases attach a phosphate, acting as a reversible on/off switch.
 - **Glycosylation** attaches sugars at two consensus contexts: **N-glycosylation** at Asn in the sequence Asn–X–Ser/Thr (X ≠ Pro), recognised co-translationally by oligosaccharyltransferase; **O-glycosylation** at Ser/Thr in proline-rich regions, added one sugar at a time in the Golgi. Glycans stabilise folding, form protective mucin barriers, and constitute the cell-surface glycocalyx used for self/non-self recognition (including blood-group antigens).
 
-Neither modification has one universal purpose — the functional outcome depends on the specific site, the sugar/phosphate added, and the resulting conformational change.
+Neither modification has one universal purpose: the functional outcome depends on the specific site, the sugar/phosphate added, and the resulting conformational change.
 
 ### The Ramachandran plot
 
@@ -110,7 +110,7 @@ Not every combination of the backbone dihedral angles φ (phi) and ψ (psi) arou
 ![Ramachandran plot (φ vs. ψ) for solved structure PDB 1AXC, with favoured (red), allowed (orange), and generously allowed (yellow) regions shaded and the α-helix and β-sheet regions labelled; blue diamonds mark the structure's actual residue angles clustering in the favoured regions](/MCBBPICS/ramchandran.png)
 *Source: unattributed pre-existing site asset*
 
-**Glycine** (no side chain, minimal steric restriction) is the only residue that populates all four quadrants, which is why it appears at tight turns and buried positions. **Proline** (side chain cyclised back onto the backbone nitrogen, fixing φ ≈ −60°, and lacking an amide hydrogen to donate) is confined to a narrow region and cannot participate in α-helix hydrogen bonding — this is the chemical basis for both residues acting as "helix breakers" (see [Protein Structure, Folding & Function](../protein-structure-folding-function/)).
+**Glycine** (no side chain, minimal steric restriction) is the only residue that populates all four quadrants, which is why it appears at tight turns and buried positions. **Proline** (side chain cyclised back onto the backbone nitrogen, fixing φ ≈ −60°, and lacking an amide hydrogen to donate) is confined to a narrow region and cannot participate in α-helix hydrogen bonding. This is the chemical basis for both residues acting as "helix breakers" (see [Protein Structure, Folding & Function](../protein-structure-folding-function/)).
 
 ## Comparative Structures
 
@@ -120,14 +120,14 @@ Ionizable-group comparison across the three charged/polar-basic amino acid class
 |---|---|---|---|
 | Side-chain pKₐ | ~3.9–4.1 | ~10.5–12.5 | ~6.0 |
 | Charge at pH 7 | Negative | Positive | Mostly neutral (~10% protonated) |
-| Buffering range | Poor at pH 7 (far from pKₐ) | Poor at pH 7 (far from pKₐ) | **Best of the 20** — pKₐ near physiological pH, the basis for histidine's role in enzyme active sites and hemoglobin's Bohr effect |
+| Buffering range | Poor at pH 7 (far from pKₐ) | Poor at pH 7 (far from pKₐ) | **Best of the 20**: pKₐ near physiological pH, the basis for histidine's role in enzyme active sites and hemoglobin's Bohr effect |
 
 ## Common Exam Questions
 
-- "Calculate the pI of [amino acid/peptide] given these pKₐ values" — always average the *two pKₐ flanking the zwitterion*, not the first two numerically.
+- "Calculate the pI of [amino acid/peptide] given these pKₐ values": always average the *two pKₐ flanking the zwitterion*, not the first two numerically.
 - "Which amino acids are exclusively ketogenic?" — Leu and Lys, no exceptions.
-- "Why is glycine/proline structurally special?" — steric argument (no side chain / cyclic side chain), not a vague "flexibility" answer.
-- Identifying whether a modification is functionally significant requires knowing site + attached group + resulting conformational change — a question that names only "glycosylation occurred" without further detail cannot alone imply a specific function.
+- "Why is glycine/proline structurally special?": steric argument (no side chain / cyclic side chain), not a vague "flexibility" answer.
+- Identifying whether a modification is functionally significant requires knowing site + attached group + resulting conformational change: a question that names only "glycosylation occurred" without further detail cannot alone imply a specific function.
 
 ## Visual Reference
 
@@ -156,7 +156,7 @@ At low pH all groups are protonated (net charge +2: Arg⁺, N-terminus⁺, plus 
 <details>
 <summary>Show answer</summary>
 
-PLP's aldehyde group forms a Schiff base (aldimine) with a lysine ε-amino group in the enzyme's active site; on substrate binding, the substrate's amino group displaces the lysine, forming a new Schiff base. PLP's pyridinium ring then acts as an electron sink, stabilising the carbanion intermediate formed as the amino group is transferred — this stabilisation is what makes transamination kinetically feasible.
+PLP's aldehyde group forms a Schiff base (aldimine) with a lysine ε-amino group in the enzyme's active site; on substrate binding, the substrate's amino group displaces the lysine, forming a new Schiff base. PLP's pyridinium ring then acts as an electron sink, stabilising the carbanion intermediate formed as the amino group is transferred. This stabilisation is what makes transamination kinetically feasible.
 </details>
 
 **3.** Rank Phe, Trp, Tyr, His by relative contribution to a protein's UV absorbance at 280 nm, and explain why His is excluded from the usual A₂₈₀ approximation despite being aromatic.

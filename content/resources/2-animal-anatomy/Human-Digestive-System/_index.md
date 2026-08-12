@@ -21,7 +21,7 @@ Every region of the tract shares four concentric layers, innermost to outermost,
 
 ### Oral Cavity
 
-**Teeth** are anchored in sockets (alveoli) of the maxilla/mandible by the **periodontal ligament**. Each tooth has a **crown** (exposed, capped by **enamel** — the hardest substance in the body, acellular and avascular, unable to regenerate if damaged) and a **root** (embedded in bone, covered by **cementum** rather than enamel); beneath enamel/cementum, **dentin** (a living, mineralized tissue, softer than enamel) forms the bulk of the tooth, surrounding a central **pulp cavity** (blood vessels, nerves, connective tissue). Adult humans have 32 teeth, heterodont (see [Mammalian Comparative Anatomy](../mammalian-comparative-anatomy/) for the broader mammalian pattern): incisors (cutting), canines (tearing), premolars and molars (grinding).
+**Teeth** are anchored in sockets (alveoli) of the maxilla/mandible by the **periodontal ligament**. Each tooth has a **crown** (exposed, capped by **enamel**, the hardest substance in the body, acellular and avascular, unable to regenerate if damaged) and a **root** (embedded in bone, covered by **cementum** rather than enamel); beneath enamel/cementum, **dentin** (a living, mineralized tissue, softer than enamel) forms the bulk of the tooth, surrounding a central **pulp cavity** (blood vessels, nerves, connective tissue). Adult humans have 32 teeth, heterodont (see [Mammalian Comparative Anatomy](../mammalian-comparative-anatomy/) for the broader mammalian pattern): incisors (cutting), canines (tearing), premolars and molars (grinding).
 
 ![Tooth cross-section labeling crown/neck/root, enamel, dentin, cementum, pulp chamber (blood vessels and nerves), gingiva, and jaw bone.](/ANATOMYPICS/tooth-cross-section-enamel-dentin-pulp.png)
 *Source: storymd.com*
@@ -34,7 +34,7 @@ The esophagus is a muscular tube with no digestive/absorptive function, purely c
 
 ### Stomach
 
-Grossly divided into the **cardia** (adjacent to the LES), **fundus** (superior dome), **body** (largest region), and **pylorus** (leading to the **pyloric sphincter**, regulating emptying into the duodenum); the internal mucosa is thrown into folds, **rugae**, which flatten as the stomach distends, allowing substantial volume expansion. The mucosa is densely populated with **gastric pits**, each leading to **gastric glands** containing several specialized secretory cell types — a high-yield histology table:
+Grossly divided into the **cardia** (adjacent to the LES), **fundus** (superior dome), **body** (largest region), and **pylorus** (leading to the **pyloric sphincter**, regulating emptying into the duodenum); the internal mucosa is thrown into folds, **rugae**, which flatten as the stomach distends, allowing substantial volume expansion. The mucosa is densely populated with **gastric pits**, each leading to **gastric glands** containing several specialized secretory cell types, a high-yield histology table:
 
 | Cell type | Location | Secretion | Function |
 |---|---|---|---|
@@ -62,7 +62,7 @@ Grossly divided into the **cardia** (adjacent to the LES), **fundus** (superior 
   var cellTypes = ['Mucous neck cell', 'Parietal cell', 'Chief cell', 'G cell'];
   var questions = [
     { prompt: 'Secretes HCl and intrinsic factor, acidifying the lumen and enabling later vitamin B12 absorption.', answer: 'Parietal cell' },
-    { prompt: 'Secretes pepsinogen — an inactive zymogen, only converted to active pepsin by the acidic gastric environment.', answer: 'Chief cell' },
+    { prompt: 'Secretes pepsinogen, an inactive zymogen, only converted to active pepsin by the acidic gastric environment.', answer: 'Chief cell' },
     { prompt: 'Secretes gastrin directly into the blood (not the gastric lumen), stimulating acid secretion elsewhere in the gland.', answer: 'G cell' },
     { prompt: 'Secretes alkaline mucus at the upper gland/pit, protecting the epithelium from the acidic contents below.', answer: 'Mucous neck cell' }
   ];
@@ -111,7 +111,7 @@ Grossly divided into the **cardia** (adjacent to the LES), **fundus** (superior 
       b2.disabled = true;
     });
     feedbackEl.innerHTML = correct
-      ? '<span style="color:#2d6a4f; font-weight:600;">Correct — ' + q.answer + '.</span>'
+      ? '<span style="color:#2d6a4f; font-weight:600;">Correct: ' + q.answer + '.</span>'
       : '<span style="color:#c0392b; font-weight:600;">Not quite — the correct cell type is ' + q.answer + '.</span>';
   }
 
@@ -127,11 +127,11 @@ Grossly divided into the **cardia** (adjacent to the LES), **fundus** (superior 
 })();
 </script>
 
-The stomach epithelium itself is protected from its own acidic, protein-digesting contents by a thick alkaline mucus layer and rapid epithelial cell turnover — a structural, not just chemical, defense.
+The stomach epithelium itself is protected from its own acidic, protein-digesting contents by a thick alkaline mucus layer and rapid epithelial cell turnover, a structural, not just chemical, defense.
 
 ### Small Intestine
 
-Three regions with distinguishing structural features, worth naming individually rather than treating "small intestine" as uniform: **duodenum** (shortest, receives bile and pancreatic secretions via the **hepatopancreatic ampulla**, contains **Brunner's glands** in the submucosa — unique to this region — secreting alkaline mucus to neutralize acidic chyme arriving from the stomach), **jejunum** (middle, the site of most nutrient absorption, has the most prominent villi and plicae circulares), **ileum** (longest, contains **Peyer's patches** — aggregated lymphoid nodules, an immune surveillance structure specific to this region, since the ileum is the last checkpoint before the microbially dense large intestine — and is the specific site of vitamin B12 and bile salt reabsorption).
+Three regions with distinguishing structural features, worth naming individually rather than treating "small intestine" as uniform: **duodenum** (shortest, receives bile and pancreatic secretions via the **hepatopancreatic ampulla**, contains **Brunner's glands** in the submucosa, unique to this region, secreting alkaline mucus to neutralize acidic chyme arriving from the stomach), **jejunum** (middle, the site of most nutrient absorption, has the most prominent villi and plicae circulares), **ileum** (longest, contains **Peyer's patches**, aggregated lymphoid nodules, an immune surveillance structure specific to this region, since the ileum is the last checkpoint before the microbially dense large intestine, and is the specific site of vitamin B12 and bile salt reabsorption).
 
 Absorptive surface amplification, structurally layered: **plicae circulares** (circular mucosal/submucosal folds, visible grossly) → **villi** (finger-like mucosal projections, each containing a capillary network for nutrient absorption and a central lymphatic **lacteal** for fat absorption) → **microvilli** (brush border on individual absorptive epithelial cells). Between villi, the mucosa dips into **crypts of Lieberkühn**, containing proliferative stem cells (replenishing the rapidly turned-over epithelium) and secretory cells.
 
@@ -143,21 +143,21 @@ Absorptive surface amplification, structurally layered: **plicae circulares** (c
 
 ### Large Intestine
 
-Begins at the **cecum** (a blind pouch, bearing the **vermiform appendix** — lymphoid tissue of debated but likely immune/microbiome-reservoir function), continuing through the **ascending, transverse, descending, and sigmoid colon** to the **rectum** and **anal canal** (bearing an internal involuntary smooth-muscle sphincter and an external voluntary skeletal-muscle sphincter — a structural pairing directly analogous to the LES/pyloric-sphincter pattern of involuntary control, but here paired with a voluntary override). Structurally distinct from the small intestine: no villi (absorptive surface reduced, since the primary remaining job is water/electrolyte reabsorption and waste consolidation, not nutrient absorption), and the longitudinal muscle layer is gathered into three thickened bands, the **teniae coli**, whose tonic contraction gathers the wall into pouches, **haustra** — a distinctive gross-anatomical signature of the colon on imaging or a specimen. The colon houses a dense resident microbial population (the gut microbiome), structurally supported by this large, slow-transit surface, contributing to fermentation of otherwise-undigested material and synthesis of some vitamins.
+Begins at the **cecum** (a blind pouch, bearing the **vermiform appendix**, lymphoid tissue of debated but likely immune/microbiome-reservoir function), continuing through the **ascending, transverse, descending, and sigmoid colon** to the **rectum** and **anal canal** (bearing an internal involuntary smooth-muscle sphincter and an external voluntary skeletal-muscle sphincter, a structural pairing directly analogous to the LES/pyloric-sphincter pattern of involuntary control, but here paired with a voluntary override). Structurally distinct from the small intestine: no villi (absorptive surface reduced, since the primary remaining job is water/electrolyte reabsorption and waste consolidation, not nutrient absorption), and the longitudinal muscle layer is gathered into three thickened bands, the **teniae coli**, whose tonic contraction gathers the wall into pouches, **haustra** — a distinctive gross-anatomical signature of the colon on imaging or a specimen. The colon houses a dense resident microbial population (the gut microbiome), structurally supported by this large, slow-transit surface, contributing to fermentation of otherwise-undigested material and synthesis of some vitamins.
 
 ![Full colon gross anatomy: right colic (hepatic) and left colic (splenic) flexures, transverse/ascending/descending colon, taenia coli, epiploic appendages, haustra, ileocecal sphincter (valve), cecum, vermiform appendix, sigmoid colon, rectum, anal canal, and anus.](/ANATOMYPICS/colon-teniae-coli-haustra.jpg)
 *Source: [Outlander Anatomy — "Anatomy Lesson 48: The Big Guy (G.I. Tract 5)"](https://www.outlanderanatomy.com/anatomy-lesson-48-the-big-guy-g-t-tract-5/)*
 
 ### Liver
 
-The functional and structural unit is the **hepatic lobule**: a roughly hexagonal arrangement of **hepatocyte** plates radiating from a central vein, with a **portal triad** (hepatic artery branch, hepatic portal vein branch, bile duct branch) at each of the hexagon's corners. Blood from both the hepatic artery (oxygenated, ~25% of liver blood flow) and the hepatic portal vein (nutrient-rich, deoxygenated, draining the GI tract — ~75% of flow, meaning nearly everything absorbed by the small intestine passes through the liver before reaching general circulation) mixes and flows through **sinusoids** (large, fenestrated capillary-like channels, see [Human Circulatory System](../human-circulatory-system/)) past hepatocyte plates toward the central vein — the reverse direction to bile flow, which moves from hepatocytes into small **bile canaliculi** between cells, then outward to the bile duct at the portal triad. **Kupffer cells** (specialized resident macrophages) line the sinusoids, filtering the blood of pathogens/debris — a direct immune function tied to the liver's position downstream of the entire GI tract's absorbed contents.
+The functional and structural unit is the **hepatic lobule**: a roughly hexagonal arrangement of **hepatocyte** plates radiating from a central vein, with a **portal triad** (hepatic artery branch, hepatic portal vein branch, bile duct branch) at each of the hexagon's corners. Blood from both the hepatic artery (oxygenated, ~25% of liver blood flow) and the hepatic portal vein (nutrient-rich, deoxygenated, draining the GI tract, ~75% of flow, meaning nearly everything absorbed by the small intestine passes through the liver before reaching general circulation) mixes and flows through **sinusoids** (large, fenestrated capillary-like channels, see [Human Circulatory System](../human-circulatory-system/)) past hepatocyte plates toward the central vein. This is the reverse direction to bile flow, which moves from hepatocytes into small **bile canaliculi** between cells, then outward to the bile duct at the portal triad. **Kupffer cells** (specialized resident macrophages) line the sinusoids, filtering the blood of pathogens/debris — a direct immune function tied to the liver's position downstream of the entire GI tract's absorbed contents.
 
 ![Hepatic lobule structure zoomed from the whole liver down to a single lobule: central vein, radiating plates of hepatocytes, sinusoids, and the portal triad (portal venule, portal arteriole, bile duct) at the lobule's edges, with blood flow arrows from the portal triad toward the central vein.](/ANATOMYPICS/hepatic-lobule-portal-triad-blood-bile-flow.webp)
 *Source: user-sourced (originally via storymd.com). Blood flow direction (portal triad → central vein) is clearly shown via the interlobular vein arrow; bile canaliculus flow direction (the opposite way, toward the bile duct) isn't separately arrowed in this crop.*
 
 ### Gallbladder and Pancreas
 
-The **gallbladder**, a small muscular sac beneath the liver, stores and concentrates bile (produced continuously by the liver) between meals, releasing it via the **cystic duct** (joining the **common hepatic duct** to form the **common bile duct**) into the duodenum when stimulated. The **pancreas** has a dual structural identity: the vast majority of its tissue is **exocrine**, organized into grape-like clusters (**acini**) of enzyme-secreting cells draining via a duct system into the **pancreatic duct**, which joins the common bile duct at the hepatopancreatic ampulla; scattered through this exocrine tissue are small, discrete **islets of Langerhans** — endocrine tissue (structurally distinct clusters, not connected to the duct system, secreting hormones — insulin, glucagon — directly into the bloodstream) that make up under 2% of pancreatic mass but perform a completely separate function from the surrounding exocrine acini.
+The **gallbladder**, a small muscular sac beneath the liver, stores and concentrates bile (produced continuously by the liver) between meals, releasing it via the **cystic duct** (joining the **common hepatic duct** to form the **common bile duct**) into the duodenum when stimulated. The **pancreas** has a dual structural identity: the vast majority of its tissue is **exocrine**, organized into grape-like clusters (**acini**) of enzyme-secreting cells draining via a duct system into the **pancreatic duct**, which joins the common bile duct at the hepatopancreatic ampulla; scattered through this exocrine tissue are small, discrete **islets of Langerhans**, endocrine tissue (structurally distinct clusters, not connected to the duct system, secreting hormones (insulin, glucagon) directly into the bloodstream) that make up under 2% of pancreatic mass but perform a completely separate function from the surrounding exocrine acini.
 
 ![Pancreatic tissue showing exocrine acini surrounding an islet of Langerhans, with alpha cells (glucagon), beta cells (insulin/amylin), and D cells (somatostatin) identified, alongside a real histology micrograph of an islet outlined among the surrounding exocrine tissue.](/ANATOMYPICS/pancreas-acini-islets-of-langerhans.png)
 *Source: Dee Unglaub Silverthorn,* Human Physiology: An Integrated Approach*.*
@@ -184,7 +184,7 @@ The abdominal cavity is lined by the **parietal peritoneum** (body wall) and cov
 (function(){
   var stops = [
     { name: 'Mouth', time: '~30 sec (chewing/swallowing)', histology: 'Stratified squamous epithelium; skeletal muscle tongue.', secretions: 'Saliva (salivary amylase) begins starch digestion; lubricates food.' },
-    { name: 'Esophagus', time: '~8-10 sec (peristaltic transit)', histology: 'Stratified squamous epithelium; muscularis transitions skeletal → smooth muscle.', secretions: 'Mucus only — purely conductive, no digestion or absorption.' },
+    { name: 'Esophagus', time: '~8-10 sec (peristaltic transit)', histology: 'Stratified squamous epithelium; muscularis transitions skeletal → smooth muscle.', secretions: 'Mucus only; purely conductive, no digestion or absorption.' },
     { name: 'Stomach', time: '~2-4 hours', histology: 'Gastric pits/glands: mucous neck, parietal, chief, and G cells.', secretions: 'HCl, pepsinogen, intrinsic factor, gastrin.' },
     { name: 'Duodenum', time: 'rapid (minutes)', histology: "Brunner's glands (unique to this region) in the submucosa.", secretions: 'Alkaline mucus neutralizes chyme; receives bile + pancreatic enzymes via the hepatopancreatic ampulla.' },
     { name: 'Jejunum', time: 'part of ~3-5 hr small-intestine transit', histology: 'Most prominent villi and plicae circulares.', secretions: 'Site of most nutrient absorption.' },
@@ -243,7 +243,7 @@ The abdominal cavity is lined by the **parietal peritoneum** (body wall) and cov
 
 ## Comparative Structures
 
-The four-layer GI tract wall plan, and the accessory-gland (liver/pancreas) arrangement, are broadly conserved across vertebrates, with gut length and regional specialization tracking diet — see the [Vertebrate Anatomy tier](../fish-amphibian-anatomy/) pages and, for the ruminant four-chambered stomach as a specific herbivore adaptation, [Mammalian Comparative Anatomy](../mammalian-comparative-anatomy/). Invertebrate guts show a simpler version of the same regional-specialization principle (e.g. the earthworm crop/gizzard) without the liver/pancreas-level accessory gland complexity — see [Invertebrate Body Plans I](../invertebrate-body-plans-1/).
+The four-layer GI tract wall plan, and the accessory-gland (liver/pancreas) arrangement, are broadly conserved across vertebrates, with gut length and regional specialization tracking diet, see the [Vertebrate Anatomy tier](../fish-amphibian-anatomy/) pages and, for the ruminant four-chambered stomach as a specific herbivore adaptation, [Mammalian Comparative Anatomy](../mammalian-comparative-anatomy/). Invertebrate guts show a simpler version of the same regional-specialization principle (e.g. the earthworm crop/gizzard) without the liver/pancreas-level accessory gland complexity — see [Invertebrate Body Plans I](../invertebrate-body-plans-1/).
 
 ## Common Exam Questions
 

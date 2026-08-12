@@ -12,28 +12,28 @@ syllabus_tags: ["IBO", "USABO", "biochemistry", "laboratory-technique"]
 
 ## Overview
 
-Olympiad practical exams routinely test technique *choice* — given a purification or analysis goal, pick and justify the right method — more than technique trivia. This page covers the core protein-analysis toolkit: electrophoresis (how it separates, and what "native" vs. "denaturing" actually changes), the three major chromatography modes and what property each separates on, spectrophotometric quantification, and how detergent choice determines whether a membrane protein extraction preserves native function. For nucleic-acid-specific techniques (blotting, PCR, sequencing), see [Recombinant DNA & Biotechnology Techniques](../recombinant-dna-biotechnology-techniques/) — this page is protein-focused.
+Olympiad practical exams routinely test technique *choice* — given a purification or analysis goal, pick and justify the right method — more than technique trivia. This page covers the core protein-analysis toolkit: electrophoresis (how it separates, and what "native" vs. "denaturing" actually changes), the three major chromatography modes and what property each separates on, spectrophotometric quantification, and how detergent choice determines whether a membrane protein extraction preserves native function. For nucleic-acid-specific techniques (blotting, PCR, sequencing), see [Recombinant DNA & Biotechnology Techniques](../recombinant-dna-biotechnology-techniques/). This page is protein-focused.
 
 ## Key Concepts
 
 ### SDS-PAGE: denaturing electrophoresis by size alone
 
-**SDS-PAGE** (sodium dodecyl sulfate–polyacrylamide gel electrophoresis) separates proteins almost purely by **molecular size**, not native charge or shape. SDS is an anionic detergent that (1) denatures proteins, unfolding tertiary/quaternary structure, and (2) coats the unfolded polypeptide with a uniform negative charge roughly proportional to its length — this second effect is what makes size, not intrinsic charge, the dominant determinant of migration rate. Samples are typically also treated with a reducing agent (e.g. β-mercaptoethanol or DTT) to break disulfide bonds, fully separating multi-chain or disulfide-linked proteins into their individual polypeptides. Smaller polypeptides migrate faster through the polyacrylamide mesh toward the anode; comparing migration distance to a ladder of known-size marker proteins gives an estimated molecular weight.
+**SDS-PAGE** (sodium dodecyl sulfate–polyacrylamide gel electrophoresis) separates proteins almost purely by **molecular size**, not native charge or shape. SDS is an anionic detergent that (1) denatures proteins, unfolding tertiary/quaternary structure, and (2) coats the unfolded polypeptide with a uniform negative charge roughly proportional to its length. This second effect is what makes size, not intrinsic charge, the dominant determinant of migration rate. Samples are typically also treated with a reducing agent (e.g. β-mercaptoethanol or DTT) to break disulfide bonds, fully separating multi-chain or disulfide-linked proteins into their individual polypeptides. Smaller polypeptides migrate faster through the polyacrylamide mesh toward the anode; comparing migration distance to a ladder of known-size marker proteins gives an estimated molecular weight.
 
 ![SDS-PAGE infographic: SDS denatures and uniformly negatively charges proteins, samples are loaded into wells above a stacking gel and resolving gel, current drives migration toward the anode with smaller proteins moving farther, and band position is compared against a protein ladder to estimate molecular weight](/MCBBPICS/sds-page-gel-diagram.jpg)
 *Source: AI-generated (Grok)*
 
 ### Native PAGE: preserving structure and function
 
-**Native PAGE** omits SDS and reducing agent, so proteins retain their folded, native conformation, native charge, and any quaternary assemblies (e.g. a tetramer runs as one band, not four). Separation now depends on a combination of size, shape, *and* intrinsic charge — messier to interpret for pure size determination, but essential when the goal is preserving activity (e.g. a subsequent in-gel enzyme activity assay, which requires the enzyme to still be folded and catalytically competent).
+**Native PAGE** omits SDS and reducing agent, so proteins retain their folded, native conformation, native charge, and any quaternary assemblies (e.g. a tetramer runs as one band, not four). Separation now depends on a combination of size, shape, *and* intrinsic charge, messier to interpret for pure size determination, but essential when the goal is preserving activity (e.g. a subsequent in-gel enzyme activity assay, which requires the enzyme to still be folded and catalytically competent).
 
 ### Agarose gel electrophoresis: the nucleic acid analogue
 
-For nucleic acids, **agarose gel electrophoresis** plays a directly analogous role to SDS-PAGE: DNA/RNA's sugar-phosphate backbone already carries a uniform negative charge (see [Nucleotide & Nucleic Acid Chemistry](../nucleotide-nucleic-acid-chemistry/)), so no denaturing detergent is needed for size-based separation — fragments separate by size through the agarose mesh directly, visualised with an intercalating dye (e.g. ethidium bromide) under UV light.
+For nucleic acids, **agarose gel electrophoresis** plays a directly analogous role to SDS-PAGE: DNA/RNA's sugar-phosphate backbone already carries a uniform negative charge (see [Nucleotide & Nucleic Acid Chemistry](../nucleotide-nucleic-acid-chemistry/)), so no denaturing detergent is needed for size-based separation: fragments separate by size through the agarose mesh directly, visualised with an intercalating dye (e.g. ethidium bromide) under UV light.
 
 ### Chromatography: three modes, three different separating properties
 
-Unlike electrophoresis (always separating by migration through a matrix under an electric field), chromatography techniques separate based on differential interaction between a mobile phase (the sample in solution) and a stationary phase (the column matrix) — and different chromatography types exploit entirely different molecular properties:
+Unlike electrophoresis (always separating by migration through a matrix under an electric field), chromatography techniques separate based on differential interaction between a mobile phase (the sample in solution) and a stationary phase (the column matrix), and different chromatography types exploit entirely different molecular properties:
 
 - **Size-exclusion (gel filtration) chromatography**: the stationary phase is a porous bead matrix. Smaller molecules enter the pores and take a longer, indirect path through the column; larger molecules are excluded from the pores and pass through faster. Counterintuitively, **larger molecules elute first**.
 
@@ -53,7 +53,7 @@ Protein or nucleic acid concentration is routinely estimated from **UV absorbanc
 
 ### Choosing an extraction method for membrane proteins
 
-Extracting an **integral membrane protein** while preserving native structure (for a subsequent functional assay) requires disrupting the lipid bilayer around it without denaturing the protein itself. **Non-ionic detergents** (e.g. Triton X-100) insert into the membrane and solubilise the surrounding lipid without denaturing the protein — the correct first choice for a native functional extraction. By contrast, **SDS** is a strong ionic denaturant (the same reagent used deliberately to unfold proteins in SDS-PAGE above) and **urea** is a chaotropic denaturant — both destroy native structure, making them unsuitable when function must be preserved, even though both would technically extract the protein from the membrane. High salt concentration disrupts only ionic (electrostatic) interactions and does not solubilise a lipid-embedded integral membrane protein at all — it is the correct choice for eluting *peripheral* membrane proteins that are ionically associated with the membrane surface, not integral ones.
+Extracting an **integral membrane protein** while preserving native structure (for a subsequent functional assay) requires disrupting the lipid bilayer around it without denaturing the protein itself. **Non-ionic detergents** (e.g. Triton X-100) insert into the membrane and solubilise the surrounding lipid without denaturing the protein — the correct first choice for a native functional extraction. By contrast, **SDS** is a strong ionic denaturant (the same reagent used deliberately to unfold proteins in SDS-PAGE above) and **urea** is a chaotropic denaturant: both destroy native structure, making them unsuitable when function must be preserved, even though both would technically extract the protein from the membrane. High salt concentration disrupts only ionic (electrostatic) interactions and does not solubilise a lipid-embedded integral membrane protein at all. It is the correct choice for eluting *peripheral* membrane proteins that are ionically associated with the membrane surface, not integral ones.
 
 ## Comparative Structures
 
@@ -62,15 +62,15 @@ Extracting an **integral membrane protein** while preserving native structure (f
 | SDS-PAGE | Size only | Denaturing | Estimating polypeptide molecular weight, checking sample purity/composition |
 | Native PAGE | Size + shape + native charge | Native | Preserving quaternary structure/activity for downstream assay |
 | Agarose gel electrophoresis | Size (nucleic acids) | N/A (already uniformly charged) | Sizing/visualising DNA or RNA fragments |
-| Size-exclusion chromatography | Molecular size (inverse — large elutes first) | Native (typically) | Buffer exchange, estimating native molecular weight, removing aggregates |
+| Size-exclusion chromatography | Molecular size (inverse: large elutes first) | Native (typically) | Buffer exchange, estimating native molecular weight, removing aggregates |
 | Ion-exchange chromatography | Net surface charge | Native (typically) | Purifying by charge difference from contaminants |
 | Affinity chromatography | Specific binding interaction | Native (typically) | High-specificity single-step purification (e.g. tagged recombinant protein) |
 
 ## Common Exam Questions
 
-- "A protein runs at a different apparent size on native PAGE vs. SDS-PAGE — explain why." — tests whether you understand that SDS-PAGE reports subunit size while native PAGE can report the full oligomeric assembly (or a shape/charge-distorted apparent size), not that one method is simply "wrong."
-- "Which chromatography mode would best purify a His-tagged recombinant protein from a crude bacterial lysate in one step?" — affinity chromatography (Ni²⁺ resin), because it directly exploits the engineered tag rather than a native, potentially non-unique physical property.
-- Extraction/solubilisation questions (as in Practice Problem 1 below) consistently test the *native vs. denaturing* distinction across techniques — recognise that SDS, urea, and high heat are denaturants regardless of which specific technique they appear in.
+- "A protein runs at a different apparent size on native PAGE vs. SDS-PAGE — explain why.": tests whether you understand that SDS-PAGE reports subunit size while native PAGE can report the full oligomeric assembly (or a shape/charge-distorted apparent size), not that one method is simply "wrong."
+- "Which chromatography mode would best purify a His-tagged recombinant protein from a crude bacterial lysate in one step?": affinity chromatography (Ni²⁺ resin), because it directly exploits the engineered tag rather than a native, potentially non-unique physical property.
+- Extraction/solubilisation questions (as in Practice Problem 1 below) consistently test the *native vs. denaturing* distinction across techniques: recognise that SDS, urea, and high heat are denaturants regardless of which specific technique they appear in.
 
 ## Visual Reference
 
@@ -91,7 +91,7 @@ Extracting an **integral membrane protein** while preserving native structure (f
 <details>
 <summary>Show answer</summary>
 
-**1% Triton X-100.** Non-ionic detergents disrupt the lipid bilayer by inserting into it, releasing integral membrane proteins without denaturing them. SDS and urea are both strong denaturants (ionic and chaotropic, respectively) that would destroy native structure. High salt disrupts only ionic interactions and would not solubilise an integral (lipid-embedded) membrane protein at all — it releases peripheral membrane proteins instead.
+**1% Triton X-100.** Non-ionic detergents disrupt the lipid bilayer by inserting into it, releasing integral membrane proteins without denaturing them. SDS and urea are both strong denaturants (ionic and chaotropic, respectively) that would destroy native structure. High salt disrupts only ionic interactions and would not solubilise an integral (lipid-embedded) membrane protein at all; it releases peripheral membrane proteins instead.
 </details>
 
 **2.** A protein sample gives an A₂₆₀/A₂₈₀ ratio of 1.3, well below the ~1.8 expected for pure DNA. Propose the most likely explanation, and describe one purification step that would improve this ratio.

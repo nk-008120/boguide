@@ -11,29 +11,29 @@ syllabus_tags: ["IBO", "USABO", "foundations"]
 
 ## Overview
 
-Where the earlier pages in this section covered transport and biochemistry, this page and the three that follow it cover **growth regulation**: how a plant coordinates development, movement, and timing using a small number of mobile chemical signals. Plant hormones differ from animal hormones covered on [Endocrine System Physiology](../../3-animal-physiology/endocrine-system-physiology/) in a key structural way — most are not produced by dedicated glands but by ordinary tissue at the site where they're needed, and most act locally as much as systemically. This page introduces all six major hormone classes together, since their effects are heavily interdependent (ratios between hormones, not any single hormone's absolute level, often determine the outcome); [Tropisms & Nastic Movements](../tropisms-nastic-movements/), [Photoperiodism, Vernalization & Flowering](../photoperiodism-vernalization-flowering/), and [Seed Germination & Dormancy Physiology](../seed-germination-dormancy-physiology/) each build on the specific hormone mechanisms established here.
+Where the earlier pages in this section covered transport and biochemistry, this page and the three that follow it cover **growth regulation**: how a plant coordinates development, movement, and timing using a small number of mobile chemical signals. Plant hormones differ from animal hormones covered on [Endocrine System Physiology](../../3-animal-physiology/endocrine-system-physiology/) in a key structural way: most are not produced by dedicated glands but by ordinary tissue at the site where they're needed, and most act locally as much as systemically. This page introduces all six major hormone classes together, since their effects are heavily interdependent (ratios between hormones, not any single hormone's absolute level, often determine the outcome); [Tropisms & Nastic Movements](../tropisms-nastic-movements/), [Photoperiodism, Vernalization & Flowering](../photoperiodism-vernalization-flowering/), and [Seed Germination & Dormancy Physiology](../seed-germination-dormancy-physiology/) each build on the specific hormone mechanisms established here.
 
 ## Key Concepts
 
 ### Auxin (IAA)
 
-Synthesized primarily in shoot apical meristems and young leaves, then transported **polarly** (unidirectionally, cell to cell, via asymmetrically localized **PIN transporter proteins** that export auxin only from one end of each cell) predominantly from shoot tip toward the root — a directional, energy-dependent transport mechanism unlike the passive diffusion of most other hormones. Auxin promotes cell elongation (by loosening the cell wall, permitting turgor-driven expansion), maintains **apical dominance** (auxin from the shoot apex suppresses outgrowth of lateral/axillary buds below it — removing the apex releases this suppression, the physiological basis of pruning to promote bushier growth), and promotes lateral root initiation from the pericycle (see [Root Anatomy](../../6-plant-anatomy/root-anatomy/)).
+Synthesized primarily in shoot apical meristems and young leaves, then transported **polarly** (unidirectionally, cell to cell, via asymmetrically localized **PIN transporter proteins** that export auxin only from one end of each cell) predominantly from shoot tip toward the root, a directional, energy-dependent transport mechanism unlike the passive diffusion of most other hormones. Auxin promotes cell elongation (by loosening the cell wall, permitting turgor-driven expansion), maintains **apical dominance** (auxin from the shoot apex suppresses outgrowth of lateral/axillary buds below it; removing the apex releases this suppression, the physiological basis of pruning to promote bushier growth), and promotes lateral root initiation from the pericycle (see [Root Anatomy](../../6-plant-anatomy/root-anatomy/)).
 
 ![Apical dominance mechanism, historical and current models: (A) the 1930s model (auxin directly inhibiting bud auxin synthesis; auxin diverting root/cotyledon growth factors away from buds; auxin indirectly inhibiting buds via stem growth), compared to (B, C) the 2010s auxin-transport-canalization and second-messenger (strigolactone/cytokinin) models](/PLANTPHYSIOPICS/apical-dominance.png)
 *Source: Frontiers in Plant Science*
 
-The classic **Darwin/Went coleoptile experiments** (a grass seedling's coleoptile bends toward light only if its tip is intact and light-exposed; a severed tip's diffusible substance, collected in agar and reapplied off-center, causes bending even in the dark) first demonstrated that a mobile chemical signal, not a direct tissue response, causes phototropic bending — established before auxin was chemically identified, and the model this page's classic-experiment framing follows throughout.
+The classic **Darwin/Went coleoptile experiments** (a grass seedling's coleoptile bends toward light only if its tip is intact and light-exposed; a severed tip's diffusible substance, collected in agar and reapplied off-center, causes bending even in the dark) first demonstrated that a mobile chemical signal, not a direct tissue response, causes phototropic bending, established before auxin was chemically identified, and the model this page's classic-experiment framing follows throughout.
 
 ![The classic phototropism experimental series: an intact, light-exposed coleoptile bends toward light; removing the tip abolishes bending; covering the tip with an opaque cap abolishes bending; covering the tip with a transparent cap preserves bending; shielding only the base leaves bending intact — together localizing both light perception and the response-initiating signal to the tip](/PLANTPHYSIOPICS/coleoptile-bending-experiment.png)
 *Source: Pathwayz.org*
 
 ### Gibberellins (GA)
 
-A family of related compounds synthesized in young leaves, developing seeds, and shoot tips, best known for promoting **stem elongation** (the "genetically dwarf" phenotype in many classic study species, e.g. dwarf pea, is caused by a GA-biosynthesis or GA-signaling mutation, and is rescued by exogenous GA application — a direct causal demonstration, not merely a correlation), **seed germination** (developed further on [Seed Germination & Dormancy Physiology](../seed-germination-dormancy-physiology/), where GA induces the α-amylase enzyme mobilizing stored starch), and **bolting/flowering** in some species (rapid stem elongation preceding flowering).
+A family of related compounds synthesized in young leaves, developing seeds, and shoot tips, best known for promoting **stem elongation** (the "genetically dwarf" phenotype in many classic study species, e.g. dwarf pea, is caused by a GA-biosynthesis or GA-signaling mutation, and is rescued by exogenous GA application, a direct causal demonstration, not merely a correlation), **seed germination** (developed further on [Seed Germination & Dormancy Physiology](../seed-germination-dormancy-physiology/), where GA induces the α-amylase enzyme mobilizing stored starch), and **bolting/flowering** in some species (rapid stem elongation preceding flowering).
 
 ### Cytokinins
 
-Synthesized predominantly in root tips and transported upward (opposite auxin's predominant direction), cytokinins promote **cell division** (rather than elongation) and, critically, act antagonistically with auxin to control lateral bud outgrowth and root-vs-shoot balance in tissue culture — a high auxin:cytokinin ratio promotes root formation, a low ratio promotes shoot formation, and intermediate ratios promote undifferentiated callus growth, a specific ratio-dependent (not single-hormone-dependent) outcome that is a frequently tested example of hormone interaction rather than isolated hormone action. Cytokinins also delay leaf senescence, detectable experimentally as a "green island" of retained chlorophyll around a site of localized cytokinin application on an otherwise yellowing leaf.
+Synthesized predominantly in root tips and transported upward (opposite auxin's predominant direction), cytokinins promote **cell division** (rather than elongation) and, critically, act antagonistically with auxin to control lateral bud outgrowth and root-vs-shoot balance in tissue culture: a high auxin:cytokinin ratio promotes root formation, a low ratio promotes shoot formation, and intermediate ratios promote undifferentiated callus growth, a specific ratio-dependent (not single-hormone-dependent) outcome that is a frequently tested example of hormone interaction rather than isolated hormone action. Cytokinins also delay leaf senescence, detectable experimentally as a "green island" of retained chlorophyll around a site of localized cytokinin application on an otherwise yellowing leaf.
 
 ### Abscisic Acid (ABA)
 
@@ -41,7 +41,7 @@ Synthesized in response to water stress (roots and leaves) and during seed matur
 
 ### Ethylene
 
-Unlike the other five hormones, ethylene is a **gas** and diffuses freely through air spaces rather than requiring vascular or cell-to-cell transport, which is why it can coordinate ripening or senescence across an entire fruit or even between adjacent fruits (the basis of the practical observation that one ripening fruit accelerates ripening in nearby fruit, and of commercial ripening chambers). Ethylene promotes **fruit ripening** (activating enzymes that break down cell wall pectin, convert starches to sugars, and degrade chlorophyll), leaf and flower **abscission** (senescence-triggered detachment via enzymatic breakdown of a specialized **abscission zone** layer at the base of the petiole or pedicel), and the seedling **triple response** — a classic diagnostic assay in which a dark-grown seedling exposed to ethylene shows three simultaneous morphological changes (radial swelling/thickening of the stem, a reduction in stem elongation rate, and exaggerated curvature of the apical hook) that together represent a specific "obstacle encountered" developmental program, historically used to identify ethylene-signaling mutants (before molecular tools existed) by screening dark-grown seedlings for those failing to show all three components of the response even when ethylene is supplied.
+Unlike the other five hormones, ethylene is a **gas** and diffuses freely through air spaces rather than requiring vascular or cell-to-cell transport, which is why it can coordinate ripening or senescence across an entire fruit or even between adjacent fruits (the basis of the practical observation that one ripening fruit accelerates ripening in nearby fruit, and of commercial ripening chambers). Ethylene promotes **fruit ripening** (activating enzymes that break down cell wall pectin, convert starches to sugars, and degrade chlorophyll), leaf and flower **abscission** (senescence-triggered detachment via enzymatic breakdown of a specialized **abscission zone** layer at the base of the petiole or pedicel), and the seedling **triple response**, a classic diagnostic assay in which a dark-grown seedling exposed to ethylene shows three simultaneous morphological changes (radial swelling/thickening of the stem, a reduction in stem elongation rate, and exaggerated curvature of the apical hook) that together represent a specific "obstacle encountered" developmental program, historically used to identify ethylene-signaling mutants (before molecular tools existed) by screening dark-grown seedlings for those failing to show all three components of the response even when ethylene is supplied.
 
 ![The triple response in dark-grown seedlings: gram and pea seedlings treated with ethylene (left of each pair) show exaggerated curvature of the plumular hook, inhibition of hypocotyl/root elongation, and radial swelling of the root/hypocotyl, compared to untreated controls](/PLANTPHYSIOPICS/ethylene-triple-response.png)
 *Source: Springer (book chapter, doi 978-981-13-2023-1_19)*
@@ -98,7 +98,7 @@ Structurally steroid-like (unlike the other five hormones), synthesized broadly 
       <option value="baseshield">Base covered by opaque shield</option>
       <option value="agar">Severed tip on agar, reapplied off-center (dark)</option>
     </select>
-    <div id="coNote" style="margin-top:10px; font-size:0.85rem; color:#4b5563; min-height:2.4em;">The intact, light-exposed tip bends toward the light — auxin is redistributed to the shaded side and promotes elongation there.</div>
+    <div id="coNote" style="margin-top:10px; font-size:0.85rem; color:#4b5563; min-height:2.4em;">The intact, light-exposed tip bends toward the light: auxin is redistributed to the shaded side and promotes elongation there.</div>
   </div>
 </div>
 <script>
@@ -112,12 +112,12 @@ Structurally steroid-like (unlike the other five hormones), synthesized broadly 
   var lightIcon = document.getElementById('coLightIcon');
   var note = document.getElementById('coNote');
   var conditions = {
-    control: {bend:true, cap:false, base:false, agar:false, light:true, text:'The intact, light-exposed tip bends toward the light — auxin is redistributed to the shaded side and promotes elongation there.'},
-    removed: {bend:false, cap:false, base:false, agar:false, light:true, text:'With the tip removed, no bending occurs — the light-sensing, auxin-redistributing tissue is gone.'},
+    control: {bend:true, cap:false, base:false, agar:false, light:true, text:'The intact, light-exposed tip bends toward the light: auxin is redistributed to the shaded side and promotes elongation there.'},
+    removed: {bend:false, cap:false, base:false, agar:false, light:true, text:'With the tip removed, no bending occurs. The light-sensing, auxin-redistributing tissue is gone.'},
     opaque: {bend:false, cap:true, base:false, agar:false, light:true, text:'An opaque cap blocks light from reaching the tip, so no bending occurs — proving the tip itself must detect the light.'},
     transparent: {bend:true, cap:true, base:false, agar:false, light:true, text:'A transparent cap still lets light through to the tip, and bending occurs normally — the cap material, not covering the tip per se, is what matters.'},
     baseshield: {bend:true, cap:false, base:true, agar:false, light:true, text:'Shielding only the base (not the tip) from light does not prevent bending — the tip is the site of perception, not the base.'},
-    agar: {bend:true, cap:false, base:false, agar:true, light:false, text:'In the dark, a severed tip\'s diffusible substance — collected in agar and reapplied off-center to a decapitated coleoptile — causes bending even with no light and no tip present. This is the direct evidence for a mobile chemical signal.'}
+    agar: {bend:true, cap:false, base:false, agar:true, light:false, text:'In the dark, a severed tip\'s diffusible substance (collected in agar and reapplied off-center to a decapitated coleoptile) causes bending even with no light and no tip present. This is the direct evidence for a mobile chemical signal.'}
   };
   function render(){
     var c = conditions[select.value];
@@ -156,7 +156,7 @@ Structurally steroid-like (unlike the other five hormones), synthesized broadly 
   <div style="text-align:center; font-size:0.8rem; color:#4b5563;">
     <span>low (high cytokinin)</span> &nbsp;&mdash;&nbsp; <span>high (high auxin)</span>
   </div>
-  <div id="ratioNote" style="text-align:center; margin-top:10px; font-size:0.85rem; color:#4b5563;">Equal auxin and cytokinin — undifferentiated callus growth, no roots or shoots yet.</div>
+  <div id="ratioNote" style="text-align:center; margin-top:10px; font-size:0.85rem; color:#4b5563;">Equal auxin and cytokinin, undifferentiated callus growth, no roots or shoots yet.</div>
 </div>
 <script>
 (function(){
@@ -173,11 +173,11 @@ Structurally steroid-like (unlike the other five hormones), synthesized broadly 
     } else if (v > 65){
       shoots.style.opacity = 0;
       roots.style.opacity = 1;
-      note.textContent = 'High auxin:cytokinin ratio (auxin-dominant) — root formation is favored.';
+      note.textContent = 'High auxin:cytokinin ratio (auxin-dominant): root formation is favored.';
     } else {
       shoots.style.opacity = 0;
       roots.style.opacity = 0;
-      note.textContent = 'Roughly equal auxin and cytokinin — undifferentiated callus growth, no roots or shoots yet.';
+      note.textContent = 'Roughly equal auxin and cytokinin, undifferentiated callus growth, no roots or shoots yet.';
     }
   }
   slider.addEventListener('input', update);

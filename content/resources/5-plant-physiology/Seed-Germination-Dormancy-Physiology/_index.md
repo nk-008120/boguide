@@ -11,13 +11,13 @@ syllabus_tags: ["IBO", "USABO", "plant-physiology"]
 
 ## Overview
 
-[Seed & Fruit Anatomy](../../6-plant-anatomy/seed-fruit-anatomy/) covered the mature, dormant seed's structure — seed coat/testa, embryo axis (radicle, hypocotyl, plumule), cotyledon(s) or endosperm as storage tissue. This page covers what happens physiologically from that dormant, dehydrated state to an actively growing seedling: the physical trigger that starts the process, the hormonal balance that determines whether a viable, hydrated seed germinates or stays dormant, and the specific enzymatic mechanism that converts stored reserves into usable energy for the growing embryo.
+[Seed & Fruit Anatomy](../../6-plant-anatomy/seed-fruit-anatomy/) covered the mature, dormant seed's structure: seed coat/testa, embryo axis (radicle, hypocotyl, plumule), cotyledon(s) or endosperm as storage tissue. This page covers what happens physiologically from that dormant, dehydrated state to an actively growing seedling: the physical trigger that starts the process, the hormonal balance that determines whether a viable, hydrated seed germinates or stays dormant, and the specific enzymatic mechanism that converts stored reserves into usable energy for the growing embryo.
 
 ## Key Concepts
 
 ### Imbibition
 
-Germination begins with **imbibition** — the physical uptake of water by the dry seed's hydrophilic storage macromolecules (starch, protein), generating substantial imbibitional pressure as the seed swells, entirely independent of any active or osmotic transport process (a dead or non-viable seed imbibes water just as readily as a living one, since imbibition is a passive physical property of the seed's dry tissue, not a metabolic response). Water typically enters first through the **micropyle** (the pore in the seed coat persisting from the ovule, see [Seed & Fruit Anatomy](../../6-plant-anatomy/seed-fruit-anatomy/)), rehydrating the embryo and reactivating enzymatic machinery that had been essentially inactive in the dry state. Imbibition alone is necessary but not sufficient for germination to proceed — a hydrated seed can still remain dormant if its internal hormonal balance (below) does not permit further development.
+Germination begins with **imbibition**: the physical uptake of water by the dry seed's hydrophilic storage macromolecules (starch, protein), generating substantial imbibitional pressure as the seed swells, entirely independent of any active or osmotic transport process (a dead or non-viable seed imbibes water just as readily as a living one, since imbibition is a passive physical property of the seed's dry tissue, not a metabolic response). Water typically enters first through the **micropyle** (the pore in the seed coat persisting from the ovule, see [Seed & Fruit Anatomy](../../6-plant-anatomy/seed-fruit-anatomy/)), rehydrating the embryo and reactivating enzymatic machinery that had been essentially inactive in the dry state. Imbibition alone is necessary but not sufficient for germination to proceed — a hydrated seed can still remain dormant if its internal hormonal balance (below) does not permit further development.
 
 ![Seed structure and imbibition: seed coat layers (wax cuticle, epidermis, sclereids, parenchyma, remnant layer), embryo (hypocotyl, radicle), cotyledon, and the micropyle/hilar fissure/raphe region, with arrows tracing water uptake into the seed coat opening and cotyledon](/PLANTPHYSIOPICS/seed-imbibition.png)
 *Source: New Phytologist (Wiley Online Library, doi ppp3.10631)*
@@ -29,7 +29,7 @@ Seed dormancy and its release are controlled by the same antagonistic hormone pa
 - **Abscisic acid (ABA)**, synthesized during seed maturation on the parent plant, maintains dormancy and, in many species, must be degraded or its signaling desensitized before germination can proceed — a mechanism preventing **vivipary** (premature germination while the seed is still attached to and nourished by the parent plant, which would be developmentally and often lethally disadvantageous).
 - **Gibberellin (GA)** promotes the germination program directly once ABA's inhibitory effect has been sufficiently reduced, and is both necessary and sufficient to trigger the reserve-mobilization mechanism described below.
 
-Dormancy release is often gated by an additional environmental requirement layered on top of this hormonal balance — cold stratification (a period of moist chilling, mechanistically parallel to vernalization's cold requirement for flowering, see [Photoperiodism, Vernalization & Flowering](../photoperiodism-vernalization-flowering/)), a period of after-ripening in dry storage, exposure to light (in some small seeds, via the same phytochrome system covered on that page), or scarification (physical or chemical abrasion of an unusually impermeable seed coat, common in many legumes) — each of these environmental gates ultimately acts by shifting the internal GA/ABA balance rather than by a separate independent mechanism.
+Dormancy release is often gated by an additional environmental requirement layered on top of this hormonal balance: cold stratification (a period of moist chilling, mechanistically parallel to vernalization's cold requirement for flowering, see [Photoperiodism, Vernalization & Flowering](../photoperiodism-vernalization-flowering/)), a period of after-ripening in dry storage, exposure to light (in some small seeds, via the same phytochrome system covered on that page), or scarification (physical or chemical abrasion of an unusually impermeable seed coat, common in many legumes). Each of these environmental gates ultimately acts by shifting the internal GA/ABA balance rather than by a separate independent mechanism.
 
 ![Model for the regulation of dormancy and germination by ABA and GA: ambient-environment perception drives dormancy induction (ABA synthesis via NCED, GA degradation via GA2ox2) or dormancy breaking (GA synthesis via GA3ox1, ABA degradation via CYP707A2); the resulting ABA/GA sensitivity balance is integrated into ABA or GA signaling, producing a dormant/cycling or non-dormant/germinating response](/PLANTPHYSIOPICS/ga-aba-dormancy-balance.png)
 *Source: ResearchGate, fig. 1, "Model for the regulation of dormancy and germination by ABA and GA in response to the..."*
@@ -46,7 +46,7 @@ In cereal grains (a monocot seed structure, see [Seed & Fruit Anatomy](../../6-p
 Once growth resumes, species differ systematically in which embryonic axis segment (see [Seed & Fruit Anatomy](../../6-plant-anatomy/seed-fruit-anatomy/) for radicle/hypocotyl/plumule terminology) elongates to bring the seedling above ground:
 
 - **Epigeal germination** — the **hypocotyl** elongates and forms a hook that straightens as it breaches the soil surface, lifting the cotyledons above ground where they typically expand and green briefly, contributing photosynthetically before senescing (common bean, castor bean).
-- **Hypogeal germination** — the **epicotyl** (the plumule and the stem segment immediately above the cotyledon attachment) elongates instead, while the cotyledons remain below ground, never photosynthesizing and serving only as a stationary nutrient reserve depleted in place (pea, most monocot grains, where the cotyledon/scutellum stays embedded in the seed structure entirely).
+- **Hypogeal germination**: the **epicotyl** (the plumule and the stem segment immediately above the cotyledon attachment) elongates instead, while the cotyledons remain below ground, never photosynthesizing and serving only as a stationary nutrient reserve depleted in place (pea, most monocot grains, where the cotyledon/scutellum stays embedded in the seed structure entirely).
 
 ![Epigeal vs. hypogeal germination compared side by side, from seed through root-hair/radicle emergence to seedling: the epigeal sequence shows the hypocotyl elongating to lift the cotyledons above the soil, while the hypogeal sequence shows the epicotyl and plumule elongating while the cotyledons remain below ground](/PLANTPHYSIOPICS/epi-hypo-germination.svg)
 *Source: Wikipedia*
@@ -97,7 +97,7 @@ This distinction is a direct, mechanistic consequence of which axis segment's ce
     <button id="dormScarBtn" style="background:#b45309; color:#fff; border:none; padding:7px 14px; border-radius:999px; font-size:0.82rem; cursor:pointer; margin:2px;">Apply scarification</button>
     <button id="dormResetBtn" style="background:#94a3b8; color:#fff; border:none; padding:7px 14px; border-radius:999px; font-size:0.82rem; cursor:pointer; margin:2px;">Reset (fresh dormant seed)</button>
   </div>
-  <div id="dormNote" style="text-align:center; margin-top:10px; font-size:0.85rem; color:#4b5563;">ABA-dominant — the seed remains dormant.</div>
+  <div id="dormNote" style="text-align:center; margin-top:10px; font-size:0.85rem; color:#4b5563;">ABA-dominant: the seed remains dormant.</div>
 </div>
 <script>
 (function(){
@@ -113,7 +113,7 @@ This distinction is a direct, mechanistic consequence of which axis segment's ce
       note.textContent = 'GA-dominant — past the threshold, alpha-amylase is induced and the radicle emerges: germination proceeds.';
     } else {
       radicle.setAttribute('d', 'M80 82 L80 82');
-      note.textContent = 'ABA-dominant — the seed remains dormant.';
+      note.textContent = 'ABA-dominant: the seed remains dormant.';
     }
   }
   slider.addEventListener('input', update);

@@ -1,7 +1,7 @@
 ---
 title: "Extensions of Mendelian Inheritance"
 weight: 2
-description: "Inheritance patterns that modify but don't violate Mendel's rules — incomplete dominance, codominance, multiple alleles, pleiotropy, lethal alleles, and the penetrance/expressivity distinction that explains why genotype doesn't always predict phenotype perfectly."
+description: "Inheritance patterns that modify but don't violate Mendel's rules: incomplete dominance, codominance, multiple alleles, pleiotropy, lethal alleles, and the penetrance/expressivity distinction that explains why genotype doesn't always predict phenotype perfectly."
 difficulty: "beginner"
 prerequisites: ["Mendelian-Inheritance-Probability"]
 syllabus_tags: ["IBO", "USABO", "genetics", "transmission-genetics"]
@@ -12,13 +12,13 @@ syllabus_tags: ["IBO", "USABO", "genetics", "transmission-genetics"]
 
 ## Overview
 
-Mendel's seven pea traits were fortunate in showing simple, complete dominance with one gene controlling one trait — but this is a special case, not the general rule. This page covers the inheritance patterns that **extend** Mendelian analysis without breaking segregation or independent assortment underneath: dominance relationships that aren't complete, genes with more than two alleles, one gene affecting multiple traits, alleles whose homozygous state is lethal, and the gap between having a genotype and actually expressing its associated phenotype. Every pattern here still obeys segregation at the chromosomal level (see [Mendel's Laws & Probability in Genetics](../mendelian-inheritance-probability/)) — what changes is only how genotype maps onto phenotype.
+Mendel's seven pea traits were fortunate in showing simple, complete dominance with one gene controlling one trait — but this is a special case, not the general rule. This page covers the inheritance patterns that **extend** Mendelian analysis without breaking segregation or independent assortment underneath: dominance relationships that aren't complete, genes with more than two alleles, one gene affecting multiple traits, alleles whose homozygous state is lethal, and the gap between having a genotype and actually expressing its associated phenotype. Every pattern here still obeys segregation at the chromosomal level (see [Mendel's Laws & Probability in Genetics](../mendelian-inheritance-probability/)); what changes is only how genotype maps onto phenotype.
 
 ## Key Concepts
 
 ### Incomplete dominance
 
-In **incomplete dominance**, the heterozygote's phenotype is an intermediate blend between the two homozygous phenotypes, rather than matching one of them exactly — e.g. a cross between red-flowered (R¹R¹) and white-flowered (R²R²) snapdragons produces pink-flowered (R¹R²) heterozygotes. Critically, this is **not** a return to pre-Mendelian blending inheritance: the alleles themselves remain discrete and segregate normally (an R¹R² × R¹R² cross still produces a 1:2:1 **genotype** ratio), only the *phenotype* ratio changes to match the genotype ratio directly (1 red : 2 pink : 1 white), because there is no dominant allele to mask the other.
+In **incomplete dominance**, the heterozygote's phenotype is an intermediate blend between the two homozygous phenotypes, rather than matching one of them exactly: e.g. a cross between red-flowered (R¹R¹) and white-flowered (R²R²) snapdragons produces pink-flowered (R¹R²) heterozygotes. Critically, this is **not** a return to pre-Mendelian blending inheritance: the alleles themselves remain discrete and segregate normally (an R¹R² × R¹R² cross still produces a 1:2:1 **genotype** ratio), only the *phenotype* ratio changes to match the genotype ratio directly (1 red : 2 pink : 1 white), because there is no dominant allele to mask the other.
 
 ![Red (RR) × white (ww) snapdragon cross producing pink F1 heterozygotes; the Punnett square below shows the F2 1:2:1 ratio (RR red : Rw pink : Rw pink : ww white).](/GENETICSPICS/incomplete-dominance-snapdragon-cross.png)
 *Source: ask.learncbse.in*
@@ -40,18 +40,18 @@ A gene can have more than two alleles circulating in a population, even though a
 | I^A I^B | Type AB (codominance) |
 | ii | Type O |
 
-This system combines two extensions at once — multiple alleles *and* codominance between two of them (I^A/I^B) alongside simple dominance of each over the third (i) — and is a frequent source of pedigree/parentage-exclusion exam questions (e.g. two type-A parents, each heterozygous I^A i, can have a type-O child).
+This system combines two extensions at once, multiple alleles *and* codominance between two of them (I^A/I^B) alongside simple dominance of each over the third (i), and is a frequent source of pedigree/parentage-exclusion exam questions (e.g. two type-A parents, each heterozygous I^A i, can have a type-O child).
 
 ![ABO blood group reference table: for each blood type (A, B, AB, O), the genotype, the red blood cell surface antigens present, and the plasma antibodies present.](/GENETICSPICS/abo-blood-group-antigen-phenotype-table.jpg)
 *Source: jaypeedigital.com*
 
 ### Pleiotropy
 
-**Pleiotropy** is when a single gene affects multiple, seemingly unrelated phenotypic traits — the opposite direction of complexity from multiple alleles (one gene, many effects, rather than one trait, many alleles). Human **sickle-cell disease** (a single amino-acid substitution in β-globin, Glu6Val — see [Protein Structure, Folding & Function](/resources/1-cell-molecular/protein-structure-folding-function/) for the molecular mechanism) is a classic pleiotropic example: the same mutation causes anemia, joint pain, organ damage, and increased malaria resistance in heterozygotes — a wide phenotypic footprint traceable to one underlying molecular lesion.
+**Pleiotropy** is when a single gene affects multiple, seemingly unrelated phenotypic traits — the opposite direction of complexity from multiple alleles (one gene, many effects, rather than one trait, many alleles). Human **sickle-cell disease** (a single amino-acid substitution in β-globin, Glu6Val — see [Protein Structure, Folding & Function](/resources/1-cell-molecular/protein-structure-folding-function/) for the molecular mechanism) is a classic pleiotropic example: the same mutation causes anemia, joint pain, organ damage, and increased malaria resistance in heterozygotes, a wide phenotypic footprint traceable to one underlying molecular lesion.
 
 ### Lethal alleles
 
-Some alleles are **lethal** in the homozygous state, which distorts the expected phenotypic ratios in a cross. The classic example is coat color in mice: the **yellow (A^Y)** allele is dominant for coat color but **recessive lethal** — A^Y A^Y embryos die before birth. A cross between two yellow (heterozygous A^Y A) mice therefore produces a phenotype ratio of **2 yellow : 1 agouti** among live births, not the naively expected 3:1, because the A^Y A^Y class is missing entirely. Recognizing a skewed ratio (2:1 instead of 3:1, or a total litter size smaller than expected) as a signature of embryonic lethality, rather than assuming a counting or dominance error, is the key exam skill here.
+Some alleles are **lethal** in the homozygous state, which distorts the expected phenotypic ratios in a cross. The classic example is coat color in mice: the **yellow (A^Y)** allele is dominant for coat color but **recessive lethal**: A^Y A^Y embryos die before birth. A cross between two yellow (heterozygous A^Y A) mice therefore produces a phenotype ratio of **2 yellow : 1 agouti** among live births, not the naively expected 3:1, because the A^Y A^Y class is missing entirely. Recognizing a skewed ratio (2:1 instead of 3:1, or a total litter size smaller than expected) as a signature of embryonic lethality, rather than assuming a counting or dominance error, is the key exam skill here.
 
 ![Four live mice showing real yellow (A^Y/+) and agouti (a/a) coat-color phenotypes, with genotypes labeled for each animal.](/GENETICSPICS/lethal-allele-yellow-mouse-coat-color-cross.jpg)
 *Source: researchgate.net ("Coat colors: C57BL/6J A^y/a and C57BL/6J a/a mice have yellow and black pelage")*
@@ -70,7 +70,7 @@ Both are frequently modulated by genetic background (modifier genes) and environ
 
 ### Norm of reaction
 
-The **norm of reaction** is the full range of phenotypes a single genotype can produce across different environments — formalizing the point that genotype sets a *range* of possible outcomes, not a fixed single phenotype. Himalayan rabbits' coat-color pattern (dark extremities, pale body) is a standard example: the underlying temperature-sensitive pigment enzyme produces different local phenotypes depending on local skin temperature, all from one genotype.
+The **norm of reaction** is the full range of phenotypes a single genotype can produce across different environments, formalizing the point that genotype sets a *range* of possible outcomes, not a fixed single phenotype. Himalayan rabbits' coat-color pattern (dark extremities, pale body) is a standard example: the underlying temperature-sensitive pigment enzyme produces different local phenotypes depending on local skin temperature, all from one genotype.
 
 ## Comparative Structures
 
@@ -84,8 +84,8 @@ The **norm of reaction** is the full range of phenotypes a single genotype can p
 
 - "Is this incomplete dominance or codominance?" — always check whether the heterozygote shows a *new blended* phenotype (incomplete dominance) or *both original phenotypes simultaneously and distinguishably* (codominance); a pink flower is blended, an AB blood type is both A and B markers present at once.
 - A skewed ratio that's consistently missing one class (2:1 instead of 3:1, or a reduced total litter/brood size) should immediately suggest a **recessive lethal allele**, not a counting error or an exception to dominance.
-- "Why did an obviously affected parent have an apparently unaffected child who later has affected children of their own?" — tests recognition of **reduced penetrance**, not a mistaken pedigree or non-paternity.
-- ABO parentage-exclusion logic (a type-AB parent cannot have a type-O child; a type-O parent cannot have a type-AB child) is a frequent applied-genetics question — always reason from the *i* allele's strict recessiveness to both I^A and I^B.
+- "Why did an obviously affected parent have an apparently unaffected child who later has affected children of their own?" This tests recognition of **reduced penetrance**, not a mistaken pedigree or non-paternity.
+- ABO parentage-exclusion logic (a type-AB parent cannot have a type-O child; a type-O parent cannot have a type-AB child) is a frequent applied-genetics question; always reason from the *i* allele's strict recessiveness to both I^A and I^B.
 
 ## Visual Reference
 
@@ -104,7 +104,7 @@ The **norm of reaction** is the full range of phenotypes a single genotype can p
 <details>
 <summary>Show answer</summary>
 
-Both parents must be heterozygous: the mother is I^A i (type A) and the father is I^B i (type B). Since *i* is recessive to both I^A and I^B, each parent can pass either their dominant allele or their hidden *i* allele. A child who inherits *i* from both parents (i i) is type O, even though neither parent is phenotypically type O — the *i* allele was masked in each heterozygous parent.
+Both parents must be heterozygous: the mother is I^A i (type A) and the father is I^B i (type B). Since *i* is recessive to both I^A and I^B, each parent can pass either their dominant allele or their hidden *i* allele. A child who inherits *i* from both parents (i i) is type O, even though neither parent is phenotypically type O; the *i* allele was masked in each heterozygous parent.
 </details>
 
 **2.** In a cross between two curly-tailed cats (a trait caused by a dominant allele that is homozygous lethal), 90 kittens are born: 60 curly-tailed, 30 straight-tailed. Explain why this ratio is not 3:1, and predict how many kittens would be expected to have died as embryos if the litter size had not been reduced by lethality.

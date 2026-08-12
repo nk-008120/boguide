@@ -20,7 +20,7 @@ Carbohydrates are built from one simple repeating chemical idea — the glycosid
 
 Monosaccharides are polyhydroxy aldehydes (**aldoses**, e.g. glucose) or ketones (**ketoses**, e.g. fructose). Each chiral carbon doubles the number of possible stereoisomers, so glucose (4 chiral centres in its open-chain form) has 16 possible stereoisomers, of which **D-glucose** is the biologically overwhelming default.
 
-**D/L designation** is assigned by the configuration at the chiral carbon farthest from the carbonyl group (compared to D/L-glyceraldehyde as the reference); nearly all biologically relevant sugars are D-sugars, mirroring the near-universal use of L-amino acids in proteins — both conventions reflect that the enzymes handling these molecules are themselves chiral and only accept one stereoisomeric family efficiently.
+**D/L designation** is assigned by the configuration at the chiral carbon farthest from the carbonyl group (compared to D/L-glyceraldehyde as the reference); nearly all biologically relevant sugars are D-sugars, mirroring the near-universal use of L-amino acids in proteins; both conventions reflect that the enzymes handling these molecules are themselves chiral and only accept one stereoisomeric family efficiently.
 
 In aqueous solution, 5- and 6-carbon sugars predominantly exist as **cyclic hemiacetals/hemiketals** (furanose or pyranose rings), not open chains. Ring closure creates a *new* chiral centre at C1 (the **anomeric carbon**), giving rise to **α and β anomers** — e.g. α-D-glucopyranose vs. β-D-glucopyranose, which interconvert in solution (**mutarotation**) but are locked into one form once incorporated into a glycosidic bond. This α/β distinction is the single most consequential fact in this page: it is the entire reason starch/glycogen and cellulose behave so differently (see below).
 
@@ -29,7 +29,7 @@ In aqueous solution, 5- and 6-carbon sugars predominantly exist as **cyclic hemi
 
 ### Glycosidic bonds
 
-A **glycosidic bond** forms between the anomeric carbon of one sugar and a hydroxyl group of another, releasing water (condensation) — the carbohydrate equivalent of a peptide bond. Bonds are named by the two carbons joined and the anomeric configuration, e.g. **α(1→4)** links C1 of one glucose to C4 of the next in an α configuration.
+A **glycosidic bond** forms between the anomeric carbon of one sugar and a hydroxyl group of another, releasing water (condensation): the carbohydrate equivalent of a peptide bond. Bonds are named by the two carbons joined and the anomeric configuration, e.g. **α(1→4)** links C1 of one glucose to C4 of the next in an α configuration.
 
 ### Storage vs. structural polysaccharides: the same monomer, opposite function
 
@@ -41,7 +41,7 @@ A **glycosidic bond** forms between the anomeric carbon of one sugar and a hydro
 ![Enzymatic mechanism of glycogen branch formation: transglycosylase acts on a linear glucose chain attached to the glycogen core, creating a new α(1→6) branch point (numbered 1 and 6) with the arrows marking sites for further glucosyl unit addition](/MCBBPICS/glycogen-branching-diagram2.png)
 *Source: ScienceDirect Topics ("glycogenesis")*
 
-**Cellulose**, by contrast, links glucose exclusively by **β(1→4)** bonds. The β linkage forces each successive glucose to rotate 180° relative to its neighbour, producing a straight, extended chain rather than a helix. These straight chains pack side-by-side into extensive inter-chain hydrogen-bonded sheets — microfibrils — which is what gives cellulose its tensile strength and near-total resistance to digestion by animal enzymes (which recognise only α-glycosidic geometry; only specialised **cellulase**-producing organisms, often microbial symbionts, can hydrolyse β(1→4) bonds).
+**Cellulose**, by contrast, links glucose exclusively by **β(1→4)** bonds. The β linkage forces each successive glucose to rotate 180° relative to its neighbour, producing a straight, extended chain rather than a helix. These straight chains pack side-by-side into extensive inter-chain hydrogen-bonded sheets (microfibrils), which is what gives cellulose its tensile strength and near-total resistance to digestion by animal enzymes (which recognise only α-glycosidic geometry; only specialised **cellulase**-producing organisms, often microbial symbionts, can hydrolyse β(1→4) bonds).
 
 This is the highest-yield single comparison in carbohydrate biochemistry: **identical monomer, only the anomeric configuration of the linkage differs, and that alone explains storage-vs-structural function.**
 
@@ -50,11 +50,11 @@ This is the highest-yield single comparison in carbohydrate biochemistry: **iden
 
 ### Glycosaminoglycans and the extracellular matrix
 
-Beyond glucose homopolymers, **glycosaminoglycans (GAGs)** — long, unbranched, highly negatively charged polymers of repeating disaccharide units (e.g. hyaluronic acid, chondroitin sulfate, heparin) — are a distinct structural carbohydrate class central to the extracellular matrix (see [Cell Junctions, Extracellular Matrix & Cell Death](../cell-junctions-ecm-cell-death/)). Their dense negative charge draws in water and cations, giving connective tissue its resistance to compression.
+Beyond glucose homopolymers, **glycosaminoglycans (GAGs)**, long, unbranched, highly negatively charged polymers of repeating disaccharide units (e.g. hyaluronic acid, chondroitin sulfate, heparin), are a distinct structural carbohydrate class central to the extracellular matrix (see [Cell Junctions, Extracellular Matrix & Cell Death](../cell-junctions-ecm-cell-death/)). Their dense negative charge draws in water and cations, giving connective tissue its resistance to compression.
 
 ### Glycosylation, revisited
 
-[Amino Acids & Protein Chemistry Fundamentals](../amino-acids-protein-chemistry/) introduced N- and O-glycosylation as protein modifications; from the carbohydrate side, the attached glycan itself is built by sequential glycosyltransferase reactions in the ER and Golgi, each adding one sugar via a new glycosidic bond, and each enzyme recognising both the specific sugar donor and the specific acceptor hydroxyl — this stepwise, enzyme-templated (rather than nucleic-acid-templated) assembly is why glycan structures are far more heterogeneous between individual protein molecules than a directly gene-encoded sequence like a polypeptide chain.
+[Amino Acids & Protein Chemistry Fundamentals](../amino-acids-protein-chemistry/) introduced N- and O-glycosylation as protein modifications; from the carbohydrate side, the attached glycan itself is built by sequential glycosyltransferase reactions in the ER and Golgi, each adding one sugar via a new glycosidic bond, and each enzyme recognising both the specific sugar donor and the specific acceptor hydroxyl. This stepwise, enzyme-templated (rather than nucleic-acid-templated) assembly is why glycan structures are far more heterogeneous between individual protein molecules than a directly gene-encoded sequence like a polypeptide chain.
 
 ## Comparative Structures
 
@@ -68,7 +68,7 @@ Beyond glucose homopolymers, **glycosaminoglycans (GAGs)** — long, unbranched,
 
 ## Common Exam Questions
 
-- "Why can't humans digest cellulose?" — the correct answer names the *β(1→4) linkage geometry*, not simply "we lack the enzyme," since the follow-up ("why don't we have that enzyme?") is really asking about substrate specificity for α- vs. β-glycosidases.
+- "Why can't humans digest cellulose?": the correct answer names the *β(1→4) linkage geometry*, not simply "we lack the enzyme," since the follow-up ("why don't we have that enzyme?") is really asking about substrate specificity for α- vs. β-glycosidases.
 - "Compare glycogen and amylopectin structurally" — degree of branching (glycogen denser) is the testable distinction, since both use the same α(1→4)/α(1→6) linkage chemistry.
 - Anomeric carbon identification (which carbon is C1, why ring closure creates a new stereocentre there) is a frequent structure-drawing question.
 
@@ -76,7 +76,7 @@ Beyond glucose homopolymers, **glycosaminoglycans (GAGs)** — long, unbranched,
 
 **Interactive**
 
-- An α vs. β glycosidic bond builder: click two monosaccharide ring diagrams together in either configuration and see the resulting chain shape (helical vs. extended) render automatically — makes the single-cause structural argument of this page directly visible.
+- An α vs. β glycosidic bond builder: click two monosaccharide ring diagrams together in either configuration and see the resulting chain shape (helical vs. extended) render automatically, making the single-cause structural argument of this page directly visible.
 
 {{< iframe src="/glycosidic-bond-builder.html" title="Glycosidic Bond Builder" height="440px" >}}
 

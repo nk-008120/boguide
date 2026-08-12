@@ -6,14 +6,14 @@ description: "The function-side complement to Plant Anatomy for IBO/USABO: water
 
 ## How this section is organized
 
-Where [Plant Anatomy](../6-plant-anatomy/) covers structure — tissue types, organ arrangement, monocot/dicot contrasts — Plant Physiology covers mechanism: what actually pulls water to the top of a tree, what happens biochemically inside a chloroplast, what tells a seed to germinate or a flower to form on schedule. This section runs in four tiers:
+Where [Plant Anatomy](../6-plant-anatomy/) covers structure (tissue types, organ arrangement, monocot/dicot contrasts), Plant Physiology covers mechanism: what actually pulls water to the top of a tree, what happens biochemically inside a chloroplast, what tells a seed to germinate or a flower to form on schedule. This section runs in four tiers:
 
-- **Water & Nutrient Transport** (4 pages) — the transport mechanisms Plant Anatomy's vascular, root, and leaf pages explicitly deferred: water movement, stomatal control, phloem translocation, and mineral/symbiotic nutrient uptake.
-- **Photosynthesis** (2 pages) — the light-reaction and carbon-fixation biochemistry behind the Kranz and CAM anatomy already covered structurally in Plant Anatomy.
+- **Water & Nutrient Transport** (4 pages): the transport mechanisms Plant Anatomy's vascular, root, and leaf pages explicitly deferred, covering water movement, stomatal control, phloem translocation, and mineral/symbiotic nutrient uptake.
+- **Photosynthesis** (2 pages), covering the light-reaction and carbon-fixation biochemistry behind the Kranz and CAM anatomy already covered structurally in Plant Anatomy.
 - **Growth Regulation & Development** (4 pages) — the hormonal signals and their downstream effects on directional growth, flowering timing, and germination.
 - **Whole-Plant & Stress Physiology** (1 page) — abiotic and biotic stress responses, integrating mechanisms from every earlier tier.
 
-Start with [Water Transport & Transpiration](Water-Transport-Transpiration/) — its water potential framework is assumed throughout the rest of the section.
+Start with [Water Transport & Transpiration](Water-Transport-Transpiration/): its water potential framework is assumed throughout the rest of the section.
 
 {{< cards cols="1" >}}
   {{< card link="water-transport-transpiration/" title="1. Water Transport & Transpiration" subtitle="Water potential, cohesion-tension theory, root pressure and guttation — read this first." >}}

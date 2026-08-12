@@ -11,7 +11,7 @@ syllabus_tags: ["IBO", "USABO", "human-anatomy"]
 
 ## Overview
 
-Muscle tissue — one of the four primary tissue types introduced on the [Body Plans](../body-plans/) page — converts chemical energy (ATP) into mechanical force. This page covers structural anatomy at every scale from organ to protein filament, including the structural (not just biochemical) basis of how a nerve signal becomes a contraction — the neuromuscular junction and excitation-contraction coupling — since IBO practical and theory papers test this as anatomy/histology, not pure biochemistry.
+Muscle tissue, one of the four primary tissue types introduced on the [Body Plans](../body-plans/) page, converts chemical energy (ATP) into mechanical force. This page covers structural anatomy at every scale from organ to protein filament, including the structural (not just biochemical) basis of how a nerve signal becomes a contraction (the neuromuscular junction and excitation-contraction coupling), since IBO practical and theory papers test this as anatomy/histology, not pure biochemistry.
 
 ## Key Concepts
 
@@ -38,18 +38,18 @@ graph TD;
     E --> F["Thick filaments (myosin) &<br/>thin filaments (actin, troponin, tropomyosin)"];
 ```
 
-The three connective-tissue wrappings (epi-/peri-/endomysium) converge at the muscle's ends to form the **tendon**, anchoring muscle to bone via the periosteum (see [Human Skeletal System](../human-skeletal-system/)) — a direct structural link between the two pages.
+The three connective-tissue wrappings (epi-/peri-/endomysium) converge at the muscle's ends to form the **tendon**, anchoring muscle to bone via the periosteum (see [Human Skeletal System](../human-skeletal-system/)), a direct structural link between the two pages.
 
 ![A whole skeletal muscle in longitudinal and cross-section, labeled with the tendon, epimysium, perimysium (around each fascicle), endomysium (around each muscle fiber), fascicle, muscle fiber, and blood vessel.](/ANATOMYPICS/muscle-organ-hierarchy-epimysium-perimysium-endomysium.png)
 *Source: user-sourced textbook-style figure. Exact match for the full organ-to-fiber hierarchy.*
 
 **The sarcomere** is the functional contractile unit, defined as the segment between two adjacent **Z-discs**:
 
-- **A-band** — the full length of the thick (myosin) filaments; stays constant length during contraction.
+- **A-band**: the full length of the thick (myosin) filaments; stays constant length during contraction.
 - **I-band** — region containing only thin filaments; shortens during contraction.
-- **H-zone** — central region of the A-band containing only thick filaments; shortens during contraction.
+- **H-zone**: central region of the A-band containing only thick filaments; shortens during contraction.
 - **Z-disc** — protein structure (containing **α-actinin**) anchoring thin filaments; defines sarcomere boundaries; adjacent Z-discs move closer together during contraction.
-- **M-line** — central line within the H-zone, anchoring thick filaments in register.
+- **M-line**: central line within the H-zone, anchoring thick filaments in register.
 
 **Thin filaments** are not pure actin: alongside the polymerized **actin** strand, **tropomyosin** (a rod-shaped protein lying along the actin groove, blocking myosin-binding sites at rest) and the **troponin complex** (troponin C binds calcium, troponin I inhibits actin-myosin binding at rest, troponin T anchors the complex to tropomyosin) together form the structural switch that gates contraction — calcium binding to troponin C shifts tropomyosin's position, exposing the myosin-binding sites this is the direct structural link between a calcium signal and the sliding-filament mechanism below.
 
@@ -138,7 +138,7 @@ A motor neuron's axon terminal forms a specialized synapse, the **neuromuscular 
 ![A three-panel zoom from a whole muscle fiber down to the neuromuscular junction: the axon terminal and synaptic end bulb sitting on the sarcolemma, then a close-up of ACh-containing synaptic vesicles releasing their contents by exocytosis into the synaptic cleft and binding ACh receptors on the motor end plate, opening Na+ channels.](/ANATOMYPICS/neuromuscular-junction-motor-end-plate.jpg)
 *Source: user-sourced textbook-style figure*
 
-This electrical signal is carried into the fiber's interior by **T-tubules** (transverse tubules — deep, tubular invaginations of the sarcolemma, penetrating between myofibrils at regular intervals aligned with the sarcomere pattern), which lie immediately adjacent to the **sarcoplasmic reticulum (SR)** — a specialized smooth ER wrapping each myofibril and storing a large intracellular calcium reserve. A T-tubule flanked by two SR terminal cisternae forms a structural unit called a **triad**. Depolarization of the T-tubule membrane is mechanically/electrically coupled (via voltage-sensing **DHP receptors** on the T-tubule linked to **ryanodine receptors**, which are calcium-release channels, on the adjacent SR) to rapid calcium release from the SR into the sarcoplasm — this triad structure is the specific anatomical basis of **excitation-contraction coupling**, the process linking a surface electrical signal to filament sliding deep within the fiber. Released calcium binds troponin C (above), exposing myosin-binding sites and permitting the cross-bridge cycle to proceed; when nervous stimulation ends, calcium is actively pumped back into the SR, tropomyosin re-blocks the binding sites, and the muscle relaxes.
+This electrical signal is carried into the fiber's interior by **T-tubules** (transverse tubules, deep, tubular invaginations of the sarcolemma, penetrating between myofibrils at regular intervals aligned with the sarcomere pattern), which lie immediately adjacent to the **sarcoplasmic reticulum (SR)** — a specialized smooth ER wrapping each myofibril and storing a large intracellular calcium reserve. A T-tubule flanked by two SR terminal cisternae forms a structural unit called a **triad**. Depolarization of the T-tubule membrane is mechanically/electrically coupled (via voltage-sensing **DHP receptors** on the T-tubule linked to **ryanodine receptors**, which are calcium-release channels, on the adjacent SR) to rapid calcium release from the SR into the sarcoplasm. This triad structure is the specific anatomical basis of **excitation-contraction coupling**, the process linking a surface electrical signal to filament sliding deep within the fiber. Released calcium binds troponin C (above), exposing myosin-binding sites and permitting the cross-bridge cycle to proceed; when nervous stimulation ends, calcium is actively pumped back into the SR, tropomyosin re-blocks the binding sites, and the muscle relaxes.
 
 ![A triad structure: the T-tubule (an extension of the sarcolemma) flanked by two terminal cisternae of the sarcoplasmic reticulum, wrapped around thick and thin filaments, with the sarcoplasmic reticulum shown storing Ca2+.](/ANATOMYPICS/t-tubule-sarcoplasmic-reticulum-triad.png)
 *Source: user-sourced textbook-style figure. Exact match for the triad structure and its role carrying action potentials into the fiber interior.*
@@ -158,7 +158,7 @@ This electrical signal is carried into the fiber's interior by **T-tubules** (tr
   var steps = [
     { name: 'ACh release at the NMJ', desc: 'An action potential arriving at the axon terminal triggers exocytosis of acetylcholine into the synaptic cleft.' },
     { name: 'Sarcolemma depolarization', desc: 'ACh binds receptors at the motor end plate, opening channels and depolarizing the sarcolemma into a muscle action potential.' },
-    { name: 'T-tubule conducts the signal inward', desc: 'The action potential travels deep into the fiber along T-tubules — invaginations of the sarcolemma aligned with the sarcomere pattern.' },
+    { name: 'T-tubule conducts the signal inward', desc: 'The action potential travels deep into the fiber along T-tubules, invaginations of the sarcolemma aligned with the sarcomere pattern.' },
     { name: 'SR calcium release via the triad', desc: 'At the triad, voltage-sensing DHP receptors on the T-tubule mechanically/electrically couple to ryanodine receptors on the adjacent sarcoplasmic reticulum, releasing stored Ca²⁺.' },
     { name: 'Calcium binds Troponin C', desc: 'Released Ca²⁺ binds troponin C on the thin filament.' },
     { name: 'Myosin-binding site exposed', desc: "Calcium binding shifts tropomyosin's position on the actin groove, exposing the myosin-binding site and permitting the cross-bridge cycle to proceed." }
@@ -211,7 +211,7 @@ This electrical signal is carried into the fiber's interior by **T-tubules** (tr
 
 ### The Cross-Bridge Cycle and Sliding Filament Model
 
-With binding sites exposed, contraction proceeds through a repeating cycle at each myosin head: **(1)** an ATP-bound myosin head hydrolyzes ATP to ADP + Pi, cocking into a high-energy conformation; **(2)** the cocked head binds an exposed site on actin, forming a cross-bridge; **(3)** release of Pi triggers the **power stroke** — the head pivots, pulling the thin filament past the thick filament (the ADP is released at the end of this step); **(4)** a new ATP molecule binds the myosin head, causing it to detach from actin, resetting the cycle. Because myosin heads along a thick filament act asynchronously (some attached and pulling while others detach and reset), contraction is smooth rather than jerky — and because the thin and thick filaments themselves do not change length, only slide past each other, the A-band stays constant while the I-band and H-zone shorten, the direct histological signature of this mechanism.
+With binding sites exposed, contraction proceeds through a repeating cycle at each myosin head: **(1)** an ATP-bound myosin head hydrolyzes ATP to ADP + Pi, cocking into a high-energy conformation; **(2)** the cocked head binds an exposed site on actin, forming a cross-bridge; **(3)** release of Pi triggers the **power stroke**: the head pivots, pulling the thin filament past the thick filament (the ADP is released at the end of this step); **(4)** a new ATP molecule binds the myosin head, causing it to detach from actin, resetting the cycle. Because myosin heads along a thick filament act asynchronously (some attached and pulling while others detach and reset), contraction is smooth rather than jerky. Because the thin and thick filaments themselves do not change length, only slide past each other, the A-band stays constant while the I-band and H-zone shorten, the direct histological signature of this mechanism.
 
 ![The myosin cross-bridge cycle on a single actin filament, five stages top to bottom: Attached (rigor configuration, no bound nucleotide), Released (ATP binds, affinity for actin drops), Cocked (ATP hydrolyzed to ADP+Pi, lever arm swings ~5nm), Re-binding and power stroke (weak rebinding to a new actin site, Pi release triggers the force-generating power stroke, ADP released), Force generating (back to a rigor-configuration attachment, head now at a new position on the filament)](/ANIMALPHYSIOPICS/cross-bridge-cycle-five-steps.png)
 *Source: Bruce Alberts et al., Molecular Biology of the Cell, on the myosin/actin cross-bridge cycle. Covers the same cycle as the four-step description in the text above, but this source breaks it into five stages (splitting "cocking" out as its own step) rather than four — captioned to match what's actually shown rather than force-fitting it to four. Same image as [Muscle Physiology](../../3-animal-physiology/Muscle-Physiology/), reused rather than duplicated.*
@@ -233,7 +233,7 @@ Myoglobin content (an oxygen-binding pigment structurally analogous to hemoglobi
 
 ### Motor Units
 
-A single motor neuron and every muscle fiber it innervates together form a **motor unit** — the smallest functionally controllable unit of contraction, since a motor neuron fires all-or-none and activates every fiber it contacts simultaneously. Motor unit size (fibers per neuron) is structurally tuned to function: fine-control muscles (e.g. extraocular eye muscles) have very small motor units (as few as ~10 fibers per neuron), while large postural/power muscles (e.g. the gastrocnemius) have motor units of a thousand fibers or more — a direct structure-function link between innervation ratio and the precision of movement a muscle is capable of.
+A single motor neuron and every muscle fiber it innervates together form a **motor unit**, the smallest functionally controllable unit of contraction, since a motor neuron fires all-or-none and activates every fiber it contacts simultaneously. Motor unit size (fibers per neuron) is structurally tuned to function: fine-control muscles (e.g. extraocular eye muscles) have very small motor units (as few as ~10 fibers per neuron), while large postural/power muscles (e.g. the gastrocnemius) have motor units of a thousand fibers or more — a direct structure-function link between innervation ratio and the precision of movement a muscle is capable of.
 
 ### Major Muscle Groups (Gross Anatomy)
 
@@ -242,7 +242,7 @@ High-yield named muscles for practical/dissection-style questions, organized by 
 - **Head/neck**: masseter (jaw closing), sternocleidomastoid (neck rotation/flexion, a key surface landmark).
 - **Trunk**: rectus abdominis, external/internal obliques, diaphragm (the primary muscle of respiration — structurally a skeletal muscle, functionally central to the [Human Respiratory System](../human-respiratory-system/)).
 - **Upper limb**: deltoid (shoulder abduction), biceps brachii/triceps brachii (antagonistic elbow flexor/extensor pair).
-- **Lower limb**: quadriceps femoris (knee extension), hamstrings (knee flexion, hip extension — antagonistic to quadriceps), gastrocnemius/soleus (ankle plantarflexion).
+- **Lower limb**: quadriceps femoris (knee extension), hamstrings (knee flexion, hip extension, antagonistic to quadriceps), gastrocnemius/soleus (ankle plantarflexion).
 
 ![Major superficial and deep muscles of the body, anterior view (deltoid, pectoralis major, rectus abdominis, biceps brachii, quadriceps, tibialis anterior, and more) and posterior view (trapezius, latissimus dorsi, triceps brachii, gluteus maximus, hamstrings, gastrocnemius, and more), each fully labeled.](/ANATOMYPICS/major-muscle-groups-anterior-posterior.jpg)
 *Source: OpenStax-style figure (via Lumen Learning)*

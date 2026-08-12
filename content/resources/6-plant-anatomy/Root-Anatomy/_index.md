@@ -11,7 +11,7 @@ syllabus_tags: ["IBO", "USABO", "plant-anatomy"]
 
 ## Overview
 
-The root is the first organ built almost entirely for absorption and anchorage rather than photosynthesis, and its internal arrangement — a central vascular cylinder wrapped by cortex, rather than the scattered or peripheral vascular arrangement seen in stems — reflects that division of labor directly. This page covers root structure at the tissue level; the meristem that generates it (the root apical meristem and its three growth zones) is covered on [Plant Tissue Systems](../plant-tissue-systems/).
+The root is the first organ built almost entirely for absorption and anchorage rather than photosynthesis, and its internal arrangement (a central vascular cylinder wrapped by cortex, rather than the scattered or peripheral vascular arrangement seen in stems) reflects that division of labor directly. This page covers root structure at the tissue level; the meristem that generates it (the root apical meristem and its three growth zones) is covered on [Plant Tissue Systems](../plant-tissue-systems/).
 
 ## Key Concepts
 
@@ -24,7 +24,7 @@ Roots occur in two structural patterns: a **taproot system** (one dominant prima
 
 ### Epidermis and Root Hairs
 
-The root epidermis (**epiblema** or **rhizodermis**) lacks the thick cuticle typical of shoot epidermis, since restricting water movement here would defeat the root's absorptive function. In the root hair zone (part of the zone of maturation, see [Plant Tissue Systems](../plant-tissue-systems/)), individual epidermal cells extend into tubular **root hairs** — not separate cells, but single-cell outgrowths — dramatically increasing absorptive surface area per unit root length; root hairs are short-lived, continuously produced closer to the tip as older ones die.
+The root epidermis (**epiblema** or **rhizodermis**) lacks the thick cuticle typical of shoot epidermis, since restricting water movement here would defeat the root's absorptive function. In the root hair zone (part of the zone of maturation, see [Plant Tissue Systems](../plant-tissue-systems/)), individual epidermal cells extend into tubular **root hairs** (not separate cells, but single-cell outgrowths), dramatically increasing absorptive surface area per unit root length; root hairs are short-lived, continuously produced closer to the tip as older ones die.
 
 ### Cortex
 
@@ -32,14 +32,14 @@ Internal to the epidermis, the **cortex** is mostly **parenchyma**, often with s
 
 ### Endodermis and the Casparian Strip
 
-The innermost layer of the cortex, the **endodermis**, is a single layer of tightly packed cells forming a structural checkpoint around the vascular cylinder. Each endodermal cell deposits a band of **suberin** (a waterproof, waxy substance) in its radial and transverse walls — the **Casparian strip** — running around the cell like a belt. Because the Casparian strip fuses with the adjacent cell's strip at every wall junction, it blocks the **apoplast pathway** (movement through cell walls and intercellular spaces) completely at this one layer: water and dissolved minerals travelling apoplastically from the epidermis inward are forced to cross a plasma membrane and enter the **symplast** (cell-to-cell via cytoplasm and plasmodesmata, see [Plant Tissue Systems](../plant-tissue-systems/)) at the endodermis, giving the plant a single, controllable membrane-transport checkpoint on everything entering the vascular cylinder — the structural basis for selective mineral uptake and the exclusion of larger or unwanted solutes before they reach the xylem. Scattered **passage cells** (endodermal cells that stay thin-walled, without a fully developed Casparian strip, typically opposite the xylem poles) allow continued water movement in roots where the endodermis has otherwise matured further (deposited a suberin lamella over the entire wall, or even a further lignified/thickened wall) with age.
+The innermost layer of the cortex, the **endodermis**, is a single layer of tightly packed cells forming a structural checkpoint around the vascular cylinder. Each endodermal cell deposits a band of **suberin** (a waterproof, waxy substance) in its radial and transverse walls (the **Casparian strip**), running around the cell like a belt. Because the Casparian strip fuses with the adjacent cell's strip at every wall junction, it blocks the **apoplast pathway** (movement through cell walls and intercellular spaces) completely at this one layer: water and dissolved minerals travelling apoplastically from the epidermis inward are forced to cross a plasma membrane and enter the **symplast** (cell-to-cell via cytoplasm and plasmodesmata, see [Plant Tissue Systems](../plant-tissue-systems/)) at the endodermis, giving the plant a single, controllable membrane-transport checkpoint on everything entering the vascular cylinder. This is the structural basis for selective mineral uptake and the exclusion of larger or unwanted solutes before they reach the xylem. Scattered **passage cells** (endodermal cells that stay thin-walled, without a fully developed Casparian strip, typically opposite the xylem poles) allow continued water movement in roots where the endodermis has otherwise matured further (deposited a suberin lamella over the entire wall, or even a further lignified/thickened wall) with age.
 
 ![A single endodermal cell junction: cortex, the Casparian strip (containing suberin) running along the radial wall, and the pericycle, with an inset showing the strip's belt-like shape around the cell.](/PLANTANATPICS/casparian-strip-endodermal-cell.jpg)
 *Source: biocyclopedia.com*
 
 ### Pericycle and Lateral Root Origin
 
-Immediately internal to the endodermis, the **pericycle** is a layer (one or more cells thick) that, unlike most other mature root tissue, retains meristematic potential. **Lateral roots originate from pericycle cell divisions** — meaning new roots arise from a deep-seated internal tissue layer and must grow outward through the cortex and epidermis to emerge, an **endogenous** origin. This is a specific, testable structural contrast with lateral shoot branches, which arise **exogenously** from axillary buds already at the stem surface (see [Stem Anatomy](../stem-anatomy/)) — the same "lateral organ" concept, opposite tissue origin, in root versus shoot.
+Immediately internal to the endodermis, the **pericycle** is a layer (one or more cells thick) that, unlike most other mature root tissue, retains meristematic potential. **Lateral roots originate from pericycle cell divisions**: meaning new roots arise from a deep-seated internal tissue layer and must grow outward through the cortex and epidermis to emerge, an **endogenous** origin. This is a specific, testable structural contrast with lateral shoot branches, which arise **exogenously** from axillary buds already at the stem surface (see [Stem Anatomy](../stem-anatomy/)) — the same "lateral organ" concept, opposite tissue origin, in root versus shoot.
 
 ![Microscope cross-section of a root showing an emerging lateral root pushing through the cortex and epidermis, with epidermis, root hair, cortex, endodermis, passage cells, pericycle, pith, phloem, and protoxylem/metaxylem vessels all labeled.](/PLANTANATPICS/lateral-root-emergence.jpg)
 *Source: Wikipedia, "Lateral root" (en.wikipedia.org/wiki/Lateral_root)*
@@ -48,12 +48,12 @@ Immediately internal to the endodermis, the **pericycle** is a layer (one or mor
 
 At the center of the root, the **stele** (vascular cylinder) shows a fundamentally different xylem/phloem arrangement than the stem, and one that differs further between monocots and dicots:
 
-- **Dicot roots** — xylem forms a solid, star-shaped core (an **actinostele**) with a small number of arms (**diarch** = 2 arms, **triarch** = 3, **tetrarch** = 4, etc., depending on species), phloem occupying the bays between adjacent xylem arms. Pith is typically absent or minimal — the xylem core occupies most of the stele's center.
+- **Dicot roots**: xylem forms a solid, star-shaped core (an **actinostele**) with a small number of arms (**diarch** = 2 arms, **triarch** = 3, **tetrarch** = 4, etc., depending on species), phloem occupying the bays between adjacent xylem arms. Pith is typically absent or minimal — the xylem core occupies most of the stele's center.
 
 ![Dicot (tetrarch) root cross-section: unicellular hair, epiblema, cortex, endodermis, pericycle, a small central pith, phloem, and metaxylem/protoxylem all labeled.](/PLANTANATPICS/dicot-root-cross-section.webp)
 *Source: GeeksforGeeks (geeksforgeeks.org)*
 
-- **Monocot roots** — xylem and phloem form an alternating ring around a large, prominent central **pith** (usually parenchyma, sometimes with sclerenchyma reinforcement), rather than xylem filling the center — described further in comparison on [Monocot vs Dicot Comparative Anatomy](../monocot-dicot-comparative-anatomy/). Monocot roots also typically show more numerous xylem poles (**polyarch**) than dicot roots.
+- **Monocot roots**: xylem and phloem form an alternating ring around a large, prominent central **pith** (usually parenchyma, sometimes with sclerenchyma reinforcement), rather than xylem filling the center — described further in comparison on [Monocot vs Dicot Comparative Anatomy](../monocot-dicot-comparative-anatomy/). Monocot roots also typically show more numerous xylem poles (**polyarch**) than dicot roots.
 
 ![Monocot root cross-section: epidermis, cortex, endodermis, and a stele with pericycle, xylem, pith, and phloem all labeled.](/PLANTANATPICS/monocot-root-cross-section.jpg)
 *Source: BioRender template gallery (biorender.com)*
@@ -89,7 +89,7 @@ In both cases root xylem matures **exarch** (the earliest-matured protoxylem lie
 
 {{< iframe src="/monocot-dicot-root-stele-toggle.html" title="Monocot vs. dicot root stele toggle" height="480px" >}}
 
-*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. No usable image was found for the root hair zone longitudinal section — dropped from this pass.)*
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. No usable image was found for the root hair zone longitudinal section, dropped from this pass.)*
 
 ## Practice Problems
 

@@ -6,7 +6,7 @@ description: "Cell structure, biomolecules, enzymes, membrane transport, and cor
 
 This unit covers the biological foundations that the rest of the syllabus builds on: how cells are organised and communicate, how the genome is stored, copied, read, and regulated, and the core chemistry of the molecules that make all of it possible. It presumes basic high-school chemistry and mathematics; if you want to firm up the basics first, these handouts are a good starting point: [Biochemistry Handout, Part 1](https://pyukey.github.io/Pandoraxpdfs/Pandorax/USABO/Cells/USABO_Biochemistry_Handout.pdf), [Part 2](https://pyukey.github.io/Pandoraxpdfs/Pandorax/USABO/Cells/USABO_Biochemistry_Part_Two_Handout.pdf).
 
-The section is organised in three tiers: **Cell Biology** (how cells are structured and organised), **Molecular Biology** (how the genome is stored, copied, and expressed), and **Biochemistry** (the chemistry underlying it all). Start with Cell Theory below if you're new to the subject — everything else builds on it.
+The section is organised in three tiers: **Cell Biology** (how cells are structured and organised), **Molecular Biology** (how the genome is stored, copied, and expressed), and **Biochemistry** (the chemistry underlying it all). Start with Cell Theory below if you're new to the subject: everything else builds on it.
 
 {{< cards cols="1" >}}
   {{< card link="cell-theory-prokaryotes-eukaryotes/" title="1. Cell Theory, Prokaryotes & Eukaryotes" subtitle="The three tenets of cell theory and the structural/genomic distinctions between prokaryotic and eukaryotic cells — read this first." >}}

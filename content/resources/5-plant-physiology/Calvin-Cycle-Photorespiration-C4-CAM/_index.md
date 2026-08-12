@@ -11,7 +11,7 @@ syllabus_tags: ["IBO", "USABO", "plant-physiology"]
 
 ## Overview
 
-The light reactions (see [Light Reactions & Photophosphorylation](../light-reactions-photophosphorylation/)) produce ATP and NADPH but no sugar; carbon fixation uses those carriers to actually build carbohydrate from atmospheric CO₂. This page covers the **Calvin cycle** itself, the costly side-reaction (**photorespiration**) that its central enzyme is prone to under hot, dry, high-light conditions, and the two independent biochemical fixes — **C4** and **CAM** metabolism — that most severely affected lineages evolved to suppress it. [Leaf Anatomy](../../6-plant-anatomy/leaf-anatomy/) already covered the anatomical arrangement enabling each fix (Kranz anatomy's bundle sheath ring, CAM's succulent water-storing mesophyll); this page covers the biochemistry that arrangement exists to support.
+The light reactions (see [Light Reactions & Photophosphorylation](../light-reactions-photophosphorylation/)) produce ATP and NADPH but no sugar; carbon fixation uses those carriers to actually build carbohydrate from atmospheric CO₂. This page covers the **Calvin cycle** itself, the costly side-reaction (**photorespiration**) that its central enzyme is prone to under hot, dry, high-light conditions, and the two independent biochemical fixes (**C4** and **CAM** metabolism) that most severely affected lineages evolved to suppress it. [Leaf Anatomy](../../6-plant-anatomy/leaf-anatomy/) already covered the anatomical arrangement enabling each fix (Kranz anatomy's bundle sheath ring, CAM's succulent water-storing mesophyll); this page covers the biochemistry that arrangement exists to support.
 
 ## Key Concepts
 
@@ -19,23 +19,23 @@ The light reactions (see [Light Reactions & Photophosphorylation](../light-react
 
 The Calvin cycle runs in the chloroplast stroma in three phases, using 3 CO₂ molecules (fixed one at a time) as a convenient unit to track the stoichiometry through a full turn:
 
-1. **Carbon fixation** — **Rubisco** (ribulose-1,5-bisphosphate carboxylase/oxygenase, the most abundant enzyme on Earth by mass, a reflection of how slow and inefficient its carboxylase reaction is per active site) catalyzes the addition of CO₂ to the 5-carbon sugar **RuBP**, producing an unstable 6-carbon intermediate that immediately splits into two molecules of the 3-carbon compound **3-phosphoglycerate (3-PGA)**.
-2. **Reduction** — each 3-PGA is phosphorylated by ATP and then reduced by NADPH (both supplied by the light reactions) to **glyceraldehyde-3-phosphate (G3P)**. This is the cycle's only redox step and the point where light-reaction energy is actually invested into a carbon skeleton. Of every 6 G3P produced per 3 CO₂ fixed, 1 exits the cycle as net carbohydrate output (used for sucrose or starch synthesis); the remaining 5 continue to phase 3.
+1. **Carbon fixation**: **Rubisco** (ribulose-1,5-bisphosphate carboxylase/oxygenase, the most abundant enzyme on Earth by mass, a reflection of how slow and inefficient its carboxylase reaction is per active site) catalyzes the addition of CO₂ to the 5-carbon sugar **RuBP**, producing an unstable 6-carbon intermediate that immediately splits into two molecules of the 3-carbon compound **3-phosphoglycerate (3-PGA)**.
+2. **Reduction**, in which each 3-PGA is phosphorylated by ATP and then reduced by NADPH (both supplied by the light reactions) to **glyceraldehyde-3-phosphate (G3P)**. This is the cycle's only redox step and the point where light-reaction energy is actually invested into a carbon skeleton. Of every 6 G3P produced per 3 CO₂ fixed, 1 exits the cycle as net carbohydrate output (used for sucrose or starch synthesis); the remaining 5 continue to phase 3.
 3. **Regeneration** — the remaining 5 G3P (15 carbons total) are rearranged through a series of enzymatic steps back into 3 molecules of RuBP (15 carbons), consuming additional ATP, so the cycle can continue fixing new CO₂.
 
-Net cost per 3 CO₂ fixed: 9 ATP and 6 NADPH consumed for 1 net G3P produced — a stoichiometry worth knowing because it is exactly what makes the ATP:NADPH ratio delivered by the light reactions matter, and exactly why cyclic electron flow (see [Light Reactions & Photophosphorylation](../light-reactions-photophosphorylation/)) exists to supplement ATP output when this ratio runs short.
+Net cost per 3 CO₂ fixed: 9 ATP and 6 NADPH consumed for 1 net G3P produced. That stoichiometry is worth knowing because it is exactly what makes the ATP:NADPH ratio delivered by the light reactions matter, and exactly why cyclic electron flow (see [Light Reactions & Photophosphorylation](../light-reactions-photophosphorylation/)) exists to supplement ATP output when this ratio runs short.
 
 ![Full Calvin cycle: 3 CO2 fixed onto RuBP by RuBisCO (stage 1, carbon fixation) yields 6 3-PGA, reduced using 6 ATP and 6 NADPH to 6 G3P (stage 2), of which 1 exits as net output and the remaining 5 are rearranged using 3 more ATP back into 3 RuBP (stage 3, regeneration)](/PLANTPHYSIOPICS/calvin-cycle-full.png)
 *Source: Biology LibreTexts*
 
 ### Photorespiration: Rubisco's Oxygenase Side-Reaction
 
-Rubisco's active site cannot perfectly discriminate between CO₂ and O₂, and under conditions that lower the local CO₂:O₂ ratio at the active site — high temperature (which lowers CO₂ solubility relative to O₂ and increases Rubisco's relative affinity for O₂), and stomatal closure under water stress (which restricts fresh CO₂ entry while O₂ from ongoing photosynthesis accumulates, see [Stomatal Physiology & Gas Exchange](../stomatal-physiology-gas-exchange/)) — Rubisco increasingly catalyzes **oxygenation** of RuBP instead of carboxylation.
+Rubisco's active site cannot perfectly discriminate between CO₂ and O₂, and under conditions that lower the local CO₂:O₂ ratio at the active site, such as high temperature (which lowers CO₂ solubility relative to O₂ and increases Rubisco's relative affinity for O₂) and stomatal closure under water stress (which restricts fresh CO₂ entry while O₂ from ongoing photosynthesis accumulates, see [Stomatal Physiology & Gas Exchange](../stomatal-physiology-gas-exchange/)), Rubisco increasingly catalyzes **oxygenation** of RuBP instead of carboxylation.
 
 ![Rubisco's dual reaction as a shared branch point: with CO2 (left), RuBP carboxylation feeds ordinary photosynthesis, consuming ATP/NADPH and yielding 2x 3PGA/sugars; with O2 (right), oxygenation feeds photorespiration instead, consuming ATP/NADPH/CO2 and yielding a 3PGA+2PG mixture that ultimately releases CO2](/PLANTPHYSIOPICS/rubisco-carboxylase-oxygenase.png)
 *Source: Encyclopedia (encyclopedia.pub), entry 9827*
 
-This produces one molecule of 3-PGA (usable) and one of **2-phosphoglycolate**, a toxic 2-carbon compound that is not part of the Calvin cycle and must be salvaged through the **photorespiration (glycolate) pathway**, a costly process spanning three organelles (chloroplast, peroxisome, mitochondrion) that recovers only 3 of every 4 carbons entering it as usable product, consumes additional ATP, and releases the fourth carbon as CO₂ — a net loss of both fixed carbon and previously invested energy, and the direct biochemical reason C3 photosynthesis becomes inefficient under hot, dry, high-light conditions.
+This produces one molecule of 3-PGA (usable) and one of **2-phosphoglycolate**, a toxic 2-carbon compound that is not part of the Calvin cycle and must be salvaged through the **photorespiration (glycolate) pathway**, a costly process spanning three organelles (chloroplast, peroxisome, mitochondrion) that recovers only 3 of every 4 carbons entering it as usable product, consumes additional ATP, and releases the fourth carbon as CO₂, a net loss of both fixed carbon and previously invested energy, and the direct biochemical reason C3 photosynthesis becomes inefficient under hot, dry, high-light conditions.
 
 ![Photorespiration (glycolate pathway) spanning three organelles: chloroplast Rubisco splits between 3-PGA and 2-PG (energy loss versus ordinary photosynthesis), the peroxisome converts glycolate through glyoxylate/glycine, and the mitochondrion converts glycine to serine, releasing both NH3 (re-assimilated at ATP cost) and CO2 (a net carbon loss)](/PLANTPHYSIOPICS/photorespiration-glycolate-pathway.png)
 *Source: New Phytologist*
@@ -44,8 +44,8 @@ This produces one molecule of 3-PGA (usable) and one of **2-phosphoglycolate**, 
 
 C4 plants suppress photorespiration by physically separating initial CO₂ capture from the Calvin cycle, using the **Kranz anatomy** already described structurally on [Leaf Anatomy](../../6-plant-anatomy/leaf-anatomy/) (mesophyll cells surrounding an enlarged, chloroplast-rich bundle sheath):
 
-1. In **mesophyll cells**, atmospheric CO₂ (as HCO₃⁻) is fixed by **PEP carboxylase** onto the 3-carbon compound **PEP (phosphoenolpyruvate)**, producing the 4-carbon compound **oxaloacetate** — the reaction giving C4 photosynthesis its name. Critically, PEP carboxylase has no oxygenase activity at all and a much higher affinity for its substrate than Rubisco, so this initial fixation step is essentially immune to the O₂ competition that plagues Rubisco directly.
-2. Oxaloacetate is converted to **malate** (or in some species aspartate) and shuttled through plasmodesmata into the adjacent bundle sheath cell — the anatomical adjacency and abundant plasmodesmatal connections Kranz anatomy specifically provides.
+1. In **mesophyll cells**, atmospheric CO₂ (as HCO₃⁻) is fixed by **PEP carboxylase** onto the 3-carbon compound **PEP (phosphoenolpyruvate)**, producing the 4-carbon compound **oxaloacetate**, the reaction giving C4 photosynthesis its name. Critically, PEP carboxylase has no oxygenase activity at all and a much higher affinity for its substrate than Rubisco, so this initial fixation step is essentially immune to the O₂ competition that plagues Rubisco directly.
+2. Oxaloacetate is converted to **malate** (or in some species aspartate) and shuttled through plasmodesmata into the adjacent bundle sheath cell, the anatomical adjacency and abundant plasmodesmatal connections Kranz anatomy specifically provides.
 3. Inside the bundle sheath, malate is decarboxylated, releasing CO₂ at a locally very high concentration directly around Rubisco, which now runs the ordinary Calvin cycle (identical biochemistry to C3, just physically relocated) under conditions where the oxygenase side-reaction is strongly suppressed by the elevated local CO₂:O₂ ratio.
 4. The resulting 3-carbon compound (pyruvate) is shuttled back to the mesophyll cell and converted back to PEP (consuming additional ATP), regenerating the initial CO₂ acceptor for another cycle.
 
@@ -58,7 +58,7 @@ This spatial separation costs extra ATP per CO₂ fixed compared to C3 (for the 
 
 CAM plants achieve a related benefit through *time* rather than *space*, using the same cell for both steps rather than two anatomically distinct cell types (consistent with CAM leaf anatomy lacking Kranz anatomy, see [Leaf Anatomy](../../6-plant-anatomy/leaf-anatomy/)):
 
-- **At night**, stomata open (evaporative water loss is minimized in the cooler, more humid nighttime air, see [Stomatal Physiology & Gas Exchange](../stomatal-physiology-gas-exchange/)) and CO₂ is fixed by the same **PEP carboxylase** reaction C4 uses, producing oxaloacetate, then malate — but here malate is stored overnight as **malic acid** in the cell's large vacuole (the structural feature CAM leaf anatomy is specifically built around).
+- **At night**, stomata open (evaporative water loss is minimized in the cooler, more humid nighttime air, see [Stomatal Physiology & Gas Exchange](../stomatal-physiology-gas-exchange/)) and CO₂ is fixed by the same **PEP carboxylase** reaction C4 uses, producing oxaloacetate, then malate. But here malate is stored overnight as **malic acid** in the cell's large vacuole (the structural feature CAM leaf anatomy is specifically built around).
 - **During the day**, stomata close (limiting water loss during the hottest, driest, highest-evaporative-demand period), and the stored malic acid is decarboxylated, releasing CO₂ internally at high concentration directly to Rubisco and the Calvin cycle, run using ATP/NADPH from the light reactions occurring in the same illuminated cell at the same time.
 
 Because CO₂ uptake (night) and CO₂ fixation via the Calvin cycle (day) are separated in time rather than location, a single mesophyll cell type suffices, at the cost of requiring large-volume malic acid storage between the two phases — directly explaining the enlarged vacuoles CAM leaf anatomy shows structurally.
@@ -119,7 +119,7 @@ Because CO₂ uptake (night) and CO₂ fixation via the Calvin cycle (day) are s
   var positions = [
     {x:130,y:35,text:'Turn begins: 3 CO2 entering the cycle to combine with 3 RuBP.'},
     {x:212,y:177,text:'Fixation: RuBisCO combines each CO2 with RuBP, producing 6 molecules of 3-PGA.'},
-    {x:130,y:235,text:'Reduction: 6 ATP and 6 NADPH reduce the 6 3-PGA to 6 G3P — the cycle’s only redox step.'},
+    {x:130,y:235,text:'Reduction: 6 ATP and 6 NADPH reduce the 6 3-PGA to 6 G3P, the cycle’s only redox step.'},
     {x:88,y:206,text:'Output: 1 of the 6 G3P exits the cycle as net carbohydrate product.'},
     {x:48,y:177,text:'Regeneration: the remaining 5 G3P are rearranged, using 3 more ATP, back into 3 RuBP.'}
   ];
@@ -148,7 +148,7 @@ Because CO₂ uptake (night) and CO₂ fixation via the Calvin cycle (day) are s
 })();
 </script>
 
-- **C3 vs. C4 vs. CAM CO2 pathway toggle** — a single diagram frame toggles between the three modes, visually showing where (C3: one cell; C4: two adjacent cell types) or when (CAM: night vs. day, same cell) each fixation step occurs, paired with the Kranz/CAM anatomy diagrams already specified on Leaf Anatomy.
+- **C3 vs. C4 vs. CAM CO2 pathway toggle**: a single diagram frame toggles between the three modes, visually showing where (C3: one cell; C4: two adjacent cell types) or when (CAM: night vs. day, same cell) each fixation step occurs, paired with the Kranz/CAM anatomy diagrams already specified on Leaf Anatomy.
 
 <div id="pathway-toggle-widget" style="background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:'Inter','Segoe UI',Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
   <svg viewBox="0 0 400 170" width="100%" style="max-width:420px; display:block; margin:0 auto;">

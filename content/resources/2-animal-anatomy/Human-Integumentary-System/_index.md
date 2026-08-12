@@ -11,7 +11,7 @@ syllabus_tags: ["IBO", "USABO", "human-anatomy"]
 
 ## Overview
 
-Skin is the body's largest organ by surface area, and structurally one of the most information-dense — a cross-section shows layered epithelium, embedded sensory receptors, glands, and appendage-generating structures all in a few millimeters of thickness. This page covers that structure at the depth IBO exams test: named epidermal strata, dermal receptor types, and the mechanistic link between structure and thermoregulatory/sensory function.
+Skin is the body's largest organ by surface area, and structurally one of the most information-dense. A cross-section shows layered epithelium, embedded sensory receptors, glands, and appendage-generating structures all in a few millimeters of thickness. This page covers that structure at the depth IBO exams test: named epidermal strata, dermal receptor types, and the mechanistic link between structure and thermoregulatory/sensory function.
 
 ## Key Concepts
 
@@ -27,12 +27,12 @@ The epidermis is stratified squamous epithelium (see [Body Plans](../body-plans/
 | **Lucidum** | Thin, clear layer of dead, densely packed cells, present only in thick skin |
 | **Corneum** | Many layers of dead, flattened, fully keratinized cells (**corneocytes**) that are continuously shed (desquamation) and replaced from below |
 
-This basale-to-corneum progression is a single continuous process, **keratinization**: a cell born at the basale migrates outward over roughly 2–4 weeks, progressively filling with keratin, losing its nucleus and organelles, and finally becoming a dead, flattened, keratin-filled sac that is mechanically tough and metabolically inert — the structural basis of the epidermis's barrier function. Thin skin (most of the body) has the same layer sequence minus the stratum lucidum, and a thinner stratum corneum.
+This basale-to-corneum progression is a single continuous process, **keratinization**: a cell born at the basale migrates outward over roughly 2–4 weeks, progressively filling with keratin, losing its nucleus and organelles, and finally becoming a dead, flattened, keratin-filled sac that is mechanically tough and metabolically inert, the structural basis of the epidermis's barrier function. Thin skin (most of the body) has the same layer sequence minus the stratum lucidum, and a thinner stratum corneum.
 
 ![Full-thickness skin block showing epidermis, dermis, and subcutaneous tissue with a hair follicle (A), and a zoomed view of the epidermis with all five strata labeled: stratum corneum, lucidum, granulosum, spinosum, and basale (B).](/ANATOMYPICS/skin-cross-section-five-strata.png)
 *Source: user-sourced textbook-style figure. Exact match, both the full-thickness overview and the five-strata close-up.*
 
-**Epidermal cell types**, beyond the keratinocytes that make up the bulk of every layer: **melanocytes** (stratum basale, produce the pigment melanin in organelles called melanosomes, then transfer melanosomes to surrounding keratinocytes via dendritic processes — melanin content, not melanocyte number, which is roughly constant across skin tones, is what differs between individuals); **Langerhans cells** (stratum spinosum, dendritic, antigen-presenting immune cells — the skin's front-line immune surveillance); **Merkel cells** (stratum basale, associated with sensory nerve endings, function in light touch discrimination).
+**Epidermal cell types**, beyond the keratinocytes that make up the bulk of every layer: **melanocytes** (stratum basale, produce the pigment melanin in organelles called melanosomes, then transfer melanosomes to surrounding keratinocytes via dendritic processes; melanin content, not melanocyte number, which is roughly constant across skin tones, is what differs between individuals); **Langerhans cells** (stratum spinosum, dendritic, antigen-presenting immune cells, the skin's front-line immune surveillance); **Merkel cells** (stratum basale, associated with sensory nerve endings, function in light touch discrimination).
 
 ![Top-left inset: a dendritic melanocyte (brown) transferring melanosomes (black granules) directly to surrounding keratinocytes. Main panel: a separate, more technical diagram of intracellular melanosome transport within a melanocyte, showing dynein motor proteins carrying melanosomes along microtubules toward the cell body.](/ANATOMYPICS/melanosome-transfer-melanocyte-keratinocyte.png)
 *Source: user-sourced research figure. Only the small inset actually shows transfer to keratinocytes as described in the text; the larger main diagram illustrates a related but distinct process — intracellular dynein/microtubule-based melanosome trafficking within the melanocyte itself, not the transfer step. Included because the inset is a genuine match; captioned honestly about the mismatch in the main panel.*
@@ -41,7 +41,7 @@ This basale-to-corneum progression is a single continuous process, **keratinizat
 
 Beneath the epidermis, separated by the basement membrane, the dermis is dense irregular/dense regular connective tissue (see [Body Plans](../body-plans/)) in two sublayers:
 
-- **Papillary layer** — thin, loose connective tissue, forms finger-like **dermal papillae** projecting into the epidermis (increasing the interface surface area and mechanical interlock between the two layers — the structural basis of fingerprints, where papillae are arranged in patterned ridges); rich in capillary loops and Meissner's corpuscles (see below).
+- **Papillary layer**: thin, loose connective tissue, forms finger-like **dermal papillae** projecting into the epidermis (increasing the interface surface area and mechanical interlock between the two layers, the structural basis of fingerprints, where papillae are arranged in patterned ridges); rich in capillary loops and Meissner's corpuscles (see below).
 - **Reticular layer** — thicker, dense irregular connective tissue with interwoven collagen and elastin fibers providing tensile strength and elasticity; contains most of the skin's glands, hair follicles, and deeper sensory receptors.
 
 ![Histology section showing the epidermis sitting atop the papillary dermis (finger-like projections interlocking with the epidermal underside) and the deeper, denser reticular dermis.](/ANATOMYPICS/dermal-papillae-epidermal-junction.jpg)
@@ -91,7 +91,7 @@ Beneath the epidermis, separated by the basement membrane, the dermis is dense i
 (function(){
   var info = {
     corneum: { name: 'Stratum Corneum', desc: 'Many layers of dead, flattened, fully keratinized corneocytes, continuously shed (desquamation) and replaced from below.' },
-    lucidum: { name: 'Stratum Lucidum', desc: 'Thin, clear layer of dead, densely packed cells — present only in thick skin (palms, soles).' },
+    lucidum: { name: 'Stratum Lucidum', desc: 'Thin, clear layer of dead, densely packed cells, present only in thick skin (palms, soles).' },
     granulosum: { name: 'Stratum Granulosum', desc: 'Cells flattening, accumulating keratohyalin granules (keratin precursor) and lamellar granules (secrete a lipid barrier); nuclei begin to degrade.' },
     spinosum: { name: 'Stratum Spinosum', desc: 'Several layers of polyhedral cells joined by desmosomes; contains Langerhans cells (antigen-presenting immune surveillance).' },
     basale: { name: 'Stratum Basale', desc: 'Single layer of mitotically active cuboidal/columnar cells on the basement membrane — the source of all epidermal renewal; also contains melanocytes and Merkel cells.' },
@@ -122,7 +122,7 @@ Not part of the skin proper, but adipose-rich connective tissue anchoring the de
 
 ### Hair Structure and Growth Cycle
 
-A hair follicle is an epidermal invagination into the dermis, structured around a **hair bulb** at its base, which encloses the **dermal papilla** (a connective-tissue projection carrying the blood supply that nourishes the actively dividing **hair matrix** cells surrounding it). Matrix cells proliferate and keratinize (the same keratinization process as the epidermis, but producing hard, compact hair keratin rather than the epidermis's softer keratin) to form the hair shaft, which grows outward through the follicle. Each follicle cycles through three phases: **anagen** (active growth, lasting years on the scalp), **catagen** (brief regression, the follicle base degenerates), and **telogen** (resting, the old hair is eventually shed as a new anagen phase begins beneath it) — follicles cycle asynchronously, which is why hair loss is normally continuous and unnoticeable rather than occurring in synchronized waves. A small band of smooth muscle, the **arrector pili**, attaches to each follicle at an angle; its contraction (sympathetically controlled) pulls the hair more upright and dimples the skin surface ("goosebumps") — in animals with a fuller coat this traps an insulating air layer, a thermoregulatory function largely vestigial in humans.
+A hair follicle is an epidermal invagination into the dermis, structured around a **hair bulb** at its base, which encloses the **dermal papilla** (a connective-tissue projection carrying the blood supply that nourishes the actively dividing **hair matrix** cells surrounding it). Matrix cells proliferate and keratinize (the same keratinization process as the epidermis, but producing hard, compact hair keratin rather than the epidermis's softer keratin) to form the hair shaft, which grows outward through the follicle. Each follicle cycles through three phases: **anagen** (active growth, lasting years on the scalp), **catagen** (brief regression, the follicle base degenerates), and **telogen** (resting, the old hair is eventually shed as a new anagen phase begins beneath it). Follicles cycle asynchronously, which is why hair loss is normally continuous and unnoticeable rather than occurring in synchronized waves. A small band of smooth muscle, the **arrector pili**, attaches to each follicle at an angle; its contraction (sympathetically controlled) pulls the hair more upright and dimples the skin surface ("goosebumps"), in animals with a fuller coat this traps an insulating air layer, a thermoregulatory function largely vestigial in humans.
 
 ![Detailed hair follicle cross-section labeling the hard-keratin shaft (medulla, cortex, hair cuticle), the surrounding root sheaths and glassy membrane, the matrix and hair root at the follicle base, the connective tissue papilla, and the adjacent arrector pili muscle and sebaceous gland.](/ANATOMYPICS/hair-follicle-structure.png)
 *Source: user-sourced textbook-style figure*
@@ -146,7 +146,7 @@ A hair follicle is an epidermal invagination into the dermis, structured around 
       <button id="hairStepBtn" style="padding:6px 16px; border:none; border-radius:30px; background:#2d6a4f; color:white; cursor:pointer; font-weight:500; font-size:0.85rem;">Step to next phase →</button>
       <div style="margin-top:1rem;">
         <button id="hairWhyBtn" style="padding:6px 14px; border:2px solid #b1650f; border-radius:20px; background:white; color:#b1650f; cursor:pointer; font-weight:500; font-size:0.8rem;">Why don't we go bald from normal shedding?</button>
-        <div id="hairWhyAnswer" style="display:none; font-size:0.85rem; color:#4b5563; margin-top:0.6rem;">Because thousands of follicles cycle <strong>asynchronously</strong> — each on its own independent timer — at any moment some are in anagen while others are in catagen or telogen. Shedding is spread continuously across the whole scalp rather than happening in one synchronized wave, so hair loss is normally unnoticeable.</div>
+        <div id="hairWhyAnswer" style="display:none; font-size:0.85rem; color:#4b5563; margin-top:0.6rem;">Because thousands of follicles cycle <strong>asynchronously</strong>, each on its own independent timer, at any moment some are in anagen while others are in catagen or telogen. Shedding is spread continuously across the whole scalp rather than happening in one synchronized wave, so hair loss is normally unnoticeable.</div>
       </div>
     </div>
   </div>
@@ -206,13 +206,13 @@ The **nail plate** (a flattened sheet of hard keratin, structurally continuous w
 
 ### Glands
 
-- **Sebaceous glands** — associated with hair follicles (opening into the follicle rather than directly onto the skin surface in most locations), holocrine secretion (the entire cell disintegrates to release its contents) producing **sebum**, an oily/waxy mixture that lubricates hair and skin and contributes to the skin's antimicrobial barrier.
+- **Sebaceous glands**: associated with hair follicles (opening into the follicle rather than directly onto the skin surface in most locations), holocrine secretion (the entire cell disintegrates to release its contents) producing **sebum**, an oily/waxy mixture that lubricates hair and skin and contributes to the skin's antimicrobial barrier.
 - **Eccrine sweat glands** — simple coiled tubular glands, found over nearly the entire body surface, ducts opening directly onto the skin surface; the primary thermoregulatory sweat glands, secreting a dilute, largely aqueous fluid.
-- **Apocrine sweat glands** — restricted to the axillary and anogenital regions, ducts opening into hair follicles rather than directly onto the surface, become active at puberty, secrete a more viscous, protein-rich fluid that is odorless until metabolized by skin surface bacteria.
+- **Apocrine sweat glands**: restricted to the axillary and anogenital regions, ducts opening into hair follicles rather than directly onto the surface, become active at puberty, secrete a more viscous, protein-rich fluid that is odorless until metabolized by skin surface bacteria.
 
 ### Thermoregulatory Structure
 
-Two independent structural mechanisms, both under autonomic (sympathetic) control, work in the skin to regulate core body temperature: **eccrine sweat evaporation** (evaporative heat loss — sweat's latent heat of vaporization is drawn from the skin surface, cooling the body) and **dermal blood vessel caliber** (vasodilation of the dermal vascular plexus increases blood flow near the skin surface, promoting radiative/convective heat loss; vasoconstriction reduces it, conserving core heat). Both mechanisms depend directly on the dermal structures described above — the dense dermal capillary network and the eccrine gland distribution — making thermoregulation a direct structure-function extension of this page's anatomy, even though the autonomic control itself is physiology.
+Two independent structural mechanisms, both under autonomic (sympathetic) control, work in the skin to regulate core body temperature: **eccrine sweat evaporation** (evaporative heat loss — sweat's latent heat of vaporization is drawn from the skin surface, cooling the body) and **dermal blood vessel caliber** (vasodilation of the dermal vascular plexus increases blood flow near the skin surface, promoting radiative/convective heat loss; vasoconstriction reduces it, conserving core heat). Both mechanisms depend directly on the dermal structures described above (the dense dermal capillary network and the eccrine gland distribution), making thermoregulation a direct structure-function extension of this page's anatomy, even though the autonomic control itself is physiology.
 
 ## Comparative Structures
 

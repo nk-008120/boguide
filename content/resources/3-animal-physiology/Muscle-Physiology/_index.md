@@ -43,18 +43,18 @@ Released Ca²⁺ binds **troponin**, a regulatory protein complex on the thin (a
 
 **Myosin cross-bridge cycling** then proceeds through a fixed mechanical sequence:
 
-1. **Cross-bridge formation** — the myosin head (already ADP+Pi-bound from the previous cycle) binds the now-exposed actin site.
-2. **Power stroke** — the myosin head releases Pi then ADP, pivoting and pulling the thin filament past the thick filament (this pivot is the actual force-generating step, and is why the mechanism is termed "sliding" — filament *length* does not change, only the degree of overlap).
+1. **Cross-bridge formation**: the myosin head (already ADP+Pi-bound from the previous cycle) binds the now-exposed actin site.
+2. **Power stroke**: the myosin head releases Pi then ADP, pivoting and pulling the thin filament past the thick filament (this pivot is the actual force-generating step, and is why the mechanism is termed "sliding" — filament *length* does not change, only the degree of overlap).
 3. **Rigor** — briefly, myosin remains tightly bound to actin with no bound nucleotide (this is the state responsible for rigor mortis after death, when ATP synthesis stops and no fresh ATP is available to allow detachment).
-4. **Detachment** — a fresh ATP molecule binds myosin, causing it to release actin.
+4. **Detachment**: a fresh ATP molecule binds myosin, causing it to release actin.
 5. **Cocking** — myosin hydrolyzes the bound ATP to ADP+Pi, re-cocking the head to its high-energy conformation, ready to bind actin again if Ca²⁺/troponin/tropomyosin still permit it.
 
 ![The myosin cross-bridge cycle on a single actin filament, five stages top to bottom: Attached (rigor configuration, no bound nucleotide), Released (ATP binds, affinity for actin drops), Cocked (ATP hydrolyzed to ADP+Pi, lever arm swings ~5nm), Re-binding and power stroke (weak rebinding to a new actin site, Pi release triggers the force-generating power stroke, ADP released), Force generating (back to a rigor-configuration attachment, head now at a new position on the filament)](/ANIMALPHYSIOPICS/cross-bridge-cycle-five-steps.png)
 *Source: Bruce Alberts et al., Molecular Biology of the Cell, on the myosin/actin cross-bridge cycle.*
 
-This cycle repeats asynchronously across the many myosin heads in a sarcomere for as long as cytosolic Ca²⁺ remains elevated. Contraction ends when Ca²⁺ is actively pumped back into the sarcoplasmic reticulum (by a dedicated Ca²⁺-ATPase), allowing tropomyosin to re-block the actin binding sites — relaxation, like contraction, is an active, ATP-dependent process, not merely the passive absence of stimulation.
+This cycle repeats asynchronously across the many myosin heads in a sarcomere for as long as cytosolic Ca²⁺ remains elevated. Contraction ends when Ca²⁺ is actively pumped back into the sarcoplasmic reticulum (by a dedicated Ca²⁺-ATPase), allowing tropomyosin to re-block the actin binding sites: relaxation, like contraction, is an active, ATP-dependent process, not merely the passive absence of stimulation.
 
-<span class="badge-custom">Exam tip</span> ATP is required for *both* the power stroke's re-cocking step *and* for myosin-actin detachment — a classic exam trap is assuming ATP is only needed for the power stroke itself; without ATP, muscle cannot relax (rigor), it does not merely fail to contract.
+<span class="badge-custom">Exam tip</span> ATP is required for *both* the power stroke's re-cocking step *and* for myosin-actin detachment: a classic exam trap is assuming ATP is only needed for the power stroke itself; without ATP, muscle cannot relax (rigor), it does not merely fail to contract.
 
 ### Skeletal Muscle Fiber Types
 
@@ -66,7 +66,7 @@ Skeletal muscle fibers are classified by contraction speed and the metabolic pat
 | **Type IIa (fast oxidative-glycolytic)** | Fast | Both oxidative and glycolytic | Intermediate | Intermediate | Middle-distance running |
 | **Type IIx (fast glycolytic)** | Fastest | Anaerobic glycolysis | Low (white muscle) | Low, fatigues quickly | Sprinting, powerlifting |
 
-The myoglobin/mitochondrial density difference is why Type I fibers appear structurally red and Type IIx fibers appear pale/white in gross tissue — a direct structure-function link testable from a fresh muscle cross-section alone.
+The myoglobin/mitochondrial density difference is why Type I fibers appear structurally red and Type IIx fibers appear pale/white in gross tissue, a direct structure-function link testable from a fresh muscle cross-section alone.
 
 ![Slow-twitch oxidative fibers (smaller diameter, darker red from myoglobin, numerous mitochondria and capillaries, fatigue-resistant, shown in a calf muscle) compared to fast-twitch glycolytic fibers (larger diameter, pale color, easily fatigued, shown in an eye muscle), each paired with an actual light-micrograph cross-section of that fiber type](/ANIMALPHYSIOPICS/muscle-fiber-types-cross-section.png)
 *Source: Dee Unglaub Silverthorn, Human Physiology: An Integrated Approach*
@@ -75,11 +75,11 @@ The myoglobin/mitochondrial density difference is why Type I fibers appear struc
 
 Sustained contraction requires continuous ATP regeneration from one of three systems, distinguished by speed, capacity, and oxygen dependence:
 
-- **ATP-phosphocreatine (ATP-PCr) system** — phosphocreatine directly donates its phosphate to ADP (catalyzed by creatine kinase), regenerating ATP within seconds with no oxygen requirement; extremely fast but limited by the small stored phosphocreatine pool (depleted within ~10 seconds of maximal effort).
-- **Anaerobic glycolysis** — glucose/glycogen broken down to pyruvate, net 2 ATP per glucose, with pyruvate reduced to **lactate** when oxygen delivery cannot keep pace with demand; faster than oxidative phosphorylation but far less ATP-efficient, and the accumulating lactate/H⁺ contributes to the muscle fatigue and burning sensation of sustained near-maximal effort.
-- **Oxidative phosphorylation** — pyruvate fully oxidized via the citric acid cycle and electron transport chain (mitochondria-dependent), yielding far more ATP per glucose than glycolysis alone, but at a slower rate — the dominant system for sustained, submaximal effort once the first two systems' fast-but-limited capacity is exhausted.
+- **ATP-phosphocreatine (ATP-PCr) system**: phosphocreatine directly donates its phosphate to ADP (catalyzed by creatine kinase), regenerating ATP within seconds with no oxygen requirement; extremely fast but limited by the small stored phosphocreatine pool (depleted within ~10 seconds of maximal effort).
+- **Anaerobic glycolysis**: glucose/glycogen broken down to pyruvate, net 2 ATP per glucose, with pyruvate reduced to **lactate** when oxygen delivery cannot keep pace with demand; faster than oxidative phosphorylation but far less ATP-efficient, and the accumulating lactate/H⁺ contributes to the muscle fatigue and burning sensation of sustained near-maximal effort.
+- **Oxidative phosphorylation**: pyruvate fully oxidized via the citric acid cycle and electron transport chain (mitochondria-dependent), yielding far more ATP per glucose than glycolysis alone, but at a slower rate — the dominant system for sustained, submaximal effort once the first two systems' fast-but-limited capacity is exhausted.
 
-These three systems are not alternatives an animal chooses between but a **sequential recruitment** by relative demand and duration: the ATP-PCr system dominates the first few seconds of any effort regardless of ultimate intensity, glycolysis dominates as intensity remains high beyond that window, and oxidative phosphorylation dominates once effort is sustained at a submaximal level — explaining why the same muscle can power both a sprint start and a subsequent longer run using different energy systems in sequence, not a fixed single pathway.
+These three systems are not alternatives an animal chooses between but a **sequential recruitment** by relative demand and duration: the ATP-PCr system dominates the first few seconds of any effort regardless of ultimate intensity, glycolysis dominates as intensity remains high beyond that window, and oxidative phosphorylation dominates once effort is sustained at a submaximal level, explaining why the same muscle can power both a sprint start and a subsequent longer run using different energy systems in sequence, not a fixed single pathway.
 
 ## Comparative Structures
 
@@ -104,11 +104,11 @@ These three systems are not alternatives an animal chooses between but a **seque
 
 **Interactive**
 
-- **Cross-bridge cycle stepper (SVG/JS, click-through)** — clicking "step" advances a myosin head through cross-bridge formation → power stroke → rigor → detachment → cocking in sequence, with the actin/myosin filament positions updating each step and the current nucleotide state (ATP/ADP+Pi/none) displayed — makes the cycle's ATP-dependence at two distinct points explicit rather than a single memorized diagram.
+- **Cross-bridge cycle stepper (SVG/JS, click-through)**: clicking "step" advances a myosin head through cross-bridge formation → power stroke → rigor → detachment → cocking in sequence, with the actin/myosin filament positions updating each step and the current nucleotide state (ATP/ADP+Pi/none) displayed — makes the cycle's ATP-dependence at two distinct points explicit rather than a single memorized diagram.
 
 {{< iframe src="/cross-bridge-cycle-stepper.html" title="Cross-bridge cycle stepper" height="480px" >}}
 
-- **Energy system recruitment graph (Plotly)** — a stacked-area chart of ATP contribution from the three energy systems over time during a simulated maximal effort, with a draggable time marker showing which system(s) dominate at any given moment — turns "sequential recruitment" into a visible, quantitative claim.
+- **Energy system recruitment graph (Plotly)**: a stacked-area chart of ATP contribution from the three energy systems over time during a simulated maximal effort, with a draggable time marker showing which system(s) dominate at any given moment — turns "sequential recruitment" into a visible, quantitative claim.
 
 {{< iframe src="/energy-system-recruitment-graph.html" title="Energy system recruitment graph" height="560px" >}}
 

@@ -8,10 +8,10 @@ description: "Structural anatomy for IBO/USABO: plant tissue systems and vascula
 
 Plant Anatomy builds outward from shared tissue vocabulary to whole organs to reproductive structures, in four tiers:
 
-- **Tissue Foundations** (2 pages) — meristematic vs. permanent tissue and the dermal/ground/vascular tissue-system framework every later page assumes, then the specific conducting cell types (tracheids, vessel elements, sieve tube elements) and vascular bundle arrangements built from that framework.
-- **Vegetative Organs** (3 pages) — root, stem, and leaf structure, each covering the organ's own tissue arrangement and, for root and stem, the monocot/dicot structural contrast specific to that organ.
-- **Secondary Growth & Comparative** (2 pages) — how a stem thickens into wood over years of cambial activity, then a single cross-cutting page pulling every monocot/dicot contrast introduced across the vegetative-organ pages (plus two not covered elsewhere — floral merosity and pollen aperture) into one reference.
-- **Reproductive Structures & Survey** (3 pages) — flower structure and gametophyte development, the mature seed and fruit that result from it, and a closing structural survey of how the vascular seed-plant body plan this section assumes compares to bryophytes, ferns, and gymnosperms.
+- **Tissue Foundations** (2 pages): meristematic vs. permanent tissue and the dermal/ground/vascular tissue-system framework every later page assumes, then the specific conducting cell types (tracheids, vessel elements, sieve tube elements) and vascular bundle arrangements built from that framework.
+- **Vegetative Organs** (3 pages): root, stem, and leaf structure, each covering the organ's own tissue arrangement and, for root and stem, the monocot/dicot structural contrast specific to that organ.
+- **Secondary Growth & Comparative** (2 pages): how a stem thickens into wood over years of cambial activity, then a single cross-cutting page pulling every monocot/dicot contrast introduced across the vegetative-organ pages (plus two not covered elsewhere, floral merosity and pollen aperture) into one reference.
+- **Reproductive Structures & Survey** (3 pages), flower structure and gametophyte development, the mature seed and fruit that result from it, and a closing structural survey of how the vascular seed-plant body plan this section assumes compares to bryophytes, ferns, and gymnosperms.
 
 Start with [Plant Tissue Systems](Plant-Tissue-Systems/) — every later page assumes its meristem and tissue-system vocabulary.
 

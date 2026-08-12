@@ -64,37 +64,37 @@ images: ["/og-bioclash.png"]
   <p id="bioclash-countdown" class="bioclash-countdown" aria-live="polite">Loading countdown…</p>
   <div class="bioclash-hero-actions">
     <a href="#bioclash-notify-section" class="bioclash-btn bioclash-btn-primary"><span class="bioclash-btn-shine" aria-hidden="true"></span><span>Get notified</span></a>
-    <a href="https://discord.gg/WpC8y6dbv" class="bioclash-icon-link" target="_blank" rel="noreferrer" title="Discord — look for #bioclash-updates">{{< icon "discord" >}}</a>
+    <a href="https://discord.gg/WpC8y6dbv" class="bioclash-icon-link" target="_blank" rel="noreferrer" title="Discord: look for #bioclash-updates">{{< icon "discord" >}}</a>
     <a href="https://www.instagram.com/bioguideofficial/" class="bioclash-icon-link" target="_blank" rel="noreferrer" title="Instagram">{{< icon "instagram" >}}</a>
   </div>
 </section>
 
 <section class="bioclash-section bioclash-panel">
   <h2>What it is</h2>
-  <p>BiOClash is an original biology competition — not a translated IBO/USABO paper archive like BiOrchive, but questions written and reviewed by BiOGuide itself. It's the one part of this site where the content is genuinely ours, not a licensed reproduction.</p>
+  <p>BiOClash is an original biology competition, not a translated IBO/USABO paper archive like BiOrchive, but questions written and reviewed by BiOGuide itself. It's the one part of this site where the content is genuinely ours, not a licensed reproduction.</p>
   <p>Right now, it's still being built. Here's what we're planning, and how to hear the moment it's ready.</p>
 </section>
 
 <section class="bioclash-section bioclash-panel">
   <h2>What's being planned</h2>
   <ul class="bioclash-planning-list">
-    <li><span class="papers-pill bioclash-pill">Format</span> Planning timed, solo rounds — heavily scrutinized and difficult.</li>
+    <li><span class="papers-pill bioclash-pill">Format</span> Planning timed, solo rounds: heavily scrutinized and difficult.</li>
     <li><span class="papers-pill bioclash-pill">Scope</span> Aiming to cover the full IBO syllabus.</li>
-    <li><span class="papers-pill bioclash-pill">Frequency</span> Planning a full season of subject-focused rounds spread across the year — Molecular Biology &amp; Biochemistry, Animal Anatomy &amp; Physiology, Genetics &amp; Evolution, Plant Anatomy &amp; Physiology, Ecology, Ethology, and Biosystematics — capped off by a Full Syllabus round in the weeks before IBO, with placements across the season aiming to add up to one cumulative season ranking.</li>
-    <li><span class="papers-pill bioclash-pill">Timing</span> Subject rounds are planned to run 90 minutes, with the Full Syllabus round given longer — an optional short extension is planned to be available during an attempt, at a competitive cost rather than as free extra time.</li>
-    <li><span class="papers-pill bioclash-pill">Scoring</span> Planning to rank each round by standardized performance relative to that round's own field, not raw marks — closer to how many real olympiads report results than a simple percentage. Season standing is planned to be a weighted composite across every round, not just an average.</li>
+    <li><span class="papers-pill bioclash-pill">Frequency</span> Planning a full season of subject-focused rounds spread across the year: Molecular Biology &amp; Biochemistry, Animal Anatomy &amp; Physiology, Genetics &amp; Evolution, Plant Anatomy &amp; Physiology, Ecology, Ethology, and Biosystematics, capped off by a Full Syllabus round in the weeks before IBO, with placements across the season aiming to add up to one cumulative season ranking.</li>
+    <li><span class="papers-pill bioclash-pill">Timing</span> Subject rounds are planned to run 90 minutes, with the Full Syllabus round given longer. An optional short extension is planned to be available during an attempt, at a competitive cost rather than as free extra time.</li>
+    <li><span class="papers-pill bioclash-pill">Scoring</span> Planning to rank each round by standardized performance relative to that round's own field, not raw marks, closer to how many real olympiads report results than a simple percentage. Season standing is planned to be a weighted composite across every round, not just an average.</li>
     <li><span class="papers-pill bioclash-pill">Recognition</span> Podium finishers may be recognized with an honorary Junior Partner position at BiOGuide.</li>
   </ul>
 </section>
 
 <section class="bioclash-section bioclash-panel">
   <h2>Why it exists</h2>
-  <p>Plenty of biology competitions already exist — but most are institutional, expensive to access, or slow to modernize. BiOGuide itself runs on the same principles as everything else here: <a href="/about/">non-commercial, built by students, for students</a>. BiOClash is that same approach applied to the competition format itself, not just notes and papers.</p>
+  <p>Plenty of biology competitions already exist, but most are institutional, expensive to access, or slow to modernize. BiOGuide itself runs on the same principles as everything else here: <a href="/about/">non-commercial, built by students, for students</a>. BiOClash is that same approach applied to the competition format itself, not just notes and papers.</p>
 </section>
 
 <section class="bioclash-section bioclash-panel">
   <h2>Get involved</h2>
-  <p>BiOClash is green-field — nothing is set in stone yet. If you'd want to help design questions, write rounds, or shape the format, this is one of the most open-ended ways to join as a Content Reviewer or Partner. Reach out: <a href="mailto:resourcerepository4boguide@gmail.com">resourcerepository4boguide@gmail.com</a>.</p>
+  <p>BiOClash is green-field; nothing is set in stone yet. If you'd want to help design questions, write rounds, or shape the format, this is one of the most open-ended ways to join as a Content Reviewer or Partner. Reach out: <a href="mailto:resourcerepository4boguide@gmail.com">resourcerepository4boguide@gmail.com</a>.</p>
 </section>
 
 <section id="bioclash-notify-section" class="bioclash-section bioclash-panel bioclash-notify-section">

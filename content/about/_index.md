@@ -18,7 +18,7 @@ Now, thanks for visiting! Let's talk a bit about why we built BiOGuide.
 
 Preparing for Biology Olympiads involves a familiar set of challenges: difficulty picking the right resources, scattered notes and textbook references, incomplete practice material, a practical lack of hands-on skills, and more. This website exists to resolve most of those issues through a single, compiled, modern guide.
 
-Our goal is to be complete *and* concise. That doesn't mean short, dry text with no motivation behind it — we've actively aimed for the opposite — but rather that the guide contains everything you actually need for the olympiads, kept current, and presented in a modern way that still lets you learn quickly from text and data.
+Our goal is to be complete *and* concise. That doesn't mean short, dry text with no motivation behind it (we've actively aimed for the opposite), but rather that the guide contains everything you actually need for the olympiads, kept current, and presented in a modern way that still lets you learn quickly from text and data.
 
 Now, on to the **what**, **why**, and **how**.
 
@@ -26,12 +26,12 @@ Now, on to the **what**, **why**, and **how**.
 
 Every piece of content goes through a standardized process before it's approved for general use:
 
-1. The Founder and Director writes and edits all content page by page, topic by topic, word by word — every concept is personally reviewed.
+1. The Founder and Director writes and edits all content page by page, topic by topic, word by word. Every concept is personally reviewed.
 2. A specialised team then reviews the content and provides a rating. Only content rated above 4 (on a 1–5 scale) moves on to further editing.
 3. This team also collects relevant past-year problems and compiles them into one directory for ease of use later on.
 4. Finally, the content is published for you.
 
-We hope you appreciate the effort and enjoy the website — and most importantly, that you actively participate in feedback and discussions on our community pages.
+We hope you appreciate the effort and enjoy the website, and most importantly, that you actively participate in feedback and discussions on our community pages.
 
 ## What Sets Us Apart
 
@@ -48,15 +48,15 @@ When we first started, we looked at existing resources like [Biolympiads](https:
 2. Non-commercial (a non-profit)
 3. Highly modernised
 4. Globally relevant
-5. Uncompromising academically — built for and by students
+5. Uncompromising academically, built for and by students
 
 ## Why So Much Work
 
-We're captivated by biology and the life sciences — but our own journey preparing for olympiads was full of roadblocks despite relentless effort. The biggest one was finding the right resources: available textbooks were either far too dense or didn't go into the specific depth the IBO actually requires.
+We're captivated by biology and the life sciences, but our own journey preparing for olympiads was full of roadblocks despite relentless effort. The biggest one was finding the right resources: available textbooks were either far too dense or didn't go into the specific depth the IBO actually requires.
 
-That roadblock is what inspired BiOGuide. We make nothing from it — it's completely free to read, share, and modify. Honestly, the real payoff for us is making the learning curve friendlier for the next generation of biology enthusiasts.
+That roadblock is what inspired BiOGuide. We make nothing from it; it's completely free to read, share, and modify. Honestly, the real payoff for us is making the learning curve friendlier for the next generation of biology enthusiasts.
 
-Cracking these competitions isn't just about rote-memorising cellular pathways or anatomy (though a strong base of core facts is essential) — it's about truly understanding how living systems function, working through complex problems piece by piece, and having the grit to face scenarios you've never seen before. We want to help you build that problem-solving intuition, which is why we plan to provide an extensive library of past-year problems with step-by-step solutions.
+Cracking these competitions isn't just about rote-memorising cellular pathways or anatomy, though a strong base of core facts is essential. It's about truly understanding how living systems function, working through problems piece by piece, and having the grit to face scenarios you've never seen before. We want to help you build that problem-solving intuition, which is why we plan to provide an extensive library of past-year problems with step-by-step solutions.
 
 ## How Do We find people?
 
@@ -64,14 +64,14 @@ Our chain of command is somewhat summarised by <a href = "https://drive.google.c
 
 ### Inspirations
 
-1. **[AOGuide](https://aoguide.app)** — thanks to an astronomy background, I discovered this treasure of a website for AO aspirants. A lot of what we've done here has been inspired by AOGuide, so a big thanks to the people behind it.
+1. **[AOGuide](https://aoguide.app)**: thanks to an astronomy background, I discovered this treasure of a website for AO aspirants. A lot of what we've done here has been inspired by AOGuide, so a big thanks to the people behind it.
 2. **Biolympiads and Learntuitive** — as mentioned above, we've tried to improve on what they offer, but they still serve as a benchmark and an inspiration for us.
 3. More soon!
 
 ### Our Tech
 
-1. **Streamlit** — the platform behind the interactive experience that sets us apart. Thanks to the IBO 2026 Organizing Committee for introducing us to it.
-2. **Snowflake** — used for Streamlit deployment.
+1. **Streamlit**: the platform behind the interactive experience that sets us apart. Thanks to the IBO 2026 Organizing Committee for introducing us to it.
+2. **Snowflake**, used for Streamlit deployment.
 3. **Hugo, the Hextra theme, and Vercel** — following AOGuide's own lead here.
 4. **VS Code, MathJax, and Git.**
 
@@ -90,19 +90,19 @@ I'm a high schooler in India who kept wishing a resource like this already exist
 ## Frequently Asked Questions
 
 {{< faq-item q="Is BioGuide free to use?" >}}
-Yes — completely. The content is published under a CC BY-NC-SA 4.0 license: free to read, share, and adapt for non-commercial use, with attribution. See [Licensing](#licensing) below for the details.
+Yes, completely. The content is published under a CC BY-NC-SA 4.0 license: free to read, share, and adapt for non-commercial use, with attribution. See [Licensing](#licensing) below for the details.
 {{< /faq-item >}}
 
 {{< faq-item q="Which exams does BioGuide cover?" >}}
-The syllabus is built around IBO and USABO, with INBO also in scope. Coverage depth is IBO-targeted — broad enough for national olympiads, deep enough for international ones.
+The syllabus is built around IBO and USABO, with INBO also in scope. Coverage depth is IBO-targeted: broad enough for national olympiads, deep enough for international ones.
 {{< /faq-item >}}
 
 {{< faq-item q="How is content reviewed before it's published?" >}}
-Every page goes through the same process: written and edited by the Founder and Director, then reviewed and rated by a specialised team — only content rated above 4 (on a 1–5 scale) moves on. See [Ways of Working](#ways-of-working) above for the full workflow.
+Every page goes through the same process: written and edited by the Founder and Director, then reviewed and rated by a specialised team. Only content rated above 4 (on a 1–5 scale) moves on. See [Ways of Working](#ways-of-working) above for the full workflow.
 {{< /faq-item >}}
 
 {{< faq-item q="Can I contribute or report an error?" >}}
-Yes, please do — open a GitHub Issue or PR on the [repository](https://github.com/nk-008120/boguide), or reach out on [Discord](https://discord.gg/WpC8y6dbv). Found a mistake, have a better diagram, or want to add a topic? All of that helps.
+Yes, please do. Open a GitHub Issue or PR on the [repository](https://github.com/nk-008120/boguide), or reach out on [Discord](https://discord.gg/WpC8y6dbv). Found a mistake, have a better diagram, or want to add a topic? All of that helps.
 {{< /faq-item >}}
 
 {{< faq-item q="How is my Login information used?" >}}
@@ -111,4 +111,4 @@ We encrypt your login information using industry standards. There is no reason t
 
 ## Licensing
 
-This website is published under a CC BY-NC-SA 4.0 license. A future BUSL-1.1 license is under consideration for a handful of more ambitious features planned much further down the line — don't worry, the website will remain non-profit regardless.
+This website is published under a CC BY-NC-SA 4.0 license. A future BUSL-1.1 license is under consideration for a handful of more ambitious features planned much further down the line. Don't worry, the website will remain non-profit regardless.

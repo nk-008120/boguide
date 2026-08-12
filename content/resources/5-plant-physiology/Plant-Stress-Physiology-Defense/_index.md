@@ -11,13 +11,13 @@ syllabus_tags: ["IBO", "USABO", "comparative"]
 
 ## Overview
 
-Every mechanism covered earlier in this section — stomatal control, ABA signaling, hormone balance, mineral uptake — is also a tool the plant deploys under stress. This closing page integrates them into whole-plant stress responses, first abiotic (drought, salinity, temperature) and then biotic (pathogen and herbivore defense), the two broad categories a stationary organism must survive without the option of fleeing either.
+Every mechanism covered earlier in this section (stomatal control, ABA signaling, hormone balance, mineral uptake) is also a tool the plant deploys under stress. This closing page integrates them into whole-plant stress responses, first abiotic (drought, salinity, temperature) and then biotic (pathogen and herbivore defense), the two broad categories a stationary organism must survive without the option of fleeing either.
 
 ## Key Concepts
 
 ### Drought Stress
 
-Water deficit triggers a coordinated response built almost entirely from mechanisms already established: root and leaf **ABA synthesis rises sharply**, driving the stomatal closure covered in full on [Stomatal Physiology & Gas Exchange](../stomatal-physiology-gas-exchange/) to limit further transpirational water loss, at the direct cost of restricting CO₂ entry and therefore photosynthetic rate — a whole-plant example of the same photosynthesis-transpiration trade-off introduced on that page, now pushed toward its water-conserving extreme. Sustained drought also triggers **osmotic adjustment**: cells accumulate compatible solutes (proline, glycine betaine, soluble sugars) that lower cellular solute potential without disrupting enzyme function at high concentration (unlike ionic solutes, which become toxic at the concentrations needed to meaningfully shift Ψₛ), helping cells retain water and maintain turgor even as external/soil water potential falls.
+Water deficit triggers a coordinated response built almost entirely from mechanisms already established: root and leaf **ABA synthesis rises sharply**, driving the stomatal closure covered in full on [Stomatal Physiology & Gas Exchange](../stomatal-physiology-gas-exchange/) to limit further transpirational water loss, at the direct cost of restricting CO₂ entry and therefore photosynthetic rate, a whole-plant example of the same photosynthesis-transpiration trade-off introduced on that page, now pushed toward its water-conserving extreme. Sustained drought also triggers **osmotic adjustment**: cells accumulate compatible solutes (proline, glycine betaine, soluble sugars) that lower cellular solute potential without disrupting enzyme function at high concentration (unlike ionic solutes, which become toxic at the concentrations needed to meaningfully shift Ψₛ), helping cells retain water and maintain turgor even as external/soil water potential falls.
 
 ### Salinity Stress
 
@@ -33,7 +33,7 @@ Plants respond by **excluding** Na⁺ at the root (selective ion channels favori
 
 ### Temperature Stress
 
-**Heat stress** induces **heat-shock proteins (HSPs)**, molecular chaperones that bind partially denatured proteins and prevent irreversible aggregation, buying time for normal folding to resume once temperature falls — the same chaperone principle covered for animal/general protein folding elsewhere, applied here as an inducible, stress-triggered response rather than a constitutive one.
+**Heat stress** induces **heat-shock proteins (HSPs)**, molecular chaperones that bind partially denatured proteins and prevent irreversible aggregation, buying time for normal folding to resume once temperature falls, the same chaperone principle covered for animal/general protein folding elsewhere, applied here as an inducible, stress-triggered response rather than a constitutive one.
 
 ![Heat shock factor (HSF) activation pathway: environmental stressors (heat shock, oxidative stress, heavy metals) and non-stress developmental signals both converge on HSF, which trimerizes, enters the nucleus, and binds heat shock elements (HSE) to induce heat-shock protein production](/PLANTPHYSIOPICS/heat-shock-protein-mechanism.png)
 *Source: MDPI*
@@ -42,7 +42,7 @@ Plants respond by **excluding** Na⁺ at the root (selective ion channels favori
 
 ### Biotic Defense: Constitutive and Induced Barriers
 
-Plants maintain **constitutive defenses** present regardless of attack — the cuticle and cell wall as physical barriers, and preformed antimicrobial/antifeedant secondary metabolites (e.g. tannins, which bind and precipitate proteins, reducing herbivore digestive efficiency and palatability) — alongside **induced defenses** activated specifically upon attack, which are faster to deploy only when actually needed and less costly to maintain constitutively across the plant's whole lifetime.
+Plants maintain **constitutive defenses** present regardless of attack, the cuticle and cell wall as physical barriers, and preformed antimicrobial/antifeedant secondary metabolites (e.g. tannins, which bind and precipitate proteins, reducing herbivore digestive efficiency and palatability), alongside **induced defenses** activated specifically upon attack, which are faster to deploy only when actually needed and less costly to maintain constitutively across the plant's whole lifetime.
 
 ### The Hypersensitive Response and Systemic Acquired Resistance
 
@@ -51,7 +51,7 @@ Localized pathogen recognition (via plant immune receptors detecting pathogen-as
 ![Hypersensitive response: a leaf showing multiple discrete necrotic lesions, each a ring of dead tissue localized around and containing an infection site](/PLANTPHYSIOPICS/hypersensitive-response.png)
 *Source: Wikipedia*
 
-HR is typically accompanied by a burst of reactive oxygen species and local **salicylic acid** accumulation, which — beyond its local role — also functions as a signal (itself or via a derived mobile signal) that travels systemically to uninfected parts of the plant, inducing **systemic acquired resistance (SAR)**: a primed, heightened defensive state (including elevated expression of **pathogenesis-related (PR) proteins**, many with direct antimicrobial activity such as chitinases degrading fungal cell walls) across the whole plant, providing broad, long-lasting resistance to subsequent infection by a wide range of pathogens, not just the one that triggered HR initially — an induced, whole-plant analog of an immune "memory," though mechanistically unrelated to (and evolutionarily independent of) the adaptive immune memory covered for vertebrates on [Immune Physiology](../../3-animal-physiology/immune-physiology/).
+HR is typically accompanied by a burst of reactive oxygen species and local **salicylic acid** accumulation, which, beyond its local role, also functions as a signal (itself or via a derived mobile signal) that travels systemically to uninfected parts of the plant, inducing **systemic acquired resistance (SAR)**: a primed, heightened defensive state (including elevated expression of **pathogenesis-related (PR) proteins**, many with direct antimicrobial activity such as chitinases degrading fungal cell walls) across the whole plant, providing broad, long-lasting resistance to subsequent infection by a wide range of pathogens, not just the one that triggered HR initially — an induced, whole-plant analog of an immune "memory," though mechanistically unrelated to (and evolutionarily independent of) the adaptive immune memory covered for vertebrates on [Immune Physiology](../../3-animal-physiology/immune-physiology/).
 
 ![Systemic acquired resistance signaling downstream of R-gene-mediated resistance: salicylic acid triggers induction of PR-proteins (resistance to fungi and bacteria), increased RdRP expression (increased viral RNA turnover), and AOX-dependent expression of other defense genes (inhibition of viral replication and movement)](/PLANTPHYSIOPICS/systemic-acquired-resistance.png)
 *Source: ScienceDirect (topic page, "Systemic Acquired Resistance")*
@@ -116,7 +116,7 @@ Beyond constitutive deterrents like tannins, many species mount **induced** anti
     bottom.setAttribute('d', 'M 20 '+(55+gap*0.3)+' Q 80 '+(55+gap)+' 140 '+(55+gap*0.3)+' Q 80 '+(55+gap*0.5)+' 20 '+(55+gap*0.3)+' Z');
     readout.textContent = 'Stomatal aperture: ' + aperture + '% | Photosynthesis rate: ' + photo + '% of max';
     if (aba < 20){
-      note.textContent = 'No water stress — stomata fully open, photosynthesis unrestricted.';
+      note.textContent = 'No water stress, stomata fully open, photosynthesis unrestricted.';
     } else if (aba < 60){
       note.textContent = 'Rising ABA closes stomata to conserve water — CO2 uptake and photosynthesis fall as a direct cost.';
     } else {
@@ -188,7 +188,7 @@ Beyond constitutive deterrents like tannins, many species mount **induced** anti
       pr2.setAttribute('opacity', 1);
       dot1.style.opacity = 0;
       dot2.style.opacity = 0;
-      note.textContent = 'Systemic acquired resistance: distant, never-infected leaves now express PR proteins — primed with broad, long-lasting resistance.';
+      note.textContent = 'Systemic acquired resistance: distant, never-infected leaves now express PR proteins, primed with broad, long-lasting resistance.';
     }, 2300);
     setTimeout(function(){ running = false; }, 3000);
   });

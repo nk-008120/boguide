@@ -11,7 +11,7 @@ syllabus_tags: ["IBO", "USABO", "ethology"]
 
 ## Overview
 
-**Sexual selection** (Darwin's second major selective mechanism, distinct from natural selection for survival) is selection arising specifically from variance in mating success rather than variance in survival — and it is the single mechanism that explains the most exam-tested oddities in the animal kingdom: elaborate ornaments that reduce survival odds, males that fight to the point of injury, and mating systems ranging from strict monogamy to promiscuity within closely related species. This page builds directly on the honest-signaling framework from [Animal Communication](../Animal-Communication/) (many sexually selected traits are honest signals of quality) and connects forward to [Kin Selection, Altruism & Eusociality](../Kin-Selection-Altruism-Eusociality/), since parental investment asymmetry — introduced here — is also the starting point for understanding parent-offspring conflict.
+**Sexual selection** (Darwin's second major selective mechanism, distinct from natural selection for survival) is selection arising specifically from variance in mating success rather than variance in survival, and it is the single mechanism that explains the most exam-tested oddities in the animal kingdom: elaborate ornaments that reduce survival odds, males that fight to the point of injury, and mating systems ranging from strict monogamy to promiscuity within closely related species. This page builds directly on the honest-signaling framework from [Animal Communication](../Animal-Communication/) (many sexually selected traits are honest signals of quality) and connects forward to [Kin Selection, Altruism & Eusociality](../Kin-Selection-Altruism-Eusociality/), since parental investment asymmetry (introduced here) is also the starting point for understanding parent-offspring conflict.
 
 ## Key Concepts
 
@@ -19,7 +19,7 @@ syllabus_tags: ["IBO", "USABO", "ethology"]
 
 Sexual selection operates through two distinguishable routes, and exam questions consistently require identifying which route a described trait results from:
 
-- **Intersexual selection** (mate choice) — one sex (typically female, see parental investment below) chooses mates based on a trait, so that trait increases in frequency because it makes its bearer more *chosen*, not more survival-fit. The peacock's train (see the handicap principle in [Animal Communication](../Animal-Communication/)) is the standard example, favored because peahens preferentially mate with more elaborately trained males.
+- **Intersexual selection** (mate choice): one sex (typically female, see parental investment below) chooses mates based on a trait, so that trait increases in frequency because it makes its bearer more *chosen*, not more survival-fit. The peacock's train (see the handicap principle in [Animal Communication](../Animal-Communication/)) is the standard example, favored because peahens preferentially mate with more elaborately trained males.
 
 ![Comparative fitness-trade-off figure contrasting an "additive model" (parent-offspring begging conflict) against a "multiplicative model" of mate choice (illustrated with a peacock and peahen), each showing benefit, trade-off, and resulting fitness curves against a shared resource axis.](/ETHOLOGYPICS/peacock-train-diagram.png)
 *Source: Springer/BMC Biology*
@@ -29,11 +29,11 @@ Sexual selection operates through two distinguishable routes, and exam questions
 ![Illustration of adult male, adult female, and pup elephant seals to scale, showing the male's much greater size and distinctive proboscis compared to the female.](/ETHOLOGYPICS/elephant-seal-sexual-dimorphism-diagram.jpg)
 *Source: ScienceDirect Topics (northern elephant seal)*
 
-Both routes can act on the same species simultaneously and even on the same trait — red deer stag antlers are used both for direct male-male combat (intrasexual) and are separately assessed by females as a quality signal during mate choice (intersexual).
+Both routes can act on the same species simultaneously and even on the same trait: red deer stag antlers are used both for direct male-male combat (intrasexual) and are separately assessed by females as a quality signal during mate choice (intersexual).
 
 ### Parental Investment Theory
 
-**Parental investment theory** (Robert Trivers) explains *why* mate choice and competition are so consistently asymmetric between the sexes: the sex that invests more in each individual offspring (metabolically costly gametes, gestation, lactation, direct offspring care) becomes the limiting resource for the other sex's reproductive success, and consequently becomes the more selective, choosier sex, while the lower-investing sex faces stronger selection to compete for access to the higher-investing sex. In most mammals, female obligate investment (gestation + lactation) is far higher than male minimum investment (a single mating), predicting — and generally matching — female choosiness and male-male competition; species with unusually high relative male investment (see sex-role-reversed systems below) predict, and show, the reverse pattern.
+**Parental investment theory** (Robert Trivers) explains *why* mate choice and competition are so consistently asymmetric between the sexes: the sex that invests more in each individual offspring (metabolically costly gametes, gestation, lactation, direct offspring care) becomes the limiting resource for the other sex's reproductive success, and consequently becomes the more selective, choosier sex, while the lower-investing sex faces stronger selection to compete for access to the higher-investing sex. In most mammals, female obligate investment (gestation + lactation) is far higher than male minimum investment (a single mating), predicting, and generally matching, female choosiness and male-male competition; species with unusually high relative male investment (see sex-role-reversed systems below) predict, and show, the reverse pattern.
 
 ### Mating System Diversity
 
@@ -49,7 +49,7 @@ Mating systems are classified by how many mates each sex has across a breeding s
 ![Mating system diagram using blue (male) and pink (female) icons and arrows: monogamy (1:1), polygyny (1 male:multiple females), polyandry (multiple males:1 female), polygynandry (multiple:multiple, with parental investment), and promiscuity (multiple:multiple, without parental investment).](/ETHOLOGYPICS/mating-system-diversity-table-graphic.jpg)
 *Source: Springer, "Reference Work Entry"*
 
-**Sex-role reversal** in phalaropes and pipefish/seahorses (in the latter, males brood fertilized eggs in a specialized pouch, making male investment per offspring exceed female's) is a heavily tested confirmation of parental investment theory precisely because it demonstrates the *investment asymmetry*, not male/female identity per se, is the causal variable — when investment reverses, so does the pattern of choosiness and competition.
+**Sex-role reversal** in phalaropes and pipefish/seahorses (in the latter, males brood fertilized eggs in a specialized pouch, making male investment per offspring exceed female's) is a heavily tested confirmation of parental investment theory precisely because it demonstrates the *investment asymmetry*, not male/female identity per se, is the causal variable: when investment reverses, so does the pattern of choosiness and competition.
 
 ![Three photographs of red phalaropes in breeding plumage: (1) a typical male, (2-3) females — females are the more brightly colored, more strikingly patterned sex in this species, the reverse of the usual vertebrate pattern.](/ETHOLOGYPICS/phalarope-sex-role-reversal-diagram.jpg)
 *Source: ResearchGate*
@@ -89,7 +89,7 @@ Mating systems are classified by how many mates each sex has across a breeding s
 
 **Interactive**
 
-- **Parental investment asymmetry predictor (HTML/JS, no new library)** — user sets relative male and female investment levels on a slider and the tool predicts which sex should be more competitive vs. more choosy, letting the user "discover" the sex-role-reversal prediction by pushing male investment above female investment.
+- **Parental investment asymmetry predictor (HTML/JS, no new library)**: user sets relative male and female investment levels on a slider and the tool predicts which sex should be more competitive vs. more choosy, letting the user "discover" the sex-role-reversal prediction by pushing male investment above female investment.
 
 {{< iframe src="/parental-investment-predictor.html" title="Parental Investment Asymmetry Predictor" height="400px" >}}
 

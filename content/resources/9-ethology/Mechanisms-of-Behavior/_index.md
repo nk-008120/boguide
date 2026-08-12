@@ -1,7 +1,7 @@
 ---
 title: "Mechanisms of Behavior"
 weight: 1
-description: "Tinbergen's four questions as the organizing framework for ethology, the neural and hormonal basis of behavior, fixed action patterns and sign stimuli, and motivation — the proximate/ultimate vocabulary every later Ethology page assumes."
+description: "Tinbergen's four questions as the organizing framework for ethology, the neural and hormonal basis of behavior, fixed action patterns and sign stimuli, and motivation: the proximate/ultimate vocabulary every later Ethology page assumes."
 difficulty: "beginner"
 syllabus_tags: ["IBO", "USABO", "ethology"]
 ---
@@ -10,7 +10,7 @@ syllabus_tags: ["IBO", "USABO", "ethology"]
 
 ## Overview
 
-Every behavior can be asked about in four genuinely different ways, and confusing them is the single most common source of wrong answers on ethology exam questions. Niko Tinbergen formalized this in 1963 as **Tinbergen's four questions**, splitting into two proximate (how) and two ultimate (why) categories: **causation** (what immediate neural/hormonal/environmental trigger produces the behavior right now?), **development** (how does the behavior change across the individual's lifetime — covered in depth on the [next page](../Development-Learning/)), **survival value** (what advantage does the behavior give the individual now?), and **evolutionary history** (how did the behavior arise and change across the lineage?). This page covers the mechanistic, **proximate** side — the actual neural and hormonal machinery that produces behavior, and the specific stimulus-response building blocks (fixed action patterns, sign stimuli) ethologists use to describe it — since every later page in this section explains a behavior's *function* against this same mechanistic backdrop.
+Every behavior can be asked about in four genuinely different ways, and confusing them is the single most common source of wrong answers on ethology exam questions. Niko Tinbergen formalized this in 1963 as **Tinbergen's four questions**, splitting into two proximate (how) and two ultimate (why) categories: **causation** (what immediate neural/hormonal/environmental trigger produces the behavior right now?), **development** (how does the behavior change across the individual's lifetime, covered in depth on the [next page](../Development-Learning/)), **survival value** (what advantage does the behavior give the individual now?), and **evolutionary history** (how did the behavior arise and change across the lineage?). This page covers the mechanistic, **proximate** side: the actual neural and hormonal machinery that produces behavior, and the specific stimulus-response building blocks (fixed action patterns, sign stimuli) ethologists use to describe it, since every later page in this section explains a behavior's *function* against this same mechanistic backdrop.
 
 ## Key Concepts
 
@@ -25,25 +25,25 @@ Given any behavior, a complete ethological explanation answers all four question
 | Survival value | Ultimate | Pecking triggers the parent to regurgitate food, so the chick that pecks accurately gets fed more |
 | Evolutionary history | Ultimate | The red spot and the pecking response likely coevolved from ancestral gull signaling behavior |
 
-A classic exam trap is being asked "why does a bird migrate south in autumn?" and answering only with the proximate trigger (shortening day length via photoperiod, see [Biological Rhythms](../Biological-Rhythms/)) when the question is asking for survival value (escaping resource scarcity) or vice versa — both answers are correct, but only for their own question.
+A classic exam trap is being asked "why does a bird migrate south in autumn?" and answering only with the proximate trigger (shortening day length via photoperiod, see [Biological Rhythms](../Biological-Rhythms/)) when the question is asking for survival value (escaping resource scarcity) or vice versa; both answers are correct, but only for their own question.
 
 ![The four-questions framework arranged as a 2×2 grid: Development and Causation/Mechanism as the two proximate ("how?") questions, Evolutionary History and Function/Survival Value as the two ultimate ("why?") questions, with a historical-sequence vs. slice-in-time axis distinguishing the pairs.](/ETHOLOGYPICS/tinbergens-four-questions-gull-chick-example.png)
 *Source: onlinelibrary.wiley.com (Evolutionary Anthropology)*
 
 ### Neural & Hormonal Control of Behavior
 
-Behavior is ultimately produced by the nervous and endocrine systems acting together, not separately: fast, precisely-timed responses (a startle reflex, a predator strike) are driven by direct neural circuits, while slower, longer-lasting behavioral states (aggression, courtship readiness, migratory restlessness) are set by circulating hormones that change the *threshold* for a neural circuit to fire rather than triggering the behavior directly. **Testosterone** raising aggressive-response likelihood in many vertebrates during breeding season, and **prolactin** driving parental/incubation behavior in birds, are the two most commonly tested examples — in both cases the hormone doesn't cause a single movement, it biases the whole behavioral repertoire toward a category of response for as long as the hormone remains elevated. This hormonal layer is what links proximate mechanism to context: the same stimulus (a rival male's approach) can trigger aggression in one hormonal state and avoidance in another.
+Behavior is ultimately produced by the nervous and endocrine systems acting together, not separately: fast, precisely-timed responses (a startle reflex, a predator strike) are driven by direct neural circuits, while slower, longer-lasting behavioral states (aggression, courtship readiness, migratory restlessness) are set by circulating hormones that change the *threshold* for a neural circuit to fire rather than triggering the behavior directly. **Testosterone** raising aggressive-response likelihood in many vertebrates during breeding season, and **prolactin** driving parental/incubation behavior in birds, are the two most commonly tested examples; in both cases the hormone doesn't cause a single movement, it biases the whole behavioral repertoire toward a category of response for as long as the hormone remains elevated. This hormonal layer is what links proximate mechanism to context: the same stimulus (a rival male's approach) can trigger aggression in one hormonal state and avoidance in another.
 
 ### Fixed Action Patterns (FAPs)
 
-A **fixed action pattern** is a stereotyped, species-typical behavior sequence that, once triggered, runs to completion largely independent of further feedback — the defining classical example is the **greylag goose egg-rolling response** (Konrad Lorenz and Niko Tinbergen): a goose whose egg has rolled outside the nest extends its neck, hooks its bill over the egg, and rolls it back with a fixed side-to-side motion. If the egg is removed partway through, the goose completes the entire rolling motion anyway — proof the sequence is not being continuously guided by feedback from the egg once started. Three properties define an FAP: it is **stereotyped** (highly consistent motor pattern across individuals of the species), it runs to completion once initiated (**relatively resistant to interruption**), and it is triggered by a specific, identifiable stimulus rather than general arousal.
+A **fixed action pattern** is a stereotyped, species-typical behavior sequence that, once triggered, runs to completion largely independent of further feedback — the defining classical example is the **greylag goose egg-rolling response** (Konrad Lorenz and Niko Tinbergen): a goose whose egg has rolled outside the nest extends its neck, hooks its bill over the egg, and rolls it back with a fixed side-to-side motion. If the egg is removed partway through, the goose completes the entire rolling motion anyway, proof the sequence is not being continuously guided by feedback from the egg once started. Three properties define an FAP: it is **stereotyped** (highly consistent motor pattern across individuals of the species), it runs to completion once initiated (**relatively resistant to interruption**), and it is triggered by a specific, identifiable stimulus rather than general arousal.
 
 ![Diagram of the greylag goose egg-rolling head-movement cycle, labeled with its three phase transitions (oblique, transition, forward) and the observed transition frequencies between them from Lorenz's original motion analysis.](/ETHOLOGYPICS/greylag-goose-egg-rolling-fap-sequence.jpg)
 *Source: publish.iupress.indiana.edu ("How Animals Communicate")*
 
 ### Sign Stimuli and Releasers
 
-The specific stimulus feature that triggers a fixed action pattern is a **sign stimulus** (or, when the signal is itself produced by another individual for the purpose of communication, a **releaser**). Niko Tinbergen's stickleback fish work is the canonical demonstration: male three-spined sticklebacks attack red-bellied models regardless of how fish-like the rest of the model looks, but ignore highly realistic fish models lacking the red belly — the **red underside alone** is the sign stimulus for the territorial-attack FAP, not the overall gestalt of "rival fish."
+The specific stimulus feature that triggers a fixed action pattern is a **sign stimulus** (or, when the signal is itself produced by another individual for the purpose of communication, a **releaser**). Niko Tinbergen's stickleback fish work is the canonical demonstration: male three-spined sticklebacks attack red-bellied models regardless of how fish-like the rest of the model looks, but ignore highly realistic fish models lacking the red belly: the **red underside alone** is the sign stimulus for the territorial-attack FAP, not the overall gestalt of "rival fish."
 
 ![Tinbergen's stickleback model diagram: a highly realistic fish model with no red belly (top) was ignored, while four crude, non-fish-shaped models with red-painted undersides (bracketed "Models with red bellies") were attacked.](/ETHOLOGYPICS/stickleback-red-belly-sign-stimulus-attack.jpg)
 *Source: psywww.com (An Introduction to Psychology, "Classic ethology" chapter)*
@@ -83,7 +83,7 @@ A **supernormal stimulus** is an exaggerated artificial version of a sign stimul
 
 **Interactive**
 
-- **Tinbergen's four questions sorter (drag-and-drop, HTML/JS, no new library)** — a set of example explanations for a single behavior (e.g. gull chick begging) that the user sorts into the four question categories, then into proximate/ultimate — turns the easily-confused four-question framework into an applied classification exercise.
+- **Tinbergen's four questions sorter (drag-and-drop, HTML/JS, no new library)**: a set of example explanations for a single behavior (e.g. gull chick begging) that the user sorts into the four question categories, then into proximate/ultimate, turning the easily-confused four-question framework into an applied classification exercise.
 
 {{< iframe src="/tinbergen-four-questions-sorter.html" title="Tinbergen's Four Questions Sorter" height="440px" >}}
 

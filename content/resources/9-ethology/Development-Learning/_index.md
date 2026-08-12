@@ -1,7 +1,7 @@
 ---
 title: "Development & Learning"
 weight: 2
-description: "Innate vs. learned behavior, critical and sensitive periods, imprinting, habituation and sensitization, classical and operant conditioning, observational and insight learning, and play behavior — the acquisition side of Tinbergen's developmental question."
+description: "Innate vs. learned behavior, critical and sensitive periods, imprinting, habituation and sensitization, classical and operant conditioning, observational and insight learning, and play behavior: the acquisition side of Tinbergen's developmental question."
 difficulty: "intermediate"
 prerequisites: ["Mechanisms-of-Behavior"]
 syllabus_tags: ["IBO", "USABO", "ethology"]
@@ -11,30 +11,30 @@ syllabus_tags: ["IBO", "USABO", "ethology"]
 
 ## Overview
 
-Where [Mechanisms of Behavior](../Mechanisms-of-Behavior/) covered the innate, hard-wired end of behavior — a fixed action pattern triggered reliably by a sign stimulus in any individual of the species — this page covers the opposite and complementary end: behavior that is acquired or modified by individual experience. Almost no real behavior is purely one or the other; the useful distinction for exam purposes is which **learning mechanism** is at work in a given scenario, since IBO/USABO questions are consistently framed as "an animal does X after experience Y — name the learning type." Six mechanisms recur: habituation, sensitization, imprinting, classical conditioning, operant conditioning, and observational/insight learning, each illustrated below with the specific named experiment it's usually tested against.
+Where [Mechanisms of Behavior](../Mechanisms-of-Behavior/) covered the innate, hard-wired end of behavior (a fixed action pattern triggered reliably by a sign stimulus in any individual of the species), this page covers the opposite and complementary end: behavior that is acquired or modified by individual experience. Almost no real behavior is purely one or the other; the useful distinction for exam purposes is which **learning mechanism** is at work in a given scenario, since IBO/USABO questions are consistently framed as "an animal does X after experience Y, name the learning type." Six mechanisms recur: habituation, sensitization, imprinting, classical conditioning, operant conditioning, and observational/insight learning, each illustrated below with the specific named experiment it's usually tested against.
 
 ## Key Concepts
 
 ### Innate vs. Learned Behavior
 
-**Innate behavior** is performed correctly without prior experience — a fixed action pattern is the clearest case, and its universality within a species (every individual raised in isolation still performs it) is the standard evidence used to argue a behavior is innate rather than learned. **Learned behavior** is modified by individual experience and can therefore differ between individuals of the same species raised in different conditions. The clean textbook split rarely survives contact with real organisms, though: many behaviors are innate *predispositions* refined by experience (e.g., bird song is often innately constrained to a species-typical template but requires early auditory exposure to a tutor to develop normally — a white-crowned sparrow raised in acoustic isolation sings an abnormal, simplified song even though no other species' song was ever presented). Exam scenarios frequently hinge on this middle ground rather than a pure either/or.
+**Innate behavior** is performed correctly without prior experience: a fixed action pattern is the clearest case, and its universality within a species (every individual raised in isolation still performs it) is the standard evidence used to argue a behavior is innate rather than learned. **Learned behavior** is modified by individual experience and can therefore differ between individuals of the same species raised in different conditions. The clean textbook split rarely survives contact with real organisms, though: many behaviors are innate *predispositions* refined by experience (e.g., bird song is often innately constrained to a species-typical template but requires early auditory exposure to a tutor to develop normally, a white-crowned sparrow raised in acoustic isolation sings an abnormal, simplified song even though no other species' song was ever presented). Exam scenarios frequently hinge on this middle ground rather than a pure either/or.
 
 ### Critical and Sensitive Periods
 
-A **critical period** is a developmental window outside of which a specific experience-dependent behavior cannot be acquired at all; a **sensitive period** is a window during which the behavior is most easily and strongly acquired but can still form, less readily, outside it — the two terms are frequently conflated in casual use but are testable as a distinction. **Filial imprinting** in precocial birds is the sharpest example of a true critical period: goslings and ducklings imprint on the first sufficiently large, moving object they encounter within roughly the first 13-16 hours after hatching, and imprinting largely fails to occur if this window is missed. Bird song acquisition (above) is a better example of a genuine sensitive period — later exposure can still produce partial learning, just less complete than exposure during the peak window.
+A **critical period** is a developmental window outside of which a specific experience-dependent behavior cannot be acquired at all; a **sensitive period** is a window during which the behavior is most easily and strongly acquired but can still form, less readily, outside it. The two terms are frequently conflated in casual use but are testable as a distinction. **Filial imprinting** in precocial birds is the sharpest example of a true critical period: goslings and ducklings imprint on the first sufficiently large, moving object they encounter within roughly the first 13-16 hours after hatching, and imprinting largely fails to occur if this window is missed. Bird song acquisition (above) is a better example of a genuine sensitive period: later exposure can still produce partial learning, just less complete than exposure during the peak window.
 
 ![Graph of brain thyroid hormone level across developmental day in imprinted vs. dark-reared chicks, with the sensitive period and "memory priming" window bracketed and a dashed threshold line marking the level needed to cause imprinting.](/ETHOLOGYPICS/goose-imprinting-critical-period-timeline.jpg)
 *Source: nature.com (Nature Communications)*
 
 ### Imprinting
 
-**Filial imprinting** — young precocial animals forming a rapid, largely irreversible attachment to and following-response toward the first appropriately moving stimulus encountered — is the case study most associated with **Konrad Lorenz**, who famously became the imprinted "parent" of a clutch of greylag geese he raised from hatching, demonstrating the response could attach to an inappropriate object (a human, or in later experiments a moving box) if presented at the critical window instead of the biological parent. A second, distinct form, **sexual imprinting**, occurs later in development and shapes adult mate-species preference rather than following behavior — cross-fostering experiments (e.g. zebra finches raised by Bengalese finch foster parents) show the fostered bird preferentially courts the foster species as an adult, demonstrating sexual imprinting is a separate learning process from filial imprinting, not just an extension of it.
+**Filial imprinting** (young precocial animals forming a rapid, largely irreversible attachment to and following-response toward the first appropriately moving stimulus encountered) is the case study most associated with **Konrad Lorenz**, who famously became the imprinted "parent" of a clutch of greylag geese he raised from hatching, demonstrating the response could attach to an inappropriate object (a human, or in later experiments a moving box) if presented at the critical window instead of the biological parent. A second, distinct form, **sexual imprinting**, occurs later in development and shapes adult mate-species preference rather than following behavior; cross-fostering experiments (e.g. zebra finches raised by Bengalese finch foster parents) show the fostered bird preferentially courts the foster species as an adult, demonstrating sexual imprinting is a separate learning process from filial imprinting, not just an extension of it.
 
 <!-- VIDEO: Lorenz's imprinted goslings following him instead of an adult goose — Anser anser — the following-response itself is the entire phenomenon and reads far more clearly in motion than in a still photo -->
 
 ### Habituation and Sensitization
 
-**Habituation** is the simplest form of learning: a decrease in response strength to a repeated, harmless stimulus — the classic demonstration is the marine snail *Aplysia californica*'s gill-withdrawal reflex, which weakens with repeated light siphon touches (and is the model organism Eric Kandel used to work out the actual synaptic mechanism of habituation, reduced neurotransmitter release at the sensory-to-motor synapse, earning a Nobel Prize). **Sensitization** is the opposite: an *increase* in response strength to a stimulus following exposure to a strong or noxious stimulus (in the same *Aplysia* system, a shock to the tail strengthens the gill-withdrawal response to a subsequent light touch that previously produced little response). Both are non-associative forms of learning — no pairing between two stimuli is required, unlike conditioning below.
+**Habituation** is the simplest form of learning: a decrease in response strength to a repeated, harmless stimulus. The classic demonstration is the marine snail *Aplysia californica*'s gill-withdrawal reflex, which weakens with repeated light siphon touches (and is the model organism Eric Kandel used to work out the actual synaptic mechanism of habituation, reduced neurotransmitter release at the sensory-to-motor synapse, earning a Nobel Prize). **Sensitization** is the opposite: an *increase* in response strength to a stimulus following exposure to a strong or noxious stimulus (in the same *Aplysia* system, a shock to the tail strengthens the gill-withdrawal response to a subsequent light touch that previously produced little response). Both are non-associative forms of learning — no pairing between two stimuli is required, unlike conditioning below.
 
 ### Classical Conditioning
 
@@ -62,7 +62,7 @@ Four consequence categories are commonly tested and commonly confused, since "po
 ![Reinforcement/punishment quadrant graphic: vertical axis "increase in behaviour" vs. "decrease in behaviour," horizontal axis "remove stimulus" vs. "add stimulus," with positive reinforcement, negative reinforcement, positive punishment, and negative punishment labeled in the four resulting quadrants.](/ETHOLOGYPICS/operant-conditioning-quadrant-table-graphic.webp)
 *Source: ResearchGate, fig. illustrating reinforcement/punishment categories*
 
-**Reinforcement schedules** are also directly testable: **continuous reinforcement** (every response reinforced) produces fast learning but fast extinction; **partial/intermittent schedules** (fixed-ratio, variable-ratio, fixed-interval, variable-interval) produce slower learning but far greater resistance to extinction — variable-ratio schedules in particular produce the highest, steadiest response rates, the same principle underlying slot-machine-style unpredictable reward.
+**Reinforcement schedules** are also directly testable: **continuous reinforcement** (every response reinforced) produces fast learning but fast extinction; **partial/intermittent schedules** (fixed-ratio, variable-ratio, fixed-interval, variable-interval) produce slower learning but far greater resistance to extinction; variable-ratio schedules in particular produce the highest, steadiest response rates, the same principle underlying slot-machine-style unpredictable reward.
 
 ### Observational and Insight Learning
 
@@ -80,7 +80,7 @@ Four consequence categories are commonly tested and commonly confused, since "po
 
 ### Play Behavior
 
-**Play** — behavior performed with no immediate survival or reproductive payoff, often an exaggerated or out-of-context version of adult functional behavior (play-fighting, play-hunting, locomotor play) — is most common in juveniles of species with extended developmental periods and larger brains (particularly mammalian carnivores and primates). Its ultimate function is debated but the leading hypotheses, both testable as exam content, are that play allows **low-stakes practice of adult motor skills** (predatory, competitive, or social) before they carry real consequences, and that it builds **social/behavioral flexibility** useful for coping with unpredictable situations later in life.
+**Play** (behavior performed with no immediate survival or reproductive payoff, often an exaggerated or out-of-context version of adult functional behavior: play-fighting, play-hunting, locomotor play) is most common in juveniles of species with extended developmental periods and larger brains (particularly mammalian carnivores and primates). Its ultimate function is debated but the leading hypotheses, both testable as exam content, are that play allows **low-stakes practice of adult motor skills** (predatory, competitive, or social) before they carry real consequences, and that it builds **social/behavioral flexibility** useful for coping with unpredictable situations later in life.
 
 ## Comparative Structures
 
@@ -107,11 +107,11 @@ Four consequence categories are commonly tested and commonly confused, since "po
 
 **Interactive**
 
-- **Operant conditioning quadrant classifier (drag-and-drop, HTML/JS, no new library)** — named consequence scenarios sorted into positive/negative reinforcement/punishment, with immediate feedback — directly targets the "positive/negative ≠ pleasant/unpleasant" confusion that drives most wrong answers on this topic.
+- **Operant conditioning quadrant classifier (drag-and-drop, HTML/JS, no new library)**: named consequence scenarios sorted into positive/negative reinforcement/punishment, with immediate feedback, directly targeting the "positive/negative ≠ pleasant/unpleasant" confusion that drives most wrong answers on this topic.
 
 {{< iframe src="/operant-quadrant-classifier.html" title="Operant Conditioning Quadrant Classifier" height="480px" >}}
 
-- **Reinforcement schedule response-rate simulator (Plotly)** — lets the user select continuous, fixed-ratio, variable-ratio, fixed-interval, or variable-interval schedules and view a simulated cumulative-response curve for each, then compare extinction rate after reinforcement stops — makes the abstract "resistance to extinction" claim visually concrete.
+- **Reinforcement schedule response-rate simulator (Plotly)** — lets the user select continuous, fixed-ratio, variable-ratio, fixed-interval, or variable-interval schedules and view a simulated cumulative-response curve for each, then compare extinction rate after reinforcement stops, making the abstract "resistance to extinction" claim visually concrete.
 
 {{< iframe src="/reinforcement-schedule-simulator.html" title="Reinforcement Schedule Response-Rate Simulator" height="520px" >}}
 

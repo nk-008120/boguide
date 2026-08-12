@@ -6,9 +6,9 @@ description: "Structural anatomy for IBO/USABO at full depth, organized 5:3:2 �
 
 ## How this section is organized
 
-IBO/USABO "Animal Anatomy" is not a zoology-wide survey of every phylum in equal depth — it's overwhelmingly a **human anatomy** course on the structural side, extended by comparison to other vertebrates, with a lighter structural survey of the wider animal kingdom on top. This section is weighted accordingly, roughly **5 : 3 : 2**:
+IBO/USABO "Animal Anatomy" is not a zoology-wide survey of every phylum in equal depth. It's overwhelmingly a **human anatomy** course on the structural side, extended by comparison to other vertebrates, with a lighter structural survey of the wider animal kingdom on top. This section is weighted accordingly, roughly **5 : 3 : 2**:
 
-- **Human Anatomy** — the densest tier, covering human organ-system structure (histology, named cell types, mechanism) in the depth actually tested. Originally planned as 5 pages, it's split into **10 system-specific pages** here — each Human page proved too dense for one system to share a page with another at full depth (compare, for instance, the single-page treatment of Skeletal+Integumentary against the now-separate [Skeletal](Human-Skeletal-System/) and [Integumentary](Human-Integumentary-System/) pages). The "5" in the ratio still refers to five *systems worth* of depth, now spread across more, shorter pages rather than fewer, longer ones.
+- **Human Anatomy**: the densest tier, covering human organ-system structure (histology, named cell types, mechanism) in the depth actually tested. Originally planned as 5 pages, it's split into **10 system-specific pages** here. Each Human page proved too dense for one system to share a page with another at full depth (compare, for instance, the single-page treatment of Skeletal+Integumentary against the now-separate [Skeletal](Human-Skeletal-System/) and [Integumentary](Human-Integumentary-System/) pages). The "5" in the ratio still refers to five *systems worth* of depth, now spread across more, shorter pages rather than fewer, longer ones.
 - **Vertebrate Anatomy** (3 pages) — comparative, explicitly framed against the human baseline above.
 - **Animal Kingdom Anatomy** (2 pages) — a lighter structural survey of invertebrate body plans.
 

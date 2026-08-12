@@ -1,6 +1,6 @@
 ---
 title: "BiOGuide"
-description: "Biology Olympiad Preparation Hub — Free study guides, interactive simulators, and practice for IBO, USABO, and INBO."
+description: "Biology Olympiad Preparation Hub: free study guides, interactive simulators, and practice for IBO, USABO, and INBO."
 layout: "wide"
 ---
 
@@ -12,12 +12,12 @@ layout: "wide"
 
 BioGuide is the only free, comprehensive study guide for biology olympiads that combines:
 
-- **Depth-first content** — IBO targeted depth, Not just name-dropping, not too deep into the rabbitholes.
-- **Interactive simulators** — Plotly-powered visualizations that clarify hard concepts, Simulating tests and a lot more to come!
+- **Depth-first content**: IBO targeted depth, Not just name-dropping, not too deep into the rabbitholes.
+- **Interactive simulators.** Plotly-powered visualizations that clarify hard concepts, Simulating tests and a lot more to come!
 - **Practice problems** — IBO/USABO-style questions with fully explained answers
-- **Open contributions** — Anyone can help fix errors or add new topics. Just follow the rules below!
+- **Open contributions.** Anyone can help fix errors or add new topics; just follow the rules below!
 
-We cover the full IBO syllabus — 15+ sections, 150+ topic pages,666+ Static files, 208+ Interactive widgets, growing every week.
+We cover the full IBO syllabus: 15+ sections, 150+ topic pages,666+ Static files, 208+ Interactive widgets, growing every week.
 
 ---
 
@@ -27,7 +27,7 @@ We cover the full IBO syllabus — 15+ sections, 150+ topic pages,666+ Static fi
   <a href="/resources/" class="card">
     <div class="card-icon">📚</div>
     <h3>Study Resources</h3>
-    <p>The full IBO/USABO syllabus — 150+ topic pages across 15 sections, with diagrams, comparisons, and practice problems.</p>
+    <p>The full IBO/USABO syllabus: 150+ topic pages across 15 sections, with diagrams, comparisons, and practice problems.</p>
     <span class="btn-outline">Browse Resources →</span>
   </a>
   <a href="/about/" class="card">
@@ -78,9 +78,9 @@ We cover the full IBO syllabus — 15+ sections, 150+ topic pages,666+ Static fi
 
 **If you're completely new to olympiad biology:**
 
-1. **[Cell Biology & Biochemistry](/resources/1-cell-molecular/)** — The foundation
-2. **[Genetics](/resources/7-genetics/)** — Core concepts for every exam
-3. **[Animal Anatomy](/resources/2-animal-anatomy/)** — Systematic approach to anatomy
+1. **[Cell Biology & Biochemistry](/resources/1-cell-molecular/)** — the foundation
+2. **[Genetics](/resources/7-genetics/)**, core concepts for every exam
+3. **[Animal Anatomy](/resources/2-animal-anatomy/)**: a systematic approach to anatomy
 
 **If you have a weak spot:** Use the search bar (top right) or browse sections by topic.
 
@@ -131,7 +131,7 @@ BioGuide follows this open contribution model:
 
 ## 📄 License
 
-Content (text) is licensed under **CC BY-NC-SA 4.0** — free to share and adapt for non-commercial purposes, with attribution.
+Content (text) is licensed under **CC BY-NC-SA 4.0**: free to share and adapt for non-commercial purposes, with attribution.
 
 Images: See `image-sources.md` for per-image licensing status. A full licensing audit is pending.
 

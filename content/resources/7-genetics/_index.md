@@ -6,13 +6,13 @@ description: "Classical transmission genetics for IBO/USABO: Mendelian inheritan
 
 ## How this section is organized
 
-Genetics sits between two other sections it deliberately does **not** duplicate: it doesn't re-derive the molecular machinery of DNA, transcription, translation, or gene regulation (that's [Cell/Molecular Biology & Biochemistry](../1-cell-molecular/)), and it doesn't re-derive Hardy-Weinberg equilibrium, natural selection, genetic drift, or molecular evolution (that's [Evolution](../15-evolution/)). What's left — and what this section actually covers — is the layer in between: how traits are transmitted from parents to offspring and predicted probabilistically (transmission genetics), how that transmission is shaped by genes' physical location on chromosomes (chromosomal genetics), and the handful of inheritance patterns that don't fit a simple Mendelian, molecular, or population-level treatment at all (quantitative and non-Mendelian genetics). The section runs in three tiers, each building on the last:
+Genetics sits between two other sections it deliberately does **not** duplicate: it doesn't re-derive the molecular machinery of DNA, transcription, translation, or gene regulation (that's [Cell/Molecular Biology & Biochemistry](../1-cell-molecular/)), and it doesn't re-derive Hardy-Weinberg equilibrium, natural selection, genetic drift, or molecular evolution (that's [Evolution](../15-evolution/)). What's left, and what this section actually covers, is the layer in between: how traits are transmitted from parents to offspring and predicted probabilistically (transmission genetics), how that transmission is shaped by genes' physical location on chromosomes (chromosomal genetics), and the handful of inheritance patterns that don't fit a simple Mendelian, molecular, or population-level treatment at all (quantitative and non-Mendelian genetics). The section runs in three tiers, each building on the last:
 
-- **Transmission Genetics** (5 pages) — Mendel's laws and their extensions, gene interactions, sex-linked inheritance, and reading real human pedigrees.
-- **Chromosomal Genetics** (2 pages) — the genetic consequences of a gene's physical position on a chromosome: linkage, recombination, genetic mapping, and variation in chromosome number and structure.
-- **Beyond Mendel** (2 pages) — extranuclear and parent-of-origin inheritance, and the quantitative-trait/non-random-mating topics that sit alongside, rather than inside, population genetics.
+- **Transmission Genetics** (5 pages): Mendel's laws and their extensions, gene interactions, sex-linked inheritance, and reading real human pedigrees.
+- **Chromosomal Genetics** (2 pages), the genetic consequences of a gene's physical position on a chromosome: linkage, recombination, genetic mapping, and variation in chromosome number and structure.
+- **Beyond Mendel** (2 pages) covers extranuclear and parent-of-origin inheritance, and the quantitative-trait/non-random-mating topics that sit alongside, rather than inside, population genetics.
 
-Start with [Mendel's Laws & Probability in Genetics](Mendelian-Inheritance-Probability/) — every later page in this section assumes its segregation/assortment vocabulary and probability tools.
+Start with [Mendel's Laws & Probability in Genetics](Mendelian-Inheritance-Probability/); every later page in this section assumes its segregation/assortment vocabulary and probability tools.
 
 {{< cards cols="1" >}}
   {{< card link="mendelian-inheritance-probability/" title="1. Mendel's Laws & Probability in Genetics" subtitle="Segregation, independent assortment, monohybrid/dihybrid crosses, test crosses, probability rules, chi-square — read this first." >}}

@@ -11,13 +11,13 @@ syllabus_tags: ["IBO", "USABO", "plant-physiology"]
 
 ## Overview
 
-[Leaf Anatomy](../../6-plant-anatomy/leaf-anatomy/) described the stomatal complex structurally — paired guard cells with radially oriented cellulose microfibrils, flanked by subsidiary cells — and named the consequence (the pore opens or closes) without covering what actually drives it. This page covers that mechanism: the ion movements that change guard cell turgor and therefore shape, the environmental signals that trigger opening and closing, and why the stomatal pore is fundamentally a compromise structure, open only as much as the plant's current water and carbon budget can justify.
+[Leaf Anatomy](../../6-plant-anatomy/leaf-anatomy/) described the stomatal complex structurally (paired guard cells with radially oriented cellulose microfibrils, flanked by subsidiary cells) and named the consequence (the pore opens or closes) without covering what actually drives it. This page covers that mechanism: the ion movements that change guard cell turgor and therefore shape, the environmental signals that trigger opening and closing, and why the stomatal pore is fundamentally a compromise structure, open only as much as the plant's current water and carbon budget can justify.
 
 ## Key Concepts
 
 ### The Guard Cell Turgor Mechanism
 
-A guard cell's radial micellation (cellulose microfibrils wrapped around the cell like hoops around a barrel, described structurally on [Leaf Anatomy](../../6-plant-anatomy/leaf-anatomy/)) means the cell can only elongate along its length, not expand in girth, as turgor pressure rises. Because the two guard cells of a pair are joined at both ends, and their inner (pore-facing) walls are thicker and less elastic than their outer walls, this length-only elongation forces each guard cell to bow outward away from the pore as it gains turgor — opening the stomatal aperture between them. Losing turgor reverses the bow, closing the pore. The entire mechanism therefore reduces to one question: what makes the guard cell gain or lose turgor?
+A guard cell's radial micellation (cellulose microfibrils wrapped around the cell like hoops around a barrel, described structurally on [Leaf Anatomy](../../6-plant-anatomy/leaf-anatomy/)) means the cell can only elongate along its length, not expand in girth, as turgor pressure rises. Because the two guard cells of a pair are joined at both ends, and their inner (pore-facing) walls are thicker and less elastic than their outer walls, this length-only elongation forces each guard cell to bow outward away from the pore as it gains turgor, opening the stomatal aperture between them. Losing turgor reverses the bow, closing the pore. The entire mechanism therefore reduces to one question: what makes the guard cell gain or lose turgor?
 
 - **Opening**: **H⁺-ATPases** in the guard cell plasma membrane actively pump protons out, hyperpolarizing the membrane. This hyperpolarization drives **K⁺ influx** through voltage-gated inward-rectifying K⁺ channels, and **Cl⁻** and **malate²⁻** (synthesized within the guard cell from starch breakdown) accumulate alongside the K⁺ to balance charge. The rising solute concentration lowers the guard cell's solute potential (Ψₛ), water follows osmotically (see [Water Transport & Transpiration](../water-transport-transpiration/) for the Ψ framework), turgor rises, and the pore opens.
 - **Closing**: Outward-rectifying K⁺ channels and anion channels open instead, releasing K⁺, Cl⁻, and malate²⁻ from the guard cell; solute potential rises (becomes less negative), water leaves osmotically, turgor falls, and the pore closes.
@@ -34,9 +34,9 @@ Subsidiary cells (see [Leaf Anatomy](../../6-plant-anatomy/leaf-anatomy/)) act a
 
 Guard cells integrate several independent signals into the single opening/closing decision above:
 
-- **Blue light** — detected by **phototropin** photoreceptors in the guard cell plasma membrane, directly activating the H⁺-ATPase and driving opening independent of photosynthesis; this is a dedicated blue-light response, not simply a byproduct of photosynthetic activity in the guard cell's own chloroplasts (which are present but sparse and contribute only modestly to guard cell energy metabolism).
+- **Blue light**: detected by **phototropin** photoreceptors in the guard cell plasma membrane, directly activating the H⁺-ATPase and driving opening independent of photosynthesis; this is a dedicated blue-light response, not simply a byproduct of photosynthetic activity in the guard cell's own chloroplasts (which are present but sparse and contribute only modestly to guard cell energy metabolism).
 - **CO₂ concentration** — low intercellular CO₂ (drawn down by active photosynthesis in the mesophyll, see [Carbon Fixation](../calvin-cycle-photorespiration-c4-cam/)) promotes opening; rising CO₂ promotes closing. This creates a feedback loop tying stomatal aperture to the plant's own photosynthetic demand for CO₂, independent of light.
-- **Abscisic acid (ABA)** — synthesized in roots and leaves under water stress (falling soil water potential, wilting) and transported to guard cells, where it triggers a signaling cascade (cytosolic Ca²⁺ increase, cytosolic pH increase) that activates the outward K⁺/anion channels directly, forcing closure regardless of light or CO₂ conditions. ABA-triggered closure is the plant's principal defense against catastrophic water loss and is developed further, alongside ABA's other roles, on [Plant Hormones](../plant-hormones/).
+- **Abscisic acid (ABA)**: synthesized in roots and leaves under water stress (falling soil water potential, wilting) and transported to guard cells, where it triggers a signaling cascade (cytosolic Ca²⁺ increase, cytosolic pH increase) that activates the outward K⁺/anion channels directly, forcing closure regardless of light or CO₂ conditions. ABA-triggered closure is the plant's principal defense against catastrophic water loss and is developed further, alongside ABA's other roles, on [Plant Hormones](../plant-hormones/).
 
 ![Guard cell model of ABA signaling and stomatal closure: ABA triggers cytosolic Ca2+ increase via a Ca2+-permeable channel, activating S-type and R-type anion channels and inhibiting K+in channels, while depolarization and rising pH open K+out channels, together driving K+/anion efflux and guard cell turgor loss](/PLANTPHYSIOPICS/guard-cell-ion-flux-closing.png)
 *Source: ResearchGate, fig. 2, "A guard cell model illustrating the proposed functions of ion channels in ABA signaling"*
@@ -99,7 +99,7 @@ Every stoma is a compromise: opening it admits CO₂ for the Calvin cycle (see [
   <div style="text-align:center; margin-top:0.5rem;">
     <button class="gc-btn" id="gcOpenBtn" style="background:#2d6a4f; color:#fff; border:none; padding:9px 18px; border-radius:999px; font-size:0.88rem; cursor:pointer; margin-right:8px;">Opening</button>
     <button class="gc-btn" id="gcCloseBtn" style="background:#94a3b8; color:#fff; border:none; padding:9px 18px; border-radius:999px; font-size:0.88rem; cursor:pointer;">Closing</button>
-    <div id="gcNote" style="margin-top:10px; font-size:0.85rem; color:#4b5563;">H&#8314;-ATPase hyperpolarizes the membrane, K&#8314; flows in through inward-rectifying channels, Cl&#8315;/malate&#178;&#8315; accumulate — solute potential drops, water follows, turgor rises, guard cells bow open.</div>
+    <div id="gcNote" style="margin-top:10px; font-size:0.85rem; color:#4b5563;">H&#8314;-ATPase hyperpolarizes the membrane, K&#8314; flows in through inward-rectifying channels, Cl&#8315;/malate&#178;&#8315; accumulate; solute potential drops, water follows, turgor rises, guard cells bow open.</div>
   </div>
 </div>
 <script>
@@ -121,7 +121,7 @@ Every stoma is a compromise: opening it admits CO₂ for the Calvin cycle (see [
     openBtn.style.background = open ? '#2d6a4f' : '#94a3b8';
     closeBtn.style.background = open ? '#94a3b8' : '#2d6a4f';
     note.textContent = open
-      ? 'H⁺-ATPase hyperpolarizes the membrane, K⁺ flows in through inward-rectifying channels, Cl⁻/malate²⁻ accumulate — solute potential drops, water follows, turgor rises, guard cells bow open.'
+      ? 'H⁺-ATPase hyperpolarizes the membrane, K⁺ flows in through inward-rectifying channels, Cl⁻/malate²⁻ accumulate; solute potential drops, water follows, turgor rises, guard cells bow open.'
       : 'Outward-rectifying K⁺ and anion channels open instead, releasing K⁺, Cl⁻, and malate²⁻ — solute potential rises, water leaves, turgor falls, the pore closes.';
   }
   openBtn.addEventListener('click', function(){ setState(true); });
