@@ -505,3 +505,1199 @@ rounds:
             options: [{key: "A", text: "Curve A"}, {key: "B", text: "Curve B"}, {key: "C", text: "Curve C"}, {key: "I", text: "Phase I"}, {key: "II", text: "Phase II"}, {key: "O", text: "No match"}]
             answer: "O"
             explanation: "This graph tracks lung/pleural mechanics only — no curve represents abdominal cavity volume, even though diaphragm movement during breathing does affect it in reality."
+
+      - id: q11
+        number: "Q11"
+        name: "Acid-Base Balance — Reading a Blood Gas Map"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=22"
+        subjects:
+          - name: "Homeostasis & Osmoregulation"
+            link: "/resources/3-animal-physiology/homeostasis-osmoregulation/"
+        statements:
+          - letter: "Q11.1"
+            type: "mcq"
+            text: "The pH of human blood is kept in a strict range by buffer systems, respiratory CO2 exhalation, and renal H+ excretion/HCO3- handling. Conditions A–F are plotted on a blood-gas map (arterial pH vs. plasma [HCO3-] vs. [H+]), surrounding a central \"Normal\" zone. Which letter matches: the condition following vomiting?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}]
+            answer: "C"
+            explanation: "Vomiting loses stomach HCl — a primary GAIN of bicarbonate relative to acid, i.e. metabolic alkalosis: both pH and [HCO3-] rise together. C sits in the high-pH, high-HCO3- corner of the map, exactly that combination."
+          - letter: "Q11.2"
+            type: "mcq"
+            text: "Which letter matches: acute respiratory acidosis due to ineffective respiration caused by a stroke affecting the brainstem?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}]
+            answer: "A"
+            explanation: "A brainstem stroke impairing breathing traps CO2, dropping pH — but \"acute\" means the kidneys haven't had time to compensate yet, so [HCO3-] rises only a little (from fast cellular buffering, not renal compensation). A sits at low pH with only mildly elevated HCO3-, the acute (uncompensated) respiratory-acidosis position."
+          - letter: "Q11.3"
+            type: "mcq"
+            text: "Which letter matches: acute respiratory alkalosis caused by hyperventilation?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}]
+            answer: "D"
+            explanation: "Hyperventilation blows off CO2, raising pH — acutely, before the kidneys can lower [HCO3-] to compensate. D sits at high pH with only mildly reduced HCO3-, the acute (uncompensated) respiratory-alkalosis position, mirroring A's acute-acidosis logic on the opposite side."
+          - letter: "Q11.4"
+            type: "mcq"
+            text: "Which letter matches: chronic respiratory acidosis associated with asthma?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}]
+            answer: "B"
+            explanation: "Asthma's chronic CO2 retention gives the kidneys time to compensate by retaining much more HCO3-, pulling pH most of the way back toward normal despite persistently high CO2. B sits at a near-normal pH but with markedly elevated [HCO3-] — the fully renally-compensated version of A's acute picture."
+          - letter: "Q11.5"
+            type: "mcq"
+            text: "Which letter matches: chronic respiratory alkalosis associated with anaemia?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}]
+            answer: "E"
+            explanation: "Anaemia's chronic tissue hypoxia drives sustained mild hyperventilation; over time the kidneys compensate by excreting more HCO3-, pulling pH back toward normal despite persistently low CO2. E sits at a near-normal pH with markedly reduced [HCO3-] — the renally-compensated counterpart of D, on the low-HCO3- side. (F, at low pH and low HCO3-, is metabolic acidosis — not used by any statement here, as the question itself warns not every letter is needed.)"
+
+      - id: q12
+        number: "Q12"
+        name: "Antibiotic Pharmacokinetics in a Cow"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=24"
+        subjects:
+          - name: "Digestive & Metabolic Physiology"
+            link: "/resources/3-animal-physiology/digestive-metabolic-physiology/"
+        statements:
+          - letter: "Q12.1"
+            type: "numeric"
+            text: "A cow is given 4400 mg of an antibiotic IV at 11am. It has a 6-hour half-life, and at equilibrium 25% of it circulates in blood (75% in interstitium). At 11pm, a blood sample's concentration is measured at 5 mg/L. Calculate the cow's total blood volume, in litres (L)."
+            expected: 55
+            tolerance: 0.5
+            explanation: "11am→11pm is 12 hours = exactly 2 half-lives, so the total-body amount has fallen to 4400 × (1/2)² = 1100 mg. At equilibrium, blood always holds 25% of whatever the current total-body amount is: 0.25 × 1100 = 275 mg in blood. A concentration of 5 mg/L then means the blood volume is 275 mg ÷ 5 mg/L = 55 L."
+          - letter: "Q12.2"
+            type: "numeric"
+            text: "Certain fruits (e.g. pomegranate) inhibit liver metabolic enzymes. Assuming pomegranate consumption doubles the antibiotic's half-life (to 12 hours), calculate the blood concentration at 5pm (6 hours after the 11am dose), in mg/ml, to two decimal places."
+            expected: 0.01
+            tolerance: 0.002
+            explanation: "The starting blood concentration (t=0) is 25% of the dose in the 55 L blood volume found above: (0.25 × 4400 mg) ÷ 55 L = 20 mg/L. At 6 hours with the doubled 12-hour half-life, that's exactly one half-life: 20 × 0.5 = 14.14 mg/L (20 × 2^-0.5, more precisely) ≈ 14.14 mg/L = 0.01414 mg/ml, which rounds to 0.01 mg/ml."
+          - letter: "Q12.3"
+            text: "The cow will eventually develop antibiotic resistance."
+            answer: false
+            explanation: "FALSE. Resistance is driven by sustained sub-therapeutic selective pressure (e.g. incomplete courses, chronic low-dose exposure) — a single, fully-cleared prophylactic IV dose doesn't inherently select for resistant bacteria."
+          - letter: "Q12.4"
+            text: "The cow will have increased blood clotting times."
+            answer: true
+            explanation: "TRUE. Antibiotics — especially broad-spectrum oral ones — disrupt gut microbiota that synthesise vitamin K, which the liver needs to make several clotting factors. Less microbial vitamin K means slower clotting factor synthesis and longer clotting times."
+          - letter: "Q12.5"
+            text: "The cow will have reduced nutrient absorption."
+            answer: true
+            explanation: "TRUE. Disrupting the gut microbiota (which assists digestion and can cause antibiotic-associated GI upset/diarrhoea) reduces the gut's effective capacity to absorb nutrients."
+          - letter: "Q12.6"
+            text: "The cow will have elevated circulating insulin levels."
+            answer: false
+            explanation: "FALSE. There's no established mechanism linking antibiotic treatment to elevated insulin — the gut-microbiota effects above act on vitamin K synthesis and nutrient absorption, not endocrine pancreatic function."
+
+      - id: q13
+        number: "Q13"
+        name: "Renal Handling of Glucose"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=25"
+        subjects:
+          - name: "Human Excretory System"
+            link: "/resources/2-animal-anatomy/human-excretory-system/"
+        statements:
+          - letter: "Q13.1"
+            text: "Glucose is freely filtered in glomeruli."
+            answer: true
+            explanation: "TRUE. Glucose is small and uncharged enough to pass freely through the glomerular filtration barrier along with water and other small solutes — none is held back at this stage."
+          - letter: "Q13.2"
+            type: "mcq"
+            text: "The graph plots glucose filtered load, reabsorption, and excretion (mg/min) against plasma glucose concentration as curves A–D. Which curve is glucose EXCRETED?"
+            options: [{key: "A", text: "Curve A"}, {key: "B", text: "Curve B"}, {key: "C", text: "Curve C"}, {key: "D", text: "Curve D"}]
+            answer: "B"
+            explanation: "Excreted = filtered − reabsorbed. Below the reabsorption threshold, everything filtered gets reabsorbed, so excretion is zero; once filtered load exceeds the transporters' capacity, the excess spills into urine and excretion rises roughly linearly. Curve B is exactly that shape — flat at zero, then rising once the other curves diverge."
+          - letter: "Q13.3"
+            type: "mcq"
+            text: "Which curve is glucose FILTERED?"
+            options: [{key: "A", text: "Curve A"}, {key: "B", text: "Curve B"}, {key: "C", text: "Curve C"}, {key: "D", text: "Curve D"}]
+            answer: "A"
+            explanation: "Filtered load = GFR × plasma concentration — a simple proportional relationship with no saturation, so it's a straight line through the origin for the whole range. Curve A is that straight diagonal, the steepest and simplest of the four."
+          - letter: "Q13.4"
+            type: "mcq"
+            text: "Which curve is glucose REABSORBED?"
+            options: [{key: "A", text: "Curve A"}, {key: "B", text: "Curve B"}, {key: "C", text: "Curve C"}, {key: "D", text: "Curve D"}]
+            answer: "C"
+            explanation: "Reabsorption depends on a finite number of transporters (SGLT) in the proximal tubule, so it rises with filtered load only until those transporters saturate at a transport maximum (Tm), then plateaus. Curve C is the one that rises and flattens out — the signature of a saturable, transporter-limited process."
+          - letter: "Q13.5"
+            type: "mcq"
+            text: "Which marking indicates \"normal levels\" (a reference point for normal fasting plasma glucose)?"
+            options: [{key: "A", text: "Curve A"}, {key: "B", text: "Curve B"}, {key: "C", text: "Curve C"}, {key: "D", text: "Curve D"}]
+            answer: "D"
+            explanation: "D isn't a fourth curve — it's a small bracket marking a specific x-axis position on the graph, used to flag where normal fasting plasma glucose concentration sits relative to the reabsorption threshold."
+          - letter: "Q13.6"
+            type: "numeric"
+            text: "What is the maximum rate of glucose reuptake (the transport maximum, Tm)? Round to the nearest hundred, in mg/min."
+            expected: 400
+            tolerance: 25
+            explanation: "This is exactly where the reabsorption curve (C) plateaus — reading its flat, saturated portion off the graph gives ≈400 mg/min, the Tm for renal glucose reabsorption."
+
+      - id: q14
+        number: "Q14"
+        name: "Liver, Gallbladder, and Kidney Vessels"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=26"
+        subjects:
+          - name: "Human Excretory System"
+            link: "/resources/2-animal-anatomy/human-excretory-system/"
+        statements:
+          - letter: "Q14.1"
+            type: "mcq"
+            text: "The figure shows vessels A–E around the liver, gallbladder, and kidney (P = \"all of the above\", Q = \"none of the above\"). Which matches: blood enters this vessel from the right ventricle?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "P", text: "P (all of the above)"}, {key: "Q", text: "Q (none of the above)"}]
+            answer: "Q"
+            explanation: "Blood leaving the right ventricle goes to the LUNGS via the pulmonary artery, not to abdominal organs — none of the liver/gallbladder/kidney vessels shown here carry right-ventricular output, so the answer is \"none of the above.\""
+          - letter: "Q14.2"
+            type: "mcq"
+            text: "Which matches: the blood carried in the vessel will drain into the left atrium of the heart?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "P", text: "P (all of the above)"}, {key: "Q", text: "Q (none of the above)"}]
+            answer: "Q"
+            explanation: "Only the pulmonary veins (returning oxygenated blood from the lungs) drain into the left atrium. Abdominal venous blood returns via the vena cava to the RIGHT atrium instead — none of these vessels match, so \"none of the above\" again."
+          - letter: "Q14.3"
+            type: "mcq"
+            text: "Which matches: carries urine?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "P", text: "P (all of the above)"}, {key: "Q", text: "Q (none of the above)"}]
+            answer: "E"
+            explanation: "E is the single duct leaving the bottom of the kidney in the figure — anatomically that's the ureter, the vessel that carries urine onward to the bladder."
+          - letter: "Q14.4"
+            type: "mcq"
+            text: "Which matches: contains digestive enzymes?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "P", text: "P (all of the above)"}, {key: "Q", text: "Q (none of the above)"}]
+            answer: "Q"
+            explanation: "Digestive enzymes are a pancreatic exocrine product, carried by the pancreatic duct — but this figure only shows the liver, gallbladder, and kidney (per its own legend), with no pancreatic duct depicted at all. Bile (from the gallbladder) doesn't itself contain enzymes, so no vessel here matches — \"none of the above.\""
+          - letter: "Q14.5"
+            type: "mcq"
+            text: "Which matches: contains steroid salts?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "P", text: "P (all of the above)"}, {key: "Q", text: "Q (none of the above)"}]
+            answer: "D"
+            explanation: "D connects near the gallbladder — the bile duct. Bile salts are synthesised from cholesterol (a steroid), so \"contains steroid salts\" specifically describes bile, distinguishing D here from the \"no match\" given to digestive enzymes in Q14.4 (bile carries steroid-derived salts, not enzymes)."
+
+      - id: q15
+        number: "Q15"
+        name: "Classifying Hypersensitivity Reactions"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=27"
+        subjects:
+          - name: "Immune Physiology"
+            link: "/resources/3-animal-physiology/immune-physiology/"
+        statements:
+          - letter: "Q15.1"
+            type: "mcq"
+            text: "Match each scenario to one of the four hypersensitivity types (I: IgE/mast-cell, fast; II: IgG/IgM vs. cellular antigen + complement/ADCC; III: immune complexes deposited in tissue; IV: T-cell/macrophage-mediated). Which type matches: the reaction during a mismatched blood transfusion?"
+            options: [{key: "A", text: "Type I"}, {key: "B", text: "Type II"}, {key: "C", text: "Type III"}, {key: "D", text: "Type IV"}]
+            answer: "B"
+            explanation: "A mismatched transfusion is antibody (IgG/IgM) binding directly to antigens on the surface of the transfused red blood cells, triggering complement-mediated lysis — the textbook definition of Type II."
+          - letter: "Q15.2"
+            type: "mcq"
+            text: "Which type matches: exposure to poison ivy, whose toxin binds human proteins and makes them self-antigens?"
+            options: [{key: "A", text: "Type I"}, {key: "B", text: "Type II"}, {key: "C", text: "Type III"}, {key: "D", text: "Type IV"}]
+            answer: "D"
+            explanation: "Poison ivy's urushiol-modified self-proteins are recognised by T-lymphocytes, driving a T-cell/macrophage-mediated contact dermatitis — classic Type IV (delayed-type/cell-mediated) hypersensitivity."
+          - letter: "Q15.3"
+            type: "mcq"
+            text: "Which type matches: the reaction dermatologists use to identify specific food allergens patients are sensitive to (skin-prick testing)?"
+            options: [{key: "A", text: "Type I"}, {key: "B", text: "Type II"}, {key: "C", text: "Type III"}, {key: "D", text: "Type IV"}]
+            answer: "A"
+            explanation: "Skin-prick allergy testing relies on the fast (minutes-scale), IgE/mast-cell-driven wheal-and-flare response — Type I, the only type fast enough to read within the same clinic visit."
+          - letter: "Q15.4"
+            type: "mcq"
+            text: "Which type matches: a reaction after pathogenic bacteria are destroyed by the immune system, but some of their macromolecules persist afterward?"
+            options: [{key: "A", text: "Type I"}, {key: "B", text: "Type II"}, {key: "C", text: "Type III"}, {key: "D", text: "Type IV"}]
+            answer: "C"
+            explanation: "Leftover bacterial antigen persisting alongside antibody forms immune complexes that deposit in tissue and activate complement/recruit neutrophils — the Type III mechanism."
+          - letter: "Q15.5"
+            type: "mcq"
+            text: "Which type matches: a reaction that cannot be transferred from one patient to another via serum?"
+            options: [{key: "A", text: "Type I"}, {key: "B", text: "Type II"}, {key: "C", text: "Type III"}, {key: "D", text: "Type IV"}]
+            answer: "D"
+            explanation: "Types I, II and III are all antibody-mediated, so transferring serum (which carries antibodies) can transfer the reaction. Type IV is T-cell-mediated — T cells aren't in serum, so it's the one type that can't be transferred that way."
+          - letter: "Q15.6"
+            type: "mcq"
+            text: "Which type matches: hay fever?"
+            options: [{key: "A", text: "Type I"}, {key: "B", text: "Type II"}, {key: "C", text: "Type III"}, {key: "D", text: "Type IV"}]
+            answer: "A"
+            explanation: "Hay fever (allergic rhinitis) is a classic fast-onset IgE/mast-cell allergic reaction to pollen — Type I."
+
+      - id: q16
+        number: "Q16"
+        name: "Cochlear Frequency Coding and Sound Pressure"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=28"
+        subjects:
+          - name: "Human Sensory Organs"
+            link: "/resources/2-animal-anatomy/human-sensory-organs/"
+        statements:
+          - letter: "Q16.1"
+            text: "Sounds detected by hair cells towards the narrowest part of the cochlea are coded in a phase-locked manner."
+            answer: false
+            explanation: "FALSE. The narrowest part of the basilar membrane resonates best to HIGH frequencies, but phase-locking (periodicity coding) only works below 4 kHz per the question's own description — above that, place code takes over instead. High-frequency, narrow-part sounds are therefore place-coded, not phase-locked."
+          - letter: "Q16.2"
+            text: "For sounds detected near the base of the membrane, the number of fibres firing is proportional to the amplitude of the displacement of the basilar membrane."
+            answer: true
+            explanation: "TRUE. This is the place-code mechanism itself: a given patch of membrane's response strength (and hence how many/how strongly its associated fibres fire) scales with how much that patch physically vibrates — bigger displacement, more firing."
+          - letter: "Q16.3"
+            type: "numeric"
+            text: "What is the absolute refractory period of fibres in the cochlear nerve? Give your answer in milliseconds (ms)."
+            expected: 0.25
+            tolerance: 0
+            explanation: "A general neurophysiological property of these fast-conducting auditory nerve fibres, not something derivable from the figure — 0.25 ms is the textbook value the official key expects here."
+          - letter: "Q16.4"
+            type: "numeric"
+            text: "Using dB SPL = 20·log₁₀(P / (2×10⁻⁵ Pa)), and reading the threshold-of-audibility and threshold-of-pain curves at 50 Hz from the figure: how many times greater is the pressure of a painful sound than a just-audible sound, at 50 Hz?"
+            expected: 10000
+            tolerance: 500
+            explanation: "At 50 Hz the two curves read about 130 dB (pain) and 50 dB (audibility) — an 80 dB gap. Since dB SPL is 20·log₁₀(P/P₀), a difference of 80 dB between two pressures means 20·log₁₀(P_pain/P_audible) = 80, so log₁₀(ratio) = 4, i.e. the pressure ratio is 10⁴ = 10,000."
+
+      - id: q17
+        number: "Q17"
+        name: "Feeding Time and the Central vs. Peripheral Circadian Clock"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=29"
+        subjects:
+          - name: "Biological Rhythms"
+            link: "/resources/9-ethology/biological-rhythms/"
+        statements:
+          - letter: "Q17.1"
+            type: "mcq"
+            text: "Mice fed only 6:00–18:00 (daytime) vs. only 18:00–6:00 (nighttime) show liver Per1/Per2 protein peaking at different times, while central-brain Per1/Per2 staining is tracked separately. How many hours has the PERIPHERAL (liver) circadian rhythm shifted between the two feeding schedules?"
+            options: [{key: "A", text: "0 h"}, {key: "B", text: "4 h"}, {key: "C", text: "8 h"}, {key: "D", text: "12 h"}, {key: "E", text: "16 h"}]
+            answer: "D"
+            explanation: "Liver Per1 peaks right at the start of the feeding window in both conditions — 6h for daytime feeding (starts 6:00), 18h for nighttime feeding (starts 18:00). That's a 12-hour shift, matching the 12-hour shift in feeding time itself: the peripheral (liver) clock entrains directly to when food arrives."
+          - letter: "Q17.2"
+            type: "mcq"
+            text: "How many hours has the CENTRAL (brain) circadian rhythm shifted between the two feeding schedules?"
+            options: [{key: "A", text: "0 h"}, {key: "B", text: "4 h"}, {key: "C", text: "8 h"}, {key: "D", text: "12 h"}, {key: "E", text: "16 h"}]
+            answer: "A"
+            explanation: "The central brain clock's staining pattern looks the same across both feeding schedules — unlike the liver, the master SCN clock stays locked to the light/dark cycle and doesn't re-entrain to feeding time, so its shift is 0 hours."
+          - letter: "Q17.3"
+            type: "mcq"
+            text: "During night feeding, how many hours do central Per1 peaks precede peripheral Per1 peaks?"
+            options: [{key: "A", text: "0 h"}, {key: "B", text: "4 h"}, {key: "C", text: "8 h"}, {key: "D", text: "12 h"}, {key: "E", text: "16 h"}]
+            answer: "B"
+            explanation: "Peripheral (liver) Per1 peaks at 18h during night feeding (see Q17.1). The central brain images show their own darkest signal earlier in the cycle; the official key accepts either a 4h or 8h gap here as both readings are defensible from the staining images, graded leniently as \"one and only one\" of the two."
+          - letter: "Q17.4"
+            type: "mcq"
+            text: "If animals were instead fed between 14:00–2:00, what time would you expect peripheral Per1 peaks to occur?"
+            options: [{key: "A", text: "6"}, {key: "B", text: "10"}, {key: "C", text: "14"}, {key: "D", text: "18"}, {key: "E", text: "22"}, {key: "F", text: "2"}]
+            answer: "C"
+            explanation: "The pattern from Q17.1 is that peripheral Per1 peaks right at the START of the feeding window (6h for a 6:00-start schedule, 18h for an 18:00-start schedule). A 14:00–2:00 feeding window starts at 14:00, so by the same rule the predicted peak is 14:00 — option C."
+
+      - id: q18
+        number: "Q18"
+        name: "The Thyroid Axis in Five Clinical Scenarios"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=30"
+        subjects:
+          - name: "Endocrine System Physiology"
+            link: "/resources/3-animal-physiology/endocrine-system-physiology/"
+        statements:
+          - letter: "Q18.1 (T3)"
+            text: "Hashimoto thyroiditis (gradual immune destruction of thyroid tissue): T3 levels are increased relative to healthy individuals."
+            answer: false
+            explanation: "FALSE. A destroyed thyroid can't produce hormone — T3 and T4 fall, not rise, in Hashimoto's."
+          - letter: "Q18.1 (T4)"
+            text: "Hashimoto thyroiditis: T4 levels are increased."
+            answer: false
+            explanation: "FALSE, for the same reason — thyroid tissue loss means less T4 output, not more."
+          - letter: "Q18.1 (TSH)"
+            text: "Hashimoto thyroiditis: TSH levels are increased."
+            answer: true
+            explanation: "TRUE. With T3/T4 low, negative feedback on the pituitary is lost, so TSH rises in an attempt to drive the (now-failing) thyroid harder."
+          - letter: "Q18.1 (TRH)"
+            text: "Hashimoto thyroiditis: TRH levels are increased."
+            answer: true
+            explanation: "TRUE, by the same loss of negative feedback — this time acting on the hypothalamus, raising TRH too."
+          - letter: "Q18.2 (T3)"
+            text: "Graves' disease (TSHR-stimulating antibodies): T3 levels are increased."
+            answer: true
+            explanation: "TRUE. Antibodies that constitutively activate the TSH receptor drive the thyroid to overproduce hormone, directly raising T3."
+          - letter: "Q18.2 (T4)"
+            text: "Graves' disease: T4 levels are increased."
+            answer: true
+            explanation: "TRUE, for the same reason — the overstimulated thyroid overproduces T4 as well."
+          - letter: "Q18.2 (TSH)"
+            text: "Graves' disease: TSH levels are increased."
+            answer: false
+            explanation: "FALSE. The excess T3/T4 suppresses TSH via normal negative feedback on the pituitary — the receptor-level stimulation bypasses the pituitary entirely, so TSH itself stays low, not high."
+          - letter: "Q18.2 (TRH)"
+            text: "Graves' disease: TRH levels are increased."
+            answer: false
+            explanation: "FALSE, same negative-feedback logic acting on the hypothalamus — high T3/T4 suppresses TRH too."
+          - letter: "Q18.3 (T3)"
+            text: "A patient abusing T4 supplement pills for weight loss: T3 levels are increased."
+            answer: true
+            explanation: "TRUE. Exogenous T4 is peripherally converted to T3 in tissues (as the question stem itself states), so extra T4 pills raise T3 levels too."
+          - letter: "Q18.3 (T4)"
+            text: "T4-abuse patient: T4 levels are increased."
+            answer: true
+            explanation: "TRUE — directly, since T4 is exactly what's being taken in excess."
+          - letter: "Q18.3 (TSH)"
+            text: "T4-abuse patient: TSH levels are increased."
+            answer: false
+            explanation: "FALSE. The high circulating T3/T4 suppresses TSH via negative feedback, same as in Graves' — an exogenous excess is treated the same way as an endogenous one by the feedback loop."
+          - letter: "Q18.3 (TRH)"
+            text: "T4-abuse patient: TRH levels are increased."
+            answer: false
+            explanation: "FALSE, same suppression acting on the hypothalamus."
+          - letter: "Q18.4 (T3)"
+            text: "A rare TSH-secreting anterior pituitary tumour: T3 levels are increased."
+            answer: true
+            explanation: "TRUE. Autonomous, feedback-insensitive TSH output from the tumour drives the thyroid to overproduce hormone."
+          - letter: "Q18.4 (T4)"
+            text: "TSH-secreting pituitary tumour: T4 levels are increased."
+            answer: true
+            explanation: "TRUE, for the same reason — the overdriven thyroid overproduces T4 as well as T3."
+          - letter: "Q18.4 (TSH)"
+            text: "TSH-secreting pituitary tumour: TSH levels are increased."
+            answer: true
+            explanation: "TRUE — directly, since the tumour is a TSH-secreting mass, and unlike a normal pituitary it doesn't reduce its output in response to high T3/T4 feedback."
+          - letter: "Q18.4 (TRH)"
+            text: "TSH-secreting pituitary tumour: TRH levels are increased."
+            answer: false
+            explanation: "FALSE. The hypothalamus itself still responds normally to the resulting high T3/T4 — it isn't part of the tumour — so TRH is suppressed by feedback even though TSH escapes that suppression."
+          - letter: "Q18.5 (T3)"
+            text: "Thyroid hormone resistance (a mutated thyroid hormone receptor): T3 levels are increased."
+            answer: true
+            explanation: "TRUE. Tissues (including the pituitary/hypothalamus) can't properly sense T3/T4 through the mutated receptor, so negative feedback fails and the whole axis is driven harder, raising every level in the pathway."
+          - letter: "Q18.5 (T4)"
+            text: "Thyroid hormone resistance: T4 levels are increased."
+            answer: true
+            explanation: "TRUE, by the same feedback-failure logic."
+          - letter: "Q18.5 (TSH)"
+            text: "Thyroid hormone resistance: TSH levels are increased."
+            answer: true
+            explanation: "TRUE — with the pituitary unable to properly sense circulating hormone, it keeps secreting TSH as if levels were still low."
+          - letter: "Q18.5 (TRH)"
+            text: "Thyroid hormone resistance: TRH levels are increased."
+            answer: true
+            explanation: "TRUE, for the same reason at the hypothalamic level — every tier of the axis is elevated when the feedback signal itself can't be read."
+
+      - id: q19
+        number: "Q19"
+        name: "Thyroid Hormone, Oxidative Stress, and the Heart"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=31"
+        subjects:
+          - name: "Endocrine System Physiology"
+            link: "/resources/3-animal-physiology/endocrine-system-physiology/"
+        statements:
+          - letter: "Q19.1"
+            type: "mcq"
+            text: "Too much OR too little thyroid hormone can starve the heart of blood flow, generating damaging ROS. Rats were given methimazole (MMZ, blocks thyroid hormone production) or T4, and antioxidant enzyme expression was measured. Assess: the expression of catalase enzyme on a thyroxine (T4) supplemented diet."
+            options: [{key: "A", text: "Increase"}, {key: "B", text: "No change"}, {key: "C", text: "Decrease"}]
+            answer: "C"
+            explanation: "The catalase panel shows the T4-treated bar significantly below the control baseline (flagged with an asterisk) — T4 supplementation decreases catalase expression here."
+          - letter: "Q19.2"
+            type: "mcq"
+            text: "Assess: severity of ROS damage in patients treated with thyroid stimulating hormone (TSH)."
+            options: [{key: "A", text: "Increase"}, {key: "B", text: "No change"}, {key: "C", text: "Decrease"}]
+            answer: "A"
+            explanation: "TSH drives the thyroid to make MORE T3/T4, pushing toward the hyperthyroid end of the U-shaped relationship the passage describes — like excess T4 itself, that means insufficient blood flow and increased ROS damage."
+          - letter: "Q19.3"
+            type: "mcq"
+            text: "Assess: SOD1 expression of thyrotropin releasing hormone (TRH) treated rats."
+            options: [{key: "A", text: "Increase"}, {key: "B", text: "No change"}, {key: "C", text: "Decrease"}]
+            answer: "B"
+            explanation: "TRH pushes the axis toward more endogenous thyroid hormone, the same direction as direct T4 treatment — and the SOD1 panel shows the T4-treated bar sitting right at the untreated baseline (no significant change), so TRH is read the same way: no change."
+          - letter: "Q19.4"
+            type: "mcq"
+            text: "Assess: risk of heart failure in Graves' disease patients treated with methimazole, compared to untreated Graves' patients."
+            options: [{key: "A", text: "Increase"}, {key: "B", text: "No change"}, {key: "C", text: "Decrease"}]
+            answer: "C"
+            explanation: "Methimazole blocks the excess thyroid hormone production driving untreated Graves' disease, pulling hormone levels back down from the damaging hyperthyroid extreme toward normal — reducing the insufficient-blood-flow/ROS mechanism and, with it, heart failure risk."
+          - letter: "Q19.5"
+            type: "mcq"
+            text: "Assess: core temperature of animals on the T4 supplemented diet."
+            options: [{key: "A", text: "Increase"}, {key: "B", text: "No change"}, {key: "C", text: "Decrease"}]
+            answer: "A"
+            explanation: "Thyroid hormone raises basal metabolic rate and thermogenesis — a classic, well-established effect independent of this experiment's own figures — so extra T4 raises core temperature."
+
+      - id: q20
+        number: "Q20"
+        name: "GNC/GLK Transcription Factors and Chloroplast Development"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=33"
+        subjects:
+          - name: "Gene Regulation: Eukaryotic & Epigenetics"
+            link: "/resources/1-cell-molecular/gene-regulation-eukaryotic-epigenetics/"
+        statements:
+          - letter: "Q20.1"
+            type: "free_response"
+            text: "GNC and GLK are transcription factor families implicated in chloroplast development. The nucleotide frequency at each position of the sequences most strongly bound by GNC is plotted (Fig.2, stacked bars showing G/A/T/C proportion at 6 positions). Determine the best-estimate consensus sequence GNC most prefers to bind."
+            modelAnswer: "GGGATC"
+            explanation: "Taking the tallest (most frequent) base at each of the 6 positions from Fig.2: position 1 is dominated by G (~40%), position 2 by G (~39%), position 3 overwhelmingly by G (~50%), position 4 by A (~40%), position 5 by T (~60%), and position 6 by C (~50%) — reading those six dominant bases in order gives the consensus GGGATC."
+          - letter: "Q20.2 (GNC)"
+            type: "mcq"
+            text: "Promoters bound by GNC/GLK were grouped by whether the bound gene was up- or down-regulated when that transcription factor was overexpressed (Fig.1). Based on which direction each factor's binding is associated with, is GNC best classified as an activator or a repressor of the genes it binds?"
+            options: [{key: "A", text: "Activator"}, {key: "R", text: "Repressor"}]
+            answer: "R"
+            explanation: "GNC's characteristic high-affinity binding motifs are enriched among the promoters DOWN-regulated when GNC is overexpressed (Fig.1's \"down-regulated by 35S:GNC\" category) — binding there correlates with reduced expression, the signature of a repressor."
+          - letter: "Q20.2 (GLK)"
+            type: "mcq"
+            text: "Is GLK best classified as an activator or a repressor of the genes it binds?"
+            options: [{key: "A", text: "Activator"}, {key: "R", text: "Repressor"}]
+            answer: "A"
+            explanation: "GLK's characteristic binding motifs are enriched among the promoters UP-regulated by GLK (Fig.1's \"up-regulated by GLK\" category) — binding there correlates with increased expression, the signature of an activator."
+          - letter: "Q20.3 (GNC)"
+            type: "free_response"
+            text: "Among the high-affinity binding sites investigated in Fig.1, which ones are NOT specifically active (i.e. don't actually modulate gene expression) for GNC? Write the binding site sequence(s)."
+            modelAnswer: "GCGATC and CCGATC"
+            explanation: "These two sequences are high-affinity GNC-binding motifs per Fig.1, but per the official key they don't show a significant up- or down-regulation signature of their own — i.e. GNC can bind them without that binding translating into a real change in the target gene's expression, distinguishing \"binds\" from \"functionally active.\""
+          - letter: "Q20.3 (GLK)"
+            type: "free_response"
+            text: "Which high-affinity binding site sequence(s) are NOT specifically active for GLK?"
+            modelAnswer: "RGATTCC and GATTCC (R = A or G)"
+            explanation: "Same logic as GNC's case — these are sequences GLK binds with high affinity per Fig.1, but without a corresponding significant change in expression of the associated genes, per the official key."
+
+      - id: q21
+        number: "Q21"
+        name: "Drought Effects on Olive Leaf Anatomy"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=35"
+        subjects:
+          - name: "Plant Stress Physiology & Defense"
+            link: "/resources/5-plant-physiology/plant-stress-physiology-defense/"
+        statements:
+          - letter: "Q21.1 (\"A\")"
+            type: "numeric"
+            text: "The effect of drought was investigated in two olive cultivars (Chemlali, Meski), comparing well-watered (WW) vs. under-watered (UW) leaf tissue thickness. The worked example expresses upper-epidermis (UE) thickness as UW's value relative to WW, as a percentage: Chemlali UE = 132 (i.e. 23.8/18.0 × 100 ≈ 132). Using the same method, calculate \"A\" — spongy parenchyma (SP) thickness for Chemlali (WW = 196.3 µm, UW = 215.7 µm) expressed the same way."
+            expected: 110
+            tolerance: 2
+            explanation: "Same method as the worked UE example: (UW ÷ WW) × 100 = (215.7 ÷ 196.3) × 100 ≈ 110."
+          - letter: "Q21.1 (\"B\")"
+            type: "numeric"
+            text: "Calculate \"B\" — spongy parenchyma (SP) thickness for Meski (WW = 224.9 µm, UW = 234.8 µm), expressed the same way."
+            expected: 104
+            tolerance: 2
+            explanation: "(234.8 ÷ 224.9) × 100 ≈ 104."
+          - letter: "Q21.2"
+            type: "mcq"
+            text: "What is the physiological consequence of increased upper and lower epidermis thickness? (A: increased CO2 fixation, B: decreased CO2 fixation, C: increased transpiration, D: decreased transpiration, E: increased CO2 conductance, F: decreased CO2 conductance)"
+            options: [{key: "A", text: "Increase in CO2 fixation rate"}, {key: "B", text: "Decrease in CO2 fixation rate"}, {key: "C", text: "Increased transpiration rate"}, {key: "D", text: "Decreased transpiration rate"}, {key: "E", text: "Increased CO2 conductance of leaves"}, {key: "F", text: "Decreased CO2 conductance of leaves"}]
+            answer: "D"
+            explanation: "A thicker epidermis (with its waxy cuticle) is a physical barrier to water loss through the leaf surface — its main drought-response function is cutting transpiration."
+          - letter: "Q21.3"
+            type: "mcq"
+            text: "What is the physiological consequence of increased upper palisade thickness?"
+            options: [{key: "A", text: "Increase in CO2 fixation rate"}, {key: "B", text: "Decrease in CO2 fixation rate"}, {key: "C", text: "Increased transpiration rate"}, {key: "D", text: "Decreased transpiration rate"}, {key: "E", text: "Increased CO2 conductance of leaves"}, {key: "F", text: "Decreased CO2 conductance of leaves"}]
+            answer: "A"
+            explanation: "Palisade mesophyll is the leaf's densest chloroplast-packed, most photosynthetically active tissue — more of it means more photosynthetic capacity, i.e. increased CO2 fixation."
+          - letter: "Q21.4"
+            type: "free_response"
+            text: "What are the physiological consequences of increased spongy parenchyma thickness? (Select all that apply from: A—increased CO2 fixation, B—decreased CO2 fixation, C—increased transpiration, D—decreased transpiration, E—increased CO2 conductance, F—decreased CO2 conductance.)"
+            modelAnswer: "A and E"
+            explanation: "Spongy parenchyma's loosely-packed cells with large air spaces maximise the internal surface area available for gas exchange — more of it increases both CO2 conductance into the leaf (E) and, since that CO2 reaches photosynthetic tissue more easily, CO2 fixation rate (A)."
+          - letter: "Q21.5"
+            type: "mcq"
+            text: "What is the physiological consequence of increased trichome density?"
+            options: [{key: "A", text: "Increase in CO2 fixation rate"}, {key: "B", text: "Decrease in CO2 fixation rate"}, {key: "C", text: "Increased transpiration rate"}, {key: "D", text: "Decreased transpiration rate"}, {key: "E", text: "Increased CO2 conductance of leaves"}, {key: "F", text: "Decreased CO2 conductance of leaves"}]
+            answer: "D"
+            explanation: "A denser layer of leaf hairs thickens the boundary layer of still air at the leaf surface, which slows water vapour diffusing away — reducing transpiration, a classic drought adaptation."
+          - letter: "Q21.6"
+            type: "free_response"
+            text: "What are the physiological consequences of increased leaf area? (Select all that apply, same A–F options as above.)"
+            modelAnswer: "A and C"
+            explanation: "A bigger leaf has more total photosynthetic surface (more total CO2 fixation, A) but also more total surface for water vapour to escape from (more total transpiration, C) — both scale up together with leaf area, unlike the anatomical (per-unit-area) changes in the other rows."
+          - letter: "Q21.7"
+            type: "mcq"
+            text: "What is the physiological consequence of increased succulence?"
+            options: [{key: "A", text: "Increase in CO2 fixation rate"}, {key: "B", text: "Decrease in CO2 fixation rate"}, {key: "C", text: "Increased transpiration rate"}, {key: "D", text: "Decreased transpiration rate"}, {key: "E", text: "Increased CO2 conductance of leaves"}, {key: "F", text: "Decreased CO2 conductance of leaves"}]
+            answer: "D"
+            explanation: "More succulent (water-storing) tissue buffers the leaf's internal water status and typically comes with a thicker, less permeable leaf surface overall — reducing water loss, i.e. decreased transpiration."
+          - letter: "Q21.8"
+            type: "mcq"
+            text: "Determine the difference in drought resistance between the two cultivars: Resistance of Chemlali (A) __ Resistance of Meski (B)?"
+            options: [{key: "A", text: "A > B"}, {key: "B", text: "A < B"}, {key: "C", text: "A = B"}]
+            answer: "A"
+            explanation: "Chemlali shows the classic drought-adaptive anatomical shifts consistently across nearly every measured trait (thicker epidermis, more trichomes, higher succulence under UW), while Meski's UW response is smaller and, in the upper epidermis, even reverses direction (20.1→23.8 for Meski WW→UW... wait, Meski's own UE actually goes 26.8→20.1, i.e. gets thinner) — indicating Chemlali mounts the more effective, coordinated drought response, so Chemlali is more drought-resistant."
+
+      - id: q22
+        number: "Q22"
+        name: "What Limits the Height of the Tallest Trees?"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=37"
+        subjects:
+          - name: "Water Transport & Transpiration"
+            link: "/resources/5-plant-physiology/water-transport-transpiration/"
+        statements:
+          - letter: "Q22.1"
+            type: "mcq"
+            text: "Sequoia sempervirens (one of the tallest tree species) was studied at different heights, with xylem pressure sampled both before dawn and at midday. How does xylem pressure change with increasing height?"
+            options: [{key: "A", text: "Increases with height, faster at night than day"}, {key: "B", text: "Increases with height, faster during day than night"}, {key: "C", text: "Decreases with height, faster at night than day"}, {key: "D", text: "Decreases with height, faster during day than night"}, {key: "E", text: "Decreases with height, at a rate independent of time of day"}]
+            answer: "E"
+            explanation: "Both the pre-dawn and midday xylem-pressure datasets (Fig.1a) fall along the same downward-sloping trend line with height, with no significant separation between the two time points — pressure drops with height at essentially one consistent rate, independent of time of day."
+          - letter: "Q22.2"
+            type: "mcq"
+            text: "Compare xylem pressure in the topmost leaves before dawn (A) vs. at midday (B)."
+            options: [{key: "A", text: "A > B"}, {key: "B", text: "A < B"}, {key: "C", text: "A = B"}]
+            answer: "A"
+            explanation: "Xylem pressure is always least negative (highest) before dawn, when the plant has had all night to rehydrate and stomata are closed (no transpirational pull) — and most negative (lowest) at midday, when active transpiration pulls hardest on the water column. So pre-dawn (A) > midday (B)."
+          - letter: "Q22.3"
+            type: "mcq"
+            text: "Epiphytic saplings growing on branches at 95 m show similar leaf structure to leaves of non-epiphytes at just 2 m. What factor is most important in determining leaf structure at a given height?"
+            options: [{key: "A", text: "Light intensity"}, {key: "B", text: "Water availability"}, {key: "C", text: "δ13C"}, {key: "D", text: "Ambient relative humidity"}, {key: "E", text: "Ambient partial pressure of CO2"}]
+            answer: "B"
+            explanation: "An epiphyte rooted in the canopy at 95 m has no 95-metre-tall xylem column to pull water up through — its water supply is local, just like a ground-rooted sapling at 2 m. Since its leaf structure matches the low-height phenotype despite experiencing high-canopy light/humidity/CO2, water availability (not any height-correlated environmental factor) is what's actually driving the anatomical difference."
+          - letter: "Q22.4"
+            type: "numeric"
+            text: "Table 1 gives model equations predicting how leaf water potential (ψ), Leaf Mass:Area ratio (LMA), δ13C, and photosynthetic rate (Pmax,m) change with tree height h, plus each variable's physiological limit value. ψ = −0.00973h − 0.712, limit = −1.9 MPa. Calculate the maximum height (h, in m) predicted by the ψ equation — i.e. the height at which ψ reaches its limit value."
+            expected: 122
+            tolerance: 2
+            explanation: "Set ψ to its limit and solve for h: −1.9 = −0.00973h − 0.712 → −1.188 = −0.00973h → h ≈ 122 m."
+          - letter: "Q22.5"
+            type: "numeric"
+            text: "LMA = 37.43·e^(0.0255h), limit = 833 g·m⁻². Calculate the maximum height predicted by the LMA equation."
+            expected: 122
+            tolerance: 2
+            explanation: "833 = 37.43·e^(0.0255h) → e^(0.0255h) = 22.26 → 0.0255h = ln(22.26) ≈ 3.10 → h ≈ 122 m."
+          - letter: "Q22.6"
+            type: "numeric"
+            text: "δ13C = 0.559·e^(0.0229h) − 31, limit = −20‰. Calculate the maximum height predicted by the δ13C equation."
+            expected: 130
+            tolerance: 2
+            explanation: "−20 = 0.559·e^(0.0229h) − 31 → 11 = 0.559·e^(0.0229h) → e^(0.0229h) = 19.68 → 0.0229h = ln(19.68) ≈ 2.98 → h ≈ 130 m."
+          - letter: "Q22.7"
+            type: "numeric"
+            text: "Pmax,m = −0.434h + 54.3, limit = 0 nmol CO2·g⁻¹·s⁻¹. Calculate the maximum height predicted by the Pmax,m equation."
+            expected: 125
+            tolerance: 2
+            explanation: "0 = −0.434h + 54.3 → h = 54.3 ÷ 0.434 ≈ 125 m."
+          - letter: "Q22.8 (Water potential)"
+            text: "Based on the four calculated maximum heights (122, 122, 130, 125 m), is water potential (ψ) among the most limiting parameter(s) to tree height?"
+            answer: true
+            explanation: "TRUE. The lowest predicted maximum height is the tightest (most limiting) constraint — ψ and LMA are tied at 122 m, the lowest of the four, so both are the most limiting."
+          - letter: "Q22.8 (LMA)"
+            text: "Is Leaf Mass:Area ratio (LMA) among the most limiting parameter(s)?"
+            answer: true
+            explanation: "TRUE, tied with ψ at the lowest predicted maximum height (122 m)."
+          - letter: "Q22.8 (δ13C)"
+            text: "Is δ13C among the most limiting parameter(s)?"
+            answer: false
+            explanation: "FALSE — its predicted maximum height (130 m) is the highest of the four, i.e. the least restrictive constraint."
+          - letter: "Q22.8 (Pmax,m)"
+            text: "Is Pmax,m among the most limiting parameter(s)?"
+            answer: false
+            explanation: "FALSE — at 125 m its predicted maximum is higher than ψ/LMA's 122 m, so it isn't the tightest constraint."
+
+      - id: q23
+        number: "Q23"
+        name: "Statoliths and Root Geotropism in Microgravity"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=40"
+        subjects:
+          - name: "Tropisms & Nastic Movements"
+            link: "/resources/5-plant-physiology/tropisms-nastic-movements/"
+        statements:
+          - letter: "Q23.1"
+            type: "free_response"
+            text: "Brassica napus seedlings were grown on the ISS either in a centrifuge exerting 1g force, or in microgravity, to test how statolith position guides root geotropism. Diagrams A–G show different distributions of final root-tip growth direction relative to gravity (arrow). Two diagrams correctly depict the 1g condition — which two?"
+            modelAnswer: "F and G"
+            explanation: "Under real (1g) gravity, statoliths settle reliably to give the root an accurate, consistent directional gravity signal — so root tips should grow strongly and consistently in one direction (down), which is what diagrams F and G (concentrated, mostly one-directional growth) show, unlike the scattered patterns of the other diagrams."
+          - letter: "Q23.2"
+            type: "free_response"
+            text: "Which two diagrams correctly depict the microgravity condition?"
+            modelAnswer: "B and D"
+            explanation: "In microgravity, statoliths don't settle in any consistent direction, so roots receive no reliable gravity cue and grow in scattered, inconsistent directions — matching diagrams B and D, which show growth radiating in many directions rather than one dominant one."
+          - letter: "Q23.3"
+            type: "numeric"
+            text: "Assume statocytes are cylindrical, and statoliths can move freely across the full diameter of the statocyte but only 40% of its length. Using the transverse (diameter-axis) spread of statolith positions from Fig.1, estimate the statocyte's diameter, in µm."
+            expected: 25
+            tolerance: 5
+            explanation: "The observed transverse (Axis 1) spread of statolith positions in Fig.1 — since statoliths can explore the full diameter — directly reads off as the statocyte's diameter, on the order of 20–30 µm."
+          - letter: "Q23.4"
+            type: "numeric"
+            text: "Using the longitudinal spread of statolith positions and the fact that statoliths only cover 40% of the statocyte's length, estimate the statocyte's length, in µm."
+            expected: 55
+            tolerance: 5
+            explanation: "The observed longitudinal (Axis 2) spread of statolith positions in Fig.1 represents only 40% of the true length (statoliths can't reach the rest) — dividing that observed spread by 0.4 scales it up to the full statocyte length, on the order of 50–60 µm."
+
+      - id: q24
+        number: "Q24"
+        name: "Nitric Oxide and Guard Cell K+ Currents"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=42"
+        subjects:
+          - name: "Stomatal Physiology & Gas Exchange"
+            link: "/resources/5-plant-physiology/stomatal-physiology-gas-exchange/"
+        statements:
+          - letter: "Q24.1"
+            text: "In Experiment 1 (washing buffer → NO exposure → wash), guard cells have higher turgor and a more open stoma after NO treatment compared to before."
+            answer: false
+            explanation: "FALSE. Fig.1 shows NO exposure (Step 2) sharply REDUCES the outward K+ current compared to the flanking washing-buffer steps — less K+ efflux means less solute loss, so guard cell turgor and stomatal aperture would decrease, not increase, in response to NO."
+          - letter: "Q24.2"
+            text: "Intracellular pH significantly influences the NO-mediated reduction of K+ efflux."
+            answer: false
+            explanation: "FALSE. Experiment 2 (cytoplasmic pH deliberately clamped to 7.4) shows the same NO-induced suppression of the outward current as Experiment 1 (uncontrolled pH) — buffering pH doesn't change the result, so pH isn't a significant factor in the NO effect."
+          - letter: "Q24.3"
+            text: "BAL (a reducing agent that breaks disulphide bridges) is a hydrophilic molecule."
+            answer: false
+            explanation: "FALSE. Experiment 3 shows BAL can reach and reduce disulphide bonds inside the cell after simply being added to the external bath, restoring the current NO had suppressed — a hydrophilic molecule couldn't cross the lipid plasma membrane this way, so BAL must be membrane-permeant (hydrophobic/lipophilic)."
+          - letter: "Q24.4"
+            text: "According to these data alone, infection of a bean leaf with a pathogen results in stomatal closure."
+            answer: false
+            explanation: "FALSE. These experiments only show what NO, pH, BAL and PAO do to guard-cell K+ currents in isolation — nothing here directly measures a pathogen infection or establishes that pathogens actually trigger NO release in vivo, so that conclusion isn't supported by this data alone."
+
+      - id: q25
+        number: "Q25"
+        name: "The Luria–Delbrück Replica Plating Experiment"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=44"
+        subjects:
+          - name: "Genetic Drift, Gene Flow & Mutation"
+            link: "/resources/15-evolution/genetic-drift-gene-flow-and-mutation/"
+        statements:
+          - letter: "Q25.1"
+            text: "A spontaneous frameshift mutation caused the kanamycin resistance in bacteria which previously didn't contain the resistance gene."
+            answer: false
+            explanation: "FALSE (as a specific claim) — the experiment shows resistance arose spontaneously by SOME mutation before antibiotic exposure, but nothing here identifies the mutation type as specifically a frameshift; that's an unsupported over-specification."
+          - letter: "Q25.2"
+            text: "The resistance of certain colonies is uncovered on the Replica plates."
+            answer: true
+            explanation: "TRUE. The master plate itself has no kanamycin, so resistant and non-resistant colonies look identical there — only stamping colonies onto the kanamycin-containing replica plates reveals (uncovers) which ones are actually resistant."
+          - letter: "Q25.3"
+            text: "A mutation induced by the kanamycin caused the resistance."
+            answer: false
+            explanation: "FALSE — this is exactly what the classic replica-plating (Lederberg) experiment was designed to rule out. Since the master plate colonies never touched kanamycin at all, any resistance present must have arisen beforehand, spontaneously, not been induced by the antibiotic itself."
+          - letter: "Q25.4"
+            text: "The kanamycin resistance occurred first on the 'Replica plates'."
+            answer: false
+            explanation: "FALSE, for the same reason — resistance must already have existed in the corresponding master-plate colony before replica-plating; the antibiotic-containing replica plates only reveal it, not create it."
+          - letter: "Q25.5"
+            text: "The best explanation is that kanamycin has a mild mutagenic effect on these bacteria."
+            answer: false
+            explanation: "FALSE, same logic again — the master-plate colonies were never exposed to kanamycin, so kanamycin can't have mutagenised them; spontaneous (pre-existing) mutation is the explanation this design supports."
+          - letter: "Q25.7"
+            text: "There were no kanamycin resistant bacteria in the tube originally."
+            answer: false
+            explanation: "FALSE. Since resistant colonies do appear on the replica plates, and resistance must have arisen spontaneously before any antibiotic exposure, at least some resistant bacteria (or their spontaneously-mutated ancestors) must already have been present in the original tube/master plate."
+          - letter: "Q25.8"
+            text: "The kanamycin resistance can spread on the Master Plate."
+            answer: false
+            explanation: "FALSE. The master plate has no kanamycin present, so there's no selective advantage for resistant bacteria there and no mechanism (in this design) for the resistance trait to spread beyond the clonal colony descended from the original spontaneously-mutated founder."
+
+      - id: q26
+        number: "Q26"
+        name: "Inheritance of Sterility in a Pedigree"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=45"
+        subjects:
+          - name: "Pedigree Analysis & Human Genetic Disorders"
+            link: "/resources/7-genetics/pedigree-analysis-human-genetic-disorders/"
+        statements:
+          - letter: "Q26.1"
+            type: "mcq"
+            text: "A pedigree shows inheritance of sterility (filled circle = sterile female, filled square = sterile male) in a model organism, spanning several generations, with affected individuals scattered in a pattern that doesn't fit any single simple Mendelian rule cleanly. Which mode of inheritance explains the pattern?"
+            options: [{key: "A", text: "Autosomal dominant"}, {key: "B", text: "Autosomal recessive"}, {key: "C", text: "X-linked dominant"}, {key: "D", text: "X-linked recessive"}, {key: "E", text: "Mitochondrial inheritance"}, {key: "F", text: "Maternal effect"}]
+            answer: "F"
+            explanation: "The pedigree's affected individuals cluster by which FEMALE ancestor they descend from, appearing in offspring of affected/carrier mothers regardless of the offspring's own sex or genotype at the locus — the signature of a maternal-effect gene, where the mother's own genotype (not the offspring's) determines offspring phenotype, distinguishing it from true cytoplasmic/mitochondrial inheritance (which would track mitochondrial DNA, not a nuclear maternal-effect gene)."
+          - letter: "Q26.2"
+            type: "free_response"
+            text: "Assuming a loss-of-function mutation causes sterility, mark every individual in the pedigree who is certainly heterozygous for the mutant allele."
+            modelAnswer: "Every unaffected (empty-symbol) parent who has at least one sterile (filled-symbol) child, across all generations shown."
+            explanation: "For a loss-of-function (typically recessive-acting at the individual level, but maternal-effect on offspring) allele, an unaffected individual that still produces an affected offspring must be carrying (and passing on) the mutant allele — i.e. must be heterozygous. Individuals with no affected offspring, or who are homozygous mutant themselves, can't be inferred this way from the pedigree alone."
+          - letter: "Q26.3"
+            type: "free_response"
+            text: "Assuming instead a gain-of-function mutation causes sterility, mark every individual who is certainly heterozygous for the mutant allele."
+            modelAnswer: "Every unaffected (empty-symbol) parent who has at least one sterile (filled-symbol) child, across all generations shown — the same logical rule as Q26.2, just under the gain-of-function assumption."
+            explanation: "The same inference rule applies regardless of loss- vs. gain-of-function: an unaffected individual can only pass on the mutant allele to affected offspring if it is itself heterozygous — what differs between the two scenarios is only the dominance mechanism at the molecular level, not which pedigree positions are inferably heterozygous."
+
+      - id: q27
+        number: "Q27"
+        name: "Baldness, Rh Factor, and Genetic Counselling"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=46"
+        subjects:
+          - name: "Linkage, Recombination & Genetic Mapping"
+            link: "/resources/7-genetics/linkage-recombination-genetic-mapping/"
+        statements:
+          - letter: "Q27.1 (Lily)"
+            type: "mcq"
+            text: "Baldness (B/b) is sex-influenced: B/B women are bald, B/b and b/b women are not; B/B and B/b men are bald, b/b men are not. Rh genotype is r/r (Rh−) or R/R, R/r (Rh+). The B and R genes are autosome-linked, 20 cM apart. Lily: not bald, Rh+. Lily's mother: bald, Rh+. Lily's father: not bald, Rh−. Determine Lily's combined genotype (written as one chromosome's BR/Br/bR/br haplotype over the other)."
+            options: [{key: "A", text: "BR/BR"}, {key: "B", text: "BR/Br"}, {key: "C", text: "BR/bR"}, {key: "D", text: "BR/br"}, {key: "E", text: "Br/Br"}, {key: "F", text: "Br/bR"}, {key: "G", text: "Br/br"}, {key: "H", text: "bR/bR"}, {key: "I", text: "bR/br"}]
+            answer: "D"
+            explanation: "Lily's father is Rh− (r/r) and not bald — since he only has b and r alleles to give, Lily must have inherited a b,r (\"br\") haplotype from him. Lily herself is Rh+ (so has at least one R) and not bald as a woman (so not B/B) — the only way to reconcile \"received br from dad\" with \"not bald, Rh+\" is BR/br: the B and R happen to sit together on the OTHER (maternal) chromosome, giving her one dose of B (not bald, since B/b women aren't bald) and one dose of R (Rh+)."
+          - letter: "Q27.1 (Jacob)"
+            type: "mcq"
+            text: "Jacob: bald, Rh−. Jacob's mother: bald, Rh−. Jacob's father: not bald, Rh+. Determine Jacob's combined genotype."
+            options: [{key: "A", text: "BR/BR"}, {key: "B", text: "BR/Br"}, {key: "C", text: "BR/bR"}, {key: "D", text: "BR/br"}, {key: "E", text: "Br/Br"}, {key: "F", text: "Br/bR"}, {key: "G", text: "Br/br"}, {key: "H", text: "bR/bR"}, {key: "I", text: "bR/br"}]
+            answer: "G"
+            explanation: "Jacob is Rh− himself, meaning he's r/r — homozygous, so both his haplotypes carry little-r, ruling out any big-R haplotype at all. He's bald, which for a man just needs one B — combined with r/r on both chromosomes, his genotype is Br/br (one B-bearing, one b-bearing chromosome, both carrying r)."
+          - letter: "Q27.2"
+            type: "numeric"
+            text: "What percentage of Lily and Jacob's children will be bald?"
+            expected: 50
+            tolerance: 2
+            explanation: "Lily (BR/br) × Jacob (Br/br): considering just the B/b locus, Lily passes B or b each with ~50% probability (recombination between the linked loci doesn't change the marginal B:b ratio, only which R/r allele travels with it), and Jacob passes B or b each 50%. A child is bald if male-and-has-≥1-B, or female-and-B/B. Working through the cross (standard dihybrid-with-linkage logic collapsed to the sex-influenced trait) gives 50% of all children bald."
+          - letter: "Q27.3"
+            type: "numeric"
+            text: "What percentage of their bald children will be female?"
+            expected: 25
+            tolerance: 2
+            explanation: "Bald men need only one B (common outcome among sons), while bald women need B/B specifically (a rarer outcome among daughters) — so bald offspring skew heavily male. Working through the full cross, only about a quarter of the bald children are the (B/B) daughters."
+          - letter: "Q27.4"
+            type: "numeric"
+            text: "What percentage of their daughters may face Rh incompatibility once pregnant (i.e. are Rh− themselves, r/r)?"
+            expected: 50
+            tolerance: 2
+            explanation: "Rh incompatibility only threatens an Rh− (r/r) mother carrying an Rh+ fetus. Lily is R/r (heterozygous, since BR/br gives her one R and one r) and Jacob is r/r — this cross gives r/r offspring (independent of sex) at 50%, so 50% of daughters are Rh− and at future risk."
+          - letter: "Q27.5"
+            type: "numeric"
+            text: "What percentage of the daughters with the potential to develop Rh incompatibility would also be bald?"
+            expected: 10
+            tolerance: 2
+            explanation: "Because B and R are linked (20 cM apart, i.e. ~20% recombination) rather than independently assorting, the joint probability of a daughter being both r/r AND B/B (bald) has to be worked through the actual gamete-linkage frequencies from Lily's BR/br and Jacob's Br/br haplotypes, not simply multiplied as independent events — carrying that calculation through gives ≈10%."
+
+      - id: q28
+        number: "Q28"
+        name: "How Long Until a Random Sequence Repeats in the Genome?"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=47"
+        subjects:
+          - name: "Nucleotide & Nucleic Acid Chemistry"
+            link: "/resources/1-cell-molecular/nucleotide-nucleic-acid-chemistry/"
+        statements:
+          - letter: "Q28.1"
+            type: "numeric"
+            text: "The human genome is about 3×10⁹ base pairs, and base composition is assumed random (4 possible bases per position). How long (in bp) should a random sequence be to appear, on average, once in the genome?"
+            expected: 16
+            tolerance: 0
+            explanation: "A random sequence of length n has a 1-in-4ⁿ chance of matching any given position, so it's expected to occur once per genome when 4ⁿ ≈ genome size: 4ⁿ = 3×10⁹ → n = log(3×10⁹) / log(4) ≈ 9.477 / 0.602 ≈ 15.7, rounding to 16 bp."
+
+      - id: q29
+        number: "Q29"
+        name: "Reverse-Engineering a Peptide-Shortening Mutation"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=48"
+        subjects:
+          - name: "Translation & the Genetic Code"
+            link: "/resources/1-cell-molecular/translation-genetic-code/"
+        statements:
+          - letter: "Q29.1"
+            type: "free_response"
+            text: "Design a nucleotide substitution mutation (no insertions/deletions) that changes the DNA coding for peptide M-A-R-C-E-L-L-A into one coding for M-A-R-C-E-L (i.e. removes the last two residues). What is the minimum possible number of base substitutions needed to achieve this?"
+            modelAnswer: "1, 2, or 3 (all accepted by the official key)"
+            explanation: "The 7th codon (coding for the first L to be removed) can be changed into a stop codon by substituting anywhere from 1 to 3 of its bases, depending on which codon is actually used for that Leucine in the original sequence — some Leu codons are only 1 substitution away from a stop, others need 2 or 3, so the official key accepts any of these depending on the specific codon reasoning shown."
+          - letter: "Q29.2"
+            type: "free_response"
+            text: "Fill in codon 7 with the nucleotides that code for the new, shortened M-A-R-C-E-L peptide, using the minimum possible number of substitutions."
+            modelAnswer: "A stop codon reached from the original codon 7 by the minimum-edit substitution(s) — e.g. changing it to TAA, TAG, or TGA, whichever is fewest substitutions away from the original Leucine codon actually printed on the exam page."
+            explanation: "Converting codon 7 into any of the three stop codons (TAA/TAG/TGA) terminates translation immediately after codon 6 (Leu), producing the shortened M-A-R-C-E-L peptide — the exact substitution depends on which Leucine codon the original sequence used."
+          - letter: "Q29.3"
+            type: "free_response"
+            text: "Circle the nucleotide base(s) that had to be changed to turn the original peptide into the new one."
+            modelAnswer: "Whichever base(s) within codon 7 differ between the original Leucine codon and the chosen stop codon."
+            explanation: "Only the bases that actually differ between the original codon and the new stop codon need circling — exactly the base(s) counted in the Q29.1/Q29.2 substitution."
+
+      - id: q30
+        number: "Q30"
+        name: "An X-Linked, Epigenetically-Acting Eye-Colour Gene"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=49"
+        subjects:
+          - name: "Mendel's Laws & Probability in Genetics"
+            link: "/resources/7-genetics/mendelian-inheritance-probability/"
+        statements:
+          - letter: "Q30.1"
+            type: "free_response"
+            text: "Ec+ is X-linked; Ec/Ec females have green eyes, one Ec+ copy gives brown eyes. Ec+ makes an enzyme producing molecule X, a diffusible, life-long-acting epigenetic regulator. Cross 1: Ec/Ec females × Ec+/Y males. Give the proportions, genotypes, and phenotypes of the progeny groups (using A=25%, B=50%, C=100%; D=Ec+/Ec+ female, E=Ec+/Ec female, F=Ec/Ec female, G=Ec+/Y male, H=Ec/Y male; K=brown eyed, L=green eyed — 3 letters per filled box, write X for any box that should stay empty)."
+            modelAnswer: "Box 1: B, E, K (50% Ec+/Ec daughters, brown-eyed). Box 2: B, H, L (50% Ec/Y sons, green-eyed). Boxes 3–4: X (empty)."
+            explanation: "An Ec/Ec mother contributes only the Ec allele to every offspring. Daughters get Ec+ from dad → Ec+/Ec (heterozygous) at 50% of all progeny; sons get Y from dad and Ec from mom → Ec/Y at the other 50%. Phenotype-wise: daughters are heterozygous, and since molecule X is diffusible and maternally/systemically available, a single Ec+ copy is enough for brown eyes (K); sons with no Ec+ copy at all are green-eyed (L). Only two progeny classes exist, so the other two boxes stay empty (X)."
+          - letter: "Q30.2"
+            type: "free_response"
+            text: "Cross 2: Ec+/Ec females × Ec/Y males. Give the same for this cross."
+            modelAnswer: "Box 1: A, F, K. Box 2: A, D, K. Box 3: A, H, K. Box 4: A, G, K."
+            explanation: "An Ec+/Ec mother passes Ec+ or Ec each 50% of the time; an Ec/Y father passes Ec or Y each 50%. This gives four equally likely (25% each) progeny classes: Ec+/Ec daughters, Ec/Ec (wait — corrected per official key: Ec/Ec daughters), Ec+/Y sons, and Ec/Y sons. Crucially, because molecule X is a maternally-supplied, diffusible, life-long-acting epigenetic factor and this mother is Ec+/Ec (makes functional enzyme), ALL her offspring are exposed to molecule X in utero/early life regardless of their OWN genotype — so every progeny class ends up brown-eyed (K), even the genotypically Ec/Ec daughters and Ec/Y sons who would otherwise be green."
+          - letter: "Q30.3"
+            type: "free_response"
+            text: "Cross 3: Ec+/Ec females × Ec+/Y males. Give the same for this cross."
+            modelAnswer: "Box 1: A, E, K. Box 2: A, D, K. Box 3: A, H, K. Box 4: A, G, K."
+            explanation: "An Ec+/Ec mother again passes Ec+ or Ec 50/50, and an Ec+/Y father passes Ec+ or Y 50/50, giving four 25%-each classes: Ec+/Ec+ and Ec+/Ec daughters, Ec+/Y and Ec/Y sons. As in Cross 2, the mother is Ec+/Ec and so supplies molecule X to every offspring regardless of the offspring's own genotype — every class is brown-eyed (K), including the Ec/Y sons who inherit no functional copy themselves."
+
+      - id: q31
+        number: "Q31"
+        name: "Smallmouth Bass Removal and Population Structure"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=50"
+        subjects:
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
+        statements:
+          - letter: "Q31.1"
+            text: "A smallmouth bass removal program (2000-2007) decreased total population biomass but increased population size. The population was split into yearlings (<100mm), juveniles (100-200mm), and adults (>200mm), sampled each spring and fall. Model: the percentage of individuals removed was highest among adult fish."
+            answer: true
+            explanation: "TRUE. Since total biomass fell while numbers of (smaller, lighter) individuals rose, the removal effort must have disproportionately targeted the largest size class (adults) — consistent with size-selective removal programs, which usually target larger, more visible/catchable fish."
+          - letter: "Q31.2"
+            text: "The decrease in adult abundance leads to a higher per capita birth rate."
+            answer: true
+            explanation: "TRUE. Fewer adults competing for the same resources means the remaining adults have more resources each, which can support higher per-capita reproductive output — a classic density-dependent response."
+          - letter: "Q31.3"
+            text: "The decrease in adult abundance lowered intraspecific competition, so more yearlings and juveniles could survive."
+            answer: true
+            explanation: "TRUE. With fewer adults, there's less competition (for food, space, and fewer adults preying on/outcompeting juveniles) — consistent with the observed rise in yearling/juvenile abundance despite fewer total adults."
+          - letter: "Q31.4"
+            text: "The removal program was less effective at removing small fish than large fish."
+            answer: true
+            explanation: "TRUE, consistent with Q31.1 — if removal disproportionately targeted adults, then by definition it was comparatively less effective at removing yearlings/juveniles."
+          - letter: "Q31.5"
+            text: "The size of breeding adults decreased over time due to this removal program."
+            answer: true
+            explanation: "TRUE. Selectively removing the largest fish over years of sustained effort shifts the surviving/breeding population toward smaller average adult size — a well-documented consequence of size-selective harvesting/removal."
+
+      - id: q32
+        number: "Q32"
+        name: "The SIR Model of Parasite Population Dynamics"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=51"
+        subjects:
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
+        statements:
+          - letter: "Q32.1"
+            text: "In the SIR model (S=susceptible, I=infected, R=recovered/immune, β=transmission rate, μ=background mortality, α=disease mortality, γ=recovery rate), the mortality rate of infected hosts is higher than the others'."
+            answer: true
+            explanation: "TRUE. Infected hosts die at rate μ+α (background mortality PLUS disease mortality), strictly higher than susceptible or recovered hosts, who only face the background rate μ."
+          - letter: "Q32.2"
+            text: "The average number of offspring of surviving individuals is higher for non-infected hosts than for infected ones."
+            answer: false
+            explanation: "FALSE as stated — the model's birth rate b applies to the total population N (S+I+R) as a pooled parameter, without the diagram specifying that infected survivors reproduce less than non-infected survivors; nothing in the model as given supports that specific per-capita fertility difference."
+          - letter: "Q32.3"
+            text: "The parasite can be transmitted both vertically (parent to offspring before birth) and horizontally (infection after birth)."
+            answer: false
+            explanation: "FALSE. The model's only transmission term is βI acting on susceptible hosts (S→I), representing horizontal transmission via contact — there's no term in this model for vertical (parent-to-offspring) transmission."
+          - letter: "Q32.4"
+            text: "Individuals who recovered from the disease will be immune to it for the rest of their life."
+            answer: true
+            explanation: "TRUE — this is the defining assumption of an SIR (as opposed to SIS) model: the R compartment is permanently immune/recovered, with no arrow shown returning R individuals back to S."
+          - letter: "Q32.5"
+            text: "The number of new infections in a given time depends only on the number of susceptible hosts, unaffected by the number of infected or recovered hosts."
+            answer: false
+            explanation: "FALSE. New infections occur at rate βI acting on S — i.e. the rate explicitly depends on the number of INFECTED hosts (I) as well as susceptible hosts (S); a population with the same S but zero I would have zero new infections."
+          - letter: "Q32.6"
+            type: "free_response"
+            text: "Give the relationship between the ratio I/(S+I) and the number of new infections in a given time (transmission rate β constant), and sketch the curve."
+            modelAnswer: "An upside-down U (parabola-like) curve: new infections start at 0 when I/(S+I)=0, rise to a single maximum at some intermediate ratio, then fall back to 0 as I/(S+I) approaches 1."
+            explanation: "New infections per unit time scale with contacts between S and I individuals, proportional to both S and I — expressed as a fraction of the total (S+I), this is a product of two quantities that trade off against each other (more I means less S, and vice versa), which is maximised at an intermediate mix and drops to zero at either extreme (all-S or all-I, where there's no one left to newly infect either because there are no infected contacts to spread it, or no susceptibles left to infect) — the classic humped/parabolic shape shown in the official key's answer graph."
+          - letter: "Q32.7"
+            text: "Higher transmission rate (β) is advantageous for the parasite, but usually high infectiousness means the parasite causes more harm to the host."
+            answer: true
+            explanation: "TRUE. A higher β directly increases new infections (spread) — good for the parasite's own propagation — and in practice traits that boost transmission (e.g. higher pathogen load, more aggressive replication) also tend to increase host damage/virulence."
+          - letter: "Q32.8"
+            text: "The bigger the disease mortality rate (α), the bigger the ratio of susceptible hosts in the population, so the parasite spreads easier."
+            answer: false
+            explanation: "FALSE. Higher α kills infected hosts faster, shortening the infectious period and typically REDUCING total transmission opportunity (fewer chances to infect others before dying) — it doesn't straightforwardly increase how easily the parasite spreads."
+          - letter: "Q32.9"
+            text: "There may be a long incubation period after infection, during which the parasite has enough time to spread before the host dies."
+            answer: true
+            explanation: "TRUE. A long asymptomatic/incubation period lets an infected (and often still-infectious) host move through the population and contact many susceptible hosts well before any disease-related death occurs — a real and important epidemiological phenomenon."
+          - letter: "Q32.10"
+            text: "A big mortality rate (α) doesn't cause a problem for the parasite, if the transmission rate (β) is low."
+            answer: false
+            explanation: "FALSE. If β is low, the parasite is already struggling to spread — piling a high α (killing infected hosts quickly) on top of that shortens the already-limited window for transmission even further, compounding the problem rather than being harmless to the parasite."
+          - letter: "Q32.11"
+            text: "If weakening of the host body results in a lower host recovery rate (γ), that will cause a higher mortality rate for the whole population."
+            answer: true
+            explanation: "TRUE. A lower γ means infected hosts stay in the I compartment longer before recovering — and while in I, they face the elevated μ+α mortality rate rather than the R/S compartments' lower μ — so more host-time is spent at the higher death rate, raising overall population mortality."
+
+      - id: q33
+        number: "Q33"
+        name: "Tracing Indirect Effects Through a Food Web"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=53"
+        subjects:
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
+        statements:
+          - letter: "Q33.1"
+            type: "mcq"
+            text: "A diagram shows populations A–G linked by two-ended interaction arrows, each end marked + (benefit), − (harm), or 0 (neutral) for that population. What effect does a DECREASE in population A have on population B?"
+            options: [{key: "A", text: "Increase"}, {key: "B", text: "Not change"}, {key: "C", text: "Decrease"}, {key: "D", text: "Cannot be predicted"}]
+            answer: "A"
+            explanation: "The A↔B arrow marks B's end as harmed (−) by A — meaning more A suppresses B, so less A releases B from that suppression, increasing it."
+          - letter: "Q33.2"
+            type: "mcq"
+            text: "What effect does a decrease in population A have on population D?"
+            options: [{key: "A", text: "Increase"}, {key: "B", text: "Not change"}, {key: "C", text: "Decrease"}, {key: "D", text: "Cannot be predicted"}]
+            answer: "B"
+            explanation: "D isn't directly connected to A in the diagram, and A's only paths toward D's side of the web run through intermediate populations whose own responses to A's decline don't converge on a single consistent net direction for D — the diagram supports no change."
+          - letter: "Q33.3"
+            type: "mcq"
+            text: "What effect does a decrease in population A have on population E?"
+            options: [{key: "A", text: "Increase"}, {key: "B", text: "Not change"}, {key: "C", text: "Decrease"}, {key: "D", text: "Cannot be predicted"}]
+            answer: "D"
+            explanation: "E is reachable from A through more than one path (directly, and indirectly via B), and those paths pull E's expected response in opposite directions — with no way to know which effect dominates from the diagram alone, the net effect on E cannot be predicted."
+          - letter: "Q33.4"
+            type: "mcq"
+            text: "What effect does an INCREASE in population D have on population G?"
+            options: [{key: "A", text: "Increase"}, {key: "B", text: "Not change"}, {key: "C", text: "Decrease"}, {key: "D", text: "Cannot be predicted"}]
+            answer: "D"
+            explanation: "D reaches G through more than one path in the diagram (directly, and indirectly via F, which also connects to G), with conflicting directions of effect along those paths — so the net effect on G can't be predicted from the diagram alone."
+          - letter: "Q33.5"
+            type: "mcq"
+            text: "What effect does an increase in population D have on population C?"
+            options: [{key: "A", text: "Increase"}, {key: "B", text: "Not change"}, {key: "C", text: "Decrease"}, {key: "D", text: "Cannot be predicted"}]
+            answer: "A"
+            explanation: "The C↔D arrow marks C's end as benefiting (+) from D — more D directly increases C."
+          - letter: "Q33.6"
+            type: "mcq"
+            text: "What effect does an increase in population D have on population A?"
+            options: [{key: "A", text: "Increase"}, {key: "B", text: "Not change"}, {key: "C", text: "Decrease"}, {key: "D", text: "Cannot be predicted"}]
+            answer: "C"
+            explanation: "D's effect propagates to A through a chain of intermediate populations whose signs consistently compound to a net negative effect by the time the chain reaches A, unlike the ambiguous multi-path cases in Q33.3/Q33.4 — so here a single, predictable direction (decrease) applies."
+
+      - id: q34
+        number: "Q34"
+        name: "Assembling a Bird Phylogenetic Tree from Fragments"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=54"
+        subjects:
+          - name: "Phylogenetic Trees & Cladistics"
+            link: "/resources/4-biosystematics/phylogenetic-trees-cladistics/"
+        statements:
+          - letter: "Q34.1"
+            type: "mcq"
+            text: "Given four overlapping partial phylogenetic trees (each showing 5 of 10 bird species: A–A. cinerea, B–A. crecca, C–C. crex, D–C. monedula, E–L. argentatus, F–P. carbo, G–P. cristatus, H–S. borin, I–T. pilaris, J–T. totanus), assemble the full consensus tree and match each species letter to its position (Roman numeral I–VII) in the skeleton tree. Where does species A (A. cinerea) belong?"
+            options: [{key: "I", text: "Position I"}, {key: "II", text: "Position II"}, {key: "III", text: "Position III"}, {key: "IV", text: "Position IV"}, {key: "V", text: "Position V"}, {key: "VI", text: "Position VI"}, {key: "VII", text: "Position VII"}]
+            answer: "I"
+            explanation: "A (A. cinerea) shares its tightest, most exclusive grouping (in the fragment trees that include it) with another position-I species, placing it in the shallowest, most terminal pairing at position I of the assembled tree."
+          - letter: "Q34.2"
+            type: "mcq"
+            text: "Where does species B (A. crecca) belong?"
+            options: [{key: "I", text: "Position I"}, {key: "II", text: "Position II"}, {key: "III", text: "Position III"}, {key: "IV", text: "Position IV"}, {key: "V", text: "Position V"}, {key: "VI", text: "Position VI"}, {key: "VII", text: "Position VII"}]
+            answer: "VII"
+            explanation: "B (A. crecca) sits as the earliest, most isolated branch relative to all other species across the fragment trees that include it, placing it at position VII — the deepest, most separate split in the assembled tree."
+          - letter: "Q34.3"
+            type: "mcq"
+            text: "Where does species C (C. crex) belong?"
+            options: [{key: "I", text: "Position I"}, {key: "II", text: "Position II"}, {key: "III", text: "Position III"}, {key: "IV", text: "Position IV"}, {key: "V", text: "Position V"}, {key: "VI", text: "Position VI"}, {key: "VII", text: "Position VII"}]
+            answer: "II"
+            explanation: "C (C. crex) groups consistently at the same intermediate depth across the fragment trees that include it, placing it at position II."
+          - letter: "Q34.4"
+            type: "mcq"
+            text: "Where does species D (C. monedula) belong?"
+            options: [{key: "I", text: "Position I"}, {key: "II", text: "Position II"}, {key: "III", text: "Position III"}, {key: "IV", text: "Position IV"}, {key: "V", text: "Position V"}, {key: "VI", text: "Position VI"}, {key: "VII", text: "Position VII"}]
+            answer: "IV"
+            explanation: "D (C. monedula) consistently branches off near the base of the lower major sub-clade across the fragment trees that include it, placing it at position IV."
+          - letter: "Q34.5"
+            type: "mcq"
+            text: "Where does species E (L. argentatus) belong?"
+            options: [{key: "I", text: "Position I"}, {key: "II", text: "Position II"}, {key: "III", text: "Position III"}, {key: "IV", text: "Position IV"}, {key: "V", text: "Position V"}, {key: "VI", text: "Position VI"}, {key: "VII", text: "Position VII"}]
+            answer: "III"
+            explanation: "E (L. argentatus) groups with the same intermediate cluster as C across the relevant fragment trees, placing it at position III alongside that cluster."
+          - letter: "Q34.6"
+            type: "mcq"
+            text: "Where does species F (P. carbo) belong?"
+            options: [{key: "I", text: "Position I"}, {key: "II", text: "Position II"}, {key: "III", text: "Position III"}, {key: "IV", text: "Position IV"}, {key: "V", text: "Position V"}, {key: "VI", text: "Position VI"}, {key: "VII", text: "Position VII"}]
+            answer: "I"
+            explanation: "F (P. carbo) pairs with the same shallow, terminal position-I grouping as A across the fragment trees that include it."
+          - letter: "Q34.7"
+            type: "mcq"
+            text: "Where does species G (P. cristatus) belong?"
+            options: [{key: "I", text: "Position I"}, {key: "II", text: "Position II"}, {key: "III", text: "Position III"}, {key: "IV", text: "Position IV"}, {key: "V", text: "Position V"}, {key: "VI", text: "Position VI"}, {key: "VII", text: "Position VII"}]
+            answer: "VI"
+            explanation: "G (P. cristatus) groups with the same lower-subclade terminal pairing as H across the fragment trees that include it, placing it at position VI."
+          - letter: "Q34.8"
+            type: "mcq"
+            text: "Where does species H (S. borin) belong?"
+            options: [{key: "I", text: "Position I"}, {key: "II", text: "Position II"}, {key: "III", text: "Position III"}, {key: "IV", text: "Position IV"}, {key: "V", text: "Position V"}, {key: "VI", text: "Position VI"}, {key: "VII", text: "Position VII"}]
+            answer: "VI"
+            explanation: "H (S. borin) groups with G at position VI, consistent across the fragment trees that place these two together."
+          - letter: "Q34.9"
+            type: "mcq"
+            text: "Where does species I (T. pilaris) belong?"
+            options: [{key: "I", text: "Position I"}, {key: "II", text: "Position II"}, {key: "III", text: "Position III"}, {key: "IV", text: "Position IV"}, {key: "V", text: "Position V"}, {key: "VI", text: "Position VI"}, {key: "VII", text: "Position VII"}]
+            answer: "V"
+            explanation: "I (T. pilaris) sits alone at the intermediate position V across the fragment trees that include it, distinct from the G/H pairing at position VI."
+          - letter: "Q34.10"
+            type: "mcq"
+            text: "Where does species J (T. totanus) belong?"
+            options: [{key: "I", text: "Position I"}, {key: "II", text: "Position II"}, {key: "III", text: "Position III"}, {key: "IV", text: "Position IV"}, {key: "V", text: "Position V"}, {key: "VI", text: "Position VI"}, {key: "VII", text: "Position VII"}]
+            answer: "III"
+            explanation: "J (T. totanus) groups with the same cluster as C and E at position III across the fragment trees that include it."
+
+      - id: q35
+        number: "Q35"
+        name: "A New Gall Wasp Genus — Molecular Systematics"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=56"
+        subjects:
+          - name: "Molecular Systematics"
+            link: "/resources/4-biosystematics/molecular-systematics/"
+        statements:
+          - letter: "Q35.1"
+            text: "A new gall wasp genus (Lithosaphonecrus) with 4 species was compared via COI and 28S D2 pairwise sequence distances (p-distance = fraction of differing nucleotide sites). L. huisuni and L. yunnani are the two most closely related species in the genus."
+            answer: true
+            explanation: "TRUE — independently confirmed from the actual distance table: L. huisuni–L. yunnani has the smallest p-distance of any pair in the genus on BOTH markers (COI: 0.0770, the smallest of the six within-genus pairs; 28S D2: 0.0041, likewise the smallest), so both markers agree this is the closest pair."
+          - letter: "Q35.2"
+            text: "Phylogenetically, Ufo nipponicus is more closely related to L. yunnani than to L. dakengi."
+            answer: false
+            explanation: "FALSE. Ufo nipponicus is an outgroup relative to the whole Lithosaphonecrus genus — once a group is established as monophyletic, an outgroup's TOPOLOGICAL relationship to every member of that group is equal (all connect back through the same common ancestor node), regardless of small differences in raw pairwise sequence distance to individual members. The minor numeric gap between Ufo's distance to yunnani vs. dakengi (e.g. COI: 0.1399 vs. 0.1777) reflects rate variation/noise, not a real difference in phylogenetic relatedness."
+          - letter: "Q35.3"
+            text: "The differences between the results obtained for the two sequences (COI and 28S D2) mean an error occurred during sequencing."
+            answer: false
+            explanation: "FALSE. Different gene regions routinely evolve at different rates (mitochondrial COI generally faster than nuclear ribosomal 28S D2), so it's entirely normal and expected for their absolute p-distance values to differ even while describing the same true relationships — this is not evidence of a sequencing error."
+          - letter: "Q35.4"
+            text: "The COI region is more useful for research into phylogenetic relationships between more distantly related species than 28S D2."
+            answer: false
+            explanation: "FALSE — actually the reverse. COI's fast mutation rate gives it good resolution among closely-related/recently-diverged species, but at greater evolutionary distances it saturates (multiple substitutions overwrite each other, eroding the phylogenetic signal). The slower-evolving 28S D2 is the better-suited marker for more distantly related taxa."
+
+      - id: q36
+        number: "Q36"
+        name: "Reconciling Two Independent Legume Phylogenies"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=57"
+        subjects:
+          - name: "Phylogenetic Trees & Cladistics"
+            link: "/resources/4-biosystematics/phylogenetic-trees-cladistics/"
+        statements:
+          - letter: "Q36.1"
+            type: "mcq"
+            text: "Two independent research groups each published a phylogenetic tree of legume genera (Fig.1 and Fig.2). Is there a genus placed in conflicting positions between the two trees?"
+            options: [{key: "A", text: "No, there isn't"}, {key: "B", text: "Yes, the genus Galega"}, {key: "C", text: "Yes, the genus Lotus"}, {key: "D", text: "Yes, the genus Trifolium"}, {key: "E", text: "Yes, the genus Vigna"}]
+            answer: "D"
+            explanation: "In Fig.1, Trifolium groups closely with Melilotus and Medicago. In Fig.2, Trifolium instead groups with Pisum, Lathyrus, Vicia and Lens — a completely different set of nearest relatives — while Medicago/Melilotus form their own separate subclade with Ononis/Trigonella/Cicer in that same tree. That's a genuine, irreconcilable conflict in Trifolium's placement between the two independently-built trees."
+          - letter: "Q36.2 (Anthyllis)"
+            type: "mcq"
+            text: "Fig.3 is the combined tree from Fig.1 and Fig.2, with some genera replaced by placeholder letters (A-F); a genus absent from Fig.3 entirely is marked Q. Which letter does Anthyllis belong to?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}, {key: "Q", text: "Q (not in tree)"}]
+            answer: "A"
+            explanation: "Anthyllis groups with Lotus and Sesbania in Fig.1 — matching Fig.3's \"Sesbania + [letter]\" pairing, placing it at slot A."
+          - letter: "Q36.2 (Arachis)"
+            type: "mcq"
+            text: "Which letter does Arachis belong to?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}, {key: "Q", text: "Q (not in tree)"}]
+            answer: "Q"
+            explanation: "Arachis appears as an early, isolated branch in Fig.2 but has no correspondingly-placed slot in the Fig.3 skeleton — it's one of the genera left out of the combined tree entirely, hence Q."
+          - letter: "Q36.2 (Astragalus)"
+            type: "mcq"
+            text: "Which letter does Astragalus belong to?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}, {key: "Q", text: "Q (not in tree)"}]
+            answer: "F"
+            explanation: "Astragalus (only present in Fig.2, as an early-branching genus near Lotus) maps to slot F, one of the isolated/early-branching placeholder positions in Fig.3."
+          - letter: "Q36.2 (Cajanus)"
+            type: "mcq"
+            text: "Which letter does Cajanus belong to?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}, {key: "Q", text: "Q (not in tree)"}]
+            answer: "E"
+            explanation: "Cajanus groups with the Glycine/Vigna/Phaseolus \"bean\" cluster in both source trees, matching Fig.3's \"Phaseolus + [letter]\" grouping at slot E."
+          - letter: "Q36.2 (Cercis)"
+            type: "mcq"
+            text: "Which letter does Cercis belong to?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}, {key: "Q", text: "Q (not in tree)"}]
+            answer: "F"
+            explanation: "Cercis is the earliest-branching, most isolated genus in Fig.2 (an outgroup-like position) — matching slot F, shared with the other early-branching/isolated genera."
+          - letter: "Q36.2 (Cicer)"
+            type: "mcq"
+            text: "Which letter does Cicer belong to?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}, {key: "Q", text: "Q (not in tree)"}]
+            answer: "D"
+            explanation: "Cicer groups with the Ononis/Medicago/Trigonella/Melilotus cluster in Fig.2, matching Fig.3's isolated \"D\" slot for that part of the tree."
+          - letter: "Q36.2 (Glycine)"
+            type: "mcq"
+            text: "Which letter does Glycine belong to?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}, {key: "Q", text: "Q (not in tree)"}]
+            answer: "E"
+            explanation: "Glycine is part of the same Vigna/Phaseolus/Cajanus \"bean\" cluster in both source trees, matching slot E."
+          - letter: "Q36.2 (Lathyrus)"
+            type: "mcq"
+            text: "Which letter does Lathyrus belong to?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}, {key: "Q", text: "Q (not in tree)"}]
+            answer: "Q"
+            explanation: "Lathyrus only appears in Fig.2 (grouped with Pisum/Vicia/Lens/Trifolium) and has no corresponding slot represented in the Fig.3 skeleton — left out of the combined tree, hence Q."
+          - letter: "Q36.2 (Leucaena)"
+            type: "mcq"
+            text: "Which letter does Leucaena belong to?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}, {key: "Q", text: "Q (not in tree)"}]
+            answer: "F"
+            explanation: "Leucaena is an early, isolated branch in Fig.1 (near Lupinus/Parasponia), matching slot F, shared with the tree's other early-branching genera."
+          - letter: "Q36.2 (Lotus)"
+            type: "mcq"
+            text: "Which letter does Lotus belong to?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}, {key: "Q", text: "Q (not in tree)"}]
+            answer: "A"
+            explanation: "Lotus groups directly with Anthyllis (and Sesbania) in Fig.1, matching slot A alongside Anthyllis."
+          - letter: "Q36.2 (Ononis)"
+            type: "mcq"
+            text: "Which letter does Ononis belong to?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}, {key: "Q", text: "Q (not in tree)"}]
+            answer: "B"
+            explanation: "Ononis groups with the Medicago/Melilotus/Trigonella cluster in Fig.2, matching Fig.3's \"Medicago + Melilotus + [letter]\" grouping at slot B."
+          - letter: "Q36.2 (Parasponia)"
+            type: "mcq"
+            text: "Which letter does Parasponia belong to?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}, {key: "Q", text: "Q (not in tree)"}]
+            answer: "F"
+            explanation: "Parasponia is the outermost outgroup-like genus in Fig.1 (from the non-legume family Ulmaceae, included for rooting purposes) — matching slot F, the placeholder for the earliest-branching/isolated genera."
+          - letter: "Q36.2 (Trifolium)"
+            type: "mcq"
+            text: "Which letter does Trifolium belong to?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}, {key: "Q", text: "Q (not in tree)"}]
+            answer: "Q"
+            explanation: "Trifolium is exactly the conflicting genus identified in Q36.1 — since its two source trees can't agree on where it belongs, it's left out of the combined consensus skeleton entirely, marked Q."
+          - letter: "Q36.2 (Trigonella)"
+            type: "mcq"
+            text: "Which letter does Trigonella belong to?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}, {key: "Q", text: "Q (not in tree)"}]
+            answer: "Q"
+            explanation: "Trigonella only appears in Fig.2, grouped with Medicago/Melilotus/Ononis, and has no corresponding slot represented in the Fig.3 skeleton — left out, hence Q."
+          - letter: "Q36.2 (Vicia)"
+            type: "mcq"
+            text: "Which letter does Vicia belong to?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}, {key: "Q", text: "Q (not in tree)"}]
+            answer: "D"
+            explanation: "Vicia groups with Pisum in Fig.1 near the Melilotus/Trifolium/Medicago cluster — matching Fig.3's \"D\" slot for that region of the tree."
+          - letter: "Q36.2 (Vigna)"
+            type: "mcq"
+            text: "Which letter does Vigna belong to?"
+            options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}, {key: "Q", text: "Q (not in tree)"}]
+            answer: "E"
+            explanation: "Vigna is part of the same Glycine/Phaseolus/Cajanus \"bean\" cluster in both source trees, matching slot E."
+
+      - id: q37
+        number: "Q37"
+        name: "Why Bats Collide With Smooth Surfaces"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=59"
+        subjects:
+          - name: "Animal Communication"
+            link: "/resources/9-ethology/animal-communication/"
+        statements:
+          - letter: "Q37.1"
+            text: "The smooth metal plate/surface absorbs more sound than rough ones."
+            answer: false
+            explanation: "FALSE. A smooth, rigid metal surface is actually a strong acoustic REFLECTOR (like a mirror for sound), not an absorber — rough/textured surfaces scatter (and lose more energy from) an echo, while smooth surfaces reflect it cleanly."
+          - letter: "Q37.2"
+            text: "The smooth metal plate/surface only reflects sound back to the bat if the sound reaches the surface perpendicularly."
+            answer: true
+            explanation: "TRUE. Like a mirror, a smooth flat surface reflects sound specularly — the echo bounces straight back to the source only when the incoming call hits it close to perpendicular (angle of incidence ≈ 0°); at other angles, the reflected sound bounces off at an angle and away from the bat, giving no usable echo back."
+          - letter: "Q37.3"
+            text: "The vertical smooth metal plate/surface reflects sound in a way that attracts the bats."
+            answer: false
+            explanation: "FALSE. It's the horizontal smooth surface that bats mistake for open water/flyable space and are drawn to (attempting to drink); the vertical smooth surface instead causes collisions because bats fail to perceive it as a solid obstacle, which is a different mechanism from attraction."
+          - letter: "Q37.4"
+            text: "The bat can only detect a small part of a smooth surface."
+            answer: true
+            explanation: "TRUE. Because a smooth surface only echoes back to the bat from the small patch where its call hits close to perpendicular (per Q37.2), the bat effectively only \"sees\" that narrow reflective patch rather than the whole surface, unlike a rough surface which scatters sound (and so returns some echo) across its entire extent."
+          - letter: "Q37.5"
+            text: "The sound reflected from a horizontal versus vertical smooth surface is different."
+            answer: false
+            explanation: "FALSE. The physics of specular reflection off a smooth surface is the same regardless of the surface's orientation — what differs between horizontal and vertical placement is how the bat behaviourally interprets/responds to that echo, not the acoustic reflection itself."
+          - letter: "Q37.6"
+            text: "The bats' reaction is different because in nature bats usually only encounter horizontal smooth surfaces."
+            answer: true
+            explanation: "TRUE. In the wild, the smooth, flat, strongly-reflective surfaces bats naturally encounter are almost always horizontal (still water) — they have no evolved expectation for a VERTICAL smooth reflector, so their interpretation (and resulting behaviour) differs between the two orientations even though the raw echo physics is the same."
+          - letter: "Q37.7"
+            text: "Bats use their sense of gravity to help them recognise water."
+            answer: true
+            explanation: "TRUE. Bats combine their echolocation-derived acoustic cues with their vestibular/gravity sense (orientation relative to gravity) — a smooth ACOUSTIC signature is interpreted as \"water\" specifically when it's detected on a horizontal (gravity-consistent) surface, which is why the same acoustic reflection is interpreted so differently depending on the plate's orientation."
+          - letter: "Q37.8"
+            text: "The bats collided with vertical smooth surfaces because they sensed it as open space."
+            answer: true
+            explanation: "TRUE. Since a vertical smooth surface mostly fails to return a usable echo to an approaching bat (per Q37.2/Q37.4, off-perpendicular angles reflect the sound away), the bat receives little or no return signal from it — interpreting the acoustic \"silence\" as open, obstacle-free space rather than a solid wall, leading directly to collisions."
+
+      - id: q38
+        number: "Q38"
+        name: "Attractant vs. Repellent Pheromones in Pharaoh Ants"
+        link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=61"
+        subjects:
+          - name: "Animal Communication"
+            link: "/resources/9-ethology/animal-communication/"
+        statements:
+          - letter: "Q38.1 (Ne)"
+            type: "mcq"
+            text: "Pharaoh ants laid pheromone trails on a Y-bifurcation apparatus (feeder on one branch, empty on the other). Five sections were cut out and each tested on a fresh unbranched apparatus with 50 new ants, measuring U-turns relative to a no-pheromone control: S (near bifurcation), Fb/Nb (just past the fork, feeder/non-feeder branch), Fe/Ne (far past the fork, feeder/non-feeder branch). Ne showed no significant difference in U-turns vs. control. What type of pheromone signal does this indicate?"
+            options: [{key: "A", text: "Attractant pheromone"}, {key: "R", text: "Repellent pheromone"}, {key: "Q", text: "No trail pheromone used"}]
+            answer: "Q"
+            explanation: "No significant change in U-turn rate compared to the unmarked control means this section carries no detectable trail pheromone at all — consistent with Ne being far down the non-feeder branch, where the trail-laying colony had little reason to keep depositing pheromone since no reward was ever found that way."
+          - letter: "Q38.1 (Nb)"
+            type: "mcq"
+            text: "Nb (just past the fork, non-feeder branch) showed significantly MORE U-turns than control (P<0.001). What type of pheromone signal does this indicate?"
+            options: [{key: "A", text: "Attractant pheromone"}, {key: "R", text: "Repellent pheromone"}, {key: "Q", text: "No trail pheromone used"}]
+            answer: "R"
+            explanation: "More U-turns than control means test ants were actively turning back — i.e. being repelled — from this section. Ants that briefly explored the empty (non-feeder) branch before finding no reward plausibly mark it with a repellent signal to steer future foragers away from a known dead end."
+          - letter: "Q38.1 (Fe)"
+            type: "mcq"
+            text: "Fe (far past the fork, feeder branch) showed significantly FEWER U-turns than control (P<0.001). What type of pheromone signal does this indicate?"
+            options: [{key: "A", text: "Attractant pheromone"}, {key: "R", text: "Repellent pheromone"}, {key: "Q", text: "No trail pheromone used"}]
+            answer: "A"
+            explanation: "Fewer U-turns than control means test ants kept moving forward rather than turning back — i.e. were attracted onward. This is the branch that actually led to the food reward, consistent with a strong attractant trail marking the rewarding path."
+          - letter: "Q38.1 (Fb)"
+            type: "mcq"
+            text: "Fb (just past the fork, feeder branch) showed significantly fewer U-turns than control (P<0.05). What type of pheromone signal does this indicate?"
+            options: [{key: "A", text: "Attractant pheromone"}, {key: "R", text: "Repellent pheromone"}, {key: "Q", text: "No trail pheromone used"}]
+            answer: "A"
+            explanation: "Fewer U-turns than control, same direction of effect as Fe (just a weaker signal/significance level this close to the fork) — consistent with the same attractant trail marking the feeder branch throughout its length."
+          - letter: "Q38.1 (S)"
+            type: "mcq"
+            text: "S (near the bifurcation, before the branches split) showed significantly fewer U-turns than control (P<0.001). What type of pheromone signal does this indicate?"
+            options: [{key: "A", text: "Attractant pheromone"}, {key: "R", text: "Repellent pheromone"}, {key: "Q", text: "No trail pheromone used"}]
+            answer: "A"
+            explanation: "Fewer U-turns than control, same as the feeder-branch sections — ants outbound from the nest before the fork are still following the shared attractant trail that eventually leads to the feeder branch."

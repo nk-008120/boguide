@@ -189,8 +189,8 @@ routine "I couldn't fully unify two derivations" cases like this one.
   - **Subject-tag notes**: pulled several 5-plant-physiology and 3-animal-physiology pages not yet used elsewhere in this file's confirmed-titles list (Tropisms & Nastic Movements, Photoperiodism/Vernalization/Flowering, Plant Hormones, Seed Germination & Dormancy Physiology, Root Anatomy, Digestive & Metabolic Physiology, Comparative Thermoregulation) — all titles grep-confirmed against real `_index.md` files rather than assumed. Q50 (Drosophila bicoid/gurken body-axis patterning) has no dedicated developmental-biology resource page in this project; tagged to `Evolutionary Developmental Biology (Evo-Devo)` (15-evolution) as the closest existing real page covering developmental-gene body-patterning content, an imperfect but defensible fit — flagged here rather than silently assumed.
   - All 50 problems in the round (q1–q50, i.e. the full Theoretical B round) validated via `scripts/papers_ingest/validate.py --round-id theoretical-b` (schema, subject tags, content pages, figure files all `[OK]`), plus a manual figure-reference-resolution grep confirming no missing or orphaned figure files. `_index.md` updated to the two-button (Start Timed Attempt / Leaderboard) pattern, `attempt/index.md` and `leaderboard/index.md` added (cloned from Theoretical A, `durationMinutes: 195` confirmed matching). Browser verification intentionally not done this session (out of scope per this batch's instructions) — do a clean server restart + spot-check before considering this round fully shipped.
 
-- **IBO 2019, Theoretical A: Q1–Q10 done (of 38). Q11–Q38 not yet started —
-  see below.** This is a fundamentally different exam from every other one
+- **IBO 2019, Theoretical A: Q1–Q38 done — the full round is complete.**
+  This is a fundamentally different exam from every other one
   in this archive and needed real schema work first, not just content —
   read this whole entry (and "Handling a heterogeneous/non-uniform paper,"
   above, which this entry is the worked example for) before continuing it.
@@ -290,27 +290,177 @@ routine "I couldn't fully unify two derivations" cases like this one.
     end-to-end in a real browser this batch (not just the schema itself) —
     every problem's quiz scored full marks when fed its own answer key
     programmatically.
-  - **Q11–Q38, not yet started.** Page ranges are known for roughly Q1–Q21
-    from earlier scoping (see the exam's own page-index dump referenced in
-    this session) but not re-confirmed since. The answer key's grid layout
-    has been read (visually, at high DPI) through Q12; Q13 onward starts
-    on page 23 of the answer-key PDF and hasn't been read yet. Continue
-    the same way: render the relevant exam pages + answer-key pages at
-    ~200 DPI, read them visually (don't trust `pdftotext -layout` for
-    either the exam's own tables or the answer key's grids in this
-    specific PDF), decide a type per sub-question using the schema in
-    "Handling a heterogeneous/non-uniform paper" above, cross-check any
-    numeric answer against the source data before trusting the rest of
-    that question's key entries (worked well every time it's been tried
-    so far — Q5.1/Q5.2, Q9.1–9.3). Watch for more Q6-shaped cases (two
-    derivations that both look right but don't reconcile) — don't let one
-    of those block a whole batch; resolve pragmatically and move on, per
-    the guidance above.
-  - Batch size for this exam should be smaller than 2022/2024's 15–20 —
-    each question here takes several times the judgment calls a uniform
-    4-statement T/F question did. 5 questions/batch (both batches so far)
-    is a reasonable, sustainable size — don't stretch to a 2022/2024-sized
-    batch just because the schema work is already done.
+  - **Q11–Q20, done (batch 3)**: confirmed exact exam page numbers for
+    Q11–Q21 this batch (pdftotext's own printed running-header labels, e.g.
+    "V1-21", are always the absolute PDF page number minus 1 — confirmed
+    against Q10's already-known `#page=21` link and held exactly for every
+    question after it): Q11 pp.22–23, Q12 p.24, Q13 p.25, Q14 p.26, Q15
+    p.27, Q16 p.28, Q17 p.29, Q18 p.30, Q19 pp.31–32, Q20 pp.33–34, Q21
+    starts p.35. `extract.py` (the lean-workflow script, previously untested
+    against this specific exam) worked cleanly on this range with
+    `--question-regex '^Q(\d+)$'` — 10/10 questions found, 9/9 figure
+    candidates correctly assigned per-question by vertical position with
+    zero manual re-cropping needed, first real confirmation this script
+    handles 2019 Theoretical A's layout, not just 2022/2024's.
+    **Answer-key grid now fully read (visually, ~250 DPI) through Q20** —
+    page 22 of the decrypted answer-key PDF covers Q11–Q12, page 23 covers
+    Q13–Q16, page 24 covers Q17–Q20. **`pdftotext -layout` caught giving a
+    wrong reading twice this batch, both column-misalignment** (exactly the
+    failure mode this doc already warned about, now with concrete
+    examples): Q14's grid (columns A/B/C/D/E/P/Q) had Q14.3 misread as P
+    instead of the actual E, and Q15's grid (Type I–IV) shifted every
+    answer one column left of the correct one (e.g. read "mismatched blood
+    transfusion → Type I" from the text, but the rendered image clearly
+    shows Type II — which also happens to be the biologically correct
+    classification, a useful independent sanity check). Both were only
+    caught by rendering the actual page and reading the grid as an image —
+    don't skip that step even when `pdftotext -layout` "looks" clean.
+    Independently re-derived and confirmed exactly matching the official
+    key for every numeric answer this batch: Q12.1 (55 L blood volume — the
+    initial derivation using 11am→11pm as 10 hours instead of 12 gave 69 L
+    and didn't match, which is what caught the arithmetic slip), Q12.2
+    (0.01 mg/ml), Q13.6 (400 mg/min, read off the reabsorption curve's
+    plateau), Q16.4 (10,000×, from the two threshold curves' dB gap at 50
+    Hz via the dB SPL formula given in the question), and Q20.1 (GGGATC,
+    read independently off Fig.2's per-position nucleotide-frequency stacked
+    bars and cross-checked against the official key's own GGGATC — a second
+    figure-vs-key agreement, not just key-trusting). Q17.1–17.4 weren't
+    officially "numeric" but were reasoned out independently anyway (not
+    just key-trusted) once a clean pattern emerged from the blot data:
+    peripheral (liver) Per1 always peaks right at the *start* of that
+    condition's feeding window (6h for 6:00-start daytime feeding, 18h for
+    18:00-start nighttime feeding) — applying that same rule correctly
+    predicted Q17.4's answer (14:00, for a 14:00-start feeding window)
+    before checking it against the key. Q18 (thyroid axis across 5 clinical
+    scenarios × 4 hormones, "per completely correct line" grading) was
+    expanded into 20 individual `true_false` statements — one per
+    hormone per scenario — since each cell is an independent yes/no call
+    and multiple hormones can be "increased" at once per scenario, the same
+    non-single-choice situation Q7.3/Q8.1–8.3 already established the
+    per-cell-`true_false` pattern for; every one of the 20 also has an
+    independent endocrine-feedback-loop explanation, not just a
+    key-transcription. Q20.1 (GGGATC) and Q20.3 (GNC's and GLK's
+    inactive-but-high-affinity binding sequences, e.g. GLK's "RGATTCC" —
+    note the literal IUPAC ambiguity code R = A-or-G in the sequence
+    itself, not a stray table label, confirmed by zooming into the
+    rendered answer-key crop) are `free_response`, the same "no single
+    checkable answer, but not a T/F or MCQ either" category Q1/Q7.4/Q7.5
+    already used. Subjects: Q11→Homeostasis & Osmoregulation, Q12→
+    Digestive & Metabolic Physiology, Q13/Q14→Human Excretory System,
+    Q15→Immune Physiology, Q16→Human Sensory Organs, Q17→Biological
+    Rhythms (same page Q2 already uses), Q18/Q19→Endocrine System
+    Physiology, Q20→Gene Regulation: Eukaryotic & Epigenetics (an
+    imperfect-but-defensible fit for a plant-specific TF-binding question,
+    flagged here the same way Q50's Evo-Devo tag was in the Theoretical B
+    entry above — no dedicated plant-gene-regulation page exists yet).
+    `validate.py` was run and, as expected per its own known limitation
+    (it hard-assumes every question is exactly 4 boolean `true_false`
+    statements — never updated in step with the `type` field this exam
+    needed), flags every non-standard question in this round including
+    the already-shipped, already-verified Q1–Q10 with "answer is not
+    boolean" / "N statements (expected 4)" — 102 such lines total, all
+    accounted for by this one known cause, not a real regression. Its
+    figure-file/subject-tag/content-page checks (the ones actually capable
+    of catching a real mistake here) passed clean. All 10 problems built
+    and rendered without a fresh Hugo error; browser-verified this batch
+    (see the "browser-verify a sample" note below) rather than only
+    filesystem-checked.
+  - **Q21–Q38, done (batch 4) — round complete.** Confirmed exact page
+    numbers the same way as batch 3: Q21 pp.35–37, Q22 pp.37–40, Q23
+    pp.40–42, Q24 pp.42–44, Q25 p.44, Q26 p.45, Q27 p.46, Q28 p.47, Q29
+    p.48, Q30 p.49, Q31 pp.50–51, Q32 pp.51–53, Q33 p.53, Q34 pp.54–56,
+    Q35 p.56, Q36 pp.57–59, Q37 pp.59–61, Q38 pp.61–62 (last page of the
+    exam). `extract.py` again worked cleanly on the whole 35–62 page range
+    in one pass — 18/18 questions found, 23/23 figure candidates correctly
+    assigned. Answer-key pages 25–29 of the decrypted PDF cover Q21–Q38
+    (page 25→Q21/22, 26→Q24/25/26, 27→Q28/29/31/32, 28→Q33/34/35/36,
+    29→Q37/38) — grid layout read visually at 250 DPI throughout, per the
+    now-established rule for this exam.
+    - **Q25.6 is officially redacted by IBO itself** (shown crossed out
+      with "QUESTION REDACTED" printed over a blacked-out answer cell in
+      the key) — the first time this archive has hit a question IBO
+      pulled after publication. Handled by simply omitting that one
+      sub-question from the statement list entirely, no special schema
+      needed.
+    - **Every independently-re-derivable numeric answer matched the
+      official key exactly** this batch too, reinforcing that this
+      cross-check step reliably catches real mistakes rather than being
+      theatre: Q21.1 (110%, 104% — spongy parenchyma UW/WW ratios, using
+      the worked upper-epidermis example's own method), Q22.4–22.7 (122,
+      122, 130, 125 m — solving each of 4 given model equations for the
+      height at which it hits its stated physiological limit; also
+      independently confirms Q22.8's "most limiting parameter(s)" answer,
+      since the two lowest of those four heights are exactly the official
+      A+B), Q28 (16 bp, from 4ⁿ ≈ 3×10⁹), and Q35.1 (confirmed directly
+      from the actual p-distance matrix — L. huisuni/L. yunnani genuinely
+      is the smallest pairwise distance on both COI and 28S D2, not just
+      trusted from the key).
+    - **New question-shape not seen in batches 1–3: independent per-cell
+      scoring with a partial-credit penalty note** ("1 each, −1 per
+      incorrect X, min 0") on Q22.8/Q23.1/Q23.2-style multi-select rows,
+      distinct from Q21.4/Q21.6-style all-or-nothing multi-letter rows
+      (plain "1" for the whole row, no per-cell note). Handled the two
+      cases differently on purpose: Q22.8 (only 4 options, clearly
+      independent per-option yes/no calls) was expanded into 4 separate
+      `true_false` statements, the same per-cell pattern Q7.3/Q8.1–8.3/
+      Q18 already established; Q21.4/Q21.6/Q23.1/Q23.2 (multi-letter,
+      all-or-nothing, or awkward to cleanly split into independent per-
+      option calls) went to `free_response` instead. Worth reading the
+      grading note's exact wording before deciding which of the two
+      patterns fits a given multi-select row in a future batch.
+    - **Q30's crossing-experiment table (3 rows × 4 boxes, 3 letters per
+      filled box, "cells are interchangeable within rows")** is the
+      densest single-table question in this exam so far — represented as
+      3 `free_response` statements (one per cross/row) rather than trying
+      to force it into 12 separate gradable slots.
+    - **Q33's ecosystem-interaction-propagation question** (which
+      populations increase/decrease/can't-be-predicted when another
+      population changes, tracing both direct and indirect effects
+      through a labelled +/−/0 interaction network) required genuine
+      graph-traversal reasoning rather than a single visual read — verify
+      this one's explanations particularly carefully in a future
+      spot-check, since the underlying diagram (`q33-figure-1.png`) is
+      dense and the multi-path "cannot be predicted" calls (Q33.3/Q33.4)
+      are the most inference-heavy answers in this batch.
+    - **Ecology (Q31/Q32/Q33) hit a real subject-tag validator bug on
+      first pass**: `content/resources/8-ecology/_index.md`'s title is
+      literally `"✅ Ecology"` (the ✅ is this codebase's own
+      content-completeness marker, per `context/PROJECT-OVERVIEW.md`),
+      and `scripts/papers_ingest/subjects.py`'s `_read_title()` already
+      strips a leading `✅ ` for exactly this reason — but the YAML was
+      first written with the literal `"✅ Ecology"` string anyway, which
+      `validate.py` correctly flagged as not matching any real subject
+      title. Fixed by using the stripped form, `"Ecology"`, matching what
+      `discover_subjects()` actually returns. Ecology
+      (`content/resources/8-ecology/`) is also the **only** resource
+      section in this whole codebase with no topic sub-pages at all —
+      every other section subdivides into specific pages — so it's the
+      correct, only-available tag for any ecology question, not a
+      fallback.
+    - Subjects this batch: Q21→Plant Stress Physiology & Defense,
+      Q22→Water Transport & Transpiration, Q23→Tropisms & Nastic
+      Movements, Q24→Stomatal Physiology & Gas Exchange, Q25→Genetic
+      Drift, Gene Flow & Mutation, Q26→Pedigree Analysis & Human Genetic
+      Disorders, Q27→Linkage, Recombination & Genetic Mapping,
+      Q28→Nucleotide & Nucleic Acid Chemistry, Q29→Translation & the
+      Genetic Code, Q30→Mendel's Laws & Probability in Genetics (same
+      page Q8 uses), Q31/Q32/Q33→Ecology, Q34/Q36→Phylogenetic Trees &
+      Cladistics, Q35→Molecular Systematics, Q37/Q38→Animal
+      Communication.
+    - `validate.py`: 192 schema "issues" across the full 38-question
+      round, all still the one known pre-existing cause (hard-assumes 4
+      boolean `true_false` statements per question) — subject-tag,
+      content-page, and figure-file checks all passed clean after the
+      Ecology fix above. All 18 new problems built and browser-verified
+      this batch (every question's quiz scored full marks against its
+      own answer key programmatically, the same method used since batch
+      3).
+  - **The full 38-question round is done.** If a future session wants to
+    extend this archive further, the natural next step is either a
+    different IBO year/round entirely, or going back to resolve Q6's
+    still-unreconciled strand-ambiguity (see batch 2 above) and Q30's
+    genuinely dense crossing table if a cleaner representation than
+    `free_response` becomes worth the effort later.
 
 Update this section as you complete more batches.
 

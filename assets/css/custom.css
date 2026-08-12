@@ -3231,6 +3231,7 @@ main#content:has(#bioclash-root) > h1 {
    insurance against the same class of bug turning up here once this page
    also carries a full-bleed fixed background. */
 #bioclash-root { position: relative; overflow-x: hidden; }
+#bioclash-round-leaderboard-root { position: relative; overflow-x: hidden; }
 
 /* Sitewide watermark for the BiOClash section — layouts/_default/baseof.html
    swaps in this class instead of the default .bioguide-bg-layer whenever
@@ -4268,6 +4269,39 @@ html.dark .bioclash-page .papers-test-card:hover {
   background: linear-gradient(180deg, rgba(6, 8, 6, 0.68) 0%, rgba(6, 8, 6, 0.56) 30%, rgba(5, 7, 5, 0.5) 60%, rgba(5, 7, 5, 0.62) 100%);
 }
 
+/* Whole-page background for /bioclash/mb-01/leaderboard/ — brings this
+   page up to the same forced-dark, full-bleed treatment as the attempt,
+   landing, and /papers/leaderboard/ pages (previously the odd one out:
+   toggle-able theme, only the faint sitewide .bioclash-bg-layer behind
+   it). Same pattern as .bioclash-landing-bg/.bioclash-leaderboard-bg;
+   .bioclash-champions-frame (rendered by the {{< bioclash-champions >}}
+   shortcode this page uses) already has isolation:isolate + an opaque
+   background, so it stacks above this correctly with no changes needed
+   there — same free ride .bioclash-leaderboard-panel relies on. */
+.bioclash-round-leaderboard-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background-image: url('/BIOCLASHPICS/mb01-bg-loki-wide.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 700px) {
+  .bioclash-round-leaderboard-bg {
+    background-image: url('/BIOCLASHPICS/mb01-bg-loki-tall.png');
+    background-position: center top;
+  }
+}
+.bioclash-round-leaderboard-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(6, 8, 6, 0.68) 0%, rgba(6, 8, 6, 0.56) 30%, rgba(5, 7, 5, 0.5) 60%, rgba(5, 7, 5, 0.62) 100%);
+}
+
 /* Generic opaque "case file" panel for the plain markdown sections (Rounds
    This Season / Hall of Fame / Test Leaderboards) — these predate the
    citadel backdrop and, unwrapped, would sit directly on the fixed image
@@ -4531,7 +4565,8 @@ html.dark .discussions-comment {
    its click handler could fire. */
 body.bioclash-attempt-active .hextra-theme-toggle,
 body.bioclash-leaderboard-active .hextra-theme-toggle,
-body.bioclash-landing-active .hextra-theme-toggle {
+body.bioclash-landing-active .hextra-theme-toggle,
+body.bioclash-round-leaderboard-active .hextra-theme-toggle {
   display: none !important;
 }
 
