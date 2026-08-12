@@ -4014,7 +4014,7 @@ html.dark .bioclash-notify {
 
 /* 15d. BIOCLASH SEASON CHAMPIONS — {{< bioclash-season-champions >}}, the
    cumulative cross-round standing (bioclash_season_standings view). The
-   founder's explicit ask was for this to be the grandest, most "glowing"
+   explicit ask was for this to be the grandest, most "glowing"
    treatment on the site — deliberately reuses two techniques already
    proven elsewhere rather than inventing new ones: the pulsing
    radial-gradient vignette from .bioclash-attempt-glow-bg::after
@@ -4079,7 +4079,7 @@ html.dark .bioclash-notify {
   margin: 0 auto 1.5rem;
 }
 /* Chasing border glow — replaces the earlier flanking-wing idea per
-   founder feedback ("remove the wings, make the glow move around the
+   feedback ("remove the wings, make the glow move around the
    rectangle perimeter"). A plain sibling div (NOT a pseudo-element of the
    frame itself — a negative-z-index pseudo on .bioclash-season-champions-
    frame would paint AFTER the frame's own opaque background within the
@@ -4204,7 +4204,7 @@ html.dark .bioclash-page .papers-test-card:hover {
 
 /* Whole-page citadel backdrop — MB-01PICS/citadel.webp behind the ENTIRE
    leaderboard page (moved here from a Hall-of-Fame-only treatment per
-   founder correction: the image was meant for the whole page, not just
+   correction: the image was meant for the whole page, not just
    one section). Same fixed full-viewport pattern as
    .bioclash-attempt-glow-bg, added as the first child of
    #bioclash-leaderboard-root. The source photo (a gothic vaulted citadel

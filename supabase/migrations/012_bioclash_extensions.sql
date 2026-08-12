@@ -16,7 +16,7 @@
 --    existing fullscreen_exits/visibility_losses (migration 009): a
 --    beforeunload listener in bioclash-attempt.js fires
 --    navigator.sendBeacon to api/bioclash-log-tab-close.js, which
---    increments this. Never auto-penalizing, surfaced only for founder
+--    increments this. Never auto-penalizing, surfaced only for
 --    post-hoc review — there is no technical way to prevent a tab from
 --    closing, so this is detection/logging, not enforcement (see the
 --    honor-code rule added alongside this in content/bioclash/mb-01/

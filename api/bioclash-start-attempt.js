@@ -36,7 +36,7 @@ module.exports = async (req, res) => {
     const admin = getAdminClient();
 
     // accessMode: 'open' (2026-08-11 — every logged-in user, matching how
-    // the founder's own allowlisted account already behaved) intentionally
+    // the original allowlisted test account already behaved) intentionally
     // takes no branch here and falls straight through unrestricted — the
     // anon.auth.getUser(token) check above already guarantees the caller
     // is authenticated, which is the entire bar for 'open'. Only

@@ -11,16 +11,16 @@ single-active-session mechanism added 2026-08-11 — migration 010, touches
 every bioclash-*.js endpoint).
 
 **Status as of 2026-08-11 (end of day): code-complete, partially exercised
-against production.** The founder deployed and hit a real, confirmed
+against production.** A deployment hit a real, confirmed
 production error trying to start an attempt — see "CONFIRMED production
 incident" immediately below before doing anything else. This dev
 environment still has no Supabase credentials of its own; every fix this
-session was reasoned from the error text the founder pasted back, not from
+session was reasoned from the error text pasted back, not from
 directly querying the database.
 
 ### CONFIRMED production incident, 2026-08-11 — read this first
 
-Founder hit **"Could not start attempt"** (generic 500) on the deployed
+Hit **"Could not start attempt"** (generic 500) on the deployed
 site. Actual logged error, obtained from Vercel's function logs:
 ```
 code: 'PGRST204', message: "Could not find the 'active_session_claimed_at' column of 'bioclash_attempts' in the schema cache"
@@ -35,8 +35,8 @@ Supabase SQL editor** — "the file exists" and "the column exists in
 production" are not the same fact, and nothing in this codebase's tooling
 catches that gap automatically.
 
-Fix given to the founder (not independently confirmed working — no
-access to their Supabase project to verify): run **both**
+Fix given (not independently confirmed working — no
+access to the Supabase project to verify): run **both**
 `009_bioclash_attempts.sql` and `010_bioclash_anticheat.sql` in the SQL
 editor (both idempotent — `create table if not exists` / `add column if
 not exists` throughout, safe to re-run regardless of partial prior state),
@@ -44,16 +44,16 @@ then explicitly `NOTIFY pgrst, 'reload schema';` (or use Settings → API →
 "Reload schema cache" in the dashboard) — PostgREST caches the schema and
 doesn't always pick up SQL-editor DDL changes immediately, which is a
 plausible second contributor even if 010 actually had been run before.
-**A fresh session should ask the founder to confirm attempt-start now
+**A fresh session should confirm attempt-start now
 works before trusting anything else in this file's "verified" claims.**
 
-**2026-08-11 session — founder feedback pass (`context/IMPROVES.txt` +
+**2026-08-11 session — feedback pass (`context/IMPROVES.txt` +
 `data/bioclash/daquestions.md` + `context/Q10.4.txt`), all addressed:**
 1. Q13/Q14 were single `free_text` blobs with every lettered T/F statement
    crammed into one prompt paragraph — restructured into one `true_false`
    component per letter (F–J for Q13, a–d for Q14), same total marks. Q15a's
-   free-text ranking question replaced with the 5-option MCQ the founder
-   specified (correct: A).
+   free-text ranking question replaced with the specified 5-option MCQ
+   (correct: A).
 2. **The big one**: the whole paper used to be visible (though answer-key
    fields always stayed stripped) from the moment an attempt started —
    Part B's intro sentence gave away Part A's non-recoverable answer to
@@ -113,7 +113,7 @@ blocks. Still not run against a live attempt (see "Genuinely unverified,"
 below — same caveats as before, now also covering the new part and the
 pagination UI specifically).
 
-**2026-08-11, later same day — founder debugging pass (`context/debug01.md`),
+**2026-08-11, later same day — debugging pass (`context/debug01.md`),
 all flagged items addressed:**
 1. **Locked answers rendered blank and inputs stayed clickable.**
    `block.answer` was never populated locally after a lock succeeded (only
@@ -165,8 +165,8 @@ all flagged items addressed:**
    graph" questions no longer had the graph visible — it only lived on
    `da-context2a`'s page. Fixed by attaching the same `supressiondata2.jpg`
    to both blocks' `images:`.
-6. **C59/Workflow-III/luciferase text was too revealing** (founder's own
-   direct edits, done before this pass — "learned from," not re-done) —
+6. **C59/Workflow-III/luciferase text was too revealing** (direct edits made
+   before this pass — "learned from," not re-done) —
    confirms the general pattern: distractors/reveals should never restate
    the reasoning that makes the correct answer obvious, keep prompts terse.
 7. **Q9.i's restated Workflow II text was malformed** (doubled stray
@@ -183,8 +183,8 @@ all flagged items addressed:**
    Fixed with `white-space: pre-line` on both classes — this was silently
    breaking every multi-paragraph prompt in the paper, not just Q12–15.
 
-**Images 9/10 (from the earlier "founder feedback pass" above) resolved
-this session too** — the founder supplied two REAL published-paper figures
+**Images 9/10 (from the earlier "feedback pass" above) resolved
+this session too** — two REAL published-paper figures were supplied
 (`tissuetype.jpg`, `tmdexpress.jpg`, not AI-generated) as candidates for
 Part B's context and the DA→Part B reveal. Both turned out to be far MORE
 revealing than the prose they'd have replaced (`tissuetype.jpg`'s panel B
@@ -217,7 +217,7 @@ couldn't be overwritten, so the synced version — full Data Analysis
 section with all 5 real images embedded, matching marking notes, Q15(a)
 as the MCQ, 165-mark total, and design notes at both redaction points
 explaining why the live delivery reads differently from this master copy
-— is `BiOGuide-BiOClash-Problem_1_4.docx`, also in the founder's Downloads
+— is `BiOGuide-BiOClash-Problem_1_4.docx`, also in the local Downloads
 folder. **If a future session needs to sync the docx again, check which
 version number is now current before assuming `_1_4` still is** — ask
 rather than guess, since this file lives outside the repo and its
@@ -274,7 +274,7 @@ from BiOrchive's pattern, and it's the whole point.
   may not have been run — verify, don't assume). Adds three tables:
   - `bioclash_paper_access` — allowlist, `(paper_id, user_id)`. Empty by
     default; a row must exist for a user to do anything. Seeds the
-    founder's own account by email lookup — **requires that account to
+    debug-phase test account by email lookup — **requires that account to
     already exist (real signup) or the insert silently matches nothing**;
     re-run after signing up if needed, it's idempotent.
   - `bioclash_attempts` — one row per `(user_id, paper_id)`. `status`
@@ -328,12 +328,12 @@ from BiOrchive's pattern, and it's the whole point.
   (`signallingpath.png`, `supressiondata1/2/3.jpg`, `context2.jpg` — note
   the mixed extensions, `daquestions.md` itself refers to all of them as
   `.png`, don't trust that when re-pointing an `images:` entry). Separate
-  directory from `BIOCLASHPICS/` below purely because that's where the
-  founder dropped them; no reason to unify unless it comes up again.
+  directory from `BIOCLASHPICS/` below purely because that's where these
+  were originally dropped; no reason to unify unless it comes up again.
 - `static/BIOCLASHPICS/` — `mb01-fig1..4-*.png` are the **real** figures,
   extracted directly from the source `.docx`'s embedded media (not
   regenerated). `mb01-bg-loki-wide.png` / `mb01-bg-loki-tall.png` are the
-  founder-supplied Loki/TVA background art (see "Theming," below).
+  supplied Loki/TVA background art (see "Theming," below).
   **Figures 5, 6, 7 don't exist as art** (Q8b's CRISPR panels, Q10.4D(ii)'s
   Hill-coefficient curves, Q10.5(c)'s Lineweaver-Burk plot) — those three
   questions describe the figure in the prompt text instead, so they're
@@ -453,7 +453,7 @@ from BiOrchive's pattern, and it's the whole point.
    explicitly opaque panel (`#1c1814` in dark mode) with `color:
    var(--bc-ink) !important`, fully decoupled from whatever the background
    layer is doing. The background itself was later swapped from a
-   synthesized gradient+filter to the founder's real Loki/TVA art (wide
+   synthesized gradient+filter to the real Loki/TVA art (wide
    crop ≥701px, tall crop ≤700px, `static/BIOCLASHPICS/mb01-bg-loki-*.png`).
 
 **Local-dev-only gotcha, not a real bug**: the Hugo dev server sends no
@@ -469,20 +469,20 @@ just trust the code and move on) before assuming the code is wrong.
 
 ## Theming — Loki/Mobius narrative
 
-Light touch, by explicit design ("just enough to engage, not immerse," per
-the founder). Each part has a 2–4 sentence `intro` field (narrative flavor
+Light touch, by explicit design ("just enough to engage, not immerse").
+Each part has a 2–4 sentence `intro` field (narrative flavor
 at the transition only) — the actual question prompts stay serious/
-academic, matching the founder's own calibration in
+academic, matching the calibration already set in
 `BiOClash-Loki-Narrative_1.md` (Downloads — covers Part A only; Parts B–F's
 intros were extended in the same voice this session, not separately
-reviewed by the founder yet). Background art came from `bioclashmb/loki1.png`
+reviewed yet). Background art came from `bioclashmb/loki1.png`
 /`loki2.png` at the repo root (**not** under `static/` — that's a local
-staging folder the founder drops reference/draft images in, not part of
+staging folder for reference/draft images, not part of
 the built site). That folder also has a pile of Loki-show reference images
 (`hewhoremains.jpg`, `tvahq.jpeg`/`.webp`, `sacredtimeline.avif`,
 `temploom.jpg`, `thetimedoor.jpg`, `judgesroom.webp`, `missminutes.webp`,
 `timelinebranching.jpg`, `lockedup.jpg`, `lokifinale.jpg`) and an
-`Improvements.md` with the founder's original design brief for this paper
+`Improvements.md` with the original design brief for this paper
 — worth a look if more theming work happens later, none of it wired in yet
 beyond the two background crops.
 
@@ -507,8 +507,8 @@ top of this file (start-attempt actually failing, actually diagnosed from
 a real logged error), which is progress but is not the same as a clean
 verified pass. Before this goes anywhere near a real student:
 
-1. **Confirm the production incident is actually resolved** — the founder
-   has not yet reported back that `start-attempt` works after running
+1. **Confirm the production incident is actually resolved** — it
+   has not yet been reported back that `start-attempt` works after running
    migrations 009+010 and reloading the schema cache. Don't assume yes.
 2. With `vercel dev` + real env vars (see `SETUP.md` for the local-dev
    pattern this whole system already uses): log in as the allowlisted

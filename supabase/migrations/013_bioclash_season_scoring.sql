@@ -2,8 +2,8 @@
 -- bioclash_results (migration 006) from a single-round, placement-only
 -- table into one that can also drive a cross-round, cumulative season
 -- standing — full design rationale in
--- context/bioclash-season-points-plan.md. Still hand-entered by the
--- founder after offline grading (no automated scoring pipeline exists or
+-- context/bioclash-season-points-plan.md. Still hand-entered
+-- after offline grading (no automated scoring pipeline exists or
 -- is planned — see scripts/bioclash-score-round.js, a hand-run helper,
 -- not a live endpoint), same posture as every row in this table today.
 --

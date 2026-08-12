@@ -1,5 +1,5 @@
 **Status as of 2026-08-09: implemented.** This is the original requirements
-doc (the founder's raw ask), kept as-is below as the record of what was
+doc (the raw ask), kept as-is below as the record of what was
 actually requested — it does not describe current state, read it as intent,
 not as a to-do list. What actually shipped:
 - Landing page at `/bioclash/`: hero with curtain-reveal intro (click/Enter
@@ -11,7 +11,7 @@ not as a to-do list. What actually shipped:
 - New palette (Exam-Paper Crimson: parchment/crimson/gold, explicitly not
   the site's lilac/sage) and typography (headings reuse KaTeX's own
   Computer-Modern-derived font files, already loaded sitewide for math, as
-  the LaTeX nod this doc asks for) — confirmed with the founder before
+  the LaTeX nod this doc asks for) — confirmed explicitly before
   building, since this was flagged as a subjective call not to guess at.
   Full CSS in `assets/css/custom.css`'s "BIOCLASH" sections.
 - A flamboyant, animated hero background (DNA-strand motif) distinct from
@@ -24,7 +24,7 @@ not as a to-do list. What actually shipped:
 - **One line from the original ask below was NOT shipped verbatim**: "podium
   winners get honorary Junior Partner position at BiOGuide" was softened in
   the actual copy (to something like "may be recognized with...") after
-  confirming with the founder that the flat, unconditional commitment as
+  confirming that the flat, unconditional commitment as
   originally phrased wasn't actually intended to ship as-is.
 - Icons/Discord/Instagram links, the non-commercial "why" framing tied to
   `about/_index.md`, and the navbar entry were all built as specified below.

@@ -38,7 +38,7 @@ three BEFORE you start transcribing content, not partway through:
    as of 2026-08 — search the web if that's moved) before assuming you have
    to derive every answer from first principles. IBO publishes a combined
    answer-key PDF per year covering all practicals + theoreticals together;
-   it may be password-protected (ask the user/founder for the password
+   it may be password-protected (ask for the password
    rather than guessing or trying to crack it) but is otherwise a legitimate
    public document, not something you need special permission to fetch.
    Downloading it is still a "download a file" action — state the filename/
@@ -123,9 +123,9 @@ routine "I couldn't fully unify two derivations" cases like this one.
 ## Current status
 
 - **IBO 2022, Theoretical 1**: Q1–Q49 done (of 50). Q50 remains. Source PDF: `Theory 1 (Official) IBO 2022 + answer key (1)_unlocked.pdf` — 76 pages, pages 1 = license, 2–75 = questions, 76 = official answer key. Community (unofficial) solutions: `IBO2022_T1Sol.pdf`.
-- **IBO 2022, Theoretical 2**: **Q51–Q100 all done (ids q1–q50, the full round) — 100% complete.** Batches 2 and 3 (Q66–100, ids q16–q50) ended up skipping the free-model delegation step at the user's request and were written directly by Claude using the same process as Q51–65.
+- **IBO 2022, Theoretical 2**: **Q51–Q100 all done (ids q1–q50, the full round) — 100% complete.** Batches 2 and 3 (Q66–100, ids q16–q50) ended up skipping the free-model delegation step by explicit request and were written directly by Claude using the same process as Q51–65.
   - Source PDF: `Theory 2 (Official) IBO 2022 + answer key (1)_unlocked.pdf` — 80 pages, page 1 = license, 2–79 = questions, 80 = official answer key. Copied into the repo at `static/papers/ibo/2022/theoretical-2-exam.pdf`. Community (unofficial) solutions: `IBO2022_T2Sol.pdf`, copied to `static/papers/ibo/2022/theoretical-2-solutions.pdf` (occasionally disagrees with the official key on a handful of sub-questions — trust the official key below when they conflict).
-  - **Batch 2 (Q66–80, ids q16–q30): done.** The user opted out of the free-model delegation step for this batch and had Claude write the explanations directly (same process as Q51–65) — figures were already extracted and placed in `static/papers/ibo/2022/` (see inventory below) before this batch's session started, and several graph-heavy questions (q17/E-F-G pathways, q18/A-B-C-D cells, q19/OSCA-Piezo graphs, q20/phylogeny labels, q21/three figures, q25/q26/q27/q29/q30 graphs) were reasoned from actually viewing the figure PNGs, not just the extracted text.
+  - **Batch 2 (Q66–80, ids q16–q30): done.** The free-model delegation step was skipped for this batch, with Claude writing the explanations directly instead (same process as Q51–65) — figures were already extracted and placed in `static/papers/ibo/2022/` (see inventory below) before this batch's session started, and several graph-heavy questions (q17/E-F-G pathways, q18/A-B-C-D cells, q19/OSCA-Piezo graphs, q20/phylogeny labels, q21/three figures, q25/q26/q27/q29/q30 graphs) were reasoned from actually viewing the figure PNGs, not just the extracted text.
     - q66 → `q66-figure-1.png` · q67 → `q67-figure-1.png` · q68 → `q68-figure-1.png` · q69 → `q69-figure-1.png` · q70 → `q70-figure-1.png`
     - q71 → `q71-figure-1.png`, `q71-figure-2.png` (two figures) · q72 → `q72-figure-1.png` · **q73 → no figure**
     - q74 → `q74-figure-1.png` · q75 → `q75-figure-1.png` · q76 → `q76-figure-1.png` · q77 → `q77-figure-1.png` · q78 → `q78-figure-1.png` · q79 → `q79-figure-1.png` · q80 → `q80-figure-1.png`
@@ -208,7 +208,7 @@ routine "I couldn't fully unify two derivations" cases like this one.
   - **Official answer key location**: not bundled, but IBO's own public
     archive (`https://www.ibo-info.org/en/info/papers.html`) hosts
     `IBO 2019_Answer keys for Practicals and Theoretical Exams.pdf`
-    (password `2020_Exams_IBO`, founder-supplied) — covers all 4 practicals
+    (password `2020_Exams_IBO`, supplied for this project) — covers all 4 practicals
     plus both theoretical exams in one 41-page file. Decrypted copy saved to
     `static/papers/ibo/2019/answer-keys.pdf` and linked as this round's
     `solutionLink`. **The answer key itself is dense multi-select/matching

@@ -14,8 +14,8 @@ is the delta those docs don't already cover for this specific batch.
   figure**, `q74-figure-1.png` … `q80-figure-1.png`.
 - The question text + official answers were bundled and handed to a free AI
   model to write the per-statement explanations (see
-  `papers-ingestion-delegation.md` for why/how). The user is pasting that
-  model's raw output back into this conversation.
+  `papers-ingestion-delegation.md` for why/how). That
+  model's raw output is being pasted back into this conversation.
 
 ## What you need to do
 

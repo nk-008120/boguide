@@ -24,7 +24,7 @@ file drift out of sync with it again. Briefly: `005_bioclash_notify.sql`
 adds `profiles.notify_bioclash` (a login-based opt-in for the BiOClash
 landing page's "get notified" widget); `006_bioclash_results.sql` adds a
 `bioclash_results` table + `bioclash_leaderboard` view (manually populated
-by the founder once a real BiOClash season concludes — no scoring engine
+once a real BiOClash season concludes — no scoring engine
 exists yet, so this starts empty); `007_discussions.sql` adds
 `discussion_threads`/`discussion_comments` + their feed views (public
 comment/feedback threads at `/discussions/`, posting requires login,
@@ -209,7 +209,7 @@ this document plus those three files is the fast path back to full context.
 
 ## Part 2 — Planned features (not yet built)
 
-Requested by the user, 2026-08-08, with clarifying answers already collected
+Requested 2026-08-08, with clarifying answers already collected
 (don't re-ask these — they're settled):
 
 | Open question asked | Answer |
@@ -238,15 +238,15 @@ linking to a better-designed login page than the current one.
   auth state changes (e.g. user logs in on the account page, then clicks
   a nav link) — wire it via `PapersAuth.onChange(cb)`, already built for
   exactly this.
-- **Open decision, confirm with user before building**: the login page
+- **Open decision, confirm before building**: the login page
   currently lives at `/papers/account/`, scoped under BiOrchive per the
   original request. Feature 4 (gating Articles) means login is no longer a
   BiOrchive-only concern. Recommend relocating to a top-level `/account/`
   (with a Hugo alias/redirect from the old `/papers/account/` URL so
-  existing links don't 404) — but confirm this with the user first since it
+  existing links don't 404) — but confirm this first since it
   wasn't part of the original scoping.
 - "Better designed" is subjective and wasn't specified further — when this
-  is picked up, either ask the user for a design direction/reference, or
+  is picked up, either get a design direction/reference, or
   propose 2-3 concrete visual directions before building rather than
   guessing.
 
@@ -265,10 +265,10 @@ the account page and the attempt-report leaderboard prompt.
 **Technical plan**:
 - Avatar storage: add a curated set of images to a new `static/avatars/`
   directory (naming convention e.g. `avatar-01.png` … `avatar-NN.png`) —
-  **the user needs to supply these image files**, same category of
+  **these image files still need to be supplied**, same category of
   external dependency as the Supabase account creation was in Part 1.
   Claude can generate simple placeholder icons if asked, but final art is
-  the user's call.
+  still to be decided.
 - `profiles.avatar_url` column **already exists** in the schema (added in
   Part 1, unused until now) — store the relative path (e.g.
   `/avatars/avatar-03.png`).
@@ -365,8 +365,8 @@ the exact mechanism.
   boundary** — like the existing quiz answers, the full article HTML still
   ships in the page source (just visually hidden via CSS) unless a further
   requirement emerges to actually withhold the content server-side. Worth
-  stating explicitly to the user when this is built, in case that
-  distinction matters to them (it didn't seem to be the intent here, but
+  stating explicitly when this is built, in case that
+  distinction matters (it didn't seem to be the intent here, but
   confirm rather than assume).
 
 ### Suggested build order
@@ -450,11 +450,11 @@ and education level for what's likely a lot of minors. Worth having:
 ## Part 2 implementation notes (added same session, after the plan above)
 
 All four features were built together rather than in the suggested 1+2 → 3 →
-4 order, per explicit user confirmation. Three open decisions from the table
-above were also resolved with the user before building:
+4 order, per explicit confirmation. Three open decisions from the table
+above were also resolved before building:
 - Login page relocated to **`/account/`** (not kept at `/papers/account/`).
 - Login page redesign direction: **split-screen** (branded panel + form).
-- Avatar images: **user-supplied**, not Claude-generated placeholders — the
+- Avatar images: **manually supplied**, not Claude-generated placeholders — the
   picker UI/DB wiring is fully built and functional, but `static/avatars/`
   has no actual image files yet (see below).
 
@@ -520,7 +520,7 @@ above were also resolved with the user before building:
   something JS adds — if this script fails to load, the content stays
   blurred rather than leaking. As noted in the original plan, this is a
   presentation-layer gate only (the HTML still ships in page source); worth
-  restating to the user if that distinction matters more than it seemed to
+  restating if that distinction matters more than it seemed to
   when this was scoped.
 - **CSS** — assets/css/custom.css sections 19 (rewritten for split-screen),
   21 (avatar grid + profile form, new), 22 (navbar icon, new), and 23
