@@ -21,7 +21,7 @@ The epidermis is stratified squamous epithelium (see [Body Plans](../body-plans/
 
 | Stratum | Key features |
 |---|---|
-| **Basale (germinativum)** | Single layer of cuboidal/columnar cells on the basement membrane; mitotically active — the source of all epidermal renewal; also contains melanocytes and Merkel cells (see below) |
+| **Basale (germinativum)** | Single layer of cuboidal/columnar cells on the basement membrane; mitotically active, the source of all epidermal renewal; also contains melanocytes and Merkel cells (see below) |
 | **Spinosum** | Several layers of polyhedral cells connected by numerous desmosomes ("spines" seen in fixed histology are desmosomal attachment points, not a true structural feature of living cells); contains Langerhans cells |
 | **Granulosum** | Cells flattening, accumulating keratohyalin granules (precursor to keratin) and lamellar granules (secrete a lipid barrier into the intercellular space); cells begin to die as their nuclei degrade |
 | **Lucidum** | Thin, clear layer of dead, densely packed cells, present only in thick skin |
@@ -42,7 +42,7 @@ This basale-to-corneum progression is a single continuous process, **keratinizat
 Beneath the epidermis, separated by the basement membrane, the dermis is dense irregular/dense regular connective tissue (see [Body Plans](../body-plans/)) in two sublayers:
 
 - **Papillary layer**: thin, loose connective tissue, forms finger-like **dermal papillae** projecting into the epidermis (increasing the interface surface area and mechanical interlock between the two layers, the structural basis of fingerprints, where papillae are arranged in patterned ridges); rich in capillary loops and Meissner's corpuscles (see below).
-- **Reticular layer** — thicker, dense irregular connective tissue with interwoven collagen and elastin fibers providing tensile strength and elasticity; contains most of the skin's glands, hair follicles, and deeper sensory receptors.
+- **Reticular layer**: thicker, dense irregular connective tissue with interwoven collagen and elastin fibers providing tensile strength and elasticity; contains most of the skin's glands, hair follicles, and deeper sensory receptors.
 
 ![Histology section showing the epidermis sitting atop the papillary dermis (finger-like projections interlocking with the epidermal underside) and the deeper, denser reticular dermis.](/ANATOMYPICS/dermal-papillae-epidermal-junction.jpg)
 *Source: user-sourced histology figure. Clear match — the papillary/reticular dermis distinction and the interlocking papillae are both visible.*
@@ -94,10 +94,10 @@ Beneath the epidermis, separated by the basement membrane, the dermis is dense i
     lucidum: { name: 'Stratum Lucidum', desc: 'Thin, clear layer of dead, densely packed cells, present only in thick skin (palms, soles).' },
     granulosum: { name: 'Stratum Granulosum', desc: 'Cells flattening, accumulating keratohyalin granules (keratin precursor) and lamellar granules (secrete a lipid barrier); nuclei begin to degrade.' },
     spinosum: { name: 'Stratum Spinosum', desc: 'Several layers of polyhedral cells joined by desmosomes; contains Langerhans cells (antigen-presenting immune surveillance).' },
-    basale: { name: 'Stratum Basale', desc: 'Single layer of mitotically active cuboidal/columnar cells on the basement membrane — the source of all epidermal renewal; also contains melanocytes and Merkel cells.' },
+    basale: { name: 'Stratum Basale', desc: 'Single layer of mitotically active cuboidal/columnar cells on the basement membrane, the source of all epidermal renewal; also contains melanocytes and Merkel cells.' },
     papillary: { name: 'Papillary Dermis', desc: "Thin, loose connective tissue forming dermal papillae that interlock with the epidermis; rich in capillary loops and Meissner's corpuscles." },
     reticular: { name: 'Reticular Dermis', desc: 'Thicker, dense irregular connective tissue with interwoven collagen/elastin fibers; contains most glands, hair follicles, and deeper receptors.' },
-    hypodermis: { name: 'Hypodermis', desc: 'Adipose-rich connective tissue anchoring the dermis to underlying fascia/muscle — thermal insulation, cushioning, energy storage.' },
+    hypodermis: { name: 'Hypodermis', desc: 'Adipose-rich connective tissue anchoring the dermis to underlying fascia/muscle, thermal insulation, cushioning, energy storage.' },
     merkel: { name: 'Merkel Disc', desc: 'Location: stratum basale. Detects sustained light touch and texture.' },
     meissner: { name: "Meissner's Corpuscle", desc: 'Location: papillary dermis, dense in fingertips/lips. Detects light touch and low-frequency vibration.' },
     ruffini: { name: 'Ruffini Ending', desc: 'Location: deep dermis. Detects skin stretch and sustained pressure.' },
@@ -207,7 +207,7 @@ The **nail plate** (a flattened sheet of hard keratin, structurally continuous w
 ### Glands
 
 - **Sebaceous glands**: associated with hair follicles (opening into the follicle rather than directly onto the skin surface in most locations), holocrine secretion (the entire cell disintegrates to release its contents) producing **sebum**, an oily/waxy mixture that lubricates hair and skin and contributes to the skin's antimicrobial barrier.
-- **Eccrine sweat glands** — simple coiled tubular glands, found over nearly the entire body surface, ducts opening directly onto the skin surface; the primary thermoregulatory sweat glands, secreting a dilute, largely aqueous fluid.
+- **Eccrine sweat glands**: simple coiled tubular glands, found over nearly the entire body surface, ducts opening directly onto the skin surface; the primary thermoregulatory sweat glands, secreting a dilute, largely aqueous fluid.
 - **Apocrine sweat glands**: restricted to the axillary and anogenital regions, ducts opening into hair follicles rather than directly onto the surface, become active at puberty, secrete a more viscous, protein-rich fluid that is odorless until metabolized by skin surface bacteria.
 
 ### Thermoregulatory Structure
@@ -216,7 +216,7 @@ Two independent structural mechanisms, both under autonomic (sympathetic) contro
 
 ## Comparative Structures
 
-The epidermis-over-dermis plan and keratinization process described here are shared, in substantially modified form, with the keratinized structures of other vertebrates — reptile scales, bird feathers, and mammalian fur are all epidermal keratin derivatives, directly compared on the [Reptile & Bird Anatomy](../reptile-bird-anatomy/) and [Mammalian Comparative Anatomy](../mammalian-comparative-anatomy/) pages. Fish scales, by contrast, are dermal (bony) rather than epidermal — see [Fish & Amphibian Anatomy](../fish-amphibian-anatomy/) for this structural distinction.
+The epidermis-over-dermis plan and keratinization process described here are shared, in substantially modified form, with the keratinized structures of other vertebrates — reptile scales, bird feathers, and mammalian fur are all epidermal keratin derivatives, directly compared on the [Reptile & Bird Anatomy](../reptile-bird-anatomy/) and [Mammalian Comparative Anatomy](../mammalian-comparative-anatomy/) pages. Fish scales, by contrast, are dermal (bony) rather than epidermal; see [Fish & Amphibian Anatomy](../fish-amphibian-anatomy/) for this structural distinction.
 
 ## Common Exam Questions
 

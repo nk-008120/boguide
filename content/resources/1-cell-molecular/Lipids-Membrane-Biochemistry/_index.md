@@ -12,28 +12,28 @@ syllabus_tags: ["IBO", "USABO", "biochemistry"]
 
 ## Overview
 
-Lipids are defined by a shared physical property (poor water solubility) rather than a shared chemical scaffold the way amino acids or sugars are — which is why "lipid" covers everything from triglycerides to cholesterol to signalling eicosanoids. This page covers the chemistry that matters for membrane structure specifically: fatty acid saturation, the amphipathic phospholipid, and why cholesterol has the paradoxical dual effect of both stiffening and fluidising membranes depending on temperature. [Plasma Membrane Structure & Transport](../plasma-membrane-structure-transport/) covers the resulting bilayer's transport behaviour; this page covers the chemistry underneath it.
+Lipids are defined by a shared physical property (poor water solubility) rather than a shared chemical scaffold the way amino acids or sugars are: which is why "lipid" covers everything from triglycerides to cholesterol to signalling eicosanoids. This page covers the chemistry that matters for membrane structure specifically: fatty acid saturation, the amphipathic phospholipid, and why cholesterol has the paradoxical dual effect of both stiffening and fluidising membranes depending on temperature. [Plasma Membrane Structure & Transport](../plasma-membrane-structure-transport/) covers the resulting bilayer's transport behaviour; this page covers the chemistry underneath it.
 
 ## Key Concepts
 
 ### Fatty acid structure and saturation
 
-A fatty acid is a long hydrocarbon chain terminating in a carboxylic acid group. **Saturated** fatty acids have no carbon-carbon double bonds, allowing the chain to lie fully extended and pack tightly against neighbouring chains via van der Waals interactions — this tight packing is why saturated fats are typically solid at room temperature. **Unsaturated** fatty acids contain one (monounsaturated) or more (polyunsaturated) C=C double bonds, almost always in the **cis** configuration in natural lipids, which introduces a rigid ~30° kink in the chain. That kink prevents tight packing, lowering the melting point — unsaturated fats are typically liquid at room temperature.
+A fatty acid is a long hydrocarbon chain terminating in a carboxylic acid group. **Saturated** fatty acids have no carbon-carbon double bonds, allowing the chain to lie fully extended and pack tightly against neighbouring chains via van der Waals interactions: this tight packing is why saturated fats are typically solid at room temperature. **Unsaturated** fatty acids contain one (monounsaturated) or more (polyunsaturated) C=C double bonds, almost always in the **cis** configuration in natural lipids, which introduces a rigid ~30° kink in the chain. That kink prevents tight packing, lowering the melting point — unsaturated fats are typically liquid at room temperature.
 
 ![Saturated stearic acid shown as a fully extended straight chain; unsaturated cis-oleic acid shown with a sharp kink at its single C=C double bond; unsaturated trans-oleic acid shown as a nearly straight chain despite also having one C=C double bond, illustrating that it is specifically the cis configuration, not unsaturation alone, that causes the packing-disrupting kink](/MCBBPICS/saturated-vs-unsaturated-fatty-acid.png)
 *Source: tutorchase.com*
 
 ### Triglycerides: pure energy storage
 
-A **triglyceride** (triacylglycerol) is glycerol esterified to three fatty acids. Because the molecule is almost entirely hydrocarbon by mass and carries no polar head group, triglycerides pack into anhydrous, extremely energy-dense storage droplets — roughly twice the energy density per gram of glycogen, which by contrast must be stored hydrated (each gram of glycogen holds substantial associated water), making fat the far more mass-efficient long-term reserve, at the cost of slower mobilisation kinetics than glycogen.
+A **triglyceride** (triacylglycerol) is glycerol esterified to three fatty acids. Because the molecule is almost entirely hydrocarbon by mass and carries no polar head group, triglycerides pack into anhydrous, extremely energy-dense storage droplets: roughly twice the energy density per gram of glycogen, which by contrast must be stored hydrated (each gram of glycogen holds substantial associated water), making fat the far more mass-efficient long-term reserve, at the cost of slower mobilisation kinetics than glycogen.
 
 ### Phospholipids: the amphipathic membrane building block
 
-A **phospholipid** replaces one fatty acid of a triglyceride-like backbone with a **phosphate-linked polar head group** (e.g. choline, serine, ethanolamine, inositol), producing a molecule with a hydrophilic head and two hydrophobic tails — **amphipathic**. In water, this amphipathicity drives spontaneous self-assembly into a **bilayer**: tails face inward, away from water; heads face outward, into the aqueous environment on both sides. This is not an energetically "designed" outcome so much as the thermodynamically favoured configuration — burying the hydrophobic tails minimises the disruption to water's hydrogen-bond network (the same hydrophobic-effect logic that drives protein tertiary-structure folding, see [Protein Structure, Folding & Function](../protein-structure-folding-function/)).
+A **phospholipid** replaces one fatty acid of a triglyceride-like backbone with a **phosphate-linked polar head group** (e.g. choline, serine, ethanolamine, inositol), producing a molecule with a hydrophilic head and two hydrophobic tails, **amphipathic**. In water, this amphipathicity drives spontaneous self-assembly into a **bilayer**: tails face inward, away from water; heads face outward, into the aqueous environment on both sides. This is not an energetically "designed" outcome so much as the thermodynamically favoured configuration: burying the hydrophobic tails minimises the disruption to water's hydrogen-bond network (the same hydrophobic-effect logic that drives protein tertiary-structure folding, see [Protein Structure, Folding & Function](../protein-structure-folding-function/)).
 
 **Head group identity determines membrane leaflet asymmetry and signalling function**, not just electrostatics — e.g. phosphatidylserine is normally kept on the cytoplasmic leaflet by ATP-dependent flippases, and its appearance on the *outer* leaflet is a recognised "eat me" signal for phagocytes during apoptosis (see [Cell Junctions, Extracellular Matrix & Cell Death](../cell-junctions-ecm-cell-death/)).
 
-![Phospholipid structure: a hydrophilic head made of a variable R group, phosphate, and glycerol backbone, connected to two hydrophobic fatty acid tails — one saturated (straight) and one unsaturated (kinked)](/MCBBPICS/phospholipid-structure-diagram.jpg)
+![Phospholipid structure: a hydrophilic head made of a variable R group, phosphate, and glycerol backbone, connected to two hydrophobic fatty acid tails, one saturated (straight) and one unsaturated (kinked)](/MCBBPICS/phospholipid-structure-diagram.jpg)
 *Source: bio.libretexts.org (Boundless Biology)*
 
 ### Cholesterol and membrane fluidity
@@ -45,7 +45,7 @@ Cholesterol is a rigid, planar four-ring sterol that intercalates between phosph
 
 Net effect: cholesterol acts as a **fluidity buffer**, narrowing the range of temperatures over which the membrane's physical state changes sharply — a frequently mis-simplified concept ("cholesterol makes membranes more fluid") that is only half correct.
 
-![Membrane fluidity vs. temperature for a membrane with and without cholesterol: without cholesterol (magenta), fluidity rises sharply through the phase-transition temperature Tm; with cholesterol (blue), the curve is flattened — less fluid than the cholesterol-free membrane above Tm, more fluid below Tm — illustrating cholesterol's bidirectional buffering effect](/MCBBPICS/cholesterol-membrane-fluidity.jpg)
+![Membrane fluidity vs. temperature for a membrane with and without cholesterol: without cholesterol (magenta), fluidity rises sharply through the phase-transition temperature Tm; with cholesterol (blue), the curve is flattened, less fluid than the cholesterol-free membrane above Tm, more fluid below Tm, illustrating cholesterol's bidirectional buffering effect](/MCBBPICS/cholesterol-membrane-fluidity.jpg)
 *Source: Chegg homework-help question*
 
 ![Molecular-level membrane order at two temperature regimes relative to the phospholipid melting temperature: with cholesterol present (red), phospholipid tails are held in a more uniformly ordered state at both T > melting T and T >>> melting T, compared to the more variably ordered/disordered arrangement without cholesterol, shown alongside fluorescent membrane-order probes (Laurdan, Patman) in their membrane-embedded vs. water-exposed states](/MCBBPICS/cholesterol-membrane-fluidity2.jpg)
@@ -53,7 +53,7 @@ Net effect: cholesterol acts as a **fluidity buffer**, narrowing the range of te
 
 ### Lipids as signalling molecules
 
-Not all lipid biology is structural. **Eicosanoids** (prostaglandins, thromboxanes, leukotrienes), derived from the membrane phospholipid-released fatty acid arachidonic acid via the cyclooxygenase (COX) and lipoxygenase pathways, act as short-range paracrine signals in inflammation, pain, and clotting — the pharmacological target of aspirin and other NSAIDs (irreversible/reversible COX inhibitors, respectively — see the irreversible-inhibition mechanism in [Enzyme Kinetics & Regulation](../enzyme-kinetics-regulation/)). **Steroid hormones** (derived from cholesterol) and **phosphoinositide second messengers** (e.g. IP₃/DAG, generated by PLC cleavage of PIP₂) extend lipid signalling into gene regulation and intracellular second-messenger cascades (see [Cell Signaling & Communication](../cell-signaling-communication/)).
+Not all lipid biology is structural. **Eicosanoids** (prostaglandins, thromboxanes, leukotrienes), derived from the membrane phospholipid-released fatty acid arachidonic acid via the cyclooxygenase (COX) and lipoxygenase pathways, act as short-range paracrine signals in inflammation, pain, and clotting: the pharmacological target of aspirin and other NSAIDs (irreversible/reversible COX inhibitors, respectively, see the irreversible-inhibition mechanism in [Enzyme Kinetics & Regulation](../enzyme-kinetics-regulation/)). **Steroid hormones** (derived from cholesterol) and **phosphoinositide second messengers** (e.g. IP₃/DAG, generated by PLC cleavage of PIP₂) extend lipid signalling into gene regulation and intracellular second-messenger cascades (see [Cell Signaling & Communication](../cell-signaling-communication/)).
 
 ## Comparative Structures
 
@@ -61,7 +61,7 @@ Not all lipid biology is structural. **Eicosanoids** (prostaglandins, thromboxan
 |---|---|---|---|
 | Saturated fatty acid / triglyceride | No | Energy storage | Tight packing, solid at room temp |
 | Unsaturated fatty acid / triglyceride | No | Energy storage | Kinked chain, loose packing, liquid at room temp |
-| Phospholipid | Yes | Membrane structure | Amphipathic — spontaneous bilayer self-assembly |
+| Phospholipid | Yes | Membrane structure | Amphipathic, spontaneous bilayer self-assembly |
 | Cholesterol | Minimal (single -OH) | Fluidity buffering | Intercalates between tails, bidirectional fluidity effect |
 | Eicosanoids/steroid hormones | Varies | Signalling | Small, diffusible, receptor- or membrane-permeable |
 

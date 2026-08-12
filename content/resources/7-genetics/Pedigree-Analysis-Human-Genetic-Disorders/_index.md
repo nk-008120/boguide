@@ -12,7 +12,7 @@ syllabus_tags: ["IBO", "USABO", "genetics", "transmission-genetics"]
 
 ## Overview
 
-Human geneticists cannot design controlled crosses the way Mendel could with pea plants — inheritance patterns in humans must instead be inferred from **pedigrees**, diagrams of trait transmission across a real family's generations. This page covers standard pedigree notation, the diagnostic logic for distinguishing the four classical Mendelian pedigree patterns (autosomal dominant, autosomal recessive, X-linked dominant, X-linked recessive) from each other, worked human-disorder examples of each, and the applied clinical tools — karyotyping, prenatal testing, genetic counseling — built on this analysis.
+Human geneticists cannot design controlled crosses the way Mendel could with pea plants; inheritance patterns in humans must instead be inferred from **pedigrees**, diagrams of trait transmission across a real family's generations. This page covers standard pedigree notation, the diagnostic logic for distinguishing the four classical Mendelian pedigree patterns (autosomal dominant, autosomal recessive, X-linked dominant, X-linked recessive) from each other, worked human-disorder examples of each, and the applied clinical tools — karyotyping, prenatal testing, genetic counseling — built on this analysis.
 
 ## Key Concepts
 
@@ -39,7 +39,7 @@ Signature pattern: the trait typically appears in **every generation** (no skipp
 
 ### Diagnosing X-linked recessive inheritance
 
-Signature pattern: affected males vastly outnumber affected females (since males are hemizygous, see [Sex Determination & Sex-Linked Inheritance](../sex-determination-sex-linked-inheritance/)); the trait never passes from an affected father to an affected son (no father-to-son transmission, since sons receive the father's Y, not X); daughters of an affected father are typically unaffected carriers; and a trait can appear to "skip" a generation via an unaffected carrier mother. **Hemophilia A** (Factor VIII deficiency, famously traced through European royal pedigrees descending from Queen Victoria) and **red-green color blindness** are standard examples. *(See the X-linked panel of the pedigree comparison image above for a general worked example; no Queen Victoria-specific pedigree was sourced — the general pattern was judged sufficient.)*
+Signature pattern: affected males vastly outnumber affected females (since males are hemizygous, see [Sex Determination & Sex-Linked Inheritance](../sex-determination-sex-linked-inheritance/)); the trait never passes from an affected father to an affected son (no father-to-son transmission, since sons receive the father's Y, not X); daughters of an affected father are typically unaffected carriers; and a trait can appear to "skip" a generation via an unaffected carrier mother. **Hemophilia A** (Factor VIII deficiency, famously traced through European royal pedigrees descending from Queen Victoria) and **red-green color blindness** are standard examples. *(See the X-linked panel of the pedigree comparison image above for a general worked example; no Queen Victoria-specific pedigree was sourced; the general pattern was judged sufficient.)*
 
 ### Diagnosing X-linked dominant inheritance
 
@@ -47,11 +47,11 @@ Signature pattern: affected fathers pass the trait to **all** their daughters bu
 
 ### Using probability with pedigrees
 
-Once a pedigree establishes the inheritance pattern and the genotypes of known individuals, the [product and sum rules](../mendelian-inheritance-probability/) apply directly to predict outcomes for future offspring or unresolved individuals — e.g. calculating the probability that a phenotypically unaffected individual with two heterozygous parents is a carrier (2/3, since the 1/4 homozygous-recessive class is excluded by the "unaffected" condition, leaving 1 AA : 2 Aa among the remaining 3 parts).
+Once a pedigree establishes the inheritance pattern and the genotypes of known individuals, the [product and sum rules](../mendelian-inheritance-probability/) apply directly to predict outcomes for future offspring or unresolved individuals, e.g. calculating the probability that a phenotypically unaffected individual with two heterozygous parents is a carrier (2/3, since the 1/4 homozygous-recessive class is excluded by the "unaffected" condition, leaving 1 AA : 2 Aa among the remaining 3 parts).
 
 ### Karyotyping, prenatal testing, and genetic counseling
 
-A **karyotype** — a photographed, size-and-banding-ordered display of an individual's full chromosome complement — is the direct diagnostic tool for the chromosome-*number* and chromosome-*structure* disorders covered in [Chromosomal Variation: Number & Structure](../chromosomal-variation-number-structure/) (trisomies, large deletions/translocations), complementing pedigree analysis, which infers single-gene inheritance patterns rather than visualizing chromosomes directly. **Prenatal testing** methods (amniocentesis, chorionic villus sampling) obtain fetal cells for karyotyping or targeted molecular testing; **genetic counseling** combines pedigree-derived recurrence-risk calculations with test results to inform reproductive decisions — the clinical endpoint that pedigree analysis and probability calculations together are built to support.
+A **karyotype**, a photographed, size-and-banding-ordered display of an individual's full chromosome complement, is the direct diagnostic tool for the chromosome-*number* and chromosome-*structure* disorders covered in [Chromosomal Variation: Number & Structure](../chromosomal-variation-number-structure/) (trisomies, large deletions/translocations), complementing pedigree analysis, which infers single-gene inheritance patterns rather than visualizing chromosomes directly. **Prenatal testing** methods (amniocentesis, chorionic villus sampling) obtain fetal cells for karyotyping or targeted molecular testing; **genetic counseling** combines pedigree-derived recurrence-risk calculations with test results to inform reproductive decisions, the clinical endpoint that pedigree analysis and probability calculations together are built to support.
 
 ![A normal human karyotype: 22 autosome pairs (1-22) ordered by size and banding pattern, plus the sex chromosome pair (XY or XX).](/GENETICSPICS/human-karyotype-normal-46-chromosomes-banded.jpeg)
 *Source: microbenotes.com*
@@ -67,9 +67,9 @@ A **karyotype** — a photographed, size-and-banding-ordered display of an indiv
 
 ## Common Exam Questions
 
-- The standard pedigree-diagnosis approach is elimination by signature: check first for father-to-son transmission (rules X-linked in/out), then check whether unaffected parents ever have affected children (distinguishes recessive from dominant) — don't just pattern-match on "looks dominant" without checking the specific transmission signatures above.
+- The standard pedigree-diagnosis approach is elimination by signature: check first for father-to-son transmission (rules X-linked in/out), then check whether unaffected parents ever have affected children (distinguishes recessive from dominant); don't just pattern-match on "looks dominant" without checking the specific transmission signatures above.
 - "An apparently-skipped generation in a dominant-looking pedigree" is a common trap testing whether a student considers **reduced penetrance** (see [Extensions of Mendelian Inheritance](../extensions-of-mendelian-inheritance/)) as an alternative to simply reclassifying the trait as recessive.
-- Carrier-probability questions (e.g. "given this unaffected individual has two heterozygous parents, what's the probability they're a carrier?") require conditioning on the "unaffected" observation, not just reading the raw 1:2:1 genotype ratio — a frequent computational trap.
+- Carrier-probability questions (e.g. "given this unaffected individual has two heterozygous parents, what's the probability they're a carrier?") require conditioning on the "unaffected" observation, not just reading the raw 1:2:1 genotype ratio, a frequent computational trap.
 - Distinguishing a **karyotype** (visualizes whole chromosomes, detects number/large structural changes) from a **pedigree** (infers single-gene transmission pattern from phenotype data across generations, detects nothing about chromosome structure directly) is a common conceptual-matching question.
 
 ## Visual Reference
@@ -89,7 +89,7 @@ A **karyotype** — a photographed, size-and-banding-ordered display of an indiv
 <details>
 <summary>Show answer</summary>
 
-**Autosomal recessive** is most consistent: both parents must be unaffected heterozygous carriers, and the trait skipping the grandparent generation while appearing in roughly equal sex ratio among the children fits this pattern. X-linked recessive can be ruled out specifically because an **affected daughter** requires her father to be affected (she must inherit a recessive allele on each of her two X chromosomes, one of which comes from her father) — since the father here is unaffected, the trait cannot be X-linked recessive.
+**Autosomal recessive** is most consistent: both parents must be unaffected heterozygous carriers, and the trait skipping the grandparent generation while appearing in roughly equal sex ratio among the children fits this pattern. X-linked recessive can be ruled out specifically because an **affected daughter** requires her father to be affected (she must inherit a recessive allele on each of her two X chromosomes, one of which comes from her father), since the father here is unaffected, the trait cannot be X-linked recessive.
 </details>
 
 **2.** A man with vitamin D-resistant rickets (X-linked dominant) has children with an unaffected woman. Predict the phenotype ratio among his sons and among his daughters, and explain the mechanism producing this pattern.

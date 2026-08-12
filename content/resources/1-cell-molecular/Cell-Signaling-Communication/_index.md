@@ -21,7 +21,7 @@ Cells constantly receive and interpret chemical signals from their environment a
 Every signaling pathway, regardless of specific molecular details, follows the same logical sequence:
 
 1. **Reception**: a signaling molecule (**ligand**) binds a specific **receptor**, either at the cell surface (for large or hydrophilic ligands unable to cross the plasma membrane) or intracellularly (for small hydrophobic ligands, e.g. steroid hormones, that diffuse directly across the membrane).
-2. **Transduction**: ligand binding triggers a series of molecular changes — often a relay of sequential protein modifications — that carries and typically **amplifies** the signal from the receptor into the cell interior.
+2. **Transduction**: ligand binding triggers a series of molecular changes, often a relay of sequential protein modifications, that carries and typically **amplifies** the signal from the receptor into the cell interior.
 3. **Response**: the transduced signal ultimately alters cell behaviour: activating/inhibiting an enzyme, opening a channel, or (very commonly) altering gene transcription via activation of a transcription factor (see [Gene Regulation: Eukaryotic & Epigenetics](../gene-regulation-eukaryotic-epigenetics/)).
 
 ### G-protein-coupled receptors (GPCRs)
@@ -70,7 +70,7 @@ Every activating step described above has a matched inactivating mechanism — G
 ## Common Exam Questions
 
 - "Explain how a single ligand-binding event produces a large, fast cellular response": the expected answer is the multiplicative amplification through the receptor → G-protein/second-messenger → kinase cascade, not simply "the signal travels into the cell."
-- "Why does a Ras mutant with impaired GTPase activity act as an oncogene?" — tests understanding that GTP hydrolysis is the *off* switch; losing it locks the pathway in a constitutively active state, mimicking permanent growth-factor stimulation.
+- "Why does a Ras mutant with impaired GTPase activity act as an oncogene?": tests understanding that GTP hydrolysis is the *off* switch; losing it locks the pathway in a constitutively active state, mimicking permanent growth-factor stimulation.
 - Distinguishing GPCR from RTK signaling by the type of receptor structure and the nature of the immediate post-binding event (G-protein activation vs. receptor dimerisation/autophosphorylation) is a frequent classification question.
 
 ## Visual Reference

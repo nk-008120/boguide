@@ -12,7 +12,7 @@ syllabus_tags: ["IBO", "USABO", "biochemistry"]
 
 ## Overview
 
-Most treatments of enzyme kinetics stop at one equation. This page goes further: it derives where the Michaelis-Menten equation comes from, what its two parameters actually mean mechanistically, and — the part that dominates real olympiad questions — how each of the four modes of reversible inhibition distorts those parameters differently. All four inhibition types are describable with a small, reusable algebraic toolkit once you understand where the α and α′ factors come from.
+Most treatments of enzyme kinetics stop at one equation. This page goes further: it derives where the Michaelis-Menten equation comes from, what its two parameters actually mean mechanistically, and (the part that dominates real olympiad questions) how each of the four modes of reversible inhibition distorts those parameters differently. All four inhibition types are describable with a small, reusable algebraic toolkit once you understand where the α and α′ factors come from.
 
 ## Key Concepts
 
@@ -24,10 +24,10 @@ $$ \text{E} + \text{S} \underset{k_{-1}}{\overset{k_1}{\rightleftharpoons}} \tex
 
 **Pre-steady-state kinetics** (milliseconds to seconds, [E] typically in excess, rapid mixing) probes the individual rate/equilibrium constants (k₁, k₋₁, k₂) directly, before the system reaches a stable intermediate concentration. This regime is out of syllabus depth for most olympiads but worth recognising by name.
 
-![Pre-steady-state and steady-state phases of an enzyme reaction — [S] falling, [P] rising, and [ES]/[E] reaching a stable plateau during the steady-state window](/MCBBPICS/kinetics_phases.png)
+![Pre-steady-state and steady-state phases of an enzyme reaction: [S] falling, [P] rising, and [ES]/[E] reaching a stable plateau during the steady-state window](/MCBBPICS/kinetics_phases.png)
 *The shaded region marks the brief pre-steady-state phase; steady state (d[ES]/dt = 0) is the much longer window steady-state kinetics actually measures. Source: unattributed, sourced pre-existing site asset.*
 
-**Steady-state kinetics** assumes the rate of ES *formation* equals its rate of *breakdown* — [ES] stays approximately constant even as [S] and [P] change:
+**Steady-state kinetics** assumes the rate of ES *formation* equals its rate of *breakdown*: [ES] stays approximately constant even as [S] and [P] change:
 
 $$ k_1([E_t] - [ES])[S] = k_{-1}[ES] + k_2[ES] $$
 
@@ -37,17 +37,17 @@ Solving for [ES] and substituting into rate = k₂[ES] yields the central result
 $$ V_0 = \frac{V_{max}[S]}{K_m + [S]} \qquad \text{(Michaelis-Menten equation)} $$
 {{< /eqbox >}}
 
-where $K_m = \dfrac{k_{-1} + k_2}{k_1}$. Note that if product release (k₂) is rate-limiting, $K_m = K_d = k_{-1}/k_1$ — i.e. $K_m$ collapses to the true substrate dissociation constant, and can be read directly as (an inverse measure of) binding affinity. This equivalence does *not* hold in general — only when k₂ is rate-limiting.
+where $K_m = \dfrac{k_{-1} + k_2}{k_1}$. Note that if product release (k₂) is rate-limiting, $K_m = K_d = k_{-1}/k_1$, i.e. $K_m$ collapses to the true substrate dissociation constant, and can be read directly as (an inverse measure of) binding affinity. This equivalence does *not* hold in general — only when k₂ is rate-limiting.
 
 ### V_max, k_cat, and the specificity constant
 
-$V_{max} = k_{cat}[E_t]$, where $k_{cat}$ (the **turnover number**) is the rate constant of the overall rate-limiting step — in the minimal scheme above, $k_{cat} = k_2$. For a three-step scheme $\text{E+S} \rightleftharpoons \text{ES} \rightleftharpoons \text{EP} \rightleftharpoons \text{E+P}$ with product release limiting, $k_{cat} = k_3$. $k_{cat}$ represents substrate molecules converted to product per unit time per enzyme molecule when the enzyme is fully saturated.
+$V_{max} = k_{cat}[E_t]$, where $k_{cat}$ (the **turnover number**) is the rate constant of the overall rate-limiting step: in the minimal scheme above, $k_{cat} = k_2$. For a three-step scheme $\text{E+S} \rightleftharpoons \text{ES} \rightleftharpoons \text{EP} \rightleftharpoons \text{E+P}$ with product release limiting, $k_{cat} = k_3$. $k_{cat}$ represents substrate molecules converted to product per unit time per enzyme molecule when the enzyme is fully saturated.
 
 At low [S] (specifically [S] ≪ $K_m$), the Michaelis-Menten equation reduces to:
 
 $$ V_0 = [E_t] \cdot [S] \cdot \frac{k_{cat}}{K_m} $$
 
-The ratio **k_cat/K_m**, the **specificity constant**, is the best single number for comparing catalytic efficiency across different enzymes or different substrates of the same enzyme — it is a second-order rate constant (units M⁻¹s⁻¹) describing the E + S → E + P conversion as a whole. There is a physical ceiling on this ratio: the **diffusion-controlled limit**, ~10⁸–10⁹ M⁻¹s⁻¹, set by how fast E and S can encounter each other in solution. Enzymes approaching this limit are said to have achieved **catalytic perfection** — they convert essentially every productive encounter into product.
+The ratio **k_cat/K_m**, the **specificity constant**, is the best single number for comparing catalytic efficiency across different enzymes or different substrates of the same enzyme: it is a second-order rate constant (units M⁻¹s⁻¹) describing the E + S → E + P conversion as a whole. There is a physical ceiling on this ratio: the **diffusion-controlled limit**, ~10⁸–10⁹ M⁻¹s⁻¹, set by how fast E and S can encounter each other in solution. Enzymes approaching this limit are said to have achieved **catalytic perfection** — they convert essentially every productive encounter into product.
 
 **Enzymes for which k꜀ₐₜ/Kₘ approaches the diffusion-controlled limit (10⁸–10⁹ M⁻¹s⁻¹):**
 
@@ -97,27 +97,27 @@ All four share the same underlying trick: expressing the new, "apparent" paramet
 ![Michaelis-Menten plots of all four reversible inhibition types side by side: competitive (Vmax same, Km up), uncompetitive (Vmax down, Km down), non-competitive (Vmax down, Km same), and mixed (Vmax down, Km up or down)](/MCBBPICS/inhibitionmm.png)
 *Seeing all four on the same v-vs-[S] axes makes the pattern easier to hold onto than the equations alone: watch which curves still reach the original Vmax (competitive, at high enough [S]) and which are capped below it (the other three). Source: unattributed, sourced pre-existing site asset.*
 
-**Competitive inhibition** — inhibitor binds free E only, at (or overlapping) the substrate site, so E and I compete directly:
+**Competitive inhibition**: inhibitor binds free E only, at (or overlapping) the substrate site, so E and I compete directly:
 
 $$ \text{E} + \text{I} \rightleftharpoons \text{EI} \qquad V_0 = \frac{V_{max}[S]}{K_m \cdot \alpha + [S]}, \quad \alpha = 1 + \frac{[I]}{K_I} $$
 
-Apparent $K_m' = K_m \cdot \alpha$ (increases — looks like *lower* substrate affinity); **$V_{max}$ is unchanged**, because enough substrate can always out-compete the inhibitor.
+Apparent $K_m' = K_m \cdot \alpha$ (increases, looks like *lower* substrate affinity); **$V_{max}$ is unchanged**, because enough substrate can always out-compete the inhibitor.
 
-*Derivation sketch*: mass balance $[E_t] = [E] + [ES] + [EI]$, with $[EI] = [E][I]/K_I$, substituted through the steady-state $[ES] = [E][S]/K_m$ relation, collapses to $V_0 = \dfrac{V_{max}[S]}{K_m(1+[I]/K_I) + [S]}$ — matching the boxed result above with $K_m^{app} = K_m\alpha$.
+*Derivation sketch*: mass balance $[E_t] = [E] + [ES] + [EI]$, with $[EI] = [E][I]/K_I$, substituted through the steady-state $[ES] = [E][S]/K_m$ relation, collapses to $V_0 = \dfrac{V_{max}[S]}{K_m(1+[I]/K_I) + [S]}$, matching the boxed result above with $K_m^{app} = K_m\alpha$.
 
 **Uncompetitive inhibition** — inhibitor binds only the ES complex, not free E:
 
 $$ \text{ES} + \text{I} \rightleftharpoons \text{EIS} \qquad K_m' = \frac{K_m}{\alpha'}, \quad V_{max}' = \frac{V_{max}}{\alpha'}, \quad \alpha' = 1 + \frac{[I]}{K_I'} $$
 
-Both parameters **decrease by the same factor** — because binding is blocked from converting to product, the apparent affinity increases (lower $K_m'$) even as maximum output falls.
+Both parameters **decrease by the same factor**, because binding is blocked from converting to product, the apparent affinity increases (lower $K_m'$) even as maximum output falls.
 
-**Noncompetitive inhibition** — inhibitor binds both E and ES with *equal* affinity (both reactions below occur, with the same $K_I$):
+**Noncompetitive inhibition**: inhibitor binds both E and ES with *equal* affinity (both reactions below occur, with the same $K_I$):
 
 $$ \text{E} + \text{I} \rightleftharpoons \text{EI}, \qquad \text{ES} + \text{I} \rightleftharpoons \text{EIS} $$
 
 Only $V_{max}$ decreases (by factor α); **$K_m$ is unchanged**, because inhibitor binding doesn't discriminate between free and substrate-bound enzyme.
 
-**Mixed inhibition** — the general case: inhibitor binds both E and ES, but with *different* affinities ($K_I \neq K_I'$). Both $K_m$ and $V_{max}$ change, and $K_m$ can move in either direction depending on which affinity dominates:
+**Mixed inhibition**, the general case: inhibitor binds both E and ES, but with *different* affinities ($K_I \neq K_I'$). Both $K_m$ and $V_{max}$ change, and $K_m$ can move in either direction depending on which affinity dominates:
 
 $$ K_m' = K_m \cdot \frac{\alpha}{\alpha'}, \qquad V_{max}' = \frac{V_{max}}{\alpha} $$
 
@@ -136,20 +136,20 @@ The fastest way to identify an inhibition type from data (a Lineweaver-Burk plot
 | Irreversible | E or ES, covalently | effectively ↑ (fewer active enzymes) | ↓ | — | — | — (behaves like a shrinking $[E_t]$, not a classic reversible signature) |
 
 ![Lineweaver-Burk plots of all four reversible inhibition types: competitive lines intersect on the y-axis, uncompetitive lines are parallel, non-competitive lines intersect on the x-axis, and mixed lines intersect off both axes](/MCBBPICS/lbcomp.png)
-*This is the figure to memorise for "identify the inhibition type from this plot" questions — the intersection point (or lack of one) alone distinguishes all four types, matching the LB columns of the table above exactly. Source: unattributed, sourced pre-existing site asset.*
+*This is the figure to memorise for "identify the inhibition type from this plot" questions: the intersection point (or lack of one) alone distinguishes all four types, matching the LB columns of the table above exactly. Source: unattributed, sourced pre-existing site asset.*
 
 ## Common Exam Questions
 
-- "Given this Lineweaver-Burk shift, identify the inhibition type" — read the *y-intercept and slope changes*, not just whether the line moved; competitive and noncompetitive both raise the slope but differ in whether the y-intercept moves.
+- "Given this Lineweaver-Burk shift, identify the inhibition type": read the *y-intercept and slope changes*, not just whether the line moved; competitive and noncompetitive both raise the slope but differ in whether the y-intercept moves.
 - "Does adding more substrate overcome this inhibitor?" — only for competitive inhibition (and, up to a point, mixed); never for pure noncompetitive or uncompetitive, since $V_{max}$ itself is capped lower.
 - Distinguishing **irreversible inhibition from noncompetitive inhibition when they produce the same final $K_m$/$V_{max}$ values** requires a kinetic (not just an endpoint) argument: dilution or dialysis restores activity for reversible noncompetitive inhibition but not for a covalently bound irreversible inhibitor.
-- "What does $k_{cat}/K_m$ near the diffusion limit imply?" — catalytic perfection, i.e. essentially every diffusion-limited encounter between E and S is productive.
+- "What does $k_{cat}/K_m$ near the diffusion limit imply?": catalytic perfection, i.e. essentially every diffusion-limited encounter between E and S is productive.
 
 ## Visual Reference
 
 **Interactive**
 
-- An interactive Michaelis-Menten/Lineweaver-Burk plot: sliders for $[I]$, $K_I$, $K_I'$, with a toggle between the four inhibition modes, redrawing both plots live — a natural upgrade from the static plots below, since the whole point of this topic is seeing how the curves *shift*.
+- An interactive Michaelis-Menten/Lineweaver-Burk plot: sliders for $[I]$, $K_I$, $K_I'$, with a toggle between the four inhibition modes, redrawing both plots live, a natural upgrade from the static plots below, since the whole point of this topic is seeing how the curves *shift*.
 
 {{< iframe src="/mm-lb-inhibition-explorer.html" title="MM/LB Inhibition Explorer" height="480px" >}}
 
@@ -164,7 +164,7 @@ The fastest way to identify an inhibition type from data (a Lineweaver-Burk plot
 <details>
 <summary>Show answer</summary>
 
-Dilute the enzyme-inhibitor mixture substantially, or dialyse away free/loosely-bound inhibitor, then reassay. Noncompetitive (reversible) inhibition is concentration-dependent and non-covalent, so activity recovers as $[I]_{effective}$ drops. Irreversible inhibition is covalent — the inhibited fraction of enzyme stays inhibited regardless of dilution, so activity does not recover proportionally; only newly synthesised, never-exposed enzyme contributes to any recovery.
+Dilute the enzyme-inhibitor mixture substantially, or dialyse away free/loosely-bound inhibitor, then reassay. Noncompetitive (reversible) inhibition is concentration-dependent and non-covalent, so activity recovers as $[I]_{effective}$ drops. Irreversible inhibition is covalent: the inhibited fraction of enzyme stays inhibited regardless of dilution, so activity does not recover proportionally; only newly synthesised, never-exposed enzyme contributes to any recovery.
 </details>
 
 **2.** An enzyme has $K_m = 20\ \mu M$ and $k_{cat} = 400\ s^{-1}$ in the absence of inhibitor. Adding a fixed concentration of a competitive inhibitor changes the apparent $K_m$ to $60\ \mu M$. What is $\alpha$, and what does it tell you about $[I]/K_I$ at this concentration?
@@ -172,7 +172,7 @@ Dilute the enzyme-inhibitor mixture substantially, or dialyse away free/loosely-
 <details>
 <summary>Show answer</summary>
 
-$\alpha = K_m^{app}/K_m = 60/20 = 3$. Since $\alpha = 1 + [I]/K_I$, this gives $[I]/K_I = 2$ — the inhibitor concentration is twice its own dissociation constant at this point.
+$\alpha = K_m^{app}/K_m = 60/20 = 3$. Since $\alpha = 1 + [I]/K_I$, this gives $[I]/K_I = 2$: the inhibitor concentration is twice its own dissociation constant at this point.
 </details>
 
 **3.** Sketch (conceptually) how the Lineweaver-Burk plot changes as increasing concentrations of a mixed inhibitor with $K_I \ll K_I'$ (much stronger binding to free E than to ES) are added. Which pure inhibition type does this mixed case approach in the limit?

@@ -12,7 +12,7 @@ syllabus_tags: ["IBO", "USABO", "cell-biology"]
 
 ## Overview
 
-The plasma membrane is a **selectively permeable** boundary — its job is not simply to enclose the cell but to control, in a highly specific and regulatable way, exactly what crosses it and in which direction. This page covers the structural model (fluid mosaic) underlying that selectivity, and the distinct physical/energetic logic behind each of the transport mechanisms cells use. The chemistry of the phospholipids and cholesterol described here is covered in full in [Lipids & Membrane Biochemistry](../lipids-membrane-biochemistry/); this page focuses on the resulting membrane's *functional* behaviour.
+The plasma membrane is a **selectively permeable** boundary: its job is not simply to enclose the cell but to control, in a highly specific and regulatable way, exactly what crosses it and in which direction. This page covers the structural model (fluid mosaic) underlying that selectivity, and the distinct physical/energetic logic behind each of the transport mechanisms cells use. The chemistry of the phospholipids and cholesterol described here is covered in full in [Lipids & Membrane Biochemistry](../lipids-membrane-biochemistry/); this page focuses on the resulting membrane's *functional* behaviour.
 
 ## Key Concepts
 
@@ -27,28 +27,28 @@ The **fluid mosaic model** (Singer & Nicolson, 1972) describes the membrane as a
 
 Membrane proteins are classified by how they associate with the bilayer:
 
-- **Integral membrane proteins** span or embed within the hydrophobic core, typically via one or more α-helical transmembrane domains built from hydrophobic residues (matching the bilayer's hydrophobic interior — see the hydrophobic-effect logic in [Protein Structure, Folding & Function](../protein-structure-folding-function/)). Removing them requires disrupting the bilayer itself (e.g. with a detergent — see [Biomolecular Analytical Techniques](../biomolecular-analytical-techniques/)).
+- **Integral membrane proteins** span or embed within the hydrophobic core, typically via one or more α-helical transmembrane domains built from hydrophobic residues (matching the bilayer's hydrophobic interior, see the hydrophobic-effect logic in [Protein Structure, Folding & Function](../protein-structure-folding-function/)). Removing them requires disrupting the bilayer itself (e.g. with a detergent, see [Biomolecular Analytical Techniques](../biomolecular-analytical-techniques/)).
 - **Peripheral membrane proteins** associate with the membrane surface via non-covalent interactions (ionic bonds, hydrogen bonds) with lipid head groups or integral proteins, and can be released by disrupting those interactions alone (e.g. high salt) without dissolving the bilayer.
 
 This structural distinction directly explains the practical extraction-method question addressed in [Biomolecular Analytical Techniques](../biomolecular-analytical-techniques/): integral proteins require detergent, peripheral proteins can often be released with salt alone.
 
 ### Simple diffusion
 
-Small, nonpolar, or very small polar molecules (O₂, CO₂, and to a limited extent water itself) can cross the lipid bilayer directly, moving **down their concentration gradient** with no protein assistance and no energy input — driven purely by random thermal motion and net movement toward equilibrium (entropy increase).
+Small, nonpolar, or very small polar molecules (O₂, CO₂, and to a limited extent water itself) can cross the lipid bilayer directly, moving **down their concentration gradient** with no protein assistance and no energy input: driven purely by random thermal motion and net movement toward equilibrium (entropy increase).
 
 ### Facilitated diffusion
 
-Larger or charged/polar solutes (glucose, ions) cannot cross the hydrophobic bilayer core directly and require a membrane transport protein, but still move **down** their concentration gradient and require **no direct energy input** — the protein simply provides a lower-energy path across the membrane. Two structural strategies:
+Larger or charged/polar solutes (glucose, ions) cannot cross the hydrophobic bilayer core directly and require a membrane transport protein, but still move **down** their concentration gradient and require **no direct energy input**: the protein simply provides a lower-energy path across the membrane. Two structural strategies:
 
 - **Channel proteins** form a continuous aqueous pore (e.g. ion channels, aquaporins for water) — generally faster than carriers, since no conformational cycling is required per molecule transported, but less able to couple transport to any other process.
-- **Carrier proteins** bind the solute, undergo a conformational change, and release it on the other side — slower per molecule than a channel, but this binding step is exactly what allows carriers to be coupled to secondary active transport (below).
+- **Carrier proteins** bind the solute, undergo a conformational change, and release it on the other side: slower per molecule than a channel, but this binding step is exactly what allows carriers to be coupled to secondary active transport (below).
 
 ### Active transport: primary and secondary
 
 Active transport moves solutes **against** their concentration gradient, which is thermodynamically unfavourable and therefore requires an energy input.
 
 - **Primary active transport** couples transport directly to a chemical energy source, almost always ATP hydrolysis (e.g. the Na⁺/K⁺-ATPase, which pumps 3 Na⁺ out and 2 K⁺ in per ATP hydrolysed, maintaining the steep Na⁺/K⁺ gradients essential for nerve/muscle excitability and, indirectly, for secondary active transport below).
-- **Secondary active transport (cotransport)** does not use ATP directly. Instead, it harnesses the electrochemical gradient of one solute (typically Na⁺, built up by a primary active transporter like the Na⁺/K⁺-ATPase) to drive a *second* solute against its own gradient, via a shared carrier protein. Two geometries: **symport** (both solutes move in the same direction, e.g. the intestinal Na⁺/glucose symporter, SGLT) and **antiport** (solutes move in opposite directions, e.g. the Na⁺/Ca²⁺ exchanger). The energetic logic: allowing Na⁺ to run back down its steep, ATP-built gradient releases enough free energy to pull the second solute uphill against its own gradient — the ATP cost was "spent" upstream, at the primary pump, not at the cotransporter itself.
+- **Secondary active transport (cotransport)** does not use ATP directly. Instead, it harnesses the electrochemical gradient of one solute (typically Na⁺, built up by a primary active transporter like the Na⁺/K⁺-ATPase) to drive a *second* solute against its own gradient, via a shared carrier protein. Two geometries: **symport** (both solutes move in the same direction, e.g. the intestinal Na⁺/glucose symporter, SGLT) and **antiport** (solutes move in opposite directions, e.g. the Na⁺/Ca²⁺ exchanger). The energetic logic: allowing Na⁺ to run back down its steep, ATP-built gradient releases enough free energy to pull the second solute uphill against its own gradient: the ATP cost was "spent" upstream, at the primary pump, not at the cotransporter itself.
 
 ![Active vs. passive transport side by side: primary active transport (ATPase uniport/cotransport, ATP hydrolysis driving low-to-high solute movement) and secondary active transport (antiport/symport, existing gradient driving one solute up against low-to-high movement) grouped under Active Transport; facilitated diffusion and simple diffusion (both high-to-low, no energy input) grouped under Passive Transport](/MCBBPICS/four-transport-mechanisms2.jpeg)
 *Source: ScienceDirect ("passive transport" topic page)*
@@ -58,7 +58,7 @@ Active transport moves solutes **against** their concentration gradient, which i
 
 ### Osmosis: water's special case
 
-**Osmosis** is the diffusion of water across a selectively permeable membrane, down *water's own* concentration gradient — which, practically, means water moves toward the side with **higher solute concentration** (lower water concentration). A cell in a **hypertonic** solution (higher external solute concentration) loses water and shrinks (crenation in animal cells, plasmolysis in plant cells); in a **hypotonic** solution, it gains water and swells (potentially lysing, in animal cells lacking a cell wall — plant cells instead build up **turgor pressure** against their cell wall, which is central to structural support in [Plant Anatomy](/resources/6-plant-anatomy/) and stomatal function in [Plant Physiology](/resources/5-plant-physiology/)). Aquaporins are channel proteins that greatly accelerate osmotic water flow without altering its thermodynamic direction.
+**Osmosis** is the diffusion of water across a selectively permeable membrane, down *water's own* concentration gradient, which, practically, means water moves toward the side with **higher solute concentration** (lower water concentration). A cell in a **hypertonic** solution (higher external solute concentration) loses water and shrinks (crenation in animal cells, plasmolysis in plant cells); in a **hypotonic** solution, it gains water and swells (potentially lysing, in animal cells lacking a cell wall, plant cells instead build up **turgor pressure** against their cell wall, which is central to structural support in [Plant Anatomy](/resources/6-plant-anatomy/) and stomatal function in [Plant Physiology](/resources/5-plant-physiology/)). Aquaporins are channel proteins that greatly accelerate osmotic water flow without altering its thermodynamic direction.
 
 ![Animal cell (red blood cell) and plant cell responses to hypotonic, isotonic, and hypertonic solutions: animal cells shown lysed, normal, and shriveled respectively; plant cells shown turgid (normal), flaccid, and plasmolyzed respectively, with water movement arrows and plasma membrane/cell wall labelled](/MCBBPICS/tonicity-plant-vs-animal-cell.png)
 *Source: iitianacademy.com*
@@ -76,9 +76,9 @@ Active transport moves solutes **against** their concentration gradient, which i
 
 ## Common Exam Questions
 
-- "Is this process active or passive?" — the single reliable test is whether the *net* movement is with or against the solute's own concentration gradient, not whether a protein is involved (facilitated diffusion uses a protein but is still passive).
+- "Is this process active or passive?": the single reliable test is whether the *net* movement is with or against the solute's own concentration gradient, not whether a protein is involved (facilitated diffusion uses a protein but is still passive).
 - "Why is secondary active transport considered active if it doesn't use ATP directly?" — because the *transported solute itself* still moves against its own gradient; the energy source (an existing electrochemical gradient) was built by ATP-dependent primary transport upstream, but is still ultimately ATP-derived.
-- Tonicity questions (hypertonic/hypotonic/isotonic) frequently combine with plant vs. animal cell context — know that plant cells resist lysis in hypotonic solutions via the cell wall (developing turgor pressure) where an equivalent animal cell would lyse.
+- Tonicity questions (hypertonic/hypotonic/isotonic) frequently combine with plant vs. animal cell context: know that plant cells resist lysis in hypotonic solutions via the cell wall (developing turgor pressure) where an equivalent animal cell would lyse.
 
 ## Visual Reference
 

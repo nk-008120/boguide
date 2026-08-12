@@ -60,7 +60,7 @@ Some alleles are **lethal** in the homozygous state, which distorts the expected
 
 Even a fully accounted-for genotype does not always guarantee a predictable phenotype:
 
-- **Penetrance** is the *proportion of individuals with a given genotype who show the phenotype at all* — a condition is **incompletely (reduced) penetrant** if some genotypically affected individuals show no phenotype whatsoever (e.g. certain dominant conditions "skip" an apparently unaffected carrier generation in a pedigree).
+- **Penetrance** is the *proportion of individuals with a given genotype who show the phenotype at all*: a condition is **incompletely (reduced) penetrant** if some genotypically affected individuals show no phenotype whatsoever (e.g. certain dominant conditions "skip" an apparently unaffected carrier generation in a pedigree).
 - **Expressivity** is the *degree or severity* of the phenotype among individuals who do express it — **variable expressivity** means affected individuals can range from mildly to severely affected despite carrying the identical genotype.
 
 ![Pedigree showing an apparently skipped generation: an affected woman's children (a son and daughter, both apparently unaffected) go on to have an affected grandchild, consistent with reduced penetrance in the middle generation rather than non-paternity or a pedigree error.](/GENETICSPICS/penetrance-expressivity-pedigree-skipped-generation.png)
@@ -82,7 +82,7 @@ The **norm of reaction** is the full range of phenotypes a single genotype can p
 
 ## Common Exam Questions
 
-- "Is this incomplete dominance or codominance?" — always check whether the heterozygote shows a *new blended* phenotype (incomplete dominance) or *both original phenotypes simultaneously and distinguishably* (codominance); a pink flower is blended, an AB blood type is both A and B markers present at once.
+- "Is this incomplete dominance or codominance?": always check whether the heterozygote shows a *new blended* phenotype (incomplete dominance) or *both original phenotypes simultaneously and distinguishably* (codominance); a pink flower is blended, an AB blood type is both A and B markers present at once.
 - A skewed ratio that's consistently missing one class (2:1 instead of 3:1, or a reduced total litter/brood size) should immediately suggest a **recessive lethal allele**, not a counting error or an exception to dominance.
 - "Why did an obviously affected parent have an apparently unaffected child who later has affected children of their own?" This tests recognition of **reduced penetrance**, not a mistaken pedigree or non-paternity.
 - ABO parentage-exclusion logic (a type-AB parent cannot have a type-O child; a type-O parent cannot have a type-AB child) is a frequent applied-genetics question; always reason from the *i* allele's strict recessiveness to both I^A and I^B.

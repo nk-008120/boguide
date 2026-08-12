@@ -10,8 +10,8 @@ Evolution is the mechanistic and historical layer underlying nearly every other 
 
 - **Foundations & Evidence** (2 pages): the independent lines of evidence for common descent, and the deep history of life from abiogenesis through the origin of the eukaryotic cell and multicellularity.
 - **Mechanisms of Change** (4 pages), the population-genetic toolkit: the Hardy-Weinberg null model, and the three real mechanisms (selection, drift/flow/mutation, and molecular-level neutral change) that move a population away from it.
-- **Speciation & Macroevolution** (3 pages) — how one lineage becomes two, the large-scale patterns visible only across many lineages and long timescales, and the developmental mechanisms that translate genetic change into body-plan change.
-- **Applied & Synthesis** (2 pages) — two case studies that apply the whole toolkit above: coevolution between interacting species, and the hominin fossil record.
+- **Speciation & Macroevolution** (3 pages): how one lineage becomes two, the large-scale patterns visible only across many lineages and long timescales, and the developmental mechanisms that translate genetic change into body-plan change.
+- **Applied & Synthesis** (2 pages), two case studies that apply the whole toolkit above: coevolution between interacting species, and the hominin fossil record.
 
 Start with [Evidence for Evolution](Evidence-for-Evolution/): it establishes the vocabulary (homology, vestigial structures, transitional forms) that every later page assumes.
 

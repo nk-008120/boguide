@@ -27,7 +27,7 @@
 
 	<meta itemprop="name" content="Population Genetics & Hardy-Weinberg Equilibrium">
 	<meta itemprop="description" content="Allele and genotype frequencies, the Hardy-Weinberg equation and its five underlying assumptions, and how deviation from Hardy-Weinberg equilibrium is used to detect that evolution is acting on a real population.">
-	<meta itemprop="wordCount" content="1316">
+	<meta itemprop="wordCount" content="1305">
 	<meta itemprop="image" content="http://localhost:1313/og-default.png">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:image" content="http://localhost:1313/og-default.png">
@@ -1882,19 +1882,19 @@
 </script>
 </p>
 <h2>Overview<span class="hx:absolute hx:-mt-20" id="overview"></span>
-    <a href="#overview" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Evolution, defined precisely at the population level, is a <strong>change in allele frequencies in a population over time</strong> — not a change in any single individual. This page introduces the mathematical baseline against which that change is measured: the <strong>Hardy-Weinberg equilibrium</strong>, a null model describing what allele and genotype frequencies would look like if no evolution were occurring at all. Every later mechanism page in this section — <a
+    <a href="#overview" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p>Evolution, defined precisely at the population level, is a <strong>change in allele frequencies in a population over time</strong>, not a change in any single individual. This page introduces the mathematical baseline against which that change is measured: the <strong>Hardy-Weinberg equilibrium</strong>, a null model describing what allele and genotype frequencies would look like if no evolution were occurring at all. Every later mechanism page in this section (<a
     href="../Natural-Selection-Modes-and-Fitness/">Natural Selection</a>, <a
-    href="../Genetic-Drift-Gene-Flow-and-Mutation/">Genetic Drift, Gene Flow &amp; Mutation</a> — is best understood as a specific, named way of violating one of this page&rsquo;s five assumptions, so the exam skill this page builds is less &ldquo;memorize the equation&rdquo; and more &ldquo;identify which assumption a described scenario violates.&rdquo;</p>
+    href="../Genetic-Drift-Gene-Flow-and-Mutation/">Genetic Drift, Gene Flow &amp; Mutation</a>) is best understood as a specific, named way of violating one of this page&rsquo;s five assumptions, so the exam skill this page builds is less &ldquo;memorize the equation&rdquo; and more &ldquo;identify which assumption a described scenario violates.&rdquo;</p>
 <h2>Key Concepts<span class="hx:absolute hx:-mt-20" id="key-concepts"></span>
     <a href="#key-concepts" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3>Allele and Genotype Frequencies<span class="hx:absolute hx:-mt-20" id="allele-and-genotype-frequencies"></span>
-    <a href="#allele-and-genotype-frequencies" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>For a single gene locus with two alleles (conventionally <strong>A</strong> dominant and <strong>a</strong> recessive), the <strong>allele frequency</strong> of A is denoted <strong>p</strong> and of a is denoted <strong>q</strong>, and because these are the only two alleles at the locus, $p + q = 1$. <strong>Genotype frequencies</strong> describe the proportion of each genotype (AA, Aa, aa) in the population, and are distinct from allele frequencies — a common source of exam error is treating the two as interchangeable. Allele frequencies are calculated by counting alleles, not individuals: in a population of $N$ individuals, there are $2N$ total alleles at the locus (each individual is diploid), and $p$ is the count of A alleles divided by $2N$.</p>
+    <a href="#allele-and-genotype-frequencies" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>For a single gene locus with two alleles (conventionally <strong>A</strong> dominant and <strong>a</strong> recessive), the <strong>allele frequency</strong> of A is denoted <strong>p</strong> and of a is denoted <strong>q</strong>, and because these are the only two alleles at the locus, $p + q = 1$. <strong>Genotype frequencies</strong> describe the proportion of each genotype (AA, Aa, aa) in the population, and are distinct from allele frequencies: a common source of exam error is treating the two as interchangeable. Allele frequencies are calculated by counting alleles, not individuals: in a population of $N$ individuals, there are $2N$ total alleles at the locus (each individual is diploid), and $p$ is the count of A alleles divided by $2N$.</p>
 <h3>The Hardy-Weinberg Equation<span class="hx:absolute hx:-mt-20" id="the-hardy-weinberg-equation"></span>
     <a href="#the-hardy-weinberg-equation" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>If a population is <strong>not evolving</strong> at a given locus, genotype frequencies are predicted directly from allele frequencies by simple probability (the chance of independently drawing two given alleles), giving the <strong>Hardy-Weinberg equation</strong>:</p>
 <div class="eq-box">
 $$p^2 + 2pq + q^2 = 1$$
 </div>
 
-<p>where $p^2$ is the predicted frequency of homozygous dominant (AA) individuals, $2pq$ is the predicted frequency of heterozygous (Aa) individuals (counting both the A-from-mother/a-from-father and a-from-mother/A-from-father combinations), and $q^2$ is the predicted frequency of homozygous recessive (aa) individuals. A population satisfying this equation, with allele and genotype frequencies remaining constant across generations, is said to be in <strong>Hardy-Weinberg equilibrium (HWE)</strong>. Critically, HWE is reached in a <em>single generation</em> of random mating given the assumptions below, regardless of the starting genotype frequencies — HWE describes an equilibrium <em>ratio</em>, not a claim that frequencies never change from an arbitrary starting point over multiple generations. (One notable exception worth flagging: this one-generation result assumes both sexes start at the <em>same</em> allele frequency; if male and female starting frequencies differ — as can happen at a newly arisen or sex-linked locus — equilibrium is instead approached gradually across several generations as the two sexes&rsquo; contributions average out, rather than reached immediately.)</p>
+<p>where $p^2$ is the predicted frequency of homozygous dominant (AA) individuals, $2pq$ is the predicted frequency of heterozygous (Aa) individuals (counting both the A-from-mother/a-from-father and a-from-mother/A-from-father combinations), and $q^2$ is the predicted frequency of homozygous recessive (aa) individuals. A population satisfying this equation, with allele and genotype frequencies remaining constant across generations, is said to be in <strong>Hardy-Weinberg equilibrium (HWE)</strong>. Critically, HWE is reached in a <em>single generation</em> of random mating given the assumptions below, regardless of the starting genotype frequencies: HWE describes an equilibrium <em>ratio</em>, not a claim that frequencies never change from an arbitrary starting point over multiple generations. (One notable exception worth flagging: this one-generation result assumes both sexes start at the <em>same</em> allele frequency; if male and female starting frequencies differ — as can happen at a newly arisen or sex-linked locus — equilibrium is instead approached gradually across several generations as the two sexes&rsquo; contributions average out, rather than reached immediately.)</p>
 <p><span class="content-image-frame">
     <img src="/EVOLUTIONPICS/hardy-weinberg-observed-vs-predicted.jpg" alt="Simulated approach to Hardy-Weinberg equilibrium across generations starting from unequal male and female allele frequencies (males start fixed for one allele, females for the other): (a) male and female A-allele frequencies oscillate and converge toward a shared ~0.33 equilibrium value over about 6 generations; (b) female genotype frequencies (AA, AB, BB) similarly oscillate before settling to stable equilibrium values — illustrating the multi-generation convergence case noted above, not the single-generation case for a locus that already starts at equal frequencies in both sexes"  data-zoomable loading="lazy" />
   </span>
@@ -1904,7 +1904,7 @@ $$p^2 + 2pq + q^2 = 1$$
   </span>
 <em>Source: user-provided (lumisource.io)</em></p>
 <h3>The Five Assumptions<span class="hx:absolute hx:-mt-20" id="the-five-assumptions"></span>
-    <a href="#the-five-assumptions" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>The Hardy-Weinberg equation only holds, and equilibrium is only maintained across generations, if all five of the following are true simultaneously — and each one being violated corresponds to a specific real evolutionary mechanism covered elsewhere in this section:</p>
+    <a href="#the-five-assumptions" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>The Hardy-Weinberg equation only holds, and equilibrium is only maintained across generations, if all five of the following are true simultaneously, and each one being violated corresponds to a specific real evolutionary mechanism covered elsewhere in this section:</p>
 <table>
 	<thead>
 			<tr>
@@ -1915,16 +1915,16 @@ $$p^2 + 2pq + q^2 = 1$$
 	<tbody>
 			<tr>
 					<td>No mutation</td>
-					<td>New alleles/allele conversion — see <a
+					<td>New alleles/allele conversion: see <a
     href="../Genetic-Drift-Gene-Flow-and-Mutation/">Genetic Drift, Gene Flow &amp; Mutation</a></td>
 			</tr>
 			<tr>
 					<td>No gene flow (migration)</td>
-					<td>Allele frequency change via migration — same page as above</td>
+					<td>Allele frequency change via migration: same page as above</td>
 			</tr>
 			<tr>
 					<td>Infinitely large population (no genetic drift)</td>
-					<td>Genetic drift — same page as above</td>
+					<td>Genetic drift: same page as above</td>
 			</tr>
 			<tr>
 					<td>Random mating</td>
@@ -1932,7 +1932,7 @@ $$p^2 + 2pq + q^2 = 1$$
 			</tr>
 			<tr>
 					<td>No natural selection</td>
-					<td>Differential survival/reproduction — see <a
+					<td>Differential survival/reproduction: see <a
     href="../Natural-Selection-Modes-and-Fitness/">Natural Selection: Modes &amp; Fitness</a></td>
 			</tr>
 	</tbody>
@@ -1945,7 +1945,7 @@ $$p^2 + 2pq + q^2 = 1$$
 <h3>Using Hardy-Weinberg to Detect Evolution<span class="hx:absolute hx:-mt-20" id="using-hardy-weinberg-to-detect-evolution"></span>
     <a href="#using-hardy-weinberg-to-detect-evolution" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Because HWE gives an exact quantitative prediction, it functions as a <strong>null hypothesis</strong>: real genotype frequencies are measured in a sampled population, compared against the HWE-predicted frequencies calculated from the same sample&rsquo;s observed allele frequencies, and a statistically significant deviation is evidence that one or more of the five assumptions is being violated — i.e., that evolution (or non-random mating) is actively occurring at that locus. This is a widely used real research technique, e.g. in medical genetics to screen for genotyping errors or selection at disease-associated loci, and a standard IBO/USABO calculation: given an observed count of each genotype, calculate $p$ and $q$ from the data, generate the HWE-predicted genotype counts, and compare.</p>
 <h3>A Worked Numerical Example<span class="hx:absolute hx:-mt-20" id="a-worked-numerical-example"></span>
-    <a href="#a-worked-numerical-example" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>A sample of 100 individuals is genotyped at a locus: 64 AA, 32 Aa, 4 aa. Allele frequency $p$ (for A) is calculated from total allele counts: $p = \frac{(64 \times 2) + 32}{200} = \frac{160}{200} = 0.8$, and $q = 1 - p = 0.2$. The HWE-predicted genotype frequencies are then $p^2 = 0.64$ (64 AA), $2pq = 2(0.8)(0.2) = 0.32$ (32 Aa), and $q^2 = 0.04$ (4 aa) — matching the observed counts exactly, so this particular sample is consistent with HWE at this locus. If the observed counts instead diverged substantially from these predicted values, that divergence itself would be the evidence that evolution (or non-random mating) is occurring.</p>
+    <a href="#a-worked-numerical-example" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>A sample of 100 individuals is genotyped at a locus: 64 AA, 32 Aa, 4 aa. Allele frequency $p$ (for A) is calculated from total allele counts: $p = \frac{(64 \times 2) + 32}{200} = \frac{160}{200} = 0.8$, and $q = 1 - p = 0.2$. The HWE-predicted genotype frequencies are then $p^2 = 0.64$ (64 AA), $2pq = 2(0.8)(0.2) = 0.32$ (32 Aa), and $q^2 = 0.04$ (4 aa), matching the observed counts exactly, so this particular sample is consistent with HWE at this locus. If the observed counts instead diverged substantially from these predicted values, that divergence itself would be the evidence that evolution (or non-random mating) is occurring.</p>
 <p><span class="content-image-frame">
     <img src="/EVOLUTIONPICS/hardy-weinberg-worked-example.jpg" alt="Worked Hardy-Weinberg example: a parent generation of 500 individuals (245 YY, 210 Yy, 45 yy) is converted to allele counts (700 Y, 300 y out of 1000 total alleles) giving p = 0.7 and q = 0.3, then a Punnett-square analysis computes p² = .49, 2pq = .42, and q² = .09 as the predicted frequencies of YY, Yy, and yy offspring"  data-zoomable loading="lazy" />
   </span>

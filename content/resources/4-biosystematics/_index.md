@@ -6,14 +6,14 @@ description: "Classification and phylogenetics for IBO/USABO: naming and ranking
 
 ## How this section is organized
 
-Biosystematics is the classification and relationship-inference layer sitting *above* the structural content in [Animal Anatomy](../2-animal-anatomy/) — it doesn't re-describe what a phylum or class looks like, it covers how taxa get named, how relationships between them are inferred and tested, and how the resulting classification is organized from domain down to species. The section runs in four tiers, each building on the last:
+Biosystematics is the classification and relationship-inference layer sitting *above* the structural content in [Animal Anatomy](../2-animal-anatomy/). It doesn't re-describe what a phylum or class looks like; it covers how taxa get named, how relationships between them are inferred and tested, and how the resulting classification is organized from domain down to species. The section runs in four tiers, each building on the last:
 
-- **Foundations** (2 pages) — the naming/ranking vocabulary and the competing definitions of "species" everything else assumes.
-- **Phylogenetics** (2 pages) — how relationships are actually inferred and tested, from morphological cladistics through to molecular sequence data.
-- **Classification Survey** (2 pages) — the resulting top-level classification of life, then a cross-reference tying named taxa back to the structural content already written in Animal Anatomy.
+- **Foundations** (2 pages): the naming/ranking vocabulary and the competing definitions of "species" everything else assumes.
+- **Phylogenetics** (2 pages), how relationships are actually inferred and tested, from morphological cladistics through to molecular sequence data.
+- **Classification Survey** (2 pages): the resulting top-level classification of life, then a cross-reference tying named taxa back to the structural content already written in Animal Anatomy.
 - **Practical** (1 page) — the applied identification-key skill IBO practical stations test directly.
 
-Start with [Classification Principles & Nomenclature](Classification-Principles-Nomenclature/) — every later page in this section assumes its ranking and naming vocabulary.
+Start with [Classification Principles & Nomenclature](Classification-Principles-Nomenclature/); every later page in this section assumes its ranking and naming vocabulary.
 
 {{< cards cols="1" >}}
   {{< card link="classification-principles-nomenclature/" title="1. Classification Principles & Nomenclature" subtitle="Taxonomic hierarchy, binomial nomenclature, type specimens, priority — read this first." >}}

@@ -1,7 +1,7 @@
 ---
 title: "✅ Ecology"
 weight: 1
-description: "IBO-level ecology guide: population dynamics, community ecology, ecosystems, biogeography, conservation biology, and global change — with worked examples, equations, and interactive resources."
+description: "IBO-level ecology guide: population dynamics, community ecology, ecosystems, biogeography, conservation biology, and global change, with worked examples, equations, and interactive resources."
 ---
 
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
@@ -15,7 +15,7 @@ description: "IBO-level ecology guide: population dynamics, community ecology, e
   };
 </script>
 
-<span class="badge-exploration">🌿Ecology</span> Ecology is one of the high weighted less effort requiring and most conceptually interconnected sections of the Olympiads. Questions routinely require you to **read and interpret graphs**, apply mathematical models, and synthesise across levels of organisation — from individuals to the biosphere. This guide is structured around those three demands.
+<span class="badge-exploration">🌿Ecology</span> Ecology is one of the high weighted less effort requiring and most conceptually interconnected sections of the Olympiads. Questions routinely require you to **read and interpret graphs**, apply mathematical models, and synthesise across levels of organisation, from individuals to the biosphere. This guide is structured around those three demands.
 
 **Official Syllabus reference:** [IBO Theoretical Syllabus – Ecology section]
 Organisms: Adaptations, physiological ecology, and stress responses.<br>Populations: Population dynamics, carrying capacity, and \(r\)- versus \(K\)-selection.<br>Biotic Communities: Interspecific interactions (\(+/+\) or \(+/-\)), niches, and biodiversity.<br>Ecosystems: Energy flow, trophic levels, nutrient cycles, and primary productivity.<br>Biosphere & Human Impact: Climate change, pollution, conservation biology, and sustainability.
@@ -27,9 +27,9 @@ Organisms: Adaptations, physiological ecology, and stress responses.<br>Populati
 
 Ecology is the scientific study of interactions between organisms and their environment. In ecology, questions span three distinct but overlapping skill levels:
 
-1. **Factual recall** — Although all olympiad problems are supposed to be non-extreme-knowledge dependent, ecology is a major part of the area which is indeed required to be memorised to a relatively bigger extent. Definitions, named processes, classic experiments (e.g. Gause's competitive exclusion, Connell's barnacle experiments)
-2. **Quantitative reasoning** — population growth equations, energy transfer calculations, diversity indices, graph interpretation
-3. **Synthesis** — linking mechanisms across levels (e.g. how eutrophication drives succession, or how island biogeography predicts conservation reserve design)
+1. **Factual recall**: Although all olympiad problems are supposed to be non-extreme-knowledge dependent, ecology is a major part of the area which is indeed required to be memorised to a relatively bigger extent. Definitions, named processes, classic experiments (e.g. Gause's competitive exclusion, Connell's barnacle experiments)
+2. **Quantitative reasoning**, population growth equations, energy transfer calculations, diversity indices, graph interpretation
+3. **Synthesis**: linking mechanisms across levels (e.g. how eutrophication drives succession, or how island biogeography predicts conservation reserve design)
 
 Give a visit to our <a href="#" onclick="switchToTabAndScroll(8, 'Vocabulary'); return false;">Vocabulary</a> If you are a complete beginner.
 
@@ -49,11 +49,11 @@ Each tab covers one level of organisation:
 
 ### Recommended external resources
 
-1. **Campbell Biology** (Chapters 52–56) — the standard reference text for ecology
-2. **[Khan Academy Ecology](https://www.khanacademy.org/science/ap-biology/ecology-ap)** — free, well-structured, covers most subtopics
-3. **[Crash Course Ecology playlist](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNdTKZkV_GiIYXpV9w4WxbX)** (12 videos, ~30 min total) — excellent for visual learners
-4. **[ESA Ecology 101](https://www.esa.org/education/resources/)** — Ecological Society of America free resources
-5. **PopEcol simulator** — [popeco.shinyapps.io/PopEcol](https://popeco.shinyapps.io/PopEcol/) — interactive logistic growth and Lotka-Volterra
+1. **Campbell Biology** (Chapters 52–56): the standard reference text for ecology
+2. **[Khan Academy Ecology](https://www.khanacademy.org/science/ap-biology/ecology-ap)**, free, well-structured, covers most subtopics
+3. **[Crash Course Ecology playlist](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNdTKZkV_GiIYXpV9w4WxbX)** (12 videos, ~30 min total), excellent for visual learners
+4. **[ESA Ecology 101](https://www.esa.org/education/resources/)**: Ecological Society of America free resources
+5. **PopEcol simulator** ([popeco.shinyapps.io/PopEcol](https://popeco.shinyapps.io/PopEcol/)) — interactive logistic growth and Lotka-Volterra
 6. For some non-routine interested explorers: <a href="https://www.youtube.com/@PrimerBlobs">**Primer Blobs**</a> A mesmerizing channel
 7. **Grade S Book - Ecological principles by Smith and Smith**
 
@@ -71,11 +71,11 @@ Four processes drive population size $N$:
 $$\frac{dN}{dt} = \text{Births} - \text{Deaths} + \text{Immigration} - \text{Emigration}$$
 
 Key descriptors:
-- **Density** — individuals per unit area or volume
-- **Dispersion** — spatial pattern: *clumped* (most common; social species, resource patches), *uniform* (territorial species; intraspecific competition), *random* (rare; independent individuals in homogeneous habitat)
+- **Density**: individuals per unit area or volume
+- **Dispersion**: spatial pattern: *clumped* (most common; social species, resource patches), *uniform* (territorial species; intraspecific competition), *random* (rare; independent individuals in homogeneous habitat)
 <img src="/ECOLOGYPICS/dispersions.png">
-- **Age structure** — proportions in each age class; predicts future growth direction
-- **Sex ratio** — affects reproductive output
+- **Age structure**: proportions in each age class; predicts future growth direction
+- **Sex ratio**: affects reproductive output
 
 ### Exponential (geometric) growth
 
@@ -512,7 +512,7 @@ The term $\left(\frac{K-N}{K}\right)$ is the **unused fraction of carrying capac
   })();
 </script>
 
-<span class="badge-custom">Important</span> Maximum growth rate occurs at $N = K/2$. This is the **maximum sustainable yield (MSY)** point — the population size that produces the greatest number of individuals per unit time, and thus the target for sustainable harvesting.
+<span class="badge-custom">Important</span> Maximum growth rate occurs at $N = K/2$. This is the **maximum sustainable yield (MSY)** point: the population size that produces the greatest number of individuals per unit time, and thus the target for sustainable harvesting.
 
 | $N$ relative to $K$ | Growth rate | Biological interpretation |
 |---|---|---|
@@ -525,8 +525,8 @@ The term $\left(\frac{K-N}{K}\right)$ is the **unused fraction of carrying capac
 
 **Density-dependent vs. density-independent factors:**
 
-- **Density-dependent:** effects intensify as $N$ increases — intraspecific competition for food/space, predation (if predators track prey density), disease, parasitism. These are the **regulating** factors that drive $N$ toward $K$.
-- **Density-independent:** effects are the same regardless of $N$ — temperature extremes, storms, fire. These cause fluctuations around the trajectory but do not set an equilibrium.
+- **Density-dependent:** effects intensify as $N$ increases, including intraspecific competition for food/space, predation (if predators track prey density), disease, and parasitism. These are the **regulating** factors that drive $N$ toward $K$.
+- **Density-independent:** effects are the same regardless of $N$, such as temperature extremes, storms, and fire. These cause fluctuations around the trajectory but do not set an equilibrium.
 
 ### Life tables and survivorship curves
 
@@ -567,7 +567,7 @@ A **life table** tabulates age-specific survival and fecundity:
 | Examples | Dandelions, insects, mice | Elephants, whales, humans |
 <br>
 
-<span class="badge-custom">Important</span> r/K selection is a continuum, not a binary. It is most useful as a framework for predicting a species' vulnerability to extinction: K-selected species (low $r$, few offspring) recover slowly from population crashes — this is why large mammals are disproportionately represented on the IUCN Red List.
+<span class="badge-custom">Important</span> r/K selection is a continuum, not a binary. It is most useful as a framework for predicting a species' vulnerability to extinction: K-selected species (low $r$, few offspring) recover slowly from population crashes, which is why large mammals are disproportionately represented on the IUCN Red List.
 <br>
 Here is a practice problem <br>
 <img src="/ECOLOGYPICS/rkpractice.png">
@@ -582,12 +582,12 @@ Here is a practice problem <br>
 
 ### Allee effects
 
-At very low population densities, per-capita growth rate *decreases* — the opposite of standard density dependence. Causes include:
+At very low population densities, per-capita growth rate *decreases*, the opposite of standard density dependence. Causes include:
 - Difficulty finding mates (obligate sexual reproducers)
 - Loss of cooperative defence (schooling fish, colonial nesters)
 - Inbreeding depression
 
-The **critical Allee threshold** $A$ is the population size below which growth becomes negative. If $N < A$, the population spirals to extinction regardless of $K$. This creates a **strong Allee effect** — an unstable equilibrium at $A$.
+The **critical Allee threshold** $A$ is the population size below which growth becomes negative. If $N < A$, the population spirals to extinction regardless of $K$. This creates a **strong Allee effect**: an unstable equilibrium at $A$.
 
 $$\frac{dN}{dt} = rN\left(\frac{N-A}{K}\right)\left(\frac{K-N}{K}\right) \quad \text{(simplified strong Allee model)}$$
 
@@ -603,7 +603,7 @@ where $c$ = colonisation rate and $e$ = local extinction rate. Equilibrium patch
 
 $$\hat{p} = 1 - \frac{e}{c}$$
 
-**Relevance:** Metapopulation theory underlies habitat corridor design in conservation — connecting fragments reduces $e$ and increases $c$, raising $\hat{p}$.
+**Relevance:** Metapopulation theory underlies habitat corridor design in conservation: connecting fragments reduces $e$ and increases $c$, raising $\hat{p}$.
 
 {{< /tab >}}
 
@@ -633,13 +633,13 @@ What is the difference in symbiosis and mutualism?
 </details>
 ### Competition
 
-**The competitive exclusion principle** (Gause, 1934): two species competing for identical resources cannot coexist indefinitely at equilibrium — the superior competitor will exclude the other.
+**The competitive exclusion principle** (Gause, 1934): two species competing for identical resources cannot coexist indefinitely at equilibrium; the superior competitor will exclude the other.
 
 **Evidence:** Gause's *Paramecium* experiments. *P. aurelia* and *P. caudatum* each grew well alone (logistic). In mixed culture, *P. aurelia* consistently drove *P. caudatum* to extinction.
 <br>
 <img src="/ECOLOGYPICS/gausecomp.png">
 <br>
-**Resource partitioning and character displacement:** Competing species that coexist must partition resources — by microhabitat, food size, foraging time, or other niche axis. When two species compete, natural selection favours divergence in the traits that drive competition — **character displacement**. Classic example: Darwin's finch beak sizes on islands with vs. without competitors.
+**Resource partitioning and character displacement:** Competing species that coexist must partition resources, whether by microhabitat, food size, foraging time, or other niche axis. When two species compete, natural selection favours divergence in the traits that drive competition, a process called **character displacement**. Classic example: Darwin's finch beak sizes on islands with vs. without competitors.
 
 <!-- RESOURCE: RESOLVED. -->
 <span class="badge-custom"><a href="#" onclick="switchToTabAndScroll(8, 'lotkacomp'); return false;">Explore! (Time required)</a></span>
@@ -657,7 +657,7 @@ Cryptic colouration (camouflage),aposematism (warning colouration: bright colour
 <br>
 <span class="badge-custom"><a href="#" onclick="switchToTabAndScroll(8, 'lotkapred'); return false;">Explore! (Time required)</a></span>
 
-<span class="badge-custom">Important</span> Real predator-prey cycles are well-documented in the **lynx-snowshoe hare** system (Hudson's Bay Company fur records, 1845–1935). Both populations cycle with ~10-year period. However, subsequent experiments showed the cycle has multiple drivers: hare food limitation AND predation both contribute — a crucial correction to the naive Lotka-Volterra model.
+<span class="badge-custom">Important</span> Real predator-prey cycles are well-documented in the **lynx-snowshoe hare** system (Hudson's Bay Company fur records, 1845–1935). Both populations cycle with ~10-year period. However, subsequent experiments showed the cycle has multiple drivers: hare food limitation AND predation both contribute, a crucial correction to the naive Lotka-Volterra model.
 
 ![Hudson Bay](/ECOLOGYPICS/hudsonbay.png)
 
@@ -669,8 +669,8 @@ A **keystone species** has a disproportionately large effect on its community re
 **Classic example — Paine's sea star experiment (1966):** Removal of *Pisaster ochraceus* (sea star) from rocky intertidal led to domination by *Mytilus californianus* (mussel), reducing species richness from 15 to 8. The sea star was a keystone predator controlling mussel abundance.
 <img src="/ECOLOGYPICS/seastar.png">
 **Other keystone types:**
-- **Ecosystem engineers** — beavers (dam construction creates wetland habitat), elephants (create forest gaps, maintain savanna)
-- **Keystone mutualists** — fig trees (year-round fruit provision supports diverse frugivores in tropical forests)
+- **Ecosystem engineers**: beavers (dam construction creates wetland habitat), elephants (create forest gaps, maintain savanna)
+- **Keystone mutualists**: fig trees (year-round fruit provision supports diverse frugivores in tropical forests)
 
 ### Ecological succession
 
@@ -682,9 +682,9 @@ A **keystone species** has a disproportionately large effect on its community re
 Annual weeds (year 1–2) → perennial grasses and forbs (2–5 yr) → shrubs (5–15 yr) → early successional trees (15–50 yr) → climax forest (50–100+ yr)
 
 **Mechanisms:**
-- **Facilitation** — early species modify environment to favour later species (most common in primary succession)
-- **Tolerance** — all species can establish early; slow-growing late-successional species simply outlast fast-growing early ones
-- **Inhibition** — established species inhibit newcomers; succession proceeds only when disturbance removes dominants
+- **Facilitation**: early species modify environment to favour later species (most common in primary succession)
+- **Tolerance**, all species can establish early; slow-growing late-successional species simply outlast fast-growing early ones
+- **Inhibition**: established species inhibit newcomers; succession proceeds only when disturbance removes dominants
 
 <span class="badge-custom">Worked Example</span>
 <img src="/ECOLOGYPICS/successionq1.png">
@@ -709,7 +709,7 @@ Since spiders consume both herbivores and detritivores, the decreasing pattern o
 
 
 
-<span class="badge-custom">Important</span> The **climax community** concept (stable, self-replacing endpoint) is now contested. Modern view: communities are rarely at equilibrium; the **intermediate disturbance hypothesis (IDH)** proposes that diversity is maximised at intermediate disturbance frequency and intensity — high enough to prevent competitive exclusion, low enough to prevent elimination of all but the most tolerant species.
+<span class="badge-custom">Important</span> The **climax community** concept (stable, self-replacing endpoint) is now contested. Modern view: communities are rarely at equilibrium; the **intermediate disturbance hypothesis (IDH)** proposes that diversity is maximised at intermediate disturbance frequency and intensity: high enough to prevent competitive exclusion, low enough to prevent elimination of all but the most tolerant species.
 <img src="/ECOLOGYPICS/successions.png">
 <!-- RESOURCE: Insert an IDH parabola graph: x-axis = disturbance frequency/intensity (low to high), y-axis = species diversity. Peak at intermediate disturbance. Label the three zones: "competitive exclusion dominates" (left), "maximum diversity" (middle), "only disturbance-tolerant species" (right). -->
 
@@ -823,7 +823,7 @@ If a toxin is at $1\ \mu g\ kg^{-1}$ in phytoplankton, and trophic efficiency is
 Carbon moves between four major reservoirs: **atmosphere** (~830 Pg C), **terrestrial biosphere** (~2000 Pg C including soil), **ocean** (~38,000 Pg C), **lithosphere/sediments** (~80,000,000 Pg C).
 
 Key fluxes:
-- **Photosynthesis:** $\text{CO}_2 + \text{H}_2\text{O} \xrightarrow{\text{light}} \text{CH}_2\text{O} + \text{O}_2$ — removes ~120 Pg C yr⁻¹ from atmosphere
+- **Photosynthesis:** $\text{CO}_2 + \text{H}_2\text{O} \xrightarrow{\text{light}} \text{CH}_2\text{O} + \text{O}_2$, removes ~120 Pg C yr⁻¹ from atmosphere
 - **Respiration** (all organisms): returns ~120 Pg C yr⁻¹ to atmosphere
 - **Fossil fuel combustion:** ~10 Pg C yr⁻¹ anthropogenic addition
 - **Ocean uptake:** ~2–3 Pg C yr⁻¹ net sink; driven by biological pump and solubility pump
@@ -860,7 +860,7 @@ Human additions via **fertiliser runoff** and **sewage** bypass the weathering b
 {{< tab name="Biogeography" >}}
 ## Biogeography
 
-Biogeography studies the geographic distribution of species and communities — why organisms are where they are.
+Biogeography studies the geographic distribution of species and communities: why organisms are where they are.
 
 ### Island biogeography theory
 
@@ -911,7 +911,7 @@ Species richness increases from poles to tropics in virtually all well-studied g
 | **Area hypothesis** | Tropical biomes cover large contiguous area → lower extinction, more speciation by allopatry | |
 | **Biotic interactions** | More intense competition/predation in tropics → more specialisation → more niches | Herbivory and parasitism more intense in tropics |
 
-<span class="badge-custom">Important</span> No single hypothesis fully explains the LDG — the current consensus is that it is **multicausal**. Olympiad questions often ask you to evaluate evidence for and against specific hypotheses using provided data.
+<span class="badge-custom">Important</span> No single hypothesis fully explains the LDG; the current consensus is that it is **multicausal**. Olympiad questions often ask you to evaluate evidence for and against specific hypotheses using provided data.
 
 ### Biomes
 
@@ -929,7 +929,7 @@ A **biome** is a large-scale terrestrial ecosystem defined primarily by climate 
 | Boreal forest (taiga) | −5 to 5 | 300–900 | Conifers; short growing season; permafrost |
 | Tundra | −15 to 5 | 150–400 | Permafrost; low NPP; migratory birds |
 
-**Whittaker's biome diagram:** Biomes can be mapped on a temperature × precipitation space. This is a fundamental graph — you must be able to read off which biome corresponds to a given climate.
+**Whittaker's biome diagram:** Biomes can be mapped on a temperature × precipitation space. This is a fundamental graph, and you must be able to read off which biome corresponds to a given climate.
 <img src="/ECOLOGYPICS/whittaker.png">
 <!-- RESOURCE: Insert a Whittaker biome diagram (climate diagram). x-axis: mean annual temperature (°C, −15 to 30). y-axis: mean annual precipitation (mm, 0 to 4000). Shade/colour-coded regions for each biome. This is one of the most IBO-tested ecology diagrams. -->
 
@@ -938,7 +938,7 @@ A **biome** is a large-scale terrestrial ecosystem defined primarily by climate 
 {{< tab name="Conservation Biology" >}}
 ## Conservation biology
 
-Conservation biology applies ecological principles to prevent biodiversity loss. It is explicitly a **crisis discipline** — time-pressured and value-laden.
+Conservation biology applies ecological principles to prevent biodiversity loss. It is explicitly a **crisis discipline**: time-pressured and value-laden.
 
 ### Why biodiversity matters
 
@@ -955,7 +955,7 @@ Conservation biology applies ecological principles to prevent biodiversity loss.
 - Increases ecosystem stability (resistance and resilience to disturbance)
 - Reduces susceptibility to invasion
 
-Classic evidence: **Tilman's grassland biodiversity experiments** — plots with more grass species had higher and more stable biomass production than monocultures, even across drought years.
+Classic evidence: **Tilman's grassland biodiversity experiments** found that plots with more grass species had higher and more stable biomass production than monocultures, even across drought years.
 
 ### Threats to biodiversity — HIPPO
 
@@ -973,7 +973,7 @@ The main drivers of biodiversity loss can be remembered as **HIPPO** (in approxi
 
 ### Habitat fragmentation
 
-Fragmentation is more than just habitat loss — it transforms continuous habitat into isolated patches with:
+Fragmentation is more than just habitat loss; it transforms continuous habitat into isolated patches with:
 - **Increased edge-to-interior ratio:** edge habitat has different microclimate (wind, light, temperature, humidity), facilitates nest parasitism (cowbirds in forest fragments), and allows predator penetration
 - **Reduced patch area:** fewer individuals per patch → higher extinction probability (island biogeography)
 - **Increased isolation:** reduced immigration between patches → lower colonisation rate, inbreeding
@@ -998,13 +998,13 @@ Fragmentation is more than just habitat loss — it transforms continuous habita
 **Worked example:** A population has 80 males and 20 females.
 $$N_e = \frac{4 \times 80 \times 20}{80 + 20} = \frac{6400}{100} = 64$$
 
-Despite a census size of 100, $N_e = 64$ — below the 500 threshold for long-term viability.
+Despite a census size of 100, $N_e = 64$, below the 500 threshold for long-term viability.
 <img src="/ECOLOGYPICS/pvag.png">
 <!-- RESOURCE: Insert a PVA extinction probability graph. x-axis: initial population size (0–200). y-axis: probability of extinction within 100 years (0–1). Sigmoid curve decreasing from 1.0 at small N to ~0 at large N. Mark MVP (e.g. 50) where extinction probability = 0.05. -->
 
 ### Reserve design principles (SLOSS debate)
 
-**SLOSS:** Single Large Or Several Small — should conservation resources be directed to one large reserve or many small ones?
+**SLOSS:** Single Large Or Several Small. Should conservation resources be directed to one large reserve or many small ones?
 
 | Criterion | Single large | Several small |
 |-----------|-------------|--------------|
@@ -1013,11 +1013,11 @@ Despite a census size of 100, $N_e = 64$ — below the 500 threshold for long-te
 | Catastrophic events | Vulnerable (all eggs in one basket) | More resilient |
 | Connectivity | N/A | Corridors can link patches |
 
-**Modern consensus:** The debate is largely resolved — large reserves are preferable when possible, supplemented by corridors and buffer zones. The IUCN recommends a **systematic conservation planning** approach (Marxan algorithm) that maximises representation of biodiversity features within a given budget.
+**Modern consensus:** The debate is largely resolved: large reserves are preferable when possible, supplemented by corridors and buffer zones. The IUCN recommends a **systematic conservation planning** approach (Marxan algorithm) that maximises representation of biodiversity features within a given budget.
 
 ### Extinction debt
 
-After habitat is reduced below a threshold, species do not go extinct immediately — they persist as "the living dead" until their last individuals die. The **extinction debt** is the number of species committed to future extinction by past habitat loss, even if no further destruction occurs.
+After habitat is reduced below a threshold, species do not go extinct immediately; they persist as "the living dead" until their last individuals die. The **extinction debt** is the number of species committed to future extinction by past habitat loss, even if no further destruction occurs.
 
 **Implication:** Even if deforestation stopped today, species richness in tropical fragments would continue to decline for decades to centuries as populations dwindle to zero. This makes the true cost of past habitat loss invisible in current biodiversity counts.
 
@@ -1034,19 +1034,19 @@ Human activities are now the dominant force shaping Earth's biota. This section 
 
 **Ecological consequences:**
 
-**Phenological shifts** — timing of biological events (migration, flowering, breeding) is advancing. In Europe, spring events have shifted ~2.8 days earlier per decade. **Trophic mismatch:** if predator and prey (or plant and pollinator) respond to different environmental cues, phenological decoupling can occur. Classic example: **great tit (*Parus major*) and winter moth caterpillar** in the Netherlands — caterpillar peak advances faster with spring warming than great tit clutch timing, causing nutritional mismatch for chicks.
+**Phenological shifts**: timing of biological events (migration, flowering, breeding) is advancing. In Europe, spring events have shifted ~2.8 days earlier per decade. **Trophic mismatch:** if predator and prey (or plant and pollinator) respond to different environmental cues, phenological decoupling can occur. Classic example: **great tit (*Parus major*) and winter moth caterpillar** in the Netherlands, where caterpillar peak advances faster with spring warming than great tit clutch timing, causing nutritional mismatch for chicks.
 
-**Range shifts** — species distributions are tracking suitable climate poleward and to higher elevations. Global average: ~17 km poleward per decade; ~11 m upslope per decade. Species that cannot track climate (habitat fragmentation, physiological constraints) face extinction.
+**Range shifts**: species distributions are tracking suitable climate poleward and to higher elevations. Global average: ~17 km poleward per decade; ~11 m upslope per decade. Species that cannot track climate (habitat fragmentation, physiological constraints) face extinction.
 
 **Coral bleaching** — elevated sea surface temperature (even +1°C above average for >4 weeks) triggers expulsion of zooxanthellae (symbiotic dinoflagellates) from coral tissue. Without zooxanthellae, coral loses its colour (bleaches) and carbon source. **1998 El Niño** bleached ~16% of world's corals; the **2016 event** bleached >50% of the Great Barrier Reef. With 2°C warming, >99% of coral reefs are projected to bleach annually.
 <img src="/ECOLOGYPICS/sst.png">
 <!-- RESOURCE: Insert a sea surface temperature anomaly graph for coral bleaching events. x-axis: year (1980–2023). y-axis: SST anomaly (°C relative to 1961–1990 mean). Line graph with horizontal dashed line at bleaching threshold (+1°C above summer mean). Shade bleaching events (1998, 2002, 2016, 2020) in red. -->
 
-**Ocean acidification** — CO₂ dissolves in seawater:
+**Ocean acidification**: CO₂ dissolves in seawater:
 
 $$\text{CO}_2 + \text{H}_2\text{O} \rightleftharpoons \text{H}_2\text{CO}_3 \rightleftharpoons \text{H}^+ + \text{HCO}_3^- \rightleftharpoons 2\text{H}^+ + \text{CO}_3^{2-}$$
 
-Ocean pH has fallen from ~8.2 to ~8.1 since industrialisation (0.1 pH unit = ~26% increase in [H⁺]). Lower [CO₃²⁻] inhibits calcification in corals, molluscs, echinoderms, and coccolithophores. Below the **aragonite saturation horizon** (rising in cold polar oceans), shell dissolution exceeds formation — **pteropods** (sea butterflies) already show shell dissolution in parts of the Southern Ocean.
+Ocean pH has fallen from ~8.2 to ~8.1 since industrialisation (0.1 pH unit = ~26% increase in [H⁺]). Lower [CO₃²⁻] inhibits calcification in corals, molluscs, echinoderms, and coccolithophores. Below the **aragonite saturation horizon** (rising in cold polar oceans), shell dissolution exceeds formation. **Pteropods** (sea butterflies) already show shell dissolution in parts of the Southern Ocean.
 
 ### Biodiversity crisis
 
@@ -1079,11 +1079,11 @@ Ocean pH has fallen from ~8.2 to ~8.1 since industrialisation (0.1 pH unit = ~26
 An **invasive species** is a non-native species that establishes, spreads, and causes ecological or economic harm.
 
 Mechanisms of harm:
-- **Direct predation/herbivory on naïve prey** — prey without evolutionary history with the predator lack anti-predator behaviours. Example: brown tree snake on Guam eliminated 9 of 12 native forest bird species within 30 years.
-- **Competitive displacement** — superior competitor displaces native species. Example: American grey squirrel displaces European red squirrel via competition and parapoxvirus transmission.
-- **Hybridisation** — genetic swamping of native species. Example: ruddy duck hybridises with endangered white-headed duck in Spain.
-- **Disease introduction** — chytrid fungus (*Batrachochytrium dendrobatidis*, Bd) has driven >200 amphibian species to extinction or severe decline.
-- **Ecosystem engineering** — alters habitat structure. Example: zebra mussels filter-feed so intensively they clarify water, shifting phytoplankton and benthic communities.
+- **Direct predation/herbivory on naïve prey**: prey without evolutionary history with the predator lack anti-predator behaviours. Example: brown tree snake on Guam eliminated 9 of 12 native forest bird species within 30 years.
+- **Competitive displacement**: superior competitor displaces native species. Example: American grey squirrel displaces European red squirrel via competition and parapoxvirus transmission.
+- **Hybridisation**, genetic swamping of native species. Example: ruddy duck hybridises with endangered white-headed duck in Spain.
+- **Disease introduction**: chytrid fungus (*Batrachochytrium dendrobatidis*, Bd) has driven >200 amphibian species to extinction or severe decline.
+- **Ecosystem engineering**, alters habitat structure. Example: zebra mussels filter-feed so intensively they clarify water, shifting phytoplankton and benthic communities.
 
 ### Tipping points and regime shifts
 
@@ -1093,13 +1093,13 @@ A **tipping point** (critical transition) is a threshold at which a small pertur
 - **Clear-water state:** macrophytes stabilise sediment, maintain water clarity, support diverse fauna
 - **Turbid state:** phytoplankton dominates, shades macrophytes, sediment resuspended
 
-Transition is triggered when P loading exceeds the critical threshold. **Hysteresis** means the system does not return to clear-water state when P is merely reduced to the original loading — P must be reduced well below the original threshold. This makes recovery far more costly than prevention.
+Transition is triggered when P loading exceeds the critical threshold. **Hysteresis** means the system does not return to clear-water state when P is merely reduced to the original loading; P must be reduced well below the original threshold. This makes recovery far more costly than prevention.
 
 <!-- RESOURCE: Insert a regime shift ball-and-cup diagram. Two panels side by side. Left: "clear lake" — ball in left basin. Right: "turbid lake" — ball in right basin. Show the tipping point as the unstable equilibrium between basins. Below: a bifurcation diagram with P loading on x-axis, lake turbidity on y-axis, showing the hysteresis loop (forward and backward transitions occur at different P levels). -->
 
 ### Planetary boundaries
 
-Rockström et al. (2009, updated 2023) proposed **nine planetary boundaries** — safe operating spaces for humanity. The following are most ecologically relevant:
+Rockström et al. (2009, updated 2023) proposed **nine planetary boundaries**: safe operating spaces for humanity. The following are most ecologically relevant:
 
 | Boundary | Pre-industrial | Current | Boundary value | Status |
 |----------|--------------|---------|---------------|--------|
@@ -1200,7 +1200,7 @@ A study tracked 47 phenological events (first flowering, first egg-laying, etc.)
 (a) $dN/dt = rN(K-N)/K = 0.18 \times 200 \times (800-200)/800 = 0.18 \times 200 \times 0.75 = \mathbf{27\ \text{deer yr}^{-1}}$<br>
 (b) Maximum at $N = K/2 = 400$. Rate $= rK/4 = 0.18 \times 800/4 = \mathbf{36\ \text{deer yr}^{-1}}$ (MSY).<br>
 (c) MSY = 36 deer yr⁻¹. Harvest H = 25 < 36, so the harvest is <strong>sustainable</strong> at $N = K/2$. However, the current population (N=200) is below K/2; the actual sustainable harvest at N=200 is $dN/dt = 27\ \text{yr}^{-1}$, so H=25 is still sustainable but with low margin.<br>
-(d) At $N = 150$: $dN/dt = 0.18 \times 150 \times (800-150)/800 - 25 = 0.18 \times 150 \times 0.8125 - 25 = 21.9 - 25 = \mathbf{-3.1\ \text{deer yr}^{-1}}$. The population is <strong>declining</strong>. The harvest exceeds the population's growth rate at this low density — a classic overexploitation scenario.
+(d) At $N = 150$: $dN/dt = 0.18 \times 150 \times (800-150)/800 - 25 = 0.18 \times 150 \times 0.8125 - 25 = 21.9 - 25 = \mathbf{-3.1\ \text{deer yr}^{-1}}$. The population is <strong>declining</strong>. The harvest exceeds the population's growth rate at this low density, a classic overexploitation scenario.
 </div>
 
 <div id="q2-eco-ans" style="background:var(--bg-secondary,#f0fdf4);border-left:3px solid #16a34a;padding:12px 16px;margin:12px 0;border-radius:0 6px 6px 0">
@@ -1211,7 +1211,7 @@ $= -(−0.118 − 0.170 − 0.105 − 0.063 − 0.026) = \mathbf{0.482}$<br>
 Community B: $p = (0.312, 0.280, 0.195, 0.088, 0.125)$<br>
 $H'_B \approx -(0.312\ln0.312 + 0.280\ln0.280 + 0.195\ln0.195 + 0.088\ln0.088 + 0.125\ln0.125) \approx \mathbf{1.556}$<br>
 (b) $D_A = 1 - (0.89^2 + 0.06^2 + 0.03^2 + 0.015^2 + 0.005^2) = 1 - (0.792 + 0.0036 + 0.0009 + 0.0002 + 0.000025) \approx 1 - 0.797 = \mathbf{0.203}$<br>
-(c) Community A (predator removed) is dominated by mussels — low evenness, low diversity. Community B (control with predator) is more even across species — high diversity. The predator prevents competitive exclusion by mussels, maintaining higher diversity.<br>
+(c) Community A (predator removed) is dominated by mussels, giving low evenness and low diversity. Community B (control with predator) is more even across species, giving high diversity. The predator prevents competitive exclusion by mussels, maintaining higher diversity.<br>
 (d) <strong>Keystone predation</strong>. Real-world example: <em>Pisaster ochraceus</em> removal in Paine's 1966 intertidal experiment reduced species richness from 15 to 8 species, with mussels dominating.
 </div>
 
@@ -1227,17 +1227,17 @@ $H'_B \approx -(0.312\ln0.312 + 0.280\ln0.280 + 0.195\ln0.195 + 0.088\ln0.088 + 
 <strong>Q4 Answers:</strong><br>
 (a) NPP = GPP − $R_a$ = 3200 − 1100 = $\mathbf{2100\ \text{kJ m}^{-2}\ \text{yr}^{-1}}$<br>
 (b) Zooplankton production = assimilation − respiration = 420 − 280 = $\mathbf{140\ \text{kJ m}^{-2}\ \text{yr}^{-1}}$<br>
-(c) Transfer efficiency = 140/2100 × 100% = $\mathbf{6.7\%}$ (below the 10% rule — realistic for aquatic systems).<br>
-(d) Fish (3 levels above phytoplankton, so T4): $0.5 \times 10^3 = \mathbf{500\ \mu\text{g kg}^{-1}}$. This is exactly at the safe limit — concerning, as any additional accumulation will exceed it. Further concentration at higher predator (T5) levels would be 5000 µg kg⁻¹, far above safe limits.<br>
+(c) Transfer efficiency = 140/2100 × 100% = $\mathbf{6.7\%}$ (below the 10% rule, realistic for aquatic systems).<br>
+(d) Fish (3 levels above phytoplankton, so T4): $0.5 \times 10^3 = \mathbf{500\ \mu\text{g kg}^{-1}}$. This is exactly at the safe limit, which is concerning since any additional accumulation will exceed it. Further concentration at higher predator (T5) levels would be 5000 µg kg⁻¹, far above safe limits.<br>
 (e) Eutrophication sequence: (1) NO₃⁻ and PO₄³⁻ input → algal bloom (PO₄³⁻ often rate-limiting in freshwater). (2) Algal biomass shades macrophytes → macrophytes die. (3) Algae die → bacteria decompose → BOD increases → DO falls. (4) Hypoxia/anoxia → fish kills → denitrification accelerates (anaerobic). (5) Sediment releases stored P under anoxic conditions (internal loading) → sustains eutrophic state. P cycle is key: once sediment P is mobilised, reducing external inputs alone does not restore the system (hysteresis).
 </div>
 
 <div id="q5-eco-ans" style="background:var(--bg-secondary,#f0fdf4);border-left:3px solid #16a34a;padding:12px 16px;margin:12px 0;border-radius:0 6px 6px 0">
 <strong>Q5 Answers:</strong><br>
-(a) The magnitude of phenological shift depends on: (i) the environmental cue used to trigger the event — species cued to photoperiod (daylength) cannot advance regardless of warming; species cued to temperature advance proportionally to warming rate; (ii) the heritability of the trait — only heritable variation allows evolutionary response; (iii) phenotypic plasticity — the capacity to advance timing within the individual's lifetime without genetic change.<br>
+(a) The magnitude of phenological shift depends on: (i) the environmental cue used to trigger the event, since species cued to photoperiod (daylength) cannot advance regardless of warming while species cued to temperature advance proportionally to warming rate; (ii) the heritability of the trait, as only heritable variation allows evolutionary response; (iii) phenotypic plasticity, the capacity to advance timing within the individual's lifetime without genetic change.<br>
 (b) After 30 years: caterpillar advance = $5.5 \times 3 = 16.5$ days; great tit advance = $1.2 \times 3 = 3.6$ days. Cumulative mismatch = $16.5 - 3.6 = \mathbf{12.9\ \text{days}}$ earlier peak caterpillar biomass relative to great tit chick hatching.<br>
-(c) In fragmented habitat: (i) smaller population size means less genetic variation for phenological plasticity — less capacity for adaptive response; (ii) edge effects alter local microclimate, decoupling temperature cues from those in continuous forest; (iii) immigration from other populations (rescue effect with potentially better-adapted genotypes) is reduced; (iv) lower prey diversity in fragments means fewer alternative food sources to buffer against caterpillar mismatch.<br>
-(d) This claim is flawed for several reasons: (i) Fast-advancing species may become phenologically decoupled from <em>their own</em> resources — e.g. if a pollinator advances faster than its plant's flowering. (ii) Community reassembly creates novel interactions — a fast-advancing herbivore may explode in abundance and suppress plant communities that other species depend on. (iii) Asymmetric responses within a guild create competitive disadvantage for slow-advancing species, potentially driving extinctions not predicted from individual physiology. (iv) Range-shifting and phenological-advancing species may interact poorly with resident communities, disrupting established mutualistic networks. Winners in one context may be losers in another context.
+(c) In fragmented habitat: (i) smaller population size means less genetic variation for phenological plasticity, leading to less capacity for adaptive response; (ii) edge effects alter local microclimate, decoupling temperature cues from those in continuous forest; (iii) immigration from other populations (rescue effect with potentially better-adapted genotypes) is reduced; (iv) lower prey diversity in fragments means fewer alternative food sources to buffer against caterpillar mismatch.<br>
+(d) This claim is flawed for several reasons: (i) Fast-advancing species may become phenologically decoupled from <em>their own</em> resources, e.g. if a pollinator advances faster than its plant's flowering. (ii) Community reassembly creates novel interactions: a fast-advancing herbivore may explode in abundance and suppress plant communities that other species depend on. (iii) Asymmetric responses within a guild create competitive disadvantage for slow-advancing species, potentially driving extinctions not predicted from individual physiology. (iv) Range-shifting and phenological-advancing species may interact poorly with resident communities, disrupting established mutualistic networks. Winners in one context may be losers in another context.
 </div>
 
 {{< /tab >}}
@@ -1246,14 +1246,14 @@ $H'_B \approx -(0.312\ln0.312 + 0.280\ln0.280 + 0.195\ln0.195 + 0.088\ln0.088 + 
 
 ### Essential vocabulary
 
-<div id="Vocabulary">Before starting, make sure you are comfortable with these terms — they appear constantly:</div>
+<div id="Vocabulary">Before starting, make sure you are comfortable with these terms; they appear constantly:</div>
 
-- **Abiotic vs biotic factors** — non-living (temperature, pH, salinity) vs. living (predators, competitors, mutualists) components of the environment
-- **Habitat vs niche** — where an organism lives vs. the full set of resources and conditions it uses (*Hutchinson's n-dimensional hypervolume*)
-- **Fundamental vs realised niche** — the niche possible without biotic interactions vs. the niche actually occupied
-- **Ecosystem services** — provisioning (food, water), regulating (climate, pollination), cultural, supporting (nutrient cycling, soil formation)
-- **Trophic level** — position in a food chain. Producers = level 1; primary consumers = level 2; etc.
-- **Standing crop vs productivity** — the biomass present at a moment vs. the rate of biomass production
+- **Abiotic vs biotic factors**: non-living (temperature, pH, salinity) vs. living (predators, competitors, mutualists) components of the environment
+- **Habitat vs niche**: where an organism lives vs. the full set of resources and conditions it uses (*Hutchinson's n-dimensional hypervolume*)
+- **Fundamental vs realised niche**: the niche possible without biotic interactions vs. the niche actually occupied
+- **Ecosystem services**: provisioning (food, water), regulating (climate, pollination), cultural, supporting (nutrient cycling, soil formation)
+- **Trophic level**: position in a food chain. Producers = level 1; primary consumers = level 2; etc.
+- **Standing crop vs productivity**: the biomass present at a moment vs. the rate of biomass production
 <img src="/ECOLOGYPICS/ecolevelscb.png">
 <!-- RESOURCE: Insert a diagram here showing levels of ecological organisation: individual → population → community → ecosystem → biome → biosphere. A simple left-to-right arrow diagram works well. Suggested tool: draw.io or similar, export as SVG. -->
 <br>
@@ -1263,7 +1263,7 @@ $$\frac{dN_1}{dt} = r_1 N_1 \frac{K_1 - N_1 - \alpha_{12}N_2}{K_1}$$
 
 $$\frac{dN_2}{dt} = r_2 N_2 \frac{K_2 - N_2 - \alpha_{21}N_1}{K_2}$$
 </div>
-where $\alpha_{12}$ is the **competition coefficient** — the per-capita effect of species 2 on species 1 (in units of species 1 individuals). Coexistence requires that interspecific competition is weaker than intraspecific competition:
+where $\alpha_{12}$ is the **competition coefficient**: the per-capita effect of species 2 on species 1 (in units of species 1 individuals). Coexistence requires that interspecific competition is weaker than intraspecific competition:
 
 $$\alpha_{12} < \frac{K_1}{K_2} \quad \text{and} \quad \alpha_{21} < \frac{K_2}{K_1}$$
 

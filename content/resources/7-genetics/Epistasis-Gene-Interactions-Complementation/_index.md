@@ -22,7 +22,7 @@ syllabus_tags: ["IBO", "USABO", "genetics", "transmission-genetics"]
 
 ### Recessive epistasis (9:3:4)
 
-In **recessive epistasis**, being homozygous recessive at the epistatic locus masks the phenotype of the second gene entirely, regardless of what allele is present there. **Labrador retriever coat color** is the standard example: the *B* gene determines black (B_) vs. brown/chocolate (bb) pigment, but the *E* gene controls whether pigment is deposited in the coat at all — *ee* individuals are yellow regardless of their B genotype, since no pigment reaches the coat. A B_E_ × BbEe-type dihybrid cross yields **9 black : 3 chocolate : 4 yellow** (the 3 bbee and 1 ... wait — more precisely: 9 B_E_ black, 3 bbE_ chocolate, and the 3 B_ee + 1 bbee classes merge into 4 yellow, since *ee* masks B genotype either way).
+In **recessive epistasis**, being homozygous recessive at the epistatic locus masks the phenotype of the second gene entirely, regardless of what allele is present there. **Labrador retriever coat color** is the standard example: the *B* gene determines black (B_) vs. brown/chocolate (bb) pigment, but the *E* gene controls whether pigment is deposited in the coat at all — *ee* individuals are yellow regardless of their B genotype, since no pigment reaches the coat. A B_E_ × BbEe-type dihybrid cross yields **9 black : 3 chocolate : 4 yellow** (the 3 bbee and 1 ... wait, more precisely: 9 B_E_ black, 3 bbE_ chocolate, and the 3 B_ee + 1 bbee classes merge into 4 yellow, since *ee* masks B genotype either way).
 
 ![Mouse recessive-epistasis cross (AaCc × AaCc): the 16-box F2 grid recolors into agouti, black, and albino coats, producing a 9:3:4 ratio (agouti 9/16, black 3/16, albino 4/16).](/GENETICSPICS/mouse-coat-color-recessive-epistasis-9-3-4.jpg)
 *Source: opened.cuny.edu*
@@ -71,8 +71,8 @@ This logic assumes both mutations are recessive to wild-type and that the genes 
 
 | Complementation test outcome | Interpretation |
 |---|---|
-| F1 is wild-type | Mutations complement — likely different genes |
-| F1 is mutant | Mutations fail to complement — likely the same gene |
+| F1 is wild-type | Mutations complement, likely different genes |
+| F1 is mutant | Mutations fail to complement, likely the same gene |
 
 ## Common Exam Questions
 

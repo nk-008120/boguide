@@ -36,18 +36,18 @@ The four primary tissue types, in more structural/functional detail than a simpl
 
 **Epithelial tissue** is classified along two independent axes: cell shape (squamous = flat, cuboidal = cube-shaped, columnar = tall/rectangular) and layering (simple = one cell layer, stratified = multiple layers, pseudostratified = one layer but with nuclei at staggered heights, giving a false appearance of stratification). Function follows structure tightly: **simple squamous** (minimal diffusion distance) lines alveoli and capillaries; **simple columnar** (often with microvilli/cilia, tall cells accommodate more organelles for active transport/secretion) lines the intestine and respiratory tract; **stratified squamous** (the surface layer sacrificial, protecting the basal proliferative layer) covers the epidermis and esophagus; **pseudostratified ciliated columnar** lines the trachea, where coordinated ciliary beating physically sweeps trapped particles. Epithelial tissue is avascular (no blood vessels penetrate it; nutrients diffuse from the underlying connective tissue across a **basement membrane**) and has high mitotic turnover.
 
-**Connective tissue** is unified by having cells sparsely distributed within an extracellular matrix (ECM) rather than packed cell-to-cell like epithelium; the ECM composition (ratio of ground substance to fiber type — collagen for tensile strength, elastin for recoil) determines mechanical properties. **Loose connective tissue** (sparse fibers, viscous ground substance) surrounds organs and vessels; **dense regular connective tissue** (parallel collagen bundles) forms tendons and ligaments; **dense irregular connective tissue** (collagen in multiple directions, resisting multidirectional stress) forms the dermis; **cartilage** (chondrocytes in lacunae, avascular, matrix rich in collagen + proteoglycans) and **bone** (osteocytes, mineralized collagen matrix; full detail on the [Human Skeletal System](../human-skeletal-system/) page) are rigid connective tissues; **blood** counts as connective tissue because it is cells (formed elements) suspended in a fluid extracellular matrix (plasma) — detailed on the [Human Circulatory System](../human-circulatory-system/) page.
+**Connective tissue** is unified by having cells sparsely distributed within an extracellular matrix (ECM) rather than packed cell-to-cell like epithelium; the ECM composition (ratio of ground substance to fiber type, collagen for tensile strength, elastin for recoil) determines mechanical properties. **Loose connective tissue** (sparse fibers, viscous ground substance) surrounds organs and vessels; **dense regular connective tissue** (parallel collagen bundles) forms tendons and ligaments; **dense irregular connective tissue** (collagen in multiple directions, resisting multidirectional stress) forms the dermis; **cartilage** (chondrocytes in lacunae, avascular, matrix rich in collagen + proteoglycans) and **bone** (osteocytes, mineralized collagen matrix; full detail on the [Human Skeletal System](../human-skeletal-system/) page) are rigid connective tissues; **blood** counts as connective tissue because it is cells (formed elements) suspended in a fluid extracellular matrix (plasma) — detailed on the [Human Circulatory System](../human-circulatory-system/) page.
 
 **Muscle tissue** and **nervous tissue**: structural detail deferred to the [Human Muscular System](../human-muscular-system/) and [Human Nervous System](../human-nervous-system/) pages respectively, since both require dedicated treatment beyond a definitional summary.
 
-<span class="badge-custom">Exam tip</span> A classic IBO practical station shows an unlabeled micrograph and asks for tissue identification from structure alone — practice distinguishing simple squamous (thin, flat, single layer) from stratified squamous (thick, multiple layers, protective) from simple/pseudostratified columnar (tall cells, often ciliated) before the practical exam, not just memorizing the names.
+<span class="badge-custom">Exam tip</span> A classic IBO practical station shows an unlabeled micrograph and asks for tissue identification from structure alone: practice distinguishing simple squamous (thin, flat, single layer) from stratified squamous (thick, multiple layers, protective) from simple/pseudostratified columnar (tall cells, often ciliated) before the practical exam, not just memorizing the names.
 
 ### Gastrulation and Germ Layers
 
-**Gastrulation** is the process converting a hollow ball of cells (the blastula) into a multilayered embryo, mechanistically achieved through coordinated cell movements — invagination (in-folding, as in sea urchin gastrulation), involution (inward turning at the blastopore lip), and epiboly (a sheet of cells spreading to enclose deeper layers) act together depending on the species. The process produces two or three primary germ layers:
+**Gastrulation** is the process converting a hollow ball of cells (the blastula) into a multilayered embryo, mechanistically achieved through coordinated cell movements: invagination (in-folding, as in sea urchin gastrulation), involution (inward turning at the blastopore lip), and epiboly (a sheet of cells spreading to enclose deeper layers) act together depending on the species. The process produces two or three primary germ layers:
 
 - **Diploblastic** animals (ectoderm + endoderm only, no mesoderm): Cnidaria and Ctenophora.
-- **Triploblastic** animals (ectoderm, mesoderm, and endoderm) — every bilaterally symmetric animal.
+- **Triploblastic** animals (ectoderm, mesoderm, and endoderm): every bilaterally symmetric animal.
 
 ```mermaid
 graph TD;
@@ -186,9 +186,9 @@ Early cell division (**cleavage**) of the fertilized egg follows one of two patt
 | Feature | Protostomes | Deuterostomes |
 |---|---|---|
 | Cleavage geometry | **Spiral**: daughter cells offset diagonally over the parent cells | **Radial**: daughter cells stack directly over parent cells |
-| Developmental fate | **Determinate (mosaic)** — each blastomere's fate is fixed early; isolating one blastomere produces an incomplete embryo | **Indeterminate (regulative)** — early blastomeres retain the potential to form a complete embryo if isolated (the developmental basis of identical twinning in humans) |
+| Developmental fate | **Determinate (mosaic)**: each blastomere's fate is fixed early; isolating one blastomere produces an incomplete embryo | **Indeterminate (regulative)**: early blastomeres retain the potential to form a complete embryo if isolated (the developmental basis of identical twinning in humans) |
 | Blastopore fate | Becomes the **mouth** | Becomes the **anus**; the mouth forms secondarily |
-| Coelom formation | **Schizocoely** — the coelom forms by a splitting of a solid mass of mesoderm | **Enterocoely** — the coelom forms by an outpocketing of the archenteron (embryonic gut) wall |
+| Coelom formation | **Schizocoely**: the coelom forms by a splitting of a solid mass of mesoderm | **Enterocoely**: the coelom forms by an outpocketing of the archenteron (embryonic gut) wall |
 | Examples | Mollusks, annelids, arthropods | Echinoderms, chordates (including all vertebrates) |
 
 This table is worth returning to directly when reading the [Invertebrate Body Plans](../invertebrate-body-plans-1/) pages (protostome examples) against the Vertebrate Anatomy tier (deuterostome examples) — it is the single most useful axis for placing an unfamiliar phylum's development into context on an exam.
@@ -301,7 +301,7 @@ A coelom performs concrete mechanical work: it cushions internal organs, allows 
 
 ### Segmentation
 
-**Metameric segmentation**, a body built from a linear series of repeated units (segments/somites), arises from a mechanistically conserved genetic toolkit across distantly related phyla: **Hox gene** expression along the anterior-posterior axis specifies regional identity segment by segment, with the same broad gene family (though not identical genes) implicated in annelid, arthropod, and vertebrate segmentation. In vertebrates this produces **somites** (blocks of paraxial mesoderm flanking the developing neural tube), which give rise to the segmented vertebral column, associated ribs, and the segmental pattern of spinal nerves — a structural echo of the more completely segmented adult bodies of annelids and arthropods, covered on the [Invertebrate Body Plans I](../invertebrate-body-plans-1/) page.
+**Metameric segmentation**, a body built from a linear series of repeated units (segments/somites), arises from a mechanistically conserved genetic toolkit across distantly related phyla: **Hox gene** expression along the anterior-posterior axis specifies regional identity segment by segment, with the same broad gene family (though not identical genes) implicated in annelid, arthropod, and vertebrate segmentation. In vertebrates this produces **somites** (blocks of paraxial mesoderm flanking the developing neural tube), which give rise to the segmented vertebral column, associated ribs, and the segmental pattern of spinal nerves, a structural echo of the more completely segmented adult bodies of annelids and arthropods, covered on the [Invertebrate Body Plans I](../invertebrate-body-plans-1/) page.
 
 ## Comparative Structures
 
@@ -330,7 +330,7 @@ A coelom performs concrete mechanical work: it cushions internal organs, allows 
 
 **Static**
 
-*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Symmetry types are covered by an external link-out in the Symmetry and Cephalization section instead of an inline image — no combined diagram was found, and the user opted for a link rather than a partial/incomplete photo set.)*
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Symmetry types are covered by an external link-out in the Symmetry and Cephalization section instead of an inline image; no combined diagram was found, and the user opted for a link rather than a partial/incomplete photo set.)*
 
 ## Practice Problems
 

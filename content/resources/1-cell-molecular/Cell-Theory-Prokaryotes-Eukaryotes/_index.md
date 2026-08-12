@@ -25,12 +25,12 @@ Historically, cell theory itself is a favourite context for questions on the tra
 
 ### Prokaryotic cell organisation
 
-Prokaryotic cells (Bacteria and Archaea) lack a membrane-bound nucleus and membrane-bound organelles. Their genome is typically a single circular chromosome located in a **nucleoid** region — not membrane-enclosed, simply a zone of DNA concentration. They are generally smaller (~1–5 μm) than eukaryotic cells (~10–100 μm), which matters functionally: smaller cells have a higher **surface-area-to-volume ratio**, supporting faster nutrient exchange and (partly) explaining prokaryotes' generally faster growth/division rates.
+Prokaryotic cells (Bacteria and Archaea) lack a membrane-bound nucleus and membrane-bound organelles. Their genome is typically a single circular chromosome located in a **nucleoid** region, not membrane-enclosed, simply a zone of DNA concentration. They are generally smaller (~1–5 μm) than eukaryotic cells (~10–100 μm), which matters functionally: smaller cells have a higher **surface-area-to-volume ratio**, supporting faster nutrient exchange and (partly) explaining prokaryotes' generally faster growth/division rates.
 
 Structural features distinguishing prokaryotes:
 
 - **Cell wall**: peptidoglycan-based (bacteria) or pseudopeptidoglycan/other polymers (archaea), chemically distinct from the cellulose (plant) or chitin (fungal) walls found in eukaryotes.
-- **Ribosomes**: 70S (30S + 50S subunits) — smaller than the eukaryotic 80S ribosome, a distinction directly exploited by many antibiotics (e.g. streptomycin, erythromycin target the 70S ribosome specifically, sparing the host's 80S cytoplasmic ribosomes).
+- **Ribosomes**: 70S (30S + 50S subunits), smaller than the eukaryotic 80S ribosome, a distinction directly exploited by many antibiotics (e.g. streptomycin, erythromycin target the 70S ribosome specifically, sparing the host's 80S cytoplasmic ribosomes).
 - **Plasmids**: small, circular, extrachromosomal DNA molecules, often carrying non-essential but conditionally advantageous genes (e.g. antibiotic resistance) and capable of independent replication and horizontal transfer between cells.
 - No cytoskeleton in the eukaryotic sense (though bacterial homologues of actin/tubulin, e.g. FtsZ, exist and perform analogous structural roles).
 
@@ -41,7 +41,7 @@ Structural features distinguishing prokaryotes:
 
 Eukaryotic cells possess a membrane-bound **nucleus** housing linear chromosomes complexed with histone proteins (chromatin), plus an extensive system of membrane-bound organelles (endoplasmic reticulum, Golgi apparatus, mitochondria, and — in plants/algae — chloroplasts; see [Endomembrane System & Protein Trafficking](../endomembrane-system-protein-trafficking/) and [Mitochondria & Chloroplasts](../mitochondria-chloroplasts-structure-origin/) for full treatment of each). This compartmentalisation lets eukaryotic cells run mutually incompatible reactions simultaneously: for instance, concentrating and protecting the genome from cytoplasmic mechanical/chemical stress, or maintaining the distinct redox and pH environments each organelle's chemistry requires.
 
-Eukaryotic cells also possess a true **cytoskeleton** (actin filaments, microtubules, intermediate filaments — see [Cytoskeleton & Motor Proteins](../cytoskeleton-motor-proteins/)) providing structural support, intracellular transport tracks, and the machinery for cell division and, in animal cells, shape change and motility.
+Eukaryotic cells also possess a true **cytoskeleton** (actin filaments, microtubules, intermediate filaments, see [Cytoskeleton & Motor Proteins](../cytoskeleton-motor-proteins/)) providing structural support, intracellular transport tracks, and the machinery for cell division and, in animal cells, shape change and motility.
 
 ![Generalised animal cell cutaway diagram with nucleus (nuclear envelope, chromatin, nucleolus), rough and smooth endoplasmic reticulum, Golgi apparatus, mitochondria, lysosome, peroxisome, vacuole, and cytoskeletal elements (microtubules, centrosome, intermediate filaments, microfilaments) all labelled](/MCBBPICS/generalized-eukaryotic-cell.png)
 *Source: opentextbc.ca (OpenStax-derived Biology OER)*

@@ -12,7 +12,7 @@ syllabus_tags: ["IBO", "USABO", "biochemistry"]
 
 ## Overview
 
-Amino acids are the monomer units of proteins: a central (α) carbon bonded to an amino group, a carboxyl group, a hydrogen, and a variable **R group** (side chain) that gives each of the 20 standard amino acids its distinct chemical identity: polarity, charge, size, and reactivity. Nearly everything a protein can do — fold into a stable shape, bind a ligand, catalyse a reaction, insert into a membrane — traces back to the specific combination of R groups along its chain. This page covers the chemical vocabulary (classification, ionization, metabolism) that every later Biochemistry and Molecular Biology page assumes.
+Amino acids are the monomer units of proteins: a central (α) carbon bonded to an amino group, a carboxyl group, a hydrogen, and a variable **R group** (side chain) that gives each of the 20 standard amino acids its distinct chemical identity: polarity, charge, size, and reactivity. Nearly everything a protein can do, fold into a stable shape, bind a ligand, catalyse a reaction, insert into a membrane, traces back to the specific combination of R groups along its chain. This page covers the chemical vocabulary (classification, ionization, metabolism) that every later Biochemistry and Molecular Biology page assumes.
 
 ## Key Concepts
 
@@ -26,7 +26,7 @@ The 20 R groups sort into four broad chemical classes:
 - **Nonpolar/aliphatic (9)**: Gly, Ala, Val, Leu, Ile, Pro, Phe, Trp, Met, hydrocarbon chains or aromatic rings that cluster away from water.
 - **Polar neutral**: contain a hydroxyl (Ser, Thr, Tyr), sulfhydryl (Cys), or amide (Asn, Gln) group in the R group.
 - **Polar acidic (2)**: Asp, Glu, carrying a second carboxylic acid/carboxylate group beyond the backbone one; negatively charged at physiological pH.
-- **Polar basic (3)**: Lys, Arg, His — carry an additional amine group; positively charged (Lys, Arg fully; His only partially, pKₐ ≈ 6) at physiological pH.
+- **Polar basic (3)**: Lys, Arg, His, carry an additional amine group; positively charged (Lys, Arg fully; His only partially, pKₐ ≈ 6) at physiological pH.
 
 ![All 20 standard amino acids' chemical structures grouped by class (aliphatic, aromatic, acidic, basic, hydroxylic, sulfur-containing, amidic), each circle color-coded by class and marked solid/dashed for non-essential/essential](/MCBBPICS/Amino_Acid2.png)
 *Source: unattributed pre-existing site asset*
@@ -47,7 +47,7 @@ For an amino acid with an ionizable side chain, average the **two pKₐ values t
 
 **Reading a titration curve**: each inflection point marks a pKₐ; the flat **buffering plateaus** (±1 pH unit around each pKₐ) are where the amino acid best resists pH change, because protonated and deprotonated forms coexist near 1:1. A polyprotic amino acid like lysine shows three inflection points and three buffering plateaus.
 
-![Titration curve of a Lys-Lys-Lys tripeptide (not free lysine): net charge steps from +4.0 down to −1.0 across four inflection points — α-COOH pKₐ ≈2.2, α-NH₃⁺ pKₐ ≈8.0, the three ε-NH₃⁺ side-chain groups clustering near pKₐ ≈10.5 — with pI ≈10.8 marked where net charge crosses zero](/MCBBPICS/LYSINECURVE.png)
+![Titration curve of a Lys-Lys-Lys tripeptide (not free lysine): net charge steps from +4.0 down to −1.0 across four inflection points, α-COOH pKₐ ≈2.2, α-NH₃⁺ pKₐ ≈8.0, the three ε-NH₃⁺ side-chain groups clustering near pKₐ ≈10.5, with pI ≈10.8 marked where net charge crosses zero](/MCBBPICS/LYSINECURVE.png)
 *Source: unattributed pre-existing site asset*
 
 $$ \text{pH} = pK_a + \log\frac{[\text{A}^-]}{[\text{HA}]} \quad \text{(Henderson–Hasselbalch)} $$
@@ -73,7 +73,7 @@ Nine amino acids cannot be synthesised by humans and must come from diet: **His,
 
 Amino acids aren't stored. Excess is broken down via two linked reactions.
 
-**Transamination** (PLP-dependent aminotransferases, e.g. AST, ALT — elevated serum AST/ALT is a clinical marker of hepatocyte damage) transfers the α-amino group onto α-ketoglutarate:
+**Transamination** (PLP-dependent aminotransferases, e.g. AST, ALT; elevated serum AST/ALT is a clinical marker of hepatocyte damage) transfers the α-amino group onto α-ketoglutarate:
 
 $$ \text{Amino acid} + \alpha\text{-ketoglutarate} \xrightarrow{\text{aminotransferase (PLP)}} \alpha\text{-keto acid} + \text{glutamate} $$
 
@@ -125,7 +125,7 @@ Ionizable-group comparison across the three charged/polar-basic amino acid class
 ## Common Exam Questions
 
 - "Calculate the pI of [amino acid/peptide] given these pKₐ values": always average the *two pKₐ flanking the zwitterion*, not the first two numerically.
-- "Which amino acids are exclusively ketogenic?" — Leu and Lys, no exceptions.
+- "Which amino acids are exclusively ketogenic?": Leu and Lys, no exceptions.
 - "Why is glycine/proline structurally special?": steric argument (no side chain / cyclic side chain), not a vague "flexibility" answer.
 - Identifying whether a modification is functionally significant requires knowing site + attached group + resulting conformational change: a question that names only "glycosylation occurred" without further detail cannot alone imply a specific function.
 

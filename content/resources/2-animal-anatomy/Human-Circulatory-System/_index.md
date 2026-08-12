@@ -40,7 +40,7 @@ The AV valves are anchored by **chordae tendineae** (fibrous cords) to **papilla
 
 ### Cardiac Conduction System
 
-Cardiac muscle is **autorhythmic**: it generates its own rhythmic electrical signal without external nervous input (the autonomic nervous system, see the [Human Nervous System](../human-nervous-system/) page, modulates rate/force but does not initiate each beat) — via a specialized conduction pathway of modified cardiac muscle cells:
+Cardiac muscle is **autorhythmic**: it generates its own rhythmic electrical signal without external nervous input (the autonomic nervous system, see the [Human Nervous System](../human-nervous-system/) page, modulates rate/force but does not initiate each beat), via a specialized conduction pathway of modified cardiac muscle cells:
 
 ```mermaid
 graph LR;
@@ -70,7 +70,7 @@ The **sinoatrial (SA) node** (right atrial wall, near the superior vena cava) de
     </div>
     <div style="flex:1; min-width:220px;">
       <div style="font-weight:700; font-size:1.05rem; color:#1a472a; margin-bottom:0.3rem;" id="condTitle">SA Node</div>
-      <div style="font-size:0.85rem; color:#b1650f; font-weight:600; margin-bottom:0.4rem;" id="condDelay">Fires spontaneously (~70-80x/min) — the primary pacemaker</div>
+      <div style="font-size:0.85rem; color:#b1650f; font-weight:600; margin-bottom:0.4rem;" id="condDelay">Fires spontaneously (~70-80x/min), the primary pacemaker</div>
       <div style="font-size:0.9rem; color:#4b5563; min-height:4.5em; margin-bottom:1rem;" id="condDesc">Located in the right atrial wall near the superior vena cava. Depolarizes spontaneously faster than any other cardiac tissue, initiating each heartbeat. Signal spreads across both atria via gap junctions.</div>
       <div style="display:flex; gap:0.5rem;">
         <button id="condPrev" style="padding:6px 16px; border:none; border-radius:30px; background:#e2e8f0; color:#1e293b; cursor:pointer; font-weight:500; font-size:0.85rem;">← Previous</button>
@@ -84,10 +84,10 @@ The **sinoatrial (SA) node** (right atrial wall, near the superior vena cava) de
 (function(){
   var order = ['sa', 'av', 'bundle', 'purkinje'];
   var info = {
-    sa: { name: 'SA Node', delay: 'Fires spontaneously (~70-80x/min) — the primary pacemaker', desc: 'Located in the right atrial wall near the superior vena cava. Depolarizes spontaneously faster than any other cardiac tissue, initiating each heartbeat. Signal spreads across both atria via gap junctions.' },
+    sa: { name: 'SA Node', delay: 'Fires spontaneously (~70-80x/min), the primary pacemaker', desc: 'Located in the right atrial wall near the superior vena cava. Depolarizes spontaneously faster than any other cardiac tissue, initiating each heartbeat. Signal spreads across both atria via gap junctions.' },
     av: { name: 'AV Node', delay: '~0.1 s conduction delay', desc: 'Located in the atrioventricular septum. Conducts more slowly than surrounding tissue, introducing a brief delay. This is exactly why atrial systole finishes emptying the atria before ventricular contraction begins.' },
     bundle: { name: 'Bundle of His', delay: 'Fast conduction', desc: 'Runs within the interventricular septum, carrying the signal rapidly from the AV node down toward the ventricular walls.' },
-    purkinje: { name: 'Purkinje Fibers', delay: 'Fastest conduction of any cardiac tissue', desc: 'Distributes the signal through the ventricular walls from apex to base — this apex-to-base sequence is why ventricular contraction pushes blood upward toward the outflow valves.' }
+    purkinje: { name: 'Purkinje Fibers', delay: 'Fastest conduction of any cardiac tissue', desc: 'Distributes the signal through the ventricular walls from apex to base, this apex-to-base sequence is why ventricular contraction pushes blood upward toward the outflow valves.' }
   };
   var idx = 0;
   var titleEl = document.getElementById('condTitle');
@@ -254,15 +254,15 @@ Blood is connective tissue (see [Body Plans](../body-plans/)): cells suspended i
 ![All five leukocyte types shown as real blood-smear micrographs (whole field, nucleus close-up, cytoplasm close-up, whole-cell close-up) for neutrophil, eosinophil, basophil, lymphocyte, and monocyte.](/ANATOMYPICS/blood-smear-erythrocytes-leukocytes.webp)
 *Source: user-sourced (originally via a ResearchGate figure). Excellent match for the five leukocyte types and their distinguishing nuclear/cytoplasmic morphology; erythrocytes are visible in the background of each smear field but aren't separately labeled or the focus of the image.*
 
-- **Platelets (thrombocytes)** — not whole cells but small membrane-bound fragments budded off large bone-marrow cells (megakaryocytes), functioning in clot formation.
+- **Platelets (thrombocytes)**: not whole cells but small membrane-bound fragments budded off large bone-marrow cells (megakaryocytes), functioning in clot formation.
 
 ### Blood Vessel Histology
 
-Three vessel types, differentiated by the proportion of their wall dedicated to each of three structural layers (**tunica intima**: innermost, a single layer of endothelium plus a thin connective tissue layer; **tunica media**: smooth muscle and elastic fibers; **tunica externa (adventitia)** — outer connective tissue, anchoring the vessel to surrounding tissue):
+Three vessel types, differentiated by the proportion of their wall dedicated to each of three structural layers (**tunica intima**: innermost, a single layer of endothelium plus a thin connective tissue layer; **tunica media**: smooth muscle and elastic fibers; **tunica externa (adventitia)**, outer connective tissue, anchoring the vessel to surrounding tissue):
 
 - **Arteries**: thick tunica media (smooth muscle + elastic fibers), withstands high pulsatile pressure; the elastic recoil of large elastic arteries (e.g. the aorta) helps maintain pressure between heartbeats, smoothing pulsatile flow into a steadier downstream pressure. Smaller **arterioles** have proportionally more smooth muscle relative to lumen size, making them the primary site of resistance regulation (vasoconstriction/dilation) controlling blood flow distribution and, in aggregate, systemic blood pressure.
-- **Veins** — thinner walls overall, larger lumen, lower pressure; limb veins contain internal one-way **valves** (endothelial folds) preventing backflow, since venous pressure alone is too low to overcome gravity; venous return relies partly on the **skeletal muscle pump** (contracting muscle compresses adjacent veins) and the pressure gradient created by breathing.
-- **Capillaries**: wall is a single layer of simple squamous endothelium (see [Body Plans](../body-plans/)) and a basement membrane, nothing else — the only vessel type where diffusion exchange with surrounding tissue actually happens; three structural subtypes exist (continuous: tightest, most common; fenestrated — pores, found where filtration is high, e.g. the kidney glomerulus, see [Human Excretory System](../human-excretory-system/); sinusoidal: largest gaps, found in the liver/bone marrow, permitting exchange of cells and large proteins).
+- **Veins**: thinner walls overall, larger lumen, lower pressure; limb veins contain internal one-way **valves** (endothelial folds) preventing backflow, since venous pressure alone is too low to overcome gravity; venous return relies partly on the **skeletal muscle pump** (contracting muscle compresses adjacent veins) and the pressure gradient created by breathing.
+- **Capillaries**: wall is a single layer of simple squamous endothelium (see [Body Plans](../body-plans/)) and a basement membrane, nothing else, the only vessel type where diffusion exchange with surrounding tissue actually happens; three structural subtypes exist (continuous: tightest, most common; fenestrated — pores, found where filtration is high, e.g. the kidney glomerulus, see [Human Excretory System](../human-excretory-system/); sinusoidal: largest gaps, found in the liver/bone marrow, permitting exchange of cells and large proteins).
 
 ![Tunica intima/media/externa compared across a large vein, a medium-sized vein (with closed valves shown, plus a valve-open/closed longitudinal inset), and a venule.](/ANATOMYPICS/artery-vein-capillary-wall-comparison.jpg)
 *Source: user-sourced (originally via Lumen Learning, SUNY A&P2). **Mismatch from spec**: this compares three calibers of vein (large vein / medium vein / venule), not the artery-vs-vein-vs-capillary comparison described in the text — still useful for showing the three tunic layers and venous valve structure, but doesn't show an artery or a capillary at all.*

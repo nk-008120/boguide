@@ -46,9 +46,9 @@ The three connective-tissue wrappings (epi-/peri-/endomysium) converge at the mu
 **The sarcomere** is the functional contractile unit, defined as the segment between two adjacent **Z-discs**:
 
 - **A-band**: the full length of the thick (myosin) filaments; stays constant length during contraction.
-- **I-band** — region containing only thin filaments; shortens during contraction.
+- **I-band**: region containing only thin filaments; shortens during contraction.
 - **H-zone**: central region of the A-band containing only thick filaments; shortens during contraction.
-- **Z-disc** — protein structure (containing **α-actinin**) anchoring thin filaments; defines sarcomere boundaries; adjacent Z-discs move closer together during contraction.
+- **Z-disc**: protein structure (containing **α-actinin**) anchoring thin filaments; defines sarcomere boundaries; adjacent Z-discs move closer together during contraction.
 - **M-line**: central line within the H-zone, anchoring thick filaments in register.
 
 **Thin filaments** are not pure actin: alongside the polymerized **actin** strand, **tropomyosin** (a rod-shaped protein lying along the actin groove, blocking myosin-binding sites at rest) and the **troponin complex** (troponin C binds calcium, troponin I inhibits actin-myosin binding at rest, troponin T anchors the complex to tropomyosin) together form the structural switch that gates contraction — calcium binding to troponin C shifts tropomyosin's position, exposing the myosin-binding sites this is the direct structural link between a calcium signal and the sliding-filament mechanism below.
@@ -226,7 +226,7 @@ Not all skeletal muscle fibers are structurally identical; three types differ in
 | **Type IIa (fast oxidative-glycolytic)** | Moderate | Moderate | Fast | Moderate | Mixed-use muscles |
 | **Type IIx (fast glycolytic)** | Low | Low (pale appearance) | Fast | Low | Short, powerful bursts (e.g. sprinting) |
 
-Myoglobin content (an oxygen-binding pigment structurally analogous to hemoglobin, but retained within the muscle fiber as an internal oxygen reserve) is directly responsible for the color difference between "red" and "white" muscle fibers/meat — a structural, histologically visible correlate of a fiber's metabolic strategy. Most human muscles are a mixed population of fiber types, with the proportion varying by muscle and (within limits) by training.
+Myoglobin content (an oxygen-binding pigment structurally analogous to hemoglobin, but retained within the muscle fiber as an internal oxygen reserve) is directly responsible for the color difference between "red" and "white" muscle fibers/meat, a structural, histologically visible correlate of a fiber's metabolic strategy. Most human muscles are a mixed population of fiber types, with the proportion varying by muscle and (within limits) by training.
 
 ![Slow-twitch oxidative fibers (calf muscle, small diameter, dark with myoglobin, dense capillaries/mitochondria, fatigue-resistant) compared to fast-twitch glycolytic fibers (eye muscle, larger diameter, pale, easily fatigued), each with a real cross-section micrograph.](/ANATOMYPICS/muscle-fiber-types-cross-section.png)
 *Source: Dee Unglaub Silverthorn,* Human Physiology: An Integrated Approach *(also used on the [Animal Physiology: Muscle Physiology](../../3-animal-physiology/Muscle-Physiology/) page).*

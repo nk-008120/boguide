@@ -12,7 +12,7 @@ syllabus_tags: ["IBO", "USABO", "biochemistry"]
 
 ## Overview
 
-Carbohydrates are built from one simple repeating chemical idea — the glycosidic bond — yet that single linkage, varied in stereochemistry and branching pattern, produces molecules as different as the rigid, indigestible cellulose of a plant cell wall and the readily mobilised glucose reserve of glycogen. This page covers monosaccharide chemistry, how glycosidic bonds form and are named, and why storage/structural polysaccharides differ so sharply in physical properties despite near-identical monomer composition.
+Carbohydrates are built from one simple repeating chemical idea, the glycosidic bond, yet that single linkage, varied in stereochemistry and branching pattern, produces molecules as different as the rigid, indigestible cellulose of a plant cell wall and the readily mobilised glucose reserve of glycogen. This page covers monosaccharide chemistry, how glycosidic bonds form and are named, and why storage/structural polysaccharides differ so sharply in physical properties despite near-identical monomer composition.
 
 ## Key Concepts
 
@@ -33,7 +33,7 @@ A **glycosidic bond** forms between the anomeric carbon of one sugar and a hydro
 
 ### Storage vs. structural polysaccharides: the same monomer, opposite function
 
-**Starch** (plants) and **glycogen** (animals) are both glucose polymers linked almost entirely by **α(1→4)** bonds, with **α(1→6)** branch points (more frequent in glycogen than in amylopectin, giving glycogen a more densely branched, "bushier" structure with more non-reducing ends for rapid simultaneous mobilisation by glycogen phosphorylase). The α linkage puts a consistent kink at every bond, so the chain naturally coils into a helix — a shape enzymes (amylase, phosphorylase) can access easily from the outside, which is exactly what a rapidly mobilised energy store needs.
+**Starch** (plants) and **glycogen** (animals) are both glucose polymers linked almost entirely by **α(1→4)** bonds, with **α(1→6)** branch points (more frequent in glycogen than in amylopectin, giving glycogen a more densely branched, "bushier" structure with more non-reducing ends for rapid simultaneous mobilisation by glycogen phosphorylase). The α linkage puts a consistent kink at every bond, so the chain naturally coils into a helix, a shape enzymes (amylase, phosphorylase) can access easily from the outside, which is exactly what a rapidly mobilised energy store needs.
 
 ![Chair-structure and schematic bead-chain diagrams of glycogen branching: linear α(1→4)-linked glucose chains with an α(1→6) branch point, multiple non-reducing ends, and one reducing end](/MCBBPICS/glycogen-branching-diagram1.jpg)
 *Source: ScienceDirect Topics ("glycogenin")*
@@ -62,14 +62,14 @@ Beyond glucose homopolymers, **glycosaminoglycans (GAGs)**, long, unbranched, hi
 |---|---|---|---|---|
 | Starch (amylose) | α(1→4) | Helical | None | Plant energy storage |
 | Starch (amylopectin) | α(1→4), α(1→6) branches | Helical with branches | Moderate | Plant energy storage |
-| Glycogen | α(1→4), α(1→6) branches | Helical with branches | Dense (more than amylopectin) | Animal energy storage — rapid mobilisation |
+| Glycogen | α(1→4), α(1→6) branches | Helical with branches | Dense (more than amylopectin) | Animal energy storage, rapid mobilisation |
 | Cellulose | β(1→4) | Extended, straight | None | Plant cell wall structure |
 | Chitin | β(1→4) of N-acetylglucosamine | Extended, straight | None | Fungal cell wall, arthropod exoskeleton structure |
 
 ## Common Exam Questions
 
 - "Why can't humans digest cellulose?": the correct answer names the *β(1→4) linkage geometry*, not simply "we lack the enzyme," since the follow-up ("why don't we have that enzyme?") is really asking about substrate specificity for α- vs. β-glycosidases.
-- "Compare glycogen and amylopectin structurally" — degree of branching (glycogen denser) is the testable distinction, since both use the same α(1→4)/α(1→6) linkage chemistry.
+- "Compare glycogen and amylopectin structurally": degree of branching (glycogen denser) is the testable distinction, since both use the same α(1→4)/α(1→6) linkage chemistry.
 - Anomeric carbon identification (which carbon is C1, why ring closure creates a new stereocentre there) is a frequent structure-drawing question.
 
 ## Visual Reference

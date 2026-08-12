@@ -1,4 +1,14 @@
+## AI Usage Policy
+This codebase is certified human-crafted with minimal, disclosed AI assistance. Read our full [AI Attestation Statement](./AI-ATTESTATION.md).
+
+
+NOTE - PRUNED ALL 132 COMMITS BEFORE 12th of August 2026 due to commit history overload and git repo cleanup. ALL COMMITS SQUASHED AS WEBSITE SET INTO PRODUCTION.
+HISTORY AVAILABLE IN BRANCH backup-unwanted-state.
+STAY CLEAN!
+
+
 # BioGuide — Biology Olympiad Preparation Hub
+
 
 [![Built with Hugo](https://img.shields.io/badge/Built%20with-Hugo-ff4088?style=flat&logo=hugo)](https://gohugo.io/)
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)

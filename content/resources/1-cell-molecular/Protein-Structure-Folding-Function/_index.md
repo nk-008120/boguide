@@ -12,7 +12,7 @@ syllabus_tags: ["IBO", "USABO", "biochemistry"]
 
 ## Overview
 
-A protein's function is inseparable from its shape, and its shape is built in four hierarchical levels — primary, secondary, tertiary, and quaternary structure — each stabilised by a different balance of covalent and non-covalent forces. This page covers that hierarchy, the model system for allosteric regulation (hemoglobin), how cells prevent and correct misfolding, and how they destroy proteins deliberately. Notably, protein *fold* is more evolutionarily conserved than amino acid *sequence* — distantly related proteins with very different sequences often adopt near-identical folds, because the geometric and energetic constraints on a stable fold are stricter than the constraints on any single residue.
+A protein's function is inseparable from its shape, and its shape is built in four hierarchical levels: primary, secondary, tertiary, and quaternary structure, each stabilised by a different balance of covalent and non-covalent forces. This page covers that hierarchy, the model system for allosteric regulation (hemoglobin), how cells prevent and correct misfolding, and how they destroy proteins deliberately. Notably, protein *fold* is more evolutionarily conserved than amino acid *sequence*. Distantly related proteins with very different sequences often adopt near-identical folds, because the geometric and energetic constraints on a stable fold are stricter than the constraints on any single residue.
 
 ## Key Concepts
 
@@ -20,10 +20,10 @@ A protein's function is inseparable from its shape, and its shape is built in fo
 
 **Primary structure** is simply the linear amino acid sequence, held together by peptide bonds (and, for cross-chain or cross-loop connections, disulfide bonds between cysteines).
 
-**Secondary structure** is a local, repeating backbone conformation stabilised almost entirely by hydrogen bonds between the carbonyl oxygen and amide hydrogen of the polypeptide backbone — side chains are not directly involved. Two dominant motifs:
+**Secondary structure** is a local, repeating backbone conformation stabilised almost entirely by hydrogen bonds between the carbonyl oxygen and amide hydrogen of the polypeptide backbone, side chains are not directly involved. Two dominant motifs:
 
-- **α-helix** (one turn = 3.6 residues). High-propensity residues: **Ala, Glu, Leu, Met, Lys** ("MALEK") — small enough to pack tightly, or able to form stabilising salt bridges (Glu, Lys), with no steric interference with the coil. **Helix breakers**: Proline (its side chain cyclises onto the backbone nitrogen, removing the amide hydrogen the helix needs and imposing a rigid kink) and Glycine (too flexible — entropically costly to lock into one rigid helical conformation).
-- **β-sheet** (≈180° turn per 4 residues). High-propensity residues: bulky aromatics (Trp, Tyr, Phe) and β-branched residues (Val, Ile, Thr) — their bulk disfavours the tight coiling of a helix and favours the more open, extended sheet geometry. **Sheet breakers**: Proline (same rigidity argument) and bulky charged residues (Glu, Lys) that clash sterically/electrostatically in the tightly packed strand.
+- **α-helix** (one turn = 3.6 residues). High-propensity residues: **Ala, Glu, Leu, Met, Lys** ("MALEK"), small enough to pack tightly, or able to form stabilising salt bridges (Glu, Lys), with no steric interference with the coil. **Helix breakers**: Proline (its side chain cyclises onto the backbone nitrogen, removing the amide hydrogen the helix needs and imposing a rigid kink) and Glycine (too flexible, entropically costly to lock into one rigid helical conformation).
+- **β-sheet** (≈180° turn per 4 residues). High-propensity residues: bulky aromatics (Trp, Tyr, Phe) and β-branched residues (Val, Ile, Thr). Their bulk disfavours the tight coiling of a helix and favours the more open, extended sheet geometry. **Sheet breakers**: Proline (same rigidity argument) and bulky charged residues (Glu, Lys) that clash sterically/electrostatically in the tightly packed strand.
 - **β-turn**: a third, shorter motif connecting two antiparallel β-strands.
 
 ![α-helix (coiled ribbon) and pleated β-sheet secondary structures, with the four non-covalent/covalent interaction types that stabilise folded protein structure labelled: ionic bonds, hydrogen bonds, hydrophobic interactions, and van der Waals forces](/MCBBPICS/secondary.png)
@@ -41,18 +41,18 @@ A useful rule of thumb: secondary-structure hydrogen bonding is local, roughly *
 
 **Tertiary structure** is the overall 3D fold of a single polypeptide, formed by packing secondary elements into compact domains. It is stabilised by, in rough order of contribution:
 
-1. **Hydrophobic interactions** — the dominant driving force; nonpolar side chains bury in the interior to avoid water, polar side chains stay solvent-exposed.
-2. **Hydrogen bonds** between polar side chains, or side chain–backbone — individually weak but numerous and directional.
+1. **Hydrophobic interactions**: the dominant driving force; nonpolar side chains bury in the interior to avoid water, polar side chains stay solvent-exposed.
+2. **Hydrogen bonds** between polar side chains, or side chain–backbone, individually weak but numerous and directional.
 3. **Ionic bonds (salt bridges)** between oppositely charged side chains (e.g. Lys⁺···Asp⁻).
 4. **Disulfide bonds** — the only *covalent* tertiary-level bond, cross-linking two cysteine sulfurs.
-5. **Van der Waals forces** — weak, short-range, but numerous in a densely packed hydrophobic core.
+5. **Van der Waals forces**: weak, short-range, but numerous in a densely packed hydrophobic core.
 
 ![A folded polypeptide backbone with the tertiary stabilising interactions labelled at their respective sites: an ionic bond between charged side chains, a hydrogen bond, hydrophobic interactions clustering nonpolar side chains together, and a covalent disulfide linkage between two cysteines](/MCBBPICS/tss.png)
 *Source: unattributed pre-existing site asset*
 
 Because most of these forces are non-covalent, tertiary structure is fragile: heat, extreme pH, or heavy metals disrupt them, causing **denaturation** — loss of function without necessarily breaking the primary sequence.
 
-**Quaternary structure** arises when multiple independently folded (tertiary) subunits associate — often via the same non-covalent forces listed above — into one functional multimeric complex.
+**Quaternary structure** arises when multiple independently folded (tertiary) subunits associate, often via the same non-covalent forces listed above, into one functional multimeric complex.
 
 ![Quaternary protein structure examples: dimers (homodimer vs. heterodimer), a trimer (collagen's triple helix), and a tetramer (hemoglobin's α2β2 assembly)](/MCBBPICS/qss.png)
 *Source: unattributed pre-existing site asset*
@@ -77,7 +77,7 @@ For Hb, the Hill coefficient n_H ≈ 2.8 (out of a theoretical maximum of 4 for 
 ![Generic fraction-bound vs. free-ligand-concentration curves for Hill coefficients of 4, 2, 1, 0.5, and 0.2: higher coefficients produce steeper, more sigmoidal curves (stronger positive cooperativity), a coefficient of 1 gives a hyperbolic curve (no cooperativity), and coefficients below 1 indicate negative cooperativity](/MCBBPICS/hillgraph.png)
 *Source: unattributed pre-existing site asset*
 
-**Heterotropic effectors** — ligands other than O₂ that shift Hb's affinity:
+**Heterotropic effectors**: ligands other than O₂ that shift Hb's affinity:
 
 | Effector | Effect on O₂ affinity | Mechanism |
 |---|---|---|
@@ -86,7 +86,7 @@ For Hb, the Hill coefficient n_H ≈ 2.8 (out of a theoretical maximum of 4 for 
 | H⁺ (low pH, the **Bohr effect**) | Decreases | Protonates β-chain His HC3, stabilising T state |
 | CO | Increases (pathologically) | Binds the same site as O₂ with >200× affinity; shifts remaining subunits toward R, reducing effective cooperativity and causing hypoxia despite normal Hb saturation |
 
-At the pO₂ found in respiring tissue (~40 mmHg), myoglobin — with its hyperbolic, high-affinity curve — retains far more bound O₂ than hemoglobin, which is exactly the point of the two proteins having different curve shapes: Hb is built to *release* O₂ readily in tissue, Mb to *hold onto* it as an intracellular O₂ store.
+At the pO₂ found in respiring tissue (~40 mmHg), myoglobin (with its hyperbolic, high-affinity curve) retains far more bound O₂ than hemoglobin, which is exactly the point of the two proteins having different curve shapes: Hb is built to *release* O₂ readily in tissue, Mb to *hold onto* it as an intracellular O₂ store.
 
 ![Oxygen saturation vs. pO2 for hemoglobin (blue, sigmoidal) and myoglobin (red, hyperbolic), with venous-tissue and lung pO2 ranges shaded and the ~40 mmHg tissue point marked: myoglobin sits at ~93% saturation there vs. hemoglobin's ~76%](/MCBBPICS/mbhbgraph.png)
 *Source: unattributed pre-existing site asset*
@@ -105,7 +105,7 @@ At the pO₂ found in respiring tissue (~40 mmHg), myoglobin — with its hyperb
 |---|---|---|
 | Sickle cell anaemia | β-globin (HbS, Glu6Val) | The substituted valine creates a hydrophobic surface patch; deoxy-HbS polymerises into rigid fibres |
 | Cystic fibrosis | CFTR (most commonly ΔF508) | Misfolded CFTR is retained in the ER and degraded by ERAD before ever reaching the plasma membrane |
-| Prion disease (CJD, scrapie) | PrP | Native α-helix-rich PrPᶜ converts to β-sheet-rich PrPˢᶜ; PrPˢᶜ *templates* the same conversion in native PrPᶜ molecules it contacts — a self-propagating misfold requiring no nucleic acid |
+| Prion disease (CJD, scrapie) | PrP | Native α-helix-rich PrPᶜ converts to β-sheet-rich PrPˢᶜ; PrPˢᶜ *templates* the same conversion in native PrPᶜ molecules it contacts, a self-propagating misfold requiring no nucleic acid |
 | Alzheimer's disease | Amyloid-β / Tau | Aβ aggregates into cross-β amyloid plaques; Tau forms intracellular neurofibrillary tangles |
 | Parkinson's disease | α-synuclein | Aggregates into Lewy bodies |
 
@@ -141,8 +141,8 @@ Structural role correlates strongly with secondary-structure composition: **α-k
 
 ## Common Exam Questions
 
-- "Explain why proline and glycine disrupt α-helices" — always give the *chemical* reason (cyclic side chain / no amide H for Pro; excess backbone flexibility for Gly), not just "they're different."
-- "At tissue pO₂, which protein — hemoglobin or myoglobin — holds more oxygen, and why does this matter physiologically?" — tests whether you understand *why* the two curve shapes exist, not just that they differ.
+- "Explain why proline and glycine disrupt α-helices": always give the *chemical* reason (cyclic side chain / no amide H for Pro; excess backbone flexibility for Gly), not just "they're different."
+- "At tissue pO₂, which protein (hemoglobin or myoglobin) holds more oxygen, and why does this matter physiologically?" This tests whether you understand *why* the two curve shapes exist, not just that they differ.
 - Distinguishing whether a stabilising interaction is covalent (disulfide bond only) vs. non-covalent (everything else in tertiary structure) is a common trap in "which bond breaks first on denaturation" questions.
 - Prion disease questions often test the "no nucleic acid required" concept specifically — watch for answer choices that assume all heritable/infectious agents must involve DNA or RNA.
 
@@ -156,7 +156,7 @@ Structural role correlates strongly with secondary-structure composition: **α-k
 
 **Static**
 
-*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. One item — a primary-structure diagram showing a peptide bond chain with a disulfide cross-link — has no sourced image yet: the original candidate, `MCBBPICS/secondary.png`, turned out to depict secondary structure instead and was placed there. Still needs sourcing.)*
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. One item (a primary-structure diagram showing a peptide bond chain with a disulfide cross-link) has no sourced image yet: the original candidate, `MCBBPICS/secondary.png`, turned out to depict secondary structure instead and was placed there. Still needs sourcing.)*
 
 ## Practice Problems
 
@@ -165,7 +165,7 @@ Structural role correlates strongly with secondary-structure composition: **α-k
 <details>
 <summary>Show answer</summary>
 
-Myoglobin's hyperbolic curve sits to the left of (higher affinity than) hemoglobin's sigmoidal curve across the whole range, so at pO₂ = 40 mmHg myoglobin is still highly saturated while hemoglobin has released a substantial fraction of its bound O₂. This is functionally correct: myoglobin's job is to store O₂ inside muscle cells and only release it under extreme local hypoxia (heavy exertion); hemoglobin's job is to *transport* O₂ and unload a large, tunable fraction of it in respiring tissue — the sigmoidal curve, shifted further right by 2,3-BPG, CO₂, and low pH exactly where those signals of active metabolism are highest, makes this unloading responsive to local tissue demand.
+Myoglobin's hyperbolic curve sits to the left of (higher affinity than) hemoglobin's sigmoidal curve across the whole range, so at pO₂ = 40 mmHg myoglobin is still highly saturated while hemoglobin has released a substantial fraction of its bound O₂. This is functionally correct: myoglobin's job is to store O₂ inside muscle cells and only release it under extreme local hypoxia (heavy exertion); hemoglobin's job is to *transport* O₂ and unload a large, tunable fraction of it in respiring tissue: the sigmoidal curve, shifted further right by 2,3-BPG, CO₂, and low pH exactly where those signals of active metabolism are highest, makes this unloading responsive to local tissue demand.
 </details>
 
 **2.** A missense mutation converts a helix-interior alanine to proline in an otherwise stable α-helical domain. Predict the structural consequence, and explain the mechanism.

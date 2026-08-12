@@ -18,7 +18,7 @@ syllabus_tags: ["IBO", "USABO", "biochemistry"]
 
 ### Free energy and coupled reactions
 
-Cellular reactions proceed only if net **ΔG < 0** (exergonic). Many biosynthetic reactions the cell needs are individually endergonic (ΔG > 0); the cell drives them forward by **coupling** them to a strongly exergonic reaction — almost always **ATP hydrolysis** (ΔG°′ ≈ −30.5 kJ/mol) — so the *combined* reaction is exergonic overall. ATP is therefore best understood not as "energy" itself but as a **shared intermediate** that couples energy-releasing catabolic reactions to energy-requiring anabolic ones.
+Cellular reactions proceed only if net **ΔG < 0** (exergonic). Many biosynthetic reactions the cell needs are individually endergonic (ΔG > 0); the cell drives them forward by **coupling** them to a strongly exergonic reaction, almost always **ATP hydrolysis** (ΔG°′ ≈ −30.5 kJ/mol), so the *combined* reaction is exergonic overall. ATP is therefore best understood not as "energy" itself but as a **shared intermediate** that couples energy-releasing catabolic reactions to energy-requiring anabolic ones.
 
 ### Stage 1 — Glycolysis (cytoplasm, universal to nearly all life)
 
@@ -35,12 +35,12 @@ Glycolysis alone would rapidly stall once the cell's finite NAD⁺ pool is fully
 
 ### Stage 2 — Pyruvate oxidation and the TCA (citric acid/Krebs) cycle (mitochondrial matrix)
 
-Pyruvate is first oxidatively decarboxylated to **acetyl-CoA** (releasing 1 CO₂, generating 1 NADH per pyruvate — so 2 of each per original glucose), by the multi-enzyme **pyruvate dehydrogenase complex**. Acetyl-CoA then enters the **TCA cycle**, condensing with oxaloacetate to form citrate; each full turn releases 2 CO₂, and generates (per acetyl-CoA, so ×2 per glucose) **3 NADH, 1 FADH₂, and 1 GTP/ATP** (the cycle's one substrate-level phosphorylation step), while regenerating oxaloacetate to accept the next acetyl-CoA. The TCA cycle is the convergence point for carbohydrate, fat, and (via the deamination products described in [Amino Acids & Protein Chemistry Fundamentals](../amino-acids-protein-chemistry/)) amino acid catabolism: all three fuel classes ultimately feed carbon into this one cyclic pathway.
+Pyruvate is first oxidatively decarboxylated to **acetyl-CoA** (releasing 1 CO₂, generating 1 NADH per pyruvate, so 2 of each per original glucose), by the multi-enzyme **pyruvate dehydrogenase complex**. Acetyl-CoA then enters the **TCA cycle**, condensing with oxaloacetate to form citrate; each full turn releases 2 CO₂, and generates (per acetyl-CoA, so ×2 per glucose) **3 NADH, 1 FADH₂, and 1 GTP/ATP** (the cycle's one substrate-level phosphorylation step), while regenerating oxaloacetate to accept the next acetyl-CoA. The TCA cycle is the convergence point for carbohydrate, fat, and (via the deamination products described in [Amino Acids & Protein Chemistry Fundamentals](../amino-acids-protein-chemistry/)) amino acid catabolism: all three fuel classes ultimately feed carbon into this one cyclic pathway.
 
 ![Full TCA (citric acid) cycle diagram: pyruvate entering via pyruvate dehydrogenase as acetyl-CoA, condensing with oxaloacetate to form citrate, then proceeding through aconitase, isocitrate dehydrogenase, α-ketoglutarate dehydrogenase, succinyl-CoA synthetase, succinate dehydrogenase, fumarase, and malate dehydrogenase back to oxaloacetate, with CO2, NADH, FADH2, and GTP outputs marked at each relevant step](/MCBBPICS/tca-cycle-diagram.svg)
 *Source: Wikipedia*
 
-**Regulation**: high NADH/ATP allosterically inhibits both pyruvate dehydrogenase and the TCA cycle's own rate-limiting enzyme (isocitrate dehydrogenase) — the same "abundant energy signals slow further extraction" logic as PFK-1 regulation above.
+**Regulation**: high NADH/ATP allosterically inhibits both pyruvate dehydrogenase and the TCA cycle's own rate-limiting enzyme (isocitrate dehydrogenase), the same "abundant energy signals slow further extraction" logic as PFK-1 regulation above.
 
 ### Stage 3 — Oxidative phosphorylation (inner mitochondrial membrane)
 
@@ -52,13 +52,13 @@ This is where the large majority of ATP is actually produced, via two coupled pr
 ![Electron transport chain and ATP synthase across the inner mitochondrial membrane: NADH and FADH2 donate electrons at Complexes I/II, electrons pass through the protein complex chain (Q, Complex III, cytochrome c, Complex IV) reducing O2 to H2O, protons are pumped into the intermembrane space at each step, and ATP synthase uses the resulting gradient to phosphorylate ADP](/MCBBPICS/etc-atp-synthase-chemiosmosis.jpg)
 *Source: bio1151.nicerweb.com*
 
-NADH and FADH₂ feed electrons in at different points of the chain (FADH₂ enters lower, at Complex II, bypassing Complex I), which is why NADH yields somewhat more ATP per molecule than FADH₂ under the chemiosmotic model — a frequent point of confusion, since older textbooks quote fixed "3 ATP per NADH, 2 ATP per FADH₂" ratios that are now understood to be approximate rather than fixed stoichiometric constants (the actual yield depends on the proton-motive force and which shuttle system moves cytoplasmic NADH equivalents into the mitochondrion). For exam purposes, know the qualitative point — NADH enters the chain earlier and yields more ATP than FADH₂ — rather than memorising a single "true" numeric ratio.
+NADH and FADH₂ feed electrons in at different points of the chain (FADH₂ enters lower, at Complex II, bypassing Complex I), which is why NADH yields somewhat more ATP per molecule than FADH₂ under the chemiosmotic model: a frequent point of confusion, since older textbooks quote fixed "3 ATP per NADH, 2 ATP per FADH₂" ratios that are now understood to be approximate rather than fixed stoichiometric constants (the actual yield depends on the proton-motive force and which shuttle system moves cytoplasmic NADH equivalents into the mitochondrion). For exam purposes, know the qualitative point, NADH enters the chain earlier and yields more ATP than FADH₂, rather than memorising a single "true" numeric ratio.
 
 **Regulation**: the entire chain is tightly coupled to ATP demand via **respiratory control**: if ADP is scarce (cell is energy-replete), the proton gradient builds up with nowhere to discharge, and electron transport itself slows, since pumping further protons against an already-steep gradient becomes thermodynamically unfavourable.
 
 ### Uncoupling: when the gradient doesn't make ATP
 
-**Uncoupling proteins** (e.g. thermogenin/UCP1 in brown adipose tissue) provide an alternate path for protons to leak back across the inner membrane, bypassing ATP synthase entirely — the proton-motive force is dissipated as **heat** instead of ATP. This is the direct chemiosmotic mechanism behind non-shivering thermogenesis in hibernating and cold-adapted mammals, and a useful conceptual check that the proton gradient itself, not oxygen consumption per se, is the immediate energy intermediate driving ATP synthesis.
+**Uncoupling proteins** (e.g. thermogenin/UCP1 in brown adipose tissue) provide an alternate path for protons to leak back across the inner membrane, bypassing ATP synthase entirely: the proton-motive force is dissipated as **heat** instead of ATP. This is the direct chemiosmotic mechanism behind non-shivering thermogenesis in hibernating and cold-adapted mammals, and a useful conceptual check that the proton gradient itself, not oxygen consumption per se, is the immediate energy intermediate driving ATP synthesis.
 
 ## Comparative Structures
 
