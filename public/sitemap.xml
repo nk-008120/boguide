@@ -323,11 +323,15 @@
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-2/q50/</loc>
   </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q11/</loc>
+  </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-a/q11/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q11/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-b/q11/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q12/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-a/q12/</loc>
   </url><url>
@@ -339,13 +343,19 @@
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-a/q13/</loc>
   </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q13/</loc>
+  </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-b/q13/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-b/q14/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-a/q14/</loc>
   </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q14/</loc>
+  </url><url>
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q14/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q15/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-a/q15/</loc>
   </url><url>
@@ -353,11 +363,15 @@
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q15/</loc>
   </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q16/</loc>
+  </url><url>
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q16/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-a/q16/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-b/q16/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q17/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-b/q17/</loc>
   </url><url>
@@ -371,11 +385,15 @@
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q18/</loc>
   </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q18/</loc>
+  </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-a/q19/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-b/q19/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q19/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q19/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q2/</loc>
   </url><url>
@@ -389,6 +407,8 @@
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-b/q20/</loc>
   </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q20/</loc>
+  </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-a/q20/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q20/</loc>
@@ -396,6 +416,8 @@
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q21/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-b/q21/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q21/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-a/q21/</loc>
   </url><url>
@@ -405,15 +427,21 @@
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q22/</loc>
   </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q22/</loc>
+  </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-b/q23/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-a/q23/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q23/</loc>
   </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q23/</loc>
+  </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-a/q24/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q24/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q24/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-b/q24/</loc>
   </url><url>
@@ -421,13 +449,19 @@
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q25/</loc>
   </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q25/</loc>
+  </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-b/q25/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q26/</loc>
   </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q26/</loc>
+  </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-b/q26/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-a/q26/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q27/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-a/q27/</loc>
   </url><url>
@@ -441,9 +475,13 @@
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-b/q28/</loc>
   </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q28/</loc>
+  </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-b/q29/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-a/q29/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q29/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q29/</loc>
   </url><url>
@@ -457,6 +495,8 @@
   </url><url>
     <loc>http://localhost:1313/papers/tbo/2023/first-stage/q3/</loc>
   </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q30/</loc>
+  </url><url>
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q30/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-a/q30/</loc>
@@ -469,9 +509,13 @@
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q31/</loc>
   </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q31/</loc>
+  </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-a/q32/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q32/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q32/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-b/q32/</loc>
   </url><url>
@@ -479,13 +523,19 @@
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-b/q33/</loc>
   </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q33/</loc>
+  </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-a/q33/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q34/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q34/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-b/q34/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-a/q34/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q35/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q35/</loc>
   </url><url>
@@ -499,11 +549,17 @@
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-b/q36/</loc>
   </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q36/</loc>
+  </url><url>
     <loc>http://localhost:1313/papers/ibo/2022/theoretical-1/q37/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-b/q37/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-a/q37/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q37/</loc>
+  </url><url>
+    <loc>http://localhost:1313/papers/ibo/2019/theoretical-a/q38/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2024/theoretical-b/q38/</loc>
   </url><url>

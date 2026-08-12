@@ -136,11 +136,21 @@
       <description>
         
         
-        &lt;p&gt;&lt;a class=&#34;papers-nav-btn&#34; href=&#34;http://localhost:1313/bioclash/&#34; style=&#34;display:inline-block;margin-bottom:1.5rem;&#34;&gt;← Back to BiOClash&lt;/a&gt;&lt;/p&gt;
+        &lt;aside class=&#34;hextra-sidebar-container&#34; hidden&gt;&lt;/aside&gt;
+&lt;div id=&#34;bioclash-round-leaderboard-root&#34; class=&#34;bioclash-page bioclash-round-leaderboard-page&#34;&gt;
+&lt;div class=&#34;bioclash-round-leaderboard-bg&#34; aria-hidden=&#34;true&#34;&gt;&lt;/div&gt;
+&lt;div class=&#34;bioclash-case-header&#34;&gt;
+  &lt;p class=&#34;bioclash-case-header-agency&#34;&gt;TIME VARIANCE AUTHORITY&lt;/p&gt;
+  &lt;p class=&#34;bioclash-case-header-division&#34;&gt;SACRED TIMELINE ARCHIVES · CASE FILE MB-01&lt;/p&gt;
+  &lt;p class=&#34;bioclash-case-header-mark&#34;&gt;B I O C L A S H&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;bioclash-panel&#34;&gt;
+&lt;p&gt;&lt;a class=&#34;papers-nav-btn&#34; href=&#34;http://localhost:1313/bioclash/&#34; style=&#34;display:inline-block;margin-bottom:1.5rem;&#34;&gt;← Back to BiOClash&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This round&amp;rsquo;s placements, entered once grading concludes — see the &lt;a
     href=&#34;http://localhost:1313/papers/leaderboard/&#34;&gt;BiOClash Season
 Champions&lt;/a&gt; for the cumulative standing across every round this
 season.&lt;/p&gt;
+&lt;/div&gt;
 &lt;div id=&#34;bioclash-champions-root&#34; class=&#34;bioclash-page bioclash-champions-section&#34; data-round=&#34;mb-01&#34;&gt;
   &lt;div class=&#34;bioclash-champions-frame&#34;&gt;
     &lt;p class=&#34;bioclash-eyebrow&#34; id=&#34;bioclash-champions-eyebrow&#34;&gt;MB-01&lt;/p&gt;
@@ -157,6 +167,8 @@ season.&lt;/p&gt;
 &lt;/div&gt;
 &lt;script src=&#34;http://localhost:1313/js/bioclash-champions.js&#34; defer&gt;&lt;/script&gt;
 
+&lt;/div&gt;
+&lt;script src=&#34;http://localhost:1313/js/bioclash-round-leaderboard-theme.js&#34; defer&gt;&lt;/script&gt;
 
       </description>
     </item>
