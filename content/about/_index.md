@@ -4,7 +4,79 @@ title: "About BiOGuide"
 
 ## 📊 Recent Updates
 
-{{< recent-updates >}}
+<div class="recent-updates">
+  <div class="recent-update-card recent-update-newest">
+    <span class="recent-update-badge">NEW</span>
+    <div class="recent-update-icon" aria-hidden="true"></div>
+    <div class="recent-update-body">
+      <div class="recent-update-meta">
+        <span class="recent-update-date">Aug 2026</span>
+        <span class="recent-update-contributor">Nishit Kalani</span>
+      </div>
+      <p class="recent-update-text"><a href="/ai_attestation.txt">AI Transparency Attestation</a> — a full public disclosure of where and how AI tools were used across the site, published per EU AI Act Article 50's transparency principles.</p>
+    </div>
+  </div>
+  <div class="recent-update-card">
+    <div class="recent-update-icon" aria-hidden="true"></div>
+    <div class="recent-update-body">
+      <div class="recent-update-meta">
+        <span class="recent-update-date">Aug 2026</span>
+        <span class="recent-update-contributor">Nishit Kalani</span>
+      </div>
+      <p class="recent-update-text"><a href="/discussions/">Discussions</a> — open feedback and comment threads for the whole community, no gatekeeping to read, an account to post.</p>
+    </div>
+  </div>
+  <div class="recent-update-card">
+    <div class="recent-update-icon" aria-hidden="true"></div>
+    <div class="recent-update-body">
+      <div class="recent-update-meta">
+        <span class="recent-update-date">Aug 2026</span>
+        <span class="recent-update-contributor">Nishit Kalani</span>
+      </div>
+      <p class="recent-update-text"><a href="/bioclash/">BiOClash</a> — an original biology competition we're building, plus a Champions leaderboard on the <a href="/papers/leaderboard/">Hall of Fame</a> page ready for Season 1's results.</p>
+    </div>
+  </div>
+  <div class="recent-update-card">
+    <div class="recent-update-icon" aria-hidden="true"></div>
+    <div class="recent-update-body">
+      <div class="recent-update-meta">
+        <span class="recent-update-date">Aug 2026</span>
+        <span class="recent-update-contributor">Nishit Kalani</span>
+      </div>
+      <p class="recent-update-text">Accounts, profiles, and a Hall of Fame leaderboard for BiOrchive Timed Attempts — completely optional, everything still works without logging in.</p>
+    </div>
+  </div>
+  <div class="recent-update-card">
+    <div class="recent-update-icon" aria-hidden="true"></div>
+    <div class="recent-update-body">
+      <div class="recent-update-meta">
+        <span class="recent-update-date">Aug 2026</span>
+        <span class="recent-update-contributor">Nishit Kalani</span>
+      </div>
+      <p class="recent-update-text">Cell &amp; Molecular Biology (23 pages) — complete with 80+ images and interactive widgets.</p>
+    </div>
+  </div>
+  <div class="recent-update-card">
+    <div class="recent-update-icon" aria-hidden="true"></div>
+    <div class="recent-update-body">
+      <div class="recent-update-meta">
+        <span class="recent-update-date">Aug 2026</span>
+        <span class="recent-update-contributor">Nishit Kalani</span>
+      </div>
+      <p class="recent-update-text">Ethology (9 pages) — complete with 18 interactive widgets.</p>
+    </div>
+  </div>
+  <div class="recent-update-card">
+    <div class="recent-update-icon" aria-hidden="true"></div>
+    <div class="recent-update-body">
+      <div class="recent-update-meta">
+        <span class="recent-update-date">Jul 2026</span>
+        <span class="recent-update-contributor">Nishit Kalani</span>
+      </div>
+      <p class="recent-update-text">Plant Anatomy (10 pages) — complete with 48 images and 20 interactive widgets.</p>
+    </div>
+  </div>
+</div>
 
 ## Contacts:
 

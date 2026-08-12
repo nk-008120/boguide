@@ -3893,27 +3893,9 @@ html.dark .discussions-comment {
   margin: 0.4rem 0 0;
 }
 
-/* ===================================================================
-   24. BIOCLASH ATTEMPT DELIVERY — content/bioclash/mb-01/attempt/index.md
-   The timed-attempt UI itself. Reuses .bioclash-page's --bc-* variables
-   (defined in section 15) rather than redefining the palette, so this
-   inherits the same crimson/gold/parchment identity as the landing page
-   without duplicating color decisions. bioclash-attempt.js forces
-   html.dark for the duration of an attempt (removing "light"/"favourite"),
-   so the dark-mode --bc-* values below are what actually render here in
-   practice — the light-mode fallback still exists for anyone hitting this
-   page's HTML with JS disabled. */
+
 #bioclash-attempt-root { position: relative; }
 
-/* Removes the ONLY interactive path to changing the theme while an
-   attempt is active — bioclash-attempt.js adds this body class. Without
-   this, the sitewide theme-toggle button in the navbar would still be
-   clickable here; using it would write a new value to localStorage
-   (assets/js/core/theme.js), silently changing the visitor's theme on
-   every OTHER page too, even though the MutationObserver would keep
-   forcing this one page back to dark regardless. Hiding the control
-   outright is simpler and more certain than trying to intercept every way
-   its click handler could fire. */
 body.bioclash-attempt-active .hextra-theme-toggle,
 body.bioclash-leaderboard-active .hextra-theme-toggle,
 body.bioclash-landing-active .hextra-theme-toggle,
@@ -4337,4 +4319,109 @@ html.dark .bioclash-extend-btn {
 .bioclash-part-nav-btn:disabled {
   opacity: 0.4;
   cursor: not-allowed;
+}
+.recent-updates {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0.5rem 0 0;
+}
+
+.recent-update-card {
+  position: relative;
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  padding: 1rem 1.1rem;
+  background: #ffffff;
+  border: 1px solid #e9e9f0;
+  border-left: 3px solid #8965c4;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.recent-update-card:hover {
+  transform: translateX(2px);
+  box-shadow: 0 4px 12px rgba(137, 101, 196, 0.12);
+}
+
+.recent-update-newest {
+  border-left-color: #c9971f;
+  background: linear-gradient(135deg, rgba(201, 151, 31, 0.06), #ffffff 60%);
+}
+
+.recent-update-badge {
+  position: absolute;
+  top: -0.55rem;
+  right: 0.9rem;
+  background: #c9971f;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+}
+
+.recent-update-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.recent-update-body {
+  min-width: 0;
+}
+
+.recent-update-meta {
+  display: flex;
+  gap: 0.65rem;
+  align-items: baseline;
+  margin-bottom: 0.25rem;
+}
+
+.recent-update-date {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 0.78rem;
+  color: #8965c4;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.recent-update-contributor {
+  font-size: 0.78rem;
+  color: #94a3b8;
+}
+
+.recent-update-text {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #334155;
+}
+
+/* Dark mode */
+html.dark .recent-update-card {
+  background: #1a1a2e;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+html.dark .recent-update-newest {
+  background: linear-gradient(135deg, rgba(201, 151, 31, 0.1), #1a1a2e 60%);
+}
+html.dark .recent-update-text {
+  color: #cbd5e1;
+}
+html.dark .recent-update-contributor {
+  color: #64748b;
+}
+
+@media (max-width: 560px) {
+  .recent-update-card {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
 }
