@@ -1,9 +1,10 @@
 AI ATTESTATION - BiOGuide
 
 As of August 13th 2026, 
-Committing to the transparency principles of the EU AI Act (Article 50) and its aligned Code of Practice on Transparency of AI-Generated Content,
+Committing to the transparency principles of the EU AI Act (Article 50)(Implemented on August 2nd 2026) and its aligned Code of Practice on Transparency of AI-Generated Content,
 BiOGuide is setting in place a new policy of watermarking AI Generated content that has been, is being, or will be used at the platform.
 This includes a declaration of all AI Generated content in the website till date and a new beginning with a detailed log of each update's content and help used from AI assistance tools, along with steps toward verification of minimal AI involvement by:
+Note that this process had started under EU directives on 2nd of August 2026, but we have finally compiled enough changes, dates, and their logs and transcripts to push forward with this setup and make it public.
 1. Implementing a GPG4Win Kleopatra certificate on each commit from 12th August 2026. In this process, all 131 previous commits were removed. Proof of those commits can be seen in backup-unwanted-state branch and in Production logs.
 2. Implementing C2PA (https://c2pa.org/) Standards on all available files in the BiOGuide repository. Implementation in progress, completing by August 19th 2026, this document will be updated.
 3. Maintaining a changes log with detailed commit messages. Can be found on github itself.
