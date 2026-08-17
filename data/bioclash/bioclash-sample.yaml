@@ -11,7 +11,7 @@ extensionCostSchedule: []
 extensionBonusCeiling: 0
 
 parts:
-  - id: sample-1
+  - id: sample-1-commit
     name: "SAMPLE 1 — Cell & Molecular Biology: The Heresy of Protein-Only Inheritance"
     marks: 9
     intro: >
@@ -28,7 +28,7 @@ parts:
     blocks:
       - id: s1-q0q1
         locksAfterSubmit: true
-        reveals: s1-reveal1
+        reveals: [s1-reveal1, s1-q2q3]
         lockWarning: "Once you proceed past this point, you cannot return and change your answers here."
         components:
           - key: s1-q0
@@ -44,7 +44,7 @@ parts:
                 text: "Fractions Y and Z"
               - key: D
                 text: "Fractions X and Z"
-            correctKey: "D"  # not explicitly stated in the source document — needs your input
+            correctKey: D
           - key: s1-q1
             type: free_text
             marks: 3
@@ -53,6 +53,10 @@ parts:
               above, is the infectious agent's essential component a nucleic acid, a protein,
               or does it require both? Justify your choice.
 
+  - id: sample-1-reveal
+    name: "SAMPLE 1 — The Reveal"
+    marks: 0
+    blocks:
       - id: s1-reveal1
         type: reveal_content
         content: >
@@ -60,6 +64,10 @@ parts:
           PrP. No nucleic acid is required for it to propagate, which is exactly what the
           resistance-to-nuclease/sensitivity-to-protease pattern above predicts.
 
+  - id: sample-1-followup
+    name: "SAMPLE 1 — Following the Mechanism"
+    marks: 0
+    blocks:
       - id: s1-q2q3
         locksAfterSubmit: false
         components:
@@ -82,7 +90,7 @@ parts:
                 text: "It demonstrated that carbohydrates act as the primary hereditary template in mammalian nervous systems."
               - key: E
                 text: "It claimed a protein alone, without DNA or RNA, could store and transmit biological information and replication instructions."
-            correctKey: "E"  # E closely echoes the reveal text above and is my best guess, but not explicitly confirmed in the source — please verify
+            correctKey: E
           - key: s1-q3
             type: free_text
             marks: 2
@@ -91,7 +99,7 @@ parts:
               nucleases will reduce transcription and translation. Suggest why this
               argument is or isn't correct.
 
-  - id: sample-2
+  - id: sample-2-q0
     name: "SAMPLE 2 — Animal Physiology: The Fish With No Red Blood"
     marks: 10
     intro: >
@@ -102,7 +110,7 @@ parts:
     blocks:
       - id: s2-q0
         locksAfterSubmit: true
-        reveals: s2-reveal1
+        reveals: [s2-reveal1, s2-q1]
         lockWarning: "Once you proceed past this point, you cannot return and change your answer here."
         components:
           - key: s2-q0
@@ -110,6 +118,10 @@ parts:
             marks: 2
             prompt: "State whether cold water holds more or less dissolved oxygen than warm water, and explain the chemical principle behind this."
 
+  - id: sample-2-reveal1
+    name: "SAMPLE 2 — First Reveal"
+    marks: 0
+    blocks:
       - id: s2-reveal1
         type: reveal_content
         content: >
@@ -118,9 +130,13 @@ parts:
           temperatures favour it, and gas molecules already in solution have less kinetic
           energy to escape back out of it.
 
+  - id: sample-2-q1
+    name: "SAMPLE 2 — Reading the Graph"
+    marks: 0
+    blocks:
       - id: s2-q1
         locksAfterSubmit: true
-        reveals: s2-reveal2
+        reveals: [s2-reveal2, s2-q2]
         lockWarning: "Once you proceed past this point, you cannot return and change your answer here."
         images:
           - src: "/BiOClashSamplePICS/icefish-oxygen-curve.png"
@@ -135,6 +151,10 @@ parts:
               oxygen-poor water? Justify your answer using the shapes of the two curves, the
               P₅₀ marked on the graph, and the given fact.
 
+  - id: sample-2-reveal2
+    name: "SAMPLE 2 — Second Reveal"
+    marks: 0
+    blocks:
       - id: s2-reveal2
         type: reveal_content
         content: >
@@ -144,8 +164,13 @@ parts:
           water, pO₂ would be too low for the dissolved-only curve to deliver sufficient
           oxygen at all.
 
+  - id: sample-2-q2
+    name: "SAMPLE 2 — Closing the Gap"
+    marks: 0
+    blocks:
       - id: s2-q2
         locksAfterSubmit: false
+        reveals: [s2-reveal3]
         components:
           - key: s2-q2
             type: mcq
@@ -170,6 +195,10 @@ parts:
                 text: "(1) unusually large blood volume, (2) an enlarged heart with high stroke volume, and (3) scaleless, densely vascularised skin enabling cutaneous gas exchange."
             correctKey: D
 
+  - id: sample-2-reveal3
+    name: "SAMPLE 2 — Final Reveal"
+    marks: 0
+    blocks:
       - id: s2-reveal3
         type: reveal_content
         content: >
