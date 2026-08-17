@@ -28,7 +28,7 @@ parts:
     blocks:
       - id: s1-q0q1
         locksAfterSubmit: true
-        reveals: [s1-reveal1, s1-q2q3]
+        reveals: [s1-reveal1, s1-q2q3, s2-q0]
         lockWarning: "Once you proceed past this point, you cannot return and change your answers here."
         components:
           - key: s1-q0
@@ -169,7 +169,7 @@ parts:
     marks: 0
     blocks:
       - id: s2-q2
-        locksAfterSubmit: false
+        locksAfterSubmit: true
         reveals: [s2-reveal3]
         components:
           - key: s2-q2
