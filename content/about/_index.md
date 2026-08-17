@@ -5,6 +5,7 @@ title: "About BiOGuide"
 ## 📊 Recent Updates
   <div class="recent-update-card">
     <div class="recent-update-icon" aria-hidden="true"></div>
+    <span class="recent-update-badge">NEW</span>
     <div class="recent-update-body">
       <div class="recent-update-meta">
         <span class="recent-update-date">Aug 2026</span>
@@ -13,7 +14,6 @@ title: "About BiOGuide"
       <p class="recent-update-text">Senior Partner announced and BiOClash Sample problem and test-taking test platform launched! Give a visit at https://bioguide.world/bioclash/bioclash-sample/attempt/</p>
     </div>
   </div>
-</div>
 <div class="recent-updates">
   <div class="recent-update-card recent-update-newest">
     <span class="recent-update-badge">NEW</span>
@@ -152,13 +152,26 @@ Our chain of command is somewhat summarised by <a href = "https://drive.google.c
      See the comment block right after this section for exactly what each
      field does and how to add/remove people. -->
 
-{{< team-member name="Nishit Kalani" role="Founder, Owner & Managing Partner" avatar="/nkavat.jpg">}}
+{{< team-member name="Nishit Kalani" role="Founder, Owner & Managing Partner" avatar="/nkavat.jpg" since="June 12th 2026">}}
 I'm a high schooler in India who kept wishing a resource like this already existed while preparing for the International Biology Olympiad (Silver, 2026), so I built it myself. Astronomy was actually where I started (Gold, IOAA Jr 2025), and I've since qualified for the national selection camps in both Chemistry, Astronomy and Mathematics too; though biology is the one that stuck, which is probably why I can't help connecting it back to the other two more than a syllabus usually allows. Outside this site, I split my time between chess, code,piano, tabla, violin and the occasional very average sketch. If something on here doesn't make sense or you just want to talk shop, find me at r6394175@gmail. If you find which star is in the image above, begin the mail with it's name, and wait for a surprise!
 {{< /team-member >}}
-{{< team-member name="Bhavyaa Gunwal" role="Senior Partner" avatar="/bgavat.jpg">}}
+{{< team-member name="Bhavyaa Gunwal" role="Senior Partner" avatar="/bgavat.jpg" since="August 2nd 2026">}}
 Hi, I’m Bhavyaa. I just finished grade 12 in India but still not sure what to do next—probably medicine here, though a transfer to a good uni abroad doesn’t sound too bad either. I’ve always loved biology, even though my parents wanted me to go for maths. This interest earned me a few trips to IBO and IJSO, but I couldn’t have possibly done this without my GOATs: Holly Jackson and Olivia Rodrigo (Livies assemble). I’m passable at badminton, slowly learning taekwondo, and quietly curious about drama and instrumental music, even if I can’t play a note yet. And BiOGuide? it’s the resource 13 year old me would have killed for— future-you will thank you for leaning on it.
 {{< /team-member >}}
-
+{{< team-member name="Soumil Maity" role="Associate (Mike Ross Class)" avatar="/smavat.jpg" since="August 17th 2026">}}
+Hi! I’m Soumil, member of the Indian team and a Silver medalist at the 2026 IBO. Biology has always intrigued me, even though astronomy was what got me into Olympiads. You can expect me to remember important biochemical pathways, but will not be able to tell you what I had for lunch. If you don’t find me toiling away preparing for NEET, you can find me playing badminton, football, cricket or goofing around with my friends (at the goated DAV ground). I can already envision the 'aura' of BiOGuide among future biologists. Have fun exploring the what, why and how of life (perhaps with the occasional torment of the questions)!!
+Currently Working On: Making the Notes@BiOGuide a better place by collecting a vast pool of interesting previous problems!
+{{< /team-member >}}
+{{< team-member name="Bhanav Namboodiri" role="Associate (Mike Ross Class)" avatar="/bnavat.jpg" since="August 18th 2026">}}
+Currently Working On: Increasing the output of BiOGuide by proficiently handling the BiOBytes initiative! Making BiOGuide fun, and much more than just a learning platform for Biology Olympiads
+{{< /team-member >}}
+{{< team-member name="Saisha Jain" role="Associate (Mike Ross Class)" since="August 18th 2026">}}
+Currently Working On: Helping in User Interface and UX betterment by weekly brainstorming on new possibilities, also contributing to the vast pool of previous problems!
+{{< /team-member >}}
+{{< team-member name="Shourya Bansal" role="Associate (Mike Ross Class)" avatar="/sbavat.png" since="August 18th 2026">}}
+I work at the intersection of biophysics, AI/LLM modelling, computational biology, and cardiology, with research exposure through IIT, MIT, harvard ,TIFR etc . . As an OCSC 2026 (IBO) participant, NSEB national Top 1% achiever, DST , csir research winner etc.worked on bio-informatics, haemodynamics, BCI-NLP, LSTM/RL, and interdisciplinary biomedical research.
+Currently Working On: Making the whole website a better place by reviewing content thoroughly throughout the website and submitting weekly recommendations!
+{{< /team-member >}}
 ## Frequently Asked Questions
 
 {{< faq-item q="Is BioGuide free to use?" >}}

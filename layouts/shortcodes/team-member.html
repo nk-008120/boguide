@@ -2,18 +2,21 @@
      Usage:
        {{< team-member name="Full Name" role="Founder & Author"
                         avatar="/team/photo.jpg" website="https://..."
-                        discord="https://discord.gg/..." github="https://github.com/..." >}}
+                        discord="https://discord.gg/..." github="https://github.com/..."
+                        since="Aug 2026" >}}
        Bio paragraph — plain markdown, so *italics*, **bold**, and
        [links](https://...) all work same as anywhere else in content.
        {{< /team-member >}}
      `avatar` is optional — omit it and the circle shows the person's
-     initials on the lilac/sage gradient instead of a broken image. */ -}}
+     initials on the lilac/sage gradient instead of a broken image.
+     `since` is optional — omit it and no badge is shown. */ -}}
 {{- $name := .Get "name" | default "Team Member" -}}
 {{- $role := .Get "role" -}}
 {{- $avatar := .Get "avatar" -}}
 {{- $website := .Get "website" -}}
 {{- $discord := .Get "discord" -}}
 {{- $github := .Get "github" -}}
+{{- $since := .Get "since" -}}
 
 {{- $initials := "" -}}
 {{- range first 2 (split $name " ") -}}
@@ -31,6 +34,7 @@
   <div class="team-info">
     <p class="team-name">{{ $name }}</p>
     {{- with $role }}<p class="team-role">{{ . }}</p>{{ end }}
+    {{- with $since }}<span class="team-since">Since {{ . }}</span>{{ end }}
     <div class="team-bio">{{ .Inner | markdownify }}</div>
     {{- if or $website $discord $github }}
     <div class="team-links">

@@ -4425,3 +4425,21 @@ html.dark .recent-update-contributor {
     gap: 0.4rem;
   }
 }
+.team-since {
+  display: inline-block;
+  font-family: 'Fraunces', serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #8965c4;
+  background: rgba(137, 101, 196, 0.08);
+  border: 1px solid rgba(137, 101, 196, 0.25);
+  border-radius: var(--radius-pill);
+  padding: 0.15rem 0.65rem;
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.02em;
+}
+html.dark .team-since {
+  color: #c9b7e8;
+  background: rgba(201, 183, 232, 0.08);
+  border-color: rgba(201, 183, 232, 0.3);
+}
