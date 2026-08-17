@@ -20,7 +20,7 @@ syllabus_tags: ["IBO", "USABO", "biochemistry"]
 
 Cellular reactions proceed only if net **ΔG < 0** (exergonic). Many biosynthetic reactions the cell needs are individually endergonic (ΔG > 0); the cell drives them forward by **coupling** them to a strongly exergonic reaction, almost always **ATP hydrolysis** (ΔG°′ ≈ −30.5 kJ/mol), so the *combined* reaction is exergonic overall. ATP is therefore best understood not as "energy" itself but as a **shared intermediate** that couples energy-releasing catabolic reactions to energy-requiring anabolic ones.
 
-### Stage 1 — Glycolysis (cytoplasm, universal to nearly all life)
+### Stage 1, Glycolysis (cytoplasm, universal to nearly all life)
 
 Net reaction: one glucose (6C) is split and oxidised to **two pyruvate** (3C each), with net production of **2 ATP** (substrate-level phosphorylation: direct enzymatic phosphate transfer to ADP, no membrane or electron transport chain involved) and **2 NADH** per glucose. Glycolysis has an energy-investment phase (2 ATP consumed, phosphorylating the sugar to trap it in the cell and destabilise it for cleavage) followed by an energy-payoff phase (4 ATP produced, net +2). It requires no oxygen and no mitochondria, which is why it is universal across nearly all known life, including strict anaerobes.
 
@@ -33,7 +33,7 @@ Net reaction: one glucose (6C) is split and oxidised to **two pyruvate** (3C eac
 
 Glycolysis alone would rapidly stall once the cell's finite NAD⁺ pool is fully reduced to NADH, since glycolysis requires NAD⁺ as an input. **Fermentation** exists purely to regenerate NAD⁺, not to extract further useful energy: yeast/plant **alcoholic fermentation** reduces pyruvate to ethanol + CO₂; animal (and some bacterial) **lactic acid fermentation** reduces pyruvate directly to lactate. Neither pathway produces additional ATP beyond glycolysis's own 2 ATP: their entire function is regenerating the NAD⁺ that lets glycolysis keep running.
 
-### Stage 2 — Pyruvate oxidation and the TCA (citric acid/Krebs) cycle (mitochondrial matrix)
+### Stage 2, Pyruvate oxidation and the TCA (citric acid/Krebs) cycle (mitochondrial matrix)
 
 Pyruvate is first oxidatively decarboxylated to **acetyl-CoA** (releasing 1 CO₂, generating 1 NADH per pyruvate, so 2 of each per original glucose), by the multi-enzyme **pyruvate dehydrogenase complex**. Acetyl-CoA then enters the **TCA cycle**, condensing with oxaloacetate to form citrate; each full turn releases 2 CO₂, and generates (per acetyl-CoA, so ×2 per glucose) **3 NADH, 1 FADH₂, and 1 GTP/ATP** (the cycle's one substrate-level phosphorylation step), while regenerating oxaloacetate to accept the next acetyl-CoA. The TCA cycle is the convergence point for carbohydrate, fat, and (via the deamination products described in [Amino Acids & Protein Chemistry Fundamentals](../amino-acids-protein-chemistry/)) amino acid catabolism: all three fuel classes ultimately feed carbon into this one cyclic pathway.
 
@@ -42,7 +42,7 @@ Pyruvate is first oxidatively decarboxylated to **acetyl-CoA** (releasing 1 CO�
 
 **Regulation**: high NADH/ATP allosterically inhibits both pyruvate dehydrogenase and the TCA cycle's own rate-limiting enzyme (isocitrate dehydrogenase), the same "abundant energy signals slow further extraction" logic as PFK-1 regulation above.
 
-### Stage 3 — Oxidative phosphorylation (inner mitochondrial membrane)
+### Stage 3, Oxidative phosphorylation (inner mitochondrial membrane)
 
 This is where the large majority of ATP is actually produced, via two coupled processes:
 
@@ -65,14 +65,14 @@ NADH and FADH₂ feed electrons in at different points of the chain (FADH₂ ent
 | Stage | Location | O₂ required? | ATP mechanism | Net ATP (direct) | Net NADH/FADH₂ |
 |---|---|---|---|---|---|
 | Glycolysis | Cytoplasm | No | Substrate-level | 2 (net) | 2 NADH |
-| Pyruvate oxidation | Mitochondrial matrix | Indirectly (feeds O₂-dependent stage) | — | 0 | 2 NADH (per glucose) |
+| Pyruvate oxidation | Mitochondrial matrix | Indirectly (feeds O₂-dependent stage) |, | 0 | 2 NADH (per glucose) |
 | TCA cycle | Mitochondrial matrix | Indirectly | Substrate-level (1 step) | 2 GTP/ATP (per glucose) | 6 NADH + 2 FADH₂ (per glucose) |
 | Oxidative phosphorylation | Inner mitochondrial membrane | Yes (terminal electron acceptor) | Chemiosmotic | Majority of total ATP yield | Consumes all NADH/FADH₂ produced above |
 
 ## Common Exam Questions
 
 - "Why does fermentation not produce more ATP?": the correct framing is that fermentation's entire purpose is **NAD⁺ regeneration**, not additional energy extraction; the ATP yield stays at glycolysis's 2 ATP regardless.
-- "Where does most of a cell's ATP actually come from?" — oxidative phosphorylation (chemiosmosis via ATP synthase), not glycolysis or the TCA cycle's direct substrate-level phosphorylation steps.
+- "Where does most of a cell's ATP actually come from?", oxidative phosphorylation (chemiosmosis via ATP synthase), not glycolysis or the TCA cycle's direct substrate-level phosphorylation steps.
 - Distinguishing **substrate-level phosphorylation** (direct enzymatic transfer, seen in glycolysis and one TCA step) from **oxidative phosphorylation** (indirect, via a proton gradient and ATP synthase) is one of the most frequently tested single distinctions in this entire topic.
 - "What happens to ATP synthesis if a chemical uncouples the proton gradient from ATP synthase (e.g. 2,4-dinitrophenol)?": electron transport and O₂ consumption can continue or even accelerate, but ATP yield collapses because the gradient is dissipated as heat instead of driving ATP synthase, a classic mechanism-based pharmacology/toxicology question.
 

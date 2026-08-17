@@ -1,7 +1,7 @@
 ---
 title: "Sex Determination & Sex-Linked Inheritance"
 weight: 4
-description: "The major chromosomal sex-determination systems (XY, ZW, XO, haplodiploidy), how dosage compensation equalizes X-linked gene expression between sexes, and the distinctive inheritance patterns — sex-linked, sex-limited, and sex-influenced — that follow from a gene's location on a sex chromosome."
+description: "The major chromosomal sex-determination systems (XY, ZW, XO, haplodiploidy), how dosage compensation equalizes X-linked gene expression between sexes, and the distinctive inheritance patterns, sex-linked, sex-limited, and sex-influenced, that follow from a gene's location on a sex chromosome."
 difficulty: "intermediate"
 prerequisites: ["Extensions-of-Mendelian-Inheritance"]
 syllabus_tags: ["IBO", "USABO", "genetics", "transmission-genetics"]
@@ -12,7 +12,7 @@ syllabus_tags: ["IBO", "USABO", "genetics", "transmission-genetics"]
 
 ## Overview
 
-Most of the crosses in the previous two pages implicitly assumed every gene is on an **autosome** (a chromosome present in the same number in both sexes), where Mendel's rules apply without modification. Genes carried on a **sex chromosome** — present in different copy numbers in the two sexes — follow distinctive inheritance patterns that are among the most heavily tested topics in transmission genetics. This page covers how sex itself is chromosomally determined across different lineages, how cells compensate for the resulting dosage imbalance, and the three related-but-distinct inheritance patterns (sex-linked, sex-limited, sex-influenced) that a gene's relationship to sex can produce.
+Most of the crosses in the previous two pages implicitly assumed every gene is on an **autosome** (a chromosome present in the same number in both sexes), where Mendel's rules apply without modification. Genes carried on a **sex chromosome**, present in different copy numbers in the two sexes, follow distinctive inheritance patterns that are among the most heavily tested topics in transmission genetics. This page covers how sex itself is chromosomally determined across different lineages, how cells compensate for the resulting dosage imbalance, and the three related-but-distinct inheritance patterns (sex-linked, sex-limited, sex-influenced) that a gene's relationship to sex can produce.
 
 ## Key Concepts
 
@@ -23,7 +23,7 @@ Different lineages determine sex using entirely different chromosomal logic, and
 - **XY system** (mammals, including humans, and *Drosophila*): females are the homogametic sex (XX), males are heterogametic (XY). In mammals, the Y chromosome carries the *SRY* gene, whose presence actively triggers male development, so sex is determined by *presence of Y*, not by the number of X chromosomes.
 - **ZW system** (birds, butterflies, some reptiles): the pattern is reversed, males are homogametic (ZZ), **females are heterogametic (ZW)**.
 - **XO system** (some insects, e.g. grasshoppers): there is no second sex chromosome at all, males are X0 (one X, no Y), females are XX; sex is determined by the ratio of X chromosomes to autosome sets.
-- **Haplodiploidy** (Hymenoptera — bees, ants, wasps): sex is determined by ploidy itself, not by a sex chromosome: fertilized (diploid) eggs develop as females, unfertilized (haploid) eggs develop as males. This has direct consequences for relatedness calculations covered in Ethology's [Kin Selection, Altruism & Eusociality](/resources/9-ethology/kin-selection-altruism-eusociality/).
+- **Haplodiploidy** (Hymenoptera, bees, ants, wasps): sex is determined by ploidy itself, not by a sex chromosome: fertilized (diploid) eggs develop as females, unfertilized (haploid) eggs develop as males. This has direct consequences for relatedness calculations covered in Ethology's [Kin Selection, Altruism & Eusociality](/resources/9-ethology/kin-selection-altruism-eusociality/).
 
 ![XY sex determination in humans and Drosophila (female XX homogametic, male XY heterogametic) compared to ZW sex determination in birds (male ZZ homogametic, female ZW heterogametic).](/GENETICSPICS/xy-zw-sex-determination-systems-comparison.jpg)
 *Source: pmfias.com*
@@ -40,13 +40,13 @@ Because the heterogametic sex has only one copy of most sex-chromosome genes whi
 
 ### Sex-linked inheritance
 
-A **sex-linked** (in practice, almost always **X-linked**, since the Y carries relatively few genes) trait shows a characteristic inheritance pattern because males are **hemizygous** for X-linked genes — carrying only one allele, with no second copy to mask a recessive one. Consequences:
+A **sex-linked** (in practice, almost always **X-linked**, since the Y carries relatively few genes) trait shows a characteristic inheritance pattern because males are **hemizygous** for X-linked genes, carrying only one allele, with no second copy to mask a recessive one. Consequences:
 
 - X-linked recessive traits (e.g. human red-green color blindness, hemophilia A) appear far more often in males than females, since a male needs only one copy of the recessive allele to be affected, while a female needs two.
-- **Criss-cross inheritance**: a male's X chromosome (and any X-linked alleles on it) always comes from his mother, never his father (who contributes the Y) — so an affected father cannot pass an X-linked trait directly to a son, but every daughter of an affected father is an obligate carrier (or affected, if recessive and mother also contributes the allele).
+- **Criss-cross inheritance**: a male's X chromosome (and any X-linked alleles on it) always comes from his mother, never his father (who contributes the Y), so an affected father cannot pass an X-linked trait directly to a son, but every daughter of an affected father is an obligate carrier (or affected, if recessive and mother also contributes the allele).
 - Reciprocal crosses (A female × a male vs. a female × A male) give **different** results for X-linked genes, unlike autosomal genes where reciprocal crosses are equivalent, this asymmetry is itself a diagnostic clue that a gene is X-linked.
 
-![X-linked recessive cross: an unaffected father and a carrier mother (one normal, one recessive-allele X) produce, among their children, an unaffected son, an unaffected (carrier) daughter, a carrier daughter, and an affected son — illustrating that only sons can be directly affected by the mother's carried allele.](/GENETICSPICS/x-linked-recessive-cross-carrier-mother-affected-son.jpg)
+![X-linked recessive cross: an unaffected father and a carrier mother (one normal, one recessive-allele X) produce, among their children, an unaffected son, an unaffected (carrier) daughter, a carrier daughter, and an affected son, illustrating that only sons can be directly affected by the mother's carried allele.](/GENETICSPICS/x-linked-recessive-cross-carrier-mother-affected-son.jpg)
 *Source: U.S. National Library of Medicine (via UNSW embryology)*
 
 ![Three-generation X-linked recessive pedigree, labeled individuals I-1 through III-15, showing the pattern recurring across generations with more affected males than affected females overall.](/GENETICSPICS/sex-linked-pedigree-criss-cross-inheritance-pattern.png)
@@ -57,7 +57,7 @@ A **sex-linked** (in practice, almost always **X-linked**, since the Y carries r
 Two related but distinct patterns are frequently confused with sex-linkage despite being **autosomal**:
 
 - **Sex-limited traits**: the gene is autosomal (present in both sexes equally), but the trait is expressed in only one sex due to hormonal or anatomical context, e.g. milk yield genes in cattle, expressed only in females, or hen-feathering/cock-feathering plumage genes in fowl.
-- **Sex-influenced traits**: the gene is autosomal, and *both* sexes can express the phenotype, but the dominance relationship between the two alleles differs by sex — human pattern baldness is the standard example, where the baldness allele behaves as dominant in males (heterozygotes go bald) but recessive in females (heterozygotes do not), because of differing hormonal environments.
+- **Sex-influenced traits**: the gene is autosomal, and *both* sexes can express the phenotype, but the dominance relationship between the two alleles differs by sex, human pattern baldness is the standard example, where the baldness allele behaves as dominant in males (heterozygotes go bald) but recessive in females (heterozygotes do not), because of differing hormonal environments.
 
 ![Sex-influenced pattern baldness: genotype-to-phenotype table (bb = normal hair in both sexes; Bb = bald in males, normal in females; BB = bald in both sexes), illustrated with male vs. female head diagrams for each genotype, plus the distinct male ("horseshoe") vs. female (diffuse thinning) baldness pattern shapes.](/GENETICSPICS/pattern-baldness-genotype-phenotype-table-by-sex.webp)
 *Source: dreamstime.com*
@@ -75,9 +75,9 @@ The diagnostic distinction from true sex-linkage: sex-limited and sex-influenced
 
 | Pattern | Gene location | Transmission | Example |
 |---|---|---|---|
-| Sex-linked | Sex chromosome (usually X) | Asymmetric — criss-cross, reciprocal crosses differ | Red-green color blindness |
-| Sex-limited | Autosome | Symmetric — expressed only in one sex | Milk yield in cattle |
-| Sex-influenced | Autosome | Symmetric — dominance differs by sex | Human pattern baldness |
+| Sex-linked | Sex chromosome (usually X) | Asymmetric, criss-cross, reciprocal crosses differ | Red-green color blindness |
+| Sex-limited | Autosome | Symmetric, expressed only in one sex | Milk yield in cattle |
+| Sex-influenced | Autosome | Symmetric, dominance differs by sex | Human pattern baldness |
 
 ## Common Exam Questions
 

@@ -1,7 +1,7 @@
 ---
 title: "Linkage, Recombination & Genetic Mapping"
 weight: 6
-description: "The genetic consequences of crossing over — how linked genes deviate from independent assortment, how recombination frequency is calculated from testcross data and converted into a genetic map, and the three-point testcross method used to order three linked genes and detect double crossovers."
+description: "The genetic consequences of crossing over, how linked genes deviate from independent assortment, how recombination frequency is calculated from testcross data and converted into a genetic map, and the three-point testcross method used to order three linked genes and detect double crossovers."
 difficulty: "advanced"
 prerequisites: ["Sex-Determination-Sex-Linked-Inheritance"]
 syllabus_tags: ["IBO", "USABO", "genetics", "chromosomal-genetics"]
@@ -12,7 +12,7 @@ syllabus_tags: ["IBO", "USABO", "genetics", "chromosomal-genetics"]
 
 ## Overview
 
-[Mendel's Laws & Probability in Genetics](../mendelian-inheritance-probability/) introduced independent assortment as a consequence of different gene pairs sitting on different homologous chromosome pairs. Genes that sit on the **same** chromosome do not assort independently, they are **linked**, and tend to be inherited together, except when **crossing over** during meiosis I physically exchanges segments between homologous chromosomes (see [Cell Cycle, Mitosis & Meiosis](/resources/1-cell-molecular/cell-cycle-mitosis-meiosis/) for the mechanistic event itself — the chiasma formed during prophase I). This page covers the *genetic consequences* of that mechanism: how linkage is detected from cross data, how the frequency of recombination is used to measure genetic distance, and how three linked genes can be ordered along a chromosome from a single testcross.
+[Mendel's Laws & Probability in Genetics](../mendelian-inheritance-probability/) introduced independent assortment as a consequence of different gene pairs sitting on different homologous chromosome pairs. Genes that sit on the **same** chromosome do not assort independently, they are **linked**, and tend to be inherited together, except when **crossing over** during meiosis I physically exchanges segments between homologous chromosomes (see [Cell Cycle, Mitosis & Meiosis](/resources/1-cell-molecular/cell-cycle-mitosis-meiosis/) for the mechanistic event itself, the chiasma formed during prophase I). This page covers the *genetic consequences* of that mechanism: how linkage is detected from cross data, how the frequency of recombination is used to measure genetic distance, and how three linked genes can be ordered along a chromosome from a single testcross.
 
 ## Key Concepts
 
@@ -34,11 +34,11 @@ For two genes assorting independently, a **dihybrid testcross** (AaBb × aabb) p
 $$ \text{RF} = \frac{\text{number of recombinant offspring}}{\text{total offspring}} \times 100\% $$
 {{< /eqbox >}}
 
-RF ranges from 0% (genes so close together that crossing over between them is never observed) to a **maximum of 50%**, at which point two genes are said to show **independent assortment** — indistinguishable from being on different chromosomes entirely, even if they are in fact on the same chromosome but very far apart. This 50% ceiling is a frequent conceptual trap: RF alone cannot distinguish "unlinked" from "linked but very far apart," since both produce the same 1:1:1:1 testcross pattern.
+RF ranges from 0% (genes so close together that crossing over between them is never observed) to a **maximum of 50%**, at which point two genes are said to show **independent assortment**, indistinguishable from being on different chromosomes entirely, even if they are in fact on the same chromosome but very far apart. This 50% ceiling is a frequent conceptual trap: RF alone cannot distinguish "unlinked" from "linked but very far apart," since both produce the same 1:1:1:1 testcross pattern.
 
 ### Map units and the genetic map
 
-**Recombination frequency is used directly as a measure of genetic distance**: 1% recombination frequency is defined as **1 map unit (m.u.)**, also called **1 centimorgan (cM)**. This relationship is empirical, not derived from first principles: it reflects the observation that crossover probability between two loci scales roughly with the physical distance separating them (for RF values well below the 50% ceiling; the relationship becomes non-linear and underestimates true distance at higher RF values, since multiple crossovers between distant loci can cancel out and go undetected — see below). A **genetic (linkage) map** orders genes along a chromosome and reports the map-unit distances between them, built up by summing pairwise recombination frequencies between adjacent markers.
+**Recombination frequency is used directly as a measure of genetic distance**: 1% recombination frequency is defined as **1 map unit (m.u.)**, also called **1 centimorgan (cM)**. This relationship is empirical, not derived from first principles: it reflects the observation that crossover probability between two loci scales roughly with the physical distance separating them (for RF values well below the 50% ceiling; the relationship becomes non-linear and underestimates true distance at higher RF values, since multiple crossovers between distant loci can cancel out and go undetected, see below). A **genetic (linkage) map** orders genes along a chromosome and reports the map-unit distances between them, built up by summing pairwise recombination frequencies between adjacent markers.
 
 ![A real genetic linkage map of wheat chromosome 2A, with molecular markers positioned along the chromosome at their calculated centimorgan (cM) distances from 0.0 to 160.3.](/GENETICSPICS/genetic-map-linkage-group-centimorgans.png)
 *Source: researchgate.net*
@@ -51,7 +51,7 @@ Mapping three linked genes simultaneously (rather than pairwise) is both more ef
 2. **Two single-crossover classes between genes 1-2** and **two single-crossover classes between genes 2-3** (intermediate frequency).
 3. **Two double-crossover classes** (least frequent): crossovers occurred in *both* intervals simultaneously.
 
-The **gene order** is determined by comparing the double-crossover class phenotypes to the parental class phenotypes: whichever gene's allele arrangement is *reversed* relative to the parental classes in the double-crossover offspring is the **middle gene** — since only the middle gene's position experiences two independent crossover events landing on either side of it.
+The **gene order** is determined by comparing the double-crossover class phenotypes to the parental class phenotypes: whichever gene's allele arrangement is *reversed* relative to the parental classes in the double-crossover offspring is the **middle gene**, since only the middle gene's position experiences two independent crossover events landing on either side of it.
 
 {{< youtube V39s7iqhexU >}}
 *Source: YouTube, "Three-point cross Gene Mapping || 4K Animation"*
@@ -73,9 +73,9 @@ A coefficient of coincidence of 1 means no interference (crossovers occur indepe
 
 | Recombination frequency | Interpretation |
 |---|---|
-| 0% | Genes effectively never separated by crossing over — extremely tightly linked |
+| 0% | Genes effectively never separated by crossing over, extremely tightly linked |
 | 1-49% | Linked; RF (%) = map distance in centimorgans |
-| 50% | Independent assortment — either on different chromosomes, or linked but far enough apart that multiple crossovers obscure the true distance |
+| 50% | Independent assortment, either on different chromosomes, or linked but far enough apart that multiple crossovers obscure the true distance |
 
 | Three-point testcross offspring class | Relative frequency | Crossover events |
 |---|---|---|
@@ -87,7 +87,7 @@ A coefficient of coincidence of 1 means no interference (crossovers occur indepe
 ## Common Exam Questions
 
 - "RF = 50% means the genes are unlinked" is an overstatement worth correcting precisely: it means the genes show independent assortment *in this dataset*, which is also consistent with linkage so distant that essentially every meiosis includes a crossover between them; only a three-point cross (or molecular data) can distinguish the two cases.
-- The three-point testcross gene-ordering logic — identify the middle gene as the one whose allele arrangement flips between the parental and double-crossover classes — is a frequently tested applied-reasoning skill; students who instead try to order genes purely from pairwise RF values will get an answer, but miss double crossovers and underestimate the true map distance across the full interval.
+- The three-point testcross gene-ordering logic, identify the middle gene as the one whose allele arrangement flips between the parental and double-crossover classes, is a frequently tested applied-reasoning skill; students who instead try to order genes purely from pairwise RF values will get an answer, but miss double crossovers and underestimate the true map distance across the full interval.
 - "Why is observed map distance always an underestimate of true physical distance at larger separations?": because multiple crossovers between the same two loci can restore the parental allele combination, making that meiotic event indistinguishable from no crossover at all; RF measures the *net* result, not the true number of crossover events.
 - Interference/coefficient-of-coincidence calculations are a common numeric exam question: always compute expected double-crossover frequency as the *product* of the two single-interval RFs, not their sum.
 

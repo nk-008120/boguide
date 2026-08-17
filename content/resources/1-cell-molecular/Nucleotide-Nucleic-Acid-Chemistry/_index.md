@@ -25,7 +25,7 @@ A **nucleotide** has three components: a nitrogenous base, a five-carbon (pentos
 Nitrogenous bases fall into two structural classes:
 
 - **Purines**, double-ring structures (fused six- and five-membered rings): **adenine (A)** and **guanine (G)**.
-- **Pyrimidines** — single six-membered ring: **cytosine (C)**, **thymine (T)**, and **uracil (U)**.
+- **Pyrimidines**, single six-membered ring: **cytosine (C)**, **thymine (T)**, and **uracil (U)**.
 
 Each purine pairs specifically with one pyrimidine via hydrogen bonding, **A with T (or U in RNA), G with C**, a pairing rule that is chemically, not arbitrarily, determined: the hydrogen bond donor/acceptor pattern only matches correctly in the A–T/A–U and G–C combinations, and pairing two purines together would sterically clash (too wide) while pairing two pyrimidines would leave them too far apart to hydrogen-bond. G–C pairs form **three** hydrogen bonds, A–T pairs form **two**: which is why GC-rich DNA regions have a measurably higher melting temperature ($T_m$) than AT-rich regions of the same length.
 
@@ -34,7 +34,7 @@ Each purine pairs specifically with one pyrimidine via hydrogen bonding, **A wit
 
 ### The sugar: ribose vs. deoxyribose
 
-**RNA** uses **ribose**; **DNA** uses **2′-deoxyribose**: the single chemical difference is the absence of a hydroxyl group at the 2′ carbon in DNA. This is not a cosmetic difference: the 2′-OH in RNA makes the sugar-phosphate backbone chemically more reactive and prone to alkaline/enzymatic hydrolysis, meaning **RNA is intrinsically less chemically stable than DNA** — a major reason DNA, not RNA, is the long-term hereditary information store in cellular life, while RNA's greater reactivity is co-opted functionally in ribozymes (catalytic RNA, whose 2′-OH groups can participate directly in phosphodiester bond chemistry).
+**RNA** uses **ribose**; **DNA** uses **2′-deoxyribose**: the single chemical difference is the absence of a hydroxyl group at the 2′ carbon in DNA. This is not a cosmetic difference: the 2′-OH in RNA makes the sugar-phosphate backbone chemically more reactive and prone to alkaline/enzymatic hydrolysis, meaning **RNA is intrinsically less chemically stable than DNA**, a major reason DNA, not RNA, is the long-term hereditary information store in cellular life, while RNA's greater reactivity is co-opted functionally in ribozymes (catalytic RNA, whose 2′-OH groups can participate directly in phosphodiester bond chemistry).
 
 ![Ribose (RNA sugar) vs. deoxyribose (DNA sugar) furanose rings, numbered 1'-5', with the 2' position highlighted: an -OH group in ribose vs. an -H in deoxyribose](/MCBBPICS/ribose-vs-deoxyribose.png)
 *Source: tutorchase.com*
@@ -52,7 +52,7 @@ Nucleotides are joined by **phosphodiester bonds**: the 5′-phosphate of one nu
 | Strandedness | Almost always double-stranded | Usually single-stranded (can fold intramolecularly) | Single-strandedness lets RNA adopt complex catalytic/structural folds (tRNA cloverleaf, ribozymes) that duplex DNA cannot |
 | Stability | High | Low | Matches DNA's role as permanent archive vs. RNA's role as disposable working copy |
 
-**Why thymine, not uracil, in DNA**: cytosine spontaneously deaminates to uracil at a low but non-negligible rate. If DNA used uracil natively, the cell's repair machinery could not distinguish "a uracil that belongs here" from "a uracil produced by cytosine deamination damage." Using thymine (uracil + a methyl group) as DNA's normal pyrimidine means *any* uracil found in DNA is unambiguously a deamination product, which base-excision repair (uracil-DNA glycosylase) can recognise and excise specifically — see [DNA Repair & Recombination](../dna-repair-recombination/). This is one of the clearest examples in all of biochemistry of a chemical detail existing specifically to support an error-correction mechanism.
+**Why thymine, not uracil, in DNA**: cytosine spontaneously deaminates to uracil at a low but non-negligible rate. If DNA used uracil natively, the cell's repair machinery could not distinguish "a uracil that belongs here" from "a uracil produced by cytosine deamination damage." Using thymine (uracil + a methyl group) as DNA's normal pyrimidine means *any* uracil found in DNA is unambiguously a deamination product, which base-excision repair (uracil-DNA glycosylase) can recognise and excise specifically, see [DNA Repair & Recombination](../dna-repair-recombination/). This is one of the clearest examples in all of biochemistry of a chemical detail existing specifically to support an error-correction mechanism.
 
 ## Comparative Structures
 
@@ -66,7 +66,7 @@ Nucleotides are joined by **phosphodiester bonds**: the 5′-phosphate of one nu
 ## Common Exam Questions
 
 - "Why does GC content affect DNA melting temperature?": always cite the *hydrogen bond count difference* (3 vs. 2), not simply "GC pairs are stronger" without the mechanistic reason.
-- "Why does DNA use thymine instead of uracil?" — the repair-signal argument (distinguishing genuine thymine from deaminated-cytosine-derived uracil) is the complete, examinable answer; "thymine is more stable" alone is an incomplete answer.
+- "Why does DNA use thymine instead of uracil?", the repair-signal argument (distinguishing genuine thymine from deaminated-cytosine-derived uracil) is the complete, examinable answer; "thymine is more stable" alone is an incomplete answer.
 - Questions describing an unfamiliar nucleic-acid-derived molecule (e.g. a modified nucleotide analog used as a drug) often hinge on identifying which chemical group (2′-OH presence/absence, base identity) has been altered and predicting the functional consequence by analogy to the DNA/RNA comparison above.
 
 ## Visual Reference
@@ -79,7 +79,7 @@ Nucleotides are joined by **phosphodiester bonds**: the 5′-phosphate of one nu
 
 **Static**
 
-*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Two items are not yet illustrated: a nucleotide structure diagram — the sourced candidate for this slot, `nucleotide-structure-diagram.jpg`, turned out to duplicate the ribose-vs-deoxyribose comparison already placed above rather than showing a full base+sugar+phosphate nucleotide, so it was not inserted (see `image-sources.md`) — and a phosphodiester backbone/5′→3′ directionality diagram, for which no image was sourced this round.)*
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Two items are not yet illustrated: a nucleotide structure diagram, the sourced candidate for this slot, `nucleotide-structure-diagram.jpg`, turned out to duplicate the ribose-vs-deoxyribose comparison already placed above rather than showing a full base+sugar+phosphate nucleotide, so it was not inserted (see `image-sources.md`), and a phosphodiester backbone/5′→3′ directionality diagram, for which no image was sourced this round.)*
 
 ## Practice Problems
 

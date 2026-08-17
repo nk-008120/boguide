@@ -21,7 +21,7 @@ Evolutionary theory is supported not by one single proof but by several genuinel
 ![Cetacean fossil series from Pakicetus (~50 mya, terrestrial) through Ambulocetus, Kutchicetus, and Rodhocetus (each progressively more aquatic-adapted, with hip bones no longer fused to the backbone) to Dorudon (~30 mya, fully aquatic, blowhole and flipper-like forelimbs), branching into the modern odontocete (toothed whale) and mysticete (baleen whale) lineages](/EVOLUTIONPICS/cetacean-fossil-series.png)
 *Source: National Geographic (via Facebook)*
 
-![Two reconstructed *Tiktaalik roseae* individuals shown alongside a smaller ancestral sarcopterygian fish for scale, illustrating the animal's mixed fish/tetrapod body plan — a flattened crocodile-like head, robust weight-bearing pectoral fins, and a scaled fish-like body and tail](/EVOLUTIONPICS/tiktaalik-skeletal-diagram.png)
+![Two reconstructed *Tiktaalik roseae* individuals shown alongside a smaller ancestral sarcopterygian fish for scale, illustrating the animal's mixed fish/tetrapod body plan, a flattened crocodile-like head, robust weight-bearing pectoral fins, and a scaled fish-like body and tail](/EVOLUTIONPICS/tiktaalik-skeletal-diagram.png)
 *Source: "The Prehistoric World" (Facebook)*
 
 ### Biogeography
@@ -39,12 +39,12 @@ Structural comparison across species distinguishes two categories of similarity,
 - **Analogous structures**: structures that resemble each other in function (and sometimes superficial form) because of **independent evolution under similar selective pressure (convergent evolution)**, not shared ancestry: insect wings and bird wings both enable flight but arose from entirely different developmental and anatomical origins (a cuticular outgrowth vs. a modified forelimb), so their resemblance is not evidence of a shared winged ancestor.
 - **Vestigial structures**: structures that are homologous to a fully functional structure in a related lineage but have been reduced and lost most or all of their ancestral function, retained only as a developmental remnant: the human **appendix** (homologous to a functional cecum used for cellulose digestion in herbivorous ancestors and relatives), **whale pelvic bones** (remnants of the hind-limb-bearing pelvis of the terrestrial ancestors documented in the fossil series above, no longer attached to any functional hind limb), and python vestigial hind-limb spurs are all evidence that a lineage's ancestors had a different, functional version of the same structure.
 
-![Pentadactyl forelimb homology across five mammals — human, bat, whale, cat, and horse — with the same six bone categories (humerus, ulna, radius, carpals, metacarpals, phalanges) color-coded identically in each limb despite their very different final functions (grasping, flight, swimming, walking)](/EVOLUTIONPICS/pentadactyl-limb-homology.png)
+![Pentadactyl forelimb homology across five mammals, human, bat, whale, cat, and horse, with the same six bone categories (humerus, ulna, radius, carpals, metacarpals, phalanges) color-coded identically in each limb despite their very different final functions (grasping, flight, swimming, walking)](/EVOLUTIONPICS/pentadactyl-limb-homology.png)
 *Source: Trends in Neurosciences*
 
 ### Comparative Embryology
 
-Related organisms often show far greater similarity in **early embryonic development** than in their final adult form, because developmental programs are conserved even after adult morphology diverges: all vertebrate embryos, including humans, transiently develop **pharyngeal (branchial) pouches/arches**, homologous to the structures that become gill slits and gill-supporting arches in fish but that develop instead into structures like the middle-ear bones and thymus in mammals, the shared embryonic structure is evidence of common ancestry even though the adult structures it produces look completely different across lineages. (Historical note, worth knowing to avoid a common misconception: this is **not** evidence that "ontogeny recapitulates phylogeny" in Haeckel's literal 19th-century sense — that specific strong claim, that an embryo replays its full adult ancestral forms in sequence, has been rejected; the modern, defensible claim is only that early developmental *stages and structures* are conserved due to shared ancestry, not that development is a literal replay of the adult ancestral sequence.)
+Related organisms often show far greater similarity in **early embryonic development** than in their final adult form, because developmental programs are conserved even after adult morphology diverges: all vertebrate embryos, including humans, transiently develop **pharyngeal (branchial) pouches/arches**, homologous to the structures that become gill slits and gill-supporting arches in fish but that develop instead into structures like the middle-ear bones and thymus in mammals, the shared embryonic structure is evidence of common ancestry even though the adult structures it produces look completely different across lineages. (Historical note, worth knowing to avoid a common misconception: this is **not** evidence that "ontogeny recapitulates phylogeny" in Haeckel's literal 19th-century sense, that specific strong claim, that an embryo replays its full adult ancestral forms in sequence, has been rejected; the modern, defensible claim is only that early developmental *stages and structures* are conserved due to shared ancestry, not that development is a literal replay of the adult ancestral sequence.)
 
 ![Comparative vertebrate embryo development across fish, chicken, pig, and human at three successive stages: stage I shows all four sharing the same pharyngeal arches, a prominent eye, and a tail; stage II shows fin development in fish alongside emerging limb buds in the other three; stage III shows each lineage's adult-distinguishing features (fins/tail fin in fish, beak in chicken, snout in pig, facial features and limb structure in human) diverging from the shared early plan](/EVOLUTIONPICS/vertebrate-embryo-pharyngeal-pouches.png)
 *Source: user-provided (originally hosted on Numerade)*
@@ -76,17 +76,17 @@ Sequence-level comparison provides the most quantitatively precise line of evide
 
 **Interactive**
 
-- **Homology vs. analogy structure sorter (drag-and-drop, HTML/JS, no new library)** — named structure pairs (tetrapod forelimb across species; insect wing vs. bird wing; shark fin vs. dolphin fin vs. tuna fin) are dragged into "homologous" or "analogous" bins, with immediate feedback and the underlying developmental origin revealed on a miss.
+- **Homology vs. analogy structure sorter (drag-and-drop, HTML/JS, no new library)**, named structure pairs (tetrapod forelimb across species; insect wing vs. bird wing; shark fin vs. dolphin fin vs. tuna fin) are dragged into "homologous" or "analogous" bins, with immediate feedback and the underlying developmental origin revealed on a miss.
 
 {{< iframe src="/homology-analogy-sorter.html" title="Homology vs. analogy structure sorter" height="480px" >}}
 
-- **Cetacean fossil series timeline explorer (interactive SVG/JS)** — a clickable timeline of *Pakicetus* → *Ambulocetus* → *Rodhocetus* → modern whale, where selecting each taxon highlights the specific skeletal changes (hind limb reduction, nostril migration) accumulated at that step, turning a static "whale evolved from a land mammal" claim into a stepwise, evidence-based sequence.
+- **Cetacean fossil series timeline explorer (interactive SVG/JS)**, a clickable timeline of *Pakicetus* → *Ambulocetus* → *Rodhocetus* → modern whale, where selecting each taxon highlights the specific skeletal changes (hind limb reduction, nostril migration) accumulated at that step, turning a static "whale evolved from a land mammal" claim into a stepwise, evidence-based sequence.
 
 {{< iframe src="/cetacean-timeline-explorer.html" title="Cetacean fossil series timeline explorer" height="420px" >}}
 
 **Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here)*
 
-*(No GULOP/GULO pseudogene image — the only candidate sourced framed GULOP inactivation as reversible epigenetic silencing rather than the fixed disabling coding mutation this page describes, and was dropped rather than inserted.)*
+*(No GULOP/GULO pseudogene image, the only candidate sourced framed GULOP inactivation as reversible epigenetic silencing rather than the fixed disabling coding mutation this page describes, and was dropped rather than inserted.)*
 
 ## Practice Problems
 

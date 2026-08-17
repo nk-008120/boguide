@@ -1,14 +1,14 @@
 ---
-title: "Q47 — Cancer Immunotherapy and Checkpoint Inhibitors"
+title: "Q47 - Cancer Immunotherapy and Checkpoint Inhibitors"
 ---
 
-{{< problem-meta category="Theoretical B" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/3-animal-physiology/immune-physiology/">Immune Physiology</a>
 </div>
 
-Cancer immunotherapy is a cancer treatment approach where the body's immune cells attack tumor cells. During their development, tumor cells accumulate many neoantigens (new antigens) — the more neoantigens present on the cell surface of tumor cells, the more efficiently immune cells destroy them. An "immune checkpoint" is the primary interaction between an immune cell and a tumor cell, in which the immune cell "decides" whether to attack the tumor cell or not.
+Cancer immunotherapy is a cancer treatment approach where the body's immune cells attack tumor cells. During their development, tumor cells accumulate many neoantigens (new antigens) - the more neoantigens present on the cell surface of tumor cells, the more efficiently immune cells destroy them. An "immune checkpoint" is the primary interaction between an immune cell and a tumor cell, in which the immune cell "decides" whether to attack the tumor cell or not.
 
 However, tumor cells can avoid immune surveillance by hijacking the physiological pathway controlling T-cell activity (Figure 1A). To prevent tumor cells from escaping immune attack, checkpoint inhibitors have been developed (Figure 1A).
 
@@ -23,4 +23,4 @@ On your answer sheet, indicate "T" for true statements and "F" for false ones.
 
 ---
 
-Question reproduced from **IBO 2024, Theoretical Exam Part B**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2024/theoretical-b-exam.pdf#page=71)
+Question reproduced from **IBO 2024, Theoretical Exam Part B**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2024/theoretical-b-exam.pdf#page=71)

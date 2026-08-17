@@ -1,7 +1,7 @@
 ---
 title: "Major Taxa Cross-Reference"
 weight: 6
-description: "The classification layer over structure already covered in Animal Anatomy — animal phyla and their defining synapomorphies, vertebrate class boundaries (including why traditional 'Reptilia' is paraphyletic), and a brief survey-level look at Plantae and Fungi — read together with the body-plan pages it cross-references rather than as a standalone structural account."
+description: "The classification layer over structure already covered in Animal Anatomy, animal phyla and their defining synapomorphies, vertebrate class boundaries (including why traditional 'Reptilia' is paraphyletic), and a brief survey-level look at Plantae and Fungi, read together with the body-plan pages it cross-references rather than as a standalone structural account."
 difficulty: "intermediate"
 prerequisites: ["Domains-Kingdoms"]
 syllabus_tags: ["IBO", "USABO", "biosystematics"]
@@ -52,8 +52,8 @@ This is not a purely academic distinction: it's a direct, concrete illustration 
 | Traditional (Linnaean) group | Cladistic status | Monophyletic replacement |
 |---|---|---|
 | "Reptilia" (excludes birds) | Paraphyletic | Sauropsida (includes birds) |
-| "Pisces" (excludes tetrapods) | Paraphyletic | No single valid replacement — fish-grade lineages are split across multiple clades within Vertebrata |
-| "Invertebrata" (all non-chordates) | Paraphyletic (excludes nothing coherent — really just "animals minus one phylum") | Not a valid taxon at all; used only informally |
+| "Pisces" (excludes tetrapods) | Paraphyletic | No single valid replacement, fish-grade lineages are split across multiple clades within Vertebrata |
+| "Invertebrata" (all non-chordates) | Paraphyletic (excludes nothing coherent, really just "animals minus one phylum") | Not a valid taxon at all; used only informally |
 | Protostomia / Deuterostomia | Both monophyletic (each unites a coherent developmental synapomorphy) | Already valid as drawn |
 
 ## Common Exam Questions
@@ -69,9 +69,9 @@ This is not a purely academic distinction: it's a direct, concrete illustration 
 
 **Interactive**
 
-- **Animal kingdom phylogeny explorer (Mermaid-based or SVG/JS click-through)** — a clickable cladogram of the nine phyla in the table above, branching at the acoelomate/pseudocoelomate/coelomate and protostome/deuterostome nodes, where clicking any phylum name jumps to its full structural treatment on the corresponding Animal Anatomy page — a literal cross-reference tool, not just a diagram.
+- **Animal kingdom phylogeny explorer (Mermaid-based or SVG/JS click-through)**, a clickable cladogram of the nine phyla in the table above, branching at the acoelomate/pseudocoelomate/coelomate and protostome/deuterostome nodes, where clicking any phylum name jumps to its full structural treatment on the corresponding Animal Anatomy page, a literal cross-reference tool, not just a diagram.
 {{< iframe src="/animal-phylogeny-explorer.html" title="Animal Kingdom Phylogeny Explorer" height="480px" >}}
-- **"Reptilia" paraphyly demonstrator (interactive SVG/JS)** — two toggleable views of the same amniote cladogram: one shaded to show the traditional "Reptilia" grouping (visibly excluding a nested branch, birds), the other shaded to show Sauropsida (the full, monophyletic clade) — directly visualizing the paraphyly problem using material already covered structurally elsewhere on the site.
+- **"Reptilia" paraphyly demonstrator (interactive SVG/JS)**, two toggleable views of the same amniote cladogram: one shaded to show the traditional "Reptilia" grouping (visibly excluding a nested branch, birds), the other shaded to show Sauropsida (the full, monophyletic clade), directly visualizing the paraphyly problem using material already covered structurally elsewhere on the site.
 {{< iframe src="/reptilia-paraphyly-demonstrator.html" title="Reptilia Paraphyly Demonstrator" height="500px" >}}
 
 **Static**

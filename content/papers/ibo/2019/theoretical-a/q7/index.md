@@ -1,8 +1,8 @@
 ---
-title: "Q7 — Thermus szegediensis: Nutrition and Complementation"
+title: "Q7 - Thermus szegediensis: Nutrition and Complementation"
 ---
 
-{{< problem-meta category="Theoretical A" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/1-cell-molecular/cell-theory-prokaryotes-eukaryotes/">Cell Theory, Prokaryotes & Eukaryotes</a>
@@ -43,4 +43,4 @@ The lab was further interested in finding genes important for the microbe to exi
 
 ---
 
-Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=15) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)
+Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=15) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)

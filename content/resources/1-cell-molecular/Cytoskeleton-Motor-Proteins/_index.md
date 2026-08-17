@@ -1,7 +1,7 @@
 ---
 title: "Cytoskeleton & Motor Proteins"
 weight: 5
-description: "The three cytoskeletal filament systems — microfilaments, microtubules, and intermediate filaments — their structural and dynamic properties, and the three motor protein families that move cargo and cells along them."
+description: "The three cytoskeletal filament systems, microfilaments, microtubules, and intermediate filaments, their structural and dynamic properties, and the three motor protein families that move cargo and cells along them."
 difficulty: "intermediate"
 prerequisites: ["Cell-Theory-Prokaryotes-Eukaryotes"]
 syllabus_tags: ["IBO", "USABO", "cell-biology"]
@@ -57,15 +57,15 @@ All three convert the chemical energy of ATP hydrolysis into a cycle of conforma
 
 ## Common Exam Questions
 
-- "Which cytoskeletal element is responsible for [structure/process]?" questions hinge on matching the *specific* filament to its role — cilia/flagella and the mitotic spindle are always microtubule-based; muscle contraction and the cell cortex are always actin-based; mechanical/tensile resistance and the nuclear lamina are always intermediate-filament-based.
-- "A drug depolymerises microtubules — predict the effect on axonal transport and on mitosis": tests whether you can trace a specific structural perturbation to *both* of a shared filament type's downstream functions.
+- "Which cytoskeletal element is responsible for [structure/process]?" questions hinge on matching the *specific* filament to its role, cilia/flagella and the mitotic spindle are always microtubule-based; muscle contraction and the cell cortex are always actin-based; mechanical/tensile resistance and the nuclear lamina are always intermediate-filament-based.
+- "A drug depolymerises microtubules, predict the effect on axonal transport and on mitosis": tests whether you can trace a specific structural perturbation to *both* of a shared filament type's downstream functions.
 - Distinguishing kinesin (generally anterograde/outward) from dynein (generally retrograde/inward) direction is a frequent discriminator; note this is a generalisation about typical transport roles, not an absolute rule for every kinesin/dynein family member.
 
 ## Visual Reference
 
 **Interactive**
 
-- A motor protein "walk" animator: select a motor (myosin/kinesin/dynein) and watch it step along its corresponding filament toward its characteristic end, carrying a cargo vesicle — makes the plus-end/minus-end direction rule visually concrete.
+- A motor protein "walk" animator: select a motor (myosin/kinesin/dynein) and watch it step along its corresponding filament toward its characteristic end, carrying a cargo vesicle, makes the plus-end/minus-end direction rule visually concrete.
 
 {{< iframe src="/motor-protein-walk-animator.html" title="Motor Protein Walk Animator" height="360px" >}}
 

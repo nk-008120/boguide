@@ -18,7 +18,7 @@ The section runs in four tiers:
 Start with [Mechanisms of Behavior](Mechanisms-of-Behavior/), which introduces the proximate/ultimate distinction (Tinbergen's four questions) that every later page assumes when explaining *why* a behavior exists.
 
 {{< cards cols="1" >}}
-  {{< card link="mechanisms-of-behavior/" title="1. Mechanisms of Behavior" subtitle="Proximate vs. ultimate causation, fixed action patterns, sign stimuli — read this first." >}}
+  {{< card link="mechanisms-of-behavior/" title="1. Mechanisms of Behavior" subtitle="Proximate vs. ultimate causation, fixed action patterns, sign stimuli, read this first." >}}
 {{< /cards >}}
 
 ### Foundations of Behavior

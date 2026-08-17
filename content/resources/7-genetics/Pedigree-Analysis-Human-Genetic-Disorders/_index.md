@@ -1,7 +1,7 @@
 ---
 title: "Pedigree Analysis & Human Genetic Disorders"
 weight: 5
-description: "Reading standard pedigree symbols to infer an unknown inheritance pattern (autosomal vs. X-linked, dominant vs. recessive), worked examples from real human genetic disorders, and the applied clinical context — karyotyping, prenatal testing, and genetic counseling — that pedigree analysis feeds into."
+description: "Reading standard pedigree symbols to infer an unknown inheritance pattern (autosomal vs. X-linked, dominant vs. recessive), worked examples from real human genetic disorders, and the applied clinical context, karyotyping, prenatal testing, and genetic counseling, that pedigree analysis feeds into."
 difficulty: "intermediate"
 prerequisites: ["Sex-Determination-Sex-Linked-Inheritance"]
 syllabus_tags: ["IBO", "USABO", "genetics", "transmission-genetics"]
@@ -12,7 +12,7 @@ syllabus_tags: ["IBO", "USABO", "genetics", "transmission-genetics"]
 
 ## Overview
 
-Human geneticists cannot design controlled crosses the way Mendel could with pea plants; inheritance patterns in humans must instead be inferred from **pedigrees**, diagrams of trait transmission across a real family's generations. This page covers standard pedigree notation, the diagnostic logic for distinguishing the four classical Mendelian pedigree patterns (autosomal dominant, autosomal recessive, X-linked dominant, X-linked recessive) from each other, worked human-disorder examples of each, and the applied clinical tools — karyotyping, prenatal testing, genetic counseling — built on this analysis.
+Human geneticists cannot design controlled crosses the way Mendel could with pea plants; inheritance patterns in humans must instead be inferred from **pedigrees**, diagrams of trait transmission across a real family's generations. This page covers standard pedigree notation, the diagnostic logic for distinguishing the four classical Mendelian pedigree patterns (autosomal dominant, autosomal recessive, X-linked dominant, X-linked recessive) from each other, worked human-disorder examples of each, and the applied clinical tools, karyotyping, prenatal testing, genetic counseling, built on this analysis.
 
 ## Key Concepts
 
@@ -23,16 +23,16 @@ Standard pedigree notation: **squares** represent males, **circles** represent f
 ![Standard pedigree chart symbol key: male/female, proband, deceased, affected, examined, carrier, twins, and adopted individuals, plus relationship symbols for marriage, consanguineous marriage, extramarital mating, divorce, and pregnancy/miscarriage/stillbirth.](/GENETICSPICS/pedigree-symbol-key-standard-notation.jpg)
 *Source: biologyreader.com*
 
-![A consanguineous (double-line) mating between first cousins, each an unaffected carrier (Aa), producing two affected (aa) children among their offspring — illustrating how consanguinity raises the risk of a rare recessive disorder appearing.](/GENETICSPICS/consanguinity-pedigree-double-line-mating.png)
+![A consanguineous (double-line) mating between first cousins, each an unaffected carrier (Aa), producing two affected (aa) children among their offspring, illustrating how consanguinity raises the risk of a rare recessive disorder appearing.](/GENETICSPICS/consanguinity-pedigree-double-line-mating.png)
 *Source: researchgate.net*
 
 ### Diagnosing autosomal recessive inheritance
 
-Signature pattern: the trait can **skip generations**, appearing in offspring of two unaffected (carrier) parents; affected individuals are often, though not always, born to unaffected parents; the trait appears roughly equally in both sexes; and two affected parents always produce 100% affected offspring (since both must be homozygous recessive). **Cystic fibrosis** (CFTR mutation — see [Endomembrane System & Protein Trafficking](/resources/1-cell-molecular/endomembrane-system-protein-trafficking/) for the molecular basis of the common ΔF508 mutant's failure to reach the plasma membrane) and **Tay-Sachs disease** are standard human examples.
+Signature pattern: the trait can **skip generations**, appearing in offspring of two unaffected (carrier) parents; affected individuals are often, though not always, born to unaffected parents; the trait appears roughly equally in both sexes; and two affected parents always produce 100% affected offspring (since both must be homozygous recessive). **Cystic fibrosis** (CFTR mutation, see [Endomembrane System & Protein Trafficking](/resources/1-cell-molecular/endomembrane-system-protein-trafficking/) for the molecular basis of the common ΔF508 mutant's failure to reach the plasma membrane) and **Tay-Sachs disease** are standard human examples.
 
 ### Diagnosing autosomal dominant inheritance
 
-Signature pattern: the trait typically appears in **every generation** (no skipping, absent reduced penetrance — see [Extensions of Mendelian Inheritance](../extensions-of-mendelian-inheritance/)); every affected individual has at least one affected parent; unaffected individuals do not transmit the trait to their offspring; and the trait appears equally in both sexes. **Huntington's disease** and **achondroplasia** (a common cause of dwarfism) are standard human examples. A frequent pedigree trap: an apparently-skipped generation in an otherwise dominant-looking pattern should raise the possibility of **reduced penetrance** rather than being immediately reclassified as recessive.
+Signature pattern: the trait typically appears in **every generation** (no skipping, absent reduced penetrance, see [Extensions of Mendelian Inheritance](../extensions-of-mendelian-inheritance/)); every affected individual has at least one affected parent; unaffected individuals do not transmit the trait to their offspring; and the trait appears equally in both sexes. **Huntington's disease** and **achondroplasia** (a common cause of dwarfism) are standard human examples. A frequent pedigree trap: an apparently-skipped generation in an otherwise dominant-looking pattern should raise the possibility of **reduced penetrance** rather than being immediately reclassified as recessive.
 
 ![Three side-by-side worked pedigrees: Autosomal Dominant (affected individuals in every generation), Autosomal Recessive (trait skips a generation, appearing only in the children of two unaffected carriers), and X-linked (multiple affected males across generations), with a shared symbol legend.](/GENETICSPICS/autosomal-dominant-vs-recessive-pedigree-comparison.jpg)
 *Source: glowm.com*
@@ -80,7 +80,7 @@ A **karyotype**, a photographed, size-and-banding-ordered display of an individu
 
 {{< iframe src="/pedigree-diagnostic-tool.html" title="Pedigree pattern diagnostic tool" height="620px" >}}
 
-*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. One gap remains open: a karyotype image — see the inline note above.)*
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. One gap remains open: a karyotype image, see the inline note above.)*
 
 ## Practice Problems
 

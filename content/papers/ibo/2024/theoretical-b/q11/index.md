@@ -1,8 +1,8 @@
 ---
-title: "Q11 — Proteasome vs. Lysosome Degradation and Protein Half-Life"
+title: "Q11 - Proteasome vs. Lysosome Degradation and Protein Half-Life"
 ---
 
-{{< problem-meta category="Theoretical B" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/1-cell-molecular/endomembrane-system-protein-trafficking/">Endomembrane System & Protein Trafficking</a>
@@ -14,7 +14,7 @@ In Figure 1-a, researchers studied the abundance of proteins A, B, and C over ti
 
 In Figure 1-b, they observed how MG132, a proteasome inhibitor, and chloroquine, a lysosome inhibitor, affect the abundance of proteins B and C over time under cycloheximide treatment.
 
-![Top: a line graph of protein A, B, and C abundance over time, before and after adding cycloheximide — A stays flat, B and C decline. Bottom: two bar charts (for proteins B and C) comparing abundance over time under control, MG132, and chloroquine conditions.](/papers/ibo/2024/theoretical-b/q11-figure-1.png)
+![Top: a line graph of protein A, B, and C abundance over time, before and after adding cycloheximide - A stays flat, B and C decline. Bottom: two bar charts (for proteins B and C) comparing abundance over time under control, MG132, and chloroquine conditions.](/papers/ibo/2024/theoretical-b/q11-figure-1.png)
 *Figure 1. 1-a Y: Protein abundance, X: Time (hours), I: Before adding cycloheximide, II: After adding cycloheximide, A: protein A, B: protein B, C: protein C. 1-b Y: Protein abundance, X: Time after adding cycloheximide (hours), B: protein B, C: protein C, N: control, M: MG132, Q: Chloroquine.*
 
 On your answer sheet, indicate "T" for true statements and "F" for false ones.
@@ -25,4 +25,4 @@ On your answer sheet, indicate "T" for true statements and "F" for false ones.
 
 ---
 
-Question reproduced from **IBO 2024, Theoretical Exam Part B**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2024/theoretical-b-exam.pdf#page=19)
+Question reproduced from **IBO 2024, Theoretical Exam Part B**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2024/theoretical-b-exam.pdf#page=19)

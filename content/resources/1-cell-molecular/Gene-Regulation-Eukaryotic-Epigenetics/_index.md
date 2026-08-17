@@ -18,7 +18,7 @@ Eukaryotic gene regulation operates across more layers than the prokaryotic oper
 
 ### Chromatin as the first regulatory layer
 
-Eukaryotic DNA is packaged around histone protein octamers into **nucleosomes**, the repeating unit of **chromatin** — and this packaging itself is regulatory, not merely structural/space-saving, because RNA polymerase and transcription factors generally cannot access DNA tightly wound around histones. Chromatin exists on a spectrum from **heterochromatin** (densely packed, transcriptionally silent) to **euchromatin** (loosely packed, transcriptionally accessible), and a gene's position on this spectrum is itself a major regulatory determinant, independent of the gene's own promoter/operator sequence.
+Eukaryotic DNA is packaged around histone protein octamers into **nucleosomes**, the repeating unit of **chromatin**, and this packaging itself is regulatory, not merely structural/space-saving, because RNA polymerase and transcription factors generally cannot access DNA tightly wound around histones. Chromatin exists on a spectrum from **heterochromatin** (densely packed, transcriptionally silent) to **euchromatin** (loosely packed, transcriptionally accessible), and a gene's position on this spectrum is itself a major regulatory determinant, independent of the gene's own promoter/operator sequence.
 
 ![DNA packaged into nucleosomes (blue beads), forming a chromatin fiber that includes both loosely packed "active" euchromatin and densely packed "silent" heterochromatin regions, further condensing into the interphase chromatin domain of a mitotic chromosome inside the nucleus](/MCBBPICS/nucleosome-chromatin-packaging.jpg)
 *Source: en.wikipedia.org (Euchromatin)*
@@ -27,7 +27,7 @@ Eukaryotic DNA is packaged around histone protein octamers into **nucleosomes**,
 
 Histone tails protruding from the nucleosome core are subject to numerous covalent modifications, collectively constituting a regulatory "code" read by other proteins:
 
-- **Acetylation** (added by histone acetyltransferases, HATs; removed by histone deacetylases, HDACs) neutralises the histone tail's normal positive charge, weakening its electrostatic attraction to negatively charged DNA — loosening chromatin and generally **promoting** transcription. This is the direct mechanistic link between HDAC inhibitor drugs (used in some cancer therapies) and altered gene expression: blocking deacetylation keeps chromatin in a more open, transcriptionally active state.
+- **Acetylation** (added by histone acetyltransferases, HATs; removed by histone deacetylases, HDACs) neutralises the histone tail's normal positive charge, weakening its electrostatic attraction to negatively charged DNA, loosening chromatin and generally **promoting** transcription. This is the direct mechanistic link between HDAC inhibitor drugs (used in some cancer therapies) and altered gene expression: blocking deacetylation keeps chromatin in a more open, transcriptionally active state.
 - **Methylation** of histone tails has **context-dependent** effects: the same type of modification (methylation) can either activate or repress transcription depending on precisely which histone residue is methylated and how many methyl groups are added, a nuance worth flagging explicitly since it's a common oversimplification to treat "histone methylation" as having one uniform effect the way acetylation's effect is more consistently activating.
 
 ### DNA methylation
@@ -39,7 +39,7 @@ Direct **DNA methylation**, addition of a methyl group, typically to cytosine in
 Beyond chromatin accessibility, eukaryotic transcription is regulated by sequence-specific DNA elements and the proteins that bind them:
 
 - **Enhancers** are regulatory DNA sequences that can be located far from, even many kilobases away from, or downstream of, the gene they regulate, unlike a bacterial operator's fixed proximity to its operon. Enhancers work by DNA looping, physically bringing the bound activator proteins into contact with the promoter-bound transcription machinery despite the linear sequence distance.
-- **Transcription factors** bind specific DNA sequences (enhancers, promoter-proximal elements) and either recruit or block the assembly of the transcription machinery. Eukaryotic gene expression is typically controlled **combinatorially** — a given gene's expression pattern depends on the specific combination of multiple transcription factors present in a given cell type, rather than any single factor acting alone; this combinatorial logic is the molecular basis for how a limited number of transcription factor proteins can specify the vast diversity of eukaryotic cell types and tissue-specific expression patterns.
+- **Transcription factors** bind specific DNA sequences (enhancers, promoter-proximal elements) and either recruit or block the assembly of the transcription machinery. Eukaryotic gene expression is typically controlled **combinatorially**, a given gene's expression pattern depends on the specific combination of multiple transcription factors present in a given cell type, rather than any single factor acting alone; this combinatorial logic is the molecular basis for how a limited number of transcription factor proteins can specify the vast diversity of eukaryotic cell types and tissue-specific expression patterns.
 - The **Mediator complex** physically bridges enhancer-bound transcription factors and the general transcription machinery at the promoter (introduced in [Transcription & RNA Processing](../transcription-rna-processing/)), functionally completing the loop that lets a distant enhancer influence promoter activity.
 
 ![DNA looping brings a distal enhancer (bound by transcription factors, general transcription factors, and RNA polymerase II producing eRNA) into direct contact with the gene's promoter (also RNAP II-bound, producing mRNA) via a bridging Mediator protein complex; the intervening chromosome loop is shown explicitly](/MCBBPICS/enhancer-promoter-looping-mediator.jpg)
@@ -55,7 +55,7 @@ Beyond mRNA, tRNA, and rRNA, eukaryotic cells use small regulatory RNAs to contr
 *Source: BioRender template*
 - **siRNA (small interfering RNA)**: mechanistically similar to miRNA (also RISC-dependent), but typically derived from fully complementary, often exogenous or experimentally introduced double-stranded RNA, and generally acting through more precise, often complete target mRNA degradation rather than translational repression: the basis of the widely used experimental **RNA interference (RNAi)** gene-knockdown technique.
 
-Both pathways illustrate that eukaryotic gene regulation extends past transcriptional control into direct, sequence-specific post-transcriptional silencing — a regulatory layer with no direct prokaryotic operon equivalent.
+Both pathways illustrate that eukaryotic gene regulation extends past transcriptional control into direct, sequence-specific post-transcriptional silencing, a regulatory layer with no direct prokaryotic operon equivalent.
 
 ## Comparative Structures
 
@@ -65,13 +65,13 @@ Both pathways illustrate that eukaryotic gene regulation extends past transcript
 | Histone acetylation | Charge neutralisation, generally activating | Reversible (HAT/HDAC balance) |
 | Histone methylation | Context-dependent (activating or repressing) | Reversible, context-dependent persistence |
 | DNA methylation | CpG methylation, generally silencing | Yes, actively copied post-replication, the clearest epigenetic mark |
-| Enhancer/transcription factor binding | Sequence-specific, combinatorial, DNA looping | Not itself heritable — depends on ongoing TF availability |
-| miRNA/siRNA | Post-transcriptional, RISC-mediated | Not a heritable chromatin mark — acts each generation via new RNA transcription |
+| Enhancer/transcription factor binding | Sequence-specific, combinatorial, DNA looping | Not itself heritable, depends on ongoing TF availability |
+| miRNA/siRNA | Post-transcriptional, RISC-mediated | Not a heritable chromatin mark, acts each generation via new RNA transcription |
 
 ## Common Exam Questions
 
-- "What makes a regulatory mark 'epigenetic' specifically?": the defining criterion is heritability across cell division **without a change in DNA sequence** — DNA methylation is the clearest example because maintenance methyltransferases actively propagate the pattern post-replication.
-- "Why can an enhancer regulate a gene located many kilobases away?": the answer must invoke DNA looping bringing the enhancer and promoter into physical proximity, mediated by the Mediator complex and bound transcription factors — not simply "enhancers work at a distance" without the looping mechanism.
+- "What makes a regulatory mark 'epigenetic' specifically?": the defining criterion is heritability across cell division **without a change in DNA sequence**, DNA methylation is the clearest example because maintenance methyltransferases actively propagate the pattern post-replication.
+- "Why can an enhancer regulate a gene located many kilobases away?": the answer must invoke DNA looping bringing the enhancer and promoter into physical proximity, mediated by the Mediator complex and bound transcription factors, not simply "enhancers work at a distance" without the looping mechanism.
 - "Why does histone acetylation generally promote transcription?": charge neutralisation loosening histone-DNA electrostatic attraction is the expected mechanistic answer, not simply "it opens chromatin" without the underlying reason.
 - Distinguishing miRNA (often partial complementarity, translational repression) from siRNA (often full complementarity, mRNA degradation, exogenous/experimental origin) is a frequent classification question, though note both converge on the same RISC machinery.
 

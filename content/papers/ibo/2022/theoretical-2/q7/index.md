@@ -1,8 +1,8 @@
 ---
-title: "Q57 — PIP2/PIP3 Signaling in T Cells — PTEN and Antigen Dose"
+title: "Q57 - PIP2/PIP3 Signaling in T Cells - PTEN and Antigen Dose"
 ---
 
-{{< problem-meta category="Theoretical 2" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/3-animal-physiology/immune-physiology/">Immune Physiology</a>
@@ -22,4 +22,4 @@ Determine whether the following statement are true or false:
 
 ---
 
-Question reproduced from **IBO 2022, Theoretical Paper 2**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2022/theoretical-2-exam.pdf#page=12) · [Community solutions (unofficial)](/papers/ibo/2022/theoretical-2-solutions.pdf)
+Question reproduced from **IBO 2022, Theoretical Paper 2**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2022/theoretical-2-exam.pdf#page=12) · [Community solutions (unofficial)](/papers/ibo/2022/theoretical-2-solutions.pdf)

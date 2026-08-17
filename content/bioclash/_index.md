@@ -1,5 +1,5 @@
 ---
-title: "BiOClash — an independent biology competition"
+title: "BiOClash - an independent biology competition"
 layout: "wide"
 images: ["/og-bioclash.png"]
 ---
@@ -19,11 +19,11 @@ images: ["/og-bioclash.png"]
 </div>
 <script>
 /* Synchronous (not defer) and runs exactly here, before the rest of the
-   page paints — deliberately NOT in papers-bioclash.js. The curtain is
+   page paints - deliberately NOT in papers-bioclash.js. The curtain is
    display:none by default in CSS; this decides whether to reveal it BEFORE
    first paint, so a repeat visitor who's already opened it this session
    never sees it flash on then get hidden a beat later by the deferred
-   script. Deliberately does NOT skip for prefers-reduced-motion — that
+   script. Deliberately does NOT skip for prefers-reduced-motion - that
    only shortens the open animation (see custom.css section 15b's
    reduced-motion block), it doesn't hide the curtain outright. Withholding
    the whole click-to-reveal interaction from reduced-motion visitors would

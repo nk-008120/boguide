@@ -627,10 +627,10 @@ Hence D = 1 + 1*2 = 3<br><br>
 {{< /tabs >}}
 
 <script>
-/* BOGuide Dynamic TOC v3 — rewrites from scratch
+/* BOGuide Dynamic TOC v3, rewrites from scratch
    Key fixes vs previous versions:
    1. Panel detection: maps tab button index → panel index, no reliance on [hidden]
-   2. Links: onclick-based, activates the right tab then scrolls — no bare href anchors
+   2. Links: onclick-based, activates the right tab then scrolls, no bare href anchors
    3. Change detection: MutationObserver on aria-selected attribute changes, not click events
    4. Works whether Hextra uses display:none, visibility, or [hidden] to hide panels
 */
@@ -746,7 +746,7 @@ Hence D = 1 + 1*2 = 3<br><br>
     tocEl.style.display = 'block';
   }
 
-  /* ── TOC link click handler — activate panel then scroll ─────────────── */
+  /* ── TOC link click handler, activate panel then scroll ─────────────── */
   window.boGuideTocNav = function(link) {
     var panelIdx = parseInt(link.getAttribute('data-panel'), 10);
     var hid      = link.getAttribute('data-hid');

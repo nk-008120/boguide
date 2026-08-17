@@ -1,8 +1,8 @@
 ---
-title: "Q86 — Giant Panda Fecal-Smearing Behavior and the TRPM8 Cold Receptor"
+title: "Q86 - Giant Panda Fecal-Smearing Behavior and the TRPM8 Cold Receptor"
 ---
 
-{{< problem-meta category="Theoretical 2" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/9-ethology/mechanisms-of-behavior/">Mechanisms of Behavior</a>
@@ -24,4 +24,4 @@ Using the information above, determine which of the statements are true or which
 
 ---
 
-Question reproduced from **IBO 2022, Theoretical Paper 2**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2022/theoretical-2-exam.pdf#page=54) · [Community solutions (unofficial)](/papers/ibo/2022/theoretical-2-solutions.pdf)
+Question reproduced from **IBO 2022, Theoretical Paper 2**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2022/theoretical-2-exam.pdf#page=54) · [Community solutions (unofficial)](/papers/ibo/2022/theoretical-2-solutions.pdf)

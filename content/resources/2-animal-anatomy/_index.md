@@ -1,7 +1,7 @@
 ---
 title: "✅ Animal Anatomy"
 weight: 2
-description: "Structural anatomy for IBO/USABO at full depth, organized 5:3:2 — Human Anatomy in detail across 10 system pages, Vertebrate Anatomy by comparison, and a lighter Animal Kingdom body-plan survey."
+description: "Structural anatomy for IBO/USABO at full depth, organized 5:3:2, Human Anatomy in detail across 10 system pages, Vertebrate Anatomy by comparison, and a lighter Animal Kingdom body-plan survey."
 ---
 
 ## How this section is organized
@@ -15,7 +15,7 @@ IBO/USABO "Animal Anatomy" is not a zoology-wide survey of every phylum in equal
 Start with [Body Plans & Foundational Concepts](Body-Plans/); every page below assumes its vocabulary (symmetry, tissue histology, germ layers, coelom types, cleavage patterns).
 
 {{< cards cols="1" >}}
-  {{< card link="body-plans/" title="0. Body Plans & Foundational Concepts" subtitle="Symmetry, tissue histology, gastrulation, coelom formation, segmentation — read this first." >}}
+  {{< card link="body-plans/" title="0. Body Plans & Foundational Concepts" subtitle="Symmetry, tissue histology, gastrulation, coelom formation, segmentation, read this first." >}}
 {{< /cards >}}
 
 ### Human Anatomy

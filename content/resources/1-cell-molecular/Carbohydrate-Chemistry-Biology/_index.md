@@ -22,10 +22,10 @@ Monosaccharides are polyhydroxy aldehydes (**aldoses**, e.g. glucose) or ketones
 
 **D/L designation** is assigned by the configuration at the chiral carbon farthest from the carbonyl group (compared to D/L-glyceraldehyde as the reference); nearly all biologically relevant sugars are D-sugars, mirroring the near-universal use of L-amino acids in proteins; both conventions reflect that the enzymes handling these molecules are themselves chiral and only accept one stereoisomeric family efficiently.
 
-In aqueous solution, 5- and 6-carbon sugars predominantly exist as **cyclic hemiacetals/hemiketals** (furanose or pyranose rings), not open chains. Ring closure creates a *new* chiral centre at C1 (the **anomeric carbon**), giving rise to **α and β anomers** — e.g. α-D-glucopyranose vs. β-D-glucopyranose, which interconvert in solution (**mutarotation**) but are locked into one form once incorporated into a glycosidic bond. This α/β distinction is the single most consequential fact in this page: it is the entire reason starch/glycogen and cellulose behave so differently (see below).
+In aqueous solution, 5- and 6-carbon sugars predominantly exist as **cyclic hemiacetals/hemiketals** (furanose or pyranose rings), not open chains. Ring closure creates a *new* chiral centre at C1 (the **anomeric carbon**), giving rise to **α and β anomers**, e.g. α-D-glucopyranose vs. β-D-glucopyranose, which interconvert in solution (**mutarotation**) but are locked into one form once incorporated into a glycosidic bond. This α/β distinction is the single most consequential fact in this page: it is the entire reason starch/glycogen and cellulose behave so differently (see below).
 
 ![Open-chain fructose interconverting with its cyclic β-D-fructopyranose (68.2%) and β-D-fructofuranose (22.4%) ring forms via the trans-oxygen (β-anomer) open-chain intermediate, carbons numbered 1-6](/MCBBPICS/glucose-open-chain-vs-cyclic.jpg)
-*Source: chem.libretexts.org (Cyclic Structures of Monosaccharides — Anomers)*
+*Source: chem.libretexts.org (Cyclic Structures of Monosaccharides, Anomers)*
 
 ### Glycosidic bonds
 
@@ -82,7 +82,7 @@ Beyond glucose homopolymers, **glycosaminoglycans (GAGs)**, long, unbranched, hi
 
 **Static**
 
-*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Two items ended up with content-mismatched sourced images — see the inline notes: the "glucose" ring-form image is actually fructose, and the "amylose vs. cellulose" image is actually amylose vs. amylopectin. Neither a glucose-specific ring-form image nor a genuine amylose-vs-cellulose comparison is currently placed.)*
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Two items ended up with content-mismatched sourced images, see the inline notes: the "glucose" ring-form image is actually fructose, and the "amylose vs. cellulose" image is actually amylose vs. amylopectin. Neither a glucose-specific ring-form image nor a genuine amylose-vs-cellulose comparison is currently placed.)*
 
 ## Practice Problems
 

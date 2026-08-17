@@ -1,7 +1,7 @@
 ---
 title: "Domains & Kingdoms"
 weight: 5
-description: "The three-domain system (Archaea, Bacteria, Eukarya) and why it replaced the five/six-kingdom model, the major eukaryotic supergroups, and viral classification (Baltimore scheme, ICTV) — the top-level classification survey built on the molecular evidence from the previous page."
+description: "The three-domain system (Archaea, Bacteria, Eukarya) and why it replaced the five/six-kingdom model, the major eukaryotic supergroups, and viral classification (Baltimore scheme, ICTV), the top-level classification survey built on the molecular evidence from the previous page."
 difficulty: "intermediate"
 prerequisites: ["Molecular-Systematics"]
 syllabus_tags: ["IBO", "USABO", "biosystematics"]
@@ -40,12 +40,12 @@ The **ether-linked, often branched membrane lipids** are Archaea's single most d
 
 ### Eukaryotic Supergroups
 
-"Kingdom Protista" — the historical catch-all for eukaryotes that are neither animal, plant, nor fungus — is now understood to be badly **polyphyletic** (see [Phylogenetic Trees & Cladistics](../phylogenetic-trees-cladistics/) for why this is a structural problem, not just an inconvenience): molecular evidence shows "protists" are scattered across several independent eukaryotic lineages, some more closely related to animals, fungi, or plants than to each other. Current classification instead recognizes several major **eukaryotic supergroups**, each a proposed monophyletic grouping. This is survey depth only, since supergroup boundaries are still an active research area, but the names below are worth recognizing:
+"Kingdom Protista", the historical catch-all for eukaryotes that are neither animal, plant, nor fungus, is now understood to be badly **polyphyletic** (see [Phylogenetic Trees & Cladistics](../phylogenetic-trees-cladistics/) for why this is a structural problem, not just an inconvenience): molecular evidence shows "protists" are scattered across several independent eukaryotic lineages, some more closely related to animals, fungi, or plants than to each other. Current classification instead recognizes several major **eukaryotic supergroups**, each a proposed monophyletic grouping. This is survey depth only, since supergroup boundaries are still an active research area, but the names below are worth recognizing:
 
 - **SAR** (Stramenopila, Alveolata, Rhizaria): includes diatoms, brown algae, and dinoflagellates (Stramenopila/Alveolata) alongside amoeboid Rhizaria; a large, diverse clade unified by molecular evidence despite very different morphologies.
 - **Archaeplastida**, red algae, green algae, and land plants (Plantae in the traditional sense sits fully inside this group), unified by a shared single **primary endosymbiosis** event: a cyanobacterium engulfed by an early eukaryotic ancestor and retained rather than digested, becoming the double-membrane-bound chloroplast. The shared ancestry of that one engulfment event is the specific molecular evidence unifying this otherwise morphologically diverse supergroup.
 - **Excavata**: a diverse group including many flagellated, often parasitic protists (e.g. *Giardia*, trypanosomes), historically grouped partly by distinctive cytoskeletal/feeding-groove features.
-- **Amoebozoa** — amoeboid protists moving and feeding via pseudopodia, including slime molds.
+- **Amoebozoa**, amoeboid protists moving and feeding via pseudopodia, including slime molds.
 - **Opisthokonta**: the supergroup containing **both Fungi and Animalia**, unified by a shared derived trait (a single posterior flagellum in flagellated cells/gametes, where present, rather than the anterior flagellum typical elsewhere). This is a striking result of molecular systematics, since it places fungi phylogenetically closer to animals than to plants, contradicting the older plant-adjacent placement of Fungi that persisted well into the 20th century on morphological grounds alone.
 
 ### Viral Classification
@@ -53,7 +53,7 @@ The **ether-linked, often branched membrane lipids** are Archaea's single most d
 Viruses are classified entirely separately from the three-domain system above, because viruses are **acellular** and most systematists don't consider them "alive" in the sense the domain system was built to organize (no independent metabolism, no ribosomes of their own, obligate intracellular parasites), so binomial nomenclature and the domain/kingdom hierarchy simply don't apply to them. Two classification frameworks exist for viruses instead:
 
 - **Baltimore classification**: groups viruses by **genome type and replication strategy** into seven classes, based on the specific path each takes to produce mRNA: (I) dsDNA, (II) ssDNA, (III) dsRNA, (IV) positive-sense ssRNA, (V) negative-sense ssRNA, (VI) positive-sense ssRNA reverse-transcribing (retroviruses, e.g. HIV), (VII) dsDNA reverse-transcribing (e.g. Hepatitis B). This scheme is functionally useful precisely because genome type dictates replication machinery, host-cell interaction, and mutation rate (RNA viruses mutate far faster than DNA viruses, lacking proofreading), all mechanistically consequential.
-- **ICTV** (International Committee on Taxonomy of Viruses) — maintains a separate, more traditional-looking ranked hierarchy (realm, kingdom, phylum, ... down to species) built primarily from genome sequence and structural evidence, run in parallel to but independent of the ICZN/ICN/ICNP codes on the [Classification Principles & Nomenclature](../classification-principles-nomenclature/) page.
+- **ICTV** (International Committee on Taxonomy of Viruses), maintains a separate, more traditional-looking ranked hierarchy (realm, kingdom, phylum, ... down to species) built primarily from genome sequence and structural evidence, run in parallel to but independent of the ICZN/ICN/ICNP codes on the [Classification Principles & Nomenclature](../classification-principles-nomenclature/) page.
 
 ## Comparative Structures
 
@@ -77,9 +77,9 @@ Viruses are classified entirely separately from the three-domain system above, b
 
 **Interactive**
 
-- **Kingdom system timeline slider (interactive HTML/JS)** — a slider moving through two-kingdom → five-kingdom → six-kingdom → three-domain systems, redrawing the top-level classification tree at each step and highlighting exactly which groups split or merged at each transition, making the historical sequence of revisions visually traceable rather than a memorized list of dates.
+- **Kingdom system timeline slider (interactive HTML/JS)**, a slider moving through two-kingdom → five-kingdom → six-kingdom → three-domain systems, redrawing the top-level classification tree at each step and highlighting exactly which groups split or merged at each transition, making the historical sequence of revisions visually traceable rather than a memorized list of dates.
 {{< iframe src="/kingdom-system-timeline-slider.html" title="Kingdom System Timeline Slider" height="500px" >}}
-- **Baltimore classification sorter (drag-and-drop, HTML/JS)** — named real viruses (HIV, influenza, herpesvirus, Hepatitis B, etc.) are dragged into their correct Baltimore class based on given genome-type clues, reinforcing the genome-type-to-class mapping through application rather than memorization.
+- **Baltimore classification sorter (drag-and-drop, HTML/JS)**, named real viruses (HIV, influenza, herpesvirus, Hepatitis B, etc.) are dragged into their correct Baltimore class based on given genome-type clues, reinforcing the genome-type-to-class mapping through application rather than memorization.
 {{< iframe src="/baltimore-classification-sorter.html" title="Baltimore Classification Sorter" height="480px" >}}
 
 **Static**

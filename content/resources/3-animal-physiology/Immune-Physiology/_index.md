@@ -1,7 +1,7 @@
 ---
 title: "Immune Physiology"
 weight: 8
-description: "Innate immunity (physical barriers, phagocytes, complement, inflammation) and adaptive immunity (humoral and cell-mediated responses, antigen presentation, clonal selection, immunological memory) — a net-new topic with no dedicated Animal Anatomy counterpart, building on the leukocyte types introduced on the Human Circulatory System page."
+description: "Innate immunity (physical barriers, phagocytes, complement, inflammation) and adaptive immunity (humoral and cell-mediated responses, antigen presentation, clonal selection, immunological memory), a net-new topic with no dedicated Animal Anatomy counterpart, building on the leukocyte types introduced on the Human Circulatory System page."
 difficulty: "advanced"
 prerequisites: ["Endocrine-System-Physiology"]
 syllabus_tags: ["IBO", "USABO", "immune-physiology"]
@@ -35,14 +35,14 @@ Once a pathogen breaches these barriers, **phagocytes** provide the first cellul
 
 ### Inflammation
 
-**Inflammation** is the coordinated local vascular and cellular response to tissue damage or infection, producing its four classical signs (redness, heat, swelling, pain) through a direct physiological mechanism: damaged tissue and activated immune cells release signaling molecules (histamine, prostaglandins, cytokines) that cause local **vasodilation** (increased blood flow — redness, heat) and increased capillary permeability (plasma and immune cells leak into the tissue more readily — swelling, and pain from both swelling pressure and direct nerve sensitization by these same signaling molecules). This is a direct, adaptive amplification of local defenses, not incidental damage, since increased blood flow and vascular permeability actively deliver more phagocytes and plasma proteins (including complement) to the site of infection.
+**Inflammation** is the coordinated local vascular and cellular response to tissue damage or infection, producing its four classical signs (redness, heat, swelling, pain) through a direct physiological mechanism: damaged tissue and activated immune cells release signaling molecules (histamine, prostaglandins, cytokines) that cause local **vasodilation** (increased blood flow, redness, heat) and increased capillary permeability (plasma and immune cells leak into the tissue more readily, swelling, and pain from both swelling pressure and direct nerve sensitization by these same signaling molecules). This is a direct, adaptive amplification of local defenses, not incidental damage, since increased blood flow and vascular permeability actively deliver more phagocytes and plasma proteins (including complement) to the site of infection.
 
 ### Adaptive Immunity: Humoral Response
 
 **B lymphocytes** each display a unique, genetically rearranged surface antibody (immunoglobulin) generated during development, such that the total B cell population collectively displays an enormous diversity of possible antigen specificities before ever encountering a pathogen. Upon a B cell's surface antibody binding its specific matching antigen (with critical costimulation from a helper T cell recognizing the same antigen, see below), that one B cell undergoes **clonal selection**: proliferation into a large population of identical daughter cells, most differentiating into antibody-secreting **plasma cells** and a smaller fraction becoming long-lived **memory B cells**.
 
 ![Antibody (immunoglobulin) structure: light chains and heavy chains linked by interchain/intrachain disulfide bonds at a flexible hinge region, light-chain and heavy-chain hypervariable regions forming the antigen-binding Fab region, constant regions (CL, CH1-CH3) forming the Fc region that mediates biological activity (complement binding, papain cleavage sites shown), with the carbohydrate group attached](/ANIMALPHYSIOPICS/antibody-immunoglobulin-structure.jpg)
-*Source: [Biomeda — ELISA Antibody Structure](https://biomeda.com/elisa-antibody/elisa-antibody-structure.html)*
+*Source: [Biomeda, ELISA Antibody Structure](https://biomeda.com/elisa-antibody/elisa-antibody-structure.html)*
 
 Secreted **antibodies** (Y-shaped proteins, two antigen-binding sites per molecule formed by variable regions, plus a constant region determining antibody class/function) act by **neutralization** (physically blocking a pathogen or toxin from binding its target host cell receptor), **opsonization** (tagging pathogens for phagocytosis, functionally parallel to complement's opsonizing role above), and **agglutination** (clumping multiple pathogens together via their multiple binding sites, limiting spread and aiding clearance); antibodies themselves do not directly destroy a pathogen, but mark and immobilize it for destruction by other mechanisms (phagocytes, complement).
 
@@ -50,8 +50,8 @@ Secreted **antibodies** (Y-shaped proteins, two antigen-binding sites per molecu
 
 Unlike B cells (which recognize free antigen directly), **T lymphocytes** only recognize antigen fragments displayed on a host cell surface bound to **major histocompatibility complex (MHC)** proteins, a structural requirement called **MHC restriction**:
 
-- **MHC class I** — displayed on essentially all nucleated cells, presenting fragments of proteins synthesized *inside* that cell (including viral proteins, if the cell is infected). **Cytotoxic T cells (CD8⁺)** recognize infected/abnormal cells via MHC I display of foreign peptide and induce apoptosis directly (releasing perforin, which perforates the target membrane, and granzymes, which trigger the apoptotic cascade inside).
-- **MHC class II** — displayed only on specialized **antigen-presenting cells** (macrophages, dendritic cells, B cells), presenting fragments of extracellular material the cell has phagocytosed/endocytosed. **Helper T cells (CD4⁺)** recognize antigen via MHC II display and, upon activation, secrete cytokines that amplify both the B cell response (the costimulation required for full B cell activation, above) and cytotoxic T cell activity — functioning as a coordinating hub rather than a direct effector cell.
+- **MHC class I**, displayed on essentially all nucleated cells, presenting fragments of proteins synthesized *inside* that cell (including viral proteins, if the cell is infected). **Cytotoxic T cells (CD8⁺)** recognize infected/abnormal cells via MHC I display of foreign peptide and induce apoptosis directly (releasing perforin, which perforates the target membrane, and granzymes, which trigger the apoptotic cascade inside).
+- **MHC class II**, displayed only on specialized **antigen-presenting cells** (macrophages, dendritic cells, B cells), presenting fragments of extracellular material the cell has phagocytosed/endocytosed. **Helper T cells (CD4⁺)** recognize antigen via MHC II display and, upon activation, secrete cytokines that amplify both the B cell response (the costimulation required for full B cell activation, above) and cytotoxic T cell activity, functioning as a coordinating hub rather than a direct effector cell.
 
 ![MHC class I vs. class II side by side: MHC class I displays an endogenous (intracellular pathogen-derived) antigen on any nucleated cell and is recognized by CD8+ T cells; MHC class II displays an exogenous (phagocytosed/endocytosed) antigen only on antigen-presenting cells and is recognized by CD4+ T cells](/ANIMALPHYSIOPICS/mhc-class-i-vs-ii-antigen-presentation.webp)
 *Source: kingofthecurve.org (USMLE Step 1 guide)*
@@ -70,7 +70,7 @@ graph TD;
 ### Immunological Memory
 
 ![Clonal selection: a naive B lymphocyte is selectively activated by its specific antigen, undergoes clonal proliferation into a population of identical daughter cells, most of which differentiate into antibody-secreting plasma cells while a smaller subset becomes long-lived memory cells](/ANIMALPHYSIOPICS/clonal-selection-b-cell.jpg)
-*Source: pharmacy180.com (Fig. 9.5) — precise spec match.*
+*Source: pharmacy180.com (Fig. 9.5), precise spec match.*
 
 Both the B cell and T cell responses generate long-lived **memory cells** following a primary exposure. This is the physiological basis of both natural immunity after infection and vaccination. On a subsequent exposure to the same antigen, the pre-existing memory cell population allows a **secondary immune response** that is faster (no need to generate the response from scratch) and of greater magnitude (a larger starting population of antigen-specific cells) than the primary response, typically neutralizing the pathogen before symptoms even develop.
 
@@ -96,15 +96,15 @@ Both the B cell and T cell responses generate long-lived **memory cells** follow
 
 **Interactive**
 
-- **Immune response pathway simulator (click-through, extends the Mermaid diagram above)** — clicking through a pathogen's path from initial phagocytosis by an antigen-presenting cell through helper T cell activation to both the B cell (humoral) and cytotoxic T cell (cell-mediated) branches, with each node revealing the specific molecular interaction (MHC class, receptor, cytokine) involved.
+- **Immune response pathway simulator (click-through, extends the Mermaid diagram above)**, clicking through a pathogen's path from initial phagocytosis by an antigen-presenting cell through helper T cell activation to both the B cell (humoral) and cytotoxic T cell (cell-mediated) branches, with each node revealing the specific molecular interaction (MHC class, receptor, cytokine) involved.
 
 {{< iframe src="/immune-response-pathway-simulator.html" title="Immune response pathway simulator" height="520px" >}}
 
-- **Primary vs. secondary response chart (Plotly)**: antibody titer vs. time plotted for both a first and second exposure to the same antigen on the same axes, showing the secondary response's shorter lag and higher peak — makes immunological memory's practical effect directly visible and quantitative.
+- **Primary vs. secondary response chart (Plotly)**: antibody titer vs. time plotted for both a first and second exposure to the same antigen on the same axes, showing the secondary response's shorter lag and higher peak, makes immunological memory's practical effect directly visible and quantitative.
 
 {{< iframe src="/primary-secondary-response-chart.html" title="Primary vs. secondary response chart" height="560px" >}}
 
-**Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here — still outstanding: a standalone innate-vs-adaptive comparison diagram to pair with the Comparative Structures table)*
+**Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here, still outstanding: a standalone innate-vs-adaptive comparison diagram to pair with the Comparative Structures table)*
 
 ## Practice Problems
 

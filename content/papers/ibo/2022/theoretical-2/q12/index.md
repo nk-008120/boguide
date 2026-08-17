@@ -1,8 +1,8 @@
 ---
-title: "Q62 — Pine Needle Cross-Section — Resin Duct and Mesophyll"
+title: "Q62 - Pine Needle Cross-Section - Resin Duct and Mesophyll"
 ---
 
-{{< problem-meta category="Theoretical 2" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/6-plant-anatomy/leaf-anatomy/">Leaf Anatomy</a>
@@ -19,4 +19,4 @@ The figure depicts a cross-section of a plant organ. Observe the figure and choo
 
 ---
 
-Question reproduced from **IBO 2022, Theoretical Paper 2**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2022/theoretical-2-exam.pdf#page=19) · [Community solutions (unofficial)](/papers/ibo/2022/theoretical-2-solutions.pdf)
+Question reproduced from **IBO 2022, Theoretical Paper 2**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2022/theoretical-2-exam.pdf#page=19) · [Community solutions (unofficial)](/papers/ibo/2022/theoretical-2-solutions.pdf)

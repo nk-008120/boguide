@@ -15,7 +15,7 @@
     
     
     <item>
-      <title>Leaderboard — Theoretical A</title>
+      <title>Leaderboard - Theoretical A</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/leaderboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -24,7 +24,7 @@
         
         
         &lt;p&gt;&lt;a class=&#34;papers-nav-btn&#34; href=&#34;../&#34; style=&#34;display:inline-block;margin-bottom:1.5rem;&#34;&gt;← Back to Theoretical A&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Ranked by score, then time. Only submitted, logged-in attempts appear here — &lt;a
+&lt;p&gt;Ranked by score, then time. Only submitted, logged-in attempts appear here - &lt;a
     href=&#34;../attempt/&#34;&gt;attempting without an account&lt;/a&gt; still works exactly as before, it just isn&amp;rsquo;t ranked.&lt;/p&gt;
 &lt;script id=&#34;papers-leaderboard-data&#34; type=&#34;application/json&#34;&gt;{&#34;olympiad&#34;:&#34;ibo&#34;,&#34;roundId&#34;:&#34;theoretical-a&#34;,&#34;roundName&#34;:&#34;Theoretical A&#34;,&#34;year&#34;:&#34;2024&#34;}&lt;/script&gt;
 &lt;div id=&#34;papers-leaderboard-root&#34; class=&#34;papers-leaderboard-root&#34;&gt;
@@ -43,7 +43,7 @@
     </item>
     
     <item>
-      <title>Q1 — Tulip Parsimony and Morphological Characters</title>
+      <title>Q1 - Tulip Parsimony and Morphological Characters</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -54,7 +54,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -63,7 +63,7 @@
 &lt;p&gt;Kazakhstan boasts a rich ecosystem harboring numerous species of tulips, some of which are direct ancestors to many modern cultivated varieties. These tulips exhibit a diverse range of morphological traits, although not all of these traits are reliable indicators of species identification.&lt;/p&gt;
 &lt;p&gt;In Table 1 below, we outline five distinct types of tulips and their variations across five characteristics (A-E), typically utilized in the classification of tulip types.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2024/q1-figure-1.png&#34; alt=&#34;Table showing photos of five tulip species — Tulipa lemmersii, T. salsola, T. altacia, T. bifloroformis, T. borszczowii — with a grid of five character states (A: stamen hairs, B: flower number, C: bulb hairs, D: leaf number, E: filament color) below each photo.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2024/q1-figure-1.png&#34; alt=&#34;Table showing photos of five tulip species - Tulipa lemmersii, T. salsola, T. altacia, T. bifloroformis, T. borszczowii - with a grid of five character states (A: stamen hairs, B: flower number, C: bulb hairs, D: leaf number, E: filament color) below each photo.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Table 1. Morphological comparisons; A - presence/absence of hairs on the stamen, B - number of flowers (2(+) = 2 or more), C - presence/absence of a dense layer of hairs on the bulbs, D - number of leaves, E - color of the stamen filament, Y - yellow, K - black.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;It&amp;rsquo;s worth noting that &lt;em&gt;T. borszczowii&lt;/em&gt; has the same features as the common ancestor among these tulip species.&lt;/p&gt;
@@ -206,7 +206,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=6&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -214,7 +214,7 @@
     </item>
     
     <item>
-      <title>Q10 — Magnetotactic Bacteria Navigation</title>
+      <title>Q10 - Magnetotactic Bacteria Navigation</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -225,7 +225,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -375,7 +375,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=21&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -383,7 +383,7 @@
     </item>
     
     <item>
-      <title>Q11 — Directed Evolution of Enzyme D (NADH-Dependent)</title>
+      <title>Q11 - Directed Evolution of Enzyme D (NADH-Dependent)</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q11/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -394,7 +394,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -545,7 +545,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=22&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -553,7 +553,7 @@
     </item>
     
     <item>
-      <title>Q12 — DMSO₄ Poisoning Case Study</title>
+      <title>Q12 - DMSO₄ Poisoning Case Study</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q12/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -564,7 +564,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -740,7 +740,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=24&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -748,7 +748,7 @@
     </item>
     
     <item>
-      <title>Q13 — Nitrogen Limitation of Legumes in Steppes</title>
+      <title>Q13 - Nitrogen Limitation of Legumes in Steppes</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q13/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -759,7 +759,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -909,7 +909,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=25&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -917,7 +917,7 @@
     </item>
     
     <item>
-      <title>Q14 — Latitudinal Diversity Gradient: Three Hypotheses</title>
+      <title>Q14 - Latitudinal Diversity Gradient: Three Hypotheses</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q14/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -928,7 +928,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -1078,7 +1078,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=26&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -1086,7 +1086,7 @@
     </item>
     
     <item>
-      <title>Q15 — ENSO and Ecosystem Effects</title>
+      <title>Q15 - ENSO and Ecosystem Effects</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q15/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1097,7 +1097,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -1278,7 +1278,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=27&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -1286,7 +1286,7 @@
     </item>
     
     <item>
-      <title>Q16 — Fractal Geometry and Scale-Dependent Resource Availability</title>
+      <title>Q16 - Fractal Geometry and Scale-Dependent Resource Availability</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q16/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1297,7 +1297,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -1449,7 +1449,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=29&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -1457,7 +1457,7 @@
     </item>
     
     <item>
-      <title>Q17 — Water Scarcity Index (Rws) and Solutions</title>
+      <title>Q17 - Water Scarcity Index (Rws) and Solutions</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q17/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1468,13 +1468,13 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
   &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/8-ecology/&#34;&gt;Ecology&lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;Water is a common renewable resource on Earth; however, after its use, water loses some of its properties, such as purity, heat content, and potential energy. While they eventually will be restored, this happens on a geological timescale. Less than 1% of total water is available for human use — renewable freshwater resources (RFWR) — and even from this small fraction of water, only 10% is enough to fulfill the needs of humanity. While theoretically, there is more than enough water, many regions still experience a &lt;em&gt;water crisis&lt;/em&gt; — a lack of accessible RFWR or an inability to utilize available RFWR.&lt;/p&gt;
+&lt;p&gt;Water is a common renewable resource on Earth; however, after its use, water loses some of its properties, such as purity, heat content, and potential energy. While they eventually will be restored, this happens on a geological timescale. Less than 1% of total water is available for human use - renewable freshwater resources (RFWR) - and even from this small fraction of water, only 10% is enough to fulfill the needs of humanity. While theoretically, there is more than enough water, many regions still experience a &lt;em&gt;water crisis&lt;/em&gt; - a lack of accessible RFWR or an inability to utilize available RFWR.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
     &lt;img src=&#34;http://localhost:1313/papers/ibo/2024/q17-figure-1.png&#34; alt=&#34;World map colored by water scarcity index (Rws) value from 0.00 (white) to 1.00 (dark red), with the highest values concentrated in the western USA, the Middle East, South/Central Asia, and eastern China.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
@@ -1621,7 +1621,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=30&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -1629,7 +1629,7 @@
     </item>
     
     <item>
-      <title>Q18 — Animal Road Barrier Effect (Traffic Behavior Types)</title>
+      <title>Q18 - Animal Road Barrier Effect (Traffic Behavior Types)</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q18/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1640,7 +1640,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -1817,7 +1817,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=31&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -1825,7 +1825,7 @@
     </item>
     
     <item>
-      <title>Q19 — Cumulative Cultural Evolution in Rock Pigeons</title>
+      <title>Q19 - Cumulative Cultural Evolution in Rock Pigeons</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q19/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1836,7 +1836,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -1986,7 +1986,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=33&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -1994,7 +1994,7 @@
     </item>
     
     <item>
-      <title>Q2 — Strigiformes (Owls) Phylogenetic Identification</title>
+      <title>Q2 - Strigiformes (Owls) Phylogenetic Identification</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2005,7 +2005,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -2166,7 +2166,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=7&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -2174,7 +2174,7 @@
     </item>
     
     <item>
-      <title>Q20 — Haploid/Diploid Organisms and Multi-Allele Genetics</title>
+      <title>Q20 - Haploid/Diploid Organisms and Multi-Allele Genetics</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q20/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2185,7 +2185,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -2333,7 +2333,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=34&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -2341,7 +2341,7 @@
     </item>
     
     <item>
-      <title>Q21 — Out-of-Africa Human Genetic Diversity and Effective Population Size</title>
+      <title>Q21 - Out-of-Africa Human Genetic Diversity and Effective Population Size</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q21/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2352,7 +2352,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -2503,7 +2503,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=35&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -2511,7 +2511,7 @@
     </item>
     
     <item>
-      <title>Q22 — ADH1B Allele Geography and Ethanol Metabolism</title>
+      <title>Q22 - ADH1B Allele Geography and Ethanol Metabolism</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q22/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2522,7 +2522,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -2673,7 +2673,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=37&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -2681,7 +2681,7 @@
     </item>
     
     <item>
-      <title>Q23 — Drosophila Allele Frequency Experiment and Stabilizing Selection</title>
+      <title>Q23 - Drosophila Allele Frequency Experiment and Stabilizing Selection</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q23/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2692,14 +2692,14 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
   &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/15-evolution/natural-selection-modes-and-fitness/&#34;&gt;Natural Selection: Modes &amp; Fitness&lt;/a&gt;
   &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/15-evolution/population-genetics-hardy-weinberg-equilibrium/&#34;&gt;Population Genetics &amp; Hardy-Weinberg Equilibrium&lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;Aizhan studies polymorphism of locus JR_189021 in &lt;em&gt;Drosophila melanogaster&lt;/em&gt; that has only two alleles — A1 and A2. To study the fitness of genotypes, she runs a long-term evolution experiment with ten independent populations of 1,000 flies for 150 generations and measures the frequency of allele A1 in each generation (Figure 1). After completing it, she decided to change the population size and run an experiment using the same setup (Experiment #2). Additionally, she estimated the expected theoretical fit using the fitness values of each genotype reported in the literature. The locus is not under frequency-dependent selection. Assume that homozygous phenotypes are at the extreme of phenotypic distribution. Allele and genotype frequencies within a given generation can be assumed to follow Hardy-Weinberg equilibrium.&lt;/p&gt;
+&lt;p&gt;Aizhan studies polymorphism of locus JR_189021 in &lt;em&gt;Drosophila melanogaster&lt;/em&gt; that has only two alleles - A1 and A2. To study the fitness of genotypes, she runs a long-term evolution experiment with ten independent populations of 1,000 flies for 150 generations and measures the frequency of allele A1 in each generation (Figure 1). After completing it, she decided to change the population size and run an experiment using the same setup (Experiment #2). Additionally, she estimated the expected theoretical fit using the fitness values of each genotype reported in the literature. The locus is not under frequency-dependent selection. Assume that homozygous phenotypes are at the extreme of phenotypic distribution. Allele and genotype frequencies within a given generation can be assumed to follow Hardy-Weinberg equilibrium.&lt;/p&gt;
 &lt;p&gt;On your answer sheet, indicate &amp;ldquo;T&amp;rdquo; for true statements and &amp;ldquo;F&amp;rdquo; for false ones.&lt;/p&gt;
 &lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2024-theoretical-a-q23&#34;&gt;
   &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;false&#34;
@@ -2839,7 +2839,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=38&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -2847,7 +2847,7 @@
     </item>
     
     <item>
-      <title>Q24 — Codon Usage Bias</title>
+      <title>Q24 - Codon Usage Bias</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q24/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2858,7 +2858,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -3004,7 +3004,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=39&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -3012,7 +3012,7 @@
     </item>
     
     <item>
-      <title>Q25 — Mitochondrial RNase P Mutations and COXPD54</title>
+      <title>Q25 - Mitochondrial RNase P Mutations and COXPD54</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q25/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3023,7 +3023,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -3174,7 +3174,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=40&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -3182,7 +3182,7 @@
     </item>
     
     <item>
-      <title>Q26 — Mass Extinctions and Carbon Cycle Perturbations</title>
+      <title>Q26 - Mass Extinctions and Carbon Cycle Perturbations</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q26/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3193,7 +3193,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -3344,7 +3344,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=41&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -3352,7 +3352,7 @@
     </item>
     
     <item>
-      <title>Q27 — Beta-Lactamase Mutational Trajectories and Epistasis</title>
+      <title>Q27 - Beta-Lactamase Mutational Trajectories and Epistasis</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q27/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3363,7 +3363,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -3513,7 +3513,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=43&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -3521,7 +3521,7 @@
     </item>
     
     <item>
-      <title>Q28 — Distribution of Fitness Effects and Effective Population Size</title>
+      <title>Q28 - Distribution of Fitness Effects and Effective Population Size</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q28/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3532,13 +3532,13 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
   &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/15-evolution/genetic-drift-gene-flow-and-mutation/&#34;&gt;Genetic Drift, Gene Flow &amp; Mutation&lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;Mutations have different effects ranging from strongly deleterious to highly adaptive. The frequency with which a particular mutation appears de novo is described by the fundamental property of each species — distribution of fitness effects (DFE). There are two direct methods of finding DFE: induce mutations and check the fitness of each mutation, or prepare mutation accumulation lines and compare their fitness distribution with the initial line. DFE can also be inferred indirectly from sequencing data that compares rates of non-synonymous (N) and synonymous (S) substitutions using the dN/dS ratio between different species.&lt;/p&gt;
+&lt;p&gt;Mutations have different effects ranging from strongly deleterious to highly adaptive. The frequency with which a particular mutation appears de novo is described by the fundamental property of each species - distribution of fitness effects (DFE). There are two direct methods of finding DFE: induce mutations and check the fitness of each mutation, or prepare mutation accumulation lines and compare their fitness distribution with the initial line. DFE can also be inferred indirectly from sequencing data that compares rates of non-synonymous (N) and synonymous (S) substitutions using the dN/dS ratio between different species.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
     &lt;img src=&#34;http://localhost:1313/papers/ibo/2024/q28-figure-1.png&#34; alt=&#34;Schematic of a mutation-accumulation-line experiment: a preserved ancestor line is compared against descendant lines allowed to accumulate mutations over many generations (Gen 1, Gen 2, … Gen N).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
@@ -3682,7 +3682,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=44&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -3690,7 +3690,7 @@
     </item>
     
     <item>
-      <title>Q29 — Endogenous Retroviruses and Retrotransposons</title>
+      <title>Q29 - Endogenous Retroviruses and Retrotransposons</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q29/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3701,7 +3701,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -3851,7 +3851,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=45&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -3859,7 +3859,7 @@
     </item>
     
     <item>
-      <title>Q3 — Bacterial Phylogenomics (RNA Polymerase vs Transposase)</title>
+      <title>Q3 - Bacterial Phylogenomics (RNA Polymerase vs Transposase)</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3870,7 +3870,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -4080,7 +4080,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=9&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -4088,7 +4088,7 @@
     </item>
     
     <item>
-      <title>Q30 — Gibberellin Transport and Root Endodermis Suberization</title>
+      <title>Q30 - Gibberellin Transport and Root Endodermis Suberization</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q30/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4099,7 +4099,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -4250,7 +4250,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=47&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -4258,7 +4258,7 @@
     </item>
     
     <item>
-      <title>Q31 — Photorespiration Pathway</title>
+      <title>Q31 - Photorespiration Pathway</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q31/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4269,7 +4269,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -4420,7 +4420,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=48&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -4428,7 +4428,7 @@
     </item>
     
     <item>
-      <title>Q32 — Poaceae Stomata Synchronization Mechanism</title>
+      <title>Q32 - Poaceae Stomata Synchronization Mechanism</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q32/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4439,7 +4439,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -4590,7 +4590,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=49&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -4598,7 +4598,7 @@
     </item>
     
     <item>
-      <title>Q33 — Xanthophyll Cycle and Photoprotection</title>
+      <title>Q33 - Xanthophyll Cycle and Photoprotection</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q33/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4609,7 +4609,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -4760,7 +4760,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=50&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -4768,7 +4768,7 @@
     </item>
     
     <item>
-      <title>Q34 — Maize Leaf Carbohydrate Allocation</title>
+      <title>Q34 - Maize Leaf Carbohydrate Allocation</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q34/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4779,7 +4779,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -4930,7 +4930,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=52&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -4938,7 +4938,7 @@
     </item>
     
     <item>
-      <title>Q35 — Sequoia Tree Water Use Strategies</title>
+      <title>Q35 - Sequoia Tree Water Use Strategies</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q35/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4949,7 +4949,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -5099,7 +5099,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=53&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -5107,7 +5107,7 @@
     </item>
     
     <item>
-      <title>Q36 — Aquatic Carbon Uptake</title>
+      <title>Q36 - Aquatic Carbon Uptake</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q36/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -5118,13 +5118,13 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
   &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/5-plant-physiology/calvin-cycle-photorespiration-c4-cam/&#34;&gt;Calvin Cycle, Photorespiration &amp; C4/CAM Biochemistry&lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;Aquatic carbon primarily exists in the dissolved form, and due to the formation of H2CO3 (carbonic acid), there are three main species — H2CO3, HCO3-, and CO3(2-). Despite that, Rubisco only uses CO2 as the carbon source.&lt;/p&gt;
+&lt;p&gt;Aquatic carbon primarily exists in the dissolved form, and due to the formation of H2CO3 (carbonic acid), there are three main species - H2CO3, HCO3-, and CO3(2-). Despite that, Rubisco only uses CO2 as the carbon source.&lt;/p&gt;
 &lt;p&gt;The oceanic pH is around 8, and freshwater pH is around 7. Generally for aquatic plants, epidermal cells take up carbon directly, but diffusion is significantly slower in water than in air. Plants can uptake HCO3- faster than CO2. Some plants use intracellular carbonic anhydrase as a quicker carbon sourcing mechanism.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
     &lt;img src=&#34;http://localhost:1313/papers/ibo/2024/q36-figure-1.png&#34; alt=&#34;The carbonic anhydrase reaction, and a graph of the percent composition of dissolved inorganic carbon species (H2CO3, HCO3-, CO3 2-) against water pH, with two boundary lines separating the three species’ dominant ranges.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
@@ -5269,7 +5269,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=54&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -5277,7 +5277,7 @@
     </item>
     
     <item>
-      <title>Q37 — Root Water Movement and Osmotic Regulation</title>
+      <title>Q37 - Root Water Movement and Osmotic Regulation</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q37/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -5288,7 +5288,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -5439,7 +5439,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=55&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -5447,7 +5447,7 @@
     </item>
     
     <item>
-      <title>Q38 — ECG Interpretation</title>
+      <title>Q38 - ECG Interpretation</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q38/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -5458,7 +5458,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -5608,7 +5608,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=56&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -5616,7 +5616,7 @@
     </item>
     
     <item>
-      <title>Q39 — Snow Leopard Hemoglobin at High Altitude</title>
+      <title>Q39 - Snow Leopard Hemoglobin at High Altitude</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q39/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -5627,7 +5627,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -5777,7 +5777,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=57&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -5785,7 +5785,7 @@
     </item>
     
     <item>
-      <title>Q4 — Tumor Microenvironment: OCR and Extracellular pH</title>
+      <title>Q4 - Tumor Microenvironment: OCR and Extracellular pH</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -5796,7 +5796,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -5946,7 +5946,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=10&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -5954,7 +5954,7 @@
     </item>
     
     <item>
-      <title>Q40 — Circadian Misalignment in Mice</title>
+      <title>Q40 - Circadian Misalignment in Mice</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q40/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -5965,7 +5965,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -6119,7 +6119,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=58&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -6127,7 +6127,7 @@
     </item>
     
     <item>
-      <title>Q41 — Octopus Active Sleep and Circadian Control</title>
+      <title>Q41 - Octopus Active Sleep and Circadian Control</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q41/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -6138,7 +6138,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -6288,7 +6288,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=60&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -6296,7 +6296,7 @@
     </item>
     
     <item>
-      <title>Q42 — Electric Eel Prey Detection</title>
+      <title>Q42 - Electric Eel Prey Detection</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q42/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -6307,7 +6307,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -6463,7 +6463,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=61&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -6471,7 +6471,7 @@
     </item>
     
     <item>
-      <title>Q43 — Saiga Nasal Anatomy and Wolf Predation</title>
+      <title>Q43 - Saiga Nasal Anatomy and Wolf Predation</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q43/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -6482,7 +6482,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -6490,7 +6490,7 @@
   &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/9-ethology/foraging-anti-predator-behavior/&#34;&gt;Foraging &amp; Anti-Predator Behavior&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;Saigas (&lt;em&gt;Saiga tatarica&lt;/em&gt;) are herding antelopes that have an enlarged nasal cavity. Figure 1 below shows computed tomographic (CT) sections of their head.&lt;/p&gt;
-&lt;p&gt;The main natural enemy of saigas is the wolf. However, in open areas, saigas are not afraid of wolves because of the difference in their running speeds: saigas — 75-80 km/h, wolves — 40-45 km/h. At the same time, the weight load per 1 cm² for the saiga is 500 grams, while it is 160 grams for the wolf.&lt;/p&gt;
+&lt;p&gt;The main natural enemy of saigas is the wolf. However, in open areas, saigas are not afraid of wolves because of the difference in their running speeds: saigas - 75-80 km/h, wolves - 40-45 km/h. At the same time, the weight load per 1 cm² for the saiga is 500 grams, while it is 160 grams for the wolf.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
     &lt;img src=&#34;http://localhost:1313/papers/ibo/2024/q43-figure-1.png&#34; alt=&#34;Successive CT transverse sections (A-I) through a saiga head showing the internal structures of its enlarged nasal cavity, with a lateral skull view (J) marking the level of each section.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
@@ -6634,7 +6634,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=63&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -6642,7 +6642,7 @@
     </item>
     
     <item>
-      <title>Q44 — TLR7/8 Activation in Sperm Sex Sorting</title>
+      <title>Q44 - TLR7/8 Activation in Sperm Sex Sorting</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q44/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -6653,13 +6653,13 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
   &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/reproductive-physiology/&#34;&gt;Reproductive Physiology&lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;Approximately 50% of epididymal sperm express Toll-like receptors 7/8 (TLR7/8), which are encoded on the X chromosome. The researchers investigated the effects of their activation in mice sperm cells by a specific ligand — R848. To do that they performed several experiments consisting of a swim-up method and in vitro fertilization (IVF). The obtained data is presented below.&lt;/p&gt;
+&lt;p&gt;Approximately 50% of epididymal sperm express Toll-like receptors 7/8 (TLR7/8), which are encoded on the X chromosome. The researchers investigated the effects of their activation in mice sperm cells by a specific ligand - R848. To do that they performed several experiments consisting of a swim-up method and in vitro fertilization (IVF). The obtained data is presented below.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
     &lt;img src=&#34;http://localhost:1313/papers/ibo/2024/q44-figure-1.png&#34; alt=&#34;Diagram of the swim-up method used to sort sperm by motility, separating an upper layer (U) of highly motile sperm from a lower layer (L) that remains in the seminal plasma.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
@@ -6807,7 +6807,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=65&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -6815,7 +6815,7 @@
     </item>
     
     <item>
-      <title>Q45 — Vascularized Cardiac Tissue In Vitro</title>
+      <title>Q45 - Vascularized Cardiac Tissue In Vitro</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q45/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -6826,7 +6826,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -6976,7 +6976,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=67&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -6984,7 +6984,7 @@
     </item>
     
     <item>
-      <title>Q46 — Channelrhodopsin-2 (ChR2) in Hippocampal Neurons</title>
+      <title>Q46 - Channelrhodopsin-2 (ChR2) in Hippocampal Neurons</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q46/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -6995,7 +6995,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -7146,7 +7146,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=69&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -7154,7 +7154,7 @@
     </item>
     
     <item>
-      <title>Q47 — Cost of Transport in Locomotion</title>
+      <title>Q47 - Cost of Transport in Locomotion</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q47/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -7165,7 +7165,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -7315,7 +7315,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=71&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -7323,7 +7323,7 @@
     </item>
     
     <item>
-      <title>Q48 — Helium Dilution Test for Residual Volume</title>
+      <title>Q48 - Helium Dilution Test for Residual Volume</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q48/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -7334,7 +7334,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -7344,7 +7344,7 @@
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
     &lt;img src=&#34;http://localhost:1313/papers/ibo/2024/q48-figure-1.png&#34; alt=&#34;Diagram of the helium dilution test: a patient attached to a spirometer after regular expiration, then performing a full forced expiration, alongside a table of Vsf and final helium concentration for a healthy control and two patients.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
-&lt;em&gt;Figure 1. A In the first stage, the patient is attached to the spirometer after regular expiration and then breathes several times to establish helium equilibrium. Vs - initial spirometer volume. B The patient performs a full forced expiration, and the spirometer is detached. Table 1. Results of the helium dilution test for two male patients and one male control: Vsf (L) / C2 (%) — Healthy control 6.1 / 6.8, Patient 1: 5.6 / 6.5, Patient 2: 5.6 / 8.&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Figure 1. A In the first stage, the patient is attached to the spirometer after regular expiration and then breathes several times to establish helium equilibrium. Vs - initial spirometer volume. B The patient performs a full forced expiration, and the spirometer is detached. Table 1. Results of the helium dilution test for two male patients and one male control: Vsf (L) / C2 (%) - Healthy control 6.1 / 6.8, Patient 1: 5.6 / 6.5, Patient 2: 5.6 / 8.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;On your answer sheet, indicate &amp;ldquo;T&amp;rdquo; for true statements and &amp;ldquo;F&amp;rdquo; for false ones.&lt;/p&gt;
 &lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2024-theoretical-a-q48&#34;&gt;
   &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;true&#34;
@@ -7484,7 +7484,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=72&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -7492,7 +7492,7 @@
     </item>
     
     <item>
-      <title>Q49 — Esophageal Doppler Monitoring</title>
+      <title>Q49 - Esophageal Doppler Monitoring</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q49/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -7503,7 +7503,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -7654,7 +7654,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=73&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -7662,7 +7662,7 @@
     </item>
     
     <item>
-      <title>Q5 — Antibody Mutagenesis and Cardiac Glycoside Binding (ELISA)</title>
+      <title>Q5 - Antibody Mutagenesis and Cardiac Glycoside Binding (ELISA)</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -7673,7 +7673,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -7823,7 +7823,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=11&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -7831,7 +7831,7 @@
     </item>
     
     <item>
-      <title>Q50 — Countercurrent System and Nephron Function</title>
+      <title>Q50 - Countercurrent System and Nephron Function</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q50/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -7842,7 +7842,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -7992,7 +7992,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=75&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -8000,7 +8000,7 @@
     </item>
     
     <item>
-      <title>Q6 — Ramachandran Plot and Peptide Bond Geometry</title>
+      <title>Q6 - Ramachandran Plot and Peptide Bond Geometry</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -8011,7 +8011,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -8161,7 +8161,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=13&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -8169,7 +8169,7 @@
     </item>
     
     <item>
-      <title>Q7 — Pentose Phosphate Pathway (PPP)</title>
+      <title>Q7 - Pentose Phosphate Pathway (PPP)</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -8180,7 +8180,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -8330,7 +8330,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=15&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -8338,7 +8338,7 @@
     </item>
     
     <item>
-      <title>Q8 — IGF2-H19 Imprinting and CTCF Loops</title>
+      <title>Q8 - IGF2-H19 Imprinting and CTCF Loops</title>
       <link>http://localhost:1313/papers/ibo/2024/theoretical-a/q8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -8349,7 +8349,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -8499,7 +8499,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2024, Theoretical Exam Part A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-exam.pdf#page=17&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2024/theoretical-a-solutions.docx&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 

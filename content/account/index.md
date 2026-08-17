@@ -17,7 +17,7 @@ layout: "wide"
     <li><span class="account-branding-icon">🙂</span><div><strong>Profile</strong><br>Pick an avatar and share your country, education level, and a short bio.</div></li>
     <li><span class="account-branding-icon">📖</span><div><strong>BiOInsights</strong><br>Full access to every piece, not just the teaser.</div></li>
   </ul>
-  <p class="account-branding-optional">Everything else on BiOGuide — practice questions, timed attempts, topic notes — still works exactly the same without an account.</p>
+  <p class="account-branding-optional">Everything else on BiOGuide - practice questions, timed attempts, topic notes - still works exactly the same without an account.</p>
 </div>
 
 <div class="account-form-panel">
@@ -75,7 +75,7 @@ layout: "wide"
   <p class="account-loggedin-greeting">Logged in as <strong id="account-display-name"></strong>.</p>
 
   <h3>Avatar</h3>
-  <p class="account-hint">Pick a profile picture — shown on the leaderboard and in the navbar.</p>
+  <p class="account-hint">Pick a profile picture - shown on the leaderboard and in the navbar.</p>
   <div id="account-avatar-grid" class="account-avatar-grid"></div>
   <div class="account-msg" id="account-avatar-msg"></div>
 

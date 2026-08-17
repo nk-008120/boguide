@@ -17,7 +17,7 @@ The root is the first organ built almost entirely for absorption and anchorage r
 
 ### Root Systems
 
-Roots occur in two structural patterns: a **taproot system** (one dominant primary root, derived directly from the embryonic radicle, with thinner lateral roots branching from it — typical of dicots, and often modified for storage, e.g. carrot, beet) and a **fibrous root system** (many similarly-sized roots, none dominant, typically arising adventitiously from the stem base rather than from a single primary root — typical of monocots, e.g. grasses). Fibrous systems occupy shallow soil more densely (better for erosion control and rapid water uptake near the surface); taproot systems reach deeper soil water and store more reserve tissue in a single structure.
+Roots occur in two structural patterns: a **taproot system** (one dominant primary root, derived directly from the embryonic radicle, with thinner lateral roots branching from it, typical of dicots, and often modified for storage, e.g. carrot, beet) and a **fibrous root system** (many similarly-sized roots, none dominant, typically arising adventitiously from the stem base rather than from a single primary root, typical of monocots, e.g. grasses). Fibrous systems occupy shallow soil more densely (better for erosion control and rapid water uptake near the surface); taproot systems reach deeper soil water and store more reserve tissue in a single structure.
 
 ![Taproot system (dandelion) vs. fibrous root system (grass), whole-plant comparison.](/PLANTANATPICS/taproot-vs-fibrous-root-system.jpg)
 *Source: Biology Notes on Medium (medium.com/@biologynotes)*
@@ -39,7 +39,7 @@ The innermost layer of the cortex, the **endodermis**, is a single layer of tigh
 
 ### Pericycle and Lateral Root Origin
 
-Immediately internal to the endodermis, the **pericycle** is a layer (one or more cells thick) that, unlike most other mature root tissue, retains meristematic potential. **Lateral roots originate from pericycle cell divisions**: meaning new roots arise from a deep-seated internal tissue layer and must grow outward through the cortex and epidermis to emerge, an **endogenous** origin. This is a specific, testable structural contrast with lateral shoot branches, which arise **exogenously** from axillary buds already at the stem surface (see [Stem Anatomy](../stem-anatomy/)) — the same "lateral organ" concept, opposite tissue origin, in root versus shoot.
+Immediately internal to the endodermis, the **pericycle** is a layer (one or more cells thick) that, unlike most other mature root tissue, retains meristematic potential. **Lateral roots originate from pericycle cell divisions**: meaning new roots arise from a deep-seated internal tissue layer and must grow outward through the cortex and epidermis to emerge, an **endogenous** origin. This is a specific, testable structural contrast with lateral shoot branches, which arise **exogenously** from axillary buds already at the stem surface (see [Stem Anatomy](../stem-anatomy/)), the same "lateral organ" concept, opposite tissue origin, in root versus shoot.
 
 ![Microscope cross-section of a root showing an emerging lateral root pushing through the cortex and epidermis, with epidermis, root hair, cortex, endodermis, passage cells, pericycle, pith, phloem, and protoxylem/metaxylem vessels all labeled.](/PLANTANATPICS/lateral-root-emergence.jpg)
 *Source: Wikipedia, "Lateral root" (en.wikipedia.org/wiki/Lateral_root)*
@@ -48,17 +48,17 @@ Immediately internal to the endodermis, the **pericycle** is a layer (one or mor
 
 At the center of the root, the **stele** (vascular cylinder) shows a fundamentally different xylem/phloem arrangement than the stem, and one that differs further between monocots and dicots:
 
-- **Dicot roots**: xylem forms a solid, star-shaped core (an **actinostele**) with a small number of arms (**diarch** = 2 arms, **triarch** = 3, **tetrarch** = 4, etc., depending on species), phloem occupying the bays between adjacent xylem arms. Pith is typically absent or minimal — the xylem core occupies most of the stele's center.
+- **Dicot roots**: xylem forms a solid, star-shaped core (an **actinostele**) with a small number of arms (**diarch** = 2 arms, **triarch** = 3, **tetrarch** = 4, etc., depending on species), phloem occupying the bays between adjacent xylem arms. Pith is typically absent or minimal, the xylem core occupies most of the stele's center.
 
 ![Dicot (tetrarch) root cross-section: unicellular hair, epiblema, cortex, endodermis, pericycle, a small central pith, phloem, and metaxylem/protoxylem all labeled.](/PLANTANATPICS/dicot-root-cross-section.webp)
 *Source: GeeksforGeeks (geeksforgeeks.org)*
 
-- **Monocot roots**: xylem and phloem form an alternating ring around a large, prominent central **pith** (usually parenchyma, sometimes with sclerenchyma reinforcement), rather than xylem filling the center — described further in comparison on [Monocot vs Dicot Comparative Anatomy](../monocot-dicot-comparative-anatomy/). Monocot roots also typically show more numerous xylem poles (**polyarch**) than dicot roots.
+- **Monocot roots**: xylem and phloem form an alternating ring around a large, prominent central **pith** (usually parenchyma, sometimes with sclerenchyma reinforcement), rather than xylem filling the center, described further in comparison on [Monocot vs Dicot Comparative Anatomy](../monocot-dicot-comparative-anatomy/). Monocot roots also typically show more numerous xylem poles (**polyarch**) than dicot roots.
 
 ![Monocot root cross-section: epidermis, cortex, endodermis, and a stele with pericycle, xylem, pith, and phloem all labeled.](/PLANTANATPICS/monocot-root-cross-section.jpg)
 *Source: BioRender template gallery (biorender.com)*
 
-In both cases root xylem matures **exarch** (the earliest-matured protoxylem lies toward the outside, nearest the pericycle, with metaxylem maturing centripetally, toward the center) — the opposite maturation direction from the stem, where xylem matures **endarch** (protoxylem innermost). This exarch/endarch contrast is a specific, frequently tested root-vs-stem structural distinction independent of the monocot/dicot axis.
+In both cases root xylem matures **exarch** (the earliest-matured protoxylem lies toward the outside, nearest the pericycle, with metaxylem maturing centripetally, toward the center), the opposite maturation direction from the stem, where xylem matures **endarch** (protoxylem innermost). This exarch/endarch contrast is a specific, frequently tested root-vs-stem structural distinction independent of the monocot/dicot axis.
 
 ## Comparative Structures
 
@@ -81,11 +81,11 @@ In both cases root xylem matures **exarch** (the earliest-matured protoxylem lie
 
 **Interactive**
 
-- **Casparian strip transport pathway simulator (click-through SVG/JS, no new library)** — a root cross-section showing epidermis through stele; clicking "apoplast" or "symplast" traces a highlighted path for a water molecule from soil to xylem, with the apoplast path visibly blocked and rerouted through a membrane at the endodermis, making the forced apoplast-to-symplast switch visible rather than stated.
+- **Casparian strip transport pathway simulator (click-through SVG/JS, no new library)**, a root cross-section showing epidermis through stele; clicking "apoplast" or "symplast" traces a highlighted path for a water molecule from soil to xylem, with the apoplast path visibly blocked and rerouted through a membrane at the endodermis, making the forced apoplast-to-symplast switch visible rather than stated.
 
 {{< iframe src="/casparian-strip-pathway-simulator.html" title="Casparian strip transport pathway simulator" height="500px" >}}
 
-- **Monocot vs. dicot root stele toggle (click-through SVG/JS, no new library)** — a single diagram frame that toggles between a dicot actinostele (solid xylem star, no pith) and a monocot stele (xylem/phloem ring, central pith), so the structural contrast is seen as a direct swap rather than two separate images.
+- **Monocot vs. dicot root stele toggle (click-through SVG/JS, no new library)**, a single diagram frame that toggles between a dicot actinostele (solid xylem star, no pith) and a monocot stele (xylem/phloem ring, central pith), so the structural contrast is seen as a direct swap rather than two separate images.
 
 {{< iframe src="/monocot-dicot-root-stele-toggle.html" title="Monocot vs. dicot root stele toggle" height="480px" >}}
 

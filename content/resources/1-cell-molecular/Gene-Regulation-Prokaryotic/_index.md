@@ -1,7 +1,7 @@
 ---
 title: "Gene Regulation: Prokaryotic"
 weight: 13
-description: "The operon model, negative and positive control, the lac and trp operons as contrasting case studies, attenuation, and riboswitches — how bacteria regulate gene expression without a nucleus or chromatin."
+description: "The operon model, negative and positive control, the lac and trp operons as contrasting case studies, attenuation, and riboswitches, how bacteria regulate gene expression without a nucleus or chromatin."
 difficulty: "advanced"
 prerequisites: ["Transcription-RNA-Processing"]
 syllabus_tags: ["IBO", "USABO", "molecular-biology"]
@@ -12,7 +12,7 @@ syllabus_tags: ["IBO", "USABO", "molecular-biology"]
 
 ## Overview
 
-Bacteria regulate gene expression almost entirely at the level of transcription initiation, using a compact and efficient organisational unit — the **operon** — that groups functionally related genes under shared regulatory control. This page covers the operon model through its two classic case studies (lac and trp), which illustrate contrasting regulatory logic (inducible vs. repressible, negative vs. positive control), plus two additional layers of prokaryotic regulation below the level of transcription initiation itself.
+Bacteria regulate gene expression almost entirely at the level of transcription initiation, using a compact and efficient organisational unit, the **operon**, that groups functionally related genes under shared regulatory control. This page covers the operon model through its two classic case studies (lac and trp), which illustrate contrasting regulatory logic (inducible vs. repressible, negative vs. positive control), plus two additional layers of prokaryotic regulation below the level of transcription initiation itself.
 
 ## Key Concepts
 
@@ -31,7 +31,7 @@ The lac operon also integrates a **second**, independent layer of regulation ref
 
 ### The trp operon: repressible, negative control
 
-The *trp* operon encodes enzymes for tryptophan **biosynthesis**: the opposite metabolic direction from lac's catabolic (breakdown) role, and correspondingly opposite regulatory logic. In the **absence** of tryptophan, the trp repressor is inactive and unable to bind the operator, so the operon is transcribed by default (**on**): the cell synthesises tryptophan because it needs to. When tryptophan is abundant, it acts as a **co-repressor**, binding the trp repressor and activating it, allowing it to bind the operator and shut transcription **off**: the cell stops making an amino acid it no longer needs to synthesise. This is still negative control (a repressor blocks transcription), but the operon's *default* state and its response to the regulatory molecule are inverted relative to lac — worth stating explicitly, since this contrast (inducible/catabolic vs. repressible/biosynthetic) is the single most common comparative exam framing for this topic.
+The *trp* operon encodes enzymes for tryptophan **biosynthesis**: the opposite metabolic direction from lac's catabolic (breakdown) role, and correspondingly opposite regulatory logic. In the **absence** of tryptophan, the trp repressor is inactive and unable to bind the operator, so the operon is transcribed by default (**on**): the cell synthesises tryptophan because it needs to. When tryptophan is abundant, it acts as a **co-repressor**, binding the trp repressor and activating it, allowing it to bind the operator and shut transcription **off**: the cell stops making an amino acid it no longer needs to synthesise. This is still negative control (a repressor blocks transcription), but the operon's *default* state and its response to the regulatory molecule are inverted relative to lac, worth stating explicitly, since this contrast (inducible/catabolic vs. repressible/biosynthetic) is the single most common comparative exam framing for this topic.
 
 ![trp operon regulatory region: inactive trp repressor cannot bind DNA alone, but binding tryptophan activates it (high [Trp]: repression occurs) to bind the operator and block transcription; the operon layout shows promoter (P), operator (O), leader (trpL) with its attenuator, and the five structural genes trpE-trpD-trpC-trpB-trpA, with high Trp producing only an attenuated mRNA and low Trp producing the full trp mRNA](/MCBBPICS/trp-operon-active-repressed.png)
 *Source: en.wikipedia.org (Trp operon)*
@@ -45,7 +45,7 @@ Beyond repressor-mediated on/off control, the trp operon carries an additional r
 
 ### Riboswitches: regulation without any protein at all
 
-**Riboswitches** are regulatory RNA elements, typically located in an mRNA's 5′ untranslated region, that directly bind a small metabolite ligand (no protein intermediary required) — ligand binding changes the RNA's secondary structure, which in turn affects either transcription termination or translation initiation. Riboswitches represent regulation occurring entirely at the RNA level, and are considered strong supporting evidence for the "RNA world" hypothesis of early evolution, since they demonstrate RNA's independent capacity for both ligand recognition and structural regulatory switching, without requiring any protein component.
+**Riboswitches** are regulatory RNA elements, typically located in an mRNA's 5′ untranslated region, that directly bind a small metabolite ligand (no protein intermediary required), ligand binding changes the RNA's secondary structure, which in turn affects either transcription termination or translation initiation. Riboswitches represent regulation occurring entirely at the RNA level, and are considered strong supporting evidence for the "RNA world" hypothesis of early evolution, since they demonstrate RNA's independent capacity for both ligand recognition and structural regulatory switching, without requiring any protein component.
 
 ## Comparative Structures
 
@@ -60,15 +60,15 @@ Beyond repressor-mediated on/off control, the trp operon carries an additional r
 ## Common Exam Questions
 
 - "Compare the regulatory logic of the lac and trp operons": the expected answer contrasts catabolic/inducible vs. biosynthetic/repressible directly, and correctly identifies that both use negative control (via a repressor) despite having opposite default states and opposite responses to their regulatory molecule.
-- "Why does the lac operon require both lactose presence and glucose absence for full expression?" — tests understanding of the combined negative (repressor/lactose) and positive (CAP/cAMP/glucose) control layers operating together.
+- "Why does the lac operon require both lactose presence and glucose absence for full expression?", tests understanding of the combined negative (repressor/lactose) and positive (CAP/cAMP/glucose) control layers operating together.
 - "How is attenuation possible in bacteria but not eukaryotes?": the correct answer must cite the physical coupling of transcription and translation in bacteria (no nuclear envelope separating them), which is structurally impossible in eukaryotes.
-- Riboswitch questions often test recognition that regulation is occurring with **no protein involved at all** — a frequently missed detail when a question describes a metabolite directly altering an mRNA's own structure.
+- Riboswitch questions often test recognition that regulation is occurring with **no protein involved at all**, a frequently missed detail when a question describes a metabolite directly altering an mRNA's own structure.
 
 ## Visual Reference
 
 **Interactive**
 
-- A lac operon state simulator: toggle lactose and glucose presence/absence independently and see the repressor/CAP binding states and resulting transcription output (on/off) update live — directly visualises the AND-gate combinatorial logic.
+- A lac operon state simulator: toggle lactose and glucose presence/absence independently and see the repressor/CAP binding states and resulting transcription output (on/off) update live, directly visualises the AND-gate combinatorial logic.
 
 {{< iframe src="/lac-operon-state-simulator.html" title="lac Operon State Simulator" height="400px" >}}
 

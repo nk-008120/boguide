@@ -14,7 +14,7 @@ BioGuide is the only free, comprehensive study guide for biology olympiads that 
 
 - **Depth-first content**: IBO targeted depth, Not just name-dropping, not too deep into the rabbitholes.
 - **Interactive simulators.** Plotly-powered visualizations that clarify hard concepts, Simulating tests and a lot more to come!
-- **Practice problems** — IBO/USABO-style questions with fully explained answers
+- **Practice problems** - IBO/USABO-style questions with fully explained answers
 - **Open contributions.** Anyone can help fix errors or add new topics; just follow the rules below!
 
 We cover the full IBO syllabus: 15+ sections, 150+ topic pages,666+ Static files, 208+ Interactive widgets, growing every week.
@@ -78,7 +78,7 @@ We cover the full IBO syllabus: 15+ sections, 150+ topic pages,666+ Static files
 
 **If you're completely new to olympiad biology:**
 
-1. **[Cell Biology & Biochemistry](/resources/1-cell-molecular/)** — the foundation
+1. **[Cell Biology & Biochemistry](/resources/1-cell-molecular/)** - the foundation
 2. **[Genetics](/resources/7-genetics/)**, core concepts for every exam
 3. **[Animal Anatomy](/resources/2-animal-anatomy/)**: a systematic approach to anatomy
 
@@ -138,7 +138,7 @@ Images: See `image-sources.md` for per-image licensing status. A full licensing 
 </div>
 
 <style>
-/* Homepage-specific styles — extend the existing custom.css */
+/* Homepage-specific styles - extend the existing custom.css */
 .homepage-wrapper {
   max-width: 900px;
   margin: 0 auto;
@@ -244,7 +244,7 @@ Images: See `image-sources.md` for per-image licensing status. A full licensing 
   font-weight: 400;
 }
 
-/* Recent updates styling — table, not a list, so each contribution can
+/* Recent updates styling - table, not a list, so each contribution can
    carry an explicit Contributor column. Wrapped in its own scroll
    container (not the whole page) so a long "Update" cell on a narrow
    screen scrolls the table only, never the page itself. */

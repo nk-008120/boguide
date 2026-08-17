@@ -12,7 +12,7 @@ syllabus_tags: ["IBO", "USABO", "genetics", "quantitative-genetics"]
 
 ## Overview
 
-Every pattern covered so far — however extended or complicated — still ultimately rests on Mendelian segregation of nuclear chromosomes. This page covers inheritance patterns that break that assumption in one of two distinct ways: **extranuclear inheritance**, where the relevant DNA is not on a nuclear chromosome at all, and **parent-of-origin effects**, where an offspring's own genotype is Mendelian but its *phenotype* depends on which parent a given allele came from, or even on the parent's genotype rather than the offspring's own.
+Every pattern covered so far, however extended or complicated, still ultimately rests on Mendelian segregation of nuclear chromosomes. This page covers inheritance patterns that break that assumption in one of two distinct ways: **extranuclear inheritance**, where the relevant DNA is not on a nuclear chromosome at all, and **parent-of-origin effects**, where an offspring's own genotype is Mendelian but its *phenotype* depends on which parent a given allele came from, or even on the parent's genotype rather than the offspring's own.
 
 ## Key Concepts
 
@@ -26,21 +26,21 @@ Mitochondria and chloroplasts carry their own small circular genomes, independen
 ![Plastid (chloroplast) inheritance in Mirabilis jalapa: offspring color (green, pale green, or variegated) is determined entirely by which branch supplied the female (seed) parent, not the male (pollen) parent, across a wheel of possible female-branch × male-branch crosses.](/GENETICSPICS/chloroplast-inheritance-variegated-leaf-cross.jpg)
 *Source: biologyreader.com*
 
-![Heteroplasmy: a cell containing a mixture of wild-type (normal) and mutant mitochondria divides via random segregation, producing daughter cells ranging from normal homoplasmy through intermediate heteroplasmy (30%, 70% mutant) to mutant homoplasmy — with disease phenotype emerging only once the mutant fraction crosses a threshold.](/GENETICSPICS/heteroplasmy-mitochondrial-mosaicism-diagram.jpg)
+![Heteroplasmy: a cell containing a mixture of wild-type (normal) and mutant mitochondria divides via random segregation, producing daughter cells ranging from normal homoplasmy through intermediate heteroplasmy (30%, 70% mutant) to mutant homoplasmy, with disease phenotype emerging only once the mutant fraction crosses a threshold.](/GENETICSPICS/heteroplasmy-mitochondrial-mosaicism-diagram.jpg)
 *Source: researchgate.net*
 
 ### Maternal effect
 
 **Maternal effect** genes produce a phenotype in the offspring that is determined by the **mother's genotype**, not the offspring's own, because the mother deposits gene products (mRNA or protein) into the egg cytoplasm *before* fertilization, and these maternally supplied products control an early developmental process before the zygote's own genome is transcriptionally active. The classic example is snail shell coiling direction (dextral/sinistral), controlled by a nuclear gene: an offspring's shell-coiling phenotype matches its **mother's genotype**, one generation delayed, regardless of the offspring's own genotype, a cross between a dextral mother and sinistral father produces all-dextral offspring (matching mother), and the *offspring's own* genotype only becomes phenotypically visible one generation later, in *their* offspring. This is diagnostically distinct from organelle inheritance: maternal effect involves a **nuclear** gene, delayed by one generation and expressed via cytoplasmic deposition, not a cytoplasmic organelle genome transmitted directly.
 
-![Snail shell-coiling cross: a sinistral (dd) female × dextral (DD) male produce sinistral F1 (Dd, matching the mother's sinistral phenotype despite being heterozygous); the F1 (Dd × Dd) then produce F2 offspring (dd, Dd, Dd, DD) that are all dextral, since their mother (F1) was Dd — demonstrating the one-generation delay between an individual's own genotype and its phenotype.](/GENETICSPICS/snail-shell-coiling-maternal-effect-cross.jpg)
+![Snail shell-coiling cross: a sinistral (dd) female × dextral (DD) male produce sinistral F1 (Dd, matching the mother's sinistral phenotype despite being heterozygous); the F1 (Dd × Dd) then produce F2 offspring (dd, Dd, Dd, DD) that are all dextral, since their mother (F1) was Dd, demonstrating the one-generation delay between an individual's own genotype and its phenotype.](/GENETICSPICS/snail-shell-coiling-maternal-effect-cross.jpg)
 *Source: sciencedirect.com*
 
 ### Genomic imprinting
 
-**Genomic imprinting** is a parent-of-origin-specific silencing of one copy of a gene, via DNA methylation established differently in the maternal and paternal germlines (the chromatin/methylation mechanism itself is covered in [Gene Regulation: Eukaryotic & Epigenetics](/resources/1-cell-molecular/gene-regulation-eukaryotic-epigenetics/); this page covers only the resulting inheritance-pattern consequence). An imprinted gene is expressed from only one parental allele: either always the maternal copy or always the paternal copy, depending on the specific gene — so a mutation's phenotypic effect depends on **which parent transmitted it**, not simply on standard dominant/recessive logic. Human **Prader-Willi syndrome** and **Angelman syndrome** are the classic teaching pair: both can result from the identical deletion on chromosome 15, but the phenotype differs sharply depending on whether the deletion is inherited from the father (Prader-Willi, since the normally-silent maternal copy in that region cannot compensate) or the mother (Angelman, for the reciprocal reason) — a direct demonstration that imprinting, not the DNA sequence change itself, determines the outcome.
+**Genomic imprinting** is a parent-of-origin-specific silencing of one copy of a gene, via DNA methylation established differently in the maternal and paternal germlines (the chromatin/methylation mechanism itself is covered in [Gene Regulation: Eukaryotic & Epigenetics](/resources/1-cell-molecular/gene-regulation-eukaryotic-epigenetics/); this page covers only the resulting inheritance-pattern consequence). An imprinted gene is expressed from only one parental allele: either always the maternal copy or always the paternal copy, depending on the specific gene, so a mutation's phenotypic effect depends on **which parent transmitted it**, not simply on standard dominant/recessive logic. Human **Prader-Willi syndrome** and **Angelman syndrome** are the classic teaching pair: both can result from the identical deletion on chromosome 15, but the phenotype differs sharply depending on whether the deletion is inherited from the father (Prader-Willi, since the normally-silent maternal copy in that region cannot compensate) or the mother (Angelman, for the reciprocal reason), a direct demonstration that imprinting, not the DNA sequence change itself, determines the outcome.
 
-*(No Prader-Willi/Angelman diagram has been sourced yet for this section — no suitable source was found this round. Still needed.)*
+*(No Prader-Willi/Angelman diagram has been sourced yet for this section, no suitable source was found this round. Still needed.)*
 
 ### Cytoplasmic male sterility
 
@@ -53,7 +53,7 @@ Mitochondria and chloroplasts carry their own small circular genomes, independen
 
 | Pattern | Responsible DNA | Offspring phenotype determined by | Reciprocal cross | Example |
 |---|---|---|---|---|
-| Organelle (cytoplasmic) inheritance | Mitochondrial/chloroplast genome | Mother's organelle genotype, 100% of offspring | Strictly asymmetric — always matches mother | Leber's hereditary optic neuropathy |
+| Organelle (cytoplasmic) inheritance | Mitochondrial/chloroplast genome | Mother's organelle genotype, 100% of offspring | Strictly asymmetric, always matches mother | Leber's hereditary optic neuropathy |
 | Maternal effect | Nuclear gene, cytoplasmically deposited product | Mother's *nuclear* genotype, one generation delayed | Asymmetric, but resolves to normal Mendelian segregation one generation later | Snail shell coiling direction |
 | Genomic imprinting | Nuclear gene, parent-of-origin-silenced | Which parent transmitted the allele | Asymmetric, depends on specific imprinted locus | Prader-Willi vs. Angelman syndrome |
 
@@ -72,7 +72,7 @@ Mitochondria and chloroplasts carry their own small circular genomes, independen
 
 {{< iframe src="/cross-pattern-classifier.html" title="Cross-pattern classifier" height="480px" >}}
 
-*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. One gap remains open: a Prader-Willi/Angelman imprinting diagram — see the inline note above; no suitable source has been found for it yet.)*
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. One gap remains open: a Prader-Willi/Angelman imprinting diagram, see the inline note above; no suitable source has been found for it yet.)*
 
 ## Practice Problems
 

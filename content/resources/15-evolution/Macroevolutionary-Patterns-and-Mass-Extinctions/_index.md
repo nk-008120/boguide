@@ -17,9 +17,9 @@ syllabus_tags: ["IBO", "USABO", "evolution"]
 
 ### Adaptive Radiation
 
-**Adaptive radiation** is the relatively rapid diversification of a single ancestral lineage into many descendant species, each adapted to a different ecological niche, typically triggered by access to a wide range of underexploited resources — following colonization of a new, competitor-free environment (island or lake systems), the extinction of previously dominant competitor/predator groups, or the evolution of a genuinely new functional trait that opens previously inaccessible niches (a **key innovation**). **Darwin's Galápagos finches** (originating from a single mainland ancestor, diversifying into species with beak forms specialized for seeds, insects, cactus flowers, and even blood-feeding) and the post-Cretaceous-extinction radiation of placental mammals (discussed further below) are standard cases. The diagnostic pattern is a comparatively short branching interval on a time-calibrated phylogeny (a [chronogram](../../4-biosystematics/molecular-systematics/)) giving rise to a disproportionately large number of descendant lineages relative to the surrounding branches, each occupying a distinct niche.
+**Adaptive radiation** is the relatively rapid diversification of a single ancestral lineage into many descendant species, each adapted to a different ecological niche, typically triggered by access to a wide range of underexploited resources, following colonization of a new, competitor-free environment (island or lake systems), the extinction of previously dominant competitor/predator groups, or the evolution of a genuinely new functional trait that opens previously inaccessible niches (a **key innovation**). **Darwin's Galápagos finches** (originating from a single mainland ancestor, diversifying into species with beak forms specialized for seeds, insects, cactus flowers, and even blood-feeding) and the post-Cretaceous-extinction radiation of placental mammals (discussed further below) are standard cases. The diagnostic pattern is a comparatively short branching interval on a time-calibrated phylogeny (a [chronogram](../../4-biosystematics/molecular-systematics/)) giving rise to a disproportionately large number of descendant lineages relative to the surrounding branches, each occupying a distinct niche.
 
-![Darwin's finch phylogeny with beak type and diet specialization labeled at each tip — crushing (ground finches, e.g. large ground finch), probing (cactus finches), sharp/grasping/parrot-like/warbler-like beak forms across the remaining tree finch and warbler finch lineages — plus a comparative developmental panel contrasting large ground finch and cactus finch beak morphology at an equivalent embryonic stage](/EVOLUTIONPICS/galapagos-finch-adaptive-radiation.webp)
+![Darwin's finch phylogeny with beak type and diet specialization labeled at each tip, crushing (ground finches, e.g. large ground finch), probing (cactus finches), sharp/grasping/parrot-like/warbler-like beak forms across the remaining tree finch and warbler finch lineages, plus a comparative developmental panel contrasting large ground finch and cactus finch beak morphology at an equivalent embryonic stage](/EVOLUTIONPICS/galapagos-finch-adaptive-radiation.webp)
 *Source: ResearchGate, fig. 1, "Evolutionary mechanisms for beak shape diversity in Darwin's finches"*
 
 ### Punctuated Equilibrium vs. Phyletic Gradualism
@@ -31,7 +31,7 @@ These are two competing models of the **tempo** (rate) at which morphological ch
 
 Both patterns are documented in different fossil lineages: the two models are not mutually exclusive as general descriptions of evolutionary tempo across all of life, and a given well-sampled lineage can be examined on its own fossil evidence to determine which pattern it actually shows.
 
-![Left: three lineages taking different adaptive walks across a fitness landscape (peaks = higher fitness), illustrating that the same underlying process (movement toward higher fitness across a rugged landscape) can produce very different paths. Right: the three corresponding morphology-over-time patterns this can produce — Gradual (smooth, continuous rise), Stasis (rises then plateaus with no further change), and Punctuated Evolution (long flat stretches interrupted by stepped jumps) — directly connecting the fitness-landscape mechanism to the tempo patterns described in the text](/EVOLUTIONPICS/punctuated-equilibrium-vs-gradualism.webp)
+![Left: three lineages taking different adaptive walks across a fitness landscape (peaks = higher fitness), illustrating that the same underlying process (movement toward higher fitness across a rugged landscape) can produce very different paths. Right: the three corresponding morphology-over-time patterns this can produce, Gradual (smooth, continuous rise), Stasis (rises then plateaus with no further change), and Punctuated Evolution (long flat stretches interrupted by stepped jumps), directly connecting the fitness-landscape mechanism to the tempo patterns described in the text](/EVOLUTIONPICS/punctuated-equilibrium-vs-gradualism.webp)
 *Source: ResearchGate, fig. 4, "Three agents take adaptive walks on a fitness landscape starting at the same point"*
 
 ### Long-Term Evolutionary Trends
@@ -54,7 +54,7 @@ A **mass extinction** is a geologically rapid, global loss of a large proportion
 | End-Cretaceous (K-Pg) | ~66 mya | ~76% (including non-avian dinosaurs) | Chicxulub asteroid impact, evidenced by a global iridium-enriched sediment layer |
 
 ![Geologic timescale with the "big five" mass extinctions (Ordovician, Devonian, Permian, Triassic, K-T) marked alongside their estimated death rates, the same reference timeline introduced in History of Life & Major Transitions, reused here for its mass-extinction detail](/EVOLUTIONPICS/geologic-timescale-milestones.jpg)
-*Source: user-provided (geologyscience.com) — also used on [History of Life: Origin & Major Transitions](../History-of-Life-Origin-and-Major-Transitions/)*
+*Source: user-provided (geologyscience.com), also used on [History of Life: Origin & Major Transitions](../History-of-Life-Origin-and-Major-Transitions/)*
 
 Mass extinctions are macroevolutionarily significant beyond the immediate loss itself because they characteristically clear ecological space, releasing surviving lineages from competitive and predatory pressure that had previously constrained their diversification: the K-Pg extinction's removal of non-avian dinosaurs is the standard example, widely credited with permitting the subsequent adaptive radiation of placental mammals into the large-bodied, diurnal, and specialized ecological niches dinosaurs had previously occupied, a pattern only fully visible by comparing fossil mammal diversity and body size immediately before versus after the event.
 
@@ -83,11 +83,11 @@ Mass extinctions are macroevolutionarily significant beyond the immediate loss i
 
 **Interactive**
 
-- **Punctuated equilibrium vs. gradualism fossil-series builder (SVG/JS, no new library)** — the user is given a set of fossil specimens at different stratigraphic depths for one lineage and arranges/interprets the morphological change pattern, with the tool revealing whether the underlying simulated data was generated under a gradualist or punctuated model, testing pattern recognition rather than definition recall.
+- **Punctuated equilibrium vs. gradualism fossil-series builder (SVG/JS, no new library)**, the user is given a set of fossil specimens at different stratigraphic depths for one lineage and arranges/interprets the morphological change pattern, with the tool revealing whether the underlying simulated data was generated under a gradualist or punctuated model, testing pattern recognition rather than definition recall.
 
 {{< iframe src="/punctuated-fossil-series-builder.html" title="Punctuated equilibrium vs. gradualism fossil-series builder" height="480px" >}}
 
-- **Mass extinction timeline explorer (Plotly)** — a species-diversity-over-time curve across the Phanerozoic with the five mass extinctions marked as sharp diversity drops, clickable for cause evidence and post-extinction recovery/radiation data for each event.
+- **Mass extinction timeline explorer (Plotly)**, a species-diversity-over-time curve across the Phanerozoic with the five mass extinctions marked as sharp diversity drops, clickable for cause evidence and post-extinction recovery/radiation data for each event.
 
 {{< iframe src="/mass-extinction-timeline-explorer.html" title="Mass extinction timeline explorer" height="500px" >}}
 

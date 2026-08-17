@@ -1,7 +1,7 @@
 ---
 title: "Body Plans & Foundational Concepts"
 weight: 1
-description: "Symmetry, tissue histology, gastrulation and germ layer mechanism, coelom formation, cleavage patterns, and segmentation — the shared vocabulary every later Animal Anatomy page builds on, at the depth the rest of the section assumes."
+description: "Symmetry, tissue histology, gastrulation and germ layer mechanism, coelom formation, cleavage patterns, and segmentation, the shared vocabulary every later Animal Anatomy page builds on, at the depth the rest of the section assumes."
 difficulty: "beginner"
 prerequisites: []
 syllabus_tags: ["IBO", "USABO", "foundations"]
@@ -36,7 +36,7 @@ The four primary tissue types, in more structural/functional detail than a simpl
 
 **Epithelial tissue** is classified along two independent axes: cell shape (squamous = flat, cuboidal = cube-shaped, columnar = tall/rectangular) and layering (simple = one cell layer, stratified = multiple layers, pseudostratified = one layer but with nuclei at staggered heights, giving a false appearance of stratification). Function follows structure tightly: **simple squamous** (minimal diffusion distance) lines alveoli and capillaries; **simple columnar** (often with microvilli/cilia, tall cells accommodate more organelles for active transport/secretion) lines the intestine and respiratory tract; **stratified squamous** (the surface layer sacrificial, protecting the basal proliferative layer) covers the epidermis and esophagus; **pseudostratified ciliated columnar** lines the trachea, where coordinated ciliary beating physically sweeps trapped particles. Epithelial tissue is avascular (no blood vessels penetrate it; nutrients diffuse from the underlying connective tissue across a **basement membrane**) and has high mitotic turnover.
 
-**Connective tissue** is unified by having cells sparsely distributed within an extracellular matrix (ECM) rather than packed cell-to-cell like epithelium; the ECM composition (ratio of ground substance to fiber type, collagen for tensile strength, elastin for recoil) determines mechanical properties. **Loose connective tissue** (sparse fibers, viscous ground substance) surrounds organs and vessels; **dense regular connective tissue** (parallel collagen bundles) forms tendons and ligaments; **dense irregular connective tissue** (collagen in multiple directions, resisting multidirectional stress) forms the dermis; **cartilage** (chondrocytes in lacunae, avascular, matrix rich in collagen + proteoglycans) and **bone** (osteocytes, mineralized collagen matrix; full detail on the [Human Skeletal System](../human-skeletal-system/) page) are rigid connective tissues; **blood** counts as connective tissue because it is cells (formed elements) suspended in a fluid extracellular matrix (plasma) — detailed on the [Human Circulatory System](../human-circulatory-system/) page.
+**Connective tissue** is unified by having cells sparsely distributed within an extracellular matrix (ECM) rather than packed cell-to-cell like epithelium; the ECM composition (ratio of ground substance to fiber type, collagen for tensile strength, elastin for recoil) determines mechanical properties. **Loose connective tissue** (sparse fibers, viscous ground substance) surrounds organs and vessels; **dense regular connective tissue** (parallel collagen bundles) forms tendons and ligaments; **dense irregular connective tissue** (collagen in multiple directions, resisting multidirectional stress) forms the dermis; **cartilage** (chondrocytes in lacunae, avascular, matrix rich in collagen + proteoglycans) and **bone** (osteocytes, mineralized collagen matrix; full detail on the [Human Skeletal System](../human-skeletal-system/) page) are rigid connective tissues; **blood** counts as connective tissue because it is cells (formed elements) suspended in a fluid extracellular matrix (plasma), detailed on the [Human Circulatory System](../human-circulatory-system/) page.
 
 **Muscle tissue** and **nervous tissue**: structural detail deferred to the [Human Muscular System](../human-muscular-system/) and [Human Nervous System](../human-nervous-system/) pages respectively, since both require dedicated treatment beyond a definitional summary.
 
@@ -191,12 +191,12 @@ Early cell division (**cleavage**) of the fertilized egg follows one of two patt
 | Coelom formation | **Schizocoely**: the coelom forms by a splitting of a solid mass of mesoderm | **Enterocoely**: the coelom forms by an outpocketing of the archenteron (embryonic gut) wall |
 | Examples | Mollusks, annelids, arthropods | Echinoderms, chordates (including all vertebrates) |
 
-This table is worth returning to directly when reading the [Invertebrate Body Plans](../invertebrate-body-plans-1/) pages (protostome examples) against the Vertebrate Anatomy tier (deuterostome examples) — it is the single most useful axis for placing an unfamiliar phylum's development into context on an exam.
+This table is worth returning to directly when reading the [Invertebrate Body Plans](../invertebrate-body-plans-1/) pages (protostome examples) against the Vertebrate Anatomy tier (deuterostome examples), it is the single most useful axis for placing an unfamiliar phylum's development into context on an exam.
 
 ![Protostomes vs. deuterostomes compared across all three axes: eight-cell-stage cleavage (spiral/determinate vs. radial/indeterminate), coelom formation (schizocoelous splitting of solid mesoderm vs. enterocoelous folding of the archenteron), and blastopore fate (mouth vs. anus).](/ANATOMYPICS/cleavage-patterns-spiral-radial.jpg)
 *Source: textbook figure via Weebly-hosted course page*
 
-![Schizocoely (protostome) vs. enterocoely (deuterostome) coelom formation compared side by side: schizocoely as solid blocks of mesoderm splitting to form the coelom, enterocoely as archenteron buds pinching off to form coelomic pouches — mesoderm, blastopore, coelom, and archenteron labeled on both.](/ANATOMYPICS/coelom-formation-schizocoely-enterocoely.webp)
+![Schizocoely (protostome) vs. enterocoely (deuterostome) coelom formation compared side by side: schizocoely as solid blocks of mesoderm splitting to form the coelom, enterocoely as archenteron buds pinching off to form coelomic pouches, mesoderm, blastopore, coelom, and archenteron labeled on both.](/ANATOMYPICS/coelom-formation-schizocoely-enterocoely.webp)
 *Source: ["Coelom Formation in Protostomes and Deuterostomes and Types of Coelom," SlideShare](https://www.slideshare.net/slideshow/coelom-formation-in-protostomes-and-deuterostomes-and-types-of-coelom/251375050)*
 
 ### Coelom Types
@@ -297,7 +297,7 @@ The **coelom** is a fluid-filled body cavity fully lined by mesoderm-derived tis
 A coelom performs concrete mechanical work: it cushions internal organs, allows the gut to move independently of the body wall (necessary for effective peristalsis, since a fluid-filled cavity transmits muscular force without the gut and body wall dragging against each other), and, in soft-bodied coelomates lacking a rigid skeleton, doubles as a **hydrostatic skeleton**, an incompressible fluid volume that transmits force when surrounding muscle contracts (detailed with earthworm locomotion on the [Invertebrate Body Plans I](../invertebrate-body-plans-1/) page).
 
 ![Acoelomate (flatworm), pseudocoelomate (roundworm), and eucoelomate (segmented worm) body plans compared, each with a representative animal above and a labeled cross-section below showing ectoderm, mesoderm, endoderm, and the body cavity (if any).](/ANATOMYPICS/coelom-types-comparison.jpg)
-*Source: not yet confirmed — flagged CHECK pending source information.*
+*Source: not yet confirmed, flagged CHECK pending source information.*
 
 ### Segmentation
 
@@ -310,9 +310,9 @@ A coelom performs concrete mechanical work: it cushions internal organs, allows 
 | Symmetry | Radial | Bilateral | Bilateral | Bilateral | Radial (adult) / Bilateral (larva) | Bilateral |
 | Germ layers | Diploblastic | Triploblastic | Triploblastic | Triploblastic | Triploblastic | Triploblastic |
 | Coelom | None | Acoelomate | Pseudocoelomate | Eucoelomate | Eucoelomate | Eucoelomate |
-| Cleavage | — | Spiral | Spiral | Spiral | Radial | Radial |
-| Development | — | Protostome | Protostome | Protostome | Deuterostome | Deuterostome |
-| Coelom formation | — | — (none) | — (partial only) | Schizocoely | Enterocoely | Enterocoely |
+| Cleavage |, | Spiral | Spiral | Spiral | Radial | Radial |
+| Development |, | Protostome | Protostome | Protostome | Deuterostome | Deuterostome |
+| Coelom formation |, |, (none) |, (partial only) | Schizocoely | Enterocoely | Enterocoely |
 
 ## Common Exam Questions
 

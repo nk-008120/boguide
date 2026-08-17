@@ -28,7 +28,7 @@ The clearest documented coevolutionary arms races show a **matched escalation** 
 
 - **Rough-skinned newt (*Taricha granulosa*) and common garter snake (*Thamnophis sirtalis*)**: the newt produces **tetrodotoxin (TTX)**, a potent neurotoxin that blocks voltage-gated sodium channels, and geographically local garter snake populations have evolved resistance via specific amino-acid substitutions in the snake's own sodium channel gene, reducing TTX's binding affinity. Field data across multiple populations show newt toxicity and snake resistance are **geographically matched**, with populations that have the most toxic newts also having the most resistant snakes and vice versa: direct, quantifiable evidence of reciprocal escalation rather than a fixed, universal toxin/resistance level.
 
-*(No newt/snake TTX-binding-site diagram — none was found; the mechanism described above remains text-only on this page.)*
+*(No newt/snake TTX-binding-site diagram, none was found; the mechanism described above remains text-only on this page.)*
 
 ![Phenotypic mismatch between garter snake resistance and newt toxicity (in TTX mg) across four population comparisons (Battle Creek, Upper Yuba River, Upper Tule River), each histogram showing the distribution of mismatch with 15th/50th/85th percentiles marked, illustrating geographic variation in how well-matched (or mismatched) the two traits are at each site, the underlying data behind the geographic-matching claim in the text](/EVOLUTIONPICS/newt-snake-geographic-matching.png)
 *Source: British Ecological Society journals (besjournals.onlinelibrary.wiley.com), doi 10.1111/1365-2656.13212*
@@ -50,7 +50,7 @@ Coevolution does not only produce antagonistic escalation. Reciprocal selection 
 ![Yucca moth life cycle diagram: the adult moth gathers pollen from a yucca flower's ovary and lays eggs there; the eggs hatch into larvae alongside the plant's developing seeds inside the yucca pod; each larva bores a hole in the pod, drops to the ground, and pupates in the soil before emerging as an adult to search for new yucca flowers](/EVOLUTIONPICS/yucca-moth-pollination-mutualism.png)
 *Source: kidsgardening.org*
 
-Mutualistic coevolution of this obligate, tightly matched kind is a double-edged evolutionary outcome worth noting: it can produce highly efficient, specialized partnerships, but it also creates strong **coextinction risk** — because each partner's fitness now depends on a single specific counterpart rather than a flexible range of options, the loss of one obligate partner (e.g. through habitat loss or climate-driven range shift) can drive the other extinct as a direct consequence, a pattern of particular concern in conservation biology for narrowly specialized pollination mutualisms.
+Mutualistic coevolution of this obligate, tightly matched kind is a double-edged evolutionary outcome worth noting: it can produce highly efficient, specialized partnerships, but it also creates strong **coextinction risk**, because each partner's fitness now depends on a single specific counterpart rather than a flexible range of options, the loss of one obligate partner (e.g. through habitat loss or climate-driven range shift) can drive the other extinct as a direct consequence, a pattern of particular concern in conservation biology for narrowly specialized pollination mutualisms.
 
 ## Comparative Structures
 
@@ -73,11 +73,11 @@ Mutualistic coevolution of this obligate, tightly matched kind is a double-edged
 
 **Interactive**
 
-- **Newt/snake geographic trait-matching map (interactive SVG/JS, no new library)** — a map of Pacific Northwest populations where clicking a location displays that population's newt toxicity level and garter snake resistance level side by side, letting the user directly discover the geographic correlation rather than being told it exists.
+- **Newt/snake geographic trait-matching map (interactive SVG/JS, no new library)**, a map of Pacific Northwest populations where clicking a location displays that population's newt toxicity level and garter snake resistance level side by side, letting the user directly discover the geographic correlation rather than being told it exists.
 
 {{< iframe src="/newt-snake-map.html" title="Newt/snake geographic trait-matching map" height="470px" >}}
 
-- **Red Queen relative-fitness simulator (Plotly)** — two co-evolving trait value curves (e.g. toxin level and resistance level) plotted over simulated generations, where each side's relative fitness is recalculated each round based on the gap between the two traits, showing fitness oscillating near a constant baseline despite both absolute trait values continuously increasing.
+- **Red Queen relative-fitness simulator (Plotly)**, two co-evolving trait value curves (e.g. toxin level and resistance level) plotted over simulated generations, where each side's relative fitness is recalculated each round based on the gap between the two traits, showing fitness oscillating near a constant baseline despite both absolute trait values continuously increasing.
 
 {{< iframe src="/red-queen-simulator.html" title="Red Queen relative-fitness simulator" height="500px" >}}
 

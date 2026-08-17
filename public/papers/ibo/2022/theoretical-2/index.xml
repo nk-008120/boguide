@@ -15,7 +15,7 @@
     
     
     <item>
-      <title>Leaderboard — Theoretical 2</title>
+      <title>Leaderboard - Theoretical 2</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/leaderboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -24,7 +24,7 @@
         
         
         &lt;p&gt;&lt;a class=&#34;papers-nav-btn&#34; href=&#34;../&#34; style=&#34;display:inline-block;margin-bottom:1.5rem;&#34;&gt;← Back to Theoretical 2&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Ranked by score, then time. Only submitted, logged-in attempts appear here — &lt;a
+&lt;p&gt;Ranked by score, then time. Only submitted, logged-in attempts appear here - &lt;a
     href=&#34;../attempt/&#34;&gt;attempting without an account&lt;/a&gt; still works exactly as before, it just isn&amp;rsquo;t ranked.&lt;/p&gt;
 &lt;script id=&#34;papers-leaderboard-data&#34; type=&#34;application/json&#34;&gt;{&#34;olympiad&#34;:&#34;ibo&#34;,&#34;roundId&#34;:&#34;theoretical-2&#34;,&#34;roundName&#34;:&#34;Theoretical 2&#34;,&#34;year&#34;:&#34;2022&#34;}&lt;/script&gt;
 &lt;div id=&#34;papers-leaderboard-root&#34; class=&#34;papers-leaderboard-root&#34;&gt;
@@ -43,7 +43,7 @@
     </item>
     
     <item>
-      <title>Q100 — Cold-Exposure Duration, Acclimation and Mollusc Survival</title>
+      <title>Q100 - Cold-Exposure Duration, Acclimation and Mollusc Survival</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q50/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -54,7 +54,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -204,7 +204,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=79&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -212,7 +212,7 @@
     </item>
     
     <item>
-      <title>Q51 — Cancer Cell Metabolism — Aerobic Glycolysis and the Warburg Effect</title>
+      <title>Q51 - Cancer Cell Metabolism - Aerobic Glycolysis and the Warburg Effect</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -223,7 +223,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -231,11 +231,11 @@
 &lt;/div&gt;
 &lt;p&gt;In quiescent normal cells, under normal physiological conditions, glucose is aerobically metabolized to pyruvate, most of which is transformed to acetyl-CoA by PDC (Pyruvate Dehydrogenase Complex) (Figure 1a). The resulting Acetyl-CoA enters the tricarboxylic acid cycle (TCA, also Krebs or citric acid cycle) in the mitochondria. In anaerobic microenvironment, pyruvate is almost completely converted to lactate in the cytoplasm and the production of Acetyl-CoA is inhibited. In rapidly growing cancer cells, increased expression of Pyruvate Dehydrogenase Kinases (PDKs) inactivates PDC, and inhibits the conversion of pyruvate to Acetyl-CoA (Figure 1b). Instead, the conversion of pyruvate to lactate is activated, and glycolysis takes place in the cell with high intensity.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q51-figure-1.png&#34; alt=&#34;Figure 1a. Metabolic pathway of glucose in quiescent normal cells — oxidative phosphorylation dominates, yielding ~36 mol ATP per glucose via the TCA cycle.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q51-figure-1.png&#34; alt=&#34;Figure 1a. Metabolic pathway of glucose in quiescent normal cells - oxidative phosphorylation dominates, yielding ~36 mol ATP per glucose via the TCA cycle.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Figure 1a. Glucose metabolism in quiescent normal cells.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q51-figure-2.png&#34; alt=&#34;Figure 1b. Metabolic pathway of glucose in proliferating cancer cells — aerobic glycolysis dominates (only ~5% of pyruvate enters the TCA cycle via PDC, inhibited by PDKs), supplemented by glutaminolysis feeding the TCA cycle for anabolic precursors.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q51-figure-2.png&#34; alt=&#34;Figure 1b. Metabolic pathway of glucose in proliferating cancer cells - aerobic glycolysis dominates (only ~5% of pyruvate enters the TCA cycle via PDC, inhibited by PDKs), supplemented by glutaminolysis feeding the TCA cycle for anabolic precursors.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Figure 1b. Glucose metabolism in proliferating cancer cells.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Use the information and figures to determine whether the following statements are true or false.&lt;/p&gt;
@@ -377,7 +377,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=2&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -385,7 +385,7 @@
     </item>
     
     <item>
-      <title>Q52 — Cryopyrin Inflammasome — Western Blot of WT and Mutant Variants</title>
+      <title>Q52 - Cryopyrin Inflammasome - Western Blot of WT and Mutant Variants</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -396,7 +396,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -546,7 +546,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=4&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -554,7 +554,7 @@
     </item>
     
     <item>
-      <title>Q53 — Telomerase — Mechanism of Telomere Extension</title>
+      <title>Q53 - Telomerase - Mechanism of Telomere Extension</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -565,7 +565,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -715,7 +715,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=5&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -723,7 +723,7 @@
     </item>
     
     <item>
-      <title>Q54 — NAD(P)H Fluorescence During the Aerobic–Anaerobic Transition in Yeast</title>
+      <title>Q54 - NAD(P)H Fluorescence During the Aerobic–Anaerobic Transition in Yeast</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -734,7 +734,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -884,7 +884,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=7&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -892,7 +892,7 @@
     </item>
     
     <item>
-      <title>Q55 — X-Irradiation of Yeast — NAD(P)H Fluorescence and Metabolic Recovery</title>
+      <title>Q55 - X-Irradiation of Yeast - NAD(P)H Fluorescence and Metabolic Recovery</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -903,7 +903,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -1053,7 +1053,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=8&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -1061,7 +1061,7 @@
     </item>
     
     <item>
-      <title>Q56 — Lysosomal Exocytosis in Cancer Cells</title>
+      <title>Q56 - Lysosomal Exocytosis in Cancer Cells</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1072,7 +1072,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -1080,7 +1080,7 @@
 &lt;/div&gt;
 &lt;p&gt;Isolated cancer cells carry genetic changes and acquire an aggressive metastatic phenotype. One of these genetic changes is an activation of lysosomal exocytosis. The lysosomal system is one of the important participants of cancer transition, and thus, is a frequent target for cancer therapy. Lysosomal exocytosis is regulated by Ca²⁺ ions, which promote the fusion of lysosomes with the plasma membrane (PM) and the subsequent release of their contents into the extracellular matrix (ECM).&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q56-figure-1.png&#34; alt=&#34;Figure. Schematic representation of downstream effects of lysosomal exocytosis in cancer cells. Endolysosomes and multivesicular bodies (MVB) fuse into the lysosome, which fuses with the plasma membrane to release proteases (cathepsins), exosomes (growth factors, transcription factors, cytokines), and cancer lysosomotrophic drugs into the ECM — converting nearby fibroblasts and macrophages into CAF (cancer-associated fibroblasts) and TAM (tumor-associated macrophages).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q56-figure-1.png&#34; alt=&#34;Figure. Schematic representation of downstream effects of lysosomal exocytosis in cancer cells. Endolysosomes and multivesicular bodies (MVB) fuse into the lysosome, which fuses with the plasma membrane to release proteases (cathepsins), exosomes (growth factors, transcription factors, cytokines), and cancer lysosomotrophic drugs into the ECM - converting nearby fibroblasts and macrophages into CAF (cancer-associated fibroblasts) and TAM (tumor-associated macrophages).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Figure. Downstream effects of lysosomal exocytosis in cancer cells.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Determine whether the following statements are true or false.&lt;/p&gt;
@@ -1222,7 +1222,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=10&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -1230,7 +1230,7 @@
     </item>
     
     <item>
-      <title>Q57 — PIP2/PIP3 Signaling in T Cells — PTEN and Antigen Dose</title>
+      <title>Q57 - PIP2/PIP3 Signaling in T Cells - PTEN and Antigen Dose</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1241,7 +1241,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -1392,7 +1392,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=12&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -1400,7 +1400,7 @@
     </item>
     
     <item>
-      <title>Q58 — TAK1 Kinase and Takinib — Competitive vs Non-Competitive Inhibition</title>
+      <title>Q58 - TAK1 Kinase and Takinib - Competitive vs Non-Competitive Inhibition</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1411,7 +1411,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -1419,7 +1419,7 @@
 &lt;/div&gt;
 &lt;p&gt;TAK1 is a protein kinase which transfers a phosphate group from ATP to a substrate. In order to elucidate the action mechanism of Takinib, a novel inhibitor of TAK1, two experiments were carried out. In experiment A, TAK1 was added to the solution of ATP, Takinib and TAK1 substrate, and the initial reaction rate was measured for different ATP concentrations and different amounts of Takinib. In experiment B, TAK1 was pre-incubated with 5 μM ATP for 3 hours and then the same steps as in experiment A were carried out with the pre-incubated TAK1. The results of experiments A and B are summarized below, with the amount of inhibitor used indicated to the right.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q58-figure-1.png&#34; alt=&#34;Figure. Panel A: initial reaction rate vs [ATP] for TAK1 not pre-incubated, at 0, 10, and 50 nM Takinib — Vmax drops with increasing Takinib while the curves rise at a similar rate. Panel B: same but with TAK1 pre-incubated with ATP for 3 hours — curves converge to a similar Vmax regardless of Takinib concentration.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q58-figure-1.png&#34; alt=&#34;Figure. Panel A: initial reaction rate vs [ATP] for TAK1 not pre-incubated, at 0, 10, and 50 nM Takinib - Vmax drops with increasing Takinib while the curves rise at a similar rate. Panel B: same but with TAK1 pre-incubated with ATP for 3 hours - curves converge to a similar Vmax regardless of Takinib concentration.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Figure. Dependence of initial reaction rate on starting ATP concentration, at different Takinib doses, without (A) and with (B) ATP pre-incubation.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Determine whether the following statements are true or false:&lt;/p&gt;
@@ -1561,7 +1561,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=13&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -1569,7 +1569,7 @@
     </item>
     
     <item>
-      <title>Q59 — Mitochondrial Innate Immunity — Yme1L, SLC25A33 and mtDNA Release</title>
+      <title>Q59 - Mitochondrial Innate Immunity - Yme1L, SLC25A33 and mtDNA Release</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1580,7 +1580,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -1731,7 +1731,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=14&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -1739,7 +1739,7 @@
     </item>
     
     <item>
-      <title>Q60 — Alzheimer&#39;s Disease — APP Processing by α-, β- and γ-Secretases</title>
+      <title>Q60 - Alzheimer&#39;s Disease - APP Processing by α-, β- and γ-Secretases</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1750,7 +1750,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -1758,7 +1758,7 @@
 &lt;/div&gt;
 &lt;p&gt;Alzheimer&amp;rsquo;s disease is related to the aggregation of amyloid peptides, followed by the degeneration of neurons and disruption of cholinergic transmission. Among patients suffering from Alzheimer&amp;rsquo;s disease, the β-amyloid peptides (Aβ) are formed from the cleavage of the protein APP. The normal protein (APP) is composed of many α-helices, making it highly soluble. The β-amyloid, in contrast, has a secondary structure rich in β-sheets, which aggregate easily and create insoluble fibers. APP is a multi-domain transmembrane protein. There are three proteases, which take part in the proteolytic processing of APP: α-, β-, and γ-secretases.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q60-figure-1.png&#34; alt=&#34;Figure 1. APP multi-domain protein modification — β-cleavage followed by γ-cleavage releases the amyloidogenic Aβ peptide (red); α-cleavage (which cuts within the Aβ sequence) followed by γ-cleavage instead releases non-amyloidogenic fragments (teal), precluding Aβ formation.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q60-figure-1.png&#34; alt=&#34;Figure 1. APP multi-domain protein modification - β-cleavage followed by γ-cleavage releases the amyloidogenic Aβ peptide (red); α-cleavage (which cuts within the Aβ sequence) followed by γ-cleavage instead releases non-amyloidogenic fragments (teal), precluding Aβ formation.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Figure 1. APP multi-domain protein modification by α-, β- and γ-secretases.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Determine whether the following statements are true or false:&lt;/p&gt;
@@ -1900,7 +1900,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=16&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -1908,7 +1908,7 @@
     </item>
     
     <item>
-      <title>Q61 — RNA Virus Replication Cycles — Genome Classification</title>
+      <title>Q61 - RNA Virus Replication Cycles - Genome Classification</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q11/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1919,7 +1919,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -2075,7 +2075,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=17&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -2083,7 +2083,7 @@
     </item>
     
     <item>
-      <title>Q62 — Pine Needle Cross-Section — Resin Duct and Mesophyll</title>
+      <title>Q62 - Pine Needle Cross-Section - Resin Duct and Mesophyll</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q12/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2094,7 +2094,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -2243,7 +2243,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=19&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -2251,7 +2251,7 @@
     </item>
     
     <item>
-      <title>Q63 — Land Plant Phylogeny — Evaluating Four Cladograms</title>
+      <title>Q63 - Land Plant Phylogeny - Evaluating Four Cladograms</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q13/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2262,7 +2262,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -2412,7 +2412,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=20&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -2420,7 +2420,7 @@
     </item>
     
     <item>
-      <title>Q64 — The C4 Rice Project — Engineering C4 Photosynthesis into a C3 Crop</title>
+      <title>Q64 - The C4 Rice Project - Engineering C4 Photosynthesis into a C3 Crop</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q14/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2431,7 +2431,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -2577,7 +2577,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=21&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -2585,7 +2585,7 @@
     </item>
     
     <item>
-      <title>Q65 — Arabidopsis Sun vs Shade Leaves — Cross-Section Comparison</title>
+      <title>Q65 - Arabidopsis Sun vs Shade Leaves - Cross-Section Comparison</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q15/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2596,7 +2596,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -2746,7 +2746,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=22&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -2754,7 +2754,7 @@
     </item>
     
     <item>
-      <title>Q66 — Transpiration Rate Differences Between Leaf Surfaces</title>
+      <title>Q66 - Transpiration Rate Differences Between Leaf Surfaces</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q16/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2765,7 +2765,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -2915,7 +2915,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=23&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -2923,7 +2923,7 @@
     </item>
     
     <item>
-      <title>Q67 — Root Water Transport Pathways — Apoplast vs Symplast</title>
+      <title>Q67 - Root Water Transport Pathways - Apoplast vs Symplast</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q17/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2934,7 +2934,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -3084,7 +3084,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=24&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -3092,7 +3092,7 @@
     </item>
     
     <item>
-      <title>Q68 — Pressure-Flow Model of Phloem Sucrose Transport</title>
+      <title>Q68 - Pressure-Flow Model of Phloem Sucrose Transport</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q18/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3103,7 +3103,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -3253,7 +3253,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=25&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -3261,7 +3261,7 @@
     </item>
     
     <item>
-      <title>Q69 — Mechanosensitive Ion Channels — OSCA vs Piezo1</title>
+      <title>Q69 - Mechanosensitive Ion Channels - OSCA vs Piezo1</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q19/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3272,7 +3272,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -3422,7 +3422,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=27&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -3430,7 +3430,7 @@
     </item>
     
     <item>
-      <title>Q70 — Land Plant Phylogeny and Shared Derived Characters</title>
+      <title>Q70 - Land Plant Phylogeny and Shared Derived Characters</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q20/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3441,7 +3441,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -3591,7 +3591,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=28&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -3599,7 +3599,7 @@
     </item>
     
     <item>
-      <title>Q71 — Hippo Pathway Signaling in Blastocyst Implantation</title>
+      <title>Q71 - Hippo Pathway Signaling in Blastocyst Implantation</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q21/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3610,7 +3610,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -3764,7 +3764,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=29&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -3772,7 +3772,7 @@
     </item>
     
     <item>
-      <title>Q72 — Mechanisms of Synaptic Specificity</title>
+      <title>Q72 - Mechanisms of Synaptic Specificity</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q22/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3783,7 +3783,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -3933,7 +3933,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=31&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -3941,7 +3941,7 @@
     </item>
     
     <item>
-      <title>Q73 — PD-1 Immune Checkpoint Signaling</title>
+      <title>Q73 - PD-1 Immune Checkpoint Signaling</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q23/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3952,7 +3952,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -4098,7 +4098,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=34&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -4106,7 +4106,7 @@
     </item>
     
     <item>
-      <title>Q74 — Pathophysiology of Traumatic Brain Injury</title>
+      <title>Q74 - Pathophysiology of Traumatic Brain Injury</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q24/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4117,7 +4117,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -4267,7 +4267,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=35&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -4275,7 +4275,7 @@
     </item>
     
     <item>
-      <title>Q75 — Plasma Enzyme Diagnostics After Myocardial Infarction</title>
+      <title>Q75 - Plasma Enzyme Diagnostics After Myocardial Infarction</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q25/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4286,7 +4286,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -4436,7 +4436,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=37&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -4444,7 +4444,7 @@
     </item>
     
     <item>
-      <title>Q76 — Insulin and Glucagon Dynamics in Type 2 Diabetes</title>
+      <title>Q76 - Insulin and Glucagon Dynamics in Type 2 Diabetes</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q26/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4455,7 +4455,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -4605,7 +4605,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=38&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -4613,7 +4613,7 @@
     </item>
     
     <item>
-      <title>Q77 — Mitochondrial Calcium Handling in Synaptic Plasticity and Aging</title>
+      <title>Q77 - Mitochondrial Calcium Handling in Synaptic Plasticity and Aging</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q27/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4624,7 +4624,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -4632,7 +4632,7 @@
 &lt;/div&gt;
 &lt;p&gt;Synaptic plasticity in the adult brain underlies the cellular mechanisms of learning and memory. Mitochondria contribute to the process of synaptic plasticity. The figure shows the regulatory role of mitochondria in the functions and plasticity of synapses, as well as the effect of mitochondrial dysfunction on synaptic transmission (solid lines show excitatory processes, dotted lines show inhibitory processes).&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q77-figure-1.png&#34; alt=&#34;Diagram of a synapse showing a presynaptic terminal with two mitochondria: one with normal Ca2&amp;#43; exchange promoting ATP↑ that supports vesicle release, and one where mitochondrial Ca2&amp;#43; exchange is blocked (marked with a red X), which inhibits vesicle release. A second presynaptic mitochondrion shows aging-related OXPHOS deficiency lowering ATP (ATP↓), which inhibits vesicle release, while OXPHOS deficiency also raises ROS, which causes DNA mutations that feed back into further mitochondrial damage — a cycle driven by aging. On the postsynaptic side, a dashed inhibitory line from “Aging” blocks Ca2&amp;#43; entry into a postsynaptic mitochondrion that would otherwise raise Ca2&amp;#43; and boost ATP production.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q77-figure-1.png&#34; alt=&#34;Diagram of a synapse showing a presynaptic terminal with two mitochondria: one with normal Ca2&amp;#43; exchange promoting ATP↑ that supports vesicle release, and one where mitochondrial Ca2&amp;#43; exchange is blocked (marked with a red X), which inhibits vesicle release. A second presynaptic mitochondrion shows aging-related OXPHOS deficiency lowering ATP (ATP↓), which inhibits vesicle release, while OXPHOS deficiency also raises ROS, which causes DNA mutations that feed back into further mitochondrial damage - a cycle driven by aging. On the postsynaptic side, a dashed inhibitory line from “Aging” blocks Ca2&amp;#43; entry into a postsynaptic mitochondrion that would otherwise raise Ca2&amp;#43; and boost ATP production.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Figure. Role of mitochondria in synaptic plasticity, and the effects of aging and mitochondrial DNA mutations on this regulation. OXPHOS = mitochondrial oxidative phosphorylation; ROS = reactive oxygen species.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Based on this diagram, determine whether the following statements are true or false.&lt;/p&gt;
@@ -4774,7 +4774,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=39&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -4782,7 +4782,7 @@
     </item>
     
     <item>
-      <title>Q78 — Cellular Response to DNA Damage in Cancer</title>
+      <title>Q78 - Cellular Response to DNA Damage in Cancer</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q28/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4793,7 +4793,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -4943,7 +4943,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=41&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -4951,7 +4951,7 @@
     </item>
     
     <item>
-      <title>Q79 — Primary vs Secondary Antibody Response</title>
+      <title>Q79 - Primary vs Secondary Antibody Response</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q29/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4962,7 +4962,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -5112,7 +5112,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=42&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -5120,7 +5120,7 @@
     </item>
     
     <item>
-      <title>Q80 — Dopamine and GABA Neuron Activity in Stress-Induced Anhedonia</title>
+      <title>Q80 - Dopamine and GABA Neuron Activity in Stress-Induced Anhedonia</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q30/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -5131,7 +5131,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -5281,7 +5281,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=44&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -5289,7 +5289,7 @@
     </item>
     
     <item>
-      <title>Q81 — Blue Light, Melanopsin and the Circadian Phase-Shift Response</title>
+      <title>Q81 - Blue Light, Melanopsin and the Circadian Phase-Shift Response</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q31/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -5300,13 +5300,13 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
   &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/9-ethology/biological-rhythms/&#34;&gt;Biological Rhythms&lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;The human biological &amp;ldquo;internal clock&amp;rdquo; located in the suprachiasmatic nucleus (SCN) of the hypothalamus ensures the shift from sleep to waking state. To synchronize activity with the solar cycle, the SCN receives information from the light-sensing cells of the retina (rods, cones, ganglion cells), and reduces the synthesis of melatonin, which affects the activity of various processes. To assess the role of the retinal cells in regulating the sleep/wake cycle, a group of volunteers were kept in conditions of constant blue light (λmax = 460 nm) for 6.5h at night. Another group was kept in similar conditions but with green light (λmax = 555 nm). Cones have been shown to absorb green light, and retinal ganglion cells are capable of absorbing only blue light (λmax = 480 nm) with the help of melanopsin pigment. Melatonin levels of the subjects and the change in circadian rhythms — &amp;ldquo;phase shift&amp;rdquo; — were measured. The results are shown below.&lt;/p&gt;
+&lt;p&gt;The human biological &amp;ldquo;internal clock&amp;rdquo; located in the suprachiasmatic nucleus (SCN) of the hypothalamus ensures the shift from sleep to waking state. To synchronize activity with the solar cycle, the SCN receives information from the light-sensing cells of the retina (rods, cones, ganglion cells), and reduces the synthesis of melatonin, which affects the activity of various processes. To assess the role of the retinal cells in regulating the sleep/wake cycle, a group of volunteers were kept in conditions of constant blue light (λmax = 460 nm) for 6.5h at night. Another group was kept in similar conditions but with green light (λmax = 555 nm). Cones have been shown to absorb green light, and retinal ganglion cells are capable of absorbing only blue light (λmax = 480 nm) with the help of melanopsin pigment. Melatonin levels of the subjects and the change in circadian rhythms - &amp;ldquo;phase shift&amp;rdquo; - were measured. The results are shown below.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
     &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q81-figure-1.png&#34; alt=&#34;Two panels showing melatonin suppression over time for a blue-light treatment group and a green-light treatment group, exposure indicated by a black box, alongside melatonin fluctuation the day before the experiment and the day after.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
@@ -5454,7 +5454,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=45&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -5462,7 +5462,7 @@
     </item>
     
     <item>
-      <title>Q82 — Experimental Design Limits — Herbal Treatment and Statin Co-Therapy</title>
+      <title>Q82 - Experimental Design Limits - Herbal Treatment and Statin Co-Therapy</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q32/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -5473,13 +5473,13 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
   &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/cardiovascular-physiology/&#34;&gt;Cardiovascular Physiology&lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;A herbal treatment was tested on patients with lipid imbalance in their blood. Patients with lipid imbalance in the blood were divided into two groups — the control group received a placebo, while the intervention group received a herbal preparation. During the experiment, which lasted 6 weeks, both patient groups received statin therapy, which inhibits cholesterol production in the liver. At the end of 6 weeks, both groups were measured for average cholesterol, high-density lipoprotein (HDL) and low-density lipoprotein (LDL) levels in the blood, and the results were plotted in a bar chart to compare against pre-treatment levels.&lt;/p&gt;
+&lt;p&gt;A herbal treatment was tested on patients with lipid imbalance in their blood. Patients with lipid imbalance in the blood were divided into two groups - the control group received a placebo, while the intervention group received a herbal preparation. During the experiment, which lasted 6 weeks, both patient groups received statin therapy, which inhibits cholesterol production in the liver. At the end of 6 weeks, both groups were measured for average cholesterol, high-density lipoprotein (HDL) and low-density lipoprotein (LDL) levels in the blood, and the results were plotted in a bar chart to compare against pre-treatment levels.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
     &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q82-figure-1.png&#34; alt=&#34;Bar chart of total cholesterol before and after treatment, comparing the intervention and placebo groups; after treatment the intervention group shows a significantly larger decrease (marked **).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
@@ -5631,7 +5631,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=47&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -5639,7 +5639,7 @@
     </item>
     
     <item>
-      <title>Q83 — Gut Microbiome and Lifespan in Drosophila</title>
+      <title>Q83 - Gut Microbiome and Lifespan in Drosophila</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q33/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -5650,7 +5650,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -5800,7 +5800,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=49&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -5808,7 +5808,7 @@
     </item>
     
     <item>
-      <title>Q84 — Dietary Fat, Sucrose and Cardiac Hypertrophy in Hypertensive Rats</title>
+      <title>Q84 - Dietary Fat, Sucrose and Cardiac Hypertrophy in Hypertensive Rats</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q34/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -5819,7 +5819,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -6025,7 +6025,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=51&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -6033,7 +6033,7 @@
     </item>
     
     <item>
-      <title>Q85 — The methuselah Mutation and Stress Resistance in Drosophila</title>
+      <title>Q85 - The methuselah Mutation and Stress Resistance in Drosophila</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q35/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -6044,7 +6044,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -6194,7 +6194,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=53&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -6202,7 +6202,7 @@
     </item>
     
     <item>
-      <title>Q86 — Giant Panda Fecal-Smearing Behavior and the TRPM8 Cold Receptor</title>
+      <title>Q86 - Giant Panda Fecal-Smearing Behavior and the TRPM8 Cold Receptor</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q36/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -6213,7 +6213,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -6367,7 +6367,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=54&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -6375,7 +6375,7 @@
     </item>
     
     <item>
-      <title>Q87 — Rearing Environment and Social Bonds in Ravens</title>
+      <title>Q87 - Rearing Environment and Social Bonds in Ravens</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q37/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -6386,7 +6386,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -6536,7 +6536,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=56&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -6544,7 +6544,7 @@
     </item>
     
     <item>
-      <title>Q88 — Free Choice vs Random Union — Assortative Mating in Pigeons</title>
+      <title>Q88 - Free Choice vs Random Union - Assortative Mating in Pigeons</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q38/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -6555,7 +6555,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -6701,7 +6701,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=59&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -6709,7 +6709,7 @@
     </item>
     
     <item>
-      <title>Q89 — Amplexus and Sperm Competition in Newts</title>
+      <title>Q89 - Amplexus and Sperm Competition in Newts</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q39/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -6720,7 +6720,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -6870,7 +6870,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=60&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -6878,7 +6878,7 @@
     </item>
     
     <item>
-      <title>Q90 — Cannibalism and Larval-Stage Duration in Invasive Cane Toads</title>
+      <title>Q90 - Cannibalism and Larval-Stage Duration in Invasive Cane Toads</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q40/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -6889,7 +6889,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -6900,7 +6900,7 @@
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
     &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q90-figure-1.png&#34; alt=&#34;Four-panel figure. Panel A: French Guiana (native range) tadpoles trapped at similar rates toward hatchling-baited and control traps over time. Panel B: Australian (invasive range) tadpoles trapped far more toward hatchling-baited traps than control traps. Panel C: bar chart showing a higher proportion of larvae cannibalized in the Australian population than the French Guiana population. Panel D: paired dot plots showing pre-feeding stage duration in control vs. exposed conditions, with a small, non-significant decrease for French Guiana (dashed lines) and a larger, significant decrease for Australia (solid lines).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
-&lt;em&gt;Figure: A, B — Graphs of movement of tadpoles in the aquarium (A – South American, B – Australian). Horizontal axis – time, vertical axis – the proportion of tadpoles. White circles – tadpoles swimming towards clean water, black circles – tadpoles swimming towards larvae. C — the proportion of larvae cannibalized; D — duration of the pre-feeding stages determined in separate aquariums, one with clean water (control), the other with late-stage larvae (experimental). Solid lines: p &amp;lt; 0.05.&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Figure: A, B - Graphs of movement of tadpoles in the aquarium (A – South American, B – Australian). Horizontal axis – time, vertical axis – the proportion of tadpoles. White circles – tadpoles swimming towards clean water, black circles – tadpoles swimming towards larvae. C - the proportion of larvae cannibalized; D - duration of the pre-feeding stages determined in separate aquariums, one with clean water (control), the other with late-stage larvae (experimental). Solid lines: p &amp;lt; 0.05.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Using the information and the figures above, determine which of the statements are true or which are false.&lt;/p&gt;
 &lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q40&#34;&gt;
   &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;false&#34;
@@ -7040,7 +7040,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=61&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -7048,7 +7048,7 @@
     </item>
     
     <item>
-      <title>Q91 — Song Recognition Between Island Populations of Tree Finches</title>
+      <title>Q91 - Song Recognition Between Island Populations of Tree Finches</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q41/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -7059,7 +7059,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -7209,7 +7209,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=64&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -7217,7 +7217,7 @@
     </item>
     
     <item>
-      <title>Q92 — Hawk-Dove-Retaliator Game Theory and Evolutionarily Stable Strategies</title>
+      <title>Q92 - Hawk-Dove-Retaliator Game Theory and Evolutionarily Stable Strategies</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q42/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -7228,7 +7228,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -7429,7 +7429,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=66&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -7437,7 +7437,7 @@
     </item>
     
     <item>
-      <title>Q93 — Worker Sterility and Kin Selection in Social Insects</title>
+      <title>Q93 - Worker Sterility and Kin Selection in Social Insects</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q43/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -7448,7 +7448,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -7594,7 +7594,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=67&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -7602,7 +7602,7 @@
     </item>
     
     <item>
-      <title>Q94 — Canine Pedigree Analysis of a Monogenic Disease</title>
+      <title>Q94 - Canine Pedigree Analysis of a Monogenic Disease</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q44/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -7613,7 +7613,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -7763,7 +7763,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=68&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -7771,7 +7771,7 @@
     </item>
     
     <item>
-      <title>Q95 — Hardy-Weinberg Calculations for Familial Mediterranean Fever</title>
+      <title>Q95 - Hardy-Weinberg Calculations for Familial Mediterranean Fever</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q45/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -7782,7 +7782,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -7928,7 +7928,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=69&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -7936,7 +7936,7 @@
     </item>
     
     <item>
-      <title>Q96 — Transcriptome-Based Drug Repurposing — Infliximab Across Four Diseases</title>
+      <title>Q96 - Transcriptome-Based Drug Repurposing - Infliximab Across Four Diseases</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q46/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -7947,7 +7947,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -7958,7 +7958,7 @@
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
     &lt;img src=&#34;http://localhost:1313/papers/ibo/2022/q96-figure-1.png&#34; alt=&#34;Three-panel figure. Panel A: a global transcriptome summary heatmap with seven labeled gene-expression clusters (“spots”) A, D, F, T, U, V, X. Panel B: a spot-perturbation grid showing, for seven comparisons (drug responders vs. baseline/non-responders/placebo, and UC/CD/COPD/sarcoidosis vs. healthy), which spots are upregulated (red/orange), downregulated (blue), or unchanged (white). Panel C: bar charts of quantitative spot mean expression across sample types for each of the seven spots.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
-&lt;em&gt;Figure 1. Evaluation of Infliximab&amp;rsquo;s effect on UC, CD, COPD, and sarcoidosis. (A) Global transcriptome summary heatmap with identified potentially therapeutically relevant gene clusters — spots (A, D, F, T, U, V, X). (B) Drug- and disease-spot perturbation heatmap. (C) Quantitative analysis of spot expression profiles.&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;Figure 1. Evaluation of Infliximab&amp;rsquo;s effect on UC, CD, COPD, and sarcoidosis. (A) Global transcriptome summary heatmap with identified potentially therapeutically relevant gene clusters - spots (A, D, F, T, U, V, X). (B) Drug- and disease-spot perturbation heatmap. (C) Quantitative analysis of spot expression profiles.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Based on these results, determine whether the following statements are true or false.&lt;/p&gt;
 &lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2022-theoretical-2-q46&#34;&gt;
   &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;true_false&#34; data-answer=&#34;true&#34;
@@ -8098,7 +8098,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=70&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -8106,7 +8106,7 @@
     </item>
     
     <item>
-      <title>Q97 — Telomerase-Dependent vs Alternative Telomere Lengthening in Testis</title>
+      <title>Q97 - Telomerase-Dependent vs Alternative Telomere Lengthening in Testis</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q47/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -8117,7 +8117,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -8272,7 +8272,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=73&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 
@@ -8280,7 +8280,7 @@
     </item>
     
     <item>
-      <title>Q98 — Grape Domestication and Phylogeography from SNP Data</title>
+      <title>Q98 - Grape Domestication and Phylogeography from SNP Data</title>
       <link>http://localhost:1313/papers/ibo/2022/theoretical-2/q48/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -8291,7 +8291,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical 2&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -8441,7 +8441,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2022, Theoretical Paper 2&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-exam.pdf#page=75&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2022/theoretical-2-solutions.pdf&#34;&gt;Community solutions (unofficial)&lt;/a&gt;&lt;/p&gt;
 

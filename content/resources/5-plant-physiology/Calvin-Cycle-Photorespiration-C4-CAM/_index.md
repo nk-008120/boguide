@@ -21,7 +21,7 @@ The Calvin cycle runs in the chloroplast stroma in three phases, using 3 CO₂ m
 
 1. **Carbon fixation**: **Rubisco** (ribulose-1,5-bisphosphate carboxylase/oxygenase, the most abundant enzyme on Earth by mass, a reflection of how slow and inefficient its carboxylase reaction is per active site) catalyzes the addition of CO₂ to the 5-carbon sugar **RuBP**, producing an unstable 6-carbon intermediate that immediately splits into two molecules of the 3-carbon compound **3-phosphoglycerate (3-PGA)**.
 2. **Reduction**, in which each 3-PGA is phosphorylated by ATP and then reduced by NADPH (both supplied by the light reactions) to **glyceraldehyde-3-phosphate (G3P)**. This is the cycle's only redox step and the point where light-reaction energy is actually invested into a carbon skeleton. Of every 6 G3P produced per 3 CO₂ fixed, 1 exits the cycle as net carbohydrate output (used for sucrose or starch synthesis); the remaining 5 continue to phase 3.
-3. **Regeneration** — the remaining 5 G3P (15 carbons total) are rearranged through a series of enzymatic steps back into 3 molecules of RuBP (15 carbons), consuming additional ATP, so the cycle can continue fixing new CO₂.
+3. **Regeneration**, the remaining 5 G3P (15 carbons total) are rearranged through a series of enzymatic steps back into 3 molecules of RuBP (15 carbons), consuming additional ATP, so the cycle can continue fixing new CO₂.
 
 Net cost per 3 CO₂ fixed: 9 ATP and 6 NADPH consumed for 1 net G3P produced. That stoichiometry is worth knowing because it is exactly what makes the ATP:NADPH ratio delivered by the light reactions matter, and exactly why cyclic electron flow (see [Light Reactions & Photophosphorylation](../light-reactions-photophosphorylation/)) exists to supplement ATP output when this ratio runs short.
 
@@ -49,7 +49,7 @@ C4 plants suppress photorespiration by physically separating initial CO₂ captu
 3. Inside the bundle sheath, malate is decarboxylated, releasing CO₂ at a locally very high concentration directly around Rubisco, which now runs the ordinary Calvin cycle (identical biochemistry to C3, just physically relocated) under conditions where the oxygenase side-reaction is strongly suppressed by the elevated local CO₂:O₂ ratio.
 4. The resulting 3-carbon compound (pyruvate) is shuttled back to the mesophyll cell and converted back to PEP (consuming additional ATP), regenerating the initial CO₂ acceptor for another cycle.
 
-This spatial separation costs extra ATP per CO₂ fixed compared to C3 (for the PEP regeneration step), but that cost is repaid, under hot and high-light conditions specifically, by nearly eliminating the carbon and energy losses photorespiration would otherwise impose — which is why C4 is an advantage in exactly the environments where C3 struggles, not universally.
+This spatial separation costs extra ATP per CO₂ fixed compared to C3 (for the PEP regeneration step), but that cost is repaid, under hot and high-light conditions specifically, by nearly eliminating the carbon and energy losses photorespiration would otherwise impose, which is why C4 is an advantage in exactly the environments where C3 struggles, not universally.
 
 ![C4 photosynthetic pathway: (A) in the mesophyll cell, CA and PEPC fix CO2/HCO3- onto PEP to form OAA, converted to a 4-carbon acid (malate/aspartate) shuttled to the bundle sheath cell, where a decarboxylase (DC) releases CO2 to RuBisCO/the Calvin cycle, with pyruvate/alanine shuttled back and reconverted to PEP by PPDK; (B) the ATP/NADPH cost per CO2 fixed, split between mesophyll and bundle sheath, compared across the NADP-ME, NAD-ME, and PEPCK biochemical subtypes](/PLANTPHYSIOPICS/c4-pathway-biochemistry.png)
 *Source: Encyclopedia (encyclopedia.pub)*
@@ -61,7 +61,7 @@ CAM plants achieve a related benefit through *time* rather than *space*, using t
 - **At night**, stomata open (evaporative water loss is minimized in the cooler, more humid nighttime air, see [Stomatal Physiology & Gas Exchange](../stomatal-physiology-gas-exchange/)) and CO₂ is fixed by the same **PEP carboxylase** reaction C4 uses, producing oxaloacetate, then malate. But here malate is stored overnight as **malic acid** in the cell's large vacuole (the structural feature CAM leaf anatomy is specifically built around).
 - **During the day**, stomata close (limiting water loss during the hottest, driest, highest-evaporative-demand period), and the stored malic acid is decarboxylated, releasing CO₂ internally at high concentration directly to Rubisco and the Calvin cycle, run using ATP/NADPH from the light reactions occurring in the same illuminated cell at the same time.
 
-Because CO₂ uptake (night) and CO₂ fixation via the Calvin cycle (day) are separated in time rather than location, a single mesophyll cell type suffices, at the cost of requiring large-volume malic acid storage between the two phases — directly explaining the enlarged vacuoles CAM leaf anatomy shows structurally.
+Because CO₂ uptake (night) and CO₂ fixation via the Calvin cycle (day) are separated in time rather than location, a single mesophyll cell type suffices, at the cost of requiring large-volume malic acid storage between the two phases, directly explaining the enlarged vacuoles CAM leaf anatomy shows structurally.
 
 ![CAM diurnal cycle: at night (stomata open), CO2 combines with PEP via PEPC (primary carboxylation) to form a C4 acid stored in the vacuole; during the day (stomata closed), the C4 acid is decarboxylated back to a C3 acid, releasing CO2 to Rubisco and the Calvin-Benson cycle (secondary carboxylation), with surplus carbon stored as starch](/PLANTPHYSIOPICS/cam-diurnal-cycle.png)
 *Source: ScienceDirect (topic page, "Crassulacean Acid Metabolism")*
@@ -89,7 +89,7 @@ Because CO₂ uptake (night) and CO₂ fixation via the Calvin cycle (day) are s
 
 **Interactive**
 
-- **Calvin cycle carbon tracer (click-through SVG/JS, no new library)** — a schematic cycle where clicking "step" moves a highlighted carbon atom through fixation, reduction, and regeneration, with a running tally of ATP/NADPH consumed and net G3P produced after each full turn.
+- **Calvin cycle carbon tracer (click-through SVG/JS, no new library)**, a schematic cycle where clicking "step" moves a highlighted carbon atom through fixation, reduction, and regeneration, with a running tally of ATP/NADPH consumed and net G3P produced after each full turn.
 
 <div id="calvin-tracer-widget" style="background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:'Inter','Segoe UI',Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
   <svg viewBox="0 0 260 260" width="240" height="240" style="display:block; margin:0 auto;">
@@ -221,7 +221,7 @@ Because CO₂ uptake (night) and CO₂ fixation via the Calvin cycle (day) are s
       cellBTitle.setAttribute('opacity', 1);
       cellBLabel1.setAttribute('opacity', 1);
       cellBLabel2.setAttribute('opacity', 1);
-      note.textContent = 'C4: two adjacent cell types split the job spatially, at the same time (day) — mesophyll fixes CO2 via PEPC, bundle sheath runs the Calvin cycle using the CO2 shuttled in.';
+      note.textContent = 'C4: two adjacent cell types split the job spatially, at the same time (day), mesophyll fixes CO2 via PEPC, bundle sheath runs the Calvin cycle using the CO2 shuttled in.';
     } else if (mode === 'cam'){
       arrow.style.opacity = 0;
       cellB.setAttribute('opacity', 0);
@@ -235,7 +235,7 @@ Because CO₂ uptake (night) and CO₂ fixation via the Calvin cycle (day) are s
         dayBtn.style.background = '#94a3b8';
         cellALabel1.textContent = 'PEPC →';
         cellALabel2.textContent = 'malic acid (stored)';
-        note.textContent = 'CAM at night: the same cell type fixes CO2 via PEPC and stores it as malic acid in the vacuole — stomata are open now since evaporative demand is low.';
+        note.textContent = 'CAM at night: the same cell type fixes CO2 via PEPC and stores it as malic acid in the vacuole, stomata are open now since evaporative demand is low.';
       } else {
         timeIcon.textContent = '☀️';
         dayBtn.style.background = '#2d6a4f';

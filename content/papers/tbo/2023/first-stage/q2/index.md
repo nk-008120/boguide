@@ -1,5 +1,5 @@
 ---
-title: "Q2 — Sample Question 2 (placeholder)"
+title: "Q2 - Sample Question 2 (placeholder)"
 ---
 
 {{< problem-meta category="First Stage" >}}

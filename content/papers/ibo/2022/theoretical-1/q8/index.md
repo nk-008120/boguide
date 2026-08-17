@@ -1,8 +1,8 @@
 ---
-title: "Q8 — Ethidium Bromide — DNA Binding and Intercalation"
+title: "Q8 - Ethidium Bromide - DNA Binding and Intercalation"
 ---
 
-{{< problem-meta category="Theoretical 1" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/1-cell-molecular/dna-structure-replication/">DNA Structure & Replication</a>
@@ -15,7 +15,7 @@ Ethidium bromide is a fluorescent dye which can intercalate into double-stranded
 *Figure 1. Ethidium bromide and its binding to DNA.*
 
 ![Figure 2. Four modes of ethidium bromide binding to DNA, labelled A–D.](/papers/ibo/2022/q8-figure-2.png)
-*Figure 2. Modes of binding of ethidium bromide to DNA. A — minor groove binding. B — intercalation of ethidium bromide into DNA. C — stacking on the terminal base pairs and insertion mode in DNA. D — major groove intercalation between DNA and minor groove binding.*
+*Figure 2. Modes of binding of ethidium bromide to DNA. A - minor groove binding. B - intercalation of ethidium bromide into DNA. C - stacking on the terminal base pairs and insertion mode in DNA. D - major groove intercalation between DNA and minor groove binding.*
 
 Using Figures 1 and 2, determine whether the following statements are true or false:
 
@@ -24,4 +24,4 @@ Using Figures 1 and 2, determine whether the following statements are true or fa
 
 ---
 
-Question reproduced from **IBO 2022, Theoretical Paper 1**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2022/theoretical-1-exam.pdf#page=10) · [Community solutions (unofficial)](/papers/ibo/2022/theoretical-1-solutions.pdf)
+Question reproduced from **IBO 2022, Theoretical Paper 1**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2022/theoretical-1-exam.pdf#page=10) · [Community solutions (unofficial)](/papers/ibo/2022/theoretical-1-solutions.pdf)

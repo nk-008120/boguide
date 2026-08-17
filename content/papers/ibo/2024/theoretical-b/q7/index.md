@@ -1,8 +1,8 @@
 ---
-title: "Q7 — DNA Fiber Assay and Replication Fork Progression"
+title: "Q7 - DNA Fiber Assay and Replication Fork Progression"
 ---
 
-{{< problem-meta category="Theoretical B" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/1-cell-molecular/dna-structure-replication/">DNA Structure & Replication</a>
@@ -21,4 +21,4 @@ On your answer sheet, indicate "T" for true statements and "F" for false ones.
 
 ---
 
-Question reproduced from **IBO 2024, Theoretical Exam Part B**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2024/theoretical-b-exam.pdf#page=13)
+Question reproduced from **IBO 2024, Theoretical Exam Part B**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2024/theoretical-b-exam.pdf#page=13)

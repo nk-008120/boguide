@@ -1,15 +1,15 @@
 ---
-title: "Q27 — Saiga Antelope — Nose Adaptations for Cold, Dust, and Signalling"
+title: "Q27 - Saiga Antelope - Nose Adaptations for Cold, Dust, and Signalling"
 ---
 
-{{< problem-meta category="Theoretical 1" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/3-animal-physiology/comparative-thermoregulation/">Comparative Thermoregulation</a>
   <a class="papers-subject-tag" href="/resources/9-ethology/mating-systems-sexual-selection/">Mating Systems & Sexual Selection</a>
 </div>
 
-Saiga (*Saiga tatarica*) live in the deserts, semi-deserts, and steppes of Central Asia and Mongolia, where the climate is harsh, with cold winters and hot summers. They form large, nomadic herds, crossing large areas during migration — including swimming across large rivers. They are fast-moving, reaching speeds up to 70 km/h (commonly 50–60 km/h), and can run tens of kilometers with their heads lowered, producing large dust clouds in summer.
+Saiga (*Saiga tatarica*) live in the deserts, semi-deserts, and steppes of Central Asia and Mongolia, where the climate is harsh, with cold winters and hot summers. They form large, nomadic herds, crossing large areas during migration - including swimming across large rivers. They are fast-moving, reaching speeds up to 70 km/h (commonly 50–60 km/h), and can run tens of kilometers with their heads lowered, producing large dust clouds in summer.
 
 ![Figure 1. Male saiga, showing the distinctive long snout-like nose.](/papers/ibo/2022/q27-figure-1.png)
 *Figure 1. Male saiga.*
@@ -27,4 +27,4 @@ Using the information and figures, determine whether the following statements ar
 
 ---
 
-Question reproduced from **IBO 2022, Theoretical Paper 1**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2022/theoretical-1-exam.pdf#page=42) · [Community solutions (unofficial)](/papers/ibo/2022/theoretical-1-solutions.pdf)
+Question reproduced from **IBO 2022, Theoretical Paper 1**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2022/theoretical-1-exam.pdf#page=42) · [Community solutions (unofficial)](/papers/ibo/2022/theoretical-1-solutions.pdf)

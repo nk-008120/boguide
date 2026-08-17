@@ -1,8 +1,8 @@
 ---
-title: "Q15 — Classifying Hypersensitivity Reactions"
+title: "Q15 - Classifying Hypersensitivity Reactions"
 ---
 
-{{< problem-meta category="Theoretical A" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/3-animal-physiology/immune-physiology/">Immune Physiology</a>
@@ -26,4 +26,4 @@ Match each of the following conditions with one of the hypersensitivities descri
 
 ---
 
-Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=27) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)
+Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=27) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)

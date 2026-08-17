@@ -1,8 +1,8 @@
 ---
-title: "Q26 — Inheritance of Sterility in a Pedigree"
+title: "Q26 - Inheritance of Sterility in a Pedigree"
 ---
 
-{{< problem-meta category="Theoretical A" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/7-genetics/pedigree-analysis-human-genetic-disorders/">Pedigree Analysis & Human Genetic Disorders</a>
@@ -21,4 +21,4 @@ The change giving rise to sterility can be explained either through a loss-of-fu
 
 ---
 
-Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=45) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)
+Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=45) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)

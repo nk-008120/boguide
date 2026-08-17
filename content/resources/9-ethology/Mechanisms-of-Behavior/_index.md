@@ -16,7 +16,7 @@ Every behavior can be asked about in four genuinely different ways, and confusin
 
 ### Tinbergen's Four Questions
 
-Given any behavior, a complete ethological explanation answers all four questions independently — none substitutes for another:
+Given any behavior, a complete ethological explanation answers all four questions independently, none substitutes for another:
 
 | Question | Type | Example (herring gull chick begging) |
 |---|---|---|
@@ -36,7 +36,7 @@ Behavior is ultimately produced by the nervous and endocrine systems acting toge
 
 ### Fixed Action Patterns (FAPs)
 
-A **fixed action pattern** is a stereotyped, species-typical behavior sequence that, once triggered, runs to completion largely independent of further feedback — the defining classical example is the **greylag goose egg-rolling response** (Konrad Lorenz and Niko Tinbergen): a goose whose egg has rolled outside the nest extends its neck, hooks its bill over the egg, and rolls it back with a fixed side-to-side motion. If the egg is removed partway through, the goose completes the entire rolling motion anyway, proof the sequence is not being continuously guided by feedback from the egg once started. Three properties define an FAP: it is **stereotyped** (highly consistent motor pattern across individuals of the species), it runs to completion once initiated (**relatively resistant to interruption**), and it is triggered by a specific, identifiable stimulus rather than general arousal.
+A **fixed action pattern** is a stereotyped, species-typical behavior sequence that, once triggered, runs to completion largely independent of further feedback, the defining classical example is the **greylag goose egg-rolling response** (Konrad Lorenz and Niko Tinbergen): a goose whose egg has rolled outside the nest extends its neck, hooks its bill over the egg, and rolls it back with a fixed side-to-side motion. If the egg is removed partway through, the goose completes the entire rolling motion anyway, proof the sequence is not being continuously guided by feedback from the egg once started. Three properties define an FAP: it is **stereotyped** (highly consistent motor pattern across individuals of the species), it runs to completion once initiated (**relatively resistant to interruption**), and it is triggered by a specific, identifiable stimulus rather than general arousal.
 
 ![Diagram of the greylag goose egg-rolling head-movement cycle, labeled with its three phase transitions (oblique, transition, forward) and the observed transition frequencies between them from Lorenz's original motion analysis.](/ETHOLOGYPICS/greylag-goose-egg-rolling-fap-sequence.jpg)
 *Source: publish.iupress.indiana.edu ("How Animals Communicate")*
@@ -48,16 +48,16 @@ The specific stimulus feature that triggers a fixed action pattern is a **sign s
 ![Tinbergen's stickleback model diagram: a highly realistic fish model with no red belly (top) was ignored, while four crude, non-fish-shaped models with red-painted undersides (bracketed "Models with red bellies") were attacked.](/ETHOLOGYPICS/stickleback-red-belly-sign-stimulus-attack.jpg)
 *Source: psywww.com (An Introduction to Psychology, "Classic ethology" chapter)*
 
-A **supernormal stimulus** is an exaggerated artificial version of a sign stimulus that triggers a stronger response than the natural stimulus itself — Tinbergen showed oystercatchers will preferentially attempt to incubate an oversized artificial egg over their own smaller, natural egg, because egg size (up to a point) is itself acting as a sign stimulus for incubation behavior, and the artificial version simply exceeds the natural range the response evolved under.
+A **supernormal stimulus** is an exaggerated artificial version of a sign stimulus that triggers a stronger response than the natural stimulus itself, Tinbergen showed oystercatchers will preferentially attempt to incubate an oversized artificial egg over their own smaller, natural egg, because egg size (up to a point) is itself acting as a sign stimulus for incubation behavior, and the artificial version simply exceeds the natural range the response evolved under.
 
 ![Tinbergen's oystercatcher figures: an oystercatcher incubating a "supernormal" clutch of five eggs in preference to its own natural clutch of three (Fig. 42), and an oystercatcher reacting to a giant egg in preference to a normal egg and a herring gull's egg placed alongside it (Fig. 43).](/ETHOLOGYPICS/oystercatcher-supernormal-stimulus-egg.jpg)
 *Source: Tinbergen, "The Study of Instinct" (Oxford, Clarendon Press), via punyamishra.com*
 
-<!-- VIDEO: Greylag goose egg-rolling fixed action pattern — Anser anser — shows the stereotyped motion continuing after the egg is removed, which a single still diagram cannot convey -->
+<!-- VIDEO: Greylag goose egg-rolling fixed action pattern, Anser anser, shows the stereotyped motion continuing after the egg is removed, which a single still diagram cannot convey -->
 
 ### Motivation
 
-**Motivational state** (or drive) explains why the same sign stimulus doesn't always produce the same response — an animal's internal physiological state (hunger, hormonal state, prior recent performance of the behavior) gates whether and how strongly a triggering stimulus produces its associated FAP. This is formalized loosely in ethology's **psychohydraulic model** (Konrad Lorenz's now-historical analogy of action-specific energy building up like water behind a dam, released by a sign stimulus acting as the sluice gate) — largely superseded mechanistically today, but still useful for the qualitative point it illustrates: motivation and stimulus jointly determine response, and a sufficiently strong motivational state can even produce the behavior in the sign stimulus's absence (**vacuum activity**).
+**Motivational state** (or drive) explains why the same sign stimulus doesn't always produce the same response, an animal's internal physiological state (hunger, hormonal state, prior recent performance of the behavior) gates whether and how strongly a triggering stimulus produces its associated FAP. This is formalized loosely in ethology's **psychohydraulic model** (Konrad Lorenz's now-historical analogy of action-specific energy building up like water behind a dam, released by a sign stimulus acting as the sluice gate), largely superseded mechanistically today, but still useful for the qualitative point it illustrates: motivation and stimulus jointly determine response, and a sufficiently strong motivational state can even produce the behavior in the sign stimulus's absence (**vacuum activity**).
 
 ![Lorenz's psychohydraulic model diagram: a "drive" reservoir feeds through a spring-loaded release-mechanism valve into a set of "behavior" spouts, with an external "stimulus" weight on a pulley able to open the valve directly.](/ETHOLOGYPICS/psychohydraulic-model-diagram.png)
 *Source: vaia.com ("The Hydraulic Model of Instinctive Behaviour")*
@@ -87,7 +87,7 @@ A **supernormal stimulus** is an exaggerated artificial version of a sign stimul
 
 {{< iframe src="/tinbergen-four-questions-sorter.html" title="Tinbergen's Four Questions Sorter" height="440px" >}}
 
-- **Sign stimulus threshold slider (SVG/JS)** — lets the user vary a model stimulus (e.g. belly redness intensity, egg size) along a continuum and see a simulated response-strength curve, including the supernormal region beyond the natural stimulus range, illustrating that response strength scales with the sign stimulus rather than being all-or-nothing.
+- **Sign stimulus threshold slider (SVG/JS)**, lets the user vary a model stimulus (e.g. belly redness intensity, egg size) along a continuum and see a simulated response-strength curve, including the supernormal region beyond the natural stimulus range, illustrating that response strength scales with the sign stimulus rather than being all-or-nothing.
 
 {{< iframe src="/sign-stimulus-threshold-slider.html" title="Sign Stimulus Threshold Slider" height="460px" >}}
 

@@ -31,7 +31,7 @@ The fertilized **zygote** (see [Flower Anatomy & Reproductive Structures](../flo
 Recall from [Flower Anatomy & Reproductive Structures](../flower-anatomy-reproductive-structures/) that double fertilization produces both the zygote and a separate triploid **primary endosperm nucleus**, which develops into **endosperm** tissue. What happens to that endosperm by seed maturity splits species into two structural categories:
 
 - **Endospermic (albuminous) seeds**: endosperm persists as a distinct nutrient-storage tissue at maturity, surrounding or adjacent to a comparatively small embryo (e.g. cereal grains, castor bean).
-- **Non-endospermic (exalbuminous) seeds** — the endosperm is fully absorbed and its nutrients transferred into the cotyledons during seed development, so the mature seed shows large, nutrient-packed cotyledons and no separate endosperm tissue at all (e.g. beans, peas).
+- **Non-endospermic (exalbuminous) seeds**, the endosperm is fully absorbed and its nutrients transferred into the cotyledons during seed development, so the mature seed shows large, nutrient-packed cotyledons and no separate endosperm tissue at all (e.g. beans, peas).
 
 A separate nutritive tissue, **perisperm**, occurs in a smaller number of species (e.g. beet, black pepper, coffee): unlike endosperm, perisperm is derived from the diploid **nucellus** (the ovule tissue surrounding the embryo sac, not a fertilization product), and where it occurs it typically persists alongside a much-reduced or absent endosperm. This is worth distinguishing from endosperm specifically because the two are sometimes confused despite having entirely different developmental origins (fertilization product vs. unfertilized maternal tissue).
 
@@ -47,10 +47,10 @@ Following fertilization, the ovary wall matures into the **pericarp**, different
 Fruits are classified first by how many ovaries/flowers contributed to the structure, then, for simple fruits, by pericarp texture and dehiscence behavior:
 
 - **Simple fruit**: develops from a single ovary of a single flower.
-  - **Fleshy simple fruits** — pericarp wholly or partly fleshy at maturity: **berry** (entire pericarp fleshy, e.g. tomato, grape), **drupe** (fleshy mesocarp, hardened stony endocarp enclosing the seed, e.g. peach, cherry), **pome** (fleshy edible tissue derived mostly from the floral receptacle/hypanthium rather than the ovary wall itself, with the true pericarp forming the thin core, e.g. apple, pear).
+  - **Fleshy simple fruits**, pericarp wholly or partly fleshy at maturity: **berry** (entire pericarp fleshy, e.g. tomato, grape), **drupe** (fleshy mesocarp, hardened stony endocarp enclosing the seed, e.g. peach, cherry), **pome** (fleshy edible tissue derived mostly from the floral receptacle/hypanthium rather than the ovary wall itself, with the true pericarp forming the thin core, e.g. apple, pear).
   - **Dry simple fruits**, split by whether the pericarp splits open at maturity: **dehiscent** (splits to release seeds: **legume**, splitting along two seams, characteristic of Fabaceae; **capsule**, splitting along multiple seams or pores; **silique**, a specialized elongated capsule characteristic of Brassicaceae) versus **indehiscent** (pericarp stays closed, the whole structure dispersing as one unit: **achene**, small, one seed, pericarp not fused to the seed coat; **caryopsis**, one seed, pericarp fused tightly to the seed coat, characteristic of grasses/cereals; **samara**, winged pericarp extension for wind dispersal; **nut**, one seed, hardened pericarp, usually larger than an achene).
 - **Aggregate fruit**: develops from multiple separate carpels of a single flower's single gynoecium, each carpel maturing into a small fruitlet, all fruitlets remaining attached to one receptacle (e.g. raspberry, blackberry, each small "bump" is technically a separate small drupe, a **drupelet**).
-- **Multiple fruit** — develops from the fused ovaries of many separate flowers clustered in one inflorescence, maturing into what appears externally as one unit (e.g. pineapple, fig, mulberry).
+- **Multiple fruit**, develops from the fused ovaries of many separate flowers clustered in one inflorescence, maturing into what appears externally as one unit (e.g. pineapple, fig, mulberry).
 
 ![Two fleshy-fruit examples: (a) strawberries, an aggregate fruit whose achenes sit on a fleshy receptacle; (b) chaparral honeysuckle berries, individual berries developing from inferior ovaries.](/PLANTANATPICS/aggregate-vs-multiple-fruit.png)
 *Source: Raven, Evert & Eichhorn, Biology of Plants (W.H. Freeman/Macmillan)*
@@ -87,11 +87,11 @@ Several fruit and seed structures are specifically shaped by dispersal mechanism
 
 **Interactive**
 
-- **Pericarp layer explorer across fruit types (click-through SVG/JS, no new library)** — a single cross-section frame that swaps between berry, drupe, and pome, showing how the same three-layer pericarp plan (exocarp/mesocarp/endocarp) is realized completely differently in each, with the pome additionally highlighting the non-ovary-derived fleshy tissue.
+- **Pericarp layer explorer across fruit types (click-through SVG/JS, no new library)**, a single cross-section frame that swaps between berry, drupe, and pome, showing how the same three-layer pericarp plan (exocarp/mesocarp/endocarp) is realized completely differently in each, with the pome additionally highlighting the non-ovary-derived fleshy tissue.
 
 {{< iframe src="/pericarp-layer-explorer.html" title="Pericarp layer explorer across fruit types" height="480px" >}}
 
-- **Fruit classification decision tree (click-through SVG/JS, no new library)** — starting from "how many ovaries, how many flowers," branches through simple/aggregate/multiple, then for simple fruits further branches through fleshy/dry and dehiscent/indehiscent, ending at a named fruit type with an example image.
+- **Fruit classification decision tree (click-through SVG/JS, no new library)**, starting from "how many ovaries, how many flowers," branches through simple/aggregate/multiple, then for simple fruits further branches through fleshy/dry and dehiscent/indehiscent, ending at a named fruit type with an example image.
 
 {{< iframe src="/fruit-classification-decision-tree.html" title="Fruit classification decision tree" height="440px" >}}
 

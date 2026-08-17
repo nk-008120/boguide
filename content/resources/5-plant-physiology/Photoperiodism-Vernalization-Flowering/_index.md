@@ -11,7 +11,7 @@ syllabus_tags: ["IBO", "USABO", "plant-physiology"]
 
 ## Overview
 
-[Flower Anatomy & Reproductive Structures](../../6-plant-anatomy/flower-anatomy-reproductive-structures/) covers what a flower is built from once the plant has committed to flowering — the four whorls, microsporogenesis, megasporogenesis. This page covers the upstream decision: how a plant determines *when* to make that commitment, using day length and, in some species, a prior cold exposure, as environmental timing cues, and what mobile internal signal actually carries that decision from the leaf (where the cue is sensed) to the shoot apical meristem (where the floral transition physically occurs).
+[Flower Anatomy & Reproductive Structures](../../6-plant-anatomy/flower-anatomy-reproductive-structures/) covers what a flower is built from once the plant has committed to flowering, the four whorls, microsporogenesis, megasporogenesis. This page covers the upstream decision: how a plant determines *when* to make that commitment, using day length and, in some species, a prior cold exposure, as environmental timing cues, and what mobile internal signal actually carries that decision from the leaf (where the cue is sensed) to the shoot apical meristem (where the floral transition physically occurs).
 
 ## Key Concepts
 
@@ -30,13 +30,13 @@ Flowering-time classification is conventionally named by day length but mechanis
 
 On that basis:
 
-- **Short-day (long-night) plants** — flower only when the uninterrupted night exceeds a species-specific critical length (i.e., when days are short), because a sufficiently long night allows Pfr to fall low enough to permit the floral transition. A brief red-light interruption in the middle of an otherwise long night restores enough Pfr to block flowering.
+- **Short-day (long-night) plants**, flower only when the uninterrupted night exceeds a species-specific critical length (i.e., when days are short), because a sufficiently long night allows Pfr to fall low enough to permit the floral transition. A brief red-light interruption in the middle of an otherwise long night restores enough Pfr to block flowering.
 - **Long-day (short-night) plants**: flower only when the uninterrupted night is shorter than the critical length (i.e., when days are long), because flowering here requires that Pfr remain relatively high through the night, which only occurs if the dark period is short enough to prevent much Pfr-to-Pr reversion.
-- **Day-neutral plants** — flower based on developmental stage (e.g., reaching a minimum leaf number) rather than photoperiod at all.
+- **Day-neutral plants**, flower based on developmental stage (e.g., reaching a minimum leaf number) rather than photoperiod at all.
 
 ### Vernalization
 
-Some species (many biennials and winter annuals) additionally require **vernalization**: a prolonged period of cold exposure, typically during winter, before they become competent to flower even under an otherwise inductive photoperiod the following season. Mechanistically, vernalization involves epigenetic silencing of a floral repressor gene (in the well-studied case, sustained cold progressively represses the *FLC* repressor via chromatin modification), a change that persists through subsequent cell divisions in the meristem (a form of cellular, mitotically heritable memory of the cold exposure) even after the cold period ends and temperatures rise — which is why a single winter's cold, not the plant's continued exposure to cold at flowering time, is sufficient to unlock the response. Vernalization and photoperiod act as independent checkpoints: a species requiring both will not flower on photoperiod alone without prior cold exposure, nor on cold exposure alone without the correct subsequent photoperiod.
+Some species (many biennials and winter annuals) additionally require **vernalization**: a prolonged period of cold exposure, typically during winter, before they become competent to flower even under an otherwise inductive photoperiod the following season. Mechanistically, vernalization involves epigenetic silencing of a floral repressor gene (in the well-studied case, sustained cold progressively represses the *FLC* repressor via chromatin modification), a change that persists through subsequent cell divisions in the meristem (a form of cellular, mitotically heritable memory of the cold exposure) even after the cold period ends and temperatures rise, which is why a single winter's cold, not the plant's continued exposure to cold at flowering time, is sufficient to unlock the response. Vernalization and photoperiod act as independent checkpoints: a species requiring both will not flower on photoperiod alone without prior cold exposure, nor on cold exposure alone without the correct subsequent photoperiod.
 
 ![Vernalization outcome and the classical (pre-molecular) flower-inducing-substance model: left, a slightly germinated seed either chilled (flowers) or not chilled (fails to flower) at the same ordinary growing temperature; right, the classical "vernalin"/"florigen" translocation model proposed to carry the vernalization-induced signal from leaf to flower bud, with devernalization by high temperature](/PLANTPHYSIOPICS/vernalization-flc-timeline.png)
 *Source: SlideShare*
@@ -48,7 +48,7 @@ Photoperiod is sensed in leaves (where phytochrome and the night-length-measurin
 ![Grafting technique terminology (in vitro micrografting vs. conventional grafting): scion/microscion, rootstock/microrootstock, and the graft union where callus cells from both sides interconnect the vascular systems](/PLANTPHYSIOPICS/grafting-experiment-florigen.png)
 *Source: not identified*
 
-This signal is now identified as **florigen**, the **FT (Flowering Locus T) protein**: synthesized in leaf phloem companion cells under inductive photoperiod, then transported through the phloem (see [Phloem Transport & Translocation](../phloem-transport-translocation/) for the general mechanism carrying it) to the shoot apical meristem, where it triggers the transcriptional program converting the vegetative meristem into a floral meristem — the developmental switch whose structural output (the four floral whorls) is covered on [Flower Anatomy & Reproductive Structures](../../6-plant-anatomy/flower-anatomy-reproductive-structures/).
+This signal is now identified as **florigen**, the **FT (Flowering Locus T) protein**: synthesized in leaf phloem companion cells under inductive photoperiod, then transported through the phloem (see [Phloem Transport & Translocation](../phloem-transport-translocation/) for the general mechanism carrying it) to the shoot apical meristem, where it triggers the transcriptional program converting the vegetative meristem into a floral meristem, the developmental switch whose structural output (the four floral whorls) is covered on [Flower Anatomy & Reproductive Structures](../../6-plant-anatomy/flower-anatomy-reproductive-structures/).
 
 ![FT (florigen) production and transport: under long-day/inductive red:far-red light conditions, FT-producing companion cells in the leaf phloem load FT (and FLP1) protein into the sieve element flow, carrying it to the shoot apical meristem to trigger floral development and to promote stem growth](/PLANTPHYSIOPICS/florigen-ft-pathway.png)
 *Source: ScienceDirect (journal article abstract page, S1534580725000656)*
@@ -82,7 +82,7 @@ graph TD;
 
 **Interactive**
 
-- **Phytochrome Pfr/Pr night-length timer (SVG/JS, slider for night duration)** — a slider sets night length; the diagram shows Pfr-to-Pr reversion accumulating over the dark period, with a threshold marker indicating whether the resulting dawn Pfr:Pr ratio would trigger flowering in a short-day vs. long-day plant, letting the user test the red-light-interruption scenario as a toggle mid-night.
+- **Phytochrome Pfr/Pr night-length timer (SVG/JS, slider for night duration)**, a slider sets night length; the diagram shows Pfr-to-Pr reversion accumulating over the dark period, with a threshold marker indicating whether the resulting dawn Pfr:Pr ratio would trigger flowering in a short-day vs. long-day plant, letting the user test the red-light-interruption scenario as a toggle mid-night.
 
 <div id="phyto-timer-widget" style="background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:'Inter','Segoe UI',Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
   <svg viewBox="0 0 300 90" width="100%" style="max-width:320px; display:block; margin:0 auto;">
@@ -100,8 +100,8 @@ graph TD;
   </div>
   <div id="ptReadout" style="text-align:center; margin-top:10px; font-size:0.85rem; font-weight:600; color:#1a472a;">Dawn Pfr level: high</div>
   <div style="display:flex; justify-content:center; gap:20px; margin-top:8px;">
-    <div id="ptShortDay" style="font-size:0.82rem; color:#4b5563;">Short-day plant: <b>—</b></div>
-    <div id="ptLongDay" style="font-size:0.82rem; color:#4b5563;">Long-day plant: <b>—</b></div>
+    <div id="ptShortDay" style="font-size:0.82rem; color:#4b5563;">Short-day plant: <b>-</b></div>
+    <div id="ptLongDay" style="font-size:0.82rem; color:#4b5563;">Long-day plant: <b>-</b></div>
   </div>
 </div>
 <script>
@@ -132,7 +132,7 @@ graph TD;
 })();
 </script>
 
-- **Grafting experiment reconstructor (click-through)** — a two-plant diagram (induced donor, non-induced recipient) where clicking "graft" transmits a visible signal marker across the graft union to the recipient's apex, which then transitions to flowering, reproducing the classic experiment's logic before revealing FT protein as the modern molecular identity of that signal.
+- **Grafting experiment reconstructor (click-through)**, a two-plant diagram (induced donor, non-induced recipient) where clicking "graft" transmits a visible signal marker across the graft union to the recipient's apex, which then transitions to flowering, reproducing the classic experiment's logic before revealing FT protein as the modern molecular identity of that signal.
 
 <div id="graft-widget" style="background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:'Inter','Segoe UI',Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
   <svg viewBox="0 0 320 140" width="100%" style="max-width:340px; display:block; margin:0 auto;">
@@ -178,7 +178,7 @@ graph TD;
     }, 200);
     setTimeout(function(){
       recipientTop.textContent = '\u{1F337}';
-      note.textContent = 'The recipient flowers — despite never itself experiencing the inductive photoperiod. This signal is now identified as FT (florigen) protein.';
+      note.textContent = 'The recipient flowers, despite never itself experiencing the inductive photoperiod. This signal is now identified as FT (florigen) protein.';
     }, 1600);
     setTimeout(function(){ running = false; }, 2000);
   });

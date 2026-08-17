@@ -27,44 +27,44 @@ A protein's function is inseparable from its shape, and its shape is built in fo
 - **β-turn**: a third, shorter motif connecting two antiparallel β-strands.
 
 ![α-helix (coiled ribbon) and pleated β-sheet secondary structures, with the four non-covalent/covalent interaction types that stabilise folded protein structure labelled: ionic bonds, hydrogen bonds, hydrophobic interactions, and van der Waals forces](/MCBBPICS/secondary.png)
-*Source: unattributed pre-existing site asset*
+Source: Unknown
 
 ![Amino acid propensities for secondary structure: residues branched at Cβ (Val, Ile) destabilise the α-helix but suit β-sheet; residues whose R group can hydrogen-bond (Ser, Asp, Asn) also destabilise the α-helix by competing with backbone H-bonds; Gly (too flexible) and Pro (too rigid, no amide H) are exceptions unsuited to either](/MCBBPICS/structuralaas.png)
-*Source: unattributed pre-existing site asset*
+Source: Unknown
 
-A useful rule of thumb: secondary-structure hydrogen bonding is local, roughly *n* to *n*+3/*n*+4 — only nearby residues interact directly.
+A useful rule of thumb: secondary-structure hydrogen bonding is local, roughly *n* to *n*+3/*n*+4, only nearby residues interact directly.
 
-**Supersecondary structure** (motifs) combine a small number of secondary elements in a recognisable pattern — α-α-α, α-β-α, β-β-β — without yet forming a full folded domain.
+**Supersecondary structure** (motifs) combine a small number of secondary elements in a recognisable pattern, α-α-α, α-β-α, β-β-β, without yet forming a full folded domain.
 
 ![Eight example supersecondary motifs from solved PDB structures, combining helices (H) and extended strands (E) in patterns such as helix-loop-helix and sheet-loop-sheet, each labelled with its PDB source code](/MCBBPICS/sss.png)
-*Source: unattributed pre-existing site asset*
+Source: Unknown
 
 **Tertiary structure** is the overall 3D fold of a single polypeptide, formed by packing secondary elements into compact domains. It is stabilised by, in rough order of contribution:
 
 1. **Hydrophobic interactions**: the dominant driving force; nonpolar side chains bury in the interior to avoid water, polar side chains stay solvent-exposed.
 2. **Hydrogen bonds** between polar side chains, or side chain–backbone, individually weak but numerous and directional.
 3. **Ionic bonds (salt bridges)** between oppositely charged side chains (e.g. Lys⁺···Asp⁻).
-4. **Disulfide bonds** — the only *covalent* tertiary-level bond, cross-linking two cysteine sulfurs.
+4. **Disulfide bonds**, the only *covalent* tertiary-level bond, cross-linking two cysteine sulfurs.
 5. **Van der Waals forces**: weak, short-range, but numerous in a densely packed hydrophobic core.
 
 ![A folded polypeptide backbone with the tertiary stabilising interactions labelled at their respective sites: an ionic bond between charged side chains, a hydrogen bond, hydrophobic interactions clustering nonpolar side chains together, and a covalent disulfide linkage between two cysteines](/MCBBPICS/tss.png)
-*Source: unattributed pre-existing site asset*
+Source: Unknown
 
-Because most of these forces are non-covalent, tertiary structure is fragile: heat, extreme pH, or heavy metals disrupt them, causing **denaturation** — loss of function without necessarily breaking the primary sequence.
+Because most of these forces are non-covalent, tertiary structure is fragile: heat, extreme pH, or heavy metals disrupt them, causing **denaturation**, loss of function without necessarily breaking the primary sequence.
 
 **Quaternary structure** arises when multiple independently folded (tertiary) subunits associate, often via the same non-covalent forces listed above, into one functional multimeric complex.
 
 ![Quaternary protein structure examples: dimers (homodimer vs. heterodimer), a trimer (collagen's triple helix), and a tetramer (hemoglobin's α2β2 assembly)](/MCBBPICS/qss.png)
-*Source: unattributed pre-existing site asset*
+Source: Unknown
 
 ### Hemoglobin: the model system for allostery and cooperativity
 
 **Allostery** is regulation of a protein's activity by a ligand binding somewhere *other* than the active/functional site, via an induced conformational change. Hemoglobin (Hb), a tetramer of two α- and two β-globin chains, is the canonical teaching example.
 
-**T (tense) vs. R (relaxed) state**: deoxy-Hb sits in the T state, held by 8 inter-subunit salt bridges, with *low* O₂ affinity. When O₂ binds one heme iron, the iron (previously pulled slightly out of the porphyrin plane by the proximal histidine) moves into the plane, tugging the attached helix and breaking salt bridges — a conformational change that propagates cooperatively across all four subunits, flipping the whole tetramer to the R state with *high* O₂ affinity.
+**T (tense) vs. R (relaxed) state**: deoxy-Hb sits in the T state, held by 8 inter-subunit salt bridges, with *low* O₂ affinity. When O₂ binds one heme iron, the iron (previously pulled slightly out of the porphyrin plane by the proximal histidine) moves into the plane, tugging the attached helix and breaking salt bridges, a conformational change that propagates cooperatively across all four subunits, flipping the whole tetramer to the R state with *high* O₂ affinity.
 
 ![O2 saturation (Y) vs. pO2 for basal Hb compared with locked T-state and locked R-state polymerised hemoglobin (fitted curves plus experimental data points): the T-state curve sits far right (low affinity), the R-state curve sits far left (high affinity), and basal Hb's sigmoidal curve falls between them](/MCBBPICS/tr.png)
-*Source: unattributed pre-existing site asset*
+Source: Unknown
 
 **Cooperativity** means O₂ binding at one subunit raises affinity at the others, producing a **sigmoidal** binding curve (vs. the hyperbolic curve of monomeric myoglobin, which has no cooperativity):
 
@@ -72,10 +72,10 @@ Because most of these forces are non-covalent, tertiary structure is fragile: he
 $$ \theta = \frac{[O_2]^{n_H}}{K_d^{n_H} + [O_2]^{n_H}} $$
 {{< /eqbox >}}
 
-For Hb, the Hill coefficient n_H ≈ 2.8 (out of a theoretical maximum of 4 for perfect cooperativity); for myoglobin, n_H = 1. You do not need to derive this equation for most olympiad purposes — understand what n_H *means* (degree of cooperativity) and its bounds.
+For Hb, the Hill coefficient n_H ≈ 2.8 (out of a theoretical maximum of 4 for perfect cooperativity); for myoglobin, n_H = 1. You do not need to derive this equation for most olympiad purposes, understand what n_H *means* (degree of cooperativity) and its bounds.
 
 ![Generic fraction-bound vs. free-ligand-concentration curves for Hill coefficients of 4, 2, 1, 0.5, and 0.2: higher coefficients produce steeper, more sigmoidal curves (stronger positive cooperativity), a coefficient of 1 gives a hyperbolic curve (no cooperativity), and coefficients below 1 indicate negative cooperativity](/MCBBPICS/hillgraph.png)
-*Source: unattributed pre-existing site asset*
+Source: Unknown
 
 **Heterotropic effectors**: ligands other than O₂ that shift Hb's affinity:
 
@@ -89,11 +89,11 @@ For Hb, the Hill coefficient n_H ≈ 2.8 (out of a theoretical maximum of 4 for 
 At the pO₂ found in respiring tissue (~40 mmHg), myoglobin (with its hyperbolic, high-affinity curve) retains far more bound O₂ than hemoglobin, which is exactly the point of the two proteins having different curve shapes: Hb is built to *release* O₂ readily in tissue, Mb to *hold onto* it as an intracellular O₂ store.
 
 ![Oxygen saturation vs. pO2 for hemoglobin (blue, sigmoidal) and myoglobin (red, hyperbolic), with venous-tissue and lung pO2 ranges shaded and the ~40 mmHg tissue point marked: myoglobin sits at ~93% saturation there vs. hemoglobin's ~76%](/MCBBPICS/mbhbgraph.png)
-*Source: unattributed pre-existing site asset*
+Source: Unknown
 
 ### Chaperones and protein folding
 
-**Anfinsen's dogma**: a protein's final fold is fully encoded in its primary sequence — chaperones do not dictate the fold. What they *do* is prevent **off-pathway aggregation**, by transiently shielding exposed hydrophobic patches during and after translation, before folding completes.
+**Anfinsen's dogma**: a protein's final fold is fully encoded in its primary sequence, chaperones do not dictate the fold. What they *do* is prevent **off-pathway aggregation**, by transiently shielding exposed hydrophobic patches during and after translation, before folding completes.
 
 **GroEL/GroES (Hsp60 family)** cycle: (1) the unfolded protein enters the GroEL barrel, whose inner surface is initially hydrophobic; (2) ATP binding flips the inner surface hydrophilic, creating a protected folding chamber; (3) the GroES cap closes over the chamber; (4) ATP hydrolysis (~10 s later) releases the protein, correctly or incorrectly folded; (5) incorrectly folded protein re-enters the cycle.
 
@@ -115,7 +115,7 @@ Prion disease is a favourite exam topic precisely because it breaks the central 
 
 Beyond phosphorylation and glycosylation, the **ubiquitin-proteasome system (UPS)** is the cell's primary route for regulated, targeted protein destruction. **Ubiquitin (Ub)**, a 76-residue protein, is attached to a target lysine via an isopeptide bond in a three-enzyme cascade:
 
-$$ \text{E1 (Ub-activating)} \rightarrow \text{E2 (Ub-conjugating)} \rightarrow \text{E3 (Ub-ligase — provides substrate specificity)} $$
+$$ \text{E1 (Ub-activating)} \rightarrow \text{E2 (Ub-conjugating)} \rightarrow \text{E3 (Ub-ligase, provides substrate specificity)} $$
 
 The *linkage type* determines the outcome:
 
@@ -144,7 +144,7 @@ Structural role correlates strongly with secondary-structure composition: **α-k
 - "Explain why proline and glycine disrupt α-helices": always give the *chemical* reason (cyclic side chain / no amide H for Pro; excess backbone flexibility for Gly), not just "they're different."
 - "At tissue pO₂, which protein (hemoglobin or myoglobin) holds more oxygen, and why does this matter physiologically?" This tests whether you understand *why* the two curve shapes exist, not just that they differ.
 - Distinguishing whether a stabilising interaction is covalent (disulfide bond only) vs. non-covalent (everything else in tertiary structure) is a common trap in "which bond breaks first on denaturation" questions.
-- Prion disease questions often test the "no nucleic acid required" concept specifically — watch for answer choices that assume all heritable/infectious agents must involve DNA or RNA.
+- Prion disease questions often test the "no nucleic acid required" concept specifically, watch for answer choices that assume all heritable/infectious agents must involve DNA or RNA.
 
 ## Visual Reference
 

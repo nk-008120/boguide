@@ -12,7 +12,7 @@ syllabus_tags: ["IBO", "USABO", "genetics", "transmission-genetics"]
 
 ## Overview
 
-Mendel's seven pea traits were fortunate in showing simple, complete dominance with one gene controlling one trait — but this is a special case, not the general rule. This page covers the inheritance patterns that **extend** Mendelian analysis without breaking segregation or independent assortment underneath: dominance relationships that aren't complete, genes with more than two alleles, one gene affecting multiple traits, alleles whose homozygous state is lethal, and the gap between having a genotype and actually expressing its associated phenotype. Every pattern here still obeys segregation at the chromosomal level (see [Mendel's Laws & Probability in Genetics](../mendelian-inheritance-probability/)); what changes is only how genotype maps onto phenotype.
+Mendel's seven pea traits were fortunate in showing simple, complete dominance with one gene controlling one trait, but this is a special case, not the general rule. This page covers the inheritance patterns that **extend** Mendelian analysis without breaking segregation or independent assortment underneath: dominance relationships that aren't complete, genes with more than two alleles, one gene affecting multiple traits, alleles whose homozygous state is lethal, and the gap between having a genotype and actually expressing its associated phenotype. Every pattern here still obeys segregation at the chromosomal level (see [Mendel's Laws & Probability in Genetics](../mendelian-inheritance-probability/)); what changes is only how genotype maps onto phenotype.
 
 ## Key Concepts
 
@@ -25,9 +25,9 @@ In **incomplete dominance**, the heterozygote's phenotype is an intermediate ble
 
 ### Codominance
 
-In **codominance**, both alleles are *fully and simultaneously* expressed in the heterozygote, rather than blending — the classic example is the **MN blood group** in humans, where M/N heterozygotes express both M and N antigens on red blood cells simultaneously, distinguishable from either homozygote by direct antigen testing. The distinction from incomplete dominance is precise and frequently tested: incomplete dominance produces a *new, intermediate* phenotype; codominance produces *both parental phenotypes simultaneously and distinguishably*.
+In **codominance**, both alleles are *fully and simultaneously* expressed in the heterozygote, rather than blending, the classic example is the **MN blood group** in humans, where M/N heterozygotes express both M and N antigens on red blood cells simultaneously, distinguishable from either homozygote by direct antigen testing. The distinction from incomplete dominance is precise and frequently tested: incomplete dominance produces a *new, intermediate* phenotype; codominance produces *both parental phenotypes simultaneously and distinguishably*.
 
-*(No image showing the MN blood group specifically has been sourced yet — the file originally sourced for this slot turned out to depict the ABO system instead, see the note below the ABO table. Flagged HOLD; a genuine MN antigen diagram is still needed here.)*
+*(No image showing the MN blood group specifically has been sourced yet, the file originally sourced for this slot turned out to depict the ABO system instead, see the note below the ABO table. Flagged HOLD; a genuine MN antigen diagram is still needed here.)*
 
 ### Multiple alleles: the ABO blood group system
 
@@ -47,7 +47,7 @@ This system combines two extensions at once, multiple alleles *and* codominance 
 
 ### Pleiotropy
 
-**Pleiotropy** is when a single gene affects multiple, seemingly unrelated phenotypic traits — the opposite direction of complexity from multiple alleles (one gene, many effects, rather than one trait, many alleles). Human **sickle-cell disease** (a single amino-acid substitution in β-globin, Glu6Val — see [Protein Structure, Folding & Function](/resources/1-cell-molecular/protein-structure-folding-function/) for the molecular mechanism) is a classic pleiotropic example: the same mutation causes anemia, joint pain, organ damage, and increased malaria resistance in heterozygotes, a wide phenotypic footprint traceable to one underlying molecular lesion.
+**Pleiotropy** is when a single gene affects multiple, seemingly unrelated phenotypic traits, the opposite direction of complexity from multiple alleles (one gene, many effects, rather than one trait, many alleles). Human **sickle-cell disease** (a single amino-acid substitution in β-globin, Glu6Val, see [Protein Structure, Folding & Function](/resources/1-cell-molecular/protein-structure-folding-function/) for the molecular mechanism) is a classic pleiotropic example: the same mutation causes anemia, joint pain, organ damage, and increased malaria resistance in heterozygotes, a wide phenotypic footprint traceable to one underlying molecular lesion.
 
 ### Lethal alleles
 
@@ -61,7 +61,7 @@ Some alleles are **lethal** in the homozygous state, which distorts the expected
 Even a fully accounted-for genotype does not always guarantee a predictable phenotype:
 
 - **Penetrance** is the *proportion of individuals with a given genotype who show the phenotype at all*: a condition is **incompletely (reduced) penetrant** if some genotypically affected individuals show no phenotype whatsoever (e.g. certain dominant conditions "skip" an apparently unaffected carrier generation in a pedigree).
-- **Expressivity** is the *degree or severity* of the phenotype among individuals who do express it — **variable expressivity** means affected individuals can range from mildly to severely affected despite carrying the identical genotype.
+- **Expressivity** is the *degree or severity* of the phenotype among individuals who do express it, **variable expressivity** means affected individuals can range from mildly to severely affected despite carrying the identical genotype.
 
 ![Pedigree showing an apparently skipped generation: an affected woman's children (a son and daughter, both apparently unaffected) go on to have an affected grandchild, consistent with reduced penetrance in the middle generation rather than non-paternity or a pedigree error.](/GENETICSPICS/penetrance-expressivity-pedigree-skipped-generation.png)
 *Source: ResearchGate*
@@ -95,7 +95,7 @@ The **norm of reaction** is the full range of phenotypes a single genotype can p
 
 {{< iframe src="/dominance-comparator.html" title="Dominance relationship comparator" height="480px" >}}
 
-*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Two gaps remain open: a genuine MN blood group codominance image, and a genuine A^Y lethal-allele cross/Punnett-square diagram — see the notes inline above.)*
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Two gaps remain open: a genuine MN blood group codominance image, and a genuine A^Y lethal-allele cross/Punnett-square diagram, see the notes inline above.)*
 
 ## Practice Problems
 

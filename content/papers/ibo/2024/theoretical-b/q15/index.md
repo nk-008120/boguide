@@ -1,8 +1,8 @@
 ---
-title: "Q15 — Lotka-Volterra Competition Lines and Coexistence Outcomes"
+title: "Q15 - Lotka-Volterra Competition Lines and Coexistence Outcomes"
 ---
 
-{{< problem-meta category="Theoretical B" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 {{< mathjax >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
@@ -18,7 +18,7 @@ where K - carrying capacity, N - number of individuals, r - intrinsic rate of in
 The Lotka-Volterra line represents the number of individuals in a population at equilibrium (dN/dt = 0). For two species in competition, there are only 4 combinations of the location of these lines. Depending on the initial values of populations, the future changes in populations' dynamics can be predicted.
 
 ![Left: a graph of two straight equilibrium lines for species 1 and species 2, from K1/K2 on the axes to K1/K2 on the opposite axis. Right: four small panels showing the four possible combinations of the two lines' positions, each with arrows showing population trajectories from marked starting points.](/papers/ibo/2024/theoretical-b/q15-figure-1.png)
-*Figure 1. A Lotka-Volterra lines. B Combinations of line locations and trends — arrows show the further direction of populations' dynamics for particular initial values, indicated by blue dots.*
+*Figure 1. A Lotka-Volterra lines. B Combinations of line locations and trends - arrows show the further direction of populations' dynamics for particular initial values, indicated by blue dots.*
 
 On your answer sheet, indicate "T" for true statements and "F" for false ones.
 
@@ -28,4 +28,4 @@ On your answer sheet, indicate "T" for true statements and "F" for false ones.
 
 ---
 
-Question reproduced from **IBO 2024, Theoretical Exam Part B**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2024/theoretical-b-exam.pdf#page=25)
+Question reproduced from **IBO 2024, Theoretical Exam Part B**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2024/theoretical-b-exam.pdf#page=25)

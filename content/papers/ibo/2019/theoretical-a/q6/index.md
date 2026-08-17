@@ -1,8 +1,8 @@
 ---
-title: "Q6 — A Two-Polypeptide Gene with an Intron"
+title: "Q6 - A Two-Polypeptide Gene with an Intron"
 ---
 
-{{< problem-meta category="Theoretical A" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/1-cell-molecular/dna-structure-replication/">DNA Structure & Replication</a>
@@ -14,7 +14,7 @@ You are studying a small protein-coding locus, the sequence of which is shown be
 5'-CTACGTACTATGTATTCCGATCTATACTCGATCTAGTCGCATTCCGATAAGATCGTAC-3'
 3'-GATGCATGATACATAAGGCTAGATATGAGCTAGATCAGCGTAAGGCTATTCTAGCATG-5'
 ```
-(intron, bold in the original: **GATCTATA** / **CTAGATAT** — the underlined base pair for Q6.5 is the C:G pair immediately after the intron.)
+(intron, bold in the original: **GATCTATA** / **CTAGATAT** - the underlined base pair for Q6.5 is the C:G pair immediately after the intron.)
 
 {{< papers-quiz olympiad="ibo" year="2019" round="theoretical-a" problem="q6" >}}
 
@@ -22,4 +22,4 @@ You are studying a small protein-coding locus, the sequence of which is shown be
 
 ---
 
-Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=14) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)
+Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=14) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)

@@ -1,8 +1,8 @@
 ---
-title: "Q3 — Amylase Activity — Starch Hydrolysis at 50–70°C"
+title: "Q3 - Amylase Activity - Starch Hydrolysis at 50–70°C"
 ---
 
-{{< problem-meta category="Theoretical 1" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/1-cell-molecular/enzyme-kinetics-regulation/">Enzyme Kinetics & Regulation</a>
@@ -21,4 +21,4 @@ What conclusion can be drawn from these data? Determine whether the following st
 
 ---
 
-Question reproduced from **IBO 2022, Theoretical Paper 1**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2022/theoretical-1-exam.pdf#page=5) · [Community solutions (unofficial)](/papers/ibo/2022/theoretical-1-solutions.pdf)
+Question reproduced from **IBO 2022, Theoretical Paper 1**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2022/theoretical-1-exam.pdf#page=5) · [Community solutions (unofficial)](/papers/ibo/2022/theoretical-1-solutions.pdf)

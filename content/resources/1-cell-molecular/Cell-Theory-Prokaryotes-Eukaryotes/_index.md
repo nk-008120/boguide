@@ -19,7 +19,7 @@ This is the section's foundational page; read it first. Cell theory states that 
 
 1. All living organisms are composed of one or more cells.
 2. The cell is the basic structural, functional, and organisational unit of all organisms.
-3. All cells arise only from pre-existing cells (*omnis cellula e cellula* — Virchow), ruling out spontaneous generation as a mechanism of ongoing cell formation.
+3. All cells arise only from pre-existing cells (*omnis cellula e cellula*, Virchow), ruling out spontaneous generation as a mechanism of ongoing cell formation.
 
 Historically, cell theory itself is a favourite context for questions on the transition from **spontaneous generation** to a mechanistic account of life, associated with Hooke's first observation of (dead) cork cells, Leeuwenhoek's observation of living "animalcules," and Schleiden/Schwann's formalisation of the theory, but the *conceptual* content (the three tenets above) is what's actually tested, not a detailed history of discovery.
 
@@ -39,7 +39,7 @@ Structural features distinguishing prokaryotes:
 
 ### Eukaryotic cell organisation
 
-Eukaryotic cells possess a membrane-bound **nucleus** housing linear chromosomes complexed with histone proteins (chromatin), plus an extensive system of membrane-bound organelles (endoplasmic reticulum, Golgi apparatus, mitochondria, and — in plants/algae — chloroplasts; see [Endomembrane System & Protein Trafficking](../endomembrane-system-protein-trafficking/) and [Mitochondria & Chloroplasts](../mitochondria-chloroplasts-structure-origin/) for full treatment of each). This compartmentalisation lets eukaryotic cells run mutually incompatible reactions simultaneously: for instance, concentrating and protecting the genome from cytoplasmic mechanical/chemical stress, or maintaining the distinct redox and pH environments each organelle's chemistry requires.
+Eukaryotic cells possess a membrane-bound **nucleus** housing linear chromosomes complexed with histone proteins (chromatin), plus an extensive system of membrane-bound organelles (endoplasmic reticulum, Golgi apparatus, mitochondria, and, in plants/algae, chloroplasts; see [Endomembrane System & Protein Trafficking](../endomembrane-system-protein-trafficking/) and [Mitochondria & Chloroplasts](../mitochondria-chloroplasts-structure-origin/) for full treatment of each). This compartmentalisation lets eukaryotic cells run mutually incompatible reactions simultaneously: for instance, concentrating and protecting the genome from cytoplasmic mechanical/chemical stress, or maintaining the distinct redox and pH environments each organelle's chemistry requires.
 
 Eukaryotic cells also possess a true **cytoskeleton** (actin filaments, microtubules, intermediate filaments, see [Cytoskeleton & Motor Proteins](../cytoskeleton-motor-proteins/)) providing structural support, intracellular transport tracks, and the machinery for cell division and, in animal cells, shape change and motility.
 
@@ -65,7 +65,7 @@ A common misconception worth correcting directly: prokaryotes are not "primitive
 
 ## Common Exam Questions
 
-- "Why do antibiotics targeting the 70S ribosome not harm human cells?": the correct answer names the ribosome-size distinction (70S vs. 80S) specifically, and often additionally notes that human mitochondria retain 70S ribosomes, which is why some such antibiotics do carry mitochondrial-toxicity side effects at high doses — a frequently tested nuance.
+- "Why do antibiotics targeting the 70S ribosome not harm human cells?": the correct answer names the ribosome-size distinction (70S vs. 80S) specifically, and often additionally notes that human mitochondria retain 70S ribosomes, which is why some such antibiotics do carry mitochondrial-toxicity side effects at high doses, a frequently tested nuance.
 - "Which feature most fundamentally distinguishes eukaryotes from prokaryotes?": compartmentalisation (membrane-bound organelles, especially the nucleus), not simply "bigger" or "more complex," which are consequences rather than the defining feature itself.
 - Questions describing a newly discovered microorganism and asking you to classify it as prokaryotic or eukaryotic test recognition of the diagnostic structural features in the comparison table above, not memorised taxonomic names.
 

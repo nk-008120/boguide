@@ -1,7 +1,7 @@
 ---
 title: "Plasma Membrane Structure & Transport"
 weight: 2
-description: "The fluid mosaic model, membrane protein topology, and the four mechanisms cells use to move solutes across a membrane — simple diffusion, facilitated diffusion, primary and secondary active transport, and osmosis."
+description: "The fluid mosaic model, membrane protein topology, and the four mechanisms cells use to move solutes across a membrane, simple diffusion, facilitated diffusion, primary and secondary active transport, and osmosis."
 difficulty: "intermediate"
 prerequisites: ["Cell-Theory-Prokaryotes-Eukaryotes"]
 syllabus_tags: ["IBO", "USABO", "cell-biology"]
@@ -40,7 +40,7 @@ Small, nonpolar, or very small polar molecules (O₂, CO₂, and to a limited ex
 
 Larger or charged/polar solutes (glucose, ions) cannot cross the hydrophobic bilayer core directly and require a membrane transport protein, but still move **down** their concentration gradient and require **no direct energy input**: the protein simply provides a lower-energy path across the membrane. Two structural strategies:
 
-- **Channel proteins** form a continuous aqueous pore (e.g. ion channels, aquaporins for water) — generally faster than carriers, since no conformational cycling is required per molecule transported, but less able to couple transport to any other process.
+- **Channel proteins** form a continuous aqueous pore (e.g. ion channels, aquaporins for water), generally faster than carriers, since no conformational cycling is required per molecule transported, but less able to couple transport to any other process.
 - **Carrier proteins** bind the solute, undergo a conformational change, and release it on the other side: slower per molecule than a channel, but this binding step is exactly what allows carriers to be coupled to secondary active transport (below).
 
 ### Active transport: primary and secondary
@@ -77,7 +77,7 @@ Active transport moves solutes **against** their concentration gradient, which i
 ## Common Exam Questions
 
 - "Is this process active or passive?": the single reliable test is whether the *net* movement is with or against the solute's own concentration gradient, not whether a protein is involved (facilitated diffusion uses a protein but is still passive).
-- "Why is secondary active transport considered active if it doesn't use ATP directly?" — because the *transported solute itself* still moves against its own gradient; the energy source (an existing electrochemical gradient) was built by ATP-dependent primary transport upstream, but is still ultimately ATP-derived.
+- "Why is secondary active transport considered active if it doesn't use ATP directly?", because the *transported solute itself* still moves against its own gradient; the energy source (an existing electrochemical gradient) was built by ATP-dependent primary transport upstream, but is still ultimately ATP-derived.
 - Tonicity questions (hypertonic/hypotonic/isotonic) frequently combine with plant vs. animal cell context: know that plant cells resist lysis in hypotonic solutions via the cell wall (developing turgor pressure) where an equivalent animal cell would lyse.
 
 ## Visual Reference
@@ -90,7 +90,7 @@ Active transport moves solutes **against** their concentration gradient, which i
 
 **Static**
 
-*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Note: the fluid mosaic model image could not be fully visually verified — see the inline note.)*
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Note: the fluid mosaic model image could not be fully visually verified, see the inline note.)*
 
 ## Practice Problems
 
@@ -99,7 +99,7 @@ Active transport moves solutes **against** their concentration gradient, which i
 <details>
 <summary>Show answer</summary>
 
-Glucose uptake via the symporter falls. The Na⁺/glucose symporter is a secondary active transporter — its ability to pull glucose uphill depends entirely on the steep inward Na⁺ gradient maintained by the Na⁺/K⁺-ATPase. Inhibiting the pump allows the Na⁺ gradient to run down (as Na⁺ leaks back in via other paths without being pumped back out), progressively removing the driving force the symporter depends on, even though the symporter protein itself is structurally and catalytically unaffected by the drug.
+Glucose uptake via the symporter falls. The Na⁺/glucose symporter is a secondary active transporter, its ability to pull glucose uphill depends entirely on the steep inward Na⁺ gradient maintained by the Na⁺/K⁺-ATPase. Inhibiting the pump allows the Na⁺ gradient to run down (as Na⁺ leaks back in via other paths without being pumped back out), progressively removing the driving force the symporter depends on, even though the symporter protein itself is structurally and catalytically unaffected by the drug.
 </details>
 
 **2.** A red blood cell (no cell wall) is placed in a hypotonic solution. Predict its fate, and contrast this with what would happen to a plant cell placed in the same solution.

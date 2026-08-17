@@ -1,8 +1,8 @@
 ---
-title: "Q36 — Aethia cristatella — Courtship Display on Rocks"
+title: "Q36 - Aethia cristatella - Courtship Display on Rocks"
 ---
 
-{{< problem-meta category="Theoretical 1" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/9-ethology/aggression-territoriality-social-structure/">Aggression, Territoriality & Social Structure</a>
@@ -15,7 +15,7 @@ title: "Q36 — Aethia cristatella — Courtship Display on Rocks"
 *Figure 1. Aethia cristatella with courtship feathers.*
 
 ![Figure 2. Diagram of courtship-game movements between rocks at high bird density.](/papers/ibo/2022/q36-figure-2.png)
-*Figure 2. Aethia cristatella courtship game diagram in areas with high bird density; a — males displaying themselves in their own territory, b — females searching for a mate, c — mated pairs, 1–4 — rocks. Arrows indicate the movements of males between rocks.*
+*Figure 2. Aethia cristatella courtship game diagram in areas with high bird density; a - males displaying themselves in their own territory, b - females searching for a mate, c - mated pairs, 1–4 - rocks. Arrows indicate the movements of males between rocks.*
 
 Using the information and figures, determine whether the following statements are true or false:
 
@@ -25,4 +25,4 @@ Using the information and figures, determine whether the following statements ar
 
 ---
 
-Question reproduced from **IBO 2022, Theoretical Paper 1**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2022/theoretical-1-exam.pdf#page=54) · [Community solutions (unofficial)](/papers/ibo/2022/theoretical-1-solutions.pdf)
+Question reproduced from **IBO 2022, Theoretical Paper 1**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2022/theoretical-1-exam.pdf#page=54) · [Community solutions (unofficial)](/papers/ibo/2022/theoretical-1-solutions.pdf)

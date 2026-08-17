@@ -1,0 +1,185 @@
+id: bioclash-sample
+title: "BiOClash Sample — Two Problems, Two Subjects"
+season: sample
+accessMode: open
+durationMinutes: 30
+totalMarks: 19
+
+extensionBlockMinutes: 0
+maxExtensionBlocks: 0
+extensionCostSchedule: []
+extensionBonusCeiling: 0
+
+parts:
+  - id: sample-1
+    name: "SAMPLE 1 — Cell & Molecular Biology: The Heresy of Protein-Only Inheritance"
+    marks: 9
+    intro: >
+      Scrapie: a fatal, transmissible brain disease of sheep, spreads between animals like
+      an infection. So do its human relatives, including Creutzfeldt–Jakob disease. When
+      researchers tried to inactivate the infectious agent, they found something strange:
+      treatment with a broad-spectrum antibiotic proved ineffective. They sought to confirm
+      their hypothesis by processing the damaged tissue. The tissue was sectioned, blended
+      in a mixer, and filtered through a 0.2 µm sieve. The resulting filtrate was then
+      divided into three fractions for further testing under different treatments:
+      Fraction X, exposed to 363 K for 30 minutes. Fraction Y, treated with a high
+      concentration of sodium hypochlorite for 60 minutes. Fraction Z, treated with highly
+      active nuclease for 30 minutes at 308 K.
+    blocks:
+      - id: s1-q0q1
+        locksAfterSubmit: true
+        reveals: s1-reveal1
+        lockWarning: "Once you proceed past this point, you cannot return and change your answers here."
+        components:
+          - key: s1-q0
+            type: mcq
+            marks: 2
+            prompt: "If these fractions are injected into healthy, individual sheep, which of these fractions will cause the same disease in sheep?"
+            options:
+              - key: A
+                text: "Only fraction X"
+              - key: B
+                text: "Only fraction Y"
+              - key: C
+                text: "Fractions Y and Z"
+              - key: D
+                text: "Fractions X and Z"
+            correctKey: "D"  # not explicitly stated in the source document — needs your input
+          - key: s1-q1
+            type: free_text
+            marks: 3
+            prompt: >
+              Before reading any further, commit to a hypothesis: based only on the evidence
+              above, is the infectious agent's essential component a nucleic acid, a protein,
+              or does it require both? Justify your choice.
+
+      - id: s1-reveal1
+        type: reveal_content
+        content: >
+          Protein alone. The agent, a prion, is a misfolded form of a normal host protein,
+          PrP. No nucleic acid is required for it to propagate, which is exactly what the
+          resistance-to-nuclease/sensitivity-to-protease pattern above predicts.
+
+      - id: s1-q2q3
+        locksAfterSubmit: false
+        components:
+          - key: s1-q2
+            type: mcq
+            marks: 2
+            prompt: >
+              The accepted mechanism: a misfolded prion protein (PrPˢᶜ), on contact with a
+              correctly-folded copy of the same protein (PrPᶜ), induces it to adopt the same
+              misfolded shape — a self-propagating chain reaction requiring no genetic
+              material at all. Explain why this mechanism is significant.
+            options:
+              - key: A
+                text: "It proved that proteins can mutate DNA sequences directly during replication without cellular transcription."
+              - key: B
+                text: "It suggested that normal cellular proteins (PrPᶜ) are actually a type of viral RNA in disguise."
+              - key: C
+                text: "It showed that infectious agents can rely solely on lipid membranes rather than nucleic acids to copy themselves."
+              - key: D
+                text: "It demonstrated that carbohydrates act as the primary hereditary template in mammalian nervous systems."
+              - key: E
+                text: "It claimed a protein alone, without DNA or RNA, could store and transmit biological information and replication instructions."
+            correctKey: "E"  # E closely echoes the reveal text above and is my best guess, but not explicitly confirmed in the source — please verify
+          - key: s1-q3
+            type: free_text
+            marks: 2
+            prompt: >
+              A student argues that nucleases should also reduce prion activity, since
+              nucleases will reduce transcription and translation. Suggest why this
+              argument is or isn't correct.
+
+  - id: sample-2
+    name: "SAMPLE 2 — Animal Physiology: The Fish With No Red Blood"
+    marks: 10
+    intro: >
+      Antarctic icefish (family Channichthyidae) are the only known vertebrates with no red
+      blood cells and no haemoglobin: their blood runs almost clear. Every other known
+      vertebrate depends on haemoglobin to carry oxygen. Icefish live in the Southern Ocean
+      at temperatures close to −1.9°C.
+    blocks:
+      - id: s2-q0
+        locksAfterSubmit: true
+        reveals: s2-reveal1
+        lockWarning: "Once you proceed past this point, you cannot return and change your answer here."
+        components:
+          - key: s2-q0
+            type: free_text
+            marks: 2
+            prompt: "State whether cold water holds more or less dissolved oxygen than warm water, and explain the chemical principle behind this."
+
+      - id: s2-reveal1
+        type: reveal_content
+        content: >
+          Cold water holds MORE dissolved oxygen. Gas solubility in a liquid generally
+          increases as temperature falls — dissolving a gas is exothermic, so lower
+          temperatures favour it, and gas molecules already in solution have less kinetic
+          energy to escape back out of it.
+
+      - id: s2-q1
+        locksAfterSubmit: true
+        reveals: s2-reveal2
+        lockWarning: "Once you proceed past this point, you cannot return and change your answer here."
+        images:
+          - src: "/BiOClashSamplePICS/icefish-oxygen-curve.png"
+            caption: "Blood oxygen content vs. blood oxygen partial pressure (pO₂) for a typical haemoglobin-containing fish and for icefish, whose blood carries oxygen only in physical solution."
+        components:
+          - key: s2-q1
+            type: free_text
+            marks: 4
+            prompt: >
+              Using the graph and the given fact above, predict: is losing haemoglobin more
+              survivable for an animal living in cold, oxygen-rich water, or in warm,
+              oxygen-poor water? Justify your answer using the shapes of the two curves, the
+              P₅₀ marked on the graph, and the given fact.
+
+      - id: s2-reveal2
+        type: reveal_content
+        content: >
+          Cold, oxygen-rich water — confirmed. The icefish curve is far below the
+          haemoglobin curve at every pO₂, so icefish blood only carries adequate oxygen when
+          pO₂ itself is high, which requires cold, oxygen-rich water. In warm, oxygen-poor
+          water, pO₂ would be too low for the dissolved-only curve to deliver sufficient
+          oxygen at all.
+
+      - id: s2-q2
+        locksAfterSubmit: false
+        components:
+          - key: s2-q2
+            type: mcq
+            marks: 4
+            prompt: >
+              Even in cold, oxygen-rich water, the gap between the two curves on the graph
+              above is large — dissolved oxygen alone still falls well short of what a
+              typical fish carries via haemoglobin. Before being told what icefish actually
+              evolved, predict which combination of THREE anatomical or physiological
+              adaptations natural selection would most likely favour in an animal that has
+              lost haemoglobin entirely, in order to close this gap. Select the combination,
+              then explain the physiological logic behind each part of it — do not just
+              describe the adaptations, explain why each would help.
+            options:
+              - key: A
+                text: "(1) unusually SMALL blood volume, (2) an enlarged heart with high stroke volume, and (3) scaleless, densely vascularised skin enabling cutaneous gas exchange."
+              - key: B
+                text: "(1) unusually small blood volume, (2) a SMALL heart with LOW stroke volume, and (3) scaleless, densely vascularised skin enabling cutaneous gas exchange."
+              - key: C
+                text: "(1) unusually large blood volume, (2) an enlarged heart with high stroke volume, and (3) SCALES and dry skin, to prevent moisture loss and conserve blood volume."
+              - key: D
+                text: "(1) unusually large blood volume, (2) an enlarged heart with high stroke volume, and (3) scaleless, densely vascularised skin enabling cutaneous gas exchange."
+            correctKey: D
+
+      - id: s2-reveal3
+        type: reveal_content
+        content: >
+          D. Icefish actually evolved all three: (1) unusually large blood volume, (2) an
+          enlarged heart with high stroke volume, and (3) scaleless, densely vascularised
+          skin enabling cutaneous gas exchange. The logic behind each: larger volume and a
+          stronger pump move more of the same dilute blood per unit time, partly offsetting
+          its low oxygen content; the vascularised skin adds a route for picking up
+          additional oxygen directly, independent of the blood's carrying capacity
+          altogether. Option A/B fail because reducing blood volume or heart output cuts the
+          only oxygen-delivery advantage icefish have left; option C fails because scaled,
+          dry skin would remove the one adaptation that actually helps, in exchange for a
+          moisture-conservation benefit not relevant to a fully aquatic animal.

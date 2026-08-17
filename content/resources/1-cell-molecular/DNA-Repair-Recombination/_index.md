@@ -1,7 +1,7 @@
 ---
 title: "DNA Repair & Recombination"
 weight: 10
-description: "The major DNA repair pathways — mismatch, base-excision, and nucleotide-excision repair, and double-strand break repair — plus the telomere/telomerase system and its link to aging and cancer."
+description: "The major DNA repair pathways, mismatch, base-excision, and nucleotide-excision repair, and double-strand break repair, plus the telomere/telomerase system and its link to aging and cancer."
 difficulty: "advanced"
 prerequisites: ["DNA-Structure-Replication"]
 syllabus_tags: ["IBO", "USABO", "molecular-biology"]
@@ -29,7 +29,7 @@ Even with DNA polymerase's proofreading activity (see [DNA Structure & Replicati
 
 ### Nucleotide excision repair (NER): fixing bulky, helix-distorting lesions
 
-**NER** targets damage too structurally bulky for BER's single-base-swap mechanism to handle: most classically, **UV-induced thymine dimers** (covalent cross-links between adjacent thymine bases that distort the helix's normal geometry). NER excises a short single-stranded segment (roughly a dozen or more nucleotides) *surrounding* the lesion, rather than just the damaged base itself, and a repair polymerase fills the resulting gap using the intact complementary strand as template. The distinction from BER is a useful exam discriminator: **BER = one damaged base, glycosylase-initiated; NER = a bulky, helix-distorting lesion, excises a whole surrounding stretch.** Xeroderma pigmentosum, a hereditary NER deficiency, causes extreme UV sensitivity and dramatically elevated skin cancer risk — direct clinical evidence for how essential this specific pathway is.
+**NER** targets damage too structurally bulky for BER's single-base-swap mechanism to handle: most classically, **UV-induced thymine dimers** (covalent cross-links between adjacent thymine bases that distort the helix's normal geometry). NER excises a short single-stranded segment (roughly a dozen or more nucleotides) *surrounding* the lesion, rather than just the damaged base itself, and a repair polymerase fills the resulting gap using the intact complementary strand as template. The distinction from BER is a useful exam discriminator: **BER = one damaged base, glycosylase-initiated; NER = a bulky, helix-distorting lesion, excises a whole surrounding stretch.** Xeroderma pigmentosum, a hereditary NER deficiency, causes extreme UV sensitivity and dramatically elevated skin cancer risk, direct clinical evidence for how essential this specific pathway is.
 
 ![Nucleotide excision repair via both transcription-coupled repair (RNA polymerase stalling at the lesion recruits repair factors) and global genome repair (XPC/hHR23B scans and recognises damage anywhere in the genome): both converge on TFIIH-mediated helix unwinding, XPG/XPF-ERCC1 dual incision excising the lesion-containing segment, gap-filling DNA polymerase, and ligase sealing the nick](/MCBBPICS/ner-mechanism-diagram.png)
 *Source: Wikipedia (Nucleotide Excision Repair)*
@@ -38,18 +38,18 @@ Even with DNA polymerase's proofreading activity (see [DNA Structure & Replicati
 
 A **double-strand break (DSB)**, severing both DNA strands at the same location, is the most dangerous lesion type: an unrepaired DSB can cause chromosome loss or large-scale rearrangement. Two repair strategies with sharply different fidelity:
 
-- **Non-homologous end joining (NHEJ)**: directly ligates the two broken ends back together, with little or no sequence homology required — fast, available throughout the cell cycle, but **error-prone**, often introducing small insertions or deletions at the repair junction.
+- **Non-homologous end joining (NHEJ)**: directly ligates the two broken ends back together, with little or no sequence homology required, fast, available throughout the cell cycle, but **error-prone**, often introducing small insertions or deletions at the repair junction.
 - **Homologous recombination (HR)**: uses the intact sister chromatid (available only after S phase, see [Cell Cycle, Mitosis & Meiosis](../cell-cycle-mitosis-meiosis/)) as a template to accurately restore the original sequence: **high-fidelity**, but restricted to S/G2 phases when a sister chromatid is actually present.
 
-This cell-cycle restriction is the mechanistic reason NHEJ, despite being the less accurate pathway, remains the dominant DSB repair route in G1-phase cells — HR simply isn't available as an option without a sister chromatid template.
+This cell-cycle restriction is the mechanistic reason NHEJ, despite being the less accurate pathway, remains the dominant DSB repair route in G1-phase cells, HR simply isn't available as an option without a sister chromatid template.
 
 ### Telomeres and telomerase: solving the end-replication problem
 
-DNA polymerase's requirement for a primer (see [DNA Structure & Replication](../dna-structure-replication/)) creates a structural problem specifically at chromosome ends: after the final RNA primer on the lagging strand is removed, there is no way to fill the resulting gap with DNA, because doing so would require priming even further upstream than any existing sequence — each round of replication therefore shortens the chromosome slightly. This is the **end-replication problem**.
+DNA polymerase's requirement for a primer (see [DNA Structure & Replication](../dna-structure-replication/)) creates a structural problem specifically at chromosome ends: after the final RNA primer on the lagging strand is removed, there is no way to fill the resulting gap with DNA, because doing so would require priming even further upstream than any existing sequence, each round of replication therefore shortens the chromosome slightly. This is the **end-replication problem**.
 
 **Telomeres** (repetitive, non-coding DNA sequences capping chromosome ends) buffer this shortening, sacrificing expendable repeat sequence rather than functional genes each division. **Telomerase**, a specialised reverse transcriptase carrying its own built-in RNA template, extends telomeric repeats using that RNA template rather than the chromosome itself, solving the end-replication problem by *not* relying on DNA-templated synthesis at all, sidestepping the primer-removal gap issue entirely.
 
-Telomerase activity is a double-edged biological fact, worth understanding both directions: most normal somatic cells have **low/absent** telomerase activity, so telomeres progressively shorten across successive divisions, eventually triggering replicative senescence (a proposed molecular "aging clock" and tumour-suppressive mechanism, since a senescent cell can no longer divide uncontrollably). Most **cancer cells**, by contrast, reactivate telomerase, achieving effectively unlimited replicative potential — one of the hallmark features distinguishing malignant from normal cell proliferation, and an active area of anticancer drug-target research.
+Telomerase activity is a double-edged biological fact, worth understanding both directions: most normal somatic cells have **low/absent** telomerase activity, so telomeres progressively shorten across successive divisions, eventually triggering replicative senescence (a proposed molecular "aging clock" and tumour-suppressive mechanism, since a senescent cell can no longer divide uncontrollably). Most **cancer cells**, by contrast, reactivate telomerase, achieving effectively unlimited replicative potential, one of the hallmark features distinguishing malignant from normal cell proliferation, and an active area of anticancer drug-target research.
 
 ![Comparison of telomerase-positive vs. telomerase-negative cells' response to a stalled replication fork at the telomere: telomerase-positive cells can resolve the block via fork reversal or direct telomerase-mediated de novo telomere synthesis, while telomerase-negative cells rely on Ku- and Rad51-dependent, recombination-based (ALT-type) telomere synthesis after fork breakage](/MCBBPICS/telomere-shortening-telomerase.jpg)
 *Source: ScienceDirect (research article)*
@@ -61,13 +61,13 @@ Telomerase activity is a double-edged biological fact, worth understanding both 
 | Mismatch repair (MMR) | Replication-derived base mismatches | Single mismatched region | Distinguishing new (error-containing) strand from template |
 | Base excision repair (BER) | Small, single-base chemical damage | Single damaged base | Glycosylase specific to the damaged base |
 | Nucleotide excision repair (NER) | Bulky, helix-distorting lesions (e.g. UV thymine dimers) | Short surrounding segment (~dozen+ nt) | Recognition of helix distortion |
-| Non-homologous end joining (NHEJ) | Double-strand breaks | Direct end ligation | None (no template needed) — error-prone |
+| Non-homologous end joining (NHEJ) | Double-strand breaks | Direct end ligation | None (no template needed), error-prone |
 | Homologous recombination (HR) | Double-strand breaks | Template-guided, high-fidelity | Requires sister chromatid (S/G2 only) |
 
 ## Common Exam Questions
 
-- "Distinguish BER from NER" — always give the *scope and trigger* distinction (single damaged base + glycosylase vs. bulky distortion + wider excision), not simply "they're both excision repair pathways."
-- "Why is NHEJ error-prone but still frequently used?" — the correct answer connects to cell-cycle timing: HR's higher fidelity is only accessible when a sister chromatid template exists (S/G2), so NHEJ remains necessary (despite its error rate) in G1.
+- "Distinguish BER from NER", always give the *scope and trigger* distinction (single damaged base + glycosylase vs. bulky distortion + wider excision), not simply "they're both excision repair pathways."
+- "Why is NHEJ error-prone but still frequently used?", the correct answer connects to cell-cycle timing: HR's higher fidelity is only accessible when a sister chromatid template exists (S/G2), so NHEJ remains necessary (despite its error rate) in G1.
 - "How does telomerase solve the end-replication problem without violating DNA polymerase's normal requirements?": tests whether you understand telomerase brings its *own* RNA template, rather than somehow forcing ordinary DNA polymerase to prime beyond the chromosome end.
 - Loss-of-function disease associations (MMR → Lynch syndrome/HNPCC; NER → xeroderma pigmentosum) are frequently tested as direct pathway-to-disease matching questions.
 
@@ -81,7 +81,7 @@ Telomerase activity is a double-edged biological fact, worth understanding both 
 
 **Static**
 
-*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. The telomere image is a content mismatch — see the inline note; a genuine progressive-shortening-across-cycles diagram is not yet sourced.)*
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. The telomere image is a content mismatch, see the inline note; a genuine progressive-shortening-across-cycles diagram is not yet sourced.)*
 
 ## Practice Problems
 

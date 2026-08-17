@@ -1,7 +1,7 @@
 ---
 title: "Amino Acids & Protein Chemistry Fundamentals"
 weight: 16
-description: "The 20 standard amino acids, their side-chain chemistry and ionization behaviour, pI calculation and titration curves, essential/non-essential classification, transamination and deamination, and the Ramachandran plot — the chemical vocabulary the rest of Biochemistry builds on."
+description: "The 20 standard amino acids, their side-chain chemistry and ionization behaviour, pI calculation and titration curves, essential/non-essential classification, transamination and deamination, and the Ramachandran plot, the chemical vocabulary the rest of Biochemistry builds on."
 difficulty: "beginner"
 prerequisites: ["Cell-Theory-Prokaryotes-Eukaryotes"]
 syllabus_tags: ["IBO", "USABO", "biochemistry"]
@@ -21,7 +21,7 @@ Amino acids are the monomer units of proteins: a central (α) carbon bonded to a
 The 20 R groups sort into four broad chemical classes:
 
 ![General structure of an amino acid: a central α-carbon bonded to an amino group, a carboxyl group, a hydrogen, and the variable R group that distinguishes each of the 20 standard amino acids](/MCBBPICS/Amino_Acid.png)
-*Source: unattributed pre-existing site asset*
+Source: Unknown
 
 - **Nonpolar/aliphatic (9)**: Gly, Ala, Val, Leu, Ile, Pro, Phe, Trp, Met, hydrocarbon chains or aromatic rings that cluster away from water.
 - **Polar neutral**: contain a hydroxyl (Ser, Thr, Tyr), sulfhydryl (Cys), or amide (Asn, Gln) group in the R group.
@@ -29,7 +29,7 @@ The 20 R groups sort into four broad chemical classes:
 - **Polar basic (3)**: Lys, Arg, His, carry an additional amine group; positively charged (Lys, Arg fully; His only partially, pKₐ ≈ 6) at physiological pH.
 
 ![All 20 standard amino acids' chemical structures grouped by class (aliphatic, aromatic, acidic, basic, hydroxylic, sulfur-containing, amidic), each circle color-coded by class and marked solid/dashed for non-essential/essential](/MCBBPICS/Amino_Acid2.png)
-*Source: unattributed pre-existing site asset*
+Source: Unknown
 
 Two exceptions to memorize: **tyrosine** has an aromatic ring *and* a polar –OH, and is conventionally grouped as polar neutral rather than nonpolar; **methionine** contains sulfur, but because sulfur and carbon have almost identical electronegativity, its thioether side chain behaves as nonpolar.
 
@@ -48,7 +48,7 @@ For an amino acid with an ionizable side chain, average the **two pKₐ values t
 **Reading a titration curve**: each inflection point marks a pKₐ; the flat **buffering plateaus** (±1 pH unit around each pKₐ) are where the amino acid best resists pH change, because protonated and deprotonated forms coexist near 1:1. A polyprotic amino acid like lysine shows three inflection points and three buffering plateaus.
 
 ![Titration curve of a Lys-Lys-Lys tripeptide (not free lysine): net charge steps from +4.0 down to −1.0 across four inflection points, α-COOH pKₐ ≈2.2, α-NH₃⁺ pKₐ ≈8.0, the three ε-NH₃⁺ side-chain groups clustering near pKₐ ≈10.5, with pI ≈10.8 marked where net charge crosses zero](/MCBBPICS/LYSINECURVE.png)
-*Source: unattributed pre-existing site asset*
+Source: Unknown
 
 $$ \text{pH} = pK_a + \log\frac{[\text{A}^-]}{[\text{HA}]} \quad \text{(Henderson–Hasselbalch)} $$
 
@@ -93,7 +93,7 @@ Leu and Lys are the *only* exclusively ketogenic amino acids, a frequent exam di
 
 Two reversible modifications regulate protein function, stability, and localisation:
 
-- **Phosphorylation** targets Ser, Thr, Tyr (and His in bacteria) — their nucleophilic –OH (or, for His, imidazole N) groups let kinases attach a phosphate, acting as a reversible on/off switch.
+- **Phosphorylation** targets Ser, Thr, Tyr (and His in bacteria), their nucleophilic –OH (or, for His, imidazole N) groups let kinases attach a phosphate, acting as a reversible on/off switch.
 - **Glycosylation** attaches sugars at two consensus contexts: **N-glycosylation** at Asn in the sequence Asn–X–Ser/Thr (X ≠ Pro), recognised co-translationally by oligosaccharyltransferase; **O-glycosylation** at Ser/Thr in proline-rich regions, added one sugar at a time in the Golgi. Glycans stabilise folding, form protective mucin barriers, and constitute the cell-surface glycocalyx used for self/non-self recognition (including blood-group antigens).
 
 Neither modification has one universal purpose: the functional outcome depends on the specific site, the sugar/phosphate added, and the resulting conformational change.
@@ -108,7 +108,7 @@ Not every combination of the backbone dihedral angles φ (phi) and ψ (psi) arou
 - **Collagen triple helix**: φ ≈ −51°, ψ ≈ +153°
 
 ![Ramachandran plot (φ vs. ψ) for solved structure PDB 1AXC, with favoured (red), allowed (orange), and generously allowed (yellow) regions shaded and the α-helix and β-sheet regions labelled; blue diamonds mark the structure's actual residue angles clustering in the favoured regions](/MCBBPICS/ramchandran.png)
-*Source: unattributed pre-existing site asset*
+Source: Unknown
 
 **Glycine** (no side chain, minimal steric restriction) is the only residue that populates all four quadrants, which is why it appears at tight turns and buried positions. **Proline** (side chain cyclised back onto the backbone nitrogen, fixing φ ≈ −60°, and lacking an amide hydrogen to donate) is confined to a narrow region and cannot participate in α-helix hydrogen bonding. This is the chemical basis for both residues acting as "helix breakers" (see [Protein Structure, Folding & Function](../protein-structure-folding-function/)).
 
@@ -148,7 +148,7 @@ Ionizable-group comparison across the three charged/polar-basic amino acid class
 <details>
 <summary>Show answer</summary>
 
-At low pH all groups are protonated (net charge +2: Arg⁺, N-terminus⁺, plus neutral C-terminus and Glu side chain). Raising pH, the C-terminus deprotonates first (pKₐ 2.1, charge +1), then the Glu side chain (pKₐ 4.1, charge 0) — net charge zero is reached between these two flanking pKₐ values on one side and the still-protonated N-terminus/Arg side chain on the other. The pI lies between the Glu side-chain pKₐ (4.1) and the N-terminus pKₐ (9.5): pI = (4.1 + 9.5)/2 ≈ **6.8**.
+At low pH all groups are protonated (net charge +2: Arg⁺, N-terminus⁺, plus neutral C-terminus and Glu side chain). Raising pH, the C-terminus deprotonates first (pKₐ 2.1, charge +1), then the Glu side chain (pKₐ 4.1, charge 0), net charge zero is reached between these two flanking pKₐ values on one side and the still-protonated N-terminus/Arg side chain on the other. The pI lies between the Glu side-chain pKₐ (4.1) and the N-terminus pKₐ (9.5): pI = (4.1 + 9.5)/2 ≈ **6.8**.
 </details>
 
 **2. Cofactor mechanism.** Pyridoxal phosphate (PLP, active vitamin B₆) is essential for transaminases. What unique chemical feature lets it fill this role?

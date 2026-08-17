@@ -1,7 +1,7 @@
 ---
 title: "Quantitative Genetics, Heritability & Inbreeding"
 weight: 9
-description: "How many genes acting together produce continuously varying (polygenic) traits, how heritability partitions phenotypic variance into genetic and environmental components, and how non-random mating — specifically inbreeding — changes genotype frequencies at a locus without any change in allele frequency at all."
+description: "How many genes acting together produce continuously varying (polygenic) traits, how heritability partitions phenotypic variance into genetic and environmental components, and how non-random mating, specifically inbreeding, changes genotype frequencies at a locus without any change in allele frequency at all."
 difficulty: "advanced"
 prerequisites: ["Extranuclear-Non-Mendelian-Inheritance"]
 syllabus_tags: ["IBO", "USABO", "genetics", "quantitative-genetics"]
@@ -12,7 +12,7 @@ syllabus_tags: ["IBO", "USABO", "genetics", "quantitative-genetics"]
 
 ## Overview
 
-Every trait covered so far has been **discrete**: round or wrinkled, purple or white, affected or unaffected. Many real traits (height, skin color, crop yield, milk production) instead vary **continuously** across a population, because they are controlled by many genes of small individual effect rather than one or two genes of large effect. This page covers how such **polygenic** traits are analyzed genetically, how **heritability** partitions observed phenotypic variation into genetic and environmental sources, and — a related but distinct topic — how **non-random mating**, specifically inbreeding, changes the *distribution* of genotypes in a population without changing allele frequencies at all. This last topic deliberately does not re-derive the Hardy-Weinberg framework itself, covered fully in Evolution's [Population Genetics & Hardy-Weinberg Equilibrium](/resources/15-evolution/population-genetics-hardy-weinberg-equilibrium/), this page covers only the one HWE assumption (random mating) that classical population genetics treats as a simplifying assumption rather than analyzing in depth.
+Every trait covered so far has been **discrete**: round or wrinkled, purple or white, affected or unaffected. Many real traits (height, skin color, crop yield, milk production) instead vary **continuously** across a population, because they are controlled by many genes of small individual effect rather than one or two genes of large effect. This page covers how such **polygenic** traits are analyzed genetically, how **heritability** partitions observed phenotypic variation into genetic and environmental sources, and, a related but distinct topic, how **non-random mating**, specifically inbreeding, changes the *distribution* of genotypes in a population without changing allele frequencies at all. This last topic deliberately does not re-derive the Hardy-Weinberg framework itself, covered fully in Evolution's [Population Genetics & Hardy-Weinberg Equilibrium](/resources/15-evolution/population-genetics-hardy-weinberg-equilibrium/), this page covers only the one HWE assumption (random mating) that classical population genetics treats as a simplifying assumption rather than analyzing in depth.
 
 ## Key Concepts
 
@@ -33,7 +33,7 @@ where V_G is genetic variance and V_E is environmental variance (interaction ter
 
 $$ H^2 = \frac{V_G}{V_P} $$
 
-**Narrow-sense heritability (h²)**, more useful for predicting a trait's response to selective breeding, further partitions genetic variance into **additive** genetic variance (V_A — the component that breeds true and predicts offspring resemblance to parents) versus dominance and epistatic interaction variance (which do not transmit as reliably to offspring):
+**Narrow-sense heritability (h²)**, more useful for predicting a trait's response to selective breeding, further partitions genetic variance into **additive** genetic variance (V_A, the component that breeds true and predicts offspring resemblance to parents) versus dominance and epistatic interaction variance (which do not transmit as reliably to offspring):
 
 {{< eqbox >}}
 $$ h^2 = \frac{V_A}{V_P} $$
@@ -54,7 +54,7 @@ A heritability estimate is **not** a fixed biological constant for a trait: it d
 
 ### Non-random mating: inbreeding
 
-The Hardy-Weinberg model assumes **random mating**; **inbreeding** — mating between relatives more often than random-mating expectation predicts — is the most genetically consequential violation of this assumption. Critically, inbreeding by itself **does not change allele frequencies** in a population; it changes the **distribution of genotypes**, systematically increasing the proportion of homozygotes and decreasing the proportion of heterozygotes relative to Hardy-Weinberg expectation, at every locus simultaneously (not just loci under selection).
+The Hardy-Weinberg model assumes **random mating**; **inbreeding**, mating between relatives more often than random-mating expectation predicts, is the most genetically consequential violation of this assumption. Critically, inbreeding by itself **does not change allele frequencies** in a population; it changes the **distribution of genotypes**, systematically increasing the proportion of homozygotes and decreasing the proportion of heterozygotes relative to Hardy-Weinberg expectation, at every locus simultaneously (not just loci under selection).
 
 The **inbreeding coefficient (F)** quantifies the probability that an individual's two alleles at a given locus are **identical by descent**: both copies of the same specific ancestral allele, inherited via two different paths through a pedigree that eventually converge on a common ancestor. F is calculated from a pedigree by summing, over every path connecting the two parents through each common ancestor:
 
@@ -62,7 +62,7 @@ $$ F = \sum \left(\frac{1}{2}\right)^{n} (1 + F_A) $$
 
 where *n* is the number of individuals in each specific path linking the two parents through one common ancestor (inclusive of both parents and the ancestor), and F_A is the inbreeding coefficient of that common ancestor itself (often approximated as 0 if the ancestor's own ancestry is not inbred). For a full-sibling mating, F = 1/4; for a first-cousin mating, F = 1/16.
 
-![Worked pedigree and path diagram: individuals E and F, related through two common ancestors A and B, each connected by a 4-generation path (E-C-A-D-F and E-C-B-D-F); summing (1/2)⁴ for each path gives a_EF = 1/8, and the inbreeding coefficient of their offspring X is F_x = a_EF / 2 = 1/16 — matching the first-cousin-mating value stated in the text.](/GENETICSPICS/inbreeding-coefficient-pedigree-path-diagram.png)
+![Worked pedigree and path diagram: individuals E and F, related through two common ancestors A and B, each connected by a 4-generation path (E-C-A-D-F and E-C-B-D-F); summing (1/2)⁴ for each path gives a_EF = 1/8, and the inbreeding coefficient of their offspring X is F_x = a_EF / 2 = 1/16, matching the first-cousin-mating value stated in the text.](/GENETICSPICS/inbreeding-coefficient-pedigree-path-diagram.png)
 *Source: ihh.kvl.dk*
 
 Inbreeding's genotype-frequency consequence at a single locus: starting from allele frequencies p and q, the expected genotype frequencies become **p² + Fpq** (homozygote AA), **2pq(1−F)** (heterozygote Aa), and **q² + Fpq** (homozygote aa), visibly reducing to the standard Hardy-Weinberg p²:2pq:q² when F = 0.
@@ -72,7 +72,7 @@ Inbreeding's genotype-frequency consequence at a single locus: starting from all
 
 ### Inbreeding depression
 
-**Inbreeding depression** is the reduced fitness (survival, fertility, growth) commonly observed in inbred offspring, arising because increased homozygosity raises the chance that **rare, deleterious recessive alleles** — normally masked in the heterozygous state in an outbred population — are exposed in the homozygous state. This is the practical, fitness-level consequence of the purely statistical genotype-frequency shift described above, and the reason natural and captive-breeding-program management alike actively work to avoid close inbreeding in small populations.
+**Inbreeding depression** is the reduced fitness (survival, fertility, growth) commonly observed in inbred offspring, arising because increased homozygosity raises the chance that **rare, deleterious recessive alleles**, normally masked in the heterozygous state in an outbred population, are exposed in the homozygous state. This is the practical, fitness-level consequence of the purely statistical genotype-frequency shift described above, and the reason natural and captive-breeding-program management alike actively work to avoid close inbreeding in small populations.
 
 ### Assortative mating
 
@@ -106,7 +106,7 @@ Inbreeding's genotype-frequency consequence at a single locus: starting from all
 
 {{< iframe src="/polygenic-distribution-simulator.html" title="Polygenic trait distribution simulator" height="500px" >}}
 
-*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. One item is only partially fulfilled: the Hardy-Weinberg-vs-inbred genotype-frequency comparison shows the HWE baseline only, not the inbred-population contrast — see the inline note above.)*
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. One item is only partially fulfilled: the Hardy-Weinberg-vs-inbred genotype-frequency comparison shows the HWE baseline only, not the inbred-population contrast, see the inline note above.)*
 
 ## Practice Problems
 

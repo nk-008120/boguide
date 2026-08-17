@@ -1,7 +1,7 @@
 ---
 title: "Translation & the Genetic Code"
 weight: 12
-description: "The properties of the genetic code, tRNA structure and charging, ribosome structure, the three stages of translation, and post-translational modification — how an mRNA sequence becomes a functional polypeptide."
+description: "The properties of the genetic code, tRNA structure and charging, ribosome structure, the three stages of translation, and post-translational modification, how an mRNA sequence becomes a functional polypeptide."
 difficulty: "advanced"
 prerequisites: ["Transcription-RNA-Processing"]
 syllabus_tags: ["IBO", "USABO", "molecular-biology"]
@@ -30,7 +30,7 @@ The genetic code maps 64 possible **codons** (three-nucleotide sequences) to 20 
 
 ### Open reading frames (ORFs)
 
-An **open reading frame (ORF)** is a continuous stretch of codons, beginning with a start codon (AUG) and ending with a stop codon, uninterrupted by a stop codon in between: the sequence that, if translated, would produce a complete polypeptide. An ORF is a property of the **nucleotide sequence** (mRNA, or genomic DNA when scanned computationally, as in the ORF-finding tools covered in [Bioinformatics](/resources/10-bioinformatics/)); a protein's **primary structure** (see [Protein Structure, Folding & Function](../protein-structure-folding-function/)) is the actual linear amino acid sequence that results once that ORF is translated. The relationship is direct and one-directional under normal translation: a valid ORF, read through the genetic code, *specifies* a unique primary structure — but the ORF itself is nucleic acid information, while primary structure is the realised polypeptide product; the two are related exactly the way a recipe (ORF) is related to the finished dish (primary structure), not interchangeable terms for the same thing.
+An **open reading frame (ORF)** is a continuous stretch of codons, beginning with a start codon (AUG) and ending with a stop codon, uninterrupted by a stop codon in between: the sequence that, if translated, would produce a complete polypeptide. An ORF is a property of the **nucleotide sequence** (mRNA, or genomic DNA when scanned computationally, as in the ORF-finding tools covered in [Bioinformatics](/resources/10-bioinformatics/)); a protein's **primary structure** (see [Protein Structure, Folding & Function](../protein-structure-folding-function/)) is the actual linear amino acid sequence that results once that ORF is translated. The relationship is direct and one-directional under normal translation: a valid ORF, read through the genetic code, *specifies* a unique primary structure, but the ORF itself is nucleic acid information, while primary structure is the realised polypeptide product; the two are related exactly the way a recipe (ORF) is related to the finished dish (primary structure), not interchangeable terms for the same thing.
 
 ### tRNA: the adaptor molecule
 
@@ -43,7 +43,7 @@ An **open reading frame (ORF)** is a continuous stretch of codons, beginning wit
 
 ### Ribosome structure
 
-The ribosome is a ribozyme-containing ribonucleoprotein complex (rRNA plus protein) with two subunits — **small** (reads and verifies codon-anticodon pairing) and **large** (contains the peptidyl transferase catalytic centre that forms peptide bonds, notably, this catalytic activity is carried out by rRNA itself, not a protein, making peptide bond formation a ribozyme-catalysed reaction) — that assemble on the mRNA only during active translation. Three functional tRNA-binding sites span both subunits: the **A (aminoacyl) site** receives each incoming charged tRNA, the **P (peptidyl) site** holds the tRNA carrying the growing polypeptide chain, and the **E (exit) site** is where the now-uncharged tRNA sits briefly before release.
+The ribosome is a ribozyme-containing ribonucleoprotein complex (rRNA plus protein) with two subunits, **small** (reads and verifies codon-anticodon pairing) and **large** (contains the peptidyl transferase catalytic centre that forms peptide bonds, notably, this catalytic activity is carried out by rRNA itself, not a protein, making peptide bond formation a ribozyme-catalysed reaction), that assemble on the mRNA only during active translation. Three functional tRNA-binding sites span both subunits: the **A (aminoacyl) site** receives each incoming charged tRNA, the **P (peptidyl) site** holds the tRNA carrying the growing polypeptide chain, and the **E (exit) site** is where the now-uncharged tRNA sits briefly before release.
 
 ![Ribosome elongation cycle across the E/P/A sites: (a) peptide bond formation between the P-site peptidyl-tRNA and A-site aminoacyl-tRNA, (b) the resulting state with tRNAs in E and P/A, (c) eEF2-GTP-driven translocation shifting tRNAs to E and P and opening the A site, (d) eEF1A-GTP-mediated binding of the next aminoacyl-tRNA into the A site, restarting the cycle](/MCBBPICS/ribosome-a-p-e-sites-elongation.jpg)
 *Source: ScienceDirect Topics ("E site")*
@@ -52,7 +52,7 @@ The ribosome is a ribozyme-containing ribonucleoprotein complex (rRNA plus prote
 
 1. **Initiation**: the small ribosomal subunit, together with an initiator tRNA (charged with methionine in eukaryotes), assembles at the mRNA's start codon (AUG): in eukaryotes, this typically involves the small subunit binding near the 5′ cap (see [Transcription & RNA Processing](../transcription-rna-processing/)) and scanning downstream to locate the first AUG; the large subunit then joins to complete an assembled ribosome, with the initiator tRNA positioned in the P site.
 2. **Elongation**: a charged tRNA matching the next codon enters the A site; the ribosome catalyses peptide bond formation between the A-site amino acid and the growing chain held in the P site; the ribosome then **translocates** one codon along the mRNA, shifting the tRNAs from A→P and P→E, freeing the A site for the next incoming charged tRNA. This cycle repeats codon by codon.
-3. **Termination**: when a stop codon (UAA, UAG, UGA — none of which are recognised by any tRNA) enters the A site, a **release factor** binds instead, triggering hydrolysis of the completed polypeptide from the final tRNA and disassembly of the ribosomal complex.
+3. **Termination**: when a stop codon (UAA, UAG, UGA, none of which are recognised by any tRNA) enters the A site, a **release factor** binds instead, triggering hydrolysis of the completed polypeptide from the final tRNA and disassembly of the ribosomal complex.
 
 ### Post-translational modification, revisited
 
@@ -70,8 +70,8 @@ The newly synthesised polypeptide is not necessarily functional immediately: fol
 
 ## Common Exam Questions
 
-- "Why is a frameshift mutation typically more disruptive than a point substitution?": the correct answer must invoke the non-overlapping, fixed-reading-frame property of the code — every downstream codon changes, not just one.
-- "Where is translation fidelity actually enforced, given the ribosome cannot check whether a charged tRNA carries the 'right' amino acid?" — tests understanding that fidelity is enforced upstream, at the aminoacyl-tRNA synthetase charging step, not at the ribosome itself.
+- "Why is a frameshift mutation typically more disruptive than a point substitution?": the correct answer must invoke the non-overlapping, fixed-reading-frame property of the code, every downstream codon changes, not just one.
+- "Where is translation fidelity actually enforced, given the ribosome cannot check whether a charged tRNA carries the 'right' amino acid?", tests understanding that fidelity is enforced upstream, at the aminoacyl-tRNA synthetase charging step, not at the ribosome itself.
 - "What is the relationship between an ORF and a protein's primary structure?": the correct answer distinguishes the *nucleic acid sequence property* (ORF) from the *resulting polypeptide* (primary structure), rather than treating the two terms as synonyms.
 - "Why does wobble pairing matter?": explains why fewer than 61 distinct tRNA species can still read all 61 sense codons, concentrated at the third codon position.
 
@@ -94,7 +94,7 @@ The newly synthesised polypeptide is not necessarily functional immediately: fol
 <details>
 <summary>Show answer</summary>
 
-An open reading frame (ORF) is a property of a nucleotide sequence: a continuous stretch of codons from a start codon to an in-frame stop codon, uninterrupted by any stop codon in between. Primary structure is the resulting linear amino acid sequence of the actual translated polypeptide. The relationship is that of a template to its product: translating a valid ORF through the genetic code directly specifies a unique primary structure, but the two are not the same kind of object — an ORF is nucleic acid sequence information, while primary structure is the realised polypeptide chain that results from decoding it.
+An open reading frame (ORF) is a property of a nucleotide sequence: a continuous stretch of codons from a start codon to an in-frame stop codon, uninterrupted by any stop codon in between. Primary structure is the resulting linear amino acid sequence of the actual translated polypeptide. The relationship is that of a template to its product: translating a valid ORF through the genetic code directly specifies a unique primary structure, but the two are not the same kind of object, an ORF is nucleic acid sequence information, while primary structure is the realised polypeptide chain that results from decoding it.
 </details>
 
 **2.** A single-nucleotide substitution changes a codon from GAA (Glu) to GAG. Predict the effect on the resulting protein, and name this category of mutation.

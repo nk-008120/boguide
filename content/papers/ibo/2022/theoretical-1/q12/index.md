@@ -1,15 +1,15 @@
 ---
-title: "Q12 — iPSC/hESC Cardiomyocyte Grafts After Myocardial Infarction"
+title: "Q12 - iPSC/hESC Cardiomyocyte Grafts After Myocardial Infarction"
 ---
 
-{{< problem-meta category="Theoretical 1" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/">Recombinant DNA & Biotechnology Techniques</a>
   <a class="papers-subject-tag" href="/resources/3-animal-physiology/cardiovascular-physiology/">Cardiovascular Physiology</a>
 </div>
 
-Groundbreaking studies by Shinya Yamanaka's group broke the long-standing dogma that differentiated adult cells cannot return to their embryonic state. The creation of induced pluripotent stem cells (iPSCs) offers hope that damaged organs can be repaired by a patient's own cells. Multiple labs are working on therapies using patient-specific iPSC or immortalized human embryonic stem cell (hESC) lines — including pluripotent stem cell-derived cardiomyocyte grafts to re-muscularize scar tissue after myocardial infarction.
+Groundbreaking studies by Shinya Yamanaka's group broke the long-standing dogma that differentiated adult cells cannot return to their embryonic state. The creation of induced pluripotent stem cells (iPSCs) offers hope that damaged organs can be repaired by a patient's own cells. Multiple labs are working on therapies using patient-specific iPSC or immortalized human embryonic stem cell (hESC) lines - including pluripotent stem cell-derived cardiomyocyte grafts to re-muscularize scar tissue after myocardial infarction.
 
 ![Figure 1. Cross-sections of the ventricular wall of an infarcted heart from a sham-treated monkey.](/papers/ibo/2022/q12-figure-1.png)
 *Fig. 1. Cross-section of the ventricular wall of an infarcted heart from a sham-treated monkey.*
@@ -24,4 +24,4 @@ Using the information and figures, determine whether the following statements ar
 
 ---
 
-Question reproduced from **IBO 2022, Theoretical Paper 1**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2022/theoretical-1-exam.pdf#page=18) · [Community solutions (unofficial)](/papers/ibo/2022/theoretical-1-solutions.pdf)
+Question reproduced from **IBO 2022, Theoretical Paper 1**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2022/theoretical-1-exam.pdf#page=18) · [Community solutions (unofficial)](/papers/ibo/2022/theoretical-1-solutions.pdf)

@@ -27,7 +27,7 @@
 
 	<meta itemprop="name" content="Phylogenetic Trees & Cladistics">
 	<meta itemprop="description" content="Reading and building cladograms: synapomorphy vs. plesiomorphy, monophyly/paraphyly/polyphyly, outgroup selection, the parsimony principle, and the structural conventions (nodes, branches, polytomies) that let a tree encode a specific evolutionary hypothesis rather than just a diagram.">
-	<meta itemprop="wordCount" content="1531">
+	<meta itemprop="wordCount" content="1525">
 	<meta itemprop="image" content="http://localhost:1313/og-default.png">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:image" content="http://localhost:1313/og-default.png">
@@ -1890,7 +1890,7 @@
     href="../molecular-systematics/">Molecular Systematics</a> extends this to DNA/protein sequence data and statistical tree-building methods; this page covers the character-based logic that underlies all of it, whether the characters are morphological or molecular.</p>
 <h2>Key Concepts<span class="hx:absolute hx:-mt-20" id="key-concepts"></span>
     <a href="#key-concepts" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><h3>Character States and Homology<span class="hx:absolute hx:-mt-20" id="character-states-and-homology"></span>
-    <a href="#character-states-and-homology" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>A cladistic analysis starts from a <strong>character matrix</strong>: a table of taxa (rows) against characters (columns — a trait that can take more than one state, e.g. &ldquo;number of limbs,&rdquo; &ldquo;presence of amniotic membrane&rdquo;), each cell filled with that taxon&rsquo;s <strong>character state</strong>. Only <strong>homologous</strong> characters (traits shared due to common ancestry, not independently evolved) are valid for building a tree. A trait that arose independently in two unrelated lineages is <strong>analogous</strong> (or, more precisely for phylogenetics, <strong>homoplasious</strong>), and including it as if it were homologous actively corrupts the resulting tree. Wings in birds and wings in insects are the classic case: both fly, neither wing is inherited from a shared winged ancestor, so treating &ldquo;has wings&rdquo; as one shared character would incorrectly group birds with insects.</p>
+    <a href="#character-states-and-homology" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>A cladistic analysis starts from a <strong>character matrix</strong>: a table of taxa (rows) against characters (columns, a trait that can take more than one state, e.g. &ldquo;number of limbs,&rdquo; &ldquo;presence of amniotic membrane&rdquo;), each cell filled with that taxon&rsquo;s <strong>character state</strong>. Only <strong>homologous</strong> characters (traits shared due to common ancestry, not independently evolved) are valid for building a tree. A trait that arose independently in two unrelated lineages is <strong>analogous</strong> (or, more precisely for phylogenetics, <strong>homoplasious</strong>), and including it as if it were homologous actively corrupts the resulting tree. Wings in birds and wings in insects are the classic case: both fly, neither wing is inherited from a shared winged ancestor, so treating &ldquo;has wings&rdquo; as one shared character would incorrectly group birds with insects.</p>
 <h3>Plesiomorphy vs. Synapomorphy<span class="hx:absolute hx:-mt-20" id="plesiomorphy-vs-synapomorphy"></span>
     <a href="#plesiomorphy-vs-synapomorphy" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Every character state is classified relative to the group being analyzed:</p>
 <ul>
@@ -1922,7 +1922,7 @@
 			<tr>
 					<td><strong>Polyphyletic</strong></td>
 					<td>A group that excludes the most recent common ancestor of its members (typically united by convergent, not inherited, traits)</td>
-					<td>&ldquo;Warm-blooded animals&rdquo; (mammals + birds) — the two lineages&rsquo; most recent common ancestor was not warm-blooded</td>
+					<td>&ldquo;Warm-blooded animals&rdquo; (mammals + birds), the two lineages&rsquo; most recent common ancestor was not warm-blooded</td>
 			</tr>
 	</tbody>
 </table>
@@ -1938,7 +1938,7 @@
     N2[&#34;Node 2&lt;br/&gt;defined by Synapomorphy B&#34;] --&gt; TAXON_B[&#34;Taxon B&lt;br/&gt;(has A + B)&#34;];
     N2 --&gt; TAXON_A[&#34;Taxon A&lt;br/&gt;(has A + B + C, most derived)&#34;];
   </pre>
-</div><p>Structural vocabulary this diagram illustrates: a <strong>node</strong> represents a hypothesized common ancestor (and the point where a synapomorphy first arose); a <strong>branch (lineage)</strong> connects nodes/taxa across time; a <strong>clade</strong> is any node plus everything branching from it; a <strong>polytomy</strong> is a node with more than two branches emerging, used when the data don&rsquo;t resolve the branching order among three or more lineages (an honest &ldquo;unresolved&rdquo; mark, not a claim that three lineages literally split simultaneously). Branch <em>length</em> in a basic cladogram carries no time or distance information; it is purely a branching-order diagram; a <strong>phylogram</strong> (branch lengths scaled to amount of evolutionary change) and a <strong>chronogram/timetree</strong> (branch lengths scaled to elapsed time, usually calibrated using the molecular clock — see <a
+</div><p>Structural vocabulary this diagram illustrates: a <strong>node</strong> represents a hypothesized common ancestor (and the point where a synapomorphy first arose); a <strong>branch (lineage)</strong> connects nodes/taxa across time; a <strong>clade</strong> is any node plus everything branching from it; a <strong>polytomy</strong> is a node with more than two branches emerging, used when the data don&rsquo;t resolve the branching order among three or more lineages (an honest &ldquo;unresolved&rdquo; mark, not a claim that three lineages literally split simultaneously). Branch <em>length</em> in a basic cladogram carries no time or distance information; it is purely a branching-order diagram; a <strong>phylogram</strong> (branch lengths scaled to amount of evolutionary change) and a <strong>chronogram/timetree</strong> (branch lengths scaled to elapsed time, usually calibrated using the molecular clock, see <a
     href="../molecular-systematics/">Molecular Systematics</a>) are related but distinct tree types worth telling apart on sight.</p>
 <h3>The Outgroup<span class="hx:absolute hx:-mt-20" id="the-outgroup"></span>
     <a href="#the-outgroup" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Determining which character states are ancestral versus derived (<strong>polarizing</strong> the characters) requires an external point of reference: the <strong>outgroup</strong>, a taxon or group known (from independent evidence) to have branched off <em>before</em> the common ancestor of the taxa being studied (the <strong>ingroup</strong>). Whatever character state the outgroup has is inferred to be the ancestral state for the whole analysis; any ingroup taxon differing from the outgroup state is inferred to carry the derived state. Outgroup choice matters enormously: too distant an outgroup shares too few comparable characters to be useful; too close an outgroup risks actually belonging inside the ingroup, corrupting the polarity calls for every character it&rsquo;s used to root.</p>
@@ -1972,7 +1972,7 @@
 			<tr>
 					<td>Homoplasy (convergence)</td>
 					<td>Appears shared, but not inherited from a common ancestor</td>
-					<td>No — actively misleading if included</td>
+					<td>No, actively misleading if included</td>
 			</tr>
 	</tbody>
 </table>
@@ -1988,10 +1988,10 @@
 <h2>Visual Reference<span class="hx:absolute hx:-mt-20" id="visual-reference"></span>
     <a href="#visual-reference" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p><strong>Interactive</strong></p>
 <ul>
-<li><strong>Character matrix → cladogram builder (interactive SVG/JS, no new library)</strong> — the user is given a small character matrix (4-6 taxa, 4-6 binary characters) and an outgroup, and drags taxa into a tree structure; the tool tallies the total number of character-state changes required by the user&rsquo;s tree versus the true most-parsimonious tree, letting the user directly discover why one arrangement beats another rather than being told the answer.
+<li><strong>Character matrix → cladogram builder (interactive SVG/JS, no new library)</strong>, the user is given a small character matrix (4-6 taxa, 4-6 binary characters) and an outgroup, and drags taxa into a tree structure; the tool tallies the total number of character-state changes required by the user&rsquo;s tree versus the true most-parsimonious tree, letting the user directly discover why one arrangement beats another rather than being told the answer.
 <iframe src="/cladogram-builder.html" title="Character Matrix → Cladogram Builder" loading="lazy" style="width: 100%; height: 480px; border: none;" allow="fullscreen"></iframe>
 </li>
-<li><strong>Monophyly/paraphyly/polyphyly classifier (click-through quiz, HTML/JS)</strong> — presented with a series of pre-drawn trees, each with a shaded group of taxa, the user classifies the shaded group as mono-, para-, or polyphyletic and receives immediate feedback with the specific missing/excluded lineage highlighted when wrong.
+<li><strong>Monophyly/paraphyly/polyphyly classifier (click-through quiz, HTML/JS)</strong>, presented with a series of pre-drawn trees, each with a shaded group of taxa, the user classifies the shaded group as mono-, para-, or polyphyletic and receives immediate feedback with the specific missing/excluded lineage highlighted when wrong.
 <iframe src="/clade-classifier-quiz.html" title="Monophyly / Paraphyly / Polyphyly Classifier" loading="lazy" style="width: 100%; height: 620px; border: none;" allow="fullscreen"></iframe>
 </li>
 </ul>

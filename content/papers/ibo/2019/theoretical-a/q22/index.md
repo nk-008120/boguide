@@ -1,8 +1,8 @@
 ---
-title: "Q22 — What Limits the Height of the Tallest Trees?"
+title: "Q22 - What Limits the Height of the Tallest Trees?"
 ---
 
-{{< problem-meta category="Theoretical A" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 {{< mathjax >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
@@ -16,7 +16,7 @@ To understand the relationship between different factors and tree height, *Sequo
 
 Pictures of leaves were taken at different heights (numbers are metres of height of sampling):
 
-![A row of leaf/frond samples photographed at increasing sampling heights (2, 35, 45, 55, 65, 75, 85, 95, 105, 112 m), showing a clear size gradient — large, broad, elongated leaves at low heights (2m, 35m) shrinking progressively to short, stubby, densely-needled leaves at the greatest heights (95-112m).](/papers/ibo/2019/q22-figure-2.png)
+![A row of leaf/frond samples photographed at increasing sampling heights (2, 35, 45, 55, 65, 75, 85, 95, 105, 112 m), showing a clear size gradient - large, broad, elongated leaves at low heights (2m, 35m) shrinking progressively to short, stubby, densely-needled leaves at the greatest heights (95-112m).](/papers/ibo/2019/q22-figure-2.png)
 *Fig.2. Leaf morphology at different sampling heights (m).*
 
 Model equations were constructed to predict how different variables influence the maximum height of trees (ψ = leaf water potential; LMA = Leaf Mass:Area ratio; "maximum height", h, in the equations refers to the maximum height in metres predicted by the equations, values not shown):
@@ -30,4 +30,4 @@ Model equations were constructed to predict how different variables influence th
 
 ---
 
-Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=37) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)
+Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=37) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)

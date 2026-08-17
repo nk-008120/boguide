@@ -1,7 +1,7 @@
 ---
 title: "Comparative Osmoregulation & Excretion"
 weight: 10
-description: "Worked osmoregulatory solutions across environments: marine bony fish ion excretion, elasmobranch urea retention, freshwater fish ion uptake, insect Malpighian tubules, marine bird salt glands, and desert mammal kidney adaptations — the taxon-specific mechanisms previewed on the Homeostasis & Osmoregulation page."
+description: "Worked osmoregulatory solutions across environments: marine bony fish ion excretion, elasmobranch urea retention, freshwater fish ion uptake, insect Malpighian tubules, marine bird salt glands, and desert mammal kidney adaptations, the taxon-specific mechanisms previewed on the Homeostasis & Osmoregulation page."
 difficulty: "advanced"
 prerequisites: ["Homeostasis-Osmoregulation"]
 syllabus_tags: ["IBO", "USABO", "comparative-physiology"]
@@ -28,15 +28,15 @@ Sharks and rays face the same hypoosmotic-to-seawater problem as bony fish but s
 
 ### Freshwater Fish: Hyperosmotic to Fresh Water
 
-A freshwater fish's blood is far more concentrated than its surroundings, so it continuously gains water osmotically and loses ions by diffusion — the reverse problem to marine bony fish. Its solution: **never drink** (would worsen the water-gain problem), excrete large volumes of dilute urine (kidneys with numerous, well-developed glomeruli built for high filtration rate rather than concentration), and actively absorb ions via the same gill chloride cells used by marine fish, but running in reverse (actively importing, not exporting, Na⁺/Cl⁻ from the dilute surrounding water).
+A freshwater fish's blood is far more concentrated than its surroundings, so it continuously gains water osmotically and loses ions by diffusion, the reverse problem to marine bony fish. Its solution: **never drink** (would worsen the water-gain problem), excrete large volumes of dilute urine (kidneys with numerous, well-developed glomeruli built for high filtration rate rather than concentration), and actively absorb ions via the same gill chloride cells used by marine fish, but running in reverse (actively importing, not exporting, Na⁺/Cl⁻ from the dilute surrounding water).
 
 ### Amphibians: Semi-Permeable Skin
 
-Amphibian skin (see [Fish & Amphibian Anatomy](../../2-animal-anatomy/fish-amphibian-anatomy/)) is highly permeable to water, tying an amphibian's water balance tightly to its immediate environment — a direct structural constraint on habitat range. Many amphibians produce dilute urine and actively reabsorb ions across the skin itself (not just the kidney), and terrestrial/desert-adapted species (e.g., spadefoot toads) survive extended dry periods via **estivation** (a dormant, metabolically depressed state, the warm/dry-season counterpart to hibernation, detailed on the [Comparative Thermoregulation](../comparative-thermoregulation/) page) combined with a large urinary bladder that stores dilute urine as a water reserve to draw on osmotically during dormancy.
+Amphibian skin (see [Fish & Amphibian Anatomy](../../2-animal-anatomy/fish-amphibian-anatomy/)) is highly permeable to water, tying an amphibian's water balance tightly to its immediate environment, a direct structural constraint on habitat range. Many amphibians produce dilute urine and actively reabsorb ions across the skin itself (not just the kidney), and terrestrial/desert-adapted species (e.g., spadefoot toads) survive extended dry periods via **estivation** (a dormant, metabolically depressed state, the warm/dry-season counterpart to hibernation, detailed on the [Comparative Thermoregulation](../comparative-thermoregulation/) page) combined with a large urinary bladder that stores dilute urine as a water reserve to draw on osmotically during dormancy.
 
 ### Insects: Malpighian Tubules
 
-Insects use an excretory system structurally unrelated to the vertebrate nephron: blind-ended **Malpighian tubules** project into the hemocoel (open circulatory body cavity) and actively secrete K⁺ (and with it, by electrochemical coupling, water and nitrogenous waste, chiefly **uric acid** — see [Homeostasis & Osmoregulation](../homeostasis-osmoregulation/) for why uric acid specifically suits water-limited/flying animals) into the tubule lumen; this fluid drains into the hindgut, where the **rectum** actively reabsorbs most of the water and ions, leaving a nearly dry uric acid paste for excretion. This two-stage secretion-then-reabsorption strategy (rather than the vertebrate filtration-then-reabsorption strategy) achieves the same functional outcome (concentrated waste, conserved water) via a structurally independent evolutionary solution, a strong example of convergent function without homologous structure.
+Insects use an excretory system structurally unrelated to the vertebrate nephron: blind-ended **Malpighian tubules** project into the hemocoel (open circulatory body cavity) and actively secrete K⁺ (and with it, by electrochemical coupling, water and nitrogenous waste, chiefly **uric acid**, see [Homeostasis & Osmoregulation](../homeostasis-osmoregulation/) for why uric acid specifically suits water-limited/flying animals) into the tubule lumen; this fluid drains into the hindgut, where the **rectum** actively reabsorbs most of the water and ions, leaving a nearly dry uric acid paste for excretion. This two-stage secretion-then-reabsorption strategy (rather than the vertebrate filtration-then-reabsorption strategy) achieves the same functional outcome (concentrated waste, conserved water) via a structurally independent evolutionary solution, a strong example of convergent function without homologous structure.
 
 ![Insect excretory pathway: the Malpighian tubule actively secretes organic anions/cations and K+/Cl-/Na+/H2O (isosmotic to hemolymph) at the midgut junction; fluid passes through the anterior hindgut (some KCl and water reabsorbed) into the rectum (most water, ion, and metabolite reabsorption), producing a final hyperosmotic or hyposmotic excreta](/ANIMALPHYSIOPICS/malpighian-tubule-rectum-excretion.png)
 *Source: ScienceDirect (book chapter, Advances in Insect Physiology series)*
@@ -45,7 +45,7 @@ Insects use an excretory system structurally unrelated to the vertebrate nephron
 
 Marine birds and reptiles (see [Reptile & Bird Anatomy](../../2-animal-anatomy/reptile-bird-anatomy/)) drink seawater but, unlike marine bony fish, lack gill chloride cells to excrete the resulting ion load, and their kidneys (producing uric-acid-based, water-conserving waste, per the general trade-off on the Homeostasis page) are not well suited to rapidly excreting large ion loads either. Their solution is a dedicated **nasal (supraorbital) salt gland**, structurally and functionally independent of the kidney, that actively secretes a highly concentrated NaCl solution (well above seawater concentration) via a countercurrent-multiplier-like mechanism directly analogous in principle, though separate in structure, to the mammalian kidney's own countercurrent multiplier (see [Homeostasis & Osmoregulation](../homeostasis-osmoregulation/)), another case of convergent mechanism (steep counter-flow concentration gradients) solving analogous problems in structurally distinct organs.
 
-![Marine bird salt gland: (A) gland location above the eye, draining via a duct to the nostril; (B) a single gland lobe's countercurrent arrangement — capillary blood flow runs counter to secretory tubule flow, both radiating from a central duct; (C) at the cellular level, blood-side Na+/Cl- is actively transported into the secretory tubule lumen, concentrating the secreted fluid above blood/seawater osmolarity](/ANIMALPHYSIOPICS/marine-bird-salt-gland.jpg)
+![Marine bird salt gland: (A) gland location above the eye, draining via a duct to the nostril; (B) a single gland lobe's countercurrent arrangement, capillary blood flow runs counter to secretory tubule flow, both radiating from a central duct; (C) at the cellular level, blood-side Na+/Cl- is actively transported into the secretory tubule lumen, concentrating the secreted fluid above blood/seawater osmolarity](/ANIMALPHYSIOPICS/marine-bird-salt-gland.jpg)
 *Source: avesbiology.com*
 
 ### Desert Mammals: The Kangaroo Rat
@@ -83,11 +83,11 @@ The kangaroo rat survives with no drinking water at all, relying entirely on **m
 
 {{< iframe src="/osmoregulation-strategy-selector.html" title="Osmoregulation strategy selector" height="500px" >}}
 
-- **Loop of Henle length comparator (SVG/JS, slider)** — a slider adjusting relative loop-of-Henle length between a generic mammal and a kangaroo-rat-like profile, with a linked readout of maximum achievable urine concentration, directly visualizing the length-to-concentrating-power relationship introduced qualitatively above.
+- **Loop of Henle length comparator (SVG/JS, slider)**, a slider adjusting relative loop-of-Henle length between a generic mammal and a kangaroo-rat-like profile, with a linked readout of maximum achievable urine concentration, directly visualizing the length-to-concentrating-power relationship introduced qualitatively above.
 
 {{< iframe src="/loop-of-henle-length-comparator.html" title="Loop of Henle length comparator" height="440px" >}}
 
-**Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here — no image was found for elasmobranch blood/seawater osmolarity; that comparison remains text-only)*
+**Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here, no image was found for elasmobranch blood/seawater osmolarity; that comparison remains text-only)*
 
 ## Practice Problems
 

@@ -1,14 +1,14 @@
 ---
-title: "Q48 — mRNA Nucleotide Modifications and Vaccine Design"
+title: "Q48 - mRNA Nucleotide Modifications and Vaccine Design"
 ---
 
-{{< problem-meta category="Theoretical B" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/3-animal-physiology/immune-physiology/">Immune Physiology</a>
 </div>
 
-An mRNA vaccine is a type of vaccine where a pathogenic antigen is encoded in an mRNA sequence. Upon delivery to the human body, cells translate this mRNA and make protein antigens — examples of mRNA vaccines include vaccines developed against the SARS-CoV-2 virus.
+An mRNA vaccine is a type of vaccine where a pathogenic antigen is encoded in an mRNA sequence. Upon delivery to the human body, cells translate this mRNA and make protein antigens - examples of mRNA vaccines include vaccines developed against the SARS-CoV-2 virus.
 
 Before the development of mRNA vaccines, various forms of RNA nucleotide modifications had been tested for the immunogenic potential of mRNA itself (Figure 1). Note that under normal physiological conditions, RNA can exist outside cells in body fluids.
 
@@ -23,4 +23,4 @@ On your answer sheet, indicate "T" for true statements and "F" for false ones.
 
 ---
 
-Question reproduced from **IBO 2024, Theoretical Exam Part B**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2024/theoretical-b-exam.pdf#page=73)
+Question reproduced from **IBO 2024, Theoretical Exam Part B**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2024/theoretical-b-exam.pdf#page=73)

@@ -53,7 +53,7 @@ Each tab covers one level of organisation:
 2. **[Khan Academy Ecology](https://www.khanacademy.org/science/ap-biology/ecology-ap)**, free, well-structured, covers most subtopics
 3. **[Crash Course Ecology playlist](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNdTKZkV_GiIYXpV9w4WxbX)** (12 videos, ~30 min total), excellent for visual learners
 4. **[ESA Ecology 101](https://www.esa.org/education/resources/)**: Ecological Society of America free resources
-5. **PopEcol simulator** ([popeco.shinyapps.io/PopEcol](https://popeco.shinyapps.io/PopEcol/)) — interactive logistic growth and Lotka-Volterra
+5. **PopEcol simulator** ([popeco.shinyapps.io/PopEcol](https://popeco.shinyapps.io/PopEcol/)), interactive logistic growth and Lotka-Volterra
 6. For some non-routine interested explorers: <a href="https://www.youtube.com/@PrimerBlobs">**Primer Blobs**</a> A mesmerizing channel
 7. **Grade S Book - Ecological principles by Smith and Smith**
 
@@ -125,7 +125,7 @@ $$t_{double} = \frac{\ln 2}{r} \approx \frac{0.693}{r}$$
 
   <div id="plotly-div" style="width:100%; height:500px;"></div>
   <div style="font-size:0.75rem; color:#6b7280; text-align:center; margin-top:1rem; border-top:1px solid #e2e8f0; padding-top:0.8rem;">
-    <span id="doublingInfo">Doubling time <span id="tdValue">—</span></span><br>
+    <span id="doublingInfo">Doubling time <span id="tdValue">-</span></span><br>
     ⚡ Continuous: \( N(t) = N_0 e^{rt} \) &nbsp;&nbsp;|&nbsp;&nbsp; Discrete: \( N_t = N_0 (1+r)^t \) (integer time steps)
   </div>
 </div>
@@ -337,7 +337,7 @@ The term $\left(\frac{K-N}{K}\right)$ is the **unused fraction of carrying capac
   <div id="logistic-plot-div" style="width:100%; height:500px;"></div>
   <div style="font-size:0.75rem; color:#6b7280; text-align:center; margin-top:1rem; border-top:1px solid #e2e8f0; padding-top:0.8rem;">
     <span>Continuous: \( \frac{dN}{dt} = rN(1-N/K) \) &nbsp;&nbsp;|&nbsp;&nbsp; Discrete: \( N_{t+1} = N_t + r N_t (1 - N_t/K) \)</span><br>
-    <span id="logMSY">MSY = —</span>
+    <span id="logMSY">MSY =,</span>
   </div>
 </div>
 
@@ -666,7 +666,7 @@ Cryptic colouration (camouflage),aposematism (warning colouration: bright colour
 
 A **keystone species** has a disproportionately large effect on its community relative to its biomass. Removal causes a dramatic restructuring of the community.
 
-**Classic example — Paine's sea star experiment (1966):** Removal of *Pisaster ochraceus* (sea star) from rocky intertidal led to domination by *Mytilus californianus* (mussel), reducing species richness from 15 to 8. The sea star was a keystone predator controlling mussel abundance.
+**Classic example, Paine's sea star experiment (1966):** Removal of *Pisaster ochraceus* (sea star) from rocky intertidal led to domination by *Mytilus californianus* (mussel), reducing species richness from 15 to 8. The sea star was a keystone predator controlling mussel abundance.
 <img src="/ECOLOGYPICS/seastar.png">
 **Other keystone types:**
 - **Ecosystem engineers**: beavers (dam construction creates wetland habitat), elephants (create forest gaps, maintain savanna)
@@ -957,7 +957,7 @@ Conservation biology applies ecological principles to prevent biodiversity loss.
 
 Classic evidence: **Tilman's grassland biodiversity experiments** found that plots with more grass species had higher and more stable biomass production than monocultures, even across drought years.
 
-### Threats to biodiversity — HIPPO
+### Threats to biodiversity, HIPPO
 
 The main drivers of biodiversity loss can be remembered as **HIPPO** (in approximate order of severity globally):
 
@@ -1028,7 +1028,7 @@ After habitat is reduced below a threshold, species do not go extinct immediatel
 
 Human activities are now the dominant force shaping Earth's biota. This section covers the major anthropogenic changes and their ecological consequences.
 
-### Climate change — ecological effects
+### Climate change, ecological effects
 
 **Current trajectory:** Global mean temperature has risen ~1.2°C since pre-industrial levels (IPCC AR6, 2021). Under RCP8.5 (high emissions), warming of 3–5°C by 2100 is projected.
 
@@ -1038,7 +1038,7 @@ Human activities are now the dominant force shaping Earth's biota. This section 
 
 **Range shifts**: species distributions are tracking suitable climate poleward and to higher elevations. Global average: ~17 km poleward per decade; ~11 m upslope per decade. Species that cannot track climate (habitat fragmentation, physiological constraints) face extinction.
 
-**Coral bleaching** — elevated sea surface temperature (even +1°C above average for >4 weeks) triggers expulsion of zooxanthellae (symbiotic dinoflagellates) from coral tissue. Without zooxanthellae, coral loses its colour (bleaches) and carbon source. **1998 El Niño** bleached ~16% of world's corals; the **2016 event** bleached >50% of the Great Barrier Reef. With 2°C warming, >99% of coral reefs are projected to bleach annually.
+**Coral bleaching**, elevated sea surface temperature (even +1°C above average for >4 weeks) triggers expulsion of zooxanthellae (symbiotic dinoflagellates) from coral tissue. Without zooxanthellae, coral loses its colour (bleaches) and carbon source. **1998 El Niño** bleached ~16% of world's corals; the **2016 event** bleached >50% of the Great Barrier Reef. With 2°C warming, >99% of coral reefs are projected to bleach annually.
 <img src="/ECOLOGYPICS/sst.png">
 <!-- RESOURCE: Insert a sea surface temperature anomaly graph for coral bleaching events. x-axis: year (1980–2023). y-axis: SST anomaly (°C relative to 1961–1990 mean). Line graph with horizontal dashed line at bleaching threshold (+1°C above summer mean). Shade bleaching events (1998, 2002, 2016, 2020) in red. -->
 
@@ -1095,7 +1095,7 @@ A **tipping point** (critical transition) is a threshold at which a small pertur
 
 Transition is triggered when P loading exceeds the critical threshold. **Hysteresis** means the system does not return to clear-water state when P is merely reduced to the original loading; P must be reduced well below the original threshold. This makes recovery far more costly than prevention.
 
-<!-- RESOURCE: Insert a regime shift ball-and-cup diagram. Two panels side by side. Left: "clear lake" — ball in left basin. Right: "turbid lake" — ball in right basin. Show the tipping point as the unstable equilibrium between basins. Below: a bifurcation diagram with P loading on x-axis, lake turbidity on y-axis, showing the hysteresis loop (forward and backward transitions occur at different P levels). -->
+<!-- RESOURCE: Insert a regime shift ball-and-cup diagram. Two panels side by side. Left: "clear lake", ball in left basin. Right: "turbid lake", ball in right basin. Show the tipping point as the unstable equilibrium between basins. Below: a bifurcation diagram with P loading on x-axis, lake turbidity on y-axis, showing the hysteresis loop (forward and backward transitions occur at different P levels). -->
 
 ### Planetary boundaries
 
@@ -1107,7 +1107,7 @@ Rockström et al. (2009, updated 2023) proposed **nine planetary boundaries**: s
 | Biogeochemical flows (N) | ~0 extra | ~150 Tg N yr⁻¹ | 62 Tg N yr⁻¹ | **Exceeded** |
 | Climate change (CO₂) | 280 ppm | 420 ppm | 350 ppm | **Exceeded** |
 | Land-system change | ~0% cropland | ~12–15% cropland | <15% | **At boundary** |
-| Freshwater use | — | — | 4000 km³ yr⁻¹ | Approaching |
+| Freshwater use |, |, | 4000 km³ yr⁻¹ | Approaching |
 | Ocean acidification | Ω_aragonite ~3.44 | ~2.9 | >2.75 | Within |
 
 {{< /tab >}}
@@ -1119,7 +1119,7 @@ Questions are ordered from recall to synthesis, matching olympiad difficulty pro
 
 ---
 
-#### Q1 — Population growth calculation
+#### Q1, Population growth calculation
 A population of *Cervus elaphus* (red deer) is at $N_0 = 200$ with $r = 0.18\ \text{yr}^{-1}$ and $K = 800$.
 
 **(a)** Calculate $dN/dt$ at $N = 200$ using the logistic model.  
@@ -1131,7 +1131,7 @@ A population of *Cervus elaphus* (red deer) is at $N_0 = 200$ with $r = 0.18\ \t
 
 ---
 
-#### Q2 — Diversity indices
+#### Q2, Diversity indices
 Two rocky intertidal communities are sampled after removal of a keystone predator (Community A: after removal; Community B: control).
 
 | Species | Community A (count) | Community B (count) |
@@ -1152,7 +1152,7 @@ Two rocky intertidal communities are sampled after removal of a keystone predato
 
 ---
 
-#### Q3 — Island biogeography and conservation
+#### Q3, Island biogeography and conservation
 A national park in a deforested landscape covers 250 km². A survey finds 60 bird species. The government plans to expand it to 4000 km².
 
 **(a)** Using $z = 0.25$, predict the number of bird species after expansion.  
@@ -1164,7 +1164,7 @@ A national park in a deforested landscape covers 250 km². A survey finds 60 bir
 
 ---
 
-#### Q4 — Ecosystem energetics and nutrient cycling
+#### Q4, Ecosystem energetics and nutrient cycling
 The following data describe a temperate lake ecosystem.
 
 - Phytoplankton GPP: $3200\ \text{kJ m}^{-2}\ \text{yr}^{-1}$
@@ -1183,7 +1183,7 @@ The following data describe a temperate lake ecosystem.
 
 ---
 
-#### Q5 — Climate change synthesis
+#### Q5, Climate change synthesis
 A study tracked 47 phenological events (first flowering, first egg-laying, etc.) across 18 species over 30 years in a temperate ecosystem. Mean spring temperature increased by 0.4°C per decade.
 
 **(a)** On average, each biological event advanced by 1.4 days per decade, but some events advanced by up to 6 days per decade and some did not advance at all. What determines the magnitude of phenological shift for a given species?  
@@ -1275,8 +1275,8 @@ $$\frac{dN}{dt} = rN - aNP \quad \text{(prey)}$$
 
 $$\frac{dP}{dt} = baNP - mP \quad \text{(predator)}$$
 
-where $N$ = prey density, $P$ = predator density, $r$ = prey intrinsic growth rate, $a$ = attack rate, $b$ = conversion efficiency, $m$ = predator mortality. The model predicts **neutral oscillations** — coupled cycles with predator lagging prey by a quarter cycle.
-### Appendix — Key equations and constants
+where $N$ = prey density, $P$ = predator density, $r$ = prey intrinsic growth rate, $a$ = attack rate, $b$ = conversion efficiency, $m$ = predator mortality. The model predicts **neutral oscillations**, coupled cycles with predator lagging prey by a quarter cycle.
+### Appendix, Key equations and constants
 
 #### Population ecology
 $$\frac{dN}{dt} = rN \quad \text{(exponential)}$$
@@ -1398,10 +1398,10 @@ $$\log S = \log c + z\log A$$
 </script>
 
 <script>
-/* BOGuide Dynamic TOC v3 — rewrites from scratch
+/* BOGuide Dynamic TOC v3, rewrites from scratch
    Key fixes vs previous versions:
    1. Panel detection: maps tab button index → panel index, no reliance on [hidden]
-   2. Links: onclick-based, activates the right tab then scrolls — no bare href anchors
+   2. Links: onclick-based, activates the right tab then scrolls, no bare href anchors
    3. Change detection: MutationObserver on aria-selected attribute changes, not click events
    4. Works whether Hextra uses display:none, visibility, or [hidden] to hide panels
 */
@@ -1516,7 +1516,7 @@ $$\log S = \log c + z\log A$$
     tocEl.style.display = 'block';
   }
 
-  /* ── TOC link click handler — activate panel then scroll ─────────────── */
+  /* ── TOC link click handler, activate panel then scroll ─────────────── */
   window.boGuideTocNav = function(link) {
     var panelIdx = parseInt(link.getAttribute('data-panel'), 10);
     var hid      = link.getAttribute('data-hid');

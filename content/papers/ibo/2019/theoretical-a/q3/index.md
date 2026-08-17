@@ -1,8 +1,8 @@
 ---
-title: "Q3 — GPCR Signalling and a Toxin Acting on the Gs Cycle"
+title: "Q3 - GPCR Signalling and a Toxin Acting on the Gs Cycle"
 ---
 
-{{< problem-meta category="Theoretical A" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/1-cell-molecular/cell-signaling-communication/">Cell Signaling & Communication</a>
@@ -17,7 +17,7 @@ A lab is working on a pair of newly identified GPCRs, "GPCR-A" and "GPCR-B". Eac
 
 A member of the lab studying a pathogenic bacterium has discovered that it secretes a toxin that interferes with the mentioned signalling pathway. To determine how this toxin acts, she did an experiment in which she looked at intracellular cAMP levels in untreated and toxin treated cells (the original ligand of the receptors was not added in either of the experiments).
 
-![Bar chart: intracellular cAMP concentration, untreated (Legend 1, low, ~1.3 pmol/mL) vs. toxin-treated (Legend 2, high, ~19 pmol/mL) — no ligand added in either condition.](/papers/ibo/2019/q3-figure-2.png)
+![Bar chart: intracellular cAMP concentration, untreated (Legend 1, low, ~1.3 pmol/mL) vs. toxin-treated (Legend 2, high, ~19 pmol/mL) - no ligand added in either condition.](/papers/ibo/2019/q3-figure-2.png)
 *Fig.2. Axis = cAMP concentration (pmol/mL). Legend 1 = Toxin −. Legend 2 = Toxin +.*
 
 Indicate with an **X** whether each of the following mutations increase (A), leave not changed (B), or decrease (C) the intracellular levels of cAMP upon ligand addition, in the absence of the toxin. Remember, both GPCR-A and GPCR-B bind the same ligand! (Q3.1–Q3.6)
@@ -30,4 +30,4 @@ What is/are the **possible** explanation(s) for the mechanism by which the toxin
 
 ---
 
-Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=8) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)
+Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=8) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)

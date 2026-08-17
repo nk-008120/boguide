@@ -1,7 +1,7 @@
 ---
 title: "Molecular Systematics"
 weight: 4
-description: "Building phylogenies from DNA and protein sequence data: alignment, the molecular clock, distance-based (UPGMA, neighbor-joining) versus character-based (maximum parsimony, maximum likelihood, Bayesian) tree-building methods, DNA barcoding, and the artifacts — long-branch attraction, horizontal gene transfer — that can mislead a molecular tree."
+description: "Building phylogenies from DNA and protein sequence data: alignment, the molecular clock, distance-based (UPGMA, neighbor-joining) versus character-based (maximum parsimony, maximum likelihood, Bayesian) tree-building methods, DNA barcoding, and the artifacts, long-branch attraction, horizontal gene transfer, that can mislead a molecular tree."
 difficulty: "advanced"
 prerequisites: ["Phylogenetic-Trees-Cladistics"]
 syllabus_tags: ["IBO", "USABO", "biosystematics"]
@@ -17,7 +17,7 @@ syllabus_tags: ["IBO", "USABO", "biosystematics"]
 
 ### Sequence Alignment
 
-Before two sequences can be compared, corresponding positions must be identified. This is complicated by the fact that real lineages accumulate not just substitutions (one base swapped for another) but **insertions and deletions (indels)**, which shift everything downstream out of register unless corrected for. **Sequence alignment** inserts gap characters into one or both sequences so that homologous positions (nucleotides/amino acids descended from the same ancestral position) line up in the same column. Once aligned, each column of the alignment becomes a "character" in the same sense as the morphological characters on the previous page, each aligned base/residue is that taxon's "character state," and the same synapomorphy-based logic applies — a shared derived substitution at a given aligned position is evidence for grouping the taxa that share it.
+Before two sequences can be compared, corresponding positions must be identified. This is complicated by the fact that real lineages accumulate not just substitutions (one base swapped for another) but **insertions and deletions (indels)**, which shift everything downstream out of register unless corrected for. **Sequence alignment** inserts gap characters into one or both sequences so that homologous positions (nucleotides/amino acids descended from the same ancestral position) line up in the same column. Once aligned, each column of the alignment becomes a "character" in the same sense as the morphological characters on the previous page, each aligned base/residue is that taxon's "character state," and the same synapomorphy-based logic applies, a shared derived substitution at a given aligned position is evidence for grouping the taxa that share it.
 
 ### The Molecular Clock
 
@@ -34,7 +34,7 @@ These methods first reduce the full alignment to a single **pairwise distance** 
 
 These retain the full aligned character matrix (every column) rather than collapsing it to pairwise distances first:
 
-- **Maximum parsimony** — the same principle as the previous page, applied directly to aligned sequence columns: the tree requiring the fewest total substitutions is preferred.
+- **Maximum parsimony**, the same principle as the previous page, applied directly to aligned sequence columns: the tree requiring the fewest total substitutions is preferred.
 - **Maximum likelihood (ML)**: evaluates, for a given tree and an explicit statistical model of how sequences evolve (a substitution model specifying the relative rate of each type of base change), the *probability* of observing the actual data if that tree were true, then searches for the tree maximizing this probability. Unlike parsimony, ML can explicitly account for the fact that some substitutions (e.g. multiple hits at the same site over long timescales) are more likely than others, making it more statistically robust on deeply diverged sequences, at significant computational cost.
 - **Bayesian inference** is closely related to ML, but instead of finding the single most-likely tree, it computes a full posterior probability distribution over many possible trees (combining the likelihood with a prior probability), and reports each candidate topology's proportion of support (a **posterior probability**) rather than a single best answer. This is why Bayesian phylogenetics papers report a specific numeric confidence value per node rather than a single fixed diagram claimed as fact.
 
@@ -72,9 +72,9 @@ Two specific failure modes are worth knowing by name, since they explain *why* a
 
 **Interactive**
 
-- **Sequence alignment and tree-building walkthrough (interactive SVG/JS, no new library)** — the user is given 4-5 short unaligned sequences, aligns them by dragging in gap characters, then watches a distance matrix populate and a UPGMA/NJ tree assemble from it step by step, making the abstract "distance matrix → tree" pipeline into something built rather than asserted.
+- **Sequence alignment and tree-building walkthrough (interactive SVG/JS, no new library)**, the user is given 4-5 short unaligned sequences, aligns them by dragging in gap characters, then watches a distance matrix populate and a UPGMA/NJ tree assemble from it step by step, making the abstract "distance matrix → tree" pipeline into something built rather than asserted.
 {{< iframe src="/sequence-alignment-tree-walkthrough.html" title="Sequence Alignment & Tree-Building Walkthrough" height="560px" >}}
-- **Long-branch attraction demonstrator (Plotly or SVG/JS simulation)** — a simulated 4-taxon tree with two adjustable branch-length sliders; as the user lengthens two non-sister branches, the tool shows parsimony increasingly (and eventually incorrectly) grouping them together, visually demonstrating the LBA artifact as a direct consequence of branch length rather than a described abstraction.
+- **Long-branch attraction demonstrator (Plotly or SVG/JS simulation)**, a simulated 4-taxon tree with two adjustable branch-length sliders; as the user lengthens two non-sister branches, the tool shows parsimony increasingly (and eventually incorrectly) grouping them together, visually demonstrating the LBA artifact as a direct consequence of branch length rather than a described abstraction.
 {{< iframe src="/long-branch-attraction-demonstrator.html" title="Long-Branch Attraction Demonstrator" height="480px" >}}
 
 **Static**

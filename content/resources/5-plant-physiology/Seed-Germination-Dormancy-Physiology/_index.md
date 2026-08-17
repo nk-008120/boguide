@@ -17,7 +17,7 @@ syllabus_tags: ["IBO", "USABO", "plant-physiology"]
 
 ### Imbibition
 
-Germination begins with **imbibition**: the physical uptake of water by the dry seed's hydrophilic storage macromolecules (starch, protein), generating substantial imbibitional pressure as the seed swells, entirely independent of any active or osmotic transport process (a dead or non-viable seed imbibes water just as readily as a living one, since imbibition is a passive physical property of the seed's dry tissue, not a metabolic response). Water typically enters first through the **micropyle** (the pore in the seed coat persisting from the ovule, see [Seed & Fruit Anatomy](../../6-plant-anatomy/seed-fruit-anatomy/)), rehydrating the embryo and reactivating enzymatic machinery that had been essentially inactive in the dry state. Imbibition alone is necessary but not sufficient for germination to proceed — a hydrated seed can still remain dormant if its internal hormonal balance (below) does not permit further development.
+Germination begins with **imbibition**: the physical uptake of water by the dry seed's hydrophilic storage macromolecules (starch, protein), generating substantial imbibitional pressure as the seed swells, entirely independent of any active or osmotic transport process (a dead or non-viable seed imbibes water just as readily as a living one, since imbibition is a passive physical property of the seed's dry tissue, not a metabolic response). Water typically enters first through the **micropyle** (the pore in the seed coat persisting from the ovule, see [Seed & Fruit Anatomy](../../6-plant-anatomy/seed-fruit-anatomy/)), rehydrating the embryo and reactivating enzymatic machinery that had been essentially inactive in the dry state. Imbibition alone is necessary but not sufficient for germination to proceed, a hydrated seed can still remain dormant if its internal hormonal balance (below) does not permit further development.
 
 ![Seed structure and imbibition: seed coat layers (wax cuticle, epidermis, sclereids, parenchyma, remnant layer), embryo (hypocotyl, radicle), cotyledon, and the micropyle/hilar fissure/raphe region, with arrows tracing water uptake into the seed coat opening and cotyledon](/PLANTPHYSIOPICS/seed-imbibition.png)
 *Source: New Phytologist (Wiley Online Library, doi ppp3.10631)*
@@ -26,7 +26,7 @@ Germination begins with **imbibition**: the physical uptake of water by the dry 
 
 Seed dormancy and its release are controlled by the same antagonistic hormone pair introduced on [Plant Hormones](../plant-hormones/), acting here specifically:
 
-- **Abscisic acid (ABA)**, synthesized during seed maturation on the parent plant, maintains dormancy and, in many species, must be degraded or its signaling desensitized before germination can proceed — a mechanism preventing **vivipary** (premature germination while the seed is still attached to and nourished by the parent plant, which would be developmentally and often lethally disadvantageous).
+- **Abscisic acid (ABA)**, synthesized during seed maturation on the parent plant, maintains dormancy and, in many species, must be degraded or its signaling desensitized before germination can proceed, a mechanism preventing **vivipary** (premature germination while the seed is still attached to and nourished by the parent plant, which would be developmentally and often lethally disadvantageous).
 - **Gibberellin (GA)** promotes the germination program directly once ABA's inhibitory effect has been sufficiently reduced, and is both necessary and sufficient to trigger the reserve-mobilization mechanism described below.
 
 Dormancy release is often gated by an additional environmental requirement layered on top of this hormonal balance: cold stratification (a period of moist chilling, mechanistically parallel to vernalization's cold requirement for flowering, see [Photoperiodism, Vernalization & Flowering](../photoperiodism-vernalization-flowering/)), a period of after-ripening in dry storage, exposure to light (in some small seeds, via the same phytochrome system covered on that page), or scarification (physical or chemical abrasion of an unusually impermeable seed coat, common in many legumes). Each of these environmental gates ultimately acts by shifting the internal GA/ABA balance rather than by a separate independent mechanism.
@@ -38,14 +38,14 @@ Dormancy release is often gated by an additional environmental requirement layer
 
 In cereal grains (a monocot seed structure, see [Seed & Fruit Anatomy](../../6-plant-anatomy/seed-fruit-anatomy/) for endosperm/scutellum anatomy), GA released once dormancy lifts diffuses from the embryo to the **aleurone layer** (a specialized, protein-rich outer layer of the endosperm), where it induces transcription of the enzyme **α-amylase**. Secreted α-amylase then hydrolyzes the endosperm's stored starch into soluble sugars, which the **scutellum** absorbs and transports to the growing embryo axis to fuel early growth before the seedling's own photosynthetic tissue is functional. This pathway is a classic, directly testable example of hormone-induced gene expression (GA as the inducing signal, α-amylase as the induced gene product, starch mobilization as the measurable downstream effect), and is why exogenous GA application to isolated aleurone layers is a standard experimental assay for GA activity.
 
-![GA-induced alpha-amylase pathway in the germinating grain: GA produced in the embryo/scutellum induces RAmy3D expression and transcription factors that upregulate hydrolytic enzymes including alpha-amylase, which hydrolyzes endosperm starch into sugars taken up by the scutellum to fuel germination — shown alongside anoxic and metal-toxicity stresses that inhibit specific steps of the pathway](/PLANTPHYSIOPICS/aleurone-ga-amylase-pathway.png)
+![GA-induced alpha-amylase pathway in the germinating grain: GA produced in the embryo/scutellum induces RAmy3D expression and transcription factors that upregulate hydrolytic enzymes including alpha-amylase, which hydrolyzes endosperm starch into sugars taken up by the scutellum to fuel germination, shown alongside anoxic and metal-toxicity stresses that inhibit specific steps of the pathway](/PLANTPHYSIOPICS/aleurone-ga-amylase-pathway.png)
 *Source: MDPI, International Journal of Molecular Sciences (1422-0067/20/2/450)*
 
 ### Epigeal versus Hypogeal Germination
 
 Once growth resumes, species differ systematically in which embryonic axis segment (see [Seed & Fruit Anatomy](../../6-plant-anatomy/seed-fruit-anatomy/) for radicle/hypocotyl/plumule terminology) elongates to bring the seedling above ground:
 
-- **Epigeal germination** — the **hypocotyl** elongates and forms a hook that straightens as it breaches the soil surface, lifting the cotyledons above ground where they typically expand and green briefly, contributing photosynthetically before senescing (common bean, castor bean).
+- **Epigeal germination**, the **hypocotyl** elongates and forms a hook that straightens as it breaches the soil surface, lifting the cotyledons above ground where they typically expand and green briefly, contributing photosynthetically before senescing (common bean, castor bean).
 - **Hypogeal germination**: the **epicotyl** (the plumule and the stem segment immediately above the cotyledon attachment) elongates instead, while the cotyledons remain below ground, never photosynthesizing and serving only as a stationary nutrient reserve depleted in place (pea, most monocot grains, where the cotyledon/scutellum stays embedded in the seed structure entirely).
 
 ![Epigeal vs. hypogeal germination compared side by side, from seed through root-hair/radicle emergence to seedling: the epigeal sequence shows the hypocotyl elongating to lift the cotyledons above the soil, while the hypogeal sequence shows the epicotyl and plumule elongating while the cotyledons remain below ground](/PLANTPHYSIOPICS/epi-hypo-germination.svg)
@@ -80,7 +80,7 @@ This distinction is a direct, mechanistic consequence of which axis segment's ce
 
 **Interactive**
 
-- **GA/ABA dormancy balance slider (SVG/JS)** — a slider representing the relative GA:ABA ratio; moving it past a threshold visibly triggers the germination program (radicle emergence) in a schematic seed diagram, letting the user test how cold stratification or scarification (represented as balance-shifting buttons) push a dormant seed past that threshold.
+- **GA/ABA dormancy balance slider (SVG/JS)**, a slider representing the relative GA:ABA ratio; moving it past a threshold visibly triggers the germination program (radicle emergence) in a schematic seed diagram, letting the user test how cold stratification or scarification (represented as balance-shifting buttons) push a dormant seed past that threshold.
 
 <div id="dormancy-widget" style="background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:'Inter','Segoe UI',Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
   <svg viewBox="0 0 160 120" width="140" height="105" style="display:block; margin:0 auto;">
@@ -110,7 +110,7 @@ This distinction is a direct, mechanistic consequence of which axis segment's ce
     if (v >= threshold){
       var len = 10 + (v-threshold)*0.4;
       radicle.setAttribute('d', 'M80 82 L80 ' + (82+len));
-      note.textContent = 'GA-dominant — past the threshold, alpha-amylase is induced and the radicle emerges: germination proceeds.';
+      note.textContent = 'GA-dominant, past the threshold, alpha-amylase is induced and the radicle emerges: germination proceeds.';
     } else {
       radicle.setAttribute('d', 'M80 82 L80 82');
       note.textContent = 'ABA-dominant: the seed remains dormant.';
@@ -133,7 +133,7 @@ This distinction is a direct, mechanistic consequence of which axis segment's ce
 })();
 </script>
 
-- **Epigeal vs. hypogeal germination sequence toggle** — a seedling emergence animation that toggles between the two patterns, highlighting whichever axis segment (hypocotyl or epicotyl) is elongating and tracking cotyledon position throughout.
+- **Epigeal vs. hypogeal germination sequence toggle**, a seedling emergence animation that toggles between the two patterns, highlighting whichever axis segment (hypocotyl or epicotyl) is elongating and tracking cotyledon position throughout.
 
 <div id="germ-pattern-widget" style="background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:'Inter','Segoe UI',Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
   <svg viewBox="0 0 200 180" width="180" height="160" style="display:block; margin:0 auto;">

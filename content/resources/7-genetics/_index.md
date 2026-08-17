@@ -15,7 +15,7 @@ Genetics sits between two other sections it deliberately does **not** duplicate:
 Start with [Mendel's Laws & Probability in Genetics](Mendelian-Inheritance-Probability/); every later page in this section assumes its segregation/assortment vocabulary and probability tools.
 
 {{< cards cols="1" >}}
-  {{< card link="mendelian-inheritance-probability/" title="1. Mendel's Laws & Probability in Genetics" subtitle="Segregation, independent assortment, monohybrid/dihybrid crosses, test crosses, probability rules, chi-square — read this first." >}}
+  {{< card link="mendelian-inheritance-probability/" title="1. Mendel's Laws & Probability in Genetics" subtitle="Segregation, independent assortment, monohybrid/dihybrid crosses, test crosses, probability rules, chi-square, read this first." >}}
 {{< /cards >}}
 
 ### Transmission Genetics

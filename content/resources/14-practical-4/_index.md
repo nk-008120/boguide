@@ -41,7 +41,7 @@ General resources for ImageJ introduction:
 
 ---
 
-## ImageJ (Fiji) — A Detailed Guide
+## ImageJ (Fiji), A Detailed Guide
 
 This page explains the core features of ImageJ at the level required for the plant computational biology practical. Where relevant, I have also explained the basic principles behind the tools, so you understand *why* you are using them, not just *how*.
 

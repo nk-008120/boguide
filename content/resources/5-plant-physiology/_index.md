@@ -10,13 +10,13 @@ Where [Plant Anatomy](../6-plant-anatomy/) covers structure (tissue types, organ
 
 - **Water & Nutrient Transport** (4 pages): the transport mechanisms Plant Anatomy's vascular, root, and leaf pages explicitly deferred, covering water movement, stomatal control, phloem translocation, and mineral/symbiotic nutrient uptake.
 - **Photosynthesis** (2 pages), covering the light-reaction and carbon-fixation biochemistry behind the Kranz and CAM anatomy already covered structurally in Plant Anatomy.
-- **Growth Regulation & Development** (4 pages) — the hormonal signals and their downstream effects on directional growth, flowering timing, and germination.
-- **Whole-Plant & Stress Physiology** (1 page) — abiotic and biotic stress responses, integrating mechanisms from every earlier tier.
+- **Growth Regulation & Development** (4 pages), the hormonal signals and their downstream effects on directional growth, flowering timing, and germination.
+- **Whole-Plant & Stress Physiology** (1 page), abiotic and biotic stress responses, integrating mechanisms from every earlier tier.
 
 Start with [Water Transport & Transpiration](Water-Transport-Transpiration/): its water potential framework is assumed throughout the rest of the section.
 
 {{< cards cols="1" >}}
-  {{< card link="water-transport-transpiration/" title="1. Water Transport & Transpiration" subtitle="Water potential, cohesion-tension theory, root pressure and guttation — read this first." >}}
+  {{< card link="water-transport-transpiration/" title="1. Water Transport & Transpiration" subtitle="Water potential, cohesion-tension theory, root pressure and guttation, read this first." >}}
 {{< /cards >}}
 
 ### Water & Nutrient Transport

@@ -11,12 +11,12 @@ Biosystematics is the classification and relationship-inference layer sitting *a
 - **Foundations** (2 pages): the naming/ranking vocabulary and the competing definitions of "species" everything else assumes.
 - **Phylogenetics** (2 pages), how relationships are actually inferred and tested, from morphological cladistics through to molecular sequence data.
 - **Classification Survey** (2 pages): the resulting top-level classification of life, then a cross-reference tying named taxa back to the structural content already written in Animal Anatomy.
-- **Practical** (1 page) — the applied identification-key skill IBO practical stations test directly.
+- **Practical** (1 page), the applied identification-key skill IBO practical stations test directly.
 
 Start with [Classification Principles & Nomenclature](Classification-Principles-Nomenclature/); every later page in this section assumes its ranking and naming vocabulary.
 
 {{< cards cols="1" >}}
-  {{< card link="classification-principles-nomenclature/" title="1. Classification Principles & Nomenclature" subtitle="Taxonomic hierarchy, binomial nomenclature, type specimens, priority — read this first." >}}
+  {{< card link="classification-principles-nomenclature/" title="1. Classification Principles & Nomenclature" subtitle="Taxonomic hierarchy, binomial nomenclature, type specimens, priority, read this first." >}}
 {{< /cards >}}
 
 ### Foundations

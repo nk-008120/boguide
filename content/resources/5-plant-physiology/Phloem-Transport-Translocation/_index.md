@@ -26,7 +26,7 @@ Phloem transport is defined relationally, not by fixed anatomical location: a **
 
 At the source end, sucrose produced by photosynthesis (or released from storage) must be concentrated into the sieve tube against its concentration gradient, which happens by one of two routes:
 
-- **Apoplastic loading** — sucrose is first exported from mesophyll cells into the cell wall space (apoplast) near the minor vein, then actively taken up into the sieve tube element/companion cell complex by **sucrose-H⁺ symporters**, powered by a proton gradient that H⁺-ATPases maintain across the plasma membrane. This is an active, energy-consuming step, and it is why **transfer cells** (specialized companion cells with wall ingrowths that amplify surface area, see [Xylem, Phloem & Vascular Tissue](../../6-plant-anatomy/xylem-phloem-vascular-tissue/)) are concentrated exactly where apoplastic loading is most intense.
+- **Apoplastic loading**, sucrose is first exported from mesophyll cells into the cell wall space (apoplast) near the minor vein, then actively taken up into the sieve tube element/companion cell complex by **sucrose-H⁺ symporters**, powered by a proton gradient that H⁺-ATPases maintain across the plasma membrane. This is an active, energy-consuming step, and it is why **transfer cells** (specialized companion cells with wall ingrowths that amplify surface area, see [Xylem, Phloem & Vascular Tissue](../../6-plant-anatomy/xylem-phloem-vascular-tissue/)) are concentrated exactly where apoplastic loading is most intense.
 - **Symplastic loading**: sucrose moves cell-to-cell via plasmodesmata all the way from mesophyll to sieve tube without ever entering the apoplast. Many species using this route additionally convert sucrose into larger sugars (raffinose, stachyose) once inside the phloem, a mechanism called **polymer trapping**: because plasmodesmata size-exclude molecules above a threshold, the larger sugars cannot diffuse back out the way they came in, maintaining the concentration gradient needed for continued loading without added transporter proteins.
 
 Either route achieves the same essential outcome: sieve tube solute concentration at the source is driven well above that of surrounding tissue, sharply lowering the sieve tube's water potential there.
@@ -41,14 +41,14 @@ Once sucrose is loaded at the source, water follows osmotically from the adjacen
 ![Pressure-flow (Munch) hypothesis: water enters the phloem from the xylem at the source (leaf) companion cell as sucrose is loaded, driving bulk flow of water and sucrose through sieve-tube elements to the sink (root/fruit) companion cell, where sucrose exits and water returns to the xylem](/PLANTPHYSIOPICS/pressure-flow-hypothesis.png)
 *Source: ResearchGate, fig. 1, "Translocation of sugars (photoassimilates) in plants: Pressure flow hypothesis (Muench)"*
 
-At the sink end, sugar is continuously removed (unloaded, see below), keeping sieve tube solute concentration, and therefore turgor pressure, low there. The resulting pressure difference between source and sink, transmitted through the continuous, plasmodesmata- and sieve-plate-connected sieve tube lumen, drives **bulk flow** of the entire sap (water and dissolved sugars together) from source to sink, mechanistically distinct from xylem transport, which is pulled by tension rather than pushed by a pressure gradient, and from simple diffusion, which would be far too slow to account for the observed translocation rates. Because the driving pressure difference depends only on the relative concentrations at the two ends, not on which end is physically higher or lower, phloem sap can move in any direction — including downward from a leaf source to a root sink, upward from a storage root source to a growing shoot sink, or laterally between two leaves at the same height — a direct, testable contrast with xylem's exclusively upward flow.
+At the sink end, sugar is continuously removed (unloaded, see below), keeping sieve tube solute concentration, and therefore turgor pressure, low there. The resulting pressure difference between source and sink, transmitted through the continuous, plasmodesmata- and sieve-plate-connected sieve tube lumen, drives **bulk flow** of the entire sap (water and dissolved sugars together) from source to sink, mechanistically distinct from xylem transport, which is pulled by tension rather than pushed by a pressure gradient, and from simple diffusion, which would be far too slow to account for the observed translocation rates. Because the driving pressure difference depends only on the relative concentrations at the two ends, not on which end is physically higher or lower, phloem sap can move in any direction, including downward from a leaf source to a root sink, upward from a storage root source to a growing shoot sink, or laterally between two leaves at the same height, a direct, testable contrast with xylem's exclusively upward flow.
 
-![Xylem vs. phloem transport contrasted: xylem carries water/minerals one-way only through non-living cells with no end walls between them, while phloem carries organic molecules two-way through living (support-dependent) cells connected by sieve plates — paired with a real stained cross-section showing xylem (red, meta-/protoxylem) and phloem tissue side by side](/PLANTPHYSIOPICS/xylem-vs-phloem-direction.png)
+![Xylem vs. phloem transport contrasted: xylem carries water/minerals one-way only through non-living cells with no end walls between them, while phloem carries organic molecules two-way through living (support-dependent) cells connected by sieve plates, paired with a real stained cross-section showing xylem (red, meta-/protoxylem) and phloem tissue side by side](/PLANTPHYSIOPICS/xylem-vs-phloem-direction.png)
 *Source: microbenotes.com, "Xylem vs Phloem"*
 
 ### Phloem Unloading
 
-At the sink end, sugar exits the sieve tube by routes mirroring the loading options: **symplastic unloading** (plasmodesmata, common in rapidly growing sinks like root tips, where cells need bulk sugar delivery without fine metabolic control) or **apoplastic unloading** (sucrose exported into the apoplast, then actively or passively taken up by sink cells, common where the sink needs to regulate its own uptake rate independently of phloem pressure — e.g. developing seeds, where the maternal phloem and the offspring embryo are genetically distinct tissues not connected by plasmodesmata at all, making apoplastic unloading the only option). Continuous removal of sugar at the sink, by whichever route, is what keeps sink-end turgor low and therefore keeps the pressure gradient driving bulk flow from collapsing.
+At the sink end, sugar exits the sieve tube by routes mirroring the loading options: **symplastic unloading** (plasmodesmata, common in rapidly growing sinks like root tips, where cells need bulk sugar delivery without fine metabolic control) or **apoplastic unloading** (sucrose exported into the apoplast, then actively or passively taken up by sink cells, common where the sink needs to regulate its own uptake rate independently of phloem pressure, e.g. developing seeds, where the maternal phloem and the offspring embryo are genetically distinct tissues not connected by plasmodesmata at all, making apoplastic unloading the only option). Continuous removal of sugar at the sink, by whichever route, is what keeps sink-end turgor low and therefore keeps the pressure gradient driving bulk flow from collapsing.
 
 ```mermaid
 graph LR;
@@ -81,11 +81,11 @@ graph LR;
 
 **Interactive**
 
-- **Pressure-flow (Münch) demonstrator (SVG/JS, step-through)** — two connected chambers (source, sink) linked by a tube, with a slider controlling source-end sucrose loading rate; increasing loading visibly raises source turgor (rendered as chamber pressure) and drives flow toward the sink chamber, letting the user confirm that flow direction reverses if the sink-chamber loading is set higher instead.
+- **Pressure-flow (Münch) demonstrator (SVG/JS, step-through)**, two connected chambers (source, sink) linked by a tube, with a slider controlling source-end sucrose loading rate; increasing loading visibly raises source turgor (rendered as chamber pressure) and drives flow toward the sink chamber, letting the user confirm that flow direction reverses if the sink-chamber loading is set higher instead.
 
 {{< iframe src="/pressure-flow-demonstrator.html" title="Pressure-flow (Munch) demonstrator" height="480px" >}}
 
-- **Loading pathway toggle (click-through)** — a single minor-vein cross-section that toggles between apoplastic loading (sucrose crossing the apoplast, sucrose-H+ symporter highlighted) and symplastic loading (plasmodesmata route, polymer trapping shown converting sucrose to raffinose/stachyose once inside).
+- **Loading pathway toggle (click-through)**, a single minor-vein cross-section that toggles between apoplastic loading (sucrose crossing the apoplast, sucrose-H+ symporter highlighted) and symplastic loading (plasmodesmata route, polymer trapping shown converting sucrose to raffinose/stachyose once inside).
 
 <div id="loading-toggle-widget" style="background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:'Inter','Segoe UI',Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
   <svg viewBox="0 0 400 190" width="100%" style="max-width:420px; display:block; margin:0 auto;">
@@ -120,7 +120,7 @@ graph LR;
   <div style="text-align:center; margin-top:0.5rem;">
     <button class="ld-btn" id="ldApoBtn" style="background:#b45309; color:#fff; border:none; padding:9px 18px; border-radius:999px; font-size:0.88rem; cursor:pointer; margin-right:8px;">Apoplastic</button>
     <button class="ld-btn" id="ldSymBtn" style="background:#94a3b8; color:#fff; border:none; padding:9px 18px; border-radius:999px; font-size:0.88rem; cursor:pointer;">Symplastic</button>
-    <div id="ldNote" style="margin-top:10px; font-size:0.85rem; color:#4b5563;">Sucrose exits the mesophyll into the cell-wall apoplast, then is actively taken up into the companion cell/sieve tube by an H&#8314;/sucrose symporter — an energy-consuming step, hence the transfer cells found where this route is most active.</div>
+    <div id="ldNote" style="margin-top:10px; font-size:0.85rem; color:#4b5563;">Sucrose exits the mesophyll into the cell-wall apoplast, then is actively taken up into the companion cell/sieve tube by an H&#8314;/sucrose symporter, an energy-consuming step, hence the transfer cells found where this route is most active.</div>
   </div>
 </div>
 <script>
@@ -137,7 +137,7 @@ graph LR;
     symBtn.style.background = isApo ? '#94a3b8' : '#2d6a4f';
     note.textContent = isApo
       ? 'Sucrose exits the mesophyll into the cell-wall apoplast, then is actively taken up into the companion cell/sieve tube by an H⁺/sucrose symporter, an energy-consuming step, hence the transfer cells found where this route is most active.'
-      : 'Sucrose moves cell-to-cell via plasmodesmata without ever entering the apoplast; many species convert it to raffinose/stachyose once inside the phloem (polymer trapping) — too large to diffuse back out, maintaining the gradient for continued loading.';
+      : 'Sucrose moves cell-to-cell via plasmodesmata without ever entering the apoplast; many species convert it to raffinose/stachyose once inside the phloem (polymer trapping), too large to diffuse back out, maintaining the gradient for continued loading.';
   }
   apoBtn.addEventListener('click', function(){ setRoute(true); });
   symBtn.addEventListener('click', function(){ setRoute(false); });

@@ -1,7 +1,7 @@
 ---
 title: "Biomolecular Analytical Techniques"
 weight: 23
-description: "Gel electrophoresis (SDS-PAGE, native PAGE, agarose), chromatography (size-exclusion, ion-exchange, affinity), spectrophotometric quantification, and detergent-based membrane protein extraction — the wet-lab techniques used to separate, purify, and quantify proteins."
+description: "Gel electrophoresis (SDS-PAGE, native PAGE, agarose), chromatography (size-exclusion, ion-exchange, affinity), spectrophotometric quantification, and detergent-based membrane protein extraction, the wet-lab techniques used to separate, purify, and quantify proteins."
 difficulty: "intermediate"
 prerequisites: ["Protein-Structure-Folding-Function"]
 syllabus_tags: ["IBO", "USABO", "biochemistry", "laboratory-technique"]
@@ -49,7 +49,7 @@ Unlike electrophoresis (always separating by migration through a matrix under an
 
 ### Spectrophotometric quantification
 
-Protein or nucleic acid concentration is routinely estimated from **UV absorbance**: nucleic acids absorb strongly at 260 nm (from the aromatic bases), proteins at 280 nm (predominantly from Trp and Tyr residues — see the aromaticity ranking Phe > Trp > Tyr > His in [Amino Acids & Protein Chemistry Fundamentals](../amino-acids-protein-chemistry/), which is exactly why A₂₈₀ correlates with Trp/Tyr content rather than total protein mass alone). The **A₂₆₀/A₂₈₀ ratio** is a standard nucleic acid purity check: pure DNA gives ≈1.8, pure RNA ≈2.0; a lower ratio signals protein contamination, since protein absorbs relatively more at 280 nm than 260 nm.
+Protein or nucleic acid concentration is routinely estimated from **UV absorbance**: nucleic acids absorb strongly at 260 nm (from the aromatic bases), proteins at 280 nm (predominantly from Trp and Tyr residues, see the aromaticity ranking Phe > Trp > Tyr > His in [Amino Acids & Protein Chemistry Fundamentals](../amino-acids-protein-chemistry/), which is exactly why A₂₈₀ correlates with Trp/Tyr content rather than total protein mass alone). The **A₂₆₀/A₂₈₀ ratio** is a standard nucleic acid purity check: pure DNA gives ≈1.8, pure RNA ≈2.0; a lower ratio signals protein contamination, since protein absorbs relatively more at 280 nm than 260 nm.
 
 ### Choosing an extraction method for membrane proteins
 
@@ -68,7 +68,7 @@ Extracting an **integral membrane protein** while preserving native structure (f
 
 ## Common Exam Questions
 
-- "A protein runs at a different apparent size on native PAGE vs. SDS-PAGE — explain why.": tests whether you understand that SDS-PAGE reports subunit size while native PAGE can report the full oligomeric assembly (or a shape/charge-distorted apparent size), not that one method is simply "wrong."
+- "A protein runs at a different apparent size on native PAGE vs. SDS-PAGE, explain why.": tests whether you understand that SDS-PAGE reports subunit size while native PAGE can report the full oligomeric assembly (or a shape/charge-distorted apparent size), not that one method is simply "wrong."
 - "Which chromatography mode would best purify a His-tagged recombinant protein from a crude bacterial lysate in one step?": affinity chromatography (Ni²⁺ resin), because it directly exploits the engineered tag rather than a native, potentially non-unique physical property.
 - Extraction/solubilisation questions (as in Practice Problem 1 below) consistently test the *native vs. denaturing* distinction across techniques: recognise that SDS, urea, and high heat are denaturants regardless of which specific technique they appear in.
 

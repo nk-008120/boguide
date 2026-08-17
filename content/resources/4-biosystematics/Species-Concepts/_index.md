@@ -1,7 +1,7 @@
 ---
 title: "Species Concepts"
 weight: 2
-description: "The biological, morphological, phylogenetic, and ecological species concepts, the reproductive isolating mechanisms underlying the biological species concept, and the edge cases — ring species, hybrid zones, asexual and microbial taxa — where every concept breaks down."
+description: "The biological, morphological, phylogenetic, and ecological species concepts, the reproductive isolating mechanisms underlying the biological species concept, and the edge cases, ring species, hybrid zones, asexual and microbial taxa, where every concept breaks down."
 difficulty: "intermediate"
 prerequisites: ["Classification-Principles-Nomenclature"]
 syllabus_tags: ["IBO", "USABO", "biosystematics"]
@@ -11,7 +11,7 @@ syllabus_tags: ["IBO", "USABO", "biosystematics"]
 
 ## Overview
 
-"Species" is the rank the whole hierarchy on the previous page terminates at, but *what makes a species a species* is not one settled definition; it's several competing concepts, each useful for different organisms and each with real edge cases where it fails. IBO/USABO exam questions on this topic almost always take the form of a scenario ("two populations do X — are they the same species under concept Y?"), so the goal here is not to memorize four one-line definitions but to be able to apply each concept to a case and explain where it holds up or breaks down.
+"Species" is the rank the whole hierarchy on the previous page terminates at, but *what makes a species a species* is not one settled definition; it's several competing concepts, each useful for different organisms and each with real edge cases where it fails. IBO/USABO exam questions on this topic almost always take the form of a scenario ("two populations do X, are they the same species under concept Y?"), so the goal here is not to memorize four one-line definitions but to be able to apply each concept to a case and explain where it holds up or breaks down.
 
 ## Key Concepts
 
@@ -26,7 +26,7 @@ The BSC's structural limitation is built into its own definition: it requires **
 
 ### The Morphological Species Concept (MSC)
 
-The oldest and most practically applied concept, especially in fieldwork and museum taxonomy (and the concept most dichotomous identification keys implicitly rely on — see [Taxonomic Keys & Identification](../taxonomic-keys-identification/)): organisms are classified as the same species if they share a consistent set of measurable structural, physiological, or biochemical traits distinguishing them from other groups. Its strength is universal applicability: it works on asexual organisms, fossils, and preserved museum specimens where interbreeding can never be tested. Its weakness is exactly the flip side: **cryptic species** (genetically and reproductively distinct, but morphologically near-identical) are invisible to it, while **polymorphic species** (extreme within-species variation — caste differences in social insects, sexual dimorphism, distinct larval vs. adult forms) can be wrongly split into multiple "species" if morphology is trusted uncritically.
+The oldest and most practically applied concept, especially in fieldwork and museum taxonomy (and the concept most dichotomous identification keys implicitly rely on, see [Taxonomic Keys & Identification](../taxonomic-keys-identification/)): organisms are classified as the same species if they share a consistent set of measurable structural, physiological, or biochemical traits distinguishing them from other groups. Its strength is universal applicability: it works on asexual organisms, fossils, and preserved museum specimens where interbreeding can never be tested. Its weakness is exactly the flip side: **cryptic species** (genetically and reproductively distinct, but morphologically near-identical) are invisible to it, while **polymorphic species** (extreme within-species variation, caste differences in social insects, sexual dimorphism, distinct larval vs. adult forms) can be wrongly split into multiple "species" if morphology is trusted uncritically.
 
 ### The Phylogenetic Species Concept (PSC)
 
@@ -34,7 +34,7 @@ A species is the smallest group of organisms sharing a common ancestor, distingu
 
 ### The Ecological Species Concept
 
-A species is a set of organisms exploiting a single, distinct **niche**: the specific combination of resources and environmental conditions a population is adapted to. This concept is most useful precisely where the BSC struggles: **asexual organisms** and cases of **hybridizing but ecologically distinct populations** (two populations that can and occasionally do interbreed where their ranges overlap, but remain phenotypically and ecologically distinct because hybrid offspring are outcompeted in either parental niche — selection maintains the boundary that reproduction alone does not).
+A species is a set of organisms exploiting a single, distinct **niche**: the specific combination of resources and environmental conditions a population is adapted to. This concept is most useful precisely where the BSC struggles: **asexual organisms** and cases of **hybridizing but ecologically distinct populations** (two populations that can and occasionally do interbreed where their ranges overlap, but remain phenotypically and ecologically distinct because hybrid offspring are outcompeted in either parental niche, selection maintains the boundary that reproduction alone does not).
 
 ### Where Every Concept Breaks Down
 
@@ -66,9 +66,9 @@ Three well-known edge cases are worth holding side by side, since exam scenarios
 
 **Interactive**
 
-- **Reproductive isolating mechanism sorter (drag-and-drop, HTML/JS, no new library)** — a set of named scenarios (e.g. "two cricket species sing at different times of night," "pollen grains fail to germinate on the wrong species' stigma") that the user drags into "prezygotic" or "postzygotic" bins, then into the specific mechanism subtype, with immediate correctness feedback — turns a list of six mechanism names into an applied-classification exercise.
+- **Reproductive isolating mechanism sorter (drag-and-drop, HTML/JS, no new library)**, a set of named scenarios (e.g. "two cricket species sing at different times of night," "pollen grains fail to germinate on the wrong species' stigma") that the user drags into "prezygotic" or "postzygotic" bins, then into the specific mechanism subtype, with immediate correctness feedback, turns a list of six mechanism names into an applied-classification exercise.
 {{< iframe src="/rim-sorter.html" title="Reproductive Isolating Mechanism Sorter" height="560px" >}}
-- **Ring species map explorer (interactive SVG/JS)** — a stylized map of a ring species range (e.g. *Ensatina* around California's Central Valley) where clicking any two population points on the ring shows whether those two populations interbreed, letting the user "discover" that adjacent populations always interbreed but the two ends of the ring, brought together, do not.
+- **Ring species map explorer (interactive SVG/JS)**, a stylized map of a ring species range (e.g. *Ensatina* around California's Central Valley) where clicking any two population points on the ring shows whether those two populations interbreed, letting the user "discover" that adjacent populations always interbreed but the two ends of the ring, brought together, do not.
 {{< iframe src="/ring-species-map-explorer.html" title="Ring Species Map Explorer" height="560px" >}}
 
 **Static**

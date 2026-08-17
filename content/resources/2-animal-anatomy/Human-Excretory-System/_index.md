@@ -1,7 +1,7 @@
 ---
 title: "Human Excretory System"
 weight: 10
-description: "Kidney gross anatomy, detailed nephron structure (renal corpuscle, tubule regions, juxtaglomerular apparatus), the two nephron populations, renal blood supply, and lower urinary tract histology — split from the combined Digestive/Excretory/Reproductive page for full IBO depth."
+description: "Kidney gross anatomy, detailed nephron structure (renal corpuscle, tubule regions, juxtaglomerular apparatus), the two nephron populations, renal blood supply, and lower urinary tract histology, split from the combined Digestive/Excretory/Reproductive page for full IBO depth."
 difficulty: "intermediate"
 prerequisites: ["Body-Plans", "Human-Circulatory-System"]
 syllabus_tags: ["IBO", "USABO", "human-anatomy"]
@@ -44,7 +44,7 @@ graph LR;
 
 - **Proximal convoluted tubule (PCT)**: cuboidal epithelium with a prominent **brush border** (dense microvilli, maximizing surface area) and high mitochondrial density (supporting active transport); reabsorbs the bulk (~65%) of filtered water, ions, and essentially all filtered glucose and amino acids. Its structural profile (brush border + mitochondria) is a direct histological signature of a high-throughput active-reabsorption region, directly comparable in logic to small intestinal absorptive epithelium (see [Human Digestive System](../human-digestive-system/)).
 - **Loop of Henle**: a hairpin turn descending from cortex into medulla and back; the **descending thin limb** is highly permeable to water but not solutes, while the **ascending limb** (thin, then thick segment) is permeable to solutes (actively transporting Na⁺/K⁺/Cl⁻ out) but impermeable to water. This asymmetric permeability pattern is the structural basis of the kidney's **countercurrent multiplier** mechanism, which establishes a progressively concentrated interstitial gradient deep in the medulla, necessary for producing concentrated urine.
-- **Distal convoluted tubule (DCT)** — shorter, fewer microvilli than the PCT; site of regulated (hormonally controlled) reabsorption, fine-tuning final urine composition.
+- **Distal convoluted tubule (DCT)**, shorter, fewer microvilli than the PCT; site of regulated (hormonally controlled) reabsorption, fine-tuning final urine composition.
 - **Collecting duct**: receives filtrate from many nephrons; its water permeability is variable, regulated by antidiuretic hormone (ADH) acting on **aquaporin** channels, the specific structural target of the kidney's main water-balance control point.
 
 ![A full labeled nephron: glomerulus and glomerular capsule fed by the afferent/efferent arteriole, proximal convoluted tubule, descending/ascending limbs of the loop of Henle with the surrounding capillary network, distal convoluted tubule, and collecting duct draining to the ureter, with the cortex/medulla boundary shown.](/ANATOMYPICS/nephron-labeled-tubule-regions-blood-supply.jpg)
@@ -66,8 +66,8 @@ graph LR;
     { key: 'pct', name: 'PCT', color: '#2d6a4f', desc: 'Reabsorbs ~65% of filtered water and ions, and essentially all filtered glucose and amino acids. Brush border + high mitochondrial density signal high-throughput active reabsorption.' },
     { key: 'desc', name: 'Descending Limb', color: '#1f5c99', desc: 'Highly permeable to water (reabsorbed into the hypertonic medullary interstitium) but not solutes. Filtrate becomes progressively more concentrated as it descends.' },
     { key: 'asc', name: 'Ascending Limb', color: '#7a3f96', desc: 'Impermeable to water; actively transports Na⁺/K⁺/Cl⁻ out into the interstitium. Filtrate becomes progressively more dilute as it ascends. This asymmetric permeability is the structural basis of the countercurrent multiplier.' },
-    { key: 'dct', name: 'DCT', color: '#b1650f', desc: 'Shorter, fewer microvilli than the PCT. Site of regulated, hormonally controlled reabsorption — fine-tunes final urine composition.' },
-    { key: 'cd', name: 'Collecting Duct', color: '#c0392b', desc: "Receives filtrate from many nephrons. Water permeability is variably regulated by ADH acting on aquaporin channels — the kidney's main water-balance control point." }
+    { key: 'dct', name: 'DCT', color: '#b1650f', desc: 'Shorter, fewer microvilli than the PCT. Site of regulated, hormonally controlled reabsorption, fine-tunes final urine composition.' },
+    { key: 'cd', name: 'Collecting Duct', color: '#c0392b', desc: "Receives filtrate from many nephrons. Water permeability is variably regulated by ADH acting on aquaporin channels, the kidney's main water-balance control point." }
   ];
   var container = document.getElementById('nephronSegments');
   var titleEl = document.getElementById('nephronTitle');
@@ -97,7 +97,7 @@ graph LR;
 
 ### Two Nephron Populations
 
-Not all nephrons are structurally identical: **cortical nephrons** (~85%, glomerulus in the outer cortex, short loops of Henle barely entering the medulla) handle the bulk of filtration volume, while **juxtamedullary nephrons** (~15%, glomerulus near the cortex-medulla border, very long loops of Henle penetrating deep into the medulla, paralleled by specialized capillaries, the **vasa recta**) are structurally responsible for establishing the deep medullary concentration gradient that makes concentrated urine possible at all — a direct minority-population, disproportionate-function structural point worth stating explicitly.
+Not all nephrons are structurally identical: **cortical nephrons** (~85%, glomerulus in the outer cortex, short loops of Henle barely entering the medulla) handle the bulk of filtration volume, while **juxtamedullary nephrons** (~15%, glomerulus near the cortex-medulla border, very long loops of Henle penetrating deep into the medulla, paralleled by specialized capillaries, the **vasa recta**) are structurally responsible for establishing the deep medullary concentration gradient that makes concentrated urine possible at all, a direct minority-population, disproportionate-function structural point worth stating explicitly.
 
 ![Cortical nephron (short loop of Henle) vs. juxtamedullary nephron (long loop reaching deep into the medulla, near the papilla) compared, alongside a PO2 gradient bar showing oxygen tension falling from 70 mmHg in the cortex to 10 mmHg near the papilla.](/ANATOMYPICS/cortical-vs-juxtamedullary-nephron-comparison.webp)
 *Source: The Ohio State University, user-sourced originally via a ResearchGate figure.*
@@ -201,7 +201,7 @@ Blood flow through the kidney passes through **two** capillary beds in series, a
 
 Urine draining from collecting ducts passes through the calyces/pelvis into the **ureter** (a muscular tube, peristaltic contraction of its wall, same general smooth-muscle logic as GI peristalsis, see [Human Digestive System](../human-digestive-system/), actively propels urine toward the bladder rather than relying on gravity alone), into the **urinary bladder** (a distensible muscular sac; its wall's **detrusor muscle** contracts to expel urine), through the **urethra**. The ureters, bladder, and proximal urethra are lined by **transitional epithelium**, a specialized stratified epithelium structurally capable of stretching (cells flatten and the apparent layer count decreases as the bladder fills) uniquely suited to an organ whose luminal surface must accommodate large volume changes, unlike any epithelium described on the [Human Digestive System](../human-digestive-system/) page. Urine release (**micturition**) involves an **internal urethral sphincter** (smooth muscle, involuntary) and an **external urethral sphincter** (skeletal muscle, voluntary), the same involuntary/voluntary sphincter pairing pattern seen at the anal canal.
 
-![Transitional epithelium histology compared between a collapsed (relaxed) and a distended (stretched) urinary bladder wall, each shown as both a real micrograph and a labeled line diagram — cell layers appear taller/more numerous when collapsed and flattened/fewer when stretched.](/ANATOMYPICS/transitional-epithelium-bladder-relaxed-stretched.jpg)
+![Transitional epithelium histology compared between a collapsed (relaxed) and a distended (stretched) urinary bladder wall, each shown as both a real micrograph and a labeled line diagram, cell layers appear taller/more numerous when collapsed and flattened/fewer when stretched.](/ANATOMYPICS/transitional-epithelium-bladder-relaxed-stretched.jpg)
 *Source: user-sourced (originally via a Houston Community College histology lab page). Exact match, directly shows the stretch-dependent flattening described in the text.*
 
 ## Comparative Structures

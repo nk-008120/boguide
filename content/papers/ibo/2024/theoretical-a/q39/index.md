@@ -1,8 +1,8 @@
 ---
-title: "Q39 — Snow Leopard Hemoglobin at High Altitude"
+title: "Q39 - Snow Leopard Hemoglobin at High Altitude"
 ---
 
-{{< problem-meta category="Theoretical A" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/3-animal-physiology/respiratory-physiology/">Respiratory Physiology</a>
@@ -21,4 +21,4 @@ On your answer sheet, indicate "T" for true statements and "F" for false ones.
 
 ---
 
-Question reproduced from **IBO 2024, Theoretical Exam Part A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2024/theoretical-a-exam.pdf#page=57) · [Community solutions (unofficial)](/papers/ibo/2024/theoretical-a-solutions.docx)
+Question reproduced from **IBO 2024, Theoretical Exam Part A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2024/theoretical-a-exam.pdf#page=57) · [Community solutions (unofficial)](/papers/ibo/2024/theoretical-a-solutions.docx)

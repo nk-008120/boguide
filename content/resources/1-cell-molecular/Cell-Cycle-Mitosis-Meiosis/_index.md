@@ -1,7 +1,7 @@
 ---
 title: "Cell Cycle, Mitosis & Meiosis"
 weight: 7
-description: "The phases of the cell cycle and its checkpoint controls, the stages of mitosis and cytokinesis, and the chromosome mechanics of meiosis I and II — scoped to mechanism, not the genetic consequences (linkage, recombination frequency), which belong to Genetics."
+description: "The phases of the cell cycle and its checkpoint controls, the stages of mitosis and cytokinesis, and the chromosome mechanics of meiosis I and II, scoped to mechanism, not the genetic consequences (linkage, recombination frequency), which belong to Genetics."
 difficulty: "intermediate"
 prerequisites: ["Cytoskeleton-Motor-Proteins"]
 syllabus_tags: ["IBO", "USABO", "cell-biology"]
@@ -12,7 +12,7 @@ syllabus_tags: ["IBO", "USABO", "cell-biology"]
 
 ## Overview
 
-**Scope note**: this page covers the mechanics of how chromosomes move and divide: cell cycle regulation, mitotic stages, and the chromosome behaviour of meiosis I and II. The *genetic consequences* of meiosis — independent assortment (see [Mendel's Laws & Probability in Genetics](/resources/7-genetics/mendelian-inheritance-probability/)), crossing-over-derived recombination frequency and linkage mapping (see [Linkage, Recombination & Genetic Mapping](/resources/7-genetics/linkage-recombination-genetic-mapping/)) — are covered in Genetics, not repeated here; this page is the mechanistic foundation those topics build on.
+**Scope note**: this page covers the mechanics of how chromosomes move and divide: cell cycle regulation, mitotic stages, and the chromosome behaviour of meiosis I and II. The *genetic consequences* of meiosis, independent assortment (see [Mendel's Laws & Probability in Genetics](/resources/7-genetics/mendelian-inheritance-probability/)), crossing-over-derived recombination frequency and linkage mapping (see [Linkage, Recombination & Genetic Mapping](/resources/7-genetics/linkage-recombination-genetic-mapping/)), are covered in Genetics, not repeated here; this page is the mechanistic foundation those topics build on.
 
 ## Key Concepts
 
@@ -36,8 +36,8 @@ Loss of checkpoint function is a recurring cancer mechanism: tumour suppressor g
 Mitosis divides a duplicated genome (sister chromatids) into two genetically identical daughter nuclei:
 
 1. **Prophase**: chromatin condenses into visible chromosomes (each still consisting of two sister chromatids joined at the centromere); the mitotic spindle begins forming as centrosomes migrate toward opposite poles.
-2. **Prometaphase**: the nuclear envelope breaks down (requiring depolymerisation of the nuclear lamina — see [Cytoskeleton & Motor Proteins](../cytoskeleton-motor-proteins/)); spindle microtubules invade the nuclear region and begin attaching to kinetochores via dynamic instability-driven search-and-capture (see [Cytoskeleton & Motor Proteins](../cytoskeleton-motor-proteins/)).
-3. **Metaphase**: all chromosomes align at the **metaphase plate**, each properly attached to microtubules from both spindle poles (bi-orientation) — the spindle assembly checkpoint is satisfied at this point.
+2. **Prometaphase**: the nuclear envelope breaks down (requiring depolymerisation of the nuclear lamina, see [Cytoskeleton & Motor Proteins](../cytoskeleton-motor-proteins/)); spindle microtubules invade the nuclear region and begin attaching to kinetochores via dynamic instability-driven search-and-capture (see [Cytoskeleton & Motor Proteins](../cytoskeleton-motor-proteins/)).
+3. **Metaphase**: all chromosomes align at the **metaphase plate**, each properly attached to microtubules from both spindle poles (bi-orientation), the spindle assembly checkpoint is satisfied at this point.
 4. **Anaphase**: sister chromatids separate simultaneously and are pulled toward opposite poles, driven by microtubule shortening at the kinetochore and by motor-protein-driven pole separation.
 5. **Telophase**: chromosomes decondense, nuclear envelopes reform around each set of chromosomes, and the spindle disassembles.
 6. **Cytokinesis** (overlapping with late mitosis, mechanistically separate from it): in animal cells, an actin-myosin **contractile ring** assembles at the cell cortex and constricts, pinching the cell in two (see [Cytoskeleton & Motor Proteins](../cytoskeleton-motor-proteins/) for the actin/myosin mechanism); in plant cells, which have a rigid cell wall preventing this pinching mechanism, a **cell plate** instead forms from the inside outward via vesicle fusion, eventually forming a new cell wall.
@@ -49,7 +49,7 @@ Mitosis divides a duplicated genome (sister chromatids) into two genetically ide
 
 Meiosis produces four genetically distinct haploid cells from one diploid cell, through **two** successive divisions following a single round of DNA replication:
 
-**Meiosis I** ("reductional division," halving chromosome number): homologous chromosomes — not sister chromatids — pair up (**synapsis**) and separate. During prophase I, paired homologs form a **tetrad** (bivalent) and undergo **crossing over** at points of physical contact (**chiasmata**), physically exchanging segments between non-sister chromatids of homologous chromosomes: the mechanistic event underlying genetic recombination (its *consequences* for linkage and recombination frequency belong to Genetics; see [Linkage, Recombination & Genetic Mapping](/resources/7-genetics/linkage-recombination-genetic-mapping/); this page covers only that the physical exchange occurs). At anaphase I, whole homologous chromosomes (each still consisting of two sister chromatids) separate to opposite poles; sister chromatids stay together through this division, unlike in mitosis.
+**Meiosis I** ("reductional division," halving chromosome number): homologous chromosomes, not sister chromatids, pair up (**synapsis**) and separate. During prophase I, paired homologs form a **tetrad** (bivalent) and undergo **crossing over** at points of physical contact (**chiasmata**), physically exchanging segments between non-sister chromatids of homologous chromosomes: the mechanistic event underlying genetic recombination (its *consequences* for linkage and recombination frequency belong to Genetics; see [Linkage, Recombination & Genetic Mapping](/resources/7-genetics/linkage-recombination-genetic-mapping/); this page covers only that the physical exchange occurs). At anaphase I, whole homologous chromosomes (each still consisting of two sister chromatids) separate to opposite poles; sister chromatids stay together through this division, unlike in mitosis.
 
 **Meiosis II** proceeds mechanistically like a mitotic division (no further DNA replication precedes it): sister chromatids separate at anaphase II, producing four haploid cells total.
 
@@ -66,13 +66,13 @@ The key mechanistic distinction from mitosis, worth stating explicitly: **meiosi
 | What separates at anaphase | Sister chromatids | Homologous chromosomes | Sister chromatids |
 | Resulting ploidy | Diploid (2n) | Haploid (n), still 2 chromatids/chromosome | Haploid (n), 1 chromatid/chromosome |
 | Homolog pairing/crossing over | No | Yes (prophase I) | No |
-| Genetic identity of products | Identical to parent cell | — | Genetically distinct from each other and from parent |
+| Genetic identity of products | Identical to parent cell |, | Genetically distinct from each other and from parent |
 | Number of divisions | 1 | (1 of 2) | (2 of 2) |
 
 ## Common Exam Questions
 
 - "At which stage/division does [event] occur?" questions consistently hinge on the sister-chromatid-vs-homologous-chromosome distinction above: always identify *which unit* is separating before naming the stage.
-- "What is the spindle assembly checkpoint checking for, specifically?" — proper bi-oriented kinetochore attachment of every chromosome, not simply "spindle formation" in general terms.
+- "What is the spindle assembly checkpoint checking for, specifically?", proper bi-oriented kinetochore attachment of every chromosome, not simply "spindle formation" in general terms.
 - "Why does loss of *p53* function promote cancer?": because it removes a checkpoint enforcement mechanism, allowing cells with DNA damage to continue dividing rather than arresting or undergoing apoptosis, a mechanistic answer, not simply "it's a tumour suppressor."
 - Cytokinesis mechanism (contractile ring vs. cell plate) is a frequent plant-vs-animal comparison question, always traceable to the presence/absence of a rigid cell wall.
 

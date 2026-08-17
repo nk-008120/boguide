@@ -15,7 +15,7 @@
     
     
     <item>
-      <title>Q1 — C. elegans Apoptosis Gene Network</title>
+      <title>Q1 - C. elegans Apoptosis Gene Network</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -26,7 +26,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -79,7 +79,7 @@
 			&lt;/tr&gt;
 	&lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;This question originally asked you to fill in a four-box pathway diagram on a separate physical answer sheet (not part of this PDF) — reproduced here as two free-response questions instead, working from the same epistasis data.&lt;/p&gt;
+&lt;p&gt;This question originally asked you to fill in a four-box pathway diagram on a separate physical answer sheet (not part of this PDF) - reproduced here as two free-response questions instead, working from the same epistasis data.&lt;/p&gt;
 &lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2019-theoretical-a-q1&#34;&gt;
   &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;free_response&#34; data-answer=&#34;&#34;
          data-explanation=&#34;Epistasis logic: ced9 knock-out alone INCREASES death, so Ced9 normally suppresses death. ced4, ced3 and egl1 knock-outs alone all REDUCE death, so each normally promotes death. In the double knockouts, ced4&amp;amp;ced9 and ced9&amp;amp;ced3 both give the REDUCED phenotype (i.e. ced4/ced3 are epistatic to ced9 — they act downstream of it), while ced9&amp;amp;egl1 gives the INCREASED phenotype (ced9 is epistatic to egl1 — ced9 acts downstream of egl1). That ordering — egl1 upstream of ced9, ced9 upstream of ced4/ced3 — matches the real, well-characterised C. elegans apoptosis pathway: EGL-1 inhibits CED-9; CED-9 inhibits CED-4; CED-4 activates the executioner caspase CED-3. The official key credits either order for the Ced3/Ced4 pair at the two downstream positions.&#34;&gt;
@@ -196,7 +196,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=5&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -204,7 +204,7 @@
     </item>
     
     <item>
-      <title>Q10 — Pressure and Volume Changes During Breathing</title>
+      <title>Q10 - Pressure and Volume Changes During Breathing</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -215,7 +215,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -227,7 +227,7 @@
     &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q10-figure-1.png&#34; alt=&#34;Graph with left axis Hgmm (750–765) and right axis cm³ (2500–3000), x-axis split into phase I and phase II by a dashed vertical line. Curve A oscillates around 760: dips slightly during phase I, rises to a peak (~763) during phase II, then returns to 760. Curve B stays in the 755–758 range throughout, always below 760. Curve C rises from ~751 to ~760 during phase I, then falls steadily to 750 by the end of phase II.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Identify what is represented by letters A, B and C, and the Roman numerals I. and II. Match these symbols (A–C and I–II) with the descriptions below. Every symbol matches one description only, but there are descriptions that do not match any of those — mark those as &amp;ldquo;No match&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Identify what is represented by letters A, B and C, and the Roman numerals I. and II. Match these symbols (A–C and I–II) with the descriptions below. Every symbol matches one description only, but there are descriptions that do not match any of those - mark those as &amp;ldquo;No match&amp;rdquo;.&lt;/p&gt;
 &lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2019-theoretical-a-q10&#34;&gt;
   &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;mcq&#34; data-answer=&#34;O&#34;
          data-explanation=&#34;The intrapleural space&amp;#39;s volume doesn&amp;#39;t meaningfully change during normal breathing in the way this graph tracks — only its pressure does (see Q10.5). No curve on this graph represents it.&#34;&gt;
@@ -430,7 +430,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=21&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -438,7 +438,7 @@
     </item>
     
     <item>
-      <title>Q11 — Acid-Base Balance: Reading a Blood Gas Map</title>
+      <title>Q11 - Acid-Base Balance: Reading a Blood Gas Map</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q11/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -449,7 +449,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -633,7 +633,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=22&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -641,7 +641,7 @@
     </item>
     
     <item>
-      <title>Q12 — Antibiotic Pharmacokinetics in a Cow</title>
+      <title>Q12 - Antibiotic Pharmacokinetics in a Cow</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q12/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -652,7 +652,7 @@
         &lt;p&gt;&lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;script src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js&#34; id=&#34;MathJax-script&#34; async&gt;&lt;/script&gt;
@@ -827,7 +827,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=24&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -835,7 +835,7 @@
     </item>
     
     <item>
-      <title>Q13 — Renal Handling of Glucose</title>
+      <title>Q13 - Renal Handling of Glucose</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q13/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -846,7 +846,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -1019,7 +1019,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=25&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -1027,7 +1027,7 @@
     </item>
     
     <item>
-      <title>Q14 — Liver, Gallbladder, and Kidney Vessels</title>
+      <title>Q14 - Liver, Gallbladder, and Kidney Vessels</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q14/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1038,7 +1038,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -1221,7 +1221,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=26&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -1229,7 +1229,7 @@
     </item>
     
     <item>
-      <title>Q15 — Classifying Hypersensitivity Reactions</title>
+      <title>Q15 - Classifying Hypersensitivity Reactions</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q15/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1240,7 +1240,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -1418,7 +1418,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=27&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -1426,7 +1426,7 @@
     </item>
     
     <item>
-      <title>Q16 — Cochlear Frequency Coding and Sound Pressure</title>
+      <title>Q16 - Cochlear Frequency Coding and Sound Pressure</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q16/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1437,7 +1437,7 @@
         &lt;p&gt;&lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;script src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js&#34; id=&#34;MathJax-script&#34; async&gt;&lt;/script&gt;
@@ -1603,7 +1603,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=28&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -1611,7 +1611,7 @@
     </item>
     
     <item>
-      <title>Q17 — Feeding Time and the Central vs. Peripheral Circadian Clock</title>
+      <title>Q17 - Feeding Time and the Central vs. Peripheral Circadian Clock</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q17/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1622,7 +1622,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -1785,7 +1785,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=29&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -1793,7 +1793,7 @@
     </item>
     
     <item>
-      <title>Q18 — The Thyroid Axis in Five Clinical Scenarios</title>
+      <title>Q18 - The Thyroid Axis in Five Clinical Scenarios</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q18/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1804,7 +1804,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -2082,7 +2082,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=30&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -2090,7 +2090,7 @@
     </item>
     
     <item>
-      <title>Q19 — Thyroid Hormone, Oxidative Stress, and the Heart</title>
+      <title>Q19 - Thyroid Hormone, Oxidative Stress, and the Heart</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q19/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2101,7 +2101,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -2265,7 +2265,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=31&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -2273,7 +2273,7 @@
     </item>
     
     <item>
-      <title>Q2 — CLK Mutation and Circadian PER Oscillations</title>
+      <title>Q2 - CLK Mutation and Circadian PER Oscillations</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2284,7 +2284,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -2500,7 +2500,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=6&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -2508,7 +2508,7 @@
     </item>
     
     <item>
-      <title>Q20 — GNC/GLK Transcription Factors and Chloroplast Development</title>
+      <title>Q20 - GNC/GLK Transcription Factors and Chloroplast Development</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q20/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2519,7 +2519,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -2528,7 +2528,7 @@
 &lt;p&gt;&lt;strong&gt;Plant Anatomy and Physiology&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Two families of transcription factors, GNC and GLK, have been implicated in regulating chloroplast development. The promoters which these transcription factors bind to were identified. These promoters were grouped according to whether the genes were upregulated, or downregulated, when these transcription factors were overexpressed (colour of bar). The percentage of these promoters which contained certain hexamer or octamer sequences was plotted (height of bar). The asterisks indicate significant difference compared to the control.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q20-figure-1.png&#34; alt=&#34;Two bar-chart panels. Top: nine candidate hexamer sequences (GTGATC, TGATCA, CGATCA, ATGATC, GCGATC, ACGATC, CGATCG, CCGATC, AGATCA, GATCTA) on the x-axis, percentage of promoters on the y-axis, grouped bars for Legend 1/2/3, several marked with asterisks — ATGATC and AGATCA are the tallest. Bottom: candidate octamer sequences grouped under “RGATATCY (3’)” (GATATC, AGATATC, GGATATC, RGATATCY) and “RGATTYYYY (1° and 2°)” (AGATTYYC, GGATTYYC, RGATTYYC, GATTYYC, RGATTYYY, AGATTYYY, GGATTYYC, RGATTCC, GATTCC, AGATTTC), bars for Legend 4/5, several marked with asterisks or double asterisks.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q20-figure-1.png&#34; alt=&#34;Two bar-chart panels. Top: nine candidate hexamer sequences (GTGATC, TGATCA, CGATCA, ATGATC, GCGATC, ACGATC, CGATCG, CCGATC, AGATCA, GATCTA) on the x-axis, percentage of promoters on the y-axis, grouped bars for Legend 1/2/3, several marked with asterisks - ATGATC and AGATCA are the tallest. Bottom: candidate octamer sequences grouped under “RGATATCY (3’)” (GATATC, AGATATC, GGATATC, RGATATCY) and “RGATTYYYY (1° and 2°)” (AGATTYYC, GGATTYYC, RGATTYYC, GATTYYC, RGATTYYY, AGATTYYY, GGATTYYC, RGATTCC, GATTCC, AGATTTC), bars for Legend 4/5, several marked with asterisks or double asterisks.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. Axis = % of promoters. Legend 1 = Up-regulated by 35S:GNC. Legend 2 = Down-regulated by 35S:GNC. Legend 3 = Control. Legend 4 = Up-regulated by GLK. Legend 5 = Control.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
@@ -2672,7 +2672,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=33&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -2680,7 +2680,7 @@
     </item>
     
     <item>
-      <title>Q21 — Drought Effects on Olive Leaf Anatomy</title>
+      <title>Q21 - Drought Effects on Olive Leaf Anatomy</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q21/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2691,7 +2691,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -2902,7 +2902,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=35&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -2910,7 +2910,7 @@
     </item>
     
     <item>
-      <title>Q22 — What Limits the Height of the Tallest Trees?</title>
+      <title>Q22 - What Limits the Height of the Tallest Trees?</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q22/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -2921,7 +2921,7 @@
         &lt;p&gt;&lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;script src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js&#34; id=&#34;MathJax-script&#34; async&gt;&lt;/script&gt;
@@ -2945,7 +2945,7 @@
 &lt;em&gt;Fig.1. Axis 1 = Height above ground (m). Axis 2 = Xylem pressure (MPa). Axis 3 = Leaf mass:area (g·m⁻²). Axis 4 = Leaf δ13C (‰). Axis 5 = &amp;ldquo;photosynthetic rate per unit mass&amp;rdquo; Pmax,m (nmol CO2·g⁻¹·s⁻¹).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Pictures of leaves were taken at different heights (numbers are metres of height of sampling):&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q22-figure-2.png&#34; alt=&#34;A row of leaf/frond samples photographed at increasing sampling heights (2, 35, 45, 55, 65, 75, 85, 95, 105, 112 m), showing a clear size gradient — large, broad, elongated leaves at low heights (2m, 35m) shrinking progressively to short, stubby, densely-needled leaves at the greatest heights (95-112m).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q22-figure-2.png&#34; alt=&#34;A row of leaf/frond samples photographed at increasing sampling heights (2, 35, 45, 55, 65, 75, 85, 95, 105, 112 m), showing a clear size gradient - large, broad, elongated leaves at low heights (2m, 35m) shrinking progressively to short, stubby, densely-needled leaves at the greatest heights (95-112m).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.2. Leaf morphology at different sampling heights (m).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Model equations were constructed to predict how different variables influence the maximum height of trees (ψ = leaf water potential; LMA = Leaf Mass:Area ratio; &amp;ldquo;maximum height&amp;rdquo;, h, in the equations refers to the maximum height in metres predicted by the equations, values not shown):&lt;/p&gt;
@@ -3150,7 +3150,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=37&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -3158,7 +3158,7 @@
     </item>
     
     <item>
-      <title>Q23 — Statoliths and Root Geotropism in Microgravity</title>
+      <title>Q23 - Statoliths and Root Geotropism in Microgravity</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q23/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3169,7 +3169,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -3181,7 +3181,7 @@
     &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q23-figure-1.png&#34; alt=&#34;Two scatter-plot panels (A: 1g, B: microgravity), each with a main scatter (x-axis = statocyte transverse position µm, y-axis = statocyte longitudinal position µm) plus marginal histograms (Axis 3 = count). Panel A (1g): points tightly clustered around a mean near (0, -6.9), with a narrow, unimodal transverse histogram. Panel B (microgravity): points much more widely and evenly scattered, mean near (0, -3.7), with a flatter, more spread-out transverse histogram.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. Axis 1 = Statocyte transverse position (µm). Axis 2 = Statocyte longitudinal position (µm). Axis 3 = Count.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Each tile below represents the final growth direction of a root tip relative to the direction of gravity (arrow). Determine which of the diagrams depict the distribution of growing root tips in microgravity and in 1g gravitational force — there are two correct answers for each condition.&lt;/p&gt;
+&lt;p&gt;Each tile below represents the final growth direction of a root tip relative to the direction of gravity (arrow). Determine which of the diagrams depict the distribution of growing root tips in microgravity and in 1g gravitational force - there are two correct answers for each condition.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
     &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q23-figure-2.png&#34; alt=&#34;Seven labeled circular diagrams (A-G), each showing small tick-mark “growth” segments radiating from a circle in different patterns: A = a single dense, tightly-focused directional bundle (straight up); B = segments scattered fairly evenly all the way around the circle; C = two opposite dense bundles (left and right); D = segments scattered around the circle, somewhat sparser than B; E = a dense directional bundle (down) plus some scattered segments around the rest of the circle; F = a dense directional bundle (up) plus a few scattered segments; G = a strongly dominant single directional bundle (down) with almost no scatter elsewhere.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
@@ -3317,7 +3317,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=40&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -3325,7 +3325,7 @@
     </item>
     
     <item>
-      <title>Q24 — Nitric Oxide and Guard Cell K&#43; Currents</title>
+      <title>Q24 - Nitric Oxide and Guard Cell K&#43; Currents</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q24/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3336,19 +3336,19 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
   &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/5-plant-physiology/stomatal-physiology-gas-exchange/&#34;&gt;Stomatal Physiology &amp; Gas Exchange&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;Electrophysiological measurements were carried out on bean guard cells to measure outward K+ currents and how they are modified by various factors. Assume the K+ currents shown are proportional to net changes in intracellular K+ concentration. Currents (I) across the plasma membrane at different voltages (V) were determined after each step of four different experiments:&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Experiment 1&lt;/strong&gt; — Step 1: incubated in washing buffer. Step 2: exposed to exogenous nitric oxide (NO). Step 3: washed in washing buffer.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Experiment 2&lt;/strong&gt; — Step 1: injected with buffer to set cytoplasmic pH to 7.4. Step 2: exposed to exogenous NO. Step 3: washed in washing buffer.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Experiment 3&lt;/strong&gt; — Step 1: incubated in washing buffer. Step 2: exposed to exogenous NO. Step 3: exposed to BAL, a reducing agent known to reduce disulphide bridges in proteins. Step 4: exposed to exogenous NO again.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Experiment 4&lt;/strong&gt; — Step 1: incubated in washing buffer. Step 2: exposed to PAO, an oxidising agent that localises to membranes within the cell. Step 3: washed in washing buffer containing 0.3mM BAL.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Experiment 1&lt;/strong&gt; - Step 1: incubated in washing buffer. Step 2: exposed to exogenous nitric oxide (NO). Step 3: washed in washing buffer.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Experiment 2&lt;/strong&gt; - Step 1: injected with buffer to set cytoplasmic pH to 7.4. Step 2: exposed to exogenous NO. Step 3: washed in washing buffer.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Experiment 3&lt;/strong&gt; - Step 1: incubated in washing buffer. Step 2: exposed to exogenous NO. Step 3: exposed to BAL, a reducing agent known to reduce disulphide bridges in proteins. Step 4: exposed to exogenous NO again.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Experiment 4&lt;/strong&gt; - Step 1: incubated in washing buffer. Step 2: exposed to PAO, an oxidising agent that localises to membranes within the cell. Step 3: washed in washing buffer containing 0.3mM BAL.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q24-figure-1.png&#34; alt=&#34;Four current-voltage (I-V) curve panels, one per experiment, x-axis V (mV, -100 to 50), y-axis I (nA). Experiment 1: Step 1 and Step 3 curves both rise steeply above V=0 (Step 3 highest, up to ~1.4 nA); Step 2 (NO-exposed) stays nearly flat near zero throughout. Experiment 2: same pattern — Step 1/Step 3 rise steeply, Step 2 (NO, with pH clamped to 7.4) stays flat. Experiment 3: Step 1 rises steeply; Step 2 (NO only) stays flat/suppressed; Steps 3 and 4 (after BAL, even with repeated NO exposure) rise again nearly as high as Step 1 — the suppression is reversed. Experiment 4: Step 1 rises steeply; Step 3 (PAO then BAL) also rises to a similar high level; Step 2 (PAO alone) stays flat/suppressed.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q24-figure-1.png&#34; alt=&#34;Four current-voltage (I-V) curve panels, one per experiment, x-axis V (mV, -100 to 50), y-axis I (nA). Experiment 1: Step 1 and Step 3 curves both rise steeply above V=0 (Step 3 highest, up to ~1.4 nA); Step 2 (NO-exposed) stays nearly flat near zero throughout. Experiment 2: same pattern - Step 1/Step 3 rise steeply, Step 2 (NO, with pH clamped to 7.4) stays flat. Experiment 3: Step 1 rises steeply; Step 2 (NO only) stays flat/suppressed; Steps 3 and 4 (after BAL, even with repeated NO exposure) rise again nearly as high as Step 1 - the suppression is reversed. Experiment 4: Step 1 rises steeply; Step 3 (PAO then BAL) also rises to a similar high level; Step 2 (PAO alone) stays flat/suppressed.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Based on the information above, indicate with an X if each of the following statements is true (T) or false (F).&lt;/p&gt;
@@ -3490,7 +3490,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=42&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -3498,7 +3498,7 @@
     </item>
     
     <item>
-      <title>Q25 — The Luria–Delbrück Replica Plating Experiment</title>
+      <title>Q25 - The Luria–Delbrück Replica Plating Experiment</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q25/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3509,14 +3509,14 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
   &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/15-evolution/genetic-drift-gene-flow-and-mutation/&#34;&gt;Genetic Drift, Gene Flow &amp; Mutation&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Genetics and Evolution&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;A test tube contains a suspension of bacteria that were never exposed to the antibiotic kanamycin. The bacteria were spread onto a so-called master plate, which contains nutrients for the bacteria and does not contain kanamycin. Millions of colonies (descendants of a single founder bacterium) developed on the master plate. Replicas (copies) of the master plate colonies were stamped — with a sterile velvet plate — onto three replica plates that contained growth medium supplemented with kanamycin.&lt;/p&gt;
+&lt;p&gt;A test tube contains a suspension of bacteria that were never exposed to the antibiotic kanamycin. The bacteria were spread onto a so-called master plate, which contains nutrients for the bacteria and does not contain kanamycin. Millions of colonies (descendants of a single founder bacterium) developed on the master plate. Replicas (copies) of the master plate colonies were stamped - with a sterile velvet plate - onto three replica plates that contained growth medium supplemented with kanamycin.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
     &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q25-figure-1.png&#34; alt=&#34;Diagram showing a cylindrical velvet-covered stamp being pressed onto a “Master plate” (a petri dish with several colonies marked as dots), then the same stamp transferring an identical pattern of colonies onto three separate “Replica plates” (each also petri dishes containing kanamycin).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
@@ -3685,7 +3685,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=44&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -3693,7 +3693,7 @@
     </item>
     
     <item>
-      <title>Q26 — Inheritance of Sterility in a Pedigree</title>
+      <title>Q26 - Inheritance of Sterility in a Pedigree</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q26/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3704,7 +3704,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -3844,7 +3844,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=45&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -3852,7 +3852,7 @@
     </item>
     
     <item>
-      <title>Q27 — Baldness, Rh Factor, and Genetic Counselling</title>
+      <title>Q27 - Baldness, Rh Factor, and Genetic Counselling</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q27/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -3863,7 +3863,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -4083,7 +4083,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=46&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -4091,7 +4091,7 @@
     </item>
     
     <item>
-      <title>Q28 — How Long Until a Random Sequence Repeats in the Genome?</title>
+      <title>Q28 - How Long Until a Random Sequence Repeats in the Genome?</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q28/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4102,7 +4102,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -4222,7 +4222,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=47&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -4230,7 +4230,7 @@
     </item>
     
     <item>
-      <title>Q29 — Reverse-Engineering a Peptide-Shortening Mutation</title>
+      <title>Q29 - Reverse-Engineering a Peptide-Shortening Mutation</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q29/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4241,7 +4241,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -4369,7 +4369,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=48&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -4377,7 +4377,7 @@
     </item>
     
     <item>
-      <title>Q3 — GPCR Signalling and a Toxin Acting on the Gs Cycle</title>
+      <title>Q3 - GPCR Signalling and a Toxin Acting on the Gs Cycle</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4388,7 +4388,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -4402,7 +4402,7 @@
 &lt;p&gt;A lab is working on a pair of newly identified GPCRs, &amp;ldquo;GPCR-A&amp;rdquo; and &amp;ldquo;GPCR-B&amp;rdquo;. Each binds the same small ligand with the same affinity but activates different G-proteins that act on adenylyl cyclase. When activated, GPCR-A causes an increase in adenylyl cyclase activity, while GPCR-B causes a decrease in adenylyl cyclase activity. They have a cell line that expresses both GPCR-A, GPCR-B, the corresponding G-proteins, and adenylyl cyclase. There is a basal level of adenylyl cyclase activity that produces a baseline cAMP concentration.&lt;/p&gt;
 &lt;p&gt;A member of the lab studying a pathogenic bacterium has discovered that it secretes a toxin that interferes with the mentioned signalling pathway. To determine how this toxin acts, she did an experiment in which she looked at intracellular cAMP levels in untreated and toxin treated cells (the original ligand of the receptors was not added in either of the experiments).&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q3-figure-2.png&#34; alt=&#34;Bar chart: intracellular cAMP concentration, untreated (Legend 1, low, ~1.3 pmol/mL) vs. toxin-treated (Legend 2, high, ~19 pmol/mL) — no ligand added in either condition.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q3-figure-2.png&#34; alt=&#34;Bar chart: intracellular cAMP concentration, untreated (Legend 1, low, ~1.3 pmol/mL) vs. toxin-treated (Legend 2, high, ~19 pmol/mL) - no ligand added in either condition.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.2. Axis = cAMP concentration (pmol/mL). Legend 1 = Toxin −. Legend 2 = Toxin +.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Indicate with an &lt;strong&gt;X&lt;/strong&gt; whether each of the following mutations increase (A), leave not changed (B), or decrease (C) the intracellular levels of cAMP upon ligand addition, in the absence of the toxin. Remember, both GPCR-A and GPCR-B bind the same ligand! (Q3.1–Q3.6)&lt;/p&gt;
@@ -4607,7 +4607,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=8&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -4615,7 +4615,7 @@
     </item>
     
     <item>
-      <title>Q30 — An X-Linked, Epigenetically-Acting Eye-Colour Gene</title>
+      <title>Q30 - An X-Linked, Epigenetically-Acting Eye-Colour Gene</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q30/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4626,7 +4626,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -4640,7 +4640,7 @@
 &lt;li&gt;Ec+/Ec females × Ec/Y males&lt;/li&gt;
 &lt;li&gt;Ec+/Ec females × Ec+/Y males&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Use one letter from each group — (A-C) proportion, (D-H) genotype, (K-L) phenotype — in each box you fill in (three letters per box). Note that not all boxes need to be filled; if a box should remain empty, indicate that with an &amp;ldquo;X&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Use one letter from each group - (A-C) proportion, (D-H) genotype, (K-L) phenotype - in each box you fill in (three letters per box). Note that not all boxes need to be filled; if a box should remain empty, indicate that with an &amp;ldquo;X&amp;rdquo;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;A. 25%&lt;/li&gt;
 &lt;li&gt;B. 50%&lt;/li&gt;
@@ -4774,7 +4774,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=49&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -4782,7 +4782,7 @@
     </item>
     
     <item>
-      <title>Q31 — Smallmouth Bass Removal and Population Structure</title>
+      <title>Q31 - Smallmouth Bass Removal and Population Structure</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q31/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4793,7 +4793,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -4952,7 +4952,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=50&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -4960,7 +4960,7 @@
     </item>
     
     <item>
-      <title>Q32 — The SIR Model of Parasite Population Dynamics</title>
+      <title>Q32 - The SIR Model of Parasite Population Dynamics</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q32/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -4971,7 +4971,7 @@
         &lt;p&gt;&lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;script src=&#34;https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js&#34; id=&#34;MathJax-script&#34; async&gt;&lt;/script&gt;
@@ -4988,7 +4988,7 @@
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
   &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/8-ecology/&#34;&gt;Ecology&lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;The population dynamics of parasite species is complex, because the size of the parasite and host populations affect each other. One popular model is the SIR model (Susceptible – Infected – Recovered). You can get the changes in host-type numbers by multiplying the original host number by the factor above the arrow — for example, the number of hosts recovering in a given time is $\gamma \cdot I$.&lt;/p&gt;
+&lt;p&gt;The population dynamics of parasite species is complex, because the size of the parasite and host populations affect each other. One popular model is the SIR model (Susceptible – Infected – Recovered). You can get the changes in host-type numbers by multiplying the original host number by the factor above the arrow - for example, the number of hosts recovering in a given time is $\gamma \cdot I$.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
     &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q32-figure-1.png&#34; alt=&#34;Flow diagram: three boxes S (susceptible), I (infected), R (recovered), connected left to right by arrows labeled β·I (S→I) and γ (I→R). A looping arrow labeled b feeds new births back into S from all three compartments. Downward arrows from each box show death: μ from S, μ&amp;#43;α from I, μ from R.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
@@ -5191,7 +5191,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=51&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -5199,7 +5199,7 @@
     </item>
     
     <item>
-      <title>Q33 — Tracing Indirect Effects Through a Food Web</title>
+      <title>Q33 - Tracing Indirect Effects Through a Food Web</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q33/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -5210,7 +5210,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -5394,7 +5394,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=53&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -5402,7 +5402,7 @@
     </item>
     
     <item>
-      <title>Q34 — Assembling a Bird Phylogenetic Tree from Fragments</title>
+      <title>Q34 - Assembling a Bird Phylogenetic Tree from Fragments</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q34/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -5413,7 +5413,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -5680,7 +5680,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=54&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -5688,7 +5688,7 @@
     </item>
     
     <item>
-      <title>Q35 — A New Gall Wasp Genus: Molecular Systematics</title>
+      <title>Q35 - A New Gall Wasp Genus: Molecular Systematics</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q35/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -5699,7 +5699,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -5849,7 +5849,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=56&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -5857,7 +5857,7 @@
     </item>
     
     <item>
-      <title>Q36 — Reconciling Two Independent Legume Phylogenies</title>
+      <title>Q36 - Reconciling Two Independent Legume Phylogenies</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q36/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -5868,7 +5868,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -5880,7 +5880,7 @@
   &lt;/span&gt;
 &lt;em&gt;Fig.1 &amp;amp; Fig.2. Phylogenetic trees of legume genera from two independent studies.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Q.36.1&lt;/strong&gt;: Is there any genus with conflicting results from the phylogenetic trees above?&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Q.36.2&lt;/strong&gt;: This is the combined tree from the two trees above. Some missing genera are indicated with letters (A, B, etc.) — your task is to find which genus belongs to which letter. A letter can symbolize more than one genus; if a genus doesn&amp;rsquo;t occur in the tree at all, indicate that with &amp;ldquo;Q&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Q.36.2&lt;/strong&gt;: This is the combined tree from the two trees above. Some missing genera are indicated with letters (A, B, etc.) - your task is to find which genus belongs to which letter. A letter can symbolize more than one genus; if a genus doesn&amp;rsquo;t occur in the tree at all, indicate that with &amp;ldquo;Q&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
     &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q36-figure-2.png&#34; alt=&#34;A combined/consensus cladogram with several tips replaced by placeholder letters: a “Sesbania &amp;#43; A” pair; a separate “Galega” branch; a “Medicago &amp;#43; Melilotus &amp;#43; B” group; a “Lens &amp;#43; C &amp;#43; Pisum” group, together with “D” forming a larger clade; a “Phaseolus &amp;#43; E” pair; a separate “Lupinus” branch; and a separate “F” branch, all joined into one overall tree.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
@@ -6211,7 +6211,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=57&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -6219,7 +6219,7 @@
     </item>
     
     <item>
-      <title>Q37 — Why Bats Collide With Smooth Surfaces</title>
+      <title>Q37 - Why Bats Collide With Smooth Surfaces</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q37/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -6230,7 +6230,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -6244,7 +6244,7 @@
 &lt;em&gt;Fig.1. Legend 1 = High-speed cameras.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;In a second experiment, the metal plate was instead placed on the floor, and bats were recorded attempting to drink from, or colliding with, the wall, floor, or the plate on the floor.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q37-figure-2.png&#34; alt=&#34;Two box-plot panels (Title 1: horizontally placed metal plate; Title 2: vertically placed metal plate) each with four categories on the x-axis (L1 = drink from ground, L2 = drink from plate, L3 = collision with wall, L4 = collision with plate) and y-axis = percentage of occurrence. Title 1 (horizontal plate): L1, L3, L4 all near zero; L2 (drink from plate) shows a large box spanning roughly 0-47% with a median around 22% and a long upper whisker to ~68% — bats frequently attempted to drink from the horizontal plate. Title 2 (vertical plate): L1, L2, L3 all near zero; L4 (collision with plate) shows a moderate box spanning roughly 6-20% with a median around 12% — bats frequently collided with the vertical plate instead.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q37-figure-2.png&#34; alt=&#34;Two box-plot panels (Title 1: horizontally placed metal plate; Title 2: vertically placed metal plate) each with four categories on the x-axis (L1 = drink from ground, L2 = drink from plate, L3 = collision with wall, L4 = collision with plate) and y-axis = percentage of occurrence. Title 1 (horizontal plate): L1, L3, L4 all near zero; L2 (drink from plate) shows a large box spanning roughly 0-47% with a median around 22% and a long upper whisker to ~68% - bats frequently attempted to drink from the horizontal plate. Title 2 (vertical plate): L1, L2, L3 all near zero; L4 (collision with plate) shows a moderate box spanning roughly 6-20% with a median around 12% - bats frequently collided with the vertical plate instead.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.2. Percentage of drinking attempts and collision events in box plots. Values were calculated per individual relative to its total number of passes through the corridor. Title 1 = Horizontally placed metal plate. Title 2 = Vertically placed metal plate. Axis = Percentage of occurrence. L1 = drink from ground. L2 = drink from plate. L3 = collision with wall. L4 = collision with plate.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Why do bats react differently to smooth surfaces than to others? Indicate with an X if each of the following statements is true (T) or false (F).&lt;/p&gt;
@@ -6419,7 +6419,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=59&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -6427,7 +6427,7 @@
     </item>
     
     <item>
-      <title>Q38 — Attractant vs. Repellent Pheromones in Pharaoh Ants</title>
+      <title>Q38 - Attractant vs. Repellent Pheromones in Pharaoh Ants</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q38/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -6438,7 +6438,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -6620,7 +6620,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=61&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -6628,7 +6628,7 @@
     </item>
     
     <item>
-      <title>Q4 — CDK Knockout and Liver Regeneration</title>
+      <title>Q4 - CDK Knockout and Liver Regeneration</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -6639,7 +6639,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -6802,7 +6802,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=10&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -6810,7 +6810,7 @@
     </item>
     
     <item>
-      <title>Q5 — UCP Family and Non-Shivering Thermogenesis</title>
+      <title>Q5 - UCP Family and Non-Shivering Thermogenesis</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -6821,7 +6821,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -7014,7 +7014,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=12&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -7022,7 +7022,7 @@
     </item>
     
     <item>
-      <title>Q6 — A Two-Polypeptide Gene with an Intron</title>
+      <title>Q6 - A Two-Polypeptide Gene with an Intron</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -7033,7 +7033,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -7055,7 +7055,7 @@
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;(intron, bold in the original: &lt;strong&gt;GATCTATA&lt;/strong&gt; / &lt;strong&gt;CTAGATAT&lt;/strong&gt; — the underlined base pair for Q6.5 is the C:G pair immediately after the intron.)&lt;/p&gt;
+&lt;p&gt;(intron, bold in the original: &lt;strong&gt;GATCTATA&lt;/strong&gt; / &lt;strong&gt;CTAGATAT&lt;/strong&gt; - the underlined base pair for Q6.5 is the C:G pair immediately after the intron.)&lt;/p&gt;
 &lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2019-theoretical-a-q6&#34;&gt;
   &lt;div class=&#34;tf-quiz&#34;&gt;&lt;div class=&#34;tf-quiz-row&#34; data-type=&#34;numeric&#34; data-expected=&#34;50&#34; data-tolerance=&#34;0&#34;
          data-explanation=&#34;Splicing removes the 8-nucleotide intron from the 58-nucleotide pre-mRNA: 58 − 8 = 50 nucleotides.&#34;&gt;
@@ -7199,7 +7199,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=14&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -7207,7 +7207,7 @@
     </item>
     
     <item>
-      <title>Q7 — Thermus szegediensis: Nutrition and Complementation</title>
+      <title>Q7 - Thermus szegediensis: Nutrition and Complementation</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -7218,7 +7218,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -7570,7 +7570,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=15&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -7578,7 +7578,7 @@
     </item>
     
     <item>
-      <title>Q8 — Beadle &amp; Tatum: One Gene, One Enzyme</title>
+      <title>Q8 - Beadle &amp; Tatum: One Gene, One Enzyme</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -7589,7 +7589,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -7984,7 +7984,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=17&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
@@ -7992,7 +7992,7 @@
     </item>
     
     <item>
-      <title>Q9 — Bulb1/Bulb2 and the UV-B Response in Arabidopsis</title>
+      <title>Q9 - Bulb1/Bulb2 and the UV-B Response in Arabidopsis</title>
       <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -8003,7 +8003,7 @@
         &lt;div class=&#34;topic-meta&#34;&gt;
   &lt;span class=&#34;badge-custom&#34;&gt;Theoretical A&lt;/span&gt;
   
-  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question — full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
+  &lt;span class=&#34;badge-curiosity&#34;&gt;Real exam question - full text reproduced under IBO&amp;#39;s CC BY-NC-SA 4.0 license&lt;/span&gt;
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
@@ -8184,7 +8184,7 @@
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
-    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; — attributed to the International Biology Olympiad. &lt;a
+    href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=19&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
     href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 

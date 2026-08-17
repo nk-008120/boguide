@@ -1,8 +1,8 @@
 ---
-title: "Q28 — How Long Until a Random Sequence Repeats in the Genome?"
+title: "Q28 - How Long Until a Random Sequence Repeats in the Genome?"
 ---
 
-{{< problem-meta category="Theoretical A" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/1-cell-molecular/nucleotide-nucleic-acid-chemistry/">Nucleotide & Nucleic Acid Chemistry</a>
@@ -16,4 +16,4 @@ The human genome is composed of about 3×10⁹ base pairs. Assume that the distr
 
 ---
 
-Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=47) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)
+Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=47) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)

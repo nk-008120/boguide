@@ -24,7 +24,7 @@ Sexual selection operates through two distinguishable routes, and exam questions
 ![Comparative fitness-trade-off figure contrasting an "additive model" (parent-offspring begging conflict) against a "multiplicative model" of mate choice (illustrated with a peacock and peahen), each showing benefit, trade-off, and resulting fitness curves against a shared resource axis.](/ETHOLOGYPICS/peacock-train-diagram.png)
 *Source: Springer/BMC Biology*
 
-- **Intrasexual selection** (mate competition) — members of one sex (typically male) compete directly with each other for access to mates, so that traits favoring competitive success (large body size, weapons, aggression) increase in frequency through winning contests rather than through being chosen. Elephant seal male bulls, which fight for control of a harem and show extreme size dimorphism relative to females as a direct result, are the standard example.
+- **Intrasexual selection** (mate competition), members of one sex (typically male) compete directly with each other for access to mates, so that traits favoring competitive success (large body size, weapons, aggression) increase in frequency through winning contests rather than through being chosen. Elephant seal male bulls, which fight for control of a harem and show extreme size dimorphism relative to females as a direct result, are the standard example.
 
 ![Illustration of adult male, adult female, and pup elephant seals to scale, showing the male's much greater size and distinctive proboscis compared to the female.](/ETHOLOGYPICS/elephant-seal-sexual-dimorphism-diagram.jpg)
 *Source: ScienceDirect Topics (northern elephant seal)*
@@ -43,7 +43,7 @@ Mating systems are classified by how many mates each sex has across a breeding s
 |---|---|---|---|
 | Monogamy | One male, one female | Offspring require investment from both parents to survive | Many songbirds (often with some extra-pair mating despite social monogamy) |
 | Polygyny | One male, multiple females | High potential male reproductive payoff, defensible females or resources | Elephant seals, red deer harems |
-| Polyandry | One female, multiple males | Sex-role reversal — male investment exceeds female's | Phalaropes (female is larger, more brightly colored, competes for males; male alone incubates) |
+| Polyandry | One female, multiple males | Sex-role reversal, male investment exceeds female's | Phalaropes (female is larger, more brightly colored, competes for males; male alone incubates) |
 | Promiscuity | Multiple mates, no pair bond, either sex | Little or no benefit to pairing; offspring survival doesn't depend on biparental care | Chimpanzees |
 
 ![Mating system diagram using blue (male) and pink (female) icons and arrows: monogamy (1:1), polygyny (1 male:multiple females), polyandry (multiple males:1 female), polygynandry (multiple:multiple, with parental investment), and promiscuity (multiple:multiple, without parental investment).](/ETHOLOGYPICS/mating-system-diversity-table-graphic.jpg)
@@ -51,17 +51,17 @@ Mating systems are classified by how many mates each sex has across a breeding s
 
 **Sex-role reversal** in phalaropes and pipefish/seahorses (in the latter, males brood fertilized eggs in a specialized pouch, making male investment per offspring exceed female's) is a heavily tested confirmation of parental investment theory precisely because it demonstrates the *investment asymmetry*, not male/female identity per se, is the causal variable: when investment reverses, so does the pattern of choosiness and competition.
 
-![Three photographs of red phalaropes in breeding plumage: (1) a typical male, (2-3) females — females are the more brightly colored, more strikingly patterned sex in this species, the reverse of the usual vertebrate pattern.](/ETHOLOGYPICS/phalarope-sex-role-reversal-diagram.jpg)
+![Three photographs of red phalaropes in breeding plumage: (1) a typical male, (2-3) females, females are the more brightly colored, more strikingly patterned sex in this species, the reverse of the usual vertebrate pattern.](/ETHOLOGYPICS/phalarope-sex-role-reversal-diagram.jpg)
 *Source: ResearchGate*
 
 ### Sperm Competition
 
-**Sperm competition** occurs whenever a female mates with multiple males within a single reproductive cycle, so that sperm from different males compete directly to fertilize the same set of eggs — this creates selection on males for traits that increase paternity share independent of pre-copulatory mate choice or combat. Documented adaptations include: **increased relative testis size** and sperm production in species/populations with higher female mating promiscuity (confirmed comparatively across primates — chimpanzees, which are highly promiscuous, have much larger relative testis size than gorillas, which are polygynous with low female mating rates, despite gorillas being far larger overall); **mate guarding** (a male remaining with a female after mating to prevent her from remating before fertilization); and **copulatory plugs** (a physical barrier left in the female reproductive tract after mating, documented in some rodents and insects, that delays or blocks subsequent males' sperm from reaching the eggs).
+**Sperm competition** occurs whenever a female mates with multiple males within a single reproductive cycle, so that sperm from different males compete directly to fertilize the same set of eggs, this creates selection on males for traits that increase paternity share independent of pre-copulatory mate choice or combat. Documented adaptations include: **increased relative testis size** and sperm production in species/populations with higher female mating promiscuity (confirmed comparatively across primates, chimpanzees, which are highly promiscuous, have much larger relative testis size than gorillas, which are polygynous with low female mating rates, despite gorillas being far larger overall); **mate guarding** (a male remaining with a female after mating to prevent her from remating before fertilization); and **copulatory plugs** (a physical barrier left in the female reproductive tract after mating, documented in some rodents and insects, that delays or blocks subsequent males' sperm from reaching the eggs).
 
 ![IBO 2023 (34th International Biology Olympiad, Theory 2, Q.35) exam question: a table of three primate species' male body mass, male-to-female body mass ratio, testes-mass-to-body-mass ratio, and typical offspring number, with four multiple-choice questions asking which species is predicted to have the highest male aggression, highest variance in matings per male, multi-male multi-female grouping, and male parental care.](/ETHOLOGYPICS/ibo-for-8.png)
-*Source: International Biology Olympiad 2023, Theory 2 (official exam) — submitted as a substitute for the originally-requested testis-size chart, and a better fit for the IBO/USABO syllabus this guide targets: a real released exam question testing the exact testis-mass/body-mass/mating-system inference logic described in the text.*
+*Source: International Biology Olympiad 2023, Theory 2 (official exam), submitted as a substitute for the originally-requested testis-size chart, and a better fit for the IBO/USABO syllabus this guide targets: a real released exam question testing the exact testis-mass/body-mass/mating-system inference logic described in the text.*
 
-![Official IBO 2023 answer key and reasoning for Q.35, citing Harcourt, Harvey, Larson & Short (1981) "Testis weight, body weight and breeding system in primates," Nature 293 — the same foundational comparative-primatology paper underlying the chimpanzee-vs-gorilla testis-size claim in the text.](/ETHOLOGYPICS/ibo-for-82.png)
+![Official IBO 2023 answer key and reasoning for Q.35, citing Harcourt, Harvey, Larson & Short (1981) "Testis weight, body weight and breeding system in primates," Nature 293, the same foundational comparative-primatology paper underlying the chimpanzee-vs-gorilla testis-size claim in the text.](/ETHOLOGYPICS/ibo-for-82.png)
 *Source: International Biology Olympiad 2023, Theory 2 (official answer key)*
 
 {{< youtube eBBMNsGFYpE >}}
@@ -74,7 +74,7 @@ Mating systems are classified by how many mates each sex has across a breeding s
 | Elephant seal harem combat | Intrasexual | Males compete | Elephant seals |
 | Red deer antlers | Both simultaneously | Both | Red deer stags |
 | Phalarope sex-role reversal | Intersexual, reversed | Males choose (females compete) | Phalaropes |
-| Relative testis size | Post-copulatory (sperm competition) | N/A — operates after mating | Chimpanzee vs. gorilla testis size |
+| Relative testis size | Post-copulatory (sperm competition) | N/A, operates after mating | Chimpanzee vs. gorilla testis size |
 
 ## Common Exam Questions
 
@@ -93,14 +93,14 @@ Mating systems are classified by how many mates each sex has across a breeding s
 
 {{< iframe src="/parental-investment-predictor.html" title="Parental Investment Asymmetry Predictor" height="400px" >}}
 
-- **Mating system classifier (drag-and-drop, HTML/JS)** — named species scenarios (with brief mating-behavior descriptions) sorted into monogamy/polygyny/polyandry/promiscuity bins, reinforcing the classification against real examples rather than abstract definitions.
+- **Mating system classifier (drag-and-drop, HTML/JS)**, named species scenarios (with brief mating-behavior descriptions) sorted into monogamy/polygyny/polyandry/promiscuity bins, reinforcing the classification against real examples rather than abstract definitions.
 
 {{< iframe src="/mating-system-classifier.html" title="Mating System Classifier" height="480px" >}}
 
 **Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
 
-<!-- VIDEO: Phalarope courtship behavior showing females competing for mate access — Phalaropus species — the reversed courtship dynamic (typically female-initiated pursuit) is the clearest possible demonstration that investment, not sex identity, drives the behavioral pattern -->
-<!-- Submitted source (youtube.com/watch?v=br6GtnNNJv0, "Phun with Phalaropes! The bird that spins in circles") is about phalarope feeding-spin behavior, not courtship/mate-competition — not embedded. Send a courtship-specific clip if one is available. -->
+<!-- VIDEO: Phalarope courtship behavior showing females competing for mate access, Phalaropus species, the reversed courtship dynamic (typically female-initiated pursuit) is the clearest possible demonstration that investment, not sex identity, drives the behavioral pattern -->
+<!-- Submitted source (youtube.com/watch?v=br6GtnNNJv0, "Phun with Phalaropes! The bird that spins in circles") is about phalarope feeding-spin behavior, not courtship/mate-competition, not embedded. Send a courtship-specific clip if one is available. -->
 
 ## Practice Problems
 

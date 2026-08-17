@@ -1,12 +1,12 @@
 ---
-title: "Timed Attempt — Theoretical A"
+title: "Timed Attempt - Theoretical A"
 ---
 
 <div id="papers-attempt-root" class="papers-attempt-root">
 
 <section id="attempt-start" class="attempt-screen">
-  <h2>Timed Attempt — Theoretical A</h2>
-  <p>50 questions · 195 minutes. Once you start, the page will try to go fullscreen and the timer begins immediately — there's no pause. You can jump to any question in any order, mark questions for review, and change answers freely before submitting. Subject categories are hidden until after you submit.</p>
+  <h2>Timed Attempt - Theoretical A</h2>
+  <p>50 questions · 195 minutes. Once you start, the page will try to go fullscreen and the timer begins immediately - there's no pause. You can jump to any question in any order, mark questions for review, and change answers freely before submitting. Subject categories are hidden until after you submit.</p>
   <div id="attempt-last-report-summary"></div>
   <button type="button" id="attempt-start-btn" class="papers-nav-btn papers-nav-next">Start Timed Attempt</button>
 </section>

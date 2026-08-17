@@ -2454,10 +2454,10 @@ Since 13.0 &gt; 7.815, the improvement is significant → GTR+G fits significant
 </div><div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-tabs-00-" role="tabpanel" aria-labelledby="tabs-tab-tabs-00-" aria-hidden="true"></div></div>
 
 <script>
-/* BOGuide Dynamic TOC v3 — rewrites from scratch
+/* BOGuide Dynamic TOC v3, rewrites from scratch
    Key fixes vs previous versions:
    1. Panel detection: maps tab button index → panel index, no reliance on [hidden]
-   2. Links: onclick-based, activates the right tab then scrolls — no bare href anchors
+   2. Links: onclick-based, activates the right tab then scrolls, no bare href anchors
    3. Change detection: MutationObserver on aria-selected attribute changes, not click events
    4. Works whether Hextra uses display:none, visibility, or [hidden] to hide panels
 */
@@ -2573,7 +2573,7 @@ Since 13.0 &gt; 7.815, the improvement is significant → GTR+G fits significant
     tocEl.style.display = 'block';
   }
 
-  /* ── TOC link click handler — activate panel then scroll ─────────────── */
+  /* ── TOC link click handler, activate panel then scroll ─────────────── */
   window.boGuideTocNav = function(link) {
     var panelIdx = parseInt(link.getAttribute('data-panel'), 10);
     var hid      = link.getAttribute('data-hid');

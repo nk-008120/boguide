@@ -1,8 +1,8 @@
 ---
-title: "Q16 — Cochlear Frequency Coding and Sound Pressure"
+title: "Q16 - Cochlear Frequency Coding and Sound Pressure"
 ---
 
-{{< problem-meta category="Theoretical A" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 {{< mathjax >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
@@ -31,4 +31,4 @@ Based on the information above, indicate with an X if each of the following stat
 
 ---
 
-Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=28) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)
+Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=28) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)

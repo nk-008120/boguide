@@ -5,7 +5,7 @@ layout: "wide"
 
 <div id="discussions-root" class="discussions-page">
 
-<p class="discussions-intro">Open feedback and discussion for the whole BiOGuide community — ask a question, suggest a feature, report something broken, or just talk shop. Reading is open to everyone; logging in lets you start a thread or reply. <a href="/account/">Create an account</a> if you don't have one yet.</p>
+<p class="discussions-intro">Open feedback and discussion for the whole BiOGuide community, ask a question, suggest a feature, report something broken, or just talk shop. Reading is open to everyone; logging in lets you start a thread or reply. <a href="/account/">Create an account</a> if you don't have one yet.</p>
 
 <section id="discussions-list-view">
   <div id="discussions-new-thread" class="discussions-new-thread"></div>

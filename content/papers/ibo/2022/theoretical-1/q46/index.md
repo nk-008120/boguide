@@ -1,8 +1,8 @@
 ---
-title: "Q46 — Three-Toed Sloth Fur Ecosystem — Moths, Algae, and Fungi"
+title: "Q46 - Three-Toed Sloth Fur Ecosystem - Moths, Algae, and Fungi"
 ---
 
-{{< problem-meta category="Theoretical 1" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/15-evolution/coevolution-and-species-interactions/">Coevolution & Species Interactions</a>
@@ -21,4 +21,4 @@ Using this information, determine whether the following statements are true or f
 
 ---
 
-Question reproduced from **IBO 2022, Theoretical Paper 1**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2022/theoretical-1-exam.pdf#page=69) · [Community solutions (unofficial)](/papers/ibo/2022/theoretical-1-solutions.pdf)
+Question reproduced from **IBO 2022, Theoretical Paper 1**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2022/theoretical-1-exam.pdf#page=69) · [Community solutions (unofficial)](/papers/ibo/2022/theoretical-1-solutions.pdf)

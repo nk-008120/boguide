@@ -1,7 +1,7 @@
 ---
 title: "Human Reproductive System"
 weight: 11
-description: "Testis and ovary histology, spermatogenesis and oogenesis, accessory gland structure, follicular development staging, the fallopian tube/uterus/endometrial cycle, the HPG hormonal feedback axis, and the structural basis of fertilization — split from the combined Digestive/Excretory/Reproductive page for full IBO depth."
+description: "Testis and ovary histology, spermatogenesis and oogenesis, accessory gland structure, follicular development staging, the fallopian tube/uterus/endometrial cycle, the HPG hormonal feedback axis, and the structural basis of fertilization, split from the combined Digestive/Excretory/Reproductive page for full IBO depth."
 difficulty: "advanced"
 prerequisites: ["Body-Plans"]
 syllabus_tags: ["IBO", "USABO", "human-anatomy"]
@@ -11,7 +11,7 @@ syllabus_tags: ["IBO", "USABO", "human-anatomy"]
 
 ## Overview
 
-This page closes the Human Anatomy tier. As with the rest of the tier, the emphasis is structural: named cell types and their specific roles, staged/timed developmental processes, and the histological detail IBO practical stations and theory papers actually test — with hormonal control included only where it's inseparable from the structure it regulates.
+This page closes the Human Anatomy tier. As with the rest of the tier, the emphasis is structural: named cell types and their specific roles, staged/timed developmental processes, and the histological detail IBO practical stations and theory papers actually test, with hormonal control included only where it's inseparable from the structure it regulates.
 
 ## Key Concepts
 
@@ -19,13 +19,13 @@ This page closes the Human Anatomy tier. As with the rest of the tier, the empha
 
 Each **testis** is enclosed in a fibrous capsule, the **tunica albuginea**, which sends septa inward dividing the organ into ~250 lobules, each packed with 1–4 tightly coiled **seminiferous tubules** (combined length per testis: roughly 250 m). In cross-section, a seminiferous tubule shows two functionally distinct cell populations:
 
-- **Sertoli cells**: tall columnar cells spanning the full height of the epithelium, joined to each other near the tubule's basal edge by tight junctions that form the **blood-testis barrier**, physically separating the tubule into a basal compartment (spermatogonia, early primary spermatocytes) and an adluminal compartment (further-developing germ cells) shielded from the immune system and from bloodborne signaling molecules that would disrupt meiosis. Sertoli cells nourish developing germ cells, phagocytose residual cytoplasm shed during spermiogenesis, secrete **androgen-binding protein** (concentrates testosterone locally) and **inhibin** (negative feedback on pituitary FSH — see the HPG axis below).
+- **Sertoli cells**: tall columnar cells spanning the full height of the epithelium, joined to each other near the tubule's basal edge by tight junctions that form the **blood-testis barrier**, physically separating the tubule into a basal compartment (spermatogonia, early primary spermatocytes) and an adluminal compartment (further-developing germ cells) shielded from the immune system and from bloodborne signaling molecules that would disrupt meiosis. Sertoli cells nourish developing germ cells, phagocytose residual cytoplasm shed during spermiogenesis, secrete **androgen-binding protein** (concentrates testosterone locally) and **inhibin** (negative feedback on pituitary FSH, see the HPG axis below).
 - **Spermatogenic cells**, arranged in concentric layers from basal to luminal as they mature: **spermatogonia** (diploid stem cells, mitotic) → **primary spermatocytes** (diploid, enter meiosis I) → **secondary spermatocytes** (haploid, brief, enter meiosis II almost immediately) → **spermatids** (haploid, round, non-motile) → **spermatozoa** (haploid, elongated, released into the lumen, this final differentiation step, without further division, is **spermiogenesis**). Full spermatogenesis takes ~74 days in humans.
 
-![Seminiferous tubule wall cross-section: basal lamina, myoid cells, and Spermatogonium A/B at the base, through the basal/adluminal compartment boundary (junctional complex), primary and secondary spermatocytes, spermatids, and spermatozoa with visible acrosomal vesicles and residual bodies at the lumen — Sertoli cell nucleus and cytoplasm (Golgi apparatus, ER, mitochondria) shown spanning the full epithelial height.](/ANATOMYPICS/seminiferous-tubule-sertoli-cells-cross-section.webp)
+![Seminiferous tubule wall cross-section: basal lamina, myoid cells, and Spermatogonium A/B at the base, through the basal/adluminal compartment boundary (junctional complex), primary and secondary spermatocytes, spermatids, and spermatozoa with visible acrosomal vesicles and residual bodies at the lumen, Sertoli cell nucleus and cytoplasm (Golgi apparatus, ER, mitochondria) shown spanning the full epithelial height.](/ANATOMYPICS/seminiferous-tubule-sertoli-cells-cross-section.webp)
 *Source: Cleveland Clinic Foundation, via a ResearchGate figure.*
 
-Between tubules, in the interstitial connective tissue, **Leydig cells** synthesize testosterone under LH stimulation, anatomically and functionally separate from the Sertoli/germ-cell compartment inside the tubule (Sertoli = supports/nurses germ cells + hormone-binding/inhibin; Leydig = testosterone synthesis — a distinction worth stating explicitly, since exam questions routinely test which cell type does what).
+Between tubules, in the interstitial connective tissue, **Leydig cells** synthesize testosterone under LH stimulation, anatomically and functionally separate from the Sertoli/germ-cell compartment inside the tubule (Sertoli = supports/nurses germ cells + hormone-binding/inhibin; Leydig = testosterone synthesis, a distinction worth stating explicitly, since exam questions routinely test which cell type does what).
 
 A mature **spermatozoon** has three structural regions: the **head** (haploid nucleus + **acrosome**, a Golgi-derived cap of hydrolytic enzymes over the anterior nucleus, required to penetrate the oocyte's coat), the **midpiece** (mitochondria spiraled around the flagellar axoneme, generating ATP for motility), and the **tail/flagellum** (a **9+2 microtubule axoneme**, the same structural motif as cilia elsewhere in the body).
 
@@ -56,7 +56,7 @@ The **ovary** has an outer **cortex** (contains follicles at all stages) and inn
     <h3 style="margin:0; color:#1a472a;">🥚 Follicular Staging Carousel</h3>
     <button id="follQuizToggle" style="padding:6px 14px; border:none; border-radius:30px; background:#2d6a4f; color:white; cursor:pointer; font-weight:500; font-size:0.85rem;">Quiz me</button>
   </div>
-  <p style="font-size:0.85rem; color:#6b7280; margin:0 0 1rem 0;">Click a stage directly, or use Next/Previous to step through follicular development. Toggle "Quiz me" to hide the stage name — identify it from the structural markers alone, then click to reveal.</p>
+  <p style="font-size:0.85rem; color:#6b7280; margin:0 0 1rem 0;">Click a stage directly, or use Next/Previous to step through follicular development. Toggle "Quiz me" to hide the stage name, identify it from the structural markers alone, then click to reveal.</p>
   <div id="follTimeline" style="display:flex; gap:0.3rem; flex-wrap:wrap; margin-bottom:1rem;"></div>
   <div style="font-weight:700; font-size:1.05rem; color:#1a472a; margin-bottom:0.4rem; cursor:pointer;" id="follTitle"></div>
   <div style="font-size:0.9rem; color:#4b5563; min-height:3.6em; margin-bottom:1rem;" id="follMarkers"></div>
@@ -74,7 +74,7 @@ The **ovary** has an outer **cortex** (contains follicles at all stages) and inn
     { name: 'Secondary Follicle', markers: 'Multiple granulosa cell layers; a theca layer differentiates externally (theca interna: steroid-secreting; theca externa: fibrous). Still no antrum.' },
     { name: 'Tertiary (Graafian) Follicle', markers: 'A fluid-filled antrum forms; the oocyte is displaced to one side on a mound of cells, the cumulus oophorus. This is the stage that ovulates.' },
     { name: 'Corpus Luteum', markers: 'Post-ovulation remnant of the ruptured follicle wall, luteinized granulosa and theca cells. Secretes progesterone.' },
-    { name: 'Corpus Albicans', markers: 'Scar tissue — what the corpus luteum regresses into if no implantation occurs.' }
+    { name: 'Corpus Albicans', markers: 'Scar tissue, what the corpus luteum regresses into if no implantation occurs.' }
   ];
   var idx = 0;
   var quizMode = false;
@@ -109,7 +109,7 @@ The **ovary** has an outer **cortex** (contains follicles at all stages) and inn
     });
     var s = stages[idx];
     if (quizMode && !revealed[idx]) {
-      titleEl.textContent = '??? (click to reveal — stage ' + (idx + 1) + ' of ' + stages.length + ')';
+      titleEl.textContent = '??? (click to reveal, stage ' + (idx + 1) + ' of ' + stages.length + ')';
       titleEl.style.color = '#9ca3af';
       titleEl.style.fontStyle = 'italic';
     } else {
@@ -148,7 +148,7 @@ The **uterus** wall has three layers: **perimetrium** (outer serosa), **myometri
 
 ### The HPG Hormonal Feedback Axis
 
-Both gonads' hormone-producing structures, Leydig cells and the follicle/corpus luteum, are themselves controlled by a shared, structurally hierarchical signaling pathway, worth including here because it directly explains *why* the structures above cycle or remain constant: the **hypothalamus** (see [Human Nervous System](../human-nervous-system/)) secretes **GnRH**, stimulating the anterior pituitary to release **FSH** (drives follicle/spermatogenic development) and **LH** (triggers ovulation; drives Leydig cell testosterone production). In males, testosterone and Sertoli-cell inhibin feed back to suppress GnRH/LH and FSH respectively, maintaining relatively constant hormone levels — a structurally continuous, non-cyclic negative feedback loop. In females, estrogen and progesterone feedback is more complex and *not* purely inhibitory: moderate estrogen levels through most of the cycle suppress GnRH/LH/FSH (negative feedback), but the rapid estrogen rise from a maturing Graafian follicle late in the follicular phase briefly switches this to **positive feedback**, triggering the sharp **LH surge** that causes ovulation, a structural switch in feedback sign that is the specific mechanistic trigger for the mid-cycle rupture of the follicle wall described above.
+Both gonads' hormone-producing structures, Leydig cells and the follicle/corpus luteum, are themselves controlled by a shared, structurally hierarchical signaling pathway, worth including here because it directly explains *why* the structures above cycle or remain constant: the **hypothalamus** (see [Human Nervous System](../human-nervous-system/)) secretes **GnRH**, stimulating the anterior pituitary to release **FSH** (drives follicle/spermatogenic development) and **LH** (triggers ovulation; drives Leydig cell testosterone production). In males, testosterone and Sertoli-cell inhibin feed back to suppress GnRH/LH and FSH respectively, maintaining relatively constant hormone levels, a structurally continuous, non-cyclic negative feedback loop. In females, estrogen and progesterone feedback is more complex and *not* purely inhibitory: moderate estrogen levels through most of the cycle suppress GnRH/LH/FSH (negative feedback), but the rapid estrogen rise from a maturing Graafian follicle late in the follicular phase briefly switches this to **positive feedback**, triggering the sharp **LH surge** that causes ovulation, a structural switch in feedback sign that is the specific mechanistic trigger for the mid-cycle rupture of the follicle wall described above.
 
 <div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
   <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">📈 HPG Axis Hormone Cycle Chart</h3>
@@ -202,7 +202,7 @@ Both gonads' hormone-producing structures, Leydig cells and the follicle/corpus 
     function follicularStage(day) {
       if (day <= 4) return 'Early follicular (small antral follicles recruited)';
       if (day <= 12) return 'Follicular (dominant follicle maturing)';
-      if (day <= 14) return 'Tertiary (Graafian) follicle — ovulation ~day 14';
+      if (day <= 14) return 'Tertiary (Graafian) follicle, ovulation ~day 14';
       if (day <= 25) return 'Corpus luteum (secreting progesterone)';
       return 'Corpus luteum regressing → corpus albicans';
     }
@@ -258,8 +258,8 @@ Both gonads' hormone-producing structures, Leydig cells and the follicle/corpus 
 
 A capacitated sperm binds the zona pellucida, undergoes the **acrosome reaction** (acrosomal enzymes digest a path through the zona pellucida), and fuses with the oocyte membrane. Sperm entry triggers the **cortical reaction**, oocyte cortical granules release contents that modify the zona pellucida (**zona hardening**), the structural **block to polyspermy**, preventing additional sperm from fusing.
 
-![Sequence of several sperm approaching and one fusing with the oocyte membrane, showing the zona pellucida, corona radiata, cortical granules, perivitelline space, and — closest to the point of fusion — the cortical reaction spreading laterally beneath the membrane.](/ANATOMYPICS/acrosome-cortical-reaction-fertilization.jpg)
-*Source: user-sourced (originally via Wikipedia "Acrosome reaction"). **All labels in the image are in Polish** — translated here for reference: Osłonka przejrzysta = zona pellucida, Błona komórkowa (komórki jajowej) = (oocyte) cell membrane, Przestrzeń okołożółtkowa = perivitelline space, Ziarna korowe = cortical granules, Główka plemnika = sperm head, Jądro komórkowe = nucleus, Aktyna = actin, Ziarna akrosomalne = acrosomal granules, Wieniec promienisty = corona radiata, Reakcja akrosomalna = acrosomal reaction, Reakcja korowa = cortical reaction, Fuzja błon = membrane fusion, Cytoplazma = cytoplasm. Otherwise an exact structural match for the acrosome/cortical reaction sequence described in the text.*
+![Sequence of several sperm approaching and one fusing with the oocyte membrane, showing the zona pellucida, corona radiata, cortical granules, perivitelline space, and, closest to the point of fusion, the cortical reaction spreading laterally beneath the membrane.](/ANATOMYPICS/acrosome-cortical-reaction-fertilization.jpg)
+*Source: user-sourced (originally via Wikipedia "Acrosome reaction"). **All labels in the image are in Polish**, translated here for reference: Osłonka przejrzysta = zona pellucida, Błona komórkowa (komórki jajowej) = (oocyte) cell membrane, Przestrzeń okołożółtkowa = perivitelline space, Ziarna korowe = cortical granules, Główka plemnika = sperm head, Jądro komórkowe = nucleus, Aktyna = actin, Ziarna akrosomalne = acrosomal granules, Wieniec promienisty = corona radiata, Reakcja akrosomalna = acrosomal reaction, Reakcja korowa = cortical reaction, Fuzja błon = membrane fusion, Cytoplazma = cytoplasm. Otherwise an exact structural match for the acrosome/cortical reaction sequence described in the text.*
 
 ## Comparative Structures
 

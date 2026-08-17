@@ -1,7 +1,7 @@
 ---
 title: "Stomatal Physiology & Gas Exchange"
 weight: 2
-description: "The guard cell turgor mechanism opening and closing the stomatal pore — K+/Cl- ion fluxes, blue-light and CO2 signaling, ABA-triggered closure under water stress — and the resulting trade-off between CO2 uptake for photosynthesis and water loss through transpiration."
+description: "The guard cell turgor mechanism opening and closing the stomatal pore, K+/Cl- ion fluxes, blue-light and CO2 signaling, ABA-triggered closure under water stress, and the resulting trade-off between CO2 uptake for photosynthesis and water loss through transpiration."
 difficulty: "intermediate"
 prerequisites: ["Water-Transport-Transpiration"]
 syllabus_tags: ["IBO", "USABO", "plant-physiology"]
@@ -35,17 +35,17 @@ Subsidiary cells (see [Leaf Anatomy](../../6-plant-anatomy/leaf-anatomy/)) act a
 Guard cells integrate several independent signals into the single opening/closing decision above:
 
 - **Blue light**: detected by **phototropin** photoreceptors in the guard cell plasma membrane, directly activating the H⁺-ATPase and driving opening independent of photosynthesis; this is a dedicated blue-light response, not simply a byproduct of photosynthetic activity in the guard cell's own chloroplasts (which are present but sparse and contribute only modestly to guard cell energy metabolism).
-- **CO₂ concentration** — low intercellular CO₂ (drawn down by active photosynthesis in the mesophyll, see [Carbon Fixation](../calvin-cycle-photorespiration-c4-cam/)) promotes opening; rising CO₂ promotes closing. This creates a feedback loop tying stomatal aperture to the plant's own photosynthetic demand for CO₂, independent of light.
+- **CO₂ concentration**, low intercellular CO₂ (drawn down by active photosynthesis in the mesophyll, see [Carbon Fixation](../calvin-cycle-photorespiration-c4-cam/)) promotes opening; rising CO₂ promotes closing. This creates a feedback loop tying stomatal aperture to the plant's own photosynthetic demand for CO₂, independent of light.
 - **Abscisic acid (ABA)**: synthesized in roots and leaves under water stress (falling soil water potential, wilting) and transported to guard cells, where it triggers a signaling cascade (cytosolic Ca²⁺ increase, cytosolic pH increase) that activates the outward K⁺/anion channels directly, forcing closure regardless of light or CO₂ conditions. ABA-triggered closure is the plant's principal defense against catastrophic water loss and is developed further, alongside ABA's other roles, on [Plant Hormones](../plant-hormones/).
 
 ![Guard cell model of ABA signaling and stomatal closure: ABA triggers cytosolic Ca2+ increase via a Ca2+-permeable channel, activating S-type and R-type anion channels and inhibiting K+in channels, while depolarization and rising pH open K+out channels, together driving K+/anion efflux and guard cell turgor loss](/PLANTPHYSIOPICS/guard-cell-ion-flux-closing.png)
 *Source: ResearchGate, fig. 2, "A guard cell model illustrating the proposed functions of ion channels in ABA signaling"*
 
-- **Circadian rhythm** — most species show endogenous opening near dawn and closing near dusk even under constant experimental conditions, layering a time-of-day baseline on top of the acute signals above.
+- **Circadian rhythm**, most species show endogenous opening near dawn and closing near dusk even under constant experimental conditions, layering a time-of-day baseline on top of the acute signals above.
 
 ### The Photosynthesis-Transpiration Trade-off
 
-Every stoma is a compromise: opening it admits CO₂ for the Calvin cycle (see [Carbon Fixation: Calvin Cycle, Photorespiration & C4/CAM Biochemistry](../calvin-cycle-photorespiration-c4-cam/)) but simultaneously allows water vapor to escape down the same concentration gradient, since the pore cannot be selectively permeable to one gas and not the other. This trade-off is quantified as **water-use efficiency** (moles of CO₂ fixed per mole of water transpired), and it is the underlying reason C4 and CAM anatomy and biochemistry exist at all — both are, at the biochemical level covered on the Carbon Fixation page, strategies to fix more carbon per unit of stomatal opening (C4) or to open stomata only when evaporative demand is lowest (CAM, opening at night), rather than alternative photosynthetic pathways adopted for their own sake.
+Every stoma is a compromise: opening it admits CO₂ for the Calvin cycle (see [Carbon Fixation: Calvin Cycle, Photorespiration & C4/CAM Biochemistry](../calvin-cycle-photorespiration-c4-cam/)) but simultaneously allows water vapor to escape down the same concentration gradient, since the pore cannot be selectively permeable to one gas and not the other. This trade-off is quantified as **water-use efficiency** (moles of CO₂ fixed per mole of water transpired), and it is the underlying reason C4 and CAM anatomy and biochemistry exist at all, both are, at the biochemical level covered on the Carbon Fixation page, strategies to fix more carbon per unit of stomatal opening (C4) or to open stomata only when evaporative demand is lowest (CAM, opening at night), rather than alternative photosynthetic pathways adopted for their own sake.
 
 ## Comparative Structures
 
@@ -69,7 +69,7 @@ Every stoma is a compromise: opening it admits CO₂ for the Calvin cycle (see [
 
 **Interactive**
 
-- **Guard cell ion-flux animator (SVG/JS, no new library)** — a single stomatal complex cross-section with toggleable "opening" and "closing" states; each toggle animates the relevant ion channels/pumps activating, K+/Cl-/malate accumulating or leaving, and the guard cell pair visibly bowing open or relaxing closed in response.
+- **Guard cell ion-flux animator (SVG/JS, no new library)**, a single stomatal complex cross-section with toggleable "opening" and "closing" states; each toggle animates the relevant ion channels/pumps activating, K+/Cl-/malate accumulating or leaving, and the guard cell pair visibly bowing open or relaxing closed in response.
 
 <div id="guard-cell-widget" style="background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:'Inter','Segoe UI',Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
   <svg viewBox="0 0 400 200" width="100%" style="max-width:420px; display:block; margin:0 auto;">
@@ -122,7 +122,7 @@ Every stoma is a compromise: opening it admits CO₂ for the Calvin cycle (see [
     closeBtn.style.background = open ? '#94a3b8' : '#2d6a4f';
     note.textContent = open
       ? 'H⁺-ATPase hyperpolarizes the membrane, K⁺ flows in through inward-rectifying channels, Cl⁻/malate²⁻ accumulate; solute potential drops, water follows, turgor rises, guard cells bow open.'
-      : 'Outward-rectifying K⁺ and anion channels open instead, releasing K⁺, Cl⁻, and malate²⁻ — solute potential rises, water leaves, turgor falls, the pore closes.';
+      : 'Outward-rectifying K⁺ and anion channels open instead, releasing K⁺, Cl⁻, and malate²⁻, solute potential rises, water leaves, turgor falls, the pore closes.';
   }
   openBtn.addEventListener('click', function(){ setState(true); });
   closeBtn.addEventListener('click', function(){ setState(false); });
@@ -130,7 +130,7 @@ Every stoma is a compromise: opening it admits CO₂ for the Calvin cycle (see [
 })();
 </script>
 
-- **Multi-signal stomatal aperture simulator (sliders for light, CO2, and ABA level)** — adjusting each slider independently shows the resulting net aperture, making clear that ABA can force closure even with the light and CO2 sliders both set to "opening" conditions, reproducing the override relationship described in the ABA section above.
+- **Multi-signal stomatal aperture simulator (sliders for light, CO2, and ABA level)**, adjusting each slider independently shows the resulting net aperture, making clear that ABA can force closure even with the light and CO2 sliders both set to "opening" conditions, reproducing the override relationship described in the ABA section above.
 
 {{< iframe src="/stomatal-aperture-simulator.html" title="Multi-signal stomatal aperture simulator" height="480px" >}}
 

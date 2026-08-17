@@ -259,6 +259,8 @@
   </url><url>
     <loc>http://localhost:1313/bioclash/</loc>
   </url><url>
+    <loc>http://localhost:1313/bioclash/bioclash-sample/attempt/</loc>
+  </url><url>
     <loc>http://localhost:1313/</loc>
   </url><url>
     <loc>http://localhost:1313/bioinsights/</loc>

@@ -1,7 +1,7 @@
 ---
 title: "✅ Molecular, Cell Biology and Biochemistry"
 weight: 1
-description: "Cell structure, biomolecules, enzymes, membrane transport, and core biochemical pathways — a curated, IBO/USABO-depth treatment drawing on Lehninger's Principles of Biochemistry, Alberts' Molecular Biology of the Cell, and Campbell Biology."
+description: "Cell structure, biomolecules, enzymes, membrane transport, and core biochemical pathways, a curated, IBO/USABO-depth treatment drawing on Lehninger's Principles of Biochemistry, Alberts' Molecular Biology of the Cell, and Campbell Biology."
 ---
 
 This unit covers the biological foundations that the rest of the syllabus builds on: how cells are organised and communicate, how the genome is stored, copied, read, and regulated, and the core chemistry of the molecules that make all of it possible. It presumes basic high-school chemistry and mathematics; if you want to firm up the basics first, these handouts are a good starting point: [Biochemistry Handout, Part 1](https://pyukey.github.io/Pandoraxpdfs/Pandorax/USABO/Cells/USABO_Biochemistry_Handout.pdf), [Part 2](https://pyukey.github.io/Pandoraxpdfs/Pandorax/USABO/Cells/USABO_Biochemistry_Part_Two_Handout.pdf).
@@ -9,7 +9,7 @@ This unit covers the biological foundations that the rest of the syllabus builds
 The section is organised in three tiers: **Cell Biology** (how cells are structured and organised), **Molecular Biology** (how the genome is stored, copied, and expressed), and **Biochemistry** (the chemistry underlying it all). Start with Cell Theory below if you're new to the subject: everything else builds on it.
 
 {{< cards cols="1" >}}
-  {{< card link="cell-theory-prokaryotes-eukaryotes/" title="1. Cell Theory, Prokaryotes & Eukaryotes" subtitle="The three tenets of cell theory and the structural/genomic distinctions between prokaryotic and eukaryotic cells — read this first." >}}
+  {{< card link="cell-theory-prokaryotes-eukaryotes/" title="1. Cell Theory, Prokaryotes & Eukaryotes" subtitle="The three tenets of cell theory and the structural/genomic distinctions between prokaryotic and eukaryotic cells, read this first." >}}
 {{< /cards >}}
 
 ### Cell Biology
@@ -46,6 +46,6 @@ The section is organised in three tiers: **Cell Biology** (how cells are structu
   {{< card link="carbohydrate-chemistry-biology/" title="19. Carbohydrate Chemistry & Biology" subtitle="Monosaccharide stereochemistry, glycosidic bonds, starch/glycogen/cellulose" tag="Intermediate" tagColor="amber" >}}
   {{< card link="lipids-membrane-biochemistry/" title="20. Lipids & Membrane Biochemistry" subtitle="Fatty acid saturation, phospholipids, and cholesterol's effect on fluidity" tag="Intermediate" tagColor="amber" >}}
   {{< card link="nucleotide-nucleic-acid-chemistry/" title="21. Nucleotide & Nucleic Acid Chemistry" subtitle="Purines, pyrimidines, phosphodiester bonds, and why DNA uses thymine" tag="Intermediate" tagColor="amber" >}}
-  {{< card link="bioenergetics-central-metabolism/" title="22. Bioenergetics & Central Metabolism" subtitle="Glycolysis, the TCA cycle, and oxidative phosphorylation — IBO-scoped" tag="Advanced" tagColor="purple" >}}
+  {{< card link="bioenergetics-central-metabolism/" title="22. Bioenergetics & Central Metabolism" subtitle="Glycolysis, the TCA cycle, and oxidative phosphorylation, IBO-scoped" tag="Advanced" tagColor="purple" >}}
   {{< card link="biomolecular-analytical-techniques/" title="23. Biomolecular Analytical Techniques" subtitle="SDS-PAGE, chromatography, spectrophotometry, and membrane protein extraction" tag="Intermediate" tagColor="amber" >}}
 {{< /cards >}}

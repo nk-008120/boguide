@@ -1,8 +1,8 @@
 ---
-title: "Q12 — Antibiotic Pharmacokinetics in a Cow"
+title: "Q12 - Antibiotic Pharmacokinetics in a Cow"
 ---
 
-{{< problem-meta category="Theoretical A" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 {{< mathjax >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
@@ -27,4 +27,4 @@ Consider the effects of a cow's treatment with strong oral antibiotics.
 
 ---
 
-Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=24) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)
+Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=24) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)

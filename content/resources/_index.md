@@ -29,9 +29,9 @@ Sections marked **✅ Verified** have gone through our full review workflow (see
 
 ## How This Guide Approaches Teaching
 
-Biology olympiads test comprehensive logical reasoning rather than pure rote memorisation — but that's a double-edged sword. Lean too heavily on working things out from the question context alone, without solid concept familiarity underneath, and your accuracy *and* your time management both suffer. So while you don't need to memorise everything, genuine familiarity with the core concepts and ideas matters more here than in most exams.
+Biology olympiads test comprehensive logical reasoning rather than pure rote memorisation, but that's a double-edged sword. Lean too heavily on working things out from the question context alone, without solid concept familiarity underneath, and your accuracy *and* your time management both suffer. So while you don't need to memorise everything, genuine familiarity with the core concepts and ideas matters more here than in most exams.
 
-This guide leans on interactive material, static diagrams, and dense text over video. That's deliberate: we want you to build understanding through words and images/graphs first, since that's closer to how you'll actually need to reason during the exam. Most students using this guide aren't aiming for the international stage or a research career either — so the notes are written to be useful at every level of Biology Olympiad preparation, not just for students chasing IBO qualification.
+This guide leans on interactive material, static diagrams, and dense text over video. That's deliberate: we want you to build understanding through words and images/graphs first, since that's closer to how you'll actually need to reason during the exam. Most students using this guide aren't aiming for the international stage or a research career either, so the notes are written to be useful at every level of Biology Olympiad preparation, not just for students chasing IBO qualification.
 
 For material this guide doesn't cover in enough depth, the [USABO Handouts](https://www.bioly.guide/handouts) are a good beginner-friendly supplement (though a little thin for more advanced students).
 
@@ -39,26 +39,26 @@ For material this guide doesn't cover in enough depth, the [USABO Handouts](http
 
 Video isn't the primary format here, but these creators are worth a look when a topic isn't clicking from text alone:
 
-- **[Bozeman Science](https://www.bozemanscience.com/)** — Paul Anderson's clear, concise instructional videos, widely used to help students master complex science topics.
+- **[Bozeman Science](https://www.bozemanscience.com/)**, Paul Anderson's clear, concise instructional videos, widely used to help students master complex science topics.
 - **[Professor Dave Explains](https://www.youtube.com/@ProfessorDaveExplains)** (YouTube)
-- **[The Organic Chemistry Tutor](https://www.youtube.com/@theorganicchemistrytutor)** (YouTube) — strong on the two common biostatistics standards (great playlist on this specifically), biochemistry, and select biology topics.
-- **[Amoeba Sisters](https://www.youtube.com/@AmoebaSisters)** (YouTube) — cartoon biology, a lighter way to review.
-- **[AK Lectures](https://aklectures.com/)** — a library of lectures with simple explanations for difficult topics.
-- **[The Bumbling Biochemist](https://www.youtube.com/@thebumblingbiochemist)** (YouTube) — sharp takes on biochemistry and molecular biology lab practice; good as background listening for retention.
-- **[Khan Academy](https://www.youtube.com/@khanacademy)** (YouTube) — needs no introduction.
+- **[The Organic Chemistry Tutor](https://www.youtube.com/@theorganicchemistrytutor)** (YouTube): strong on the two common biostatistics standards (great playlist on this specifically), biochemistry, and select biology topics.
+- **[Amoeba Sisters](https://www.youtube.com/@AmoebaSisters)** (YouTube), cartoon biology, a lighter way to review.
+- **[AK Lectures](https://aklectures.com/)**, a library of lectures with simple explanations for difficult topics.
+- **[The Bumbling Biochemist](https://www.youtube.com/@thebumblingbiochemist)** (YouTube), sharp takes on biochemistry and molecular biology lab practice; good as background listening for retention.
+- **[Khan Academy](https://www.youtube.com/@khanacademy)** (YouTube), needs no introduction.
 - **[LibreTexts Chemistry](https://chem.libretexts.org/)**
 
 ## Books & Graded Resources
 
 We've collected and graded the most useful books and resources in [this Drive folder](https://drive.google.com/drive/folders/1zWTpU6g_YoZRL8_xIiP0UOvb8pHzM6vG?usp=drive_link).
 
-The grading (S/A/B) isn't a strict ranking — S doesn't automatically mean "better than" A or B. It reflects relevance and recommendation for a given purpose more than raw quality. If you'd like to help with grading resources, [fill out this survey](https://docs.google.com/forms/d/e/1FAIpQLSc_FbhYS1IraA1s6F7zFLzkILBZvRceDqdoMqV7yTH6hu0k-g/viewform) and we'll be in touch.
+The grading (S/A/B) isn't a strict ranking, S doesn't automatically mean "better than" A or B. It reflects relevance and recommendation for a given purpose more than raw quality. If you'd like to help with grading resources, [fill out this survey](https://docs.google.com/forms/d/e/1FAIpQLSc_FbhYS1IraA1s6F7zFLzkILBZvRceDqdoMqV7yTH6hu0k-g/viewform) and we'll be in touch.
 
 ## Practice Papers & Solutions
 
-- **Practice papers** from biology competitions worldwide are collected in [this Drive folder](https://drive.google.com/drive/folders/1ZErb3YopEleXaGFlu_BZN2LtaYWj637P?usp=drive_link) (still being filled in). The password for past IBO papers is available [here](https://www.reddit.com/r/biologyolympiads/comments/13pp7hi/does_anyone_knows_the_password_to_past_pappers_of/) — use at your own discretion, for legal reasons we can't host it directly. If you have papers we're missing, email them to [resourcerepository4boguide@gmail.com](mailto:resourcerepository4boguide@gmail.com).
-- **Solutions** to past olympiad papers are collected [here](https://drive.google.com/drive/folders/1j-qbzGLBW3l4IWUYWRF5RP-Xx8oBevTB?usp=sharing) — currently just sample IBO 2022 solutions, with more to come.
+- **Practice papers** from biology competitions worldwide are collected in [this Drive folder](https://drive.google.com/drive/folders/1ZErb3YopEleXaGFlu_BZN2LtaYWj637P?usp=drive_link) (still being filled in). The password for past IBO papers is available [here](https://www.reddit.com/r/biologyolympiads/comments/13pp7hi/does_anyone_knows_the_password_to_past_pappers_of/), use at your own discretion, for legal reasons we can't host it directly. If you have papers we're missing, email them to [resourcerepository4boguide@gmail.com](mailto:resourcerepository4boguide@gmail.com).
+- **Solutions** to past olympiad papers are collected [here](https://drive.google.com/drive/folders/1j-qbzGLBW3l4IWUYWRF5RP-Xx8oBevTB?usp=sharing), currently just sample IBO 2022 solutions, with more to come.
 
 ## A Note on Devices
 
-This site is best used on a laptop, PC, or equivalent. During testing, a few features — the 3D graphs (Streamlit/Plotly) and the mock IBO 2022 practical — weren't available on mobile. The written notes themselves are fully accessible on any device. Sorry for the inconvenience in the meantime.
+This site is best used on a laptop, PC, or equivalent. During testing, a few features, the 3D graphs (Streamlit/Plotly) and the mock IBO 2022 practical, weren't available on mobile. The written notes themselves are fully accessible on any device. Sorry for the inconvenience in the meantime.

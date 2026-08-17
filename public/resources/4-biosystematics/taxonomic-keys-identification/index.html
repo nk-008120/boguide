@@ -27,7 +27,7 @@
 
 	<meta itemprop="name" content="Taxonomic Keys & Identification">
 	<meta itemprop="description" content="Dichotomous and multi-access key construction and use, the character-choice principles that make a key actually work in the field, and the practical identification skills IBO practical stations test directly.">
-	<meta itemprop="wordCount" content="1187">
+	<meta itemprop="wordCount" content="1182">
 	<meta itemprop="image" content="http://localhost:1313/og-default.png">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:image" content="http://localhost:1313/og-default.png">
@@ -1891,7 +1891,7 @@
 <li><strong>Mutual exclusivity</strong>: the two statements in a couplet must never both be true of the same specimen, and must cover every possibility between them (no specimen should be unable to choose either option).</li>
 <li><strong>Independent, directly observable characters</strong>, each couplet should rely on a character visible without dissection or specialized equipment where possible (leaf shape, number of legs, presence/absence of a structure) rather than a character requiring destructive sampling or a trait irrelevant at the specimen&rsquo;s actual life stage (e.g. a couplet keying on flower color is useless for a non-flowering juvenile plant).</li>
 <li><strong>Stable, non-variable characters</strong>: a character that varies with age, sex, season, or individual variation within a species (e.g. body size alone) makes an unreliable couplet; keys favor structural, qualitatively fixed traits over continuously variable ones.</li>
-<li><strong>Sequential logic, not shortcutting</strong> — couplets should proceed from broad, reliable distinguishing features toward progressively finer ones, mirroring the actual nested taxonomic hierarchy rather than jumping straight to a fine species-level character before broader group membership is established.</li>
+<li><strong>Sequential logic, not shortcutting</strong>, couplets should proceed from broad, reliable distinguishing features toward progressively finer ones, mirroring the actual nested taxonomic hierarchy rather than jumping straight to a fine species-level character before broader group membership is established.</li>
 </ul>
 <h3>Multi-Access (Polyclave) Keys<span class="hx:absolute hx:-mt-20" id="multi-access-polyclave-keys"></span>
     <a href="#multi-access-polyclave-keys" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Unlike a dichotomous key&rsquo;s fixed, linear couplet sequence, a <strong>multi-access key</strong> (or <strong>polyclave</strong>) lets the user select observed characters <strong>in any order</strong>, progressively filtering a list of candidate taxa as each character is entered; this is the format underlying most modern digital/app-based identification tools. Its practical advantage over a dichotomous key is resilience: if one character is ambiguous, damaged, or simply not visible on the specimen in hand (a common real-world problem a strictly sequential dichotomous key cannot recover from, since skipping a couplet breaks the whole path), a multi-access key can simply proceed using the remaining characters instead of dead-ending.</p>
@@ -1901,7 +1901,7 @@
 <li><strong>Convergent (homoplasious) characters</strong> (see <a
     href="../phylogenetic-trees-cladistics/">Phylogenetic Trees &amp; Cladistics</a> for the underlying concept) make poor key characters at higher taxonomic levels precisely because they can put unrelated taxa on the same branch of the key by coincidence (e.g. keying broadly on &ldquo;has wings&rdquo; would incorrectly route both an insect and a bird toward the same couplet branch if the key weren&rsquo;t scoped to a single class already).</li>
 <li><strong>Ontogenetic/seasonal/sexual variation</strong>: a character true of an adult male may be entirely absent in a juvenile or female of the same species (antlers, for instance); a well-scoped key either restricts itself to one life stage/sex or explicitly branches for this variation rather than silently assuming it away.</li>
-<li><strong>Damage and incompleteness</strong> — field and museum specimens are frequently incomplete (a broken wing, a specimen missing its original flower/fruit); this is the practical, real-world argument for preferring redundant, multiple confirming characters and multi-access keys over a single fragile dichotomous path wherever possible.</li>
+<li><strong>Damage and incompleteness</strong>, field and museum specimens are frequently incomplete (a broken wing, a specimen missing its original flower/fruit); this is the practical, real-world argument for preferring redundant, multiple confirming characters and multi-access keys over a single fragile dichotomous path wherever possible.</li>
 </ul>
 <h2>Comparative Structures<span class="hx:absolute hx:-mt-20" id="comparative-structures"></span>
     <a href="#comparative-structures" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><table>
@@ -1939,10 +1939,10 @@
 <h2>Visual Reference<span class="hx:absolute hx:-mt-20" id="visual-reference"></span>
     <a href="#visual-reference" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p><strong>Interactive</strong></p>
 <ul>
-<li><strong>Dichotomous key builder/solver (interactive SVG/JS, no new library)</strong> — given a small set of specimens (illustrated, with 4-5 visible characters each) and a blank couplet-writing interface, the user constructs their own working dichotomous key, and the tool tests it against each specimen, flagging any couplet that fails mutual exclusivity or fails to uniquely resolve a specimen — a direct, hands-on practical-station simulator.
+<li><strong>Dichotomous key builder/solver (interactive SVG/JS, no new library)</strong>, given a small set of specimens (illustrated, with 4-5 visible characters each) and a blank couplet-writing interface, the user constructs their own working dichotomous key, and the tool tests it against each specimen, flagging any couplet that fails mutual exclusivity or fails to uniquely resolve a specimen, a direct, hands-on practical-station simulator.
 <iframe src="/dichotomous-key-builder.html" title="Dichotomous Key Builder/Solver" loading="lazy" style="width: 100%; height: 560px; border: none;" allow="fullscreen"></iframe>
 </li>
-<li><strong>Multi-access key demo (HTML/JS filter interface)</strong> — a small candidate-taxon list (8-10 named organisms) with a bank of selectable characters; as the user toggles characters on, the candidate list filters live, demonstrating the any-order, missing-character-tolerant behavior directly against the same rigid dichotomous key built in the tool above.
+<li><strong>Multi-access key demo (HTML/JS filter interface)</strong>, a small candidate-taxon list (8-10 named organisms) with a bank of selectable characters; as the user toggles characters on, the candidate list filters live, demonstrating the any-order, missing-character-tolerant behavior directly against the same rigid dichotomous key built in the tool above.
 <iframe src="/multi-access-key-demo.html" title="Multi-Access Key Demo" loading="lazy" style="width: 100%; height: 480px; border: none;" allow="fullscreen"></iframe>
 </li>
 </ul>

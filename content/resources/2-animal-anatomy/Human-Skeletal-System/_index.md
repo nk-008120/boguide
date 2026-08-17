@@ -1,7 +1,7 @@
 ---
 title: "Human Skeletal System"
 weight: 2
-description: "Bone as an organ, ossification, osteon histology and remodeling, the named axial and appendicular skeleton, joint classification, and synovial joint structure — split from the combined Skeletal/Integumentary page for full IBO depth."
+description: "Bone as an organ, ossification, osteon histology and remodeling, the named axial and appendicular skeleton, joint classification, and synovial joint structure, split from the combined Skeletal/Integumentary page for full IBO depth."
 difficulty: "intermediate"
 prerequisites: ["Body-Plans"]
 syllabus_tags: ["IBO", "USABO", "human-anatomy"]
@@ -76,8 +76,8 @@ A typical long bone (e.g. the femur) has: the **diaphysis** (shaft, compact bone
 
   function growthplateInfo(){
     return isJuvenile
-      ? { name: 'Epiphyseal (Growth) Plate — open', desc: 'A band of hyaline cartilage between diaphysis and epiphysis; proliferates on the epiphyseal side and ossifies on the diaphyseal side, allowing continued longitudinal growth. Open in this juvenile view.' }
-      : { name: 'Epiphyseal Line — closed', desc: 'The growth plate has fully ossified into a thin bony line, marking skeletal maturity. Longitudinal growth has ceased.' };
+      ? { name: 'Epiphyseal (Growth) Plate, open', desc: 'A band of hyaline cartilage between diaphysis and epiphysis; proliferates on the epiphyseal side and ossifies on the diaphyseal side, allowing continued longitudinal growth. Open in this juvenile view.' }
+      : { name: 'Epiphyseal Line, closed', desc: 'The growth plate has fully ossified into a thin bony line, marking skeletal maturity. Longitudinal growth has ceased.' };
   }
 
   function showInfo(key){
@@ -111,16 +111,16 @@ A typical long bone (e.g. the femur) has: the **diaphysis** (shaft, compact bone
 
 ### Osteon Histology
 
-Compact bone is organized into repeating structural units, **osteons (Haversian systems)**, each built around a central **Haversian (central) canal** carrying blood vessels and nerves, surrounded by concentric rings of mineralized matrix (**lamellae**). Between lamellae, mature bone cells (**osteocytes**) sit in small cavities (**lacunae**), interconnected by thin channels (**canaliculi**) through which osteocyte cytoplasmic processes pass, and this network is how osteocytes, despite being embedded in rigid mineralized matrix, exchange nutrients/waste and sense mechanical strain, communicating via gap junctions between processes. **Volkmann's (perforating) canals** run perpendicular to Haversian canals, connecting them to each other and to the periosteal/endosteal surfaces, carrying the blood supply that links osteons to the bone's overall vasculature. Spongy bone lacks this osteon organization — its trabeculae are thin enough that osteocytes are nourished by direct diffusion from adjacent marrow, without a Haversian system.
+Compact bone is organized into repeating structural units, **osteons (Haversian systems)**, each built around a central **Haversian (central) canal** carrying blood vessels and nerves, surrounded by concentric rings of mineralized matrix (**lamellae**). Between lamellae, mature bone cells (**osteocytes**) sit in small cavities (**lacunae**), interconnected by thin channels (**canaliculi**) through which osteocyte cytoplasmic processes pass, and this network is how osteocytes, despite being embedded in rigid mineralized matrix, exchange nutrients/waste and sense mechanical strain, communicating via gap junctions between processes. **Volkmann's (perforating) canals** run perpendicular to Haversian canals, connecting them to each other and to the periosteal/endosteal surfaces, carrying the blood supply that links osteons to the bone's overall vasculature. Spongy bone lacks this osteon organization, its trabeculae are thin enough that osteocytes are nourished by direct diffusion from adjacent marrow, without a Haversian system.
 
 ![Two adjacent osteons, each with a central Haversian canal, osteocytes distributed through the surrounding matrix, and a canaliculi network connecting them.](/ANATOMYPICS/osteon-cross-section-haversian-system.png)
 *Source: textbook-style figure*
 
-Three bone cell types, distinguished by lineage and function (a frequent point of confusion worth stating precisely): **osteoblasts** (mesenchymal lineage, mononucleate, secrete unmineralized bone matrix, **osteoid**, which subsequently mineralizes), **osteocytes** (former osteoblasts trapped within their own secreted matrix, mature bone cells maintaining the matrix and sensing mechanical load), and **osteoclasts** (monocyte/macrophage lineage — not derived from osteoblasts — large, multinucleate cells that resorb bone matrix by secreting acid and proteolytic enzymes onto the bone surface).
+Three bone cell types, distinguished by lineage and function (a frequent point of confusion worth stating precisely): **osteoblasts** (mesenchymal lineage, mononucleate, secrete unmineralized bone matrix, **osteoid**, which subsequently mineralizes), **osteocytes** (former osteoblasts trapped within their own secreted matrix, mature bone cells maintaining the matrix and sensing mechanical load), and **osteoclasts** (monocyte/macrophage lineage, not derived from osteoblasts, large, multinucleate cells that resorb bone matrix by secreting acid and proteolytic enzymes onto the bone surface).
 
 ### Bone Remodeling
 
-Bone is never metabolically static: osteoblast-driven deposition and osteoclast-driven resorption occur continuously and are normally balanced, allowing bone to adapt its internal trabecular architecture to mechanical load (denser trabeculae along lines of stress) and to serve as the body's principal calcium reservoir. **Parathyroid hormone (PTH)**, released when blood calcium falls, stimulates osteoclast activity indirectly: PTH acts on osteoblasts/stromal cells, increasing their surface expression of **RANKL**, which binds the **RANK** receptor on osteoclast progenitor cells (derived from the same hematopoietic/myeloid lineage as monocytes) and drives their proliferation, differentiation, and fusion into mature, bone-resorbing osteoclasts. Osteoblasts also secrete **osteoprotegerin (OPG)**, a decoy receptor that binds RANKL and blocks it from reaching RANK — the balance between RANKL and OPG, not RANKL alone, sets the actual rate of osteoclast formation. **Calcitonin** opposes this axis, acting more directly to suppress osteoclast activity and favor calcium deposition into bone when blood calcium is high. This RANKL/RANK/OPG pathway is a standard cross-reference point linking skeletal anatomy to endocrine and immune physiology on IBO papers.
+Bone is never metabolically static: osteoblast-driven deposition and osteoclast-driven resorption occur continuously and are normally balanced, allowing bone to adapt its internal trabecular architecture to mechanical load (denser trabeculae along lines of stress) and to serve as the body's principal calcium reservoir. **Parathyroid hormone (PTH)**, released when blood calcium falls, stimulates osteoclast activity indirectly: PTH acts on osteoblasts/stromal cells, increasing their surface expression of **RANKL**, which binds the **RANK** receptor on osteoclast progenitor cells (derived from the same hematopoietic/myeloid lineage as monocytes) and drives their proliferation, differentiation, and fusion into mature, bone-resorbing osteoclasts. Osteoblasts also secrete **osteoprotegerin (OPG)**, a decoy receptor that binds RANKL and blocks it from reaching RANK, the balance between RANKL and OPG, not RANKL alone, sets the actual rate of osteoclast formation. **Calcitonin** opposes this axis, acting more directly to suppress osteoclast activity and favor calcium deposition into bone when blood calcium is high. This RANKL/RANK/OPG pathway is a standard cross-reference point linking skeletal anatomy to endocrine and immune physiology on IBO papers.
 
 ![Osteoclast differentiation pathway: a hematopoietic stem cell gives rise to myeloid stem cells, then osteoclast progenitor cells, driven by M-CSF and RANKL from osteoblasts/stromal cells (opposed by OPG), fusing into a mature multinucleated osteoclast; inset diagrams show the RANK/RANKL receptor signaling cascade and the osteoclast's bone-resorption mechanism (ruffled border, H+/Cl- secretion, mineral dissolution, matrix degradation).](/ANATOMYPICS/bone-remodeling-cells-pth-calcitonin.png)
 *Source: sourced research-style figure*
@@ -134,9 +134,9 @@ Bone is never metabolically static: osteoblast-driven deposition and osteoclast-
 ### The Appendicular Skeleton (126 bones)
 
 - **Pectoral girdle**: clavicle and scapula (paired), attaching the upper limb to the axial skeleton; structurally the most mobile girdle in the body, sacrificing stability for the upper limb's wide range of motion.
-- **Upper limb** — humerus (arm), radius and ulna (forearm, the radius rotates around the fixed ulna to produce pronation/supination, detailed below), carpals (8 wrist bones), metacarpals (5), phalanges (14).
+- **Upper limb**, humerus (arm), radius and ulna (forearm, the radius rotates around the fixed ulna to produce pronation/supination, detailed below), carpals (8 wrist bones), metacarpals (5), phalanges (14).
 - **Pelvic girdle**: two hip bones (each fused from the ilium, ischium, and pubis), joined posteriorly to the sacrum and anteriorly at the **pubic symphysis**; structurally far more stable and weight-bearing than the pectoral girdle, at the cost of a much smaller range of motion.
-- **Lower limb** — femur (thigh, the longest and strongest bone in the body), patella (sesamoid bone within the quadriceps tendon), tibia and fibula (leg, unlike the radius/ulna, these do not rotate around each other), tarsals (7 ankle bones, including the talus and calcaneus/heel bone), metatarsals (5), phalanges (14).
+- **Lower limb**, femur (thigh, the longest and strongest bone in the body), patella (sesamoid bone within the quadriceps tendon), tibia and fibula (leg, unlike the radius/ulna, these do not rotate around each other), tarsals (7 ankle bones, including the talus and calcaneus/heel bone), metatarsals (5), phalanges (14).
 
 ![Full human skeleton with the axial skeleton (skull, hyoid, vertebrae, sternum, ribs, sacrum, coccyx) and appendicular skeleton (clavicle, scapula, humerus, radius, ulna, carpals/metacarpals/phalanges, os coxa, femur, patella, tibia, fibula, tarsals/metatarsals/phalanges) labeled and color-coded.](/ANATOMYPICS/human-skeleton-axial-appendicular-labeled.jpg)
 *Source: sourced textbook-style figure. Direct match, cleanly separating and labeling every bone group discussed above.*
@@ -184,11 +184,11 @@ Synovial joints are further classified by articulating-surface shape, each permi
   var subtypes = ['Hinge', 'Pivot', 'Ball-and-socket', 'Condyloid', 'Saddle', 'Plane'];
   var questions = [
     { prompt: 'Elbow (humeroulnar joint): permits flexion/extension only (uniaxial).', answer: 'Hinge' },
-    { prompt: 'Atlantoaxial joint (C1–C2) — permits rotation only (uniaxial).', answer: 'Pivot' },
+    { prompt: 'Atlantoaxial joint (C1–C2), permits rotation only (uniaxial).', answer: 'Pivot' },
     { prompt: 'Shoulder joint: flexion/extension, abduction/adduction, rotation, and circumduction (multiaxial).', answer: 'Ball-and-socket' },
-    { prompt: 'Wrist (radiocarpal) joint — flexion/extension, abduction/adduction, circumduction, but NOT rotation (biaxial).', answer: 'Condyloid' },
+    { prompt: 'Wrist (radiocarpal) joint, flexion/extension, abduction/adduction, circumduction, but NOT rotation (biaxial).', answer: 'Condyloid' },
     { prompt: 'Thumb carpometacarpal joint: similar movements to the wrist but with a greater range, due to saddle-shaped articulating surfaces.', answer: 'Saddle' },
-    { prompt: 'Intercarpal and intertarsal joints — short gliding/sliding movements only.', answer: 'Plane' }
+    { prompt: 'Intercarpal and intertarsal joints, short gliding/sliding movements only.', answer: 'Plane' }
   ];
   var order = [0,1,2,3,4,5];
   var qIndex = 0;
@@ -236,7 +236,7 @@ Synovial joints are further classified by articulating-surface shape, each permi
     });
     feedbackEl.innerHTML = correct
       ? '<span style="color:#2d6a4f; font-weight:600;">Correct: ' + q.answer + '.</span>'
-      : '<span style="color:#c0392b; font-weight:600;">Not quite — the correct subtype is ' + q.answer + '.</span>';
+      : '<span style="color:#c0392b; font-weight:600;">Not quite, the correct subtype is ' + q.answer + '.</span>';
   }
 
   nextBtn.addEventListener('click', function(){

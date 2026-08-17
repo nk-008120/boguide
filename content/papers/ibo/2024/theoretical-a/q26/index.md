@@ -1,8 +1,8 @@
 ---
-title: "Q26 — Mass Extinctions and Carbon Cycle Perturbations"
+title: "Q26 - Mass Extinctions and Carbon Cycle Perturbations"
 ---
 
-{{< problem-meta category="Theoretical A" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/15-evolution/macroevolutionary-patterns-and-mass-extinctions/">Macroevolutionary Patterns & Mass Extinctions</a>
@@ -23,4 +23,4 @@ On your answer sheet, indicate "T" for true statements and "F" for false ones.
 
 ---
 
-Question reproduced from **IBO 2024, Theoretical Exam Part A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2024/theoretical-a-exam.pdf#page=41) · [Community solutions (unofficial)](/papers/ibo/2024/theoretical-a-solutions.docx)
+Question reproduced from **IBO 2024, Theoretical Exam Part A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2024/theoretical-a-exam.pdf#page=41) · [Community solutions (unofficial)](/papers/ibo/2024/theoretical-a-solutions.docx)

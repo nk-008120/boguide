@@ -27,7 +27,7 @@
 
 	<meta itemprop="name" content="Enzyme Kinetics & Regulation">
 	<meta itemprop="description" content="Steady-state kinetics and the Michaelis-Menten equation, kcat and the specificity constant, Lineweaver-Burk analysis, and the four modes of reversible enzyme inhibition with their kinetic signatures.">
-	<meta itemprop="wordCount" content="1851">
+	<meta itemprop="wordCount" content="1843">
 	<meta itemprop="image" content="http://localhost:1313/og-default.png">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:image" content="http://localhost:1313/og-default.png">
@@ -1895,12 +1895,12 @@
 $$ V_0 = \frac{V_{max}[S]}{K_m + [S]} \qquad \text{(Michaelis-Menten equation)} $$
 </div>
 
-<p>where $K_m = \dfrac{k_{-1} + k_2}{k_1}$. Note that if product release (k₂) is rate-limiting, $K_m = K_d = k_{-1}/k_1$, i.e. $K_m$ collapses to the true substrate dissociation constant, and can be read directly as (an inverse measure of) binding affinity. This equivalence does <em>not</em> hold in general — only when k₂ is rate-limiting.</p>
+<p>where $K_m = \dfrac{k_{-1} + k_2}{k_1}$. Note that if product release (k₂) is rate-limiting, $K_m = K_d = k_{-1}/k_1$, i.e. $K_m$ collapses to the true substrate dissociation constant, and can be read directly as (an inverse measure of) binding affinity. This equivalence does <em>not</em> hold in general, only when k₂ is rate-limiting.</p>
 <h3>V_max, k_cat, and the specificity constant<span class="hx:absolute hx:-mt-20" id="v_max-k_cat-and-the-specificity-constant"></span>
     <a href="#v_max-k_cat-and-the-specificity-constant" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>$V_{max} = k_{cat}[E_t]$, where $k_{cat}$ (the <strong>turnover number</strong>) is the rate constant of the overall rate-limiting step: in the minimal scheme above, $k_{cat} = k_2$. For a three-step scheme $\text{E+S} \rightleftharpoons \text{ES} \rightleftharpoons \text{EP} \rightleftharpoons \text{E+P}$ with product release limiting, $k_{cat} = k_3$. $k_{cat}$ represents substrate molecules converted to product per unit time per enzyme molecule when the enzyme is fully saturated.</p>
 <p>At low [S] (specifically [S] ≪ $K_m$), the Michaelis-Menten equation reduces to:</p>
 <p>$$ V_0 = [E_t] \cdot [S] \cdot \frac{k_{cat}}{K_m} $$</p>
-<p>The ratio <strong>k_cat/K_m</strong>, the <strong>specificity constant</strong>, is the best single number for comparing catalytic efficiency across different enzymes or different substrates of the same enzyme: it is a second-order rate constant (units M⁻¹s⁻¹) describing the E + S → E + P conversion as a whole. There is a physical ceiling on this ratio: the <strong>diffusion-controlled limit</strong>, ~10⁸–10⁹ M⁻¹s⁻¹, set by how fast E and S can encounter each other in solution. Enzymes approaching this limit are said to have achieved <strong>catalytic perfection</strong> — they convert essentially every productive encounter into product.</p>
+<p>The ratio <strong>k_cat/K_m</strong>, the <strong>specificity constant</strong>, is the best single number for comparing catalytic efficiency across different enzymes or different substrates of the same enzyme: it is a second-order rate constant (units M⁻¹s⁻¹) describing the E + S → E + P conversion as a whole. There is a physical ceiling on this ratio: the <strong>diffusion-controlled limit</strong>, ~10⁸–10⁹ M⁻¹s⁻¹, set by how fast E and S can encounter each other in solution. Enzymes approaching this limit are said to have achieved <strong>catalytic perfection</strong>, they convert essentially every productive encounter into product.</p>
 <p><strong>Enzymes for which k꜀ₐₜ/Kₘ approaches the diffusion-controlled limit (10⁸–10⁹ M⁻¹s⁻¹):</strong></p>
 <table>
 	<thead>
@@ -1971,7 +1971,7 @@ $$ V_0 = \frac{V_{max}[S]}{K_m + [S]} \qquad \text{(Michaelis-Menten equation)} 
 			</tr>
 	</tbody>
 </table>
-<p><em>Data: Fersht, A. (1999). Structure and Mechanism in Protein Science, p. 166, W. H. Freeman and Company. (Redrawn as a table rather than reproduced as a textbook scan — the underlying rate constants are data, not the copyrighted expression.)</em></p>
+<p><em>Data: Fersht, A. (1999). Structure and Mechanism in Protein Science, p. 166, W. H. Freeman and Company. (Redrawn as a table rather than reproduced as a textbook scan, the underlying rate constants are data, not the copyrighted expression.)</em></p>
 <p><strong>Worked example.</strong> An enzyme &ldquo;happyase&rdquo; catalyses SAD ⇌ HAPPY, with $k_{cat} = 600\ \text{s}^{-1}$. At $[E_t] = 20\ \text{nM}$ and $[\text{SAD}] = 40\ \mu\text{M}$, $V_0 = 9.6\ \mu\text{M s}^{-1}$. Find $K_m$.</p>
 <p>First, $V_{max} = k_{cat}[E_t] = 600\ \text{s}^{-1} \times 0.020\ \mu\text{M} = 12\ \mu\text{M s}^{-1}$. Using the ratio form:</p>
 <p>$$ \frac{V_0}{V_{max}} = \frac{[S]}{K_m + [S]} ;\Rightarrow; \frac{9.6}{12} = \frac{40}{K_m + 40} ;\Rightarrow; 0.8(K_m + 40) = 40 ;\Rightarrow; K_m = 10\ \mu\text{M} $$</p>
@@ -1981,8 +1981,8 @@ $$ V_0 = \frac{V_{max}[S]}{K_m + [S]} \qquad \text{(Michaelis-Menten equation)} 
 <p><span class="content-image-frame">
     <img src="/MCBBPICS/mm_plot.png" alt="Michaelis-Menten plot: reaction rate v against substrate concentration a, hyperbolic curve labelled with V, 0.5V, and Km"  data-zoomable loading="lazy" />
   </span>
-<em>The defining hyperbolic shape — v rises steeply at low [S], then plateaus toward V as [S] grows. Km is read directly off the curve at v = 0.5V. Source: unattributed, sourced pre-existing site asset.</em></p>
-<p>Taking the reciprocal linearises the relationship — the <strong>Lineweaver-Burk (double-reciprocal) plot</strong>:</p>
+<em>The defining hyperbolic shape, v rises steeply at low [S], then plateaus toward V as [S] grows. Km is read directly off the curve at v = 0.5V. Source: unattributed, sourced pre-existing site asset.</em></p>
+<p>Taking the reciprocal linearises the relationship, the <strong>Lineweaver-Burk (double-reciprocal) plot</strong>:</p>
 <div class="eq-box">
 $$ \frac{1}{V_0} = \frac{K_m}{V_{max}} \cdot \frac{1}{[S]} + \frac{1}{V_{max}} $$
 </div>
@@ -1991,7 +1991,7 @@ $$ \frac{1}{V_0} = \frac{K_m}{V_{max}} \cdot \frac{1}{[S]} + \frac{1}{V_{max}} $
 <p><span class="content-image-frame">
     <img src="/MCBBPICS/lb_plot.png" alt="Lineweaver-Burk plot: 1/v against 1/a, straight line fitted through scattered data points, with slope Km/V, y-intercept 1/V, and x-intercept -1/Km labelled"  data-zoomable loading="lazy" />
   </span>
-<em>Real data scatters more at high 1/[S] (i.e. low, less reliable [S] measurements) — a caveat worth knowing even though the straight-line form is what makes the plot useful for reading off Km/Vmax by eye. Source: unattributed, sourced pre-existing site asset.</em></p>
+<em>Real data scatters more at high 1/[S] (i.e. low, less reliable [S] measurements), a caveat worth knowing even though the straight-line form is what makes the plot useful for reading off Km/Vmax by eye. Source: unattributed, sourced pre-existing site asset.</em></p>
 <h3>The four modes of reversible inhibition<span class="hx:absolute hx:-mt-20" id="the-four-modes-of-reversible-inhibition"></span>
     <a href="#the-four-modes-of-reversible-inhibition" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>All four share the same underlying trick: expressing the new, &ldquo;apparent&rdquo; parameters as the original parameter times a modification factor built from $[I]/K_I$.</p>
 <p><span class="content-image-frame">
@@ -2002,7 +2002,7 @@ $$ \frac{1}{V_0} = \frac{K_m}{V_{max}} \cdot \frac{1}{[S]} + \frac{1}{V_{max}} $
 <p>$$ \text{E} + \text{I} \rightleftharpoons \text{EI} \qquad V_0 = \frac{V_{max}[S]}{K_m \cdot \alpha + [S]}, \quad \alpha = 1 + \frac{[I]}{K_I} $$</p>
 <p>Apparent $K_m&rsquo; = K_m \cdot \alpha$ (increases, looks like <em>lower</em> substrate affinity); <strong>$V_{max}$ is unchanged</strong>, because enough substrate can always out-compete the inhibitor.</p>
 <p><em>Derivation sketch</em>: mass balance $[E_t] = [E] + [ES] + [EI]$, with $[EI] = [E][I]/K_I$, substituted through the steady-state $[ES] = [E][S]/K_m$ relation, collapses to $V_0 = \dfrac{V_{max}[S]}{K_m(1+[I]/K_I) + [S]}$, matching the boxed result above with $K_m^{app} = K_m\alpha$.</p>
-<p><strong>Uncompetitive inhibition</strong> — inhibitor binds only the ES complex, not free E:</p>
+<p><strong>Uncompetitive inhibition</strong>, inhibitor binds only the ES complex, not free E:</p>
 <p>$$ \text{ES} + \text{I} \rightleftharpoons \text{EIS} \qquad K_m&rsquo; = \frac{K_m}{\alpha&rsquo;}, \quad V_{max}&rsquo; = \frac{V_{max}}{\alpha&rsquo;}, \quad \alpha&rsquo; = 1 + \frac{[I]}{K_I&rsquo;} $$</p>
 <p>Both parameters <strong>decrease by the same factor</strong>, because binding is blocked from converting to product, the apparent affinity increases (lower $K_m&rsquo;$) even as maximum output falls.</p>
 <p><strong>Noncompetitive inhibition</strong>: inhibitor binds both E and ES with <em>equal</em> affinity (both reactions below occur, with the same $K_I$):</p>
@@ -2067,9 +2067,9 @@ $$ \frac{1}{V_0} = \frac{K_m}{V_{max}} \cdot \frac{1}{[S]} + \frac{1}{V_{max}} $
 					<td>E or ES, covalently</td>
 					<td>effectively ↑ (fewer active enzymes)</td>
 					<td>↓</td>
-					<td>—</td>
-					<td>—</td>
-					<td>— (behaves like a shrinking $[E_t]$, not a classic reversible signature)</td>
+					<td>,</td>
+					<td>,</td>
+					<td>, (behaves like a shrinking $[E_t]$, not a classic reversible signature)</td>
 			</tr>
 	</tbody>
 </table>
@@ -2080,7 +2080,7 @@ $$ \frac{1}{V_0} = \frac{K_m}{V_{max}} \cdot \frac{1}{[S]} + \frac{1}{V_{max}} $
 <h2>Common Exam Questions<span class="hx:absolute hx:-mt-20" id="common-exam-questions"></span>
     <a href="#common-exam-questions" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ul>
 <li>&ldquo;Given this Lineweaver-Burk shift, identify the inhibition type&rdquo;: read the <em>y-intercept and slope changes</em>, not just whether the line moved; competitive and noncompetitive both raise the slope but differ in whether the y-intercept moves.</li>
-<li>&ldquo;Does adding more substrate overcome this inhibitor?&rdquo; — only for competitive inhibition (and, up to a point, mixed); never for pure noncompetitive or uncompetitive, since $V_{max}$ itself is capped lower.</li>
+<li>&ldquo;Does adding more substrate overcome this inhibitor?&rdquo;, only for competitive inhibition (and, up to a point, mixed); never for pure noncompetitive or uncompetitive, since $V_{max}$ itself is capped lower.</li>
 <li>Distinguishing <strong>irreversible inhibition from noncompetitive inhibition when they produce the same final $K_m$/$V_{max}$ values</strong> requires a kinetic (not just an endpoint) argument: dilution or dialysis restores activity for reversible noncompetitive inhibition but not for a covalently bound irreversible inhibitor.</li>
 <li>&ldquo;What does $k_{cat}/K_m$ near the diffusion limit imply?&rdquo;: catalytic perfection, i.e. essentially every diffusion-limited encounter between E and S is productive.</li>
 </ul>

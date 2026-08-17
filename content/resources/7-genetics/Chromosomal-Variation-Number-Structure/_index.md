@@ -45,7 +45,7 @@ Four categories of structural rearrangement, each with distinct genetic conseque
 - **Deletion**: a chromosome segment is lost. Consequences scale with size: a large deletion is typically lethal (loss of many essential genes); a smaller deletion can **unmask a recessive allele** on the homologous chromosome by removing its only functional counterpart, a phenomenon called **pseudodominance**.
 - **Duplication**: a chromosome segment is present in extra copy. Beyond direct dosage effects, duplications are evolutionarily significant as a source of raw material for new gene function: a duplicated gene copy is free to accumulate mutations and potentially evolve a new function while the original copy continues performing the ancestral role.
 - **Inversion**: a chromosome segment is excised, flipped 180°, and reinserted in the same location. Inversions do not change gene *content*, only gene *order and orientation*, but they severely suppress observed recombination in heterozygotes (an inversion heterozygote's homologs must form an **inversion loop** to pair during meiosis I, and any crossover within the loop produces unbalanced, typically inviable gametes). This is a distinct, structural mechanism for suppressing recombination, separate from the physical-distance-based mechanism covered in [Linkage, Recombination & Genetic Mapping](../linkage-recombination-genetic-mapping/).
-- **Translocation**: a segment moves from one chromosome to a different, non-homologous chromosome. A **reciprocal translocation** (segments swapped between two chromosomes) can be genetically **balanced** (no net gene loss, carrier is phenotypically normal) but still produces a high rate of unbalanced, often inviable gametes at meiosis, since the translocated chromosomes must pair in a cross-shaped quadrivalent configuration that frequently segregates unevenly — a common cause of recurrent miscarriage in otherwise healthy carrier couples.
+- **Translocation**: a segment moves from one chromosome to a different, non-homologous chromosome. A **reciprocal translocation** (segments swapped between two chromosomes) can be genetically **balanced** (no net gene loss, carrier is phenotypically normal) but still produces a high rate of unbalanced, often inviable gametes at meiosis, since the translocated chromosomes must pair in a cross-shaped quadrivalent configuration that frequently segregates unevenly, a common cause of recurrent miscarriage in otherwise healthy carrier couples.
 
 ![The five structural chromosome changes compared against a normal reference sequence (A-H): deletion (a segment lost), duplication (a segment repeated), inversion (a segment reversed in place), translocation (a segment moved to a different chromosome), and insertion (a segment gained from elsewhere).](/GENETICSPICS/chromosomal-deletion-duplication-diagram.webp)
 *Source: shutterstock.com*
@@ -72,7 +72,7 @@ Four categories of structural rearrangement, each with distinct genetic conseque
 ## Common Exam Questions
 
 - "Why is Down syndrome survivable but most other autosomal trisomies are not?" The expected answer references chromosome 21's comparatively small gene content, minimizing the total dosage imbalance relative to a trisomy of a much larger, gene-dense chromosome.
-- Distinguishing **aneuploidy** (abnormal count of *one* chromosome type, from nondisjunction of a single pair) from **polyploidy** (extra *complete sets*, from failure of an entire division) is a frequent classification question — check whether the abnormality affects one chromosome or all of them proportionally.
+- Distinguishing **aneuploidy** (abnormal count of *one* chromosome type, from nondisjunction of a single pair) from **polyploidy** (extra *complete sets*, from failure of an entire division) is a frequent classification question, check whether the abnormality affects one chromosome or all of them proportionally.
 - "A phenotypically normal individual has recurrent miscarriages" is a classic clinical-genetics scenario pointing toward a **balanced translocation carrier**: the carrier's own chromosome complement has no net gene loss, but a large fraction of their gametes are chromosomally unbalanced.
 - Pseudodominance (a recessive phenotype appearing in a heterozygote) should prompt consideration of a **deletion** on the other homolog unmasking the recessive allele, not a spontaneous new dominant mutation.
 
@@ -84,7 +84,7 @@ Four categories of structural rearrangement, each with distinct genetic conseque
 
 {{< iframe src="/nondisjunction-simulator.html" title="Nondisjunction simulator" height="380px" >}}
 
-*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. One gap remains open: a diagram specifically showing the abnormal gamete chromosome counts produced by nondisjunction at MI vs. MII — see the inline note above.)*
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. One gap remains open: a diagram specifically showing the abnormal gamete chromosome counts produced by nondisjunction at MI vs. MII, see the inline note above.)*
 
 ## Practice Problems
 

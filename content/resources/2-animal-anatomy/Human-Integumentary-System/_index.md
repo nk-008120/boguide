@@ -1,7 +1,7 @@
 ---
 title: "Human Integumentary System"
 weight: 3
-description: "Epidermal strata and keratinization, dermal structure and cutaneous sensory receptors, hair and nail structure, glands, and the structural basis of thermoregulation — split from the combined Skeletal/Integumentary page for full IBO depth."
+description: "Epidermal strata and keratinization, dermal structure and cutaneous sensory receptors, hair and nail structure, glands, and the structural basis of thermoregulation, split from the combined Skeletal/Integumentary page for full IBO depth."
 difficulty: "beginner"
 prerequisites: ["Body-Plans"]
 syllabus_tags: ["IBO", "USABO", "human-anatomy"]
@@ -35,7 +35,7 @@ This basale-to-corneum progression is a single continuous process, **keratinizat
 **Epidermal cell types**, beyond the keratinocytes that make up the bulk of every layer: **melanocytes** (stratum basale, produce the pigment melanin in organelles called melanosomes, then transfer melanosomes to surrounding keratinocytes via dendritic processes; melanin content, not melanocyte number, which is roughly constant across skin tones, is what differs between individuals); **Langerhans cells** (stratum spinosum, dendritic, antigen-presenting immune cells, the skin's front-line immune surveillance); **Merkel cells** (stratum basale, associated with sensory nerve endings, function in light touch discrimination).
 
 ![Top-left inset: a dendritic melanocyte (brown) transferring melanosomes (black granules) directly to surrounding keratinocytes. Main panel: a separate, more technical diagram of intracellular melanosome transport within a melanocyte, showing dynein motor proteins carrying melanosomes along microtubules toward the cell body.](/ANATOMYPICS/melanosome-transfer-melanocyte-keratinocyte.png)
-*Source: user-sourced research figure. Only the small inset actually shows transfer to keratinocytes as described in the text; the larger main diagram illustrates a related but distinct process — intracellular dynein/microtubule-based melanosome trafficking within the melanocyte itself, not the transfer step. Included because the inset is a genuine match; captioned honestly about the mismatch in the main panel.*
+*Source: user-sourced research figure. Only the small inset actually shows transfer to keratinocytes as described in the text; the larger main diagram illustrates a related but distinct process, intracellular dynein/microtubule-based melanosome trafficking within the melanocyte itself, not the transfer step. Included because the inset is a genuine match; captioned honestly about the mismatch in the main panel.*
 
 ### Dermis
 
@@ -45,9 +45,9 @@ Beneath the epidermis, separated by the basement membrane, the dermis is dense i
 - **Reticular layer**: thicker, dense irregular connective tissue with interwoven collagen and elastin fibers providing tensile strength and elasticity; contains most of the skin's glands, hair follicles, and deeper sensory receptors.
 
 ![Histology section showing the epidermis sitting atop the papillary dermis (finger-like projections interlocking with the epidermal underside) and the deeper, denser reticular dermis.](/ANATOMYPICS/dermal-papillae-epidermal-junction.jpg)
-*Source: user-sourced histology figure. Clear match — the papillary/reticular dermis distinction and the interlocking papillae are both visible.*
+*Source: user-sourced histology figure. Clear match, the papillary/reticular dermis distinction and the interlocking papillae are both visible.*
 
-**Cutaneous sensory receptors**, each structurally specialized for a distinct stimulus modality — a favorite IBO comparison table:
+**Cutaneous sensory receptors**, each structurally specialized for a distinct stimulus modality, a favorite IBO comparison table:
 
 | Receptor | Location | Stimulus detected |
 |---|---|---|
@@ -118,7 +118,7 @@ Beneath the epidermis, separated by the basement membrane, the dermis is dense i
 
 ### Hypodermis (Subcutaneous Layer)
 
-Not part of the skin proper, but adipose-rich connective tissue anchoring the dermis to underlying fascia/muscle, providing thermal insulation, mechanical cushioning, and energy storage; thickness varies substantially by body region and is hormonally regulated (a physiology point, noted here for its direct structural consequence — regional variation in skin mobility and cushioning).
+Not part of the skin proper, but adipose-rich connective tissue anchoring the dermis to underlying fascia/muscle, providing thermal insulation, mechanical cushioning, and energy storage; thickness varies substantially by body region and is hormonally regulated (a physiology point, noted here for its direct structural consequence, regional variation in skin mobility and cushioning).
 
 ### Hair Structure and Growth Cycle
 
@@ -202,7 +202,7 @@ A hair follicle is an epidermal invagination into the dermis, structured around 
 The **nail plate** (a flattened sheet of hard keratin, structurally continuous with hair keratin production logic) sits on the **nail bed**, growing from the **nail matrix** (a proliferative region beneath the proximal nail fold, visible externally as the pale crescent-shaped **lunula**), with the **eponychium (cuticle)** sealing the proximal edge against infection and the **hyponychium** sealing the distal free edge.
 
 ![Labeled nail structure from two views: surface view showing the free edge, lateral nail folds, lunula, cuticle, and eponychium (proximal nail fold), and a longitudinal section showing the germinal matrix, nail bed, and nail fold.](/ANATOMYPICS/nail-structure-cross-section.jpg)
-*Source: Wikimedia Commons-style figure (user-sourced). Exact match — covers every landmark named in the text (matrix, bed, lunula, eponychium, hyponychium) plus additional surface-anatomy labels.*
+*Source: Wikimedia Commons-style figure (user-sourced). Exact match, covers every landmark named in the text (matrix, bed, lunula, eponychium, hyponychium) plus additional surface-anatomy labels.*
 
 ### Glands
 
@@ -212,11 +212,11 @@ The **nail plate** (a flattened sheet of hard keratin, structurally continuous w
 
 ### Thermoregulatory Structure
 
-Two independent structural mechanisms, both under autonomic (sympathetic) control, work in the skin to regulate core body temperature: **eccrine sweat evaporation** (evaporative heat loss — sweat's latent heat of vaporization is drawn from the skin surface, cooling the body) and **dermal blood vessel caliber** (vasodilation of the dermal vascular plexus increases blood flow near the skin surface, promoting radiative/convective heat loss; vasoconstriction reduces it, conserving core heat). Both mechanisms depend directly on the dermal structures described above (the dense dermal capillary network and the eccrine gland distribution), making thermoregulation a direct structure-function extension of this page's anatomy, even though the autonomic control itself is physiology.
+Two independent structural mechanisms, both under autonomic (sympathetic) control, work in the skin to regulate core body temperature: **eccrine sweat evaporation** (evaporative heat loss, sweat's latent heat of vaporization is drawn from the skin surface, cooling the body) and **dermal blood vessel caliber** (vasodilation of the dermal vascular plexus increases blood flow near the skin surface, promoting radiative/convective heat loss; vasoconstriction reduces it, conserving core heat). Both mechanisms depend directly on the dermal structures described above (the dense dermal capillary network and the eccrine gland distribution), making thermoregulation a direct structure-function extension of this page's anatomy, even though the autonomic control itself is physiology.
 
 ## Comparative Structures
 
-The epidermis-over-dermis plan and keratinization process described here are shared, in substantially modified form, with the keratinized structures of other vertebrates — reptile scales, bird feathers, and mammalian fur are all epidermal keratin derivatives, directly compared on the [Reptile & Bird Anatomy](../reptile-bird-anatomy/) and [Mammalian Comparative Anatomy](../mammalian-comparative-anatomy/) pages. Fish scales, by contrast, are dermal (bony) rather than epidermal; see [Fish & Amphibian Anatomy](../fish-amphibian-anatomy/) for this structural distinction.
+The epidermis-over-dermis plan and keratinization process described here are shared, in substantially modified form, with the keratinized structures of other vertebrates, reptile scales, bird feathers, and mammalian fur are all epidermal keratin derivatives, directly compared on the [Reptile & Bird Anatomy](../reptile-bird-anatomy/) and [Mammalian Comparative Anatomy](../mammalian-comparative-anatomy/) pages. Fish scales, by contrast, are dermal (bony) rather than epidermal; see [Fish & Amphibian Anatomy](../fish-amphibian-anatomy/) for this structural distinction.
 
 ## Common Exam Questions
 

@@ -1,8 +1,8 @@
 ---
-title: "Q30 — An X-Linked, Epigenetically-Acting Eye-Colour Gene"
+title: "Q30 - An X-Linked, Epigenetically-Acting Eye-Colour Gene"
 ---
 
-{{< problem-meta category="Theoretical A" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/7-genetics/mendelian-inheritance-probability/">Mendel's Laws & Probability in Genetics</a>
@@ -18,7 +18,7 @@ Consider the following crossing experiments. What are the genotypes and eye colo
 2. Ec+/Ec females × Ec/Y males
 3. Ec+/Ec females × Ec+/Y males
 
-Use one letter from each group — (A-C) proportion, (D-H) genotype, (K-L) phenotype — in each box you fill in (three letters per box). Note that not all boxes need to be filled; if a box should remain empty, indicate that with an "X".
+Use one letter from each group - (A-C) proportion, (D-H) genotype, (K-L) phenotype - in each box you fill in (three letters per box). Note that not all boxes need to be filled; if a box should remain empty, indicate that with an "X".
 
 - A. 25%
 - B. 50%
@@ -37,4 +37,4 @@ Use one letter from each group — (A-C) proportion, (D-H) genotype, (K-L) pheno
 
 ---
 
-Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=49) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)
+Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=49) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)

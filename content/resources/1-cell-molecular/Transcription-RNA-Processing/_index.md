@@ -1,7 +1,7 @@
 ---
 title: "Transcription & RNA Processing"
 weight: 11
-description: "Prokaryotic and eukaryotic transcription, promoter recognition, the three eukaryotic RNA polymerases, and the three co-/post-transcriptional processing steps — capping, splicing, and polyadenylation — that convert a primary transcript into mature mRNA."
+description: "Prokaryotic and eukaryotic transcription, promoter recognition, the three eukaryotic RNA polymerases, and the three co-/post-transcriptional processing steps, capping, splicing, and polyadenylation, that convert a primary transcript into mature mRNA."
 difficulty: "advanced"
 prerequisites: ["DNA-Structure-Replication"]
 syllabus_tags: ["IBO", "USABO", "molecular-biology"]
@@ -18,7 +18,7 @@ Transcription converts DNA sequence into RNA, and, in eukaryotes specifically, t
 
 ### Prokaryotic transcription: one polymerase, direct promoter recognition
 
-Bacteria use a single **RNA polymerase** for all transcription. A dissociable **σ (sigma) factor** subunit confers promoter-sequence specificity, directing the core polymerase to bind specific promoter consensus sequences (e.g. the −10 and −35 boxes upstream of the transcription start site) — the σ factor's role is specifically recognition and initiation; it dissociates once elongation begins, at which point the core polymerase continues alone. Different σ factors, recognising different promoter sequences, let bacteria redirect global transcription (e.g. toward stress-response genes) by simply swapping which σ factor is active, without requiring an entirely new polymerase.
+Bacteria use a single **RNA polymerase** for all transcription. A dissociable **σ (sigma) factor** subunit confers promoter-sequence specificity, directing the core polymerase to bind specific promoter consensus sequences (e.g. the −10 and −35 boxes upstream of the transcription start site), the σ factor's role is specifically recognition and initiation; it dissociates once elongation begins, at which point the core polymerase continues alone. Different σ factors, recognising different promoter sequences, let bacteria redirect global transcription (e.g. toward stress-response genes) by simply swapping which σ factor is active, without requiring an entirely new polymerase.
 
 ### Eukaryotic transcription: three specialised polymerases
 
@@ -37,7 +37,7 @@ RNA Pol II, the polymerase responsible for every protein-coding gene, cannot ini
 
 ### Elongation and termination
 
-Once initiated, RNA polymerase moves along the template strand 3′→5′, synthesising RNA 5′→3′ (the same fixed directionality constraint that governs DNA polymerase, see [DNA Structure & Replication](../dna-structure-replication/)), using ribonucleotides rather than deoxyribonucleotides and incorporating uracil in place of thymine (see [Nucleotide & Nucleic Acid Chemistry](../nucleotide-nucleic-acid-chemistry/)). Termination mechanisms differ between prokaryotes (a hairpin-forming terminator sequence, either intrinsic/Rho-independent or requiring the Rho protein) and eukaryotes (coupled to the polyadenylation signal, see below) — the exact termination mechanism is less frequently tested at depth than the processing steps that follow.
+Once initiated, RNA polymerase moves along the template strand 3′→5′, synthesising RNA 5′→3′ (the same fixed directionality constraint that governs DNA polymerase, see [DNA Structure & Replication](../dna-structure-replication/)), using ribonucleotides rather than deoxyribonucleotides and incorporating uracil in place of thymine (see [Nucleotide & Nucleic Acid Chemistry](../nucleotide-nucleic-acid-chemistry/)). Termination mechanisms differ between prokaryotes (a hairpin-forming terminator sequence, either intrinsic/Rho-independent or requiring the Rho protein) and eukaryotes (coupled to the polyadenylation signal, see below), the exact termination mechanism is less frequently tested at depth than the processing steps that follow.
 
 ### Co-/post-transcriptional processing: three steps, three purposes
 
@@ -52,7 +52,7 @@ Eukaryotic pre-mRNA undergoes three distinct modifications before it is a mature
 
 **3′ polyadenylation**: after a specific polyadenylation signal sequence is transcribed, the transcript is cleaved at that site and a long **poly(A) tail** (up to ~250 adenine residues) is added enzymatically, not template-directed. The poly(A) tail, like the 5′ cap, protects against degradation and is recognised by translation machinery, and its progressive shortening over the mRNA's lifetime is one mechanism regulating mRNA stability/lifespan.
 
-Together, the cap and poly(A) tail form a structural link (bridged by cap-binding and poly(A)-binding proteins) that effectively circularises the mature mRNA — a configuration that promotes efficient, repeated rounds of translation, covered further in [Translation & the Genetic Code](../translation-genetic-code/).
+Together, the cap and poly(A) tail form a structural link (bridged by cap-binding and poly(A)-binding proteins) that effectively circularises the mature mRNA, a configuration that promotes efficient, repeated rounds of translation, covered further in [Translation & the Genetic Code](../translation-genetic-code/).
 
 ![mRNA circularisation via poly(A)-binding protein (PABPC) bound along the poly(A) tail, contacting translating ribosomes at the 5' end and the Ccr4-Not deadenylase complex at the 3' end: short poly(A) tails (~30 A) are associated with fast translation elongation and slow deadenylation, while long poly(A) tails (~150 A) are associated with slow elongation, fast deadenylation, and mRNA decapping](/MCBBPICS/mature-mrna-cap-polya-circularization.png)
 *Source: pmc.ncbi.nlm.nih.gov (PMC7614307)*
@@ -75,8 +75,8 @@ Together, the cap and poly(A) tail form a structural link (bridged by cap-bindin
 ## Common Exam Questions
 
 - "Which RNA polymerase transcribes [gene class]?": direct recall of the Pol I/II/III table above is a frequent, high-value memorisation target.
-- "Why can prokaryotic mRNA be translated while still being transcribed, but eukaryotic mRNA cannot?" — the correct answer cites the physical separation of the nucleus (transcription) from the cytoplasm (translation) in eukaryotes, and the requirement for processing (particularly splicing) to complete before the sequence is translation-ready.
-- "How does alternative splicing increase proteomic diversity beyond gene number?": tests whether you understand that a single gene locus, through different exon-inclusion combinations, can encode functionally distinct protein isoforms — a frequently tested explanation for why proteome complexity exceeds raw gene-count estimates.
+- "Why can prokaryotic mRNA be translated while still being transcribed, but eukaryotic mRNA cannot?", the correct answer cites the physical separation of the nucleus (transcription) from the cytoplasm (translation) in eukaryotes, and the requirement for processing (particularly splicing) to complete before the sequence is translation-ready.
+- "How does alternative splicing increase proteomic diversity beyond gene number?": tests whether you understand that a single gene locus, through different exon-inclusion combinations, can encode functionally distinct protein isoforms, a frequently tested explanation for why proteome complexity exceeds raw gene-count estimates.
 - Distinguishing the cap (5′, co-transcriptional, protects against 5′ exonucleases) from the poly(A) tail (3′, post-cleavage, protects against 3′ exonucleases and regulates lifespan) by location and timing is a common discriminator.
 
 ## Visual Reference

@@ -1,7 +1,7 @@
 ---
 title: "Plant Hormones"
 weight: 7
-description: "The five classical plant hormones (auxin, gibberellin, cytokinin, abscisic acid, ethylene) plus brassinosteroids — their sites of synthesis, core mechanisms, and the classic experiments (Darwin/Went coleoptile bending, the triple response) that established each one's role — the shared regulatory vocabulary the rest of this tier assumes."
+description: "The five classical plant hormones (auxin, gibberellin, cytokinin, abscisic acid, ethylene) plus brassinosteroids, their sites of synthesis, core mechanisms, and the classic experiments (Darwin/Went coleoptile bending, the triple response) that established each one's role, the shared regulatory vocabulary the rest of this tier assumes."
 difficulty: "intermediate"
 prerequisites: []
 syllabus_tags: ["IBO", "USABO", "foundations"]
@@ -24,7 +24,7 @@ Synthesized primarily in shoot apical meristems and young leaves, then transport
 
 The classic **Darwin/Went coleoptile experiments** (a grass seedling's coleoptile bends toward light only if its tip is intact and light-exposed; a severed tip's diffusible substance, collected in agar and reapplied off-center, causes bending even in the dark) first demonstrated that a mobile chemical signal, not a direct tissue response, causes phototropic bending, established before auxin was chemically identified, and the model this page's classic-experiment framing follows throughout.
 
-![The classic phototropism experimental series: an intact, light-exposed coleoptile bends toward light; removing the tip abolishes bending; covering the tip with an opaque cap abolishes bending; covering the tip with a transparent cap preserves bending; shielding only the base leaves bending intact — together localizing both light perception and the response-initiating signal to the tip](/PLANTPHYSIOPICS/coleoptile-bending-experiment.png)
+![The classic phototropism experimental series: an intact, light-exposed coleoptile bends toward light; removing the tip abolishes bending; covering the tip with an opaque cap abolishes bending; covering the tip with a transparent cap preserves bending; shielding only the base leaves bending intact, together localizing both light perception and the response-initiating signal to the tip](/PLANTPHYSIOPICS/coleoptile-bending-experiment.png)
 *Source: Pathwayz.org*
 
 ### Gibberellins (GA)
@@ -37,7 +37,7 @@ Synthesized predominantly in root tips and transported upward (opposite auxin's 
 
 ### Abscisic Acid (ABA)
 
-Synthesized in response to water stress (roots and leaves) and during seed maturation, ABA is often called the "stress hormone": it triggers **stomatal closure** (the specific guard cell signaling mechanism covered in full on [Stomatal Physiology & Gas Exchange](../stomatal-physiology-gas-exchange/)), maintains **seed dormancy** by antagonizing GA (developed on [Seed Germination & Dormancy Physiology](../seed-germination-dormancy-physiology/)), and promotes bud dormancy heading into unfavorable seasons. ABA and GA act as a recurring antagonistic pair across several of these processes — the ratio between them, not either hormone in isolation, determines whether a seed remains dormant or germinates.
+Synthesized in response to water stress (roots and leaves) and during seed maturation, ABA is often called the "stress hormone": it triggers **stomatal closure** (the specific guard cell signaling mechanism covered in full on [Stomatal Physiology & Gas Exchange](../stomatal-physiology-gas-exchange/)), maintains **seed dormancy** by antagonizing GA (developed on [Seed Germination & Dormancy Physiology](../seed-germination-dormancy-physiology/)), and promotes bud dormancy heading into unfavorable seasons. ABA and GA act as a recurring antagonistic pair across several of these processes, the ratio between them, not either hormone in isolation, determines whether a seed remains dormant or germinates.
 
 ### Ethylene
 
@@ -48,7 +48,7 @@ Unlike the other five hormones, ethylene is a **gas** and diffuses freely throug
 
 ### Brassinosteroids
 
-Structurally steroid-like (unlike the other five hormones), synthesized broadly across tissues, and acting largely locally rather than being transported long distances. Brassinosteroids promote cell elongation and division in a way that overlaps functionally with auxin and gibberellin (a mutant deficient in brassinosteroid synthesis shows a dwarf phenotype reminiscent of a GA-deficient mutant, but is not rescued by GA application — the specific genetic test distinguishing the two dwarfing causes) and also contribute to vascular tissue differentiation and stress tolerance.
+Structurally steroid-like (unlike the other five hormones), synthesized broadly across tissues, and acting largely locally rather than being transported long distances. Brassinosteroids promote cell elongation and division in a way that overlaps functionally with auxin and gibberellin (a mutant deficient in brassinosteroid synthesis shows a dwarf phenotype reminiscent of a GA-deficient mutant, but is not rescued by GA application, the specific genetic test distinguishing the two dwarfing causes) and also contribute to vascular tissue differentiation and stress tolerance.
 
 ![Six-hormone summary table: chemical nature, primary sites of biosynthesis, transport mode, and effects for auxins, cytokinins, ethylene, abscisic acid, gibberellins, and brassinosteroids, side by side](/PLANTPHYSIOPICS/plant-hormones-summary.png)
 *Source: public source*
@@ -77,7 +77,7 @@ Structurally steroid-like (unlike the other five hormones), synthesized broadly 
 
 **Interactive**
 
-- **Coleoptile bending simulator (click-through SVG/JS, no new library)** — reproduces the Darwin/Went experimental series (intact tip + light, tip removed, tip covered, severed tip on agar reapplied off-center) as selectable conditions, each showing the resulting bending or lack thereof, letting the user reconstruct the logical case for a diffusible signal step by step.
+- **Coleoptile bending simulator (click-through SVG/JS, no new library)**, reproduces the Darwin/Went experimental series (intact tip + light, tip removed, tip covered, severed tip on agar reapplied off-center) as selectable conditions, each showing the resulting bending or lack thereof, letting the user reconstruct the logical case for a diffusible signal step by step.
 
 <div id="coleoptile-widget" style="background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:'Inter','Segoe UI',Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
   <svg viewBox="0 0 200 200" width="180" height="180" style="display:block; margin:0 auto;">
@@ -114,9 +114,9 @@ Structurally steroid-like (unlike the other five hormones), synthesized broadly 
   var conditions = {
     control: {bend:true, cap:false, base:false, agar:false, light:true, text:'The intact, light-exposed tip bends toward the light: auxin is redistributed to the shaded side and promotes elongation there.'},
     removed: {bend:false, cap:false, base:false, agar:false, light:true, text:'With the tip removed, no bending occurs. The light-sensing, auxin-redistributing tissue is gone.'},
-    opaque: {bend:false, cap:true, base:false, agar:false, light:true, text:'An opaque cap blocks light from reaching the tip, so no bending occurs — proving the tip itself must detect the light.'},
-    transparent: {bend:true, cap:true, base:false, agar:false, light:true, text:'A transparent cap still lets light through to the tip, and bending occurs normally — the cap material, not covering the tip per se, is what matters.'},
-    baseshield: {bend:true, cap:false, base:true, agar:false, light:true, text:'Shielding only the base (not the tip) from light does not prevent bending — the tip is the site of perception, not the base.'},
+    opaque: {bend:false, cap:true, base:false, agar:false, light:true, text:'An opaque cap blocks light from reaching the tip, so no bending occurs, proving the tip itself must detect the light.'},
+    transparent: {bend:true, cap:true, base:false, agar:false, light:true, text:'A transparent cap still lets light through to the tip, and bending occurs normally, the cap material, not covering the tip per se, is what matters.'},
+    baseshield: {bend:true, cap:false, base:true, agar:false, light:true, text:'Shielding only the base (not the tip) from light does not prevent bending, the tip is the site of perception, not the base.'},
     agar: {bend:true, cap:false, base:false, agar:true, light:false, text:'In the dark, a severed tip\'s diffusible substance (collected in agar and reapplied off-center to a decapitated coleoptile) causes bending even with no light and no tip present. This is the direct evidence for a mobile chemical signal.'}
   };
   function render(){
@@ -134,7 +134,7 @@ Structurally steroid-like (unlike the other five hormones), synthesized broadly 
 })();
 </script>
 
-- **Auxin:cytokinin ratio tissue-culture predictor (slider)** — a slider sets the relative auxin:cytokinin ratio; the diagram updates between root-dominant, shoot-dominant, and undifferentiated callus outcomes, visualizing the ratio-dependence directly rather than as a memorized table.
+- **Auxin:cytokinin ratio tissue-culture predictor (slider)**, a slider sets the relative auxin:cytokinin ratio; the diagram updates between root-dominant, shoot-dominant, and undifferentiated callus outcomes, visualizing the ratio-dependence directly rather than as a memorized table.
 
 <div id="ratio-widget" style="background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:'Inter','Segoe UI',Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
   <svg viewBox="0 0 220 160" width="200" height="150" style="display:block; margin:0 auto;">
@@ -169,7 +169,7 @@ Structurally steroid-like (unlike the other five hormones), synthesized broadly 
     if (v < 35){
       shoots.style.opacity = 1;
       roots.style.opacity = 0;
-      note.textContent = 'Low auxin:cytokinin ratio (cytokinin-dominant) — shoot formation is favored.';
+      note.textContent = 'Low auxin:cytokinin ratio (cytokinin-dominant), shoot formation is favored.';
     } else if (v > 65){
       shoots.style.opacity = 0;
       roots.style.opacity = 1;
@@ -185,7 +185,7 @@ Structurally steroid-like (unlike the other five hormones), synthesized broadly 
 })();
 </script>
 
-*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. The dwarf-pea GA-rescue comparison was dropped — no image sourced.)*
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. The dwarf-pea GA-rescue comparison was dropped, no image sourced.)*
 
 ## Practice Problems
 

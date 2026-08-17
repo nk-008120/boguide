@@ -33,7 +33,7 @@ Leaves with palisade mesophyll on one face only and facing predominantly one dir
 
 ### Leaf Veins
 
-Each vein is a small vascular bundle (see [Xylem, Phloem & Vascular Tissue](../xylem-phloem-vascular-tissue/)) embedded in the mesophyll, consistently oriented **xylem toward the upper (adaxial) side, phloem toward the lower (abaxial) side** — the leaf's version of the same polarity xylem/phloem show in stems. Each vein is wrapped in a **bundle sheath** (parenchyma or, in some species, sclerenchyma), and in many species a **bundle sheath extension** of colorless cells runs from the bundle sheath to one or both epidermal layers, structurally partitioning the mesophyll into discrete compartments and (where the extension reaches the epidermis) providing a lower-resistance path for water movement out to the leaf surface.
+Each vein is a small vascular bundle (see [Xylem, Phloem & Vascular Tissue](../xylem-phloem-vascular-tissue/)) embedded in the mesophyll, consistently oriented **xylem toward the upper (adaxial) side, phloem toward the lower (abaxial) side**, the leaf's version of the same polarity xylem/phloem show in stems. Each vein is wrapped in a **bundle sheath** (parenchyma or, in some species, sclerenchyma), and in many species a **bundle sheath extension** of colorless cells runs from the bundle sheath to one or both epidermal layers, structurally partitioning the mesophyll into discrete compartments and (where the extension reaches the epidermis) providing a lower-resistance path for water movement out to the leaf surface.
 
 ![Full dorsiventral leaf cross-section: upper epidermis, palisade parenchyma (with chloroplasts and vacuoles), a vascular bundle (tracheid/xylem vessel, phloem sieve-tube), spongy mesophyll with air spaces, lower epidermis, guard cells, stomata, and substomatal cavity all labeled.](/PLANTANATPICS/dorsiventral-leaf-cross-section.webp)
 *Source: ResearchGate, fig. 2, "Dorsiventral cross-section of a dicot leaf with the adaxial surface at the top"*
@@ -45,7 +45,7 @@ Gas exchange across the otherwise cuticle-sealed epidermis happens through **sto
 ![Stomatal movements compared: (A) open kidney-shaped dicot stomata, (B) closed kidney-shaped dicot stomata, (C) open dumbbell-shaped monocot/grass stomata, (D) closed dumbbell-shaped monocot/grass stomata, guard cell wall thickness and chloroplasts labeled on each.](/PLANTANATPICS/stomatal-complex-dicot-vs-grass.jpg)
 *Source: Science Arena, "Anatomy of Flowering Plants" (sciencearena.in)*
 
-Below the pore, a **substomatal chamber** — an enlarged air space in the mesophyll directly beneath the stomatal complex — connects the pore to the surrounding spongy mesophyll air space network.
+Below the pore, a **substomatal chamber**, an enlarged air space in the mesophyll directly beneath the stomatal complex, connects the pore to the surrounding spongy mesophyll air space network.
 
 ![Substomatal chamber and CO₂ diffusion pathway: (a) CO₂ entering through an open stoma vs. blocked at a closed one; (b) the diffusion path highlighted in red from stoma through substomatal cavity into the spongy mesophyll air spaces.](/PLANTANATPICS/substomatal-chamber.png)
 *Source: Plant Stomata (plantstomata.wordpress.com)*
@@ -61,7 +61,7 @@ In most plants (the **C3** pathway), the leaf's photosynthetic anatomy is simply
 
 ### CAM Leaf Anatomy
 
-**CAM (Crassulacean Acid Metabolism)** plants achieve a related photorespiration-avoidance benefit through a *temporal* rather than *spatial* separation (fixing CO₂ at night, running the Calvin cycle by day using stored acid, using the same cells for both steps), so CAM leaves lack Kranz anatomy, but show their own structural signature: thick, water-storing mesophyll with unusually large vacuoles (structural capacity to store the malic acid accumulated overnight), a thick cuticle, sunken stomata (recessed below the epidermal surface, reducing water loss further), and low surface-area-to-volume ratio overall — typically in succulent leaves or stems, an anatomical profile suited to the arid habitats where CAM is most common.
+**CAM (Crassulacean Acid Metabolism)** plants achieve a related photorespiration-avoidance benefit through a *temporal* rather than *spatial* separation (fixing CO₂ at night, running the Calvin cycle by day using stored acid, using the same cells for both steps), so CAM leaves lack Kranz anatomy, but show their own structural signature: thick, water-storing mesophyll with unusually large vacuoles (structural capacity to store the malic acid accumulated overnight), a thick cuticle, sunken stomata (recessed below the epidermal surface, reducing water loss further), and low surface-area-to-volume ratio overall, typically in succulent leaves or stems, an anatomical profile suited to the arid habitats where CAM is most common.
 
 ![Generic leaf cross-section (cuticle, upper/lower epidermis, palisade/spongy mesophyll, guard cells, stomata) with CO₂ entering and O₂ exiting the stoma labeled.](/PLANTANATPICS/cam-leaf-cross-section.jpg)
 *Source: Ask A Biologist, Arizona State University, "CAM Plants" (askabiologist.asu.edu)*
@@ -88,11 +88,11 @@ In most plants (the **C3** pathway), the leaf's photosynthetic anatomy is simply
 
 **Interactive**
 
-- **Leaf cross-section layer builder (SVG/JS, no new library)** — builds a dorsiventral leaf cross-section layer by layer (upper epidermis → palisade mesophyll → spongy mesophyll → vein → lower epidermis with stomata), each layer clickable for its structural role.
+- **Leaf cross-section layer builder (SVG/JS, no new library)**, builds a dorsiventral leaf cross-section layer by layer (upper epidermis → palisade mesophyll → spongy mesophyll → vein → lower epidermis with stomata), each layer clickable for its structural role.
 
 {{< iframe src="/leaf-cross-section-layer-builder.html" title="Leaf cross-section layer builder" height="480px" >}}
 
-- **C3 vs. C4 (Kranz) toggle (click-through SVG/JS, no new library)** — a single vein cross-section that toggles between ordinary C3 mesophyll and Kranz anatomy, visually showing the bundle sheath enlarging and the mesophyll cells reorganizing radially around it.
+- **C3 vs. C4 (Kranz) toggle (click-through SVG/JS, no new library)**, a single vein cross-section that toggles between ordinary C3 mesophyll and Kranz anatomy, visually showing the bundle sheath enlarging and the mesophyll cells reorganizing radially around it.
 
 {{< iframe src="/c3-c4-kranz-toggle.html" title="C3 vs. C4 (Kranz) vein cross-section toggle" height="480px" >}}
 

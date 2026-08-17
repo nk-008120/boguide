@@ -27,7 +27,7 @@
 
 	<meta itemprop="name" content="Population Genetics & Hardy-Weinberg Equilibrium">
 	<meta itemprop="description" content="Allele and genotype frequencies, the Hardy-Weinberg equation and its five underlying assumptions, and how deviation from Hardy-Weinberg equilibrium is used to detect that evolution is acting on a real population.">
-	<meta itemprop="wordCount" content="1305">
+	<meta itemprop="wordCount" content="1299">
 	<meta itemprop="image" content="http://localhost:1313/og-default.png">
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:image" content="http://localhost:1313/og-default.png">
@@ -1894,9 +1894,9 @@
 $$p^2 + 2pq + q^2 = 1$$
 </div>
 
-<p>where $p^2$ is the predicted frequency of homozygous dominant (AA) individuals, $2pq$ is the predicted frequency of heterozygous (Aa) individuals (counting both the A-from-mother/a-from-father and a-from-mother/A-from-father combinations), and $q^2$ is the predicted frequency of homozygous recessive (aa) individuals. A population satisfying this equation, with allele and genotype frequencies remaining constant across generations, is said to be in <strong>Hardy-Weinberg equilibrium (HWE)</strong>. Critically, HWE is reached in a <em>single generation</em> of random mating given the assumptions below, regardless of the starting genotype frequencies: HWE describes an equilibrium <em>ratio</em>, not a claim that frequencies never change from an arbitrary starting point over multiple generations. (One notable exception worth flagging: this one-generation result assumes both sexes start at the <em>same</em> allele frequency; if male and female starting frequencies differ — as can happen at a newly arisen or sex-linked locus — equilibrium is instead approached gradually across several generations as the two sexes&rsquo; contributions average out, rather than reached immediately.)</p>
+<p>where $p^2$ is the predicted frequency of homozygous dominant (AA) individuals, $2pq$ is the predicted frequency of heterozygous (Aa) individuals (counting both the A-from-mother/a-from-father and a-from-mother/A-from-father combinations), and $q^2$ is the predicted frequency of homozygous recessive (aa) individuals. A population satisfying this equation, with allele and genotype frequencies remaining constant across generations, is said to be in <strong>Hardy-Weinberg equilibrium (HWE)</strong>. Critically, HWE is reached in a <em>single generation</em> of random mating given the assumptions below, regardless of the starting genotype frequencies: HWE describes an equilibrium <em>ratio</em>, not a claim that frequencies never change from an arbitrary starting point over multiple generations. (One notable exception worth flagging: this one-generation result assumes both sexes start at the <em>same</em> allele frequency; if male and female starting frequencies differ, as can happen at a newly arisen or sex-linked locus, equilibrium is instead approached gradually across several generations as the two sexes&rsquo; contributions average out, rather than reached immediately.)</p>
 <p><span class="content-image-frame">
-    <img src="/EVOLUTIONPICS/hardy-weinberg-observed-vs-predicted.jpg" alt="Simulated approach to Hardy-Weinberg equilibrium across generations starting from unequal male and female allele frequencies (males start fixed for one allele, females for the other): (a) male and female A-allele frequencies oscillate and converge toward a shared ~0.33 equilibrium value over about 6 generations; (b) female genotype frequencies (AA, AB, BB) similarly oscillate before settling to stable equilibrium values — illustrating the multi-generation convergence case noted above, not the single-generation case for a locus that already starts at equal frequencies in both sexes"  data-zoomable loading="lazy" />
+    <img src="/EVOLUTIONPICS/hardy-weinberg-observed-vs-predicted.jpg" alt="Simulated approach to Hardy-Weinberg equilibrium across generations starting from unequal male and female allele frequencies (males start fixed for one allele, females for the other): (a) male and female A-allele frequencies oscillate and converge toward a shared ~0.33 equilibrium value over about 6 generations; (b) female genotype frequencies (AA, AB, BB) similarly oscillate before settling to stable equilibrium values, illustrating the multi-generation convergence case noted above, not the single-generation case for a locus that already starts at equal frequencies in both sexes"  data-zoomable loading="lazy" />
   </span>
 <em>Source: Nature, Heredity journal (article hdy201620)</em></p>
 <p><span class="content-image-frame">
@@ -1928,7 +1928,7 @@ $$p^2 + 2pq + q^2 = 1$$
 			</tr>
 			<tr>
 					<td>Random mating</td>
-					<td>Non-random mating (assortative mating, inbreeding) — changes genotype frequencies without changing allele frequencies</td>
+					<td>Non-random mating (assortative mating, inbreeding), changes genotype frequencies without changing allele frequencies</td>
 			</tr>
 			<tr>
 					<td>No natural selection</td>
@@ -1943,7 +1943,7 @@ $$p^2 + 2pq + q^2 = 1$$
   </span>
 <em>Source: Expii</em></p>
 <h3>Using Hardy-Weinberg to Detect Evolution<span class="hx:absolute hx:-mt-20" id="using-hardy-weinberg-to-detect-evolution"></span>
-    <a href="#using-hardy-weinberg-to-detect-evolution" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Because HWE gives an exact quantitative prediction, it functions as a <strong>null hypothesis</strong>: real genotype frequencies are measured in a sampled population, compared against the HWE-predicted frequencies calculated from the same sample&rsquo;s observed allele frequencies, and a statistically significant deviation is evidence that one or more of the five assumptions is being violated — i.e., that evolution (or non-random mating) is actively occurring at that locus. This is a widely used real research technique, e.g. in medical genetics to screen for genotyping errors or selection at disease-associated loci, and a standard IBO/USABO calculation: given an observed count of each genotype, calculate $p$ and $q$ from the data, generate the HWE-predicted genotype counts, and compare.</p>
+    <a href="#using-hardy-weinberg-to-detect-evolution" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>Because HWE gives an exact quantitative prediction, it functions as a <strong>null hypothesis</strong>: real genotype frequencies are measured in a sampled population, compared against the HWE-predicted frequencies calculated from the same sample&rsquo;s observed allele frequencies, and a statistically significant deviation is evidence that one or more of the five assumptions is being violated, i.e., that evolution (or non-random mating) is actively occurring at that locus. This is a widely used real research technique, e.g. in medical genetics to screen for genotyping errors or selection at disease-associated loci, and a standard IBO/USABO calculation: given an observed count of each genotype, calculate $p$ and $q$ from the data, generate the HWE-predicted genotype counts, and compare.</p>
 <h3>A Worked Numerical Example<span class="hx:absolute hx:-mt-20" id="a-worked-numerical-example"></span>
     <a href="#a-worked-numerical-example" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><p>A sample of 100 individuals is genotyped at a locus: 64 AA, 32 Aa, 4 aa. Allele frequency $p$ (for A) is calculated from total allele counts: $p = \frac{(64 \times 2) + 32}{200} = \frac{160}{200} = 0.8$, and $q = 1 - p = 0.2$. The HWE-predicted genotype frequencies are then $p^2 = 0.64$ (64 AA), $2pq = 2(0.8)(0.2) = 0.32$ (32 Aa), and $q^2 = 0.04$ (4 aa), matching the observed counts exactly, so this particular sample is consistent with HWE at this locus. If the observed counts instead diverged substantially from these predicted values, that divergence itself would be the evidence that evolution (or non-random mating) is occurring.</p>
 <p><span class="content-image-frame">
@@ -1999,12 +1999,12 @@ $$p^2 + 2pq + q^2 = 1$$
 <h2>Visual Reference<span class="hx:absolute hx:-mt-20" id="visual-reference"></span>
     <a href="#visual-reference" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><p><strong>Interactive</strong></p>
 <ul>
-<li><strong>Hardy-Weinberg calculator (HTML/JS, no new library)</strong> — the user inputs either genotype counts (to compute p, q, and compare observed vs. predicted frequencies) or a value of p directly (to compute predicted p², 2pq, q²), with a live bar chart comparing observed and HWE-predicted genotype proportions.</li>
+<li><strong>Hardy-Weinberg calculator (HTML/JS, no new library)</strong>, the user inputs either genotype counts (to compute p, q, and compare observed vs. predicted frequencies) or a value of p directly (to compute predicted p², 2pq, q²), with a live bar chart comparing observed and HWE-predicted genotype proportions.</li>
 </ul>
 <iframe src="/hardy-weinberg-calculator.html" title="Hardy-Weinberg calculator" loading="lazy" style="width: 100%; height: 480px; border: none;" allow="fullscreen"></iframe>
 
 <ul>
-<li><strong>Assumption-violation scenario matcher (click-through quiz, HTML/JS)</strong> — a series of short scenario descriptions (a new mutation, a flood isolating two subpopulations, a population bottleneck, assortative mating, a selective pesticide) are matched by the user to the specific Hardy-Weinberg assumption each violates, with the corresponding evolutionary mechanism page linked on a correct answer.</li>
+<li><strong>Assumption-violation scenario matcher (click-through quiz, HTML/JS)</strong>, a series of short scenario descriptions (a new mutation, a flood isolating two subpopulations, a population bottleneck, assortative mating, a selective pesticide) are matched by the user to the specific Hardy-Weinberg assumption each violates, with the corresponding evolutionary mechanism page linked on a correct answer.</li>
 </ul>
 <iframe src="/hw-assumption-matcher.html" title="Assumption-violation scenario matcher" loading="lazy" style="width: 100%; height: 420px; border: none;" allow="fullscreen"></iframe>
 

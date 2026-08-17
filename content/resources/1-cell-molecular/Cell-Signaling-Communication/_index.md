@@ -1,7 +1,7 @@
 ---
 title: "Cell Signaling & Communication"
 weight: 6
-description: "The three stages of cell signaling (reception, transduction, response), the major receptor classes — GPCRs and receptor tyrosine kinases — and the second-messenger cascades that amplify a signal from a single bound ligand into a coordinated cellular response."
+description: "The three stages of cell signaling (reception, transduction, response), the major receptor classes, GPCRs and receptor tyrosine kinases, and the second-messenger cascades that amplify a signal from a single bound ligand into a coordinated cellular response."
 difficulty: "advanced"
 prerequisites: ["Plasma-Membrane-Structure-Transport"]
 syllabus_tags: ["IBO", "USABO", "cell-biology"]
@@ -55,7 +55,7 @@ The core reason second messengers matter functionally, beyond relaying the signa
 
 ### Signal termination
 
-Every activating step described above has a matched inactivating mechanism — Gα's intrinsic GTPase activity, phosphatases that remove activating phosphates added by kinases, and active Ca²⁺ resequestration into the ER — because a signaling pathway that only turns on and never off cannot function as a regulated switch. Dysregulation of termination steps (e.g. a Ras mutant with impaired GTPase activity, staying locked in the "on," GTP-bound state) is a recurring theme in disease, not just activation-side mutations.
+Every activating step described above has a matched inactivating mechanism, Gα's intrinsic GTPase activity, phosphatases that remove activating phosphates added by kinases, and active Ca²⁺ resequestration into the ER, because a signaling pathway that only turns on and never off cannot function as a regulated switch. Dysregulation of termination steps (e.g. a Ras mutant with impaired GTPase activity, staying locked in the "on," GTP-bound state) is a recurring theme in disease, not just activation-side mutations.
 
 ## Comparative Structures
 

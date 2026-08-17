@@ -18,7 +18,7 @@ Lipids are defined by a shared physical property (poor water solubility) rather 
 
 ### Fatty acid structure and saturation
 
-A fatty acid is a long hydrocarbon chain terminating in a carboxylic acid group. **Saturated** fatty acids have no carbon-carbon double bonds, allowing the chain to lie fully extended and pack tightly against neighbouring chains via van der Waals interactions: this tight packing is why saturated fats are typically solid at room temperature. **Unsaturated** fatty acids contain one (monounsaturated) or more (polyunsaturated) C=C double bonds, almost always in the **cis** configuration in natural lipids, which introduces a rigid ~30° kink in the chain. That kink prevents tight packing, lowering the melting point — unsaturated fats are typically liquid at room temperature.
+A fatty acid is a long hydrocarbon chain terminating in a carboxylic acid group. **Saturated** fatty acids have no carbon-carbon double bonds, allowing the chain to lie fully extended and pack tightly against neighbouring chains via van der Waals interactions: this tight packing is why saturated fats are typically solid at room temperature. **Unsaturated** fatty acids contain one (monounsaturated) or more (polyunsaturated) C=C double bonds, almost always in the **cis** configuration in natural lipids, which introduces a rigid ~30° kink in the chain. That kink prevents tight packing, lowering the melting point, unsaturated fats are typically liquid at room temperature.
 
 ![Saturated stearic acid shown as a fully extended straight chain; unsaturated cis-oleic acid shown with a sharp kink at its single C=C double bond; unsaturated trans-oleic acid shown as a nearly straight chain despite also having one C=C double bond, illustrating that it is specifically the cis configuration, not unsaturation alone, that causes the packing-disrupting kink](/MCBBPICS/saturated-vs-unsaturated-fatty-acid.png)
 *Source: tutorchase.com*
@@ -31,7 +31,7 @@ A **triglyceride** (triacylglycerol) is glycerol esterified to three fatty acids
 
 A **phospholipid** replaces one fatty acid of a triglyceride-like backbone with a **phosphate-linked polar head group** (e.g. choline, serine, ethanolamine, inositol), producing a molecule with a hydrophilic head and two hydrophobic tails, **amphipathic**. In water, this amphipathicity drives spontaneous self-assembly into a **bilayer**: tails face inward, away from water; heads face outward, into the aqueous environment on both sides. This is not an energetically "designed" outcome so much as the thermodynamically favoured configuration: burying the hydrophobic tails minimises the disruption to water's hydrogen-bond network (the same hydrophobic-effect logic that drives protein tertiary-structure folding, see [Protein Structure, Folding & Function](../protein-structure-folding-function/)).
 
-**Head group identity determines membrane leaflet asymmetry and signalling function**, not just electrostatics — e.g. phosphatidylserine is normally kept on the cytoplasmic leaflet by ATP-dependent flippases, and its appearance on the *outer* leaflet is a recognised "eat me" signal for phagocytes during apoptosis (see [Cell Junctions, Extracellular Matrix & Cell Death](../cell-junctions-ecm-cell-death/)).
+**Head group identity determines membrane leaflet asymmetry and signalling function**, not just electrostatics, e.g. phosphatidylserine is normally kept on the cytoplasmic leaflet by ATP-dependent flippases, and its appearance on the *outer* leaflet is a recognised "eat me" signal for phagocytes during apoptosis (see [Cell Junctions, Extracellular Matrix & Cell Death](../cell-junctions-ecm-cell-death/)).
 
 ![Phospholipid structure: a hydrophilic head made of a variable R group, phosphate, and glycerol backbone, connected to two hydrophobic fatty acid tails, one saturated (straight) and one unsaturated (kinked)](/MCBBPICS/phospholipid-structure-diagram.jpg)
 *Source: bio.libretexts.org (Boundless Biology)*
@@ -43,7 +43,7 @@ Cholesterol is a rigid, planar four-ring sterol that intercalates between phosph
 - **Above the phase-transition temperature** (fluid, disordered membrane): cholesterol's rigid ring system restricts the motion of adjacent fatty acid tails, *decreasing* fluidity.
 - **Below the phase-transition temperature** (membrane tending toward a rigid, ordered gel state): cholesterol prevents fatty acid tails from packing into a fully ordered crystalline array, *increasing* fluidity.
 
-Net effect: cholesterol acts as a **fluidity buffer**, narrowing the range of temperatures over which the membrane's physical state changes sharply — a frequently mis-simplified concept ("cholesterol makes membranes more fluid") that is only half correct.
+Net effect: cholesterol acts as a **fluidity buffer**, narrowing the range of temperatures over which the membrane's physical state changes sharply, a frequently mis-simplified concept ("cholesterol makes membranes more fluid") that is only half correct.
 
 ![Membrane fluidity vs. temperature for a membrane with and without cholesterol: without cholesterol (magenta), fluidity rises sharply through the phase-transition temperature Tm; with cholesterol (blue), the curve is flattened, less fluid than the cholesterol-free membrane above Tm, more fluid below Tm, illustrating cholesterol's bidirectional buffering effect](/MCBBPICS/cholesterol-membrane-fluidity.jpg)
 *Source: Chegg homework-help question*
@@ -67,8 +67,8 @@ Not all lipid biology is structural. **Eicosanoids** (prostaglandins, thromboxan
 
 ## Common Exam Questions
 
-- "Why are unsaturated fats liquid at room temperature?" — always cite the *cis double bond kink preventing tight packing*, not a vague "different structure" answer.
-- "Does cholesterol increase or decrease membrane fluidity?" — the trick answer depends on temperature; a well-posed question will specify above or below the transition temperature, and a well-prepared answer should note the dependency even if not explicitly asked.
+- "Why are unsaturated fats liquid at room temperature?", always cite the *cis double bond kink preventing tight packing*, not a vague "different structure" answer.
+- "Does cholesterol increase or decrease membrane fluidity?", the trick answer depends on temperature; a well-posed question will specify above or below the transition temperature, and a well-prepared answer should note the dependency even if not explicitly asked.
 - Distinguishing why fat (not glycogen) is the long-term storage molecule of choice hinges on energy density *and* the anhydrous-vs-hydrated storage argument together, not either alone.
 
 ## Visual Reference
@@ -90,7 +90,7 @@ Not all lipid biology is structural. **Eicosanoids** (prostaglandins, thromboxan
 <details>
 <summary>Show answer</summary>
 
-More fluid. Each additional cis double bond adds another kink to the fatty acid tail, further disrupting tight van der Waals packing between adjacent tails — more unsaturation lowers the effective "melting point" of the membrane, keeping it in a more fluid state at a given temperature than a more saturated membrane would be.
+More fluid. Each additional cis double bond adds another kink to the fatty acid tail, further disrupting tight van der Waals packing between adjacent tails, more unsaturation lowers the effective "melting point" of the membrane, keeping it in a more fluid state at a given temperature than a more saturated membrane would be.
 </details>
 
 **2.** Explain why storing the same amount of chemical energy as fat rather than glycogen requires roughly half the mass, referencing both the chemistry of the molecules and how each is stored physically in the body.

@@ -17,7 +17,7 @@ Here you will find the growing archive of translated Biology Olympiad papers fro
 **[BiOrchive](ibo/)** is the flagship of this archive: every IBO question is reproduced in full with the original figures, an interactive true/false quiz, and a timed-attempt mode, cross-linked to the matching topic notes elsewhere on this site. Other programmes are being added over time.
 
 {{< cards cols="1" >}}
-  {{< card link="ibo/" title="BiOrchive — International Biology Olympiad" image="/biorchive-logo-transparent.png" imageStyle="object-fit: contain; padding: 1.5rem; max-height: 220px;" subtitle="The full IBO archive: official exams + answer keys, plus unofficial community solutions. Every question comes with an interactive quiz, figures, and a timed-attempt mode. 2022 Theoretical 1 & Theoretical 2." >}}
+  {{< card link="ibo/" title="BiOrchive - International Biology Olympiad" image="/biorchive-logo-transparent.png" imageStyle="object-fit: contain; padding: 1.5rem; max-height: 220px;" subtitle="The full IBO archive: official exams + answer keys, plus unofficial community solutions. Every question comes with an interactive quiz, figures, and a timed-attempt mode. 2022 Theoretical 1 & Theoretical 2." >}}
 {{< /cards >}}
 
 {{< cards cols="3" >}}
@@ -27,7 +27,7 @@ Here you will find the growing archive of translated Biology Olympiad papers fro
 <a href="/papers/leaderboard/" class="papers-leaderboard-feature-card">
   <span class="papers-leaderboard-feature-icon">🏆</span>
   <span class="papers-leaderboard-feature-text">
-    <span class="papers-leaderboard-feature-title">Hall of Fame — Leaderboard</span>
+    <span class="papers-leaderboard-feature-title">Hall of Fame - Leaderboard</span>
     <span class="papers-leaderboard-feature-sub">Complete a Timed Attempt, submit your score, and see where you rank: overall standings and per-round leaderboards. Optional and free, like everything else here.</span>
   </span>
   <span class="papers-leaderboard-feature-arrow">→</span>

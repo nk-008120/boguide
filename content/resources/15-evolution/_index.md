@@ -16,7 +16,7 @@ Evolution is the mechanistic and historical layer underlying nearly every other 
 Start with [Evidence for Evolution](Evidence-for-Evolution/): it establishes the vocabulary (homology, vestigial structures, transitional forms) that every later page assumes.
 
 {{< cards cols="1" >}}
-  {{< card link="evidence-for-evolution/" title="1. Evidence for Evolution" subtitle="Fossil record, biogeography, homology vs. analogy, comparative embryology, molecular evidence — read this first." >}}
+  {{< card link="evidence-for-evolution/" title="1. Evidence for Evolution" subtitle="Fossil record, biogeography, homology vs. analogy, comparative embryology, molecular evidence, read this first." >}}
 {{< /cards >}}
 
 ### Foundations & Evidence

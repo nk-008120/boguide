@@ -1,7 +1,7 @@
 ---
 title: "Human Digestive System"
 weight: 9
-description: "Oral cavity and tooth structure, esophageal and gastric histology, small and large intestine regional structure, liver lobule and pancreatic exocrine/endocrine architecture, and peritoneal organization — split from the combined Digestive/Excretory/Reproductive page for full IBO depth."
+description: "Oral cavity and tooth structure, esophageal and gastric histology, small and large intestine regional structure, liver lobule and pancreatic exocrine/endocrine architecture, and peritoneal organization, split from the combined Digestive/Excretory/Reproductive page for full IBO depth."
 difficulty: "intermediate"
 prerequisites: ["Body-Plans"]
 syllabus_tags: ["IBO", "USABO", "human-anatomy"]
@@ -112,7 +112,7 @@ Grossly divided into the **cardia** (adjacent to the LES), **fundus** (superior 
     });
     feedbackEl.innerHTML = correct
       ? '<span style="color:#2d6a4f; font-weight:600;">Correct: ' + q.answer + '.</span>'
-      : '<span style="color:#c0392b; font-weight:600;">Not quite — the correct cell type is ' + q.answer + '.</span>';
+      : '<span style="color:#c0392b; font-weight:600;">Not quite, the correct cell type is ' + q.answer + '.</span>';
   }
 
   nextBtn.addEventListener('click', function(){
@@ -135,18 +135,18 @@ Three regions with distinguishing structural features, worth naming individually
 
 Absorptive surface amplification, structurally layered: **plicae circulares** (circular mucosal/submucosal folds, visible grossly) → **villi** (finger-like mucosal projections, each containing a capillary network for nutrient absorption and a central lymphatic **lacteal** for fat absorption) → **microvilli** (brush border on individual absorptive epithelial cells). Between villi, the mucosa dips into **crypts of Lieberkühn**, containing proliferative stem cells (replenishing the rapidly turned-over epithelium) and secretory cells.
 
-![Small/large intestine histology: the plicae circulares→villi→microvilli surface-amplification hierarchy, then four real histology samples side by side — duodenum (with Brunner's glands visible in the submucosa), jejunum (villi, lamina propria, goblet cells), ileum (a Peyer's patch clearly circled), and large intestine (goblet cells of the tubular gland, no villi).](/ANATOMYPICS/small-intestine-duodenum-jejunum-ileum-comparison.gif)
-*Source: user-sourced (originally via ditki.com). Excellent match — directly shows each region's unique distinguishing marker (Brunner's glands, Peyer's patch) named in the text, side by side with the absorptive-hierarchy diagram.*
+![Small/large intestine histology: the plicae circulares→villi→microvilli surface-amplification hierarchy, then four real histology samples side by side, duodenum (with Brunner's glands visible in the submucosa), jejunum (villi, lamina propria, goblet cells), ileum (a Peyer's patch clearly circled), and large intestine (goblet cells of the tubular gland, no villi).](/ANATOMYPICS/small-intestine-duodenum-jejunum-ileum-comparison.gif)
+*Source: user-sourced (originally via ditki.com). Excellent match, directly shows each region's unique distinguishing marker (Brunner's glands, Peyer's patch) named in the text, side by side with the absorptive-hierarchy diagram.*
 
 ![A single villus in cross-section: epithelium (absorptive/goblet/enteroendocrine cells), lamina propria, a central lacteal, and a surrounding blood capillary network fed by an arteriole and drained by a venule, with a lymph vessel alongside.](/ANATOMYPICS/villus-microvillus-lacteal-structure.jpg)
-*Source: user-sourced (originally attempted via a ScienceDirect topic page). Exact match — the lacteal and capillary network are both clearly shown and labeled.*
+*Source: user-sourced (originally attempted via a ScienceDirect topic page). Exact match, the lacteal and capillary network are both clearly shown and labeled.*
 
 ### Large Intestine
 
 Begins at the **cecum** (a blind pouch, bearing the **vermiform appendix**, lymphoid tissue of debated but likely immune/microbiome-reservoir function), continuing through the **ascending, transverse, descending, and sigmoid colon** to the **rectum** and **anal canal** (bearing an internal involuntary smooth-muscle sphincter and an external voluntary skeletal-muscle sphincter, a structural pairing directly analogous to the LES/pyloric-sphincter pattern of involuntary control, but here paired with a voluntary override). Structurally distinct from the small intestine: no villi (absorptive surface reduced, since the primary remaining job is water/electrolyte reabsorption and waste consolidation, not nutrient absorption), and the longitudinal muscle layer is gathered into three thickened bands, the **teniae coli**, whose tonic contraction gathers the wall into pouches, **haustra**, a distinctive gross-anatomical signature of the colon on imaging or a specimen. The colon houses a dense resident microbial population (the gut microbiome), structurally supported by this large, slow-transit surface, contributing to fermentation of otherwise-undigested material and synthesis of some vitamins.
 
 ![Full colon gross anatomy: right colic (hepatic) and left colic (splenic) flexures, transverse/ascending/descending colon, taenia coli, epiploic appendages, haustra, ileocecal sphincter (valve), cecum, vermiform appendix, sigmoid colon, rectum, anal canal, and anus.](/ANATOMYPICS/colon-teniae-coli-haustra.jpg)
-*Source: [Outlander Anatomy — "Anatomy Lesson 48: The Big Guy (G.I. Tract 5)"](https://www.outlanderanatomy.com/anatomy-lesson-48-the-big-guy-g-t-tract-5/)*
+*Source: [Outlander Anatomy, "Anatomy Lesson 48: The Big Guy (G.I. Tract 5)"](https://www.outlanderanatomy.com/anatomy-lesson-48-the-big-guy-g-t-tract-5/)*
 
 ### Liver
 

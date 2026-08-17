@@ -1,14 +1,14 @@
 ---
-title: "Q44 — TLR7/8 Activation in Sperm Sex Sorting"
+title: "Q44 - TLR7/8 Activation in Sperm Sex Sorting"
 ---
 
-{{< problem-meta category="Theoretical A" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/3-animal-physiology/reproductive-physiology/">Reproductive Physiology</a>
 </div>
 
-Approximately 50% of epididymal sperm express Toll-like receptors 7/8 (TLR7/8), which are encoded on the X chromosome. The researchers investigated the effects of their activation in mice sperm cells by a specific ligand — R848. To do that they performed several experiments consisting of a swim-up method and in vitro fertilization (IVF). The obtained data is presented below.
+Approximately 50% of epididymal sperm express Toll-like receptors 7/8 (TLR7/8), which are encoded on the X chromosome. The researchers investigated the effects of their activation in mice sperm cells by a specific ligand - R848. To do that they performed several experiments consisting of a swim-up method and in vitro fertilization (IVF). The obtained data is presented below.
 
 ![Diagram of the swim-up method used to sort sperm by motility, separating an upper layer (U) of highly motile sperm from a lower layer (L) that remains in the seminal plasma.](/papers/ibo/2024/q44-figure-1.png)
 *Figure 1. Swim-up method - technique designed to sort spermatozoa by motility and the capability to swim upwards in the tube out of the seminal plasma; U - upper layer, L - lower layer.*
@@ -24,4 +24,4 @@ On your answer sheet, indicate "T" for true statements and "F" for false ones.
 
 ---
 
-Question reproduced from **IBO 2024, Theoretical Exam Part A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2024/theoretical-a-exam.pdf#page=65) · [Community solutions (unofficial)](/papers/ibo/2024/theoretical-a-solutions.docx)
+Question reproduced from **IBO 2024, Theoretical Exam Part A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2024/theoretical-a-exam.pdf#page=65) · [Community solutions (unofficial)](/papers/ibo/2024/theoretical-a-solutions.docx)

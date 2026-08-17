@@ -1,7 +1,7 @@
 ---
 title: "Cell Junctions, Extracellular Matrix & Cell Death"
 weight: 8
-description: "The three animal cell junction types and their distinct mechanical/communicative roles, the composition and function of the extracellular matrix, and the three modes of programmed and unprogrammed cell death — apoptosis, necrosis, and autophagy."
+description: "The three animal cell junction types and their distinct mechanical/communicative roles, the composition and function of the extracellular matrix, and the three modes of programmed and unprogrammed cell death, apoptosis, necrosis, and autophagy."
 difficulty: "intermediate"
 prerequisites: ["Cell-Signaling-Communication"]
 syllabus_tags: ["IBO", "USABO", "cell-biology"]
@@ -12,7 +12,7 @@ syllabus_tags: ["IBO", "USABO", "cell-biology"]
 
 ## Overview
 
-This closing Cell Biology page covers how cells physically connect to each other and to their surroundings, and how cells die — either as a controlled, regulated program or as uncontrolled damage. Both topics share a theme running through this whole tier: the cell actively manages its boundaries and its own survival, rather than these being passive default states.
+This closing Cell Biology page covers how cells physically connect to each other and to their surroundings, and how cells die, either as a controlled, regulated program or as uncontrolled damage. Both topics share a theme running through this whole tier: the cell actively manages its boundaries and its own survival, rather than these being passive default states.
 
 ## Key Concepts
 
@@ -20,8 +20,8 @@ This closing Cell Biology page covers how cells physically connect to each other
 
 Animal cells form three structurally and functionally distinct junction types, each solving a different problem:
 
-- **Tight junctions**: seal adjacent cells together via interlocking transmembrane proteins (claudins, occludins), creating a nearly impermeable barrier that blocks even small molecules from diffusing *between* cells (the paracellular route). Found in epithelia that must maintain a strict compartmental separation — e.g. intestinal epithelium separating gut lumen from the bloodstream, or the blood-brain barrier, forcing all transport across the epithelial sheet through the cells themselves (transcellular, regulatable) rather than around them.
-- **Anchoring junctions** (adherens junctions and desmosomes): mechanically link the cytoskeletons of adjacent cells (via cadherin proteins spanning the intercellular space) or link a cell to the extracellular matrix (via integrins, in **hemidesmosomes** and **focal adhesions**). Adherens junctions couple to actin filaments; desmosomes couple to intermediate filaments (see [Cytoskeleton & Motor Proteins](../cytoskeleton-motor-proteins/)) — this distinction matters functionally, since intermediate-filament-anchored desmosomes provide the greater tensile/mechanical resilience needed in tissues under high mechanical stress (e.g. skin, cardiac muscle).
+- **Tight junctions**: seal adjacent cells together via interlocking transmembrane proteins (claudins, occludins), creating a nearly impermeable barrier that blocks even small molecules from diffusing *between* cells (the paracellular route). Found in epithelia that must maintain a strict compartmental separation, e.g. intestinal epithelium separating gut lumen from the bloodstream, or the blood-brain barrier, forcing all transport across the epithelial sheet through the cells themselves (transcellular, regulatable) rather than around them.
+- **Anchoring junctions** (adherens junctions and desmosomes): mechanically link the cytoskeletons of adjacent cells (via cadherin proteins spanning the intercellular space) or link a cell to the extracellular matrix (via integrins, in **hemidesmosomes** and **focal adhesions**). Adherens junctions couple to actin filaments; desmosomes couple to intermediate filaments (see [Cytoskeleton & Motor Proteins](../cytoskeleton-motor-proteins/)), this distinction matters functionally, since intermediate-filament-anchored desmosomes provide the greater tensile/mechanical resilience needed in tissues under high mechanical stress (e.g. skin, cardiac muscle).
 - **Gap junctions**: form direct cytoplasmic channels (built from **connexin** proteins arranged into a **connexon**) between adjacent cells, allowing small molecules and ions to pass directly cell-to-cell without crossing either plasma membrane individually. This provides direct electrical/chemical coupling: critical in cardiac muscle for coordinated, synchronised contraction, since an action potential can propagate directly cell-to-cell through gap junctions rather than requiring a slower cell-surface-receptor-mediated relay each time.
 
 ![Cross-section of a vertebrate epithelial cell junctional complex: tight junction (apical-most), adherens junction and desmosome (cell-cell anchoring junctions, connecting actin and intermediate filaments respectively between cells), gap junction, and two cell-matrix anchoring junctions (actin-linked and hemidesmosome) at the basal surface](/MCBBPICS/epithelial-junction-types.png)
@@ -29,7 +29,7 @@ Animal cells form three structurally and functionally distinct junction types, e
 
 ### Extracellular matrix (ECM)
 
-The ECM is the network of secreted extracellular proteins and polysaccharides surrounding animal cells, providing structural support, anchorage points, and a substrate that itself carries signaling information (transduced into the cell via integrin receptors, linking the ECM back to intracellular signaling — see [Cell Signaling & Communication](../cell-signaling-communication/)). Major components: **collagen** (the most abundant ECM protein, providing tensile strength via its triple-helix structure; see [Protein Structure, Folding & Function](../protein-structure-folding-function/)), **proteoglycans** (core proteins heavily decorated with glycosaminoglycan chains, whose dense negative charge draws water in, resisting compression; see [Carbohydrate Chemistry & Biology](../carbohydrate-chemistry-biology/)), and **fibronectin** (links ECM components to cell-surface integrins, coordinating cell adhesion, migration, and shape).
+The ECM is the network of secreted extracellular proteins and polysaccharides surrounding animal cells, providing structural support, anchorage points, and a substrate that itself carries signaling information (transduced into the cell via integrin receptors, linking the ECM back to intracellular signaling, see [Cell Signaling & Communication](../cell-signaling-communication/)). Major components: **collagen** (the most abundant ECM protein, providing tensile strength via its triple-helix structure; see [Protein Structure, Folding & Function](../protein-structure-folding-function/)), **proteoglycans** (core proteins heavily decorated with glycosaminoglycan chains, whose dense negative charge draws water in, resisting compression; see [Carbohydrate Chemistry & Biology](../carbohydrate-chemistry-biology/)), and **fibronectin** (links ECM components to cell-surface integrins, coordinating cell adhesion, migration, and shape).
 
 ### Apoptosis: programmed cell death
 
@@ -52,7 +52,7 @@ Both pathways converge on activating a proteolytic cascade of **caspases**, cyst
 
 ### Autophagy: self-digestion, not necessarily death
 
-**Autophagy** is a distinct process from both of the above: a double-membrane **autophagosome** forms around damaged organelles, protein aggregates, or (under starvation) bulk cytoplasmic material, then fuses with a lysosome (see [Endomembrane System & Protein Trafficking](../endomembrane-system-protein-trafficking/)) for degradation and recycling of the components. Autophagy is primarily a **survival mechanism** — allowing a starving cell to recycle its own components for energy, or removing damaged organelles/aggregated proteins before they cause harm — though sustained or excessive autophagy can also contribute to cell death in some contexts, which is why it is sometimes (imprecisely) grouped alongside apoptosis and necrosis as a "third type of cell death" despite its primary role being protective rather than destructive.
+**Autophagy** is a distinct process from both of the above: a double-membrane **autophagosome** forms around damaged organelles, protein aggregates, or (under starvation) bulk cytoplasmic material, then fuses with a lysosome (see [Endomembrane System & Protein Trafficking](../endomembrane-system-protein-trafficking/)) for degradation and recycling of the components. Autophagy is primarily a **survival mechanism**, allowing a starving cell to recycle its own components for energy, or removing damaged organelles/aggregated proteins before they cause harm, though sustained or excessive autophagy can also contribute to cell death in some contexts, which is why it is sometimes (imprecisely) grouped alongside apoptosis and necrosis as a "third type of cell death" despite its primary role being protective rather than destructive.
 
 ## Comparative Structures
 
@@ -67,8 +67,8 @@ Both pathways converge on activating a proteolytic cascade of **caspases**, cyst
 
 ## Common Exam Questions
 
-- "Why is apoptosis non-inflammatory but necrosis is?": the key mechanistic distinction is whether cellular contents are released into surrounding tissue (necrosis) or cleanly packaged and phagocytosed before any leakage occurs (apoptosis) — this is the testable causal chain, not simply "apoptosis is controlled."
-- "What does externalised phosphatidylserine signal, and why is its normal location relevant?" — tests the connection back to membrane lipid asymmetry (normally maintained by flippases) as the mechanistic basis of the "eat me" signal.
+- "Why is apoptosis non-inflammatory but necrosis is?": the key mechanistic distinction is whether cellular contents are released into surrounding tissue (necrosis) or cleanly packaged and phagocytosed before any leakage occurs (apoptosis), this is the testable causal chain, not simply "apoptosis is controlled."
+- "What does externalised phosphatidylserine signal, and why is its normal location relevant?", tests the connection back to membrane lipid asymmetry (normally maintained by flippases) as the mechanistic basis of the "eat me" signal.
 - Distinguishing intrinsic vs. extrinsic apoptotic pathway triggers (internal stress/mitochondrial vs. external death-receptor ligand) is a frequent classification question.
 - "Which junction type would be disrupted by a mutation in connexin?": gap junctions specifically; questions naming a specific protein (cadherin, claudin, connexin, integrin) test direct recall of which junction type that protein belongs to.
 

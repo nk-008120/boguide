@@ -30,11 +30,11 @@ A **critical period** is a developmental window outside of which a specific expe
 
 **Filial imprinting** (young precocial animals forming a rapid, largely irreversible attachment to and following-response toward the first appropriately moving stimulus encountered) is the case study most associated with **Konrad Lorenz**, who famously became the imprinted "parent" of a clutch of greylag geese he raised from hatching, demonstrating the response could attach to an inappropriate object (a human, or in later experiments a moving box) if presented at the critical window instead of the biological parent. A second, distinct form, **sexual imprinting**, occurs later in development and shapes adult mate-species preference rather than following behavior; cross-fostering experiments (e.g. zebra finches raised by Bengalese finch foster parents) show the fostered bird preferentially courts the foster species as an adult, demonstrating sexual imprinting is a separate learning process from filial imprinting, not just an extension of it.
 
-<!-- VIDEO: Lorenz's imprinted goslings following him instead of an adult goose — Anser anser — the following-response itself is the entire phenomenon and reads far more clearly in motion than in a still photo -->
+<!-- VIDEO: Lorenz's imprinted goslings following him instead of an adult goose, Anser anser, the following-response itself is the entire phenomenon and reads far more clearly in motion than in a still photo -->
 
 ### Habituation and Sensitization
 
-**Habituation** is the simplest form of learning: a decrease in response strength to a repeated, harmless stimulus. The classic demonstration is the marine snail *Aplysia californica*'s gill-withdrawal reflex, which weakens with repeated light siphon touches (and is the model organism Eric Kandel used to work out the actual synaptic mechanism of habituation, reduced neurotransmitter release at the sensory-to-motor synapse, earning a Nobel Prize). **Sensitization** is the opposite: an *increase* in response strength to a stimulus following exposure to a strong or noxious stimulus (in the same *Aplysia* system, a shock to the tail strengthens the gill-withdrawal response to a subsequent light touch that previously produced little response). Both are non-associative forms of learning — no pairing between two stimuli is required, unlike conditioning below.
+**Habituation** is the simplest form of learning: a decrease in response strength to a repeated, harmless stimulus. The classic demonstration is the marine snail *Aplysia californica*'s gill-withdrawal reflex, which weakens with repeated light siphon touches (and is the model organism Eric Kandel used to work out the actual synaptic mechanism of habituation, reduced neurotransmitter release at the sensory-to-motor synapse, earning a Nobel Prize). **Sensitization** is the opposite: an *increase* in response strength to a stimulus following exposure to a strong or noxious stimulus (in the same *Aplysia* system, a shock to the tail strengthens the gill-withdrawal response to a subsequent light touch that previously produced little response). Both are non-associative forms of learning, no pairing between two stimuli is required, unlike conditioning below.
 
 ### Classical Conditioning
 
@@ -45,7 +45,7 @@ A **critical period** is a developmental window outside of which a specific expe
 
 ### Operant Conditioning
 
-**Operant conditioning** is associative learning in which the *consequence* of a voluntary behavior changes the future frequency of that behavior — formalized by **B.F. Skinner** using the "Skinner box," where a rat or pigeon's lever-press or key-peck behavior is shaped by what follows it.
+**Operant conditioning** is associative learning in which the *consequence* of a voluntary behavior changes the future frequency of that behavior, formalized by **B.F. Skinner** using the "Skinner box," where a rat or pigeon's lever-press or key-peck behavior is shaped by what follows it.
 
 ![Labeled Skinner box schematic: response lever, food dispenser, electrified grid floor, plus loudspeakers and lights used to present auditory/visual stimuli.](/ETHOLOGYPICS/skinner-box-schematic.svg)
 *Source: Wikipedia, "Operant conditioning chamber"*
@@ -66,17 +66,17 @@ Four consequence categories are commonly tested and commonly confused, since "po
 
 ### Observational and Insight Learning
 
-**Observational (social) learning** is acquiring a behavior by watching another individual perform it, without direct trial-and-error by the observer — the best-documented wild case is **milk-bottle-top opening in British great tits (*Parus major*)**, which spread through local populations from a small number of innovating individuals in a pattern consistent with social transmission rather than independent invention at every location. A closely related and more specific case, **social learning of a novel food-processing technique**, is the well-documented **Japanese macaque (*Macaca fuscata*) potato-washing** case on Koshima Island, where a young female's innovation of washing sand off sweet potatoes spread through her troop over subsequent years, disproportionately through younger animals and closely bonded individuals, a pattern used as evidence for cultural transmission in a non-human primate.
+**Observational (social) learning** is acquiring a behavior by watching another individual perform it, without direct trial-and-error by the observer, the best-documented wild case is **milk-bottle-top opening in British great tits (*Parus major*)**, which spread through local populations from a small number of innovating individuals in a pattern consistent with social transmission rather than independent invention at every location. A closely related and more specific case, **social learning of a novel food-processing technique**, is the well-documented **Japanese macaque (*Macaca fuscata*) potato-washing** case on Koshima Island, where a young female's innovation of washing sand off sweet potatoes spread through her troop over subsequent years, disproportionately through younger animals and closely bonded individuals, a pattern used as evidence for cultural transmission in a non-human primate.
 
 ![Photograph of two Koshima Island Japanese macaques at the water's edge, one holding and washing a sweet potato before eating it.](/ETHOLOGYPICS/koshima-macaque-potato-washing-spread.jpg)
 *Source: ResearchGate, photo credited to T. Matsuzawa*
 
-**Insight learning** is the sudden, apparently non-trial-and-error solving of a novel problem by combining previously learned elements — **Wolfgang Köhler's** captive chimpanzee experiments are the classic case, in which a chimpanzee unable to reach a suspended banana directly abruptly stacked crates or joined two short sticks into a longer one to reach it, without an observable period of gradual trial-and-error immediately preceding the solution.
+**Insight learning** is the sudden, apparently non-trial-and-error solving of a novel problem by combining previously learned elements, **Wolfgang Köhler's** captive chimpanzee experiments are the classic case, in which a chimpanzee unable to reach a suspended banana directly abruptly stacked crates or joined two short sticks into a longer one to reach it, without an observable period of gradual trial-and-error immediately preceding the solution.
 
 ![Black-and-white photograph of a Köhler chimpanzee experiment: one chimpanzee climbing a hanging rope/pole above a stack of crates, with other chimpanzees watching from the ground near additional crate materials.](/ETHOLOGYPICS/kohler-chimpanzee-stick-joining-insight.jpg)
 *Source: pigeon.psy.tufts.edu (Tufts University, Psych 26 course materials)*
 
-<!-- VIDEO: Japanese macaque potato-washing behavior spreading through the Koshima troop — Macaca fuscata — the spread-through-social-contact pattern is the point being taught and is much clearer shown across individuals than described -->
+<!-- VIDEO: Japanese macaque potato-washing behavior spreading through the Koshima troop, Macaca fuscata, the spread-through-social-contact pattern is the point being taught and is much clearer shown across individuals than described -->
 
 ### Play Behavior
 
@@ -111,7 +111,7 @@ Four consequence categories are commonly tested and commonly confused, since "po
 
 {{< iframe src="/operant-quadrant-classifier.html" title="Operant Conditioning Quadrant Classifier" height="480px" >}}
 
-- **Reinforcement schedule response-rate simulator (Plotly)** — lets the user select continuous, fixed-ratio, variable-ratio, fixed-interval, or variable-interval schedules and view a simulated cumulative-response curve for each, then compare extinction rate after reinforcement stops, making the abstract "resistance to extinction" claim visually concrete.
+- **Reinforcement schedule response-rate simulator (Plotly)**, lets the user select continuous, fixed-ratio, variable-ratio, fixed-interval, or variable-interval schedules and view a simulated cumulative-response curve for each, then compare extinction rate after reinforcement stops, making the abstract "resistance to extinction" claim visually concrete.
 
 {{< iframe src="/reinforcement-schedule-simulator.html" title="Reinforcement Schedule Response-Rate Simulator" height="520px" >}}
 

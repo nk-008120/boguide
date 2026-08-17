@@ -1,7 +1,7 @@
 ---
 title: "Digestive & Metabolic Physiology"
 weight: 7
-description: "Enzymatic digestion by GI region, the three major digestive hormones (gastrin, secretin, CCK) and how they coordinate a meal response, nutrient absorption mechanisms (Na+-coupled cotransport, micelle formation), and basal metabolic rate — the functional complement to GI histology on the Human Digestive System page."
+description: "Enzymatic digestion by GI region, the three major digestive hormones (gastrin, secretin, CCK) and how they coordinate a meal response, nutrient absorption mechanisms (Na+-coupled cotransport, micelle formation), and basal metabolic rate, the functional complement to GI histology on the Human Digestive System page."
 difficulty: "intermediate"
 prerequisites: ["Endocrine-System-Physiology"]
 syllabus_tags: ["IBO", "USABO", "digestive-physiology"]
@@ -21,9 +21,9 @@ Digestion is a sequential division of labor, each region's enzymes matched to th
 
 - **Mouth**: salivary **amylase** begins starch digestion (breaking α-1,4 glycosidic bonds into shorter polysaccharides/maltose), halted once swallowed food reaches the acidic stomach (amylase is denatured at low pH).
 - **Stomach**: **pepsin** (secreted as inactive **pepsinogen** by chief cells, activated by the stomach's own HCl, itself secreted by parietal cells, and then autocatalytically by existing active pepsin) begins protein digestion, cleaving proteins into shorter polypeptides; the stomach's strongly acidic environment (pH ~1.5-3.5) also denatures proteins (unfolding them for easier enzymatic access) and kills most ingested pathogens.
-- **Small intestine (duodenum)**: the major site of enzymatic digestion, drawing on secretions from three sources: the **pancreas** (trypsin and chymotrypsin, both secreted as inactive zymogens and activated only once in the duodenum: trypsinogen by the brush-border enzyme **enterokinase**, chymotrypsinogen by trypsin itself, a safeguard preventing the pancreas from digesting itself; pancreatic **lipase**, emulsified-fat-digesting; pancreatic amylase, continuing starch digestion), the **liver** (bile, an emulsifier rather than an enzyme, see below), and the intestinal **brush border** itself (disaccharidases — maltase, sucrase, lactase — and peptidases completing digestion to monosaccharides and amino acids/dipeptides at the absorptive surface).
+- **Small intestine (duodenum)**: the major site of enzymatic digestion, drawing on secretions from three sources: the **pancreas** (trypsin and chymotrypsin, both secreted as inactive zymogens and activated only once in the duodenum: trypsinogen by the brush-border enzyme **enterokinase**, chymotrypsinogen by trypsin itself, a safeguard preventing the pancreas from digesting itself; pancreatic **lipase**, emulsified-fat-digesting; pancreatic amylase, continuing starch digestion), the **liver** (bile, an emulsifier rather than an enzyme, see below), and the intestinal **brush border** itself (disaccharidases, maltase, sucrase, lactase, and peptidases completing digestion to monosaccharides and amino acids/dipeptides at the absorptive surface).
 
-<span class="badge-custom">Exam tip</span> Pancreatic proteases are secreted as inactive zymogens specifically to prevent the pancreas from autodigesting its own tissue — a direct structural safeguard worth stating explicitly on any question about zymogen activation, not just naming the enzymes.
+<span class="badge-custom">Exam tip</span> Pancreatic proteases are secreted as inactive zymogens specifically to prevent the pancreas from autodigesting its own tissue, a direct structural safeguard worth stating explicitly on any question about zymogen activation, not just naming the enzymes.
 
 ![Digestive zymogen activation: pepsinogen to pepsin (via HCl and pepsin autocatalysis) in the stomach; trypsinogen to trypsin (via enteropeptidase) in the pancreas/duodenum, plus other pancreatic zymogens (chymotrypsinogen, proelastase, procarboxypeptidases); a general inactive-zymogen-to-active-enzyme mechanism panel; and a coagulation-zymogen analogy (prothrombin/fibrinogen) showing the same activation logic outside digestion](/ANIMALPHYSIOPICS/zymogen-activation-pepsinogen-trypsinogen.avif)
 *Source: GetOnCourse AI (USMLE Step 1 prep)*
@@ -45,7 +45,7 @@ Three peptide hormones (mechanistically the water-soluble/surface-receptor class
 | **Secretin** | Duodenum (S cells) | Acidic chyme entering duodenum (low pH) | Stimulates pancreatic **bicarbonate** secretion (neutralizing acidic chyme, protecting the duodenal lining and creating the near-neutral pH pancreatic enzymes require) and inhibits further gastric acid secretion |
 | **CCK (cholecystokinin)** | Duodenum (I cells) | Fatty acids/amino acids present in chyme | Stimulates pancreatic **enzyme** secretion and gallbladder contraction (bile release); slows gastric emptying, giving fat/protein more time to be processed |
 
-These three hormones form a coordinated, self-limiting loop: gastrin promotes acid production only while food is actually present in the stomach; secretin then neutralizes that same acid once it reaches the duodenum, simultaneously protecting the duodenal lining and creating the correct pH for pancreatic enzymes CCK is concurrently triggering release of — each hormone's trigger is the direct physical/chemical consequence of the previous step, not an independent timer.
+These three hormones form a coordinated, self-limiting loop: gastrin promotes acid production only while food is actually present in the stomach; secretin then neutralizes that same acid once it reaches the duodenum, simultaneously protecting the duodenal lining and creating the correct pH for pancreatic enzymes CCK is concurrently triggering release of, each hormone's trigger is the direct physical/chemical consequence of the previous step, not an independent timer.
 
 ```mermaid
 graph LR;
@@ -76,7 +76,7 @@ Absorption across the small intestine's brush border (see [Human Digestive Syste
 
 ### Metabolic Rate
 
-**Basal metabolic rate (BMR)**, the minimum energy expenditure required to sustain basic physiological function at rest, scales with several structural and physiological factors: body size (though not linearly — see [Locomotion & Energetics](../../3-animal-physiology/locomotion-energetics/) for the mass-scaling relationship across species), thyroid hormone level (see [Endocrine System Physiology](../endocrine-system-physiology/), a direct upregulator of cellular metabolic rate), and body composition (metabolically active lean tissue contributes far more to BMR per unit mass than fat storage tissue).
+**Basal metabolic rate (BMR)**, the minimum energy expenditure required to sustain basic physiological function at rest, scales with several structural and physiological factors: body size (though not linearly, see [Locomotion & Energetics](../../3-animal-physiology/locomotion-energetics/) for the mass-scaling relationship across species), thyroid hormone level (see [Endocrine System Physiology](../endocrine-system-physiology/), a direct upregulator of cellular metabolic rate), and body composition (metabolically active lean tissue contributes far more to BMR per unit mass than fat storage tissue).
 
 ## Comparative Structures
 
@@ -98,15 +98,15 @@ Absorption across the small intestine's brush border (see [Human Digestive Syste
 
 **Interactive**
 
-- **Meal-response hormone timeline (Plotly)**: a timeline chart plotting gastrin, secretin, and CCK levels against time since a meal begins, with toggleable curves and annotations marking when food enters the stomach vs. duodenum — makes the sequential, trigger-based hormone cascade visible as a timeline rather than a static three-row table.
+- **Meal-response hormone timeline (Plotly)**: a timeline chart plotting gastrin, secretin, and CCK levels against time since a meal begins, with toggleable curves and annotations marking when food enters the stomach vs. duodenum, makes the sequential, trigger-based hormone cascade visible as a timeline rather than a static three-row table.
 
 {{< iframe src="/meal-response-hormone-timeline.html" title="Meal-response hormone timeline" height="480px" >}}
 
-- **Nutrient absorption pathway selector (click-through SVG/JS)** — selecting "carbohydrate/protein" vs. "lipid" animates that nutrient's specific path from the intestinal lumen through the brush border and into either the blood capillary or the lacteal, visually contrasting the two absorption routes side by side.
+- **Nutrient absorption pathway selector (click-through SVG/JS)**, selecting "carbohydrate/protein" vs. "lipid" animates that nutrient's specific path from the intestinal lumen through the brush border and into either the blood capillary or the lacteal, visually contrasting the two absorption routes side by side.
 
 {{< iframe src="/nutrient-absorption-pathway-selector.html" title="Nutrient absorption pathway selector" height="480px" >}}
 
-**Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here — still outstanding: a GI tract diagram with each region's major enzyme(s)/secretion(s) labeled in sequence)*
+**Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here, still outstanding: a GI tract diagram with each region's major enzyme(s)/secretion(s) labeled in sequence)*
 
 ## Practice Problems
 

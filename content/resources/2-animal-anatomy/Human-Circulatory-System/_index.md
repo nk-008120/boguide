@@ -1,7 +1,7 @@
 ---
 title: "Human Circulatory System"
 weight: 7
-description: "Heart wall histology, the cardiac conduction system and cardiac cycle, coronary circulation, blood composition and formed elements, vessel histology, and the lymphatic system's structural relationship to circulation — split from the combined Circulatory/Respiratory page for full IBO depth."
+description: "Heart wall histology, the cardiac conduction system and cardiac cycle, coronary circulation, blood composition and formed elements, vessel histology, and the lymphatic system's structural relationship to circulation, split from the combined Circulatory/Respiratory page for full IBO depth."
 difficulty: "intermediate"
 prerequisites: ["Body-Plans"]
 syllabus_tags: ["IBO", "USABO", "human-anatomy"]
@@ -17,7 +17,7 @@ This page covers the structural anatomy of the heart, blood vessels, blood itsel
 
 ### Heart Wall Structure
 
-The heart wall has three layers, outer to inner: **epicardium** (the heart's own visceral serous membrane, continuous with the outer **parietal pericardium** that encloses the heart, the potential space between the two, the pericardial cavity, contains a thin film of serous fluid reducing friction as the heart beats), **myocardium** (cardiac muscle — see [Human Muscular System](../human-muscular-system/) for intercalated disc structure — by far the thickest layer, responsible for contractile force), and **endocardium** (a thin endothelial lining continuous with the endothelium of attached blood vessels, minimizing turbulence and clot formation over the chamber surfaces).
+The heart wall has three layers, outer to inner: **epicardium** (the heart's own visceral serous membrane, continuous with the outer **parietal pericardium** that encloses the heart, the potential space between the two, the pericardial cavity, contains a thin film of serous fluid reducing friction as the heart beats), **myocardium** (cardiac muscle, see [Human Muscular System](../human-muscular-system/) for intercalated disc structure, by far the thickest layer, responsible for contractile force), and **endocardium** (a thin endothelial lining continuous with the endothelium of attached blood vessels, minimizing turbulence and clot formation over the chamber surfaces).
 
 ![Heart wall cross-section labeled with endocardium, myocardium, epicardium (visceral layer of serous pericardium), pericardial cavity, parietal layer of serous pericardium, and fibrous pericardium.](/ANATOMYPICS/heart-wall-layers-cross-section.jpg)
 *Source: microbenotes.com*
@@ -145,7 +145,7 @@ One full heartbeat comprises **systole** (contraction) and **diastole** (relaxat
   <div style="display:flex; gap:1.5rem; flex-wrap:wrap; font-size:0.85rem; color:#374151;">
     <div>AV valves: <strong id="wiggersAV">open</strong></div>
     <div>Semilunar valves: <strong id="wiggersSL">closed</strong></div>
-    <div>Heart sound: <strong id="wiggersSound">—</strong></div>
+    <div>Heart sound: <strong id="wiggersSound">-</strong></div>
   </div>
 </div>
 
@@ -218,9 +218,9 @@ One full heartbeat comprises **systole** (contraction) and **diastole** (relaxat
       if (Math.abs(t - 10) <= 1) {
         soundOut.textContent = 'S1 ("lub"): AV valves just closed';
       } else if (Math.abs(t - 40) <= 1) {
-        soundOut.textContent = 'S2 ("dub") — semilunar valves just closed';
+        soundOut.textContent = 'S2 ("dub"), semilunar valves just closed';
       } else {
-        soundOut.textContent = '—';
+        soundOut.textContent = '-';
       }
     }
 
@@ -262,10 +262,10 @@ Three vessel types, differentiated by the proportion of their wall dedicated to 
 
 - **Arteries**: thick tunica media (smooth muscle + elastic fibers), withstands high pulsatile pressure; the elastic recoil of large elastic arteries (e.g. the aorta) helps maintain pressure between heartbeats, smoothing pulsatile flow into a steadier downstream pressure. Smaller **arterioles** have proportionally more smooth muscle relative to lumen size, making them the primary site of resistance regulation (vasoconstriction/dilation) controlling blood flow distribution and, in aggregate, systemic blood pressure.
 - **Veins**: thinner walls overall, larger lumen, lower pressure; limb veins contain internal one-way **valves** (endothelial folds) preventing backflow, since venous pressure alone is too low to overcome gravity; venous return relies partly on the **skeletal muscle pump** (contracting muscle compresses adjacent veins) and the pressure gradient created by breathing.
-- **Capillaries**: wall is a single layer of simple squamous endothelium (see [Body Plans](../body-plans/)) and a basement membrane, nothing else, the only vessel type where diffusion exchange with surrounding tissue actually happens; three structural subtypes exist (continuous: tightest, most common; fenestrated — pores, found where filtration is high, e.g. the kidney glomerulus, see [Human Excretory System](../human-excretory-system/); sinusoidal: largest gaps, found in the liver/bone marrow, permitting exchange of cells and large proteins).
+- **Capillaries**: wall is a single layer of simple squamous endothelium (see [Body Plans](../body-plans/)) and a basement membrane, nothing else, the only vessel type where diffusion exchange with surrounding tissue actually happens; three structural subtypes exist (continuous: tightest, most common; fenestrated, pores, found where filtration is high, e.g. the kidney glomerulus, see [Human Excretory System](../human-excretory-system/); sinusoidal: largest gaps, found in the liver/bone marrow, permitting exchange of cells and large proteins).
 
 ![Tunica intima/media/externa compared across a large vein, a medium-sized vein (with closed valves shown, plus a valve-open/closed longitudinal inset), and a venule.](/ANATOMYPICS/artery-vein-capillary-wall-comparison.jpg)
-*Source: user-sourced (originally via Lumen Learning, SUNY A&P2). **Mismatch from spec**: this compares three calibers of vein (large vein / medium vein / venule), not the artery-vs-vein-vs-capillary comparison described in the text — still useful for showing the three tunic layers and venous valve structure, but doesn't show an artery or a capillary at all.*
+*Source: user-sourced (originally via Lumen Learning, SUNY A&P2). **Mismatch from spec**: this compares three calibers of vein (large vein / medium vein / venule), not the artery-vs-vein-vs-capillary comparison described in the text, still useful for showing the three tunic layers and venous valve structure, but doesn't show an artery or a capillary at all.*
 
 ### Lymphatic System
 

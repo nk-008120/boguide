@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>BiOGuide for Biology Olympiads – BiOClash — an independent biology competition</title>
+    <title>BiOGuide for Biology Olympiads – BiOClash - an independent biology competition</title>
     <link>http://localhost:1313/bioclash/</link>
-    <description>Recent content in BiOClash — an independent biology competition on BiOGuide for Biology Olympiads</description>
+    <description>Recent content in BiOClash - an independent biology competition on BiOGuide for Biology Olympiads</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
@@ -15,7 +15,88 @@
     
     
     <item>
-      <title>Case File MB-01 — Attempt</title>
+      <title>BiOClash Sample — Attempt</title>
+      <link>http://localhost:1313/bioclash/bioclash-sample/attempt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/bioclash/bioclash-sample/attempt/</guid>
+      <description>
+        
+        
+        &lt;aside class=&#34;hextra-sidebar-container&#34; hidden&gt;&lt;/aside&gt;
+&lt;div id=&#34;bioclash-attempt-root&#34; class=&#34;bioclash-page bioclash-case-file&#34; data-paper-id=&#34;bioclash-sample&#34;&gt;
+  &lt;div class=&#34;bioclash-attempt-glow-bg&#34; aria-hidden=&#34;true&#34;&gt;&lt;/div&gt;
+  &lt;div id=&#34;bioclash-attempt-watermark&#34; class=&#34;bioclash-attempt-watermark&#34; aria-hidden=&#34;true&#34;&gt;&lt;/div&gt;
+  &lt;div class=&#34;bioclash-case-header&#34;&gt;
+    &lt;p class=&#34;bioclash-case-header-agency&#34;&gt;TIME VARIANCE AUTHORITY&lt;/p&gt;
+    &lt;p class=&#34;bioclash-case-header-division&#34;&gt;SACRED TIMELINE ARCHIVES · BIOLOGY DIVISION&lt;/p&gt;
+    &lt;p class=&#34;bioclash-case-header-mark&#34;&gt;B I O C L A S H&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;section id=&#34;bioclash-attempt-start&#34;&gt;
+    &lt;h1&gt;BiOClash Sample — Two Problems, One Taste of a Real Case File&lt;/h1&gt;
+    &lt;p&gt;Please confirm login status and READ CAREFULLY before proceeding.&lt;/p&gt;
+    &lt;p class=&#34;bioclash-nonrecoverable-banner&#34;&gt;⚠ Once you start, do not switch away from,
+    minimize, or leave this tab in the background for extended periods. Doing so can, in
+    rare cases, cause a session error that prevents you from saving or locking an answer.
+    If this happens, reload the page in this same tab immediately to recover. Repeated or
+    prolonged interruptions could jeopardize your ability to complete the paper.&lt;/p&gt;
+    &lt;div class=&#34;bioclash-attempt-directives&#34;&gt;
+      &lt;h2&gt;Before you start - check each box to confirm you understand&lt;/h2&gt;
+      &lt;ul class=&#34;bioclash-directive-list&#34;&gt;
+        &lt;li&gt;&lt;label class=&#34;bioclash-directive-item&#34;&gt;
+          &lt;input type=&#34;checkbox&#34; class=&#34;bioclash-directive-checkbox&#34; id=&#34;bioclash-directive-wait&#34;&gt;
+          &lt;span&gt;&lt;strong&gt;Locking, Next, and Submit all take a moment.&lt;/strong&gt; After clicking
+          &#34;Lock &amp;amp; Continue,&#34; &#34;Next,&#34; or &#34;Submit Attempt,&#34; wait a few seconds for it
+          to finish - these go through the server and can take 2–3 seconds. Do not click
+          again or refresh while waiting; clicking repeatedly won&#39;t speed anything up and can
+          cause problems.&lt;/span&gt;
+        &lt;/label&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;label class=&#34;bioclash-directive-item&#34;&gt;
+          &lt;input type=&#34;checkbox&#34; class=&#34;bioclash-directive-checkbox&#34; id=&#34;bioclash-directive-locks&#34;&gt;
+          &lt;span&gt;&lt;strong&gt;Locked answers are final.&lt;/strong&gt; Any question marked non-recoverable
+          cannot be revisited or changed once locked in - read carefully before
+          confirming.&lt;/span&gt;
+        &lt;/label&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;label class=&#34;bioclash-directive-item&#34;&gt;
+          &lt;input type=&#34;checkbox&#34; class=&#34;bioclash-directive-checkbox&#34; id=&#34;bioclash-directive-tab&#34;&gt;
+          &lt;span&gt;&lt;strong&gt;This is one continuous, one-tab attempt.&lt;/strong&gt; Do not close this
+          tab, and do not open the attempt in a second tab or device - either may be logged
+          and can interrupt your attempt and cause unwanted errors.&lt;/span&gt;
+        &lt;/label&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;label class=&#34;bioclash-directive-item&#34;&gt;
+          &lt;input type=&#34;checkbox&#34; class=&#34;bioclash-directive-checkbox&#34; id=&#34;bioclash-directive-scoring&#34;&gt;
+          &lt;span&gt;&lt;strong&gt;This is a sample, not a scored round.&lt;/strong&gt; There&#39;s no leaderboard
+          or ranking attached to this attempt - it exists purely so you can try the Case File
+          format (including the non-recoverable mechanic) before a real round.&lt;/span&gt;
+        &lt;/label&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;label class=&#34;bioclash-honor-code&#34;&gt;
+      &lt;input type=&#34;checkbox&#34; id=&#34;bioclash-attempt-honor-code&#34;&gt;
+      &lt;span&gt;I confirm I am completing this sample independently - without assistance from
+      another person or an AI tool, and without consulting outside notes or the internet
+      beyond what this page provides. I will not close this browser tab at any point during
+      my attempt.&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;button type=&#34;button&#34; id=&#34;bioclash-attempt-start-btn&#34; class=&#34;papers-nav-btn papers-nav-next&#34; disabled&gt;Start Sample&lt;/button&gt;
+    &lt;p id=&#34;bioclash-attempt-start-status&#34;&gt;&lt;/p&gt;
+  &lt;/section&gt;
+  &lt;section id=&#34;bioclash-attempt-live&#34; hidden&gt;
+    &lt;div class=&#34;bioclash-attempt-topbar&#34;&gt;
+      &lt;div id=&#34;bioclash-attempt-timer&#34; class=&#34;bioclash-attempt-timer&#34;&gt;--:--&lt;/div&gt;
+      &lt;button type=&#34;button&#34; id=&#34;bioclash-attempt-extend-btn&#34; class=&#34;papers-nav-btn bioclash-extend-btn&#34; hidden&gt;&lt;/button&gt;
+      &lt;button type=&#34;button&#34; id=&#34;bioclash-attempt-submit-btn&#34; class=&#34;papers-nav-btn&#34;&gt;Submit Attempt&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div id=&#34;bioclash-attempt-body&#34;&gt;&lt;/div&gt;
+  &lt;/section&gt;
+  &lt;section id=&#34;bioclash-attempt-report&#34; hidden&gt;&lt;/section&gt;
+&lt;/div&gt;
+&lt;script src=&#34;http://localhost:1313/js/bioclash-attempt.js&#34; defer&gt;&lt;/script&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Case File MB-01 - Attempt</title>
       <link>http://localhost:1313/bioclash/mb-01/attempt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -33,7 +114,7 @@
     &lt;p class=&#34;bioclash-case-header-mark&#34;&gt;B I O C L A S H&lt;/p&gt;
   &lt;/div&gt;
   &lt;section id=&#34;bioclash-attempt-start&#34;&gt;
-    &lt;h1&gt;Case File MB-01 — Molecular Biology &amp;amp; Biochemistry&lt;/h1&gt;
+    &lt;h1&gt;Case File MB-01 - Molecular Biology &amp;amp; Biochemistry&lt;/h1&gt;
     &lt;p&gt;Please confirm login status and READ CAREFULLY before proceeding.&lt;/p&gt;
     &lt;p class=&#34;bioclash-nonrecoverable-banner&#34;&gt;⚠ Once you start, do not switch away from,
     minimize, or leave this tab in the background for extended periods. Doing so can, in
@@ -41,32 +122,32 @@
     If this happens, reload the page in this same tab immediately to recover. Repeated or
     prolonged interruptions could jeopardize your ability to complete the paper.&lt;/p&gt;
     &lt;div class=&#34;bioclash-attempt-directives&#34;&gt;
-      &lt;h2&gt;Before you start — check each box to confirm you understand&lt;/h2&gt;
+      &lt;h2&gt;Before you start - check each box to confirm you understand&lt;/h2&gt;
       &lt;ul class=&#34;bioclash-directive-list&#34;&gt;
         &lt;li&gt;&lt;label class=&#34;bioclash-directive-item&#34;&gt;
           &lt;input type=&#34;checkbox&#34; class=&#34;bioclash-directive-checkbox&#34; id=&#34;bioclash-directive-wait&#34;&gt;
           &lt;span&gt;&lt;strong&gt;Locking, Next, and Submit all take a moment.&lt;/strong&gt; After clicking
           &#34;Lock &amp;amp; Continue,&#34; &#34;Next,&#34; or &#34;Submit Attempt,&#34; wait a few seconds for it
-          to finish — these go through the server and can take 2–3 seconds.Do not click
+          to finish - these go through the server and can take 2–3 seconds.Do not click
           again or refresh while waiting; clicking repeatedly won&#39;t speed anything up and can
           cause problems.&lt;/span&gt;
         &lt;/label&gt;&lt;/li&gt;
         &lt;li&gt;&lt;label class=&#34;bioclash-directive-item&#34;&gt;
           &lt;input type=&#34;checkbox&#34; class=&#34;bioclash-directive-checkbox&#34; id=&#34;bioclash-directive-locks&#34;&gt;
           &lt;span&gt;&lt;strong&gt;Locked answers are final.&lt;/strong&gt; Any question marked non-recoverable
-          cannot be revisited or changed once locked in — read carefully before
+          cannot be revisited or changed once locked in - read carefully before
           confirming.&lt;/span&gt;
         &lt;/label&gt;&lt;/li&gt;
         &lt;li&gt;&lt;label class=&#34;bioclash-directive-item&#34;&gt;
           &lt;input type=&#34;checkbox&#34; class=&#34;bioclash-directive-checkbox&#34; id=&#34;bioclash-directive-tab&#34;&gt;
           &lt;span&gt;&lt;strong&gt;This is one continuous, one-tab attempt.&lt;/strong&gt;Do not close this
-          tab, and do not open the attempt in a second tab or device — either may be logged
+          tab, and do not open the attempt in a second tab or device - either may be logged
           and can interrupt your attempt and cause unwanted errors.&lt;/span&gt;
         &lt;/label&gt;&lt;/li&gt;
         &lt;li&gt;&lt;label class=&#34;bioclash-directive-item&#34;&gt;
           &lt;input type=&#34;checkbox&#34; class=&#34;bioclash-directive-checkbox&#34; id=&#34;bioclash-directive-extension&#34;&gt;
           &lt;span&gt;&lt;strong&gt;Extra time has a cost, not a free grant.&lt;/strong&gt; If offered, requesting
-          additional time affects my standardized ranking for this round — refer to the attatched document at 
+          additional time affects my standardized ranking for this round - refer to the attatched document at 
           https://bioguide.world/scoringref.png. This coefficient may change, but concept remains same.&lt;/span&gt;
         &lt;/label&gt;&lt;/li&gt;
         &lt;li&gt;&lt;label class=&#34;bioclash-directive-item&#34;&gt;
@@ -90,17 +171,17 @@
         &lt;/label&gt;&lt;/li&gt;
         &lt;li&gt;&lt;label class=&#34;bioclash-directive-item&#34;&gt;
           &lt;input type=&#34;checkbox&#34; class=&#34;bioclash-directive-checkbox&#34; id=&#34;bioclash-directive-grading&#34;&gt;
-          &lt;span&gt;&lt;strong&gt;Grading takes time.&lt;/strong&gt; Most of this paper is graded by hand — Kindly
+          &lt;span&gt;&lt;strong&gt;Grading takes time.&lt;/strong&gt; Most of this paper is graded by hand - Kindly
           understand your real result won&#39;t appear immediately after you submit. The counter at the end is meaningless and should not be taken into account. It is for other references of the creators.&lt;/span&gt;
         &lt;/label&gt;&lt;/li&gt;
       &lt;/ul&gt;
     &lt;/div&gt;
     &lt;label class=&#34;bioclash-honor-code&#34;&gt;
       &lt;input type=&#34;checkbox&#34; id=&#34;bioclash-attempt-honor-code&#34;&gt;
-      &lt;span&gt;I confirm I am completing this attempt independently — without assistance from
+      &lt;span&gt;I confirm I am completing this attempt independently - without assistance from
       another person or an AI tool, and without consulting outside notes or the internet
       beyond what this page provides. I will not close this browser tab at any point during
-      my attempt — doing so may be logged and reviewed. Screenshots and screen recording of
+      my attempt - doing so may be logged and reviewed. Screenshots and screen recording of
       any question content are prohibited for the duration of this attempt. I will record myself via my
       device&#39;s front camera for the entire duration of this attempt, and will upload that
       recording to the folder linked on the submission screen as soon as I finish. My
@@ -128,7 +209,7 @@
     </item>
     
     <item>
-      <title>Leaderboard — Case File MB-01</title>
+      <title>Leaderboard - Case File MB-01</title>
       <link>http://localhost:1313/bioclash/mb-01/leaderboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -146,7 +227,7 @@
 &lt;/div&gt;
 &lt;div class=&#34;bioclash-panel&#34;&gt;
 &lt;p&gt;&lt;a class=&#34;papers-nav-btn&#34; href=&#34;http://localhost:1313/bioclash/&#34; style=&#34;display:inline-block;margin-bottom:1.5rem;&#34;&gt;← Back to BiOClash&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This round&amp;rsquo;s placements, entered once grading concludes — see the &lt;a
+&lt;p&gt;This round&amp;rsquo;s placements, entered once grading concludes - see the &lt;a
     href=&#34;http://localhost:1313/papers/leaderboard/&#34;&gt;BiOClash Season
 Champions&lt;/a&gt; for the cumulative standing across every round this
 season.&lt;/p&gt;

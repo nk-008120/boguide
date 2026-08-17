@@ -1,7 +1,7 @@
 ---
 title: "Classification Principles & Nomenclature"
 weight: 1
-description: "The taxonomic hierarchy from domain to species, binomial nomenclature and the rules governing it (ICZN/ICBN/ICN), type specimens, synonymy, and the principle of priority — the naming vocabulary every later Biosystematics page assumes."
+description: "The taxonomic hierarchy from domain to species, binomial nomenclature and the rules governing it (ICZN/ICBN/ICN), type specimens, synonymy, and the principle of priority, the naming vocabulary every later Biosystematics page assumes."
 difficulty: "beginner"
 syllabus_tags: ["IBO", "USABO", "biosystematics"]
 ---
@@ -24,7 +24,7 @@ Each rank can be subdivided (subphylum, superclass, suborder, tribe) or grouped 
 
 ### Binomial Nomenclature
 
-Each species is named with a two-part, Latinized **binomial**: **genus** (capitalized) + **specific epithet** (lowercase), both italicized (or underlined in handwriting): *Homo sapiens*, *Panthera leo*. After the first use in a text, the genus may be abbreviated (*P. leo*) provided no ambiguity results. A **trinomial** (genus + species + subspecies epithet, e.g. *Panthera leo persica*, the Asiatic lion) names a recognized subspecies. This system, formalized by Linnaeus, replaced pre-binomial Latin polynomial descriptions (strings of descriptive Latin words) with a fixed, universally citable two-word handle — the entire practical point of the system is that a name should be stable and unambiguous regardless of the namer's native language.
+Each species is named with a two-part, Latinized **binomial**: **genus** (capitalized) + **specific epithet** (lowercase), both italicized (or underlined in handwriting): *Homo sapiens*, *Panthera leo*. After the first use in a text, the genus may be abbreviated (*P. leo*) provided no ambiguity results. A **trinomial** (genus + species + subspecies epithet, e.g. *Panthera leo persica*, the Asiatic lion) names a recognized subspecies. This system, formalized by Linnaeus, replaced pre-binomial Latin polynomial descriptions (strings of descriptive Latin words) with a fixed, universally citable two-word handle, the entire practical point of the system is that a name should be stable and unambiguous regardless of the namer's native language.
 
 Nomenclature is governed by separate, independently maintained rulebooks (**codes**) depending on the kingdom involved. It's worth knowing these exist as distinct documents, since a rule from one does not automatically apply to another:
 
@@ -33,7 +33,7 @@ Nomenclature is governed by separate, independently maintained rulebooks (**code
 | **ICZN** (International Code of Zoological Nomenclature) | Animals |
 | **ICN** (International Code of Nomenclature for algae, fungi, and plants; formerly ICBN) | Plants, fungi, algae |
 | **ICNP** (International Code of Nomenclature of Prokaryotes) | Bacteria and Archaea |
-| **ICTV** rules (not a "Code" in the same sense) | Viruses — covered in more detail on [Domains & Kingdoms](../domains-kingdoms/), since viral nomenclature does not follow binomial convention at all |
+| **ICTV** rules (not a "Code" in the same sense) | Viruses, covered in more detail on [Domains & Kingdoms](../domains-kingdoms/), since viral nomenclature does not follow binomial convention at all |
 
 All three organismal codes share the same core mechanisms below (type specimens, priority, synonymy) even though enforced by different bodies, a deliberate convergence, since the underlying naming problem is identical regardless of kingdom.
 
@@ -44,7 +44,7 @@ A species name is not defined by a description in the abstract; it is permanentl
 - **Holotype**: the single specimen designated by the original describer as the definitive reference for the name.
 - **Paratype**, additional specimens cited in the original description, supporting but not defining the name.
 - **Lectotype**: a specimen selected *after the fact* from the original type series to serve as the definitive reference, when no holotype was designated originally.
-- **Neotype** — a replacement reference specimen designated when the original type material is lost or destroyed.
+- **Neotype**, a replacement reference specimen designated when the original type material is lost or destroyed.
 
 This system exists specifically to resolve disputes structurally rather than by argument: if two populations are proposed as the same species, the question reduces to "do they match the type specimen's diagnostic features," an empirical, re-checkable comparison rather than a matter of opinion.
 
@@ -76,7 +76,7 @@ A related but distinct problem is **homonymy**: the same name accidentally appli
 
 - **Taxonomic hierarchy explorer (click-through SVG/JS, no new library)**: a nested-box or tree diagram from Domain down to Species (e.g. tracing *Homo sapiens*), where clicking each rank expands to show sibling taxa at that rank and a one-line description of what distinguishes it, making the abstract "eight nested ranks" concrete with a real worked lineage.
 {{< iframe src="/taxonomic-hierarchy-explorer.html" title="Taxonomic Hierarchy Explorer" height="480px" >}}
-- **Priority/synonymy resolver (interactive worked example, HTML/JS)** — presented with a mock scenario (two publication dates, two names for the same specimen), the user picks which name should be the senior synonym and why, then is shown the correct resolution and, in a second scenario, a *nomen conservandum* exception case to contrast against the default rule.
+- **Priority/synonymy resolver (interactive worked example, HTML/JS)**, presented with a mock scenario (two publication dates, two names for the same specimen), the user picks which name should be the senior synonym and why, then is shown the correct resolution and, in a second scenario, a *nomen conservandum* exception case to contrast against the default rule.
 {{< iframe src="/priority-synonymy-resolver.html" title="Priority & Synonymy Resolver" height="380px" >}}
 
 **Static**

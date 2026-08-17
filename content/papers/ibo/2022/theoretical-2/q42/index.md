@@ -1,8 +1,8 @@
 ---
-title: "Q92 — Hawk-Dove-Retaliator Game Theory and Evolutionarily Stable Strategies"
+title: "Q92 - Hawk-Dove-Retaliator Game Theory and Evolutionarily Stable Strategies"
 ---
 
-{{< problem-meta category="Theoretical 2" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/9-ethology/aggression-territoriality-social-structure/">Aggression, Territoriality & Social Structure</a>
@@ -28,4 +28,4 @@ Assuming that in a mixed population, all fights occur between randomly chosen pa
 
 ---
 
-Question reproduced from **IBO 2022, Theoretical Paper 2**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2022/theoretical-2-exam.pdf#page=66) · [Community solutions (unofficial)](/papers/ibo/2022/theoretical-2-solutions.pdf)
+Question reproduced from **IBO 2022, Theoretical Paper 2**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2022/theoretical-2-exam.pdf#page=66) · [Community solutions (unofficial)](/papers/ibo/2022/theoretical-2-solutions.pdf)

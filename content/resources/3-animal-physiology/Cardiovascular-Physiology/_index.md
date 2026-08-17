@@ -1,7 +1,7 @@
 ---
 title: "Cardiovascular Physiology"
 weight: 5
-description: "Cardiac output and the Frank-Starling mechanism, short-term neural blood pressure regulation via the baroreceptor reflex (contrasted with the longer-acting RAAS), and capillary fluid exchange via Starling forces — split from Respiratory Physiology for full IBO depth, complementing the structural detail on the Human Circulatory System page."
+description: "Cardiac output and the Frank-Starling mechanism, short-term neural blood pressure regulation via the baroreceptor reflex (contrasted with the longer-acting RAAS), and capillary fluid exchange via Starling forces, split from Respiratory Physiology for full IBO depth, complementing the structural detail on the Human Circulatory System page."
 difficulty: "advanced"
 prerequisites: ["Homeostasis-Osmoregulation", "Nervous-System-Physiology"]
 syllabus_tags: ["IBO", "USABO", "cardiovascular-physiology"]
@@ -24,7 +24,7 @@ Stroke volume itself is tuned by the **Frank-Starling mechanism**: within physio
 ![Historical background and the original 1914 Starling/Patterson isolated dog heart-lung experiment: blood enters the right heart from a pressure-controlled reservoir (representing venous return), passes through the lungs to the left heart, and cardiac output is measured as volume pumped per unit time, alongside their original published graph plotting venous pressure against cardiac output across four experiments](/ANIMALPHYSIOPICS/frank-starling-curve.png)
 *Source: Dee Unglaub Silverthorn, Human Physiology: An Integrated Approach*
 
-![Modern cardiac function curve: cardiac output (equivalently, stroke volume at fixed heart rate) plotted against right atrial pressure/end-diastolic volume, with multiple curves showing how increased inotropy (contractility) shifts the curve up/left and increased total peripheral resistance shifts it down/right, plotted against a venous return curve — their intersection marks the heart's actual operating point](/ANIMALPHYSIOPICS/frank-starling-curve2.svg)
+![Modern cardiac function curve: cardiac output (equivalently, stroke volume at fixed heart rate) plotted against right atrial pressure/end-diastolic volume, with multiple curves showing how increased inotropy (contractility) shifts the curve up/left and increased total peripheral resistance shifts it down/right, plotted against a venous return curve, their intersection marks the heart's actual operating point](/ANIMALPHYSIOPICS/frank-starling-curve2.svg)
 *Source: Wikipedia*
 
 ### Blood Pressure Regulation: The Baroreceptor Reflex
@@ -49,16 +49,16 @@ graph TD;
 
 A drop in blood pressure reduces baroreceptor stretch and thus afferent firing rate to the brainstem's cardiovascular center, which responds by increasing sympathetic output (raising heart rate, contractility, and vasoconstriction) and decreasing parasympathetic output, all within seconds. This reflex operates on a timescale of seconds, in direct contrast to RAAS (minutes to hours, since it depends on sequential enzymatic cleavage and new aldosterone synthesis/action). The two systems are complementary, not redundant: the baroreceptor reflex provides rapid correction of transient pressure changes (e.g., standing up suddenly), while RAAS provides sustained correction of longer-term volume/pressure deficits (e.g., after blood loss). <span class="badge-custom">Exam tip</span> A question describing an *immediate* heart-rate change upon standing is testing the baroreceptor reflex; a question describing blood pressure correction unfolding over tens of minutes to hours is testing RAAS.
 
-**Total peripheral resistance (TPR)**, the other major determinant of blood pressure (Blood Pressure ≈ CO × TPR) alongside cardiac output, is set primarily by arteriole diameter (see [Human Circulatory System](../../2-animal-anatomy/human-circulatory-system/) for arteriole wall structure) — sympathetic vasoconstrictor tone is the main moment-to-moment lever on TPR, with local metabolic factors (e.g., a tissue's own accumulated CO₂/lactate/adenosine causing local vasodilation) overriding sympathetic tone in actively metabolizing tissue, redirecting flow toward the tissue that needs it most.
+**Total peripheral resistance (TPR)**, the other major determinant of blood pressure (Blood Pressure ≈ CO × TPR) alongside cardiac output, is set primarily by arteriole diameter (see [Human Circulatory System](../../2-animal-anatomy/human-circulatory-system/) for arteriole wall structure), sympathetic vasoconstrictor tone is the main moment-to-moment lever on TPR, with local metabolic factors (e.g., a tissue's own accumulated CO₂/lactate/adenosine causing local vasodilation) overriding sympathetic tone in actively metabolizing tissue, redirecting flow toward the tissue that needs it most.
 
 ### Capillary Fluid Exchange (Starling Forces)
 
 Fluid movement across the capillary wall (see [Human Circulatory System](../../2-animal-anatomy/human-circulatory-system/) for capillary histology) is governed by the balance of two opposing pressures at any point along the capillary:
 
 - **Hydrostatic pressure**: blood pressure inside the capillary, pushing fluid *out* into the interstitial space (filtration).
-- **Oncotic (colloid osmotic) pressure** — generated by plasma proteins (mainly albumin) too large to cross the capillary wall, drawing fluid *back into* the capillary (reabsorption).
+- **Oncotic (colloid osmotic) pressure**, generated by plasma proteins (mainly albumin) too large to cross the capillary wall, drawing fluid *back into* the capillary (reabsorption).
 
-Because hydrostatic pressure is highest at the capillary's arterial end and progressively falls along its length (while oncotic pressure remains roughly constant), net filtration dominates at the arterial end and net reabsorption dominates at the venous end, a positional, not purely averaged, filtration/reabsorption balance. The small persistent excess of filtration over reabsorption across the capillary bed as a whole is exactly the fluid collected by the lymphatic system (see [Human Circulatory System](../../2-animal-anatomy/human-circulatory-system/) for lymphatic capillary structure) — directly connecting this page's fluid-dynamics mechanism to that page's structural detail.
+Because hydrostatic pressure is highest at the capillary's arterial end and progressively falls along its length (while oncotic pressure remains roughly constant), net filtration dominates at the arterial end and net reabsorption dominates at the venous end, a positional, not purely averaged, filtration/reabsorption balance. The small persistent excess of filtration over reabsorption across the capillary bed as a whole is exactly the fluid collected by the lymphatic system (see [Human Circulatory System](../../2-animal-anatomy/human-circulatory-system/) for lymphatic capillary structure), directly connecting this page's fluid-dynamics mechanism to that page's structural detail.
 
 ![Capillary bed cross-section with oncotic pressure (25 mmHg, roughly constant at both arteriole and venule ends) and hydrostatic pressure (36 mmHg at the arteriole end, falling to 15 mmHg at the venule end) labeled, with the resulting net pressures calculated: 11 mmHg net outward (filtration) at the arteriole end, 10 mmHg net inward (reabsorption) at the venule end](/ANIMALPHYSIOPICS/capillary-starling-forces.jpg)
 *Source: Public domain*
@@ -83,11 +83,11 @@ Because hydrostatic pressure is highest at the capillary's arterial end and prog
 
 **Interactive**
 
-- **Baroreceptor reflex simulator (Plotly)**: a graph of blood pressure vs. time with a "stand up suddenly" event button; triggering it shows the baroreceptor firing rate drop, the resulting sympathetic/parasympathetic output change, and the corrective HR/TPR rise, all plotted on synced traces with real relative timescales — makes the reflex's speed and sequence explicit rather than asserted.
+- **Baroreceptor reflex simulator (Plotly)**: a graph of blood pressure vs. time with a "stand up suddenly" event button; triggering it shows the baroreceptor firing rate drop, the resulting sympathetic/parasympathetic output change, and the corrective HR/TPR rise, all plotted on synced traces with real relative timescales, makes the reflex's speed and sequence explicit rather than asserted.
 
 {{< iframe src="/baroreceptor-reflex-simulator.html" title="Baroreceptor reflex simulator" height="560px" >}}
 
-- **Starling forces capillary explorer (SVG/JS, draggable position)** — a capillary cross-section with a marker draggable along its arterial-to-venous length; at each position, hydrostatic and oncotic pressure values update and an arrow shows net fluid movement direction and magnitude, visually demonstrating the shift from net filtration to net reabsorption along the vessel.
+- **Starling forces capillary explorer (SVG/JS, draggable position)**, a capillary cross-section with a marker draggable along its arterial-to-venous length; at each position, hydrostatic and oncotic pressure values update and an arrow shows net fluid movement direction and magnitude, visually demonstrating the shift from net filtration to net reabsorption along the vessel.
 
 {{< iframe src="/starling-forces-capillary-explorer.html" title="Starling forces capillary explorer" height="440px" >}}
 

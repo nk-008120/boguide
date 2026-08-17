@@ -17,7 +17,7 @@ Modern classification is built from **phylogenetics** (inferring evolutionary re
 
 ### Character States and Homology
 
-A cladistic analysis starts from a **character matrix**: a table of taxa (rows) against characters (columns — a trait that can take more than one state, e.g. "number of limbs," "presence of amniotic membrane"), each cell filled with that taxon's **character state**. Only **homologous** characters (traits shared due to common ancestry, not independently evolved) are valid for building a tree. A trait that arose independently in two unrelated lineages is **analogous** (or, more precisely for phylogenetics, **homoplasious**), and including it as if it were homologous actively corrupts the resulting tree. Wings in birds and wings in insects are the classic case: both fly, neither wing is inherited from a shared winged ancestor, so treating "has wings" as one shared character would incorrectly group birds with insects.
+A cladistic analysis starts from a **character matrix**: a table of taxa (rows) against characters (columns, a trait that can take more than one state, e.g. "number of limbs," "presence of amniotic membrane"), each cell filled with that taxon's **character state**. Only **homologous** characters (traits shared due to common ancestry, not independently evolved) are valid for building a tree. A trait that arose independently in two unrelated lineages is **analogous** (or, more precisely for phylogenetics, **homoplasious**), and including it as if it were homologous actively corrupts the resulting tree. Wings in birds and wings in insects are the classic case: both fly, neither wing is inherited from a shared winged ancestor, so treating "has wings" as one shared character would incorrectly group birds with insects.
 
 ### Plesiomorphy vs. Synapomorphy
 
@@ -36,7 +36,7 @@ A group of taxa, evaluated against a phylogenetic tree, falls into exactly one o
 |---|---|---|
 | **Monophyletic** (a **clade**) | An ancestor + *all* of its descendants | Aves (birds), including all descendants of the first bird |
 | **Paraphyletic** | An ancestor + *some but not all* of its descendants (one or more descendant lineages excluded) | "Reptilia" in its traditional sense, excludes birds, despite birds descending from within that same ancestral group |
-| **Polyphyletic** | A group that excludes the most recent common ancestor of its members (typically united by convergent, not inherited, traits) | "Warm-blooded animals" (mammals + birds) — the two lineages' most recent common ancestor was not warm-blooded |
+| **Polyphyletic** | A group that excludes the most recent common ancestor of its members (typically united by convergent, not inherited, traits) | "Warm-blooded animals" (mammals + birds), the two lineages' most recent common ancestor was not warm-blooded |
 
 Modern classification aims to name only **monophyletic** groups, precisely because only a clade is guaranteed to be defined by real, inherited synapomorphies rather than an arbitrary or convergent cutoff. This is *why* "Reptilia" (paraphyletic, as traditionally drawn) has fallen out of favor in strict cladistic taxonomy in favor of **Sauropsida** (a monophyletic grouping that includes birds).
 
@@ -53,7 +53,7 @@ graph TD;
     N2 --> TAXON_A["Taxon A<br/>(has A + B + C, most derived)"];
 ```
 
-Structural vocabulary this diagram illustrates: a **node** represents a hypothesized common ancestor (and the point where a synapomorphy first arose); a **branch (lineage)** connects nodes/taxa across time; a **clade** is any node plus everything branching from it; a **polytomy** is a node with more than two branches emerging, used when the data don't resolve the branching order among three or more lineages (an honest "unresolved" mark, not a claim that three lineages literally split simultaneously). Branch *length* in a basic cladogram carries no time or distance information; it is purely a branching-order diagram; a **phylogram** (branch lengths scaled to amount of evolutionary change) and a **chronogram/timetree** (branch lengths scaled to elapsed time, usually calibrated using the molecular clock — see [Molecular Systematics](../molecular-systematics/)) are related but distinct tree types worth telling apart on sight.
+Structural vocabulary this diagram illustrates: a **node** represents a hypothesized common ancestor (and the point where a synapomorphy first arose); a **branch (lineage)** connects nodes/taxa across time; a **clade** is any node plus everything branching from it; a **polytomy** is a node with more than two branches emerging, used when the data don't resolve the branching order among three or more lineages (an honest "unresolved" mark, not a claim that three lineages literally split simultaneously). Branch *length* in a basic cladogram carries no time or distance information; it is purely a branching-order diagram; a **phylogram** (branch lengths scaled to amount of evolutionary change) and a **chronogram/timetree** (branch lengths scaled to elapsed time, usually calibrated using the molecular clock, see [Molecular Systematics](../molecular-systematics/)) are related but distinct tree types worth telling apart on sight.
 
 ### The Outgroup
 
@@ -70,7 +70,7 @@ With real data, more than one cladogram is usually consistent with the character
 | Synapomorphy | Yes (shared, derived) | Yes: this is the basis of cladistics |
 | Symplesiomorphy | No (shared, but ancestral) | No, common grouping error |
 | Autapomorphy | Yes, but unique to one taxon | No (nothing else shares it) |
-| Homoplasy (convergence) | Appears shared, but not inherited from a common ancestor | No — actively misleading if included |
+| Homoplasy (convergence) | Appears shared, but not inherited from a common ancestor | No, actively misleading if included |
 
 ## Common Exam Questions
 
@@ -85,9 +85,9 @@ With real data, more than one cladogram is usually consistent with the character
 
 **Interactive**
 
-- **Character matrix → cladogram builder (interactive SVG/JS, no new library)** — the user is given a small character matrix (4-6 taxa, 4-6 binary characters) and an outgroup, and drags taxa into a tree structure; the tool tallies the total number of character-state changes required by the user's tree versus the true most-parsimonious tree, letting the user directly discover why one arrangement beats another rather than being told the answer.
+- **Character matrix → cladogram builder (interactive SVG/JS, no new library)**, the user is given a small character matrix (4-6 taxa, 4-6 binary characters) and an outgroup, and drags taxa into a tree structure; the tool tallies the total number of character-state changes required by the user's tree versus the true most-parsimonious tree, letting the user directly discover why one arrangement beats another rather than being told the answer.
 {{< iframe src="/cladogram-builder.html" title="Character Matrix → Cladogram Builder" height="480px" >}}
-- **Monophyly/paraphyly/polyphyly classifier (click-through quiz, HTML/JS)** — presented with a series of pre-drawn trees, each with a shaded group of taxa, the user classifies the shaded group as mono-, para-, or polyphyletic and receives immediate feedback with the specific missing/excluded lineage highlighted when wrong.
+- **Monophyly/paraphyly/polyphyly classifier (click-through quiz, HTML/JS)**, presented with a series of pre-drawn trees, each with a shaded group of taxa, the user classifies the shaded group as mono-, para-, or polyphyletic and receives immediate feedback with the specific missing/excluded lineage highlighted when wrong.
 {{< iframe src="/clade-classifier-quiz.html" title="Monophyly / Paraphyly / Polyphyly Classifier" height="620px" >}}
 
 **Static**

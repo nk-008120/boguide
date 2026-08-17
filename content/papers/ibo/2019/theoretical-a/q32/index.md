@@ -1,15 +1,15 @@
 ---
-title: "Q32 — The SIR Model of Parasite Population Dynamics"
+title: "Q32 - The SIR Model of Parasite Population Dynamics"
 ---
 
-{{< problem-meta category="Theoretical A" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 {{< mathjax >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/8-ecology/">Ecology</a>
 </div>
 
-The population dynamics of parasite species is complex, because the size of the parasite and host populations affect each other. One popular model is the SIR model (Susceptible – Infected – Recovered). You can get the changes in host-type numbers by multiplying the original host number by the factor above the arrow — for example, the number of hosts recovering in a given time is $\gamma \cdot I$.
+The population dynamics of parasite species is complex, because the size of the parasite and host populations affect each other. One popular model is the SIR model (Susceptible – Infected – Recovered). You can get the changes in host-type numbers by multiplying the original host number by the factor above the arrow - for example, the number of hosts recovering in a given time is $\gamma \cdot I$.
 
 ![Flow diagram: three boxes S (susceptible), I (infected), R (recovered), connected left to right by arrows labeled β·I (S→I) and γ (I→R). A looping arrow labeled b feeds new births back into S from all three compartments. Downward arrows from each box show death: μ from S, μ+α from I, μ from R.](/papers/ibo/2019/q32-figure-1.png)
 *Fig.1. The SIR model. S = susceptible hosts. I = infected and infectious hosts. R = recovered/immune hosts. N = total host population = S+I+R. b = per capita birth rate. β = transmission rate (contact rate × infectiousness). μ = mortality rate without disease. α = mortality rate due to disease. γ = host recovery rate from infection.*
@@ -29,4 +29,4 @@ Many parasites cause diseases with a high mortality rate (α), despite the death
 
 ---
 
-Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=51) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)
+Question reproduced from **IBO 2019, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2019/theoretical-a-exam.pdf#page=51) · [Official answer key](/papers/ibo/2019/answer-keys.pdf)

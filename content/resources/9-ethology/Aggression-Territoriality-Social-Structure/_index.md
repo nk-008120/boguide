@@ -27,7 +27,7 @@ The **hawk-dove model** (John Maynard Smith and George Price) is the standard te
 
 ### Dominance Hierarchies
 
-A **dominance hierarchy** is a stable, repeatedly-observed ranking of individuals within a group such that higher-ranked individuals consistently win contests over resources against lower-ranked ones, often with little or no actual fighting once the hierarchy is established — the ranking itself, once known by all members, substitutes for repeated costly contests. The clearest classic case is the **linear "pecking order" in domestic chickens** (Thorleif Schjelderup-Ebbe, the term's origin): once established, a lower-ranked hen reliably yields access to food to a higher-ranked hen without a fight, and the ranking can be read off directly from which individual yields to which in paired encounters. Hierarchies carry a direct game-theoretic logic: once an individual's relative fighting ability (**resource holding potential**) relative to a given opponent is established, escalating a contest it is predicted to lose is a poor strategy, so accepting subordinate status and avoiding the fight is often the higher-payoff choice for the lower-ranked individual — dominance hierarchies can be read as a stable, individually-recognized-opponent analog of the population-level hawk-dove ESS above.
+A **dominance hierarchy** is a stable, repeatedly-observed ranking of individuals within a group such that higher-ranked individuals consistently win contests over resources against lower-ranked ones, often with little or no actual fighting once the hierarchy is established, the ranking itself, once known by all members, substitutes for repeated costly contests. The clearest classic case is the **linear "pecking order" in domestic chickens** (Thorleif Schjelderup-Ebbe, the term's origin): once established, a lower-ranked hen reliably yields access to food to a higher-ranked hen without a fight, and the ranking can be read off directly from which individual yields to which in paired encounters. Hierarchies carry a direct game-theoretic logic: once an individual's relative fighting ability (**resource holding potential**) relative to a given opponent is established, escalating a contest it is predicted to lose is a poor strategy, so accepting subordinate status and avoiding the fight is often the higher-payoff choice for the lower-ranked individual, dominance hierarchies can be read as a stable, individually-recognized-opponent analog of the population-level hawk-dove ESS above.
 
 ![Illustrated cartoon of five chickens in a line from largest/most dominant (rear) to smallest (front), each pecking or chasing the one ahead of it, illustrating the "pecking order" concept as a literal chain of aggression down a ranking.](/ETHOLOGYPICS/chicken-pecking-order-diagram.webp)
 *Source: illustration, specific origin not stated by submitter*
@@ -43,7 +43,7 @@ A **territory** is an area actively defended by an individual or group against c
 
 ### Costs and Benefits of Group Living
 
-Group living is not a default — it carries real, testable costs alongside the anti-predator benefits already covered in [Foraging & Anti-Predator Behavior](../Foraging-Anti-Predator-Behavior/) (dilution effect, "many eyes" vigilance reduction), and the balance between them, not group living in the abstract, is what selection acts on:
+Group living is not a default, it carries real, testable costs alongside the anti-predator benefits already covered in [Foraging & Anti-Predator Behavior](../Foraging-Anti-Predator-Behavior/) (dilution effect, "many eyes" vigilance reduction), and the balance between them, not group living in the abstract, is what selection acts on:
 
 - **Benefits**: reduced individual predation risk (dilution, vigilance; see above), cooperative foraging/hunting (e.g. lions and African wild dogs achieving higher per-capita prey capture success hunting in coordinated groups than singly for large, dangerous prey), access to help raising young (allo-parenting, cooperative breeding), and, where relatedness is high, the inclusive-fitness benefits covered in [Kin Selection, Altruism & Eusociality](../Kin-Selection-Altruism-Eusociality/).
 - **Costs**: increased resource competition within the group (more mouths drawing from the same local food supply), higher risk of disease/parasite transmission between densely packed individuals, increased conspicuousness to predators at long range (even though per-individual risk once detected may fall via dilution), and reproductive competition/suppression, sometimes formalized (in cooperatively breeding species) as dominant individuals actively suppressing subordinates' reproduction.
@@ -76,14 +76,14 @@ Group size in real populations tends to track an **optimal group size** where ma
 
 {{< iframe src="/hawk-dove-payoff-simulator.html" title="Hawk-Dove Payoff Simulator" height="480px" >}}
 
-- **Economic defendability threshold explorer (SVG/JS)** — user adjusts resource density/predictability and defense cost, and the tool indicates whether territorial defense is predicted to be favored, mirroring the sunbird flower-density field result.
+- **Economic defendability threshold explorer (SVG/JS)**, user adjusts resource density/predictability and defense cost, and the tool indicates whether territorial defense is predicted to be favored, mirroring the sunbird flower-density field result.
 
 {{< iframe src="/economic-defendability-explorer.html" title="Economic Defendability Threshold Explorer" height="400px" >}}
 
 **Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. The sunbird-specific item was not sourced and remains unillustrated; the group-size cost/benefit item was replaced by a repurposed territory-economics image placed under "Territoriality" instead; see the note there.)*
 
-<!-- VIDEO: African wild dog coordinated pack hunt showing cooperative group-living benefit in real time — Lycaon pictus — the coordination between individuals during a hunt is the actual mechanism producing the higher per-capita capture success rate cited in text -->
-<!-- No video submitted for this item — comment left in place, unresolved. -->
+<!-- VIDEO: African wild dog coordinated pack hunt showing cooperative group-living benefit in real time, Lycaon pictus, the coordination between individuals during a hunt is the actual mechanism producing the higher per-capita capture success rate cited in text -->
+<!-- No video submitted for this item, comment left in place, unresolved. -->
 
 ## Practice Problems
 

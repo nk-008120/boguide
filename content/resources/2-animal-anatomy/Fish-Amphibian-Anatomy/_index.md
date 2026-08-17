@@ -1,7 +1,7 @@
 ---
 title: "Fish & Amphibian Anatomy"
 weight: 12
-description: "Comparative structure of fish and amphibians at full histological/mechanistic depth, read against the human baseline — gill lamellar structure and countercurrent exchange, the 2/3-chambered heart with amphibian ventricular streaming, osmoregulatory kidney differences, and the water-to-land transition in skeleton and skin."
+description: "Comparative structure of fish and amphibians at full histological/mechanistic depth, read against the human baseline, gill lamellar structure and countercurrent exchange, the 2/3-chambered heart with amphibian ventricular streaming, osmoregulatory kidney differences, and the water-to-land transition in skeleton and skin."
 difficulty: "intermediate"
 prerequisites: ["Human-Skeletal-System", "Human-Integumentary-System", "Human-Circulatory-System", "Human-Respiratory-System"]
 syllabus_tags: ["IBO", "USABO", "comparative-anatomy", "vertebrates"]
@@ -23,7 +23,7 @@ Two major skeletal grades: **cartilaginous** (Chondrichthyes: sharks, rays; skel
 
 **Gills**, not lungs: each gill arch bears a row of **primary lamellae (filaments)**, and each primary lamella bears many thinner **secondary lamellae** projecting from its surface, the true site of gas exchange, each covered in a single layer of epithelium directly apposed to a dense capillary bed (the same "minimal diffusion distance" principle as the human alveolus, see [Human Respiratory System](../human-respiratory-system/)). Water flows across the secondary lamellae in the direction **opposite** to blood flow within them (**countercurrent exchange**), which maintains a favorable diffusion gradient along the entire length of the lamella (unlike concurrent flow, where the gradient would collapse once blood and water oxygen levels equalized partway across), allowing bony fish to extract a much higher fraction of dissolved O₂ from water than concurrent flow would permit.
 
-![Zoom sequence from a whole fish (operculum, gill arch) to gill filaments to a single lamella, with countercurrent water flow (100%→70%→40%→15% O₂ saturation) running opposite to blood flow through the lamellar capillaries (80%→60%→30%→5% O₂ saturation) — the gradient never equalizes along the lamella's length.](/ANATOMYPICS/bony-fish-gill-arch-lamellae-countercurrent.webp)
+![Zoom sequence from a whole fish (operculum, gill arch) to gill filaments to a single lamella, with countercurrent water flow (100%→70%→40%→15% O₂ saturation) running opposite to blood flow through the lamellar capillaries (80%→60%→30%→5% O₂ saturation), the gradient never equalizes along the lamella's length.](/ANATOMYPICS/bony-fish-gill-arch-lamellae-countercurrent.webp)
 *Source: Pearson Education, via a ResearchGate figure*
 
 <div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
@@ -109,14 +109,14 @@ Two major skeletal grades: **cartilaginous** (Chondrichthyes: sharks, rays; skel
 In bony fish, all four gill arches on each side are covered by a bony flap, the **operculum**, whose rhythmic movement (paired with mouth opening/closing) actively pumps water across the gills even when the fish is stationary; cartilaginous fish generally lack an operculum and rely more on forward swimming (ram ventilation) or dedicated spiracles.
 
 ![Fish skull and jaw musculature in two configurations (a, b), with the operculum, premaxilla, maxilla, dentary, preopercle, neurocranium, and named jaw/opercular muscles (EP, LAP, AM1/AM2/3, AAP, SH, HYP) labeled.](/ANATOMYPICS/operculum-buccal-pumping-mechanism.jpg)
-*Source: user-sourced (originally attempted via a ScienceDirect topic page). **Mismatch from spec**: this is a fish cranial/jaw musculature diagram (relevant to feeding biomechanics and labels the operculum's bony position) rather than a depiction of the buccal-pump water-flow mechanism itself — no airflow/water-flow arrows are shown.*
+*Source: user-sourced (originally attempted via a ScienceDirect topic page). **Mismatch from spec**: this is a fish cranial/jaw musculature diagram (relevant to feeding biomechanics and labels the operculum's bony position) rather than a depiction of the buccal-pump water-flow mechanism itself, no airflow/water-flow arrows are shown.*
 
 ### Fish Circulatory Structure
 
 A **two-chambered heart** (one atrium, one ventricle, preceded by a thin-walled collecting chamber, the **sinus venosus**, and followed by an outflow tract, the **conus arteriosus** or **bulbus arteriosus** depending on the group) and a **single circuit**: blood is pumped once, passes through the gills to pick up oxygen, then continues directly to the body before returning to the heart via the sinus venosus. Compare this to the human double-circuit, four-chambered heart on the [Human Circulatory System](../human-circulatory-system/) page. A fish heart only ever pumps blood that is about to lose pressure crossing the gill capillary bed before it reaches the body, a structural limitation double circulation solves.
 
 ![Three panels of a single (mammalian-type, four-chambered) heart through the cardiac cycle: (a) diastole, all chambers relaxed; (b) atrial systole/ventricular diastole; (c) atrial diastole/ventricular systole, with arrows tracing blood flow direction at each stage.](/ANATOMYPICS/heart-chambers-fish-amphibian-human-comparison.jpg)
-*Source: user-sourced (originally via scienceabc.com). **Mismatch from spec**: this shows one heart's cardiac cycle timing (diastole → atrial systole → ventricular systole), not the fish (2-chambered) vs. amphibian (3-chambered) vs. human (4-chambered) structural comparison the text describes — no fish or amphibian heart is shown.*
+*Source: user-sourced (originally via scienceabc.com). **Mismatch from spec**: this shows one heart's cardiac cycle timing (diastole → atrial systole → ventricular systole), not the fish (2-chambered) vs. amphibian (3-chambered) vs. human (4-chambered) structural comparison the text describes, no fish or amphibian heart is shown.*
 
 ### Fish Osmoregulatory Structure
 
@@ -204,7 +204,7 @@ A **three-chambered heart** (two atria, one ventricle): a structural improvement
 
 ### Amphibian Skin
 
-Thin, glandular, permeable (no scales in most adult amphibians, unlike fish or reptiles), the same epidermis-over-dermis tissue plan as human skin (see [Human Integumentary System](../human-integumentary-system/)) but with minimal keratinization, dense mucous glands (keeping the surface moist, supporting cutaneous respiration) and, in many species, dense granular (poison) glands — a direct structural trade: a barrier permeable enough for gas exchange is also a barrier that offers little protection against desiccation or toxin absorption, which is why chemical defense (toxin-secreting glands) is so widespread in this lineage specifically.
+Thin, glandular, permeable (no scales in most adult amphibians, unlike fish or reptiles), the same epidermis-over-dermis tissue plan as human skin (see [Human Integumentary System](../human-integumentary-system/)) but with minimal keratinization, dense mucous glands (keeping the surface moist, supporting cutaneous respiration) and, in many species, dense granular (poison) glands, a direct structural trade: a barrier permeable enough for gas exchange is also a barrier that offers little protection against desiccation or toxin absorption, which is why chemical defense (toxin-secreting glands) is so widespread in this lineage specifically.
 
 ## Comparative Structures
 
@@ -216,7 +216,7 @@ Thin, glandular, permeable (no scales in most adult amphibians, unlike fish or r
 | Ventilation mechanism | Opercular pumping / ram ventilation | Positive-pressure buccal pumping | Negative-pressure diaphragm/intercostal |
 | Limb support | Fins (fin rays) | Tetrapod limbs (weak/sprawling, lateral) | Tetrapod limbs (upright) |
 | Skin | Dermal bony scales, mucus-covered | Moist, permeable, glandular, minimal keratin | Keratinized, relatively impermeable |
-| Unique sensory structure | Lateral line (neuromasts) | Reduced/lost in most adults | — |
+| Unique sensory structure | Lateral line (neuromasts) | Reduced/lost in most adults |, |
 
 ## Common Exam Questions
 

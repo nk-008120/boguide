@@ -20,7 +20,7 @@ Water movement into the root, covered on [Water Transport & Transpiration](../wa
 An element is **essential** only if a plant cannot complete its life cycle without it, the deficiency is specifically correctable by supplying that element and no other, and the element is directly involved in the plant's metabolism (not merely beneficial indirectly). Essential elements are grouped by the quantity required:
 
 - **Macronutrients** (needed in large quantity): carbon, hydrogen, oxygen (from air and water, not soil-derived and rarely limiting), then the soil-derived macronutrients nitrogen (amino acids, nucleic acids, chlorophyll), potassium (osmotic/turgor regulation, enzyme activation, the guard cell ion covered on [Stomatal Physiology & Gas Exchange](../stomatal-physiology-gas-exchange/)), calcium (cell wall middle lamella, signaling), magnesium (chlorophyll's central atom), phosphorus (ATP, nucleic acids, phospholipids), and sulfur (some amino acids, coenzymes).
-- **Micronutrients** (needed in trace quantity, but still strictly essential) — iron (chlorophyll synthesis, electron transport chain components, see [Light Reactions & Photophosphorylation](../light-reactions-photophosphorylation/)), manganese, zinc, copper, boron, molybdenum (a cofactor of nitrogenase, see below), chlorine, and nickel.
+- **Micronutrients** (needed in trace quantity, but still strictly essential), iron (chlorophyll synthesis, electron transport chain components, see [Light Reactions & Photophosphorylation](../light-reactions-photophosphorylation/)), manganese, zinc, copper, boron, molybdenum (a cofactor of nitrogenase, see below), chlorine, and nickel.
 
 Deficiency symptoms are diagnostic and depend heavily on whether the element is **phloem-mobile**: mobile elements (N, P, K, Mg) can be resorbed from older leaves and relocated to actively growing tissue when supply is short, so their deficiency symptoms (commonly chlorosis, yellowing from lost chlorophyll) appear first in **older leaves**; immobile elements (Ca, B, Fe in most species) cannot be relocated once incorporated, so their deficiency symptoms appear first in **younger, actively growing tissue** instead, a single mobility fact that converts "which leaves show symptoms first" into a diagnostic clue for which nutrient is deficient.
 
@@ -31,7 +31,7 @@ Deficiency symptoms are diagnostic and depend heavily on whether the element is 
 
 Soil mineral ions are typically far more dilute than the concentration a root cell needs internally, so uptake is predominantly **active transport** rather than passive diffusion:
 
-- **Active transport via membrane proteins** — H⁺-ATPases pump protons out of root epidermal/cortical cells, generating both a membrane potential and a pH gradient (a **proton motive force**) that is then used to drive selective ion uptake through specific channels and **secondary active transporters** (symporters and antiporters that move a mineral ion against its gradient by coupling it to H⁺ moving down its gradient), mechanistically the same proton-gradient-coupled strategy phloem loading uses (see [Phloem Transport & Translocation](../phloem-transport-translocation/)), applied here to mineral uptake instead of sucrose.
+- **Active transport via membrane proteins**, H⁺-ATPases pump protons out of root epidermal/cortical cells, generating both a membrane potential and a pH gradient (a **proton motive force**) that is then used to drive selective ion uptake through specific channels and **secondary active transporters** (symporters and antiporters that move a mineral ion against its gradient by coupling it to H⁺ moving down its gradient), mechanistically the same proton-gradient-coupled strategy phloem loading uses (see [Phloem Transport & Translocation](../phloem-transport-translocation/)), applied here to mineral uptake instead of sucrose.
 
 ![Membrane transport underlying the proton motive force: an ATP-driven H+ pump establishes a charge and pH gradient across the membrane, which channels (cation/anion/water) and carriers (symport, antiport, uniport) then use to move other solutes across](/PLANTPHYSIOPICS/proton-motive-force-uptake.png)
 *Source: ScienceDirect (journal article, S0005273600001280)*
@@ -40,16 +40,16 @@ Soil mineral ions are typically far more dilute than the concentration a root ce
 
 ### Nitrogen Fixation and the *Rhizobium* Symbiosis
 
-Atmospheric N₂ is abundant but chemically inert (a strong triple bond) and unusable by plants directly; **nitrogen fixation** (reducing N₂ to biologically usable NH₃/NH₄⁺) is performed only by certain prokaryotes, using the enzyme **nitrogenase** (with a molybdenum-iron cofactor, the reason molybdenum is an essential plant micronutrient despite the plant not fixing nitrogen itself). Legumes form a specific symbiosis with **Rhizobium** bacteria: the bacteria infect root hairs and induce the plant to form specialized **root nodules**, inside which Rhizobium differentiate into nitrogen-fixing **bacteroids**. The relationship is mutualistic and tightly regulated on both sides: the plant supplies the bacteroids with carbohydrate (photosynthate delivered via phloem) and synthesizes **leghemoglobin** inside the nodule specifically to bind free O₂ and keep the nodule's internal oxygen concentration low (nitrogenase is irreversibly inactivated by O₂), while the bacteroids supply the plant with fixed nitrogen it could not otherwise access from most soils at a comparable energetic cost. This is the physiological mechanism underlying the "nitrogen fixation" entry in the ecosystem-level nitrogen cycle covered in [Ecology](../../8-ecology/) — that page treats nitrogen fixation as one flux among many in a whole-ecosystem nutrient budget, while this page covers the specific plant-microbe mechanism producing that flux.
+Atmospheric N₂ is abundant but chemically inert (a strong triple bond) and unusable by plants directly; **nitrogen fixation** (reducing N₂ to biologically usable NH₃/NH₄⁺) is performed only by certain prokaryotes, using the enzyme **nitrogenase** (with a molybdenum-iron cofactor, the reason molybdenum is an essential plant micronutrient despite the plant not fixing nitrogen itself). Legumes form a specific symbiosis with **Rhizobium** bacteria: the bacteria infect root hairs and induce the plant to form specialized **root nodules**, inside which Rhizobium differentiate into nitrogen-fixing **bacteroids**. The relationship is mutualistic and tightly regulated on both sides: the plant supplies the bacteroids with carbohydrate (photosynthate delivered via phloem) and synthesizes **leghemoglobin** inside the nodule specifically to bind free O₂ and keep the nodule's internal oxygen concentration low (nitrogenase is irreversibly inactivated by O₂), while the bacteroids supply the plant with fixed nitrogen it could not otherwise access from most soils at a comparable energetic cost. This is the physiological mechanism underlying the "nitrogen fixation" entry in the ecosystem-level nitrogen cycle covered in [Ecology](../../8-ecology/), that page treats nitrogen fixation as one flux among many in a whole-ecosystem nutrient budget, while this page covers the specific plant-microbe mechanism producing that flux.
 
 ![Root nodule structure compared across a lateral root, leguminous determinate and indeterminate nodules, and an actinorhizal nodule: epidermis, cortex, pericycle, endodermis, peripheral vasculature, and the infected cells housing the nitrogen-fixing symbiont are labeled in each](/PLANTPHYSIOPICS/root-nodule-cross-section.png)
 *Source: ScienceDirect (topic page, "Root Nodule")*
 
 ### Mycorrhizal Symbiosis
 
-Independent of nitrogen fixation, most land plant species (a large majority, across nearly every major lineage) form **mycorrhizae** — symbioses with soil fungi that extend nutrient absorption well beyond the physical reach and surface area of the root system itself:
+Independent of nitrogen fixation, most land plant species (a large majority, across nearly every major lineage) form **mycorrhizae**, symbioses with soil fungi that extend nutrient absorption well beyond the physical reach and surface area of the root system itself:
 
-- **Arbuscular mycorrhizae** — fungal hyphae penetrate root cortical cell walls (but not the plasma membrane) and form highly branched **arbuscules** within the cell, a large-surface-area interface for nutrient exchange; the dominant mycorrhizal type across most plant lineages, especially effective at improving phosphorus uptake (an ion that diffuses very slowly through soil and is easily depleted in the immediate vicinity of a root).
+- **Arbuscular mycorrhizae**, fungal hyphae penetrate root cortical cell walls (but not the plasma membrane) and form highly branched **arbuscules** within the cell, a large-surface-area interface for nutrient exchange; the dominant mycorrhizal type across most plant lineages, especially effective at improving phosphorus uptake (an ion that diffuses very slowly through soil and is easily depleted in the immediate vicinity of a root).
 
 ![Arbuscular mycorrhizal fungus-plant symbiosis: extraradical mycelium and spores in the soil, hyphal branching and a hyphopodium at the root epidermis, intraradical hyphae penetrating cortical cells, and branched arbuscules and vesicles formed within cortex cells](/PLANTPHYSIOPICS/arbuscular-mycorrhiza.png)
 *Source: ResearchGate, fig. 1, "Arbuscular mycorrhizal fungi colonize root cortical cells through germinating spores"*
@@ -84,7 +84,7 @@ In both types the fungus receives photosynthate from the plant in exchange for e
 
 **Interactive**
 
-- **Nutrient deficiency diagnostic tool (click-through)** — a diagram of a plant showing older and younger leaves separately; clicking a nutrient (N, Ca, Fe, etc.) highlights which leaves show the deficiency symptom first, reinforcing the mobile/immobile distinction as a diagnostic rule rather than a memorized list.
+- **Nutrient deficiency diagnostic tool (click-through)**, a diagram of a plant showing older and younger leaves separately; clicking a nutrient (N, Ca, Fe, etc.) highlights which leaves show the deficiency symptom first, reinforcing the mobile/immobile distinction as a diagnostic rule rather than a memorized list.
 
 <div id="nutrient-diag-widget" style="background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:'Inter','Segoe UI',Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
   <svg viewBox="0 0 220 260" width="200" height="240" style="display:block; margin:0 auto;">
@@ -136,14 +136,14 @@ In both types the fungus receives photosynthate from the plant in exchange for e
         note.textContent = el + ' is phloem-mobile: it is resorbed from older leaves and relocated to new growth when supply is short, so deficiency symptoms (chlorosis) appear first in older leaves.';
       } else {
         young.querySelectorAll('ellipse').forEach(function(e){ e.setAttribute('fill','#fde68a'); });
-        note.textContent = el + ' is immobile — once incorporated it cannot be relocated, so deficiency symptoms appear first in younger, actively growing tissue.';
+        note.textContent = el + ' is immobile, once incorporated it cannot be relocated, so deficiency symptoms appear first in younger, actively growing tissue.';
       }
     });
   });
 })();
 </script>
 
-- **Proton motive force ion uptake animator (SVG/JS)** — a root epidermal cell membrane with an H+-ATPase; activating it shows the resulting pH/voltage gradient, then a coupled secondary transporter using that gradient to pull a mineral ion in against its own concentration gradient.
+- **Proton motive force ion uptake animator (SVG/JS)**, a root epidermal cell membrane with an H+-ATPase; activating it shows the resulting pH/voltage gradient, then a coupled secondary transporter using that gradient to pull a mineral ion in against its own concentration gradient.
 
 <div id="pmf-widget" style="background:#fefcf5; border-radius:16px; padding:1.5rem; margin:1rem 0; font-family:'Inter','Segoe UI',Arial,sans-serif; box-shadow:0 4px 14px rgba(0,0,0,0.06);">
   <svg viewBox="0 0 400 160" width="100%" style="max-width:420px; display:block; margin:0 auto;">
