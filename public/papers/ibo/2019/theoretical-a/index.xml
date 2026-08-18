@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BiOGuide for Biology Olympiads – Theoretical A</title>
-    <link>https://bioguide.world/papers/ibo/2019/theoretical-a/</link>
+    <link>http://localhost:1313/papers/ibo/2019/theoretical-a/</link>
     <description>Recent content in Theoretical A on BiOGuide for Biology Olympiads</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="https://bioguide.world/papers/ibo/2019/theoretical-a/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/papers/ibo/2019/theoretical-a/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Q1 - C. elegans Apoptosis Gene Network</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q1/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q1/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q1/</guid>
       <description>
         
         
@@ -30,7 +30,7 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/1-cell-molecular/cell-junctions-ecm-cell-death/&#34;&gt;Cell Junctions, Extracellular Matrix &amp; Cell Death&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/cell-junctions-ecm-cell-death/&#34;&gt;Cell Junctions, Extracellular Matrix &amp; Cell Death&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;The effect of knocking out specific genes in worms on apoptosis (programmed cell death) was studied.&lt;/p&gt;
 &lt;table&gt;
@@ -190,25 +190,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/&#34;&gt;← Back to Theoretical A&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q2/&#34;&gt;Next: Q2 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/&#34;&gt;← Back to Theoretical A&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q2/&#34;&gt;Next: Q2 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=5&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=5&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q10 - Pressure and Volume Changes During Breathing</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q10/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q10/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q10/</guid>
       <description>
         
         
@@ -219,12 +219,12 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/3-animal-physiology/respiratory-physiology/&#34;&gt;Respiratory Physiology&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/respiratory-physiology/&#34;&gt;Respiratory Physiology&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Animal Anatomy and Physiology&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The graph below illustrates the pressure and volume changes during breathing.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q10-figure-1.png&#34; alt=&#34;Graph with left axis Hgmm (750–765) and right axis cm³ (2500–3000), x-axis split into phase I and phase II by a dashed vertical line. Curve A oscillates around 760: dips slightly during phase I, rises to a peak (~763) during phase II, then returns to 760. Curve B stays in the 755–758 range throughout, always below 760. Curve C rises from ~751 to ~760 during phase I, then falls steadily to 750 by the end of phase II.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q10-figure-1.png&#34; alt=&#34;Graph with left axis Hgmm (750–765) and right axis cm³ (2500–3000), x-axis split into phase I and phase II by a dashed vertical line. Curve A oscillates around 760: dips slightly during phase I, rises to a peak (~763) during phase II, then returns to 760. Curve B stays in the 755–758 range throughout, always below 760. Curve C rises from ~751 to ~760 during phase I, then falls steadily to 750 by the end of phase II.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Identify what is represented by letters A, B and C, and the Roman numerals I. and II. Match these symbols (A–C and I–II) with the descriptions below. Every symbol matches one description only, but there are descriptions that do not match any of those - mark those as &amp;ldquo;No match&amp;rdquo;.&lt;/p&gt;
@@ -424,25 +424,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q9/&#34;&gt;← Previous: Q9&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q11/&#34;&gt;Next: Q11 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q9/&#34;&gt;← Previous: Q9&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q11/&#34;&gt;Next: Q11 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=21&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=21&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q11 - Acid-Base Balance: Reading a Blood Gas Map</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q11/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q11/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q11/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q11/</guid>
       <description>
         
         
@@ -453,7 +453,7 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/3-animal-physiology/homeostasis-osmoregulation/&#34;&gt;Homeostasis &amp; Osmoregulation&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/homeostasis-osmoregulation/&#34;&gt;Homeostasis &amp; Osmoregulation&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;The pH value of human blood is kept in a strict range, in order to maintain the vital functions of the body. There are three main mechanisms which can help blunting acidic or alkaline shifts:&lt;/p&gt;
 &lt;ul&gt;
@@ -463,7 +463,7 @@
 &lt;/ul&gt;
 &lt;p&gt;These three regulatory systems usually operate simultaneously, compensating each other&amp;rsquo;s malfunctions when needed. Conditions A to F are depicted in the figure below.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q11-figure-1.png&#34; alt=&#34;Blood-gas map: x-axis arterial blood pH (7.00-7.80), left y-axis plasma [HCO3-] in mmol/L (0-60), right y-axis blood [H&amp;#43;] in nmol/L, with diagonal PCO2 isopleths fanning across the plot. A shaded blob sits centrally labeled “Legend 1 = Normal”. Six lettered regions surround it: A (upper-left, low pH ~7.0-7.2, moderately elevated HCO3-), B (upper-middle, near-normal pH, markedly elevated HCO3- ~36-56), C (upper-right, high pH ~7.5-7.7, markedly elevated HCO3- ~30-56), D (right, high pH ~7.5-7.7, reduced HCO3- ~14-20), E (lower-middle-right, near-normal pH, markedly reduced HCO3- ~4-20), F (lower-left, low pH ~7.0-7.3, reduced HCO3- ~4-16).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q11-figure-1.png&#34; alt=&#34;Blood-gas map: x-axis arterial blood pH (7.00-7.80), left y-axis plasma [HCO3-] in mmol/L (0-60), right y-axis blood [H&amp;#43;] in nmol/L, with diagonal PCO2 isopleths fanning across the plot. A shaded blob sits centrally labeled “Legend 1 = Normal”. Six lettered regions surround it: A (upper-left, low pH ~7.0-7.2, moderately elevated HCO3-), B (upper-middle, near-normal pH, markedly elevated HCO3- ~36-56), C (upper-right, high pH ~7.5-7.7, markedly elevated HCO3- ~30-56), D (right, high pH ~7.5-7.7, reduced HCO3- ~14-20), E (lower-middle-right, near-normal pH, markedly reduced HCO3- ~4-20), F (lower-left, low pH ~7.0-7.3, reduced HCO3- ~4-16).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. Axis 1 = Arterial blood pH. Axis 2 = Arterial plasma [HCO3-] (mmol/L). Axis 3 = Arterial blood [H+] (nmol/L). Legend 1 = Normal.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Match the letters from the figure (from A to F) to the corresponding clinical conditions in the list below. Note that acute implies a sudden effect, while chronic conditions last for an extended period and involve compensatory mechanisms. Note that not all the letters are used.&lt;/p&gt;
@@ -627,25 +627,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q10/&#34;&gt;← Previous: Q10&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q12/&#34;&gt;Next: Q12 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q10/&#34;&gt;← Previous: Q10&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q12/&#34;&gt;Next: Q12 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=22&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=22&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q12 - Antibiotic Pharmacokinetics in a Cow</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q12/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q12/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q12/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q12/</guid>
       <description>
         
         
@@ -667,7 +667,7 @@
 &lt;/script&gt;
 &lt;/p&gt;
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/3-animal-physiology/digestive-metabolic-physiology/&#34;&gt;Digestive &amp; Metabolic Physiology&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/digestive-metabolic-physiology/&#34;&gt;Digestive &amp; Metabolic Physiology&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;The Hungarian Grey is a rare breed of cow which was threatened by an epidemic caused by a new bacterial strain. An antibiotic was given to the cows to prevent infection. It has a half-life in cows of 6 hours, and at equilibrium, 25% of the antibiotic circulates in the blood, whilst 75% is found in interstitium.&lt;/p&gt;
 &lt;p&gt;A healthy cow received a single dose of 4400 mg intravenously at 11am. At 11pm, 10 ml of blood was withdrawn and 5 mg/l of antibiotic was present in this sample.&lt;/p&gt;
@@ -821,25 +821,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q11/&#34;&gt;← Previous: Q11&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q13/&#34;&gt;Next: Q13 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q11/&#34;&gt;← Previous: Q11&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q13/&#34;&gt;Next: Q13 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=24&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=24&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q13 - Renal Handling of Glucose</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q13/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q13/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q13/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q13/</guid>
       <description>
         
         
@@ -850,11 +850,11 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/2-animal-anatomy/human-excretory-system/&#34;&gt;Human Excretory System&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/2-animal-anatomy/human-excretory-system/&#34;&gt;Human Excretory System&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;The following graph shows how glucose handling in the kidney changes with plasma concentration.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q13-figure-1.png&#34; alt=&#34;Graph with x-axis plasma glucose concentration (mg/100ml) from 0-800, y-axis glucose filtered load/reabsorption/excretion (mg/min) from 0-900. Curve A is a straight diagonal line from the origin, rising steepest of all four and reaching ~870 at x=800. Curve B starts flat at zero, curves upward starting around x=250, and rises roughly parallel to A but offset below it. Curve C rises from zero in a shallow S-curve and plateaus at y≈400 from about x=400 onward. A small bracket labeled D marks a specific x-axis position around x=100-180.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q13-figure-1.png&#34; alt=&#34;Graph with x-axis plasma glucose concentration (mg/100ml) from 0-800, y-axis glucose filtered load/reabsorption/excretion (mg/min) from 0-900. Curve A is a straight diagonal line from the origin, rising steepest of all four and reaching ~870 at x=800. Curve B starts flat at zero, curves upward starting around x=250, and rises roughly parallel to A but offset below it. Curve C rises from zero in a shallow S-curve and plateaus at y≈400 from about x=400 onward. A small bracket labeled D marks a specific x-axis position around x=100-180.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. Axis 1 = Plasma glucose concentration (mg/100 ml). Axis 2 = Glucose filtered load, reabsorption or excretion (mg/min).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Match the letters from the figure (A-D) to the correct parameter in the list below.&lt;/p&gt;
@@ -1013,25 +1013,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q12/&#34;&gt;← Previous: Q12&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q14/&#34;&gt;Next: Q14 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q12/&#34;&gt;← Previous: Q12&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q14/&#34;&gt;Next: Q14 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=25&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=25&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q14 - Liver, Gallbladder, and Kidney Vessels</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q14/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q14/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q14/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q14/</guid>
       <description>
         
         
@@ -1042,11 +1042,11 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/2-animal-anatomy/human-excretory-system/&#34;&gt;Human Excretory System&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/2-animal-anatomy/human-excretory-system/&#34;&gt;Human Excretory System&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;Answer the question using the letters from the figure.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q14-figure-1.png&#34; alt=&#34;Line diagram of the liver (large outlined organ, top), gallbladder (small bean-shaped organ tucked beneath it), and kidney (bean-shaped organ, lower half) with connecting vessels. Labeled boxes with pointer lines mark individual vessels: C points to a vessel near the top of the liver; A points to a vessel running down the right side; B points to a vessel near the bottom of the paired vessels; D points to a duct near the gallbladder; E points to the single duct leaving the bottom of the kidney. Two additional boxes below read “P = Legend 4” and “Q = Legend 5”.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q14-figure-1.png&#34; alt=&#34;Line diagram of the liver (large outlined organ, top), gallbladder (small bean-shaped organ tucked beneath it), and kidney (bean-shaped organ, lower half) with connecting vessels. Labeled boxes with pointer lines mark individual vessels: C points to a vessel near the top of the liver; A points to a vessel running down the right side; B points to a vessel near the bottom of the paired vessels; D points to a duct near the gallbladder; E points to the single duct leaving the bottom of the kidney. Two additional boxes below read “P = Legend 4” and “Q = Legend 5”.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. Legend 1 = Liver. Legend 2 = Gallbladder. Legend 3 = Kidney. Legend 4 = All of the above. Legend 5 = None of the above.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Match the following statements with the letters in the figure above (A-E and P-Q). You may need to use the same letter more than once.&lt;/p&gt;
@@ -1215,25 +1215,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q13/&#34;&gt;← Previous: Q13&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q15/&#34;&gt;Next: Q15 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q13/&#34;&gt;← Previous: Q13&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q15/&#34;&gt;Next: Q15 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=26&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=26&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q15 - Classifying Hypersensitivity Reactions</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q15/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q15/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q15/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q15/</guid>
       <description>
         
         
@@ -1244,7 +1244,7 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/3-animal-physiology/immune-physiology/&#34;&gt;Immune Physiology&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/immune-physiology/&#34;&gt;Immune Physiology&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;There are four different types of hypersensitivity reactions in the human body, as can be seen in the list below.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;TYPE I:&lt;/strong&gt; Fast response which occurs in minutes, rather than multiple hours or days. Free antigens cross link the IgE on mast cells and basophils, which causes a release of vasoactive biomolecules.&lt;/p&gt;
@@ -1412,25 +1412,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q14/&#34;&gt;← Previous: Q14&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q16/&#34;&gt;Next: Q16 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q14/&#34;&gt;← Previous: Q14&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q16/&#34;&gt;Next: Q16 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=27&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=27&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q16 - Cochlear Frequency Coding and Sound Pressure</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q16/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q16/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q16/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q16/</guid>
       <description>
         
         
@@ -1452,7 +1452,7 @@
 &lt;/script&gt;
 &lt;/p&gt;
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/2-animal-anatomy/human-sensory-organs/&#34;&gt;Human Sensory Organs&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/2-animal-anatomy/human-sensory-organs/&#34;&gt;Human Sensory Organs&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;The Hungarian biophysicist, György Békésy, was awarded the 1961 Nobel Prize for his research on the function of the mammalian cochlea. He showed that each frequency of sound causes a specific part of the basilar membrane to vibrate the most. This point is determined by the resonant properties of the membrane, with narrower parts vibrating more at higher frequencies.&lt;/p&gt;
 &lt;p&gt;Neurons sense this vibration and encode the sound with two different mechanisms:&lt;/p&gt;
@@ -1463,7 +1463,7 @@
 &lt;p&gt;The intensities of audible sounds are expressed in decibel sound pressure level (dB SPL):&lt;/p&gt;
 &lt;p&gt;$$dB,SPL = 20 \log_{10}\left(\dfrac{\text{Pressure of sound in Pa}}{2 \times 10^{-5}}\right)$$&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q16-figure-1.png&#34; alt=&#34;Graph with x-axis frequency (Hz, log scale, 20-20000) and y-axis intensity (dB, 0-140ish). Two curves: an upper curve (“Legend 2 = Threshold of pain”) running roughly 110-135 dB across the frequency range, with a marked point around 130 dB near the low-frequency end. A lower curve (“Legend 1 = Threshold of audibility”) running from around 65 dB down to below 0 dB in the middle frequencies and back up at the high end, with a marked point around 50 dB near the low-frequency end, at the same x-position as the upper curve’s marked point.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q16-figure-1.png&#34; alt=&#34;Graph with x-axis frequency (Hz, log scale, 20-20000) and y-axis intensity (dB, 0-140ish). Two curves: an upper curve (“Legend 2 = Threshold of pain”) running roughly 110-135 dB across the frequency range, with a marked point around 130 dB near the low-frequency end. A lower curve (“Legend 1 = Threshold of audibility”) running from around 65 dB down to below 0 dB in the middle frequencies and back up at the high end, with a marked point around 50 dB near the low-frequency end, at the same x-position as the upper curve’s marked point.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. Axis 1 = Frequency (Hz). Axis 2 = Intensity (dB). Legend 1 = Threshold of audibility. Legend 2 = Threshold of pain.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Based on the information above, indicate with an X if each of the following statements is true (T) or false (F).&lt;/p&gt;
@@ -1597,25 +1597,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q15/&#34;&gt;← Previous: Q15&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q17/&#34;&gt;Next: Q17 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q15/&#34;&gt;← Previous: Q15&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q17/&#34;&gt;Next: Q17 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=28&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=28&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q17 - Feeding Time and the Central vs. Peripheral Circadian Clock</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q17/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q17/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q17/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q17/</guid>
       <description>
         
         
@@ -1626,11 +1626,11 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/9-ethology/biological-rhythms/&#34;&gt;Biological Rhythms&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/9-ethology/biological-rhythms/&#34;&gt;Biological Rhythms&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;The impact of feeding on the central circadian clock of the brain, and the peripheral clocks of other cells, was assessed. Mice were either fed only from 6.00-18.00 (daytime feeding) or only from 18.00-6.00 (nighttime feeding). The amount of Per1 and Per2 protein in liver is shown. The central brain clock was stained with labelled DNA complementary to the &lt;em&gt;per1&lt;/em&gt; or &lt;em&gt;per2&lt;/em&gt; sequences.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q17-figure-1.png&#34; alt=&#34;Top: two blot panels (Nighttime feeding, Daytime feeding), each showing Per1 and Per2 protein band intensity across timepoints 6, 10, 14, 18, 22, 2 (hours). Nighttime feeding: Per1 darkest at 18, faint elsewhere; Per2 darkest at 22. Daytime feeding: Per1 darkest at 6; Per2 darkest at 10. Bottom: brain coronal section (small, greyscale) with a boxed region highlighted, plus a grid of small in-situ hybridization images for Per1 and Per2 across the same six timepoints for both feeding conditions, showing a small dark-staining structure of varying intensity per timepoint.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q17-figure-1.png&#34; alt=&#34;Top: two blot panels (Nighttime feeding, Daytime feeding), each showing Per1 and Per2 protein band intensity across timepoints 6, 10, 14, 18, 22, 2 (hours). Nighttime feeding: Per1 darkest at 18, faint elsewhere; Per2 darkest at 22. Daytime feeding: Per1 darkest at 6; Per2 darkest at 10. Bottom: brain coronal section (small, greyscale) with a boxed region highlighted, plus a grid of small in-situ hybridization images for Per1 and Per2 across the same six timepoints for both feeding conditions, showing a small dark-staining structure of varying intensity per timepoint.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. Legend 1 = Nighttime feeding. Legend 2 = Daytime feeding. Legend 3 = Time of the day (h).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;For the following questions, indicate your answer by putting an X in the appropriate cells of the table on the answer sheet.&lt;/p&gt;
@@ -1779,25 +1779,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q16/&#34;&gt;← Previous: Q16&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q18/&#34;&gt;Next: Q18 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q16/&#34;&gt;← Previous: Q16&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q18/&#34;&gt;Next: Q18 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=29&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=29&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q18 - The Thyroid Axis in Five Clinical Scenarios</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q18/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q18/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q18/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q18/</guid>
       <description>
         
         
@@ -1808,11 +1808,11 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/3-animal-physiology/endocrine-system-physiology/&#34;&gt;Endocrine System Physiology&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/endocrine-system-physiology/&#34;&gt;Endocrine System Physiology&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;Thyroid hormones (T3 and T4) regulate metabolism. Their release is controlled as shown in the figure. T4 can be metabolised to T3 in tissues.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q18-figure-1.png&#34; alt=&#34;Flowchart: Hypothalamus (top box) releases TRH (&amp;#43;) down to Anterior Pituitary (middle box), which releases TSH (&amp;#43;) down to Thyroid (lower box), which releases T4 and T3 (&amp;#43;) up from a “Peripheral body/blood” box. Minus signs mark negative-feedback arrows running from the peripheral hormone box back up to both the Anterior Pituitary and the Hypothalamus.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q18-figure-1.png&#34; alt=&#34;Flowchart: Hypothalamus (top box) releases TRH (&amp;#43;) down to Anterior Pituitary (middle box), which releases TSH (&amp;#43;) down to Thyroid (lower box), which releases T4 and T3 (&amp;#43;) up from a “Peripheral body/blood” box. Minus signs mark negative-feedback arrows running from the peripheral hormone box back up to both the Anterior Pituitary and the Hypothalamus.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. Legend 1 = Hypothalamus. Legend 2 = Anterior Pituitary. Legend 3 = Thyroid. Legend 4 = Peripheral body / blood. TRH = Thyrotropin-releasing hormone. TSH = Thyroid-stimulating hormone.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Which hormone&amp;rsquo;s levels would you expect to be increased in patients with the following conditions, relative to healthy individuals?&lt;/p&gt;
@@ -2076,25 +2076,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q17/&#34;&gt;← Previous: Q17&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q19/&#34;&gt;Next: Q19 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q17/&#34;&gt;← Previous: Q17&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q19/&#34;&gt;Next: Q19 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=30&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=30&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q19 - Thyroid Hormone, Oxidative Stress, and the Heart</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q19/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q19/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q19/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q19/</guid>
       <description>
         
         
@@ -2105,12 +2105,12 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/3-animal-physiology/endocrine-system-physiology/&#34;&gt;Endocrine System Physiology&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/endocrine-system-physiology/&#34;&gt;Endocrine System Physiology&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;Thyroid hormones play a crucial role in metabolism and the cardiovascular system. Too much or too little thyroid hormone can result in insufficient blood flow to the heart. Insufficient blood flow generates reactive oxygen species (ROS) which damage the heart further.&lt;/p&gt;
 &lt;p&gt;Methimazole prevents the production of thyroid hormones, whilst T4 is a thyroid hormone. Either was given to rats, and the expression of antioxidant enzymes in the heart was measured.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q19-figure-1.png&#34; alt=&#34;Five bar-chart panels (a-e), each on a log-scale y-axis (0.1-10, “Axis = Fold change”) labeled SOD1, SOD2, GPX1, GPX3, and Catalase. Each panel has three bars: CTL (untreated control, ~1), MMZ (methimazole-treated), and T4 (thyroxine-treated). SOD1: MMZ elevated (~1.8), T4 near 1. SOD2: T4 slightly below 1. GPX1: MMZ elevated (~1.8), T4 below 1 (~0.5). GPX3: MMZ below 1 (~0.7), T4 near 1. Catalase: T4 significantly below 1 (~0.5, marked with an asterisk), MMZ near 1.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q19-figure-1.png&#34; alt=&#34;Five bar-chart panels (a-e), each on a log-scale y-axis (0.1-10, “Axis = Fold change”) labeled SOD1, SOD2, GPX1, GPX3, and Catalase. Each panel has three bars: CTL (untreated control, ~1), MMZ (methimazole-treated), and T4 (thyroxine-treated). SOD1: MMZ elevated (~1.8), T4 near 1. SOD2: T4 slightly below 1. GPX1: MMZ elevated (~1.8), T4 below 1 (~0.5). GPX3: MMZ below 1 (~0.7), T4 near 1. Catalase: T4 significantly below 1 (~0.5, marked with an asterisk), MMZ near 1.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. Axis = Fold change (Logarithmic scale). CTL = Untreated Control group. MMZ = Treated with Methimazole. T4 = Treated with thyroxine. SOD = Superoxide dismutase. GPX = Glutathione peroxidase.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Assess how the following variables change under the conditions described below.&lt;/p&gt;
@@ -2259,25 +2259,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q18/&#34;&gt;← Previous: Q18&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q20/&#34;&gt;Next: Q20 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q18/&#34;&gt;← Previous: Q18&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q20/&#34;&gt;Next: Q20 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=31&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=31&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q2 - CLK Mutation and Circadian PER Oscillations</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q2/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q2/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q2/</guid>
       <description>
         
         
@@ -2288,7 +2288,7 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/9-ethology/biological-rhythms/&#34;&gt;Biological Rhythms&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/9-ethology/biological-rhythms/&#34;&gt;Biological Rhythms&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;Hall, Rosbash and Young were awarded the 2017 Nobel Prize for their discoveries of the molecular mechanisms that control circadian rhythms. &amp;lsquo;Period&amp;rsquo; (&lt;em&gt;PER&lt;/em&gt;) is a gene of the &lt;em&gt;Drosophila&lt;/em&gt; that undergoes strict circadian oscillations. Mutations to &lt;em&gt;PER&lt;/em&gt; alter or abolish the periodicity and phase of these rhythms. Another gene regulating the circadian rhythm is &amp;lsquo;clock&amp;rsquo; (&lt;em&gt;CLK&lt;/em&gt;). &lt;em&gt;Drosophila&lt;/em&gt; with a certain mutation in the &lt;em&gt;CLK&lt;/em&gt; gene sometimes have disrupted circadian rhythms as shown in Table 1.&lt;/p&gt;
 &lt;table&gt;
@@ -2342,7 +2342,7 @@
 &lt;p&gt;&lt;em&gt;Table 1.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Cloning revealed that these identified &lt;em&gt;CLK&lt;/em&gt; mutant flies have a premature stop codon that truncates the protein, making it non-functional. To determine the &lt;em&gt;in vivo&lt;/em&gt; regulatory pattern of the &lt;em&gt;PER&lt;/em&gt; gene, they generated transgenic &lt;em&gt;Drosophila&lt;/em&gt; strains carrying a luciferase cDNA fused to the promoter region of the &lt;em&gt;PER&lt;/em&gt; gene. Then they assayed the activity of luciferase (quantified in counts/s) in &lt;em&gt;Drosophila&lt;/em&gt; of the various &lt;em&gt;CLK&lt;/em&gt; genotypes. Results are shown in Figure 1. Note that the luciferase activity is proportional to the expression of the examined gene.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q2-figure-1.png&#34; alt=&#34;Luciferase (PER-promoter) activity over five days for CLK&amp;#43;/&amp;#43;, CLK&amp;#43;/- and CLK-/- flies, alternating 12h light/12h dark. CLK&amp;#43;/&amp;#43; shows the tallest, most sharply cycling peaks; CLK&amp;#43;/- cycles at the same times but with lower amplitude; CLK-/- is essentially flat throughout.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q2-figure-1.png&#34; alt=&#34;Luciferase (PER-promoter) activity over five days for CLK&amp;#43;/&amp;#43;, CLK&amp;#43;/- and CLK-/- flies, alternating 12h light/12h dark. CLK&amp;#43;/&amp;#43; shows the tallest, most sharply cycling peaks; CLK&amp;#43;/- cycles at the same times but with lower amplitude; CLK-/- is essentially flat throughout.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. Axis 1 = Time (hours), white bars represent a 12 hour period of light, dark bars represent a 12 hour period of darkness. Axis 2 = Counts per Second.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Indicate with an &lt;strong&gt;X&lt;/strong&gt; if each of the following statements are true (T) or false (F).&lt;/p&gt;
@@ -2494,25 +2494,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q1/&#34;&gt;← Previous: Q1&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q3/&#34;&gt;Next: Q3 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q1/&#34;&gt;← Previous: Q1&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q3/&#34;&gt;Next: Q3 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=6&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=6&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q20 - GNC/GLK Transcription Factors and Chloroplast Development</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q20/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q20/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q20/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q20/</guid>
       <description>
         
         
@@ -2523,16 +2523,16 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/1-cell-molecular/gene-regulation-eukaryotic-epigenetics/&#34;&gt;Gene Regulation: Eukaryotic &amp; Epigenetics&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/gene-regulation-eukaryotic-epigenetics/&#34;&gt;Gene Regulation: Eukaryotic &amp; Epigenetics&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Plant Anatomy and Physiology&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Two families of transcription factors, GNC and GLK, have been implicated in regulating chloroplast development. The promoters which these transcription factors bind to were identified. These promoters were grouped according to whether the genes were upregulated, or downregulated, when these transcription factors were overexpressed (colour of bar). The percentage of these promoters which contained certain hexamer or octamer sequences was plotted (height of bar). The asterisks indicate significant difference compared to the control.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q20-figure-1.png&#34; alt=&#34;Two bar-chart panels. Top: nine candidate hexamer sequences (GTGATC, TGATCA, CGATCA, ATGATC, GCGATC, ACGATC, CGATCG, CCGATC, AGATCA, GATCTA) on the x-axis, percentage of promoters on the y-axis, grouped bars for Legend 1/2/3, several marked with asterisks - ATGATC and AGATCA are the tallest. Bottom: candidate octamer sequences grouped under “RGATATCY (3’)” (GATATC, AGATATC, GGATATC, RGATATCY) and “RGATTYYYY (1° and 2°)” (AGATTYYC, GGATTYYC, RGATTYYC, GATTYYC, RGATTYYY, AGATTYYY, GGATTYYC, RGATTCC, GATTCC, AGATTTC), bars for Legend 4/5, several marked with asterisks or double asterisks.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q20-figure-1.png&#34; alt=&#34;Two bar-chart panels. Top: nine candidate hexamer sequences (GTGATC, TGATCA, CGATCA, ATGATC, GCGATC, ACGATC, CGATCG, CCGATC, AGATCA, GATCTA) on the x-axis, percentage of promoters on the y-axis, grouped bars for Legend 1/2/3, several marked with asterisks - ATGATC and AGATCA are the tallest. Bottom: candidate octamer sequences grouped under “RGATATCY (3’)” (GATATC, AGATATC, GGATATC, RGATATCY) and “RGATTYYYY (1° and 2°)” (AGATTYYC, GGATTYYC, RGATTYYC, GATTYYC, RGATTYYY, AGATTYYY, GGATTYYC, RGATTCC, GATTCC, AGATTTC), bars for Legend 4/5, several marked with asterisks or double asterisks.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. Axis = % of promoters. Legend 1 = Up-regulated by 35S:GNC. Legend 2 = Down-regulated by 35S:GNC. Legend 3 = Control. Legend 4 = Up-regulated by GLK. Legend 5 = Control.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q20-figure-2.png&#34; alt=&#34;Stacked bar chart, x-axis nucleotide position 1-6, y-axis nucleotide frequency 0-1, each bar divided into colored segments for G/A/T/C proportions. Position 1: mostly G (~0.4) with A, T, C making up the rest. Position 2: mostly G (~0.39) with A, T, C. Position 3: dominated by G (~0.5). Position 4: dominated by A (~0.4-0.5). Position 5: dominated by T (~0.6). Position 6: dominated by C (~0.5), with a small G segment at the bottom (~0.1) and A (~0.4).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q20-figure-2.png&#34; alt=&#34;Stacked bar chart, x-axis nucleotide position 1-6, y-axis nucleotide frequency 0-1, each bar divided into colored segments for G/A/T/C proportions. Position 1: mostly G (~0.4) with A, T, C making up the rest. Position 2: mostly G (~0.39) with A, T, C. Position 3: dominated by G (~0.5). Position 4: dominated by A (~0.4-0.5). Position 5: dominated by T (~0.6). Position 6: dominated by C (~0.5), with a small G segment at the bottom (~0.1) and A (~0.4).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.2. Axis 1 = Nucleotide position. Axis 2 = Nucleotide frequency.&lt;/em&gt;&lt;/p&gt;
 &lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2019-theoretical-a-q20&#34;&gt;
@@ -2666,25 +2666,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q19/&#34;&gt;← Previous: Q19&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q21/&#34;&gt;Next: Q21 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q19/&#34;&gt;← Previous: Q19&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q21/&#34;&gt;Next: Q21 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=33&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=33&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q21 - Drought Effects on Olive Leaf Anatomy</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q21/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q21/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q21/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q21/</guid>
       <description>
         
         
@@ -2695,15 +2695,15 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/5-plant-physiology/plant-stress-physiology-defense/&#34;&gt;Plant Stress Physiology &amp; Defense&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/5-plant-physiology/plant-stress-physiology-defense/&#34;&gt;Plant Stress Physiology &amp; Defense&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;The effect of drought on leaf anatomy was investigated in two types of Olive: Chemlali and Meski. Data is shown in the tables below.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q21-figure-1.png&#34; alt=&#34;Two data tables. Top table: tissue thickness r (µm) for upper epidermis (UE), spongy parenchyma (SP), lower epidermis (LE), and trichome layer (TL), for each cultivar under well-watered (WW) and under-watered (UW) conditions, with asterisks marking significant differences: Chemlali WW/UW = UE 18.0/23.8, SP 196.3/215.7, LE 16.5/20.7, TL 30.6/40.5; Meski WW/UW = UE 26.8/20.1, SP 224.9/234.8, LE 16.3/16.4, TL 37.9/47.9. Bottom table: leaf area (LA, mm²), tissue density (D, g/kg), and succulence (S, mg H2O/cm²) for each cultivar/condition, all marked significant: Chemlali WW/UW = LA 537.2/405.0, D 535.0/485.5, S 24.23/30.45; Meski WW/UW = LA 746.0/634.7, D 543.0/521.7, S 23.99/29.44.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q21-figure-1.png&#34; alt=&#34;Two data tables. Top table: tissue thickness r (µm) for upper epidermis (UE), spongy parenchyma (SP), lower epidermis (LE), and trichome layer (TL), for each cultivar under well-watered (WW) and under-watered (UW) conditions, with asterisks marking significant differences: Chemlali WW/UW = UE 18.0/23.8, SP 196.3/215.7, LE 16.5/20.7, TL 30.6/40.5; Meski WW/UW = UE 26.8/20.1, SP 224.9/234.8, LE 16.3/16.4, TL 37.9/47.9. Bottom table: leaf area (LA, mm²), tissue density (D, g/kg), and succulence (S, mg H2O/cm²) for each cultivar/condition, all marked significant: Chemlali WW/UW = LA 537.2/405.0, D 535.0/485.5, S 24.23/30.45; Meski WW/UW = LA 746.0/634.7, D 543.0/521.7, S 23.99/29.44.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Table 1. r = Thickness (µm), UE = Upper epidermis, SP = Spongy parenchyma, LE = Lower epidermis, TL = Trichome layer, WW = well-watered, UW = under-watered, LA = leaf area, D = density of leaf tissue, S = succulence, CULT = Cultivar × watering regime. Asterisks (&lt;/em&gt;) indicate significant differences.*&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q21-figure-2.png&#34; alt=&#34;A small worked-example table showing UW expressed as a percentage of WW for upper epidermis (UE) thickness: Chemlali = “132”, Meski = “B” (to be calculated as part of Q21.1 alongside spongy parenchyma’s “A”).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q21-figure-2.png&#34; alt=&#34;A small worked-example table showing UW expressed as a percentage of WW for upper epidermis (UE) thickness: Chemlali = “132”, Meski = “B” (to be calculated as part of Q21.1 alongside spongy parenchyma’s “A”).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Calculate &amp;ldquo;A&amp;rdquo; and &amp;ldquo;B&amp;rdquo; in the following table by quantifying the effect of under-watering (UW) relative to the well-watered (WW) condition on spongy parenchyma, as has been done for the effect on upper epidermis (Chemlali UE = 132, i.e. UW expressed as a percentage of WW).&lt;/p&gt;
 &lt;p&gt;What are the consequences of the following changes? Assign the correct physiological consequence from the list below (A-F) to each of the anatomical changes listed. In some cases you may need more than one letter.&lt;/p&gt;
@@ -2896,25 +2896,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q20/&#34;&gt;← Previous: Q20&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q22/&#34;&gt;Next: Q22 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q20/&#34;&gt;← Previous: Q20&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q22/&#34;&gt;Next: Q22 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=35&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=35&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q22 - What Limits the Height of the Tallest Trees?</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q22/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q22/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q22/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q22/</guid>
       <description>
         
         
@@ -2936,21 +2936,21 @@
 &lt;/script&gt;
 &lt;/p&gt;
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/5-plant-physiology/water-transport-transpiration/&#34;&gt;Water Transport &amp; Transpiration&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/5-plant-physiology/water-transport-transpiration/&#34;&gt;Water Transport &amp; Transpiration&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;To understand the relationship between different factors and tree height, &lt;em&gt;Sequoia sempervirens&lt;/em&gt;, one of the tallest known tree species, was studied. Multiple physiological parameters were determined at different heights of multiple individual trees.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q22-figure-1.png&#34; alt=&#34;Four scatter-plot panels (a-d) all sharing x-axis “Axis 1” (height above ground, m, 30-120). (a) Axis 2: xylem pressure, two downward-sloping trend lines (before-dawn, filled symbols, higher line; midday, open symbols, lower line), both declining steadily with height. (b) Axis 3: leaf mass:area ratio, rising in a shallow exponential curve from ~150 at low heights to ~800 at maximum height. (c) Axis 4: leaf δ13C, rising (becoming less negative) in an exponential curve from about -30‰ to about -21‰ with height, with a second, higher set of points (small filled dots) tracking a parallel but offset curve above the main one. (d) Axis 5: photosynthetic rate per unit mass, declining roughly linearly from about 44 at low heights to about 6 at maximum height.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q22-figure-1.png&#34; alt=&#34;Four scatter-plot panels (a-d) all sharing x-axis “Axis 1” (height above ground, m, 30-120). (a) Axis 2: xylem pressure, two downward-sloping trend lines (before-dawn, filled symbols, higher line; midday, open symbols, lower line), both declining steadily with height. (b) Axis 3: leaf mass:area ratio, rising in a shallow exponential curve from ~150 at low heights to ~800 at maximum height. (c) Axis 4: leaf δ13C, rising (becoming less negative) in an exponential curve from about -30‰ to about -21‰ with height, with a second, higher set of points (small filled dots) tracking a parallel but offset curve above the main one. (d) Axis 5: photosynthetic rate per unit mass, declining roughly linearly from about 44 at low heights to about 6 at maximum height.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. Axis 1 = Height above ground (m). Axis 2 = Xylem pressure (MPa). Axis 3 = Leaf mass:area (g·m⁻²). Axis 4 = Leaf δ13C (‰). Axis 5 = &amp;ldquo;photosynthetic rate per unit mass&amp;rdquo; Pmax,m (nmol CO2·g⁻¹·s⁻¹).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Pictures of leaves were taken at different heights (numbers are metres of height of sampling):&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q22-figure-2.png&#34; alt=&#34;A row of leaf/frond samples photographed at increasing sampling heights (2, 35, 45, 55, 65, 75, 85, 95, 105, 112 m), showing a clear size gradient - large, broad, elongated leaves at low heights (2m, 35m) shrinking progressively to short, stubby, densely-needled leaves at the greatest heights (95-112m).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q22-figure-2.png&#34; alt=&#34;A row of leaf/frond samples photographed at increasing sampling heights (2, 35, 45, 55, 65, 75, 85, 95, 105, 112 m), showing a clear size gradient - large, broad, elongated leaves at low heights (2m, 35m) shrinking progressively to short, stubby, densely-needled leaves at the greatest heights (95-112m).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.2. Leaf morphology at different sampling heights (m).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Model equations were constructed to predict how different variables influence the maximum height of trees (ψ = leaf water potential; LMA = Leaf Mass:Area ratio; &amp;ldquo;maximum height&amp;rdquo;, h, in the equations refers to the maximum height in metres predicted by the equations, values not shown):&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q22-figure-3.png&#34; alt=&#34;A table with three columns: Col 1 (dependent value) lists ψ midday (MPa), LMA (g·m⁻²), δ13C (‰), and Pmax,m (nmol CO2·g⁻¹·s⁻¹); Col 2 gives each variable’s equation as a function of height h: ψ = -0.00973h - 0.712; LMA = 37.43·e^(0.0255h); δ13C = 0.559·e^(0.0229h) - 31; Pmax,m = -0.434h &amp;#43; 54.3; Col 3 gives each variable’s physiological limit value: -1.9, 833, -20, and 0 respectively.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q22-figure-3.png&#34; alt=&#34;A table with three columns: Col 1 (dependent value) lists ψ midday (MPa), LMA (g·m⁻²), δ13C (‰), and Pmax,m (nmol CO2·g⁻¹·s⁻¹); Col 2 gives each variable’s equation as a function of height h: ψ = -0.00973h - 0.712; LMA = 37.43·e^(0.0255h); δ13C = 0.559·e^(0.0229h) - 31; Pmax,m = -0.434h &amp;#43; 54.3; Col 3 gives each variable’s physiological limit value: -1.9, 833, -20, and 0 respectively.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Table 1. Col 1 = Dependent value. Col 2 = Equation of max height (h). Col 3 = Limit value of dependent variable.&lt;/em&gt;&lt;/p&gt;
 &lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2019-theoretical-a-q22&#34;&gt;
@@ -3144,25 +3144,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q21/&#34;&gt;← Previous: Q21&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q23/&#34;&gt;Next: Q23 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q21/&#34;&gt;← Previous: Q21&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q23/&#34;&gt;Next: Q23 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=37&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=37&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q23 - Statoliths and Root Geotropism in Microgravity</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q23/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q23/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q23/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q23/</guid>
       <description>
         
         
@@ -3173,17 +3173,17 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/5-plant-physiology/tropisms-nastic-movements/&#34;&gt;Tropisms &amp; Nastic Movements&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/5-plant-physiology/tropisms-nastic-movements/&#34;&gt;Tropisms &amp; Nastic Movements&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;Statocytes are cells in the central root cap thought to be crucial in geotropism of the plant root. These cells possess starch-filled granules, statoliths, which have a higher density than the statocyte cytoplasm, so their position in the statocyte depends on the root&amp;rsquo;s orientation relative to the direction of the gravitational force it experiences.&lt;/p&gt;
 &lt;p&gt;In order to determine the role of statoliths in geotropism and their mechanism of action, &lt;em&gt;Brassica napus&lt;/em&gt; seeds were taken to and grown on the International Space Station. Seedlings were grown either in a centrifuge that exerts 1g force (fig A) or in microgravity (negligibly small gravity, fig B). Root tissues were fixed after 40 hours of germination and statolith position determined, represented in a unified coordinate system whose origin (0;0) is the centre of the statocyte.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q23-figure-1.png&#34; alt=&#34;Two scatter-plot panels (A: 1g, B: microgravity), each with a main scatter (x-axis = statocyte transverse position µm, y-axis = statocyte longitudinal position µm) plus marginal histograms (Axis 3 = count). Panel A (1g): points tightly clustered around a mean near (0, -6.9), with a narrow, unimodal transverse histogram. Panel B (microgravity): points much more widely and evenly scattered, mean near (0, -3.7), with a flatter, more spread-out transverse histogram.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q23-figure-1.png&#34; alt=&#34;Two scatter-plot panels (A: 1g, B: microgravity), each with a main scatter (x-axis = statocyte transverse position µm, y-axis = statocyte longitudinal position µm) plus marginal histograms (Axis 3 = count). Panel A (1g): points tightly clustered around a mean near (0, -6.9), with a narrow, unimodal transverse histogram. Panel B (microgravity): points much more widely and evenly scattered, mean near (0, -3.7), with a flatter, more spread-out transverse histogram.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. Axis 1 = Statocyte transverse position (µm). Axis 2 = Statocyte longitudinal position (µm). Axis 3 = Count.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Each tile below represents the final growth direction of a root tip relative to the direction of gravity (arrow). Determine which of the diagrams depict the distribution of growing root tips in microgravity and in 1g gravitational force - there are two correct answers for each condition.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q23-figure-2.png&#34; alt=&#34;Seven labeled circular diagrams (A-G), each showing small tick-mark “growth” segments radiating from a circle in different patterns: A = a single dense, tightly-focused directional bundle (straight up); B = segments scattered fairly evenly all the way around the circle; C = two opposite dense bundles (left and right); D = segments scattered around the circle, somewhat sparser than B; E = a dense directional bundle (down) plus some scattered segments around the rest of the circle; F = a dense directional bundle (up) plus a few scattered segments; G = a strongly dominant single directional bundle (down) with almost no scatter elsewhere.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q23-figure-2.png&#34; alt=&#34;Seven labeled circular diagrams (A-G), each showing small tick-mark “growth” segments radiating from a circle in different patterns: A = a single dense, tightly-focused directional bundle (straight up); B = segments scattered fairly evenly all the way around the circle; C = two opposite dense bundles (left and right); D = segments scattered around the circle, somewhat sparser than B; E = a dense directional bundle (down) plus some scattered segments around the rest of the circle; F = a dense directional bundle (up) plus a few scattered segments; G = a strongly dominant single directional bundle (down) with almost no scatter elsewhere.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.2.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Assume statocytes are cylindrical. Statoliths can move freely across the diameter of the statocyte, but can only move 40% of the statocyte&amp;rsquo;s length. Estimate the approximate diameter and length of a statocyte, in µm.&lt;/p&gt;
@@ -3311,25 +3311,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q22/&#34;&gt;← Previous: Q22&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q24/&#34;&gt;Next: Q24 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q22/&#34;&gt;← Previous: Q22&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q24/&#34;&gt;Next: Q24 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=40&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=40&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q24 - Nitric Oxide and Guard Cell K&#43; Currents</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q24/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q24/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q24/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q24/</guid>
       <description>
         
         
@@ -3340,7 +3340,7 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/5-plant-physiology/stomatal-physiology-gas-exchange/&#34;&gt;Stomatal Physiology &amp; Gas Exchange&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/5-plant-physiology/stomatal-physiology-gas-exchange/&#34;&gt;Stomatal Physiology &amp; Gas Exchange&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;Electrophysiological measurements were carried out on bean guard cells to measure outward K+ currents and how they are modified by various factors. Assume the K+ currents shown are proportional to net changes in intracellular K+ concentration. Currents (I) across the plasma membrane at different voltages (V) were determined after each step of four different experiments:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Experiment 1&lt;/strong&gt; - Step 1: incubated in washing buffer. Step 2: exposed to exogenous nitric oxide (NO). Step 3: washed in washing buffer.&lt;/p&gt;
@@ -3348,7 +3348,7 @@
 &lt;p&gt;&lt;strong&gt;Experiment 3&lt;/strong&gt; - Step 1: incubated in washing buffer. Step 2: exposed to exogenous NO. Step 3: exposed to BAL, a reducing agent known to reduce disulphide bridges in proteins. Step 4: exposed to exogenous NO again.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Experiment 4&lt;/strong&gt; - Step 1: incubated in washing buffer. Step 2: exposed to PAO, an oxidising agent that localises to membranes within the cell. Step 3: washed in washing buffer containing 0.3mM BAL.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q24-figure-1.png&#34; alt=&#34;Four current-voltage (I-V) curve panels, one per experiment, x-axis V (mV, -100 to 50), y-axis I (nA). Experiment 1: Step 1 and Step 3 curves both rise steeply above V=0 (Step 3 highest, up to ~1.4 nA); Step 2 (NO-exposed) stays nearly flat near zero throughout. Experiment 2: same pattern - Step 1/Step 3 rise steeply, Step 2 (NO, with pH clamped to 7.4) stays flat. Experiment 3: Step 1 rises steeply; Step 2 (NO only) stays flat/suppressed; Steps 3 and 4 (after BAL, even with repeated NO exposure) rise again nearly as high as Step 1 - the suppression is reversed. Experiment 4: Step 1 rises steeply; Step 3 (PAO then BAL) also rises to a similar high level; Step 2 (PAO alone) stays flat/suppressed.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q24-figure-1.png&#34; alt=&#34;Four current-voltage (I-V) curve panels, one per experiment, x-axis V (mV, -100 to 50), y-axis I (nA). Experiment 1: Step 1 and Step 3 curves both rise steeply above V=0 (Step 3 highest, up to ~1.4 nA); Step 2 (NO-exposed) stays nearly flat near zero throughout. Experiment 2: same pattern - Step 1/Step 3 rise steeply, Step 2 (NO, with pH clamped to 7.4) stays flat. Experiment 3: Step 1 rises steeply; Step 2 (NO only) stays flat/suppressed; Steps 3 and 4 (after BAL, even with repeated NO exposure) rise again nearly as high as Step 1 - the suppression is reversed. Experiment 4: Step 1 rises steeply; Step 3 (PAO then BAL) also rises to a similar high level; Step 2 (PAO alone) stays flat/suppressed.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Based on the information above, indicate with an X if each of the following statements is true (T) or false (F).&lt;/p&gt;
@@ -3484,25 +3484,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q23/&#34;&gt;← Previous: Q23&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q25/&#34;&gt;Next: Q25 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q23/&#34;&gt;← Previous: Q23&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q25/&#34;&gt;Next: Q25 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=42&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=42&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q25 - The Luria–Delbrück Replica Plating Experiment</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q25/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q25/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q25/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q25/</guid>
       <description>
         
         
@@ -3513,12 +3513,12 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/15-evolution/genetic-drift-gene-flow-and-mutation/&#34;&gt;Genetic Drift, Gene Flow &amp; Mutation&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/15-evolution/genetic-drift-gene-flow-and-mutation/&#34;&gt;Genetic Drift, Gene Flow &amp; Mutation&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Genetics and Evolution&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;A test tube contains a suspension of bacteria that were never exposed to the antibiotic kanamycin. The bacteria were spread onto a so-called master plate, which contains nutrients for the bacteria and does not contain kanamycin. Millions of colonies (descendants of a single founder bacterium) developed on the master plate. Replicas (copies) of the master plate colonies were stamped - with a sterile velvet plate - onto three replica plates that contained growth medium supplemented with kanamycin.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q25-figure-1.png&#34; alt=&#34;Diagram showing a cylindrical velvet-covered stamp being pressed onto a “Master plate” (a petri dish with several colonies marked as dots), then the same stamp transferring an identical pattern of colonies onto three separate “Replica plates” (each also petri dishes containing kanamycin).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q25-figure-1.png&#34; alt=&#34;Diagram showing a cylindrical velvet-covered stamp being pressed onto a “Master plate” (a petri dish with several colonies marked as dots), then the same stamp transferring an identical pattern of colonies onto three separate “Replica plates” (each also petri dishes containing kanamycin).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. Legend 1 = Master plate. Legend 2 = Replica plates.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Indicate with an X if each of the following statements are true (T) or false (F).&lt;/p&gt;
@@ -3679,25 +3679,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q24/&#34;&gt;← Previous: Q24&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q26/&#34;&gt;Next: Q26 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q24/&#34;&gt;← Previous: Q24&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q26/&#34;&gt;Next: Q26 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=44&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=44&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q26 - Inheritance of Sterility in a Pedigree</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q26/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q26/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q26/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q26/</guid>
       <description>
         
         
@@ -3708,11 +3708,11 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/7-genetics/pedigree-analysis-human-genetic-disorders/&#34;&gt;Pedigree Analysis &amp; Human Genetic Disorders&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/7-genetics/pedigree-analysis-human-genetic-disorders/&#34;&gt;Pedigree Analysis &amp; Human Genetic Disorders&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;The pedigree shows inheritance of a trait in a model organism. Symbols: empty circle = healthy female; empty square = healthy male; filled (grey) circle = sterile female; filled (grey) square = sterile male.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q26-figure-1.png&#34; alt=&#34;A four-generation pedigree tree. Generation 1: one founding couple (empty circle × empty square). Their children branch into three family lines. The leftmost line’s children include two sterile (filled) sons among healthy daughters. The middle line’s descendants, across two more generations, include several sterile sons and daughters clustered together, while other branches of the same generation are entirely healthy. The rightmost line’s descendants (several more generations) are all healthy/unaffected throughout.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q26-figure-1.png&#34; alt=&#34;A four-generation pedigree tree. Generation 1: one founding couple (empty circle × empty square). Their children branch into three family lines. The leftmost line’s children include two sterile (filled) sons among healthy daughters. The middle line’s descendants, across two more generations, include several sterile sons and daughters clustered together, while other branches of the same generation are entirely healthy. The rightmost line’s descendants (several more generations) are all healthy/unaffected throughout.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The change giving rise to sterility can be explained either through a loss-of-function or a gain-of-function mutation of the affected gene.&lt;/p&gt;
@@ -3838,25 +3838,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q25/&#34;&gt;← Previous: Q25&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q27/&#34;&gt;Next: Q27 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q25/&#34;&gt;← Previous: Q25&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q27/&#34;&gt;Next: Q27 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=45&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=45&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q27 - Baldness, Rh Factor, and Genetic Counselling</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q27/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q27/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q27/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q27/</guid>
       <description>
         
         
@@ -3867,7 +3867,7 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/7-genetics/linkage-recombination-genetic-mapping/&#34;&gt;Linkage, Recombination &amp; Genetic Mapping&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/7-genetics/linkage-recombination-genetic-mapping/&#34;&gt;Linkage, Recombination &amp; Genetic Mapping&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;Lily and Jacob visit a genetic counselling office where the doctor gathers the data summarized below.&lt;/p&gt;
 &lt;table&gt;
@@ -4077,25 +4077,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q26/&#34;&gt;← Previous: Q26&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q28/&#34;&gt;Next: Q28 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q26/&#34;&gt;← Previous: Q26&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q28/&#34;&gt;Next: Q28 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=46&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=46&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q28 - How Long Until a Random Sequence Repeats in the Genome?</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q28/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q28/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q28/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q28/</guid>
       <description>
         
         
@@ -4106,7 +4106,7 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/1-cell-molecular/nucleotide-nucleic-acid-chemistry/&#34;&gt;Nucleotide &amp; Nucleic Acid Chemistry&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/nucleotide-nucleic-acid-chemistry/&#34;&gt;Nucleotide &amp; Nucleic Acid Chemistry&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;The human genome is composed of about 3×10⁹ base pairs. Assume that the distribution of base pairs is random. How long should a random sequence be to appear once in the human genome, on average?&lt;/p&gt;
 &lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2019-theoretical-a-q28&#34;&gt;
@@ -4216,25 +4216,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q27/&#34;&gt;← Previous: Q27&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q29/&#34;&gt;Next: Q29 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q27/&#34;&gt;← Previous: Q27&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q29/&#34;&gt;Next: Q29 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=47&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=47&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q29 - Reverse-Engineering a Peptide-Shortening Mutation</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q29/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q29/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q29/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q29/</guid>
       <description>
         
         
@@ -4245,7 +4245,7 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/1-cell-molecular/translation-genetic-code/&#34;&gt;Translation &amp; the Genetic Code&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/translation-genetic-code/&#34;&gt;Translation &amp; the Genetic Code&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;The genetic code can be used to reverse engineer the genetic information coding for peptides of a desired amino acid sequence. Your task is to design possible nucleotide substitution mutations that change the DNA coding for the peptide comprising the M-A-R-C-E-L-L-A amino acid sequence into one coding for M-A-R-C-E-L.&lt;/p&gt;
 &lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2019-theoretical-a-q29&#34;&gt;
@@ -4363,25 +4363,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q28/&#34;&gt;← Previous: Q28&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q30/&#34;&gt;Next: Q30 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q28/&#34;&gt;← Previous: Q28&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q30/&#34;&gt;Next: Q30 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=48&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=48&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q3 - GPCR Signalling and a Toxin Acting on the Gs Cycle</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q3/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q3/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q3/</guid>
       <description>
         
         
@@ -4392,17 +4392,17 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/1-cell-molecular/cell-signaling-communication/&#34;&gt;Cell Signaling &amp; Communication&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/cell-signaling-communication/&#34;&gt;Cell Signaling &amp; Communication&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;G protein-coupled receptors (GPCRs) interact with G proteins that subsequently affect cell function through the generation of second messengers. Cyclic AMP (cAMP) generated by adenylyl cyclase controls cell functions via activation of protein kinases. GPCRs may either activate or inhibit the cyclase through the G proteins Gs and Gi, respectively. The difference between Gs and Gi resides in the α subunit, which binds and hydrolyses GTP. The Gs protein cycle is illustrated below.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q3-figure-1.png&#34; alt=&#34;The Gs G-protein cycle: (1) GTP displaces GDP on the receptor-bound Gs heterotrimer; (2) the activated receptor dissociates; (3) GTP-bound αs splits from βγ and activates adenylyl cyclase (AC), converting ATP to cAMP; (4) αs hydrolyses GTP to GDP &amp;#43; Pi, and βγ/αs-GDP reassociate, resetting the cycle.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q3-figure-1.png&#34; alt=&#34;The Gs G-protein cycle: (1) GTP displaces GDP on the receptor-bound Gs heterotrimer; (2) the activated receptor dissociates; (3) GTP-bound αs splits from βγ and activates adenylyl cyclase (AC), converting ATP to cAMP; (4) αs hydrolyses GTP to GDP &amp;#43; Pi, and βγ/αs-GDP reassociate, resetting the cycle.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;A lab is working on a pair of newly identified GPCRs, &amp;ldquo;GPCR-A&amp;rdquo; and &amp;ldquo;GPCR-B&amp;rdquo;. Each binds the same small ligand with the same affinity but activates different G-proteins that act on adenylyl cyclase. When activated, GPCR-A causes an increase in adenylyl cyclase activity, while GPCR-B causes a decrease in adenylyl cyclase activity. They have a cell line that expresses both GPCR-A, GPCR-B, the corresponding G-proteins, and adenylyl cyclase. There is a basal level of adenylyl cyclase activity that produces a baseline cAMP concentration.&lt;/p&gt;
 &lt;p&gt;A member of the lab studying a pathogenic bacterium has discovered that it secretes a toxin that interferes with the mentioned signalling pathway. To determine how this toxin acts, she did an experiment in which she looked at intracellular cAMP levels in untreated and toxin treated cells (the original ligand of the receptors was not added in either of the experiments).&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q3-figure-2.png&#34; alt=&#34;Bar chart: intracellular cAMP concentration, untreated (Legend 1, low, ~1.3 pmol/mL) vs. toxin-treated (Legend 2, high, ~19 pmol/mL) - no ligand added in either condition.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q3-figure-2.png&#34; alt=&#34;Bar chart: intracellular cAMP concentration, untreated (Legend 1, low, ~1.3 pmol/mL) vs. toxin-treated (Legend 2, high, ~19 pmol/mL) - no ligand added in either condition.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.2. Axis = cAMP concentration (pmol/mL). Legend 1 = Toxin −. Legend 2 = Toxin +.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Indicate with an &lt;strong&gt;X&lt;/strong&gt; whether each of the following mutations increase (A), leave not changed (B), or decrease (C) the intracellular levels of cAMP upon ligand addition, in the absence of the toxin. Remember, both GPCR-A and GPCR-B bind the same ligand! (Q3.1–Q3.6)&lt;/p&gt;
@@ -4601,25 +4601,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q2/&#34;&gt;← Previous: Q2&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q4/&#34;&gt;Next: Q4 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q2/&#34;&gt;← Previous: Q2&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q4/&#34;&gt;Next: Q4 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=8&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=8&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q30 - An X-Linked, Epigenetically-Acting Eye-Colour Gene</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q30/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q30/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q30/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q30/</guid>
       <description>
         
         
@@ -4630,7 +4630,7 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/7-genetics/mendelian-inheritance-probability/&#34;&gt;Mendel&#39;s Laws &amp; Probability in Genetics&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/7-genetics/mendelian-inheritance-probability/&#34;&gt;Mendel&#39;s Laws &amp; Probability in Genetics&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;Ec+ is an X-linked gene found in a newly discovered mammalian species. Females homozygous for the mutant allele (Ec) have green eyes, while a single copy of Ec+ is sufficient to result in the wild-type brown eyes.&lt;/p&gt;
 &lt;p&gt;Ec codes for an enzyme which catalyses the chemical reaction converting an inert substrate, commonly found throughout the body, into molecule X, which diffuses freely in the animal and can be detected in bodily secretions. Molecule X is a very potent epigenetic regulator, such that a few particles are sufficient to induce life-long effects on the eye phenotype.&lt;/p&gt;
@@ -4768,25 +4768,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q29/&#34;&gt;← Previous: Q29&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q31/&#34;&gt;Next: Q31 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q29/&#34;&gt;← Previous: Q29&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q31/&#34;&gt;Next: Q31 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=49&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=49&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q31 - Smallmouth Bass Removal and Population Structure</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q31/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q31/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q31/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q31/</guid>
       <description>
         
         
@@ -4797,12 +4797,12 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/8-ecology/&#34;&gt;Ecology&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/8-ecology/&#34;&gt;Ecology&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Ecology&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The smallmouth bass (&lt;em&gt;Micropterus dolomieu&lt;/em&gt;) is an introduced species in the area examined in the following experiment. To protect native fish species, a smallmouth bass removal program was initiated in Little Moose Lake in 2000 (indicated by the vertical dashed line). It continued until 2007. A research group examined the effect of the removal on the smallmouth bass population. They found that while the total biomass of the population decreased during the program, the population size increased. To determine the cause, they subdivided the population into three groups based on individual size: yearlings (&amp;lt;100mm, panel a), juveniles (100-200mm, panel b) and adults (&amp;gt;200mm, panel c). They collected two samples each year (spring and fall).&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q31-figure-1.png&#34; alt=&#34;Three stacked line-graph panels (a: yearlings, b: juveniles, c: adults) sharing the x-axis (year, 1998-2007) with a vertical dashed line at 2000 marking the start of the removal program. Solid lines = spring samplings, dashed lines = fall samplings, y-axis = catch per unit effort (CPUE). Panel (a) yearlings: relatively low and flat before 2000, becomes markedly higher and more variable (oscillating) after 2000, generally increasing over the program. Panel (b) juveniles: modest, roughly flat/slightly increasing throughout, with fall values pulling higher than spring toward the end. Panel (c) adults: starts moderate, peaks around 1999, then declines sharply and steadily throughout the removal program to a low, flat level by 2007.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q31-figure-1.png&#34; alt=&#34;Three stacked line-graph panels (a: yearlings, b: juveniles, c: adults) sharing the x-axis (year, 1998-2007) with a vertical dashed line at 2000 marking the start of the removal program. Solid lines = spring samplings, dashed lines = fall samplings, y-axis = catch per unit effort (CPUE). Panel (a) yearlings: relatively low and flat before 2000, becomes markedly higher and more variable (oscillating) after 2000, generally increasing over the program. Panel (b) juveniles: modest, roughly flat/slightly increasing throughout, with fall values pulling higher than spring toward the end. Panel (c) adults: starts moderate, peaks around 1999, then declines sharply and steadily throughout the removal program to a low, flat level by 2007.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. The change in abundance of the subpopulations (y-axis) over time (x-axis). Solid lines = spring samplings, dashed lines = fall samplings. Axis 1 = Year. Axis 2 = Catch per unit effort (CPUE).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Which of the following models can possibly describe how the removal of individuals affected the population? Indicate with an X if each of the following models can (T) or cannot (F) describe the changes.&lt;/p&gt;
@@ -4946,25 +4946,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q30/&#34;&gt;← Previous: Q30&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q32/&#34;&gt;Next: Q32 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q30/&#34;&gt;← Previous: Q30&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q32/&#34;&gt;Next: Q32 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=50&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=50&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q32 - The SIR Model of Parasite Population Dynamics</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q32/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q32/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q32/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q32/</guid>
       <description>
         
         
@@ -4986,17 +4986,17 @@
 &lt;/script&gt;
 &lt;/p&gt;
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/8-ecology/&#34;&gt;Ecology&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/8-ecology/&#34;&gt;Ecology&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;The population dynamics of parasite species is complex, because the size of the parasite and host populations affect each other. One popular model is the SIR model (Susceptible – Infected – Recovered). You can get the changes in host-type numbers by multiplying the original host number by the factor above the arrow - for example, the number of hosts recovering in a given time is $\gamma \cdot I$.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q32-figure-1.png&#34; alt=&#34;Flow diagram: three boxes S (susceptible), I (infected), R (recovered), connected left to right by arrows labeled β·I (S→I) and γ (I→R). A looping arrow labeled b feeds new births back into S from all three compartments. Downward arrows from each box show death: μ from S, μ&amp;#43;α from I, μ from R.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q32-figure-1.png&#34; alt=&#34;Flow diagram: three boxes S (susceptible), I (infected), R (recovered), connected left to right by arrows labeled β·I (S→I) and γ (I→R). A looping arrow labeled b feeds new births back into S from all three compartments. Downward arrows from each box show death: μ from S, μ&amp;#43;α from I, μ from R.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. The SIR model. S = susceptible hosts. I = infected and infectious hosts. R = recovered/immune hosts. N = total host population = S+I+R. b = per capita birth rate. β = transmission rate (contact rate × infectiousness). μ = mortality rate without disease. α = mortality rate due to disease. γ = host recovery rate from infection.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Indicate with an X if each of the following statements are true (T) or false (F).&lt;/p&gt;
 &lt;p&gt;Give the relationship between the ratio of infected (I) to the sum of susceptible and infected (S+I) individuals, and the number of new infections in a given time. Draw the curve of the equation in the coordinate system below (transmission rate β is constant).&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q32-figure-2.png&#34; alt=&#34;A blank coordinate system with y-axis “Number of new infections” (with a “Max.” tick mark shown) and x-axis “I/(S&amp;#43;I)” ranging from 0 to 1, ready for a curve to be sketched.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q32-figure-2.png&#34; alt=&#34;A blank coordinate system with y-axis “Number of new infections” (with a “Max.” tick mark shown) and x-axis “I/(S&amp;#43;I)” ranging from 0 to 1, ready for a curve to be sketched.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.2. The number of new infections in a given time as a function of the ratio of infected hosts (I) to the sum of susceptible and infected hosts (S+I). Max. = the maximal value of the new infections. Axis = Number of new infections.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Many parasites cause diseases with a high mortality rate (α), despite the death of the host being evidently disadvantageous for the parasite. Indicate with an X if each of the following statements are true (T) or false (F).&lt;/p&gt;
@@ -5185,25 +5185,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q31/&#34;&gt;← Previous: Q31&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q33/&#34;&gt;Next: Q33 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q31/&#34;&gt;← Previous: Q31&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q33/&#34;&gt;Next: Q33 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=51&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=51&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q33 - Tracing Indirect Effects Through a Food Web</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q33/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q33/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q33/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q33/</guid>
       <description>
         
         
@@ -5214,11 +5214,11 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/8-ecology/&#34;&gt;Ecology&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/8-ecology/&#34;&gt;Ecology&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;The scheme below shows a model of interactions between populations of an ecosystem. Capital letters indicate the populations. Two-ended arrows (↔) indicate whether there is a direct interaction between two populations; the interaction can be beneficial (+), harmful (−), or neutral (0) for each of the populations, marked at the corresponding end of the arrow.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q33-figure-1.png&#34; alt=&#34;Network diagram of seven boxes (A-G) connected by labeled double-headed arrows: A↔B (&amp;#43; near A, − near B), A↔E (&amp;#43; near A, − near E), B↔E (&amp;#43; near B, − near E), C↔E (&amp;#43; near C, − near E), C↔D (0 at both ends), D↔F (&amp;#43; near D, − near F), D↔G (&amp;#43; near D, − near G), F↔G (− at both ends).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q33-figure-1.png&#34; alt=&#34;Network diagram of seven boxes (A-G) connected by labeled double-headed arrows: A↔B (&amp;#43; near A, − near B), A↔E (&amp;#43; near A, − near E), B↔E (&amp;#43; near B, − near E), C↔E (&amp;#43; near C, − near E), C↔D (0 at both ends), D↔F (&amp;#43; near D, − near F), D↔G (&amp;#43; near D, − near G), F↔G (− at both ends).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Determine how the change in size of one population affects (both directly and indirectly) the size of other populations in the ecosystem.&lt;/p&gt;
@@ -5388,25 +5388,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q32/&#34;&gt;← Previous: Q32&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q34/&#34;&gt;Next: Q34 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q32/&#34;&gt;← Previous: Q32&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q34/&#34;&gt;Next: Q34 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=53&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=53&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q34 - Assembling a Bird Phylogenetic Tree from Fragments</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q34/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q34/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q34/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q34/</guid>
       <description>
         
         
@@ -5417,12 +5417,12 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/4-biosystematics/phylogenetic-trees-cladistics/&#34;&gt;Phylogenetic Trees &amp; Cladistics&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/4-biosystematics/phylogenetic-trees-cladistics/&#34;&gt;Phylogenetic Trees &amp; Cladistics&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Biosystematics&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;In this task you get a few parts of a phylogenetic tree of birds, and you should assemble the full tree based on them.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q34-figure-1.png&#34; alt=&#34;Four small cladogram fragments, each showing 5 of the 10 named bird species clustered in a different partial arrangement, illustrating overlapping subsets of the true relationships: (top-left) A. crecca separate, then P. cristatus&amp;#43;S. borin paired, joined with T. totanus&amp;#43;P. carbo paired; (top-right) A. cinerea separate, then C. monedula joined with a T. pilaris&amp;#43;(P. cristatus&amp;#43;S. borin) group; (bottom-left) C. monedula separate, then A. cinerea&amp;#43;P. carbo paired, joined with C. crex&amp;#43;L. argentatus paired; (bottom-right) T. pilaris&amp;#43;S. borin paired, joined with C. crex&amp;#43;(T. totanus&amp;#43;L. argentatus).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q34-figure-1.png&#34; alt=&#34;Four small cladogram fragments, each showing 5 of the 10 named bird species clustered in a different partial arrangement, illustrating overlapping subsets of the true relationships: (top-left) A. crecca separate, then P. cristatus&amp;#43;S. borin paired, joined with T. totanus&amp;#43;P. carbo paired; (top-right) A. cinerea separate, then C. monedula joined with a T. pilaris&amp;#43;(P. cristatus&amp;#43;S. borin) group; (bottom-left) C. monedula separate, then A. cinerea&amp;#43;P. carbo paired, joined with C. crex&amp;#43;L. argentatus paired; (bottom-right) T. pilaris&amp;#43;S. borin paired, joined with C. crex&amp;#43;(T. totanus&amp;#43;L. argentatus).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The species to place in the full phylogenetic tree, indicated by letters:&lt;/p&gt;
@@ -5440,7 +5440,7 @@
 &lt;/ul&gt;
 &lt;p&gt;You should find the place of each species in the tree below. Match the letter of the species (A-J) with the Roman numerals (I.-VII.) of the positions in the tree. One numeral can belong to more than one letter.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q34-figure-2.png&#34; alt=&#34;A skeleton phylogenetic tree with seven labeled terminal/grouped positions (I. through VII.) arranged hierarchically: a shallow pair of “I.” tips, joined with “II.”, joined with a pair of “III.” tips (deeper split), forming the upper major clade; separately, “IV.” joins with “V.”, which joins with a pair of “VI.” tips, forming the lower major clade; “VII.” branches off earliest, separate from both major clades.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q34-figure-2.png&#34; alt=&#34;A skeleton phylogenetic tree with seven labeled terminal/grouped positions (I. through VII.) arranged hierarchically: a shallow pair of “I.” tips, joined with “II.”, joined with a pair of “III.” tips (deeper split), forming the upper major clade; separately, “IV.” joins with “V.”, which joins with a pair of “VI.” tips, forming the lower major clade; “VII.” branches off earliest, separate from both major clades.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.2. Target skeleton tree with positions I–VII to be filled in with species letters A–J.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Indicate your answer by putting an X in the appropriate box on the answer sheet.&lt;/p&gt;
@@ -5674,25 +5674,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q33/&#34;&gt;← Previous: Q33&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q35/&#34;&gt;Next: Q35 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q33/&#34;&gt;← Previous: Q33&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q35/&#34;&gt;Next: Q35 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=54&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=54&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q35 - A New Gall Wasp Genus: Molecular Systematics</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q35/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q35/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q35/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q35/</guid>
       <description>
         
         
@@ -5703,11 +5703,11 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/4-biosystematics/molecular-systematics/&#34;&gt;Molecular Systematics&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/4-biosystematics/molecular-systematics/&#34;&gt;Molecular Systematics&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;A research group collected and examined gall wasp (Cynipidae) specimens. By examining morphological traits, they found a new genus (&lt;em&gt;Lithosaphonecrus&lt;/em&gt;) with four species (&lt;em&gt;L. formosanus&lt;/em&gt;, &lt;em&gt;L. huisuni&lt;/em&gt;, &lt;em&gt;L. dakengi&lt;/em&gt;, and &lt;em&gt;L. yunnani&lt;/em&gt;). To confirm these results and determine their phylogenetic relationship to other closely related gall wasp species, they compared the sequence of two DNA fragments (COI and 28S D2) of each species and calculated the pairwise distance (p-distance) between each species. The p-distance of two species is the number of nucleotide sites at which homologous sequences of the two species differ, divided by the total number of nucleotides compared.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q35-figure-1.png&#34; alt=&#34;A p-distance matrix table with two sections (COI and 28S D2), each comparing L. huisuni, L. yunnani, L. dakengi, and L. formosanus against each other and against four other related gall wasp species/genera (Sapho. shirakashii, Sapho. undulates, Sapho. gallaepomiformis, Sapho. conatus, Ufo nipponicus). Within the four Lithosaphonecrus species, the smallest p-distance in both COI (0.0770) and 28S D2 (0.0041) is between L. huisuni and L. yunnani; all four species have p-distances of 0.10-0.20 (COI) and 0.004-0.02 (28S D2) to each other, versus much larger, roughly-uniform distances (0.14-0.20 COI, 0.05-0.07 28S D2) to all of the outgroup species/genera.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q35-figure-1.png&#34; alt=&#34;A p-distance matrix table with two sections (COI and 28S D2), each comparing L. huisuni, L. yunnani, L. dakengi, and L. formosanus against each other and against four other related gall wasp species/genera (Sapho. shirakashii, Sapho. undulates, Sapho. gallaepomiformis, Sapho. conatus, Ufo nipponicus). Within the four Lithosaphonecrus species, the smallest p-distance in both COI (0.0770) and 28S D2 (0.0041) is between L. huisuni and L. yunnani; all four species have p-distances of 0.10-0.20 (COI) and 0.004-0.02 (28S D2) to each other, versus much larger, roughly-uniform distances (0.14-0.20 COI, 0.05-0.07 28S D2) to all of the outgroup species/genera.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Table 1. p-distances among the two sequences (COI and 28S D2) of the species.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Indicate with an X if each of the following statements is true (T) or false (F).&lt;/p&gt;
@@ -5843,25 +5843,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q34/&#34;&gt;← Previous: Q34&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q36/&#34;&gt;Next: Q36 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q34/&#34;&gt;← Previous: Q34&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q36/&#34;&gt;Next: Q36 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=56&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=56&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q36 - Reconciling Two Independent Legume Phylogenies</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q36/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q36/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q36/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q36/</guid>
       <description>
         
         
@@ -5872,17 +5872,17 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/4-biosystematics/phylogenetic-trees-cladistics/&#34;&gt;Phylogenetic Trees &amp; Cladistics&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/4-biosystematics/phylogenetic-trees-cladistics/&#34;&gt;Phylogenetic Trees &amp; Cladistics&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;One of the main purposes of phylogenetics is to construct trees that represent the evolutionary relationships of taxa. A major challenge is combining results from independent researchers in this field. Below are two phylogenetic trees of legume genera from two independent research groups.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q36-figure-1.png&#34; alt=&#34;Two independently-constructed cladograms of legume genera. Fig.1 (left): 17 genera including Galega, Vicia, Pisum, Melilotus, Trifolium, Medicago, Lotus, Anthyllis, Sesbania, Phaseolus, Vigna, Glycine, Cajanus, Lupinus, Leucaena, and Parasponia (an outgroup from family Ulmaceae), arranged with Melilotus/Trifolium/Medicago grouped together near Vicia/Pisum. Fig.2 (right): 20 genera including Cercis, Lupinus, Arachis, Cajanus, Glycine, Vigna, Phaseolus, Lotus, Astragalus, Galega, Cicer, Ononis, Medicago, Trigonella, Melilotus, Trifolium, Pisum, Lathyrus, Vicia, and Lens, arranged with Medicago/Melilotus/Trigonella/Ononis/Cicer in one subclade and Trifolium/Pisum/Lathyrus/Vicia/Lens in a separate, different subclade.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q36-figure-1.png&#34; alt=&#34;Two independently-constructed cladograms of legume genera. Fig.1 (left): 17 genera including Galega, Vicia, Pisum, Melilotus, Trifolium, Medicago, Lotus, Anthyllis, Sesbania, Phaseolus, Vigna, Glycine, Cajanus, Lupinus, Leucaena, and Parasponia (an outgroup from family Ulmaceae), arranged with Melilotus/Trifolium/Medicago grouped together near Vicia/Pisum. Fig.2 (right): 20 genera including Cercis, Lupinus, Arachis, Cajanus, Glycine, Vigna, Phaseolus, Lotus, Astragalus, Galega, Cicer, Ononis, Medicago, Trigonella, Melilotus, Trifolium, Pisum, Lathyrus, Vicia, and Lens, arranged with Medicago/Melilotus/Trigonella/Ononis/Cicer in one subclade and Trifolium/Pisum/Lathyrus/Vicia/Lens in a separate, different subclade.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1 &amp;amp; Fig.2. Phylogenetic trees of legume genera from two independent studies.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Q.36.1&lt;/strong&gt;: Is there any genus with conflicting results from the phylogenetic trees above?&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Q.36.2&lt;/strong&gt;: This is the combined tree from the two trees above. Some missing genera are indicated with letters (A, B, etc.) - your task is to find which genus belongs to which letter. A letter can symbolize more than one genus; if a genus doesn&amp;rsquo;t occur in the tree at all, indicate that with &amp;ldquo;Q&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q36-figure-2.png&#34; alt=&#34;A combined/consensus cladogram with several tips replaced by placeholder letters: a “Sesbania &amp;#43; A” pair; a separate “Galega” branch; a “Medicago &amp;#43; Melilotus &amp;#43; B” group; a “Lens &amp;#43; C &amp;#43; Pisum” group, together with “D” forming a larger clade; a “Phaseolus &amp;#43; E” pair; a separate “Lupinus” branch; and a separate “F” branch, all joined into one overall tree.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q36-figure-2.png&#34; alt=&#34;A combined/consensus cladogram with several tips replaced by placeholder letters: a “Sesbania &amp;#43; A” pair; a separate “Galega” branch; a “Medicago &amp;#43; Melilotus &amp;#43; B” group; a “Lens &amp;#43; C &amp;#43; Pisum” group, together with “D” forming a larger clade; a “Phaseolus &amp;#43; E” pair; a separate “Lupinus” branch; and a separate “F” branch, all joined into one overall tree.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.3. The combined tree, with some genera replaced by placeholder letters A–F (Q = not present in this tree).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Indicate the appropriate genus with an X in the appropriate box on the answer sheet.&lt;/p&gt;
@@ -6205,25 +6205,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q35/&#34;&gt;← Previous: Q35&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q37/&#34;&gt;Next: Q37 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q35/&#34;&gt;← Previous: Q35&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q37/&#34;&gt;Next: Q37 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=57&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=57&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q37 - Why Bats Collide With Smooth Surfaces</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q37/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q37/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q37/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q37/</guid>
       <description>
         
         
@@ -6234,17 +6234,17 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/9-ethology/animal-communication/&#34;&gt;Animal Communication&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/9-ethology/animal-communication/&#34;&gt;Animal Communication&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Ethology&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Twenty-eight rare and protected species of bat live in Hungary. Bats sense their environments using echolocation, which is disrupted by different surfaces. A smooth metal plate was attached to the wall as shown below. Bats were recorded attempting to drink from, or colliding with, the floor, walls, or the plate on the wall.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q37-figure-1.png&#34; alt=&#34;Diagram of an experimental corridor corner: a smooth grey metal plate mounted vertically on one wall (dimensions 2m × 1.2m, positioned 1.2m from the floor), with a bat approaching, and high-speed cameras (marked “L1”) positioned to record collisions/drinking attempts at floor level.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q37-figure-1.png&#34; alt=&#34;Diagram of an experimental corridor corner: a smooth grey metal plate mounted vertically on one wall (dimensions 2m × 1.2m, positioned 1.2m from the floor), with a bat approaching, and high-speed cameras (marked “L1”) positioned to record collisions/drinking attempts at floor level.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. Legend 1 = High-speed cameras.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;In a second experiment, the metal plate was instead placed on the floor, and bats were recorded attempting to drink from, or colliding with, the wall, floor, or the plate on the floor.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q37-figure-2.png&#34; alt=&#34;Two box-plot panels (Title 1: horizontally placed metal plate; Title 2: vertically placed metal plate) each with four categories on the x-axis (L1 = drink from ground, L2 = drink from plate, L3 = collision with wall, L4 = collision with plate) and y-axis = percentage of occurrence. Title 1 (horizontal plate): L1, L3, L4 all near zero; L2 (drink from plate) shows a large box spanning roughly 0-47% with a median around 22% and a long upper whisker to ~68% - bats frequently attempted to drink from the horizontal plate. Title 2 (vertical plate): L1, L2, L3 all near zero; L4 (collision with plate) shows a moderate box spanning roughly 6-20% with a median around 12% - bats frequently collided with the vertical plate instead.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q37-figure-2.png&#34; alt=&#34;Two box-plot panels (Title 1: horizontally placed metal plate; Title 2: vertically placed metal plate) each with four categories on the x-axis (L1 = drink from ground, L2 = drink from plate, L3 = collision with wall, L4 = collision with plate) and y-axis = percentage of occurrence. Title 1 (horizontal plate): L1, L3, L4 all near zero; L2 (drink from plate) shows a large box spanning roughly 0-47% with a median around 22% and a long upper whisker to ~68% - bats frequently attempted to drink from the horizontal plate. Title 2 (vertical plate): L1, L2, L3 all near zero; L4 (collision with plate) shows a moderate box spanning roughly 6-20% with a median around 12% - bats frequently collided with the vertical plate instead.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.2. Percentage of drinking attempts and collision events in box plots. Values were calculated per individual relative to its total number of passes through the corridor. Title 1 = Horizontally placed metal plate. Title 2 = Vertically placed metal plate. Axis = Percentage of occurrence. L1 = drink from ground. L2 = drink from plate. L3 = collision with wall. L4 = collision with plate.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Why do bats react differently to smooth surfaces than to others? Indicate with an X if each of the following statements is true (T) or false (F).&lt;/p&gt;
@@ -6413,25 +6413,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q36/&#34;&gt;← Previous: Q36&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q38/&#34;&gt;Next: Q38 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q36/&#34;&gt;← Previous: Q36&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q38/&#34;&gt;Next: Q38 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=59&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=59&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q38 - Attractant vs. Repellent Pheromones in Pharaoh Ants</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q38/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q38/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q38/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q38/</guid>
       <description>
         
         
@@ -6442,7 +6442,7 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/9-ethology/animal-communication/&#34;&gt;Animal Communication&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/9-ethology/animal-communication/&#34;&gt;Animal Communication&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;The following experiment was used to determine whether Pharaoh ants (&lt;em&gt;Monomorium pharaonis&lt;/em&gt;) use attractive or repulsive chemical signals to mark their foraging routes. The researchers used two ant colonies.&lt;/p&gt;
 &lt;p&gt;The first colony was used as the trail-laying colony in a paper Y-bifurcation apparatus (left side), where they were able to leave pheromone trails. The researchers put a feeder with sucrose at the end of one branch (feeder branch) and left the other branch&amp;rsquo;s end empty (non-feeder branch). After foraging, they removed five sections (S, Fb, Nb, Fe, Ne) and a control from the apparatus and put them, alternately, in different unbranched apparatuses (right side):&lt;/p&gt;
@@ -6455,12 +6455,12 @@
 &lt;li&gt;&lt;strong&gt;Control&lt;/strong&gt;: no ant trail pheromones used&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q38-figure-1.png&#34; alt=&#34;Diagram of the Y-bifurcation apparatus (left, “Title 1”) with sections Ne and Fe marked near the fork tips, Nb and Fb marked just below the fork, and S marked at the base, plus a small “control” section shown separately; and an unbranched test apparatus (right, “Title 2”) with a single test section placed midway along a 180mm tube (90mm marked on each side), 10mm wide.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q38-figure-1.png&#34; alt=&#34;Diagram of the Y-bifurcation apparatus (left, “Title 1”) with sections Ne and Fe marked near the fork tips, Nb and Fb marked just below the fork, and S marked at the base, plus a small “control” section shown separately; and an unbranched test apparatus (right, “Title 2”) with a single test section placed midway along a 180mm tube (90mm marked on each side), 10mm wide.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. Experimental setup. Title 1 = Trail sections. Title 2 = Test position of section. L1 = feeder. L2 = From nest.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The researchers tested each section with 50 ants from another colony, and counted how many times the ants made U-turns.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q38-figure-2.png&#34; alt=&#34;Bar chart showing number of U-turns relative to control for each section: S is strongly negative (-14, P&amp;lt;0.001); Fb is mildly negative (-7, P&amp;lt;0.05); Fe is strongly negative (-15.5, P&amp;lt;0.001); Nb is strongly positive (&amp;#43;16, P&amp;lt;0.001); Ne is near zero, not significant (NS).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q38-figure-2.png&#34; alt=&#34;Bar chart showing number of U-turns relative to control for each section: S is strongly negative (-14, P&amp;lt;0.001); Fb is mildly negative (-7, P&amp;lt;0.05); Fe is strongly negative (-15.5, P&amp;lt;0.001); Nb is strongly positive (&amp;#43;16, P&amp;lt;0.001); Ne is near zero, not significant (NS).&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.2. The result of the experiment: number of U-turns compared to control. P&amp;lt;0.001 and P&amp;lt;0.05 indicate the significance level of the difference compared to control (the lower the value, the stronger the significance). NS means no significant difference compared to control. Axis = Number of U-turns ants made relative to control.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Based on the significant results of the experiment, determine which type of pheromone the ants used in each of the five sections.&lt;/p&gt;
@@ -6614,25 +6614,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q37/&#34;&gt;← Previous: Q37&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/&#34;&gt;Back to Theoretical A →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q37/&#34;&gt;← Previous: Q37&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/&#34;&gt;Back to Theoretical A →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=61&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=61&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q4 - CDK Knockout and Liver Regeneration</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q4/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q4/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q4/</guid>
       <description>
         
         
@@ -6643,11 +6643,11 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/1-cell-molecular/cell-cycle-mitosis-meiosis/&#34;&gt;Cell Cycle, Mitosis &amp; Meiosis&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/cell-cycle-mitosis-meiosis/&#34;&gt;Cell Cycle, Mitosis &amp; Meiosis&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;CDK is a family of cyclin dependent kinases which drive the cell cycle. A portion of the liver was removed in WT mice, or in livers which had a particular &lt;em&gt;CDK&lt;/em&gt; gene knocked-out. Mice were allowed to regenerate, then their regenerated livers were weighed, measured and stained. Individual liver cells were removed and stained for total DNA content, or for newly synthesised DNA (Figure 1).&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q4-figure-1.png&#34; alt=&#34;Five-panel figure: (top) photos of a regenerated wild-type liver vs. a CDK-/- liver, similar size; (scatter plot) liver mass at 4 and 21 days, WT and CDK-/- overlapping; (histology) H&amp;E-stained hepatocyte nuclei, CDK-/- nuclei visibly larger; (DNA-content histogram) WT shows one main peak, CDK-/- shows several higher-ploidy peaks; (flow cytometry) newly-synthesised DNA vs. total DNA content, WT and CDK-/- patterns similar.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q4-figure-1.png&#34; alt=&#34;Five-panel figure: (top) photos of a regenerated wild-type liver vs. a CDK-/- liver, similar size; (scatter plot) liver mass at 4 and 21 days, WT and CDK-/- overlapping; (histology) H&amp;E-stained hepatocyte nuclei, CDK-/- nuclei visibly larger; (DNA-content histogram) WT shows one main peak, CDK-/- shows several higher-ploidy peaks; (flow cytometry) newly-synthesised DNA vs. total DNA content, WT and CDK-/- patterns similar.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. Axis 1 = Liver mass. Axis 2 = DNA content. Axis 3 = # of cells. Axis 4 = DNA content. Axis 5 = Newly synthesised DNA. Legend 1 = 4 days. Legend 2 = 21 days (left side = wild-type, right side = CDK-/-).&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Indicate with an &lt;strong&gt;X&lt;/strong&gt; whether you would expect the number or amount of each of the following structures to increase (A), not change (B), or decrease (C) in &lt;em&gt;CDK&lt;/em&gt; knock-out livers versus wild-type ones.&lt;/p&gt;
@@ -6796,25 +6796,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q3/&#34;&gt;← Previous: Q3&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q5/&#34;&gt;Next: Q5 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q3/&#34;&gt;← Previous: Q3&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q5/&#34;&gt;Next: Q5 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=10&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=10&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q5 - UCP Family and Non-Shivering Thermogenesis</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q5/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q5/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q5/</guid>
       <description>
         
         
@@ -6825,17 +6825,17 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/3-animal-physiology/comparative-thermoregulation/&#34;&gt;Comparative Thermoregulation&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/3-animal-physiology/comparative-thermoregulation/&#34;&gt;Comparative Thermoregulation&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;One way of heat production is non-shivering thermogenesis, mediated by norepinephrine via upregulation of mitochondrial uncoupling channel proteins (UCP) in brown adipose tissue (BAT). UCP increases the H⁺ conductance of the inner mitochondrial membrane to dissipate the mitochondrial H⁺ gradient and convert the energy of substrate oxidation into heat. To identify the member(s) of the UCP family responsible for the process, we carried out two experiments.&lt;/p&gt;
 &lt;p&gt;Figure 1 compares relative effects of acclimation to a cool environment for mice (from thermoneutrality at 30°C to the relative cold of 18°C) on the mRNA levels of different members of the uncoupling protein family in BAT.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q5-figure-1.png&#34; alt=&#34;Line graph: UCP1, UCP2 and UCP3 mRNA (% of 30°C level) at acclimation temperatures 18°C, 24°C and 30°C. UCP1 is highest overall and rises steeply from ~100 (at 30°C) to ~1700 (at 18°C). UCP3 rises more modestly, from ~100 to ~700. UCP2 stays low and flat throughout.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q5-figure-1.png&#34; alt=&#34;Line graph: UCP1, UCP2 and UCP3 mRNA (% of 30°C level) at acclimation temperatures 18°C, 24°C and 30°C. UCP1 is highest overall and rises steeply from ~100 (at 30°C) to ~1700 (at 18°C). UCP3 rises more modestly, from ~100 to ~700. UCP2 stays low and flat throughout.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. Axis 1 = Acclimation temperature (°C). Axis 2 = % of 30°C level.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;In a following experiment, three transgenic mouse strains were generated, bearing a single knock out mutation of either UCP1 or UCP3 and another bearing knock out mutations of both UCP1 and UCP3. We then measured metabolic rate in warm acclimated (30°C) and cool acclimated (18°C) conditions. In each case, besides the basal metabolic rate, we also measured metabolic rate following the injection of norepinephrine (NE).&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q5-figure-2.png&#34; alt=&#34;Bar chart, four groups (normal, UCP1-KO, UCP3-KO, UCP1&amp;#43;UCP3 double-KO mice) × warm/cool acclimation × ± NE. Normal mice: warm 7.5→15 with NE, cool 10→26 with NE. UCP1-KO: warm 7.5→12, cool 10→15. UCP3-KO: warm 6→13, cool 8→24. Double-KO: warm 7.5→12, cool 10→15.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q5-figure-2.png&#34; alt=&#34;Bar chart, four groups (normal, UCP1-KO, UCP3-KO, UCP1&amp;#43;UCP3 double-KO mice) × warm/cool acclimation × ± NE. Normal mice: warm 7.5→15 with NE, cool 10→26 with NE. UCP1-KO: warm 7.5→12, cool 10→15. UCP3-KO: warm 6→13, cool 8→24. Double-KO: warm 7.5→12, cool 10→15.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.2. Axis = Metabolic rate (ml O₂·min⁻¹·kg⁻¹). Title 1 = Normal mice. Title 2 = UCP1-knockout mice. Title 3 = UCP3-knockout mice. Title 4 = UCP3-UCP1-double knockout mice. Legend 1 = Warm-acclimated. Legend 2 = Cool-acclimated.&lt;/em&gt;&lt;/p&gt;
 &lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2019-theoretical-a-q5&#34;&gt;
@@ -7008,25 +7008,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q4/&#34;&gt;← Previous: Q4&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q6/&#34;&gt;Next: Q6 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q4/&#34;&gt;← Previous: Q4&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q6/&#34;&gt;Next: Q6 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=12&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=12&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q6 - A Two-Polypeptide Gene with an Intron</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q6/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q6/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q6/</guid>
       <description>
         
         
@@ -7037,7 +7037,7 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/1-cell-molecular/dna-structure-replication/&#34;&gt;DNA Structure &amp; Replication&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/dna-structure-replication/&#34;&gt;DNA Structure &amp; Replication&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;You are studying a small protein-coding locus, the sequence of which is shown below (5&amp;rsquo; transcriptional START to 3&amp;rsquo; transcriptional STOP). This part is responsible for coding of two different polypeptides. There is a short intron sequence, shown in &lt;strong&gt;bold&lt;/strong&gt;. A C:G base pair discussed in Q6.5 is &lt;u&gt;underlined&lt;/u&gt;.&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
@@ -7193,25 +7193,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q5/&#34;&gt;← Previous: Q5&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q7/&#34;&gt;Next: Q7 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q5/&#34;&gt;← Previous: Q5&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q7/&#34;&gt;Next: Q7 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=14&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=14&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q7 - Thermus szegediensis: Nutrition and Complementation</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q7/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q7/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q7/</guid>
       <description>
         
         
@@ -7222,7 +7222,7 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/1-cell-molecular/cell-theory-prokaryotes-eukaryotes/&#34;&gt;Cell Theory, Prokaryotes &amp; Eukaryotes&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/1-cell-molecular/cell-theory-prokaryotes-eukaryotes/&#34;&gt;Cell Theory, Prokaryotes &amp; Eukaryotes&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;A microbiology lab studies the microbe &lt;em&gt;Thermus szegediensis&lt;/em&gt;, recently isolated from a thermal spring in Szeged. In a sequence of experiments (Exp), they first grew &lt;em&gt;T. szegediensis&lt;/em&gt; under different conditions to test its nutritional requirements.&lt;/p&gt;
 &lt;table&gt;
@@ -7564,25 +7564,25 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q6/&#34;&gt;← Previous: Q6&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q8/&#34;&gt;Next: Q8 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q6/&#34;&gt;← Previous: Q6&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q8/&#34;&gt;Next: Q8 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=15&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=15&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q8 - Beadle &amp; Tatum: One Gene, One Enzyme</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q8/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q8/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q8/</guid>
       <description>
         
         
@@ -7593,17 +7593,17 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/7-genetics/mendelian-inheritance-probability/&#34;&gt;Mendel&#39;s Laws &amp; Probability in Genetics&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/7-genetics/mendelian-inheritance-probability/&#34;&gt;Mendel&#39;s Laws &amp; Probability in Genetics&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;Beadle and Tatum proposed that one gene produces one enzyme. They mutated mould and observed that different colonies required a different supplement to their normal media to survive.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q8-figure-1.png&#34; alt=&#34;Five agar plates: Legend 1 (Rich Medium) shows all 8 numbered colonies growing; Legend 2 (Minimal Medium) shows only colonies 1 and 7; Legend 3 (Minimal &amp;#43; Phenylalanine) shows 1, 3, 5, 7; Legend 4 (Minimal &amp;#43; Leucine) shows 1, 2, 7, 8; Legend 5 (Minimal &amp;#43; Arginine) shows 1, 4, 6, 7.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q8-figure-1.png&#34; alt=&#34;Five agar plates: Legend 1 (Rich Medium) shows all 8 numbered colonies growing; Legend 2 (Minimal Medium) shows only colonies 1 and 7; Legend 3 (Minimal &amp;#43; Phenylalanine) shows 1, 3, 5, 7; Legend 4 (Minimal &amp;#43; Leucine) shows 1, 2, 7, 8; Legend 5 (Minimal &amp;#43; Arginine) shows 1, 4, 6, 7.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. Legend 1 = Rich Medium. Legend 2 = Minimal Medium. Legend 3 = Minimal Medium + Phenylalanine. Legend 4 = Minimal Medium + Leucine. Legend 5 = Minimal Medium + Arginine.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Indicate which colonies (1–8) each statement is true for, based on Figure 1.&lt;/p&gt;
 &lt;p&gt;In another experiment, a different set of mutants was plated as seen in Figure 2.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q8-figure-2.png&#34; alt=&#34;Two agar plates: Legend 1 (Rich Medium) shows all 8 numbered colonies; Legend 2 (Rich Medium without Arginine) shows only colonies 1, 4, 6, 7.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q8-figure-2.png&#34; alt=&#34;Two agar plates: Legend 1 (Rich Medium) shows all 8 numbered colonies; Legend 2 (Rich Medium without Arginine) shows only colonies 1, 4, 6, 7.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.2. Legend 1 = Rich Medium. Legend 2 = Rich Medium without Arginine.&lt;/em&gt;&lt;/p&gt;
 &lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2019-theoretical-a-q8&#34;&gt;
@@ -7978,25 +7978,25 @@
 &lt;/table&gt;
 &lt;p&gt;&lt;em&gt;Table 1.&lt;/em&gt;&lt;/p&gt;
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q7/&#34;&gt;← Previous: Q7&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q9/&#34;&gt;Next: Q9 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q7/&#34;&gt;← Previous: Q7&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q9/&#34;&gt;Next: Q9 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=17&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=17&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Q9 - Bulb1/Bulb2 and the UV-B Response in Arabidopsis</title>
-      <link>https://bioguide.world/papers/ibo/2019/theoretical-a/q9/</link>
+      <link>http://localhost:1313/papers/ibo/2019/theoretical-a/q9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bioguide.world/papers/ibo/2019/theoretical-a/q9/</guid>
+      <guid>http://localhost:1313/papers/ibo/2019/theoretical-a/q9/</guid>
       <description>
         
         
@@ -8007,12 +8007,12 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;papers-subject-tags&#34; style=&#34;margin-bottom:1.5rem;&#34;&gt;
-  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;https://bioguide.world/resources/5-plant-physiology/photoperiodism-vernalization-flowering/&#34;&gt;Photoperiodism, Vernalization &amp; Flowering&lt;/a&gt;
+  &lt;a class=&#34;papers-subject-tag&#34; href=&#34;http://localhost:1313/resources/5-plant-physiology/photoperiodism-vernalization-flowering/&#34;&gt;Photoperiodism, Vernalization &amp; Flowering&lt;/a&gt;
 &lt;/div&gt;
 &lt;p&gt;Bulb1 and Bulb2 are transcription factors involved in the survival response of plants exposed to UV radiation. Wild-type (wt) and homozygous mutant (&lt;em&gt;Bulb1-/-&lt;/em&gt;) &lt;em&gt;Arabidopsis&lt;/em&gt; plants were exposed to UV-B for various times and their RNA extracted. RNA was dissolved in 20 µl of buffer. A 2 µl aliquot was taken from one of the stock solutions and diluted to 1 ml. The absorbance of the solution at 260 nm was found to be 0.046.&lt;/p&gt;
 &lt;p&gt;The RNA samples were used for measurement of &lt;em&gt;bulb2&lt;/em&gt; transcript levels by quantitative PCR (Figure 1A). In a different experiment, Bulb1 and Bulb2 protein levels in wild-type &lt;em&gt;Arabidopsis&lt;/em&gt;, exposed to UV-B radiation for various times, were assessed (Figure 1B).&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;https://bioguide.world/papers/ibo/2019/q9-figure-1.png&#34; alt=&#34;Panel A: bar chart of bulb2 transcript fold-change (relative to control) at 0/4/8/16h UV-B, in WT (rising sharply to ~9-fold at 8h then falling by 16h) vs. Bulb1-/- (flat, near baseline throughout). Panel B: blot-style panel showing Bulb1 protein constant across 0/1/2/4/8h UV-B, Bulb2 protein absent at 0-1h then appearing and increasing from 2h through 8h, Actin loading control constant throughout.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;http://localhost:1313/papers/ibo/2019/q9-figure-1.png&#34; alt=&#34;Panel A: bar chart of bulb2 transcript fold-change (relative to control) at 0/4/8/16h UV-B, in WT (rising sharply to ~9-fold at 8h then falling by 16h) vs. Bulb1-/- (flat, near baseline throughout). Panel B: blot-style panel showing Bulb1 protein constant across 0/1/2/4/8h UV-B, Bulb2 protein absent at 0-1h then appearing and increasing from 2h through 8h, Actin loading control constant throughout.&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Fig.1. Axis = Fold change relative to control. wt = Wild-type.&lt;/em&gt;&lt;/p&gt;
 &lt;div class=&#34;tf-quiz-wrap&#34; data-quiz-id=&#34;ibo-2019-theoretical-a-q9&#34;&gt;
@@ -8178,15 +8178,15 @@
 &lt;/script&gt;
 
 &lt;div class=&#34;papers-quiz-nav&#34;&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q8/&#34;&gt;← Previous: Q8&lt;/a&gt;
-  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a/q10/&#34;&gt;Next: Q10 →&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-prev&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q8/&#34;&gt;← Previous: Q8&lt;/a&gt;
+  &lt;a class=&#34;papers-nav-btn papers-nav-next&#34; href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a/q10/&#34;&gt;Next: Q10 →&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;hr&gt;
 &lt;p&gt;Question reproduced from &lt;strong&gt;IBO 2019, Theoretical Exam A&lt;/strong&gt;, licensed under &lt;a
     href=&#34;https://creativecommons.org/licenses/by-nc-sa/4.0/&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC-SA 4.0&lt;/a&gt; - attributed to the International Biology Olympiad. &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/theoretical-a-exam.pdf#page=19&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
-    href=&#34;https://bioguide.world/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
+    href=&#34;http://localhost:1313/papers/ibo/2019/theoretical-a-exam.pdf#page=19&#34;&gt;Open the full exam PDF&lt;/a&gt; · &lt;a
+    href=&#34;http://localhost:1313/papers/ibo/2019/answer-keys.pdf&#34;&gt;Official answer key&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>

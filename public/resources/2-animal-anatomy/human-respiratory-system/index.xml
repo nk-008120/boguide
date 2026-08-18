@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BiOGuide for Biology Olympiads – Human Respiratory System</title>
-    <link>https://bioguide.world/resources/2-animal-anatomy/human-respiratory-system/</link>
+    <link>http://localhost:1313/resources/2-animal-anatomy/human-respiratory-system/</link>
     <description>Recent content in Human Respiratory System on BiOGuide for Biology Olympiads</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="https://bioguide.world/resources/2-animal-anatomy/human-respiratory-system/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/resources/2-animal-anatomy/human-respiratory-system/index.xml" rel="self" type="application/rss+xml" />
     
     
       

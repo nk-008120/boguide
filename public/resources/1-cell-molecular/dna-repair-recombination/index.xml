@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BiOGuide for Biology Olympiads – DNA Repair &amp; Recombination</title>
-    <link>https://bioguide.world/resources/1-cell-molecular/dna-repair-recombination/</link>
+    <link>http://localhost:1313/resources/1-cell-molecular/dna-repair-recombination/</link>
     <description>Recent content in DNA Repair &amp; Recombination on BiOGuide for Biology Olympiads</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="https://bioguide.world/resources/1-cell-molecular/dna-repair-recombination/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="http://localhost:1313/resources/1-cell-molecular/dna-repair-recombination/index.xml" rel="self" type="application/rss+xml" />
     
     
       
