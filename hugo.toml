@@ -8,6 +8,10 @@ theme = "hextra"
       unsafe = true
   [markup.katex]
     enable = true
+  [sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
 
 [menu]
   [[menu.main]]

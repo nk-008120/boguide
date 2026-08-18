@@ -1,0 +1,55 @@
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}",
+  "description": "{{ .Site.Params.description | default "Biology Olympiad Preparation Hub" }}",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{{ .Site.BaseURL }}search/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "BioGuide",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ .Site.BaseURL }}logo.png",
+  "sameAs": [
+    "https://www.instagram.com/bioguideofficial/",
+    "https://github.com/nk-008120/boguide"
+  ]
+}
+</script>
+{{- end }}
+
+{{- if not .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {{- $ancestors := .Ancestors.Reverse }}
+    {{- range $i, $p := $ancestors }}
+    {
+      "@type": "ListItem",
+      "position": {{ add $i 1 }},
+      "name": "{{ cond $p.IsHome "Home" $p.Title }}",
+      "item": "{{ $p.Permalink }}"
+    }{{ if or (ne $i (sub (len $ancestors) 1)) true }},{{ end }}
+    {{- end }}
+    {
+      "@type": "ListItem",
+      "position": {{ add (len $ancestors) 1 }},
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }
+  ]
+}
+</script>
+{{- end }}
