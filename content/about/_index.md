@@ -152,26 +152,31 @@ Our chain of command is somewhat summarised by <a href = "https://drive.google.c
      See the comment block right after this section for exactly what each
      field does and how to add/remove people. -->
 
-{{< team-member name="Nishit Kalani" role="Founder, Owner & Managing Partner" avatar="/nkavat.jpg" since="June 12th 2026">}}
+{{< team-member name="Nishit Kalani" role="Founder, Owner & Managing Partner" avatar="/nkavat.jpg" since="February 8th 2026">}}
+Nishit Here (: <br>
 I'm a high schooler in India who kept wishing a resource like this already existed while preparing for the International Biology Olympiad (Silver, 2026), so I built it myself. Astronomy was actually where I started (Gold, IOAA Jr 2025), and I've since qualified for the national selection camps in both Chemistry, Astronomy and Mathematics too; though biology is the one that stuck, which is probably why I can't help connecting it back to the other two more than a syllabus usually allows. Outside this site, I split my time between chess, code,piano, tabla, violin and the occasional very average sketch. If something on here doesn't make sense or you just want to talk shop, find me at r6394175@gmail. If you find which star is in the image above, begin the mail with it's name, and wait for a surprise!
 {{< /team-member >}}
 {{< team-member name="Bhavyaa Gunwal" role="Senior Partner" avatar="/bgavat.jpg" since="August 2nd 2026">}}
-Hi, I’m Bhavyaa. I just finished grade 12 in India but still not sure what to do next—probably medicine here, though a transfer to a good uni abroad doesn’t sound too bad either. I’ve always loved biology, even though my parents wanted me to go for maths. This interest earned me a few trips to IBO and IJSO, but I couldn’t have possibly done this without my GOATs: Holly Jackson and Olivia Rodrigo (Livies assemble). I’m passable at badminton, slowly learning taekwondo, and quietly curious about drama and instrumental music, even if I can’t play a note yet. And BiOGuide? it’s the resource 13 year old me would have killed for— future-you will thank you for leaning on it.
+Hi, I’m Bhavyaa.<br> I just finished grade 12 in India but still not sure what to do next—probably medicine here, though a transfer to a good uni abroad doesn’t sound too bad either. I’ve always loved biology, even though my parents wanted me to go for maths. This interest earned me a few trips to IBO and IJSO, but I couldn’t have possibly done this without my GOATs: Holly Jackson and Olivia Rodrigo (Livies assemble). I’m passable at badminton, slowly learning taekwondo, and quietly curious about drama and instrumental music, even if I can’t play a note yet. And BiOGuide? it’s the resource 13 year old me would have killed for— future-you will thank you for leaning on it.
 {{< /team-member >}}
-{{< team-member name="Soumil Maity" role="Associate (Mike Ross Class)" avatar="/smavat.jpg" since="August 17th 2026">}}
-Hi! I’m Soumil, member of the Indian team and a Silver medalist at the 2026 IBO. Biology has always intrigued me, even though astronomy was what got me into Olympiads. You can expect me to remember important biochemical pathways, but will not be able to tell you what I had for lunch. If you don’t find me toiling away preparing for NEET, you can find me playing badminton, football, cricket or goofing around with my friends (at the goated DAV ground). I can already envision the 'aura' of BiOGuide among future biologists. Have fun exploring the what, why and how of life (perhaps with the occasional torment of the questions)!!
+{{< team-member name="Soumil Maity" role="Associate (Mike Ross Class)" avatar="/smavat.jpg" since="August 19th 2026">}}
+Hi! I’m Soumil,<br> member of the Indian team and a Silver medalist at the 2026 IBO. Biology has always intrigued me, even though astronomy was what got me into Olympiads. You can expect me to remember important biochemical pathways, but will not be able to tell you what I had for lunch. If you don’t find me toiling away preparing for NEET, you can find me playing badminton, football, cricket or goofing around with my friends (at the goated DAV ground). I can already envision the 'aura' of BiOGuide among future biologists. Have fun exploring the what, why and how of life (perhaps with the occasional torment of the questions)!!
 Currently Working On: Making the Notes@BiOGuide a better place by collecting a vast pool of interesting previous problems!
 {{< /team-member >}}
-{{< team-member name="Bhanav Namboodiri" role="Associate (Mike Ross Class)" avatar="/bnavat.jpg" since="August 18th 2026">}}
+{{< team-member name="Bhanav Namboodiri" role="Associate (Mike Ross Class)" avatar="/bnavat.jpg" since="August 19th 2026">}}
 Currently Working On: Increasing the output of BiOGuide by proficiently handling the BiOBytes initiative! Making BiOGuide fun, and much more than just a learning platform for Biology Olympiads
 {{< /team-member >}}
-{{< team-member name="Saisha Jain" role="Associate (Mike Ross Class)" since="August 18th 2026">}}
+{{< team-member name="Saisha Jain" role="Associate (Mike Ross Class)" avatar="/sjavat.png" since="August 19th 2026">}}
+print("Hello, World!")<br>
+I'm Saisha from the country that accounts for every 1 out of 8 people in the world. I've Just finished 12th grade and finally on to the next step to join med school after toiling for NEET. I’ve always loved anything that excites my neurons be it cubing or sports or puzzles. I am interested in Computers,AI,Physics,Physiology,Olympiad problems or anything that is logical contrary to my choice for med school which i have chosen for helping people something i'm really passionate about hence i'm excited about BiOGuide too. I’m passable at almost any sport and good at badminton and basketball,learning to play the keyboard and harmonica bit by bit apart from binging on novels and movies when i'm free.<br>
+As for BiOGuide is the platform that would have saved me from the hours of reseach for any scarce advise i could find about biology olympiads on the internet. So now that you've found it use it to it's fullest . Feel free to give your invaluable feedback and all the best for your journey ahead!!<br>
 Currently Working On: Helping in User Interface and UX betterment by weekly brainstorming on new possibilities, also contributing to the vast pool of previous problems!
 {{< /team-member >}}
-{{< team-member name="Shourya Bansal" role="Associate (Mike Ross Class)" avatar="/sbavat.png" since="August 18th 2026">}}
-I work at the intersection of biophysics, AI/LLM modelling, computational biology, and cardiology, with research exposure through IIT, MIT, harvard ,TIFR etc . . As an OCSC 2026 (IBO) participant, NSEB national Top 1% achiever, DST , csir research winner etc.worked on bio-informatics, haemodynamics, BCI-NLP, LSTM/RL, and interdisciplinary biomedical research.
+{{< team-member name="Shourya Bansal" role="Associate (Mike Ross Class)" avatar="/sbavat.png" since="August 19th 2026">}}
+Hi, I’m Shourya, a high schooler in India who, at 13, somehow thought building NLP/neural-net apps was a normal hobby. Younger me kept wondering, “What if code could do more than just live on a screen?”—and that rabbit hole eventually led me into bioinformatics, haemodynamics, computational physiology, BCI–NLP, LSTMs, RL & AI for biology. Since then, I’ve had research exposure through IIT, MIT, Harvard & TIFR, made it to OCSC 2026 for IBO, landed in NSEB’s national top 10, and picked up recognition through DST , IBM etc.  research programmes. Now I review content published on bioguide , helping build what younger-me desperately wanted. Outside all this: guitar, piano, sketching, coding & journaling keeps me sane
 Currently Working On: Making the whole website a better place by reviewing content thoroughly throughout the website and submitting weekly recommendations!
 {{< /team-member >}}
+
 ## Frequently Asked Questions
 
 {{< faq-item q="Is BioGuide free to use?" >}}

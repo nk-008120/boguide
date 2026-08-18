@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BiOGuide for Biology Olympiads – BiOClash - an independent biology competition</title>
-    <link>http://localhost:1313/bioclash/</link>
+    <link>https://bioguide.world/bioclash/</link>
     <description>Recent content in BiOClash - an independent biology competition on BiOGuide for Biology Olympiads</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://localhost:1313/bioclash/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://bioguide.world/bioclash/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>BiOClash Sample — Attempt</title>
-      <link>http://localhost:1313/bioclash/bioclash-sample/attempt/</link>
+      <link>https://bioguide.world/bioclash/bioclash-sample/attempt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bioclash/bioclash-sample/attempt/</guid>
+      <guid>https://bioguide.world/bioclash/bioclash-sample/attempt/</guid>
       <description>
         
         
@@ -91,16 +91,16 @@
   &lt;/section&gt;
   &lt;section id=&#34;bioclash-attempt-report&#34; hidden&gt;&lt;/section&gt;
 &lt;/div&gt;
-&lt;script src=&#34;http://localhost:1313/js/bioclash-attempt.js&#34; defer&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bioguide.world/js/bioclash-attempt.js&#34; defer&gt;&lt;/script&gt;
       </description>
     </item>
     
     <item>
       <title>Case File MB-01 - Attempt</title>
-      <link>http://localhost:1313/bioclash/mb-01/attempt/</link>
+      <link>https://bioguide.world/bioclash/mb-01/attempt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bioclash/mb-01/attempt/</guid>
+      <guid>https://bioguide.world/bioclash/mb-01/attempt/</guid>
       <description>
         
         
@@ -203,17 +203,17 @@
   &lt;/section&gt;
   &lt;section id=&#34;bioclash-attempt-report&#34; hidden&gt;&lt;/section&gt;
 &lt;/div&gt;
-&lt;script src=&#34;http://localhost:1313/js/bioclash-attempt.js&#34; defer&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bioguide.world/js/bioclash-attempt.js&#34; defer&gt;&lt;/script&gt;
 
       </description>
     </item>
     
     <item>
       <title>Leaderboard - Case File MB-01</title>
-      <link>http://localhost:1313/bioclash/mb-01/leaderboard/</link>
+      <link>https://bioguide.world/bioclash/mb-01/leaderboard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/bioclash/mb-01/leaderboard/</guid>
+      <guid>https://bioguide.world/bioclash/mb-01/leaderboard/</guid>
       <description>
         
         
@@ -226,9 +226,9 @@
   &lt;p class=&#34;bioclash-case-header-mark&#34;&gt;B I O C L A S H&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;bioclash-panel&#34;&gt;
-&lt;p&gt;&lt;a class=&#34;papers-nav-btn&#34; href=&#34;http://localhost:1313/bioclash/&#34; style=&#34;display:inline-block;margin-bottom:1.5rem;&#34;&gt;← Back to BiOClash&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;papers-nav-btn&#34; href=&#34;https://bioguide.world/bioclash/&#34; style=&#34;display:inline-block;margin-bottom:1.5rem;&#34;&gt;← Back to BiOClash&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This round&amp;rsquo;s placements, entered once grading concludes - see the &lt;a
-    href=&#34;http://localhost:1313/papers/leaderboard/&#34;&gt;BiOClash Season
+    href=&#34;https://bioguide.world/papers/leaderboard/&#34;&gt;BiOClash Season
 Champions&lt;/a&gt; for the cumulative standing across every round this
 season.&lt;/p&gt;
 &lt;/div&gt;
@@ -246,10 +246,10 @@ season.&lt;/p&gt;
     &lt;/table&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;script src=&#34;http://localhost:1313/js/bioclash-champions.js&#34; defer&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bioguide.world/js/bioclash-champions.js&#34; defer&gt;&lt;/script&gt;
 
 &lt;/div&gt;
-&lt;script src=&#34;http://localhost:1313/js/bioclash-round-leaderboard-theme.js&#34; defer&gt;&lt;/script&gt;
+&lt;script src=&#34;https://bioguide.world/js/bioclash-round-leaderboard-theme.js&#34; defer&gt;&lt;/script&gt;
 
       </description>
     </item>

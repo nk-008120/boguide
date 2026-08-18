@@ -122,8 +122,8 @@ theme = "hextra"
     weight = 5
 
   [[menu.main]]
-    name = "BiOInsights"
-    url = "/bioinsights/"
+    name = "BiOBytes"
+    url = "/biobytes/"
     weight = 6
 
   [[menu.main]]

@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BiOGuide for Biology Olympiads – ✅ Plant Physiology</title>
-    <link>http://localhost:1313/resources/5-plant-physiology/</link>
+    <link>https://bioguide.world/resources/5-plant-physiology/</link>
     <description>Recent content in ✅ Plant Physiology on BiOGuide for Biology Olympiads</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     
-	  <atom:link href="http://localhost:1313/resources/5-plant-physiology/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://bioguide.world/resources/5-plant-physiology/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -16,10 +16,10 @@
     
     <item>
       <title>Water Transport &amp; Transpiration</title>
-      <link>http://localhost:1313/resources/5-plant-physiology/water-transport-transpiration/</link>
+      <link>https://bioguide.world/resources/5-plant-physiology/water-transport-transpiration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/5-plant-physiology/water-transport-transpiration/</guid>
+      <guid>https://bioguide.world/resources/5-plant-physiology/water-transport-transpiration/</guid>
       <description>
         
         
@@ -71,7 +71,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
 &lt;/ul&gt;
 &lt;p&gt;A cell at &lt;strong&gt;full turgor&lt;/strong&gt; has Ψₚ exactly balancing Ψₛ, so Ψ = 0 and no further net water enters; a &lt;strong&gt;flaccid&lt;/strong&gt; or &lt;strong&gt;plasmolyzed&lt;/strong&gt; cell (Ψₚ near zero or negative, respectively) has Ψ driven entirely by Ψₛ. This framework is what makes it possible to predict water movement direction between any two compartments (soil, root cell, xylem, atmosphere) from their respective Ψ values alone, without needing a separate rule for each pair.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/water-potential-cell-states.png&#34; alt=&#34;Water potential (Ψ) worked across three states: pure water (Ψ = 0), a 0.1 M sucrose solution (Ψ lowered by solute potential alone), and a flaccid cell dropped into that solution then allowed to reach equilibrium, with Ψₚ, Ψₛ, and Ψ calculated at each step&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/water-potential-cell-states.png&#34; alt=&#34;Water potential (Ψ) worked across three states: pure water (Ψ = 0), a 0.1 M sucrose solution (Ψ lowered by solute potential alone), and a flaccid cell dropped into that solution then allowed to reach equilibrium, with Ψₚ, Ψₛ, and Ψ calculated at each step&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Taiz &amp;amp; Zeiger, Plant Physiology (Sinauer/Oxford)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Pathways Across the Root&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;pathways-across-the-root&#34;&gt;&lt;/span&gt;
@@ -85,7 +85,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
 &lt;p&gt;All three pathways converge at the endodermis, where the Casparian strip&amp;rsquo;s suberin band blocks the apoplast route outright, forcing every water molecule that took that path to enter the symplast at that layer, the single mechanistic fact underlying selective mineral uptake, developed further on &lt;a
     href=&#34;../mineral-nutrition-nutrient-uptake/&#34;&gt;Mineral Nutrition &amp;amp; Nutrient Uptake&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/root-water-pathways-apoplast-symplast-transcellular.png&#34; alt=&#34;Water movement pathways across the root: apoplastic, symplastic, and transcellular routes traced from the epidermis/root hair through the cortex to the tracheary elements, with the Casparian strip and pericycle marked at the endodermis&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/root-water-pathways-apoplast-symplast-transcellular.png&#34; alt=&#34;Water movement pathways across the root: apoplastic, symplastic, and transcellular routes traced from the epidermis/root hair through the cortex to the tracheary elements, with the Casparian strip and pericycle marked at the endodermis&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Evert &amp;amp; Eichhorn, Raven Biology of Plants (W.H. Freeman/Macmillan)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Cohesion-Tension Theory&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;cohesion-tension-theory&#34;&gt;&lt;/span&gt;
@@ -96,20 +96,20 @@ $$ \Psi = \Psi_s + \Psi_p $$
 &lt;li&gt;&lt;strong&gt;Adhesion&lt;/strong&gt;: hydrogen bonding between water molecules and the hydrophilic cellulose/lignin walls of the tracheid or vessel lumen counteracts the tendency of the water column to pull away from the vessel wall under tension, keeping the column continuous against the conduit surface.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/cohesion-tension-mechanism.png&#34; alt=&#34;Cohesion and adhesion at a xylem vessel element: water molecules moving up the vessel pull neighboring water molecules along by cohesion (hydrogen bonding between water molecules), while adhesion (hydrogen bonding to the lignified vessel wall) keeps the water column against the conduit surface&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/cohesion-tension-mechanism.png&#34; alt=&#34;Cohesion and adhesion at a xylem vessel element: water molecules moving up the vessel pull neighboring water molecules along by cohesion (hydrogen bonding between water molecules), while adhesion (hydrogen bonding to the lignified vessel wall) keeps the water column against the conduit surface&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Biology LibreTexts&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The entire mechanism requires no metabolic energy input from the plant itself: it is a physical consequence of transpiration (itself driven by the water potential gradient between moist mesophyll air spaces and the typically much drier atmosphere) acting on a continuous, cohesive water column, which is why cohesion-tension can move water to the top of the tallest trees despite xylem being entirely composed of dead cells with no active pumping machinery.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;badge-challenge&#34;&gt;Failure mode&lt;/span&gt; If the tension becomes too great (severe drought) or an air bubble enters the column (e.g. through injury, or via freeze-thaw cycles that nucleate bubbles from dissolved gas), the water column can break, an event called &lt;strong&gt;cavitation&lt;/strong&gt;, producing an air-filled embolism that blocks that conduit permanently unless bypassed. This is precisely why the torus-margo pit membrane mechanism in gymnosperm tracheids (see &lt;a
     href=&#34;../../6-plant-anatomy/xylem-phloem-vascular-tissue/&#34;&gt;Xylem, Phloem &amp;amp; Vascular Tissue&lt;/a&gt;) exists structurally, to seal off a cavitated tracheid before the embolism spreads to its neighbors.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/cavitation-embolism.png&#34; alt=&#34;Drought-induced cavitation via the air-seeding mechanism: an air bubble nucleates at a bordered pit membrane and expands into the water-filled conduit, producing an embolism (torus/margo detail shown for the gymnosperm tracheid case)&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/cavitation-embolism.png&#34; alt=&#34;Drought-induced cavitation via the air-seeding mechanism: an air bubble nucleates at a bordered pit membrane and expands into the water-filled conduit, producing an embolism (torus/margo detail shown for the gymnosperm tracheid case)&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ResearchGate, fig. 3, &amp;ldquo;Drought-induced cavitation through the air-seeding mechanism in angiosperms and conifers&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Root Pressure and Guttation&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;root-pressure-and-guttation&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#root-pressure-and-guttation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;When transpiration is low or absent (high humidity, at night, in young seedlings before a full canopy develops), the cohesion-tension mechanism above has little or no pull to contribute. Root cells continue to actively accumulate mineral ions in the stele via active transport, however, which lowers the stele&amp;rsquo;s solute potential and draws water in osmotically, because the endodermis&amp;rsquo;s Casparian strip prevents this water and the ions with it from simply leaking back out apoplastically, pressure builds up in the enclosed xylem and pushes water upward as a positive &lt;strong&gt;root pressure&lt;/strong&gt;, mechanistically the opposite of cohesion-tension&amp;rsquo;s pull. Root pressure is far weaker than transpirational pull and can raise water only a limited height (at most a few meters, not enough to explain water transport in tall trees), but under the right low-transpiration conditions it forces liquid water out of specialized leaf-margin pores called &lt;strong&gt;hydathodes&lt;/strong&gt; as visible droplets, &lt;strong&gt;guttation&lt;/strong&gt;, distinguishable from dew because it consists of xylem sap (containing trace solutes) exuded from a living structural pore, not condensed atmospheric water.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/root-pressure-guttation.png&#34; alt=&#34;Guttation: droplets of xylem sap exuded from leaf-margin hydathodes, visible along the serrated edge of a leaf and at the tips of grass blades&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/root-pressure-guttation.png&#34; alt=&#34;Guttation: droplets of xylem sap exuded from leaf-margin hydathodes, visible along the serrated edge of a leaf and at the tips of grass blades&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: public sourced&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Comparative Structures&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;comparative-structures&#34;&gt;&lt;/span&gt;
@@ -227,7 +227,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Cohesion-tension column simulator (SVG/JS)&lt;/strong&gt;, a vertical xylem column with a transpiration-rate slider; increasing transpiration visibly raises the pull (shown as a tension/negative-pressure readout at the base) and raises the water column height, while an injected air-bubble button demonstrates cavitation breaking the column and halting flow above that point.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;http://localhost:1313/cohesion-tension-simulator.html&#34; title=&#34;Cohesion-tension column simulator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 520px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;https://bioguide.world/cohesion-tension-simulator.html&#34; title=&#34;Cohesion-tension column simulator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 520px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;em&gt;(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Practice Problems&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;practice-problems&#34;&gt;&lt;/span&gt;
@@ -244,10 +244,10 @@ $$ \Psi = \Psi_s + \Psi_p $$
     
     <item>
       <title>Stomatal Physiology &amp; Gas Exchange</title>
-      <link>http://localhost:1313/resources/5-plant-physiology/stomatal-physiology-gas-exchange/</link>
+      <link>https://bioguide.world/resources/5-plant-physiology/stomatal-physiology-gas-exchange/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/5-plant-physiology/stomatal-physiology-gas-exchange/</guid>
+      <guid>https://bioguide.world/resources/5-plant-physiology/stomatal-physiology-gas-exchange/</guid>
       <description>
         
         
@@ -263,7 +263,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/5-plant-physiology/water-transport-transpiration/&#34;&gt;Water Transport Transpiration&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;https://bioguide.world/resources/5-plant-physiology/water-transport-transpiration/&#34;&gt;Water Transport Transpiration&lt;/a&gt;
     
   
   
@@ -301,11 +301,11 @@ $$ \Psi = \Psi_s + \Psi_p $$
 &lt;li&gt;&lt;strong&gt;Closing&lt;/strong&gt;: Outward-rectifying K⁺ channels and anion channels open instead, releasing K⁺, Cl⁻, and malate²⁻ from the guard cell; solute potential rises (becomes less negative), water leaves osmotically, turgor falls, and the pore closes.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/stomatal-complex-open-closed.png&#34; alt=&#34;Stomatal opening/closing cycle: guard cell pair closed, then becoming turgid as K&amp;#43;, Cl-, and water accumulate and the radially oriented cellulose microfibrils constrain the cells to bow open, then closed again as guard cells go limp&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/stomatal-complex-open-closed.png&#34; alt=&#34;Stomatal opening/closing cycle: guard cell pair closed, then becoming turgid as K&amp;#43;, Cl-, and water accumulate and the radially oriented cellulose microfibrils constrain the cells to bow open, then closed again as guard cells go limp&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: DNA of Bioscience (blogspot)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/guard-cell-ion-flux-opening.png&#34; alt=&#34;Guard cell membrane ion transport and carbon metabolism underlying stomatal opening: the H&amp;#43;-ATPase (AHA1), blue-light photoreceptors (PHOT1/2), K&amp;#43;/Cl-/NO3- channels, and the broader sugar and starch metabolism (mesophyll chloroplast sucrose supply, guard cell chloroplast starch/Calvin cycle, vacuolar and mitochondrial metabolism) that together power and sustain the opening response&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/guard-cell-ion-flux-opening.png&#34; alt=&#34;Guard cell membrane ion transport and carbon metabolism underlying stomatal opening: the H&amp;#43;-ATPase (AHA1), blue-light photoreceptors (PHOT1/2), K&amp;#43;/Cl-/NO3- channels, and the broader sugar and starch metabolism (mesophyll chloroplast sucrose supply, guard cell chloroplast starch/Calvin cycle, vacuolar and mitochondrial metabolism) that together power and sustain the opening response&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ResearchGate, fig. 1, &amp;ldquo;Guard cell membrane ion transport and carbon metabolism during stomatal opening&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Subsidiary cells (see &lt;a
@@ -320,7 +320,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
     href=&#34;../plant-hormones/&#34;&gt;Plant Hormones&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/guard-cell-ion-flux-closing.png&#34; alt=&#34;Guard cell model of ABA signaling and stomatal closure: ABA triggers cytosolic Ca2&amp;#43; increase via a Ca2&amp;#43;-permeable channel, activating S-type and R-type anion channels and inhibiting K&amp;#43;in channels, while depolarization and rising pH open K&amp;#43;out channels, together driving K&amp;#43;/anion efflux and guard cell turgor loss&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/guard-cell-ion-flux-closing.png&#34; alt=&#34;Guard cell model of ABA signaling and stomatal closure: ABA triggers cytosolic Ca2&amp;#43; increase via a Ca2&amp;#43;-permeable channel, activating S-type and R-type anion channels and inhibiting K&amp;#43;in channels, while depolarization and rising pH open K&amp;#43;out channels, together driving K&amp;#43;/anion efflux and guard cell turgor loss&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ResearchGate, fig. 2, &amp;ldquo;A guard cell model illustrating the proposed functions of ion channels in ABA signaling&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -440,7 +440,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Multi-signal stomatal aperture simulator (sliders for light, CO2, and ABA level)&lt;/strong&gt;, adjusting each slider independently shows the resulting net aperture, making clear that ABA can force closure even with the light and CO2 sliders both set to &amp;ldquo;opening&amp;rdquo; conditions, reproducing the override relationship described in the ABA section above.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;http://localhost:1313/stomatal-aperture-simulator.html&#34; title=&#34;Multi-signal stomatal aperture simulator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;https://bioguide.world/stomatal-aperture-simulator.html&#34; title=&#34;Multi-signal stomatal aperture simulator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;em&gt;(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Practice Problems&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;practice-problems&#34;&gt;&lt;/span&gt;
@@ -457,10 +457,10 @@ $$ \Psi = \Psi_s + \Psi_p $$
     
     <item>
       <title>Phloem Transport &amp; Translocation</title>
-      <link>http://localhost:1313/resources/5-plant-physiology/phloem-transport-translocation/</link>
+      <link>https://bioguide.world/resources/5-plant-physiology/phloem-transport-translocation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/5-plant-physiology/phloem-transport-translocation/</guid>
+      <guid>https://bioguide.world/resources/5-plant-physiology/phloem-transport-translocation/</guid>
       <description>
         
         
@@ -476,7 +476,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/5-plant-physiology/water-transport-transpiration/&#34;&gt;Water Transport Transpiration&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;https://bioguide.world/resources/5-plant-physiology/water-transport-transpiration/&#34;&gt;Water Transport Transpiration&lt;/a&gt;
     
   
   
@@ -509,7 +509,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
     &lt;a href=&#34;#key-concepts&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Source and Sink&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;source-and-sink&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#source-and-sink&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Phloem transport is defined relationally, not by fixed anatomical location: a &lt;strong&gt;source&lt;/strong&gt; is any tissue that is a net exporter of sugar (mature photosynthesizing leaves; germinating seeds mobilizing stored reserves; storage organs during regrowth), and a &lt;strong&gt;sink&lt;/strong&gt; is any tissue that is a net importer (growing shoot and root tips, developing fruits and seeds, storage organs during accumulation). The same organ can switch roles across a plant&amp;rsquo;s life cycle (a storage root is a sink while accumulating starch and a source when that starch is later mobilized to support new growth), which is why phloem flow direction is not fixed like xylem&amp;rsquo;s root-to-shoot direction, but reverses according to which tissues are currently acting as source and which as sink.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/source-sink-whole-plant.png&#34; alt=&#34;Whole-plant source-sink nitrogen and sucrose movement: (A) source leaf photosynthesis/N-metabolism supplying sucrose and nitrogen via phloem and xylem to a sink leaf and to roots, and root NO3-/NH4&amp;#43;/amino acid uptake feeding back via xylem; (B) the source-cell and sink-cell transporter proteins (SUTs, AAPs, CAT1, INVs) underlying that movement&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/source-sink-whole-plant.png&#34; alt=&#34;Whole-plant source-sink nitrogen and sucrose movement: (A) source leaf photosynthesis/N-metabolism supplying sucrose and nitrogen via phloem and xylem to a sink leaf and to roots, and root NO3-/NH4&amp;#43;/amino acid uptake feeding back via xylem; (B) the source-cell and sink-cell transporter proteins (SUTs, AAPs, CAT1, INVs) underlying that movement&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ResearchGate, fig. 1, &amp;ldquo;Source-Sink Relationships in Plants: Whole-plant movement of nitrogen-containing&amp;hellip;&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Phloem Loading&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;phloem-loading&#34;&gt;&lt;/span&gt;
@@ -521,19 +521,19 @@ $$ \Psi = \Psi_s + \Psi_p $$
 &lt;/ul&gt;
 &lt;p&gt;Either route achieves the same essential outcome: sieve tube solute concentration at the source is driven well above that of surrounding tissue, sharply lowering the sieve tube&amp;rsquo;s water potential there.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/phloem-loading-symplastic.png&#34; alt=&#34;Apoplastic vs. symplastic sucrose phloem loading pathways: top, sucrose crossing the apoplast via facilitated transport then an H&amp;#43;-ATPase-driven H&amp;#43;/sucrose symporter into the companion cell, exiting to the sieve tube via a SWEET effluxer; bottom, sucrose moving directly from sugar-producing cell to companion cell to sieve tube via plasmodesmata by simple diffusion down its concentration gradient&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/phloem-loading-symplastic.png&#34; alt=&#34;Apoplastic vs. symplastic sucrose phloem loading pathways: top, sucrose crossing the apoplast via facilitated transport then an H&amp;#43;-ATPase-driven H&amp;#43;/sucrose symporter into the companion cell, exiting to the sieve tube via a SWEET effluxer; bottom, sucrose moving directly from sugar-producing cell to companion cell to sieve tube via plasmodesmata by simple diffusion down its concentration gradient&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Wikimedia Commons&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;The Pressure-Flow (Münch) Hypothesis&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-pressure-flow-münch-hypothesis&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#the-pressure-flow-m%c3%bcnch-hypothesis&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Once sucrose is loaded at the source, water follows osmotically from the adjacent xylem (the two vascular tissues run alongside each other precisely so this water exchange is fast, see &lt;a
     href=&#34;../../6-plant-anatomy/xylem-phloem-vascular-tissue/&#34;&gt;Xylem, Phloem &amp;amp; Vascular Tissue&lt;/a&gt;), raising &lt;strong&gt;turgor pressure&lt;/strong&gt; in the sieve tube at the source end.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/pressure-flow-hypothesis.png&#34; alt=&#34;Pressure-flow (Munch) hypothesis: water enters the phloem from the xylem at the source (leaf) companion cell as sucrose is loaded, driving bulk flow of water and sucrose through sieve-tube elements to the sink (root/fruit) companion cell, where sucrose exits and water returns to the xylem&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/pressure-flow-hypothesis.png&#34; alt=&#34;Pressure-flow (Munch) hypothesis: water enters the phloem from the xylem at the source (leaf) companion cell as sucrose is loaded, driving bulk flow of water and sucrose through sieve-tube elements to the sink (root/fruit) companion cell, where sucrose exits and water returns to the xylem&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ResearchGate, fig. 1, &amp;ldquo;Translocation of sugars (photoassimilates) in plants: Pressure flow hypothesis (Muench)&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;At the sink end, sugar is continuously removed (unloaded, see below), keeping sieve tube solute concentration, and therefore turgor pressure, low there. The resulting pressure difference between source and sink, transmitted through the continuous, plasmodesmata- and sieve-plate-connected sieve tube lumen, drives &lt;strong&gt;bulk flow&lt;/strong&gt; of the entire sap (water and dissolved sugars together) from source to sink, mechanistically distinct from xylem transport, which is pulled by tension rather than pushed by a pressure gradient, and from simple diffusion, which would be far too slow to account for the observed translocation rates. Because the driving pressure difference depends only on the relative concentrations at the two ends, not on which end is physically higher or lower, phloem sap can move in any direction, including downward from a leaf source to a root sink, upward from a storage root source to a growing shoot sink, or laterally between two leaves at the same height, a direct, testable contrast with xylem&amp;rsquo;s exclusively upward flow.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/xylem-vs-phloem-direction.png&#34; alt=&#34;Xylem vs. phloem transport contrasted: xylem carries water/minerals one-way only through non-living cells with no end walls between them, while phloem carries organic molecules two-way through living (support-dependent) cells connected by sieve plates, paired with a real stained cross-section showing xylem (red, meta-/protoxylem) and phloem tissue side by side&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/xylem-vs-phloem-direction.png&#34; alt=&#34;Xylem vs. phloem transport contrasted: xylem carries water/minerals one-way only through non-living cells with no end walls between them, while phloem carries organic molecules two-way through living (support-dependent) cells connected by sieve plates, paired with a real stained cross-section showing xylem (red, meta-/protoxylem) and phloem tissue side by side&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: microbenotes.com, &amp;ldquo;Xylem vs Phloem&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Phloem Unloading&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;phloem-unloading&#34;&gt;&lt;/span&gt;
@@ -597,7 +597,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Pressure-flow (Münch) demonstrator (SVG/JS, step-through)&lt;/strong&gt;, two connected chambers (source, sink) linked by a tube, with a slider controlling source-end sucrose loading rate; increasing loading visibly raises source turgor (rendered as chamber pressure) and drives flow toward the sink chamber, letting the user confirm that flow direction reverses if the sink-chamber loading is set higher instead.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;iframe src=&#34;http://localhost:1313/pressure-flow-demonstrator.html&#34; title=&#34;Pressure-flow (Munch) demonstrator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
+&lt;iframe src=&#34;https://bioguide.world/pressure-flow-demonstrator.html&#34; title=&#34;Pressure-flow (Munch) demonstrator&#34; loading=&#34;lazy&#34; style=&#34;width: 100%; height: 480px; border: none;&#34; allow=&#34;fullscreen&#34;&gt;&lt;/iframe&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Loading pathway toggle (click-through)&lt;/strong&gt;, a single minor-vein cross-section that toggles between apoplastic loading (sucrose crossing the apoplast, sucrose-H+ symporter highlighted) and symplastic loading (plasmodesmata route, polymer trapping shown converting sucrose to raffinose/stachyose once inside).&lt;/li&gt;
@@ -674,10 +674,10 @@ $$ \Psi = \Psi_s + \Psi_p $$
     
     <item>
       <title>Mineral Nutrition &amp; Nutrient Uptake</title>
-      <link>http://localhost:1313/resources/5-plant-physiology/mineral-nutrition-nutrient-uptake/</link>
+      <link>https://bioguide.world/resources/5-plant-physiology/mineral-nutrition-nutrient-uptake/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/5-plant-physiology/mineral-nutrition-nutrient-uptake/</guid>
+      <guid>https://bioguide.world/resources/5-plant-physiology/mineral-nutrition-nutrient-uptake/</guid>
       <description>
         
         
@@ -693,7 +693,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/5-plant-physiology/water-transport-transpiration/&#34;&gt;Water Transport Transpiration&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;https://bioguide.world/resources/5-plant-physiology/water-transport-transpiration/&#34;&gt;Water Transport Transpiration&lt;/a&gt;
     
   
   
@@ -732,7 +732,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
 &lt;/ul&gt;
 &lt;p&gt;Deficiency symptoms are diagnostic and depend heavily on whether the element is &lt;strong&gt;phloem-mobile&lt;/strong&gt;: mobile elements (N, P, K, Mg) can be resorbed from older leaves and relocated to actively growing tissue when supply is short, so their deficiency symptoms (commonly chlorosis, yellowing from lost chlorophyll) appear first in &lt;strong&gt;older leaves&lt;/strong&gt;; immobile elements (Ca, B, Fe in most species) cannot be relocated once incorporated, so their deficiency symptoms appear first in &lt;strong&gt;younger, actively growing tissue&lt;/strong&gt; instead, a single mobility fact that converts &amp;ldquo;which leaves show symptoms first&amp;rdquo; into a diagnostic clue for which nutrient is deficient.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/essential-element-deficiency.png&#34; alt=&#34;Deficiency symptom chart across macro- and micronutrients, keyed to leaf position on the stem: immobile elements (calcium, boron) shown affecting the youngest growth at the tip, mobile elements (nitrogen, potassium, phosphorus, magnesium) shown affecting older lower leaves first&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/essential-element-deficiency.png&#34; alt=&#34;Deficiency symptom chart across macro- and micronutrients, keyed to leaf position on the stem: immobile elements (calcium, boron) shown affecting the youngest growth at the tip, mobile elements (nitrogen, potassium, phosphorus, magnesium) shown affecting older lower leaves first&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: public domain&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Root Uptake Mechanisms&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;root-uptake-mechanisms&#34;&gt;&lt;/span&gt;
@@ -742,7 +742,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
     href=&#34;../phloem-transport-translocation/&#34;&gt;Phloem Transport &amp;amp; Translocation&lt;/a&gt;), applied here to mineral uptake instead of sucrose.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/proton-motive-force-uptake.png&#34; alt=&#34;Membrane transport underlying the proton motive force: an ATP-driven H&amp;#43; pump establishes a charge and pH gradient across the membrane, which channels (cation/anion/water) and carriers (symport, antiport, uniport) then use to move other solutes across&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/proton-motive-force-uptake.png&#34; alt=&#34;Membrane transport underlying the proton motive force: an ATP-driven H&amp;#43; pump establishes a charge and pH gradient across the membrane, which channels (cation/anion/water) and carriers (symport, antiport, uniport) then use to move other solutes across&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ScienceDirect (journal article, S0005273600001280)&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -755,7 +755,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
     &lt;a href=&#34;#nitrogen-fixation-and-the-rhizobium-symbiosis&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Atmospheric N₂ is abundant but chemically inert (a strong triple bond) and unusable by plants directly; &lt;strong&gt;nitrogen fixation&lt;/strong&gt; (reducing N₂ to biologically usable NH₃/NH₄⁺) is performed only by certain prokaryotes, using the enzyme &lt;strong&gt;nitrogenase&lt;/strong&gt; (with a molybdenum-iron cofactor, the reason molybdenum is an essential plant micronutrient despite the plant not fixing nitrogen itself). Legumes form a specific symbiosis with &lt;strong&gt;Rhizobium&lt;/strong&gt; bacteria: the bacteria infect root hairs and induce the plant to form specialized &lt;strong&gt;root nodules&lt;/strong&gt;, inside which Rhizobium differentiate into nitrogen-fixing &lt;strong&gt;bacteroids&lt;/strong&gt;. The relationship is mutualistic and tightly regulated on both sides: the plant supplies the bacteroids with carbohydrate (photosynthate delivered via phloem) and synthesizes &lt;strong&gt;leghemoglobin&lt;/strong&gt; inside the nodule specifically to bind free O₂ and keep the nodule&amp;rsquo;s internal oxygen concentration low (nitrogenase is irreversibly inactivated by O₂), while the bacteroids supply the plant with fixed nitrogen it could not otherwise access from most soils at a comparable energetic cost. This is the physiological mechanism underlying the &amp;ldquo;nitrogen fixation&amp;rdquo; entry in the ecosystem-level nitrogen cycle covered in &lt;a
     href=&#34;../../8-ecology/&#34;&gt;Ecology&lt;/a&gt;, that page treats nitrogen fixation as one flux among many in a whole-ecosystem nutrient budget, while this page covers the specific plant-microbe mechanism producing that flux.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/root-nodule-cross-section.png&#34; alt=&#34;Root nodule structure compared across a lateral root, leguminous determinate and indeterminate nodules, and an actinorhizal nodule: epidermis, cortex, pericycle, endodermis, peripheral vasculature, and the infected cells housing the nitrogen-fixing symbiont are labeled in each&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/root-nodule-cross-section.png&#34; alt=&#34;Root nodule structure compared across a lateral root, leguminous determinate and indeterminate nodules, and an actinorhizal nodule: epidermis, cortex, pericycle, endodermis, peripheral vasculature, and the infected cells housing the nitrogen-fixing symbiont are labeled in each&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ScienceDirect (topic page, &amp;ldquo;Root Nodule&amp;rdquo;)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Mycorrhizal Symbiosis&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;mycorrhizal-symbiosis&#34;&gt;&lt;/span&gt;
@@ -764,14 +764,14 @@ $$ \Psi = \Psi_s + \Psi_p $$
 &lt;li&gt;&lt;strong&gt;Arbuscular mycorrhizae&lt;/strong&gt;, fungal hyphae penetrate root cortical cell walls (but not the plasma membrane) and form highly branched &lt;strong&gt;arbuscules&lt;/strong&gt; within the cell, a large-surface-area interface for nutrient exchange; the dominant mycorrhizal type across most plant lineages, especially effective at improving phosphorus uptake (an ion that diffuses very slowly through soil and is easily depleted in the immediate vicinity of a root).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/arbuscular-mycorrhiza.png&#34; alt=&#34;Arbuscular mycorrhizal fungus-plant symbiosis: extraradical mycelium and spores in the soil, hyphal branching and a hyphopodium at the root epidermis, intraradical hyphae penetrating cortical cells, and branched arbuscules and vesicles formed within cortex cells&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/arbuscular-mycorrhiza.png&#34; alt=&#34;Arbuscular mycorrhizal fungus-plant symbiosis: extraradical mycelium and spores in the soil, hyphal branching and a hyphopodium at the root epidermis, intraradical hyphae penetrating cortical cells, and branched arbuscules and vesicles formed within cortex cells&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ResearchGate, fig. 1, &amp;ldquo;Arbuscular mycorrhizal fungi colonize root cortical cells through germinating spores&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Ectomycorrhizae&lt;/strong&gt;: fungal hyphae form a dense sheath around the root surface and penetrate between (not into) cortical cells, forming a &lt;strong&gt;Hartig net&lt;/strong&gt;; characteristic of many temperate forest trees (pines, oaks, beeches).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/ectomycorrhiza-hartig-net.png&#34; alt=&#34;Ectomycorrhizal structure compared between an angiosperm and a pine root: external hyphae and mantle hyphae sheathing the root surface, Hartig net hyphae between epidermal and cortex cells (not entering them), hypodermis and endodermis labeled&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/ectomycorrhiza-hartig-net.png&#34; alt=&#34;Ectomycorrhizal structure compared between an angiosperm and a pine root: external hyphae and mantle hyphae sheathing the root surface, Hartig net hyphae between epidermal and cortex cells (not entering them), hypodermis and endodermis labeled&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: public domain&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;In both types the fungus receives photosynthate from the plant in exchange for extending the effective absorptive surface area for water and, especially, poorly mobile mineral ions like phosphorus, a division of labor directly analogous to the Rhizobium symbiosis above, but for general mineral/water uptake rather than nitrogen specifically, and via a fungal rather than bacterial partner.&lt;/p&gt;
@@ -971,10 +971,10 @@ $$ \Psi = \Psi_s + \Psi_p $$
     
     <item>
       <title>Light Reactions &amp; Photophosphorylation</title>
-      <link>http://localhost:1313/resources/5-plant-physiology/light-reactions-photophosphorylation/</link>
+      <link>https://bioguide.world/resources/5-plant-physiology/light-reactions-photophosphorylation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/5-plant-physiology/light-reactions-photophosphorylation/</guid>
+      <guid>https://bioguide.world/resources/5-plant-physiology/light-reactions-photophosphorylation/</guid>
       <description>
         
         
@@ -1023,7 +1023,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
 &lt;li&gt;&lt;strong&gt;Photosystem I (PSI)&lt;/strong&gt;, reaction center &lt;strong&gt;P700&lt;/strong&gt; (absorbs maximally near 700 nm)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/photosystem-structure.avif&#34; alt=&#34;How a photosystem harvests light: a photon absorbed anywhere in the light-harvesting complex’s pigment molecules is passed by resonance energy transfer to the special pair of chlorophyll a molecules in the reaction-center complex, which ejects an electron to the primary electron acceptor&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/photosystem-structure.avif&#34; alt=&#34;How a photosystem harvests light: a photon absorbed anywhere in the light-harvesting complex’s pigment molecules is passed by resonance energy transfer to the special pair of chlorophyll a molecules in the reaction-center complex, which ejects an electron to the primary electron acceptor&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Preach Bio&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;The Z-Scheme: Linear Electron Flow&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-z-scheme-linear-electron-flow&#34;&gt;&lt;/span&gt;
@@ -1046,23 +1046,23 @@ $$ \Psi = \Psi_s + \Psi_p $$
     ETC2 --&amp;gt; NADP[&amp;#34;NADP+ reductase -&amp;gt; NADPH&amp;#34;];
   &lt;/pre&gt;
 &lt;/div&gt;&lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/z-scheme-electron-flow.png&#34; alt=&#34;Full Z-scheme of electron transport: redox potential plotted against each carrier from water/oxygen-evolving complex through PSII (P680), the plastoquinone-cytochrome b6f-plastocyanin chain, PSI (P700), and ferredoxin to NADP&amp;#43; reductase, with approximate timescales for each transfer step&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/z-scheme-electron-flow.png&#34; alt=&#34;Full Z-scheme of electron transport: redox potential plotted against each carrier from water/oxygen-evolving complex through PSII (P680), the plastoquinone-cytochrome b6f-plastocyanin chain, PSI (P700), and ferredoxin to NADP&amp;#43; reductase, with approximate timescales for each transfer step&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ResearchGate, fig. 6 (diagram modified from Demeter &amp;amp; Govindjee, 1989, per in-image credit)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/oxygen-evolving-complex.png&#34; alt=&#34;Oxygen-evolving complex detail: (A) the Mn4CaO5 cluster and its position relative to Tyrz, P680, pheophytin, and the QA/QB plastoquinone acceptors within the PSII protein structure; (B) the Kok cycle of S-state transitions (S0-S4) through which the complex accumulates oxidizing power before releasing O2&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/oxygen-evolving-complex.png&#34; alt=&#34;Oxygen-evolving complex detail: (A) the Mn4CaO5 cluster and its position relative to Tyrz, P680, pheophytin, and the QA/QB plastoquinone acceptors within the PSII protein structure; (B) the Kok cycle of S-state transitions (S0-S4) through which the complex accumulates oxidizing power before releasing O2&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Frontiers in Plant Science&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Chemiosmotic ATP Synthesis&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;chemiosmotic-atp-synthesis&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#chemiosmotic-atp-synthesis&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Protons accumulate in the thylakoid lumen from two sources acting together: directly from water-splitting (step 2 above) and from active pumping by the cytochrome b₆f complex (step 3). Because the thylakoid membrane is otherwise impermeable to H⁺, this produces a steep proton gradient (both a concentration gradient and, since the lumen becomes positively charged, an electrical gradient) across the membrane, a &lt;strong&gt;proton motive force&lt;/strong&gt; conceptually identical to the one driving oxidative phosphorylation in mitochondrial respiration, but built from light-driven electron transport instead. Protons can only cross back out through &lt;strong&gt;ATP synthase&lt;/strong&gt;, a membrane-embedded enzyme that couples the energetically favorable flow of H⁺ down its gradient to the energetically unfavorable synthesis of ATP from ADP + Pᵢ, the process of &lt;strong&gt;photophosphorylation&lt;/strong&gt;, mechanistically chemiosmotic (a proton gradient across a membrane driving ATP synthase) rather than substrate-level.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/thylakoid-chemiosmosis.png&#34; alt=&#34;Chemiosmotic ATP synthesis across the thylakoid membrane: water-splitting and photosystem II electron transport deposit H&amp;#43; in the lumen, PSII/electron carriers move electrons toward NADP&amp;#43; reduction in the stroma, and ATP synthase uses the resulting H&amp;#43; gradient to phosphorylate ADP, producing ATP for the Calvin cycle&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/thylakoid-chemiosmosis.png&#34; alt=&#34;Chemiosmotic ATP synthesis across the thylakoid membrane: water-splitting and photosystem II electron transport deposit H&amp;#43; in the lumen, PSII/electron carriers move electrons toward NADP&amp;#43; reduction in the stroma, and ATP synthase uses the resulting H&amp;#43; gradient to phosphorylate ADP, producing ATP for the Calvin cycle&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: © Merriam-Webster, Inc.&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Cyclic Electron Flow&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;cyclic-electron-flow&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#cyclic-electron-flow&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;When a chloroplast&amp;rsquo;s NADPH supply is already saturated relative to its ATP demand (common when Calvin cycle activity, and therefore NADPH consumption, is limited relative to other cellular ATP needs), electrons ejected from PSI&amp;rsquo;s P700 can be redirected back into the cytochrome b₆f complex instead of continuing to NADP⁺ reductase, a route called &lt;strong&gt;cyclic electron flow&lt;/strong&gt;. This bypasses PSII entirely (no water-splitting, no O₂ released, no NADPH produced) but still pumps protons via cytochrome b₆f, generating additional ATP without additional NADPH, a way to fine-tune the ATP:NADPH ratio the Calvin cycle actually needs (a ratio the strict linear pathway alone cannot supply, since it always produces both products in a fixed proportion).&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/cyclic-electron-flow.png&#34; alt=&#34;Cyclic photophosphorylation: an electron ejected from the PSI special pair (reaction center) passes through ferredoxin, a plastoquinone-like carrier, and cytochrome b/cytochrome f back to PSI, pumping protons that drive ATP synthesis (ADP &amp;#43; Pi to ATP) without involving PSII or producing NADPH&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/cyclic-electron-flow.png&#34; alt=&#34;Cyclic photophosphorylation: an electron ejected from the PSI special pair (reaction center) passes through ferredoxin, a plastoquinone-like carrier, and cytochrome b/cytochrome f back to PSI, pumping protons that drive ATP synthesis (ADP &amp;#43; Pi to ATP) without involving PSII or producing NADPH&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Biology Reader (credit in image)&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Comparative Structures&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;comparative-structures&#34;&gt;&lt;/span&gt;
@@ -1252,10 +1252,10 @@ $$ \Psi = \Psi_s + \Psi_p $$
     
     <item>
       <title>Calvin Cycle, Photorespiration &amp; C4/CAM Biochemistry</title>
-      <link>http://localhost:1313/resources/5-plant-physiology/calvin-cycle-photorespiration-c4-cam/</link>
+      <link>https://bioguide.world/resources/5-plant-physiology/calvin-cycle-photorespiration-c4-cam/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/5-plant-physiology/calvin-cycle-photorespiration-c4-cam/</guid>
+      <guid>https://bioguide.world/resources/5-plant-physiology/calvin-cycle-photorespiration-c4-cam/</guid>
       <description>
         
         
@@ -1271,7 +1271,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/5-plant-physiology/light-reactions-photophosphorylation/&#34;&gt;Light Reactions Photophosphorylation&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;https://bioguide.world/resources/5-plant-physiology/light-reactions-photophosphorylation/&#34;&gt;Light Reactions Photophosphorylation&lt;/a&gt;
     
   
   
@@ -1311,19 +1311,19 @@ $$ \Psi = \Psi_s + \Psi_p $$
 &lt;p&gt;Net cost per 3 CO₂ fixed: 9 ATP and 6 NADPH consumed for 1 net G3P produced. That stoichiometry is worth knowing because it is exactly what makes the ATP:NADPH ratio delivered by the light reactions matter, and exactly why cyclic electron flow (see &lt;a
     href=&#34;../light-reactions-photophosphorylation/&#34;&gt;Light Reactions &amp;amp; Photophosphorylation&lt;/a&gt;) exists to supplement ATP output when this ratio runs short.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/calvin-cycle-full.png&#34; alt=&#34;Full Calvin cycle: 3 CO2 fixed onto RuBP by RuBisCO (stage 1, carbon fixation) yields 6 3-PGA, reduced using 6 ATP and 6 NADPH to 6 G3P (stage 2), of which 1 exits as net output and the remaining 5 are rearranged using 3 more ATP back into 3 RuBP (stage 3, regeneration)&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/calvin-cycle-full.png&#34; alt=&#34;Full Calvin cycle: 3 CO2 fixed onto RuBP by RuBisCO (stage 1, carbon fixation) yields 6 3-PGA, reduced using 6 ATP and 6 NADPH to 6 G3P (stage 2), of which 1 exits as net output and the remaining 5 are rearranged using 3 more ATP back into 3 RuBP (stage 3, regeneration)&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Biology LibreTexts&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Photorespiration: Rubisco&amp;rsquo;s Oxygenase Side-Reaction&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;photorespiration-rubiscos-oxygenase-side-reaction&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#photorespiration-rubiscos-oxygenase-side-reaction&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Rubisco&amp;rsquo;s active site cannot perfectly discriminate between CO₂ and O₂, and under conditions that lower the local CO₂:O₂ ratio at the active site, such as high temperature (which lowers CO₂ solubility relative to O₂ and increases Rubisco&amp;rsquo;s relative affinity for O₂) and stomatal closure under water stress (which restricts fresh CO₂ entry while O₂ from ongoing photosynthesis accumulates, see &lt;a
     href=&#34;../stomatal-physiology-gas-exchange/&#34;&gt;Stomatal Physiology &amp;amp; Gas Exchange&lt;/a&gt;), Rubisco increasingly catalyzes &lt;strong&gt;oxygenation&lt;/strong&gt; of RuBP instead of carboxylation.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/rubisco-carboxylase-oxygenase.png&#34; alt=&#34;Rubisco’s dual reaction as a shared branch point: with CO2 (left), RuBP carboxylation feeds ordinary photosynthesis, consuming ATP/NADPH and yielding 2x 3PGA/sugars; with O2 (right), oxygenation feeds photorespiration instead, consuming ATP/NADPH/CO2 and yielding a 3PGA&amp;#43;2PG mixture that ultimately releases CO2&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/rubisco-carboxylase-oxygenase.png&#34; alt=&#34;Rubisco’s dual reaction as a shared branch point: with CO2 (left), RuBP carboxylation feeds ordinary photosynthesis, consuming ATP/NADPH and yielding 2x 3PGA/sugars; with O2 (right), oxygenation feeds photorespiration instead, consuming ATP/NADPH/CO2 and yielding a 3PGA&amp;#43;2PG mixture that ultimately releases CO2&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Encyclopedia (encyclopedia.pub), entry 9827&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;This produces one molecule of 3-PGA (usable) and one of &lt;strong&gt;2-phosphoglycolate&lt;/strong&gt;, a toxic 2-carbon compound that is not part of the Calvin cycle and must be salvaged through the &lt;strong&gt;photorespiration (glycolate) pathway&lt;/strong&gt;, a costly process spanning three organelles (chloroplast, peroxisome, mitochondrion) that recovers only 3 of every 4 carbons entering it as usable product, consumes additional ATP, and releases the fourth carbon as CO₂, a net loss of both fixed carbon and previously invested energy, and the direct biochemical reason C3 photosynthesis becomes inefficient under hot, dry, high-light conditions.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/photorespiration-glycolate-pathway.png&#34; alt=&#34;Photorespiration (glycolate pathway) spanning three organelles: chloroplast Rubisco splits between 3-PGA and 2-PG (energy loss versus ordinary photosynthesis), the peroxisome converts glycolate through glyoxylate/glycine, and the mitochondrion converts glycine to serine, releasing both NH3 (re-assimilated at ATP cost) and CO2 (a net carbon loss)&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/photorespiration-glycolate-pathway.png&#34; alt=&#34;Photorespiration (glycolate pathway) spanning three organelles: chloroplast Rubisco splits between 3-PGA and 2-PG (energy loss versus ordinary photosynthesis), the peroxisome converts glycolate through glyoxylate/glycine, and the mitochondrion converts glycine to serine, releasing both NH3 (re-assimilated at ATP cost) and CO2 (a net carbon loss)&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: New Phytologist&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;C4 Biochemistry: Spatial CO2 Concentration&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;c4-biochemistry-spatial-co2-concentration&#34;&gt;&lt;/span&gt;
@@ -1337,7 +1337,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
 &lt;/ol&gt;
 &lt;p&gt;This spatial separation costs extra ATP per CO₂ fixed compared to C3 (for the PEP regeneration step), but that cost is repaid, under hot and high-light conditions specifically, by nearly eliminating the carbon and energy losses photorespiration would otherwise impose, which is why C4 is an advantage in exactly the environments where C3 struggles, not universally.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/c4-pathway-biochemistry.png&#34; alt=&#34;C4 photosynthetic pathway: (A) in the mesophyll cell, CA and PEPC fix CO2/HCO3- onto PEP to form OAA, converted to a 4-carbon acid (malate/aspartate) shuttled to the bundle sheath cell, where a decarboxylase (DC) releases CO2 to RuBisCO/the Calvin cycle, with pyruvate/alanine shuttled back and reconverted to PEP by PPDK; (B) the ATP/NADPH cost per CO2 fixed, split between mesophyll and bundle sheath, compared across the NADP-ME, NAD-ME, and PEPCK biochemical subtypes&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/c4-pathway-biochemistry.png&#34; alt=&#34;C4 photosynthetic pathway: (A) in the mesophyll cell, CA and PEPC fix CO2/HCO3- onto PEP to form OAA, converted to a 4-carbon acid (malate/aspartate) shuttled to the bundle sheath cell, where a decarboxylase (DC) releases CO2 to RuBisCO/the Calvin cycle, with pyruvate/alanine shuttled back and reconverted to PEP by PPDK; (B) the ATP/NADPH cost per CO2 fixed, split between mesophyll and bundle sheath, compared across the NADP-ME, NAD-ME, and PEPCK biochemical subtypes&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Encyclopedia (encyclopedia.pub)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;CAM Biochemistry: Temporal CO2 Concentration&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;cam-biochemistry-temporal-co2-concentration&#34;&gt;&lt;/span&gt;
@@ -1350,7 +1350,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
 &lt;/ul&gt;
 &lt;p&gt;Because CO₂ uptake (night) and CO₂ fixation via the Calvin cycle (day) are separated in time rather than location, a single mesophyll cell type suffices, at the cost of requiring large-volume malic acid storage between the two phases, directly explaining the enlarged vacuoles CAM leaf anatomy shows structurally.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/cam-diurnal-cycle.png&#34; alt=&#34;CAM diurnal cycle: at night (stomata open), CO2 combines with PEP via PEPC (primary carboxylation) to form a C4 acid stored in the vacuole; during the day (stomata closed), the C4 acid is decarboxylated back to a C3 acid, releasing CO2 to Rubisco and the Calvin-Benson cycle (secondary carboxylation), with surplus carbon stored as starch&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/cam-diurnal-cycle.png&#34; alt=&#34;CAM diurnal cycle: at night (stomata open), CO2 combines with PEP via PEPC (primary carboxylation) to form a C4 acid stored in the vacuole; during the day (stomata closed), the C4 acid is decarboxylated back to a C3 acid, releasing CO2 to Rubisco and the Calvin-Benson cycle (secondary carboxylation), with surplus carbon stored as starch&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ScienceDirect (topic page, &amp;ldquo;Crassulacean Acid Metabolism&amp;rdquo;)&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Comparative Structures&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;comparative-structures&#34;&gt;&lt;/span&gt;
@@ -1593,10 +1593,10 @@ $$ \Psi = \Psi_s + \Psi_p $$
     
     <item>
       <title>Plant Hormones</title>
-      <link>http://localhost:1313/resources/5-plant-physiology/plant-hormones/</link>
+      <link>https://bioguide.world/resources/5-plant-physiology/plant-hormones/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/5-plant-physiology/plant-hormones/</guid>
+      <guid>https://bioguide.world/resources/5-plant-physiology/plant-hormones/</guid>
       <description>
         
         
@@ -1643,12 +1643,12 @@ $$ \Psi = \Psi_s + \Psi_p $$
     &lt;a href=&#34;#auxin-iaa&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Synthesized primarily in shoot apical meristems and young leaves, then transported &lt;strong&gt;polarly&lt;/strong&gt; (unidirectionally, cell to cell, via asymmetrically localized &lt;strong&gt;PIN transporter proteins&lt;/strong&gt; that export auxin only from one end of each cell) predominantly from shoot tip toward the root, a directional, energy-dependent transport mechanism unlike the passive diffusion of most other hormones. Auxin promotes cell elongation (by loosening the cell wall, permitting turgor-driven expansion), maintains &lt;strong&gt;apical dominance&lt;/strong&gt; (auxin from the shoot apex suppresses outgrowth of lateral/axillary buds below it; removing the apex releases this suppression, the physiological basis of pruning to promote bushier growth), and promotes lateral root initiation from the pericycle (see &lt;a
     href=&#34;../../6-plant-anatomy/root-anatomy/&#34;&gt;Root Anatomy&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/apical-dominance.png&#34; alt=&#34;Apical dominance mechanism, historical and current models: (A) the 1930s model (auxin directly inhibiting bud auxin synthesis; auxin diverting root/cotyledon growth factors away from buds; auxin indirectly inhibiting buds via stem growth), compared to (B, C) the 2010s auxin-transport-canalization and second-messenger (strigolactone/cytokinin) models&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/apical-dominance.png&#34; alt=&#34;Apical dominance mechanism, historical and current models: (A) the 1930s model (auxin directly inhibiting bud auxin synthesis; auxin diverting root/cotyledon growth factors away from buds; auxin indirectly inhibiting buds via stem growth), compared to (B, C) the 2010s auxin-transport-canalization and second-messenger (strigolactone/cytokinin) models&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Frontiers in Plant Science&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The classic &lt;strong&gt;Darwin/Went coleoptile experiments&lt;/strong&gt; (a grass seedling&amp;rsquo;s coleoptile bends toward light only if its tip is intact and light-exposed; a severed tip&amp;rsquo;s diffusible substance, collected in agar and reapplied off-center, causes bending even in the dark) first demonstrated that a mobile chemical signal, not a direct tissue response, causes phototropic bending, established before auxin was chemically identified, and the model this page&amp;rsquo;s classic-experiment framing follows throughout.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/coleoptile-bending-experiment.png&#34; alt=&#34;The classic phototropism experimental series: an intact, light-exposed coleoptile bends toward light; removing the tip abolishes bending; covering the tip with an opaque cap abolishes bending; covering the tip with a transparent cap preserves bending; shielding only the base leaves bending intact, together localizing both light perception and the response-initiating signal to the tip&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/coleoptile-bending-experiment.png&#34; alt=&#34;The classic phototropism experimental series: an intact, light-exposed coleoptile bends toward light; removing the tip abolishes bending; covering the tip with an opaque cap abolishes bending; covering the tip with a transparent cap preserves bending; shielding only the base leaves bending intact, together localizing both light perception and the response-initiating signal to the tip&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Pathwayz.org&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Gibberellins (GA)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;gibberellins-ga&#34;&gt;&lt;/span&gt;
@@ -1663,13 +1663,13 @@ $$ \Psi = \Psi_s + \Psi_p $$
 &lt;h3&gt;Ethylene&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;ethylene&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#ethylene&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Unlike the other five hormones, ethylene is a &lt;strong&gt;gas&lt;/strong&gt; and diffuses freely through air spaces rather than requiring vascular or cell-to-cell transport, which is why it can coordinate ripening or senescence across an entire fruit or even between adjacent fruits (the basis of the practical observation that one ripening fruit accelerates ripening in nearby fruit, and of commercial ripening chambers). Ethylene promotes &lt;strong&gt;fruit ripening&lt;/strong&gt; (activating enzymes that break down cell wall pectin, convert starches to sugars, and degrade chlorophyll), leaf and flower &lt;strong&gt;abscission&lt;/strong&gt; (senescence-triggered detachment via enzymatic breakdown of a specialized &lt;strong&gt;abscission zone&lt;/strong&gt; layer at the base of the petiole or pedicel), and the seedling &lt;strong&gt;triple response&lt;/strong&gt;, a classic diagnostic assay in which a dark-grown seedling exposed to ethylene shows three simultaneous morphological changes (radial swelling/thickening of the stem, a reduction in stem elongation rate, and exaggerated curvature of the apical hook) that together represent a specific &amp;ldquo;obstacle encountered&amp;rdquo; developmental program, historically used to identify ethylene-signaling mutants (before molecular tools existed) by screening dark-grown seedlings for those failing to show all three components of the response even when ethylene is supplied.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/ethylene-triple-response.png&#34; alt=&#34;The triple response in dark-grown seedlings: gram and pea seedlings treated with ethylene (left of each pair) show exaggerated curvature of the plumular hook, inhibition of hypocotyl/root elongation, and radial swelling of the root/hypocotyl, compared to untreated controls&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/ethylene-triple-response.png&#34; alt=&#34;The triple response in dark-grown seedlings: gram and pea seedlings treated with ethylene (left of each pair) show exaggerated curvature of the plumular hook, inhibition of hypocotyl/root elongation, and radial swelling of the root/hypocotyl, compared to untreated controls&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Springer (book chapter, doi 978-981-13-2023-1_19)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Brassinosteroids&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;brassinosteroids&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#brassinosteroids&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Structurally steroid-like (unlike the other five hormones), synthesized broadly across tissues, and acting largely locally rather than being transported long distances. Brassinosteroids promote cell elongation and division in a way that overlaps functionally with auxin and gibberellin (a mutant deficient in brassinosteroid synthesis shows a dwarf phenotype reminiscent of a GA-deficient mutant, but is not rescued by GA application, the specific genetic test distinguishing the two dwarfing causes) and also contribute to vascular tissue differentiation and stress tolerance.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/plant-hormones-summary.png&#34; alt=&#34;Six-hormone summary table: chemical nature, primary sites of biosynthesis, transport mode, and effects for auxins, cytokinins, ethylene, abscisic acid, gibberellins, and brassinosteroids, side by side&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/plant-hormones-summary.png&#34; alt=&#34;Six-hormone summary table: chemical nature, primary sites of biosynthesis, transport mode, and effects for auxins, cytokinins, ethylene, abscisic acid, gibberellins, and brassinosteroids, side by side&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: public source&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Comparative Structures&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;comparative-structures&#34;&gt;&lt;/span&gt;
@@ -1855,10 +1855,10 @@ $$ \Psi = \Psi_s + \Psi_p $$
     
     <item>
       <title>Tropisms &amp; Nastic Movements</title>
-      <link>http://localhost:1313/resources/5-plant-physiology/tropisms-nastic-movements/</link>
+      <link>https://bioguide.world/resources/5-plant-physiology/tropisms-nastic-movements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/5-plant-physiology/tropisms-nastic-movements/</guid>
+      <guid>https://bioguide.world/resources/5-plant-physiology/tropisms-nastic-movements/</guid>
       <description>
         
         
@@ -1874,7 +1874,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/5-plant-physiology/plant-hormones/&#34;&gt;Plant Hormones&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;https://bioguide.world/resources/5-plant-physiology/plant-hormones/&#34;&gt;Plant Hormones&lt;/a&gt;
     
   
   
@@ -1909,19 +1909,19 @@ $$ \Psi = \Psi_s + \Psi_p $$
     href=&#34;../plant-hormones/&#34;&gt;Plant Hormones&lt;/a&gt;, explains this as &lt;strong&gt;asymmetric auxin distribution&lt;/strong&gt; rather than a direct light-driven growth change: blue light is detected by &lt;strong&gt;phototropin&lt;/strong&gt; photoreceptors (the same receptor class covered driving stomatal opening on &lt;a
     href=&#34;../stomatal-physiology-gas-exchange/&#34;&gt;Stomatal Physiology &amp;amp; Gas Exchange&lt;/a&gt;) concentrated at the tip, which triggers lateral auxin transport toward the shaded side of the coleoptile or stem before the auxin is transported basipetally. Because auxin promotes cell elongation, the shaded side (now carrying more auxin) elongates faster than the illuminated side, and the unequal elongation rate on the two sides is what physically bends the stem toward the light, a differential-growth mechanism, not a bending of already-formed tissue. This is the same auxin transport machinery (&lt;strong&gt;polar, PIN-transporter-mediated&lt;/strong&gt;) established by the Darwin/Went experiments, redirected laterally rather than simply basipetally.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/cholodny-went-model.png&#34; alt=&#34;Polar auxin transport machinery within and between cells: PIN exporters and AUX1/LAX importers setting up directional IAA flow via the pH gradient between apoplast and cytoplasm, with PIN5/PIN8/PILS/WAT1 additionally regulating intracellular auxin distribution via the ER and vacuole, the general PIN-mediated transport mechanism the Cholodny-Went model’s lateral relocalization builds on&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/cholodny-went-model.png&#34; alt=&#34;Polar auxin transport machinery within and between cells: PIN exporters and AUX1/LAX importers setting up directional IAA flow via the pH gradient between apoplast and cytoplasm, with PIN5/PIN8/PILS/WAT1 additionally regulating intracellular auxin distribution via the ER and vacuole, the general PIN-mediated transport mechanism the Cholodny-Went model’s lateral relocalization builds on&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Wikipedia&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Gravitropism and Statolith Sensing&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;gravitropism-and-statolith-sensing&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#gravitropism-and-statolith-sensing&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Gravitropism&lt;/strong&gt; (geotropism) is directional growth relative to gravity: most roots show &lt;strong&gt;positive gravitropism&lt;/strong&gt; (grow toward gravity, downward) while most shoots show &lt;strong&gt;negative gravitropism&lt;/strong&gt; (grow away from gravity, upward), the same organ-specific auxin sensitivity difference explaining the opposite sign, since roots are far more sensitive to auxin and are inhibited by the same concentration that promotes elongation in a shoot. Gravity is detected via &lt;strong&gt;statoliths&lt;/strong&gt;: dense, starch-filled amyloplasts that settle toward the gravity-ward side of specialized &lt;strong&gt;statocyte&lt;/strong&gt; cells (concentrated in the root cap&amp;rsquo;s columella cells, and in the stem&amp;rsquo;s endodermis or vascular bundle sheath) under simple sedimentation. Statolith settling triggers redistribution of &lt;strong&gt;PIN auxin transporters&lt;/strong&gt; to the lower side of the statocyte, again producing asymmetric lateral auxin transport exactly as in phototropism, but triggered by gravity sensing rather than light sensing, and with an opposite growth response in root tissue because of that tissue&amp;rsquo;s heightened auxin sensitivity. A root&amp;rsquo;s gravitropic response depends on an intact root cap, removing it experimentally abolishes gravity sensing (though not growth itself), directly implicating the cap&amp;rsquo;s statocytes as the sensing site rather than the elongating zone behind it.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/root-gravitropism-statocytes.png&#34; alt=&#34;Root gravitropism: in a vertically growing root tip, statocytes at the columella show downward-settled statoliths (red arrows) and symmetric auxin efflux (orange cell diagrams); after gravistimulation/reorientation, statoliths resettle toward the new lower side and auxin is redistributed asymmetrically (yellow arrows) toward that side, producing differential elongation that reorients growth back toward gravity&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/root-gravitropism-statocytes.png&#34; alt=&#34;Root gravitropism: in a vertically growing root tip, statocytes at the columella show downward-settled statoliths (red arrows) and symmetric auxin efflux (orange cell diagrams); after gravistimulation/reorientation, statoliths resettle toward the new lower side and auxin is redistributed asymmetrically (yellow arrows) toward that side, producing differential elongation that reorients growth back toward gravity&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Frontiers in Plant Science (fpls.2017.01304)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Thigmotropism&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;thigmotropism&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#thigmotropism&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Thigmotropism&lt;/strong&gt; is directional growth in response to physical contact, most visibly in the tendrils of climbing plants (e.g. pea, grape, cucumber), which grow straight until contacting a support, then rapidly curl around it via differential, contact-side-specific growth, mechanistically an asymmetric growth response analogous to photo- and gravitropism, but triggered by mechanical touch receptors rather than light or statolith sedimentation. Twining stems (e.g. morning glory, bindweed) show a related but distinct whole-stem coiling response used to climb a support without a specialized tendril organ.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/tendril-coiling-thigmotropism.png&#34; alt=&#34;Positive thigmotropism in a stem tendril: a tendril on a weak-stemmed climbing plant grows freely until it contacts a support, then coils tightly around it, converting an otherwise unsupported stem into one that can climb upward&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/tendril-coiling-thigmotropism.png&#34; alt=&#34;Positive thigmotropism in a stem tendril: a tendril on a weak-stemmed climbing plant grows freely until it contacts a support, then coils tightly around it, converting an otherwise unsupported stem into one that can climb upward&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: sciencefacts.net&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Nastic Movements&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;nastic-movements&#34;&gt;&lt;/span&gt;
@@ -1930,14 +1930,14 @@ $$ \Psi = \Psi_s + \Psi_p $$
 &lt;li&gt;&lt;strong&gt;&lt;em&gt;Mimosa pudica&lt;/em&gt; seismonastic response (touch-me-not)&lt;/strong&gt;, mechanical stimulation triggers a rapid &lt;strong&gt;action-potential-like electrical signal&lt;/strong&gt; that propagates to the pulvinus, where motor cells on one side rapidly lose K⁺ and water (turgor collapse) while the opposite side does not, causing the leaflets to fold and the petiole to droop within seconds, a defensive response thought to deter herbivores by suddenly appearing less like intact leaf tissue, or to dislodge small feeding insects directly.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/mimosa-pulvinus-states.png&#34; alt=&#34;Mimosa pudica seismonastic response: (a) unstimulated leaflets held open; (b) leaflets folded within seconds of mechanical stimulation; (c) the pulvinus (motor organ) in cross-section, showing flaccid cells on one side and turgid cells on the other, the asymmetric turgor loss producing the fold&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/mimosa-pulvinus-states.png&#34; alt=&#34;Mimosa pudica seismonastic response: (a) unstimulated leaflets held open; (b) leaflets folded within seconds of mechanical stimulation; (c) the pulvinus (motor organ) in cross-section, showing flaccid cells on one side and turgid cells on the other, the asymmetric turgor loss producing the fold&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: University of Reading (Tropical Biodiversity blog)&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Venus flytrap (&lt;em&gt;Dionaea&lt;/em&gt;) snap-trap closure&lt;/strong&gt;, mechanical stimulation of trigger hairs on the trap&amp;rsquo;s inner surface (requiring two touches within roughly 20 seconds, or one sustained touch, a specific threshold mechanism reducing false triggers from a single raindrop or debris) generates an action potential that triggers rapid turgor-driven closure of the trap lobes, followed by slower, growth-based tightening that seals the trap fully once prey is confirmed present by continued struggling.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/venus-flytrap-closure.png&#34; alt=&#34;Venus flytrap closure sequence after trigger-hair stimulation: two independent trials (A, B) each show the trap open at 0s and progressively closing over roughly 3 seconds following mechanical stimulation of the trigger hairs&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/venus-flytrap-closure.png&#34; alt=&#34;Venus flytrap closure sequence after trigger-hair stimulation: two independent trials (A, B) each show the trap open at 0s and progressively closing over roughly 3 seconds following mechanical stimulation of the trigger hairs&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ResearchGate, fig. 5, &amp;ldquo;Sequence of Venus flytrap photos after stimulation of trigger hairs&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -2113,10 +2113,10 @@ $$ \Psi = \Psi_s + \Psi_p $$
     
     <item>
       <title>Photoperiodism, Vernalization &amp; Flowering</title>
-      <link>http://localhost:1313/resources/5-plant-physiology/photoperiodism-vernalization-flowering/</link>
+      <link>https://bioguide.world/resources/5-plant-physiology/photoperiodism-vernalization-flowering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/5-plant-physiology/photoperiodism-vernalization-flowering/</guid>
+      <guid>https://bioguide.world/resources/5-plant-physiology/photoperiodism-vernalization-flowering/</guid>
       <description>
         
         
@@ -2132,7 +2132,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/5-plant-physiology/plant-hormones/&#34;&gt;Plant Hormones&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;https://bioguide.world/resources/5-plant-physiology/plant-hormones/&#34;&gt;Plant Hormones&lt;/a&gt;
     
   
   
@@ -2164,7 +2164,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
     &lt;a href=&#34;#key-concepts&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Phytochrome and the Red/Far-Red Switch&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;phytochrome-and-the-redfar-red-switch&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#phytochrome-and-the-redfar-red-switch&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Phytochrome&lt;/strong&gt; is a photoreversible pigment-protein that exists in two interconvertible forms: &lt;strong&gt;Pr&lt;/strong&gt; (absorbs red light, ~660 nm) and &lt;strong&gt;Pfr&lt;/strong&gt; (absorbs far-red light, ~730 nm). Absorbing red light converts Pr to Pfr, and absorbing far-red light converts Pfr back to Pr. Sunlight contains far more red than far-red light, so Pfr accumulates during the day; in darkness, Pfr slowly and spontaneously reverts to Pr over the course of the night (rather than requiring far-red light specifically), at a roughly constant rate. This slow, dark-driven Pfr-to-Pr conversion is what allows phytochrome to function as a night-length timer: the longer an uninterrupted dark period lasts, the more completely Pfr reverts to Pr, so the Pfr:Pr ratio present at dawn is a direct molecular readout of how long the preceding night was. Critically, this makes phytochrome sensitive to &lt;strong&gt;night length&lt;/strong&gt;, not day length directly, which is the basis for the terminology correction in the next section.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/phytochrome-pr-pfr-cycle.png&#34; alt=&#34;Phytochrome Pr/Pfr photoreversible cycle: red light (670 nm) converts the inactive Pr form to the active Pfr form; far-red light (730 nm) or, more slowly, darkness converts Pfr back to Pr&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/phytochrome-pr-pfr-cycle.png&#34; alt=&#34;Phytochrome Pr/Pfr photoreversible cycle: red light (670 nm) converts the inactive Pr form to the active Pfr form; far-red light (730 nm) or, more slowly, darkness converts Pfr back to Pr&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Preach Bio&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Short-Day, Long-Day, and Day-Neutral Plants&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;short-day-long-day-and-day-neutral-plants&#34;&gt;&lt;/span&gt;
@@ -2182,20 +2182,20 @@ $$ \Psi = \Psi_s + \Psi_p $$
 &lt;h3&gt;Vernalization&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;vernalization&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#vernalization&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Some species (many biennials and winter annuals) additionally require &lt;strong&gt;vernalization&lt;/strong&gt;: a prolonged period of cold exposure, typically during winter, before they become competent to flower even under an otherwise inductive photoperiod the following season. Mechanistically, vernalization involves epigenetic silencing of a floral repressor gene (in the well-studied case, sustained cold progressively represses the &lt;em&gt;FLC&lt;/em&gt; repressor via chromatin modification), a change that persists through subsequent cell divisions in the meristem (a form of cellular, mitotically heritable memory of the cold exposure) even after the cold period ends and temperatures rise, which is why a single winter&amp;rsquo;s cold, not the plant&amp;rsquo;s continued exposure to cold at flowering time, is sufficient to unlock the response. Vernalization and photoperiod act as independent checkpoints: a species requiring both will not flower on photoperiod alone without prior cold exposure, nor on cold exposure alone without the correct subsequent photoperiod.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/vernalization-flc-timeline.png&#34; alt=&#34;Vernalization outcome and the classical (pre-molecular) flower-inducing-substance model: left, a slightly germinated seed either chilled (flowers) or not chilled (fails to flower) at the same ordinary growing temperature; right, the classical “vernalin”/“florigen” translocation model proposed to carry the vernalization-induced signal from leaf to flower bud, with devernalization by high temperature&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/vernalization-flc-timeline.png&#34; alt=&#34;Vernalization outcome and the classical (pre-molecular) flower-inducing-substance model: left, a slightly germinated seed either chilled (flowers) or not chilled (fails to flower) at the same ordinary growing temperature; right, the classical “vernalin”/“florigen” translocation model proposed to carry the vernalization-induced signal from leaf to flower bud, with devernalization by high temperature&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: SlideShare&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Florigen: The Mobile Flowering Signal&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;florigen-the-mobile-flowering-signal&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#florigen-the-mobile-flowering-signal&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Photoperiod is sensed in leaves (where phytochrome and the night-length-measuring clock operate), but the floral transition itself occurs at the &lt;strong&gt;shoot apical meristem&lt;/strong&gt;, often at a considerable distance: classic grafting experiments (an induced leaf grafted onto an otherwise non-induced plant of the same species triggers flowering in the recipient) demonstrated decades before its molecular identity was known that a mobile, graft-transmissible signal, not an electrical or purely local response, carries the flowering decision from leaf to apex.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/grafting-experiment-florigen.png&#34; alt=&#34;Grafting technique terminology (in vitro micrografting vs. conventional grafting): scion/microscion, rootstock/microrootstock, and the graft union where callus cells from both sides interconnect the vascular systems&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/grafting-experiment-florigen.png&#34; alt=&#34;Grafting technique terminology (in vitro micrografting vs. conventional grafting): scion/microscion, rootstock/microrootstock, and the graft union where callus cells from both sides interconnect the vascular systems&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: not identified&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;This signal is now identified as &lt;strong&gt;florigen&lt;/strong&gt;, the &lt;strong&gt;FT (Flowering Locus T) protein&lt;/strong&gt;: synthesized in leaf phloem companion cells under inductive photoperiod, then transported through the phloem (see &lt;a
     href=&#34;../phloem-transport-translocation/&#34;&gt;Phloem Transport &amp;amp; Translocation&lt;/a&gt; for the general mechanism carrying it) to the shoot apical meristem, where it triggers the transcriptional program converting the vegetative meristem into a floral meristem, the developmental switch whose structural output (the four floral whorls) is covered on &lt;a
     href=&#34;../../6-plant-anatomy/flower-anatomy-reproductive-structures/&#34;&gt;Flower Anatomy &amp;amp; Reproductive Structures&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/florigen-ft-pathway.png&#34; alt=&#34;FT (florigen) production and transport: under long-day/inductive red:far-red light conditions, FT-producing companion cells in the leaf phloem load FT (and FLP1) protein into the sieve element flow, carrying it to the shoot apical meristem to trigger floral development and to promote stem growth&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/florigen-ft-pathway.png&#34; alt=&#34;FT (florigen) production and transport: under long-day/inductive red:far-red light conditions, FT-producing companion cells in the leaf phloem load FT (and FLP1) protein into the sieve element flow, carrying it to the shoot apical meristem to trigger floral development and to promote stem growth&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ScienceDirect (journal article abstract page, S1534580725000656)&lt;/em&gt;&lt;/p&gt;
 &lt;div role=&#34;img&#34; aria-label=&#34;Diagram&#34;&gt;
@@ -2367,10 +2367,10 @@ $$ \Psi = \Psi_s + \Psi_p $$
     
     <item>
       <title>Seed Germination &amp; Dormancy Physiology</title>
-      <link>http://localhost:1313/resources/5-plant-physiology/seed-germination-dormancy-physiology/</link>
+      <link>https://bioguide.world/resources/5-plant-physiology/seed-germination-dormancy-physiology/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/5-plant-physiology/seed-germination-dormancy-physiology/</guid>
+      <guid>https://bioguide.world/resources/5-plant-physiology/seed-germination-dormancy-physiology/</guid>
       <description>
         
         
@@ -2386,7 +2386,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
   
     &lt;span class=&#34;topic-meta-label&#34;&gt;Prerequisites:&lt;/span&gt;
     
-      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;http://localhost:1313/resources/5-plant-physiology/plant-hormones/&#34;&gt;Plant Hormones&lt;/a&gt;
+      &lt;a class=&#34;badge-custom topic-meta-link&#34; href=&#34;https://bioguide.world/resources/5-plant-physiology/plant-hormones/&#34;&gt;Plant Hormones&lt;/a&gt;
     
   
   
@@ -2419,7 +2419,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
     &lt;a href=&#34;#imbibition&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Germination begins with &lt;strong&gt;imbibition&lt;/strong&gt;: the physical uptake of water by the dry seed&amp;rsquo;s hydrophilic storage macromolecules (starch, protein), generating substantial imbibitional pressure as the seed swells, entirely independent of any active or osmotic transport process (a dead or non-viable seed imbibes water just as readily as a living one, since imbibition is a passive physical property of the seed&amp;rsquo;s dry tissue, not a metabolic response). Water typically enters first through the &lt;strong&gt;micropyle&lt;/strong&gt; (the pore in the seed coat persisting from the ovule, see &lt;a
     href=&#34;../../6-plant-anatomy/seed-fruit-anatomy/&#34;&gt;Seed &amp;amp; Fruit Anatomy&lt;/a&gt;), rehydrating the embryo and reactivating enzymatic machinery that had been essentially inactive in the dry state. Imbibition alone is necessary but not sufficient for germination to proceed, a hydrated seed can still remain dormant if its internal hormonal balance (below) does not permit further development.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/seed-imbibition.png&#34; alt=&#34;Seed structure and imbibition: seed coat layers (wax cuticle, epidermis, sclereids, parenchyma, remnant layer), embryo (hypocotyl, radicle), cotyledon, and the micropyle/hilar fissure/raphe region, with arrows tracing water uptake into the seed coat opening and cotyledon&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/seed-imbibition.png&#34; alt=&#34;Seed structure and imbibition: seed coat layers (wax cuticle, epidermis, sclereids, parenchyma, remnant layer), embryo (hypocotyl, radicle), cotyledon, and the micropyle/hilar fissure/raphe region, with arrows tracing water uptake into the seed coat opening and cotyledon&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: New Phytologist (Wiley Online Library, doi ppp3.10631)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;The GA/ABA Balance Controlling Dormancy&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-gaaba-balance-controlling-dormancy&#34;&gt;&lt;/span&gt;
@@ -2432,14 +2432,14 @@ $$ \Psi = \Psi_s + \Psi_p $$
 &lt;p&gt;Dormancy release is often gated by an additional environmental requirement layered on top of this hormonal balance: cold stratification (a period of moist chilling, mechanistically parallel to vernalization&amp;rsquo;s cold requirement for flowering, see &lt;a
     href=&#34;../photoperiodism-vernalization-flowering/&#34;&gt;Photoperiodism, Vernalization &amp;amp; Flowering&lt;/a&gt;), a period of after-ripening in dry storage, exposure to light (in some small seeds, via the same phytochrome system covered on that page), or scarification (physical or chemical abrasion of an unusually impermeable seed coat, common in many legumes). Each of these environmental gates ultimately acts by shifting the internal GA/ABA balance rather than by a separate independent mechanism.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/ga-aba-dormancy-balance.png&#34; alt=&#34;Model for the regulation of dormancy and germination by ABA and GA: ambient-environment perception drives dormancy induction (ABA synthesis via NCED, GA degradation via GA2ox2) or dormancy breaking (GA synthesis via GA3ox1, ABA degradation via CYP707A2); the resulting ABA/GA sensitivity balance is integrated into ABA or GA signaling, producing a dormant/cycling or non-dormant/germinating response&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/ga-aba-dormancy-balance.png&#34; alt=&#34;Model for the regulation of dormancy and germination by ABA and GA: ambient-environment perception drives dormancy induction (ABA synthesis via NCED, GA degradation via GA2ox2) or dormancy breaking (GA synthesis via GA3ox1, ABA degradation via CYP707A2); the resulting ABA/GA sensitivity balance is integrated into ABA or GA signaling, producing a dormant/cycling or non-dormant/germinating response&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ResearchGate, fig. 1, &amp;ldquo;Model for the regulation of dormancy and germination by ABA and GA in response to the&amp;hellip;&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Reserve Mobilization: The Aleurone-GA-Amylase Mechanism&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;reserve-mobilization-the-aleurone-ga-amylase-mechanism&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#reserve-mobilization-the-aleurone-ga-amylase-mechanism&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;In cereal grains (a monocot seed structure, see &lt;a
     href=&#34;../../6-plant-anatomy/seed-fruit-anatomy/&#34;&gt;Seed &amp;amp; Fruit Anatomy&lt;/a&gt; for endosperm/scutellum anatomy), GA released once dormancy lifts diffuses from the embryo to the &lt;strong&gt;aleurone layer&lt;/strong&gt; (a specialized, protein-rich outer layer of the endosperm), where it induces transcription of the enzyme &lt;strong&gt;α-amylase&lt;/strong&gt;. Secreted α-amylase then hydrolyzes the endosperm&amp;rsquo;s stored starch into soluble sugars, which the &lt;strong&gt;scutellum&lt;/strong&gt; absorbs and transports to the growing embryo axis to fuel early growth before the seedling&amp;rsquo;s own photosynthetic tissue is functional. This pathway is a classic, directly testable example of hormone-induced gene expression (GA as the inducing signal, α-amylase as the induced gene product, starch mobilization as the measurable downstream effect), and is why exogenous GA application to isolated aleurone layers is a standard experimental assay for GA activity.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/aleurone-ga-amylase-pathway.png&#34; alt=&#34;GA-induced alpha-amylase pathway in the germinating grain: GA produced in the embryo/scutellum induces RAmy3D expression and transcription factors that upregulate hydrolytic enzymes including alpha-amylase, which hydrolyzes endosperm starch into sugars taken up by the scutellum to fuel germination, shown alongside anoxic and metal-toxicity stresses that inhibit specific steps of the pathway&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/aleurone-ga-amylase-pathway.png&#34; alt=&#34;GA-induced alpha-amylase pathway in the germinating grain: GA produced in the embryo/scutellum induces RAmy3D expression and transcription factors that upregulate hydrolytic enzymes including alpha-amylase, which hydrolyzes endosperm starch into sugars taken up by the scutellum to fuel germination, shown alongside anoxic and metal-toxicity stresses that inhibit specific steps of the pathway&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: MDPI, International Journal of Molecular Sciences (1422-0067/20/2/450)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Epigeal versus Hypogeal Germination&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;epigeal-versus-hypogeal-germination&#34;&gt;&lt;/span&gt;
@@ -2450,7 +2450,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
 &lt;li&gt;&lt;strong&gt;Hypogeal germination&lt;/strong&gt;: the &lt;strong&gt;epicotyl&lt;/strong&gt; (the plumule and the stem segment immediately above the cotyledon attachment) elongates instead, while the cotyledons remain below ground, never photosynthesizing and serving only as a stationary nutrient reserve depleted in place (pea, most monocot grains, where the cotyledon/scutellum stays embedded in the seed structure entirely).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/epi-hypo-germination.svg&#34; alt=&#34;Epigeal vs. hypogeal germination compared side by side, from seed through root-hair/radicle emergence to seedling: the epigeal sequence shows the hypocotyl elongating to lift the cotyledons above the soil, while the hypogeal sequence shows the epicotyl and plumule elongating while the cotyledons remain below ground&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/epi-hypo-germination.svg&#34; alt=&#34;Epigeal vs. hypogeal germination compared side by side, from seed through root-hair/radicle emergence to seedling: the epigeal sequence shows the hypocotyl elongating to lift the cotyledons above the soil, while the hypogeal sequence shows the epicotyl and plumule elongating while the cotyledons remain below ground&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Wikipedia&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;This distinction is a direct, mechanistic consequence of which axis segment&amp;rsquo;s cells are competent to elongate first in a given species, not merely a cosmetic difference in seedling appearance, and is a frequently tested practical-identification feature distinguishing seedlings of common crop species.&lt;/p&gt;
@@ -2636,10 +2636,10 @@ $$ \Psi = \Psi_s + \Psi_p $$
     
     <item>
       <title>Plant Stress Physiology &amp; Defense</title>
-      <link>http://localhost:1313/resources/5-plant-physiology/plant-stress-physiology-defense/</link>
+      <link>https://bioguide.world/resources/5-plant-physiology/plant-stress-physiology-defense/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/resources/5-plant-physiology/plant-stress-physiology-defense/</guid>
+      <guid>https://bioguide.world/resources/5-plant-physiology/plant-stress-physiology-defense/</guid>
       <description>
         
         
@@ -2685,19 +2685,19 @@ $$ \Psi = \Psi_s + \Psi_p $$
     &lt;a href=&#34;#salinity-stress&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;High soil salinity presents a double challenge: an osmotic component (a saline soil has a very negative water potential, making it physically harder for roots to extract water at all, mechanistically continuous with the water potential framework on &lt;a
     href=&#34;../water-transport-transpiration/&#34;&gt;Water Transport &amp;amp; Transpiration&lt;/a&gt;) and an ionic toxicity component (excess Na⁺ specifically disrupts K⁺-dependent enzyme function and membrane integrity once it accumulates intracellularly).&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/compatible-solute-accumulation.png&#34; alt=&#34;Salt stress overview: ionic toxicity and osmotic stress together drive morphological (reduced growth, chlorosis, reduced tillering/root growth), biochemical (oxidative stress, altered metabolism, high Na&amp;#43; transport, lower K&amp;#43; uptake), and physiological (reduced photosynthesis, stomatal closure, decreased water content) responses, ultimately reducing crop productivity&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/compatible-solute-accumulation.png&#34; alt=&#34;Salt stress overview: ionic toxicity and osmotic stress together drive morphological (reduced growth, chlorosis, reduced tillering/root growth), biochemical (oxidative stress, altered metabolism, high Na&amp;#43; transport, lower K&amp;#43; uptake), and physiological (reduced photosynthesis, stomatal closure, decreased water content) responses, ultimately reducing crop productivity&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: not specified&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Plants respond by &lt;strong&gt;excluding&lt;/strong&gt; Na⁺ at the root (selective ion channels favoring K⁺ uptake over Na⁺) or, where exclusion is incomplete, &lt;strong&gt;compartmentalizing&lt;/strong&gt; absorbed Na⁺ into the vacuole (away from cytoplasmic enzymes) using tonoplast Na⁺/H⁺ antiporters, a cellular-scale solution conceptually similar to CAM&amp;rsquo;s vacuolar malic acid storage (see &lt;a
     href=&#34;../calvin-cycle-photorespiration-c4-cam/&#34;&gt;Carbon Fixation&lt;/a&gt;) in that both rely on the vacuole as a large-capacity storage compartment isolated from cytoplasmic metabolism.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/salinity-na-exclusion-compartmentalization.png&#34; alt=&#34;Cellular Na&amp;#43; transport and salt-stress response network: apoplastic Na&amp;#43; influx via non-selective cation channels, Ca2&amp;#43;/ROS sensing and downstream transcriptional control (WRKY/NAC/bHLH/AP2-ERF/bZIP/MYB) regulating HKT1, vacuolar compartmentalization via the NHX Na&amp;#43;/H&amp;#43; antiporter, and SOS1-mediated Na&amp;#43; efflux/xylem-loading control limiting Na&amp;#43; delivery to the shoot&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/salinity-na-exclusion-compartmentalization.png&#34; alt=&#34;Cellular Na&amp;#43; transport and salt-stress response network: apoplastic Na&amp;#43; influx via non-selective cation channels, Ca2&amp;#43;/ROS sensing and downstream transcriptional control (WRKY/NAC/bHLH/AP2-ERF/bZIP/MYB) regulating HKT1, vacuolar compartmentalization via the NHX Na&amp;#43;/H&amp;#43; antiporter, and SOS1-mediated Na&amp;#43; efflux/xylem-loading control limiting Na&amp;#43; delivery to the shoot&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ResearchGate / Trends in Plant Science, fig. 5, &amp;ldquo;Overview of cellular Na+ transport mechanisms and the salt stress response network&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Temperature Stress&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;temperature-stress&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#temperature-stress&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Heat stress&lt;/strong&gt; induces &lt;strong&gt;heat-shock proteins (HSPs)&lt;/strong&gt;, molecular chaperones that bind partially denatured proteins and prevent irreversible aggregation, buying time for normal folding to resume once temperature falls, the same chaperone principle covered for animal/general protein folding elsewhere, applied here as an inducible, stress-triggered response rather than a constitutive one.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/heat-shock-protein-mechanism.png&#34; alt=&#34;Heat shock factor (HSF) activation pathway: environmental stressors (heat shock, oxidative stress, heavy metals) and non-stress developmental signals both converge on HSF, which trimerizes, enters the nucleus, and binds heat shock elements (HSE) to induce heat-shock protein production&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/heat-shock-protein-mechanism.png&#34; alt=&#34;Heat shock factor (HSF) activation pathway: environmental stressors (heat shock, oxidative stress, heavy metals) and non-stress developmental signals both converge on HSF, which trimerizes, enters the nucleus, and binds heat shock elements (HSE) to induce heat-shock protein production&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: MDPI&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Cold stress&lt;/strong&gt; below freezing threatens cells primarily through extracellular ice formation drawing water out of the cytoplasm (worsening cellular dehydration) and, if ice forms intracellularly, direct membrane puncture by ice crystals; cold-acclimated tissue increases membrane unsaturated-fatty-acid content (maintaining membrane fluidity at low temperature, preventing the phase transition that would otherwise rupture the membrane) and accumulates the same compatible solutes used in drought response, since freeze-induced cellular dehydration and drought-induced water deficit present the plant with an overlapping physiological problem.&lt;/p&gt;
@@ -2706,20 +2706,20 @@ $$ \Psi = \Psi_s + \Psi_p $$
 &lt;h3&gt;The Hypersensitive Response and Systemic Acquired Resistance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-hypersensitive-response-and-systemic-acquired-resistance&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#the-hypersensitive-response-and-systemic-acquired-resistance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Localized pathogen recognition (via plant immune receptors detecting pathogen-associated molecules) can trigger the &lt;strong&gt;hypersensitive response (HR)&lt;/strong&gt;: rapid, localized &lt;strong&gt;programmed cell death&lt;/strong&gt; at and immediately around the infection site, which deprives biotrophic pathogens (which require living host tissue to feed) of the living cells they depend on, physically containing the infection to a small necrotic lesion rather than allowing it to spread through continuously living tissue.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/hypersensitive-response.png&#34; alt=&#34;Hypersensitive response: a leaf showing multiple discrete necrotic lesions, each a ring of dead tissue localized around and containing an infection site&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/hypersensitive-response.png&#34; alt=&#34;Hypersensitive response: a leaf showing multiple discrete necrotic lesions, each a ring of dead tissue localized around and containing an infection site&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: Wikipedia&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;HR is typically accompanied by a burst of reactive oxygen species and local &lt;strong&gt;salicylic acid&lt;/strong&gt; accumulation, which, beyond its local role, also functions as a signal (itself or via a derived mobile signal) that travels systemically to uninfected parts of the plant, inducing &lt;strong&gt;systemic acquired resistance (SAR)&lt;/strong&gt;: a primed, heightened defensive state (including elevated expression of &lt;strong&gt;pathogenesis-related (PR) proteins&lt;/strong&gt;, many with direct antimicrobial activity such as chitinases degrading fungal cell walls) across the whole plant, providing broad, long-lasting resistance to subsequent infection by a wide range of pathogens, not just the one that triggered HR initially, an induced, whole-plant analog of an immune &amp;ldquo;memory,&amp;rdquo; though mechanistically unrelated to (and evolutionarily independent of) the adaptive immune memory covered for vertebrates on &lt;a
     href=&#34;../../3-animal-physiology/immune-physiology/&#34;&gt;Immune Physiology&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/systemic-acquired-resistance.png&#34; alt=&#34;Systemic acquired resistance signaling downstream of R-gene-mediated resistance: salicylic acid triggers induction of PR-proteins (resistance to fungi and bacteria), increased RdRP expression (increased viral RNA turnover), and AOX-dependent expression of other defense genes (inhibition of viral replication and movement)&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/systemic-acquired-resistance.png&#34; alt=&#34;Systemic acquired resistance signaling downstream of R-gene-mediated resistance: salicylic acid triggers induction of PR-proteins (resistance to fungi and bacteria), increased RdRP expression (increased viral RNA turnover), and AOX-dependent expression of other defense genes (inhibition of viral replication and movement)&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ScienceDirect (topic page, &amp;ldquo;Systemic Acquired Resistance&amp;rdquo;)&lt;/em&gt;&lt;/p&gt;
 &lt;h3&gt;Herbivory Defense&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;herbivory-defense&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#herbivory-defense&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Beyond constitutive deterrents like tannins, many species mount &lt;strong&gt;induced&lt;/strong&gt; anti-herbivore responses: mechanical damage or herbivore saliva components trigger &lt;strong&gt;jasmonic acid&lt;/strong&gt; signaling (a hormone pathway distinct from but interacting with the six covered on &lt;a
     href=&#34;../plant-hormones/&#34;&gt;Plant Hormones&lt;/a&gt;), which upregulates production of defensive secondary metabolites, protease inhibitors (impairing the herbivore&amp;rsquo;s digestive enzymes), alkaloids, or, in some species, &lt;strong&gt;volatile organic compounds&lt;/strong&gt; released from damaged tissue that can attract the herbivore&amp;rsquo;s own natural predators or parasitoids (an indirect defense, recruiting a third party rather than acting on the herbivore directly) or warn neighboring undamaged tissue/plants to preemptively upregulate their own defenses before being attacked themselves.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;content-image-frame&#34;&gt;
-    &lt;img src=&#34;http://localhost:1313/PLANTPHYSIOPICS/induced-herbivory-defense.png&#34; alt=&#34;Induced plant defense after herbivore damage: JA/JA-Ile signaling in the damaged cell upregulates mRNA/enzyme production, protease inhibitors, and phytoalexins (direct defense), while released green leaf volatiles (GLVs) and other volatile organic compounds (VOCs) attract the herbivore’s natural enemies, wasps, predatory flies, spiders (indirect defense)&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
+    &lt;img src=&#34;https://bioguide.world/PLANTPHYSIOPICS/induced-herbivory-defense.png&#34; alt=&#34;Induced plant defense after herbivore damage: JA/JA-Ile signaling in the damaged cell upregulates mRNA/enzyme production, protease inhibitors, and phytoalexins (direct defense), while released green leaf volatiles (GLVs) and other volatile organic compounds (VOCs) attract the herbivore’s natural enemies, wasps, predatory flies, spiders (indirect defense)&#34;  data-zoomable loading=&#34;lazy&#34; /&gt;
   &lt;/span&gt;
 &lt;em&gt;Source: ResearchGate, fig. 2, &amp;ldquo;Schematic picture of induced plant defense&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Comparative Structures&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;comparative-structures&#34;&gt;&lt;/span&gt;

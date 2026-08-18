@@ -1,0 +1,31 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BiOGuide for Biology Olympiads – Lab Recommendations ~ TBD</title>
+    <link>http://localhost:1313/biobytes/articles/</link>
+    <description>Recent content in Lab Recommendations ~ TBD on BiOGuide for Biology Olympiads</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	  <atom:link href="http://localhost:1313/biobytes/articles/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>How to get better at theory exams ~ TBD </title>
+      <link>http://localhost:1313/biobytes/articles/neuroscience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/biobytes/articles/neuroscience/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

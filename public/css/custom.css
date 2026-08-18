@@ -278,7 +278,60 @@ html.dark #boguide-toc a:hover {
 .feature-cards .card p {
   font-size: 0.9rem;
 }
-
+.social-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.social-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 260px;
+  max-width: 320px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid #e9e9f0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.social-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--primary);
+  box-shadow: 0 16px 32px rgba(137, 101, 196, 0.15);
+}
+.social-card-cover {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  display: block;
+}
+.social-card-body {
+  padding: 1.1rem 1.25rem 1.4rem;
+}
+.social-card-source {
+  display: inline-block;
+  font-family: 'Fraunces', serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #5c7a58;
+  margin-bottom: 0.4rem;
+}
+.social-card-caption {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 0.75rem;
+  color: inherit;
+}
+html.dark .social-card {
+  border-color: rgba(255, 255, 255, 0.1);
+}
 .collab-note {
   text-align: center;
   padding: 2rem;
@@ -286,37 +339,10 @@ html.dark #boguide-toc a:hover {
   border-radius: var(--radius-xl);
   margin-top: 2rem;
 }
-
---shadow-*/--space-* below are a design-token pass: this file
-   had ~60 border-radius declarations spanning 13 distinct values and ~30
-   bespoke box-shadow values with no shared scale, so every new component
-   was eyeballing a rounding/elevation choice from scratch. These tokens
-   give new work a default to reach for.
-
-   border-radius declarations were repointed at a token wherever the value
-   matched exactly (999px/16px/12px/10px→sm/8px/50%) — pure aliasing, the
-   computed value doesn't change, since --radius-* doesn't vary by theme.
-   A handful of true one-offs (rare radii used once, and two opposite-corner
-   shorthand values on a modal header/footer) were left as literals rather
-   than force-fit into the scale.
-
-   box-shadow was NOT retrofitted onto existing declarations, deliberately:
-   --shadow-* intentionally intensifies in dark mode (flat rgba(0,0,0,X)
-   shadows read as weaker once the page background itself is dark), but a
-   lot of the existing shadows in this file are either already mode-aware
-   with their own hand-tuned dark value, or are deliberately mode-invariant
-   (e.g. the badge shadows below), or are color-tinted glow/pulse effects
-   (the purple search-dialog shadow, the red notification-pulse keyframes)
-   that need to keep their specific color, not a neutral elevation token.
-   Swapping any of those for --shadow-* would be a real (if small) visual
-   change, not a pure alias — left for a follow-up pass with actual visual
-   review, not a drive-by. New components should still reach for --shadow-*
-   by default (see the Hall of Fame podium below for an example).
-
-   --space-* exists for the same "give new work a default" reason but
-   wasn't retrofitted at all this pass — with margin/padding on nearly
-   every rule in this file, doing that safely needs its own dedicated
-   pass, not a drive-by. */
+.biobytes-wrapper {
+  max-width: 900px;
+  margin: 10rem auto 0;
+}
 :root {
   --primary: #8965c4;
   --secondary: #5c7a58;

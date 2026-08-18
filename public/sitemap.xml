@@ -257,13 +257,13 @@
   </url><url>
     <loc>http://localhost:1313/account/</loc>
   </url><url>
+    <loc>http://localhost:1313/biobytes/</loc>
+  </url><url>
     <loc>http://localhost:1313/bioclash/</loc>
   </url><url>
     <loc>http://localhost:1313/bioclash/bioclash-sample/attempt/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
-  </url><url>
-    <loc>http://localhost:1313/bioinsights/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/</loc>
   </url><url>
@@ -279,7 +279,7 @@
   </url><url>
     <loc>http://localhost:1313/papers/tbo/2023/first-stage/</loc>
   </url><url>
-    <loc>http://localhost:1313/bioinsights/neuroscience/</loc>
+    <loc>http://localhost:1313/biobytes/articles/neuroscience/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/ibo/2019/</loc>
   </url><url>
@@ -289,7 +289,7 @@
   </url><url>
     <loc>http://localhost:1313/papers/ibo/</loc>
   </url><url>
-    <loc>http://localhost:1313/bioinsights/lab-recommendations/</loc>
+    <loc>http://localhost:1313/biobytes/articles/lab-recommendations/</loc>
   </url><url>
     <loc>http://localhost:1313/papers/leaderboard/</loc>
   </url><url>

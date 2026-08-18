@@ -32,7 +32,7 @@ Row-level security rules mean other logged-in users can never read your email or
 
 ## Accounts are optional
 
-You can read every topic page and attempt every practice question without ever signing up. An account only unlocks saving leaderboard results, a profile, and full access to BiOInsights.
+You can read every topic page and attempt every practice question without ever signing up. An account only unlocks saving leaderboard results, a profile, and full access to BiOBytes articles.
 
 ## Cookies and local storage
 
