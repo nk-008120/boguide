@@ -1,6 +1,6 @@
 ---
 title: "Biology Olympiad Study Plans"
-description: "Realistic study plans for Biology Olympiad preparation across six timeframes, from a full two-year runway down to a seven-day final revision."
+description: "Realistic study plans for Biology Olympiad preparation across five timeframes, from a full two-year runway down to a final one-month ramp-up."
 layout: "wide"
 ---
 
@@ -8,9 +8,9 @@ layout: "wide"
 
 # Biology Olympiad Study Plans
 
-Different students come to olympiad prep at different points. Some have two years to prepare from the ground up. Some have a week before the exam. These plans work backwards from your available time to what's actually achievable, not what sounds impressive.
+Different students come to olympiad prep at different points. Some have two years to prepare from the ground up. Some have a month before the exam. These plans work backwards from your available time to what's actually achievable, not what sounds impressive.
 
-Each plan is honest about who it's for and what it can deliver. Shorter plans prioritize; they don't pretend a week can replace a year.
+Each plan is honest about who it's for and what it can deliver. Shorter plans prioritize; they don't pretend a month can replace a year.
 
 <div class="feature-cards">
   <a href="/plans/2-years/" class="card">
@@ -41,12 +41,6 @@ Each plan is honest about who it's for and what it can deliver. Shorter plans pr
     <div class="card-icon">🔥</div>
     <h3>1 Month</h3>
     <p>Final ramp-up: papers plus gap-filling. Assumes you already have foundations.</p>
-    <span class="btn-outline">See the plan →</span>
-  </a>
-  <a href="/plans/7-days/" class="card">
-    <div class="card-icon">⚡</div>
-    <h3>7 Days</h3>
-    <p>Revision only. Not a first-time-learning plan. Consolidate what you already know.</p>
     <span class="btn-outline">See the plan →</span>
   </a>
 </div>

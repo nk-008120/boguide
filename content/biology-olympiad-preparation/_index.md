@@ -16,21 +16,24 @@ Whether you're just starting out or already deep into IBO prep, this guide walks
 ## Choose Your Olympiad
 
 <div class="feature-cards">
-  <div class="card">
+  <a href="/inbo-preparation/" class="card">
     <div class="card-icon">🇮🇳</div>
     <h3>INBO</h3>
     <p>The Indian National Biology Olympiad, a national-level stage that feeds toward IBO selection. Broad syllabus coverage with increasing theoretical depth.</p>
-  </div>
-  <div class="card">
+    <span class="btn-outline">See INBO guide →</span>
+  </a>
+  <a href="/usabo-preparation/" class="card">
     <div class="card-icon">🇺🇸</div>
     <h3>USABO</h3>
     <p>The USA Biology Olympiad. Heavy emphasis on Cell Biology, Genetics, and Physiology, with an online exam stage before national/international selection.</p>
-  </div>
-  <div class="card">
+    <span class="btn-outline">See USABO guide →</span>
+  </a>
+  <a href="/ibo-preparation/" class="card">
     <div class="card-icon">🌍</div>
     <h3>IBO</h3>
     <p>The International Biology Olympiad. The broadest and deepest of the three: expect coverage across all sections, with real emphasis on data analysis and practical skills.</p>
-  </div>
+    <span class="btn-outline">See IBO guide →</span>
+  </a>
 </div>
 
 Eligibility, dates, and registration details change year to year. Always check your olympiad's official site for current information. This guide covers preparation strategy, not administrative details.
