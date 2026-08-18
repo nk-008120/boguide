@@ -8,51 +8,38 @@ layout: "wide"
 
 <div class="homepage-wrapper">
 
-## 🧬 Why BioGuide?
+## 🧭 Start Here
 
-BioGuide is the only free, comprehensive study guide for biology olympiads that combines:
-
-- **Depth-first content**: IBO targeted depth, Not just name-dropping, not too deep into the rabbitholes.
-- **Interactive simulators.** Plotly-powered visualizations that clarify hard concepts, Simulating tests and a lot more to come!
-- **Practice problems** - IBO/USABO-style questions with fully explained answers
-- **Open contributions.** Anyone can help fix errors or add new topics; just follow the rules below!
-
-We cover the full IBO syllabus: 15+ sections, 150+ topic pages,666+ Static files, 208+ Interactive widgets, growing every week.
-
----
-
-## 🧭 Main Features
+New to Biology Olympiads, or not sure where to jump in? Pick what matches you best:
 
 <div class="feature-cards">
+  <a href="/resources/1-cell-molecular/" class="card">
+    <div class="card-icon">🌱</div>
+    <h3>Completely New</h3>
+    <p>Start with Cell & Molecular Biology, the foundation every other section builds on.</p>
+    <span class="btn-outline">Start Here →</span>
+  </a>
   <a href="/resources/" class="card">
-    <div class="card-icon">📚</div>
-    <h3>Study Resources</h3>
-    <p>The full IBO/USABO syllabus: 150+ topic pages across 15 sections, with diagrams, comparisons, and practice problems.</p>
-    <span class="btn-outline">Browse Resources →</span>
-  </a>
-  <a href="/about/" class="card">
-    <div class="card-icon">🧬</div>
-    <h3>About BiOGuide</h3>
-    <p>Why we built this, how content gets reviewed before publishing, and who's behind it.</p>
-    <span class="btn-outline">Learn Our Story →</span>
-  </a>
-  <a href="/biobytes/" class="card">
-    <div class="card-icon">✍️</div>
-    <h3>BiOBytes</h3>
-    <p>Exam-technique tips, lab guides, and quick bites from our Instagram — all in one place.</p>
-    <span class="btn-outline">Read BiOBytes →</span>
+    <div class="card-icon">🎯</div>
+    <h3>Know Your Weak Spot</h3>
+    <p>Browse all 15 sections and jump straight to the topic you need to shore up.</p>
+    <span class="btn-outline">Browse Sections →</span>
   </a>
   <a href="/papers/" class="card">
-    <div class="card-icon">🗂️</div>
-    <h3>BiOrchive</h3>
-    <p>Past olympiad papers, browsable by year and round, with solutions and an attempt mode.</p>
-    <span class="btn-outline">Explore BiOrchive →</span>
+    <div class="card-icon">📝</div>
+    <h3>Ready to Practice</h3>
+    <p>Past olympiad papers with solutions and an attempt mode, browsable by year and round.</p>
+    <span class="btn-outline">Go to BiOrchive →</span>
   </a>
 </div>
 
+**Preparing for a specific exam?** USABO leans heavily on Cell Biology, Genetics, and Physiology. IBO expects broad coverage across all sections, with real emphasis on data analysis. Practical exams draw on the Bioinformatics and Practical sections for hands-on simulations.
+
 ---
 
-## 📖 Syllabus Format Covered: 
+## 📖 The Learning Path
+
+We cover the full IBO syllabus: 15+ sections, 150+ topic pages, growing every week. Work through them in order, or jump straight to what you need.
 
 {{< cards cols="3" >}}
   {{< card link="/resources/1-cell-molecular/" title="1. Molecular, Cell Biology & Biochemistry" subtitle="Cell structure, biomolecules, enzymes, membrane transport, and core biochemical pathways." tag="✅ Verified" tagColor="green" >}}
@@ -74,24 +61,38 @@ We cover the full IBO syllabus: 15+ sections, 150+ topic pages,666+ Static files
 
 ---
 
-## 🎯 Where to Start
+## 🧪 Practice, Resources & More
 
-**If you're completely new to olympiad biology:**
-
-1. **[Cell Biology & Biochemistry](/resources/1-cell-molecular/)** - the foundation
-2. **[Genetics](/resources/7-genetics/)**, core concepts for every exam
-3. **[Animal Anatomy](/resources/2-animal-anatomy/)**: a systematic approach to anatomy
-
-**If you have a weak spot:** Use the search bar (top right) or browse sections by topic.
-
-**If you're preparing for a specific exam:**
-- **USABO:** Focus on Cell Biology, Genetics, and Physiology (heavily tested)
-- **IBO:** Expect broad coverage across all sections, with emphasis on data analysis
-- **Practical exams:** See the Bioinformatics and Practical sections for hands-on simulations
+<div class="feature-cards">
+  <a href="/papers/" class="card">
+    <div class="card-icon">🗂️</div>
+    <h3>BiOrchive</h3>
+    <p>Past olympiad papers, browsable by year and round, with solutions and an attempt mode.</p>
+    <span class="btn-outline">Explore BiOrchive →</span>
+  </a>
+  <a href="/resources/" class="card">
+    <div class="card-icon">📚</div>
+    <h3>Study Resources</h3>
+    <p>The full IBO/USABO syllabus, plus a graded book database and recommended video creators.</p>
+    <span class="btn-outline">Browse Resources →</span>
+  </a>
+  <a href="/biobytes/" class="card">
+    <div class="card-icon">✍️</div>
+    <h3>BiOBytes</h3>
+    <p>Exam-technique tips, lab guides, and quick bites from our Instagram — all in one place.</p>
+    <span class="btn-outline">Read BiOBytes →</span>
+  </a>
+  <a href="/about/" class="card">
+    <div class="card-icon">🧬</div>
+    <h3>About BiOGuide</h3>
+    <p>Why we built this, how content gets reviewed before publishing, and who's behind it.</p>
+    <span class="btn-outline">Learn Our Story →</span>
+  </a>
+</div>
 
 ---
 
-## 🧪 What Makes BioGuide stand Out
+## 🎨 What Makes BioGuide Stand Out
 
 {{< interactive-showcase >}}
 
@@ -124,16 +125,9 @@ BioGuide follows this open contribution model:
 
 ## 💬 Join the Community
 
-- **Discord:** Chat with other students, ask questions, share resources
-- **GitHub Issues:** Report typos, request features, discuss content
+**Discord:** Chat with other students, ask questions, share resources · **GitHub Issues:** Report typos, request features, discuss content
 
----
-
-## 📄 License
-
-Content (text) is licensed under **CC BY-NC-SA 4.0**: free to share and adapt for non-commercial purposes, with attribution.
-
-Images: See `image-sources.md` for per-image licensing status. A full licensing audit is pending.
+Content (text) is licensed under **CC BY-NC-SA 4.0**: free to share and adapt for non-commercial purposes, with attribution. See [About](/about/) for full licensing and image-source details.
 
 </div>
 
@@ -242,6 +236,36 @@ Images: See `image-sources.md` for per-image licensing status. A full licensing 
   color: #475569;
   margin: 0;
   font-weight: 400;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.75rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.65rem 1.75rem;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #8965c4, #5c7a58);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(92, 61, 150, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(92, 61, 150, 0.32);
+  color: #fff;
+  text-decoration: none;
 }
 
 /* Recent updates styling - table, not a list, so each contribution can
@@ -319,6 +343,11 @@ html.dark .recent-updates-table tbody tr {
 
   .hero-subtitle {
     font-size: 1.05rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: center;
   }
 }
 </style>

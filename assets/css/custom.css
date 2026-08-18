@@ -4464,3 +4464,201 @@ html.dark .team-since {
   background: rgba(201, 183, 232, 0.08);
   border-color: rgba(201, 183, 232, 0.3);
 }
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1.75rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.65rem 1.75rem;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #8965c4, #5c7a58);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(92, 61, 150, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(92, 61, 150, 0.32);
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Book filter (Phase 4) */
+.book-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.book-filter-btn {
+  padding: 0.4rem 1rem;
+  border: 1.5px solid rgba(137, 101, 196, 0.4);
+  border-radius: 999px;
+  background: transparent;
+  color: #8965c4;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.book-filter-btn:hover {
+  border-color: #8965c4;
+  background: rgba(137, 101, 196, 0.06);
+}
+
+.book-filter-btn.is-active {
+  background: linear-gradient(135deg, #8965c4, #5c7a58);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(92, 61, 150, 0.2);
+}
+
+.book-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0 1.5rem;
+  font-size: 0.95rem;
+  display: block;
+  overflow-x: auto;
+}
+
+.book-table thead {
+  background: rgba(137, 101, 196, 0.08);
+}
+
+.book-table th {
+  padding: 0.6rem 0.9rem;
+  text-align: left;
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  color: #8965c4;
+}
+
+.book-table td {
+  padding: 0.6rem 0.9rem;
+  border-top: 1px solid #e9e9f0;
+  vertical-align: top;
+}
+
+.book-empty {
+  margin: 1rem 0 2rem;
+  color: #64748b;
+  font-style: italic;
+}
+
+html.dark .book-filter-btn {
+  border-color: rgba(201, 183, 232, 0.35);
+  color: #c9b7e8;
+}
+
+html.dark .book-filter-btn:hover {
+  border-color: #c9b7e8;
+  background: rgba(201, 183, 232, 0.06);
+}
+
+html.dark .book-table thead {
+  background: rgba(201, 183, 232, 0.08);
+}
+
+html.dark .book-table th {
+  color: #c9b7e8;
+}
+
+html.dark .book-table td {
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+/* Study-next card (Phase 5) */
+.study-next {
+  margin: 3rem 0 1rem;
+  padding: 1.5rem 1.75rem;
+  background: linear-gradient(135deg, rgba(137, 101, 196, 0.05), rgba(92, 122, 88, 0.05));
+  border: 1px solid rgba(137, 101, 196, 0.15);
+  border-radius: 16px;
+}
+
+.study-next-heading {
+  margin: 0 0 1rem;
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+  color: #8965c4;
+}
+
+.study-next-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.study-next-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.1rem;
+  background: #fff;
+  border: 1.5px solid rgba(137, 101, 196, 0.25);
+  border-radius: 999px;
+  color: #334155;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.18s ease;
+}
+
+.study-next-card:hover {
+  border-color: #8965c4;
+  color: #8965c4;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(137, 101, 196, 0.15);
+  text-decoration: none;
+}
+
+.study-next-arrow {
+  font-weight: 600;
+  color: #8965c4;
+}
+
+.study-next-olympiads {
+  margin: 1rem 0 0;
+  font-size: 0.9rem;
+}
+
+html.dark .study-next {
+  background: linear-gradient(135deg, rgba(201, 183, 232, 0.05), rgba(154, 195, 149, 0.05));
+  border-color: rgba(201, 183, 232, 0.15);
+}
+
+html.dark .study-next-heading {
+  color: #c9b7e8;
+}
+
+html.dark .study-next-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(201, 183, 232, 0.25);
+  color: #d1d5db;
+}
+
+html.dark .study-next-card:hover {
+  border-color: #c9b7e8;
+  color: #c9b7e8;
+}
+
+html.dark .study-next-arrow {
+  color: #c9b7e8;
+}

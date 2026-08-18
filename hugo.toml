@@ -188,3 +188,6 @@ theme = "hextra"
   toc = true
   # Custom CSS (relative to static/ folder)
   custom_css = ["css/custom.css"]
+[params.analytics.umami]
+  serverURL = "https://bioguide-umami-five.vercel.app"
+  websiteID = "62899983-724a-4954-8e29-1355147fe293"

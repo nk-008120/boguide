@@ -5,52 +5,107 @@ weight: 1
 
 ## Books & Graded Resources
 
-The grading (S/A/B) isn't a strict ranking, S doesn't automatically mean "better than" A or B. It reflects relevance and recommendation for a given purpose more than raw quality. We no longer host the PDFs directly (see note below): this is a reference list so you know what to look for. If you'd like to help with grading resources, or collecting them, contact at resourcerepository4boguide@gmail.com and we'll be in touch.
+The grading (S/A/B) isn't a strict ranking. S doesn't automatically mean "better than" A or B. It reflects relevance and recommendation for a given purpose more than raw quality. We no longer host the PDFs directly (see note below): this is a reference list so you know what to look for. If you'd like to help with grading resources, or collecting them, contact at resourcerepository4boguide@gmail.com and we'll be in touch.
 
-***TO ACTUALLY READ THESE BOOKS FOR FREE, JOIN OUR DISCORD SERVER FOR A WELCOME GIFT!***
+<div class="book-filter" role="group" aria-label="Filter books by category">
+  <button type="button" class="book-filter-btn is-active" data-cat="all">All</button>
+  <button type="button" class="book-filter-btn" data-cat="general">General</button>
+  <button type="button" class="book-filter-btn" data-cat="cell">Cell &amp; Molecular</button>
+  <button type="button" class="book-filter-btn" data-cat="biochem">Biochemistry</button>
+  <button type="button" class="book-filter-btn" data-cat="physio">Physiology &amp; Anatomy</button>
+  <button type="button" class="book-filter-btn" data-cat="plants">Plant Biology</button>
+  <button type="button" class="book-filter-btn" data-cat="practical">Practical</button>
+</div>
 
 ### Grade S
 
-| Category | Title | Author(s) | Edition |
-|---|---|---|---|
-| Animal Anatomy & Physiology | Human Physiology: An Integrated Approach | Dee Unglaub Silverthorn | 8th (Pearson, 2018) |
-| Animal Anatomy & Physiology | Integrated Principles of Zoology | Hickman, Roberts & Larson | 18th |
-| Animal Anatomy & Physiology | Animal Physiology | Hill, Wyse & Anderson | 4th |
-| Animal Anatomy & Physiology | Human Physiology: The Mechanisms of Body Function | Vander et al. | 17th |
-| Biochemistry | Lehninger Principles of Biochemistry | Nelson & Cox | 6th |
-| General Biology | Campbell Biology | Jane B. Reece et al. | 16th |
-| Molecular Biology of the Cell | Molecular Biology of the Cell | Alberts et al. | 7th |
-| Plant Biology | Plant Physiology and Development | Taiz, Møller, Murphy & Zeiger | 7th |
-| Plant Biology | Biology of Plants | Raven, Evert & Eichhorn | 8th (2012) |
+<table class="book-table">
+  <thead><tr><th>Category</th><th>Title</th><th>Author(s)</th><th>Edition</th></tr></thead>
+  <tbody>
+    <tr data-cat="physio"><td>Animal Anatomy &amp; Physiology</td><td>Human Physiology: An Integrated Approach</td><td>Dee Unglaub Silverthorn</td><td>8th (Pearson, 2018)</td></tr>
+    <tr data-cat="physio"><td>Animal Anatomy &amp; Physiology</td><td>Integrated Principles of Zoology</td><td>Hickman, Roberts &amp; Larson</td><td>18th</td></tr>
+    <tr data-cat="physio"><td>Animal Anatomy &amp; Physiology</td><td>Animal Physiology</td><td>Hill, Wyse &amp; Anderson</td><td>4th</td></tr>
+    <tr data-cat="physio"><td>Animal Anatomy &amp; Physiology</td><td>Human Physiology: The Mechanisms of Body Function</td><td>Vander et al.</td><td>17th</td></tr>
+    <tr data-cat="biochem"><td>Biochemistry</td><td>Lehninger Principles of Biochemistry</td><td>Nelson &amp; Cox</td><td>6th</td></tr>
+    <tr data-cat="general"><td>General Biology</td><td>Campbell Biology</td><td>Jane B. Reece et al.</td><td>16th</td></tr>
+    <tr data-cat="cell"><td>Molecular Biology of the Cell</td><td>Molecular Biology of the Cell</td><td>Alberts et al.</td><td>7th</td></tr>
+    <tr data-cat="plants"><td>Plant Biology</td><td>Plant Physiology and Development</td><td>Taiz, Møller, Murphy &amp; Zeiger</td><td>7th</td></tr>
+    <tr data-cat="plants"><td>Plant Biology</td><td>Biology of Plants</td><td>Raven, Evert &amp; Eichhorn</td><td>8th (2012)</td></tr>
+  </tbody>
+</table>
 
 ### Grade A
 
-| Category | Title | Author(s) | Edition |
-|---|---|---|---|
-| Animal Anatomy & Physiology | Human Physiology: From Cells to Systems | Lauralee Sherwood | 8th |
-| Animal Anatomy & Physiology | Anatomy & Physiology | Gerard J. Tortora | 15th (2017) |
-| Biochemistry | Color Atlas of Biochemistry | Jan Koolman | 3rd |
-| Biomedical Sciences | Textbook of Medical Physiology | Guyton & Hall | 14th |
-| General Biology | Biology | Raven & Johnson | 6th |
-| Molecular Biology | Molecular Cell Biology | Lodish Et Al. | 9th |
-| Plant Biology | Introductory Plant Biology | Stern | 15th |
+<table class="book-table">
+  <thead><tr><th>Category</th><th>Title</th><th>Author(s)</th><th>Edition</th></tr></thead>
+  <tbody>
+    <tr data-cat="physio"><td>Animal Anatomy &amp; Physiology</td><td>Human Physiology: From Cells to Systems</td><td>Lauralee Sherwood</td><td>8th</td></tr>
+    <tr data-cat="physio"><td>Animal Anatomy &amp; Physiology</td><td>Anatomy &amp; Physiology</td><td>Gerard J. Tortora</td><td>15th (2017)</td></tr>
+    <tr data-cat="biochem"><td>Biochemistry</td><td>Color Atlas of Biochemistry</td><td>Jan Koolman</td><td>3rd</td></tr>
+    <tr data-cat="physio"><td>Biomedical Sciences</td><td>Textbook of Medical Physiology</td><td>Guyton &amp; Hall</td><td>14th</td></tr>
+    <tr data-cat="general"><td>General Biology</td><td>Biology</td><td>Raven &amp; Johnson</td><td>6th</td></tr>
+    <tr data-cat="cell"><td>Molecular Biology</td><td>Molecular Cell Biology</td><td>Lodish Et Al.</td><td>9th</td></tr>
+    <tr data-cat="plants"><td>Plant Biology</td><td>Introductory Plant Biology</td><td>Stern</td><td>15th</td></tr>
+  </tbody>
+</table>
 
 ### Grade B
 
-| Category | Title | Author(s) | Edition |
-|---|---|---|---|
-| Biochemistry | Lippincott's Illustrated Reviews: Biochemistry | — | 6th |
-| General Biology | Biological Science | D.J. Taylor (Taylor, Green & Stout) | — |
+<table class="book-table">
+  <thead><tr><th>Category</th><th>Title</th><th>Author(s)</th><th>Edition</th></tr></thead>
+  <tbody>
+    <tr data-cat="biochem"><td>Biochemistry</td><td>Lippincott's Illustrated Reviews: Biochemistry</td><td>&mdash;</td><td>6th</td></tr>
+    <tr data-cat="general"><td>General Biology</td><td>Biological Science</td><td>D.J. Taylor (Taylor, Green &amp; Stout)</td><td>&mdash;</td></tr>
+  </tbody>
+</table>
 
 ### Practical Books
 
-| Category | Title | Author(s) |
-|---|---|---|
-| Animal Anatomy | Practical Zoology: Vertebrate | Dr. SS Lal |
-| Animal Anatomy | Practical Zoology: Invertebrate | Dr. SS Lal |
-| Biomolecular Science | Brock Biology of Microorganisms | Michael T. Madigan, Kelly S. Bender, Daniel H. Buckley, W. Matthew Sattley, and David A. Stahl | 14th |
-| Biomolecular Science | Practical Skills in Biomolecular Science | Rob Reed, Jonathan Weyers, David A. Holmes, and Allan Jones | 6th |
-| Plant Biology | Anatomy of Seed Plants | Katherine Esau | 2nd |
+<table class="book-table">
+  <thead><tr><th>Category</th><th>Title</th><th>Author(s)</th></tr></thead>
+  <tbody>
+    <tr data-cat="physio practical"><td>Animal Anatomy</td><td>Practical Zoology: Vertebrate</td><td>Dr. SS Lal</td></tr>
+    <tr data-cat="physio practical"><td>Animal Anatomy</td><td>Practical Zoology: Invertebrate</td><td>Dr. SS Lal</td></tr>
+    <tr data-cat="cell practical"><td>Biomolecular Science</td><td>Brock Biology of Microorganisms</td><td>Michael T. Madigan, Kelly S. Bender, Daniel H. Buckley, W. Matthew Sattley, and David A. Stahl</td></tr>
+    <tr data-cat="cell practical"><td>Biomolecular Science</td><td>Practical Skills in Biomolecular Science</td><td>Rob Reed, Jonathan Weyers, David A. Holmes, and Allan Jones</td></tr>
+    <tr data-cat="plants practical"><td>Plant Biology</td><td>Anatomy of Seed Plants</td><td>Katherine Esau</td></tr>
+  </tbody>
+</table>
+
+<p class="book-empty" hidden>No books match this category yet.</p>
+
+<script>
+(function() {
+  var buttons = document.querySelectorAll('.book-filter-btn');
+  var rows = document.querySelectorAll('.book-table tbody tr');
+  var tables = document.querySelectorAll('.book-table');
+  var empty = document.querySelector('.book-empty');
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var cat = btn.getAttribute('data-cat');
+      buttons.forEach(function(b) { b.classList.remove('is-active'); });
+      btn.classList.add('is-active');
+      var visibleCount = 0;
+      rows.forEach(function(row) {
+        var cats = (row.getAttribute('data-cat') || '').split(/\s+/);
+        var show = cat === 'all' || cats.indexOf(cat) !== -1;
+        row.hidden = !show;
+        if (show) visibleCount++;
+      });
+      tables.forEach(function(table) {
+        var anyVisible = table.querySelectorAll('tbody tr:not([hidden])').length > 0;
+        var heading = table.previousElementSibling;
+        while (heading && heading.tagName !== 'H3') {
+          heading = heading.previousElementSibling;
+        }
+        table.hidden = !anyVisible;
+        if (heading) heading.hidden = !anyVisible;
+      });
+      if (empty) empty.hidden = visibleCount > 0;
+    });
+  });
+})();
+</script>
 
 ## Browse All Subjects
 

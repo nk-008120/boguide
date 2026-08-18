@@ -1,0 +1,32 @@
+{{ $next := .Page.Params.next_topics }}
+{{ $tags := .Page.Params.syllabus_tags }}
+{{ $olympiadSet := slice "IBO" "USABO" "INBO" }}
+{{ $olympiads := slice }}
+{{ range $tags }}
+  {{ if in $olympiadSet . }}
+    {{ $olympiads = $olympiads | append . }}
+  {{ end }}
+{{ end }}
+{{ if or $next $olympiads }}
+<div class="study-next">
+  <h3 class="study-next-heading">What to study next</h3>
+  {{ with $next }}
+    <div class="study-next-cards">
+      {{ range . }}
+        <a class="study-next-card" href="{{ $.Page.Parent.RelPermalink }}{{ lower . }}/">
+          <span class="study-next-arrow">→</span>
+          <span class="study-next-title">{{ replace . "-" " " }}</span>
+        </a>
+      {{ end }}
+    </div>
+  {{ end }}
+  {{ with $olympiads }}
+    <p class="study-next-olympiads">
+      <span class="topic-meta-label">Relevant for:</span>
+      {{ range . }}
+        <span class="badge-curiosity">{{ . }}</span>
+      {{ end }}
+    </p>
+  {{ end }}
+</div>
+{{ end }}

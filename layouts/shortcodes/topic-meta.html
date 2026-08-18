@@ -1,5 +1,6 @@
 {{ $difficulty := .Page.Params.difficulty }}
 {{ $prereqs := .Page.Params.prerequisites }}
+{{ $next := .Page.Params.next_topics }}
 {{ $tags := .Page.Params.syllabus_tags }}
 <div class="topic-meta">
   {{ with $difficulty }}
@@ -9,6 +10,12 @@
   {{ end }}
   {{ with $prereqs }}
     <span class="topic-meta-label">Prerequisites:</span>
+    {{ range . }}
+      <a class="badge-custom topic-meta-link" href="{{ $.Page.Parent.RelPermalink }}{{ lower . }}/">{{ replace . "-" " " }}</a>
+    {{ end }}
+  {{ end }}
+  {{ with $next }}
+    <span class="topic-meta-label">Next:</span>
     {{ range . }}
       <a class="badge-custom topic-meta-link" href="{{ $.Page.Parent.RelPermalink }}{{ lower . }}/">{{ replace . "-" " " }}</a>
     {{ end }}
