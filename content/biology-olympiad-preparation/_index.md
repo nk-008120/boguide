@@ -37,6 +37,7 @@ Eligibility, dates, and registration details change year to year. Always check y
 
 ## Choose Your Current Level
 
+- **Working backwards from a deadline**: pick a [time-based study plan](/plans/) that matches your timeframe (2 years down to 7 days).
 - **Complete beginner**: start with [Cell & Molecular Biology](/resources/1-cell-molecular/), the foundation everything else builds on.
 - **School biology level**: you likely already know the basics; use the [topic depth map](#how-deep-do-you-need-to-go) below to see where olympiad depth exceeds school curriculum.
 - **Already mid-syllabus**: jump to your weak spots via [Study Resources](/resources/).

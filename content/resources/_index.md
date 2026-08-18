@@ -7,6 +7,8 @@ weight: 1
 
 The grading (S/A/B) isn't a strict ranking. S doesn't automatically mean "better than" A or B. It reflects relevance and recommendation for a given purpose more than raw quality. We no longer host the PDFs directly (see note below): this is a reference list so you know what to look for. If you'd like to help with grading resources, or collecting them, contact at resourcerepository4boguide@gmail.com and we'll be in touch.
 
+***JOIN OUR DISCORD FOR MORE INFORMATION ON WHERE TO GET THESE BOOKS FROM!***
+
 <div class="book-filter" role="group" aria-label="Filter books by category">
   <button type="button" class="book-filter-btn is-active" data-cat="all">All</button>
   <button type="button" class="book-filter-btn" data-cat="general">General</button>
