@@ -22,15 +22,44 @@
 </div>
 
 {{- if $round.problems }}
+{{- /* Distinct subjects across this round's problems, for the topic filter.
+     Difficulty is an optional per-problem field (`difficulty: easy|medium|hard`
+     in the data YAML) — the filter/column only render once at least one
+     problem in the round sets it. */ -}}
+{{- $subjectSet := slice -}}
+{{- $hasDifficulty := false -}}
+{{- range $round.problems }}
+  {{- range .subjects }}{{ $subjectSet = $subjectSet | append .name }}{{ end }}
+  {{- if .difficulty }}{{ $hasDifficulty = true }}{{ end }}
+{{- end }}
+{{- $subjectSet = $subjectSet | uniq | sort }}
 <div class="papers-search">
   <input type="text" id="papers-problem-filter" class="papers-search-input" placeholder="Filter problems…" autocomplete="off">
+  {{- if gt (len $subjectSet) 1 }}
+  <select id="papers-topic-filter" class="papers-filter-select">
+    <option value="">All Topics</option>
+    {{- range $subjectSet }}
+    <option value="{{ . }}">{{ . }}</option>
+    {{- end }}
+  </select>
+  {{- end }}
+  {{- if $hasDifficulty }}
+  <div class="papers-difficulty-filter" id="papers-difficulty-filter">
+    <button type="button" class="papers-diff-btn is-active" data-difficulty="">All</button>
+    <button type="button" class="papers-diff-btn" data-difficulty="easy">Easy</button>
+    <button type="button" class="papers-diff-btn" data-difficulty="medium">Medium</button>
+    <button type="button" class="papers-diff-btn" data-difficulty="hard">Hard</button>
+  </div>
+  {{- end }}
 </div>
 <div class="papers-table-wrap">
 <table class="papers-problem-table" id="papers-problem-table">
-  <thead><tr><th>No.</th><th>Title</th><th>Subjects</th><th>Points</th><th></th></tr></thead>
+  <thead><tr><th>No.</th><th>Title</th><th>Subjects</th>{{ if $hasDifficulty }}<th>Difficulty</th>{{ end }}<th>Points</th><th></th></tr></thead>
   <tbody>
     {{- range $round.problems }}
-    <tr class="papers-problem-row">
+    {{- $subjNames := slice }}
+    {{- range .subjects }}{{ $subjNames = $subjNames | append .name }}{{ end }}
+    <tr class="papers-problem-row" data-subjects="{{ delimit $subjNames "||" }}" data-difficulty="{{ .difficulty | default "" }}">
       <td>{{ .number }}</td>
       <td><a href="{{ $.Page.RelPermalink }}{{ .id }}/">{{ .name }}</a></td>
       <td>
@@ -42,6 +71,9 @@
         </div>
         {{- else -}}—{{- end -}}
       </td>
+      {{- if $hasDifficulty }}
+      <td>{{ if .difficulty }}<span class="papers-difficulty-badge papers-difficulty-{{ .difficulty }}">{{ .difficulty | title }}</span>{{ else }}—{{ end }}</td>
+      {{- end }}
       <td>{{ .maxScore | default "—" }}</td>
       <td>{{ with .link }}<a class="papers-pill" href="{{ . }}" target="_blank" rel="noopener">PDF</a>{{ end }}</td>
     </tr>
@@ -52,13 +84,35 @@
 <script>
 (function () {
   var input = document.getElementById('papers-problem-filter');
-  if (!input) return;
-  input.addEventListener('input', function () {
-    var q = input.value.toLowerCase();
-    document.querySelectorAll('#papers-problem-table .papers-problem-row').forEach(function (row) {
-      row.style.display = row.textContent.toLowerCase().indexOf(q) !== -1 ? '' : 'none';
+  var topicSelect = document.getElementById('papers-topic-filter');
+  var diffWrap = document.getElementById('papers-difficulty-filter');
+  var rows = document.querySelectorAll('#papers-problem-table .papers-problem-row');
+  var activeDifficulty = '';
+
+  function applyFilters() {
+    var q = input ? input.value.toLowerCase() : '';
+    var topic = topicSelect ? topicSelect.value : '';
+    rows.forEach(function (row) {
+      var matchesText = !q || row.textContent.toLowerCase().indexOf(q) !== -1;
+      var subjects = (row.dataset.subjects || '').split('||');
+      var matchesTopic = !topic || subjects.indexOf(topic) !== -1;
+      var matchesDifficulty = !activeDifficulty || row.dataset.difficulty === activeDifficulty;
+      row.style.display = (matchesText && matchesTopic && matchesDifficulty) ? '' : 'none';
     });
-  });
+  }
+
+  if (input) input.addEventListener('input', applyFilters);
+  if (topicSelect) topicSelect.addEventListener('change', applyFilters);
+  if (diffWrap) {
+    diffWrap.addEventListener('click', function (e) {
+      var btn = e.target.closest('.papers-diff-btn');
+      if (!btn) return;
+      diffWrap.querySelectorAll('.papers-diff-btn').forEach(function (b) { b.classList.remove('is-active'); });
+      btn.classList.add('is-active');
+      activeDifficulty = btn.dataset.difficulty;
+      applyFilters();
+    });
+  }
 })();
 </script>
 {{- end }}

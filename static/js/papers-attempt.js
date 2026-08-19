@@ -172,13 +172,26 @@
     var ans = state.answers[p.id] || {};
     var rows = p.statements.map(function (s) {
       var sel = ans[s.letter];
+      var type = s.type || 'true_false';
+      var toggleHTML;
+      if (type === 'mcq') {
+        toggleHTML =
+          '<div class="tf-quiz-toggle tf-quiz-mcq" role="group" aria-label="Statement ' + s.letter + '">' +
+          (s.options || []).map(function (opt) {
+            return '<button type="button" class="tf-btn tf-btn-mcq' + (sel === opt.key ? ' selected' : '') + '" data-value="' + escapeHTML(opt.key) + '">' + escapeHTML(opt.key) + ') ' + escapeHTML(opt.text) + '</button>';
+          }).join('') +
+          '</div>';
+      } else {
+        toggleHTML =
+          '<div class="tf-quiz-toggle" role="group" aria-label="Statement ' + s.letter + '">' +
+          '<button type="button" class="tf-btn' + (sel === true ? ' selected' : '') + '" data-value="true">TRUE</button>' +
+          '<button type="button" class="tf-btn' + (sel === false ? ' selected' : '') + '" data-value="false">FALSE</button>' +
+          '</div>';
+      }
       return (
-        '<div class="tf-quiz-row attempt-statement" data-letter="' + s.letter + '">' +
+        '<div class="tf-quiz-row attempt-statement" data-letter="' + s.letter + '" data-type="' + type + '">' +
         '<div class="tf-quiz-statement"><span class="tf-quiz-letter">' + s.letter + '.</span> ' + escapeHTML(s.text) + '</div>' +
-        '<div class="tf-quiz-toggle" role="group" aria-label="Statement ' + s.letter + '">' +
-        '<button type="button" class="tf-btn' + (sel === true ? ' selected' : '') + '" data-value="true">TRUE</button>' +
-        '<button type="button" class="tf-btn' + (sel === false ? ' selected' : '') + '" data-value="false">FALSE</button>' +
-        '</div></div>'
+        toggleHTML + '</div>'
       );
     }).join('');
     return '<div class="attempt-answer-block">' + rows + '</div>';
@@ -193,11 +206,12 @@
   function wireStatementButtons(p) {
     qBodyEl.querySelectorAll('.attempt-statement').forEach(function (row) {
       var letter = row.dataset.letter;
+      var type = row.dataset.type;
       row.querySelectorAll('.tf-btn').forEach(function (btn) {
         btn.addEventListener('click', function () {
           row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
           btn.classList.add('selected');
-          state.answers[p.id][letter] = (btn.dataset.value === 'true');
+          state.answers[p.id][letter] = (type === 'mcq') ? btn.dataset.value : (btn.dataset.value === 'true');
           renderPalette();
           saveLive();
         });
@@ -404,7 +418,87 @@
     }
 
     recs.push({ tone: 'neutral', title: 'Track your progress',
-      body: 'Retake this test after working through the recommendations above — comparing scores over time is the clearest signal of whether the study time is paying off.' });
+      body: 'Retake this test after working through the recommendations above -- comparing scores over time is the clearest signal of whether the study time is paying off.' });
+
+    return recs;
+  }
+
+  function loadScriptAsync(src) {
+    return new Promise(function (resolve) {
+      if (document.querySelector('script[src="' + src + '"]')) { resolve(); return; }
+      var s = document.createElement('script');
+      s.src = src;
+      s.onload = resolve;
+      s.onerror = resolve;
+      document.head.appendChild(s);
+    });
+  }
+
+  function enrichWithKnowledge(report) {
+    if (!window.PapersAuth || !window.PapersAuth.isConfigured()) return;
+    PapersAuth.getSession().then(function (session) {
+      if (!session || !session.user) return;
+      loadScriptAsync('/js/papers-knowledge.js').then(function () {
+        if (!window.BioKnowledge) return;
+        var client = PapersAuth.getClient();
+        var userId = session.user.id;
+        Promise.all([
+          BioKnowledge.loadAttempts(client, userId),
+          PapersAuth.getProfile(userId),
+          fetch('/data/topic-graph.json').then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; })
+        ]).then(function (results) {
+          var attempts = results[0];
+          var userProfile = results[1];
+          var topicGraph = results[2];
+          if (!attempts || attempts.length < 2) return;
+          var profile = BioKnowledge.buildProfile(attempts, topicGraph);
+          try { sessionStorage.setItem('bioguide-knowledge-profile', JSON.stringify(profile)); } catch (e) {}
+          var extraRecs = buildKnowledgeRecs(report, profile);
+          if (!extraRecs.length) return;
+          var recList = reportScreen.querySelector('.attempt-rec-list');
+          if (recList) recList.innerHTML += renderRecommendations(extraRecs);
+        });
+      });
+    });
+  }
+
+  function buildKnowledgeRecs(report, profile) {
+    var recs = [];
+    var subjects = profile.subjects;
+    var reportSubjects = report.subjectStats;
+
+    var persistent = [];
+    Object.keys(reportSubjects).forEach(function (name) {
+      var s = reportSubjects[name];
+      var pct = s.total ? (s.correct / s.total * 100) : 0;
+      if (pct >= 60) return;
+      var subj = subjects[s.link] || subjects[name];
+      if (!subj) return;
+      if (subj.attemptCount >= 2 && (subj.masteryLevel === 'critical' || subj.masteryLevel === 'weak')) {
+        persistent.push({ name: name, link: s.link, level: subj.masteryLevel, pct: Math.round(subj.weightedAccuracy * 100), attempts: subj.attemptCount, trend: subj.trend });
+      }
+    });
+
+    if (persistent.length) {
+      var declining = persistent.filter(function (p) { return p.trend === 'declining'; });
+      if (declining.length) {
+        recs.push({ tone: 'critical', title: 'Declining in ' + declining.length + ' subject' + (declining.length === 1 ? '' : 's'),
+          body: declining.map(function (p) { return p.name + ' (' + p.pct + '%, ' + p.attempts + ' attempts)'; }).join(', ') + ' -- ' + (declining.length === 1 ? 'this has' : 'these have') + ' been trending downward. Consider a different study approach or resource.',
+          subjectLinks: declining.map(function (p) { return { name: p.name, link: p.link, pct: p.pct }; })
+        });
+      }
+      var stuckWeak = persistent.filter(function (p) { return p.trend !== 'declining'; });
+      if (stuckWeak.length) {
+        recs.push({ tone: 'weak', title: 'Persistent weakness across attempts',
+          body: stuckWeak.map(function (p) { return p.name + ' (' + p.pct + '%)'; }).join(', ') + ' -- weak across ' + stuckWeak[0].attempts + '+ attempts. Targeted study before your next round should help.',
+          subjectLinks: stuckWeak.map(function (p) { return { name: p.name, link: p.link, pct: p.pct }; })
+        });
+      }
+    }
+
+    recs.push({ tone: 'positive', title: 'View your study dashboard',
+      body: 'Your full knowledge profile is built from ' + profile.overall.totalAttempts + ' attempt' + (profile.overall.totalAttempts === 1 ? '' : 's') + '. See all your strengths, weaknesses, and personalized recommendations in one place.',
+      link: '/dashboard/', linkLabel: 'Open Dashboard' });
 
     return recs;
   }
@@ -537,6 +631,8 @@
       var lbBlock = document.getElementById('attempt-leaderboard-block');
       if (lbBlock) renderLeaderboardSubmit(lbBlock);
     }
+
+    enrichWithKnowledge(report);
   }
 
   function renderLastReportSummary() {

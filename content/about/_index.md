@@ -11,6 +11,17 @@ title: "About BiOGuide"
         <span class="recent-update-date">Aug 2026</span>
         <span class="recent-update-contributor">Nishit Kalani</span>
       </div>
+      <p class="recent-update-text"><a href="/dashboard/">Study Dashboard</a> -- personalized mastery tracking, prerequisite-aware study recommendations, trend analysis, topic-page badges, and a "weak areas first" toggle in the Question Bank. All built from your timed attempt history, all computed in your browser. <a href="/dashboard-guide/">See how it works.</a></p>
+    </div>
+  </div>
+  <div class="recent-update-card">
+    <div class="recent-update-icon" aria-hidden="true"></div>
+    <span class="recent-update-badge">NEW</span>
+    <div class="recent-update-body">
+      <div class="recent-update-meta">
+        <span class="recent-update-date">Aug 2026</span>
+        <span class="recent-update-contributor">Nishit Kalani</span>
+      </div>
       <p class="recent-update-text">Senior Partner announced and BiOClash Sample problem and test-taking test platform launched! Give a visit at https://bioguide.world/bioclash/bioclash-sample/attempt/</p>
     </div>
   </div>
@@ -135,7 +146,7 @@ Our chain of command is somewhat summarised by <a href = "https://drive.google.c
 
 ### Inspirations
 
-1. **[AOGuide](https://aoguide.app)**: thanks to an astronomy background, I discovered this treasure of a website for AO aspirants. A lot of what we've done here has been inspired by AOGuide, so a big thanks to the people behind it.
+1. <span style="display:inline-flex;align-items:center;gap:0.4em;"><img src="/aoguidefav.svg" alt="AOGuide" style="width:22px;height:22px;vertical-align:middle;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.12);"> **[AOGuide](https://aoguide.app)**</span> <span class="badge-curiosity" style="font-size:0.75em;vertical-align:middle;">Astronomy Olympiad</span> -- thanks to an astronomy background, I discovered this treasure of a website for AO aspirants. A lot of what we've done here has been inspired by AOGuide, so a big thanks to the people behind it.
 2. **Biolympiads and Learntuitive** - as mentioned above, we've tried to improve on what they offer, but they still serve as a benchmark and an inspiration for us.
 3. More soon!
 

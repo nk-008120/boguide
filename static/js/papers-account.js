@@ -154,9 +154,11 @@
     if (n > 50) { setMsg(msg, 'Keep "About" to 50 words or fewer.', true); return; }
     if (!currentUserId) return;
     setMsg(msg, 'Saving…', false);
+    var olympiadVal = document.getElementById('account-target-olympiad');
     client.from('profiles').update({
       country: profileForm.country.value || null,
       education_level: profileForm.educationLevel.value || null,
+      target_olympiad: olympiadVal ? (olympiadVal.value || null) : null,
       about: aboutInput.value.trim() || null
     }).eq('id', currentUserId).then(function (result) {
       if (result.error) { setMsg(msg, result.error.message, true); return; }
@@ -175,6 +177,8 @@
       if (profile.avatar_url) renderAvatarGrid(profile.avatar_url);
       countrySelect.value = profile.country || '';
       profileForm.educationLevel.value = profile.education_level || '';
+      var olympiadSelect = document.getElementById('account-target-olympiad');
+      if (olympiadSelect) olympiadSelect.value = profile.target_olympiad || '';
       aboutInput.value = profile.about || '';
       aboutInput.dispatchEvent(new Event('input'));
     });

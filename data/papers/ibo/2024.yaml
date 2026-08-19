@@ -13,6 +13,7 @@ rounds:
     problems:
       - id: q1
         number: "Q1"
+        difficulty: "hard"
         name: "Tulip Parsimony and Morphological Characters"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=6"
         subjects:
@@ -38,6 +39,7 @@ rounds:
 
       - id: q2
         number: "Q2"
+        difficulty: "hard"
         name: "Strigiformes (Owls) Phylogenetic Identification"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=7"
         subjects:
@@ -63,6 +65,7 @@ rounds:
 
       - id: q3
         number: "Q3"
+        difficulty: "medium"
         name: "Bacterial Phylogenomics (RNA Polymerase vs Transposase)"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=9"
         subjects:
@@ -88,6 +91,7 @@ rounds:
 
       - id: q4
         number: "Q4"
+        difficulty: "easy"
         name: "Tumor Microenvironment: OCR and Extracellular pH"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=10"
         subjects:
@@ -113,6 +117,7 @@ rounds:
 
       - id: q5
         number: "Q5"
+        difficulty: "hard"
         name: "Antibody Mutagenesis and Cardiac Glycoside Binding (ELISA)"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=11"
         subjects:
@@ -138,6 +143,7 @@ rounds:
 
       - id: q6
         number: "Q6"
+        difficulty: "medium"
         name: "Ramachandran Plot and Peptide Bond Geometry"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=13"
         subjects:
@@ -163,6 +169,7 @@ rounds:
 
       - id: q7
         number: "Q7"
+        difficulty: "medium"
         name: "Pentose Phosphate Pathway (PPP)"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=15"
         subjects:
@@ -188,6 +195,7 @@ rounds:
 
       - id: q8
         number: "Q8"
+        difficulty: "hard"
         name: "IGF2-H19 Imprinting and CTCF Loops"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=17"
         subjects:
@@ -213,6 +221,7 @@ rounds:
 
       - id: q9
         number: "Q9"
+        difficulty: "hard"
         name: "ATAD1 Mitochondrial ATPase (Cryo-EM Study)"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=19"
         subjects:
@@ -238,6 +247,7 @@ rounds:
 
       - id: q10
         number: "Q10"
+        difficulty: "hard"
         name: "Magnetotactic Bacteria Navigation"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=21"
         subjects:
@@ -263,6 +273,7 @@ rounds:
 
       - id: q11
         number: "Q11"
+        difficulty: "easy"
         name: "Directed Evolution of Enzyme D (NADH-Dependent)"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=22"
         subjects:
@@ -288,6 +299,7 @@ rounds:
 
       - id: q12
         number: "Q12"
+        difficulty: "medium"
         name: "DMSO₄ Poisoning Case Study"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=24"
         subjects:
@@ -313,6 +325,7 @@ rounds:
 
       - id: q13
         number: "Q13"
+        difficulty: "medium"
         name: "Nitrogen Limitation of Legumes in Steppes"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=25"
         subjects:
@@ -338,6 +351,7 @@ rounds:
 
       - id: q14
         number: "Q14"
+        difficulty: "hard"
         name: "Latitudinal Diversity Gradient: Three Hypotheses"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=26"
         subjects:
@@ -363,6 +377,7 @@ rounds:
 
       - id: q15
         number: "Q15"
+        difficulty: "hard"
         name: "ENSO and Ecosystem Effects"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=27"
         subjects:
@@ -388,6 +403,7 @@ rounds:
 
       - id: q16
         number: "Q16"
+        difficulty: "hard"
         name: "Fractal Geometry and Scale-Dependent Resource Availability"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=29"
         subjects:
@@ -413,6 +429,7 @@ rounds:
 
       - id: q17
         number: "Q17"
+        difficulty: "medium"
         name: "Water Scarcity Index (Rws) and Solutions"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=30"
         subjects:
@@ -438,6 +455,7 @@ rounds:
 
       - id: q18
         number: "Q18"
+        difficulty: "medium"
         name: "Animal Road Barrier Effect (Traffic Behavior Types)"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=31"
         subjects:
@@ -463,6 +481,7 @@ rounds:
 
       - id: q19
         number: "Q19"
+        difficulty: "hard"
         name: "Cumulative Cultural Evolution in Rock Pigeons"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=33"
         subjects:
@@ -488,6 +507,7 @@ rounds:
 
       - id: q20
         number: "Q20"
+        difficulty: "medium"
         name: "Haploid/Diploid Organisms and Multi-Allele Genetics"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=34"
         subjects:
@@ -513,6 +533,7 @@ rounds:
 
       - id: q21
         number: "Q21"
+        difficulty: "medium"
         name: "Out-of-Africa Human Genetic Diversity and Effective Population Size"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=35"
         subjects:
@@ -540,6 +561,7 @@ rounds:
 
       - id: q22
         number: "Q22"
+        difficulty: "medium"
         name: "ADH1B Allele Geography and Ethanol Metabolism"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=37"
         subjects:
@@ -565,6 +587,7 @@ rounds:
 
       - id: q23
         number: "Q23"
+        difficulty: "medium"
         name: "Drosophila Allele Frequency Experiment and Stabilizing Selection"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=38"
         subjects:
@@ -592,6 +615,7 @@ rounds:
 
       - id: q24
         number: "Q24"
+        difficulty: "easy"
         name: "Codon Usage Bias"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=39"
         subjects:
@@ -617,6 +641,7 @@ rounds:
 
       - id: q25
         number: "Q25"
+        difficulty: "hard"
         name: "Mitochondrial RNase P Mutations and COXPD54"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=40"
         subjects:
@@ -644,6 +669,7 @@ rounds:
 
       - id: q26
         number: "Q26"
+        difficulty: "hard"
         name: "Mass Extinctions and Carbon Cycle Perturbations"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=41"
         subjects:
@@ -669,6 +695,7 @@ rounds:
 
       - id: q27
         number: "Q27"
+        difficulty: "hard"
         name: "Beta-Lactamase Mutational Trajectories and Epistasis"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=43"
         subjects:
@@ -694,6 +721,7 @@ rounds:
 
       - id: q28
         number: "Q28"
+        difficulty: "hard"
         name: "Distribution of Fitness Effects and Effective Population Size"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=44"
         subjects:
@@ -719,6 +747,7 @@ rounds:
 
       - id: q29
         number: "Q29"
+        difficulty: "medium"
         name: "Endogenous Retroviruses and Retrotransposons"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=45"
         subjects:
@@ -744,6 +773,7 @@ rounds:
 
       - id: q30
         number: "Q30"
+        difficulty: "hard"
         name: "Gibberellin Transport and Root Endodermis Suberization"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=47"
         subjects:
@@ -771,6 +801,7 @@ rounds:
 
       - id: q31
         number: "Q31"
+        difficulty: "medium"
         name: "Photorespiration Pathway"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=48"
         subjects:
@@ -796,6 +827,7 @@ rounds:
 
       - id: q32
         number: "Q32"
+        difficulty: "hard"
         name: "Poaceae Stomata Synchronization Mechanism"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=49"
         subjects:
@@ -821,6 +853,7 @@ rounds:
 
       - id: q33
         number: "Q33"
+        difficulty: "medium"
         name: "Xanthophyll Cycle and Photoprotection"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=50"
         subjects:
@@ -846,6 +879,7 @@ rounds:
 
       - id: q34
         number: "Q34"
+        difficulty: "medium"
         name: "Maize Leaf Carbohydrate Allocation"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=52"
         subjects:
@@ -871,6 +905,7 @@ rounds:
 
       - id: q35
         number: "Q35"
+        difficulty: "hard"
         name: "Sequoia Tree Water Use Strategies"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=53"
         subjects:
@@ -896,6 +931,7 @@ rounds:
 
       - id: q36
         number: "Q36"
+        difficulty: "medium"
         name: "Aquatic Carbon Uptake"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=54"
         subjects:
@@ -921,6 +957,7 @@ rounds:
 
       - id: q37
         number: "Q37"
+        difficulty: "medium"
         name: "Root Water Movement and Osmotic Regulation"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=55"
         subjects:
@@ -946,6 +983,7 @@ rounds:
 
       - id: q38
         number: "Q38"
+        difficulty: "hard"
         name: "ECG Interpretation"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=56"
         subjects:
@@ -971,6 +1009,7 @@ rounds:
 
       - id: q39
         number: "Q39"
+        difficulty: "medium"
         name: "Snow Leopard Hemoglobin at High Altitude"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=57"
         subjects:
@@ -996,6 +1035,7 @@ rounds:
 
       - id: q40
         number: "Q40"
+        difficulty: "medium"
         name: "Circadian Misalignment in Mice"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=58"
         subjects:
@@ -1021,6 +1061,7 @@ rounds:
 
       - id: q41
         number: "Q41"
+        difficulty: "medium"
         name: "Octopus Active Sleep and Circadian Control"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=60"
         subjects:
@@ -1046,6 +1087,7 @@ rounds:
 
       - id: q42
         number: "Q42"
+        difficulty: "medium"
         name: "Electric Eel Prey Detection"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=61"
         subjects:
@@ -1071,6 +1113,7 @@ rounds:
 
       - id: q43
         number: "Q43"
+        difficulty: "hard"
         name: "Saiga Nasal Anatomy and Wolf Predation"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=63"
         subjects:
@@ -1098,6 +1141,7 @@ rounds:
 
       - id: q44
         number: "Q44"
+        difficulty: "easy"
         name: "TLR7/8 Activation in Sperm Sex Sorting"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=65"
         subjects:
@@ -1123,6 +1167,7 @@ rounds:
 
       - id: q45
         number: "Q45"
+        difficulty: "medium"
         name: "Vascularized Cardiac Tissue In Vitro"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=67"
         subjects:
@@ -1148,6 +1193,7 @@ rounds:
 
       - id: q46
         number: "Q46"
+        difficulty: "hard"
         name: "Channelrhodopsin-2 (ChR2) in Hippocampal Neurons"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=69"
         subjects:
@@ -1173,6 +1219,7 @@ rounds:
 
       - id: q47
         number: "Q47"
+        difficulty: "hard"
         name: "Cost of Transport in Locomotion"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=71"
         subjects:
@@ -1198,6 +1245,7 @@ rounds:
 
       - id: q48
         number: "Q48"
+        difficulty: "hard"
         name: "Helium Dilution Test for Residual Volume"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=72"
         subjects:
@@ -1223,6 +1271,7 @@ rounds:
 
       - id: q49
         number: "Q49"
+        difficulty: "hard"
         name: "Esophageal Doppler Monitoring"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=73"
         subjects:
@@ -1248,6 +1297,7 @@ rounds:
 
       - id: q50
         number: "Q50"
+        difficulty: "medium"
         name: "Countercurrent System and Nephron Function"
         link: "/papers/ibo/2024/theoretical-a-exam.pdf#page=75"
         subjects:
@@ -1281,6 +1331,7 @@ rounds:
     problems:
       - id: q1
         number: "Q1"
+        difficulty: "medium"
         name: "Dichotomous Key Branching & Taxonomic Resolution"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=4"
         subjects:
@@ -1306,6 +1357,7 @@ rounds:
 
       - id: q2
         number: "Q2"
+        difficulty: "medium"
         name: "Red Deer mtDNA Phylogeny & Bootstrap Support"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=5"
         subjects:
@@ -1331,6 +1383,7 @@ rounds:
 
       - id: q3
         number: "Q3"
+        difficulty: "hard"
         name: "BRCA1/53BP1 and DNA Double-Strand Break Repair Pathway Choice"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=7"
         subjects:
@@ -1356,6 +1409,7 @@ rounds:
 
       - id: q4
         number: "Q4"
+        difficulty: "medium"
         name: "Calcium Channel Signaling in Pancreatic Beta Cells"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=9"
         subjects:
@@ -1381,6 +1435,7 @@ rounds:
 
       - id: q5
         number: "Q5"
+        difficulty: "hard"
         name: "Ketogenic Diet Metabolism and Catecholamine Seizure Latency"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=10"
         subjects:
@@ -1406,6 +1461,7 @@ rounds:
 
       - id: q6
         number: "Q6"
+        difficulty: "easy"
         name: "ProQC — Synthetic Toehold-Switch Quality Control of Translation"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=12"
         subjects:
@@ -1431,6 +1487,7 @@ rounds:
 
       - id: q7
         number: "Q7"
+        difficulty: "hard"
         name: "DNA Fiber Assay and Replication Fork Progression"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=13"
         subjects:
@@ -1456,6 +1513,7 @@ rounds:
 
       - id: q8
         number: "Q8"
+        difficulty: "hard"
         name: "Identifying DNA-Metabolism Enzymes from a Gel Assay"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=14"
         subjects:
@@ -1481,6 +1539,7 @@ rounds:
 
       - id: q9
         number: "Q9"
+        difficulty: "medium"
         name: "Compound X, Polyploidy, and Checkpoint Kinases A/B"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=16"
         subjects:
@@ -1506,6 +1565,7 @@ rounds:
 
       - id: q10
         number: "Q10"
+        difficulty: "hard"
         name: "Heterodimer Formation, Ligand Signaling, and Stem Cell Differentiation"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=17"
         subjects:
@@ -1533,6 +1593,7 @@ rounds:
 
       - id: q11
         number: "Q11"
+        difficulty: "medium"
         name: "Proteasome vs. Lysosome Degradation and Protein Half-Life"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=19"
         subjects:
@@ -1558,6 +1619,7 @@ rounds:
 
       - id: q12
         number: "Q12"
+        difficulty: "hard"
         name: "FRET-Based Protease Activity and Inhibitor Mechanism"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=20"
         subjects:
@@ -1583,6 +1645,7 @@ rounds:
 
       - id: q13
         number: "Q13"
+        difficulty: "hard"
         name: "Shelterin, the T-loop, and Chromosome Bridge Formation"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=23"
         subjects:
@@ -1610,6 +1673,7 @@ rounds:
 
       - id: q14
         number: "Q14"
+        difficulty: "medium"
         name: "Aral Sea Food-Chain Restoration and Salinity Tolerance"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=24"
         subjects:
@@ -1635,6 +1699,7 @@ rounds:
 
       - id: q15
         number: "Q15"
+        difficulty: "hard"
         name: "Lotka-Volterra Competition Lines and Coexistence Outcomes"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=25"
         subjects:
@@ -1660,6 +1725,7 @@ rounds:
 
       - id: q16
         number: "Q16"
+        difficulty: "medium"
         name: "Niche Dimensions and Stipa capillata Drought Adaptation"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=27"
         subjects:
@@ -1685,6 +1751,7 @@ rounds:
 
       - id: q17
         number: "Q17"
+        difficulty: "medium"
         name: "Incompatible Insect Technique and Wolbachia-Induced Cytoplasmic Incompatibility"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=28"
         subjects:
@@ -1710,6 +1777,7 @@ rounds:
 
       - id: q18
         number: "Q18"
+        difficulty: "medium"
         name: "Ant Invasion, Visibility, and a Lion-Zebra-Buffalo Trophic Cascade"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=29"
         subjects:
@@ -1735,6 +1803,7 @@ rounds:
 
       - id: q19
         number: "Q19"
+        difficulty: "medium"
         name: "Heat-Balling Honeybee Defense Against Hornets"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=31"
         subjects:
@@ -1760,6 +1829,7 @@ rounds:
 
       - id: q20
         number: "Q20"
+        difficulty: "medium"
         name: "Female Body Mass, Male Fighting, and Mating Outcomes in Crickets"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=32"
         subjects:
@@ -1785,6 +1855,7 @@ rounds:
 
       - id: q21
         number: "Q21"
+        difficulty: "hard"
         name: "Cannibalism Probability and Injury Bias in Japanese Mitten Crabs"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=33"
         subjects:
@@ -1810,6 +1881,7 @@ rounds:
 
       - id: q22
         number: "Q22"
+        difficulty: "hard"
         name: "Genomic Imprinting at the IGF2-H19 Locus"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=34"
         subjects:
@@ -1835,6 +1907,7 @@ rounds:
 
       - id: q23
         number: "Q23"
+        difficulty: "medium"
         name: "ACE2/CTS1 Mutations and Multicellularity in Yeast"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=35"
         subjects:
@@ -1860,6 +1933,7 @@ rounds:
 
       - id: q24
         number: "Q24"
+        difficulty: "hard"
         name: "Robertsonian Translocation and Chromosome 14/21 Anomalies"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=37"
         subjects:
@@ -1885,6 +1959,7 @@ rounds:
 
       - id: q25
         number: "Q25"
+        difficulty: "hard"
         name: "X-Linked Trait Allele Mixing and Pedigree Probability"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=39"
         subjects:
@@ -1912,6 +1987,7 @@ rounds:
 
       - id: q26
         number: "Q26"
+        difficulty: "medium"
         name: "Intratumor Heterogeneity and Clonal Evolution Under Treatment"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=41"
         subjects:
@@ -1937,6 +2013,7 @@ rounds:
 
       - id: q27
         number: "Q27"
+        difficulty: "hard"
         name: "PCR Mapping of Genomic Rearrangements in Genes H and K"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=42"
         subjects:
@@ -1962,6 +2039,7 @@ rounds:
 
       - id: q28
         number: "Q28"
+        difficulty: "hard"
         name: "Epistasis Between Two Hair-Pigmentation Genes"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=43"
         subjects:
@@ -1987,6 +2065,7 @@ rounds:
 
       - id: q29
         number: "Q29"
+        difficulty: "medium"
         name: "Cas9 Target Sites, Donor Design, and Mutation Severity"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=44"
         subjects:
@@ -2012,6 +2091,7 @@ rounds:
 
       - id: q30
         number: "Q30"
+        difficulty: "hard"
         name: "Linked Genes Controlling Fruit Fly Wing Pigmentation"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=46"
         subjects:
@@ -2037,6 +2117,7 @@ rounds:
 
       - id: q31
         number: "Q31"
+        difficulty: "medium"
         name: "Linkage Disequilibrium Between M* and Flanking Loci R/Q"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=48"
         subjects:
@@ -2062,6 +2143,7 @@ rounds:
 
       - id: q32
         number: "Q32"
+        difficulty: "medium"
         name: "Venus Flytrap Closure — Temperature and Chemical Effects"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=49"
         subjects:
@@ -2087,6 +2169,7 @@ rounds:
 
       - id: q33
         number: "Q33"
+        difficulty: "medium"
         name: "PtrWOX4a and PtrVCS2 in Vascular Cambium Proliferation"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=51"
         subjects:
@@ -2112,6 +2195,7 @@ rounds:
 
       - id: q34
         number: "Q34"
+        difficulty: "medium"
         name: "GAPLESS Proteins and Apoplastic Transport in Roots"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=52"
         subjects:
@@ -2137,6 +2221,7 @@ rounds:
 
       - id: q35
         number: "Q35"
+        difficulty: "medium"
         name: "Phytochrome B States, Temperature, and Nuclear Bodies"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=53"
         subjects:
@@ -2162,6 +2247,7 @@ rounds:
 
       - id: q36
         number: "Q36"
+        difficulty: "medium"
         name: "CONSTANS, Photoperiod, and Seed Mass"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=55"
         subjects:
@@ -2187,6 +2273,7 @@ rounds:
 
       - id: q37
         number: "Q37"
+        difficulty: "hard"
         name: "Auxin Transport and Apical Dominance"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=57"
         subjects:
@@ -2212,6 +2299,7 @@ rounds:
 
       - id: q38
         number: "Q38"
+        difficulty: "medium"
         name: "Chemical A, Gibberellin, and Wheat Seed Germination"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=59"
         subjects:
@@ -2237,6 +2325,7 @@ rounds:
 
       - id: q39
         number: "Q39"
+        difficulty: "medium"
         name: "Intermittent Claudication and Cardiovascular Drug Treatments"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=60"
         subjects:
@@ -2262,6 +2351,7 @@ rounds:
 
       - id: q40
         number: "Q40"
+        difficulty: "easy"
         name: "Pharmacokinetics — Absorption, Distribution, Metabolism, Excretion"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=61"
         subjects:
@@ -2287,6 +2377,7 @@ rounds:
 
       - id: q41
         number: "Q41"
+        difficulty: "medium"
         name: "Burmese Python Heart Mass Changes After Feeding"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=62"
         subjects:
@@ -2312,6 +2403,7 @@ rounds:
 
       - id: q42
         number: "Q42"
+        difficulty: "medium"
         name: "The Starling Equation and Capillary Fluid Exchange"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=63"
         subjects:
@@ -2337,6 +2429,7 @@ rounds:
 
       - id: q43
         number: "Q43"
+        difficulty: "medium"
         name: "Liver Lobule Zonation and Bile Flow"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=64"
         subjects:
@@ -2362,6 +2455,7 @@ rounds:
 
       - id: q44
         number: "Q44"
+        difficulty: "hard"
         name: "Bee Thermoregulation and Body-Size Scaling"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=65"
         subjects:
@@ -2387,6 +2481,7 @@ rounds:
 
       - id: q45
         number: "Q45"
+        difficulty: "hard"
         name: "COPD Lung Volume Changes and Pressure-Volume Curves"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=67"
         subjects:
@@ -2412,6 +2507,7 @@ rounds:
 
       - id: q46
         number: "Q46"
+        difficulty: "hard"
         name: "Osmotic and Chemical Stress in a Marine Tardigrade"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=69"
         subjects:
@@ -2437,6 +2533,7 @@ rounds:
 
       - id: q47
         number: "Q47"
+        difficulty: "medium"
         name: "Cancer Immunotherapy and Checkpoint Inhibitors"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=71"
         subjects:
@@ -2462,6 +2559,7 @@ rounds:
 
       - id: q48
         number: "Q48"
+        difficulty: "medium"
         name: "mRNA Nucleotide Modifications and Vaccine Design"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=73"
         subjects:
@@ -2487,6 +2585,7 @@ rounds:
 
       - id: q49
         number: "Q49"
+        difficulty: "hard"
         name: "CCHa1, Enteroendocrine Cells, and Sleep Arousal in Drosophila"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=74"
         subjects:
@@ -2512,6 +2611,7 @@ rounds:
 
       - id: q50
         number: "Q50"
+        difficulty: "medium"
         name: "Bicoid, Exuperantia, and Body Axis Determination in Drosophila"
         link: "/papers/ibo/2024/theoretical-b-exam.pdf#page=76"
         subjects:

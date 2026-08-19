@@ -12,7 +12,8 @@ layout: "wide"
   <h1>Your BiOGuide account</h1>
   <p class="account-branding-tagline">One login for everything BiOGuide is building beyond the study notes.</p>
   <ul class="account-branding-points">
-    <li><span class="account-branding-icon">📖</span><div><strong>BiOGuide Member Status</strong><br>Access to Pre-registration for the Biannual BiOClash, and occasional provisions of Outside Counsel roles.</div></li>
+    <li><span class="account-branding-icon">📊</span><div><strong>Study Dashboard</strong><br>Personalized mastery tracking, prerequisite-aware study recommendations, and trend analysis -- all built from your timed attempt history.</div></li>
+    <li><span class="account-branding-icon">🛡️</span><div><strong>BiOClash Registration for free!</strong><br>Access to Pre-registration for the Biannual BiOClash, and occasional provisions of Outside Counsel roles.</div></li>
     <li><span class="account-branding-icon">🏆</span><div><strong>Leaderboard</strong><br>Save Timed Attempt results and see how you stack up, per round and overall.</div></li>
     <li><span class="account-branding-icon">🙂</span><div><strong>Profile</strong><br>Pick an avatar and share your country, education level, and a short bio.</div></li>
     <li><span class="account-branding-icon">📖</span><div><strong>BiOBytes</strong><br>Full access to every article, not just the teaser.</div></li>
@@ -95,6 +96,14 @@ layout: "wide"
         <option value="undergraduate">Undergraduate</option>
         <option value="graduate">Graduate</option>
         <option value="other">Other</option>
+      </select>
+    </label>
+    <label>Target Olympiad <span class="account-hint">(used to tailor study recommendations on your dashboard)</span>
+      <select name="targetOlympiad" id="account-target-olympiad">
+        <option value="">Not set (defaults to IBO)</option>
+        <option value="ibo">IBO</option>
+        <option value="usabo">USABO</option>
+        <option value="inbo">INBO</option>
       </select>
     </label>
     <label>About <span class="account-hint">(max 50 words, shown on your profile only)</span>

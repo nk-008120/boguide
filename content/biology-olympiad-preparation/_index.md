@@ -50,16 +50,14 @@ Eligibility, dates, and registration details change year to year. Always check y
 
 Work through the sections roughly in this order. Later topics lean on earlier ones more than the reverse:
 
-```text
-1. Cell & Molecular Biology & Biochemistry
-2. Genetics
-3. Animal Anatomy → 4. Animal Physiology
-5. Plant Anatomy → 6. Plant Physiology
-7. Ecology → 8. Ethology
-9. Evolution
-10. Bioinformatics
-11–14. Practical Sections
-```
+1. Cell & Molecular Biology & Biochemistry<br>
+2. Genetics<br>
+3. Animal Anatomy → 4. Animal Physiology<br>
+5. Plant Anatomy → 6. Plant Physiology<br>
+7. Ecology → 8. Ethology<br>
+9. Evolution<br>
+10. Bioinformatics<br>
+11. Practical Sections (11-14)
 
 This isn't a strict dependency graph. Ecology and Evolution, for instance, are reasonably independent of Anatomy/Physiology, but Cell/Molecular Biology and Genetics underpin nearly everything else, so they're worth getting solid early.
 
@@ -78,6 +76,7 @@ The grading reflects relevance and recommendation for a purpose, not a strict qu
 ## What Should I Practice?
 
 - **[BiOrchive](/papers/)**: past olympiad papers browsable by year and round, with solutions and an attempt mode that scores your work.
+- **[Question Bank](/papers/question-bank/)**: every question in the archive in one searchable table — filter by olympiad, year, topic, and difficulty to drill exactly what you're weak on instead of working through a whole paper.
 - **[BiOBytes](/biobytes/)**: shorter-form exam-technique tips and lab guides for when you want something more digestible than a full past paper.
 
 Start practice early, even before you feel "ready". Seeing real question formats shapes how you study far more effectively than passively reading notes until you feel prepared.
@@ -89,19 +88,19 @@ Different olympiads expect different depth on the same topics. This is BioGuide'
 | Topic | Beginner | USABO | INBO | IBO |
 |---|:---:|:---:|:---:|:---:|
 | Cell structure & organelles | ✓ | ✓ | ✓ | ✓ |
-| Membrane transport | ✓ | ✓ | ✓ | ✓ |
-| Enzyme kinetics | — | ✓ | ✓ | ✓ |
+| Molecular Biology | ✓ | ✓ | ✓ | ✓ |
+| Biochemistry | ✓ | ✓ | ✓ | ✓ |
 | Mendelian genetics | ✓ | ✓ | ✓ | ✓ |
 | Linkage & chromosomal mapping | — | ✓ | ✓ | ✓ |
-| Population genetics | — | ✓ | ✓ | ✓ |
-| Molecular biology (gene expression, regulation) | — | ✓ | ✓ | ✓ |
+| Population genetics | ✓ | ✓ | ✓ | ✓ |
+| Molecular biology of Genetics (gene expression, regulation) | ✓ | ✓ | ✓ | ✓ |
 | Human physiology (organ systems) | ✓ | ✓ | ✓ | ✓ |
 | Comparative vertebrate/invertebrate anatomy | — | ✓ | ✓ | ✓ |
 | Plant physiology & hormones | — | ✓ | ✓ | ✓ |
 | Ecology & population dynamics | ✓ | ✓ | ✓ | ✓ |
 | Phylogenetics & cladistics | — | — | ✓ | ✓ |
-| Bioinformatics (BLAST, alignments) | — | — | ✓ | ✓ |
-| Experimental design & statistics | — | — | ✓ | ✓ |
+| Bioinformatics (BLAST, alignments) | — | — | — | ✓ |
+| Experimental design & statistics | — | — | — | ✓ |
 | Advanced biochemical pathways | — | — | — | ✓ |
 
 *Last reviewed: August 2026. If you find this out of step with an official syllabus, let us know at [resourcerepository4boguide@gmail.com](mailto:resourcerepository4boguide@gmail.com); we'd rather fix it than leave it wrong.*

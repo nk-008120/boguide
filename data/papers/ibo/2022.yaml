@@ -13,6 +13,7 @@ rounds:
     problems:
       - id: q1
         number: "Q1"
+        difficulty: "medium"
         name: "Alfalfa Mosaic Virus — m6A Demethylation & Viral Replication"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=2"
         subjects:
@@ -40,6 +41,7 @@ rounds:
 
       - id: q2
         number: "Q2"
+        difficulty: "medium"
         name: "Enzyme Kinetics — Time to Completion vs Temperature"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=4"
         subjects:
@@ -65,6 +67,7 @@ rounds:
 
       - id: q3
         number: "Q3"
+        difficulty: "medium"
         name: "Amylase Activity — Starch Hydrolysis at 50–70°C"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=5"
         subjects:
@@ -92,6 +95,7 @@ rounds:
 
       - id: q4
         number: "Q4"
+        difficulty: "medium"
         name: "Enzyme Inhibition — Substrate Concentration vs Rate Curves"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=6"
         subjects:
@@ -117,6 +121,7 @@ rounds:
 
       - id: q5
         number: "Q5"
+        difficulty: "hard"
         name: "Meselson–Stahl Experiment — DNA Replication Modes"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=7"
         subjects:
@@ -142,6 +147,7 @@ rounds:
 
       - id: q6
         number: "Q6"
+        difficulty: "easy"
         name: "Cell Membrane Transport — Arrows X, Y, Z"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=8"
         subjects:
@@ -167,6 +173,7 @@ rounds:
 
       - id: q7
         number: "Q7"
+        difficulty: "medium"
         name: "Apoptosis — p53/Bax/Bcl-2 Pathway Under Hypoxia"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=9"
         subjects:
@@ -192,6 +199,7 @@ rounds:
 
       - id: q8
         number: "Q8"
+        difficulty: "medium"
         name: "Ethidium Bromide — DNA Binding and Intercalation"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=10"
         subjects:
@@ -219,6 +227,7 @@ rounds:
 
       - id: q9
         number: "Q9"
+        difficulty: "medium"
         name: "Organ-on-a-Chip — Lung-on-a-Chip & Pulmonary Oedema Model"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=12"
         subjects:
@@ -246,6 +255,7 @@ rounds:
 
       - id: q10
         number: "Q10"
+        difficulty: "medium"
         name: "3D Bioprinting — Cell Viability, Bioluminescence, and Confocal Imaging"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=15"
         subjects:
@@ -273,6 +283,7 @@ rounds:
 
       - id: q11
         number: "Q11"
+        difficulty: "medium"
         name: "Heart Decellularization — Fish vs. Rat Cannulation"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=17"
         subjects:
@@ -300,6 +311,7 @@ rounds:
 
       - id: q12
         number: "Q12"
+        difficulty: "hard"
         name: "iPSC/hESC Cardiomyocyte Grafts After Myocardial Infarction"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=18"
         subjects:
@@ -327,6 +339,7 @@ rounds:
 
       - id: q13
         number: "Q13"
+        difficulty: "medium"
         name: "3D Skin Substitute — Layered Tissue Engineering"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=20"
         subjects:
@@ -354,6 +367,7 @@ rounds:
 
       - id: q14
         number: "Q14"
+        difficulty: "medium"
         name: "Water Potential — Osmosis Between Three Plant Cells"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=22"
         subjects:
@@ -379,6 +393,7 @@ rounds:
 
       - id: q15
         number: "Q15"
+        difficulty: "medium"
         name: "Plant Life Cycle — Heterospory and Gametophyte Forms"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=23"
         subjects:
@@ -404,6 +419,7 @@ rounds:
 
       - id: q16
         number: "Q16"
+        difficulty: "easy"
         name: "Flower Structure — Symmetry, Pollination, and Calyx"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=24"
         subjects:
@@ -429,6 +445,7 @@ rounds:
 
       - id: q17
         number: "Q17"
+        difficulty: "medium"
         name: "Plant Organ Modifications — Shoot vs. Leaf Origin"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=25"
         subjects:
@@ -456,6 +473,7 @@ rounds:
 
       - id: q18
         number: "Q18"
+        difficulty: "easy"
         name: "Mycorrhizal Symbiosis — Ecto-, Endo-, and Ectendomycorrhiza"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=26"
         subjects:
@@ -483,6 +501,7 @@ rounds:
 
       - id: q19
         number: "Q19"
+        difficulty: "medium"
         name: "Plant Life Cycles — Water-Dependent Fertilization"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=28"
         subjects:
@@ -508,6 +527,7 @@ rounds:
 
       - id: q20
         number: "Q20"
+        difficulty: "hard"
         name: "Tree Age Estimation — Annual Ring Growth"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=29"
         subjects:
@@ -533,6 +553,7 @@ rounds:
 
       - id: q21
         number: "Q21"
+        difficulty: "medium"
         name: "Biological Samples — Identifying Diverse Organisms"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=30"
         subjects:
@@ -558,6 +579,7 @@ rounds:
 
       - id: q22
         number: "Q22"
+        difficulty: "medium"
         name: "Social Stress Response in Mice — Dominance Hierarchy"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=31"
         subjects:
@@ -583,6 +605,7 @@ rounds:
 
       - id: q23
         number: "Q23"
+        difficulty: "hard"
         name: "Gut Microbiome — Bacterial Crossing of the Blood-Brain Barrier"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=33"
         subjects:
@@ -610,6 +633,7 @@ rounds:
 
       - id: q24
         number: "Q24"
+        difficulty: "medium"
         name: "Comparative Liver Anatomy — Zebrafish vs. Human"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=35"
         subjects:
@@ -637,6 +661,7 @@ rounds:
 
       - id: q25
         number: "Q25"
+        difficulty: "medium"
         name: "Oxytocin and Cortisol — Touch vs. Voice Contact in Girls"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=38"
         subjects:
@@ -662,6 +687,7 @@ rounds:
 
       - id: q26
         number: "Q26"
+        difficulty: "medium"
         name: "Cardiac Cycle — Valve Timing and Pressure Changes"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=40"
         subjects:
@@ -687,6 +713,7 @@ rounds:
 
       - id: q27
         number: "Q27"
+        difficulty: "easy"
         name: "Saiga Antelope — Nose Adaptations for Cold, Dust, and Signalling"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=42"
         subjects:
@@ -714,6 +741,7 @@ rounds:
 
       - id: q28
         number: "Q28"
+        difficulty: "medium"
         name: "Carbon Dioxide Transport in the Blood"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=44"
         subjects:
@@ -739,6 +767,7 @@ rounds:
 
       - id: q29
         number: "Q29"
+        difficulty: "medium"
         name: "The Bohr Effect — Oxygen-Haemoglobin Dissociation"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=45"
         subjects:
@@ -764,6 +793,7 @@ rounds:
 
       - id: q30
         number: "Q30"
+        difficulty: "medium"
         name: "Bone Marrow Conversion — Red vs. Yellow Marrow With Age"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=46"
         subjects:
@@ -789,6 +819,7 @@ rounds:
 
       - id: q31
         number: "Q31"
+        difficulty: "medium"
         name: "Retina Cell Layers — Direction of Light and Cell Types"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=47"
         subjects:
@@ -814,6 +845,7 @@ rounds:
 
       - id: q32
         number: "Q32"
+        difficulty: "medium"
         name: "Shiverer Mutation — Optic Nerve Myelin"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=48"
         subjects:
@@ -839,6 +871,7 @@ rounds:
 
       - id: q33
         number: "Q33"
+        difficulty: "medium"
         name: "Dormouse Litters — Growth Rate and Energy Intake"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=49"
         subjects:
@@ -864,6 +897,7 @@ rounds:
 
       - id: q34
         number: "Q34"
+        difficulty: "medium"
         name: "Cichlid Fish — Anal Fin Egg-Spot Signalling"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=51"
         subjects:
@@ -889,6 +923,7 @@ rounds:
 
       - id: q35
         number: "Q35"
+        difficulty: "medium"
         name: "Ninespine Stickleback — Sexual Dimorphism and Sneaker Males"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=53"
         subjects:
@@ -914,6 +949,7 @@ rounds:
 
       - id: q36
         number: "Q36"
+        difficulty: "medium"
         name: "Aethia cristatella — Courtship Display on Rocks"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=54"
         subjects:
@@ -941,6 +977,7 @@ rounds:
 
       - id: q37
         number: "Q37"
+        difficulty: "hard"
         name: "ABO Blood Groups — H Antigen and the Bombay Phenotype"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=56"
         subjects:
@@ -966,6 +1003,7 @@ rounds:
 
       - id: q38
         number: "Q38"
+        difficulty: "medium"
         name: "Modes of Natural Selection — Frequency Distribution Curves"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=57"
         subjects:
@@ -991,6 +1029,7 @@ rounds:
 
       - id: q39
         number: "Q39"
+        difficulty: "hard"
         name: "Mutation Rates — Asexual vs. Sexual Yeast Populations"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=58"
         subjects:
@@ -1016,6 +1055,7 @@ rounds:
 
       - id: q40
         number: "Q40"
+        difficulty: "medium"
         name: "Elephants, LIF6, and Cancer Resistance"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=60"
         subjects:
@@ -1043,6 +1083,7 @@ rounds:
 
       - id: q41
         number: "Q41"
+        difficulty: "hard"
         name: "Angelman Syndrome — Genomic Imprinting Pedigree"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=61"
         subjects:
@@ -1070,6 +1111,7 @@ rounds:
 
       - id: q42
         number: "Q42"
+        difficulty: "hard"
         name: "Thyrocyte Adenylyl Cyclase — TSH and VIP/PACAP Pathways"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=62"
         subjects:
@@ -1095,6 +1137,7 @@ rounds:
 
       - id: q43
         number: "Q43"
+        difficulty: "medium"
         name: "Giraffe FGFRL1 — Cardiovascular and Skeletal Adaptations"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=64"
         subjects:
@@ -1122,6 +1165,7 @@ rounds:
 
       - id: q44
         number: "Q44"
+        difficulty: "hard"
         name: "Macromutations and Morphogenesis — A1/A2/M Gene Model"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=66"
         subjects:
@@ -1147,6 +1191,7 @@ rounds:
 
       - id: q45
         number: "Q45"
+        difficulty: "medium"
         name: "Drosophila Color Preference and Circadian Activity"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=67"
         subjects:
@@ -1172,6 +1217,7 @@ rounds:
 
       - id: q46
         number: "Q46"
+        difficulty: "medium"
         name: "Three-Toed Sloth Fur Ecosystem — Moths, Algae, and Fungi"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=69"
         subjects:
@@ -1197,6 +1243,7 @@ rounds:
 
       - id: q47
         number: "Q47"
+        difficulty: "hard"
         name: "Codling Moth — Temperature/Humidity Ecological Niche"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=71"
         subjects:
@@ -1222,6 +1269,7 @@ rounds:
 
       - id: q48
         number: "Q48"
+        difficulty: "medium"
         name: "Sockeye Salmon — Life Stages and Chukchi Population Age Structure"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=73"
         subjects:
@@ -1247,6 +1295,7 @@ rounds:
 
       - id: q49
         number: "Q49"
+        difficulty: "easy"
         name: "Biological Nitrogen Fixation — Diazotrophs and Nitrogenase"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=74"
         subjects:
@@ -1282,6 +1331,7 @@ rounds:
     problems:
       - id: q1
         number: "Q51"
+        difficulty: "hard"
         name: "Cancer Cell Metabolism — Aerobic Glycolysis and the Warburg Effect"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=2"
         subjects:
@@ -1307,6 +1357,7 @@ rounds:
 
       - id: q2
         number: "Q52"
+        difficulty: "hard"
         name: "Cryopyrin Inflammasome — Western Blot of WT and Mutant Variants"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=4"
         subjects:
@@ -1332,6 +1383,7 @@ rounds:
 
       - id: q3
         number: "Q53"
+        difficulty: "medium"
         name: "Telomerase — Mechanism of Telomere Extension"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=5"
         subjects:
@@ -1357,6 +1409,7 @@ rounds:
 
       - id: q4
         number: "Q54"
+        difficulty: "hard"
         name: "NAD(P)H Fluorescence During the Aerobic–Anaerobic Transition in Yeast"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=7"
         subjects:
@@ -1382,6 +1435,7 @@ rounds:
 
       - id: q5
         number: "Q55"
+        difficulty: "hard"
         name: "X-Irradiation of Yeast — NAD(P)H Fluorescence and Metabolic Recovery"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=8"
         subjects:
@@ -1407,6 +1461,7 @@ rounds:
 
       - id: q6
         number: "Q56"
+        difficulty: "medium"
         name: "Lysosomal Exocytosis in Cancer Cells"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=10"
         subjects:
@@ -1432,6 +1487,7 @@ rounds:
 
       - id: q7
         number: "Q57"
+        difficulty: "medium"
         name: "PIP2/PIP3 Signaling in T Cells — PTEN and Antigen Dose"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=12"
         subjects:
@@ -1459,6 +1515,7 @@ rounds:
 
       - id: q8
         number: "Q58"
+        difficulty: "hard"
         name: "TAK1 Kinase and Takinib — Competitive vs Non-Competitive Inhibition"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=13"
         subjects:
@@ -1484,6 +1541,7 @@ rounds:
 
       - id: q9
         number: "Q59"
+        difficulty: "hard"
         name: "Mitochondrial Innate Immunity — Yme1L, SLC25A33 and mtDNA Release"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=14"
         subjects:
@@ -1511,6 +1569,7 @@ rounds:
 
       - id: q10
         number: "Q60"
+        difficulty: "medium"
         name: "Alzheimer's Disease — APP Processing by α-, β- and γ-Secretases"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=16"
         subjects:
@@ -1536,6 +1595,7 @@ rounds:
 
       - id: q11
         number: "Q61"
+        difficulty: "medium"
         name: "RNA Virus Replication Cycles — Genome Classification"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=17"
         subjects:
@@ -1561,6 +1621,7 @@ rounds:
 
       - id: q12
         number: "Q62"
+        difficulty: "easy"
         name: "Pine Needle Cross-Section — Resin Duct and Mesophyll"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=19"
         subjects:
@@ -1586,6 +1647,7 @@ rounds:
 
       - id: q13
         number: "Q63"
+        difficulty: "medium"
         name: "Land Plant Phylogeny — Evaluating Four Cladograms"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=20"
         subjects:
@@ -1611,6 +1673,7 @@ rounds:
 
       - id: q14
         number: "Q64"
+        difficulty: "medium"
         name: "The C4 Rice Project — Engineering C4 Photosynthesis into a C3 Crop"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=21"
         subjects:
@@ -1636,6 +1699,7 @@ rounds:
 
       - id: q15
         number: "Q65"
+        difficulty: "medium"
         name: "Arabidopsis Sun vs Shade Leaves — Cross-Section Comparison"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=22"
         subjects:
@@ -1661,6 +1725,7 @@ rounds:
 
       - id: q16
         number: "Q66"
+        difficulty: "easy"
         name: "Transpiration Rate Differences Between Leaf Surfaces"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=23"
         subjects:
@@ -1686,6 +1751,7 @@ rounds:
 
       - id: q17
         number: "Q67"
+        difficulty: "medium"
         name: "Root Water Transport Pathways — Apoplast vs Symplast"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=24"
         subjects:
@@ -1711,6 +1777,7 @@ rounds:
 
       - id: q18
         number: "Q68"
+        difficulty: "medium"
         name: "Pressure-Flow Model of Phloem Sucrose Transport"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=25"
         subjects:
@@ -1736,6 +1803,7 @@ rounds:
 
       - id: q19
         number: "Q69"
+        difficulty: "medium"
         name: "Mechanosensitive Ion Channels — OSCA vs Piezo1"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=27"
         subjects:
@@ -1761,6 +1829,7 @@ rounds:
 
       - id: q20
         number: "Q70"
+        difficulty: "medium"
         name: "Land Plant Phylogeny and Shared Derived Characters"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=28"
         subjects:
@@ -1786,6 +1855,7 @@ rounds:
 
       - id: q21
         number: "Q71"
+        difficulty: "hard"
         name: "Hippo Pathway Signaling in Blastocyst Implantation"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=29"
         subjects:
@@ -1811,6 +1881,7 @@ rounds:
 
       - id: q22
         number: "Q72"
+        difficulty: "easy"
         name: "Mechanisms of Synaptic Specificity"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=31"
         subjects:
@@ -1836,6 +1907,7 @@ rounds:
 
       - id: q23
         number: "Q73"
+        difficulty: "easy"
         name: "PD-1 Immune Checkpoint Signaling"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=34"
         subjects:
@@ -1861,6 +1933,7 @@ rounds:
 
       - id: q24
         number: "Q74"
+        difficulty: "medium"
         name: "Pathophysiology of Traumatic Brain Injury"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=35"
         subjects:
@@ -1886,6 +1959,7 @@ rounds:
 
       - id: q25
         number: "Q75"
+        difficulty: "medium"
         name: "Plasma Enzyme Diagnostics After Myocardial Infarction"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=37"
         subjects:
@@ -1911,6 +1985,7 @@ rounds:
 
       - id: q26
         number: "Q76"
+        difficulty: "medium"
         name: "Insulin and Glucagon Dynamics in Type 2 Diabetes"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=38"
         subjects:
@@ -1936,6 +2011,7 @@ rounds:
 
       - id: q27
         number: "Q77"
+        difficulty: "hard"
         name: "Mitochondrial Calcium Handling in Synaptic Plasticity and Aging"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=39"
         subjects:
@@ -1961,6 +2037,7 @@ rounds:
 
       - id: q28
         number: "Q78"
+        difficulty: "medium"
         name: "Cellular Response to DNA Damage in Cancer"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=41"
         subjects:
@@ -1986,6 +2063,7 @@ rounds:
 
       - id: q29
         number: "Q79"
+        difficulty: "medium"
         name: "Primary vs Secondary Antibody Response"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=42"
         subjects:
@@ -2011,6 +2089,7 @@ rounds:
 
       - id: q30
         number: "Q80"
+        difficulty: "medium"
         name: "Dopamine and GABA Neuron Activity in Stress-Induced Anhedonia"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=44"
         subjects:
@@ -2036,6 +2115,7 @@ rounds:
 
       - id: q31
         number: "Q81"
+        difficulty: "medium"
         name: "Blue Light, Melanopsin and the Circadian Phase-Shift Response"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=45"
         subjects:
@@ -2061,6 +2141,7 @@ rounds:
 
       - id: q32
         number: "Q82"
+        difficulty: "medium"
         name: "Experimental Design Limits — Herbal Treatment and Statin Co-Therapy"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=47"
         subjects:
@@ -2086,6 +2167,7 @@ rounds:
 
       - id: q33
         number: "Q83"
+        difficulty: "hard"
         name: "Gut Microbiome and Lifespan in Drosophila"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=49"
         subjects:
@@ -2111,6 +2193,7 @@ rounds:
 
       - id: q34
         number: "Q84"
+        difficulty: "hard"
         name: "Dietary Fat, Sucrose and Cardiac Hypertrophy in Hypertensive Rats"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=51"
         subjects:
@@ -2136,6 +2219,7 @@ rounds:
 
       - id: q35
         number: "Q85"
+        difficulty: "medium"
         name: "The methuselah Mutation and Stress Resistance in Drosophila"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=53"
         subjects:
@@ -2161,6 +2245,7 @@ rounds:
 
       - id: q36
         number: "Q86"
+        difficulty: "medium"
         name: "Giant Panda Fecal-Smearing Behavior and the TRPM8 Cold Receptor"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=54"
         subjects:
@@ -2186,6 +2271,7 @@ rounds:
 
       - id: q37
         number: "Q87"
+        difficulty: "medium"
         name: "Rearing Environment and Social Bonds in Ravens"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=56"
         subjects:
@@ -2211,6 +2297,7 @@ rounds:
 
       - id: q38
         number: "Q88"
+        difficulty: "medium"
         name: "Free Choice vs Random Union — Assortative Mating in Pigeons"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=59"
         subjects:
@@ -2236,6 +2323,7 @@ rounds:
 
       - id: q39
         number: "Q89"
+        difficulty: "easy"
         name: "Amplexus and Sperm Competition in Newts"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=60"
         subjects:
@@ -2261,6 +2349,7 @@ rounds:
 
       - id: q40
         number: "Q90"
+        difficulty: "medium"
         name: "Cannibalism and Larval-Stage Duration in Invasive Cane Toads"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=61"
         subjects:
@@ -2286,6 +2375,7 @@ rounds:
 
       - id: q41
         number: "Q91"
+        difficulty: "medium"
         name: "Song Recognition Between Island Populations of Tree Finches"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=64"
         subjects:
@@ -2311,6 +2401,7 @@ rounds:
 
       - id: q42
         number: "Q92"
+        difficulty: "hard"
         name: "Hawk-Dove-Retaliator Game Theory and Evolutionarily Stable Strategies"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=66"
         subjects:
@@ -2336,6 +2427,7 @@ rounds:
 
       - id: q43
         number: "Q93"
+        difficulty: "medium"
         name: "Worker Sterility and Kin Selection in Social Insects"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=67"
         subjects:
@@ -2361,6 +2453,7 @@ rounds:
 
       - id: q44
         number: "Q94"
+        difficulty: "medium"
         name: "Canine Pedigree Analysis of a Monogenic Disease"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=68"
         subjects:
@@ -2386,6 +2479,7 @@ rounds:
 
       - id: q45
         number: "Q95"
+        difficulty: "hard"
         name: "Hardy-Weinberg Calculations for Familial Mediterranean Fever"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=69"
         subjects:
@@ -2411,6 +2505,7 @@ rounds:
 
       - id: q46
         number: "Q96"
+        difficulty: "hard"
         name: "Transcriptome-Based Drug Repurposing — Infliximab Across Four Diseases"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=70"
         subjects:
@@ -2436,6 +2531,7 @@ rounds:
 
       - id: q47
         number: "Q97"
+        difficulty: "hard"
         name: "Telomerase-Dependent vs Alternative Telomere Lengthening in Testis"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=73"
         subjects:
@@ -2461,6 +2557,7 @@ rounds:
 
       - id: q48
         number: "Q98"
+        difficulty: "medium"
         name: "Grape Domestication and Phylogeography from SNP Data"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=75"
         subjects:
@@ -2486,6 +2583,7 @@ rounds:
 
       - id: q49
         number: "Q99"
+        difficulty: "medium"
         name: "Competitive Displacement Between Two Hare Species in Newfoundland"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=77"
         subjects:
@@ -2511,6 +2609,7 @@ rounds:
 
       - id: q50
         number: "Q100"
+        difficulty: "medium"
         name: "Cold-Exposure Duration, Acclimation and Mollusc Survival"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=79"
         subjects:

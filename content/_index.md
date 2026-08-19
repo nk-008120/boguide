@@ -64,11 +64,23 @@ We cover the full IBO syllabus: 15+ sections, 150+ topic pages, growing every we
 ## 🧪 Practice, Resources & More
 
 <div class="feature-cards">
+  <a href="/dashboard/" class="card">
+    <div class="card-icon">📊</div>
+    <h3>Study Dashboard</h3>
+    <p>Your personalized command center: mastery tracking, prerequisite-aware recommendations, and trend analysis built from your practice history.</p>
+    <span class="btn-outline">Open Dashboard →</span>
+  </a>
   <a href="/papers/" class="card">
     <div class="card-icon">🗂️</div>
     <h3>BiOrchive</h3>
     <p>Past olympiad papers, browsable by year and round, with solutions and an attempt mode.</p>
     <span class="btn-outline">Explore BiOrchive →</span>
+  </a>
+  <a href="/papers/question-bank/" class="card">
+    <div class="card-icon">🔎</div>
+    <h3>Question Bank</h3>
+    <p>Every question in the archive, searchable in one table — filter by olympiad, year, topic, and difficulty.</p>
+    <span class="btn-outline">Search Questions →</span>
   </a>
   <a href="/resources/" class="card">
     <div class="card-icon">📚</div>

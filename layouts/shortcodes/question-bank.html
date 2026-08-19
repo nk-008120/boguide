@@ -1,0 +1,237 @@
+{{- /* Sitewide filterable table of every problem across every olympiad,
+     year, and round in data/papers/. Usage: {{< question-bank >}} on a
+     standalone page. Reuses the per-round subject data already present
+     in the papers YAML; difficulty is an optional per-problem field
+     (`difficulty: easy|medium|hard`) that only activates its filter/column
+     once at least one problem in the archive sets it. The year filter is
+     scoped to whichever olympiad is currently selected (rebuilt client-side
+     from a small JSON payload), so choosing "IBO" narrows the year list to
+     IBO's years only. */ -}}
+{{- $rows := slice -}}
+{{- $subjectSet := slice -}}
+{{- $olympiadOptions := slice -}}
+{{- $hasDifficulty := false -}}
+{{- range $olId, $ol := hugo.Data.papers }}
+  {{- $olMeta := $ol.index -}}
+  {{- $olName := $olMeta.shortName | default $olId -}}
+  {{- $olympiadOptions = $olympiadOptions | append (dict "id" $olId "name" $olName) -}}
+  {{- range $yearId, $yearData := $ol }}
+    {{- if ne $yearId "index" }}
+      {{- range $yearData.rounds }}
+        {{- $round := . -}}
+        {{- range $round.problems }}
+          {{- $p := . -}}
+          {{- $subjNames := slice -}}
+          {{- range $p.subjects }}
+            {{- $subjNames = $subjNames | append .name -}}
+            {{- $subjectSet = $subjectSet | append .name -}}
+          {{- end }}
+          {{- if $p.difficulty }}{{ $hasDifficulty = true }}{{ end }}
+          {{- $rows = $rows | append (dict
+              "olympiad" $olName
+              "olympiadId" $olId
+              "yearId" $yearId
+              "yearName" ($yearData.name | default $yearId)
+              "round" $round.name
+              "number" $p.number
+              "name" $p.name
+              "subjects" $subjNames
+              "difficulty" $p.difficulty
+              "url" (printf "/papers/%s/%s/%s/%s/" $olId $yearId $round.id $p.id)
+          ) -}}
+        {{- end }}
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- $subjectSet = $subjectSet | uniq | sort }}
+
+{{- /* Dedup year options per olympiad, newest year first. */ -}}
+{{- $yearOptionKeys := slice -}}
+{{- $yearOptions := slice -}}
+{{- range $rows }}
+  {{- $key := printf "%s|%s" .olympiadId .yearId -}}
+  {{- if not (in $yearOptionKeys $key) }}
+    {{- $yearOptionKeys = $yearOptionKeys | append $key -}}
+    {{- $yearOptions = $yearOptions | append (dict "olympiadId" .olympiadId "yearId" .yearId "name" .yearName) -}}
+  {{- end }}
+{{- end }}
+{{- $yearOptions = sort $yearOptions "yearId" "desc" }}
+
+{{- if $rows }}
+<p class="papers-summary">{{ len $rows }} question{{ if ne (len $rows) 1 }}s{{ end }} across the archive, searchable and filterable by olympiad, year, and topic{{ if $hasDifficulty }}, and difficulty{{ end }}.</p>
+<div class="papers-search">
+  <input type="text" id="qb-filter" class="papers-search-input" placeholder="Search questions…" autocomplete="off">
+  {{- if gt (len $olympiadOptions) 1 }}
+  <select id="qb-olympiad-filter" class="papers-filter-select">
+    <option value="">All Olympiads</option>
+    {{- range $olympiadOptions }}
+    <option value="{{ .id }}">{{ .name }}</option>
+    {{- end }}
+  </select>
+  {{- end }}
+  <select id="qb-year-filter" class="papers-filter-select">
+    <option value="">All Years</option>
+    {{- range $yearOptions }}
+    <option value="{{ .yearId }}" data-olympiad="{{ .olympiadId }}">{{ .name }}{{ if eq (len $olympiadOptions) 1 }}{{ else }} ({{ .olympiadId | upper }}){{ end }}</option>
+    {{- end }}
+  </select>
+  {{- if gt (len $subjectSet) 1 }}
+  <select id="qb-topic-filter" class="papers-filter-select">
+    <option value="">All Topics</option>
+    {{- range $subjectSet }}
+    <option value="{{ . }}">{{ . }}</option>
+    {{- end }}
+  </select>
+  {{- end }}
+  {{- if $hasDifficulty }}
+  <div class="papers-difficulty-filter" id="qb-difficulty-filter">
+    <button type="button" class="papers-diff-btn is-active" data-difficulty="">All</button>
+    <button type="button" class="papers-diff-btn" data-difficulty="easy">Easy</button>
+    <button type="button" class="papers-diff-btn" data-difficulty="medium">Medium</button>
+    <button type="button" class="papers-diff-btn" data-difficulty="hard">Hard</button>
+  </div>
+  {{- end }}
+  <button type="button" class="papers-diff-btn" id="qb-weak-first-toggle" style="display:none;" title="Reorder rows so your weakest subjects appear first">Weak areas first</button>
+</div>
+<div class="papers-table-wrap">
+<table class="papers-problem-table" id="qb-table">
+  <thead><tr><th>Question</th><th>Olympiad</th><th>Year / Round</th><th>Subjects</th>{{ if $hasDifficulty }}<th>Difficulty</th>{{ end }}</tr></thead>
+  <tbody>
+    {{- range $rows }}
+    <tr class="qb-row" data-olympiad="{{ .olympiadId }}" data-year="{{ .yearId }}" data-subjects="{{ delimit .subjects "||" }}" data-difficulty="{{ .difficulty | default "" }}">
+      <td><a href="{{ .url }}">{{ .number }}. {{ .name }}</a></td>
+      <td>{{ .olympiad }}</td>
+      <td>{{ .yearName }} — {{ .round }}</td>
+      <td>
+        {{- if .subjects -}}
+        <div class="papers-subject-tags">
+          {{- range .subjects }}<span class="papers-subject-tag">{{ . }}</span>{{ end }}
+        </div>
+        {{- else -}}—{{- end -}}
+      </td>
+      {{- if $hasDifficulty }}
+      <td>{{ if .difficulty }}<span class="papers-difficulty-badge papers-difficulty-{{ .difficulty }}">{{ .difficulty | title }}</span>{{ else }}—{{ end }}</td>
+      {{- end }}
+    </tr>
+    {{- end }}
+  </tbody>
+</table>
+</div>
+<p class="papers-summary" id="qb-empty-state" style="display: none;">No questions match these filters.</p>
+<script>
+(function () {
+  var input = document.getElementById('qb-filter');
+  var olympiadSelect = document.getElementById('qb-olympiad-filter');
+  var yearSelect = document.getElementById('qb-year-filter');
+  var topicSelect = document.getElementById('qb-topic-filter');
+  var diffWrap = document.getElementById('qb-difficulty-filter');
+  var rows = document.querySelectorAll('#qb-table .qb-row');
+  var emptyState = document.getElementById('qb-empty-state');
+  var activeDifficulty = '';
+
+  function refreshYearOptions() {
+    if (!yearSelect) return;
+    var olympiad = olympiadSelect ? olympiadSelect.value : '';
+    var currentYear = yearSelect.value;
+    var stillValid = false;
+    yearSelect.querySelectorAll('option[data-olympiad]').forEach(function (opt) {
+      var matches = !olympiad || opt.dataset.olympiad === olympiad;
+      opt.hidden = !matches;
+      opt.disabled = !matches;
+      if (matches && opt.value === currentYear) stillValid = true;
+    });
+    if (!stillValid) yearSelect.value = '';
+  }
+
+  function applyFilters() {
+    var q = input ? input.value.toLowerCase() : '';
+    var olympiad = olympiadSelect ? olympiadSelect.value : '';
+    var year = yearSelect ? yearSelect.value : '';
+    var topic = topicSelect ? topicSelect.value : '';
+    var visible = 0;
+    rows.forEach(function (row) {
+      var matchesText = !q || row.textContent.toLowerCase().indexOf(q) !== -1;
+      var matchesOlympiad = !olympiad || row.dataset.olympiad === olympiad;
+      var matchesYear = !year || row.dataset.year === year;
+      var subjects = (row.dataset.subjects || '').split('||');
+      var matchesTopic = !topic || subjects.indexOf(topic) !== -1;
+      var matchesDifficulty = !activeDifficulty || row.dataset.difficulty === activeDifficulty;
+      var show = matchesText && matchesOlympiad && matchesYear && matchesTopic && matchesDifficulty;
+      row.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+    if (emptyState) emptyState.style.display = visible ? 'none' : '';
+  }
+
+  if (input) input.addEventListener('input', applyFilters);
+  if (olympiadSelect) {
+    olympiadSelect.addEventListener('change', function () {
+      refreshYearOptions();
+      applyFilters();
+    });
+  }
+  if (yearSelect) yearSelect.addEventListener('change', applyFilters);
+  if (topicSelect) topicSelect.addEventListener('change', applyFilters);
+  if (diffWrap) {
+    diffWrap.addEventListener('click', function (e) {
+      var btn = e.target.closest('.papers-diff-btn');
+      if (!btn) return;
+      diffWrap.querySelectorAll('.papers-diff-btn').forEach(function (b) { b.classList.remove('is-active'); });
+      btn.classList.add('is-active');
+      activeDifficulty = btn.dataset.difficulty;
+      applyFilters();
+    });
+  }
+
+  var weakToggle = document.getElementById('qb-weak-first-toggle');
+  var weakActive = false;
+  var originalOrder = [];
+  rows.forEach(function (r) { originalOrder.push(r); });
+
+  function initWeakToggle() {
+    var raw;
+    try { raw = sessionStorage.getItem('bioguide-knowledge-profile'); } catch (e) {}
+    if (!raw) return;
+    var profile;
+    try { profile = JSON.parse(raw); } catch (e) { return; }
+    if (!profile || !profile.subjects) return;
+    var subjects = profile.subjects;
+    if (!Object.keys(subjects).length) return;
+    if (weakToggle) weakToggle.style.display = '';
+
+    weakToggle.addEventListener('click', function () {
+      weakActive = !weakActive;
+      weakToggle.classList.toggle('is-active', weakActive);
+      var tbody = document.querySelector('#qb-table tbody');
+      if (!tbody) return;
+
+      if (weakActive) {
+        var scored = [];
+        rows.forEach(function (row) {
+          var subjectList = (row.dataset.subjects || '').split('||').filter(Boolean);
+          var minMastery = 1;
+          var hasMastery = false;
+          subjectList.forEach(function (name) {
+            Object.keys(subjects).forEach(function (key) {
+              if (subjects[key].name === name) {
+                hasMastery = true;
+                if (subjects[key].masteryScore < minMastery) minMastery = subjects[key].masteryScore;
+              }
+            });
+          });
+          scored.push({ row: row, score: hasMastery ? minMastery : 0.5 });
+        });
+        scored.sort(function (a, b) { return a.score - b.score; });
+        scored.forEach(function (s) { tbody.appendChild(s.row); });
+      } else {
+        originalOrder.forEach(function (r) { tbody.appendChild(r); });
+      }
+    });
+  }
+  initWeakToggle();
+})();
+</script>
+{{- else }}
+<p class="papers-summary">No questions in the archive yet.</p>
+{{- end }}

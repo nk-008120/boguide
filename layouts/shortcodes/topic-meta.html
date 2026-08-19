@@ -25,4 +25,29 @@
       <span class="badge-curiosity">{{ . }}</span>
     {{ end }}
   {{ end }}
+  <span id="topic-mastery-widget"></span>
 </div>
+<script>
+(function () {
+  var widget = document.getElementById('topic-mastery-widget');
+  if (!widget) return;
+  var raw;
+  try { raw = sessionStorage.getItem('bioguide-knowledge-profile'); } catch (e) {}
+  if (!raw) return;
+  var profile;
+  try { profile = JSON.parse(raw); } catch (e) { return; }
+  if (!profile || !profile.subjects) return;
+  var path = window.location.pathname.replace(/\/$/, '') + '/';
+  var subj = profile.subjects[path];
+  if (!subj) return;
+  var colors = { mastered: '#16a34a', strong: '#22c55e', developing: '#f59e0b', weak: '#f97316', critical: '#dc2626', untested: '#9ca3af' };
+  var labels = { mastered: 'Mastered', strong: 'Strong', developing: 'Developing', weak: 'Weak', critical: 'Critical', untested: 'Untested' };
+  var arrows = { improving: ' ↑', declining: ' ↓', stable: '' };
+  var color = colors[subj.masteryLevel] || colors.untested;
+  var pct = Math.round(subj.weightedAccuracy * 100);
+  var trend = arrows[subj.trend] || '';
+  widget.innerHTML =
+    '<span class="topic-mastery-badge" style="background:' + color + ';color:#fff;padding:0.15em 0.5em;border-radius:4px;font-size:0.8em;margin-left:0.3em;" title="Based on ' + subj.totalStatements + ' statements across ' + subj.attemptCount + ' attempt' + (subj.attemptCount === 1 ? '' : 's') + '">' +
+    labels[subj.masteryLevel] + ' ' + pct + '%' + trend + '</span>';
+})();
+</script>
