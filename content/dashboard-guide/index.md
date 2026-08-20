@@ -4,7 +4,7 @@ description: "A walkthrough of how BiOGuide's personalized study dashboard track
 layout: "wide"
 ---
 
-<div class="homepage-wrapper" style="max-width:780px;">
+<div class="homepage-wrapper" style="max-width:1060px;">
 
 ## What is the Study Dashboard?
 
@@ -22,6 +22,32 @@ Let's walk through it by following Bhavyaa, one of BiOGuide's own team members, 
 
 Bhavyaa signs up at the [Account page](/account/), picks an avatar, and selects **IBO** from the Target Olympiad dropdown under Profile. This tells the recommendation engine to prioritize IBO syllabus topics when ranking her study suggestions. If she had skipped this, the system would default to IBO anyway (the broadest scope), but setting it explicitly means the engine knows for sure.
 
+<div class="guide-visual">
+<div class="guide-mockup">
+<div style="display:flex;align-items:center;gap:8px;margin-bottom:0.5rem;">
+<div style="width:28px;height:28px;border-radius:50%;background:rgba(137,101,196,0.12);display:flex;align-items:center;justify-content:center;font-weight:600;font-size:0.7rem;color:#8965c4;">B</div>
+<div><div style="font-weight:600;font-size:0.78rem;">Bhavyaa</div><div style="font-size:0.65rem;color:#64748b;">IBO 2022 aspirant</div></div>
+</div>
+<div style="font-size:0.68rem;color:#64748b;margin-bottom:0.3rem;">Score breakdown</div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:0.5rem;">
+<span style="font-family:'Fraunces',serif;font-size:1.3rem;font-weight:500;">142 <span style="font-size:0.75rem;color:#64748b;">/ 258</span></span>
+<span style="font-family:'Fraunces',serif;font-size:1.1rem;font-weight:500;color:#f97316;">55%</span>
+</div>
+<div style="font-size:0.68rem;color:#64748b;text-transform:uppercase;letter-spacing:0.03em;margin-bottom:0.3rem;">Subject accuracy</div>
+<div class="gm-bar"><span class="gm-bar-name">Enzyme Kinetics</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:25%;background:#dc2626"></div></div><span class="gm-bar-pct" style="color:#dc2626">25%</span></div>
+<div class="gm-bar"><span class="gm-bar-name">Membrane Transport</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:38%;background:#f97316"></div></div><span class="gm-bar-pct" style="color:#f97316">38%</span></div>
+<div class="gm-bar"><span class="gm-bar-name">DNA Replication</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:42%;background:#f97316"></div></div><span class="gm-bar-pct" style="color:#f97316">42%</span></div>
+<div class="gm-bar"><span class="gm-bar-name">Pedigree Analysis</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:100%;background:#16a34a"></div></div><span class="gm-bar-pct" style="color:#16a34a">100%</span></div>
+<div class="gm-bar"><span class="gm-bar-name">Natural Selection</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:85%;background:#22c55e"></div></div><span class="gm-bar-pct" style="color:#22c55e">85%</span></div>
+<div class="gm-bar"><span class="gm-bar-name">Ecology</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:92%;background:#16a34a"></div></div><span class="gm-bar-pct" style="color:#16a34a">92%</span></div>
+<div class="gm-rec-card" style="background:rgba(220,38,38,0.06);border-left:3px solid #dc2626;margin-top:0.5rem;">
+<div class="gm-rec-title" style="color:#dc2626;">Focus on 5 subjects</div>
+<div class="gm-rec-body">Enzyme Kinetics stands out as your weakest spot</div>
+</div>
+</div>
+<div class="guide-mockup-caption">Post-attempt report</div>
+</div>
+
 ### 2. She takes her first timed attempt
 
 Bhavyaa heads to [BiOrchive](/papers/), picks IBO 2022 Theoretical 1, and starts a timed attempt. She works through all 50 questions under exam conditions, submits, and clicks **Submit to Leaderboard** to save the result.
@@ -33,6 +59,47 @@ Below the bars, the report gives her stateless recommendations based on this sin
 Since this is her first attempt, the knowledge enrichment section at the bottom does not add persistent-weakness cards yet (it needs 2+ attempts to detect patterns). But it does show a **"View your study dashboard"** link. Her full knowledge profile gets cached in her browser for the rest of this session.
 
 *(Disclaimer - (You know she made me write this) Bhavyaa is not actually stupid enough to score so low. Please note that this is an illustrative example. It does not represent the reality. In fact, she is really smart and gorgeous. (Why this too? -))*
+
+<div style="clear:both"></div>
+
+<div class="guide-visual">
+<div class="guide-mockup">
+<div class="gm-head">Bhavyaa's study dashboard</div>
+<div class="gm-stat-grid">
+<div class="gm-stat"><div class="gm-stat-num">1</div><div class="gm-stat-lbl">Attempts</div></div>
+<div class="gm-stat"><div class="gm-stat-num">55%</div><div class="gm-stat-lbl">Average</div></div>
+<div class="gm-stat"><div class="gm-stat-num" style="color:#22c55e;">3</div><div class="gm-stat-lbl">Strong</div></div>
+<div class="gm-stat"><div class="gm-stat-num" style="color:#dc2626;">5</div><div class="gm-stat-lbl">Weak</div></div>
+</div>
+<div style="font-size:0.72rem;font-weight:600;color:#8965c4;margin-bottom:0.3rem;">Study recommendations</div>
+<div style="font-size:0.62rem;font-weight:600;color:#dc2626;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:3px;">Priority study</div>
+<div class="gm-rec-card" style="background:rgba(220,38,38,0.06);border-left:3px solid #dc2626;">
+<div class="gm-rec-title" style="color:#991b1b;">Enzyme Kinetics <span class="gm-badge" style="background:#dc2626;">critical 25%</span></div>
+</div>
+<div class="gm-rec-card" style="background:rgba(249,115,22,0.06);border-left:3px solid #f97316;">
+<div class="gm-rec-title" style="color:#9a3412;">Membrane Transport <span class="gm-badge" style="background:#f97316;">weak 38%</span></div>
+</div>
+<div style="font-size:0.62rem;font-weight:600;color:#2563eb;text-transform:uppercase;letter-spacing:0.04em;margin:0.35rem 0 3px;">Prerequisite gaps</div>
+<div class="gm-rec-card" style="background:rgba(37,99,235,0.05);border-left:3px solid #2563eb;">
+<div class="gm-rec-body" style="color:#1e40af;">Before <b>Signal Transduction</b>, strengthen <b>Membrane Transport</b> and <b>Protein Structure</b></div>
+</div>
+<div style="font-size:0.62rem;font-weight:600;color:#059669;text-transform:uppercase;letter-spacing:0.04em;margin:0.35rem 0 3px;">Expand coverage</div>
+<div class="gm-rec-card" style="background:rgba(5,150,105,0.05);border-left:3px solid #059669;">
+<div class="gm-rec-body" style="color:#065f46;">Explore <b>Ethology</b> -- untested, falls under 9. Ethology</div>
+</div>
+<div style="font-size:0.72rem;font-weight:600;color:#8965c4;margin:0.55rem 0 0.2rem;">Subject mastery</div>
+<div class="gm-section-label">1. Cell and Molecular Biology</div>
+<div class="gm-bar"><span class="gm-bar-name">Enzyme Kinetics</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:25%;background:#dc2626"></div></div><span class="gm-bar-pct" style="color:#dc2626">25%</span></div>
+<div class="gm-bar"><span class="gm-bar-name">Membrane Transport</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:38%;background:#f97316"></div></div><span class="gm-bar-pct" style="color:#f97316">38%</span></div>
+<div class="gm-bar"><span class="gm-bar-name">Protein Structure</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:58%;background:#f59e0b"></div></div><span class="gm-bar-pct" style="color:#f59e0b">58%</span></div>
+<div class="gm-section-label">4. Genetics and Evolution</div>
+<div class="gm-bar"><span class="gm-bar-name">Pedigree Analysis</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:100%;background:#16a34a"></div></div><span class="gm-bar-pct" style="color:#16a34a">100%</span></div>
+<div class="gm-bar"><span class="gm-bar-name">Natural Selection</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:85%;background:#22c55e"></div></div><span class="gm-bar-pct" style="color:#22c55e">85%</span></div>
+<div class="gm-section-label">7. Ecology and Conservation</div>
+<div class="gm-bar"><span class="gm-bar-name">Ecology</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:92%;background:#16a34a"></div></div><span class="gm-bar-pct" style="color:#16a34a">92%</span></div>
+</div>
+<div class="guide-mockup-caption">Bhavyaa's dashboard after 1 attempt</div>
+</div>
 
 ### 3. She visits the Dashboard
 
@@ -55,17 +122,93 @@ Bhavyaa clicks through to [her Dashboard](/dashboard/). Here is what she sees:
 
 (Finally, Don't be mad at me!)
 
+<div style="clear:both"></div>
+
+<div class="guide-visual">
+<div class="guide-mockup">
+<div style="font-size:0.78rem;font-weight:600;margin-bottom:0.3rem;">Enzyme Kinetics & Regulation</div>
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:0.5rem;">
+<span style="background:#fef3c7;color:#92400e;padding:1px 7px;border-radius:99px;font-size:0.62rem;font-weight:600;">Advanced</span>
+<span style="background:rgba(137,101,196,0.12);color:#6d4fa3;padding:1px 7px;border-radius:99px;font-size:0.62rem;font-weight:600;">IBO</span>
+<span style="background:rgba(137,101,196,0.12);color:#6d4fa3;padding:1px 7px;border-radius:99px;font-size:0.62rem;font-weight:600;">USABO</span>
+<span style="background:rgba(220,38,38,0.1);color:#dc2626;padding:1px 7px;border-radius:99px;font-size:0.62rem;font-weight:600;">Critical 25%</span>
+</div>
+<div style="font-size:0.68rem;color:#64748b;">Based on 12 statements across 1 attempt</div>
+<div style="border-top:1px solid #e9e9f0;margin-top:0.5rem;padding-top:0.5rem;font-size:0.68rem;color:#64748b;">
+<div style="font-weight:600;color:#1a1a2e;margin-bottom:3px;">Prerequisites</div>
+Protein Structure, Folding and Function
+</div>
+</div>
+<div class="guide-mockup-caption">Topic page mastery badge</div>
+</div>
+
 ### 4. She studies a topic page
 
 Bhavyaa clicks on Enzyme Kinetics from the dashboard. On the topic page, she sees the usual metadata badges (Intermediate difficulty, Prerequisites: Protein Structure, Syllabus: IBO/USABO) plus a new small inline badge: **"Critical 25%"** in red, with a tooltip reading "Based on 12 statements across 1 attempt". This comes from the cached profile the dashboard built earlier -- no extra loading, it just appears.
 
 She reads the topic, works through the examples, and feels more confident.
 
+<div style="clear:both"></div>
+
+<div class="guide-visual">
+<div class="guide-mockup">
+<div style="font-size:0.78rem;font-weight:600;margin-bottom:0.4rem;">Question Bank</div>
+<div style="display:flex;align-items:center;gap:6px;margin-bottom:0.5rem;flex-wrap:wrap;">
+<span style="background:#f0f0f0;color:#374151;padding:2px 8px;border-radius:6px;font-size:0.65rem;">IBO</span>
+<span style="background:#f0f0f0;color:#374151;padding:2px 8px;border-radius:6px;font-size:0.65rem;">Medium</span>
+<span style="background:#8965c4;color:#fff;padding:2px 8px;border-radius:6px;font-size:0.65rem;font-weight:600;">Weak areas first</span>
+</div>
+<div style="border:1px solid #e9e9f0;border-radius:8px;overflow:hidden;">
+<div style="display:flex;padding:4px 8px;background:#f9fafb;border-bottom:1px solid #e9e9f0;font-size:0.62rem;color:#64748b;font-weight:600;">
+<span style="flex:1;">Question</span><span style="width:80px;">Subject</span><span style="width:45px;text-align:right;">Your %</span>
+</div>
+<div style="display:flex;padding:5px 8px;border-bottom:1px solid #f0f0f0;font-size:0.68rem;background:rgba(220,38,38,0.03);">
+<span style="flex:1;">IBO 2022 T1 Q2</span><span style="width:80px;color:#dc2626;font-weight:500;">Enz. Kinetics</span><span style="width:45px;text-align:right;color:#dc2626;font-weight:600;">25%</span>
+</div>
+<div style="display:flex;padding:5px 8px;border-bottom:1px solid #f0f0f0;font-size:0.68rem;background:rgba(220,38,38,0.03);">
+<span style="flex:1;">IBO 2022 T1 Q3</span><span style="width:80px;color:#dc2626;font-weight:500;">Enz. Kinetics</span><span style="width:45px;text-align:right;color:#dc2626;font-weight:600;">25%</span>
+</div>
+<div style="display:flex;padding:5px 8px;border-bottom:1px solid #f0f0f0;font-size:0.68rem;background:rgba(249,115,22,0.03);">
+<span style="flex:1;">IBO 2022 T1 Q6</span><span style="width:80px;color:#f97316;font-weight:500;">Memb. Trans.</span><span style="width:45px;text-align:right;color:#f97316;font-weight:600;">25%</span>
+</div>
+<div style="display:flex;padding:5px 8px;font-size:0.68rem;">
+<span style="flex:1;color:#9ca3af;">+ 47 more questions</span>
+</div>
+</div>
+</div>
+<div class="guide-mockup-caption">Question bank with weak areas toggle</div>
+</div>
+
 ### 5. She drills weak areas in the Question Bank
 
 Bhavyaa visits the [Question Bank](/papers/question-bank/) to practice targeted questions. Because she has a cached knowledge profile, a **"Weak areas first"** toggle button is now visible in the filter bar. She clicks it.
 
 The entire table reorders: questions tagged with Enzyme Kinetics, Membrane Transport, and her other weak subjects float to the top. She combines this with the "IBO" olympiad filter and "Medium" difficulty to build a focused drill session on exactly the questions that will help her most.
+
+<div style="clear:both"></div>
+
+<div class="guide-visual">
+<div class="guide-mockup">
+<div style="font-size:0.72rem;font-weight:600;color:#8965c4;margin-bottom:0.3rem;">After IBO 2023 Theoretical 2 -- 68%</div>
+<div style="font-size:0.68rem;color:#64748b;margin-bottom:0.5rem;">Knowledge enrichment cards:</div>
+<div class="gm-rec-card" style="background:rgba(220,38,38,0.06);border-left:3px solid #dc2626;margin-bottom:6px;">
+<div class="gm-rec-title" style="color:#991b1b;">Persistent weakness across attempts</div>
+<div class="gm-rec-body">Enzyme Kinetics (32%), Membrane Transport (45%) -- weak across 2+ attempts. Targeted study before your next round should help.</div>
+</div>
+<div class="gm-rec-card" style="background:rgba(137,101,196,0.06);border-left:3px solid #8965c4;">
+<div class="gm-rec-title" style="color:#5b3d8f;">View your study dashboard</div>
+<div class="gm-rec-body">Your full knowledge profile is built from 2 attempts. See all your strengths, weaknesses, and personalized recommendations.</div>
+</div>
+<div style="border-top:1px solid #e9e9f0;margin-top:0.5rem;padding-top:0.45rem;">
+<div style="font-size:0.65rem;color:#64748b;margin-bottom:3px;">If a subject declines instead:</div>
+<div class="gm-rec-card" style="background:rgba(220,38,38,0.06);border-left:3px solid #dc2626;">
+<div class="gm-rec-title" style="color:#991b1b;">Declining in 1 subject</div>
+<div class="gm-rec-body">Enzyme Kinetics (22%, 2 attempts) -- trending downward. Consider a different study approach.</div>
+</div>
+</div>
+</div>
+<div class="guide-mockup-caption">Post-attempt enrichment cards</div>
+</div>
 
 ### 6. Two weeks later, she takes a second attempt
 
@@ -76,6 +219,38 @@ Bhavyaa does IBO 2023 Theoretical 2. This time she scores 68% -- a solid improve
 
 If Enzyme Kinetics had actually gotten worse (say 20% this time vs 25% last time), she would see a sharper warning: **"Declining in 1 subject"** -- "Enzyme Kinetics (22%, 2 attempts) -- this has been trending downward. Consider a different study approach or resource."
 
+<div style="clear:both"></div>
+
+<div class="guide-visual">
+<div class="guide-mockup">
+<div class="gm-head">Updated dashboard</div>
+<div class="gm-stat-grid">
+<div class="gm-stat"><div class="gm-stat-num">2</div><div class="gm-stat-lbl">Attempts</div></div>
+<div class="gm-stat"><div class="gm-stat-num">62%</div><div class="gm-stat-lbl">Average</div></div>
+<div class="gm-stat"><div class="gm-stat-num" style="color:#22c55e;">5</div><div class="gm-stat-lbl">Strong</div></div>
+<div class="gm-stat"><div class="gm-stat-num" style="color:#dc2626;">3</div><div class="gm-stat-lbl">Weak</div></div>
+</div>
+<div style="font-size:0.72rem;font-weight:600;color:#8965c4;margin-bottom:0.2rem;">Subject mastery</div>
+<div class="gm-section-label">1. Cell and Molecular Biology</div>
+<div class="gm-bar"><span class="gm-bar-name">Enzyme Kinetics</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:30%;background:#dc2626"></div></div><span class="gm-bar-pct" style="color:#dc2626">30%</span><span class="gm-trend" style="color:#f97316;">&#8594;</span></div>
+<div class="gm-bar"><span class="gm-bar-name">Membrane Transport</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:45%;background:#f97316"></div></div><span class="gm-bar-pct" style="color:#f97316">45%</span><span class="gm-trend" style="color:#22c55e;">&#8593;</span></div>
+<div class="gm-bar"><span class="gm-bar-name">Protein Structure</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:62%;background:#f59e0b"></div></div><span class="gm-bar-pct" style="color:#f59e0b">62%</span><span class="gm-trend" style="color:#22c55e;">&#8593;</span></div>
+<div class="gm-section-label">4. Genetics and Evolution</div>
+<div class="gm-bar"><span class="gm-bar-name">Pedigree Analysis</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:95%;background:#16a34a"></div></div><span class="gm-bar-pct" style="color:#16a34a">95%</span><span class="gm-trend" style="color:#22c55e;">&#8593;</span></div>
+<div class="gm-bar"><span class="gm-bar-name">Natural Selection</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:88%;background:#22c55e"></div></div><span class="gm-bar-pct" style="color:#22c55e">88%</span><span class="gm-trend" style="color:#22c55e;">&#8593;</span></div>
+<div class="gm-section-label">7. Ecology and Conservation</div>
+<div class="gm-bar"><span class="gm-bar-name">Ecology</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:92%;background:#16a34a"></div></div><span class="gm-bar-pct" style="color:#16a34a">92%</span><span class="gm-trend" style="color:#f97316;">&#8594;</span></div>
+<div style="margin-top:0.5rem;font-size:0.72rem;font-weight:600;color:#8965c4;">Recent attempts</div>
+<div style="display:flex;align-items:center;gap:6px;padding:4px 0;font-size:0.68rem;border-bottom:1px solid #f0f0f0;">
+<span style="flex:1;font-weight:500;">IBO 2023 T2</span><span style="color:#22c55e;font-weight:600;">68%</span><span style="color:#64748b;font-size:0.62rem;">Today</span>
+</div>
+<div style="display:flex;align-items:center;gap:6px;padding:4px 0;font-size:0.68rem;">
+<span style="flex:1;font-weight:500;">IBO 2022 T1</span><span style="color:#f97316;font-weight:600;">55%</span><span style="color:#64748b;font-size:0.62rem;">2 wks ago</span>
+</div>
+</div>
+<div class="guide-mockup-caption">Dashboard after 2 attempts with trends</div>
+</div>
+
 ### 7. The Dashboard updates
 
 Back on the Dashboard, everything has recalculated. The mastery scores now use time-decay weighting: the two-week-old first attempt gets weight 0.8 while the fresh second attempt gets full weight 1.0. So her current performance counts more than the older result.
@@ -85,6 +260,8 @@ Trend arrows appear next to subjects: an upward arrow on topics she improved on 
 The recommendations reshuffle. Subjects she improved on drop in priority. Enzyme Kinetics, still critical after two attempts, stays at the top. Topics she has not touched in a while will start getting "Revisit Soon" cards once they age past 30 days.
 
 Over time, as Bhavyaa takes more papers, the profile gets richer, the trends get more reliable, and the recommendations get sharper. The system learns what she knows and what she does not, and keeps pointing her toward the highest-impact study sessions.
+
+<div style="clear:both"></div>
 
 ---
 
