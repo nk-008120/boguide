@@ -1,9 +1,20 @@
 ---
-title: "USABO Preparation: Complete Guide"
+title: "How to Prepare for USABO: USA Biology Olympiad Guide"
 description: "How to prepare for the USA Biology Olympiad (USABO): stages, what gets tested, recommended resources, past papers, and preparation strategy."
+images: ["/images/og/usabo-prep-og.png"]
 aliases:
   - /usabo/
 layout: "wide"
+schema_type: "article"
+faq:
+  - q: "What is USABO?"
+    a: "The USA Biology Olympiad (USABO) is the national biology competition for US high school students, run by the Center for Excellence in Education. It selects the four-member US team for the International Biology Olympiad (IBO) through three stages: Open Exam, Semifinal, and National Finals."
+  - q: "How do I register for USABO?"
+    a: "Registration goes through your school's biology teacher or coordinator -- individual registration is not typically available. If your school doesn't currently participate, the official USABO site has guidance for how a teacher can register the school."
+  - q: "What subjects does USABO test?"
+    a: "USABO emphasizes Cell Biology, Genetics, and Physiology more heavily than descriptive sections. The Open Exam has broader surface coverage, while the Semifinal goes deeper on fewer topics and adds experimental reasoning and free-response questions."
+  - q: "What is the difference between USABO Open and Semifinal?"
+    a: "The Open Exam is a multiple-choice and true/false screening taken at your school. The Semifinal is for top Open scorers and includes free-response questions, lab-technique questions, and deeper experimental reasoning alongside multiple-choice."
 ---
 
 <div class="prep-guide-wrapper">

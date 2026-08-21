@@ -5,6 +5,7 @@ aliases:
   - /biology-olympiad-study-plan/
   - /biology-olympiad-roadmap/
 layout: "wide"
+schema_type: "article"
 ---
 
 <div class="prep-guide-wrapper">

@@ -1,9 +1,20 @@
 ---
-title: "IBO Preparation: Complete Guide"
+title: "How to Prepare for IBO: Complete Biology Olympiad Guide"
 description: "How to prepare for the International Biology Olympiad (IBO): format, what gets tested, recommended resources, past papers, and preparation strategy."
+images: ["/images/og/ibo-prep-og.png"]
 aliases:
   - /ibo/
 layout: "wide"
+schema_type: "article"
+faq:
+  - q: "What is the IBO?"
+    a: "The International Biology Olympiad (IBO) is the premier global biology competition for pre-university students. National teams of four compete on theory papers and practical lab exams across a week-long event held in a different country each year."
+  - q: "How do I prepare for the IBO?"
+    a: "Start with a strong foundation in cell biology, genetics, and biochemistry, then work through the full IBO syllabus. Use university-level textbooks (Campbell Biology, Lehninger, Alberts), practice with past IBO papers under timed conditions, and follow a structured study plan matched to your available time."
+  - q: "What books should I use for IBO preparation?"
+    a: "The core references are Campbell Biology for general coverage, Alberts' Molecular Biology of the Cell for cell biology, Lehninger's Principles of Biochemistry, and Taiz's Plant Physiology and Development. Silverthorn's Human Physiology is recommended for animal physiology."
+  - q: "How long does it take to prepare for IBO?"
+    a: "Most successful IBO competitors prepare for one to two years. A one-year plan with prior school biology is the most common path. Six months is possible with existing foundations, but two years allows for deeper mastery across all topics."
 ---
 
 <div class="prep-guide-wrapper">

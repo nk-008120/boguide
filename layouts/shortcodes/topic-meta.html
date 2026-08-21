@@ -27,6 +27,15 @@
   {{ end }}
   <span id="topic-mastery-widget"></span>
 </div>
+{{ with $tags }}
+<div class="topic-prep-links">
+  <span class="topic-prep-label">Preparing for:</span>
+  {{ if in . "IBO" }}<a href="/ibo-preparation/">IBO Guide</a>{{ end }}
+  {{ if in . "USABO" }}<a href="/usabo-preparation/">USABO Guide</a>{{ end }}
+  {{ if in . "INBO" }}<a href="/inbo-preparation/">INBO Guide</a>{{ end }}
+  <a href="/biology-olympiad-preparation/">General Guide</a>
+</div>
+{{ end }}
 <script>
 (function () {
   var widget = document.getElementById('topic-mastery-widget');

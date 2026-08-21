@@ -109,6 +109,21 @@ The grading (S/A/B) isn't a strict ranking. S doesn't automatically mean "better
 })();
 </script>
 
+## Preparation Guides
+
+Looking for a structured plan rather than individual topics? See our exam-specific guides:
+
+{{< cards cols="3" >}}
+  {{< card link="/ibo-preparation/" title="IBO Preparation" subtitle="Format, scoring, recommended books, and a month-by-month preparation strategy for the International Biology Olympiad." >}}
+  {{< card link="/usabo-preparation/" title="USABO Preparation" subtitle="Open Exam through Semifinal: topic focus areas, registration, and stage-by-stage preparation for the USA Biology Olympiad." >}}
+  {{< card link="/inbo-preparation/" title="INBO Preparation" subtitle="NSEB through OCSC: Indian-specific resources, NCERT-to-olympiad bridging, and the full INBO preparation path." >}}
+{{< /cards >}}
+
+{{< cards cols="2" >}}
+  {{< card link="/biology-olympiad-preparation/" title="Complete Biology Olympiad Guide" subtitle="Not sure which olympiad? Start here for a broad overview of what to study, how deep to go, and how to practice effectively." >}}
+  {{< card link="/plans/" title="Study Plans" subtitle="Time-based study plans from a full two-year runway down to a 7-day sprint." >}}
+{{< /cards >}}
+
 ## Browse All Subjects
 
 Sections marked **✅ Verified** have gone through our full review workflow (see [About](../about/)) and are considered complete; the rest are still in progress.

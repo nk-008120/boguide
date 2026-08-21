@@ -12,7 +12,7 @@ cascade:
 
 {{< biorchive-bg >}}
 
-Here you will find the growing archive of translated Biology Olympiad papers from the world, browsable by programme, year, round, and problem.
+Here you will find the growing archive of translated Biology Olympiad papers from the world, browsable by programme, year, round, and problem. Using these to prepare? See our guides for [IBO](/ibo-preparation/), [USABO](/usabo-preparation/), and [INBO](/inbo-preparation/).
 
 **[BiOrchive](ibo/)** is the flagship of this archive: every IBO question is reproduced in full with the original figures, an interactive true/false quiz, and a timed-attempt mode, cross-linked to the matching topic notes elsewhere on this site. Other programmes are being added over time.
 

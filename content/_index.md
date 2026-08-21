@@ -33,7 +33,30 @@ New to Biology Olympiads, or not sure where to jump in? Pick what matches you be
   </a>
 </div>
 
-**Preparing for a specific exam?** USABO leans heavily on Cell Biology, Genetics, and Physiology. IBO expects broad coverage across all sections, with real emphasis on data analysis. Practical exams draw on the Bioinformatics and Practical sections for hands-on simulations.
+**Preparing for a specific exam?** We have detailed preparation guides for each major olympiad:
+
+<div class="feature-cards">
+  <a href="/ibo-preparation/" class="card">
+    <div class="card-icon">🌍</div>
+    <h3>IBO Guide</h3>
+    <p>Format, scoring, recommended books, and a month-by-month preparation strategy for the International Biology Olympiad.</p>
+    <span class="btn-outline">IBO Preparation &rarr;</span>
+  </a>
+  <a href="/usabo-preparation/" class="card">
+    <div class="card-icon">🇺🇸</div>
+    <h3>USABO Guide</h3>
+    <p>Open Exam through Semifinal: topic focus areas, registration, and stage-by-stage preparation for the USA Biology Olympiad.</p>
+    <span class="btn-outline">USABO Preparation &rarr;</span>
+  </a>
+  <a href="/inbo-preparation/" class="card">
+    <div class="card-icon">🇮🇳</div>
+    <h3>INBO Guide</h3>
+    <p>NSEB through OCSC: Indian-specific resources, NCERT-to-olympiad bridging, and the full INBO preparation path.</p>
+    <span class="btn-outline">INBO Preparation &rarr;</span>
+  </a>
+</div>
+
+Or see the [complete Biology Olympiad preparation overview](/biology-olympiad-preparation/) for a broader look at study plans and timelines.
 
 ---
 

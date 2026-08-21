@@ -1,9 +1,20 @@
 ---
-title: "INBO Preparation: Complete Guide"
+title: "How to Prepare for INBO: Indian Biology Olympiad Guide"
 description: "How to prepare for the Indian National Biology Olympiad (INBO): stages, what gets tested, recommended resources, past papers, and preparation strategy."
+images: ["/images/og/inbo-prep-og.png"]
 aliases:
   - /inbo/
 layout: "wide"
+schema_type: "article"
+faq:
+  - q: "What is INBO?"
+    a: "The Indian National Biology Olympiad (INBO) is the second stage of India's biology olympiad pathway toward IBO, run by HBCSE under NCERT. Students qualify through NSEB (National Standard Examination in Biology) to sit for INBO."
+  - q: "What is the difference between NSEB and INBO?"
+    a: "NSEB is a large-scale multiple-choice screening exam. INBO is a deeper theory paper for NSEB qualifiers, featuring multiple-choice, multiple-select, and analytical questions with more emphasis on experimental reasoning and data interpretation."
+  - q: "How do I qualify for INBO?"
+    a: "You qualify by scoring in the top percentile on the NSEB (National Standard Examination in Biology), which is held nationally each year. Students who qualify from INBO are then invited to OCSC (Orientation cum Selection Camp), where four students are selected to represent India at IBO."
+  - q: "What books should I use for INBO preparation?"
+    a: "Start with NCERT biology textbooks as a foundation, then move to Campbell Biology for broader coverage. For INBO-level depth, add Silverthorn or Vander for physiology and Lehninger for biochemistry. The full graded book list is on the BioGuide Study Resources page."
 ---
 
 <div class="prep-guide-wrapper">
