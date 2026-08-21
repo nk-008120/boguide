@@ -21,7 +21,8 @@ Here you will find the growing archive of translated Biology Olympiad papers fro
   {{< card link="question-bank/" title="Question Bank" icon="search" subtitle="Every question across the whole archive, in one searchable table. Filter by olympiad, year, topic, and difficulty to find practice on exactly what you need." >}}
 {{< /cards >}}
 
-{{< cards cols="1" >}}
+{{< cards cols="2" >}}
+  {{< card link="inbo/" title="Indian National Biology Olympiad" subtitle="INBO theory papers with interactive quizzes. MCQ, true/false, numeric, and matching questions. 2026." tag="New" tagColor="green" >}}
   {{< card link="tbo/" title="Taiwanese Biology Olympiad" subtitle="First Stage, Second Stage, and Final Stage (Theory + Practical), translated papers. 2023 sample year." tag="Sample" tagColor="yellow" >}}
 {{< /cards >}}
 
