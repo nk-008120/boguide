@@ -190,11 +190,14 @@
   rows.forEach(function (r) { originalOrder.push(r); });
 
   function initWeakToggle() {
-    var raw;
-    try { raw = sessionStorage.getItem('bioguide-knowledge-profile'); } catch (e) {}
-    if (!raw) return;
     var profile;
-    try { profile = JSON.parse(raw); } catch (e) { return; }
+    try {
+      profile = window.BioKnowledge ? window.BioKnowledge.readCachedProfile() : null;
+      if (!profile) {
+        var raw = sessionStorage.getItem('bioguide-knowledge-profile');
+        if (raw) profile = JSON.parse(raw);
+      }
+    } catch (e) { return; }
     if (!profile || !profile.subjects) return;
     var subjects = profile.subjects;
     if (!Object.keys(subjects).length) return;

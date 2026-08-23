@@ -40,11 +40,14 @@
 (function () {
   var widget = document.getElementById('topic-mastery-widget');
   if (!widget) return;
-  var raw;
-  try { raw = sessionStorage.getItem('bioguide-knowledge-profile'); } catch (e) {}
-  if (!raw) return;
   var profile;
-  try { profile = JSON.parse(raw); } catch (e) { return; }
+  try {
+    profile = window.BioKnowledge ? window.BioKnowledge.readCachedProfile() : null;
+    if (!profile) {
+      var raw = sessionStorage.getItem('bioguide-knowledge-profile');
+      if (raw) profile = JSON.parse(raw);
+    }
+  } catch (e) { return; }
   if (!profile || !profile.subjects) return;
   var path = window.location.pathname.replace(/\/$/, '') + '/';
   var subj = profile.subjects[path];

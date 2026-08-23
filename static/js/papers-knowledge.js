@@ -7,6 +7,8 @@
   'use strict';
 
   var DAY_MS = 86400000;
+  var CACHE_KEY_PREFIX = 'bioguide-kp-';
+  var CACHE_MAX_AGE = 3600000;
 
   function timeDecayWeight(submittedAt) {
     var age = Date.now() - new Date(submittedAt).getTime();
@@ -15,6 +17,73 @@
     if (days < 30) return 0.8;
     if (days < 90) return 0.5;
     return 0.3;
+  }
+
+  function normalizeSubjectKey(link, name) {
+    if (link) return link.replace(/\/$/, '') + '/';
+    return (name || '').toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9 -]/g, '').replace(/\s+/g, '-');
+  }
+
+  function saveProfileCache(userId, profile) {
+    try {
+      var payload = JSON.stringify({ ts: Date.now(), uid: userId, profile: profile });
+      localStorage.setItem(CACHE_KEY_PREFIX + userId, payload);
+      localStorage.setItem(CACHE_KEY_PREFIX + 'active', payload);
+    } catch (e) { /* quota exceeded or private mode */ }
+    try {
+      sessionStorage.setItem('bioguide-knowledge-profile', JSON.stringify(profile));
+    } catch (e) { /* fallback */ }
+  }
+
+  function loadProfileCache(userId) {
+    try {
+      var raw = localStorage.getItem(CACHE_KEY_PREFIX + userId);
+      if (!raw) return null;
+      var parsed = JSON.parse(raw);
+      if (!parsed || !parsed.ts || !parsed.profile) return null;
+      if (Date.now() - parsed.ts > CACHE_MAX_AGE) return null;
+      return parsed.profile;
+    } catch (e) {
+      try { localStorage.removeItem(CACHE_KEY_PREFIX + userId); } catch (e2) {}
+      return null;
+    }
+  }
+
+  function clearProfileCache(userId) {
+    if (userId) {
+      try { localStorage.removeItem(CACHE_KEY_PREFIX + userId); } catch (e) {}
+    }
+    try { localStorage.removeItem(CACHE_KEY_PREFIX + 'active'); } catch (e) {}
+    try { sessionStorage.removeItem('bioguide-knowledge-profile'); } catch (e) {}
+  }
+
+  function readCachedProfile() {
+    try {
+      var raw = localStorage.getItem(CACHE_KEY_PREFIX + 'active');
+      if (raw) {
+        var parsed = JSON.parse(raw);
+        if (parsed && parsed.profile) return parsed.profile;
+      }
+    } catch (e) {
+      try { localStorage.removeItem(CACHE_KEY_PREFIX + 'active'); } catch (e2) {}
+    }
+    try {
+      var raw2 = sessionStorage.getItem('bioguide-knowledge-profile');
+      if (raw2) return JSON.parse(raw2);
+    } catch (e) {}
+    return null;
+  }
+
+  function initAuthListener() {
+    if (!window.PapersAuth) return;
+    try {
+      var client = PapersAuth.getClient();
+      if (client && client.auth && client.auth.onAuthStateChange) {
+        client.auth.onAuthStateChange(function (event) {
+          if (event === 'SIGNED_OUT') clearProfileCache();
+        });
+      }
+    } catch (e) {}
   }
 
   function loadAttempts(supabaseClient, userId) {
@@ -40,7 +109,7 @@
       Object.keys(stats).forEach(function (name) {
         var s = stats[name];
         var link = s.link || '';
-        var key = link || name;
+        var key = normalizeSubjectKey(link, name);
 
         if (!subjectMap[key]) {
           subjectMap[key] = {
@@ -55,11 +124,13 @@
         }
 
         var entry = subjectMap[key];
+        if (link && !entry.link) entry.link = link;
         entry.entries.push({
           correct: s.correct,
           total: s.total,
           weight: weight,
-          submittedAt: attempt.submitted_at
+          submittedAt: attempt.submitted_at,
+          scorePct: attempt.score_pct
         });
         entry.totalCorrect += s.correct;
         entry.totalStatements += s.total;
@@ -87,9 +158,13 @@
       else masteryLevel = 'mastered';
 
       var trend = 'stable';
+      var accuracyHistory = [];
       if (entry.entries.length >= 2) {
         var sorted = entry.entries.slice().sort(function (a, b) {
           return new Date(a.submittedAt) - new Date(b.submittedAt);
+        });
+        sorted.forEach(function (e) {
+          accuracyHistory.push({ date: e.submittedAt, accuracy: e.total > 0 ? e.correct / e.total : 0 });
         });
         var latest = sorted[sorted.length - 1];
         var latestAcc = latest.total > 0 ? latest.correct / latest.total : 0;
@@ -102,9 +177,12 @@
         var diff = latestAcc - olderAcc;
         if (diff > 0.10) trend = 'improving';
         else if (diff < -0.10) trend = 'declining';
+      } else if (entry.entries.length === 1) {
+        accuracyHistory.push({ date: entry.entries[0].submittedAt, accuracy: entry.entries[0].total > 0 ? entry.entries[0].correct / entry.entries[0].total : 0 });
       }
 
-      subjects[key] = {
+      var linkKey = entry.link ? (entry.link.replace(/\/$/, '') + '/') : key;
+      subjects[linkKey] = {
         name: entry.name,
         link: entry.link,
         rawAccuracy: rawAccuracy,
@@ -116,7 +194,8 @@
         totalStatements: entry.totalStatements,
         attemptCount: entry.entries.length,
         lastAttempted: entry.entries[entry.entries.length - 1].submittedAt,
-        trend: trend
+        trend: trend,
+        accuracyHistory: accuracyHistory
       };
     });
 
@@ -129,18 +208,25 @@
           sectionTitle: t.sectionTitle,
           tested: 0,
           total: 0,
-          masterySum: 0
+          masterySum: 0,
+          topics: []
         };
       }
       sectionCoverage[t.section].total++;
+      var topicInfo = { slug: t.slug, title: t.title, difficulty: t.difficulty, tested: false, masteryLevel: 'untested', masteryScore: 0 };
       if (subjects[t.slug]) {
         sectionCoverage[t.section].tested++;
         sectionCoverage[t.section].masterySum += subjects[t.slug].masteryScore;
+        topicInfo.tested = true;
+        topicInfo.masteryLevel = subjects[t.slug].masteryLevel;
+        topicInfo.masteryScore = subjects[t.slug].masteryScore;
       }
+      sectionCoverage[t.section].topics.push(topicInfo);
     });
     Object.keys(sectionCoverage).forEach(function (sec) {
       var c = sectionCoverage[sec];
       c.avgMastery = c.tested > 0 ? c.masterySum / c.tested : 0;
+      c.topics.sort(function (a, b) { return a.masteryScore - b.masteryScore; });
     });
 
     var subjectValues = Object.keys(subjects).map(function (k) { return subjects[k]; });
@@ -151,10 +237,28 @@
 
     var totalAttempts = attempts.length;
     var avgScore = 0;
+    var scoreHistory = [];
     if (totalAttempts > 0) {
       var scoreSum = 0;
-      attempts.forEach(function (a) { scoreSum += (a.score_pct || 0); });
+      attempts.forEach(function (a) {
+        scoreSum += (a.score_pct || 0);
+        scoreHistory.push({ date: a.submitted_at, score: a.score_pct || 0, name: a.round_name || (a.olympiad + ' ' + a.year) });
+      });
       avgScore = scoreSum / totalAttempts;
+    }
+
+    var activeDays = {};
+    attempts.forEach(function (a) {
+      var d = new Date(a.submitted_at);
+      var key = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
+      activeDays[key] = true;
+    });
+    var now = new Date();
+    var streakDays = 0;
+    for (var dOff = 0; dOff < 30; dOff++) {
+      var check = new Date(now.getTime() - dOff * DAY_MS);
+      var ck = check.getFullYear() + '-' + (check.getMonth() + 1) + '-' + check.getDate();
+      if (activeDays[ck]) streakDays++;
     }
 
     return {
@@ -165,11 +269,82 @@
         strongestSubjects: strongestSubjects,
         weakestSubjects: weakestSubjects,
         lastAttemptDate: totalAttempts > 0
-          ? attempts[attempts.length - 1].submitted_at : null
+          ? attempts[attempts.length - 1].submitted_at : null,
+        scoreHistory: scoreHistory,
+        activeDaysLast30: streakDays
       },
       sectionCoverage: sectionCoverage,
       _graphBySlug: graphBySlug
     };
+  }
+
+  function computeReadiness(profile, topicGraph, targetOlympiad) {
+    var target = (targetOlympiad || 'IBO').toUpperCase();
+    var relevant = 0;
+    var covered = 0;
+    var masterySum = 0;
+    (topicGraph || []).forEach(function (t) {
+      var tags = (t.syllabus_tags || []).map(function (s) { return s.toUpperCase(); });
+      if (tags.indexOf(target) === -1) return;
+      relevant++;
+      var subj = profile.subjects[t.slug];
+      if (subj && subj.masteryLevel !== 'untested') {
+        covered++;
+        masterySum += subj.masteryScore;
+      }
+    });
+    return {
+      target: target,
+      relevantTopics: relevant,
+      coveredTopics: covered,
+      coveragePct: relevant > 0 ? Math.round(covered / relevant * 100) : 0,
+      avgMastery: covered > 0 ? Math.round(masterySum / covered * 100) : 0,
+      readinessPct: relevant > 0 ? Math.round((covered / relevant) * (covered > 0 ? masterySum / covered : 0) * 100) : 0
+    };
+  }
+
+  function suggestNextPaper(profile, attempts) {
+    var attempted = {};
+    attempts.forEach(function (a) { attempted[a.round_id] = true; });
+    var subjects = profile.subjects;
+    var weakLinks = [];
+    Object.keys(subjects).forEach(function (k) {
+      var s = subjects[k];
+      if (s.masteryLevel === 'critical' || s.masteryLevel === 'weak') {
+        weakLinks.push(k);
+      }
+    });
+    if (!weakLinks.length) return null;
+
+    var roundCoverage = {};
+    attempts.forEach(function (a) {
+      if (!a.subject_stats) return;
+      Object.keys(a.subject_stats).forEach(function (name) {
+        var s = a.subject_stats[name];
+        var link = s.link || '';
+        var key = normalizeSubjectKey(link, name);
+        var linkKey = link ? (link.replace(/\/$/, '') + '/') : key;
+        var rid = a.round_id;
+        if (!roundCoverage[rid]) roundCoverage[rid] = { name: a.round_name || (a.olympiad + ' ' + a.year), subjects: {} };
+        roundCoverage[rid].subjects[linkKey] = true;
+      });
+    });
+
+    var best = null;
+    var bestScore = -1;
+    Object.keys(roundCoverage).forEach(function (rid) {
+      if (attempted[rid]) return;
+      var rc = roundCoverage[rid];
+      var score = 0;
+      weakLinks.forEach(function (wk) {
+        if (rc.subjects[wk]) score++;
+      });
+      if (score > bestScore) {
+        bestScore = score;
+        best = { roundId: rid, name: rc.name, weakCoverage: score, weakTotal: weakLinks.length };
+      }
+    });
+    return best;
   }
 
   function generateRecommendations(profile, topicGraph, userProfile) {
@@ -383,6 +558,15 @@
   window.BioKnowledge = {
     loadAttempts: loadAttempts,
     buildProfile: buildProfile,
-    generateRecommendations: generateRecommendations
+    generateRecommendations: generateRecommendations,
+    computeReadiness: computeReadiness,
+    suggestNextPaper: suggestNextPaper,
+    saveProfileCache: saveProfileCache,
+    loadProfileCache: loadProfileCache,
+    clearProfileCache: clearProfileCache,
+    readCachedProfile: readCachedProfile,
+    initAuthListener: initAuthListener
   };
+
+  initAuthListener();
 })();

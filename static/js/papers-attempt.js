@@ -450,9 +450,9 @@
           var attempts = results[0];
           var userProfile = results[1];
           var topicGraph = results[2];
-          if (!attempts || attempts.length < 2) return;
+          if (!attempts || attempts.length < 1) return;
           var profile = BioKnowledge.buildProfile(attempts, topicGraph);
-          try { sessionStorage.setItem('bioguide-knowledge-profile', JSON.stringify(profile)); } catch (e) {}
+          try { BioKnowledge.saveProfileCache(userId, profile); } catch (e) {}
           var extraRecs = buildKnowledgeRecs(report, profile);
           if (!extraRecs.length) return;
           var recList = reportScreen.querySelector('.attempt-rec-list');

@@ -23,14 +23,20 @@ layout: "wide"
   <div id="dashboard-content" style="display:none;">
     <div id="dashboard-header"></div>
     <div id="dashboard-summary"></div>
+    <div id="dashboard-readiness"></div>
     <h2>Study Recommendations</h2>
     <div id="dashboard-recs" class="attempt-rec-list"></div>
+    <div id="dashboard-next-paper"></div>
+    <div id="dashboard-plan-link"></div>
     <h2>Subject Mastery</h2>
     <div id="dashboard-subjects"></div>
     <h2>Section Coverage</h2>
     <div id="dashboard-sections"></div>
     <h2>Recent Attempts</h2>
     <div id="dashboard-recent"></div>
+    <h2>Study Activity</h2>
+    <div id="dashboard-streak"></div>
+    <div id="dashboard-copy-summary"></div>
   </div>
 </div>
 
