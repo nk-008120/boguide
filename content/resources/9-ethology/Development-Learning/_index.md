@@ -11,7 +11,7 @@ syllabus_tags: ["IBO", "USABO", "ethology"]
 
 ## Overview
 
-Where [Mechanisms of Behavior](../Mechanisms-of-Behavior/) covered the innate, hard-wired end of behavior (a fixed action pattern triggered reliably by a sign stimulus in any individual of the species), this page covers the opposite and complementary end: behavior that is acquired or modified by individual experience. Almost no real behavior is purely one or the other; the useful distinction for exam purposes is which **learning mechanism** is at work in a given scenario, since IBO/USABO questions are consistently framed as "an animal does X after experience Y, name the learning type." Six mechanisms recur: habituation, sensitization, imprinting, classical conditioning, operant conditioning, and observational/insight learning, each illustrated below with the specific named experiment it's usually tested against.
+Where [Mechanisms of Behavior](../mechanisms-of-behavior/) covered the innate, hard-wired end of behavior (a fixed action pattern triggered reliably by a sign stimulus in any individual of the species), this page covers the opposite and complementary end: behavior that is acquired or modified by individual experience. Almost no real behavior is purely one or the other; the useful distinction for exam purposes is which **learning mechanism** is at work in a given scenario, since IBO/USABO questions are consistently framed as "an animal does X after experience Y, name the learning type." Six mechanisms recur: habituation, sensitization, imprinting, classical conditioning, operant conditioning, and observational/insight learning, each illustrated below with the specific named experiment it's usually tested against.
 
 ## Key Concepts
 

@@ -13,7 +13,7 @@ Evolution is the mechanistic and historical layer underlying nearly every other 
 - **Speciation & Macroevolution** (3 pages): how one lineage becomes two, the large-scale patterns visible only across many lineages and long timescales, and the developmental mechanisms that translate genetic change into body-plan change.
 - **Applied & Synthesis** (2 pages), two case studies that apply the whole toolkit above: coevolution between interacting species, and the hominin fossil record.
 
-Start with [Evidence for Evolution](Evidence-for-Evolution/): it establishes the vocabulary (homology, vestigial structures, transitional forms) that every later page assumes.
+Start with [Evidence for Evolution](evidence-for-evolution/): it establishes the vocabulary (homology, vestigial structures, transitional forms) that every later page assumes.
 
 {{< cards cols="1" >}}
   {{< card link="evidence-for-evolution/" title="1. Evidence for Evolution" subtitle="Fossil record, biogeography, homology vs. analogy, comparative embryology, molecular evidence, read this first." >}}

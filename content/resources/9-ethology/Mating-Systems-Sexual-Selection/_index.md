@@ -11,7 +11,7 @@ syllabus_tags: ["IBO", "USABO", "ethology"]
 
 ## Overview
 
-**Sexual selection** (Darwin's second major selective mechanism, distinct from natural selection for survival) is selection arising specifically from variance in mating success rather than variance in survival, and it is the single mechanism that explains the most exam-tested oddities in the animal kingdom: elaborate ornaments that reduce survival odds, males that fight to the point of injury, and mating systems ranging from strict monogamy to promiscuity within closely related species. This page builds directly on the honest-signaling framework from [Animal Communication](../Animal-Communication/) (many sexually selected traits are honest signals of quality) and connects forward to [Kin Selection, Altruism & Eusociality](../Kin-Selection-Altruism-Eusociality/), since parental investment asymmetry (introduced here) is also the starting point for understanding parent-offspring conflict.
+**Sexual selection** (Darwin's second major selective mechanism, distinct from natural selection for survival) is selection arising specifically from variance in mating success rather than variance in survival, and it is the single mechanism that explains the most exam-tested oddities in the animal kingdom: elaborate ornaments that reduce survival odds, males that fight to the point of injury, and mating systems ranging from strict monogamy to promiscuity within closely related species. This page builds directly on the honest-signaling framework from [Animal Communication](../animal-communication/) (many sexually selected traits are honest signals of quality) and connects forward to [Kin Selection, Altruism & Eusociality](../kin-selection-altruism-eusociality/), since parental investment asymmetry (introduced here) is also the starting point for understanding parent-offspring conflict.
 
 ## Key Concepts
 
@@ -19,7 +19,7 @@ syllabus_tags: ["IBO", "USABO", "ethology"]
 
 Sexual selection operates through two distinguishable routes, and exam questions consistently require identifying which route a described trait results from:
 
-- **Intersexual selection** (mate choice): one sex (typically female, see parental investment below) chooses mates based on a trait, so that trait increases in frequency because it makes its bearer more *chosen*, not more survival-fit. The peacock's train (see the handicap principle in [Animal Communication](../Animal-Communication/)) is the standard example, favored because peahens preferentially mate with more elaborately trained males.
+- **Intersexual selection** (mate choice): one sex (typically female, see parental investment below) chooses mates based on a trait, so that trait increases in frequency because it makes its bearer more *chosen*, not more survival-fit. The peacock's train (see the handicap principle in [Animal Communication](../animal-communication/)) is the standard example, favored because peahens preferentially mate with more elaborately trained males.
 
 ![Comparative fitness-trade-off figure contrasting an "additive model" (parent-offspring begging conflict) against a "multiplicative model" of mate choice (illustrated with a peacock and peahen), each showing benefit, trade-off, and resulting fitness curves against a shared resource axis.](/ETHOLOGYPICS/peacock-train-diagram.png)
 *Source: Springer/BMC Biology*

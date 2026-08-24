@@ -8,11 +8,11 @@ description: "Structural anatomy for IBO/USABO at full depth, organized 5:3:2, H
 
 IBO/USABO "Animal Anatomy" is not a zoology-wide survey of every phylum in equal depth. It's overwhelmingly a **human anatomy** course on the structural side, extended by comparison to other vertebrates, with a lighter structural survey of the wider animal kingdom on top. This section is weighted accordingly, roughly **5 : 3 : 2**:
 
-- **Human Anatomy**: the densest tier, covering human organ-system structure (histology, named cell types, mechanism) in the depth actually tested. Originally planned as 5 pages, it's split into **10 system-specific pages** here. Each Human page proved too dense for one system to share a page with another at full depth (compare, for instance, the single-page treatment of Skeletal+Integumentary against the now-separate [Skeletal](Human-Skeletal-System/) and [Integumentary](Human-Integumentary-System/) pages). The "5" in the ratio still refers to five *systems worth* of depth, now spread across more, shorter pages rather than fewer, longer ones.
+- **Human Anatomy**: the densest tier, covering human organ-system structure (histology, named cell types, mechanism) in the depth actually tested. Originally planned as 5 pages, it's split into **10 system-specific pages** here. Each Human page proved too dense for one system to share a page with another at full depth (compare, for instance, the single-page treatment of Skeletal+Integumentary against the now-separate [Skeletal](human-skeletal-system/) and [Integumentary](human-integumentary-system/) pages). The "5" in the ratio still refers to five *systems worth* of depth, now spread across more, shorter pages rather than fewer, longer ones.
 - **Vertebrate Anatomy** (3 pages): comparative, explicitly framed against the human baseline above.
 - **Animal Kingdom Anatomy** (2 pages): a lighter structural survey of invertebrate body plans.
 
-Start with [Body Plans & Foundational Concepts](Body-Plans/); every page below assumes its vocabulary (symmetry, tissue histology, germ layers, coelom types, cleavage patterns).
+Start with [Body Plans & Foundational Concepts](body-plans/); every page below assumes its vocabulary (symmetry, tissue histology, germ layers, coelom types, cleavage patterns).
 
 {{< cards cols="1" >}}
   {{< card link="body-plans/" title="0. Body Plans & Foundational Concepts" subtitle="Symmetry, tissue histology, gastrulation, coelom formation, segmentation, read this first." >}}

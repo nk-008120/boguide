@@ -11,7 +11,7 @@ syllabus_tags: ["IBO", "USABO", "evolution"]
 
 ## Overview
 
-Evolution, defined precisely at the population level, is a **change in allele frequencies in a population over time**, not a change in any single individual. This page introduces the mathematical baseline against which that change is measured: the **Hardy-Weinberg equilibrium**, a null model describing what allele and genotype frequencies would look like if no evolution were occurring at all. Every later mechanism page in this section ([Natural Selection](../Natural-Selection-Modes-and-Fitness/), [Genetic Drift, Gene Flow & Mutation](../Genetic-Drift-Gene-Flow-and-Mutation/)) is best understood as a specific, named way of violating one of this page's five assumptions, so the exam skill this page builds is less "memorize the equation" and more "identify which assumption a described scenario violates."
+Evolution, defined precisely at the population level, is a **change in allele frequencies in a population over time**, not a change in any single individual. This page introduces the mathematical baseline against which that change is measured: the **Hardy-Weinberg equilibrium**, a null model describing what allele and genotype frequencies would look like if no evolution were occurring at all. Every later mechanism page in this section ([Natural Selection](../natural-selection-modes-and-fitness/), [Genetic Drift, Gene Flow & Mutation](../genetic-drift-gene-flow-and-mutation/)) is best understood as a specific, named way of violating one of this page's five assumptions, so the exam skill this page builds is less "memorize the equation" and more "identify which assumption a described scenario violates."
 
 ## Key Concepts
 
@@ -41,11 +41,11 @@ The Hardy-Weinberg equation only holds, and equilibrium is only maintained acros
 
 | Assumption | If violated, corresponds to |
 |---|---|
-| No mutation | New alleles/allele conversion: see [Genetic Drift, Gene Flow & Mutation](../Genetic-Drift-Gene-Flow-and-Mutation/) |
+| No mutation | New alleles/allele conversion: see [Genetic Drift, Gene Flow & Mutation](../genetic-drift-gene-flow-and-mutation/) |
 | No gene flow (migration) | Allele frequency change via migration: same page as above |
 | Infinitely large population (no genetic drift) | Genetic drift: same page as above |
 | Random mating | Non-random mating (assortative mating, inbreeding), changes genotype frequencies without changing allele frequencies |
-| No natural selection | Differential survival/reproduction: see [Natural Selection: Modes & Fitness](../Natural-Selection-Modes-and-Fitness/) |
+| No natural selection | Differential survival/reproduction: see [Natural Selection: Modes & Fitness](../natural-selection-modes-and-fitness/) |
 
 This table is the single most exam-relevant structure on this page: a question describing a specific real-world scenario (a new mutation appears; a dam blocks fish migration between two populations; a population crashes to a handful of survivors; individuals preferentially mate with similar-looking partners; a pesticide kills susceptible insects disproportionately) is almost always testing whether the assumption being violated can be correctly named.
 

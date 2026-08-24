@@ -13,7 +13,7 @@ Where [Plant Anatomy](../6-plant-anatomy/) covers structure (tissue types, organ
 - **Growth Regulation & Development** (4 pages), the hormonal signals and their downstream effects on directional growth, flowering timing, and germination.
 - **Whole-Plant & Stress Physiology** (1 page), abiotic and biotic stress responses, integrating mechanisms from every earlier tier.
 
-Start with [Water Transport & Transpiration](Water-Transport-Transpiration/): its water potential framework is assumed throughout the rest of the section.
+Start with [Water Transport & Transpiration](water-transport-transpiration/): its water potential framework is assumed throughout the rest of the section.
 
 {{< cards cols="1" >}}
   {{< card link="water-transport-transpiration/" title="1. Water Transport & Transpiration" subtitle="Water potential, cohesion-tension theory, root pressure and guttation, read this first." >}}

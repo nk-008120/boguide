@@ -45,7 +45,7 @@ Two of the clearest predictions from the foraging/safety trade-off concern group
 
 Several named strategies recur across taxa and are tested individually:
 
-- **Alarm signaling**: covered in depth in [Animal Communication](../Animal-Communication/) (Belding's ground squirrel, vervet monkey calls).
+- **Alarm signaling**: covered in depth in [Animal Communication](../animal-communication/) (Belding's ground squirrel, vervet monkey calls).
 - **Selfish herd effect** (W.D. Hamilton): individuals within a group actively maneuver to position themselves centrally, pushing others toward the group's edge, reducing their own individual predation risk at others' expense. This is a distinct mechanism from the dilution effect above, since it's about *position within* the group rather than group size itself.
 - **Predator swamping/satiation**, the same mass-synchrony logic as the dilution effect, extended to the case where predator population size cannot track sudden prey abundance (periodical cicada mass emergences are the standard example: a 13- or 17-year emergence cycle produces prey numbers far exceeding what the local predator community can consume in a single season, so a fixed fraction survives regardless of predator numbers).
 

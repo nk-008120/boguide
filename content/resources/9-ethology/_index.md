@@ -15,7 +15,7 @@ The section runs in four tiers:
 - **Behavioral Ecology** (3 pages), the evolutionary-strategy core of the subject: foraging, mating systems, and kin-directed altruism, each analyzed in cost/benefit terms.
 - **Social Structure & Rhythms** (2 pages) covers how individuals organize into groups, and how behavior is timed against internal and environmental clocks.
 
-Start with [Mechanisms of Behavior](Mechanisms-of-Behavior/), which introduces the proximate/ultimate distinction (Tinbergen's four questions) that every later page assumes when explaining *why* a behavior exists.
+Start with [Mechanisms of Behavior](mechanisms-of-behavior/), which introduces the proximate/ultimate distinction (Tinbergen's four questions) that every later page assumes when explaining *why* a behavior exists.
 
 {{< cards cols="1" >}}
   {{< card link="mechanisms-of-behavior/" title="1. Mechanisms of Behavior" subtitle="Proximate vs. ultimate causation, fixed action patterns, sign stimuli, read this first." >}}

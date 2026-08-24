@@ -11,7 +11,7 @@ syllabus_tags: ["IBO", "USABO", "ethology"]
 
 ## Overview
 
-**Altruism**, in the strict behavioral-ecology sense, is behavior that reduces the actor's own direct reproductive success while increasing the reproductive success of a recipient. A Belding's ground squirrel giving an alarm call at increased personal predation risk (see [Animal Communication](../Animal-Communication/)) is the clearest example already introduced. This poses an obvious problem for natural selection acting on individuals: a gene that reduces its own carrier's reproduction should be selected against. The resolution, **kin selection theory**, is one of the most consequential ideas in 20th-century evolutionary biology and is tested heavily both as an abstract framework (Hamilton's rule) and through its most extreme real-world confirmation (insect eusociality).
+**Altruism**, in the strict behavioral-ecology sense, is behavior that reduces the actor's own direct reproductive success while increasing the reproductive success of a recipient. A Belding's ground squirrel giving an alarm call at increased personal predation risk (see [Animal Communication](../animal-communication/)) is the clearest example already introduced. This poses an obvious problem for natural selection acting on individuals: a gene that reduces its own carrier's reproduction should be selected against. The resolution, **kin selection theory**, is one of the most consequential ideas in 20th-century evolutionary biology and is tested heavily both as an abstract framework (Hamilton's rule) and through its most extreme real-world confirmation (insect eusociality).
 
 ## Key Concepts
 

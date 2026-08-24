@@ -11,7 +11,7 @@ Where [Animal Anatomy](../2-animal-anatomy/) covers structure (histology, named 
 - **Core Regulatory & Organ-System Physiology** (9 pages), one page per major regulatory system or organ system's functional mechanism, each explicitly paired with the matching Animal Anatomy structural page where one exists.
 - **Comparative & Whole-Animal Physiology** (4 pages), covering function-across-taxa: how different lineages solve the same physiological problem (osmoregulation, thermoregulation, gas exchange, locomotion) in structurally distinct ways.
 
-Start with [Homeostasis & Osmoregulation](Homeostasis-Osmoregulation/), it introduces feedback loop theory, the shared regulatory vocabulary every later page in this section assumes.
+Start with [Homeostasis & Osmoregulation](homeostasis-osmoregulation/), it introduces feedback loop theory, the shared regulatory vocabulary every later page in this section assumes.
 
 {{< cards cols="1" >}}
   {{< card link="homeostasis-osmoregulation/" title="1. Homeostasis & Osmoregulation" subtitle="Feedback loop theory, nitrogenous waste trade-offs, kidney function mechanism (RAAS, ADH, countercurrent multiplier), read this first." >}}

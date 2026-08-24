@@ -11,7 +11,7 @@ syllabus_tags: ["IBO", "USABO", "ethology"]
 
 ## Overview
 
-The previous two Behavioral Ecology pages covered strategies aimed at resources ([Foraging & Anti-Predator Behavior](../Foraging-Anti-Predator-Behavior/)) and mates ([Mating Systems & Sexual Selection](../Mating-Systems-Sexual-Selection/)); this page covers how repeated interactions between the *same* individuals over resources, mates, and space settle into stable, predictable social structures rather than constant unresolved conflict. The unifying tool is **game theory**: modeling behavioral strategy as a payoff that depends on what other individuals in the population are simultaneously doing, not on the environment alone.
+The previous two Behavioral Ecology pages covered strategies aimed at resources ([Foraging & Anti-Predator Behavior](../foraging-anti-predator-behavior/)) and mates ([Mating Systems & Sexual Selection](../mating-systems-sexual-selection/)); this page covers how repeated interactions between the *same* individuals over resources, mates, and space settle into stable, predictable social structures rather than constant unresolved conflict. The unifying tool is **game theory**: modeling behavioral strategy as a payoff that depends on what other individuals in the population are simultaneously doing, not on the environment alone.
 
 ## Key Concepts
 
@@ -43,9 +43,9 @@ A **territory** is an area actively defended by an individual or group against c
 
 ### Costs and Benefits of Group Living
 
-Group living is not a default, it carries real, testable costs alongside the anti-predator benefits already covered in [Foraging & Anti-Predator Behavior](../Foraging-Anti-Predator-Behavior/) (dilution effect, "many eyes" vigilance reduction), and the balance between them, not group living in the abstract, is what selection acts on:
+Group living is not a default, it carries real, testable costs alongside the anti-predator benefits already covered in [Foraging & Anti-Predator Behavior](../foraging-anti-predator-behavior/) (dilution effect, "many eyes" vigilance reduction), and the balance between them, not group living in the abstract, is what selection acts on:
 
-- **Benefits**: reduced individual predation risk (dilution, vigilance; see above), cooperative foraging/hunting (e.g. lions and African wild dogs achieving higher per-capita prey capture success hunting in coordinated groups than singly for large, dangerous prey), access to help raising young (allo-parenting, cooperative breeding), and, where relatedness is high, the inclusive-fitness benefits covered in [Kin Selection, Altruism & Eusociality](../Kin-Selection-Altruism-Eusociality/).
+- **Benefits**: reduced individual predation risk (dilution, vigilance; see above), cooperative foraging/hunting (e.g. lions and African wild dogs achieving higher per-capita prey capture success hunting in coordinated groups than singly for large, dangerous prey), access to help raising young (allo-parenting, cooperative breeding), and, where relatedness is high, the inclusive-fitness benefits covered in [Kin Selection, Altruism & Eusociality](../kin-selection-altruism-eusociality/).
 - **Costs**: increased resource competition within the group (more mouths drawing from the same local food supply), higher risk of disease/parasite transmission between densely packed individuals, increased conspicuousness to predators at long range (even though per-individual risk once detected may fall via dilution), and reproductive competition/suppression, sometimes formalized (in cooperatively breeding species) as dominant individuals actively suppressing subordinates' reproduction.
 
 Group size in real populations tends to track an **optimal group size** where marginal benefits and costs balance, and this optimum is often smaller than the group size that maximizes benefit alone would suggest, because dominant individuals (who benefit disproportionately) may favor larger groups than subordinates do, a source of within-group conflict over group size itself that is a directly testable prediction distinguishing group living from a purely cooperative arrangement.

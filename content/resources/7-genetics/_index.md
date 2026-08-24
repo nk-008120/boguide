@@ -12,7 +12,7 @@ Genetics sits between two other sections it deliberately does **not** duplicate:
 - **Chromosomal Genetics** (2 pages), the genetic consequences of a gene's physical position on a chromosome: linkage, recombination, genetic mapping, and variation in chromosome number and structure.
 - **Beyond Mendel** (2 pages) covers extranuclear and parent-of-origin inheritance, and the quantitative-trait/non-random-mating topics that sit alongside, rather than inside, population genetics.
 
-Start with [Mendel's Laws & Probability in Genetics](Mendelian-Inheritance-Probability/); every later page in this section assumes its segregation/assortment vocabulary and probability tools.
+Start with [Mendel's Laws & Probability in Genetics](mendelian-inheritance-probability/); every later page in this section assumes its segregation/assortment vocabulary and probability tools.
 
 {{< cards cols="1" >}}
   {{< card link="mendelian-inheritance-probability/" title="1. Mendel's Laws & Probability in Genetics" subtitle="Segregation, independent assortment, monohybrid/dihybrid crosses, test crosses, probability rules, chi-square, read this first." >}}
