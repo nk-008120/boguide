@@ -58,8 +58,6 @@ Below the bars, the report gives her stateless recommendations based on this sin
 
 Even after just one attempt, the knowledge enrichment section adds a **"View your study dashboard"** link at the bottom. Her knowledge profile gets cached in her browser's localStorage so it persists across tabs and sessions (it refreshes automatically after an hour or whenever she takes a new paper).
 
-*(Disclaimer - (You know she made me write this) Bhavyaa is not actually stupid enough to score so low. Please note that this is an illustrative example. It does not represent the reality. In fact, she is really smart and gorgeous. (Why this too? -))*
-
 <div style="clear:both"></div>
 
 <div class="guide-visual">
