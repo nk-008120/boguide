@@ -330,7 +330,7 @@ A coelom performs concrete mechanical work: it cushions internal organs, allows 
 
 **Static**
 
-*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Symmetry types are covered by an external link-out in the Symmetry and Cephalization section instead of an inline image; no combined diagram was found, and the user opted for a link rather than a partial/incomplete photo set.)*
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
 
 ## Practice Problems
 

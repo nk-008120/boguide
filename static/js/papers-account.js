@@ -5,9 +5,9 @@
   if (!root) return;
 
   var AVATAR_FILES = [
-    'avatar-01.jpg', 'avatar-02.jpg', 'avatar-03.jpg', 'avatar-04.png',
-    'avatar-05.png', 'avatar-06.png', 'avatar-07.jpg', 'avatar-08.jpg',
-    'avatar-09.png', 'avatar-10.jpg', 'avatar-11.jpg', 'avatar-12.svg'
+    'avatar-01.svg', 'avatar-02.svg', 'avatar-03.svg', 'avatar-04.svg',
+    'avatar-05.svg', 'avatar-06.svg', 'avatar-07.svg', 'avatar-08.svg',
+    'avatar-09.svg', 'avatar-10.svg', 'avatar-11.svg', 'avatar-12.svg'
   ];
 
   var COUNTRIES = [

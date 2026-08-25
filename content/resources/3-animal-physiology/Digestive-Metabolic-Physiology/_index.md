@@ -58,7 +58,7 @@ graph LR;
 ```
 
 ![GI hormones and their effects: secretin (duodenum/jejunum, triggered by acidic chyme, releases pancreatic bicarbonate and inhibits gastric acid), CCK (duodenum/jejunum, triggered by fatty acids/amino acids/fatty ultra-may retention, stimulates gallbladder contraction and slows gastric emptying), and gastrin (stomach, triggered by amino acids/stomach distension/vagus nerve, stimulates gastric acid secretion and motility), with bonus hormones GIP, motilin, and ghrelin also shown](/ANIMALPHYSIOPICS/gastrin-secretin-cck-meal-response.jpg)
-*Source: user-provided (via Instagram repost)*
+*Source:*
 
 ### Nutrient Absorption Mechanisms
 

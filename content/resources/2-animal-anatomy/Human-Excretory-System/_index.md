@@ -48,7 +48,7 @@ graph LR;
 - **Collecting duct**: receives filtrate from many nephrons; its water permeability is variable, regulated by antidiuretic hormone (ADH) acting on **aquaporin** channels, the specific structural target of the kidney's main water-balance control point.
 
 ![A full labeled nephron: glomerulus and glomerular capsule fed by the afferent/efferent arteriole, proximal convoluted tubule, descending/ascending limbs of the loop of Henle with the surrounding capillary network, distal convoluted tubule, and collecting duct draining to the ureter, with the cortex/medulla boundary shown.](/ANATOMYPICS/nephron-labeled-tubule-regions-blood-supply.jpg)
-*Source: user-sourced (originally via pharmacy180.com). Exact match for all tubule regions and the peritubular blood supply.*
+*Source: (originally via pharmacy180.com). Exact match for all tubule regions and the peritubular blood supply.*
 
 <div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
   <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">🔍 Nephron Filtration/Reabsorption Explorer</h3>
@@ -100,7 +100,7 @@ graph LR;
 Not all nephrons are structurally identical: **cortical nephrons** (~85%, glomerulus in the outer cortex, short loops of Henle barely entering the medulla) handle the bulk of filtration volume, while **juxtamedullary nephrons** (~15%, glomerulus near the cortex-medulla border, very long loops of Henle penetrating deep into the medulla, paralleled by specialized capillaries, the **vasa recta**) are structurally responsible for establishing the deep medullary concentration gradient that makes concentrated urine possible at all, a direct minority-population, disproportionate-function structural point worth stating explicitly.
 
 ![Cortical nephron (short loop of Henle) vs. juxtamedullary nephron (long loop reaching deep into the medulla, near the papilla) compared, alongside a PO2 gradient bar showing oxygen tension falling from 70 mmHg in the cortex to 10 mmHg near the papilla.](/ANATOMYPICS/cortical-vs-juxtamedullary-nephron-comparison.webp)
-*Source: The Ohio State University, user-sourced originally via a ResearchGate figure.*
+*Source: The Ohio State University, sourced originally via a ResearchGate figure.*
 
 <div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
   <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">🧂 Countercurrent Multiplier Gradient Chart</h3>
@@ -191,7 +191,7 @@ Not all nephrons are structurally identical: **cortical nephrons** (~85%, glomer
 At the point where the ascending thick limb of the loop of Henle passes back between its own nephron's afferent and efferent arterioles, two structurally specialized cell populations meet: the **macula densa** (modified tubule epithelial cells, monitoring fluid Na⁺/Cl⁻ concentration as it passes) and **juxtaglomerular (granular) cells** (modified smooth muscle cells in the afferent arteriole wall, secreting renin in response to macula densa signaling or reduced arteriole stretch). This structure (the **juxtaglomerular apparatus**) is the kidney's built-in blood-pressure/filtration-rate sensor and the anatomical starting point of the renin-angiotensin-aldosterone hormonal axis, a direct structural link between kidney anatomy and systemic blood pressure regulation.
 
 ![Cross-section of a nephron and juxtaglomerular apparatus at the vascular pole: macula densa, angiotensin-II-producing granular cells, afferent/efferent arterioles, extraglomerular mesangial cells, parietal epithelium, podocyte foot processes, mesangial cells, basement membrane, Bowman's space, and the proximal tubule.](/ANATOMYPICS/juxtaglomerular-apparatus-macula-densa.jpg)
-*Source: Kris W, Sakai T et al., "Morphological aspects of glomerular function," Proceedings of the 10th International Congress of Nephrology, Vol 1, Baillière Tindall, 1988; user-sourced via a ScienceDirect topic page.*
+*Source: Kris W, Sakai T et al., "Morphological aspects of glomerular function," Proceedings of the 10th International Congress of Nephrology, Vol 1, Baillière Tindall, 1988; sourced via a ScienceDirect topic page.*
 
 ### Renal Blood Supply
 
@@ -202,7 +202,7 @@ Blood flow through the kidney passes through **two** capillary beds in series, a
 Urine draining from collecting ducts passes through the calyces/pelvis into the **ureter** (a muscular tube, peristaltic contraction of its wall, same general smooth-muscle logic as GI peristalsis, see [Human Digestive System](../human-digestive-system/), actively propels urine toward the bladder rather than relying on gravity alone), into the **urinary bladder** (a distensible muscular sac; its wall's **detrusor muscle** contracts to expel urine), through the **urethra**. The ureters, bladder, and proximal urethra are lined by **transitional epithelium**, a specialized stratified epithelium structurally capable of stretching (cells flatten and the apparent layer count decreases as the bladder fills) uniquely suited to an organ whose luminal surface must accommodate large volume changes, unlike any epithelium described on the [Human Digestive System](../human-digestive-system/) page. Urine release (**micturition**) involves an **internal urethral sphincter** (smooth muscle, involuntary) and an **external urethral sphincter** (skeletal muscle, voluntary), the same involuntary/voluntary sphincter pairing pattern seen at the anal canal.
 
 ![Transitional epithelium histology compared between a collapsed (relaxed) and a distended (stretched) urinary bladder wall, each shown as both a real micrograph and a labeled line diagram, cell layers appear taller/more numerous when collapsed and flattened/fewer when stretched.](/ANATOMYPICS/transitional-epithelium-bladder-relaxed-stretched.jpg)
-*Source: user-sourced (originally via a Houston Community College histology lab page). Exact match, directly shows the stretch-dependent flattening described in the text.*
+*Source: (originally via a Houston Community College histology lab page). Exact match, directly shows the stretch-dependent flattening described in the text.*
 
 ## Comparative Structures
 

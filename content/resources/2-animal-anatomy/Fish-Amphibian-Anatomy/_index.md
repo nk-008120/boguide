@@ -109,14 +109,14 @@ Two major skeletal grades: **cartilaginous** (Chondrichthyes: sharks, rays; skel
 In bony fish, all four gill arches on each side are covered by a bony flap, the **operculum**, whose rhythmic movement (paired with mouth opening/closing) actively pumps water across the gills even when the fish is stationary; cartilaginous fish generally lack an operculum and rely more on forward swimming (ram ventilation) or dedicated spiracles.
 
 ![Fish skull and jaw musculature in two configurations (a, b), with the operculum, premaxilla, maxilla, dentary, preopercle, neurocranium, and named jaw/opercular muscles (EP, LAP, AM1/AM2/3, AAP, SH, HYP) labeled.](/ANATOMYPICS/operculum-buccal-pumping-mechanism.jpg)
-*Source: user-sourced (originally attempted via a ScienceDirect topic page). **Mismatch from spec**: this is a fish cranial/jaw musculature diagram (relevant to feeding biomechanics and labels the operculum's bony position) rather than a depiction of the buccal-pump water-flow mechanism itself, no airflow/water-flow arrows are shown.*
+*Source: Not specified*
 
 ### Fish Circulatory Structure
 
 A **two-chambered heart** (one atrium, one ventricle, preceded by a thin-walled collecting chamber, the **sinus venosus**, and followed by an outflow tract, the **conus arteriosus** or **bulbus arteriosus** depending on the group) and a **single circuit**: blood is pumped once, passes through the gills to pick up oxygen, then continues directly to the body before returning to the heart via the sinus venosus. Compare this to the human double-circuit, four-chambered heart on the [Human Circulatory System](../human-circulatory-system/) page. A fish heart only ever pumps blood that is about to lose pressure crossing the gill capillary bed before it reaches the body, a structural limitation double circulation solves.
 
 ![Three panels of a single (mammalian-type, four-chambered) heart through the cardiac cycle: (a) diastole, all chambers relaxed; (b) atrial systole/ventricular diastole; (c) atrial diastole/ventricular systole, with arrows tracing blood flow direction at each stage.](/ANATOMYPICS/heart-chambers-fish-amphibian-human-comparison.jpg)
-*Source: user-sourced (originally via scienceabc.com). **Mismatch from spec**: this shows one heart's cardiac cycle timing (diastole → atrial systole → ventricular systole), not the fish (2-chambered) vs. amphibian (3-chambered) vs. human (4-chambered) structural comparison the text describes, no fish or amphibian heart is shown.*
+*Source: (originally via scienceabc.com)*
 
 ### Fish Osmoregulatory Structure
 
@@ -141,7 +141,7 @@ The first vertebrates with true **tetrapod limbs** (the proximal-bone/distal-bon
 A genuine structural hybrid, often using **three surfaces simultaneously**: **gills** (larval stage, e.g. tadpoles, lost at metamorphosis in most species, a direct structural echo of the fish gill plan above), simple **saclike lungs** (much less internally divided than mammalian lungs, far less surface area, a direct structural explanation for why amphibians can't sustain the metabolic rate of birds/mammals), and **cutaneous respiration** (direct gas exchange across thin, moist, minimally keratinized, highly vascularized skin, meaning amphibian skin must stay permeable and moist, the structural reason amphibians are so vulnerable to desiccation and skin-absorbed toxins). Amphibians additionally lack a diaphragm (unlike the mammalian mechanism on the [Human Respiratory System](../human-respiratory-system/) page) and instead ventilate their lungs by **positive-pressure buccal pumping**: floor-of-mouth movements force air into the lungs, structurally the reverse mechanical strategy to the negative-pressure suction ventilation used by mammals.
 
 ![Frog life cycle: eggs → embryo → tadpole with external gills for breathing → hindlegs appear → front legs appear as the tail shortens (living off food stored in the tail) → young frog → adult frog, illustrating the gill-to-lung transition at metamorphosis.](/ANATOMYPICS/amphibian-life-cycle-gill-to-lung-transition.jpg)
-*Source: user-sourced (originally via a metamorphosis-in-frog PDF). Exact match, explicitly labels the external-gill stage and traces the full metamorphic sequence to the adult (lung-breathing) form.*
+*Source: originally via a metamorphosis-in-frog PDF*
 
 ### Amphibian Circulatory Structure
 

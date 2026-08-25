@@ -33,7 +33,7 @@ where $p^2$ is the predicted frequency of homozygous dominant (AA) individuals, 
 *Source: Nature, Heredity journal (article hdy201620)*
 
 ![The Hardy-Weinberg equation p + q = 1 and p² + 2pq + q² = 1, with a Punnett square showing where each term comes from: crossing allele frequencies p and q against themselves produces pp (p²), pq and pq (2pq), and qq (q²)](/EVOLUTIONPICS/hardy-weinberg-equation-punnett.jpg)
-*Source: user-provided (lumisource.io)*
+*Source: (lumisource.io)*
 
 ### The Five Assumptions
 

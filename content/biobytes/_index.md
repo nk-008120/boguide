@@ -30,17 +30,27 @@ cascade:
   </a>
 </div>
 {{< /tab >}}
-{{< tab name="From Social" >}}
-<div class="social-cards">
-  <a href="https://www.instagram.com/p/Db5O4krk5BR/?img_index=1" target="_blank" rel="noreferrer" class="social-card">
-    <img src="/social/ig-hold-the-dots.jpg" alt="BiOGuide Instagram post: a collage of biology reference material — textbooks, diagrams, Punnett squares, and specimens — around the BiOGuide logo, captioned 'Hold the dots and scroll'" class="social-card-cover" loading="lazy">
-    <div class="social-card-body">
-      <span class="social-card-source">Instagram</span>
-      <p class="social-card-caption">Hold the dots and scroll — a peek at the references and material behind BiOGuide.</p>
-      <span class="btn-outline">View on Instagram →</span>
-    </div>
-  </a>
-</div>
+{{< tab name="From Social" >}} 
+<div class="social-cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; width: 100%;"> 
+<a href="https://instagram.com" target="_blank" rel="noreferrer" class="social-card" style="display: block; text-decoration: none; color: inherit;"> 
+  <img src="/social/ig-hold-the-dots.jpg" alt="BiOGuide Instagram post: a collage of biology reference material" class="social-card-cover" loading="lazy" style="width: 100%; height: auto; display: block;"> 
+  <div class="social-card-body"> 
+  <span class="social-card-source">Instagram</span> 
+  <p class="social-card-caption">Hold the dots and scroll: a peek at BiOGuide.</p> 
+  <span class="btn-outline">View on Instagram →</span> 
+  </div> 
+</a> 
+<a href="https://instagram.com" target="_blank" rel="noreferrer" class="social-card" style="display: block; text-decoration: none; color: inherit;"> 
+        <img src="/ig-swipeinside.jpg" alt="BiOGuide Instagram post: A collage of features" class="social-card-cover" loading="lazy" style="width: 100%; height: auto; display: block;"> 
+        <div class="social-card-body"> 
+            <span class="social-card-source">Instagram</span> 
+            <p class="social-card-caption">A peek at the references and material behind BiOGuide.</p> 
+            <span class="btn-outline">View on Instagram →</span> 
+        </div> 
+</a> 
+
+</div> 
 {{< /tab >}}
+
 {{< /tabs >}}
 </div>

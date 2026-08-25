@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="100" fill="#d4ecd9"/>
+  <g transform="translate(100,105)">
+    <!-- Leaf -->
+    <path d="M0,40 L0,-10 Q0,-55 40,-55 Q0,-20 0,-10 Z" fill="#4a9e5c" stroke="#3a7e4a" stroke-width="1.5"/>
+    <path d="M0,40 L0,-10 Q0,-55 -40,-55 Q0,-20 0,-10 Z" fill="#5db86e" stroke="#4a9e5c" stroke-width="1.5"/>
+    <line x1="0" y1="40" x2="0" y2="-45" stroke="#3a7e4a" stroke-width="2"/>
+    <path d="M0,-15 Q-15,-25 -25,-20" fill="none" stroke="#3a7e4a" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M0,-25 Q15,-35 25,-30" fill="none" stroke="#3a7e4a" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M0,-35 Q-12,-42 -18,-38" fill="none" stroke="#3a7e4a" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+</svg>

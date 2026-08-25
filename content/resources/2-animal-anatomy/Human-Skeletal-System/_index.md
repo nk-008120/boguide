@@ -139,7 +139,7 @@ Bone is never metabolically static: osteoblast-driven deposition and osteoclast-
 - **Lower limb**, femur (thigh, the longest and strongest bone in the body), patella (sesamoid bone within the quadriceps tendon), tibia and fibula (leg, unlike the radius/ulna, these do not rotate around each other), tarsals (7 ankle bones, including the talus and calcaneus/heel bone), metatarsals (5), phalanges (14).
 
 ![Full human skeleton with the axial skeleton (skull, hyoid, vertebrae, sternum, ribs, sacrum, coccyx) and appendicular skeleton (clavicle, scapula, humerus, radius, ulna, carpals/metacarpals/phalanges, os coxa, femur, patella, tibia, fibula, tarsals/metatarsals/phalanges) labeled and color-coded.](/ANATOMYPICS/human-skeleton-axial-appendicular-labeled.jpg)
-*Source: sourced textbook-style figure. Direct match, cleanly separating and labeling every bone group discussed above.*
+*Source: sourced textbook-style figure. Cleanly separating and labeling every bone group discussed above.*
 
 ### Joint Classification
 
@@ -152,7 +152,7 @@ Bone is never metabolically static: osteoblast-driven deposition and osteoclast-
 **Synovial joint structure**, in more detail than the classification table conveys: bone ends are capped with **articular (hyaline) cartilage** (smooth, load-distributing, avascular, nourished by synovial fluid rather than blood vessels), enclosed by a **joint (articular) capsule**: an outer fibrous layer continuous with the periosteum, providing mechanical stability, and an inner **synovial membrane**, which secretes **synovial fluid** (lubricates the joint and nourishes the articular cartilage). Some synovial joints additionally contain **menisci** (fibrocartilage pads improving surface fit and shock absorption, e.g. the knee) and nearby **bursae** (fluid-filled sacs reducing friction between a tendon and bone, e.g. around the shoulder).
 
 ![Generic synovial joint cross-section: two bone ends capped with articular cartilage, enclosed by an articular capsule and synovial membrane, with the joint cavity between them containing synovial fluid.](/ANATOMYPICS/synovial-joint-structure.jpg)
-*Source: sourced textbook-style figure. Clean match for the capsule/synovial membrane/articular cartilage/joint cavity structure; this particular crop doesn't show a meniscus or bursa.*
+*Source: Clean match for the capsule/synovial membrane/articular cartilage/joint cavity structure; this particular crop doesn't show a meniscus or bursa.*
 
 Synovial joints are further classified by articulating-surface shape, each permitting a specific, named set of movements:
 

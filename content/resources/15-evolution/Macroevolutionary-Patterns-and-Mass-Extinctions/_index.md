@@ -54,7 +54,7 @@ A **mass extinction** is a geologically rapid, global loss of a large proportion
 | End-Cretaceous (K-Pg) | ~66 mya | ~76% (including non-avian dinosaurs) | Chicxulub asteroid impact, evidenced by a global iridium-enriched sediment layer |
 
 ![Geologic timescale with the "big five" mass extinctions (Ordovician, Devonian, Permian, Triassic, K-T) marked alongside their estimated death rates, the same reference timeline introduced in History of Life & Major Transitions, reused here for its mass-extinction detail](/EVOLUTIONPICS/geologic-timescale-milestones.jpg)
-*Source: user-provided (geologyscience.com), also used on [History of Life: Origin & Major Transitions](../history-of-life-origin-and-major-transitions/)*
+*Source: (geologyscience.com), also used on [History of Life: Origin & Major Transitions](../history-of-life-origin-and-major-transitions/)*
 
 Mass extinctions are macroevolutionarily significant beyond the immediate loss itself because they characteristically clear ecological space, releasing surviving lineages from competitive and predatory pressure that had previously constrained their diversification: the K-Pg extinction's removal of non-avian dinosaurs is the standard example, widely credited with permitting the subsequent adaptive radiation of placental mammals into the large-bodied, diurnal, and specialized ecological niches dinosaurs had previously occupied, a pattern only fully visible by comparing fossil mammal diversity and body size immediately before versus after the event.
 

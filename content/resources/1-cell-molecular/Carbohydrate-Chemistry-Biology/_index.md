@@ -82,7 +82,7 @@ Beyond glucose homopolymers, **glycosaminoglycans (GAGs)**, long, unbranched, hi
 
 **Static**
 
-*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Two items ended up with content-mismatched sourced images, see the inline notes: the "glucose" ring-form image is actually fructose, and the "amylose vs. cellulose" image is actually amylose vs. amylopectin. Neither a glucose-specific ring-form image nor a genuine amylose-vs-cellulose comparison is currently placed.)*
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
 
 ## Practice Problems
 

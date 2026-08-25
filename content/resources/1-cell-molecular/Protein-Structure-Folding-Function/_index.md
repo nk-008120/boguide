@@ -156,7 +156,7 @@ Structural role correlates strongly with secondary-structure composition: **α-k
 
 **Static**
 
-*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. One item (a primary-structure diagram showing a peptide bond chain with a disulfide cross-link) has no sourced image yet: the original candidate, `MCBBPICS/secondary.png`, turned out to depict secondary structure instead and was placed there. Still needs sourcing.)*
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. One item (a primary-structure diagram showing a peptide bond chain with a disulfide cross-link) has no sourced image yet: Still needs sourcing.)*
 
 ## Practice Problems
 

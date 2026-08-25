@@ -48,10 +48,6 @@ A core theoretical problem in signaling: since signalers can benefit from mislea
 
 **Ritualization** is the evolutionary process by which a non-signaling behavior (often one with a direct mechanical or preparatory function) becomes exaggerated, simplified, and stereotyped into a dedicated signal. The classic case is **agonistic display evolving from intention movements**: a bird's wing-raising as literal preparation to fly away from a threat becomes, over evolutionary time, an exaggerated, stereotyped "appeasement" or "threat" display used communicatively, disconnected from an actual imminent flight. Ritualized displays typically show three changes relative to their non-signaling ancestral behavior: **exaggeration** (increased amplitude/duration), **stereotypy** (reduced variability, becoming more fixed-action-pattern-like, see [Mechanisms of Behavior](../mechanisms-of-behavior/)), and **emancipation** (partial independence from the original motivational/mechanical context that produced the ancestral behavior).
 
-> **Flagged, likely not usable:** the sourced image (`ritualization-intention-movement-sequence.png`, from a ResearchGate figure captioned "Boyer & Liénard: a simplified model of action ritualization in cultural rituals") is a cognitive-science flowchart about *human* ritual behavior (goal-demotion, working-memory swamping, OCD-adjacent action-parsing), a completely different field from the animal-behavior "ritualization" concept this section teaches (an ancestral behavior evolving into a stereotyped signal). It shares only the word "ritualization," not the concept. Not inserted inline to avoid teaching the wrong idea under a matching heading, flagging here instead of silently dropping it, in case a different image should be sourced for this concept.
-
-
-
 ### Alarm Calls
 
 Alarm calls are a heavily tested case because they intersect signaling, kin selection (see [Kin Selection, Altruism & Eusociality](../kin-selection-altruism-eusociality/)), and honest-signal theory at once. **Belding's ground squirrels (*Urocitellus beldingi*)** give alarm calls at personal risk (the calling individual becomes more conspicuous to the predator), and Paul Sherman's field studies found calling is more frequent when close kin are nearby, direct field evidence for a kin-selected explanation of a costly signal. **Vervet monkeys (*Chlorocebus pygerythrus*)** take alarm calling further into **referential signaling**: Dorothy Cheney and Robert Seyfarth's playback experiments showed vervets give acoustically distinct calls for different predator classes (leopard, eagle, snake), and each call type triggers a *different, appropriate* evasive response in listeners (climbing a tree for the leopard call, looking up for the eagle call, looking down for the snake call) even with no predator actually present, evidence the calls function referentially rather than as a single generic "danger" signal.
@@ -87,7 +83,7 @@ Alarm calls are a heavily tested case because they intersect signaling, kin sele
 
 {{< iframe src="/vervet-alarm-call-matcher.html" title="Vervet Alarm Call Playback Matcher" height="360px" >}}
 
-**Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Two exceptions: the ritualization sequence diagram was sourced but flagged as unusable (see the note under "Ritualization" above); the modality comparison chart was not sourced and remains unillustrated.)*
+**Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
 
 {{< youtube q8ZG8Dpc8mM >}}
 

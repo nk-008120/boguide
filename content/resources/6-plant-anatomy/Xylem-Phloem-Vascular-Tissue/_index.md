@@ -59,7 +59,7 @@ Xylem and phloem are not scattered independently through ground tissue but organ
 | Amphicribral | Phloem surrounds a central strand of xylem | Most fern stems/rhizomes |
 
 ![Vascular bundle cross-sections drawn to shape for radial, conjoint-collateral-open, conjoint-collateral-closed, conjoint-bicollateral, concentric-amphicribral, and concentric-amphivasal arrangements, xylem/phloem/cambium all labeled.](/PLANTANATPICS/open-vs-closed-vascular-bundle.jpg)
-*Source: user-sourced (Facebook group post)*
+*Source:*
 
 Collateral bundles are further split by whether a strip of meristematic **vascular cambium** persists between the xylem and phloem: an **open** bundle retains this cambium and can therefore undergo secondary growth (characteristic of dicots), while a **closed** bundle has no cambium between xylem and phloem and cannot thicken further after primary growth (characteristic of monocots), this open/closed distinction is the direct structural reason monocots, as a rule, lack secondary growth and dicots, as a rule, have it, developed further on [Monocot vs Dicot Comparative Anatomy](../monocot-dicot-comparative-anatomy/) and [Secondary Growth & Wood Anatomy](../secondary-growth-wood-anatomy/).
 

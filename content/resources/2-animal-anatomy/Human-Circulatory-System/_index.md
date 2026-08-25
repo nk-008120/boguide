@@ -36,7 +36,7 @@ Two thin-walled atria (receiving chambers) sit above two thick-walled ventricles
 The AV valves are anchored by **chordae tendineae** (fibrous cords) to **papillary muscles** projecting from the ventricular wall. This structural anchoring prevents the AV valve cusps from inverting (prolapsing) back into the atrium under the high pressure generated during ventricular contraction, a direct structure-function point worth stating explicitly. The **left ventricle wall is markedly thicker than the right**: the right ventricle only pumps blood to the nearby lungs (pulmonary circuit, low pressure/resistance), while the left ventricle pumps blood through the entire systemic circuit (high pressure/resistance). Myocardial thickness scales directly with the pressure each chamber must generate.
 
 ![Four-chambered heart cross-section labeled with all four valves (tricuspid, mitral, and both semilunar valves), chordae tendineae, the septum, and the great vessels (aorta, pulmonary arteries/veins, venae cavae).](/ANATOMYPICS/four-chambered-heart-valves-labeled.webp)
-*Source: user-sourced (originally via Wikipedia "Chordae tendineae"). Left/right ventricle wall-thickness contrast is visible at a glance via the septum; chordae tendineae are labeled but papillary muscles themselves are not separately called out in this particular figure.*
+*Source: (originally via Wikipedia "Chordae tendineae"). Left/right ventricle wall-thickness contrast is visible at a glance via the septum; chordae tendineae are labeled but papillary muscles themselves are not separately called out in this particular figure.*
 
 ### Cardiac Conduction System
 
@@ -252,7 +252,7 @@ Blood is connective tissue (see [Body Plans](../body-plans/)): cells suspended i
 - **Leukocytes (white blood cells)** (<1% of volume): five types, structurally divided into granulocytes (visible cytoplasmic granules) and agranulocytes: **neutrophils** (granulocyte, most abundant, first responders, phagocytic), **eosinophils** (granulocyte, parasite defense, allergic response), **basophils** (granulocyte, least abundant, release histamine), **lymphocytes** (agranulocyte, B cells, T cells, the basis of adaptive immunity), **monocytes** (agranulocyte, largest, differentiate into macrophages in tissue).
 
 ![All five leukocyte types shown as real blood-smear micrographs (whole field, nucleus close-up, cytoplasm close-up, whole-cell close-up) for neutrophil, eosinophil, basophil, lymphocyte, and monocyte.](/ANATOMYPICS/blood-smear-erythrocytes-leukocytes.webp)
-*Source: user-sourced (originally via a ResearchGate figure). Excellent match for the five leukocyte types and their distinguishing nuclear/cytoplasmic morphology; erythrocytes are visible in the background of each smear field but aren't separately labeled or the focus of the image.*
+*Source: (originally via a ResearchGate figure). Shows the five leukocyte types and their distinguishing nuclear/cytoplasmic morphology; erythrocytes are visible in the background of each smear field but aren't separately labeled or the focus of the image.*
 
 - **Platelets (thrombocytes)**: not whole cells but small membrane-bound fragments budded off large bone-marrow cells (megakaryocytes), functioning in clot formation.
 
@@ -265,19 +265,19 @@ Three vessel types, differentiated by the proportion of their wall dedicated to 
 - **Capillaries**: wall is a single layer of simple squamous endothelium (see [Body Plans](../body-plans/)) and a basement membrane, nothing else, the only vessel type where diffusion exchange with surrounding tissue actually happens; three structural subtypes exist (continuous: tightest, most common; fenestrated, pores, found where filtration is high, e.g. the kidney glomerulus, see [Human Excretory System](../human-excretory-system/); sinusoidal: largest gaps, found in the liver/bone marrow, permitting exchange of cells and large proteins).
 
 ![Tunica intima/media/externa compared across a large vein, a medium-sized vein (with closed valves shown, plus a valve-open/closed longitudinal inset), and a venule.](/ANATOMYPICS/artery-vein-capillary-wall-comparison.jpg)
-*Source: user-sourced (originally via Lumen Learning, SUNY A&P2). **Mismatch from spec**: this compares three calibers of vein (large vein / medium vein / venule), not the artery-vs-vein-vs-capillary comparison described in the text, still useful for showing the three tunic layers and venous valve structure, but doesn't show an artery or a capillary at all.*
+*Source: (originally via Lumen Learning, SUNY A&P2).*
 
 ### Lymphatic System
 
 Structurally paired with the circulatory system: capillary filtration pushes slightly more fluid out of blood capillaries than is reabsorbed, and this excess interstitial fluid is collected by blind-ended **lymphatic capillaries** (even more permeable than blood capillaries, with overlapping endothelial flaps acting as one-way mini-valves), which converge into larger lymphatic vessels (also valved, like veins, and similarly reliant on skeletal muscle compression for flow, since lymph has no dedicated pump).
 
 ![A lymphatic capillary showing overlapping endothelial cells forming one-way mini-valves (open/closed), anchoring fibers, interstitial fluid entering, and the direction of lymph flow.](/ANATOMYPICS/lymphatic-capillary-lymph-node-structure1.jpg)
-*Source: user-sourced (originally via basicmedicalkey.com). Exact match for the blind-ended, valved lymphatic capillary structure.*
+*Source:(originally via basicmedicalkey.com). Exact match for the blind-ended, valved lymphatic capillary structure.*
 
 Lymph passes through **lymph nodes** (encapsulated tissue packed with lymphocytes and macrophages, filtering the fluid and mounting immune responses against anything collected from the tissues) before the largest lymphatic vessels return the fluid to the venous circulation near the heart (via the thoracic duct into the left subclavian vein, for most of the body).
 
 ![Lymph node cross-section showing the capsule, trabeculae, cortical/medullary sinuses, afferent lymph vessels entering and an efferent lymph vessel leaving at the hilum (alongside the blood vessel), with a zoomed inset showing lymphocytes in the slow-flowing lymph among reticular fibers.](/ANATOMYPICS/lymphatic-capillary-lymph-node-structure2.png)
-*Source: user-sourced (originally via Wikipedia "Lymph node"). Exact match for the filtering architecture described in the text.*
+*Source: (originally via Wikipedia "Lymph node"). Exact match for the filtering architecture described in the text.*
 
 The **spleen** (filters blood directly, rather than lymph; removes aged erythrocytes, houses immune cells) is structurally part of this same lymphoid tissue system.
 

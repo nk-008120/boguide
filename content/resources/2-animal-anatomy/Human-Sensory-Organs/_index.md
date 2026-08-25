@@ -33,14 +33,14 @@ The retina is structurally "inverted" relative to what intuition suggests: light
 Two photoreceptor types, with a direct structure-function distribution pattern: **rods** (more numerous, ~120 million, distributed across the peripheral retina, contain the single pigment rhodopsin, highly sensitive, good for dim-light/monochrome vision but low visual acuity since many rods converge onto a single bipolar/ganglion cell) and **cones** (~6 million, three types by peak wavelength sensitivity, enabling color vision via the relative activation across the three types, concentrated at the **fovea centralis**, within the **macula lutea**, where a much lower convergence ratio, approaching 1:1 in the very center, produces the eye's point of sharpest vision).
 
 ![Whole-eye view showing the fovea, then a zoomed cross-section of the retinal layers from the retinal pigment epithelium (RPE) through outer segments, rods and cones (ONL), horizontal cells (OPL), bipolar and Müller cells (INL), amacrine cells (IPL), to ganglion cells (GCL) and the optic nerve fiber layer, with an arrow showing incoming light entering from the ganglion-cell side and traveling through the layers to reach the photoreceptors.](/ANATOMYPICS/retinal-layers-light-vs-signal-path.webp)
-*Source: user-sourced figure. Exact match, directly visualizes the light path running opposite to the neural signal path described in the text.*
+*Source: Unkown. Directly visualizes the light path running opposite to the neural signal path described in the text.*
 
 ### Accommodation
 
 **Accommodation** is the structural mechanism by which the eye adjusts focus for near vs. far objects, worth stating mechanistically rather than as a single fact: the lens is elastic and, left completely unconstrained, would adopt a more rounded (higher refractive power) shape; at rest (viewing distant objects) the ciliary muscle is relaxed, the ciliary body's diameter is at its widest, and zonule fibers are taut, pulling the lens flatter (lower power). For near vision, the ciliary muscle contracts, reducing the ciliary body's effective diameter, releasing tension on the zonule fibers, and allowing the lens to round up (higher power) via its own elasticity, meaning ciliary muscle contraction, somewhat counterintuitively, is what enables near focus, not far focus.
 
 ![Near vision (a): ciliary muscle contracted, zonular fibres relaxed, lens accommodated to a more spherical, higher-power shape, focusing the image on the photoreceptors. Far vision (b): ciliary muscle relaxed, zonular fibres under tension, lens flatter and lower-power.](/ANATOMYPICS/accommodation-mechanism-ciliary-muscle.jpg)
-*Source: user-sourced (originally via an NCBI Bookshelf figure). Exact match, directly visualizes the counterintuitive contraction-enables-near-vision mechanism described in the text.*
+*Source: (originally via an NCBI Bookshelf figure). Directly visualizes the counterintuitive contraction-enables-near-vision mechanism described in the text.*
 
 <div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
   <h3 style="margin:0 0 0.8rem 0; color:#1a472a;">👁️ Accommodation Simulator</h3>
@@ -123,7 +123,7 @@ Six extraocular muscles move each eye: four **rectus muscles** (superior, inferi
 - **Inner ear**: a fluid-filled system embedded in temporal bone, comprising the **cochlea** (hearing) and the **vestibular apparatus** (balance), both housed within a bony labyrinth lined by a membranous labyrinth; the two labyrinths are separated by **perilymph** (outer, similar in composition to CSF/extracellular fluid) while the membranous labyrinth itself contains **endolymph** (inner, unusually high in K⁺, more like intracellular fluid), this ionic difference is directly relevant to how hair cells (below) generate a signal.
 
 ![Full labeled ear cross-section: outer ear (helix, scapha, triangular fossa, antihelix, concha, auricular lobule, external acoustic meatus/ear canal), middle ear (malleus, incus, stapes, tympanic membrane, tympanic cavity, Eustachian tube), and inner ear (semicircular canals, cochlea, vestibular nerve, cochlear nerve).](/ANATOMYPICS/ear-cross-section-outer-middle-inner.jpg)
-*Source: user-sourced figure*
+*Source:*
 
 ### Cochlear Structure
 

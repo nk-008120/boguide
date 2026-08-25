@@ -43,7 +43,7 @@ Three motor protein families, each specific to one filament type and each moving
 - **Dynein** moves along microtubules toward the minus end: **retrograde** transport (back toward the cell body/MTOC), and also the motor responsible for the coordinated beating of cilia and flagella, sliding adjacent microtubule doublets in the axoneme past each other.
 
 ![Dynein and kinesin bound to the same microtubule, oriented toward opposite ends: dynein's head and tail domains face the minus end, kinesin's head and tail domains face the plus end](/MCBBPICS/kinesin-dynein-directionality.png)
-*Source: user-sourced (unspecified)*
+*Source: (unspecified)*
 
 All three convert the chemical energy of ATP hydrolysis into a cycle of conformational changes (a "power stroke") that walks the motor along its filament track, and all three can carry cargo (vesicles, organelles, chromosomes via kinetochore-associated dynein) attached via adaptor proteins: the specific *direction* of net cargo movement in a cell is therefore determined by which motor is attached, not by the track alone.
 

@@ -20,7 +20,7 @@ The leaf is the plant's primary photosynthetic organ, and its internal structure
 A typical leaf has a flattened **blade (lamina)** attached to the stem by a **petiole** (absent in sessile leaves); some species also bear paired **stipules** at the petiole base. Leaves are **simple** (one undivided blade) or **compound** (blade divided into leaflets, each resembling a small simple leaf but lacking its own axillary bud. The presence of an axillary bud at the base is the definitive structural test distinguishing a compound leaf's leaflet from a simple leaf on a branch). Venation pattern is a fast, reliable practical-identification marker: **parallel venation** (major veins run alongside each other along the blade's length, connected by fine cross-veins, characteristic of monocots) versus **reticulate (net) venation** (veins branch and rejoin repeatedly in a network, characteristic of dicots, itself subdivided into **pinnate** (one central midrib with lateral veins branching off) and **palmate** (several major veins radiating from a single point at the blade base)).
 
 ![Leaf venation types illustrated: pinnate, palmate, and reticulate (the three most relevant here), alongside dichotomous, cross-venulate, arcuate, longitudinal, parallel, and rotate venation for broader context.](/PLANTANATPICS/parallel-vs-reticulate-venation.jpg)
-*Source: user-sourced (Facebook educational post)*
+*Source:*
 
 ### Mesophyll Organization
 

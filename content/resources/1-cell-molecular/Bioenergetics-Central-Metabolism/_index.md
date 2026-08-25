@@ -25,7 +25,7 @@ Cellular reactions proceed only if net **ΔG < 0** (exergonic). Many biosyntheti
 Net reaction: one glucose (6C) is split and oxidised to **two pyruvate** (3C each), with net production of **2 ATP** (substrate-level phosphorylation: direct enzymatic phosphate transfer to ADP, no membrane or electron transport chain involved) and **2 NADH** per glucose. Glycolysis has an energy-investment phase (2 ATP consumed, phosphorylating the sugar to trap it in the cell and destabilise it for cleavage) followed by an energy-payoff phase (4 ATP produced, net +2). It requires no oxygen and no mitochondria, which is why it is universal across nearly all known life, including strict anaerobes.
 
 ![Glycolysis pathway, all ten steps and enzymes numbered from glucose to 2 pyruvate, with the net-output boxes (2 ATP, 2 pyruvate, 2 NADH) shown at the two ATP-generating steps](/MCBBPICS/glycolysis-net-summary.jpg)
-*Source: user-sourced via Instagram (biology.ocean)*
+*Source: sourced via Instagram (biology.ocean)*
 
 **Regulation**: the rate-limiting, committed step is catalysed by **phosphofructokinase-1 (PFK-1)**, allosterically inhibited by high ATP/citrate (signalling ample energy already available) and activated by AMP/ADP (signalling energy demand), a classic feedback-regulation point worth knowing by name even without the full kinetic mechanism.
 

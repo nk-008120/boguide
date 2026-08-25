@@ -38,7 +38,7 @@ The **RNA world hypothesis** addresses the specific "chicken-and-egg" problem of
 *Source: Biology LibreTexts*
 
 ![Primary vs. secondary endosymbiosis compared side by side: primary endosymbiosis (top) shows an ancestral host cell, already containing a mitochondrion and nucleus, engulfing a cyanobacterium to produce a chloroplast bounded by two membranes; secondary endosymbiosis (bottom) shows a different ancestral host cell engulfing that entire photosynthetic eukaryote (alga), producing a chloroplast bounded by four membranes and a nucleomorph (the alga's degenerate, vestigial nucleus) retained between the membrane layers](/EVOLUTIONPICS/primary-secondary-endosymbiosis-membranes.png)
-*Source: user-provided (ScienceDirect Topics page, "Endosymbiosis")*
+*Source: (ScienceDirect Topics page, "Endosymbiosis")*
 
 Mitochondrial acquisition is generally considered to have occurred once, in a single ancestor of all mitochondria-bearing eukaryotes (explaining why even eukaryotic lineages that have since lost or drastically reduced their mitochondria retain vestigial mitochondrial-derived organelles), while chloroplast acquisition via primary endosymbiosis is more narrowly restricted to the Archaeplastida lineage; other photosynthetic eukaryotes (e.g. some SAR-clade algae) acquired plastids instead via **secondary endosymbiosis**, engulfing an already-eukaryotic, chloroplast-bearing alga rather than a cyanobacterium directly, which is why some algal plastids show three or four membranes rather than two.
 
@@ -54,7 +54,7 @@ Multicellularity (the transition from a single free-living cell to an organism c
 The **geologic timescale** (dated by radiometric methods, most commonly measuring the decay of a radioactive parent isotope to a stable daughter isotope with a known half-life) provides the absolute dates that anchor every transition above and every phylogeny's branch lengths (see the molecular clock discussion in [Molecular Systematics](../../4-biosystematics/molecular-systematics/)). Key milestones worth holding in sequence: first prokaryotic life (~3.5 billion years ago (bya), evidenced by stromatolites, layered sedimentary structures built by cyanobacterial mats); the **Great Oxidation Event** (~2.4 bya, atmospheric oxygen accumulation from cyanobacterial photosynthesis, which both enabled aerobic mitochondrial metabolism and was toxic to many contemporary anaerobic lineages); first eukaryotes (~1.8–2 bya, following mitochondrial endosymbiosis); the **Cambrian explosion** (~541 million years ago (mya), a geologically rapid diversification of nearly all major extant animal phyla's body plans, discussed further in [Macroevolutionary Patterns & Mass Extinctions](../macroevolutionary-patterns-and-mass-extinctions/)); and the first land plants and animals (~470–430 mya).
 
 ![Geologic timescale from the Hadean (4540 mya, Earth's formation) through the Archean and Proterozoic (bacteria, algae, jellyfish) to the Phanerozoic eon's Paleozoic, Mesozoic, and Cenozoic eras, with periods/epochs and their defining biological milestones labeled (earliest land animals in the Silurian, first seed plants in the Devonian, first dinosaurs in the Triassic, first birds in the Jurassic, rise of mammals in the Tertiary); the "big five" mass extinctions (Ordovician, Devonian, Permian, Triassic, K-T) are marked alongside their estimated death rates](/EVOLUTIONPICS/geologic-timescale-milestones.jpg)
-*Source: user-provided (geologyscience.com)*
+*Source: (geologyscience.com)*
 
 ## Comparative Structures
 
@@ -78,7 +78,7 @@ The **geologic timescale** (dated by radiometric methods, most commonly measurin
 
 **Interactive**
 
-- **Endosymbiosis evidence checklist tool (HTML/JS, no new library)**, the user is presented with an unlabeled organelle and a set of candidate evidence lines (membrane count, DNA shape, ribosome size, division mechanism), checking off which apply to build up the case for bacterial origin piece by piece rather than being told the conclusion first.
+- **Endosymbiosis evidence checklist tool (HTML/JS, no new library)**, the s is presented with an unlabeled organelle and a set of candidate evidence lines (membrane count, DNA shape, ribosome size, division mechanism), checking off which apply to build up the case for bacterial origin piece by piece rather than being told the conclusion first.
 
 {{< iframe src="/endosymbiosis-evidence-checklist.html" title="Endosymbiosis evidence checklist" height="440px" >}}
 

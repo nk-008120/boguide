@@ -79,7 +79,7 @@ Nucleotides are joined by **phosphodiester bonds**: the 5′-phosphate of one nu
 
 **Static**
 
-*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Two items are not yet illustrated: a nucleotide structure diagram, the sourced candidate for this slot, `nucleotide-structure-diagram.jpg`, turned out to duplicate the ribose-vs-deoxyribose comparison already placed above rather than showing a full base+sugar+phosphate nucleotide, so it was not inserted (see `image-sources.md`), and a phosphodiester backbone/5′→3′ directionality diagram, for which no image was sourced this round.)*
+*(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Two items are not yet illustrated: a nucleotide structure diagram, the sourced candidate for this slot, `nucleotide-structure-diagram.jpg`, turned out to duplicate the ribose-vs-deoxyribose comparison already placed above rather than showing a full base+sugar+phosphate nucleotide, so it was not inserted (see `image-sources.md`), and a phosphodiester backbone/5′→3′ directionality diagram, for which no image was sourced yet.)*
 
 ## Practice Problems
 

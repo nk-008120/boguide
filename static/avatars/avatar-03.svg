@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="100" fill="#fde8d8"/>
+  <g transform="translate(100,100)">
+    <!-- Butterfly -->
+    <ellipse cx="0" cy="0" rx="3" ry="28" fill="#5c3d1a" stroke="#4a2f12" stroke-width="1"/>
+    <!-- Left wings -->
+    <path d="M-3,-15 Q-45,-50 -35,-10 Q-30,5 -3,0 Z" fill="#e07b3c" stroke="#c5682e" stroke-width="1.5"/>
+    <path d="M-3,0 Q-35,5 -30,25 Q-25,40 -3,15 Z" fill="#e8984f" stroke="#d4823a" stroke-width="1.5"/>
+    <circle cx="-22" cy="-18" r="5" fill="#fde8d8" opacity="0.6"/>
+    <circle cx="-18" cy="14" r="4" fill="#fde8d8" opacity="0.6"/>
+    <!-- Right wings -->
+    <path d="M3,-15 Q45,-50 35,-10 Q30,5 3,0 Z" fill="#e07b3c" stroke="#c5682e" stroke-width="1.5"/>
+    <path d="M3,0 Q35,5 30,25 Q25,40 3,15 Z" fill="#e8984f" stroke="#d4823a" stroke-width="1.5"/>
+    <circle cx="22" cy="-18" r="5" fill="#fde8d8" opacity="0.6"/>
+    <circle cx="18" cy="14" r="4" fill="#fde8d8" opacity="0.6"/>
+    <!-- Antennae -->
+    <path d="M-1,-28 Q-15,-48 -18,-50" fill="none" stroke="#5c3d1a" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M1,-28 Q15,-48 18,-50" fill="none" stroke="#5c3d1a" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="-18" cy="-50" r="2.5" fill="#5c3d1a"/>
+    <circle cx="18" cy="-50" r="2.5" fill="#5c3d1a"/>
+  </g>
+</svg>

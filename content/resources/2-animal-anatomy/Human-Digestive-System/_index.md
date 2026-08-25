@@ -44,7 +44,7 @@ Grossly divided into the **cardia** (adjacent to the LES), **fundus** (superior 
 | G cells | Base of gland (pyloric region) | Gastrin (hormone, into blood, not the lumen) | Stimulates parietal cell HCl secretion |
 
 ![A gastric (oxyntic) gland in cross-section, from the mucus-layer opening down through surface mucus cells, mucus neck cells, parietal cells, an endocrine cell, to chief cells at the base.](/ANATOMYPICS/gastric-gland-four-cell-types.jpg)
-*Source: user-sourced (originally attempted via a ScienceDirect topic page). Shows all four cell types from the table above, though the endocrine cell is labeled generically rather than specifically as a "G cell."*
+*Source: (originally attempted via a ScienceDirect topic page). Shows all four cell types from the table above, though the endocrine cell is labeled generically rather than specifically as a "G cell."*
 
 <div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
   <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:0.6rem;">
@@ -136,10 +136,10 @@ Three regions with distinguishing structural features, worth naming individually
 Absorptive surface amplification, structurally layered: **plicae circulares** (circular mucosal/submucosal folds, visible grossly) → **villi** (finger-like mucosal projections, each containing a capillary network for nutrient absorption and a central lymphatic **lacteal** for fat absorption) → **microvilli** (brush border on individual absorptive epithelial cells). Between villi, the mucosa dips into **crypts of Lieberkühn**, containing proliferative stem cells (replenishing the rapidly turned-over epithelium) and secretory cells.
 
 ![Small/large intestine histology: the plicae circulares→villi→microvilli surface-amplification hierarchy, then four real histology samples side by side, duodenum (with Brunner's glands visible in the submucosa), jejunum (villi, lamina propria, goblet cells), ileum (a Peyer's patch clearly circled), and large intestine (goblet cells of the tubular gland, no villi).](/ANATOMYPICS/small-intestine-duodenum-jejunum-ileum-comparison.gif)
-*Source: user-sourced (originally via ditki.com). Excellent match, directly shows each region's unique distinguishing marker (Brunner's glands, Peyer's patch) named in the text, side by side with the absorptive-hierarchy diagram.*
+*Source: (originally via ditki.com). Excellent match, directly shows each region's unique distinguishing marker (Brunner's glands, Peyer's patch) named in the text, side by side with the absorptive-hierarchy diagram.*
 
 ![A single villus in cross-section: epithelium (absorptive/goblet/enteroendocrine cells), lamina propria, a central lacteal, and a surrounding blood capillary network fed by an arteriole and drained by a venule, with a lymph vessel alongside.](/ANATOMYPICS/villus-microvillus-lacteal-structure.jpg)
-*Source: user-sourced (originally attempted via a ScienceDirect topic page). Exact match, the lacteal and capillary network are both clearly shown and labeled.*
+*Source: (originally attempted via a ScienceDirect topic page). Exact match, the lacteal and capillary network are both clearly shown and labeled.*
 
 ### Large Intestine
 
@@ -153,7 +153,7 @@ Begins at the **cecum** (a blind pouch, bearing the **vermiform appendix**, lymp
 The functional and structural unit is the **hepatic lobule**: a roughly hexagonal arrangement of **hepatocyte** plates radiating from a central vein, with a **portal triad** (hepatic artery branch, hepatic portal vein branch, bile duct branch) at each of the hexagon's corners. Blood from both the hepatic artery (oxygenated, ~25% of liver blood flow) and the hepatic portal vein (nutrient-rich, deoxygenated, draining the GI tract, ~75% of flow, meaning nearly everything absorbed by the small intestine passes through the liver before reaching general circulation) mixes and flows through **sinusoids** (large, fenestrated capillary-like channels, see [Human Circulatory System](../human-circulatory-system/)) past hepatocyte plates toward the central vein. This is the reverse direction to bile flow, which moves from hepatocytes into small **bile canaliculi** between cells, then outward to the bile duct at the portal triad. **Kupffer cells** (specialized resident macrophages) line the sinusoids, filtering the blood of pathogens/debris, a direct immune function tied to the liver's position downstream of the entire GI tract's absorbed contents.
 
 ![Hepatic lobule structure zoomed from the whole liver down to a single lobule: central vein, radiating plates of hepatocytes, sinusoids, and the portal triad (portal venule, portal arteriole, bile duct) at the lobule's edges, with blood flow arrows from the portal triad toward the central vein.](/ANATOMYPICS/hepatic-lobule-portal-triad-blood-bile-flow.webp)
-*Source: user-sourced (originally via storymd.com). Blood flow direction (portal triad → central vein) is clearly shown via the interlobular vein arrow; bile canaliculus flow direction (the opposite way, toward the bile duct) isn't separately arrowed in this crop.*
+*Source: (originally via storymd.com). Blood flow direction (portal triad → central vein) is clearly shown via the interlobular vein arrow; bile canaliculus flow direction (the opposite way, toward the bile duct) isn't separately arrowed in this crop.*
 
 ### Gallbladder and Pancreas
 

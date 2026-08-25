@@ -50,7 +50,7 @@ graph TD;
 ```
 
 ![The positive feedback loop of childbirth: (1) the baby's head pushes against and stretches the cervix; (2) nerve impulses from the cervix transmit to the hypothalamus; (3) the brain signals the posterior pituitary to secrete oxytocin into the bloodstream; (4) oxytocin stimulates uterine contractions, pushing the baby further down and increasing pressure on the cervix, restarting the loop](/ANIMALPHYSIOPICS/parturition-positive-feedback-loop.jpg)
-*Source: user-provided (via Facebook repost)*
+*Source:*
 
 Rising fetal size and shifting placental hormone balance near term increase myometrial sensitivity to **oxytocin**; the initial contractions this produces push the fetus against the cervix, mechanically stretching it, and that stretch is itself the signal that triggers further oxytocin release, each contraction increases the stimulus for the next, rather than the response tapering as it would under negative feedback, until delivery physically removes the stretch stimulus and ends the cycle. Prostaglandins produced locally in the uterine wall act alongside oxytocin, further increasing contractile force and helping ripen (soften) the cervix.
 

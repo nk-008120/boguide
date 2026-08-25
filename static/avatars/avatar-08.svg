@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="100" fill="#d8ecf5"/>
+  <g transform="translate(100,105)">
+    <!-- Fish body -->
+    <ellipse cx="0" cy="0" rx="45" ry="22" fill="#3d8fb5" stroke="#2d7a9e" stroke-width="2"/>
+    <!-- Tail -->
+    <path d="M40,-5 Q55,-22 52,-2 L45,0 L52,2 Q55,22 40,5" fill="#3d8fb5" stroke="#2d7a9e" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Dorsal fin -->
+    <path d="M-5,-22 Q0,-40 15,-22" fill="#2d7a9e" stroke="#1d6a8e" stroke-width="1.5"/>
+    <!-- Pectoral fin -->
+    <path d="M-10,10 Q-5,25 8,15" fill="#4da0c5" stroke="#2d7a9e" stroke-width="1.5"/>
+    <!-- Eye -->
+    <circle cx="-22" cy="-4" r="7" fill="white"/>
+    <circle cx="-20" cy="-4" r="4" fill="#1a1a1a"/>
+    <circle cx="-19" cy="-5.5" r="1.5" fill="white"/>
+    <!-- Mouth -->
+    <path d="M-42,-1 Q-38,4 -42,5" fill="none" stroke="#2d7a9e" stroke-width="2" stroke-linecap="round"/>
+    <!-- Scales pattern -->
+    <path d="M5,-8 Q10,-12 15,-8" fill="none" stroke="#2d7a9e" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+    <path d="M15,-5 Q20,-9 25,-5" fill="none" stroke="#2d7a9e" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+    <path d="M5,4 Q10,0 15,4" fill="none" stroke="#2d7a9e" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+    <path d="M15,7 Q20,3 25,7" fill="none" stroke="#2d7a9e" stroke-width="1" stroke-linecap="round" opacity="0.5"/>
+  </g>
+</svg>

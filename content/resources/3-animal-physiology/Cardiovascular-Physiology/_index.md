@@ -45,7 +45,7 @@ graph TD;
 ```
 
 ![Baroreceptor reflex pathway: carotid sinus and aortic arch baroreceptors send afferent signals via the glossopharyngeal nerve (CN9, parasympathetic) and vagus nerve (CN10, parasympathetic) to the medulla's cardioinhibitory center and vasomotor area; sympathetic output travels via sympathetic ganglia to the heart (increasing rate/contractility) and to blood vessels/kidneys (vasoconstriction)](/ANIMALPHYSIOPICS/baroreceptor-reflex-arc.jpg)
-*Source: user-provided (via Facebook repost)*
+*Source:*
 
 A drop in blood pressure reduces baroreceptor stretch and thus afferent firing rate to the brainstem's cardiovascular center, which responds by increasing sympathetic output (raising heart rate, contractility, and vasoconstriction) and decreasing parasympathetic output, all within seconds. This reflex operates on a timescale of seconds, in direct contrast to RAAS (minutes to hours, since it depends on sequential enzymatic cleavage and new aldosterone synthesis/action). The two systems are complementary, not redundant: the baroreceptor reflex provides rapid correction of transient pressure changes (e.g., standing up suddenly), while RAAS provides sustained correction of longer-term volume/pressure deficits (e.g., after blood loss). <span class="badge-custom">Exam tip</span> A question describing an *immediate* heart-rate change upon standing is testing the baroreceptor reflex; a question describing blood pressure correction unfolding over tens of minutes to hours is testing RAAS.
 

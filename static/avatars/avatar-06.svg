@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="100" fill="#f5e6f0"/>
+  <g transform="translate(100,100)">
+    <!-- Animal cell -->
+    <ellipse cx="0" cy="0" rx="52" ry="42" fill="#e8b8d8" stroke="#c87ab8" stroke-width="2.5"/>
+    <!-- Nucleus -->
+    <ellipse cx="5" cy="-2" rx="18" ry="16" fill="#9b59b6" stroke="#7d3c98" stroke-width="2"/>
+    <!-- Nucleolus -->
+    <circle cx="8" cy="-4" r="5" fill="#6c2d82"/>
+    <!-- ER lines -->
+    <path d="M23,-2 Q32,-10 38,-5 Q44,2 38,8" fill="none" stroke="#c87ab8" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M22,5 Q28,12 36,10 Q42,8 40,15" fill="none" stroke="#c87ab8" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Mitochondria -->
+    <ellipse cx="-25" cy="-15" rx="10" ry="6" fill="#e07b7b" stroke="#c55a5a" stroke-width="1.5" transform="rotate(-30,-25,-15)"/>
+    <path d="M-30,-17 Q-25,-12 -20,-17" fill="none" stroke="#c55a5a" stroke-width="1" stroke-linecap="round"/>
+    <!-- Small organelles -->
+    <circle cx="-20" cy="18" r="3.5" fill="#7fb3d4"/>
+    <circle cx="-30" cy="8" r="3" fill="#7fb3d4"/>
+    <circle cx="-10" cy="22" r="2.5" fill="#d4b87f"/>
+    <circle cx="15" cy="25" r="2.5" fill="#d4b87f"/>
+  </g>
+</svg>

@@ -82,9 +82,6 @@ Group size in real populations tends to track an **optimal group size** where ma
 
 **Static** *(placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. The sunbird-specific item was not sourced and remains unillustrated; the group-size cost/benefit item was replaced by a repurposed territory-economics image placed under "Territoriality" instead; see the note there.)*
 
-<!-- VIDEO: African wild dog coordinated pack hunt showing cooperative group-living benefit in real time, Lycaon pictus, the coordination between individuals during a hunt is the actual mechanism producing the higher per-capita capture success rate cited in text -->
-<!-- No video submitted for this item, comment left in place, unresolved. -->
-
 ## Practice Problems
 
 1. In a hawk-dove model, if the value of winning a contest (V) is less than the cost of losing an escalated fight (C), explain why the ESS is predicted to be a mixed hawk/dove strategy rather than pure hawk.

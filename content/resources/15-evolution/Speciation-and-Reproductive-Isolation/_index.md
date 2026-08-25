@@ -28,7 +28,7 @@ Allopatric speciation is further divided by relative population size:
 - **Peripatric speciation**, a small population becomes isolated at the *periphery* of a larger ancestral range (analogous to, and often driven by, a [founder effect](../genetic-drift-gene-flow-and-mutation/)), so genetic drift plays a disproportionately larger role in the peripheral population's divergence than in the large, stable parent population, island colonization events are the standard peripatric scenario.
 
 ![All four geographic modes of speciation compared side by side (allopatric, peripatric, parapatric, sympatric), each row showing: the original population; the initial step of speciation (barrier formation, entering a new niche, or genetic polymorphism arising within one population); where reproductive isolation evolves (in full isolation, an isolated niche, an adjacent niche, or within the population); and the resulting distinct, overlapping-range species after the new ranges re-expand. Note: no diagram narrowly comparing only vicariance vs. peripatric speciation was found; this broader four-mode comparison was used instead, which still covers the vicariance/peripatric contrast as its first two columns](/EVOLUTIONPICS/vicariance-vs-peripatric-speciation.jpg)
-*Source: user-provided (specific source not identified)*
+*Source: (specific source not identified)*
 
 ### Sympatric and Parapatric Speciation
 

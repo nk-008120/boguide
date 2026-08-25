@@ -5340,3 +5340,14 @@ nav.hextra-max-navbar-width img[class*="hx:h-5"] {
     margin: 0.5rem 0 1rem 0;
   }
 }
+.social-cards {
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap; 
+
+.social-card {
+    flex: 1; 
+    min-width: 280px; 
+    text-decoration: none; 
+    color: inherit;
+}
