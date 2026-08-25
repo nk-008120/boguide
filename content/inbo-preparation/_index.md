@@ -14,27 +14,29 @@ faq:
   - q: "How do I qualify for INBO?"
     a: "You qualify by scoring in the top percentile on the NSEB (National Standard Examination in Biology), which is held nationally each year. Students who qualify from INBO are then invited to OCSC (Orientation cum Selection Camp), where four students are selected to represent India at IBO."
   - q: "What books should I use for INBO preparation?"
-    a: "Start with NCERT biology textbooks as a foundation, then move to Campbell Biology for broader coverage. For INBO-level depth, add Silverthorn or Vander for physiology and Lehninger for biochemistry. The full graded book list is on the BioGuide Study Resources page."
+    a: "Start with NCERT biology textbooks as a foundation, then move to Campbell Biology for broader coverage. For INBO-level depth, add Silverthorn, Vander, or Guyton for physiology and Lehninger for biochemistry. The full graded book list is on the BioGuide Study Resources page."
 ---
 
 <div class="prep-guide-wrapper">
 
 # INBO Preparation: The Complete Guide
 
-The Indian National Biology Olympiad is the second stage of India's olympiad pathway toward [IBO](/ibo-preparation/), run by HBCSE (Homi Bhabha Centre for Science Education) under NCERT. This guide covers preparation strategy for the full pathway from NSEB through OCSC. For current eligibility, exact dates, and registration procedures, always check the [HBCSE Biology Olympiad site](https://olympiads.hbcse.tifr.res.in/subjects/biology/), because administrative details change every year.
+The Indian National Biology Olympiad is the second stage of India's olympiad pathway toward [IBO](/ibo-preparation/), run by HBCSE (Homi Bhabha Centre for Science Education) under NCERT. This guide focuses on preparation strategy. For current eligibility, exact dates, and registration procedures, always check the [HBCSE Biology Olympiad site](https://olympiads.hbcse.tifr.res.in/subjects/biology/), because administrative details change every year.
 
-## The full pathway: NSEB to IBO
+## The pathway
 
-India's biology olympiad selection runs through four stages. Each stage selects a smaller cohort for the next:
+India's biology olympiad pathway runs across four stages, with each stage selecting a smaller cohort for the next:
 
-| Stage | What it is | Typical numbers |
+| Stage | What it is | Conducted by |
 |---|---|---|
-| **NSEB** | National Standard Examination in Biology. Large-scale MCQ screening. | ~50,000 students |
-| **INBO** | Indian National Biology Olympiad. Deeper theory paper for NSEB qualifiers. | ~300 students |
-| **OCSC** | Orientation cum Selection Camp. Residential training + selection in Mumbai. | ~35 students |
-| **IBO** | International Biology Olympiad. India sends a team of 4. | 4 students |
+| **NSEB** | National Standard Examination in Biology. Entry-level multiple-choice screening exam, taken at large scale nationally. | [IAPT](https://iapt.org.in/) (Indian Association of Physics Teachers) |
+| **INBO** | Indian National Biology Olympiad. Theory-focused paper for students who qualified through NSEB. This is the paper this guide is written for. | HBCSE |
+| **OCSC** | Orientation cum Selection Camp. A residential camp at HBCSE Mumbai for the 40 students who qualified from INBO. | HBCSE |
+| **IBO** | International Biology Olympiad. Four students are selected from OCSC to represent India at IBO. | IBO host country |
 
-The funnel is steep: roughly 1 in 12,500 NSEB participants reaches IBO. But the path is learnable, and India has consistently medaled at IBO -- including Gold medals in recent years.
+For information regarding NSE 2026, please visit the [official IAPT webpage](https://iapt.org.in/) (Science Olympiad Brochure 2026-27 available in English and Hindi).
+
+This guide covers INBO preparation specifically. You still need to qualify through NSEB to sit for INBO; NSEB preparation overlaps significantly with what's on this page, but the exam format itself is different.
 
 ## NSEB: The gateway
 
@@ -46,7 +48,7 @@ NSEB is a multiple-choice exam with typically 80 questions in 120 minutes (90 se
 
 ### What NSEB tests
 
-NSEB covers all biology, but the distribution leans heavily on certain areas:
+NSEB tests high school level biology (11th and 12th) with a bit of logical reasoning and good conceptual understanding, along with some important concepts from general Grade S books (check under [Study Resources](/resources/) for more details), especially Campbell. The distribution leans heavily on certain areas:
 
 - **Botany** (plant anatomy, plant physiology, plant diversity): high frequency. This is where Indian curriculum strength matters -- NCERT covers botany well, and NSEB reflects that.
 - **Zoology** (animal anatomy, animal physiology, animal diversity): high frequency.
@@ -75,7 +77,7 @@ Read both textbooks cover to cover. Don't just read -- actively test yourself:
 - Immune system detail beyond the NCERT overview
 - Molecular genetics techniques (PCR, gel electrophoresis, CRISPR)
 
-Campbell is the single most useful upgrade from NCERT. If you can only add one book beyond NCERT, make it Campbell.
+Campbell Biology is the widely-used foundation for both NSEB and INBO, with Silverthorn, Vander, or Guyton for physiology and Lehninger for biochemistry becoming more useful at the INBO stage. For NSEB, a well-read Campbell and NCERT textbooks are enough, and multiple readings can get you past INBO fairly easily. Always focus on multiple revisions rather than jumping haphazardly between resources. If you can only add one book beyond NCERT, make it Campbell.
 
 **Step 3: Practice with past NSEB papers.** HBCSE periodically releases past NSEB papers. Work through as many as you can find, under timed conditions (120 minutes, no breaks). Focus on:
 
@@ -135,6 +137,14 @@ While INBO covers the full syllabus, certain areas consistently appear at greate
 - Phytohormone interactions (auxin-cytokinin ratios, ethylene signaling, gibberellin mechanism)
 - Water potential calculations and applications
 
+### How to prepare
+
+Route depends on where you are in the pathway and how much time you have:
+
+- **Preparing for NSEB and INBO from scratch:** the 2-year study plan if you have that runway, or the 1-year plan with school biology as a starting foundation.
+- **Already through NSEB, targeting INBO:** the 3-month or 6-month plan depending on your remaining time.
+- **Final ramp-up before INBO:** the 1-month plan, built around past papers.
+
 ### INBO preparation strategy
 
 If you've qualified through NSEB, you already have the foundation. Now you need to deepen it.
@@ -145,7 +155,7 @@ If you've qualified through NSEB, you already have the foundation. Now you need 
 |---|---|---|
 | Cell Biology | Alberts, *Molecular Biology of the Cell* | Detailed signaling pathways, cell cycle regulation at the molecular level, research-level mechanisms |
 | Biochemistry | Lehninger, *Principles of Biochemistry* | Enzyme kinetics calculations, metabolic flux analysis, regulation at the enzyme level |
-| Animal Physiology | Silverthorn, *Human Physiology* | Integrative physiology -- how systems interact, quantitative problem-solving |
+| Animal Physiology | Silverthorn, *Human Physiology*; Guyton, *Textbook of Medical Physiology* | Integrative physiology -- how systems interact, quantitative problem-solving |
 | Plant Physiology | Taiz, *Plant Physiology and Development* | The only text that reaches INBO depth on plant physiology |
 | Genetics | Griffiths, *Introduction to Genetic Analysis* | Linkage mapping problems, regulation models, quantitative genetics |
 
@@ -160,7 +170,7 @@ You don't need all of these immediately. Prioritize based on your NSEB weakness 
 
 Do this daily for 15-20 minutes. Within a month, interpreting unfamiliar data will feel natural.
 
-**3. Cross-train on IBO past papers.** INBO's format overlaps significantly with IBO theory papers. [BiOrchive](/papers/ibo/) hosts IBO past papers with interactive attempt mode. Practice these under timed conditions. INBO questions are often adapted from or inspired by IBO-style questions.
+**3. Practice past papers.** One of the best parts about olympiads is that they can be fairly predictable once you've gone through the previous years' questions. This doesn't mean you don't learn the concepts via the books -- reading books is non-negotiable -- but past papers are what will set you apart. INBO past papers are periodically published by HBCSE and can be found on their official site. Cross-training on IBO past papers via [BiOrchive](/papers/ibo/) is also useful because INBO's format has meaningful overlap with IBO theory papers. Practice these under timed conditions.
 
 **4. Study with the 15-section learning path.** The [Study Resources page](/resources/) organizes all topics into 15 sections matching the IBO syllabus. Each section has graded difficulty levels and links to relevant textbook chapters. Work through sections systematically rather than jumping between topics randomly.
 
@@ -172,7 +182,7 @@ The biggest challenge Indian students face is the depth gap between NCERT and ol
 
 ### Phase 1: NCERT mastery (months 1-3)
 
-Complete NCERT Class 11 and 12 Biology. This gives you ~60% of NSEB content and ~30% of INBO content. Focus on:
+Complete NCERT Class 11 and 12 Biology. NCERT biology textbooks are a useful starting point if you're new to biology beyond school syllabus, but they don't reach INBO or NSEB depth on their own; treat them as a foundation to build on rather than sufficient preparation. Focus on:
 - Understanding every diagram
 - Memorizing key terminology (but understanding mechanisms, not just names)
 - Completing all back-of-chapter questions
@@ -205,16 +215,18 @@ Intensive past paper practice. Alternate between NSEB papers (for speed), INBO p
 |---|---|---|
 | NCERT only | Structure and function, basic mechanisms, terminology | School exams, partial NSEB |
 | NCERT + Campbell | University-intro-level understanding, broader mechanisms | NSEB qualification, partial INBO |
-| + Alberts/Lehninger/Silverthorn | Research-level mechanisms, quantitative problem-solving | INBO, OCSC selection |
+| + Alberts/Lehninger/Silverthorn/Guyton | Research-level mechanisms, quantitative problem-solving | INBO, OCSC selection |
 | + Taiz + Hickman + Griffiths | Complete IBO syllabus at competition depth | IBO team preparation |
 
-## OCSC: the final selection
+## OCSC and IBO
 
-Students who qualify from INBO are invited to OCSC -- the Orientation cum Selection Camp, typically held at HBCSE in Mumbai. OCSC is a residential camp running roughly 2-3 weeks. It includes:
+Students who qualify from INBO are invited to OCSC -- the Orientation cum Selection Camp, typically held at HBCSE in Mumbai. Selection to represent India at IBO happens at OCSC through further theory and practical assessments -- a completely different game. It is not only a test of your knowledge but also of your mindset and other non-academic abilities. OCSC includes:
 
 - **Theory sessions**: lectures and problem sets at IBO level, taught by university faculty
 - **Practical sessions**: hands-on lab work covering the IBO practical syllabus (microscopy, dissection, biochemical assays, bioinformatics)
 - **Selection tests**: theory and practical exams. The top 4 performers are selected for India's IBO team.
+
+OCSC is the crucial step, because for IBO itself HBCSE supports you with its pre-departure training camps, and you get enough time, confidence, and knowledge by that point to expand your horizons. Also check the [IBO website](https://www.ibo-info.org/) for updates regarding each year's topics (subject to change) before the OCSC camp.
 
 ### How to prepare for OCSC
 
