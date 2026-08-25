@@ -96,6 +96,14 @@ Before we start blabbering about, please contact us on the following in case you
 
 As of August 8 2026, this website has been a one man project. Hence, as we are now under production, we encourage you to join our team if you are up for this position.
 
+## Community Reach
+
+<div id="community-reach" class="community-reach-section">
+  <div class="community-reach-hero" id="community-reach-hero"></div>
+  <div class="community-reach-grid" id="community-reach-grid"></div>
+  <p class="community-reach-updated" id="community-reach-updated"></p>
+</div>
+
 Now, thanks for visiting! Let's talk a bit about why we built BiOGuide.
 
 Preparing for Biology Olympiads involves a familiar set of challenges: difficulty picking the right resources, scattered notes and textbook references, incomplete practice material, a practical lack of hands-on skills, and more. This website exists to resolve most of those issues through a single, compiled, modern guide.

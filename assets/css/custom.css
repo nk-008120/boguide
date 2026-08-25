@@ -5342,12 +5342,165 @@ nav.hextra-max-navbar-width img[class*="hx:h-5"] {
 }
 .social-cards {
     display: flex;
-    gap: 20px; 
-    flex-wrap: wrap; 
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
 .social-card {
-    flex: 1; 
-    min-width: 280px; 
-    text-decoration: none; 
+    flex: 1;
+    min-width: 280px;
+    text-decoration: none;
     color: inherit;
+}
+
+/* === HERO COUNTRY COUNTER === */
+.hero-country-counter {
+  margin: 0.75rem auto 0;
+  min-height: 1.5em;
+  text-align: center;
+}
+.hero-country-counter:empty {
+  min-height: 0;
+  margin: 0;
+}
+.hero-country-badge {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #475569;
+  text-decoration: none;
+  padding: 0.4rem 1.1rem;
+  border-radius: 40px;
+  border: 1px solid rgba(137, 101, 196, 0.25);
+  background: rgba(137, 101, 196, 0.06);
+  letter-spacing: 0.01em;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+.hero-country-badge:hover {
+  border-color: rgba(137, 101, 196, 0.5);
+  background: rgba(137, 101, 196, 0.12);
+  color: #475569;
+  text-decoration: none;
+}
+.hero-country-badge b {
+  font-weight: 700;
+  color: #8965c4;
+}
+html.dark .hero-country-badge {
+  color: #94a3b8;
+  border-color: rgba(201, 183, 232, 0.25);
+  background: rgba(201, 183, 232, 0.08);
+}
+html.dark .hero-country-badge:hover {
+  border-color: rgba(201, 183, 232, 0.5);
+  background: rgba(201, 183, 232, 0.15);
+  color: #94a3b8;
+}
+html.dark .hero-country-badge b {
+  color: #c9b7e8;
+}
+
+/* === COMMUNITY REACH (About page) === */
+.community-reach-section {
+  margin: 2rem 0 2.5rem;
+}
+.community-reach-hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(137, 101, 196, 0.08), rgba(92, 122, 88, 0.06));
+  border: 1px solid rgba(137, 101, 196, 0.2);
+}
+.community-reach-hero:empty {
+  display: none;
+}
+html.dark .community-reach-hero {
+  background: linear-gradient(135deg, rgba(201, 183, 232, 0.1), rgba(157, 185, 154, 0.08));
+  border-color: rgba(201, 183, 232, 0.25);
+}
+.reach-number {
+  display: block;
+  font-family: 'Fraunces', serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #8965c4;
+  line-height: 1.1;
+}
+html.dark .reach-number {
+  color: #c9b7e8;
+}
+.reach-label {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #64748b;
+  margin-top: 0.25rem;
+}
+html.dark .reach-label {
+  color: #94a3b8;
+}
+.community-reach-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+.reach-country-card {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid rgba(137, 101, 196, 0.15);
+  background: rgba(137, 101, 196, 0.03);
+  transition: border-color 0.15s ease;
+}
+.reach-country-card:hover {
+  border-color: rgba(137, 101, 196, 0.4);
+}
+html.dark .reach-country-card {
+  border-color: rgba(201, 183, 232, 0.18);
+  background: rgba(201, 183, 232, 0.04);
+}
+html.dark .reach-country-card:hover {
+  border-color: rgba(201, 183, 232, 0.4);
+}
+.reach-flag {
+  font-size: 1.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.reach-country-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.reach-country-visitors {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #8965c4;
+  white-space: nowrap;
+}
+html.dark .reach-country-visitors {
+  color: #c9b7e8;
+}
+.community-reach-updated {
+  text-align: center;
+  font-size: 0.78rem;
+  color: #94a3b8;
+  margin-top: 1rem;
+}
+html.dark .community-reach-updated {
+  color: #64748b;
+}
+@media (max-width: 640px) {
+  .reach-number {
+    font-size: 2.5rem;
+  }
+  .community-reach-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
 }
