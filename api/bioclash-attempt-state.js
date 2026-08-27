@@ -2,7 +2,7 @@ const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
 const { loadPaper, toClientBlock, findBlock, watermarkCode, newSessionToken, computeTotalPages } = require('./_lib/bioclash');
 
 module.exports = async (req, res) => {
-  if (req.method !== 'GET') {
+  if (req.method !== 'POST') {
     res.status(405).json({ error: 'Method not allowed' });
     return;
   }
@@ -22,7 +22,7 @@ module.exports = async (req, res) => {
     }
     const userId = userData.user.id;
 
-    const paperId = req.query && req.query.paperId;
+    const paperId = req.body && req.body.paperId;
     const paper = loadPaper(paperId);
     if (!paper) {
       res.status(400).json({ error: 'Unknown paper' });

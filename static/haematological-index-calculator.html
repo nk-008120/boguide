@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Haematological Index Calculator | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 560px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #8965c4; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #8965c4;
+    padding-left: 12px;
+  }
+
+  /* Inputs */
+  .input-group {
+    background: #f8f6fc;
+    border-radius: 16px;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.8rem;
+  }
+  .input-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+  .input-row:last-child { margin-bottom: 0; }
+  .input-row label {
+    flex: 0 0 140px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #1e293b;
+  }
+  .input-row input[type=number] {
+    width: 80px;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 0.9rem;
+    font-family: inherit;
+  }
+  .input-row input[type=number]:focus {
+    outline: none;
+    border-color: #8965c4;
+    box-shadow: 0 0 0 2px rgba(137,101,196,0.15);
+  }
+  .unit {
+    font-size: 0.78rem;
+    color: #6b7280;
+    min-width: 50px;
+  }
+
+  /* Presets */
+  .presets-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  .presets {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 1rem;
+  }
+  .preset-btn {
+    padding: 5px 12px;
+    border-radius: 999px;
+    border: 1.5px solid #d4c5ed;
+    background: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #6b21a8;
+    font-family: inherit;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .preset-btn:hover {
+    background: #f3eefa;
+    border-color: #8965c4;
+  }
+
+  /* Results */
+  .results {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  .result-card {
+    background: #fafafa;
+    border-radius: 12px;
+    padding: 10px 14px;
+    border-left: 3px solid #cbd5e1;
+  }
+  .result-card.normal { border-left-color: #16a34a; }
+  .result-card.amber { border-left-color: #d97706; }
+  .result-card.red { border-left-color: #dc2626; }
+  .result-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+  }
+  .result-name {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #1e293b;
+  }
+  .badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+  .badge.normal { background: #dcfce7; color: #166534; }
+  .badge.amber { background: #fef3c7; color: #92400e; }
+  .badge.red { background: #fee2e2; color: #991b1b; }
+  .result-formula {
+    font-size: 0.75rem;
+    color: #6b7280;
+    margin-bottom: 2px;
+    font-family: 'Courier New', monospace;
+  }
+  .result-value {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1e293b;
+  }
+  .result-range {
+    font-size: 0.72rem;
+    color: #9ca3af;
+    margin-top: 2px;
+  }
+
+  /* Classification summary */
+  .classification {
+    background: #f3eefa;
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin-bottom: 0.8rem;
+  }
+  .classification-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  .classification-text {
+    font-size: 0.88rem;
+    color: #1e293b;
+    line-height: 1.5;
+  }
+  .classification-text strong { color: #6b21a8; }
+
+  /* Clinical note */
+  .clinical {
+    background: #fffbeb;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 0.78rem;
+    color: #78716c;
+    line-height: 1.5;
+  }
+  .clinical strong { color: #92400e; }
+
+  /* Responsive */
+  @media (max-width: 480px) {
+    .input-row label { flex: 0 0 110px; font-size: 0.78rem; }
+    .input-row input[type=number] { width: 65px; }
+    .presets { gap: 4px; }
+    .preset-btn { font-size: 0.7rem; padding: 4px 9px; }
+  }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Haematological Index Calculator</h3>
+  <div class="subtitle">Enter complete blood count values to compute red cell indices and classify the anaemia type -- as in IBO 2017.</div>
+
+  <div class="presets-label">Exam presets</div>
+  <div class="presets">
+    <button class="preset-btn" data-hct="42" data-hb="14.0" data-rbc="4.8">Normal control</button>
+    <button class="preset-btn" data-hct="28" data-hb="8.5" data-rbc="3.2">Patient (IBO 2017)</button>
+    <button class="preset-btn" data-hct="30" data-hb="8.0" data-rbc="4.5">Iron deficiency</button>
+    <button class="preset-btn" data-hct="30" data-hb="10.0" data-rbc="2.5">B12 deficiency</button>
+  </div>
+
+  <div class="input-group">
+    <div class="input-row">
+      <label>Haematocrit (Hct)</label>
+      <input type="number" id="hct" value="36" min="10" max="60" step="0.1">
+      <span class="unit">%</span>
+    </div>
+    <div class="input-row">
+      <label>Haemoglobin (Hb)</label>
+      <input type="number" id="hb" value="12.0" min="3" max="20" step="0.1">
+      <span class="unit">g/dL</span>
+    </div>
+    <div class="input-row">
+      <label>RBC count</label>
+      <input type="number" id="rbc" value="4.0" min="1.0" max="7.0" step="0.1">
+      <span class="unit">&times;10<sup>12</sup>/L</span>
+    </div>
+  </div>
+
+  <div class="results" id="results"></div>
+  <div class="classification" id="classification"></div>
+  <div class="clinical" id="clinical"></div>
+</div>
+
+<script>
+(function(){
+  var hctInput = document.getElementById('hct');
+  var hbInput = document.getElementById('hb');
+  var rbcInput = document.getElementById('rbc');
+  var resultsDiv = document.getElementById('results');
+  var classDiv = document.getElementById('classification');
+  var clinicalDiv = document.getElementById('clinical');
+
+  // Preset buttons
+  var presetBtns = document.querySelectorAll('.preset-btn');
+  for (var i = 0; i < presetBtns.length; i++) {
+    (function(btn){
+      btn.addEventListener('click', function(){
+        hctInput.value = btn.getAttribute('data-hct');
+        hbInput.value = btn.getAttribute('data-hb');
+        rbcInput.value = btn.getAttribute('data-rbc');
+        calculate();
+      });
+    })(presetBtns[i]);
+  }
+
+  // Live update
+  hctInput.addEventListener('input', calculate);
+  hbInput.addEventListener('input', calculate);
+  rbcInput.addEventListener('input', calculate);
+
+  function classify(value, low, high, belowLabel, normalLabel, aboveLabel) {
+    if (value < low) return { label: belowLabel, level: value < (low - (high - low) * 0.5) ? 'red' : 'amber' };
+    if (value > high) return { label: aboveLabel, level: value > (high + (high - low) * 0.5) ? 'red' : 'amber' };
+    return { label: normalLabel, level: 'normal' };
+  }
+
+  function buildCard(name, formula, value, unit, cls) {
+    var card = document.createElement('div');
+    card.className = 'result-card ' + cls.level;
+
+    var header = document.createElement('div');
+    header.className = 'result-header';
+
+    var nameSpan = document.createElement('span');
+    nameSpan.className = 'result-name';
+    nameSpan.textContent = name + ' = ' + value.toFixed(1) + ' ' + unit;
+    header.appendChild(nameSpan);
+
+    var badge = document.createElement('span');
+    badge.className = 'badge ' + cls.level;
+    badge.textContent = cls.label;
+    header.appendChild(badge);
+
+    card.appendChild(header);
+
+    var formulaDiv = document.createElement('div');
+    formulaDiv.className = 'result-formula';
+    formulaDiv.textContent = formula;
+    card.appendChild(formulaDiv);
+
+    return card;
+  }
+
+  function calculate() {
+    var hct = parseFloat(hctInput.value);
+    var hb = parseFloat(hbInput.value);
+    var rbc = parseFloat(rbcInput.value);
+
+    if (isNaN(hct) || isNaN(hb) || isNaN(rbc) || rbc <= 0) {
+      resultsDiv.innerHTML = '<div style="font-size:0.85rem;color:#9ca3af;padding:8px;">Enter valid values to see results.</div>';
+      classDiv.innerHTML = '';
+      clinicalDiv.innerHTML = '';
+      return;
+    }
+
+    // Calculations
+    var mcv = (hct * 10) / rbc;
+    var mch = (hb * 10) / rbc;
+    var mchc = (hb / hct) * 100;
+
+    // Classifications
+    var mcvCls = classify(mcv, 80, 100, 'Microcytic', 'Normocytic', 'Macrocytic');
+    var mchCls = classify(mch, 27, 33, 'Hypochromic', 'Normochromic', 'Hyperchromic');
+    var mchcCls = classify(mchc, 32, 36, 'Low MCHC', 'Normal MCHC', 'High MCHC');
+
+    // Build result cards
+    resultsDiv.innerHTML = '';
+
+    var mcvFormula = 'MCV = (Hct x 10) / RBC = (' + hct + ' x 10) / ' + rbc + '   [normal: 80-100 fL]';
+    var mchFormula = 'MCH = (Hb x 10) / RBC = (' + hb + ' x 10) / ' + rbc + '   [normal: 27-33 pg]';
+    var mchcFormula = 'MCHC = (Hb / Hct) x 100 = (' + hb + ' / ' + hct + ') x 100   [normal: 32-36 g/dL]';
+
+    resultsDiv.appendChild(buildCard('MCV', mcvFormula, mcv, 'fL', mcvCls));
+    resultsDiv.appendChild(buildCard('MCH', mchFormula, mch, 'pg', mchCls));
+    resultsDiv.appendChild(buildCard('MCHC', mchcFormula, mchc, 'g/dL', mchcCls));
+
+    // Classification summary
+    var sizeLabel = mcvCls.label.toLowerCase();
+    var chromLabel = mchCls.label.toLowerCase();
+    classDiv.innerHTML = '<div class="classification-title">Classification</div>' +
+      '<div class="classification-text">This blood picture is <strong>' +
+      sizeLabel + ', ' + chromLabel + '</strong>.</div>';
+
+    // Clinical correlations
+    var note = '';
+    if (sizeLabel === 'microcytic' && chromLabel === 'hypochromic') {
+      note = '<strong>Common cause:</strong> Iron deficiency anaemia (most common worldwide), thalassaemia trait, sideroblastic anaemia, chronic disease.';
+    } else if (sizeLabel === 'normocytic' && chromLabel === 'normochromic') {
+      note = '<strong>Common cause:</strong> Acute blood loss, anaemia of chronic disease, chronic kidney disease, bone marrow failure.';
+    } else if (sizeLabel === 'macrocytic') {
+      note = '<strong>Common cause:</strong> Vitamin B12 or folate deficiency (megaloblastic), liver disease, hypothyroidism, myelodysplasia.';
+    } else if (sizeLabel === 'microcytic' && chromLabel === 'normochromic') {
+      note = '<strong>Common cause:</strong> Early iron deficiency or thalassaemia trait -- MCV drops before MCH in some cases.';
+    } else if (sizeLabel === 'normocytic' && chromLabel === 'hypochromic') {
+      note = '<strong>Common cause:</strong> Early iron deficiency transitioning from normocytic to microcytic.';
+    } else {
+      note = '<strong>Note:</strong> This combination is less common clinically. Consider reviewing the input values or investigating mixed causes.';
+    }
+    clinicalDiv.innerHTML = note;
+  }
+
+  calculate();
+})();
+</script>
+</body>
+</html>

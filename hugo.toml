@@ -94,9 +94,15 @@ theme = "hextra"
     weight = 14
 
   [[menu.main]]
-    name = "12. Biosystematics"
+    name = "12. ✅ Biosystematics"
     parent = "Notes @ BiOGuide"
     url = "/resources/4-biosystematics"
+
+  [[menu.main]]
+    name = "13. ✅ Practical I 🆕"
+    parent = "Notes @ BiOGuide"
+    url = "/resources/11-practical-1/"
+    weight = 15
 
   [[menu.main]]
     name = "BiOrchive"

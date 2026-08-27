@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michaelis-Menten Kinetics Explorer | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #8965c4;
+    padding-left: 12px;
+  }
+
+  /* Data table */
+  .data-section { margin-bottom: 1rem; }
+  .data-controls { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; align-items: center; }
+  .data-controls select,
+  .data-controls button {
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 2px solid #cbd5e1;
+    background: #f8fafc;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #475569;
+  }
+  .data-controls button:hover { background: #e2e8f0; }
+  .data-controls select { font-family: inherit; }
+  .btn-purple {
+    background: #8965c4 !important;
+    border-color: #8965c4 !important;
+    color: #fff !important;
+  }
+  .btn-purple:hover { background: #7c4dbd !important; }
+
+  .data-table-wrap {
+    overflow-x: auto;
+    margin-bottom: 10px;
+  }
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+  }
+  .data-table th {
+    background: #f3eefc;
+    color: #5b3a8a;
+    font-weight: 700;
+    padding: 8px 10px;
+    text-align: center;
+    border-bottom: 2px solid #d4c4f0;
+  }
+  .data-table td {
+    padding: 4px 6px;
+    text-align: center;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .data-table input[type=number] {
+    width: 90px;
+    padding: 5px 8px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 0.85rem;
+    text-align: center;
+    font-family: inherit;
+  }
+  .data-table input[type=number]:focus {
+    outline: none;
+    border-color: #8965c4;
+    box-shadow: 0 0 0 2px rgba(137,101,196,0.2);
+  }
+  .row-remove-btn {
+    background: none;
+    border: none;
+    color: #ef4444;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  .row-remove-btn:hover { background: #fee2e2; }
+
+  /* Plot toggle */
+  .plot-toggle {
+    display: flex;
+    gap: 0;
+    margin-bottom: 12px;
+    border-radius: 999px;
+    overflow: hidden;
+    border: 2px solid #8965c4;
+    width: fit-content;
+  }
+  .plot-toggle button {
+    padding: 7px 18px;
+    border: none;
+    background: #fff;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #8965c4;
+    font-family: inherit;
+  }
+  .plot-toggle button.active {
+    background: #8965c4;
+    color: #fff;
+  }
+
+  /* SVG chart area */
+  .chart-wrap {
+    background: #fafbfd;
+    border-radius: 16px;
+    padding: 8px;
+    margin-bottom: 1rem;
+  }
+  .chart-wrap svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Results */
+  .results-panel {
+    background: #f3eefc;
+    border-radius: 16px;
+    padding: 14px 18px;
+    font-size: 0.88rem;
+  }
+  .results-panel h4 {
+    margin: 0 0 8px 0;
+    color: #5b3a8a;
+    font-size: 0.9rem;
+  }
+  .result-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 6px;
+  }
+  .result-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .result-item .label {
+    font-weight: 600;
+    color: #5b3a8a;
+  }
+  .result-item .value {
+    font-weight: 700;
+    color: #1e293b;
+  }
+  .enzyme-input-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #d4c4f0;
+    font-size: 0.82rem;
+  }
+  .enzyme-input-row label {
+    font-weight: 600;
+    color: #5b3a8a;
+  }
+  .enzyme-input-row input[type=number] {
+    width: 80px;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 0.82rem;
+    font-family: inherit;
+  }
+  .enzyme-input-row input[type=number]:focus {
+    outline: none;
+    border-color: #8965c4;
+    box-shadow: 0 0 0 2px rgba(137,101,196,0.2);
+  }
+  .derived-vals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 6px;
+  }
+  .no-data-msg {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 0.85rem;
+    padding: 40px 0;
+  }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Michaelis-Menten Kinetics Explorer</h3>
+  <div class="subtitle">Enter substrate concentration vs. initial velocity data, then view the fitted Michaelis-Menten curve or switch to a Hanes-Woolf linearisation to extract K<sub>m</sub> and V<sub>max</sub>.</div>
+
+  <!-- Data input -->
+  <div class="data-section">
+    <div class="data-controls">
+      <select id="presetSelect">
+        <option value="">Load Preset...</option>
+        <option value="textbook">Textbook example</option>
+        <option value="pk">PK data (IBO 2017 style)</option>
+        <option value="diaph">Diaphorase (IBO 2023 style)</option>
+      </select>
+      <button id="btnAddRow">+ Add Row</button>
+      <button id="btnRemoveRow">- Remove Row</button>
+    </div>
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>[S] (mM)</th>
+            <th>v<sub>0</sub> (units)</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="dataBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Plot toggle -->
+  <div class="plot-toggle">
+    <button id="btnMM" class="active">Michaelis-Menten</button>
+    <button id="btnHW">Hanes-Woolf</button>
+  </div>
+
+  <!-- Chart -->
+  <div class="chart-wrap">
+    <svg id="chartSvg" viewBox="0 0 660 420"></svg>
+  </div>
+
+  <!-- Results -->
+  <div class="results-panel">
+    <h4>Estimated Parameters</h4>
+    <div class="result-row">
+      <div class="result-item">
+        <span class="label">K<sub>m</sub> =</span>
+        <span class="value" id="resKm">--</span>
+        <span>mM</span>
+      </div>
+      <div class="result-item">
+        <span class="label">V<sub>max</sub> =</span>
+        <span class="value" id="resVmax">--</span>
+        <span>units</span>
+      </div>
+    </div>
+    <div class="enzyme-input-row">
+      <label>[E]<sub>total</sub> (uM):</label>
+      <input type="number" id="enzymeConc" min="0" step="0.01" placeholder="optional">
+      <div class="derived-vals">
+        <div class="result-item">
+          <span class="label">k<sub>cat</sub> =</span>
+          <span class="value" id="resKcat">--</span>
+          <span>s<sup>-1</sup></span>
+        </div>
+        <div class="result-item">
+          <span class="label">k<sub>cat</sub>/K<sub>m</sub> =</span>
+          <span class="value" id="resEfficiency">--</span>
+          <span>mM<sup>-1</sup> s<sup>-1</sup></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  "use strict";
+
+  /* ---- Preset data ---- */
+  var PRESETS = {
+    textbook: {
+      s: [0.5, 1, 2, 5, 10, 20, 50],
+      v: [0.083, 0.143, 0.222, 0.357, 0.455, 0.526, 0.588]
+    },
+    pk: {
+      s: [0.1, 0.25, 0.5, 1.0, 2.0, 5.0],
+      v: [4.2, 8.9, 14.3, 20.0, 24.0, 27.8]
+    },
+    diaph: {
+      s: [5, 10, 20, 40, 80, 160],
+      v: [1625, 2750, 4333, 5857, 6967, 7500]
+    }
+  };
+
+  /* ---- DOM references ---- */
+  var dataBody = document.getElementById("dataBody");
+  var presetSelect = document.getElementById("presetSelect");
+  var btnAddRow = document.getElementById("btnAddRow");
+  var btnRemoveRow = document.getElementById("btnRemoveRow");
+  var btnMM = document.getElementById("btnMM");
+  var btnHW = document.getElementById("btnHW");
+  var chartSvg = document.getElementById("chartSvg");
+  var resKm = document.getElementById("resKm");
+  var resVmax = document.getElementById("resVmax");
+  var resKcat = document.getElementById("resKcat");
+  var resEfficiency = document.getElementById("resEfficiency");
+  var enzymeConc = document.getElementById("enzymeConc");
+
+  var currentPlot = "mm"; // "mm" or "hw"
+
+  /* ---- Data management ---- */
+  function getRowCount() {
+    return dataBody.querySelectorAll("tr").length;
+  }
+
+  function addRow(sVal, vVal) {
+    var tr = document.createElement("tr");
+    var idx = getRowCount() + 1;
+    var tdNum = document.createElement("td");
+    tdNum.textContent = idx;
+    tr.appendChild(tdNum);
+
+    var tdS = document.createElement("td");
+    var inpS = document.createElement("input");
+    inpS.type = "number";
+    inpS.min = "0";
+    inpS.step = "any";
+    inpS.value = sVal !== undefined ? sVal : "";
+    inpS.addEventListener("input", update);
+    tdS.appendChild(inpS);
+    tr.appendChild(tdS);
+
+    var tdV = document.createElement("td");
+    var inpV = document.createElement("input");
+    inpV.type = "number";
+    inpV.min = "0";
+    inpV.step = "any";
+    inpV.value = vVal !== undefined ? vVal : "";
+    inpV.addEventListener("input", update);
+    tdV.appendChild(inpV);
+    tr.appendChild(tdV);
+
+    var tdDel = document.createElement("td");
+    var delBtn = document.createElement("button");
+    delBtn.className = "row-remove-btn";
+    delBtn.textContent = "×";
+    delBtn.title = "Remove this row";
+    delBtn.addEventListener("click", function() {
+      tr.parentNode.removeChild(tr);
+      renumberRows();
+      update();
+    });
+    tdDel.appendChild(delBtn);
+    tr.appendChild(tdDel);
+
+    dataBody.appendChild(tr);
+  }
+
+  function renumberRows() {
+    var rows = dataBody.querySelectorAll("tr");
+    for (var i = 0; i < rows.length; i++) {
+      rows[i].cells[0].textContent = i + 1;
+    }
+  }
+
+  function getData() {
+    var rows = dataBody.querySelectorAll("tr");
+    var s = [], v = [];
+    for (var i = 0; i < rows.length; i++) {
+      var inputs = rows[i].querySelectorAll("input[type=number]");
+      var sv = parseFloat(inputs[0].value);
+      var vv = parseFloat(inputs[1].value);
+      if (!isNaN(sv) && !isNaN(vv) && sv > 0 && vv > 0) {
+        s.push(sv);
+        v.push(vv);
+      }
+    }
+    return { s: s, v: v };
+  }
+
+  function loadPreset(key) {
+    var p = PRESETS[key];
+    if (!p) return;
+    dataBody.innerHTML = "";
+    for (var i = 0; i < p.s.length; i++) {
+      addRow(p.s[i], p.v[i]);
+    }
+    update();
+  }
+
+  /* ---- Hanes-Woolf fitting ---- */
+  function fitHanesWoolf(s, v) {
+    // [S]/v0 vs [S]  -- linear: y = (1/Vmax)*x + Km/Vmax
+    var n = s.length;
+    if (n < 2) return null;
+    var x = [], y = [];
+    for (var i = 0; i < n; i++) {
+      x.push(s[i]);
+      y.push(s[i] / v[i]);
+    }
+    // Linear regression: y = a + b*x
+    var sumX = 0, sumY = 0, sumXX = 0, sumXY = 0;
+    for (var j = 0; j < n; j++) {
+      sumX += x[j];
+      sumY += y[j];
+      sumXX += x[j] * x[j];
+      sumXY += x[j] * y[j];
+    }
+    var denom = n * sumXX - sumX * sumX;
+    if (Math.abs(denom) < 1e-15) return null;
+    var b = (n * sumXY - sumX * sumY) / denom; // slope = 1/Vmax
+    var a = (sumY - b * sumX) / n;              // intercept = Km/Vmax
+    if (b <= 0) return null;
+    var vmax = 1 / b;
+    var km = a * vmax;
+    return { km: km, vmax: vmax, slope: b, intercept: a, xData: x, yData: y };
+  }
+
+  /* ---- Number formatting ---- */
+  function fmtNum(val) {
+    if (val === null || val === undefined || isNaN(val)) return "--";
+    if (Math.abs(val) >= 1000) return val.toFixed(0);
+    if (Math.abs(val) >= 100) return val.toFixed(1);
+    if (Math.abs(val) >= 10) return val.toFixed(2);
+    if (Math.abs(val) >= 1) return val.toFixed(3);
+    if (Math.abs(val) >= 0.01) return val.toFixed(4);
+    return val.toExponential(3);
+  }
+
+  /* ---- SVG helpers ---- */
+  var SVG_NS = "http://www.w3.org/2000/svg";
+
+  function svgEl(tag, attrs) {
+    var el = document.createElementNS(SVG_NS, tag);
+    if (attrs) {
+      for (var k in attrs) {
+        if (attrs.hasOwnProperty(k)) {
+          el.setAttribute(k, attrs[k]);
+        }
+      }
+    }
+    return el;
+  }
+
+  function svgText(x, y, text, attrs) {
+    var el = svgEl("text", attrs || {});
+    el.setAttribute("x", x);
+    el.setAttribute("y", y);
+    el.textContent = text;
+    return el;
+  }
+
+  /* ---- Axis scale helpers ---- */
+  function niceMax(val) {
+    if (val <= 0) return 1;
+    var pow = Math.pow(10, Math.floor(Math.log(val) / Math.LN10));
+    var norm = val / pow;
+    var nice;
+    if (norm <= 1) nice = 1;
+    else if (norm <= 1.5) nice = 1.5;
+    else if (norm <= 2) nice = 2;
+    else if (norm <= 3) nice = 3;
+    else if (norm <= 5) nice = 5;
+    else if (norm <= 7) nice = 7;
+    else nice = 10;
+    return nice * pow;
+  }
+
+  function tickStep(maxVal, targetTicks) {
+    if (maxVal <= 0) return 1;
+    var rough = maxVal / targetTicks;
+    var pow = Math.pow(10, Math.floor(Math.log(rough) / Math.LN10));
+    var norm = rough / pow;
+    var step;
+    if (norm <= 1.5) step = 1;
+    else if (norm <= 3.5) step = 2;
+    else if (norm <= 7.5) step = 5;
+    else step = 10;
+    return step * pow;
+  }
+
+  function generateTicks(minVal, maxVal, targetTicks) {
+    var step = tickStep(maxVal - minVal, targetTicks);
+    var ticks = [];
+    var start = Math.ceil(minVal / step) * step;
+    for (var t = start; t <= maxVal + step * 0.001; t += step) {
+      ticks.push(t);
+    }
+    return ticks;
+  }
+
+  /* ---- Chart drawing ---- */
+  var MARGIN = { top: 30, right: 30, bottom: 55, left: 70 };
+  var W = 660, H = 420;
+  var plotW = W - MARGIN.left - MARGIN.right;
+  var plotH = H - MARGIN.top - MARGIN.bottom;
+
+  function drawMMPlot(data, fit) {
+    chartSvg.innerHTML = "";
+    if (data.s.length < 2 || !fit) {
+      var msg = svgText(W / 2, H / 2, "Enter at least 2 valid data points", {
+        "text-anchor": "middle", "fill": "#94a3b8", "font-size": "14"
+      });
+      chartSvg.appendChild(msg);
+      return;
+    }
+
+    var km = fit.km;
+    var vmax = fit.vmax;
+
+    // Determine axis ranges
+    var maxS = 0, maxV = 0;
+    for (var i = 0; i < data.s.length; i++) {
+      if (data.s[i] > maxS) maxS = data.s[i];
+      if (data.v[i] > maxV) maxV = data.v[i];
+    }
+    // Include Vmax in y-range
+    if (vmax > maxV) maxV = vmax;
+    var xMax = niceMax(maxS * 1.15);
+    var yMax = niceMax(maxV * 1.2);
+
+    function sx(val) { return MARGIN.left + (val / xMax) * plotW; }
+    function sy(val) { return MARGIN.top + plotH - (val / yMax) * plotH; }
+
+    var g = svgEl("g");
+
+    // Grid and axes
+    var xTicks = generateTicks(0, xMax, 6);
+    var yTicks = generateTicks(0, yMax, 6);
+
+    // X gridlines and ticks
+    for (var xi = 0; xi < xTicks.length; xi++) {
+      var xv = xTicks[xi];
+      // gridline
+      g.appendChild(svgEl("line", {
+        x1: sx(xv), y1: MARGIN.top, x2: sx(xv), y2: MARGIN.top + plotH,
+        stroke: "#e9ecef", "stroke-width": "1"
+      }));
+      // tick label
+      g.appendChild(svgText(sx(xv), MARGIN.top + plotH + 18, fmtNum(xv), {
+        "text-anchor": "middle", fill: "#64748b", "font-size": "11"
+      }));
+    }
+
+    // Y gridlines and ticks
+    for (var yi = 0; yi < yTicks.length; yi++) {
+      var yv = yTicks[yi];
+      g.appendChild(svgEl("line", {
+        x1: MARGIN.left, y1: sy(yv), x2: MARGIN.left + plotW, y2: sy(yv),
+        stroke: "#e9ecef", "stroke-width": "1"
+      }));
+      g.appendChild(svgText(MARGIN.left - 8, sy(yv) + 4, fmtNum(yv), {
+        "text-anchor": "end", fill: "#64748b", "font-size": "11"
+      }));
+    }
+
+    // Axes lines
+    g.appendChild(svgEl("line", {
+      x1: MARGIN.left, y1: MARGIN.top + plotH, x2: MARGIN.left + plotW, y2: MARGIN.top + plotH,
+      stroke: "#1e293b", "stroke-width": "1.5"
+    }));
+    g.appendChild(svgEl("line", {
+      x1: MARGIN.left, y1: MARGIN.top, x2: MARGIN.left, y2: MARGIN.top + plotH,
+      stroke: "#1e293b", "stroke-width": "1.5"
+    }));
+
+    // Axis labels
+    g.appendChild(svgText(MARGIN.left + plotW / 2, H - 6, "[S] (mM)", {
+      "text-anchor": "middle", fill: "#1e293b", "font-size": "13", "font-weight": "600"
+    }));
+    var yLabel = svgText(0, 0, "v0 (units)", {
+      "text-anchor": "middle", fill: "#1e293b", "font-size": "13", "font-weight": "600"
+    });
+    yLabel.setAttribute("transform",
+      "translate(" + 16 + "," + (MARGIN.top + plotH / 2) + ") rotate(-90)");
+    g.appendChild(yLabel);
+
+    // Fitted curve (hyperbola)
+    var curvePts = [];
+    var steps = 200;
+    for (var ci = 0; ci <= steps; ci++) {
+      var cs = (ci / steps) * xMax;
+      var cv = vmax * cs / (km + cs);
+      curvePts.push(sx(cs).toFixed(2) + "," + sy(cv).toFixed(2));
+    }
+    g.appendChild(svgEl("polyline", {
+      points: curvePts.join(" "),
+      fill: "none", stroke: "#8965c4", "stroke-width": "2.5"
+    }));
+
+    // Dashed line at Vmax
+    if (vmax <= yMax) {
+      g.appendChild(svgEl("line", {
+        x1: MARGIN.left, y1: sy(vmax), x2: MARGIN.left + plotW, y2: sy(vmax),
+        stroke: "#8965c4", "stroke-width": "1.2", "stroke-dasharray": "6,4", opacity: "0.7"
+      }));
+      g.appendChild(svgText(MARGIN.left + plotW + 2, sy(vmax) + 4,
+        "Vmax = " + fmtNum(vmax), {
+        "text-anchor": "end", fill: "#8965c4", "font-size": "10.5", "font-weight": "600"
+      }));
+    }
+
+    // Dashed line at Vmax/2
+    var vHalf = vmax / 2;
+    if (vHalf <= yMax) {
+      g.appendChild(svgEl("line", {
+        x1: MARGIN.left, y1: sy(vHalf), x2: sx(km), y2: sy(vHalf),
+        stroke: "#b794e0", "stroke-width": "1", "stroke-dasharray": "4,3", opacity: "0.7"
+      }));
+      g.appendChild(svgText(MARGIN.left + 4, sy(vHalf) - 5,
+        "Vmax/2", {
+        fill: "#b794e0", "font-size": "10", "font-weight": "600"
+      }));
+    }
+
+    // Dashed vertical at Km
+    if (km > 0 && km <= xMax) {
+      g.appendChild(svgEl("line", {
+        x1: sx(km), y1: sy(vHalf), x2: sx(km), y2: MARGIN.top + plotH,
+        stroke: "#b794e0", "stroke-width": "1", "stroke-dasharray": "4,3", opacity: "0.7"
+      }));
+      g.appendChild(svgText(sx(km), MARGIN.top + plotH + 32,
+        "Km = " + fmtNum(km), {
+        "text-anchor": "middle", fill: "#8965c4", "font-size": "10.5", "font-weight": "600"
+      }));
+      // Small marker on x-axis
+      g.appendChild(svgEl("line", {
+        x1: sx(km), y1: MARGIN.top + plotH - 4, x2: sx(km), y2: MARGIN.top + plotH + 4,
+        stroke: "#8965c4", "stroke-width": "2"
+      }));
+    }
+
+    // Data points
+    for (var di = 0; di < data.s.length; di++) {
+      g.appendChild(svgEl("circle", {
+        cx: sx(data.s[di]), cy: sy(data.v[di]), r: "5",
+        fill: "#8965c4", stroke: "#fff", "stroke-width": "1.5"
+      }));
+    }
+
+    chartSvg.appendChild(g);
+  }
+
+  function drawHWPlot(data, fit) {
+    chartSvg.innerHTML = "";
+    if (data.s.length < 2 || !fit) {
+      var msg = svgText(W / 2, H / 2, "Enter at least 2 valid data points", {
+        "text-anchor": "middle", fill: "#94a3b8", "font-size": "14"
+      });
+      chartSvg.appendChild(msg);
+      return;
+    }
+
+    var hwX = fit.xData; // [S]
+    var hwY = fit.yData; // [S]/v0
+    var slope = fit.slope;
+    var intercept = fit.intercept;
+    var km = fit.km;
+    var xIntercept = -km; // x-intercept of Hanes-Woolf line
+
+    // Determine axis ranges -- include negative x for x-intercept display
+    var maxX = 0, maxY = 0, minX = 0;
+    for (var i = 0; i < hwX.length; i++) {
+      if (hwX[i] > maxX) maxX = hwX[i];
+      if (hwY[i] > maxY) maxY = hwY[i];
+    }
+    // Extend x-axis to show x-intercept if negative
+    if (xIntercept < 0) {
+      minX = xIntercept * 1.3;
+    }
+    // Extend to show fit line endpoints
+    var lineYatMaxX = intercept + slope * maxX * 1.15;
+    if (lineYatMaxX > maxY) maxY = lineYatMaxX;
+
+    var xMaxNice = niceMax(maxX * 1.15);
+    var yMaxNice = niceMax(maxY * 1.2);
+    var xMinNice = minX < 0 ? -niceMax(Math.abs(minX)) : 0;
+
+    var xRange = xMaxNice - xMinNice;
+
+    function sx(val) { return MARGIN.left + ((val - xMinNice) / xRange) * plotW; }
+    function sy(val) { return MARGIN.top + plotH - (val / yMaxNice) * plotH; }
+
+    var g = svgEl("g");
+
+    // Grid and axes
+    var xTicks = generateTicks(xMinNice, xMaxNice, 7);
+    var yTicks = generateTicks(0, yMaxNice, 6);
+
+    for (var xi = 0; xi < xTicks.length; xi++) {
+      var xv = xTicks[xi];
+      g.appendChild(svgEl("line", {
+        x1: sx(xv), y1: MARGIN.top, x2: sx(xv), y2: MARGIN.top + plotH,
+        stroke: "#e9ecef", "stroke-width": "1"
+      }));
+      g.appendChild(svgText(sx(xv), MARGIN.top + plotH + 18, fmtNum(xv), {
+        "text-anchor": "middle", fill: "#64748b", "font-size": "11"
+      }));
+    }
+    for (var yi = 0; yi < yTicks.length; yi++) {
+      var yv = yTicks[yi];
+      g.appendChild(svgEl("line", {
+        x1: MARGIN.left, y1: sy(yv), x2: MARGIN.left + plotW, y2: sy(yv),
+        stroke: "#e9ecef", "stroke-width": "1"
+      }));
+      g.appendChild(svgText(MARGIN.left - 8, sy(yv) + 4, fmtNum(yv), {
+        "text-anchor": "end", fill: "#64748b", "font-size": "11"
+      }));
+    }
+
+    // Axes lines
+    g.appendChild(svgEl("line", {
+      x1: MARGIN.left, y1: MARGIN.top + plotH, x2: MARGIN.left + plotW, y2: MARGIN.top + plotH,
+      stroke: "#1e293b", "stroke-width": "1.5"
+    }));
+    // Y-axis at x=0
+    var yAxisX = sx(0);
+    if (yAxisX < MARGIN.left) yAxisX = MARGIN.left;
+    g.appendChild(svgEl("line", {
+      x1: yAxisX, y1: MARGIN.top, x2: yAxisX, y2: MARGIN.top + plotH,
+      stroke: "#1e293b", "stroke-width": "1.5"
+    }));
+
+    // Axis labels
+    g.appendChild(svgText(MARGIN.left + plotW / 2, H - 6, "[S] (mM)", {
+      "text-anchor": "middle", fill: "#1e293b", "font-size": "13", "font-weight": "600"
+    }));
+    var yLabel = svgText(0, 0, "[S] / v0", {
+      "text-anchor": "middle", fill: "#1e293b", "font-size": "13", "font-weight": "600"
+    });
+    yLabel.setAttribute("transform",
+      "translate(" + 16 + "," + (MARGIN.top + plotH / 2) + ") rotate(-90)");
+    g.appendChild(yLabel);
+
+    // Best-fit line
+    var lineX1 = xMinNice;
+    var lineY1 = intercept + slope * lineX1;
+    var lineX2 = xMaxNice;
+    var lineY2 = intercept + slope * lineX2;
+    // Clip to y >= 0
+    if (lineY1 < 0) {
+      lineX1 = -intercept / slope; // where y=0
+      lineY1 = 0;
+    }
+    g.appendChild(svgEl("line", {
+      x1: sx(lineX1), y1: sy(lineY1), x2: sx(lineX2), y2: sy(lineY2),
+      stroke: "#8965c4", "stroke-width": "2.5"
+    }));
+
+    // Mark x-intercept (-Km)
+    if (xIntercept >= xMinNice && xIntercept <= xMaxNice) {
+      g.appendChild(svgEl("circle", {
+        cx: sx(xIntercept), cy: sy(0), r: "5",
+        fill: "#ef4444", stroke: "#fff", "stroke-width": "1.5"
+      }));
+      g.appendChild(svgText(sx(xIntercept), MARGIN.top + plotH + 32,
+        "-Km = " + fmtNum(xIntercept), {
+        "text-anchor": "middle", fill: "#ef4444", "font-size": "10.5", "font-weight": "600"
+      }));
+    }
+
+    // Annotation labels for slope and intercepts
+    var annoX = MARGIN.left + plotW * 0.55;
+    var annoY = MARGIN.top + 20;
+    g.appendChild(svgText(annoX, annoY,
+      "slope = 1/Vmax = " + fmtNum(slope), {
+      fill: "#5b3a8a", "font-size": "11", "font-weight": "600"
+    }));
+    g.appendChild(svgText(annoX, annoY + 16,
+      "y-int = Km/Vmax = " + fmtNum(intercept), {
+      fill: "#5b3a8a", "font-size": "11", "font-weight": "600"
+    }));
+    g.appendChild(svgText(annoX, annoY + 32,
+      "x-int = -Km = " + fmtNum(xIntercept), {
+      fill: "#5b3a8a", "font-size": "11", "font-weight": "600"
+    }));
+
+    // Data points
+    for (var di = 0; di < hwX.length; di++) {
+      g.appendChild(svgEl("circle", {
+        cx: sx(hwX[di]), cy: sy(hwY[di]), r: "5",
+        fill: "#8965c4", stroke: "#fff", "stroke-width": "1.5"
+      }));
+    }
+
+    chartSvg.appendChild(g);
+  }
+
+  /* ---- Main update ---- */
+  function update() {
+    var data = getData();
+    var fit = null;
+    if (data.s.length >= 2) {
+      fit = fitHanesWoolf(data.s, data.v);
+    }
+
+    // Update results panel
+    if (fit) {
+      resKm.textContent = fmtNum(fit.km);
+      resVmax.textContent = fmtNum(fit.vmax);
+    } else {
+      resKm.textContent = "--";
+      resVmax.textContent = "--";
+    }
+    updateDerived(fit);
+
+    // Draw chart
+    if (currentPlot === "mm") {
+      drawMMPlot(data, fit);
+    } else {
+      drawHWPlot(data, fit);
+    }
+  }
+
+  function updateDerived(fit) {
+    var eConc = parseFloat(enzymeConc.value);
+    if (fit && !isNaN(eConc) && eConc > 0) {
+      // [E] is in uM, Vmax in units -- kcat = Vmax / [E]
+      // Convert uM to mM for consistency: eConc_mM = eConc / 1000
+      var kcat = fit.vmax / (eConc / 1000); // units per mM -> s^-1 (assuming units are umol/min -> convert)
+      // Simpler: if v0 is in arbitrary units, kcat = Vmax / [E]
+      var kcatSimple = fit.vmax / eConc;
+      resKcat.textContent = fmtNum(kcatSimple);
+      var efficiency = kcatSimple / fit.km;
+      resEfficiency.textContent = fmtNum(efficiency);
+    } else {
+      resKcat.textContent = "--";
+      resEfficiency.textContent = "--";
+    }
+  }
+
+  /* ---- Event listeners ---- */
+  presetSelect.addEventListener("change", function() {
+    if (presetSelect.value) {
+      loadPreset(presetSelect.value);
+      presetSelect.value = "";
+    }
+  });
+
+  btnAddRow.addEventListener("click", function() {
+    addRow();
+  });
+
+  btnRemoveRow.addEventListener("click", function() {
+    var rows = dataBody.querySelectorAll("tr");
+    if (rows.length > 0) {
+      dataBody.removeChild(rows[rows.length - 1]);
+      update();
+    }
+  });
+
+  btnMM.addEventListener("click", function() {
+    currentPlot = "mm";
+    btnMM.className = "active";
+    btnHW.className = "";
+    update();
+  });
+
+  btnHW.addEventListener("click", function() {
+    currentPlot = "hw";
+    btnHW.className = "active";
+    btnMM.className = "";
+    update();
+  });
+
+  enzymeConc.addEventListener("input", function() {
+    var data = getData();
+    var fit = null;
+    if (data.s.length >= 2) {
+      fit = fitHanesWoolf(data.s, data.v);
+    }
+    updateDerived(fit);
+  });
+
+  /* ---- Initialize with textbook preset ---- */
+  loadPreset("textbook");
+})();
+</script>
+</body>
+</html>

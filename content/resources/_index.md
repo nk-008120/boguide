@@ -139,7 +139,7 @@ Sections marked **✅ Verified** have gone through our full review workflow (see
   {{< card link="8-ecology/" title="8. Ecology" subtitle="Population dynamics, community ecology, ecosystems, biogeography, and conservation biology." tag="✅ Verified" tagColor="green" >}}
   {{< card link="9-ethology/" title="9. Ethology" subtitle="Animal behavior: proximate/ultimate causation, learning, communication, and social structure." tag="✅ Verified" tagColor="green" >}}
   {{< card link="10-bioinformatics/" title="10. Bioinformatics" subtitle="Databases, BLAST, alignments, phylogenetics, genome analysis, and protein structure." tag="✅ Verified" tagColor="green" >}}
-  {{< card link="11-practical-1/" title="11. Practical I" subtitle="Coming soon." >}}
+  {{< card link="11-practical-1/" title="11. Practical I" subtitle="Molecular biology and biochemistry practicals: restriction mapping, PCR genotyping, Ni-NTA chromatography, Bradford assay, enzyme kinetics, EMSA, and integrated workflows." tag="✅ Verified · New" tagColor="green" >}}
   {{< card link="12-practical-2/" title="12. Practical II" subtitle="Coming soon." >}}
   {{< card link="13-practical-3/" title="13. Practical III" subtitle="Coming soon." >}}
   {{< card link="14-practical-4/" title="14. Plant Computational Biology" subtitle="ImageJ/Fiji image analysis and Streamlit interactive plotting for the IBO practical." tag="✅ Verified" tagColor="green" >}}

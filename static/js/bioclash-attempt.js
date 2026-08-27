@@ -56,6 +56,7 @@
     currentPartIndex: 0,
     currentPartIndexSet: false,
     sessionToken: null,
+    accessToken: null,
     superseded: false,
     totalPages: null,
     reachedFinalPageLocally: false,
@@ -76,6 +77,7 @@
   function apiPost(path, body) {
     return window.PapersAuth.getSession().then(function (session) {
       if (!session) return { ok: false, status: 401, body: { error: 'Invalid session' } };
+      state.accessToken = session.access_token;
       return fetch(path, { method: 'POST', headers: authHeaders(session), body: JSON.stringify(body || {}) })
         .then(function (r) { return r.json().then(function (json) { return { ok: r.ok, status: r.status, body: json }; }); });
     });
@@ -84,6 +86,7 @@
   function apiGet(path) {
     return window.PapersAuth.getSession().then(function (session) {
       if (!session) return { ok: false, status: 401, body: { error: 'Invalid session' } };
+      state.accessToken = session.access_token;
       return fetch(path, { headers: { 'Authorization': 'Bearer ' + session.access_token } })
         .then(function (r) { return r.json().then(function (json) { return { ok: r.ok, status: r.status, body: json }; }); });
     });
@@ -245,6 +248,7 @@
         }
         return;
       }
+      state.accessToken = session.access_token;
       fn(session);
     });
   }
@@ -861,14 +865,18 @@
   }
 
   window.addEventListener('beforeunload', function () {
-    if (state.sessionToken && liveScreen && !liveScreen.hidden && navigator.sendBeacon) {
-      var payload = new Blob([JSON.stringify({ paperId: PAPER_ID, sessionToken: state.sessionToken })], { type: 'application/json' });
-      navigator.sendBeacon('/api/bioclash-log-tab-close', payload);
+    if (state.sessionToken && state.accessToken && liveScreen && !liveScreen.hidden) {
+      fetch('/api/bioclash-log-tab-close', {
+        method: 'POST',
+        keepalive: true,
+        headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + state.accessToken },
+        body: JSON.stringify({ paperId: PAPER_ID, sessionToken: state.sessionToken })
+      });
     }
   });
 
   withSession(function () {
-    apiGet('/api/bioclash-attempt-state?paperId=' + encodeURIComponent(PAPER_ID)).then(function (result) {
+    apiPost('/api/bioclash-attempt-state', { paperId: PAPER_ID }).then(function (result) {
       if (!result.ok) {
         if (startStatus) startStatus.textContent = result.body.error || 'Could not load.';
         return;

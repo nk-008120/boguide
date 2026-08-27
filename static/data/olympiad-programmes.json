@@ -1,0 +1,308 @@
+{
+  "lastUpdated": "2026-08-27",
+  "countries": {
+    "IN": {
+      "name": "India",
+      "flag": "🇮🇳",
+      "programme": "INBO (Indian National Biology Olympiad)",
+      "guideUrl": "/inbo-preparation/",
+      "status": "published",
+      "stages": "NSEB > INBO > OCSC > IBO"
+    },
+    "US": {
+      "name": "United States",
+      "flag": "🇺🇸",
+      "programme": "USABO (USA Biology Olympiad)",
+      "guideUrl": "/usabo-preparation/",
+      "status": "published",
+      "stages": "Open Exam > Semifinal > Finals > IBO"
+    },
+    "TM": {
+      "name": "Turkmenistan",
+      "flag": "🇹🇲",
+      "programme": "Biology Olympiad of Turkmenistan",
+      "guideUrl": "/olympiad-programmes/turkmenistan/",
+      "status": "coming-soon"
+    },
+    "GB": {
+      "name": "United Kingdom",
+      "flag": "🇬🇧",
+      "programme": "British Biology Olympiad (BBO)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "AU": {
+      "name": "Australia",
+      "flag": "🇦🇺",
+      "programme": "Australian Biology Olympiad (ASBO)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "CA": {
+      "name": "Canada",
+      "flag": "🇨🇦",
+      "programme": "Canadian Biology Olympiad (CBO)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "DE": {
+      "name": "Germany",
+      "flag": "🇩🇪",
+      "programme": "German Biology Olympiad (IBO-Auswahl)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "SG": {
+      "name": "Singapore",
+      "flag": "🇸🇬",
+      "programme": "Singapore Biology Olympiad (SBO)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "AE": {
+      "name": "United Arab Emirates",
+      "flag": "🇦🇪",
+      "programme": "UAE Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "MY": {
+      "name": "Malaysia",
+      "flag": "🇲🇾",
+      "programme": "Malaysian Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "NL": {
+      "name": "Netherlands",
+      "flag": "🇳🇱",
+      "programme": "Dutch Biology Olympiad (NBO)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "PH": {
+      "name": "Philippines",
+      "flag": "🇵🇭",
+      "programme": "Philippine Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "BD": {
+      "name": "Bangladesh",
+      "flag": "🇧🇩",
+      "programme": "Bangladesh Biology Olympiad (BdBO)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "ID": {
+      "name": "Indonesia",
+      "flag": "🇮🇩",
+      "programme": "Indonesian Biology Olympiad (KSN Biologi)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "PK": {
+      "name": "Pakistan",
+      "flag": "🇵🇰",
+      "programme": "Pakistan Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "LK": {
+      "name": "Sri Lanka",
+      "flag": "🇱🇰",
+      "programme": "Sri Lanka Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "NP": {
+      "name": "Nepal",
+      "flag": "🇳🇵",
+      "programme": "Nepal Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "ZA": {
+      "name": "South Africa",
+      "flag": "🇿🇦",
+      "programme": "South African Biology Olympiad (SABO)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "KR": {
+      "name": "South Korea",
+      "flag": "🇰🇷",
+      "programme": "Korean Biology Olympiad (KBO)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "JP": {
+      "name": "Japan",
+      "flag": "🇯🇵",
+      "programme": "Japan Biology Olympiad (JBO)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "FR": {
+      "name": "France",
+      "flag": "🇫🇷",
+      "programme": "French Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "BR": {
+      "name": "Brazil",
+      "flag": "🇧🇷",
+      "programme": "Brazilian Biology Olympiad (OBB)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "TH": {
+      "name": "Thailand",
+      "flag": "🇹🇭",
+      "programme": "Thailand Biology Olympiad (TBO)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "VN": {
+      "name": "Vietnam",
+      "flag": "🇻🇳",
+      "programme": "Vietnamese Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "TW": {
+      "name": "Taiwan",
+      "flag": "🇹🇼",
+      "programme": "Taiwan Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "NG": {
+      "name": "Nigeria",
+      "flag": "🇳🇬",
+      "programme": "Nigerian Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "KE": {
+      "name": "Kenya",
+      "flag": "🇰🇪",
+      "programme": "Kenya Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "EG": {
+      "name": "Egypt",
+      "flag": "🇪🇬",
+      "programme": "Egyptian Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "TR": {
+      "name": "Turkey",
+      "flag": "🇹🇷",
+      "programme": "Turkish Biology Olympiad (TBiyO)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "SE": {
+      "name": "Sweden",
+      "flag": "🇸🇪",
+      "programme": "Swedish Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "CH": {
+      "name": "Switzerland",
+      "flag": "🇨🇭",
+      "programme": "Swiss Biology Olympiad (SBO)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "IT": {
+      "name": "Italy",
+      "flag": "🇮🇹",
+      "programme": "Italian Biology Olympiad (OBI)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "PL": {
+      "name": "Poland",
+      "flag": "🇵🇱",
+      "programme": "Polish Biology Olympiad (OlBiol)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "IE": {
+      "name": "Ireland",
+      "flag": "🇮🇪",
+      "programme": "Irish Biology Olympiad (IrBO)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "NZ": {
+      "name": "New Zealand",
+      "flag": "🇳🇿",
+      "programme": "New Zealand Biology Olympiad (NZBO)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "MX": {
+      "name": "Mexico",
+      "flag": "🇲🇽",
+      "programme": "Olimpiada Nacional de Biologia",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "CL": {
+      "name": "Chile",
+      "flag": "🇨🇱",
+      "programme": "Chilean Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "AT": {
+      "name": "Austria",
+      "flag": "🇦🇹",
+      "programme": "Austrian Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "FI": {
+      "name": "Finland",
+      "flag": "🇫🇮",
+      "programme": "Finnish Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "DK": {
+      "name": "Denmark",
+      "flag": "🇩🇰",
+      "programme": "Danish Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "NO": {
+      "name": "Norway",
+      "flag": "🇳🇴",
+      "programme": "Norwegian Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "GH": {
+      "name": "Ghana",
+      "flag": "🇬🇭",
+      "programme": "Ghana Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "ET": {
+      "name": "Ethiopia",
+      "flag": "🇪🇹",
+      "programme": "Ethiopian Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    }
+  }
+}

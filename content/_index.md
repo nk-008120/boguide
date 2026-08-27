@@ -68,14 +68,14 @@ We cover the full IBO syllabus: 15+ sections, 150+ topic pages, growing every we
   {{< card link="/resources/1-cell-molecular/" title="1. Molecular, Cell Biology & Biochemistry" subtitle="Cell structure, biomolecules, enzymes, membrane transport, and core biochemical pathways." tag="✅ Verified" tagColor="green" >}}
   {{< card link="/resources/2-animal-anatomy/" title="2. Animal Anatomy" subtitle="Structural anatomy for IBO/USABO, from human systems to comparative vertebrate and invertebrate body plans." tag="✅ Verified" tagColor="green" >}}
   {{< card link="/resources/3-animal-physiology/" title="3. Animal Physiology" subtitle="The function-side complement to Animal Anatomy: regulatory and organ-system mechanisms across taxa." tag="✅ Verified" tagColor="green" >}}
-  {{< card link="/resources/4-biosystematics/" title="4. Biosystematics" subtitle="Classification and phylogenetics: taxonomic hierarchy, species concepts, cladistics, molecular systematics." >}}
+  {{< card link="/resources/4-biosystematics/" title="4. Biosystematics" subtitle="Classification and phylogenetics: taxonomic hierarchy, species concepts, cladistics, molecular systematics." tag="✅ Verified" tagColor="green" >}}
   {{< card link="/resources/5-plant-physiology/" title="5. Plant Physiology" subtitle="Water/nutrient transport, photosynthetic biochemistry, hormone-driven growth, and stress physiology." tag="✅ Verified" tagColor="green" >}}
   {{< card link="/resources/6-plant-anatomy/" title="6. Plant Anatomy" subtitle="Plant tissue systems, root/stem/leaf structure, and reproductive anatomy." tag="✅ Verified" tagColor="green" >}}
   {{< card link="/resources/7-genetics/" title="7. Genetics" subtitle="Mendelian inheritance and its extensions, sex linkage and pedigree analysis, chromosomal linkage/mapping and aberrations, and quantitative/non-Mendelian inheritance." tag="✅ Verified" tagColor="green" >}}
   {{< card link="/resources/8-ecology/" title="8. Ecology" subtitle="Population dynamics, community ecology, ecosystems, biogeography, and conservation biology." tag="✅ Verified" tagColor="green" >}}
   {{< card link="/resources/9-ethology/" title="9. Ethology" subtitle="Animal behavior: proximate/ultimate causation, learning, communication, and social structure." tag="✅ Verified" tagColor="green" >}}
   {{< card link="/resources/10-bioinformatics/" title="10. Bioinformatics" subtitle="Databases, BLAST, alignments, phylogenetics, genome analysis, and protein structure." tag="✅ Verified" tagColor="green" >}}
-  {{< card link="/resources/11-practical-1/" title="11. Practical I" subtitle="Coming soon." >}}
+  {{< card link="/resources/11-practical-1/" title="11. Practical I" subtitle="Molecular biology and biochemistry practicals: restriction mapping, PCR genotyping, Ni-NTA chromatography, Bradford assay, enzyme kinetics, EMSA, and integrated workflows." tag="✅ Verified · New" tagColor="green" >}}
   {{< card link="/resources/12-practical-2/" title="12. Practical II" subtitle="Coming soon." >}}
   {{< card link="/resources/13-practical-3/" title="13. Practical III" subtitle="Coming soon." >}}
   {{< card link="/resources/14-practical-4/" title="14. Plant Computational Biology" subtitle="ImageJ/Fiji image analysis and Streamlit interactive plotting for the IBO practical." tag="✅ Verified" tagColor="green" >}}
@@ -356,6 +356,13 @@ html.dark .recent-updates-table th {
 }
 html.dark .recent-updates-table tbody tr {
   border-top-color: rgba(255, 255, 255, 0.08);
+}
+html.dark .recent-updates-table td {
+  color: #d1d1d1;
+}
+html.dark .recent-updates-table td:first-child,
+html.dark .recent-updates-table td:last-child {
+  color: #a0a0a0;
 }
 
 /* Responsive */

@@ -25,26 +25,35 @@ This is the general preparation framework that applies regardless of which Biolo
 
 ## Choose your olympiad
 
-<div class="feature-cards">
-  <a href="/inbo-preparation/" class="card">
-    <div class="card-icon">🇮🇳</div>
-    <h3>INBO</h3>
-    <p>India's national pathway: NSEB screening, INBO theory paper, OCSC selection camp, then IBO. Broad syllabus with increasing theoretical depth at each stage.</p>
-    <span class="btn-outline">See INBO guide &rarr;</span>
+<a href="/ibo-preparation/" class="olympiad-hero-card">
+  <div class="olympiad-hero-icon">🌍</div>
+  <div class="olympiad-hero-content">
+    <h3>International Biology Olympiad</h3>
+    <p>The international final: theory papers plus practical lab exams. The broadest and deepest level of competition, with real emphasis on data analysis and cross-topic synthesis. This is the destination every national pathway leads to.</p>
+    <span class="btn-outline">IBO Preparation Guide &rarr;</span>
+  </div>
+</a>
+
+<div class="olympiad-compact-cards">
+  <a href="/inbo-preparation/" class="olympiad-compact-card">
+    <div class="olympiad-compact-flag">🇮🇳</div>
+    <div class="olympiad-compact-body">
+      <h4>INBO</h4>
+      <p>India's pathway: NSEB > INBO > OCSC > IBO</p>
+    </div>
+    <span class="olympiad-compact-arrow">&rarr;</span>
   </a>
-  <a href="/usabo-preparation/" class="card">
-    <div class="card-icon">🇺🇸</div>
-    <h3>USABO</h3>
-    <p>The US pathway: Open Exam (MCQ), Semifinal (MCQ + free-response), National Finals, then IBO. Heavy emphasis on Cell Biology, Genetics, and Physiology.</p>
-    <span class="btn-outline">See USABO guide &rarr;</span>
-  </a>
-  <a href="/ibo-preparation/" class="card">
-    <div class="card-icon">🌍</div>
-    <h3>IBO</h3>
-    <p>The international final: theory papers plus practical lab exams. The broadest and deepest of all three, with real emphasis on data analysis and cross-topic synthesis.</p>
-    <span class="btn-outline">See IBO guide &rarr;</span>
+  <a href="/usabo-preparation/" class="olympiad-compact-card">
+    <div class="olympiad-compact-flag">🇺🇸</div>
+    <div class="olympiad-compact-body">
+      <h4>USABO</h4>
+      <p>US pathway: Open > Semifinal > Finals > IBO</p>
+    </div>
+    <span class="olympiad-compact-arrow">&rarr;</span>
   </a>
 </div>
+
+{{< olympiad-map >}}
 
 Eligibility, dates, and registration details change year to year. Always check your olympiad's official site for current information. This guide covers preparation strategy, not administrative details.
 
@@ -309,12 +318,20 @@ The dashboard works entirely from your practice data -- no manual input needed. 
   overflow-x: auto;
 }
 
+html.dark .prep-guide-wrapper h2 {
+  color: #c9b7e8;
+}
+html.dark .prep-guide-wrapper p {
+  color: #d1d1d1;
+}
 html.dark .prep-guide-wrapper th,
 html.dark .prep-guide-wrapper td {
   border-color: rgba(255, 255, 255, 0.1);
+  color: #d1d1d1;
 }
 html.dark .prep-guide-wrapper th {
   background: rgba(201, 183, 232, 0.08);
+  color: #c9b7e8;
 }
 html.dark .prep-guide-wrapper pre {
   background: rgba(201, 183, 232, 0.06);

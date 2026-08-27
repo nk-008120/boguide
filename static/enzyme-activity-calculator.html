@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enzyme Activity Calculator | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 {
+    margin-top: 0;
+    color: #8965c4;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #8965c4;
+    padding-left: 12px;
+  }
+  .section {
+    margin-bottom: 1.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 1rem 1.2rem;
+  }
+  .section-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #8965c4;
+    margin: 0 0 0.2rem 0;
+  }
+  .section-desc {
+    font-size: 0.78rem;
+    color: #6b7280;
+    margin: 0 0 0.8rem 0;
+  }
+  .field {
+    margin-bottom: 10px;
+  }
+  .field label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 3px;
+  }
+  .field input[type=number],
+  .field select {
+    width: 100%;
+    padding: 7px 10px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 0.88rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    background: #fff;
+  }
+  .field input[type=number]:focus,
+  .field select:focus {
+    outline: none;
+    border-color: #8965c4;
+    box-shadow: 0 0 0 2px rgba(137,101,196,0.15);
+  }
+  .field-row {
+    display: flex;
+    gap: 10px;
+  }
+  .field-row .field { flex: 1; }
+  .unit-toggle {
+    display: inline-flex;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 3px;
+  }
+  .unit-toggle button {
+    padding: 5px 12px;
+    border: none;
+    background: #f8fafc;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #475569;
+    font-family: inherit;
+  }
+  .unit-toggle button.active {
+    background: #8965c4;
+    color: #fff;
+  }
+  .result-box {
+    background: #f5f0ff;
+    border-radius: 12px;
+    padding: 10px 14px;
+    margin-top: 8px;
+  }
+  .result-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+  }
+  .result-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #8965c4;
+  }
+  .formula-display {
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 8px 12px;
+    margin-top: 6px;
+    font-size: 0.82rem;
+    color: #475569;
+    line-height: 1.6;
+    overflow-x: auto;
+  }
+  .formula-display .frac {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0 4px;
+  }
+  .formula-display .frac-num {
+    border-bottom: 1px solid #9ca3af;
+    padding: 0 4px 2px;
+    font-size: 0.8rem;
+  }
+  .formula-display .frac-den {
+    padding: 2px 4px 0;
+    font-size: 0.8rem;
+  }
+  .formula-display .var {
+    font-style: italic;
+    color: #8965c4;
+    font-weight: 600;
+  }
+  .formula-display .val {
+    color: #1e293b;
+    font-weight: 600;
+  }
+  .formula-display .eq { margin: 0 4px; }
+  .formula-display .sym {
+    color: #6b7280;
+    margin: 0 2px;
+  }
+  .warning-box {
+    background: #fef9c3;
+    border: 1px solid #fbbf24;
+    border-radius: 10px;
+    padding: 8px 12px;
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: #92400e;
+    display: none;
+  }
+  .warning-box.visible { display: block; }
+  .preset-section {
+    margin-bottom: 1.5rem;
+  }
+  .preset-title {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #374151;
+    margin-bottom: 6px;
+  }
+  .preset-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .preset-btn {
+    padding: 6px 12px;
+    border-radius: 10px;
+    border: 1.5px solid #8965c4;
+    background: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #8965c4;
+    font-family: inherit;
+    transition: background 0.15s, color 0.15s;
+  }
+  .preset-btn:hover {
+    background: #8965c4;
+    color: #fff;
+  }
+  .preset-btn.active {
+    background: #8965c4;
+    color: #fff;
+  }
+  .step-calc {
+    font-size: 0.8rem;
+    color: #475569;
+    line-height: 1.7;
+    margin-top: 6px;
+  }
+  .step-calc .step-line {
+    display: block;
+    margin-bottom: 2px;
+  }
+  @media (max-width: 480px) {
+    .widget-container { padding: 1rem; }
+    .field-row { flex-direction: column; gap: 0; }
+    .preset-btns { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Enzyme Activity Calculator</h3>
+  <div class="subtitle">Calculate enzyme activity from spectrophotometric data -- the most common calculation in IBO practical exams. Combines Beer-Lambert law with activity computation.</div>
+
+  <!-- Exam Presets -->
+  <div class="preset-section">
+    <div class="preset-title">IBO Exam Presets</div>
+    <div class="preset-btns">
+      <button class="preset-btn" id="presetADH" onclick="applyPreset('adh')">ADH Assay (IBO 2022)</button>
+      <button class="preset-btn" id="presetPK" onclick="applyPreset('pk')">PK Coupled (IBO 2017)</button>
+      <button class="preset-btn" id="presetDia" onclick="applyPreset('dia')">Diaphorase (IBO 2023)</button>
+    </div>
+  </div>
+
+  <!-- Section 1: Beer-Lambert -->
+  <div class="section" id="sec1">
+    <div class="section-title">1. Beer-Lambert Law</div>
+    <div class="section-desc">Calculate concentration from absorbance</div>
+    <div class="field-row">
+      <div class="field">
+        <label>Absorbance (A)</label>
+        <input type="number" id="absorbance" step="0.001" min="0" value="0.5" oninput="recalcAll()">
+      </div>
+      <div class="field">
+        <label>Path length, l (cm)</label>
+        <input type="number" id="pathLength" step="0.1" min="0" value="1" oninput="recalcAll()">
+      </div>
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <label>Extinction coeff. preset</label>
+        <select id="epsilonPreset" onchange="onEpsilonPresetChange()">
+          <option value="nadh">NADH at 340 nm (6.22 mM⁻&#185; cm⁻&#185;)</option>
+          <option value="nbt">NBT formazan at 595 nm (12.3 mM⁻&#185; cm⁻&#185;)</option>
+          <option value="custom">Custom</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Epsilon (mM⁻&#185; cm⁻&#185;)</label>
+        <input type="number" id="epsilon" step="0.01" min="0" value="6.22" oninput="recalcAll()">
+      </div>
+    </div>
+    <div class="formula-display" id="blFormula"></div>
+    <div class="result-box" id="blResult">
+      <div class="result-label">Concentration</div>
+      <div class="result-value" id="blConc">--</div>
+    </div>
+  </div>
+
+  <!-- Section 2: Enzyme Activity -->
+  <div class="section" id="sec2">
+    <div class="section-title">2. Enzyme Activity</div>
+    <div class="section-desc">Calculate activity in U/mL (one Unit = 1 micromol substrate converted per minute)</div>
+    <div class="field-row">
+      <div class="field">
+        <label>Delta-A (change in absorbance)</label>
+        <input type="number" id="deltaA" step="0.001" min="0" value="0.35" oninput="recalcAll()">
+      </div>
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <label>Delta-t (time interval)</label>
+        <input type="number" id="deltaT" step="0.1" min="0" value="5" oninput="recalcAll()">
+      </div>
+      <div class="field">
+        <label>Time unit</label>
+        <div class="unit-toggle" id="timeToggle">
+          <button class="active" onclick="setTimeUnit('min')">minutes</button>
+          <button onclick="setTimeUnit('sec')">seconds</button>
+        </div>
+      </div>
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <label>V_total (total assay vol., mL)</label>
+        <input type="number" id="vTotal" step="0.01" min="0" value="3.0" oninput="recalcAll()">
+      </div>
+      <div class="field">
+        <label>V_enzyme (enzyme vol., mL)</label>
+        <input type="number" id="vEnzyme" step="0.001" min="0" value="0.1" oninput="recalcAll()">
+      </div>
+    </div>
+    <div class="field-row">
+      <div class="field">
+        <label>Epsilon (mM⁻&#185; cm⁻&#185;) -- auto-filled from Section 1</label>
+        <input type="number" id="epsilonAct" step="0.01" min="0" value="6.22" oninput="recalcAll()">
+      </div>
+    </div>
+    <div id="secWarning" class="warning-box"></div>
+    <div class="formula-display" id="actFormula"></div>
+    <div class="step-calc" id="actSteps"></div>
+    <div class="result-box" id="actResult">
+      <div class="result-label">Enzyme Activity</div>
+      <div class="result-value" id="actValue">--</div>
+    </div>
+    <div id="highWarning" class="warning-box"></div>
+  </div>
+
+  <!-- Section 3: Specific Activity -->
+  <div class="section" id="sec3">
+    <div class="section-title">3. Specific Activity (optional)</div>
+    <div class="section-desc">Normalize by protein concentration (e.g. from Bradford assay)</div>
+    <div class="field">
+      <label>Protein concentration (mg/mL)</label>
+      <input type="number" id="protConc" step="0.01" min="0" value="" placeholder="Leave blank to skip" oninput="recalcAll()">
+    </div>
+    <div class="formula-display" id="specFormula"></div>
+    <div class="result-box" id="specResult" style="display:none;">
+      <div class="result-label">Specific Activity</div>
+      <div class="result-value" id="specValue">--</div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var timeUnit = "min"; // "min" or "sec"
+
+  function el(id) { return document.getElementById(id); }
+
+  function numVal(id) {
+    var v = parseFloat(el(id).value);
+    return isNaN(v) ? 0 : v;
+  }
+
+  function fmt(n, decimals) {
+    if (typeof decimals === "undefined") decimals = 4;
+    if (n === Infinity || n === -Infinity || isNaN(n)) return "--";
+    if (Math.abs(n) < 0.0001 && n !== 0) return n.toExponential(3);
+    return parseFloat(n.toFixed(decimals)).toString();
+  }
+
+  // Expose to global for inline handlers
+  window.setTimeUnit = function(unit) {
+    timeUnit = unit;
+    var btns = el("timeToggle").querySelectorAll("button");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].className = "";
+    }
+    if (unit === "min") {
+      btns[0].className = "active";
+    } else {
+      btns[1].className = "active";
+    }
+    recalcAll();
+  };
+
+  window.onEpsilonPresetChange = function() {
+    var sel = el("epsilonPreset").value;
+    if (sel === "nadh") {
+      el("epsilon").value = "6.22";
+    } else if (sel === "nbt") {
+      el("epsilon").value = "12.3";
+    }
+    // For "custom", leave whatever the user typed
+    if (sel !== "custom") {
+      el("epsilon").readOnly = false;
+    }
+    recalcAll();
+  };
+
+  function syncEpsilon() {
+    // Auto-fill Section 2 epsilon from Section 1
+    el("epsilonAct").value = el("epsilon").value;
+  }
+
+  var presets = {
+    adh: { epsilon: 6.22, vTotal: 3.0, vEnzyme: 0.1, preset: "nadh", label: "ADH Assay (IBO 2022)" },
+    pk:  { epsilon: 6.22, vTotal: 1.0, vEnzyme: 0.05, preset: "nadh", label: "PK Coupled (IBO 2017)" },
+    dia: { epsilon: 12.3, vTotal: 0.2, vEnzyme: 0.02, preset: "nbt", label: "Diaphorase (IBO 2023)" }
+  };
+
+  window.applyPreset = function(key) {
+    var p = presets[key];
+    if (!p) return;
+    el("epsilon").value = p.epsilon;
+    el("epsilonPreset").value = p.preset;
+    el("vTotal").value = p.vTotal;
+    el("vEnzyme").value = p.vEnzyme;
+    el("epsilonAct").value = p.epsilon;
+
+    // Highlight active preset button
+    var btns = document.querySelectorAll(".preset-btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].className = "preset-btn";
+    }
+    if (key === "adh") el("presetADH").className = "preset-btn active";
+    if (key === "pk") el("presetPK").className = "preset-btn active";
+    if (key === "dia") el("presetDia").className = "preset-btn active";
+
+    recalcAll();
+  };
+
+  function buildFrac(num, den) {
+    return '<span class="frac"><span class="frac-num">' + num + '</span><span class="frac-den">' + den + '</span></span>';
+  }
+
+  function recalcAll() {
+    syncEpsilon();
+
+    // --- Section 1: Beer-Lambert ---
+    var A = numVal("absorbance");
+    var eps = numVal("epsilon");
+    var l = numVal("pathLength");
+
+    var conc = 0;
+    if (eps > 0 && l > 0) {
+      conc = A / (eps * l);
+    }
+
+    // Formula display
+    var blHtml = '<span class="var">A</span><span class="eq">=</span>'
+      + '<span class="var">&epsilon;</span><span class="sym">&middot;</span>'
+      + '<span class="var">c</span><span class="sym">&middot;</span>'
+      + '<span class="var">l</span>';
+    blHtml += '&nbsp;&nbsp;&rarr;&nbsp;&nbsp;';
+    blHtml += '<span class="var">c</span><span class="eq">=</span>'
+      + buildFrac('<span class="var">A</span>', '<span class="var">&epsilon;</span><span class="sym">&middot;</span><span class="var">l</span>');
+    blHtml += '<span class="eq">=</span>'
+      + buildFrac('<span class="val">' + fmt(A, 3) + '</span>',
+                  '<span class="val">' + fmt(eps, 2) + '</span><span class="sym">&middot;</span><span class="val">' + fmt(l, 1) + '</span>');
+    blHtml += '<span class="eq">=</span><span class="val">' + fmt(conc) + ' mM</span>';
+    el("blFormula").innerHTML = blHtml;
+    el("blConc").textContent = (eps > 0 && l > 0) ? fmt(conc) + " mM" : "--";
+
+    // --- Section 2: Enzyme Activity ---
+    var dA = numVal("deltaA");
+    var dT = numVal("deltaT");
+    var vTot = numVal("vTotal");
+    var vEnz = numVal("vEnzyme");
+    var epsAct = numVal("epsilonAct");
+
+    // Convert seconds to minutes if needed
+    var dTmin = dT;
+    if (timeUnit === "sec") {
+      dTmin = dT / 60;
+    }
+
+    // Show seconds warning
+    var secWarn = el("secWarning");
+    if (timeUnit === "sec") {
+      secWarn.innerHTML = "<strong>Check your units!</strong> If Delta-t is in seconds, the calculator converts to minutes automatically. "
+        + "Using seconds directly gives an activity 60x too high -- a common IBO exam trap. "
+        + "Your " + fmt(dT, 1) + " s = " + fmt(dTmin, 4) + " min.";
+      secWarn.className = "warning-box visible";
+    } else {
+      secWarn.className = "warning-box";
+    }
+
+    var activity = 0;
+    var canCalc = (epsAct > 0 && vEnz > 0 && dTmin > 0);
+    if (canCalc) {
+      // Activity (U/mL) = (Delta-A * V_total) / (epsilon * V_enzyme * Delta-t_min)
+      // Note: epsilon in mM-1 cm-1, volumes in mL
+      // This gives micromol/min/mL = U/mL
+      activity = (dA * vTot) / (epsAct * vEnz * dTmin);
+    }
+
+    // Formula
+    var actHtml = '<span class="var">Activity</span><span class="eq">=</span>'
+      + buildFrac(
+          '<span class="var">&Delta;A</span><span class="sym">&middot;</span><span class="var">V</span><sub>total</sub>',
+          '<span class="var">&epsilon;</span><span class="sym">&middot;</span><span class="var">V</span><sub>enzyme</sub><span class="sym">&middot;</span><span class="var">&Delta;t</span>'
+        );
+    el("actFormula").innerHTML = actHtml;
+
+    // Step-by-step
+    var stepsHtml = "";
+    if (canCalc) {
+      var timeLabel = timeUnit === "sec" ? fmt(dT, 1) + " s = " + fmt(dTmin, 4) + " min" : fmt(dTmin, 2) + " min";
+      stepsHtml += '<span class="step-line">Substituting values:</span>';
+      stepsHtml += '<span class="step-line">&nbsp;&nbsp;= '
+        + buildFrac(
+            '<span class="val">' + fmt(dA, 3) + '</span><span class="sym">&middot;</span><span class="val">' + fmt(vTot, 2) + '</span>',
+            '<span class="val">' + fmt(epsAct, 2) + '</span><span class="sym">&middot;</span><span class="val">' + fmt(vEnz, 3) + '</span><span class="sym">&middot;</span><span class="val">' + fmt(dTmin, 4) + '</span>'
+          )
+        + '</span>';
+      stepsHtml += '<span class="step-line">&nbsp;&nbsp;= '
+        + buildFrac(
+            '<span class="val">' + fmt(dA * vTot, 4) + '</span>',
+            '<span class="val">' + fmt(epsAct * vEnz * dTmin, 4) + '</span>'
+          )
+        + '</span>';
+      stepsHtml += '<span class="step-line">&nbsp;&nbsp;= <span class="val">' + fmt(activity) + ' U/mL</span></span>';
+      if (timeUnit === "sec") {
+        stepsHtml += '<span class="step-line" style="color:#92400e;">&nbsp;&nbsp;(Delta-t converted: ' + timeLabel + ')</span>';
+      }
+    }
+    el("actSteps").innerHTML = stepsHtml;
+    el("actValue").textContent = canCalc ? fmt(activity) + " U/mL" : "--";
+
+    // High activity warning
+    var highWarn = el("highWarning");
+    if (canCalc && activity > 100) {
+      highWarn.innerHTML = "<strong>This seems high.</strong> Did you use seconds instead of minutes for Delta-t? "
+        + "An activity of " + fmt(activity, 2) + " U/mL is unusually large for most assays.";
+      highWarn.className = "warning-box visible";
+    } else {
+      highWarn.className = "warning-box";
+    }
+
+    // --- Section 3: Specific Activity ---
+    var prot = numVal("protConc");
+    var specBox = el("specResult");
+    var specFormula = el("specFormula");
+
+    if (prot > 0 && canCalc) {
+      var specAct = activity / prot;
+      specBox.style.display = "";
+      el("specValue").textContent = fmt(specAct) + " U/mg";
+      var specHtml = '<span class="var">Specific Activity</span><span class="eq">=</span>'
+        + buildFrac(
+            '<span class="var">Activity</span>',
+            '<span class="var">[protein]</span>'
+          );
+      specHtml += '<span class="eq">=</span>'
+        + buildFrac(
+            '<span class="val">' + fmt(activity) + ' U/mL</span>',
+            '<span class="val">' + fmt(prot, 2) + ' mg/mL</span>'
+          );
+      specHtml += '<span class="eq">=</span><span class="val">' + fmt(specAct) + ' U/mg</span>';
+      specFormula.innerHTML = specHtml;
+    } else {
+      specBox.style.display = "none";
+      if (prot > 0) {
+        specFormula.innerHTML = '<span style="color:#9ca3af;">Enter enzyme activity inputs above first.</span>';
+      } else {
+        specFormula.innerHTML = '<span style="color:#9ca3af;">Enter protein concentration to calculate specific activity.</span>';
+      }
+    }
+  }
+
+  window.recalcAll = recalcAll;
+
+  // Initial calculation
+  recalcAll();
+})();
+</script>
+</body>
+</html>

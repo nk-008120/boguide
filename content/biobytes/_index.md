@@ -30,6 +30,17 @@ cascade:
   </a>
 </div>
 {{< /tab >}}
+{{< tab name="Testimonials" >}}
+<div class="testimonial-cards">
+  <a href="/biobytes/testimonials/turkmenistan-ibo-team/" class="card testimonial-card">
+    <div class="card-icon">🇹🇲</div>
+    <h3>From Turkmenistan to IBO</h3>
+    <p class="testimonial-pullquote">"We don't have a stable teacher guiding us -- BiOGuide gives us the structure we've been missing."</p>
+    <div class="testimonial-meta">Meryem &middot; 6 students preparing for IBO</div>
+    <span class="btn-outline">Read Their Story &rarr;</span>
+  </a>
+</div>
+{{< /tab >}}
 {{< tab name="From Social" >}} 
 <div class="social-cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; width: 100%;"> 
 <a href="https://instagram.com" target="_blank" rel="noreferrer" class="social-card" style="display: block; text-decoration: none; color: inherit;"> 

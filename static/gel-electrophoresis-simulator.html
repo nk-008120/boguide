@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gel Electrophoresis Simulator | BiOGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 {
+    margin-top: 0;
+    color: #8965c4;
+    font-weight: 700;
+    font-size: 1.15rem;
+  }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #8965c4;
+    padding-left: 12px;
+    line-height: 1.5;
+  }
+  .controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  .controls select {
+    padding: 7px 14px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    border: 1.5px solid #d1d5db;
+    background: #fff;
+    color: #1e293b;
+    cursor: pointer;
+    flex: 1;
+    min-width: 160px;
+  }
+  .controls select:focus {
+    outline: none;
+    border-color: #8965c4;
+    box-shadow: 0 0 0 3px rgba(137,101,196,0.15);
+  }
+  .btn {
+    padding: 7px 14px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    transition: background 0.15s, transform 0.1s;
+  }
+  .btn:active { transform: scale(0.97); }
+  .btn-primary {
+    background: #8965c4;
+    color: #fff;
+  }
+  .btn-primary:hover { background: #7a55b8; }
+  .btn-secondary {
+    background: #f1ecf8;
+    color: #8965c4;
+    border: 1.5px solid #d6c8ed;
+  }
+  .btn-secondary:hover { background: #e6ddf2; }
+  .btn-danger {
+    background: #fef2f2;
+    color: #dc2626;
+    border: 1.5px solid #fecaca;
+  }
+  .btn-danger:hover { background: #fee2e2; }
+
+  .gel-wrapper {
+    background: #111827;
+    border-radius: 16px;
+    padding: 12px 16px 16px 16px;
+    position: relative;
+  }
+  .gel-wrapper svg {
+    width: 100%;
+    display: block;
+  }
+
+  .tooltip-box {
+    position: absolute;
+    background: rgba(255,255,255,0.95);
+    color: #1e293b;
+    font-size: 0.75rem;
+    padding: 5px 10px;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.15s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    z-index: 10;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+  .tooltip-box.visible { opacity: 1; }
+
+  .info-panel {
+    margin-top: 12px;
+    padding: 10px 14px;
+    background: #f9f7fc;
+    border-radius: 12px;
+    font-size: 0.78rem;
+    color: #4b5563;
+    min-height: 24px;
+    border: 1px solid #ede9f4;
+  }
+  .info-panel strong { color: #8965c4; }
+
+  .legend {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .legend-item {
+    font-size: 0.72rem;
+    padding: 4px 10px;
+    border-radius: 8px;
+    background: #f1ecf8;
+    color: #6b4fa0;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.15s, opacity 0.15s;
+    border: 1px solid transparent;
+  }
+  .legend-item:hover { background: #e6ddf2; }
+  .legend-item.hidden-lane {
+    opacity: 0.4;
+    text-decoration: line-through;
+    background: #f3f4f6;
+    color: #9ca3af;
+  }
+  .legend-sizes {
+    font-size: 0.65rem;
+    color: #9ca3af;
+    margin-left: 4px;
+  }
+
+  .add-lane-form {
+    display: none;
+    margin-top: 10px;
+    padding: 12px;
+    background: #f9f7fc;
+    border-radius: 12px;
+    border: 1.5px solid #ede9f4;
+  }
+  .add-lane-form.open { display: block; }
+  .add-lane-form label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #4b5563;
+    display: block;
+    margin-bottom: 4px;
+  }
+  .add-lane-form input {
+    width: 100%;
+    padding: 6px 10px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 0.78rem;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    color: #1e293b;
+    font-family: inherit;
+  }
+  .add-lane-form input:focus {
+    outline: none;
+    border-color: #8965c4;
+    box-shadow: 0 0 0 3px rgba(137,101,196,0.15);
+  }
+  .add-lane-form .form-hint {
+    font-size: 0.68rem;
+    color: #9ca3af;
+    margin-top: -4px;
+    margin-bottom: 8px;
+  }
+  .add-lane-form .form-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+  }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Gel Electrophoresis Simulator</h3>
+  <div class="subtitle">Simulates agarose gel electrophoresis with ethidium bromide staining viewed on a UV transilluminator. DNA fragments migrate through the gel matrix and separate by size -- smaller fragments travel farther.</div>
+
+  <div class="controls">
+    <select id="presetSelect">
+      <option value="0">IBO 2015 -- Restriction Mapping</option>
+      <option value="1">IBO 2015 -- PCR Genotyping</option>
+      <option value="2">IBO 2018 -- EMSA (Gel Shift)</option>
+      <option value="3">Custom</option>
+    </select>
+    <button class="btn btn-primary" id="addLaneBtn">+ Add Lane</button>
+    <button class="btn btn-danger" id="resetBtn">Reset</button>
+  </div>
+
+  <div class="add-lane-form" id="addLaneForm">
+    <label for="laneLabelInput">Lane Label</label>
+    <input type="text" id="laneLabelInput" placeholder="e.g. Sample A" maxlength="24">
+    <label for="laneSizesInput">Fragment Sizes (bp)</label>
+    <input type="text" id="laneSizesInput" placeholder="e.g. 3000, 1500, 750">
+    <div class="form-hint">Comma-separated base pair sizes. Leave empty for a degraded smear.</div>
+    <div class="form-actions">
+      <button class="btn btn-secondary" id="cancelLaneBtn">Cancel</button>
+      <button class="btn btn-primary" id="confirmLaneBtn">Add</button>
+    </div>
+  </div>
+
+  <div class="gel-wrapper" id="gelWrapper">
+    <svg id="gelSvg" viewBox="0 0 600 420" xmlns="http://www.w3.org/2000/svg"></svg>
+    <div class="tooltip-box" id="tooltip"></div>
+  </div>
+
+  <div class="info-panel" id="infoPanel">Hover over a band to see its size.</div>
+
+  <div class="legend" id="legend"></div>
+</div>
+
+<script>
+(function() {
+  "use strict";
+
+  /* ---- constants ---- */
+  var MIN_BP = 100;
+  var MAX_BP = 12000;
+  var GEL_TOP = 55;
+  var GEL_BOTTOM = 400;
+  var GEL_LEFT = 80;
+  var GEL_RIGHT = 580;
+  var WELL_HEIGHT = 10;
+  var SVG_NS = "http://www.w3.org/2000/svg";
+
+  /* ---- 1kb ladder ---- */
+  var LADDER_SIZES = [10000, 8000, 6000, 5000, 4000, 3000, 2500, 2000, 1500, 1000, 750, 500, 250];
+  var LADDER_BRIGHT = {1000: true, 500: true};
+
+  /* ---- presets ---- */
+  var PRESETS = [
+    {
+      name: "IBO 2015 -- Restriction Mapping",
+      lanes: [
+        {label: "L", sizes: LADDER_SIZES.slice(), isLadder: true},
+        {label: "Uncut pX", sizes: [3200], notes: "uncut"},
+        {label: "ApaI", sizes: [2000, 1200]},
+        {label: "EcoRI", sizes: [1800, 1400]},
+        {label: "ApaI+EcoRI", sizes: [1200, 800, 700, 500]}
+      ]
+    },
+    {
+      name: "IBO 2015 -- PCR Genotyping",
+      lanes: [
+        {label: "L", sizes: LADDER_SIZES.slice(), isLadder: true},
+        {label: "WT (TYR1)", sizes: [500]},
+        {label: "Mut (TYR1)", sizes: [400]},
+        {label: "WT (ARO7)", sizes: [500]},
+        {label: "Mut (ARO7)", sizes: [300]},
+        {label: "WT (TRP5)", sizes: [500]},
+        {label: "Mut (TRP5)", sizes: [350]}
+      ]
+    },
+    {
+      name: "IBO 2018 -- EMSA (Gel Shift)",
+      lanes: [
+        {label: "L", sizes: LADDER_SIZES.slice(), isLadder: true},
+        {label: "Free DNA", sizes: [4500]},
+        {label: "DNA+Pep(1x)", sizes: [4500, 6000]},
+        {label: "DNA+Pep(5x)", sizes: [7000]},
+        {label: "DNA+DNase", sizes: [], smear: true},
+        {label: "DNA+Pep+DNase", sizes: [7000]}
+      ]
+    },
+    {
+      name: "Custom",
+      lanes: [
+        {label: "L", sizes: LADDER_SIZES.slice(), isLadder: true}
+      ]
+    }
+  ];
+
+  /* ---- state ---- */
+  var currentLanes = [];
+  var hiddenLanes = {};
+  var currentPreset = 0;
+
+  /* ---- DOM refs ---- */
+  var svg = document.getElementById("gelSvg");
+  var tooltip = document.getElementById("tooltip");
+  var infoPanel = document.getElementById("infoPanel");
+  var legendEl = document.getElementById("legend");
+  var presetSelect = document.getElementById("presetSelect");
+  var addLaneBtn = document.getElementById("addLaneBtn");
+  var resetBtn = document.getElementById("resetBtn");
+  var addLaneForm = document.getElementById("addLaneForm");
+  var laneLabelInput = document.getElementById("laneLabelInput");
+  var laneSizesInput = document.getElementById("laneSizesInput");
+  var cancelLaneBtn = document.getElementById("cancelLaneBtn");
+  var confirmLaneBtn = document.getElementById("confirmLaneBtn");
+  var gelWrapper = document.getElementById("gelWrapper");
+
+  /* ---- helpers ---- */
+  function log10(x) {
+    return Math.log(x) / Math.LN10;
+  }
+
+  function bpToY(bp) {
+    var clamped = Math.max(MIN_BP, Math.min(MAX_BP, bp));
+    var frac = (log10(MAX_BP) - log10(clamped)) / (log10(MAX_BP) - log10(MIN_BP));
+    return GEL_TOP + frac * (GEL_BOTTOM - GEL_TOP);
+  }
+
+  function bandWidth(bp) {
+    /* larger fragments resolve as thicker (wider) bands */
+    var base = 4;
+    var extra = (log10(bp) - log10(MIN_BP)) / (log10(MAX_BP) - log10(MIN_BP));
+    return base + extra * 3.5;
+  }
+
+  function deepCopy(arr) {
+    var out = [];
+    for (var i = 0; i < arr.length; i++) {
+      var lane = arr[i];
+      var copy = {
+        label: lane.label,
+        sizes: lane.sizes.slice(),
+        isLadder: !!lane.isLadder,
+        smear: !!lane.smear,
+        notes: lane.notes || ""
+      };
+      out.push(copy);
+    }
+    return out;
+  }
+
+  function el(tag, attrs) {
+    var node = document.createElementNS(SVG_NS, tag);
+    if (attrs) {
+      for (var k in attrs) {
+        if (attrs.hasOwnProperty(k)) {
+          node.setAttribute(k, attrs[k]);
+        }
+      }
+    }
+    return node;
+  }
+
+  /* ---- rendering ---- */
+  function render() {
+    svg.innerHTML = "";
+
+    var totalLanes = currentLanes.length;
+    if (totalLanes === 0) return;
+
+    var laneWidth = (GEL_RIGHT - GEL_LEFT) / totalLanes;
+
+    /* -- defs: glow filter -- */
+    var defs = el("defs");
+
+    var filter = el("filter", {id: "bandGlow", x: "-50%", y: "-50%", width: "200%", height: "200%"});
+    var blur1 = el("feGaussianBlur", {"in": "SourceGraphic", stdDeviation: "3", result: "blur1"});
+    filter.appendChild(blur1);
+    var blur2 = el("feGaussianBlur", {"in": "SourceGraphic", stdDeviation: "1.5", result: "blur2"});
+    filter.appendChild(blur2);
+    var merge = el("feMerge");
+    var mn1 = el("feMergeNode", {"in": "blur1"});
+    merge.appendChild(mn1);
+    var mn2 = el("feMergeNode", {"in": "blur2"});
+    merge.appendChild(mn2);
+    var mn3 = el("feMergeNode", {"in": "SourceGraphic"});
+    merge.appendChild(mn3);
+    filter.appendChild(merge);
+    defs.appendChild(filter);
+
+    /* highlight glow filter -- brighter */
+    var filterHi = el("filter", {id: "bandGlowHi", x: "-50%", y: "-50%", width: "200%", height: "200%"});
+    var blurH1 = el("feGaussianBlur", {"in": "SourceGraphic", stdDeviation: "5", result: "blur1"});
+    filterHi.appendChild(blurH1);
+    var blurH2 = el("feGaussianBlur", {"in": "SourceGraphic", stdDeviation: "2", result: "blur2"});
+    filterHi.appendChild(blurH2);
+    var mergeH = el("feMerge");
+    mergeH.appendChild(el("feMergeNode", {"in": "blur1"}));
+    mergeH.appendChild(el("feMergeNode", {"in": "blur2"}));
+    mergeH.appendChild(el("feMergeNode", {"in": "SourceGraphic"}));
+    filterHi.appendChild(mergeH);
+    defs.appendChild(filterHi);
+
+    /* smear gradient */
+    var smearGrad = el("linearGradient", {id: "smearGrad", x1: "0", y1: "0", x2: "0", y2: "1"});
+    var stop1 = el("stop", {offset: "0%", "stop-color": "#ff8c42", "stop-opacity": "0.25"});
+    smearGrad.appendChild(stop1);
+    var stop2 = el("stop", {offset: "40%", "stop-color": "#ff8c42", "stop-opacity": "0.12"});
+    smearGrad.appendChild(stop2);
+    var stop3 = el("stop", {offset: "100%", "stop-color": "#ff8c42", "stop-opacity": "0.03"});
+    smearGrad.appendChild(stop3);
+    defs.appendChild(smearGrad);
+
+    svg.appendChild(defs);
+
+    /* -- gel background -- */
+    var gelBg = el("rect", {
+      x: GEL_LEFT - 4, y: GEL_TOP - 18,
+      width: GEL_RIGHT - GEL_LEFT + 8,
+      height: GEL_BOTTOM - GEL_TOP + 30,
+      rx: "6", ry: "6",
+      fill: "#0d1117"
+    });
+    svg.appendChild(gelBg);
+
+    /* -- subtle gel texture -- */
+    var gelOverlay = el("rect", {
+      x: GEL_LEFT - 4, y: GEL_TOP - 18,
+      width: GEL_RIGHT - GEL_LEFT + 8,
+      height: GEL_BOTTOM - GEL_TOP + 30,
+      rx: "6", ry: "6",
+      fill: "none",
+      stroke: "#1e293b",
+      "stroke-width": "1"
+    });
+    svg.appendChild(gelOverlay);
+
+    /* -- polarity labels -- */
+    var negLabel = el("text", {
+      x: GEL_LEFT - 20, y: GEL_TOP - 4,
+      fill: "#ef4444", "font-size": "11", "font-weight": "700",
+      "text-anchor": "middle", "font-family": "Inter, system-ui, sans-serif"
+    });
+    negLabel.textContent = "( - )";
+    svg.appendChild(negLabel);
+
+    var posLabel = el("text", {
+      x: GEL_LEFT - 20, y: GEL_BOTTOM + 8,
+      fill: "#22c55e", "font-size": "11", "font-weight": "700",
+      "text-anchor": "middle", "font-family": "Inter, system-ui, sans-serif"
+    });
+    posLabel.textContent = "( + )";
+    svg.appendChild(posLabel);
+
+    /* -- ladder labels on left margin -- */
+    for (var li = 0; li < LADDER_SIZES.length; li++) {
+      var lbp = LADDER_SIZES[li];
+      var ly = bpToY(lbp);
+      var lText = el("text", {
+        x: GEL_LEFT - 8, y: ly + 3,
+        fill: "#6b7280", "font-size": "8",
+        "text-anchor": "end",
+        "font-family": "Inter, system-ui, sans-serif"
+      });
+      var displayBp = lbp >= 1000 ? (lbp / 1000) + "kb" : lbp + "";
+      lText.textContent = displayBp;
+      svg.appendChild(lText);
+
+      /* faint dashed guide line */
+      var guide = el("line", {
+        x1: GEL_LEFT - 3, y1: ly,
+        x2: GEL_LEFT, y2: ly,
+        stroke: "#374151", "stroke-width": "0.5"
+      });
+      svg.appendChild(guide);
+    }
+
+    /* -- lanes -- */
+    for (var i = 0; i < totalLanes; i++) {
+      var lane = currentLanes[i];
+      var cx = GEL_LEFT + (i + 0.5) * laneWidth;
+      var halfW = laneWidth * 0.35;
+      var isHidden = !!hiddenLanes[i];
+
+      /* well at top */
+      var well = el("rect", {
+        x: cx - halfW, y: GEL_TOP - 16,
+        width: halfW * 2, height: WELL_HEIGHT,
+        fill: "#1a2332", stroke: "#2a3a4e", "stroke-width": "0.8",
+        rx: "1"
+      });
+      svg.appendChild(well);
+
+      /* lane label under well */
+      var laneLabel = el("text", {
+        x: cx, y: GEL_TOP - 20,
+        fill: "#9ca3af", "font-size": "8",
+        "text-anchor": "middle",
+        "font-family": "Inter, system-ui, sans-serif",
+        "font-weight": "600"
+      });
+      laneLabel.textContent = lane.label;
+      svg.appendChild(laneLabel);
+
+      if (isHidden) continue;
+
+      /* smear for degraded lanes */
+      if (lane.smear) {
+        var smearRect = el("rect", {
+          x: cx - halfW * 0.6,
+          y: bpToY(8000),
+          width: halfW * 1.2,
+          height: bpToY(200) - bpToY(8000),
+          fill: "url(#smearGrad)",
+          filter: "url(#bandGlow)",
+          rx: "2"
+        });
+        svg.appendChild(smearRect);
+        continue;
+      }
+
+      /* bands */
+      for (var b = 0; b < lane.sizes.length; b++) {
+        var bp = lane.sizes[b];
+        var y = bpToY(bp);
+        var bw = bandWidth(bp);
+        var isLadderBright = lane.isLadder && LADDER_BRIGHT[bp];
+
+        /* for uncut circular DNA, shift up a little */
+        if (lane.notes === "uncut") {
+          y = y - 12;
+        }
+
+        var opacity = lane.isLadder ? (isLadderBright ? 1.0 : 0.65) : 0.85;
+        var color = "#ff8c42";
+
+        var band = el("rect", {
+          x: cx - halfW,
+          y: y - bw / 2,
+          width: halfW * 2,
+          height: bw,
+          rx: "1.5",
+          fill: color,
+          opacity: opacity,
+          filter: "url(#bandGlow)",
+          "data-lane": i,
+          "data-bp": bp,
+          "data-label": lane.label
+        });
+        band.setAttribute("class", "gel-band");
+        svg.appendChild(band);
+
+        /* invisible wider hit area for hover */
+        var hitArea = el("rect", {
+          x: cx - halfW - 2,
+          y: y - bw / 2 - 4,
+          width: halfW * 2 + 4,
+          height: bw + 8,
+          fill: "transparent",
+          "data-lane": i,
+          "data-bp": bp,
+          "data-label": lane.label
+        });
+        hitArea.setAttribute("class", "gel-band-hit");
+        svg.appendChild(hitArea);
+      }
+    }
+
+    /* direction arrow */
+    var arrowY1 = GEL_TOP + 10;
+    var arrowY2 = GEL_BOTTOM - 10;
+    var arrowX = GEL_LEFT - 40;
+    var arrow = el("line", {
+      x1: arrowX, y1: arrowY1,
+      x2: arrowX, y2: arrowY2,
+      stroke: "#6b7280", "stroke-width": "1.5",
+      "marker-end": "url(#arrowHead)"
+    });
+    svg.appendChild(arrow);
+
+    /* arrowhead marker */
+    var marker = el("marker", {
+      id: "arrowHead", markerWidth: "8", markerHeight: "6",
+      refX: "4", refY: "3", orient: "auto"
+    });
+    var arrowPath = el("path", {
+      d: "M0,0 L8,3 L0,6 Z", fill: "#6b7280"
+    });
+    marker.appendChild(arrowPath);
+    defs.appendChild(marker);
+
+    var migrationLabel = el("text", {
+      x: arrowX, y: (arrowY1 + arrowY2) / 2,
+      fill: "#6b7280", "font-size": "7",
+      "text-anchor": "middle",
+      "font-family": "Inter, system-ui, sans-serif",
+      transform: "rotate(-90," + arrowX + "," + ((arrowY1 + arrowY2) / 2) + ")"
+    });
+    migrationLabel.textContent = "Migration";
+    svg.appendChild(migrationLabel);
+
+    bindBandEvents();
+  }
+
+  /* ---- band hover events ---- */
+  function bindBandEvents() {
+    var hits = svg.querySelectorAll(".gel-band-hit");
+    var bands = svg.querySelectorAll(".gel-band");
+
+    for (var i = 0; i < hits.length; i++) {
+      (function(hit) {
+        hit.addEventListener("mouseenter", function(e) {
+          var laneIdx = parseInt(hit.getAttribute("data-lane"), 10);
+          var bp = parseInt(hit.getAttribute("data-bp"), 10);
+          var label = hit.getAttribute("data-label");
+
+          /* highlight band */
+          var matchBands = svg.querySelectorAll('.gel-band[data-lane="' + laneIdx + '"][data-bp="' + bp + '"]');
+          for (var j = 0; j < matchBands.length; j++) {
+            matchBands[j].setAttribute("filter", "url(#bandGlowHi)");
+            matchBands[j].setAttribute("opacity", "1");
+          }
+
+          /* tooltip */
+          var bpText = bp >= 1000 ? (bp / 1000) + " kb" : bp + " bp";
+          tooltip.textContent = label + ": " + bpText;
+          tooltip.className = "tooltip-box visible";
+
+          /* info panel */
+          infoPanel.innerHTML = "<strong>Lane " + label + ":</strong> " + bpText + " fragment";
+        });
+
+        hit.addEventListener("mousemove", function(e) {
+          var rect = gelWrapper.getBoundingClientRect();
+          var x = e.clientX - rect.left + 12;
+          var y = e.clientY - rect.top - 28;
+          tooltip.style.left = x + "px";
+          tooltip.style.top = y + "px";
+        });
+
+        hit.addEventListener("mouseleave", function() {
+          var laneIdx = parseInt(hit.getAttribute("data-lane"), 10);
+          var bp = parseInt(hit.getAttribute("data-bp"), 10);
+          var lane = currentLanes[laneIdx];
+          var isLadderBright = lane && lane.isLadder && LADDER_BRIGHT[bp];
+          var origOpacity = lane && lane.isLadder ? (isLadderBright ? "1.0" : "0.65") : "0.85";
+
+          var matchBands = svg.querySelectorAll('.gel-band[data-lane="' + laneIdx + '"][data-bp="' + bp + '"]');
+          for (var j = 0; j < matchBands.length; j++) {
+            matchBands[j].setAttribute("filter", "url(#bandGlow)");
+            matchBands[j].setAttribute("opacity", origOpacity);
+          }
+
+          tooltip.className = "tooltip-box";
+          infoPanel.innerHTML = "Hover over a band to see its size.";
+        });
+      })(hits[i]);
+    }
+  }
+
+  /* ---- legend ---- */
+  function renderLegend() {
+    legendEl.innerHTML = "";
+    for (var i = 0; i < currentLanes.length; i++) {
+      (function(idx) {
+        var lane = currentLanes[idx];
+        var item = document.createElement("div");
+        item.className = "legend-item" + (hiddenLanes[idx] ? " hidden-lane" : "");
+
+        var sizesStr = "";
+        if (lane.smear) {
+          sizesStr = "smear";
+        } else if (lane.sizes.length <= 4) {
+          var parts = [];
+          for (var s = 0; s < lane.sizes.length; s++) {
+            parts.push(lane.sizes[s]);
+          }
+          sizesStr = parts.join(", ") + " bp";
+        } else {
+          sizesStr = lane.sizes.length + " bands";
+        }
+
+        item.innerHTML = "<strong>" + lane.label + "</strong>" +
+          '<span class="legend-sizes"> ' + sizesStr + "</span>";
+
+        item.addEventListener("click", function() {
+          if (hiddenLanes[idx]) {
+            delete hiddenLanes[idx];
+          } else {
+            hiddenLanes[idx] = true;
+          }
+          render();
+          renderLegend();
+        });
+
+        legendEl.appendChild(item);
+      })(i);
+    }
+  }
+
+  /* ---- load preset ---- */
+  function loadPreset(idx) {
+    currentPreset = idx;
+    currentLanes = deepCopy(PRESETS[idx].lanes);
+    hiddenLanes = {};
+    render();
+    renderLegend();
+  }
+
+  /* ---- event bindings ---- */
+  presetSelect.addEventListener("change", function() {
+    var idx = parseInt(presetSelect.value, 10);
+    loadPreset(idx);
+    addLaneForm.className = "add-lane-form";
+  });
+
+  resetBtn.addEventListener("click", function() {
+    loadPreset(currentPreset);
+    addLaneForm.className = "add-lane-form";
+  });
+
+  addLaneBtn.addEventListener("click", function() {
+    addLaneForm.className = "add-lane-form open";
+    laneLabelInput.value = "";
+    laneSizesInput.value = "";
+    laneLabelInput.focus();
+  });
+
+  cancelLaneBtn.addEventListener("click", function() {
+    addLaneForm.className = "add-lane-form";
+  });
+
+  confirmLaneBtn.addEventListener("click", function() {
+    var label = laneLabelInput.value.trim();
+    if (!label) {
+      laneLabelInput.focus();
+      return;
+    }
+
+    var rawSizes = laneSizesInput.value.trim();
+    var sizes = [];
+    var isSmear = false;
+
+    if (rawSizes.length > 0) {
+      var parts = rawSizes.split(",");
+      for (var i = 0; i < parts.length; i++) {
+        var v = parseInt(parts[i].trim(), 10);
+        if (!isNaN(v) && v > 0) {
+          sizes.push(v);
+        }
+      }
+    } else {
+      isSmear = true;
+    }
+
+    currentLanes.push({
+      label: label,
+      sizes: sizes,
+      isLadder: false,
+      smear: isSmear,
+      notes: ""
+    });
+
+    addLaneForm.className = "add-lane-form";
+    render();
+    renderLegend();
+  });
+
+  /* allow Enter key in add-lane form */
+  laneSizesInput.addEventListener("keydown", function(e) {
+    if (e.key === "Enter" || e.keyCode === 13) {
+      e.preventDefault();
+      confirmLaneBtn.click();
+    }
+  });
+  laneLabelInput.addEventListener("keydown", function(e) {
+    if (e.key === "Enter" || e.keyCode === 13) {
+      e.preventDefault();
+      laneSizesInput.focus();
+    }
+  });
+
+  /* ---- initialize ---- */
+  loadPreset(0);
+
+})();
+</script>
+</body>
+</html>

@@ -8,7 +8,18 @@ title: "About BiOGuide"
     <span class="recent-update-badge">NEW</span>
     <div class="recent-update-body">
       <div class="recent-update-meta">
-        <span class="recent-update-date">Aug 2026</span>
+        <span class="recent-update-date">Aug 27 2026</span>
+        <span class="recent-update-contributor">Nishit Kalani</span>
+      </div>
+      <p class="recent-update-text"><a href="/biobytes/testimonials/turkmenistan-ibo-team/">Testimonial by Meryem from Turkmenistan!</a> New Email System added (customised emails from noreply), New Country Counter, CI,git LFS, Security fixes, and First ever practical guide written down available in <a href="/resources/11-practical-1/">Notes@BiOGuide</a> and at <a href="/biobytes/articles/lab-recommendations/">BiOBytes</a> (surprise for account holders)! Special thanks to <a href="https://ibo2026.lt">IBO 2026</a> community for the great response.</p>
+    </div>
+  </div>
+  <div class="recent-update-card">
+    <div class="recent-update-icon" aria-hidden="true"></div>
+    <span class="recent-update-badge">NEW</span>
+    <div class="recent-update-body">
+      <div class="recent-update-meta">
+        <span class="recent-update-date">Aug 18 2026</span>
         <span class="recent-update-contributor">Nishit Kalani</span>
       </div>
       <p class="recent-update-text"><a href="/dashboard/">Study Dashboard</a> -- personalized mastery tracking, prerequisite-aware study recommendations, trend analysis, topic-page badges, and a "weak areas first" toggle in the Question Bank. All built from your timed attempt history, all computed in your browser. <a href="/dashboard-guide/">See how it works.</a></p>
@@ -19,19 +30,19 @@ title: "About BiOGuide"
     <span class="recent-update-badge">NEW</span>
     <div class="recent-update-body">
       <div class="recent-update-meta">
-        <span class="recent-update-date">Aug 2026</span>
+        <span class="recent-update-date">Aug 9 2026</span>
         <span class="recent-update-contributor">Nishit Kalani</span>
       </div>
       <p class="recent-update-text">Senior Partner announced and BiOClash Sample problem and test-taking test platform launched! Give a visit at https://bioguide.world/bioclash/bioclash-sample/attempt/</p>
     </div>
   </div>
-<div class="recent-updates">
+  <div class="recent-updates">
   <div class="recent-update-card recent-update-newest">
     <span class="recent-update-badge">NEW</span>
     <div class="recent-update-icon" aria-hidden="true"></div>
     <div class="recent-update-body">
       <div class="recent-update-meta">
-        <span class="recent-update-date">Aug 2026</span>
+        <span class="recent-update-date">Aug 8 2026</span>
         <span class="recent-update-contributor">Nishit Kalani</span>
       </div>
       <p class="recent-update-text"><a href="/ai_attestation.txt">AI Transparency Attestation</a> - a full public disclosure of where and how AI tools were used across the site, published per EU AI Act Article 50's transparency principles.</p>
@@ -41,7 +52,7 @@ title: "About BiOGuide"
     <div class="recent-update-icon" aria-hidden="true"></div>
     <div class="recent-update-body">
       <div class="recent-update-meta">
-        <span class="recent-update-date">Aug 2026</span>
+        <span class="recent-update-date">Aug 2 2026</span>
         <span class="recent-update-contributor">Nishit Kalani</span>
       </div>
       <p class="recent-update-text"><a href="/discussions/">Discussions</a> - open feedback and comment threads for the whole community, no gatekeeping to read, an account to post.</p>
@@ -51,7 +62,7 @@ title: "About BiOGuide"
     <div class="recent-update-icon" aria-hidden="true"></div>
     <div class="recent-update-body">
       <div class="recent-update-meta">
-        <span class="recent-update-date">Aug 2026</span>
+        <span class="recent-update-date">Aug 2 2026</span>
         <span class="recent-update-contributor">Nishit Kalani</span>
       </div>
       <p class="recent-update-text"><a href="/bioclash/">BiOClash</a> - an original biology competition we're building, plus a Champions leaderboard on the <a href="/papers/leaderboard/">Hall of Fame</a> page ready for Season 1's results.</p>
@@ -61,30 +72,10 @@ title: "About BiOGuide"
     <div class="recent-update-icon" aria-hidden="true"></div>
     <div class="recent-update-body">
       <div class="recent-update-meta">
-        <span class="recent-update-date">Aug 2026</span>
+        <span class="recent-update-date">Aug 2 2026</span>
         <span class="recent-update-contributor">Nishit Kalani</span>
       </div>
       <p class="recent-update-text">Accounts, profiles, and a Hall of Fame leaderboard for BiOrchive Timed Attempts - completely optional, everything still works without logging in.</p>
-    </div>
-  </div>
-  <div class="recent-update-card">
-    <div class="recent-update-icon" aria-hidden="true"></div>
-    <div class="recent-update-body">
-      <div class="recent-update-meta">
-        <span class="recent-update-date">Aug 2026</span>
-        <span class="recent-update-contributor">Nishit Kalani</span>
-      </div>
-      <p class="recent-update-text">Cell &amp; Molecular Biology (23 pages) - complete with 80+ images and interactive widgets.</p>
-    </div>
-  </div>
-  <div class="recent-update-card">
-    <div class="recent-update-icon" aria-hidden="true"></div>
-    <div class="recent-update-body">
-      <div class="recent-update-meta">
-        <span class="recent-update-date">Aug 2026</span>
-        <span class="recent-update-contributor">Nishit Kalani</span>
-      </div>
-      <p class="recent-update-text">Ethology (9 pages) - complete with 18 interactive widgets.</p>
     </div>
   </div>
 
@@ -125,11 +116,11 @@ We hope you appreciate the effort and enjoy the website, and most importantly, t
 
 ## What Sets Us Apart
 
-Some features we want to add to this website going forward:
+Some features we want to add to this website going forward (As of July 2026):
 
 1. ~~A paper archive~~
 2. ~~An indigenous biology competition~~
-3. An indigenous AI agent to help guide you through your prep
+3. An indigenous AI agent to help guide you through your prep (Currently in place as a dashboard simplistic algorithm).
 4. ~~A comments, feedback, and discussion section~~
 
 When we first started, we looked at existing resources like [Biolympiads](https://biolympiads.com) and [Learntuitive](https://learntuitive.com/), but found them fairly outdated, low on activity, and somewhat commercialised. 
@@ -139,22 +130,30 @@ When we first started, we looked at existing resources like [Biolympiads](https:
 3. Highly modernised
 4. Globally relevant
 5. Uncompromising academically, built for and by students
+6. Huge global community thriving by curiosity
+7. Personalized for everyone
+8. Quality above everything else
 
 ## Why So Much Work
 
+**Written on August 8th 2026 ~**<br>
 We're captivated by biology and the life sciences, but our own journey preparing for olympiads was full of roadblocks despite relentless effort. The biggest one was finding the right resources: available textbooks were either far too dense or didn't go into the specific depth the IBO actually requires.
 
 That roadblock is what inspired BiOGuide. We make nothing from it; it's completely free to read, share, and modify. Honestly, the real payoff for us is making the learning curve friendlier for the next generation of biology enthusiasts.
 
 Cracking these competitions isn't just about rote-memorising cellular pathways or anatomy, though a strong base of core facts is essential. It's about truly understanding how living systems function, working through problems piece by piece, and having the grit to face scenarios you've never seen before. We want to help you build that problem-solving intuition, which is why we plan to provide an extensive library of past-year problems with step-by-step solutions.
 
+*As of after August 8th*,<br>
+The team now works with a lot of different people (although none contributing to the technical implementations), and their ideas prove valuable to the site. Although they don't act on then directly (Action on the managing partner), the idea attributions are available here: 
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQIIIuAMER7mXbIJZ6mWHA-38K-BqAvA5P0ws6B4tw8GLZvDU6bpN1rfCY2rQxa13KGAqbd99PTIR7I/pubhtml?widget=true&amp;headers=false" width="700" height="1000"></iframe>
+
 ## How Do We find people?
 
-Our chain of command is somewhat summarised by <a href = "https://drive.google.com/file/d/1unOGgOnXPUFKjgCZ62puRivTm-_NBs5d/view?usp=sharing" target = "_blank">this document</a> (Suits ball!). As mentioned around 10 times elsewhere, contact r6394175@gmail.com for applications, we could always use some help! Currently, we are looking for all sorts of help, majorly however, in the fields of olympiad specialised content generation, problem design, community and social media managers, and also some intermediate developers. 
+Our chain of command is somewhat summarised by <a href = "https://drive.google.com/file/d/1unOGgOnXPUFKjgCZ62puRivTm-_NBs5d/view?usp=sharing" target = "_blank">this document</a> (Suits ball!). As mentioned around 10 times elsewhere, contact r6394175@gmail.com for applications, we could always use some help! Currently, we are looking for all sorts of help, majorly however, in the fields of olympiad specialised content generation for increasing reach by contacting people all over the world for their national olympiad programmes, problem design, community and social media managers, and also some intermediate developers.
 
 ### Inspirations
 
-1. <span style="display:inline-flex;align-items:center;gap:0.4em;"><img src="/aoguidefav.svg" alt="AOGuide" style="width:22px;height:22px;vertical-align:middle;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.12);"> **[AOGuide](https://aoguide.app)**</span> <span class="badge-curiosity" style="font-size:0.75em;vertical-align:middle;">Astronomy Olympiad</span> -- thanks to an astronomy background, I discovered this treasure of a website for AO aspirants. A lot of what we've done here has been inspired by AOGuide, so a big thanks to the people behind it.
+1. <span style="display:inline-flex;align-items:center;gap:0.4em;"><img src="/aoguidefav.svg" alt="AOGuide" style="width:22px;height:22px;vertical-align:middle;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.12);"> **[AOGuide](https://aoguide.app)**</span>: thanks to an astronomy background, I discovered this treasure of a website for AO aspirants. A lot of what we've done here has been inspired by AOGuide, so a big thanks to the people behind it.
 2. **Biolympiads and Learntuitive** - as mentioned above, we've tried to improve on what they offer, but they still serve as a benchmark and an inspiration for us.
 3. More soon!
 
@@ -166,10 +165,6 @@ Our chain of command is somewhat summarised by <a href = "https://drive.google.c
 4. **VS Code, MathJax, and Git.**
 
 ## The People Behind This
-
-<!-- SAMPLE CONTENT - replace name/role/bio/links below with the real team.
-     See the comment block right after this section for exactly what each
-     field does and how to add/remove people. -->
 
 {{< team-member name="Nishit Kalani" role="Founder, Owner & Managing Partner" avatar="/nkavat.jpg" since="February 8th 2026">}}
 Nishit Here (: <br>
