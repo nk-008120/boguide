@@ -34,11 +34,11 @@ date: 2026-08-27
 Belgium's setup for biology olympiad selection is fairly unusual, and Jonas explained it best in his own words:
 
 <div class="testimonial-quote-block">
-<p>"The thing is, in Belgium we have 2 bio-olympiads: 1 for the Dutch-speaking community and 1 for the French-speaking community. Both olympiads are conducted independently from each other, so I have only info about the Dutch-speaking organization. I can ask the other participants, who are from the French-speaking part, if they have additional info about their selection procedure."</p>
-<p>"Also, our 1st and 2nd round (in both country parts) are really only based on the things we learn at school, which is not much and actually very easy. BioGuide is a bit too high-level for our 1st en 2nd round (even final), so the site is more suited for the people who actually go to the IBO to prepare"</p>
+<p>"The thing is, in Belgium we have 2 bio-olympiads: 1 for the Dutch-speaking community and 1 for the French-speaking community. Both olympiads are conducted independently from each other, so I have only info about the Dutch-speaking organization."</p>
+<p>"Also, our 1st and 2nd round (in both country parts) are really only based on the things we learn at schools. BioGuide is a bit too high-level for our 1st en 2nd round (even final), so the site is more suited for the people who actually go to the IBO to prepare"</p>
 </div>
 
-This is a useful distinction if you are a Belgian student reading this: the early rounds of both the Dutch-speaking and French-speaking olympiads test school-level content, and BiOGuide's syllabus-depth material genuinely is more than that stage calls for. Where it earns its place, per Jonas, is in the narrower and more intense window between qualifying for the international stage and actually sitting the IBO theory exam -- exactly the stretch where self-study with no dedicated coach matters most.
+This is a useful distinction if you are a Belgian student reading this: the early rounds of both the Dutch-speaking and French-speaking olympiads test school-level content, and BiOGuide's syllabus-depth material genuinely is more than that stage calls for. Where it earns its place, per Jonas, is in the narrower and more intense window between qualifying for the international stage and actually sitting the IBO theory exam.
 
 ### The official picture
 
@@ -49,30 +49,30 @@ Jonas's description matches how both organisations describe themselves officiall
 | **Community** | Dutch-speaking (Flanders) | French- and German-speaking |
 | **Organiser** | VOB vzw (biology teachers' association), coordinated through Vlaamse Olympiades voor Natuurwetenschappen at KU Leuven | PROBIO asbl (biology teachers' association) |
 | **Established** | 1990 | 1991 |
-| **Round 1** | January -- 25 MCQs, 2 hours, at schools (~2,300 students) | January -- at schools (~1,000 students); ~100-200 advance |
-| **Round 2** | February/early March -- 30 MCQs, 2 hours, at Flemish universities (~200 students) | February -- at five regional university sites; ~10-15 laureates per grade |
-| **Final round** | April -- 40-question theory paper (2.5 h) plus a two-part practical exam, for 17 finalists at a rotating host university | May -- grade-12-only round that sets the final ranking |
+| **Round 1** | January - 25 MCQs, 2 hours, at schools (~2,300 students) | January - at schools (~1,000 students); ~100-200 advance |
+| **Round 2** | February/early March - 30 MCQs, 2 hours, at Flemish universities (~200 students) | February - at five regional university sites; ~10-15 laureates per grade |
+| **Final round** | April - 40-question theory paper (2.5 h) plus a two-part practical exam, for 17 finalists at a rotating host university | May - grade-12-only round that sets the final ranking |
 | **IBO selection** | Top 2 finalists represent Belgium | Top 2 finalists represent Belgium |
 | **Official site** | [vob-ond.be/VBO](https://www.vob-ond.be/VBO/index.html) | [olympiades.be](https://olympiades.be) |
 
 Belgium's IBO team of four is therefore always two Flemish-selected students plus two French/German-community-selected students, chosen through entirely separate qualification pipelines that never overlap until the students meet as teammates at the IBO itself.
 
-*Sources: [IBO country profile -- Vlaamse Biologie Olympiade](https://www.ibo-info.org/en/countries/nbo/be-vlaamse-biologie-olympiade-87.html), [IBO country profile -- Olympiade de Biologie](https://www.ibo-info.org/en/countries/nbo/be-fr-94.html).*
+*Sources: [IBO country profile - Vlaamse Biologie Olympiade](https://www.ibo-info.org/en/countries/nbo/be-vlaamse-biologie-olympiade-87.html), [IBO country profile - Olympiade de Biologie](https://www.ibo-info.org/en/countries/nbo/be-fr-94.html).*
 
 ## How BiOGuide fits in
 
 Jonas's account lines up closely with three specific things BiOGuide is built to do:
 
-- **BiOrchive**, the archive of past IBO theory papers, is what he means by "an archive containing many past IBO theory questions, accompanied by model solutions." Every question in the archive's Question Bank also carries the syllabus topics it draws on, so instead of just checking an answer, you can trace a question back to exactly what to review -- the "you can see which theoretical concepts are necessary to solve each question" he called out directly.
+- **BiOrchive**, the archive of past IBO theory papers, is what he means by "an archive containing many past IBO theory questions, accompanied by model solutions." Every question in the archive's Question Bank also carries the syllabus topics it draws on, so instead of just checking an answer, you can trace a question back to exactly what to review - the "you can see which theoretical concepts are necessary to solve each question" he called out directly.
 
-- The **Study Dashboard** is the "interactive part of the site" he's describing. After a timed attempt, it builds a subject-by-subject mastery breakdown and tells you plainly which domains are strongest and which need work -- useful for anyone, but especially so for a student getting one or two hours of biology instruction a week at school and needing every hour of outside study time to count.
+- The **Study Dashboard** is the "interactive part of the site" he's describing. After a timed attempt, it builds a subject-by-subject mastery breakdown and tells you plainly which domains are strongest and which need work - useful for anyone, but especially so for a student getting one or two hours of biology instruction a week at school and needing every hour of outside study time to count.
 
-- **Notes @ BiOGuide** is the "mini-courses" he mentions. Genetic recombination -- the specific topic he named as a persistent sticking point -- has its own dedicated page under the Genetics section, built to explain the concept directly rather than send you hunting through a full textbook chapter for the two paragraphs that matter.
+- **Notes @ BiOGuide** is the "mini-courses" he mentions. Genetic recombination - the specific topic he named as a persistent sticking point - has its own dedicated page under the Genetics section, built to explain the concept directly rather than send you hunting through a full textbook chapter for the two paragraphs that matter.
 
 None of this replaces a dedicated coach or a full national training programme. But for students in systems like Belgium's, where the international stage is reached with comparatively little formal preparation beforehand, having a free, structured resource to close that gap can matter a great deal.
 
 ---
 
-*This article preserves Jonas's own words, shared and published with his consent. If you competed in a Biology Olympiad and want to share your story, reach out to us -- we would love to hear from you.*
+*This article preserves Jonas's own words, shared and published with his consent. If you competed in a Biology Olympiad and want to share your story, reach out to us - we would love to hear from you.*
 
 </div>
