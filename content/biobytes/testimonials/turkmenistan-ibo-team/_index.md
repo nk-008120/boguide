@@ -14,7 +14,7 @@ date: 2026-08-26
 
 Turkmenistan has sent teams to the International Biology Olympiad for years, but results have been difficult. No Turkmen student has brought home a medal in the past two IBO cycles - not for lack of talent or drive, but for a reason that would be familiar to students in many smaller delegations: **the students have been using self-study techniques and passing their knowledge down through the generations on their own, without proper guidance, over the years.**
 
-The technique Meryem, her teammates, and the competitors before them have relied on is remarkable in its own right: older students who have been through the process pass what they know to younger ones. The team is largely self-taught, built on a culture of peer mentoring where each generation tries to leave the next one a little better prepared than they were.
+The technique Meryem, her partners, and previous competitors from the past two years used is something remarkable in its own way: older students who have been through the process pass what they know to younger ones. The team is largely self-taught, built on a culture of peer mentoring where each generation tries to leave the next one a little better prepared than they were.
 
 But self-study has limits. Resources are hard to come by. Structured programmes in English-language biology olympiad preparation are rare, and the ones that exist often carry a price tag that puts them out of reach. Turkmenistan's biology olympiad students have been making do with whatever they can find - scattered PDFs, secondhand textbooks, and advice from alumni who graduated years ago.
 
