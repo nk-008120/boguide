@@ -380,6 +380,82 @@ html.dark .testimonial-article strong {
   color: #c9b7e8;
 }
 
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background: rgba(137, 101, 196, 0.06);
+  border: 1px solid rgba(137, 101, 196, 0.16);
+  border-radius: var(--radius-xl);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+.testimonial-author-photo {
+  width: 96px;
+  height: 96px;
+  min-width: 96px;
+  border-radius: var(--radius-circle);
+  object-fit: cover;
+  border: 3px solid rgba(137, 101, 196, 0.35);
+  box-shadow: var(--shadow-sm);
+}
+.testimonial-author-info h3 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0 0 0.15rem;
+}
+.testimonial-author-tagline {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.6rem;
+}
+.testimonial-author-bio {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  margin: 0;
+}
+html.dark .testimonial-author {
+  background: rgba(201, 183, 232, 0.07);
+  border-color: rgba(201, 183, 232, 0.2);
+}
+html.dark .testimonial-author-photo {
+  border-color: rgba(201, 183, 232, 0.4);
+}
+@media (max-width: 640px) {
+  .testimonial-author {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.testimonial-quote-block {
+  position: relative;
+  font-family: 'Source Serif 4', 'Georgia', serif;
+  font-style: italic;
+  font-size: 1.03rem;
+  line-height: 1.85;
+  padding: 1.5rem 1.75rem;
+  border-left: 3px solid var(--primary);
+  background: rgba(137, 101, 196, 0.045);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  margin: 1.5rem 0;
+}
+.testimonial-quote-block p {
+  margin: 0 0 1rem;
+}
+.testimonial-quote-block p:last-child {
+  margin-bottom: 0;
+}
+html.dark .testimonial-quote-block {
+  background: rgba(201, 183, 232, 0.05);
+}
+
 /* --- Prep-guide dark mode (shared by all olympiad/plan pages) --- */
 html.dark .prep-guide-wrapper p {
   color: #d1d1d1;
@@ -622,6 +698,26 @@ html.dark .country-coming-soon {
 }
 html.dark .country-coming-soon:hover {
   fill: #5a5072;
+}
+
+/* Marker dot for small published countries that are hard to see/click at map scale */
+.country-marker {
+  fill: #8965c4;
+  stroke: #fff;
+  stroke-width: 1.5;
+  cursor: pointer;
+  transition: fill 0.2s, r 0.2s;
+}
+.country-marker:hover {
+  fill: #a07dd4;
+  r: 7.5;
+}
+html.dark .country-marker {
+  fill: #7c5fbf;
+  stroke: #1a1726;
+}
+html.dark .country-marker:hover {
+  fill: #a48ad6;
 }
 
 /* Tooltip */

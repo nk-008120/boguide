@@ -17,6 +17,14 @@
       "status": "published",
       "stages": "Open Exam > Semifinal > Finals > IBO"
     },
+    "BE": {
+      "name": "Belgium",
+      "flag": "🇧🇪",
+      "programme": "Vlaamse Biologie Olympiade (VBO) & Olympiade de Biologie",
+      "guideUrl": "/biobytes/testimonials/belgium-ibo-bronze/",
+      "status": "published",
+      "stages": "Round 1 > Round 2 > Final > IBO (run independently by language community)"
+    },
     "TM": {
       "name": "Turkmenistan",
       "flag": "🇹🇲",

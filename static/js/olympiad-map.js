@@ -46,6 +46,10 @@
     });
   }
 
+  var SMALL_COUNTRY_MAX_DIMENSION = 20; // viewBox units (map is 1200x620) -- below this a country
+                                        // is too small to see or click reliably on its own, so we
+                                        // add a centroid marker dot for it.
+
   function highlightCountries(svg) {
     var keys = Object.keys(programmeData);
     for (var i = 0; i < keys.length; i++) {
@@ -54,7 +58,9 @@
       var el = svg.getElementById('country-' + code);
       if (!el) continue;
 
-      if (info.status === 'published' && info.guideUrl) {
+      var isPublished = info.status === 'published' && info.guideUrl;
+
+      if (isPublished) {
         el.classList.add('country-published');
         el.setAttribute('data-clickable', 'true');
         el.style.cursor = 'pointer';
@@ -67,7 +73,36 @@
       el.setAttribute('role', 'link');
       el.setAttribute('aria-label', escapeHtml(info.name) +
         (info.programme ? ' -- ' + escapeHtml(info.programme) : ''));
+
+      if (isPublished) {
+        addMarkerIfSmall(svg, el, code);
+      }
     }
+  }
+
+  function addMarkerIfSmall(svg, el, code) {
+    var bbox;
+    try {
+      bbox = el.getBBox();
+    } catch (e) {
+      return; // element not rendered/measurable yet
+    }
+    if (!bbox || bbox.width <= 0 || bbox.height <= 0) return;
+    if (Math.max(bbox.width, bbox.height) >= SMALL_COUNTRY_MAX_DIMENSION) return;
+
+    var cx = bbox.x + bbox.width / 2;
+    var cy = bbox.y + bbox.height / 2;
+
+    var marker = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    marker.setAttribute('cx', cx);
+    marker.setAttribute('cy', cy);
+    marker.setAttribute('r', 6);
+    marker.setAttribute('class', 'country-marker');
+    marker.setAttribute('data-country', code);
+    marker.setAttribute('tabindex', '0');
+    marker.setAttribute('role', 'link');
+    marker.setAttribute('aria-label', el.getAttribute('aria-label') || '');
+    el.parentNode.appendChild(marker);
   }
 
   function attachEvents(svg) {

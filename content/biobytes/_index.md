@@ -32,6 +32,13 @@ cascade:
 {{< /tab >}}
 {{< tab name="Testimonials" >}}
 <div class="testimonial-cards">
+  <a href="/biobytes/testimonials/belgium-ibo-bronze/" class="card testimonial-card">
+    <div class="card-icon">🇧🇪</div>
+    <h3>From Belgium to IBO Bronze</h3>
+    <p class="testimonial-pullquote">"I would have been thrilled if this site had existed when I participated!"</p>
+    <div class="testimonial-meta">Jonas &middot; IBO 2026 Bronze Medallist</div>
+    <span class="btn-outline">Read His Story &rarr;</span>
+  </a>
   <a href="/biobytes/testimonials/turkmenistan-ibo-team/" class="card testimonial-card">
     <div class="card-icon">🇹🇲</div>
     <h3>From Turkmenistan to IBO</h3>

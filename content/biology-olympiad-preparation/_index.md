@@ -55,6 +55,17 @@ This is the general preparation framework that applies regardless of which Biolo
 
 {{< olympiad-map >}}
 
+<div class="olympiad-compact-cards">
+  <a href="/biobytes/testimonials/belgium-ibo-bronze/" class="olympiad-compact-card">
+    <div class="olympiad-compact-flag">🇧🇪</div>
+    <div class="olympiad-compact-body">
+      <h4>Belgium</h4>
+      <p>Two independent olympiads (Dutch & French) each sending their top 2 to IBO</p>
+    </div>
+    <span class="olympiad-compact-arrow">&rarr;</span>
+  </a>
+</div>
+
 Eligibility, dates, and registration details change year to year. Always check your olympiad's official site for current information. This guide covers preparation strategy, not administrative details.
 
 ## Choose your starting point
