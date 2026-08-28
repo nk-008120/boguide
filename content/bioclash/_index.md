@@ -64,7 +64,7 @@ images: ["/og-bioclash.png"]
   <p id="bioclash-countdown" class="bioclash-countdown" aria-live="polite">Loading countdown…</p>
   <div class="bioclash-hero-actions">
     <a href="#bioclash-notify-section" class="bioclash-btn bioclash-btn-primary"><span class="bioclash-btn-shine" aria-hidden="true"></span><span>Get notified</span></a>
-    <a href="https://discord.gg/WpC8y6dbv" class="bioclash-icon-link" target="_blank" rel="noreferrer" title="Discord: look for #bioclash-updates">{{< icon "discord" >}}</a>
+    <a href="https://discord.gg/jQ7sfcCs4" class="bioclash-icon-link" target="_blank" rel="noreferrer" title="Discord: look for #bioclash-updates">{{< icon "discord" >}}</a>
     <a href="https://www.instagram.com/bioguideofficial/" class="bioclash-icon-link" target="_blank" rel="noreferrer" title="Instagram">{{< icon "instagram" >}}</a>
   </div>
 </section>
@@ -102,7 +102,7 @@ images: ["/og-bioclash.png"]
   <div id="bioclash-notify" class="bioclash-notify" data-next="/bioclash/">
     <p class="bioclash-notify-msg">Loading…</p>
   </div>
-  <p class="bioclash-notify-alt">Prefer not to log in? Follow along on <a href="https://discord.gg/WpC8y6dbv" target="_blank" rel="noreferrer">Discord (#bioclash-updates)</a> or <a href="https://www.instagram.com/bioguideofficial/" target="_blank" rel="noreferrer">Instagram</a> instead.</p>
+  <p class="bioclash-notify-alt">Prefer not to log in? Follow along on <a href="https://discord.gg/jQ7sfcCs4" target="_blank" rel="noreferrer">Discord (#bioclash-updates)</a> or <a href="https://www.instagram.com/bioguideofficial/" target="_blank" rel="noreferrer">Instagram</a> instead.</p>
 </section>
 
 </div>

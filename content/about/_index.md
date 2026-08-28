@@ -210,7 +210,7 @@ Every page goes through the same process: written and edited by the Founder and 
 {{< /faq-item >}}
 
 {{< faq-item q="Can I contribute or report an error?" >}}
-Yes, please do. Open a GitHub Issue or PR on the [repository](https://github.com/nk-008120/boguide), or reach out on [Discord](https://discord.gg/WpC8y6dbv). Found a mistake, have a better diagram, or want to add a topic? All of that helps.
+Yes, please do. Open a GitHub Issue or PR on the [repository](https://github.com/nk-008120/boguide), or reach out on [Discord](https://discord.gg/jQ7sfcCs4). Found a mistake, have a better diagram, or want to add a topic? All of that helps.
 {{< /faq-item >}}
 
 {{< faq-item q="How is my Login information used?" >}}

@@ -161,7 +161,7 @@ theme = "hextra"
 
   [[menu.main]]
     name = "Discord"
-    url = "https://discord.gg/WpC8y6dbv"
+    url = "https://discord.gg/jQ7sfcCs4"
     weight = 11
     [menu.main.params]
       icon = "discord"
