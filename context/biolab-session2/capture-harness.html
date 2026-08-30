@@ -1,0 +1,482 @@
+<title>biolab_calibration_harness</title>
+<style>
+  :root {
+    --bg: #0b0f0d;
+    --panel: #121815;
+    --border: #26312c;
+    --text: #e7f0ea;
+    --muted: #8fa196;
+    --accent: #5fd995;
+    --accent-dim: #2a5c42;
+    --bad: #e26a5c;
+    --warn: #d9b95f;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #f5f7f5;
+      --panel: #ffffff;
+      --border: #dbe4de;
+      --text: #16211c;
+      --muted: #5b6b62;
+      --accent: #1f8b53;
+      --accent-dim: #d9f0e2;
+      --bad: #b8362a;
+      --warn: #8a6d16;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #f5f7f5;
+    --panel: #ffffff;
+    --border: #dbe4de;
+    --text: #16211c;
+    --muted: #5b6b62;
+    --accent: #1f8b53;
+    --accent-dim: #d9f0e2;
+    --bad: #b8362a;
+    --warn: #8a6d16;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 16px;
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  h1 { font-size: 19px; margin: 4px 0 2px; }
+  h2 { font-size: 15px; margin: 20px 0 6px; color: var(--accent); }
+  p.lede { color: var(--muted); margin-top: 0; font-size: 13px; }
+  .panel {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 14px;
+  }
+  label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+  input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #06120c;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .btn.secondary {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--border);
+    font-weight: 500;
+  }
+  .btn.small { padding: 6px 10px; font-size: 12px; }
+  input[type="file"] { display: none; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; }
+  .status { font-size: 13px; padding: 8px 10px; border-radius: 6px; margin: 8px 0; }
+  .status.ok { background: var(--accent-dim); color: var(--accent); }
+  .status.bad { background: rgba(226,106,92,0.15); color: var(--bad); }
+  .status.warn { background: rgba(217,185,95,0.15); color: var(--warn); }
+  canvas { max-width: 100%; border-radius: 6px; border: 1px solid var(--border); }
+  .swatches { display: flex; gap: 6px; margin: 8px 0; flex-wrap: wrap; }
+  .swatch { width: 44px; text-align: center; font-size: 9px; color: var(--muted); }
+  .swatch-color { width: 44px; height: 30px; border-radius: 4px; border: 1px solid var(--border); margin-bottom: 2px; }
+  table { width: 100%; border-collapse: collapse; font-size: 11px; margin-top: 8px; }
+  th, td { text-align: left; padding: 4px 6px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  th { color: var(--muted); font-weight: 500; }
+  .overflow-x { overflow-x: auto; }
+  .example-diagram { width: 100%; border: 1px dashed var(--border); border-radius: 8px; margin: 8px 0; }
+  .del-btn { color: var(--bad); background: none; border: none; cursor: pointer; font-size: 14px; padding: 0 4px; }
+  code { background: var(--bg); padding: 1px 5px; border-radius: 4px; font-size: 12px; }
+</style>
+
+<h1>BiOLab calibration test harness</h1>
+<p class="lede">Session 2 validation prototype -- not the real product UI. Print the reference card, put your stand-in colored liquid (food dye / tea / diluted juice) in the SAMPLE slot and plain water in the BLANK slot, photograph, and log the reading. Do several conditions (different rooms/lighting/phones) and export the log at the end.</p>
+
+<div class="panel">
+  <h2 style="margin-top:0">How to frame the shot</h2>
+  <svg class="example-diagram" viewBox="0 0 360 200" xmlns="http://www.w3.org/2000/svg">
+    <rect x="4" y="4" width="352" height="192" fill="none" stroke="#888" stroke-width="1" stroke-dasharray="4 3"/>
+    <rect x="30" y="24" width="300" height="152" fill="none" stroke="#aaa" stroke-width="1.5"/>
+    <rect x="30" y="24" width="24" height="24" fill="#111"/>
+    <rect x="306" y="24" width="24" height="24" fill="#111"/>
+    <rect x="30" y="152" width="24" height="24" fill="#111"/>
+    <rect x="306" y="152" width="24" height="24" fill="#111"/>
+    <rect x="72" y="46" width="42" height="42" fill="#fff" stroke="#ccc"/>
+    <rect x="122" y="46" width="42" height="42" fill="#bbb" stroke="#ccc"/>
+    <rect x="172" y="46" width="42" height="42" fill="#777" stroke="#ccc"/>
+    <rect x="222" y="46" width="42" height="42" fill="#111" stroke="#ccc"/>
+    <rect x="80" y="110" width="26" height="52" rx="5" fill="none" stroke="#e07856" stroke-width="2"/>
+    <text x="93" y="172" font-size="9" fill="#e07856" text-anchor="middle">SAMPLE</text>
+    <rect x="240" y="110" width="26" height="52" rx="5" fill="none" stroke="#6ba8e0" stroke-width="2"/>
+    <text x="253" y="172" font-size="9" fill="#6ba8e0" text-anchor="middle">BLANK</text>
+    <text x="180" y="16" font-size="9" fill="#888" text-anchor="middle">fill the frame -- all 4 black corners + both tubes visible, roughly level</text>
+  </svg>
+  <p style="font-size:12px;color:var(--muted);margin:0">Don't need the reference-card PDF/HTML yet? It was sent separately -- print at 100% scale, no "fit to page".</p>
+</div>
+
+<div class="panel">
+  <h2 style="margin-top:0">1. Capture</h2>
+  <label for="lighting-label">Condition label (room / light source / time of day)</label>
+  <input type="text" id="lighting-label" placeholder='e.g. "Kitchen, overhead LED, 8pm"'>
+  <label for="device-label">Device label (phone model, optional -- we also auto-read the browser UA)</label>
+  <input type="text" id="device-label" placeholder='e.g. "iPhone 13"'>
+  <div class="row">
+    <label class="btn" for="file-input">📷 Take / choose photo</label>
+    <input type="file" id="file-input" accept="image/*" capture="environment">
+  </div>
+  <div id="capture-status"></div>
+  <canvas id="preview-canvas" style="display:none"></canvas>
+  <div id="swatch-area"></div>
+  <div id="detail-area"></div>
+</div>
+
+<div class="panel">
+  <h2 style="margin-top:0">2. Logged captures (<span id="log-count">0</span>)</h2>
+  <div class="overflow-x">
+    <table id="log-table">
+      <thead>
+        <tr>
+          <th>#</th><th>condition</th><th>device</th>
+          <th>Δr</th><th>Δg</th><th>Δb</th>
+          <th>quality</th><th></th>
+        </tr>
+      </thead>
+      <tbody id="log-tbody"></tbody>
+    </table>
+  </div>
+  <div class="row" style="margin-top:10px">
+    <button class="btn secondary small" id="copy-json">Copy full JSON</button>
+    <button class="btn secondary small" id="copy-csv">Copy summary CSV</button>
+    <button class="btn secondary small" id="clear-log">Clear log</button>
+  </div>
+  <p style="font-size:11px;color:var(--muted)">Paste whichever you copy back into the chat. Log is kept only in this browser tab's memory -- refreshing the page loses it, so copy before you close.</p>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  // ---- Card layout constants (mm, from context/biolab-session2/reference-card.html) ----
+  // uv is relative to the 4 fiducial CENTERS (not the card edge), computed once in Python/by-hand:
+  var UV = {
+    white:  { u: 0.1614, v: 0.2756 },
+    lgray:  { u: 0.3871, v: 0.2756 },
+    mgray:  { u: 0.6128, v: 0.2756 },
+    black:  { u: 0.8386, v: 0.2756 },
+    sample: { u: 0.1392, v: 0.8205 },
+    blank:  { u: 0.5570, v: 0.8205 }
+  };
+  // Expected fiducial position as a fraction of the FULL photo, used only as a search seed --
+  // real position is found by local search, so this just needs to be roughly right assuming the
+  // user filled the frame with the card as shown in the diagram above.
+  var EXPECTED = {
+    tl: { x: 0.10, y: 0.14 },
+    tr: { x: 0.90, y: 0.14 },
+    bl: { x: 0.10, y: 0.86 },
+    br: { x: 0.90, y: 0.86 }
+  };
+  var SEARCH_FRAC = 0.09;   // +/- search window as a fraction of image width
+  var FIDUCIAL_MM = 12, CARD_W_MM = 180;
+
+  var log = [];
+  var logCounter = 0;
+
+  var fileInput = document.getElementById('file-input');
+  var statusEl = document.getElementById('capture-status');
+  var canvas = document.getElementById('preview-canvas');
+  var ctx = canvas.getContext('2d', { willReadFrequently: true });
+  var swatchArea = document.getElementById('swatch-area');
+  var detailArea = document.getElementById('detail-area');
+
+  fileInput.addEventListener('change', function (e) {
+    var file = e.target.files && e.target.files[0];
+    if (!file) return;
+    var img = new Image();
+    img.onload = function () {
+      processImage(img);
+    };
+    img.onerror = function () {
+      setStatus('Could not read that image file.', 'bad');
+    };
+    var reader = new FileReader();
+    reader.onload = function (ev) { img.src = ev.target.result; };
+    reader.readAsDataURL(file);
+  });
+
+  function setStatus(msg, kind) {
+    statusEl.innerHTML = '<div class="status ' + kind + '">' + msg + '</div>';
+  }
+
+  function processImage(img) {
+    var MAX_DIM = 1600;
+    var scale = Math.min(1, MAX_DIM / Math.max(img.width, img.height));
+    var w = Math.round(img.width * scale), h = Math.round(img.height * scale);
+    canvas.width = w; canvas.height = h;
+    canvas.style.display = 'block';
+    ctx.drawImage(img, 0, 0, w, h);
+
+    var frame;
+    try {
+      frame = ctx.getImageData(0, 0, w, h);
+    } catch (e) {
+      setStatus('Could not read pixel data from that image (' + e.message + ').', 'bad');
+      return;
+    }
+
+    var corners = {};
+    var cornerQuality = {};
+    var names = ['tl', 'tr', 'bl', 'br'];
+    var pxPerMm = (w * (EXPECTED.tr.x - EXPECTED.tl.x)) / (CARD_W_MM - 2 * (11 - 6)); // rough estimate, refined below
+    var fiducialPxGuess = Math.max(8, (FIDUCIAL_MM / CARD_W_MM) * (w * 0.8));
+
+    for (var i = 0; i < names.length; i++) {
+      var name = names[i];
+      var seed = EXPECTED[name];
+      var found = findDarkSquare(frame, w, h, seed.x * w, seed.y * h, SEARCH_FRAC * w, fiducialPxGuess);
+      corners[name] = found.pos;
+      cornerQuality[name] = found.quality;
+    }
+
+    var minQuality = Math.min(cornerQuality.tl, cornerQuality.tr, cornerQuality.bl, cornerQuality.br);
+    var quality = minQuality > 60 ? 'good' : (minQuality > 30 ? 'marginal' : 'poor');
+
+    function bilerp(u, v) {
+      var tl = corners.tl, tr = corners.tr, bl = corners.bl, br = corners.br;
+      var x = tl.x * (1 - u) * (1 - v) + tr.x * u * (1 - v) + bl.x * (1 - u) * v + br.x * u * v;
+      var y = tl.y * (1 - u) * (1 - v) + tr.y * u * (1 - v) + bl.y * (1 - u) * v + br.y * u * v;
+      return { x: x, y: y };
+    }
+
+    var sampleBoxPx = Math.max(4, fiducialPxGuess * 0.35);
+    var readings = {};
+    Object.keys(UV).forEach(function (key) {
+      var p = bilerp(UV[key].u, UV[key].v);
+      readings[key] = avgBox(frame, w, h, p.x, p.y, sampleBoxPx);
+    });
+
+    // 2-point per-channel normalization using white/black patches
+    function norm(rgb) {
+      return {
+        r: clamp01((rgb.r - readings.black.r) / (readings.white.r - readings.black.r)),
+        g: clamp01((rgb.g - readings.black.g) / (readings.white.g - readings.black.g)),
+        b: clamp01((rgb.b - readings.black.b) / (readings.white.b - readings.black.b))
+      };
+    }
+    var sampleNorm = norm(readings.sample);
+    var blankNorm = norm(readings.blank);
+    var delta = {
+      r: (sampleNorm.r - blankNorm.r),
+      g: (sampleNorm.g - blankNorm.g),
+      b: (sampleNorm.b - blankNorm.b)
+    };
+    var delta255 = { r: Math.round(delta.r * 255), g: Math.round(delta.g * 255), b: Math.round(delta.b * 255) };
+
+    // Linearity QA: where do lgray/mgray land after normalization? (ideal ~0.75 / ~0.5)
+    var lgrayNorm = norm(readings.lgray), mgrayNorm = norm(readings.mgray);
+    var linearityErr = (
+      Math.abs(lgrayNorm.r - 0.75) + Math.abs(lgrayNorm.g - 0.75) + Math.abs(lgrayNorm.b - 0.75) +
+      Math.abs(mgrayNorm.r - 0.5) + Math.abs(mgrayNorm.g - 0.5) + Math.abs(mgrayNorm.b - 0.5)
+    ) / 6;
+
+    renderSwatches(readings, corners, quality, cornerQuality);
+    drawCornerOverlay(corners);
+
+    var entry = {
+      n: ++logCounter,
+      timestamp: new Date().toISOString(),
+      condition: document.getElementById('lighting-label').value || '(unlabeled)',
+      device: document.getElementById('device-label').value || '(unlabeled)',
+      user_agent: navigator.userAgent,
+      quality: quality,
+      corner_quality: cornerQuality,
+      raw_patch_rgb: readings,
+      reference_white_rgb: [readings.white.r, readings.white.g, readings.white.b],
+      reference_black_rgb: [readings.black.r, readings.black.g, readings.black.b],
+      sample_tube_rgb: [readings.sample.r, readings.sample.g, readings.sample.b],
+      blank_tube_rgb: [readings.blank.r, readings.blank.g, readings.blank.b],
+      normalized_sample: sampleNorm,
+      normalized_blank: blankNorm,
+      delta_normalized: delta,
+      delta_r: delta255.r,
+      delta_g: delta255.g,
+      delta_b: delta255.b,
+      linearity_error: Math.round(linearityErr * 1000) / 1000
+    };
+    log.push(entry);
+    renderLog();
+
+    if (quality === 'poor') {
+      setStatus('Corners not found reliably (min confidence ' + Math.round(minQuality) + '%). This capture was logged but flagged "poor" -- consider retaking with the card better centered/lit, or delete this row.', 'bad');
+    } else if (quality === 'marginal') {
+      setStatus('Corners found with marginal confidence (' + Math.round(minQuality) + '%). Logged -- check the overlay below looks right.', 'warn');
+    } else {
+      setStatus('Captured OK (confidence ' + Math.round(minQuality) + '%). Logged as #' + entry.n + '.', 'ok');
+    }
+    fileInput.value = '';
+  }
+
+  function clamp01(v) { return Math.max(0, Math.min(1, v)); }
+
+  function avgBox(frame, w, h, cx, cy, halfSize) {
+    var x0 = Math.max(0, Math.round(cx - halfSize)), x1 = Math.min(w - 1, Math.round(cx + halfSize));
+    var y0 = Math.max(0, Math.round(cy - halfSize)), y1 = Math.min(h - 1, Math.round(cy + halfSize));
+    var sr = 0, sg = 0, sb = 0, n = 0;
+    var stride = Math.max(1, Math.round((x1 - x0) / 24));
+    for (var y = y0; y <= y1; y += stride) {
+      for (var x = x0; x <= x1; x += stride) {
+        var idx = (y * w + x) * 4;
+        sr += frame.data[idx]; sg += frame.data[idx + 1]; sb += frame.data[idx + 2];
+        n++;
+      }
+    }
+    if (n === 0) n = 1;
+    return { r: sr / n, g: sg / n, b: sb / n, x: cx, y: cy };
+  }
+
+  // Search a window around (seedX, seedY) for the darkest small square -- finds the black fiducial.
+  // Returns position + a 0-100 "quality" score: how much darker the found square is than the local
+  // background median, so a genuinely high-contrast black-on-white square scores high.
+  function findDarkSquare(frame, w, h, seedX, seedY, windowPx, boxPx) {
+    var half = boxPx * 0.4;
+    var step = Math.max(2, Math.round(windowPx / 22));
+    var bestLum = Infinity, bestX = seedX, bestY = seedY;
+    var bgSum = 0, bgN = 0;
+
+    for (var dy = -windowPx; dy <= windowPx; dy += step) {
+      for (var dx = -windowPx; dx <= windowPx; dx += step) {
+        var cx = seedX + dx, cy = seedY + dy;
+        if (cx - half < 0 || cy - half < 0 || cx + half >= w || cy + half >= h) continue;
+        var box = avgBox(frame, w, h, cx, cy, half);
+        var lum = 0.299 * box.r + 0.587 * box.g + 0.114 * box.b;
+        if (lum < bestLum) { bestLum = lum; bestX = cx; bestY = cy; }
+      }
+    }
+    // background = average luminance of the search window's outer ring, for contrast scoring
+    var ringSamples = [
+      avgBox(frame, w, h, seedX - windowPx, seedY, half),
+      avgBox(frame, w, h, seedX + windowPx, seedY, half),
+      avgBox(frame, w, h, seedX, seedY - windowPx, half),
+      avgBox(frame, w, h, seedX, seedY + windowPx, half)
+    ];
+    ringSamples.forEach(function (s) { bgSum += 0.299 * s.r + 0.587 * s.g + 0.114 * s.b; bgN++; });
+    var bgLum = bgSum / bgN;
+    var contrast = Math.max(0, bgLum - bestLum); // higher = better (dark square against lighter surround)
+    var quality = Math.max(0, Math.min(100, (contrast / 120) * 100));
+    return { pos: { x: bestX, y: bestY }, quality: quality };
+  }
+
+  function renderSwatches(readings, corners, quality, cq) {
+    var order = ['white', 'lgray', 'mgray', 'black', 'sample', 'blank'];
+    var html = '<div class="swatches">';
+    order.forEach(function (k) {
+      var c = readings[k];
+      var rgb = 'rgb(' + Math.round(c.r) + ',' + Math.round(c.g) + ',' + Math.round(c.b) + ')';
+      html += '<div class="swatch"><div class="swatch-color" style="background:' + rgb + '"></div>' + k + '<br>' +
+        Math.round(c.r) + ',' + Math.round(c.g) + ',' + Math.round(c.b) + '</div>';
+    });
+    html += '</div>';
+    swatchArea.innerHTML = html;
+    detailArea.innerHTML = '<p style="font-size:11px;color:var(--muted);margin:4px 0">corner confidence -- TL:' +
+      Math.round(cq.tl) + '% TR:' + Math.round(cq.tr) + '% BL:' + Math.round(cq.bl) + '% BR:' + Math.round(cq.br) + '%</p>';
+  }
+
+  function drawCornerOverlay(corners) {
+    ctx.strokeStyle = '#5fd995';
+    ctx.lineWidth = 2;
+    ['tl', 'tr', 'bl', 'br'].forEach(function (k) {
+      var p = corners[k];
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 8, 0, Math.PI * 2);
+      ctx.stroke();
+    });
+    ctx.beginPath();
+    ctx.moveTo(corners.tl.x, corners.tl.y); ctx.lineTo(corners.tr.x, corners.tr.y);
+    ctx.lineTo(corners.br.x, corners.br.y); ctx.lineTo(corners.bl.x, corners.bl.y);
+    ctx.closePath(); ctx.stroke();
+  }
+
+  function renderLog() {
+    document.getElementById('log-count').textContent = log.length;
+    var tbody = document.getElementById('log-tbody');
+    tbody.innerHTML = '';
+    log.forEach(function (entry, idx) {
+      var tr = document.createElement('tr');
+      tr.innerHTML = '<td>' + entry.n + '</td><td>' + escapeHtml(entry.condition) + '</td>' +
+        '<td>' + escapeHtml(entry.device) + '</td>' +
+        '<td>' + entry.delta_r + '</td><td>' + entry.delta_g + '</td><td>' + entry.delta_b + '</td>' +
+        '<td>' + entry.quality + '</td>' +
+        '<td><button class="del-btn" data-idx="' + idx + '">✕</button></td>';
+      tbody.appendChild(tr);
+    });
+    tbody.querySelectorAll('.del-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        log.splice(parseInt(btn.getAttribute('data-idx'), 10), 1);
+        renderLog();
+      });
+    });
+  }
+
+  function escapeHtml(s) {
+    var d = document.createElement('div'); d.textContent = s; return d.innerHTML;
+  }
+
+  function copyToClipboard(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () {
+        setStatus('Copied to clipboard.', 'ok');
+      }, function () { fallbackCopy(text); });
+    } else {
+      fallbackCopy(text);
+    }
+  }
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.style.position = 'fixed'; ta.style.left = '-9999px';
+    document.body.appendChild(ta); ta.focus(); ta.select();
+    try { document.execCommand('copy'); setStatus('Copied to clipboard.', 'ok'); }
+    catch (e) { setStatus('Could not copy automatically -- select the text manually.', 'warn'); }
+    document.body.removeChild(ta);
+  }
+
+  document.getElementById('copy-json').addEventListener('click', function () {
+    copyToClipboard(JSON.stringify(log, null, 2));
+  });
+  document.getElementById('copy-csv').addEventListener('click', function () {
+    var header = 'n,condition,device,quality,delta_r,delta_g,delta_b,linearity_error,reference_white_rgb,reference_black_rgb,sample_tube_rgb,blank_tube_rgb\n';
+    var rows = log.map(function (e) {
+      return [e.n, csvSafe(e.condition), csvSafe(e.device), e.quality, e.delta_r, e.delta_g, e.delta_b,
+        e.linearity_error, e.reference_white_rgb.join('/'), e.reference_black_rgb.join('/'),
+        e.sample_tube_rgb.map(function(v){return Math.round(v);}).join('/'),
+        e.blank_tube_rgb.map(function(v){return Math.round(v);}).join('/')].join(',');
+    });
+    copyToClipboard(header + rows.join('\n'));
+  });
+  function csvSafe(s) { return '"' + String(s).replace(/"/g, '""') + '"'; }
+  document.getElementById('clear-log').addEventListener('click', function () {
+    if (log.length && !confirm('Clear all ' + log.length + ' logged captures?')) return;
+    log = []; renderLog(); setStatus('Log cleared.', 'warn');
+  });
+
+  // Debug hooks for automated self-test (harmless to leave in for real use).
+  window.__biolabProcessImage = processImage;
+  window.__biolabGetLog = function () { return log; };
+  window.__biolabClearLog = function () { log = []; renderLog(); };
+})();
+</script>

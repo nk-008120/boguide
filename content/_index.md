@@ -117,6 +117,12 @@ We cover the full IBO syllabus: 15+ sections, 150+ topic pages, growing every we
     <p>Exam-technique tips, lab guides, and quick bites from our Instagram — all in one place.</p>
     <span class="btn-outline">Read BiOBytes →</span>
   </a>
+  <a href="/biolab/" class="card">
+    <div class="card-icon">🔬</div>
+    <h3>BiOLab</h3>
+    <p>A community protocol archive — read a verified or submitted protocol, run it yourself, and log your results.</p>
+    <span class="btn-outline">Explore BiOLab →</span>
+  </a>
   <a href="/about/" class="card">
     <div class="card-icon">🧬</div>
     <h3>About BiOGuide</h3>

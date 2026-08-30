@@ -5634,30 +5634,43 @@ html.dark .dashboard-copy-btn:hover {
 nav.hextra-max-navbar-width > a,
 nav.hextra-max-navbar-width > div > button.hextra-nav-menu-toggle,
 nav.hextra-max-navbar-width > a:not(.nav-account-link):not([class*="hx:ltr:mr-auto"]) {
-  font-size: 0.8rem;
-  padding: 0.35rem 0.45rem;
+  font-size: 0.76rem;
+  padding: 0.3rem 0.3rem;
   margin-left: -0.25rem;
-  gap: 0.25rem;
+  gap: 0.2rem;
 }
 
 nav.hextra-max-navbar-width > div > button.hextra-nav-menu-toggle {
-  font-size: 0.8rem;
-  padding: 0.35rem 0.45rem;
+  font-size: 0.76rem;
+  padding: 0.3rem 0.3rem;
   margin-left: -0.25rem;
 }
 
 nav.hextra-max-navbar-width {
-  gap: 0.15rem;
+  gap: 0.1rem;
 }
 
 @media (min-width: 768px) {
   nav.hextra-max-navbar-width {
-    gap: 0.3rem;
+    gap: 0.15rem;
   }
 }
 
+/* The theme's own `hx:w-auto` utility isn't in the compiled CSS bundle, so
+   these logo-mark <img>s (BiOrchive, BiOClash, the Notes dropdown, etc.)
+   were falling back to a flex-shrunk width instead of keeping their
+   aspect ratio -- squishing them horizontally whenever the navbar got
+   tight. Pin width explicitly and stop them (and their wrapping icon
+   span) from ever being treated as shrinkable flex content. */
 nav.hextra-max-navbar-width img[class*="hx:h-5"] {
   height: 1rem;
+  width: auto;
+  flex-shrink: 0;
+}
+
+nav.hextra-max-navbar-width a > span:first-child:has(> img[class*="hx:h-5"]),
+nav.hextra-max-navbar-width button.hextra-nav-menu-toggle > span:has(> img[class*="hx:h-5"]) {
+  flex-shrink: 0;
 }
 
 /* Dashboard guide page mockups */
@@ -5955,4 +5968,1121 @@ html.dark .community-reach-updated {
   .community-reach-grid {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   }
+}
+
+/* === BIOLAB ANNOUNCEMENT PAGE (content/biolab/_index.md) ===
+   Deliberately distinct from the rest of BiOGuide -- all rules scoped under
+   .biolab-page so nothing here leaks onto other pages. */
+.biolab-page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 1rem 1rem 4rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.biolab-hero {
+  text-align: center;
+  padding: 3rem 1rem 2.5rem;
+}
+.biolab-eyebrow {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--secondary);
+  background: rgba(92, 122, 88, 0.1);
+  border-radius: var(--radius-pill);
+  padding: 0.3rem 0.9rem;
+  margin-bottom: 1.25rem;
+}
+html.dark .biolab-eyebrow {
+  color: #9db99a;
+  background: rgba(157, 185, 154, 0.14);
+}
+.biolab-page .biolab-title {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.05 !important;
+  font-size: clamp(2.4rem, 6vw, 4rem) !important;
+  margin: 0 0 1.25rem !important;
+}
+.biolab-title-accent {
+  background: linear-gradient(120deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.biolab-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #475569;
+  max-width: 620px;
+  margin: 0 auto 1.75rem;
+}
+html.dark .biolab-subtitle {
+  color: #cbd5e1;
+}
+.biolab-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.45rem 1.1rem;
+  border-radius: var(--radius-pill);
+  background: rgba(217, 119, 6, 0.1);
+  color: #b45309;
+  border: 1px solid rgba(217, 119, 6, 0.25);
+  box-shadow: var(--shadow-sm);
+}
+html.dark .biolab-status-pill {
+  background: rgba(251, 191, 36, 0.14);
+  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.3);
+}
+.biolab-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-circle);
+  background: #d97706;
+  box-shadow: 0 0 0 0 rgba(217, 119, 6, 0.5);
+  animation: biolab-dot-pulse 2s ease-in-out infinite;
+}
+html.dark .biolab-status-dot {
+  background: #fbbf24;
+}
+@keyframes biolab-dot-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(217, 119, 6, 0.45); }
+  50% { box-shadow: 0 0 0 6px rgba(217, 119, 6, 0); }
+}
+.biolab-hero-facts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 1.75rem;
+}
+.biolab-fact {
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-pill);
+  background: var(--bg, #fff);
+  border: 1px solid rgba(137, 101, 196, 0.25);
+  box-shadow: var(--shadow-sm);
+}
+html.dark .biolab-fact {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(201, 183, 232, 0.3);
+  color: #e2e8f0;
+}
+
+.biolab-section {
+  margin: 3rem 0;
+}
+.biolab-section h2 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 1.7rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em !important;
+  margin-bottom: 0.6rem;
+}
+.biolab-section-intro {
+  color: #64748b;
+  margin-bottom: 1.25rem;
+}
+html.dark .biolab-section-intro {
+  color: #94a3b8;
+}
+
+.biolab-credit-box {
+  margin-top: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(92, 122, 88, 0.25);
+  background: linear-gradient(135deg, rgba(137, 101, 196, 0.06), rgba(92, 122, 88, 0.06));
+}
+.biolab-credit-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--secondary);
+  margin-bottom: 0.4rem;
+}
+html.dark .biolab-credit-label {
+  color: #9db99a;
+}
+.biolab-credit-box p {
+  margin: 0;
+}
+html.dark .biolab-credit-box {
+  border-color: rgba(157, 185, 154, 0.3);
+  background: linear-gradient(135deg, rgba(201, 183, 232, 0.08), rgba(157, 185, 154, 0.08));
+}
+
+/* -- "hub" card visualizing the capture -> compare -> publish flow -- */
+.biolab-hub-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  padding: 2rem clamp(1.25rem, 4vw, 2.5rem) 2.25rem;
+  background: linear-gradient(160deg, #1c1533, #241a3d 55%, #1a1430);
+  background-image:
+    linear-gradient(160deg, #1c1533, #241a3d 55%, #1a1430),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, transparent 1px, transparent 32px),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, transparent 1px, transparent 32px);
+  box-shadow: var(--shadow-lg);
+  color: #e5e0f5;
+}
+.biolab-hub-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #b8a9dd;
+  margin-bottom: 2rem;
+}
+.biolab-hub-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #fbbf24;
+}
+.biolab-hub-status .biolab-status-dot {
+  background: #fbbf24;
+}
+.biolab-hub-core {
+  position: relative;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.75rem;
+}
+.biolab-hub-glow {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  border-radius: var(--radius-circle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  background: radial-gradient(circle at 35% 30%, rgba(201, 183, 232, 0.9), rgba(137, 101, 196, 0.35) 60%, transparent 75%);
+  box-shadow: 0 0 45px 12px rgba(137, 101, 196, 0.45);
+  animation: biolab-glow-pulse 4s ease-in-out infinite;
+  z-index: 1;
+}
+@keyframes biolab-glow-pulse {
+  0%, 100% { box-shadow: 0 0 45px 12px rgba(137, 101, 196, 0.4); }
+  50% { box-shadow: 0 0 60px 18px rgba(157, 185, 154, 0.45); }
+}
+.biolab-hub-ring {
+  position: absolute;
+  border: 1px solid rgba(201, 183, 232, 0.25);
+  border-radius: 50%;
+}
+.biolab-hub-ring-1 {
+  width: 130px;
+  height: 130px;
+}
+.biolab-hub-ring-2 {
+  width: 160px;
+  height: 160px;
+  border-color: rgba(157, 185, 154, 0.18);
+}
+.biolab-hub-steps {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.biolab-hub-step {
+  flex: 1 1 180px;
+  max-width: 230px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 1.1rem 1.2rem;
+}
+.biolab-hub-step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: var(--radius-circle);
+  background: linear-gradient(120deg, #c9b7e8, #9db99a);
+  color: #1a1430;
+  margin-bottom: 0.6rem;
+}
+.biolab-hub-step h3 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  margin: 0 0 0.35rem;
+  color: #f1edfa;
+}
+.biolab-hub-step p {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #c3b8dd;
+  margin: 0;
+}
+.biolab-optional {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: #9db99a;
+  border: 1px solid rgba(157, 185, 154, 0.4);
+  border-radius: var(--radius-pill);
+  padding: 0.1rem 0.5rem;
+  margin-left: 0.35rem;
+  vertical-align: middle;
+}
+.biolab-hub-arrow {
+  align-self: center;
+  font-size: 1.3rem;
+  color: #8a7ab0;
+}
+@media (max-width: 720px) {
+  .biolab-hub-arrow {
+    transform: rotate(90deg);
+  }
+}
+
+/* -- decided vs. open -- */
+.biolab-decision-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+@media (max-width: 640px) {
+  .biolab-decision-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.biolab-decision-card {
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.6rem;
+  box-shadow: var(--shadow-sm);
+}
+.biolab-decision-card h3 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem !important;
+  margin: 0 0 0.9rem;
+}
+.biolab-decision-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-circle);
+  font-size: 0.85rem;
+}
+.biolab-decision-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+.biolab-decision-locked {
+  background: rgba(92, 122, 88, 0.06);
+  border: 1px solid rgba(92, 122, 88, 0.25);
+}
+.biolab-decision-locked .biolab-decision-icon {
+  background: var(--secondary);
+  color: #fff;
+}
+html.dark .biolab-decision-locked {
+  background: rgba(157, 185, 154, 0.08);
+  border-color: rgba(157, 185, 154, 0.3);
+}
+.biolab-decision-open {
+  background: rgba(137, 101, 196, 0.06);
+  border: 1px dashed rgba(137, 101, 196, 0.35);
+}
+.biolab-decision-open .biolab-decision-icon {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+html.dark .biolab-decision-open {
+  background: rgba(201, 183, 232, 0.08);
+  border-color: rgba(201, 183, 232, 0.4);
+}
+
+/* -- feedback -- */
+.biolab-feedback-section {
+  text-align: center;
+  padding: 2.25rem 1.5rem;
+  border-radius: var(--radius-xl);
+  background: rgba(137, 101, 196, 0.045);
+  border: 1px solid rgba(137, 101, 196, 0.15);
+}
+html.dark .biolab-feedback-section {
+  background: rgba(201, 183, 232, 0.05);
+  border-color: rgba(201, 183, 232, 0.18);
+}
+.biolab-reactions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+  margin: 1.25rem 0 0.9rem;
+}
+.biolab-reaction {
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 600;
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid rgba(137, 101, 196, 0.3);
+  background: var(--bg, #fff);
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+.biolab-reaction:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+.biolab-page .biolab-reaction.is-active {
+  background: linear-gradient(120deg, var(--primary), var(--secondary));
+  border-color: transparent;
+  color: #fff;
+}
+html.dark .biolab-reaction {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(201, 183, 232, 0.3);
+}
+.biolab-reaction-note {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  min-height: 1.2em;
+  margin-bottom: 1.5rem;
+}
+.biolab-discuss-lede {
+  max-width: 480px;
+  margin: 0 auto 1.1rem;
+  color: #475569;
+  font-size: 0.95rem;
+}
+html.dark .biolab-discuss-lede {
+  color: #cbd5e1;
+}
+.biolab-discuss-btn {
+  display: inline-block;
+}
+
+.biolab-footer-link {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+.biolab-footer-link a {
+  color: #94a3b8;
+  text-decoration: none;
+}
+.biolab-footer-link a:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* -- credit-box variant used for the "submit your own" callout -- */
+.biolab-credit-box-alt {
+  margin-top: 1.25rem;
+}
+
+/* -- moderation-model disclosure, amber-accented to match the status pill -- */
+.biolab-caution-box {
+  margin-top: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(217, 119, 6, 0.3);
+  background: rgba(217, 119, 6, 0.06);
+}
+.biolab-caution-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #b45309;
+  margin-bottom: 0.5rem;
+}
+.biolab-caution-box p {
+  margin: 0;
+}
+html.dark .biolab-caution-box {
+  border-color: rgba(251, 191, 36, 0.35);
+  background: rgba(251, 191, 36, 0.08);
+}
+html.dark .biolab-caution-label {
+  color: #fbbf24;
+}
+
+/* -- per-question labels above each reaction group -- */
+.biolab-feedback-question {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 1.75rem 0 0.6rem;
+}
+.biolab-feedback-question:first-of-type {
+  margin-top: 0.5rem;
+}
+.biolab-feedback-hint {
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+html.dark .biolab-feedback-hint {
+  color: #64748b;
+}
+
+/* ============================================================
+   BiOLab protocol archive (browse/search list + detail page)
+   ============================================================ */
+.biolab-archive-page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 1rem 1rem 4rem;
+}
+.biolab-archive-header {
+  margin-bottom: 1.5rem;
+}
+.biolab-archive-h1 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em !important;
+  font-size: clamp(2rem, 5vw, 2.75rem) !important;
+  margin: 0.5rem 0 0.75rem !important;
+}
+.biolab-archive-intro {
+  color: #475569;
+  max-width: 700px;
+  line-height: 1.6;
+}
+html.dark .biolab-archive-intro {
+  color: #cbd5e1;
+}
+
+.biolab-archive-controls {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+.biolab-archive-search {
+  flex: 1 1 260px;
+  padding: 0.6rem 0.9rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(137, 101, 196, 0.3);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+.biolab-archive-category-select {
+  padding: 0.6rem 0.9rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(137, 101, 196, 0.3);
+  background: var(--bg, #fff);
+  color: inherit;
+  font: inherit;
+}
+html.dark .biolab-archive-search,
+html.dark .biolab-archive-category-select {
+  border-color: rgba(201, 183, 232, 0.35);
+  background: rgba(255, 255, 255, 0.04);
+}
+.biolab-archive-search:focus,
+.biolab-archive-category-select:focus {
+  outline: none;
+  border-color: #8965c4;
+}
+
+.biolab-archive-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+.biolab-archive-card {
+  display: block;
+  padding: 1.1rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(137, 101, 196, 0.2);
+  background: rgba(137, 101, 196, 0.03);
+  text-decoration: none !important;
+  color: inherit;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+.biolab-archive-card:hover {
+  border-color: rgba(137, 101, 196, 0.5);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-1px);
+}
+html.dark .biolab-archive-card {
+  border-color: rgba(201, 183, 232, 0.22);
+  background: rgba(201, 183, 232, 0.04);
+}
+html.dark .biolab-archive-card:hover {
+  border-color: rgba(201, 183, 232, 0.5);
+}
+.biolab-archive-card-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.45rem;
+  margin-bottom: 0.5rem;
+}
+.biolab-archive-card-title {
+  font-weight: 700;
+}
+.biolab-archive-card-desc {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin: 0 0 0.7rem;
+}
+.biolab-archive-card-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  opacity: 0.8;
+}
+.biolab-archive-card-attr {
+  font-style: italic;
+}
+
+/* Badges -- the ONE trust signal the archive relies on. Icon + explicit
+   text together, always, never a color difference alone. */
+.biolab-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  flex-shrink: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.28rem 0.7rem;
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+}
+.biolab-badge-official {
+  background: var(--secondary);
+  color: #fff;
+}
+.biolab-badge-community {
+  background: transparent;
+  color: #b45309;
+  border: 1.5px dashed rgba(217, 119, 6, 0.6);
+}
+html.dark .biolab-badge-community {
+  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.55);
+}
+.biolab-badge-sm {
+  font-size: 0.66rem;
+  padding: 0.18rem 0.5rem;
+}
+
+.biolab-archive-category-tag {
+  font-size: 0.78rem;
+}
+
+.biolab-archive-back-link {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+.biolab-archive-detail-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.6rem;
+}
+.biolab-archive-title {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.01em !important;
+  font-size: clamp(1.7rem, 4vw, 2.4rem) !important;
+  margin: 0 !important;
+}
+.biolab-archive-detail-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  opacity: 0.8;
+  margin-bottom: 1.25rem;
+}
+.biolab-archive-attribution {
+  font-style: italic;
+}
+.biolab-archive-author {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.biolab-archive-caution {
+  margin-bottom: 1.25rem;
+}
+.biolab-archive-description {
+  font-size: 1.02rem;
+  line-height: 1.6;
+  margin: 0 0 1.25rem;
+}
+.biolab-archive-body {
+  white-space: pre-wrap;
+  line-height: 1.7;
+  margin: 0 0 1.5rem;
+}
+.biolab-archive-body-empty {
+  opacity: 0.7;
+  font-style: italic;
+  margin: 0 0 1.5rem;
+}
+
+.biolab-archive-section {
+  margin: 2.25rem 0;
+}
+.biolab-archive-section h2 {
+  font-family: 'Montserrat', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 1.3rem !important;
+  margin-bottom: 0.75rem !important;
+}
+
+.biolab-archive-reference-card {
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(92, 122, 88, 0.3);
+  background: rgba(92, 122, 88, 0.06);
+}
+html.dark .biolab-archive-reference-card {
+  border-color: rgba(157, 185, 154, 0.3);
+  background: rgba(157, 185, 154, 0.08);
+}
+.biolab-archive-reference-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.biolab-archive-reference-notes {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.biolab-archive-results-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.biolab-archive-result-card {
+  padding: 0.9rem 1.1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(137, 101, 196, 0.15);
+  background: rgba(137, 101, 196, 0.03);
+}
+html.dark .biolab-archive-result-card {
+  border-color: rgba(201, 183, 232, 0.18);
+  background: rgba(201, 183, 232, 0.04);
+}
+.biolab-archive-result-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.biolab-archive-result-who {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+.biolab-archive-result-value {
+  font-weight: 700;
+}
+.biolab-archive-result-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+.biolab-archive-visibility-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-pill);
+}
+.biolab-archive-visibility-tag.is-public {
+  color: #166534;
+  background: #dcfce7;
+}
+.biolab-archive-visibility-tag.is-private {
+  color: #6b7280;
+  background: #e5e7eb;
+}
+html.dark .biolab-archive-visibility-tag.is-public {
+  color: #4ade80;
+  background: rgba(74, 222, 128, 0.15);
+}
+html.dark .biolab-archive-visibility-tag.is-private {
+  color: #cbd5e1;
+  background: rgba(203, 213, 225, 0.12);
+}
+.biolab-archive-visibility-tag.is-removed {
+  color: #991b1b;
+  background: #fee2e2;
+}
+html.dark .biolab-archive-visibility-tag.is-removed {
+  color: #fca5a5;
+  background: rgba(248, 113, 113, 0.15);
+}
+.biolab-archive-result-date {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-top: 0.4rem;
+}
+
+.biolab-archive-report-wrap {
+  margin-top: 1rem;
+}
+.biolab-archive-report-wrap-sm {
+  margin-top: 0.6rem;
+}
+.biolab-archive-report-btn {
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(220, 38, 38, 0.35);
+  background: transparent;
+  color: #b91c1c;
+  cursor: pointer;
+}
+.biolab-archive-report-btn:hover {
+  background: rgba(220, 38, 38, 0.08);
+}
+html.dark .biolab-archive-report-btn {
+  color: #f87171;
+  border-color: rgba(248, 113, 113, 0.4);
+}
+html.dark .biolab-archive-report-btn:hover {
+  background: rgba(248, 113, 113, 0.1);
+}
+.biolab-archive-report-form-wrap {
+  margin-top: 0.6rem;
+  max-width: 420px;
+}
+
+/* ============================================================
+   BiOLab submission forms (protocol / result / feedback)
+   ============================================================ */
+.biolab-hero-ctas {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.biolab-submit-cta {
+  margin-left: 1rem;
+}
+
+.biolab-submit-page .discussions-form {
+  max-width: 640px;
+}
+.biolab-submit-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+.discussions-form select,
+.discussions-form input[type="file"] {
+  width: 100%;
+  padding: 0.6rem 0.9rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(137, 101, 196, 0.3);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+html.dark .discussions-form select,
+html.dark .discussions-form input[type="file"] {
+  border-color: rgba(201, 183, 232, 0.35);
+}
+.biolab-submit-disclaimer p {
+  margin-bottom: 0.9rem;
+}
+.biolab-submit-ack-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.biolab-submit-ack-label input {
+  width: auto;
+  margin-top: 0.2rem;
+}
+
+.biolab-archive-capture-box {
+  border: 1px dashed rgba(137, 101, 196, 0.35);
+  border-radius: var(--radius-md);
+  padding: 0.9rem 1.1rem;
+  margin: 0.5rem 0;
+}
+html.dark .biolab-archive-capture-box {
+  border-color: rgba(201, 183, 232, 0.3);
+}
+.biolab-archive-capture-preview {
+  margin: 0.6rem 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+.biolab-archive-capture-preview img {
+  max-width: 220px;
+  max-height: 220px;
+  border-radius: var(--radius-sm);
+  display: block;
+}
+.biolab-archive-calibrate-btn {
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(137, 101, 196, 0.4);
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+.biolab-archive-calibrate-btn:hover {
+  background: rgba(137, 101, 196, 0.08);
+}
+.biolab-archive-calibrate-status {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  min-height: 1.2em;
+  opacity: 0.9;
+}
+.biolab-archive-capture-note {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin: 0.6rem 0 0;
+}
+.biolab-archive-framing-note {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #b45309;
+  background: rgba(217, 119, 6, 0.08);
+  border-left: 3px solid rgba(217, 119, 6, 0.5);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 0.5rem 0.75rem;
+  margin: 0 0 0.7rem;
+}
+html.dark .biolab-archive-framing-note {
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.1);
+  border-left-color: rgba(251, 191, 36, 0.5);
+}
+.biolab-archive-privacy-note {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin: 0.5rem 0;
+}
+
+.biolab-archive-publish-toggle {
+  margin-top: 0.6rem;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(137, 101, 196, 0.35);
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+.biolab-archive-publish-toggle:hover {
+  background: rgba(137, 101, 196, 0.08);
+}
+
+/* -- multi-image capture preview (result-submission form) -- */
+.biolab-archive-capture-thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.biolab-archive-capture-thumb {
+  position: relative;
+  width: 96px;
+  height: 96px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid rgba(137, 101, 196, 0.3);
+}
+html.dark .biolab-archive-capture-thumb {
+  border-color: rgba(201, 183, 232, 0.3);
+}
+.biolab-archive-capture-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.biolab-archive-capture-remove {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 20px;
+  height: 20px;
+  line-height: 18px;
+  text-align: center;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.biolab-archive-capture-remove:hover {
+  background: rgba(220, 38, 38, 0.85);
+}
+.biolab-archive-capture-thumb-tag {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.15rem 0.2rem;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  letter-spacing: 0.01em;
+}
+
+/* -- result gallery (protocol detail page's Results list) -- */
+.biolab-archive-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+}
+.biolab-archive-gallery-thumb {
+  display: block;
+  width: 84px;
+  height: 84px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid rgba(137, 101, 196, 0.25);
+}
+html.dark .biolab-archive-gallery-thumb {
+  border-color: rgba(201, 183, 232, 0.25);
+}
+.biolab-archive-gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.biolab-archive-gallery-thumb:hover {
+  border-color: rgba(137, 101, 196, 0.6);
+}
+html.dark .biolab-archive-gallery-thumb:hover {
+  border-color: rgba(201, 183, 232, 0.6);
+}
+
+/* -- workflow PDF attachments (protocol detail page) -- */
+.biolab-archive-attachment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.biolab-archive-attachment-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(137, 101, 196, 0.25);
+  background: rgba(137, 101, 196, 0.03);
+  color: inherit;
+  text-decoration: none !important;
+  width: fit-content;
+  max-width: 100%;
+}
+.biolab-archive-attachment-link:hover {
+  border-color: rgba(137, 101, 196, 0.55);
+  background: rgba(137, 101, 196, 0.07);
+}
+html.dark .biolab-archive-attachment-link {
+  border-color: rgba(201, 183, 232, 0.25);
+  background: rgba(201, 183, 232, 0.04);
+}
+html.dark .biolab-archive-attachment-link:hover {
+  border-color: rgba(201, 183, 232, 0.55);
+  background: rgba(201, 183, 232, 0.08);
+}
+.biolab-archive-attachment-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* -- workflow PDF picker preview (protocol-submission form) -- */
+.biolab-submit-attachment-list {
+  list-style: none;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.biolab-submit-attachment-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(137, 101, 196, 0.25);
+  background: rgba(137, 101, 196, 0.03);
+}
+html.dark .biolab-submit-attachment-item {
+  border-color: rgba(201, 183, 232, 0.25);
+  background: rgba(201, 183, 232, 0.04);
+}
+.biolab-submit-attachment-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+.biolab-submit-attachment-item .biolab-archive-capture-remove {
+  position: static;
+  flex-shrink: 0;
 }

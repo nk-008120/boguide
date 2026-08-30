@@ -189,6 +189,10 @@ The Pep + DNase lane shows the same retarded bands as the Pep-only lane, while t
 Coincidence. The Coomassie-protein complex and the reduced NBT formazan both happen to absorb maximally at 595 nm. They are chemically unrelated.
 </details>
 
+{{< callout type="info" emoji="🧪" >}}
+These integrated workflows all lean on the same idea: a colour change read at a fixed wavelength stands in for a concentration. [BiOLab](/biolab/archive/)'s protocol archive lets you run that kind of colorimetric assay yourself and log a real result, not just interpolate a given standard curve.
+{{< /callout >}}
+
 ---
 
 ## Final Study Strategy

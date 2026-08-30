@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BiOLab Reference Card v1 -- Print at 100%</title>
+<style>
+  @page { size: A4 landscape; margin: 10mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 10mm;
+    background: #eee;
+  }
+  .card {
+    position: relative;
+    width: 180mm;
+    height: 100mm;
+    background: #ffffff;
+    border: 0.3mm solid #999;
+    margin: 0 auto;
+  }
+  .fiducial {
+    position: absolute;
+    width: 12mm;
+    height: 12mm;
+    background: #000000;
+  }
+  .fid-tl { top: 5mm; left: 5mm; }
+  .fid-tr { top: 5mm; right: 5mm; }
+  .fid-bl { bottom: 5mm; left: 5mm; }
+  .fid-br { bottom: 5mm; right: 5mm; }
+
+  .patch-row {
+    position: absolute;
+    top: 20mm;
+    left: 24mm;
+    right: 24mm;
+    height: 25mm;
+    display: flex;
+    justify-content: space-between;
+  }
+  .patch {
+    width: 25mm;
+    height: 25mm;
+    border: 0.2mm solid #ccc;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .patch span {
+    font-size: 6pt;
+    color: #888;
+    background: rgba(255,255,255,0.7);
+    padding: 0 1mm;
+  }
+  .patch.white { background: #ffffff; }
+  .patch.lgray { background: #bfbfbf; }
+  .patch.mgray { background: #7f7f7f; }
+  .patch.black { background: #000000; }
+  .patch.black span { color: #ccc; background: rgba(0,0,0,0.5); }
+
+  .tube-zone {
+    position: absolute;
+    top: 52mm;
+    left: 24mm;
+    right: 24mm;
+    height: 40mm;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .tube-slot {
+    width: 20mm;
+    height: 34mm;
+    border: 0.4mm dashed #999;
+    border-radius: 3mm;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 2mm;
+  }
+  .tube-slot span { font-size: 7pt; color: #777; }
+
+  .title-block {
+    position: absolute;
+    top: 5mm;
+    left: 20mm;
+    right: 20mm;
+    text-align: center;
+    font-size: 7pt;
+    color: #aaa;
+  }
+
+  .instructions {
+    width: 180mm;
+    margin: 4mm auto 0;
+    font-size: 8pt;
+    color: #333;
+    line-height: 1.4;
+  }
+  .instructions h2 { font-size: 10pt; margin: 0 0 2mm; }
+  .instructions ul { margin: 0; padding-left: 4mm; }
+  .no-print { text-align: center; margin-bottom: 6mm; }
+  @media print {
+    body { background: #fff; padding: 0; }
+    .no-print { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="no-print">
+  <p><strong>BiOLab Reference Card v1</strong> -- press Ctrl+P (Cmd+P on Mac), and in the print dialog set <strong>Scale = 100% / Actual Size</strong> (NOT "fit to page"). Verify with a ruler afterward: the black corner squares should measure 12mm x 12mm.</p>
+</div>
+
+<div class="card">
+  <div class="fiducial fid-tl"></div>
+  <div class="fiducial fid-tr"></div>
+  <div class="fiducial fid-bl"></div>
+  <div class="fiducial fid-br"></div>
+
+  <div class="title-block">BIOLAB REFERENCE CARD v1 -- PRINT AT 100% SCALE -- DO NOT SCALE TO FIT PAGE</div>
+
+  <div class="patch-row">
+    <div class="patch white"><span>WHITE</span></div>
+    <div class="patch lgray"><span>LT GRAY</span></div>
+    <div class="patch mgray"><span>MD GRAY</span></div>
+    <div class="patch black"><span>BLACK</span></div>
+  </div>
+
+  <div class="tube-zone">
+    <div class="tube-slot"><span>SAMPLE</span></div>
+    <div class="tube-slot"><span>BLANK</span></div>
+  </div>
+</div>
+
+<div class="instructions">
+  <h2>Use</h2>
+  <ul>
+    <li>Print on plain paper (matte finish preferred over glossy photo paper -- glossy causes glare spots on the patches).</li>
+    <li>Keep the card flat. Place the sample tube and the blank/control tube upright in the two dashed slots, standing on the card.</li>
+    <li>Avoid a single strong light source hitting the card at a steep angle -- it casts a shadow across the patches from the tubes. Diffuse/indirect light works best.</li>
+    <li>Frame the photo so all 4 black corner squares and both tubes are visible and roughly level.</li>
+    <li>This card is a validation prototype (BiOLab Session 2) -- it is not the assay's real Trinder reagent card, and the grayscale patches are printer output, not lab-calibrated color references. See <code>context/biolab-session2/README.md</code> for why this design was chosen over a full ColorChecker-style card.</li>
+  </ul>
+</div>
+
+</body>
+</html>

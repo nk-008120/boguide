@@ -1,0 +1,14 @@
+{
+  "name": "biolab-rls-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RLS verification harness for supabase/migrations/015-017 (BiOLab). Applies the real migration files against a WASM Postgres (pglite) and exercises RLS as an authenticated client would. No live Supabase project needed.",
+  "main": "test.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.8"
+  }
+}

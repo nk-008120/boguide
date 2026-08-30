@@ -106,6 +106,8 @@ The techniques are split across two pages to keep things navigable. The third pa
   {{< card link="integrated-workflows-reference/" title="Integrated Workflows & Reference" subtitle="The four major IBO workflow patterns, mathematical toolkit, universal exam traps, year-specific index, 10 self-assessment questions with model answers, and study strategy." tag="Putting it together" tagColor="green" >}}
 {{< /cards >}}
 
+Prefer doing over reading? [BiOLab](/biolab/) is BiOGuide's protocol archive, where you can run a colorimetric assay like the ones on this page yourself and log a result.
+
 </div>
 
 <div class="article-gate-cta" id="article-gate-cta" hidden>

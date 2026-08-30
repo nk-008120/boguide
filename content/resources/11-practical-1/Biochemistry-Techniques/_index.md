@@ -92,6 +92,10 @@ The Bradford assay appeared in the 2018 and 2023 IBO exams, both times as part o
 
 {{< iframe src="/dilution-calculator.html" title="Dilution Calculator" height="420px" >}}
 
+{{< callout type="info" emoji="🧪" >}}
+Want to run a colorimetric assay yourself, on real samples, and log a result? [BiOLab](/biolab/) is BiOGuide's protocol archive — its baseline protocol uses the same absorbance-at-a-fixed-wavelength logic as Bradford, just with a different reagent and readout.
+{{< /callout >}}
+
 ---
 
 ## Continuous Enzyme Assays

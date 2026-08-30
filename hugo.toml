@@ -119,14 +119,19 @@ theme = "hextra"
       image = "/bioclashlogo-transparent.png"
 
   [[menu.main]]
+    name = "BiOLab"
+    url = "/biolab/"
+    weight = 4
+
+  [[menu.main]]
     name = "Dashboard"
     url = "/dashboard/"
-    weight = 4
+    weight = 5
 
   [[menu.main]]
     name = "Leaderboard"
     url = "/papers/leaderboard/"
-    weight = 5
+    weight = 6
     [menu.main.params]
       image = "/hof.png"
       iconOnly = true
@@ -134,49 +139,49 @@ theme = "hextra"
   [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 6
+    weight = 7
 
   [[menu.main]]
     name = "BiOBytes"
     url = "/biobytes/"
-    weight = 7
+    weight = 8
 
   [[menu.main]]
     name = "Discussions"
     url = "/discussions/"
-    weight = 8
+    weight = 9
 
   [[menu.main]]
     name = "Search"
-    weight = 9
+    weight = 10
     [menu.main.params]
       type = "search"
 
   [[menu.main]]
     name = "Tribute"
     url = "/tribute/"
-    weight = 10
+    weight = 11
     [menu.main.params]
       icon = "heart"
 
   [[menu.main]]
     name = "Discord"
     url = "https://discord.gg/jQ7sfcCs4"
-    weight = 11
+    weight = 12
     [menu.main.params]
       icon = "discord"
 
   [[menu.main]]
     name = "GitHub"
     url = "https://github.com/nk-008120/boguide"
-    weight = 12
+    weight = 13
     [menu.main.params]
       icon = "github"
 
   [[menu.main]]
     name = "Instagram"
     url = "https://www.instagram.com/bioguideofficial/"
-    weight = 13
+    weight = 14
     [menu.main.params]
       icon = "instagram"
 [params]

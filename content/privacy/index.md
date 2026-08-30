@@ -2,7 +2,7 @@
 title: "Privacy Policy"
 ---
 
-**Last updated:** August 8, 2026
+**Last updated:** August 30, 2026
 
 BiOGuide is a free, non-commercial study resource. Almost everything on the site - every topic page, every practice question, every timed attempt - works with no account at all. This page explains what happens on the small part that does involve an account: login, your profile, and the leaderboard.
 
@@ -37,6 +37,18 @@ You can read every topic page and attempt every practice question without ever s
 ## Cookies and local storage
 
 We don't use tracking or advertising cookies. Your login session is kept in your browser's local storage (not a third-party cookie) so you stay logged in between visits - this is standard behavior for any site with accounts, not a tracking mechanism.
+
+## BiOLab: protocols, results, and feedback
+
+[BiOLab](/biolab/) is different from the rest of the site: it's the one place where content you submit can be shown publicly to **any visitor**, not just other logged-in BiOGuide members. If you use BiOLab, here's specifically what that means:
+
+- **Protocols you submit** (title, category, description, the full protocol text, and any source attribution you provide) publish immediately and are shown to any visitor of the archive, logged in or not - there is no staff review queue before it goes live. Your display name, avatar, and country are shown as the author, the same way they appear on the leaderboard.
+- **Feedback/comments you leave** on a protocol are public to any visitor, attributed to your display name the same way.
+- **Results you submit** against a protocol (a numeric value, unit, and optional photo) are **private by default** - visible only to you. They only become visible to other visitors if you explicitly choose "Make public" on that result. Making a result public also makes any photo attached to it visible to others; keeping it private keeps the photo visible only to you.
+- **Photos you attach to a result** are re-encoded before upload, which strips EXIF metadata (GPS location, device model, capture timestamp) automatically - we never store that metadata. This is separate from what's *in the frame*: the submission form asks you not to include your face, other people, or identifying surroundings in the photo itself, since stripping EXIF data doesn't change what the image visually shows.
+- **Reporting and removal:** any protocol or result can be reported by another logged-in user. If BiOGuide staff act on a report, the content is hidden from public view (a removal flag, checked before anything is ever shown publicly) rather than deleted outright, so we retain an internal record of what was reported, why, and what was done about it. A removed protocol or result is no longer visible to anyone except (where applicable) the person who submitted it.
+
+If you'd rather not have something you submitted to BiOLab shown publicly, the simplest option is not to submit it, or to keep a result private and never toggle it public. If you want a public protocol, feedback comment, or public result removed, email us at the address below and we'll take it down.
 
 ## Deleting your data
 

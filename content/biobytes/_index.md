@@ -46,6 +46,13 @@ cascade:
     <div class="testimonial-meta">Meryem &middot; 6 students preparing for IBO</div>
     <span class="btn-outline">Read Their Story &rarr;</span>
   </a>
+  <a href="/biobytes/testimonials/azerbaijan-huseyn/" class="card testimonial-card">
+    <div class="card-icon">🇦🇿</div>
+    <h3>From Azerbaijan's own</h3>
+    <p class="testimonial-pullquote">"Introduction to National Olympiads of Azerbaijan or Respublika Fənn Olimpiadaları (RFO) and Where BiOGuide comes in!"</p>
+    <div class="testimonial-meta">Huseyn &middot; his thorough explanation of RFO</div>
+    <span class="btn-outline">Read His Review &rarr;</span>
+  </a>
 </div>
 {{< /tab >}}
 {{< tab name="From Social" >}} 
