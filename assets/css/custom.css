@@ -7086,3 +7086,209 @@ html.dark .biolab-submit-attachment-item {
   position: static;
   flex-shrink: 0;
 }
+
+/* ===== Site Tutorial (multi-page spotlight walkthrough) ===== */
+.site-tutorial-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+}
+
+.site-tutorial-spotlight {
+  position: fixed;
+  border-radius: 10px;
+  box-shadow: 0 0 0 9999px rgba(10, 10, 20, 0.72);
+  pointer-events: none;
+  transition: top 0.25s ease, left 0.25s ease, width 0.25s ease, height 0.25s ease;
+}
+
+.site-tutorial-dim {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 20, 0.72);
+  pointer-events: none;
+}
+
+.site-tutorial-tooltip {
+  position: fixed;
+  z-index: 10000;
+  width: 320px;
+  max-width: calc(100vw - 2rem);
+  background: #fff;
+  color: #1a1a2e;
+  border-radius: 14px;
+  padding: 1.1rem 1.25rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  transition: top 0.25s ease, left 0.25s ease;
+}
+
+.site-tutorial-tooltip.is-centered {
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.site-tutorial-tooltip-step {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #8965c4;
+  margin-bottom: 0.4rem;
+}
+
+.site-tutorial-tooltip-title {
+  margin: 0 0 0.4rem;
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 1.15rem;
+}
+
+.site-tutorial-tooltip-text {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #334155;
+}
+
+.site-tutorial-tooltip-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.site-tutorial-tooltip-nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.site-tutorial-btn {
+  border: none;
+  border-radius: 40px;
+  padding: 0.45rem 1.1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.site-tutorial-btn-ghost {
+  background: transparent;
+  color: #64748b;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+.site-tutorial-btn-ghost:hover {
+  color: #1a1a2e;
+}
+
+.site-tutorial-btn-back {
+  background: #f0f0f5;
+  color: #334155;
+}
+.site-tutorial-btn-back:hover {
+  background: #e2e2ea;
+}
+
+.site-tutorial-btn-next,
+.site-tutorial-btn-primary {
+  background: linear-gradient(135deg, #8965c4, #5c7a58);
+  color: #fff;
+}
+.site-tutorial-btn-next:hover,
+.site-tutorial-btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(92, 61, 150, 0.3);
+}
+
+.site-tutorial-invite-toast {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 9998;
+  width: 320px;
+  max-width: calc(100vw - 2rem);
+  background: #fff;
+  color: #1a1a2e;
+  border-radius: 14px;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  animation: site-tutorial-toast-in 0.35s ease;
+}
+
+@keyframes site-tutorial-toast-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.site-tutorial-invite-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.site-tutorial-resume-pill {
+  position: fixed;
+  left: 50%;
+  bottom: 1.25rem;
+  transform: translateX(-50%);
+  z-index: 9998;
+  background: linear-gradient(135deg, #8965c4, #5c7a58);
+  color: #fff;
+  padding: 0.55rem 1.25rem;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(92, 61, 150, 0.3);
+}
+.site-tutorial-resume-pill:hover {
+  color: #fff;
+  transform: translateX(-50%) translateY(-2px);
+}
+
+html.dark .site-tutorial-tooltip,
+html.dark .site-tutorial-invite-toast {
+  background: #1e1e2e;
+  color: #f0f0f5;
+}
+html.dark .site-tutorial-tooltip-text {
+  color: #cbd5e1;
+}
+html.dark .site-tutorial-btn-back {
+  background: #2a2a3a;
+  color: #cbd5e1;
+}
+html.dark .site-tutorial-btn-back:hover {
+  background: #34344a;
+}
+html.dark .site-tutorial-btn-ghost {
+  color: #94a3b8;
+}
+html.dark .site-tutorial-btn-ghost:hover {
+  color: #f0f0f5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-tutorial-spotlight,
+  .site-tutorial-tooltip { transition: none; }
+  .site-tutorial-invite-toast { animation: none; }
+}
+
+@media (max-width: 640px) {
+  .site-tutorial-resume-pill {
+    left: 1rem;
+    right: 1rem;
+    transform: none;
+    text-align: center;
+  }
+  .site-tutorial-resume-pill:hover {
+    transform: translateY(-2px);
+  }
+}

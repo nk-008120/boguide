@@ -46,7 +46,7 @@
     var c = getClient();
     if (!c) return Promise.resolve(null);
     return c.from('profiles')
-      .select('display_name, avatar_url, country, about, education_level, notify_bioclash, target_olympiad')
+      .select('display_name, avatar_url, country, about, education_level, notify_bioclash, target_olympiad, site_tutorial_seen')
       .eq('id', userId)
       .single()
       .then(function (result) {
