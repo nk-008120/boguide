@@ -1,6 +1,6 @@
 ---
 title: "GIC 2026 Blog, Three days at the Dr Babu Rajendra Prasad International conference center Bengaluru"
-description: "Long-form articles and quick bites from our Instagram — exam-technique tips, lab guides, and behind-the-scenes posts from the BiOGuide team."
+description: "A lecture-by-lecture diary from three days at the Genomics India Conference 2026 in Bengaluru - the workshop, the keynotes, and everything in between."
 layout: "wide"
 aliases:
   - /bioinsights/
@@ -10,7 +10,22 @@ cascade:
       path: "/biobytes/articles/**"
     layout: "gated-article"
 ---
-## DAY 1 (Genotypic NGS AI Based Data Analysis):<br>
+<div class="gic-article">
+
+<div class="gic-meta">
+  <span class="gic-meta-pill">📍 Bengaluru, India</span>
+  <span class="gic-meta-pill">🗓️ 1–3 September 2026</span>
+  <span class="gic-meta-pill">🧬 Genomics India Conference 2026</span>
+  <span class="gic-meta-pill">☕ ~14 min read</span>
+</div>
+
+Three days, three very different rooms- a hands-on Genotypic workshop, a full day of clinical genomics and hardware acceleration, and a closing day that swung from population genetics to cancer immunotherapy. Here's everything we sat through (and the bits we didn't) at GIC 2026, Bengaluru.
+
+<div class="gic-day gic-day-1">
+
+## DAY 1 (Genotypic NGS AI Based Data Analysis)
+<p class="gic-day-kicker">Pre-Conference Workshop &middot; 1 September 2026</p>
+
 ### L1 -  Assembling the Puzzle : From Sequencing Reads to GenomeAnnotation 
 *~ Nihar Bachan Das*
 
@@ -31,7 +46,7 @@ Mr. Nihar explained how SPAdes and Velvet differ while being de Bruijn Graphs an
     He explained how Normal assembly leaves out contromeric and telomeric datasets and how telomeric assemblies uses LRS technologies like Oxford Nanopore. 
 Mr. Nihar then concluded his speech with informing us on how Genotypic keeps working on new techniques to improve the technological applications of these intriguing and complex theoretical bioinformatical principles.
 
-### The Transcriptome chapter Bulk and Single cell RNA analysis
+### L2 - The Transcriptome Chapter: Bulk and Single Cell RNA Analysis
 *~Praddyumna Rahate*
 
 The first theoretical lecture was followed by a brief turnaround into the novice world of Single Cell Transcriptome Analysis RNA-Seq:
@@ -48,7 +63,13 @@ The first theoretical lecture was followed by a brief turnaround into the novice
 - Providing her opinions on how people should use the mentioned software, she eplained how reading output HTML reports from commander, and setting up the configuration file with Reg, Probe Set Ref, FASTQ Sample Barcode etc. helps.
 - Reaching the end of her talk, she explained how analysis of these files should be conducted and how PCA Markers and Phenotypic filtering is a great help in data analysis.
 
-## DAY 2 (Health Tech: Genomics in the Clinic):<br>
+</div>
+
+<div class="gic-day gic-day-2">
+
+## DAY 2 (Health Tech: Genomics in the Clinic)
+<p class="gic-day-kicker">Main Conference &middot; 2 September 2026</p>
+
 ### L1 - Long-Read Genome Sequencing in Clinical Practice: Solving the Unsolved
 *~ Dr Usha Dutta, BRIC-CDFD*
 
@@ -73,7 +94,13 @@ If Dr Dutta's talk was about what long reads can do biologically, Dr Natarajan's
 
 She wrapped up by positioning reversible computing not as a replacement for existing aligners but as a genomics-specific hardware direction worth taking seriously as error-tolerant, energy-efficient sequence alignment becomes a bottleneck of its own.
 
-## DAY 3 (Genome Biology, Omics Tech Updates & AI in Genomics):<br>
+</div>
+
+<div class="gic-day gic-day-3">
+
+## DAY 3 (Genome Biology, Omics Tech Updates & AI in Genomics)
+<p class="gic-day-kicker">Main Conference &middot; 3 September 2026</p>
+
 ### L1 - Population-Scale Landscape of Mobile Element Insertions Across 82 Diverse Indian Populations
 *~ Dr Shweta Ramdas, Centre for Brain Research (CBR), IISc*
 
@@ -172,4 +199,7 @@ By the time the Salus talk wrapped, poster session fatigue had well and truly se
   </div>
 </div>
 
+</div>
+
+</div>
 

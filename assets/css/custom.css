@@ -456,12 +456,136 @@ html.dark .testimonial-quote-block {
   background: rgba(201, 183, 232, 0.05);
 }
 
-/* --- Conference schedule timeline (GIC 2026 blog) --- */
+/* --- GIC 2026 conference-diary article: long-form layout + per-day theming --- */
+.gic-article {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.gic-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  margin: 1.5rem 0 2rem;
+}
+.gic-meta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: var(--radius-pill);
+  background: rgba(137, 101, 196, 0.08);
+  border: 1px solid rgba(137, 101, 196, 0.2);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--primary);
+  white-space: nowrap;
+}
+html.dark .gic-meta-pill {
+  background: rgba(201, 183, 232, 0.08);
+  border-color: rgba(201, 183, 232, 0.22);
+  color: #c9b7e8;
+}
+
+/* Each day gets its own accent colour, inherited by every heading/marker inside it */
+.gic-day {
+  margin: 3rem 0;
+}
+.gic-day-1 { --accent: #8965c4; }
+.gic-day-2 { --accent: #5c7a58; }
+.gic-day-3 { --accent: #b5793a; }
+html.dark .gic-day-1 { --accent: #c9b7e8; }
+html.dark .gic-day-2 { --accent: #9db99a; }
+html.dark .gic-day-3 { --accent: #e0b075; }
+
+.gic-article h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 1.7rem !important;
+  font-weight: 700 !important;
+  color: var(--accent) !important;
+  margin: 0 0 0.35rem !important;
+}
+.gic-day-1 h2::before,
+.gic-day-2 h2::before,
+.gic-day-3 h2::before {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.15rem;
+  height: 2.15rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.gic-day-1 h2::before { content: "1"; }
+.gic-day-2 h2::before { content: "2"; }
+.gic-day-3 h2::before { content: "3"; }
+
+.gic-day-kicker {
+  margin: 0 0 1.75rem 3rem !important;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0.75;
+}
+
+.gic-article h3 {
+  font-size: 1.28rem !important;
+  font-weight: 600 !important;
+  color: var(--accent) !important;
+  margin: 2.25rem 0 0.35rem !important;
+  padding-left: 0.9rem;
+  border-left: 4px solid var(--accent);
+}
+.gic-article h3 + p {
+  margin: 0 0 1.1rem !important;
+}
+.gic-article h3 + p em {
+  display: inline-block;
+  font-style: normal;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  opacity: 0.85;
+}
+.gic-article h3 + p em::before {
+  content: "🎙 ";
+}
+
+.gic-article ul > li::marker,
+.gic-article ol > li::marker {
+  color: var(--accent);
+  font-weight: 700;
+}
+.gic-article li {
+  margin-bottom: 0.5rem;
+}
+.gic-article strong {
+  color: var(--accent);
+}
+
+@media (max-width: 640px) {
+  .gic-article h2 { font-size: 1.4rem !important; }
+  .gic-day-kicker { margin-left: 2.85rem !important; }
+}
+
+/* Conference schedule timeline (Day 3 closing stretch) - inherits the day accent above */
 .gic-schedule {
   max-width: 760px;
   margin: 1.75rem auto;
   padding-left: 1.5rem;
-  border-left: 3px solid var(--primary);
+  border-left: 3px solid var(--accent, var(--primary));
 }
 .gic-slot {
   position: relative;
@@ -478,19 +602,20 @@ html.dark .testimonial-quote-block {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--primary);
+  background: var(--accent, var(--primary));
 }
 .gic-slot-time {
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary);
+  color: var(--accent, var(--primary));
   margin-bottom: 0.3rem;
 }
 .gic-slot-body h4 {
   margin: 0 0 0.35rem;
   font-size: 1.05rem;
+  color: inherit;
 }
 .gic-slot-people {
   font-size: 0.85rem;
@@ -500,15 +625,6 @@ html.dark .testimonial-quote-block {
 .gic-slot-body p:last-child {
   margin: 0;
   font-size: 0.95rem;
-}
-html.dark .gic-slot-time {
-  color: var(--secondary, #A8E63D);
-}
-html.dark .gic-schedule {
-  border-left-color: var(--secondary, #A8E63D);
-}
-html.dark .gic-slot::before {
-  background: var(--secondary, #A8E63D);
 }
 
 /* --- Prep-guide dark mode (shared by all olympiad/plan pages) --- */
