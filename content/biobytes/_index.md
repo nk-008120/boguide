@@ -28,6 +28,13 @@ cascade:
     <p>Essential lab techniques, safety protocols, equipment guides, and tips for experimental design – perfect for IBO practical prep.</p>
     <span class="btn-outline">Explore Lab Guides →</span>
   </a>
+  <a href="/biobytes/articles/gic-2026/" class="card">
+    <div class="card-icon">🧬</div>
+    <h3>GIC 2026 Blog</h3>
+    <div class="badge deep">Conference Diary</div>
+    <p>Three days at the Dr Babu Rajendra Prasad International Convention Centre, Bengaluru – our lecture notes and takeaways from the Genomics India Conference 2026.</p>
+    <span class="btn-outline">Read the GIC Diary →</span>
+  </a>
 </div>
 {{< /tab >}}
 {{< tab name="Testimonials" >}}

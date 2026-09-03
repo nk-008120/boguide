@@ -456,6 +456,61 @@ html.dark .testimonial-quote-block {
   background: rgba(201, 183, 232, 0.05);
 }
 
+/* --- Conference schedule timeline (GIC 2026 blog) --- */
+.gic-schedule {
+  max-width: 760px;
+  margin: 1.75rem auto;
+  padding-left: 1.5rem;
+  border-left: 3px solid var(--primary);
+}
+.gic-slot {
+  position: relative;
+  margin-bottom: 1.75rem;
+}
+.gic-slot:last-child {
+  margin-bottom: 0;
+}
+.gic-slot::before {
+  content: "";
+  position: absolute;
+  left: -1.72rem;
+  top: 0.3rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--primary);
+}
+.gic-slot-time {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 0.3rem;
+}
+.gic-slot-body h4 {
+  margin: 0 0 0.35rem;
+  font-size: 1.05rem;
+}
+.gic-slot-people {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  margin: 0 0 0.5rem;
+}
+.gic-slot-body p:last-child {
+  margin: 0;
+  font-size: 0.95rem;
+}
+html.dark .gic-slot-time {
+  color: var(--secondary, #A8E63D);
+}
+html.dark .gic-schedule {
+  border-left-color: var(--secondary, #A8E63D);
+}
+html.dark .gic-slot::before {
+  background: var(--secondary, #A8E63D);
+}
+
 /* --- Prep-guide dark mode (shared by all olympiad/plan pages) --- */
 html.dark .prep-guide-wrapper p {
   color: #d1d1d1;
