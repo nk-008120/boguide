@@ -58,7 +58,7 @@
     var gridDiv = document.getElementById('community-reach-grid');
     if (gridDiv && data.countries && data.countries.length) {
       var sorted = data.countries.slice().sort(function (a, b) {
-        return (b.visitors || 0) - (a.visitors || 0);
+        return (b.views || 0) - (a.views || 0);
       });
       var html = '';
       for (var i = 0; i < sorted.length; i++) {
@@ -66,9 +66,9 @@
         html += '<div class="reach-country-card">';
         html += '<span class="reach-flag">' + escapeHtml(c.flag) + '</span>';
         html += '<span class="reach-country-name">' + escapeHtml(c.name) + '</span>';
-        if (c.visitors) {
+        if (c.views) {
           html += '<span class="reach-country-visitors">' +
-            formatNumber(c.visitors) + '</span>';
+            formatNumber(c.views) + '</span>';
         }
         html += '</div>';
       }

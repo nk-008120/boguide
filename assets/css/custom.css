@@ -4371,6 +4371,10 @@ html.dark .discussions-form textarea:focus {
   opacity: 0.85;
 }
 
+.discussions-filters {
+  margin: 0 0 1rem;
+}
+
 /* --- Thread list --- */
 .discussions-list {
   display: flex;
@@ -7203,7 +7207,8 @@ html.dark .biolab-submit-attachment-item {
   box-shadow: 0 6px 16px rgba(92, 61, 150, 0.3);
 }
 
-.site-tutorial-invite-toast {
+.site-tutorial-invite-toast,
+.staff-welcome-toast {
   position: fixed;
   right: 1.25rem;
   bottom: 1.25rem;
@@ -7220,6 +7225,35 @@ html.dark .biolab-submit-attachment-item {
   flex-direction: column;
   gap: 0.75rem;
   animation: site-tutorial-toast-in 0.35s ease;
+}
+
+.staff-welcome-toast {
+  /* .site-tutorial-invite-toast's shared rule above already sets
+     position: fixed, which is itself a containing block for the
+     absolutely-positioned close button below -- just add clearance. */
+  padding-right: 2.2rem;
+}
+
+.staff-welcome-close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.7rem;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.2rem;
+}
+.staff-welcome-close:hover {
+  color: #1a1a2e;
+}
+html.dark .staff-welcome-close {
+  color: #94a3b8;
+}
+html.dark .staff-welcome-close:hover {
+  color: #f0f0f5;
 }
 
 @keyframes site-tutorial-toast-in {
@@ -7254,7 +7288,8 @@ html.dark .biolab-submit-attachment-item {
 }
 
 html.dark .site-tutorial-tooltip,
-html.dark .site-tutorial-invite-toast {
+html.dark .site-tutorial-invite-toast,
+html.dark .staff-welcome-toast {
   background: #1e1e2e;
   color: #f0f0f5;
 }
@@ -7278,7 +7313,8 @@ html.dark .site-tutorial-btn-ghost:hover {
 @media (prefers-reduced-motion: reduce) {
   .site-tutorial-spotlight,
   .site-tutorial-tooltip { transition: none; }
-  .site-tutorial-invite-toast { animation: none; }
+  .site-tutorial-invite-toast,
+  .staff-welcome-toast { animation: none; }
 }
 
 @media (max-width: 640px) {

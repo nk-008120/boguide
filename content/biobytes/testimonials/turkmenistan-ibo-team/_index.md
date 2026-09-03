@@ -18,6 +18,14 @@ The technique that Meryem, her partners, and previous IBO competitors from the p
 
 But self-study has limits. Resources are hard to come by. Structured programmes in English-language biology olympiad preparation are rare, and the ones that exist often carry a price tag that puts them out of reach. Turkmenistan's biology olympiad students have been making do with whatever they can find - scattered PDFs, secondhand textbooks, and advice from alumni who graduated years ago.
 
+## Turkmenistan's national biology olympiad
+
+The self-directed, peer-taught approach Meryem's team relies on makes more sense once you see how the national pathway is actually built. The Turkmen National Biology Olympiad, run by the Ministry of Education of Turkmenistan since 1995, is a four-round funnel: it starts at school level, where roughly 1,000 students sit the first round and the top 2-3 from each school advance; then district level, where the top 3 move on; then regional level, again narrowing to the top 3; and finally a national round, open only to 10th and 11th graders, hosted in a different city each year. Question formats vary round to round - multiple choice, problem solving, fill-in-the-blanks, picture-based questions, and occasionally oral components - set by the National Institute of Education together with Turkmen State University.
+
+What the official structure does not provide is IBO-specific preparation material along the way - the rounds test and select, but nothing in the pipeline is built to teach students the IBO syllabus itself. That gap is exactly what Meryem's team has been filling for each other, generation after generation, and exactly where a free structured resource has room to matter.
+
+*Source: [IBO country profile - Turkmen National Biology Olympiad](https://www.ibo-info.org/en/countries/nbo/tm-turkmen-national-biology-olympiad-21.html).*
+
 ## Why BiOGuide
 
 Meryem, one of six students forming the core of Turkmenistan's current preparation group, heard about BiOGuide's one-year preparation programme and saw something that matched what her team needed:

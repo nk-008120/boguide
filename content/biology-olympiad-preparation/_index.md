@@ -64,6 +64,30 @@ This is the general preparation framework that applies regardless of which Biolo
     </div>
     <span class="olympiad-compact-arrow">&rarr;</span>
   </a>
+  <a href="/biobytes/testimonials/slovakia-daniel-bronze/" class="olympiad-compact-card">
+    <div class="olympiad-compact-flag">🇸🇰</div>
+    <div class="olympiad-compact-body">
+      <h4>Slovakia</h4>
+      <p>School > Regional > National > Selection camp, top 4 to IBO</p>
+    </div>
+    <span class="olympiad-compact-arrow">&rarr;</span>
+  </a>
+  <a href="/biobytes/testimonials/azerbaijan-huseyn/" class="olympiad-compact-card">
+    <div class="olympiad-compact-flag">🇦🇿</div>
+    <div class="olympiad-compact-body">
+      <h4>Azerbaijan</h4>
+      <p>District-city > Semifinal > Final, IBO-level from the final round on</p>
+    </div>
+    <span class="olympiad-compact-arrow">&rarr;</span>
+  </a>
+  <a href="/biobytes/testimonials/turkmenistan-ibo-team/" class="olympiad-compact-card">
+    <div class="olympiad-compact-flag">🇹🇲</div>
+    <div class="olympiad-compact-body">
+      <h4>Turkmenistan</h4>
+      <p>School > District > Regional > National, self-taught IBO prep</p>
+    </div>
+    <span class="olympiad-compact-arrow">&rarr;</span>
+  </a>
 </div>
 
 Eligibility, dates, and registration details change year to year. Always check your olympiad's official site for current information. This guide covers preparation strategy, not administrative details.

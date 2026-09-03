@@ -102,6 +102,11 @@
     marker.setAttribute('tabindex', '0');
     marker.setAttribute('role', 'link');
     marker.setAttribute('aria-label', el.getAttribute('aria-label') || '');
+
+    var markerTitle = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+    markerTitle.textContent = (programmeData[code] && programmeData[code].name) || code;
+    marker.appendChild(markerTitle);
+
     el.parentNode.appendChild(marker);
   }
 

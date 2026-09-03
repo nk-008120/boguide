@@ -29,8 +29,25 @@
       "name": "Turkmenistan",
       "flag": "🇹🇲",
       "programme": "Biology Olympiad of Turkmenistan",
-      "guideUrl": "/olympiad-programmes/turkmenistan/",
-      "status": "coming-soon"
+      "guideUrl": "/biobytes/testimonials/turkmenistan-ibo-team/",
+      "status": "published",
+      "stages": "National selection > IBO"
+    },
+    "AZ": {
+      "name": "Azerbaijan",
+      "flag": "🇦🇿",
+      "programme": "Respublika Fənn Olimpiadaları (Biology category)",
+      "guideUrl": "/biobytes/testimonials/azerbaijan-huseyn/",
+      "status": "published",
+      "stages": "District-city > Semifinal > Final > IBO"
+    },
+    "SK": {
+      "name": "Slovakia",
+      "flag": "🇸🇰",
+      "programme": "Biologická Olympiáda",
+      "guideUrl": "/biobytes/testimonials/slovakia-daniel-bronze/",
+      "status": "published",
+      "stages": "School > Regional > National > Selection camp > IBO"
     },
     "GB": {
       "name": "United Kingdom",

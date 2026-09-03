@@ -1,48 +1,468 @@
 {
-  "lastUpdated": "2026-08-26",
-  "totalCountries": 42,
+  "lastUpdated": "2026-08-30",
+  "totalCountries": 77,
   "countries": [
-    { "code": "IN", "name": "India", "flag": "🇮🇳", "visitors": 1200 },
-    { "code": "US", "name": "United States", "flag": "🇺🇸", "visitors": 850 },
-    { "code": "GB", "name": "United Kingdom", "flag": "🇬🇧", "visitors": 410 },
-    { "code": "AU", "name": "Australia", "flag": "🇦🇺", "visitors": 305 },
-    { "code": "CA", "name": "Canada", "flag": "🇨🇦", "visitors": 290 },
-    { "code": "DE", "name": "Germany", "flag": "🇩🇪", "visitors": 245 },
-    { "code": "SG", "name": "Singapore", "flag": "🇸🇬", "visitors": 220 },
-    { "code": "AE", "name": "United Arab Emirates", "flag": "🇦🇪", "visitors": 195 },
-    { "code": "MY", "name": "Malaysia", "flag": "🇲🇾", "visitors": 180 },
-    { "code": "NL", "name": "Netherlands", "flag": "🇳🇱", "visitors": 165 },
-    { "code": "PH", "name": "Philippines", "flag": "🇵🇭", "visitors": 155 },
-    { "code": "BD", "name": "Bangladesh", "flag": "🇧🇩", "visitors": 140 },
-    { "code": "ID", "name": "Indonesia", "flag": "🇮🇩", "visitors": 130 },
-    { "code": "PK", "name": "Pakistan", "flag": "🇵🇰", "visitors": 125 },
-    { "code": "LK", "name": "Sri Lanka", "flag": "🇱🇰", "visitors": 110 },
-    { "code": "NP", "name": "Nepal", "flag": "🇳🇵", "visitors": 105 },
-    { "code": "ZA", "name": "South Africa", "flag": "🇿🇦", "visitors": 95 },
-    { "code": "KR", "name": "South Korea", "flag": "🇰🇷", "visitors": 90 },
-    { "code": "JP", "name": "Japan", "flag": "🇯🇵", "visitors": 85 },
-    { "code": "FR", "name": "France", "flag": "🇫🇷", "visitors": 80 },
-    { "code": "BR", "name": "Brazil", "flag": "🇧🇷", "visitors": 75 },
-    { "code": "TH", "name": "Thailand", "flag": "🇹🇭", "visitors": 70 },
-    { "code": "VN", "name": "Vietnam", "flag": "🇻🇳", "visitors": 65 },
-    { "code": "TW", "name": "Taiwan", "flag": "🇹🇼", "visitors": 60 },
-    { "code": "NG", "name": "Nigeria", "flag": "🇳🇬", "visitors": 55 },
-    { "code": "KE", "name": "Kenya", "flag": "🇰🇪", "visitors": 50 },
-    { "code": "EG", "name": "Egypt", "flag": "🇪🇬", "visitors": 45 },
-    { "code": "TR", "name": "Turkey", "flag": "🇹🇷", "visitors": 42 },
-    { "code": "SE", "name": "Sweden", "flag": "🇸🇪", "visitors": 38 },
-    { "code": "CH", "name": "Switzerland", "flag": "🇨🇭", "visitors": 35 },
-    { "code": "IT", "name": "Italy", "flag": "🇮🇹", "visitors": 32 },
-    { "code": "PL", "name": "Poland", "flag": "🇵🇱", "visitors": 30 },
-    { "code": "IE", "name": "Ireland", "flag": "🇮🇪", "visitors": 28 },
-    { "code": "NZ", "name": "New Zealand", "flag": "🇳🇿", "visitors": 25 },
-    { "code": "MX", "name": "Mexico", "flag": "🇲🇽", "visitors": 22 },
-    { "code": "CL", "name": "Chile", "flag": "🇨🇱", "visitors": 20 },
-    { "code": "AT", "name": "Austria", "flag": "🇦🇹", "visitors": 18 },
-    { "code": "FI", "name": "Finland", "flag": "🇫🇮", "visitors": 15 },
-    { "code": "DK", "name": "Denmark", "flag": "🇩🇰", "visitors": 14 },
-    { "code": "NO", "name": "Norway", "flag": "🇳🇴", "visitors": 12 },
-    { "code": "GH", "name": "Ghana", "flag": "🇬🇭", "visitors": 10 },
-    { "code": "ET", "name": "Ethiopia", "flag": "🇪🇹", "visitors": 8 }
+    {
+      "code": "IN",
+      "name": "India",
+      "flag": "🇮🇳",
+      "views": 1952
+    },
+    {
+      "code": "US",
+      "name": "United States",
+      "flag": "🇺🇸",
+      "views": 1034
+    },
+    {
+      "code": "AZ",
+      "name": "Azerbaijan",
+      "flag": "🇦🇿",
+      "views": 253
+    },
+    {
+      "code": "BE",
+      "name": "Belgium",
+      "flag": "🇧🇪",
+      "views": 152
+    },
+    {
+      "code": "SA",
+      "name": "Saudi Arabia",
+      "flag": "🇸🇦",
+      "views": 134
+    },
+    {
+      "code": "UA",
+      "name": "Ukraine",
+      "flag": "🇺🇦",
+      "views": 121
+    },
+    {
+      "code": "MY",
+      "name": "Malaysia",
+      "flag": "🇲🇾",
+      "views": 116
+    },
+    {
+      "code": "SG",
+      "name": "Singapore",
+      "flag": "🇸🇬",
+      "views": 106
+    },
+    {
+      "code": "MX",
+      "name": "Mexico",
+      "flag": "🇲🇽",
+      "views": 86
+    },
+    {
+      "code": "VN",
+      "name": "Vietnam",
+      "flag": "🇻🇳",
+      "views": 85
+    },
+    {
+      "code": "DE",
+      "name": "Germany",
+      "flag": "🇩🇪",
+      "views": 67
+    },
+    {
+      "code": "RO",
+      "name": "Romania",
+      "flag": "🇷🇴",
+      "views": 67
+    },
+    {
+      "code": "CA",
+      "name": "Canada",
+      "flag": "🇨🇦",
+      "views": 67
+    },
+    {
+      "code": "AE",
+      "name": "United Arab Emirates",
+      "flag": "🇦🇪",
+      "views": 63
+    },
+    {
+      "code": "CN",
+      "name": "China",
+      "flag": "🇨🇳",
+      "views": 50
+    },
+    {
+      "code": "NL",
+      "name": "Netherlands",
+      "flag": "🇳🇱",
+      "views": 47
+    },
+    {
+      "code": "BD",
+      "name": "Bangladesh",
+      "flag": "🇧🇩",
+      "views": 47
+    },
+    {
+      "code": "PK",
+      "name": "Pakistan",
+      "flag": "🇵🇰",
+      "views": 42
+    },
+    {
+      "code": "HK",
+      "name": "Hong Kong",
+      "flag": "🇭🇰",
+      "views": 40
+    },
+    {
+      "code": "BR",
+      "name": "Brazil",
+      "flag": "🇧🇷",
+      "views": 36
+    },
+    {
+      "code": "PL",
+      "name": "Poland",
+      "flag": "🇵🇱",
+      "views": 35
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom",
+      "flag": "🇬🇧",
+      "views": 34
+    },
+    {
+      "code": "MK",
+      "name": "North Macedonia",
+      "flag": "🇲🇰",
+      "views": 30
+    },
+    {
+      "code": "TR",
+      "name": "Turkey",
+      "flag": "🇹🇷",
+      "views": 27
+    },
+    {
+      "code": "SK",
+      "name": "Slovakia",
+      "flag": "🇸🇰",
+      "views": 24
+    },
+    {
+      "code": "KG",
+      "name": "Kyrgyzstan",
+      "flag": "🇰🇬",
+      "views": 23
+    },
+    {
+      "code": "SE",
+      "name": "Sweden",
+      "flag": "🇸🇪",
+      "views": 20
+    },
+    {
+      "code": "LT",
+      "name": "Lithuania",
+      "flag": "🇱🇹",
+      "views": 19
+    },
+    {
+      "code": "KR",
+      "name": "South Korea",
+      "flag": "🇰🇷",
+      "views": 18
+    },
+    {
+      "code": "FR",
+      "name": "France",
+      "flag": "🇫🇷",
+      "views": 17
+    },
+    {
+      "code": "ID",
+      "name": "Indonesia",
+      "flag": "🇮🇩",
+      "views": 16
+    },
+    {
+      "code": "JP",
+      "name": "Japan",
+      "flag": "🇯🇵",
+      "views": 16
+    },
+    {
+      "code": "CY",
+      "name": "Cyprus",
+      "flag": "🇨🇾",
+      "views": 15
+    },
+    {
+      "code": "PT",
+      "name": "Portugal",
+      "flag": "🇵🇹",
+      "views": 14
+    },
+    {
+      "code": "TH",
+      "name": "Thailand",
+      "flag": "🇹🇭",
+      "views": 14
+    },
+    {
+      "code": "MD",
+      "name": "Moldova",
+      "flag": "🇲🇩",
+      "views": 13
+    },
+    {
+      "code": "CZ",
+      "name": "Czech Republic",
+      "flag": "🇨🇿",
+      "views": 13
+    },
+    {
+      "code": "LV",
+      "name": "Latvia",
+      "flag": "🇱🇻",
+      "views": 13
+    },
+    {
+      "code": "NP",
+      "name": "Nepal",
+      "flag": "🇳🇵",
+      "views": 13
+    },
+    {
+      "code": "NO",
+      "name": "Norway",
+      "flag": "🇳🇴",
+      "views": 12
+    },
+    {
+      "code": "UZ",
+      "name": "Uzbekistan",
+      "flag": "🇺🇿",
+      "views": 11
+    },
+    {
+      "code": "IT",
+      "name": "Italy",
+      "flag": "🇮🇹",
+      "views": 11
+    },
+    {
+      "code": "CH",
+      "name": "Switzerland",
+      "flag": "🇨🇭",
+      "views": 10
+    },
+    {
+      "code": "LK",
+      "name": "Sri Lanka",
+      "flag": "🇱🇰",
+      "views": 10
+    },
+    {
+      "code": "GR",
+      "name": "Greece",
+      "flag": "🇬🇷",
+      "views": 10
+    },
+    {
+      "code": "PH",
+      "name": "Philippines",
+      "flag": "🇵🇭",
+      "views": 9
+    },
+    {
+      "code": "CO",
+      "name": "Colombia",
+      "flag": "🇨🇴",
+      "views": 9
+    },
+    {
+      "code": "ME",
+      "name": "Montenegro",
+      "flag": "🇲🇪",
+      "views": 9
+    },
+    {
+      "code": "HR",
+      "name": "Croatia",
+      "flag": "🇭🇷",
+      "views": 9
+    },
+    {
+      "code": "GE",
+      "name": "Georgia",
+      "flag": "🇬🇪",
+      "views": 8
+    },
+    {
+      "code": "NZ",
+      "name": "New Zealand",
+      "flag": "🇳🇿",
+      "views": 8
+    },
+    {
+      "code": "FI",
+      "name": "Finland",
+      "flag": "🇫🇮",
+      "views": 7
+    },
+    {
+      "code": "IL",
+      "name": "Israel",
+      "flag": "🇮🇱",
+      "views": 6
+    },
+    {
+      "code": "KZ",
+      "name": "Kazakhstan",
+      "flag": "🇰🇿",
+      "views": 6
+    },
+    {
+      "code": "MN",
+      "name": "Mongolia",
+      "flag": "🇲🇳",
+      "views": 5
+    },
+    {
+      "code": "AL",
+      "name": "Albania",
+      "flag": "🇦🇱",
+      "views": 5
+    },
+    {
+      "code": "LI",
+      "name": "Liechtenstein",
+      "flag": "🇱🇮",
+      "views": 4
+    },
+    {
+      "code": "LU",
+      "name": "Luxembourg",
+      "flag": "🇱🇺",
+      "views": 3
+    },
+    {
+      "code": "RU",
+      "name": "Russia",
+      "flag": "🇷🇺",
+      "views": 3
+    },
+    {
+      "code": "PE",
+      "name": "Peru",
+      "flag": "🇵🇪",
+      "views": 3
+    },
+    {
+      "code": "QA",
+      "name": "Qatar",
+      "flag": "🇶🇦",
+      "views": 3
+    },
+    {
+      "code": "AM",
+      "name": "Armenia",
+      "flag": "🇦🇲",
+      "views": 3
+    },
+    {
+      "code": "EE",
+      "name": "Estonia",
+      "flag": "🇪🇪",
+      "views": 3
+    },
+    {
+      "code": "IE",
+      "name": "Ireland",
+      "flag": "🇮🇪",
+      "views": 2
+    },
+    {
+      "code": "IS",
+      "name": "Iceland",
+      "flag": "🇮🇸",
+      "views": 2
+    },
+    {
+      "code": "AU",
+      "name": "Australia",
+      "flag": "🇦🇺",
+      "views": 2
+    },
+    {
+      "code": "CR",
+      "name": "Costa Rica",
+      "flag": "🇨🇷",
+      "views": 2
+    },
+    {
+      "code": "BG",
+      "name": "Bulgaria",
+      "flag": "🇧🇬",
+      "views": 2
+    },
+    {
+      "code": "LB",
+      "name": "Lebanon",
+      "flag": "🇱🇧",
+      "views": 2
+    },
+    {
+      "code": "DK",
+      "name": "Denmark",
+      "flag": "🇩🇰",
+      "views": 2
+    },
+    {
+      "code": "SY",
+      "name": "Syria",
+      "flag": "🇸🇾",
+      "views": 1
+    },
+    {
+      "code": "AT",
+      "name": "Austria",
+      "flag": "🇦🇹",
+      "views": 1
+    },
+    {
+      "code": "AR",
+      "name": "Argentina",
+      "flag": "🇦🇷",
+      "views": 1
+    },
+    {
+      "code": "EG",
+      "name": "Egypt",
+      "flag": "🇪🇬",
+      "views": 1
+    },
+    {
+      "code": "ES",
+      "name": "Spain",
+      "flag": "🇪🇸",
+      "views": 1
+    },
+    {
+      "code": "RS",
+      "name": "Serbia",
+      "flag": "🇷🇸",
+      "views": 1
+    },
+    {
+      "code": "CL",
+      "name": "Chile",
+      "flag": "🇨🇱",
+      "views": 1
+    }
   ]
 }

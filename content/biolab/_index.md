@@ -129,8 +129,8 @@ layout: "wide"
   </div>
 
   <p class="biolab-reaction-note" id="biolab-reaction-note" aria-live="polite">Your answers are remembered on this device only - they're not sent anywhere.</p>
-  <p class="biolab-discuss-lede">Want to pitch a specific protocol idea, or say more than a tap allows? That's what Discussions is for - start a thread called <strong>&ldquo;BiOLab feedback&rdquo;</strong> (or add to one if it already exists) and we'll read every reply.</p>
-  <a href="/discussions/" class="btn-primary biolab-discuss-btn">Leave a comment in Discussions &rarr;</a>
+  <p class="biolab-discuss-lede">Want to pitch a specific protocol idea, or say more than a tap allows? That's what Doubts is for - post one tagged <strong>&ldquo;General / feedback&rdquo;</strong> and our team will read and answer it.</p>
+  <a href="/doubts/" class="btn-primary biolab-discuss-btn">Leave feedback in Doubts &rarr;</a>
 </section>
 
 <div class="biolab-footer-link">

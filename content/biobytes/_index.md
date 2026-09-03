@@ -53,6 +53,13 @@ cascade:
     <div class="testimonial-meta">Huseyn &middot; his thorough explanation of RFO</div>
     <span class="btn-outline">Read His Review &rarr;</span>
   </a>
+  <a href="/biobytes/testimonials/slovakia-daniel-bronze/" class="card testimonial-card">
+    <div class="card-icon">🇸🇰</div>
+    <h3>Slovakia's Biology Olympiad: It Only Gets Easier</h3>
+    <p class="testimonial-pullquote">"If you give it your all for the first round already, it will only get easier from there."</p>
+    <div class="testimonial-meta">Daniel &middot; IBO 2026 Bronze Medallist</div>
+    <span class="btn-outline">Read His Story &rarr;</span>
+  </a>
 </div>
 {{< /tab >}}
 {{< tab name="From Social" >}} 

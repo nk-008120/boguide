@@ -501,7 +501,11 @@
     window.PapersAuth.getSession().then(function (session) {
       if (!session) { showInviteToast(); return; }
       window.PapersAuth.getProfile(session.user.id).then(function (profile) {
-        if (profile && profile.site_tutorial_seen) {
+        // Staff already know the site -- and showing this alongside the
+        // staff-welcome toast (static/js/staff-welcome.js) would stack two
+        // toasts in the same bottom-right corner, so they're excluded from
+        // the tour invite entirely rather than just visually avoided.
+        if (profile && (profile.site_tutorial_seen || profile.is_staff)) {
           setSeenLocal();
           return;
         }

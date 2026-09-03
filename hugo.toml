@@ -147,8 +147,8 @@ theme = "hextra"
     weight = 8
 
   [[menu.main]]
-    name = "Discussions"
-    url = "/discussions/"
+    name = "Doubts"
+    url = "/doubts/"
     weight = 9
 
   [[menu.main]]
