@@ -144,8 +144,7 @@ That roadblock is what inspired BiOGuide. We make nothing from it; it's complete
 Cracking these competitions isn't just about rote-memorising cellular pathways or anatomy, though a strong base of core facts is essential. It's about truly understanding how living systems function, working through problems piece by piece, and having the grit to face scenarios you've never seen before. We want to help you build that problem-solving intuition, which is why we plan to provide an extensive library of past-year problems with step-by-step solutions.
 
 *As of after August 8th*,<br>
-The team now works with a lot of different people (although none contributing to the technical implementations), and their ideas prove valuable to the site. Although they don't act on then directly (Action on the managing partner), the idea attributions are available here: 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQIIIuAMER7mXbIJZ6mWHA-38K-BqAvA5P0ws6B4tw8GLZvDU6bpN1rfCY2rQxa13KGAqbd99PTIR7I/pubhtml?widget=true&amp;headers=false" width="700" height="1000"></iframe>
+The team now works with a lot of different people (although none contributing to the technical implementations), and their ideas prove valuable to the site. Although they don't act on then directly (Action on the managing partner), the idea attributions are available on request.
 
 ## How Do We find people?
 

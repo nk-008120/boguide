@@ -63,6 +63,14 @@ The first theoretical lecture was followed by a brief turnaround into the novice
 - Providing her opinions on how people should use the mentioned software, she eplained how reading output HTML reports from commander, and setting up the configuration file with Reg, Probe Set Ref, FASTQ Sample Barcode etc. helps.
 - Reaching the end of her talk, she explained how analysis of these files should be conducted and how PCA Markers and Phenotypic filtering is a great help in data analysis.
 
+### L3 - The Interactive CommandeR workshop:
+
+- The session continues after a fabulous lunch with an interactive workshop demonstrating the use of genotypic product Commander, showcasing various toold like QC Checking, Python scripts for various uses (Length, Repeats, and vFC Reads), and use of the Genetic Variant Analysis (AI-based) tool to generate comprehensive reports on the given fastq, gff and fasta files.
+
+### L4 - Inaugration and Introductory talks
+
+Preceded by the workshop and a small tea break, it was finally time to inaugrate the GIC 2026 Conference. Dr. Sudha Rao and Dr. Samir K Brahmachari provided us with invaluable insights into what the next 2 days will uphold.
+
 </div>
 
 <div class="gic-day gic-day-2">
