@@ -2,6 +2,9 @@
 title: "Your Study Dashboard"
 description: "Personalized study recommendations based on your practice history -- see your strengths, weaknesses, and what to study next."
 layout: "wide"
+noindex: true
+sitemap:
+  disable: true
 ---
 
 <div id="dashboard-root" class="dashboard-wrapper">

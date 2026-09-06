@@ -1,5 +1,6 @@
 ---
 title: "BO Papers Archive"
+description: "Browse past Biology Olympiad papers by year and round, with full solutions and an interactive timed-attempt mode, across IBO, USABO, and INBO."
 images: ["/og-biorchive.png"]
 cascade:
   - target:

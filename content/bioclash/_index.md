@@ -1,5 +1,6 @@
 ---
 title: "BiOClash - an independent biology competition"
+description: "BiOClash: an original, community-run biology competition with live case files, timed attempts, and a Champions leaderboard, built by and for Biology Olympiad students."
 layout: "wide"
 images: ["/og-bioclash.png"]
 ---

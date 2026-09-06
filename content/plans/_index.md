@@ -6,8 +6,6 @@ layout: "wide"
 
 <div class="prep-guide-wrapper">
 
-# Biology Olympiad Study Plans
-
 Different students come to olympiad prep at different points. Some have two years to prepare from the ground up. Some have a month before the exam. These plans work backwards from your available time to what's actually achievable, not what sounds impressive.
 
 Each plan is honest about who it's for and what it can deliver. Shorter plans prioritize; they don't pretend a month can replace a year.

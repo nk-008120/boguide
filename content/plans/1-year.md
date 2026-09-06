@@ -6,8 +6,6 @@ layout: "wide"
 
 <div class="prep-guide-wrapper">
 
-# 1-Year Biology Olympiad Study Plan
-
 ## Who this plan is for
 
 Students who already have school-biology foundations (AP Biology, CBSE/ICSE Class 12, or equivalent) and can put in eight to ten hours a week for a full year. This is the default plan for serious olympiad prep -- enough time to cover everything without cutting corners, but not enough time to waste on topics you already understand.

@@ -6,8 +6,6 @@ layout: "wide"
 
 <div class="prep-guide-wrapper">
 
-# 1-Month Biology Olympiad Study Plan
-
 ## Who this plan is for
 
 Students with solid foundations who need a structured final ramp-up. You've already studied the core syllabus -- cell biology, genetics, physiology -- and you've done at least a few practice papers. If you've never opened Campbell Biology, this timeframe won't get you there. Be honest with yourself and set realistic goals.

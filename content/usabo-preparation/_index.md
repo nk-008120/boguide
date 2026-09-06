@@ -19,8 +19,6 @@ faq:
 
 <div class="prep-guide-wrapper">
 
-# USABO Preparation: The Complete Guide
-
 The USA Biology Olympiad is the US national selection pathway for [IBO](/ibo-preparation/), run by the Center for Excellence in Education. Around 10,000 students sit the Open Exam each year; roughly 240 advance to the Semifinal, 20 reach the National Finals, and 4 represent the US at IBO. This guide focuses on preparation strategy. For current registration windows, exact dates, and school-registration procedures, always check the [official USABO site](https://www.usabo-trc.org/), because those details change every year.
 
 ## The three stages

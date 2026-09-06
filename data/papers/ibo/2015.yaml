@@ -1,0 +1,1847 @@
+name: "2015"
+location: "Aarhus, Denmark"
+rounds:
+  - id: theoretical-a
+    name: "Theoretical A"
+    durationMinutes: 180
+    papers:
+      - category: "Theoretical A"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf"
+        linkLabel: "Exam"
+        solutionLink: "/papers/ibo/2015/theoretical-a-solutions.pdf"
+        solutionLabel: "Official Worked Solutions"
+    problems:
+
+      - id: q1
+        number: "Q1"
+        name: "Poiseuille's Law and Blood Pressure Regulation"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=3"
+        subjects:
+          - name: "Cardiovascular Physiology"
+            link: "/resources/3-animal-physiology/cardiovascular-physiology/"
+        statements:
+          - letter: "A"
+            text: "Assuming similar blood flow in a wide and a narrow artery of the same length, the\
+  \ change in mean blood pressure is greater in the former"
+            answer: false
+            explanation: "Poiseuille's law shows that pressure drop is inversely proportional to the fourth\
+  \ power of the radius, so a narrower vessel needs a much larger pressure drop to\
+  \ push the same flow through it. That makes the pressure change greater in the narrow\
+  \ artery, not the wide one, so the statement has it backwards."
+          - letter: "B"
+            text: "Increased atherosclerosis leads generally to faster blood flow in the circulation"
+            answer: false
+            explanation: "Atherosclerosis narrows the vessel lumen, and since flow scales with the fourth power\
+  \ of the radius in Poiseuille's law, a smaller radius sharply reduces flow for a\
+  \ given pressure difference rather than increasing it."
+          - letter: "C"
+            text: "Comparing monozygotic twins, one living at sea level and the other at 3,000 m, the\
+  \ latter will have a higher resistance to blood flow"
+            answer: true
+            explanation: "Chronic exposure to lower oxygen partial pressure at altitude drives up red blood\
+  \ cell production, raising blood viscosity. Since resistance in Poiseuille's law\
+  \ is directly proportional to viscosity, the twin living at altitude ends up with\
+  \ higher vascular resistance."
+          - letter: "D"
+            text: "In a specific patient suffering from atherosclerosis, the radius of blood vessels\
+  \ on average had decreased by 1/6, which caused blood pressure to double to maintain\
+  \ the blood flow"
+            answer: true
+            explanation: "Keeping flow constant while the radius shrinks to 5/6 of its original value requires\
+  \ the pressure difference to scale as the inverse fourth power of that ratio, i.e.\
+  \ by (6/5)^4, which works out to roughly a doubling — consistent with the patient's\
+  \ measured pressure increase."
+
+      - id: q2
+        number: "Q2"
+        name: "Anion Effects on Hemoglobin Oxygen Affinity"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=5"
+        subjects:
+          - name: "Respiratory Physiology"
+            link: "/resources/3-animal-physiology/respiratory-physiology/"
+        statements:
+          - letter: "A"
+            text: "If peripheral tissue lacks oxygen, red blood cells produce more BPG"
+            answer: true
+            explanation: "BPG is a byproduct of red blood cell glycolysis, and its production rises when tissue\
+  \ oxygen is scarce. More BPG shifts the saturation curve rightward, lowering hemoglobin's\
+  \ oxygen affinity so more O2 is released exactly where it is needed."
+          - letter: "B"
+            text: "At high altitudes, mutations leading to changes from polar to non-polar amino acid\
+  \ residues in the BPG binding site of the hemoglobin molecule will be favourable\
+  \ for the affinity of O2 to hemoglobin in the lungs"
+            answer: true
+            explanation: "BPG is a highly charged anion, so it binds through polar contacts; replacing polar\
+  \ residues at its binding site with non-polar ones would weaken that binding. With\
+  \ less BPG effect, the saturation curve shifts back toward the higher-affinity control\
+  \ curve, which favors oxygen loading in the lungs' lower ambient PO2 at altitude."
+          - letter: "C"
+            text: "It is likely that chloride and BPG bind at different sites in the hemoglobin molecule"
+            answer: false
+            explanation: "The figure shows that adding BPG together with chloride does not produce an additive\
+  \ rightward shift beyond chloride alone — chloride abolishes BPG's extra effect.\
+  \ That competition pattern is what would be expected if the two anions compete for\
+  \ the same binding site, not separate ones."
+          - letter: "D"
+            text: "BPG decreases the total oxygen saturation capacity of the hemoglobin"
+            answer: false
+            explanation: "All four curves converge to essentially the same plateau at high PO2, showing that\
+  \ hemoglobin still becomes fully saturated regardless of BPG. BPG only shifts the\
+  \ curve rightward, lowering the affinity at a given PO2, without changing the maximum\
+  \ carrying capacity."
+
+      - id: q3
+        number: "Q3"
+        name: "Visual Field Deficits from Central Visual Pathway Lesions"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=6"
+        subjects:
+          - name: "Nervous System Physiology"
+            link: "/resources/3-animal-physiology/nervous-system-physiology/"
+        statements:
+          - letter: "A"
+            text: "Lesion 2 corresponds to visual field deficit a"
+            answer: false
+            explanation: "Lesion 2 sits on the optic nerve before the two nerves converge at the chiasm, so\
+  \ cutting it removes vision only from that one eye entirely — a full monocular blindness\
+  \ pattern, not the partial bilateral deficit labelled a."
+          - letter: "B"
+            text: "Lesion 3 corresponds to visual field deficit d"
+            answer: true
+            explanation: "Lesion 3 sits at the optic chiasm, where only the crossing (nasal) fibers from each\
+  \ eye are cut. That removes the peripheral, temporal-side visual field from both\
+  \ eyes symmetrically, which matches the bilateral pattern shown in deficit d."
+          - letter: "C"
+            text: "Lesion 4 corresponds to visual field deficit e"
+            answer: false
+            explanation: "Lesion 4 damages one full optic tract after the chiasm, which knocks out the same-side\
+  \ visual field in both eyes — a mirror-image, evenly distributed loss rather than\
+  \ the deficit shown in e, so it does not match."
+          - letter: "D"
+            text: "Lesion 5 corresponds to visual field deficit c"
+            answer: true
+            explanation: "Lesion 5 is placed further back along the optic radiation, where fibers fan out and\
+  \ are not as tightly bundled as in the optic tract. Damage there tends to hit only\
+  \ part of the fibers carrying one side of the visual field, producing the partial,\
+  \ patchier loss shown in deficit c."
+
+      - id: q4
+        number: "Q4"
+        name: "Hippocampal Plasticity in London Taxi Drivers"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=7"
+        subjects:
+          - name: "Nervous System Physiology"
+            link: "/resources/3-animal-physiology/nervous-system-physiology/"
+        statements:
+          - letter: "A"
+            text: "Taxi drivers have significantly larger hippocampus than the control group"
+            answer: false
+            explanation: "The figure shows no significant difference between taxi drivers and controls for\
+  \ the hippocampus taken as a whole (the body) — only the posterior sub-region differs\
+  \ significantly, so the claim about the whole structure is too broad."
+          - letter: "B"
+            text: "Spatial navigation may be located in the posterior part of hippocampus"
+            answer: true
+            explanation: "The significant difference between taxi drivers and controls is specifically in the\
+  \ posterior hippocampus, which is consistent with that sub-region being especially\
+  \ important for the kind of spatial navigation taxi driving demands."
+          - letter: "C"
+            text: "The study provides evidence that some people are predisposed genetically to become\
+  \ better London taxi drivers than others in the population"
+            answer: true
+            explanation: "Although the overall trend links more driving experience to posterior hippocampal\
+  \ growth, the scatter in panel B is large and driven by only a couple of individuals,\
+  \ leaving room for pre-existing individual differences rather than experience alone\
+  \ explaining who becomes a skilled taxi driver."
+          - letter: "D"
+            text: "The study supports the traditional view that the hippocampus is only involved in\
+  \ short-term memory"
+            answer: false
+            explanation: "The posterior hippocampal volume change tracks with years of accumulated driving\
+  \ experience, a long-term, gradually built effect — the opposite of what a purely\
+  \ short-term-memory role would predict, so the data argue against the traditional\
+  \ view rather than for it."
+
+      - id: q5
+        number: "Q5"
+        name: "Kidney Filtration, Excretion and Oxygen Use in Three Individuals"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=9"
+        subjects:
+          - name: "Comparative Osmoregulation & Excretion"
+            link: "/resources/3-animal-physiology/comparative-osmoregulation-excretion/"
+        statements:
+          - letter: "A"
+            text: "The amount of Na+ filtrated in the kidneys is largest for person A"
+            answer: false
+            explanation: "Sodium is freely filtered, so filtered amount equals GFR multiplied by plasma Na+\
+  \ concentration. Working through that product for all three people gives the highest\
+  \ value for person B, not person A."
+          - letter: "B"
+            text: "The amount of Na+ excreted in the kidneys is largest for person B"
+            answer: true
+            explanation: "Excreted sodium equals urine production multiplied by urinary Na+ concentration.\
+  \ Calculating this for each person shows person B has the highest value of the three."
+          - letter: "C"
+            text: "Renal oxygen consumption is largest for person C"
+            answer: false
+            explanation: "Oxygen consumption equals renal blood flow multiplied by the arteriovenous oxygen\
+  \ concentration difference. Computing this for all three shows person A has the\
+  \ highest renal oxygen consumption, not person C."
+          - letter: "D"
+            text: "The amount of Na+ reabsorbed per mol of O2 used is largest for person B"
+            answer: false
+            explanation: "Dividing each person's reabsorbed sodium (filtered minus excreted) by their renal\
+  \ oxygen consumption gives the highest sodium-per-oxygen efficiency for person C,\
+  \ meaning person B is not actually the most efficient of the three."
+
+      - id: q6
+        number: "Q6"
+        name: "Vascular Adaptations Preventing Leg Oedema in Giraffes"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=11"
+        subjects:
+          - name: "Cardiovascular Physiology"
+            link: "/resources/3-animal-physiology/cardiovascular-physiology/"
+        statements:
+          - letter: "A"
+            text: "Since arterial pressure at entrance to skull has to be similar to other mammals (c.\
+  \ 100 mm Hg), blood pressure down at the level of the hooves becomes very low"
+            answer: false
+            explanation: "Gravity adds hydrostatic pressure on top of the arterial pressure as you go down\
+  \ the giraffe's long neck and leg, so pressure at the hooves is actually far higher\
+  \ than at the skull, not lower — it can reach several times the pressure needed\
+  \ at head level."
+          - letter: "B"
+            text: "The figures show how the diameter and wall thickness of arteries in the leg are expected\
+  \ to change; A is correct and B is wrong"
+            answer: false
+            explanation: "Because pressure keeps increasing toward the hooves, the vessel walls need to get\
+  \ thicker distally to withstand it, which is the pattern shown in option B rather\
+  \ than option A."
+          - letter: "C"
+            text: "Femoral arteries become more rigid distally toward the leg extremities"
+            answer: true
+            explanation: "The elastin content of the arterial wall declines with distance from the heart, and\
+  \ since elastin is what gives vessel walls their elasticity, losing it makes the\
+  \ more distal artery segments progressively stiffer and more rigid."
+          - letter: "D"
+            text: "The giraffe has a special arterial mechanism above its knees to regulate blood pressure\
+  \ in the leg extremities"
+            answer: true
+            explanation: "Just below the knee, the artery narrows abruptly and elastin content drops sharply,\
+  \ and this region is also densely innervated — together this looks like a sphincter-like\
+  \ structure under active nervous control that can adjust resistance and protect\
+  \ the lower leg from excess capillary pressure."
+
+      - id: q7
+        number: "Q7"
+        name: "Vocalization Frequency and Body Size in Whales"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=13"
+        subjects:
+          - name: "Animal Communication"
+            link: "/resources/9-ethology/animal-communication/"
+        statements:
+          - letter: "A"
+            text: "Larger whales are expected to produce lower frequency signals than smaller whales\
+  \ do"
+            answer: true
+            explanation: "Larger whales tend to live at lower population densities and range more widely, so\
+  \ they need calls that travel further. Since the transmission-loss curve shows lower\
+  \ frequencies suffer much less attenuation with distance, larger whales are expected\
+  \ to favor low-frequency signals to communicate over those greater distances."
+          - letter: "B"
+            text: "Based on vocalizations, the Blue whale is expected to have more complex social behaviour\
+  \ than the Humpback."
+            answer: false
+            explanation: "Humpback and Bowhead produce both simple low-frequency calls and elaborate, highly\
+  \ variable high-frequency songs, giving them a much larger repertoire for encoding\
+  \ information than the Blue whale's narrower frequency range — implying more complex,\
+  \ not less complex, social signalling than the Blue whale."
+          - letter: "C"
+            text: "Humpback and Bowhead have a signalling frequency that makes it possible for them\
+  \ to have high inter-annual mating site-fidelity"
+            answer: true
+            explanation: "Their higher-frequency songs suffer much greater transmission loss and so only carry\
+  \ over short range, meaning individuals must be close together to hear each other.\
+  \ That short active space favors returning reliably to the same breeding sites year\
+  \ after year so mates can still find one another."
+          - letter: "D"
+            text: "The similar vocalization patterns of Humpback and Bowhead whales are most likely\
+  \ due to convergent evolution"
+            answer: true
+            explanation: "Humpback and Bowhead are not closely related despite both belonging to the same broad\
+  \ family, so their shared pattern of complex high-frequency song is better explained\
+  \ by both independently evolving similar signals under similar breeding-aggregation\
+  \ pressures than by shared recent ancestry."
+
+      - id: q8
+        number: "Q8"
+        name: "Anaerobic Lactate-to-Ethanol Metabolism in Goldfish"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=15"
+        subjects:
+          - name: "Digestive & Metabolic Physiology"
+            link: "/resources/3-animal-physiology/digestive-metabolic-physiology/"
+        statements:
+          - letter: "A"
+            text: "During the study, lactate accumulation in fish tissue amounts to about half of the\
+  \ total ethanol produced"
+            answer: true
+            explanation: "Comparing the measured tissue lactate to the combined ethanol found in tissue and\
+  \ in the surrounding water gives a ratio close to one half, consistent with ongoing\
+  \ conversion of lactate to ethanol alongside some ethanol already having diffused\
+  \ out into the water. Officially both TRUE and FALSE were accepted for this statement,\
+  \ since the exact split between what has converted and what has diffused out is\
+  \ not fully determined by the twelve-hour snapshot."
+          - letter: "B"
+            text: "Goldfish are able to survive long periods under ice cover"
+            answer: true
+            explanation: "Low-oxygen water under ice forces goldfish onto anaerobic glycolysis, producing lactic\
+  \ acid; converting that lactate onward to ethanol, which diffuses out through the\
+  \ gills, prevents the acidosis that would otherwise limit how long they could survive\
+  \ anaerobically."
+          - letter: "C"
+            text: "Goldfish have no tolerance to ethanol"
+            answer: false
+            explanation: "Ethanol is not retained in goldfish tissue at harmful levels because, unlike lactic\
+  \ acid, it can be excreted through the gills into the surrounding water, so the\
+  \ fish is not being intoxicated by its own metabolic byproduct."
+          - letter: "D"
+            text: "Transformation of lactate to ethanol may be a means of avoiding acidosis"
+            answer: true
+            explanation: "Lactate itself is an acid, but converting it to neutral ethanol removes that acidifying\
+  \ load rather than letting it accumulate. Since fish blood already has a limited\
+  \ buffering capacity for CO2 and acids, offloading the acid this way, and then venting\
+  \ the ethanol through the gills, helps the fish avoid dangerous drops in blood pH."
+
+      - id: q9
+        number: "Q9"
+        name: "Metabolic Rate Scaling During Flounder Development"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=16"
+        subjects:
+          - name: "Digestive & Metabolic Physiology"
+            link: "/resources/3-animal-physiology/digestive-metabolic-physiology/"
+        statements:
+          - letter: "A"
+            text: "Just after hatching, respiration increases without any increase in M"
+            answer: true
+            explanation: "Right after hatching, the plotted points show a short vertical rise in oxygen consumption\
+  \ while body mass on the horizontal axis barely moves, indicating that respiration\
+  \ jumps up before any real mass gain occurs."
+          - letter: "B"
+            text: "For a given unit of body mass, the rate of respiration seems to increase with the\
+  \ age of fish"
+            answer: false
+            explanation: "The mass-specific respiration curve (VO2/M) gradually declines as mass increases\
+  \ with age rather than rising, so per unit of body mass the fish actually becomes\
+  \ relatively less metabolically active as it develops, not more."
+          - letter: "C"
+            text: "The general equation for the lower curve in the figure is VO2=aMb (a: scaling parameter;\
+  \ b: scaling exponent)"
+            answer: true
+            explanation: "The lower curve appears as a straight line on log-log axes, which is exactly the\
+  \ signature of a power-law relationship of the form VO2 = aM^b; taking logs of that\
+  \ equation gives a linear relationship between log VO2 and log M, matching what\
+  \ is plotted."
+          - letter: "D"
+            text: "In the log-log plot there is a continuous linear increase in VO2 over 4 orders of\
+  \ magnitude of body mass"
+            answer: false
+            explanation: "Although the data span several orders of magnitude in mass, the plot actually shows\
+  \ distinct jumps between the four ontogenetic stages, each with its own slope, rather\
+  \ than one smooth continuous line — these correspond to real developmental transitions\
+  \ such as changes in swimming mode and diet."
+
+      - id: q10
+        number: "Q10"
+        name: "The Coagulation Cascade and Vitamin K"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=18"
+        subjects:
+          - name: "Cardiovascular Physiology"
+            link: "/resources/3-animal-physiology/cardiovascular-physiology/"
+        statements:
+          - letter: "A"
+            text: "A mutation called Factor V Leiden causes patients to produce a highly active form\
+  \ of factor V (Va in Fig.), therefore there is an increased risk of embolism"
+            answer: true
+            explanation: "In the cascade, factor Va promotes the conversion of prothrombin to thrombin, so\
+  \ an overactive form of factor V would push more thrombin formation and more fibrin\
+  \ clotting than normal, raising the risk of unwanted clot formation, i.e. embolism."
+          - letter: "B"
+            text: "Bone-marrow insufficiency leads to increased coagulation"
+            answer: false
+            explanation: "Bone marrow is where platelets are produced, and platelets are needed to drive the\
+  \ coagulation cascade shown in the figure, so an insufficient bone marrow would\
+  \ reduce platelet supply and therefore reduce, not increase, coagulation."
+          - letter: "C"
+            text: "A lipid-rich diet may promote coagulation"
+            answer: true
+            explanation: "A lipid-rich diet raises blood cholesterol, and since dietary lipid uptake also carries\
+  \ fat-soluble vitamin K along with it, more vitamin K becomes available to the coagulation\
+  \ pathway, which would tend to promote clotting."
+          - letter: "D"
+            text: "People, suffering from a high risk of embolism, may be treated with heparin (antithrombin\
+  \ activator)"
+            answer: true
+            explanation: "Heparin activates antithrombin, and antithrombin inactivates thrombin, so boosting\
+  \ antithrombin activity dampens the cascade's ability to convert fibrinogen to fibrin,\
+  \ reducing clot formation and lowering embolism risk."
+
+      - id: q11
+        number: "Q11"
+        name: "Temperature, Lactic Acid and Salbutamol Effects on Muscle Fatigue"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=19"
+        subjects:
+          - name: "Muscle Physiology"
+            link: "/resources/3-animal-physiology/muscle-physiology/"
+        statements:
+          - letter: "A"
+            text: "During work, contracting muscles lose K+, leading to increased extracellular [K+]"
+            answer: true
+            explanation: "Repeated action potentials during muscle contraction let K+ leak out of the muscle\
+  \ cells faster than the Na+/K+ pump can bring it back in, so extracellular K+ rises\
+  \ during sustained work, exactly as shown by the falling relative force at higher\
+  \ [K+] in the figure."
+          - letter: "B"
+            text: "Temperature increase, and addition of lactic acid and drug operate mainly additively"
+            answer: true
+            explanation: "Across the tested conditions, the effects of raising temperature, adding lactic acid,\
+  \ and adding salbutamol combine roughly by summing their individual contributions\
+  \ to force recovery rather than any one factor dominating or cancelling the others\
+  \ out."
+          - letter: "C"
+            text: "The study design is incomplete"
+            answer: true
+            explanation: "The experiment never tests salbutamol on its own without lactic acid, and the temperature\
+  \ comparisons and lactate/salbutamol comparisons are run at different fixed temperatures,\
+  \ so some factor combinations that would be needed for a fully crossed design are\
+  \ simply missing."
+          - letter: "D"
+            text: "At physiological temperature (here 35°C), lactic acid protects completely against\
+  \ muscle fatigue"
+            answer: false
+            explanation: "At 35°C, adding lactic acid only partially restores muscle force, for instance recovering\
+  \ tetanic force from near 0% to only around 35% at [K+] = 12 mM, which is a partial\
+  \ rescue, not complete protection against fatigue."
+
+      - id: q12
+        number: "Q12"
+        name: "Stevioside and Soy Protein Effects on Diabetic Rats"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=20"
+        subjects:
+          - name: "Endocrine System Physiology"
+            link: "/resources/3-animal-physiology/endocrine-system-physiology/"
+        statements:
+          - letter: "A"
+            text: "A pure chow diet is not recommended for diabetic rats as it increases cholesterol\
+  \ level and blood pressure"
+            answer: true
+            explanation: "Group A, on the plain standard diet, ends up with the highest total cholesterol and\
+  \ the highest systolic blood pressure after four weeks of all four groups, which\
+  \ is exactly the pattern that would argue against recommending a pure chow diet\
+  \ for diabetic animals."
+          - letter: "B"
+            text: "SVS and SPI seem to have a synergetic effect"
+            answer: true
+            explanation: "Group D, which combines stevioside (SVS) with soy protein (SPI), shows a much larger\
+  \ drop in plasma glucose, a near-doubling of early insulin release, and improvements\
+  \ in cholesterol and blood pressure compared to either component's own group — a\
+  \ bigger effect than would be expected from simply adding the two treatments separately."
+          - letter: "C"
+            text: "Stevioside is harmful to diabetics"
+            answer: false
+            explanation: "Groups receiving stevioside (alone or with soy) show lower blood glucagon and higher\
+  \ insulin production than the plain chow group, both changes that would be considered\
+  \ beneficial rather than harmful for a diabetic animal."
+          - letter: "D"
+            text: "When fasting, blood glucose results show that there is no statistical difference\
+  \ between the four groups of rats"
+            answer: true
+            explanation: "The fasting blood glucose values listed in the table are essentially identical (3.4\
+  \ mmol/L) across all four diet groups, showing the diets only produce differences\
+  \ once the animals are challenged with a glucose load, not at baseline fasting."
+
+      - id: q13
+        number: "Q13"
+        name: "Countercurrent Heat Exchange in Thermoregulation"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=22"
+        subjects:
+          - name: "Comparative Thermoregulation"
+            link: "/resources/3-animal-physiology/comparative-thermoregulation/"
+        statements:
+          - letter: "A"
+            text: "In Fig. A, the shunt vessel to the left is exposed to a lower exterior temperature\
+  \ than the one to the right"
+            answer: true
+            explanation: "The left-hand shunt corresponds to the constricted surface-capillary pathway used\
+  \ to minimize heat loss, while the dilated arteriole-to-venule shunt on the right\
+  \ routes blood away from the cold surface — that pattern only makes sense if the\
+  \ left side faces the colder exterior condition."
+          - letter: "B"
+            text: "In Fig. B, a countercurrent system often seen in animals from warm habitats is shown"
+            answer: false
+            explanation: "The arrangement in panel B conserves body heat by exchanging it between outgoing\
+  \ arterial and returning venous blood, which is a heat-saving adaptation typical\
+  \ of animals in cold environments, not warm ones."
+          - letter: "C"
+            text: "The animal in Fig. C lives in a warm habitat"
+            answer: false
+            explanation: "The steep temperature gradient running down the limb toward a cold floor and ambient\
+  \ temperature shows the countercurrent system is actively conserving core heat,\
+  \ a strategy suited to a cold habitat rather than a warm one."
+          - letter: "D"
+            text: "In Fig. C, the venous blood at the arrow has a temperature between 14-15°C"
+            answer: true
+            explanation: "At the arrow, the tissue temperature reading is 15°C, so the arterial blood entering\
+  \ must be a bit warmer than that and the venous blood leaving that point a bit cooler,\
+  \ placing the venous value in the narrow band between the next measured point at\
+  \ 14°C and 15°C."
+
+      - id: q14
+        number: "Q14"
+        name: "C3 and C4 Leaf Anatomy and Climate"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=24"
+        subjects:
+          - name: "Calvin Cycle, Photorespiration & C4/CAM Biochemistry"
+            link: "/resources/5-plant-physiology/calvin-cycle-photorespiration-c4-cam/"
+        statements:
+          - letter: "A"
+            text: "Evolution of C4 species is favoured in a climate of increasing drought, salinity\
+  \ and heat, but with no change in CO2 level"
+            answer: true
+            explanation: "The C4 pathway concentrates CO2 around Rubisco and lets stomata stay more closed,\
+  \ which is a clear advantage in hot, dry, salty conditions where water loss is a\
+  \ major constraint, and this advantage arises independently of what atmospheric\
+  \ CO2 happens to be doing."
+          - letter: "B"
+            text: "Leaf in Fig. C is from a C3 plant"
+            answer: false
+            explanation: "The cross-section in Fig. C shows Kranz cells, the ring of large bundle-sheath cells\
+  \ around the vascular bundle that is the anatomical hallmark of the C4 pathway,\
+  \ so it must come from a C4 plant, not a C3 one."
+          - letter: "C"
+            text: "Leaf in Fig. D is from a C3 plant"
+            answer: false
+            explanation: "Fig. D also shows the Kranz-cell arrangement characteristic of C4 anatomy, so like\
+  \ Fig. C it belongs to a C4 plant rather than a C3 plant."
+          - letter: "D"
+            text: "During a period of global CO2 increase, without a concomitant increase in temperature,\
+  \ the global distribution of C4 plants is likely to expand"
+            answer: false
+            explanation: "Rising CO2 without a matching temperature rise reduces photorespiration and so favors\
+  \ C3 plants, which lack the CO2-concentrating advantage that makes C4 valuable —\
+  \ meaning C4 plants would be expected to lose ground, not expand, under those conditions."
+
+      - id: q15
+        number: "Q15"
+        name: "Chloroplast DNA Haplotypes in a Rare Japanese Orchid"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=25"
+        subjects:
+          - name: "Genetic Drift, Gene Flow & Mutation"
+            link: "/resources/15-evolution/genetic-drift-gene-flow-and-mutation/"
+        statements:
+          - letter: "A"
+            text: "The origin of the orchid in Japan might be mainland Honshu because of the high genetic\
+  \ diversity observed here"
+            answer: false
+            explanation: "The parsimony network points to a specific haplotype occupying the central, most-connected\
+  \ position, which is the pattern expected of the ancestral variant, and that haplotype's\
+  \ likely origin does not track simply with which region shows the most overall diversity\
+  \ today."
+          - letter: "B"
+            text: "It is likely that a founder effect can been seen in Okinawa"
+            answer: true
+            explanation: "Okinawa is a small, isolated island where only a single haplotype was found, which\
+  \ is the signature expected of a founder effect: a small colonizing population carrying\
+  \ limited genetic variation, further narrowed afterward by genetic drift."
+          - letter: "C"
+            text: "CpDNA is better than nuclear DNA in revealing maternal origins of individuals"
+            answer: true
+            explanation: "Chloroplast DNA is inherited along a single, uniparental (typically maternal) line\
+  \ and tends to show lower within-population variation than nuclear DNA, both of\
+  \ which make it a cleaner marker than biparentally-inherited nuclear DNA for tracing\
+  \ maternal ancestry."
+          - letter: "D"
+            text: "The study suggests that mountains and river basins are more effective barriers to\
+  \ gene flow than the sea separating islands"
+            answer: true
+            explanation: "The same haplotype recurs across the separate islands despite the sea between them,\
+  \ while mainland Honshu — cut up by mountains and river basins — shows much higher\
+  \ haplotype diversity, suggesting the terrestrial landscape features restrict gene\
+  \ flow more effectively than the ocean gaps do."
+
+      - id: q16
+        number: "Q16"
+        name: "Nitrous Oxide Production by Bacteria in Zebra Mussels"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=26"
+        subjects:
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
+        statements:
+          - letter: "A"
+            text: "Most N2O in zebra mussel is produced by bacteria inside the animal (e.g. in gut)"
+            answer: true
+            explanation: "Dissected shells account for only around a quarter of the N2O emitted by whole animals,\
+  \ so the remaining roughly three-quarters must be coming from bacteria inside the\
+  \ mussel itself, such as in the gut."
+          - letter: "B"
+            text: "The N2O production from mussel shells is mostly due to nitrification in their biofilm"
+            answer: true
+            explanation: "N2O emission from the shell alone is almost completely blocked by the nitrification-specific\
+  \ inhibitor ATU, and the shell's biofilm expresses the nitrification gene amoA but\
+  \ not the denitrification gene nirK, both pointing to nitrification as the shell's\
+  \ dominant N2O source."
+          - letter: "C"
+            text: "Nitrification and denitrification are equally important for N2O emission from mussels"
+            answer: false
+            explanation: "Blocking nitrification with ATU only cuts whole-animal N2O emission by about a quarter,\
+  \ meaning the much larger remaining share must come from denitrification in the\
+  \ gut — the two pathways are far from equally important overall."
+          - letter: "D"
+            text: "Increasing nitrate (NO3-) concentrations in lakes (e.g. from agricultural run-off)\
+  \ will increase N2O emissions from freshwater invertebrates"
+            answer: true
+            explanation: "Nitrate is the starting substrate for the denitrification pathway that dominates\
+  \ N2O production in these mussels, so raising the available nitrate supply should\
+  \ drive more N2O formation via denitrification, and since N2O is a gas it will simply\
+  \ be released rather than accumulate."
+
+      - id: q17
+        number: "Q17"
+        name: "An Adenosine Analogue as a Filovirus Therapeutic"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=28"
+        subjects:
+          - name: "Nucleotide & Nucleic Acid Chemistry"
+            link: "/resources/1-cell-molecular/nucleotide-nucleic-acid-chemistry/"
+        statements:
+          - letter: "A"
+            text: "As an adenosine analogue, BCX affects viral gene transcription"
+            answer: true
+            explanation: "Because BCX mimics the ribonucleoside adenosine, it can be incorporated where a normal\
+  \ nucleotide would be used by the viral RNA polymerase, interfering with transcription\
+  \ — consistent with the drop in polymerase activity and viral protein output seen\
+  \ in the figure."
+          - letter: "B"
+            text: "BCX is applicable exclusively against ebola"
+            answer: false
+            explanation: "The growth-inhibition data show BCX is also effective against Marburg virus, a different\
+  \ filovirus, so its antiviral action is not limited to Ebola alone."
+          - letter: "C"
+            text: "BCX can successfully (>50% survival) be administered up to 10 days after Ebola infection"
+            answer: false
+            explanation: "The survival curves show that treatment needs to start within about 5–6 days after\
+  \ infection to give a strong effect; starting as late as 8 days already drops survival\
+  \ to around 30%, so waiting until day 10 would fall well below the 50% survival\
+  \ threshold."
+          - letter: "D"
+            text: "The half-maximal inhibition of BCX is achieved at a concentration of about 10 μM"
+            answer: true
+            explanation: "Both the polymerase-activity curve and the growth-inhibition curve cross the 50%\
+  \ mark at a BCX concentration in the neighborhood of 10 micromolar, so that concentration\
+  \ is a consistent estimate of the half-maximal inhibitory dose across the two assays."
+
+      - id: q18
+        number: "Q18"
+        name: "The ABC Gene Model of Monocot Flower Development"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=30"
+        subjects:
+          - name: "Flower Anatomy & Reproductive Structures"
+            link: "/resources/6-plant-anatomy/flower-anatomy-reproductive-structures/"
+        statements:
+          - letter: "A"
+            text: "Tulips do not have any sepals"
+            answer: true
+            explanation: "In the monocot version of the ABC model, gene A is never expressed on its own, and\
+  \ since sepal identity in the dicot scheme requires gene A alone, monocots like\
+  \ tulips lack a distinct sepal whorl — their outer and inner tepals both resemble\
+  \ petals instead."
+          - letter: "B"
+            text: "Gene-C has different expression in monocots and dicots"
+            answer: false
+            explanation: "Both monocots and dicots use gene C to specify the same two innermost organs, stamens\
+  \ and the ovary/carpel, so gene C's expression domain and role is expected to be\
+  \ conserved between the two groups rather than different."
+          - letter: "C"
+            text: "Selective supression of gene C-expression in region II leads to development of unisexual\
+  \ flower"
+            answer: true
+            explanation: "Region II normally develops as stamens because both class-B and gene-C are expressed\
+  \ there; silencing just the gene-C part in that region would leave only gene-B activity,\
+  \ which under the model shifts that whorl toward petal-like identity instead of\
+  \ stamens — deleting the male organs while leaving the female organ intact produces\
+  \ a functionally unisexual (female) flower."
+          - letter: "D"
+            text: "Complete development of stamens in the tulip requires the expression of gene-B1+gene-B3+gene-C"
+            answer: true
+            explanation: "Stamen identity requires class-B activity together with gene-C, and since class-B\
+  \ in this species is built from three separate genes B1–B3, the specific combination\
+  \ of B1, B3 and C together is what the data indicate is needed for fully normal\
+  \ stamen development."
+
+      - id: q19
+        number: "Q19"
+        name: "Electron Transport Between Oxic and Anoxic Marine Sediment Layers"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=32"
+        subjects:
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
+        statements:
+          - letter: "A"
+            text: "The pH peak in the oxic layer is due to production of water from oxygen"
+            answer: true
+            explanation: "Reducing O2 to water consumes protons (O2 + 4H+ + 4e− → 2H2O), and removing protons\
+  \ from the local environment raises pH there, which explains the pH peak measured\
+  \ right in the oxic layer."
+          - letter: "B"
+            text: "Physically interrupting the sediment by the \"knife\" did not affect O2 reduction"
+            answer: false
+            explanation: "After the cut, the characteristic pH peak in the oxic layer disappears even though\
+  \ the oxygen profile itself looks unchanged, showing that O2 reduction linked to\
+  \ electron transport from below was in fact disrupted by severing whatever was carrying\
+  \ the current across the cut."
+          - letter: "C"
+            text: "The filters demonstrated that any specific solutes were not transporting the electrons"
+            answer: true
+            explanation: "The distinctive pH profile only reappeared when the separating filter had large enough\
+  \ pores to let bacteria-sized organisms through, not with the finer filters that\
+  \ would still pass any dissolved solute — showing that physical, filamentous organisms\
+  \ rather than diffusing chemical solutes are what were carrying the electrons."
+          - letter: "D"
+            text: "Electrons for the O2-reduction most likely came from donors in the oxic layer"
+            answer: false
+            explanation: "The pH rise in the oxic layer reflects proton consumption consistent with electrons\
+  \ arriving from elsewhere (the anoxic H2S-oxidizing layer below) rather than being\
+  \ generated locally, and photosynthesis — which could locally supply electrons —\
+  \ is not possible in the dark sediment, so a local oxic-layer source is not supported."
+
+      - id: q20
+        number: "Q20"
+        name: "Timing Gene Transfer During Bacterial Conjugation"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=34"
+        subjects:
+          - name: "Linkage, Recombination & Genetic Mapping"
+            link: "/resources/7-genetics/linkage-recombination-genetic-mapping/"
+        statements:
+          - letter: "A"
+            text: "The gene marker 'KM resistance' is transferred before the gene required for uracil\
+  \ synthesis"
+            answer: false
+            explanation: "The table shows recipients already growing without uracil after just 5–10 minutes\
+  \ of conjugation, while high Kanamycin-resistant growth only appears after 20–25\
+  \ minutes, so the uracil gene is transferred earlier along the chromosome, not the\
+  \ KM-resistance marker."
+          - letter: "B"
+            text: "The data suggest that a full bacterial genome can be transferred via conjugation\
+  \ in less than 15 minutes"
+            answer: false
+            explanation: "The galactose-utilization marker, transferred last, only reaches full recipient growth\
+  \ at 30 minutes, and in general conjugating pairs often break apart before the whole\
+  \ chromosome crosses over, so the data instead suggest transfer of the complete\
+  \ chromosome takes at least 30 minutes, not under 15."
+          - letter: "C"
+            text: "The data suggest that a small fraction of recipient colonies can be expected to grow\
+  \ on +KM medium even in the absence of conjugation"
+            answer: true
+            explanation: "Even at the very first 5-minute timepoint, before much conjugation-driven transfer\
+  \ could plausibly have delivered the KM marker, a small percentage of colonies already\
+  \ grow on Kanamycin, which points to a background spontaneous mutation rate conferring\
+  \ resistance independent of conjugation."
+          - letter: "D"
+            text: "More than 20% of all colonies incubated for 15 minutes are expected to grow on a\
+  \ medium lacking both arginine and uracil"
+            answer: true
+            explanation: "By 15 minutes, the table already shows 100% growth on media lacking arginine alone\
+  \ and on media lacking uracil alone, so the fraction of colonies capable of growing\
+  \ without both amino acids together is at least as high as the lower of those two\
+  \ figures, comfortably above 20%."
+
+      - id: q21
+        number: "Q21"
+        name: "Cholera Toxin Signaling and a CFTR Inhibitor Treatment"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=36"
+        subjects:
+          - name: "Cell Signaling & Communication"
+            link: "/resources/1-cell-molecular/cell-signaling-communication/"
+          - name: "Plasma Membrane Structure & Transport"
+            link: "/resources/1-cell-molecular/plasma-membrane-structure-transport/"
+        statements:
+          - letter: "A"
+            text: "The water loss of patients with cholera is due to osmosis"
+            answer: true
+            explanation: "Cholera toxin keeps CFTR channels open, pumping chloride and then sodium out of epithelial\
+  \ cells into the intestinal lumen; that buildup of solutes lowers the lumen's water\
+  \ potential, so water follows passively out of the cells by osmosis, producing the\
+  \ watery diarrhea."
+          - letter: "B"
+            text: "The cholera toxin binds to transmembrane ion channels thereby starting a cascade\
+  \ reaction"
+            answer: false
+            explanation: "The toxin actually binds the GM1 ganglioside cell-surface receptor, a G-protein-coupled\
+  \ receptor pathway, not an ion channel directly — the ion channel (CFTR) only gets\
+  \ affected several steps later, downstream of the cAMP signaling cascade that the\
+  \ receptor triggers."
+          - letter: "C"
+            text: "Based on Figure B, one might treat cholera-induced diarrhea with CFTR inhibitor,\
+  \ CFTR 172"
+            answer: true
+            explanation: "The dose-response data show that increasing doses of CFTR-172 progressively reduce\
+  \ toxin-induced fluid secretion in the mouse-loop assay, which is consistent with\
+  \ using a CFTR inhibitor as a way to blunt the excessive chloride and water efflux\
+  \ that causes cholera's diarrhea."
+          - letter: "D"
+            text: "The results in Fig. C support that the cholera outbreak could be caused by infection\
+  \ from the UN soldiers"
+            answer: true
+            explanation: "The toxin gene sequence from the Haiti outbreak is genetically closer to the Bangladesh-associated\
+  \ variants than to the geographically nearer Peru variant, which is the pattern\
+  \ that would be expected if the outbreak strain had actually travelled with personnel\
+  \ from the Bangladesh region rather than arising locally in South America."
+
+      - id: q22
+        number: "Q22"
+        name: "Adipose Tissue as a Host Response to Skin Infection"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=38"
+        subjects:
+          - name: "Immune Physiology"
+            link: "/resources/3-animal-physiology/immune-physiology/"
+        statements:
+          - letter: "A"
+            text: "An SA infection induces the average subcutaneous fat cell to increase in size"
+            answer: true
+            explanation: "The infected skin shows a rapidly thickening subcutaneous fat layer, and the distribution\
+  \ of adipocyte sizes shifts toward larger sizes after infection, both consistent\
+  \ with individual fat cells growing bigger in response to the infection."
+          - letter: "B"
+            text: "Number of adipocytes is important against spread of infection"
+            answer: true
+            explanation: "The data only establish that adipocyte number increases after infection, but they\
+  \ do not directly test or demonstrate that this increase in cell number itself causally\
+  \ limits the spread of infection, so a functional protective role cannot be concluded\
+  \ from this result alone."
+          - letter: "C"
+            text: "Badge destroys the effect of Camp"
+            answer: false
+            explanation: "Panel E still shows a significant difference between the presence and absence of\
+  \ Camp even in the BADGE-treated condition, meaning Camp's antimicrobial effect\
+  \ is still detectable and has not been abolished by blocking adipogenesis."
+          - letter: "D"
+            text: "Results in Fig. C-D and in Fig. E support each other well"
+            answer: true
+            explanation: "Blocking adipogenesis with BADGE both worsens wound outcomes and bacterial counts\
+  \ in panels C–D and reduces the protective difference attributable to Camp in panel\
+  \ E, so the two sets of results point toward the same conclusion — that adipocyte-associated\
+  \ antimicrobial activity helps control the infection."
+
+      - id: q23
+        number: "Q23"
+        name: "Rhizobium Nodulation and Gene Structure in Lotus japonicus"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=40"
+        subjects:
+          - name: "Transcription & RNA Processing"
+            link: "/resources/1-cell-molecular/transcription-rna-processing/"
+        statements:
+          - letter: "A"
+            text: "Nodulation mainly occurs in nitrogen-poor soil"
+            answer: true
+            explanation: "The plot of nodule number against soil nitrogen shows more nodules forming where\
+  \ soil nitrogen is scarce, which fits the general strategy of only investing energy\
+  \ in nodule formation when the plant actually needs the bacteria's nitrogen-fixing\
+  \ help."
+          - letter: "B"
+            text: "Rhizobium stimulates growth of Lotus by enlarging the surface of its root system;\
+  \ and consequently uptake of NO3- increases"
+            answer: false
+            explanation: "The real mechanism is that Rhizobium fixes atmospheric N2 directly and supplies it\
+  \ to the plant as ammonium, boosting growth that way — not by physically enlarging\
+  \ the root surface to scavenge more soil nitrate."
+          - letter: "C"
+            text: "Mutation 3G in Fig. B inhibits the transcription of CaMK"
+            answer: false
+            explanation: "The mutation sits within an intron of the gene rather than in an exon, so it falls\
+  \ in a region that is spliced out of the mature transcript and is not part of what\
+  \ is actually transcribed into the functional mRNA or protein."
+          - letter: "D"
+            text: "Each exon encodes a specific protein domain"
+            answer: false
+            explanation: "There is no fixed one-to-one rule linking exon boundaries to protein domain boundaries\
+  \ — a single exon can encode just a fragment of one domain, or span multiple whole\
+  \ domains, so the strict correspondence claimed here does not generally hold."
+
+      - id: q24
+        number: "Q24"
+        name: "Competing Hypotheses for Darwin's Finch Diversification"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=42"
+        subjects:
+          - name: "Coevolution & Species Interactions"
+            link: "/resources/15-evolution/coevolution-and-species-interactions/"
+        statements:
+          - letter: "A"
+            text: "According to Fig. A, Hypothesis 2 is more likely than Hypothesis 1"
+            answer: true
+            explanation: "Panel A shows finch diet breadth widening as available seed and fruit diversity in\
+  \ the habitat increases, meaning diet is tracking food availability itself — the\
+  \ pattern predicted by the food-diversity hypothesis (Hypothesis 2) rather than\
+  \ by interspecific competition."
+          - letter: "B"
+            text: "According to Fig. B, Hypothesis 1 is more likely than Hypothesis 2"
+            answer: true
+            explanation: "Panel B shows that species pairs with more different beak depths overlap less in\
+  \ diet, exactly the negative relationship predicted if competition (Hypothesis 1)\
+  \ shapes diet divergence — under the pure food-diversity hypothesis, beak differences\
+  \ between species would not be expected to matter for overlap."
+          - letter: "C"
+            text: "Different finch species respond to the same extent to an increase in seed and fruit\
+  \ diversity"
+            answer: false
+            explanation: "The relationship in panel A is only a pooled regression across all species; individual\
+  \ species evidently differ in slope, meaning some species broaden their diet more\
+  \ than others as food diversity rises rather than all responding identically."
+          - letter: "D"
+            text: "Figures. A–B show that interspecific competition is low when food is more diverse"
+            answer: true
+            explanation: "As food diversity rises, panel A shows diets broadening and therefore overlapping\
+  \ more between species, and panel B shows that species with more similar beaks (which\
+  \ would compete more under Hypothesis 1) can still coexist when diets overlap this\
+  \ way — together suggesting that abundant, diverse food loosens the constraint of\
+  \ interspecific competition."
+
+      - id: q25
+        number: "Q25"
+        name: "Coevolutionary Arms Race Between Toxic Newts and Resistant Snakes"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=44"
+        subjects:
+          - name: "Coevolution & Species Interactions"
+            link: "/resources/15-evolution/coevolution-and-species-interactions/"
+        statements:
+          - letter: "A"
+            text: "Coevolution/reciprocal selection between newt and snake mainly takes place in the\
+  \ white zone"
+            answer: true
+            explanation: "Only in the white zone are newt toxicity and snake resistance roughly matched, which\
+  \ is the condition needed for each side's trait to keep selecting on the other —\
+  \ in the grey mismatch zones one side has already outpaced the other and reciprocal\
+  \ selection effectively stalls."
+          - letter: "B"
+            text: "The figure agrees with the \"life-dinner principle\", i.e. survival is under stronger\
+  \ selection than demand for food in a prey-predator interaction"
+            answer: false
+            explanation: "Sites in the lower grey zone show snakes with more resistance than they would need\
+  \ to safely eat the locally available newts, which is the opposite of what the life-dinner\
+  \ principle would predict, since the snake's need to survive should not be driving\
+  \ resistance beyond what is required to feed."
+          - letter: "C"
+            text: "Per individual, resistance seems to be less costly than toxin production"
+            answer: true
+            explanation: "Nearly every mismatched pair sits with the snake's resistance overshooting the newt's\
+  \ toxicity rather than the reverse, which is consistent with resistance being the\
+  \ cheaper trait to ramp up per individual compared with producing more toxin."
+          - letter: "D"
+            text: "It is likely that the snake populations in the two 'green' and two 'yellow' sites\
+  \ at the extreme right of the figure have won the arms race."
+            answer: false
+            explanation: "The newts at those far-right sites could still, in principle, escalate their toxin\
+  \ production further — the apparent snake advantage there may simply reflect that\
+  \ the local newt population has exhausted its genetic variation for toxicity, not\
+  \ that the snakes have permanently won."
+
+      - id: q26
+        number: "Q26"
+        name: "Indirect Effects of Introduced Arctic Foxes on Island Vegetation"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=46"
+        subjects:
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
+        statements:
+          - letter: "A"
+            text: "The study is based on the assumption that sea bird-derived nutrients are distributed\
+  \ all over an island"
+            answer: true
+            explanation: "The comparison treats islands as single, whole units for vegetation change rather\
+  \ than only measuring effects right along the coast where seabirds actually nest\
+  \ and deposit guano, which implicitly assumes those nutrients spread across the\
+  \ whole island rather than staying concentrated near the colonies."
+          - letter: "B"
+            text: "The presence of foxes on an island changes the vegetation from grassland to tundra-\
+  \ shrubland"
+            answer: true
+            explanation: "The bar charts show a taller shrub component and a shorter grass component on fox-present\
+  \ islands compared with fox-free islands, matching a shift away from grass-dominated\
+  \ vegetation toward more shrub-dominated tundra."
+          - letter: "C"
+            text: "Diversity and number of major plant groups are reduced in islands with fox populations"
+            answer: false
+            explanation: "Fox-present islands actually show at least five different functional plant groups\
+  \ represented, while fox-free islands show only grass and forbs, meaning plant-group\
+  \ diversity is higher, not lower, where foxes are present."
+          - letter: "D"
+            text: "The ecological changes on islands with fox introduction represent exclusively top–down\
+  \ processes"
+            answer: false
+            explanation: "Alongside the top-down chain from fox to seabirds, there is also a bottom-up pathway\
+  \ running from reduced seabird guano to lower soil phosphorus to changed vegetation,\
+  \ so both top-down and bottom-up processes are operating together, not a purely\
+  \ top-down one."
+
+      - id: q27
+        number: "Q27"
+        name: "Diet Differences Between Island and Mainland Chough Populations"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=48"
+        subjects:
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
+        statements:
+          - letter: "A"
+            text: "Generally, food of animal origin is more scarce on IS than on MA"
+            answer: true
+            explanation: "The frequency-of-occurrence data show animal food items turning up in only about\
+  \ a quarter of island habitat samples compared to about half of mainland samples,\
+  \ indicating animal-derived food is scarcer in the island habitat."
+          - letter: "B"
+            text: "Mainland nestlings have a wider food niche than island populations"
+            answer: false
+            explanation: "Island nestlings' diet spans all five food categories including plant matter, whereas\
+  \ mainland nestlings draw from only three or four categories and skip vegetative\
+  \ food altogether, so it is the island population with the broader niche, not the\
+  \ mainland one."
+          - letter: "C"
+            text: "In general, insects are the favorite food of nestlings"
+            answer: true
+            explanation: "For both island and mainland nestlings, insects make up the largest share of the\
+  \ diet, and calculating how much each food group is used relative to its availability\
+  \ in the habitat shows insects are preferred above their environmental abundance,\
+  \ confirming they are the favored food overall."
+          - letter: "D"
+            text: "Island nestlings are expected to have a faster growth rate and shorter generation\
+  \ time than mainland nestlings"
+            answer: false
+            explanation: "Island nestlings rely heavily on carbohydrate-rich fruit rather than the lipid- and\
+  \ protein-rich arthropods that dominate the mainland diet, a poorer nutritional\
+  \ base that would be expected to slow rather than speed up their growth, consistent\
+  \ with their less well-developed feathers."
+
+      - id: q28
+        number: "Q28"
+        name: "Fruit Availability and Fish Diet Niche in Amazon Floodplains"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=50"
+        subjects:
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
+        statements:
+          - letter: "A"
+            text: "Fact: Diet overlap among fish increased from 28% to 95% from low-resource to high-resource\
+  \ season: This relationship is best explained by H1"
+            answer: false
+            explanation: "Hypothesis H1 predicts diet overlap should decrease as fruit production increases,\
+  \ but the observed change is a large increase in overlap with more fruit available,\
+  \ which instead matches H2's prediction that overlap rises together with fruit production."
+          - letter: "B"
+            text: "Fact: B. falcatus was, at first, observed not to change its food niche, when food\
+  \ became more plentiful, but then at higher food availability it became increasingly\
+  \ selective: This relationship is best explained by a combination of H1 and H3"
+            answer: true
+            explanation: "The unchanging niche breadth at lower fruit availability matches H3's prediction\
+  \ of a constant food niche, while the narrowing niche at higher fruit availability\
+  \ that follows matches H1's prediction, so the two-phase pattern needs both hypotheses\
+  \ together to explain it."
+          - letter: "C"
+            text: "Fact: Some fish had a constant food niche throughout the year, irrespectively of\
+  \ fruit availability: This is best explained by H1"
+            answer: false
+            explanation: "A food niche that stays constant regardless of how much fruit is available is exactly\
+  \ what H3 predicts (fixed proportional consumption of fruit and other food), not\
+  \ H1, which predicts the niche should narrow as more fruit becomes available."
+          - letter: "D"
+            text: "Fact: During HW, M. asterias had a fruit-dominated diet, but switched to leaves instead\
+  \ of fruit in the LW season: This is best explained by H2"
+            answer: true
+            explanation: "Switching away from fruit toward an alternative food source (leaves) as fruit becomes\
+  \ scarcer in the low-water season, thereby reducing overlap with other frugivorous\
+  \ fish, is exactly the flexible, resource-tracking response that H2 predicts."
+
+      - id: q29
+        number: "Q29"
+        name: "Species Extinction on Islands Created by Reservoir Flooding"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=52"
+        subjects:
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
+        statements:
+          - letter: "A"
+            text: "Smaller islands (1–10 ha) lose more species per year than larger islands (25-50 ha)"
+            answer: false
+            explanation: "The extinction-rate curves in panel B are actually steeper for the larger islands,\
+  \ and panel C shows large islands losing half their species fastest, so it is the\
+  \ larger fragments losing species faster in absolute terms, not the smaller ones."
+          - letter: "B"
+            text: "At reservoir establishment, a linear relationship existed between species number\
+  \ and island area"
+            answer: false
+            explanation: "At time zero, species number tracks island area more like a saturating, logarithmic\
+  \ relationship (the classic species–area curve) rather than a straight line, so\
+  \ a simple linear relationship does not describe the starting pattern."
+          - letter: "C"
+            text: "The study supports the hypothesis that in the long run, a single large protected\
+  \ island will support biodiversity better than several small ones"
+            answer: false
+            explanation: "Regardless of fragment size, essentially all the studied islands are heading toward\
+  \ retaining only a single surviving species, so the results do not show a large\
+  \ reserve preserving more species long-term than an equivalent area split into smaller\
+  \ reserves."
+          - letter: "D"
+            text: "In all islands, which are larger than 10 ha, the mean time to extinction of half\
+  \ of all species, is comparable"
+            answer: true
+            explanation: "Panel C shows the half-life to losing half the species leveling off to roughly the\
+  \ same value across all the island sizes above about 10 ha, so above that size threshold\
+  \ the timescale of species loss is fairly comparable rather than continuing to change\
+  \ with area."
+
+      - id: q30
+        number: "Q30"
+        name: "Orientation Cages and Migratory Direction in Indigo Buntings"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=54"
+        subjects:
+          - name: "Orientation & Navigation"
+            link: "/resources/9-ethology/orientation-navigation/"
+        statements:
+          - letter: "A"
+            text: "The bird breeds in Central America and the Caribbean (blue area, Fig. A)"
+            answer: false
+            explanation: "The blue area on the range map is the winter range, since the species migrates north\
+  \ to breed and south for winter, so its breeding range is actually the pink northern\
+  \ area rather than the blue Central American/Caribbean area."
+          - letter: "B"
+            text: "Fig. C-I is made by a north-eastern USA bird ready for autumn migration to the western\
+  \ part of Central America"
+            answer: false
+            explanation: "A bird migrating from the northeastern US toward the western part of Central America\
+  \ would need to head south-west, which corresponds to a different footprint panel\
+  \ (radii toward the south-east/5 o'clock direction) than the pattern shown in panel\
+  \ I."
+          - letter: "C"
+            text: "Fig. C-II is made by a western USA bird ready for autumn migration to Cuba"
+            answer: false
+            explanation: "A bird travelling from the western US directly toward Central America should show\
+  \ footprints pointing due south, and that is in fact the pattern in panel II — but\
+  \ that direction corresponds to migrating toward Central America generally, not\
+  \ specifically toward Cuba, so labelling it as heading to Cuba is incorrect."
+          - letter: "D"
+            text: "Fig. C-III: The footprint of a young bird, suggesting that migration patterns are\
+  \ genetically determined"
+            answer: false
+            explanation: "A young, inexperienced bird is expected to produce footprints scattered in essentially\
+  \ all directions rather than a clear directional heading, which is the opposite\
+  \ of the organized pattern that would indicate an innately (genetically) programmed\
+  \ migratory direction."
+
+      - id: q31
+        number: "Q31"
+        name: "Wind Adaptation and Flightlessness in an Island Butterfly"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=56"
+        subjects:
+          - name: "Natural Selection: Modes & Fitness"
+            link: "/resources/15-evolution/natural-selection-modes-and-fitness/"
+        statements:
+          - letter: "A"
+            text: "Island insects in general are more often flightless than are mainland insects"
+            answer: true
+            explanation: "On small windy islands, flying carries a high risk of being blown out to sea, and\
+  \ there are typically fewer predators to escape from by flying, so selection more\
+  \ often favors reduced flight ability in island insect populations than in mainland\
+  \ ones."
+          - letter: "B"
+            text: "If more curved tarsal claws are a disadvantage in escaping predators, then PT probably\
+  \ has very few insect-eating birds as compared to mainland localities"
+            answer: true
+            explanation: "The PT population has evolved more strongly curved claws, which help grip against\
+  \ wind but would slow a rapid escape response; that trade-off is only sustainable\
+  \ if predation pressure from birds is low on PT compared with the mainland, so the\
+  \ strong claw curvature implies weak predation pressure there."
+          - letter: "C"
+            text: "In general, butterflies do not evolve flightlessness because of their mode of foraging"
+            answer: true
+            explanation: "Butterflies feed by visiting flowers, which generally requires active flight between\
+  \ food sources, so losing flight entirely would conflict with how they normally\
+  \ forage — making flightlessness an unlikely evolutionary outcome purely from a\
+  \ foraging perspective."
+          - letter: "D"
+            text: "With age, island butterflies learn to hide from the wind"
+            answer: false
+            explanation: "The wind-resistance test shows old and young island butterflies losing their grip\
+  \ at essentially the same distance from the wind source, meaning there is no measurable\
+  \ improvement with age or experience, so a learned behavioral response is not supported."
+
+      - id: q32
+        number: "Q32"
+        name: "Stress Behaviour and Cortisol in Farmed Mink"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=58"
+        subjects:
+          - name: "Mechanisms of Behavior"
+            link: "/resources/9-ethology/mechanisms-of-behavior/"
+          - name: "Endocrine System Physiology"
+            link: "/resources/3-animal-physiology/endocrine-system-physiology/"
+        statements:
+          - letter: "A"
+            text: "Animal welfare studies always require behavioural observations"
+            answer: false
+            explanation: "Cortisol concentration on its own already tracks stress level in this study, showing\
+  \ that a purely physiological (hormonal) measure can also serve as a welfare indicator\
+  \ without necessarily needing direct behavioural observation."
+          - letter: "B"
+            text: "Stereotypic pacing is affected by postponed feeding"
+            answer: true
+            explanation: "Comparing the mink groups shows the frequency of stereotypic pacing rising when feeding\
+  \ is postponed, most clearly seen by comparing the low-pacing (ST1) group against\
+  \ the high-pacing (ST2) group under the same delayed-feeding condition."
+          - letter: "C"
+            text: "Tail-chewing and stereotypic pacing are closely correlated"
+            answer: false
+            explanation: "Tail-chewing shows up even in the non-stereotypic (NST) group in panel B, meaning\
+  \ it occurs independently of whether an animal shows stereotypic pacing, so the\
+  \ two behaviours are not closely linked."
+          - letter: "D"
+            text: "Very high behavioural stress levels seem to suppress cortisol production"
+            answer: true
+            explanation: "The most heavily stereotypic group (ST2) actually shows lower cortisol than the less-affected\
+  \ group, which fits a scenario where sustained, severe stress eventually triggers\
+  \ negative feedback in the hypothalamus–pituitary–adrenal axis that dials cortisol\
+  \ production back down rather than keeping it elevated."
+
+      - id: q33
+        number: "Q33"
+        name: "ABO Blood Group Compatibility in Transfusion"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=60"
+        subjects:
+          - name: "Human Circulatory System"
+            link: "/resources/2-animal-anatomy/human-circulatory-system/"
+        statements:
+          - letter: "A"
+            text: "Blood transfusion with A-blood causes an incompatibility reaction in an O-recipient"
+            answer: true
+            explanation: "A type-O recipient carries anti-A antibodies in their plasma, and transfusing red\
+  \ cells carrying the A antigen gives those antibodies a target to attack, triggering\
+  \ an incompatibility reaction."
+          - letter: "B"
+            text: "A traffic accident victim needed blood fast, and without knowing the blood group\
+  \ type of the victim the doctor prescribed blood of type O, and the patient showed\
+  \ signs of incompatibility"
+            answer: false
+            explanation: "Type O red cells carry neither the A nor the B surface antigen, so they are not recognized\
+  \ as foreign by anti-A or anti-B antibodies in a recipient of any ABO type, which\
+  \ is exactly why O is used as the universal red-cell donor and would not itself\
+  \ trigger an incompatibility reaction."
+          - letter: "C"
+            text: "Persons with type AB can receive blood from all ABO types"
+            answer: true
+            explanation: "AB individuals carry both A and B antigens on their own cells and consequently make\
+  \ neither anti-A nor anti-B antibodies, so there is no antibody present in their\
+  \ plasma that would attack red cells of any ABO type, making them the universal\
+  \ recipient."
+          - letter: "D"
+            text: "Persons with type B can receive blood of type AB"
+            answer: false
+            explanation: "Type B individuals carry anti-A antibodies in their plasma, and AB donor cells carry\
+  \ the A antigen those antibodies target, so transfusing AB blood into a type-B recipient\
+  \ would trigger a rejection reaction rather than being safe."
+
+      - id: q34
+        number: "Q34"
+        name: "Environmental DNA and Acoustic Detection of Harbour Porpoises"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=62"
+        subjects:
+          - name: "Molecular Systematics"
+            link: "/resources/4-biosystematics/molecular-systematics/"
+        statements:
+          - letter: "A"
+            text: "In this study eDNA may be an effective tool to detect marine animals far away from\
+  \ their habitat"
+            answer: false
+            explanation: "Even just outside the pen, only about 10 meters from the animals, eDNA could no longer\
+  \ be reliably detected in this study, so the method appears effective only at very\
+  \ close range, not for detecting animals far from where they actually are."
+          - letter: "B"
+            text: "Most likely, the eDNA from site 7 was from an animal more closely related to the\
+  \ porpoise than to harbour seal"
+            answer: true
+            explanation: "The site 7 sequence differs from the porpoise reference by only a single base but\
+  \ from the seal reference by eight bases, a much smaller genetic distance to the\
+  \ porpoise, indicating the source animal is more closely related to the porpoise\
+  \ lineage than to the seal."
+          - letter: "C"
+            text: "Based on the short sequence in the Fig., the two marine animals, seal and porpoise,\
+  \ are more closely related to each other than seal and human are to each other"
+            answer: false
+            explanation: "The sequence comparison actually shows eight base differences between seal and porpoise\
+  \ but only six between seal and human, meaning seal and human are the more similar\
+  \ (fewer differences) pair in this particular short stretch, not seal and porpoise."
+          - letter: "D"
+            text: "eDNA seems to be a poorer detection method than acoustic monitoring"
+            answer: true
+            explanation: "Across the sampled sites, acoustic monitoring registers porpoise presence far more\
+  \ often than genetic detection does, likely because eDNA is released, transported,\
+  \ and preserved less efficiently in the water than sound is, making eDNA the less\
+  \ sensitive of the two methods here."
+
+      - id: q35
+        number: "Q35"
+        name: "Multi-Locus Blood Typing to Resolve a Paternity Case"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=64"
+        subjects:
+          - name: "Pedigree Analysis & Human Genetic Disorders"
+            link: "/resources/7-genetics/pedigree-analysis-human-genetic-disorders/"
+        statements:
+          - letter: "A"
+            text: "Both Man 2 and Man 3 can be the father"
+            answer: false
+            explanation: "Man 2 is Rh-negative and so cannot pass on the Rh+ allele that the daughter carries,\
+  \ ruling him out, whereas Man 3 is Rh-positive and consistent with the daughter's\
+  \ other markers, so only Man 3 among the two remains a possible father."
+          - letter: "B"
+            text: "The father could be identified unambiguously with less than four blood type systems"
+            answer: true
+            explanation: "Using just the Rhesus and Xg(a) systems together is already enough to exclude all\
+  \ the other candidates and pinpoint the same single consistent father, so the full\
+  \ set of four blood-type systems is not actually necessary."
+          - letter: "C"
+            text: "Using the ABO system alone, the daughter's genotype had to be IAi"
+            answer: false
+            explanation: "The daughter certainly inherits an IA allele from her AB mother, but the second allele\
+  \ could come from any of several candidate fathers and might itself be IA or i depending\
+  \ on who the father is, so ABO typing alone cannot pin down her exact genotype."
+          - letter: "D"
+            text: "If the daughter bears a boy with a man, whose genotype is Xg(a+), then her son must\
+  \ be Xg(a+), because the allele Xg(a+) is dominant"
+            answer: false
+            explanation: "A son inherits his single X chromosome from his mother, not his father, so the father's\
+  \ Xg(a) genotype and the dominance of the allele are irrelevant to the son's Xg(a)\
+  \ phenotype — what matters is only which X the mother happens to pass on."
+
+      - id: q36
+        number: "Q36"
+        name: "A Frameshift Mutation Causing Ficolin-3 Deficiency"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=66"
+        subjects:
+          - name: "Translation & the Genetic Code"
+            link: "/resources/1-cell-molecular/translation-genetic-code/"
+        statements:
+          - letter: "A"
+            text: "The mutation is a frame-shift mutation"
+            answer: true
+            explanation: "Comparing the normal and mutant sequences shows a single base deleted rather than\
+  \ substituted, and a deletion of one base shifts every downstream codon reading\
+  \ frame from that point onward, which is the defining feature of a frameshift mutation."
+          - letter: "B"
+            text: "If a child lacks ficolin-3 protein, at least one of her/his parents should have the\
+  \ same phenotype"
+            answer: false
+            explanation: "The deficiency behaves as a recessive trait, so an affected child can arise from\
+  \ two unaffected heterozygous carrier parents, each contributing one mutant allele\
+  \ without showing the deficient phenotype themselves — exactly the pattern seen\
+  \ in this family, where only the patient (5) is affected."
+          - letter: "C"
+            text: "All three possible genotypes of the ficolin-3 gene can be determined using Western\
+  \ blots"
+            answer: true
+            explanation: "The blot shows a full band level in the presumed homozygous normal individual, roughly\
+  \ half that level in the heterozygous carrier parents, and none in the homozygous\
+  \ mutant patient, so all three genotype classes produce visibly distinguishable\
+  \ band intensities."
+          - letter: "D"
+            text: "Sister (1) might be heterozygous"
+            answer: true
+            explanation: "Sister (1)'s blot band appears reduced compared with the parents', in the same intermediate\
+  \ range as the confirmed heterozygous carriers, so a heterozygous carrier genotype\
+  \ is a plausible interpretation for her as well."
+
+      - id: q37
+        number: "Q37"
+        name: "Restriction Fragment Analysis of a Growth Hormone Deletion"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=67"
+        subjects:
+          - name: "Pedigree Analysis & Human Genetic Disorders"
+            link: "/resources/7-genetics/pedigree-analysis-human-genetic-disorders/"
+        statements:
+          - letter: "A"
+            text: "The gene for growth hormone is situated within the 26 kb DNA sequence"
+            answer: true
+            explanation: "The only family member missing the 26 kb restriction fragment entirely is the dwarf\
+  \ individual, which links loss of that specific fragment to loss of growth hormone\
+  \ function, placing the growth hormone gene within that 26 kb region."
+          - letter: "B"
+            text: "The mutation is due to a deletion of the size of 26 kb"
+            answer: false
+            explanation: "The dwarf individual and carrier relatives instead show a new 18.5 kb fragment not\
+  \ present in the control, suggesting the mutation is a smaller deletion of about\
+  \ 26 kb minus 18.5 kb, roughly 7.5 kb, rather than removing the entire 26 kb region."
+          - letter: "C"
+            text: "III-4 will most probably not have children that lack growth hormone"
+            answer: true
+            explanation: "Individual III-4's fragment pattern matches the unaffected control rather than the\
+  \ carrier or dwarf pattern, suggesting they are homozygous normal at this locus\
+  \ and so would not be expected to pass on the deletion to cause dwarfism in their\
+  \ children."
+          - letter: "D"
+            text: "The risk that a fourth child of II-1 and II-5 will be a dwarf is 50%"
+            answer: false
+            explanation: "Both parents are heterozygous carriers of this recessive condition, so simple Mendelian\
+  \ inheritance gives each child a 25% chance of being homozygous recessive (dwarf),\
+  \ not 50%."
+
+      - id: q38
+        number: "Q38"
+        name: "A Pedigree with Two X-Linked Disorders"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=69"
+        subjects:
+          - name: "Sex Determination & Sex-Linked Inheritance"
+            link: "/resources/7-genetics/sex-determination-sex-linked-inheritance/"
+        statements:
+          - letter: "A"
+            text: "Person II-2 is a carrier of both disorders"
+            answer: true
+            explanation: "Since no new mutations occur in the family and neither parent above her is affected,\
+  \ the only way her brother and her son could each separately show one of the two\
+  \ X-linked disorders is if she herself carries both disorder alleles on her X chromosomes."
+          - letter: "B"
+            text: "At least two individuals in the pedigree carry recombinations due to genetic crossover"
+            answer: true
+            explanation: "Two affected males in the pedigree each show only one of the two linked disorders\
+  \ rather than both together, even though their mothers must carry both alleles on\
+  \ a single X — the only way to separate two linked alleles onto different X chromosomes\
+  \ passed to sons is a crossover event during meiosis in the mother."
+          - letter: "C"
+            text: "If IV-2 (unborn) has Klinefelter's syndrome (XXY) and also has colour blindness,\
+  \ then a non-disjunction must have taken place in the first meiotic division of\
+  \ the mother's egg cell"
+            answer: false
+            explanation: "For IV-2 to end up with two X chromosomes both carrying the colour-blindness allele,\
+  \ the non-disjunction event has to occur in the second meiotic division (where sister\
+  \ chromatids, which are identical copies carrying the same allele, fail to separate),\
+  \ not the first division, which separates homologous chromosomes that could carry\
+  \ different alleles."
+          - letter: "D"
+            text: "III-5 marries a man from a population in which the frequency of the allele for colour\
+  \ blindness is 1%. The probability that their firstborn child is a colourblind daughter\
+  \ is 0.25%"
+            answer: true
+            explanation: "III-5 is a heterozygous carrier with a 50% chance of passing the colour-blindness\
+  \ allele to a daughter, and the father's population contributes his own X with a\
+  \ 1% chance of also carrying it; multiplying 0.5 by 0.01 gives a 0.5% chance of\
+  \ a colourblind daughter, and combined with the 50% chance the child is a daughter\
+  \ at all, this comes out to the reported 0.25% probability for that first child\
+  \ being both female and colourblind."
+
+      - id: q39
+        number: "Q39"
+        name: "Sex-Linked Plumage Colour Inheritance in Chickens"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=71"
+        subjects:
+          - name: "Sex Determination & Sex-Linked Inheritance"
+            link: "/resources/7-genetics/sex-determination-sex-linked-inheritance/"
+        statements:
+          - letter: "A"
+            text: "Black plumage dominates over barred"
+            answer: false
+            explanation: "All F1 males, who each carry two Z chromosomes and so could express either allele\
+  \ if recessive, show the barred pattern rather than black, which is only possible\
+  \ if barred is the dominant allele, not black."
+          - letter: "B"
+            text: "All barred chickens in F2 can be regarded as hens and used for egg production"
+            answer: false
+            explanation: "Working through the F2 cross shows barred plumage turning up in only half of the\
+  \ female offspring, with the other half black, so barred birds are not exclusively\
+  \ female and cannot be used on their own as a reliable sexing marker."
+          - letter: "C"
+            text: "Half of the male chickens in F2 are heterozygous"
+            answer: true
+            explanation: "Since males carry two Z chromosomes, working through the F2 cross shows exactly half\
+  \ of the male offspring coming out heterozygous (Bb) for the barring allele, with\
+  \ the other half homozygous."
+          - letter: "D"
+            text: "All male chickens in F2 are black"
+            answer: false
+            explanation: "The F2 cross actually produces an even split among males between black and barred\
+  \ plumage, not a uniformly black male generation."
+
+      - id: q40
+        number: "Q40"
+        name: "Hardy-Weinberg and the Evolution of Lactose Tolerance"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=73"
+        subjects:
+          - name: "Population Genetics & Hardy-Weinberg Equilibrium"
+            link: "/resources/15-evolution/population-genetics-hardy-weinberg-equilibrium/"
+        statements:
+          - letter: "A"
+            text: "Assuming that the European (B) population is in Hardy-Weinberg equilibrium, the frequency\
+  \ of K in the next generation will be 0.968"
+            answer: false
+            explanation: "With 90% tolerance, the recessive kk frequency is 10%, giving allele frequency k\
+  \ = sqrt(0.10) ≈ 0.316 and therefore K ≈ 0.684 — a population already at Hardy-Weinberg\
+  \ equilibrium keeps the same allele frequencies the next generation, so K stays\
+  \ near 0.684, not 0.968."
+          - letter: "B"
+            text: "Differences in the frequencies of the K allele between populations prove that selection\
+  \ has been acting on this trait"
+            answer: true
+            explanation: "The geographic pattern of lactose tolerance closely tracks regions with a long history\
+  \ of dairy farming, where being able to digest milk as an adult — and gain its nutrients\
+  \ and vitamin D, especially valuable in low-sunlight northern climates — would have\
+  \ been a genuine survival and reproductive advantage, consistent with these frequency\
+  \ differences reflecting real selective pressure rather than chance alone."
+          - letter: "C"
+            text: "In Greenland (A) where the percentage of lactose tolerance is 50%, the frequencies\
+  \ of the alleles k and K are equal"
+            answer: false
+            explanation: "A 50% tolerant phenotype frequency means kk frequency is 50%, so k = sqrt(0.50) ≈\
+  \ 0.71 and K ≈ 0.29 — the two allele frequencies come out quite unequal, not equal\
+  \ to each other."
+          - letter: "D"
+            text: "Lactose tolerance is assumed to be the ancestral trait among adult humans"
+            answer: false
+            explanation: "Animal husbandry and milk drinking into adulthood are relatively recent developments\
+  \ in human history, so adult lactose tolerance is understood to be the derived trait\
+  \ that spread afterward, while lactose intolerance in adulthood is the ancestral\
+  \ condition."
+
+      - id: q41
+        number: "Q41"
+        name: "Complementation Analysis of the Arginine Biosynthesis Pathway"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=74"
+        subjects:
+          - name: "Gene Interactions: Epistasis & Complementation Analysis"
+            link: "/resources/7-genetics/epistasis-gene-interactions-complementation/"
+        statements:
+          - letter: "A"
+            text: "Class III mutants may have mutations in more than one gene involved in the pathway"
+            answer: true
+            explanation: "A Class III mutant is defined purely by its growth requirement (needing arginine\
+  \ directly, indicating a block at the last step), but that phenotypic classification\
+  \ does not rule out the strain also carrying an additional, independent lesion elsewhere\
+  \ in the pathway picked up during mutagenesis — real mutagenized strains commonly\
+  \ carry more than one hit."
+          - letter: "B"
+            text: "Class I mutants lack activity of all three enzymes"
+            answer: false
+            explanation: "Class I mutants are blocked at the earliest step and so are missing only the first\
+  \ enzyme's activity — they still retain functional copies of the two downstream\
+  \ enzymes, which is exactly why supplying them with ornithine or citrulline further\
+  \ down the pathway restores their growth."
+          - letter: "C"
+            text: "Mutants, lacking both enzyme A and C, will grow if ornithine and citrulline are both\
+  \ added"
+            answer: false
+            explanation: "Even with ornithine and citrulline supplied directly, a strain missing enzyme C still\
+  \ cannot convert citrulline into arginine, since that conversion is precisely the\
+  \ step enzyme C performs — so the double mutant still cannot grow without arginine\
+  \ itself being supplied."
+          - letter: "D"
+            text: "Assuming that an inhibitor to enzyme B is added to the wild type, gene B will be\
+  \ inactivated"
+            answer: false
+            explanation: "Inhibiting an enzyme chemically blocks its catalytic activity but does not alter\
+  \ or silence the gene that encodes it — gene B itself remains intact and would still\
+  \ be transcribed and translated normally even while its protein product is inhibited."
+
+      - id: q42
+        number: "Q42"
+        name: "Carrier Probability in an Autosomal Recessive Pedigree"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=75"
+        subjects:
+          - name: "Pedigree Analysis & Human Genetic Disorders"
+            link: "/resources/7-genetics/pedigree-analysis-human-genetic-disorders/"
+        statements:
+          - letter: "A"
+            text: "The probability that II-4 carries the disease allele is 0.50"
+            answer: false
+            explanation: "Since II-4 is known to be unaffected, the homozygous-affected (dd) possibility is\
+  \ already ruled out, leaving only the carrier (Dd) and homozygous-normal (DD) genotypes\
+  \ among the possible outcomes for an unaffected offspring of two known carriers\
+  \ — working through the conditional probability among just those two options gives\
+  \ 2/3, not 0.50."
+          - letter: "B"
+            text: "II-2 and II-4 have the same probability of carrying the disease allele"
+            answer: true
+            explanation: "The disease allele is autosomal, so sex has no bearing on inheritance, and with no\
+  \ information available to distinguish which of the unaffected siblings might individually\
+  \ carry the allele, II-2 and II-4 are symmetric in the pedigree and so share the\
+  \ same carrier probability."
+          - letter: "C"
+            text: "If assume that II-5 does not carry allele d, the probability that III-3 carries this\
+  \ allele is 0.30 or higher"
+            answer: true
+            explanation: "II-4 has a 2/3 chance of being a carrier, and if she is, each of her children has\
+  \ a 1/2 chance of inheriting the allele from her (since the other parent, II-5,\
+  \ is assumed not to carry it); multiplying 2/3 by 1/2 gives a 1/3 probability for\
+  \ III-3, which is above the 0.30 threshold in the statement."
+          - letter: "D"
+            text: "If we assume, that II-5 is heterozygous and III-3 has the disease, then the probability\
+  \ that II-4 is a carrier is 0.5"
+            answer: false
+            explanation: "If III-3 is actually affected (dd), one of the two d alleles must have come from\
+  \ each parent, which means II-4 must be carrying the allele with certainty — a probability\
+  \ of 1.0, not 0.5."
+
+      - id: q43
+        number: "Q43"
+        name: "Temperature and Invasive Algae Effects on Eelgrass Growth"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=77"
+        subjects:
+          - name: "Plant Stress Physiology & Defense"
+            link: "/resources/5-plant-physiology/plant-stress-physiology-defense/"
+        statements:
+          - letter: "A"
+            text: "Irrespective of temperature, Gracilaria inhibits the growth rate of eelgrass"
+            answer: false
+            explanation: "Gracilaria only measurably depresses eelgrass growth at the two warmer temperatures\
+  \ tested; at 18°C its presence does not produce a significant reduction, so the\
+  \ inhibiting effect is temperature-dependent rather than universal."
+          - letter: "B"
+            text: "In general, temperature affects the growth rate of eelgrass"
+            answer: true
+            explanation: "The growth-rate data peak clearly at the intermediate 21°C temperature and differ\
+  \ between the three tested temperatures, showing temperature has a real effect on\
+  \ how fast eelgrass grows."
+          - letter: "C"
+            text: "There is a combined effect of Gracilaria and temperature on the growth of eelgras"
+            answer: true
+            explanation: "The size of the gap between the different Gracilaria-load bars changes depending\
+  \ on which temperature is being compared, which is the signature of an interaction\
+  \ — the two factors do not simply add independently but influence each other's effect\
+  \ on growth."
+          - letter: "D"
+            text: "In Danish waters without Gracilaria, eelgrass growth is temperature limited"
+            answer: true
+            explanation: "Eelgrass grows fastest at 21°C in the experiment, a temperature above the roughly\
+  \ 18°C ceiling typical of Danish summer waters, meaning that under normal Danish\
+  \ conditions without Gracilaria present, growth is still being held below its potential\
+  \ maximum by the prevailing (cooler) water temperature."
+
+      - id: q44
+        number: "Q44"
+        name: "Vegetation Removal and Permafrost Dynamics in Siberian Tundra"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=79"
+        subjects:
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
+        statements:
+          - letter: "A"
+            text: "Soil subsides when its woody vegetation is removed"
+            answer: true
+            explanation: "Once woody vegetation is removed, the soil surface warms up more, which thaws ice\
+  \ pockets embedded in the active layer; as that ice melts, the layer loses volume\
+  \ and the ground surface visibly drops, matching the lower surface elevation measured\
+  \ after removal."
+          - letter: "B"
+            text: "Undisturbed tundra woody vegetation functions as a source of global methane emission"
+            answer: false
+            explanation: "The control (undisturbed, black-bar) plots actually show net uptake of methane rather\
+  \ than release, meaning natural tundra with its woody vegetation intact behaves\
+  \ as a methane sink, not a source."
+          - letter: "C"
+            text: "Removal of woody vegetation initiates a cycle, leading to more dominance of water-tolerant\
+  \ plants"
+            answer: true
+            explanation: "After vegetation removal, ground water level rises according to panel C, and wetter\
+  \ soil conditions favor plants adapted to waterlogged ground over the drier-adapted\
+  \ woody species, so the change plausibly sets off a shift toward more water-tolerant\
+  \ vegetation."
+          - letter: "D"
+            text: "After removal of woody vegetation, the chain of events will be: Fig. B --> Fig. C\
+  \ --> Fig. A --> Fig. D"
+            answer: false
+            explanation: "The actual causal sequence described for this system runs from surface collapse to\
+  \ snow accumulation to groundwater rise to methane release — that is, Fig. A leads\
+  \ to Fig. B leads to Fig. C leads to Fig. D, a different order than the one given\
+  \ in the statement."
+
+      - id: q45
+        number: "Q45"
+        name: "Sexual Dimorphism and Floral Evolution in Palm and Saxifrage"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=81"
+        subjects:
+          - name: "Flower Anatomy & Reproductive Structures"
+            link: "/resources/6-plant-anatomy/flower-anatomy-reproductive-structures/"
+        statements:
+          - letter: "A"
+            text: "The palm in Fig. A is monoecious (i.e. hermaphroditic plants with unisexual flowers)"
+            answer: true
+            explanation: "The figure shows one female flower and two male flowers all borne on the same branch\
+  \ of the same individual, which is exactly the arrangement that defines a monoecious\
+  \ species — separate unisexual flowers coexisting on one plant."
+          - letter: "B"
+            text: "The palm in Fig. A originates from an ancestor, which most likely had hermaphroditic\
+  \ flowers"
+            answer: true
+            explanation: "The male flowers still show vestigial remnants of a gynoecium, and the female flowers\
+  \ show small leftover staminode structures, both of which are traces expected if\
+  \ the unisexual flowers evolved by reduction from an originally bisexual (hermaphroditic)\
+  \ ancestral flower."
+          - letter: "C"
+            text: "The palm and the saxifrage are both most likely dicots"
+            answer: false
+            explanation: "The palm's flower parts come in threes (a floral plan typical of monocots), while\
+  \ the saxifrage's flower parts come in fives (typical of dicots), so only the saxifrage\
+  \ fits a dicot pattern — the palm is more consistent with being a monocot."
+          - letter: "D"
+            text: "If structures through evolution become more specialized, one would expect the saxifrage\
+  \ to be phylogenetically older than the palm"
+            answer: false
+            explanation: "The saxifrage's narrow, restrictive corolla is a more specialized floral structure\
+  \ than the palm's open, easily accessible flower, and under the stated assumption\
+  \ that structures become more specialized over evolutionary time, that would place\
+  \ the saxifrage as the more recently evolved (younger), not older, of the two."
+
+      - id: q46
+        number: "Q46"
+        name: "Trade-offs Between Clonal and Sexual Reproduction in Bamboo"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=83"
+        subjects:
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
+        statements:
+          - letter: "A"
+            text: "More \"investment\" in clonal growth negatively affects male reproductive success\
+  \ of an individual bamboo"
+            answer: false
+            explanation: "Male reproductive success (pollen siring) actually increases with the number of flowering\
+  \ culms in a clone, a positive rather than negative relationship, so bigger clonal\
+  \ investment does not come at the cost of male success."
+          - letter: "B"
+            text: "More \"investment\" in clonal growth negatively affects female reproductive success\
+  \ of an individual bamboo"
+            answer: false
+            explanation: "Seed production also rises with clone size in the data, again a positive relationship\
+  \ rather than the negative trade-off the hypothesis predicts, so larger clonal investment\
+  \ does not reduce female reproductive success either."
+          - letter: "C"
+            text: "Larger bamboo clones have more self-pollination"
+            answer: false
+            explanation: "There is no significant regression relating self-pollination rate to clone size in\
+  \ the data, likely because flowering culms of different clones are so intermingled\
+  \ spatially in the plots that clone size stops predicting local mating patterns."
+          - letter: "D"
+            text: "The gain in female fitness per produced flowering culm diminishes with increasing\
+  \ clone size"
+            answer: false
+            explanation: "The seed-production relationship follows a straight line rather than levelling off,\
+  \ meaning each additional flowering culm keeps contributing the same incremental\
+  \ gain in seed output regardless of clone size — it is the male function, not the\
+  \ female one, that shows diminishing returns."
+
+      - id: q47
+        number: "Q47"
+        name: "Prey-Induced Enzyme Activity in the Carnivorous Sundew"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=85"
+        subjects:
+          - name: "Mineral Nutrition & Nutrient Uptake"
+            link: "/resources/5-plant-physiology/mineral-nutrition-nutrient-uptake/"
+        statements:
+          - letter: "A"
+            text: "Results indicate that growth of D. capensis plants is normally limited by N"
+            answer: false
+            explanation: "Feeding fruit flies actually drives the N:P and K:P ratios down and the N:K ratio\
+  \ up, patterns that together point to phosphorus and potassium being the nutrients\
+  \ most drawn down by prey capture, which implicates P (and K) rather than nitrogen\
+  \ as the normally limiting nutrient."
+          - letter: "B"
+            text: "Mechanical irritation increases enzyme activity, but proteolytic activity requires\
+  \ the presence of insects"
+            answer: true
+            explanation: "Mechanical irritation alone already raises acid phosphatase and phosphodiesterase\
+  \ activity, but total proteolytic activity actually drops slightly under mechanical\
+  \ irritation and only rises substantially once real fruit flies are provided, showing\
+  \ the protein-digesting response specifically needs genuine prey rather than just\
+  \ mechanical stimulation."
+          - letter: "C"
+            text: "No chitinase activity was observed in the mucilage, which might explain the fact\
+  \ that the weight of the fruit flies was only reduced by 60%"
+            answer: true
+            explanation: "The chitin-based exoskeleton of the fruit flies is left largely undigested, consistent\
+  \ with no chitin-degrading (chitinase) activity being present in the mucilage, and\
+  \ since the exoskeleton makes up a real fraction of the fly's mass, leaving it intact\
+  \ would cap the overall achievable weight loss at well under 100%."
+          - letter: "D"
+            text: "N was a more efficiently absorbed nutrient from fruit flies than K"
+            answer: true
+            explanation: "The N:K ratio in leaf tissue rises after feeding, meaning potassium is being drawn\
+  \ down (used up) faster than nitrogen relative to each other — leaving more unused\
+  \ nitrogen behind in the tissue implies potassium, not nitrogen, is the more efficiently\
+  \ absorbed and consumed nutrient from the prey."
+
+      - id: q48
+        number: "Q48"
+        name: "CO2 and Temperature Effects on C3 versus C4 Photosynthesis"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=87"
+        subjects:
+          - name: "Calvin Cycle, Photorespiration & C4/CAM Biochemistry"
+            link: "/resources/5-plant-physiology/calvin-cycle-photorespiration-c4-cam/"
+        statements:
+          - letter: "A"
+            text: "The proportion of C4-plant species increases towards the poles"
+            answer: false
+            explanation: "C4 photosynthesis is favored by hot, sunny, often dry conditions, which are more\
+  \ characteristic of low-latitude regions, so C4 representation is expected to decrease,\
+  \ not increase, moving away from the tropics toward the poles."
+          - letter: "B"
+            text: "At current atmospheric CO2 levels, CO2 is limiting the growth of both C3- and C4-plants"
+            answer: false
+            explanation: "C4 plants use a CO2-concentrating mechanism that keeps their carbon-fixing enzyme\
+  \ well supplied even at today's atmospheric CO2 level, so they are generally not\
+  \ CO2-limited under current conditions — it is mainly C3 plants that still respond\
+  \ strongly to added CO2, not both groups equally."
+          - letter: "C"
+            text: "The predicted CO2-increase can be more advantageous to C4- than C3-plants"
+            answer: false
+            explanation: "Because C4 plants already operate a built-in CO2-concentrating step and are largely\
+  \ saturated with respect to CO2 supply, rising atmospheric CO2 mainly benefits C3\
+  \ plants, which still experience CO2 limitation and photorespiratory loss that extra\
+  \ CO2 can relieve."
+          - letter: "D"
+            text: "In dry and warm regions during the last glacial period, C4-plants were probably more\
+  \ widespread"
+            answer: true
+            explanation: "Glacial-period atmospheric CO2 was markedly lower than today, a condition that further\
+  \ disadvantages C3 photosynthesis relative to the CO2-concentrating C4 pathway,\
+  \ so in warm, dry regions at the time C4 plants would be expected to have held an\
+  \ even larger competitive edge and been more widespread than now."
+
+      - id: q49
+        number: "Q49"
+        name: "Heterostyly and Pollen Transfer Efficiency in Primrose"
+        link: "/papers/ibo/2015/theoretical-a-exam.pdf#page=88"
+        subjects:
+          - name: "Flower Anatomy & Reproductive Structures"
+            link: "/resources/6-plant-anatomy/flower-anatomy-reproductive-structures/"
+          - name: "Population Genetics & Hardy-Weinberg Equilibrium"
+            link: "/resources/15-evolution/population-genetics-hardy-weinberg-equilibrium/"
+        statements:
+          - letter: "A"
+            text: "Frequencies of T and P in a primrose population stay the same, if mating is random\
+  \ with respect to form, and all crossings give the same fruit set"
+            answer: false
+            explanation: "Working through the genotype outcomes, T x T and P x P crossings each produce mostly\
+  \ P-form offspring (since SS is inviable), while only T x P crossings restore an\
+  \ even split — so if all cross types contributed equally to fruit set, P would gradually\
+  \ come to dominate the population rather than the two forms staying at a stable\
+  \ frequency."
+          - letter: "B"
+            text: "Incomplete sterility within the same flower form is seen in the population as a deviation\
+  \ from a 1: 1 T: P ratio"
+            answer: true
+            explanation: "If same-form crosses (T x T, P x P) were completely sterile, the population would\
+  \ stay locked at a 1:1 T:P ratio; since these same-form crosses are only reduced\
+  \ in fecundity rather than fully sterile (as shown by the slightly lower but nonzero\
+  \ fruit set), they skew reproduction toward P and shift the ratio away from 1:1."
+          - letter: "C"
+            text: "The two routes of pollen transfer (T --> P or P --> T) are equally efficient in terms\
+  \ of the pollen transferred"
+            answer: false
+            explanation: "The proportions of pollen reaching the stigma differ sharply between the two directions\
+  \ — pollen moving from P-anthers to T-stigmas is transferred far more efficiently\
+  \ than pollen moving from T-anthers to P-stigmas, so the two routes are clearly\
+  \ not equally efficient."
+          - letter: "D"
+            text: "Pollen deposition from tongue to stigma is more difficult than pollen harvesting\
+  \ from anther to tongue"
+            answer: true
+            explanation: "The percentage of pollen picked up from the anther onto the tongue differs from the\
+  \ percentage successfully then deposited from the tongue onto the stigma, showing\
+  \ the bee's tongue movement introduces its own separate loss — consistent with the\
+  \ tongue-to-stigma deposition step being the more difficult, less efficient part\
+  \ of the transfer."

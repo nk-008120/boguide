@@ -19,8 +19,6 @@ faq:
 
 <div class="prep-guide-wrapper">
 
-# Biology Olympiad Preparation: The Complete Guide
-
 This is the general preparation framework that applies regardless of which Biology Olympiad you're targeting. It covers what to study, what order to learn things in, how to practice effectively, and what resources to use. For exam-specific strategies, formats, and registration details, see the individual guides below.
 
 ## Choose your olympiad

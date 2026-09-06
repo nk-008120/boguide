@@ -19,8 +19,6 @@ faq:
 
 <div class="prep-guide-wrapper">
 
-# IBO Preparation: The Complete Guide
-
 The International Biology Olympiad is the global final stage: national teams of four secondary-school students compete on both theory and practical biology. Around 300 competitors from 70-80 countries sit the exam each year, with roughly 10% earning Gold. This guide covers preparation strategy. For eligibility, current dates, and official rules, always check your national body's site and the [IBO official site](https://www.ibo-info.org/), because administrative details change every year.
 
 ## How IBO actually works

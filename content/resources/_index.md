@@ -1,5 +1,6 @@
 ---
 title: "Study Resources"
+description: "A graded (S/A/B) list of recommended books and resources for Biology Olympiad preparation, covering every major topic area."
 weight: 1
 ---
 

@@ -6,8 +6,6 @@ layout: "wide"
 
 <div class="prep-guide-wrapper">
 
-# 6-Month Biology Olympiad Study Plan
-
 ## Who this plan is for
 
 Students who have already worked through school biology (AP Biology, CBSE/ICSE Class 12, or equivalent) and can commit ten to twelve hours a week. You know what mitosis is, you've heard of the Krebs cycle, and you can draw a basic pedigree. If you're starting from scratch, this timeframe isn't realistic -- pick the [1-year plan](/plans/1-year/) or acknowledge you'll be triaging in the [3-month plan](/plans/3-months/).

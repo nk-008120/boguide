@@ -6,8 +6,6 @@ layout: "wide"
 
 <div class="prep-guide-wrapper">
 
-# 3-Month Biology Olympiad Study Plan
-
 ## Who this plan is for
 
 Students with existing foundations (at minimum: school biology coursework completed) targeting a specific exam in roughly three months, willing to put in twelve to fifteen hours a week. This plan makes explicit trade-offs. If you want full coverage of the entire syllabus, you need the [6-month plan](/plans/6-months/) or longer. Three months means triage, not comprehensive study.

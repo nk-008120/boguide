@@ -19,8 +19,6 @@ faq:
 
 <div class="prep-guide-wrapper">
 
-# INBO Preparation: The Complete Guide
-
 The Indian National Biology Olympiad is the second stage of India's olympiad pathway toward [IBO](/ibo-preparation/), run by HBCSE (Homi Bhabha Centre for Science Education) under NCERT. This guide focuses on preparation strategy. For current eligibility, exact dates, and registration procedures, always check the [HBCSE Biology Olympiad site](https://olympiads.hbcse.tifr.res.in/subjects/biology/), because administrative details change every year.
 
 ## The pathway

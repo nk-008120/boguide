@@ -3,6 +3,9 @@ title: "Account"
 aliases:
   - /papers/account/
 layout: "wide"
+noindex: true
+sitemap:
+  disable: true
 ---
 
 <div id="papers-account-root" class="account-split">

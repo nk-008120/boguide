@@ -1,5 +1,6 @@
 ---
 title: "About BiOGuide"
+description: "Why we built BiOGuide, how content gets reviewed before publishing, who's behind it, and how to get in touch or contribute."
 ---
 
 ## 📊 Recent Updates

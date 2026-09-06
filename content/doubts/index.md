@@ -3,6 +3,9 @@ title: "Doubts"
 aliases:
   - /discussions/
 layout: "wide"
+noindex: true
+sitemap:
+  disable: true
 ---
 
 <div id="doubts-root" class="discussions-page">

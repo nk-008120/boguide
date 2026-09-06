@@ -6,8 +6,6 @@ layout: "wide"
 
 <div class="prep-guide-wrapper">
 
-# 2-Year Biology Olympiad Study Plan
-
 ## Who this plan is for
 
 Anyone from complete beginner to school-biology level who has genuinely committed two years and can put in five to eight hours a week consistently. This is the runway for building real depth -- not just coverage, but the kind of understanding where you can answer questions you've never seen before because you know the mechanisms, not just the facts.
