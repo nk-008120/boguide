@@ -1,6 +1,9 @@
 ---
 title: "BiOClash Sample — Attempt"
 layout: "wide"
+noindex: true
+sitemap:
+  disable: true
 ---
 
 <aside class="hextra-sidebar-container" hidden></aside>

@@ -1,5 +1,8 @@
 ---
 title: "Leaderboard - Theoretical B"
+noindex: true
+sitemap:
+  disable: true
 ---
 
 <a class="papers-nav-btn" href="../" style="display:inline-block;margin-bottom:1.5rem;">← Back to Theoretical B</a>

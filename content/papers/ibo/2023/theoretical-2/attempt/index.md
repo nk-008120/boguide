@@ -1,5 +1,8 @@
 ---
 title: "Timed Attempt - Theoretical 2"
+noindex: true
+sitemap:
+  disable: true
 ---
 
 <div id="papers-attempt-root" class="papers-attempt-root">

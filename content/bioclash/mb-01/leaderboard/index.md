@@ -1,6 +1,9 @@
 ---
 title: "Leaderboard - Case File MB-01"
 layout: "wide"
+noindex: true
+sitemap:
+  disable: true
 ---
 
 <aside class="hextra-sidebar-container" hidden></aside>

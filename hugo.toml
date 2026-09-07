@@ -2,6 +2,12 @@ baseURL = "https://bioguide.world/"
 title = "BiOGuide for Biology Olympiads"
 theme = "hextra"
 
+# Overrides Hugo's implicit default categories+tags taxonomies -- nothing in
+# content/ sets either field and no layout references them, so the default
+# /categories/ and /tags/ pages were building as empty shells (just an <h1>,
+# no content) with no purpose on this site. See the SEO indexing-fix plan.
+[taxonomies]
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]

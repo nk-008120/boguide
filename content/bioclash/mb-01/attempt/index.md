@@ -1,6 +1,9 @@
 ---
 title: "Case File MB-01 - Attempt"
 layout: "wide"
+noindex: true
+sitemap:
+  disable: true
 ---
 
 <aside class="hextra-sidebar-container" hidden></aside>
