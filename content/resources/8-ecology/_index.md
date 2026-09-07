@@ -659,7 +659,7 @@ Cryptic colouration (camouflage),aposematism (warning colouration: bright colour
 
 <span class="badge-custom">Important</span> Real predator-prey cycles are well-documented in the **lynx-snowshoe hare** system (Hudson's Bay Company fur records, 1845–1935). Both populations cycle with ~10-year period. However, subsequent experiments showed the cycle has multiple drivers: hare food limitation AND predation both contribute, a crucial correction to the naive Lotka-Volterra model.
 
-![Hudson Bay](/ECOLOGYPICS/hudsonbay.png)
+![Hudson Bay](hudsonbay.png)
 
 
 ### Keystone species
@@ -1267,7 +1267,7 @@ where $\alpha_{12}$ is the **competition coefficient**: the per-capita effect of
 
 $$\alpha_{12} < \frac{K_1}{K_2} \quad \text{and} \quad \alpha_{21} < \frac{K_2}{K_1}$$
 
-![Lokta isocline](/ECOLOGYPICS/lokta.png)
+![Lokta isocline](lokta.png)
 <br>
 <div id="lotkapred"><strong>Lotka-Volterra predator-prey model:</strong></div>
 

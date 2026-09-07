@@ -23,7 +23,7 @@ The ovule's **integuments** (one or two layers, see [Flower Anatomy & Reproducti
 
 The fertilized **zygote** (see [Flower Anatomy & Reproductive Structures](../flower-anatomy-reproductive-structures/)) develops into the embryo, organized along a single axis: a **radicle** (embryonic root) at one end, a **plumule** (embryonic shoot, itself sometimes called the epicotyl above the cotyledon attachment point) at the other, connected by a **hypocotyl** (the embryonic axis segment between radicle and cotyledon attachment), and bearing one **cotyledon** (monocots) or two (dicots), the same cotyledon-count distinction introduced on [Monocot vs Dicot Comparative Anatomy](../monocot-dicot-comparative-anatomy/). In many dicot seeds the cotyledons themselves swell to become the seed's primary nutrient-storage structure (see below); in monocots the single cotyledon (in grasses, specifically modified into a structure called the **scutellum**) instead functions mainly to absorb and transfer stored nutrient from a separate endosperm rather than storing it directly.
 
-![A dicot seed (bean) with seed coat, embryo, cotyledon, hypocotyl, radicle, and plumule labeled, alongside a monocot seed (corn) with pericarp+seed coat (fused), endosperm, and embryo labeled.](/PLANTANATPICS/dicot-monocot-seed.png)
+![A dicot seed (bean) with seed coat, embryo, cotyledon, hypocotyl, radicle, and plumule labeled, alongside a monocot seed (corn) with pericarp+seed coat (fused), endosperm, and embryo labeled.](dicot-monocot-seed.png)
 *Source: Biology LibreTexts*
 
 ### Endosperm, Perisperm, and Nutrient Storage Strategy
@@ -39,7 +39,7 @@ A separate nutritive tissue, **perisperm**, occurs in a smaller number of specie
 
 Following fertilization, the ovary wall matures into the **pericarp**, differentiating into up to three structural layers: **exocarp** (outermost, often a thin skin), **mesocarp** (middle, variable, thin and dry, or thick and fleshy, depending on fruit type), and **endocarp** (innermost, in direct contact with the seed(s), variable, thin and membranous, or hardened into a stone). Not every fruit shows all three layers as structurally distinct; the degree of differentiation is exactly what separates the fruit types below.
 
-![A peach (drupe) cross-section labeling the seed (endosperm, embryo, seed coat) and the pericarp's three layers (exocarp, mesocarp, endocarp).](/PLANTANATPICS/drupe-cross-section.png)
+![A peach (drupe) cross-section labeling the seed (endosperm, embryo, seed coat) and the pericarp's three layers (exocarp, mesocarp, endocarp).](drupe-cross-section.png)
 *Source: Wikimedia Commons, "Drupe fruit diagram" (commons.wikimedia.org)*
 
 ### Fruit Classification
@@ -52,7 +52,7 @@ Fruits are classified first by how many ovaries/flowers contributed to the struc
 - **Aggregate fruit**: develops from multiple separate carpels of a single flower's single gynoecium, each carpel maturing into a small fruitlet, all fruitlets remaining attached to one receptacle (e.g. raspberry, blackberry, each small "bump" is technically a separate small drupe, a **drupelet**).
 - **Multiple fruit**, develops from the fused ovaries of many separate flowers clustered in one inflorescence, maturing into what appears externally as one unit (e.g. pineapple, fig, mulberry).
 
-![Two fleshy-fruit examples: (a) strawberries, an aggregate fruit whose achenes sit on a fleshy receptacle; (b) chaparral honeysuckle berries, individual berries developing from inferior ovaries.](/PLANTANATPICS/aggregate-vs-multiple-fruit.png)
+![Two fleshy-fruit examples: (a) strawberries, an aggregate fruit whose achenes sit on a fleshy receptacle; (b) chaparral honeysuckle berries, individual berries developing from inferior ovaries.](aggregate-vs-multiple-fruit.png)
 *Source: Raven, Evert & Eichhorn, Biology of Plants (W.H. Freeman/Macmillan)*
 
 ### Dispersal-Related Structural Adaptations

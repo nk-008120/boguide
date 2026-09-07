@@ -4,3 +4,8 @@ node_modules/
 .vercel/
 public/
 umami/
+# Hugo's image-processing cache (resources.GetImage/.Resize output) --
+# first appears now that render-image.html does image processing.
+# Anchored to repo root (leading slash) -- an unanchored "resources/" would
+# also match content/resources/, the site's largest content section.
+/resources/

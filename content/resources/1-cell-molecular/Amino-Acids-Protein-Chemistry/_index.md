@@ -20,7 +20,7 @@ Amino acids are the monomer units of proteins: a central (α) carbon bonded to a
 
 The 20 R groups sort into four broad chemical classes:
 
-![General structure of an amino acid: a central α-carbon bonded to an amino group, a carboxyl group, a hydrogen, and the variable R group that distinguishes each of the 20 standard amino acids](/MCBBPICS/Amino_Acid.png)
+![General structure of an amino acid: a central α-carbon bonded to an amino group, a carboxyl group, a hydrogen, and the variable R group that distinguishes each of the 20 standard amino acids](Amino_Acid.png)
 Source: Unknown
 
 - **Nonpolar/aliphatic (9)**: Gly, Ala, Val, Leu, Ile, Pro, Phe, Trp, Met, hydrocarbon chains or aromatic rings that cluster away from water.
@@ -28,7 +28,7 @@ Source: Unknown
 - **Polar acidic (2)**: Asp, Glu, carrying a second carboxylic acid/carboxylate group beyond the backbone one; negatively charged at physiological pH.
 - **Polar basic (3)**: Lys, Arg, His, carry an additional amine group; positively charged (Lys, Arg fully; His only partially, pKₐ ≈ 6) at physiological pH.
 
-![All 20 standard amino acids' chemical structures grouped by class (aliphatic, aromatic, acidic, basic, hydroxylic, sulfur-containing, amidic), each circle color-coded by class and marked solid/dashed for non-essential/essential](/MCBBPICS/Amino_Acid2.png)
+![All 20 standard amino acids' chemical structures grouped by class (aliphatic, aromatic, acidic, basic, hydroxylic, sulfur-containing, amidic), each circle color-coded by class and marked solid/dashed for non-essential/essential](Amino_Acid2.png)
 Source: Unknown
 
 Two exceptions to memorize: **tyrosine** has an aromatic ring *and* a polar –OH, and is conventionally grouped as polar neutral rather than nonpolar; **methionine** contains sulfur, but because sulfur and carbon have almost identical electronegativity, its thioether side chain behaves as nonpolar.
@@ -47,7 +47,7 @@ For an amino acid with an ionizable side chain, average the **two pKₐ values t
 
 **Reading a titration curve**: each inflection point marks a pKₐ; the flat **buffering plateaus** (±1 pH unit around each pKₐ) are where the amino acid best resists pH change, because protonated and deprotonated forms coexist near 1:1. A polyprotic amino acid like lysine shows three inflection points and three buffering plateaus.
 
-![Titration curve of a Lys-Lys-Lys tripeptide (not free lysine): net charge steps from +4.0 down to −1.0 across four inflection points, α-COOH pKₐ ≈2.2, α-NH₃⁺ pKₐ ≈8.0, the three ε-NH₃⁺ side-chain groups clustering near pKₐ ≈10.5, with pI ≈10.8 marked where net charge crosses zero](/MCBBPICS/LYSINECURVE.png)
+![Titration curve of a Lys-Lys-Lys tripeptide (not free lysine): net charge steps from +4.0 down to −1.0 across four inflection points, α-COOH pKₐ ≈2.2, α-NH₃⁺ pKₐ ≈8.0, the three ε-NH₃⁺ side-chain groups clustering near pKₐ ≈10.5, with pI ≈10.8 marked where net charge crosses zero](LYSINECURVE.png)
 Source: Unknown
 
 $$ \text{pH} = pK_a + \log\frac{[\text{A}^-]}{[\text{HA}]} \quad \text{(Henderson–Hasselbalch)} $$
@@ -107,7 +107,7 @@ Not every combination of the backbone dihedral angles φ (phi) and ψ (psi) arou
 - **Parallel β-sheet**: φ ≈ −119°, ψ ≈ +113°
 - **Collagen triple helix**: φ ≈ −51°, ψ ≈ +153°
 
-![Ramachandran plot (φ vs. ψ) for solved structure PDB 1AXC, with favoured (red), allowed (orange), and generously allowed (yellow) regions shaded and the α-helix and β-sheet regions labelled; blue diamonds mark the structure's actual residue angles clustering in the favoured regions](/MCBBPICS/ramchandran.png)
+![Ramachandran plot (φ vs. ψ) for solved structure PDB 1AXC, with favoured (red), allowed (orange), and generously allowed (yellow) regions shaded and the α-helix and β-sheet regions labelled; blue diamonds mark the structure's actual residue angles clustering in the favoured regions](ramchandran.jpg)
 Source: Unknown
 
 **Glycine** (no side chain, minimal steric restriction) is the only residue that populates all four quadrants, which is why it appears at tight turns and buried positions. **Proline** (side chain cyclised back onto the backbone nitrogen, fixing φ ≈ −60°, and lacking an amide hydrogen to donate) is confined to a narrow region and cannot participate in α-helix hydrogen bonding. This is the chemical basis for both residues acting as "helix breakers" (see [Protein Structure, Folding & Function](../protein-structure-folding-function/)).

@@ -19,7 +19,7 @@ syllabus_tags: ["IBO", "USABO", "plant-physiology"]
 
 **Phytochrome** is a photoreversible pigment-protein that exists in two interconvertible forms: **Pr** (absorbs red light, ~660 nm) and **Pfr** (absorbs far-red light, ~730 nm). Absorbing red light converts Pr to Pfr, and absorbing far-red light converts Pfr back to Pr. Sunlight contains far more red than far-red light, so Pfr accumulates during the day; in darkness, Pfr slowly and spontaneously reverts to Pr over the course of the night (rather than requiring far-red light specifically), at a roughly constant rate. This slow, dark-driven Pfr-to-Pr conversion is what allows phytochrome to function as a night-length timer: the longer an uninterrupted dark period lasts, the more completely Pfr reverts to Pr, so the Pfr:Pr ratio present at dawn is a direct molecular readout of how long the preceding night was. Critically, this makes phytochrome sensitive to **night length**, not day length directly, which is the basis for the terminology correction in the next section.
 
-![Phytochrome Pr/Pfr photoreversible cycle: red light (670 nm) converts the inactive Pr form to the active Pfr form; far-red light (730 nm) or, more slowly, darkness converts Pfr back to Pr](/PLANTPHYSIOPICS/phytochrome-pr-pfr-cycle.png)
+![Phytochrome Pr/Pfr photoreversible cycle: red light (670 nm) converts the inactive Pr form to the active Pfr form; far-red light (730 nm) or, more slowly, darkness converts Pfr back to Pr](phytochrome-pr-pfr-cycle.png)
 *Source: Preach Bio*
 
 ### Short-Day, Long-Day, and Day-Neutral Plants
@@ -38,19 +38,19 @@ On that basis:
 
 Some species (many biennials and winter annuals) additionally require **vernalization**: a prolonged period of cold exposure, typically during winter, before they become competent to flower even under an otherwise inductive photoperiod the following season. Mechanistically, vernalization involves epigenetic silencing of a floral repressor gene (in the well-studied case, sustained cold progressively represses the *FLC* repressor via chromatin modification), a change that persists through subsequent cell divisions in the meristem (a form of cellular, mitotically heritable memory of the cold exposure) even after the cold period ends and temperatures rise, which is why a single winter's cold, not the plant's continued exposure to cold at flowering time, is sufficient to unlock the response. Vernalization and photoperiod act as independent checkpoints: a species requiring both will not flower on photoperiod alone without prior cold exposure, nor on cold exposure alone without the correct subsequent photoperiod.
 
-![Vernalization outcome and the classical (pre-molecular) flower-inducing-substance model: left, a slightly germinated seed either chilled (flowers) or not chilled (fails to flower) at the same ordinary growing temperature; right, the classical "vernalin"/"florigen" translocation model proposed to carry the vernalization-induced signal from leaf to flower bud, with devernalization by high temperature](/PLANTPHYSIOPICS/vernalization-flc-timeline.png)
+![Vernalization outcome and the classical (pre-molecular) flower-inducing-substance model: left, a slightly germinated seed either chilled (flowers) or not chilled (fails to flower) at the same ordinary growing temperature; right, the classical "vernalin"/"florigen" translocation model proposed to carry the vernalization-induced signal from leaf to flower bud, with devernalization by high temperature](vernalization-flc-timeline.webp)
 *Source: SlideShare*
 
 ### Florigen: The Mobile Flowering Signal
 
 Photoperiod is sensed in leaves (where phytochrome and the night-length-measuring clock operate), but the floral transition itself occurs at the **shoot apical meristem**, often at a considerable distance: classic grafting experiments (an induced leaf grafted onto an otherwise non-induced plant of the same species triggers flowering in the recipient) demonstrated decades before its molecular identity was known that a mobile, graft-transmissible signal, not an electrical or purely local response, carries the flowering decision from leaf to apex.
 
-![Grafting technique terminology (in vitro micrografting vs. conventional grafting): scion/microscion, rootstock/microrootstock, and the graft union where callus cells from both sides interconnect the vascular systems](/PLANTPHYSIOPICS/grafting-experiment-florigen.png)
+![Grafting technique terminology (in vitro micrografting vs. conventional grafting): scion/microscion, rootstock/microrootstock, and the graft union where callus cells from both sides interconnect the vascular systems](grafting-experiment-florigen.jpg)
 *Source: not identified*
 
 This signal is now identified as **florigen**, the **FT (Flowering Locus T) protein**: synthesized in leaf phloem companion cells under inductive photoperiod, then transported through the phloem (see [Phloem Transport & Translocation](../phloem-transport-translocation/) for the general mechanism carrying it) to the shoot apical meristem, where it triggers the transcriptional program converting the vegetative meristem into a floral meristem, the developmental switch whose structural output (the four floral whorls) is covered on [Flower Anatomy & Reproductive Structures](../../6-plant-anatomy/flower-anatomy-reproductive-structures/).
 
-![FT (florigen) production and transport: under long-day/inductive red:far-red light conditions, FT-producing companion cells in the leaf phloem load FT (and FLP1) protein into the sieve element flow, carrying it to the shoot apical meristem to trigger floral development and to promote stem growth](/PLANTPHYSIOPICS/florigen-ft-pathway.png)
+![FT (florigen) production and transport: under long-day/inductive red:far-red light conditions, FT-producing companion cells in the leaf phloem load FT (and FLP1) protein into the sieve element flow, carrying it to the shoot apical meristem to trigger floral development and to promote stem growth](florigen-ft-pathway.jpg)
 *Source: ScienceDirect (journal article abstract page, S1534580725000656)*
 
 ```mermaid

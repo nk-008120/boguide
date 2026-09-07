@@ -28,7 +28,7 @@ $$ \Psi = \Psi_s + \Psi_p $$
 
 A cell at **full turgor** has Ψₚ exactly balancing Ψₛ, so Ψ = 0 and no further net water enters; a **flaccid** or **plasmolyzed** cell (Ψₚ near zero or negative, respectively) has Ψ driven entirely by Ψₛ. This framework is what makes it possible to predict water movement direction between any two compartments (soil, root cell, xylem, atmosphere) from their respective Ψ values alone, without needing a separate rule for each pair.
 
-![Water potential (Ψ) worked across three states: pure water (Ψ = 0), a 0.1 M sucrose solution (Ψ lowered by solute potential alone), and a flaccid cell dropped into that solution then allowed to reach equilibrium, with Ψₚ, Ψₛ, and Ψ calculated at each step](/PLANTPHYSIOPICS/water-potential-cell-states.png)
+![Water potential (Ψ) worked across three states: pure water (Ψ = 0), a 0.1 M sucrose solution (Ψ lowered by solute potential alone), and a flaccid cell dropped into that solution then allowed to reach equilibrium, with Ψₚ, Ψₛ, and Ψ calculated at each step](water-potential-cell-states.png)
 *Source: Taiz & Zeiger, Plant Physiology (Sinauer/Oxford)*
 
 ### Pathways Across the Root
@@ -41,7 +41,7 @@ Water entering at the root epidermis can travel toward the stele by three distin
 
 All three pathways converge at the endodermis, where the Casparian strip's suberin band blocks the apoplast route outright, forcing every water molecule that took that path to enter the symplast at that layer, the single mechanistic fact underlying selective mineral uptake, developed further on [Mineral Nutrition & Nutrient Uptake](../mineral-nutrition-nutrient-uptake/).
 
-![Water movement pathways across the root: apoplastic, symplastic, and transcellular routes traced from the epidermis/root hair through the cortex to the tracheary elements, with the Casparian strip and pericycle marked at the endodermis](/PLANTPHYSIOPICS/root-water-pathways-apoplast-symplast-transcellular.png)
+![Water movement pathways across the root: apoplastic, symplastic, and transcellular routes traced from the epidermis/root hair through the cortex to the tracheary elements, with the Casparian strip and pericycle marked at the endodermis](root-water-pathways-apoplast-symplast-transcellular.png)
 *Source: Evert & Eichhorn, Raven Biology of Plants (W.H. Freeman/Macmillan)*
 
 ### Cohesion-Tension Theory
@@ -51,21 +51,21 @@ In an actively transpiring plant, water loss at the leaf (see [Stomatal Physiolo
 - **Cohesion**, hydrogen bonding between water molecules gives the column high tensile strength, allowing it to be pulled upward under substantial negative pressure without vaporizing or separating.
 - **Adhesion**: hydrogen bonding between water molecules and the hydrophilic cellulose/lignin walls of the tracheid or vessel lumen counteracts the tendency of the water column to pull away from the vessel wall under tension, keeping the column continuous against the conduit surface.
 
-![Cohesion and adhesion at a xylem vessel element: water molecules moving up the vessel pull neighboring water molecules along by cohesion (hydrogen bonding between water molecules), while adhesion (hydrogen bonding to the lignified vessel wall) keeps the water column against the conduit surface](/PLANTPHYSIOPICS/cohesion-tension-mechanism.png)
+![Cohesion and adhesion at a xylem vessel element: water molecules moving up the vessel pull neighboring water molecules along by cohesion (hydrogen bonding between water molecules), while adhesion (hydrogen bonding to the lignified vessel wall) keeps the water column against the conduit surface](cohesion-tension-mechanism.png)
 *Source: Biology LibreTexts*
 
 The entire mechanism requires no metabolic energy input from the plant itself: it is a physical consequence of transpiration (itself driven by the water potential gradient between moist mesophyll air spaces and the typically much drier atmosphere) acting on a continuous, cohesive water column, which is why cohesion-tension can move water to the top of the tallest trees despite xylem being entirely composed of dead cells with no active pumping machinery.
 
 <span class="badge-challenge">Failure mode</span> If the tension becomes too great (severe drought) or an air bubble enters the column (e.g. through injury, or via freeze-thaw cycles that nucleate bubbles from dissolved gas), the water column can break, an event called **cavitation**, producing an air-filled embolism that blocks that conduit permanently unless bypassed. This is precisely why the torus-margo pit membrane mechanism in gymnosperm tracheids (see [Xylem, Phloem & Vascular Tissue](../../6-plant-anatomy/xylem-phloem-vascular-tissue/)) exists structurally, to seal off a cavitated tracheid before the embolism spreads to its neighbors.
 
-![Drought-induced cavitation via the air-seeding mechanism: an air bubble nucleates at a bordered pit membrane and expands into the water-filled conduit, producing an embolism (torus/margo detail shown for the gymnosperm tracheid case)](/PLANTPHYSIOPICS/cavitation-embolism.png)
+![Drought-induced cavitation via the air-seeding mechanism: an air bubble nucleates at a bordered pit membrane and expands into the water-filled conduit, producing an embolism (torus/margo detail shown for the gymnosperm tracheid case)](cavitation-embolism.png)
 *Source: ResearchGate, fig. 3, "Drought-induced cavitation through the air-seeding mechanism in angiosperms and conifers"*
 
 ### Root Pressure and Guttation
 
 When transpiration is low or absent (high humidity, at night, in young seedlings before a full canopy develops), the cohesion-tension mechanism above has little or no pull to contribute. Root cells continue to actively accumulate mineral ions in the stele via active transport, however, which lowers the stele's solute potential and draws water in osmotically, because the endodermis's Casparian strip prevents this water and the ions with it from simply leaking back out apoplastically, pressure builds up in the enclosed xylem and pushes water upward as a positive **root pressure**, mechanistically the opposite of cohesion-tension's pull. Root pressure is far weaker than transpirational pull and can raise water only a limited height (at most a few meters, not enough to explain water transport in tall trees), but under the right low-transpiration conditions it forces liquid water out of specialized leaf-margin pores called **hydathodes** as visible droplets, **guttation**, distinguishable from dew because it consists of xylem sap (containing trace solutes) exuded from a living structural pore, not condensed atmospheric water.
 
-![Guttation: droplets of xylem sap exuded from leaf-margin hydathodes, visible along the serrated edge of a leaf and at the tips of grass blades](/PLANTPHYSIOPICS/root-pressure-guttation.png)
+![Guttation: droplets of xylem sap exuded from leaf-margin hydathodes, visible along the serrated edge of a leaf and at the tips of grass blades](root-pressure-guttation.png)
 *Source: public sourced*
 
 ## Comparative Structures

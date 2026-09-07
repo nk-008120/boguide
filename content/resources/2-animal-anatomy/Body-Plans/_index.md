@@ -65,7 +65,7 @@ graph TD;
     END --> END3["Liver, pancreas, thyroid"];
 ```
 
-![Blastula folding inward to form a gastrula, with the ectoderm (blue), endoderm/archenteron (purple), and mesoderm-adjacent yolk-filled blastocoel (yellow) labeled alongside the blastopore.](/ANATOMYPICS/gastrulation-sequence-germ-layers.png)
+![Blastula folding inward to form a gastrula, with the ectoderm (blue), endoderm/archenteron (purple), and mesoderm-adjacent yolk-filled blastocoel (yellow) labeled alongside the blastopore.](gastrulation-sequence-germ-layers.png)
 *Source: Wikimedia Commons, public domain (Abigail Pyne).*
 
 <div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
@@ -176,7 +176,7 @@ graph TD;
 
 In triploblastic embryos, the mesoderm arises adjacent to the **notochord** (a transient rod of mesodermal tissue, present at some developmental stage in every chordate, including humans; see the [Fish & Amphibian Anatomy](../fish-amphibian-anatomy/) page for its role in non-human chordates). The notochord performs **primary embryonic induction**: it signals the overlying ectoderm to thicken into the **neural plate**, which then rolls into the **neural tube**, the direct embryonic precursor of the entire CNS (detailed on the [Human Nervous System](../human-nervous-system/) page). This is a mechanistic, not just descriptive, link between germ-layer formation and organ-system origin, and a frequently tested inductive-signaling example.
 
-![Four-stage neurulation sequence: the neural plate thickens from ectoderm over the notochord and mesoderm, bends dorsally to bring the neural plate borders together as the neural crest, closes into a neural tube separating from the epidermis, and finally shows the notochord persisting only as the intervertebral disc nucleus pulposus while adjacent mesoderm forms the somites.](/ANATOMYPICS/notochord-neural-tube-formation.jpg)
+![Four-stage neurulation sequence: the neural plate thickens from ectoderm over the notochord and mesoderm, bends dorsally to bring the neural plate borders together as the neural crest, closes into a neural tube separating from the epidermis, and finally shows the notochord persisting only as the intervertebral disc nucleus pulposus while adjacent mesoderm forms the somites.](notochord-neural-tube-formation.jpg)
 *Source: Wikimedia Commons, CC BY 3.0 (OpenStax College).*
 
 ### Cleavage Patterns and Development
@@ -193,10 +193,10 @@ Early cell division (**cleavage**) of the fertilized egg follows one of two patt
 
 This table is worth returning to directly when reading the [Invertebrate Body Plans](../invertebrate-body-plans-1/) pages (protostome examples) against the Vertebrate Anatomy tier (deuterostome examples), it is the single most useful axis for placing an unfamiliar phylum's development into context on an exam.
 
-![Protostomes vs. deuterostomes compared across all three axes: eight-cell-stage cleavage (spiral/determinate vs. radial/indeterminate), coelom formation (schizocoelous splitting of solid mesoderm vs. enterocoelous folding of the archenteron), and blastopore fate (mouth vs. anus).](/ANATOMYPICS/cleavage-patterns-spiral-radial.jpg)
+![Protostomes vs. deuterostomes compared across all three axes: eight-cell-stage cleavage (spiral/determinate vs. radial/indeterminate), coelom formation (schizocoelous splitting of solid mesoderm vs. enterocoelous folding of the archenteron), and blastopore fate (mouth vs. anus).](cleavage-patterns-spiral-radial.jpg)
 *Source: textbook figure via Weebly-hosted course page*
 
-![Schizocoely (protostome) vs. enterocoely (deuterostome) coelom formation compared side by side: schizocoely as solid blocks of mesoderm splitting to form the coelom, enterocoely as archenteron buds pinching off to form coelomic pouches, mesoderm, blastopore, coelom, and archenteron labeled on both.](/ANATOMYPICS/coelom-formation-schizocoely-enterocoely.webp)
+![Schizocoely (protostome) vs. enterocoely (deuterostome) coelom formation compared side by side: schizocoely as solid blocks of mesoderm splitting to form the coelom, enterocoely as archenteron buds pinching off to form coelomic pouches, mesoderm, blastopore, coelom, and archenteron labeled on both.](coelom-formation-schizocoely-enterocoely.webp)
 *Source: ["Coelom Formation in Protostomes and Deuterostomes and Types of Coelom," SlideShare](https://www.slideshare.net/slideshow/coelom-formation-in-protostomes-and-deuterostomes-and-types-of-coelom/251375050)*
 
 ### Coelom Types
@@ -296,7 +296,7 @@ The **coelom** is a fluid-filled body cavity fully lined by mesoderm-derived tis
 
 A coelom performs concrete mechanical work: it cushions internal organs, allows the gut to move independently of the body wall (necessary for effective peristalsis, since a fluid-filled cavity transmits muscular force without the gut and body wall dragging against each other), and, in soft-bodied coelomates lacking a rigid skeleton, doubles as a **hydrostatic skeleton**, an incompressible fluid volume that transmits force when surrounding muscle contracts (detailed with earthworm locomotion on the [Invertebrate Body Plans I](../invertebrate-body-plans-1/) page).
 
-![Acoelomate (flatworm), pseudocoelomate (roundworm), and eucoelomate (segmented worm) body plans compared, each with a representative animal above and a labeled cross-section below showing ectoderm, mesoderm, endoderm, and the body cavity (if any).](/ANATOMYPICS/coelom-types-comparison.jpg)
+![Acoelomate (flatworm), pseudocoelomate (roundworm), and eucoelomate (segmented worm) body plans compared, each with a representative animal above and a labeled cross-section below showing ectoderm, mesoderm, endoderm, and the body cavity (if any).](coelom-types-comparison.jpg)
 *Source: not yet confirmed, flagged CHECK pending source information.*
 
 ### Segmentation

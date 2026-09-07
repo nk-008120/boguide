@@ -20,10 +20,10 @@ syllabus_tags: ["IBO", "USABO", "genetics", "chromosomal-genetics"]
 
 For two genes assorting independently, a **dihybrid testcross** (AaBb × aabb) produces four gamete-derived offspring classes in an equal 1:1:1:1 ratio: parental-type combinations (AB, ab) and recombinant-type combinations (Ab, aB) appear equally often, because independent assortment gives no combination any advantage. When two genes are **linked** (physically close together on the same chromosome), the parental combinations are inherited together far more often than chance predicts, and the testcross instead produces a strong excess of the two **parental** (non-recombinant) classes and a deficit of the two **recombinant** classes, with the size of the deficit reflecting how physically close the two genes are.
 
-![Two linked-gene crosses (AAbb × aaBB and aabb × AABB) each producing an AaBb F1, whose gametes split into parental-type (blue: Ab/aB or ab/AB) and recombinant/crossover-type (red) classes.](/GENETICSPICS/linked-genes-parental-vs-recombinant-gametes.png)
+![Two linked-gene crosses (AAbb × aaBB and aabb × AABB) each producing an AaBb F1, whose gametes split into parental-type (blue: Ab/aB or ab/AB) and recombinant/crossover-type (red) classes.](linked-genes-parental-vs-recombinant-gametes.png)
 *Source: opengenetics.pressbooks.tru.ca*
 
-![Crossing over between homologous chromosomes at a chiasma during prophase I, producing two recombinant chromosomes (each part red, part green) alongside the two original parental chromosomes.](/GENETICSPICS/crossing-over-chiasma-prophase-i-diagram.png)
+![Crossing over between homologous chromosomes at a chiasma during prophase I, producing two recombinant chromosomes (each part red, part green) alongside the two original parental chromosomes.](crossing-over-chiasma-prophase-i-diagram.png)
 *Source: Wikipedia (Chiasma (genetics))*
 
 ### Recombination frequency
@@ -40,7 +40,7 @@ RF ranges from 0% (genes so close together that crossing over between them is ne
 
 **Recombination frequency is used directly as a measure of genetic distance**: 1% recombination frequency is defined as **1 map unit (m.u.)**, also called **1 centimorgan (cM)**. This relationship is empirical, not derived from first principles: it reflects the observation that crossover probability between two loci scales roughly with the physical distance separating them (for RF values well below the 50% ceiling; the relationship becomes non-linear and underestimates true distance at higher RF values, since multiple crossovers between distant loci can cancel out and go undetected, see below). A **genetic (linkage) map** orders genes along a chromosome and reports the map-unit distances between them, built up by summing pairwise recombination frequencies between adjacent markers.
 
-![A real genetic linkage map of wheat chromosome 2A, with molecular markers positioned along the chromosome at their calculated centimorgan (cM) distances from 0.0 to 160.3.](/GENETICSPICS/genetic-map-linkage-group-centimorgans.png)
+![A real genetic linkage map of wheat chromosome 2A, with molecular markers positioned along the chromosome at their calculated centimorgan (cM) distances from 0.0 to 160.3.](genetic-map-linkage-group-centimorgans.png)
 *Source: researchgate.net*
 
 ### The three-point testcross
@@ -66,7 +66,7 @@ $$ \text{Interference} = 1 - \text{c.o.c.} $$
 
 A coefficient of coincidence of 1 means no interference (crossovers occur independently); a value less than 1 (the typical case) means **positive interference**, observed double crossovers are rarer than the independence assumption predicts, consistent with a physical/structural constraint on how closely together two chiasmata can form.
 
-![Five crossover configurations between two linked genes (A/a, B/b) and their resulting recombination frequencies: no crossover (RF=0%), single crossover (RF=50%), two-strand double crossover (RF=0%, parental combination fully restored), three-strand double crossover (RF=50%), and four-strand double crossover (RF=100%).](/GENETICSPICS/double-crossover-parental-combination-restored-diagram.jpg)
+![Five crossover configurations between two linked genes (A/a, B/b) and their resulting recombination frequencies: no crossover (RF=0%), single crossover (RF=50%), two-strand double crossover (RF=0%, parental combination fully restored), three-strand double crossover (RF=50%), and four-strand double crossover (RF=100%).](double-crossover-parental-combination-restored-diagram.jpg)
 *Source: kvmwai.edu.in (PDF course material)*
 
 ## Comparative Structures

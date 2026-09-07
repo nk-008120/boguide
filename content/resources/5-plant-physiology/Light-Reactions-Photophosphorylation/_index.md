@@ -24,7 +24,7 @@ Two spectrally distinct photosystems exist in the thylakoid membrane, named hist
 - **Photosystem II (PSII)**, reaction center **P680** (absorbs maximally near 680 nm)
 - **Photosystem I (PSI)**, reaction center **P700** (absorbs maximally near 700 nm)
 
-![How a photosystem harvests light: a photon absorbed anywhere in the light-harvesting complex's pigment molecules is passed by resonance energy transfer to the special pair of chlorophyll a molecules in the reaction-center complex, which ejects an electron to the primary electron acceptor](/PLANTPHYSIOPICS/photosystem-structure.avif)
+![How a photosystem harvests light: a photon absorbed anywhere in the light-harvesting complex's pigment molecules is passed by resonance energy transfer to the special pair of chlorophyll a molecules in the reaction-center complex, which ejects an electron to the primary electron acceptor](photosystem-structure.avif)
 *Source: Preach Bio*
 
 ### The Z-Scheme: Linear Electron Flow
@@ -48,24 +48,24 @@ graph LR;
     ETC2 --> NADP["NADP+ reductase -> NADPH"];
 ```
 
-![Full Z-scheme of electron transport: redox potential plotted against each carrier from water/oxygen-evolving complex through PSII (P680), the plastoquinone-cytochrome b6f-plastocyanin chain, PSI (P700), and ferredoxin to NADP+ reductase, with approximate timescales for each transfer step](/PLANTPHYSIOPICS/z-scheme-electron-flow.png)
+![Full Z-scheme of electron transport: redox potential plotted against each carrier from water/oxygen-evolving complex through PSII (P680), the plastoquinone-cytochrome b6f-plastocyanin chain, PSI (P700), and ferredoxin to NADP+ reductase, with approximate timescales for each transfer step](z-scheme-electron-flow.webp)
 *Source: ResearchGate, fig. 6 (diagram modified from Demeter & Govindjee, 1989, per in-image credit)*
 
-![Oxygen-evolving complex detail: (A) the Mn4CaO5 cluster and its position relative to Tyrz, P680, pheophytin, and the QA/QB plastoquinone acceptors within the PSII protein structure; (B) the Kok cycle of S-state transitions (S0-S4) through which the complex accumulates oxidizing power before releasing O2](/PLANTPHYSIOPICS/oxygen-evolving-complex.png)
+![Oxygen-evolving complex detail: (A) the Mn4CaO5 cluster and its position relative to Tyrz, P680, pheophytin, and the QA/QB plastoquinone acceptors within the PSII protein structure; (B) the Kok cycle of S-state transitions (S0-S4) through which the complex accumulates oxidizing power before releasing O2](oxygen-evolving-complex.jpg)
 *Source: Frontiers in Plant Science*
 
 ### Chemiosmotic ATP Synthesis
 
 Protons accumulate in the thylakoid lumen from two sources acting together: directly from water-splitting (step 2 above) and from active pumping by the cytochrome b₆f complex (step 3). Because the thylakoid membrane is otherwise impermeable to H⁺, this produces a steep proton gradient (both a concentration gradient and, since the lumen becomes positively charged, an electrical gradient) across the membrane, a **proton motive force** conceptually identical to the one driving oxidative phosphorylation in mitochondrial respiration, but built from light-driven electron transport instead. Protons can only cross back out through **ATP synthase**, a membrane-embedded enzyme that couples the energetically favorable flow of H⁺ down its gradient to the energetically unfavorable synthesis of ATP from ADP + Pᵢ, the process of **photophosphorylation**, mechanistically chemiosmotic (a proton gradient across a membrane driving ATP synthase) rather than substrate-level.
 
-![Chemiosmotic ATP synthesis across the thylakoid membrane: water-splitting and photosystem II electron transport deposit H+ in the lumen, PSII/electron carriers move electrons toward NADP+ reduction in the stroma, and ATP synthase uses the resulting H+ gradient to phosphorylate ADP, producing ATP for the Calvin cycle](/PLANTPHYSIOPICS/thylakoid-chemiosmosis.png)
+![Chemiosmotic ATP synthesis across the thylakoid membrane: water-splitting and photosystem II electron transport deposit H+ in the lumen, PSII/electron carriers move electrons toward NADP+ reduction in the stroma, and ATP synthase uses the resulting H+ gradient to phosphorylate ADP, producing ATP for the Calvin cycle](thylakoid-chemiosmosis.png)
 *Source: © Merriam-Webster, Inc.*
 
 ### Cyclic Electron Flow
 
 When a chloroplast's NADPH supply is already saturated relative to its ATP demand (common when Calvin cycle activity, and therefore NADPH consumption, is limited relative to other cellular ATP needs), electrons ejected from PSI's P700 can be redirected back into the cytochrome b₆f complex instead of continuing to NADP⁺ reductase, a route called **cyclic electron flow**. This bypasses PSII entirely (no water-splitting, no O₂ released, no NADPH produced) but still pumps protons via cytochrome b₆f, generating additional ATP without additional NADPH, a way to fine-tune the ATP:NADPH ratio the Calvin cycle actually needs (a ratio the strict linear pathway alone cannot supply, since it always produces both products in a fixed proportion).
 
-![Cyclic photophosphorylation: an electron ejected from the PSI special pair (reaction center) passes through ferredoxin, a plastoquinone-like carrier, and cytochrome b/cytochrome f back to PSI, pumping protons that drive ATP synthesis (ADP + Pi to ATP) without involving PSII or producing NADPH](/PLANTPHYSIOPICS/cyclic-electron-flow.png)
+![Cyclic photophosphorylation: an electron ejected from the PSI special pair (reaction center) passes through ferredoxin, a plastoquinone-like carrier, and cytochrome b/cytochrome f back to PSI, pumping protons that drive ATP synthesis (ADP + Pi to ATP) without involving PSII or producing NADPH](cyclic-electron-flow.jpg)
 *Source: Biology Reader (credit in image)*
 
 ## Comparative Structures

@@ -25,7 +25,7 @@ Signals travel through five main channels, each with a characteristic trade-off 
 - **Tactile**, short range, private (not broadcast to eavesdroppers), fast feedback; e.g. primate allogrooming, which functions simultaneously as hygiene and as a social-bonding signal (see [Aggression, Territoriality & Social Structure](../aggression-territoriality-social-structure/)).
 - **Electrical**, restricted to aquatic environments and a small set of lineages (weakly electric fish, e.g. mormyrids and gymnotiforms), used for both navigation and species/individual recognition via electric organ discharge waveform.
 
-![Illustration of a honeybee tracing the waggle dance's figure-eight pattern, with the straight waggle run highlighted.](/ETHOLOGYPICS/waggle-dance-figure-eight-diagram.svg)
+![Illustration of a honeybee tracing the waggle dance's figure-eight pattern, with the straight waggle run highlighted.](waggle-dance-figure-eight-diagram.svg)
 *Source: Wikipedia, "Waggle dance"*
 
 {{< youtube 7P0R0ZZTAkI >}}
@@ -36,12 +36,12 @@ A core theoretical problem in signaling: since signalers can benefit from mislea
 
 - **The handicap principle** (Amotz Zahavi): some signals are reliable specifically *because* they are costly to produce or costly to survive while carrying, so only genuinely high-quality individuals can afford to produce them at full intensity. The **peacock's train** is the standard example: an elaborate, metabolically expensive, predation-risk-increasing display that (the theory argues) is an honest indicator of the male's overall condition precisely because a low-quality male cannot afford to grow and carry it.
 
-![Graph of fitness costs and benefits vs. signal intensity, showing separate cost curves for low-quality and high-quality signalers against a shared benefit curve, with the resulting equilibrium signal intensity marked for each quality class.](/ETHOLOGYPICS/peacock-train-handicap-principle-diagram.png)
+![Graph of fitness costs and benefits vs. signal intensity, showing separate cost curves for low-quality and high-quality signalers against a shared benefit curve, with the resulting equilibrium signal intensity marked for each quality class.](peacock-train-handicap-principle-diagram.png)
 *Source: Springer (Biology & Philosophy)*
 
 - **Deceptive signaling** does occur where the cost/reliability logic above doesn't hold: mimicry-based deception (e.g. *Photuris* firefly females mimicking the flash pattern of *Photinus* females to lure and prey on responding *Photinus* males) and bluffing displays in aggressive contests (an individual signaling higher fighting ability than it actually has) are both documented, and are kept in check evolutionarily only where the average payoff to receivers of ignoring signals entirely would be worse than the cost of occasional deception.
 
-![Infographic on firefly flash-pattern communication: how bioluminescence is produced, and the distinct flash patterns of five North American *Photinus* firefly species used for species recognition.](/ETHOLOGYPICS/photuris-photinus-firefly-flash-mimicry.jpg)
+![Infographic on firefly flash-pattern communication: how bioluminescence is produced, and the distinct flash patterns of five North American *Photinus* firefly species used for species recognition.](photuris-photinus-firefly-flash-mimicry.jpg)
 *Source: Facebook (Piedmont Naturalist History)*
 
 ### Ritualization

@@ -25,7 +25,7 @@ Different lineages determine sex using entirely different chromosomal logic, and
 - **XO system** (some insects, e.g. grasshoppers): there is no second sex chromosome at all, males are X0 (one X, no Y), females are XX; sex is determined by the ratio of X chromosomes to autosome sets.
 - **Haplodiploidy** (Hymenoptera, bees, ants, wasps): sex is determined by ploidy itself, not by a sex chromosome: fertilized (diploid) eggs develop as females, unfertilized (haploid) eggs develop as males. This has direct consequences for relatedness calculations covered in Ethology's [Kin Selection, Altruism & Eusociality](/resources/9-ethology/kin-selection-altruism-eusociality/).
 
-![XY sex determination in humans and Drosophila (female XX homogametic, male XY heterogametic) compared to ZW sex determination in birds (male ZZ homogametic, female ZW heterogametic).](/GENETICSPICS/xy-zw-sex-determination-systems-comparison.jpg)
+![XY sex determination in humans and Drosophila (female XX homogametic, male XY heterogametic) compared to ZW sex determination in birds (male ZZ homogametic, female ZW heterogametic).](xy-zw-sex-determination-systems-comparison.jpg)
 *Source: pmfias.com*
 
 ### Dosage compensation
@@ -34,7 +34,7 @@ Because the heterogametic sex has only one copy of most sex-chromosome genes whi
 
 - **X-inactivation (mammals)**: in each XX cell, one X chromosome is transcriptionally silenced early in development, forming a condensed **Barr body**, chosen independently and (in most tissues) randomly per cell, and this produces **mosaicism**, most visibly in calico cats, where patches of orange and black fur reflect which X (carrying which coat-color allele) was inactivated in the founding cell of each patch. The chromatin-silencing mechanism itself (heterochromatin formation, DNA methylation) is covered in [Gene Regulation: Eukaryotic & Epigenetics](/resources/1-cell-molecular/gene-regulation-eukaryotic-epigenetics/); this page covers only the genetic consequence: that XX individuals are functional mosaics for X-linked genes, not the chromatin mechanism producing it.
 
-![XX genotype with two differently colored X chromosomes; after random X-inactivation, each cell lineage silences one or the other, producing solid orange, solid black, or (when both inactivation outcomes occur in different cell lineages of the same animal) mosaic calico fur.](/GENETICSPICS/x-inactivation-barr-body-calico-cat-mosaicism2.jpg)
+![XX genotype with two differently colored X chromosomes; after random X-inactivation, each cell lineage silences one or the other, producing solid orange, solid black, or (when both inactivation outcomes occur in different cell lineages of the same animal) mosaic calico fur.](x-inactivation-barr-body-calico-cat-mosaicism2.jpg)
 *Source: thisisepigenetics.ca*
 - **Dosage compensation in *Drosophila*** works oppositely: rather than silencing one female X, males **up-regulate transcription roughly two-fold from their single X** to match female output.
 
@@ -46,10 +46,10 @@ A **sex-linked** (in practice, almost always **X-linked**, since the Y carries r
 - **Criss-cross inheritance**: a male's X chromosome (and any X-linked alleles on it) always comes from his mother, never his father (who contributes the Y), so an affected father cannot pass an X-linked trait directly to a son, but every daughter of an affected father is an obligate carrier (or affected, if recessive and mother also contributes the allele).
 - Reciprocal crosses (A female × a male vs. a female × A male) give **different** results for X-linked genes, unlike autosomal genes where reciprocal crosses are equivalent, this asymmetry is itself a diagnostic clue that a gene is X-linked.
 
-![X-linked recessive cross: an unaffected father and a carrier mother (one normal, one recessive-allele X) produce, among their children, an unaffected son, an unaffected (carrier) daughter, a carrier daughter, and an affected son, illustrating that only sons can be directly affected by the mother's carried allele.](/GENETICSPICS/x-linked-recessive-cross-carrier-mother-affected-son.jpg)
+![X-linked recessive cross: an unaffected father and a carrier mother (one normal, one recessive-allele X) produce, among their children, an unaffected son, an unaffected (carrier) daughter, a carrier daughter, and an affected son, illustrating that only sons can be directly affected by the mother's carried allele.](x-linked-recessive-cross-carrier-mother-affected-son.jpg)
 *Source: U.S. National Library of Medicine (via UNSW embryology)*
 
-![Three-generation X-linked recessive pedigree, labeled individuals I-1 through III-15, showing the pattern recurring across generations with more affected males than affected females overall.](/GENETICSPICS/sex-linked-pedigree-criss-cross-inheritance-pattern.png)
+![Three-generation X-linked recessive pedigree, labeled individuals I-1 through III-15, showing the pattern recurring across generations with more affected males than affected females overall.](sex-linked-pedigree-criss-cross-inheritance-pattern.png)
 *Source: migrc.org*
 
 ### Sex-limited and sex-influenced traits
@@ -59,7 +59,7 @@ Two related but distinct patterns are frequently confused with sex-linkage despi
 - **Sex-limited traits**: the gene is autosomal (present in both sexes equally), but the trait is expressed in only one sex due to hormonal or anatomical context, e.g. milk yield genes in cattle, expressed only in females, or hen-feathering/cock-feathering plumage genes in fowl.
 - **Sex-influenced traits**: the gene is autosomal, and *both* sexes can express the phenotype, but the dominance relationship between the two alleles differs by sex, human pattern baldness is the standard example, where the baldness allele behaves as dominant in males (heterozygotes go bald) but recessive in females (heterozygotes do not), because of differing hormonal environments.
 
-![Sex-influenced pattern baldness: genotype-to-phenotype table (bb = normal hair in both sexes; Bb = bald in males, normal in females; BB = bald in both sexes), illustrated with male vs. female head diagrams for each genotype, plus the distinct male ("horseshoe") vs. female (diffuse thinning) baldness pattern shapes.](/GENETICSPICS/pattern-baldness-genotype-phenotype-table-by-sex.webp)
+![Sex-influenced pattern baldness: genotype-to-phenotype table (bb = normal hair in both sexes; Bb = bald in males, normal in females; BB = bald in both sexes), illustrated with male vs. female head diagrams for each genotype, plus the distinct male ("horseshoe") vs. female (diffuse thinning) baldness pattern shapes.](pattern-baldness-genotype-phenotype-table-by-sex.webp)
 *Source: dreamstime.com*
 
 The diagnostic distinction from true sex-linkage: sex-limited and sex-influenced genes are inherited from **either parent to either sex equally** (normal autosomal 50/50 transmission), only their *expression* is sex-dependent, whereas true X-linkage produces the asymmetric transmission pattern (criss-cross inheritance, reciprocal-cross differences) described above.

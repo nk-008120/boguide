@@ -72,7 +72,7 @@ Biological data is huge and noisy. Different databases specialise in different t
   *Why?* FASTA is the standard format for sequence input in BLAST, alignment tools, and tree builders.
 
 <a href="https://www.youtube.com/watch?v=QLcmEqBayr0">For fellow video-cers (not recommended)</a>
-![FASTA](/BIOINFOPICS/FASTAPROTEIN.png)
+![FASTA](FASTAPROTEIN.png)
 
 ### 2. UniProt (Universal Protein Resource)
 - **URL**: https://www.uniprot.org
@@ -86,7 +86,7 @@ Biological data is huge and noisy. Different databases specialise in different t
   *Result:* The protein is ubiquitinated (lysine residues) and phosphorylated (serine/threonine/tyrosine).  
   *Why?* Understanding PTMs helps predict protein function and regulation.
 
-![UNIPROTPTM](/BIOINFOPICS/UNIPROTPTM.png)
+![UNIPROTPTM](UNIPROTPTM.png)
 
 ### 3. Expasy – Compute pI/Mw
 - **URL**: https://web.expasy.org/compute_pi/
@@ -256,7 +256,7 @@ Example: `((Human:0.12, Chimp:0.12):0.05, Mouse:0.17);`
 - Semicolon ends the tree.
 
 To visualize this tree, go to <a href="https://itol.embl.de/upload.cgi">iTOL tree visualizer</a> <br>
-You should obtain these results: ![Results](/BIOINFOPICS/iTOLdemo.png)<BR>
+You should obtain these results: ![Results](iTOLdemo.png)<BR>
 Experiment with various trees to see your results. (Try out the sample tree of IBO 2023 Bioinformatics practical: "(A:0.3,(B:0.4,(C:0.3,D:0.2):0.2):0.1);")
 
 - **Monophyletic group**: common ancestor + **all** descendants.
@@ -501,15 +501,15 @@ Each example below includes a short **explanation** of what the step accomplishe
 {{< tab name="Appendix" >}}
 <div id="Solution-dotplot"><strong>Solution:</strong></div>
 
-Answer for Q1: ![Dot plot solution](/BIOINFOPICS/dotplot1q1.png)
+Answer for Q1: ![Dot plot solution](dotplot1q1.png)
 
-![Dot plot step 2](/BIOINFOPICS/dotplot1q12.png)
+![Dot plot step 2](dotplot1q12.png)
 
 Please note that the inverted line shows, well, **possible** inversions.
 
 Please proceed with permutations as you wish, here is a sample:
 
-![Dot plot permutation example](/BIOINFOPICS/dotplot1q13.png)
+![Dot plot permutation example](dotplot1q13.png)
 Note here that using D=s+wg
 Here, s is the number of substitutions; w is the gap weight (here 1 as blank space is 1); g is the number of gaps which is 2:
 Hence D = 1 + 1*2 = 3<br><br>
@@ -598,7 +598,7 @@ Hence D = 1 + 1*2 = 3<br><br>
   <strong>5.</strong> Bootstrap support (e.g., 95%) means that the clade appears in 95% of resampled datasets; it is a measure of confidence, not the probability that the clade is correct.
 
  Although no tree was requested in this problem, here is the final tree:
- ![ML TREE](/BIOINFOPICS/ml_tree.png)
+ ![ML TREE](ml_tree.png)
 
 
 ### 📚 Recommended External Resources

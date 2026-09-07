@@ -20,7 +20,7 @@ Every trait covered so far has been **discrete**: round or wrinkled, purple or w
 
 A **polygenic trait** is controlled by multiple genes, each typically contributing a small, roughly additive effect to the phenotype, as the number of contributing genes increases, the number of possible genotypic classes increases, and their phenotypic distribution increasingly approximates a continuous **normal (bell-curve) distribution** rather than the small number of discrete classes seen in simple Mendelian crosses. A classic illustrative model: for a trait controlled by *n* additive gene pairs, a cross between two individuals heterozygous at all *n* loci produces 2n+1 phenotypic classes in a binomially-distributed ratio, and with even a modest number of genes (3-4), the extreme classes become rare enough, and the intermediate classes numerous enough, that the population looks continuously distributed rather than showing distinct classes.
 
-![A three-gene (AaBbCc) cross between pure white (aabbcc) and pure red (AABBCC) corn lines self-fertilizes from the medium-red F1, producing seven phenotypic classes (0 through 6 red-pigment alleles) whose frequencies approximate a bell-curve distribution.](/GENETICSPICS/polygenic-trait-normal-distribution-bell-curve.jpeg)
+![A three-gene (AaBbCc) cross between pure white (aabbcc) and pure red (AABBCC) corn lines self-fertilizes from the medium-red F1, producing seven phenotypic classes (0 through 6 red-pigment alleles) whose frequencies approximate a bell-curve distribution.](polygenic-trait-normal-distribution-bell-curve.jpeg)
 *Source: mysciencesquad.weebly.com*
 
 ### Heritability: partitioning phenotypic variance
@@ -41,7 +41,7 @@ $$ h^2 = \frac{V_A}{V_P} $$
 
 **Twin studies** are the standard method for estimating heritability in humans, comparing trait concordance between monozygotic twins (identical genotype) and dizygotic twins (share on average 50% of segregating alleles, like ordinary siblings) raised in comparably shared environments; a substantially higher concordance in monozygotic pairs is taken as evidence of a genetic contribution to the trait.
 
-![Components of variance flowchart: phenotypic variance (V_P) splits into genotypic variance (V_G) and environmental variance (V_E); V_G further splits into additive variance (V_A) and non-additive genetic variance, which itself splits into dominance variance (V_D) and interaction/epistatic variance.](/GENETICSPICS/heritability-variance-partitioning-diagram.jpg)
+![Components of variance flowchart: phenotypic variance (V_P) splits into genotypic variance (V_G) and environmental variance (V_E); V_G further splits into additive variance (V_A) and non-additive genetic variance, which itself splits into dominance variance (V_D) and interaction/epistatic variance.](heritability-variance-partitioning-diagram.jpg)
 *Source: slideshare.net*
 
 ### A critical caveat: heritability is population- and environment-specific
@@ -62,12 +62,12 @@ $$ F = \sum \left(\frac{1}{2}\right)^{n} (1 + F_A) $$
 
 where *n* is the number of individuals in each specific path linking the two parents through one common ancestor (inclusive of both parents and the ancestor), and F_A is the inbreeding coefficient of that common ancestor itself (often approximated as 0 if the ancestor's own ancestry is not inbred). For a full-sibling mating, F = 1/4; for a first-cousin mating, F = 1/16.
 
-![Worked pedigree and path diagram: individuals E and F, related through two common ancestors A and B, each connected by a 4-generation path (E-C-A-D-F and E-C-B-D-F); summing (1/2)⁴ for each path gives a_EF = 1/8, and the inbreeding coefficient of their offspring X is F_x = a_EF / 2 = 1/16, matching the first-cousin-mating value stated in the text.](/GENETICSPICS/inbreeding-coefficient-pedigree-path-diagram.png)
+![Worked pedigree and path diagram: individuals E and F, related through two common ancestors A and B, each connected by a 4-generation path (E-C-A-D-F and E-C-B-D-F); summing (1/2)⁴ for each path gives a_EF = 1/8, and the inbreeding coefficient of their offspring X is F_x = a_EF / 2 = 1/16, matching the first-cousin-mating value stated in the text.](inbreeding-coefficient-pedigree-path-diagram.png)
 *Source: ihh.kvl.dk*
 
 Inbreeding's genotype-frequency consequence at a single locus: starting from allele frequencies p and q, the expected genotype frequencies become **p² + Fpq** (homozygote AA), **2pq(1−F)** (heterozygote Aa), and **q² + Fpq** (homozygote aa), visibly reducing to the standard Hardy-Weinberg p²:2pq:q² when F = 0.
 
-![Hardy-Weinberg worked calculation: for allele frequencies p=0.7 and q=0.3, the Punnett-square-style grid gives predicted genotype frequencies YY=p²=0.49, Yy=2pq=0.42, yy=q²=0.09, summing to 1.](/GENETICSPICS/hardy-weinberg-vs-inbred-genotype-frequencies.png)
+![Hardy-Weinberg worked calculation: for allele frequencies p=0.7 and q=0.3, the Punnett-square-style grid gives predicted genotype frequencies YY=p²=0.49, Yy=2pq=0.42, yy=q²=0.09, summing to 1.](hardy-weinberg-vs-inbred-genotype-frequencies.png)
 *Source: bioprinciples.biosci.gatech.edu*
 
 ### Inbreeding depression

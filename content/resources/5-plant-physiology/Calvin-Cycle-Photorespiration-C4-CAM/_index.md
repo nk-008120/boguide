@@ -25,19 +25,19 @@ The Calvin cycle runs in the chloroplast stroma in three phases, using 3 CO₂ m
 
 Net cost per 3 CO₂ fixed: 9 ATP and 6 NADPH consumed for 1 net G3P produced. That stoichiometry is worth knowing because it is exactly what makes the ATP:NADPH ratio delivered by the light reactions matter, and exactly why cyclic electron flow (see [Light Reactions & Photophosphorylation](../light-reactions-photophosphorylation/)) exists to supplement ATP output when this ratio runs short.
 
-![Full Calvin cycle: 3 CO2 fixed onto RuBP by RuBisCO (stage 1, carbon fixation) yields 6 3-PGA, reduced using 6 ATP and 6 NADPH to 6 G3P (stage 2), of which 1 exits as net output and the remaining 5 are rearranged using 3 more ATP back into 3 RuBP (stage 3, regeneration)](/PLANTPHYSIOPICS/calvin-cycle-full.png)
+![Full Calvin cycle: 3 CO2 fixed onto RuBP by RuBisCO (stage 1, carbon fixation) yields 6 3-PGA, reduced using 6 ATP and 6 NADPH to 6 G3P (stage 2), of which 1 exits as net output and the remaining 5 are rearranged using 3 more ATP back into 3 RuBP (stage 3, regeneration)](calvin-cycle-full.png)
 *Source: Biology LibreTexts*
 
 ### Photorespiration: Rubisco's Oxygenase Side-Reaction
 
 Rubisco's active site cannot perfectly discriminate between CO₂ and O₂, and under conditions that lower the local CO₂:O₂ ratio at the active site, such as high temperature (which lowers CO₂ solubility relative to O₂ and increases Rubisco's relative affinity for O₂) and stomatal closure under water stress (which restricts fresh CO₂ entry while O₂ from ongoing photosynthesis accumulates, see [Stomatal Physiology & Gas Exchange](../stomatal-physiology-gas-exchange/)), Rubisco increasingly catalyzes **oxygenation** of RuBP instead of carboxylation.
 
-![Rubisco's dual reaction as a shared branch point: with CO2 (left), RuBP carboxylation feeds ordinary photosynthesis, consuming ATP/NADPH and yielding 2x 3PGA/sugars; with O2 (right), oxygenation feeds photorespiration instead, consuming ATP/NADPH/CO2 and yielding a 3PGA+2PG mixture that ultimately releases CO2](/PLANTPHYSIOPICS/rubisco-carboxylase-oxygenase.png)
+![Rubisco's dual reaction as a shared branch point: with CO2 (left), RuBP carboxylation feeds ordinary photosynthesis, consuming ATP/NADPH and yielding 2x 3PGA/sugars; with O2 (right), oxygenation feeds photorespiration instead, consuming ATP/NADPH/CO2 and yielding a 3PGA+2PG mixture that ultimately releases CO2](rubisco-carboxylase-oxygenase.jpg)
 *Source: Encyclopedia (encyclopedia.pub), entry 9827*
 
 This produces one molecule of 3-PGA (usable) and one of **2-phosphoglycolate**, a toxic 2-carbon compound that is not part of the Calvin cycle and must be salvaged through the **photorespiration (glycolate) pathway**, a costly process spanning three organelles (chloroplast, peroxisome, mitochondrion) that recovers only 3 of every 4 carbons entering it as usable product, consumes additional ATP, and releases the fourth carbon as CO₂, a net loss of both fixed carbon and previously invested energy, and the direct biochemical reason C3 photosynthesis becomes inefficient under hot, dry, high-light conditions.
 
-![Photorespiration (glycolate pathway) spanning three organelles: chloroplast Rubisco splits between 3-PGA and 2-PG (energy loss versus ordinary photosynthesis), the peroxisome converts glycolate through glyoxylate/glycine, and the mitochondrion converts glycine to serine, releasing both NH3 (re-assimilated at ATP cost) and CO2 (a net carbon loss)](/PLANTPHYSIOPICS/photorespiration-glycolate-pathway.png)
+![Photorespiration (glycolate pathway) spanning three organelles: chloroplast Rubisco splits between 3-PGA and 2-PG (energy loss versus ordinary photosynthesis), the peroxisome converts glycolate through glyoxylate/glycine, and the mitochondrion converts glycine to serine, releasing both NH3 (re-assimilated at ATP cost) and CO2 (a net carbon loss)](photorespiration-glycolate-pathway.png)
 *Source: New Phytologist*
 
 ### C4 Biochemistry: Spatial CO2 Concentration
@@ -51,7 +51,7 @@ C4 plants suppress photorespiration by physically separating initial CO₂ captu
 
 This spatial separation costs extra ATP per CO₂ fixed compared to C3 (for the PEP regeneration step), but that cost is repaid, under hot and high-light conditions specifically, by nearly eliminating the carbon and energy losses photorespiration would otherwise impose, which is why C4 is an advantage in exactly the environments where C3 struggles, not universally.
 
-![C4 photosynthetic pathway: (A) in the mesophyll cell, CA and PEPC fix CO2/HCO3- onto PEP to form OAA, converted to a 4-carbon acid (malate/aspartate) shuttled to the bundle sheath cell, where a decarboxylase (DC) releases CO2 to RuBisCO/the Calvin cycle, with pyruvate/alanine shuttled back and reconverted to PEP by PPDK; (B) the ATP/NADPH cost per CO2 fixed, split between mesophyll and bundle sheath, compared across the NADP-ME, NAD-ME, and PEPCK biochemical subtypes](/PLANTPHYSIOPICS/c4-pathway-biochemistry.png)
+![C4 photosynthetic pathway: (A) in the mesophyll cell, CA and PEPC fix CO2/HCO3- onto PEP to form OAA, converted to a 4-carbon acid (malate/aspartate) shuttled to the bundle sheath cell, where a decarboxylase (DC) releases CO2 to RuBisCO/the Calvin cycle, with pyruvate/alanine shuttled back and reconverted to PEP by PPDK; (B) the ATP/NADPH cost per CO2 fixed, split between mesophyll and bundle sheath, compared across the NADP-ME, NAD-ME, and PEPCK biochemical subtypes](c4-pathway-biochemistry.jpg)
 *Source: Encyclopedia (encyclopedia.pub)*
 
 ### CAM Biochemistry: Temporal CO2 Concentration
@@ -63,7 +63,7 @@ CAM plants achieve a related benefit through *time* rather than *space*, using t
 
 Because CO₂ uptake (night) and CO₂ fixation via the Calvin cycle (day) are separated in time rather than location, a single mesophyll cell type suffices, at the cost of requiring large-volume malic acid storage between the two phases, directly explaining the enlarged vacuoles CAM leaf anatomy shows structurally.
 
-![CAM diurnal cycle: at night (stomata open), CO2 combines with PEP via PEPC (primary carboxylation) to form a C4 acid stored in the vacuole; during the day (stomata closed), the C4 acid is decarboxylated back to a C3 acid, releasing CO2 to Rubisco and the Calvin-Benson cycle (secondary carboxylation), with surplus carbon stored as starch](/PLANTPHYSIOPICS/cam-diurnal-cycle.png)
+![CAM diurnal cycle: at night (stomata open), CO2 combines with PEP via PEPC (primary carboxylation) to form a C4 acid stored in the vacuole; during the day (stomata closed), the C4 acid is decarboxylated back to a C3 acid, releasing CO2 to Rubisco and the Calvin-Benson cycle (secondary carboxylation), with surplus carbon stored as starch](cam-diurnal-cycle.jpg)
 *Source: ScienceDirect (topic page, "Crassulacean Acid Metabolism")*
 
 ## Comparative Structures

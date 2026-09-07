@@ -76,7 +76,7 @@ This ratio shortcut ($V_0/V_{max}$ instead of solving the full equation from scr
 
 The Michaelis-Menten plot ($V_0$ vs. $[S]$) is hyperbolic: near-linear (first-order) at low $[S]$, plateauing toward $V_{max}$ (zero-order) at high $[S]$; $K_m$ is the $[S]$ at which $V_0 = V_{max}/2$.
 
-![Michaelis-Menten plot: reaction rate v against substrate concentration a, hyperbolic curve labelled with V, 0.5V, and Km](/MCBBPICS/mm_plot.png)
+![Michaelis-Menten plot: reaction rate v against substrate concentration a, hyperbolic curve labelled with V, 0.5V, and Km](mm_plot.jpg)
 *The defining hyperbolic shape, v rises steeply at low [S], then plateaus toward V as [S] grows. Km is read directly off the curve at v = 0.5V. Source: unattributed, sourced pre-existing site asset.*
 
 Taking the reciprocal linearises the relationship, the **Lineweaver-Burk (double-reciprocal) plot**:
@@ -87,14 +87,14 @@ $$ \frac{1}{V_0} = \frac{K_m}{V_{max}} \cdot \frac{1}{[S]} + \frac{1}{V_{max}} $
 
 Slope = $K_m/V_{max}$, y-intercept = $1/V_{max}$, x-intercept = $-1/K_m$. Its main use is diagnostic: the *direction* each inhibition type shifts the slope, y-intercept, and x-intercept is what actually distinguishes the four inhibition modes below (see Comparative Structures).
 
-![Lineweaver-Burk plot: 1/v against 1/a, straight line fitted through scattered data points, with slope Km/V, y-intercept 1/V, and x-intercept -1/Km labelled](/MCBBPICS/lb_plot.png)
+![Lineweaver-Burk plot: 1/v against 1/a, straight line fitted through scattered data points, with slope Km/V, y-intercept 1/V, and x-intercept -1/Km labelled](lb_plot.jpg)
 *Real data scatters more at high 1/[S] (i.e. low, less reliable [S] measurements), a caveat worth knowing even though the straight-line form is what makes the plot useful for reading off Km/Vmax by eye. Source: unattributed, sourced pre-existing site asset.*
 
 ### The four modes of reversible inhibition
 
 All four share the same underlying trick: expressing the new, "apparent" parameters as the original parameter times a modification factor built from $[I]/K_I$.
 
-![Michaelis-Menten plots of all four reversible inhibition types side by side: competitive (Vmax same, Km up), uncompetitive (Vmax down, Km down), non-competitive (Vmax down, Km same), and mixed (Vmax down, Km up or down)](/MCBBPICS/inhibitionmm.png)
+![Michaelis-Menten plots of all four reversible inhibition types side by side: competitive (Vmax same, Km up), uncompetitive (Vmax down, Km down), non-competitive (Vmax down, Km same), and mixed (Vmax down, Km up or down)](inhibitionmm.png)
 *Seeing all four on the same v-vs-[S] axes makes the pattern easier to hold onto than the equations alone: watch which curves still reach the original Vmax (competitive, at high enough [S]) and which are capped below it (the other three). Source: unattributed, sourced pre-existing site asset.*
 
 **Competitive inhibition**: inhibitor binds free E only, at (or overlapping) the substrate site, so E and I compete directly:
@@ -135,7 +135,7 @@ The fastest way to identify an inhibition type from data (a Lineweaver-Burk plot
 | Mixed | E and ES unequally | ↑ or ↓ | ↓ | changes | ↑ | changes |
 | Irreversible | E or ES, covalently | effectively ↑ (fewer active enzymes) | ↓ |, |, |, (behaves like a shrinking $[E_t]$, not a classic reversible signature) |
 
-![Lineweaver-Burk plots of all four reversible inhibition types: competitive lines intersect on the y-axis, uncompetitive lines are parallel, non-competitive lines intersect on the x-axis, and mixed lines intersect off both axes](/MCBBPICS/lbcomp.png)
+![Lineweaver-Burk plots of all four reversible inhibition types: competitive lines intersect on the y-axis, uncompetitive lines are parallel, non-competitive lines intersect on the x-axis, and mixed lines intersect off both axes](lbcomp.png)
 *This is the figure to memorise for "identify the inhibition type from this plot" questions: the intersection point (or lack of one) alone distinguishes all four types, matching the LB columns of the table above exactly. Source: unattributed, sourced pre-existing site asset.*
 
 ## Common Exam Questions

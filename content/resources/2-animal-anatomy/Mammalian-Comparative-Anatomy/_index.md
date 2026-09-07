@@ -25,7 +25,7 @@ A short list of synapomorphies (shared derived traits) distinguishes mammals fro
 - **Single lower jawbone (dentary)**: the mammalian jaw is formed from a single bone (the dentary) articulating directly with the skull at the temporal bone, whereas reptiles retain multiple jaw bones articulating at a different joint (**quadrate-articular**). The bones that formed the reptilian jaw joint were not lost but repurposed: the **articular** became the **malleus** and the **quadrate** became the **incus** (see [Human Sensory Organs](../human-sensory-organs/)), this transition is recorded in mammalian embryonic development, where **Meckel's cartilage** (the embryonic lower jaw cartilage) contributes tissue to the developing middle ear, a direct structural/developmental echo of the evolutionary transition.
 - **Three middle-ear ossicles**, mammals have three ear ossicles (malleus, incus, stapes) versus a single ear bone (the stapes only) in reptiles/birds, a classic, heavily tested example of structural repurposing linking jaw and ear anatomy across amniotes.
 
-![Mammal skull and inner-ear zoom (squamosal, dentary; malleus/articular, incus/quadrate, stapes, inner ear) directly above the equivalent reptile skull and inner-ear zoom (squamosal, quadrate, articular, dentary; stapes and inner ear only).](/ANATOMYPICS/reptilian-jaw-mammalian-ear-homology.jpg)
+![Mammal skull and inner-ear zoom (squamosal, dentary; malleus/articular, incus/quadrate, stapes, inner ear) directly above the equivalent reptile skull and inner-ear zoom (squamosal, quadrate, articular, dentary; stapes and inner ear only).](reptilian-jaw-mammalian-ear-homology.jpg)
 *Source: UC Berkeley's Understanding Evolution*
 
 <div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
@@ -116,7 +116,7 @@ A short list of synapomorphies (shared derived traits) distinguishes mammals fro
 
 Beyond the three broad reproductive strategies (below), placental mammals themselves show structural variation in how intimately fetal and maternal tissue interface, a maternal-fetal interface classification worth knowing at the structural level: **epitheliochorial placentas** (e.g. pigs, horses) keep maternal and fetal tissue layers fully intact and merely apposed, with no erosion of maternal endometrium, so nutrient exchange must cross the maximum possible number of tissue layers; **hemochorial placentas** (e.g. humans, most rodents) involve much deeper trophoblast invasion, actually eroding maternal endometrial tissue and blood vessels so that fetal chorionic tissue sits in direct contact with maternal blood, a structurally more invasive, more efficient exchange interface, at the cost of a more involved (and more hemorrhage-prone) birth process.
 
-![Three placental interface types compared: (a) epitheliochorial (cow, pig, horse): maternal and fetal epithelial layers both fully intact; (b) endotheliochorial (dog, cat): maternal epithelium eroded, fetal tissue contacts the maternal endothelium; (c) hemochorial (human, rodent), both maternal layers eroded, fetal tissue bathed directly in maternal blood.](/ANATOMYPICS/epitheliochorial-vs-hemochorial-placenta.webp)
+![Three placental interface types compared: (a) epitheliochorial (cow, pig, horse): maternal and fetal epithelial layers both fully intact; (b) endotheliochorial (dog, cat): maternal epithelium eroded, fetal tissue contacts the maternal endothelium; (c) hemochorial (human, rodent), both maternal layers eroded, fetal tissue bathed directly in maternal blood.](epitheliochorial-vs-hemochorial-placenta.webp)
 *Source: ResearchGate*
 
 ### Three Reproductive Structural Plans
@@ -127,7 +127,7 @@ Beyond the three broad reproductive strategies (below), placental mammals themse
 | **Marsupials** | Short internal gestation, no (or a rudimentary, non-invasive) placenta; offspring born highly underdeveloped and complete development attached to a nipple, often within a pouch (marsupium) | Kangaroo, koala, opossum |
 | **Placentals (Eutherians)** | Extended internal gestation supported by a true, tissue-invading placenta (epitheliochorial or hemochorial, see above) | Humans and the large majority of living mammal species |
 
-![Monotreme (echidna), marsupial (opossum-like marsupial), and placental (camel) silhouettes over a "morphological complexity" gradient bar, with bullet points comparing forelimb muscle differentiation, attachment-site count, and connectivity/morphological-burden metrics across the three groups.](/ANATOMYPICS/monotreme-marsupial-placental-reproduction-compared.png)
+![Monotreme (echidna), marsupial (opossum-like marsupial), and placental (camel) silhouettes over a "morphological complexity" gradient bar, with bullet points comparing forelimb muscle differentiation, attachment-site count, and connectivity/morphological-burden metrics across the three groups.](monotreme-marsupial-placental-reproduction-compared.png)
 *Source: Springer/BMC Evolutionary Biology*
 
 The placenta is structurally a repurposing of the same chorion and allantois membranes present in the reptile/bird amniotic egg (see the [previous page](../reptile-bird-anatomy/)), internalized and vascularized against the uterine wall (see [Human Reproductive System](../human-reproductive-system/)) instead of enclosed in a shell.
@@ -138,7 +138,7 @@ The basic tetrapod limb plan (see [Fish & Amphibian Anatomy](../fish-amphibian-a
 
 - **Cursorial (running) adaptation**, elongated distal limb bones, reduction in digit number, and a shift toward walking on the tips of the digits (**unguligrade** stance, e.g. horses/deer) or the digits alone (**digitigrade**, e.g. dogs/cats) rather than the flat-footed **plantigrade** stance of humans (and bears), each stance trades ground contact/stability for stride length and speed.
 
-![Hindlimb skeletons compared: plantigrade (man, Asian black bear: full foot contacts the ground), digitigrade (greyhound, cheetah: only the digits contact the ground), and ungulate/unguligrade (Grevy's zebra, only the hoof/toe tip contacts the ground), with hip/knee/foot joints aligned by dashed lines across all five skeletons.](/ANATOMYPICS/plantigrade-digitigrade-unguligrade-stance-comparison.png)
+![Hindlimb skeletons compared: plantigrade (man, Asian black bear: full foot contacts the ground), digitigrade (greyhound, cheetah: only the digits contact the ground), and ungulate/unguligrade (Grevy's zebra, only the hoof/toe tip contacts the ground), with hip/knee/foot joints aligned by dashed lines across all five skeletons.](plantigrade-digitigrade-unguligrade-stance-comparison.png)
 *Source: mammals-locomotion.com*
 
 <div style="width:100%; background:#fefcf5; border-radius:24px; padding:1.2rem; margin:1.5rem 0; box-shadow:0 4px 12px rgba(0,0,0,0.05); font-family:'Inter',system-ui,sans-serif;">
@@ -232,7 +232,7 @@ The basic tetrapod limb plan (see [Fish & Amphibian Anatomy](../fish-amphibian-a
 | **Carnivore** | Enlarged, pointed canines; blade-like **carnassial** premolars/molars for shearing meat | Shorter gut (meat digests faster, needs less fermentation) |
 | **Herbivore** | Reduced/absent canines; broad, ridged molars for grinding plant material | Often much longer gut, and in **ruminants** (cattle, deer, sheep) a **four-chambered stomach** (rumen, reticulum, omasum, abomasum) housing microbes that ferment cellulose the mammal cannot digest on its own |
 
-![Ruminant digestive tract in a cow: esophagus leading to the rumen, then reticulum, then omasum, then abomasum, then intestine, with the food path traced by arrows through all four chambers in order.](/ANATOMYPICS/ruminant-four-chambered-stomach-schematic.jpg)
+![Ruminant digestive tract in a cow: esophagus leading to the rumen, then reticulum, then omasum, then abomasum, then intestine, with the food path traced by arrows through all four chambers in order.](ruminant-four-chambered-stomach-schematic.jpg)
 *Source: shared via a Facebook post*
 | **Omnivore** (including humans) | Generalized heterodont set, moderate canines, both cutting incisors and grinding molars | Single-chambered stomach, moderate gut length, structurally the baseline described on the [Human Digestive System](../human-digestive-system/) page |
 

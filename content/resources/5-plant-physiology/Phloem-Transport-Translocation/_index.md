@@ -19,7 +19,7 @@ syllabus_tags: ["IBO", "USABO", "plant-physiology"]
 
 Phloem transport is defined relationally, not by fixed anatomical location: a **source** is any tissue that is a net exporter of sugar (mature photosynthesizing leaves; germinating seeds mobilizing stored reserves; storage organs during regrowth), and a **sink** is any tissue that is a net importer (growing shoot and root tips, developing fruits and seeds, storage organs during accumulation). The same organ can switch roles across a plant's life cycle (a storage root is a sink while accumulating starch and a source when that starch is later mobilized to support new growth), which is why phloem flow direction is not fixed like xylem's root-to-shoot direction, but reverses according to which tissues are currently acting as source and which as sink.
 
-![Whole-plant source-sink nitrogen and sucrose movement: (A) source leaf photosynthesis/N-metabolism supplying sucrose and nitrogen via phloem and xylem to a sink leaf and to roots, and root NO3-/NH4+/amino acid uptake feeding back via xylem; (B) the source-cell and sink-cell transporter proteins (SUTs, AAPs, CAT1, INVs) underlying that movement](/PLANTPHYSIOPICS/source-sink-whole-plant.png)
+![Whole-plant source-sink nitrogen and sucrose movement: (A) source leaf photosynthesis/N-metabolism supplying sucrose and nitrogen via phloem and xylem to a sink leaf and to roots, and root NO3-/NH4+/amino acid uptake feeding back via xylem; (B) the source-cell and sink-cell transporter proteins (SUTs, AAPs, CAT1, INVs) underlying that movement](source-sink-whole-plant.webp)
 *Source: ResearchGate, fig. 1, "Source-Sink Relationships in Plants: Whole-plant movement of nitrogen-containing..."*
 
 ### Phloem Loading
@@ -31,19 +31,19 @@ At the source end, sucrose produced by photosynthesis (or released from storage)
 
 Either route achieves the same essential outcome: sieve tube solute concentration at the source is driven well above that of surrounding tissue, sharply lowering the sieve tube's water potential there.
 
-![Apoplastic vs. symplastic sucrose phloem loading pathways: top, sucrose crossing the apoplast via facilitated transport then an H+-ATPase-driven H+/sucrose symporter into the companion cell, exiting to the sieve tube via a SWEET effluxer; bottom, sucrose moving directly from sugar-producing cell to companion cell to sieve tube via plasmodesmata by simple diffusion down its concentration gradient](/PLANTPHYSIOPICS/phloem-loading-symplastic.png)
+![Apoplastic vs. symplastic sucrose phloem loading pathways: top, sucrose crossing the apoplast via facilitated transport then an H+-ATPase-driven H+/sucrose symporter into the companion cell, exiting to the sieve tube via a SWEET effluxer; bottom, sucrose moving directly from sugar-producing cell to companion cell to sieve tube via plasmodesmata by simple diffusion down its concentration gradient](phloem-loading-symplastic.jpg)
 *Source: Wikimedia Commons*
 
 ### The Pressure-Flow (Münch) Hypothesis
 
 Once sucrose is loaded at the source, water follows osmotically from the adjacent xylem (the two vascular tissues run alongside each other precisely so this water exchange is fast, see [Xylem, Phloem & Vascular Tissue](../../6-plant-anatomy/xylem-phloem-vascular-tissue/)), raising **turgor pressure** in the sieve tube at the source end.
 
-![Pressure-flow (Munch) hypothesis: water enters the phloem from the xylem at the source (leaf) companion cell as sucrose is loaded, driving bulk flow of water and sucrose through sieve-tube elements to the sink (root/fruit) companion cell, where sucrose exits and water returns to the xylem](/PLANTPHYSIOPICS/pressure-flow-hypothesis.png)
+![Pressure-flow (Munch) hypothesis: water enters the phloem from the xylem at the source (leaf) companion cell as sucrose is loaded, driving bulk flow of water and sucrose through sieve-tube elements to the sink (root/fruit) companion cell, where sucrose exits and water returns to the xylem](pressure-flow-hypothesis.png)
 *Source: ResearchGate, fig. 1, "Translocation of sugars (photoassimilates) in plants: Pressure flow hypothesis (Muench)"*
 
 At the sink end, sugar is continuously removed (unloaded, see below), keeping sieve tube solute concentration, and therefore turgor pressure, low there. The resulting pressure difference between source and sink, transmitted through the continuous, plasmodesmata- and sieve-plate-connected sieve tube lumen, drives **bulk flow** of the entire sap (water and dissolved sugars together) from source to sink, mechanistically distinct from xylem transport, which is pulled by tension rather than pushed by a pressure gradient, and from simple diffusion, which would be far too slow to account for the observed translocation rates. Because the driving pressure difference depends only on the relative concentrations at the two ends, not on which end is physically higher or lower, phloem sap can move in any direction, including downward from a leaf source to a root sink, upward from a storage root source to a growing shoot sink, or laterally between two leaves at the same height, a direct, testable contrast with xylem's exclusively upward flow.
 
-![Xylem vs. phloem transport contrasted: xylem carries water/minerals one-way only through non-living cells with no end walls between them, while phloem carries organic molecules two-way through living (support-dependent) cells connected by sieve plates, paired with a real stained cross-section showing xylem (red, meta-/protoxylem) and phloem tissue side by side](/PLANTPHYSIOPICS/xylem-vs-phloem-direction.png)
+![Xylem vs. phloem transport contrasted: xylem carries water/minerals one-way only through non-living cells with no end walls between them, while phloem carries organic molecules two-way through living (support-dependent) cells connected by sieve plates, paired with a real stained cross-section showing xylem (red, meta-/protoxylem) and phloem tissue side by side](xylem-vs-phloem-direction.webp)
 *Source: microbenotes.com, "Xylem vs Phloem"*
 
 ### Phloem Unloading

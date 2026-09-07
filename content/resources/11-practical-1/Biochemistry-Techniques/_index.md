@@ -21,7 +21,7 @@ This is arguably the single most important protein purification technique in IBO
 
 Contaminant proteins are washed away with a low-imidazole wash buffer. The target is then released ("eluted") with a high-imidazole buffer - imidazole has an imidazole ring structurally similar to histidine's side chain, so it competes for the nickel binding sites and displaces the protein.
 
-![The His-tag's consecutive histidine residues coordinating a Ni2+ ion held by the NTA resin, with imidazole competing for the same binding site](/PRACTICAL1PICS/his-tag-ni-nta-binding.jpg)
+![The His-tag's consecutive histidine residues coordinating a Ni2+ ion held by the NTA resin, with imidazole competing for the same binding site](his-tag-ni-nta-binding.jpg)
 
 **Workflow (IBO style)**
 
@@ -31,7 +31,7 @@ Contaminant proteins are washed away with a low-imidazole wash buffer. The targe
 4. **Elute** with elution buffer into successive fractions (usually 2-3 tubes).
 5. **Never let the resin run dry.** This is the single most important rule. A dry resin collapses irreversibly and loses all binding capacity.
 
-![The Ni-NTA workflow: equilibrate, load lysate, wash away contaminants, then elute the purified His-tagged protein with imidazole](/PRACTICAL1PICS/ni-nta-column-workflow.png)
+![The Ni-NTA workflow: equilibrate, load lysate, wash away contaminants, then elute the purified His-tagged protein with imidazole](ni-nta-column-workflow.png)
 
 **Exam traps**
 
@@ -48,7 +48,7 @@ Contaminant proteins are washed away with a low-imidazole wash buffer. The targe
 
 Coomassie Brilliant Blue G-250 exists in three colour forms depending on its protonation state. The anionic (blue) form binds to basic and aromatic amino acid residues in proteins, and this binding stabilises the blue form, shifting the absorbance maximum to 595 nm. The more protein present, the more dye shifts to the blue form, and the higher the A595.
 
-![Bradford reagent showing the visible colour gradient from brown (low protein) to deep blue (high protein) across a standard series](/PRACTICAL1PICS/bradford-color-gradient.png)
+![Bradford reagent showing the visible colour gradient from brown (low protein) to deep blue (high protein) across a standard series](bradford-color-gradient.png)
 
 **Workflow**
 
@@ -106,7 +106,7 @@ In a continuous assay, you follow the appearance or disappearance of a chromopho
 
 The initial rate (the linear portion of the progress curve) gives you $v_0$, the velocity at the starting substrate concentration. By varying [S] and measuring $v_0$ at each concentration, you build a Michaelis-Menten curve and extract $K_M$ and $V_{\max}$.
 
-![The classic Michaelis-Menten hyperbola: v0 rises steeply at low [S] then plateaus toward Vmax, with Km marking the [S] at half-maximal velocity](/PRACTICAL1PICS/michaelis-menten-curve.jpg)
+![The classic Michaelis-Menten hyperbola: v0 rises steeply at low [S] then plateaus toward Vmax, with Km marking the [S] at half-maximal velocity](michaelis-menten-curve.jpg)
 
 **General workflow**
 
@@ -211,7 +211,7 @@ SDS (sodium dodecyl sulfate) is a detergent that denatures proteins and coats th
 
 After electrophoresis, the gel is stained (usually Coomassie Blue) so bands become visible. Molecular weight is estimated by comparing the migration distance (Rf = distance protein / distance dye front) to a standard ladder.
 
-![An SDS-PAGE gel diagram with a protein ladder lane alongside sample lanes, bands resolved by molecular weight](/MCBBPICS/sds-page-gel-diagram.jpg)
+![An SDS-PAGE gel diagram with a protein ladder lane alongside sample lanes, bands resolved by molecular weight](sds-page-gel-diagram.jpg)
 
 SDS-PAGE appeared in the 2016 IBO exam as part of a protein expression and purification workflow, where students had to:
 
@@ -233,7 +233,7 @@ SDS-PAGE appeared in the 2016 IBO exam as part of a protein expression and purif
 
 The 2016 exam included a DPPH radical-scavenging assay. DPPH is a stable free radical with a deep purple colour ($\lambda_{\max}$ = 517 nm). When an antioxidant donates an electron or hydrogen atom, DPPH is reduced to colourless DPPH-H, and the absorbance drops.
 
-![A microplate showing the DPPH colour change from deep purple to pale yellow as antioxidant concentration increases across the wells](/PRACTICAL1PICS/dpph-color-change.jpg)
+![A microplate showing the DPPH colour change from deep purple to pale yellow as antioxidant concentration increases across the wells](dpph-color-change.jpg)
 
 The key metric is **SC50**: the concentration of antioxidant that scavenges 50% of the DPPH radicals. Lower SC50 = stronger antioxidant.
 
@@ -251,7 +251,7 @@ Plot SC% vs log(concentration), interpolate to find the concentration at SC% = 5
 
 Also from the 2016 exam: a homolactic *Lactobacillus* strain is grown in MRS medium. Growth is tracked by OD600, and lactic acid production is quantified by acid-base titration with 0.1 M NaOH.
 
-![A lactic acid fermentation setup: inoculated MRS broth in flasks or tubes, sampled over time for OD600 and titratable acidity](/PRACTICAL1PICS/fermentation-setup.png)
+![A lactic acid fermentation setup: inoculated MRS broth in flasks or tubes, sampled over time for OD600 and titratable acidity](fermentation-setup.png)
 
 **Key formulas**:
 
@@ -275,7 +275,7 @@ $$[\text{Lactic acid}] = \frac{V_{\text{NaOH}} \times C_{\text{NaOH}} \times 90}
 
 The 2017 exam required calculation and interpretation of blood indices. These formulas come up whenever the practical has a clinical-case component.
 
-![Blood smear comparison: normal-sized, well-haemoglobinised red cells alongside microcytic hypochromic cells and macrocytic cells from different anaemia types](/PRACTICAL1PICS/blood-smear-comparison.jpg)
+![Blood smear comparison: normal-sized, well-haemoglobinised red cells alongside microcytic hypochromic cells and macrocytic cells from different anaemia types](blood-smear-comparison.jpg)
 
 {{< eqbox >}}
 $$\text{MCV (fL)} = \frac{\text{Hct (\%)} \times 10}{\text{RBC count } (\times 10^{12} \text{ L}^{-1})}$$

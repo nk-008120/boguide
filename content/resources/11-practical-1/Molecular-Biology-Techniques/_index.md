@@ -19,7 +19,7 @@ syllabus_tags: ["IBO", "practical", "molecular-biology"]
 
 Restriction endonucleases recognise short, usually palindromic DNA sequences and cut the phosphodiester backbone at specific positions. The specificity comes from hydrogen bonding and shape complementarity between the enzyme's active site and the DNA sequence. Each enzyme requires specific buffer conditions (salt concentration, pH, Mg2+), and wrong buffer leads to either no activity or "star activity" - cutting at non-canonical sites.
 
-![EcoRI recognising its palindromic recognition site GAATTC and cutting between the G and A on each strand](/PRACTICAL1PICS/restriction-palindrome.jpg)
+![EcoRI recognising its palindromic recognition site GAATTC and cutting between the G and A on each strand](restriction-palindrome.png)
 
 The pattern of fragment sizes produced by a given enzyme on a given plasmid is a unique fingerprint. If you know the restriction map (the positions of all cut sites), you can predict the fragments. If you are given the fragments (from a gel), you can reconstruct the map.
 
@@ -33,7 +33,7 @@ The pattern of fragment sizes produced by a given enzyme on a given plasmid is a
 
 **Controls matter.** Always run an uncut control alongside each digest. Uncut circular plasmid migrates as a mixture of supercoiled (fast) and open-circular (slow) forms - if your digest lane looks the same as your uncut lane, your enzyme did not work.
 
-![A real agarose gel under UV light, showing a DNA ladder lane and restriction digest lanes with orange-glowing bands](/PRACTICAL1PICS/agarose-gel-ladder-digest.jpg)
+![A real agarose gel under UV light, showing a DNA ladder lane and restriction digest lanes with orange-glowing bands](agarose-gel-ladder-digest.jpg)
 
 **Critical design decisions (IBO 2015 example)**
 
@@ -78,7 +78,7 @@ PCR exponentially amplifies a defined DNA segment using two flanking primers. If
 4. Run the thermal cycling programme (denature, anneal, extend - repeat 25-35 cycles).
 5. Separate the products on an agarose gel alongside a ladder.
 
-![The three-step PCR thermal cycle: denaturation, primer annealing, and extension, repeated over 25-35 cycles](/PRACTICAL1PICS/pcr-thermal-cycling.png)
+![The three-step PCR thermal cycle: denaturation, primer annealing, and extension, repeated over 25-35 cycles](pcr-thermal-cycling.png)
 
 **Primer design logic**
 
@@ -126,7 +126,7 @@ In that exam, students purified a protein called "Pep" and tested whether it cou
 - Plasmid + DNase alone: DNA degraded (smear or no bands)
 - Plasmid + Pep + DNase: if Pep protects the DNA from nuclease cleavage, bands survive
 
-![An EMSA (gel shift) result: free DNA runs fast, while DNA bound to increasing amounts of protein forms progressively slower-migrating shifted complexes](/PRACTICAL1PICS/emsa-gel-shift.png)
+![An EMSA (gel shift) result: free DNA runs fast, while DNA bound to increasing amounts of protein forms progressively slower-migrating shifted complexes](emsa-gel-shift.png)
 
 **DNase protection** is a powerful extension of this idea: protein bound to DNA physically shields the bound region from nuclease cleavage.
 
@@ -138,7 +138,7 @@ A critical concept that catches students every year: the same circular plasmid c
 - **Linear** (Form III): intermediate migration
 - **Open-circular / nicked** (Form II): relaxed circle, migrates slowest
 
-![The same plasmid resolved into three distinct bands on one gel lane: supercoiled, linear, and open-circular/nicked forms](/PRACTICAL1PICS/dna-topology-gel.png)
+![The same plasmid resolved into three distinct bands on one gel lane: supercoiled, linear, and open-circular/nicked forms](dna-topology-gel.png)
 
 Restriction digestion converts the circular forms into linear fragments, which then migrate purely by size.
 
@@ -169,11 +169,11 @@ By systematically testing growth on minimal medium supplemented with individual 
 - Record growth (+) or no growth (-) for each strain on each medium.
 - Map the growth pattern onto the known biosynthetic pathway to identify the blocked enzymatic step.
 
-![Auxotrophy plate test: colonies growing on supplemented minimal medium but absent on unsupplemented minimal medium, revealing a metabolic block](/PRACTICAL1PICS/auxotrophy-plates.png)
+![Auxotrophy plate test: colonies growing on supplemented minimal medium but absent on unsupplemented minimal medium, revealing a metabolic block](auxotrophy-plates.png)
 
 **Key logical principle**: if a mutant grows when supplied with compound X but not when supplied with compound Y (where Y is upstream of X in the pathway), the block must be between Y and X.
 
-![The shikimate pathway branching into aromatic amino acid biosynthesis, with chorismate as the key branch point leading to the Trp branch and the Tyr/Phe branch](/PRACTICAL1PICS/aromatic-aa-pathway.webp)
+![The shikimate pathway branching into aromatic amino acid biosynthesis, with chorismate as the key branch point leading to the Trp branch and the Tyr/Phe branch](aromatic-aa-pathway.webp)
 
 **Media used in the 2015 exam**:
 

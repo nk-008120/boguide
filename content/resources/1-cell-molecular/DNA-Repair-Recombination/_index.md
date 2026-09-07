@@ -24,14 +24,14 @@ Even with DNA polymerase's proofreading activity (see [DNA Structure & Replicati
 
 **BER** targets small-scale base damage, a single damaged or chemically inappropriate base (e.g. a deaminated cytosine that has become uracil, or an oxidised base), without disturbing the surrounding intact DNA. A **DNA glycosylase** specific to the damaged base recognises and excises just that base, leaving an abasic site; downstream enzymes remove the resulting sugar-phosphate remnant, and a repair polymerase fills the single-nucleotide gap, sealed by ligase. This is the exact pathway (**uracil-DNA glycosylase**) referenced in [Nucleotide & Nucleic Acid Chemistry](../nucleotide-nucleic-acid-chemistry/) as the reason DNA uses thymine rather than uracil natively: any uracil BER encounters in DNA is unambiguously a deamination product, since genuine thymine (uracil + methyl group) is chemically distinguishable and not a glycosylase substrate.
 
-![Base excision repair pathway: ROS-induced base lesions are recognised by damage-specific glycosylases, generating an abasic (AP) site; APE1 performs strand incision at the AP site, and DNA polymerase β fills the resulting gap, restoring normal sequence](/MCBBPICS/ber-mechanism-diagram.webp)
+![Base excision repair pathway: ROS-induced base lesions are recognised by damage-specific glycosylases, generating an abasic (AP) site; APE1 performs strand incision at the AP site, and DNA polymerase β fills the resulting gap, restoring normal sequence](ber-mechanism-diagram.webp)
 *Source: ResearchGate figure*
 
 ### Nucleotide excision repair (NER): fixing bulky, helix-distorting lesions
 
 **NER** targets damage too structurally bulky for BER's single-base-swap mechanism to handle: most classically, **UV-induced thymine dimers** (covalent cross-links between adjacent thymine bases that distort the helix's normal geometry). NER excises a short single-stranded segment (roughly a dozen or more nucleotides) *surrounding* the lesion, rather than just the damaged base itself, and a repair polymerase fills the resulting gap using the intact complementary strand as template. The distinction from BER is a useful exam discriminator: **BER = one damaged base, glycosylase-initiated; NER = a bulky, helix-distorting lesion, excises a whole surrounding stretch.** Xeroderma pigmentosum, a hereditary NER deficiency, causes extreme UV sensitivity and dramatically elevated skin cancer risk, direct clinical evidence for how essential this specific pathway is.
 
-![Nucleotide excision repair via both transcription-coupled repair (RNA polymerase stalling at the lesion recruits repair factors) and global genome repair (XPC/hHR23B scans and recognises damage anywhere in the genome): both converge on TFIIH-mediated helix unwinding, XPG/XPF-ERCC1 dual incision excising the lesion-containing segment, gap-filling DNA polymerase, and ligase sealing the nick](/MCBBPICS/ner-mechanism-diagram.png)
+![Nucleotide excision repair via both transcription-coupled repair (RNA polymerase stalling at the lesion recruits repair factors) and global genome repair (XPC/hHR23B scans and recognises damage anywhere in the genome): both converge on TFIIH-mediated helix unwinding, XPG/XPF-ERCC1 dual incision excising the lesion-containing segment, gap-filling DNA polymerase, and ligase sealing the nick](ner-mechanism-diagram.png)
 *Source: Wikipedia (Nucleotide Excision Repair)*
 
 ### Double-strand break repair: the highest-stakes damage type
@@ -51,7 +51,7 @@ DNA polymerase's requirement for a primer (see [DNA Structure & Replication](../
 
 Telomerase activity is a double-edged biological fact, worth understanding both directions: most normal somatic cells have **low/absent** telomerase activity, so telomeres progressively shorten across successive divisions, eventually triggering replicative senescence (a proposed molecular "aging clock" and tumour-suppressive mechanism, since a senescent cell can no longer divide uncontrollably). Most **cancer cells**, by contrast, reactivate telomerase, achieving effectively unlimited replicative potential, one of the hallmark features distinguishing malignant from normal cell proliferation, and an active area of anticancer drug-target research.
 
-![Comparison of telomerase-positive vs. telomerase-negative cells' response to a stalled replication fork at the telomere: telomerase-positive cells can resolve the block via fork reversal or direct telomerase-mediated de novo telomere synthesis, while telomerase-negative cells rely on Ku- and Rad51-dependent, recombination-based (ALT-type) telomere synthesis after fork breakage](/MCBBPICS/telomere-shortening-telomerase.jpg)
+![Comparison of telomerase-positive vs. telomerase-negative cells' response to a stalled replication fork at the telomere: telomerase-positive cells can resolve the block via fork reversal or direct telomerase-mediated de novo telomere synthesis, while telomerase-negative cells rely on Ku- and Rad51-dependent, recombination-based (ALT-type) telomere synthesis after fork breakage](telomere-shortening-telomerase.jpg)
 *Source: ScienceDirect (research article)*
 
 ## Comparative Structures

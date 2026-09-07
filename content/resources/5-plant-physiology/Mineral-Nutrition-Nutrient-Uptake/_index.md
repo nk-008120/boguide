@@ -24,7 +24,7 @@ An element is **essential** only if a plant cannot complete its life cycle witho
 
 Deficiency symptoms are diagnostic and depend heavily on whether the element is **phloem-mobile**: mobile elements (N, P, K, Mg) can be resorbed from older leaves and relocated to actively growing tissue when supply is short, so their deficiency symptoms (commonly chlorosis, yellowing from lost chlorophyll) appear first in **older leaves**; immobile elements (Ca, B, Fe in most species) cannot be relocated once incorporated, so their deficiency symptoms appear first in **younger, actively growing tissue** instead, a single mobility fact that converts "which leaves show symptoms first" into a diagnostic clue for which nutrient is deficient.
 
-![Deficiency symptom chart across macro- and micronutrients, keyed to leaf position on the stem: immobile elements (calcium, boron) shown affecting the youngest growth at the tip, mobile elements (nitrogen, potassium, phosphorus, magnesium) shown affecting older lower leaves first](/PLANTPHYSIOPICS/essential-element-deficiency.png)
+![Deficiency symptom chart across macro- and micronutrients, keyed to leaf position on the stem: immobile elements (calcium, boron) shown affecting the youngest growth at the tip, mobile elements (nitrogen, potassium, phosphorus, magnesium) shown affecting older lower leaves first](essential-element-deficiency.jpg)
 *Source: public domain*
 
 ### Root Uptake Mechanisms
@@ -33,7 +33,7 @@ Soil mineral ions are typically far more dilute than the concentration a root ce
 
 - **Active transport via membrane proteins**, H⁺-ATPases pump protons out of root epidermal/cortical cells, generating both a membrane potential and a pH gradient (a **proton motive force**) that is then used to drive selective ion uptake through specific channels and **secondary active transporters** (symporters and antiporters that move a mineral ion against its gradient by coupling it to H⁺ moving down its gradient), mechanistically the same proton-gradient-coupled strategy phloem loading uses (see [Phloem Transport & Translocation](../phloem-transport-translocation/)), applied here to mineral uptake instead of sucrose.
 
-![Membrane transport underlying the proton motive force: an ATP-driven H+ pump establishes a charge and pH gradient across the membrane, which channels (cation/anion/water) and carriers (symport, antiport, uniport) then use to move other solutes across](/PLANTPHYSIOPICS/proton-motive-force-uptake.png)
+![Membrane transport underlying the proton motive force: an ATP-driven H+ pump establishes a charge and pH gradient across the membrane, which channels (cation/anion/water) and carriers (symport, antiport, uniport) then use to move other solutes across](proton-motive-force-uptake.jpg)
 *Source: ScienceDirect (journal article, S0005273600001280)*
 - **Root hairs** (see [Root Anatomy](../../6-plant-anatomy/root-anatomy/)) dramatically increase the absorptive surface area available for this uptake machinery per unit root length, without requiring the root system itself to grow proportionally larger.
 - Once inside the epidermis/cortex, ions can travel toward the stele apoplastically or symplastically exactly as water does (see [Water Transport & Transpiration](../water-transport-transpiration/)), and are likewise forced from the apoplast into the symplast at the endodermal Casparian strip, giving the plant the same single regulatory checkpoint over mineral entry into the vascular cylinder that it has over water entry.
@@ -42,7 +42,7 @@ Soil mineral ions are typically far more dilute than the concentration a root ce
 
 Atmospheric N₂ is abundant but chemically inert (a strong triple bond) and unusable by plants directly; **nitrogen fixation** (reducing N₂ to biologically usable NH₃/NH₄⁺) is performed only by certain prokaryotes, using the enzyme **nitrogenase** (with a molybdenum-iron cofactor, the reason molybdenum is an essential plant micronutrient despite the plant not fixing nitrogen itself). Legumes form a specific symbiosis with **Rhizobium** bacteria: the bacteria infect root hairs and induce the plant to form specialized **root nodules**, inside which Rhizobium differentiate into nitrogen-fixing **bacteroids**. The relationship is mutualistic and tightly regulated on both sides: the plant supplies the bacteroids with carbohydrate (photosynthate delivered via phloem) and synthesizes **leghemoglobin** inside the nodule specifically to bind free O₂ and keep the nodule's internal oxygen concentration low (nitrogenase is irreversibly inactivated by O₂), while the bacteroids supply the plant with fixed nitrogen it could not otherwise access from most soils at a comparable energetic cost. This is the physiological mechanism underlying the "nitrogen fixation" entry in the ecosystem-level nitrogen cycle covered in [Ecology](../../8-ecology/), that page treats nitrogen fixation as one flux among many in a whole-ecosystem nutrient budget, while this page covers the specific plant-microbe mechanism producing that flux.
 
-![Root nodule structure compared across a lateral root, leguminous determinate and indeterminate nodules, and an actinorhizal nodule: epidermis, cortex, pericycle, endodermis, peripheral vasculature, and the infected cells housing the nitrogen-fixing symbiont are labeled in each](/PLANTPHYSIOPICS/root-nodule-cross-section.png)
+![Root nodule structure compared across a lateral root, leguminous determinate and indeterminate nodules, and an actinorhizal nodule: epidermis, cortex, pericycle, endodermis, peripheral vasculature, and the infected cells housing the nitrogen-fixing symbiont are labeled in each](root-nodule-cross-section.jpg)
 *Source: ScienceDirect (topic page, "Root Nodule")*
 
 ### Mycorrhizal Symbiosis
@@ -51,12 +51,12 @@ Independent of nitrogen fixation, most land plant species (a large majority, acr
 
 - **Arbuscular mycorrhizae**, fungal hyphae penetrate root cortical cell walls (but not the plasma membrane) and form highly branched **arbuscules** within the cell, a large-surface-area interface for nutrient exchange; the dominant mycorrhizal type across most plant lineages, especially effective at improving phosphorus uptake (an ion that diffuses very slowly through soil and is easily depleted in the immediate vicinity of a root).
 
-![Arbuscular mycorrhizal fungus-plant symbiosis: extraradical mycelium and spores in the soil, hyphal branching and a hyphopodium at the root epidermis, intraradical hyphae penetrating cortical cells, and branched arbuscules and vesicles formed within cortex cells](/PLANTPHYSIOPICS/arbuscular-mycorrhiza.png)
+![Arbuscular mycorrhizal fungus-plant symbiosis: extraradical mycelium and spores in the soil, hyphal branching and a hyphopodium at the root epidermis, intraradical hyphae penetrating cortical cells, and branched arbuscules and vesicles formed within cortex cells](arbuscular-mycorrhiza.webp)
 *Source: ResearchGate, fig. 1, "Arbuscular mycorrhizal fungi colonize root cortical cells through germinating spores"*
 
 - **Ectomycorrhizae**: fungal hyphae form a dense sheath around the root surface and penetrate between (not into) cortical cells, forming a **Hartig net**; characteristic of many temperate forest trees (pines, oaks, beeches).
 
-![Ectomycorrhizal structure compared between an angiosperm and a pine root: external hyphae and mantle hyphae sheathing the root surface, Hartig net hyphae between epidermal and cortex cells (not entering them), hypodermis and endodermis labeled](/PLANTPHYSIOPICS/ectomycorrhiza-hartig-net.png)
+![Ectomycorrhizal structure compared between an angiosperm and a pine root: external hyphae and mantle hyphae sheathing the root surface, Hartig net hyphae between epidermal and cortex cells (not entering them), hypodermis and endodermis labeled](ectomycorrhiza-hartig-net.png)
 *Source: public domain*
 
 In both types the fungus receives photosynthate from the plant in exchange for extending the effective absorptive surface area for water and, especially, poorly mobile mineral ions like phosphorus, a division of labor directly analogous to the Rhizobium symbiosis above, but for general mineral/water uptake rather than nitrogen specifically, and via a fungal rather than bacterial partner.

@@ -53,7 +53,7 @@ How to do it right:
 
 **Common exam trap**: Using the wrong pipette range, or failing to change tips between solutions.
 
-![Correct micropipette technique -- vertical grip, controlled tip immersion depth, and the first/second stop plunger positions](/PRACTICAL1PICS/micropipette-technique.png)
+![Correct micropipette technique -- vertical grip, controlled tip immersion depth, and the first/second stop plunger positions](micropipette-technique.png)
 
 ### Spectrophotometry at 340 nm and 595 nm
 
@@ -69,7 +69,7 @@ Two wavelengths dominate IBO practicals:
 
 But there are quite frequently a lot of practicals which use various spectra.
 
-![A spectrophotometer with a cuvette holder, used to measure absorbance at a chosen wavelength](/PRACTICAL1PICS/spectrophotometer-cuvette.jpg)
+![A spectrophotometer with a cuvette holder, used to measure absorbance at a chosen wavelength](spectrophotometer-cuvette.jpg)
 
 The quantitative backbone of spectrophotometry is the Beer-Lambert law:
 
@@ -77,7 +77,7 @@ The quantitative backbone of spectrophotometry is the Beer-Lambert law:
 $$A = \varepsilon \cdot c \cdot l$$
 {{< /eqbox >}}
 
-![Beer-Lambert law: incident light I0 passes through a path length l of a solution at concentration c, emerging as transmitted light I](/PRACTICAL1PICS/beer-lambert-diagram.jpg)
+![Beer-Lambert law: incident light I0 passes through a path length l of a solution at concentration c, emerging as transmitted light I](beer-lambert-diagram.jpg)
 
 where A is absorbance (dimensionless), $\varepsilon$ is the molar extinction coefficient, c is the concentration, and l is the path length (usually 1 cm).
 

@@ -1,6 +1,61 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Montserrat:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet" />
+{{- /* CSS-splitting rollout (Phase-3 audit): section-specific rules were
+     extracted from custom.css into their own per-section files since each was
+     a meaningful chunk of the global bundle (BiOClash ~18%, BiOLab ~15%, etc.)
+     but only ever used on one section's pages -- loaded here instead of in
+     every page's main bundle. Mirrors the production-vs-dev fingerprinting
+     split the theme's head.html already does for the main bundle. BiOLab's
+     file also loads on /doubts/, since static/js/doubts.js deliberately
+     reuses several biolab-archive-* classes for its own image-upload UI
+     (image picker, report form, staff badge) -- see biolab.css's own header
+     comment. BiOClash's file also loads on the exact page /papers/leaderboard/
+     (the site's Hall of Fame page), which reuses bioclash-page/bioclash-
+     leaderboard-panel/bioclash-case-header* classes for its theming via the
+     bioclash-champions/bioclash-season-champions shortcodes -- found the hard
+     way (a real user-reported regression from the first rollout, which only
+     checked static/js/*.js for cross-reuse, not content/**) rather than
+     during the original review. Papers/BiOrchive itself was deliberately NOT
+     split: many "papers-*" classes (avatar, flag, nav-btn, subject-tag) are
+     shared sitewide UI components, not section-exclusive, so they have to
+     stay in the global bundle -- confirmed by grepping where each prefix is
+     actually referenced before assuming a prefix meant "exclusive to one
+     section". Lesson from the /papers/leaderboard/ miss: that check needs to
+     cover content/**, not just static/js/*.js. */ -}}
+{{- /* .Section is unreliable here: it's empty for top-level LEAF-bundle pages
+     (index.md with no _index.md, e.g. dashboard/account/doubts) even though
+     it works fine for branch-bundle sections (_index.md, e.g. bioclash/
+     biolab/about) -- confirmed empirically while wiring this up. RelPermalink
+     prefix matching works uniformly for both bundle types, so use that
+     instead. */ -}}
+{{- $path := .RelPermalink -}}
+{{- $extraStyles := slice -}}
+{{- if or (hasPrefix $path "/bioclash/") (eq $path "/papers/leaderboard/") -}}{{ $extraStyles = $extraStyles | append "css/bioclash.css" }}{{- end -}}
+{{- if hasPrefix $path "/account/" -}}{{ $extraStyles = $extraStyles | append "css/account.css" }}{{- end -}}
+{{- if hasPrefix $path "/dashboard/" -}}{{ $extraStyles = $extraStyles | append "css/dashboard.css" }}{{- end -}}
+{{- if or (hasPrefix $path "/biolab/") (hasPrefix $path "/doubts/") -}}{{ $extraStyles = $extraStyles | append "css/biolab.css" }}{{- end -}}
+{{- range $extraStyles -}}
+  {{- $css := resources.Get . -}}
+  {{- if hugo.IsProduction -}}
+    {{- $css = $css | minify | fingerprint -}}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{- else -}}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{- end -}}
+{{- end -}}
+<!-- Weight sets below are audited against actual usage in assets/css/custom.css
+     (see the Phase-3 performance pass): Cormorant Garamond gains 300 (used at
+     line ~2559 but was previously missing, silently font-matched); Fraunces
+     drops the unused 300 and gains 400/600 (most Fraunces headings set no
+     explicit weight -- CSS default 400 -- which also wasn't previously
+     loaded); Montserrat's requested set already matched actual usage exactly,
+     unchanged; Source Serif 4 keeps 600/700 despite no *static* CSS rule
+     requesting them, since it's applied to long-form body prose (e.g. the
+     BiOClash case-file body, line ~3622) where **bold** markdown can invoke
+     them dynamically -- but gains an italic axis, since testimonial
+     pull-quotes (line ~354) request italic and previously only got a
+     browser-synthesized oblique, not the real italic design. -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Montserrat:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js" defer></script>
 <script>
   window.__SUPABASE_URL = {{ getenv "HUGO_SUPABASE_URL" | jsonify | safeJS }};

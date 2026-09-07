@@ -34,7 +34,7 @@ Structural features distinguishing prokaryotes:
 - **Plasmids**: small, circular, extrachromosomal DNA molecules, often carrying non-essential but conditionally advantageous genes (e.g. antibiotic resistance) and capable of independent replication and horizontal transfer between cells.
 - No cytoskeleton in the eukaryotic sense (though bacterial homologues of actin/tubulin, e.g. FtsZ, exist and perform analogous structural roles).
 
-![Generalised prokaryotic cell cutaway diagram with cell wall, plasma membrane, capsule, cytoplasm, ribosomes, nucleoid (with its DNA drawn as a tangled loop), an inclusion body, and a plasmid labelled, plus external pili, fimbriae, and a flagellum](/MCBBPICS/generalized-prokaryotic-cell.jpg)
+![Generalised prokaryotic cell cutaway diagram with cell wall, plasma membrane, capsule, cytoplasm, ribosomes, nucleoid (with its DNA drawn as a tangled loop), an inclusion body, and a plasmid labelled, plus external pili, fimbriae, and a flagellum](generalized-prokaryotic-cell.jpg)
 *Source: ecampusontario.pressbooks.pub*
 
 ### Eukaryotic cell organisation
@@ -43,7 +43,7 @@ Eukaryotic cells possess a membrane-bound **nucleus** housing linear chromosomes
 
 Eukaryotic cells also possess a true **cytoskeleton** (actin filaments, microtubules, intermediate filaments, see [Cytoskeleton & Motor Proteins](../cytoskeleton-motor-proteins/)) providing structural support, intracellular transport tracks, and the machinery for cell division and, in animal cells, shape change and motility.
 
-![Generalised animal cell cutaway diagram with nucleus (nuclear envelope, chromatin, nucleolus), rough and smooth endoplasmic reticulum, Golgi apparatus, mitochondria, lysosome, peroxisome, vacuole, and cytoskeletal elements (microtubules, centrosome, intermediate filaments, microfilaments) all labelled](/MCBBPICS/generalized-eukaryotic-cell.png)
+![Generalised animal cell cutaway diagram with nucleus (nuclear envelope, chromatin, nucleolus), rough and smooth endoplasmic reticulum, Golgi apparatus, mitochondria, lysosome, peroxisome, vacuole, and cytoskeletal elements (microtubules, centrosome, intermediate filaments, microfilaments) all labelled](generalized-eukaryotic-cell.png)
 *Source: opentextbc.ca (OpenStax-derived Biology OER)*
 
 ### Why the prokaryote/eukaryote distinction is not simply "simple vs. complex"
