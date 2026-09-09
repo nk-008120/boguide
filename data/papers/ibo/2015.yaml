@@ -616,7 +616,7 @@ rounds:
             answer: true
             explanation: "Because BCX mimics the ribonucleoside adenosine, it can be incorporated where a normal\
   \ nucleotide would be used by the viral RNA polymerase, interfering with transcription\
-  \, consistent with the drop in polymerase activity and viral protein output seen\
+  , consistent with the drop in polymerase activity and viral protein output seen\
   \ in the figure."
           - letter: "B"
             text: "BCX is applicable exclusively against ebola"
@@ -861,7 +861,7 @@ rounds:
             text: "Each exon encodes a specific protein domain"
             answer: false
             explanation: "There is no fixed one-to-one rule linking exon boundaries to protein domain boundaries\
-  \, a single exon can encode just a fragment of one domain, or span multiple whole\
+  , a single exon can encode just a fragment of one domain, or span multiple whole\
   \ domains, so the strict correspondence claimed here does not generally hold."
 
       - id: q24
@@ -1552,7 +1552,7 @@ rounds:
             explanation: "Since II-4 is known to be unaffected, the homozygous-affected (dd) possibility is\
   \ already ruled out, leaving only the carrier (Dd) and homozygous-normal (DD) genotypes\
   \ among the possible outcomes for an unaffected offspring of two known carriers\
-  \, working through the conditional probability among just those two options gives\
+  , working through the conditional probability among just those two options gives\
   \ 2/3, not 0.50."
           - letter: "B"
             text: "II-2 and II-4 have the same probability of carrying the disease allele"
@@ -1602,7 +1602,7 @@ rounds:
             answer: true
             explanation: "The size of the gap between the different Gracilaria-load bars changes depending\
   \ on which temperature is being compared, which is the signature of an interaction\
-  \, the two factors do not simply add independently but influence each other's effect\
+  , the two factors do not simply add independently but influence each other's effect\
   \ on growth."
           - letter: "D"
             text: "In Danish waters without Gracilaria, eelgrass growth is temperature limited"
@@ -1833,7 +1833,7 @@ rounds:
   \ of the pollen transferred"
             answer: false
             explanation: "The proportions of pollen reaching the stigma differ sharply between the two directions\
-  \, pollen moving from P-anthers to T-stigmas is transferred far more efficiently\
+  , pollen moving from P-anthers to T-stigmas is transferred far more efficiently\
   \ than pollen moving from T-anthers to P-stigmas, so the two routes are clearly\
   \ not equally efficient."
           - letter: "D"
@@ -2375,7 +2375,7 @@ rounds:
             answer: true
             explanation: "Gomera hosts the largest number of Tarphius species in the cladogram, and greater\
   \ habitat diversity is the most likely explanation for supporting that much diversification\
-  \, a conclusion that also happens to match the fact that Gomera does have the richest\
+  , a conclusion that also happens to match the fact that Gomera does have the richest\
   \ humid forests among these islands."
 
       - id: q14
@@ -3042,7 +3042,7 @@ rounds:
             text: "All olfactory neurons are functionally similar even if their receptors are different"
             answer: false
             explanation: "Individual neuron types are consistently associated with just one behavioral outcome\
-  \, attraction or repulsion, but never both; AWB in particular drives avoidance\
+  , attraction or repulsion, but never both; AWB in particular drives avoidance\
   \ both to nonanone and, once given the ODR-10 receptor, to diacetyl as well. That\
   \ neuron-specific behavioral wiring, visible in panel C, shows the neurons differ\
   \ functionally from each other, not merely in which receptor they carry."
@@ -3102,7 +3102,7 @@ rounds:
             explanation: "Hardy-Weinberg equilibrium assumes random mating with respect to the locus in question,\
   \ but the self-incompatibility system by definition prevents certain pairings from\
   \ occurring at all, pollen cannot fertilize a stigma carrying the same S-allele\
-  \, so mating with respect to this locus is inherently non-random, ruling out equilibrium."
+  , so mating with respect to this locus is inherently non-random, ruling out equilibrium."
           - letter: "B"
             text: "In a population with three S alleles and equal frequencies of all possible genotypes,\
   \ 1/3 of all crosses will be incompatible"
@@ -3119,7 +3119,7 @@ rounds:
   \ alleles, neither of which matches its own. With just three alleles in the population\
   \ (giving genotypes S1S1, S1S2, S1S3, S2S2, S2S3, S3S3), there are still enough\
   \ compatible combinations to sustain the population, so three alleles, not four\
-  \, is the minimum needed for viability."
+  , is the minimum needed for viability."
           - letter: "D"
             text: "In another incompatibility system with only two alleles (S1 and S2, and S1 being\
   \ dominant over S2), 1/3 of all crossing types are compatible"
@@ -3202,7 +3202,7 @@ rounds:
             answer: true
             explanation: "Across panels A-D, different At genotypes clearly respond differently to the same\
   \ Ha strain, some losing much of their seed production, others barely affected\
-  \, which is precisely what it means for the outcome of the interaction to depend\
+  , which is precisely what it means for the outcome of the interaction to depend\
   \ on the host plant's own genotype."
 
       - id: q35
@@ -3237,7 +3237,7 @@ rounds:
             answer: true
             explanation: "With no selection assumed, the population should have settled into Hardy-Weinberg\
   \ proportions by F7, so AA is expected at 1/4 of the 1177 genotyped individuals\
-  \, 0.25 × 1177 ≈ 287.5. The 271 actually observed falls short of that expectation,\
+  , 0.25 × 1177 ≈ 287.5. The 271 actually observed falls short of that expectation,\
   \ meaning fewer AA individuals turned up than predicted."
 
       - id: q36
@@ -3616,7 +3616,7 @@ rounds:
             answer: false
             explanation: "At a PAR of 100, the figure shows shallow-water plants achieving a net photosynthesis\
   \ rate of only about 4 µmol O₂/mg chl/h, compared to roughly 10 for deep-water plants\
-  \, deep-water plants are ahead here, not shallow ones, likely because they have\
+  , deep-water plants are ahead here, not shallow ones, likely because they have\
   \ more access to carbon from decomposition and respiration processes that shallow\
   \ plants competing with other vegetation lack."
           - letter: "B"
@@ -3632,7 +3632,7 @@ rounds:
             explanation: "The July data points, in particular, do not rise to a significantly higher NPR than\
   \ the April data even though light conditions and season differ, and the overall\
   \ shape of the curves, climbing steeply before leveling off with increasing PAR\
-  \, is the classic signature of a light-limited response."
+  , is the classic signature of a light-limited response."
           - letter: "D"
             text: "Deep-water plants have a higher NPR because of their higher chlorophyll content"
             answer: false
@@ -3704,7 +3704,7 @@ rounds:
             answer: false
             explanation: "In the summer months the N:P ratio drops to around 2, well below the optimum of about\
   \ 7, meaning nitrogen is comparatively scarce relative to phosphorus at that time\
-  \, so nitrogen, not phosphorus, is the more likely limiting factor for phytoplankton\
+  , so nitrogen, not phosphorus, is the more likely limiting factor for phytoplankton\
   \ growth during summer."
           - letter: "C"
             text: "Less N from drainage water will, in particular, reduce growth of cyanobacteria"
@@ -3750,7 +3750,7 @@ rounds:
             answer: true
             explanation: "ML combines the highest fruit set with the lowest proportion of flowering plants,\
   \ a pattern consistent with an especially abundant and effective pollinator population\
-  \, plausible if the carrion/dung-mimicking flowers there are drawing extra flies\
+  , plausible if the carrion/dung-mimicking flowers there are drawing extra flies\
   \ recruited from nearby cattle pasture, a habitat that would supply plenty of dung-breeding\
   \ flies."
           - letter: "D"

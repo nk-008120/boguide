@@ -1149,7 +1149,7 @@ rounds:
             explanation: "Removing gene 14, gene 15, or gene 20 individually (leaving the other 23 genes) each\
   \ causes a large drop in colony number compared to the 'All' condition, unlike removing\
   \ most other genes. This shows each of these three genes is individually necessary\
-  \, its absence substantially impairs colony formation even when all other 23 genes\
+  , its absence substantially impairs colony formation even when all other 23 genes\
   \ are present."
           - letter: "C"
             text: "These results show that the colony number is the highest when gene 9 is introduced\

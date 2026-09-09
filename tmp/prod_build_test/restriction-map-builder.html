@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restriction Map Builder | BiOGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #5b21b6; font-weight: 700; font-size: 1.1rem; }
+  .subtitle {
+    font-size: 0.82rem;
+    color: #4b5563;
+    margin-bottom: 1rem;
+    border-left: 3px solid #8965c4;
+    padding-left: 12px;
+    line-height: 1.5;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+    align-items: flex-end;
+  }
+  .controls .field {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .controls label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+  }
+  .controls input, .controls select {
+    padding: 6px 10px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    font-family: inherit;
+  }
+  .controls input:focus, .controls select:focus {
+    outline: none;
+    border-color: #8965c4;
+    box-shadow: 0 0 0 3px rgba(137,101,196,0.12);
+  }
+  .btn {
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-family: inherit;
+    border: 1px solid transparent;
+  }
+  .btn-primary { background: #8965c4; color: #fff; }
+  .btn-primary:hover { background: #7c3aed; }
+  .btn-ghost { background: #f1f5f9; color: #334155; border-color: #cbd5e1; }
+  .btn-ghost:hover { background: #e2e8f0; }
+  .enzyme-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 12px;
+    min-height: 28px;
+  }
+  .enzyme-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .enzyme-tag .remove {
+    cursor: pointer;
+    font-size: 0.9rem;
+    opacity: 0.7;
+  }
+  .enzyme-tag .remove:hover { opacity: 1; }
+  .map-area {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0;
+  }
+  .fragments-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+    margin-top: 12px;
+  }
+  .fragments-table th {
+    text-align: left;
+    padding: 6px 10px;
+    background: #f5f3ff;
+    color: #5b21b6;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .fragments-table td {
+    padding: 6px 10px;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  .preset-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+  .preset-btn {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    color: #334155;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 0.72rem;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .preset-btn:hover { background: #e2e8f0; }
+  .preset-btn.active { background: #8965c4; color: #fff; border-color: #8965c4; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Restriction Map Builder</h3>
+  <div class="subtitle">Enter a plasmid size and restriction enzyme cut sites. The circular map shows where each enzyme cuts, and the table lists the expected fragment sizes for single and double digests.</div>
+
+  <div class="preset-row" id="presetRow">
+    <button class="preset-btn" data-preset="ibo2015-pX" type="button">IBO 2015 pX</button>
+    <button class="preset-btn" data-preset="ibo2015-pZ" type="button">IBO 2015 pZ</button>
+    <button class="preset-btn" data-preset="ibo2018" type="button">IBO 2018 pPep</button>
+    <button class="preset-btn" data-preset="custom" type="button">Custom</button>
+  </div>
+
+  <div class="controls">
+    <div class="field">
+      <label>Plasmid size (bp)</label>
+      <input type="number" id="plasmidSize" value="3200" min="100" max="50000" step="100">
+    </div>
+    <div class="field">
+      <label>Enzyme name</label>
+      <input type="text" id="enzymeName" value="" placeholder="e.g. EcoRI" style="width:80px;">
+    </div>
+    <div class="field">
+      <label>Cut sites (bp, comma-sep)</label>
+      <input type="text" id="cutSites" value="" placeholder="e.g. 800, 2200" style="width:140px;">
+    </div>
+    <button class="btn btn-primary" id="addEnzyme" type="button">Add Enzyme</button>
+    <button class="btn btn-ghost" id="clearAll" type="button">Clear</button>
+  </div>
+
+  <div class="enzyme-list" id="enzymeList"></div>
+
+  <div class="map-area">
+    <svg id="mapSvg" viewBox="0 0 400 400" width="360" height="360"></svg>
+  </div>
+
+  <div id="fragmentsOutput"></div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+
+  var COLORS = ['#8965c4', '#e63946', '#2d6a4f', '#e07a5f', '#457b9d', '#f4a261'];
+  var enzymes = [];
+  var plasmidSize = 3200;
+
+  var PRESETS = {
+    'ibo2015-pX': {
+      size: 3200,
+      enzymes: [
+        { name: 'ApaI', sites: [800, 2000], color: COLORS[0] },
+        { name: 'EcoRI', sites: [1400, 2800], color: COLORS[1] }
+      ]
+    },
+    'ibo2015-pZ': {
+      size: 5000,
+      enzymes: [
+        { name: 'ApaI', sites: [1200, 3600], color: COLORS[0] },
+        { name: 'EcoRI', sites: [500, 2500, 4000], color: COLORS[1] }
+      ]
+    },
+    'ibo2018': {
+      size: 4500,
+      enzymes: [
+        { name: 'HindIII', sites: [1500, 3500], color: COLORS[0] },
+        { name: 'BamHI', sites: [2000], color: COLORS[1] }
+      ]
+    },
+    'custom': {
+      size: 4000,
+      enzymes: []
+    }
+  };
+
+  function getFragments(sites, total) {
+    if (!sites.length) return [total];
+    var sorted = sites.slice().sort(function(a, b) { return a - b; });
+    var frags = [];
+    for (var i = 0; i < sorted.length; i++) {
+      var next = i + 1 < sorted.length ? sorted[i + 1] : sorted[0] + total;
+      frags.push(next - sorted[i]);
+    }
+    frags.sort(function(a, b) { return b - a; });
+    return frags;
+  }
+
+  function renderMap() {
+    var svg = document.getElementById('mapSvg');
+    var cx = 200, cy = 200, r = 150;
+    plasmidSize = parseInt(document.getElementById('plasmidSize').value) || 3200;
+
+    var html = '';
+    html += '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="none" stroke="#cbd5e1" stroke-width="3"/>';
+
+    var tickInterval = plasmidSize <= 5000 ? 500 : 1000;
+    for (var t = 0; t < plasmidSize; t += tickInterval) {
+      var angle = (t / plasmidSize) * 2 * Math.PI - Math.PI / 2;
+      var x1 = cx + (r - 6) * Math.cos(angle);
+      var y1 = cy + (r - 6) * Math.sin(angle);
+      var x2 = cx + (r + 6) * Math.cos(angle);
+      var y2 = cy + (r + 6) * Math.sin(angle);
+      html += '<line x1="' + x1 + '" y1="' + y1 + '" x2="' + x2 + '" y2="' + y2 + '" stroke="#d1d5db" stroke-width="1"/>';
+      if (t % (tickInterval * 2) === 0) {
+        var tx = cx + (r + 18) * Math.cos(angle);
+        var ty = cy + (r + 18) * Math.sin(angle);
+        html += '<text x="' + tx + '" y="' + ty + '" text-anchor="middle" dominant-baseline="middle" font-size="9" fill="#9ca3af">' + (t / 1000).toFixed(t >= 1000 ? 1 : 0) + 'k</text>';
+      }
+    }
+
+    html += '<text x="' + cx + '" y="' + (cy - 8) + '" text-anchor="middle" font-size="13" font-weight="700" fill="#1e293b">' + (plasmidSize / 1000).toFixed(1) + ' kb</text>';
+    html += '<text x="' + cx + '" y="' + (cy + 8) + '" text-anchor="middle" font-size="10" fill="#6b7280">plasmid</text>';
+
+    enzymes.forEach(function(enz, ei) {
+      var layerR = r + 28 + ei * 16;
+      enz.sites.forEach(function(site) {
+        var angle = (site / plasmidSize) * 2 * Math.PI - Math.PI / 2;
+        var ix = cx + r * Math.cos(angle);
+        var iy = cy + r * Math.sin(angle);
+        var ox = cx + (layerR) * Math.cos(angle);
+        var oy = cy + (layerR) * Math.sin(angle);
+        html += '<line x1="' + ix + '" y1="' + iy + '" x2="' + ox + '" y2="' + oy + '" stroke="' + enz.color + '" stroke-width="2.5" stroke-linecap="round"/>';
+        html += '<text x="' + (ox + 6 * Math.cos(angle)) + '" y="' + (oy + 6 * Math.sin(angle)) + '" text-anchor="' + (Math.cos(angle) < -0.1 ? 'end' : Math.cos(angle) > 0.1 ? 'start' : 'middle') + '" dominant-baseline="middle" font-size="9" font-weight="600" fill="' + enz.color + '">' + enz.name + ' (' + site + ')</text>';
+      });
+    });
+
+    var svgViewSize = 400 + enzymes.length * 40;
+    svg.setAttribute('viewBox', '0 0 ' + svgViewSize + ' ' + svgViewSize);
+    var offset = (svgViewSize - 400) / 2;
+    svg.innerHTML = '<g transform="translate(' + offset + ',' + offset + ')">' + html + '</g>';
+  }
+
+  function renderFragments() {
+    var output = document.getElementById('fragmentsOutput');
+    if (enzymes.length === 0) {
+      output.innerHTML = '<div style="font-size:0.82rem; color:#9ca3af; text-align:center; padding:12px;">Add enzymes to see fragment predictions</div>';
+      return;
+    }
+
+    var html = '<table class="fragments-table"><thead><tr><th>Digest</th><th>Fragments (bp, largest first)</th><th>Count</th></tr></thead><tbody>';
+
+    enzymes.forEach(function(enz) {
+      var frags = getFragments(enz.sites, plasmidSize);
+      html += '<tr><td style="color:' + enz.color + '; font-weight:600;">' + enz.name + '</td><td>' + frags.join(', ') + '</td><td>' + frags.length + '</td></tr>';
+    });
+
+    if (enzymes.length >= 2) {
+      for (var i = 0; i < enzymes.length; i++) {
+        for (var j = i + 1; j < enzymes.length; j++) {
+          var combined = enzymes[i].sites.concat(enzymes[j].sites);
+          var frags = getFragments(combined, plasmidSize);
+          html += '<tr><td style="font-weight:600;">' + enzymes[i].name + ' + ' + enzymes[j].name + '</td><td>' + frags.join(', ') + '</td><td>' + frags.length + '</td></tr>';
+        }
+      }
+    }
+
+    html += '</tbody></table>';
+    output.innerHTML = html;
+  }
+
+  function renderEnzymeList() {
+    var list = document.getElementById('enzymeList');
+    var html = '';
+    enzymes.forEach(function(enz, i) {
+      html += '<span class="enzyme-tag" style="background:' + enz.color + '22; color:' + enz.color + ';">' +
+        enz.name + ' (' + enz.sites.length + ' site' + (enz.sites.length !== 1 ? 's' : '') + ')' +
+        '<span class="remove" data-idx="' + i + '">&times;</span></span>';
+    });
+    list.innerHTML = html;
+
+    list.querySelectorAll('.remove').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        enzymes.splice(parseInt(this.getAttribute('data-idx')), 1);
+        renderAll();
+      });
+    });
+  }
+
+  function renderAll() {
+    renderEnzymeList();
+    renderMap();
+    renderFragments();
+  }
+
+  document.getElementById('addEnzyme').addEventListener('click', function() {
+    var name = document.getElementById('enzymeName').value.trim();
+    var sitesStr = document.getElementById('cutSites').value.trim();
+    if (!name || !sitesStr) return;
+    var sites = sitesStr.split(',').map(function(s) { return parseInt(s.trim()); }).filter(function(n) { return !isNaN(n) && n > 0; });
+    if (sites.length === 0) return;
+    enzymes.push({ name: name, sites: sites, color: COLORS[enzymes.length % COLORS.length] });
+    document.getElementById('enzymeName').value = '';
+    document.getElementById('cutSites').value = '';
+    renderAll();
+  });
+
+  document.getElementById('clearAll').addEventListener('click', function() {
+    enzymes = [];
+    renderAll();
+  });
+
+  document.getElementById('plasmidSize').addEventListener('input', function() {
+    renderAll();
+  });
+
+  document.getElementById('presetRow').addEventListener('click', function(e) {
+    var btn = e.target.closest('.preset-btn');
+    if (!btn) return;
+    var key = btn.getAttribute('data-preset');
+    var preset = PRESETS[key];
+    if (!preset) return;
+
+    document.querySelectorAll('.preset-btn').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+
+    document.getElementById('plasmidSize').value = preset.size;
+    plasmidSize = preset.size;
+    enzymes = preset.enzymes.map(function(e) {
+      return { name: e.name, sites: e.sites.slice(), color: e.color };
+    });
+    renderAll();
+  });
+
+  renderAll();
+})();
+</script>
+</body>
+</html>

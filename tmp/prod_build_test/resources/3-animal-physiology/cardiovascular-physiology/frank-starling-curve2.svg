@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="754.69092"
+   height="654.23999"
+   id="svg2625"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="Starling RAP combined.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0">
+  <defs
+     id="defs2627">
+    <marker
+       inkscape:stockid="Arrow2Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lstart"
+       style="overflow:visible">
+      <path
+         id="path3430"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.97309,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z"
+         transform="matrix(1.1,0,0,1.1,1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend"
+       style="overflow:visible">
+      <path
+         id="path3433"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.97309,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective2633" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.3771236"
+     inkscape:cx="121.13578"
+     inkscape:cy="109.0254"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1030"
+     inkscape:window-height="717"
+     inkscape:window-x="40"
+     inkscape:window-y="40"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <metadata
+     id="metadata2630">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(37.871462,-145.8479)">
+    <g
+       id="g4722">
+      <path
+         id="path2635"
+         d="M 69.906881,711.23118 L 69.816861,147.05639"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.91000003;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Lend);stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path2637"
+         d="M 69.435986,710.77768 L 633.61077,710.68766"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.90997225px;stroke-linecap:butt;stroke-linejoin:miter;marker-end:url(#Arrow2Lend);stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 70.181,710.44786 C 70.181,710.44786 190.25124,458.92804 260.181,371.98361 C 269.09725,360.89795 283.36184,349.42275 294.46672,342.3911 C 306.64124,334.68216 324.13379,327.92708 337.32386,323.89579 C 349.12142,320.29009 365.24141,317.7616 377.32386,316.49766 C 443.54904,309.56988 598.75243,310.94907 598.75243,310.94907"
+       id="path4726"
+       sodipodi:nodetypes="cssssc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:20, 2.5;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 70.5754,709.105 C 70.5754,709.105 187.68142,398.37365 256.08831,295.75641 C 264.81039,282.6724 278.76433,269.12866 289.62738,260.82947 C 301.53677,251.73089 318.64839,243.75813 331.55121,239.00015 C 343.09186,234.74448 358.8608,231.76019 370.68012,230.26841 C 435.46311,222.09182 587.2866,223.71963 587.2866,223.71963"
+       id="path4728"
+       sodipodi:nodetypes="cssssc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 1;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 70.902642,709.42111 C 70.902642,709.42111 193.8085,546.22642 265.81811,459.28732 C 274.99955,448.20234 289.6884,436.72784 301.12356,429.69662 C 313.66017,421.98816 331.67299,415.23349 345.25536,411.20245 C 357.4038,407.59697 374.00323,405.06863 386.44504,403.80477 C 454.63989,396.87742 614.45935,398.25652 614.45935,398.25652"
+       id="path4730"
+       sodipodi:nodetypes="cssssc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 345.54877,710.51556 C 345.54877,710.51556 230.4404,460.77962 167.16836,372.91488 C 160.0518,363.03224 149.13133,351.48893 140.0425,345.3986 C 132.84813,340.57772 122.27522,337.02987 114.34431,335.57135 C 101.05712,333.12781 70.165625,334.16326 70.165625,334.16326"
+       id="path4740"
+       sodipodi:nodetypes="csssc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:20, 2.5;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 400.74266,710.3983 C 400.74266,710.3983 262.61262,410.71517 186.68617,305.27748 C 178.1463,293.41832 165.04174,279.56634 154.13514,272.25795 C 145.5019,266.47289 132.81441,262.21547 123.29731,260.46525 C 107.35268,257.533 70.282883,258.77554 70.282883,258.77554"
+       id="path4747"
+       sodipodi:nodetypes="csssc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 1;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 290.35489,710.63282 C 290.35489,710.63282 198.26819,510.84407 147.65056,440.55228 C 141.95731,432.64616 133.22093,423.41152 125.94987,418.53925 C 120.19437,414.68255 111.73605,411.84427 105.39132,410.67745 C 94.761567,408.72262 70.048367,409.55098 70.048367,409.55098"
+       id="path4749"
+       sodipodi:nodetypes="csssc" />
+    <g
+       id="g4794"
+       style="stroke:#0000ff;stroke-opacity:1"
+       transform="matrix(4.8,0,0,4.8,-1298.4995,-2191.5943)">
+      <path
+         id="path4788"
+         d="M 350.6492,585.54544 L 350.6492,576.7066 L 354.18474,580.99975"
+         style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         id="path4792"
+         d="M 349.6492,585.54544 L 349.6492,576.7066 L 346.11366,580.99975"
+         style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="247.75322"
+       y="594.75787"
+       id="text4798"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan4800"
+         x="247.75322"
+         y="594.75787"
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#0000ff;fill-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold">Blood</tspan><tspan
+         sodipodi:role="line"
+         x="247.75322"
+         y="618.75787"
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#0000ff;fill-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold"
+         id="tspan4808">Volume</tspan></text>
+    <g
+       id="g4802"
+       style="stroke:#0000ff;stroke-opacity:1"
+       transform="matrix(4.8,0,0,-4.8,-1473.3916,3387.2155)">
+      <path
+         id="path4804"
+         d="M 350.6492,585.54544 L 350.6492,576.7066 L 354.18474,580.99975"
+         style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         id="path4806"
+         d="M 349.6492,585.54544 L 349.6492,576.7066 L 346.11366,580.99975"
+         style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="413.16965"
+       y="309.138"
+       id="text4810"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         x="413.16965"
+         y="309.138"
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold"
+         id="tspan4814">Cardiac</tspan><tspan
+         sodipodi:role="line"
+         x="413.16965"
+         y="333.138"
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold"
+         id="tspan4818">Output</tspan></text>
+    <g
+       id="g4820"
+       style="stroke:#ff0000;stroke-opacity:1"
+       transform="matrix(4.8,0,0,4.8,-1060.7161,-2562.757)">
+      <path
+         id="path4822"
+         d="M 350.6492,585.54544 L 350.6492,576.7066 L 354.18474,580.99975"
+         style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         id="path4824"
+         d="M 349.6492,585.54544 L 349.6492,576.7066 L 346.11366,580.99975"
+         style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4826"
+       style="stroke:#ff0000;stroke-opacity:1"
+       transform="matrix(4.8,0,0,-4.8,-1030.7161,3187.4814)">
+      <path
+         id="path4828"
+         d="M 350.6492,585.54544 L 350.6492,576.7066 L 354.18474,580.99975"
+         style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         id="path4830"
+         d="M 349.6492,585.54544 L 349.6492,576.7066 L 346.11366,580.99975"
+         style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="602.04602"
+       y="317.84042"
+       id="text4832"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         x="602.04602"
+         y="317.84042"
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold"
+         id="tspan4836">Inotropy</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="349.77258"
+       y="745.74872"
+       id="text4840"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan4842"
+         x="349.77258"
+         y="745.74872"
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold">Right Atrial Pressure</tspan><tspan
+         sodipodi:role="line"
+         x="349.77258"
+         y="769.74872"
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold"
+         id="tspan4844">or</tspan><tspan
+         sodipodi:role="line"
+         x="349.77258"
+         y="793.74872"
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold"
+         id="tspan4846">End Diastolic Volume</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="-430.58777"
+       y="-19.637087"
+       id="text4853"
+       sodipodi:linespacing="100%"
+       transform="matrix(0,-1,1,0,0,0)"><tspan
+         sodipodi:role="line"
+         x="-430.58777"
+         y="-19.637087"
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold"
+         id="tspan4859">Cardiac Output</tspan><tspan
+         sodipodi:role="line"
+         x="-430.58777"
+         y="4.3629131"
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold"
+         id="tspan4866">or</tspan><tspan
+         sodipodi:role="line"
+         x="-430.58777"
+         y="28.362913"
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold"
+         id="tspan4868">Venous Return</tspan><tspan
+         sodipodi:role="line"
+         x="-430.58777"
+         y="52.362915"
+         style="font-size:24px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans Bold"
+         id="tspan4870">(L/min)</tspan></text>
+    <path
+       sodipodi:type="arc"
+       style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.50072122;stroke-miterlimit:4;stroke-dasharray:20.00576928, 2.50072116;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4872"
+       sodipodi:cx="261.25"
+       sodipodi:cy="308.24066"
+       sodipodi:rx="16.964285"
+       sodipodi:ry="11.071428"
+       d="M 278.21428,308.24066 A 16.964285,11.071428 0 1 1 244.28572,308.24066 A 16.964285,11.071428 0 1 1 278.21428,308.24066 z"
+       transform="matrix(0.5180378,0,0,0.7937681,76.032522,200.14951)" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Lstart);stroke-opacity:1"
+       d="M 268.12501,303.24065 L 412.50002,342.61565"
+       id="path4874"
+       transform="translate(-41.871462,145.8479)" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="418.12503"
+       y="338.86566"
+       id="text5914"
+       sodipodi:linespacing="100%"
+       transform="translate(-41.871462,145.8479)"><tspan
+         sodipodi:role="line"
+         id="tspan5916"
+         x="418.12503"
+         y="338.86566"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">Operating point of the heart</tspan><tspan
+         sodipodi:role="line"
+         x="418.12503"
+         y="354.86566"
+         id="tspan5918"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">(cardiac output and venous</tspan><tspan
+         sodipodi:role="line"
+         x="418.12503"
+         y="370.86566"
+         id="tspan5920"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">return are equal)</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Lstart);stroke-opacity:1"
+       d="M 254.55845,396.33386 L 449.45476,421.52454"
+       id="path5924"
+       transform="translate(-41.871462,145.8479)" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Lstart);stroke-opacity:1"
+       d="M 227.31673,355.40207 L 386.41576,189.67391"
+       id="path6449"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="423.20514"
+       y="565.06726"
+       id="text6451"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         x="423.20514"
+         y="565.06726"
+         id="tspan6457"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">Total Peripheral Resistance</tspan><tspan
+         sodipodi:role="line"
+         x="423.20514"
+         y="581.06726"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+         id="tspan6464">e.g. vasoconstriction</tspan></text>
+    <g
+       id="g6466"
+       style="stroke:#000000;stroke-opacity:1"
+       transform="matrix(1.92,0,0,1.92,-256.11855,-550.10366)">
+      <path
+         id="path6468"
+         d="M 350.6492,585.54544 L 350.6492,576.7066 L 354.18474,580.99975"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         id="path6470"
+         d="M 349.6492,585.54544 L 349.6492,576.7066 L 346.11366,580.99975"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="405.58331"
+       y="185.34636"
+       id="text6472"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         x="405.58331"
+         y="185.34636"
+         id="tspan6474"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">Total Peripheral Resistance</tspan><tspan
+         sodipodi:role="line"
+         x="405.58331"
+         y="201.34636"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+         id="tspan6476">e.g. exercise</tspan></text>
+    <g
+       id="g6478"
+       style="stroke:#000000;stroke-opacity:1"
+       transform="matrix(1.92,0,0,-1.92,-273.74037,1301.6993)">
+      <path
+         id="path6480"
+         d="M 350.6492,585.54544 L 350.6492,576.7066 L 354.18474,580.99975"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         id="path6482"
+         d="M 349.6492,585.54544 L 349.6492,576.7066 L 346.11366,580.99975"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.20047867px;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Lstart);stroke-opacity:1"
+       d="M 403.11015,708.29333 L 448.30544,648.25379"
+       id="path6484"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.20047867px;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Lstart);stroke-opacity:1"
+       d="M 292.56323,708.35946 L 447.71183,648.34836"
+       id="path6486"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.20047867px;stroke-linecap:butt;stroke-linejoin:miter;marker-start:url(#Arrow2Lstart);stroke-opacity:1"
+       d="M 347.89288,708.48446 L 448.40318,648.00461"
+       id="path6488"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+       x="447.89029"
+       y="642.37762"
+       id="text6490"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         x="447.89029"
+         y="642.37762"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+         id="tspan6494">X-intercept of venous return</tspan><tspan
+         sodipodi:role="line"
+         x="447.89029"
+         y="658.37762"
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+         id="tspan6498">= mean systemic pressure</tspan></text>
+  </g>
+</svg>

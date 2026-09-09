@@ -1,0 +1,2005 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>BiOGuide for Biology Olympiads – IBO Results Analysis</title><link>https://bioguide.world/papers/ibo/results/</link><description>Recent content in IBO Results Analysis on BiOGuide for Biology Olympiads</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="https://bioguide.world/papers/ibo/results/index.xml" rel="self" type="application/rss+xml"/><item><title>IBO 2022 Results Analysis</title><link>https://bioguide.world/papers/ibo/results/2022/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bioguide.world/papers/ibo/results/2022/</guid><description>
+&lt;div class="biorchive-bg-layer" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;style&gt;
+.ra { max-width: 780px; margin: 0 auto; font-size: 0.97rem; }
+.ra h2 { font-family: 'Fraunces', serif; font-weight: 700; color: #8965c4; text-transform: uppercase; letter-spacing: 0.08em; margin: 3rem 0 0.3rem; font-size: 0.85rem; }
+.ra h3 { font-family: 'Fraunces', serif; font-size: 1.6rem; font-weight: 700; margin: 0.2rem 0 1rem; line-height: 1.25; }
+.ra p { line-height: 1.7; margin: 0.8rem 0; }
+.ra .hero-year { font-family: 'Fraunces', serif; font-size: 3.5rem; font-weight: 900; line-height: 1; }
+.ra .hero-year span { color: #8965c4; }
+.ra .hero-host { font-size: 1.2rem; color: var(--tw-prose-body, #666); margin: 0.3rem 0 1.5rem; }
+.ra .stats-row { display: flex; gap: 2.5rem; flex-wrap: wrap; margin: 1.5rem 0 2rem; }
+.ra .stat-num { font-family: 'Fraunces', serif; font-size: 2.2rem; font-weight: 800; line-height: 1.1; }
+.ra .stat-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--tw-prose-body, #888); }
+.ra hr { border: none; border-top: 1px solid rgba(137,101,196,0.15); margin: 2rem 0; }
+.medal-bars { margin: 1rem 0 1.5rem; }
+.medal-row { display: flex; align-items: center; margin: 0.6rem 0; }
+.medal-dot { width: 14px; height: 14px; border-radius: 50%; margin-right: 0.7rem; flex-shrink: 0; }
+.medal-dot.gold { background: #f5c842; } .medal-dot.silver { background: #adb5bd; }
+.medal-dot.bronze { background: #e07c3e; }
+.medal-label { width: 65px; font-weight: 600; font-size: 0.9rem; }
+.medal-bar-track { flex: 1; height: 22px; background: rgba(137,101,196,0.08); border-radius: 4px; overflow: hidden; }
+.medal-bar-fill { height: 100%; border-radius: 4px; }
+.medal-bar-fill.gold { background: #f5c842; } .medal-bar-fill.silver { background: #adb5bd; }
+.medal-bar-fill.bronze { background: #e07c3e; }
+.medal-count { margin-left: 0.7rem; font-weight: 700; font-size: 0.95rem; min-width: 30px; }
+.cutoff { margin: 1rem 0; }
+.cutoff-label { font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.cutoff-range { font-size: 0.85rem; color: var(--tw-prose-body, #888); float: right; }
+.cutoff-track { height: 8px; background: rgba(137,101,196,0.08); border-radius: 4px; margin: 0.5rem 0 1.2rem; position: relative; }
+.cutoff-fill { height: 100%; border-radius: 4px; position: absolute; }
+.cutoff-fill.gold { background: #f5c842; } .cutoff-fill.silver { background: #adb5bd; }
+.cutoff-fill.bronze { background: #e07c3e; }
+.station-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.station-card { text-align: center; }
+.station-bar-wrap { height: 120px; display: flex; align-items: flex-end; justify-content: center; margin-bottom: 0.5rem; }
+.station-bar { width: 80px; border-radius: 6px 6px 0 0; min-height: 8px; }
+.station-pct { font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 700; margin-bottom: 0.2rem; }
+.station-name { font-size: 0.82rem; font-weight: 600; line-height: 1.3; }
+.station-sub { font-size: 0.72rem; color: var(--tw-prose-body, #888); }
+.callout { border: 1px solid rgba(137,101,196,0.2); border-radius: 10px; padding: 1.2rem 1.4rem; margin: 1.5rem 0; background: rgba(137,101,196,0.04); }
+.callout-tag { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #8965c4; font-weight: 700; margin-bottom: 0.4rem; }
+.callout p { margin: 0.3rem 0; }
+:is(.dark) .callout { background: rgba(137,101,196,0.08); border-color: rgba(137,101,196,0.25); }
+.team-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+.team-table th { text-align: left; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--tw-prose-body, #888); padding: 0.5rem 0.4rem; border-bottom: 2px solid rgba(137,101,196,0.15); }
+.team-table td { padding: 0.55rem 0.4rem; border-bottom: 1px solid rgba(137,101,196,0.08); }
+.team-rank { font-family: 'Fraunces', serif; font-weight: 700; color: #8965c4; }
+.team-medals .g { color: #f5c842; } .team-medals .s { color: #adb5bd; } .team-medals .b { color: #e07c3e; }
+.gap-section { margin: 1rem 0; }
+.gap-row { display: flex; align-items: center; margin: 0.5rem 0; font-size: 0.88rem; }
+.gap-name { width: 160px; text-align: right; padding-right: 0.8rem; font-weight: 500; }
+.gap-bar-area { flex: 1; position: relative; height: 20px; }
+.gap-bar { position: absolute; height: 100%; border-radius: 3px; top: 0; }
+.gap-bar.theory { background: #50b8a6; right: 50%; } .gap-bar.practical { background: #e07c3e; left: 50%; }
+.gap-val { width: 50px; font-weight: 600; font-size: 0.82rem; padding-left: 0.5rem; }
+.gap-center { position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: rgba(137,101,196,0.2); }
+.curiosity { background: rgba(137,101,196,0.06); border-radius: 10px; padding: 1.2rem 1.4rem; margin: 1rem 0; }
+.curiosity-num { font-family: 'Fraunces', serif; font-size: 0.75rem; color: #8965c4; font-weight: 700; }
+.curiosity-title { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 700; color: #8965c4; margin: 0.2rem 0 0.4rem; }
+.curiosity p { margin: 0.2rem 0; font-size: 0.9rem; }
+:is(.dark) .curiosity { background: rgba(137,101,196,0.1); }
+.advice-item { margin: 1.2rem 0; display: flex; gap: 0.8rem; }
+.advice-num { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 700; color: #8965c4; flex-shrink: 0; width: 28px; height: 28px; border: 2px solid #8965c4; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 0.1rem; }
+.advice-body h4 { margin: 0 0 0.3rem; font-size: 1rem; }
+.advice-body p { margin: 0; font-size: 0.9rem; color: var(--tw-prose-body, #666); }
+.funnel { margin: 1.5rem 0; }
+.funnel-row { display: flex; align-items: center; margin: 0.7rem 0; }
+.funnel-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--tw-prose-body, #888); width: 200px; }
+.funnel-track { flex: 1; height: 28px; background: rgba(137,101,196,0.08); border-radius: 4px; }
+.funnel-fill { height: 100%; border-radius: 4px; background: rgba(137,101,196,0.25); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; }
+.funnel-fill.gold-f { background: rgba(245,200,66,0.35); }
+.funnel-fill.silver-f { background: rgba(173,181,189,0.35); }
+.funnel-fill.bronze-f { background: rgba(224,124,62,0.35); }
+&lt;/style&gt;
+&lt;div class="ra"&gt;
+&lt;div class="hero-year"&gt;IBO &lt;span&gt;2022&lt;/span&gt;&lt;/div&gt;
+&lt;div class="hero-host"&gt;Yerevan, Armenia (Online) -- by the numbers&lt;/div&gt;
+&lt;div class="stats-row"&gt;
+&lt;div class="stat"&gt;&lt;div class="stat-num"&gt;237&lt;/div&gt;&lt;div class="stat-label"&gt;Competitors&lt;/div&gt;&lt;/div&gt;
+&lt;div class="stat"&gt;&lt;div class="stat-num"&gt;59&lt;/div&gt;&lt;div class="stat-label"&gt;Countries&lt;/div&gt;&lt;/div&gt;
+&lt;div class="stat"&gt;&lt;div class="stat-num"&gt;4&lt;/div&gt;&lt;div class="stat-label"&gt;Practical Labs&lt;/div&gt;&lt;/div&gt;
+&lt;div class="stat"&gt;&lt;div class="stat-num"&gt;2&lt;/div&gt;&lt;div class="stat-label"&gt;Theory Papers&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p style="font-size:0.9rem; color:var(--tw-prose-body,#888); margin-top:-0.5rem;"&gt;
+IBO 2022 was the last online IBO, held remotely due to lingering COVID restrictions. All practical stations were adapted for remote delivery.
+&lt;/p&gt;
+&lt;h2&gt;Final Medal Tally&lt;/h2&gt;
+&lt;h3&gt;How the medals fell&lt;/h3&gt;
+&lt;div class="medal-bars"&gt;
+&lt;div class="medal-row"&gt;
+&lt;div class="medal-dot gold"&gt;&lt;/div&gt;&lt;div class="medal-label"&gt;Gold&lt;/div&gt;
+&lt;div class="medal-bar-track"&gt;&lt;div class="medal-bar-fill gold" style="width:36.6%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="medal-count"&gt;26&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="medal-row"&gt;
+&lt;div class="medal-dot silver"&gt;&lt;/div&gt;&lt;div class="medal-label"&gt;Silver&lt;/div&gt;
+&lt;div class="medal-bar-track"&gt;&lt;div class="medal-bar-fill silver" style="width:47.9%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="medal-count"&gt;34&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="medal-row"&gt;
+&lt;div class="medal-dot bronze"&gt;&lt;/div&gt;&lt;div class="medal-label"&gt;Bronze&lt;/div&gt;
+&lt;div class="medal-bar-track"&gt;&lt;div class="medal-bar-fill bronze" style="width:100%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="medal-count"&gt;71&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;No Merit category was awarded in 2022. The medal rate was 55.3% (131 out of 237), with 106 competitors receiving no award.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;The Odds&lt;/h2&gt;
+&lt;h3&gt;What it actually took to medal in 2022&lt;/h3&gt;
+&lt;div class="callout" style="display:flex; justify-content:space-between; align-items:center;"&gt;
+&lt;div&gt;
+&lt;div class="callout-tag"&gt;Top of the Podium&lt;/div&gt;
+&lt;div style="font-size:1.2rem; font-weight:700;"&gt;Yakov Korobitsyn&lt;/div&gt;
+&lt;div style="font-size:0.85rem; color:var(--tw-prose-body,#888);"&gt;Independent Delegation &amp;middot; Final score 92.39&lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="font-family:'Fraunces',serif; font-size:2rem; font-weight:800; color:#f5c842;"&gt;1st&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel"&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Started the exams&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill" style="width:100%"&gt;237&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Medaled (G+S+B)&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill bronze-f" style="width:55.3%"&gt;131&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Reached Gold or Silver&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill silver-f" style="width:25.3%"&gt;60&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Gold medal&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill gold-f" style="width:11.0%"&gt;26&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Only 1 in 9 competitors (11.0%) won Gold. The scoring system used normalized Z-total scores with a 50-point base, giving the final scores a mean near 50.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Medal Cutoffs&lt;/h2&gt;
+&lt;h3&gt;Where the lines were actually drawn&lt;/h3&gt;
+&lt;p style="font-size:0.85rem; color:var(--tw-prose-body,#888);"&gt;Final Z-total score range needed to earn each award&lt;/p&gt;
+&lt;div class="cutoff"&gt;
+&lt;div class="cutoff-label"&gt;Gold&lt;/div&gt;&lt;div class="cutoff-range"&gt;74.28 -- 92.39&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div class="cutoff-track"&gt;&lt;div class="cutoff-fill gold" style="left:68%; width:32%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cutoff"&gt;
+&lt;div class="cutoff-label"&gt;Silver&lt;/div&gt;&lt;div class="cutoff-range"&gt;63.00 -- 73.74&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div class="cutoff-track"&gt;&lt;div class="cutoff-fill silver" style="left:52%; width:16%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cutoff"&gt;
+&lt;div class="cutoff-label"&gt;Bronze&lt;/div&gt;&lt;div class="cutoff-range"&gt;46.04 -- 59.44&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div class="cutoff-track"&gt;&lt;div class="cutoff-fill bronze" style="left:28%; width:24%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Wide Gold band&lt;/div&gt;
+&lt;p&gt;The Gold range spanned 18.11 points (74.28 to 92.39), the widest of any medal tier. By contrast, the Silver band was only 10.74 points wide. The top Gold medalists separated themselves decisively from the rest of the field.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;By the Numbers&lt;/h2&gt;
+&lt;h3&gt;How hard was each station, really?&lt;/h3&gt;
+&lt;p style="font-size:0.85rem; color:var(--tw-prose-body,#888);"&gt;Average points earned vs. each lab's 100-point maximum&lt;/p&gt;
+&lt;div class="station-grid"&gt;
+&lt;div class="station-card"&gt;
+&lt;div class="station-bar-wrap"&gt;&lt;div class="station-bar" style="height:53%; background:#a87bd4;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="station-pct"&gt;53%&lt;/div&gt;
+&lt;div class="station-name"&gt;Bioinformatics&lt;/div&gt;
+&lt;div class="station-sub"&gt;53.1 / 100 pts&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="station-card"&gt;
+&lt;div class="station-bar-wrap"&gt;&lt;div class="station-bar" style="height:37%; background:#7c5db8;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="station-pct"&gt;37%&lt;/div&gt;
+&lt;div class="station-name"&gt;Biochemistry&lt;/div&gt;
+&lt;div class="station-sub"&gt;37.2 / 100 pts&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="station-card"&gt;
+&lt;div class="station-bar-wrap"&gt;&lt;div class="station-bar" style="height:48%; background:#b891de;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="station-pct"&gt;48%&lt;/div&gt;
+&lt;div class="station-name"&gt;Plant Physiology&lt;/div&gt;
+&lt;div class="station-sub"&gt;48.2 / 100 pts&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="station-card"&gt;
+&lt;div class="station-bar-wrap"&gt;&lt;div class="station-bar" style="height:29%; background:#5c4289;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="station-pct"&gt;29%&lt;/div&gt;
+&lt;div class="station-name"&gt;Zoology&lt;/div&gt;
+&lt;div class="station-sub"&gt;29.4 / 100 pts&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Zoology was brutal&lt;/div&gt;
+&lt;p&gt;At just 29.4% average attainment, Zoology was the hardest practical station in any year of our 2022-2024 analysis. Over 70% of the points in this station went uncollected. Even Gold medalists averaged well below half marks.&lt;/p&gt;
+&lt;hr style="border:none; border-top:1px solid rgba(137,101,196,0.15); margin:0.8rem 0;"&gt;
+&lt;div class="callout-tag"&gt;Biochemistry: the perennial struggle&lt;/div&gt;
+&lt;p&gt;Biochemistry at 37.2% continues its pattern as one of the hardest stations across all years. The only station to score lower was Zoology in this same competition.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Team Standings&lt;/h2&gt;
+&lt;h3&gt;Top 15 delegations by medal count&lt;/h3&gt;
+&lt;div style="overflow-x:auto;"&gt;
+&lt;table class="team-table"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th&gt;#&lt;/th&gt;&lt;th&gt;Delegation&lt;/th&gt;&lt;th&gt;G&lt;/th&gt;&lt;th&gt;S&lt;/th&gt;&lt;th&gt;B&lt;/th&gt;&lt;th&gt;Avg Score&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;1&lt;/td&gt;&lt;td&gt;Independent Delegation&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;4&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;79.8&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;2&lt;/td&gt;&lt;td&gt;Iran&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;4&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;78.3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;3&lt;/td&gt;&lt;td&gt;Chinese Taipei&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;75.0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;4&lt;/td&gt;&lt;td&gt;Thailand&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;73.3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;5&lt;/td&gt;&lt;td&gt;Turkiye&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td&gt;67.3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;6&lt;/td&gt;&lt;td&gt;Singapore&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td&gt;66.7&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;7&lt;/td&gt;&lt;td&gt;Indonesia&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td&gt;62.1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;8&lt;/td&gt;&lt;td&gt;Poland&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;68.2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;9&lt;/td&gt;&lt;td&gt;Germany&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;66.1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;10&lt;/td&gt;&lt;td&gt;India&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;65.8&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;11&lt;/td&gt;&lt;td&gt;Bulgaria&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td&gt;66.2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;12&lt;/td&gt;&lt;td&gt;Hungary&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td&gt;63.5&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;13&lt;/td&gt;&lt;td&gt;Japan&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td&gt;63.7&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;14&lt;/td&gt;&lt;td&gt;Czech Republic&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td&gt;59.7&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;15&lt;/td&gt;&lt;td&gt;South Korea&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td&gt;62.9&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Online format, different results&lt;/div&gt;
+&lt;p&gt;The online format produced a notably different leaderboard than in-person years. Iran achieved a 4-Gold sweep (ranked 7th-18th), a result they have not replicated in-person since. The Independent Olympiad Delegation also swept Gold, led by the competition's overall winner.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Theory vs. Practical&lt;/h2&gt;
+&lt;h3&gt;Some teams live on paper, others in the lab&lt;/h3&gt;
+&lt;h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#50b8a6; margin:1.2rem 0 0.5rem;"&gt;Stronger in Theory&lt;/h4&gt;
+&lt;div class="gap-section"&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;India&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar theory" style="width:20%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#50b8a6;"&gt;+0.80&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Czech Republic&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar theory" style="width:18%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#50b8a6;"&gt;+0.72&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Iran&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar theory" style="width:14%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#50b8a6;"&gt;+0.56&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Vietnam&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar theory" style="width:10%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#50b8a6;"&gt;+0.40&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#e07c3e; margin:1.2rem 0 0.5rem;"&gt;Stronger in Practicals&lt;/h4&gt;
+&lt;div class="gap-section"&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Netherlands&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar practical" style="width:20%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#e07c3e;"&gt;-0.80&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Latvia&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar practical" style="width:15%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#e07c3e;"&gt;-0.60&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Armenia&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar practical" style="width:12%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#e07c3e;"&gt;-0.48&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Australia&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar practical" style="width:10%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#e07c3e;"&gt;-0.40&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Reading this&lt;/div&gt;
+&lt;p&gt;India's 1-Gold team built their edge almost entirely on theory. The Netherlands showed the most extreme reverse pattern: their team dramatically outperformed in practicals relative to their theory scores.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Curiosities&lt;/h2&gt;
+&lt;h3&gt;4 things the official result does not say out loud&lt;/h3&gt;
+&lt;div class="curiosity"&gt;
+&lt;div class="curiosity-num"&gt;01&lt;/div&gt;
+&lt;div class="curiosity-title"&gt;29.4% Zoology&lt;/div&gt;
+&lt;p&gt;The Zoology station's 29.4% average attainment is the lowest for any practical station across our entire 2022-2024 dataset. Even the median competitor captured less than a third of the available points.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="curiosity"&gt;
+&lt;div class="curiosity-num"&gt;02&lt;/div&gt;
+&lt;div class="curiosity-title"&gt;Online advantage?&lt;/div&gt;
+&lt;p&gt;IBO 2022 was conducted online. The practical stations were adapted for remote delivery, which likely changed the skill mix required. Some traditionally strong in-person teams underperformed, while teams with strong computational skills found the format more natural.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="curiosity"&gt;
+&lt;div class="curiosity-num"&gt;03&lt;/div&gt;
+&lt;div class="curiosity-title"&gt;r = 0.77&lt;/div&gt;
+&lt;p&gt;Theory-practical correlation was 0.77, the second-lowest in our 3-year window (2024 was 0.71). The online format may have made the practical component test a somewhat different skill set than theory.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="curiosity"&gt;
+&lt;div class="curiosity-num"&gt;04&lt;/div&gt;
+&lt;div class="curiosity-title"&gt;No Merit awarded&lt;/div&gt;
+&lt;p&gt;Unlike 2023 and 2024, IBO 2022 did not award Merit certificates. The cut was binary: you either medaled (Bronze or above) or received nothing. This made the Bronze cutoff (46.04) effectively the pass/fail line.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;For 2023 Hopefuls&lt;/h2&gt;
+&lt;h3&gt;What the data says to train next&lt;/h3&gt;
+&lt;div class="advice-item"&gt;
+&lt;div class="advice-num"&gt;1&lt;/div&gt;
+&lt;div class="advice-body"&gt;
+&lt;h4&gt;Animal-focused practicals need real bench time&lt;/h4&gt;
+&lt;p&gt;Zoology at 29.4% was devastating for most competitors. Dissection skills, specimen identification, and morphological analysis under time pressure cannot be learned from textbooks alone.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="advice-item"&gt;
+&lt;div class="advice-num"&gt;2&lt;/div&gt;
+&lt;div class="advice-body"&gt;
+&lt;h4&gt;Biochemistry remains the bottleneck&lt;/h4&gt;
+&lt;p&gt;At 37.2%, Biochemistry was the second-hardest station. This is a consistent pattern: Biochemistry ranks among the hardest stations in every year. Invest disproportionate training time here.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="advice-item"&gt;
+&lt;div class="advice-num"&gt;3&lt;/div&gt;
+&lt;div class="advice-body"&gt;
+&lt;h4&gt;Theory is your floor, not your ceiling&lt;/h4&gt;
+&lt;p&gt;Theory A and B both averaged ~73% attainment, meaning the theory exam was relatively accessible. To medal, you needed to perform well on theory AND find points in the more difficult practicals.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p style="font-size:0.82rem; color:var(--tw-prose-body,#888); text-align:center; margin:2rem 0 1rem;"&gt;
+Independent analysis of the &lt;a href="https://bioguide.world/papers/results/ibo/IBO2022.pdf"&gt;official IBO 2022 final results&lt;/a&gt; PDF. Not an official IBO publication.
+&lt;/p&gt;
+&lt;/div&gt;</description></item><item><title>IBO 2023 Results Analysis</title><link>https://bioguide.world/papers/ibo/results/2023/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bioguide.world/papers/ibo/results/2023/</guid><description>
+&lt;div class="biorchive-bg-layer" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;link rel="stylesheet" href="https://bioguide.world/css/results-analysis.css"&gt;
+&lt;style&gt;
+.ra { max-width: 780px; margin: 0 auto; font-size: 0.97rem; }
+.ra h2 { font-family: 'Fraunces', serif; font-weight: 700; color: #8965c4; text-transform: uppercase; letter-spacing: 0.08em; margin: 3rem 0 0.3rem; font-size: 0.85rem; }
+.ra h3 { font-family: 'Fraunces', serif; font-size: 1.6rem; font-weight: 700; margin: 0.2rem 0 1rem; line-height: 1.25; }
+.ra p { line-height: 1.7; margin: 0.8rem 0; }
+.ra .hero-year { font-family: 'Fraunces', serif; font-size: 3.5rem; font-weight: 900; line-height: 1; }
+.ra .hero-year span { color: #8965c4; }
+.ra .hero-host { font-size: 1.2rem; color: var(--tw-prose-body, #666); margin: 0.3rem 0 1.5rem; }
+.ra .stats-row { display: flex; gap: 2.5rem; flex-wrap: wrap; margin: 1.5rem 0 2rem; }
+.ra .stat-num { font-family: 'Fraunces', serif; font-size: 2.2rem; font-weight: 800; line-height: 1.1; }
+.ra .stat-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--tw-prose-body, #888); }
+.ra hr { border: none; border-top: 1px solid rgba(137,101,196,0.15); margin: 2rem 0; }
+.medal-bars { margin: 1rem 0 1.5rem; }
+.medal-row { display: flex; align-items: center; margin: 0.6rem 0; }
+.medal-dot { width: 14px; height: 14px; border-radius: 50%; margin-right: 0.7rem; flex-shrink: 0; }
+.medal-dot.gold { background: #f5c842; } .medal-dot.silver { background: #adb5bd; }
+.medal-dot.bronze { background: #e07c3e; } .medal-dot.merit { background: #6c757d; }
+.medal-label { width: 65px; font-weight: 600; font-size: 0.9rem; }
+.medal-bar-track { flex: 1; height: 22px; background: rgba(137,101,196,0.08); border-radius: 4px; overflow: hidden; }
+.medal-bar-fill { height: 100%; border-radius: 4px; }
+.medal-bar-fill.gold { background: #f5c842; } .medal-bar-fill.silver { background: #adb5bd; }
+.medal-bar-fill.bronze { background: #e07c3e; } .medal-bar-fill.merit { background: #6c757d; }
+.medal-count { margin-left: 0.7rem; font-weight: 700; font-size: 0.95rem; min-width: 30px; }
+.cutoff { margin: 1rem 0; }
+.cutoff-label { font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.cutoff-range { font-size: 0.85rem; color: var(--tw-prose-body, #888); float: right; }
+.cutoff-track { height: 8px; background: rgba(137,101,196,0.08); border-radius: 4px; margin: 0.5rem 0 1.2rem; position: relative; }
+.cutoff-fill { height: 100%; border-radius: 4px; position: absolute; }
+.cutoff-fill.gold { background: #f5c842; } .cutoff-fill.silver { background: #adb5bd; }
+.cutoff-fill.bronze { background: #e07c3e; } .cutoff-fill.merit { background: #6c757d; }
+.station-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.station-card { text-align: center; }
+.station-bar-wrap { height: 120px; display: flex; align-items: flex-end; justify-content: center; margin-bottom: 0.5rem; }
+.station-bar { width: 80px; border-radius: 6px 6px 0 0; background: #8965c4; min-height: 8px; }
+.station-pct { font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 700; margin-bottom: 0.2rem; }
+.station-name { font-size: 0.82rem; font-weight: 600; line-height: 1.3; }
+.station-sub { font-size: 0.72rem; color: var(--tw-prose-body, #888); }
+.callout { border: 1px solid rgba(137,101,196,0.2); border-radius: 10px; padding: 1.2rem 1.4rem; margin: 1.5rem 0; background: rgba(137,101,196,0.04); }
+.callout-tag { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #8965c4; font-weight: 700; margin-bottom: 0.4rem; }
+.callout p { margin: 0.3rem 0; }
+:is(.dark) .callout { background: rgba(137,101,196,0.08); border-color: rgba(137,101,196,0.25); }
+.team-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+.team-table th { text-align: left; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--tw-prose-body, #888); padding: 0.5rem 0.4rem; border-bottom: 2px solid rgba(137,101,196,0.15); }
+.team-table td { padding: 0.55rem 0.4rem; border-bottom: 1px solid rgba(137,101,196,0.08); }
+.team-rank { font-family: 'Fraunces', serif; font-weight: 700; color: #8965c4; }
+.team-medals .g { color: #f5c842; } .team-medals .s { color: #adb5bd; } .team-medals .b { color: #e07c3e; }
+.gap-section { margin: 1rem 0; }
+.gap-row { display: flex; align-items: center; margin: 0.5rem 0; font-size: 0.88rem; }
+.gap-name { width: 160px; text-align: right; padding-right: 0.8rem; font-weight: 500; }
+.gap-bar-area { flex: 1; position: relative; height: 20px; }
+.gap-bar { position: absolute; height: 100%; border-radius: 3px; top: 0; }
+.gap-bar.theory { background: #50b8a6; right: 50%; } .gap-bar.practical { background: #e07c3e; left: 50%; }
+.gap-val { width: 50px; font-weight: 600; font-size: 0.82rem; padding-left: 0.5rem; }
+.gap-center { position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: rgba(137,101,196,0.2); }
+.curiosity { background: rgba(137,101,196,0.06); border-radius: 10px; padding: 1.2rem 1.4rem; margin: 1rem 0; }
+.curiosity-num { font-family: 'Fraunces', serif; font-size: 0.75rem; color: #8965c4; font-weight: 700; }
+.curiosity-title { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 700; color: #8965c4; margin: 0.2rem 0 0.4rem; }
+.curiosity p { margin: 0.2rem 0; font-size: 0.9rem; }
+:is(.dark) .curiosity { background: rgba(137,101,196,0.1); }
+.advice-item { margin: 1.2rem 0; display: flex; gap: 0.8rem; }
+.advice-num { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 700; color: #8965c4; flex-shrink: 0; width: 28px; height: 28px; border: 2px solid #8965c4; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 0.1rem; }
+.advice-body h4 { margin: 0 0 0.3rem; font-size: 1rem; }
+.advice-body p { margin: 0; font-size: 0.9rem; color: var(--tw-prose-body, #666); }
+.funnel { margin: 1.5rem 0; }
+.funnel-row { display: flex; align-items: center; margin: 0.7rem 0; }
+.funnel-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--tw-prose-body, #888); width: 200px; }
+.funnel-track { flex: 1; height: 28px; background: rgba(137,101,196,0.08); border-radius: 4px; }
+.funnel-fill { height: 100%; border-radius: 4px; background: rgba(137,101,196,0.25); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; }
+.funnel-fill.gold-f { background: rgba(245,200,66,0.35); }
+.funnel-fill.silver-f { background: rgba(173,181,189,0.35); }
+.funnel-fill.bronze-f { background: rgba(224,124,62,0.35); }
+&lt;/style&gt;
+&lt;div class="ra"&gt;
+&lt;div class="hero-year"&gt;IBO &lt;span&gt;2023&lt;/span&gt;&lt;/div&gt;
+&lt;div class="hero-host"&gt;Al Ain, UAE -- by the numbers&lt;/div&gt;
+&lt;div class="stats-row"&gt;
+&lt;div class="stat"&gt;&lt;div class="stat-num"&gt;244&lt;/div&gt;&lt;div class="stat-label"&gt;Competitors parsed&lt;/div&gt;&lt;/div&gt;
+&lt;div class="stat"&gt;&lt;div class="stat-num"&gt;63&lt;/div&gt;&lt;div class="stat-label"&gt;Countries&lt;/div&gt;&lt;/div&gt;
+&lt;div class="stat"&gt;&lt;div class="stat-num"&gt;4&lt;/div&gt;&lt;div class="stat-label"&gt;Practical Labs&lt;/div&gt;&lt;/div&gt;
+&lt;div class="stat"&gt;&lt;div class="stat-num"&gt;2&lt;/div&gt;&lt;div class="stat-label"&gt;Theory Papers&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Final Medal Tally&lt;/h2&gt;
+&lt;h3&gt;How the medals fell&lt;/h3&gt;
+&lt;div class="medal-bars"&gt;
+&lt;div class="medal-row"&gt;
+&lt;div class="medal-dot gold"&gt;&lt;/div&gt;&lt;div class="medal-label"&gt;Gold&lt;/div&gt;
+&lt;div class="medal-bar-track"&gt;&lt;div class="medal-bar-fill gold" style="width:40.3%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="medal-count"&gt;29&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="medal-row"&gt;
+&lt;div class="medal-dot silver"&gt;&lt;/div&gt;&lt;div class="medal-label"&gt;Silver&lt;/div&gt;
+&lt;div class="medal-bar-track"&gt;&lt;div class="medal-bar-fill silver" style="width:73.6%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="medal-count"&gt;53&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="medal-row"&gt;
+&lt;div class="medal-dot bronze"&gt;&lt;/div&gt;&lt;div class="medal-label"&gt;Bronze&lt;/div&gt;
+&lt;div class="medal-bar-track"&gt;&lt;div class="medal-bar-fill bronze" style="width:100%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="medal-count"&gt;72&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="medal-row"&gt;
+&lt;div class="medal-dot merit"&gt;&lt;/div&gt;&lt;div class="medal-label"&gt;Merit&lt;/div&gt;
+&lt;div class="medal-bar-track"&gt;&lt;div class="medal-bar-fill merit" style="width:31.9%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="medal-count"&gt;23&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;The Odds&lt;/h2&gt;
+&lt;h3&gt;What it actually took to medal in 2023&lt;/h3&gt;
+&lt;div class="callout" style="display:flex; justify-content:space-between; align-items:center;"&gt;
+&lt;div&gt;
+&lt;div class="callout-tag"&gt;Top of the Podium&lt;/div&gt;
+&lt;div style="font-size:1.2rem; font-weight:700;"&gt;Yufei Chen&lt;/div&gt;
+&lt;div style="font-size:0.85rem; color:var(--tw-prose-body,#888);"&gt;United States &amp;middot; Final score 144.37&lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="font-family:'Fraunces',serif; font-size:2rem; font-weight:800; color:#f5c842;"&gt;1st&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel"&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Started the exams&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill" style="width:100%"&gt;~293&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Earned any award (G+S+B+M)&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill" style="width:60.4%"&gt;177&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Medaled (G+S+B)&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill bronze-f" style="width:52.6%"&gt;154&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Reached Gold or Silver&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill silver-f" style="width:28.0%"&gt;82&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Gold medal&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill gold-f" style="width:9.9%"&gt;29&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Roughly 1 in 10 competitors (9.9%) won Gold. The medal rate (~52.6%) was significantly lower than IBO 2024's 84.2%, making 2023 a more selective year by that metric.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Medal Cutoffs&lt;/h2&gt;
+&lt;h3&gt;Where the lines were actually drawn&lt;/h3&gt;
+&lt;div class="cutoff"&gt;
+&lt;div class="cutoff-label"&gt;Gold&lt;/div&gt;&lt;div class="cutoff-range"&gt;123.12 -- 144.37&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div class="cutoff-track"&gt;&lt;div class="cutoff-fill gold" style="left:72%; width:28%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cutoff"&gt;
+&lt;div class="cutoff-label"&gt;Silver&lt;/div&gt;&lt;div class="cutoff-range"&gt;111.21 -- 122.73&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div class="cutoff-track"&gt;&lt;div class="cutoff-fill silver" style="left:56.4%; width:15%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cutoff"&gt;
+&lt;div class="cutoff-label"&gt;Bronze&lt;/div&gt;&lt;div class="cutoff-range"&gt;96.82 -- 111.15&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div class="cutoff-track"&gt;&lt;div class="cutoff-fill bronze" style="left:37.5%; width:18.7%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cutoff"&gt;
+&lt;div class="cutoff-label"&gt;Merit&lt;/div&gt;&lt;div class="cutoff-range"&gt;~88 -- 96&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div class="cutoff-track"&gt;&lt;div class="cutoff-fill merit" style="left:31%; width:6.4%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Gold-Silver gap&lt;/div&gt;
+&lt;p&gt;The Gold cutoff (123.12) sat &lt;strong&gt;0.39 points&lt;/strong&gt; above the best Silver (122.73). Even tighter than 2024's 0.53-point gap. One extra correct True/False statement on theory would have made the difference.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;By the Numbers&lt;/h2&gt;
+&lt;h3&gt;How hard was each station, really?&lt;/h3&gt;
+&lt;div class="station-grid"&gt;
+&lt;div class="station-card"&gt;
+&lt;div class="station-bar-wrap"&gt;&lt;div class="station-bar" style="height:64%; background:#c9a8e8;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="station-pct"&gt;64%&lt;/div&gt;
+&lt;div class="station-name"&gt;Plant Molecular Biology&lt;/div&gt;
+&lt;div class="station-sub"&gt;64.1 / 100 pts&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="station-card"&gt;
+&lt;div class="station-bar-wrap"&gt;&lt;div class="station-bar" style="height:59%; background:#b891de;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="station-pct"&gt;59%&lt;/div&gt;
+&lt;div class="station-name"&gt;Evolutionary Ecology&lt;/div&gt;
+&lt;div class="station-sub"&gt;59.4 / 100 pts&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="station-card"&gt;
+&lt;div class="station-bar-wrap"&gt;&lt;div class="station-bar" style="height:46%; background:#7c5db8;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="station-pct"&gt;46%&lt;/div&gt;
+&lt;div class="station-name"&gt;Biochemistry&lt;/div&gt;
+&lt;div class="station-sub"&gt;45.8 / 100 pts&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="station-card"&gt;
+&lt;div class="station-bar-wrap"&gt;&lt;div class="station-bar" style="height:58%; background:#a87bd4;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="station-pct"&gt;58%&lt;/div&gt;
+&lt;div class="station-name"&gt;Bioinformatics&lt;/div&gt;
+&lt;div class="station-sub"&gt;58.2 / 100 pts&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Hardest to score on&lt;/div&gt;
+&lt;p&gt;Biochemistry had the lowest attainment rate at 45.8%, nearly 20 points below the easiest station (Plant Molecular Biology at 64.1%). Biochemistry is consistently one of the hardest IBO practicals across years.&lt;/p&gt;
+&lt;hr style="border:none; border-top:1px solid rgba(137,101,196,0.15); margin:0.8rem 0;"&gt;
+&lt;div class="callout-tag"&gt;Theory split&lt;/div&gt;
+&lt;p&gt;Theory Paper 2 (mean 184.8/230, 80.4% attainment) was substantially more accessible than Theory Paper 1 (mean 107.2/166, 64.6% attainment). The difference in difficulty between the two theory papers was larger than any practical station gap.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Team Standings&lt;/h2&gt;
+&lt;h3&gt;Top 15 delegations by medal count&lt;/h3&gt;
+&lt;div style="overflow-x:auto;"&gt;
+&lt;table class="team-table"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th&gt;#&lt;/th&gt;&lt;th&gt;Delegation&lt;/th&gt;&lt;th&gt;G&lt;/th&gt;&lt;th&gt;S&lt;/th&gt;&lt;th&gt;B&lt;/th&gt;&lt;th&gt;Avg Score&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;1&lt;/td&gt;&lt;td&gt;Singapore&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;4&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;132.3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;2&lt;/td&gt;&lt;td&gt;India&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;4&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;126.6&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;3&lt;/td&gt;&lt;td&gt;China&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;133.2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;4&lt;/td&gt;&lt;td&gt;Chinese Taipei&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;128.2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;5&lt;/td&gt;&lt;td&gt;United States&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;131.3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;6&lt;/td&gt;&lt;td&gt;Iran&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;129.1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;7&lt;/td&gt;&lt;td&gt;Germany&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;125.2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;8&lt;/td&gt;&lt;td&gt;Japan&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;124.1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;9&lt;/td&gt;&lt;td&gt;South Korea&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;122.3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;10&lt;/td&gt;&lt;td&gt;Australia&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td&gt;112.2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;11&lt;/td&gt;&lt;td&gt;United Kingdom&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td&gt;114.7&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;12&lt;/td&gt;&lt;td&gt;Bulgaria&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;120.8&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;13&lt;/td&gt;&lt;td&gt;Thailand&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;4&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;114.6&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;14&lt;/td&gt;&lt;td&gt;Hong Kong&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td&gt;112.5&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;15&lt;/td&gt;&lt;td&gt;Indonesia&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td&gt;108.4&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Singapore and India shine&lt;/div&gt;
+&lt;p&gt;Singapore and India both achieved perfect 4-Gold sweeps. Singapore's team average (132.3) was the highest of any delegation. India's 4-Gold haul at IBO 2023 was a historic result for the team.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Theory vs. Practical&lt;/h2&gt;
+&lt;h3&gt;Some teams live on paper, others in the lab&lt;/h3&gt;
+&lt;h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#50b8a6; margin:1.2rem 0 0.5rem;"&gt;Stronger in Theory&lt;/h4&gt;
+&lt;div class="gap-section"&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Iran&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar theory" style="width:22%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#50b8a6;"&gt;+0.88&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;India&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar theory" style="width:18%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#50b8a6;"&gt;+0.72&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;China&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar theory" style="width:14%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#50b8a6;"&gt;+0.56&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Chinese Taipei&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar theory" style="width:11%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#50b8a6;"&gt;+0.44&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#e07c3e; margin:1.2rem 0 0.5rem;"&gt;Stronger in Practicals&lt;/h4&gt;
+&lt;div class="gap-section"&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Kazakhstan&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar practical" style="width:18%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#e07c3e;"&gt;-0.72&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Australia&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar practical" style="width:13%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#e07c3e;"&gt;-0.52&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Indonesia&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar practical" style="width:10%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#e07c3e;"&gt;-0.40&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Thailand&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar practical" style="width:8%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#e07c3e;"&gt;-0.32&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Reading this&lt;/div&gt;
+&lt;p&gt;Iran's 2-Gold team built their edge almost entirely on the theory exam, with the largest positive gap of any Gold-winning delegation. Kazakhstan, as the host nation, showed the opposite pattern: stronger in labs than on paper.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Curiosities&lt;/h2&gt;
+&lt;h3&gt;3 things the official result does not say out loud&lt;/h3&gt;
+&lt;div class="curiosity"&gt;
+&lt;div class="curiosity-num"&gt;01&lt;/div&gt;
+&lt;div class="curiosity-title"&gt;r = 0.84&lt;/div&gt;
+&lt;p&gt;Theory and practical scores correlated at r = 0.84, the highest of any year in our 2022-2024 window. Competitors who tested well on paper almost always performed well in the lab. Being lopsided was the exception, not the rule.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="curiosity"&gt;
+&lt;div class="curiosity-num"&gt;02&lt;/div&gt;
+&lt;div class="curiosity-title"&gt;Theory 2 was nearly twice as generous&lt;/div&gt;
+&lt;p&gt;Theory Paper 2 averaged 80.4% attainment vs. 64.6% for Paper 1. The 16-point gap is the largest theory-paper difficulty split in our dataset. If a competitor bombed Paper 1, Paper 2 was their lifeline.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="curiosity"&gt;
+&lt;div class="curiosity-num"&gt;03&lt;/div&gt;
+&lt;div class="curiosity-title"&gt;Biochemistry bottleneck&lt;/div&gt;
+&lt;p&gt;Biochemistry was the hardest practical station at 45.8% attainment, nearly 20 points below the easiest station. This pattern repeats across all three years we analyzed: Biochemistry consistently punishes the field.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;For 2024 Hopefuls&lt;/h2&gt;
+&lt;h3&gt;What the data says to train next&lt;/h3&gt;
+&lt;div class="advice-item"&gt;
+&lt;div class="advice-num"&gt;1&lt;/div&gt;
+&lt;div class="advice-body"&gt;
+&lt;h4&gt;Theory and practicals move together&lt;/h4&gt;
+&lt;p&gt;With r = 0.84, the 2023 data shows that broad competence matters. Pure theory grinders or pure lab rats rarely reached Gold. Build both.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="advice-item"&gt;
+&lt;div class="advice-num"&gt;2&lt;/div&gt;
+&lt;div class="advice-body"&gt;
+&lt;h4&gt;Biochemistry is your ceiling&lt;/h4&gt;
+&lt;p&gt;At 45.8% average attainment, Biochemistry is where most competitors left the most points on the table. Enzyme kinetics, assay interpretation, and wet-lab precision under time pressure are the highest-leverage training targets.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="advice-item"&gt;
+&lt;div class="advice-num"&gt;3&lt;/div&gt;
+&lt;div class="advice-body"&gt;
+&lt;h4&gt;Master Plant Molecular Biology&lt;/h4&gt;
+&lt;p&gt;PMB was the "easiest" station (64.1%), but that also means every Gold medalist scored well on it. If you cannot hold your own on the accessible stations, you cannot compensate elsewhere.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p style="font-size:0.82rem; color:var(--tw-prose-body,#888); text-align:center; margin:2rem 0 1rem;"&gt;
+Independent analysis of the &lt;a href="https://bioguide.world/papers/results/ibo/IBO2023.pdf"&gt;official IBO 2023 final results&lt;/a&gt; PDF. Not an official IBO publication.&lt;br&gt;
+Parsed 244 of ~293 competitors (some entries lost at PDF page boundaries).
+&lt;/p&gt;
+&lt;/div&gt;</description></item><item><title>IBO 2024 Results Analysis</title><link>https://bioguide.world/papers/ibo/results/2024/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bioguide.world/papers/ibo/results/2024/</guid><description>
+&lt;div class="biorchive-bg-layer" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;style&gt;
+.ra { max-width: 780px; margin: 0 auto; font-size: 0.97rem; }
+.ra h2 {
+font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 700;
+color: #8965c4; text-transform: uppercase; letter-spacing: 0.08em;
+margin: 3rem 0 0.3rem; font-size: 0.85rem;
+}
+.ra h3 {
+font-family: 'Fraunces', serif; font-size: 1.6rem; font-weight: 700;
+margin: 0.2rem 0 1rem; line-height: 1.25;
+}
+.ra p { line-height: 1.7; margin: 0.8rem 0; }
+.ra .hero-year { font-family: 'Fraunces', serif; font-size: 3.5rem; font-weight: 900; line-height: 1; }
+.ra .hero-year span { color: #8965c4; }
+.ra .hero-host { font-size: 1.2rem; color: var(--tw-prose-body, #666); margin: 0.3rem 0 1.5rem; }
+.ra .stats-row { display: flex; gap: 2.5rem; flex-wrap: wrap; margin: 1.5rem 0 2rem; }
+.ra .stat { text-align: left; }
+.ra .stat-num { font-family: 'Fraunces', serif; font-size: 2.2rem; font-weight: 800; line-height: 1.1; }
+.ra .stat-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--tw-prose-body, #888); }
+.ra hr { border: none; border-top: 1px solid rgba(137,101,196,0.15); margin: 2rem 0; }
+/* Medal bars */
+.medal-bars { margin: 1rem 0 1.5rem; }
+.medal-row { display: flex; align-items: center; margin: 0.6rem 0; }
+.medal-dot { width: 14px; height: 14px; border-radius: 50%; margin-right: 0.7rem; flex-shrink: 0; }
+.medal-dot.gold { background: #f5c842; }
+.medal-dot.silver { background: #adb5bd; }
+.medal-dot.bronze { background: #e07c3e; }
+.medal-dot.merit { background: #6c757d; }
+.medal-label { width: 65px; font-weight: 600; font-size: 0.9rem; }
+.medal-bar-track { flex: 1; height: 22px; background: rgba(137,101,196,0.08); border-radius: 4px; position: relative; overflow: hidden; }
+.medal-bar-fill { height: 100%; border-radius: 4px; }
+.medal-bar-fill.gold { background: #f5c842; }
+.medal-bar-fill.silver { background: #adb5bd; }
+.medal-bar-fill.bronze { background: #e07c3e; }
+.medal-bar-fill.merit { background: #6c757d; }
+.medal-count { margin-left: 0.7rem; font-weight: 700; font-size: 0.95rem; min-width: 30px; }
+/* Cutoff ranges */
+.cutoff { margin: 1rem 0; }
+.cutoff-label { font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.cutoff-range { font-size: 0.85rem; color: var(--tw-prose-body, #888); float: right; }
+.cutoff-track { height: 8px; background: rgba(137,101,196,0.08); border-radius: 4px; margin: 0.5rem 0 1.2rem; position: relative; }
+.cutoff-fill { height: 100%; border-radius: 4px; position: absolute; }
+.cutoff-fill.gold { background: #f5c842; }
+.cutoff-fill.silver { background: #adb5bd; }
+.cutoff-fill.bronze { background: #e07c3e; }
+.cutoff-fill.merit { background: #6c757d; }
+/* Station difficulty */
+.station-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.station-card { text-align: center; }
+.station-bar-wrap { height: 120px; display: flex; align-items: flex-end; justify-content: center; margin-bottom: 0.5rem; }
+.station-bar { width: 80px; border-radius: 6px 6px 0 0; background: #8965c4; min-height: 8px; transition: height 0.3s; }
+.station-pct { font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 700; margin-bottom: 0.2rem; }
+.station-name { font-size: 0.82rem; font-weight: 600; line-height: 1.3; }
+.station-sub { font-size: 0.72rem; color: var(--tw-prose-body, #888); }
+/* Callout boxes */
+.callout {
+border: 1px solid rgba(137,101,196,0.2); border-radius: 10px;
+padding: 1.2rem 1.4rem; margin: 1.5rem 0; background: rgba(137,101,196,0.04);
+}
+.callout-tag { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #8965c4; font-weight: 700; margin-bottom: 0.4rem; }
+.callout p { margin: 0.3rem 0; }
+:is(.dark) .callout { background: rgba(137,101,196,0.08); border-color: rgba(137,101,196,0.25); }
+/* Team table */
+.team-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+.team-table th { text-align: left; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--tw-prose-body, #888); padding: 0.5rem 0.4rem; border-bottom: 2px solid rgba(137,101,196,0.15); }
+.team-table td { padding: 0.55rem 0.4rem; border-bottom: 1px solid rgba(137,101,196,0.08); }
+.team-table tr:hover td { background: rgba(137,101,196,0.04); }
+.team-rank { font-family: 'Fraunces', serif; font-weight: 700; color: #8965c4; }
+.team-medals { white-space: nowrap; }
+.team-medals .g { color: #f5c842; }
+.team-medals .s { color: #adb5bd; }
+.team-medals .b { color: #e07c3e; }
+/* Gap bars */
+.gap-section { margin: 1rem 0; }
+.gap-row { display: flex; align-items: center; margin: 0.5rem 0; font-size: 0.88rem; }
+.gap-name { width: 160px; text-align: right; padding-right: 0.8rem; font-weight: 500; }
+.gap-bar-area { flex: 1; position: relative; height: 20px; }
+.gap-bar { position: absolute; height: 100%; border-radius: 3px; top: 0; }
+.gap-bar.theory { background: #50b8a6; right: 50%; }
+.gap-bar.practical { background: #e07c3e; left: 50%; }
+.gap-val { width: 50px; font-weight: 600; font-size: 0.82rem; padding-left: 0.5rem; }
+.gap-center { position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: rgba(137,101,196,0.2); }
+/* Curiosity cards */
+.curiosity { background: rgba(137,101,196,0.06); border-radius: 10px; padding: 1.2rem 1.4rem; margin: 1rem 0; }
+.curiosity-num { font-family: 'Fraunces', serif; font-size: 0.75rem; color: #8965c4; font-weight: 700; }
+.curiosity-title { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 700; color: #8965c4; margin: 0.2rem 0 0.4rem; }
+.curiosity p { margin: 0.2rem 0; font-size: 0.9rem; }
+:is(.dark) .curiosity { background: rgba(137,101,196,0.1); }
+/* Advice list */
+.advice-item { margin: 1.2rem 0; display: flex; gap: 0.8rem; }
+.advice-num { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 700; color: #8965c4; flex-shrink: 0; width: 28px; height: 28px; border: 2px solid #8965c4; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 0.1rem; }
+.advice-body h4 { margin: 0 0 0.3rem; font-size: 1rem; }
+.advice-body p { margin: 0; font-size: 0.9rem; color: var(--tw-prose-body, #666); }
+/* Funnel */
+.funnel { margin: 1.5rem 0; }
+.funnel-row { display: flex; align-items: center; margin: 0.7rem 0; }
+.funnel-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--tw-prose-body, #888); width: 200px; }
+.funnel-track { flex: 1; height: 28px; background: rgba(137,101,196,0.08); border-radius: 4px; position: relative; }
+.funnel-fill { height: 100%; border-radius: 4px; background: rgba(137,101,196,0.25); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; }
+.funnel-fill.gold-f { background: rgba(245,200,66,0.35); }
+.funnel-fill.silver-f { background: rgba(173,181,189,0.35); }
+.funnel-fill.bronze-f { background: rgba(224,124,62,0.35); }
+&lt;/style&gt;
+&lt;div class="ra"&gt;
+&lt;div class="hero-year"&gt;IBO &lt;span&gt;2024&lt;/span&gt;&lt;/div&gt;
+&lt;div class="hero-host"&gt;Astana, Kazakhstan -- by the numbers&lt;/div&gt;
+&lt;div class="stats-row"&gt;
+&lt;div class="stat"&gt;&lt;div class="stat-num"&gt;203&lt;/div&gt;&lt;div class="stat-label"&gt;Competitors&lt;/div&gt;&lt;/div&gt;
+&lt;div class="stat"&gt;&lt;div class="stat-num"&gt;66&lt;/div&gt;&lt;div class="stat-label"&gt;Countries&lt;/div&gt;&lt;/div&gt;
+&lt;div class="stat"&gt;&lt;div class="stat-num"&gt;4&lt;/div&gt;&lt;div class="stat-label"&gt;Practical Labs&lt;/div&gt;&lt;/div&gt;
+&lt;div class="stat"&gt;&lt;div class="stat-num"&gt;2&lt;/div&gt;&lt;div class="stat-label"&gt;Theory Papers&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Final Medal Tally&lt;/h2&gt;
+&lt;h3&gt;How the medals fell&lt;/h3&gt;
+&lt;div class="medal-bars"&gt;
+&lt;div class="medal-row"&gt;
+&lt;div class="medal-dot gold"&gt;&lt;/div&gt;
+&lt;div class="medal-label"&gt;Gold&lt;/div&gt;
+&lt;div class="medal-bar-track"&gt;&lt;div class="medal-bar-fill gold" style="width:36.9%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="medal-count"&gt;31&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="medal-row"&gt;
+&lt;div class="medal-dot silver"&gt;&lt;/div&gt;
+&lt;div class="medal-label"&gt;Silver&lt;/div&gt;
+&lt;div class="medal-bar-track"&gt;&lt;div class="medal-bar-fill silver" style="width:66.7%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="medal-count"&gt;56&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="medal-row"&gt;
+&lt;div class="medal-dot bronze"&gt;&lt;/div&gt;
+&lt;div class="medal-label"&gt;Bronze&lt;/div&gt;
+&lt;div class="medal-bar-track"&gt;&lt;div class="medal-bar-fill bronze" style="width:100%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="medal-count"&gt;84&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="medal-row"&gt;
+&lt;div class="medal-dot merit"&gt;&lt;/div&gt;
+&lt;div class="medal-label"&gt;Merit&lt;/div&gt;
+&lt;div class="medal-bar-track"&gt;&lt;div class="medal-bar-fill merit" style="width:33.3%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="medal-count"&gt;28&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;The Odds&lt;/h2&gt;
+&lt;h3&gt;What it actually took to medal in 2024&lt;/h3&gt;
+&lt;div class="callout" style="display:flex; justify-content:space-between; align-items:center;"&gt;
+&lt;div&gt;
+&lt;div class="callout-tag"&gt;Top of the Podium&lt;/div&gt;
+&lt;div style="font-size:1.2rem; font-weight:700;"&gt;Peiyu Wang&lt;/div&gt;
+&lt;div style="font-size:0.85rem; color:var(--tw-prose-body,#888);"&gt;China &amp;middot; Final score 165.02&lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="font-family:'Fraunces',serif; font-size:2rem; font-weight:800; color:#f5c842;"&gt;1st&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel"&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Started the exams&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill" style="width:100%"&gt;203&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Earned any award (G+S+B+M)&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill" style="width:98%"&gt;199&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Medaled (G+S+B)&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill bronze-f" style="width:84.2%"&gt;171&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Reached Gold or Silver&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill silver-f" style="width:42.9%"&gt;87&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Gold medal&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill gold-f" style="width:15.3%"&gt;31&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Only 1 in 7 competitors (15.3%) walked away with Gold. The 84.2% medal rate was generous by IBO standards, but the gaps between tiers were razor-thin.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Medal Cutoffs&lt;/h2&gt;
+&lt;h3&gt;Where the lines were actually drawn&lt;/h3&gt;
+&lt;p style="font-size:0.85rem; color:var(--tw-prose-body,#888);"&gt;Final score range needed to earn each award&lt;/p&gt;
+&lt;div class="cutoff"&gt;
+&lt;div class="cutoff-label"&gt;Gold&lt;/div&gt;&lt;div class="cutoff-range"&gt;130.07 -- 165.02&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div class="cutoff-track"&gt;&lt;div class="cutoff-fill gold" style="left:68%; width:32%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cutoff"&gt;
+&lt;div class="cutoff-label"&gt;Silver&lt;/div&gt;&lt;div class="cutoff-range"&gt;111.52 -- 129.54&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div class="cutoff-track"&gt;&lt;div class="cutoff-fill silver" style="left:50.8%; width:16.6%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cutoff"&gt;
+&lt;div class="cutoff-label"&gt;Bronze&lt;/div&gt;&lt;div class="cutoff-range"&gt;94.06 -- 110.98&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div class="cutoff-track"&gt;&lt;div class="cutoff-fill bronze" style="left:34.8%; width:15.6%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cutoff"&gt;
+&lt;div class="cutoff-label"&gt;Merit&lt;/div&gt;&lt;div class="cutoff-range"&gt;88.55 -- 93.76&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div class="cutoff-track"&gt;&lt;div class="cutoff-fill merit" style="left:29.7%; width:4.8%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Razor-thin margins&lt;/div&gt;
+&lt;p&gt;The Gold cutoff (130.07) sat just &lt;strong&gt;0.53 points&lt;/strong&gt; above the best Silver score (129.54). The Silver-Bronze gap was similarly tight at 0.54 points. At this level, a single extra mark on one practical station would have changed medal colors.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;By the Numbers&lt;/h2&gt;
+&lt;h3&gt;How hard was each station, really?&lt;/h3&gt;
+&lt;p style="font-size:0.85rem; color:var(--tw-prose-body,#888);"&gt;Average points earned vs. each lab's own maximum&lt;/p&gt;
+&lt;div class="station-grid"&gt;
+&lt;div class="station-card"&gt;
+&lt;div class="station-bar-wrap"&gt;&lt;div class="station-bar" style="height:56%; background:#a87bd4;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="station-pct"&gt;56%&lt;/div&gt;
+&lt;div class="station-name"&gt;Molecular Biology&lt;/div&gt;
+&lt;div class="station-sub"&gt;55.6 / 100 pts&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="station-card"&gt;
+&lt;div class="station-bar-wrap"&gt;&lt;div class="station-bar" style="height:45%; background:#7c5db8;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="station-pct"&gt;45%&lt;/div&gt;
+&lt;div class="station-name"&gt;Bioinformatics&lt;/div&gt;
+&lt;div class="station-sub"&gt;44.5 / 100 pts&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="station-card"&gt;
+&lt;div class="station-bar-wrap"&gt;&lt;div class="station-bar" style="height:59%; background:#b891de;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="station-pct"&gt;59%&lt;/div&gt;
+&lt;div class="station-name"&gt;Animal Anatomy &amp; Physiology&lt;/div&gt;
+&lt;div class="station-sub"&gt;59.3 / 100 pts&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="station-card"&gt;
+&lt;div class="station-bar-wrap"&gt;&lt;div class="station-bar" style="height:68%; background:#c9a8e8;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="station-pct"&gt;68%&lt;/div&gt;
+&lt;div class="station-name"&gt;Biochemistry&lt;/div&gt;
+&lt;div class="station-sub"&gt;67.7 / 100 pts&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Hardest to score on&lt;/div&gt;
+&lt;p&gt;Bioinformatics had the lowest attainment rate of any station: competitors captured just 44.5% of its 100 available points. The station also had the second-highest correlation with final rank (r = 0.70).&lt;/p&gt;
+&lt;hr style="border:none; border-top:1px solid rgba(137,101,196,0.15); margin:0.8rem 0;"&gt;
+&lt;div class="callout-tag"&gt;Theory was king&lt;/div&gt;
+&lt;p&gt;Theory total (Papers A + B combined) correlated at r = 0.94 with final score, making it by far the single strongest predictor. Theory A averaged 63.1% attainment, Theory B averaged 61.3%.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Team Standings&lt;/h2&gt;
+&lt;h3&gt;Top 15 delegations by medal count&lt;/h3&gt;
+&lt;div style="overflow-x:auto;"&gt;
+&lt;table class="team-table"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th&gt;#&lt;/th&gt;&lt;th&gt;Delegation&lt;/th&gt;&lt;th&gt;G&lt;/th&gt;&lt;th&gt;S&lt;/th&gt;&lt;th&gt;B&lt;/th&gt;&lt;th&gt;Avg Score&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;1&lt;/td&gt;&lt;td&gt;China&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;4&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;155.3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;2&lt;/td&gt;&lt;td&gt;United States&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;4&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;150.7&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;3&lt;/td&gt;&lt;td&gt;Chinese Taipei&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;4&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;137.1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;4&lt;/td&gt;&lt;td&gt;Vietnam&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;132.8&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;5&lt;/td&gt;&lt;td&gt;Iran&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;129.7&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;6&lt;/td&gt;&lt;td&gt;Singapore&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;130.7&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;7&lt;/td&gt;&lt;td&gt;South Korea&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;132.1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;8&lt;/td&gt;&lt;td&gt;Hong Kong&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td&gt;120.2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;9&lt;/td&gt;&lt;td&gt;Turkiye&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;122.6&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;10&lt;/td&gt;&lt;td&gt;India&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;125.5&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;11&lt;/td&gt;&lt;td&gt;Thailand&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;127.8&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;12&lt;/td&gt;&lt;td&gt;Australia&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td&gt;114.3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;13&lt;/td&gt;&lt;td&gt;Bulgaria&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td&gt;110.3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;14&lt;/td&gt;&lt;td&gt;Japan&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;4&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;122.5&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;15&lt;/td&gt;&lt;td&gt;Germany&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td&gt;112.4&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Perfect teams&lt;/div&gt;
+&lt;p&gt;China, the United States, and Chinese Taipei are the only delegations where all 4 members won Gold. Vietnam came closest to joining them: 3 Gold and 1 Silver, with their Silver medalist finishing 17th overall.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Theory vs. Practical&lt;/h2&gt;
+&lt;h3&gt;Some teams live on paper, others in the lab&lt;/h3&gt;
+&lt;p style="font-size:0.85rem; color:var(--tw-prose-body,#888);"&gt;Average gap between theory T-score and practical T-score, by country (teams of 4 only)&lt;/p&gt;
+&lt;h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#50b8a6; margin:1.2rem 0 0.5rem;"&gt;Stronger in Theory&lt;/h4&gt;
+&lt;div class="gap-section"&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Vietnam&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar theory" style="width:25.3%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#50b8a6;"&gt;+1.01&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;China&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar theory" style="width:24.3%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#50b8a6;"&gt;+0.97&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;United States&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar theory" style="width:14.5%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#50b8a6;"&gt;+0.58&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;South Korea&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar theory" style="width:8.3%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#50b8a6;"&gt;+0.33&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#e07c3e; margin:1.2rem 0 0.5rem;"&gt;Stronger in Practicals&lt;/h4&gt;
+&lt;div class="gap-section"&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Saudi Arabia&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar practical" style="width:26.3%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#e07c3e;"&gt;-1.05&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Philippines&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar practical" style="width:16.5%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#e07c3e;"&gt;-0.66&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Kyrgyzstan&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar practical" style="width:13.5%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#e07c3e;"&gt;-0.54&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Hungary&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar practical" style="width:8.8%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#e07c3e;"&gt;-0.35&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Reading this&lt;/div&gt;
+&lt;p&gt;Vietnam and China topped the overall medal table, and both built their edge disproportionately on the theory exam. Saudi Arabia and the Philippines showed the reverse: their teams outperformed their theory scores in the lab, suggesting strong practical training programs despite lower theory throughput.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Curiosities&lt;/h2&gt;
+&lt;h3&gt;4 things the official result does not say out loud&lt;/h3&gt;
+&lt;div class="curiosity"&gt;
+&lt;div class="curiosity-num"&gt;01&lt;/div&gt;
+&lt;div class="curiosity-title"&gt;r = 0.94&lt;/div&gt;
+&lt;p&gt;Theory total correlated at 0.94 with final score. No single practical station came close (the highest was Molecular Biology at 0.71). If you had to predict someone's final rank from one number, their combined theory score would be right 94% of the way there.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="curiosity"&gt;
+&lt;div class="curiosity-num"&gt;02&lt;/div&gt;
+&lt;div class="curiosity-title"&gt;0.53 points&lt;/div&gt;
+&lt;p&gt;The gap between the last Gold and the first Silver was 0.53 points. In a 165-point competition, that is 0.3% of the winner's score. A single extra True/False statement on either theory paper would have flipped the result.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="curiosity"&gt;
+&lt;div class="curiosity-num"&gt;03&lt;/div&gt;
+&lt;div class="curiosity-title"&gt;Biochemistry was the "easy" lab&lt;/div&gt;
+&lt;p&gt;With 67.7% average attainment, Biochemistry was the most accessible practical station by a wide margin. Bioinformatics (44.5%) was the hardest. The 23-percentage-point gap between the easiest and hardest station is one of the largest in recent IBO history.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="curiosity"&gt;
+&lt;div class="curiosity-num"&gt;04&lt;/div&gt;
+&lt;div class="curiosity-title"&gt;Pengbo Li: +2.10 theory-practical gap&lt;/div&gt;
+&lt;p&gt;China's #2 finisher (overall rank 2, final score 160.11) had the single largest theory-over-practical gap of any competitor. His theory T-score was 2.10 standard deviations above his own practical average, yet he still finished second overall. Pure theory dominance at the very top of the field.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;For 2025 Hopefuls&lt;/h2&gt;
+&lt;h3&gt;What the data says to train next&lt;/h3&gt;
+&lt;div class="advice-item"&gt;
+&lt;div class="advice-num"&gt;1&lt;/div&gt;
+&lt;div class="advice-body"&gt;
+&lt;h4&gt;Theory decides more than any single lab&lt;/h4&gt;
+&lt;p&gt;Theory alone correlates r = 0.94 with final score. Master your written exam first. Every other component trails behind.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="advice-item"&gt;
+&lt;div class="advice-num"&gt;2&lt;/div&gt;
+&lt;div class="advice-body"&gt;
+&lt;h4&gt;Bioinformatics was the differentiator&lt;/h4&gt;
+&lt;p&gt;At 44.5% average attainment, most competitors struggled with the Bioinformatics station. Spending targeted time on sequence analysis, phylogenetic tools, and computational biology gives you the most room to gain points where others lose them.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="advice-item"&gt;
+&lt;div class="advice-num"&gt;3&lt;/div&gt;
+&lt;div class="advice-body"&gt;
+&lt;h4&gt;Just short of a medal? Here is the fix&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Merit to Bronze:&lt;/strong&gt; The gap was just 0.30 points. A steadier finish across all four labs, not one breakthrough topic, is usually what closes that gap.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bronze to Silver:&lt;/strong&gt; 0.54 points. Hunt for lost partial-credit marks on the theory paper before you hunt for new topics.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="advice-item"&gt;
+&lt;div class="advice-num"&gt;4&lt;/div&gt;
+&lt;div class="advice-body"&gt;
+&lt;h4&gt;Build a full team, not one star&lt;/h4&gt;
+&lt;p&gt;Every Gold-sweep delegation (China, USA, Chinese Taipei) medaled with all 4 members. Depth wins team results.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p style="font-size:0.82rem; color:var(--tw-prose-body,#888); text-align:center; margin:2rem 0 1rem;"&gt;
+Independent analysis of the &lt;a href="https://bioguide.world/papers/results/ibo/IBO2024.pdf"&gt;official IBO 2024 final results&lt;/a&gt; PDF. Not an official IBO publication.
+&lt;/p&gt;
+&lt;/div&gt;</description></item><item><title>IBO 2025 Results Analysis</title><link>https://bioguide.world/papers/ibo/results/2025/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bioguide.world/papers/ibo/results/2025/</guid><description>
+&lt;div class="biorchive-bg-layer" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;style&gt;
+.ra { max-width: 780px; margin: 0 auto; font-size: 0.97rem; }
+.ra h2 {
+font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 700;
+color: #8965c4; text-transform: uppercase; letter-spacing: 0.08em;
+margin: 3rem 0 0.3rem; font-size: 0.85rem;
+}
+.ra h3 {
+font-family: 'Fraunces', serif; font-size: 1.6rem; font-weight: 700;
+margin: 0.2rem 0 1rem; line-height: 1.25;
+}
+.ra p { line-height: 1.7; margin: 0.8rem 0; }
+.ra .hero-year { font-family: 'Fraunces', serif; font-size: 3.5rem; font-weight: 900; line-height: 1; }
+.ra .hero-year span { color: #8965c4; }
+.ra .hero-host { font-size: 1.2rem; color: var(--tw-prose-body, #666); margin: 0.3rem 0 1.5rem; }
+.ra .stats-row { display: flex; gap: 2.5rem; flex-wrap: wrap; margin: 1.5rem 0 2rem; }
+.ra .stat { text-align: left; }
+.ra .stat-num { font-family: 'Fraunces', serif; font-size: 2.2rem; font-weight: 800; line-height: 1.1; }
+.ra .stat-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--tw-prose-body, #888); }
+.ra hr { border: none; border-top: 1px solid rgba(137,101,196,0.15); margin: 2rem 0; }
+.medal-bars { margin: 1rem 0 1.5rem; }
+.medal-row { display: flex; align-items: center; margin: 0.6rem 0; }
+.medal-dot { width: 14px; height: 14px; border-radius: 50%; margin-right: 0.7rem; flex-shrink: 0; }
+.medal-dot.gold { background: #f5c842; }
+.medal-dot.silver { background: #adb5bd; }
+.medal-dot.bronze { background: #e07c3e; }
+.medal-dot.merit { background: #6c757d; }
+.medal-label { width: 65px; font-weight: 600; font-size: 0.9rem; }
+.medal-bar-track { flex: 1; height: 22px; background: rgba(137,101,196,0.08); border-radius: 4px; position: relative; overflow: hidden; }
+.medal-bar-fill { height: 100%; border-radius: 4px; }
+.medal-bar-fill.gold { background: #f5c842; }
+.medal-bar-fill.silver { background: #adb5bd; }
+.medal-bar-fill.bronze { background: #e07c3e; }
+.medal-bar-fill.merit { background: #6c757d; }
+.medal-count { margin-left: 0.7rem; font-weight: 700; font-size: 0.95rem; min-width: 30px; }
+.cutoff { margin: 1rem 0; }
+.cutoff-label { font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.cutoff-range { font-size: 0.85rem; color: var(--tw-prose-body, #888); float: right; }
+.cutoff-track { height: 8px; background: rgba(137,101,196,0.08); border-radius: 4px; margin: 0.5rem 0 1.2rem; position: relative; }
+.cutoff-fill { height: 100%; border-radius: 4px; position: absolute; }
+.cutoff-fill.gold { background: #f5c842; }
+.cutoff-fill.silver { background: #adb5bd; }
+.cutoff-fill.bronze { background: #e07c3e; }
+.cutoff-fill.merit { background: #6c757d; }
+.station-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.station-card { text-align: center; }
+.station-bar-wrap { height: 120px; display: flex; align-items: flex-end; justify-content: center; margin-bottom: 0.5rem; }
+.station-bar { width: 80px; border-radius: 6px 6px 0 0; background: #8965c4; min-height: 8px; transition: height 0.3s; }
+.station-pct { font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 700; margin-bottom: 0.2rem; }
+.station-name { font-size: 0.82rem; font-weight: 600; line-height: 1.3; }
+.station-sub { font-size: 0.72rem; color: var(--tw-prose-body, #888); }
+.callout {
+border: 1px solid rgba(137,101,196,0.2); border-radius: 10px;
+padding: 1.2rem 1.4rem; margin: 1.5rem 0; background: rgba(137,101,196,0.04);
+}
+.callout-tag { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #8965c4; font-weight: 700; margin-bottom: 0.4rem; }
+.callout p { margin: 0.3rem 0; }
+:is(.dark) .callout { background: rgba(137,101,196,0.08); border-color: rgba(137,101,196,0.25); }
+.team-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+.team-table th { text-align: left; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--tw-prose-body, #888); padding: 0.5rem 0.4rem; border-bottom: 2px solid rgba(137,101,196,0.15); }
+.team-table td { padding: 0.55rem 0.4rem; border-bottom: 1px solid rgba(137,101,196,0.08); }
+.team-table tr:hover td { background: rgba(137,101,196,0.04); }
+.team-rank { font-family: 'Fraunces', serif; font-weight: 700; color: #8965c4; }
+.team-medals { white-space: nowrap; }
+.team-medals .g { color: #f5c842; }
+.team-medals .s { color: #adb5bd; }
+.team-medals .b { color: #e07c3e; }
+.gap-section { margin: 1rem 0; }
+.gap-row { display: flex; align-items: center; margin: 0.5rem 0; font-size: 0.88rem; }
+.gap-name { width: 160px; text-align: right; padding-right: 0.8rem; font-weight: 500; }
+.gap-bar-area { flex: 1; position: relative; height: 20px; }
+.gap-bar { position: absolute; height: 100%; border-radius: 3px; top: 0; }
+.gap-bar.theory { background: #50b8a6; right: 50%; }
+.gap-bar.practical { background: #e07c3e; left: 50%; }
+.gap-val { width: 50px; font-weight: 600; font-size: 0.82rem; padding-left: 0.5rem; }
+.gap-center { position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: rgba(137,101,196,0.2); }
+.curiosity { background: rgba(137,101,196,0.06); border-radius: 10px; padding: 1.2rem 1.4rem; margin: 1rem 0; }
+.curiosity-num { font-family: 'Fraunces', serif; font-size: 0.75rem; color: #8965c4; font-weight: 700; }
+.curiosity-title { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 700; color: #8965c4; margin: 0.2rem 0 0.4rem; }
+.curiosity p { margin: 0.2rem 0; font-size: 0.9rem; }
+:is(.dark) .curiosity { background: rgba(137,101,196,0.1); }
+.advice-item { margin: 1.2rem 0; display: flex; gap: 0.8rem; }
+.advice-num { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 700; color: #8965c4; flex-shrink: 0; width: 28px; height: 28px; border: 2px solid #8965c4; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 0.1rem; }
+.advice-body h4 { margin: 0 0 0.3rem; font-size: 1rem; }
+.advice-body p { margin: 0; font-size: 0.9rem; color: var(--tw-prose-body, #666); }
+.funnel { margin: 1.5rem 0; }
+.funnel-row { display: flex; align-items: center; margin: 0.7rem 0; }
+.funnel-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--tw-prose-body, #888); width: 200px; }
+.funnel-track { flex: 1; height: 28px; background: rgba(137,101,196,0.08); border-radius: 4px; position: relative; }
+.funnel-fill { height: 100%; border-radius: 4px; background: rgba(137,101,196,0.25); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; }
+.funnel-fill.gold-f { background: rgba(245,200,66,0.35); }
+.funnel-fill.silver-f { background: rgba(173,181,189,0.35); }
+.funnel-fill.bronze-f { background: rgba(224,124,62,0.35); }
+&lt;/style&gt;
+&lt;div class="ra"&gt;
+&lt;div class="hero-year"&gt;IBO &lt;span&gt;2025&lt;/span&gt;&lt;/div&gt;
+&lt;div class="hero-host"&gt;Quezon City, Philippines -- by the numbers&lt;/div&gt;
+&lt;div class="stats-row"&gt;
+&lt;div class="stat"&gt;&lt;div class="stat-num"&gt;298&lt;/div&gt;&lt;div class="stat-label"&gt;Competitors&lt;/div&gt;&lt;/div&gt;
+&lt;div class="stat"&gt;&lt;div class="stat-num"&gt;81&lt;/div&gt;&lt;div class="stat-label"&gt;Countries&lt;/div&gt;&lt;/div&gt;
+&lt;div class="stat"&gt;&lt;div class="stat-num"&gt;4&lt;/div&gt;&lt;div class="stat-label"&gt;Practical Labs&lt;/div&gt;&lt;/div&gt;
+&lt;div class="stat"&gt;&lt;div class="stat-num"&gt;2&lt;/div&gt;&lt;div class="stat-label"&gt;Theory Papers&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Final Medal Tally&lt;/h2&gt;
+&lt;h3&gt;How the medals fell&lt;/h3&gt;
+&lt;div class="medal-bars"&gt;
+&lt;div class="medal-row"&gt;
+&lt;div class="medal-dot gold"&gt;&lt;/div&gt;
+&lt;div class="medal-label"&gt;Gold&lt;/div&gt;
+&lt;div class="medal-bar-track"&gt;&lt;div class="medal-bar-fill gold" style="width:33.7%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="medal-count"&gt;30&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="medal-row"&gt;
+&lt;div class="medal-dot silver"&gt;&lt;/div&gt;
+&lt;div class="medal-label"&gt;Silver&lt;/div&gt;
+&lt;div class="medal-bar-track"&gt;&lt;div class="medal-bar-fill silver" style="width:67.4%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="medal-count"&gt;60&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="medal-row"&gt;
+&lt;div class="medal-dot bronze"&gt;&lt;/div&gt;
+&lt;div class="medal-label"&gt;Bronze&lt;/div&gt;
+&lt;div class="medal-bar-track"&gt;&lt;div class="medal-bar-fill bronze" style="width:100%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="medal-count"&gt;89&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="medal-row"&gt;
+&lt;div class="medal-dot merit"&gt;&lt;/div&gt;
+&lt;div class="medal-label"&gt;Merit&lt;/div&gt;
+&lt;div class="medal-bar-track"&gt;&lt;div class="medal-bar-fill merit" style="width:33.7%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="medal-count"&gt;30&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;The Odds&lt;/h2&gt;
+&lt;h3&gt;What it actually took to medal in 2025&lt;/h3&gt;
+&lt;div class="callout" style="display:flex; justify-content:space-between; align-items:center;"&gt;
+&lt;div&gt;
+&lt;div class="callout-tag"&gt;Top of the Podium&lt;/div&gt;
+&lt;div style="font-size:1.2rem; font-weight:700;"&gt;Tianran Ma&lt;/div&gt;
+&lt;div style="font-size:0.85rem; color:var(--tw-prose-body,#888);"&gt;China &amp;middot; Final score 98.48&lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="font-family:'Fraunces',serif; font-size:2rem; font-weight:800; color:#f5c842;"&gt;1st&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel"&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Started the exams&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill" style="width:100%"&gt;298&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Earned any award (G+S+B+M)&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill" style="width:70.1%"&gt;209&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Medaled (G+S+B)&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill bronze-f" style="width:60.1%"&gt;179&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Reached Gold or Silver&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill silver-f" style="width:30.2%"&gt;90&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Gold medal&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill gold-f" style="width:10.1%"&gt;30&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Only 1 in 10 competitors (10.1%) walked away with Gold. The 60.1% medal rate was moderate by IBO standards, and the gaps between tiers were the tightest in recent memory.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Medal Cutoffs&lt;/h2&gt;
+&lt;h3&gt;Where the lines were actually drawn&lt;/h3&gt;
+&lt;p style="font-size:0.85rem; color:var(--tw-prose-body,#888);"&gt;Final score range needed to earn each award&lt;/p&gt;
+&lt;div class="cutoff"&gt;
+&lt;div class="cutoff-label"&gt;Gold&lt;/div&gt;&lt;div class="cutoff-range"&gt;82.21 -- 98.48&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div class="cutoff-track"&gt;&lt;div class="cutoff-fill gold" style="left:83.5%; width:16.5%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cutoff"&gt;
+&lt;div class="cutoff-label"&gt;Silver&lt;/div&gt;&lt;div class="cutoff-range"&gt;71.00 -- 81.83&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div class="cutoff-track"&gt;&lt;div class="cutoff-fill silver" style="left:72.1%; width:11.0%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cutoff"&gt;
+&lt;div class="cutoff-label"&gt;Bronze&lt;/div&gt;&lt;div class="cutoff-range"&gt;56.96 -- 70.72&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div class="cutoff-track"&gt;&lt;div class="cutoff-fill bronze" style="left:57.8%; width:14.0%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cutoff"&gt;
+&lt;div class="cutoff-label"&gt;Merit&lt;/div&gt;&lt;div class="cutoff-range"&gt;53.09 -- 56.75&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div class="cutoff-track"&gt;&lt;div class="cutoff-fill merit" style="left:53.9%; width:3.7%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Record-tight margins&lt;/div&gt;
+&lt;p&gt;The Gold cutoff (82.21) sat just &lt;strong&gt;0.38 points&lt;/strong&gt; above the best Silver score (81.83). Silver-Bronze was even tighter at 0.28, and Bronze-Merit was 0.21. These are among the slimmest gaps in IBO history: a single extra mark on one station would have changed medal colors for dozens of competitors.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;By the Numbers&lt;/h2&gt;
+&lt;h3&gt;How hard was each station, really?&lt;/h3&gt;
+&lt;p style="font-size:0.85rem; color:var(--tw-prose-body,#888);"&gt;Average points earned vs. each lab's own maximum&lt;/p&gt;
+&lt;div class="station-grid"&gt;
+&lt;div class="station-card"&gt;
+&lt;div class="station-bar-wrap"&gt;&lt;div class="station-bar" style="height:82%; background:#b891de;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="station-pct"&gt;82%&lt;/div&gt;
+&lt;div class="station-name"&gt;Cell &amp; Molecular Biology&lt;/div&gt;
+&lt;div class="station-sub"&gt;46.8 / 57.0 pts&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="station-card"&gt;
+&lt;div class="station-bar-wrap"&gt;&lt;div class="station-bar" style="height:74%; background:#a87bd4;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="station-pct"&gt;74%&lt;/div&gt;
+&lt;div class="station-name"&gt;Ecology &amp; Systematics&lt;/div&gt;
+&lt;div class="station-sub"&gt;51.6 / 70.0 pts&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="station-card"&gt;
+&lt;div class="station-bar-wrap"&gt;&lt;div class="station-bar" style="height:81%; background:#b891de;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="station-pct"&gt;81%&lt;/div&gt;
+&lt;div class="station-name"&gt;Biomedical Science&lt;/div&gt;
+&lt;div class="station-sub"&gt;41.1 / 51.0 pts&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="station-card"&gt;
+&lt;div class="station-bar-wrap"&gt;&lt;div class="station-bar" style="height:81%; background:#b891de;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="station-pct"&gt;81%&lt;/div&gt;
+&lt;div class="station-name"&gt;Microbiology&lt;/div&gt;
+&lt;div class="station-sub"&gt;77.4 / 96.0 pts&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Hardest to score on&lt;/div&gt;
+&lt;p&gt;Ecology &amp; Systematics was the toughest station: competitors captured just 74% of its 70 available points. It also had the lowest correlation with final rank (r = 0.66), making it the most "unpredictable" station where strong students sometimes stumbled.&lt;/p&gt;
+&lt;hr style="border:none; border-top:1px solid rgba(137,101,196,0.15); margin:0.8rem 0;"&gt;
+&lt;div class="callout-tag"&gt;Theory was king (again)&lt;/div&gt;
+&lt;p&gt;Theory total (Papers 1 + 2 combined) correlated at r = 0.94 with final score. Theory 1 averaged 78% attainment, Theory 2 averaged 72%. The combined theory score averaged 57.2 out of 76.4 maximum (75%).&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Team Standings&lt;/h2&gt;
+&lt;h3&gt;Top 15 delegations by medal count&lt;/h3&gt;
+&lt;div style="overflow-x:auto;"&gt;
+&lt;table class="team-table"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th&gt;#&lt;/th&gt;&lt;th&gt;Delegation&lt;/th&gt;&lt;th&gt;G&lt;/th&gt;&lt;th&gt;S&lt;/th&gt;&lt;th&gt;B&lt;/th&gt;&lt;th&gt;Avg Score&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;1&lt;/td&gt;&lt;td&gt;China&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;4&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;94.8&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;2&lt;/td&gt;&lt;td&gt;Singapore&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;4&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;88.8&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;3&lt;/td&gt;&lt;td&gt;United States&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;84.8&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;4&lt;/td&gt;&lt;td&gt;Iran&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;83.1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;5&lt;/td&gt;&lt;td&gt;India&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;82.6&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;6&lt;/td&gt;&lt;td&gt;Turkiye&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;79.4&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;7&lt;/td&gt;&lt;td&gt;Chinese Taipei&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;81.4&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;8&lt;/td&gt;&lt;td&gt;Thailand&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;77.1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;9&lt;/td&gt;&lt;td&gt;Vietnam&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td&gt;79.5&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;10&lt;/td&gt;&lt;td&gt;South Korea&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td&gt;79.3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;11&lt;/td&gt;&lt;td&gt;Poland&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td&gt;76.3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;12&lt;/td&gt;&lt;td&gt;Germany&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td&gt;75.4&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;13&lt;/td&gt;&lt;td&gt;Israel&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td&gt;73.9&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;14&lt;/td&gt;&lt;td&gt;Australia&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td&gt;74.0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;15&lt;/td&gt;&lt;td&gt;Japan&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;4&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;75.3&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Gold sweeps&lt;/div&gt;
+&lt;p&gt;China and Singapore are the only delegations where all 4 members won Gold. China's team averaged 94.8, the highest of any delegation by a margin of 6 points. Singapore's 4-Gold showing is a significant rise from IBO 2024 (where they earned 2G 2S).&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Theory vs. Practical&lt;/h2&gt;
+&lt;h3&gt;Some teams live on paper, others in the lab&lt;/h3&gt;
+&lt;p style="font-size:0.85rem; color:var(--tw-prose-body,#888);"&gt;Average gap between theory z-score and practical z-score, by country (teams of 4 only)&lt;/p&gt;
+&lt;h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#50b8a6; margin:1.2rem 0 0.5rem;"&gt;Stronger in Theory&lt;/h4&gt;
+&lt;div class="gap-section"&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Vietnam&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar theory" style="width:46.3%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#50b8a6;"&gt;+1.08&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;China&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar theory" style="width:33.8%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#50b8a6;"&gt;+0.79&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;United States&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar theory" style="width:32.5%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#50b8a6;"&gt;+0.76&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Iran&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar theory" style="width:27.0%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#50b8a6;"&gt;+0.63&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#e07c3e; margin:1.2rem 0 0.5rem;"&gt;Stronger in Practicals&lt;/h4&gt;
+&lt;div class="gap-section"&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;North Macedonia&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar practical" style="width:29.6%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#e07c3e;"&gt;-0.69&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Croatia&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar practical" style="width:28.3%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#e07c3e;"&gt;-0.66&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Portugal&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar practical" style="width:24.9%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#e07c3e;"&gt;-0.58&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;France&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar practical" style="width:23.6%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#e07c3e;"&gt;-0.55&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Reading this&lt;/div&gt;
+&lt;p&gt;Vietnam had the largest team-level theory advantage in 2025, finishing 1.08 standard deviations higher on theory than on practical. China and the United States followed a similar pattern. On the practical side, North Macedonia and Croatia built their performances disproportionately in the lab.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Curiosities&lt;/h2&gt;
+&lt;h3&gt;4 things the official result does not say out loud&lt;/h3&gt;
+&lt;div class="curiosity"&gt;
+&lt;div class="curiosity-num"&gt;01&lt;/div&gt;
+&lt;div class="curiosity-title"&gt;r = 0.942 and r = 0.942&lt;/div&gt;
+&lt;p&gt;Theory z-score and practical z-score correlated with final score at exactly the same strength: 0.942. This is a rare perfect balance. In most IBO years, theory dominates. In 2025, if you wanted to predict someone's final rank, theory and practical performance were equally useful.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="curiosity"&gt;
+&lt;div class="curiosity-num"&gt;02&lt;/div&gt;
+&lt;div class="curiosity-title"&gt;0.21 points&lt;/div&gt;
+&lt;p&gt;The gap between the last Bronze and the first Merit was just 0.21 points. In a 98.48-point competition, that is 0.2% of the winner's score. A single miscounted colony on a microbiology plate would have changed the outcome.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="curiosity"&gt;
+&lt;div class="curiosity-num"&gt;03&lt;/div&gt;
+&lt;div class="curiosity-title"&gt;Ecology was the wildcard&lt;/div&gt;
+&lt;p&gt;Ecology &amp; Systematics had the lowest correlation with final rank (r = 0.66) of any component. Strong students sometimes bombed it; weaker students sometimes aced it. It was the most unpredictable station, with just 74% average attainment. If you studied for this station specifically, you had a statistical edge others did not.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="curiosity"&gt;
+&lt;div class="curiosity-num"&gt;04&lt;/div&gt;
+&lt;div class="curiosity-title"&gt;Zhiyuan Wu: +1.52 theory-practical gap&lt;/div&gt;
+&lt;p&gt;China's 3rd-place finisher had the largest individual theory-over-practical gap in the entire field. His theory z-score was 1.52 standard deviations above his own practical average, yet he still finished 3rd overall (score 94.9). Pure theory dominance at the very top of the field.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;For 2026 Hopefuls&lt;/h2&gt;
+&lt;h3&gt;What the data says to train next&lt;/h3&gt;
+&lt;div class="advice-item"&gt;
+&lt;div class="advice-num"&gt;1&lt;/div&gt;
+&lt;div class="advice-body"&gt;
+&lt;h4&gt;Theory and practical matter equally&lt;/h4&gt;
+&lt;p&gt;Both correlated at r = 0.94 with final score. Do not neglect either. A balanced study plan that alternates between written problems and hands-on lab work is the statistical optimum.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="advice-item"&gt;
+&lt;div class="advice-num"&gt;2&lt;/div&gt;
+&lt;div class="advice-body"&gt;
+&lt;h4&gt;Ecology &amp; Systematics was the differentiator&lt;/h4&gt;
+&lt;p&gt;At 74% average attainment, it was the station where most competitors left points. Spending targeted time on field ecology, species identification, and cladistics gives you the most room to gain where others lose.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="advice-item"&gt;
+&lt;div class="advice-num"&gt;3&lt;/div&gt;
+&lt;div class="advice-body"&gt;
+&lt;h4&gt;The margins are vanishingly small&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Merit to Bronze:&lt;/strong&gt; 0.21 points. A steadier finish across all four labs is what closes this gap.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bronze to Silver:&lt;/strong&gt; 0.28 points. Focus on partial-credit marks on the theory paper before hunting new topics.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Silver to Gold:&lt;/strong&gt; 0.38 points. At this level, it is about avoiding any single bad station.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="advice-item"&gt;
+&lt;div class="advice-num"&gt;4&lt;/div&gt;
+&lt;div class="advice-body"&gt;
+&lt;h4&gt;Cell &amp; Molecular Biology was the easiest points&lt;/h4&gt;
+&lt;p&gt;With 82% average attainment, CMB was the most accessible station. Make sure you are not leaving free points here. Then invest extra time where the field struggles: Ecology (74%) and Theory Paper 2 (72%).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p style="font-size:0.82rem; color:var(--tw-prose-body,#888); text-align:center; margin:2rem 0 1rem;"&gt;
+Independent analysis of the official IBO 2025 final results PDF. Not an official IBO publication.
+&lt;/p&gt;
+&lt;/div&gt;</description></item><item><title>IBO 2026 Results Analysis</title><link>https://bioguide.world/papers/ibo/results/2026/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bioguide.world/papers/ibo/results/2026/</guid><description>
+&lt;div class="biorchive-bg-layer" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;style&gt;
+.ra { max-width: 780px; margin: 0 auto; font-size: 0.97rem; }
+.ra h2 {
+font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 700;
+color: #8965c4; text-transform: uppercase; letter-spacing: 0.08em;
+margin: 3rem 0 0.3rem; font-size: 0.85rem;
+}
+.ra h3 {
+font-family: 'Fraunces', serif; font-size: 1.6rem; font-weight: 700;
+margin: 0.2rem 0 1rem; line-height: 1.25;
+}
+.ra p { line-height: 1.7; margin: 0.8rem 0; }
+.ra .hero-year { font-family: 'Fraunces', serif; font-size: 3.5rem; font-weight: 900; line-height: 1; }
+.ra .hero-year span { color: #8965c4; }
+.ra .hero-host { font-size: 1.2rem; color: var(--tw-prose-body, #666); margin: 0.3rem 0 1.5rem; }
+.ra .stats-row { display: flex; gap: 2.5rem; flex-wrap: wrap; margin: 1.5rem 0 2rem; }
+.ra .stat { text-align: left; }
+.ra .stat-num { font-family: 'Fraunces', serif; font-size: 2.2rem; font-weight: 800; line-height: 1.1; }
+.ra .stat-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--tw-prose-body, #888); }
+.ra hr { border: none; border-top: 1px solid rgba(137,101,196,0.15); margin: 2rem 0; }
+.medal-bars { margin: 1rem 0 1.5rem; }
+.medal-row { display: flex; align-items: center; margin: 0.6rem 0; }
+.medal-dot { width: 14px; height: 14px; border-radius: 50%; margin-right: 0.7rem; flex-shrink: 0; }
+.medal-dot.gold { background: #f5c842; }
+.medal-dot.silver { background: #adb5bd; }
+.medal-dot.bronze { background: #e07c3e; }
+.medal-dot.merit { background: #6c757d; }
+.medal-label { width: 65px; font-weight: 600; font-size: 0.9rem; }
+.medal-bar-track { flex: 1; height: 22px; background: rgba(137,101,196,0.08); border-radius: 4px; position: relative; overflow: hidden; }
+.medal-bar-fill { height: 100%; border-radius: 4px; }
+.medal-bar-fill.gold { background: #f5c842; }
+.medal-bar-fill.silver { background: #adb5bd; }
+.medal-bar-fill.bronze { background: #e07c3e; }
+.medal-bar-fill.merit { background: #6c757d; }
+.medal-count { margin-left: 0.7rem; font-weight: 700; font-size: 0.95rem; min-width: 30px; }
+.cutoff { margin: 1rem 0; }
+.cutoff-label { font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.cutoff-range { font-size: 0.85rem; color: var(--tw-prose-body, #888); float: right; }
+.cutoff-track { height: 8px; background: rgba(137,101,196,0.08); border-radius: 4px; margin: 0.5rem 0 1.2rem; position: relative; }
+.cutoff-fill { height: 100%; border-radius: 4px; position: absolute; }
+.cutoff-fill.gold { background: #f5c842; }
+.cutoff-fill.silver { background: #adb5bd; }
+.cutoff-fill.bronze { background: #e07c3e; }
+.cutoff-fill.merit { background: #6c757d; }
+.station-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.station-card { text-align: center; }
+.station-bar-wrap { height: 120px; display: flex; align-items: flex-end; justify-content: center; margin-bottom: 0.5rem; }
+.station-bar { width: 80px; border-radius: 6px 6px 0 0; background: #8965c4; min-height: 8px; transition: height 0.3s; }
+.station-pct { font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 700; margin-bottom: 0.2rem; }
+.station-name { font-size: 0.82rem; font-weight: 600; line-height: 1.3; }
+.station-sub { font-size: 0.72rem; color: var(--tw-prose-body, #888); }
+.callout {
+border: 1px solid rgba(137,101,196,0.2); border-radius: 10px;
+padding: 1.2rem 1.4rem; margin: 1.5rem 0; background: rgba(137,101,196,0.04);
+}
+.callout-tag { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #8965c4; font-weight: 700; margin-bottom: 0.4rem; }
+.callout p { margin: 0.3rem 0; }
+:is(.dark) .callout { background: rgba(137,101,196,0.08); border-color: rgba(137,101,196,0.25); }
+.team-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+.team-table th { text-align: left; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--tw-prose-body, #888); padding: 0.5rem 0.4rem; border-bottom: 2px solid rgba(137,101,196,0.15); }
+.team-table td { padding: 0.55rem 0.4rem; border-bottom: 1px solid rgba(137,101,196,0.08); }
+.team-table tr:hover td { background: rgba(137,101,196,0.04); }
+.team-rank { font-family: 'Fraunces', serif; font-weight: 700; color: #8965c4; }
+.team-medals { white-space: nowrap; }
+.team-medals .g { color: #f5c842; }
+.team-medals .s { color: #adb5bd; }
+.team-medals .b { color: #e07c3e; }
+.gap-section { margin: 1rem 0; }
+.gap-row { display: flex; align-items: center; margin: 0.5rem 0; font-size: 0.88rem; }
+.gap-name { width: 160px; text-align: right; padding-right: 0.8rem; font-weight: 500; }
+.gap-bar-area { flex: 1; position: relative; height: 20px; }
+.gap-bar { position: absolute; height: 100%; border-radius: 3px; top: 0; }
+.gap-bar.theory { background: #50b8a6; right: 50%; }
+.gap-bar.practical { background: #e07c3e; left: 50%; }
+.gap-val { width: 50px; font-weight: 600; font-size: 0.82rem; padding-left: 0.5rem; }
+.gap-center { position: absolute; left: 50%; top: 0; bottom: 0; width: 1px; background: rgba(137,101,196,0.2); }
+.curiosity { background: rgba(137,101,196,0.06); border-radius: 10px; padding: 1.2rem 1.4rem; margin: 1rem 0; }
+.curiosity-num { font-family: 'Fraunces', serif; font-size: 0.75rem; color: #8965c4; font-weight: 700; }
+.curiosity-title { font-family: 'Fraunces', serif; font-size: 1.15rem; font-weight: 700; color: #8965c4; margin: 0.2rem 0 0.4rem; }
+.curiosity p { margin: 0.2rem 0; font-size: 0.9rem; }
+:is(.dark) .curiosity { background: rgba(137,101,196,0.1); }
+.advice-item { margin: 1.2rem 0; display: flex; gap: 0.8rem; }
+.advice-num { font-family: 'Fraunces', serif; font-size: 1.1rem; font-weight: 700; color: #8965c4; flex-shrink: 0; width: 28px; height: 28px; border: 2px solid #8965c4; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 0.1rem; }
+.advice-body h4 { margin: 0 0 0.3rem; font-size: 1rem; }
+.advice-body p { margin: 0; font-size: 0.9rem; color: var(--tw-prose-body, #666); }
+.funnel { margin: 1.5rem 0; }
+.funnel-row { display: flex; align-items: center; margin: 0.7rem 0; }
+.funnel-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--tw-prose-body, #888); width: 200px; }
+.funnel-track { flex: 1; height: 28px; background: rgba(137,101,196,0.08); border-radius: 4px; position: relative; }
+.funnel-fill { height: 100%; border-radius: 4px; background: rgba(137,101,196,0.25); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; }
+.funnel-fill.gold-f { background: rgba(245,200,66,0.35); }
+.funnel-fill.silver-f { background: rgba(173,181,189,0.35); }
+.funnel-fill.bronze-f { background: rgba(224,124,62,0.35); }
+&lt;/style&gt;
+&lt;div class="ra"&gt;
+&lt;div class="hero-year"&gt;IBO &lt;span&gt;2026&lt;/span&gt;&lt;/div&gt;
+&lt;div class="hero-host"&gt;Vilnius, Lithuania -- by the numbers&lt;/div&gt;
+&lt;div class="stats-row"&gt;
+&lt;div class="stat"&gt;&lt;div class="stat-num"&gt;302&lt;/div&gt;&lt;div class="stat-label"&gt;Competitors&lt;/div&gt;&lt;/div&gt;
+&lt;div class="stat"&gt;&lt;div class="stat-num"&gt;78&lt;/div&gt;&lt;div class="stat-label"&gt;Countries&lt;/div&gt;&lt;/div&gt;
+&lt;div class="stat"&gt;&lt;div class="stat-num"&gt;4&lt;/div&gt;&lt;div class="stat-label"&gt;Practical Labs&lt;/div&gt;&lt;/div&gt;
+&lt;div class="stat"&gt;&lt;div class="stat-num"&gt;2&lt;/div&gt;&lt;div class="stat-label"&gt;Theory Papers&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Final Medal Tally&lt;/h2&gt;
+&lt;h3&gt;How the medals fell&lt;/h3&gt;
+&lt;div class="medal-bars"&gt;
+&lt;div class="medal-row"&gt;
+&lt;div class="medal-dot gold"&gt;&lt;/div&gt;
+&lt;div class="medal-label"&gt;Gold&lt;/div&gt;
+&lt;div class="medal-bar-track"&gt;&lt;div class="medal-bar-fill gold" style="width:35.9%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="medal-count"&gt;33&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="medal-row"&gt;
+&lt;div class="medal-dot silver"&gt;&lt;/div&gt;
+&lt;div class="medal-label"&gt;Silver&lt;/div&gt;
+&lt;div class="medal-bar-track"&gt;&lt;div class="medal-bar-fill silver" style="width:65.2%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="medal-count"&gt;60&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="medal-row"&gt;
+&lt;div class="medal-dot bronze"&gt;&lt;/div&gt;
+&lt;div class="medal-label"&gt;Bronze&lt;/div&gt;
+&lt;div class="medal-bar-track"&gt;&lt;div class="medal-bar-fill bronze" style="width:100%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="medal-count"&gt;92&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="medal-row"&gt;
+&lt;div class="medal-dot merit"&gt;&lt;/div&gt;
+&lt;div class="medal-label"&gt;Merit&lt;/div&gt;
+&lt;div class="medal-bar-track"&gt;&lt;div class="medal-bar-fill merit" style="width:31.5%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="medal-count"&gt;29&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;The Odds&lt;/h2&gt;
+&lt;h3&gt;What it actually took to medal in 2026&lt;/h3&gt;
+&lt;div class="callout" style="display:flex; justify-content:space-between; align-items:center;"&gt;
+&lt;div&gt;
+&lt;div class="callout-tag"&gt;Top of the Podium&lt;/div&gt;
+&lt;div style="font-size:1.2rem; font-weight:700;"&gt;Ziheng Wang&lt;/div&gt;
+&lt;div style="font-size:0.85rem; color:var(--tw-prose-body,#888);"&gt;China &amp;middot; Final score 93.12&lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="font-family:'Fraunces',serif; font-size:2rem; font-weight:800; color:#f5c842;"&gt;1st&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel"&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Started the exams&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill" style="width:100%"&gt;302&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Earned any award (G+S+B+M)&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill" style="width:70.9%"&gt;214&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Medaled (G+S+B)&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill bronze-f" style="width:61.3%"&gt;185&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Reached Gold or Silver&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill silver-f" style="width:30.8%"&gt;93&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="funnel-row"&gt;
+&lt;div class="funnel-label"&gt;Gold medal&lt;/div&gt;
+&lt;div class="funnel-track"&gt;&lt;div class="funnel-fill gold-f" style="width:10.9%"&gt;33&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;About 1 in 9 competitors (10.9%) earned Gold. The 61.3% medal rate and 70.9% award rate were consistent with recent IBO editions, though the field was the largest in years at 302 competitors.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Medal Cutoffs&lt;/h2&gt;
+&lt;h3&gt;Where the lines were actually drawn&lt;/h3&gt;
+&lt;p style="font-size:0.85rem; color:var(--tw-prose-body,#888);"&gt;Composite score range needed to earn each award&lt;/p&gt;
+&lt;div class="cutoff"&gt;
+&lt;div class="cutoff-label"&gt;Gold&lt;/div&gt;&lt;div class="cutoff-range"&gt;75.73 -- 93.12&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div class="cutoff-track"&gt;&lt;div class="cutoff-fill gold" style="left:81.3%; width:18.7%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cutoff"&gt;
+&lt;div class="cutoff-label"&gt;Silver&lt;/div&gt;&lt;div class="cutoff-range"&gt;59.53 -- 75.41&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div class="cutoff-track"&gt;&lt;div class="cutoff-fill silver" style="left:63.9%; width:17.0%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cutoff"&gt;
+&lt;div class="cutoff-label"&gt;Bronze&lt;/div&gt;&lt;div class="cutoff-range"&gt;38.56 -- 59.03&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div class="cutoff-track"&gt;&lt;div class="cutoff-fill bronze" style="left:41.4%; width:22.0%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cutoff"&gt;
+&lt;div class="cutoff-label"&gt;Merit&lt;/div&gt;&lt;div class="cutoff-range"&gt;38.21 -- 45.26&lt;/div&gt;
+&lt;div style="clear:both"&gt;&lt;/div&gt;
+&lt;div class="cutoff-track"&gt;&lt;div class="cutoff-fill merit" style="left:41.0%; width:7.6%"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Tight at the top&lt;/div&gt;
+&lt;p&gt;The Gold cutoff (75.73) sat just &lt;strong&gt;0.32 points&lt;/strong&gt; above the best Silver score (75.41). Silver-Bronze was slightly wider at 0.50 points. The Bronze band itself was the widest tier, spanning over 20 points from 38.56 to 59.03.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;By the Numbers&lt;/h2&gt;
+&lt;h3&gt;How hard was each station, really?&lt;/h3&gt;
+&lt;p style="font-size:0.85rem; color:var(--tw-prose-body,#888);"&gt;Average points earned vs. each lab's own maximum&lt;/p&gt;
+&lt;div class="station-grid"&gt;
+&lt;div class="station-card"&gt;
+&lt;div class="station-bar-wrap"&gt;&lt;div class="station-bar" style="height:52%; background:#7c5db8;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="station-pct"&gt;52%&lt;/div&gt;
+&lt;div class="station-name"&gt;Molecular Biology&lt;/div&gt;
+&lt;div class="station-sub"&gt;51.9 / 100.0 pts&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="station-card"&gt;
+&lt;div class="station-bar-wrap"&gt;&lt;div class="station-bar" style="height:59%; background:#8965c4;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="station-pct"&gt;59%&lt;/div&gt;
+&lt;div class="station-name"&gt;Animal Physiology&lt;/div&gt;
+&lt;div class="station-sub"&gt;51.2 / 86.8 pts&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="station-card"&gt;
+&lt;div class="station-bar-wrap"&gt;&lt;div class="station-bar" style="height:54%; background:#7c5db8;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="station-pct"&gt;54%&lt;/div&gt;
+&lt;div class="station-name"&gt;Animal Morphology&lt;/div&gt;
+&lt;div class="station-sub"&gt;49.0 / 91.2 pts&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="station-card"&gt;
+&lt;div class="station-bar-wrap"&gt;&lt;div class="station-bar" style="height:60%; background:#8965c4;"&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class="station-pct"&gt;60%&lt;/div&gt;
+&lt;div class="station-name"&gt;Plant Comp. Biology&lt;/div&gt;
+&lt;div class="station-sub"&gt;34.9 / 58.0 pts&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Hardest to score on&lt;/div&gt;
+&lt;p&gt;Molecular Biology had the lowest attainment rate at just 52%: competitors scored barely half the available points despite having the widest raw-score range (0 to 100). It was also the most variable station, with scores ranging from 3 to 100.&lt;/p&gt;
+&lt;hr style="border:none; border-top:1px solid rgba(137,101,196,0.15); margin:0.8rem 0;"&gt;
+&lt;div class="callout-tag"&gt;Theory still dominates&lt;/div&gt;
+&lt;p&gt;Theory correlated at r = 0.96 with the composite final score. Theory Paper A averaged 71% attainment (33.0 / 46.4 max), Theory Paper B averaged 72% (32.4 / 44.8 max). Both papers were more accessible than any practical station.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Team Standings&lt;/h2&gt;
+&lt;h3&gt;Top 15 delegations by medal count&lt;/h3&gt;
+&lt;div style="overflow-x:auto;"&gt;
+&lt;table class="team-table"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th&gt;#&lt;/th&gt;&lt;th&gt;Delegation&lt;/th&gt;&lt;th&gt;G&lt;/th&gt;&lt;th&gt;S&lt;/th&gt;&lt;th&gt;B&lt;/th&gt;&lt;th&gt;Avg Score&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;1&lt;/td&gt;&lt;td&gt;China&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;4&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;91.1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;2&lt;/td&gt;&lt;td&gt;United States&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;4&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;86.6&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;3&lt;/td&gt;&lt;td&gt;Chinese Taipei&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;4&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;85.1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;4&lt;/td&gt;&lt;td&gt;South Korea&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;4&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;79.0&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;5&lt;/td&gt;&lt;td&gt;Singapore&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;79.1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;6&lt;/td&gt;&lt;td&gt;Iran&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;78.3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;7&lt;/td&gt;&lt;td&gt;Turkiye&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;72.9&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;8&lt;/td&gt;&lt;td&gt;Israel&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td&gt;65.3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;9&lt;/td&gt;&lt;td&gt;India&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;68.1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;10&lt;/td&gt;&lt;td&gt;Hungary&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td&gt;67.6&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;11&lt;/td&gt;&lt;td&gt;Japan&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td&gt;66.9&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;12&lt;/td&gt;&lt;td&gt;Indonesia&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td&gt;66.6&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;13&lt;/td&gt;&lt;td&gt;Czech Republic&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;2&lt;/span&gt;&lt;/td&gt;&lt;td&gt;65.2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;14&lt;/td&gt;&lt;td&gt;Netherlands&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;1&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;3&lt;/span&gt;&lt;/td&gt;&lt;td&gt;62.3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class="team-rank"&gt;15&lt;/td&gt;&lt;td&gt;Vietnam&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="g"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="s"&gt;4&lt;/span&gt;&lt;/td&gt;&lt;td class="team-medals"&gt;&lt;span class="b"&gt;0&lt;/span&gt;&lt;/td&gt;&lt;td&gt;68.5&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Four-way Gold sweep&lt;/div&gt;
+&lt;p&gt;For the first time in recent IBO history, four delegations placed all 4 members in Gold: China, the United States, Chinese Taipei, and South Korea. China led with an average score of 91.1, nearly 5 points clear of the next team. South Korea's full-team Gold sweep is a notable rise from 2025 (where they placed 1G 2S 1B).&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Theory vs. Practical&lt;/h2&gt;
+&lt;h3&gt;Some teams live on paper, others in the lab&lt;/h3&gt;
+&lt;p style="font-size:0.85rem; color:var(--tw-prose-body,#888);"&gt;Average gap between theory z-score and practical z-score, by country (teams of 4 only)&lt;/p&gt;
+&lt;h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#50b8a6; margin:1.2rem 0 0.5rem;"&gt;Stronger in Theory&lt;/h4&gt;
+&lt;div class="gap-section"&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;United States&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar theory" style="width:34.1%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#50b8a6;"&gt;+0.79&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Sweden&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar theory" style="width:33.2%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#50b8a6;"&gt;+0.77&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Mexico&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar theory" style="width:33.2%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#50b8a6;"&gt;+0.77&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Armenia&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar theory" style="width:24.1%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#50b8a6;"&gt;+0.56&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.08em; color:#e07c3e; margin:1.2rem 0 0.5rem;"&gt;Stronger in Practicals&lt;/h4&gt;
+&lt;div class="gap-section"&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Luxembourg&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar practical" style="width:50%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#e07c3e;"&gt;-1.16&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;India&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar practical" style="width:37.5%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#e07c3e;"&gt;-0.87&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Mongolia&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar practical" style="width:26.7%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#e07c3e;"&gt;-0.62&lt;/div&gt;&lt;/div&gt;
+&lt;div class="gap-row"&gt;&lt;div class="gap-name"&gt;Canada&lt;/div&gt;&lt;div class="gap-bar-area"&gt;&lt;div class="gap-center"&gt;&lt;/div&gt;&lt;div class="gap-bar practical" style="width:24.6%"&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class="gap-val" style="color:#e07c3e;"&gt;-0.57&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Reading this&lt;/div&gt;
+&lt;p&gt;The United States built their 4-Gold sweep on theory strength, finishing +0.79 standard deviations better on theory than on practical. Luxembourg showed the most extreme practical advantage at -1.16: their team outperformed their theory baseline dramatically in the lab. India, despite earning 1G 3S, showed a large practical lean (-0.87), suggesting their lab training is substantially stronger than their theory preparation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Curiosities&lt;/h2&gt;
+&lt;h3&gt;4 things the official result does not say out loud&lt;/h3&gt;
+&lt;div class="curiosity"&gt;
+&lt;div class="curiosity-num"&gt;01&lt;/div&gt;
+&lt;div class="curiosity-title"&gt;4 Gold sweeps&lt;/div&gt;
+&lt;p&gt;China, the United States, Chinese Taipei, and South Korea each put all 4 team members in Gold. That is the most simultaneous Gold sweeps in recent IBO history. The "big four" combined for 16 of the 33 Gold medals (48.5%).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="curiosity"&gt;
+&lt;div class="curiosity-num"&gt;02&lt;/div&gt;
+&lt;div class="curiosity-title"&gt;52% on Molecular Biology&lt;/div&gt;
+&lt;p&gt;The Molecular Biology practical was the hardest station competitors faced in 2026: the field captured barely half the 100 available points. Scores ranged from 3 to 100, one of the widest spreads of any IBO station in recent years. The top 33 Gold medalists averaged 77.7 on this station versus the field average of 51.9.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="curiosity"&gt;
+&lt;div class="curiosity-num"&gt;03&lt;/div&gt;
+&lt;div class="curiosity-title"&gt;Plant Comparative Biology: r = 0.889&lt;/div&gt;
+&lt;p&gt;Among the four practical stations, Plant Comparative Biology had the strongest correlation with final rank (r = 0.889). It was also the station with the smallest maximum score (58 points), yet it was the best single-station predictor of overall performance. Students who excelled here tended to excel everywhere.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="curiosity"&gt;
+&lt;div class="curiosity-num"&gt;04&lt;/div&gt;
+&lt;div class="curiosity-title"&gt;The largest IBO since 2019&lt;/div&gt;
+&lt;p&gt;With 302 competitors from 78 countries, IBO 2026 was the largest edition since pre-pandemic times. The field was 4 competitors larger than 2025 (298) and nearly 50% larger than the 2024 edition (203). The growing field did not dilute medal quality: the Gold cutoff was still tightly contested at 75.73.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;For 2027 Hopefuls&lt;/h2&gt;
+&lt;h3&gt;What the data says to train next&lt;/h3&gt;
+&lt;div class="advice-item"&gt;
+&lt;div class="advice-num"&gt;1&lt;/div&gt;
+&lt;div class="advice-body"&gt;
+&lt;h4&gt;Theory decides the podium&lt;/h4&gt;
+&lt;p&gt;Theory correlated r = 0.96 with final score. Master your written exam first. Theory papers averaged 71-72% attainment, making them the most accessible component, but the range between best and worst was what separated medal tiers.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="advice-item"&gt;
+&lt;div class="advice-num"&gt;2&lt;/div&gt;
+&lt;div class="advice-body"&gt;
+&lt;h4&gt;Molecular Biology was the differentiator&lt;/h4&gt;
+&lt;p&gt;At 52% average attainment, most competitors struggled badly with the Molecular Biology practical. Spending targeted time on gel electrophoresis, PCR technique, cloning protocols, and molecular lab skills gives you the most room to gain where others lose.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="advice-item"&gt;
+&lt;div class="advice-num"&gt;3&lt;/div&gt;
+&lt;div class="advice-body"&gt;
+&lt;h4&gt;Plant Biology is the stealth predictor&lt;/h4&gt;
+&lt;p&gt;Plant Comparative Biology had the strongest single-station correlation (r = 0.889) with final rank. Botany, plant anatomy, and comparative morphology are often neglected in favor of molecular or animal biology, yet they predicted success better than any other station in 2026.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="advice-item"&gt;
+&lt;div class="advice-num"&gt;4&lt;/div&gt;
+&lt;div class="advice-body"&gt;
+&lt;h4&gt;No easy stations to coast on&lt;/h4&gt;
+&lt;p&gt;The highest station attainment was just 60% (Plant Comp. Biology). Every station was hard. Build competence across all four rather than banking on one strength. In 2026, nobody medaled by acing a single station alone.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p style="font-size:0.82rem; color:var(--tw-prose-body,#888); text-align:center; margin:2rem 0 1rem;"&gt;
+Independent analysis of the official IBO 2026 final results PDF. Not an official IBO publication.
+&lt;/p&gt;
+&lt;/div&gt;</description></item><item><title>IBO Cross-Year Analysis (2022-2026)</title><link>https://bioguide.world/papers/ibo/results/cross-year/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://bioguide.world/papers/ibo/results/cross-year/</guid><description>
+&lt;div class="biorchive-bg-layer" aria-hidden="true"&gt;&lt;/div&gt;
+&lt;style&gt;
+.ra { max-width: 780px; margin: 0 auto; font-size: 0.97rem; }
+.ra h2 { font-family: 'Fraunces', serif; font-weight: 700; color: #8965c4; text-transform: uppercase; letter-spacing: 0.08em; margin: 3rem 0 0.3rem; font-size: 0.85rem; }
+.ra h3 { font-family: 'Fraunces', serif; font-size: 1.6rem; font-weight: 700; margin: 0.2rem 0 1rem; line-height: 1.25; }
+.ra p { line-height: 1.7; margin: 0.8rem 0; }
+.ra hr { border: none; border-top: 1px solid rgba(137,101,196,0.15); margin: 2rem 0; }
+.ra .hero-title { font-family: 'Fraunces', serif; font-size: 2.5rem; font-weight: 900; line-height: 1.1; margin-bottom: 0.5rem; }
+.ra .hero-title span { color: #8965c4; }
+.ra .hero-sub { font-size: 1.1rem; color: var(--tw-prose-body, #666); margin-bottom: 2rem; }
+.callout { border: 1px solid rgba(137,101,196,0.2); border-radius: 10px; padding: 1.2rem 1.4rem; margin: 1.5rem 0; background: rgba(137,101,196,0.04); }
+.callout-tag { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #8965c4; font-weight: 700; margin-bottom: 0.4rem; }
+.callout p { margin: 0.3rem 0; }
+:is(.dark) .callout { background: rgba(137,101,196,0.08); border-color: rgba(137,101,196,0.25); }
+.comp-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.82rem; }
+.comp-table th { text-align: left; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--tw-prose-body, #888); padding: 0.6rem 0.4rem; border-bottom: 2px solid rgba(137,101,196,0.15); }
+.comp-table td { padding: 0.55rem 0.4rem; border-bottom: 1px solid rgba(137,101,196,0.08); }
+.comp-table .year-col { font-family: 'Fraunces', serif; font-weight: 700; color: #8965c4; }
+.comp-table .highlight { background: rgba(137,101,196,0.06); font-weight: 600; }
+:is(.dark) .comp-table .highlight { background: rgba(137,101,196,0.12); }
+.trend-row { display: flex; align-items: center; margin: 0.6rem 0; }
+.trend-label { width: 60px; font-size: 0.82rem; font-weight: 600; }
+.trend-bars { flex: 1; display: flex; gap: 4px; align-items: flex-end; height: 32px; }
+.trend-bar { border-radius: 3px 3px 0 0; flex: 1; display: flex; align-items: flex-end; justify-content: center; font-size: 0.7rem; font-weight: 600; color: white; padding-bottom: 2px; }
+.country-track { margin: 1rem 0; }
+.ct-row { display: flex; align-items: center; margin: 0.5rem 0; gap: 0.5rem; font-size: 0.82rem; }
+.ct-name { width: 130px; font-weight: 600; text-align: right; flex-shrink: 0; }
+.ct-years { display: flex; gap: 3px; flex: 1; }
+.ct-year { height: 26px; flex: 1; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 0.68rem; font-weight: 600; }
+.ct-gold { background: rgba(245,200,66,0.3); color: #c4a020; }
+.ct-silver { background: rgba(173,181,189,0.3); color: #6c757d; }
+.ct-bronze { background: rgba(224,124,62,0.3); color: #b5633a; }
+.ct-none { background: rgba(137,101,196,0.06); color: #aaa; }
+:is(.dark) .ct-gold { color: #f5c842; } :is(.dark) .ct-silver { color: #ccc; }
+:is(.dark) .ct-bronze { color: #e07c3e; } :is(.dark) .ct-none { color: #666; }
+.insight-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.insight-card { background: rgba(137,101,196,0.06); border-radius: 10px; padding: 1.2rem; }
+.insight-num { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 800; color: #8965c4; line-height: 1; }
+.insight-label { font-size: 0.82rem; color: var(--tw-prose-body, #888); margin-top: 0.3rem; }
+:is(.dark) .insight-card { background: rgba(137,101,196,0.1); }
+&lt;/style&gt;
+&lt;div class="ra"&gt;
+&lt;div class="hero-title"&gt;Five Years of &lt;span&gt;IBO&lt;/span&gt;&lt;/div&gt;
+&lt;div class="hero-sub"&gt;How the competition changed from 2022 to 2026&lt;/div&gt;
+&lt;div class="insight-grid"&gt;
+&lt;div class="insight-card"&gt;
+&lt;div class="insight-num"&gt;1,283&lt;/div&gt;
+&lt;div class="insight-label"&gt;Total competitors analyzed across 5 years&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="insight-card"&gt;
+&lt;div class="insight-num"&gt;149&lt;/div&gt;
+&lt;div class="insight-label"&gt;Gold medals awarded&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="insight-card"&gt;
+&lt;div class="insight-num"&gt;20&lt;/div&gt;
+&lt;div class="insight-label"&gt;Practical stations examined&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="insight-card"&gt;
+&lt;div class="insight-num"&gt;0.89&lt;/div&gt;
+&lt;div class="insight-label"&gt;Average theory-final correlation (r)&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;The Big Picture&lt;/h2&gt;
+&lt;h3&gt;Competition at a glance, year by year&lt;/h3&gt;
+&lt;div style="overflow-x:auto;"&gt;
+&lt;table class="comp-table"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;2022&lt;/th&gt;&lt;th&gt;2023&lt;/th&gt;&lt;th&gt;2024&lt;/th&gt;&lt;th&gt;2025&lt;/th&gt;&lt;th&gt;2026&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Host&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Armenia (Online)&lt;/td&gt;&lt;td&gt;Al Ain, UAE&lt;/td&gt;&lt;td&gt;Astana, KZ&lt;/td&gt;&lt;td&gt;Quezon City, PH&lt;/td&gt;&lt;td&gt;Vilnius, LT&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Competitors&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;237&lt;/td&gt;&lt;td&gt;~293&lt;/td&gt;&lt;td&gt;203&lt;/td&gt;&lt;td&gt;298&lt;/td&gt;&lt;td class="highlight"&gt;302&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Countries&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;59&lt;/td&gt;&lt;td&gt;63&lt;/td&gt;&lt;td&gt;66&lt;/td&gt;&lt;td class="highlight"&gt;81&lt;/td&gt;&lt;td&gt;78&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Gold medals&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;26&lt;/td&gt;&lt;td&gt;29&lt;/td&gt;&lt;td&gt;31&lt;/td&gt;&lt;td&gt;30&lt;/td&gt;&lt;td class="highlight"&gt;33&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Medal rate&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;55.3%&lt;/td&gt;&lt;td&gt;~52.6%&lt;/td&gt;&lt;td class="highlight"&gt;84.2%&lt;/td&gt;&lt;td&gt;60.1%&lt;/td&gt;&lt;td&gt;61.5%&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Gold rate&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;11.0%&lt;/td&gt;&lt;td&gt;~9.9%&lt;/td&gt;&lt;td class="highlight"&gt;15.3%&lt;/td&gt;&lt;td&gt;10.1%&lt;/td&gt;&lt;td&gt;10.9%&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Gold-Silver gap&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;0.54 pts&lt;/td&gt;&lt;td&gt;0.39 pts&lt;/td&gt;&lt;td&gt;0.53 pts&lt;/td&gt;&lt;td class="highlight"&gt;0.38 pts&lt;/td&gt;&lt;td&gt;0.32 pts&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Theory vs final r&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;0.77&lt;/td&gt;&lt;td&gt;0.84&lt;/td&gt;&lt;td&gt;0.94&lt;/td&gt;&lt;td&gt;0.94&lt;/td&gt;&lt;td class="highlight"&gt;0.96&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Winner&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Y. Korobitsyn&lt;/td&gt;&lt;td&gt;Yufei Chen&lt;/td&gt;&lt;td&gt;Peiyu Wang&lt;/td&gt;&lt;td&gt;Tianran Ma&lt;/td&gt;&lt;td&gt;Ziheng Wang&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Key trends&lt;/div&gt;
+&lt;p&gt;IBO 2024 was an outlier with its 84.2% medal rate; the 2025 and 2026 editions returned to the historic ~60% range. The field has been growing steadily: 302 competitors in 2026 is the largest in recent memory, up from 203 in 2024. Meanwhile, the Gold-Silver gap has tightened from 0.54 (2022) to 0.32 (2026). Getting to the top is harder than ever.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Difficulty Trends&lt;/h2&gt;
+&lt;h3&gt;How hard were the practicals, really?&lt;/h3&gt;
+&lt;p style="font-size:0.85rem; color:var(--tw-prose-body,#888);"&gt;Average attainment rate (mean score / max score) for each practical station across all five years. Stations differ between years.&lt;/p&gt;
+&lt;div style="overflow-x:auto;"&gt;
+&lt;table class="comp-table"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Station&lt;/th&gt;&lt;th&gt;Attainment&lt;/th&gt;&lt;th&gt;Year&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Cell &amp; Molecular Biology&lt;/td&gt;&lt;td class="highlight"&gt;&lt;strong&gt;82%&lt;/strong&gt;&lt;/td&gt;&lt;td class="year-col"&gt;2025&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Microbiology&lt;/td&gt;&lt;td&gt;&lt;strong&gt;81%&lt;/strong&gt;&lt;/td&gt;&lt;td class="year-col"&gt;2025&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Biomedical Science&lt;/td&gt;&lt;td&gt;&lt;strong&gt;81%&lt;/strong&gt;&lt;/td&gt;&lt;td class="year-col"&gt;2025&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Ecology &amp; Systematics&lt;/td&gt;&lt;td&gt;&lt;strong&gt;74%&lt;/strong&gt;&lt;/td&gt;&lt;td class="year-col"&gt;2025&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Biochemistry (2024)&lt;/td&gt;&lt;td&gt;&lt;strong&gt;68%&lt;/strong&gt;&lt;/td&gt;&lt;td class="year-col"&gt;2024&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Plant Molecular Biology&lt;/td&gt;&lt;td&gt;&lt;strong&gt;64%&lt;/strong&gt;&lt;/td&gt;&lt;td class="year-col"&gt;2023&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Plant Comp. Biology&lt;/td&gt;&lt;td&gt;&lt;strong&gt;60%&lt;/strong&gt;&lt;/td&gt;&lt;td class="year-col"&gt;2026&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Animal Anatomy &amp; Physiology&lt;/td&gt;&lt;td&gt;&lt;strong&gt;59%&lt;/strong&gt;&lt;/td&gt;&lt;td class="year-col"&gt;2024&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Evolutionary Ecology&lt;/td&gt;&lt;td&gt;&lt;strong&gt;59%&lt;/strong&gt;&lt;/td&gt;&lt;td class="year-col"&gt;2023&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Animal Physiology&lt;/td&gt;&lt;td&gt;&lt;strong&gt;59%&lt;/strong&gt;&lt;/td&gt;&lt;td class="year-col"&gt;2026&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Bioinformatics (2023)&lt;/td&gt;&lt;td&gt;&lt;strong&gt;58%&lt;/strong&gt;&lt;/td&gt;&lt;td class="year-col"&gt;2023&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Molecular Biology (2024)&lt;/td&gt;&lt;td&gt;&lt;strong&gt;56%&lt;/strong&gt;&lt;/td&gt;&lt;td class="year-col"&gt;2024&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Animal Morphology&lt;/td&gt;&lt;td&gt;&lt;strong&gt;54%&lt;/strong&gt;&lt;/td&gt;&lt;td class="year-col"&gt;2026&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Bioinformatics (2022)&lt;/td&gt;&lt;td&gt;&lt;strong&gt;53%&lt;/strong&gt;&lt;/td&gt;&lt;td class="year-col"&gt;2022&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Molecular Biology (2026)&lt;/td&gt;&lt;td class="highlight"&gt;&lt;strong&gt;52%&lt;/strong&gt;&lt;/td&gt;&lt;td class="year-col"&gt;2026&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Plant Physiology&lt;/td&gt;&lt;td&gt;&lt;strong&gt;48%&lt;/strong&gt;&lt;/td&gt;&lt;td class="year-col"&gt;2022&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Biochemistry (2023)&lt;/td&gt;&lt;td&gt;&lt;strong&gt;46%&lt;/strong&gt;&lt;/td&gt;&lt;td class="year-col"&gt;2023&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Bioinformatics (2024)&lt;/td&gt;&lt;td&gt;&lt;strong&gt;45%&lt;/strong&gt;&lt;/td&gt;&lt;td class="year-col"&gt;2024&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Biochemistry (2022)&lt;/td&gt;&lt;td&gt;&lt;strong&gt;37%&lt;/strong&gt;&lt;/td&gt;&lt;td class="year-col"&gt;2022&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Zoology&lt;/td&gt;&lt;td class="highlight"&gt;&lt;strong&gt;29%&lt;/strong&gt;&lt;/td&gt;&lt;td class="year-col"&gt;2022&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;2025 was the most accessible year&lt;/div&gt;
+&lt;p&gt;IBO 2025 had the highest average station attainment of any year: three of its four stations sat above 80%. By contrast, IBO 2026 had no station above 60%, and Molecular Biology (52%) was the hardest single station since 2022's Zoology (29%).&lt;/p&gt;
+&lt;hr style="border:none; border-top:1px solid rgba(137,101,196,0.15); margin:0.8rem 0;"&gt;
+&lt;div class="callout-tag"&gt;Overall practical difficulty by year&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;2022: 42%&lt;/strong&gt; &amp;middot; &lt;strong&gt;2023: 57%&lt;/strong&gt; &amp;middot; &lt;strong&gt;2024: 57%&lt;/strong&gt; &amp;middot; &lt;strong&gt;2025: 80%&lt;/strong&gt; &amp;middot; &lt;strong&gt;2026: 56%&lt;/strong&gt;. The 2025 edition's unusually accessible labs made the theory exam the decisive differentiator.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Theory Still Decides Everything&lt;/h2&gt;
+&lt;h3&gt;Theory total vs. final score correlation&lt;/h3&gt;
+&lt;div class="trend-row"&gt;
+&lt;div class="trend-label"&gt;2022&lt;/div&gt;
+&lt;div class="trend-bars"&gt;&lt;div class="trend-bar" style="height:77%; background:#7c5db8;"&gt;0.77&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="trend-row"&gt;
+&lt;div class="trend-label"&gt;2023&lt;/div&gt;
+&lt;div class="trend-bars"&gt;&lt;div class="trend-bar" style="height:84%; background:#8965c4;"&gt;0.84&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="trend-row"&gt;
+&lt;div class="trend-label"&gt;2024&lt;/div&gt;
+&lt;div class="trend-bars"&gt;&lt;div class="trend-bar" style="height:94%; background:#a87bd4;"&gt;0.94&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="trend-row"&gt;
+&lt;div class="trend-label"&gt;2025&lt;/div&gt;
+&lt;div class="trend-bars"&gt;&lt;div class="trend-bar" style="height:94%; background:#b891de;"&gt;0.94&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="trend-row"&gt;
+&lt;div class="trend-label"&gt;2026&lt;/div&gt;
+&lt;div class="trend-bars"&gt;&lt;div class="trend-bar" style="height:96%; background:#c9a8e8;"&gt;0.96&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p style="font-size:0.85rem; color:var(--tw-prose-body,#888);"&gt;Correlation between theory total and final score. Higher = theory matters more.&lt;/p&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;Theory dominance has plateaued at near-perfect levels&lt;/div&gt;
+&lt;p&gt;After rising from 0.77 (2022) to 0.94 (2024), the theory-final correlation held at 0.94 in 2025 and reached 0.96 in 2026. At these levels, knowing a competitor's theory score predicts their final rank with near-certainty. The written exam is overwhelmingly the single most important component.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Country Trajectories&lt;/h2&gt;
+&lt;h3&gt;How did the top delegations perform across years?&lt;/h3&gt;
+&lt;p style="font-size:0.85rem; color:var(--tw-prose-body,#888);"&gt;Best medal breakdown per team. Read left to right: 2022 through 2026.&lt;/p&gt;
+&lt;div class="country-track"&gt;
+&lt;div class="ct-row"&gt;
+&lt;div class="ct-name"&gt;China&lt;/div&gt;
+&lt;div class="ct-years"&gt;
+&lt;div class="ct-year ct-none"&gt;N/A&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;3G 1S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;4G&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;4G&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;4G&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ct-row"&gt;
+&lt;div class="ct-name"&gt;United States&lt;/div&gt;
+&lt;div class="ct-years"&gt;
+&lt;div class="ct-year ct-none"&gt;N/A&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;2G 2S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;4G&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;3G 1S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;4G&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ct-row"&gt;
+&lt;div class="ct-name"&gt;Chinese Taipei&lt;/div&gt;
+&lt;div class="ct-years"&gt;
+&lt;div class="ct-year ct-gold"&gt;3G 1S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;3G 1S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;4G&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;1G 3S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;4G&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ct-row"&gt;
+&lt;div class="ct-name"&gt;South Korea&lt;/div&gt;
+&lt;div class="ct-years"&gt;
+&lt;div class="ct-year ct-silver"&gt;3S 1B&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;1G 3S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;2G 2S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;1G 2S 1B&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;4G&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ct-row"&gt;
+&lt;div class="ct-name"&gt;Singapore&lt;/div&gt;
+&lt;div class="ct-years"&gt;
+&lt;div class="ct-year ct-gold"&gt;2G 1S 1B&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;4G&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;2G 2S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;4G&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;3G 1S&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ct-row"&gt;
+&lt;div class="ct-name"&gt;Iran&lt;/div&gt;
+&lt;div class="ct-years"&gt;
+&lt;div class="ct-year ct-gold"&gt;4G&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;2G 2S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;3G 1S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;3G 1S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;3G 1S&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ct-row"&gt;
+&lt;div class="ct-name"&gt;India&lt;/div&gt;
+&lt;div class="ct-years"&gt;
+&lt;div class="ct-year ct-gold"&gt;1G 2S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;4G&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;1G 3S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;2G 2S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;1G 3S&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ct-row"&gt;
+&lt;div class="ct-name"&gt;Turkiye&lt;/div&gt;
+&lt;div class="ct-years"&gt;
+&lt;div class="ct-year ct-silver"&gt;4S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;1G 3S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;1G 3S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;2G 2S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;2G 2S&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ct-row"&gt;
+&lt;div class="ct-name"&gt;Thailand&lt;/div&gt;
+&lt;div class="ct-years"&gt;
+&lt;div class="ct-year ct-gold"&gt;2G 2S&lt;/div&gt;
+&lt;div class="ct-year ct-silver"&gt;4S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;1G 2S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;1G 3S&lt;/div&gt;
+&lt;div class="ct-year ct-silver"&gt;4S&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ct-row"&gt;
+&lt;div class="ct-name"&gt;Japan&lt;/div&gt;
+&lt;div class="ct-years"&gt;
+&lt;div class="ct-year ct-gold"&gt;1G 1S 1B&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;2G 2S&lt;/div&gt;
+&lt;div class="ct-year ct-silver"&gt;4S&lt;/div&gt;
+&lt;div class="ct-year ct-silver"&gt;4S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;1G 2S 1B&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ct-row"&gt;
+&lt;div class="ct-name"&gt;Germany&lt;/div&gt;
+&lt;div class="ct-years"&gt;
+&lt;div class="ct-year ct-gold"&gt;1G 2S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;2G 2S&lt;/div&gt;
+&lt;div class="ct-year ct-silver"&gt;3S 1B&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;1G 2S 1B&lt;/div&gt;
+&lt;div class="ct-year ct-silver"&gt;4S&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ct-row"&gt;
+&lt;div class="ct-name"&gt;Vietnam&lt;/div&gt;
+&lt;div class="ct-years"&gt;
+&lt;div class="ct-year ct-none"&gt;--&lt;/div&gt;
+&lt;div class="ct-year ct-none"&gt;--&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;3G 1S&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;1G 2S 1B&lt;/div&gt;
+&lt;div class="ct-year ct-silver"&gt;4S&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="ct-row"&gt;
+&lt;div class="ct-name"&gt;Australia&lt;/div&gt;
+&lt;div class="ct-years"&gt;
+&lt;div class="ct-year ct-bronze"&gt;2B&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;1G 1S 2B&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;1G 1S 2B&lt;/div&gt;
+&lt;div class="ct-year ct-gold"&gt;1G 1S 2B&lt;/div&gt;
+&lt;div class="ct-year ct-silver"&gt;1S 3B&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;South Korea's rise&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;South Korea&lt;/strong&gt; went from 0 Gold (2022) to a perfect 4G sweep in 2026, the most dramatic improvement of any delegation over five years. &lt;strong&gt;Turkiye&lt;/strong&gt; has steadily climbed from all-Silver (2022) to consistent 2G finishes.&lt;/p&gt;
+&lt;hr style="border:none; border-top:1px solid rgba(137,101,196,0.15); margin:0.8rem 0;"&gt;
+&lt;div class="callout-tag"&gt;The consistent powerhouses&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Iran&lt;/strong&gt; and &lt;strong&gt;Singapore&lt;/strong&gt; earned Gold every single year from 2022 to 2026, never falling below 2G in any edition. &lt;strong&gt;China&lt;/strong&gt; has been perfect (4G) in every year they competed (2023-2026). &lt;strong&gt;India&lt;/strong&gt; earned at least 1G in all five years.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;The Medal Boundary&lt;/h2&gt;
+&lt;h3&gt;How tight were the cutoffs?&lt;/h3&gt;
+&lt;div style="overflow-x:auto;"&gt;
+&lt;table class="comp-table"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Gap&lt;/th&gt;&lt;th&gt;2022&lt;/th&gt;&lt;th&gt;2023&lt;/th&gt;&lt;th&gt;2024&lt;/th&gt;&lt;th&gt;2025&lt;/th&gt;&lt;th&gt;2026&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Gold-Silver&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;0.54 pts&lt;/td&gt;&lt;td&gt;0.39 pts&lt;/td&gt;&lt;td&gt;0.53 pts&lt;/td&gt;&lt;td class="highlight"&gt;0.38 pts&lt;/td&gt;&lt;td&gt;0.32 pts&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Silver-Bronze&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;3.56 pts&lt;/td&gt;&lt;td&gt;0.06 pts&lt;/td&gt;&lt;td&gt;0.54 pts&lt;/td&gt;&lt;td class="highlight"&gt;0.28 pts&lt;/td&gt;&lt;td&gt;0.50 pts&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;strong&gt;Bronze-Merit&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;N/A&lt;/td&gt;&lt;td&gt;~0.8 pts&lt;/td&gt;&lt;td&gt;0.30 pts&lt;/td&gt;&lt;td class="highlight"&gt;0.21 pts&lt;/td&gt;&lt;td&gt;N/A&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class="callout"&gt;
+&lt;div class="callout-tag"&gt;The Gold-Silver gap keeps shrinking&lt;/div&gt;
+&lt;p&gt;The Gold-Silver gap has narrowed from 0.54 (2022) to 0.32 (2026). In 2025, the Bronze-Merit gap was just 0.21 points, the tightest boundary in our five-year window. At the IBO level, medal color is increasingly decided by margins smaller than a single True/False question.&lt;/p&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;What We Learned&lt;/h2&gt;
+&lt;h3&gt;6 patterns that hold across every year&lt;/h3&gt;
+&lt;div style="margin:1.5rem 0;"&gt;
+&lt;div style="display:flex; gap:0.8rem; margin:1.2rem 0;"&gt;
+&lt;div style="font-family:'Fraunces',serif; font-size:1.1rem; font-weight:700; color:#8965c4; flex-shrink:0; width:28px; height:28px; border:2px solid #8965c4; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-top:0.1rem;"&gt;1&lt;/div&gt;
+&lt;div&gt;
+&lt;h4 style="margin:0 0 0.3rem; font-size:1rem;"&gt;Theory is the best predictor of final rank&lt;/h4&gt;
+&lt;p style="margin:0; font-size:0.9rem; color:var(--tw-prose-body,#666);"&gt;Correlation has risen from 0.77 (2022) to 0.96 (2026) and has never dipped below 0.77 in five years. No practical station comes close. Prioritize written exam mastery above all else.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="display:flex; gap:0.8rem; margin:1.2rem 0;"&gt;
+&lt;div style="font-family:'Fraunces',serif; font-size:1.1rem; font-weight:700; color:#8965c4; flex-shrink:0; width:28px; height:28px; border:2px solid #8965c4; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-top:0.1rem;"&gt;2&lt;/div&gt;
+&lt;div&gt;
+&lt;h4 style="margin:0 0 0.3rem; font-size:1rem;"&gt;Practical difficulty varies wildly between years&lt;/h4&gt;
+&lt;p style="margin:0; font-size:0.9rem; color:var(--tw-prose-body,#666);"&gt;Average station attainment has ranged from 29% (Zoology 2022) to 82% (Cell &amp; Mol Biology 2025). Prepare for stations at every difficulty level. A year with easy labs (2025: 80% avg) is followed by a year with hard ones (2026: 56% avg).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="display:flex; gap:0.8rem; margin:1.2rem 0;"&gt;
+&lt;div style="font-family:'Fraunces',serif; font-size:1.1rem; font-weight:700; color:#8965c4; flex-shrink:0; width:28px; height:28px; border:2px solid #8965c4; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-top:0.1rem;"&gt;3&lt;/div&gt;
+&lt;div&gt;
+&lt;h4 style="margin:0 0 0.3rem; font-size:1rem;"&gt;The Gold-Silver gap is never more than half a point&lt;/h4&gt;
+&lt;p style="margin:0; font-size:0.9rem; color:var(--tw-prose-body,#666);"&gt;0.54, 0.39, 0.53, 0.38, 0.32 across five years, and trending down. Medal color at the top is decided by margins that amount to a single question. Accuracy under pressure matters more than breadth of knowledge.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="display:flex; gap:0.8rem; margin:1.2rem 0;"&gt;
+&lt;div style="font-family:'Fraunces',serif; font-size:1.1rem; font-weight:700; color:#8965c4; flex-shrink:0; width:28px; height:28px; border:2px solid #8965c4; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-top:0.1rem;"&gt;4&lt;/div&gt;
+&lt;div&gt;
+&lt;h4 style="margin:0 0 0.3rem; font-size:1rem;"&gt;Complete teams beat individual stars&lt;/h4&gt;
+&lt;p style="margin:0; font-size:0.9rem; color:var(--tw-prose-body,#666);"&gt;Every Gold-sweep delegation across all five years had all 4 members medal. In 2026, four teams achieved the perfect 4G sweep simultaneously. Winning programs invest in depth, not a single standout.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="display:flex; gap:0.8rem; margin:1.2rem 0;"&gt;
+&lt;div style="font-family:'Fraunces',serif; font-size:1.1rem; font-weight:700; color:#8965c4; flex-shrink:0; width:28px; height:28px; border:2px solid #8965c4; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-top:0.1rem;"&gt;5&lt;/div&gt;
+&lt;div&gt;
+&lt;h4 style="margin:0 0 0.3rem; font-size:1rem;"&gt;The field is growing and getting more competitive&lt;/h4&gt;
+&lt;p style="margin:0; font-size:0.9rem; color:var(--tw-prose-body,#666);"&gt;From 203 competitors (2024) to 302 (2026), and from 66 countries to 81 (2025). More nations are sending teams, and the medal boundaries have tightened despite the larger field. Each year it takes more to earn each tier.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="display:flex; gap:0.8rem; margin:1.2rem 0;"&gt;
+&lt;div style="font-family:'Fraunces',serif; font-size:1.1rem; font-weight:700; color:#8965c4; flex-shrink:0; width:28px; height:28px; border:2px solid #8965c4; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-top:0.1rem;"&gt;6&lt;/div&gt;
+&lt;div&gt;
+&lt;h4 style="margin:0 0 0.3rem; font-size:1rem;"&gt;China has been dominant since returning&lt;/h4&gt;
+&lt;p style="margin:0; font-size:0.9rem; color:var(--tw-prose-body,#666);"&gt;Since re-entering in 2023, China has never placed fewer than 3 Gold, and achieved 4G in three consecutive years (2024-2026). Their average team score has consistently been the highest of any delegation.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;p style="font-size:0.82rem; color:var(--tw-prose-body,#888); text-align:center; margin:2rem 0 0.5rem;"&gt;
+Independent analysis computed from official IBO final results PDFs (2022-2026). Not an official IBO publication.
+&lt;/p&gt;
+&lt;p style="font-size:0.82rem; color:var(--tw-prose-body,#888); text-align:center; margin:0 0 1rem;"&gt;
+&lt;a href="https://bioguide.world/papers/ibo/results/2022/"&gt;2022&lt;/a&gt; &amp;middot;
+&lt;a href="https://bioguide.world/papers/ibo/results/2023/"&gt;2023&lt;/a&gt; &amp;middot;
+&lt;a href="https://bioguide.world/papers/ibo/results/2024/"&gt;2024&lt;/a&gt; &amp;middot;
+&lt;a href="https://bioguide.world/papers/ibo/results/2025/"&gt;2025&lt;/a&gt; &amp;middot;
+&lt;a href="https://bioguide.world/papers/ibo/results/2026/"&gt;2026&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;</description></item></channel></rss>

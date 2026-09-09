@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="100" fill="#e5f0d8"/>
+  <g transform="translate(100,105)">
+    <!-- Turtle shell -->
+    <ellipse cx="0" cy="-5" rx="38" ry="28" fill="#8b7355" stroke="#6b5840" stroke-width="2"/>
+    <!-- Shell pattern -->
+    <path d="M0,-33 L-12,-18 L0,-5 L12,-18 Z" fill="#a08868" stroke="#6b5840" stroke-width="1.5"/>
+    <path d="M0,-5 L-12,-18 L-30,-12 L-22,5 Z" fill="#9b8060" stroke="#6b5840" stroke-width="1.5"/>
+    <path d="M0,-5 L12,-18 L30,-12 L22,5 Z" fill="#9b8060" stroke="#6b5840" stroke-width="1.5"/>
+    <path d="M0,-5 L-22,5 L-15,20 L0,15 Z" fill="#a08868" stroke="#6b5840" stroke-width="1.5"/>
+    <path d="M0,-5 L22,5 L15,20 L0,15 Z" fill="#a08868" stroke="#6b5840" stroke-width="1.5"/>
+    <!-- Head -->
+    <ellipse cx="0" cy="-42" rx="10" ry="10" fill="#6b8e50" stroke="#5a7a42" stroke-width="1.5"/>
+    <circle cx="-4" cy="-44" r="2" fill="#2a2a2a"/>
+    <circle cx="4" cy="-44" r="2" fill="#2a2a2a"/>
+    <path d="M-3,-39 Q0,-37 3,-39" fill="none" stroke="#5a7a42" stroke-width="1" stroke-linecap="round"/>
+    <!-- Legs -->
+    <ellipse cx="-32" cy="-18" rx="10" ry="5" fill="#6b8e50" stroke="#5a7a42" stroke-width="1.5" transform="rotate(-20,-32,-18)"/>
+    <ellipse cx="32" cy="-18" rx="10" ry="5" fill="#6b8e50" stroke="#5a7a42" stroke-width="1.5" transform="rotate(20,32,-18)"/>
+    <ellipse cx="-28" cy="15" rx="10" ry="5" fill="#6b8e50" stroke="#5a7a42" stroke-width="1.5" transform="rotate(15,-28,15)"/>
+    <ellipse cx="28" cy="15" rx="10" ry="5" fill="#6b8e50" stroke="#5a7a42" stroke-width="1.5" transform="rotate(-15,28,15)"/>
+    <!-- Tail -->
+    <path d="M0,22 Q-2,30 0,32" fill="none" stroke="#6b8e50" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

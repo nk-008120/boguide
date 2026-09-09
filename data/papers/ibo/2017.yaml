@@ -79,7 +79,7 @@ rounds:
             answer: true
             explanation: "A spiked-in fragment of known sequence and length acts as a positive control: if\
   \ it fails to come back intact, something in the extract, a polymerase inhibitor\
-  \, is blocking amplification."
+  , is blocking amplification."
           - letter: "D"
             text: "This dinosaur fossil extract is likely to contain contaminating DNA."
             answer: true
@@ -251,7 +251,7 @@ rounds:
             answer: "II"
             explanation: "A cut here causes a frameshift via random nucleotide loss/gain during repair, and\
   \ disrupts the protein more severely the earlier it falls in the coding sequence\
-  \, site II is the first NGG site that actually lies within the coding region (an\
+  , site II is the first NGG site that actually lies within the coding region (an\
   \ earlier cut in non-coding sequence would be tolerated)."
           - letter: "C"
             text: "Using the pair of modified Cas9s and guideRNAs increases off-target damage to other\
@@ -868,7 +868,7 @@ rounds:
             text: "Peak calcium flow is greater in high frequency muscle than to low frequency muscle."
             answer: true
             explanation: "Calcium must rush in to trigger contraction and then be removed again to allow relaxation\
-  \, doing both faster is exactly what high-frequency firing requires, so peak flow\
+  , doing both faster is exactly what high-frequency firing requires, so peak flow\
   \ is greater than at low firing frequency."
 
       - id: q24
@@ -1288,7 +1288,7 @@ rounds:
             answer: false
             explanation: "Antibody Y's binding site is shaped to fit both atrazine and its close structural\
   \ relative propazine, so it would also flag propazine-contaminated samples as atrazine\
-  \, it isn't atrazine-specific."
+  , it isn't atrazine-specific."
           - letter: "B"
             text: "All these pesticides probably have the same mechanism of action."
             answer: true
@@ -1430,7 +1430,7 @@ rounds:
             text: "Increasing the number of otters increases ocean primary productivity."
             answer: true
             explanation: "Otters prey on urchins, and reducing urchin numbers lets seaweed, a primary producer\
-  \, grow back, so more otters should raise, not have no effect on, primary productivity."
+  , grow back, so more otters should raise, not have no effect on, primary productivity."
 
       - id: q40
         number: "Q40"
@@ -2349,7 +2349,7 @@ rounds:
             answer: false
             explanation: "Muscle force scales with cross-sectional area (length squared) while body mass scales\
   \ with volume (length cubed), so mass grows faster than strength as size increases\
-  \, meaning larger animals can carry proportionally less, not more, relative to\
+  , meaning larger animals can carry proportionally less, not more, relative to\
   \ their body weight."
           - letter: "D"
             text: "A cat's (Felis silvestris catus) bones are disproportionately thick, as a ratio of\
@@ -2357,7 +2357,7 @@ rounds:
             answer: false
             explanation: "The same logic applies to skeletons: an elephant's far greater weight outpaces the\
   \ compensating increase in bone cross-sectional area, so its bones must be disproportionately\
-  \, not less, thick relative to body size compared to a cat's."
+  , not less, thick relative to body size compared to a cat's."
 
       - id: q19
         number: "Q19"
@@ -2456,7 +2456,7 @@ rounds:
             answer: false
             explanation: "Chimpanzee guts show more folding and a more complex hindgut than human guts, the\
   \ anatomical signature of a lower-quality diet needing more intensive digestion\
-  \, meaning chimps, not humans, invest more in digesting their food this way."
+  , meaning chimps, not humans, invest more in digesting their food this way."
           - letter: "B"
             text: "Chimpanzees eat more meat and fruits than orangutans  (Pongo)."
             answer: true
@@ -2752,7 +2752,7 @@ rounds:
             answer: false
             explanation: "Random sorting of chloroplasts during cell division is exactly why a variegated branch's\
   \ descendant cells drift over time toward becoming purely white or purely green\
-  \, daughter cells do not necessarily inherit the same mix."
+  , daughter cells do not necessarily inherit the same mix."
           - letter: "C"
             text: "Egg cells in a variegated flower can contain different chloroplasts with distinct\
   \ genomes."
@@ -2832,7 +2832,7 @@ rounds:
             answer: true
             explanation: "For a cell at the graft junction to survive on both antibiotics at once, its nucleus\
   \ must carry resistance genes originally found separately in each species' genome\
-  \, meaning the two nuclear genomes were combined into one."
+  , meaning the two nuclear genomes were combined into one."
           - letter: "C"
             text: "Plants which grow on the agar plates from (1) can cross with their parents."
             answer: true
@@ -2970,7 +2970,7 @@ rounds:
             explanation: "Since p53 only needs to stay above half of normal activity to still work, and each\
   \ subunit requires three functional partners to form an active tetramer, losing\
   \ just one allele already disrupts the large majority (15/16) of all possible tetramers\
-  \, but its function can still often be preserved by the remaining fully functional\
+  , but its function can still often be preserved by the remaining fully functional\
   \ allele's product, so both alleles being mutated is the more typical route to full\
   \ loss."
           - letter: "E"
@@ -3120,7 +3120,7 @@ rounds:
             answer: true
             explanation: "A pore that dissipates the proton gradient removes the back-pressure that normally\
   \ slows the electron transport chain, so electron flow, and with it oxygen consumption\
-  \, speeds up rather than staying limited."
+  , speeds up rather than staying limited."
 
       - id: q39
         number: "Q39"
@@ -3221,7 +3221,7 @@ rounds:
             answer: true
             explanation: "Across the data, antibodies from a given timepoint are consistently more effective\
   \ against older (contemporary-to-past) virus than against virus from later timepoints\
-  \, meaning they lag behind the currently circulating (including newly awakened)\
+  , meaning they lag behind the currently circulating (including newly awakened)\
   \ virus rather than being especially effective against it."
           - letter: "C"
             text: "Patient 2 developed AIDS last."
@@ -3233,7 +3233,7 @@ rounds:
             answer: false
             explanation: "Patient 3 never mounted an effective antibody response (a non-responder), removing\
   \ the immune pressure that normally drives a virus to keep evolving to escape detection\
-  \, so its virus would be expected to evolve the least rapidly, not the most."
+  , so its virus would be expected to evolve the least rapidly, not the most."
           - letter: "E"
             text: "The immune system is better at targeting cells infected with inactive virus than\
   \ active virus."
@@ -3364,7 +3364,7 @@ rounds:
             text: "People often contracted smallpox more than once."
             answer: false
             explanation: "Once someone recovered from smallpox, the antibodies they had made prevented reinfection\
-  \, exactly the immune memory that also makes vaccination against it effective."
+  , exactly the immune memory that also makes vaccination against it effective."
           - letter: "C"
             text: "Snow ended the Cholera outbreak by removing the handle from the Warwick Street water\
   \ pump."
@@ -3411,7 +3411,7 @@ rounds:
             answer: false
             explanation: "Since Victoria passed the condition on to multiple children, the causal mutation\
   \ must already have been present across many of her oocytes before any single meiosis\
-  \, best explained by it arising once, earlier, either in a gamete that formed her\
+  , best explained by it arising once, earlier, either in a gamete that formed her\
   \ or during mitosis in her own early germline cells, rather than as an independent\
   \ meiotic event in each egg."
           - letter: "C"

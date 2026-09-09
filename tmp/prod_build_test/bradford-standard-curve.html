@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bradford Standard Curve Interpolator | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #8965c4; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #8965c4;
+    padding-left: 12px;
+  }
+  .chart-wrap {
+    width: 100%;
+    background: #fafafa;
+    border-radius: 16px;
+    padding: 10px 6px 6px 6px;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+  }
+  .chart-wrap svg { display: block; width: 100%; height: auto; }
+  .section-label {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: #8965c4;
+    margin: 1rem 0 0.4rem 0;
+    letter-spacing: 0.3px;
+  }
+  .regression-readout {
+    background: #f3f0fa;
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-size: 0.85rem;
+    margin-bottom: 0.8rem;
+    font-family: 'Courier New', monospace;
+  }
+  .regression-readout b { color: #8965c4; }
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+  .data-table th {
+    background: #f3f0fa;
+    color: #5b3f8a;
+    font-weight: 700;
+    padding: 6px 8px;
+    text-align: left;
+    border-bottom: 2px solid #d8cef0;
+  }
+  .data-table td {
+    padding: 4px 6px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .data-table input[type=number] {
+    width: 90px;
+    padding: 4px 6px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    font-size: 0.85rem;
+    font-family: inherit;
+  }
+  .data-table input[type=number]:focus {
+    outline: none;
+    border-color: #8965c4;
+    box-shadow: 0 0 0 2px rgba(137,101,196,0.15);
+  }
+  .btn-row { display: flex; gap: 8px; margin-bottom: 1rem; flex-wrap: wrap; }
+  .btn {
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 2px solid #8965c4;
+    background: #fff;
+    color: #8965c4;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+  }
+  .btn:hover { background: #8965c4; color: #fff; }
+  .btn-delete {
+    border-color: #dc2626;
+    color: #dc2626;
+    padding: 2px 8px;
+    font-size: 0.72rem;
+  }
+  .btn-delete:hover { background: #dc2626; color: #fff; }
+  .interp-section {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.8rem;
+  }
+  .interp-row {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+  .interp-row label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #334155;
+    white-space: nowrap;
+  }
+  .interp-row input[type=number] {
+    width: 100px;
+    padding: 5px 8px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 0.88rem;
+    font-family: inherit;
+  }
+  .interp-row input[type=number]:focus {
+    outline: none;
+    border-color: #8965c4;
+    box-shadow: 0 0 0 2px rgba(137,101,196,0.15);
+  }
+  .result-box {
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 0.85rem;
+    margin-top: 4px;
+    line-height: 1.5;
+  }
+  .result-box b { color: #8965c4; }
+  .result-success {
+    background: #ecfdf5;
+    border: 1px solid #86efac;
+    color: #166534;
+  }
+  .result-amber {
+    background: #fffbeb;
+    border: 1px solid #fcd34d;
+    color: #92400e;
+  }
+  .dilution-highlight {
+    background: #fef3c7;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+  }
+  .note {
+    font-size: 0.75rem;
+    color: #6b7280;
+    text-align: center;
+    margin-top: 1rem;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 0.8rem;
+  }
+  @media (max-width: 500px) {
+    .widget-container { padding: 1rem; }
+    .interp-row { flex-direction: column; align-items: flex-start; gap: 4px; }
+  }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Bradford Standard Curve Interpolator</h3>
+  <div class="subtitle">Plot a BSA standard curve, fit a linear regression, and interpolate unknown protein concentrations -- the key practical skill tested in IBO 2018 and 2023.</div>
+
+  <div class="chart-wrap">
+    <svg id="chart" viewBox="0 0 620 400" xmlns="http://www.w3.org/2000/svg"></svg>
+  </div>
+
+  <div id="regressionReadout" class="regression-readout"></div>
+
+  <div class="section-label">Standard Data</div>
+  <table class="data-table" id="dataTable">
+    <thead>
+      <tr><th>#</th><th>[BSA] mg/mL</th><th>A595</th><th></th></tr>
+    </thead>
+    <tbody id="dataBody"></tbody>
+  </table>
+  <div class="btn-row">
+    <button class="btn" id="addRowBtn">+ Add Row</button>
+    <button class="btn" id="resetBtn">Reset to Default</button>
+  </div>
+
+  <div class="section-label">Unknown Interpolation</div>
+  <div class="interp-section">
+    <div class="interp-row">
+      <label>Unknown A595:</label>
+      <input type="number" id="unknownAbs" step="0.001" min="0" placeholder="e.g. 0.310">
+    </div>
+    <div class="interp-row">
+      <label>Dilution factor:</label>
+      <input type="number" id="dilutionFactor" step="1" min="1" value="1" placeholder="1">
+    </div>
+    <div id="interpResult"></div>
+  </div>
+
+  <div class="note">
+    Bradford assay: Coomassie Brilliant Blue G-250 shifts from 465 nm to 595 nm upon binding protein.
+    The linear range is typically 0.1--0.5 mg/mL BSA. Points outside this range curve away from the line.
+  </div>
+</div>
+
+<script>
+(function() {
+  "use strict";
+
+  var DEFAULT_DATA = [
+    { conc: 0.0, abs: 0.000 },
+    { conc: 0.1, abs: 0.081 },
+    { conc: 0.2, abs: 0.165 },
+    { conc: 0.3, abs: 0.252 },
+    { conc: 0.4, abs: 0.340 },
+    { conc: 0.5, abs: 0.428 },
+    { conc: 0.6, abs: 0.485 }
+  ];
+
+  var data = [];
+
+  function deepCopyData(src) {
+    var out = [];
+    for (var i = 0; i < src.length; i++) {
+      out.push({ conc: src[i].conc, abs: src[i].abs });
+    }
+    return out;
+  }
+
+  function resetData() {
+    data = deepCopyData(DEFAULT_DATA);
+  }
+
+  /* ---- Linear regression ---- */
+  function linReg(pts) {
+    var n = pts.length;
+    if (n < 2) return null;
+    var sx = 0, sy = 0, sxy = 0, sxx = 0, syy = 0;
+    for (var i = 0; i < n; i++) {
+      sx += pts[i].conc;
+      sy += pts[i].abs;
+      sxy += pts[i].conc * pts[i].abs;
+      sxx += pts[i].conc * pts[i].conc;
+      syy += pts[i].abs * pts[i].abs;
+    }
+    var denom = n * sxx - sx * sx;
+    if (denom === 0) return null;
+    var m = (n * sxy - sx * sy) / denom;
+    var b = (sy - m * sx) / n;
+    var ssRes = 0, ssTot = 0;
+    var meanY = sy / n;
+    for (var j = 0; j < n; j++) {
+      var pred = m * pts[j].conc + b;
+      ssRes += (pts[j].abs - pred) * (pts[j].abs - pred);
+      ssTot += (pts[j].abs - meanY) * (pts[j].abs - meanY);
+    }
+    var r2 = ssTot === 0 ? 1 : 1 - ssRes / ssTot;
+    return { m: m, b: b, r2: r2 };
+  }
+
+  /* ---- SVG chart ---- */
+  var SVG_NS = "http://www.w3.org/2000/svg";
+  var MARGIN = { top: 20, right: 20, bottom: 50, left: 60 };
+  var W = 620, H = 400;
+  var plotW = W - MARGIN.left - MARGIN.right;
+  var plotH = H - MARGIN.top - MARGIN.bottom;
+
+  function svgEl(tag, attrs) {
+    var el = document.createElementNS(SVG_NS, tag);
+    if (attrs) {
+      for (var k in attrs) {
+        if (attrs.hasOwnProperty(k)) {
+          el.setAttribute(k, attrs[k]);
+        }
+      }
+    }
+    return el;
+  }
+
+  function niceMax(arr, key) {
+    var mx = 0;
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i][key] > mx) mx = arr[i][key];
+    }
+    return mx;
+  }
+
+  function drawChart() {
+    var svg = document.getElementById("chart");
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+
+    var xMax = Math.max(0.7, niceMax(data, "conc") * 1.1);
+    var yMax = Math.max(1.2, niceMax(data, "abs") * 1.4);
+    yMax = Math.ceil(yMax * 10) / 10;
+
+    function xPx(v) { return MARGIN.left + (v / xMax) * plotW; }
+    function yPx(v) { return MARGIN.top + plotH - (v / yMax) * plotH; }
+
+    /* Background */
+    svg.appendChild(svgEl("rect", {
+      x: MARGIN.left, y: MARGIN.top,
+      width: plotW, height: plotH,
+      fill: "#ffffff", stroke: "#e2e8f0"
+    }));
+
+    /* Grid lines */
+    var xTicks = [];
+    var xStep = xMax <= 1 ? 0.1 : 0.2;
+    for (var xt = 0; xt <= xMax + 0.001; xt += xStep) xTicks.push(Math.round(xt * 100) / 100);
+
+    var yTicks = [];
+    var yStep = yMax <= 1.5 ? 0.2 : 0.5;
+    for (var yt = 0; yt <= yMax + 0.001; yt += yStep) yTicks.push(Math.round(yt * 100) / 100);
+
+    for (var gi = 0; gi < xTicks.length; gi++) {
+      var gx = xPx(xTicks[gi]);
+      svg.appendChild(svgEl("line", {
+        x1: gx, y1: MARGIN.top, x2: gx, y2: MARGIN.top + plotH,
+        stroke: "#e9ecef", "stroke-width": 1
+      }));
+      var label = svgEl("text", {
+        x: gx, y: MARGIN.top + plotH + 18,
+        "text-anchor": "middle",
+        "font-size": "11", fill: "#6b7280", "font-family": "Inter, system-ui, sans-serif"
+      });
+      label.textContent = xTicks[gi].toFixed(1);
+      svg.appendChild(label);
+    }
+
+    for (var gj = 0; gj < yTicks.length; gj++) {
+      var gy = yPx(yTicks[gj]);
+      svg.appendChild(svgEl("line", {
+        x1: MARGIN.left, y1: gy, x2: MARGIN.left + plotW, y2: gy,
+        stroke: "#e9ecef", "stroke-width": 1
+      }));
+      var labelY = svgEl("text", {
+        x: MARGIN.left - 8, y: gy + 4,
+        "text-anchor": "end",
+        "font-size": "11", fill: "#6b7280", "font-family": "Inter, system-ui, sans-serif"
+      });
+      labelY.textContent = yTicks[gj].toFixed(1);
+      svg.appendChild(labelY);
+    }
+
+    /* Axes */
+    svg.appendChild(svgEl("line", {
+      x1: MARGIN.left, y1: MARGIN.top + plotH,
+      x2: MARGIN.left + plotW, y2: MARGIN.top + plotH,
+      stroke: "#334155", "stroke-width": 1.5
+    }));
+    svg.appendChild(svgEl("line", {
+      x1: MARGIN.left, y1: MARGIN.top,
+      x2: MARGIN.left, y2: MARGIN.top + plotH,
+      stroke: "#334155", "stroke-width": 1.5
+    }));
+
+    /* Axis labels */
+    var xLabel = svgEl("text", {
+      x: MARGIN.left + plotW / 2, y: H - 5,
+      "text-anchor": "middle",
+      "font-size": "13", "font-weight": "600", fill: "#334155",
+      "font-family": "Inter, system-ui, sans-serif"
+    });
+    xLabel.textContent = "BSA Concentration (mg/mL)";
+    svg.appendChild(xLabel);
+
+    var yLabel = svgEl("text", {
+      x: 0, y: 0,
+      "text-anchor": "middle",
+      "font-size": "13", "font-weight": "600", fill: "#334155",
+      "font-family": "Inter, system-ui, sans-serif",
+      transform: "translate(16," + (MARGIN.top + plotH / 2) + ") rotate(-90)"
+    });
+    yLabel.textContent = "Absorbance at 595 nm (A595)";
+    svg.appendChild(yLabel);
+
+    /* Regression line */
+    var reg = linReg(data);
+    if (reg) {
+      var lx0 = 0;
+      var lx1 = xMax;
+      var ly0 = reg.m * lx0 + reg.b;
+      var ly1 = reg.m * lx1 + reg.b;
+      if (ly0 < 0) { lx0 = -reg.b / reg.m; ly0 = 0; }
+      if (ly1 > yMax) { lx1 = (yMax - reg.b) / reg.m; ly1 = yMax; }
+      svg.appendChild(svgEl("line", {
+        x1: xPx(lx0), y1: yPx(ly0),
+        x2: xPx(lx1), y2: yPx(ly1),
+        stroke: "#8965c4", "stroke-width": 2, "stroke-opacity": "0.6"
+      }));
+    }
+
+    /* Interpolation dashed lines */
+    var unknownVal = parseFloat(document.getElementById("unknownAbs").value);
+    if (reg && !isNaN(unknownVal) && unknownVal > 0 && reg.m !== 0) {
+      var interpConc = (unknownVal - reg.b) / reg.m;
+      if (interpConc >= 0 && interpConc <= xMax && unknownVal <= yMax) {
+        /* Horizontal dashed line from y-axis to regression line */
+        svg.appendChild(svgEl("line", {
+          x1: xPx(0), y1: yPx(unknownVal),
+          x2: xPx(interpConc), y2: yPx(unknownVal),
+          stroke: "#d97706", "stroke-width": 1.5, "stroke-dasharray": "6,4"
+        }));
+        /* Vertical dashed line from intersection to x-axis */
+        svg.appendChild(svgEl("line", {
+          x1: xPx(interpConc), y1: yPx(unknownVal),
+          x2: xPx(interpConc), y2: yPx(0),
+          stroke: "#d97706", "stroke-width": 1.5, "stroke-dasharray": "6,4"
+        }));
+        /* Intersection dot */
+        svg.appendChild(svgEl("circle", {
+          cx: xPx(interpConc), cy: yPx(unknownVal),
+          r: 5, fill: "#d97706", stroke: "#fff", "stroke-width": 1.5
+        }));
+        /* Value label at the x-axis */
+        var interpLabel = svgEl("text", {
+          x: xPx(interpConc), y: yPx(0) + 32,
+          "text-anchor": "middle",
+          "font-size": "11", "font-weight": "700", fill: "#d97706",
+          "font-family": "Inter, system-ui, sans-serif"
+        });
+        interpLabel.textContent = interpConc.toFixed(3);
+        svg.appendChild(interpLabel);
+      }
+    }
+
+    /* Data points */
+    for (var di = 0; di < data.length; di++) {
+      svg.appendChild(svgEl("circle", {
+        cx: xPx(data[di].conc), cy: yPx(data[di].abs),
+        r: 5, fill: "#8965c4", stroke: "#fff", "stroke-width": 1.5
+      }));
+    }
+  }
+
+  /* ---- Data table ---- */
+  function buildTable() {
+    var tbody = document.getElementById("dataBody");
+    while (tbody.firstChild) tbody.removeChild(tbody.firstChild);
+    for (var i = 0; i < data.length; i++) {
+      (function(idx) {
+        var tr = document.createElement("tr");
+
+        var tdNum = document.createElement("td");
+        tdNum.textContent = idx + 1;
+        tdNum.style.color = "#94a3b8";
+        tdNum.style.fontWeight = "600";
+        tr.appendChild(tdNum);
+
+        var tdConc = document.createElement("td");
+        var inConc = document.createElement("input");
+        inConc.type = "number";
+        inConc.step = "0.001";
+        inConc.min = "0";
+        inConc.value = data[idx].conc;
+        inConc.addEventListener("input", function() {
+          var v = parseFloat(this.value);
+          if (!isNaN(v) && v >= 0) { data[idx].conc = v; update(); }
+        });
+        tdConc.appendChild(inConc);
+        tr.appendChild(tdConc);
+
+        var tdAbs = document.createElement("td");
+        var inAbs = document.createElement("input");
+        inAbs.type = "number";
+        inAbs.step = "0.001";
+        inAbs.min = "0";
+        inAbs.value = data[idx].abs;
+        inAbs.addEventListener("input", function() {
+          var v = parseFloat(this.value);
+          if (!isNaN(v) && v >= 0) { data[idx].abs = v; update(); }
+        });
+        tdAbs.appendChild(inAbs);
+        tr.appendChild(tdAbs);
+
+        var tdDel = document.createElement("td");
+        if (data.length > 2) {
+          var delBtn = document.createElement("button");
+          delBtn.className = "btn btn-delete";
+          delBtn.textContent = "X";
+          delBtn.addEventListener("click", function() {
+            data.splice(idx, 1);
+            buildTable();
+            update();
+          });
+          tdDel.appendChild(delBtn);
+        }
+        tr.appendChild(tdDel);
+
+        tbody.appendChild(tr);
+      })(i);
+    }
+  }
+
+  /* ---- Regression readout ---- */
+  function updateRegressionReadout() {
+    var el = document.getElementById("regressionReadout");
+    var reg = linReg(data);
+    if (!reg) {
+      el.innerHTML = "Need at least 2 data points for regression.";
+      return;
+    }
+    var sign = reg.b >= 0 ? " + " : " - ";
+    var bAbs = Math.abs(reg.b);
+    el.innerHTML = "<b>y</b> = " + reg.m.toFixed(4) + "x" + sign + bAbs.toFixed(4) +
+      "  &nbsp;&nbsp;|&nbsp;&nbsp; <b>R²</b> = " + reg.r2.toFixed(6);
+  }
+
+  /* ---- Interpolation ---- */
+  function updateInterpolation() {
+    var resultEl = document.getElementById("interpResult");
+    var absVal = parseFloat(document.getElementById("unknownAbs").value);
+    var df = parseFloat(document.getElementById("dilutionFactor").value);
+    if (isNaN(df) || df < 1) df = 1;
+    var reg = linReg(data);
+
+    if (isNaN(absVal) || absVal <= 0 || !reg || reg.m === 0) {
+      resultEl.innerHTML = "";
+      return;
+    }
+
+    var interpConc = (absVal - reg.b) / reg.m;
+    if (interpConc < 0) interpConc = 0;
+    var originalConc = interpConc * df;
+
+    var html = "<div class=\"result-box result-success\" style=\"margin-bottom:6px;\">" +
+      "Interpolated concentration: <b>" + interpConc.toFixed(4) + " mg/mL</b></div>";
+
+    if (df > 1) {
+      html += "<div class=\"result-box result-success\">" +
+        "Original concentration = " + interpConc.toFixed(4) + " x " + df +
+        " = <span class=\"dilution-highlight\">" + originalConc.toFixed(4) + " mg/mL</span></div>";
+    } else {
+      html += "<div class=\"result-box result-amber\">" +
+        "Did you dilute your sample? If so, enter the dilution factor above. " +
+        "Forgetting the dilution factor is the #1 Bradford assay mistake in IBO exams.</div>";
+    }
+
+    resultEl.innerHTML = html;
+  }
+
+  /* ---- Master update ---- */
+  function update() {
+    drawChart();
+    updateRegressionReadout();
+    updateInterpolation();
+  }
+
+  /* ---- Event bindings ---- */
+  document.getElementById("addRowBtn").addEventListener("click", function() {
+    var lastConc = data.length > 0 ? data[data.length - 1].conc : 0;
+    data.push({ conc: Math.round((lastConc + 0.1) * 1000) / 1000, abs: 0 });
+    buildTable();
+    update();
+  });
+
+  document.getElementById("resetBtn").addEventListener("click", function() {
+    resetData();
+    buildTable();
+    update();
+  });
+
+  document.getElementById("unknownAbs").addEventListener("input", function() {
+    update();
+  });
+
+  document.getElementById("dilutionFactor").addEventListener("input", function() {
+    update();
+  });
+
+  /* ---- Init ---- */
+  resetData();
+  buildTable();
+  update();
+})();
+</script>
+</body>
+</html>

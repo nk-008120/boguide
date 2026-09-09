@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dilution Calculator | BiOGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 560px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #5b21b6; font-weight: 700; font-size: 1.1rem; }
+  .subtitle {
+    font-size: 0.82rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #8965c4;
+    padding-left: 12px;
+    line-height: 1.5;
+  }
+  .tabs {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 1.2rem;
+  }
+  .tab-btn {
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    color: #334155;
+    padding: 7px 14px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-family: inherit;
+  }
+  .tab-btn.active {
+    background: #8965c4;
+    color: #fff;
+    border-color: #8965c4;
+  }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+  .field {
+    margin-bottom: 14px;
+  }
+  .field label {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 4px;
+  }
+  .field .unit {
+    font-size: 0.75rem;
+    color: #6b7280;
+    font-weight: 400;
+  }
+  .field input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1.5px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    transition: border-color 0.15s;
+  }
+  .field input:focus {
+    outline: none;
+    border-color: #8965c4;
+    box-shadow: 0 0 0 3px rgba(137,101,196,0.12);
+  }
+  .formula-box {
+    background: #f5f3ff;
+    border-radius: 12px;
+    padding: 14px;
+    margin: 16px 0;
+    text-align: center;
+    font-size: 0.95rem;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    color: #374151;
+  }
+  .formula-box .result {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #5b21b6;
+    margin-top: 6px;
+  }
+  .serial-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 0.85rem;
+  }
+  .serial-row .tube-num {
+    background: #8965c4;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.72rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .serial-row .details {
+    flex: 1;
+  }
+  .serial-row .conc {
+    font-weight: 600;
+    color: #5b21b6;
+    min-width: 80px;
+    text-align: right;
+  }
+  .row-flex {
+    display: flex;
+    gap: 12px;
+  }
+  .row-flex .field { flex: 1; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Dilution Calculator</h3>
+  <div class="subtitle">Calculate volumes for simple dilutions (C1V1 = C2V2) or build a serial dilution series for Bradford standards or enzyme kinetics.</div>
+
+  <div class="tabs">
+    <button class="tab-btn active" id="tabSimple" type="button">Simple Dilution</button>
+    <button class="tab-btn" id="tabSerial" type="button">Serial Dilution</button>
+  </div>
+
+  <div class="tab-content active" id="panelSimple">
+    <div class="row-flex">
+      <div class="field">
+        <label>Stock concentration (C1) <span class="unit">any unit</span></label>
+        <input type="number" id="c1" value="1.0" step="0.01" min="0">
+      </div>
+      <div class="field">
+        <label>Desired concentration (C2) <span class="unit">same unit</span></label>
+        <input type="number" id="c2" value="0.3" step="0.01" min="0">
+      </div>
+    </div>
+    <div class="field">
+      <label>Desired final volume (V2) <span class="unit">uL or mL</span></label>
+      <input type="number" id="v2" value="200" step="1" min="0">
+    </div>
+    <div class="formula-box" id="simpleResult">
+      C1 x V1 = C2 x V2<br>
+      <div class="result"></div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="panelSerial">
+    <div class="row-flex">
+      <div class="field">
+        <label>Stock concentration <span class="unit">mg/mL or mM</span></label>
+        <input type="number" id="serialStock" value="1.0" step="0.01" min="0">
+      </div>
+      <div class="field">
+        <label>Final volume per tube <span class="unit">uL</span></label>
+        <input type="number" id="serialVol" value="200" step="1" min="0">
+      </div>
+    </div>
+    <div class="row-flex">
+      <div class="field">
+        <label>Number of tubes <span class="unit">including blank</span></label>
+        <input type="number" id="serialTubes" value="7" step="1" min="2" max="12">
+      </div>
+      <div class="field">
+        <label>Highest concentration <span class="unit">same unit as stock</span></label>
+        <input type="number" id="serialMax" value="0.6" step="0.01" min="0">
+      </div>
+    </div>
+    <div style="margin-top:14px; font-size:0.82rem; font-weight:600; color:#334155;">Dilution Series:</div>
+    <div id="serialOutput" style="margin-top:6px;"></div>
+  </div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+
+  var tabSimple = document.getElementById('tabSimple');
+  var tabSerial = document.getElementById('tabSerial');
+  var panelSimple = document.getElementById('panelSimple');
+  var panelSerial = document.getElementById('panelSerial');
+
+  tabSimple.addEventListener('click', function() {
+    tabSimple.classList.add('active');
+    tabSerial.classList.remove('active');
+    panelSimple.classList.add('active');
+    panelSerial.classList.remove('active');
+  });
+  tabSerial.addEventListener('click', function() {
+    tabSerial.classList.add('active');
+    tabSimple.classList.remove('active');
+    panelSerial.classList.add('active');
+    panelSimple.classList.remove('active');
+  });
+
+  function updateSimple() {
+    var c1 = parseFloat(document.getElementById('c1').value) || 0;
+    var c2 = parseFloat(document.getElementById('c2').value) || 0;
+    var v2 = parseFloat(document.getElementById('v2').value) || 0;
+    var box = document.getElementById('simpleResult');
+
+    if (c1 <= 0 || c2 <= 0 || v2 <= 0) {
+      box.innerHTML = 'C1 &times; V1 = C2 &times; V2<br><div class="result">Enter valid values</div>';
+      return;
+    }
+    if (c2 > c1) {
+      box.innerHTML = 'C1 &times; V1 = C2 &times; V2<br><div class="result" style="color:#dc2626;">C2 cannot exceed C1</div>';
+      return;
+    }
+    var v1 = (c2 * v2) / c1;
+    var diluent = v2 - v1;
+    var unit = v2 >= 1000 ? '' : '';
+    box.innerHTML = c1 + ' &times; V1 = ' + c2 + ' &times; ' + v2 +
+      '<br><div class="result">Take ' + v1.toFixed(1) + ' of stock + ' + diluent.toFixed(1) + ' of buffer</div>' +
+      '<div style="font-size:0.78rem; color:#6b7280; margin-top:4px;">Dilution factor: ' + (c1/c2).toFixed(1) + '-fold</div>';
+  }
+
+  function updateSerial() {
+    var stock = parseFloat(document.getElementById('serialStock').value) || 0;
+    var vol = parseFloat(document.getElementById('serialVol').value) || 0;
+    var tubes = parseInt(document.getElementById('serialTubes').value) || 7;
+    var maxConc = parseFloat(document.getElementById('serialMax').value) || 0;
+    var output = document.getElementById('serialOutput');
+
+    if (stock <= 0 || vol <= 0 || maxConc <= 0 || tubes < 2) {
+      output.innerHTML = '<div style="color:#6b7280; font-size:0.82rem;">Enter valid values</div>';
+      return;
+    }
+
+    var html = '';
+    var step = maxConc / (tubes - 1);
+    for (var i = 0; i < tubes; i++) {
+      var conc = i === 0 ? 0 : (step * i);
+      conc = Math.round(conc * 1000) / 1000;
+      var stockVol = stock > 0 ? (conc * vol / stock) : 0;
+      stockVol = Math.round(stockVol * 10) / 10;
+      var bufferVol = Math.round((vol - stockVol) * 10) / 10;
+
+      html += '<div class="serial-row">' +
+        '<div class="tube-num">' + (i === 0 ? 'B' : i) + '</div>' +
+        '<div class="details">' +
+        (i === 0 ? 'Blank: ' : '') +
+        stockVol.toFixed(1) + ' stock + ' + bufferVol.toFixed(1) + ' buffer' +
+        '</div>' +
+        '<div class="conc">' + conc.toFixed(3) + '</div>' +
+        '</div>';
+    }
+    output.innerHTML = html;
+  }
+
+  ['c1', 'c2', 'v2'].forEach(function(id) {
+    document.getElementById(id).addEventListener('input', updateSimple);
+  });
+  ['serialStock', 'serialVol', 'serialTubes', 'serialMax'].forEach(function(id) {
+    document.getElementById(id).addEventListener('input', updateSerial);
+  });
+
+  updateSimple();
+  updateSerial();
+})();
+</script>
+</body>
+</html>

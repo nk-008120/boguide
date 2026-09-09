@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Titratable Amino Acid pH Slider | BioGuide</title>
+<style>
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #fefcf5;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+  }
+  .widget-container {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+  }
+  h3 { margin-top: 0; color: #1a472a; font-weight: 600; }
+  .subtitle {
+    font-size: 0.85rem;
+    color: #4b5563;
+    margin-bottom: 1.2rem;
+    border-left: 3px solid #2d6a4f;
+    padding-left: 12px;
+  }
+  .slider-row { display: flex; align-items: center; gap: 12px; margin-bottom: 1rem; }
+  .slider-row input[type=range] { flex: 1; accent-color: #2d6a4f; }
+  #phVal { font-weight: 700; font-size: 1.1rem; color: #2d6a4f; min-width: 70px; text-align: right; }
+  .layout { display: flex; gap: 1.4rem; align-items: flex-start; flex-wrap: wrap; }
+  .mol-panel { flex: 0 0 220px; text-align: center; }
+  .mol-panel svg { width: 200px; height: 220px; }
+  .info-panel { flex: 1; min-width: 260px; }
+  .group-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 8px 10px; border-radius: 10px; margin-bottom: 6px;
+    border: 1px solid #e2e8f0; background: #f8fafc; font-size: 0.85rem;
+  }
+  .group-row .state { font-weight: 700; }
+  .state.protonated { color: #1d70a2; }
+  .state.deprotonated { color: #d9534f; }
+  #netCharge { text-align: center; font-size: 1rem; font-weight: 700; margin-top: 10px; padding: 8px; border-radius: 10px; background: #f1f5f9; }
+</style>
+</head>
+<body>
+<div class="widget-container">
+  <h3>Titratable Lysine: pH Slider</h3>
+  <div class="subtitle">Drag the pH slider from 0 to 14 and watch each ionizable group on lysine protonate/deprotonate as pH crosses its pKa.</div>
+  <div class="slider-row">
+    <input type="range" id="phSlider" min="0" max="14" step="0.1" value="7">
+    <span id="phVal">pH 7.0</span>
+  </div>
+  <div class="layout">
+    <div class="mol-panel">
+      <svg viewBox="0 0 200 220">
+        <line x1="100" y1="30" x2="100" y2="70" stroke="#334155" stroke-width="2"/>
+        <text x="100" y="20" text-anchor="middle" font-size="12" fill="#334155">alpha-COOH</text>
+        <circle id="grp-cooh" cx="100" cy="20" r="9" fill="#1d70a2"/>
+        <line x1="100" y1="70" x2="60" y2="100" stroke="#334155" stroke-width="2"/>
+        <text x="45" y="112" text-anchor="middle" font-size="12" fill="#334155">alpha-NH3</text>
+        <circle id="grp-anh3" cx="45" cy="100" r="9" fill="#1d70a2"/>
+        <line x1="100" y1="70" x2="100" y2="140" stroke="#334155" stroke-width="2"/>
+        <line x1="100" y1="140" x2="100" y2="180" stroke="#334155" stroke-width="2"/>
+        <text x="100" y="200" text-anchor="middle" font-size="12" fill="#334155">epsilon-NH3</text>
+        <circle id="grp-enh3" cx="100" cy="190" r="9" fill="#1d70a2"/>
+        <text x="100" y="65" text-anchor="middle" font-size="11" fill="#64748b">Calpha</text>
+      </svg>
+    </div>
+    <div class="info-panel">
+      <div class="group-row"><span>alpha-COOH (pKa 2.2)</span><span class="state" id="state-cooh">-</span></div>
+      <div class="group-row"><span>alpha-NH3+ (pKa 9.0)</span><span class="state" id="state-anh3">-</span></div>
+      <div class="group-row"><span>epsilon-NH3+ (pKa 10.5)</span><span class="state" id="state-enh3">-</span></div>
+      <div id="netCharge">Net charge: 0</div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var groups = [
+    { id: 'cooh', pKa: 2.2, acidType: 'carboxyl' },
+    { id: 'anh3', pKa: 9.0, acidType: 'amine' },
+    { id: 'enh3', pKa: 10.5, acidType: 'amine' }
+  ];
+  var slider = document.getElementById('phSlider');
+  var phVal = document.getElementById('phVal');
+  var netChargeEl = document.getElementById('netCharge');
+
+  function update(){
+    var pH = parseFloat(slider.value);
+    phVal.textContent = 'pH ' + pH.toFixed(1);
+    var netCharge = 0;
+    groups.forEach(function(g){
+      var protonated = pH < g.pKa;
+      var circle = document.getElementById('grp-' + g.id);
+      var stateEl = document.getElementById('state-' + g.id);
+      if (g.acidType === 'carboxyl'){
+        circle.setAttribute('fill', protonated ? '#1d70a2' : '#d9534f');
+        stateEl.textContent = protonated ? 'COOH (neutral)' : 'COO- (charged)';
+        stateEl.className = 'state ' + (protonated ? 'protonated' : 'deprotonated');
+        if (!protonated) netCharge -= 1;
+      } else {
+        circle.setAttribute('fill', protonated ? '#1d70a2' : '#d9534f');
+        stateEl.textContent = protonated ? 'NH3+ (charged)' : 'NH2 (neutral)';
+        stateEl.className = 'state ' + (protonated ? 'protonated' : 'deprotonated');
+        if (protonated) netCharge += 1;
+      }
+    });
+    netChargeEl.textContent = 'Net charge: ' + (netCharge > 0 ? '+' : '') + netCharge;
+    netChargeEl.style.background = netCharge === 0 ? '#dcfce7' : '#f1f5f9';
+    netChargeEl.style.color = netCharge === 0 ? '#166534' : '#1e293b';
+  }
+
+  slider.addEventListener('input', update);
+  update();
+})();
+</script>
+</body>
+</html>

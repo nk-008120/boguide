@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="100" fill="#e3dff2"/>
+  <g transform="translate(100,100)">
+    <!-- Brain -->
+    <path d="M-5,-35 Q-30,-38 -38,-18 Q-45,0 -35,15 Q-28,28 -15,32 Q-5,35 0,30" fill="#d4a0c0" stroke="#b07898" stroke-width="2"/>
+    <path d="M5,-35 Q30,-38 38,-18 Q45,0 35,15 Q28,28 15,32 Q5,35 0,30" fill="#c890b0" stroke="#b07898" stroke-width="2"/>
+    <!-- Central fissure -->
+    <path d="M0,-35 L0,30" fill="none" stroke="#b07898" stroke-width="2"/>
+    <!-- Sulci left -->
+    <path d="M-5,-20 Q-20,-22 -32,-15" fill="none" stroke="#b07898" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M-5,-5 Q-22,-2 -38,0" fill="none" stroke="#b07898" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M-5,12 Q-18,15 -30,18" fill="none" stroke="#b07898" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Sulci right -->
+    <path d="M5,-20 Q20,-22 32,-15" fill="none" stroke="#b07898" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M5,-5 Q22,-2 38,0" fill="none" stroke="#b07898" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M5,12 Q18,15 30,18" fill="none" stroke="#b07898" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Cerebellum -->
+    <path d="M-15,30 Q-20,42 -10,45 Q0,48 10,45 Q20,42 15,30" fill="#c080a0" stroke="#b07898" stroke-width="1.5"/>
+    <path d="M-8,32 Q0,40 8,32" fill="none" stroke="#b07898" stroke-width="1" stroke-linecap="round"/>
+  </g>
+</svg>
