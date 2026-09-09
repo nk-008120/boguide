@@ -5,7 +5,7 @@ title: "Q40 - Drosophila Saturation Mutagenesis"
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
-  <a class="papers-subject-tag" href="/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/">Recombinant DNA & Biotechnology</a>
+  <a class="papers-subject-tag" href="/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/">Recombinant DNA & Biotechnology Techniques</a>
 </div>
 
 Christiane Nusslein-Volhard and Eric F. Wieschaus carried out an extensive mutation screen to identify all genes involved in segmentation of *Drosophila*.

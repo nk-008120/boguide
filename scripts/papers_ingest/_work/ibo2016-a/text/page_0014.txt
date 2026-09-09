@@ -1,0 +1,23 @@
+Q.9
+Four different bacterial strains were isolated from the gut of a shrimp to study their
+probiotic potency through the decrease of their pathogenicity of Vibrio harveyi, a
+common bacteria infecting shrimp culture. In the first experiment, the four isolated
+bacteria were inoculated in cross-streak plates to observe inhibition zones against 4
+bacterial strains (Fig.9A). In the second experiment, the shrimp survival rate in
+presence of Vibrio harveyi and each bacterial isolate after 5 days of incubation was
+measured (Fig.9B). 
+Mortality
+Fig.Q.9. (A) K = Control (no bacteria streaked on the dash box), P1-P4 = Probiotic candidates 1-4, a = Streptococcus sp.
+(Gram-positive), b = Vibrio sp. (Gram-negative), c = Bacillus sp. (Gram-positive), d = Salmonella sp. (Gram-negative).
+(B) U = shrimp culture alone, U+V = shrimp culture with addition of Vibrio harveyi, U+V+P1-4 = shrimp culture with
+addition of Vibrio harveyi and a specific probiotic candidate P1-4, respectively.
+Indicate in the Answer Sheet if each of the following statements is True or False
+A. Candidate No.1 (P1) produced an antimicrobial compound that inhibited Gram
+negative and Gram positive bacteria.
+B. Candidate No.2 (P2) was able to decrease Vibrio sp. pathogenicity without killing
+them.
+C. Candidate No.3 (P3) produced an antimicrobial compound targeting the outer
+membrane.
+D. Candidate No.4 (P4) had good effect on the shrimp survival by inhibiting Gram-
+negative bacteria.
+13/56

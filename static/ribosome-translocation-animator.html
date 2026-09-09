@@ -40,7 +40,7 @@
 <body>
 <div class="widget-container">
   <h3>Ribosome Translocation: Elongation Cycle</h3>
-  <div class="subtitle">Step through initiation, then repeated elongation cycles (A-site charging, peptide bond formation, translocation), then termination — watch the growing polypeptide chain extend each cycle.</div>
+  <div class="subtitle">Step through initiation, then repeated elongation cycles (A-site charging, peptide bond formation, translocation), then termination - watch the growing polypeptide chain extend each cycle.</div>
   <div class="controls">
     <button id="prevBtn">&larr; Prev</button>
     <div id="stepLabel"></div>
@@ -57,10 +57,10 @@
   var steps = [
     { label: 'Initiation', chain: 0, desc: 'Small subunit + initiator tRNA (Met) assemble at the AUG start codon; large subunit joins, positioning Met-tRNA in the P site.', sites: {P:'Met'} },
     { label: 'Elongation 1: A-site charging', chain: 0, desc: 'A charged tRNA matching the next codon enters the A site.', sites: {P:'Met', A:'aa2'} },
-    { label: 'Elongation 1: peptide bond', chain: 1, desc: 'Peptide bond forms between the P-site and A-site amino acids — the chain is now 2 residues.', sites: {P:'Met', A:'aa2-bonded'} },
+    { label: 'Elongation 1: peptide bond', chain: 1, desc: 'Peptide bond forms between the P-site and A-site amino acids - the chain is now 2 residues.', sites: {P:'Met', A:'aa2-bonded'} },
     { label: 'Elongation 1: translocation', chain: 1, desc: 'The ribosome translocates one codon; tRNAs shift A->P and P->E; the A site is now free for the next tRNA.', sites: {E:'(empty tRNA)', P:'aa2'} },
     { label: 'Elongation 2: A-site charging', chain: 1, desc: 'A new charged tRNA enters the now-empty A site.', sites: {P:'aa2', A:'aa3'} },
-    { label: 'Elongation 2: peptide bond', chain: 2, desc: 'Another peptide bond forms — the chain is now 3 residues.', sites: {P:'aa2', A:'aa3-bonded'} },
+    { label: 'Elongation 2: peptide bond', chain: 2, desc: 'Another peptide bond forms - the chain is now 3 residues.', sites: {P:'aa2', A:'aa3-bonded'} },
     { label: 'Termination', chain: 2, desc: 'A stop codon enters the A site; no tRNA recognises it. A release factor binds, hydrolysing the completed polypeptide and disassembling the ribosome.', sites: {} }
   ];
   var idx = 0;

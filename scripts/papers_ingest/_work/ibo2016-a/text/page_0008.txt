@@ -1,0 +1,32 @@
+Q.4
+When isolated mitochondria are suspended in a buffer containing ADP, Pi, and an
+oxidizable substrate, three easily measured processes occur: the substrate is
+oxidized; O is consumed; and ATP is synthesized. Cyanide (CN ) is an inhibitor of the
+passage of electrons to O . Oligomycin inhibits ATP synthase by interacting with
+subunit F . 2,4-dinitrophenol (DNP) can diffuse readily across mitochondrial
+membranes and release a proton into the matrix, thus dissipating the proton gradient.
+Time
+Time
+A
+B
+y
+x
+z
+Succinate
+ATP synthesized
+ADP + Pi
+ADP + Pi
+O2 consumed
+Fig.Q.4. Oxygen consumption and ATP synthesis in mitochondria. The solid lines indicate the amount of oxygen
+consumed and the dash lines indicate the amount of ATP synthesized
+Indicate in the Answer Sheet if each of the following statements is True or False.
+A. x is the oxidizable substrate.
+B. y is either oligomycin or CN . 
+C. z is  DNP.
+D. If z  is a mixture of oligomycin and DNP, the ATP synthesis will not level off. 
+2
+-
+2
+0
+-
+7/56

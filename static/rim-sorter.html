@@ -95,7 +95,7 @@
 <div class="widget-container">
   <h3>Reproductive Isolating Mechanism Sorter</h3>
   <div class="subtitle">Round 1: drag each scenario into Prezygotic or Postzygotic. Round 2: once sorted, name the specific mechanism.</div>
-  <div class="stage-label" id="stageLabel">Round 1 of 2 — Prezygotic or Postzygotic?</div>
+  <div class="stage-label" id="stageLabel">Round 1 of 2 - Prezygotic or Postzygotic?</div>
   <div id="tray"></div>
   <div class="bins">
     <div class="bin" id="bin-pre" data-answer="pre"><h4>Prezygotic</h4></div>
@@ -112,7 +112,7 @@
     { id: 'i3', label: 'Two cricket species produce mating calls that are only recognized by their own species, even when both are present in the same field.', stage: 'pre', mech: 'behavioral', mechLabel: 'Behavioral isolation', explain: 'Courtship signals are not recognized between populations, so mating is never initiated.' },
     { id: 'i4', label: 'Two orchid species have flowers shaped to fit only their own specific pollinator, physically preventing cross-pollination.', stage: 'pre', mech: 'mechanical', mechLabel: 'Mechanical isolation', explain: 'Incompatible reproductive structures physically prevent successful mating or pollen transfer.' },
     { id: 'i5', label: 'Pollen grains from one plant species fail to germinate on the stigma of a related species, even when deposited there.', stage: 'pre', mech: 'gametic', mechLabel: 'Gametic isolation', explain: 'Sperm/pollen and egg fail to fuse biochemically even on direct contact.' },
-    { id: 'i6', label: 'A horse and a donkey mate and produce a mule — viable, but unable to produce its own offspring.', stage: 'post', mech: 'fertility', mechLabel: 'Reduced hybrid fertility', explain: 'The hybrid survives to adulthood but is sterile — the classic mule example.' },
+    { id: 'i6', label: 'A horse and a donkey mate and produce a mule - viable, but unable to produce its own offspring.', stage: 'post', mech: 'fertility', mechLabel: 'Reduced hybrid fertility', explain: 'The hybrid survives to adulthood but is sterile - the classic mule example.' },
     { id: 'i7', label: 'First-generation hybrids between two populations are viable and fertile, but when those hybrids interbreed, their offspring (the F2 generation) show sharply reduced viability.', stage: 'post', mech: 'breakdown', mechLabel: 'Hybrid breakdown', explain: 'The F1 hybrids themselves are fine, but the problem appears one generation later, in the F2.' }
   ];
   var mechOptions = {
@@ -183,12 +183,12 @@
         sel.classList.add('correct');
         sel.disabled = true;
         sel.dataset.locked = '1';
-        explainEl.textContent = item.mechLabel + ' — ' + item.explain;
+        explainEl.textContent = item.mechLabel + ' - ' + item.explain;
         explainEl.className = 'mech-explain show';
         round2Correct++;
         updateScore();
       } else {
-        explainEl.textContent = 'Not quite — try another option.';
+        explainEl.textContent = 'Not quite - try another option.';
         explainEl.className = 'mech-explain show';
       }
     });
@@ -212,7 +212,7 @@
     });
     placedCount = 0;
     round2Correct = 0;
-    stageLabel.textContent = 'Round 1 of 2 — Prezygotic or Postzygotic?';
+    stageLabel.textContent = 'Round 1 of 2 - Prezygotic or Postzygotic?';
     updateScore();
     shuffle(items.slice()).forEach(function(item){ tray.appendChild(makeChip(item)); });
   }
@@ -242,7 +242,7 @@
         if (chipEl) chipEl.remove();
         placedCount++;
         if (placedCount === items.length){
-          stageLabel.textContent = 'Round 2 of 2 — name the specific mechanism for each';
+          stageLabel.textContent = 'Round 2 of 2 - name the specific mechanism for each';
         }
         updateScore();
       } else {

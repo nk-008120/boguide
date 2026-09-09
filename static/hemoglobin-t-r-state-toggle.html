@@ -86,18 +86,18 @@
     var label = document.getElementById('stateLabel');
     var desc = document.getElementById('stateDesc');
     if (isR){
-      label.textContent = 'R (relaxed) state — high O2 affinity';
+      label.textContent = 'R (relaxed) state - high O2 affinity';
       desc.textContent = 'O2 binding pulls heme iron into the porphyrin plane, breaking the 8 inter-subunit salt bridges and propagating the conformational shift cooperatively to all four subunits.';
       this.textContent = 'Release O2 (trigger R -> T shift)';
     } else {
-      label.textContent = 'T (tense) state — low O2 affinity';
+      label.textContent = 'T (tense) state - low O2 affinity';
       desc.textContent = 'Deoxy-Hb is held in this state by salt bridges (dashed red lines) between subunits, keeping O2 affinity low.';
       this.textContent = 'Bind O2 (trigger T -> R shift)';
     }
   });
 
   render();
-  document.getElementById('stateLabel').textContent = 'T (tense) state — low O2 affinity';
+  document.getElementById('stateLabel').textContent = 'T (tense) state - low O2 affinity';
   document.getElementById('stateDesc').textContent = 'Deoxy-Hb is held in this state by salt bridges (dashed red lines) between subunits, keeping O2 affinity low.';
 })();
 </script>

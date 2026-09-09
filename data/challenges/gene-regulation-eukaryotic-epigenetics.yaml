@@ -1,0 +1,147 @@
+section: "1-cell-molecular"
+slug: "Gene-Regulation-Eukaryotic-Epigenetics"
+title: "Gene Regulation: Eukaryotic & Epigenetics"
+questions:
+  - id: 1
+    difficulty: "easy"
+    source: "USABO"
+    contributor: "SM"
+    question: |
+
+      Which of the following would be most likely to increase transcription of a gene in a eukaryotic cell?
+      A. winding the DNA around more histones.
+      B. increasing histone acetyltransferase activity.
+      C. mutating its TATA box.
+      D. methylating some of its DNA.
+      E. none of the above.
+    solution: |
+
+      Answer – B
+
+      Evaluating the statements,
+
+      A – IncorrectSolution - 
+      More DNA wound around histones generally decreases accessibility and transcription.
+
+      B. CorrectSolution - Increased
+       histone acetyltransferase activity opens chromatin which increases transcription.
+
+      C. IncorrectSolution - 
+      Mutating the TATA box usually disrupts transcription initiation.
+
+      D. IncorrectSolution - 
+      DNA methylation stiffens the DNA backbone and is generally associated with transcriptional repression, especially near promoters.
+  - id: 2
+    difficulty: "medium"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/gene-regulation-eukaryotic-epigenetics-q2.png)
+
+      Methylation of cytosine in DNA and lysine residues in histones are the two important epigenetic marks on the chromatin that determine majority of the biological processes, such as embryonic development, stem cell differentiation and cell division cycles. Also, indiscriminate hypermethylation is often associated with tumorigenesis. These methyl DNA from S1 cells DNA from S2 cells 17 marks are removed by enzymes known as dioxygenases. TET (Ten-Eleven Translocation) and Jumonji domain containing histone demethylases (JHDM) remove methyl groups from DNA and histones, respectively. (His K represents histones with lysine.)
+      Two reactions are shown below:
+
+      Indicate whether each of the following is true or false:A
+      . Loss of function mutation in the gene that codes for isocitrate dehydrogenase will lead to hypermethylation of DNA and histones.B
+      . Translocation of specific chromosome regions between chromosome 10 and 11 can lead to formation of tumor.C
+      . Overexpression of JHDM in a cell will lead to metabolic imbalance and oxidative stress.D
+      . Krebs cycle operates in the mitochondrial matrix and chromatin modifications take place in the nucleus and hence the two processes are independent.
+    solution: |
+
+      A – True
+
+      Solution -
+      Loss of function of isocitrate dehydrogenase (IDH) can alter the availability of metabolites such as α-ketoglutarate, which is required by several dioxygenases involved in DNA and histone demethylation. Reduced demethylase activity can therefore result in hypermethylation.
+
+      B – True
+
+      Solution -
+      Chromosomal translocations can produce fusion genes or place proto-oncogenes under abnormal regulatory control, potentially leading to tumor formation. A well-known example involves rearrangements affecting chromosomes 10 and 11 in certain cancers.
+
+      C – True
+
+      Solution -
+      JHDM (Jumonji C-domain histone demethylases) require metabolites such as α-ketoglutarate and molecular oxygen for their activity. Excessive JHDM activity may perturb cellular metabolism and alter redox balance, potentially contributing to metabolic imbalance and oxidative stress.
+
+      D – False
+
+      Solution -
+      Although the Krebs cycle occurs mainly in the mitochondrial matrix and chromatin modification occurs in the nucleus, they are metabolically interconnected. Krebs-cycle-derived metabolites, including acetyl-CoA, α-ketoglutarate, succinate, fumarate, and citrate, can influence chromatin-modifying enzymes.
+  - id: 3
+    difficulty: "hard"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      Dame Jean Thomas (1942-present) discovered that eukaryotic DNA is tightly wrapped around histone proteins. Sir Adrian Bird (1947-present) helped explain the epigenetic marks of DNA. For example, the classical histone H2A, can be replaced by a variant, H2A.Z.
+      H2A.Z occupancy on a pro-flowering gene (1) in Arabidopsis plants (2) of the same age, at different temperatures, was measured.
+
+      ![image](/CHALLENGEPICS/gene-regulation-eukaryotic-epigenetics-q3.png)
+
+      Indicate if the following statements are true or false:A. 
+      Increasing temperature increases pro-flowering gene expression.
+
+      B.
+      H2A.Z enhances gene expression.
+
+      C.
+       Temperature moves the locations to which H2A.Z binds in the genome.
+
+       D.
+       Plants that flower early may have increased H2A.Z occupancy in this gene before flowering.
+    solution: |
+
+      A – True
+      Solution - The plant at higher temperature has a flowering stem.
+
+      B – False
+      Solution - At high temperature, the plant flowers, showing the pro-flowering gene is more expressed, and there is less H2A.Z at the pro-flowering gene.
+
+      C – False
+      Solution - The amount of H2A.Z bound is reduced at high temperature, but there is no evidence of it binding different places.
+
+      D – False
+      Solution - Early flowering plants would have more pro-flowering gene expression, and therefore less of the transcriptional repressor H2A.Z bound at these genes.
+  - id: 4
+    difficulty: "hard"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/gene-regulation-eukaryotic-epigenetics-q4.png)
+
+      Sir David Baulcombe (1952-present) discovered RNA-directed gene silencing. The gene for green fluorescent protein (GFP) was inserted into plants. The plants were treated with RNAs, which silence GFP, and were then allowed to set seed (the treatment RNAs are not present in the next generation). The treatment RNA sequence was complementary to either the promoter or the protein coding sequences of GFP, or random (non-complementary). The parent plants, their progeny, and controls were imaged under a UV light.
+
+      Indicate if each of the statements are true or false:A. 
+      Leaves expressing GFP appear darker under UV light.
+
+      B.
+      RNA-directed gene silencing is possible without using treatment RNAs designed to target mRNA.
+
+      C.
+      Changes in the expression level of genes can be inherited from one generation to the next without mutating the DNA sequence.
+
+      D.
+      Silencing against the protein coding sequence is heritable.
+    solution: |
+
+      A – False
+
+      Solution -
+      The unmodified leaves are dark. The GFP transfected, without silencing, are bright green.
+
+      B – True
+
+      Solution
+       - The promoter is not transcribed, but siRNA directed against it can still block expression.
+
+      C – True
+
+      Solution
+       - GFP remains silenced in the progeny, even though the siRNAs are no longer present, when directed against the promoter. (The siRNA-protein coding treatment acts as a control to show siRNA does not mutate the DNA sequence it complements).
+
+      D – False
+
+      Solution
+       - This is not inherited, indicating it is less likely to be epigenetic.

@@ -1,0 +1,82 @@
+section: "1-cell-molecular"
+slug: "Endomembrane-System-Protein-Trafficking"
+title: "Endomembrane System & Protein Trafficking"
+questions:
+  - id: 1
+    difficulty: "easy"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      To trace the path of a secretory protein from its synthesis to its export from a cell, suppose that you have added radioactive amino acids to a culture of cells, and then measured the amount of radioactivity that shows up in the proteins of each of the following cell fractions at different times after addition. I – Secretory Vesicles II – Golgi Complex III – Rough Endoplasmic Reticulum IV – Nucleus
+
+      A. III -> II -> IV -> I -> out of the cell
+      B. III -> II -> I --------> out of the cellC. IV -> III -> II -> I -> out of the cellD. IV -> II -> III-> I -> out of the cell
+  - id: 2
+    difficulty: "easy"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      Indicate if each of the following statements about posttranslational modification of eukaryotic proteins is true or false:A. Disulfide bond formation on a protein occurs in the endoplasmic reticulum.
+
+      B. Glycoproteins may be found in viruses that infect humans.
+
+      C. Oligosaccharide group addition to a protein may occur in both Golgi apparatus and endoplasmic reticulum.
+
+      D. Palmitoylation of a protein can change its intracellular localization.
+    solution: |
+
+      Ans – A – T, B – T, C – T, D - T
+  - id: 3
+    difficulty: "medium"
+    source: "USABO"
+    contributor: "SM"
+    question: |
+
+      Though it has been recently contested, the cisternal maturation model for movement through the Golgi has been reasonably well upheld by various experiments. Based on this model, consider the following enzymes: enzyme A adds mannose to serine, enzyme B adds mannose to N-acetylglucosamine, and enzyme C adds N-acetylglucosamine to mannose. Which of these enzymes will move from the trans to the medial Golgi? A. Enzyme AB. Enzyme B
+      C. Enzyme CD. Enzyme A and BE. None; they all stay in their predetermined compartment
+  - id: 4
+    difficulty: "medium"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/endomembrane-system-protein-trafficking-q4.png)
+
+      The location of proteins in a cell affects their function by determining which molecules they interact with. A collaboration of scientists in Sweden and Cambridge used microscopy to map the location of >12 000 human proteins in numerous cell types. In the diagram below, solid bars around the circumference represent all the different types of protein within each organelle, and lines are drawn between the same type of protein in different organelles.Indicate if each of the following statements is true or false:A. Most proteins are found only in a single organelle.
+
+      B. Most mitochondrial proteins are found only in the mitochondria.
+
+      C. Most proteins that are found in multiple organelles are spread homogeneously through the cell.
+    solution: |
+
+      Ans – A - F, B - T, C – F
+  - id: 5
+    difficulty: "hard"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      ErbB-2 is a receptor found on the plasma membrane of mammalian cells which can move from the plasma membrane to the nucleus. Because most proteins that shuttle between the cytoplasm and the nucleus are soluble and not integral membrane bound proteins, the mechanism by which ErbB-2 undergoes transport to the nucleus is of particular interest. Three experiments described below were done to shed light on the underlying mechanisms. Experiment 1: siRNA knock down of importin β1 expression in target cells. The cells were transfected with importin β1 siRNA (Imp), non-functional siRNA control (N.S.), or buffer only (−). Proteins from the cytoplasmic and nuclear fraction of cell lysates were analysed by Western blotting using importinβ1, and ErbB-2, α tubulin and histone H3 antibodies as indicated.
+
+      ![image](/CHALLENGEPICS/endomembrane-system-protein-trafficking-q5-1.png)
+
+      Experiment 2: Mutant cells lacking ErbB-2 gene were transfected with wild-type ErbB-2 (WT), ErbB-2 mutant containing a deficient nuclear localization signal (∆NLS), or vector control (−). Proteins from the cytoplasmic fraction, nuclear fraction were then analysed by Western blotting with ErbB-2, importinβ1, α tubulin and histone H3 antibodies as indicated.
+
+      ![image](/CHALLENGEPICS/endomembrane-system-protein-trafficking-q5-2.png)
+
+      ![image](/CHALLENGEPICS/endomembrane-system-protein-trafficking-q5-3.png)
+
+      Experiment 3: Cell lysates from the cells were immune-precipitated with anti-ErbB-2 or mouse IgG (mIgG). The precipitated immune-complexes and the cell lysates were then analysed by Western blotting with, clathrin, importinβ1, and ErbB-2 antibodies.
+
+      Indicate if each of the following statements is true or false:A. The data in Experiment 1 suggest that ErbB-2 requires importin β1 in order to enter the nucleus.
+
+      B. It is predicted that the antibody against importin β1does not precipitate the ErbB-2(∆NLS).
+
+      C. The data presented suggest that localization of histones to the nucleus is mediated by a mechanism distinct from that used to shuttle ErbB-2.
+
+      D. As true for other membrane bound receptors, ErbB2 enters the cytoplasm by endocytosis.
+    solution: |
+
+      Ans – A - T, B - T, C - T, D - T

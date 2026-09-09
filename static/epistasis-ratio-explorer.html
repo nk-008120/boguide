@@ -62,7 +62,7 @@
 <body>
 <div class="widget-container">
   <h3>Epistasis Ratio Explorer</h3>
-  <div class="subtitle">A fixed AaBb × AaBb cross — choose an interaction type and watch the 16-box grid recolor to show which classes merge.</div>
+  <div class="subtitle">A fixed AaBb × AaBb cross - choose an interaction type and watch the 16-box grid recolor to show which classes merge.</div>
   <div class="modes">
     <button class="mode-btn active" id="m-none">No epistasis</button>
     <button class="mode-btn" id="m-recessive">Recessive (9:3:4)</button>
@@ -73,7 +73,7 @@
   <div class="layout">
     <div id="gridHolder"></div>
     <div class="results">
-      <div class="readout" id="ratioReadout">Ratio: —</div>
+      <div class="readout" id="ratioReadout">Ratio: -</div>
       <div id="legendHolder"></div>
       <div class="note" id="explainNote"></div>
     </div>
@@ -88,25 +88,25 @@
       { classes: ['A_bb'], label: 'A_bb', color: '#bfdbfe' },
       { classes: ['aaB_'], label: 'aaB_', color: '#fef9c3' },
       { classes: ['aabb'], label: 'aabb', color: '#fee2e2' }
-    ], explain: 'Each gene controls its own trait independently — all four phenotype classes stay distinguishable, giving the standard 9:3:3:1.' },
+    ], explain: 'Each gene controls its own trait independently - all four phenotype classes stay distinguishable, giving the standard 9:3:3:1.' },
     recessive: { name: 'Recessive epistasis (9:3:4)', groups: [
-      { classes: ['A_B_'], label: 'A_B_ — e.g. black', color: '#dcfce7' },
-      { classes: ['A_bb'], label: 'A_bb — e.g. chocolate', color: '#bfdbfe' },
-      { classes: ['aaB_','aabb'], label: 'aa__ — e.g. yellow (bb genotype no longer distinguishable once aa masks it)', color: '#fef9c3' }
-    ], explain: 'Homozygous recessive at the epistatic gene (aa) masks the second gene\'s phenotype entirely, merging aaB_ and aabb into one class — like Labrador coat color.' },
+      { classes: ['A_B_'], label: 'A_B_ - e.g. black', color: '#dcfce7' },
+      { classes: ['A_bb'], label: 'A_bb - e.g. chocolate', color: '#bfdbfe' },
+      { classes: ['aaB_','aabb'], label: 'aa__ - e.g. yellow (bb genotype no longer distinguishable once aa masks it)', color: '#fef9c3' }
+    ], explain: 'Homozygous recessive at the epistatic gene (aa) masks the second gene\'s phenotype entirely, merging aaB_ and aabb into one class - like Labrador coat color.' },
     dominant: { name: 'Dominant epistasis (12:3:1)', groups: [
-      { classes: ['A_B_','A_bb'], label: 'A___ — e.g. white (dominant A masks gene 2)', color: '#dcfce7' },
-      { classes: ['aaB_'], label: 'aaB_ — e.g. yellow', color: '#fef9c3' },
-      { classes: ['aabb'], label: 'aabb — e.g. green', color: '#fee2e2' }
-    ], explain: 'A single dominant allele at the epistatic gene (A_) is enough to mask the second gene, merging A_B_ and A_bb into one class — like summer squash color.' },
+      { classes: ['A_B_','A_bb'], label: 'A___ - e.g. white (dominant A masks gene 2)', color: '#dcfce7' },
+      { classes: ['aaB_'], label: 'aaB_ - e.g. yellow', color: '#fef9c3' },
+      { classes: ['aabb'], label: 'aabb - e.g. green', color: '#fee2e2' }
+    ], explain: 'A single dominant allele at the epistatic gene (A_) is enough to mask the second gene, merging A_B_ and A_bb into one class - like summer squash color.' },
     duprec: { name: 'Duplicate recessive epistasis (9:7)', groups: [
-      { classes: ['A_B_'], label: 'A_B_ — pigmented (both steps present)', color: '#dcfce7' },
-      { classes: ['A_bb','aaB_','aabb'], label: 'all others — unpigmented (pathway blocked)', color: '#fee2e2' }
-    ], explain: 'Both genes must have at least one dominant allele to complete a two-step pathway — any single recessive homozygous class blocks it, merging three classes into one.' },
+      { classes: ['A_B_'], label: 'A_B_ - pigmented (both steps present)', color: '#dcfce7' },
+      { classes: ['A_bb','aaB_','aabb'], label: 'all others - unpigmented (pathway blocked)', color: '#fee2e2' }
+    ], explain: 'Both genes must have at least one dominant allele to complete a two-step pathway - any single recessive homozygous class blocks it, merging three classes into one.' },
     dupgene: { name: 'Duplicate gene action (15:1)', groups: [
-      { classes: ['A_B_','A_bb','aaB_'], label: 'A_ or B_ present — phenotype produced', color: '#dcfce7' },
-      { classes: ['aabb'], label: 'aabb — only class lacking either gene', color: '#fee2e2' }
-    ], explain: 'Either gene\'s dominant allele alone is sufficient to produce the phenotype — only the fully double-recessive class looks different.' }
+      { classes: ['A_B_','A_bb','aaB_'], label: 'A_ or B_ present - phenotype produced', color: '#dcfce7' },
+      { classes: ['aabb'], label: 'aabb - only class lacking either gene', color: '#fee2e2' }
+    ], explain: 'Either gene\'s dominant allele alone is sufficient to produce the phenotype - only the fully double-recessive class looks different.' }
   };
   var mode = 'none';
   var btns = { none: 'm-none', recessive: 'm-recessive', dominant: 'm-dominant', duprec: 'm-duprec', dupgene: 'm-dupgene' };
@@ -170,14 +170,14 @@
 
     var g = gcdArr(counts);
     var ratioStr = counts.map(function(c){ return c / g; }).join(' : ');
-    document.getElementById('ratioReadout').innerHTML = def.name + ' — Ratio: <b>' + ratioStr + '</b>';
+    document.getElementById('ratioReadout').innerHTML = def.name + ' - Ratio: <b>' + ratioStr + '</b>';
 
     var legendHolder = document.getElementById('legendHolder');
     legendHolder.innerHTML = '';
     def.groups.forEach(function(g2, idx){
       var item = document.createElement('div');
       item.className = 'legend-item';
-      item.innerHTML = '<span class="dot" style="background:' + g2.color + ';"></span>' + (counts[idx]) + '/16 — ' + g2.label;
+      item.innerHTML = '<span class="dot" style="background:' + g2.color + ';"></span>' + (counts[idx]) + '/16 - ' + g2.label;
       legendHolder.appendChild(item);
     });
     document.getElementById('explainNote').textContent = def.explain;

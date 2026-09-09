@@ -1,0 +1,49 @@
+Q.36
+Heritability in broad sense (H ) is the ratio of total genetic variance (V ) to total
+phenotypic variance (V ): H = V /V . The phenotypic variance is often divided into
+three components: the genetic variance (V ), environmental variance (V ) and the
+interaction variance (V ), V = V + V + V . The genetic variance is divided into three
+components: the additive genetic variance (V , cumulative effects of individual loci),
+the dominant genetic variance (V ), and the genetic interaction variance (V ), V =
+V + V + V . Heritability in narrow sense (h ) = V /V .
+Indicate in the answer sheet if each of the following statements about heritability is
+true or false
+A. A low H value of a trait always indicates that the trait is determined mainly by
+the environment.
+B. Genetic variance depends on the environment to which the population is exposed.
+C. The artificial selection for a trait with higher h is more successful than that for a
+trait with lower h .
+D. Two pure strains of bean that produce seeds with different weights were crossed.
+The variances of seeds (V ) from F and F plants are 2.0 and 4.1, respectively. If
+we ignore interaction effects, H of seeds is 0.51.
+2
+g
+p
+2
+g
+p
+g
+e
+i
+p
+g
+e
+i
+a
+d
+gi
+g
+a
+d
+gi
+2
+a
+p
+2
+2
+2
+p
+1
+2
+2
+41/56

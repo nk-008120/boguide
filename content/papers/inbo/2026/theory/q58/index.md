@@ -5,7 +5,7 @@ title: "Q58 - Mollusc Clade Feature Identification"
 {{< problem-meta category="Theory" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
-  <a class="papers-subject-tag" href="/resources/4-biosystematics/animal-diversity-body-plans/">Animal Diversity & Body Plans</a>
+  <a class="papers-subject-tag" href="/resources/2-animal-anatomy/invertebrate-body-plans-2/">Invertebrate Body Plans II</a>
 </div>
 
 Refer to the [question paper](/papers/inbo/2026/theory-exam.pdf#page=32) for figures and tables.

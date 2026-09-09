@@ -53,7 +53,7 @@
 <body>
 <div class="widget-container">
   <h3>Long-Branch Attraction Demonstrator</h3>
-  <div class="subtitle">True tree: (A,B) and (C,D) are the real sister pairs. A and C — one from each pair, non-sisters — have adjustable branch lengths. Watch what happens to parsimony as they lengthen.</div>
+  <div class="subtitle">True tree: (A,B) and (C,D) are the real sister pairs. A and C - one from each pair, non-sisters - have adjustable branch lengths. Watch what happens to parsimony as they lengthen.</div>
   <div class="true-tree">True topology: <b>((A,B),(C,D))</b> &nbsp;|&nbsp; B and D have fixed short branches &nbsp;|&nbsp; A and C's branches are adjustable below</div>
   <div class="row">
     <label>Taxon A branch length</label>
@@ -155,11 +155,11 @@
     if (lbaAvg <= trueAvg){
       lbaCard.classList.add('winner');
       verdict.className = 'alert';
-      verdict.innerHTML = '⚠ At this branch length, the <b>competing (A,C)|(B,D) tree now scores as well or better</b> than the true tree — long-branch attraction. Both A and C have accumulated enough independent substitutions that chance convergence between them starts to outweigh the true, but comparatively sparse, synapomorphies uniting A with B and C with D.';
+      verdict.innerHTML = '⚠ At this branch length, the <b>competing (A,C)|(B,D) tree now scores as well or better</b> than the true tree - long-branch attraction. Both A and C have accumulated enough independent substitutions that chance convergence between them starts to outweigh the true, but comparatively sparse, synapomorphies uniting A with B and C with D.';
     } else {
       trueCard.classList.add('winner');
       verdict.className = '';
-      verdict.textContent = 'The true tree is still favored — with A and C’s branches this short, real synapomorphies from the short internal branches dominate over chance convergence.';
+      verdict.textContent = 'The true tree is still favored - with A and C’s branches this short, real synapomorphies from the short internal branches dominate over chance convergence.';
     }
   }
 

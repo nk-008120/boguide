@@ -84,11 +84,11 @@
 
     var verdict = document.getElementById('verdict');
     if (shift === 0){
-      verdict.innerHTML = 'No timing shift — descendant matches the ancestral adult value (' + ancestralAdultVal.toFixed(1) + ') at the ancestral adult age.';
+      verdict.innerHTML = 'No timing shift - descendant matches the ancestral adult value (' + ancestralAdultVal.toFixed(1) + ') at the ancestral adult age.';
     } else if (shift > 0){
-      verdict.innerHTML = '<b>Peramorphosis:</b> development is shifted to run further/faster (shift = +' + shift + '), so at the ancestral adult age the descendant has <b>already exceeded</b> the ancestral adult value (' + shiftedAdultVal.toFixed(1) + ' vs. ' + ancestralAdultVal.toFixed(1) + ') — a more exaggerated adult trait.';
+      verdict.innerHTML = '<b>Peramorphosis:</b> development is shifted to run further/faster (shift = +' + shift + '), so at the ancestral adult age the descendant has <b>already exceeded</b> the ancestral adult value (' + shiftedAdultVal.toFixed(1) + ' vs. ' + ancestralAdultVal.toFixed(1) + ') - a more exaggerated adult trait.';
     } else {
-      verdict.innerHTML = '<b>Paedomorphosis:</b> development is shifted to run later/slower (shift = ' + shift + '), so at the ancestral adult age the descendant is still <b>short of</b> the ancestral adult value (' + shiftedAdultVal.toFixed(1) + ' vs. ' + ancestralAdultVal.toFixed(1) + ') — a juvenile-like trait retained into the adult stage.';
+      verdict.innerHTML = '<b>Paedomorphosis:</b> development is shifted to run later/slower (shift = ' + shift + '), so at the ancestral adult age the descendant is still <b>short of</b> the ancestral adult value (' + shiftedAdultVal.toFixed(1) + ' vs. ' + ancestralAdultVal.toFixed(1) + ') - a juvenile-like trait retained into the adult stage.';
     }
   }
 

@@ -1,0 +1,119 @@
+section: "1-cell-molecular"
+slug: "Protein-Structure-Folding-Function"
+title: "Protein Structure, Folding & Function"
+questions:
+  - id: 1
+    difficulty: "easy"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/protein-structure-folding-function-q1.png)
+
+      A portion of the tertiary structure of a protein is represented below.
+
+      M, N, O and P respectively represent:A
+      . ionic bond; disulphide bridge; hydrogen bond and hydrophobic interactionsB
+      . hydrophobic interactions; ionic bonds; disulphide bridge and hydrogen bondC
+      . hydrogen bond; disulphide bridge; ionic bond and hydrogen bondD
+      . ionic bond; disulphide bridge; hydrophobic interaction and hydrogen bond
+    solution: |
+
+      Answer – A
+
+      Solution – M shows interaction between opposite charges, thus it is ionic bond. N shows bond between 2 sulfur centers, thus it is disulfide bond. O shows hydrogen bond while P shows hydrophobic interaction.
+  - id: 2
+    difficulty: "easy"
+    source: "USABO"
+    contributor: "SM"
+    question: |
+
+      Which of the following bonds/interactions involved in folding a protein into its proper 3D shape is INCORRECTLY matched with its description?
+
+      A.
+       Hydrogen bond: a bond formed by the attraction of a hydrogen atom to an electronegative atomB.
+       Hydrophobic effect: the attraction between a hydrophobic molecule and a hydrophilic moleculeC.
+       Electrostatic interaction (ionic bond): the bond between a positively charged ion and a negatively charged ionD.
+       Van der Waals force: an attractive force that occurs due to resonating dipole moment when atoms or groups of atoms are very close together
+    solution: |
+
+      Answer – B
+
+      Evaluating each statement,
+
+      A - CorrectSolution – 
+      Attraction involving H covalently bonded to an electronegative atom and another electronegative atom.
+
+      B - IncorrectSolution - 
+      It is not hydrophobic–hydrophilic attraction. Hydrophobic groups tend to associate with one another and become buried inside proteins.
+
+      C - CorrectSolution - 
+      Attraction between opposite charges.
+
+      D - CorrectSolution - 
+      Arises from transient/induced dipoles when atoms are sufficiently close.
+  - id: 3
+    difficulty: "medium"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      Molecular chaperones promote folding of proteins using energy from ATP. In the presence of ATP, chaperones assume an open conformation. This exposes pockets (P) in the chaperone which bind and enclose regions of nascent polypeptides that might promote aggregation. Imagine that life evolved in benzene instead of water, leading to the same set of amino acids and proteins as we have in biology now. In such a hypothetical scenario, which of the following amino acids is most likely to be found lining P of chaperones?A
+      . IsoleucineB
+      . GlutamineC
+      . ArginineD
+      . Cysteine
+    solution: |
+
+      Answer – A
+
+      Solution – The pockets should be lined by non-polar amino acids. Out of all the options, Isoleucine is the only non-polar amino acid.
+  - id: 4
+    difficulty: "hard"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/protein-structure-folding-function-q4.png)
+
+      Antifreeze glycoproteins (AFGPs) possess the ability to inhibit the formation of ice and are therefore essential to the survival of many marine teleost fishes that routinely encounter sub-zero temperatures. A typical AFGP consists of repeating tripeptide units, the alanyl-threonyl-alanyl (Ala-Thr-Ala)n unit connected to a disaccharide through a glycosidic bond at the second hydroxyl group of the threonine residue. To identify chemical groups which affect antifreeze activities of this glycoprotein, scientists synthesized numerous AFGP analogues by modifying both the structure of the sugar moieties and the peptide by replacing three groups R1, R2, R3 as shown in Figure with different chemical groups and recorded the antifreeze activity.
+
+      The results of the study are shown in the following table.
+
+      | R1 | R2 | R3 | Antifreeze Activity |
+      |---|---|---|---|
+      | HO | CH3 | Galactosyl | No |
+      | N-Acetyl | CH3 | Galactosyl | Yes |
+      | N-Acetyl | H | Galactosyl | No |
+      | N-Acetyl | CH3 | H | Yes |
+      | O-Acetyl | CH3 | H | No |
+      | N-Acetyl | CH3 | Galactosyl-Galactosyl | No |
+
+      Indicate in the Answer Sheet if each of the following statements is True or False:
+      A. A disaccharide bound to the threonine residue is required for antifreeze activity.
+      B. A mutant that has threonine residues replaced with serine residues reduces antifreeze activities.
+      C. N-acetyl group at the C-2 position is required for antifreeze activity.
+      D. Different numbers of repetitive motifs in AFGP genes amongst closely related species might have been caused by DNA polymerase inaccuracy.
+    solution: |
+
+      Answer – A – False, B – True, C – True, D - True
+
+      A - False
+
+      Solution -
+      AFGP has activity when R3 is hydrogen (H), therefore the amino acid residues binding with the monosaccharide is not required for antifreeze activity.
+
+      B - True
+
+      Solution -
+      Serine residues can form glycosidic bonds with the disaccharide but they do not have the hydrophobic group methyl (-CH3). In this case, R2 is FI (see the table) so AFGP has no antifreeze activity.
+
+      C - True
+
+      Solution -
+      If N-Acetyl is replaced with -OH or O-acetyl, the activity of AFGP will be lost.
+
+      D - True
+
+      Solution -
+      Probably a slippage of DNA polymerase happened during replication and resulted in extension of repetitive elements

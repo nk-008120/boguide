@@ -1,0 +1,134 @@
+section: "1-cell-molecular"
+slug: "Cell-Cycle-Mitosis-Meiosis"
+title: "Cell Cycle, Mitosis & Meiosis"
+questions:
+  - id: 1
+    difficulty: "easy"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      A geneticist was studying the cell cycle in the root tip cells of a plant. She microscopically observed that 15 cells were in prophase, 7 cells were in prometaphase, 8 cells were in metaphase, 7 were in anaphase, 5 were in telophase and 88 were in interphase. The overall cell cycle for this particular species was recorded to be 23 hours. The time span (in minutes) that the cells are in the mitotic phase is:
+    solution: |
+
+      Ans. 445-446 minutes
+  - id: 2
+    difficulty: "easy"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      For each of the following phases of the cell cycle, indicate whether the chromosome number is haploid (H), diploid (D) or could be either (E). Also indicate whether chromosomes have replicate (R) or have not replicated (NR) (Chromosome status).
+
+      | Chromosome Number | Chromosome Status | Cell Cycle Phase |
+      |---|---|---|
+      | E | R | G2 |
+      | D | R | Meiotic Metaphase I |
+      | E | R | Mitotic Prometaphase |
+      | D | R | Meiotic Interkinesis |
+      | E | NR | G1 |
+  - id: 3
+    difficulty: "easy"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      Indicate whether each of the following statements is true (T) or false (F). A. Centrosomes replicate independently of chromosomes.
+
+      B. The nuclear envelope becomes fragmented at mitosis, and it is distributed between the daughter cells like other membrane-bounded organelles such as ER and Golgi.
+
+      C. The total DNA content of a cell following meiosis is half that of a cell after mitosis.
+
+      D. Microtubule polymerization, depolymerization, and microtubule motor proteins are required for DNA replication.
+    solution: |
+
+      Ans – A – T, B – T, C – T, D – F
+  - id: 4
+    difficulty: "medium"
+    source: "USABO"
+    contributor: "SM"
+    question: |
+
+      The maturation-promoting factor (MPF) is a cyclin-Cdk complex discovered to promote the onset of M-phase in the embryos of Xenopus laevis, the African clawed toad. Which of the following statements is MOST accurate? A. The cyclin-dependent kinase component of MPF is degraded by the cyclin at the end of the M phase, when cyclin levels are at their maximum. The Cdk levels then gradually build up again.
+
+      B. MPF binds to and phosphorylates DNA, which initiates the transcription of genes responsible for mitosis.
+      C. MPF possesses kinase activity and, among other targets, phosphorylates proteins of the nuclear lamina, leading to the fragmentation of the nuclear envelope that is necessary for mitosis to proceed.
+
+      D. Yeast cells with a temperature-sensitive loss-of-function mutation in cdc2 kinase, the yeast homolog of the vertebrate Cdk, are unable to divide and become polyploid as a result of multiple rounds of DNA replication without cell division.
+
+      E. MPF kinase activity would be highest just before the G2 checkpoint, as the Cdk component degrades its cyclin partner to initiate mitosis.
+  - id: 5
+    difficulty: "medium"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      A cultured cell of somatic cell A and a cultured cell of somatic cell B of an animal were prepared. A culture dish containing an appropriate amount of cells was prepared, and the number of cells after a certain period of time (at the start of the experiment) and the number of cells after 48 hours were counted. The results are shown in Table 1.
+
+      | Time from start of experiment (hours) | Cell Number (x105) |  |
+      |---|---|---|
+      |  | 0 | 48 |
+      | Somatic Cell A | 7.2 | 115.2 |
+      | Somatic Cell B | 9.7 | 77.6 |
+
+      (I) How long are the cell cycles of somatic cell A and somatic cell B?
+    solution: |
+
+      Ans – Cell A -> 12 hours, Cell B -> 16 hours
+
+      (II) When somatic cells A and B were mixed at a certain ratio and a culture was started in a culture dish, the ratio of the cell numbers of A and B after 4 days was 2:1. What was the ratio of somatic cell A and B cell numbers when the culture was started? (It is assumed that the cell cycle of the somatic cells A and B progresses independently. The nutrients required by the cells during the cultivation are well-supplied.)
+      Ans – A:B = 1:2
+  - id: 6
+    difficulty: "medium"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      The major ways by which the cell-cycle is regulated in all eukaryotes were discovered by British scientists. In humans, Cyclins (discovered by Sir Tim Hunt; 1943-present) are transcribed at specific cell-cycle stages, and bind cyclin-dependent kinases (CDK; discovered by Sir Paul Nurse; 1949-present), to coordinate division. Protein-53 (p53; discovered by Sir David Lane; 1952-present) is activated by a huge array of post-translational modifications, which allows it to exert diverse effects. p53 can exert these effects even when its activity is reduced by half, but each p53 monomer is only active when bound to three other functional p53 monomers in a homotetramer. p53 is mutated in the majority of cancers ever sequenced.
+
+      ![image](/CHALLENGEPICS/cell-cycle-mitosis-meiosis-q6.png)
+
+      Indicate if each of the statements is true or false:A. Tumours which have lost p53 activity have higher mutation rates than tumours which have p53 activity.
+
+      B. Single celled organisms, such as yeast (Saccharomyces), possess equally powerful regulators like p53.
+
+      C. Treatments which deliver more p53 to cells, would reduce the division of healthy cells.
+
+      D. Both alleles of p53 are usually mutated in cancer. E. P53 knockout mice (Mus musculus) show an overgrowth of bone-marrow cells.
+    solution: |
+
+      Ans – A - T, B - F, C - F, D - F, E - T
+  - id: 7
+    difficulty: "hard"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/cell-cycle-mitosis-meiosis-q7.png)
+
+      An experiment was set up to observe cell cycle length of a strain of yeast. Activated yeast cells were subcultured into a new medium with an initial concentration of 106 cells/mL. After 40 hours, the number of cells increased to 4 x 106 cells/mL. A portion of the culture was taken for a separate experiment. In this experiment, cells were incubated for 15 min into a media containing radioactive thymidine before washing and re-grown on a new media containing non-radioactive thymidine. Cell samples were then taken periodically to measure the percentage of mitotic cells containing radioactive thymidine. The figure shows the result obtained from the experiment. At each sampling, about 1% of the total cells sampled were undergoing mitosis. Indicate if each of the following statements are True or False:A. G2 phase of the cell cycle takes approximately 10 hours.
+
+      B. Most of the yeast cells in the culture are at G1.
+
+      C. M phase of the cell cycle takes longer than 1 hour.
+
+      D. Most of the radioactive thymidine is assimilated in the S phase of the cell cycle.
+    solution: |
+
+      Ans – A – F, B – T, C – F, D – T
+  - id: 8
+    difficulty: "hard"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/cell-cycle-mitosis-meiosis-q8.png)
+
+      CDK is a family of cyclin dependent kinases which drive the cell cycle. A portion of the liver was removed in WT mice, or in livers which had a particular CDK gene knocked-out. Mice were allowed to regenerate, then their regenerated livers were weighed, measured and stained. Individual liver cells were removed and stained for total DNA content, or for newly synthesised DNA (Figure 1)
+
+      Indicate with an X whether you would expect number or amount increased (+), not changed (0) or decreased (-) of the following structures in CDK knock-out livers versus wild-type ones.
+
+      A. Liver massB. Hepatocyte numberC. Average hepatocyte ploidyD. Number of mitotic spindlesE. DNA synthesis
+    solution: |
+
+      Ans – A -> (0), B -> (-), C -> (+), D -> (-), E -> (+)

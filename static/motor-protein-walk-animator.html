@@ -102,7 +102,7 @@
     var end = m.dir === 1 ? 360 : 40;
     var steps = 20;
     var i = 0;
-    note.textContent = m.filamentLabel + ' — moving ' + m.label + '.';
+    note.textContent = m.filamentLabel + ' - moving ' + m.label + '.';
     function step(){
       i++;
       var x = start + (end - start) * (i / steps);
@@ -111,7 +111,7 @@
       if (i < steps){
         timer = setTimeout(step, 60);
       } else {
-        note.textContent = m.filamentLabel + ' — reached the ' + (m.dir === 1 ? 'plus' : 'minus') + ' end.';
+        note.textContent = m.filamentLabel + ' - reached the ' + (m.dir === 1 ? 'plus' : 'minus') + ' end.';
       }
     }
     timer = setTimeout(step, 60);

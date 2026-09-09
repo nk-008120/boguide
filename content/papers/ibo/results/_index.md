@@ -1,5 +1,6 @@
 ---
 title: "IBO Results Analysis"
+description: "Statistical breakdowns of IBO final results: medal cutoffs, station difficulty, country standings, and training insights across multiple years."
 ---
 
 {{< biorchive-bg >}}

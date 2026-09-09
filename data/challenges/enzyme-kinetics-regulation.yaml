@@ -1,0 +1,199 @@
+section: "1-cell-molecular"
+slug: "Enzyme-Kinetics-Regulation"
+title: "Enzyme Kinetics & Regulation"
+questions:
+  - id: 1
+    difficulty: "easy"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/enzyme-kinetics-regulation-q1.png)
+
+      GLUT1, a protein present in the membrane of red blood cells, is a transporter that transports glucose into cells. The relationship between the extracellular glucose concentration (𝑆) and the rate of glucose uptake (𝑉) into red blood cells is shown in Figure 1.
+
+      1) Find out the nearest integer value of Vmax (in nmol/min/cell):
+
+      2) Find out the nearest integer value of KM (in mM):
+
+      3) GLUT2 is a glucose transport protein expressed in hepatocytes in an insulin-independent manner, and Vmax and 𝐾M are 2 nmol/min/cell and 9 mM, respectively. GLUT4 is another transporter expressed in muscles or hepatocytes functioning in an insulin-dependent manner, and Vmax and 𝐾M are 0.85 nmol/min/cell and 0.8 mM, respectively. Indicate whether each of the following statements is True or False.
+
+      A)
+      Healthy humans that typically has 4 to 6 mM of blood glucose. The rate of glucose transport per molecule by GLUT2 is considered to be approximately equal to that by GLUT4.
+
+      B)
+      Although the transport rate of glucose by GLUT1 and GLUT4 is almost saturated in healthy humans, GLUT2 has an additional capacity to increase the transportation rate.
+    solution: |
+
+      1) Vmax = 3 nmol/min/cell
+
+      2) Km = 2 mM
+
+      Solution – Identify two pointsPoint 1 => V = 1.5 nmol/min/cell and [S] = 2 mM
+      Point 2 => V = 2.5 nmol/min/cell and [S] = 10mM
+
+      3) A – True
+
+      Solution -
+      Calculated rates are 2.1, 0.71 and 0.74 [nmol/min/cell] for GLUT1, GLUT2 and GLUT4, respectively.
+
+      3) B – True
+
+      Solution – Normal glucose concentration in humans is above K
+      m for GLUT1 and GLUT4 but is lower than Km for GLUT2. Thus, GLUT1 and GLUT4 are saturated but GLUT2 is still in the increasing part of the curve.
+  - id: 2
+    difficulty: "medium"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/enzyme-kinetics-regulation-q2.png)
+
+      Amino acid glutamine is required for cancer cells to survive and proliferate. Enzyme glutaminase breaks down glutamine into glutamate and ammonia. Glutaminase was obtained from two different sources, S1 and S2. Their kinetic properties are shown in the graph. The arrow indicates the concentration of glutamine in the cell environment. Based on the kinetics, can any of these enzymes be considered for possible cancer treatment?
+
+      A. Enzyme from S1 can be used more effectively for cancer treatment as it shows higher Vmax than S2.B
+      . Enzyme S2 is better for cancer treatment as it shows lower KM value for the substrate.C
+      . Both enzymes cannot be used as production of ammonia will be detrimental to the neighbouring normal cells.D
+      . Both enzymes are equally effective as both are active at concentrations found in the cell environment.
+    solution: |
+
+      Answer – B
+
+      Evaluating the statements,
+
+      A – IncorrectSolution - 
+      Higher Vmax alone does not make S₁ more effective at low [S].
+
+      B – CorrectSolution – Enzyme S
+      2 having lower KM promotes faster breakdown of glutamine at normal cell environment concentration and is thus better for cancer treatment than S1
+
+      C – IncorrectSolution -
+      ** **The graph does not establish that ammonia production would be harmful to normal cells.
+
+      D – IncorrectSolution
+      ** - **The enzymes clearly have different activities at the relevant
+  - id: 3
+    difficulty: "medium"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      Catalysis of the cleavage of peptide bonds in a small peptide by a proteolytic enzyme is described in the following table (the arrow indicates site of cleavage):
+
+      |  | Substrate | KM (mM) | Kcat (s-1) |
+      |---|---|---|---|
+      | 1 | Glu-Met-Thr-Ala↓Gly | 4.0 | 24 |
+      | 2 | Glu-Met-Thr-Ala↓Ala | 1.5 | 30 |
+      | 3 | Glu-Met-Thr-Ala↓Phe | 0.5 | 18 |
+      | 4 | Glu-Met-Thr-Ile↓Phe | 9.0 | 18 |
+      | 5 | Glu-Met-Thr-Gly↓Tyr | 1.0 | 20 |
+
+      Read each of the following statements and fill in the table:A
+      . Substrate 3 is cleaved most efficiently.B
+      . Alanine is the most preferred amino acid on either side of the cleavage site.C
+      . The enzyme most efficiently cleaves the peptide bond between a small hydrophobic amino acid residue and a large, aromatic hydrophobic amino acid residue.D
+      . A new substrate with a Km value of 0.3 would be more efficiently cleaved compared to the given substrates.
+
+      |  | A | B | C | D |
+      |---|---|---|---|---|
+      | True |  |  |  |  |
+      | False |  |  |  |  |
+      | Cannot be deduced |  |  |  |  |
+    solution: |
+
+      Answer –
+
+      |  | A | B | C | D |
+      |---|---|---|---|---|
+      | True | ✔ |  | ✔ |  |
+      | False |  | ✔ |  |  |
+      | Cannot be deduced |  |  |  | ✔ |
+
+      Solution –
+
+      Make a table for catalytic efficiency (Kcat/KM) for each substrate:
+
+      |  | Substrate | KM (mM) | Kcat (s-1) | Kcat/KM (mM s-1) |
+      |---|---|---|---|---|
+      | 1 | Glu-Met-Thr-Ala↓Gly | 4.0 | 24 | 6 |
+      | 2 | Glu-Met-Thr-Ala↓Ala | 1.5 | 30 | 20 |
+      | 3 | Glu-Met-Thr-Ala↓Phe | 0.5 | 18 | 36 |
+      | 4 | Glu-Met-Thr-Ile↓Phe | 9.0 | 18 | 2 |
+      | 5 | Glu-Met-Thr-Gly↓Tyr | 1.0 | 20 | 20 |
+
+      Evaluating each option,
+
+      A – True
+
+      Solution – Substrate 3 shows highest value of catalytic
+      efficiency, thus it is cleaved most efficiently.
+
+      B – False
+
+      Solution – Only in substrate 2, Ala is on either side of cleavage site.
+
+      C – True
+
+      Solution – Most efficiently cleaved substrate is substrate 3 where bond between Ala (small hydrophobic amino acid) and
+      Phe (large aromatic amino acid) is cleaved
+
+      D – Cannot be deducedSolution – Efficiency depends both on 
+      Kcat and KM. So it is not necessarily true that an enzyme with low KM will have greater efficiency.
+  - id: 4
+    difficulty: "hard"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      Alcohol dehydrogenase is known to convert ethanol to acetaldehyde, which is eventually metabolized to CO2 and H2O in humans and many other organisms. The enzyme also catalyzes the conversion of methanol to poisonous formaldehyde, but with less efficiency. This normally means that ethanol is the physiological substrate for the enzyme. However, we may regard that ethanol is an efficient competitive inhibitor for the enzyme against the reaction with methanol under certain conditions. For example, intake of ethanol may prevent the conversion of methanol, when a small amount of methanol is taken up erroneously.
+
+      Calculate the concentration of ethanol which suppresses 90% of the initial formaldehyde production in a test tube containing 5 mM methanol and alcohol dehydrogenase, based on the equations and assumption of kinetic constants of methanol and ethanol that are 10 mM and 1 mM, respectively.
+
+      ![image](/CHALLENGEPICS/enzyme-kinetics-regulation-q4.png)
+    solution: |
+
+      Answer – 13.5 mM
+
+      Solution - In methanol without ethanol, .
+      For 90% suppression by ethanol addition 
+      Thus, α = 14.5
+      From Eq 2, [I] = 13.5 mM
+  - id: 5
+    difficulty: "hard"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      Carbon assimilation in photosynthesis begins when Ribulose-bisphosphate carboxylase/oxygenase (Rubisco) binds one molecule of CO2 to Ribulose 1,5-bisphosphate (RuBP) to form two molecules of 3-phosphoglycerate. Rubisco is considered to be one of the most important enzymes on the planet due to its ability to produce organic carbon compounds that support almost all organisms. O2 can bind to the active site of Rubisco instead of CO2, in which case one molecule of 3-phosphoglycerate and one molecule of 3-phosphoglycorate are formed. Thus, CO2 and O2 function as antagonists. The following values show the enzymatic properties of Rubisco of a seed plant and the environmental condition in vivo.
+
+      (a) Kinetic characteristics of Rubisco (substrate concentration at 50% of saturation at 25°C)
+      KM [X]: the affinity of the enzyme for substrate X.
+      KM [CO2] = 9 μM, KM [O2] = 535 μM, KM [RuBP] = 28 μM
+
+      (b) Maximum activity (number of repetitions of enzyme reaction per second)
+      kcat [X]: the maximum reaction rate when the enzyme catalyzes the reaction of substrate X.
+      kcat [CO2] = 3.3 /s, kcat [O2] = 2.4 /s
+
+      (c) Concentration in water in equilibrium with air (assuming 0.035% CO2 and 21% O2) at 25°C
+      CO2 = 11 μM, O2 = 253 μM
+      RuBP concentration in chloroplast stroma is 4 to 10 mM.
+
+      Which properties from (a) to (c) above are necessary to explain the following facts from A to D?
+
+      A. The carboxylase activity of Rubisco increases as the oxygen concentration in the air decreases
+      B. In the current global environment, the carboxylase activity of Rubisco is higher than the oxygenase activity
+      C. Plants must have large amounts of Rubisco to maintain the full capacity of photosynthesis
+      D. Increasing the concentration of CO2 in the air increases the carboxylase activity of Rubisco
+    solution: |
+
+      A – A and CSolution - F
+      rom (a) and (c) conditions, the carboxylase activity of Rubisco is not in saturating situation in the air. Since oxygen molecule works as the competitive inhibitor against CO2, the carboxylase activity increases when O2 concentration in the air decreases.
+
+      B – A, B and CSolution - 
+      Addition to (a) and (c) conditions in the air, turnover rates of CO2 and O2 is found out from (b) condition. Thus, by using all conditions, it is supposed that the carboxylase activity of Rubisco is higher than the oxygenase activity.
+
+      C – A, B and CSolution - 
+      Turnover rate of CO2 in Rubisco is very low. Also, from (a) and (c) conditions, the carboxylase activity is low. Thus, to maintain the full capacity of photosynthesis, large amounts of Rubisco is necessary.
+
+      D – A and CSolution - 
+      From (a) and (c) conditions, the carboxylase activity of Rubisco is not in saturating situation in the air. The carboxylase activity increases when CO2 concentration in the air increases.

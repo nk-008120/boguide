@@ -1,14 +1,3 @@
--- Security fix: doubts/doubt_replies/doubt_images/doubt_reply_images base-table
--- select policies were still `using (true)` from 024_doubts_conversion.sql --
--- is_removed filtering only happened in the doubts_feed/doubt_replies_feed
--- views, not the underlying tables, so a direct `.from('doubts').select('*')`
--- with the (public) anon key could read staff-removed content the views
--- correctly hide. Mirrors the pattern biolab_practicals/biolab_submissions/
--- biolab_submission_images already use (020_biolab_moderation_removal.sql,
--- 021_biolab_multi_image_and_attachments.sql): public sees non-removed rows,
--- an owner can always see their own regardless of removal state, and the
--- curated feed views (unchanged here, already correct) stay stricter with no
--- owner exception.
 
 drop policy if exists doubts_select_all on public.doubts;
 create policy doubts_select_all on public.doubts

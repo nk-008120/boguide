@@ -1,7 +1,8 @@
----  
-title: "✅ P4-Plant Computational Biology"  
-weight: 1  
----  
+---
+title: "✅ P4-Plant Computational Biology"
+description: "Practical IV study guide covering plant computational biology, image analysis, and quantitative methods for IBO practical exams."
+weight: 1
+---
 
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
 <script>

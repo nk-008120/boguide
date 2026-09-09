@@ -86,16 +86,16 @@
     var actualDir, energyReq, rateLabel;
     if (mode === 'simple'){
       actualDir = passiveDir;
-      energyReq = 'No energy required — moves down its own gradient.';
+      energyReq = 'No energy required - moves down its own gradient.';
       rateLabel = 'No protein needed.';
     } else if (mode === 'facilitated'){
       actualDir = passiveDir;
-      energyReq = 'No direct energy required — moves down its gradient via a channel/carrier protein.';
+      energyReq = 'No direct energy required - moves down its gradient via a channel/carrier protein.';
       rateLabel = 'Protein-assisted, still passive.';
       drawProtein();
     } else {
       actualDir = -passiveDir;
-      energyReq = 'Requires direct energy input (e.g. ATP hydrolysis) — moves against its own gradient.';
+      energyReq = 'Requires direct energy input (e.g. ATP hydrolysis) - moves against its own gradient.';
       rateLabel = 'Pump protein, energy-coupled.';
       drawProtein();
     }

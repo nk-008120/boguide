@@ -18,6 +18,14 @@ function loadRound(olympiad, year, roundId) {
   return rounds.find((r) => r.id === roundId) || null;
 }
 
+// free_response has no single checkable answer (a descriptive model answer,
+// not a value to grade against) -- excluded from every count/score
+// calculation here, mirroring static/js/papers-attempt.js's own
+// gradableStatements() split, which this function must stay in sync with.
+function gradableStatements(p) {
+  return (p.statements || []).filter((s) => (s.type || 'true_false') !== 'free_response');
+}
+
 function recompute(round, answers) {
   let totalCorrect = 0;
   let totalStatements = 0;
@@ -26,19 +34,29 @@ function recompute(round, answers) {
 
   (round.problems || []).forEach((p) => {
     const ans = (answers && answers[p.id]) || {};
+    const gradable = gradableStatements(p);
     let correct = 0;
-    (p.statements || []).forEach((s) => {
+    gradable.forEach((s) => {
       totalStatements++;
-      if (ans[s.letter] === s.answer) {
+      const given = ans[s.letter];
+      let isCorrect;
+      if (s.type === 'numeric') {
+        isCorrect = typeof given === 'number' && !isNaN(given) &&
+          Math.abs(given - s.expected) <= (s.tolerance || 0);
+      } else {
+        isCorrect = given === s.answer;
+      }
+      if (isCorrect) {
         correct++;
         totalCorrect++;
       }
     });
-    perQuestion.push({ id: p.id, number: p.number, name: p.name, correct, total: (p.statements || []).length });
+    perQuestion.push({ id: p.id, number: p.number, name: p.name, correct, total: gradable.length });
+    const subjectCount = (p.subjects || []).length || 1;
     (p.subjects || []).forEach((subj) => {
       if (!subjectStats[subj.name]) subjectStats[subj.name] = { correct: 0, total: 0, link: subj.link };
-      subjectStats[subj.name].correct += correct;
-      subjectStats[subj.name].total += (p.statements || []).length;
+      subjectStats[subj.name].correct += correct / subjectCount;
+      subjectStats[subj.name].total += gradable.length / subjectCount;
     });
   });
 
@@ -53,6 +71,10 @@ module.exports = async (req, res) => {
     if (!res.headersSent) res.status(500).json({ error: 'Internal error' });
   }
 };
+
+// Exposed purely so recompute()'s scoring logic can be exercised directly in
+// a test script against synthetic fixtures, without a live Supabase connection.
+module.exports.recompute = recompute;
 
 async function handle(req, res) {
   if (req.method !== 'POST') {
@@ -86,6 +108,8 @@ async function handle(req, res) {
 
   const body = req.body || {};
   const { olympiad, year, roundId, answers, timeSpent, fullscreenExits } = body;
+  const showOnLeaderboard = body.showOnLeaderboard !== false;
+  const showOnDashboard = body.showOnDashboard !== false;
 
   if (
     typeof olympiad !== 'string' || !ID_PATTERN.test(olympiad) ||
@@ -94,6 +118,11 @@ async function handle(req, res) {
     typeof answers !== 'object' || answers === null
   ) {
     res.status(400).json({ error: 'Invalid request body' });
+    return;
+  }
+
+  if (!showOnLeaderboard && !showOnDashboard) {
+    res.status(400).json({ error: 'Select at least one of leaderboard or dashboard to save this attempt' });
     return;
   }
 
@@ -126,7 +155,9 @@ async function handle(req, res) {
     avg_time_sec: avgTimeSec,
     fullscreen_exits: Number(fullscreenExits) || 0,
     subject_stats: subjectStats,
-    per_question: perQuestion
+    per_question: perQuestion,
+    show_on_leaderboard: showOnLeaderboard,
+    show_on_dashboard: showOnDashboard
   });
 
   if (insertError) {
@@ -135,22 +166,28 @@ async function handle(req, res) {
     return;
   }
 
-  const { data: rankRow } = await admin
-    .from('leaderboard_per_round')
-    .select('rank')
-    .eq('user_id', userId)
-    .eq('olympiad', olympiad)
-    .eq('year', year)
-    .eq('round_id', roundId)
-    .maybeSingle();
+  let rank = null;
+  if (showOnLeaderboard) {
+    const { data: rankRow } = await admin
+      .from('leaderboard_per_round')
+      .select('rank')
+      .eq('user_id', userId)
+      .eq('olympiad', olympiad)
+      .eq('year', year)
+      .eq('round_id', roundId)
+      .maybeSingle();
+    rank = rankRow ? rankRow.rank : null;
+  }
 
   const scorePct = totalStatements > 0 ? Math.round((totalCorrect / totalStatements) * 1000) / 10 : 0;
 
   res.status(200).json({
     totalCorrect,
     totalStatements,
+    showOnLeaderboard,
+    showOnDashboard,
     scorePct,
-    rank: rankRow ? rankRow.rank : null,
+    rank,
     roundName: round.name || roundId,
     submittedAt: new Date().toISOString()
   });

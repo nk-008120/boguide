@@ -1,0 +1,15 @@
+Q.41
+Frequencies of the human AB0 blood group alleles in a population are p(I ) = 40%,
+p(I )=40% and p(i)=20%. 
+Assuming that the population is in Hardy-Weinberg equilibrium, indicate in the
+answer sheet if each of the following statements is true or false.
+A. In this population, the number of persons with the blood groups A and B should
+be equal.
+B. In this population, the number of persons with the blood groups A and AB should
+be equal.
+C. In this population the frequency of persons with anti-B antibodies is 64%.
+D. Locus AB0 is localized on an autosomal chromosome because the blood group
+frequencies are the same for men and women.
+A
+B
+46/56

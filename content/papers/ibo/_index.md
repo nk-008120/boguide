@@ -1,5 +1,6 @@
 ---
 title: "International Biology Olympiad"
+description: "Practice IBO theory papers with timed attempts, instant scoring, and per-question solutions on BiOrchive."
 ---
 
 {{< biorchive-bg >}}

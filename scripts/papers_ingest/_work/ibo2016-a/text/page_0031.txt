@@ -1,0 +1,69 @@
+Q.26
+Two groups of students separately performed an experiment on kidney function.
+Thirty minutes before the experiment, each student in one group was instructed to
+drink 500 mL of water, while each student in the other group was instructed to drink
+100 mL of water. At t = 0 minute, each student in both groups was instructed to drink
+750 mL of water. Each student was then asked to urinate as he or she would normally
+do without attempting to manipulate the speed or flow in any way at the different time
+points shown in Figure Q.26. An electronic uroflowmeter was used to measure the
+urine flow rate. The Cl concentration in each urine sample was measured. Figure
+Q.26 shows the data of the experiment.
+0
+20
+40
+60
+80
+0
+50
+100
+150
+200
+250
+300
+0
+20
+40
+60
+80
+0
+1
+2
+3
+4
+5
+6
+7
+8
+0
+20
+40
+60
+80
+0
+0
+20
+40
+60
+80
+0
+Group II
+Group I
+Time (min)
+Urine flow rate (mL/min)
+Time (min)
+Group II
+Group I
+[Cl-(mM/L)
+Urine
+Figure Q.26.
+Indicate in the Answer sheet if each of the following statements is True or False. 
+A. The absolute reabsorption of water by nephrons of the students in Group II at t =
+60 min was lower than that of the students in Group I.
+B. The plasma aldosterone concentration of the students in Group I was the highest
+at t = 60 min.
+C. The students in Group I drank 500 mL of water 30 minutes before the
+experiment.
+D. The students in Group II produced about 140 mL of urine during the period
+between t = 40 min and t = 60 min.
+-
+30/56

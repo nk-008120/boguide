@@ -1,0 +1,39 @@
+PLANT ANATOMY AND PHYSIOLOGY
+Q.11
+Cell walls provide plant cells with a substantial degree of volume homeostasis relative
+to the large changes in water potential that they experience as the everyday
+consequence of the transpirational water loss. Cell water potential (ᴪ) of a plant cell
+is composed of solute potential (ᴪ) and turgor pressure potential (ᴪ). Relative cell
+volume is correlated with cell water potential and its components as described in
+the Fig.Q11.
+2
+1
+0
+-1
+-2
+-3
+1.0
+0.95
+0.9
+0.85
+0.8
+Ψp
+Ψw = Ψs + Ψp
+Ψs
+Relative cell volume
+Cell water potential (MPa)
+Fig.Q11
+Indicate in the Answer sheet if each of the following statements is True or False.
+A. Alterations of plant cell water potential are generally accompanied by a large
+change in turgor pressure and in cell volume.
+B. Disappearance of turgor pressure indicates the ending point of cell plasmolysis
+with reduction of approximately by 15% cell volume. 
+C. As the cell volume decreases by 10%, most of the change in cell water potential is
+caused by the drop in cell solute potential together with little change in turgor
+pressure.
+D. During cell rehydration, cell volume expansion stops when cell wall generates
+pressure equivalent to turgor pressure and the cell water potential reaches zero.
+w
+s
+p
+15/56

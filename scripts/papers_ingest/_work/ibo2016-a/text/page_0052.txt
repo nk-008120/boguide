@@ -1,0 +1,38 @@
+Q.46
+The dioecious perennial Poa grass coexists with Stipa grass in the steppes. The
+former is highly preferred by domestic and wild herbivores, while the latter is
+relatively unpalatable. Scientists grew Poa plants in different distances to Stipa
+plants, with or without root barrier, in different grazing levels, and then recorded the
+growth of Poa plants.
+Ungrazed
+Moderate grazing
+Intense grazing
+Total biomass (g)
+Close
+Far
+Close
+Far
+Close
+Far
+Female
+Male
+Figure Q.46-1. Effects of distance (close and far) and barrier (without barrier (-B) and with the barrier present (+B)) to root
+competition manipulations on Poa female (top panels) and male plants (bottom panels) total biomass, at each grazing
+intensity level. 
+In another experiment, they recorded the density of Poa male and female plants under
+differenet grazing levels.
+Females
+Males
+Ungrazed
+Moderate
+Density (plants
+Intense
+grazing
+grazing
+6
+4
+2
+0
+/m2)
+Fig.Q.46-2
+51/56

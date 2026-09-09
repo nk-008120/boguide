@@ -1,0 +1,21 @@
+Q.2
+Translational rate of a mRNA can be estimated from sodium dodecyl sulfate
+polyacrylamide gel electrophoresis (SDS-PAGE). In this experiment, a tobacco mosaic
+virus (TMV) mRNA, which encodes a 116,000-dalton protein, was translated in a
+rabbit reticulocyte lysate in the in the presence of 
+S-methionine. The lysate
+contained all components of rabbit reticulocite translational machinery. Samples
+were removed at 1-minute intervals and subjected to SDS- PAGE. The separated
+translation products were visualized by autoradiography. As can be seen in the figure
+below, the largest detectable polypeptides get larger with time, until the full-length
+protein appears at about 25 minutes.
+Fig.Q.2. Time course of synthesis of a TMV protein in a rabbit-reticulocyte lysate. Molecular weight (kDa) as a function of
+time t (min). 
+Indicate in the Answer Sheet if each of the following statements is True or False.
+A. The rate of TMV protein synthesis is exponentially proportional to time.
+B. With an average molecular mass of an amino acid of 110 daltons, the average
+rate of protein synthesis is approximately 35 to 40 amino acids per minute.
+C. The rabbit reticulocyte lysate contains methionyl-tRNA synthetase
+D. The mRNA may contain more than two rare codons in its sequence.
+35
+5/56

@@ -81,12 +81,12 @@
       question: 'How many ovaries, and how many flowers, formed this fruit?',
       options: [
         { label: 'One ovary, one flower', next: 'simpleTexture' },
-        { label: 'Multiple ovaries, one flower', result: 'Aggregate fruit — e.g. raspberry (each drupelet is one carpel\'s fruitlet, all from one flower\'s gynoecium).' },
-        { label: 'Multiple ovaries, multiple flowers (one inflorescence)', result: 'Multiple fruit — e.g. pineapple or fig (fused ovaries from many separate flowers).' }
+        { label: 'Multiple ovaries, one flower', result: 'Aggregate fruit - e.g. raspberry (each drupelet is one carpel\'s fruitlet, all from one flower\'s gynoecium).' },
+        { label: 'Multiple ovaries, multiple flowers (one inflorescence)', result: 'Multiple fruit - e.g. pineapple or fig (fused ovaries from many separate flowers).' }
       ]
     },
     simpleTexture: {
-      question: 'Simple fruit — is the pericarp fleshy or dry at maturity?',
+      question: 'Simple fruit - is the pericarp fleshy or dry at maturity?',
       options: [
         { label: 'Fleshy', next: 'fleshyType' },
         { label: 'Dry', next: 'dryDehiscence' }
@@ -95,9 +95,9 @@
     fleshyType: {
       question: 'What does the internal structure look like?',
       options: [
-        { label: 'Entire pericarp fleshy, no hard layer', result: 'Berry — e.g. tomato, grape.' },
-        { label: 'Fleshy mesocarp + hard, stony endocarp around one seed', result: 'Drupe — e.g. peach, cherry.' },
-        { label: 'Most of the flesh is not from the ovary wall (receptacle-derived)', result: 'Pome — e.g. apple, pear.' }
+        { label: 'Entire pericarp fleshy, no hard layer', result: 'Berry - e.g. tomato, grape.' },
+        { label: 'Fleshy mesocarp + hard, stony endocarp around one seed', result: 'Drupe - e.g. peach, cherry.' },
+        { label: 'Most of the flesh is not from the ovary wall (receptacle-derived)', result: 'Pome - e.g. apple, pear.' }
       ]
     },
     dryDehiscence: {
@@ -110,18 +110,18 @@
     dehiscentType: {
       question: 'How does it split?',
       options: [
-        { label: 'Along two seams', result: 'Legume — e.g. pea pod (characteristic of Fabaceae).' },
-        { label: 'Along multiple seams or pores', result: 'Capsule — e.g. poppy seed pod.' },
-        { label: 'An elongated capsule', result: 'Silique — e.g. mustard seed pod (characteristic of Brassicaceae).' }
+        { label: 'Along two seams', result: 'Legume - e.g. pea pod (characteristic of Fabaceae).' },
+        { label: 'Along multiple seams or pores', result: 'Capsule - e.g. poppy seed pod.' },
+        { label: 'An elongated capsule', result: 'Silique - e.g. mustard seed pod (characteristic of Brassicaceae).' }
       ]
     },
     indehiscentType: {
       question: 'What\'s distinctive about it?',
       options: [
-        { label: 'Small, one seed, pericarp not fused to the seed coat', result: 'Achene — e.g. sunflower "seed".' },
-        { label: 'One seed, pericarp fused tightly to the seed coat', result: 'Caryopsis — e.g. corn kernel (characteristic of grasses).' },
-        { label: 'Winged pericarp extension', result: 'Samara — e.g. maple "helicopter" seed.' },
-        { label: 'Large, hardened pericarp', result: 'Nut — e.g. acorn, hazelnut.' }
+        { label: 'Small, one seed, pericarp not fused to the seed coat', result: 'Achene - e.g. sunflower "seed".' },
+        { label: 'One seed, pericarp fused tightly to the seed coat', result: 'Caryopsis - e.g. corn kernel (characteristic of grasses).' },
+        { label: 'Winged pericarp extension', result: 'Samara - e.g. maple "helicopter" seed.' },
+        { label: 'Large, hardened pericarp', result: 'Nut - e.g. acorn, hazelnut.' }
       ]
     }
   };

@@ -170,8 +170,8 @@
 
     var fired = data.maxV >= thresholdV;
     result.textContent = fired
-      ? 'Threshold reached (peak ' + data.maxV.toFixed(1) + ' mV) — action potential fires!'
-      : 'Subthreshold (peak ' + data.maxV.toFixed(1) + ' mV) — no action potential.';
+      ? 'Threshold reached (peak ' + data.maxV.toFixed(1) + ' mV) - action potential fires!'
+      : 'Subthreshold (peak ' + data.maxV.toFixed(1) + ' mV) - no action potential.';
     result.classList.toggle('fired', fired);
   }
 

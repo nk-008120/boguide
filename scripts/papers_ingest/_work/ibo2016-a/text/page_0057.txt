@@ -1,0 +1,16 @@
+Q.50
+Using sequence differences to establish phylogenies has some advantages and
+possible dangers. An inappropriate choice of molecule could result in molecular trees
+that greatly distort true phylogenetic relationships. Hence, care must be taken in
+using this approach. 
+Indicate in the answer sheet if each of following statements is true or false.
+A. Polypeptide sequences of cytochrome c are very useful for establishing
+evolutionary relationships between closely related species. 
+B. For phylogenetic analysis, comparing partial sequences from many different
+genes is better than comparing full-length sequences of several genes.
+C. Rates  of nucleotide substitution per unit of time are faster in organisms with
+short generation times than in organisms with long generation times.
+D. The Neutral Theory requires that all polypeptide and DNA sequences evolve at
+the same rate.
+END OF THEORY PART A
+56/56

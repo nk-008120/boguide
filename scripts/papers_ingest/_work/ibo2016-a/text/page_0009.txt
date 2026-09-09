@@ -1,0 +1,17 @@
+Q.5 
+Imagine you are studying a membrane protein represented in the diagram below. You
+prepared artificial vesicles  containing this protein only in the membrane. The
+vesicles were then treated with a protease cleaving close to the membrane (2) or
+permeabilised before protease treatment (3). Resulting peptides were subsequently
+separated using SDS-PAGE (sodium dodecyl sulfate polyacrylamide gel
+electrophoresis).
+Fig.Q.5. Membrane protein (a, b, c, d, e: domains) and the SDS-PAGE gel
+(1. untreated control, 2. peptides after protease cleavage, 3. peptides after permeabilisation and protease cleavage. The
+arrow indicates the direction of migration).
+Indicate in the Answer Sheet if each of the following statements is True or False.
+A. The bigger fragments in lane 3 are hydrophilic.
+B. The smaller fragments in lane 2 represent protein domains protruding outside the
+membrane.
+C. Domain a is rich in leucine or isoleucine.
+D. Domains a, c and e protrude into the lumen of vesicles.
+8/56

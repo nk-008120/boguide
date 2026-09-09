@@ -5,7 +5,7 @@ title: "Q38 - Corticotropin Releasing Hormone in Pregnancy and Amphibian Develop
 {{< problem-meta category="Theory" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
-  <a class="papers-subject-tag" href="/resources/3-animal-physiology/endocrine-physiology/">Endocrine Physiology</a>
+  <a class="papers-subject-tag" href="/resources/3-animal-physiology/endocrine-system-physiology/">Endocrine System Physiology</a>
 </div>
 
 Refer to the [question paper](/papers/inbo/2026/theory-exam.pdf#page=20) for figures and tables.

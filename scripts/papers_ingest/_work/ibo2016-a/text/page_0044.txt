@@ -1,0 +1,32 @@
+Q.38
+A mutated male mouse that is phenotypically normal shows reproductive anomalies
+when compared with a normal male in terms of mean number of embryos as shown in
+Table Q.38. The anomaly manifests itself after fertilization.
+Mean number of embryos
+Mating
+Implanted in
+uterine wall
+Degeneration after
+implantation
+Normal Degeneration
+(%)
+mutated ♂ X
+normal ♀
+8.7
+5.0
+3.7
+57.5
+normal ♂ X
+normal ♀
+9.5
+0.6
+8.9
+6.5
+Study carefully data given in the table and indicate in the answer sheet if each of the
+following statements is true or false.
+A. The mutated male mouse can have a chromosome deletion.
+B. The mutated male mouse can be a chromosomal translocation heterozygote.
+C. The mutated male mouse can be a chromosomal inversion heterozygote.
+D. The genetic defect in mutated male could be verified by cytological observation of
+meiotic cells in the mouse.
+43/56

@@ -174,12 +174,12 @@
         bin.appendChild(droppedChip);
         placedCount++;
         if (placedCount === items.length){
-          note.innerHTML = '<span class="ok">All four placed — two Proximate (Causation, Development), two Ultimate (Survival Value, Evolutionary History).</span>';
+          note.innerHTML = '<span class="ok">All four placed - two Proximate (Causation, Development), two Ultimate (Survival Value, Evolutionary History).</span>';
         } else {
           note.textContent = placedCount + ' of ' + items.length + ' placed correctly.';
         }
       } else {
-        note.innerHTML = '<span class="warn">Not quite — that statement belongs to a different question. Try again.</span>';
+        note.innerHTML = '<span class="warn">Not quite - that statement belongs to a different question. Try again.</span>';
         setTimeout(function(){
           tray.appendChild(droppedChip);
         }, 350);

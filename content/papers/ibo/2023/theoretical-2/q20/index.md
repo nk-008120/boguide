@@ -5,7 +5,7 @@ title: "Q20 - Gasdermin and Pyroptosis"
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
-  <a class="papers-subject-tag" href="/resources/1-cell-molecular/cell-junctions-ecm-cell-death/">Cell Junctions, ECM & Cell Death</a>
+  <a class="papers-subject-tag" href="/resources/1-cell-molecular/cell-junctions-ecm-cell-death/">Cell Junctions, Extracellular Matrix & Cell Death</a>
   <a class="papers-subject-tag" href="/resources/3-animal-physiology/immune-physiology/">Immune Physiology</a>
 </div>
 

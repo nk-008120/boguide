@@ -103,11 +103,11 @@
     cursorDot.setAttribute('cx', x*4);
     cursorDot.setAttribute('cy', toSvgY(b, maxV));
     if (Math.abs(x - bestX) <= 3){
-      note.innerHTML = '<b>Near the equilibrium</b> (~' + bestX + ') — marginal benefit ≈ marginal cost here, the trait value selection is expected to push toward.';
+      note.innerHTML = '<b>Near the equilibrium</b> (~' + bestX + ') - marginal benefit ≈ marginal cost here, the trait value selection is expected to push toward.';
     } else if (x < bestX){
-      note.textContent = 'Below equilibrium (~' + bestX + ') — increasing investment here would still raise net fitness.';
+      note.textContent = 'Below equilibrium (~' + bestX + ') - increasing investment here would still raise net fitness.';
     } else {
-      note.textContent = 'Above equilibrium (~' + bestX + ') — further investment costs more in survival than it gains in mating success.';
+      note.textContent = 'Above equilibrium (~' + bestX + ') - further investment costs more in survival than it gains in mating success.';
     }
   }
 

@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "USABO", "cell-biology"]
 ---
 
 {{< topic-meta >}}
+{{< challenge-cta >}}
 {{< mathjax >}}
 
 ## Overview
@@ -72,6 +73,8 @@ All three convert the chemical energy of ATP hydrolysis into a cycle of conforma
 **Static**
 
 *(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
+
+{{< practice-challenge >}}
 
 ## Practice Problems
 

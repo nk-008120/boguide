@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "USABO", "biochemistry"]
 ---
 
 {{< topic-meta >}}
+{{< challenge-cta >}}
 {{< mathjax >}}
 
 ## Overview
@@ -156,6 +157,8 @@ The fastest way to identify an inhibition type from data (a Lineweaver-Burk plot
 **Static**
 
 *(Placed inline above: the kinetic phases diagram, the Table 6-8 specificity-constant reference, the Michaelis-Menten and Lineweaver-Burk plots, and the two four-inhibition-type comparison figures.)*
+
+{{< practice-challenge >}}
 
 ## Practice Problems
 

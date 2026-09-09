@@ -58,13 +58,13 @@
 (function(){
   var ns = 'http://www.w3.org/2000/svg';
   var steps = [
-    { label: 'Metaphase', mitoUnit: 'Sister chromatids (paired) at plate', meioUnit: 'Homologous pairs (tetrads) at plate — Meiosis I',
+    { label: 'Metaphase', mitoUnit: 'Sister chromatids (paired) at plate', meioUnit: 'Homologous pairs (tetrads) at plate - Meiosis I',
       mito: 'paired-single', meio: 'paired-tetrad' },
-    { label: 'Anaphase', mitoUnit: 'Sister chromatids separate', meioUnit: 'Homologous chromosomes separate — Meiosis I',
+    { label: 'Anaphase', mitoUnit: 'Sister chromatids separate', meioUnit: 'Homologous chromosomes separate - Meiosis I',
       mito: 'split-chromatids', meio: 'split-homologs' },
-    { label: 'Meiosis II Metaphase', mitoUnit: '(mitosis already complete)', meioUnit: 'Sister chromatids at plate — Meiosis II',
+    { label: 'Meiosis II Metaphase', mitoUnit: '(mitosis already complete)', meioUnit: 'Sister chromatids at plate - Meiosis II',
       mito: 'done', meio: 'paired-single' },
-    { label: 'Meiosis II Anaphase', mitoUnit: '(mitosis already complete)', meioUnit: 'Sister chromatids separate — Meiosis II',
+    { label: 'Meiosis II Anaphase', mitoUnit: '(mitosis already complete)', meioUnit: 'Sister chromatids separate - Meiosis II',
       mito: 'done', meio: 'split-chromatids' }
   ];
   var idx = 0;
@@ -96,7 +96,7 @@
       var t = document.createElementNS(ns, 'text');
       t.setAttribute('x', 100); t.setAttribute('y', 84); t.setAttribute('text-anchor','middle');
       t.setAttribute('font-size','11'); t.setAttribute('fill','#94a3b8');
-      t.textContent = 'Complete — 2 identical diploid cells';
+      t.textContent = 'Complete - 2 identical diploid cells';
       svg.appendChild(t);
       return;
     }

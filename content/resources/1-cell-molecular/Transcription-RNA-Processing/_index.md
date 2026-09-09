@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "USABO", "molecular-biology"]
 ---
 
 {{< topic-meta >}}
+{{< challenge-cta >}}
 {{< mathjax >}}
 
 ## Overview
@@ -90,6 +91,8 @@ Together, the cap and poly(A) tail form a structural link (bridged by cap-bindin
 **Static**
 
 *(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. The mature-mRNA image is a content mismatch: see the inline note; a basic mature-mRNA-structure diagram is not yet sourced.)*
+
+{{< practice-challenge >}}
 
 ## Practice Problems
 

@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "USABO", "biochemistry"]
 ---
 
 {{< topic-meta >}}
+{{< challenge-cta >}}
 {{< mathjax >}}
 
 ## Overview
@@ -157,6 +158,8 @@ Structural role correlates strongly with secondary-structure composition: **α-k
 **Static**
 
 *(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. One item (a primary-structure diagram showing a peptide bond chain with a disulfide cross-link) has no sourced image yet: Still needs sourcing.)*
+
+{{< practice-challenge >}}
 
 ## Practice Problems
 

@@ -99,13 +99,13 @@
     { id: 'VII', label: 'VII: dsDNA reverse-transcribing' }
   ];
   var items = [
-    { id: 'v1', label: 'Herpesvirus — double-stranded DNA genome', answer: 'I' },
-    { id: 'v2', label: 'Parvovirus (e.g. B19) — single-stranded DNA genome', answer: 'II' },
-    { id: 'v3', label: 'Rotavirus — segmented double-stranded RNA genome', answer: 'III' },
-    { id: 'v4', label: 'Poliovirus — single-stranded RNA genome, directly translated by host ribosomes (positive-sense)', answer: 'IV' },
-    { id: 'v5', label: 'Influenza virus — single-stranded RNA genome that must be transcribed before translation (negative-sense)', answer: 'V' },
-    { id: 'v6', label: 'HIV — single-stranded RNA genome, reverse-transcribed into DNA', answer: 'VI' },
-    { id: 'v7', label: 'Hepatitis B virus — double-stranded DNA genome, replicates via an RNA intermediate', answer: 'VII' }
+    { id: 'v1', label: 'Herpesvirus - double-stranded DNA genome', answer: 'I' },
+    { id: 'v2', label: 'Parvovirus (e.g. B19) - single-stranded DNA genome', answer: 'II' },
+    { id: 'v3', label: 'Rotavirus - segmented double-stranded RNA genome', answer: 'III' },
+    { id: 'v4', label: 'Poliovirus - single-stranded RNA genome, directly translated by host ribosomes (positive-sense)', answer: 'IV' },
+    { id: 'v5', label: 'Influenza virus - single-stranded RNA genome that must be transcribed before translation (negative-sense)', answer: 'V' },
+    { id: 'v6', label: 'HIV - single-stranded RNA genome, reverse-transcribed into DNA', answer: 'VI' },
+    { id: 'v7', label: 'Hepatitis B virus - double-stranded DNA genome, replicates via an RNA intermediate', answer: 'VII' }
   ];
 
   var tray = document.getElementById('tray');
@@ -154,7 +154,7 @@
         if (item.answer === bin.dataset.answer){
           var entry = document.createElement('div');
           entry.className = 'placed';
-          entry.textContent = item.label.split(' — ')[0];
+          entry.textContent = item.label.split(' - ')[0];
           bin.appendChild(entry);
           var chipEl = tray.querySelector('[data-id="' + item.id + '"]');
           if (chipEl) chipEl.remove();

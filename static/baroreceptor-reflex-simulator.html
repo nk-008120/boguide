@@ -94,13 +94,13 @@
   function annotationsFor(tt){
     var anns = [];
     if (tt >= 2){
-      anns.push({x:2.3, y:80, text:'BP falls — baroreceptor firing drops', showarrow:true, ax:30, ay:-30, font:{size:10}, bgcolor:'#fff8e7'});
+      anns.push({x:2.3, y:80, text:'BP falls - baroreceptor firing drops', showarrow:true, ax:30, ay:-30, font:{size:10}, bgcolor:'#fff8e7'});
     }
     if (tt >= 3.5){
       anns.push({x:4.5, y:90, text:'Sympathetic ↑ / parasympathetic ↓', showarrow:true, ax:20, ay:-40, font:{size:10}, bgcolor:'#fff8e7'});
     }
     if (tt >= 8.5){
-      anns.push({x:9, y:96, text:'HR & TPR corrected — BP restored', showarrow:true, ax:20, ay:-30, font:{size:10}, bgcolor:'#dcfce7'});
+      anns.push({x:9, y:96, text:'HR & TPR corrected - BP restored', showarrow:true, ax:20, ay:-30, font:{size:10}, bgcolor:'#dcfce7'});
     }
     return anns;
   }
@@ -139,7 +139,7 @@
         clearInterval(animTimer);
         animTimer = null;
         triggerBtn.disabled = false;
-        readout.innerHTML = '<b>Reflex complete.</b> The baroreceptor reflex corrected blood pressure within seconds — much faster than the hormonal RAAS response.';
+        readout.innerHTML = '<b>Reflex complete.</b> The baroreceptor reflex corrected blood pressure within seconds - much faster than the hormonal RAAS response.';
       }
     }, 120);
   }

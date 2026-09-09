@@ -1,0 +1,59 @@
+CELL BIOLOGY
+Q.1
+The activities of Wee1 kinase and Cdc25 phosphatase determine the state of
+phosphorylation of tyrosine 15 in the Cdk1 component of M-Cdk. When tyrosine 15 is
+phosphorylated, M-Cdk is inactive; when tyrosine 15 is not phosphorylated, M-Cdk is
+active (Figure Q.1A). The activities of Wee1 kinase and Cdc25 phosphatase are also
+controlled by phosphorylation.
+The regulation of these activities can be studied in extracts of frog oocytes. In such
+extracts, Wee1 kinase is active and Cdc25 phosphatase is inactive. As a result, M-Cdk
+is inactive because its Cdk1 component is phosphorylated on tyrosine 15. M-Cdk in
+these extracts can be rapidly activated by addition of okadaic acid, which is a potent
+inhibitor of serine/threonine protein phosphatases. Using antibodies specific for Cdk1,
+Wee1 kinase, and Cdc25 phosphatase, it is possible to examine their phosphorylation
+states 
+by 
+changes 
+in 
+mobility 
+upon 
+gel 
+electrophoresis 
+(Figure 
+Q.1B).
+Phosphorylated forms of these proteins generally migrate more slowly than their
+nonphosphorylated counterparts.
+A
+B
+Wee1
+kinase
+inactive
+Wee1
+kinase
+active
+CdC25
+phosphatase
+active
+CdC25
+phosphatase
+inactive
+M-Cdk
+active
+M-Cdk
+inactive
+ATP
+ADP
+P
+P
+okadaic
+acid
+Fig.Q.1. (A) Control of M-Cdk activity by Wee1 kinase and Cdc25 phosphatase;  (B) Effects of okadaic acid on the
+phosphorylation states of Cdk1,Wee1 kinase, and Cdc25 phosphatase
+Indicate in the Answer Sheet if each of the following statements is True or False
+A. Wee1 kinase is active if it is phosphorylated.
+B.  The phosphatases that control the phosphorylation of Wee1 kinase and Cdc25
+phosphatase are specific for tyrosine side chains.
+C. Okadaic acid directly affects the activation of Cdk1.
+D. If M-Cdk is able to phosphorylate Wee1 kinase and Cdc25 phosphatase, a small
+amount of active M-Cdk would lead to its rapid and complete activation.
+4/56

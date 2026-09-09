@@ -6,7 +6,7 @@ title: "Q30 - Wheat Nitrogen Assimilation Under Elevated CO2"
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/5-plant-physiology/mineral-nutrition-nutrient-uptake/">Mineral Nutrition & Nutrient Uptake</a>
-  <a class="papers-subject-tag" href="/resources/5-plant-physiology/calvin-cycle-photorespiration-c4-cam/">Calvin Cycle, Photorespiration, C4 & CAM</a>
+  <a class="papers-subject-tag" href="/resources/5-plant-physiology/calvin-cycle-photorespiration-c4-cam/">Calvin Cycle, Photorespiration & C4/CAM Biochemistry</a>
 </div>
 
 Wheat is grown on more land area than any other food crop, and it receives about 20% of the world's nitrogen fertilizer.

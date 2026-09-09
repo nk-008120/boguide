@@ -155,9 +155,9 @@
       var score = totalScore(pool[0]);
       resultEl.className = 'result show ' + (score === TRUE_MIN ? 'win' : 'lose');
       if (score === TRUE_MIN){
-        resultEl.innerHTML = '<b>Most parsimonious!</b> Your tree — ' + pool[0].label + ' — requires <b>' + score + '</b> total character-state changes, matching the minimum possible for this dataset (one change per variable character).';
+        resultEl.innerHTML = '<b>Most parsimonious!</b> Your tree - ' + pool[0].label + ' - requires <b>' + score + '</b> total character-state changes, matching the minimum possible for this dataset (one change per variable character).';
       } else {
-        resultEl.innerHTML = 'Your tree — ' + pool[0].label + ' — requires <b>' + score + '</b> total character-state changes. The most parsimonious tree for this data requires only <b>' + TRUE_MIN + '</b>. Reset and try grouping taxa that share more derived states together first.';
+        resultEl.innerHTML = 'Your tree - ' + pool[0].label + ' - requires <b>' + score + '</b> total character-state changes. The most parsimonious tree for this data requires only <b>' + TRUE_MIN + '</b>. Reset and try grouping taxa that share more derived states together first.';
       }
       instructions.textContent = 'Tree complete.';
     } else {

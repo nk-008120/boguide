@@ -1,0 +1,64 @@
+{{- /*
+  practice-challenge: Renders tabbed challenge questions on a subtopic page.
+
+  Reads from data/challenges/<slug>.yaml where <slug> is the lowercase
+  version of the page's directory name (e.g., Amino-Acids-Protein-Chemistry
+  → amino-acids-protein-chemistry).
+
+  Each question gets a difficulty badge, source tag, contributor label,
+  and a Problem/Solution tab pair using Hextra's native tab structure.
+  Questions without solutions only show the Problem tab.
+*/ -}}
+{{- $dirName := path.Base .Page.File.Dir -}}
+{{- $dataKey := lower $dirName -}}
+{{- $challengeData := index hugo.Data.challenges $dataKey -}}
+{{- if $challengeData -}}
+{{- $questions := $challengeData.questions -}}
+{{- if $questions -}}
+<div class="challenge-section" id="practice-challenge">
+
+<h2>Practice Challenge</h2>
+<p class="challenge-intro">Competition-sourced practice questions for this topic, graded by difficulty. Click the <strong>Solution</strong> tab to reveal each answer.</p>
+
+{{- range $i, $q := $questions -}}
+{{- $globalID := printf "challenge-%s-%d" $dataKey $q.id -}}
+<div class="challenge-card">
+  <div class="challenge-meta">
+    {{- $diffClass := "challenge-difficulty-medium" -}}
+    {{- $diffLabel := "Medium" -}}
+    {{- if eq (lower $q.difficulty) "easy" -}}
+      {{- $diffClass = "challenge-difficulty-easy" -}}
+      {{- $diffLabel = "Easy" -}}
+    {{- else if eq (lower $q.difficulty) "hard" -}}
+      {{- $diffClass = "challenge-difficulty-hard" -}}
+      {{- $diffLabel = "Hard" -}}
+    {{- end -}}
+    <span class="challenge-difficulty-badge {{ $diffClass }}">{{ $diffLabel }}</span>
+    <span class="challenge-source-tag">{{ $q.source }}</span>
+    <span class="challenge-contributor">by {{ $q.contributor }}</span>
+  </div>
+
+  <div class="hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain">
+    <div class="hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800" role="tablist">
+      <button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-{{ $globalID }}-0" role="tab" type="button" aria-controls="tabs-panel-{{ $globalID }}-0" aria-selected="true" tabindex="0" data-state="selected"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>Problem</span></span></button>
+      {{- if $q.solution -}}
+      <button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-{{ $globalID }}-1" role="tab" type="button" aria-controls="tabs-panel-{{ $globalID }}-1" aria-selected="false" tabindex="-1"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>Solution</span></span></button>
+      {{- end -}}
+    </div>
+  </div>
+  <div>
+    <div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-{{ $globalID }}-0" role="tabpanel" aria-labelledby="tabs-tab-{{ $globalID }}-0" aria-hidden="false" tabindex="0" data-state="selected">
+      {{- $q.question | markdownify -}}
+    </div>
+    {{- if $q.solution -}}
+    <div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-{{ $globalID }}-1" role="tabpanel" aria-labelledby="tabs-tab-{{ $globalID }}-1" aria-hidden="true">
+      {{- $q.solution | markdownify -}}
+    </div>
+    {{- end -}}
+  </div>
+</div>
+{{- end }}
+
+</div>
+{{- end -}}
+{{- end -}}

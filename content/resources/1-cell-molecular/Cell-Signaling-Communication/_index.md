@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "USABO", "cell-biology"]
 ---
 
 {{< topic-meta >}}
+{{< challenge-cta >}}
 {{< mathjax >}}
 
 ## Overview
@@ -84,6 +85,8 @@ Every activating step described above has a matched inactivating mechanism, Gα'
 **Static**
 
 *(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
+
+{{< practice-challenge >}}
 
 ## Practice Problems
 

@@ -6,7 +6,7 @@ title: "Q16 - Cell Surface-to-Volume Ratio"
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/1-cell-molecular/cell-theory-prokaryotes-eukaryotes/">Cell Theory, Prokaryotes & Eukaryotes</a>
-  <a class="papers-subject-tag" href="/resources/1-cell-molecular/plasma-membrane-structure-transport/">Plasma Membrane & Transport</a>
+  <a class="papers-subject-tag" href="/resources/1-cell-molecular/plasma-membrane-structure-transport/">Plasma Membrane Structure & Transport</a>
 </div>
 
 The size of a single cell can range from a mycoplasma, which is considered the smallest cell, to a giant skeletal muscle fiber or ostrich egg.

@@ -108,10 +108,10 @@
   var lamellaLayer = document.getElementById('lamellaLayer');
   var plasmoLayer = document.getElementById('plasmoLayer');
   var notes = {
-    lamella: 'The middle lamella is pectin-rich and <span class="shared">shared between both cells</span> — it is the layer that separates when cells "let go" of each other, as in fruit softening or leaf abscission.',
-    primary: 'The primary wall is thin and flexible, deposited while each cell is still growing. Each cell deposits its <span class="cellspecific">own primary wall</span> — Cell A\'s primary wall is a distinct structure from Cell B\'s, even though they sit right next to each other.',
-    secondary: 'The secondary wall is deposited internal to the primary wall after growth stops, often lignified. Like the primary wall, it is <span class="cellspecific">cell-specific</span> — only cells requiring extra strength (e.g. sclerenchyma, xylem conducting cells) deposit one at all.',
-    plasmo: 'Plasmodesmata are cytoplasmic channels, lined with plasma membrane, that cross the entire wall stack to connect the cytoplasm of neighboring cells directly — the physical basis of the symplast pathway.'
+    lamella: 'The middle lamella is pectin-rich and <span class="shared">shared between both cells</span> - it is the layer that separates when cells "let go" of each other, as in fruit softening or leaf abscission.',
+    primary: 'The primary wall is thin and flexible, deposited while each cell is still growing. Each cell deposits its <span class="cellspecific">own primary wall</span> - Cell A\'s primary wall is a distinct structure from Cell B\'s, even though they sit right next to each other.',
+    secondary: 'The secondary wall is deposited internal to the primary wall after growth stops, often lignified. Like the primary wall, it is <span class="cellspecific">cell-specific</span> - only cells requiring extra strength (e.g. sclerenchyma, xylem conducting cells) deposit one at all.',
+    plasmo: 'Plasmodesmata are cytoplasmic channels, lined with plasma membrane, that cross the entire wall stack to connect the cytoplasm of neighboring cells directly - the physical basis of the symplast pathway.'
   };
   function update(){
     secondaryLayers.style.display = chkSecondary.checked ? '' : 'none';
@@ -123,7 +123,7 @@
     if (chkPrimary.checked) parts.push(notes.primary);
     if (chkSecondary.checked) parts.push(notes.secondary);
     if (chkPlasmo.checked) parts.push(notes.plasmo);
-    note.innerHTML = parts.length ? parts[parts.length-1] : 'No layers shown — toggle one on to see its structural role.';
+    note.innerHTML = parts.length ? parts[parts.length-1] : 'No layers shown - toggle one on to see its structural role.';
   }
   chkLamella.addEventListener('change', update);
   chkPrimary.addEventListener('change', update);

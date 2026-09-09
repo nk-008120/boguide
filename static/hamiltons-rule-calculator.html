@@ -59,7 +59,7 @@
 <body>
 <div class="widget-container">
   <h3>Hamilton's Rule Calculator</h3>
-  <div class="subtitle">Pick a relationship (sets relatedness r), then set the act's benefit to the recipient and cost to the actor — see whether the act is predicted to be favored by selection.</div>
+  <div class="subtitle">Pick a relationship (sets relatedness r), then set the act's benefit to the recipient and cost to the actor - see whether the act is predicted to be favored by selection.</div>
 
   <div class="relRow" id="relRow"></div>
 
@@ -117,13 +117,13 @@
 
     if (Math.abs(rB - C) < 0.05){
       verdict.className = 'verdict borderline';
-      verdict.textContent = 'rB ≈ C — right at the threshold, neither favored nor selected against.';
+      verdict.textContent = 'rB ≈ C - right at the threshold, neither favored nor selected against.';
     } else if (rB > C){
       verdict.className = 'verdict favored';
-      verdict.textContent = 'rB > C — the altruistic act is predicted to be favored by selection.';
+      verdict.textContent = 'rB > C - the altruistic act is predicted to be favored by selection.';
     } else {
       verdict.className = 'verdict notfavored';
-      verdict.textContent = 'rB < C — the altruistic act is predicted to be selected against.';
+      verdict.textContent = 'rB < C - the altruistic act is predicted to be selected against.';
     }
   }
 

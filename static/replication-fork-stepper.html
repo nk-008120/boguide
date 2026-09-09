@@ -56,7 +56,7 @@
     { label: 'Unwinding', desc: 'Helicase unwinds the parental duplex at the origin, separating the two template strands and opening the fork.', show: ['parent','helicase'] },
     { label: 'SSB coating', desc: 'Single-strand binding proteins coat the exposed single strands, preventing them from re-annealing before synthesis reaches them.', show: ['parent','helicase','ssb'] },
     { label: 'Primer laid', desc: 'Primase synthesises a short RNA primer, providing the free 3\'-OH end DNA polymerase requires to begin extension.', show: ['parent','helicase','ssb','primer'] },
-    { label: 'Leading strand synthesis', desc: 'DNA polymerase extends the leading strand continuously, 5\'->3\', in the same direction the fork is opening — needs only one primer.', show: ['parent','helicase','ssb','primer','leading'] },
+    { label: 'Leading strand synthesis', desc: 'DNA polymerase extends the leading strand continuously, 5\'->3\', in the same direction the fork is opening - needs only one primer.', show: ['parent','helicase','ssb','primer','leading'] },
     { label: 'Lagging strand: Okazaki fragments', desc: 'The lagging strand is synthesised discontinuously as separate Okazaki fragments, each newly primed, in the direction opposite to fork movement.', show: ['parent','helicase','ssb','leading','okazaki'] },
     { label: 'Ligation', desc: 'RNA primers on the lagging strand are removed and replaced with DNA; ligase seals the nicks between adjacent Okazaki fragments into one continuous strand.', show: ['parent','helicase','ssb','leading','okazaki','ligated'] }
   ];

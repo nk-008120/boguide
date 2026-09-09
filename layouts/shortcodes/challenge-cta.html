@@ -1,0 +1,23 @@
+{{- /*
+  challenge-cta: Renders a banner at the top of subtopic pages that have
+  challenge questions, linking to the Practice Challenge section below.
+  Only renders if the page has matching data in data/challenges/.
+*/ -}}
+{{- $dirName := path.Base .Page.File.Dir -}}
+{{- $dataKey := lower $dirName -}}
+{{- $challengeData := index hugo.Data.challenges $dataKey -}}
+{{- if not $challengeData -}}
+  {{- $dirName = .Page.File.ContentBaseName -}}
+  {{- $dataKey = lower $dirName -}}
+  {{- $challengeData = index hugo.Data.challenges $dataKey -}}
+{{- end -}}
+{{- if and $challengeData $challengeData.questions -}}
+{{- $count := len $challengeData.questions -}}
+<div class="challenge-cta-banner">
+  <div class="challenge-cta-content">
+    <span class="challenge-cta-icon" aria-hidden="true">&#9881;</span>
+    <span class="challenge-cta-text">Think you've already read enough on this topic? Try out our <strong>{{ $count }} challenge question{{ if ne $count 1 }}s{{ end }}</strong> on it!</span>
+    <a href="#practice-challenge" class="challenge-cta-link">Jump to Challenges &darr;</a>
+  </div>
+</div>
+{{- end -}}

@@ -1,0 +1,94 @@
+section: "1-cell-molecular"
+slug: "DNA-Structure-Replication"
+title: "DNA Structure & Replication"
+questions:
+  - id: 1
+    difficulty: "easy"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+      Theoretically, in human cells, the rate of DNA polymerase during replication is about 100 nucleotides per second. Assume that each copy of the human genome contains 3×10⁹ nucleotides and that both copies of the genome are identical.
+
+      A. What is the minimum number of origins of replication that such cells need to replicate their DNA every 12 hours? (Give your answer as an integer.)
+
+      B. On average, how many nucleotides are replicated from one origin within 12 hours? (Give your answer in millions of nucleotides to 2 decimal places.) ___ million nucleotides
+    solution: |
+      **A. 695 origins**
+
+      The human genome is diploid and therefore contains 2 × 3 × 10⁹ nucleotide pairs. Each origin produces 2 replication forks, so the effective rate per origin is 200 nucleotides/second. 12 hours = 12 × 60 × 60 = 43,200 seconds.
+
+      Each origin replicates: 200 × 43,200 = 8,640,000 nucleotides.
+
+      Number of origins: (2 × 3 × 10⁹) / 8,640,000 = 694.44 → **695 origins**.
+
+      **B. 8.64 million nucleotides**
+
+      Each origin replicates 200 × 12 × 60 × 60 = 8,640,000 = **8.64 × 10⁶ nucleotides**.
+
+  - id: 2
+    difficulty: "medium"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+      The graph depicts the effect of different salt concentrations on the physical state of a bacterial DNA fragment. Select the most appropriate option that applies to this data.
+
+      ![DNA melting curves at three NaCl concentrations: P (0.02 M), Q (0.1 M), R (0.6 M), showing percentage of double helix versus temperature from 70 to 100 degrees C](/CHALLENGEPICS/dna-q2-salt-melting-curves.png)
+
+      A. Increasing salt concentration increases the thermolability of the DNA strand.
+
+      B. Repulsion between like charges in DNA is more pronounced in condition P as compared to conditions Q and R.
+
+      C. Increasing salt concentration leads to increased hydrogen bonding between the DNA strands.
+
+      D. If one measures absorbance of the DNA strands at 260 nm, R is likely to show greatest absorbance at any temperature between 70–100°C as compared to P and Q.
+    solution: |
+      **Answer: B**
+
+      **A. Incorrect** — Increasing salt concentration generally *decreases* thermolability of DNA because it stabilizes the double helix.
+
+      **B. Correct** — DNA has a negatively charged phosphate backbone. At low salt concentration (P), there are fewer positive ions to shield these negative charges, so repulsion between like charges is greatest in P.
+
+      **C. Incorrect** — Increasing salt concentration does not increase hydrogen bonds between complementary bases. Salt stabilizes DNA mainly by shielding negative charges on phosphate backbones, reducing electrostatic repulsion.
+
+      **D. Incorrect** — Higher salt concentration increases DNA stability and raises its melting temperature. At temperatures between 70–100°C, the sample with the lowest salt concentration (P) would denature more readily and show greater hyperchromicity — not R.
+
+  - id: 3
+    difficulty: "hard"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+      Consider the following:
+
+      I) Bacteriophage genome, 10⁵ bp long, was fragmented to obtain unique (nonrepeating) fragments of 500 bp length each.
+
+      II) Bacterial DNA, 5×10⁶ bp long, was also fragmented to obtain unique (nonrepeating) fragments of 500 bp length each.
+
+      Equal quantity of each sample was denatured and allowed to re-associate separately under the same experimental conditions. During the re-association, the following parameters were tested:
+
+      i) S1 Nuclease digestion (specific for ssDNA)
+      ii) Hypochromicity
+
+      At any point of time during the re-association, indicate whether each statement is True or False:
+
+      A. 'I' will show higher nuclease digestion value than 'II'.
+
+      B. 'II' will show lower hypochromicity than 'I'.
+
+      C. Both 'I' and 'II' will show equal reduction in absorbance at 260 nm but different nuclease digestion values.
+
+      D. Both 'I' and 'II' will show equal nuclease digestion values, but different absorbance values at 260 nm.
+    solution: |
+      The key point is that both samples are fragmented into equal-sized, unique 500 bp fragments, but the total genome sizes are very different.
+
+      - **Sample I**: 10⁵ / 500 = **200** different fragment species
+      - **Sample II**: 5×10⁶ / 500 = **10,000** different fragment species
+
+      Since equal quantities of DNA are used, Sample I has fewer different sequence species, so each individual fragment type is present at a higher concentration. Sample I reassociates **faster** than Sample II.
+
+      **A — False**: I reassociates faster, so it contains *less* ssDNA available for S1 nuclease digestion.
+
+      **B — True**: II reassociates more slowly, so less dsDNA is formed and the decrease in absorbance (hypochromicity) is smaller.
+
+      **C — False**: Different extents of reassociation mean different amounts of dsDNA, causing different reductions in A₂₆₀.
+
+      **D — False**: Since the amount of ssDNA differs, S1 nuclease digestion will also differ.

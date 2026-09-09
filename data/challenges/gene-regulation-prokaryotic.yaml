@@ -1,0 +1,186 @@
+section: "1-cell-molecular"
+slug: "Gene-Regulation-Prokaryotic"
+title: "Gene Regulation: Prokaryotic"
+questions:
+  - id: 1
+    difficulty: "easy"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      TONPG is a compound which is toxic to E. coli. This is transported into the cell by lactose permease, the protein encoded by lac Y gene of the lactose operon. TONPG is not cleaved by -galactosidase (encoded by lac Z gene). TONPG can be used to isolate mutants of the lactose operon. Which one of the following mutants can be isolated using TONPG?A
+      . Mutants of lac Z, which do not make -galactosidase.B
+      . Mutants of lac Y, which do not make permease.C
+      . Mutants of the lac I gene which do not make a functional repressor protein.D
+      . Constitutive mutants in the operator region of the lactose operon.
+    solution: |
+
+      Ans - B
+
+      TONPG is toxic to E. coli, but for it to exert its toxic effect, it must first enter the cell. Its entry depends on lactose permease, encoded by the lacY gene. Therefore:
+      lacY⁺ cells → produce lactose permease → TONPG enters the cell → cells are killed.
+      lacY⁻ mutants → lack functional lactose permease → TONPG cannot efficiently enter → cells survive.
+
+      Evaluating the statements.
+
+      A. IncorrectSolution - 
+      TONPG is not cleaved by β-galactosidase, so loss of LacZ does not prevent TONPG toxicity.
+
+      B. CorrectSolution - W
+      hen bacteria are grown in the presence of TONPG, mutants defective in lacY can be selected because they are resistant to the toxic compound
+
+      C. Incorrect
+      Solution - These cells lack a functional repressor and therefore express lacY constitutively, allowing even more permease-mediated uptake of TONPG. They would remain sensitive.
+
+      D. Incorrect
+      Solution - These also cause constitutive expression of lacY, so TONPG can enter the cell. They would be sensitive rather than selected.
+  - id: 2
+    difficulty: "medium"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      If the operator region of lac operon in E. coli is replaced with that of operator from trp operon, predict what will happen to the expression of lac operon genes in the medium that contains:
+
+      A. Only Glucose, no lactose, no tryptophanB
+      . No glucose, no lactose, only tryptophanC
+      . No glucose, no tryptophan, only lactoseD
+      . Tryptophan and lactose, no glucoseE
+      . Tryptophan, IPTG (analogue of lactose), no glucose
+
+      Indicate whether lac operon will be expressed or will not be expressed by putting tick marks (✔) in the appropriate boxes:
+
+      | Medium | A | B | C | D | E |
+      |---|---|---|---|---|---|
+      | Expressed |  |  |  |  |  |
+      | Not Expressed |  |  |  |  |  |
+    solution: |
+
+      | Medium | A | B | C | D | E |
+      |---|---|---|---|---|---|
+      | Expressed |  |  | ✔ |  |  |
+      | Not Expressed | ✔ | ✔ |  | ✔ | ✔ |
+
+      A – No tryptophan means the trp repressor is inactive, so it cannot bind the substituted operator. However, glucose is present, causing low cAMP levels. CAP–cAMP does not effectively activate the lac promoter. Therefore, the lac structural genes are not significantly expressed.
+
+      B – Absence of glucose allows high cAMP, so CAP–cAMP could activate transcription. But tryptophan is present. Tryptophan acts as a corepressor and activates the trp repressor. The activated trp repressor binds to the substituted trp operator and prevents transcription. Therefore, the lac operon genes are not expressed.
+
+      C – No glucose → high cAMP → CAP–cAMP activates transcription. No tryptophan → trp repressor remains inactive and cannot bind the substituted operator. Therefore, there is no repression at the operator. The presence of lactose is actually not essential for removing repression in this modified operon, because the LacI repressor can no longer bind the operator. Thus, the genes are expressed.
+
+      D – No glucose means CAP–cAMP is available to activate transcription. However, tryptophan activates the trp repressor. The active trp repressor binds the substituted trp operator. Lactose cannot remove the trp repressor. Therefore, the lac structural genes are not expressed.
+
+      E - No glucose means CAP–cAMP can activate the lac promoter. But tryptophan activates the trp repressor. The active trp repressor binds the trp operator, which has replaced the lac operator. IPTG normally binds the LacI repressor and prevents it from binding the lac operator. Here, however, the relevant repression is caused by the trp repressor, not LacI. Therefore, IPTG cannot induce transcription, and the lac operon genes remain not expressed.
+  - id: 3
+    difficulty: "medium"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      An E. coli culture was grown under four nutrient conditions, and β-galactosidase activity was measured as an indicator of lac operon transcription:
+
+      | Condition | Glucose | Lactose | Observed β-galactosidase activity |
+      |---|---|---|---|
+      | A | + | - | Very low |
+      | B | + | + | Low |
+      | C | - | - | Very low |
+      | D | - | + | High |
+
+      Which of the following statements most accurately explains the molecular basis for the observed results?
+
+      A.
+       The presence of glucose prevents formation of CAP-cAMP complex limiting operon induction even when lactose is available.B
+      . Absence of glucose permits efficient uptake of lactose, but allolactose cannot inactivate the repressor unless cAMP is degraded, hence transcription remains low.C
+      . When both lactose and glucose are absent, the lac operon is repressed solely because CAP– cAMP complex binds strongly to the promoter, preventing RNA polymerase attachment.D
+      . Glucose enhances adenylate cyclase activity, producing high cAMP that represses lac operon transcription until lactose concentration falls below threshold.
+    solution: |
+
+      Ans – A
+
+      Evaluating the statements:
+
+      A. CorrectSolution - 
+      In the presence of glucose, intracellular cAMP levels are low, so formation of the CAP–cAMP complex is reduced. Thus, even when lactose removes the repressor, transcription remains relatively low due to the absence of strong CAP-mediated activation.
+
+      B. IncorrectSolution - 
+      Allolactose does inactivate the Lac repressor. cAMP does not need to be degraded for this to occur; in fact, high cAMP promotes CAP binding and transcription.
+
+      C. Incorrect
+      Solution - CAP–cAMP enhances, rather than prevents, RNA polymerase binding. In condition C, transcription is low because the Lac repressor is bound to the operator.
+
+      D. Incorrect
+      Solution - Glucose generally reduces adenylate cyclase activity and lowers cAMP levels. It does not increase cAMP to repress the lac operon.
+  - id: 4
+    difficulty: "hard"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/gene-regulation-prokaryotic-q4.png)
+
+      The regulatory region of a bacterial gene, called 'A', is shown below. The promoter (P) and regulatory region (R) regulate the transcription of the gene. Chemical X regulates the expression of the gene by interacting with a protein Y. There are 3 binding sites (R1, R2, R3) for protein Y in region R. Protein Y has different binding affinities for the 3 sites.
+
+      An experiment was carried out to study the role of the 3 binding sites. The binding sites (R1 to R3) were deleted individually, or in combination, and the expression of gene 'A' was measured in the presence or absence of chemical X. The table shows the ratio of expression of gene 'A' in the presence: absence of chemical X. A cross (×) denotes that the site is deleted, while a tick (✓) denotes the presence of the binding site. In each of the strains below, the expression of gene 'A' in the absence of chemical 'X' is 15 arbitrary units.
+
+      | Strain | R1 | R2 | R3 | Ratio of expression of gene ‘A’ in the presence : absence of chemical ‘X’ |
+      |---|---|---|---|---|
+      | WT | ✓ | ✓ | ✓ | 120 |
+      | M1 | ✓ | ✓ | × | 52 |
+      | M2 | ✓ | × | ✓ | 3 |
+      | M3 | × | ✓ | ✓ | 107 |
+      | M4 | × | ✓ | × | 30 |
+      | M5 | ✓ | × | × | 1 |
+      | M6 | × | × | ✓ | 1 |
+      | M7 | × | × | × | 1 |
+
+      Indicate if each of the given statements are True or False:A. 
+      If gene Y is deleted, the ratio of activity will increase.
+
+      B.
+      The binding affinity of protein Y for R2 site is expected to be the highest.
+
+      C.
+      The sequence TGTGA is important for the binding of protein Y to the R sites.
+
+      D.
+      The binding of protein Y to R3 and R2 influences the gene activity in the same way as protein Y binding to R1 and R2.
+    solution: |
+
+      Chemical X is an inducer of gene A. This is evident form the 120-fold activation of the gene in presence of X. Protein Y is a positive regulator, which acts through the cis-elements R1 to R3. Protein Y is a positive regulator is evident from mutant M7, when deleting the 3 binding sites leads to no activation.
+
+      A. False
+
+      Solution -
+      Deletion of the 3 binding sites lead to no activation, thus loss of the protein would also not lead to any activation.
+
+      B. True
+      Solution - Among the strains M1 to M3; M2 (where R2 is deleted) shows the least activation.
+
+      C. True
+      Solution - As the sequence is conserved in all the 3 sites, it is likely to be important for the binding of protein Y.
+
+      D. False
+
+      Solution -
+      Compare mutations M1 and M3, where M3 shows higher activation
+  - id: 5
+    difficulty: "hard"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      Toehold switches are a class of synthetic RNA regulators that can repress gene expression by sequestering the Ribosome Binding Site (RBS) in a stable hairpin structure. Upon the addition of a small RNA called the toehold trigger, the hairpin structure unfolds, and the RBS is released.
+
+      ![image](/CHALLENGEPICS/gene-regulation-prokaryotic-q5.png)
+
+      Indicate whether the following statements are true or false:
+
+      A. Toehold switches work by repressing the translation of the gene.
+      B. A strong hairpin structure can be made from direct repeats in the RNA sequence.
+      C. The toehold switch will work just as well in eukaryotes as in bacteria.
+      D. One toehold switch can control all genes in an operon.
+    solution: |
+
+      A. True
+      B. False
+      C. False
+      D. False

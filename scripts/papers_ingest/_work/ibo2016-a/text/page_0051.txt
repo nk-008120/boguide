@@ -1,0 +1,38 @@
+Q.45
+Male guppies (Poecilia reticulata) show a complex color pattern polymorphism that
+varies with predation pressure, reflecting a balance between selection for crypsis by
+predators and selection for conspicuousness by sexual selection. Three experimental
+ponds were used to study this phenomenon, mimicking the real condition on the
+native habitat of the guppies and its predators, Rivulus hartii and Crenicichla alta. 
+One pond has the control group while the other two ponds were added with one of the
+two predators. In the field, C. alta was observed to be more dangerous than R. hartii. 
+Months
+Census
+Spots per fish
+0
+8
+9
+10
+11
+12
+13
+10
+20
+F
+II
+S
+I
+R
+K
+C
+Figure Q.45. Changes in the number of spots per fish during the course of the experiment. Line ‘K’ stands for pond
+without predator, ‘R’ for pond with R. hartii, and ‘C’ for pond with C. alta. In the X-axis, ‘F’ stands for the time when the
+foundation population was started, ‘S’ stands for the time when the predators were added, then ‘I’ and ‘II’ stands for the
+numbering of the following censuses.
+Indicate in the Answer sheet if each of the following statements is True or False. 
+A. The color pattern is responsible for the reduced fitness of P. reticulata.
+B. Sexual selection for color pattern of the P. reticulata cannot be inferred from the
+data.
+C. The color pattern of the P. reticulata may be advantagous in escaping R. hartii.
+D. The two predators possibly use two different mechanisms to detect P. reticulata.
+50/56

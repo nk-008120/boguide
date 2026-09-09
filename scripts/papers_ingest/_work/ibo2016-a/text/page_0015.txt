@@ -1,0 +1,36 @@
+Q.10  
+An experiment was set up to observe cell cycle length of a strain of yeast. Activated
+yeast cells were subcultured into a new medium with an initial concentration of 10
+cells/mL. After 40 h, the number of cells increased to 4 x 10 cells/mL. A portion of the
+culture was taken for a separate experiment. In this experiment, cells were incubated
+for 15 min into a media containing radioactive thymidine before washing and re-
+grown on a new media containing non-radioactive thymidine. Cell samples were then
+taken periodically to measure the percentage of mitotic cells containing radioactive
+thymidine. Fig.Q.10 shows the result obtained from the experiment. At each
+sampling, about 1% of the total cells sampled were undergoing mitosis.
+hour after thymidine labelling
+% mitotic cell labelled radioactive
+0
+2
+4
+6
+8
+10
+12
+14
+0
+20
+40
+60
+80
+100
+Fig.Q.10. Fraction of mitotic cells that were labeled radioactively during the cell culture experiment.
+Indicate in the Answer Sheet if each of the following statements is True or False
+A. The synthesis rate of histone proteins is relatively high between 6 and 10 hours
+after radioactive labeled thymidine exposure.
+B. S phase of the cell cycle takes about 5 hours.
+C. M phase of the cell cycle takes longer than 1 hour.
+D. Most of the radioactive thymidine is assimilated in the S phase of the cell cycle.
+6
+6 
+14/56

@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "USABO", "cell-biology"]
 ---
 
 {{< topic-meta >}}
+{{< challenge-cta >}}
 {{< mathjax >}}
 
 ## Overview
@@ -87,6 +88,8 @@ The key mechanistic distinction from mitosis, worth stating explicitly: **meiosi
 **Static**
 
 *(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
+
+{{< practice-challenge >}}
 
 ## Practice Problems
 

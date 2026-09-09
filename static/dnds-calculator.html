@@ -128,9 +128,9 @@
     });
     var ratio = dS === 0 ? Infinity : (dN/dS);
     var regime;
-    if (ratio < 0.7) regime = '<b>purifying selection</b> (dN/dS &lt; 1 — nonsynonymous changes are being removed relative to synonymous ones)';
-    else if (ratio > 1.4) regime = '<b>positive selection</b> (dN/dS &gt; 1 — nonsynonymous changes are more common than synonymous ones)';
-    else regime = 'a pattern <b>consistent with neutral evolution</b> (dN/dS &asymp; 1 — no strong selective constraint on the protein sequence detected)';
+    if (ratio < 0.7) regime = '<b>purifying selection</b> (dN/dS &lt; 1 - nonsynonymous changes are being removed relative to synonymous ones)';
+    else if (ratio > 1.4) regime = '<b>positive selection</b> (dN/dS &gt; 1 - nonsynonymous changes are more common than synonymous ones)';
+    else regime = 'a pattern <b>consistent with neutral evolution</b> (dN/dS &asymp; 1 - no strong selective constraint on the protein sequence detected)';
     document.getElementById('resultBox').innerHTML =
       'You classified ' + correctCount + ' / 6 correctly (highlighted above).<br>' +
       'Based on <b>your</b> classification: dN = ' + dN + ', dS = ' + dS + ', dN/dS = ' + (ratio === Infinity ? '∞' : ratio.toFixed(2)) + '.<br>' +

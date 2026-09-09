@@ -60,7 +60,7 @@
 <body>
 <div class="widget-container">
   <h3>Cohesion-Tension Column Simulator</h3>
-  <div class="subtitle">Raise transpiration to see tension pull the water column upward — then inject an air bubble to see cavitation break it.</div>
+  <div class="subtitle">Raise transpiration to see tension pull the water column upward - then inject an air bubble to see cavitation break it.</div>
   <div class="layout">
     <div class="col-panel">
       <svg id="colSvg" viewBox="0 0 160 380" width="160" height="380">
@@ -80,7 +80,7 @@
         <button class="btn" id="bubbleBtn">Inject air bubble</button>
         <button class="btn secondary" id="resetBtn">Clear embolism</button>
       </div>
-      <div class="note" id="colNote">Low transpiration — a weak pull, water column intact.</div>
+      <div class="note" id="colNote">Low transpiration - a weak pull, water column intact.</div>
     </div>
   </div>
 </div>
@@ -120,16 +120,16 @@
     if (bubbleActive){
       waterFill.setAttribute('y', bubbleY);
       waterFill.setAttribute('height', 33 + 314 - (bubbleY - 33));
-      note.innerHTML = '<span class="warn">Cavitation!</span> The embolism has broken the water column — tension above this point can no longer pull water upward, regardless of transpiration rate.';
+      note.innerHTML = '<span class="warn">Cavitation!</span> The embolism has broken the water column - tension above this point can no longer pull water upward, regardless of transpiration rate.';
     } else {
       waterFill.setAttribute('y', 33);
       waterFill.setAttribute('height', 314);
       if (rate < 15){
-        note.textContent = 'Low transpiration — a weak pull, water column intact.';
+        note.textContent = 'Low transpiration - a weak pull, water column intact.';
       } else if (rate < 60){
-        note.textContent = 'Moderate transpiration — tension increases, water still moves smoothly up the intact column.';
+        note.textContent = 'Moderate transpiration - tension increases, water still moves smoothly up the intact column.';
       } else {
-        note.textContent = 'High transpiration — strong tension. Under real drought stress, this is when cavitation risk rises.';
+        note.textContent = 'High transpiration - strong tension. Under real drought stress, this is when cavitation risk rises.';
       }
     }
   }

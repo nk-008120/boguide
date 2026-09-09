@@ -7,6 +7,7 @@ syllabus_tags: ["IBO", "USABO", "cell-biology"]
 ---
 
 {{< topic-meta >}}
+{{< challenge-cta >}}
 {{< mathjax >}}
 
 ## Overview
@@ -80,6 +81,8 @@ A common misconception worth correcting directly: prokaryotes are not "primitive
 **Static**
 
 *(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Only the animal-cell version of the eukaryotic cell diagram is placed; a plant-cell version is not yet sourced.)*
+
+{{< practice-challenge >}}
 
 ## Practice Problems
 

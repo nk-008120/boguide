@@ -111,7 +111,7 @@
     Plotly.react(plotDiv, traces, layout, {responsive:true, displayModeBar:false});
 
     readout.innerHTML = 'At PO₂ = <b>' + po2 + ' mmHg</b> with P50 = <b>' + p50.toFixed(0) + ' mmHg</b>: hemoglobin saturation = <b>' + satAtMarker.toFixed(1) + '%</b>.' +
-      (level > 40 ? ' The curve has shifted right (Bohr effect) — hemoglobin releases more O₂ at this PO₂ than it would at rest.' : '');
+      (level > 40 ? ' The curve has shifted right (Bohr effect) - hemoglobin releases more O₂ at this PO₂ than it would at rest.' : '');
   }
 
   bohrSlider.addEventListener('input', render);

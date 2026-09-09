@@ -1,0 +1,178 @@
+section: "1-cell-molecular"
+slug: "Transcription-RNA-Processing"
+title: "Transcription & RNA Processing"
+questions:
+  - id: 1
+    difficulty: "easy"
+    source: "USABO"
+    contributor: "SM"
+    question: |
+
+      Transcription factors are often allosterically regulated by protein kinases. Indicate the sequences that would most likely be responsible for protein kinase regulation in transcription factors.
+      A. AGVSFN.
+      B. KGITHRW.
+      C. IVVIKRF.
+      D. KIGVIKP.
+      E. IGVYVSP.
+    solution: |
+
+      Protein kinases regulate proteins by phosphorylating specific amino acid residues, most commonly serine (S), threonine (T), or tyrosine (Y). Therefore, sequences containing S, T, or Y are the most likely kinase recognition/phosphorylation sites.
+
+      Now, evaluate the options,
+
+      A – Likely (Has a S (Ser) site)
+
+      B – Likely (Has a T (Thr) site)
+
+      C – Not Likely
+
+      D - Not Likely
+
+      E – Likely (Has a Y (Tyr) site)
+  - id: 2
+    difficulty: "easy"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      Bacteriophages take control of the host transcription machinery and sequentially express different groups of phage genes. A, B, C and D are four groups of phage genes expressed in the order A, B, C, D. Each group of genes has a specific type of promoter, each of which requires a specific sigma factor to initiate transcription. The genes encoding sigma factors to transcribe group A and group D genes are located in:
+
+      A. bacterial genome and phage genome respectively.B
+      . bacterial genome.C
+      . phage genome.D
+      . phage genome and bacterial genome respectively.
+    solution: |
+
+      Answer – A) bacterial genome and phage genome respectively.
+
+      Solution - The phage genes are expressed sequentially: Group A → Group B → Group C → Group D
+      Each group requires a specific sigma factor for transcription. Group A is expressed first, immediately after the phage infects the bacterium. Therefore, its promoter must initially be recognized by a sigma factor already present in the host cell. The gene encoding this sigma factor is therefore located in the bacterial genome. As transcription proceeds, early phage genes can encode phage-specific sigma factors that redirect the host RNA polymerase to transcribe subsequent groups (B, C, and eventually D). Thus, the sigma factor required for Group D transcription is encoded by the phage genome.
+
+      Therefore: Group A sigma factor is in bacterial genome while Group D sigma factor is in phage genome.
+  - id: 3
+    difficulty: "medium"
+    source: "USABO"
+    contributor: "SM"
+    question: |
+
+      During prokaryotic transcription:
+      A. Nucleotides are polymerized by DNA polymerase.
+      B. Initiation occurs at a site recognized by the sigma factor.
+      C. Only single gene-sized mRNA molecules are synthesized.
+      D. Both DNA strands of a single gene are used as templates simultaneously.
+      E. Thymine in RNA pairs with adenine in DNA.
+    solution: |
+
+      Answer – B
+
+      Evaluating the statements,
+
+      A – IncorrectSolution - 
+      Nucleotides are polymerized by RNA polymerase not DNA polymerase
+
+      B – CorrectSolution - 
+      Initiation requires sites like -35 box, -10 box (Pribnow box) and UP element which are recognized by the sigma factor.
+
+      C – IncorrectSolution – mRNA produced in 
+      prokaryots are polycistronic, i.e., one mRNA has many genes corresponding to different proteins.
+
+      D – IncorrectSolution – Only one
+       DNA strand, called the template/non-coding/anti-sense/(-) strand, is used as template at a time.
+
+      E - Incorrect Solution - Uracil 
+      in RNA pairs with adenine in DNA.
+  - id: 4
+    difficulty: "medium"
+    source: "USABO"
+    contributor: "SM"
+    question: |
+
+      Which of the following is true about transcription in a bacterial cell?
+      I. A single mRNA transcript will often code for more than one protein.
+      II. Nascent mRNA transcripts undergo numerous post transcriptional modifications before translation initiation.
+      III. mRNA transcripts use a start codon that codes for glycine.
+      IV. Promoters for transcription usually feature a TATA rich region about 10bp upstream of the start codon.
+      V. The same RNA polymerase transcribes rRNA, tRNA, and mRNA.
+      VI. The DNA template strand is read by the polymerase in the 3’ to 5’ direction.
+      VII. The transcript contains a purine rich sequence about 8bp before the start codon that is used in translation initiation
+
+      A. I and V only.
+      B. I, V, VI, and VII only.
+      C. II, III, VI, and VII only.
+      D. II, IV, VI, and VII only.
+      E. I, III, IV, and V only.
+    solution: |
+
+      Answer – B) I, V, VI, and VII only
+
+      Evaluating the statements,
+
+      I - True
+
+      Solution -
+      Bacterial mRNAs are often polycistronic, especially when genes are organized in operons.
+
+      II - False
+
+      Solution -
+       In bacteria, transcription and translation is coupled, and extensive processing like eukaryotic capping, splicing, and polyadenylation is generally absent.
+
+      III - False
+
+      Solution -
+       The usual start codon is AUG (sometimes GUG or UUG), coding for methionine/formylmethionine at initiation, not glycine.
+
+      IV - False
+
+      Solution -
+       Bacterial promoters often contain a Pribnow box (−10 region) with a TATA-like consensus sequence, but it is about 10 bp upstream of the transcription start site (+1), not the start codon.
+
+      V - True
+
+      Solution -
+       Bacteria generally use a single RNA polymerase for transcription of all major RNA types; specificity is provided by sigma factors and other regulatory mechanisms.
+
+      VI - True
+
+      Solution -
+       RNA polymerase reads the template strand 3′ → 5′ and synthesizes RNA 5′ → 3′.
+
+      VII - True
+
+      Solution -
+       This describes the Shine–Dalgarno sequence, a purine-rich ribosome-binding site located approximately 6–10 nucleotides upstream of the start codon.
+  - id: 5
+    difficulty: "hard"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      Bacterial core RNA Polymerase (RNAP) can bind to DNA. However, in order to initiate transcription from specific promoter sequences, it needs to associate with a sigma factor to form the holo-enzyme. Study the table below and choose the correct explanation for this phenomenon. (The numbers in the table are arbitrary.)
+
+      |  | Association Constant | Half life of complex (in seconds) |  |  |
+      |---|---|---|---|---|
+      |  | With non-specific DNA | With promoter DNA | With non-specific DNA | With promoter DNA |
+      | Core RNAP | 1 | 1 | 1 | 1 |
+      | Holo RNAP | 0.001 | 100 | 0.1 | 1000 |
+
+      A. Sigma factor provides catalytic site essential for transcription.B
+      . Holo RNAP is able to bind to a longer stretch of DNA sequence thus increasing the probability of binding to a promoter sequence.C
+      . Binding of sigma factor increases the catalytic efficiency of core RNAP.D
+      . Sigma factor destabilizes the non-specific RNAP-DNA complex and strengthens the RNAP-promoter complex
+    solution: |
+
+      Ans - D
+
+      Evaluating the statements,
+
+      A – IncorrectSolution - 
+      The core RNA polymerase contains the catalytic machinery required for RNA synthesis. Sigma factor is primarily involved in promoter recognition and initiation.
+
+      B – IncorrectSolution – 
+      Sigma factor does not simply increase non-specific DNA binding by allowing RNAP to bind a longer stretch. Its major role is to provide specific recognition of promoter sequences.
+
+      C – IncorrectSolution - 
+      Sigma factor mainly alters the DNA-binding specificity of core RNAP rather than increasing its intrinsic catalytic efficiency.
+
+      D – CorrectSolution - 
+      Sigma factor reduces stable nonspecific interactions of RNAP with DNA while promoting strong, sequence-specific interactions at promoter regions. This helps RNAP locate and initiate transcription at the correct sites.

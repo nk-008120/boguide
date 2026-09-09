@@ -1,0 +1,24 @@
+Q.40
+About 50 years ago, Charles Yanofsky studied the sequence of the tryptophan
+synthetase of E. coli. The wild type protein (1) has a glycine in position 38. Yanofsky
+isolated two inactive trp mutants: 2 and 3. Mutant 2 had Arg instead of Gly at position
+38, and mutant 3 had Glu at position 38. Mutants 2 and 3 were plated on minimal
+medium (without tryptophan). Colonies appearing correspond to spontaneous
+mutations that restored tryptophan synthetase function. The amino acid at position 38
+was identified as described in figure A. Assume that each amino acid replacement
+results from a single base-pair change.
+First base
+Third base
+Second base
+A
+B
+Wild type
+Mutants
+Revertants
+Indicate in the answer sheet if each of following statements about codon 38 of
+tryptophan synthetase is true or false.
+A. Mutant 2 results from a base substitution at the first position of the codon.
+B. Strains 7 and 8 likely have the same sequence as the wild type strain.
+C. The codon in strain 10 is 5’GUA3’
+D. The codon in strain 6 is 5’AGC3’.
+45/56

@@ -1,0 +1,73 @@
+Q.13
+The bacterium Bradyrhizobium  japonicum can infect soybean (Glycine max) roots and
+form nodules. The nitrogen fixation catalyzed by nitrogenase occurs in the nodules
+and the nitrogenase activity can be measured easily by acetylene reduction instead of
+nitrogen reduction. Scientists generated a defective mutation of NAD -dependent
+malic enzyme (dme mutant), the enzyme that generates pyruvate and NADH,  and
+infected soybean seedling roots with wildtype and mutant bacteria. The seedlings
+were grown in nitrogen-free media. After 14 and 28 days of inoculation, the number
+and weight of nodules in the seedlings and acetylene reduction activity were
+recorded.
+14
+28
+20
+40
+60
+80
+0
+A
+Nodule number
+(Nodule / plant)
+14
+28
+0
+1
+2
+3
+4
+5
+B
+Nodule dry weight
+(mg /nodule)
+14
+28
+0
+10
+20
+30
+40
+C
+Acetylene reduction activity
+(µmol / (hr * g nodule dry weight))
+14
+28
+0
+0.05
+0.10
+0.15
+D
+Acetylene reduction activity
+(µmol / (hr * nodule))
+Days after
+inoculation
+Days after
+inoculation
+Days after
+inoculation
+Days after
+inoculation
+Fig.Q13. Nodule number and dry weight and acetylene reduction acitivity of soybean. Soybean nodules infected with wild-
+type B. japonicum (open bars) and the dme mutant (solid bars) are presented.
+Indicate in the Answer sheet if each of the following statements is True or False.
+A. Nitrogen fixation activity in nodules of the same treament at 28 days after
+inoculation is higher than that at 14 days after inoculation.
+B. Both number and size of nodules increase with time from 14 to 28 days after
+inoculation with B. japonicum.
+C. The reduction in nitrogen-fixing activity of nodules infected by the mutant at 28
+days after inoculation compared to those at 14 days after inoculation  is due to
+the reduction of nitrogenase activity and nodule formation.
+D. Nitrogen fixation in B. japonicum –induced nodule is down-regulated by NAD -
+dependent malic enzyme.
++
++
+17/56

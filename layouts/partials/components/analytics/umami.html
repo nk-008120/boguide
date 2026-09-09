@@ -1,0 +1,52 @@
+{{- /*
+Umami Analytics — project override of themes/hextra umami.html
+Adds data-web-vitals="true" for Core Web Vitals collection (Umami v2.10+).
+https://umami.is/docs/tracker-configuration
+*/ -}}
+
+{{- with .Site.Params.analytics.umami -}}
+
+{{- if not .serverURL }}
+  {{- errorf "Missing Umami 'serverURL' configuration." -}}
+{{- end -}}
+
+{{- if not .websiteID }}
+  {{- errorf "Missing Umami 'websiteID' configuration." -}}
+{{- end -}}
+
+{{- $attributes := newScratch -}}
+
+{{- $attributes.SetInMap "umami" "src" (printf "%s/%s" .serverURL (.scriptName | default "script.js")) -}}
+{{- $attributes.SetInMap "umami" "data-website-id" .websiteID -}}
+{{- $attributes.SetInMap "umami" "data-web-vitals" "true" -}}
+
+{{- if .hostURL -}}
+  {{- $attributes.SetInMap "umami" "data-host-url" .hostURL -}}
+{{- end -}}
+
+{{- if .autoTrack -}}
+  {{- $attributes.SetInMap "umami" "data-auto-track" .autoTrack -}}
+{{- end -}}
+
+{{- if .tag -}}
+  {{- $attributes.SetInMap "umami" "data-tag" .tag -}}
+{{- end -}}
+
+{{- if .excludeSearch -}}
+  {{- $attributes.SetInMap "umami" "data-exclude-search" .excludeSearch -}}
+{{- end -}}
+
+{{- if .excludeHash -}}
+  {{- $attributes.SetInMap "umami" "data-exclude-hash" .excludeHash -}}
+{{- end -}}
+
+{{- if .doNotTrack -}}
+  {{- $attributes.SetInMap "umami" "data-do-not-track" .doNotTrack -}}
+{{- end -}}
+
+{{- if .domains -}}
+  {{- $attributes.SetInMap "umami" "data-domains" .domains -}}
+{{- end -}}
+
+<script async defer {{ range $k, $v := ($attributes.Get "umami" ) }} {{ (printf `%s=%q` $k $v) | safeHTMLAttr }}{{- end -}}></script>
+{{- end -}}

@@ -123,7 +123,7 @@
         {p1:'II-2',p2:'II-3',children:['III-1']}
       ],
       truth: { fatherToSon: true, skipsGeneration: false, sexSkewed: false, pattern: 'AD' },
-      explain: 'I-1 (affected father) → II-2 (affected son) → III-1 (affected son): a clean father-to-son chain, which is impossible for any X-linked trait. The trait appears in every generation and affects both sexes about equally — Autosomal Dominant.'
+      explain: 'I-1 (affected father) → II-2 (affected son) → III-1 (affected son): a clean father-to-son chain, which is impossible for any X-linked trait. The trait appears in every generation and affects both sexes about equally - Autosomal Dominant.'
     },
     {
       name: 'Pedigree B',
@@ -141,7 +141,7 @@
         {p1:'II-1',p2:'II-4',children:['III-1']}
       ],
       truth: { fatherToSon: false, skipsGeneration: true, sexSkewed: false, pattern: 'AR' },
-      explain: 'Two unaffected parents (I-1 × I-2) have both an affected son (II-2) and an affected daughter (II-3) — the trait "skipped" the unaffected parent generation and affects both sexes equally. No affected father exists to test father-to-son transmission. Autosomal Recessive.'
+      explain: 'Two unaffected parents (I-1 × I-2) have both an affected son (II-2) and an affected daughter (II-3) - the trait "skipped" the unaffected parent generation and affects both sexes equally. No affected father exists to test father-to-son transmission. Autosomal Recessive.'
     },
     {
       name: 'Pedigree C',
@@ -160,7 +160,7 @@
         {p1:'II-2',p2:'II-4',children:['III-1','III-2']}
       ],
       truth: { fatherToSon: false, skipsGeneration: true, sexSkewed: true, pattern: 'XLR' },
-      explain: 'Only males are affected (II-1, III-1) — a strongly skewed sex ratio. The trait appears to skip a generation via unaffected carrier mother I-1 (and again via II-2). No affected father exists in this pedigree to pass the trait to a son. X-linked Recessive.'
+      explain: 'Only males are affected (II-1, III-1) - a strongly skewed sex ratio. The trait appears to skip a generation via unaffected carrier mother I-1 (and again via II-2). No affected father exists in this pedigree to pass the trait to a son. X-linked Recessive.'
     },
     {
       name: 'Pedigree D',
@@ -178,7 +178,7 @@
         {p1:'II-1',p2:'II-3',children:['III-1','III-2']}
       ],
       truth: { fatherToSon: false, skipsGeneration: false, sexSkewed: false, pattern: 'XLD' },
-      explain: 'Affected father I-1 passes the trait to his daughter (II-1) but NOT his son (II-2) — every daughter of an affected father is affected, no sons are. The trait appears every generation and affects both sexes. X-linked Dominant.'
+      explain: 'Affected father I-1 passes the trait to his daughter (II-1) but NOT his son (II-2) - every daughter of an affected father is affected, no sons are. The trait appears every generation and affects both sexes. X-linked Dominant.'
     }
   ];
 
@@ -290,7 +290,7 @@
     var correct = userPattern === ped.truth.pattern;
     fb.className = 'feedback ' + (correct ? 'correct' : 'incorrect');
     var checklistTruth = 'Checklist: father→son transmission = ' + ped.truth.fatherToSon + ', skips a generation = ' + ped.truth.skipsGeneration + ', sex ratio skewed = ' + ped.truth.sexSkewed + '. ';
-    fb.textContent = (correct ? 'Correct! ' : 'Not quite — the correct pattern is ' + ped.truth.pattern + '. ') + checklistTruth + ped.explain;
+    fb.textContent = (correct ? 'Correct! ' : 'Not quite - the correct pattern is ' + ped.truth.pattern + '. ') + checklistTruth + ped.explain;
   });
 
   renderPedigree(0);

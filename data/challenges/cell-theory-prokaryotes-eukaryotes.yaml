@@ -1,0 +1,83 @@
+section: "1-cell-molecular"
+slug: "Cell-Theory-Prokaryotes-Eukaryotes"
+title: "Cell Theory, Prokaryotes & Eukaryotes"
+questions:
+  - id: 1
+    difficulty: "easy"
+    source: "USABO"
+    contributor: "SM"
+    question: |
+
+      Which of the following characters separates eukaryotic genome from prokaryotic genome?(i) DNA is distributed among several chromosomes.(ii) DNA is shared between individuals via horizontal transfer.(iii) Most of DNA consists of genes coding for proteins.(iv) A large amount of DNA is noncoding.(v) Within a gene, there is a little noncoding DNA.(vi) Genes with related functions are separated across the genome.
+
+      A. (ii), (iii) & (v)
+
+      B. (i), (ii), (iv) & (vi)
+
+      C. (i), (iv) & (vi)
+      D. (i) & (iv)
+  - id: 2
+    difficulty: "medium"
+    source: "USABO"
+    contributor: "SM"
+    question: |
+
+      Imagine a new group of Archaea was discovered. Which of the following features in this group would provide evidence for it being evolutionarily closer to the “Host”, compared to Archaeal groups that lack those features?
+      Indicate such features as True and the remaining as False:A.
+       A complex dynamic cytoskeleton consisting of actin-like filaments.
+
+       B.
+       Protrusions of the cellular membrane.
+
+       C.
+       A cellular membrane made of isoprenoid alkyl chains linked by ether bonds to glycerol-1-phosphate.
+
+       D.
+       Flagellin-based flagella.
+    solution: |
+
+      Ans – A - T, B - T, C - F, D - F
+  - id: 3
+    difficulty: "medium"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      A few statements about prokaryotic and eukaryotic cells are made. Indicate if these statements are true or false:A. The surface area available for cellular functions in a prokaryotic cell is less than that in a eukaryotic cell.
+
+      B. The total genome size of a prokaryotic cell is always less than that of a eukaryotic cell.
+
+      C. Unlike eukaryotes, no special respiratory organelles are found in prokaryotes. Hence, they respire at a much lesser rate than eukaryotes.
+
+      D. Eukaryotic cells show various membrane bound organelles such as chloroplasts and nucleus while ribosomes are the only membrane bound organelles found in prokaryotes.
+    solution: |
+
+      Ans – A - T, B - F, C - F, D - F
+  - id: 4
+    difficulty: "hard"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/cell-theory-prokaryotes-eukaryotes-q4.png)
+
+      In an experiment, endosperm of 5-day germinating seeds of Ricinus communis (castor bean seeds) were homogenized in an isotonic medium (0.4 moles/lit sucrose). The resulting organelle suspension was layered onto a density gradient column and centrifuged for 4 hrs at 1,00,000 g. Organelles move into the gradient until they have reached a position equivalent to their own density. Determination of protein contents revealed 4 distinct bands (I-IV) along the gradient. Some marker enzymes in each of these bands when tested showed following results:
+
+      Bands I-IV represent (Options: Nuclei, Protoplastids, Mitochondria, Cytosol, Microbodies): Band I: _________Band II: _________Band III: _________Band IV: _________
+    solution: |
+
+      Ans – Band I: Cytosol           Band II: Microbodies           Band III: Protoplastids           Band IV: Mitochondria
+  - id: 5
+    difficulty: "hard"
+    source: "USABO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/cell-theory-prokaryotes-eukaryotes-q5.png)
+
+      You are a scientist hunting for enzymes involved in various aspects of cellular metabolisms. Which organelle would you want to isolate and analyze if you are looking for: (use the labels of the picture to answer the questions below)
+
+      I. Enzyme that is involved in DNA replication ________II. Enzyme involved in producing large amounts of ATP _______III. Enzyme attaching sugar molecules to proteins _________IV. DNA ________
+    solution: |
+
+      Answer: I – (A,B), II – (B), III – (C), IV – (A,B)

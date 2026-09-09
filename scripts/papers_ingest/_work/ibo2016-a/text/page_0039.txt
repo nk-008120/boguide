@@ -1,0 +1,9 @@
+Indicate in the answer sheet if each of the following statements is true or false.
+A. Strain number 7 is a lac Z mutant.
+B. Strain number 3 is a lac Y mutant.
+C. Strains number 2 and 4 are of the same mutation type.
+D. If strain number 5 receives DNA from itself, the transformed bacteria cannot
+grow.
+-
+-
+38/56

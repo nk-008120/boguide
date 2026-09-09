@@ -1,0 +1,19 @@
+Q.3 
+Scientists have isolated three different strains of bacteria ProA¯, ProB¯, and ProC¯
+that require added proline for growth. One is cold-sensitive, one is heat-sensitive, and
+one has a gene deleted. Cross-feeding experiments were carried out by streaking the
+strains out on agar plates containing minimal medium supplemented with a very low
+level of proline. In cross-feeding experiments, metabolites leaking from one strain can
+feed a neighbouring strain. After growth at three temperatures, the results were
+shown in Figure Q.3.
+Fig.Q.3. Results of cross-feeding experiments with three strains defective in proline biosynthesis. Dark areas show high
+cell growth rate; grey areas show low cell growth rate; wt, wild type
+Indicate in the Answer sheet if each of the following statements is True or False
+A. ​The intermediate that accumulates in the ProC¯ strain comes after the block in
+the ProA¯ strain.
+B. ​The intermediate that accumulates in the ProB¯ strain comes after the block in
+the ProA¯ strain
+C. ​There are at least three different genes that affect proline biosynthesis.
+D. ​Under at least one condition, the proline that is produced is rapidly used for
+protein synthesis and is prevented from being synthesized in excess of needs.
+6/56

@@ -34,6 +34,7 @@
 {{- if hasPrefix $path "/account/" -}}{{ $extraStyles = $extraStyles | append "css/account.css" }}{{- end -}}
 {{- if hasPrefix $path "/dashboard/" -}}{{ $extraStyles = $extraStyles | append "css/dashboard.css" }}{{- end -}}
 {{- if or (hasPrefix $path "/biolab/") (hasPrefix $path "/doubts/") -}}{{ $extraStyles = $extraStyles | append "css/biolab.css" }}{{- end -}}
+{{- if hasPrefix $path "/resources/" -}}{{ $extraStyles = $extraStyles | append "css/challenges.css" }}{{- end -}}
 {{- range $extraStyles -}}
   {{- $css := resources.Get . -}}
   {{- if hugo.IsProduction -}}

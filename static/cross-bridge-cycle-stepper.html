@@ -64,7 +64,7 @@
   var steps = [
     {name: 'Cross-bridge formation', nucleotide: 'ADP + Pi (bound)', desc: 'Myosin head binds the now-exposed site on actin.', angle: 0, gap: 0},
     {name: 'Power stroke', nucleotide: 'Pi released, then ADP', desc: 'Head pivots, pulling the thin filament toward the sarcomere center.', angle: -35, gap: 0},
-    {name: 'Rigor', nucleotide: 'None (no bound nucleotide)', desc: 'Myosin remains tightly bound — the rigor state (rigor mortis without fresh ATP).', angle: -35, gap: 0},
+    {name: 'Rigor', nucleotide: 'None (no bound nucleotide)', desc: 'Myosin remains tightly bound - the rigor state (rigor mortis without fresh ATP).', angle: -35, gap: 0},
     {name: 'Detachment', nucleotide: 'Fresh ATP binds', desc: 'ATP binding causes myosin to release actin.', angle: -35, gap: 22},
     {name: 'Cocking', nucleotide: 'ATP hydrolyzed → ADP + Pi', desc: 'Myosin re-cocks to its high-energy conformation, ready to bind the next site.', angle: 0, gap: 22}
   ];
@@ -93,7 +93,7 @@
     var thinX = 20 - actinOffset - (s.gap ? 0 : 0);
     svg.appendChild(el('rect', {x: thinX, y: 60, width: 480, height: 10, fill:'#f59e0b', rx:4}));
     var aLabel = el('text', {x: thinX+4, y: 55, 'font-size':11, fill:'#b45309'});
-    aLabel.textContent = 'Thin filament (actin) — binding site marked ●';
+    aLabel.textContent = 'Thin filament (actin) - binding site marked ●';
     svg.appendChild(aLabel);
 
     var siteX = baseX - actinOffset;
@@ -125,7 +125,7 @@
     svg.appendChild(cycleTxt);
 
     stepLabel.textContent = 'Step ' + (stepIdx+1) + '/5';
-    readout.innerHTML = '<b>' + s.name + '</b> — ' + s.desc + ' Nucleotide state: <b>' + s.nucleotide + '</b>.';
+    readout.innerHTML = '<b>' + s.name + '</b> - ' + s.desc + ' Nucleotide state: <b>' + s.nucleotide + '</b>.';
   }
 
   stepBtn.addEventListener('click', function(){

@@ -1,0 +1,140 @@
+section: "1-cell-molecular"
+slug: "Carbohydrate-Chemistry-Biology"
+title: "Carbohydrate Chemistry & Biology"
+questions:
+  - id: 1
+    difficulty: "easy"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      Read the following observations and some interpretations.
+      Observations: 
+      1. To preserve the sweet taste of a freshly picked corn, it is immersed in boiling water for a few minutes.
+      2. The sweetness of honey decreases if it is heated.
+      3. Commercial fructose cannot be used as a sweetener for hot drinks.
+
+      Interpretations:
+      I. The properties of sugar vary with temperature.
+      II. Enzyme that converts starch to glucose is activated due to rise in temperature.
+      III. Some sugars are thermostable hence their properties do not change with change in temperature.
+      IV. Enzyme that converts glucose to starch is destroyed due to rise in temperature.
+
+      Mark the correct interpretation against each observation.
+
+      1 - _____________2 - 
+      _____________3 - 
+      _____________
+    solution: |
+
+      Answer - 1 – IV, 2 – I, 3 – I
+
+      Solution - 1 - 
+      Fresh corn contains enzymes that convert sugars → starch, reducing sweetness. Boiling denatures these enzymes. Therefore, sugar is preserved and the corn remains sweet.
+
+      2 - The sweetness of sugars can depend on temperature. Heating can alter the perceived sweetness of honey.
+
+      3 - Fructose's perceived sweetness changes with temperature. At higher temperatures, its relative sweetness decreases, making it less effective as a sweetener in hot drinks.
+  - id: 2
+    difficulty: "easy"
+    source: "USABO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/carbohydrate-chemistry-biology-q2.png)
+
+      The primary disaccharide digestion product of starch is
+    solution: |
+
+      Answer – C
+
+      Solution – Starch is broken into maltose, maltotriose and α-dextrins by digestion of α-amylase.
+  - id: 3
+    difficulty: "medium"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/carbohydrate-chemistry-biology-q3.png)
+
+      The citric acid cycle is central to metabolism, for the supply energy and various key compounds. In citric acid cycle, the enzyme aconitase catalyzes the reversible conversion between citrate and isocitrate. In this reaction, OH group at C3 and H group at C4 of citrate are removed as water, thereafter a water molecule is added back in a reverse manner to generate isocitrate as given in figure. However, OH group is never added at C2.
+
+      Indicate whether each of the following statements is True or False:
+      A. Citrate has enantiomers
+      B. Isocitrate has enantiomers
+      C. Two –CH2COO– groups are stereochemically equivalent when citrate is free in solution
+      D. Two –CH2COO– groups are stereochemically equivalent when citrate is bound to aconitase
+    solution: |
+
+      Answer – A – F, B – T, C – T, D – F
+
+      Solution - Citrate is not chiral but stereochemically recognized by aconitase. The two -CH2COO– groups of enzyme-bound citrate can be distinguished by aconitase, because the substratebinding site of the enzyme is not symmetric. This was a critical issue when the citric acid cycle was proposed but later questioned by Krebs himself, and “TCA (tricarboxylic acid) cycle” was proposed instead of the “citric acid cycle”. Now we know the first product, citric acid, can be stereochemically recognized by aconitase.
+  - id: 4
+    difficulty: "medium"
+    source: "USABO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/carbohydrate-chemistry-biology-q4.png)
+
+      The following is the structure of heparin, which is naturally produced by basophils and mast cells in the body and is also manufactured and distributed as the most widely used anticoagulant.
+
+      A. Which class of macromolecules best describes heparin: (lipids/nucleic acids/carbohydrates/ proteins)
+
+      B. Identify the circled covalent bonds as glycosidic/peptide/phosphodiester/ester bond and list the byproduct of the reaction that results in the formation of this covalent bond.
+
+      C. Heparin is often used to purify nucleic acid (both DNA and RNA) binding proteins. Explain what the similarity between heparin and nucleic acids is that allows them to bind to these proteins.
+    solution: |
+
+      A – CarbohydratesSolution - 
+      It is comprised of modified hexose monosaccharides linked to each other by glycosidic bond
+
+      B – Glycosidic bond and H2O as by productSolution – Bonds between monosaccharides are called glycosidic bonds which form by dehydration reaction, 
+      i.e, removal of water.
+
+      C - Both heparin (due to SO3- groups) and nucleic acids (due to the PO43- of the sugar phosphate backbone) are negatively charged and therefore form ionic bonds with the nucleic acids binding proteins that are rich in amino acids with positively charged side chains
+  - id: 5
+    difficulty: "hard"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/carbohydrate-chemistry-biology-q5-1.png)
+
+      Glycogen (and amylopectin) is a glucose polymer with some branching. Linear chains of these polymers consist of α(1→4) linkages and occasional branching is formed by α(1→6) linkage (Figure 1). For degradation in cells, glucose residues are released one-by-one from the end of the chains by phosphorylase up to the residue at the branching site. Then, the α(1→6) branching site is removed by a debranching enzyme.
+
+      1) Given that a certain glycogen consisting of 10000 glucose residues is branched at every 10 residues, how many terminal chains are available for phosphorylase?
+
+      A. A
+      bout 10B. A
+      bout 50C.
+       About 100D.
+       About 500E. A
+      bout 1000F.
+       About 5000
+
+      2) For degradation of this glycogen by excess phosphorylase or by excess debranching enzyme, choose an appropriate graph for its breakdown from below. Assume that the phosphorylase releases all glucose residues from a linear chain without branching.
+
+      ![image](/CHALLENGEPICS/carbohydrate-chemistry-biology-q5-2.png)
+
+      3) Plant amylopectin is similar to glycogen but branching occurs much less frequently. Given that the branching of an amylopectin of similar size of glycogen is formed at every 25 residues, indicate the combination of correct descriptions about degradation of amylopectin by phosphorylase.
+
+      A.
+       Breakdown speed is slower than that of glycogenB.
+       Breakdown speed is similar to that of glycogenC.
+       Breakdown speed is faster than that of glycogenD.
+       Final breakdown extent is smaller than that of glycogenE.
+       Final breakdown extent is similar to that of glycogenF.
+       Final breakdown extent is larger than that of glycogen
+    solution: |
+
+      1) Answer: D. About 500Solution - 
+      10000 / 10 = 1000 → 1000 / 2 = 500 
+      About half of linear chains can be exposed to phosphorylase.
+
+      2) Answer: Phosphorylase - (3), Debranching enzyme - (1)Solution - 
+      According to the figure 1 and Q1, phosphorylase degrades nearly half of total chains. The debranching enzyme only acts on the branching sites, which will be exposed by action of phosphorylase.
+
+      3) Answer: A, ESolution - 
+      Qualitatively, breakdown efficiency is dependent on the number of enzyme-accessible chains, which are smaller in amylopectin than glycogen because more branching produces more chains in glycogen than amylopectin. 10000 / 25 = 400. This means amylopectin of 10000 residues consists of 400 linear chains, half of which can be degraded by phosphorylase. Namely, number of phosphorylase-accessible linear chains in amylopectin (200), which corresponds to the speed of degradation, is less than half of that in glycogen (500).
+      On the other hand, final breakdown extent of amylopectin (200 * 25 = 5000) is comparable to that of glycogen (500 * 10 = 5000).

@@ -56,18 +56,18 @@
 <body>
 <div class="widget-container">
   <h3>Free-Running vs. Entrained Rhythm Simulator</h3>
-  <div class="subtitle">A double-plotted actogram — each row is one day, each day's data repeated on both halves so a run of activity crossing midnight reads as one continuous bar.</div>
+  <div class="subtitle">A double-plotted actogram - each row is one day, each day's data repeated on both halves so a run of activity crossing midnight reads as one continuous bar.</div>
   <div class="toggle">
     <button class="active" id="btnConstant">Constant conditions (free-running)</button>
     <button id="btnEntrained">Normal light/dark cycle (entrained)</button>
   </div>
   <div id="plot"></div>
   <div class="readout">
-    Activity onset, day 1: <b id="onsetDay1">—</b> &nbsp;|&nbsp;
-    Activity onset, day 20: <b id="onsetDay20">—</b> &nbsp;|&nbsp;
-    Drift: <b id="driftVal">—</b>
+    Activity onset, day 1: <b id="onsetDay1">-</b> &nbsp;|&nbsp;
+    Activity onset, day 20: <b id="onsetDay20">-</b> &nbsp;|&nbsp;
+    Drift: <b id="driftVal">-</b>
   </div>
-  <div class="note">Free-running period used here: 24.5 h/day (a common finding when isolating an animal from all external time cues) — a small daily drift that adds up visibly over 20 days.</div>
+  <div class="note">Free-running period used here: 24.5 h/day (a common finding when isolating an animal from all external time cues) - a small daily drift that adds up visibly over 20 days.</div>
 </div>
 <script>
 (function(){
@@ -110,7 +110,7 @@
     document.getElementById('onsetDay20').textContent = o20.toFixed(1) + ' h';
     var drift = o20 - o1;
     document.getElementById('driftVal').textContent = drift < 0.05 && drift > -0.05
-      ? 'none — locked to a 24 h cycle'
+      ? 'none - locked to a 24 h cycle'
       : drift.toFixed(1) + ' h later by day 20';
   }
 

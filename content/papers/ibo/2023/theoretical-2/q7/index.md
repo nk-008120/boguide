@@ -5,7 +5,7 @@ title: "Q7 - Elysia Kleptoplasty and Regeneration"
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
-  <a class="papers-subject-tag" href="/resources/1-cell-molecular/mitochondria-chloroplasts-structure-origin/">Mitochondria, Chloroplasts & Endosymbiosis</a>
+  <a class="papers-subject-tag" href="/resources/1-cell-molecular/mitochondria-chloroplasts-structure-origin/">Mitochondria & Chloroplasts: Structure & Endosymbiotic Origin</a>
 </div>
 
 *Elysia marginata* is a marine gastropod. Its digestive tract is found in the usual place for gastropods. *E. marginata* performs kleptoplasty, the ability to hold chloroplasts derived from food and keep them in its body.

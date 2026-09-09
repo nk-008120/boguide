@@ -1,0 +1,29 @@
+Q.35
+Centromere position can be mapped using linear tetrads in some fungi. If there is no
+cross-over between gene E and the centromere, four spores are arranged in sequence
+of eeEE or EEee (Fig.Q.35A). If there is a cross-over between gene E and the
+centromere, four spores are arranged in sequence of eEeE or EeEe (Fig.Q.35B). There
+are many types of crossovers involving 2, 3 and 4 strands of chromatids as illustrated
+in Fig.Q.35C.
+Meiosis I
+Meiosis II
+2-strand double crossover
+3-strand double crossover
+4-strand double crossover
+C
+Figure Q.35
+Strain ab was crossed to strain a+ b+ and 100 linear tetrads were isolated. Those
+tetrads were divided into six classes as shown in the following table:
+Class 1
+Class 2
+Class 3
+Class 4
+Class 5
+Class 6
+Indicate in the answer sheet if each of the following statements is true or false.
+A. Locus a and b are located on the same arm of chromosome. 
+B. Class 4 involves a 4-strand double crossover. 
+C. Class 6 involves a 3-strand double crossover, with one between gene a and the
+centromere and between the centromere and gene b. 
+D. Class 5 involves a 2-strand double crossover. 
+40/56

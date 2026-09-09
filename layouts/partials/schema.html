@@ -16,13 +16,15 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": "EducationalOrganization",
   "name": "BioGuide",
   "url": "{{ .Site.BaseURL }}",
   "logo": "{{ .Site.BaseURL }}logo.png",
+  "description": "{{ .Site.Params.description }}",
   "sameAs": [
     "https://www.instagram.com/bioguideofficial/",
-    "https://github.com/nk-008120/boguide"
+    "https://github.com/nk-008120/boguide",
+    "https://discord.gg/jQ7sfcCs4"
   ]
 }
 </script>
@@ -50,6 +52,67 @@
       "item": "{{ .Permalink }}"
     }
   ]
+}
+</script>
+{{- end }}
+
+{{- $isResources := hasPrefix .RelPermalink "/resources/" -}}
+{{- $isResourcesRoot := eq .RelPermalink "/resources/" -}}
+{{- $isTopicSection := false -}}
+{{- $isSubtopic := false -}}
+{{- if and $isResources (not $isResourcesRoot) -}}
+  {{- with .Parent -}}
+    {{- if eq .RelPermalink "/resources/" -}}
+      {{- $isTopicSection = true -}}
+    {{- else -}}
+      {{- $isSubtopic = true -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $isTopicSection }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "{{ .Title }}",
+  {{- with .Description }}
+  "description": "{{ . }}",
+  {{- end }}
+  "url": "{{ .Permalink }}",
+  "provider": {
+    "@type": "EducationalOrganization",
+    "name": "BioGuide",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "self-paced"
+  },
+  "numberOfCredits": 0,
+  "isAccessibleForFree": true
+}
+</script>
+{{- end }}
+
+{{- if and $isSubtopic .Description (ne .Params.schema_type "article") }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LearningResource",
+  "name": "{{ .Title }}",
+  "description": "{{ .Description }}",
+  "url": "{{ .Permalink }}",
+  "learningResourceType": "Study Guide",
+  "educationalLevel": "{{ .Params.difficulty | default "intermediate" }}",
+  "isAccessibleForFree": true,
+  "inLanguage": "en",
+  "author": {
+    "@type": "EducationalOrganization",
+    "name": "BioGuide",
+    "url": "{{ .Site.BaseURL }}"
+  }
 }
 </script>
 {{- end }}

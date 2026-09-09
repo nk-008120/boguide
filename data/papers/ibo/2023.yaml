@@ -651,7 +651,7 @@ rounds:
         name: "Mendel's Round and Wrinkled Peas: PCR Analysis"
         link: "/papers/ibo/2023/theoretical-1-exam.pdf#page=45"
         subjects:
-          - name: "Mendelian Inheritance & Probability"
+          - name: "Mendel's Laws & Probability in Genetics"
             link: "/resources/7-genetics/mendelian-inheritance-probability/"
           - name: "Recombinant DNA & Biotechnology Techniques"
             link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
@@ -867,7 +867,7 @@ rounds:
         name: "Transgenic Male Sterility and Herbicide Resistance"
         link: "/papers/ibo/2023/theoretical-1-exam.pdf#page=52"
         subjects:
-          - name: "Mendelian Inheritance & Probability"
+          - name: "Mendel's Laws & Probability in Genetics"
             link: "/resources/7-genetics/mendelian-inheritance-probability/"
           - name: "Recombinant DNA & Biotechnology Techniques"
             link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
@@ -993,7 +993,7 @@ rounds:
         subjects:
           - name: "Mineral Nutrition & Nutrient Uptake"
             link: "/resources/5-plant-physiology/mineral-nutrition-nutrient-uptake/"
-          - name: "Calvin Cycle, Photorespiration, C4 & CAM"
+          - name: "Calvin Cycle, Photorespiration & C4/CAM Biochemistry"
             link: "/resources/5-plant-physiology/calvin-cycle-photorespiration-c4-cam/"
         statements:
           - letter: "Q30.1"
@@ -1186,7 +1186,7 @@ rounds:
         name: "Shell Drilling Predation"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=7"
         subjects:
-          - name: "Invertebrate Body Plans"
+          - name: "Invertebrate Body Plans II"
             link: "/resources/2-animal-anatomy/invertebrate-body-plans-2/"
           - name: "Foraging & Anti-Predator Behavior"
             link: "/resources/9-ethology/foraging-anti-predator-behavior/"
@@ -1218,7 +1218,7 @@ rounds:
         name: "Whitefly Horizontal Gene Transfer"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=9"
         subjects:
-          - name: "Recombinant DNA & Biotechnology"
+          - name: "Recombinant DNA & Biotechnology Techniques"
             link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
           - name: "Coevolution & Species Interactions"
             link: "/resources/15-evolution/coevolution-and-species-interactions/"
@@ -1308,7 +1308,7 @@ rounds:
         name: "Elysia Kleptoplasty and Regeneration"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=15"
         subjects:
-          - name: "Mitochondria, Chloroplasts & Endosymbiosis"
+          - name: "Mitochondria & Chloroplasts: Structure & Endosymbiotic Origin"
             link: "/resources/1-cell-molecular/mitochondria-chloroplasts-structure-origin/"
         statements:
           - letter: "Q7.1"
@@ -1334,7 +1334,7 @@ rounds:
         name: "Chromatin DNase Sensitivity"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=16"
         subjects:
-          - name: "Gene Regulation & Epigenetics"
+          - name: "Gene Regulation: Eukaryotic & Epigenetics"
             link: "/resources/1-cell-molecular/gene-regulation-eukaryotic-epigenetics/"
           - name: "Biomolecular Analytical Techniques"
             link: "/resources/1-cell-molecular/biomolecular-analytical-techniques/"
@@ -1580,7 +1580,7 @@ rounds:
         subjects:
           - name: "Cell Theory, Prokaryotes & Eukaryotes"
             link: "/resources/1-cell-molecular/cell-theory-prokaryotes-eukaryotes/"
-          - name: "Plasma Membrane & Transport"
+          - name: "Plasma Membrane Structure & Transport"
             link: "/resources/1-cell-molecular/plasma-membrane-structure-transport/"
         statements:
           - letter: "Q16.1"
@@ -1640,7 +1640,7 @@ rounds:
         name: "Lactic Acid Fermentation"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=34"
         subjects:
-          - name: "Bioenergetics & Central Metabolism"
+          - name: "Bioenergetics & Central Metabolism Overview"
             link: "/resources/1-cell-molecular/bioenergetics-central-metabolism/"
         statements:
           - letter: "Q18.1"
@@ -1696,7 +1696,7 @@ rounds:
         name: "Gasdermin and Pyroptosis"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=38"
         subjects:
-          - name: "Cell Junctions, ECM & Cell Death"
+          - name: "Cell Junctions, Extracellular Matrix & Cell Death"
             link: "/resources/1-cell-molecular/cell-junctions-ecm-cell-death/"
           - name: "Immune Physiology"
             link: "/resources/3-animal-physiology/immune-physiology/"
@@ -1728,7 +1728,7 @@ rounds:
         name: "Aconitase Mechanism"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=40"
         subjects:
-          - name: "Bioenergetics & Central Metabolism"
+          - name: "Bioenergetics & Central Metabolism Overview"
             link: "/resources/1-cell-molecular/bioenergetics-central-metabolism/"
           - name: "Enzyme Kinetics & Regulation"
             link: "/resources/1-cell-molecular/enzyme-kinetics-regulation/"
@@ -1760,7 +1760,7 @@ rounds:
         name: "Metformin and Complex I"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=43"
         subjects:
-          - name: "Bioenergetics & Central Metabolism"
+          - name: "Bioenergetics & Central Metabolism Overview"
             link: "/resources/1-cell-molecular/bioenergetics-central-metabolism/"
         statements:
           - letter: "Q22.1"
@@ -1840,7 +1840,7 @@ rounds:
         name: "Golden Gate Assembly Constructs"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=48"
         subjects:
-          - name: "Recombinant DNA & Biotechnology"
+          - name: "Recombinant DNA & Biotechnology Techniques"
             link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
         statements:
           - letter: "Q25.1"
@@ -1866,7 +1866,7 @@ rounds:
         name: "T-DNA Southern Blot Analysis"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=50"
         subjects:
-          - name: "Recombinant DNA & Biotechnology"
+          - name: "Recombinant DNA & Biotechnology Techniques"
             link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
           - name: "Biomolecular Analytical Techniques"
             link: "/resources/1-cell-molecular/biomolecular-analytical-techniques/"
@@ -1898,7 +1898,7 @@ rounds:
         name: "Gene Regulation by Protein Y"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=52"
         subjects:
-          - name: "Gene Regulation & Epigenetics"
+          - name: "Gene Regulation: Eukaryotic & Epigenetics"
             link: "/resources/1-cell-molecular/gene-regulation-eukaryotic-epigenetics/"
         statements:
           - letter: "Q27.1"
@@ -1956,9 +1956,9 @@ rounds:
         name: "Paulinella Chloroplast Endosymbiosis"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=55"
         subjects:
-          - name: "Mitochondria, Chloroplasts & Endosymbiosis"
+          - name: "Mitochondria & Chloroplasts: Structure & Endosymbiotic Origin"
             link: "/resources/1-cell-molecular/mitochondria-chloroplasts-structure-origin/"
-          - name: "History of Life & Major Transitions"
+          - name: "History of Life: Origin & Major Transitions"
             link: "/resources/15-evolution/history-of-life-origin-and-major-transitions/"
         statements:
           - letter: "Q29.1"
@@ -2096,7 +2096,7 @@ rounds:
         name: "Bonnet Macaque Population Demography"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=63"
         subjects:
-          - name: "Natural Selection, Modes & Fitness"
+          - name: "Natural Selection: Modes & Fitness"
             link: "/resources/15-evolution/natural-selection-modes-and-fitness/"
         statements:
           - letter: "Q34.1"
@@ -2182,7 +2182,7 @@ rounds:
         name: "Group Selection Hypothesis"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=67"
         subjects:
-          - name: "Natural Selection, Modes & Fitness"
+          - name: "Natural Selection: Modes & Fitness"
             link: "/resources/15-evolution/natural-selection-modes-and-fitness/"
         statements:
           - letter: "Q37.1"
@@ -2208,7 +2208,7 @@ rounds:
         name: "Sex Ratio Evolution"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=68"
         subjects:
-          - name: "Natural Selection, Modes & Fitness"
+          - name: "Natural Selection: Modes & Fitness"
             link: "/resources/15-evolution/natural-selection-modes-and-fitness/"
           - name: "Mating Systems & Sexual Selection"
             link: "/resources/9-ethology/mating-systems-sexual-selection/"
@@ -2262,7 +2262,7 @@ rounds:
         name: "Drosophila Saturation Mutagenesis"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=69"
         subjects:
-          - name: "Recombinant DNA & Biotechnology"
+          - name: "Recombinant DNA & Biotechnology Techniques"
             link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
         statements:
           - letter: "Q40.1"
@@ -2316,7 +2316,7 @@ rounds:
         name: "Variant Call Format Genomics"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=72"
         subjects:
-          - name: "Recombinant DNA & Biotechnology"
+          - name: "Recombinant DNA & Biotechnology Techniques"
             link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
         statements:
           - letter: "Q42.1"
@@ -2342,7 +2342,7 @@ rounds:
         name: "Twin Studies and Heritability"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=74"
         subjects:
-          - name: "Quantitative Genetics & Heritability"
+          - name: "Quantitative Genetics, Heritability & Inbreeding"
             link: "/resources/7-genetics/quantitative-genetics-heritability-inbreeding/"
         statements:
           - letter: "Q43.1"
@@ -2372,7 +2372,7 @@ rounds:
         name: "Gene Drive Technology"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=76"
         subjects:
-          - name: "Recombinant DNA & Biotechnology"
+          - name: "Recombinant DNA & Biotechnology Techniques"
             link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
           - name: "Sex Determination & Sex-Linked Inheritance"
             link: "/resources/7-genetics/sex-determination-sex-linked-inheritance/"
@@ -2400,7 +2400,7 @@ rounds:
         name: "Mustard Seed Coat Color Inheritance"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=77"
         subjects:
-          - name: "Epistasis & Gene Interactions"
+          - name: "Gene Interactions: Epistasis & Complementation Analysis"
             link: "/resources/7-genetics/epistasis-gene-interactions-complementation/"
           - name: "Extranuclear & Non-Mendelian Inheritance"
             link: "/resources/7-genetics/extranuclear-non-mendelian-inheritance/"
@@ -2428,7 +2428,7 @@ rounds:
         name: "Mendelian Probability in Pea Pods"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=79"
         subjects:
-          - name: "Mendelian Inheritance & Probability"
+          - name: "Mendel's Laws & Probability in Genetics"
             link: "/resources/7-genetics/mendelian-inheritance-probability/"
         statements:
           - letter: "Q46.1"
@@ -2584,7 +2584,7 @@ rounds:
         name: "C3 vs C4 Photosynthesis"
         link: "/papers/ibo/2023/theoretical-2-exam.pdf#page=89"
         subjects:
-          - name: "Calvin Cycle, Photorespiration, C4 & CAM"
+          - name: "Calvin Cycle, Photorespiration & C4/CAM Biochemistry"
             link: "/resources/5-plant-physiology/calvin-cycle-photorespiration-c4-cam/"
         statements:
           - letter: "Q51.1"

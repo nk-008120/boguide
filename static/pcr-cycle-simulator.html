@@ -40,7 +40,7 @@
 <body>
 <div class="widget-container">
   <h3>PCR: Exponential Amplification</h3>
-  <div class="subtitle">Step through denaturation, annealing, and extension across several cycles — the copy count doubles every full cycle.</div>
+  <div class="subtitle">Step through denaturation, annealing, and extension across several cycles - the copy count doubles every full cycle.</div>
   <div class="controls">
     <button id="prevBtn">&larr; Prev phase</button>
     <div id="cycleLabel"></div>
@@ -86,7 +86,7 @@
   }
 
   function update(){
-    document.getElementById('cycleLabel').textContent = 'Cycle ' + (cycle+1) + ' — ' + phases[phase];
+    document.getElementById('cycleLabel').textContent = 'Cycle ' + (cycle+1) + ' - ' + phases[phase];
     document.getElementById('phaseDesc').textContent = descs[phase];
     document.getElementById('copyCount').textContent = copies + ' DNA molecule' + (copies===1?'':'s') + ' (2^' + cycle + ')';
     draw();

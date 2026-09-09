@@ -104,8 +104,8 @@
     document.getElementById('toxinVal').textContent = p.toxin + ' units';
     document.getElementById('resistVal').textContent = p.resist + ' units';
     var gap = Math.abs(p.toxin - p.resist);
-    document.getElementById('summary').innerHTML = '<b>' + p.name + ':</b> toxicity and resistance differ by only ' + gap + ' units — ' +
-      (gap <= 8 ? 'a tightly matched population, consistent with local coevolution.' : 'a larger mismatch than most sites — still broadly tracking each other, but less tightly matched here.');
+    document.getElementById('summary').innerHTML = '<b>' + p.name + ':</b> toxicity and resistance differ by only ' + gap + ' units - ' +
+      (gap <= 8 ? 'a tightly matched population, consistent with local coevolution.' : 'a larger mismatch than most sites - still broadly tracking each other, but less tightly matched here.');
   }
 
   select(2);

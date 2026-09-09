@@ -1,5 +1,6 @@
 ---
 title: "Theoretical A"
+description: "IBO 2024 Theoretical A: timed practice with per-question solutions and scoring on BiOrchive."
 ---
 
 {{< biorchive-bg >}}

@@ -1,0 +1,22 @@
+Indicate in the Answer Sheet if each of the following statements is True or False. 
+A. The lag phase of transformant OLE1 in YPD medium is shorter than those of
+∆Hz, ∆Tn, ∆
+Hz and ∆
+Tn due to the presence of native desaturase in yeast
+cells. 
+B. Desaturases are equally active in all transformants.
+C. The content of mono-unsaturated fatty acids is a good indicator of the ethanol
+tolerance in S. cerevisiae.
+D. Higher ratio of ∆-C
+ to ∆-C
+ causes higher ethanol tolerance in S.
+cerevisiae.
+9
+9
+11
+11
+9
+18:1
+9
+16:1
+10/56

@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "USABO", "cell-biology"]
 ---
 
 {{< topic-meta >}}
+{{< challenge-cta >}}
 {{< mathjax >}}
 
 ## Overview
@@ -91,6 +92,8 @@ Active transport moves solutes **against** their concentration gradient, which i
 **Static**
 
 *(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Note: the fluid mosaic model image could not be fully visually verified, see the inline note.)*
+
+{{< practice-challenge >}}
 
 ## Practice Problems
 

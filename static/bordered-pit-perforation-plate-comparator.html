@@ -59,7 +59,7 @@
   <div class="subtitle">Click "Simulate water flow" under each cell junction to compare how easily water crosses a tracheid-to-tracheid bordered pit versus a vessel-to-vessel perforation plate.</div>
   <div class="layout">
     <div class="panel">
-      <div class="panel-title">Tracheid — Tracheid (bordered pit)</div>
+      <div class="panel-title">Tracheid - Tracheid (bordered pit)</div>
       <svg id="pitSvg" viewBox="0 0 260 200" width="260" height="200">
         <rect x="30" y="10" width="200" height="80" fill="#eef6ec" stroke="#94a3b8" stroke-width="2"/>
         <rect x="30" y="110" width="200" height="80" fill="#eef6ec" stroke="#94a3b8" stroke-width="2"/>
@@ -74,7 +74,7 @@
       <div><button class="btn" id="pitBtn">Simulate water flow</button></div>
     </div>
     <div class="panel">
-      <div class="panel-title">Vessel — Vessel (perforation plate)</div>
+      <div class="panel-title">Vessel - Vessel (perforation plate)</div>
       <svg id="plateSvg" viewBox="0 0 260 200" width="260" height="200">
         <rect x="30" y="10" width="200" height="80" fill="#eef6ec" stroke="#94a3b8" stroke-width="2"/>
         <rect x="30" y="110" width="200" height="80" fill="#eef6ec" stroke="#94a3b8" stroke-width="2"/>
@@ -134,7 +134,7 @@
       pitBtn.textContent = 'Stop simulation';
       pitBtn.classList.add('flowing');
       animateDots(pitDots, 0.6, 60, pitTimers);
-      note.textContent = 'Slow, resisted flow: water must cross the thin but porous pit membrane, which offers real resistance to bulk flow — this is why vessels, not tracheids, dominate water transport in most angiosperms.';
+      note.textContent = 'Slow, resisted flow: water must cross the thin but porous pit membrane, which offers real resistance to bulk flow - this is why vessels, not tracheids, dominate water transport in most angiosperms.';
     } else {
       pitBtn.textContent = 'Simulate water flow';
       pitBtn.classList.remove('flowing');

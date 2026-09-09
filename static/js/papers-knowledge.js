@@ -91,6 +91,7 @@
       .from('attempt_reports')
       .select('olympiad, year, round_id, round_name, total_correct, total_statements, score_pct, duration_sec, subject_stats, per_question, submitted_at')
       .eq('user_id', userId)
+      .eq('show_on_dashboard', true)
       .order('submitted_at', { ascending: true })
       .then(function (res) {
         if (res.error) throw res.error;

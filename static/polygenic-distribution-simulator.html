@@ -93,11 +93,11 @@
     document.getElementById('readout').innerHTML = 'Gene pairs (n): <b>' + n + '</b> &nbsp;|&nbsp; Phenotype classes: <b>' + (2*n+1) + '</b>';
     var note;
     if (n === 1){
-      note = 'With just one gene pair, this is an ordinary monohybrid cross: 3 classes in a 1:2:1 ratio — clearly discrete, not remotely bell-shaped.';
+      note = 'With just one gene pair, this is an ordinary monohybrid cross: 3 classes in a 1:2:1 ratio - clearly discrete, not remotely bell-shaped.';
     } else if (n <= 3){
-      note = 'With ' + n + ' gene pairs, the distribution already looks less discrete — more classes, and the extreme classes (all-dominant or all-recessive) are getting rarer.';
+      note = 'With ' + n + ' gene pairs, the distribution already looks less discrete - more classes, and the extreme classes (all-dominant or all-recessive) are getting rarer.';
     } else {
-      note = 'With ' + n + ' gene pairs (' + (2*n+1) + ' classes), the extreme classes are now vanishingly rare and the middle classes dominate — the distribution is starting to look like a smooth, continuous bell curve, exactly the pattern a truly polygenic trait like human height shows.';
+      note = 'With ' + n + ' gene pairs (' + (2*n+1) + ' classes), the extreme classes are now vanishingly rare and the middle classes dominate - the distribution is starting to look like a smooth, continuous bell curve, exactly the pattern a truly polygenic trait like human height shows.';
     }
     document.getElementById('explainNote').textContent = note;
   }

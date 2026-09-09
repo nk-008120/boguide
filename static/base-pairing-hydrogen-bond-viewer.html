@@ -90,13 +90,13 @@
       var n = validPairs[key];
       var dots = '';
       for (var i=0;i<n;i++){ dots += (i>0?' ':'') + '···'; }
-      result.innerHTML = '<div id="bondViz">' + b1 + ' ' + dots + ' ' + b2 + '</div><b style="color:#166534">Valid pair — ' + n + ' hydrogen bonds.</b>';
+      result.innerHTML = '<div id="bondViz">' + b1 + ' ' + dots + ' ' + b2 + '</div><b style="color:#166534">Valid pair - ' + n + ' hydrogen bonds.</b>';
     } else if (bothPurine){
-      result.innerHTML = '<b style="color:#991b1b">Invalid — two purines are too wide, sterically clash across the helix.</b>';
+      result.innerHTML = '<b style="color:#991b1b">Invalid - two purines are too wide, sterically clash across the helix.</b>';
     } else if (bothPyrimidine){
-      result.innerHTML = '<b style="color:#991b1b">Invalid — two pyrimidines are too far apart to hydrogen-bond.</b>';
+      result.innerHTML = '<b style="color:#991b1b">Invalid - two pyrimidines are too far apart to hydrogen-bond.</b>';
     } else {
-      result.innerHTML = '<b style="color:#991b1b">Invalid — the donor/acceptor pattern does not match for this purine-pyrimidine combination.</b>';
+      result.innerHTML = '<b style="color:#991b1b">Invalid - the donor/acceptor pattern does not match for this purine-pyrimidine combination.</b>';
     }
   }
 })();

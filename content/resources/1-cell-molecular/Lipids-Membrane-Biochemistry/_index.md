@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "USABO", "biochemistry"]
 ---
 
 {{< topic-meta >}}
+{{< challenge-cta >}}
 {{< mathjax >}}
 
 ## Overview
@@ -82,6 +83,8 @@ Not all lipid biology is structural. **Eicosanoids** (prostaglandins, thromboxan
 **Static**
 
 *(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
+
+{{< practice-challenge >}}
 
 ## Practice Problems
 

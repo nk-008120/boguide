@@ -57,7 +57,7 @@
 <body>
 <div class="widget-container">
   <h3>Nondisjunction Simulator</h3>
-  <div class="subtitle">Toggle where nondisjunction occurs and watch how it changes the chromosome count — and identity — of the resulting gametes.</div>
+  <div class="subtitle">Toggle where nondisjunction occurs and watch how it changes the chromosome count - and identity - of the resulting gametes.</div>
   <div class="modes">
     <button class="mode-btn active" id="m-normal">Normal meiosis</button>
     <button class="mode-btn" id="m-mi">Nondisjunction at Meiosis I</button>
@@ -78,11 +78,11 @@
   var modes = {
     normal: {
       gametes: [ ['blue'], ['blue'], ['red'], ['red'] ],
-      explain: 'Meiosis I separates the homologs; meiosis II separates sister chromatids. Every gamete ends up with exactly one copy (n) — one chromatid from one homolog.'
+      explain: 'Meiosis I separates the homologs; meiosis II separates sister chromatids. Every gamete ends up with exactly one copy (n) - one chromatid from one homolog.'
     },
     mi: {
       gametes: [ ['blue','red'], ['blue','red'], [], [] ],
-      explain: 'Homologs fail to separate at meiosis I — one secondary cell gets both homologs, the other gets neither. Meiosis II then proceeds normally, so two gametes end up with an extra copy made of two DIFFERENT homologs (n+1), and two gametes end up missing the chromosome entirely (n−1).'
+      explain: 'Homologs fail to separate at meiosis I - one secondary cell gets both homologs, the other gets neither. Meiosis II then proceeds normally, so two gametes end up with an extra copy made of two DIFFERENT homologs (n+1), and two gametes end up missing the chromosome entirely (n−1).'
     },
     mii: {
       gametes: [ ['blue','blue'], [], ['red'], ['red'] ],
@@ -114,7 +114,7 @@
       var countLabel = count === 0 ? 'n−1 (missing)' : (count === 1 ? 'n (normal)' : 'n+1 (extra)');
       var identityLabel = '';
       if (count === 2){
-        identityLabel = (g[0] === g[1]) ? ' — 2 identical sister chromatids' : ' — 2 different homologs';
+        identityLabel = (g[0] === g[1]) ? ' - 2 identical sister chromatids' : ' - 2 different homologs';
       }
       tag.textContent = countLabel + identityLabel;
       wrap.appendChild(tag);

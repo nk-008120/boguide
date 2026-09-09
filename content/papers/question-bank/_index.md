@@ -1,6 +1,6 @@
 ---
 title: "Question Bank"
-description: "Every BiOrchive question in one searchable, filterable table — by olympiad, topic, and difficulty."
+description: "Every BiOrchive question in one searchable, filterable table - by olympiad, topic, and difficulty."
 layout: "wide"
 ---
 

@@ -1,0 +1,22 @@
+Q.21
+Figure Q.21 shows how lung ventilation is affected by physical activity. As the
+intensity of exercise increases, humans respond to the increased need for gas
+exchange in two ways: increase in ventilation rate and increase in tidal volume. The
+experimental data for a well-trained runner on a treadmill are shown in Figure Q.21.
+Ventilation rate
+Tidal volume
+Ventilation rate (breaths/min)
+Treadmill speed (km/h)
+Tidal volume (liters/breath)
+Figure Q.21
+Indicate in the Answer sheet if each of the following statements is True or False.
+A. The increase in ventilation rate is faster than the increase in tidal volume when
+the treadmill speed increases from 9 km/h to 12 km/h.
+B. In intense physical exercise (> 15 km/h treadmill speed), the increase in the
+ventilatory minute volume is mainly caused by increased ventilation rate.
+C. At the treadmill speed of 15 km/h, the ventilatory volume per minute is
+approximately 120 L.
+D. In an adult human, a tidal volume of  0.2 L  and ventilation rate of 30 breaths
+per  minute can provide equally eﬀective gas exchange as a tidal volume of 0.6
+L and a ventilation rate of 10 breaths per minute.
+25/56

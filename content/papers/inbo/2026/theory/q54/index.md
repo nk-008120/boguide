@@ -5,7 +5,7 @@ title: "Q54 - Island vs Mainland Hare Population Dynamics"
 {{< problem-meta category="Theory" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
-  <a class="papers-subject-tag" href="/resources/8-ecology/population-ecology-dynamics/">Population Ecology & Dynamics</a>
+  <a class="papers-subject-tag" href="/resources/8-ecology/">Ecology</a>
 </div>
 
 Refer to the [question paper](/papers/inbo/2026/theory-exam.pdf#page=29) for figures and tables.

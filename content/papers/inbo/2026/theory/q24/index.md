@@ -5,7 +5,7 @@ title: "Q24 - Transcription Factor Activation Pathway"
 {{< problem-meta category="Theory" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
-  <a class="papers-subject-tag" href="/resources/1-cell-molecular/gene-regulation-eukaryotic/">Gene Regulation: Eukaryotic</a>
+  <a class="papers-subject-tag" href="/resources/1-cell-molecular/gene-regulation-eukaryotic-epigenetics/">Gene Regulation: Eukaryotic & Epigenetics</a>
 </div>
 
 Refer to the [question paper](/papers/inbo/2026/theory-exam.pdf#page=12) for figures and tables.

@@ -5,7 +5,7 @@ title: "Q19 - Speckled Wood Butterfly Territorial Strategy"
 {{< problem-meta category="Theory" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
-  <a class="papers-subject-tag" href="/resources/9-ethology/aggression-social-structure/">Aggression & Social Structure</a>
+  <a class="papers-subject-tag" href="/resources/9-ethology/aggression-territoriality-social-structure/">Aggression, Territoriality & Social Structure</a>
 </div>
 
 Refer to the [question paper](/papers/inbo/2026/theory-exam.pdf#page=10) for figures and tables.

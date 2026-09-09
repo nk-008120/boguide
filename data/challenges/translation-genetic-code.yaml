@@ -1,0 +1,191 @@
+section: "1-cell-molecular"
+slug: "Translation-Genetic-Code"
+title: "Translation & the Genetic Code"
+questions:
+  - id: 1
+    difficulty: "easy"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      Consider a protein with a molecular weight of 88 kDa. Calculate the molecular weight of the protein coding region of the corresponding mRNA (assume the molecular weight of an amino acid to be 110 Da and the average molecular weight of a ribonucleotide residue to be 340 Da).
+    solution: |
+
+      Ans – 816 kDa
+
+      Solution – The premise of this question is based on the fact that average weight of amino acids and nucleotides is given on the basis of frequency of occurrence and also takes loss in weight due to water loss by dehydration into account. One amino acid is coded by 3 nucleotides.Number of Amino Acids = 88 * 1000 / 110 = 800
+      Number of Nucleotides = 800 * 3 = 2400
+      Weight of Ribonucleotide = 2400 * 340 / 1000 
+      kDa = 816 kDa
+  - id: 2
+    difficulty: "easy"
+    source: "USABO"
+    contributor: "SM"
+    question: |
+
+      Read the following statements regarding the similarities and differences between prokaryotic and eukaryotic translation. Indicate if each of the statements are True or False:
+      A. In both prokaryotes and eukaryotes translation is coupled to transcription.
+      B. Peptidyl transferase activity of the ribosomes in prokaryotes and eukaryotes is attributed to a ribozyme.
+      C. Termination factors in prokaryotes resemble tRNA whereas termination factors in eukaryotes do not.
+      D. The initiation codon is recognized by an initiation tRNA (tRNAi) in all organisms.
+    solution: |
+
+      A – False
+
+      Solution –
+      In prokaryotes, transcription and translation can be coupled because there is no nuclear membrane. In eukaryotes, transcription occurs in the nucleus while translation occurs in the cytoplasm, so they are not coupled.
+
+      B – True
+
+      Solution –
+      The peptidyl transferase centre is formed primarily by rRNA—23S rRNA in prokaryotes and 28S rRNA in eukaryotes. Thus, the catalytic activity is attributed to a ribozyme.
+
+      C – False
+
+      Solution –
+      In prokaryotes, release factors functionally mimic tRNA by entering the A site and recognizing stop codons. However, eukaryotic release factor eRF1 also has a tRNA-like structural/functional mimicry, so the contrast stated is incorrect.
+
+      D – True
+
+      Solution -
+      Translation initiation involves a specialized initiator tRNA (tRNAᵢ) recognizing the initiation codon. In bacteria it carries N-formylmethionine (fMet-tRNAᶠᴹᵉᵗ), whereas in eukaryotes it carries methionine (Met-tRNAᵢᴹᵉᵗ).
+  - id: 3
+    difficulty: "medium"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      Several codons of the mitochondrial DNA cytochrome b gene are shown.
+
+      | Columba junoniae | AAC GGG ATA CGT ACA GAT ATC ATT CCC CTA TAT CGG CCA CCC CTT ACA |
+      |---|---|
+      | Columba arquatrix | AAC AGG ATA CGT GCA AAT ATC ATT CCC CTA CAT CGG CCA TCC CTT ACA |
+      | Columba trocaz | GAC GGG ATA TGT ACA AAT ATC GTT CCC ATA CAT CGG CCA TCC CTT ACA |
+      | Columba palumbus | GAC AGG ATA TGT ACA AAT ATC GTT CCC ATA CAT CGG TCA CCC CTT ACA |
+      | Columba bolli | AAC GGG ATA TGT ACA AAT ATC GTT TCC ATA CAT CGG CCA TCC CTT GCA |
+
+      ![image](/CHALLENGEPICS/translation-genetic-code-q3.png)
+
+      Based on DNA sequences and the Vertebrate mitochondrial DNA code, indicate which statements are true or false:
+
+      A. There are no amino-acid substitutions between species Columba junoniae and Columba bolli in the codons shown.
+      B. There are two codon substitutions between species Columba trocaz and Columba palumbus in the codons shown.
+      C. One amino-acid substitution from Columba arquatrix to Columba junoniae, in the codons shown, is from Ala to Thr.
+      D. There are 8 amino-acid substitutions between species Columba junoniae and Columba bolli in the codons shown.
+      E. There are 18 amino-acid substitutions between species Columba junoniae and Columba bolli in the codons shown.
+    solution: |
+
+      A. False
+      B. False
+      C. True
+      D. True
+      E. False
+  - id: 4
+    difficulty: "medium"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      A synthetic mRNA sequence 5′-AUG UUA GGU UGG UAA-3′ was translated in vitro using wild-type E. coli ribosomes and yielded a peptide Met-Leu-Gly-Trp. When the same mRNA was translated in a mutant E. coli strain, the product peptide was: Met-Leu-Gly-Trp-Tyr. All known tRNAs and aminoacyl-tRNA synthetases were the same as wild-type, 3 except one species of tRNA in the mutant carried tyrosine but had the anticodon AUU. Which interpretation/s best explain/s the altered translation outcome? 
+      i. The mutant tRNA reads the UAA stop codon, inserting tyrosine instead of terminating translation.
+      ii. The mutant ribosome fails to recognize start codons, extending translation downstream.
+      iii. A frameshift occurred at the glycine codon, producing an altered peptide tail with tyrosine near the C-terminus.
+
+      A. i onlyB
+      . iii onlyC
+      . i and iii onlyD
+      . i, ii and iii
+    solution: |
+
+      Ans – A. i only
+
+      The mRNA is 5′-AUG UUA GGU UGG UAA-3′. In wild-type E. coli: AUG → Met, UUA → Leu, GGU → Gly, UGG → Trp and UAA → Stop. Therefore, the translated peptide is Met–Leu–Gly–Trp. However, in the mutant, the peptide is Met–Leu–Gly–Trp–Tyr. The only change is that tyrosine has been inserted at the position where translation normally terminates, i.e. at the UAA stop codon.
+
+      The mutant tRNA carries Tyrosine and Anticodon AUU. An anticodon AUU can base-pair with the codon UAA. Thus, this tRNA acts as a nonsense suppressor tRNA, competing with release factors and inserting tyrosine at UAA.
+
+      Evaluating the statements,
+
+      i – True
+
+      Solution -
+      The mutant tRNA recognizes the UAA stop codon and inserts tyrosine, allowing translation to continue/suppress termination.
+
+      ii – False
+
+      Solution -
+      Failure to recognize the start codon cannot explain the normal production of Met–Leu–Gly–Trp followed by Tyr. Translation clearly initiated correctly at AUG.
+
+      iii – False
+
+      Solution -
+      A frameshift at the glycine codon would alter the downstream reading frame and would not specifically explain replacement of the stop signal with tyrosine while preserving the preceding amino acid sequence.
+  - id: 5
+    difficulty: "hard"
+    source: "Unknown"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/translation-genetic-code-q5-1.jpg)
+
+      A) A researcher synchronizes the incorporation of a single amino acid into a growing polypeptide and continuously monitors three covalent linkages associated with that amino acid. The following graph shows the results of fluorescent probing of 3 different bonds involved in translation.
+
+      Match the correct bond to the number (I, II or III). Options for bonds are: Acid-anhydride (phospho-anhydride) bond, ester bond and peptide bond.
+
+      B) One day while visiting the library, you find the librarian very distressed. Upon further inquiry, you get to know that a book issued by her is now missing a page containing the solution to the following flowchart explaining the steps of translation in E. coli. Being IBO aspirants, you now need to fill the flowchart with the correct alternatives (one may be repeated many times). You are given following alternatives:
+
+      Attachment of Amino Acid to ATP by formation of acid-anhydride (phospho-anhydride) bond and release of Pyrophosphate
+
+      Amino Acid is transferred to 3’OH of A residue at 3’ end of tRNA
+
+      Amino Acid is transferred to 2’OH of A residue at 3’ end of tRNA
+
+      Binding of Aminoacyl-tRNA to GTP bound EF-Tu complex
+
+      Aminoacyl-tRNA-EF-Tu-GTP complex binds to A site of ribosome
+
+      Hydrolysis of GTP
+
+      Release of EF-Tu-GDP complex
+
+      Formation of peptide bond between Amino Acid in P site and A site
+
+      Formation of EF-G-GTP complex
+
+      Translocation of ribosome 1 codon towards 3’ end of mRNA
+
+      tRNA of P site reaches E site and is released into cytoplasm
+
+      Termination codon reaches A site
+
+      tRNA mimicking RF1/RF2 occupy A site and growing polypeptide is transferred to H2O causing the polypeptide to leave the ribosome
+
+      RF3-GDP binds to ribosome to cause release of RF1/RF2
+
+      GTP replaces GDP in RF3-GDP
+
+      RF3 is released from ribosome
+
+      tRNA mimicking Ribosome Recycling Factor (RRF) binds to A site of Ribosome.
+
+      Formation of EF-G-GTP complex
+
+      Translocation or ribosome causing RRF to move to P site and uncharged tRNA (corresponding to codon preceding stop codon) to move to E site
+
+      RRF causes releases of - c tRNA and EF-G releases RRF to cause all subunits to dissociate
+
+      UAA
+
+      UAG
+
+      ![image](/CHALLENGEPICS/translation-genetic-code-q5-2.png)
+
+      UGA
+    solution: |
+
+      A – Firstly, phospho-anhydride bond forms between ATP and Amino Acid. Then Amino Acid is transferred to 3’ OH of A residue at 3’ end of tRNA by formation of ester bond. Finally, the Amino Acid is added to growing polypeptide by formation of peptide bond. Thus, the correct matching is:
+
+      I – Acid-anhydride (phospho-anhydride) bond II - Ester bond III - Peptide bond
+
+      ![image](/CHALLENGEPICS/translation-genetic-code-q5-sol.png)
+
+      B – (Refer – iGenetics: A Molecular Approach by Peter J. Russel and Molecular Biology of the Gene by Watson)

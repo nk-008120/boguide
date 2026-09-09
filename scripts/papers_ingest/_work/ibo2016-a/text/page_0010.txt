@@ -1,0 +1,106 @@
+Q.6 
+Ethanol inhibits microbial growth. Nevertheless, some strains of the yeast
+Saccharomyces cerevisiae can adapt to high concentrations of ethanol. Many studies
+have documented the alteration of cellular lipid composition in response to ethanol
+exposure.
+In this investigation, we systematically altered the fatty acid composition in S.
+cerevisiae by knocking out OLE1 gene coding for integral membrane desaturase,
+responsible for the formation of monosaturated palmitoleic acid (∆-C
+) and oleic
+acid (∆-C
+). The knockout strain was then: (1) reconstituted with OLE1 gene by
+transformation with YEpOLE1 plasmid; (2) transformed with YEp-∆Hz, YEp-∆Tn,
+YEp-∆
+Hz or YEp-∆
+Tn plasmid containing ∆ or ∆
+ desaturases of two lepidopteran
+insect (moths) Helicoverpa zea (Hz) o r Trichoplusia ni (Tni). Fatty acid component
+and growth curves of each transformant were investigated and shown in table and
+figure below:
+Table Q.6. Composition of major fatty acids in % of S. cerevisiae transformants at mid-log phase.
+Transformant
+C
+C
+C
+C
+Saturated
+Saturated
+Monounsaturated
+Monounsaturated
+OLE1
+45.5 ± 2.2
+4.7 ± 2.4
+34.9 ± 0.8
+14.9 ± 1.0
+∆Hz
+45.5 ± 5.5
+7.9 ± 2.2
+31.7 ± 5.6
+11.0 ± 2.0
+∆Tn
+46.9 ± 4.0
+8.6 ± 3.9
+12.8 ± 1.9
+31.7 ± 5.8
+∆
+Hz
+45.6 ± 3.6
+11.9 ± 2.8
+42.6 ± 6.3
+0
+∆
+Tn
+49.7 ± 4.8
+12.5 ± 0.1
+41.8 ± 11.8
+11.2 ± 1.5
+2.5
+2.0
+1.5
+1.0
+0.5
+00
+20
+40
+60
+t(min)
+1.5
+1.0
+0.5
+0
+0
+20
+40
+OD600
+t(min)
+60
+A
+B
+OD600
+Fig.Q6. Growth curves of S. cerevisiae strains transformed with plasmid containing OLE1 (x), Δ Hz (●), Δ
+Hz (■), Δ Tn
+(○) and Δ
+Tn (□) in YPD medium (A) and in YPD medium containing 5% ethanol (B)
+9
+16:1
+9
+18:1
+9
+9
+11
+11
+9
+11
+16:0
+18:0
+16:1
+18:1
+9
+9
+11
+11
+9
+11
+9
+11
+9/56

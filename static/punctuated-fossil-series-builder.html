@@ -148,10 +148,10 @@
       resultEl.className = correct ? 'correct' : 'wrong';
       var modelName = trueModel === 'gradual' ? 'phyletic gradualism' : 'punctuated equilibrium';
       resultEl.innerHTML = (correct ? '<b>Correct!</b> ' : '<b>Not quite.</b> ') +
-        'This series was generated under <b>' + modelName + '</b> — ' +
+        'This series was generated under <b>' + modelName + '</b> - ' +
         (trueModel === 'gradual'
           ? 'the trait value changed by a small, roughly constant amount at every step, consistent with slow continuous change.'
-          : 'the trait value stayed flat across most strata, punctuated by a small number of larger jumps — consistent with stasis interrupted by rapid change.');
+          : 'the trait value stayed flat across most strata, punctuated by a small number of larger jumps - consistent with stasis interrupted by rapid change.');
       document.querySelectorAll('.guess-btn').forEach(function(b){ b.disabled = true; });
     });
   });

@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "USABO", "molecular-biology"]
 ---
 
 {{< topic-meta >}}
+{{< challenge-cta >}}
 {{< mathjax >}}
 
 ## Overview
@@ -82,6 +83,8 @@ Telomerase activity is a double-edged biological fact, worth understanding both 
 **Static**
 
 *(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. The telomere image is a content mismatch, see the inline note; a genuine progressive-shortening-across-cycles diagram is not yet sourced.)*
+
+{{< practice-challenge >}}
 
 ## Practice Problems
 

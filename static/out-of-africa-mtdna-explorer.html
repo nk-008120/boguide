@@ -50,7 +50,7 @@
 <script>
 (function(){
   var regions = [
-    { name: 'Africa', distance: 0, diversity: 100, date: 'Origin — anatomically modern humans present by ~300,000 years ago.' },
+    { name: 'Africa', distance: 0, diversity: 100, date: 'Origin - anatomically modern humans present by ~300,000 years ago.' },
     { name: 'Middle East', distance: 1, diversity: 78, date: 'Settled by ~70,000 years ago, the first step of dispersal out of Africa.' },
     { name: 'South Asia', distance: 2, diversity: 66, date: 'Settled by roughly 60,000–50,000 years ago.' },
     { name: 'Southeast Asia / Australia', distance: 3, diversity: 55, date: 'Settled by roughly 50,000–40,000 years ago, including an early sea crossing to Australia.' },
@@ -74,7 +74,7 @@
   Plotly.newPlot('plot-div', [trace], layout, { responsive: true, displayModeBar: false }).then(function(gd){
     gd.on('plotly_click', function(data){
       var r = regions[data.points[0].pointIndex];
-      document.getElementById('info').innerHTML = '<b>' + r.name + '</b> — relative mtDNA diversity: ' + r.diversity + '.<br>' + r.date;
+      document.getElementById('info').innerHTML = '<b>' + r.name + '</b> - relative mtDNA diversity: ' + r.diversity + '.<br>' + r.date;
     });
   });
 })();

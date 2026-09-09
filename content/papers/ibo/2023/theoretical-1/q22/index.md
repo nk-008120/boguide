@@ -5,7 +5,7 @@ title: "Q22 - Mendel's Round and Wrinkled Peas: PCR Analysis"
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
-  <a class="papers-subject-tag" href="/resources/7-genetics/mendelian-inheritance-probability/">Mendelian Inheritance & Probability</a>
+  <a class="papers-subject-tag" href="/resources/7-genetics/mendelian-inheritance-probability/">Mendel's Laws & Probability in Genetics</a>
   <a class="papers-subject-tag" href="/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/">Recombinant DNA & Biotechnology Techniques</a>
 </div>
 

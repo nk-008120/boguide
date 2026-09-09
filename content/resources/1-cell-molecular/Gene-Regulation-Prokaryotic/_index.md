@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "USABO", "molecular-biology"]
 ---
 
 {{< topic-meta >}}
+{{< challenge-cta >}}
 {{< mathjax >}}
 
 ## Overview
@@ -75,6 +76,8 @@ Beyond repressor-mediated on/off control, the trp operon carries an additional r
 **Static**
 
 *(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
+
+{{< practice-challenge >}}
 
 ## Practice Problems
 

@@ -141,7 +141,7 @@
   function updateReadout(){
     var tt = parseFloat(slider.value)/100*tMax;
     var info = phaseLabel(tt);
-    readout.innerHTML = '<b>t = ' + tt.toFixed(2) + ' ms</b> — Phase: <b>' + info.phase + '</b>. Na⁺ channels: <b>' + info.na + '</b>. K⁺ channels: <b>' + info.k + '</b>.';
+    readout.innerHTML = '<b>t = ' + tt.toFixed(2) + ' ms</b> - Phase: <b>' + info.phase + '</b>. Na⁺ channels: <b>' + info.na + '</b>. K⁺ channels: <b>' + info.k + '</b>.';
   }
 
   showNa.addEventListener('change', render);

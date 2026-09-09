@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "USABO", "biochemistry"]
 ---
 
 {{< topic-meta >}}
+{{< challenge-cta >}}
 {{< mathjax >}}
 
 ## Overview
@@ -140,6 +141,8 @@ Ionizable-group comparison across the three charged/polar-basic amino acid class
 **Static**
 
 *(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
+
+{{< practice-challenge >}}
 
 ## Practice Problems
 

@@ -1,0 +1,28 @@
+Q.19
+Cardiac output (CO) is the volume of blood pumped by the heart in one minute.
+Cardiac output is affected by the stroke volume (SV) and the heart rate (HR). Cardiac
+output can be measured indirectly using the Fick’s equation: CO = Q/(A-V), where Q is
+the rate of oxygen consumption (mL/min), A-V is the difference between oxygen
+concentration in the oxygenated blood (A) and in the deoxygenated blood (V). The
+data below were measured from a healthy person before and during physical exercise.
+Parameters
+Before Exercise
+During Exercise
+Rate of oxygen consumption (Q)
+250 mL/min
+1500 mL/min
+Oxygen difference (A-V)
+50 mL/L blood
+150 mL/L blood
+Heart rate (HR)
+60 beats/min
+120 beats/min
+Indicate in the Answer sheet if each of the following statements is True or False. 
+A. Cardiac output increased by two-fold during exercise.
+B. Stroke volume during exercise was higher than that before exercise.
+C. Physical exercise caused a reduction in hemoglobin’s binding for oxygen in
+tissues, resulting in a three-fold increase in the amount of oxygen released to
+tissues.
+D. The number of heart beats required to supply a tissue with 3000 mL of oxygen
+during exercise is 240.
+23/56

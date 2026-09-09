@@ -61,7 +61,7 @@
 <body>
 <div class="widget-container">
   <h3>Dominance Relationship Comparator</h3>
-  <div class="subtitle">Pick a dominance mode and a cross, and see how the heterozygote actually looks — and how that changes the phenotype ratio.</div>
+  <div class="subtitle">Pick a dominance mode and a cross, and see how the heterozygote actually looks - and how that changes the phenotype ratio.</div>
   <div class="modes">
     <button class="mode-btn active" id="modeComplete">Complete Dominance</button>
     <button class="mode-btn" id="modeIncomplete">Incomplete Dominance</button>
@@ -78,7 +78,7 @@
       <div class="offspring-grid" id="grid"></div>
     </div>
     <div class="results">
-      <div class="readout" id="phenoReadout">Phenotype ratio: —</div>
+      <div class="readout" id="phenoReadout">Phenotype ratio: -</div>
       <div class="note" id="explainNote"></div>
       <div class="legend">
         <span><span class="dot" style="background:#d9534f;"></span>A allele (red)</span>
@@ -181,9 +181,9 @@
     });
     phenoReadout.innerHTML = 'Phenotype ratio: <b>' + ratioString(phenoCounts) + '</b>';
     if (mode === 'complete'){
-      explainNote.textContent = 'Aa looks identical to AA — the heterozygote is indistinguishable from the dominant homozygote.';
+      explainNote.textContent = 'Aa looks identical to AA - the heterozygote is indistinguishable from the dominant homozygote.';
     } else if (mode === 'incomplete'){
-      explainNote.textContent = 'Aa produces a new, intermediate blended phenotype (pink) — distinct from both homozygotes.';
+      explainNote.textContent = 'Aa produces a new, intermediate blended phenotype (pink) - distinct from both homozygotes.';
     } else {
       explainNote.textContent = 'Aa shows both parental phenotypes simultaneously and distinguishably, not a blend.';
     }

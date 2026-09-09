@@ -5,8 +5,8 @@ title: "Q29 - Paulinella Chloroplast Endosymbiosis"
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
-  <a class="papers-subject-tag" href="/resources/1-cell-molecular/mitochondria-chloroplasts-structure-origin/">Mitochondria, Chloroplasts & Endosymbiosis</a>
-  <a class="papers-subject-tag" href="/resources/15-evolution/history-of-life-origin-and-major-transitions/">History of Life & Major Transitions</a>
+  <a class="papers-subject-tag" href="/resources/1-cell-molecular/mitochondria-chloroplasts-structure-origin/">Mitochondria & Chloroplasts: Structure & Endosymbiotic Origin</a>
+  <a class="papers-subject-tag" href="/resources/15-evolution/history-of-life-origin-and-major-transitions/">History of Life: Origin & Major Transitions</a>
 </div>
 
 *Paulinella* is a genus of small aerobic amoeba from the Rhizaria clade. This genus includes a monophyletic clade of photosynthetic species. The photosynthetic species of *Paulinella* have oval theca, long filamentous pseudopodia and two curved chloroplasts.

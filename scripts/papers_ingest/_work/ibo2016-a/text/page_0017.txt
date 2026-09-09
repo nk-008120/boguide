@@ -1,0 +1,52 @@
+Q.12
+An experiment was carried out on sorghum (Sorghum bicolor) and soybean (Glycine
+max) plants in response to low temperature. Plants were grown at 25 C for several
+weeks and then at 10 C for three days, while day length and light intensity and
+ambient carbon dioxide concentration were kept constant throughout the experiment
+unless stated otherwise. The net photosynthesis of both plant species at 25 C are
+shown in Fig.Q12 below.
+Net CO2 uptake rate
+[CO2] in air
+Fig.Q.12
+Carbon dioxide uptake per leaf dry mass (mg CO
+g
+)
+Days
+before
+1
+2
+3
+4-10
+Temperature
+25°C
+10°C
+10°C
+10°C
+25°C
+Sorghum
+48.2
+5.5
+2.9
+1.2
+1.5
+Soybean
+23.2
+5.2
+3.1
+1.6
+6.4
+Indicate in the Answer sheet if each of the following statements is True or False.
+A. If put at 35 C, photosynthesis rate of soybean would decrease and that of
+sorghum would not change.
+B. In cool condition, the biomass of sorghum increases faster than that of soybean. 
+C. Soybean plants are likely to have smaller photosynthetic water use efficiency
+than sorghum.
+D. The reduction of the carbon dioxide uptake in sorghum is mainly due to the
+decrease of enzyme activity in low temperature.
+o
+o
+0
+2 
+-1
+o
+16/56

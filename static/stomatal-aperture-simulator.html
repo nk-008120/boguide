@@ -50,7 +50,7 @@
 <body>
 <div class="widget-container">
   <h3>Multi-Signal Stomatal Aperture Simulator</h3>
-  <div class="subtitle">Light and CO2 push toward opening or closing — but ABA can override both.</div>
+  <div class="subtitle">Light and CO2 push toward opening or closing - but ABA can override both.</div>
   <div class="layout">
     <div class="pore-panel">
       <svg viewBox="0 0 160 160" width="140" height="140">
@@ -73,7 +73,7 @@
         <input type="range" id="abaSlider" min="0" max="100" value="0">
       </div>
       <div class="readout">Net aperture: <b id="apertureVal">100%</b> open</div>
-      <div class="note" id="simNote">Bright light and low CO2 both favor opening — the pore is fully open.</div>
+      <div class="note" id="simNote">Bright light and low CO2 both favor opening - the pore is fully open.</div>
     </div>
   </div>
 </div>
@@ -111,13 +111,13 @@
 
     if (A >= 60 && base >= 50){
       apertureLabel.innerHTML = '<span class="warn">Closed (ABA override)</span>';
-      note.innerHTML = '<span class="warn">ABA is forcing closure</span> even though light and CO2 conditions both favor opening — this is the override relationship described in the text: ABA-activated outward channels win regardless of the other two signals.';
+      note.innerHTML = '<span class="warn">ABA is forcing closure</span> even though light and CO2 conditions both favor opening - this is the override relationship described in the text: ABA-activated outward channels win regardless of the other two signals.';
     } else if (effective > 60){
       apertureLabel.textContent = 'Open';
       note.textContent = 'Bright light and/or low CO2 favor opening, and ABA is low enough not to interfere.';
     } else if (effective > 25){
       apertureLabel.textContent = 'Partially open';
-      note.textContent = 'A mixed signal set — some combination of dim light, high CO2, or moderate ABA is partially restricting the aperture.';
+      note.textContent = 'A mixed signal set - some combination of dim light, high CO2, or moderate ABA is partially restricting the aperture.';
     } else {
       apertureLabel.textContent = 'Closed';
       note.textContent = 'Low light and/or high CO2 (or rising ABA) are keeping the pore closed.';

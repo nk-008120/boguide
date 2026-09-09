@@ -7,6 +7,7 @@
 {{ with $yearData.location }}<p class="papers-summary">📍 {{ . }}</p>{{ end }}
 <div class="papers-grid">
   {{- range $yearData.rounds }}
+    {{- if not .hidden }}
     {{- $paperCount := len .papers }}
     <a class="papers-card" href="{{ $.Page.RelPermalink }}{{ .id }}/">
       <span class="papers-card-title">{{ .name }}</span>
@@ -15,5 +16,6 @@
         {{- if .problems }} · {{ len .problems }} problem{{ if ne (len .problems) 1 }}s{{ end }}{{ end }}
       </span>
     </a>
+    {{- end }}
   {{- end }}
 </div>

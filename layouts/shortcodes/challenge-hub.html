@@ -1,0 +1,117 @@
+{{- /* challenge-hub: Aggregates all challenge questions for a major topic section into one filterable hub page. */ -}}
+{{- $sectionParam := .Get "section" | default "" -}}
+{{- if not $sectionParam -}}
+  {{- $sectionParam = path.Base .Page.File.Dir -}}
+{{- end -}}
+
+{{- $subtopics := slice -}}
+{{- $totalCount := 0 -}}
+{{- range $key, $data := hugo.Data.challenges -}}
+  {{- if eq $data.section $sectionParam -}}
+    {{- $qCount := len $data.questions -}}
+    {{- $subtopics = $subtopics | append (dict "key" $key "data" $data "count" $qCount) -}}
+    {{- $totalCount = add $totalCount $qCount -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $subtopics -}}
+<div class="challenge-hub" id="challenge-hub">
+
+<p class="challenge-hub-summary">{{ $totalCount }} challenge question{{ if ne $totalCount 1 }}s{{ end }} across {{ len $subtopics }} subtopic{{ if ne (len $subtopics) 1 }}s{{ end }}.</p>
+
+<div class="challenge-hub-filters">
+  <select id="challenge-hub-difficulty" class="papers-filter-select">
+    <option value="">All Difficulties</option>
+    <option value="easy">Easy</option>
+    <option value="medium">Medium</option>
+    <option value="hard">Hard</option>
+  </select>
+  <select id="challenge-hub-source" class="papers-filter-select">
+    <option value="">All Sources</option>
+    <option value="IBO">IBO</option>
+    <option value="INBO">INBO</option>
+    <option value="USABO">USABO</option>
+    <option value="Personal">Personal</option>
+  </select>
+</div>
+
+{{- range $subtopics -}}
+{{- $sub := .data -}}
+{{- $subKey := .key -}}
+<div class="challenge-hub-subtopic" data-subtopic="{{ $subKey }}">
+  <h3>
+    <a href="{{ $.Page.Parent.RelPermalink }}{{ $sub.slug }}/">{{ $sub.title }}</a>
+    <span class="challenge-hub-count">{{ .count }} question{{ if ne .count 1 }}s{{ end }}</span>
+  </h3>
+
+  {{- range $i, $q := $sub.questions -}}
+  {{- $globalID := printf "hub-%s-%d" $subKey $q.id -}}
+  <div class="challenge-card challenge-hub-card" data-difficulty="{{ lower $q.difficulty }}" data-source="{{ $q.source }}">
+    <div class="challenge-meta">
+      {{- $diffClass := "challenge-difficulty-medium" -}}
+      {{- $diffLabel := "Medium" -}}
+      {{- if eq (lower $q.difficulty) "easy" -}}
+        {{- $diffClass = "challenge-difficulty-easy" -}}
+        {{- $diffLabel = "Easy" -}}
+      {{- else if eq (lower $q.difficulty) "hard" -}}
+        {{- $diffClass = "challenge-difficulty-hard" -}}
+        {{- $diffLabel = "Hard" -}}
+      {{- end -}}
+      <span class="challenge-difficulty-badge {{ $diffClass }}">{{ $diffLabel }}</span>
+      <span class="challenge-source-tag">{{ $q.source }}</span>
+      <span class="challenge-contributor">by {{ $q.contributor }}</span>
+    </div>
+
+    <div class="hextra-scrollbar hx:overflow-x-auto hx:overflow-y-hidden hx:overscroll-x-contain">
+      <div class="hx:mt-4 hx:flex hx:w-max hx:min-w-full hx:border-b hx:border-gray-200 hx:pb-px hx:dark:border-neutral-800" role="tablist">
+        <button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-{{ $globalID }}-0" role="tab" type="button" aria-controls="tabs-panel-{{ $globalID }}-0" aria-selected="true" tabindex="0" data-state="selected"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>Problem</span></span></button>
+        {{- if $q.solution -}}
+        <button class="hextra-tabs-toggle hx:cursor-pointer hx:data-[state=selected]:border-primary-500 hx:data-[state=selected]:text-primary-600 hx:data-[state=selected]:dark:border-primary-500 hx:data-[state=selected]:dark:text-primary-600 hx:mr-2 hx:rounded-t hx:p-2 hx:font-medium hx:leading-5 hx:transition-colors hx:-mb-0.5 hx:select-none hx:border-b-2 hx:border-transparent hx:text-gray-600 hx:hover:border-gray-200 hx:hover:text-black hx:dark:text-gray-200 hx:dark:hover:border-neutral-800 hx:dark:hover:text-white hx:hextra-focus-visible-inset" id="tabs-tab-{{ $globalID }}-1" role="tab" type="button" aria-controls="tabs-panel-{{ $globalID }}-1" aria-selected="false" tabindex="-1"><span class="hx:inline-flex hx:items-center hx:gap-1.5"><span>Solution</span></span></button>
+        {{- end -}}
+      </div>
+    </div>
+    <div>
+      <div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:data-[state=selected]:block" id="tabs-panel-{{ $globalID }}-0" role="tabpanel" aria-labelledby="tabs-tab-{{ $globalID }}-0" aria-hidden="false" tabindex="0" data-state="selected">
+        {{- $q.question | markdownify -}}
+      </div>
+      {{- if $q.solution -}}
+      <div class="hextra-tabs-panel hx:rounded-sm hx:pt-6 hx:hidden hx:data-[state=selected]:block" id="tabs-panel-{{ $globalID }}-1" role="tabpanel" aria-labelledby="tabs-tab-{{ $globalID }}-1" aria-hidden="true">
+        {{- $q.solution | markdownify -}}
+      </div>
+      {{- end -}}
+    </div>
+  </div>
+  {{- end }}
+</div>
+{{- end }}
+
+</div>
+
+<script>
+(function () {
+  var diffSelect = document.getElementById('challenge-hub-difficulty');
+  var srcSelect = document.getElementById('challenge-hub-source');
+  var cards = document.querySelectorAll('.challenge-hub-card');
+  var subtopics = document.querySelectorAll('.challenge-hub-subtopic');
+
+  function applyFilters() {
+    var diff = diffSelect ? diffSelect.value : '';
+    var src = srcSelect ? srcSelect.value : '';
+    cards.forEach(function (card) {
+      var matchDiff = !diff || card.dataset.difficulty === diff;
+      var matchSrc = !src || card.dataset.source === src;
+      card.style.display = (matchDiff && matchSrc) ? '' : 'none';
+    });
+    subtopics.forEach(function (st) {
+      var visible = st.querySelectorAll('.challenge-hub-card:not([style*="display: none"])');
+      st.style.display = visible.length ? '' : 'none';
+    });
+  }
+
+  if (diffSelect) diffSelect.addEventListener('change', applyFilters);
+  if (srcSelect) srcSelect.addEventListener('change', applyFilters);
+})();
+</script>
+{{- else -}}
+<p class="papers-summary">No challenge questions available for this section yet.</p>
+{{- end -}}

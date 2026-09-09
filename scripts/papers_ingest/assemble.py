@@ -131,14 +131,20 @@ def resolve_figures(fig_ids, figures_map, static_dir, qid):
     for i, entry in enumerate(entries, start=1):
         dest_name = f"{qid}-figure-{i}.png"
         dest_path = static_dir / dest_name
-        candidate_path = static_dir / entry
-        if candidate_path.exists():
-            resolved.append(candidate_path.name)
-            continue
-        src_path = Path(entry)
-        if src_path.exists():
+        entry_path = Path(entry)
+        # Path.__truediv__ silently discards the left operand when the right
+        # side is absolute, so only try the "already placed under static_dir"
+        # shortcut for relative entries -- an absolute entry must always go
+        # through the copy branch below instead of falsely resolving against
+        # whatever absolute scratch path it already points to.
+        if not entry_path.is_absolute():
+            candidate_path = static_dir / entry
+            if candidate_path.exists():
+                resolved.append(candidate_path.name)
+                continue
+        if entry_path.exists():
             dest_path.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(src_path, dest_path)
+            shutil.copyfile(entry_path, dest_path)
             resolved.append(dest_name)
         else:
             resolved.append(None)
@@ -159,6 +165,32 @@ STATEMENT_TEMPLATE = """\
           - letter: "{letter}"
             text: {text}
             answer: {answer}
+            explanation: {explanation}
+"""
+
+STATEMENT_TEMPLATE_MCQ = """\
+          - letter: "{letter}"
+            type: "mcq"
+            text: {text}
+            options: [{options}]
+            answer: "{answer}"
+            explanation: {explanation}
+"""
+
+STATEMENT_TEMPLATE_NUMERIC = """\
+          - letter: "{letter}"
+            type: "numeric"
+            text: {text}
+            expected: {expected}
+            tolerance: {tolerance}
+            explanation: {explanation}
+"""
+
+STATEMENT_TEMPLATE_FREE_RESPONSE = """\
+          - letter: "{letter}"
+            type: "free_response"
+            text: {text}
+            modelAnswer: {model_answer}
             explanation: {explanation}
 """
 
@@ -194,33 +226,71 @@ Question reproduced from **{exam_label}**, licensed under [CC BY-NC-SA 4.0](http
 def yaml_scalar(s):
     return yaml.safe_dump(s, allow_unicode=True, default_style='"').strip()
 
+def build_statement_text(s):
+    """
+    Renders one statement in the format matching its `type` field.
+    Defaults to the plain true_false template when no type is given, so
+    existing (uniform-TF) papers are completely unaffected. mcq/numeric/
+    free_response mirror the schema already published in data/papers/
+    ibo/2019.yaml (the pipeline's own established precedent for mixed-type
+    papers), which the shortcode layouts/shortcodes/papers-quiz.html reads.
+    """
+    letter = s["letter"]
+    text = yaml_scalar(s["text"])
+    explanation = yaml_scalar(s["explanation"])
+    stype = s.get("type")
+    if stype == "mcq":
+        options_text = ", ".join(
+            "{key: " + yaml_scalar(str(o["key"])) + ", text: " + yaml_scalar(o["text"]) + "}"
+            for o in s["options"]
+        )
+        return STATEMENT_TEMPLATE_MCQ.format(
+            letter=letter, text=text, options=options_text, answer=s["answer"], explanation=explanation,
+        )
+    if stype == "numeric":
+        return STATEMENT_TEMPLATE_NUMERIC.format(
+            letter=letter, text=text, expected=s["expected"], tolerance=s.get("tolerance", 0),
+            explanation=explanation,
+        )
+    if stype == "free_response":
+        return STATEMENT_TEMPLATE_FREE_RESPONSE.format(
+            letter=letter, text=text, model_answer=yaml_scalar(s["modelAnswer"]), explanation=explanation,
+        )
+    return STATEMENT_TEMPLATE.format(
+        letter=letter, text=text, answer=str(bool(s["answer"])).lower(), explanation=explanation,
+    )
+
 def build_entry_text(q, args, page):
     subjects_text = "".join(
         SUBJECT_TEMPLATE.format(name=s["name"], link=s["link"]) for s in q["_resolved_subjects"]
     )
-    statements_text = "".join(
-        STATEMENT_TEMPLATE.format(
-            letter=s["letter"],
-            text=yaml_scalar(s["text"]),
-            answer=str(bool(s["answer"])).lower(),
-            explanation=yaml_scalar(s["explanation"]),
-        )
-        for s in q["statements"]
-    )
+    statements_text = "".join(build_statement_text(s) for s in q["statements"])
     return YAML_ENTRY_TEMPLATE.format(
         id=q["id"], number=q["number"], name=q["name"],
         source_pdf=args.source_pdf, page=page,
         subjects=subjects_text.rstrip("\n"), statements=statements_text.rstrip("\n"),
     )
 
+def figures_url_prefix(figures_static_dir):
+    """Derive the public URL path for a --figures-static-dir, e.g.
+    "static/papers/ibo/2020/theoretical-2" -> "papers/ibo/2020/theoretical-2".
+    Respects a per-round static subdirectory instead of assuming the flat
+    per-year layout -- without this, two rounds sharing a year's static
+    folder silently collide on identically-numbered qN-figure-N.png files."""
+    parts = Path(figures_static_dir).as_posix().split("/")
+    if parts and parts[0] == "static":
+        parts = parts[1:]
+    return "/".join(parts)
+
 def build_content_page(q, args, page, figure_files, captions):
     subject_tags = "\n".join(
         f'  <a class="papers-subject-tag" href="{s["link"]}">{s["name"]}</a>' for s in q["_resolved_subjects"]
     )
+    url_prefix = figures_url_prefix(args.figures_static_dir)
     figures_md = ""
     for i, fname in enumerate(figure_files, start=1):
         cap = captions[i - 1] or f"Figure {i}."
-        figures_md += f"\n![{cap}](/papers/{args.olympiad}/{args.year}/{fname})\n*{cap}*\n"
+        figures_md += f"\n![{cap}](/{url_prefix}/{fname})\n*{cap}*\n"
     return CONTENT_TEMPLATE.format(
         number=q["number"], name=q["name"], category=args.category,
         subject_tags=subject_tags, stem=q["_stem"].strip(), figures=figures_md,

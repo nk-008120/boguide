@@ -38,7 +38,7 @@ rounds:
         link: "/papers/inbo/2026/theory-exam.pdf#page=2"
         subjects:
           - name: "Recombinant DNA & Biotechnology Techniques"
-            link: "/resources/1-cell-molecular/recombinant-dna-biotechnology/"
+            link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
         statements:
           - letter: "Q2"
             type: "mcq"
@@ -97,7 +97,7 @@ rounds:
         name: "Suppressor tRNA and Stop Codon Readthrough"
         link: "/papers/inbo/2026/theory-exam.pdf#page=3"
         subjects:
-          - name: "Translation & The Genetic Code"
+          - name: "Translation & the Genetic Code"
             link: "/resources/1-cell-molecular/translation-genetic-code/"
         statements:
           - letter: "Q5"
@@ -117,8 +117,8 @@ rounds:
         name: "Gibberellic Acid and Light Effects on Hypocotyl Growth"
         link: "/papers/inbo/2026/theory-exam.pdf#page=4"
         subjects:
-          - name: "Plant Hormones & Growth Regulators"
-            link: "/resources/5-plant-physiology/plant-hormones-growth-regulators/"
+          - name: "Plant Hormones"
+            link: "/resources/5-plant-physiology/plant-hormones/"
         statements:
           - letter: "Q6"
             type: "mcq"
@@ -137,8 +137,8 @@ rounds:
         name: "Apical Dominance and Auxiliary Bud Dormancy"
         link: "/papers/inbo/2026/theory-exam.pdf#page=5"
         subjects:
-          - name: "Plant Hormones & Growth Regulators"
-            link: "/resources/5-plant-physiology/plant-hormones-growth-regulators/"
+          - name: "Plant Hormones"
+            link: "/resources/5-plant-physiology/plant-hormones/"
         statements:
           - letter: "Q7"
             type: "mcq"
@@ -157,8 +157,8 @@ rounds:
         name: "Phloem Sap Exudation and Light Dependence"
         link: "/papers/inbo/2026/theory-exam.pdf#page=5"
         subjects:
-          - name: "Phloem Transport & Source-Sink Relations"
-            link: "/resources/5-plant-physiology/phloem-transport-source-sink/"
+          - name: "Phloem Transport & Translocation"
+            link: "/resources/5-plant-physiology/phloem-transport-translocation/"
         statements:
           - letter: "Q9"
             type: "mcq"
@@ -277,8 +277,8 @@ rounds:
         name: "Food Hoarding vs Fat Storage Under Uncertainty"
         link: "/papers/inbo/2026/theory-exam.pdf#page=8"
         subjects:
-          - name: "Foraging Behavior & Optimal Strategies"
-            link: "/resources/9-ethology/foraging-behavior-optimal-strategies/"
+          - name: "Foraging & Anti-Predator Behavior"
+            link: "/resources/9-ethology/foraging-anti-predator-behavior/"
         statements:
           - letter: "Q15"
             type: "mcq"
@@ -297,8 +297,8 @@ rounds:
         name: "Navigation in Migratory Animals"
         link: "/papers/inno/2026/theory-exam.pdf#page=9"
         subjects:
-          - name: "Migration & Navigation"
-            link: "/resources/9-ethology/migration-navigation/"
+          - name: "Orientation & Navigation"
+            link: "/resources/9-ethology/orientation-navigation/"
         statements:
           - letter: "Q16"
             type: "mcq"
@@ -317,8 +317,8 @@ rounds:
         name: "Global Hydrological Cycle Turnover Times"
         link: "/papers/inbo/2026/theory-exam.pdf#page=9"
         subjects:
-          - name: "Ecosystem Ecology & Biogeochemical Cycles"
-            link: "/resources/8-ecology/ecosystem-ecology-biogeochemical-cycles/"
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
         statements:
           - letter: "Q17"
             type: "mcq"
@@ -337,8 +337,8 @@ rounds:
         name: "Carbon Cycle Flux Ranking"
         link: "/papers/inbo/2026/theory-exam.pdf#page=9"
         subjects:
-          - name: "Ecosystem Ecology & Biogeochemical Cycles"
-            link: "/resources/8-ecology/ecosystem-ecology-biogeochemical-cycles/"
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
         statements:
           - letter: "Q18"
             type: "mcq"
@@ -357,8 +357,8 @@ rounds:
         name: "Speckled Wood Butterfly Territorial Strategy"
         link: "/papers/inbo/2026/theory-exam.pdf#page=10"
         subjects:
-          - name: "Aggression & Social Structure"
-            link: "/resources/9-ethology/aggression-social-structure/"
+          - name: "Aggression, Territoriality & Social Structure"
+            link: "/resources/9-ethology/aggression-territoriality-social-structure/"
         statements:
           - letter: "Q19"
             type: "mcq"
@@ -377,8 +377,8 @@ rounds:
         name: "Migration Cost Minimization Strategies"
         link: "/papers/inbo/2026/theory-exam.pdf#page=10"
         subjects:
-          - name: "Migration & Navigation"
-            link: "/resources/9-ethology/migration-navigation/"
+          - name: "Orientation & Navigation"
+            link: "/resources/9-ethology/orientation-navigation/"
         statements:
           - letter: "Q20"
             type: "mcq"
@@ -437,28 +437,24 @@ rounds:
         name: "Gene Size, Introns and mRNA Analysis"
         link: "/papers/inbo/2026/theory-exam.pdf#page=12"
         subjects:
-          - name: "Gene Expression & RNA Processing"
-            link: "/resources/1-cell-molecular/gene-expression-rna-processing/"
+          - name: "Transcription & RNA Processing"
+            link: "/resources/1-cell-molecular/transcription-rna-processing/"
         statements:
           - letter: "a"
-            type: "true_false"
             text: "The average size of introns is directly proportional to the size of the gene."
-            answer: "false"
+            answer: false
             explanation: "Comparing the genes: Collagen has (38-5)/50 = 0.66 kb avg intron size for 38 kbp gene, while Dystrophin has (2000-17)/50 = 39.7 kb avg intron for 2000 kbp. Insulin has (1.7-0.4)/2 = 0.65 kb for 1.7 kbp gene. The ratio of gene size to average intron size is not constant across genes, so the relationship is not directly proportional."
           - letter: "b"
-            type: "true_false"
             text: "The dystrophin gene has the longest introns with an average size of about 40 kb."
-            answer: "true"
+            answer: true
             explanation: "Dystrophin gene: (2000 - 17) / 50 introns = 39.66 kb per intron on average, which is approximately 40 kb. This is by far the largest average intron size among the listed genes."
           - letter: "c"
-            type: "true_false"
             text: "On translation, the albumin gene produces about 100 amino acids less than the phenylalanine hydroxylase gene."
-            answer: "true"
+            answer: true
             explanation: "Albumin mRNA is 2.1 kbp and Phenylalanine hydroxylase mRNA is 2.4 kbp. The difference in coding capacity is approximately (2400-2100)/3 = 100 codons, meaning about 100 fewer amino acids (accounting for UTRs, the approximation holds)."
           - letter: "d"
-            type: "true_false"
             text: "The average intron size of collagen is about 25 times smaller than that of insulin."
-            answer: "false"
+            answer: false
             explanation: "Collagen avg intron: (38-5)/50 = 0.66 kb. Insulin avg intron: (1.7-0.4)/2 = 0.65 kb. These are almost identical in size, not 25 times different. The question reverses the comparison -- collagen introns are about the same size as insulin introns, not 25 times smaller."
 
       - id: q24
@@ -467,28 +463,24 @@ rounds:
         name: "Transcription Factor Activation Pathway"
         link: "/papers/inbo/2026/theory-exam.pdf#page=12"
         subjects:
-          - name: "Gene Regulation: Eukaryotic"
-            link: "/resources/1-cell-molecular/gene-regulation-eukaryotic/"
+          - name: "Gene Regulation: Eukaryotic & Epigenetics"
+            link: "/resources/1-cell-molecular/gene-regulation-eukaryotic-epigenetics/"
         statements:
           - letter: "a"
-            type: "true_false"
             text: "When cells are treated with effector (E) and inhibitor of phosphatase, the transcription factor will be translocated into the nucleus, and there will be activation of genes regulated by the transcription factor."
-            answer: "true"
+            answer: true
             explanation: "Effector E phosphorylates I (leading to its degradation) and Y. A phosphatase inhibitor would maintain phosphorylation of both I and Y, keeping I degraded and Y phosphorylated. Phosphorylated Y + X translocates to the nucleus and activates transcription."
           - letter: "b"
-            type: "true_false"
             text: "When cells are treated with effector (E) and inhibitor of ubiquitinylation, the transcription factor will be translocated into the nucleus, but there will be no activation of genes regulated by the transcription factor."
-            answer: "false"
+            answer: false
             explanation: "Effector E phosphorylates I and Y. Inhibiting ubiquitinylation prevents degradation of phosphorylated I, so I remains in the cytosol. However, the question states that phosphorylated I is ubiquitinylated and degraded -- if ubiquitinylation is blocked, phosphorylated I persists and could still sequester X-Y. But phosphorylated Y with X should still translocate. The net effect depends on whether phosphorylated I still binds the heterodimer; the official answer indicates this statement is false."
           - letter: "c"
-            type: "true_false"
             text: "When cells are treated with effector (E) and inhibitor of deacetylase, the transcription factor will be translocated into the nucleus and there will be enhanced activation of genes regulated by the transcription factor."
-            answer: "true"
+            answer: true
             explanation: "Effector E activates the pathway normally, and inhibiting deacetylase maintains Y in the acetylated state. Since acetylation of Y augments gene activation, the combination of normal pathway activation plus enhanced acetylation leads to enhanced gene expression."
           - letter: "d"
-            type: "true_false"
             text: "When cells are treated with effector (E) only, the transcription factor will not be translocated into the nucleus and there will be no activation of genes."
-            answer: "false"
+            answer: false
             explanation: "Effector E alone activates the full pathway: it phosphorylates I (leading to ubiquitinylation and degradation) and Y. Phosphorylated Y + X then translocates to the nucleus for gene activation. So effector E alone IS sufficient for nuclear translocation and gene activation."
 
       - id: q25
@@ -498,7 +490,7 @@ rounds:
         link: "/papers/inbo/2026/theory-exam.pdf#page=13"
         subjects:
           - name: "Recombinant DNA & Biotechnology Techniques"
-            link: "/resources/1-cell-molecular/recombinant-dna-biotechnology/"
+            link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
         statements:
           - letter: "Q25"
             type: "numeric"
@@ -530,7 +522,7 @@ rounds:
         link: "/papers/inbo/2026/theory-exam.pdf#page=13"
         subjects:
           - name: "Recombinant DNA & Biotechnology Techniques"
-            link: "/resources/1-cell-molecular/recombinant-dna-biotechnology/"
+            link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
         statements:
           - letter: "Q27"
             type: "free_response"
@@ -627,8 +619,8 @@ rounds:
         name: "Plant Biomolecular Composition Matching"
         link: "/papers/inbo/2026/theory-exam.pdf#page=16"
         subjects:
-          - name: "Plant Cell Structure & Tissues"
-            link: "/resources/5-plant-physiology/plant-cell-structure-tissues/"
+          - name: "Carbohydrate Chemistry & Biology"
+            link: "/resources/1-cell-molecular/carbohydrate-chemistry-biology/"
         statements:
           - letter: "P"
             type: "mcq"
@@ -681,24 +673,20 @@ rounds:
             link: "/resources/5-plant-physiology/water-transport-transpiration/"
         statements:
           - letter: "a"
-            type: "true_false"
             text: "Turgor pressure changes with an initial 5% change in cell volume is comparable with the changes observed in the osmotic potential."
-            answer: "false"
+            answer: false
             explanation: "From the graph, the initial 5% volume change (100% to 95%) shows a steep drop in turgor pressure while osmotic potential changes relatively little. The turgor pressure change is much larger than the osmotic potential change in this range, so they are not comparable."
           - letter: "b"
-            type: "true_false"
             text: "With a fall in cell volume from 90 to 80%, most of the change in water potential is due to a drop in turgor pressure and not as much due to osmotic pressure."
-            answer: "false"
+            answer: false
             explanation: "From the graph, between 90% and 80% relative volume, turgor pressure approaches zero (turgor loss point is near 85-90%). Below the turgor loss point, further decreases in water potential are driven primarily by changes in osmotic potential (which becomes more negative as solutes concentrate), not turgor pressure (which is already at or near zero)."
           - letter: "c"
-            type: "true_false"
             text: "The elastic modulus of the cell is not constant but decreases as the cell loses turgor."
-            answer: "true"
+            answer: true
             explanation: "The elastic modulus (epsilon) relates pressure changes to volume changes. The graph shows that the turgor pressure curve is not linear -- it is steeper at higher volumes and flatter near turgor loss. This non-linear relationship indicates that the elastic modulus decreases as the cell loses turgor, meaning the cell wall becomes less rigid as turgor drops."
           - letter: "d"
-            type: "true_false"
             text: "For leaf mesophyll cells of palm trees having relatively rigid cell walls, the volume change associated with turgor loss will be smaller than cells with extremely elastic walls."
-            answer: "true"
+            answer: true
             explanation: "Cells with rigid (high elastic modulus) walls experience large pressure changes per unit volume change. Therefore, turgor is lost with only a small decrease in volume. In contrast, cells with elastic walls must lose more volume before turgor drops to zero. Rigid-walled cells thus reach the turgor loss point with less volume change."
 
       - id: q32
@@ -707,28 +695,24 @@ rounds:
         name: "Thermal Acclimation and Photosynthesis in Arctic Plants"
         link: "/papers/inbo/2026/theory-exam.pdf#page=17"
         subjects:
-          - name: "Photosynthesis: Light & Dark Reactions"
-            link: "/resources/5-plant-physiology/photosynthesis-light-dark-reactions/"
+          - name: "Calvin Cycle, Photorespiration & C4/CAM Biochemistry"
+            link: "/resources/5-plant-physiology/calvin-cycle-photorespiration-c4-cam/"
         statements:
           - letter: "a"
-            type: "true_false"
             text: "Acclimation to higher temperature resulted in higher rate of net photosynthesis."
-            answer: "false"
+            answer: false
             explanation: "The graph shows that after acclimation to 20 C, the maximum rate of net photosynthesis did not increase -- in fact, it may have decreased or shifted its optimum. Acclimation shifted the temperature response curve but did not necessarily increase the peak rate."
           - letter: "b"
-            type: "true_false"
             text: "There is a linear increase in rate of dark respiration only above 10 C in S. cernua grown at lower temperature."
-            answer: "false"
+            answer: false
             explanation: "Dark respiration typically increases exponentially (not linearly) with temperature due to the Q10 effect. The graph shows a curvilinear rather than linear increase in dark respiration across the temperature range."
           - letter: "c"
-            type: "true_false"
             text: "Optimum temperature of gross photosynthesis increased to 12 C post acclimation."
-            answer: "false"
+            answer: false
             explanation: "The graph data shows that the optimum temperature of gross photosynthesis after acclimation to 20 C shifted to a temperature higher than 12 C, not to 12 C specifically."
           - letter: "d"
-            type: "true_false"
             text: "The difference between temperature optima of net and gross photosynthesis is due to dark respiration."
-            answer: "true"
+            answer: true
             explanation: "Net photosynthesis = Gross photosynthesis - Dark respiration. Since dark respiration increases with temperature, it progressively subtracts more from gross photosynthesis at higher temperatures, shifting the net photosynthesis optimum to a lower temperature than the gross photosynthesis optimum."
 
       - id: q33
@@ -737,8 +721,8 @@ rounds:
         name: "Plant Photosynthetic Temperature Response"
         link: "/papers/inbo/2026/theory-exam.pdf#page=17"
         subjects:
-          - name: "Photosynthesis: Light & Dark Reactions"
-            link: "/resources/5-plant-physiology/photosynthesis-light-dark-reactions/"
+          - name: "Calvin Cycle, Photorespiration & C4/CAM Biochemistry"
+            link: "/resources/5-plant-physiology/calvin-cycle-photorespiration-c4-cam/"
         statements:
           - letter: "P"
             type: "mcq"
@@ -787,8 +771,8 @@ rounds:
         name: "Auxin-Mediated Phototropism Experiments"
         link: "/papers/inbo/2026/theory-exam.pdf#page=18"
         subjects:
-          - name: "Plant Hormones & Growth Regulators"
-            link: "/resources/5-plant-physiology/plant-hormones-growth-regulators/"
+          - name: "Plant Hormones"
+            link: "/resources/5-plant-physiology/plant-hormones/"
         statements:
           - letter: "T1"
             type: "mcq"
@@ -833,8 +817,8 @@ rounds:
         name: "Calvin Cycle Intermediate Stoichiometry"
         link: "/papers/inbo/2026/theory-exam.pdf#page=19"
         subjects:
-          - name: "Photosynthesis: Light & Dark Reactions"
-            link: "/resources/5-plant-physiology/photosynthesis-light-dark-reactions/"
+          - name: "Calvin Cycle, Photorespiration & C4/CAM Biochemistry"
+            link: "/resources/5-plant-physiology/calvin-cycle-photorespiration-c4-cam/"
         statements:
           - letter: "I"
             type: "numeric"
@@ -879,28 +863,24 @@ rounds:
         name: "Mammalian Vision: Skull Morphology and Retinal Composition"
         link: "/papers/inbo/2026/theory-exam.pdf#page=19"
         subjects:
-          - name: "Sensory Physiology"
-            link: "/resources/3-animal-physiology/sensory-physiology/"
+          - name: "Mammalian Comparative Anatomy"
+            link: "/resources/2-animal-anatomy/mammalian-comparative-anatomy/"
         statements:
           - letter: "a"
-            type: "true_false"
             text: "P and R most likely represent a diurnal mammal."
-            answer: "false"
+            answer: false
             explanation: "Based on the skull features (forward-facing eyes in P) and retinal composition (rod-dominant in R), P and R do not represent a diurnal mammal. Diurnal mammals have cone-rich retinas for color vision, not rod-dominant ones."
           - letter: "b"
-            type: "true_false"
             text: "Retina of a mammal with composition as shown in S is less likely to have fovea in the retina."
-            answer: "true"
+            answer: true
             explanation: "The fovea is a cone-rich region responsible for high-acuity vision, found primarily in diurnal species. If S shows a rod-dominant retinal composition (nocturnal adaptation), the animal is less likely to have a well-developed fovea."
           - letter: "c"
-            type: "true_false"
             text: "P and S most likely represent a mammal that is better adapted to nocturnal vision."
-            answer: "true"
+            answer: true
             explanation: "If P shows large eyes relative to skull (nocturnal adaptation) and S shows a rod-dominant retinal composition with high rod-to-cone ratio, this combination indicates a nocturnal mammal with enhanced sensitivity to low light levels."
           - letter: "d"
-            type: "true_false"
             text: "Contrast sensitivity in both mammals is high giving them the ability to perceive finer details of objects."
-            answer: "false"
+            answer: false
             explanation: "Contrast sensitivity and acuity differ between diurnal and nocturnal mammals. Nocturnal mammals sacrifice spatial resolution for light sensitivity (summation of rod signals reduces contrast sensitivity and detail perception), while diurnal mammals with cone-rich foveas have higher contrast sensitivity and finer detail perception."
 
       - id: q37
@@ -909,8 +889,8 @@ rounds:
         name: "Nernst Equation Membrane Potential"
         link: "/papers/inbo/2026/theory-exam.pdf#page=20"
         subjects:
-          - name: "Neurophysiology"
-            link: "/resources/3-animal-physiology/neurophysiology/"
+          - name: "Nervous System Physiology"
+            link: "/resources/3-animal-physiology/nervous-system-physiology/"
         statements:
           - letter: "Q37"
             type: "numeric"
@@ -925,28 +905,24 @@ rounds:
         name: "Corticotropin Releasing Hormone in Pregnancy and Amphibian Development"
         link: "/papers/inbo/2026/theory-exam.pdf#page=20"
         subjects:
-          - name: "Endocrine Physiology"
-            link: "/resources/3-animal-physiology/endocrine-physiology/"
+          - name: "Endocrine System Physiology"
+            link: "/resources/3-animal-physiology/endocrine-system-physiology/"
         statements:
           - letter: "a"
-            type: "true_false"
             text: "In women who deliver prematurely, CRH levels show a steep rise towards the third trimester."
-            answer: "true"
+            answer: true
             explanation: "The graph shows that women who deliver prematurely have an accelerated rise in placental CRH levels, reaching high concentrations earlier than women who deliver at term. The steep rise precedes premature delivery."
           - letter: "b"
-            type: "true_false"
             text: "High concentration of CRH at 30 weeks of pregnancy could indicate the need to induce labour."
-            answer: "false"
+            answer: false
             explanation: "High CRH at 30 weeks suggests the risk of premature delivery, not the need to induce labour. At 30 weeks, the fetus is premature and the clinical goal would be to prevent premature labour (e.g., with tocolytics), not to induce it."
           - letter: "c"
-            type: "true_false"
             text: "CRH concentration of about 20 pmol/dm3 at mid-pregnancy may require provision of special incubator for likely premature birth."
-            answer: "true"
+            answer: true
             explanation: "From the graph, a CRH concentration of about 20 pmol/dm3 at mid-pregnancy corresponds to the trajectory of women who deliver prematurely. This would be a clinical indicator to prepare for premature birth, including having incubator facilities ready."
           - letter: "d"
-            type: "true_false"
             text: "Condition II most likely represents the physiology of tadpoles in a pond that is shrinking due to lack of rain."
-            answer: "true"
+            answer: true
             explanation: "In a shrinking pond, environmental stress triggers increased CRH production, which elevates thyroxine levels and accelerates metamorphosis. This allows tadpoles to complete metamorphosis faster and escape the drying pond. Condition II (high CRH, accelerated development) matches this ecological scenario."
 
       - id: q39
@@ -955,28 +931,24 @@ rounds:
         name: "Enterocyte Ion Transport and Oral Rehydration"
         link: "/papers/inbo/2026/theory-exam.pdf#page=21"
         subjects:
-          - name: "Digestive Physiology"
-            link: "/resources/3-animal-physiology/digestive-physiology/"
+          - name: "Digestive & Metabolic Physiology"
+            link: "/resources/3-animal-physiology/digestive-metabolic-physiology/"
         statements:
           - letter: "a"
-            type: "true_false"
             text: "The region marked as P represents interstitial fluid."
-            answer: "true"
+            answer: true
             explanation: "In enterocyte diagrams, one side faces the intestinal lumen (apical/brush border) and the other faces the interstitial fluid/blood side (basolateral). The region P is on the basolateral side, representing interstitial fluid."
           - letter: "b"
-            type: "true_false"
             text: "In case of severe diarrhoea, drinking solution containing Na+, K+ and HCO3- ions will help restore cellular functions."
-            answer: "false"
+            answer: false
             explanation: "While electrolyte replacement is important, the key to oral rehydration is the co-transport of glucose with sodium (SGLT1 transporter). A solution without glucose will not effectively drive sodium and water absorption across the enterocyte. Standard ORS contains glucose specifically to exploit this co-transport mechanism."
           - letter: "c"
-            type: "true_false"
             text: "In case of severe dehydration, drinking saline glucose solution will restore cellular osmolarity."
-            answer: "true"
+            answer: true
             explanation: "Saline glucose solution (oral rehydration solution) exploits the SGLT1 Na+/glucose co-transporter on the apical membrane of enterocytes. The coupled transport of glucose and sodium draws water osmotically, restoring hydration and helping normalize cellular osmolarity."
           - letter: "d"
-            type: "true_false"
             text: "In case of severe diarrhoea and vomiting, drinking hypertonic glucose solution will help restore cellular osmolarity."
-            answer: "false"
+            answer: false
             explanation: "Hypertonic solutions would initially draw water OUT of cells by osmosis, worsening dehydration. Effective oral rehydration requires a hypotonic or isotonic solution. Additionally, with active vomiting, oral intake may not be retained, and intravenous fluids may be needed."
 
       - id: q40
@@ -989,24 +961,20 @@ rounds:
             link: "/resources/3-animal-physiology/comparative-thermoregulation/"
         statements:
           - letter: "a"
-            type: "true_false"
             text: "Weight-specific BMR is highest in Q and is likely to represent heart."
-            answer: "true"
+            answer: true
             explanation: "Q: weight = 0.37 kg, absolute BMR = 163. Weight-specific BMR = 163/0.37 = 440.5 (highest). The heart has a very high metabolic rate per unit mass due to continuous contractile activity. At ~0.37 kg, this matches human heart weight."
           - letter: "b"
-            type: "true_false"
             text: "R likely represents skeletal muscles as its contribution to total BMR is much higher than its contribution to total body mass."
-            answer: "false"
+            answer: false
             explanation: "R: weight = 1.5 kg, 17% of total BMR. At 1.5 kg, this is too light for skeletal muscle (which is ~32 kg in an 80 kg person). R more likely represents the liver, which weighs about 1.5 kg and contributes approximately 17% of total BMR due to its high metabolic activity."
           - letter: "c"
-            type: "true_false"
             text: "Weight-specific BMR is least in P and it likely represents adipose tissues."
-            answer: "true"
+            answer: true
             explanation: "P: weight = 12 kg, absolute BMR = 54. Weight-specific BMR = 54/12 = 4.5 (lowest). Adipose tissue has very low metabolic activity per unit mass (mostly triglyceride storage with few mitochondria). At 12 kg, this is a reasonable estimate for body fat in an 80 kg adult."
           - letter: "d"
-            type: "true_false"
             text: "Since both absolute BMR and % of total BMR are largest in S, it is likely to represent brain."
-            answer: "false"
+            answer: false
             explanation: "S: weight = 32 kg, absolute BMR = 416, 23% of total BMR. At 32 kg, this is far too heavy for the brain (which is ~1.4 kg). S represents skeletal muscle, which constitutes about 40% of body mass (32 kg in 80 kg person) and has a large absolute BMR due to its sheer mass despite relatively low weight-specific metabolic rate."
 
       - id: q41
@@ -1019,24 +987,20 @@ rounds:
             link: "/resources/3-animal-physiology/respiratory-physiology/"
         statements:
           - letter: "a"
-            type: "true_false"
             text: "As blood of fetal and maternal circulation juxtapose in placenta, curve R shifts to S and is called Bohr effect."
-            answer: "true"
+            answer: true
             explanation: "When maternal blood encounters the placenta, CO2 from fetal blood increases the acidity of maternal blood, shifting the maternal hemoglobin O2 dissociation curve to the right (R to S). This rightward shift due to increased CO2/decreased pH is the Bohr effect, facilitating oxygen release from maternal hemoglobin to the fetus."
           - letter: "b"
-            type: "true_false"
             text: "As blood of fetal circulation comes in close vicinity of maternal blood, curve P shifts to Q and it is Haldane effect."
-            answer: "false"
+            answer: false
             explanation: "As fetal blood picks up O2 from maternal blood in the placenta, the increased O2 concentration reduces fetal hemoglobin affinity for CO2 (Haldane effect), facilitating CO2 release to maternal blood. However, curve P shifting to Q represents a leftward shift of the fetal O2 dissociation curve, which would be the reverse of what happens. The Haldane effect relates to CO2 binding, not the O2 dissociation curve shift described."
           - letter: "c"
-            type: "true_false"
             text: "Curve P represents umbilical vein and Q represents umbilical artery."
-            answer: "true"
+            answer: true
             explanation: "The umbilical vein carries oxygenated blood from the placenta to the fetus (higher O2 saturation), while the umbilical artery carries deoxygenated blood from fetus to placenta (lower O2 saturation, higher CO2). Curve P (higher O2 affinity, left-shifted) represents the umbilical vein blood, and Q represents the umbilical artery blood."
           - letter: "d"
-            type: "true_false"
             text: "Curve R represents maternal arterial blood and S represents maternal venous blood."
-            answer: "true"
+            answer: true
             explanation: "Maternal arterial blood (curve R) arrives at the placenta with high O2 and a left-shifted curve. After gas exchange, the blood has lost O2 and gained CO2, shifting the curve rightward (S), which represents the maternal venous blood leaving the placenta."
 
       - id: q42
@@ -1049,24 +1013,20 @@ rounds:
             link: "/resources/3-animal-physiology/reproductive-physiology/"
         statements:
           - letter: "a"
-            type: "true_false"
             text: "Ovulation is most likely to occur in mid A-B period of the ovarian cycle."
-            answer: "false"
+            answer: false
             explanation: "Based on the hormone profiles showing estrogen and progesterone changes, ovulation typically occurs at the transition between high estrogen and rising progesterone, not in the middle of the A-B period. The timing depends on the LH surge equivalent triggered by peak estrogen levels."
           - letter: "b"
-            type: "true_false"
             text: "A given individual behaves as a male during D-E and as a female during A-B period in the cycle."
-            answer: "true"
+            answer: true
             explanation: "In parthenogenetic whiptail lizards, females alternate between male-like and female-like behavior based on their hormonal state. During the post-ovulatory phase (progesterone-dominant, D-E period), individuals exhibit male-like mounting behavior. During the pre-ovulatory phase (estrogen-dominant, A-B period), they exhibit female-like receptive behavior."
           - letter: "c"
-            type: "true_false"
             text: "The act of copulation will trigger the release of eggs from the ovaries of the lizards."
-            answer: "true"
+            answer: true
             explanation: "In these parthenogenetic lizards, pseudocopulation (mating behavior between females) stimulates ovulation. The mounting behavior from the \"male-acting\" partner triggers hormonal responses that promote egg release, even though no actual fertilization occurs."
           - letter: "d"
-            type: "true_false"
             text: "Compared to sexually reproducing species, this mode of reproduction is favoured when availability of resources is not a constraint."
-            answer: "true"
+            answer: true
             explanation: "Asexual reproduction (parthenogenesis) is advantageous when resources are abundant because every individual can produce offspring (no cost of males), leading to rapid population growth. However, it lacks genetic recombination, making it disadvantageous when environmental challenges require adaptive genetic diversity."
 
       - id: q43
@@ -1075,8 +1035,8 @@ rounds:
         name: "Polygenic Inheritance of Plant Height"
         link: "/papers/inbo/2026/theory-exam.pdf#page=23"
         subjects:
-          - name: "Quantitative & Population Genetics"
-            link: "/resources/6-genetics/quantitative-population-genetics/"
+          - name: "Quantitative Genetics, Heritability & Inbreeding"
+            link: "/resources/7-genetics/quantitative-genetics-heritability-inbreeding/"
         statements:
           - letter: "Q43"
             type: "free_response"
@@ -1091,7 +1051,7 @@ rounds:
         link: "/papers/inbo/2026/theory-exam.pdf#page=23"
         subjects:
           - name: "Recombinant DNA & Biotechnology Techniques"
-            link: "/resources/1-cell-molecular/recombinant-dna-biotechnology/"
+            link: "/resources/1-cell-molecular/recombinant-dna-biotechnology-techniques/"
         statements:
           - letter: "A"
             type: "free_response"
@@ -1110,8 +1070,8 @@ rounds:
         name: "Multiple Alleles in Mallard Duck Plumage"
         link: "/papers/inbo/2026/theory-exam.pdf#page=24"
         subjects:
-          - name: "Mendelian Genetics & Extensions"
-            link: "/resources/6-genetics/mendelian-genetics-extensions/"
+          - name: "Extensions of Mendelian Inheritance"
+            link: "/resources/7-genetics/extensions-of-mendelian-inheritance/"
         statements:
           - letter: "Q45"
             type: "free_response"
@@ -1125,8 +1085,8 @@ rounds:
         name: "Epistatic Coat Color in Rodents"
         link: "/papers/inbo/2026/theory-exam.pdf#page=24"
         subjects:
-          - name: "Mendelian Genetics & Extensions"
-            link: "/resources/6-genetics/mendelian-genetics-extensions/"
+          - name: "Gene Interactions: Epistasis & Complementation Analysis"
+            link: "/resources/7-genetics/epistasis-gene-interactions-complementation/"
         statements:
           - letter: "A"
             type: "free_response"
@@ -1155,8 +1115,8 @@ rounds:
         name: "X-linked Lesch-Nyhan Syndrome Probability"
         link: "/papers/inbo/2026/theory-exam.pdf#page=25"
         subjects:
-          - name: "Mendelian Genetics & Extensions"
-            link: "/resources/6-genetics/mendelian-genetics-extensions/"
+          - name: "Sex Determination & Sex-Linked Inheritance"
+            link: "/resources/7-genetics/sex-determination-sex-linked-inheritance/"
         statements:
           - letter: "A"
             type: "free_response"
@@ -1175,28 +1135,24 @@ rounds:
         name: "Genetic Drift Simulation in Small Populations"
         link: "/papers/inbo/2026/theory-exam.pdf#page=25"
         subjects:
-          - name: "Quantitative & Population Genetics"
-            link: "/resources/6-genetics/quantitative-population-genetics/"
+          - name: "Genetic Drift, Gene Flow & Mutation"
+            link: "/resources/15-evolution/genetic-drift-gene-flow-and-mutation/"
         statements:
           - letter: "a"
-            type: "true_false"
             text: "Population 1 has the largest number of individuals."
-            answer: "false"
+            answer: false
             explanation: "The simulation graphs show that population 1 has the most extreme fluctuations in allele frequency, with rapid fixation or loss of alleles. This pattern is characteristic of the smallest population, not the largest. Genetic drift is strongest in small populations."
           - letter: "b"
-            type: "true_false"
             text: "The effect of drift is seen only in population 1 and 2, but not in population 3."
-            answer: "false"
+            answer: false
             explanation: "Genetic drift affects all finite populations, regardless of size. Population 3 shows smaller fluctuations but drift is still present -- allele frequencies still change randomly over generations. Drift is less pronounced but not absent in large populations."
           - letter: "c"
-            type: "true_false"
             text: "Data from population 1 show that genetic drift does not distinguish between a recessive allele and a dominant allele."
-            answer: "true"
+            answer: true
             explanation: "Genetic drift is a random sampling process that operates on allele frequencies independently of dominance relationships. The assumption states no selection is acting, so whether an allele is dominant or recessive does not affect its probability of fixation or loss by drift. Both alleles drift equally."
           - letter: "d"
-            type: "true_false"
             text: "The effect of random fluctuations in allele frequency tends to cancel each other in large population sizes."
-            answer: "true"
+            answer: true
             explanation: "In large populations, random fluctuations in allele frequency across generations are smaller in magnitude and tend to average out, keeping allele frequencies closer to their initial values. This is because larger sample sizes reduce sampling error (the basis of genetic drift)."
 
       - id: q49
@@ -1205,8 +1161,8 @@ rounds:
         name: "Types of Natural Selection on Allele Frequency"
         link: "/papers/inbo/2026/theory-exam.pdf#page=26"
         subjects:
-          - name: "Natural Selection & Adaptation"
-            link: "/resources/15-evolution/natural-selection-adaptation/"
+          - name: "Natural Selection: Modes & Fitness"
+            link: "/resources/15-evolution/natural-selection-modes-and-fitness/"
         statements:
           - letter: "a"
             type: "mcq"
@@ -1242,28 +1198,24 @@ rounds:
         name: "Tropical Seedling Shade Tolerance"
         link: "/papers/inbo/2026/theory-exam.pdf#page=27"
         subjects:
-          - name: "Community Ecology & Species Interactions"
-            link: "/resources/8-ecology/community-ecology-species-interactions/"
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
         statements:
           - letter: "a"
-            type: "true_false"
             text: "Shaded condition drastically reduces the M. balsamum growth."
-            answer: "false"
+            answer: false
             explanation: "From the experimental data, M. balsamum shows reasonable growth under shaded conditions (under continuous canopy). This species is shade-tolerant and can maintain growth even with limited light, unlike shade-intolerant species."
           - letter: "b"
-            type: "true_false"
             text: "Seedlings of M. balsamum are tolerant to high sunlight."
-            answer: "true"
+            answer: true
             explanation: "The data shows that M. balsamum grows well under both shaded and high sunlight conditions (gap openings). This indicates it is a generalist species tolerant of a range of light conditions, including high sunlight."
           - letter: "c"
-            type: "true_false"
             text: "M. balsamum and C. pentandra are both shade intolerant species."
-            answer: "false"
+            answer: false
             explanation: "M. balsamum shows good growth under shade, indicating shade tolerance. While C. pentandra may be shade intolerant (performing better in gaps), M. balsamum is clearly shade tolerant. They do not share the same shade response."
           - letter: "d"
-            type: "true_false"
             text: "M. balsamum is shade tolerant while C. pentandra is better suited for higher sunlight."
-            answer: "true"
+            answer: true
             explanation: "The data shows M. balsamum grows well in shade (shade tolerant) while C. pentandra shows better growth and survival in high sunlight conditions (gap openings). This represents the classic shade-tolerant vs. light-demanding species dichotomy in tropical forest ecology."
 
       - id: q51
@@ -1272,8 +1224,8 @@ rounds:
         name: "Risk-Sensitive Foraging Under Energy Stress"
         link: "/papers/inbo/2026/theory-exam.pdf#page=27"
         subjects:
-          - name: "Foraging Behavior & Optimal Strategies"
-            link: "/resources/9-ethology/foraging-behavior-optimal-strategies/"
+          - name: "Foraging & Anti-Predator Behavior"
+            link: "/resources/9-ethology/foraging-anti-predator-behavior/"
         statements:
           - letter: "Q51"
             type: "mcq"
@@ -1292,8 +1244,8 @@ rounds:
         name: "Leaf Solar Tracking and Radiation"
         link: "/papers/inbo/2026/theory-exam.pdf#page=28"
         subjects:
-          - name: "Community Ecology & Species Interactions"
-            link: "/resources/8-ecology/community-ecology-species-interactions/"
+          - name: "Tropisms & Nastic Movements"
+            link: "/resources/5-plant-physiology/tropisms-nastic-movements/"
         statements:
           - letter: "Q52"
             type: "mcq"
@@ -1312,28 +1264,24 @@ rounds:
         name: "American Redstart Song Modes and Pairing"
         link: "/papers/inbo/2026/theory-exam.pdf#page=28"
         subjects:
-          - name: "Communication & Signal Design"
-            link: "/resources/9-ethology/communication-signal-design/"
+          - name: "Animal Communication"
+            link: "/resources/9-ethology/animal-communication/"
         statements:
           - letter: "a"
-            type: "true_false"
             text: "Unpaired males sang in repeat mode at significantly higher and less variable rates than did paired males."
-            answer: "true"
+            answer: true
             explanation: "The data shows that unpaired males consistently have higher repeat-song rates with less variance than paired males. Unpaired males use repetitive singing as a mate-attraction strategy, maintaining high consistent rates to maximize detectability."
           - letter: "b"
-            type: "true_false"
             text: "The amount of overlap between the two samples of male birds decreased as the song duration decreased."
-            answer: "false"
+            answer: false
             explanation: "The graphs show that with longer recording durations (I < II < III), the overlap between paired and unpaired male distributions actually decreases (becomes more distinct). Shorter recordings show MORE overlap due to higher sampling variability, not less."
           - letter: "c"
-            type: "true_false"
             text: "Unpaired males prefer to sing more types of songs than paired males."
-            answer: "false"
+            answer: false
             explanation: "The question describes repeat mode (one song type repeated) vs serial mode (alternating among multiple types). Unpaired males sing in REPEAT mode at higher rates, meaning they use FEWER song types more repetitively, not more types. Serial mode (more types) is used in different social contexts."
           - letter: "d"
-            type: "true_false"
             text: "Repeat songs are more useful in attracting females while serial songs are more useful in pair-bonding behaviours."
-            answer: "true"
+            answer: true
             explanation: "Since unpaired males preferentially use repeat mode (to attract distant females) while paired males reduce repeat singing, repeat songs serve primarily for mate attraction. Serial songs, used in other social contexts, are more associated with territorial defense and maintaining pair bonds."
 
       - id: q54
@@ -1342,8 +1290,8 @@ rounds:
         name: "Island vs Mainland Hare Population Dynamics"
         link: "/papers/inbo/2026/theory-exam.pdf#page=29"
         subjects:
-          - name: "Population Ecology & Dynamics"
-            link: "/resources/8-ecology/population-ecology-dynamics/"
+          - name: "Ecology"
+            link: "/resources/8-ecology/"
         statements:
           - letter: "Q54"
             type: "mcq"
@@ -1366,24 +1314,20 @@ rounds:
             link: "/resources/9-ethology/mating-systems-sexual-selection/"
         statements:
           - letter: "a"
-            type: "true_false"
             text: "Mate-location behavior exhibited by the bees can be predicted across the head widths studied."
-            answer: "false"
+            answer: false
             explanation: "The distribution graphs show overlap in head widths between hovering and patrolling males. While there is a general trend (larger males patrol, smaller males hover), there is no strict threshold that perfectly predicts behavior from head width alone."
           - letter: "b"
-            type: "true_false"
             text: "Hovering males are unsuccessful in attaining mating success."
-            answer: "false"
+            answer: false
             explanation: "The copulating males distribution overlaps with both hovering and patrolling male distributions. While patrolling males may have higher mating success on average, hovering males do achieve some matings, particularly when they intercept emerging or foraging females."
           - letter: "c"
-            type: "true_false"
             text: "Male bees with smaller head width generally hover rather than patrol, even though large males do most of the mating."
-            answer: "true"
+            answer: true
             explanation: "The data shows that the hovering male distribution is shifted toward smaller head widths, while the patrolling male distribution is shifted toward larger sizes. The copulating male distribution more closely matches the patrolling males, indicating that larger patrolling males achieve most matings. Smaller males make the best of their situation by adopting the hovering strategy."
           - letter: "d"
-            type: "true_false"
             text: "Females who emerge when hovering males are fighting escape and fly off to flowering trees where they become potential mates for patrolling males."
-            answer: "false"
+            answer: false
             explanation: "The description states that PATROLLING males excavate emerging females and mate with them, while HOVERING males hover near emergence areas or flowering trees. The statement reverses the roles: it is patrolling males who find emerging females, not hovering males. And hovering males are the ones at flowering trees, not patrolling males."
 
       - id: q56
@@ -1392,28 +1336,24 @@ rounds:
         name: "Cichlid Fish Agonistic Behavior and Weight Asymmetry"
         link: "/papers/inbo/2026/theory-exam.pdf#page=30"
         subjects:
-          - name: "Aggression & Social Structure"
-            link: "/resources/9-ethology/aggression-social-structure/"
+          - name: "Aggression, Territoriality & Social Structure"
+            link: "/resources/9-ethology/aggression-territoriality-social-structure/"
         statements:
           - letter: "a"
-            type: "true_false"
             text: "Two fish of similar weight do not expend energy in the act of circling."
-            answer: "false"
+            answer: false
             explanation: "The graph shows that circling frequency is actually highest when weight asymmetry is low (similar-sized fish). Circling is an assessment behavior used when neither opponent can quickly determine the other is larger, so similar-sized fish engage in more circling, not less."
           - letter: "b"
-            type: "true_false"
             text: "Fish of similar size are likely to show tail beating as the preferred behaviour."
-            answer: "false"
+            answer: false
             explanation: "From the graph, at low weight asymmetry, multiple behaviors (circling, mouth wrestling) are more prominent. Tail beating is a display behavior whose frequency pattern from the graph does not indicate it as the preferred behavior at similar sizes."
           - letter: "c"
-            type: "true_false"
             text: "The relative occurrence of biting is higher than mouth wrestling when the fish are of almost comparable weights."
-            answer: "false"
+            answer: false
             explanation: "When fish are of similar size, mouth wrestling (a prolonged grappling contest) is more common than biting. Mouth wrestling allows mutual assessment of strength when size cues are not decisive. Biting (a more aggressive, one-sided behavior) increases with greater weight asymmetry as the larger fish escalates."
           - letter: "d"
-            type: "true_false"
             text: "One of the fish adopts the Dove strategy and retreats when the weights are almost similar, leading to reduced aggression."
-            answer: "false"
+            answer: false
             explanation: "When fish are of similar weight, neither can easily assess itself as the likely loser, so both are more likely to escalate (Hawk-Hawk) rather than one retreating (Dove). The graph shows high frequencies of assessment and fighting behaviors at low weight asymmetry. Dove strategy adoption (retreat by the smaller fish) is more common at HIGH weight asymmetry, where the size difference makes the outcome predictable."
 
       - id: q57
@@ -1422,8 +1362,8 @@ rounds:
         name: "Adaptive Significance of Bird Behavioral Traits"
         link: "/papers/inbo/2026/theory-exam.pdf#page=31"
         subjects:
-          - name: "Communication & Signal Design"
-            link: "/resources/9-ethology/communication-signal-design/"
+          - name: "Animal Communication"
+            link: "/resources/9-ethology/animal-communication/"
         statements:
           - letter: "i"
             type: "mcq"
@@ -1472,28 +1412,24 @@ rounds:
         name: "Mollusc Clade Feature Identification"
         link: "/papers/inbo/2026/theory-exam.pdf#page=32"
         subjects:
-          - name: "Animal Diversity & Body Plans"
-            link: "/resources/4-biosystematics/animal-diversity-body-plans/"
+          - name: "Invertebrate Body Plans II"
+            link: "/resources/2-animal-anatomy/invertebrate-body-plans-2/"
         statements:
           - letter: "a"
-            type: "true_false"
             text: "Q could be gills."
-            answer: "true"
+            answer: true
             explanation: "Feature Q is present in all four clades (Chitons, Bivalves, Gastropods, Cephalopods). Gills (ctenidia) are present in all major mollusc clades in some form, making Q consistent with gills. All molluscs have evolved respiratory structures derived from ancestral ctenidia."
           - letter: "b"
-            type: "true_false"
             text: "4 represents a gastropod."
-            answer: "false"
+            answer: false
             explanation: "Based on the feature table, Clade 4 has P modified into arms and tentacles, which is characteristic of Cephalopods (octopus, squid), not Gastropods. Gastropods typically retain the foot for locomotion without modification into arms."
           - letter: "c"
-            type: "true_false"
             text: "R could be mantle."
-            answer: "false"
+            answer: false
             explanation: "Feature R is described as \"Feeding structure modified for scraping\" in Clade 1, but present without modification (+) in Clades 2-4. The mantle is not a feeding structure -- it is the tissue that secretes the shell and forms the mantle cavity. R is more consistent with the radula, which is a feeding structure modified for scraping in Chitons."
           - letter: "d"
-            type: "true_false"
             text: "2 is a bivalve."
-            answer: "true"
+            answer: true
             explanation: "Clade 2 has P (foot) modified for burrowing, which is characteristic of Bivalves. Bivalves have a muscular foot adapted for burrowing into sediment. They also have gills (Q) modified for filter feeding, and the radula (R) is present (though reduced or absent in some species)."
 
       - id: q59
@@ -1502,8 +1438,8 @@ rounds:
         name: "Animal Phylogeny Evolutionary Traits"
         link: "/papers/inbo/2026/theory-exam.pdf#page=32"
         subjects:
-          - name: "Animal Diversity & Body Plans"
-            link: "/resources/4-biosystematics/animal-diversity-body-plans/"
+          - name: "Phylogenetic Trees & Cladistics"
+            link: "/resources/4-biosystematics/phylogenetic-trees-cladistics/"
         statements:
           - letter: "M"
             type: "mcq"

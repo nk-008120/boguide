@@ -1,0 +1,20 @@
+Q.34
+Mr. Long analyzed DNA samples from three families using six loci of short tandem
+repeat (STR) on six different autosomal chromosomes. Each STR locus usually has
+many different alleles that are labeled by numbers, e.g. 3 and 5 for locus 1 of Huong
+sample, in the table. In the first family, the father is Hung, the mother is Huong and
+their son is Dung. In the second family, the father is Nhan and his two sons are Tin
+and Nghia. In the third family the father is Phu, and his son is Quy. Mr. Long also
+included a DNA sample from Dat who is unrelated to any of the three families.
+Samples were randomly encoded with numbers but the key was lost except for
+Huong’s sample.
+STR loci
+Locus 1 Locus 2 Locus 3 Locus 4 Locus 5 Locus 6
+DNA samples
+Huong
+Indicate in the answer sheet if each of the following statements is true or false.
+A. Sample 735 is Dat’s DNA.
+B. Sample 669 is Nhan’s DNA.
+C. Sample 938 is Hung’s DNA.
+D. Sample 297 can be Phu’s DNA.
+39/56

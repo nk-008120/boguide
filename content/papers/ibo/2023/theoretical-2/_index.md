@@ -1,5 +1,6 @@
 ---
 title: "Theoretical 2"
+description: "IBO 2023 Theoretical Paper 2: timed practice with per-question solutions and scoring on BiOrchive."
 ---
 
 {{< biorchive-bg >}}

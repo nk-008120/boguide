@@ -64,7 +64,7 @@
   </div>
   <label id="sliderLabel" for="stimSlider">Belly redness intensity (% of natural maximum)</label>
   <input type="range" id="stimSlider" min="0" max="180" value="50">
-  <div class="readout">Stimulus intensity: <b id="stimVal">50%</b> — Attack/incubation response strength: <b id="respVal">0%</b></div>
+  <div class="readout">Stimulus intensity: <b id="stimVal">50%</b> - Attack/incubation response strength: <b id="respVal">0%</b></div>
   <svg id="curveSvg" viewBox="0 0 560 220" width="100%" height="220">
     <line x1="40" y1="180" x2="540" y2="180" stroke="#94a3b8" stroke-width="1.5"/>
     <line x1="40" y1="20" x2="40" y2="180" stroke="#94a3b8" stroke-width="1.5"/>
@@ -75,7 +75,7 @@
     <path id="curvePath" d="" fill="none" stroke="#1d70a2" stroke-width="2.5"/>
     <circle id="marker" cx="40" cy="180" r="6" fill="#2d6a4f"/>
   </svg>
-  <div class="note" id="note">Natural belly redness is at 100% — try pushing past it.</div>
+  <div class="note" id="note">Natural belly redness is at 100% - try pushing past it.</div>
 </div>
 <script>
 (function(){
@@ -130,8 +130,8 @@
 
     if (s <= 100){
       note.textContent = mode === 'belly'
-        ? 'Within the natural range — response scales with redness, as Tinbergen found in stickleback attack trials.'
-        : 'Within the natural range — larger eggs get a stronger incubation response, up to the size real oystercatcher eggs reach.';
+        ? 'Within the natural range - response scales with redness, as Tinbergen found in stickleback attack trials.'
+        : 'Within the natural range - larger eggs get a stronger incubation response, up to the size real oystercatcher eggs reach.';
     } else {
       note.innerHTML = '<span class="super">Supernormal stimulus:</span> ' + (mode === 'belly'
         ? 'no natural stickleback is this red, but if it existed, the model predicts an even stronger attack response.'

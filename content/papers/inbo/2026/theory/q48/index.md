@@ -5,7 +5,7 @@ title: "Q48 - Genetic Drift Simulation in Small Populations"
 {{< problem-meta category="Theory" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
-  <a class="papers-subject-tag" href="/resources/6-genetics/quantitative-population-genetics/">Quantitative & Population Genetics</a>
+  <a class="papers-subject-tag" href="/resources/15-evolution/genetic-drift-gene-flow-and-mutation/">Genetic Drift, Gene Flow & Mutation</a>
 </div>
 
 Refer to the [question paper](/papers/inbo/2026/theory-exam.pdf#page=25) for figures and tables.

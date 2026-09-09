@@ -69,12 +69,12 @@
 <script>
 (function(){
   var facts = {
-    bark: '<b>Bark</b> (functional term, not one tissue): everything external to the vascular cambium — periderm, plus any cortex remnants and the secondary phloem beneath it.',
-    phloem: '<b>Secondary phloem</b> — living transport tissue, produced outward by the vascular cambium. Stays thin because it is progressively crushed and sloughed off as the trunk thickens.',
-    cambium: '<b>Vascular cambium</b> — the lateral meristem responsible for all secondary growth, producing secondary xylem inward and secondary phloem outward every growing season.',
-    sapwood: '<b>Sapwood</b> — the outermost, most recently produced xylem layers, still functional in water transport.',
-    heartwood: '<b>Heartwood</b> — older, inner xylem, no longer functional in transport (often blocked by tyloses), impregnated with resins/tannins/gums (hence the darker color), providing purely structural support.',
-    pith: '<b>Pith</b> — central parenchyma tissue, a remnant of the stem\'s original primary growth, now surrounded by many years of accumulated secondary xylem.'
+    bark: '<b>Bark</b> (functional term, not one tissue): everything external to the vascular cambium - periderm, plus any cortex remnants and the secondary phloem beneath it.',
+    phloem: '<b>Secondary phloem</b> - living transport tissue, produced outward by the vascular cambium. Stays thin because it is progressively crushed and sloughed off as the trunk thickens.',
+    cambium: '<b>Vascular cambium</b> - the lateral meristem responsible for all secondary growth, producing secondary xylem inward and secondary phloem outward every growing season.',
+    sapwood: '<b>Sapwood</b> - the outermost, most recently produced xylem layers, still functional in water transport.',
+    heartwood: '<b>Heartwood</b> - older, inner xylem, no longer functional in transport (often blocked by tyloses), impregnated with resins/tannins/gums (hence the darker color), providing purely structural support.',
+    pith: '<b>Pith</b> - central parenchyma tissue, a remnant of the stem\'s original primary growth, now surrounded by many years of accumulated secondary xylem.'
   };
   var note = document.getElementById('note');
   var regions = document.querySelectorAll('.region');
@@ -107,7 +107,7 @@
       r.addEventListener('click', function(){
         document.querySelectorAll('.region').forEach(function(o){ o.classList.remove('active'); });
         r.classList.add('active');
-        note.innerHTML = facts.sapwood + ' <br><br>Each light/dark pair here is one <b>annual growth ring</b>: wide, thin-walled <b>earlywood</b> next to narrow, thick-walled <b>latewood</b> — count the pairs to count years of growth.';
+        note.innerHTML = facts.sapwood + ' <br><br>Each light/dark pair here is one <b>annual growth ring</b>: wide, thin-walled <b>earlywood</b> next to narrow, thick-walled <b>latewood</b> - count the pairs to count years of growth.';
       });
     });
     ringCount.textContent = 'Growth rings shown: ' + Math.floor(bandRadii.length/2) + ' complete earlywood/latewood pairs (illustrative, not to scale).';

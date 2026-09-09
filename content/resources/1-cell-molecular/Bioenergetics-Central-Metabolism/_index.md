@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "USABO", "biochemistry"]
 ---
 
 {{< topic-meta >}}
+{{< challenge-cta >}}
 {{< mathjax >}}
 
 ## Overview
@@ -87,6 +88,8 @@ NADH and FADH₂ feed electrons in at different points of the chain (FADH₂ ent
 **Static**
 
 *(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
+
+{{< practice-challenge >}}
 
 ## Practice Problems
 

@@ -140,11 +140,11 @@
   }
 
   var notes = {
-    CRF: 'Every response reinforced — fast initial learning, but the fastest extinction once reinforcement stops.',
-    FR: 'Reinforced after a fixed number of responses — produces a "post-reinforcement pause" then a rapid burst, giving the stair-step pattern.',
-    VR: 'Reinforced after an unpredictable number of responses — the highest, steadiest response rate, and the most resistant to extinction (the slot-machine effect).',
-    FI: 'Reinforced for the first response after a fixed time — produces a "scalloped" pattern: slow right after reinforcement, speeding up as the end of the interval approaches.',
-    VI: 'Reinforced for the first response after an unpredictable time — a slower but very steady response rate.'
+    CRF: 'Every response reinforced - fast initial learning, but the fastest extinction once reinforcement stops.',
+    FR: 'Reinforced after a fixed number of responses - produces a "post-reinforcement pause" then a rapid burst, giving the stair-step pattern.',
+    VR: 'Reinforced after an unpredictable number of responses - the highest, steadiest response rate, and the most resistant to extinction (the slot-machine effect).',
+    FI: 'Reinforced for the first response after a fixed time - produces a "scalloped" pattern: slow right after reinforcement, speeding up as the end of the interval approaches.',
+    VI: 'Reinforced for the first response after an unpredictable time - a slower but very steady response rate.'
   };
 
   function render(){
@@ -165,7 +165,7 @@
       }] : [],
       font: { family: 'Inter, system-ui, sans-serif', size: 11 }
     }, { displayModeBar: false, responsive: true });
-    note.textContent = notes[current] + (extinctionOn ? ' Dotted line marks when reinforcement stopped — watch how quickly the curve flattens after it.' : '');
+    note.textContent = notes[current] + (extinctionOn ? ' Dotted line marks when reinforcement stopped - watch how quickly the curve flattens after it.' : '');
   }
 
   render();

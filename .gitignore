@@ -9,3 +9,5 @@ umami/
 # Anchored to repo root (leading slash) -- an unanchored "resources/" would
 # also match content/resources/, the site's largest content section.
 /resources/
+.claude/
+bioguide_question_bank/

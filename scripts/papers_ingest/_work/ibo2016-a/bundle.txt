@@ -1,0 +1,1892 @@
+You are helping populate a Biology Olympiad practice-question archive. For each
+question below, the CORRECT ANSWER for each statement is already given — your
+job is only to explain WHY each statement is true or false, in 2-4 sentences,
+grounded in the question's own text/figures. Do not re-derive or second-guess
+the given answer; if your own reasoning seems to conflict with it, still
+explain using the given answer and add one sentence noting the tension.
+
+Use the exact statement text given -- never rephrase the statement itself.
+Never copy sentences verbatim from any "community solutions" material you might
+also have -- write explanations in your own words.
+Pick exactly one or two subject tags per question from the MASTER SUBJECT LIST
+below -- do not invent new ones or guess a link that isn't listed.
+If a question's figure matters to a statement's truth, describe what the figure
+shows in your explanation, but reference it only as [FIGURE-N] (N = 1, 2, ...)
+-- do not invent a filename.
+
+=== OUTPUT FORMAT (follow exactly, one block per question) ===
+For each question, output a YAML block in this exact shape:
+
+- id: qN
+  number: "QXX"
+  name: "Short Descriptive Title Matching the Question's Real Topic"
+  stem: |
+    <the question's own descriptive prose only -- the setup/scenario/figure
+    caption text, reproduced verbatim from the source, with the "Question N"
+    header line removed and the lettered A/B/C/D statement lines removed.
+    This is mechanical trimming, not rewriting -- don't paraphrase it.>
+  subjects:
+    - name: "Exact Resource Page Title From The Master List"
+  statements:
+    - letter: "A"
+      text: "<exact statement text from the question>"
+      answer: true/false   # as given below, do not change
+      explanation: "<your 2-4 sentence explanation>"
+    - letter: "B"
+      ...
+
+=== MASTER SUBJECT LIST (pick only from these; "name" must match exactly) ===
+
+1-cell-molecular: Amino Acids & Protein Chemistry Fundamentals | Bioenergetics & Central Metabolism Overview | Biomolecular Analytical Techniques | Carbohydrate Chemistry & Biology | Cell Cycle, Mitosis & Meiosis | Cell Junctions, Extracellular Matrix & Cell Death | Cell Signaling & Communication | Cell Theory, Prokaryotes & Eukaryotes | Cytoskeleton & Motor Proteins | DNA Repair & Recombination | DNA Structure & Replication | Endomembrane System & Protein Trafficking | Enzyme Kinetics & Regulation | Gene Regulation: Eukaryotic & Epigenetics | Gene Regulation: Prokaryotic | Lipids & Membrane Biochemistry | Mitochondria & Chloroplasts: Structure & Endosymbiotic Origin | Molecular, Cell Biology and Biochemistry | Nucleotide & Nucleic Acid Chemistry | Plasma Membrane Structure & Transport | Protein Structure, Folding & Function | Recombinant DNA & Biotechnology Techniques | Transcription & RNA Processing | Translation & the Genetic Code
+
+10-bioinformatics: Bioinformatics
+
+11-practical-1: Biochemistry Techniques | Integrated Workflows & Reference | Molecular Biology Techniques | P1 - Molecular Biology & Biochemistry Practicals
+
+12-practical-2: P2 - Wildlife Ethology
+
+13-practical-3: P3 - Plant Biology
+
+14-practical-4: P4-Plant Computational Biology
+
+15-evolution: Coevolution & Species Interactions | Evidence for Evolution | Evolution | Evolutionary Developmental Biology (Evo-Devo) | Genetic Drift, Gene Flow & Mutation | History of Life: Origin & Major Transitions | Human Evolution & Hominid Phylogeny | Macroevolutionary Patterns & Mass Extinctions | Molecular Evolution & Neutral Theory | Natural Selection: Modes & Fitness | Population Genetics & Hardy-Weinberg Equilibrium | Speciation & Reproductive Isolation
+
+2-animal-anatomy: Animal Anatomy | Body Plans & Foundational Concepts | Fish & Amphibian Anatomy | Human Circulatory System | Human Digestive System | Human Excretory System | Human Integumentary System | Human Muscular System | Human Nervous System | Human Reproductive System | Human Respiratory System | Human Sensory Organs | Human Skeletal System | Invertebrate Body Plans I | Invertebrate Body Plans II | Mammalian Comparative Anatomy | Reptile & Bird Anatomy
+
+3-animal-physiology: Animal Physiology | Cardiovascular Physiology | Comparative Osmoregulation & Excretion | Comparative Respiration & Circulation | Comparative Thermoregulation | Digestive & Metabolic Physiology | Endocrine System Physiology | Homeostasis & Osmoregulation | Immune Physiology | Locomotion & Energetics | Muscle Physiology | Nervous System Physiology | Reproductive Physiology | Respiratory Physiology
+
+4-biosystematics: Biosystematics | Classification Principles & Nomenclature | Domains & Kingdoms | Major Taxa Cross-Reference | Molecular Systematics | Phylogenetic Trees & Cladistics | Species Concepts | Taxonomic Keys & Identification
+
+5-plant-physiology: Calvin Cycle, Photorespiration & C4/CAM Biochemistry | Light Reactions & Photophosphorylation | Mineral Nutrition & Nutrient Uptake | Phloem Transport & Translocation | Photoperiodism, Vernalization & Flowering | Plant Hormones | Plant Physiology | Plant Stress Physiology & Defense | Seed Germination & Dormancy Physiology | Stomatal Physiology & Gas Exchange | Tropisms & Nastic Movements | Water Transport & Transpiration
+
+6-plant-anatomy: Flower Anatomy & Reproductive Structures | Leaf Anatomy | Monocot vs Dicot Comparative Anatomy | Plant Anatomy | Plant Body Plans Across Major Lineages | Plant Tissue Systems | Root Anatomy | Secondary Growth & Wood Anatomy | Seed & Fruit Anatomy | Stem Anatomy | Xylem, Phloem & Vascular Tissue
+
+7-genetics: Chromosomal Variation: Number & Structure | Extensions of Mendelian Inheritance | Extranuclear & Non-Mendelian Inheritance | Gene Interactions: Epistasis & Complementation Analysis | Genetics | Linkage, Recombination & Genetic Mapping | Mendel's Laws & Probability in Genetics | Pedigree Analysis & Human Genetic Disorders | Quantitative Genetics, Heritability & Inbreeding | Sex Determination & Sex-Linked Inheritance
+
+8-ecology: Ecology
+
+9-ethology: Aggression, Territoriality & Social Structure | Animal Communication | Biological Rhythms | Development & Learning | Ethology | Foraging & Anti-Predator Behavior | Kin Selection, Altruism & Eusociality | Mating Systems & Sexual Selection | Mechanisms of Behavior | Orientation & Navigation
+
+If none of these genuinely fit, say so explicitly instead of forcing a bad
+match -- leave a note like `subjects: []  # none of the given list fits` and
+it'll get fixed by hand.
+
+=== QUESTIONS (answers already given -- explain, don't re-derive) ===
+
+--- Question 1 (id: q1) (no figures) ---
+Q.1
+The activities of Wee1 kinase and Cdc25 phosphatase determine the state of
+phosphorylation of tyrosine 15 in the Cdk1 component of M-Cdk. When tyrosine 15 is
+phosphorylated, M-Cdk is inactive; when tyrosine 15 is not phosphorylated, M-Cdk is
+active (Figure Q.1A). The activities of Wee1 kinase and Cdc25 phosphatase are also
+controlled by phosphorylation.
+The regulation of these activities can be studied in extracts of frog oocytes. In such
+extracts, Wee1 kinase is active and Cdc25 phosphatase is inactive. As a result, M-Cdk
+is inactive because its Cdk1 component is phosphorylated on tyrosine 15. M-Cdk in
+these extracts can be rapidly activated by addition of okadaic acid, which is a potent
+inhibitor of serine/threonine protein phosphatases. Using antibodies specific for Cdk1,
+Wee1 kinase, and Cdc25 phosphatase, it is possible to examine their phosphorylation
+(Figure
+Q.1B).
+states
+by
+changes
+in
+mobility
+upon
+gel
+electrophoresis
+Phosphorylated forms of these proteins generally migrate more slowly than their
+nonphosphorylated counterparts.
+M-Cdk
+ATP
+P
+active
+A
+CdC25
+CdC25
+Wee1
+Wee1
+phosphatase
+phosphatase
+kinase
+kinase
+active
+inactive
+inactive
+active
+P
+ADP
+M-Cdk
+inactive
+B
+okadaic
+acid
+Fig.Q.1. (A) Control of M-Cdk activity by Wee1 kinase and Cdc25 phosphatase;  (B) Effects of okadaic acid on the
+phosphorylation states of Cdk1,Wee1 kinase, and Cdc25 phosphatase
+Indicate in the Answer Sheet if each of the following statements is True or False
+A. Wee1 kinase is active if it is phosphorylated.
+B.  The phosphatases that control the phosphorylation of Wee1 kinase and Cdc25
+phosphatase are specific for tyrosine side chains.
+C. Okadaic acid directly affects the activation of Cdk1.
+D. If M-Cdk is able to phosphorylate Wee1 kinase and Cdc25 phosphatase, a small
+amount of active M-Cdk would lead to its rapid and complete activation.
+4/56
+Given answers: A=FALSE, B=FALSE, C=FALSE, D=TRUE
+
+--- Question 2 (id: q2) (1 figure(s) available, reference as [FIGURE-1]..[FIGURE-1]) ---
+Q.2
+Translational rate of a mRNA can be estimated from sodium dodecyl sulfate
+polyacrylamide gel electrophoresis (SDS-PAGE). In this experiment, a tobacco mosaic
+virus (TMV) mRNA, which encodes a 116,000-dalton protein, was translated in a
+35
+rabbit reticulocyte lysate in the in the presence of
+S-methionine. The lysate
+contained all components of rabbit reticulocite translational machinery. Samples
+were removed at 1-minute intervals and subjected to SDS- PAGE. The separated
+translation products were visualized by autoradiography. As can be seen in the figure
+below, the largest detectable polypeptides get larger with time, until the full-length
+protein appears at about 25 minutes.
+Fig.Q.2. Time course of synthesis of a TMV protein in a rabbit-reticulocyte lysate. Molecular weight (kDa) as a function of
+time t (min).
+Indicate in the Answer Sheet if each of the following statements is True or False.
+A. The rate of TMV protein synthesis is exponentially proportional to time.
+B. With an average molecular mass of an amino acid of 110 daltons, the average
+rate of protein synthesis is approximately 35 to 40 amino acids per minute.
+C. The rabbit reticulocyte lysate contains methionyl-tRNA synthetase
+D. The mRNA may contain more than two rare codons in its sequence.
+5/56
+Given answers: A=FALSE, B=FALSE, C=TRUE, D=TRUE
+
+--- Question 3 (id: q3) (1 figure(s) available, reference as [FIGURE-1]..[FIGURE-1]) ---
+Q.3
+Scientists have isolated three different strains of bacteria ProA¯, ProB¯, and ProC¯
+that require added proline for growth. One is cold-sensitive, one is heat-sensitive, and
+one has a gene deleted. Cross-feeding experiments were carried out by streaking the
+strains out on agar plates containing minimal medium supplemented with a very low
+level of proline. In cross-feeding experiments, metabolites leaking from one strain can
+feed a neighbouring strain. After growth at three temperatures, the results were
+shown in Figure Q.3.
+Fig.Q.3. Results of cross-feeding experiments with three strains defective in proline biosynthesis. Dark areas show high
+cell growth rate; grey areas show low cell growth rate; wt, wild type
+Indicate in the Answer sheet if each of the following statements is True or False
+A. ​The intermediate that accumulates in the ProC¯ strain comes after the block in
+the ProA¯ strain.
+B. ​The intermediate that accumulates in the ProB¯ strain comes after the block in
+the ProA¯ strain
+C. ​There are at least three different genes that affect proline biosynthesis.
+D. ​Under at least one condition, the proline that is produced is rapidly used for
+protein synthesis and is prevented from being synthesized in excess of needs.
+6/56
+Given answers: A=TRUE, B=FALSE, C=TRUE, D=TRUE
+
+--- Question 4 (id: q4) (no figures) ---
+Q.4
+When isolated mitochondria are suspended in a buffer containing ADP, Pi, and an
+oxidizable substrate, three easily measured processes occur: the substrate is
+-
+oxidized; O is consumed; and ATP is synthesized. Cyanide (CN ) is an inhibitor of the
+2
+passage of electrons to O . Oligomycin inhibits ATP synthase by interacting with
+2
+subunit F . 2,4-dinitrophenol (DNP) can diffuse readily across mitochondrial
+0
+membranes and release a proton into the matrix, thus dissipating the proton gradient.
+O2 consumed
+ATP synthesized
+A
+B
+y
+z
+ADP + Pi
+x
+ADP + Pi
+Succinate
+Time
+Time
+Fig.Q.4. Oxygen consumption and ATP synthesis in mitochondria. The solid lines indicate the amount of oxygen
+consumed and the dash lines indicate the amount of ATP synthesized
+Indicate in the Answer Sheet if each of the following statements is True or False.
+A. x is the oxidizable substrate.
+-
+B. y is either oligomycin or CN .
+C. z is  DNP.
+D. If z  is a mixture of oligomycin and DNP, the ATP synthesis will not level off.
+7/56
+Given answers: A=TRUE, B=TRUE, C=TRUE, D=FALSE
+
+--- Question 5 (id: q5) (1 figure(s) available, reference as [FIGURE-1]..[FIGURE-1]) ---
+Q.5
+Imagine you are studying a membrane protein represented in the diagram below. You
+prepared artificial vesicles  containing this protein only in the membrane. The
+vesicles were then treated with a protease cleaving close to the membrane (2) or
+permeabilised before protease treatment (3). Resulting peptides were subsequently
+separated using SDS-PAGE (sodium dodecyl sulfate polyacrylamide gel
+electrophoresis).
+Fig.Q.5. Membrane protein (a, b, c, d, e: domains) and the SDS-PAGE gel
+(1. untreated control, 2. peptides after protease cleavage, 3. peptides after permeabilisation and protease cleavage. The
+arrow indicates the direction of migration).
+Indicate in the Answer Sheet if each of the following statements is True or False.
+A. The bigger fragments in lane 3 are hydrophilic.
+B. The smaller fragments in lane 2 represent protein domains protruding outside the
+membrane.
+C. Domain a is rich in leucine or isoleucine.
+D. Domains a, c and e protrude into the lumen of vesicles.
+8/56
+Given answers: A=FALSE, B=TRUE, C=FALSE, D=FALSE
+
+--- Question 6 (id: q6) (no figures) ---
+Q.6
+Ethanol inhibits microbial growth. Nevertheless, some strains of the yeast
+Saccharomyces cerevisiae can adapt to high concentrations of ethanol. Many studies
+have documented the alteration of cellular lipid composition in response to ethanol
+exposure.
+In this investigation, we systematically altered the fatty acid composition in S.
+cerevisiae by knocking out OLE1 gene coding for integral membrane desaturase,
+9
+responsible for the formation of monosaturated palmitoleic acid (∆-C
+) and oleic
+16:1
+9
+acid (∆-C
+). The knockout strain was then: (1) reconstituted with OLE1 gene by
+18:1
+9
+9
+transformation with YEpOLE1 plasmid; (2) transformed with YEp-∆Hz, YEp-∆Tn,
+11
+11
+9
+11
+YEp-∆
+Hz or YEp-∆
+Tn plasmid containing ∆ or ∆
+desaturases of two lepidopteran
+insect (moths) Helicoverpa zea (Hz) o r Trichoplusia ni (Tni). Fatty acid component
+and growth curves of each transformant were investigated and shown in table and
+figure below:
+Table Q.6. Composition of major fatty acids in % of S. cerevisiae transformants at mid-log phase.
+Transformant
+C
+C
+C
+C
+16:0
+18:0
+16:1
+18:1
+Saturated
+Saturated
+Monounsaturated
+Monounsaturated
+OLE1
+45.5 ± 2.2
+4.7 ± 2.4
+34.9 ± 0.8
+14.9 ± 1.0
+9
+∆Hz
+45.5 ± 5.5
+7.9 ± 2.2
+31.7 ± 5.6
+11.0 ± 2.0
+9
+∆Tn
+46.9 ± 4.0
+8.6 ± 3.9
+12.8 ± 1.9
+31.7 ± 5.8
+11
+∆
+Hz
+45.6 ± 3.6
+11.9 ± 2.8
+42.6 ± 6.3
+0
+11
+∆
+Tn
+49.7 ± 4.8
+12.5 ± 0.1
+41.8 ± 11.8
+11.2 ± 1.5
+2.5
+A
+2.0
+1.5
+1.5
+B
+OD600
+1.0
+1.0
+OD600
+0.5
+0.5
+0
+00
+20
+40
+60
+0
+40
+60
+20
+t(min)
+t(min)
+9
+11
+9
+Fig.Q6. Growth curves of S. cerevisiae strains transformed with plasmid containing OLE1 (x), Δ Hz (●), Δ
+Hz (■), Δ Tn
+11
+(○) and Δ
+Tn (□) in YPD medium (A) and in YPD medium containing 5% ethanol (B)
+9/56
+Indicate in the Answer Sheet if each of the following statements is True or False.
+A. The lag phase of transformant OLE1 in YPD medium is shorter than those of
+9
+9
+11
+11
+∆Hz, ∆Tn, ∆
+Hz and ∆
+Tn due to the presence of native desaturase in yeast
+cells.
+B. Desaturases are equally active in all transformants.
+C. The content of mono-unsaturated fatty acids is a good indicator of the ethanol
+tolerance in S. cerevisiae.
+9
+9
+D. Higher ratio of ∆-C
+to ∆-C
+causes higher ethanol tolerance in S.
+18:1
+16:1
+cerevisiae.
+10/56
+Given answers: A=TRUE, B=FALSE, C=FALSE, D=TRUE
+
+--- Question 7 (id: q7) (no figures) ---
+Q.7
+Poly(3-hydroxybutyrate) (PHB) is a bacterial storage material which is accumulated by
+various bacteria, usually when grown under limitation of a nutrient such as oxygen,
+nitrogen, phosphate, sulphur, or magnesium and in the presence of excess carbon.
+Fig. Q7 shows the PHB synthesis pathway of Ralstonia eutropha from acetyl-CoA,
+which is regulated by feedback inhibition.  In addition, acetyl-CoA can enter the citric
+acid cycle.
+Acetoacetyl-
+β-Ketothiolase
+CoA-reductase
+PHB
+synthase
+Acetoacetyl-
+Acetyl-
+D-β-hydroxy-
+Glucose
+CoA
+butyryl-CoA
+CoA
+HSCoA
+Poly(3-hydroxybutyrate)
+*
+PHB
+citric
+*
+: citrate synthase
+acid
+cycle
+Fig. Q7. PHB synthesis pathway
+Indicate in the Answer Sheet if each of the following statements is True or False
+A. The increase in activity of citrate synthase will reduce the production of PHB.
+B. When the intracellular concentration of HSCoA is high, the rate of PHB synthesis
+will increase.
+C. When the rate of PHB synthesis increases, the growth rate of Ralstonia eutropha
+cells will also increase.
++
+D. PHB synthesis is stimulated by low ratios of (NADPH+H ​)/NADP.
+11/56
+Given answers: A=TRUE, B=FALSE, C=FALSE, D=FALSE
+
+--- Question 8 (id: q8) (no figures) ---
+Q.8
+A scientist has isolated five different peptides (1 to 5) containing five amino acids
+(named A, B, C, D, E). He determined the mass and the sequence of each peptide. The
+data which he obtained is shown on the table below
+Peptide
+Amino Acids Sequence
+Mass (Da)
+1
+BCDACCDEDCB
+966
+2
+ABBCAEEDECB
+1099
+3
+BACDAEAEECA
+1357
+4
+CACADBACAEB
+1279
+5
+EDDCABBCCEE
+1014
+The mass of individual amino acids are shown in the table below
+Amino acids
+Mass (Da)
+Amino acids
+Mass (Da)
+Alanine
+89
+Leucine
+131
+Arginine
+174
+Lysine
+146
+Asparagine
+132
+Methionine
+149
+Aspartic Acid
+133
+Phenylalanine
+165
+Cysteine
+121
+Proline
+115
+Glutamic Acid
+147
+Serine
+105
+Glutamine
+146
+Threonine
+119
+Glycine
+75
+Tryptophan
+204
+Histidine
+155
+Tyrosine
+181
+Isoleucine
+131
+Valine
+117
+Note: The mass of a water molecule is 18 Da.
+Indicate if each of the following statements is True or False.
+A. Amino acid named C is serine
+B. Amino acid named A is tyrosine
+C. Amino acid named E is cysteine
+D. Amino acid named B is glycine
+12/56
+Given answers: A=FALSE, B=FALSE, C=TRUE, D=TRUE
+
+--- Question 9 (id: q9) (no figures) ---
+Q.9
+Four different bacterial strains were isolated from the gut of a shrimp to study their
+probiotic potency through the decrease of their pathogenicity of Vibrio harveyi, a
+common bacteria infecting shrimp culture. In the first experiment, the four isolated
+bacteria were inoculated in cross-streak plates to observe inhibition zones against 4
+bacterial strains (Fig.9A). In the second experiment, the shrimp survival rate in
+presence of Vibrio harveyi and each bacterial isolate after 5 days of incubation was
+measured (Fig.9B).
+Mortality
+Fig.Q.9. (A) K = Control (no bacteria streaked on the dash box), P1-P4 = Probiotic candidates 1-4, a = Streptococcus sp.
+(Gram-positive), b = Vibrio sp. (Gram-negative), c = Bacillus sp. (Gram-positive), d = Salmonella sp. (Gram-negative).
+(B) U = shrimp culture alone, U+V = shrimp culture with addition of Vibrio harveyi, U+V+P1-4 = shrimp culture with
+addition of Vibrio harveyi and a specific probiotic candidate P1-4, respectively.
+Indicate in the Answer Sheet if each of the following statements is True or False
+A. Candidate No.1 (P1) produced an antimicrobial compound that inhibited Gram
+negative and Gram positive bacteria.
+B. Candidate No.2 (P2) was able to decrease Vibrio sp. pathogenicity without killing
+them.
+C. Candidate No.3 (P3) produced an antimicrobial compound targeting the outer
+membrane.
+D. Candidate No.4 (P4) had good effect on the shrimp survival by inhibiting Gram-
+negative bacteria.
+13/56
+Given answers: A=FALSE, B=TRUE, C=FALSE, D=FALSE
+
+--- Question 10 (id: q10) (no figures) ---
+Q.10
+An experiment was set up to observe cell cycle length of a strain of yeast. Activated
+6
+yeast cells were subcultured into a new medium with an initial concentration of 10
+6
+cells/mL. After 40 h, the number of cells increased to 4 x 10 cells/mL. A portion of the
+culture was taken for a separate experiment. In this experiment, cells were incubated
+for 15 min into a media containing radioactive thymidine before washing and re-
+grown on a new media containing non-radioactive thymidine. Cell samples were then
+taken periodically to measure the percentage of mitotic cells containing radioactive
+thymidine. Fig.Q.10 shows the result obtained from the experiment. At each
+sampling, about 1% of the total cells sampled were undergoing mitosis.
+100
+% mitotic cell labelled radioactive
+80
+60
+40
+20
+0
+0
+6
+8
+10
+4
+14
+2
+12
+hour after thymidine labelling
+Fig.Q.10. Fraction of mitotic cells that were labeled radioactively during the cell culture experiment.
+Indicate in the Answer Sheet if each of the following statements is True or False
+A. The synthesis rate of histone proteins is relatively high between 6 and 10 hours
+after radioactive labeled thymidine exposure.
+B. S phase of the cell cycle takes about 5 hours.
+C. M phase of the cell cycle takes longer than 1 hour.
+D. Most of the radioactive thymidine is assimilated in the S phase of the cell cycle.
+14/56
+PLANT ANATOMY AND PHYSIOLOGY
+Given answers: A=FALSE, B=TRUE, C=FALSE, D=TRUE
+
+--- Question 11 (id: q11) (2 figure(s) available, reference as [FIGURE-1]..[FIGURE-2]) ---
+Q.11
+Cell walls provide plant cells with a substantial degree of volume homeostasis relative
+to the large changes in water potential that they experience as the everyday
+consequence of the transpirational water loss. Cell water potential (ᴪ) of a plant cell
+w
+is composed of solute potential (ᴪ) and turgor pressure potential (ᴪ). Relative cell
+s
+p
+volume is correlated with cell water potential and its components as described in
+the Fig.Q11.
+2
+Cell water potential (MPa)
+1
+Ψp
+0
+-1
+Ψw = Ψs + Ψp
+-2
+Ψs
+-3
+1.0
+0.95
+0.9
+0.85
+0.8
+Relative cell volume
+Fig.Q11
+A. Alterations of plant cell water potential are generally accompanied by a large
+change in turgor pressure and in cell volume.
+B. Disappearance of turgor pressure indicates the ending point of cell plasmolysis
+with reduction of approximately by 15% cell volume.
+C. As the cell volume decreases by 10%, most of the change in cell water potential is
+caused by the drop in cell solute potential together with little change in turgor
+pressure.
+D. During cell rehydration, cell volume expansion stops when cell wall generates
+pressure equivalent to turgor pressure and the cell water potential reaches zero.
+15/56
+Given answers: A=FALSE, B=FALSE, C=FALSE, D=TRUE
+
+--- Question 12 (id: q12) (no figures) ---
+Q.12
+An experiment was carried out on sorghum (Sorghum bicolor) and soybean (Glycine
+o
+max) plants in response to low temperature. Plants were grown at 25 C for several
+o
+weeks and then at 10 C for three days, while day length and light intensity and
+ambient carbon dioxide concentration were kept constant throughout the experiment
+0
+unless stated otherwise. The net photosynthesis of both plant species at 25 C are
+shown in Fig.Q12 below.
+Net CO2 uptake rate
+[CO2] in air
+Fig.Q.12
+-1
+Carbon dioxide uptake per leaf dry mass (mg CO
+g
+)
+2
+Days
+before
+1
+2
+3
+4-10
+Temperature
+25°C
+10°C
+10°C
+10°C
+25°C
+48.2
+5.5
+2.9
+1.2
+1.5
+Sorghum
+23.2
+5.2
+3.1
+1.6
+6.4
+Soybean
+o
+A. If put at 35 C, photosynthesis rate of soybean would decrease and that of
+sorghum would not change.
+B. In cool condition, the biomass of sorghum increases faster than that of soybean.
+C. Soybean plants are likely to have smaller photosynthetic water use efficiency
+than sorghum.
+D. The reduction of the carbon dioxide uptake in sorghum is mainly due to the
+decrease of enzyme activity in low temperature.
+16/56
+Given answers: A=TRUE, B=FALSE, C=TRUE, D=FALSE
+
+--- Question 13 (id: q13) (no figures) ---
+Q.13
+The bacterium Bradyrhizobium  japonicum can infect soybean (Glycine max) roots and
+form nodules. The nitrogen fixation catalyzed by nitrogenase occurs in the nodules
+and the nitrogenase activity can be measured easily by acetylene reduction instead of
++
+nitrogen reduction. Scientists generated a defective mutation of NAD -dependent
+malic enzyme (dme mutant), the enzyme that generates pyruvate and NADH,  and
+infected soybean seedling roots with wildtype and mutant bacteria. The seedlings
+were grown in nitrogen-free media. After 14 and 28 days of inoculation, the number
+and weight of nodules in the seedlings and acetylene reduction activity were
+recorded.
+(µmol / (hr * g nodule dry weight))
+Acetylene reduction activity
+Acetylene reduction activity
+5
+80
+40
+D
+C
+(µmol / (hr * nodule))
+A
+B
+Nodule dry weight
+0.15
+(Nodule / plant)
+Nodule number
+4
+60
+30
+(mg /nodule)
+3
+0.10
+20
+40
+2
+0.05
+10
+20
+1
+0
+0
+0
+0
+28
+14
+28
+14
+28
+14
+28
+14
+Days after
+Days after
+Days after
+Days after
+inoculation
+inoculation
+inoculation
+inoculation
+Fig.Q13. Nodule number and dry weight and acetylene reduction acitivity of soybean. Soybean nodules infected with wild-
+type B. japonicum (open bars) and the dme mutant (solid bars) are presented.
+A. Nitrogen fixation activity in nodules of the same treament at 28 days after
+inoculation is higher than that at 14 days after inoculation.
+B. Both number and size of nodules increase with time from 14 to 28 days after
+inoculation with B. japonicum.
+C. The reduction in nitrogen-fixing activity of nodules infected by the mutant at 28
+days after inoculation compared to those at 14 days after inoculation  is due to
+the reduction of nitrogenase activity and nodule formation.
++
+D. Nitrogen fixation in B. japonicum –induced nodule is down-regulated by NAD -
+dependent malic enzyme.
+17/56
+Given answers: A=TRUE, B=TRUE, C=FALSE, D=FALSE
+
+--- Question 14 (id: q14) (2 figure(s) available, reference as [FIGURE-1]..[FIGURE-2]) ---
+Q.14
+Sucrose is produced in leaves and translocated short and long distance through veins
+to non-photosynthetic organs such as roots, stems, flowers and fruits. Two principal
+pathways include symplast and apoplast by which sucrose molecules are transported
+in phloems of leaves as shown in Fig.Q14.
+Symplastic sucrose phloem loading
+collection
+sucrose
+Phloem loading
+transport
+Sucrose efflux
+Apoplastic sucrose phloem loading
+sucrose
+release
+Fig.Q14. Diagram of the whole plant phloem network. M - Mesophyll, BS - Bundle sheath, MS - Mestome sheath, PP -
+Phloem parenchyma, VP - Vascular parenchyma, CC - Companion cell, TST - Thick walled sieve element, ST - Sieve
+element.
+A. Sucrose is synthesized in leaves and transported long distance through phloem to
+sinks under hydrostatic pressure gradient.
+B. Loading sucrose in apoplastic pathway requires energy in several steps due to
+the movement across secondary wall of living cells.
+C. In the symplastic pathway, sucrose molecules are passively loaded through
+plasmodemata.
+D. Unloading sucrose molecules at the sinks requires no energy release because of
+movement down a gradient concentration of sucrose.
+18/56
+Given answers: A=TRUE, B=FALSE, C=TRUE, D=FALSE
+
+--- Question 15 (id: q15) (no figures) ---
+Q.15
+Scientists measured length and height of rhizophores of mangrove plant (Rhizophora
+mangle, Fig.Q15A). They also made cross sections of rhizophores and observed their
+anatomical characteristics. The results are shown in Q15B and Q15C.
+C
+A
+Xylem
+Bark
+Pith
+Plant axis
+Rhizophore length/height
+1st order rhizophore
+Rhizophore height
+Tissue area (%)
+2nd order rhizophore
+1st order rhizophore height
+3th order rhizophore
+4th order rhizophore
+5th order rhizophore
+ground
+1st order rhizophore length
+Rhizopore order
+Distance from main stem (m)
+Rhizophore order
+Fig.Q15. Rhizophores of Rhizophora mangle plants. A: Rhizophore height and length measurement. B: Change in height
+(empty square) and in length/height proportion (full circle) in five sequential orders of rhizophores. C: Relative proportions
+of bark (including aerenchyma), xylem and pith along the length of individual first-order rhizophores (left), and at the base
+of rhizophores of sequential orders (right).
+A. There are monotonic decreases in rhizophore height and the length/height
+proportion in the rhizophores as a function of the rhizophore order.
+B. Within first-order rhizophores, the xylem proportion in the cross-section is larger
+when closer to the main stem, and decreases progressively   as   the   rhizophore
+approached   the   ground while increasing the proportion of bark and pith.
+C. When rhizophore order changes from 1 to 5, bark and pith proportion decreases,
+while xylem propotion increases.
+D. The supportive function is likely enhanced in the first-order rhizophores, with
+lower length/height proportion, and higher proportion of xylem compared with
+bark and pith.
+19/56
+Given answers: A=FALSE, B=TRUE, C=FALSE, D=TRUE
+
+--- Question 16 (id: q16) (no figures) ---
+Q.16
+Arsenic (As) in the soil has become an environmental concern worldwide because it is
+difficult to remediate and can adversely impact human health. The fern, Athyrium
+yokoscense is well known as a Cd hyperaccumulator as well as a Cu, Pb and Zn
+tolerant plant. However, no information is available on As accumulation
+by A. yokoscense, although it often grows in soils containing high levels of several
+heavy metals and As. To understand As accumulation in A. yokoscense, a student
+conducted an experiment in which young ferns collected from a mining area were
+grown in media containing As-spiked paddy soils or mine soil in a greenhouse for
+−1
+21 weeks. Before transplanting fern biomass was 0.26 ± 0.08 g plant
+DW and As
+−1
+concentrations of young and old fronds were 7.8 ± 0.3 and 57.7 ± 2.2 mg kg
+,
+respectively.
+Frond
+Root
+Root
+Young frond
+Mature frond
+Old frond
+Fern biomass (g/plant)
+As content (mg/kg)
+Control
+Mine soil
+Control
+Mine soil
+As-spiked soils
+As-spiked soils
+Fig.Q16. A: Dry biomass of A. yokoscense after 21 weeks of cultivation in a greenhouse. B: Arsenic concentration in
+different parts of A. yokoscense cultivated in As- spiked soils and mine soils.
+Tukey’s test, a multiple comparison procedure and statistical test was used. The statistical significance of the difference
+between treatments for a given organ, are shown using the letter a – f above the bar. The same letter means there is no
+statistical difference for that organ.
+A. Moderate As levels in soils promote the growth of ferns.
+3+
+B. Concentration of As in root grown in arsenite-spiked media (As
+) is lower than
+5+
+those in arsenate treatment (As
+), resulting in the increase of total biomass.
+C. Arsenic concentration increases from young to old fronds and is positively
+correlated to As levels in the soil
+D. The transfer of As from root to frond of A. yokoscense in mine soil over time is
+similar to that in arsenate-spiked soil.
+20/56
+Given answers: A=FALSE, B=FALSE, C=FALSE, D=FALSE
+
+--- Question 17 (id: q17) (5 figure(s) available, reference as [FIGURE-1]..[FIGURE-5]) ---
+Q.17
+To study the effect of phytohormone on fruit maturation, researchers used abscisic
+acid (ABA) and ethephon to treat of sweet cherry fruits and afterward to evaluate the
+expression of PacNCED1 gene which encodes 9-cis-epoxycarotenoid dioxygenase, a
+key enzyme in ABA biosynthesis. They also checked the expression of PacACO1 gene
+encoding 1-aminocyclopropane-1-carboxylic acid oxidase enzyme that involves in
+ethylene biosynthesis. The transcript of PacACT1 (one b-actin cDNA fragment was
+cloned and designated as PacACT1) was used to standardize for all expression
+(Fig.Q17-D).
+-
+Firmness of
+Soluble solids content/ titratable
+Anthocyanin(U.g
+Treatment
+1
+pulp
+acidity
+)
+Control
+20.3a
+14.4a
+13.4a
+Ethephon
+19.6a
+15.3a
+14.4a
+ABA
+11.9b
+16.8b
+23.8b
+(a and b show values that are significantly different).
+ABA
+Control
+Ethephon
+Relative PacNCED1
+Ethylene production
+mRNA level
+Control
+Ethephon
+ABA
+pulp
+seed
+pulp
+seed
+Fig. Q17. Effects of ABA and ethephon application on ABA content (A), accumulation of PacNCED1 (B), ethylene
+production during ripening (C) and PacACO1(D). * and ** indicate significant differences compared to control.
+A. Both ABA and Ethephon stimulate the expression of PacACO1 and PacNCED1
+genes in sweet cherry fruit.
+B. The expression of PacNCED1 and ABA accumulation in pulp are higher than in
+the seed in the treatments of ABA
+C. ABA induces the maturation of sweet cherry fruit via stimulation of ethylene
+production.
+D. Ethephon shows lower effect on anthocyanin and endogenous ABA production
+than exogenous ABA does.
+21/56
+ANIMAL ANATOMY AND PHYSIOLOGY
+Given answers: A=TRUE, B=TRUE, C=FALSE, D=TRUE
+
+--- Question 18 (id: q18) (no figures) ---
+Q.18
+A 55-year-old man has a resting cardiac output of 7000 mL/minute. His arterial
+pressure is 125/85 mmHg. His heart rate is 100 beats/min and his body temperature
+is normal. Figure Q.18 represents the changes in left ventricular pressure and blood
+volume during a cardiac cycle.
+S
+135
+Intraventricular pressure (mmHg)
+R
+100
+50
+Q
+P
+60
+100
+130
+Left ventricular blood volume (mL)
+Figure Q.18.
+A. At Q, the left atrioventricular valve is opened.
+B. Ventricular ejection ends at S.
+C. The distance from S to P should be longer if there is a narrowing of the aortic
+valve.
+D. In period R-S, blood does not flow into both atria and ventricles.
+22/56
+Given answers: A=FALSE, B=TRUE, C=TRUE, D=FALSE
+
+--- Question 19 (id: q19) (no figures) ---
+Q.19
+Cardiac output (CO) is the volume of blood pumped by the heart in one minute.
+Cardiac output is affected by the stroke volume (SV) and the heart rate (HR). Cardiac
+output can be measured indirectly using the Fick’s equation: CO = Q/(A-V), where Q is
+the rate of oxygen consumption (mL/min), A-V is the difference between oxygen
+concentration in the oxygenated blood (A) and in the deoxygenated blood (V). The
+data below were measured from a healthy person before and during physical exercise.
+Parameters
+Before Exercise
+During Exercise
+Rate of oxygen consumption (Q)
+250 mL/min
+1500 mL/min
+Oxygen difference (A-V)
+50 mL/L blood
+150 mL/L blood
+Heart rate (HR)
+60 beats/min
+120 beats/min
+A. Cardiac output increased by two-fold during exercise.
+B. Stroke volume during exercise was higher than that before exercise.
+C. Physical exercise caused a reduction in hemoglobin’s binding for oxygen in
+tissues, resulting in a three-fold increase in the amount of oxygen released to
+tissues.
+D. The number of heart beats required to supply a tissue with 3000 mL of oxygen
+during exercise is 240.
+23/56
+Given answers: A=TRUE, B=FALSE, C=TRUE, D=TRUE
+
+--- Question 20 (id: q20) (no figures) ---
+Q.20
+Figure Q.20 shows the models of four types of common human congenital heart
+defects.
+normal
+3
+1
+4
+2
+Figure Q.20.
+A. In type 1, the blood volume going to the lungs is lower than normal.
+B. In type 2, the stroke volume of the left ventricle is increased.
+C. In type 3, the systolic blood pressure at the arms is higher than that in the normal
+type.
+D. In type 4, the pulmonary blood pressure is increased.
+24/56
+Given answers: A=TRUE, B=FALSE, C=TRUE, D=TRUE
+
+--- Question 21 (id: q21) (no figures) ---
+Q.21
+Figure Q.21 shows how lung ventilation is affected by physical activity. As the
+intensity of exercise increases, humans respond to the increased need for gas
+exchange in two ways: increase in ventilation rate and increase in tidal volume. The
+experimental data for a well-trained runner on a treadmill are shown in Figure Q.21.
+Tidal volume
+Ventilation rate
+Tidal volume (liters/breath)
+Ventilation rate (breaths/min)
+Treadmill speed (km/h)
+Figure Q.21
+A. The increase in ventilation rate is faster than the increase in tidal volume when
+the treadmill speed increases from 9 km/h to 12 km/h.
+B. In intense physical exercise (> 15 km/h treadmill speed), the increase in the
+ventilatory minute volume is mainly caused by increased ventilation rate.
+C. At the treadmill speed of 15 km/h, the ventilatory volume per minute is
+approximately 120 L.
+D. In an adult human, a tidal volume of  0.2 L  and ventilation rate of 30 breaths
+per  minute can provide equally eﬀective gas exchange as a tidal volume of 0.6
+L and a ventilation rate of 10 breaths per minute.
+25/56
+Given answers: A=FALSE, B=TRUE, C=TRUE, D=FALSE
+
+--- Question 22 (id: q22) (no figures) ---
+Q.22
+In an experiment, a researcher isolated a neuron and placed it in the standard Ringer
+solution (isotonic physiological solution). He measured the resting membrane
+potential of the axon, then stimulated the axon and measured its action potential
+(Record A, Figure Q.22). Subsequently, he repeated the experiment several times,
+each with a different modified Ringer solution. Figure Q.22 shows some of the results
+(Records B to E).
+Membrane potential (mV)
+Figure Q.22.
++
+A. If the modified Ringer solution contained a lower concentration of Na than the
+standard Ringer solution, the action potential is Record B.
++
+B. If the modified Ringer solution contained a lower concentration of  K than the
+standard Ringer solution, the action potential is Record C.
+C. If the modified Ringer solution contained a substance that increased membrane
++
+permeability to K , the action potential is Record D.
+D. If the modified Ringer solution contained a substance that increased membrane
+-
+permeability to Cl , the action potential is Record E.
+26/56
+Given answers: A=TRUE, B=TRUE, C=FALSE, D=FALSE
+
+--- Question 23 (id: q23) (no figures) ---
+Q.23
+A group of researchers conducted an experiment to study the effects of phlorizin on
+some physiological indices in blood and urine of normal mice and diabetic mice.
+Phlorizin is an inhibitor of SGLT2 which is the channel of glucose reabsorption in the
+kidney. Assume expression of SGLT2 gene is positively correlated with urine glucose
+level and blood glucose also correlates positively with blood pressure.
+Mice were divided into four groups:
+Group 1: Normal mice were injected with phlorizin
+Group 2: Mice with severe type 2 diabetes induced by streptozotocin injection
+Group 3: Streptozotocin induced-type 2 diabetic mice were injected with phlorizin
+Group 4: Normal mice as controls
+After the four-week experiment, physiological indicators of blood, urine and renal
+SGLT2 expression of the mice were measured.
+A. The blood pressure of Group 3 mice was lower than that of Group 2 mice.
+B. The SGLT2 gene expression levels in the kidneys of Group 2 mice were lower
+than those of Group 4 mice.
+C. The volume of urine of Group 1 mice was higher than that of Group 4 mice.
+D. The quantity of SGLT2 molecules in the kidney medulla is higher than that in the
+kidney cortex.
+27/56
+Given answers: A=TRUE, B=FALSE, C=TRUE, D=FALSE
+
+--- Question 24 (id: q24) (no figures) ---
+Q.24
+Polycystic ovarian syndrome (PCOS) is a common disorder of women characterized by
+increased levels of testosterone and by chronic failure in ovulation. The ovary can be
+stimulated to produce more testosterone when insulin levels in the blood are high.
+A. PCOS patients are more likely to have acne than healthy people.
+B. PCOS patients have progesterone level higher than healthy people.
+C. Obese women have a higher risk of PCOS than normal-weight women.
+D. Follicle-stimulating hormone (FSH) and Luteinizing hormone (LH) can be used to
+increase the probability of PCOS women to conceive.
+28/56
+Given answers: A=TRUE, B=FALSE, C=TRUE, D=TRUE
+
+--- Question 25 (id: q25) (no figures) ---
+Q.25
+In the gills of freshwater teleost ﬁshes, the blood plasma is separated from the
+freshwater by a thin epithelium so that the blood plasma tends to lose ions such as
++
+-
+Na and Cl to the ambient water across the gill epithelium and H O tends to enter
+2
+the plasma from the ambient water across the gill epithelium. There are transport
+mechanisms by which inorganic ions and water cross the gill epithelium and they help
+to maintain the difference in the ion composition between the plasma and the ambient
+water. Figure Q.25 shows the transportation of four ions across the gill epithelium.
+Ambient water
+-
+HCO3
+H+
+Gill
+epithelium
+Na+
+Cl-
+Blood
+Figure Q.25.
+-
+A. Inhibition of the Cl pump leads to an increase in blood pH.
++
+–
+B. An increase in CO produced by catabolism leads to an increase in Na and Cl
+2
+transports across the epithelium cell.
++
+C. A substance blocking the electron transport chain causes a decrease of Na
+3-
+influx, but does not affect HCO
+outflux at the gill epitellium.
+-
+3-
+D. During alkalosis, the epithelial cell increases the synthesis of a key Cl /HCO
+countertransport protein.
+29/56
+Given answers: A=TRUE, B=TRUE, C=FALSE, D=TRUE
+
+--- Question 26 (id: q26) (no figures) ---
+Q.26
+Two groups of students separately performed an experiment on kidney function.
+Thirty minutes before the experiment, each student in one group was instructed to
+drink 500 mL of water, while each student in the other group was instructed to drink
+100 mL of water. At t = 0 minute, each student in both groups was instructed to drink
+750 mL of water. Each student was then asked to urinate as he or she would normally
+do without attempting to manipulate the speed or flow in any way at the different time
+points shown in Figure Q.26. An electronic uroflowmeter was used to measure the
+-
+urine flow rate. The Cl concentration in each urine sample was measured. Figure
+Q.26 shows the data of the experiment.
+300
+8
+Urine flow rate (mL/min)
+7
+Group II
+250
+6
+[Cl-(mM/L)
+200
+5
+150
+4
+Group I
+Urine
+3
+Group I
+100
+2
+50
+Group II
+1
+0
+0
+0
+0
+0
+20
+40
+60
+80
+0
+20
+40
+60
+80
+0
+20
+40
+60
+80
+0
+20
+40
+60
+80
+Time (min)
+Time (min)
+Figure Q.26.
+A. The absolute reabsorption of water by nephrons of the students in Group II at t =
+60 min was lower than that of the students in Group I.
+B. The plasma aldosterone concentration of the students in Group I was the highest
+at t = 60 min.
+C. The students in Group I drank 500 mL of water 30 minutes before the
+experiment.
+D. The students in Group II produced about 140 mL of urine during the period
+between t = 40 min and t = 60 min.
+30/56
+Given answers: A=TRUE, B=FALSE, C=FALSE, D=TRUE
+
+--- Question 27 (id: q27) (no figures) ---
+Q.27
+Figure Q.27 shows the changes in metabolic rates of adult individuals of five animal
+species in response to temperature changes of the external environment (EM). The
+individual body weights of the five species were similar (about 30 grams). The data
+were measured from the animals when they were staying at rest.
+Metabolic rate
+Temperature of EM
+Fig. Q.27
+A. Species IV was an ectothermic animal.
+B. Species II had the highest thermo-insulating ability among the five species.
+C. Species III possessed the highest basal metabolic rate among the five species.
+D. Increase in body temperature in species V was mainly dependent on metabolism.
+31/56
+Given answers: A=TRUE, B=TRUE, C=TRUE, D=FALSE
+
+--- Question 28 (id: q28) (26 figure(s) available, reference as [FIGURE-1]..[FIGURE-26]) ---
+Q.28
+BDNF, a brain protein, is crucial for neuron activities. BDNF is activated during the
+activation of neurons of the limbic system. An important function of BDNF in
+mammals is shown in Figure Q.28. The signal via the catecholamine receptor (β-AR)
+has a specific positive effect on the browning process and thermogenesis.
+↑ =
+increase
+BDNF ↑
+Nervous system
+Catecholamine
+β-AR ↑
+β-AR ↑
+Browning
+process
+White adipocytes
+Brown adipocytes
+Fig. Q.28
+A. Regularly learning and memorizing activities help to increase the number of
+brown fat cells.
+B. Inhibition of BDNF expression reduces the size of white adipose tissue.
+C. Psychological anxiety increases the manifestation of the β-AR.
+D. β-AR gene-deleted mice will show higher sensitivity to cold
+32/56
+Given answers: A=TRUE, B=FALSE, C=TRUE, D=TRUE
+
+--- Question 29 (id: q29) (1 figure(s) available, reference as [FIGURE-1]..[FIGURE-1]) ---
+Q.29
+The skeletal muscle fibers are divided into three types depending on the speed and
+energy sources of muscle contraction:
+Type I: Slow twitch, oxidative muscle fibers.
+Type IIa: Fast twitch, oxidative muscle fibers.
+Type IIb: Fast twitch, glycolytic muscle fibers.
+Figure Q.29 shows the correlation of mRNA expression levels of the genes Myh7,
+Myh2, and Myh1 specific for muscle fiber types I, IIa, and IIb, respectively, in human
+skeletal muscles of legs: quadriceps, gastrocnemius, and soleus muscles.
+3
+Quadriceps
+Gastrocnemius
+Relative mRNA levels
+Soleus
+2
+1
+0
+Myh1
+Myh2
+Myh7
+Figure Q.29.
+A. The soleus muscles of the sprinter athletes are prone to be more developed than
+those in the marathon athletes.
+B. The ratio of mitochondria number per muscle mass in the quadriceps muscle is
+less than that in the gastrocnemius muscle.
+C. The soleus muscle contains less sarcoplasmic reticulum than the gastrocnemius
+muscle does.
+D. Regularly doing the endurance exercise for a long period of time can increase the
+number of glycolytic muscle fibers in the gastrocnemius muscles.
+33/56
+Given answers: A=FALSE, B=TRUE, C=TRUE, D=FALSE
+
+--- Question 30 (id: q30) (no figures) ---
+Q.30
+Figure Q.30A shows an insulin secretion and the mechanism by which insulin
+stimulates glucose absorption into cell. The mechanism includes four steps depicted
+by the four circled digits 1 to 4.
+Four patients (E, F, G and H) had a defect each in a single step of the above
+mechanism. Patients E, F, G and H had defect in steps 1, 2, 3 and 4, respectively.
+These patients were given two tests:
+- Test 1: Muscle cells from each patient were isolated and the percentage of insulin
+binding cells at different concentrations of insulin was determined (Figure Q.30B).
+- Test 2: Each patient was injected with same insulin quantity related to their body
+mass and their plasma glucose concentrations were then measured at various times
+after injection (Figure Q.30C).
+Binding
+Glucose
+Insulin
+Transduction
+Insulin
+Receptor
+Plasma glucose concentration
+% cells bound to insulin
+secretion
+Transportation
+Insulin concentration
+Time after
+insulin injection
+Figure Q.30
+A. The result of Test 1 of Patient G could be shown in Line 1.
+B. Lines 2 and 3 show the results of Tests 1 and 2, respectively, of Patient F.
+C. Line 3 shows the tested result of Patient E.
+D. Lines 1 and 4 show the results of Tests 1 and 2, respectively, of Patient H.
+34/56
+ETHOLOGY
+Given answers: A=TRUE, B=TRUE, C=FALSE, D=FALSE
+
+--- Question 31 (id: q31) (no figures) ---
+Q.31
+The territorial behavior of the red-whiskered bulbul (Pycnonotus jocosus) was studied
+during pre-nesting and nesting periods. Songs of decoys were played from ten
+different locations around a farmhouse, where the test birds lived, and the time taken
+to start displaying territorial behavior by the resident male measured at the different
+locations (Table Q.31). The resident bird defended the territory with aggressive calls,
+threat display and tried to attack the decoy.
+Table Q.31
+Station
+Distance (m)
+Direction
+Pre-nesting
+Territory defense
+Response time
+Nesting
+Territory defense
+Response time
+Table Q.31.Mean response time = time taken to start displaying territorial behavior (minute). (+) signifies territory defense
+whereas (-) stands for “no territory defense”. N= north, S= south, E= east and W = west.
+Based on this information, indicate in the answer sheet if each of the following
+statements about the behavior of the birds is true or false.
+A. The territory size during the pre-nesting period was smaller than that during the
+nesting period.
+B. The quadrangle made by stations G, D, I and F marks the territory size of the
+bird.
+C. The male responded more rapidly to the decoy within its territory during the
+nesting period.
+D. The intensity of territorial behavior displayed is a dependent on seasonal
+fluctuation of hormones.
+35/56
+Given answers: A=FALSE, B=TRUE, C=TRUE, D=TRUE
+
+--- Question 32 (id: q32) (no figures) ---
+Q.32
+Female vampire bats live in colonies made up of unrelated females and their
+offsprings, and they feed exclusively on blood of herbivores. The fully-fed bats often
+share some of the blood that they collected with bats that are starving, and are more
+likely to receive blood from these individuals when they themselves starve.
+Indicate in the answer sheet if each of the following statements about this behavior of
+bats is mostly true or false.
+A. Kin selection plays an important role in evolution of the sharing behavior in
+vampire bats.
+B. Vampire bats are likely to live in colonies only for short periods of time.
+C. The bats showing this behavior have higher indirect fitness than if they would not
+do so.
+D. Vampire bats are able to recognize and remember other individual bats.
+36/56
+GENETICS AND EVOLUTION
+Given answers: A=FALSE, B=FALSE, C=FALSE, D=TRUE
+
+--- Question 33 (id: q33) (2 figure(s) available, reference as [FIGURE-1]..[FIGURE-2]) ---
+Q.33
+Mr. Long had ten strains of Escherichia coli with different mutations in their lac
+operon. Analyzing their DNA, he found that each strain is one of five mutation types:
+-
+-
+-,
+S
+S
+lacZ , lacY , lacI lacI (the repressor LacI can bind to the operator but cannot bind to
+c
+c
+the inducer), or lacO (the mutated operator lacO cannot be bound by the
+-
+repressor). Mr. Long also knew that strain number 6 is a lacZ mutant. Operon lac is
+shown below.
+lac operon
+DNA
+lacZ
+lacY
+lacA
+lacl
+lacO
+RNA polymerase
+mRNA
+β-galactosidase
+Permease
+Transacetylase
+Protein
+Inactive repressor
+Allolactose
+(inducer)
+Mr. Long isolated DNA containing the lac operon from each strain (donor) and
+transformed it into other strains, thus making the strain merodiploid (recipient).
+Thereafter recipient strains were cultured on minimal medium that contained lactose
+as the only carbon source. Growth of the strains was recorded in the table below (+
+means that the strain is growing, - means that the strain is not growing).
+Recipient strains
+Donor strains
+37/56
+Indicate in the answer sheet if each of the following statements is true or false.
+-
+A. Strain number 7 is a lac Z mutant.
+-
+B. Strain number 3 is a lac Y mutant.
+C. Strains number 2 and 4 are of the same mutation type.
+D. If strain number 5 receives DNA from itself, the transformed bacteria cannot
+grow.
+38/56
+Given answers: A=TRUE, B=TRUE, C=TRUE, D=FALSE
+
+--- Question 34 (id: q34) (no figures) ---
+Q.34
+Mr. Long analyzed DNA samples from three families using six loci of short tandem
+repeat (STR) on six different autosomal chromosomes. Each STR locus usually has
+many different alleles that are labeled by numbers, e.g. 3 and 5 for locus 1 of Huong
+sample, in the table. In the first family, the father is Hung, the mother is Huong and
+their son is Dung. In the second family, the father is Nhan and his two sons are Tin
+and Nghia. In the third family the father is Phu, and his son is Quy. Mr. Long also
+included a DNA sample from Dat who is unrelated to any of the three families.
+Samples were randomly encoded with numbers but the key was lost except for
+Huong’s sample.
+STR loci
+Locus 1 Locus 2 Locus 3 Locus 4 Locus 5 Locus 6
+Huong
+DNA samples
+Indicate in the answer sheet if each of the following statements is true or false.
+A. Sample 735 is Dat’s DNA.
+B. Sample 669 is Nhan’s DNA.
+C. Sample 938 is Hung’s DNA.
+D. Sample 297 can be Phu’s DNA.
+39/56
+Given answers: A=FALSE, B=TRUE, C=TRUE, D=TRUE
+
+--- Question 35 (id: q35) (no figures) ---
+Q.35
+Centromere position can be mapped using linear tetrads in some fungi. If there is no
+cross-over between gene E and the centromere, four spores are arranged in sequence
+of eeEE or EEee (Fig.Q.35A). If there is a cross-over between gene E and the
+centromere, four spores are arranged in sequence of eEeE or EeEe (Fig.Q.35B). There
+are many types of crossovers involving 2, 3 and 4 strands of chromatids as illustrated
+in Fig.Q.35C.
+Meiosis I
+Meiosis II
+C
+2-strand double crossover
+3-strand double crossover
+4-strand double crossover
+Figure Q.35
+Strain ab was crossed to strain a+ b+ and 100 linear tetrads were isolated. Those
+tetrads were divided into six classes as shown in the following table:
+Class 1
+Class 2
+Class 3
+Class 4
+Class 5
+Class 6
+Indicate in the answer sheet if each of the following statements is true or false.
+A. Locus a and b are located on the same arm of chromosome.
+B. Class 4 involves a 4-strand double crossover.
+C. Class 6 involves a 3-strand double crossover, with one between gene a and the
+centromere and between the centromere and gene b.
+D. Class 5 involves a 2-strand double crossover.
+40/56
+Given answers: A=FALSE, B=FALSE, C=TRUE, D=FALSE
+
+--- Question 36 (id: q36) (no figures) ---
+Q.36
+2
+Heritability in broad sense (H ) is the ratio of total genetic variance (V ) to total
+g
+2
+phenotypic variance (V ): H = V /V . The phenotypic variance is often divided into
+g
+p
+p
+three components: the genetic variance (V ), environmental variance (V ) and the
+g
+e
+interaction variance (V ), V = V + V + V . The genetic variance is divided into three
+i
+p
+g
+e
+i
+components: the additive genetic variance (V , cumulative effects of individual loci),
+a
+the dominant genetic variance (V ), and the genetic interaction variance (V ), V =
+d
+gi
+g
+2
+V + V + V . Heritability in narrow sense (h ) = V /V .
+a
+p
+a
+d
+gi
+Indicate in the answer sheet if each of the following statements about heritability is
+true or false
+2
+A. A low H value of a trait always indicates that the trait is determined mainly by
+the environment.
+B. Genetic variance depends on the environment to which the population is exposed.
+2
+C. The artificial selection for a trait with higher h is more successful than that for a
+2
+trait with lower h .
+D. Two pure strains of bean that produce seeds with different weights were crossed.
+The variances of seeds (V ) from F and F plants are 2.0 and 4.1, respectively. If
+p
+1
+2
+2
+we ignore interaction effects, H of seeds is 0.51.
+41/56
+Given answers: A=FALSE, B=TRUE, C=TRUE, D=TRUE
+
+--- Question 37 (id: q37) (no figures) ---
+Q.37
+F.D. Enfield selected for increased body size in the flour beetle Tribolium castaneum.
+He started with a population of beetles that had a mean weight of 2.4 g and variance
+2
+of 4.0 g . For each generation, the selection differential (the difference between the
+mean of a generation subset selected for further breeding and the overall mean of
+2
+2
+that generation) was 0.022g. The initial value of h (heritability in narrow sense- h is
+the ratio of the additive variance to the total phenotypic variance) for body size in the
+original population was 0.3. For the first 50 generations, the mean weight of the
+selected population increased steadily. After 125 generations of selection, the mean
+weight had increased to 5.8g, more than twice the original mean, and additional
+selection did not result in a further increase in size. The lightest individuals in the
+selected population were heavier than the heaviest individuals in the original
+2
+population. Enfield determined h for the selected population after 125 generations
+and discovered that it was only slightly less than for the original population.
+Based on above information, indicate in the answer sheet if each of the following
+statements is true or false.
+A. The failure of the population to respond to further selection was because the
+population genetic variation is exhausted.
+B. The reason why the mean of the population could be shifted to a value outside
+the original range of the population is that the selection for the increased the
+body size is a selection favoring heterozygotes.
+C. After 125 generations of selection, additional selection can result in a further
+increase in size if we increase the selection differential (higher than 0.022g).
+D. If selection was stopped after 125 generations of selection then the body size
+would decrease.
+42/56
+Given answers: A=FALSE, B=FALSE, C=FALSE, D=TRUE
+
+--- Question 38 (id: q38) (no figures) ---
+Q.38
+A mutated male mouse that is phenotypically normal shows reproductive anomalies
+when compared with a normal male in terms of mean number of embryos as shown in
+Table Q.38. The anomaly manifests itself after fertilization.
+Mean number of embryos
+Implanted in
+Degeneration after
+Normal Degeneration
+Mating
+uterine wall
+implantation
+(%)
+mutated ♂ X
+8.7
+5.0
+3.7
+57.5
+normal ♀
+normal ♂ X
+9.5
+0.6
+8.9
+6.5
+normal ♀
+Study carefully data given in the table and indicate in the answer sheet if each of the
+following statements is true or false.
+A. The mutated male mouse can have a chromosome deletion.
+B. The mutated male mouse can be a chromosomal translocation heterozygote.
+C. The mutated male mouse can be a chromosomal inversion heterozygote.
+D. The genetic defect in mutated male could be verified by cytological observation of
+meiotic cells in the mouse.
+43/56
+Given answers: A=FALSE, B=TRUE, C=TRUE, D=TRUE
+
+--- Question 39 (id: q39) (no figures) ---
+Q.39
+Speciation rates are variable in different lineages of organisms. Some lineages have
+many species; others have only a few.
+Indicate in the answer sheet if each of the following statements about the factors
+influencing speciation rates is true or false.
+A. The larger the number of species in some lineages, the larger number of
+opportunities for new species to form.
+B. Animal-pollinated plant families have, on average, more species than closely
+related families pollinated by wind.
+C. Animals with complex mating behavior are likely to form new species at a low
+rate.
+D. Oscillations of climates may increase the speciation rate.
+44/56
+Given answers: A=TRUE, B=TRUE, C=FALSE, D=TRUE
+
+--- Question 40 (id: q40) (no figures) ---
+Q.40
+About 50 years ago, Charles Yanofsky studied the sequence of the tryptophan
+synthetase of E. coli. The wild type protein (1) has a glycine in position 38. Yanofsky
+isolated two inactive trp mutants: 2 and 3. Mutant 2 had Arg instead of Gly at position
+38, and mutant 3 had Glu at position 38. Mutants 2 and 3 were plated on minimal
+medium (without tryptophan). Colonies appearing correspond to spontaneous
+mutations that restored tryptophan synthetase function. The amino acid at position 38
+was identified as described in figure A. Assume that each amino acid replacement
+results from a single base-pair change.
+B
+A
+Second base
+Wild type
+Third base
+First base
+Mutants
+Revertants
+Indicate in the answer sheet if each of following statements about codon 38 of
+tryptophan synthetase is true or false.
+A. Mutant 2 results from a base substitution at the first position of the codon.
+B. Strains 7 and 8 likely have the same sequence as the wild type strain.
+C. The codon in strain 10 is 5’GUA3’
+D. The codon in strain 6 is 5’AGC3’.
+45/56
+Given answers: A=TRUE, B=TRUE, C=TRUE, D=FALSE
+
+--- Question 41 (id: q41) (no figures) ---
+Q.41
+A
+Frequencies of the human AB0 blood group alleles in a population are p(I ) = 40%,
+B
+p(I )=40% and p(i)=20%.
+Assuming that the population is in Hardy-Weinberg equilibrium, indicate in the
+answer sheet if each of the following statements is true or false.
+A. In this population, the number of persons with the blood groups A and B should
+be equal.
+B. In this population, the number of persons with the blood groups A and AB should
+be equal.
+C. In this population the frequency of persons with anti-B antibodies is 64%.
+D. Locus AB0 is localized on an autosomal chromosome because the blood group
+frequencies are the same for men and women.
+46/56
+Given answers: A=TRUE, B=TRUE, C=FALSE, D=TRUE
+
+--- Question 42 (id: q42) (no figures) ---
+Q.42
+Frequency-dependent selection is an evolutionary process where the fitness of a
+phenotype depends on its frequency relative to other phenotypes in a given
+population. In positive frequency-dependent selection, the fitness of a phenotype
+increases as it becomes more common. And in negative frequency-dependent
+selection, the fitness of a phenotype decreases as it becomes more common.
+Indicate in the answer sheet if each of following statements is true or false.
+A. Plant self-incompatibility alleles are an example of negative frequency-dependent
+selection.
+B. Spreading of a newly emerged virus in a human population is controlled by
+negative frequency-dependent selection.
+C. Prevalence of Papilio memnon whose females resemble distasteful Papilio coon is
+an example of positive frequency-dependent selection.
+D. Spread of genes responsible for warning coloration in toxic organisms in
+population is controlled by positive frequency-dependent selection.
+47/56
+ECOLOGY
+Given answers: A=TRUE, B=TRUE, C=FALSE, D=TRUE
+
+--- Question 43 (id: q43) (no figures) ---
+Q.43
+A population of dragonfly larvae (Leucorrhinia intacta) is separated into two groups.
+In both groups, larvae populations are put inside a cage with no food limitation. The
+first group is exposed to a fish predator that can swim freely, but cannot enter the
+cage. The second group is a control with no fish. The proportion of larvae surviving
+and the proportion of live larvae failing to metamorphose in the two groups are shown
+below:
+but not to complete emergence
+Proportion of laravae surviving
+surviving to metamorphosis
+Proportion of larvae
+Fish
+No fish
+Fish
+No fish
+Figure Q.43
+A. One of the causes of high failure rate of metamorphosis of the larvae upon
+exposure to a non-lethal predator is cannibalism.
+B. The high mortality of larvae in the first group is due to predator-induced stress.
+C. In the predator treatment, the percentage of individuals that survived the larval
+stage completed emergence to the adult stage is lower than the percentage of
+those in the fishless treatment.
+D. The survival of dragonfly before metamorphosis is dependent on the predator
+while those during metamorphosis is not.
+48/56
+Given answers: A=FALSE, B=TRUE, C=TRUE, D=FALSE
+
+--- Question 44 (id: q44) (no figures) ---
+Q.44
+Laboratory experiments were conducted to examine the effects of temperature on
+interspecific competition between two stream salmonid fishes, Salvelinus
+malma and S. leucomaenis, with largely allopatric altitudinal distribution. Three
+combinations of species population, including allopatric populations of S.
+malma and S. leucomaenis, and sympatric populations of both species, were treated
+with low temperature (6°C) and high temperature (12°C), in which thriving allopatric
+populations of S. malma (6°C) and S. leucomaenis (12°C) are commonly found.
+High temperature
+Low temperature
+Allopatry
+Allopatry
+Sympatry
+Sympatry
+Survival proportion
+Days
+Days
+Days
+Days
+Figure Q.44
+A. Competition of these two species is likely to have been affected by temperature
+and altitude
+B. S. malma may be distributed at higher altitudinal ranges than is S. leucomaenis
+C. S. leucomaenis is likely to be more low-temperature stress-resistant than S.
+malma
+D. S. malma has a narrower fundamental niche than does S. leucomaenis
+49/56
+Given answers: A=TRUE, B=TRUE, C=FALSE, D=FALSE
+
+--- Question 45 (id: q45) (8 figure(s) available, reference as [FIGURE-1]..[FIGURE-8]) ---
+Q.45
+Male guppies (Poecilia reticulata) show a complex color pattern polymorphism that
+varies with predation pressure, reflecting a balance between selection for crypsis by
+predators and selection for conspicuousness by sexual selection. Three experimental
+ponds were used to study this phenomenon, mimicking the real condition on the
+native habitat of the guppies and its predators, Rivulus hartii and Crenicichla alta.
+One pond has the control group while the other two ponds were added with one of the
+two predators. In the field, C. alta was observed to be more dangerous than R. hartii.
+R
+13
+K
+12
+Spots per fish
+11
+C
+10
+9
+8
+0
+20
+10
+Months
+Census
+F
+S
+I
+II
+Figure Q.45. Changes in the number of spots per fish during the course of the experiment. Line ‘K’ stands for pond
+without predator, ‘R’ for pond with R. hartii, and ‘C’ for pond with C. alta. In the X-axis, ‘F’ stands for the time when the
+foundation population was started, ‘S’ stands for the time when the predators were added, then ‘I’ and ‘II’ stands for the
+numbering of the following censuses.
+A. The color pattern is responsible for the reduced fitness of P. reticulata.
+B. Sexual selection for color pattern of the P. reticulata cannot be inferred from the
+data.
+C. The color pattern of the P. reticulata may be advantagous in escaping R. hartii.
+D. The two predators possibly use two different mechanisms to detect P. reticulata.
+50/56
+Given answers: A=FALSE, B=FALSE, C=FALSE, D=TRUE
+
+--- Question 46 (id: q46) (no figures) ---
+Q.46
+The dioecious perennial Poa grass coexists with Stipa grass in the steppes. The
+former is highly preferred by domestic and wild herbivores, while the latter is
+relatively unpalatable. Scientists grew Poa plants in different distances to Stipa
+plants, with or without root barrier, in different grazing levels, and then recorded the
+growth of Poa plants.
+Ungrazed
+Moderate grazing
+Intense grazing
+Female
+Total biomass (g)
+Male
+Far
+Far
+Far
+Close
+Close
+Close
+Figure Q.46-1. Effects of distance (close and far) and barrier (without barrier (-B) and with the barrier present (+B)) to root
+competition manipulations on Poa female (top panels) and male plants (bottom panels) total biomass, at each grazing
+intensity level.
+In another experiment, they recorded the density of Poa male and female plants under
+differenet grazing levels.
+6
+Females
+Males
+/m2)
+Density (plants
+4
+2
+0
+Ungrazed
+Intense
+Moderate
+grazing
+grazing
+Fig.Q.46-2
+51/56
+A. Distance to the less palatable Stipa neighbours affects the Poa biomass of
+females and males at the ungrazed site.
+B. Plants at the moderate grazing site, whether male or female, generally perform
+better near Stipa tussocks than far from them, demonstrating a positive effect of
+Stipa canopies on both genders.
+C. There is a strong below-ground competition between Poa females and Stipa
+neighbours at the ungrazed site.
+D. Population sex ratio drift between female and male bias is influenced by domestic
+grazing intensity.
+52/56
+Given answers: A=FALSE, B=TRUE, C=TRUE, D=TRUE
+
+--- Question 47 (id: q47) (8 figure(s) available, reference as [FIGURE-1]..[FIGURE-8]) ---
+Q.47
+Goats are fed with alfalfa and corn stubble. At time 0, they were also fed with Mimosa
+seeds. The presence of viable Mimosa seeds in goat faeces was recorded with a
+germination experiment with egested and control seeds.
+A
+B
+1.0
+14
+Probability of non germinating
+0.9
+12
+0.8
+10
+% seeds found
+8
+0.7
+6
+0.6
+4
+0.5
+2
+0.4
+0
+0
+5
+10
+15
+20
+25
+8
+16
+24
+32
+40
+48
+56
+64
+72
+80
+Time (days)
+Time after ingestion (h)
+Figure Q.47 A: Percent of Mimosa seeds found in goat faeces as a function of time after ingestion. Goat pellets were
+collected every 8 hours over a period of 80 hours after ingestion. B: Probability of non germinating of egested (stippled
+line) and control (solid line) Mimosa seeds.
+A. Mimosa seed can survive up to 3 days in the goat digestive system.
+B. The passage through the goat digestive system decreases seed germination.
+C. Number of seeds egested after ingestion is highest after 24 hours.
+D. Goats could act as legitimate disperser of Mimosa seeds.
+53/56
+BIOSYSTEMATICS
+Given answers: A=TRUE, B=FALSE, C=TRUE, D=TRUE
+
+--- Question 48 (id: q48) (no figures) ---
+Q.48
+Study the cladogram given below and indicate if each of the following statements is
+true or false.
+A. The clade containing (d) and (e) is a sister group to the taxon consisting of (a), (b)
+and (c).
+B. The last common ancestor of (b) and (c) descended from the last common
+ancestor of (c) and (d).
+C. Taxon (b) is more closely related to taxon (a) than to taxon (e).
+D. The lineage leading to taxon (a) was the first to diverge from the other lineages.
+54/56
+Given answers: A=FALSE, B=TRUE, C=FALSE, D=TRUE
+
+--- Question 49 (id: q49) (no figures) ---
+Q.49
+Most taxonomists today believe that biological classification systems should reflect
+the evolutionary relationships of organisms and taxonomic groups should be
+monophyletic. However, the classification used today still contains many polyphyletic
+and paraphyletic taxonomic groups.
+Indicate in the answer sheet if each of the following statements is true or false.
+A. Polyphyletic taxa can arise when taxa that are not directly related share similar
+character states due to convergence
+B. If a classification is based on phenotypic similarity, paraphyletic taxonomic
+groups may result
+C. Some taxa in a paraphyletic taxonomic group have phenotypically evolved at
+different rates compared to closely related taxa that are not included in the
+group.
+D. All molecular data support gymnosperms as a monophyletic taxon.
+55/56
+Given answers: A=TRUE, B=TRUE, C=TRUE, D=FALSE
+
+--- Question 50 (id: q50) (no figures) ---
+Q.50
+Using sequence differences to establish phylogenies has some advantages and
+possible dangers. An inappropriate choice of molecule could result in molecular trees
+that greatly distort true phylogenetic relationships. Hence, care must be taken in
+using this approach.
+Indicate in the answer sheet if each of following statements is true or false.
+A. Polypeptide sequences of cytochrome c are very useful for establishing
+evolutionary relationships between closely related species.
+B. For phylogenetic analysis, comparing partial sequences from many different
+genes is better than comparing full-length sequences of several genes.
+C. Rates  of nucleotide substitution per unit of time are faster in organisms with
+short generation times than in organisms with long generation times.
+D. The Neutral Theory requires that all polypeptide and DNA sequences evolve at
+the same rate.
+END OF THEORY PART A
+56/56
+Given answers: A=FALSE, B=TRUE, C=TRUE, D=FALSE

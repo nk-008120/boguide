@@ -627,24 +627,16 @@ Hence D = 1 + 1*2 = 3<br><br>
 {{< /tabs >}}
 
 <script>
-/* BOGuide Dynamic TOC v3, rewrites from scratch
-   Key fixes vs previous versions:
-   1. Panel detection: maps tab button index → panel index, no reliance on [hidden]
-   2. Links: onclick-based, activates the right tab then scrolls, no bare href anchors
-   3. Change detection: MutationObserver on aria-selected attribute changes, not click events
-   4. Works whether Hextra uses display:none, visibility, or [hidden] to hide panels
-*/
+
 (function () {
   'use strict';
 
   var TAB_DELAY = 80; // ms to wait after tab switch before scanning headings
 
-  /* ── slugify ─────────────────────────────────────────────────────────── */
   function slugify(t) {
     return t.toLowerCase().replace(/[^\w\s-]/g,'').replace(/\s+/g,'-').replace(/-+/g,'-').trim();
   }
 
-  /* ── Get the currently active panel by matching button → panel index ─── */
   function getActivePanel() {
     var buttons = Array.from(document.querySelectorAll('[role="tab"]'));
     var panels  = Array.from(document.querySelectorAll('[role="tabpanel"]'));
@@ -660,7 +652,6 @@ Hence D = 1 + 1*2 = 3<br><br>
     return panels[idx] || panels[0] || null;
   }
 
-  /* ── Get or create the TOC nav element ──────────────────────────────── */
   function getTocEl() {
   var el = document.getElementById('boguide-toc');
   if (el) return el;
@@ -684,8 +675,6 @@ Hence D = 1 + 1*2 = 3<br><br>
   document.body.appendChild(el);
   return el;
 }
-
-  /* ── Build (or rebuild) the TOC ─────────────────────────────────────── */
   function buildToc() {
     var panel = getActivePanel();
     var tocEl = getTocEl();
@@ -746,7 +735,6 @@ Hence D = 1 + 1*2 = 3<br><br>
     tocEl.style.display = 'block';
   }
 
-  /* ── TOC link click handler, activate panel then scroll ─────────────── */
   window.boGuideTocNav = function(link) {
     var panelIdx = parseInt(link.getAttribute('data-panel'), 10);
     var hid      = link.getAttribute('data-hid');
@@ -774,7 +762,6 @@ Hence D = 1 + 1*2 = 3<br><br>
     }
   };
 
-  /* ── Watch for tab changes via MutationObserver on aria-selected ─────── */
   function attachObserver() {
     var tablist = document.querySelector('[role="tablist"]');
     if (!tablist) return;
@@ -799,7 +786,6 @@ Hence D = 1 + 1*2 = 3<br><br>
                            attributeFilter: ['aria-selected','class','data-state'] });
   }
 
-  /* ── MathJax re-render on tab switch ─────────────────────────────────── */
   function attachMathJax() {
     var tablist = document.querySelector('[role="tablist"]');
     if (!tablist) return;
@@ -812,7 +798,6 @@ Hence D = 1 + 1*2 = 3<br><br>
     });
   }
 
-  /* ── Init ────────────────────────────────────────────────────────────── */
   document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
       buildToc();

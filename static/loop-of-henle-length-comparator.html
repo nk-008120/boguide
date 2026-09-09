@@ -91,7 +91,7 @@
     svg.appendChild(concLabel);
 
     var animalLabel = pct < 15 ? 'Beaver-like (short loop, aquatic)' : pct < 55 ? 'Rabbit-like (intermediate loop)' : 'Kangaroo-rat-like (elongated loop)';
-    readout.innerHTML = '<b>' + animalLabel + '</b> — maximum urine concentration ≈ <b>' + conc + ' mOsm/L</b> (blood osmolarity is ~300 mOsm/L). A longer loop builds a steeper countercurrent gradient, allowing far more concentrated urine.';
+    readout.innerHTML = '<b>' + animalLabel + '</b> - maximum urine concentration ≈ <b>' + conc + ' mOsm/L</b> (blood osmolarity is ~300 mOsm/L). A longer loop builds a steeper countercurrent gradient, allowing far more concentrated urine.';
   }
 
   slider.addEventListener('input', render);

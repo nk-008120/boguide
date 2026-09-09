@@ -83,11 +83,11 @@
   function note(penalty){
     var el = document.getElementById('note');
     if (penalty >= 60){
-      el.innerHTML = '<b>High hybrid penalty:</b> hybrids are strongly unfit, so selection favors individuals that avoid mating across the boundary — prezygotic isolation is being <b>reinforced</b>, and the hybrid zone should progressively narrow toward a sharp species boundary.';
+      el.innerHTML = '<b>High hybrid penalty:</b> hybrids are strongly unfit, so selection favors individuals that avoid mating across the boundary - prezygotic isolation is being <b>reinforced</b>, and the hybrid zone should progressively narrow toward a sharp species boundary.';
     } else if (penalty <= 20){
-      el.innerHTML = '<b>Low hybrid penalty:</b> hybrids are nearly as fit as either parental type, so there is little selection against interbreeding at the boundary — the zone is expected to <b>persist</b> as a stable hybrid zone rather than narrow.';
+      el.innerHTML = '<b>Low hybrid penalty:</b> hybrids are nearly as fit as either parental type, so there is little selection against interbreeding at the boundary - the zone is expected to <b>persist</b> as a stable hybrid zone rather than narrow.';
     } else {
-      el.innerHTML = '<b>Moderate hybrid penalty:</b> some selection against hybrids, but not enough to drive strong reinforcement quickly — the zone narrows slowly, if at all.';
+      el.innerHTML = '<b>Moderate hybrid penalty:</b> some selection against hybrids, but not enough to drive strong reinforcement quickly - the zone narrows slowly, if at all.';
     }
   }
 

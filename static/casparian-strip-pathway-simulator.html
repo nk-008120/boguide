@@ -130,7 +130,7 @@
   apoBtn.addEventListener('click', function(){
     reset();
     apoBtn.classList.add('active');
-    note.innerHTML = 'Traveling through the <b>apoplast</b> (cell walls and intercellular spaces) — watch what happens at the yellow endodermis ring.';
+    note.innerHTML = 'Traveling through the <b>apoplast</b> (cell walls and intercellular spaces) - watch what happens at the yellow endodermis ring.';
     var pts = lerpPath(130,10,130,73,6);
     animateAlong(pts, function(){
       endodermisRing.setAttribute('stroke', '#d9534f');
@@ -138,7 +138,7 @@
       setTimeout(function(){
         var pts2 = lerpPath(130,73,130,132,4);
         animateAlong(pts2, function(){
-          note.innerHTML = 'Reached the stele — but only after being forced from the apoplast into the symplast at the endodermis, the one mandatory membrane-crossing checkpoint on this route.';
+          note.innerHTML = 'Reached the stele - but only after being forced from the apoplast into the symplast at the endodermis, the one mandatory membrane-crossing checkpoint on this route.';
         });
       }, 600);
     });
@@ -147,7 +147,7 @@
   symBtn.addEventListener('click', function(){
     reset();
     symBtn.classList.add('active');
-    note.innerHTML = 'Traveling through the <b>symplast</b> (cell-to-cell via cytoplasm and plasmodesmata) the whole way — no detour needed at the endodermis.';
+    note.innerHTML = 'Traveling through the <b>symplast</b> (cell-to-cell via cytoplasm and plasmodesmata) the whole way - no detour needed at the endodermis.';
     var pts = lerpPath(130,10,130,132,10);
     animateAlong(pts, function(){
       note.innerHTML = 'Reached the stele directly. The symplast pathway already crosses a membrane once, near the epidermis, so the endodermis poses no additional barrier.';

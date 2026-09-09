@@ -5,7 +5,7 @@ title: "Q46 - Mendelian Probability in Pea Pods"
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
-  <a class="papers-subject-tag" href="/resources/7-genetics/mendelian-inheritance-probability/">Mendelian Inheritance & Probability</a>
+  <a class="papers-subject-tag" href="/resources/7-genetics/mendelian-inheritance-probability/">Mendel's Laws & Probability in Genetics</a>
 </div>
 
 A green and wrinkled seeds pea strain was crossed with a yellow and round seeds pea strain. All F₁ seeds were yellow and round. In F₂ progenies, statistically large numbers of pea seeds show inheritance according to Mendel's laws. However, small numbers of seeds could demonstrate other distributions in analysis.

@@ -73,7 +73,7 @@
   function render(flowFraction){
     svg.innerHTML = '';
     var title = el('text', {x:240, y:20, 'font-size':13, 'font-weight':700, fill:'#1a472a', 'text-anchor':'middle'});
-    title.textContent = submerged ? 'Submerged — dive reflex active' : 'At the surface — normal circulation';
+    title.textContent = submerged ? 'Submerged - dive reflex active' : 'At the surface - normal circulation';
     svg.appendChild(title);
 
     organs.forEach(function(o){

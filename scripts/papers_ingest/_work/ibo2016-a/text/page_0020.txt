@@ -1,0 +1,40 @@
+Q.15
+Scientists measured length and height of rhizophores of mangrove plant (Rhizophora
+mangle, Fig.Q15A). They also made cross sections of rhizophores and observed their
+anatomical characteristics. The results are shown in Q15B and Q15C. 
+Plant axis
+1st order rhizophore
+2nd order rhizophore
+3th order rhizophore
+4th order rhizophore
+5th order rhizophore
+1st order rhizophore height
+ground
+1st order rhizophore length
+A
+Rhizopore order
+Rhizophore length/height
+Rhizophore height
+C
+Rhizophore order
+Distance from main stem (m)
+Tissue area (%)
+Bark
+Xylem
+Pith
+Fig.Q15. Rhizophores of Rhizophora mangle plants. A: Rhizophore height and length measurement. B: Change in height
+(empty square) and in length/height proportion (full circle) in five sequential orders of rhizophores. C: Relative proportions
+of bark (including aerenchyma), xylem and pith along the length of individual first-order rhizophores (left), and at the base
+of rhizophores of sequential orders (right).
+Indicate in the Answer sheet if each of the following statements is True or False. 
+A. There are monotonic decreases in rhizophore height and the length/height
+proportion in the rhizophores as a function of the rhizophore order.
+B. Within first-order rhizophores, the xylem proportion in the cross-section is larger
+when closer to the main stem, and decreases progressively   as   the   rhizophore  
+approached   the   ground while increasing the proportion of bark and pith.
+C. When rhizophore order changes from 1 to 5, bark and pith proportion decreases,
+while xylem propotion increases.
+D. The supportive function is likely enhanced in the first-order rhizophores, with
+lower length/height proportion, and higher proportion of xylem compared with
+bark and pith.
+19/56

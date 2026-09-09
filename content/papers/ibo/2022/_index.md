@@ -1,5 +1,6 @@
 ---
 title: "IBO 2022"
+description: "IBO 2022 Yerevan theory papers: timed practice, per-question solutions, and leaderboard on BiOrchive."
 ---
 
 {{< biorchive-bg >}}

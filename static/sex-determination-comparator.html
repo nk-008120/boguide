@@ -88,7 +88,7 @@
         { label: 'Daughter (XX)', chroms: [{t:'X',c:MOTHER},{t:'X',c:FATHER}] },
         { label: 'Son (XY)', chroms: [{t:'X',c:MOTHER},{t:'Y',c:FATHER}] }
       ],
-      explain: 'Every offspring receives an X from the mother. Sons receive a Y from the father; daughters receive an X from the father instead — the father determines offspring sex.'
+      explain: 'Every offspring receives an X from the mother. Sons receive a Y from the father; daughters receive an X from the father instead - the father determines offspring sex.'
     },
     zw: {
       parents: [
@@ -99,7 +99,7 @@
         { label: 'Son (ZZ)', chroms: [{t:'Z',c:MOTHER},{t:'Z',c:FATHER}] },
         { label: 'Daughter (ZW)', chroms: [{t:'Z',c:FATHER},{t:'W',c:MOTHER}] }
       ],
-      explain: 'Every offspring receives a Z from the father. Daughters receive a W from the mother; sons receive a Z from the mother instead — the mother determines offspring sex, the reverse of the XY system.'
+      explain: 'Every offspring receives a Z from the father. Daughters receive a W from the mother; sons receive a Z from the mother instead - the mother determines offspring sex, the reverse of the XY system.'
     },
     xo: {
       parents: [
@@ -110,7 +110,7 @@
         { label: 'Daughter (XX)', chroms: [{t:'X',c:MOTHER},{t:'X',c:FATHER}] },
         { label: 'Son (X0)', chroms: [{t:'X',c:MOTHER},{t:'',c:'',blank:true}] }
       ],
-      explain: 'The father has no second sex chromosome at all, so he produces two sperm types: X-bearing and chromosome-less. An X-bearing sperm makes a daughter (XX); a chromosome-less sperm makes a son (X0) — the mother always contributes one X either way.'
+      explain: 'The father has no second sex chromosome at all, so he produces two sperm types: X-bearing and chromosome-less. An X-bearing sperm makes a daughter (XX); a chromosome-less sperm makes a son (X0) - the mother always contributes one X either way.'
     },
     hd: {
       parents: [
@@ -118,10 +118,10 @@
         { label: 'Drone (haploid, n)', chroms: [{t:'',c:FATHER}] }
       ],
       offspring: [
-        { label: 'Female — fertilized egg (diploid, 2n)', chroms: [{t:'',c:MOTHER},{t:'',c:MOTHER},{t:'',c:MOTHER},{t:'',c:FATHER}] },
-        { label: 'Male — unfertilized egg (haploid, n)', chroms: [{t:'',c:MOTHER},{t:'',c:MOTHER},{t:'',c:MOTHER}] }
+        { label: 'Female - fertilized egg (diploid, 2n)', chroms: [{t:'',c:MOTHER},{t:'',c:MOTHER},{t:'',c:MOTHER},{t:'',c:FATHER}] },
+        { label: 'Male - unfertilized egg (haploid, n)', chroms: [{t:'',c:MOTHER},{t:'',c:MOTHER},{t:'',c:MOTHER}] }
       ],
-      explain: 'Sex is set by ploidy, not a sex chromosome. A fertilized egg (mother\'s set + father\'s set) develops as a diploid female; an unfertilized egg (mother\'s set only — the father contributes nothing) develops as a haploid male.'
+      explain: 'Sex is set by ploidy, not a sex chromosome. A fertilized egg (mother\'s set + father\'s set) develops as a diploid female; an unfertilized egg (mother\'s set only - the father contributes nothing) develops as a haploid male.'
     }
   };
   var btns = { xy: 'm-xy', zw: 'm-zw', xo: 'm-xo', hd: 'm-hd' };

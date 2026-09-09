@@ -1408,14 +1408,12 @@ $$\log S = \log c + z\log A$$
 (function () {
   'use strict';
 
-  var TAB_DELAY = 80; // ms to wait after tab switch before scanning headings
+  var TAB_DELAY = 80; 
 
-  /* ── slugify ─────────────────────────────────────────────────────────── */
   function slugify(t) {
     return t.toLowerCase().replace(/[^\w\s-]/g,'').replace(/\s+/g,'-').replace(/-+/g,'-').trim();
   }
 
-  /* ── Get the currently active panel by matching button → panel index ─── */
   function getActivePanel() {
     var buttons = Array.from(document.querySelectorAll('[role="tab"]'));
     var panels  = Array.from(document.querySelectorAll('[role="tabpanel"]'));
@@ -1431,7 +1429,6 @@ $$\log S = \log c + z\log A$$
     return panels[idx] || panels[0] || null;
   }
 
-  /* ── Get or create the TOC nav element ──────────────────────────────── */
   function getTocEl() {
   var el = document.getElementById('boguide-toc');
   if (el) return el;
@@ -1455,7 +1452,7 @@ $$\log S = \log c + z\log A$$
   document.body.appendChild(el);
   return el;
 }
-  /* ── Build (or rebuild) the TOC ─────────────────────────────────────── */
+
   function buildToc() {
     var panel = getActivePanel();
     var tocEl = getTocEl();
@@ -1516,7 +1513,6 @@ $$\log S = \log c + z\log A$$
     tocEl.style.display = 'block';
   }
 
-  /* ── TOC link click handler, activate panel then scroll ─────────────── */
   window.boGuideTocNav = function(link) {
     var panelIdx = parseInt(link.getAttribute('data-panel'), 10);
     var hid      = link.getAttribute('data-hid');
@@ -1544,7 +1540,6 @@ $$\log S = \log c + z\log A$$
     }
   };
 
-  /* ── Watch for tab changes via MutationObserver on aria-selected ─────── */
   function attachObserver() {
     var tablist = document.querySelector('[role="tablist"]');
     if (!tablist) return;
@@ -1569,7 +1564,6 @@ $$\log S = \log c + z\log A$$
                            attributeFilter: ['aria-selected','class','data-state'] });
   }
 
-  /* ── MathJax re-render on tab switch ─────────────────────────────────── */
   function attachMathJax() {
     var tablist = document.querySelector('[role="tablist"]');
     if (!tablist) return;
@@ -1582,7 +1576,6 @@ $$\log S = \log c + z\log A$$
     });
   }
 
-  /* ── Init ────────────────────────────────────────────────────────────── */
   document.addEventListener('DOMContentLoaded', function() {
     setTimeout(function() {
       buildToc();

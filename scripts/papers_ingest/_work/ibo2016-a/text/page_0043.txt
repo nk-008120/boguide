@@ -1,0 +1,30 @@
+Q.37
+F.D. Enfield selected for increased body size in the flour beetle Tribolium castaneum.
+He started with a population of beetles that had a mean weight of 2.4 g and variance
+of 4.0 g . For each generation, the selection differential (the difference between the
+mean of a generation subset selected for further breeding and the overall mean of
+that generation) was 0.022g. The initial value of h (heritability in narrow sense- h is
+the ratio of the additive variance to the total phenotypic variance) for body size in the
+original population was 0.3. For the first 50 generations, the mean weight of the
+selected population increased steadily. After 125 generations of selection, the mean
+weight had increased to 5.8g, more than twice the original mean, and additional
+selection did not result in a further increase in size. The lightest individuals in the
+selected population were heavier than the heaviest individuals in the original
+population. Enfield determined h for the selected population after 125 generations
+and discovered that it was only slightly less than for the original population.
+Based on above information, indicate in the answer sheet if each of the following
+statements is true or false.
+A. The failure of the population to respond to further selection was because the
+population genetic variation is exhausted.
+B. The reason why the mean of the population could be shifted to a value outside
+the original range of the population is that the selection for the increased the
+body size is a selection favoring heterozygotes. 
+C. After 125 generations of selection, additional selection can result in a further
+increase in size if we increase the selection differential (higher than 0.022g).
+D. If selection was stopped after 125 generations of selection then the body size
+would decrease.
+2
+2
+2
+2
+42/56

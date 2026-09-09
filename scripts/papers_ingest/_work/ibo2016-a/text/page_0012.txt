@@ -1,0 +1,38 @@
+Q.7
+Poly(3-hydroxybutyrate) (PHB) is a bacterial storage material which is accumulated by
+various bacteria, usually when grown under limitation of a nutrient such as oxygen,
+nitrogen, phosphate, sulphur, or magnesium and in the presence of excess carbon.
+Fig. Q7 shows the PHB synthesis pathway of Ralstonia eutropha from acetyl-CoA,
+which is regulated by feedback inhibition.  In addition, acetyl-CoA can enter the citric
+acid cycle.
+Glucose
+Poly(3-hydroxybutyrate)
+PHB
+HSCoA
+citric
+acid
+cycle
+*
+: citrate synthase
+*
+β-Ketothiolase
+PHB
+synthase
+Acetoacetyl-
+CoA-reductase
+Acetyl-
+CoA
+Acetoacetyl-
+CoA
+D-β-hydroxy-
+butyryl-CoA
+Fig. Q7. PHB synthesis pathway
+Indicate in the Answer Sheet if each of the following statements is True or False
+A. The increase in activity of citrate synthase will reduce the production of PHB.
+B. When the intracellular concentration of HSCoA is high, the rate of PHB synthesis
+will increase.
+C. When the rate of PHB synthesis increases, the growth rate of Ralstonia eutropha
+cells will also increase.
+D. PHB synthesis is stimulated by low ratios of (NADPH+H ​)/NADP.
++
+11/56

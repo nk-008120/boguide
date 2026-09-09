@@ -1,0 +1,166 @@
+section: "1-cell-molecular"
+slug: "Lipids-Membrane-Biochemistry"
+title: "Lipids & Membrane Biochemistry"
+questions:
+  - id: 1
+    difficulty: "easy"
+    source: "USABO"
+    contributor: "SM"
+    question: |
+
+      One reason phospholipids are well suited to be the main structural component of membranes is:
+      A. They are completely insoluble in water.
+      B. They provide energy for transport through the membrane.
+      C. They form a structure in which the hydrophobic portion faces outward.
+      D. They form a single sheet in water.
+      E. They form a selectively permeable structure.
+    solution: |
+
+      Answer – E
+
+      Evaluating each statement,
+
+      A – IncorrectSolution - 
+      Phospholipids are amphipathic (having both hydrophilic and hydrophobic parts), not completely insoluble.
+
+      B – IncorrectSolution - 
+      They do not supply energy for transport; transport relies on electrochemical gradients or ATP.
+
+      C – IncorrectSolution - 
+      The hydrophobic tails face inward toward each other, away from water, rather than outward.
+
+      D – IncorrectSolution - 
+      They naturally assemble into a two-layered sheet (bilayer) rather than a single sheet.
+
+      E – CorrectSolution - 
+      The plasma membrane formed by a phospholipid bilayer creates a hydrophobic core that restricts the passage of polar and charged molecules while allowing small, nonpolar molecules to pass freely.
+  - id: 2
+    difficulty: "medium"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      Arachidonic acid is a 20-carbon polyunsaturated fatty acid (20:4 all cis5,8, 11, 14eicosatetraenoic acid). It is found in the membrane and during inflammatory stimulus, it is released by the action of phospholipase A2. It acts as a precursor for prostaglandins and leukotrienes through the catalytic action of cyclooxygenases.
+      Indicate whether each of the following statements regarding arachidonic acids is true or falseA
+      . It contributes to the fluidity of the membrane.B
+      . It acquires a U-shaped structure.C
+      . Its structure is favourable for cyclization catalyzed by cyclooxygenases.D
+      . The redness and swelling at the site of inflammation is reduced by prostaglandins.
+    solution: |
+
+      Answer – A – T, B – T, C – T, D – F
+
+      Evaluating each statement,
+
+      A – True
+
+      Solution – Since arachidonic acid has cis double bonds, it produces kinks which stops tight packing of lipids and increases fluidity.
+
+      B – True
+
+      Solution – 4 cis bonds will cause a U-shaped structure.
+
+      C – True
+
+      Solution – Since arachidonic acid has a U-shaped structure, it is easy to convert it into a cyclic structure.
+
+      D – False
+
+      Solution – Prostaglandins do not reduce (on the contrary, it causes) redness and swelling at site of inflammation.
+  - id: 3
+    difficulty: "medium"
+    source: "USABO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/lipids-membrane-biochemistry-q3.png)
+
+      Iodine can react with the carbon-carbon double bonds in unsaturated fatty acids, as shown below when it reacts with linoleic acid.
+
+      A 10.0 g sample of arachidonic acid (molecular weight: 304 g/mol) absorbs 33.3 g of iodine (molecular weight: 254 g/mol). How many carbon-carbon double bonds are present per molecule of arachidonic acid (nearest integer)?
+    solution: |
+
+      Answer – 4
+
+      Solution – 1 double bond absorbs 1 molecule of I2Number of double 
+      bonds  = 33.3 / 254 molMoles of arachidonic acid = 10.0 / 304 mol
+      Number of double bonds in one molecule of arachidonic acid = (33.3 / 254) / (10 / 304) = 3.98 
+      ≈ 4
+  - id: 4
+    difficulty: "hard"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/lipids-membrane-biochemistry-q4-1.png)
+
+      Two bacterial species, P and Q, when analysed for the membrane lipid composition, revealed the following results (graph I):
+
+      ![image](/CHALLENGEPICS/lipids-membrane-biochemistry-q4-2.png)
+
+      When cells were cultured at 37°C and then shifted either to 15°C or 42°C temperatures, the data for colony-forming units (CFUs) obtained is depicted in graph II.
+
+      Indicate whether each of the following interpretation is True or False:A
+      . Fatty acids of lower molecular weight are likely to impart more fluidity to the membrane.B
+      . Unsaturated fatty acids are likely to provide more fluidity to the membrane that is required for cells to grow at higher temperatures.C
+      . Culture P performs better at lower temperature as it has greater energy storage in the form of fatty acids.D
+      . Membrane of bacteria P with more fluidity is likely to outperform Q at all temperatures.E
+      . Weaker hydrogen bonding and increased membrane permeability will be observed in organism P at higher temperatures.
+    solution: |
+
+      Answer – A - T, B - F, C - F, D - F, E - T
+
+      Evaluating each statement,
+
+      A – True
+
+      Solution – From Graph I, P has more fatty acids of lower molecular weight. In Graph II, P dominates in 15
+      °C where more membrane fluidity must be present to counteract effects of decreased temperature (rigidity). So, low weight fatty acids must provide more fluidity.
+
+      B – False
+
+      Solution – Unsaturated fatty acids are predominant in P from graph I but survival of P at 42
+      °C is low in Graph II.
+
+      C – False
+
+      Solution – No such interpretation can be made from composition of membrane lipids.
+
+      D – False
+
+      Solution – At higher temperatures, Q outcompetes P.
+
+      E – True
+
+      Solution – As temperature increases, the hydrogen bonds become weaker and fluidity of membrane increases.
+  - id: 5
+    difficulty: "hard"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/lipids-membrane-biochemistry-q5.png)
+
+      The fluidity of a membrane depends primarily on the kinds of lipids it contains. When the temperature of a typical membrane preparation is increased slowly in a calorimetric chamber, a peak of heat absorption marks the gel-to-fluid transition temperature (Tm). Figure 1 depicts the Tm of three kinds of membranes while figure 2 depicts the effect of chain length and number of double bonds on the Tm of fatty acids.
+
+      Mark the correct statement.A
+      . Animals living in sub-zero habitats most likely have fewer double bonds with a chain length of 10 C atoms or more.B
+      . Membranes with oleate enriched fatty acids are essential for homeotherms living in tropical climates.C
+      . Curves I and II represent membranes of terrestrial animals while III represents aquatic animals.D
+      . Membranes with higher stearate content are likely to be less fluidic than those with higher oleate content.
+    solution: |
+
+      Answer – D
+
+      Evaluating each statement,
+
+      A – IncorrectSolution - 
+      Animals in sub-zero environments need to keep their membranes fluid to prevent them from freezing. They do this by having more double bonds (unsaturated fatty acids) and shorter chain lengths, not fewer.
+
+      B – IncorrectSolution - 
+      Homeotherms (warm-blooded animals) maintain a constant internal body temperature. Organisms living in hot, tropical climates generally require more saturated fatty acids (like stearate) to keep their membranes stable and prevent them from becoming too fluid at high temperatures.
+
+      C - IncorrectSolution – This is not a hard fast rule since terrestrial animals can have a wide variety of temperature ranges e.g. from arctic to desert conditions.
+
+      D – CorrectSolution - 
+      Stearate is a saturated fatty acid (18:0) with no double bonds. Its straight hydrocarbon chains pack tightly together, which increases membrane rigidity and decreases fluidity. Oleate is an unsaturated fatty acid (18:1) with a cis-double bond. This double bond creates a kink in the hydrocarbon chain, preventing tight packing and increasing fluidity. Therefore, a membrane with more stearate will naturally be less fluid than one rich in oleate.

@@ -1,0 +1,32 @@
+Q.30
+Figure Q.30A shows an insulin secretion and the mechanism by which insulin
+stimulates glucose absorption into cell. The mechanism includes four steps depicted
+by the four circled digits 1 to 4.
+Four patients (E, F, G and H) had a defect each in a single step of the above
+mechanism. Patients E, F, G and H had defect in steps 1, 2, 3 and 4, respectively.
+These patients were given two tests:
+- Test 1: Muscle cells from each patient were isolated and the percentage of insulin
+binding cells at different concentrations of insulin was determined (Figure Q.30B).
+- Test 2: Each patient was injected with same insulin quantity related to their body
+mass and their plasma glucose concentrations were then measured at various times
+after injection (Figure Q.30C).
+Glucose
+secretion
+Transportation
+Binding
+Insulin
+Receptor
+Transduction
+Insulin
+Insulin concentration
+% cells bound to insulin
+Plasma glucose concentration
+Time after
+insulin injection
+Figure Q.30
+Indicate in the Answer sheet if each of the following statements is True or False. 
+A. The result of Test 1 of Patient G could be shown in Line 1. 
+B. Lines 2 and 3 show the results of Tests 1 and 2, respectively, of Patient F.
+C. Line 3 shows the tested result of Patient E.
+D. Lines 1 and 4 show the results of Tests 1 and 2, respectively, of Patient H.
+34/56

@@ -5,17 +5,17 @@ title: "Q3 - Shell Drilling Predation"
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
-  <a class="papers-subject-tag" href="/resources/2-animal-anatomy/invertebrate-body-plans-2/">Invertebrate Body Plans</a>
+  <a class="papers-subject-tag" href="/resources/2-animal-anatomy/invertebrate-body-plans-2/">Invertebrate Body Plans II</a>
   <a class="papers-subject-tag" href="/resources/9-ethology/foraging-anti-predator-behavior/">Foraging & Anti-Predator Behavior</a>
 </div>
 
 A fictional marine bivalve mollusk 'sea carpet bag' is a prey of carnivorous sea snails. The sea snails drill through bivalve shells to inject poison which relaxes the bivalve muscle-adductor. Muscle-adductor relaxation allows bivalve shells to be opened and the hunting snail eats the sea carpet bag.
 
 Scientists divided the surface of sea carpet bag shells into four areas with equal size:
-- A — anterior area
-- B — basal area
-- C — central area
-- D — distal area
+- A - anterior area
+- B - basal area
+- C - central area
+- D - distal area
 
 A representative set of 100 dead sea carpet bags was analyzed. The number of holes drilled by hunting snails in different areas, and their combinations, are shown in the Table.
 

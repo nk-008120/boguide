@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "USABO", "biochemistry", "laboratory-technique"]
 ---
 
 {{< topic-meta >}}
+{{< challenge-cta >}}
 {{< mathjax >}}
 
 ## Overview
@@ -83,6 +84,8 @@ Extracting an **integral membrane protein** while preserving native structure (f
 **Static**
 
 *(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
+
+{{< practice-challenge >}}
 
 ## Practice Problems
 

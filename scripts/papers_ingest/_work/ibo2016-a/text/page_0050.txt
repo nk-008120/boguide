@@ -1,0 +1,28 @@
+Q.44
+Laboratory experiments were conducted to examine the effects of temperature on
+interspecific competition between two stream salmonid fishes, Salvelinus
+malma and S. leucomaenis, with largely allopatric altitudinal distribution. Three
+combinations of species population, including allopatric populations of S.
+malma and S. leucomaenis, and sympatric populations of both species, were treated
+with low temperature (6°C) and high temperature (12°C), in which thriving allopatric
+populations of S. malma (6°C) and S. leucomaenis (12°C) are commonly found. 
+Low temperature
+High temperature
+Survival proportion
+Days
+Sympatry
+Allopatry
+Days
+Sympatry
+Days
+Allopatry
+Days
+Figure Q.44
+Indicate in the Answer sheet if each of the following statements is True or False.
+A. Competition of these two species is likely to have been affected by temperature
+and altitude
+B. S. malma may be distributed at higher altitudinal ranges than is S. leucomaenis
+C. S. leucomaenis is likely to be more low-temperature stress-resistant than S.
+malma
+D. S. malma has a narrower fundamental niche than does S. leucomaenis
+49/56

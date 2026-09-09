@@ -76,7 +76,7 @@
 <body>
 <div class="widget-container">
   <h3>Punnett Square Simulator</h3>
-  <div class="subtitle">Pick a cross type and parental genotypes — the gamete grid and resulting ratios generate automatically.</div>
+  <div class="subtitle">Pick a cross type and parental genotypes - the gamete grid and resulting ratios generate automatically.</div>
   <div class="modes">
     <button class="mode-btn active" id="modeMono">Monohybrid</button>
     <button class="mode-btn" id="modeDi">Dihybrid</button>
@@ -96,15 +96,15 @@
 
   <div id="diControls" class="controls" style="display:none;">
     <div class="parent-control">
-      <label for="dp1g1">Parent 1 — Gene A</label>
+      <label for="dp1g1">Parent 1 - Gene A</label>
       <select id="dp1g1"><option value="AA">AA</option><option value="Aa" selected>Aa</option><option value="aa">aa</option></select>
-      <label for="dp1g2">Parent 1 — Gene B</label>
+      <label for="dp1g2">Parent 1 - Gene B</label>
       <select id="dp1g2"><option value="BB">BB</option><option value="Bb" selected>Bb</option><option value="bb">bb</option></select>
     </div>
     <div class="parent-control">
-      <label for="dp2g1">Parent 2 — Gene A</label>
+      <label for="dp2g1">Parent 2 - Gene A</label>
       <select id="dp2g1"><option value="AA">AA</option><option value="Aa" selected>Aa</option><option value="aa">aa</option></select>
-      <label for="dp2g2">Parent 2 — Gene B</label>
+      <label for="dp2g2">Parent 2 - Gene B</label>
       <select id="dp2g2"><option value="BB">BB</option><option value="Bb" selected>Bb</option><option value="bb">bb</option></select>
     </div>
   </div>
@@ -123,8 +123,8 @@
   <div class="layout">
     <div id="gridHolder"></div>
     <div class="results">
-      <div class="readout" id="genoReadout">Genotype ratio: —</div>
-      <div class="readout" id="phenoReadout">Phenotype ratio: —</div>
+      <div class="readout" id="genoReadout">Genotype ratio: -</div>
+      <div class="readout" id="phenoReadout">Phenotype ratio: -</div>
       <div class="note" id="explainNote"></div>
     </div>
   </div>
@@ -283,9 +283,9 @@
       genoReadout.innerHTML = 'Genotype ratio: <b>' + ratioString(result.counts) + '</b>';
       phenoReadout.innerHTML = 'Phenotype ratio: <b>' + ratioString(result.phenoCounts).replace(/dominant/g,'Dominant').replace(/recessive/g,'Recessive') + '</b>';
       if (tcGenotype === 'AA'){
-        explainNote.textContent = '100% dominant-phenotype offspring, no recessive offspring at all — this outcome would confirm the unknown parent is homozygous (AA).';
+        explainNote.textContent = '100% dominant-phenotype offspring, no recessive offspring at all - this outcome would confirm the unknown parent is homozygous (AA).';
       } else {
-        explainNote.textContent = 'A 1:1 dominant:recessive split — any recessive offspring at all proves the unknown parent was heterozygous (Aa).';
+        explainNote.textContent = 'A 1:1 dominant:recessive split - any recessive offspring at all proves the unknown parent was heterozygous (Aa).';
       }
     }
   }

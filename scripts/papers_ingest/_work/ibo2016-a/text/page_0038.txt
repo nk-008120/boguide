@@ -1,0 +1,40 @@
+GENETICS AND EVOLUTION
+Q.33
+Mr. Long had ten strains of Escherichia coli with different mutations in their lac
+operon. Analyzing their DNA, he found that each strain is one of five mutation types:
+lacZ , lacY , lacI lacI (the repressor LacI can bind to the operator but cannot bind to
+the inducer), or lacO (the mutated operator lacO cannot be bound by the
+repressor). Mr. Long also knew that strain number 6 is a lacZ mutant. Operon lac is
+shown below.
+Inactive repressor
+Allolactose
+(inducer)
+RNA polymerase
+lac operon
+lacZ
+lacY
+lacO
+lacA
+β-galactosidase
+Permease
+Transacetylase
+lacl
+Protein
+mRNA
+DNA
+Mr. Long isolated DNA containing the lac operon from each strain (donor) and
+transformed it into other strains, thus making the strain merodiploid (recipient).
+Thereafter recipient strains were cultured on minimal medium that contained lactose
+as the only carbon source. Growth of the strains was recorded in the table below (+
+means that the strain is growing, - means that the strain is not growing).
+Recipient strains
+Donor strains
+-
+-
+-, 
+S
+S
+c
+c 
+-
+37/56

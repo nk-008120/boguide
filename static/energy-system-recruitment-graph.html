@@ -103,7 +103,7 @@
   function updateReadout(){
     var tt = parseFloat(slider.value)/100*tMax;
     var dom = dominantSystem(tt);
-    readout.innerHTML = '<b>t = ' + tt.toFixed(0) + ' s</b> — Dominant system right now: <b>' + dom + '</b>.';
+    readout.innerHTML = '<b>t = ' + tt.toFixed(0) + ' s</b> - Dominant system right now: <b>' + dom + '</b>.';
   }
 
   slider.addEventListener('input', function(){

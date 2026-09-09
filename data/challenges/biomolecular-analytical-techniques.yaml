@@ -1,0 +1,244 @@
+section: "1-cell-molecular"
+slug: "Biomolecular-Analytical-Techniques"
+title: "Biomolecular Analytical Techniques"
+questions:
+  - id: 1
+    difficulty: "easy"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      Which of the following principles is true of separating DNA by gel electrophoresis? Indicate whether each statement is True or False:A
+      . DNA fragments are overall positively charged.B
+      . The smaller DNA fragments move faster across the gel under the electric current.
+
+      C.
+       The smaller DNA fragments are lesser charged than the larger fragments hence they move faster across the gel.D
+      . The relative density of the gel matrix affects how long the separation takes.E
+      . The voltage applied to the electrophoresis is determined by how much DNA is loaded in the gel.
+    solution: |
+
+      Answer – A – F, B – T, C – F, D – T, E - F
+
+      Evaluating each statement,
+
+      A – False
+
+      Solution – Due to addition of phosphate group to deoxyribose sugar backbone, DNA is overall negatively charged.
+
+      B – True
+
+      Solution – Smaller fragments face less drag and move easily across pores in the gel. Hence, their rate of movement is fast.
+
+      C – False
+
+      Solution – Charge per unit length of DNA is constant. So small fragments have smaller charge.
+
+      D – True
+
+      Solution – Relative density of gel is inversely related to pore size of gel. Hence, as relative density increases, pore size decreases and time taken for DNA fragments to move through the pores increases.
+
+      E – False
+
+      Solution – The voltage is determined by the desired resolution of DNA bands after electrophoresis. If sizes of bands are close to each other, resolution needed is more and voltage needed is less so separation can take more time.
+  - id: 2
+    difficulty: "medium"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/biomolecular-analytical-techniques-q2.png)
+
+      Biochemical purification of a protein from a cell extract often requires several purification steps involving various techniques. The purification process can be followed by gel electrophoresis of the starting protein mixture i.e. the cell homogenate and the fractions obtained from each subsequent purification step. Shown here are the schematic depictions of separation of proteins on a gel for the starting mixture of proteins (lane 1) and samples taken after each of the several purification steps.
+
+      If lanes 1 and 2 indicate the separation of proteins from the crude cell homogenate and after salt fractionation respectively, then which of the techniques are represented in lanes 3, 4 and 5 respectively?A
+      . Ion exchange chromatography; affinity chromatography and gel filtration chromatographyB
+      . Gel filtration chromatography; ion exchange chromatography and affinity chromatographyC
+      . Affinity chromatography; ion exchange chromatography and gel filtration chromatographyD
+      . Ion exchange chromatography; gel filtration chromatography and affinity chromatography
+    solution: |
+
+      Answer – D
+
+      Solution – For efficient purification, we move from least specific to most specific method. Among ion exchange, gel filtration and affinity chromatography, affinity chromatography is most specific while ion-exchange filtration is least specific. We can say that there are more proteins with same charge and different mass than there are proteins with same mass but different charge. Thus, ion exchange chromatography which separates on basis of charge is less specific than gel filtration chromatography which separates on basis of mass. Affinity chromatography is most specific because it uses ligands or antibodies specific for one particular protein only. Thus, order of steps is ion exchange chromatography followed by gel filtration chromatography followed by affinity chromatography
+  - id: 3
+    difficulty: "medium"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      A student was performing enzyme purification in the laboratory for the first time. She began with 1200 mg of crude protein extract containing an enzyme of interest. At the beginning as well as at every purification step, she determined:
+      i. Total protein content
+      ii. Total units of enzyme present (also known as Activity)
+      iii. Specific activity of enzyme (Units/mg protein).
+
+      A. In a very efficient purification process, which of the following is expected to happen? Choose the correct option
+      I. i to increase, ii to remain constant, iii to increase.
+      II. i and ii to increase, iii to remain constant.
+      III. i to decrease, ii and iii to increase.
+      IV. i, ii and iii to increase
+
+      B. Data (protein content and activity) obtained by her during the process is given in the table. Complete the table by filling in the specific activity, % yield of activity and purification factor values.
+
+      | Step | Protein (mg) | Activity (U) | Specific activity (U/mg) | % Yield of activity | Purification factor |
+      |---|---|---|---|---|---|
+      | 0 | 1200 | 800 | 0.67 | - | - |
+      | 1 | 600 | 600 | 1.0 |  |  |
+      | 2 | 200 | 180 | 0.9 |  |  |
+      | 3 | 30 | 150 | 5.0 |  |  |
+      | 4 | 20 | 148 | 7.4 |  |  |
+
+      C. Which of the above is the least effective purification step?
+
+      D. Which of the above is the most effective purification step?
+
+      E. Which step is indicative that enzyme of interest is partially inactivated?
+    solution: |
+
+      A – ISolution – In such a process, total protein will decrease with each step since only enzyme is to be purified. However, some loss of enzyme will occur with each step since 100% yield is not possible practically. However, the specific activity increases since proportionally more protein is lost than enzyme.
+
+      B –
+
+      | Step | Protein (mg) | Activity (U) | Specific activity (U/mg) | % Yield of activity | Purification factor |
+      |---|---|---|---|---|---|
+      | 0 | 1200 | 800 | 0.67 | - | - |
+      | 1 | 600 | 600 | 1.0 | 75 | 1.5 |
+      | 2 | 200 | 180 | 0.9 | 30 | 0.9 |
+      | 3 | 30 | 150 | 5.0 | 83.33 | 5.55 |
+      | 4 | 20 | 148 | 7.4 | 98.67 | 1.48 |
+
+      C – IISolution 
+      – Least effective purification process has lowest value of purification factor. Hence step 2 is least effective
+
+      D – IIISolution - Most
+       effective purification process has highest value of purification factor. Hence step 3 is least effective
+
+      E – IISolution – From the values of % Yield of Activity, we see that step 2 is an outlier and this may be due to partial inactivation of enzyme
+  - id: 4
+    difficulty: "hard"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/biomolecular-analytical-techniques-q4.png)
+
+      Plasmodium is a parasitic protozoan that is prevalent in tropical countries. Once the parasites invade host red blood cells, they multiply within 24 h. Fe2+ in red blood cell can react with free O2 as well as H2O2, causing formation of free radicals that can damage parasite cells. Unlike host cells, the parasites lack several enzymes of antioxidant defence systems. Scientists analysed the proteins from the parasite cytosol using two-dimensional gel electrophoresis (see image below). Then, using mass spectrometry and peptide mass fingerprinting, they identified 6 proteins (spots 1 to 6) corresponding to human peroxiredoxin, while one protein (spot 7) corresponding to Plasmodium peroxiredoxin.
+
+      Indicate if each of the following statements is True or False:
+      A. Based on the presented data, Plasmodium peroxiredoxin is a multimeric protein.
+      B. All human peroxiredoxin proteins have a positive net charge at physiological pH.
+      C. Gel filtration chromatography is suitable for separation and purification of the six human peroxiredoxin proteins.
+      D. Immunoaffinity chromatography can be used for separation of Plasmodium peroxiredoxin from other Plasmodium cytosolic proteins.
+    solution: |
+
+      Answer – A – F, B – F, C – F, D - T
+
+      Evaluating the statements,
+
+      A - False
+
+      Solution –
+      It cannot be concluded from given 2D gel electrophoresis.
+
+      B – False
+
+      Solution – From the figure, we see that the
+      pI of all the human peroxiredoxin proteins is below physiological pH of 7.2-7.4. This means, physiological pH is above pI for peroxiredoxin proteins and thus they acquire negative charge, not positive charge.
+
+      C – False
+
+      Solution – Gel filtration chromatography is not suitable for separation and purification of all 6 peroxiredoxin proteins since we can see 3 proteins of mass
+      15 kDa (approx.) which will not be separated by it.
+
+      D – True
+
+      Solution – Immunoaffinity chromatography uses specific antibodies/ligands for the Plasmodium peroxiredoxin protein and can separate it from other Plasmodium cytosolic proteins.
+  - id: 5
+    difficulty: "hard"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      A professor wants to test his students’ knowledge on properties of amino acids. So he prepares a solution containing 0.9210g of unknown amino acid Z dissolved in 80mL deionized water and HCl equivalent to 3.2mL of 0.3024M NaOH solution. He now asks his students to take 25mL of the unknown amino acid solution in a 100ml beaker and measure the pH with a pH probe after adding 1mL of 0.3024M NaOH till 25mL NaOH has been added. The students make the following table:
+
+      | Volume of NaOH added (mL) | pH |
+      |---|---|
+      | 0.00 | 1.3 |
+      | 1.00 | 1.4 |
+      | 2.00 | 1.4 |
+      | 3.00 | 1.5 |
+      | 4.00 | 1.6 |
+      | 5.00 | 1.7 |
+      | 6.00 | 1.8 |
+      | 7.00 | 2.0 |
+      | 8.00 | 2.1 |
+      | 9.00 | 2.3 |
+      | 10.00 | 2.6 |
+      | 11.00 | 3.0 |
+      | 12.00 | 9.1 |
+      | 13.00 | 9.8 |
+      | 14.00 | 10.1 |
+      | 15.00 | 10.3 |
+      | 16.00 | 10.5 |
+      | 17.00 | 10.8 |
+      | 18.00 | 11.0 |
+      | 19.00 | 11.2 |
+      | 20.00 | 11.5 |
+      | 21.00 | 11.7 |
+      | 22.00 | 11.9 |
+      | 23.00 | 12.0 |
+      | 24.00 | 12.1 |
+      | 25.00 | 12.2 |
+
+      With this data, answer the following questions:
+
+      A. Plot graphs of pH vs Volume of NaOH added and find out value of pKa1, pKa2 and pI of amino acid Z.
+
+      B. Determine molecular weight of amino acid Z.
+    solution: |
+
+      A. pKa1 = 1.9 (1.1–2.7), pKa2 = 10.9 (10.1 – 11.7) and pI = 6.00 (5.6 – 6.4)Solution - 
+      Plot is obtained as follows:
+
+      B. 115Solution - 
+      Volume of NaOH to reach pI ≈ 12.70mL. 3.2mL of NaOH is used to react with HCl, so only (12.7 – 3.2)mL NaOH reacts with amino acid.mol of amino acid
+       = 0.5 mol of NaOH = (11.5 – 3.2) x 0.3024 / 1000 Molecular weight of amino acid = 
+      0.9210 / {(80 / 25) x [(11.5 – 3.2) x 0.3024 / 1000]} = 115
+  - id: 6
+    difficulty: "hard"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      Here is a mixture containing viruses, globular proteins, and cell nuclei, which are all assumed to have similar densities of approximately 1.3 g/mL. We would like to separate them by using three different centrifugation methods as shown in Figure 1. The first method entails centrifugation of the mixture (Mix) after placing it on the top of a medium (Med) that has a uniform density (Exp. A). The second method (Exp. B) entails centrifugation of the mixture using a medium that has a density gradient ranging from 1.0 to 1.6 g/mL (from the top to the bottom). The final method entails the use of a centrifuge tube with the same density gradient as that in Exp. B, but the mixture is placed at the bottom of the tube (Exp. C). g indicates the direction of centrifugal forces given to the specimens.
+
+      ![image](/CHALLENGEPICS/biomolecular-analytical-techniques-q6-1.png)
+
+      A. In Exp. A, how are viruses, globular proteins, and nuclei supposed to sediment? Choose the most appropriate diagram from I, II, III, IV in Figure 2 that shows the sedimentation time courses of specimens
+
+      B. In Exp. A, choose appropriate lines from a, b, or c in the selected diagram that indicate the time courses of sedimentation of viruses, globular proteins and nuclei.
+
+      C. In Exp. B, how are viruses, globular proteins, and nuclei supposed to sediment? Choose the most appropriate diagram from I, II, III, IV in Figure 2 that shows the sedimentation time courses of the specimens.
+
+      D. In Exp. B, choose appropriate lines from a, b, or c in the selected diagram that indicate the time courses of sedimentation of viruses, globular proteins and nuclei.
+
+      ![image](/CHALLENGEPICS/biomolecular-analytical-techniques-q6-2.png)
+
+      E. In Exp. C, how are viruses, globular proteins, and nuclei supposed to float? Choose the most appropriate diagram from I, II, III, IV in Figure 3 that shows the sedimentation time courses of the specimens.
+
+      ![image](/CHALLENGEPICS/biomolecular-analytical-techniques-q6-3.png)
+
+      F. In Exp. C, choose appropriate lines from a, b, or c in the selected diagram that indicate the time courses of floating of viruses, globular proteins and nuclei.
+    solution: |
+
+      A – III
+      B - Virus – b, globular proteins – a, nuclei – cSolution - 
+      As the sedimentation speed of a specimen that has a similar density (1.3 g/mL) is dependent on size (nuclei>viruses>biomolecules), nuclei sedimentation is greatest with an almost constant speed as shown by the straight line, c, within diagram III of Figure 2. Viruses and biomolecules then follow nuclei.
+
+      C – IID - 
+      Virus – b, globular proteins – a, nuclei – cSolution - 
+      As the sedimentation speed of a specimen that has a similar density (1.3 g/mL) is dependent on size (nuclei>viruses>biomolecules), nuclei sedimentation is greatest and stops when the medium density (1.0 to 1.6 g/mL) is equal to the specimen density (1.3 g/mL) as shown by the curve, c, of diagram II within Figure 2. Viruses and biomolecules then follow nuclei
+
+      E – VIF
+       - Virus – b, globular proteins – c, nuclei – aSolution - 
+      Similar to the sedimentation speed, the floating speed of a specimen that has a similar density (1.3 g/mL) is dependent on size (nuclei>viruses>biomolecules), whereby nuclei float first and stop when the medium density (1.0 to 1.6 g/mL) is equal to the specimen density (1.3 g/mL) as shown by the curve, c, of diagram VI in Figure 3. Viruses and biomolecules then follow nuclei.

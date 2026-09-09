@@ -1,0 +1,23 @@
+Q.22
+In an experiment, a researcher isolated a neuron and placed it in the standard Ringer
+solution (isotonic physiological solution). He measured the resting membrane
+potential of the axon, then stimulated the axon and measured its action potential
+(Record A, Figure Q.22). Subsequently, he repeated the experiment several times,
+each with a different modified Ringer solution. Figure Q.22 shows some of the results
+(Records B to E). 
+Membrane potential (mV)
+Figure Q.22.
+Indicate in the Answer sheet if each of the following statements is True or False. 
+A. If the modified Ringer solution contained a lower concentration of Na than the
+standard Ringer solution, the action potential is Record B.
+B. If the modified Ringer solution contained a lower concentration of  K than the
+standard Ringer solution, the action potential is Record C.
+C. If the modified Ringer solution contained a substance that increased membrane
+permeability to K , the action potential is Record D. 
+D. If the modified Ringer solution contained a substance that increased membrane
+permeability to Cl , the action potential is Record E.
++
++
++
+-
+26/56

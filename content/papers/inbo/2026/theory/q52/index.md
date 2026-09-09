@@ -5,7 +5,7 @@ title: "Q52 - Leaf Solar Tracking and Radiation"
 {{< problem-meta category="Theory" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
-  <a class="papers-subject-tag" href="/resources/8-ecology/community-ecology-species-interactions/">Community Ecology & Species Interactions</a>
+  <a class="papers-subject-tag" href="/resources/5-plant-physiology/tropisms-nastic-movements/">Tropisms & Nastic Movements</a>
 </div>
 
 Refer to the [question paper](/papers/inbo/2026/theory-exam.pdf#page=28) for figures and tables.

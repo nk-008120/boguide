@@ -102,13 +102,26 @@
     return Promise.all(PROBLEMS.map(function (p) { return fetchQuestionHTML(p.id); }));
   }
 
+  function gradableStatements(p) {
+    // free_response has no single checkable answer (the source exam gives a
+    // descriptive model answer, not a value to grade against) -- excluded
+    // from every count/score/progress calculation, same as papers-quiz.html's
+    // own gradableRows split.
+    return p.statements.filter(function (s) { return (s.type || 'true_false') !== 'free_response'; });
+  }
+
   function questionStatusClass(p) {
     var ans = state.answers[p.id] || {};
-    var answeredCount = Object.keys(ans).filter(function (k) { return ans[k] !== undefined && ans[k] !== null; }).length;
-    var total = p.statements.length;
+    var gradable = gradableStatements(p);
+    var answeredCount = gradable.filter(function (s) {
+      var v = ans[s.letter];
+      return v !== undefined && v !== null;
+    }).length;
+    var total = gradable.length;
     var st = state.status[p.id] || {};
     var base = 'unvisited';
-    if (answeredCount === total) base = 'answered';
+    if (total === 0) base = st.visited ? 'answered' : 'unvisited';
+    else if (answeredCount === total) base = 'answered';
     else if (answeredCount > 0) base = 'partial';
     else if (st.visited) base = 'visited';
     return base + (st.marked ? ' marked' : '');
@@ -181,6 +194,17 @@
             return '<button type="button" class="tf-btn tf-btn-mcq' + (sel === opt.key ? ' selected' : '') + '" data-value="' + escapeHTML(opt.key) + '">' + escapeHTML(opt.key) + ') ' + escapeHTML(opt.text) + '</button>';
           }).join('') +
           '</div>';
+      } else if (type === 'numeric') {
+        var numVal = (sel !== undefined && sel !== null) ? sel : '';
+        toggleHTML =
+          '<div class="tf-quiz-numeric">' +
+          '<input type="number" step="any" class="tf-numeric-input attempt-numeric-input" placeholder="Your answer" value="' + escapeHTML(String(numVal)) + '">' +
+          (s.unit ? '<span class="tf-numeric-unit">' + escapeHTML(s.unit) + '</span>' : '') +
+          '</div>';
+      } else if (type === 'free_response') {
+        toggleHTML =
+          '<button type="button" class="tf-btn tf-reveal-btn">Reveal Model Answer</button>' +
+          '<div class="tf-quiz-feedback tf-model-answer" hidden>' + escapeHTML(s.modelAnswer || '') + '</div>';
       } else {
         toggleHTML =
           '<div class="tf-quiz-toggle" role="group" aria-label="Statement ' + s.letter + '">' +
@@ -207,6 +231,35 @@
     qBodyEl.querySelectorAll('.attempt-statement').forEach(function (row) {
       var letter = row.dataset.letter;
       var type = row.dataset.type;
+
+      if (type === 'numeric') {
+        var input = row.querySelector('.attempt-numeric-input');
+        if (input) {
+          input.addEventListener('input', function () {
+            if (input.value === '') {
+              delete state.answers[p.id][letter];
+            } else {
+              state.answers[p.id][letter] = parseFloat(input.value);
+            }
+            renderPalette();
+            saveLive();
+          });
+        }
+        return;
+      }
+
+      if (type === 'free_response') {
+        var revealBtn = row.querySelector('.tf-reveal-btn');
+        var answerBox = row.querySelector('.tf-model-answer');
+        if (revealBtn && answerBox) {
+          revealBtn.addEventListener('click', function () {
+            answerBox.hidden = !answerBox.hidden;
+            revealBtn.textContent = answerBox.hidden ? 'Reveal Model Answer' : 'Hide Model Answer';
+          });
+        }
+        return;
+      }
+
       row.querySelectorAll('.tf-btn').forEach(function (btn) {
         btn.addEventListener('click', function () {
           row.querySelectorAll('.tf-btn').forEach(function (b) { b.classList.remove('selected'); });
@@ -278,22 +331,32 @@
     var totalTime = 0;
     PROBLEMS.forEach(function (p) {
       var ans = state.answers[p.id] || {};
+      var gradable = gradableStatements(p);
       var correct = 0;
-      p.statements.forEach(function (s) {
+      gradable.forEach(function (s) {
         totalStatements++;
-        if (ans[s.letter] === s.answer) { correct++; totalCorrect++; }
+        var given = ans[s.letter];
+        var isCorrect;
+        if (s.type === 'numeric') {
+          isCorrect = typeof given === 'number' && !isNaN(given) &&
+            Math.abs(given - s.expected) <= (s.tolerance || 0);
+        } else {
+          isCorrect = given === s.answer;
+        }
+        if (isCorrect) { correct++; totalCorrect++; }
       });
       var t = state.timeSpent[p.id] || 0;
       totalTime += t;
       perQuestion.push({
         id: p.id, number: p.number, name: p.name,
-        correct: correct, total: p.statements.length,
+        correct: correct, total: gradable.length,
         timeSec: t, marked: !!(state.status[p.id] && state.status[p.id].marked)
       });
+      var subjectCount = (p.subjects || []).length || 1;
       (p.subjects || []).forEach(function (subj) {
         if (!subjectStats[subj.name]) subjectStats[subj.name] = { correct: 0, total: 0, link: subj.link };
-        subjectStats[subj.name].correct += correct;
-        subjectStats[subj.name].total += p.statements.length;
+        subjectStats[subj.name].correct += correct / subjectCount;
+        subjectStats[subj.name].total += gradable.length / subjectCount;
       });
     });
     var avgTime = totalTime / PROBLEMS.length;
@@ -329,8 +392,12 @@
     var n = 0;
     PROBLEMS.forEach(function (p) {
       var ans = state.answers[p.id] || {};
-      var answered = Object.keys(ans).filter(function (k) { return ans[k] !== undefined && ans[k] !== null; }).length;
-      if (answered < p.statements.length) n++;
+      var gradable = gradableStatements(p);
+      var answered = gradable.filter(function (s) {
+        var v = ans[s.letter];
+        return v !== undefined && v !== null;
+      }).length;
+      if (answered < gradable.length) n++;
     });
     return n;
   }
@@ -522,23 +589,37 @@
     window.PapersAuth.getSession().then(function (session) {
       if (!session) {
         container.innerHTML = '<p class="attempt-leaderboard-prompt">' +
-          '<a href="/account/">Log in</a> to save this result to the leaderboard — completely optional.</p>';
+          '<a href="/account/">Log in</a> to save this result to your dashboard or the leaderboard — completely optional.</p>';
         return;
       }
       container.innerHTML =
-        '<button type="button" class="papers-nav-btn papers-nav-next" id="attempt-submit-leaderboard-btn">Submit to Leaderboard</button>' +
+        '<div class="attempt-save-options">' +
+        '<label class="attempt-save-checkbox"><input type="checkbox" id="attempt-save-dashboard-cb" checked> Save to my Dashboard</label>' +
+        '<label class="attempt-save-checkbox"><input type="checkbox" id="attempt-save-leaderboard-cb"> Show on Leaderboard</label>' +
+        '</div>' +
+        '<button type="button" class="papers-nav-btn papers-nav-next" id="attempt-save-btn">Save Attempt</button>' +
         '<div class="attempt-leaderboard-msg" id="attempt-leaderboard-msg"></div>';
-      document.getElementById('attempt-submit-leaderboard-btn').addEventListener('click', function () {
-        submitToLeaderboard(session);
+      var dashCb = document.getElementById('attempt-save-dashboard-cb');
+      var lbCb = document.getElementById('attempt-save-leaderboard-cb');
+      var saveBtn = document.getElementById('attempt-save-btn');
+      function syncSaveBtn() {
+        saveBtn.disabled = !dashCb.checked && !lbCb.checked;
+      }
+      dashCb.addEventListener('change', syncSaveBtn);
+      lbCb.addEventListener('change', syncSaveBtn);
+      syncSaveBtn();
+      saveBtn.addEventListener('click', function () {
+        submitAttemptReport(session, dashCb.checked, lbCb.checked);
       });
     });
   }
 
-  function submitToLeaderboard(session) {
-    var btn = document.getElementById('attempt-submit-leaderboard-btn');
+  function submitAttemptReport(session, showOnDashboard, showOnLeaderboard) {
+    var btn = document.getElementById('attempt-save-btn');
     var msg = document.getElementById('attempt-leaderboard-msg');
     if (btn) btn.disabled = true;
-    msg.textContent = 'Submitting…';
+    msg.classList.remove('attempt-leaderboard-msg-error');
+    msg.textContent = 'Saving…';
     fetch('/api/submit-attempt', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + session.access_token },
@@ -548,7 +629,9 @@
         roundId: DATA.roundId,
         answers: state.answers,
         timeSpent: state.timeSpent,
-        fullscreenExits: state.fullscreenExits || 0
+        fullscreenExits: state.fullscreenExits || 0,
+        showOnDashboard: showOnDashboard,
+        showOnLeaderboard: showOnLeaderboard
       })
     }).then(function (r) {
       return r.json().then(function (body) {
@@ -556,9 +639,15 @@
         return body;
       });
     }).then(function (result) {
-      msg.innerHTML = 'Submitted — server score: ' + result.totalCorrect + '/' + result.totalStatements +
-        ' (' + result.scorePct + '%), rank #' + result.rank + '. ' +
-        '<a href="' + DATA.basePath + 'leaderboard/">View leaderboard →</a>';
+      var parts = [];
+      if (result.showOnDashboard) {
+        parts.push('saved to your <a href="/dashboard/">dashboard</a>');
+      }
+      if (result.showOnLeaderboard) {
+        parts.push('rank #' + result.rank + ' on the <a href="' + DATA.basePath + 'leaderboard/">leaderboard</a>');
+      }
+      msg.innerHTML = 'Server score: ' + result.totalCorrect + '/' + result.totalStatements +
+        ' (' + result.scorePct + '%) — ' + parts.join(', ') + '.';
     }).catch(function (err) {
       if (btn) btn.disabled = false;
       setMsgError(msg, 'Error: ' + err.message);
@@ -568,6 +657,10 @@
   function setMsgError(el, text) {
     el.textContent = text;
     el.classList.add('attempt-leaderboard-msg-error');
+  }
+
+  function fmtNum(n) {
+    return (Math.round(n * 10) / 10).toString();
   }
 
   function renderReport(report, canSubmit) {
@@ -584,7 +677,7 @@
         '<div class="attempt-subject-row">' +
         '<div class="attempt-subject-name">' + escapeHTML(name) + (weak ? ' <a class="papers-subject-tag" href="' + s.link + '">Study this →</a>' : '') + '</div>' +
         '<div class="attempt-subject-bar-track"><div class="attempt-subject-bar' + (weak ? ' weak' : '') + '" style="width:' + p + '%"></div></div>' +
-        '<div class="attempt-subject-pct">' + s.correct + '/' + s.total + ' (' + p + '%)</div>' +
+        '<div class="attempt-subject-pct">' + fmtNum(s.correct) + '/' + fmtNum(s.total) + ' (' + p + '%)</div>' +
         '</div>'
       );
     }).join('');

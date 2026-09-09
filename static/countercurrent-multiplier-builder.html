@@ -120,7 +120,7 @@
     }
 
     var note = el('text', {x: 280, y: top + depths.length*rowH + 20, 'font-size': 11, fill:'#6b7280', 'text-anchor':'middle'});
-    note.textContent = step >= maxStep ? 'Gradient fully built — collecting duct can now concentrate urine up to ' + vals[vals.length-1] + ' mOsm/L' : 'Keep stepping to deepen the gradient';
+    note.textContent = step >= maxStep ? 'Gradient fully built - collecting duct can now concentrate urine up to ' + vals[vals.length-1] + ' mOsm/L' : 'Keep stepping to deepen the gradient';
     svg.appendChild(note);
 
     stepLabel.textContent = 'Round ' + step + ' of ' + maxStep;

@@ -1,5 +1,6 @@
 ---
 title: "IBO 2023"
+description: "IBO 2023 Al Ain theory papers: timed practice, per-question solutions, and leaderboard on BiOrchive."
 ---
 
 {{< biorchive-bg >}}

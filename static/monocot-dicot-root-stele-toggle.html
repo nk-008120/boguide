@@ -127,14 +127,14 @@
     dicotBtn.classList.add('active');
     monocotBtn.classList.remove('active');
     steleGroup.innerHTML = dicotSvg();
-    note.innerHTML = '<b>Dicot actinostele</b> — xylem forms a solid, star-shaped core with a small number of arms (diarch–hexarch), phloem occupying the bays between arms. Pith is absent or minimal, since the xylem core fills most of the center.';
+    note.innerHTML = '<b>Dicot actinostele</b> - xylem forms a solid, star-shaped core with a small number of arms (diarch–hexarch), phloem occupying the bays between arms. Pith is absent or minimal, since the xylem core fills most of the center.';
   }
 
   function showMonocot(){
     monocotBtn.classList.add('active');
     dicotBtn.classList.remove('active');
     steleGroup.innerHTML = monocotSvg();
-    note.innerHTML = '<b>Monocot stele</b> — xylem and phloem alternate in a ring around a large, prominent central pith, with more numerous (polyarch) xylem poles than a typical dicot root.';
+    note.innerHTML = '<b>Monocot stele</b> - xylem and phloem alternate in a ring around a large, prominent central pith, with more numerous (polyarch) xylem poles than a typical dicot root.';
   }
 
   dicotBtn.addEventListener('click', showDicot);

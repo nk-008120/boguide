@@ -37,7 +37,7 @@
 <body>
 <div class="widget-container">
   <h3>Phospholipid Self-Assembly</h3>
-  <div class="subtitle">Click "Scatter" to randomise phospholipids in water, then "Assemble" to watch them spontaneously reorganise into a bilayer — tails burying away from water, heads facing out.</div>
+  <div class="subtitle">Click "Scatter" to randomise phospholipids in water, then "Assemble" to watch them spontaneously reorganise into a bilayer - tails burying away from water, heads facing out.</div>
   <div style="display:flex; gap:8px; justify-content:center; margin-bottom:10px;">
     <button id="scatterBtn" style="background:#f8fafc;border:2px solid #e2e8f0;border-radius:999px;padding:8px 18px;font-size:0.82rem;cursor:pointer;">Scatter</button>
     <button id="assembleBtn">Assemble into bilayer</button>
@@ -104,13 +104,13 @@
   document.getElementById('scatterBtn').addEventListener('click', function(){
     randomPositions();
     render();
-    note.textContent = 'Scattered randomly in water — heads (blue) and tails (orange) point every direction.';
+    note.textContent = 'Scattered randomly in water - heads (blue) and tails (orange) point every direction.';
   });
 
   document.getElementById('assembleBtn').addEventListener('click', function(){
     bilayerPositions();
     render();
-    note.textContent = 'Bilayer formed: hydrophilic heads face the aqueous environment on both sides; hydrophobic tails bury inward, away from water — minimising disruption to water\'s hydrogen-bond network.';
+    note.textContent = 'Bilayer formed: hydrophilic heads face the aqueous environment on both sides; hydrophobic tails bury inward, away from water - minimising disruption to water\'s hydrogen-bond network.';
   });
 
   randomPositions();

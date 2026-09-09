@@ -112,7 +112,7 @@
     svg.appendChild(desc);
 
     var title = el('text', {x: 280, y: 20, 'font-size':13, 'font-weight':700, fill:'#1a472a', 'text-anchor':'middle'});
-    title.textContent = (mode === 'carb' ? 'Carbohydrate/protein pathway' : 'Lipid pathway') + ' — step ' + (step+1) + ' of ' + steps.length;
+    title.textContent = (mode === 'carb' ? 'Carbohydrate/protein pathway' : 'Lipid pathway') + ' - step ' + (step+1) + ' of ' + steps.length;
     svg.appendChild(title);
 
     stepLabel.textContent = 'Step ' + (step+1) + ' of ' + steps.length;

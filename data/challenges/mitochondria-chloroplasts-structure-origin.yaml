@@ -1,0 +1,105 @@
+section: "1-cell-molecular"
+slug: "Mitochondria-Chloroplasts-Structure-Origin"
+title: "Mitochondria & Chloroplasts: Structure & Endosymbiotic Origin"
+questions:
+  - id: 1
+    difficulty: "easy"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      Chloroplasts, according to the theory of endosymbiosis, represent originally free-living prokaryotes that were taken inside eukaryotic cells and lost their ability to exist independently. Which of the following is least likely to be encoded by the chloroplast genome based on this theory?
+      A. Chloroplast DNA PolymeraseB. Chloroplast RNA PolymeraseC. Chloroplast ribosomal subunitsD. Chloroplast tRNA
+  - id: 2
+    difficulty: "easy"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      According to the “Endosymbiont” hypothesis, the first aerobic eukaryote must have evolved around 1.5 billion years ago when Earth’s atmosphere started accumulating O2 in significant quantities. Choose the correct path that depicts this hypothesis
+
+      ![image](/CHALLENGEPICS/mitochondria-chloroplasts-structure-origin-q2-1.png)
+
+      A.                                                  B.                                               C.                                                       D.
+  - id: 3
+    difficulty: "medium"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/mitochondria-chloroplasts-structure-origin-q3.png)
+
+      When isolated mitochondria are suspended in a buffer containing ADP, Pi, and an oxidizable substrate, three easily measured processes occur: the substrate is oxidized; O2 is consumed; and ATP is synthesized. Cyanide (CN-) is an inhibitor of the passage of electrons to O2. Oligomycin inhibits ATP synthase by interacting with subunit F0. 2,4-dinitrophenol (DNP) can diffuse readily across mitochondrial membranes and release a proton into the matrix, thus dissipating the proton gradient.
+
+      Indicate if each of the following statements is True or False.
+
+      A. x is the oxidizable substrate.
+
+      B. y is either oligomycin or CN
+      -.
+
+      C. z is DNP.
+
+      D. If z is a mixture of oligomycin and DNP, the ATP synthesis will not level off.
+    solution: |
+
+      Ans – A - T, B - T, C - T, D – F
+  - id: 4
+    difficulty: "medium"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      The gene cox2 encodes one of the subunits of cytochrome c oxidase (Complex IV). Its distribution and expression in mitochondria and nuclei of four extant plant species is given below.
+
+      | Species | Gene | mRNA |  |  |
+      |---|---|---|---|---|
+      |  | Mitochondria | Nucleus | Mitochondria | Nucleus |
+      | 1 | + | + | + | + |
+      | 2 | + | - | + | - |
+      | 3 | - | + | - | + |
+      | 4 | + | + | + | - |
+
+      Mark the most appropriate phylogenetic classification that is also compatible with the endosymbiotic theory.
+
+      ![image](/CHALLENGEPICS/mitochondria-chloroplasts-structure-origin-q4-1.png)
+
+      A.                                                                                                 B.
+
+      ![image](/CHALLENGEPICS/mitochondria-chloroplasts-structure-origin-q4-2.png)
+
+      ![image](/CHALLENGEPICS/mitochondria-chloroplasts-structure-origin-q4-3.png)
+
+      C.                                                                                                      D.
+  - id: 5
+    difficulty: "hard"
+    source: "Unknown"
+    contributor: "SM"
+    question: |
+
+      The table shows that human mitochondrial DNA (mtDNA) encodes some, but not all, of the protein subunits in the respiratory complexes.
+
+      ![image](/CHALLENGEPICS/mitochondria-chloroplasts-structure-origin-q5.jpg)
+
+      An aspiring biologist thinks there might be some error with some of the data in the table and proposes the following hypothesis:
+
+      Hypothesis: All respiratory protein complexes contain at least one subunit synthesized using mitochondrial ribosomes.
+
+      To test this hypothesis, isolated human cells are subjected to a pulse–chase experiment using a radioactive amino acid. During the pulse, cells are divided into two groups:
+
+      Group 1: Cytoplasmic protein synthesis is inhibited, while mitochondrial protein synthesis can continue. Group 2: Mitochondrial protein synthesis is inhibited, while cytoplasmic protein synthesis can continue.
+
+      After the pulse, cells are returned to normal conditions during the chase. The respiratory complexes are then isolated and tested for radioactive labelling of their protein subunits.
+
+      Using the information in the table, determine whether each statement is true or false:
+
+      A. Complex II should contain no radioactively labelled subunits in Group 1 because none of its four subunits are encoded by mtDNA.
+
+      B. The fluorescence intensity of Complexes III, IV and V in Group 1 should be proportional to the total number of subunits in each complex, because each complex contains subunits encoded by mtDNA.
+
+      C. The results for Complex II would contradict the student's hypothesis because Complex II can be assembled entirely from subunits synthesized from nuclear genes.
+
+      D. If Complex IV shows radioactive labelling in both groups, this would support the conclusion that its subunits are encoded by both nuclear DNA and mtDNA.
+    solution: |
+
+      Ans – A - T, B - F, C - T, D - T

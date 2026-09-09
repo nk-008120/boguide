@@ -117,13 +117,13 @@
 
     var heatLost = mode === 'counter'
       ? Math.round((1 - temps.artery[segments-1]) * 100) + '% of core heat retained by exchange before reaching the extremity'
-      : 'Full core temperature reaches the extremity — maximal heat loss there';
+      : 'Full core temperature reaches the extremity - maximal heat loss there';
     var lossLabel = el('text', {x:240, y:200, 'font-size':11.5, fill:'#1a472a', 'text-anchor':'middle', 'font-weight':600});
     lossLabel.textContent = heatLost;
     svg.appendChild(lossLabel);
 
     var title = el('text', {x:240, y:20, 'font-size':13, 'font-weight':700, fill:'#1a472a', 'text-anchor':'middle'});
-    title.textContent = (mode === 'counter' ? 'With countercurrent exchange' : 'No countercurrent exchange (control)') + ' — step ' + step + ' of ' + maxStep;
+    title.textContent = (mode === 'counter' ? 'With countercurrent exchange' : 'No countercurrent exchange (control)') + ' - step ' + step + ' of ' + maxStep;
     svg.appendChild(title);
 
     document.getElementById('readout').innerHTML = mode === 'counter'

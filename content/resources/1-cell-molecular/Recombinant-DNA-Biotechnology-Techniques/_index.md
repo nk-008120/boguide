@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "USABO", "molecular-biology", "laboratory-technique"]
 ---
 
 {{< topic-meta >}}
+{{< challenge-cta >}}
 {{< mathjax >}}
 
 ## Overview
@@ -87,6 +88,8 @@ The naming and workflow parallel is deliberate and worth internalising as a set:
 **Static**
 
 *(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
+
+{{< practice-challenge >}}
 
 ## Practice Problems
 

@@ -5,7 +5,7 @@ title: "Q5 - Suppressor tRNA and Stop Codon Readthrough"
 {{< problem-meta category="Theory" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
-  <a class="papers-subject-tag" href="/resources/1-cell-molecular/translation-genetic-code/">Translation & The Genetic Code</a>
+  <a class="papers-subject-tag" href="/resources/1-cell-molecular/translation-genetic-code/">Translation & the Genetic Code</a>
 </div>
 
 Refer to the [question paper](/papers/inbo/2026/theory-exam.pdf#page=3) for figures and tables.

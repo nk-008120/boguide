@@ -167,7 +167,7 @@
       group.forEach(function(s){ valuesSeen[s[charId]] = true; });
       var distinctValues = Object.keys(valuesSeen);
       if (distinctValues.length <= 1){
-        flag.textContent = 'This couplet doesn’t help — every specimen here shares the same value for this character. Pick a different one.';
+        flag.textContent = 'This couplet doesn’t help - every specimen here shares the same value for this character. Pick a different one.';
         flag.className = 'flag show';
         return;
       }

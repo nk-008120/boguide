@@ -1,8 +1,8 @@
 ---
-title: "Q18 — The ABC Gene Model of Monocot Flower Development"
+title: "Q18 - The ABC Gene Model of Monocot Flower Development"
 ---
 
-{{< problem-meta category="Theoretical A" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+{{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
   <a class="papers-subject-tag" href="/resources/6-plant-anatomy/flower-anatomy-reproductive-structures/">Flower Anatomy & Reproductive Structures</a>
@@ -26,4 +26,4 @@ Using the information and data, determine which of the statements are true or wh
 
 ---
 
-Question reproduced from **IBO 2015, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2015/theoretical-a-exam.pdf#page=30) · [Community solutions (unofficial)](/papers/ibo/2015/theoretical-a-solutions.pdf)
+Question reproduced from **IBO 2015, Theoretical Exam A**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2015/theoretical-a-exam.pdf#page=30) · [Community solutions (unofficial)](/papers/ibo/2015/theoretical-a-solutions.pdf)

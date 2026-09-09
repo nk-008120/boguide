@@ -57,7 +57,7 @@
 <body>
 <div class="widget-container">
   <h3>Endosymbiosis Evidence Checklist</h3>
-  <div class="subtitle">Organelle X is unlabeled below. Check off which lines of evidence actually support a bacterial (endosymbiotic) origin — not every option belongs.</div>
+  <div class="subtitle">Organelle X is unlabeled below. Check off which lines of evidence actually support a bacterial (endosymbiotic) origin - not every option belongs.</div>
   <div class="layout">
     <div class="organelle-panel">
       <svg viewBox="0 0 100 100">
@@ -77,9 +77,9 @@
   var evidence = [
     { label: 'Double membrane', valid: true, fb: 'Consistent with engulfment: an inner membrane from the original bacterium, an outer one from the host’s engulfing vacuole.' },
     { label: 'Own circular DNA', valid: true, fb: 'A small circular genome resembling a bacterial chromosome, distinct from the linear nuclear genome.' },
-    { label: 'Membrane-bound nucleus', valid: false, fb: 'This is a general eukaryotic cell feature, not something Organelle X itself has — it doesn’t bear on X’s own origin.' },
+    { label: 'Membrane-bound nucleus', valid: false, fb: 'This is a general eukaryotic cell feature, not something Organelle X itself has - it doesn’t bear on X’s own origin.' },
     { label: '70S (bacterial-size) ribosomes', valid: true, fb: 'Bacterial-sized ribosomes distinct from the 80S cytoplasmic ribosome, sensitive to some antibiotics that block bacterial translation.' },
-    { label: 'Binary fission division', valid: true, fb: 'Replicates by splitting in two, independent of the host cell’s mitotic cycle — the same mechanism bacteria use.' },
+    { label: 'Binary fission division', valid: true, fb: 'Replicates by splitting in two, independent of the host cell’s mitotic cycle - the same mechanism bacteria use.' },
     { label: 'Produces ATP via glycolysis in the cytoplasm', valid: false, fb: 'Glycolysis happens in the cytoplasm generally and isn’t a distinguishing feature of this organelle’s ancestry.' }
   ];
   var totalValid = evidence.filter(function(e){ return e.valid; }).length;
@@ -125,10 +125,10 @@
     verdict.textContent = 'Case: ' + checkedValid + ' / ' + totalValid;
     innerMembrane.style.opacity = pct > 0 ? Math.min(1, pct/100) : 0;
     if (checkedValid >= totalValid){
-      meterLabel.innerHTML = '<b>Case complete</b> — Organelle X’s evidence profile matches a mitochondrion (or chloroplast): formerly free-living bacteria, retained as permanent symbionts.';
+      meterLabel.innerHTML = '<b>Case complete</b> - Organelle X’s evidence profile matches a mitochondrion (or chloroplast): formerly free-living bacteria, retained as permanent symbionts.';
       verdict.style.color = '#166534';
     } else if (checkedValid > 0){
-      meterLabel.textContent = 'Case building — ' + (totalValid - checkedValid) + ' more valid line(s) of evidence to go.';
+      meterLabel.textContent = 'Case building - ' + (totalValid - checkedValid) + ' more valid line(s) of evidence to go.';
       verdict.style.color = '#64748b';
     } else {
       meterLabel.textContent = 'Build the case for bacterial origin by checking valid evidence.';

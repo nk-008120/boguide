@@ -53,13 +53,30 @@ def main():
         pid = f"{round_id}/{p.get('id', '?')}"
 
         statements = p.get("statements", [])
-        if len(statements) != 4:
-            schema_fails.append(f"{pid}: {len(statements)} statements (expected 4)")
+        if not (1 <= len(statements) <= 20):
+            schema_fails.append(f"{pid}: {len(statements)} statements (expected 1-20; most questions have 4, but the source paper itself varies -- some multi-part questions legitimately run to a dozen or more sub-items)")
         for s in statements:
-            if not isinstance(s.get("answer"), bool):
-                schema_fails.append(f"{pid}-{s.get('letter', '?')}: answer is not boolean")
+            letter = s.get("letter", "?")
+            stype = s.get("type")
+            if stype == "mcq":
+                options = s.get("options")
+                if not options or not all(isinstance(o, dict) and "key" in o and "text" in o for o in options):
+                    schema_fails.append(f"{pid}-{letter}: mcq statement missing/malformed options")
+                elif not isinstance(s.get("answer"), str) or s.get("answer") not in {str(o["key"]) for o in options}:
+                    schema_fails.append(f"{pid}-{letter}: mcq answer does not match any option key")
+            elif stype == "numeric":
+                if not isinstance(s.get("expected"), (int, float)):
+                    schema_fails.append(f"{pid}-{letter}: numeric statement missing/non-numeric expected value")
+            elif stype == "free_response":
+                if not s.get("modelAnswer", "").strip():
+                    schema_fails.append(f"{pid}-{letter}: free_response statement missing modelAnswer")
+            elif stype is None:
+                if not isinstance(s.get("answer"), bool):
+                    schema_fails.append(f"{pid}-{letter}: answer is not boolean")
+            else:
+                schema_fails.append(f"{pid}-{letter}: unknown statement type '{stype}'")
             if not s.get("explanation", "").strip():
-                schema_fails.append(f"{pid}-{s.get('letter', '?')}: empty explanation")
+                schema_fails.append(f"{pid}-{letter}: empty explanation")
 
         subs = p.get("subjects", [])
         if not subs:
@@ -88,7 +105,7 @@ def main():
 
     print(f"Validated {n} problem(s){' in round ' + args.round_id if args.round_id else ''}.")
     categories = [
-        ("Schema (4 statements, boolean answers, non-empty explanations)", schema_fails),
+        ("Schema (1-20 statements, type-appropriate answers, non-empty explanations)", schema_fails),
         ("Subject tags (resolve to a real, current /resources/ page)", subject_fails),
         ("Content pages (index.md exists per problem id)", content_fails),
         ("Figure files (every image reference resolves on disk)", figure_fails),

@@ -1,0 +1,56 @@
+Q.17
+To study the effect of phytohormone on fruit maturation, researchers used abscisic
+acid (ABA) and ethephon to treat of sweet cherry fruits and afterward to evaluate the
+expression of PacNCED1 gene which encodes 9-cis-epoxycarotenoid dioxygenase, a
+key enzyme in ABA biosynthesis. They also checked the expression of PacACO1 gene
+encoding 1-aminocyclopropane-1-carboxylic acid oxidase enzyme that involves in
+ethylene biosynthesis. The transcript of PacACT1 (one b-actin cDNA fragment was
+cloned and designated as PacACT1) was used to standardize for all expression
+(Fig.Q17-D). 
+Treatment
+Firmness of
+pulp
+Soluble solids content/ titratable
+acidity
+Anthocyanin(U.g
+)
+Control
+20.3a
+14.4a
+13.4a
+Ethephon
+19.6a
+15.3a
+14.4a
+ABA
+11.9b
+16.8b
+23.8b
+(a and b show values that are significantly different).
+pulp
+seed
+Ethylene production
+pulp
+seed
+Relative PacNCED1
+mRNA level
+Ethephon
+Control
+ABA
+Control
+Ethephon
+ABA
+Fig. Q17. Effects of ABA and ethephon application on ABA content (A), accumulation of PacNCED1 (B), ethylene
+production during ripening (C) and PacACO1(D). * and ** indicate significant differences compared to control.
+Indicate in the Answer sheet if each of the following statements is True or False. 
+A. Both ABA and Ethephon stimulate the expression of PacACO1 and PacNCED1
+genes in sweet cherry fruit.
+B. The expression of PacNCED1 and ABA accumulation in pulp are higher than in
+the seed in the treatments of ABA
+C. ABA induces the maturation of sweet cherry fruit via stimulation of ethylene
+production.
+D. Ethephon shows lower effect on anthocyanin and endogenous ABA production
+than exogenous ABA does.
+-
+1
+21/56

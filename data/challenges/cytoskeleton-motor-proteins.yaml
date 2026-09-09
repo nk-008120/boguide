@@ -1,0 +1,126 @@
+section: "1-cell-molecular"
+slug: "Cytoskeleton-Motor-Proteins"
+title: "Cytoskeleton & Motor Proteins"
+questions:
+  - id: 1
+    difficulty: "easy"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      Kinesin-5 motors are tetrameric motors that bind to anti-parallel microtubules and slide them apart. The microtubules in a mitotic spindle can be divided into three groups (1) kinetochore microtubules (ii) astral microtubules and (iii) interpolar microtubules as shown below.
+
+      ![image](/CHALLENGEPICS/cytoskeleton-motor-proteins-q1.png)
+
+      During mitosis, Kinesin-5 is most likely to be present on __________ microtubules and is expected to play a crucial role during _________. Choose the correct option to complete the given statement.
+
+      A. kinetochore and prophase
+      B. interpolar and anaphaseC. astral and anaphaseD. interpolar and metaphase
+  - id: 2
+    difficulty: "easy"
+    source: "USABO"
+    contributor: "SM"
+    question: |
+
+      Which of the following proteins act as molecular motors that move along microtubules of the cytoskeleton? 
+      A. Myosin
+      B. Dynein
+      C. Flagellin
+      D. Kinesin
+      E. B and D
+  - id: 3
+    difficulty: "medium"
+    source: "Unknown"
+    contributor: "SM"
+    question: |
+
+      Frog melanophores contain pigment granules that can either be dispersed throughout the cytoplasm, causing the cell to appear darker, or aggregated near the centre of the cell, causing it to appear lighter.
+
+      Pigment granules are transported along microtubules by motor proteins. The minus ends of microtubules are predominantly located near the cell centre, while the plus ends extend towards the cell periphery.
+
+      A researcher treats melanophores with different substances and measures pigment distribution.
+
+      (I) Which statement is most consistent with the role of microtubules in melanophore pigment transport?
+
+      A. Inhibition of microtubule polymerization would increase pigment aggregation at the cell centre because additional microtubules are formed with their minus ends facing outward.
+
+      B. A drug that stabilizes microtubules would necessarily prevent pigment granules from moving because motor proteins can only move along depolymerizing microtubules.
+      C. If a motor protein transports pigment granules towards microtubule minus ends, increased activity of this motor would be expected to increase pigment aggregation near the centre of the melanophore.
+
+      D. If pigment granules move towards the plus ends of microtubules, depolymerization at the plus ends would increase the distance over which the granules can be transported towards the cell periphery.
+
+      (II) In a separate experiment, researchers measure the movement of pigment granules towards the centre of a melanophore following stimulation. The mean distance of pigment granules from the cell centre was measured at 10 time points:
+
+      | Time (s) | Mean distance from cell centre (μm) |
+      |---|---|
+      | 0 | 24.00 |
+      | 10 | 22.02 |
+      | 20 | 20.00 |
+      | 30 | 17.85 |
+      | 40 | 15.96 |
+      | 50 | 14.25 |
+      | 60 | 12.06 |
+      | 70 | 9.86 |
+      | 80 | 8.00 |
+      | 100 | 4.50 |
+
+      (a) Calculate the mean rate of movement of pigment towards the centre (in μm/s) :
+    solution: |
+
+      Ans – 0.195-0.205
+
+      (b) A second group of melanophores is treated with a drug that reduces the rate of microtubule-dependent transport by 35%. Calculate the expected mean rate of pigment movement in the treated cells.
+      Ans – 0.126 – 0.133
+  - id: 4
+    difficulty: "hard"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/cytoskeleton-motor-proteins-q4.png)
+
+      Animal cells generally have three types of cytoskeletons: (1) microtubules, (2) actin filaments, and (3) intermediate filaments. Figure 1 shows the morphology of a cytoskeleton during the mitotic metaphase or in interphase. For each statement below A-E, indicate the corresponding type of cytoskeleton from 1 to 3 in the first box, and the schematic diagram from 1 to 6 in Figure in the second box.
+
+      A. They are entangled inside interphase cells and exist in a meshwork. They enhance the elasticity of cells and provide a mechanically supportive structure. ()
+
+      B. It is called a stress fiber. It builds a support beam inside cells and works to maintain the shape of the cell in interphase.
+
+      C. This spindle-shaped structure is formed during cell division. It plays a role in separating replicated chromosomes accurately into daughter cells.
+
+      D. After chromosomal segregation, it forms a ring structure and mechanically separates two daughter cells.
+
+      E. Having radial distributions starting near the nucleus, the fibrous structure is assumed to have structural polarity or directionality.
+
+      | Statement | Cytoskeleton Type | Schematic Diagram |
+      |---|---|---|
+      | A | 3 | 3 |
+      | B | 2 | 1 |
+      | C | 1 | 6 |
+      | D | 2 | 5 |
+      | E | 1 | 2 |
+  - id: 5
+    difficulty: "hard"
+    source: "Unknown"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/cytoskeleton-motor-proteins-q5.jpg)
+
+      Myosin V is a motor protein that transports cargo along actin filaments. It has two motor heads, which bind to actin and move in an alternating hand-over-hand pattern. Researchers investigated the movement of individual myosin V molecules along immobilized actin filaments. To observe movement with high spatial resolution, they attached a fluorescent label to the neck region of one myosin V head. The actin filament was fixed in position, and the position of the fluorescent label was recorded repeatedly over time using fluorescence microscopy. The results of the experiment is given below in the figure. The researchers found that the labelled neck region did not move continuously. Instead, its position remained relatively constant for short periods before changing abruptly, producing a step-like trace similar to that shown in the figure. When one myosin head remains attached to the actin filament, the other head can detach and move past it before binding to a new site. The moving head may therefore travel a greater distance than the displacement measured for the labelled region of the entire motor.
+
+      Using the information provided and the figure, determine whether each statement is true or false:A. The step-like trace provides evidence that movement of myosin V along the actin filament occurs through discrete changes in position rather than at a constant continuous rate.
+
+      B. If the fluorescent label records a displacement of approximately 36 nm, each individual myosin head must also have moved exactly 36 nm during that step.
+
+      C. During hand-over-hand movement, one myosin head could move approximately 72 nm relative to its previous position while the overall position associated with the motor advances by approximately 36 nm.
+
+      D. Because myosin V contains two heads, an observed 36 nm displacement of the labelled motor can be interpreted as each head moving 18 nm during the same step.
+
+      Ans – A – T, B – F, C – T, D - F
+    solution: |
+
+      | A | True | The step-like trace shows periods of little or no displacement followed by abrupt changes in position, supporting discrete stepping rather than continuous movement. |
+      |---|---|---|
+      | B | False | A measured displacement of 36 nm for the labelled region does not mean that each myosin head moved exactly 36 nm. During a hand-over-hand step, the moving myosin head can move approximately 72 nm. |
+      | C | True | In hand-over-hand movement, one head can move approximately 72 nm to pass the stationary head and bind to a new actin site, while the motor advances approximately 36 nm overall. |
+      | D | False | The 36 nm displacement cannot simply be divided by two to conclude that each head moves 18 nm. The heads move alternately, not simultaneously by equal distances. |

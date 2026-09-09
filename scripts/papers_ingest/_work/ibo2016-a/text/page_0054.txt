@@ -1,0 +1,50 @@
+Q.47
+Goats are fed with alfalfa and corn stubble. At time 0, they were also fed with Mimosa
+seeds. The presence of viable Mimosa seeds in goat faeces was recorded with a
+germination experiment with egested and control seeds.
+Time after ingestion (h)
+% seeds found
+Time (days)
+Probability of non germinating
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1.0
+0
+5
+10
+15
+20
+25
+A
+B
+0
+2
+4
+10
+14
+8
+16
+24
+32
+40
+48
+56
+64
+72
+80
+6
+8
+12
+Figure Q.47 A: Percent of Mimosa seeds found in goat faeces as a function of time after ingestion. Goat pellets were
+collected every 8 hours over a period of 80 hours after ingestion. B: Probability of non germinating of egested (stippled
+line) and control (solid line) Mimosa seeds.
+Indicate in the Answer sheet if each of the following statements is True or False.
+A. Mimosa seed can survive up to 3 days in the goat digestive system.
+B. The passage through the goat digestive system decreases seed germination.
+C. Number of seeds egested after ingestion is highest after 24 hours.
+D. Goats could act as legitimate disperser of Mimosa seeds.
+53/56

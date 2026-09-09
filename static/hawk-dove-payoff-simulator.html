@@ -47,7 +47,7 @@
 <body>
 <div class="widget-container">
   <h3>Hawk-Dove Payoff Simulator</h3>
-  <div class="subtitle">Set the value of the resource and the cost of losing an escalated fight — find where hawk and dove fitness cross (the ESS).</div>
+  <div class="subtitle">Set the value of the resource and the cost of losing an escalated fight - find where hawk and dove fitness cross (the ESS).</div>
   <div class="row">
     <div>
       <label for="vSlider">Resource value (V): <span id="vVal">4</span></label>
@@ -89,7 +89,7 @@
     }
 
     var pStar = V < C ? (V / C) : 1;
-    document.getElementById('essVal').textContent = (pStar * 100).toFixed(0) + '%' + (V >= C ? ' (pure hawk — V ≥ C)' : '');
+    document.getElementById('essVal').textContent = (pStar * 100).toFixed(0) + '%' + (V >= C ? ' (pure hawk - V ≥ C)' : '');
 
     Plotly.react('plot', [
       { x: ps, y: hawkY, mode: 'lines', name: 'Hawk fitness', line: { color: '#d9534f', width: 2.5 } },

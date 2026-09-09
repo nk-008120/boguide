@@ -40,7 +40,7 @@
 <body>
 <div class="widget-container">
   <h3>Economic Defendability Threshold Explorer</h3>
-  <div class="subtitle">Set how dense/predictable the resource is and how costly defense would be — see whether defending is predicted to pay off.</div>
+  <div class="subtitle">Set how dense/predictable the resource is and how costly defense would be - see whether defending is predicted to pay off.</div>
 
   <label for="densitySlider">Resource density &amp; predictability: <span id="densityVal">50%</span></label>
   <input type="range" id="densitySlider" min="0" max="100" value="50">
@@ -58,7 +58,7 @@
   </svg>
 
   <div class="verdict" id="verdict"></div>
-  <div class="note">Illustrative model: benefit of exclusivity scales with resource density × predictability; defense is favored whenever that benefit exceeds the energetic/risk cost of defending it (Jerram Brown's economic defendability logic) — e.g. a sunbird defending a dense flower patch, but abandoning defense once flowers thin out.</div>
+  <div class="note">Illustrative model: benefit of exclusivity scales with resource density × predictability; defense is favored whenever that benefit exceeds the energetic/risk cost of defending it (Jerram Brown's economic defendability logic) - e.g. a sunbird defending a dense flower patch, but abandoning defense once flowers thin out.</div>
 </div>
 <script>
 (function(){
@@ -79,13 +79,13 @@
 
     if (density > cost){
       verdict.className = 'verdict defend';
-      verdict.textContent = 'Benefit exceeds cost — territorial defense is predicted to be favored.';
+      verdict.textContent = 'Benefit exceeds cost - territorial defense is predicted to be favored.';
     } else if (density < cost) {
       verdict.className = 'verdict nodefend';
-      verdict.textContent = 'Cost exceeds benefit — defense is predicted NOT to be worth it.';
+      verdict.textContent = 'Cost exceeds benefit - defense is predicted NOT to be worth it.';
     } else {
       verdict.className = 'verdict nodefend';
-      verdict.textContent = 'Right at the threshold — defense barely breaks even.';
+      verdict.textContent = 'Right at the threshold - defense barely breaks even.';
     }
   }
 

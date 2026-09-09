@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "USABO", "molecular-biology"]
 ---
 
 {{< topic-meta >}}
+{{< challenge-cta >}}
 {{< mathjax >}}
 
 ## Overview
@@ -86,6 +87,8 @@ Both pathways illustrate that eukaryotic gene regulation extends past transcript
 **Static**
 
 *(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here.)*
+
+{{< practice-challenge >}}
 
 ## Practice Problems
 

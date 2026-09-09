@@ -1,0 +1,16 @@
+Q.42
+Frequency-dependent selection is an evolutionary process where the fitness of a
+phenotype depends on its frequency relative to other phenotypes in a given
+population. In positive frequency-dependent selection, the fitness of a phenotype
+increases as it becomes more common. And in negative frequency-dependent
+selection, the fitness of a phenotype decreases as it becomes more common.
+Indicate in the answer sheet if each of following statements is true or false.
+A. Plant self-incompatibility alleles are an example of negative frequency-dependent
+selection.
+B. Spreading of a newly emerged virus in a human population is controlled by
+negative frequency-dependent selection.
+C. Prevalence of Papilio memnon whose females resemble distasteful Papilio coon is
+an example of positive frequency-dependent selection.
+D. Spread of genes responsible for warning coloration in toxic organisms in
+population is controlled by positive frequency-dependent selection.
+47/56

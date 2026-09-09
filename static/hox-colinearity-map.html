@@ -53,7 +53,7 @@
 <body>
 <div class="widget-container">
   <h3>Hox Gene Colinearity Map</h3>
-  <div class="subtitle">Click a gene in the cluster (arranged 5' to 3') to see which body region it patterns — the two orders match.</div>
+  <div class="subtitle">Click a gene in the cluster (arranged 5' to 3') to see which body region it patterns - the two orders match.</div>
   <div id="cluster"></div>
   <div id="embryo-wrap">
     <svg viewBox="0 0 520 140">
@@ -105,7 +105,7 @@
   function select(i){
     document.querySelectorAll('.gene-box').forEach(function(b, idx){ b.classList.toggle('active', idx === i); });
     document.querySelectorAll('.region').forEach(function(r, idx){ r.classList.toggle('active', idx === i); });
-    caption.innerHTML = '<b>' + genes[i].name + '</b> (position ' + (i+1) + ' of ' + genes.length + ' in the cluster) patterns the <b>' + genes[i].region + '</b> — the same relative position along the chromosome and along the body axis.';
+    caption.innerHTML = '<b>' + genes[i].name + '</b> (position ' + (i+1) + ' of ' + genes.length + ' in the cluster) patterns the <b>' + genes[i].region + '</b> - the same relative position along the chromosome and along the body axis.';
   }
 
   select(0);

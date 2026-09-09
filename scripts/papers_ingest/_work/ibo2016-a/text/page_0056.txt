@@ -1,0 +1,15 @@
+Q.49
+Most taxonomists today believe that biological classification systems should reflect
+the evolutionary relationships of organisms and taxonomic groups should be
+monophyletic. However, the classification used today still contains many polyphyletic
+and paraphyletic taxonomic groups. 
+Indicate in the answer sheet if each of the following statements is true or false.
+A. Polyphyletic taxa can arise when taxa that are not directly related share similar
+character states due to convergence
+B. If a classification is based on phenotypic similarity, paraphyletic taxonomic
+groups may result
+C. Some taxa in a paraphyletic taxonomic group have phenotypically evolved at
+different rates compared to closely related taxa that are not included in the
+group.
+D. All molecular data support gymnosperms as a monophyletic taxon. 
+55/56

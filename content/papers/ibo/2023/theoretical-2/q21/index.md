@@ -5,7 +5,7 @@ title: "Q21 - Aconitase Mechanism"
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
-  <a class="papers-subject-tag" href="/resources/1-cell-molecular/bioenergetics-central-metabolism/">Bioenergetics & Central Metabolism</a>
+  <a class="papers-subject-tag" href="/resources/1-cell-molecular/bioenergetics-central-metabolism/">Bioenergetics & Central Metabolism Overview</a>
   <a class="papers-subject-tag" href="/resources/1-cell-molecular/enzyme-kinetics-regulation/">Enzyme Kinetics & Regulation</a>
 </div>
 

@@ -154,13 +154,13 @@
     var chainAdjacent = diff === 1;
     if (chainAdjacent){
       resultEl.className = 'yes';
-      resultEl.innerHTML = '<b>' + pops[a].label + ' and ' + pops[b].label + ' interbreed successfully.</b> Every chain-adjacent pair along this ring can interbreed — that’s true of every neighboring pair you test.';
+      resultEl.innerHTML = '<b>' + pops[a].label + ' and ' + pops[b].label + ' interbreed successfully.</b> Every chain-adjacent pair along this ring can interbreed - that’s true of every neighboring pair you test.';
     } else if ((a === 0 && b === n - 1) || (a === n - 1 && b === 0)){
       resultEl.className = 'no';
-      resultEl.innerHTML = '<b>' + pops[a].label + ' and ' + pops[b].label + ' do NOT interbreed</b> — even though they are geographically close (the two ends of the ring meet here), they are separated by the full chain of accumulated differences and behave as distinct species where they meet. This is the ring species paradox: the biological species concept gives a contradictory answer depending which populations you compare.';
+      resultEl.innerHTML = '<b>' + pops[a].label + ' and ' + pops[b].label + ' do NOT interbreed</b> - even though they are geographically close (the two ends of the ring meet here), they are separated by the full chain of accumulated differences and behave as distinct species where they meet. This is the ring species paradox: the biological species concept gives a contradictory answer depending which populations you compare.';
     } else {
       resultEl.className = '';
-      resultEl.innerHTML = '<b>' + pops[a].label + ' and ' + pops[b].label + ' never actually encounter each other in the wild</b> — they are separated by several intervening populations along the ring, so interbreeding was never geographically possible between them to begin with. Only chain-adjacent populations, and the two ends of the ring where it closes, are ones that actually meet. Try two <em>adjacent</em> populations, or the two end populations (Pop 1 and Pop 8).';
+      resultEl.innerHTML = '<b>' + pops[a].label + ' and ' + pops[b].label + ' never actually encounter each other in the wild</b> - they are separated by several intervening populations along the ring, so interbreeding was never geographically possible between them to begin with. Only chain-adjacent populations, and the two ends of the ring where it closes, are ones that actually meet. Try two <em>adjacent</em> populations, or the two end populations (Pop 1 and Pop 8).';
     }
     instructions.textContent = 'Click "Reset selection" to try another pair.';
   }

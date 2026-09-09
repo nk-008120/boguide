@@ -161,12 +161,12 @@
         Array.prototype.forEach.call(optButtons.children, function(b){ b.disabled = true; });
         if (correct){
           btn.classList.add('correct');
-          feedback.textContent = 'Correct — ' + t.label + '.';
+          feedback.textContent = 'Correct - ' + t.label + '.';
           feedback.className = 'feedback correct';
         } else {
           btn.classList.add('incorrect');
           var correctLabel = types.filter(function(x){ return x.key === key; })[0].label;
-          feedback.textContent = 'Not quite — this is actually ' + correctLabel + '.';
+          feedback.textContent = 'Not quite - this is actually ' + correctLabel + '.';
           feedback.className = 'feedback incorrect';
         }
         answered[key] = true;

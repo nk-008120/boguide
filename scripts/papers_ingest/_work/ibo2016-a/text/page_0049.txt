@@ -1,0 +1,27 @@
+ECOLOGY
+Q.43
+A population of dragonfly larvae (Leucorrhinia intacta) is separated into two groups.
+In both groups, larvae populations are put inside a cage with no food limitation. The
+first group is exposed to a fish predator that can swim freely, but cannot enter the
+cage. The second group is a control with no fish. The proportion of larvae surviving
+and the proportion of live larvae failing to metamorphose in the two groups are shown
+below:
+Proportion of larvae
+surviving to metamorphosis
+Proportion of laravae surviving
+but not to complete emergence
+Fish
+No fish
+Fish
+No fish
+Figure Q.43
+Indicate in the Answer sheet if each of the following statements is True or False. 
+A. One of the causes of high failure rate of metamorphosis of the larvae upon
+exposure to a non-lethal predator is cannibalism.
+B. The high mortality of larvae in the first group is due to predator-induced stress.
+C. In the predator treatment, the percentage of individuals that survived the larval
+stage completed emergence to the adult stage is lower than the percentage of
+those in the fishless treatment.
+D. The survival of dragonfly before metamorphosis is dependent on the predator
+while those during metamorphosis is not.
+48/56

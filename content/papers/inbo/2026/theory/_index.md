@@ -1,10 +1,13 @@
 ---
 title: "Theory"
+description: "INBO 2026 Theory paper: timed practice with per-question solutions and scoring on BiOrchive."
 ---
 
 {{< biorchive-bg >}}
 
-This paper includes MCQ, true/false, numeric, and matching question types. Timed attempt mode is not yet available for mixed-format exams; practice each question individually below.
+<a class="papers-nav-btn papers-nav-next" href="attempt/" style="display:inline-block;margin-bottom:1.5rem;">Start Timed Attempt →</a>
+<a class="papers-nav-btn" href="leaderboard/" style="display:inline-block;margin-bottom:1.5rem;">🏆 Leaderboard</a>
+<p class="papers-summary">This paper includes MCQ, true/false, and numeric question types.</p>
 
 **Note:** Q8 was officially deleted from this exam.
 

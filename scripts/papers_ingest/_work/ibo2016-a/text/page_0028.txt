@@ -1,0 +1,21 @@
+Q.23
+A group of researchers conducted an experiment to study the effects of phlorizin on
+some physiological indices in blood and urine of normal mice and diabetic mice.
+Phlorizin is an inhibitor of SGLT2 which is the channel of glucose reabsorption in the
+kidney. Assume expression of SGLT2 gene is positively correlated with urine glucose
+level and blood glucose also correlates positively with blood pressure. 
+Mice were divided into four groups:
+Group 1: Normal mice were injected with phlorizin
+Group 2: Mice with severe type 2 diabetes induced by streptozotocin injection
+Group 3: Streptozotocin induced-type 2 diabetic mice were injected with phlorizin
+Group 4: Normal mice as controls
+After the four-week experiment, physiological indicators of blood, urine and renal
+SGLT2 expression of the mice were measured.
+Indicate in the Answer sheet if each of the following statements is True or False. 
+A. The blood pressure of Group 3 mice was lower than that of Group 2 mice. 
+B. The SGLT2 gene expression levels in the kidneys of Group 2 mice were lower
+than those of Group 4 mice.
+C. The volume of urine of Group 1 mice was higher than that of Group 4 mice.
+D. The quantity of SGLT2 molecules in the kidney medulla is higher than that in the
+kidney cortex.
+27/56

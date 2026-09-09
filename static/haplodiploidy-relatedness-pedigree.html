@@ -95,14 +95,14 @@
   var pairs = {
     'queen|daughterA': { r: 0.5, reason: 'Standard diploid mother-daughter relatedness: the daughter inherits exactly half her genome from the queen.' },
     'queen|daughterB': { r: 0.5, reason: 'Standard diploid mother-daughter relatedness: the daughter inherits exactly half her genome from the queen.' },
-    'queen|son': { r: 0.5, reason: 'The haploid son develops from an unfertilized egg, so his entire genome is one random half of the queen\'s diploid genome — the same 0.5 relatedness as any mother-offspring pair.' },
-    'drone-father|daughterA': { r: 1.0, reason: 'Because the father is haploid, every one of his sperm carries his entire genome unchanged — every daughter gets 100% of his genes, giving a relatedness of 1.0 (not the usual 0.5).' },
-    'drone-father|daughterB': { r: 1.0, reason: 'Because the father is haploid, every one of his sperm carries his entire genome unchanged — every daughter gets 100% of his genes, giving a relatedness of 1.0 (not the usual 0.5).' },
-    'drone-father|son': { r: 0, reason: 'Sons develop only from the queen\'s unfertilized eggs — they have no father at all, so father-son relatedness is undefined/zero here.' },
-    'daughterA|daughterB': { r: 0.75, reason: 'Full sisters share 100% of their paternal genes (identical haploid genome from the father) plus, on average, 50% of their maternal genes — (1.0 + 0.5) / 2 = 0.75, higher than the standard diploid sibling value of 0.5.' },
-    'daughterA|son': { r: 0.25, reason: 'A daughter and her brother share no paternal genes (the son has no father contribution to compare) and only the usual 50% chance of sharing a given maternal allele — averaging to 0.25, lower than the sister-sister value.' },
-    'daughterB|son': { r: 0.25, reason: 'A daughter and her brother share no paternal genes (the son has no father contribution to compare) and only the usual 50% chance of sharing a given maternal allele — averaging to 0.25, lower than the sister-sister value.' },
-    'queen|drone-father': { r: null, reason: 'These are mates, not blood relatives within this pedigree — relatedness isn\'t the relevant measure for this pair.' }
+    'queen|son': { r: 0.5, reason: 'The haploid son develops from an unfertilized egg, so his entire genome is one random half of the queen\'s diploid genome - the same 0.5 relatedness as any mother-offspring pair.' },
+    'drone-father|daughterA': { r: 1.0, reason: 'Because the father is haploid, every one of his sperm carries his entire genome unchanged - every daughter gets 100% of his genes, giving a relatedness of 1.0 (not the usual 0.5).' },
+    'drone-father|daughterB': { r: 1.0, reason: 'Because the father is haploid, every one of his sperm carries his entire genome unchanged - every daughter gets 100% of his genes, giving a relatedness of 1.0 (not the usual 0.5).' },
+    'drone-father|son': { r: 0, reason: 'Sons develop only from the queen\'s unfertilized eggs - they have no father at all, so father-son relatedness is undefined/zero here.' },
+    'daughterA|daughterB': { r: 0.75, reason: 'Full sisters share 100% of their paternal genes (identical haploid genome from the father) plus, on average, 50% of their maternal genes - (1.0 + 0.5) / 2 = 0.75, higher than the standard diploid sibling value of 0.5.' },
+    'daughterA|son': { r: 0.25, reason: 'A daughter and her brother share no paternal genes (the son has no father contribution to compare) and only the usual 50% chance of sharing a given maternal allele - averaging to 0.25, lower than the sister-sister value.' },
+    'daughterB|son': { r: 0.25, reason: 'A daughter and her brother share no paternal genes (the son has no father contribution to compare) and only the usual 50% chance of sharing a given maternal allele - averaging to 0.25, lower than the sister-sister value.' },
+    'queen|drone-father': { r: null, reason: 'These are mates, not blood relatives within this pedigree - relatedness isn\'t the relevant measure for this pair.' }
   };
 
   var selected = [];
@@ -133,7 +133,7 @@
     selected.push(node);
 
     if (selected.length === 1){
-      readout.innerHTML = 'Selected <b>' + labelFor(id) + '</b> — now click a second individual.';
+      readout.innerHTML = 'Selected <b>' + labelFor(id) + '</b> - now click a second individual.';
     } else if (selected.length === 2){
       var idA = selected[0].dataset.id, idB = selected[1].dataset.id;
       var key = keyFor(idA, idB);

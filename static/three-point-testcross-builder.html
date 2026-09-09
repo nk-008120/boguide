@@ -47,7 +47,7 @@
 <body>
 <div class="widget-container">
   <h3>Three-Point Testcross Builder</h3>
-  <div class="subtitle">Enter offspring counts for all 8 phenotype classes from a trihybrid testcross (AaBbCc × aabbcc) — the tool identifies parental/single-crossover/double-crossover classes, the middle gene, recombination frequencies, and the coefficient of coincidence.</div>
+  <div class="subtitle">Enter offspring counts for all 8 phenotype classes from a trihybrid testcross (AaBbCc × aabbcc) - the tool identifies parental/single-crossover/double-crossover classes, the middle gene, recombination frequencies, and the coefficient of coincidence.</div>
 
   <table class="classes">
     <tr><th>Class</th><th>Count</th><th>Class</th><th>Count</th></tr>
@@ -71,12 +71,12 @@
   <button class="btn" id="computeBtn">Compute</button>
 
   <div class="results" id="results" style="display:none;">
-    <div class="readout full">Total offspring: <b id="totalOut">—</b> &nbsp;|&nbsp; Middle gene: <b id="middleOut">—</b></div>
-    <div class="readout">RF (middle ↔ <span id="outer1Label"></span>): <b id="rf1Out">—</b></div>
-    <div class="readout">RF (middle ↔ <span id="outer2Label"></span>): <b id="rf2Out">—</b></div>
-    <div class="readout">Observed double-crossover freq: <b id="obsDcoOut">—</b></div>
-    <div class="readout">Expected double-crossover freq: <b id="expDcoOut">—</b></div>
-    <div class="readout full">Coefficient of coincidence: <b id="cocOut">—</b> &nbsp;|&nbsp; Interference: <b id="interfOut">—</b></div>
+    <div class="readout full">Total offspring: <b id="totalOut">-</b> &nbsp;|&nbsp; Middle gene: <b id="middleOut">-</b></div>
+    <div class="readout">RF (middle ↔ <span id="outer1Label"></span>): <b id="rf1Out">-</b></div>
+    <div class="readout">RF (middle ↔ <span id="outer2Label"></span>): <b id="rf2Out">-</b></div>
+    <div class="readout">Observed double-crossover freq: <b id="obsDcoOut">-</b></div>
+    <div class="readout">Expected double-crossover freq: <b id="expDcoOut">-</b></div>
+    <div class="readout full">Coefficient of coincidence: <b id="cocOut">-</b> &nbsp;|&nbsp; Interference: <b id="interfOut">-</b></div>
   </div>
   <div class="note" id="explainNote"></div>
 </div>
@@ -176,10 +176,10 @@
     document.getElementById('rf2Out').textContent = scoResults[1].rf.toFixed(1) + '% (' + scoResults[1].rf.toFixed(1) + ' cM)';
     document.getElementById('obsDcoOut').textContent = (obsDco*100).toFixed(2) + '%';
     document.getElementById('expDcoOut').textContent = (expDco*100).toFixed(2) + '%';
-    document.getElementById('cocOut').textContent = isNaN(coc) ? '—' : coc.toFixed(2);
-    document.getElementById('interfOut').textContent = isNaN(interference) ? '—' : interference.toFixed(2);
+    document.getElementById('cocOut').textContent = isNaN(coc) ? '-' : coc.toFixed(2);
+    document.getElementById('interfOut').textContent = isNaN(interference) ? '-' : interference.toFixed(2);
 
-    document.getElementById('explainNote').textContent = 'Parental classes (' + parentalPair.classes.join(' / ') + ') are most frequent; double-crossover classes (' + dcoPair.classes.join(' / ') + ') are least frequent. Gene ' + middleGene + ' is the middle gene because its allele — not ' + scoResults[0].gene + '\'s or ' + scoResults[1].gene + '\'s — is the one that flips in the double-crossover classes relative to the parental classes.';
+    document.getElementById('explainNote').textContent = 'Parental classes (' + parentalPair.classes.join(' / ') + ') are most frequent; double-crossover classes (' + dcoPair.classes.join(' / ') + ') are least frequent. Gene ' + middleGene + ' is the middle gene because its allele - not ' + scoResults[0].gene + '\'s or ' + scoResults[1].gene + '\'s - is the one that flips in the double-crossover classes relative to the parental classes.';
   });
 
   document.getElementById('computeBtn').click();

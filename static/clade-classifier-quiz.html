@@ -107,15 +107,15 @@
 
   var scenarios = [
     { group: ['Lizard','Turtle','Crocodilian'], answer: 'para', name: '"Reptilia" (traditional sense)',
-      explain: 'Paraphyletic. This group is the common ancestor of Lizard/Turtle/Crocodilian/Bird plus <b>all but one</b> descendant — Bird is excluded even though it nests inside the same lineage. This is exactly why traditional "Reptilia" is not a valid cladistic taxon.', missing: ['Bird'] },
+      explain: 'Paraphyletic. This group is the common ancestor of Lizard/Turtle/Crocodilian/Bird plus <b>all but one</b> descendant - Bird is excluded even though it nests inside the same lineage. This is exactly why traditional "Reptilia" is not a valid cladistic taxon.', missing: ['Bird'] },
     { group: ['Lizard','Turtle','Crocodilian','Bird'], answer: 'mono', name: 'Sauropsida',
-      explain: 'Monophyletic. This is the full set of descendants of one common ancestor — a true clade, and the modern replacement for "Reptilia."', missing: [] },
+      explain: 'Monophyletic. This is the full set of descendants of one common ancestor - a true clade, and the modern replacement for "Reptilia."', missing: [] },
     { group: ['Crocodilian','Bird'], answer: 'mono', name: 'Archosauria',
       explain: 'Monophyletic. Crocodilian and Bird share a more recent common ancestor with each other than with any other taxon here, and this group contains that ancestor plus all of its descendants.', missing: [] },
     { group: ['Bird','Mammal'], answer: 'poly', name: '"Warm-blooded amniotes"',
-      explain: 'Polyphyletic. Bird and Mammal are united by a convergently-evolved trait (endothermy), not by shared recent ancestry — their most recent common ancestor (the base of this whole tree) was not endothermic, and every taxon in between is excluded from the group despite being just as closely related to the ancestor.', missing: [], mrca: 'n1' },
+      explain: 'Polyphyletic. Bird and Mammal are united by a convergently-evolved trait (endothermy), not by shared recent ancestry - their most recent common ancestor (the base of this whole tree) was not endothermic, and every taxon in between is excluded from the group despite being just as closely related to the ancestor.', missing: [], mrca: 'n1' },
     { group: ['Lizard','Turtle','Bird'], answer: 'para', name: 'Sauropsida minus Crocodilian',
-      explain: 'Paraphyletic. Just like the "Reptilia" example, this excludes one nested descendant — this time Crocodilian — from an otherwise complete ancestor-plus-descendants group.', missing: ['Crocodilian'] }
+      explain: 'Paraphyletic. Just like the "Reptilia" example, this excludes one nested descendant - this time Crocodilian - from an otherwise complete ancestor-plus-descendants group.', missing: ['Crocodilian'] }
   ];
   var idx = 0;
   var score = 0;
@@ -168,7 +168,7 @@
   function render(){
     answered = false;
     var s = scenarios[idx];
-    stepLabel.textContent = 'Scenario ' + (idx + 1) + ' of ' + scenarios.length + ' — shaded group: "' + s.name + '"';
+    stepLabel.textContent = 'Scenario ' + (idx + 1) + ' of ' + scenarios.length + ' - shaded group: "' + s.name + '"';
     drawTree(s.group, [], null);
     feedback.className = '';
     feedback.innerHTML = '';

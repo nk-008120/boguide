@@ -1,0 +1,122 @@
+section: "1-cell-molecular"
+slug: "Recombinant-DNA-Biotechnology-Techniques"
+title: "Recombinant DNA & Biotechnology Techniques"
+questions:
+  - id: 1
+    difficulty: "easy"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/recombinant-dna-biotechnology-techniques-q1.png)
+
+      A molecular biologist was trying to make synthetic nucleic acid probes against the transcript of the given peptide. Although only one nucleotide sequence will actually code for the protein, the degeneracy of the genetic code could result in several different nucleotide sequences that will give the same amino acid sequence, and it is impossible to tell in advance which is the correct one. Because it is desirable to have as large a fraction of the correct nucleotide sequence as possible in the mixture of oligonucleotides to be used as a probe, those regions with the fewest possibilities are chosen, as shown by regions 1 and 2.
+
+      If probes have to be designed separately for each region, how many total possible oligonucleotide probes would have to be synthesized?
+    solution: |
+
+      Ans – 32 sequences
+
+      Solution – For region 1, total number of sequences = 1 * 2 * 1 * 2 * 2 * 2 = 16                   For region 2, total number of sequences = 1 * 2 * 1 * 2 * 2 * 1 * 2 = 16
+                         Total number of sequences = 16 + 16 = 32
+  - id: 2
+    difficulty: "medium"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      In a restriction digestion experiment, a sample of a synthetic linear DNA molecule 21 kbp in length was treated with an enzyme ‘P. Another sample of the same DNA was treated with another restriction enzyme ‘Q’. The fragments (in kbp) obtained after gel electrophoresis profiling are as follows: 
+      Reaction 1: Treatment with enzyme P: 9, 7.2 and 4.8
+      Reaction 2: Treatment with enzyme Q: 10.4, 7.6 and 3
+
+      The fragment mixture obtained in reaction 1 was then treated with enzyme Q. Similarly, the fragment mixture obtained in reaction 2 was treated with enzyme P. The fragments (in kbp) obtained from these treatments are given below. 
+      Reaction 3: Reaction mixture from reaction 1 treated with enzyme Q: 9, 4.2, 3.4, 3, 1.4
+      Reaction 4: Reaction mixture from reaction 2 treated with enzyme P: 9, 1.4, 4.2, 3.4, 3
+
+      Based on the fragments obtained, draw the restriction map indicating the positions of the restriction sites of the enzymes P and Q. Also, indicate the fragment lengths between the sites
+    solution: |
+
+      ![image](/CHALLENGEPICS/recombinant-dna-biotechnology-techniques-q2-sol.png)
+
+      Ans -
+
+      Solution – DNA length is 21 kbp. Analyzing the fragment sizes from reaction 1 and 2, there must be 2 distinct sites for P and 2 distinct sites for Q. Thus, there are 4 restriction sites on DNA. Comparing reaction 1 and 3, one site for P must be present 9 kbp from one end of DNA (say 5’). Comparing reaction 2 and 4, one site for Q must be present 3 kbp from the other end (i.e. 3’) (not from 5’ end because 9 kbp fragment is observed in reaction 3). Comparing reaction 2 and 4, remaining site for Q is present 1.4 kbp away from the site of P which is 9 kbp from 5’ end and remaining site of P is present 4.8 kbp away from the site of P which is 9 kbp from 5’ end.
+  - id: 3
+    difficulty: "medium"
+    source: "INBO"
+    contributor: "SM"
+    question: |
+
+      In a hypothetical restriction mapping experiment, a sample of DNA was completely digested with two restriction enzymes EcoRI and HaeIII added to the same tube. DNA separation using agarose gel electrophoresis showed three bands of sizes 1.5 kb, 2.5 kb and 3.0 kb. Indicate whether each of the following is possible or not possible:A
+      . The sample is a 7 kb circular DNA with EcoRI and HaeIII having two unique sites each.B
+      . The sample is a linear DNA with HaeIII having a site located at 5.5 kb from one end and an EcoRI site located at 2.5 kb from one end.C
+      . The sample is a linear DNA with EcoRI and HaeIII sites 1 kb apart.D
+      . The sample is a 11 kb linear DNA with two unique EcoRI and HaeIII sites each.
+    solution: |
+
+      A – Not PossibleSolution - 
+      A circular DNA cut at a total of 4 unique sites would produce 4 fragments, not 3.
+
+      B – PossibleSolution - 
+      For a 7 kb linear DNA, the EcoRI site is 2.5 kb from one end, while the HaeIII site can be 5.5 kb from the same reference end, giving fragments 2.5 kb, 3.0 kb, and 1.5 kb.
+
+      C – Not PossibleSolution - 
+      Two adjacent restriction sites 1 kb apart would generate a 1 kb fragment in a complete digest, but no 1 kb band is observed.
+
+      D – PossibleSolution – A linear DNA with 4 unique sites will produce 5 fragments but only 3 are observed. Thus, some of the 5 fragments may be of same size. Indeed, 1.5 + 1.5 + 2.5 + 2.5 + 3 = 11.
+  - id: 4
+    difficulty: "hard"
+    source: "IBO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/recombinant-dna-biotechnology-techniques-q4-1.png)
+
+      Golden gate assembly is a one-step cloning method for joining multiple DNA inserts into a plasmid backbone. This method uses Bsal (a type IIs restriction enzyme). In contrast to traditional restriction enzymes, it recognizes a non-palindromic sequence and cuts the adjacent sequence, which is shifted by a number of base pairs, as shown in the figure below.
+
+      Notice the restriction enzymes are only specific for the recognition site (shaded in gray), while the cutting site can have any nucleotide sequence. Consider combining the following plasmid backbone:
+
+      ![image](/CHALLENGEPICS/recombinant-dna-biotechnology-techniques-q4-2.png)
+
+      ![image](/CHALLENGEPICS/recombinant-dna-biotechnology-techniques-q4-3.png)
+
+      And the two following inserts:
+
+      ![image](/CHALLENGEPICS/recombinant-dna-biotechnology-techniques-q4-4.png)
+
+      For each of the constructs below, indicate if it can be observed after treatment with BsaI and DNA ligase.
+
+      ![image](/CHALLENGEPICS/recombinant-dna-biotechnology-techniques-q4-5.png)
+
+      A                                                                                            B
+
+      C                                                                                             D
+    solution: |
+
+      A - FalseB -
+       TrueC -
+       FalseD -
+       False
+  - id: 5
+    difficulty: "hard"
+    source: "USABO"
+    contributor: "SM"
+    question: |
+
+      ![image](/CHALLENGEPICS/recombinant-dna-biotechnology-techniques-q5.png)
+
+      YAC DNA (with its telomeres) is cleaved with HindIII, SacI, XhoI, or a combination of HindIII and SacI, HindIII and XhoI, or SacI and XhoI. After restriction digestion, the products of each reaction are loaded in separate wells of an agarose gel and separated by agarose-gel electrophoresis. The following fluorescence patterns are observed on the gel (Double line indicates that 2 fragments of similar size are generated by the digestion).
+
+      Provide a restriction map for this YAC clone, and indicate on this map the distance between successive restriction sites.
+    solution: |
+
+      ![image](/CHALLENGEPICS/recombinant-dna-biotechnology-techniques-q5-sol.png)
+
+      Answer -
+
+      Solution – 
+      Analyzing the fragments of single restriction enzyme digestion, we find out number of sites of each RE in YAC DNA, i.e., HindIII and XhoI has 2 sites while SacI has 1 site. RE map of 
+      XhoI and SacI - Compare fragments of XhoI, SacI and XhoI+SacI digestion. 3 kb fragment is broken into 2.5 and 0.5 kb fragment and 4 kb fragment is broken into two 2 kb fragments. From here we can place SacI and XhoI sites in order.
+      RE map of HindIII and SacI - Compare fragments of HindIII, SacI and HindIII + SacI digestion. 4.5 kb fragment is broken into 2 kb and 2.5 kb fragments and 3 kb fragment is broken into 0.5 kb and 2.5 kb fragments. From here we can place SacI and HindIII sites in order.Now, compare the two restriction maps obtained above to create final map of YAC DNA.
+
+      Tip – To check if the map is correct or not, find the fragments made by HindIII + XhoI digestion and match it with fragments obtained in gel.

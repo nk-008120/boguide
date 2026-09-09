@@ -76,7 +76,7 @@
     <button class="btn secondary" id="resetBtn">Reset scatter</button>
   </div>
   <div class="readout">In humid half (right): <b id="pctVal">50%</b> of individuals</div>
-  <div class="note" id="note">Kinesis: turning rate and overall activity (including brief pauses) are high in dry conditions and low in humid conditions — no steering toward humidity, yet individuals still end up concentrated there because they simply move around less once they arrive.</div>
+  <div class="note" id="note">Kinesis: turning rate and overall activity (including brief pauses) are high in dry conditions and low in humid conditions - no steering toward humidity, yet individuals still end up concentrated there because they simply move around less once they arrive.</div>
 </div>
 <script>
 (function(){
@@ -167,7 +167,7 @@
     mode = 'kinesis';
     this.classList.add('active');
     document.getElementById('btnTaxis').classList.remove('active');
-    document.getElementById('note').textContent = 'Kinesis: turning rate and overall activity (including brief pauses) are high in dry conditions and low in humid conditions — no steering toward humidity, yet individuals still end up concentrated there because they simply move around less once they arrive.';
+    document.getElementById('note').textContent = 'Kinesis: turning rate and overall activity (including brief pauses) are high in dry conditions and low in humid conditions - no steering toward humidity, yet individuals still end up concentrated there because they simply move around less once they arrive.';
     makeDots();
     render();
   });
@@ -175,7 +175,7 @@
     mode = 'taxis';
     this.classList.add('active');
     document.getElementById('btnKinesis').classList.remove('active');
-    document.getElementById('note').textContent = 'Taxis: movement is directly steered toward the humid side — a directed drift, not just a change in turning rate.';
+    document.getElementById('note').textContent = 'Taxis: movement is directly steered toward the humid side - a directed drift, not just a change in turning rate.';
     makeDots();
     render();
   });

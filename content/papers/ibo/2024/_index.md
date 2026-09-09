@@ -1,5 +1,6 @@
 ---
 title: "IBO 2024"
+description: "IBO 2024 Astana theory papers: timed practice, per-question solutions, and leaderboard on BiOrchive."
 ---
 
 {{< biorchive-bg >}}

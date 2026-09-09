@@ -1,0 +1,31 @@
+Q.29
+The skeletal muscle fibers are divided into three types depending on the speed and
+energy sources of muscle contraction:
+Type I: Slow twitch, oxidative muscle fibers.
+Type IIa: Fast twitch, oxidative muscle fibers.
+Type IIb: Fast twitch, glycolytic muscle fibers.
+Figure Q.29 shows the correlation of mRNA expression levels of the genes Myh7,
+Myh2, and Myh1 specific for muscle fiber types I, IIa, and IIb, respectively, in human
+skeletal muscles of legs: quadriceps, gastrocnemius, and soleus muscles. 
+Myh1
+Myh2
+Myh7
+Relative mRNA levels
+Quadriceps
+Gastrocnemius
+2
+3
+0
+1
+Soleus
+Figure Q.29.
+Indicate in the Answer sheet if each of the following statements is True or False. 
+A. The soleus muscles of the sprinter athletes are prone to be more developed than
+those in the marathon athletes.
+B. The ratio of mitochondria number per muscle mass in the quadriceps muscle is
+less than that in the gastrocnemius muscle.
+C. The soleus muscle contains less sarcoplasmic reticulum than the gastrocnemius
+muscle does. 
+D. Regularly doing the endurance exercise for a long period of time can increase the
+number of glycolytic muscle fibers in the gastrocnemius muscles. 
+33/56

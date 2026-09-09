@@ -1,0 +1,24 @@
+---
+title: "Q46 - Tracing a De Novo Haemophilia Mutation Through European Royalty"
+---
+
+{{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
+
+<div class="papers-subject-tags" style="margin-bottom:1.5rem;">
+  <a class="papers-subject-tag" href="/resources/7-genetics/pedigree-analysis-human-genetic-disorders/">Pedigree Analysis & Human Genetic Disorders</a>
+  <a class="papers-subject-tag" href="/resources/7-genetics/sex-determination-sex-linked-inheritance/">Sex Determination & Sex-Linked Inheritance</a>
+</div>
+
+Robert Macfarlane (1907-1987) explained the biochemistry of blood clotting, and discovered the cause of haemophilia B, which causes fatal bleeding. Queen Victoria’s son, Prince Leopold, was the first European noble to develop haemophilia B, but it quickly devastated European royal lines. An incomplete family tree is shown.
+
+![Figure 1 for Q46: Tracing a De Novo Haemophilia Mutation Through European Royalty](/papers/ibo/2017/theoretical-b/q46-figure-1.png)
+
+This question mixes multiple-choice/numeric-estimate parts with True/False statements - answer each part using the information and data above.
+
+{{< papers-quiz olympiad="ibo" year="2017" round="theoretical-b" problem="q46" >}}
+
+{{< papers-problem-nav olympiad="ibo" year="2017" round="theoretical-b" problem="q46" >}}
+
+---
+
+Question reproduced from **IBO 2017, Theoretical Exam B**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) - attributed to the International Biology Olympiad. [Open the full exam PDF](/papers/ibo/2017/theoretical-b-exam.pdf#page=58) · [Official answer key & worked solutions](/papers/ibo/2017/theoretical-b-solutions.pdf)

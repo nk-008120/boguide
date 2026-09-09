@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "USABO", "molecular-biology"]
 ---
 
 {{< topic-meta >}}
+{{< challenge-cta >}}
 {{< mathjax >}}
 
 ## Overview
@@ -91,6 +92,8 @@ DNA polymerase's overall low error rate comes from two layered mechanisms: **sel
 **Static**
 
 *(Static images are placed inline in Key Concepts above, next to the concept each one illustrates, rather than collected here. Note: the double-helix image has some visible annotation artifacts, see the inline note.)*
+
+{{< practice-challenge >}}
 
 ## Practice Problems
 

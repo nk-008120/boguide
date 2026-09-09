@@ -5,7 +5,7 @@ title: "Q57 - Adaptive Significance of Bird Behavioral Traits"
 {{< problem-meta category="Theory" >}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
-  <a class="papers-subject-tag" href="/resources/9-ethology/communication-signal-design/">Communication & Signal Design</a>
+  <a class="papers-subject-tag" href="/resources/9-ethology/animal-communication/">Animal Communication</a>
 </div>
 
 Refer to the [question paper](/papers/inbo/2026/theory-exam.pdf#page=31) for figures and tables.
