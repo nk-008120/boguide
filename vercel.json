@@ -72,10 +72,6 @@
     {
       "path": "/api/sync-country-stats",
       "schedule": "0 5 * * *"
-    },
-    {
-      "path": "/api/bioclash-cleanup",
-      "schedule": "*/15 * * * *"
     }
   ]
 }
