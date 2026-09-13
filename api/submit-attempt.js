@@ -18,10 +18,6 @@ function loadRound(olympiad, year, roundId) {
   return rounds.find((r) => r.id === roundId) || null;
 }
 
-// free_response has no single checkable answer (a descriptive model answer,
-// not a value to grade against) -- excluded from every count/score
-// calculation here, mirroring static/js/papers-attempt.js's own
-// gradableStatements() split, which this function must stay in sync with.
 function gradableStatements(p) {
   return (p.statements || []).filter((s) => (s.type || 'true_false') !== 'free_response');
 }
@@ -72,8 +68,6 @@ module.exports = async (req, res) => {
   }
 };
 
-// Exposed purely so recompute()'s scoring logic can be exercised directly in
-// a test script against synthetic fixtures, without a live Supabase connection.
 module.exports.recompute = recompute;
 
 async function handle(req, res) {

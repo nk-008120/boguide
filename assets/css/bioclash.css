@@ -390,6 +390,64 @@ html.dark .papers-pill.bioclash-pill {
   border-color: var(--bc-crimson);
 }
 
+.bioclash-season-table-wrap {
+  overflow-x: auto;
+  margin: 1.2rem 0;
+}
+.bioclash-season-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  font-variant-numeric: tabular-nums;
+}
+.bioclash-season-table th {
+  font-family: 'BiOClash Display', Georgia, serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bc-parchment);
+  background: var(--bc-crimson-deep);
+  padding: 0.55rem 0.75rem;
+  text-align: left;
+}
+.bioclash-season-table td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--bc-border);
+  color: var(--bc-ink);
+}
+.bioclash-season-table tr:nth-child(even) td {
+  background: rgba(201,151,31,0.04);
+}
+html.dark .bioclash-season-table tr:nth-child(even) td {
+  background: rgba(227,181,74,0.04);
+}
+.bioclash-season-table .bioclash-fst-row td {
+  border: 2px solid var(--bc-gold);
+  font-weight: 600;
+  background: rgba(201,151,31,0.08);
+}
+html.dark .bioclash-season-table .bioclash-fst-row td {
+  background: rgba(227,181,74,0.06);
+}
+.bioclash-season-note {
+  font-size: 0.82rem;
+  color: var(--bc-ink);
+  opacity: 0.7;
+  font-style: italic;
+  margin-top: 0.75rem;
+}
+.bioclash-sample-cta {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--bc-border);
+  text-align: center;
+}
+.bioclash-sample-cta p {
+  font-size: 0.88rem;
+  margin-bottom: 0.6rem;
+}
+
 .bioclash-notify-section {
   text-align: center;
 }
@@ -430,111 +488,11 @@ html.dark .bioclash-notify {
   margin-top: 1rem;
 }
 
-.bioclash-curtains {
-  display: none;
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  cursor: pointer;
-  overflow: hidden;
-}
-.bioclash-curtains:focus-visible {
-  outline: 3px solid var(--bc-gold, #c9971f);
-  outline-offset: -6px;
-}
-.bioclash-curtain-panel {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 50%;
-  z-index: 1;
-  background:
-    repeating-linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.16) 0,
-      rgba(0, 0, 0, 0.16) 3px,
-      transparent 3px,
-      transparent 22px
-    ),
-    radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.18), transparent 60%),
-    linear-gradient(180deg, #9a1830 0%, #7a0e22 55%, #5c0a1a 100%);
-  box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.45);
-  transition: transform 3s ease;
-}
-.bioclash-curtain-left {
-  left: 0;
-  border-right: 3px double #c9971f;
-}
-.bioclash-curtain-right {
-  right: 0;
-  border-left: 3px double #c9971f;
-}
-.bioclash-curtain-valance {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 7%;
-  min-height: 44px;
-  z-index: 2;
-  background: linear-gradient(180deg, #d9ad3d 0%, #c9971f 55%, #a67c19 100%);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
-  transition: opacity 3s ease;
-}
-.bioclash-curtain-prompt {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.9rem 1.75rem;
-  border-radius: var(--radius-pill, 999px);
-  background: rgba(0, 0, 0, 0.28);
-  border: 1px solid rgba(201, 151, 31, 0.6);
-  color: #f6f1e4;
-  font-family: 'BiOClash Display', Georgia, serif;
-  font-size: 1.05rem;
-  letter-spacing: 0.03em;
-  white-space: nowrap;
-  animation: bioclash-curtain-pulse 2.2s ease-in-out infinite;
-  transition: opacity 3s ease;
-}
-.bioclash-curtain-prompt-mark {
-  color: #c9971f;
-}
-@keyframes bioclash-curtain-pulse {
-  0%, 100% { transform: translate(-50%, -50%) scale(1); }
-  50%      { transform: translate(-50%, -50%) scale(1.05); }
-}
-
-.bioclash-curtains.is-open .bioclash-curtain-left {
-  transform: translateX(-100%);
-}
-.bioclash-curtains.is-open .bioclash-curtain-right {
-  transform: translateX(100%);
-}
-.bioclash-curtains.is-open .bioclash-curtain-valance,
-.bioclash-curtains.is-open .bioclash-curtain-prompt {
-  opacity: 0;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .bioclash-curtain-prompt { animation: none; }
-  .bioclash-curtain-panel,
-  .bioclash-curtain-valance,
-  .bioclash-curtain-prompt {
-    transition-duration: 0.8s;
-  }
-}
 
 @media (max-width: 640px) {
   .bioclash-wordmark { font-size: 2.75rem; }
   .bioclash-tagline { font-size: 1.05rem; }
   .bioclash-dna-strand { width: 46px; }
-  .bioclash-curtain-prompt { white-space: normal; text-align: center; max-width: 80vw; }
   .bioclash-champions-podium { flex-direction: column; align-items: center; }
   .bioclash-champion-rank-1,
   .bioclash-champion-rank-2,
@@ -1003,6 +961,23 @@ html.dark #bioclash-attempt-report {
 #bioclash-attempt-report {
   line-height: 1.7;
 }
+.bioclash-report-stats {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+.bioclash-report-stats td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--bc-border);
+}
+.bioclash-report-stats td:first-child {
+  font-weight: 600;
+  white-space: nowrap;
+  width: 1%;
+}
+.bioclash-report-stats tr:last-child td {
+  border-bottom: none;
+}
 .bioclash-recording-upload {
   margin-top: 1.25rem;
   padding: 0.9rem 1.1rem;
@@ -1110,7 +1085,7 @@ body.bioclash-attempt-blurred #bioclash-attempt-live {
   position: relative;
 }
 body.bioclash-attempt-blurred #bioclash-attempt-live::after {
-  content: 'Content hidden — return to this tab to continue.';
+  content: 'Content hidden. Return to this tab to continue.';
   position: fixed;
   inset: 0;
   z-index: 4;
@@ -1235,6 +1210,34 @@ html.dark .bioclash-extend-btn {
 }
 .bioclash-timer-low { color: var(--bc-crimson); animation: bioclash-timer-pulse 1s infinite; }
 @keyframes bioclash-timer-pulse { 50% { opacity: 0.4; } }
+
+.bioclash-connection-status {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.bioclash-connection-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.bioclash-connection-status[data-state="connected"] .bioclash-connection-dot {
+  background: var(--bc-teal, #0E6B5C);
+}
+.bioclash-connection-status[data-state="reconnecting"] .bioclash-connection-dot {
+  background: var(--bc-gold);
+  animation: bioclash-connection-blink 1s infinite;
+}
+.bioclash-connection-status[data-state="offline"] .bioclash-connection-dot {
+  background: var(--bc-crimson);
+}
+@keyframes bioclash-connection-blink { 50% { opacity: 0.3; } }
 
 .bioclash-block {
   position: relative;

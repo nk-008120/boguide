@@ -1,5 +1,5 @@
 const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
-const { loadPaper, findBlock, componentIsCorrect, computeTotalPages } = require('./_lib/bioclash');
+const { loadPaper, autoGrade, computeTotalPages, rateLimit } = require('./_lib/bioclash');
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
@@ -22,6 +22,11 @@ module.exports = async (req, res) => {
     }
     const userId = userData.user.id;
 
+    if (rateLimit(userId, 'submit-attempt', 5, 60000)) {
+      res.status(429).json({ error: 'Too many requests' });
+      return;
+    }
+
     const { paperId, force } = req.body || {};
     const paper = loadPaper(paperId);
     if (!paper) {
@@ -33,7 +38,7 @@ module.exports = async (req, res) => {
 
     const { data: attempt, error: attemptError } = await admin
       .from('bioclash_attempts')
-      .select('id, status, reached_final_page')
+      .select('id, status, end_at, reached_final_page')
       .eq('user_id', userId)
       .eq('paper_id', paperId)
       .maybeSingle();
@@ -43,7 +48,8 @@ module.exports = async (req, res) => {
       return;
     }
 
-    if (force !== true && !attempt.reached_final_page) {
+    const timerExpired = new Date(attempt.end_at).getTime() <= Date.now();
+    if (!timerExpired && !attempt.reached_final_page) {
       const totalPages = computeTotalPages(paper);
       res.status(403).json({
         error: `You must reach page ${totalPages} of ${totalPages} at least once before submitting.`
@@ -57,18 +63,7 @@ module.exports = async (req, res) => {
       .eq('attempt_id', attempt.id);
     if (attemptBlocksError) throw attemptBlocksError;
 
-    let autoCorrect = 0;
-    let autoTotal = 0;
-    for (const row of attemptBlocks) {
-      const paperBlock = findBlock(paper, row.block_id);
-      if (!paperBlock || paperBlock.type === 'reveal_content') continue;
-      for (const component of paperBlock.components || []) {
-        const result = componentIsCorrect(component, (row.answer || {})[component.key]);
-        if (result === null) continue;
-        autoTotal += 1;
-        if (result) autoCorrect += 1;
-      }
-    }
+    const { autoCorrect, autoTotal, autoMarksEarned, autoMarksTotal } = autoGrade(paper, attemptBlocks);
 
     const { error: updateError } = await admin
       .from('bioclash_attempts')
@@ -76,7 +71,9 @@ module.exports = async (req, res) => {
         status: 'submitted',
         submitted_at: new Date().toISOString(),
         auto_score_correct: autoCorrect,
-        auto_score_total: autoTotal
+        auto_score_total: autoTotal,
+        auto_marks_earned: autoMarksEarned,
+        auto_marks_total: autoMarksTotal
       })
       .eq('id', attempt.id)
       .eq('status', 'in_progress');

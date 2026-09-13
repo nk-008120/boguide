@@ -8,7 +8,7 @@ sitemap:
 
 <aside class="hextra-sidebar-container" hidden></aside>
 
-<div id="bioclash-round-leaderboard-root" class="bioclash-page bioclash-round-leaderboard-page">
+<div id="bioclash-round-leaderboard-root" class="bioclash-page bioclash-round-leaderboard-page" data-bioclash-force-dark="bioclash-round-leaderboard-active">
 <div class="bioclash-round-leaderboard-bg" aria-hidden="true"></div>
 
 <div class="bioclash-case-header">
@@ -31,4 +31,4 @@ season.
 
 </div>
 
-<script src="/js/bioclash-round-leaderboard-theme.js" defer></script>
+<script src="/js/bioclash-force-dark.js" defer></script>

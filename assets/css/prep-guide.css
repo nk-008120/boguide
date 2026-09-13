@@ -1,0 +1,192 @@
+.prep-picker {
+  margin: 2rem 0 1.5rem;
+  padding: 1.75rem 2rem;
+  background: rgba(137, 101, 196, 0.05);
+  border: 1.5px solid rgba(137, 101, 196, 0.25);
+  border-radius: var(--radius-xl);
+}
+.prep-guide-wrapper .prep-picker-heading {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: var(--primary);
+  margin: 0 0 0.35rem;
+}
+.prep-guide-wrapper .prep-picker-subtitle {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  margin: 0 0 1.25rem;
+}
+.prep-picker-question {
+  margin-bottom: 1.25rem;
+}
+.prep-guide-wrapper .prep-picker-question-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 0 0 0.6rem;
+}
+.prep-picker-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.prep-picker-btn {
+  padding: 0.5rem 1.1rem;
+  border: 1.5px solid rgba(137, 101, 196, 0.4);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--primary);
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+.prep-picker-btn:hover {
+  border-color: var(--primary);
+  background: rgba(137, 101, 196, 0.08);
+}
+.prep-picker-btn.is-active {
+  background: linear-gradient(135deg, #8965c4, #5c7a58);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(92, 61, 150, 0.2);
+}
+.prep-picker-result {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(137, 101, 196, 0.2);
+}
+.prep-picker-result-heading {
+  font-family: 'Fraunces', serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin: 0 0 0.75rem;
+}
+.prep-picker-result-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.prep-picker-result-link {
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(135deg, #8965c4, #5c7a58);
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.prep-picker-result-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(92, 61, 150, 0.25);
+  color: #fff;
+}
+
+.prep-jump-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1.5rem;
+}
+.prep-jump-nav a {
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid rgba(137, 101, 196, 0.25);
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.18s ease;
+}
+.prep-jump-nav a:hover {
+  border-color: var(--primary);
+  background: rgba(137, 101, 196, 0.08);
+}
+
+.prep-tour-trigger-wrap {
+  max-width: 900px;
+  margin: 1.25rem auto 0;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+.prep-tour-trigger {
+  display: inline-block;
+  margin: 0 0 1.5rem;
+  padding: 0.5rem 1.2rem;
+  border: 1.5px solid var(--primary);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--primary);
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.prep-tour-trigger:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.prep-accordion-group {
+  margin: 1.25rem 0 2rem;
+}
+
+html.dark .prep-picker {
+  background: rgba(201, 183, 232, 0.06);
+  border-color: rgba(201, 183, 232, 0.25);
+}
+html.dark .prep-guide-wrapper .prep-picker-heading,
+html.dark .prep-picker-result-heading {
+  color: #c9b7e8;
+}
+html.dark .prep-guide-wrapper .prep-picker-question-label {
+  color: #e5e5e5;
+}
+html.dark .prep-picker-btn {
+  border-color: rgba(201, 183, 232, 0.35);
+  color: #c9b7e8;
+}
+html.dark .prep-picker-btn:hover {
+  border-color: #c9b7e8;
+  background: rgba(201, 183, 232, 0.08);
+}
+html.dark .prep-picker-result {
+  border-top-color: rgba(201, 183, 232, 0.2);
+}
+html.dark .prep-jump-nav a {
+  border-color: rgba(201, 183, 232, 0.3);
+  color: #c9b7e8;
+}
+html.dark .prep-jump-nav a:hover {
+  border-color: #c9b7e8;
+  background: rgba(201, 183, 232, 0.08);
+}
+html.dark .prep-tour-trigger {
+  border-color: #c9b7e8;
+  color: #c9b7e8;
+}
+html.dark .prep-tour-trigger:hover {
+  background: #c9b7e8;
+  color: #1a1726;
+}
+
+@media (max-width: 640px) {
+  .prep-tour-trigger-wrap {
+    padding: 0 1rem;
+  }
+  .prep-picker {
+    padding: 1.25rem;
+  }
+  .prep-picker-options {
+    flex-direction: column;
+  }
+  .prep-picker-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

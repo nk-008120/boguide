@@ -5,39 +5,9 @@ layout: "wide"
 images: ["/og-bioclash.png"]
 ---
 
-<div id="bioclash-root" class="bioclash-page">
+<div id="bioclash-root" class="bioclash-page" data-bioclash-force-dark="bioclash-landing-active">
 <div class="bioclash-landing-bg" aria-hidden="true"></div>
 
-<div id="bioclash-curtains" class="bioclash-curtains" role="button" tabindex="0" aria-label="Click, or press Enter, to raise the curtain and reveal BiOClash">
-  <div class="bioclash-curtain-valance" aria-hidden="true"></div>
-  <div class="bioclash-curtain-panel bioclash-curtain-left" aria-hidden="true"></div>
-  <div class="bioclash-curtain-panel bioclash-curtain-right" aria-hidden="true"></div>
-  <div class="bioclash-curtain-prompt" aria-hidden="true">
-    <span class="bioclash-curtain-prompt-mark">✦</span>
-    <span class="bioclash-curtain-prompt-text">Click to raise the curtain</span>
-    <span class="bioclash-curtain-prompt-mark">✦</span>
-  </div>
-</div>
-<script>
-/* Synchronous (not defer) and runs exactly here, before the rest of the
-   page paints - deliberately NOT in papers-bioclash.js. The curtain is
-   display:none by default in CSS; this decides whether to reveal it BEFORE
-   first paint, so a repeat visitor who's already opened it this session
-   never sees it flash on then get hidden a beat later by the deferred
-   script. Deliberately does NOT skip for prefers-reduced-motion - that
-   only shortens the open animation (see custom.css section 15b's
-   reduced-motion block), it doesn't hide the curtain outright. Withholding
-   the whole click-to-reveal interaction from reduced-motion visitors would
-   mean some real visitors never see the feature at all; softening the
-   motion is the correct accessibility response here, not removing it. */
-(function () {
-  var el = document.getElementById('bioclash-curtains');
-  if (!el) return;
-  var alreadyOpened = false;
-  try { alreadyOpened = sessionStorage.getItem('bioclash-curtains-opened') === '1'; } catch (e) {}
-  if (!alreadyOpened) el.style.display = 'block';
-})();
-</script>
 
 <section class="bioclash-hero">
   <div class="bioclash-hero-bg" aria-hidden="true">
@@ -59,7 +29,7 @@ images: ["/og-bioclash.png"]
     <svg class="bioclash-dna-strand bioclash-dna-4" viewBox="0 0 60 220"><use href="#bioclash-dna-motif"></use></svg>
     <svg class="bioclash-dna-strand bioclash-dna-5" viewBox="0 0 60 220"><use href="#bioclash-dna-motif"></use></svg>
   </div>
-  <p class="bioclash-eyebrow">OPEN Season 1: targeting September 11</p>
+  <p class="bioclash-eyebrow">OPEN Season 1: targeting October 10</p>
   <h1 class="bioclash-wordmark">BiOClash</h1>
   <p class="bioclash-tagline">An independent biology competition, built the same way as everything else here.</p>
   <p id="bioclash-countdown" class="bioclash-countdown" aria-live="polite">Loading countdown…</p>
@@ -89,6 +59,33 @@ images: ["/og-bioclash.png"]
 </section>
 
 <section class="bioclash-section bioclash-panel">
+  <h2>Season calendar</h2>
+  <p>A season is eight rounds: seven subject-focused rounds spread across the year, plus a capstone Full Syllabus Test. Each round contributes to one cumulative season ranking, weighted by subject.</p>
+  <div class="bioclash-season-table-wrap">
+    <table class="bioclash-season-table">
+      <thead>
+        <tr><th>Subject round</th><th>Season weight</th><th>Timing</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Cell Biology</td><td>20%</td><td>October</td></tr>
+        <tr><td>Animal Anatomy &amp; Physiology</td><td>25%</td><td>November</td></tr>
+        <tr><td>Genetics &amp; Evolution</td><td>20%</td><td>January</td></tr>
+        <tr><td>Plant Anatomy &amp; Physiology</td><td>15%</td><td>March</td></tr>
+        <tr><td>Ecology</td><td>10%</td><td>May</td></tr>
+        <tr><td>Ethology</td><td>5%</td><td>May</td></tr>
+        <tr><td>Biosystematics</td><td>5%</td><td>May</td></tr>
+        <tr class="bioclash-fst-row"><td>Full Syllabus Test (FST)</td><td>100%</td><td>~3 wks before IBO</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="bioclash-season-note">Subject rounds are 90 minutes. The FST is 180 minutes. Each round is open for a window (3 days for subject rounds, 1 week for the FST); your personal timer starts when you click Start. A round not attempted simply contributes nothing -- it is not a penalty.</p>
+  <div class="bioclash-sample-cta">
+    <p>Want to see how it works before committing?</p>
+    <a href="/bioclash/bioclash-sample/attempt/" class="bioclash-btn bioclash-btn-primary"><span class="bioclash-btn-shine" aria-hidden="true"></span><span>Try the sample round</span></a>
+  </div>
+</section>
+
+<section class="bioclash-section bioclash-panel">
   <h2>Why it exists</h2>
   <p>Plenty of biology competitions already exist, but most are institutional, expensive to access, or slow to modernize. BiOGuide itself runs on the same principles as everything else here: <a href="/about/">non-commercial, built by students, for students</a>. BiOClash is that same approach applied to the competition format itself, not just notes and papers.</p>
 </section>
@@ -109,4 +106,4 @@ images: ["/og-bioclash.png"]
 </div>
 
 <script src="/js/papers-bioclash.js" defer></script>
-<script src="/js/bioclash-landing-theme.js" defer></script>
+<script src="/js/bioclash-force-dark.js" defer></script>

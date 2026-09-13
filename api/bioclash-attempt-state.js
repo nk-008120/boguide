@@ -1,5 +1,5 @@
 const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
-const { loadPaper, toClientBlock, findBlock, watermarkCode, newSessionToken, computeTotalPages } = require('./_lib/bioclash');
+const { loadPaper, toClientBlock, findBlock, watermarkCode, newSessionToken, computeTotalPages, autoGrade, rateLimit } = require('./_lib/bioclash');
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
@@ -21,6 +21,11 @@ module.exports = async (req, res) => {
       return;
     }
     const userId = userData.user.id;
+
+    if (rateLimit(userId, 'attempt-state', 10, 60000)) {
+      res.status(429).json({ error: 'Too many requests' });
+      return;
+    }
 
     const paperId = req.body && req.body.paperId;
     const paper = loadPaper(paperId);
@@ -65,16 +70,24 @@ module.exports = async (req, res) => {
       .eq('id', attempt.id);
     if (claimError) throw claimError;
 
-    if (attempt.status === 'in_progress' && new Date(attempt.end_at).getTime() <= Date.now()) {
-      await admin.from('bioclash_attempts').update({ status: 'expired' }).eq('id', attempt.id);
-      attempt.status = 'expired';
-    }
-
     const { data: attemptBlocks, error: attemptBlocksError } = await admin
       .from('bioclash_attempt_blocks')
       .select('*')
       .eq('attempt_id', attempt.id);
     if (attemptBlocksError) throw attemptBlocksError;
+
+    if (attempt.status === 'in_progress' && new Date(attempt.end_at).getTime() <= Date.now()) {
+      const { autoCorrect, autoTotal, autoMarksEarned, autoMarksTotal } = autoGrade(paper, attemptBlocks);
+      await admin.from('bioclash_attempts').update({
+        status: 'submitted',
+        submitted_at: attempt.end_at,
+        auto_score_correct: autoCorrect,
+        auto_score_total: autoTotal,
+        auto_marks_earned: autoMarksEarned,
+        auto_marks_total: autoMarksTotal
+      }).eq('id', attempt.id).eq('status', 'in_progress');
+      attempt.status = 'submitted';
+    }
 
     const blocks = attemptBlocks.map((row) => {
       const paperBlock = findBlock(paper, row.block_id);
@@ -88,7 +101,9 @@ module.exports = async (req, res) => {
     res.status(200).json({
       attemptId: attempt.id,
       status: attempt.status,
+      startedAt: attempt.started_at,
       endAt: attempt.end_at,
+      submittedAt: attempt.submitted_at || null,
       fullscreenExits: attempt.fullscreen_exits,
       visibilityLosses: attempt.visibility_losses,
       paperTitle: paper.title,

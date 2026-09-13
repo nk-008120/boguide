@@ -1,0 +1,37 @@
+{{- /* Emits a JSON catalog of every timed-attempt-enabled BiOrchive round
+     (olympiad/year/round id, display name, and the set of subject-resource
+     links its questions cover) for the dashboard's "Suggested Next Paper"
+     feature (static/js/papers-knowledge.js's suggestNextPaper). Without this,
+     the dashboard has no way to know about rounds the user HASN'T attempted
+     yet -- it only ever sees rounds via the user's own attempt_reports rows.
+     Restricted to rounds with an attempt/ page since attempt_reports.round_id
+     only ever comes from a submitted timed attempt (practice-only rounds,
+     per the ibo-paper-ingestion skill, never produce one). Usage:
+     {{< papers-rounds-data >}} on the dashboard page. */ -}}
+{{- $rounds := slice -}}
+{{- range $olId, $olData := hugo.Data.papers -}}
+  {{- range $yearId, $yearData := $olData -}}
+    {{- if ne $yearId "index" -}}
+      {{- range $yearData.rounds -}}
+        {{- $round := . -}}
+        {{- $attemptPath := printf "/papers/%s/%s/%s/attempt" $olId $yearId $round.id -}}
+        {{- if site.GetPage $attemptPath -}}
+          {{- $subjectLinks := slice -}}
+          {{- range $round.problems -}}
+            {{- range .subjects -}}
+              {{- if .link -}}{{- $subjectLinks = $subjectLinks | append .link -}}{{- end -}}
+            {{- end -}}
+          {{- end -}}
+          {{- $rounds = $rounds | append (dict
+            "olympiad" $olId
+            "year" $yearId
+            "roundId" $round.id
+            "name" (printf "%s %s %s" (upper $olId) $yearId $round.name)
+            "subjectLinks" (uniq $subjectLinks)
+          ) -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+<script id="papers-rounds-data" type="application/json">{{ jsonify $rounds | safeJS }}</script>

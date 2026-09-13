@@ -304,9 +304,16 @@
     };
   }
 
-  function suggestNextPaper(profile, attempts) {
+  function roundKey(olympiad, year, roundId) {
+    return (olympiad || '') + '|' + (year || '') + '|' + (roundId || '');
+  }
+
+  function suggestNextPaper(profile, attempts, roundsCatalog) {
+    if (!roundsCatalog || !roundsCatalog.length) return null;
+
     var attempted = {};
-    attempts.forEach(function (a) { attempted[a.round_id] = true; });
+    attempts.forEach(function (a) { attempted[roundKey(a.olympiad, a.year, a.round_id)] = true; });
+
     var subjects = profile.subjects;
     var weakLinks = [];
     Object.keys(subjects).forEach(function (k) {
@@ -317,38 +324,130 @@
     });
     if (!weakLinks.length) return null;
 
-    var roundCoverage = {};
-    attempts.forEach(function (a) {
-      if (!a.subject_stats) return;
-      Object.keys(a.subject_stats).forEach(function (name) {
-        var s = a.subject_stats[name];
-        var link = s.link || '';
-        var key = normalizeSubjectKey(link, name);
-        var linkKey = link ? (link.replace(/\/$/, '') + '/') : key;
-        var rid = a.round_id;
-        if (!roundCoverage[rid]) roundCoverage[rid] = { name: a.round_name || (a.olympiad + ' ' + a.year), subjects: {} };
-        roundCoverage[rid].subjects[linkKey] = true;
-      });
-    });
-
     var best = null;
-    var bestScore = -1;
-    Object.keys(roundCoverage).forEach(function (rid) {
-      if (attempted[rid]) return;
-      var rc = roundCoverage[rid];
+    var bestScore = 0;
+    roundsCatalog.forEach(function (r) {
+      var key = roundKey(r.olympiad, r.year, r.roundId);
+      if (attempted[key]) return;
+      var covered = {};
+      (r.subjectLinks || []).forEach(function (link) { covered[link] = true; });
       var score = 0;
-      weakLinks.forEach(function (wk) {
-        if (rc.subjects[wk]) score++;
-      });
+      weakLinks.forEach(function (wk) { if (covered[wk]) score++; });
       if (score > bestScore) {
         bestScore = score;
-        best = { roundId: rid, name: rc.name, weakCoverage: score, weakTotal: weakLinks.length };
+        best = { roundId: r.roundId, name: r.name, weakCoverage: score, weakTotal: weakLinks.length };
       }
     });
     return best;
   }
 
-  function generateRecommendations(profile, topicGraph, userProfile) {
+  function qualityFromAccuracy(accuracy) {
+    if (accuracy >= 0.90) return 5;
+    if (accuracy >= 0.75) return 4;
+    if (accuracy >= 0.60) return 3;
+    if (accuracy >= 0.40) return 2;
+    if (accuracy >= 0.20) return 1;
+    return 0;
+  }
+
+  function computeSm2Update(state, quality) {
+    var ease = (state && state.ease_factor != null) ? state.ease_factor : 2.5;
+    var interval = (state && state.interval_days != null) ? state.interval_days : 1;
+    var repetitions = (state && state.repetitions != null) ? state.repetitions : 0;
+
+    if (quality >= 3) {
+      if (repetitions === 0) interval = 1;
+      else if (repetitions === 1) interval = 6;
+      else interval = Math.round(interval * ease);
+      repetitions += 1;
+    } else {
+      repetitions = 0;
+      interval = 1;
+    }
+
+    ease = ease + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
+    if (ease < 1.3) ease = 1.3;
+
+    return {
+      ease_factor: ease,
+      interval_days: interval,
+      repetitions: repetitions,
+      due_at: new Date(Date.now() + interval * DAY_MS).toISOString()
+    };
+  }
+
+  function syncReviewSchedule(client, userId, profile) {
+    return client.from('subject_review_state').select('*').eq('user_id', userId)
+      .then(function (res) {
+        if (res.error) throw res.error;
+        var existing = {};
+        (res.data || []).forEach(function (row) { existing[row.subject_link] = row; });
+
+        var subjects = profile.subjects;
+        var toWrite = [];
+
+        Object.keys(subjects).forEach(function (link) {
+          var subj = subjects[link];
+          if (!subj.link || !subj.lastAttempted) return;
+          var row = existing[link];
+          if (row && row.last_attempt_at && new Date(subj.lastAttempted) <= new Date(row.last_attempt_at)) return;
+
+          var history = subj.accuracyHistory || [];
+          var latest = history.length ? history[history.length - 1] : null;
+          var accuracy = latest ? latest.accuracy : subj.weightedAccuracy;
+          var update = computeSm2Update(row, qualityFromAccuracy(accuracy));
+
+          toWrite.push({
+            user_id: userId,
+            subject_link: link,
+            subject_name: subj.name,
+            ease_factor: update.ease_factor,
+            interval_days: update.interval_days,
+            repetitions: update.repetitions,
+            due_at: update.due_at,
+            last_reviewed_at: row ? row.last_reviewed_at : null,
+            last_attempt_at: subj.lastAttempted
+          });
+        });
+
+        if (!toWrite.length) return existing;
+
+        return client.from('subject_review_state')
+          .upsert(toWrite, { onConflict: 'user_id,subject_link' })
+          .select('*')
+          .then(function (writeRes) {
+            if (writeRes.error) throw writeRes.error;
+            (writeRes.data || []).forEach(function (row) { existing[row.subject_link] = row; });
+            return existing;
+          });
+      })
+      .catch(function () { return {}; });
+  }
+
+  function recordManualReview(client, userId, subjectLink, subjectName, quality, currentState) {
+    var update = computeSm2Update(currentState, quality);
+    var row = {
+      user_id: userId,
+      subject_link: subjectLink,
+      subject_name: subjectName,
+      ease_factor: update.ease_factor,
+      interval_days: update.interval_days,
+      repetitions: update.repetitions,
+      due_at: update.due_at,
+      last_reviewed_at: new Date().toISOString()
+    };
+    if (currentState && currentState.last_attempt_at) row.last_attempt_at = currentState.last_attempt_at;
+
+    return client.from('subject_review_state')
+      .upsert(row, { onConflict: 'user_id,subject_link' })
+      .select('*')
+      .then(function (res) {
+        if (res.error) throw res.error;
+        return (res.data && res.data[0]) || row;
+      });
+  }
+
+  function generateRecommendations(profile, topicGraph, userProfile, reviewStates) {
     var subjects = profile.subjects;
     var graphBySlug = profile._graphBySlug || {};
     var sectionCoverage = profile.sectionCoverage;
@@ -470,13 +569,23 @@
         return;
       }
 
-      if (c.recencyBoost >= 0.6 && c.subject && revisitSoon.length < 3) {
-        var daysSince = Math.round((Date.now() - new Date(c.subject.lastAttempted).getTime()) / DAY_MS);
-        revisitSoon.push(makeRec(c,
+      var reviewRow = reviewStates ? reviewStates[c.topic.slug] : null;
+      var isDue = !!(reviewRow && new Date(reviewRow.due_at).getTime() <= Date.now());
+
+      if (isDue && c.subject && revisitSoon.length < 3) {
+        var daysOverdue = Math.max(0, Math.round((Date.now() - new Date(reviewRow.due_at).getTime()) / DAY_MS));
+        var dueBody = (daysOverdue > 0
+          ? daysOverdue + ' day' + (daysOverdue === 1 ? '' : 's') + ' overdue for review'
+          : 'Due for review today') + ', last scored ' + Math.round(c.subject.weightedAccuracy * 100) + '% accuracy.';
+        var revisitRec = makeRec(c,
           c.subject.trend === 'declining' ? 'critical' : 'neutral',
           'Revisit ' + c.topic.title,
-          'Last tested ' + daysSince + ' days ago at ' + Math.round(c.subject.weightedAccuracy * 100) + '% accuracy. Time for a refresh.',
-          c.topic.slug, 'Review ' + c.topic.title, 'revisit'));
+          dueBody,
+          c.topic.slug, 'Review ' + c.topic.title, 'revisit');
+        revisitRec.subjectLink = c.topic.slug;
+        revisitRec.subjectName = c.subject.name;
+        revisitRec.reviewState = reviewRow;
+        revisitSoon.push(revisitRec);
         return;
       }
 
@@ -566,7 +675,10 @@
     loadProfileCache: loadProfileCache,
     clearProfileCache: clearProfileCache,
     readCachedProfile: readCachedProfile,
-    initAuthListener: initAuthListener
+    initAuthListener: initAuthListener,
+    computeSm2Update: computeSm2Update,
+    syncReviewSchedule: syncReviewSchedule,
+    recordManualReview: recordManualReview
   };
 
   initAuthListener();

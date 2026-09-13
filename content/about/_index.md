@@ -4,31 +4,40 @@ description: "Why we built BiOGuide, how content gets reviewed before publishing
 ---
 
 ## 📊 Recent Updates
-  <div class="recent-update-card">
+<div class="recent-updates">
+  <div class="recent-update-card recent-update-newest">
     <div class="recent-update-icon" aria-hidden="true"></div>
     <span class="recent-update-badge">NEW</span>
+    <div class="recent-update-body">
+      <div class="recent-update-meta">
+        <span class="recent-update-date">Sep 13 2026</span>
+        <span class="recent-update-contributor">Nishit Kalani</span>
+      </div>
+      <p class="recent-update-text"><a href="/biobytes/testimonials/">Wired up community reach directly form Umami using APIs. Two new guide-testimonials from Hungary and Slovakia</a>, Doubts section added, <a href="/biology-olympiad-preparation/">BiO Prep page transformed</a>, heavy changes to BiOrchive css and redesign with re-population, BiOClash registration started and major changes to BiOClash working pipeline for smoother workflow and bug fixes.</p>
+    </div>
+  </div>
+  <div class="recent-update-card recent-update-newest">
+    <div class="recent-update-icon" aria-hidden="true"></div>
     <div class="recent-update-body">
       <div class="recent-update-meta">
         <span class="recent-update-date">Aug 27 2026</span>
         <span class="recent-update-contributor">Nishit Kalani</span>
       </div>
-      <p class="recent-update-text"><a href="/biobytes/testimonials/turkmenistan-ibo-team/">Testimonial by Meryem from Turkmenistan!</a> New Email System added (customised emails from noreply), New Country Counter, CI,git LFS, Security fixes, and First ever practical guide written down available in <a href="/resources/11-practical-1/">Notes@BiOGuide</a> and at <a href="/biobytes/articles/lab-recommendations/">BiOBytes</a> (surprise for account holders)! Special thanks to <a href="https://ibo2026.lt">IBO 2026</a> community for the great response.</p>
+      <p class="recent-update-text"><a href="/biobytes/testimonials/turkmenistan-ibo-team/">Testimonial by Meryem from Turkmenistan!</a> New Email System added (customised emails from noreply), New Country Counter, CI, git LFS, Security fixes, and First ever practical guide written down available in <a href="/resources/11-practical-1/">Notes@BiOGuide</a> and at <a href="/biobytes/articles/lab-recommendations/">BiOBytes</a> (surprise for account holders)! Special thanks to <a href="https://ibo2026.lt">IBO 2026</a> community for the great response.</p>
     </div>
   </div>
   <div class="recent-update-card">
     <div class="recent-update-icon" aria-hidden="true"></div>
-    <span class="recent-update-badge">NEW</span>
     <div class="recent-update-body">
       <div class="recent-update-meta">
         <span class="recent-update-date">Aug 18 2026</span>
         <span class="recent-update-contributor">Nishit Kalani</span>
       </div>
-      <p class="recent-update-text"><a href="/dashboard/">Study Dashboard</a> -- personalized mastery tracking, prerequisite-aware study recommendations, trend analysis, topic-page badges, and a "weak areas first" toggle in the Question Bank. All built from your timed attempt history, all computed in your browser. <a href="/dashboard-guide/">See how it works.</a></p>
+      <p class="recent-update-text"><a href="/dashboard/">Study Dashboard</a>: personalized mastery tracking, prerequisite-aware study recommendations, trend analysis, topic-page badges, and a "weak areas first" toggle in the Question Bank. All built from your timed attempt history, all computed in your browser. <a href="/dashboard-guide/">See how it works.</a></p>
     </div>
   </div>
   <div class="recent-update-card">
     <div class="recent-update-icon" aria-hidden="true"></div>
-    <span class="recent-update-badge">NEW</span>
     <div class="recent-update-body">
       <div class="recent-update-meta">
         <span class="recent-update-date">Aug 9 2026</span>
@@ -37,48 +46,17 @@ description: "Why we built BiOGuide, how content gets reviewed before publishing
       <p class="recent-update-text">Senior Partner announced and BiOClash Sample problem and test-taking test platform launched! Give a visit at https://bioguide.world/bioclash/bioclash-sample/attempt/</p>
     </div>
   </div>
-  <div class="recent-updates">
-  <div class="recent-update-card recent-update-newest">
-    <span class="recent-update-badge">NEW</span>
+  <div class="recent-update-card">
     <div class="recent-update-icon" aria-hidden="true"></div>
     <div class="recent-update-body">
       <div class="recent-update-meta">
         <span class="recent-update-date">Aug 8 2026</span>
         <span class="recent-update-contributor">Nishit Kalani</span>
       </div>
-      <p class="recent-update-text"><a href="/ai_attestation.txt">AI Transparency Attestation</a> - a full public disclosure of where and how AI tools were used across the site, published per EU AI Act Article 50's transparency principles.</p>
+      <p class="recent-update-text"><a href="/ai_attestation.txt">AI Transparency Attestation</a>: a full public disclosure of where and how AI tools were used across the site, published per EU AI Act Article 50's transparency principles.</p>
     </div>
-  </div>
-  <div class="recent-update-card">
-    <div class="recent-update-icon" aria-hidden="true"></div>
-    <div class="recent-update-body">
-      <div class="recent-update-meta">
-        <span class="recent-update-date">Aug 2 2026</span>
-        <span class="recent-update-contributor">Nishit Kalani</span>
-      </div>
-      <p class="recent-update-text"><a href="/discussions/">Discussions</a> - open feedback and comment threads for the whole community, no gatekeeping to read, an account to post.</p>
-    </div>
-  </div>
-  <div class="recent-update-card">
-    <div class="recent-update-icon" aria-hidden="true"></div>
-    <div class="recent-update-body">
-      <div class="recent-update-meta">
-        <span class="recent-update-date">Aug 2 2026</span>
-        <span class="recent-update-contributor">Nishit Kalani</span>
-      </div>
-      <p class="recent-update-text"><a href="/bioclash/">BiOClash</a> - an original biology competition we're building, plus a Champions leaderboard on the <a href="/papers/leaderboard/">Hall of Fame</a> page ready for Season 1's results.</p>
-    </div>
-  </div>
-  <div class="recent-update-card">
-    <div class="recent-update-icon" aria-hidden="true"></div>
-    <div class="recent-update-body">
-      <div class="recent-update-meta">
-        <span class="recent-update-date">Aug 2 2026</span>
-        <span class="recent-update-contributor">Nishit Kalani</span>
-      </div>
-      <p class="recent-update-text">Accounts, profiles, and a Hall of Fame leaderboard for BiOrchive Timed Attempts - completely optional, everything still works without logging in.</p>
-    </div>
-  </div>
+ </div>
+</div>
 
 ## Contacts:
 
@@ -170,10 +148,15 @@ Our chain of command is somewhat summarised by <a href = "https://drive.google.c
 Nishit Here (: <br>
 I'm a high schooler in India who kept wishing a resource like this already existed while preparing for the International Biology Olympiad (Silver, 2026), so I built it myself. Astronomy was actually where I started (Gold, IOAA Jr 2025), and I've since qualified for the national selection camps in both Chemistry, Astronomy and Mathematics too; though biology is the one that stuck, which is probably why I can't help connecting it back to the other two more than a syllabus usually allows. Outside this site, I split my time between chess, code,piano, tabla, violin and the occasional very average sketch. I have solo-built the entire technical side of the website, so if something on here doesn't make sense or you just want to talk shop, find me at r6394175@gmail. If you find which star is in the image above, begin the mail with it's name, and wait for a surprise!
 {{< /team-member >}}
-{{< team-member name="Bhavyaa Gunwal" role="Senior Partner" avatar="/bgavat.jpg" since="August 2nd 2026">}}
+{{< team-member name="Bhavyaa Gunwal" role="Senior Partner (Harvey Specter Class)" avatar="/bgavat.jpg" since="August 2nd 2026">}}
 Hi, I’m Bhavyaa.<br> I just finished grade 12 in India but still not sure what to do next—probably medicine here, though a transfer to a good uni abroad doesn’t sound too bad either. I’ve always loved biology, even though my parents wanted me to go for maths. This interest earned me a few trips to IBO and IJSO, but I couldn’t have possibly done this without my GOATs: Holly Jackson and Olivia Rodrigo (Livies assemble). I’m passable at badminton, slowly learning taekwondo, and quietly curious about drama and instrumental music, even if I can’t play a note yet. And BiOGuide? it’s the resource 13 year old me would have killed for— future-you will thank you for leaning on it.
 {{< /team-member >}}
-{{< team-member name="Soumil Maity" role="Associate (Mike Ross Class)" avatar="/smavat.jpg" since="August 19th 2026">}}
+{{< team-member name="Dihui Yu" role="Senior Parnter (Louis Litt Class)" avatar="dyavat.jpg" since="August 24th 2026">}}
+Hey, I'm Dihui and recently graduated high school from the UAE. I'm an aspiring neuroscientist with interests in cognition and computation, and IBO and IESO really kickstarted my scientific journey. I can't help but wish I had more guidance and training when prepping though - I taught myself most of the content and learnt a fair share of lessons the hard way (to the point where I gutted a cod from the supermarket to learn anatomy). That's why I'm here to democratize access to resources, which hopefully levels the playing field. Outside bio, you'll find me jamming to spotify and messing around with jazz and production :)
+<br>
+Currently Working on: BiOClash: The first non partner-class team member with access to BiOClash resources, And producing social media content for bioguideofficial for outreach.
+{{< /team-member>}}
+{{< team-member name="Soumil Maity" role="Junior Partner (Louis Litt Class)" avatar="/smavat.jpg" since="August 19th 2026">}}
 Hi! I’m Soumil,<br> member of the Indian team and a Silver medalist at the 2026 IBO. Biology has always intrigued me, even though astronomy was what got me into Olympiads. You can expect me to remember important biochemical pathways, but will not be able to tell you what I had for lunch. If you don’t find me toiling away preparing for NEET, you can find me playing badminton, football, cricket or goofing around with my friends (at the goated DAV ground). I can already envision the 'aura' of BiOGuide among future biologists. Have fun exploring the what, why and how of life (perhaps with the occasional torment of the questions)!!
 Currently Working On: Making the Notes@BiOGuide a better place by collecting a vast pool of interesting previous problems!
 {{< /team-member >}}
@@ -190,11 +173,12 @@ Currently Working On: Helping in User Interface and UX betterment by weekly brai
 Hi, I’m Shourya, a high schooler in India who, at 13, somehow thought building NLP/neural-net apps was a normal hobby. Younger me kept wondering, “What if code could do more than just live on a screen?”—and that rabbit hole eventually led me into bioinformatics, haemodynamics, computational physiology, BCI–NLP, LSTMs, RL & AI for biology. Since then, I’ve had research exposure through IIT, MIT, Harvard & TIFR, made it to OCSC 2026 for IBO, landed in NSEB’s national top 10, and picked up recognition through DST , IBM etc.  research programmes. Now I review content published on bioguide , helping build what younger-me desperately wanted. Outside all this: guitar, piano, sketching, coding & journaling keeps me sane
 Currently Working On: Making the whole website a better place by reviewing content thoroughly throughout the website and submitting weekly recommendations!
 {{< /team-member >}}
-{{< team-member name="Dihui Yu" role="Associate (Mike Ross Class)" avatar="dyavat.jpg" since="August 24th 2026">}}
-Hey, I'm Dihui and recently graduated high school from the UAE. I'm an aspiring neuroscientist with interests in cognition and computation, and IBO and IESO really kickstarted my scientific journey. I can't help but wish I had more guidance and training when prepping though - I taught myself most of the content and learnt a fair share of lessons the hard way (to the point where I gutted a cod from the supermarket to learn anatomy). That's why I'm here to democratize access to resources, which hopefully levels the playing field. Outside bio, you'll find me jamming to spotify and messing around with jazz and production :)
-<br>
-Currently Working on: BiOClash: The first non partner-class team member with access to BiOClash resources. 
-{{< /team-member>}}
+{{< team-member name="Huseyn Taghizada" role="Associate (Mike Ross Class)" avatar="/TESTIMONIALPICS/huseyn.png" since="September 12th 26">}}
+Hello there. I am Huseyn Taghizada,  biology olympiadist from Azerbaijan. I will not talk about neither my medals nor anything other. You can check them from my linkedin account with the same name. Relying on my experiences my main goal is guide students thorough this harsh olympiad path and finishing it with the best possible ending. 
+If you're interested in my hobbies they're quite lot in fact. Chess, books, films, music, mangas and much more. Feel free to contact me via huseyntagizade90@gmail.com.
+{{< /team-member >}}
+{{< team-member name="Adit Mittal" role="Associate (Mike Ross Class)" since="September 12th 26">}}
+{{< /team-member >}}
 ## Frequently Asked Questions
 
 {{< faq-item q="Is BioGuide free to use?" >}}

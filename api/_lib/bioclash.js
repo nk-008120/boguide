@@ -172,8 +172,56 @@ function computeTotalPages(paper) {
   return pages;
 }
 
+function autoGrade(paper, attemptBlockRows) {
+  let autoCorrect = 0;
+  let autoTotal = 0;
+  let autoMarksEarned = 0;
+  let autoMarksTotal = 0;
+  for (const row of attemptBlockRows) {
+    const paperBlock = findBlock(paper, row.block_id);
+    if (!paperBlock || paperBlock.type === 'reveal_content') continue;
+    for (const component of paperBlock.components || []) {
+      const result = componentIsCorrect(component, (row.answer || {})[component.key]);
+      if (result === null) continue;
+      const marks = component.marks || 1;
+      autoTotal += 1;
+      autoMarksTotal += marks;
+      if (result) {
+        autoCorrect += 1;
+        autoMarksEarned += marks;
+      }
+    }
+  }
+  return { autoCorrect, autoTotal, autoMarksEarned, autoMarksTotal };
+}
+
+function extensionPenalty(paper, blocksUsed) {
+  const schedule = paper.extensionCostSchedule || [];
+  return schedule.slice(0, blocksUsed).reduce((a, b) => a + b, 0);
+}
+
+const rateBuckets = new Map();
+
+function rateLimit(userId, action, maxPerWindow, windowMs) {
+  const key = userId + ':' + action;
+  const now = Date.now();
+  let bucket = rateBuckets.get(key);
+  if (!bucket || now - bucket.start > windowMs) {
+    bucket = { start: now, count: 0 };
+  }
+  bucket.count += 1;
+  rateBuckets.set(key, bucket);
+  if (rateBuckets.size > 5000) {
+    const cutoff = now - windowMs;
+    for (const [k, v] of rateBuckets) {
+      if (now - v.start > cutoff) rateBuckets.delete(k);
+    }
+  }
+  return bucket.count > maxPerWindow;
+}
+
 function watermarkCode(userId, paperId) {
-  return crypto.createHash('sha256').update(`${userId}:${paperId}`).digest('hex').slice(0, 8);
+  return crypto.createHash('sha256').update(`${userId}:${paperId}`).digest('hex').slice(0, 16);
 }
 
 function newSessionToken() {
@@ -189,6 +237,9 @@ module.exports = {
   seededShuffle,
   toClientBlock,
   componentIsCorrect,
+  autoGrade,
+  extensionPenalty,
+  rateLimit,
   watermarkCode,
   newSessionToken,
   computeTotalPages

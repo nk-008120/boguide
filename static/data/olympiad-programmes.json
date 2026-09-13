@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-27",
+  "lastUpdated": "2026-09-13",
   "countries": {
     "IN": {
       "name": "India",
@@ -48,6 +48,14 @@
       "guideUrl": "/biobytes/testimonials/slovakia-daniel-bronze/",
       "status": "published",
       "stages": "School > Regional > National > Selection camp > IBO"
+    },
+    "HU": {
+      "name": "Hungary",
+      "flag": "🇭🇺",
+      "programme": "IBOHUN Válogató Verseny",
+      "guideUrl": "/biobytes/testimonials/hungary-botond-silver/",
+      "status": "published",
+      "stages": "Rounds 1-2 (online) > Round 3 (written) > Round 4 (theory + practical) > IBO"
     },
     "GB": {
       "name": "United Kingdom",

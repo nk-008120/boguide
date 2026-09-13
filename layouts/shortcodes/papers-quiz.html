@@ -43,7 +43,7 @@
       {{- if eq $type "mcq" }}
       <div class="tf-quiz-toggle tf-quiz-mcq" role="group" aria-label="Statement {{ .letter }}">
         {{- range .options }}
-        <button type="button" class="tf-btn tf-btn-mcq" data-value="{{ .key }}">{{ .key }}) {{ .text }}</button>
+        <button type="button" class="tf-btn tf-btn-mcq" data-value="{{ .key }}"><span class="tf-mcq-bubble">{{ .key }}</span><span class="tf-mcq-text">{{ .text }}</span></button>
         {{- end }}
       </div>
       <div class="tf-quiz-feedback"></div>
@@ -100,7 +100,7 @@
     var btns = row.querySelectorAll('.tf-btn');
     btns.forEach(function (btn) {
       btn.addEventListener('click', function () {
-        btns.forEach(function (b) { b.classList.remove('selected'); });
+        btns.forEach(function (b) { b.classList.remove('selected', 'correct-answer'); });
         btn.classList.add('selected');
         row.dataset.selected = btn.dataset.value;
         row.classList.remove('correct', 'incorrect', 'unanswered');
@@ -140,6 +140,10 @@
       row.classList.toggle('correct', isCorrect);
       row.classList.toggle('incorrect', !isCorrect);
       if (isCorrect) correct++;
+      if (type === 'mcq') {
+        var correctBtn = row.querySelector('.tf-btn-mcq[data-value="' + row.dataset.answer + '"]');
+        if (correctBtn) correctBtn.classList.add('correct-answer');
+      }
       fb.textContent = (isCorrect ? '✓ Correct — ' : '✗ Incorrect — ') + row.dataset.explanation;
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
@@ -152,7 +156,7 @@
     rows.forEach(function (row) {
       row.classList.remove('correct', 'incorrect', 'unanswered');
       delete row.dataset.selected;
-      row.querySelectorAll('.tf-btn.selected').forEach(function (b) { b.classList.remove('selected'); });
+      row.querySelectorAll('.tf-btn.selected, .tf-btn-mcq.correct-answer').forEach(function (b) { b.classList.remove('selected', 'correct-answer'); });
       if (row.dataset.type === 'numeric') {
         var input = row.querySelector('.tf-numeric-input');
         if (input) input.value = '';

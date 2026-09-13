@@ -40,7 +40,7 @@ Bhavyaa signs up at the [Account page](/account/), picks an avatar, and selects 
 <div class="gm-bar"><span class="gm-bar-name">Pedigree Analysis</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:100%;background:#16a34a"></div></div><span class="gm-bar-pct" style="color:#16a34a">100%</span></div>
 <div class="gm-bar"><span class="gm-bar-name">Natural Selection</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:85%;background:#22c55e"></div></div><span class="gm-bar-pct" style="color:#22c55e">85%</span></div>
 <div class="gm-bar"><span class="gm-bar-name">Ecology</span><div class="gm-bar-track"><div class="gm-bar-fill" style="width:92%;background:#16a34a"></div></div><span class="gm-bar-pct" style="color:#16a34a">92%</span></div>
-<div class="gm-rec-card" style="background:rgba(220,38,38,0.06);border-left:3px solid #dc2626;margin-top:0.5rem;">
+<div class="gm-rec-card" style="background:rgba(220,38,38,0.06);border:1px solid #dc2626;margin-top:0.5rem;">
 <div class="gm-rec-title" style="color:#dc2626;">Focus on 5 subjects</div>
 <div class="gm-rec-body">Enzyme Kinetics stands out as your weakest spot</div>
 </div>
@@ -80,18 +80,18 @@ Even after just one attempt, the knowledge enrichment section adds a **"View you
 </div>
 <div style="font-size:0.72rem;font-weight:600;color:#8965c4;margin-bottom:0.3rem;">Study recommendations</div>
 <div style="font-size:0.62rem;font-weight:600;color:#dc2626;text-transform:uppercase;letter-spacing:0.04em;margin-bottom:3px;">Priority study</div>
-<div class="gm-rec-card" style="background:rgba(220,38,38,0.06);border-left:3px solid #dc2626;">
+<div class="gm-rec-card" style="background:rgba(220,38,38,0.06);border:1px solid #dc2626;">
 <div class="gm-rec-title" style="color:#991b1b;">Enzyme Kinetics <span class="gm-badge" style="background:#dc2626;">critical 25%</span></div>
 </div>
-<div class="gm-rec-card" style="background:rgba(249,115,22,0.06);border-left:3px solid #f97316;">
+<div class="gm-rec-card" style="background:rgba(249,115,22,0.06);border:1px solid #f97316;">
 <div class="gm-rec-title" style="color:#9a3412;">Membrane Transport <span class="gm-badge" style="background:#f97316;">weak 38%</span></div>
 </div>
 <div style="font-size:0.62rem;font-weight:600;color:#2563eb;text-transform:uppercase;letter-spacing:0.04em;margin:0.35rem 0 3px;">Prerequisite gaps</div>
-<div class="gm-rec-card" style="background:rgba(37,99,235,0.05);border-left:3px solid #2563eb;">
+<div class="gm-rec-card" style="background:rgba(37,99,235,0.05);border:1px solid #2563eb;">
 <div class="gm-rec-body" style="color:#1e40af;">Before <b>Signal Transduction</b>, strengthen <b>Membrane Transport</b> and <b>Protein Structure</b></div>
 </div>
 <div style="font-size:0.62rem;font-weight:600;color:#059669;text-transform:uppercase;letter-spacing:0.04em;margin:0.35rem 0 3px;">Expand coverage</div>
-<div class="gm-rec-card" style="background:rgba(5,150,105,0.05);border-left:3px solid #059669;">
+<div class="gm-rec-card" style="background:rgba(5,150,105,0.05);border:1px solid #059669;">
 <div class="gm-rec-body" style="color:#065f46;">Explore <b>Ethology</b> -- untested, falls under 9. Ethology</div>
 </div>
 <div style="background:#f8f8fa;border:1px solid #e9e9f0;border-radius:10px;padding:0.5rem 0.7rem;margin:0.5rem 0;">
@@ -206,17 +206,17 @@ The entire table reorders: questions tagged with Enzyme Kinetics, Membrane Trans
 <div class="guide-mockup">
 <div style="font-size:0.72rem;font-weight:600;color:#8965c4;margin-bottom:0.3rem;">After IBO 2023 Theoretical 2 -- 68%</div>
 <div style="font-size:0.68rem;color:#64748b;margin-bottom:0.5rem;">Knowledge enrichment cards:</div>
-<div class="gm-rec-card" style="background:rgba(220,38,38,0.06);border-left:3px solid #dc2626;margin-bottom:6px;">
+<div class="gm-rec-card" style="background:rgba(220,38,38,0.06);border:1px solid #dc2626;margin-bottom:6px;">
 <div class="gm-rec-title" style="color:#991b1b;">Persistent weakness across attempts</div>
 <div class="gm-rec-body">Enzyme Kinetics (32%), Membrane Transport (45%) -- weak across 2+ attempts. Targeted study before your next round should help.</div>
 </div>
-<div class="gm-rec-card" style="background:rgba(137,101,196,0.06);border-left:3px solid #8965c4;">
+<div class="gm-rec-card" style="background:rgba(137,101,196,0.06);border:1px solid #8965c4;">
 <div class="gm-rec-title" style="color:#5b3d8f;">View your study dashboard</div>
 <div class="gm-rec-body">Your full knowledge profile is built from 2 attempts. See all your strengths, weaknesses, and personalized recommendations.</div>
 </div>
 <div style="border-top:1px solid #e9e9f0;margin-top:0.5rem;padding-top:0.45rem;">
 <div style="font-size:0.65rem;color:#64748b;margin-bottom:3px;">If a subject declines instead:</div>
-<div class="gm-rec-card" style="background:rgba(220,38,38,0.06);border-left:3px solid #dc2626;">
+<div class="gm-rec-card" style="background:rgba(220,38,38,0.06);border:1px solid #dc2626;">
 <div class="gm-rec-title" style="color:#991b1b;">Declining in 1 subject</div>
 <div class="gm-rec-body">Enzyme Kinetics (22%, 2 attempts) -- trending downward. Consider a different study approach.</div>
 </div>

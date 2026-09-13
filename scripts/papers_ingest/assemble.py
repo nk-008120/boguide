@@ -132,11 +132,6 @@ def resolve_figures(fig_ids, figures_map, static_dir, qid):
         dest_name = f"{qid}-figure-{i}.png"
         dest_path = static_dir / dest_name
         entry_path = Path(entry)
-        # Path.__truediv__ silently discards the left operand when the right
-        # side is absolute, so only try the "already placed under static_dir"
-        # shortcut for relative entries -- an absolute entry must always go
-        # through the copy branch below instead of falsely resolving against
-        # whatever absolute scratch path it already points to.
         if not entry_path.is_absolute():
             candidate_path = static_dir / entry
             if candidate_path.exists():
@@ -272,11 +267,6 @@ def build_entry_text(q, args, page):
     )
 
 def figures_url_prefix(figures_static_dir):
-    """Derive the public URL path for a --figures-static-dir, e.g.
-    "static/papers/ibo/2020/theoretical-2" -> "papers/ibo/2020/theoretical-2".
-    Respects a per-round static subdirectory instead of assuming the flat
-    per-year layout -- without this, two rounds sharing a year's static
-    folder silently collide on identically-numbered qN-figure-N.png files."""
     parts = Path(figures_static_dir).as_posix().split("/")
     if parts and parts[0] == "static":
         parts = parts[1:]

@@ -53,33 +53,27 @@
   {{- end }}
 </div>
 <div class="papers-table-wrap">
-<table class="papers-problem-table" id="papers-problem-table">
-  <thead><tr><th>No.</th><th>Title</th><th>Subjects</th>{{ if $hasDifficulty }}<th>Difficulty</th>{{ end }}<th>Points</th><th></th></tr></thead>
-  <tbody>
-    {{- range $round.problems }}
-    {{- $subjNames := slice }}
-    {{- range .subjects }}{{ $subjNames = $subjNames | append .name }}{{ end }}
-    <tr class="papers-problem-row" data-subjects="{{ delimit $subjNames "||" }}" data-difficulty="{{ .difficulty | default "" }}">
-      <td>{{ .number }}</td>
-      <td><a href="{{ $.Page.RelPermalink }}{{ .id }}/">{{ .name }}</a></td>
-      <td>
-        {{- if .subjects -}}
-        <div class="papers-subject-tags">
-          {{- range .subjects }}
-          <a class="papers-subject-tag" href="{{ .link }}">{{ .name }}</a>
-          {{- end }}
-        </div>
-        {{- else -}}—{{- end -}}
-      </td>
-      {{- if $hasDifficulty }}
-      <td>{{ if .difficulty }}<span class="papers-difficulty-badge papers-difficulty-{{ .difficulty }}">{{ .difficulty | title }}</span>{{ else }}—{{ end }}</td>
-      {{- end }}
-      <td>{{ .maxScore | default "—" }}</td>
-      <td>{{ with .link }}<a class="papers-pill" href="{{ . }}" target="_blank" rel="noopener">PDF</a>{{ end }}</td>
-    </tr>
-    {{- end }}
-  </tbody>
-</table>
+<div class="papers-problem-list" id="papers-problem-table">
+  {{- range $round.problems }}
+  {{- $subjNames := slice }}
+  {{- range .subjects }}{{ $subjNames = $subjNames | append .name }}{{ end }}
+  <div class="papers-problem-row" data-subjects="{{ delimit $subjNames "||" }}" data-difficulty="{{ .difficulty | default "" }}">
+    <span class="papers-problem-index">{{ .number }}</span>
+    <span class="papers-problem-main">
+      <a class="papers-problem-title-link" href="{{ $.Page.RelPermalink }}{{ .id }}/">{{ .name }}</a>
+      <span class="papers-subject-tags">
+        {{- range .subjects }}
+        <a class="papers-subject-tag" href="{{ .link }}">{{ .name }}</a>
+        {{- end }}
+        {{- if .difficulty }}<span class="papers-difficulty-badge papers-difficulty-{{ .difficulty }}">{{ .difficulty | title }}</span>{{ end }}
+        <span class="papers-problem-code">{{ $olId | upper }}&middot;{{ $yearId }}&middot;{{ .number }}</span>
+      </span>
+    </span>
+    <span class="papers-problem-stat">{{ .maxScore | default "—" }} pts</span>
+    {{- with .link }}<a class="papers-pill papers-problem-pdf" href="{{ . }}" target="_blank" rel="noopener">PDF</a>{{ end }}
+  </div>
+  {{- end }}
+</div>
 </div>
 <script>
 (function () {

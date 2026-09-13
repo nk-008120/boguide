@@ -1,4 +1,5 @@
 const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
+const { rateLimit } = require('./_lib/bioclash');
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
@@ -20,6 +21,11 @@ module.exports = async (req, res) => {
       return;
     }
     const userId = userData.user.id;
+
+    if (rateLimit(userId, 'tab-close', 10, 60000)) {
+      res.status(429).json({ error: 'Too many requests' });
+      return;
+    }
 
     const { paperId, sessionToken } = req.body || {};
     if (!paperId || !sessionToken) {

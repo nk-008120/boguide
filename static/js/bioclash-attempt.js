@@ -64,11 +64,86 @@
     maxExtensionBlocks: 0,
     extensionBlockMinutes: 0,
     extensionCostSchedule: [],
-    lockFlowActive: false
+    lockFlowActive: false,
+    connectionState: 'connected',
+    consecutiveFailures: 0,
+    startedAt: null,
+    submittedAt: null
   };
   var timerInterval = null;
   var heartbeatInterval = null;
   var draftTimers = {};
+  var pendingSaves = [];
+  var retryTimer = null;
+  var connectionEl = null;
+
+  function createConnectionIndicator() {
+    var topbar = document.querySelector('.bioclash-attempt-topbar');
+    if (!topbar || connectionEl) return;
+    connectionEl = document.createElement('div');
+    connectionEl.className = 'bioclash-connection-status';
+    connectionEl.setAttribute('data-state', 'connected');
+    var dot = document.createElement('span');
+    dot.className = 'bioclash-connection-dot';
+    var label = document.createElement('span');
+    label.className = 'bioclash-connection-label';
+    label.textContent = 'Connected';
+    connectionEl.appendChild(dot);
+    connectionEl.appendChild(label);
+    topbar.insertBefore(connectionEl, topbar.firstChild);
+  }
+
+  function setConnectionState(newState) {
+    state.connectionState = newState;
+    if (!connectionEl) return;
+    connectionEl.setAttribute('data-state', newState);
+    var label = connectionEl.querySelector('.bioclash-connection-label');
+    if (!label) return;
+    if (newState === 'connected') label.textContent = 'Connected';
+    else if (newState === 'reconnecting') label.textContent = 'Reconnecting...';
+    else label.textContent = 'Offline';
+  }
+
+  function onApiSuccess() {
+    state.consecutiveFailures = 0;
+    if (state.connectionState !== 'connected') setConnectionState('connected');
+    flushPendingSaves();
+  }
+
+  function onApiFailure() {
+    state.consecutiveFailures += 1;
+    if (state.consecutiveFailures >= 2 && state.connectionState === 'connected') {
+      setConnectionState('reconnecting');
+    }
+  }
+
+  function flushPendingSaves() {
+    if (!pendingSaves.length || state.connectionState === 'offline') return;
+    clearTimeout(retryTimer);
+    var save = pendingSaves.shift();
+    apiPost('/api/bioclash-save-draft', save).then(function (result) {
+      if (result.ok) {
+        onApiSuccess();
+        if (pendingSaves.length) flushPendingSaves();
+      } else if (result.body && result.body.reason === 'superseded') {
+        handleSessionSuperseded();
+      } else {
+        onApiFailure();
+        pendingSaves.unshift(save);
+        retryTimer = setTimeout(flushPendingSaves, 5000);
+      }
+    });
+  }
+
+  window.addEventListener('online', function () {
+    if (state.connectionState === 'offline') {
+      setConnectionState('reconnecting');
+      flushPendingSaves();
+    }
+  });
+  window.addEventListener('offline', function () {
+    setConnectionState('offline');
+  });
 
   function authHeaders(session) {
     return { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + session.access_token };
@@ -122,8 +197,15 @@
     clearInterval(heartbeatInterval);
     heartbeatInterval = setInterval(function () {
       if (!state.sessionToken) return;
-      apiPost('/api/bioclash-heartbeat', { paperId: PAPER_ID, sessionToken: state.sessionToken }).then(function (result) {
-        if (result.body && result.body.reason === 'superseded') handleSessionSuperseded();
+      apiPost('/api/bioclash-heartbeat', { paperId: PAPER_ID, sessionToken: state.sessionToken, reachedFinalPage: state.reachedFinalPageLocally || undefined }).then(function (result) {
+        if (result.body && result.body.reason === 'superseded') {
+          handleSessionSuperseded();
+          return;
+        }
+        if (result.ok) onApiSuccess();
+        else onApiFailure();
+      }).catch(function () {
+        onApiFailure();
       });
     }, 20000);
   }
@@ -135,6 +217,14 @@
     apiPost('/api/bioclash-heartbeat', { paperId: PAPER_ID, sessionToken: state.sessionToken, reachedFinalPage: true });
   }
 
+  function cumulativeCost(blocksUsed) {
+    var total = 0;
+    for (var i = 0; i < blocksUsed && i < state.extensionCostSchedule.length; i++) {
+      total += state.extensionCostSchedule[i];
+    }
+    return total;
+  }
+
   function updateExtendButton() {
     if (!extendBtn) return;
     var remaining = state.maxExtensionBlocks - state.extensionBlocksUsed;
@@ -142,11 +232,15 @@
       extendBtn.hidden = true;
       return;
     }
-    var nextCost = state.extensionCostSchedule[state.extensionBlocksUsed];
+    var nextMarginal = state.extensionCostSchedule[state.extensionBlocksUsed];
+    var nextCumulative = cumulativeCost(state.extensionBlocksUsed + 1);
     extendBtn.hidden = false;
     extendBtn.disabled = false;
     extendBtn.textContent = '+' + state.extensionBlockMinutes + ' min' +
-      (nextCost != null ? ' (costs ~' + nextCost.toFixed(2) + ' Z)' : '');
+      (nextMarginal != null
+        ? ' (this block: -' + nextMarginal.toFixed(2) + ' Z, total penalty: -' + nextCumulative.toFixed(2) + ' Z)'
+        : '') +
+      ' [' + remaining + ' left]';
   }
 
   function requestExtension() {
@@ -154,7 +248,7 @@
     var nextCost = state.extensionCostSchedule[state.extensionBlocksUsed];
     var warn = 'Requesting +' + state.extensionBlockMinutes + ' minutes will cost ' +
       (nextCost != null ? 'approximately ' + nextCost.toFixed(2) : 'a') +
-      ' point off this round’s standardized ranking once results are finalized. ' +
+      ' point off this round\'s standardized ranking once results are finalized. ' +
       'This cannot be undone.\n\nContinue?';
     if (!window.confirm(warn)) return;
     extendBtn.disabled = true;
@@ -272,6 +366,8 @@
     state.maxExtensionBlocks = data.maxExtensionBlocks || 0;
     state.extensionBlockMinutes = data.extensionBlockMinutes || 0;
     state.extensionCostSchedule = data.extensionCostSchedule || [];
+    if (data.startedAt) state.startedAt = data.startedAt;
+    if (data.submittedAt) state.submittedAt = data.submittedAt;
     renderWatermark(data.watermark);
 
     if (data.status === 'submitted') {
@@ -284,6 +380,7 @@
     }
 
     showScreen(liveScreen);
+    createConnectionIndicator();
     clearInterval(timerInterval);
     timerInterval = setInterval(tickTimer, 1000);
     tickTimer();
@@ -431,7 +528,7 @@
       if (!sel) {
         var hint = document.createElement('p');
         hint.className = 'bioclash-component-hint';
-        hint.textContent = 'Pick an answer above first — the questions for the other options appear here.';
+        hint.textContent = 'Pick an answer above first. The questions for the other options appear here.';
         wrap.appendChild(hint);
         return;
       }
@@ -491,15 +588,39 @@
     clearTimeout(draftTimers[block.id]);
     draftTimers[block.id] = setTimeout(function () {
       var answers = collectAnswers(block, inputs);
-      apiPost('/api/bioclash-save-draft', {
+      var payload = {
         paperId: PAPER_ID,
         blockId: block.id,
         componentAnswers: answers,
         fullscreenExits: state.fullscreenExits,
         visibilityLosses: state.visibilityLosses,
         sessionToken: state.sessionToken
-      }).then(function (result) {
-        if (result.body && result.body.reason === 'superseded') handleSessionSuperseded();
+      };
+      if (state.connectionState === 'offline') {
+        pendingSaves = pendingSaves.filter(function (s) { return s.blockId !== block.id; });
+        pendingSaves.push(payload);
+        return;
+      }
+      apiPost('/api/bioclash-save-draft', payload).then(function (result) {
+        if (result.body && result.body.reason === 'superseded') {
+          handleSessionSuperseded();
+          return;
+        }
+        if (result.ok) {
+          onApiSuccess();
+        } else {
+          onApiFailure();
+          pendingSaves = pendingSaves.filter(function (s) { return s.blockId !== block.id; });
+          pendingSaves.push(payload);
+          clearTimeout(retryTimer);
+          retryTimer = setTimeout(flushPendingSaves, 5000);
+        }
+      }).catch(function () {
+        onApiFailure();
+        pendingSaves = pendingSaves.filter(function (s) { return s.blockId !== block.id; });
+        pendingSaves.push(payload);
+        clearTimeout(retryTimer);
+        retryTimer = setTimeout(flushPendingSaves, 5000);
       });
     }, 800);
   }
@@ -570,6 +691,20 @@
     return -1;
   }
 
+  function countProgress() {
+    var total = 0;
+    var answered = 0;
+    state.blocks.forEach(function (block) {
+      if (block.type === 'reveal_content') return;
+      (block.components || []).forEach(function (c) {
+        total += 1;
+        var val = block.answer && block.answer[c.key];
+        if (val !== undefined && val !== null && val !== '') answered += 1;
+      });
+    });
+    return { answered: answered, total: total };
+  }
+
   function renderPartNav(list, pageIdx) {
     var nav = document.createElement('div');
     nav.className = 'bioclash-part-nav';
@@ -593,7 +728,9 @@
     label.className = 'bioclash-part-nav-label';
 
     var total = state.totalPages || list.length;
-    label.textContent = 'Page ' + (pageIdx + 1) + ' of ' + total + ': ' + (list[pageIdx].name || '');
+    var progress = countProgress();
+    label.textContent = 'Page ' + (pageIdx + 1) + ' of ' + total +
+      (progress.total > 0 ? '  |  ' + progress.answered + '/' + progress.total + ' answered' : '');
 
     var nextBtn = document.createElement('button');
     nextBtn.type = 'button';
@@ -688,7 +825,7 @@
       if (block.lockWarning && block.status === 'active') {
         var warnBanner = document.createElement('p');
         warnBanner.className = 'bioclash-nonrecoverable-banner';
-        warnBanner.textContent = '⛔ NON-RECOVERABLE — ' + block.lockWarning;
+        warnBanner.textContent = '⛔ NON-RECOVERABLE: ' + block.lockWarning;
         section.appendChild(warnBanner);
       }
 
@@ -727,7 +864,7 @@
       if (block.status === 'locked') {
         var lockedNote = document.createElement('p');
         lockedNote.className = 'bioclash-locked-note';
-        lockedNote.textContent = '🔒 Locked — this answer is final for this attempt.';
+        lockedNote.textContent = '🔒 Locked. This answer is final for this attempt.';
         section.appendChild(lockedNote);
       } else if (block.locksAfterSubmit) {
         var lockBtn = document.createElement('button');
@@ -801,19 +938,43 @@
     clearInterval(timerInterval);
     clearInterval(heartbeatInterval);
     if (!reportScreen) return;
-    reportScreen.innerHTML =
-      '<h2>Submitted</h2>' +
-      '<p>Auto-gradable score (partial — most of this paper is graded offline): ' +
-      (data.autoScoreCorrect != null ? data.autoScoreCorrect + ' / ' + data.autoScoreTotal : '—') + '</p>' +
-      '<p>' + (data.note || 'Your full result will follow separately once grading is complete.') + '</p>' +
+
+    var submitTime = state.submittedAt ? new Date(state.submittedAt).getTime() : Date.now();
+    var startTime = state.startedAt ? new Date(state.startedAt).getTime() : null;
+    var endTime = state.endAt ? new Date(state.endAt).getTime() : null;
+
+    var timeUsedStr = '-';
+    var timeAvailableStr = '-';
+    if (startTime && endTime) {
+      var usedMs = Math.min(submitTime, endTime) - startTime;
+      var availableMs = endTime - startTime;
+      timeUsedStr = formatDuration(usedMs);
+      timeAvailableStr = formatDuration(availableMs);
+    }
+
+    var extUsed = state.extensionBlocksUsed || 0;
+    var extLabel = extUsed === 0
+      ? 'None'
+      : extUsed + ' (' + (extUsed * state.extensionBlockMinutes) + ' min added)';
+
+    var html = '<h2>Submitted</h2>' +
+      '<table class="bioclash-report-stats">' +
+      '<tr><td>Time used</td><td>' + timeUsedStr + ' of ' + timeAvailableStr + '</td></tr>' +
+      '<tr><td>Extensions used</td><td>' + extLabel + '</td></tr>' +
+      '<tr><td>Fullscreen exits</td><td>' + (state.fullscreenExits || 0) + '</td></tr>' +
+      '<tr><td>Visibility losses</td><td>' + (state.visibilityLosses || 0) + '</td></tr>' +
+      '</table>' +
+      '<p>Your full result will follow separately once grading is complete.</p>' +
       '<div class="bioclash-recording-upload">' +
       '<p><strong>Your attempt is not verified yet.</strong> Upload your full front-camera ' +
       'recording of this attempt to the folder below as soon as possible. Results are only ' +
-      'verified once this recording has been reviewed — an unverified attempt may still be ' +
+      'verified once this recording has been reviewed. An unverified attempt may still be ' +
       'scored, but whether it is announced or considered at all is entirely at BiOGuide\'s ' +
       'discretion.</p>' +
       '<p><a href="' + RECORDING_UPLOAD_URL + '" target="_blank" rel="noopener" class="papers-nav-btn">Upload your recording</a></p>' +
       '</div>';
+
+    reportScreen.innerHTML = html;
   }
 
   function doSubmit(silent) {
@@ -864,8 +1025,9 @@
     });
   }
 
-  window.addEventListener('beforeunload', function () {
+  window.addEventListener('beforeunload', function (e) {
     if (state.sessionToken && state.accessToken && liveScreen && !liveScreen.hidden) {
+      e.preventDefault();
       fetch('/api/bioclash-log-tab-close', {
         method: 'POST',
         keepalive: true,

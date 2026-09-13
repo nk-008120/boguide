@@ -6,7 +6,9 @@
        {{< /faq-item >}}
      `q` can also be passed positionally: {{< faq-item "Is this free?" >}} */ -}}
 {{- $q := .Get "q" | default (.Get 0) -}}
-<details class="faq-item">
+{{- $open := .Get "open" -}}
+{{- $id := .Get "id" -}}
+<details class="faq-item"{{ with $id }} id="{{ . }}"{{ end }}{{ if eq $open "true" }} open{{ end }}>
   <summary>{{ $q }}</summary>
   <div>{{ .Inner | markdownify }}</div>
 </details>

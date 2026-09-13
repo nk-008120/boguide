@@ -15,13 +15,13 @@ sitemap:
     <h2>Sign in to see your dashboard</h2>
     <p>The study dashboard tracks your practice history and generates personalized recommendations. It requires an account.</p>
     <a href="/account/?next=/dashboard/" class="btn-primary">Sign In or Create Account</a>
-    <a href="/dashboard-guide/" class="btn-primary" style="background:linear-gradient(135deg,#5c7a58,#8965c4);">How the Dashboard Works</a>
+    <a href="/dashboard-guide/" class="btn-primary dashboard-btn-secondary">How the Dashboard Works</a>
   </div>
     <div id="dashboard-no-data" class="dashboard-gate" style="display:none;">
     <h2>Take your first practice paper</h2>
     <p>The dashboard builds your knowledge profile from timed attempt submissions. Complete a practice round in BiOrchive and submit your score to the leaderboard to get started.</p>
     <a href="/papers/" class="btn-primary">Go to BiOrchive</a>
-    <a href="/dashboard-guide/" class="btn-primary" style="background:linear-gradient(135deg,#5c7a58,#8965c4);">How the Dashboard Works</a>
+    <a href="/dashboard-guide/" class="btn-primary dashboard-btn-secondary">How the Dashboard Works</a>
   </div>
   <div id="dashboard-content" style="display:none;">
     <div id="dashboard-header"></div>
@@ -42,6 +42,8 @@ sitemap:
     <div id="dashboard-copy-summary"></div>
   </div>
 </div>
+
+{{< papers-rounds-data >}}
 
 <script src="/js/papers-knowledge.js"></script>
 <script src="/js/papers-dashboard.js"></script>

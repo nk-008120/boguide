@@ -8,7 +8,7 @@ layout: "wide"
 schema_type: "article"
 faq:
   - q: "How do I start preparing for a Biology Olympiad?"
-    a: "Start with Cell & Molecular Biology and Genetics -- these underpin nearly every other topic. Use Campbell Biology as your primary text, then expand to subject-specific references as you identify weak areas. Begin past-paper practice early, even before you feel ready."
+    a: "Start with Cell & Molecular Biology and Genetics : these underpin nearly every other topic. Use Campbell Biology as your primary text, then expand to subject-specific references as you identify weak areas. Begin past-paper practice early, even before you feel ready."
   - q: "What books should I use for Biology Olympiad preparation?"
     a: "Campbell Biology for general coverage, Alberts' Molecular Biology of the Cell for cell biology, Lehninger's Principles of Biochemistry, Silverthorn's Human Physiology for animal physiology, and Taiz's Plant Physiology and Development. Start with Campbell, add others as you identify gaps."
   - q: "How long does it take to prepare for a Biology Olympiad?"
@@ -17,9 +17,110 @@ faq:
     a: "IBO is the international final -- teams of four from each country compete on theory and practicals. USABO is the US national selection pathway (Open, Semifinal, Finals). INBO is the Indian pathway (NSEB screening, then INBO theory paper, then OCSC camp). All three draw from the same IBO syllabus but differ in format, depth, and selection structure."
 ---
 
+<div class="prep-tour-trigger-wrap">
+  <button type="button" class="prep-tour-trigger" id="prep-tour-trigger">Take a 10-second tour of this page</button>
+</div>
+
 <div class="prep-guide-wrapper">
 
-This is the general preparation framework that applies regardless of which Biology Olympiad you're targeting. It covers what to study, what order to learn things in, how to practice effectively, and what resources to use. For exam-specific strategies, formats, and registration details, see the individual guides below.
+This is the general preparation framework that applies regardless of which Biology Olympiad you're targeting: what to study, what order to learn it in, how to practice, and what resources to use.
+
+<div class="prep-picker" id="prep-picker">
+  <h2 class="prep-picker-heading">Find your path</h2>
+  <p class="prep-picker-subtitle">Answer two quick questions to get a personalized starting point.</p>
+  <div class="prep-picker-question">
+    <p class="prep-picker-question-label">Which olympiad are you preparing for?</p>
+    <div class="prep-picker-options" role="group" aria-label="Which olympiad are you preparing for?">
+      <button type="button" class="prep-picker-btn" data-question="olympiad" data-value="ibo">IBO</button>
+      <button type="button" class="prep-picker-btn" data-question="olympiad" data-value="usabo">USABO</button>
+      <button type="button" class="prep-picker-btn" data-question="olympiad" data-value="inbo">INBO</button>
+      <button type="button" class="prep-picker-btn" data-question="olympiad" data-value="unsure">Not sure yet</button>
+    </div>
+  </div>
+  <div class="prep-picker-question">
+    <p class="prep-picker-question-label">Where are you starting from?</p>
+    <div class="prep-picker-options" role="group" aria-label="Where are you starting from?">
+      <button type="button" class="prep-picker-btn" data-question="start" data-value="beginner">Complete beginner</button>
+      <button type="button" class="prep-picker-btn" data-question="start" data-value="school">School biology level</button>
+      <button type="button" class="prep-picker-btn" data-question="start" data-value="midsyllabus">Already mid-syllabus</button>
+      <button type="button" class="prep-picker-btn" data-question="start" data-value="soon">Exam is soon</button>
+    </div>
+  </div>
+  <div class="prep-picker-result" id="prep-picker-result" hidden>
+    <h3 class="prep-picker-result-heading">Your path</h3>
+    <div class="prep-picker-result-links" id="prep-picker-result-links"></div>
+  </div>
+</div>
+
+<div class="prep-jump-nav" role="navigation" aria-label="Jump to a section">
+  <a href="#choose-your-olympiad">Choose your olympiad</a>
+  <a href="#the-learning-order">Learning order</a>
+  <a href="#what-to-read">What to read</a>
+  <a href="#how-to-actually-study">How to study</a>
+  <a href="#study-plans">Study plans</a>
+  <a href="#practice-resources">Practice resources</a>
+</div>
+
+<script>
+(function() {
+  var OLYMPIAD_LINKS = {
+    ibo: { label: 'IBO Preparation Guide', href: '/ibo-preparation/' },
+    usabo: { label: 'USABO Preparation Guide', href: '/usabo-preparation/' },
+    inbo: { label: 'INBO Preparation Guide', href: '/inbo-preparation/' },
+    unsure: { label: 'Browse the map above', href: '#choose-your-olympiad' }
+  };
+  var START_LINKS = {
+    beginner: {
+      resources: [{ label: 'Cell & Molecular Biology', href: '/resources/1-cell-molecular/' }],
+      plans: [{ label: '2-year plan', href: '/plans/2-years/' }, { label: '1-year plan', href: '/plans/1-year/' }]
+    },
+    school: {
+      resources: [{ label: 'the topic depth map', href: '#how-deep-do-you-need-to-go' }],
+      plans: [{ label: '1-year plan', href: '/plans/1-year/' }, { label: '6-month plan', href: '/plans/6-months/' }]
+    },
+    midsyllabus: {
+      resources: [{ label: 'Study Resources', href: '/resources/' }, { label: 'Study Dashboard', href: '/dashboard/' }],
+      plans: [{ label: '6-month plan', href: '/plans/6-months/' }, { label: '3-month plan', href: '/plans/3-months/' }]
+    },
+    soon: {
+      resources: [{ label: 'Practice Papers', href: '/papers/' }],
+      plans: [{ label: '3-month plan', href: '/plans/3-months/' }, { label: '1-month plan', href: '/plans/1-month/' }]
+    }
+  };
+  var state = { olympiad: null, start: null };
+  var buttons = document.querySelectorAll('.prep-picker-btn');
+  var resultBox = document.getElementById('prep-picker-result');
+  var resultLinks = document.getElementById('prep-picker-result-links');
+
+  function link(item) {
+    return '<a class="prep-picker-result-link" href="' + item.href + '">' + item.label + '</a>';
+  }
+
+  function render() {
+    if (!state.olympiad || !state.start) { resultBox.hidden = true; return; }
+    var parts = [];
+    parts.push(link(OLYMPIAD_LINKS[state.olympiad]));
+    var s = START_LINKS[state.start];
+    s.resources.forEach(function(r) { parts.push(link(r)); });
+    s.plans.forEach(function(p) { parts.push(link(p)); });
+    resultLinks.innerHTML = parts.join('');
+    resultBox.hidden = false;
+  }
+
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var q = btn.getAttribute('data-question');
+      var v = btn.getAttribute('data-value');
+      state[q] = v;
+      buttons.forEach(function(b) {
+        if (b.getAttribute('data-question') === q) b.classList.remove('is-active');
+      });
+      btn.classList.add('is-active');
+      render();
+    });
+  });
+})();
+</script>
 
 ## Choose your olympiad
 
@@ -86,6 +187,14 @@ This is the general preparation framework that applies regardless of which Biolo
     </div>
     <span class="olympiad-compact-arrow">&rarr;</span>
   </a>
+  <a href="/biobytes/testimonials/hungary-botond-silver/" class="olympiad-compact-card">
+    <div class="olympiad-compact-flag">🇭🇺</div>
+    <div class="olympiad-compact-body">
+      <h4>Hungary</h4>
+      <p>4-round IBOHUN selection, top 4 to IBO</p>
+    </div>
+    <span class="olympiad-compact-arrow">&rarr;</span>
+  </a>
 </div>
 
 Eligibility, dates, and registration details change year to year. Always check your olympiad's official site for current information. This guide covers preparation strategy, not administrative details.
@@ -103,11 +212,12 @@ Not everyone starts from the same place. Find where you fit:
 
 The IBO syllabus covers 15 sections. Later topics lean on earlier ones more than the reverse, so the order you study them in matters. Here's the recommended sequence with the reasoning:
 
-### Tier 1: The foundation (start here, always)
+<div class="prep-accordion-group" id="tier-accordions">
 
+{{< faq-item q="Tier 1: The foundation (start here, always)" open="true" >}}
 **1. Cell & Molecular Biology and Biochemistry** ([Section 1](/resources/1-cell-molecular/))
 
-Every other section assumes you understand cell structure, membrane transport, metabolic pathways, and basic biochemistry. Questions across all olympiads -- from ecology to evolution -- frequently require you to reason at the cellular and molecular level. If you don't understand how enzymes work, you can't reason about metabolic regulation. If you don't understand membrane transport, you can't understand renal physiology. This section is non-negotiable.
+Every other section assumes you understand cell structure, membrane transport, metabolic pathways, and basic biochemistry. Questions across all olympiads -- from ecology to evolution : frequently require you to reason at the cellular and molecular level. If you don't understand how enzymes work, you can't reason about metabolic regulation. If you don't understand membrane transport, you can't understand renal physiology. This section is non-negotiable.
 
 **Key subtopics:** cell organelles and their functions, enzyme kinetics (Michaelis-Menten, inhibition types), metabolic pathways (glycolysis, Krebs cycle, oxidative phosphorylation, photosynthesis), membrane transport (channels, carriers, active transport), cell signaling (G-protein coupled receptors, receptor tyrosine kinases, second messengers).
 
@@ -116,12 +226,12 @@ Every other section assumes you understand cell structure, membrane transport, m
 The second pillar. Genetics connects to physiology (how mutations cause disease), evolution (how populations change), and molecular biology (gene regulation, techniques). Olympiad genetics goes well beyond Mendelian inheritance into linkage mapping, epistasis, gene regulation, and molecular techniques.
 
 **Key subtopics:** Mendelian inheritance with extensions (epistasis, pleiotropy, incomplete dominance), linkage analysis and chromosomal mapping, gene regulation (prokaryotic and eukaryotic), molecular techniques (PCR, gel electrophoresis, restriction enzymes, CRISPR), pedigree analysis.
+{{< /faq-item >}}
 
-### Tier 2: The core systems
-
+{{< faq-item q="Tier 2: The core systems" >}}
 **3. Animal Physiology** ([Section 3](/resources/3-animal-physiology/))
 
-High-frequency at every olympiad. The depth expected varies -- NSEB tests organ system overviews, INBO/USABO Semifinal test mechanism-level detail, IBO tests integrative multi-system reasoning. Start with the overview, then deepen.
+High-frequency at every olympiad. The depth expected varies : NSEB tests organ system overviews, INBO/USABO Semifinal test mechanism-level detail, IBO tests integrative multi-system reasoning. Start with the overview, then deepen.
 
 **Key subtopics:** cardiovascular system (cardiac cycle, blood pressure regulation), renal physiology (nephron mechanics, countercurrent multiplication), nervous system (action potentials, synaptic transmission, sensory transduction), endocrine system (hormone-receptor mechanisms, feedback loops), immune system (innate vs adaptive, T-cell and B-cell activation, antibody structure).
 
@@ -138,9 +248,9 @@ Often underestimated by students with animal-heavy curricula. Plant physiology m
 **6. Plant Anatomy** ([Section 6](/resources/6-plant-anatomy/))
 
 Pairs with plant physiology. Root, stem, leaf cross-sections, vascular tissue, and secondary growth.
+{{< /faq-item >}}
 
-### Tier 3: Ecology, evolution, and behavior
-
+{{< faq-item q="Tier 3: Ecology, evolution, and behavior" >}}
 **7. Ecology** ([Section 8](/resources/8-ecology/))
 
 Reasonably independent of anatomy/physiology, but connects back to biochemistry (ecosystem energetics) and evolution. Tested at all levels.
@@ -154,9 +264,9 @@ Behavioral ecology, mating systems, foraging strategies, kin selection. Lower fr
 **9. Evolution** ([Section 15](/resources/15-evolution/))
 
 Ties together genetics, ecology, and systematics. Population genetics (Hardy-Weinberg, drift, selection) is quantitative and frequently tested.
+{{< /faq-item >}}
 
-### Tier 4: Specialized and practical
-
+{{< faq-item q="Tier 4: Specialized and practical" >}}
 **10. Bioinformatics** ([Section 10](/resources/10-bioinformatics/))
 
 Primarily an IBO practical station topic, but increasingly appearing in theory questions. BLAST, sequence alignment, phylogenetic tree construction.
@@ -164,6 +274,9 @@ Primarily an IBO practical station topic, but increasingly appearing in theory q
 **11-14. Practical sections** ([Sections 11-14](/resources/))
 
 Lab skills, microscopy, data analysis, computational biology. Most relevant for IBO and OCSC preparation.
+{{< /faq-item >}}
+
+</div>
 
 ## What to read
 
@@ -196,23 +309,24 @@ The full graded book list with detailed reviews lives on the [Study Resources pa
 
 ## How to actually study
 
-### Active recall over passive reading
+<div class="prep-accordion-group" id="study-technique-accordions">
 
-The single most effective study technique for olympiad biology is **active recall**: after reading a section, close the book and try to explain the key mechanisms from memory. If you can explain signal transduction from memory -- the receptor, the G-protein, the second messenger cascade, the cellular response -- you know it. If you can't, you've identified exactly what to re-read.
+{{< faq-item q="Active recall over passive reading" open="true" >}}
+The single most effective study technique for olympiad biology is **active recall**: after reading a section, close the book and try to explain the key mechanisms from memory. If you can explain signal transduction from memory : the receptor, the G-protein, the second messenger cascade, the cellular response : you know it. If you can't, you've identified exactly what to re-read.
 
 Passive reading (highlighting, re-reading, summarizing) feels productive but doesn't build the kind of retrieval-ready knowledge that exam conditions demand. You need to be able to pull facts and mechanisms out of your head under time pressure, not recognize them when you see them.
+{{< /faq-item >}}
 
-### Spaced practice
-
+{{< faq-item q="Spaced practice" >}}
 Don't study cell biology for a month, then move on and never look at it again. After finishing a section, schedule brief review sessions: a 15-minute self-quiz one week later, another two weeks after that. The forgetting curve is steep, but spaced reviews flatten it efficiently.
+{{< /faq-item >}}
 
-### Explain it to someone
+{{< faq-item q="Explain it to someone" >}}
+If you have a study partner or group, take turns explaining concepts to each other. If you're studying alone, explain to an imaginary student : out loud, not just in your head. The act of organizing knowledge into a coherent verbal explanation forces you to identify gaps in your understanding that passive review misses.
+{{< /faq-item >}}
 
-If you have a study partner or group, take turns explaining concepts to each other. If you're studying alone, explain to an imaginary student -- out loud, not just in your head. The act of organizing knowledge into a coherent verbal explanation forces you to identify gaps in your understanding that passive review misses.
-
-### Start past papers early
-
-Many students make the mistake of saving past papers for the final month, treating them as a test rather than a learning tool. Start attempting papers early -- even when you know you'll score poorly. The diagnostic value is enormous:
+{{< faq-item q="Start past papers early" >}}
+Many students make the mistake of saving past papers for the final month, treating them as a test rather than a learning tool. Start attempting papers early : even when you know you'll score poorly. The diagnostic value is enormous:
 
 - You learn what question formats actually look like
 - You discover which topics you're weaker on than you thought
@@ -220,6 +334,9 @@ Many students make the mistake of saving past papers for the final month, treati
 - You practice under time pressure
 
 Use [BiOrchive](/papers/) for past papers with interactive attempt mode, timed conditions, and automatic scoring. The [Question Bank](/papers/question-bank/) lets you filter by topic for targeted drilling.
+{{< /faq-item >}}
+
+</div>
 
 ## How deep do you need to go?
 
@@ -267,21 +384,35 @@ See the [full Study Plans page](/plans/) for detailed week-by-week breakdowns.
 ## Practice resources
 
 - **[BiOrchive](/papers/)**: past olympiad papers browsable by year and round, with solutions and an attempt mode that scores your work
-- **[Question Bank](/papers/question-bank/)**: every question in the archive in one searchable table -- filter by olympiad, year, topic, and difficulty to drill exactly what you're weak on
+- **[Question Bank](/papers/question-bank/)**: every question in the archive in one searchable table : filter by olympiad, year, topic, and difficulty to drill exactly what you're weak on
 - **[Study Dashboard](/dashboard/)**: if you've submitted timed attempts, the dashboard tracks your mastery across all topics, identifies weak areas, and generates personalized study recommendations
 - **[BiOBytes](/biobytes/)**: shorter-form exam-technique tips and lab guides
 
 ## Common mistakes across all olympiads
 
-**Breadth without depth.** Skimming many topics once is less effective than deeply understanding fewer topics. Olympiad questions rarely test isolated facts -- they test whether you can use knowledge flexibly in unfamiliar contexts. A student who truly understands signal transduction can answer novel questions about it; a student who memorized a list of signaling molecules will struggle.
+<div class="prep-accordion-group">
 
-**Ignoring plant biology.** This is universal across countries and olympiads. Students from animal-physiology-heavy curricula consistently underperform on plant questions. Plant physiology, plant anatomy, and plant-related practicals make up 25-30% of most IBOs and are well-represented at INBO and USABO.
+{{< faq-item q="Breadth without depth" >}}
+Skimming many topics once is less effective than deeply understanding fewer topics. Olympiad questions rarely test isolated facts : they test whether you can use knowledge flexibly in unfamiliar contexts. A student who truly understands signal transduction can answer novel questions about it; a student who memorized a list of signaling molecules will struggle.
+{{< /faq-item >}}
 
-**Saving past papers for last.** Past papers are a learning tool, not just an assessment tool. Start early, even if you score poorly. The diagnostic value -- learning what formats look like, discovering hidden weak spots, calibrating depth expectations -- is worth far more than preserving a "clean" paper for later.
+{{< faq-item q="Ignoring plant biology" >}}
+This is universal across countries and olympiads. Students from animal-physiology-heavy curricula consistently underperform on plant questions. Plant physiology, plant anatomy, and plant-related practicals make up 25-30% of most IBOs and are well-represented at INBO and USABO.
+{{< /faq-item >}}
 
-**Memorizing without understanding mechanisms.** At olympiad level, questions test *why* something happens, not just *what*. If you can't explain the mechanism behind a process, you don't know it well enough. "The Na+/K+ ATPase moves 3 Na+ out and 2 K+ in" is a fact. Understanding why this creates an electrochemical gradient, how that gradient drives secondary active transport, and what happens to cells when you inhibit the pump -- that's mechanism-level understanding.
+{{< faq-item q="Saving past papers for last" >}}
+Past papers are a learning tool, not just an assessment tool. Start early, even if you score poorly. The diagnostic value : learning what formats look like, discovering hidden weak spots, calibrating depth expectations : is worth far more than preserving a "clean" paper for later.
+{{< /faq-item >}}
 
-**Studying alone when groups are available.** Explaining a concept to a study partner is one of the best tests of understanding. If you can explain countercurrent multiplication to someone without looking at your notes, you know it. If you can't, you've identified exactly what to review.
+{{< faq-item q="Memorizing without understanding mechanisms" >}}
+At olympiad level, questions test *why* something happens, not just *what*. If you can't explain the mechanism behind a process, you don't know it well enough. "The Na+/K+ ATPase moves 3 Na+ out and 2 K+ in" is a fact. Understanding why this creates an electrochemical gradient, how that gradient drives secondary active transport, and what happens to cells when you inhibit the pump : that's mechanism-level understanding.
+{{< /faq-item >}}
+
+{{< faq-item q="Studying alone when groups are available" >}}
+Explaining a concept to a study partner is one of the best tests of understanding. If you can explain countercurrent multiplication to someone without looking at your notes, you know it. If you can't, you've identified exactly what to review.
+{{< /faq-item >}}
+
+</div>
 
 ## Tracking your progress
 
@@ -292,7 +423,7 @@ If you've taken timed practice papers through BiOrchive and submitted to the lea
 - Generates ranked study recommendations based on your weak areas and the prerequisite graph
 - Shows section coverage so you can see which areas of the syllabus you haven't touched yet
 
-The dashboard works entirely from your practice data -- no manual input needed. The more papers you attempt, the more accurate its recommendations become.
+The dashboard works entirely from your practice data : no manual input needed. The more papers you attempt, the more accurate its recommendations become.
 
 </div>
 

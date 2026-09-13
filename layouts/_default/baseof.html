@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}" dir="{{ partial "utils/hugo-compat/language-direction.html" .Site.Language | default `ltr` }}">
   {{- partial "head.html" . -}}
-  <body class="{{ if .IsHome }}homepage-bg{{ end }}">
+  {{- /* papers-scope drives the papers-pages heading override in custom.css
+       (sans-serif instead of the sitewide serif/italic .content h1/h2/h3) --
+       excludes /leaderboard/ paths since that section is intentionally left
+       on the old styling for this redesign pass. Uses RelPermalink prefix
+       matching, not .Section -- .Section is empty for leaf-bundle pages
+       (index.md with no _index.md, e.g. every question and attempt page
+       here) per the existing note in layouts/partials/custom/head-end.html,
+       confirmed the same way here: papers-scope silently never applied to
+       question/attempt pages when this used eq .Section "papers" instead. */ -}}
+  <body class="{{ if .IsHome }}homepage-bg{{ end }}{{ if and (strings.HasPrefix .RelPermalink "/papers/") (not (in .RelPermalink "/leaderboard/")) }} papers-scope{{ end }}">
     {{ if strings.HasPrefix .RelPermalink "/bioclash/" }}<div class="bioclash-bg-layer" aria-hidden="true"></div>{{ else if ne .Section "papers" }}<div class="bioguide-bg-layer" aria-hidden="true"></div>{{ end }}
     <a href="#content" class="hx:sr-only hx:focus-visible:not-sr-only hx:focus-visible:fixed hx:focus-visible:z-50 hx:focus-visible:top-2 hx:focus-visible:left-2 hx:focus-visible:bg-primary-500 hx:focus-visible:text-white hx:focus-visible:px-4 hx:focus-visible:py-2 hx:focus-visible:rounded-md hx:focus-visible:text-sm hx:focus-visible:font-medium">
       {{- (T "skipToContent") | default "Skip to content" -}}

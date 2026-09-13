@@ -171,23 +171,30 @@ theme = "hextra"
       icon = "heart"
 
   [[menu.main]]
+    name = "Biology Olympiad Preparation"
+    url = "/biology-olympiad-preparation/"
+    weight = 12
+    [menu.main.params]
+      icon = "globe"
+
+  [[menu.main]]
     name = "Discord"
     url = "https://discord.gg/jQ7sfcCs4"
-    weight = 12
+    weight = 13
     [menu.main.params]
       icon = "discord"
 
   [[menu.main]]
     name = "GitHub"
     url = "https://github.com/nk-008120/boguide"
-    weight = 13
+    weight = 14
     [menu.main.params]
       icon = "github"
 
   [[menu.main]]
     name = "Instagram"
     url = "https://www.instagram.com/bioguideofficial/"
-    weight = 14
+    weight = 15
     [menu.main.params]
       icon = "instagram"
 [params]

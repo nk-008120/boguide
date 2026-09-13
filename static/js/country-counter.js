@@ -6,7 +6,7 @@
     var reachEl = document.getElementById('community-reach');
     if (!heroEl && !reachEl) return;
 
-    fetch('/data/country-stats.json')
+    fetch('/api/country-stats')
       .then(function (res) {
         if (!res.ok) return null;
         return res.json();

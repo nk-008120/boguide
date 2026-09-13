@@ -11,15 +11,15 @@ date: 2026-08-30
 <div class="testimonial-article">
 
 <div class="testimonial-author">
-  <img src="/TESTIMONIALPICS/slovakia-daniel-bronze.jpg" alt="Daniel Jediný" class="testimonial-author-photo">
+  <img src="/TESTIMONIALPICS/daniel-slovakia-bronze.png" alt="Daniel Jediný" class="testimonial-author-photo" onerror="this.onerror=null;this.src='/avatars/avatar-01.svg';">
   <div class="testimonial-author-info">
     <h3>Daniel Jediný</h3>
     <div class="testimonial-author-tagline">🥉 IBO 2026 Bronze Medallist &middot; Slovakia 🇸🇰</div>
-    <p class="testimonial-author-bio">Daniel is an IBO 2026 bronze medallist from Slovakia and a student at Univerzita Komenského v Bratislave (Comenius University) -- the same university that hosts Slovakia's national IBO selection camp. Connect with him on <a href="https://www.linkedin.com/in/daniel-jedin%C3%BD-4b878942b/" target="_blank" rel="noreferrer">LinkedIn</a>.</p>
+    <p class="testimonial-author-bio">Daniel is an IBO 2026 bronze medallist from Slovakia and a student at Univerzita Komenského v Bratislave (Comenius University), the same university that hosts Slovakia's national IBO selection camp. Connect with him on <a href="https://www.linkedin.com/in/daniel-jedin%C3%BD-4b878942b/" target="_blank" rel="noreferrer">LinkedIn</a>.</p>
   </div>
 </div>
 
-## Slovakia's Biology Olympiad -- it only gets easier
+## Slovakia's Biology Olympiad: it only gets easier
 
 <div class="testimonial-quote-block">
 <p>"As one of the founding countries of IBO, Slovakia's national Bio Olympiad still keeps close to what one might expect on an international level. Except... not really. Whilst you can expect the national round to feel somewhat similar, the Slovak biology Olympiad consist of three rounds, starting as a purely knowledge-based competition, that keeps slowly transforming into something closer to the IBO. It starts to reward logical thinking over just remembering information, which is ever more true for the selection camp."</p>
@@ -35,14 +35,14 @@ Daniel's account lines up with how Slovakia's Ministry of Education, Science, Re
 <thead><tr><th>Round</th><th>Timing</th><th>Format</th></tr></thead>
 <tbody>
 <tr><td>School</td><td>February</td><td>Knowledge-based theory, school-level entry point</td></tr>
-<tr><td>Regional</td><td>March</td><td>Theory (multiple choice and short answer) plus two practical tasks per student -- dissection, physiological, or biochemical experiments</td></tr>
+<tr><td>Regional</td><td>March</td><td>Theory (multiple choice and short answer) plus two practical tasks per student: dissection, physiological, or biochemical experiments</td></tr>
 <tr><td>National</td><td>April</td><td>Same format as regional, at higher difficulty; roughly 300-350 students reach this stage</td></tr>
 </tbody>
 </table>
 
-From there, the top 10-12 students from the national round enter two selection weeks -- one theory-focused, one practical -- held at Slovak universities, typically Comenius University in Bratislava (where Daniel now studies) or the Slovak University of Agriculture in Nitra. The best six -- four competitors and two backups -- are selected to represent Slovakia. This is the stage Daniel describes as rewarding "logical thinking over just remembering information": it is a genuinely different kind of test from the school round that starts the whole process.
+From there, the top 10-12 students from the national round enter two selection weeks (one theory-focused, one practical) held at Slovak universities, typically Comenius University in Bratislava (where Daniel now studies) or the Slovak University of Agriculture in Nitra. The best six, four competitors and two backups, are selected to represent Slovakia. This is the stage Daniel describes as rewarding "logical thinking over just remembering information": it is a genuinely different kind of test from the school round that starts the whole process.
 
-*Sources: [IBO country profile -- Biologická Olympiáda, Slovakia](https://www.ibo-info.org/en/countries/nbo/sk-biologicka-olympiada-31.html).*
+*Sources: [IBO country profile, Biologická Olympiáda, Slovakia](https://www.ibo-info.org/en/countries/nbo/sk-biologicka-olympiada-31.html).*
 
 ## IBO prep and BiOGuide, in his own words
 
@@ -68,14 +68,14 @@ From there, the top 10-12 students from the national round enter two selection w
 
 Daniel's three points map onto specific things BiOGuide is built to do:
 
-- His "large library of precisely such sources" is **Notes @ BiOGuide** -- topic pages written to be detailed enough for IBO-level prep without sprawling into needless hyperspecialization, organised so a student can find the exact concept they need rather than hunting across scattered sources.
+- His "large library of precisely such sources" is **Notes @ BiOGuide**: topic pages written to be detailed enough for IBO-level prep without sprawling into needless hyperspecialization, organised so a student can find the exact concept they need rather than hunting across scattered sources.
 
-- Not wasting time on the wrong topics is what the **Study Dashboard** is for -- after a timed attempt, it builds a subject-by-subject mastery breakdown and ranks what to study next, so effort goes toward genuinely weak areas rather than whatever topic happens to catch your attention.
+- Not wasting time on the wrong topics is what the **Study Dashboard** is for: after a timed attempt, it builds a subject-by-subject mastery breakdown and ranks what to study next, so effort goes toward genuinely weak areas rather than whatever topic happens to catch your attention.
 
-- "Practice, practice, practice" is **BiOrchive**, the archive of past IBO papers, and the **Question Bank** underneath it -- every question carries the topics it draws on, so practice can be targeted at exactly the kind of contextual, apply-the-information thinking Daniel describes IBO actually testing.
+- "Practice, practice, practice" is **BiOrchive**, the archive of past IBO papers, and the **Question Bank** underneath it: every question carries the topics it draws on, so practice can be targeted at exactly the kind of contextual, apply-the-information thinking Daniel describes IBO actually testing.
 
 ---
 
-*This article preserves Daniel's own words, shared and published with his consent. If you competed in a Biology Olympiad and want to share your story, reach out to us -- we would love to hear from you.*
+*This article preserves Daniel's own words, shared and published with his consent. If you competed in a Biology Olympiad and want to share your story, reach out to us; we would love to hear from you.*
 
 </div>

@@ -50,6 +50,8 @@
                                         // is too small to see or click reliably on its own, so we
                                         // add a centroid marker dot for it.
 
+  var FORCE_MARKER_CODES = { HU: true };
+
   function highlightCountries(svg) {
     var keys = Object.keys(programmeData);
     for (var i = 0; i < keys.length; i++) {
@@ -88,7 +90,7 @@
       return; // element not rendered/measurable yet
     }
     if (!bbox || bbox.width <= 0 || bbox.height <= 0) return;
-    if (Math.max(bbox.width, bbox.height) >= SMALL_COUNTRY_MAX_DIMENSION) return;
+    if (Math.max(bbox.width, bbox.height) >= SMALL_COUNTRY_MAX_DIMENSION && !FORCE_MARKER_CODES[code]) return;
 
     var cx = bbox.x + bbox.width / 2;
     var cy = bbox.y + bbox.height / 2;

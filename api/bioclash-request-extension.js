@@ -1,5 +1,5 @@
 const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
-const { loadPaper } = require('./_lib/bioclash');
+const { loadPaper, extensionPenalty, rateLimit } = require('./_lib/bioclash');
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
@@ -21,6 +21,11 @@ module.exports = async (req, res) => {
       return;
     }
     const userId = userData.user.id;
+
+    if (rateLimit(userId, 'request-extension', 5, 60000)) {
+      res.status(429).json({ error: 'Too many requests' });
+      return;
+    }
 
     const { paperId, sessionToken } = req.body || {};
     const paper = loadPaper(paperId);
@@ -65,17 +70,18 @@ module.exports = async (req, res) => {
 
     const newEndAt = new Date(new Date(attempt.end_at).getTime() + blockMinutes * 60000).toISOString();
     const newBlocksUsed = attempt.extension_blocks_used + 1;
+    const penalty = extensionPenalty(paper, newBlocksUsed);
 
     const { data: updated, error: updateError } = await admin
       .from('bioclash_attempts')
-      .update({ end_at: newEndAt, extension_blocks_used: newBlocksUsed })
+      .update({ end_at: newEndAt, extension_blocks_used: newBlocksUsed, extension_penalty: penalty })
       .eq('id', attempt.id)
       .eq('extension_blocks_used', attempt.extension_blocks_used)
-      .select('end_at, extension_blocks_used')
+      .select('end_at, extension_blocks_used, extension_penalty')
       .maybeSingle();
     if (updateError) throw updateError;
     if (!updated) {
-      res.status(409).json({ error: 'Could not grant extension — try again.' });
+      res.status(409).json({ error: 'Could not grant extension. Try again.' });
       return;
     }
 
@@ -83,6 +89,7 @@ module.exports = async (req, res) => {
       ok: true,
       endAt: updated.end_at,
       extensionBlocksUsed: updated.extension_blocks_used,
+      extensionPenalty: updated.extension_penalty,
       maxExtensionBlocks: maxBlocks
     });
   } catch (err) {

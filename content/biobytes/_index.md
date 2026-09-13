@@ -39,6 +39,13 @@ cascade:
 {{< /tab >}}
 {{< tab name="Testimonials" >}}
 <div class="testimonial-cards">
+  <a href="/biobytes/testimonials/hungary-botond-silver/" class="card testimonial-card">
+    <div class="card-icon">🇭🇺</div>
+    <h3>From Hungary to IBO Silver</h3>
+    <p class="testimonial-pullquote">"Just study with enthusiasm, enjoy what you do, and work hard, because it will pay off."</p>
+    <div class="testimonial-meta">Botond &middot; IBO 2026 Silver Medallist</div>
+    <span class="btn-outline">Read His Story &rarr;</span>
+  </a>
   <a href="/biobytes/testimonials/belgium-ibo-bronze/" class="card testimonial-card">
     <div class="card-icon">🇧🇪</div>
     <h3>From Belgium to IBO Bronze</h3>

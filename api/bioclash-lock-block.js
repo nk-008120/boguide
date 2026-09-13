@@ -1,5 +1,5 @@
 const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
-const { loadPaper, findBlock, toClientBlock, blocksRevealedByLock } = require('./_lib/bioclash');
+const { loadPaper, findBlock, toClientBlock, blocksRevealedByLock, rateLimit } = require('./_lib/bioclash');
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
@@ -22,6 +22,11 @@ module.exports = async (req, res) => {
     }
     const userId = userData.user.id;
 
+    if (rateLimit(userId, 'lock-block', 15, 60000)) {
+      res.status(429).json({ error: 'Too many requests' });
+      return;
+    }
+
     const { paperId, blockId, componentAnswers, fullscreenExits, visibilityLosses, sessionToken } = req.body || {};
     const paper = loadPaper(paperId);
     if (!paper) {
@@ -34,7 +39,7 @@ module.exports = async (req, res) => {
       return;
     }
     if (!paperBlock.locksAfterSubmit) {
-      res.status(400).json({ error: 'This block is recoverable — use save-draft instead.' });
+      res.status(400).json({ error: 'This block is recoverable. Use save-draft instead.' });
       return;
     }
     if (!componentAnswers || typeof componentAnswers !== 'object') {

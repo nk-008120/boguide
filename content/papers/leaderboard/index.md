@@ -5,7 +5,7 @@ layout: "wide"
 
 <aside class="hextra-sidebar-container" hidden></aside>
 
-<div id="bioclash-leaderboard-root" class="bioclash-page bioclash-leaderboard-page">
+<div id="bioclash-leaderboard-root" class="bioclash-page bioclash-leaderboard-page" data-bioclash-force-dark="bioclash-leaderboard-active">
 <div class="bioclash-leaderboard-bg" aria-hidden="true"></div>
 
 <div class="bioclash-case-header">
@@ -75,4 +75,4 @@ Prefer to see rankings for one specific test? Each round has its own leaderboard
 
 </div>
 
-<script src="/js/bioclash-leaderboard-theme.js" defer></script>
+<script src="/js/bioclash-force-dark.js" defer></script>

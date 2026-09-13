@@ -35,12 +35,47 @@
   "functions": {
     "api/submit-attempt.js": {
       "includeFiles": "data/papers/**"
+    },
+    "api/bioclash-cleanup.js": {
+      "includeFiles": "data/bioclash/**"
+    },
+    "api/bioclash-start-attempt.js": {
+      "includeFiles": "data/bioclash/**"
+    },
+    "api/bioclash-attempt-state.js": {
+      "includeFiles": "data/bioclash/**"
+    },
+    "api/bioclash-submit-attempt.js": {
+      "includeFiles": "data/bioclash/**"
+    },
+    "api/bioclash-save-draft.js": {
+      "includeFiles": "data/bioclash/**"
+    },
+    "api/bioclash-lock-block.js": {
+      "includeFiles": "data/bioclash/**"
+    },
+    "api/bioclash-request-extension.js": {
+      "includeFiles": "data/bioclash/**"
+    },
+    "api/bioclash-export-grades.js": {
+      "includeFiles": "data/bioclash/**"
+    },
+    "api/bioclash-finalize-round.js": {
+      "includeFiles": "data/bioclash/**"
     }
   },
   "crons": [
     {
       "path": "/api/keepalive",
       "schedule": "0 6 * * *"
+    },
+    {
+      "path": "/api/sync-country-stats",
+      "schedule": "0 5 * * *"
+    },
+    {
+      "path": "/api/bioclash-cleanup",
+      "schedule": "*/15 * * * *"
     }
   ]
 }

@@ -38,4 +38,4 @@ Here you will find the growing archive of translated Biology Olympiad papers fro
 
 ---
 
-Have papers to contribute, translated or otherwise? Email them to [resourcerepository4boguide@gmail.com](mailto:resourcerepository4boguide@gmail.com).
+Have a paper to contribute, spotted a mistake, or want to share your own solution to a question? Visit the **[Contribute](contribute/)** page — everything goes to a staff review queue first. You can also email papers directly to [resourcerepository4boguide@gmail.com](mailto:resourcerepository4boguide@gmail.com).

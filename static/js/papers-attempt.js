@@ -103,10 +103,6 @@
   }
 
   function gradableStatements(p) {
-    // free_response has no single checkable answer (the source exam gives a
-    // descriptive model answer, not a value to grade against) -- excluded
-    // from every count/score/progress calculation, same as papers-quiz.html's
-    // own gradableRows split.
     return p.statements.filter(function (s) { return (s.type || 'true_false') !== 'free_response'; });
   }
 
@@ -191,7 +187,7 @@
         toggleHTML =
           '<div class="tf-quiz-toggle tf-quiz-mcq" role="group" aria-label="Statement ' + s.letter + '">' +
           (s.options || []).map(function (opt) {
-            return '<button type="button" class="tf-btn tf-btn-mcq' + (sel === opt.key ? ' selected' : '') + '" data-value="' + escapeHTML(opt.key) + '">' + escapeHTML(opt.key) + ') ' + escapeHTML(opt.text) + '</button>';
+            return '<button type="button" class="tf-btn tf-btn-mcq' + (sel === opt.key ? ' selected' : '') + '" data-value="' + escapeHTML(opt.key) + '"><span class="tf-mcq-bubble">' + escapeHTML(opt.key) + '</span><span class="tf-mcq-text">' + escapeHTML(opt.text) + '</span></button>';
           }).join('') +
           '</div>';
       } else if (type === 'numeric') {

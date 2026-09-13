@@ -4,15 +4,6 @@
 (function () {
   'use strict';
 
-  var MASTERY_COLORS = {
-    mastered:   '#16a34a',
-    strong:     '#22c55e',
-    developing: '#f59e0b',
-    weak:       '#f97316',
-    critical:   '#dc2626',
-    untested:   '#9ca3af'
-  };
-
   var MASTERY_LABELS = {
     mastered: 'Mastered', strong: 'Strong', developing: 'Developing',
     weak: 'Weak', critical: 'Critical', untested: 'Untested'
@@ -30,6 +21,12 @@
     return fetch('/data/topic-graph.json')
       .then(function (res) { return res.ok ? res.json() : []; })
       .catch(function () { return []; });
+  }
+
+  function loadRoundsCatalog() {
+    var el = document.getElementById('papers-rounds-data');
+    if (!el) return [];
+    try { return JSON.parse(el.textContent) || []; } catch (e) { return []; }
   }
 
   function showScreen(id) {
@@ -59,8 +56,8 @@
     var dotY = h - pad - (lastAcc - minV) / (maxV - minV) * (h - 2 * pad);
     var dotX = w - pad;
     return '<svg class="dashboard-sparkline" width="' + w + '" height="' + h + '" viewBox="0 0 ' + w + ' ' + h + '">' +
-      '<polyline points="' + points.join(' ') + '" fill="none" stroke="#8965c4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>' +
-      '<circle cx="' + Math.round(dotX * 10) / 10 + '" cy="' + Math.round(dotY * 10) / 10 + '" r="2" fill="#8965c4"/>' +
+      '<polyline points="' + points.join(' ') + '" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>' +
+      '<circle cx="' + Math.round(dotX * 10) / 10 + '" cy="' + Math.round(dotY * 10) / 10 + '" r="2" fill="currentColor"/>' +
       '</svg>';
   }
 
@@ -113,9 +110,15 @@
     el.innerHTML = '<div class="dashboard-stat-grid">' + cards + '</div>';
   }
 
-  function renderRecommendations(recs) {
+  function renderRecommendations(recs, client, userId) {
     var el = document.getElementById('dashboard-recs');
     if (!el) return;
+
+    var stateByLink = {};
+    recs.forEach(function (r) {
+      if (r.subjectLink) stateByLink[r.subjectLink] = r.reviewState || null;
+    });
+
     el.innerHTML = recs.map(function (r) {
       var toneClass = 'attempt-rec-' + (r.tone || 'neutral');
       var linkHTML = '';
@@ -123,12 +126,46 @@
         linkHTML = '<a class="papers-subject-tag" href="' + escapeHTML(r.link) + '">' +
           escapeHTML(r.linkLabel) + '</a>';
       }
+      var reviewHTML = '';
+      if (r.bucket === 'revisit' && r.subjectLink && client && userId) {
+        reviewHTML = '<div class="dashboard-review-actions" data-subject-link="' + escapeHTML(r.subjectLink) + '" data-subject-name="' + escapeHTML(r.subjectName || '') + '">' +
+          '<button type="button" class="papers-nav-btn" data-quality="0">Again</button>' +
+          '<button type="button" class="papers-nav-btn" data-quality="3">Hard</button>' +
+          '<button type="button" class="papers-nav-btn" data-quality="4">Good</button>' +
+          '<button type="button" class="papers-nav-btn papers-nav-next" data-quality="5">Easy</button>' +
+          '</div>';
+      }
       return '<div class="attempt-rec-card ' + toneClass + '">' +
         '<h4>' + escapeHTML(r.title) + '</h4>' +
         '<p>' + escapeHTML(r.body) + '</p>' +
         (linkHTML ? '<div style="margin-top:0.5rem;">' + linkHTML + '</div>' : '') +
+        reviewHTML +
         '</div>';
     }).join('');
+
+    if (!client || !userId) return;
+
+    el.querySelectorAll('.dashboard-review-actions').forEach(function (actions) {
+      actions.querySelectorAll('[data-quality]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var subjectLink = actions.getAttribute('data-subject-link');
+          var subjectName = actions.getAttribute('data-subject-name');
+          var quality = parseInt(btn.getAttribute('data-quality'), 10);
+          var currentState = stateByLink[subjectLink] || null;
+          actions.querySelectorAll('button').forEach(function (b) { b.disabled = true; });
+          BioKnowledge.recordManualReview(client, userId, subjectLink, subjectName, quality, currentState)
+            .then(function (updated) {
+              var card = actions.closest('.attempt-rec-card');
+              if (!card) return;
+              card.innerHTML = '<h4>' + escapeHTML(subjectName) + '</h4>' +
+                '<p>Reviewed. Next due in ' + updated.interval_days + ' day' + (updated.interval_days === 1 ? '' : 's') + '.</p>';
+            })
+            .catch(function () {
+              actions.querySelectorAll('button').forEach(function (b) { b.disabled = false; });
+            });
+        });
+      });
+    });
   }
 
   function renderSubjects(subjects, topicGraph) {
@@ -137,6 +174,7 @@
 
     var sectionGroups = {};
     var sectionOrder = [];
+    var placedKeys = {};
 
     (topicGraph || []).forEach(function (t) {
       var subj = subjects[t.slug];
@@ -147,23 +185,16 @@
         sectionOrder.push(sec);
       }
       sectionGroups[sec].items.push(subj);
+      placedKeys[t.slug] = true;
     });
 
     Object.keys(subjects).forEach(function (key) {
-      var subj = subjects[key];
-      var found = false;
-      sectionOrder.forEach(function (sec) {
-        sectionGroups[sec].items.forEach(function (s) {
-          if (s.link === subj.link) found = true;
-        });
-      });
-      if (!found) {
-        if (!sectionGroups['_other']) {
-          sectionGroups['_other'] = { title: 'Other Subjects', items: [] };
-          sectionOrder.push('_other');
-        }
-        sectionGroups['_other'].items.push(subj);
+      if (placedKeys[key]) return;
+      if (!sectionGroups['_other']) {
+        sectionGroups['_other'] = { title: 'Other Subjects', items: [] };
+        sectionOrder.push('_other');
       }
+      sectionGroups['_other'].items.push(subjects[key]);
     });
 
     var html = '';
@@ -180,17 +211,17 @@
       group.items.forEach(function (s) {
         var pct = Math.round(s.weightedAccuracy * 100);
         var barWidth = Math.max(2, pct);
-        var color = MASTERY_COLORS[s.masteryLevel] || MASTERY_COLORS.untested;
+        var masteryClass = 'dashboard-mastery-' + (MASTERY_LABELS[s.masteryLevel] ? s.masteryLevel : 'untested');
         var trend = TREND_ARROWS[s.trend] || '';
         var spark = sparklineSVG(s.accuracyHistory, 50, 16);
         html += '<div class="dashboard-subject-row">';
         html += '<a href="' + escapeHTML(s.link) + '" class="dashboard-subject-name">' + escapeHTML(s.name) + '</a>';
-        html += '<span class="dashboard-mastery-badge" style="background:' + color + ';">' +
+        html += '<span class="dashboard-mastery-badge ' + masteryClass + '">' +
           (MASTERY_LABELS[s.masteryLevel] || s.masteryLevel) + '</span>';
         html += '<span class="dashboard-trend">' + trend + '</span>';
         if (spark) html += spark;
         html += '<div class="attempt-subject-bar-track" style="flex:1;">' +
-          '<div class="attempt-subject-bar' + (pct < 40 ? ' weak' : '') + '" style="width:' + barWidth + '%;background:' + color + ';"></div></div>';
+          '<div class="attempt-subject-bar ' + masteryClass + '" style="width:' + barWidth + '%;"></div></div>';
         html += '<span class="attempt-subject-pct">' + pct + '%</span>';
         html += '</div>';
       });
@@ -237,12 +268,12 @@
       html += '<div class="dashboard-section-topics" style="display:none;">';
       if (c.topics && c.topics.length) {
         c.topics.forEach(function (t) {
-          var tColor = MASTERY_COLORS[t.masteryLevel] || MASTERY_COLORS.untested;
+          var tMasteryClass = 'dashboard-mastery-' + (MASTERY_LABELS[t.masteryLevel] ? t.masteryLevel : 'untested');
           var tLabel = MASTERY_LABELS[t.masteryLevel] || 'Untested';
           var tPct = Math.round(t.masteryScore * 100);
           html += '<div class="dashboard-topic-item">';
           html += '<a href="' + escapeHTML(t.slug) + '" class="dashboard-topic-link">' + escapeHTML(t.title) + '</a>';
-          html += '<span class="dashboard-mastery-badge dashboard-mastery-sm" style="background:' + tColor + ';">' + tLabel;
+          html += '<span class="dashboard-mastery-badge dashboard-mastery-sm ' + tMasteryClass + '">' + tLabel;
           if (t.tested) html += ' ' + tPct + '%';
           html += '</span>';
           html += '</div>';
@@ -345,15 +376,15 @@
     var readiness = BioKnowledge.computeReadiness(profile, topicGraph, target);
 
     var pct = readiness.readinessPct;
-    var color = pct >= 60 ? '#16a34a' : pct >= 35 ? '#f59e0b' : '#dc2626';
+    var tone = pct >= 60 ? 'good' : pct >= 35 ? 'medium' : 'poor';
 
     var html = '<div class="dashboard-readiness-card">';
     html += '<div class="dashboard-readiness-header">';
     html += '<span class="dashboard-readiness-target">' + escapeHTML(readiness.target) + ' Readiness</span>';
-    html += '<span class="dashboard-readiness-pct" style="color:' + color + ';">' + pct + '%</span>';
+    html += '<span class="dashboard-readiness-pct ' + tone + '">' + pct + '%</span>';
     html += '</div>';
-    html += '<div class="attempt-subject-bar-track" style="height:8px;">';
-    html += '<div class="attempt-subject-bar" style="width:' + Math.max(2, pct) + '%;background:' + color + ';height:8px;"></div>';
+    html += '<div class="dashboard-readiness-bar-track">';
+    html += '<div class="dashboard-readiness-bar ' + tone + '" style="width:' + Math.max(2, pct) + '%;"></div>';
     html += '</div>';
     html += '<div class="dashboard-readiness-detail">';
     html += readiness.coveredTopics + ' of ' + readiness.relevantTopics + ' relevant topics covered (' + readiness.coveragePct + '%)';
@@ -368,7 +399,7 @@
     var el = document.getElementById('dashboard-next-paper');
     if (!el) return;
 
-    var suggestion = BioKnowledge.suggestNextPaper(profile, attempts);
+    var suggestion = BioKnowledge.suggestNextPaper(profile, attempts, loadRoundsCatalog());
     if (!suggestion) {
       el.innerHTML = '';
       return;
@@ -493,22 +524,25 @@
         }
 
         var profile = BioKnowledge.buildProfile(attempts, topicGraph);
-        var recs = BioKnowledge.generateRecommendations(profile, topicGraph, userProfile);
 
-        try { BioKnowledge.saveProfileCache(userId, profile); } catch (e) {}
+        BioKnowledge.syncReviewSchedule(client, userId, profile).then(function (reviewStates) {
+          var recs = BioKnowledge.generateRecommendations(profile, topicGraph, userProfile, reviewStates);
 
-        renderHeader(userProfile, profile.overall);
-        renderSummary(userProfile, profile.overall);
-        renderReadiness(profile, topicGraph, userProfile);
-        renderRecommendations(recs);
-        renderNextPaper(profile, attempts);
-        renderStudyPlanLink(profile);
-        renderSubjects(profile.subjects, topicGraph);
-        renderSections(profile.sectionCoverage);
-        renderRecent(attempts);
-        renderStreak(attempts);
-        renderCopySummary(profile, profile.overall);
-        showScreen('dashboard-content');
+          try { BioKnowledge.saveProfileCache(userId, profile); } catch (e) {}
+
+          renderHeader(userProfile, profile.overall);
+          renderSummary(userProfile, profile.overall);
+          renderReadiness(profile, topicGraph, userProfile);
+          renderRecommendations(recs, client, userId);
+          renderNextPaper(profile, attempts);
+          renderStudyPlanLink(profile);
+          renderSubjects(profile.subjects, topicGraph);
+          renderSections(profile.sectionCoverage);
+          renderRecent(attempts);
+          renderStreak(attempts);
+          renderCopySummary(profile, profile.overall);
+          showScreen('dashboard-content');
+        });
       }).catch(function (err) {
         console.error('[dashboard] load error:', err);
         showScreen('dashboard-no-data');
