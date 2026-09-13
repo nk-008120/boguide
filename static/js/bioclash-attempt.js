@@ -904,10 +904,12 @@
             block.answer = answers;
 
             var firstNewBlockId = null;
+            var insertAt = state.blocks.indexOf(block) + 1;
             (result.body.revealedBlocks || []).forEach(function (revealed) {
               var already = state.blocks.some(function (b) { return b.id === revealed.id; });
               if (already) return;
-              state.blocks.push(revealed);
+              state.blocks.splice(insertAt, 0, revealed);
+              insertAt++;
               if (firstNewBlockId === null) firstNewBlockId = revealed.id;
             });
 

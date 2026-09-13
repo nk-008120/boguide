@@ -1,9 +1,9 @@
 id: mb-01
 title: "Case File MB-01 — Molecular Biology & Biochemistry"
 season: mb-01
-accessMode: open
-durationMinutes: 240
-totalMarks: 165
+accessMode: allowlist
+durationMinutes: 90
+totalMarks: 159
 
 extensionBlockMinutes: 30
 maxExtensionBlocks: 3
