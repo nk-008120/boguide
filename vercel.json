@@ -36,7 +36,7 @@
     "api/submit-attempt.js": {
       "includeFiles": "data/papers/**"
     },
-    "api/bioclash-cleanup.js": {
+    "api/bioclash-admin.js": {
       "includeFiles": "data/bioclash/**"
     },
     "api/bioclash-start-attempt.js": {
@@ -56,21 +56,11 @@
     },
     "api/bioclash-request-extension.js": {
       "includeFiles": "data/bioclash/**"
-    },
-    "api/bioclash-export-grades.js": {
-      "includeFiles": "data/bioclash/**"
-    },
-    "api/bioclash-finalize-round.js": {
-      "includeFiles": "data/bioclash/**"
     }
   },
   "crons": [
     {
-      "path": "/api/keepalive",
-      "schedule": "0 6 * * *"
-    },
-    {
-      "path": "/api/sync-country-stats",
+      "path": "/api/daily-cron",
       "schedule": "0 5 * * *"
     }
   ]

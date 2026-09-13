@@ -27,13 +27,38 @@ module.exports = async (req, res) => {
       return;
     }
 
-    const { paperId, sessionToken, reachedFinalPage } = req.body || {};
+    const { paperId, sessionToken, reachedFinalPage, event } = req.body || {};
     if (!paperId || !sessionToken) {
       res.status(400).json({ error: 'paperId and sessionToken are required' });
       return;
     }
 
     const admin = getAdminClient();
+
+    if (event === 'tab_close') {
+      const { data: attempt, error: attemptError } = await admin
+        .from('bioclash_attempts')
+        .select('id, tab_close_events')
+        .eq('user_id', userId)
+        .eq('paper_id', paperId)
+        .eq('active_session_token', sessionToken)
+        .eq('status', 'in_progress')
+        .maybeSingle();
+      if (attemptError) throw attemptError;
+
+      if (!attempt) {
+        res.status(200).json({ ok: true, logged: false });
+        return;
+      }
+
+      await admin
+        .from('bioclash_attempts')
+        .update({ tab_close_events: (attempt.tab_close_events || 0) + 1 })
+        .eq('id', attempt.id);
+
+      res.status(200).json({ ok: true, logged: true });
+      return;
+    }
 
     const { data: attempt, error: attemptError } = await admin
       .from('bioclash_attempts')

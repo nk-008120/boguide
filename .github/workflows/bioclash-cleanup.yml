@@ -12,4 +12,4 @@ jobs:
       - name: Call cleanup endpoint
         run: |
           curl -sf -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
-            "https://bioguide.world/api/bioclash-cleanup"
+            "https://bioguide.world/api/bioclash-admin?action=cleanup"

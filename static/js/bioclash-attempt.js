@@ -1028,11 +1028,11 @@
   window.addEventListener('beforeunload', function (e) {
     if (state.sessionToken && state.accessToken && liveScreen && !liveScreen.hidden) {
       e.preventDefault();
-      fetch('/api/bioclash-log-tab-close', {
+      fetch('/api/bioclash-heartbeat', {
         method: 'POST',
         keepalive: true,
         headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + state.accessToken },
-        body: JSON.stringify({ paperId: PAPER_ID, sessionToken: state.sessionToken })
+        body: JSON.stringify({ paperId: PAPER_ID, sessionToken: state.sessionToken, event: 'tab_close' })
       });
     }
   });
