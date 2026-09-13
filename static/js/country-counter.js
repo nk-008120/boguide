@@ -13,25 +13,29 @@
       })
       .then(function (data) {
         if (!data || !data.totalCountries) return;
-        if (heroEl) renderHeroCounter(heroEl, data.totalCountries);
-        if (reachEl) renderCommunityReach(data);
+        var totalViews = (data.countries || []).reduce(function (sum, c) {
+          return sum + (c.views || 0);
+        }, 0);
+        if (heroEl) renderHeroCounter(heroEl, totalViews, data.totalCountries);
+        if (reachEl) renderCommunityReach(data, totalViews);
       })
       .catch(function () {});
   }
 
-  function renderHeroCounter(el, total) {
+  function renderHeroCounter(el, totalViews, totalCountries) {
     var link = document.createElement('a');
     link.href = '/about/#community-reach';
     link.className = 'hero-country-badge';
 
-    function setText(n) {
-      link.innerHTML = '🌍 Students from <b>' + n + '</b> countries';
+    function setText(views, countries) {
+      link.innerHTML = '🌍 <b>' + formatWithCommas(views) + '</b> Students from <b>' +
+        countries + '</b> countries';
     }
 
     el.appendChild(link);
 
     if (document.hidden) {
-      setText(total);
+      setText(totalViews, totalCountries);
       return;
     }
     var duration = 1500;
@@ -40,19 +44,27 @@
       if (!start) start = timestamp;
       var progress = Math.min((timestamp - start) / duration, 1);
       var eased = 1 - Math.pow(1 - progress, 3);
-      setText(Math.floor(eased * total));
+      setText(Math.floor(eased * totalViews), Math.floor(eased * totalCountries));
       if (progress < 1) requestAnimationFrame(step);
-      else setText(total);
+      else setText(totalViews, totalCountries);
     }
     requestAnimationFrame(step);
   }
 
-  function renderCommunityReach(data) {
+  function renderCommunityReach(data, totalViews) {
     var heroDiv = document.getElementById('community-reach-hero');
     if (heroDiv) {
       heroDiv.innerHTML =
+        '<div class="reach-stats-row">' +
+        '<div class="reach-stat">' +
+        '<span class="reach-number">' + formatWithCommas(totalViews) + '</span>' +
+        '<span class="reach-label">student visits</span>' +
+        '</div>' +
+        '<div class="reach-stat">' +
         '<span class="reach-number">' + data.totalCountries + '</span>' +
-        '<span class="reach-label">countries use BiOGuide</span>';
+        '<span class="reach-label">countries reached</span>' +
+        '</div>' +
+        '</div>';
     }
 
     var gridDiv = document.getElementById('community-reach-grid');
@@ -76,9 +88,8 @@
     }
 
     var updatedEl = document.getElementById('community-reach-updated');
-    if (updatedEl && data.lastUpdated) {
-      updatedEl.textContent =
-        'Source: Umami Analytics · Last updated ' + data.lastUpdated;
+    if (updatedEl) {
+      updatedEl.textContent = 'Sourced live every day at 5 AM UTC from Umami Analytics';
     }
   }
 
@@ -91,6 +102,10 @@
   function formatNumber(n) {
     if (n >= 1000) return (n / 1000).toFixed(1).replace(/\.0$/, '') + 'k';
     return String(n);
+  }
+
+  function formatWithCommas(n) {
+    return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
   }
 
   if (document.readyState === 'loading') {

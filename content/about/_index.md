@@ -13,7 +13,7 @@ description: "Why we built BiOGuide, how content gets reviewed before publishing
         <span class="recent-update-date">Sep 13 2026</span>
         <span class="recent-update-contributor">Nishit Kalani</span>
       </div>
-      <p class="recent-update-text"><a href="/biobytes/testimonials/">Wired up community reach directly form Umami using APIs. Two new guide-testimonials from Hungary and Slovakia</a>, Doubts section added, <a href="/biology-olympiad-preparation/">BiO Prep page transformed</a>, heavy changes to BiOrchive css and redesign with re-population, BiOClash registration started and major changes to BiOClash working pipeline for smoother workflow and bug fixes.</p>
+      <p class="recent-update-text">Wired up community reach directly form Umami using APIs.<a href="/biobytes/testimonials/">Two new guide-testimonials from Hungary and Slovakia</a>, Doubts section added, <a href="/biology-olympiad-preparation/">BiO Prep page transformed</a>, heavy changes to BiOrchive css and redesign with re-population, BiOClash registration started and major changes to BiOClash working pipeline for smoother workflow and bug fixes.</p>
     </div>
   </div>
   <div class="recent-update-card recent-update-newest">

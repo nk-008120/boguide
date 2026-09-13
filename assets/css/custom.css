@@ -4277,6 +4277,13 @@ html.dark .community-reach-hero {
   background: linear-gradient(135deg, rgba(201, 183, 232, 0.1), rgba(157, 185, 154, 0.08));
   border-color: rgba(201, 183, 232, 0.25);
 }
+.reach-stats-row {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
 .reach-number {
   display: block;
   font-family: 'Fraunces', serif;
@@ -4356,6 +4363,9 @@ html.dark .community-reach-updated {
 @media (max-width: 640px) {
   .reach-number {
     font-size: 2.5rem;
+  }
+  .reach-stats-row {
+    gap: 1.5rem;
   }
   .community-reach-grid {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
