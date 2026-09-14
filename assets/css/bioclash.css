@@ -931,6 +931,7 @@ body.bioclash-round-leaderboard-active .hextra-theme-toggle {
 }
 
 #bioclash-attempt-start,
+#bioclash-attempt-ready,
 #bioclash-attempt-live,
 #bioclash-attempt-report {
   position: relative;
@@ -944,17 +945,20 @@ body.bioclash-round-leaderboard-active .hextra-theme-toggle {
   color: var(--bc-ink) !important;
 }
 html.dark #bioclash-attempt-start,
+html.dark #bioclash-attempt-ready,
 html.dark #bioclash-attempt-live,
 html.dark #bioclash-attempt-report {
   background: #1c1814;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
 }
 #bioclash-attempt-start *,
+#bioclash-attempt-ready *,
 #bioclash-attempt-live *,
 #bioclash-attempt-report * {
   color: inherit;
 }
 #bioclash-attempt-start h1,
+#bioclash-attempt-ready h1,
 #bioclash-attempt-report h2 {
   color: var(--bc-gold) !important;
 }
