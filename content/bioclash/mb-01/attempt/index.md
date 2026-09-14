@@ -57,15 +57,14 @@ sitemap:
         </label></li>
         <li><label class="bioclash-directive-item">
           <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-video">
-          <span><strong>PARTICIPANTS MUST RECORD THEMSELVES via their device's front camera for there entire
+          <span><strong>PARTICIPANTS SHOULD RECORD THEMSELVES via their device's front camera for there entire
           attempt</strong>, and upload that recording, along with a scan or clear photo of your
           scratch paper, after they submit, to the link provided on the results screen. Name your
-          video <strong>[USERNAMEATBIOGUIDE_MB-01].mp4</strong> (or your device's native video
-          extension - .mov, .webm, etc. are fine) and your scratch paper
+          video <strong>[USERNAMEATBIOGUIDE_MB-01].mp4</strong>and your scratch papers used
           <strong>[USERNAMEATBIOGUIDE_MB-01].pdf</strong> - replace USERNAMEATBIOGUIDE with your
-          actual BiOGuide account username, keeping the rest of the filename exactly as shown.
-          Please understand results are only verified once both have been reviewed. A lot of
-          effort goes behind this. ALL VIDEOS ARE DELETED IN 5 WORKING DAYS OF SUBMISSION!
+          actual BiOGuide account username, keeping the rest of the filename exactly as shown.<br>
+          Results are only verified once both have been reviewed. Unverified results may be published but entirely at BiOGuide's discretion.<br>
+          ALL VIDEOS ARE DELETED IN 5 WORKING DAYS OF SUBMISSION!
           BiOGuide takes full resposibility of student privacy!!!</span>
         </label></li>
         <li><label class="bioclash-directive-item">
@@ -102,6 +101,31 @@ sitemap:
     </label>
     <button type="button" id="bioclash-attempt-start-btn" class="papers-nav-btn papers-nav-next" disabled>Start Attempt</button>
     <p id="bioclash-attempt-start-status"></p>
+  </section>
+
+  <section id="bioclash-attempt-ready" hidden>
+    <h1>Before you begin</h1>
+    <p class="bioclash-nonrecoverable-banner">⚠ Your timer and fullscreen mode start the moment you
+    click "Begin Attempt" below - not before. Take a moment now to get set up.</p>
+    <div class="bioclash-attempt-directives">
+      <ul class="bioclash-directive-list">
+        <li><label class="bioclash-directive-item">
+          <span><strong>Start your front-camera recording now</strong>, before clicking "Begin
+          Attempt" - not after.</span>
+        </label></li>
+        <li><label class="bioclash-directive-item">
+          <span><strong>Clear your desk.</strong> Keep only scratch paper and a pen or pencil
+          within reach - nothing else.</span>
+        </label></li>
+        <li><label class="bioclash-directive-item">
+          <span><strong>Respect exam integrity</strong> for the entire duration of your attempt,
+          exactly as affirmed in the honor code you just confirmed.</span>
+        </label></li>
+      </ul>
+    </div>
+    <button type="button" id="bioclash-attempt-ready-back-btn" class="papers-nav-btn">← Back</button>
+    <button type="button" id="bioclash-attempt-ready-btn" class="papers-nav-btn papers-nav-next">I'm Recording - Begin Attempt</button>
+    <p id="bioclash-attempt-ready-status"></p>
   </section>
 
   <section id="bioclash-attempt-live" hidden>

@@ -35,10 +35,14 @@
   new MutationObserver(forceDark).observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
 
   var startScreen = document.getElementById('bioclash-attempt-start');
+  var readyScreen = document.getElementById('bioclash-attempt-ready');
   var liveScreen = document.getElementById('bioclash-attempt-live');
   var reportScreen = document.getElementById('bioclash-attempt-report');
   var startBtn = document.getElementById('bioclash-attempt-start-btn');
   var startStatus = document.getElementById('bioclash-attempt-start-status');
+  var readyBtn = document.getElementById('bioclash-attempt-ready-btn');
+  var readyBackBtn = document.getElementById('bioclash-attempt-ready-back-btn');
+  var readyStatus = document.getElementById('bioclash-attempt-ready-status');
   var honorCodeCheckbox = document.getElementById('bioclash-attempt-honor-code');
   var directiveCheckboxes = Array.prototype.slice.call(document.querySelectorAll('.bioclash-directive-checkbox'));
   var timerEl = document.getElementById('bioclash-attempt-timer');
@@ -168,7 +172,7 @@
   }
 
   function showScreen(el) {
-    [startScreen, liveScreen, reportScreen].forEach(function (s) { if (s) s.hidden = (s !== el); });
+    [startScreen, readyScreen, liveScreen, reportScreen].forEach(function (s) { if (s) s.hidden = (s !== el); });
   }
 
   function formatDuration(ms) {
@@ -1018,13 +1022,23 @@
         if (startStatus) startStatus.textContent = 'Please confirm every item above before starting.';
         return;
       }
+      showScreen(readyScreen);
+    });
+  }
+
+  if (readyBackBtn) {
+    readyBackBtn.addEventListener('click', function () { showScreen(startScreen); });
+  }
+
+  if (readyBtn) {
+    readyBtn.addEventListener('click', function () {
       withSession(function () {
-        startBtn.disabled = true;
+        readyBtn.disabled = true;
         enterFullscreen();
         apiPost('/api/bioclash-start-attempt', { paperId: PAPER_ID }).then(function (result) {
-          startBtn.disabled = false;
+          readyBtn.disabled = false;
           if (!result.ok) {
-            if (startStatus) startStatus.textContent = result.body.error || 'Could not start.';
+            if (readyStatus) readyStatus.textContent = result.body.error || 'Could not start.';
             return;
           }
           renderState(result.body);
