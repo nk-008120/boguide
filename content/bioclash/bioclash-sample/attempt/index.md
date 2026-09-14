@@ -19,7 +19,7 @@ sitemap:
   </div>
 
   <section id="bioclash-attempt-start">
-    <h1>Case File MB-01 - Molecular Biology &amp; Biochemistry</h1>
+    <h1>Case File SAMPLE: Animal Physiology &amp; Biochemistry</h1>
     <p>Please confirm login status and READ CAREFULLY before proceeding.</p>
     <p class="bioclash-nonrecoverable-banner">⚠ Once you start, do not switch away from,
     minimize, or leave this tab in the background for extended periods. Doing so can, in

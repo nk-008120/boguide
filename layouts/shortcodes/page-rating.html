@@ -1,0 +1,14 @@
+<div class="page-rating" data-page-path="{{ .Page.RelPermalink }}">
+  <div class="page-rating-row">
+    <div class="page-rating-stars">
+      <div class="page-rating-stars-empty" aria-hidden="true"></div>
+      <div class="page-rating-stars-fill" aria-hidden="true"></div>
+      <input type="range" class="page-rating-input" min="0.5" max="10" step="0.5" value="0" disabled aria-label="Rate this page out of 10 stars">
+    </div>
+    <span class="page-rating-avg">Loading ratings...</span>
+  </div>
+  <div class="page-rating-your" hidden>Your rating: <strong class="page-rating-your-value"></strong></div>
+  <div class="page-rating-login-cta" hidden>
+    <a class="page-rating-login-link" href="{{ "account/" | relURL }}">Log in to rate this page</a>
+  </div>
+</div>

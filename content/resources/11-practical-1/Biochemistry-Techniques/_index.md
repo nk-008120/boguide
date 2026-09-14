@@ -8,6 +8,7 @@ syllabus_tags: ["IBO", "practical", "biochemistry"]
 
 {{< topic-meta >}}
 {{< mathjax >}}
+{{< page-rating >}}
 
 <div class="article-gate-root" id="article-gate-root" data-next="/resources/11-practical-1/biochemistry-techniques/">
 

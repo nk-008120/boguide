@@ -1,5 +1,5 @@
 id: mb-01
-title: "Case File MB-01 — Molecular Biology & Biochemistry"
+title: "Case File MB-01: Molecular Biology & Biochemistry"
 season: mb-01
 accessMode: allowlist
 durationMinutes: 90
@@ -12,15 +12,15 @@ extensionBonusCeiling: 0.15
 
 parts:
   - id: part-a
-    name: "PART A — Reconstructing the Timeline"
+    name: "PART A: Reconstructing the Timeline"
     marks: 10
     intro: >
-      Mobius hands me a folder. Someone already solved this — civilians, no
+      Mobius hands me a folder. Someone already solved this: civilians, no
       idea they'd touched a Sacred Timeline question. We don't have their
       real case file. We have five reconstructions of how they got there.
       Four are not sacred. "This pick is non-recoverable," Mobius says,
       tapping a red seal on the folder. "Commit, and that's the file. No
-      backsies." Fine by me. I don't make mistakes — I recalibrate
+      backsies." Fine by me. I don't make mistakes; I recalibrate
       expectations.
     blocks:
       - id: part-a-lock
@@ -33,7 +33,7 @@ parts:
             marks: 2
             prompt: >
               Context: RNF43 and ZNRF3 are two closely related membrane-bound E3 ubiquitin ligases.
-              Both do the same basic job: they tag Frizzled (FZD) receptors — the primary receptors
+              Both do the same basic job - they tag Frizzled (FZD) receptors - the primary receptors
               for WNT ligands, which shuts down WNT signalling.
               RNF43/ZNRF3 are themselves induced by WNT/β-catenin signalling. Every cell surface is a
               timeline of its own, and two enforcers are tasked with keeping it clean: RNF43 and ZNRF3.
@@ -79,12 +79,12 @@ parts:
             promptTemplate: "State, in one sentence, the specific methodological flaw that rules out Workflow {option}."
 
   - id: part-da
-    name: "DATA ANALYSIS — The Agent's Desk"
+    name: "DATA ANALYSIS: The Agent's Desk"
     marks: 32
     intro: >
       2000 BCE. Desk of a Time Variance Authority agent, long before any of this was
       declassified into a case file. The agent is working the RNF43/ZNRF3 problem from a
-      different angle entirely — not "which workflow," but "what do the readouts actually
+      different angle entirely: not "which workflow," but "what do the readouts actually
       show." No confirmed timeline yet. No Workflow III. Just his own data, in front of
       him, and the question of whether he can trust what it's telling him. Below is an image showing
       the two main WNT/β-catenin signalling routes in the cell, with Frizzled (FZD) sitting
@@ -93,7 +93,7 @@ parts:
       - id: da-context1
         locksAfterSubmit: true
         reveals: da-context2a
-        label: "Context 1 — WNT/β-catenin Luciferase Reporter Assay"
+        label: "Context 1: WNT/β-catenin Luciferase Reporter Assay"
         lockWarning: "Once you proceed past this point, you cannot return and change your answers in this context."
         images:
           - src: "/MB-01PICS/signallingpath.png"
@@ -134,16 +134,16 @@ parts:
             options:
               - key: A
                 text: >
-                  Luminescence is directly proportional to WNT/β-catenin signalling activity —
+                  Luminescence is directly proportional to WNT/β-catenin signalling activity:
                   active β-catenin/TCF complexes drive reporter transcription, so more
                   signalling produces more light output.
               - key: B
                 text: >
-                  Luminescence is directly proportional to WNT/β-catenin signalling activity —
+                  Luminescence is directly proportional to WNT/β-catenin signalling activity:
                   active signalling represses the reporter promoter, so more signalling
                   produces more light output.
               - key: C
-                text: "Luminescence is inversely proportional to WNT/β-catenin signalling activity —
+                text: "Luminescence is inversely proportional to WNT/β-catenin signalling activity:
                   active signalling represses the reporter promoter, so more signalling
                   produces less light output."
               - key: D
@@ -152,7 +152,7 @@ parts:
       - id: da-context2a
         locksAfterSubmit: true
         reveals: da-context2b
-        label: "Context 2 — DVL2 Phosphorylation (I)"
+        label: "Context 2: DVL2 Phosphorylation (I)"
         lockWarning: "Once you proceed past this point, you cannot return and change your answers in this context."
         images:
           - src: "/MB-01PICS/supressiondata2.jpg"
@@ -207,12 +207,12 @@ parts:
       - id: da-context2b
         locksAfterSubmit: true
         reveals: da-context3
-        label: "Context 2 — DVL2 Phosphorylation (II)"
+        label: "Context 2: DVL2 Phosphorylation (II)"
         lockWarning: "Once you proceed past this point, you cannot return and change your answers in this context."
         images:
           - src: "/MB-01PICS/supressiondata2.jpg"
             caption: >
-              Same graph as the previous page — Analysis of DVL2 phosphorylation in WT and
+              Same graph as the previous page: Analysis of DVL2 phosphorylation in WT and
               R/ZdKO HEK293T cells, 3 h after stimulation with recombinant WNT3A or WNT5A
               and/or RSPO1-CM, all samples pretreated with porcupine inhibitor C59 (5 μM).
               p-DVL2:DVL2 band-density ratio, normalised to the C59 control. Representative
@@ -256,7 +256,7 @@ parts:
       - id: da-context3
         locksAfterSubmit: true
         reveals: [context-reveal, da-fzd-mystery]
-        label: "Context 3 — Rescue by Re-expression"
+        label: "Context 3: Rescue by Re-expression"
         lockWarning: "Once you proceed past this point, you cannot return and change your answers in this context."
         images:
           - src: "/MB-01PICS/supressiondata3.jpg"
@@ -320,7 +320,7 @@ parts:
       - id: da-fzd-mystery
         locksAfterSubmit: true
         revealsParts: [part-b, part-c, part-d, part-e, part-f]
-        label: "Data Analysis Question 2 — The FZD Mystery"
+        label: "Data Analysis Question 2: The FZD Mystery"
         lockWarning: "Once you proceed past this point, you cannot return and change your answers here."
         images:
           - src: "/MB-01PICS/context2.jpg"
@@ -335,7 +335,7 @@ parts:
             marks: 2
             prompt: >
               In Panel A, the "control" lanes (absence of ligases) show two distinct bands
-              for most FZDs — a slower-migrating upper band and a faster-migrating lower
+              for most FZDs; a slower-migrating upper band and a faster-migrating lower
               band. The upper band represents the mature (surface-trafficked, fully
               glycosylated) or immature (ER-retained, core-glycosylated) form, and the lower
               band represents the other. Write your answer as "upper = ___" and "lower = ___".
@@ -407,7 +407,7 @@ parts:
             tolerance: 0.5
 
   - id: part-b
-    name: "PART B — Reading the Aftermath"
+    name: "PART B: Reading the Aftermath"
     marks: 10
     intro: >
       The other four reconstructions grey out, agents of the TVA are sent to prune each branch.
@@ -417,7 +417,7 @@ parts:
         type: reveal_content
         content: >
           THE REST OF THE FILE. Two more pieces of the confirmed dataset, held back until now.
-          Read them yourself — nothing below states what they mean.
+          Read them yourself: nothing below states what they mean.
         images:
           - src: "/MB-01PICS/tissuetype-cropped.jpg"
             caption: >
@@ -460,10 +460,10 @@ parts:
             correctValue: true
 
   - id: part-c
-    name: "PART C — Under the Hood"
+    name: "PART C: Under the Hood"
     marks: 11
     intro: >
-      The Authority's field notes on the timeline were only partially declassified — some
+      The Authority's field notes on the timeline were only partially declassified: some
       entries were redacted before reaching me. Answer using your own knowledge of the
       underlying techniques.
     blocks:
@@ -471,7 +471,7 @@ parts:
         locksAfterSubmit: false
         label: "Q6–8"
         tables:
-          - title: "FIELD NOTES — PARTIALLY REDACTED BY THE AUTHORITY"
+          - title: "FIELD NOTES: PARTIALLY REDACTED BY THE AUTHORITY"
             headers: ["Step", "Note"]
             rows:
               - ["1", "Generate HEK293T cells with both RNF43 and ZNRF3 knocked out (via CRISPR) as a clean background."]
@@ -514,7 +514,7 @@ parts:
             type: free_text
             marks: 2
             prompt: >
-              Step 1 of the timeline — CRISPR knockout generation. Besides CRISPR-Cas9, name
+              Step 1 of the timeline: CRISPR knockout generation. Besides CRISPR-Cas9, name
               two other methods historically used to knock out or knock down a gene's
               function, and state one key difference between a "knockout" and a "knockdown".
           - key: q8b
@@ -558,11 +558,11 @@ parts:
             tolerance: 0.01
 
   - id: part-d
-    name: "PART D — The qPCR Variant"
+    name: "PART D: The qPCR Variant"
     marks: 23
     intro: >
       Before Reconstruction III's clones could be trusted, someone had to prove they were
-      actually clones — not just Variants of the same mistake wearing a different case
+      actually clones, not just Variants of the same mistake wearing a different case
       number. This is that paperwork.
     blocks:
       - id: q9-i
@@ -581,7 +581,7 @@ parts:
               Name the method used to quantify FZD5/FZD6 transcript levels in Workflow II.
       - id: q9-ii
         locksAfterSubmit: false
-        label: "Q9.ii — The Genotyping Problem"
+        label: "Q9.ii: The Genotyping Problem"
         tables:
           - title: "Scenario A–F (Figure 1)"
             headers: ["Scenario", "Description", "Expected PCR product(s)"]
@@ -646,22 +646,22 @@ parts:
             marks: 5
             prompt: >
               Cases 2 and 3 (see the table above) each fail to resolve orientation by this
-              method — but for two DIFFERENT underlying reasons. Identify the general
+              method, but for two DIFFERENT underlying reasons. Identify the general
               condition responsible in each case (one involving a, one involving y), and
               state it as a rule that would apply beyond just these two examples.
 
   - id: part-e
-    name: "PART E — Protein Under the Loom"
+    name: "PART E: Protein Under the Loom"
     marks: 45
     intro: >
-      Zoom far enough into anything on the Sacred Timeline and you reach the Loom — the
+      Zoom far enough into anything on the Sacred Timeline and you reach the Loom: the
       point where a single thread's structure is all that's left to argue about. Step 5 of
       the timeline (mapping RNF43's specificity to its transmembrane domain) touches five
       foundational areas of protein biochemistry. One thread at a time.
     blocks:
       - id: q10-1
         locksAfterSubmit: false
-        label: "Q10.1 — Amino Acids"
+        label: "Q10.1: Amino Acids"
         components:
           - key: category
             type: free_text
@@ -681,7 +681,7 @@ parts:
             tolerance: 0.5
       - id: q10-2
         locksAfterSubmit: false
-        label: "Q10.2 — Protein Folding"
+        label: "Q10.2: Protein Folding"
         images:
           - src: "/BIOCLASHPICS/mb01-fig3-ramachandran-plot.png"
             caption: "Figure 3. Ramachandran plot with points X, Y, Z."
@@ -725,7 +725,7 @@ parts:
               would differ from a typical (non-Gly, non-Pro) residue's, and briefly state why.
       - id: q10-3
         locksAfterSubmit: false
-        label: "Q10.3 — Protein Modifications"
+        label: "Q10.3: Protein Modifications"
         components:
           - key: e1e2e3
             type: free_text
@@ -745,10 +745,10 @@ parts:
       - id: q10-4a
         locksAfterSubmit: true
         reveals: q10-4-rest
-        label: "Q10.4 — Protein Function"
+        label: "Q10.4: Protein Function"
         lockWarning: "Once you proceed past this point, you cannot return and change your answer here."
         tables:
-          - title: "APPENDIX — Standard Genetic Code (RNA Codon Table, 5′→3′)"
+          - title: "APPENDIX: Standard Genetic Code (RNA Codon Table, 5′→3′)"
             headers: ["Codon", "AA", "Codon", "AA", "Codon", "AA", "Codon", "AA"]
             rows:
               - ["UUU Phe", "UCU Ser", "UAU Tyr", "UGU Cys"]
@@ -806,7 +806,7 @@ parts:
               - key: "1"
                 text: "Methionine, unlike cysteine, is a hydrophobic amino acid, so placing it at this position destabilises the RING domain's hydrophobic core."
               - key: "2"
-                text: "Although both are sulfur-containing, methionine's thioether sulfur cannot coordinate zinc the way cysteine's thiol does, and its longer side chain disrupts the tight packing of the zinc-binding cross-brace — so the fold, and function, are still compromised."
+                text: "Although both are sulfur-containing, methionine's thioether sulfur cannot coordinate zinc the way cysteine's thiol does, and its longer side chain disrupts the tight packing of the zinc-binding cross-brace: so the fold, and function, are still compromised."
               - key: "3"
                 text: "Methionine's side chain is longer than cysteine's, which increases local flexibility around the zinc-binding loop and thereby further stabilises it."
               - key: "4"
@@ -842,7 +842,7 @@ parts:
             imageRef: "/MB-01PICS/hillloki.png"
             prompt: >
               The graph above shows three theoretical RSPO–LGR5 occupancy curves sharing the
-              same K₀.₅ = 10 nM but different Hill coefficients — n=0.5 (a shallow,
+              same K₀.₅ = 10 nM but different Hill coefficients: n=0.5 (a shallow,
               gradually-rising, non-sigmoidal curve), n=1 (the classic hyperbolic
               Michaelis-Menten shape), and n=4 (a steep S-shaped sigmoidal curve, flat at low
               [RSPO] then rising sharply around [RSPO]=10nM). Explain why a higher Hill
@@ -850,7 +850,7 @@ parts:
               (ultrasensitive) rather than graded.
       - id: q10-5
         locksAfterSubmit: false
-        label: "Q10.5 — Enzyme Kinetics"
+        label: "Q10.5: Enzyme Kinetics"
         components:
           - key: velocities
             type: free_text
@@ -876,7 +876,7 @@ parts:
               concentration against FZD5 ubiquitination. The resulting Lineweaver-Burk plot is
               shown above: two straight lines sharing the EXACT SAME x-intercept, i.e.
               unchanged −1/Km, but with the inhibitor line's y-intercept noticeably HIGHER,
-              i.e. reduced Vmax — identify the type of inhibition, justifying your answer
+              i.e. reduced Vmax: identify the type of inhibition, justifying your answer
               using the intercepts.
           - key: distinguish-inhibition
             type: free_text
@@ -889,17 +889,17 @@ parts:
               single fixed inhibitor concentration?
 
   - id: part-f
-    name: "PART F — The Guide RNA Supply Chain"
+    name: "PART F: The Guide RNA Supply Chain"
     marks: 34
     intro: >
       Nothing gets pruned, replaced, or edited without a work order first. Before Step 1 of
       any of this could happen, somebody in Requisitions had to build the tool that makes
-      the cut — from choosing the right piece of the gene, to cloning it, to confirming the
+      the cut, from choosing the right piece of the gene, to cloning it, to confirming the
       clone, to assembling the final construct, to reading the gel it all comes out on.
     blocks:
       - id: q11
         locksAfterSubmit: false
-        label: "Q11 — The Right Piece of the Gene"
+        label: "Q11: The Right Piece of the Gene"
         components:
           - key: q11a
             type: mcq
@@ -936,7 +936,7 @@ parts:
             correctKey: "2"
       - id: q12
         locksAfterSubmit: false
-        label: "Q12 — Cloning the Cassette"
+        label: "Q12: Cloning the Cassette"
         tables:
           - title: "Cassette insert ends (double-stranded)"
             headers: ["End", "Sequence"]
@@ -973,13 +973,13 @@ parts:
             correctValue: false
       - id: q13
         locksAfterSubmit: false
-        label: "Q13 — Confirming the Clone"
+        label: "Q13: Confirming the Clone"
         tables:
           - title: "Empty vector B (3000 bp) vs. recombinant plasmid (3500 bp)"
             headers: ["Digestion", "Empty vector B (3000 bp)", "Recombinant plasmid (3500 bp)"]
             rows:
-              - ["BamHI alone", "3000 bp (1 site — linearised)", "3500 bp (1 site — linearised)"]
-              - ["BglII alone", "3000 bp (1 site — linearised)", "no cutting — remains circular"]
+              - ["BamHI alone", "3000 bp (1 site: linearised)", "3500 bp (1 site: linearised)"]
+              - ["BglII alone", "3000 bp (1 site: linearised)", "no cutting: remains circular"]
               - ["BamHI + BglII", "2000 bp + 1000 bp", "3500 bp (only BamHI cuts)"]
         images:
           - src: "/BIOCLASHPICS/mb01-fig4-plasmid-maps-gel.png"
@@ -990,11 +990,11 @@ parts:
             marks: 2
             prompt: >
               Empty vector B (3000 bp, circular) carries one BamHI site and, separately, one
-              BglII site elsewhere in its backbone — compatible-overhang enzymes (same 5′-GATC
+              BglII site elsewhere in its backbone: compatible-overhang enzymes (same 5′-GATC
               overhang), same as SalI/XhoI. The gRNA cassette (500 bp) was excised with BamHI
               and ligated into vector B linearised at its BglII site; a BamHI-cut end ligated
               to a BglII-cut end reconstitutes neither site, destroying both at that junction
-              — but any BamHI/BglII site elsewhere survives. Indicate TRUE or FALSE for each
+              ,but any BamHI/BglII site elsewhere survives. Indicate TRUE or FALSE for each
               statement below.
 
               F) BamHI digestion of the recombinant plasmid produces two DNA fragments.
@@ -1021,7 +1021,7 @@ parts:
             correctValue: true
       - id: q14
         locksAfterSubmit: false
-        label: "Q14 — Golden Gate Assembly"
+        label: "Q14: Golden Gate Assembly"
         images:
           - src: "/MB-01PICS/goldengate.png"
             caption: "The Golden Gate assembly described below, visualised: Vector + Spacer (S) + Scaffold (T), joined by their BsaI overhangs."
@@ -1034,9 +1034,9 @@ parts:
               tracrRNA Scaffold (T) into a vector backbone using BsaI (Type IIS, cuts outside
               its recognition sequence leaving a custom 4-nt overhang).
 
-              Overhangs after BsaI digestion: Vector — left end AACG, right end TTGC.
+              Overhangs after BsaI digestion: Vector: left end AACG, right end TTGC.
 
-              Spacer (S) — 5′ overhang AACG, 3′ overhang CCGA. Scaffold (T) — 5′ overhang
+              Spacer (S): 5′ overhang AACG, 3′ overhang CCGA. Scaffold (T): 5′ overhang
               CCGA, 3′ overhang TTGC.
 
               Each overhang pairs with only one other overhang.
@@ -1044,26 +1044,26 @@ parts:
               State TRUE if the candidate outcome below can be observed after BsaI + DNA
               ligase treatment, FALSE if it cannot.
 
-              (a) Vector — S (forward) — T (forward) — Vector.
+              (a) Vector - S (forward) - T (forward) - Vector.
             correctValue: true
           - key: q14b
             type: true_false
             marks: 2
-            prompt: "(b) Vector — T (forward) — S (forward) — Vector."
+            prompt: "(b) Vector- T (forward)- S (forward)- Vector."
             correctValue: false
           - key: q14c
             type: true_false
             marks: 2
-            prompt: "(c) Vector — S (reversed) — T (forward) — Vector."
+            prompt: "(c) Vector- S (reversed)- T (forward)- Vector."
             correctValue: false
           - key: q14d
             type: true_false
             marks: 2
-            prompt: "(d) Vector — S (forward) — T (reversed) — Vector."
+            prompt: "(d) Vector- S (forward)- T (reversed)- Vector."
             correctValue: false
       - id: q15
         locksAfterSubmit: false
-        label: "Q15 — Reading the Gel"
+        label: "Q15: Reading the Gel"
         components:
           - key: q15a
             type: mcq
@@ -1095,5 +1095,5 @@ parts:
             prompt: "Explain why the nicked and relaxed closed-circular forms are difficult to distinguish from one another on a standard single-dimension agarose gel, even though they are chemically distinct."
 
 appendix:
-  title: "APPENDIX — Standard Genetic Code (RNA Codon Table)"
+  title: "APPENDIX: Standard Genetic Code (RNA Codon Table)"
   note: "For reference in Q10.4A. Codons read 5′→3′."

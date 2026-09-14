@@ -48,6 +48,9 @@
 {{- if hasPrefix $path "/biology-olympiad-preparation/" -}}
 <script src="{{ "js/prep-guide-tour.js" | relURL }}" defer></script>
 {{- end -}}
+{{- if hasPrefix $path "/resources/" -}}
+<script src="{{ "js/page-rating.js" | relURL }}" defer></script>
+{{- end -}}
 <!-- Weight sets below are audited against actual usage in assets/css/custom.css
      (see the Phase-3 performance pass): Cormorant Garamond gains 300 (used at
      line ~2559 but was previously missing, silently font-matched); Fraunces

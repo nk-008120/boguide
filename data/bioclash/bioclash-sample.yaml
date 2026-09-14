@@ -1,5 +1,5 @@
 id: bioclash-sample
-title: "BiOClash Sample — Two Problems, Two Subjects"
+title: "BiOClash Sample: Two Problems, Two Subjects"
 season: sample
 accessMode: open
 durationMinutes: 30
@@ -12,7 +12,7 @@ extensionBonusCeiling: 0
 
 parts:
   - id: sample-1-commit
-    name: "SAMPLE 1 — Cell & Molecular Biology: The Heresy of Protein-Only Inheritance"
+    name: "SAMPLE 1: Cell & Molecular Biology: The Heresy of Protein-Only Inheritance"
     marks: 9
     intro: >
       Scrapie: a fatal, transmissible brain disease of sheep, spreads between animals like
@@ -54,7 +54,7 @@ parts:
               or does it require both? Justify your choice.
 
   - id: sample-1-reveal
-    name: "SAMPLE 1 — The Reveal"
+    name: "SAMPLE 1: The Reveal"
     marks: 0
     blocks:
       - id: s1-reveal1
@@ -65,7 +65,7 @@ parts:
           resistance-to-nuclease/sensitivity-to-protease pattern above predicts.
 
   - id: sample-1-followup
-    name: "SAMPLE 1 — Following the Mechanism"
+    name: "SAMPLE 1: Following the Mechanism"
     marks: 0
     blocks:
       - id: s1-q2q3
@@ -77,7 +77,7 @@ parts:
             prompt: >
               The accepted mechanism: a misfolded prion protein (PrPˢᶜ), on contact with a
               correctly-folded copy of the same protein (PrPᶜ), induces it to adopt the same
-              misfolded shape — a self-propagating chain reaction requiring no genetic
+              misfolded shape: a self-propagating chain reaction requiring no genetic
               material at all. Explain why this mechanism is significant.
             options:
               - key: A
@@ -100,7 +100,7 @@ parts:
               argument is or isn't correct.
 
   - id: sample-2-q0
-    name: "SAMPLE 2 — Animal Physiology: The Fish With No Red Blood"
+    name: "SAMPLE 2: Animal Physiology: The Fish With No Red Blood"
     marks: 10
     intro: >
       Antarctic icefish (family Channichthyidae) are the only known vertebrates with no red
@@ -119,19 +119,19 @@ parts:
             prompt: "State whether cold water holds more or less dissolved oxygen than warm water, and explain the chemical principle behind this."
 
   - id: sample-2-reveal1
-    name: "SAMPLE 2 — First Reveal"
+    name: "SAMPLE 2: First Reveal"
     marks: 0
     blocks:
       - id: s2-reveal1
         type: reveal_content
         content: >
           Cold water holds MORE dissolved oxygen. Gas solubility in a liquid generally
-          increases as temperature falls — dissolving a gas is exothermic, so lower
+          increases as temperature falls: dissolving a gas is exothermic, so lower
           temperatures favour it, and gas molecules already in solution have less kinetic
           energy to escape back out of it.
 
   - id: sample-2-q1
-    name: "SAMPLE 2 — Reading the Graph"
+    name: "SAMPLE 2: Reading the Graph"
     marks: 0
     blocks:
       - id: s2-q1
@@ -152,20 +152,20 @@ parts:
               P₅₀ marked on the graph, and the given fact.
 
   - id: sample-2-reveal2
-    name: "SAMPLE 2 — Second Reveal"
+    name: "SAMPLE 2: Second Reveal"
     marks: 0
     blocks:
       - id: s2-reveal2
         type: reveal_content
         content: >
-          Cold, oxygen-rich water — confirmed. The icefish curve is far below the
+          Cold, oxygen-rich water: confirmed. The icefish curve is far below the
           haemoglobin curve at every pO₂, so icefish blood only carries adequate oxygen when
           pO₂ itself is high, which requires cold, oxygen-rich water. In warm, oxygen-poor
           water, pO₂ would be too low for the dissolved-only curve to deliver sufficient
           oxygen at all.
 
   - id: sample-2-q2
-    name: "SAMPLE 2 — Closing the Gap"
+    name: "SAMPLE 2: Closing the Gap"
     marks: 0
     blocks:
       - id: s2-q2
@@ -177,12 +177,12 @@ parts:
             marks: 4
             prompt: >
               Even in cold, oxygen-rich water, the gap between the two curves on the graph
-              above is large — dissolved oxygen alone still falls well short of what a
+              above is large; dissolved oxygen alone still falls well short of what a
               typical fish carries via haemoglobin. Before being told what icefish actually
               evolved, predict which combination of THREE anatomical or physiological
               adaptations natural selection would most likely favour in an animal that has
               lost haemoglobin entirely, in order to close this gap. Select the combination,
-              then explain the physiological logic behind each part of it — do not just
+              then explain the physiological logic behind each part of it; do not just
               describe the adaptations, explain why each would help.
             options:
               - key: A
@@ -196,7 +196,7 @@ parts:
             correctKey: D
 
   - id: sample-2-reveal3
-    name: "SAMPLE 2 — Final Reveal"
+    name: "SAMPLE 2: Final Reveal"
     marks: 0
     blocks:
       - id: s2-reveal3

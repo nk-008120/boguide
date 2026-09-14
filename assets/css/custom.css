@@ -4606,3 +4606,90 @@ html.dark .site-tutorial-btn-ghost:hover {
     transform: translateY(-2px);
   }
 }
+
+.bioclash-registration-banner {
+  --brb-parchment: #F6F1E4;
+  --brb-crimson: #B3122E;
+  --brb-crimson-deep: #7A0E22;
+  --brb-gold: #C9971F;
+  position: relative;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.7rem 3rem 0.7rem 1.25rem;
+  background: linear-gradient(135deg, var(--brb-crimson) 0%, var(--brb-crimson-deep) 100%);
+  color: var(--brb-parchment);
+  border-bottom: 1px solid var(--brb-gold);
+  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  text-align: center;
+  flex-wrap: wrap;
+}
+html.dark .bioclash-registration-banner {
+  --brb-crimson: #E1596A;
+  --brb-crimson-deep: #B23347;
+  --brb-gold: #E3B54A;
+  --brb-parchment: #171410;
+}
+.bioclash-registration-banner[hidden] {
+  display: none;
+}
+body.bioclash-attempt-active .bioclash-registration-banner {
+  display: none !important;
+}
+.bioclash-registration-banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.bioclash-registration-banner-text {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+.bioclash-registration-banner-btn {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  background: var(--brb-gold);
+  color: var(--brb-crimson-deep);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.bioclash-registration-banner-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  color: var(--brb-crimson-deep);
+}
+.bioclash-registration-banner-close {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--brb-parchment);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  opacity: 0.85;
+}
+.bioclash-registration-banner-close:hover {
+  opacity: 1;
+}
+@media (max-width: 640px) {
+  .bioclash-registration-banner {
+    padding: 0.65rem 2.5rem 0.65rem 1rem;
+  }
+  .bioclash-registration-banner-text {
+    font-size: 0.85rem;
+  }
+}
