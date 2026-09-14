@@ -19,7 +19,7 @@ sitemap:
   </div>
 
   <section id="bioclash-attempt-start">
-    <h1>BiOClash Sample — Two Problems, One Taste of a Real Case File</h1>
+    <h1>Case File MB-01 - Molecular Biology &amp; Biochemistry</h1>
     <p>Please confirm login status and READ CAREFULLY before proceeding.</p>
     <p class="bioclash-nonrecoverable-banner">⚠ Once you start, do not switch away from,
     minimize, or leave this tab in the background for extended periods. Doing so can, in
@@ -33,7 +33,7 @@ sitemap:
           <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-wait">
           <span><strong>Locking, Next, and Submit all take a moment.</strong> After clicking
           "Lock &amp; Continue," "Next," or "Submit Attempt," wait a few seconds for it
-          to finish - these go through the server and can take 2–3 seconds. Do not click
+          to finish - these go through the server and can take 2–3 seconds.Do not click
           again or refresh while waiting; clicking repeatedly won't speed anything up and can
           cause problems.</span>
         </label></li>
@@ -45,27 +45,88 @@ sitemap:
         </label></li>
         <li><label class="bioclash-directive-item">
           <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-tab">
-          <span><strong>This is one continuous, one-tab attempt.</strong> Do not close this
+          <span><strong>This is one continuous, one-tab attempt.</strong>Do not close this
           tab, and do not open the attempt in a second tab or device - either may be logged
           and can interrupt your attempt and cause unwanted errors.</span>
         </label></li>
         <li><label class="bioclash-directive-item">
+          <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-extension">
+          <span><strong>Extra time has a cost, not a free grant.</strong> If offered, requesting
+          additional time affects my standardized ranking for this round - refer to the attatched document 
+          <a href="https://bioguide.world/scoringref.png">here</a>. This coefficient may change, but concept remains same.</span>
+        </label></li>
+        <li><label class="bioclash-directive-item">
+          <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-video">
+          <span><strong>PARTICIPANTS SHOULD RECORD THEMSELVES via their device's front camera for there entire
+          attempt</strong>, and upload that recording, along with a scan or clear photo of your
+          scratch paper, after they submit, to the link provided on the results screen. Name your
+          video <strong>[USERNAMEATBIOGUIDE_MB-01].mp4</strong>and your scratch papers used
+          <strong>[USERNAMEATBIOGUIDE_MB-01].pdf</strong> - replace USERNAMEATBIOGUIDE with your
+          actual BiOGuide account username, keeping the rest of the filename exactly as shown.<br>
+          Results are only verified once both have been reviewed. Unverified results may be published but entirely at BiOGuide's discretion.<br> 
+          ALL VIDEOS ARE DELETED IN 5 WORKING DAYS OF SUBMISSION!
+          BiOGuide takes full resposibility of student privacy!!!</span>
+        </label></li>
+        <li><label class="bioclash-directive-item">
+          <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-screenshots">
+          <span><strong>Screenshots and screen recording of any question content are
+          prohibited</strong> for the duration of your attempt. ATTEMPTING TO DO SO MAY RESULT IN ERRORS.</span>
+        </label></li>
+        <li><label class="bioclash-directive-item">
           <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-scoring">
-          <span><strong>This is a sample, not a scored round.</strong> There's no leaderboard
-          or ranking attached to this attempt - it exists purely so you can try the Case File
-          format (including the non-recoverable mechanic) before a real round.</span>
+          <span><strong>Your result is not a raw percentage.</strong> Scores are standardized
+          against everyone who took the same round, similar to how many real olympiads report
+          results. Do not worry about how hard the test is. Tilt your head up and solve! ENJOY!</span>
+        </label></li>
+        <li><label class="bioclash-directive-item">
+          <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-grading">
+          <span><strong>Grading takes time.</strong> Most of this paper is graded by hand - Kindly
+          understand your real result won't appear immediately after you submit. The counter at the end is meaningless and should not be taken into account. It is for other references of the creators.</span>
         </label></li>
       </ul>
     </div>
     <label class="bioclash-honor-code">
       <input type="checkbox" id="bioclash-attempt-honor-code">
-      <span>I confirm I am completing this sample independently - without assistance from
+      <span>I confirm I am completing this attempt independently - without assistance from
       another person or an AI tool, and without consulting outside notes or the internet
       beyond what this page provides. I will not close this browser tab at any point during
-      my attempt.</span>
+      my attempt - doing so may be logged and reviewed. Screenshots and screen recording of
+      any question content are prohibited for the duration of this attempt. I will record myself via my
+      device's front camera for the entire duration of this attempt, and will upload that
+      recording to the folder linked on the submission screen as soon as I finish. My
+      results will only be verified once that recording has been reviewed; BiOGuide may
+      still calculate a result without it, but whether an unverified result is announced or
+      considered at all is entirely at BiOGuide's discretion. I understand my attempt may be
+      disqualified if this affirmation turns out to be false.</span>
     </label>
-    <button type="button" id="bioclash-attempt-start-btn" class="papers-nav-btn papers-nav-next" disabled>Start Sample</button>
+    <button type="button" id="bioclash-attempt-start-btn" class="papers-nav-btn papers-nav-next" disabled>Start Attempt</button>
     <p id="bioclash-attempt-start-status"></p>
+  </section>
+
+  <section id="bioclash-attempt-ready" hidden>
+    <h1>Before you begin</h1>
+    <p class="bioclash-nonrecoverable-banner">⚠ Your timer and fullscreen mode start the moment you
+    click "Begin Attempt" below - not before. Take a moment now to get set up.</p>
+    <div class="bioclash-attempt-directives">
+      <ul class="bioclash-directive-list">
+        <li class="bioclash-directive-item">
+          <span><strong>Start your front-camera recording now</strong>, before clicking "Begin
+          Attempt" - not after.</span>
+        </li>
+        <li class="bioclash-directive-item">
+          <span><strong>Clear your desk.</strong> Keep only scratch paper and a pen or pencil
+          within reach - nothing else.</span>
+        </li>
+        <li class="bioclash-directive-item">
+          <span><strong>Respect exam integrity</strong> for the entire duration of your attempt,
+          exactly as affirmed in the honor code you just confirmed.</span>
+        </li>
+      </ul>
+    </div>
+    <p class="bioclash-ready-farewell">Best of luck. You have Miss Minutes' Blessing.</p>
+    <button type="button" id="bioclash-attempt-ready-back-btn" class="papers-nav-btn">← Back</button>
+    <button type="button" id="bioclash-attempt-ready-btn" class="papers-nav-btn papers-nav-next">I'm Recording - Begin Attempt</button>
+    <p id="bioclash-attempt-ready-status"></p>
   </section>
 
   <section id="bioclash-attempt-live" hidden>
