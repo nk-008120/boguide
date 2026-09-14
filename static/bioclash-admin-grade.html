@@ -1,0 +1,969 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>BiOClash Grading Console</title>
+<style>
+  :root {
+    --bg: #faf7f0;
+    --panel: #ffffff;
+    --panel-muted: #f0e9d8;
+    --border: #e0d6bc;
+    --border-strong: #c9b98d;
+    --fg: #2a2420;
+    --fg-muted: #756a55;
+    --primary: #6d4fa3;
+    --primary-strong: #5a3f8a;
+    --primary-tint: #ece3f7;
+    --accent: #5c7a58;
+    --accent-tint: #e3ebe0;
+    --danger: #a3423a;
+    --danger-tint: #f5e4e2;
+    --warn: #8a6512;
+    --warn-tint: #f5edd8;
+    --focus: #6d4fa3;
+    --code-bg: #2a2420;
+    --code-fg: #f0e9d8;
+    font-variant-numeric: tabular-nums;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17151d;
+      --panel: #1e1b28;
+      --panel-muted: #242032;
+      --border: #322c42;
+      --border-strong: #443c5c;
+      --fg: #ece8f2;
+      --fg-muted: #a89fc0;
+      --primary: #ab8fff;
+      --primary-strong: #c4adff;
+      --primary-tint: #2a2340;
+      --accent: #9db99a;
+      --accent-tint: #24302a;
+      --danger: #e0847a;
+      --danger-tint: #362221;
+      --warn: #e0b075;
+      --warn-tint: #332b1a;
+      --focus: #ab8fff;
+      --code-bg: #0f0d14;
+      --code-fg: #ece8f2;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17151d;
+    --panel: #1e1b28;
+    --panel-muted: #242032;
+    --border: #322c42;
+    --border-strong: #443c5c;
+    --fg: #ece8f2;
+    --fg-muted: #a89fc0;
+    --primary: #ab8fff;
+    --primary-strong: #c4adff;
+    --primary-tint: #2a2340;
+    --accent: #9db99a;
+    --accent-tint: #24302a;
+    --danger: #e0847a;
+    --danger-tint: #362221;
+    --warn: #e0b075;
+    --warn-tint: #332b1a;
+    --focus: #ab8fff;
+    --code-bg: #0f0d14;
+    --code-fg: #ece8f2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    font-size: 14px;
+  }
+  .topbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.85rem 1.25rem;
+    background: var(--panel);
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+  .topbar h1 {
+    font-size: 1.05rem;
+    margin: 0;
+    font-weight: 700;
+    color: var(--primary-strong);
+    white-space: nowrap;
+  }
+  .topbar .spacer { flex: 1; }
+  label.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: 0.72rem;
+    color: var(--fg-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  input, select, button, textarea {
+    font-family: inherit;
+    font-size: 0.85rem;
+  }
+  input[type="text"], input[type="password"], input[type="number"], select, textarea {
+    padding: 0.4rem 0.55rem;
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    background: var(--panel);
+    color: var(--fg);
+  }
+  input:focus, select:focus, button:focus-visible, textarea:focus {
+    outline: 2px solid var(--focus);
+    outline-offset: 1px;
+  }
+  button {
+    padding: 0.45rem 0.85rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-strong);
+    background: var(--panel);
+    color: var(--fg);
+    cursor: pointer;
+  }
+  button.primary { background: var(--primary); border-color: var(--primary-strong); color: #fff; }
+  button.primary:hover { background: var(--primary-strong); }
+  button.danger { background: var(--danger); border-color: var(--danger); color: #fff; }
+  button:disabled { opacity: 0.45; cursor: not-allowed; }
+  button:not(:disabled):hover { filter: brightness(1.05); }
+  button.small { padding: 0.25rem 0.55rem; font-size: 0.75rem; }
+  .status-msg { font-size: 0.8rem; color: var(--fg-muted); }
+  .status-msg.error { color: var(--danger); }
+
+  .data-panel {
+    padding: 0.85rem 1.25rem;
+    background: var(--panel-muted);
+    border-bottom: 1px solid var(--border);
+  }
+  .data-panel-row {
+    display: flex; align-items: flex-end; gap: 1rem; flex-wrap: wrap;
+  }
+  .data-panel textarea { width: 100%; min-height: 4.5rem; font-family: ui-monospace, Consolas, monospace; font-size: 0.78rem; }
+  .commands[hidden] { display: none; }
+  .commands { margin-top: 0.75rem; display: flex; flex-direction: column; gap: 0.6rem; }
+  .cmd-block { position: relative; }
+  .cmd-block .cmd-label { font-size: 0.72rem; color: var(--fg-muted); text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.2rem; }
+  .cmd-block pre {
+    background: var(--code-bg); color: var(--code-fg);
+    padding: 0.65rem 2.8rem 0.65rem 0.8rem;
+    border-radius: 6px; overflow-x: auto; margin: 0;
+    font-family: ui-monospace, Consolas, monospace; font-size: 0.78rem; white-space: pre-wrap; word-break: break-word;
+  }
+  .cmd-block .copy-cmd { position: absolute; top: 0.4rem; right: 0.4rem; }
+
+  .layout {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+  }
+  .sidebar {
+    border-right: 1px solid var(--border);
+    background: var(--panel);
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+  }
+  .sidebar-controls {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .sidebar-summary {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    color: var(--fg-muted);
+  }
+  .pill {
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    background: var(--panel-muted);
+    border: 1px solid var(--border);
+  }
+  .participant-list { overflow-y: auto; flex: 1; max-height: 75vh; }
+  .participant-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+  }
+  .participant-row:hover { background: var(--panel-muted); }
+  .participant-row.selected { background: var(--primary-tint); }
+  .participant-row .dot {
+    width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0;
+    background: var(--danger);
+  }
+  .participant-row.done .dot { background: var(--accent); }
+  .participant-row .p-info { min-width: 0; flex: 1; }
+  .participant-row .p-name {
+    font-weight: 600;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .participant-row .p-sub { font-size: 0.72rem; color: var(--fg-muted); }
+  .participant-row .p-progress { font-size: 0.72rem; color: var(--fg-muted); white-space: nowrap; }
+  .participant-row input[type="checkbox"] { flex-shrink: 0; }
+
+  .main { overflow-y: auto; padding: 1.25rem 1.5rem; }
+  .empty-state { color: var(--fg-muted); padding: 3rem 1rem; text-align: center; }
+  .p-header {
+    display: flex; justify-content: space-between; align-items: baseline;
+    flex-wrap: wrap; gap: 0.75rem;
+    padding-bottom: 0.85rem; margin-bottom: 1rem;
+    border-bottom: 2px solid var(--border-strong);
+  }
+  .p-header h2 { margin: 0; font-size: 1.15rem; }
+  .p-header .p-meta { font-size: 0.78rem; color: var(--fg-muted); }
+  .score-tally {
+    display: flex; gap: 1.25rem; font-size: 0.85rem;
+  }
+  .score-tally b { font-size: 1.05rem; color: var(--primary-strong); }
+
+  .component-card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.85rem 1rem;
+    margin-bottom: 0.75rem;
+  }
+  .component-card.manual { border-left: 3px solid var(--warn); }
+  .component-card.manual.graded { border-left: 3px solid var(--accent); }
+  .component-card.auto { border-left: 3px solid var(--border-strong); opacity: 0.75; }
+  .c-head {
+    display: flex; justify-content: space-between; align-items: center; gap: 0.75rem;
+    font-size: 0.78rem; color: var(--fg-muted); margin-bottom: 0.4rem;
+  }
+  .c-head .c-key { font-weight: 700; color: var(--fg); font-family: ui-monospace, Consolas, monospace; }
+  .c-body {
+    white-space: pre-wrap;
+    word-break: break-word;
+    background: var(--panel-muted);
+    border-radius: 6px;
+    padding: 0.6rem 0.7rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.88rem;
+  }
+  .c-body:empty::before { content: "(no answer submitted)"; color: var(--fg-muted); font-style: italic; }
+  .c-grade-row { display: flex; align-items: center; gap: 0.6rem; }
+  .c-grade-row input[type="number"] { width: 5.5rem; }
+  .c-grade-row .max { color: var(--fg-muted); font-size: 0.8rem; }
+  .auto-correct { font-size: 0.8rem; color: var(--fg-muted); }
+
+  .toggle-auto {
+    background: none; border: none; color: var(--primary); text-decoration: underline;
+    padding: 0; font-size: 0.8rem; cursor: pointer; margin-bottom: 0.75rem;
+  }
+  .auto-section[hidden] { display: none; }
+
+  .action-bar {
+    display: flex; gap: 0.5rem; flex-wrap: wrap;
+    margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+  }
+
+  .modal-backdrop {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.45);
+    display: flex; align-items: flex-start; justify-content: center;
+    padding: 3rem 1rem; overflow-y: auto; z-index: 10;
+  }
+  .modal-backdrop[hidden] { display: none; }
+  .modal {
+    background: var(--panel); border-radius: 10px; border: 1px solid var(--border);
+    max-width: 760px; width: 100%; padding: 1.25rem 1.5rem 1.5rem;
+  }
+  .modal h3 { margin-top: 0; }
+  .modal-fields { display: flex; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap; }
+  .modal-step { margin-top: 1.1rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+  .modal-step h4 { margin: 0 0 0.5rem; font-size: 0.85rem; }
+  table.results { width: 100%; border-collapse: collapse; font-size: 0.82rem; margin-top: 0.75rem; }
+  table.results th, table.results td {
+    text-align: left; padding: 0.4rem 0.55rem; border-bottom: 1px solid var(--border);
+  }
+  table.results th { color: var(--fg-muted); font-weight: 600; }
+  .confirm-box {
+    background: var(--danger-tint); border: 1px solid var(--danger);
+    border-radius: 8px; padding: 0.75rem 1rem; margin-top: 0.75rem; font-size: 0.85rem;
+  }
+  .confirm-box input[type="text"] { width: 100%; margin-top: 0.4rem; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <h1>BiOClash Grading Console</h1>
+  <label class="field">
+    Paper ID
+    <input type="text" id="paperIdInput" value="mb-01" style="width:7rem">
+  </label>
+  <label class="field">
+    Site URL
+    <input type="text" id="siteUrlInput" value="https://bioguide.world" style="width:13rem">
+  </label>
+  <button id="showExportCmdBtn">Show export command</button>
+  <span class="status-msg" id="statusMsg"></span>
+  <div class="spacer"></div>
+  <button id="themeToggle" title="Toggle theme">Theme</button>
+</div>
+
+<div class="data-panel">
+  <div class="commands" id="exportCommands" hidden></div>
+  <div class="data-panel-row">
+    <label class="field">Load export JSON file<input type="file" id="fileInput" accept="application/json,.json"></label>
+    <button id="showPasteBtn">Or paste JSON instead</button>
+  </div>
+  <div id="pasteArea" hidden style="margin-top:0.6rem">
+    <textarea id="pasteInput" placeholder="Paste the exported JSON here"></textarea>
+    <div style="margin-top:0.4rem"><button class="primary" id="pasteLoadBtn">Load pasted JSON</button></div>
+  </div>
+</div>
+
+<div class="layout">
+  <div class="sidebar">
+    <div class="sidebar-controls">
+      <input type="text" id="searchInput" placeholder="Search participants...">
+      <select id="sortSelect">
+        <option value="pending">Sort: pending first</option>
+        <option value="name">Sort: name</option>
+        <option value="submitted">Sort: submission time</option>
+      </select>
+      <div class="sidebar-summary" id="sidebarSummary"></div>
+    </div>
+    <div class="participant-list" id="participantList">
+      <div class="empty-state">Run the export command above (or paste/load its JSON output) to see participants.</div>
+    </div>
+  </div>
+
+  <div class="main" id="mainPanel">
+    <div class="empty-state">Select a participant from the left once attempts are loaded.</div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="finalizeModal" hidden>
+  <div class="modal">
+    <h3 id="finalizeModalTitle">Dry-run finalize</h3>
+    <div class="modal-fields">
+      <label class="field">Season year<input type="text" id="seasonYearInput" value="2026" style="width:8rem"></label>
+      <label class="field">Season weight<input type="number" id="seasonWeightInput" value="1" step="0.1" style="width:6rem"></label>
+    </div>
+    <div id="finalizeConfirmArea"></div>
+
+    <div class="modal-step">
+      <h4>1. Download the request</h4>
+      <button id="downloadRequestBtn">Download finalize-request.json</button>
+    </div>
+
+    <div class="modal-step">
+      <h4>2. Run this command</h4>
+      <div class="commands" id="finalizeCommands"></div>
+    </div>
+
+    <div class="modal-step">
+      <h4>3. Load the response back in</h4>
+      <div class="data-panel-row">
+        <label class="field">Response JSON file<input type="file" id="finalizeFileInput" accept="application/json,.json"></label>
+        <button id="finalizePasteToggle" class="small">Or paste instead</button>
+      </div>
+      <div id="finalizePasteArea" hidden style="margin-top:0.6rem">
+        <textarea id="finalizePasteInput" placeholder="Paste the response JSON here"></textarea>
+        <div style="margin-top:0.4rem"><button class="primary small" id="finalizePasteLoadBtn">Load response</button></div>
+      </div>
+      <div id="finalizeResultArea"></div>
+    </div>
+
+    <div class="action-bar">
+      <button id="finalizeCloseBtn">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  var state = {
+    paperId: 'mb-01',
+    exportData: null,
+    manualGrades: {},
+    reviewed: {},
+    selectedAttemptId: null,
+    showAutoGraded: false,
+    isRealFinalize: false
+  };
+
+  var el = {
+    paperIdInput: document.getElementById('paperIdInput'),
+    siteUrlInput: document.getElementById('siteUrlInput'),
+    showExportCmdBtn: document.getElementById('showExportCmdBtn'),
+    exportCommands: document.getElementById('exportCommands'),
+    fileInput: document.getElementById('fileInput'),
+    showPasteBtn: document.getElementById('showPasteBtn'),
+    pasteArea: document.getElementById('pasteArea'),
+    pasteInput: document.getElementById('pasteInput'),
+    pasteLoadBtn: document.getElementById('pasteLoadBtn'),
+    statusMsg: document.getElementById('statusMsg'),
+    searchInput: document.getElementById('searchInput'),
+    sortSelect: document.getElementById('sortSelect'),
+    sidebarSummary: document.getElementById('sidebarSummary'),
+    participantList: document.getElementById('participantList'),
+    mainPanel: document.getElementById('mainPanel'),
+    themeToggle: document.getElementById('themeToggle'),
+    finalizeModal: document.getElementById('finalizeModal'),
+    finalizeModalTitle: document.getElementById('finalizeModalTitle'),
+    seasonYearInput: document.getElementById('seasonYearInput'),
+    seasonWeightInput: document.getElementById('seasonWeightInput'),
+    finalizeConfirmArea: document.getElementById('finalizeConfirmArea'),
+    downloadRequestBtn: document.getElementById('downloadRequestBtn'),
+    finalizeCommands: document.getElementById('finalizeCommands'),
+    finalizeFileInput: document.getElementById('finalizeFileInput'),
+    finalizePasteToggle: document.getElementById('finalizePasteToggle'),
+    finalizePasteArea: document.getElementById('finalizePasteArea'),
+    finalizePasteInput: document.getElementById('finalizePasteInput'),
+    finalizePasteLoadBtn: document.getElementById('finalizePasteLoadBtn'),
+    finalizeResultArea: document.getElementById('finalizeResultArea'),
+    finalizeCloseBtn: document.getElementById('finalizeCloseBtn')
+  };
+
+  function gradesKey(paperId) { return 'bioclash-grades-' + paperId; }
+  function reviewedKey(paperId) { return 'bioclash-reviewed-' + paperId; }
+
+  function loadLocalState(paperId) {
+    try {
+      state.manualGrades = JSON.parse(localStorage.getItem(gradesKey(paperId)) || '{}');
+    } catch (e) { state.manualGrades = {}; }
+    try {
+      state.reviewed = JSON.parse(localStorage.getItem(reviewedKey(paperId)) || '{}');
+    } catch (e) { state.reviewed = {}; }
+  }
+  function saveGrades() {
+    localStorage.setItem(gradesKey(state.paperId), JSON.stringify(state.manualGrades));
+  }
+  function saveReviewed() {
+    localStorage.setItem(reviewedKey(state.paperId), JSON.stringify(state.reviewed));
+  }
+
+  var savedTheme = null;
+  try { savedTheme = localStorage.getItem('bioclash-grade-theme'); } catch (e) {}
+  if (savedTheme) document.documentElement.setAttribute('data-theme', savedTheme);
+  el.themeToggle.addEventListener('click', function () {
+    var current = document.documentElement.getAttribute('data-theme');
+    var next = current === 'dark' ? 'light' : (current === 'light' ? null : 'dark');
+    if (next) document.documentElement.setAttribute('data-theme', next);
+    else document.documentElement.removeAttribute('data-theme');
+    try {
+      if (next) localStorage.setItem('bioclash-grade-theme', next);
+      else localStorage.removeItem('bioclash-grade-theme');
+    } catch (e) {}
+  });
+
+  function setStatus(msg, isError) {
+    el.statusMsg.textContent = msg || '';
+    el.statusMsg.className = 'status-msg' + (isError ? ' error' : '');
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  function renderCommandBlock(container, label, text) {
+    var wrap = document.createElement('div');
+    wrap.className = 'cmd-block';
+    var lbl = document.createElement('div');
+    lbl.className = 'cmd-label';
+    lbl.textContent = label;
+    var pre = document.createElement('pre');
+    pre.textContent = text;
+    var copyBtn = document.createElement('button');
+    copyBtn.className = 'small copy-cmd';
+    copyBtn.textContent = 'Copy';
+    copyBtn.addEventListener('click', function () {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () {
+          copyBtn.textContent = 'Copied';
+          setTimeout(function () { copyBtn.textContent = 'Copy'; }, 1200);
+        });
+      }
+    });
+    wrap.appendChild(lbl);
+    wrap.appendChild(pre);
+    wrap.appendChild(copyBtn);
+    container.appendChild(wrap);
+  }
+
+  function exportCommands() {
+    var siteUrl = el.siteUrlInput.value.trim().replace(/\/$/, '');
+    var paperId = el.paperIdInput.value.trim();
+    var url = siteUrl + '/api/bioclash-admin?action=export-grades&paperId=' + encodeURIComponent(paperId);
+    var outFile = paperId + '-grades.json';
+    var bash =
+      'curl -s "' + url + '" \\\n' +
+      '  -H "Authorization: Bearer $CRON_SECRET" \\\n' +
+      '  -o ' + outFile;
+    var ps =
+      'curl.exe -s "' + url + '" `\n' +
+      '  -H "Authorization: Bearer $env:CRON_SECRET" `\n' +
+      '  -o ' + outFile;
+    return { bash: bash, ps: ps, outFile: outFile };
+  }
+
+  el.showExportCmdBtn.addEventListener('click', function () {
+    var cmds = exportCommands();
+    el.exportCommands.innerHTML = '';
+    renderCommandBlock(el.exportCommands, 'Bash / macOS / Linux', cmds.bash);
+    renderCommandBlock(el.exportCommands, 'Windows PowerShell', cmds.ps);
+    el.exportCommands.hidden = false;
+    setStatus('Run this, then load ' + cmds.outFile + ' below.');
+  });
+
+  el.showPasteBtn.addEventListener('click', function () {
+    el.pasteArea.hidden = !el.pasteArea.hidden;
+  });
+
+  function applyExportData(data) {
+    state.paperId = el.paperIdInput.value.trim() || data.paperId;
+    state.exportData = data;
+    state.selectedAttemptId = null;
+    loadLocalState(state.paperId);
+    setStatus(data.participants.length + ' participants loaded.');
+    renderSidebar();
+    renderMain();
+  }
+
+  el.fileInput.addEventListener('change', function () {
+    var file = el.fileInput.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function () {
+      try {
+        var data = JSON.parse(reader.result);
+        applyExportData(data);
+      } catch (e) {
+        setStatus('Could not parse that file as JSON: ' + e.message, true);
+      }
+    };
+    reader.onerror = function () { setStatus('Could not read that file.', true); };
+    reader.readAsText(file);
+  });
+
+  el.pasteLoadBtn.addEventListener('click', function () {
+    try {
+      var data = JSON.parse(el.pasteInput.value);
+      applyExportData(data);
+    } catch (e) {
+      setStatus('Could not parse pasted text as JSON: ' + e.message, true);
+    }
+  });
+
+  function manualComponentsFor(participant) {
+    return participant.components.filter(function (c) { return !c.autoGraded; });
+  }
+
+  function gradedCountFor(participant) {
+    var manual = manualComponentsFor(participant);
+    var g = state.manualGrades[participant.attemptId] || {};
+    var count = 0;
+    manual.forEach(function (c) {
+      if (g[c.key] !== undefined && g[c.key] !== null && g[c.key] !== '') count++;
+    });
+    return { graded: count, total: manual.length };
+  }
+
+  el.searchInput.addEventListener('input', renderSidebar);
+  el.sortSelect.addEventListener('change', renderSidebar);
+
+  function renderSidebar() {
+    if (!state.exportData) return;
+    var query = el.searchInput.value.trim().toLowerCase();
+    var sortMode = el.sortSelect.value;
+
+    var list = state.exportData.participants.slice();
+    if (query) {
+      list = list.filter(function (p) {
+        var name = (p.displayName || p.userId || '').toLowerCase();
+        return name.indexOf(query) !== -1;
+      });
+    }
+
+    list.forEach(function (p) { p._progress = gradedCountFor(p); });
+
+    if (sortMode === 'name') {
+      list.sort(function (a, b) { return (a.displayName || '').localeCompare(b.displayName || ''); });
+    } else if (sortMode === 'submitted') {
+      list.sort(function (a, b) { return new Date(a.submittedAt) - new Date(b.submittedAt); });
+    } else {
+      list.sort(function (a, b) {
+        var aDone = a._progress.total === 0 || a._progress.graded === a._progress.total;
+        var bDone = b._progress.total === 0 || b._progress.graded === b._progress.total;
+        if (aDone === bDone) return (a.displayName || '').localeCompare(b.displayName || '');
+        return aDone ? 1 : -1;
+      });
+    }
+
+    var totalDone = state.exportData.participants.filter(function (p) {
+      var pr = gradedCountFor(p);
+      return pr.total === 0 || pr.graded === pr.total;
+    }).length;
+    el.sidebarSummary.innerHTML =
+      '<span class="pill">' + totalDone + ' / ' + state.exportData.participants.length + ' fully graded</span>';
+
+    el.participantList.innerHTML = '';
+    if (list.length === 0) {
+      el.participantList.innerHTML = '<div class="empty-state">No participants match.</div>';
+      return;
+    }
+
+    list.forEach(function (p) {
+      var row = document.createElement('div');
+      var done = p._progress.total === 0 || p._progress.graded === p._progress.total;
+      row.className = 'participant-row' + (done ? ' done' : '') + (p.attemptId === state.selectedAttemptId ? ' selected' : '');
+
+      var checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.checked = !!state.reviewed[p.attemptId];
+      checkbox.title = 'Mark reviewed';
+      checkbox.addEventListener('click', function (ev) {
+        ev.stopPropagation();
+        state.reviewed[p.attemptId] = checkbox.checked;
+        saveReviewed();
+      });
+
+      var dot = document.createElement('span');
+      dot.className = 'dot';
+
+      var info = document.createElement('div');
+      info.className = 'p-info';
+      var nameEl = document.createElement('div');
+      nameEl.className = 'p-name';
+      nameEl.textContent = p.displayName || p.userId.slice(0, 8);
+      var subEl = document.createElement('div');
+      subEl.className = 'p-sub';
+      subEl.textContent = 'Auto ' + p.autoMarksEarned + '/' + p.autoMarksTotal + (p.extensionBlocksUsed ? ' · ext x' + p.extensionBlocksUsed : '');
+      info.appendChild(nameEl);
+      info.appendChild(subEl);
+
+      var progress = document.createElement('div');
+      progress.className = 'p-progress';
+      progress.textContent = p._progress.total === 0 ? 'no manual' : (p._progress.graded + '/' + p._progress.total);
+
+      row.appendChild(checkbox);
+      row.appendChild(dot);
+      row.appendChild(info);
+      row.appendChild(progress);
+      row.addEventListener('click', function () {
+        state.selectedAttemptId = p.attemptId;
+        renderSidebar();
+        renderMain();
+      });
+      el.participantList.appendChild(row);
+    });
+  }
+
+  function renderMain() {
+    if (!state.exportData || !state.selectedAttemptId) {
+      el.mainPanel.innerHTML = '<div class="empty-state">Select a participant from the left once attempts are loaded.</div>';
+      return;
+    }
+    var p = state.exportData.participants.filter(function (x) { return x.attemptId === state.selectedAttemptId; })[0];
+    if (!p) return;
+
+    var g = state.manualGrades[p.attemptId] || {};
+    var manualEarned = 0;
+    manualComponentsFor(p).forEach(function (c) {
+      var v = Number(g[c.key]);
+      if (!Number.isNaN(v)) manualEarned += v;
+    });
+
+    el.mainPanel.innerHTML = '';
+
+    var header = document.createElement('div');
+    header.className = 'p-header';
+    header.innerHTML =
+      '<div><h2>' + escapeHtml(p.displayName || p.userId) + '</h2>' +
+      '<div class="p-meta">attempt ' + p.attemptId + ' &middot; submitted ' + (p.submittedAt || '?') + '</div></div>' +
+      '<div class="score-tally">' +
+        '<div>Auto<br><b>' + p.autoMarksEarned + ' / ' + p.autoMarksTotal + '</b></div>' +
+        '<div>Manual (so far)<br><b>' + manualEarned + '</b></div>' +
+        '<div>Raw total<br><b>' + (p.autoMarksEarned + manualEarned) + ' / ' + state.exportData.totalMarks + '</b></div>' +
+      '</div>';
+    el.mainPanel.appendChild(header);
+
+    var manual = manualComponentsFor(p);
+    manual.forEach(function (comp) {
+      el.mainPanel.appendChild(componentCard(p, comp, true));
+    });
+    if (manual.length === 0) {
+      var none = document.createElement('div');
+      none.className = 'empty-state';
+      none.textContent = 'No manual components for this participant -- fully auto-graded.';
+      el.mainPanel.appendChild(none);
+    }
+
+    var toggleBtn = document.createElement('button');
+    toggleBtn.className = 'toggle-auto';
+    toggleBtn.textContent = (state.showAutoGraded ? 'Hide' : 'Show') + ' auto-graded components (' + (p.components.length - manual.length) + ')';
+    toggleBtn.addEventListener('click', function () {
+      state.showAutoGraded = !state.showAutoGraded;
+      renderMain();
+    });
+    el.mainPanel.appendChild(toggleBtn);
+
+    var autoSection = document.createElement('div');
+    autoSection.className = 'auto-section';
+    autoSection.hidden = !state.showAutoGraded;
+    p.components.filter(function (c) { return c.autoGraded; }).forEach(function (comp) {
+      autoSection.appendChild(componentCard(p, comp, false));
+    });
+    el.mainPanel.appendChild(autoSection);
+
+    var actionBar = document.createElement('div');
+    actionBar.className = 'action-bar';
+    actionBar.innerHTML =
+      '<button id="downloadBtn">Download graded JSON</button>' +
+      '<button id="copyBtn">Copy graded JSON</button>' +
+      '<button id="dryRunBtn">Dry-run finalize round</button>' +
+      '<button class="danger" id="finalizeBtn">Finalize round (writes results)</button>';
+    el.mainPanel.appendChild(actionBar);
+
+    document.getElementById('downloadBtn').addEventListener('click', downloadGradedJson);
+    document.getElementById('copyBtn').addEventListener('click', copyGradedJson);
+    document.getElementById('dryRunBtn').addEventListener('click', function () { openFinalizeModal(true); });
+    document.getElementById('finalizeBtn').addEventListener('click', function () { openFinalizeModal(false); });
+  }
+
+  function componentCard(participant, comp, isManual) {
+    var card = document.createElement('div');
+    var g = state.manualGrades[participant.attemptId] || {};
+    var graded = isManual && g[comp.key] !== undefined && g[comp.key] !== null && g[comp.key] !== '';
+    card.className = 'component-card ' + (isManual ? 'manual' : 'auto') + (graded ? ' graded' : '');
+
+    var head = document.createElement('div');
+    head.className = 'c-head';
+    head.innerHTML = '<span class="c-key">' + escapeHtml(comp.key) + '</span><span>' + escapeHtml(comp.blockId) + ' &middot; ' + comp.type + ' &middot; ' + comp.marks + ' mark' + (comp.marks === 1 ? '' : 's') + '</span>';
+    card.appendChild(head);
+
+    var body = document.createElement('div');
+    body.className = 'c-body';
+    body.textContent = formatSubmitted(comp.submitted);
+    card.appendChild(body);
+
+    if (isManual) {
+      var gradeRow = document.createElement('div');
+      gradeRow.className = 'c-grade-row';
+      var input = document.createElement('input');
+      input.type = 'number';
+      input.min = '0';
+      input.max = String(comp.marks);
+      input.step = '0.5';
+      input.value = g[comp.key] !== undefined && g[comp.key] !== null ? g[comp.key] : '';
+      input.placeholder = '0';
+      input.addEventListener('input', function () {
+        var val = input.value;
+        if (!state.manualGrades[participant.attemptId]) state.manualGrades[participant.attemptId] = {};
+        if (val === '') {
+          delete state.manualGrades[participant.attemptId][comp.key];
+        } else {
+          var num = Number(val);
+          if (num > comp.marks) { num = comp.marks; input.value = String(num); }
+          if (num < 0) { num = 0; input.value = String(num); }
+          state.manualGrades[participant.attemptId][comp.key] = num;
+        }
+        saveGrades();
+        renderSidebar();
+        renderMain();
+      });
+      var max = document.createElement('span');
+      max.className = 'max';
+      max.textContent = '/ ' + comp.marks;
+      gradeRow.appendChild(input);
+      gradeRow.appendChild(max);
+      card.appendChild(gradeRow);
+    } else {
+      var correct = document.createElement('div');
+      correct.className = 'auto-correct';
+      correct.textContent = 'Awarded ' + comp.marksAwarded + '/' + comp.marks + (comp.correct !== undefined ? ' -- correct: ' + formatSubmitted(comp.correct) : '');
+      card.appendChild(correct);
+    }
+
+    return card;
+  }
+
+  function formatSubmitted(v) {
+    if (v === null || v === undefined) return '';
+    if (typeof v === 'string') return v;
+    return JSON.stringify(v);
+  }
+
+  function buildGradedPayload() {
+    var out = {};
+    Object.keys(state.manualGrades).forEach(function (attemptId) {
+      var inner = state.manualGrades[attemptId];
+      if (inner && Object.keys(inner).length > 0) out[attemptId] = inner;
+    });
+    return out;
+  }
+
+  function downloadJsonFile(filename, payload) {
+    var blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
+  function downloadGradedJson() {
+    downloadJsonFile(state.paperId + '-manual-grades.json', buildGradedPayload());
+  }
+
+  function copyGradedJson() {
+    var payload = JSON.stringify(buildGradedPayload(), null, 2);
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(payload).then(function () {
+        setStatus('Graded JSON copied to clipboard.');
+      }, function () {
+        setStatus('Clipboard copy failed -- use Download instead.', true);
+      });
+    } else {
+      setStatus('Clipboard API unavailable -- use Download instead.', true);
+    }
+  }
+
+  function currentFinalizeRequest() {
+    return {
+      action: 'finalize-round',
+      paperId: state.paperId,
+      seasonYear: el.seasonYearInput.value.trim(),
+      seasonWeight: Number(el.seasonWeightInput.value),
+      dryRun: !state.isRealFinalize,
+      manualGrades: buildGradedPayload()
+    };
+  }
+
+  function finalizeCommands() {
+    var siteUrl = el.siteUrlInput.value.trim().replace(/\/$/, '');
+    var url = siteUrl + '/api/bioclash-admin';
+    var reqFile = state.paperId + '-finalize-request.json';
+    var outFile = state.paperId + '-finalize-response.json';
+    var bash =
+      'curl -s -X POST "' + url + '" \\\n' +
+      '  -H "Authorization: Bearer $CRON_SECRET" \\\n' +
+      '  -H "Content-Type: application/json" \\\n' +
+      '  -d @' + reqFile + ' \\\n' +
+      '  -o ' + outFile;
+    var ps =
+      'curl.exe -s -X POST "' + url + '" `\n' +
+      '  -H "Authorization: Bearer $env:CRON_SECRET" `\n' +
+      '  -H "Content-Type: application/json" `\n' +
+      '  -d "@' + reqFile + '" `\n' +
+      '  -o ' + outFile;
+    return { bash: bash, ps: ps, reqFile: reqFile, outFile: outFile };
+  }
+
+  function refreshFinalizeCommands() {
+    var cmds = finalizeCommands();
+    el.finalizeCommands.innerHTML = '';
+    renderCommandBlock(el.finalizeCommands, 'Bash / macOS / Linux (save ' + cmds.reqFile + ' next to this)', cmds.bash);
+    renderCommandBlock(el.finalizeCommands, 'Windows PowerShell', cmds.ps);
+  }
+
+  el.downloadRequestBtn.addEventListener('click', function () {
+    var cmds = finalizeCommands();
+    downloadJsonFile(cmds.reqFile, currentFinalizeRequest());
+    setStatus('Downloaded ' + cmds.reqFile + ' -- run the command below next.');
+  });
+
+  function openFinalizeModal(dryRun) {
+    state.isRealFinalize = !dryRun;
+    el.finalizeModalTitle.textContent = dryRun ? 'Dry-run finalize' : 'Finalize round (writes to bioclash_results)';
+    el.finalizeResultArea.innerHTML = '';
+    el.finalizeConfirmArea.innerHTML = '';
+    el.finalizePasteArea.hidden = true;
+    if (!dryRun) {
+      var box = document.createElement('div');
+      box.className = 'confirm-box';
+      box.innerHTML =
+        'This will delete any existing results for season "<span id="seasonPreview"></span>" and insert new ones ' +
+        'once you run the real command below. Type the paper ID (<b>' + escapeHtml(state.paperId) + '</b>) below to reveal it.' +
+        '<input type="text" id="confirmPaperId" placeholder="type paper id to confirm">';
+      el.finalizeConfirmArea.appendChild(box);
+      updateSeasonPreview();
+      el.downloadRequestBtn.disabled = true;
+      document.getElementById('confirmPaperId').addEventListener('input', function (ev) {
+        el.downloadRequestBtn.disabled = ev.target.value.trim() !== state.paperId;
+      });
+    } else {
+      el.downloadRequestBtn.disabled = false;
+    }
+    refreshFinalizeCommands();
+    el.finalizeModal.hidden = false;
+  }
+  function updateSeasonPreview() {
+    var span = document.getElementById('seasonPreview');
+    if (span) span.textContent = el.seasonYearInput.value.trim() + ':' + state.paperId;
+  }
+  el.seasonYearInput.addEventListener('input', function () {
+    updateSeasonPreview();
+    refreshFinalizeCommands();
+  });
+  el.seasonWeightInput.addEventListener('input', refreshFinalizeCommands);
+
+  el.finalizeCloseBtn.addEventListener('click', function () { el.finalizeModal.hidden = true; });
+
+  el.finalizePasteToggle.addEventListener('click', function () {
+    el.finalizePasteArea.hidden = !el.finalizePasteArea.hidden;
+  });
+
+  el.finalizeFileInput.addEventListener('change', function () {
+    var file = el.finalizeFileInput.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function () {
+      try {
+        renderFinalizeResults(JSON.parse(reader.result));
+      } catch (e) {
+        el.finalizeResultArea.innerHTML = '<div class="status-msg error">Could not parse that file: ' + escapeHtml(e.message) + '</div>';
+      }
+    };
+    reader.readAsText(file);
+  });
+
+  el.finalizePasteLoadBtn.addEventListener('click', function () {
+    try {
+      renderFinalizeResults(JSON.parse(el.finalizePasteInput.value));
+    } catch (e) {
+      el.finalizeResultArea.innerHTML = '<div class="status-msg error">Could not parse pasted text: ' + escapeHtml(e.message) + '</div>';
+    }
+  });
+
+  function renderFinalizeResults(data) {
+    if (data.error) {
+      el.finalizeResultArea.innerHTML = '<div class="status-msg error">Server error: ' + escapeHtml(data.error) + '</div>';
+      return;
+    }
+    var html = '<p>' + (data.dryRun ? 'Dry run -- nothing written.' : ('Inserted ' + data.inserted + ' rows.')) +
+      ' Mean ' + data.mean + ', stddev ' + data.stddev + '.</p>';
+    html += '<table class="results"><thead><tr><th>#</th><th>Name</th><th>Raw</th><th>Penalty</th><th>Z-score</th></tr></thead><tbody>';
+    (data.results || []).forEach(function (r) {
+      html += '<tr><td>' + r.placement + '</td><td>' + escapeHtml(r.displayName || r.userId) + '</td><td>' + r.scoreLabel + '</td><td>' + (r.extensionPenalty * 100).toFixed(0) + '%</td><td>' + r.zScore.toFixed(3) + '</td></tr>';
+    });
+    html += '</tbody></table>';
+    el.finalizeResultArea.innerHTML = html;
+  }
+
+})();
+</script>
+</body>
+</html>

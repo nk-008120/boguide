@@ -129,6 +129,18 @@ function toClientBlock(block, userId) {
   return clean;
 }
 
+function componentMaxMarks(paper, component) {
+  if (component.marksEach && component.refersTo) {
+    const referenced = allBlocks(paper)
+      .flatMap((b) => b.components || [])
+      .find((c) => c.key === component.refersTo);
+    if (referenced && referenced.options) {
+      return component.marksEach * (referenced.options.length - 1);
+    }
+  }
+  return component.marks || 1;
+}
+
 function componentIsCorrect(component, submitted) {
   if (submitted === undefined || submitted === null) return false;
   switch (component.type) {
@@ -237,6 +249,7 @@ module.exports = {
   seededShuffle,
   toClientBlock,
   componentIsCorrect,
+  componentMaxMarks,
   autoGrade,
   extensionPenalty,
   rateLimit,

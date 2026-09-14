@@ -1,5 +1,5 @@
 const { getAdminClient } = require('./_lib/supabaseAdmin');
-const { loadPaper, allBlocks, componentIsCorrect, extensionPenalty, autoGrade } = require('./_lib/bioclash');
+const { loadPaper, allBlocks, componentIsCorrect, componentMaxMarks, extensionPenalty, autoGrade } = require('./_lib/bioclash');
 
 async function runCleanup(req, res, admin) {
   const { data: stale, error: staleError } = await admin
@@ -95,7 +95,7 @@ async function runExportGrades(req, res, admin) {
       for (const comp of block.components || []) {
         const submitted = (answerMap[block.id] || {})[comp.key];
         const result = componentIsCorrect(comp, submitted);
-        const marks = comp.marks || 1;
+        const marks = componentMaxMarks(paper, comp);
         const autoGraded = result !== null;
 
         let marksAwarded = null;
@@ -206,7 +206,7 @@ async function runFinalizeRound(req, res, admin) {
       for (const comp of block.components || []) {
         const submitted = (answerMap[block.id] || {})[comp.key];
         const result = componentIsCorrect(comp, submitted);
-        const marks = comp.marks || 1;
+        const marks = componentMaxMarks(paper, comp);
 
         if (result !== null) {
           autoMarks += result ? marks : 0;

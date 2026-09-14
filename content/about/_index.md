@@ -177,7 +177,11 @@ Currently Working On: Making the whole website a better place by reviewing conte
 Hello there. I am Huseyn Taghizada,  biology olympiadist from Azerbaijan. I will not talk about neither my medals nor anything other. You can check them from my linkedin account with the same name. Relying on my experiences my main goal is guide students thorough this harsh olympiad path and finishing it with the best possible ending. 
 If you're interested in my hobbies they're quite lot in fact. Chess, books, films, music, mangas and much more. Feel free to contact me via huseyntagizade90@gmail.com.
 {{< /team-member >}}
-{{< team-member name="Adit Mittal" role="Associate (Mike Ross Class)" since="September 12th 26">}}
+{{< team-member name="Adit Mital" role="Associate (Mike Ross Class)" avatar="/amavat.png" since="September 12th 26">}}
+Hey guys, I’m Adit, a senior in the UAE. I wanna go into commercial biotech (former burnt out pre-med) and am interested in drug discovery, biochem and computational biology. Having been a member of the UAE team at IBO'26, where our own training was pretty shoddy, I can confidently say that proper support is the number 1 thing standing between you, and your dream of an IBO medal. That's why I'm thrilled to be a part of BioGuide’s mission for equal knowledge and to spread its word far and wide.
+Beyond biology, I enjoy just about anything that scratches that permanent itch in my brain, be it shredding van-halen arpeggios or a good bout of chess. Anyways, here’s to more pull-your-hair out Bio problems, for you, for me, and for everyone in between!
+
+Currently Working on: Content moderation and protocol support, and producing social media content for bioguideofficial for outreach.
 {{< /team-member >}}
 ## Frequently Asked Questions
 

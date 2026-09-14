@@ -85,31 +85,32 @@ module.exports = async (req, res) => {
       return;
     }
 
-    const revealedBlocks = [];
-    for (const revealPaperBlock of blocksRevealedByLock(paper, paperBlock)) {
-      const { data: existingReveal, error: existingRevealError } = await admin
+    const targetBlocks = blocksRevealedByLock(paper, paperBlock);
+    let revealedBlocks = [];
+    if (targetBlocks.length > 0) {
+      const rows = targetBlocks.map((b) => ({ attempt_id: attempt.id, block_id: b.id }));
+      const { error: upsertError } = await admin
         .from('bioclash_attempt_blocks')
-        .select('id, status, answer')
+        .upsert(rows, { onConflict: 'attempt_id,block_id', ignoreDuplicates: true });
+      if (upsertError) throw upsertError;
+
+      const { data: revealRows, error: revealRowsError } = await admin
+        .from('bioclash_attempt_blocks')
+        .select('block_id, status, answer')
         .eq('attempt_id', attempt.id)
-        .eq('block_id', revealPaperBlock.id)
-        .maybeSingle();
-      if (existingRevealError) throw existingRevealError;
+        .in('block_id', targetBlocks.map((b) => b.id));
+      if (revealRowsError) throw revealRowsError;
 
-      let revealRow = existingReveal;
-      if (!revealRow) {
-        const { data: created, error: createError } = await admin
-          .from('bioclash_attempt_blocks')
-          .insert({ attempt_id: attempt.id, block_id: revealPaperBlock.id })
-          .select('id, status, answer')
-          .single();
-        if (createError) throw createError;
-        revealRow = created;
-      }
+      const rowByBlockId = {};
+      for (const row of revealRows) rowByBlockId[row.block_id] = row;
 
-      revealedBlocks.push({
-        ...toClientBlock(revealPaperBlock, userId),
-        status: revealRow.status,
-        answer: revealRow.answer
+      revealedBlocks = targetBlocks.map((b) => {
+        const row = rowByBlockId[b.id];
+        return {
+          ...toClientBlock(b, userId),
+          status: row ? row.status : 'active',
+          answer: row ? row.answer : {}
+        };
       });
     }
 
