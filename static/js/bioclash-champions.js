@@ -57,7 +57,11 @@
 
     var season;
     if (roundFilter) {
-      var match = rows.find(function (r) { return (r.season || '').toLowerCase() === roundFilter.toLowerCase(); });
+      var filterLower = roundFilter.toLowerCase();
+      var match = rows.find(function (r) {
+        var s = (r.season || '').toLowerCase();
+        return s === filterLower || s.endsWith(':' + filterLower);
+      });
       if (!match) {
         statusEl.textContent = roundFilter + ' hasn’t concluded yet — no champions crowned. ';
         return;

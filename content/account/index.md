@@ -67,10 +67,11 @@ sitemap:
 </section>
 
 <section id="account-recovery" class="account-screen" hidden>
-  <h2>Set a new password</h2>
+  <h2>Set your password</h2>
+  <p class="account-hint">You're verified and logged in - just pick a password so you can log in normally next time.</p>
   <form id="account-new-password-form" class="account-form">
-    <label>New password<input type="password" name="password" required minlength="6" autocomplete="new-password"></label>
-    <button type="submit" class="papers-nav-btn papers-nav-next">Update Password</button>
+    <label>Password<input type="password" name="password" required minlength="6" autocomplete="new-password"></label>
+    <button type="submit" class="papers-nav-btn papers-nav-next">Save Password</button>
     <div class="account-msg" id="account-recovery-msg"></div>
   </form>
 </section>

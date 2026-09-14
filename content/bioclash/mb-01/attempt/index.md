@@ -58,9 +58,14 @@ sitemap:
         <li><label class="bioclash-directive-item">
           <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-video">
           <span><strong>PARTICIPANTS MUST RECORD THEMSELVES via their device's front camera for there entire
-          attempt</strong>, and upload that recording after they submit, to the link provided on
-          the results screen. Please understand results are only verified once that recording has
-          been reviewed. A lot of effort goes behind this. ALL VIDEOS ARE DELETED IN 5 WORKING DAYS OF SUBMISSION!
+          attempt</strong>, and upload that recording, along with a scan or clear photo of your
+          scratch paper, after they submit, to the link provided on the results screen. Name your
+          video <strong>[USERNAMEATBIOGUIDE_MB-01].mp4</strong> (or your device's native video
+          extension - .mov, .webm, etc. are fine) and your scratch paper
+          <strong>[USERNAMEATBIOGUIDE_MB-01].pdf</strong> - replace USERNAMEATBIOGUIDE with your
+          actual BiOGuide account username, keeping the rest of the filename exactly as shown.
+          Please understand results are only verified once both have been reviewed. A lot of
+          effort goes behind this. ALL VIDEOS ARE DELETED IN 5 WORKING DAYS OF SUBMISSION!
           BiOGuide takes full resposibility of student privacy!!!</span>
         </label></li>
         <li><label class="bioclash-directive-item">

@@ -165,7 +165,7 @@ An *Arabidopsis thaliana* seedling was grown on agar. You are provided with a hi
 2. Using the **Segmented Line Tool**, measure the primary root length.
 3. Calculate the root growth rate given the seedling is 5 days old.
 
-<img src="/imagejps/imagejp1.png" alt="Root image with ruler" style="max-width:100%;">
+<img src="/gifs/imagejps/imagejp1.png" alt="Root image with ruler" style="max-width:100%;">
 
 ### Protocol
 
@@ -191,7 +191,7 @@ Identify stomatal density of an abaxial leaf epidermis from a DIC micrograph (**
 2. Apply **thresholding** to isolate stomatal apertures.
 3. Use **Analyze Particles** to count stomata and exclude noise (size filter: 50–500 µm²).
 
-<img src="/imagejps/imagejp2.png" alt="DIC micrograph of stomata" style="max-width:100%;">
+<img src="/gifs/imagejps/imagejp2.png" alt="DIC micrograph of stomata" style="max-width:100%;">
 
 ### Protocol
 
@@ -224,7 +224,7 @@ In a senescence study, a leaf displays chlorotic (yellow) and healthy (green) zo
 2. Determine which channel (Hue, Saturation, Brightness) best differentiates yellow from green.
 3. Threshold the Hue channel: Green is typically ≈75/255, Yellow ≈45/255.
 
-<img src="/imagejps/imagejp3.png" alt="Leaf with yellow chlorotic spots" style="max-width:100%;">
+<img src="/gifs/imagejps/imagejp3.png" alt="Leaf with yellow chlorotic spots" style="max-width:100%;">
 
 ### Protocol
 
@@ -255,7 +255,7 @@ Calculate the **Corrected Total Cell Fluorescence (CTCF)** of a GFP‑tagged pro
 2. Measure **Integrated Density** and **Area** of the cell.
 3. Select three small neutral areas for background mean fluorescence.
 
-<img src="/imagejps/imagejp4.png" alt="GFP fluorescence image of pavement cell" style="max-width:100%;">
+<img src="/gifs/imagejps/imagejp4.png" alt="GFP fluorescence image of pavement cell" style="max-width:100%;">
 
 ### Protocol
 

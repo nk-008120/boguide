@@ -274,7 +274,11 @@
     });
   });
 
-  var isRecovery = /type=recovery/.test(window.location.hash);
+  // Covers both a "forgot password" recovery link and a magic-link account-setup
+  // link (used for form-based registrations, which create the account passwordless
+  // via /auth/v1/otp) -- both land here needing a password set before they can use
+  // the normal email+password login going forward.
+  var isRecovery = /type=(recovery|magiclink|invite)/.test(window.location.hash);
 
   function refresh() {
     if (isRecovery) { showScreen('recovery'); return; }

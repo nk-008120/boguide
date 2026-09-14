@@ -6,7 +6,7 @@
 
   var PAPER_ID = root.getAttribute('data-paper-id');
 
-  var RECORDING_UPLOAD_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSckhuzgocCdJklygS8cs-CVqa9E8rXOE_l0pnCGKc_ZsabQpA/viewform?usp=publish-editor';
+  var RECORDING_UPLOAD_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdbhQoX6sylgdkExn9Ol7iVtC1PHV7-mF8XTfgd3mCIN-dXdw/viewform?usp=publish-editor';
 
   function forceDark() {
     var cl = document.documentElement.classList;
@@ -969,11 +969,17 @@
       '<p>Your full result will follow separately once grading is complete.</p>' +
       '<div class="bioclash-recording-upload">' +
       '<p><strong>Your attempt is not verified yet.</strong> Upload your full front-camera ' +
-      'recording of this attempt to the folder below as soon as possible. Results are only ' +
-      'verified once this recording has been reviewed. An unverified attempt may still be ' +
-      'scored, but whether it is announced or considered at all is entirely at BiOGuide\'s ' +
-      'discretion.</p>' +
-      '<p><a href="' + RECORDING_UPLOAD_URL + '" target="_blank" rel="noopener" class="papers-nav-btn">Upload your recording</a></p>' +
+      'recording, along with a scan or clear photo of your scratch paper, to the form below as ' +
+      'soon as possible. Results are only verified once both have been reviewed. An unverified ' +
+      'attempt may still be scored, but whether it is announced or considered at all is ' +
+      'entirely at BiOGuide\'s discretion.</p>' +
+      '<p>Name your video <strong>[USERNAMEATBIOGUIDE_MB-01].mp4</strong> (or your device\'s ' +
+      'native video extension) and your scratch paper ' +
+      '<strong>[USERNAMEATBIOGUIDE_MB-01].pdf</strong> - replace USERNAMEATBIOGUIDE with your ' +
+      'actual BiOGuide account username, keeping the rest of the filename exactly as shown.</p>' +
+      '<p>The same form also has a short section for feedback on your experience - we read ' +
+      'every response.</p>' +
+      '<p><a href="' + RECORDING_UPLOAD_URL + '" target="_blank" rel="noopener" class="papers-nav-btn">Submit your recording &amp; scratch paper</a></p>' +
       '</div>';
 
     reportScreen.innerHTML = html;
