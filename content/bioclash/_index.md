@@ -54,13 +54,12 @@ images: ["/og-bioclash.png"]
     <li><span class="papers-pill bioclash-pill">Frequency</span> Planning a full season of subject-focused rounds spread across the year: Molecular Biology &amp; Biochemistry, Animal Anatomy &amp; Physiology, Genetics &amp; Evolution, Plant Anatomy &amp; Physiology, Ecology, Ethology, and Biosystematics, capped off by a Full Syllabus round in the weeks before IBO, with placements across the season aiming to add up to one cumulative season ranking.</li>
     <li><span class="papers-pill bioclash-pill">Timing</span> Subject rounds are planned to run 90 minutes, with the Full Syllabus round given longer. An optional short extension is planned to be available during an attempt, at a competitive cost rather than as free extra time.</li>
     <li><span class="papers-pill bioclash-pill">Scoring</span> Planning to rank each round by standardized performance relative to that round's own field, not raw marks, closer to how many real olympiads report results than a simple percentage. Season standing is planned to be a weighted composite across every round, not just an average.</li>
-    <li><span class="papers-pill bioclash-pill">Recognition</span> Podium finishers may be recognized with an honorary Junior Partner position at BiOGuide.</li>
   </ul>
 </section>
 
 <section class="bioclash-section bioclash-panel">
   <h2>Season calendar</h2>
-  <p>A season is eight rounds: seven subject-focused rounds spread across the year, plus a capstone Full Syllabus Test. Each round contributes to one cumulative season ranking, weighted by subject.</p>
+  <p>A season is eight rounds: seven subject-focused rounds spread across the year, plus a capstone Full Syllabus Test. Each round contributes to one cumulative season ranking, weighted by subject. Season podium finishers may be recognized with an honorary Junior Partner position at BiOGuide.</p>
   <div class="bioclash-season-table-wrap">
     <table class="bioclash-season-table">
       <thead>
@@ -83,6 +82,13 @@ images: ["/og-bioclash.png"]
     <p>Want to see how it works before committing?</p>
     <a href="/bioclash/bioclash-sample/attempt/" class="bioclash-btn bioclash-btn-primary"><span class="bioclash-btn-shine" aria-hidden="true"></span><span>Try the sample round</span></a>
   </div>
+</section>
+
+<section class="bioclash-section bioclash-panel">
+  <h2>MB-01 winner</h2>
+  <p>Case File MB-01: Molecular Biology &amp; Biochemistry podium holders will get a custom micropipette pen from BiOGuide!</p>
+  <img src="/BIOCLASHPICS/mb-01-winner-pen.webp" alt="A pair of custom micropipette-shaped pens, 3D-printed in white with purple and blue-grey accents and ribbon detailing" style="max-width:420px; width:100%; border-radius:var(--radius-lg); margin:0.5rem 0;">
+  <p>See the full standings on the <a href="/bioclash/mb-01/leaderboard/">MB-01 leaderboard on November 17th</a>.</p>
 </section>
 
 <section class="bioclash-section bioclash-panel">
