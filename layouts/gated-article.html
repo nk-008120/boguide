@@ -2,14 +2,14 @@
      behind login with a teaser-and-blur, not a hard redirect. Applied via the
      cascade in content/biobytes/_index.md (target "/biobytes/articles/**"), so
      any page nested under /biobytes/articles/ gets this layout automatically.
-     Only the long-form Articles tab is gated — From Social is not.
+     Only the long-form Articles tab is gated: From Social is not.
      (Section history: "Articles" → "BiOInsights" 2026-08-09 → "BiOBytes"
      2026-08-18; old /articles/ and /bioinsights/ URLs redirect via aliases.)
 
      This is a presentation-layer gate, not a real access-control boundary:
      the full article HTML still ships in the page source (just visually
      hidden via CSS) until static/js/papers-article-gate.js removes the
-     gating classes for a logged-in visitor — same posture as the existing
+     gating classes for a logged-in visitor: same posture as the existing
      quiz answers elsewhere on the site. If withholding the content
      server-side ever becomes a requirement, this needs a different
      mechanism (e.g. fetching the body from an API after auth). */ -}}
@@ -25,7 +25,7 @@
           {{ .Content }}
         </div>
         <div class="article-gate-cta" id="article-gate-cta" hidden>
-          <p>Log in to keep reading — free, and takes a few seconds.</p>
+          <p>Log in to keep reading: free, and takes a few seconds.</p>
           <a class="papers-nav-btn papers-nav-next" id="article-gate-cta-link" href="{{ "account/" | relURL }}">Log in to keep reading</a>
         </div>
       </div>

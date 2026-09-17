@@ -8,7 +8,7 @@ questions:
     contributor: "SM"
     question: |
 
-      To trace the path of a secretory protein from its synthesis to its export from a cell, suppose that you have added radioactive amino acids to a culture of cells, and then measured the amount of radioactivity that shows up in the proteins of each of the following cell fractions at different times after addition. I – Secretory Vesicles II – Golgi Complex III – Rough Endoplasmic Reticulum IV – Nucleus
+      To trace the path of a secretory protein from its synthesis to its export from a cell, suppose that you have added radioactive amino acids to a culture of cells, and then measured the amount of radioactivity that shows up in the proteins of each of the following cell fractions at different times after addition. I: Secretory Vesicles II: Golgi Complex III: Rough Endoplasmic Reticulum IV: Nucleus
 
       A. III -> II -> IV -> I -> out of the cell
       B. III -> II -> I --------> out of the cellC. IV -> III -> II -> I -> out of the cellD. IV -> II -> III-> I -> out of the cell
@@ -27,7 +27,7 @@ questions:
       D. Palmitoylation of a protein can change its intracellular localization.
     solution: |
 
-      Ans – A – T, B – T, C – T, D - T
+      Ans: A: T, B: T, C: T, D - T
   - id: 3
     difficulty: "medium"
     source: "USABO"
@@ -51,7 +51,7 @@ questions:
       C. Most proteins that are found in multiple organelles are spread homogeneously through the cell.
     solution: |
 
-      Ans – A - F, B - T, C – F
+      Ans: A - F, B - T, C: F
   - id: 5
     difficulty: "hard"
     source: "IBO"
@@ -79,4 +79,4 @@ questions:
       D. As true for other membrane bound receptors, ErbB2 enters the cytoplasm by endocytosis.
     solution: |
 
-      Ans – A - T, B - T, C - T, D - T
+      Ans: A - T, B - T, C - T, D - T

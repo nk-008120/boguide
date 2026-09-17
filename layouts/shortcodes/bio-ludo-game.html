@@ -1,0 +1,83 @@
+{{- $allQuestions := slice -}}
+{{- range $slug, $data := site.Data.challenges -}}
+  {{- range $data.questions -}}
+    {{- if .solution -}}
+      {{- $allQuestions = $allQuestions | append (dict "id" (printf "%s-%d" $slug .id) "difficulty" .difficulty "questionHtml" (.question | markdownify) "solutionHtml" (.solution | markdownify)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+<script type="application/json" id="bio-ludo-questions">{{ $allQuestions | jsonify | safeJS }}</script>
+{{- $gradableQuestions := slice -}}
+{{- range $slug, $data := index site.Data "bio-ludo" -}}
+  {{- range $data.questions -}}
+    {{- if eq .type "mcq" -}}
+      {{- $opts := slice -}}
+      {{- range .options -}}{{ $opts = $opts | append (dict "key" .key "text" .text) }}{{- end -}}
+      {{- $gradableQuestions = $gradableQuestions | append (dict "id" .id "topic" $data.topic "difficulty" .difficulty "text" .text "options" $opts "answer" .answer "explanation" .explanation) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+<script type="application/json" id="bio-ludo-gradable-questions">{{ $gradableQuestions | jsonify | safeJS }}</script>
+<div class="bio-ludo-app" id="bio-ludo-app">
+  <div class="bio-ludo-setup" id="bio-ludo-setup">
+    <h3>Start a match</h3>
+    <p>Local pass-and-play. Choose how many teams are at the table.</p>
+    <div class="bio-ludo-setup-options">
+      <button type="button" class="bio-ludo-setup-btn" data-teams="2">2 teams</button>
+      <button type="button" class="bio-ludo-setup-btn" data-teams="3">3 teams</button>
+      <button type="button" class="bio-ludo-setup-btn" data-teams="4">4 teams</button>
+    </div>
+    <p>Or play solo against bots.</p>
+    <div class="bio-ludo-setup-options">
+      <button type="button" class="bio-ludo-setup-btn" data-bot-mode="1v3">1 vs 3 bots</button>
+    </div>
+  </div>
+
+  <div class="bio-ludo-bot-setup" id="bio-ludo-bot-setup" hidden>
+    <h3>Choose bot difficulty</h3>
+    <p>All three bots play at this level.</p>
+    <div class="bio-ludo-setup-options">
+      <button type="button" class="bio-ludo-setup-btn" data-bot-difficulty="easy">Easy</button>
+      <button type="button" class="bio-ludo-setup-btn" data-bot-difficulty="medium">Medium</button>
+      <button type="button" class="bio-ludo-setup-btn" data-bot-difficulty="hard">Hard</button>
+    </div>
+  </div>
+
+  <div class="bio-ludo-legend">
+    <div class="bio-ludo-legend-item"><span class="bio-ludo-legend-badge">S</span>Sniper: range 5-6</div>
+    <div class="bio-ludo-legend-item"><span class="bio-ludo-legend-badge">A</span>Assaulter: range 3-4</div>
+    <div class="bio-ludo-legend-item"><span class="bio-ludo-legend-badge">T</span>Trooper: range 1-2</div>
+    <div class="bio-ludo-legend-item"><span class="bio-ludo-legend-badge">H</span>Hand Combat: melee only</div>
+  </div>
+
+  <div class="bio-ludo-game" id="bio-ludo-game" hidden>
+    <div class="bio-ludo-hud">
+      <div class="bio-ludo-turn-indicator" id="bio-ludo-turn-indicator"></div>
+      <div class="bio-ludo-dice-area">
+        <button type="button" class="bio-ludo-roll-btn" id="bio-ludo-roll-btn">Roll</button>
+        <div class="bio-ludo-die" id="bio-ludo-die" aria-hidden="true">?</div>
+        <div class="bio-ludo-tokens" id="bio-ludo-tokens"></div>
+      </div>
+      <button type="button" class="bio-ludo-end-turn-btn" id="bio-ludo-end-turn-btn" disabled>End turn</button>
+    </div>
+
+    <p class="bio-ludo-hint" id="bio-ludo-hint"></p>
+    <p class="bio-ludo-unsafe-status" id="bio-ludo-unsafe-status" hidden></p>
+    <div class="bio-ludo-revive-panel" id="bio-ludo-revive-panel" hidden></div>
+
+    <div class="bio-ludo-board-wrap">
+      <div class="bio-ludo-board" id="bio-ludo-board"></div>
+      <div class="bio-ludo-pieces" id="bio-ludo-pieces"></div>
+      <div class="bio-ludo-flagbearers" id="bio-ludo-flagbearers"></div>
+      <div class="bio-ludo-highlights" id="bio-ludo-highlights"></div>
+    </div>
+  </div>
+
+  <div class="bio-ludo-duel" id="bio-ludo-duel" hidden>
+    <div class="bio-ludo-duel-card" id="bio-ludo-duel-card"></div>
+  </div>
+
+  <div class="bio-ludo-duel" id="bio-ludo-gameover" hidden>
+    <div class="bio-ludo-duel-card" id="bio-ludo-gameover-card"></div>
+  </div>
+</div>

@@ -197,7 +197,7 @@
     if (!window.confirm('Delete your account? This permanently removes your login, profile, and leaderboard history and cannot be undone.')) return;
     client.auth.getSession().then(function (result) {
       var session = result.data && result.data.session;
-      if (!session) { setMsg(msg, 'Your session expired — log in again and retry.', true); return; }
+      if (!session) { setMsg(msg, 'Your session expired, log in again and retry.', true); return; }
       setMsg(msg, 'Deleting…', false);
       fetch('/api/delete-account', {
         method: 'POST',
@@ -210,7 +210,7 @@
           window.location.href = '/';
         });
       }).catch(function () {
-        setMsg(msg, 'Could not delete your account — try again.', true);
+        setMsg(msg, 'Could not delete your account, try again.', true);
       });
     });
   });
@@ -242,6 +242,7 @@
     }).then(function (result) {
       if (result.error) { setMsg(msg, result.error.message, true); return; }
       if (result.data && result.data.session) {
+        if (window.PostHogEvents) window.PostHogEvents.trackSignup();
         refresh();
       } else {
         setMsg(msg, 'Check your email to confirm your account, then log in.', false);

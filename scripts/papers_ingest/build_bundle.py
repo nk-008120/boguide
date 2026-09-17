@@ -1,7 +1,7 @@
 """
 Stage 3 prep: auto-builds the exact prompt bundle
 context/papers-ingestion-delegation.md already specifies, from extract.py's
-raw.json + a transcribed answers CSV — so composing it is no longer a manual
+raw.json + a transcribed answers CSV- so composing it is no longer a manual
 task at all. Paste the script's output into whatever tool is writing the
 explanations; paste its response into a .yaml/.txt file for assemble.py.
 
@@ -21,7 +21,7 @@ from subjects import discover_subjects, format_subject_list_for_prompt
 
 TEMPLATE_HEADER = """\
 You are helping populate a Biology Olympiad practice-question archive. For each
-question below, the CORRECT ANSWER for each statement is already given — your
+question below, the CORRECT ANSWER for each statement is already given- your
 job is only to explain WHY each statement is true or false, in 2-4 sentences,
 grounded in the question's own text/figures. Do not re-derive or second-guess
 the given answer; if your own reasoning seems to conflict with it, still

@@ -45,7 +45,7 @@ questions:
       D. Deficiency of Bax protein promotes apoptosis.
     solution: |
 
-      Ans – A - F, B - T, C - T, D - F [Given]           A - T, B - T, C - F, D - F [personal]
+      Ans: A - F, B - T, C - T, D - F [Given]           A - T, B - T, C - F, D - F [personal]
   - id: 4
     difficulty: "medium"
     source: "IBO"
@@ -59,7 +59,7 @@ questions:
       (I) Find reduction (in %) in the number of apoptotic cells when treated with CH + BMP9 compared to only CH treatment
     solution: |
 
-      Ans – 66-68% [Value = 67.164%]
+      Ans: 66-68% [Value = 67.164%]
 
       (II) Indicate if each of the statements are true or false:A. BMP9 treatment causes an increase in apoptosis.
 
@@ -67,7 +67,7 @@ questions:
 
       C. Caspase gene expression is increased during apoptosis.
 
-      Ans – A – F, B – T, C - F
+      Ans: A: F, B: T, C - F
   - id: 5
     difficulty: "hard"
     source: "IBO"

@@ -782,6 +782,174 @@ html.dark .olympiad-compact-body p {
   }
 }
 
+.olympiad-directory {
+  max-width: 900px;
+  margin: 0 auto 1.5rem;
+}
+.olympiad-directory-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+.olympiad-directory-search {
+  flex: 1 1 220px;
+  padding: 0.55rem 0.9rem;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid rgba(137, 101, 196, 0.25);
+  background: var(--bg, #fff);
+  color: inherit;
+  font-size: 0.9rem;
+}
+.olympiad-directory-search:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+.olympiad-directory-filters {
+  display: inline-flex;
+  gap: 0.3rem;
+  padding: 0.25rem;
+  border-radius: var(--radius-pill);
+  background: rgba(137, 101, 196, 0.06);
+  border: 1px solid rgba(137, 101, 196, 0.15);
+}
+.olympiad-directory-filter-btn {
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-pill);
+  border: none;
+  background: transparent;
+  color: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
+}
+.olympiad-directory-filter-btn:hover {
+  background: rgba(137, 101, 196, 0.12);
+}
+.olympiad-directory-filter-btn.is-active {
+  background: var(--primary);
+  color: #fff;
+}
+.olympiad-directory-count {
+  font-size: 0.8rem;
+  opacity: 0.65;
+  margin: 0 0 1rem;
+}
+.olympiad-directory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 0.75rem;
+}
+.olympiad-directory-loading {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem 0;
+  opacity: 0.6;
+  font-size: 0.9rem;
+}
+.olympiad-directory-card {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.7rem 0.85rem;
+  background: var(--bg, #fff);
+  border: 1.5px solid rgba(137, 101, 196, 0.18);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+a.olympiad-directory-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 14px rgba(137, 101, 196, 0.14);
+  transform: translateY(-2px);
+}
+.olympiad-directory-card.is-coming-soon {
+  opacity: 0.6;
+  cursor: default;
+}
+.olympiad-directory-flag {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+.olympiad-directory-body {
+  min-width: 0;
+}
+.olympiad-directory-body h4 {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.olympiad-directory-body p {
+  font-size: 0.74rem;
+  margin: 0.1rem 0 0;
+  opacity: 0.7;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.olympiad-directory-badge {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--primary);
+  opacity: 0.6;
+}
+.olympiad-directory-card.is-coming-soon .olympiad-directory-badge {
+  opacity: 0.5;
+}
+.olympiad-directory-empty {
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.65;
+  padding: 1.5rem 0;
+}
+html.dark .olympiad-directory-search {
+  background: #1e1e1e;
+  border-color: rgba(201, 183, 232, 0.25);
+  color: #e5e5e5;
+}
+html.dark .olympiad-directory-filters {
+  background: rgba(201, 183, 232, 0.08);
+  border-color: rgba(201, 183, 232, 0.2);
+}
+html.dark .olympiad-directory-filter-btn.is-active {
+  background: #c9b7e8;
+  color: #16141d;
+}
+html.dark .olympiad-directory-card {
+  background: #1e1e1e;
+  border-color: rgba(201, 183, 232, 0.18);
+  color: #e5e5e5;
+}
+html.dark a.olympiad-directory-card:hover {
+  border-color: #c9b7e8;
+}
+html.dark .olympiad-directory-body h4,
+html.dark .olympiad-directory-badge {
+  color: #c9b7e8;
+}
+html.dark .olympiad-directory-body p {
+  color: #b0b0b0;
+}
+@media (max-width: 640px) {
+  .olympiad-directory-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .olympiad-map-section {
   max-width: 900px;
   margin: 2rem auto;
@@ -3430,12 +3598,6 @@ html.dark .papers-test-card:hover {
 html.dark .papers-test-card-sub {
   color: #c9b7e8;
 }
-
---shadow-*), NOT
-   BiOClash's crimson/gold — this is a general BiOGuide feature, not tied
-   to the competition. One static page acts as both list and per-thread
-   detail view (see discussions.js for why); this section styles both.
-   =================================================================== */
 .discussions-page {
   max-width: 46rem;
   margin: 0 auto;

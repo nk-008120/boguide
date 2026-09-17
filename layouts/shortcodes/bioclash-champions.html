@@ -1,11 +1,11 @@
-{{- /* BiOClash "Champions" leaderboard — one round's placements from
+{{- /* BiOClash "Champions" leaderboard: one round's placements from
      Supabase's bioclash_leaderboard view (supabase/migrations/
      006_bioclash_results.sql). Usage:
-       {{< bioclash-champions >}}             — shows the MOST RECENT round
-       {{< bioclash-champions round="mb-01" >}} — shows that specific round,
+       {{< bioclash-champions >}}            : shows the MOST RECENT round
+       {{< bioclash-champions round="mb-01" >}}: shows that specific round,
          permanently (added 2026-08-11 so every past round keeps its own
          dedicated leaderboard page instead of being replaced by the next
-         one — see context/bioclash-season-points-plan.md and the new
+         one: see context/bioclash-season-points-plan.md and the new
          "Rounds This Season" card grid on content/papers/leaderboard/).
      Deliberately separate from the papers-leaderboard-* family (this isn't
      a BiOrchive Timed Attempt result): results are entered by hand by the

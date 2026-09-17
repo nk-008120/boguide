@@ -1,0 +1,75 @@
+topic: "domains-kingdoms"
+topicName: "Domains & Kingdoms"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "domains-kingdoms-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "The predatory bacterium Bdellovibrio bacteriophorus drills into a prey bacterium and, once inside, digests it. In an attack upon a gram-negative bacterium that has a slimy cell covering, what is the correct sequence of structures penetrated by B. bacteriophorus on its way to the prey's cytoplasm?"
+    options:
+      - key: "A"
+        text: "phospholipid membrane, capsule, peptidoglycan, lipopolysaccharide membrane"
+      - key: "B"
+        text: "lipopolysaccharide membrane, peptidoglycan, capsule, phospholipid membrane"
+      - key: "C"
+        text: "lipopolysaccharide membrane, capsule, peptidoglycan, phospholipid membrane"
+      - key: "D"
+        text: "capsule, lipopolysaccharide membrane, peptidoglycan, phospholipid membrane"
+    answer: "D"
+    explanation: "Working inward from the outside, a gram-negative bacterium's layers are: an outer lipopolysaccharide membrane, a slimy capsule around/external to it, then the peptidoglycan cell wall, and finally the phospholipid plasma membrane surrounding the cytoplasm."
+    sourceRef: "Campbell Biology 11e, Ch. 27 (Bacteria and Archaea)"
+
+  - id: "domains-kingdoms-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Genetic variation in bacterial populations cannot result from"
+    options:
+      - key: "A"
+        text: "transduction."
+      - key: "B"
+        text: "conjugation."
+      - key: "C"
+        text: "mutation."
+      - key: "D"
+        text: "meiosis."
+    answer: "D"
+    explanation: "Meiosis does not occur in bacteria at all; bacterial genetic variation instead arises from mutation and from horizontal gene transfer mechanisms like transformation, transduction, and conjugation."
+    sourceRef: "Campbell Biology 11e, Ch. 27 (Bacteria and Archaea)"
+
+  - id: "domains-kingdoms-03"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "Chloramphenicol is an antibiotic that targets prokaryotic (70S) ribosomes, but not eukaryotic (80S) ribosomes. Which of these questions stems from this observation, plus an understanding of eukaryotic origins?"
+    options:
+      - key: "A"
+        text: "Can chloramphenicol also be used to control human diseases that are caused by archaeans?"
+      - key: "B"
+        text: "Can chloramphenicol pass through the capsules possessed by many cyanobacteria?"
+      - key: "C"
+        text: "If chloramphenicol inhibits prokaryotic ribosomes, should it not also inhibit mitochondrial ribosomes?"
+      - key: "D"
+        text: "Why aren't prokaryotic ribosomes identical to eukaryotic ribosomes?"
+    answer: "C"
+    explanation: "Since mitochondria are thought to have evolved from an engulfed alpha-proteobacterium, and still retain their own prokaryote-like 70S ribosomes, it's a natural follow-up question to ask whether a drug that targets prokaryotic 70S ribosomes might also affect mitochondrial ribosomes as an off-target (side) effect."
+    sourceRef: "Campbell Biology 11e, Ch. 27 (Bacteria and Archaea)"
+
+  - id: "domains-kingdoms-04"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Jams, jellies, preserves, honey, and other foods with high sugar content hardly ever become contaminated by bacteria, even when the food containers are left open at room temperature. This is because bacteria that encounter such an environment ________."
+    options:
+      - key: "A"
+        text: "undergo death as a result of water loss from the cell"
+      - key: "B"
+        text: "are unable to metabolize the glucose or fructose, and thus starve to death"
+      - key: "C"
+        text: "are obligate anaerobes"
+      - key: "D"
+        text: "are unable to swim through these thick and viscous materials"
+    answer: "A"
+    explanation: "High sugar concentrations create a strongly hypertonic environment outside bacterial cells, drawing water out of the cells by osmosis and causing them to lose water and die (a form of preservation used in jams, honey, and cured foods for centuries)."
+    sourceRef: "Campbell Biology 11e, Ch. 27 (Bacteria and Archaea)"

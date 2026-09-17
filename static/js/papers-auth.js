@@ -45,9 +45,7 @@
   function getProfile(userId) {
     var c = getClient();
     if (!c) return Promise.resolve(null);
-    return c.from('profiles')
-      .select('display_name, avatar_url, country, about, education_level, notify_bioclash, target_olympiad, site_tutorial_seen, is_staff')
-      .eq('id', userId)
+    return c.rpc('get_my_profile')
       .single()
       .then(function (result) {
         return (result && result.data) || null;

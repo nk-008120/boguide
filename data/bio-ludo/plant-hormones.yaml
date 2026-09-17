@@ -1,0 +1,75 @@
+topic: "plant-hormones"
+topicName: "Plant Hormones"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "plant-hormones-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Plant hormones produce their effects by ________. I. altering the expression of genes II. modifying the permeability of the plasma membrane III. modifying the structure of the nuclear envelope membrane"
+    options:
+      - key: "A"
+        text: "only I"
+      - key: "B"
+        text: "only II"
+      - key: "C"
+        text: "only III"
+      - key: "D"
+        text: "only I and II"
+    answer: "D"
+    explanation: "Plant hormones act primarily by altering gene expression (turning genes on or off) and by modifying membrane permeability/transport properties of target cells; they do not act by physically remodeling the nuclear envelope's structure."
+    sourceRef: "Campbell Biology 11e, Ch. 39 (Plant Responses to Internal and External Signals)"
+
+  - id: "plant-hormones-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "The hormone that helps plants respond to drought is"
+    options:
+      - key: "A"
+        text: "auxin."
+      - key: "B"
+        text: "abscisic acid."
+      - key: "C"
+        text: "cytokinin."
+      - key: "D"
+        text: "ethylene."
+    answer: "B"
+    explanation: "Abscisic acid (ABA) is the plant hormone that accumulates under water stress and triggers stomatal closure and other drought-response mechanisms to conserve water."
+    sourceRef: "Campbell Biology 11e, Ch. 39 (Plant Responses to Internal and External Signals)"
+
+  - id: "plant-hormones-03"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Arrange the following steps that occur during drought tolerance in plants in a correct sequence. I. hormone ABA accumulation in the leaves II. causes stomata to close III. reduction in transpiration IV. preventing further water loss"
+    options:
+      - key: "A"
+        text: "I, II, III, and IV"
+      - key: "B"
+        text: "I, III, II, and IV"
+      - key: "C"
+        text: "II, I, III, and IV"
+      - key: "D"
+        text: "III, I, II, and IV"
+    answer: "A"
+    explanation: "Drought tolerance proceeds in this order: ABA accumulates in the leaves in response to water deficit, ABA then signals guard cells to close the stomata, which reduces transpirational water loss, ultimately preventing further loss of water from the plant."
+    sourceRef: "Campbell Biology 11e, Ch. 39 (Plant Responses to Internal and External Signals)"
+
+  - id: "plant-hormones-04"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Plant hormones ________."
+    options:
+      - key: "A"
+        text: "in plant cells naturally exist in very large amounts"
+      - key: "B"
+        text: "change their shape in response to stimulus"
+      - key: "C"
+        text: "are unable to move from one cell to another"
+      - key: "D"
+        text: "affect only cells with the appropriate receptor"
+    answer: "D"
+    explanation: "Plant hormones act at extremely low concentrations and only affect the specific target cells that express the matching hormone receptor, which is what allows the same hormone to trigger different responses in different tissues."
+    sourceRef: "Campbell Biology 11e, Ch. 39 (Plant Responses to Internal and External Signals)"

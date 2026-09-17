@@ -1,5 +1,6 @@
-const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
-const { loadPaper, initialBlocks, toClientBlock, findBlock, watermarkCode, newSessionToken, computeTotalPages, autoGrade, rateLimit } = require('./_lib/bioclash');
+const { getAdminClient } = require('./_lib/supabaseAdmin');
+const { loadPaper, initialBlocks, toClientBlock, findBlock, watermarkCode, newSessionToken, computeTotalPages, autoGrade, authenticate } = require('./_lib/bioclash');
+const { captureError } = require('./_lib/sentry');
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
@@ -7,25 +8,8 @@ module.exports = async (req, res) => {
     return;
   }
   try {
-    const authHeader = req.headers.authorization || '';
-    const token = authHeader.startsWith('Bearer ') ? authHeader.slice(7) : null;
-    if (!token) {
-      res.status(401).json({ error: 'Missing Authorization header' });
-      return;
-    }
-
-    const anon = getAnonClient();
-    const { data: userData, error: userError } = await anon.auth.getUser(token);
-    if (userError || !userData || !userData.user) {
-      res.status(401).json({ error: 'Invalid session' });
-      return;
-    }
-    const userId = userData.user.id;
-
-    if (rateLimit(userId, 'start-attempt', 5, 60000)) {
-      res.status(429).json({ error: 'Too many requests' });
-      return;
-    }
+    const userId = await authenticate(req, res, 'start-attempt', 5, 60000);
+    if (!userId) return;
 
     const paperId = req.body && req.body.paperId;
     const paper = loadPaper(paperId);
@@ -158,6 +142,7 @@ module.exports = async (req, res) => {
     });
   } catch (err) {
     console.error('bioclash-start-attempt failed:', err);
+    await captureError(err, { route: 'bioclash-start-attempt' });
     res.status(500).json({ error: 'Could not start attempt' });
   }
 };

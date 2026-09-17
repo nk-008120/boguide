@@ -1,10 +1,12 @@
 const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
+const { captureError } = require('./_lib/sentry');
 
 module.exports = async (req, res) => {
   try {
     await handle(req, res);
   } catch (e) {
     console.error('[delete-account] unhandled error:', e);
+    await captureError(e, { route: 'delete-account' });
     if (!res.headersSent) res.status(500).json({ error: 'Internal error' });
   }
 };
@@ -35,6 +37,7 @@ async function handle(req, res) {
     userId = data.user.id;
   } catch (e) {
     console.error('[delete-account] auth check threw:', e);
+    await captureError(e, { route: 'delete-account', stage: 'auth-check' });
     res.status(500).json({ error: 'Auth check failed' });
     return;
   }
@@ -46,6 +49,7 @@ async function handle(req, res) {
     .insert({ user_id: userId });
   if (logError) {
     console.error('[delete-account] deletion log insert failed:', logError);
+    await captureError(logError, { route: 'delete-account', stage: 'log-insert' });
     res.status(500).json({ error: 'Could not process deletion' });
     return;
   }
@@ -53,6 +57,7 @@ async function handle(req, res) {
   const { error: deleteError } = await admin.auth.admin.deleteUser(userId);
   if (deleteError) {
     console.error('[delete-account] auth.admin.deleteUser failed:', deleteError);
+    await captureError(deleteError, { route: 'delete-account', stage: 'delete-user' });
     res.status(500).json({ error: 'Could not delete account' });
     return;
   }

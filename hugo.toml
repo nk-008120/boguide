@@ -197,6 +197,14 @@ theme = "hextra"
     weight = 15
     [menu.main.params]
       icon = "instagram"
+
+  [[menu.main]]
+    name = "Games"
+    url = "/games/"
+    weight = 16
+    [menu.main.params]
+      icon = "lucide:dice-5"
+      iconOnly = true
 [params]
   # og:site_name reads Site.Params.title specifically (not the top-level
   # Hugo `title` above, which only drives <title> tags) -- see

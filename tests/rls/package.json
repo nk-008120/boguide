@@ -1,0 +1,14 @@
+{
+  "name": "rls-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "General-purpose RLS verification harness applying the full supabase/migrations set against a WASM Postgres (pglite). No live Supabase project needed.",
+  "main": "phase0-hardening.test.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "node phase0-hardening.test.mjs"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.5.8"
+  }
+}

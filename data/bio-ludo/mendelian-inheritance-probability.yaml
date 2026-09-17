@@ -1,0 +1,93 @@
+topic: "mendelian-inheritance-probability"
+topicName: "Mendel's Laws & Probability in Genetics"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "mendelian-inheritance-probability-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "How many unique gametes could be produced through independent assortment by an individual with the genotype AaBbCCDdEE?"
+    options:
+      - key: "A"
+        text: "4"
+      - key: "B"
+        text: "8"
+      - key: "C"
+        text: "16"
+      - key: "D"
+        text: "64"
+    answer: "B"
+    explanation: "Only heterozygous loci contribute more than one type of gamete under independent assortment; here A, B, and D are heterozygous (2 gamete types each) while C and E are homozygous (1 type each), giving 2×2×1×2×1 = 8 unique gametes."
+    sourceRef: "Campbell Biology 11e, Ch. 14 (Mendel and the Gene Idea)"
+
+  - id: "mendelian-inheritance-probability-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Which of the following statements is correct in describing the terms monohybrid cross and dihybrid cross?"
+    options:
+      - key: "A"
+        text: "A monohybrid cross involves a single parent, whereas a dihybrid cross involves two parents."
+      - key: "B"
+        text: "A dihybrid cross involves organisms that are heterozygous for two characters that are being studied, and a monohybrid cross involves organisms that are heterozygous for only one character being studied."
+      - key: "C"
+        text: "A monohybrid cross is performed for one generation, whereas a dihybrid cross is performed for two generations."
+      - key: "D"
+        text: "A monohybrid cross results in a 9:3:3:1 ratio, whereas a dihybrid cross gives a 3:1 ratio."
+    answer: "B"
+    explanation: "A monohybrid cross tracks a single character between individuals heterozygous for that one gene, while a dihybrid cross simultaneously tracks two characters between individuals heterozygous for both genes."
+    sourceRef: "Campbell Biology 11e, Ch. 14 (Mendel and the Gene Idea)"
+
+  - id: "mendelian-inheritance-probability-03"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "Which of the following statements correctly explains the fact that all seven of the pea plant traits studied by Mendel obeyed the principle of independent assortment?"
+    options:
+      - key: "A"
+        text: "None of the traits obeyed the law of segregation."
+      - key: "B"
+        text: "The diploid number of chromosomes in the pea plants was seven."
+      - key: "C"
+        text: "All of the genes controlling the traits were located on the same chromosome."
+      - key: "D"
+        text: "All of the genes controlling the traits behaved as if they were on different chromosomes."
+    answer: "D"
+    explanation: "Independent assortment appears to hold for all seven traits because, even though pea plants have only seven chromosomes, the genes for these particular seven traits happen to be far enough apart or on different enough chromosomes that they assort as if unlinked."
+    sourceRef: "Campbell Biology 11e, Ch. 14 (Mendel and the Gene Idea)"
+
+  - id: "mendelian-inheritance-probability-04"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Albinism is a recessive trait. A man and woman both show normal pigmentation, but both have one parent who has albinism (without melanin pigmentation). What is the probability that their first child will have albinism?"
+    options:
+      - key: "A"
+        text: "0"
+      - key: "B"
+        text: "1/2"
+      - key: "C"
+        text: "1/4"
+      - key: "D"
+        text: "1"
+    answer: "C"
+    explanation: "Both parents are unaffected carriers (Aa), since each had an albino (aa) parent; an Aa × Aa cross gives a 1/4 chance of an aa (albino) child."
+    sourceRef: "Campbell Biology 11e, Ch. 14 (Mendel and the Gene Idea)"
+
+  - id: "mendelian-inheritance-probability-05"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Which of the following statements about independent assortment or segregation is correct?"
+    options:
+      - key: "A"
+        text: "The law of independent assortment describes the behavior of two or more genes relative to one another."
+      - key: "B"
+        text: "The law of segregation describes the behavior of two or more genes relative to one another."
+      - key: "C"
+        text: "The law of independent assortment is accounted for by observations of prophase I of meiosis."
+      - key: "D"
+        text: "The law of segregation is accounted for by anaphase of mitosis."
+    answer: "A"
+    explanation: "The law of independent assortment specifically concerns how alleles of two or more different genes are distributed into gametes relative to one another, distinct from the law of segregation, which concerns the two alleles of a single gene."
+    sourceRef: "Campbell Biology 11e, Ch. 14 (Mendel and the Gene Idea)"

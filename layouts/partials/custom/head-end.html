@@ -36,6 +36,7 @@
 {{- if or (hasPrefix $path "/biolab/") (hasPrefix $path "/doubts/") -}}{{ $extraStyles = $extraStyles | append "css/biolab.css" }}{{- end -}}
 {{- if hasPrefix $path "/resources/" -}}{{ $extraStyles = $extraStyles | append "css/challenges.css" }}{{- end -}}
 {{- if hasPrefix $path "/biology-olympiad-preparation/" -}}{{ $extraStyles = $extraStyles | append "css/prep-guide.css" }}{{- end -}}
+{{- if hasPrefix $path "/games/" -}}{{ $extraStyles = $extraStyles | append "css/games.css" }}{{- end -}}
 {{- range $extraStyles -}}
   {{- $css := resources.Get . -}}
   {{- if hugo.IsProduction -}}
@@ -47,9 +48,13 @@
 {{- end -}}
 {{- if hasPrefix $path "/biology-olympiad-preparation/" -}}
 <script src="{{ "js/prep-guide-tour.js" | relURL }}" defer></script>
+<script src="{{ "js/olympiad-directory.js" | relURL }}" defer></script>
 {{- end -}}
 {{- if hasPrefix $path "/resources/" -}}
 <script src="{{ "js/page-rating.js" | relURL }}" defer></script>
+{{- end -}}
+{{- if hasPrefix $path "/games/" -}}
+<script src="{{ "js/bio-ludo.js" | relURL }}" defer></script>
 {{- end -}}
 <!-- Weight sets below are audited against actual usage in assets/css/custom.css
      (see the Phase-3 performance pass): Cormorant Garamond gains 300 (used at
@@ -72,9 +77,12 @@
   window.__SUPABASE_URL = {{ getenv "HUGO_SUPABASE_URL" | jsonify | safeJS }};
   window.__SUPABASE_ANON_KEY = {{ getenv "HUGO_SUPABASE_ANON_KEY" | jsonify | safeJS }};
 </script>
+{{- partial "scripts/posthog.html" . }}
+{{- partial "scripts/ga4.html" . }}
 <script src="{{ "js/papers-auth.js" | relURL }}" defer></script>
 <script src="{{ "js/papers-nav-account.js" | relURL }}" defer></script>
 <script src="{{ "js/staff-welcome.js" | relURL }}" defer></script>
 <script src="{{ "js/site-tutorial.js" | relURL }}" defer></script>
 <script src="{{ "js/country-counter.js" | relURL }}" defer></script>
 <script src="{{ "js/olympiad-map.js" | relURL }}" defer></script>
+<script src="{{ "js/posthog-events.js" | relURL }}" defer></script>

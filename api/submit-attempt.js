@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
 const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
+const { captureError } = require('./_lib/sentry');
 
 const ID_PATTERN = /^[a-z0-9-]+$/;
 
@@ -64,6 +65,7 @@ module.exports = async (req, res) => {
     await handle(req, res);
   } catch (e) {
     console.error('[submit-attempt] unhandled error:', e);
+    await captureError(e, { route: 'submit-attempt' });
     if (!res.headersSent) res.status(500).json({ error: 'Internal error' });
   }
 };
@@ -96,6 +98,7 @@ async function handle(req, res) {
     userId = data.user.id;
   } catch (e) {
     console.error('[submit-attempt] auth check threw:', e);
+    await captureError(e, { route: 'submit-attempt', stage: 'auth-check' });
     res.status(500).json({ error: 'Auth check failed' });
     return;
   }
@@ -156,6 +159,7 @@ async function handle(req, res) {
 
   if (insertError) {
     console.error('[submit-attempt] insert failed:', insertError);
+    await captureError(insertError, { route: 'submit-attempt', stage: 'insert' });
     res.status(500).json({ error: 'Could not save attempt' });
     return;
   }

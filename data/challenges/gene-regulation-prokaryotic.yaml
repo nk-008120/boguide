@@ -61,15 +61,15 @@ questions:
       | Expressed |  |  | ✔ |  |  |
       | Not Expressed | ✔ | ✔ |  | ✔ | ✔ |
 
-      A – No tryptophan means the trp repressor is inactive, so it cannot bind the substituted operator. However, glucose is present, causing low cAMP levels. CAP–cAMP does not effectively activate the lac promoter. Therefore, the lac structural genes are not significantly expressed.
+      A: No tryptophan means the trp repressor is inactive, so it cannot bind the substituted operator. However, glucose is present, causing low cAMP levels. CAP-cAMP does not effectively activate the lac promoter. Therefore, the lac structural genes are not significantly expressed.
 
-      B – Absence of glucose allows high cAMP, so CAP–cAMP could activate transcription. But tryptophan is present. Tryptophan acts as a corepressor and activates the trp repressor. The activated trp repressor binds to the substituted trp operator and prevents transcription. Therefore, the lac operon genes are not expressed.
+      B: Absence of glucose allows high cAMP, so CAP-cAMP could activate transcription. But tryptophan is present. Tryptophan acts as a corepressor and activates the trp repressor. The activated trp repressor binds to the substituted trp operator and prevents transcription. Therefore, the lac operon genes are not expressed.
 
-      C – No glucose → high cAMP → CAP–cAMP activates transcription. No tryptophan → trp repressor remains inactive and cannot bind the substituted operator. Therefore, there is no repression at the operator. The presence of lactose is actually not essential for removing repression in this modified operon, because the LacI repressor can no longer bind the operator. Thus, the genes are expressed.
+      C: No glucose → high cAMP → CAP-cAMP activates transcription. No tryptophan → trp repressor remains inactive and cannot bind the substituted operator. Therefore, there is no repression at the operator. The presence of lactose is actually not essential for removing repression in this modified operon, because the LacI repressor can no longer bind the operator. Thus, the genes are expressed.
 
-      D – No glucose means CAP–cAMP is available to activate transcription. However, tryptophan activates the trp repressor. The active trp repressor binds the substituted trp operator. Lactose cannot remove the trp repressor. Therefore, the lac structural genes are not expressed.
+      D: No glucose means CAP-cAMP is available to activate transcription. However, tryptophan activates the trp repressor. The active trp repressor binds the substituted trp operator. Lactose cannot remove the trp repressor. Therefore, the lac structural genes are not expressed.
 
-      E - No glucose means CAP–cAMP can activate the lac promoter. But tryptophan activates the trp repressor. The active trp repressor binds the trp operator, which has replaced the lac operator. IPTG normally binds the LacI repressor and prevents it from binding the lac operator. Here, however, the relevant repression is caused by the trp repressor, not LacI. Therefore, IPTG cannot induce transcription, and the lac operon genes remain not expressed.
+      E - No glucose means CAP-cAMP can activate the lac promoter. But tryptophan activates the trp repressor. The active trp repressor binds the trp operator, which has replaced the lac operator. IPTG normally binds the LacI repressor and prevents it from binding the lac operator. Here, however, the relevant repression is caused by the trp repressor, not LacI. Therefore, IPTG cannot induce transcription, and the lac operon genes remain not expressed.
   - id: 3
     difficulty: "medium"
     source: "INBO"
@@ -90,22 +90,22 @@ questions:
       A.
        The presence of glucose prevents formation of CAP-cAMP complex limiting operon induction even when lactose is available.B
       . Absence of glucose permits efficient uptake of lactose, but allolactose cannot inactivate the repressor unless cAMP is degraded, hence transcription remains low.C
-      . When both lactose and glucose are absent, the lac operon is repressed solely because CAP– cAMP complex binds strongly to the promoter, preventing RNA polymerase attachment.D
+      . When both lactose and glucose are absent, the lac operon is repressed solely because CAP- cAMP complex binds strongly to the promoter, preventing RNA polymerase attachment.D
       . Glucose enhances adenylate cyclase activity, producing high cAMP that represses lac operon transcription until lactose concentration falls below threshold.
     solution: |
 
-      Ans – A
+      Ans: A
 
       Evaluating the statements:
 
       A. CorrectSolution - 
-      In the presence of glucose, intracellular cAMP levels are low, so formation of the CAP–cAMP complex is reduced. Thus, even when lactose removes the repressor, transcription remains relatively low due to the absence of strong CAP-mediated activation.
+      In the presence of glucose, intracellular cAMP levels are low, so formation of the CAP-cAMP complex is reduced. Thus, even when lactose removes the repressor, transcription remains relatively low due to the absence of strong CAP-mediated activation.
 
       B. IncorrectSolution - 
       Allolactose does inactivate the Lac repressor. cAMP does not need to be degraded for this to occur; in fact, high cAMP promotes CAP binding and transcription.
 
       C. Incorrect
-      Solution - CAP–cAMP enhances, rather than prevents, RNA polymerase binding. In condition C, transcription is low because the Lac repressor is bound to the operator.
+      Solution - CAP-cAMP enhances, rather than prevents, RNA polymerase binding. In condition C, transcription is low because the Lac repressor is bound to the operator.
 
       D. Incorrect
       Solution - Glucose generally reduces adenylate cyclase activity and lowers cAMP levels. It does not increase cAMP to repress the lac operon.

@@ -1,0 +1,93 @@
+topic: "mitochondria-chloroplasts-structure-origin"
+topicName: "Mitochondria & Chloroplasts"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "mitochondria-chloroplasts-structure-origin-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Suppose a cell has the following molecules and structures: enzymes, DNA, ribosomes, plasma membrane, and mitochondria. It could be a cell from ________."
+    options:
+      - key: "A"
+        text: "a bacterium, but not a eukaryote"
+      - key: "B"
+        text: "an animal, but not a plant"
+      - key: "C"
+        text: "nearly any eukaryotic organism"
+      - key: "D"
+        text: "a plant, but not an animal"
+    answer: "C"
+    explanation: "Every eukaryotic cell type has DNA, ribosomes, a plasma membrane, and mitochondria (the last being absent only in a few highly reduced lineages), so this combination of structures is consistent with nearly any eukaryote, not a bacterium (which lacks mitochondria) or a single kingdom."
+    sourceRef: "Campbell Biology 11e, Ch. 6 (A Tour of the Cell)"
+
+  - id: "mitochondria-chloroplasts-structure-origin-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "In mitochondria, an electron transport chain pumps protons from the matrix into the intermembrane space, whereas in chloroplasts, an electron transport chain pumps protons from the ________."
+    options:
+      - key: "A"
+        text: "matrix to the stroma"
+      - key: "B"
+        text: "stroma to the thylakoid space"
+      - key: "C"
+        text: "thylakoid space to the matrix"
+      - key: "D"
+        text: "thylakoid space to the stroma"
+    answer: "B"
+    explanation: "In the chemiosmotic mechanism, mitochondria pump protons from the matrix into the intermembrane space, while the analogous chloroplast electron transport chain pumps protons from the stroma into the thylakoid space, building the gradient that drives ATP synthase from that compartment back out."
+    sourceRef: "Campbell Biology 11e, Ch. 10 (Photosynthesis)"
+
+  - id: "mitochondria-chloroplasts-structure-origin-03"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "Many parasitic members of the excavates lack plastids and have highly reduced mitochondria. Which of the following statements explains these observations?"
+    options:
+      - key: "A"
+        text: "These parasites live in dark, low-oxygen conditions, and therefore it was adaptive to move all plastid and mitochondrial genes to the nucleus."
+      - key: "B"
+        text: "The original, eukaryotic ancestors of these parasites did not engulf prokaryotes."
+      - key: "C"
+        text: "These parasites live in dark, low-oxygen conditions and therefore loss of genes for plastids and mitochondria did not result in lower fitness."
+      - key: "D"
+        text: "In the future, natural selection will favor descendants that acquire new plastid genes from today's prokaryotes."
+    answer: "C"
+    explanation: "Because these excavates live in dark, anaerobic or low-oxygen habitats where photosynthesis and aerobic respiration contribute little to fitness, losing plastid and mitochondrial genes carried no fitness cost, so there was no selective pressure to retain them."
+    sourceRef: "Campbell Biology 11e, Ch. 28 (Protists)"
+
+  - id: "mitochondria-chloroplasts-structure-origin-04"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Some photosynthetic organisms contain chloroplasts that lack photosystem II, yet are able to survive. Which of the following approaches would be the best way to detect the lack of photosystem II in these organisms?"
+    options:
+      - key: "A"
+        text: "Determine whether they have thylakoid membranes."
+      - key: "B"
+        text: "Determine whether they consume CO2 in the dark."
+      - key: "C"
+        text: "Determine whether they produce O2 in the light."
+      - key: "D"
+        text: "Determine the action spectrum for photosynthesis in these organisms."
+    answer: "C"
+    explanation: "Photosystem II is the water-splitting, O2-releasing photosystem; testing whether the organism still produces O2 in the light directly reveals whether a functional photosystem II is present, without needing to isolate the protein itself."
+    sourceRef: "Campbell Biology 11e, Ch. 10 (Photosynthesis)"
+
+  - id: "mitochondria-chloroplasts-structure-origin-05"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Refer to the following information to answer the question. Fossils of Lystrosaurus, a dicynodont therapsid, are most common in parts of modern-day South America, South Africa, Madagascar, India, South Australia, and Antarctica. The animal apparently lived in arid regions and was mostly herbivorous. It originated during the mid- Permian period, survived the Permian extinction, and dwindled by the late Triassic, though there is evidence of a relict population in Australia during the Cretaceous period. Some dicynodonts had two large tusks, extending down from their upper jaws. The tusks were not used for food gathering, and in some species were limited to males. Food was gathered using an otherwise toothless beak. Judging from the fossil record in sedimentary rocks, these pig-sized organisms were the most common mammal-like reptiles of the Permian. What is thought to be the correct sequence of these events, from earliest to most recent, in the evolution of life on Earth? 1. origin of mitochondria 2. origin of multicellular eukaryotes 3. origin of chloroplasts 4. origin of cyanobacteria 5. origin of fungal-plant symbioses"
+    options:
+      - key: "A"
+        text: "4, 3, 2, 1, 5"
+      - key: "B"
+        text: "4, 1, 2, 3, 5"
+      - key: "C"
+        text: "4, 1, 3, 2, 5"
+      - key: "D"
+        text: "4, 3, 1, 5, 2"
+    answer: "C"
+    explanation: "This is a distractor-laden question: sorting the sequence into '4 (cyanobacteria) → 1 (mitochondria, from an early alpha-proteobacterial endosymbiont) → 3 (chloroplasts, from a later cyanobacterial endosymbiont) → 2 (multicellular eukaryotes) → 5 (fungal-plant symbioses)' matches the accepted order of these evolutionary origins; the long Lystrosaurus paragraph is irrelevant background not needed to answer it."
+    sourceRef: "Campbell Biology 11e, Ch. 25 (The History of Life on Earth)"

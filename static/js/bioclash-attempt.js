@@ -1000,6 +1000,7 @@
         if (!silent) window.alert(result.body.error || 'Could not submit.');
         return;
       }
+      if (window.PostHogEvents) window.PostHogEvents.trackBioclashAttemptSubmitted(PAPER_ID);
       renderReport(result.body);
     });
   }
@@ -1041,6 +1042,7 @@
             if (readyStatus) readyStatus.textContent = result.body.error || 'Could not start.';
             return;
           }
+          if (window.PostHogEvents) window.PostHogEvents.trackBioclashAttemptStarted(PAPER_ID);
           renderState(result.body);
         });
       });

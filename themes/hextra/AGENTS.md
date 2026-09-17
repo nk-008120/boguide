@@ -98,7 +98,7 @@ The `docs/` directory serves as both documentation and testing ground:
 
 Tailwind CSS relies on `docs/hugo_stats.json` to know which HTML tags, classes, and IDs are actually used in the built site, so it can tree-shake unused styles. When you modify layouts, partials, or shortcodes you must **regenerate `hugo_stats.json` first**, then rebuild the CSS:
 
-1. **Generate `docs/hugo_stats.json`** — Run Hugo with the `dev.toml` config (which sets `build.buildStats.enable = true`):
+1. **Generate `docs/hugo_stats.json`**, Run Hugo with the `dev.toml` config (which sets `build.buildStats.enable = true`):
 
    ```bash
    # Using npm (starts a dev server that writes hugo_stats.json on every rebuild):
@@ -108,7 +108,7 @@ Tailwind CSS relies on `docs/hugo_stats.json` to know which HTML tags, classes, 
    hugo --config=hugo.yaml,../dev.toml --themesDir=../.. --source=docs
    ```
 
-2. **Build the CSS** — With an up-to-date `hugo_stats.json` in place, compile the stylesheet:
+2. **Build the CSS**, With an up-to-date `hugo_stats.json` in place, compile the stylesheet:
 
    ```bash
    npm run build:css

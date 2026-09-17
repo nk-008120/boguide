@@ -1,0 +1,93 @@
+topic: "cell-theory-prokaryotes-eukaryotes"
+topicName: "Cell Theory, Prokaryotes & Eukaryotes"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "cell-theory-prokaryotes-eukaryotes-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Which of the following macromolecules enter the nucleus of a eukaryotic cell through pores in the nuclear membrane?"
+    options:
+      - key: "A"
+        text: "ribosomal proteins"
+      - key: "B"
+        text: "mRNA"
+      - key: "C"
+        text: "rRNA"
+      - key: "D"
+        text: "phospholipids"
+    answer: "A"
+    explanation: "mRNA is transcribed in the nucleus and must exit through nuclear pores to reach ribosomes in the cytosol; ribosomal proteins, by contrast, are made in the cytosol and imported into the nucleus to be assembled into ribosomal subunits, not exported."
+    sourceRef: "Campbell Biology 11e, Ch. 6 (A Tour of the Cell)"
+
+  - id: "cell-theory-prokaryotes-eukaryotes-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "In comparison to eukaryotes, prokaryotes ________."
+    options:
+      - key: "A"
+        text: "are more structurally complex"
+      - key: "B"
+        text: "are larger"
+      - key: "C"
+        text: "are smaller"
+      - key: "D"
+        text: "do not have membranes"
+    answer: "C"
+    explanation: "Prokaryotic cells lack a nucleus and membrane-bound organelles, so they are structurally simpler and, on average, considerably smaller in volume than eukaryotic cells."
+    sourceRef: "Campbell Biology 11e, Ch. 1 (Evolution, the Themes of Biology, and Scientific Inquiry)"
+
+  - id: "cell-theory-prokaryotes-eukaryotes-03"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Which of the following is a major difference between prokaryotic cells and eukaryotic cells?"
+    options:
+      - key: "A"
+        text: "Prokaryotic cells have cell walls, while eukaryotic cells do not."
+      - key: "B"
+        text: "Eukaryotic cells have flagella, while prokaryotic cells do not."
+      - key: "C"
+        text: "Eukaryotic cells have membrane-bound organelles, while prokaryotic cells do not."
+      - key: "D"
+        text: "Prokaryotic cells are generally larger than eukaryotic cells."
+    answer: "C"
+    explanation: "Membrane-bound organelles (a nucleus, ER, Golgi, mitochondria, etc.) are the defining structural feature that separates eukaryotic cells from prokaryotic cells; cell walls and flagella occur in both groups, and prokaryotes are the smaller cells on average."
+    sourceRef: "Campbell Biology 11e, Ch. 6 (A Tour of the Cell)"
+
+  - id: "cell-theory-prokaryotes-eukaryotes-04"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Which domains of life are classified as prokaryotes?"
+    options:
+      - key: "A"
+        text: "Bacteria and Eukarya"
+      - key: "B"
+        text: "Bacteria and Archaea"
+      - key: "C"
+        text: "Archaea and Fungi"
+      - key: "D"
+        text: "Bacteria and Protista"
+    answer: "B"
+    explanation: "The three domains of life are Bacteria, Archaea, and Eukarya; only Bacteria and Archaea lack a membrane-bound nucleus and so are classified as prokaryotes."
+    sourceRef: "Campbell Biology 11e, Ch. 6 (A Tour of the Cell)"
+
+  - id: "cell-theory-prokaryotes-eukaryotes-05"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "What is the function of the nuclear pore complex found in eukaryotes?"
+    options:
+      - key: "A"
+        text: "It regulates the movement of proteins and RNAs into and out of the nucleus."
+      - key: "B"
+        text: "It synthesizes the proteins required to copy DNA and make mRNA."
+      - key: "C"
+        text: "It synthesizes secreted proteins."
+      - key: "D"
+        text: "It assembles ribosomes from raw materials that are synthesized in the nucleus."
+    answer: "A"
+    explanation: "Nuclear pore complexes are the channels embedded in the nuclear envelope that regulate which proteins and RNAs pass between the nucleoplasm and cytosol, rather than synthesizing anything themselves."
+    sourceRef: "Campbell Biology 11e, Ch. 6 (A Tour of the Cell)"

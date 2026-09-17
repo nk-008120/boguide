@@ -22,7 +22,7 @@ questions:
 
       Evaluating the statements,
 
-      A – IncorrectSolution - 
+      A: IncorrectSolution - 
       Reverses specific DNA damage directly. No role of BRCA1.
 
       B - IncorrectSolution -
@@ -90,7 +90,7 @@ questions:
       E. One of a pair of homologous chromosomes has been lost via nondisjunction.
     solution: |
 
-      Answer – A) Portions of non-homologous chromosomes have been translocated.
+      Answer: A) Portions of non-homologous chromosomes have been translocated.
   - id: 4
     difficulty: "hard"
     source: "IBO"
@@ -108,9 +108,9 @@ questions:
       D. The use of PARP inhibitors is a synthetic lethal approach to target BRCA2 deficient tumors.
     solution: |
 
-      A – FB – T
-      C – F
-      D – T
+      A: FB: T
+      C: F
+      D: T
   - id: 5
     difficulty: "hard"
     source: "IBO"

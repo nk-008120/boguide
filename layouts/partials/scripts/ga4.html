@@ -1,0 +1,10 @@
+{{- $ga4Id := getenv "HUGO_GA4_MEASUREMENT_ID" -}}
+{{- if $ga4Id -}}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ $ga4Id }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', {{ $ga4Id | jsonify | safeJS }});
+</script>
+{{- end -}}

@@ -93,7 +93,7 @@
         return html;
       })
       .catch(function () {
-        contentCache[id] = '<p><em>Could not load this question — check your connection and try again.</em></p>';
+        contentCache[id] = '<p><em>Could not load this question, check your connection and try again.</em></p>';
         return contentCache[id];
       });
   }
@@ -435,7 +435,7 @@
 
     else if (subjects.length >= 4 && critical.length >= Math.ceil(subjects.length * 0.5)) {
       recs.push({ tone: 'critical', title: 'Start from the fundamentals',
-        body: 'You scored under 40% in ' + critical.length + ' of ' + subjects.length + ' subjects — broad enough that it is worth building up the basics before drilling more IBO questions. The guide’s own recommended starting point is Cell Theory, Prokaryotes & Eukaryotes.',
+        body: 'You scored under 40% in ' + critical.length + ' of ' + subjects.length + ' subjects, broad enough that it is worth building up the basics before drilling more IBO questions. The guide’s own recommended starting point is Cell Theory, Prokaryotes & Eukaryotes.',
         link: '/resources/1-cell-molecular/cell-theory-prokaryotes-eukaryotes/', linkLabel: 'Start with Cell Theory' });
     }
 
@@ -449,25 +449,25 @@
 
     if (subjects.length && subjects[0].pct < 30 && (subjects.length === 1 || (subjects[1] && subjects[1].pct - subjects[0].pct > 25))) {
       recs.push({ tone: 'critical', title: subjects[0].name + ' stands out as your weakest spot',
-        body: 'At ' + Math.round(subjects[0].pct) + '%, this one subject is dragging behind the rest — worth a dedicated study session before your next attempt.',
+        body: 'At ' + Math.round(subjects[0].pct) + '%, this one subject is dragging behind the rest, worth a dedicated study session before your next attempt.',
         link: subjects[0].link, linkLabel: 'Study ' + subjects[0].name });
     }
 
     if (markedWrong.length) {
       recs.push({ tone: 'neutral', title: 'Revisit what you flagged',
         body: 'You marked ' + markedWrong.length + ' question' + (markedWrong.length === 1 ? '' : 's') + ' for review, and ' +
-          (markedWrong.length === 1 ? 'it was' : 'they were') + ' not fully correct — that instinct was right. ' +
+          (markedWrong.length === 1 ? 'it was' : 'they were') + ' not fully correct, that instinct was right. ' +
           markedWrong.map(function (q) { return q.number; }).join(', ') + (markedWrong.length === 1 ? ' is' : ' are') + ' worth a second look.' });
     }
 
     if (strong.length) {
       recs.push({ tone: 'positive', title: 'Keep doing what’s working',
-        body: strong.map(function (s) { return s.name; }).join(', ') + (strong.length === 1 ? ' is' : ' are') + ' solid (85%+) — no action needed there.' });
+        body: strong.map(function (s) { return s.name; }).join(', ') + (strong.length === 1 ? ' is' : ' are') + ' solid (85%+), no action needed there.' });
     }
 
     if (slow.length >= 3) {
       recs.push({ tone: 'neutral', title: 'Watch your pacing',
-        body: slow.length + ' questions took far longer than your own average — in a real timed sitting that risks not finishing the paper. Practising those question types untimed first, then timed, tends to help.' });
+        body: slow.length + ' questions took far longer than your own average, in a real timed sitting that risks not finishing the paper. Practising those question types untimed first, then timed, tends to help.' });
     }
 
     if (visitedCount < PROBLEMS.length * 0.5) {
@@ -477,7 +477,7 @@
 
     if (!recs.length) {
       recs.push({ tone: 'neutral', title: 'Solid, well-rounded attempt',
-        body: 'No single subject or pattern stands out as urgent here — steady practice across the board is the main lever left.' });
+        body: 'No single subject or pattern stands out as urgent here, steady practice across the board is the main lever left.' });
     }
 
     recs.push({ tone: 'neutral', title: 'Track your progress',
@@ -585,7 +585,7 @@
     window.PapersAuth.getSession().then(function (session) {
       if (!session) {
         container.innerHTML = '<p class="attempt-leaderboard-prompt">' +
-          '<a href="/account/">Log in</a> to save this result to your dashboard or the leaderboard — completely optional.</p>';
+          '<a href="/account/">Log in</a> to save this result to your dashboard or the leaderboard, completely optional.</p>';
         return;
       }
       container.innerHTML =
@@ -635,6 +635,7 @@
         return body;
       });
     }).then(function (result) {
+      if (window.PostHogEvents) window.PostHogEvents.trackPaperAttemptSubmitted(DATA.olympiad, DATA.year, DATA.roundId, result.scorePct);
       var parts = [];
       if (result.showOnDashboard) {
         parts.push('saved to your <a href="/dashboard/">dashboard</a>');
@@ -643,7 +644,7 @@
         parts.push('rank #' + result.rank + ' on the <a href="' + DATA.basePath + 'leaderboard/">leaderboard</a>');
       }
       msg.innerHTML = 'Server score: ' + result.totalCorrect + '/' + result.totalStatements +
-        ' (' + result.scorePct + '%) — ' + parts.join(', ') + '.';
+        ' (' + result.scorePct + '%), ' + parts.join(', ') + '.';
     }).catch(function (err) {
       if (btn) btn.disabled = false;
       setMsgError(msg, 'Error: ' + err.message);
@@ -683,7 +684,7 @@
       .sort(function (a, b) { return b.timeSec - a.timeSec; }).slice(0, 5);
     var outlierHTML = outliers.length ? (
       '<ul class="attempt-outlier-list">' + outliers.map(function (q) {
-        return '<li>' + q.number + ' — ' + Math.round(q.timeSec / 60) + ' min (avg was ' + Math.round(avgTime / 60) + ' min)</li>';
+        return '<li>' + q.number + ', ' + Math.round(q.timeSec / 60) + ' min (avg was ' + Math.round(avgTime / 60) + ' min)</li>';
       }).join('') + '</ul>'
     ) : '<p>No question took disproportionately long.</p>';
 
@@ -694,7 +695,7 @@
     var recommendations = buildRecommendations(report);
 
     reportScreen.innerHTML =
-      '<h2>Test Report — ' + escapeHTML(report.roundName) + '</h2>' +
+      '<h2>Test Report, ' + escapeHTML(report.roundName) + '</h2>' +
       '<div class="attempt-score-hero">' + report.totalCorrect + ' / ' + report.totalStatements + '<span class="attempt-score-pct"> (' + pct + '%)</span></div>' +
       fsNote +
       '<div class="attempt-leaderboard-block" id="attempt-leaderboard-block"></div>' +
@@ -734,7 +735,7 @@
     lastReportSummaryEl.innerHTML =
       '<p class="attempt-last-report">Last attempt: <strong>' + last.totalCorrect + ' / ' + last.totalStatements +
       '</strong> (' + pct + '%) on ' + new Date(last.submittedAt).toLocaleString() +
-      ' — <a href="#" id="attempt-view-last-report">view report</a></p>';
+      ', <a href="#" id="attempt-view-last-report">view report</a></p>';
     var link = document.getElementById('attempt-view-last-report');
     if (link) link.addEventListener('click', function (e) {
       e.preventDefault();

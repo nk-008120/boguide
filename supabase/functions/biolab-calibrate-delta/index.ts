@@ -1,32 +1,25 @@
-// BiOLab: reference-card delta calibration -- Session 2 validation prototype.
-//
-// NOT DEPLOYED. No Supabase CLI or project credentials were available in the
-// session that wrote this (no supabase/config.toml, no .env, CLI not
-// installed) -- see context/biolab-session2/README.md for what was and
-// wasn't possible to verify as a result. This file is the server-side port
-// of the exact same algorithm implemented client-side in
-// context/biolab-session2/capture-harness.html, which WAS run and validated
-// (synthetic-image self-test, then real multi-phone/lighting captures --
-// see the README for numbers). Port this file's math 1:1 if the two drift;
-// don't treat this file as independently tested.
-//
-// Card geometry (uv positions of each patch/tube, relative to the 4 black
-// corner fiducials) matches context/biolab-session2/reference-card.html --
-// if that layout changes, these constants must change with it.
-//
-// Request:  POST { image: "data:image/jpeg;base64,..." }
-// Response: 200 { quality, corner_quality, calibration_inputs } | 4xx { error }
-// calibration_inputs matches (and additively extends) the jsonb shape
-// already seeded in supabase/migrations/015_biolab_schema.sql's
-// biolab_reference_results row -- delta_r/delta_g/delta_b, reference_white_rgb,
-// capture_conditions are the pre-existing fields; everything else here is new.
-
 import { Image } from "https://deno.land/x/imagescript@1.2.17/mod.ts";
+import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
+
+const SITE_ORIGIN = Deno.env.get("SITE_ORIGIN") || "https://bioguide.world";
+const MAX_UPLOAD_BYTES = 8 * 1024 * 1024;
 
 const CORS_HEADERS = {
-  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Origin": SITE_ORIGIN,
   "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
 };
+
+async function verifyUser(req: Request): Promise<boolean> {
+  const authHeader = req.headers.get("authorization") || "";
+  const token = authHeader.replace(/^Bearer\s+/i, "").trim();
+  if (!token) return false;
+  const supabaseUrl = Deno.env.get("SUPABASE_URL");
+  const supabaseAnonKey = Deno.env.get("SUPABASE_ANON_KEY");
+  if (!supabaseUrl || !supabaseAnonKey) return false;
+  const supabase = createClient(supabaseUrl, supabaseAnonKey);
+  const { data, error } = await supabase.auth.getUser(token);
+  return !error && !!data?.user;
+}
 
 type RGB = { r: number; g: number; b: number };
 type Point = { x: number; y: number };
@@ -55,10 +48,9 @@ function clamp01(v: number) {
   return Math.max(0, Math.min(1, v));
 }
 
-// Pixel accessor over a decoded ImageScript bitmap (RGBA packed).
 function makeSampler(img: Image) {
   const w = img.width, h = img.height;
-  const data = img.bitmap; // Uint8Array/Uint8ClampedArray, RGBA
+  const data = img.bitmap; 
   return {
     w, h,
     at(x: number, y: number): RGB {
@@ -129,6 +121,19 @@ Deno.serve(async (req) => {
     });
   }
 
+  const contentLength = Number(req.headers.get("content-length") || 0);
+  if (contentLength > MAX_UPLOAD_BYTES * 2) {
+    return new Response(JSON.stringify({ error: "payload too large" }), {
+      status: 413, headers: { ...CORS_HEADERS, "Content-Type": "application/json" },
+    });
+  }
+
+  if (!(await verifyUser(req))) {
+    return new Response(JSON.stringify({ error: "unauthorized" }), {
+      status: 401, headers: { ...CORS_HEADERS, "Content-Type": "application/json" },
+    });
+  }
+
   try {
     const body = await req.json();
     const dataUrl: string | undefined = body?.image;
@@ -138,6 +143,12 @@ Deno.serve(async (req) => {
       });
     }
     const b64 = dataUrl.includes(",") ? dataUrl.split(",")[1] : dataUrl;
+    const estimatedBytes = Math.floor((b64.length * 3) / 4);
+    if (estimatedBytes > MAX_UPLOAD_BYTES) {
+      return new Response(JSON.stringify({ error: "image too large" }), {
+        status: 413, headers: { ...CORS_HEADERS, "Content-Type": "application/json" },
+      });
+    }
     const bytes = Uint8Array.from(atob(b64), (c) => c.charCodeAt(0));
 
     let decoded = await Image.decode(bytes);
@@ -189,13 +200,11 @@ Deno.serve(async (req) => {
     ) / 6;
 
     const calibration_inputs = {
-      // pre-existing fields (015_biolab_schema.sql seed shape) -- kept in the same units/meaning
       delta_r: Math.round(delta.r * 255),
       delta_g: Math.round(delta.g * 255),
       delta_b: Math.round(delta.b * 255),
       reference_white_rgb: [readings.white.r, readings.white.g, readings.white.b].map(Math.round),
       capture_conditions: body?.capture_conditions ?? null,
-      // additive fields -- new in Session 2, don't collide with the seed shape
       reference_black_rgb: [readings.black.r, readings.black.g, readings.black.b].map(Math.round),
       sample_tube_rgb: [readings.sample.r, readings.sample.g, readings.sample.b].map(Math.round),
       blank_tube_rgb: [readings.blank.r, readings.blank.g, readings.blank.b].map(Math.round),

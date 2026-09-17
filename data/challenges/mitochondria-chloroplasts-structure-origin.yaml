@@ -43,7 +43,7 @@ questions:
       D. If z is a mixture of oligomycin and DNP, the ATP synthesis will not level off.
     solution: |
 
-      Ans – A - T, B - T, C - T, D – F
+      Ans: A - T, B - T, C - T, D: F
   - id: 4
     difficulty: "medium"
     source: "INBO"
@@ -85,7 +85,7 @@ questions:
 
       Hypothesis: All respiratory protein complexes contain at least one subunit synthesized using mitochondrial ribosomes.
 
-      To test this hypothesis, isolated human cells are subjected to a pulse–chase experiment using a radioactive amino acid. During the pulse, cells are divided into two groups:
+      To test this hypothesis, isolated human cells are subjected to a pulse-chase experiment using a radioactive amino acid. During the pulse, cells are divided into two groups:
 
       Group 1: Cytoplasmic protein synthesis is inhibited, while mitochondrial protein synthesis can continue. Group 2: Mitochondrial protein synthesis is inhibited, while cytoplasmic protein synthesis can continue.
 
@@ -102,4 +102,4 @@ questions:
       D. If Complex IV shows radioactive labelling in both groups, this would support the conclusion that its subunits are encoded by both nuclear DNA and mtDNA.
     solution: |
 
-      Ans – A - T, B - F, C - T, D - T
+      Ans: A - T, B - F, C - T, D - T

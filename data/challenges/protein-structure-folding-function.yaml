@@ -19,9 +19,9 @@ questions:
       . ionic bond; disulphide bridge; hydrophobic interaction and hydrogen bond
     solution: |
 
-      Answer – A
+      Answer: A
 
-      Solution – M shows interaction between opposite charges, thus it is ionic bond. N shows bond between 2 sulfur centers, thus it is disulfide bond. O shows hydrogen bond while P shows hydrophobic interaction.
+      Solution: M shows interaction between opposite charges, thus it is ionic bond. N shows bond between 2 sulfur centers, thus it is disulfide bond. O shows hydrogen bond while P shows hydrophobic interaction.
   - id: 2
     difficulty: "easy"
     source: "USABO"
@@ -37,15 +37,15 @@ questions:
        Van der Waals force: an attractive force that occurs due to resonating dipole moment when atoms or groups of atoms are very close together
     solution: |
 
-      Answer – B
+      Answer: B
 
       Evaluating each statement,
 
-      A - CorrectSolution – 
+      A - CorrectSolution: 
       Attraction involving H covalently bonded to an electronegative atom and another electronegative atom.
 
       B - IncorrectSolution - 
-      It is not hydrophobic–hydrophilic attraction. Hydrophobic groups tend to associate with one another and become buried inside proteins.
+      It is not hydrophobic-hydrophilic attraction. Hydrophobic groups tend to associate with one another and become buried inside proteins.
 
       C - CorrectSolution - 
       Attraction between opposite charges.
@@ -65,9 +65,9 @@ questions:
       . Cysteine
     solution: |
 
-      Answer – A
+      Answer: A
 
-      Solution – The pockets should be lined by non-polar amino acids. Out of all the options, Isoleucine is the only non-polar amino acid.
+      Solution: The pockets should be lined by non-polar amino acids. Out of all the options, Isoleucine is the only non-polar amino acid.
   - id: 4
     difficulty: "hard"
     source: "IBO"
@@ -96,7 +96,7 @@ questions:
       D. Different numbers of repetitive motifs in AFGP genes amongst closely related species might have been caused by DNA polymerase inaccuracy.
     solution: |
 
-      Answer – A – False, B – True, C – True, D - True
+      Answer: A: False, B: True, C: True, D - True
 
       A - False
 

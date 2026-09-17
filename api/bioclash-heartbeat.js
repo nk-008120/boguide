@@ -1,5 +1,6 @@
-const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
-const { rateLimit } = require('./_lib/bioclash');
+const { getAdminClient } = require('./_lib/supabaseAdmin');
+const { authenticate } = require('./_lib/bioclash');
+const { captureError } = require('./_lib/sentry');
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
@@ -7,25 +8,8 @@ module.exports = async (req, res) => {
     return;
   }
   try {
-    const authHeader = req.headers.authorization || '';
-    const token = authHeader.startsWith('Bearer ') ? authHeader.slice(7) : null;
-    if (!token) {
-      res.status(401).json({ error: 'Missing Authorization header' });
-      return;
-    }
-
-    const anon = getAnonClient();
-    const { data: userData, error: userError } = await anon.auth.getUser(token);
-    if (userError || !userData || !userData.user) {
-      res.status(401).json({ error: 'Invalid session' });
-      return;
-    }
-    const userId = userData.user.id;
-
-    if (rateLimit(userId, 'heartbeat', 6, 60000)) {
-      res.status(429).json({ error: 'Too many requests' });
-      return;
-    }
+    const userId = await authenticate(req, res, 'heartbeat', 6, 60000);
+    if (!userId) return;
 
     const { paperId, sessionToken, reachedFinalPage, event } = req.body || {};
     if (!paperId || !sessionToken) {
@@ -95,6 +79,7 @@ module.exports = async (req, res) => {
     res.status(200).json({ ok: true, active: true });
   } catch (err) {
     console.error('bioclash-heartbeat failed:', err);
+    await captureError(err, { route: 'bioclash-heartbeat' });
     res.status(500).json({ error: 'Heartbeat failed' });
   }
 };

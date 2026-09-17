@@ -1,0 +1,93 @@
+topic: "bioenergetics-central-metabolism"
+topicName: "Bioenergetics & Central Metabolism"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "bioenergetics-central-metabolism-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Which of the summary statements below describes the results of the following reaction? C6H12O6 + 6 O2 → 6 CO2 + 6 H2O + Energy"
+    options:
+      - key: "A"
+        text: "C6H12O6 is oxidized and O2 is reduced."
+      - key: "B"
+        text: "O2 is oxidized and H2O is reduced."
+      - key: "C"
+        text: "CO2 is reduced and O2 is oxidized."
+      - key: "D"
+        text: "O2 is reduced and CO2 is oxidized."
+    answer: "A"
+    explanation: "Glucose loses electrons (is oxidized) as it is converted to CO2, while O2 gains those electrons (is reduced) to form H2O: cellular respiration is fundamentally a redox reaction with glucose as the electron donor and O2 as the final electron acceptor."
+    sourceRef: "Campbell Biology 11e, Ch. 9 (Cellular Respiration and Fermentation)"
+
+  - id: "bioenergetics-central-metabolism-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "In which reactions of cellular respiration and fermentation does substrate-level phosphorylation occur?"
+    options:
+      - key: "A"
+        text: "only in glycolysis"
+      - key: "B"
+        text: "only in the citric acid cycle"
+      - key: "C"
+        text: "only in the electron transport chain"
+      - key: "D"
+        text: "in both glycolysis and the citric acid cycle"
+    answer: "D"
+    explanation: "Substrate-level phosphorylation, where a phosphate is transferred directly from a substrate to ADP, occurs in both glycolysis (in the cytosol) and the citric acid cycle (in the mitochondrial matrix), unlike oxidative phosphorylation, which occurs only at the electron transport chain."
+    sourceRef: "Campbell Biology 11e, Ch. 9 (Cellular Respiration and Fermentation)"
+
+  - id: "bioenergetics-central-metabolism-03"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "The free energy for the oxidation of glucose to CO2 and water is -686 kcal/mol, and the free energy for the reduction of NAD+ to NADH is +53 kcal/mol. Why are only two molecules of NADH formed during glycolysis when it appears that as many as a dozen could be formed?"
+    options:
+      - key: "A"
+        text: "Most of the free energy available from the oxidation of glucose is used in the production of ATP in glycolysis."
+      - key: "B"
+        text: "Glycolysis is a very inefficient reaction, with much of the energy of glucose released as heat."
+      - key: "C"
+        text: "Most of the free energy available from the oxidation of glucose remains in pyruvate, one of the products of glycolysis."
+      - key: "D"
+        text: "There is no CO2 or water produced as products of glycolysis."
+    answer: "C"
+    explanation: "Only a small fraction of glucose's total free energy is captured as ATP or NADH during glycolysis; the great majority of it remains stored in the chemical bonds of pyruvate, which is why pyruvate still has so much energy left to extract in the citric acid cycle and oxidative phosphorylation."
+    sourceRef: "Campbell Biology 11e, Ch. 9 (Cellular Respiration and Fermentation)"
+
+  - id: "bioenergetics-central-metabolism-04"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "What is the oxidizing agent in the following reaction? Pyruvate + NADH + H- Lactate + NAD-"
+    options:
+      - key: "A"
+        text: "oxygen"
+      - key: "B"
+        text: "NADH"
+      - key: "C"
+        text: "lactate"
+      - key: "D"
+        text: "pyruvate"
+    answer: "D"
+    explanation: "In this reaction pyruvate gains electrons and hydrogen (is reduced) to become lactate, so pyruvate is the oxidizing agent: the molecule that accepts electrons from NADH, regenerating NAD+."
+    sourceRef: "Campbell Biology 11e, Ch. 9 (Cellular Respiration and Fermentation)"
+
+  - id: "bioenergetics-central-metabolism-05"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "The immediate energy source that drives ATP synthesis by ATP synthase during oxidative phosphorylation is the"
+    options:
+      - key: "A"
+        text: "oxidation of glucose and other organic compounds."
+      - key: "B"
+        text: "flow of electrons down the electron transport chain."
+      - key: "C"
+        text: "H+ concentration gradient across the membrane holding ATP synthase."
+      - key: "D"
+        text: "transfer of phosphate to ADP."
+    answer: "C"
+    explanation: "ATP synthase is powered directly by the flow of protons down their electrochemical gradient (chemiosmosis) across the inner mitochondrial membrane, not directly by the electron transport chain itself, glucose oxidation, or simple phosphate transfer."
+    sourceRef: "Campbell Biology 11e, Ch. 9 (Cellular Respiration and Fermentation)"

@@ -30,13 +30,13 @@ rounds:
         link: "/papers/tbo/2023/second-stage-exam-b.pdf"
         solutionLink: "/papers/tbo/2023/second-stage-answer.pdf"
   - id: final-theory
-    name: "Final Stage — Theory"
+    name: "Final Stage: Theory"
     hidden: true
     papers:
       - category: "Theory"
         link: "/papers/tbo/2023/final-theory-exam.pdf"
   - id: final-practical
-    name: "Final Stage — Practical"
+    name: "Final Stage: Practical"
     hidden: true
     papers:
       - category: "Practical A"

@@ -48,7 +48,7 @@
 
   function render(rows) {
     if (!rows.length) {
-      statusEl.textContent = 'No season standings yet — be the first to claim a spot. To get your name here, ';
+      statusEl.textContent = 'No season standings yet- be the first to claim a spot. To get your name here, ';
       var link = document.createElement('a');
       link.href = '/account/?next=/papers/leaderboard/';
       link.textContent = 'register for BiOClash Season 1 →';
@@ -88,12 +88,12 @@
     var client = window.PapersAuth.getClient();
     client.from('bioclash_season_standings').select('*').limit(200).then(function (result) {
       if (result.error) {
-        statusEl.textContent = 'Could not load Season Champions right now — try refreshing.';
+        statusEl.textContent = 'Could not load Season Champions right now, try refreshing.';
         return;
       }
       render(result.data || []);
     }).catch(function () {
-      statusEl.textContent = 'Could not load Season Champions right now — try refreshing.';
+      statusEl.textContent = 'Could not load Season Champions right now, try refreshing.';
     });
   }
 

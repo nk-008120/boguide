@@ -27,7 +27,7 @@ questions:
       _____________
     solution: |
 
-      Answer - 1 – IV, 2 – I, 3 – I
+      Answer - 1: IV, 2: I, 3: I
 
       Solution - 1 - 
       Fresh corn contains enzymes that convert sugars → starch, reducing sweetness. Boiling denatures these enzymes. Therefore, sugar is preserved and the corn remains sweet.
@@ -46,9 +46,9 @@ questions:
       The primary disaccharide digestion product of starch is
     solution: |
 
-      Answer – C
+      Answer: C
 
-      Solution – Starch is broken into maltose, maltotriose and α-dextrins by digestion of α-amylase.
+      Solution: Starch is broken into maltose, maltotriose and α-dextrins by digestion of α-amylase.
   - id: 3
     difficulty: "medium"
     source: "IBO"
@@ -62,13 +62,13 @@ questions:
       Indicate whether each of the following statements is True or False:
       A. Citrate has enantiomers
       B. Isocitrate has enantiomers
-      C. Two –CH2COO– groups are stereochemically equivalent when citrate is free in solution
-      D. Two –CH2COO– groups are stereochemically equivalent when citrate is bound to aconitase
+      C. Two:CH2COO- groups are stereochemically equivalent when citrate is free in solution
+      D. Two:CH2COO- groups are stereochemically equivalent when citrate is bound to aconitase
     solution: |
 
-      Answer – A – F, B – T, C – T, D – F
+      Answer: A: F, B: T, C: T, D: F
 
-      Solution - Citrate is not chiral but stereochemically recognized by aconitase. The two -CH2COO– groups of enzyme-bound citrate can be distinguished by aconitase, because the substratebinding site of the enzyme is not symmetric. This was a critical issue when the citric acid cycle was proposed but later questioned by Krebs himself, and “TCA (tricarboxylic acid) cycle” was proposed instead of the “citric acid cycle”. Now we know the first product, citric acid, can be stereochemically recognized by aconitase.
+      Solution - Citrate is not chiral but stereochemically recognized by aconitase. The two -CH2COO- groups of enzyme-bound citrate can be distinguished by aconitase, because the substratebinding site of the enzyme is not symmetric. This was a critical issue when the citric acid cycle was proposed but later questioned by Krebs himself, and “TCA (tricarboxylic acid) cycle” was proposed instead of the “citric acid cycle”. Now we know the first product, citric acid, can be stereochemically recognized by aconitase.
   - id: 4
     difficulty: "medium"
     source: "USABO"
@@ -86,10 +86,10 @@ questions:
       C. Heparin is often used to purify nucleic acid (both DNA and RNA) binding proteins. Explain what the similarity between heparin and nucleic acids is that allows them to bind to these proteins.
     solution: |
 
-      A – CarbohydratesSolution - 
+      A: CarbohydratesSolution - 
       It is comprised of modified hexose monosaccharides linked to each other by glycosidic bond
 
-      B – Glycosidic bond and H2O as by productSolution – Bonds between monosaccharides are called glycosidic bonds which form by dehydration reaction, 
+      B: Glycosidic bond and H2O as by productSolution: Bonds between monosaccharides are called glycosidic bonds which form by dehydration reaction, 
       i.e, removal of water.
 
       C - Both heparin (due to SO3- groups) and nucleic acids (due to the PO43- of the sugar phosphate backbone) are negatively charged and therefore form ionic bonds with the nucleic acids binding proteins that are rich in amino acids with positively charged side chains

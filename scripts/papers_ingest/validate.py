@@ -87,7 +87,7 @@ def main():
                 subject_fails.append(f"{pid}: subject '{title}' does not match any real /resources/ page title")
             elif s.get("link") != subjects[title]["link"]:
                 subject_fails.append(
-                    f"{pid}: subject '{title}' link mismatch — yaml has '{s.get('link')}', "
+                    f"{pid}: subject '{title}' link mismatch - yaml has '{s.get('link')}', "
                     f"live page is at '{subjects[title]['link']}'"
                 )
 

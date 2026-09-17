@@ -1,5 +1,6 @@
-const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
-const { loadPaper, findBlock, toClientBlock, blocksRevealedByLock, rateLimit } = require('./_lib/bioclash');
+const { getAdminClient } = require('./_lib/supabaseAdmin');
+const { loadPaper, findBlock, toClientBlock, blocksRevealedByLock, authenticate } = require('./_lib/bioclash');
+const { captureError } = require('./_lib/sentry');
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
@@ -7,25 +8,8 @@ module.exports = async (req, res) => {
     return;
   }
   try {
-    const authHeader = req.headers.authorization || '';
-    const token = authHeader.startsWith('Bearer ') ? authHeader.slice(7) : null;
-    if (!token) {
-      res.status(401).json({ error: 'Missing Authorization header' });
-      return;
-    }
-
-    const anon = getAnonClient();
-    const { data: userData, error: userError } = await anon.auth.getUser(token);
-    if (userError || !userData || !userData.user) {
-      res.status(401).json({ error: 'Invalid session' });
-      return;
-    }
-    const userId = userData.user.id;
-
-    if (rateLimit(userId, 'lock-block', 15, 60000)) {
-      res.status(429).json({ error: 'Too many requests' });
-      return;
-    }
+    const userId = await authenticate(req, res, 'lock-block', 15, 60000);
+    if (!userId) return;
 
     const { paperId, blockId, componentAnswers, fullscreenExits, visibilityLosses, sessionToken } = req.body || {};
     const paper = loadPaper(paperId);
@@ -124,6 +108,7 @@ module.exports = async (req, res) => {
     res.status(200).json({ ok: true, locked: blockId, revealedBlocks });
   } catch (err) {
     console.error('bioclash-lock-block failed:', err);
+    await captureError(err, { route: 'bioclash-lock-block' });
     res.status(500).json({ error: 'Could not lock block' });
   }
 };

@@ -1,0 +1,93 @@
+topic: "enzyme-kinetics-regulation"
+topicName: "Enzyme Kinetics & Regulation"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "enzyme-kinetics-regulation-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "A decrease in entropy is associated with which type of reaction?"
+    options:
+      - key: "A"
+        text: "dehydration"
+      - key: "B"
+        text: "catabolic"
+      - key: "C"
+        text: "depolymerization"
+      - key: "D"
+        text: "hydrolysis"
+    answer: "A"
+    explanation: "Dehydration (condensation) reactions join smaller molecules into a larger, more ordered polymer, decreasing the disorder (entropy) of the system."
+    sourceRef: "Campbell Biology 11e, Ch. 8 (An Introduction to Metabolism)"
+
+  - id: "enzyme-kinetics-regulation-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Which of the following statements is true of metabolism in its entirety in all organisms?"
+    options:
+      - key: "A"
+        text: "Metabolism depends on a constant supply of energy from food."
+      - key: "B"
+        text: "Metabolism uses all of an organism's resources."
+      - key: "C"
+        text: "Metabolism consists of all the energy transformation reactions in an organism."
+      - key: "D"
+        text: "Metabolism manages the increase of entropy in an organism."
+    answer: "C"
+    explanation: "Metabolism is the sum total of all the chemical reactions that transform energy and matter within an organism, encompassing every catabolic and anabolic pathway together."
+    sourceRef: "Campbell Biology 11e, Ch. 8 (An Introduction to Metabolism)"
+
+  - id: "enzyme-kinetics-regulation-03"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "Which of the following statements is an important consequence of the first law of thermodynamics for a living organism?"
+    options:
+      - key: "A"
+        text: "The energy content of an organism is constant."
+      - key: "B"
+        text: "An organism ultimately must obtain all of the necessary energy for life from its environment."
+      - key: "C"
+        text: "The entropy of an organism decreases with time as the organism grows in complexity."
+      - key: "D"
+        text: "Organisms grow by converting energy into organic matter."
+    answer: "B"
+    explanation: "The first law of thermodynamics (conservation of energy) means an organism cannot create the energy it needs from nothing: it must continually acquire usable energy from outside itself (food or light) to power its life processes."
+    sourceRef: "Campbell Biology 11e, Ch. 8 (An Introduction to Metabolism)"
+
+  - id: "enzyme-kinetics-regulation-04"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Which of the following statements about anabolic pathways is true?"
+    options:
+      - key: "A"
+        text: "They are usually spontaneous chemical reactions."
+      - key: "B"
+        text: "They consume energy to build up polymers from monomers."
+      - key: "C"
+        text: "They release energy by degrading polymers to monomers."
+      - key: "D"
+        text: "They decrease the entropy of the organism and its environment."
+    answer: "B"
+    explanation: "Anabolic pathways build complex polymers from simpler monomers, which requires an input of energy (they are endergonic) rather than releasing it."
+    sourceRef: "Campbell Biology 11e, Ch. 8 (An Introduction to Metabolism)"
+
+  - id: "enzyme-kinetics-regulation-05"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Choose the pair of terms that correctly completes this sentence: Catabolism is to anabolism as ________ is to ________."
+    options:
+      - key: "A"
+        text: "exergonic; spontaneous"
+      - key: "B"
+        text: "exergonic; endergonic"
+      - key: "C"
+        text: "free energy; entropy"
+      - key: "D"
+        text: "work; energy"
+    answer: "B"
+    explanation: "Catabolic pathways break down molecules and release energy (exergonic), while anabolic pathways build molecules and require an energy input (endergonic): the same exergonic/endergonic relationship as the question's blanks."
+    sourceRef: "Campbell Biology 11e, Ch. 8 (An Introduction to Metabolism)"

@@ -1,0 +1,75 @@
+topic: "mechanisms-of-behavior"
+topicName: "Mechanisms of Behavior"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "mechanisms-of-behavior-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "What type of signal is long-lasting and works at night?"
+    options:
+      - key: "A"
+        text: "olfactory"
+      - key: "B"
+        text: "visual"
+      - key: "C"
+        text: "auditory"
+      - key: "D"
+        text: "electrical"
+    answer: "A"
+    explanation: "Olfactory (chemical) signals persist in the environment long after being deposited and don't require light to be detected, making them well suited for long-lasting communication at night."
+    sourceRef: "Campbell Biology 11e, Ch. 51 (Animal Behavior)"
+
+  - id: "mechanisms-of-behavior-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Which of the following is true of innate behaviors?"
+    options:
+      - key: "A"
+        text: "Their expression is only weakly influenced by genes."
+      - key: "B"
+        text: "They occur with or without environmental stimuli."
+      - key: "C"
+        text: "They are expressed in most individuals in a population."
+      - key: "D"
+        text: "They occur in invertebrates and some vertebrates but not mammals."
+    answer: "C"
+    explanation: "By definition, an innate behavior is one that develops largely independent of environmental experience and is therefore expressed, in a fairly consistent form, by essentially all members of a species."
+    sourceRef: "Campbell Biology 11e, Ch. 51 (Animal Behavior)"
+
+  - id: "mechanisms-of-behavior-03"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "Which of the following experiments best addresses the hypothesis that moths stop flying in response to high-intensity bat sounds?"
+    options:
+      - key: "A"
+        text: "Isolate and characterize the neurons that control flight muscle."
+      - key: "B"
+        text: "Play prerecorded high-intensity bat sounds to flying moths."
+      - key: "C"
+        text: "Observe responses of moths to bats in nature."
+      - key: "D"
+        text: "Put bats and moths in an enclosure and make detailed observations of predator-prey interactions."
+    answer: "B"
+    explanation: "Directly testing the hypothesis requires isolating the proposed stimulus (bat sound) as the actual cause of the response, which means experimentally playing recorded high-intensity bat sounds to flying moths and observing whether they alone are sufficient to trigger the stop-flying response."
+    sourceRef: "Campbell Biology 11e, Ch. 51 (Animal Behavior)"
+
+  - id: "mechanisms-of-behavior-04"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "What type of signal is brief and can work among obstructions at night?"
+    options:
+      - key: "A"
+        text: "olfactory"
+      - key: "B"
+        text: "visual"
+      - key: "C"
+        text: "auditory"
+      - key: "D"
+        text: "magnetic"
+    answer: "C"
+    explanation: "Auditory (sound) signals travel quickly, can bend around physical obstructions in a way visual signals cannot, and are brief compared to persistent chemical trails, making them well suited for short, obstruction-tolerant nighttime communication."
+    sourceRef: "Campbell Biology 11e, Ch. 51 (Animal Behavior)"

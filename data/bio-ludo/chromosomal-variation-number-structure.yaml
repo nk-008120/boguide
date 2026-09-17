@@ -1,0 +1,93 @@
+topic: "chromosomal-variation-number-structure"
+topicName: "Chromosomal Variation: Number & Structure"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "chromosomal-variation-number-structure-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "A couple has a child with Down syndrome. The mother is 39 years old at the time of delivery. Which of the following is the most probable cause of the child's condition?"
+    options:
+      - key: "A"
+        text: "The woman inherited this tendency from her parents."
+      - key: "B"
+        text: "The mother had a chromosomal duplication."
+      - key: "C"
+        text: "One member of the couple underwent nondisjunction in somatic cell production."
+      - key: "D"
+        text: "One of the gametes in the mother most likely underwent nondisjunction during meiosis."
+    answer: "D"
+    explanation: "Down syndrome (trisomy 21) most commonly arises from nondisjunction of chromosome 21 during meiosis in one of the parents' gametes (with maternal age being a well-documented risk factor), rather than from a duplication or a somatic-cell error."
+    sourceRef: "Campbell Biology 11e, Ch. 15 (The Chromosomal Basis of Inheritance)"
+
+  - id: "chromosomal-variation-number-structure-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "If cell X enters meiosis, and nondisjunction of one chromosome occurs in one of its daughter cells during meiosis II, how will this affect the gametes at the completion of meiosis?"
+    options:
+      - key: "A"
+        text: "All the gametes descended from cell X will be diploid."
+      - key: "B"
+        text: "Half of the gametes descended from cell X will be n + 1, and half will be n - 1."
+      - key: "C"
+        text: "One-quarter of the gametes descended from cell X will be n + 1, one-quarter will be n - 1, and half will be n."
+      - key: "D"
+        text: "Two of the four gametes descended from cell X will be haploid, and two will be diploid."
+    answer: "C"
+    explanation: "If nondisjunction happens in meiosis II of one daughter cell only, that cell's two resulting gametes are n+1 and n-1, while the other daughter cell (which divided normally in meiosis II) contributes two normal n gametes: giving 1/4 n+1, 1/4 n-1, and 1/2 normal n overall."
+    sourceRef: "Campbell Biology 11e, Ch. 15 (The Chromosomal Basis of Inheritance)"
+
+  - id: "chromosomal-variation-number-structure-03"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "A phenotypically normal prospective couple seeks genetic counseling because the man knows that he has a translocation of a portion of his chromosome 4, which has been exchanged with a portion of his chromosome 12. Although his translocation is balanced, he and his wife want to know the probability that his sperm will be abnormal. What is your prognosis regarding his sperm?"
+    options:
+      - key: "A"
+        text: "One-quarter will carry the two normal chromosomes, 4 and 12, one-quarter will have only the two translocation chromosomes and no normal chromosomes 4 and 12, and half will have one normal and one translocated chromosome."
+      - key: "B"
+        text: "All will carry the same translocation as the father."
+      - key: "C"
+        text: "None will carry the translocation."
+      - key: "D"
+        text: "Half will be normal, and the rest will have the father's translocation."
+    answer: "A"
+    explanation: "For a reciprocal (balanced) translocation between two chromosome pairs, segregation during meiosis I produces four possible gamete classes in roughly equal proportions: normal (both untranslocated), the balanced translocation combination, and two unbalanced combinations: matching the 1/4 : 1/4 : 1/2 split described."
+    sourceRef: "Campbell Biology 11e, Ch. 15 (The Chromosomal Basis of Inheritance)"
+
+  - id: "chromosomal-variation-number-structure-04"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Which of the following statements correctly describes what happens to a chromosome after a nonreciprocal translocation occurs?"
+    options:
+      - key: "A"
+        text: "A deletion of part of the chromosome occurs."
+      - key: "B"
+        text: "A duplication of part of the chromosome occurs."
+      - key: "C"
+        text: "Nondisjunction of pairs of homologous occurs."
+      - key: "D"
+        text: "A chromosome transfers a fragment but receives none in return."
+    answer: "D"
+    explanation: "A nonreciprocal translocation means one chromosome transfers a segment to another chromosome without receiving any segment back in return, so the donor chromosome simply loses that piece."
+    sourceRef: "Campbell Biology 11e, Ch. 15 (The Chromosomal Basis of Inheritance)"
+
+  - id: "chromosomal-variation-number-structure-05"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Of the following human aneuploidies, which is the one that generally has the most severe impact on the health of the individual?"
+    options:
+      - key: "A"
+        text: "47, trisomy 21"
+      - key: "B"
+        text: "47, XXY"
+      - key: "C"
+        text: "47, XXX"
+      - key: "D"
+        text: "45, X"
+    answer: "A"
+    explanation: "Trisomy of an autosome as large as chromosome 21 is generally the most survivable human autosomal trisomy but still has serious health impact; among the standard textbook comparison set, trisomy 21 (Down syndrome) is considered to have the most severe overall impact relative to the milder sex-chromosome aneuploidies (XXY, XXX, X0) listed here."
+    sourceRef: "Campbell Biology 11e, Ch. 15 (The Chromosomal Basis of Inheritance)"

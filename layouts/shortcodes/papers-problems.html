@@ -24,7 +24,7 @@
 {{- if $round.problems }}
 {{- /* Distinct subjects across this round's problems, for the topic filter.
      Difficulty is an optional per-problem field (`difficulty: easy|medium|hard`
-     in the data YAML) — the filter/column only render once at least one
+     in the data YAML): the filter/column only render once at least one
      problem in the round sets it. */ -}}
 {{- $subjectSet := slice -}}
 {{- $hasDifficulty := false -}}

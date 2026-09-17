@@ -1,0 +1,75 @@
+topic: "natural-selection-modes-and-fitness"
+topicName: "Natural Selection: Modes & Fitness"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "natural-selection-modes-and-fitness-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Which of these conditions are always true of populations evolving due to natural selection? Condition 1: The population must vary in traits that are heritable. Condition 2: Some heritable traits must increase reproductive success. Condition 3: Individuals pass on most traits that they acquire during their lifetime."
+    options:
+      - key: "A"
+        text: "Condition 1 only"
+      - key: "B"
+        text: "Condition 2 only"
+      - key: "C"
+        text: "Conditions 1 and 2"
+      - key: "D"
+        text: "Conditions 2 and 3"
+    answer: "C"
+    explanation: "Evolution by natural selection requires heritable trait variation (Condition 1) and a link between some of those heritable traits and reproductive success (Condition 2); it explicitly does not require or involve the inheritance of acquired characteristics (Condition 3, a Lamarckian idea rejected by modern evolutionary theory)."
+    sourceRef: "Campbell Biology 11e, Ch. 22 (Descent with Modification: A Darwinian View of Life)"
+
+  - id: "natural-selection-modes-and-fitness-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Darwin and Wallace's theory of evolution by natural selection was revolutionary because it ________."
+    options:
+      - key: "A"
+        text: "was the first theory to refute the ideas of special creation"
+      - key: "B"
+        text: "proved that individuals acclimated to their environment over time"
+      - key: "C"
+        text: "dismissed the idea that species are constant and emphasized the importance of variation and change in populations"
+      - key: "D"
+        text: "was the first time a biologist had proposed that species changed through time"
+    answer: "C"
+    explanation: "Darwin and Wallace's key break from earlier thinking was rejecting the idea that species are fixed and unchanging, instead proposing that heritable variation within populations is the raw material natural selection acts on to drive change over time."
+    sourceRef: "Campbell Biology 11e, Ch. 22 (Descent with Modification: A Darwinian View of Life)"
+
+  - id: "natural-selection-modes-and-fitness-03"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "Arrange the following in order from most general to most specific. 1 natural selection 2. microevolution 3. intrasexual selection 4. evolution 5. sexual selection"
+    options:
+      - key: "A"
+        text: "4, 1, 2, 3, 5"
+      - key: "B"
+        text: "4, 2, 1, 3, 5"
+      - key: "C"
+        text: "4, 2, 1, 5, 3"
+      - key: "D"
+        text: "1, 4, 2, 5, 3"
+    answer: "C"
+    explanation: "From most general to most specific: evolution (4) is the broadest concept, microevolution (2) is a subset of evolution (allele-frequency change within populations), natural selection (1) is one mechanism of microevolution, and sexual selection (5) and intrasexual selection (3) are progressively more specific subtypes of selection."
+    sourceRef: "Campbell Biology 11e, Ch. 23 (The Evolution of Populations)"
+
+  - id: "natural-selection-modes-and-fitness-04"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "The following question is based on information from Frank M. Frey, \"Opposing Natural Selection from Herbivores and Pathogens May Maintain Floral-Color Variation in Claytonia virginica (Portulacaceae),\" Evolution 58(11), 2004: 2426-37. Claytonia virginica is a woodland spring herb with flowers that vary from white, to pale pink, to bright pink. Slugs prefer to eat pink-flowering over white-flowering plants (due to chemical differences between the two), and plants experiencing severe herbivory are more likely to die. The bees that pollinate this plant also prefer pink to white flowers, so that Claytonia with pink flowers have greater relative fruit set than Claytonia with white flowers. A researcher observes that the percentage of different flower colors remains stable in the study population from year to year. Given no other information, if the researcher removes all slugs from the study population, what do you expect to happen to the distribution of flower colors in the population over time?"
+    options:
+      - key: "A"
+        text: "The percentage of pink flowers should increase over time."
+      - key: "B"
+        text: "The percentage of white flowers should increase over time."
+      - key: "C"
+        text: "The distribution of flower colors should not change."
+      - key: "D"
+        text: "The distribution of flower colors should randomly fluctuate over time."
+    answer: "A"
+    explanation: "If slugs (which drive selection against pink flowers) are removed, only the bees' preference for pink flowers remains to shape reproduction, so selection should now favor pink flowers and their frequency should increase over time."
+    sourceRef: "Campbell Biology 11e, Ch. 22 (Descent with Modification: A Darwinian View of Life)"

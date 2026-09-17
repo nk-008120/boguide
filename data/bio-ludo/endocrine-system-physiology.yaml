@@ -1,0 +1,75 @@
+topic: "endocrine-system-physiology"
+topicName: "Endocrine System Physiology"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "endocrine-system-physiology-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "You are dissecting a fish in your biology laboratory section. Your teaching assistant points out a long oval structure and tells you it is an endocrine gland. Which of the following would you then know is a true statement about this structure?"
+    options:
+      - key: "A"
+        text: "It secretes a product that is released through a series of ducts."
+      - key: "B"
+        text: "The gland's product will only interact with receptors on the cell membrane."
+      - key: "C"
+        text: "The gland's product is lipid soluble."
+      - key: "D"
+        text: "The gland produces and secretes its product into the blood."
+    answer: "D"
+    explanation: "A true endocrine gland lacks ducts entirely and instead secretes its hormone product directly into the bloodstream, which then carries it throughout the body to reach target cells."
+    sourceRef: "Campbell Biology 11e, Ch. 45 (Hormones and the Endocrine System)"
+
+  - id: "endocrine-system-physiology-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Which of the following is not an accurate statement?"
+    options:
+      - key: "A"
+        text: "Hormones are chemical messengers that travel to target cells through the circulatory system."
+      - key: "B"
+        text: "Hormones often regulate homeostasis through antagonistic functions."
+      - key: "C"
+        text: "Hormones of the same chemical class usually have the same function."
+      - key: "D"
+        text: "Hormones are often regulated through feedback loops."
+    answer: "C"
+    explanation: "Hormones belonging to the same chemical class (e.g., steroid hormones) can nonetheless have very different, even opposite, physiological effects depending on which receptors and target tissues they act on, so 'same class, same function' is not a valid generalization."
+    sourceRef: "Campbell Biology 11e, Ch. 45 (Hormones and the Endocrine System)"
+
+  - id: "endocrine-system-physiology-03"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "In experiments where researchers suspect that a hormone may be responsible for a certain physiological effect, they may cut the neurons leading to the organ where the effect being studied occurs. What is the purpose of cutting these neurons?"
+    options:
+      - key: "A"
+        text: "to make sure that the effect is not occurring through actions in the nervous system"
+      - key: "B"
+        text: "to make sure that the organ being affected cannot function unless the researchers stimulate it with an external electrical probe"
+      - key: "C"
+        text: "to impair the normal functions of the organ so that the hormonal effect can be more easily studied"
+      - key: "D"
+        text: "to numb the organ so that it can be probed without inducing pain in the lab animal"
+    answer: "A"
+    explanation: "Severing the neurons leading to the target organ rules out the possibility that the observed physiological effect is being produced through direct neural signaling, isolating whether the effect persists through the bloodstream-delivered hormone alone."
+    sourceRef: "Campbell Biology 11e, Ch. 45 (Hormones and the Endocrine System)"
+
+  - id: "endocrine-system-physiology-04"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "What is the only type of chemical signal that does not alter the physiology of the animal producing that signal?"
+    options:
+      - key: "A"
+        text: "neural"
+      - key: "B"
+        text: "paracrine"
+      - key: "C"
+        text: "neuroendocrine"
+      - key: "D"
+        text: "pheromones"
+    answer: "D"
+    explanation: "Pheromones are chemical signals released into the external environment to influence the behavior or physiology of other individuals of the same species: they don't act back on the physiology of the signaling animal itself, unlike neural, paracrine, or neuroendocrine signals, which all affect the sender's own body."
+    sourceRef: "Campbell Biology 11e, Ch. 45 (Hormones and the Endocrine System)"

@@ -264,7 +264,7 @@ parts:
               DVL2 phosphorylation in R/ZdKO cells overexpressing RNF43, ZNRF3, or a control
               vector, 3 h after WNT3A or WNT5A stimulation (all samples pretreated with C59).
               p-DVL2:DVL2 ratios normalised to control-vector cells. Arrowheads mark
-              full-length ZNRF3 and RNF43. Representative experiment (N = 2–4).
+              full-length ZNRF3 and RNF43. Representative experiment (N = 2-4).
         components:
           - key: da-c3-q7a
             type: true_false
@@ -325,7 +325,7 @@ parts:
         images:
           - src: "/MB-01PICS/context2.jpg"
             caption: >
-              R/ZdKO cells transfected with V5-tagged FZD1–10, with RNF43 or ZNRF3
+              R/ZdKO cells transfected with V5-tagged FZD1-10, with RNF43 or ZNRF3
               re-introduced. Panels A/B: control vs. ligase-expressing lysates by Western
               blot. Panels C/D: SNAP-tagged FZD5/FZD6 surface visualisation. Panels E/F:
               quantified mean surface-intensity for FZD5 (± RNF43) and FZD6 (± ZNRF3).
@@ -421,7 +421,7 @@ parts:
         images:
           - src: "/MB-01PICS/tissuetype-cropped.jpg"
             caption: >
-              FZD1–10 mRNA expression (consensus NX, Human Protein Atlas) across eight human
+              FZD1-10 mRNA expression (consensus NX, Human Protein Atlas) across eight human
               tissues.
           - src: "/MB-01PICS/tmdexpress-cropped.jpg"
             caption: >
@@ -431,32 +431,32 @@ parts:
               ZNRF3's) and ZRZ (ZNRF3 with its transmembrane domain replaced by RNF43's).
       - id: part-b-statements
         locksAfterSubmit: false
-        label: "Q1–5"
+        label: "Q1-5"
         components:
           - key: stmt-1
             type: true_false
             marks: 2
-            prompt: "RNF43/ZNRF3 exert a negative feedback logic on the WNT signalling pathway. Justify your answer in 1–2 sentences."
+            prompt: "RNF43/ZNRF3 exert a negative feedback logic on the WNT signalling pathway. Justify your answer in 1-2 sentences."
             correctValue: true
           - key: stmt-2
             type: true_false
             marks: 2
-            prompt: "Since RNF43 and ZNRF3 perform the same biochemical function, losing either one should produce identical phenotypes in an organism. Justify your answer in 1–2 sentences."
+            prompt: "Since RNF43 and ZNRF3 perform the same biochemical function, losing either one should produce identical phenotypes in an organism. Justify your answer in 1-2 sentences."
             correctValue: false
           - key: stmt-3
             type: true_false
             marks: 2
-            prompt: "The ratio of mature (surface-trafficked) to immature (ER-retained) FZD protein is directly proportional to RNF43 and ZNRF3 activity. Justify your answer in 1–2 sentences."
+            prompt: "The ratio of mature (surface-trafficked) to immature (ER-retained) FZD protein is directly proportional to RNF43 and ZNRF3 activity. Justify your answer in 1-2 sentences."
             correctValue: false
           - key: stmt-4
             type: true_false
             marks: 2
-            prompt: "The extracellular domain of RNF43 is the primary determinant of its preference for FZD5 over other Frizzled homologues. Justify your answer in 1–2 sentences."
+            prompt: "The extracellular domain of RNF43 is the primary determinant of its preference for FZD5 over other Frizzled homologues. Justify your answer in 1-2 sentences."
             correctValue: false
           - key: stmt-5
             type: true_false
             marks: 2
-            prompt: "A cancer arising from a tissue where FZD6 is the dominant Frizzled homologue is more likely to carry loss-of-function mutations in ZNRF3 than in RNF43. Justify your answer in 1–2 sentences."
+            prompt: "A cancer arising from a tissue where FZD6 is the dominant Frizzled homologue is more likely to carry loss-of-function mutations in ZNRF3 than in RNF43. Justify your answer in 1-2 sentences."
             correctValue: true
 
   - id: part-c
@@ -469,7 +469,7 @@ parts:
     blocks:
       - id: part-c-questions
         locksAfterSubmit: false
-        label: "Q6–8"
+        label: "Q6-8"
         tables:
           - title: "FIELD NOTES: PARTIALLY REDACTED BY THE AUTHORITY"
             headers: ["Step", "Note"]
@@ -523,7 +523,7 @@ parts:
             imageRef: "/MB-01PICS/crispr.jpg"
             prompt: >
               Four candidate diagrams of the CRISPR-Cas9 cutting-and-repair mechanism were
-              proposed (Figure 5, panels A–D, shown above). Exactly ONE correctly represents
+              proposed (Figure 5, panels A-D, shown above). Exactly ONE correctly represents
               how CRISPR-Cas9 achieves a gene knockout. Select it.
             options:
               - key: A
@@ -583,7 +583,7 @@ parts:
         locksAfterSubmit: false
         label: "Q9.ii: The Genotyping Problem"
         tables:
-          - title: "Scenario A–F (Figure 1)"
+          - title: "Scenario A-F (Figure 1)"
             headers: ["Scenario", "Description", "Expected PCR product(s)"]
             rows:
               - ["A", "No insertion at either allele (wild-type)", "Lost in a pruning process"]
@@ -602,9 +602,9 @@ parts:
               - ["Lane 5", "1000 bp AND 420 bp"]
         images:
           - src: "/BIOCLASHPICS/mb01-fig1-gene-insertion-scenarios.png"
-            caption: "Figure 1. Gene insertion scenarios A–F."
+            caption: "Figure 1. Gene insertion scenarios A-F."
           - src: "/BIOCLASHPICS/mb01-fig2-gel-lanes-1-5.png"
-            caption: "Figure 2. Gel image of Lanes 1–5."
+            caption: "Figure 2. Gel image of Lanes 1-5."
         components:
           - key: lanes
             type: free_text
@@ -614,13 +614,13 @@ parts:
               puromycin-resistance cassette (PURO) into a 1000 bp target region. P1 and P2
               anneal to the two ends of the target region (facing inward); P3 anneals within
               PURO, pairing productively with only one of P1 or P2 depending on orientation.
-              The shorter product dominates amplification. For EACH of Lanes 1–5, state ALL
-              scenario letters (A–F) consistent with its band pattern.
+              The shorter product dominates amplification. For EACH of Lanes 1-5, state ALL
+              scenario letters (A-F) consistent with its band pattern.
           - key: unresolved
             type: free_text
             marks: 3
             prompt: >
-              Exactly one scenario letter has no matching lane among Clones 1–5. Identify it,
+              Exactly one scenario letter has no matching lane among Clones 1-5. Identify it,
               and separately, identify the lane(s) that cannot be resolved into a single
               unambiguous scenario at all. Explain both.
           - key: cases-calc
@@ -630,7 +630,7 @@ parts:
               Generalising the restriction-digest approach: let L = target region length (bp),
               a = distance from P1 to the PURO insertion point (bp), y = distance from PURO's
               own 5′ end to an internal restriction site (0 < y < 500). A restriction enzyme
-              cuts the full P1–P2 product (length L + 500) once, at this site, in both
+              cuts the full P1-P2 product (length L + 500) once, at this site, in both
               orientations. For Case 1 (L=1200, a=200, y=150) and Case 4 (L=1400, a=400,
               y=100), calculate the two fragment sizes produced in the FORWARD orientation,
               and the two fragment sizes produced in the REVERSE orientation.
@@ -731,7 +731,7 @@ parts:
             type: free_text
             marks: 2
             prompt: >
-              RNF43/ZNRF3 are E3 ubiquitin ligases that act in a three-enzyme (E1–E2–E3)
+              RNF43/ZNRF3 are E3 ubiquitin ligases that act in a three-enzyme (E1-E2-E3)
               cascade to attach ubiquitin to FZD receptors, routing them for lysosomal
               (not proteasomal) degradation. Briefly describe the role of each of E1, E2 and
               E3 in this cascade.
@@ -792,7 +792,7 @@ parts:
             correctKey: "2"
       - id: q10-4-rest
         locksAfterSubmit: false
-        label: "Q10.4B–D"
+        label: "Q10.4B-D"
         components:
           - key: q10-4b
             type: mcq
@@ -841,7 +841,7 @@ parts:
             marks: 3
             imageRef: "/MB-01PICS/hillloki.png"
             prompt: >
-              The graph above shows three theoretical RSPO–LGR5 occupancy curves sharing the
+              The graph above shows three theoretical RSPO-LGR5 occupancy curves sharing the
               same K₀.₅ = 10 nM but different Hill coefficients: n=0.5 (a shallow,
               gradually-rising, non-sigmoidal curve), n=1 (the classic hyperbolic
               Michaelis-Menten shape), and n=4 (a steep S-shaped sigmoidal curve, flat at low
@@ -1088,7 +1088,7 @@ parts:
           - key: q15b
             type: free_text
             marks: 2
-            prompt: "Explain, in 1–2 sentences, why molecules of identical base-pair length can migrate differently on the gel at all."
+            prompt: "Explain, in 1-2 sentences, why molecules of identical base-pair length can migrate differently on the gel at all."
           - key: q15c
             type: free_text
             marks: 2

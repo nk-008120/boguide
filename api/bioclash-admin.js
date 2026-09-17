@@ -1,5 +1,7 @@
 const { getAdminClient } = require('./_lib/supabaseAdmin');
 const { loadPaper, allBlocks, componentIsCorrect, componentMaxMarks, extensionPenalty, autoGrade } = require('./_lib/bioclash');
+const { verifyCronSecret } = require('./_lib/cronAuth');
+const { captureError } = require('./_lib/sentry');
 
 async function runCleanup(req, res, admin) {
   const { data: stale, error: staleError } = await admin
@@ -309,11 +311,7 @@ module.exports = async (req, res) => {
     return;
   }
 
-  const authHeader = req.headers.authorization || '';
-  if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
-    res.status(401).json({ error: 'Unauthorized' });
-    return;
-  }
+  if (!verifyCronSecret(req, res)) return;
 
   const action = req.method === 'POST' ? (req.body && req.body.action) : req.query.action;
 
@@ -331,6 +329,7 @@ module.exports = async (req, res) => {
     }
   } catch (err) {
     console.error('bioclash-admin failed (action=' + action + '):', err);
+    await captureError(err, { route: 'bioclash-admin', action });
     res.status(500).json({ error: 'Admin operation failed' });
   }
 };

@@ -31,7 +31,7 @@ if (!Array.isArray(entries) || entries.length === 0) {
 }
 for (const e of entries) {
   if (!e.userId || typeof e.rawScore !== 'number' || typeof e.blocksUsed !== 'number') {
-    fail(`every entry needs userId, numeric rawScore, numeric blocksUsed — got ${JSON.stringify(e)}`);
+    fail(`every entry needs userId, numeric rawScore, numeric blocksUsed - got ${JSON.stringify(e)}`);
   }
 }
 

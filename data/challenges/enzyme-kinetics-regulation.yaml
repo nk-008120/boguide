@@ -29,17 +29,17 @@ questions:
 
       2) Km = 2 mM
 
-      Solution – Identify two pointsPoint 1 => V = 1.5 nmol/min/cell and [S] = 2 mM
+      Solution: Identify two pointsPoint 1 => V = 1.5 nmol/min/cell and [S] = 2 mM
       Point 2 => V = 2.5 nmol/min/cell and [S] = 10mM
 
-      3) A – True
+      3) A: True
 
       Solution -
       Calculated rates are 2.1, 0.71 and 0.74 [nmol/min/cell] for GLUT1, GLUT2 and GLUT4, respectively.
 
-      3) B – True
+      3) B: True
 
-      Solution – Normal glucose concentration in humans is above K
+      Solution: Normal glucose concentration in humans is above K
       m for GLUT1 and GLUT4 but is lower than Km for GLUT2. Thus, GLUT1 and GLUT4 are saturated but GLUT2 is still in the increasing part of the curve.
   - id: 2
     difficulty: "medium"
@@ -57,20 +57,20 @@ questions:
       . Both enzymes are equally effective as both are active at concentrations found in the cell environment.
     solution: |
 
-      Answer – B
+      Answer: B
 
       Evaluating the statements,
 
-      A – IncorrectSolution - 
+      A: IncorrectSolution - 
       Higher Vmax alone does not make S₁ more effective at low [S].
 
-      B – CorrectSolution – Enzyme S
+      B: CorrectSolution: Enzyme S
       2 having lower KM promotes faster breakdown of glutamine at normal cell environment concentration and is thus better for cancer treatment than S1
 
-      C – IncorrectSolution -
+      C: IncorrectSolution -
       ** **The graph does not establish that ammonia production would be harmful to normal cells.
 
-      D – IncorrectSolution
+      D: IncorrectSolution
       ** - **The enzymes clearly have different activities at the relevant
   - id: 3
     difficulty: "medium"
@@ -101,7 +101,7 @@ questions:
       | Cannot be deduced |  |  |  |  |
     solution: |
 
-      Answer –
+      Answer:
 
       |  | A | B | C | D |
       |---|---|---|---|---|
@@ -109,7 +109,7 @@ questions:
       | False |  | ✔ |  |  |
       | Cannot be deduced |  |  |  | ✔ |
 
-      Solution –
+      Solution:
 
       Make a table for catalytic efficiency (Kcat/KM) for each substrate:
 
@@ -123,21 +123,21 @@ questions:
 
       Evaluating each option,
 
-      A – True
+      A: True
 
-      Solution – Substrate 3 shows highest value of catalytic
+      Solution: Substrate 3 shows highest value of catalytic
       efficiency, thus it is cleaved most efficiently.
 
-      B – False
+      B: False
 
-      Solution – Only in substrate 2, Ala is on either side of cleavage site.
+      Solution: Only in substrate 2, Ala is on either side of cleavage site.
 
-      C – True
+      C: True
 
-      Solution – Most efficiently cleaved substrate is substrate 3 where bond between Ala (small hydrophobic amino acid) and
+      Solution: Most efficiently cleaved substrate is substrate 3 where bond between Ala (small hydrophobic amino acid) and
       Phe (large aromatic amino acid) is cleaved
 
-      D – Cannot be deducedSolution – Efficiency depends both on 
+      D: Cannot be deducedSolution: Efficiency depends both on 
       Kcat and KM. So it is not necessarily true that an enzyme with low KM will have greater efficiency.
   - id: 4
     difficulty: "hard"
@@ -152,7 +152,7 @@ questions:
       ![image](/CHALLENGEPICS/enzyme-kinetics-regulation-q4.png)
     solution: |
 
-      Answer – 13.5 mM
+      Answer: 13.5 mM
 
       Solution - In methanol without ethanol, .
       For 90% suppression by ethanol addition 
@@ -186,14 +186,14 @@ questions:
       D. Increasing the concentration of CO2 in the air increases the carboxylase activity of Rubisco
     solution: |
 
-      A – A and CSolution - F
+      A: A and CSolution - F
       rom (a) and (c) conditions, the carboxylase activity of Rubisco is not in saturating situation in the air. Since oxygen molecule works as the competitive inhibitor against CO2, the carboxylase activity increases when O2 concentration in the air decreases.
 
-      B – A, B and CSolution - 
+      B: A, B and CSolution - 
       Addition to (a) and (c) conditions in the air, turnover rates of CO2 and O2 is found out from (b) condition. Thus, by using all conditions, it is supposed that the carboxylase activity of Rubisco is higher than the oxygenase activity.
 
-      C – A, B and CSolution - 
+      C: A, B and CSolution - 
       Turnover rate of CO2 in Rubisco is very low. Also, from (a) and (c) conditions, the carboxylase activity is low. Thus, to maintain the full capacity of photosynthesis, large amounts of Rubisco is necessary.
 
-      D – A and CSolution - 
+      D: A and CSolution - 
       From (a) and (c) conditions, the carboxylase activity of Rubisco is not in saturating situation in the air. The carboxylase activity increases when CO2 concentration in the air increases.

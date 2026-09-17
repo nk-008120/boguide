@@ -33,7 +33,7 @@ questions:
       | V | 3.0 | 35 |
       | VI | 5.0 | 38 |
 
-      Which of the following can be deduced from the observations? A. The experiments I – VI were carried out at successively increasing temperatures.
+      Which of the following can be deduced from the observations? A. The experiments I: VI were carried out at successively increasing temperatures.
 
       B. The nature of solute must be highly non-polar.
 
@@ -56,7 +56,7 @@ questions:
       D. Water can be transported through Z
     solution: |
 
-      Ans – A - T, B - F, C - F, D – T
+      Ans: A - T, B - F, C - F, D: T
   - id: 4
     difficulty: "medium"
     source: "INBO"
@@ -124,4 +124,4 @@ questions:
       9-C18:1 to ∆9-C16:1 causes higher ethanol tolerance in S. cerevisiae.
     solution: |
 
-      Ans – A – T, B – F, C – F, D - T
+      Ans: A: T, B: F, C: F, D - T

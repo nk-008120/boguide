@@ -2,7 +2,7 @@
 title: "Privacy Policy"
 ---
 
-**Last updated:** August 30, 2026
+**Last updated:** September 18, 2026
 
 BiOGuide is a free, non-commercial study resource. Almost everything on the site - every topic page, every practice question, every timed attempt - works with no account at all. This page explains what happens on the small part that does involve an account: login, your profile, and the leaderboard.
 
@@ -18,7 +18,7 @@ If you create an account (optional, via **Sign Up** on the [Account page](/accou
 - **Country, education level, and a short "about" bio** - all optional, filled in on your profile. Country is shown publicly on the leaderboard as a flag; education level and "about" are shown only on your own profile.
 - **Timed Attempt / quiz activity** - if you submit a practice test to the leaderboard, we store your score, timing, and per-question results, tied to your account, so we can rank you and show your history.
 
-That's the complete list. We don't collect payment information (the site is free), and we don't run third-party ad or tracking scripts.
+That's the complete list. We don't collect payment information (the site is free), and we don't run advertising scripts or sell data to advertisers. We do use analytics tools to understand traffic and how the site is used, described in the Analytics section below.
 
 ## Why we collect it
 
@@ -36,7 +36,15 @@ You can read every topic page and attempt every practice question without ever s
 
 ## Cookies and local storage
 
-We don't use tracking or advertising cookies. Your login session is kept in your browser's local storage (not a third-party cookie) so you stay logged in between visits - this is standard behavior for any site with accounts, not a tracking mechanism.
+Your login session is kept in your browser's local storage, not a cookie, so you stay logged in between visits - this is standard behavior for any site with accounts, not a tracking mechanism. Google Analytics 4 sets first-party cookies to recognize return visits; PostHog is configured to use local storage only, not cookies. Neither is used for advertising, and we don't run ad-targeting scripts of any kind.
+
+## Analytics
+
+We use three tools to understand how the site is used. None of them sell data or run advertising:
+
+- **Umami** (self-hosted, on our own infrastructure) - anonymous page views and Core Web Vitals. No cookies, no personal data. This is also what powers the visitor-country counts on the [About page](/about/#community-reach).
+- **PostHog** (hosted in the EU) - tracks a small set of specific actions, like completing signup or submitting a practice attempt, not full page content or recordings of your session. If you're logged in, these actions are linked to your account so we can understand how account holders actually use the site; if you're not logged in, they're anonymous.
+- **Google Analytics 4** - standard traffic and behavior analytics, using the first-party cookies described above. You can opt out at any time using [Google's browser add-on](https://tools.google.com/dlpage/gaoptout) or by enabling Do Not Track in your browser.
 
 ## BiOLab: protocols, results, and feedback
 

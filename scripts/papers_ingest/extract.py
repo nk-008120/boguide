@@ -1,7 +1,7 @@
 """
 Stage 1 of the lean ingestion pipeline (see
 context/papers-ingestion-lean-workflow.md). Runs the mechanical PDF
-extraction — page-to-question mapping, statement text, figure candidates —
+extraction- page-to-question mapping, statement text, figure candidates-
 as a script instead of manually re-deriving the same Bash/Python each batch.
 
 Usage:
@@ -11,16 +11,16 @@ Usage:
     [--dpi N]                  render DPI for auto-cropped vector figures, default 200
 
 Every exam PDF has a different layout (confirmed across 2022 vs 2024 IBO
-papers already) — that's why the question-boundary regex and figure mode are
+papers already)- that's why the question-boundary regex and figure mode are
 flags, not hardcoded. Run once per new exam layout, sanity-check raw.json's
 question count/page coverage against what you expect before trusting it for
 a full batch.
 
 Output (OUT_DIR/):
-  text/page_NNNN.txt   — full per-page text dump, for a human glance if
+  text/page_NNNN.txt , full per-page text dump, for a human glance if
                           something in raw.json looks wrong
-  figures/*.png        — every figure candidate (raster + auto-cropped)
-  raw.json             — {questions: [{number, page_start, page_end, text,
+  figures/*.png      , every figure candidate (raster + auto-cropped)
+  raw.json           , {questions: [{number, page_start, page_end, text,
                           images: [{path, width, height, auto_cropped}]}]}
 """
 import argparse
@@ -43,7 +43,7 @@ def find_boundaries(pages_lines, question_regex):
     """
     pages_lines: {page_num: [line dicts from pdf_tools.page_lines]}. Returns
     a globally page+position-ordered list of (page, top_y, line_index,
-    number) for every line matching question_regex — the "a new question
+    number) for every line matching question_regex- the "a new question
     starts exactly here" markers used both for text splitting and for
     figure assignment on pages shared by two adjacent questions.
     """
@@ -58,12 +58,12 @@ def find_boundaries(pages_lines, question_regex):
 
 def owning_question(boundaries, page_num, top_y):
     """
-    Which question "owns" a given (page, y-position) — the question whose
+    Which question "owns" a given (page, y-position)- the question whose
     boundary is the last one at or before this position, in reading order.
     Used to split both text and figures correctly when two adjacent
     questions share a page (e.g. Q80 ends and Q81 starts on the same page).
     Returns None if the position is before the first known boundary
-    (content — usually front matter/instructions — that precedes Q1).
+    (content- usually front matter/instructions- that precedes Q1).
     """
     owner = None
     for (b_page, b_top, _i, number) in boundaries:
@@ -76,7 +76,7 @@ def split_questions(pages_lines, boundaries, boilerplate=frozenset()):
     """
     Returns [{number, page_start, page_end, text}] by walking every line in
     page+position order and bucketing it into whichever question owns that
-    position (see owning_question) — correct even when two questions share
+    position (see owning_question)- correct even when two questions share
     a page, unlike a naive page-range split. Lines matching `boilerplate`
     (repeating running headers/footers, see find_boilerplate_lines) are
     dropped from the assembled text but still count for page ownership.
@@ -197,12 +197,12 @@ def main():
     print(f"Questions found: {len(questions)}"
           + (f" ({questions[0]['number']}-{questions[-1]['number']})" if questions else ""))
     print(f"Raster figure candidates: {n_raster} (logo/watermark hashes filtered: {len(logo_hashes)})")
-    print(f"Auto-cropped vector figures: {n_autocrop} — these are best-effort guesses, "
+    print(f"Auto-cropped vector figures: {n_autocrop}- these are best-effort guesses, "
           f"eyeball each one before trusting it (marked auto_cropped:true in raw.json)")
     if n_unowned:
         print(f"NOTE: {n_unowned} figure(s) fell before the first question boundary on the page range "
               f"(e.g. front-matter/instructions before Q{questions[0]['number'] if questions else '?'}) "
-              f"and were dropped — expand the page range if one of these was a real figure.")
+              f"and were dropped- expand the page range if one of these was a real figure.")
     print(f"Wrote {out_dir / 'raw.json'}")
 
 if __name__ == "__main__":

@@ -1,0 +1,75 @@
+topic: "translation-genetic-code"
+topicName: "Translation & the Genetic Code"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "translation-genetic-code-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "A particular triplet of bases in the coding sequence of DNA is AAA. The anticodon on the tRNA that binds the mRNA codon is ________."
+    options:
+      - key: "A"
+        text: "TTT"
+      - key: "B"
+        text: "UUA"
+      - key: "C"
+        text: "UUU"
+      - key: "D"
+        text: "AAA"
+    answer: "D"
+    explanation: "The tRNA anticodon must be complementary and antiparallel to the mRNA codon, and the mRNA codon is itself complementary to the DNA template triplet; working through DNA (AAA) → mRNA codon (UUU) → tRNA anticodon gives AAA, matching the DNA template by coincidence of base-pairing symmetry."
+    sourceRef: "Campbell Biology 11e, Ch. 17 (Gene Expression: From Gene to Protein)"
+
+  - id: "translation-genetic-code-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "The anticodon of a particular tRNA molecule is"
+    options:
+      - key: "A"
+        text: "complementary to the corresponding mRNA codon."
+      - key: "B"
+        text: "complementary to the corresponding triplet in rRNA."
+      - key: "C"
+        text: "the part of tRNA that bonds to a specific amino acid."
+      - key: "D"
+        text: "catalytic, making the tRNA a ribozyme."
+    answer: "A"
+    explanation: "By definition, a tRNA's anticodon base-pairs with (is complementary to) the mRNA codon specifying the amino acid that tRNA carries."
+    sourceRef: "Campbell Biology 11e, Ch. 17 (Gene Expression: From Gene to Protein)"
+
+  - id: "translation-genetic-code-03"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "The genetic code is essentially the same for all organisms. From this, one can logically assume which of the following statements to be true?"
+    options:
+      - key: "A"
+        text: "A gene from an organism can theoretically be expressed by any other organism."
+      - key: "B"
+        text: "DNA was the first genetic material."
+      - key: "C"
+        text: "The same codons in different organisms translate into different amino acids."
+      - key: "D"
+        text: "Different organisms have different types of amino acids."
+    answer: "A"
+    explanation: "Because the genetic code is (nearly) universal, the same codon specifies the same amino acid in virtually every organism, which is exactly why a gene transplanted from one species can often be transcribed and translated correctly by another species' machinery: the basis of recombinant protein expression."
+    sourceRef: "Campbell Biology 11e, Ch. 17 (Gene Expression: From Gene to Protein)"
+
+  - id: "translation-genetic-code-04"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "What would be the consequence of a mutation in a bacterial cell that produces a defective aminoacyl-tRNA synthetase that attaches a lysine instead of the normal phenylalanine to tRNAs with the anticodon AAA?"
+    options:
+      - key: "A"
+        text: "None of the proteins in the cell will contain phenylalanine."
+      - key: "B"
+        text: "Proteins in the cell will include lysine instead of phenylalanine at amino acid positions specified by the codon UUU."
+      - key: "C"
+        text: "The cell will compensate for the defect by attaching phenylalanine to tRNAs with lysine- specifying anticodons."
+      - key: "D"
+        text: "The ribosome will skip a codon every time a UUU is encountered."
+    answer: "B"
+    explanation: "A defective synthetase that mischarges lysine onto tRNAs bearing the phenylalanine anticodon will cause the ribosome to insert lysine at every UUU codon, systematically substituting lysine for phenylalanine throughout the proteome without otherwise disrupting reading frame or ribosome function."
+    sourceRef: "Campbell Biology 11e, Ch. 17 (Gene Expression: From Gene to Protein)"

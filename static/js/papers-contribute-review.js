@@ -52,7 +52,7 @@
 
       var anyRows = results.some(function (r) { return (r.data || []).length > 0; });
       if (!anyRows) {
-        listEl.innerHTML = '<p class="discussions-status">Nothing pending — the queue is empty.</p>';
+        listEl.innerHTML = '<p class="discussions-status">Nothing pending, the queue is empty.</p>';
         return;
       }
 
@@ -70,7 +70,7 @@
       });
     }).catch(function () {
       statusEl.hidden = false;
-      statusEl.textContent = 'Could not load the queue right now — try refreshing.';
+      statusEl.textContent = 'Could not load the queue right now, try refreshing.';
       listEl.hidden = true;
     });
   }
@@ -80,7 +80,7 @@
       var files = '<a href="#" data-signed-file="' + escapeHTML(row.exam_file_path) + '">Exam PDF</a>';
       if (row.answer_file_path) files += ' · <a href="#" data-signed-file="' + escapeHTML(row.answer_file_path) + '">Answer key PDF</a>';
       return (
-        '<p><strong>' + escapeHTML(row.olympiad) + ' ' + escapeHTML(row.year) + '</strong> — ' + escapeHTML(row.round_label) + '</p>' +
+        '<p><strong>' + escapeHTML(row.olympiad) + ' ' + escapeHTML(row.year) + '</strong>, ' + escapeHTML(row.round_label) + '</p>' +
         (row.source_url ? '<p>Source: <a href="' + escapeHTML(row.source_url) + '" target="_blank" rel="noopener">' + escapeHTML(row.source_url) + '</a></p>' : '') +
         '<p><strong>License note:</strong> ' + escapeHTML(row.license_note) + '</p>' +
         '<p>' + files + '</p>'
@@ -88,7 +88,7 @@
     }
     if (table === 'content_corrections') {
       return (
-        '<p><strong>' + escapeHTML(row.olympiad) + ' ' + escapeHTML(row.year) + '/' + escapeHTML(row.round_id) + '/' + escapeHTML(row.problem_id) + '</strong> — field: ' + escapeHTML(row.field) + '</p>' +
+        '<p><strong>' + escapeHTML(row.olympiad) + ' ' + escapeHTML(row.year) + '/' + escapeHTML(row.round_id) + '/' + escapeHTML(row.problem_id) + '</strong>, field: ' + escapeHTML(row.field) + '</p>' +
         (row.current_value ? '<p><strong>Current:</strong> ' + escapeHTML(row.current_value) + '</p>' : '') +
         '<p><strong>Proposed:</strong> ' + escapeHTML(row.proposed_value) + '</p>' +
         '<p><strong>Reason:</strong> ' + escapeHTML(row.reason) + '</p>'

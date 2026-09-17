@@ -6,7 +6,7 @@
 {{- $navTitle := .Site.Params.navbar.title | default .Site.Title -}}
 
 {{- /* Feature 1+2 of LOGIN_ROADMAP.md's Part 2: an always-visible account
-     icon in the leftmost slot of the navbar — a generic login glyph when
+     icon in the leftmost slot of the navbar: a generic login glyph when
      logged out, the user's chosen avatar when logged in. Reactive state
      (no reload) is handled by static/js/papers-nav-account.js via
      PapersAuth.onChange, loaded site-wide from head-end.html so it runs

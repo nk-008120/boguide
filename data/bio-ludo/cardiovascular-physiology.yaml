@@ -1,0 +1,75 @@
+topic: "cardiovascular-physiology"
+topicName: "Cardiovascular Physiology"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "cardiovascular-physiology-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Organisms with a circulating body fluid that is distinct from the fluid that directly surrounds the body's cells are likely to have ________."
+    options:
+      - key: "A"
+        text: "an open circulatory system"
+      - key: "B"
+        text: "a closed circulatory system"
+      - key: "C"
+        text: "a gastrovascular cavity"
+      - key: "D"
+        text: "branched tracheae"
+    answer: "B"
+    explanation: "A closed circulatory system confines blood within vessels, keeping it physically distinct from the interstitial fluid that directly bathes the body's cells; in an open system, the same fluid (hemolymph) serves both roles."
+    sourceRef: "Campbell Biology 11e, Ch. 42 (Circulation and Gas Exchange)"
+
+  - id: "cardiovascular-physiology-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "In which of the following organisms does blood flow from the pulmocutaneous circulation to the heart before circulating through the rest of the body?"
+    options:
+      - key: "A"
+        text: "annelids"
+      - key: "B"
+        text: "fishes"
+      - key: "C"
+        text: "frogs"
+      - key: "D"
+        text: "insects"
+    answer: "C"
+    explanation: "In frogs, deoxygenated blood returning from the skin and lungs (the pulmocutaneous circuit) flows back to the heart first, where it mixes in a single ventricle before being pumped out to the rest of the body."
+    sourceRef: "Campbell Biology 11e, Ch. 42 (Circulation and Gas Exchange)"
+
+  - id: "cardiovascular-physiology-03"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "The circulatory systems of bony fishes, rays, and sharks are most similar to ________."
+    options:
+      - key: "A"
+        text: "those of birds, with a four-chambered heart"
+      - key: "B"
+        text: "the portal systems of mammals, where two capillary beds occur sequentially, without passage of blood through a pumping chamber"
+      - key: "C"
+        text: "those of sponges, where gas exchange in all cells occurs directly with the external environment"
+      - key: "D"
+        text: "those of humans, where there are four pumping chambers to drive blood flow"
+    answer: "B"
+    explanation: "Fish, rays, and sharks all use a single-circuit circulatory system in which blood passes through the gill capillary bed and then directly on to the systemic capillary bed without returning through a pumping chamber in between, the same two-capillary-beds-in-series arrangement seen in mammalian portal systems."
+    sourceRef: "Campbell Biology 11e, Ch. 42 (Circulation and Gas Exchange)"
+
+  - id: "cardiovascular-physiology-04"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "To adjust blood pressure independently in the capillaries of the gas-exchange surface and in the capillaries of the general body circulation, an organism would need a(n) ________."
+    options:
+      - key: "A"
+        text: "open circulatory system"
+      - key: "B"
+        text: "hemocoel"
+      - key: "C"
+        text: "two-chambered heart"
+      - key: "D"
+        text: "four-chambered heart"
+    answer: "D"
+    explanation: "A four-chambered heart with two separate ventricles allows an animal to generate and maintain two different pressures, a lower pressure circuit to the delicate gas-exchange surface and a higher pressure circuit to the rest of the body, completely independently."
+    sourceRef: "Campbell Biology 11e, Ch. 42 (Circulation and Gas Exchange)"

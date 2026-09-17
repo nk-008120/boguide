@@ -39,15 +39,15 @@
         window.PapersAuth.flagHTML(r.country) +
         '<span class="papers-leaderboard-name">' + escapeHTML(r.display_name) + '</span>' +
       '</td>' +
-      '<td>' + (r.score_label ? escapeHTML(r.score_label) : '—') + '</td>' +
+      '<td>' + (r.score_label ? escapeHTML(r.score_label) : '-') + '</td>' +
       '</tr>';
   }
 
   function render(rows) {
     if (!rows.length) {
       statusEl.textContent = roundFilter
-        ? (roundFilter + ' hasn’t concluded yet — no champions crowned. ')
-        : 'No round has concluded yet — no champions crowned. ';
+        ? (roundFilter + ' hasn’t concluded yet - no champions crowned. ')
+        : 'No round has concluded yet - no champions crowned. ';
       var link = document.createElement('a');
       link.href = '/bioclash/';
       link.textContent = 'Get notified when it opens →';
@@ -63,7 +63,7 @@
         return s === filterLower || s.endsWith(':' + filterLower);
       });
       if (!match) {
-        statusEl.textContent = roundFilter + ' hasn’t concluded yet — no champions crowned. ';
+        statusEl.textContent = roundFilter + ' hasn’t concluded yet - no champions crowned. ';
         return;
       }
       season = match.season;
@@ -100,12 +100,12 @@
     var client = window.PapersAuth.getClient();
     client.from('bioclash_leaderboard').select('*').limit(100).then(function (result) {
       if (result.error) {
-        statusEl.textContent = 'Could not load Champions right now — try refreshing.';
+        statusEl.textContent = 'Could not load Champions right now - try refreshing.';
         return;
       }
       render(result.data || []);
     }).catch(function () {
-      statusEl.textContent = 'Could not load Champions right now — try refreshing.';
+      statusEl.textContent = 'Could not load Champions right now - try refreshing.';
     });
   }
 

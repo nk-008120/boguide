@@ -1,5 +1,5 @@
 ---
-title: "Review Queue — BiOrchive Contributions"
+title: "Review Queue: BiOrchive Contributions"
 description: "Staff review queue for paper submissions, content corrections, and community solutions."
 layout: "wide"
 noindex: true

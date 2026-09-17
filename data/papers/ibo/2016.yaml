@@ -2568,7 +2568,7 @@ rounds:
   \ beginning only about 0.5 cm from the tip on the Cd100 side, while on the Cd0 side\
   \ of the same root suberization does not begin until much farther from the apex."
           - letter: "C"
-            text: "In roots exposed unilaterally to Cd (Cd0–Cd100), the development of the endodermis\
+            text: "In roots exposed unilaterally to Cd (Cd0-Cd100), the development of the endodermis\
   \ was accelerated and asymmetrical."
             answer: true
             explanation: "The unequal onset distance of suberization between the two sides of the same unilaterally-exposed\

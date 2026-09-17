@@ -1,5 +1,5 @@
 ---
-title: "Submit a Protocol — BiOLab"
+title: "Submit a Protocol - BiOLab"
 description: "Write up your own lab protocol and publish it to the BiOLab archive immediately credited to you, no staff review queue."
 layout: "wide"
 ---

@@ -1,0 +1,75 @@
+topic: "homeostasis-osmoregulation"
+topicName: "Homeostasis & Osmoregulation"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "homeostasis-osmoregulation-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Single-celled Paramecium live in pond water (a hypotonic environment relative to the cytosol). They have a structural feature, a contractile vacuole, which enables them to osmoregulate. If sucrose or saline was added to the pond water in different concentrations (in millimolars, mM), under which conditions would you expect the contractile vacuole to be most active?"
+    options:
+      - key: "A"
+        text: "0.0 mM sucrose"
+      - key: "B"
+        text: "0.05 mM saline"
+      - key: "C"
+        text: "0.08 mM sucrose"
+      - key: "D"
+        text: "1.0 mM saline"
+    answer: "A"
+    explanation: "The contractile vacuole must work hardest (pump most actively) when the surrounding water is most hypotonic relative to the cytosol, since that is when the largest osmotic influx of water needs to be expelled: plain pond water (0.0 mM added solute) is the most hypotonic option listed."
+    sourceRef: "Campbell Biology 11e, Ch. 44 (Osmoregulation and Excretion)"
+
+  - id: "homeostasis-osmoregulation-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "The force driving simple diffusion is ________, while the energy source for active transport is ________."
+    options:
+      - key: "A"
+        text: "the concentration gradient; ADP"
+      - key: "B"
+        text: "the concentration gradient; ATP"
+      - key: "C"
+        text: "transmembrane pumps; electron transport"
+      - key: "D"
+        text: "phosphorylated protein carriers; ATP"
+    answer: "B"
+    explanation: "Simple diffusion is passive and driven entirely by the existing concentration gradient, requiring no direct energy input, while active transport moves substances against their gradient and must be powered by ATP."
+    sourceRef: "Campbell Biology 11e, Ch. 44 (Osmoregulation and Excretion)"
+
+  - id: "homeostasis-osmoregulation-03"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "Animals have adapted different mechanisms for excreting nitrogenous waste products. Which of the following are selective pressures that likely influence which mechanism an animal uses? I) the amount of water available in the animal's habitat II) the energy needs of the animal III) the temperature of the animal's environment"
+    options:
+      - key: "A"
+        text: "only I and III"
+      - key: "B"
+        text: "only II and III"
+      - key: "C"
+        text: "only I and II"
+      - key: "D"
+        text: "I, II, and III"
+    answer: "C"
+    explanation: "All three factors described are genuine, textbook-recognized selective pressures shaping which nitrogenous waste (ammonia, urea, or uric acid) a given animal lineage uses, since water availability, metabolic energy cost, and environmental temperature all affect the trade-offs between toxicity, water cost, and energy cost of each waste form."
+    sourceRef: "Campbell Biology 11e, Ch. 44 (Osmoregulation and Excretion)"
+
+  - id: "homeostasis-osmoregulation-04"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "In which of the following species should natural selection favor the highest proportion of juxtamedullary nephrons?"
+    options:
+      - key: "A"
+        text: "a river otter"
+      - key: "B"
+        text: "a mouse species living in a temperate broadleaf forest"
+      - key: "C"
+        text: "a mouse species living in a desert"
+      - key: "D"
+        text: "a beaver"
+    answer: "C"
+    explanation: "Juxtamedullary nephrons have long loops of Henle that generate a steep osmotic gradient enabling maximal water reabsorption; this adaptation for concentrating urine and conserving water would be most strongly favored by natural selection in a desert-dwelling species facing severe water scarcity."
+    sourceRef: "Campbell Biology 11e, Ch. 44 (Osmoregulation and Excretion)"

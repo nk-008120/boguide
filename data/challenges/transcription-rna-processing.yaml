@@ -20,15 +20,15 @@ questions:
 
       Now, evaluate the options,
 
-      A – Likely (Has a S (Ser) site)
+      A: Likely (Has a S (Ser) site)
 
-      B – Likely (Has a T (Thr) site)
+      B: Likely (Has a T (Thr) site)
 
-      C – Not Likely
+      C: Not Likely
 
       D - Not Likely
 
-      E – Likely (Has a Y (Tyr) site)
+      E: Likely (Has a Y (Tyr) site)
   - id: 2
     difficulty: "easy"
     source: "INBO"
@@ -43,7 +43,7 @@ questions:
       . phage genome and bacterial genome respectively.
     solution: |
 
-      Answer – A) bacterial genome and phage genome respectively.
+      Answer: A) bacterial genome and phage genome respectively.
 
       Solution - The phage genes are expressed sequentially: Group A → Group B → Group C → Group D
       Each group requires a specific sigma factor for transcription. Group A is expressed first, immediately after the phage infects the bacterium. Therefore, its promoter must initially be recognized by a sigma factor already present in the host cell. The gene encoding this sigma factor is therefore located in the bacterial genome. As transcription proceeds, early phage genes can encode phage-specific sigma factors that redirect the host RNA polymerase to transcribe subsequent groups (B, C, and eventually D). Thus, the sigma factor required for Group D transcription is encoded by the phage genome.
@@ -63,20 +63,20 @@ questions:
       E. Thymine in RNA pairs with adenine in DNA.
     solution: |
 
-      Answer – B
+      Answer: B
 
       Evaluating the statements,
 
-      A – IncorrectSolution - 
+      A: IncorrectSolution - 
       Nucleotides are polymerized by RNA polymerase not DNA polymerase
 
-      B – CorrectSolution - 
+      B: CorrectSolution - 
       Initiation requires sites like -35 box, -10 box (Pribnow box) and UP element which are recognized by the sigma factor.
 
-      C – IncorrectSolution – mRNA produced in 
+      C: IncorrectSolution: mRNA produced in 
       prokaryots are polycistronic, i.e., one mRNA has many genes corresponding to different proteins.
 
-      D – IncorrectSolution – Only one
+      D: IncorrectSolution: Only one
        DNA strand, called the template/non-coding/anti-sense/(-) strand, is used as template at a time.
 
       E - Incorrect Solution - Uracil 
@@ -103,7 +103,7 @@ questions:
       E. I, III, IV, and V only.
     solution: |
 
-      Answer – B) I, V, VI, and VII only
+      Answer: B) I, V, VI, and VII only
 
       Evaluating the statements,
 
@@ -140,7 +140,7 @@ questions:
       VII - True
 
       Solution -
-       This describes the Shine–Dalgarno sequence, a purine-rich ribosome-binding site located approximately 6–10 nucleotides upstream of the start codon.
+       This describes the Shine-Dalgarno sequence, a purine-rich ribosome-binding site located approximately 6-10 nucleotides upstream of the start codon.
   - id: 5
     difficulty: "hard"
     source: "INBO"
@@ -165,14 +165,14 @@ questions:
 
       Evaluating the statements,
 
-      A – IncorrectSolution - 
+      A: IncorrectSolution - 
       The core RNA polymerase contains the catalytic machinery required for RNA synthesis. Sigma factor is primarily involved in promoter recognition and initiation.
 
-      B – IncorrectSolution – 
+      B: IncorrectSolution: 
       Sigma factor does not simply increase non-specific DNA binding by allowing RNAP to bind a longer stretch. Its major role is to provide specific recognition of promoter sequences.
 
-      C – IncorrectSolution - 
+      C: IncorrectSolution - 
       Sigma factor mainly alters the DNA-binding specificity of core RNAP rather than increasing its intrinsic catalytic efficiency.
 
-      D – CorrectSolution - 
+      D: CorrectSolution - 
       Sigma factor reduces stable nonspecific interactions of RNAP with DNA while promoting strong, sequence-specific interactions at promoter regions. This helps RNAP locate and initiate transcription at the correct sites.

@@ -123,7 +123,7 @@
       var toneClass = 'attempt-rec-' + (r.tone || 'neutral');
       var linkHTML = '';
       if (r.link && r.linkLabel) {
-        linkHTML = '<a class="papers-subject-tag" href="' + escapeHTML(r.link) + '">' +
+        linkHTML = '<a class="papers-subject-tag" href="' + escapeHTML(r.link) + '" data-rec-link="' + escapeHTML(r.subjectLink || r.link) + '">' +
           escapeHTML(r.linkLabel) + '</a>';
       }
       var reviewHTML = '';
@@ -142,6 +142,12 @@
         reviewHTML +
         '</div>';
     }).join('');
+
+    el.querySelectorAll('a[data-rec-link]').forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (window.PostHogEvents) window.PostHogEvents.trackDashboardRecommendationClicked(link.getAttribute('data-rec-link'));
+      });
+    });
 
     if (!client || !userId) return;
 

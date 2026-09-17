@@ -42,7 +42,7 @@ questions:
       D. Microtubule polymerization, depolymerization, and microtubule motor proteins are required for DNA replication.
     solution: |
 
-      Ans – A – T, B – T, C – T, D – F
+      Ans: A: T, B: T, C: T, D: F
   - id: 4
     difficulty: "medium"
     source: "USABO"
@@ -74,10 +74,10 @@ questions:
       (I) How long are the cell cycles of somatic cell A and somatic cell B?
     solution: |
 
-      Ans – Cell A -> 12 hours, Cell B -> 16 hours
+      Ans: Cell A -> 12 hours, Cell B -> 16 hours
 
       (II) When somatic cells A and B were mixed at a certain ratio and a culture was started in a culture dish, the ratio of the cell numbers of A and B after 4 days was 2:1. What was the ratio of somatic cell A and B cell numbers when the culture was started? (It is assumed that the cell cycle of the somatic cells A and B progresses independently. The nutrients required by the cells during the cultivation are well-supplied.)
-      Ans – A:B = 1:2
+      Ans: A:B = 1:2
   - id: 6
     difficulty: "medium"
     source: "IBO"
@@ -97,7 +97,7 @@ questions:
       D. Both alleles of p53 are usually mutated in cancer. E. P53 knockout mice (Mus musculus) show an overgrowth of bone-marrow cells.
     solution: |
 
-      Ans – A - T, B - F, C - F, D - F, E - T
+      Ans: A - T, B - F, C - F, D - F, E - T
   - id: 7
     difficulty: "hard"
     source: "IBO"
@@ -115,7 +115,7 @@ questions:
       D. Most of the radioactive thymidine is assimilated in the S phase of the cell cycle.
     solution: |
 
-      Ans – A – F, B – T, C – F, D – T
+      Ans: A: F, B: T, C: F, D: T
   - id: 8
     difficulty: "hard"
     source: "IBO"
@@ -131,4 +131,4 @@ questions:
       A. Liver massB. Hepatocyte numberC. Average hepatocyte ploidyD. Number of mitotic spindlesE. DNA synthesis
     solution: |
 
-      Ans – A -> (0), B -> (-), C -> (+), D -> (-), E -> (+)
+      Ans: A -> (0), B -> (-), C -> (+), D -> (-), E -> (+)

@@ -1,5 +1,5 @@
 You are helping populate a Biology Olympiad practice-question archive. For each
-question below, the CORRECT ANSWER for each statement is already given — your
+question below, the CORRECT ANSWER for each statement is already given - your
 job is only to explain WHY each statement is true or false, in 2-4 sentences,
 grounded in the question's own text/figures. Do not re-derive or second-guess
 the given answer; if your own reasoning seems to conflict with it, still

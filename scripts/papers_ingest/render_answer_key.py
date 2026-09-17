@@ -8,7 +8,7 @@ Usage:
   python3 scripts/papers_ingest/render_answer_key.py EXAM.pdf 76-79 out_dir/ --dpi 250
 
 Prints the exact CSV schema the transcription should be typed into
-(question_number,letter,answer) — hand that spec, plus the rendered PNG(s),
+(question_number,letter,answer): hand that spec, plus the rendered PNG(s),
 to whoever/whatever is doing the transcription.
 """
 import argparse

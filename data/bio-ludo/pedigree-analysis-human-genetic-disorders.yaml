@@ -1,0 +1,93 @@
+topic: "pedigree-analysis-human-genetic-disorders"
+topicName: "Pedigree Analysis & Human Genetic Disorders"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "pedigree-analysis-human-genetic-disorders-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Albinism is a recessive trait. A man and woman who both have normal pigmentation have one child out of three who has albinism (without melanin pigmentation). What are the genotypes of this child's parents?"
+    options:
+      - key: "A"
+        text: "One parent must be homozygous for the recessive allele; the other parent can be homozygous dominant, homozygous recessive, or heterozygous."
+      - key: "B"
+        text: "One parent must be heterozygous; the other parent can be homozygous dominant, homozygous recessive, or heterozygous."
+      - key: "C"
+        text: "Both parents must be heterozygous."
+      - key: "D"
+        text: "One parent must be homozygous dominant; the other parent must be heterozygous."
+    answer: "C"
+    explanation: "Since two unaffected parents produced an albino (aa) child, both parents must carry at least one recessive allele, i.e. both must be heterozygous (Aa) to make an aa offspring possible."
+    sourceRef: "Campbell Biology 11e, Ch. 14 (Mendel and the Gene Idea)"
+
+  - id: "pedigree-analysis-human-genetic-disorders-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "In some parts of Africa, the frequency of heterozygosity for the sickle-cell anemia allele is unusually high, presumably because this reduces the frequency of malaria. Such a relationship is related to which of the following?"
+    options:
+      - key: "A"
+        text: "Mendel's law of independent assortment"
+      - key: "B"
+        text: "Mendel's law of segregation"
+      - key: "C"
+        text: "Darwin's explanation of natural selection"
+      - key: "D"
+        text: "the malarial parasite changing the allele"
+    answer: "C"
+    explanation: "A trait that persists at high frequency because heterozygous carriers gain a survival advantage (resistance to malaria, in this case) despite homozygotes being harmed is a textbook example of natural selection maintaining genetic variation through heterozygote advantage."
+    sourceRef: "Campbell Biology 11e, Ch. 14 (Mendel and the Gene Idea)"
+
+  - id: "pedigree-analysis-human-genetic-disorders-03"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "A black guinea pig crossed with a guinea pig with albinism produced 12 black offspring. When the albino was crossed with a second black animal, six blacks and six albinos were obtained. What is the best explanation for this genetic situation?"
+    options:
+      - key: "A"
+        text: "Albinism is a recessive trait; black is a dominant trait."
+      - key: "B"
+        text: "Albinism is a dominant trait; black is incompletely dominant."
+      - key: "C"
+        text: "Albinism and black are codominant."
+      - key: "D"
+        text: "Albinism is a recessive trait; black is codominant."
+    answer: "A"
+    explanation: "The black × albino cross producing all-black offspring, followed by the albino-to-black backcross splitting 1:1 black:albino, is the classic pattern of a fully recessive trait (albinism) segregating against a dominant one (black), consistent with the first-generation parent being heterozygous."
+    sourceRef: "Campbell Biology 11e, Ch. 14 (Mendel and the Gene Idea)"
+
+  - id: "pedigree-analysis-human-genetic-disorders-04"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Phenylketonuria (PKU) is a recessive human disorder in which an individual cannot appropriately metabolize the amino acid phenylalanine. This amino acid is not naturally produced by humans. Which of the following treatments would be most effective for people with PKU?"
+    options:
+      - key: "A"
+        text: "Feed them the substrate that can be metabolized into phenylalanine."
+      - key: "B"
+        text: "Regulate the diet of the affected persons to severely limit the uptake of phenylalanine."
+      - key: "C"
+        text: "Feed the patients the missing enzymes in a regular cycle, such as twice per week."
+      - key: "D"
+        text: "Feed the patients an excess of the missing product."
+    answer: "B"
+    explanation: "Because PKU patients cannot break down phenylalanine, the most effective and standard treatment is a low-phenylalanine diet that limits intake of the amino acid they cannot metabolize, preventing its toxic buildup."
+    sourceRef: "Campbell Biology 11e, Ch. 14 (Mendel and the Gene Idea)"
+
+  - id: "pedigree-analysis-human-genetic-disorders-05"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Phenylketonuria is an inherited disease caused by a recessive autosomal allele. If a woman and her husband are both carriers, what is the probability that their first child will be a phenotypically normal girl?"
+    options:
+      - key: "A"
+        text: "1/4"
+      - key: "B"
+        text: "1/16"
+      - key: "C"
+        text: "3/16"
+      - key: "D"
+        text: "3/8"
+    answer: "D"
+    explanation: "With both parents heterozygous carriers (Aa) for an autosomal recessive disorder, the standard 3:1 phenotypic ratio (3/4 unaffected : 1/4 affected) applies regardless of sex, so the chance of an unaffected girl is 1/2 (girl) × 3/4 (unaffected) = 3/8."
+    sourceRef: "Campbell Biology 11e, Ch. 14 (Mendel and the Gene Idea)"

@@ -1,0 +1,93 @@
+topic: "cell-cycle-mitosis-meiosis"
+topicName: "Cell Cycle, Mitosis & Meiosis"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "cell-cycle-mitosis-meiosis-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Starting with a fertilized egg (zygote), a series of six cell divisions would produce an early embryo with how many cells?"
+    options:
+      - key: "A"
+        text: "12"
+      - key: "B"
+        text: "16"
+      - key: "C"
+        text: "32"
+      - key: "D"
+        text: "64"
+    answer: "D"
+    explanation: "Each division doubles the cell number, so six successive divisions of one zygote give 2^6 = 64 cells."
+    sourceRef: "Campbell Biology 11e, Ch. 12 (The Cell Cycle)"
+
+  - id: "cell-cycle-mitosis-meiosis-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Eukaryotic chromosomes are composed of which of the following macromolecules?"
+    options:
+      - key: "A"
+        text: "DNA and RNA"
+      - key: "B"
+        text: "DNA only"
+      - key: "C"
+        text: "DNA and proteins"
+      - key: "D"
+        text: "DNA and phospholipids"
+    answer: "C"
+    explanation: "Eukaryotic chromosomes are DNA molecules wrapped around and organized by histone and other chromosomal proteins; this DNA-protein complex is called chromatin."
+    sourceRef: "Campbell Biology 11e, Ch. 12 (The Cell Cycle)"
+
+  - id: "cell-cycle-mitosis-meiosis-03"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "Movement of the chromosomes during anaphase would be most affected by a drug that prevents which of the following events in mitosis and cell division?"
+    options:
+      - key: "A"
+        text: "nuclear envelope breakdown"
+      - key: "B"
+        text: "elongation of microtubules"
+      - key: "C"
+        text: "shortening of microtubules"
+      - key: "D"
+        text: "formation of a cleavage furrow"
+    answer: "C"
+    explanation: "Anaphase chromosome movement is driven by the shortening (depolymerization) of kinetochore microtubules, which reels the sister chromatids toward opposite poles; a drug blocking microtubule shortening would directly stall this movement."
+    sourceRef: "Campbell Biology 11e, Ch. 12 (The Cell Cycle)"
+
+  - id: "cell-cycle-mitosis-meiosis-04"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "In a diploid cell with 5 chromosome pairs (2n = 10), how many centromeres will be found in a nucleus at G2 of the cell division cycle?"
+    options:
+      - key: "A"
+        text: "5"
+      - key: "B"
+        text: "10"
+      - key: "C"
+        text: "20"
+      - key: "D"
+        text: "40"
+    answer: "B"
+    explanation: "At G2 the DNA has already replicated but sister chromatids remain joined at a single centromere, so a diploid cell with 10 chromosomes (5 pairs) still has 10 centromeres, one per chromosome, each holding two sister chromatids together."
+    sourceRef: "Campbell Biology 11e, Ch. 12 (The Cell Cycle)"
+
+  - id: "cell-cycle-mitosis-meiosis-05"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Through a microscope, you can see a cell plate beginning to develop across the middle of a cell and nuclei forming on either side of the cell plate. This cell is most likely"
+    options:
+      - key: "A"
+        text: "an animal cell in the process of cytokinesis."
+      - key: "B"
+        text: "a plant cell in the process of cytokinesis."
+      - key: "C"
+        text: "a bacterial cell dividing."
+      - key: "D"
+        text: "a plant cell in metaphase."
+    answer: "B"
+    explanation: "A cell plate forming across the middle of a dividing cell is the plant-specific mechanism of cytokinesis (it matures into a new cell wall); animal cells instead pinch apart using an actin-myosin cleavage furrow."
+    sourceRef: "Campbell Biology 11e, Ch. 12 (The Cell Cycle)"

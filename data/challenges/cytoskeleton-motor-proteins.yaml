@@ -67,10 +67,10 @@ questions:
       (a) Calculate the mean rate of movement of pigment towards the centre (in μm/s) :
     solution: |
 
-      Ans – 0.195-0.205
+      Ans: 0.195-0.205
 
       (b) A second group of melanophores is treated with a drug that reduces the rate of microtubule-dependent transport by 35%. Calculate the expected mean rate of pigment movement in the treated cells.
-      Ans – 0.126 – 0.133
+      Ans: 0.126: 0.133
   - id: 4
     difficulty: "hard"
     source: "IBO"
@@ -116,7 +116,7 @@ questions:
 
       D. Because myosin V contains two heads, an observed 36 nm displacement of the labelled motor can be interpreted as each head moving 18 nm during the same step.
 
-      Ans – A – T, B – F, C – T, D - F
+      Ans: A: T, B: F, C: T, D - F
     solution: |
 
       | A | True | The step-like trace shows periods of little or no displacement followed by abrupt changes in position, supporting discrete stepping rather than continuous movement. |

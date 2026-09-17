@@ -1,0 +1,29 @@
+{{- $postHogKey := getenv "HUGO_POSTHOG_KEY" -}}
+{{- if $postHogKey -}}
+  {{- $postHogHost := getenv "HUGO_POSTHOG_HOST" -}}
+  {{- if not $postHogHost -}}{{- $postHogHost = "https://eu.i.posthog.com" -}}{{- end -}}
+  {{- $assetHost := replace $postHogHost ".i.posthog.com" "-assets.i.posthog.com" -}}
+  {{- $arrayJsUrl := urls.JoinPath $assetHost "static/array.js" -}}
+  {{- with try (resources.GetRemote $arrayJsUrl) -}}
+    {{- with .Err -}}
+      {{- errorf "Could not retrieve PostHog array.js from %s. Reason: %s." $arrayJsUrl . -}}
+    {{- else with .Value -}}
+      {{- with resources.Copy "js/posthog-array.js" . -}}
+        {{- $posthogJs := . | fingerprint -}}
+        <script defer src="{{ $posthogJs.RelPermalink }}" integrity="{{ $posthogJs.Data.Integrity }}" crossorigin="anonymous"></script>
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  <script defer>
+    (function () {
+      if (!window.posthog || !window.posthog.init) return;
+      window.posthog.init({{ $postHogKey | jsonify | safeJS }}, {
+        api_host: {{ $postHogHost | jsonify | safeJS }},
+        autocapture: false,
+        capture_pageview: false,
+        disable_session_recording: true,
+        persistence: 'localStorage'
+      });
+    })();
+  </script>
+{{- end -}}

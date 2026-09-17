@@ -1,0 +1,75 @@
+topic: "phylogenetic-trees-cladistics"
+topicName: "Phylogenetic Trees & Cladistics"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "phylogenetic-trees-cladistics-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Which of the following would be most useful in creating a phylogenetic tree of a taxon?"
+    options:
+      - key: "A"
+        text: "morphological data from fossil and living species"
+      - key: "B"
+        text: "a knowledge of color patterns in fossil and living species"
+      - key: "C"
+        text: "a knowledge of mutation rates in modern species"
+      - key: "D"
+        text: "morphological data from fossil species"
+    answer: "D"
+    explanation: "A phylogenetic tree is best built from data that reflects shared ancestry and derived similarity across a broad range of taxa; morphological data from both fossil and living species gives the deepest and most complete comparative dataset for reconstructing relationships."
+    sourceRef: "Campbell Biology 11e, Ch. 26 (Phylogeny and the Tree of Life)"
+
+  - id: "phylogenetic-trees-cladistics-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "To apply the principle of maximum parsimony to construction of a phylogenetic tree, ________."
+    options:
+      - key: "A"
+        text: "choose the tree that assumes all evolutionary changes are equally probable"
+      - key: "B"
+        text: "choose the tree in which the branch points are based on as many shared derived characters as possible"
+      - key: "C"
+        text: "choose the tree that represents the fewest evolutionary changes, either in DNA sequences or morphology"
+      - key: "D"
+        text: "choose the tree with the fewest branch points"
+    answer: "C"
+    explanation: "Maximum parsimony seeks the tree topology that requires the fewest total evolutionary changes (character-state transitions) to explain the observed data across all taxa in the analysis."
+    sourceRef: "Campbell Biology 11e, Ch. 26 (Phylogeny and the Tree of Life)"
+
+  - id: "phylogenetic-trees-cladistics-03"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Your professor wants you to construct a phylogenetic tree of orchids. She gives you tissue from seven orchid species and one lily. What is the most likely reason she gave you the lily?"
+    options:
+      - key: "A"
+        text: "to serve as an outgroup"
+      - key: "B"
+        text: "to see if the lily is a cryptic orchid species"
+      - key: "C"
+        text: "to see if the lily and the orchids show all the same shared derived characters"
+      - key: "D"
+        text: "to demonstrate likely homoplasies"
+    answer: "A"
+    explanation: "Including an outgroup (the lily, a taxon known to have diverged before the orchid lineage split) gives the tree a reference point for determining which character states are ancestral and which are derived within the orchid ingroup, letting the tree be properly rooted."
+    sourceRef: "Campbell Biology 11e, Ch. 26 (Phylogeny and the Tree of Life)"
+
+  - id: "phylogenetic-trees-cladistics-04"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Which of the following statements is accurate with regard to a phylogeny, as represented by a phylogenetic tree?"
+    options:
+      - key: "A"
+        text: "Descendant groups (branches) from the same node likely share many derived characters."
+      - key: "B"
+        text: "A monophyletic group can be properly based on convergent features."
+      - key: "C"
+        text: "The ancestral group often has all the derived characters of the descendant species."
+      - key: "D"
+        text: "Shared ancestral characters are excellent traits to use in developing a phylogeny."
+    answer: "A"
+    explanation: "A phylogenetic tree represents a hypothesis of evolutionary relationships based on the best available evidence, showing patterns of shared ancestry: it is a testable hypothesis, not a definitive, unrevisable record of the past."
+    sourceRef: "Campbell Biology 11e, Ch. 26 (Phylogeny and the Tree of Life)"

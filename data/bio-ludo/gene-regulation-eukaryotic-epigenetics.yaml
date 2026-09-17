@@ -1,0 +1,111 @@
+topic: "gene-regulation-eukaryotic-epigenetics"
+topicName: "Gene Regulation: Eukaryotic & Epigenetics"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "gene-regulation-eukaryotic-epigenetics-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Which of the following processes would result from a mutation that deactivates a regulatory gene of a repressible operon in an E. coli cell?"
+    options:
+      - key: "A"
+        text: "continuous transcription of the structural gene controlled by that regulator"
+      - key: "B"
+        text: "complete inhibition of transcription of the structural gene controlled by that regulator"
+      - key: "C"
+        text: "irreversible binding of the repressor to the operator"
+      - key: "D"
+        text: "continuous translation of the mRNA because of alteration of its structure"
+    answer: "A"
+    explanation: "In a repressible operon, the regulatory gene's product, the repressor, must be activated by a corepressor to shut off transcription; deactivating the regulatory gene means no functional repressor is made, so the operon is transcribed continuously."
+    sourceRef: "Campbell Biology 11e, Ch. 18 (Regulation of Gene Expression)"
+
+  - id: "gene-regulation-eukaryotic-epigenetics-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "If a particular operon encodes enzymes for making an essential amino acid and is regulated like the trp operon, then"
+    options:
+      - key: "A"
+        text: "the amino acid inactivates the repressor."
+      - key: "B"
+        text: "the repressor is active in the absence of the amino acid."
+      - key: "C"
+        text: "the amino acid acts as a corepressor."
+      - key: "D"
+        text: "the amino acid turns on transcription of the operon."
+    answer: "C"
+    explanation: "In a repressible operon like trp, the end product (here, the amino acid) itself binds the otherwise-inactive repressor and activates it, acting as a corepressor that then shuts down transcription once enough product has accumulated."
+    sourceRef: "Campbell Biology 11e, Ch. 18 (Regulation of Gene Expression)"
+
+  - id: "gene-regulation-eukaryotic-epigenetics-03"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "There is a mutation that is found in E. coli in the repressor that results in a molecule known as a super-repressor because it represses the lac operon permanently. Which of the following characteristics would you expect to observe in such a mutant?"
+    options:
+      - key: "A"
+        text: "It cannot bind to the operator."
+      - key: "B"
+        text: "It cannot make a functional repressor."
+      - key: "C"
+        text: "It cannot bind to the inducer."
+      - key: "D"
+        text: "It makes a repressor that binds CAP."
+    answer: "C"
+    explanation: "A repressor that is 'super' because it represses permanently must be one that can still bind the operator but has lost the ability to bind the inducer that would normally release it: so it stays locked onto the operator regardless of inducer levels."
+    sourceRef: "Campbell Biology 11e, Ch. 18 (Regulation of Gene Expression)"
+
+  - id: "gene-regulation-eukaryotic-epigenetics-04"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "When taken up by a cell, which of the following molecules binds to a repressor so that the repressor no longer binds to the operator?"
+    options:
+      - key: "A"
+        text: "inducer"
+      - key: "B"
+        text: "promoter"
+      - key: "C"
+        text: "repressor"
+      - key: "D"
+        text: "corepressor"
+    answer: "A"
+    explanation: "An inducer is the small molecule that binds an active repressor, changes its shape, and causes it to release from the operator, allowing transcription of the operon's genes to proceed."
+    sourceRef: "Campbell Biology 11e, Ch. 18 (Regulation of Gene Expression)"
+
+  - id: "gene-regulation-eukaryotic-epigenetics-05"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Most repressor proteins are allosteric. Which of the following molecules binds with the repressor to alter its conformation and therefore affect its function?"
+    options:
+      - key: "A"
+        text: "inducer"
+      - key: "B"
+        text: "promoter"
+      - key: "C"
+        text: "transcription factor"
+      - key: "D"
+        text: "cAMP"
+    answer: "A"
+    explanation: "As an allosteric protein, the repressor's conformation and therefore its ability to bind the operator is controlled by binding of a small effector molecule, the inducer."
+    sourceRef: "Campbell Biology 11e, Ch. 18 (Regulation of Gene Expression)"
+
+  - id: "gene-regulation-eukaryotic-epigenetics-06"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Which of the following conditions is most likely to cause the lactose operon to be transcribed?"
+    options:
+      - key: "A"
+        text: "There is more glucose in the cell than lactose."
+      - key: "B"
+        text: "There is glucose but no lactose in the cell."
+      - key: "C"
+        text: "The cyclic AMP and lactose levels are both high within the cell."
+      - key: "D"
+        text: "The cAMP level is high and the lactose level is low."
+    answer: "C"
+    explanation: "The lac operon is transcribed maximally when lactose is present (inactivating the repressor) and glucose is scarce (keeping cAMP high so CAP can activate the promoter); the question's phrasing of 'both cAMP and lactose levels high' describes exactly this low-glucose, lactose-present condition."
+    sourceRef: "Campbell Biology 11e, Ch. 18 (Regulation of Gene Expression)"

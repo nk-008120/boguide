@@ -1,0 +1,237 @@
+topic: "ecology"
+topicName: "Ecology"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "ecology-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "If an ecologist were studying the regional interactions among multiple populations of different species and how they influence the exchange of materials between their various environments, then this would be an example of which kind of research?"
+    options:
+      - key: "A"
+        text: "landscape ecology"
+      - key: "B"
+        text: "population ecology"
+      - key: "C"
+        text: "global ecology"
+      - key: "D"
+        text: "ecosystem ecology"
+    answer: "A"
+    explanation: "Studying interactions among populations across a mosaic of connected environments, and the exchange of materials between those environments, is the specific focus of landscape ecology."
+    sourceRef: "Campbell Biology 11e, Ch. 52 (An Introduction to Ecology and the Biosphere)"
+
+  - id: "ecology-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Which of the following areas of study focuses on the exchange of energy, organisms, and materials between ecosystems?"
+    options:
+      - key: "A"
+        text: "organismal ecology"
+      - key: "B"
+        text: "landscape ecology"
+      - key: "C"
+        text: "ecosystem ecology"
+      - key: "D"
+        text: "community ecology"
+    answer: "B"
+    explanation: "Landscape ecology is defined as the study of how ecosystems are arranged in space and how energy, materials, and organisms move between them."
+    sourceRef: "Campbell Biology 11e, Ch. 52 (An Introduction to Ecology and the Biosphere)"
+
+  - id: "ecology-03"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "What would be the effect on climate in the temperate latitudes if Earth were to slow its rate of rotation from a 24-hour period of rotation to a 48-hour period of rotation?"
+    options:
+      - key: "A"
+        text: "Seasons would be longer and more distinct (colder winters and warmer summers)."
+      - key: "B"
+        text: "Large-scale weather events such as tornadoes and hurricanes would no longer be a part of regional climates."
+      - key: "C"
+        text: "Winter seasons in both the northern and southern hemispheres would have more abundant and frequent precipitation events."
+      - key: "D"
+        text: "There often would be a larger range between daytime high and nighttime low temperatures."
+    answer: "D"
+    explanation: "A slower rotation means each point on Earth spends far longer in continuous daylight or darkness each 'day,' producing much greater daily temperature swings between a long sunlit heating period and a long dark cooling period."
+    sourceRef: "Campbell Biology 11e, Ch. 52 (An Introduction to Ecology and the Biosphere)"
+
+  - id: "ecology-04"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "What would happen to the seasons if Earth were tilted 35 degrees off its orbital plane instead of the usual 23.5 degrees?"
+    options:
+      - key: "A"
+        text: "The seasons would disappear."
+      - key: "B"
+        text: "Winters and summers would be more severe."
+      - key: "C"
+        text: "Winters and summers would be less severe."
+      - key: "D"
+        text: "The seasons would be shorter."
+    answer: "B"
+    explanation: "A greater axial tilt increases the difference in solar angle (and therefore energy received) between summer and winter at a given latitude, intensifying both seasons."
+    sourceRef: "Campbell Biology 11e, Ch. 52 (An Introduction to Ecology and the Biosphere)"
+
+  - id: "ecology-05"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Which of the following causes seasons on Earth?"
+    options:
+      - key: "A"
+        text: "the variation in proximity of the Earth to the sun at different times of the year"
+      - key: "B"
+        text: "the constant tilt of the Earth, combined with its orbit around the sun"
+      - key: "C"
+        text: "the distance between the Earth and the sun in winter versus in the summer"
+      - key: "D"
+        text: "the variation or wobble of Earth's tilt during the year"
+    answer: "B"
+    explanation: "Seasons result from Earth's constant ~23.5° axial tilt combined with its revolution around the sun, which changes which hemisphere is angled toward the sun at different points in the orbit: not from any change in Earth-sun distance."
+    sourceRef: "Campbell Biology 11e, Ch. 52 (An Introduction to Ecology and the Biosphere)"
+
+  - id: "ecology-06"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "In the region of the Rocky Mountains, imagine that one local variety of Ponderosa pine (Pinus ponderosa) predominantly occurs between 5,000-8,500 feet in elevation, where it can best tolerate temperatures and precipitation. If future climate change in this region causes the temperature to increase and rainfall to decrease, then which of the following changes might an ecologist predict about the variety's range?"
+    options:
+      - key: "A"
+        text: "that variety will occur at lower elevations"
+      - key: "B"
+        text: "that variety will occur at higher elevations"
+      - key: "C"
+        text: "that variety will occur at lower elevations and/or lower latitudes"
+      - key: "D"
+        text: "that variety will occur at higher elevations and/or higher latitudes"
+    answer: "D"
+    explanation: "As the climate warms and dries at the population's current elevation, individuals would be expected to survive better, and the population's range to shift toward, higher elevations (and/or higher latitudes) where conditions more closely match the variety's cooler, wetter preference."
+    sourceRef: "Campbell Biology 11e, Ch. 52 (An Introduction to Ecology and the Biosphere)"
+
+  - id: "ecology-07"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Which of the following is characteristic of most terrestrial biomes?"
+    options:
+      - key: "A"
+        text: "a distribution predicted almost entirely by rock and soil patterns"
+      - key: "B"
+        text: "clear boundaries between adjacent biomes"
+      - key: "C"
+        text: "vegetation demonstrating vertical layering"
+      - key: "D"
+        text: "cold winter months"
+    answer: "C"
+    explanation: "Most terrestrial biomes are defined largely by their characteristic vegetation structure, which typically shows vertical layering (e.g., canopy, understory, shrub, and ground layers in a forest) rather than sharp boundaries or a single climate signature."
+    sourceRef: "Campbell Biology 11e, Ch. 52 (An Introduction to Ecology and the Biosphere)"
+
+  - id: "ecology-08"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "In creating global climate patterns, which of the following factors is the primary cause of all of the other factors that are listed?"
+    options:
+      - key: "A"
+        text: "precipitation differences between tropical and polar regions"
+      - key: "B"
+        text: "global ocean currents"
+      - key: "C"
+        text: "global wind patterns"
+      - key: "D"
+        text: "variation in the heating of Earth's surface"
+    answer: "D"
+    explanation: "Uneven solar heating of Earth's surface (more energy near the equator, less near the poles) is the root cause that drives global wind patterns, ocean currents, and the resulting precipitation differences between tropical and polar regions."
+    sourceRef: "Campbell Biology 11e, Ch. 52 (An Introduction to Ecology and the Biosphere)"
+
+  - id: "ecology-09"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "Imagine some cosmic catastrophe jolts Earth so that its axis is perpendicular to the orbital plane between Earth and the sun. The most obvious effect of this change would be ________."
+    options:
+      - key: "A"
+        text: "the elimination of tides"
+      - key: "B"
+        text: "an increase in the length of a year"
+      - key: "C"
+        text: "a decrease in temperature at the equator"
+      - key: "D"
+        text: "the elimination of seasonal variation"
+    answer: "D"
+    explanation: "With the axis perpendicular to the orbital plane (no tilt at all), no hemisphere would ever be angled toward or away from the sun, eliminating the changing solar-angle pattern that produces seasons."
+    sourceRef: "Campbell Biology 11e, Ch. 52 (An Introduction to Ecology and the Biosphere)"
+
+  - id: "ecology-10"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Which of the following might be an investigation of microclimate?"
+    options:
+      - key: "A"
+        text: "the effect of ambient temperature on the onset of caribou migration"
+      - key: "B"
+        text: "the seasonal population fluctuation of nurse sharks in coral reef communities"
+      - key: "C"
+        text: "competitive interactions among various species of songbirds during spring migration"
+      - key: "D"
+        text: "how sunlight intensity affects plant community composition in the zone where a forest transitions into a meadow"
+    answer: "D"
+    explanation: "Microclimate refers to fine-scale variation in physical conditions (like light) over very short distances, such as how sunlight intensity changes across the narrow transition zone between a forest and an adjacent meadow."
+    sourceRef: "Campbell Biology 11e, Ch. 52 (An Introduction to Ecology and the Biosphere)"
+
+  - id: "ecology-11"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "For mountain ranges that are subjected to prevailing winds, why is the climate drier on the leeward (downwind) side?"
+    options:
+      - key: "A"
+        text: "Deserts create dry conditions on the leeward side of mountain ranges."
+      - key: "B"
+        text: "The sun illuminates the leeward side of mountain ranges at a more direct angle, converting to heat energy, which evaporates most of the water present."
+      - key: "C"
+        text: "Pushed by the prevailing winds on the windward side, air is forced to rise, cool, condense, and drop its precipitation, leaving drier air to descend the leeward side."
+      - key: "D"
+        text: "Air masses pushed by the prevailing winds are stopped by mountain ranges and the moisture is used up in the stagnant air masses on the leeward side."
+    answer: "C"
+    explanation: "Prevailing winds forced up the windward slope cool as they rise, causing water vapor to condense and fall as precipitation; the resulting drier air then descends the leeward slope, warming further and picking up moisture rather than releasing it: the rain-shadow effect."
+    sourceRef: "Campbell Biology 11e, Ch. 52 (An Introduction to Ecology and the Biosphere)"
+
+  - id: "ecology-12"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "Coral reefs occur on the southeast coast of the United States but not at similar latitudes on the southwest coast. Differences in which of the following most likely account for this?"
+    options:
+      - key: "A"
+        text: "air temperatures driven by precipitation"
+      - key: "B"
+        text: "day length"
+      - key: "C"
+        text: "water temperatures driven by ocean currents"
+      - key: "D"
+        text: "salinity differences"
+    answer: "C"
+    explanation: "The southeast U.S. coast is warmed by the northward-flowing Gulf Stream, while the southwest coast lies along the cold, southward-flowing California Current; since reef-building corals need consistently warm water, this ocean-current-driven water-temperature difference, not air temperature, day length, or salinity, best explains why reefs form on one coast but not the other."
+    sourceRef: "Campbell Biology 11e, Ch. 52 (An Introduction to Ecology and the Biosphere)"
+
+  - id: "ecology-13"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Which statement about dispersal is false?"
+    options:
+      - key: "A"
+        text: "Dispersal is a common component of the life cycles of plants and animals."
+      - key: "B"
+        text: "Colonization of devastated areas after floods or volcanic eruptions depends on dispersal."
+      - key: "C"
+        text: "Dispersal occurs only on an evolutionary time scale."
+      - key: "D"
+        text: "The ability to disperse can expand the geographic distribution of a species."
+    answer: "C"
+    explanation: "Dispersal, the movement of individuals or their propagules away from their place of origin or from centers of high population density, is an ecological process that happens continuously within a species' life cycle, not something confined to evolutionary timescales, making that statement false."
+    sourceRef: "Campbell Biology 11e, Ch. 52 (An Introduction to Ecology and the Biosphere)"

@@ -1,5 +1,5 @@
 """
-Live subject-tag discovery — reads content/resources/**/_index.md directly
+Live subject-tag discovery: reads content/resources/**/_index.md directly
 instead of maintaining a hand-copied master list (the old workflow doc's
 "confirmed titles" list drifts the moment a page title changes). Used by
 both build_bundle.py (to hand the free model an always-current subject

@@ -22,7 +22,7 @@ questions:
       Signal transduction events through transmembrane receptors in cells often culminate in the activation of a transcription factor. One such example is the activation of NF-κB (Nuclear Factor Kappa B) by TNF-α (Tumor Necrosis Factor-alpha). NF-κB is a heterodimer of two subunits, p50 and p65, and it is retained in the cytoplasm by its inhibitor IκB-α. TNF signaling phosphorylates IκB-α leading to its degradation by ubiquitination. As a result, free NF-κB and its translocation into the nucleus, where it binds to a responsive promoter and activates gene expression. Activation of NF-κB by the TNF is transient in nature because one of the genes that NF-κB activates is the gene for IκB-α itself. In one experiment, activation of NF-κB by TNF was studied in a macrophage cell line. From the above experiment, cytoplasmic and nuclear extracts were prepared, proteins were separated on SDS-PAGE and Western blotting was performed using antibodies against p65 and IκB-α proteins. Also, antibodies against α-actin and lamin were used to demonstrate the purity of the cytoplasmic and nuclear fractions as well as loading control.
     solution: |
 
-      Ans: A – Lamin, B – p65, C - IκB-α, D – α-actin
+      Ans: A: Lamin, B: p65, C - IκB-α, D: α-actin
   - id: 3
     difficulty: "hard"
     source: "IBO"
@@ -50,7 +50,7 @@ questions:
       E. A mutation in Gs that prevents GTP hydrolysis.F. A mutation in Gi that prevents GTP hydrolysis.
     solution: |
 
-      Answer – A -> (-), B -> (+), C -> (-), D -> (+), E -> (+), F -> (-)
+      Answer: A -> (-), B -> (+), C -> (-), D -> (+), E -> (+), F -> (-)
 
       (II) What is/are the possible explanation(s) for the mechanism in which the toxin in paragraph 3 affects adenylyl cyclase activity? Indicate if each the following statements are true (T) or false (F).
 
@@ -64,7 +64,7 @@ questions:
 
       E. The toxin is an activator of GPCR-B receptor.
 
-      Answer – A – T, B – T, C – F, D – F, E – F
+      Answer: A: T, B: T, C: F, D: F, E: F
   - id: 4
     difficulty: "hard"
     source: "IBO"
@@ -84,7 +84,7 @@ questions:
       D. The effects of mutant RTKs of cell type 2 and cell type 3 on levels of signalling by the cells’ own normal RTKs will be the same.
     solution: |
 
-      Ans – A – T, B – T, C – F, D – F
+      Ans: A: T, B: T, C: F, D: F
   - id: 5
     difficulty: "hard"
     source: "IBO"
@@ -104,4 +104,4 @@ questions:
       D. Use of SB216763 and ISO together cause much higher increase in the number of Ppargc1a mRNA transcripts as compared to Fgf21 mRNA transcripts.
     solution: |
 
-      Ans – A - T, B - F, C - T, D – F
+      Ans: A - T, B - F, C - T, D: F

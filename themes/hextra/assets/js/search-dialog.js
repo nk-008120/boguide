@@ -63,7 +63,7 @@
       if (e.target === dialog) closeDialog();
     });
 
-    // Keep the previous query and results when reopening — only flip aria state.
+    // Keep the previous query and results when reopening, only flip aria state.
     dialog.addEventListener('close', () => {
       input.setAttribute('aria-expanded', 'false');
     });
@@ -113,7 +113,7 @@
     if (e.key === 'k' && (e.metaKey || e.ctrlKey)) {
       if (inEditable) return;
       e.preventDefault();
-      // A dialog mid-dismiss is logically "closed" for toggle purposes — without
+      // A dialog mid-dismiss is logically "closed" for toggle purposes, without
       // this, a rapid second Cmd+K is eaten by closeDialog's early-return.
       const isClosing = dialog.dataset.state === 'closing';
       if (dialog.open && !isClosing) closeDialog();
@@ -131,7 +131,7 @@
   }
 
   function openDialog() {
-    // Mid-dismiss? Cancel the close animation and stay open — the in animation
+    // Mid-dismiss? Cancel the close animation and stay open, the in animation
     // re-plays so the dialog visibly snaps back instead of completing the fade.
     if (dialog.open && dialog.dataset.state === 'closing') {
       cancelClose();
@@ -188,7 +188,7 @@
         dialog.close();
       }
     };
-    // The backdrop animation is the longest — wait for it so neither layer
+    // The backdrop animation is the longest, wait for it so neither layer
     // gets cut off when the dialog is removed from the top layer.
     closeAnimationListener = (e) => {
       if (e.animationName !== 'hextra-search-backdrop-out') return;
@@ -320,7 +320,7 @@
       setActiveDescendant();
       if (statusEl) statusEl.textContent = '';
       setViewportExpanded(false);
-      // Defer DOM clear until the viewport finishes collapsing — otherwise the
+      // Defer DOM clear until the viewport finishes collapsing, otherwise the
       // results vanish first and the viewport snaps to the inner padding before
       // animating the last few pixels to 0.
       cancelCollapse();
@@ -336,7 +336,7 @@
     try {
       results = await window.hextraSearch.search(query);
     } catch (err) {
-      // Stale failure for an old query — ignore. Otherwise log and fall
+      // Stale failure for an old query, ignore. Otherwise log and fall
       // through to an empty render so the user sees feedback instead of stale
       // results.
       if (input.value.trim() !== query) return;

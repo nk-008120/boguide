@@ -21,6 +21,8 @@ faq:
   <button type="button" class="prep-tour-trigger" id="prep-tour-trigger">Take a 10-second tour of this page</button>
 </div>
 
+{{< olympiad-map >}}
+
 <div class="prep-guide-wrapper">
 
 This is the general preparation framework that applies regardless of which Biology Olympiad you're targeting: what to study, what order to learn it in, how to practice, and what resources to use.
@@ -34,7 +36,7 @@ This is the general preparation framework that applies regardless of which Biolo
       <button type="button" class="prep-picker-btn" data-question="olympiad" data-value="ibo">IBO</button>
       <button type="button" class="prep-picker-btn" data-question="olympiad" data-value="usabo">USABO</button>
       <button type="button" class="prep-picker-btn" data-question="olympiad" data-value="inbo">INBO</button>
-      <button type="button" class="prep-picker-btn" data-question="olympiad" data-value="unsure">Not sure yet</button>
+      <button type="button" class="prep-picker-btn" data-question="olympiad" data-value="unsure">Other</button>
     </div>
   </div>
   <div class="prep-picker-question">
@@ -133,69 +135,7 @@ This is the general preparation framework that applies regardless of which Biolo
   </div>
 </a>
 
-<div class="olympiad-compact-cards">
-  <a href="/inbo-preparation/" class="olympiad-compact-card">
-    <div class="olympiad-compact-flag">🇮🇳</div>
-    <div class="olympiad-compact-body">
-      <h4>INBO</h4>
-      <p>India's pathway: NSEB > INBO > OCSC > IBO</p>
-    </div>
-    <span class="olympiad-compact-arrow">&rarr;</span>
-  </a>
-  <a href="/usabo-preparation/" class="olympiad-compact-card">
-    <div class="olympiad-compact-flag">🇺🇸</div>
-    <div class="olympiad-compact-body">
-      <h4>USABO</h4>
-      <p>US pathway: Open > Semifinal > Finals > IBO</p>
-    </div>
-    <span class="olympiad-compact-arrow">&rarr;</span>
-  </a>
-</div>
-
-{{< olympiad-map >}}
-
-<div class="olympiad-compact-cards">
-  <a href="/biobytes/testimonials/belgium-ibo-bronze/" class="olympiad-compact-card">
-    <div class="olympiad-compact-flag">🇧🇪</div>
-    <div class="olympiad-compact-body">
-      <h4>Belgium</h4>
-      <p>Two independent olympiads (Dutch & French) each sending their top 2 to IBO</p>
-    </div>
-    <span class="olympiad-compact-arrow">&rarr;</span>
-  </a>
-  <a href="/biobytes/testimonials/slovakia-daniel-bronze/" class="olympiad-compact-card">
-    <div class="olympiad-compact-flag">🇸🇰</div>
-    <div class="olympiad-compact-body">
-      <h4>Slovakia</h4>
-      <p>School > Regional > National > Selection camp, top 4 to IBO</p>
-    </div>
-    <span class="olympiad-compact-arrow">&rarr;</span>
-  </a>
-  <a href="/biobytes/testimonials/azerbaijan-huseyn/" class="olympiad-compact-card">
-    <div class="olympiad-compact-flag">🇦🇿</div>
-    <div class="olympiad-compact-body">
-      <h4>Azerbaijan</h4>
-      <p>District-city > Semifinal > Final, IBO-level from the final round on</p>
-    </div>
-    <span class="olympiad-compact-arrow">&rarr;</span>
-  </a>
-  <a href="/biobytes/testimonials/turkmenistan-ibo-team/" class="olympiad-compact-card">
-    <div class="olympiad-compact-flag">🇹🇲</div>
-    <div class="olympiad-compact-body">
-      <h4>Turkmenistan</h4>
-      <p>School > District > Regional > National, self-taught IBO prep</p>
-    </div>
-    <span class="olympiad-compact-arrow">&rarr;</span>
-  </a>
-  <a href="/biobytes/testimonials/hungary-botond-silver/" class="olympiad-compact-card">
-    <div class="olympiad-compact-flag">🇭🇺</div>
-    <div class="olympiad-compact-body">
-      <h4>Hungary</h4>
-      <p>4-round IBOHUN selection, top 4 to IBO</p>
-    </div>
-    <span class="olympiad-compact-arrow">&rarr;</span>
-  </a>
-</div>
+{{< olympiad-directory >}}
 
 Eligibility, dates, and registration details change year to year. Always check your olympiad's official site for current information. This guide covers preparation strategy, not administrative details.
 
@@ -342,7 +282,7 @@ Use [BiOrchive](/papers/) for past papers with interactive attempt mode, timed c
 
 Different olympiads expect different depth on the same topics. This is BioGuide's own guidance based on syllabus patterns we've observed, not an official curriculum document.
 
-**Reading the table:** ✓ means the topic is tested at that level. — means it's not typically tested or is tested only superficially. "Deep" (marked with ★) means the topic is tested at mechanism/quantitative level, not just conceptual understanding.
+**Reading the table:** ✓ means the topic is tested at that level. mMans it's not typically tested or is tested only superficially. "Deep" (marked with ★) means the topic is tested at mechanism/quantitative level, not just conceptual understanding.
 
 | Topic | School | USABO Open | USABO Semi | INBO | IBO |
 |---|:---:|:---:|:---:|:---:|:---:|

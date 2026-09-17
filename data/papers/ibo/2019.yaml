@@ -26,8 +26,8 @@ rounds:
             explanation: "Epistasis logic: ced9 knock-out alone INCREASES death, so Ced9 normally suppresses death. ced4, ced3 and egl1 knock-outs alone all REDUCE death, so each normally promotes death. In the double knockouts, ced4&ced9 and ced9&ced3 both give the REDUCED phenotype (i.e. ced4/ced3 are epistatic to ced9, they act downstream of it), while ced9&egl1 gives the INCREASED phenotype (ced9 is epistatic to egl1, ced9 acts downstream of egl1). That ordering, egl1 upstream of ced9, ced9 upstream of ced4/ced3, matches the real, well-characterised C. elegans apoptosis pathway: EGL-1 inhibits CED-9; CED-9 inhibits CED-4; CED-4 activates the executioner caspase CED-3. The official key credits either order for the Ced3/Ced4 pair at the two downstream positions."
           - letter: "Q1.2"
             type: "free_response"
-            text: "Indicate whether each of the three interactions in the pathway above (D⊣C, C⊣B, B→A) is activating (+) or repressing (–)."
-            modelAnswer: "Egl1 ⊣ Ced9: repressing (–). Ced9 ⊣ Ced4: repressing (–). Ced4 → Ced3: activating (+)."
+            text: "Indicate whether each of the three interactions in the pathway above (D⊣C, C⊣B, B→A) is activating (+) or repressing (-)."
+            modelAnswer: "Egl1 ⊣ Ced9: repressing (-). Ced9 ⊣ Ced4: repressing (-). Ced4 → Ced3: activating (+)."
             explanation: "Directly follows from the epistasis reasoning above: Egl-1 represses Ced-9, Ced-9 represses Ced-4, and Ced-4 activates Ced-3 (which then executes cell death)."
 
       - id: q2
@@ -246,7 +246,7 @@ rounds:
             type: "free_response"
             text: "What is the third amino acid of the shorter polypeptide, if the initiator Met is counted as the first? Give the one-letter amino acid code."
             modelAnswer: "L (Leucine)"
-            explanation: "The shorter polypeptide's first three codons translate to Met–Arg–Leu, so its third residue is Leucine (L)."
+            explanation: "The shorter polypeptide's first three codons translate to Met-Arg-Leu, so its third residue is Leucine (L)."
           - letter: "Q6.5"
             type: "mcq"
             text: "The C:G base pair underlined in the sequence was changed to an A:T base pair, creating a mutant form of this gene. What kind of mutation would this be for the shorter polypeptide?"
@@ -276,7 +276,7 @@ rounds:
             explanation: "As a chemoautotroph isolated from a sulfur-rich thermal spring environment, T. szegediensis most plausibly oxidises a reduced sulfur compound like H2S for energy, classic chemolithotrophic metabolism seen in many thermophiles."
           - letter: "Q7.3 (M1)"
             type: "mcq"
-            text: "The lab isolated 6 mutants (M1–M6) unable to grow at 56°C and tested pairwise complementation (Table 2). A mutant that still fails to grow even when crossed with WT reveals a dominant mutation; one that grows when crossed with WT is recessive. Classify M1."
+            text: "The lab isolated 6 mutants (M1-M6) unable to grow at 56°C and tested pairwise complementation (Table 2). A mutant that still fails to grow even when crossed with WT reveals a dominant mutation; one that grows when crossed with WT is recessive. Classify M1."
             options: [{key: "A", text: "Dominant"}, {key: "B", text: "Recessive"}]
             answer: "B"
             explanation: "M1 × WT grows (+), so a single WT copy rescues the phenotype, recessive."
@@ -516,7 +516,7 @@ rounds:
         statements:
           - letter: "Q11.1"
             type: "mcq"
-            text: "The pH of human blood is kept in a strict range by buffer systems, respiratory CO2 exhalation, and renal H+ excretion/HCO3- handling. Conditions A–F are plotted on a blood-gas map (arterial pH vs. plasma [HCO3-] vs. [H+]), surrounding a central \"Normal\" zone. Which letter matches: the condition following vomiting?"
+            text: "The pH of human blood is kept in a strict range by buffer systems, respiratory CO2 exhalation, and renal H+ excretion/HCO3- handling. Conditions A-F are plotted on a blood-gas map (arterial pH vs. plasma [HCO3-] vs. [H+]), surrounding a central \"Normal\" zone. Which letter matches: the condition following vomiting?"
             options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "F", text: "F"}]
             answer: "C"
             explanation: "Vomiting loses stomach HCl, a primary GAIN of bicarbonate relative to acid, i.e. metabolic alkalosis: both pH and [HCO3-] rise together. C sits in the high-pH, high-HCO3- corner of the map, exactly that combination."
@@ -596,7 +596,7 @@ rounds:
             explanation: "TRUE. Glucose is small and uncharged enough to pass freely through the glomerular filtration barrier along with water and other small solutes, none is held back at this stage."
           - letter: "Q13.2"
             type: "mcq"
-            text: "The graph plots glucose filtered load, reabsorption, and excretion (mg/min) against plasma glucose concentration as curves A–D. Which curve is glucose EXCRETED?"
+            text: "The graph plots glucose filtered load, reabsorption, and excretion (mg/min) against plasma glucose concentration as curves A-D. Which curve is glucose EXCRETED?"
             options: [{key: "A", text: "Curve A"}, {key: "B", text: "Curve B"}, {key: "C", text: "Curve C"}, {key: "D", text: "Curve D"}]
             answer: "B"
             explanation: "Excreted = filtered − reabsorbed. Below the reabsorption threshold, everything filtered gets reabsorbed, so excretion is zero; once filtered load exceeds the transporters' capacity, the excess spills into urine and excretion rises roughly linearly. Curve B is exactly that shape, flat at zero, then rising once the other curves diverge."
@@ -635,7 +635,7 @@ rounds:
         statements:
           - letter: "Q14.1"
             type: "mcq"
-            text: "The figure shows vessels A–E around the liver, gallbladder, and kidney (P = \"all of the above\", Q = \"none of the above\"). Which matches: blood enters this vessel from the right ventricle?"
+            text: "The figure shows vessels A-E around the liver, gallbladder, and kidney (P = \"all of the above\", Q = \"none of the above\"). Which matches: blood enters this vessel from the right ventricle?"
             options: [{key: "A", text: "A"}, {key: "B", text: "B"}, {key: "C", text: "C"}, {key: "D", text: "D"}, {key: "E", text: "E"}, {key: "P", text: "P (all of the above)"}, {key: "Q", text: "Q (none of the above)"}]
             answer: "Q"
             explanation: "Blood leaving the right ventricle goes to the LUNGS via the pulmonary artery, not to abdominal organs, none of the liver/gallbladder/kidney vessels shown here carry right-ventricular output, so the answer is \"none of the above.\""
@@ -748,7 +748,7 @@ rounds:
         statements:
           - letter: "Q17.1"
             type: "mcq"
-            text: "Mice fed only 6:00–18:00 (daytime) vs. only 18:00–6:00 (nighttime) show liver Per1/Per2 protein peaking at different times, while central-brain Per1/Per2 staining is tracked separately. How many hours has the PERIPHERAL (liver) circadian rhythm shifted between the two feeding schedules?"
+            text: "Mice fed only 6:00-18:00 (daytime) vs. only 18:00-6:00 (nighttime) show liver Per1/Per2 protein peaking at different times, while central-brain Per1/Per2 staining is tracked separately. How many hours has the PERIPHERAL (liver) circadian rhythm shifted between the two feeding schedules?"
             options: [{key: "A", text: "0 h"}, {key: "B", text: "4 h"}, {key: "C", text: "8 h"}, {key: "D", text: "12 h"}, {key: "E", text: "16 h"}]
             answer: "D"
             explanation: "Liver Per1 peaks right at the start of the feeding window in both conditions, 6h for daytime feeding (starts 6:00), 18h for nighttime feeding (starts 18:00). That's a 12-hour shift, matching the 12-hour shift in feeding time itself: the peripheral (liver) clock entrains directly to when food arrives."
@@ -766,10 +766,10 @@ rounds:
             explanation: "Peripheral (liver) Per1 peaks at 18h during night feeding (see Q17.1). The central brain images show their own darkest signal earlier in the cycle; the official key accepts either a 4h or 8h gap here as both readings are defensible from the staining images, graded leniently as \"one and only one\" of the two."
           - letter: "Q17.4"
             type: "mcq"
-            text: "If animals were instead fed between 14:00–2:00, what time would you expect peripheral Per1 peaks to occur?"
+            text: "If animals were instead fed between 14:00-2:00, what time would you expect peripheral Per1 peaks to occur?"
             options: [{key: "A", text: "6"}, {key: "B", text: "10"}, {key: "C", text: "14"}, {key: "D", text: "18"}, {key: "E", text: "22"}, {key: "F", text: "2"}]
             answer: "C"
-            explanation: "The pattern from Q17.1 is that peripheral Per1 peaks right at the START of the feeding window (6h for a 6:00-start schedule, 18h for an 18:00-start schedule). A 14:00–2:00 feeding window starts at 14:00, so by the same rule the predicted peak is 14:00, option C."
+            explanation: "The pattern from Q17.1 is that peripheral Per1 peaks right at the START of the feeding window (6h for a 6:00-start schedule, 18h for an 18:00-start schedule). A 14:00-2:00 feeding window starts at 14:00, so by the same rule the predicted peak is 14:00, option C."
 
       - id: q18
         number: "Q18"
@@ -969,7 +969,7 @@ rounds:
             explanation: "Palisade mesophyll is the leaf's densest chloroplast-packed, most photosynthetically active tissue, more of it means more photosynthetic capacity, i.e. increased CO2 fixation."
           - letter: "Q21.4"
             type: "free_response"
-            text: "What are the physiological consequences of increased spongy parenchyma thickness? (Select all that apply from: A—increased CO2 fixation, B—decreased CO2 fixation, C—increased transpiration, D—decreased transpiration, E—increased CO2 conductance, F—decreased CO2 conductance.)"
+            text: "What are the physiological consequences of increased spongy parenchyma thickness? (Select all that apply from: A: increased CO2 fixation, B: decreased CO2 fixation, C: increased transpiration, D: decreased transpiration, E: increased CO2 conductance, F: decreased CO2 conductance.)"
             modelAnswer: "A and E"
             explanation: "Spongy parenchyma's loosely-packed cells with large air spaces maximise the internal surface area available for gas exchange, more of it increases both CO2 conductance into the leaf (E) and, since that CO2 reaches photosynthetic tissue more easily, CO2 fixation rate (A)."
           - letter: "Q21.5"
@@ -980,7 +980,7 @@ rounds:
             explanation: "A denser layer of leaf hairs thickens the boundary layer of still air at the leaf surface, which slows water vapour diffusing away, reducing transpiration, a classic drought adaptation."
           - letter: "Q21.6"
             type: "free_response"
-            text: "What are the physiological consequences of increased leaf area? (Select all that apply, same A–F options as above.)"
+            text: "What are the physiological consequences of increased leaf area? (Select all that apply, same A-F options as above.)"
             modelAnswer: "A and C"
             explanation: "A bigger leaf has more total photosynthetic surface (more total CO2 fixation, A) but also more total surface for water vapour to escape from (more total transpiration, C), both scale up together with leaf area, unlike the anatomical (per-unit-area) changes in the other rows."
           - letter: "Q21.7"
@@ -1073,7 +1073,7 @@ rounds:
         statements:
           - letter: "Q23.1"
             type: "free_response"
-            text: "Brassica napus seedlings were grown on the ISS either in a centrifuge exerting 1g force, or in microgravity, to test how statolith position guides root geotropism. Diagrams A–G show different distributions of final root-tip growth direction relative to gravity (arrow). Two diagrams correctly depict the 1g condition, which two?"
+            text: "Brassica napus seedlings were grown on the ISS either in a centrifuge exerting 1g force, or in microgravity, to test how statolith position guides root geotropism. Diagrams A-G show different distributions of final root-tip growth direction relative to gravity (arrow). Two diagrams correctly depict the 1g condition, which two?"
             modelAnswer: "F and G"
             explanation: "Under real (1g) gravity, statoliths settle reliably to give the root an accurate, consistent directional gravity signal, so root tips should grow strongly and consistently in one direction (down), which is what diagrams F and G (concentrated, mostly one-directional growth) show, unlike the scattered patterns of the other diagrams."
           - letter: "Q23.2"
@@ -1086,13 +1086,13 @@ rounds:
             text: "Assume statocytes are cylindrical, and statoliths can move freely across the full diameter of the statocyte but only 40% of its length. Using the transverse (diameter-axis) spread of statolith positions from Fig.1, estimate the statocyte's diameter, in µm."
             expected: 25
             tolerance: 5
-            explanation: "The observed transverse (Axis 1) spread of statolith positions in Fig.1, since statoliths can explore the full diameter, directly reads off as the statocyte's diameter, on the order of 20–30 µm."
+            explanation: "The observed transverse (Axis 1) spread of statolith positions in Fig.1, since statoliths can explore the full diameter, directly reads off as the statocyte's diameter, on the order of 20-30 µm."
           - letter: "Q23.4"
             type: "numeric"
             text: "Using the longitudinal spread of statolith positions and the fact that statoliths only cover 40% of the statocyte's length, estimate the statocyte's length, in µm."
             expected: 55
             tolerance: 5
-            explanation: "The observed longitudinal (Axis 2) spread of statolith positions in Fig.1 represents only 40% of the true length (statoliths can't reach the rest), dividing that observed spread by 0.4 scales it up to the full statocyte length, on the order of 50–60 µm."
+            explanation: "The observed longitudinal (Axis 2) spread of statolith positions in Fig.1 represents only 40% of the true length (statoliths can't reach the rest), dividing that observed spread by 0.4 scales it up to the full statocyte length, on the order of 50-60 µm."
 
       - id: q24
         number: "Q24"
@@ -1121,7 +1121,7 @@ rounds:
 
       - id: q25
         number: "Q25"
-        name: "The Luria–Delbrück Replica Plating Experiment"
+        name: "The Luria-Delbrück Replica Plating Experiment"
         link: "/papers/ibo/2019/theoretical-a-exam.pdf#page=44"
         subjects:
           - name: "Genetic Drift, Gene Flow & Mutation"
@@ -1276,7 +1276,7 @@ rounds:
           - letter: "Q30.1"
             type: "free_response"
             text: "Ec+ is X-linked; Ec/Ec females have green eyes, one Ec+ copy gives brown eyes. Ec+ makes an enzyme producing molecule X, a diffusible, life-long-acting epigenetic regulator. Cross 1: Ec/Ec females × Ec+/Y males. Give the proportions, genotypes, and phenotypes of the progeny groups (using A=25%, B=50%, C=100%; D=Ec+/Ec+ female, E=Ec+/Ec female, F=Ec/Ec female, G=Ec+/Y male, H=Ec/Y male; K=brown eyed, L=green eyed, 3 letters per filled box, write X for any box that should stay empty)."
-            modelAnswer: "Box 1: B, E, K (50% Ec+/Ec daughters, brown-eyed). Box 2: B, H, L (50% Ec/Y sons, green-eyed). Boxes 3–4: X (empty)."
+            modelAnswer: "Box 1: B, E, K (50% Ec+/Ec daughters, brown-eyed). Box 2: B, H, L (50% Ec/Y sons, green-eyed). Boxes 3-4: X (empty)."
             explanation: "An Ec/Ec mother contributes only the Ec allele to every offspring. Daughters get Ec+ from dad → Ec+/Ec (heterozygous) at 50% of all progeny; sons get Y from dad and Ec from mom → Ec/Y at the other 50%. Phenotype-wise: daughters are heterozygous, and since molecule X is diffusible and maternally/systemically available, a single Ec+ copy is enough for brown eyes (K); sons with no Ec+ copy at all are green-eyed (L). Only two progeny classes exist, so the other two boxes stay empty (X)."
           - letter: "Q30.2"
             type: "free_response"
@@ -1382,7 +1382,7 @@ rounds:
         statements:
           - letter: "Q33.1"
             type: "mcq"
-            text: "A diagram shows populations A–G linked by two-ended interaction arrows, each end marked + (benefit), − (harm), or 0 (neutral) for that population. What effect does a DECREASE in population A have on population B?"
+            text: "A diagram shows populations A-G linked by two-ended interaction arrows, each end marked + (benefit), − (harm), or 0 (neutral) for that population. What effect does a DECREASE in population A have on population B?"
             options: [{key: "A", text: "Increase"}, {key: "B", text: "Not change"}, {key: "C", text: "Decrease"}, {key: "D", text: "Cannot be predicted"}]
             answer: "A"
             explanation: "The A↔B arrow marks B's end as harmed (−) by A, meaning more A suppresses B, so less A releases B from that suppression, increasing it."
@@ -1427,7 +1427,7 @@ rounds:
         statements:
           - letter: "Q34.1"
             type: "mcq"
-            text: "Given four overlapping partial phylogenetic trees (each showing 5 of 10 bird species: A–A. cinerea, B–A. crecca, C–C. crex, D–C. monedula, E–L. argentatus, F–P. carbo, G–P. cristatus, H–S. borin, I–T. pilaris, J–T. totanus), assemble the full consensus tree and match each species letter to its position (Roman numeral I–VII) in the skeleton tree. Where does species A (A. cinerea) belong?"
+            text: "Given four overlapping partial phylogenetic trees (each showing 5 of 10 bird species: A-A. cinerea, B-A. crecca, C-C. crex, D-C. monedula, E-L. argentatus, F-P. carbo, G-P. cristatus, H-S. borin, I-T. pilaris, J-T. totanus), assemble the full consensus tree and match each species letter to its position (Roman numeral I-VII) in the skeleton tree. Where does species A (A. cinerea) belong?"
             options: [{key: "I", text: "Position I"}, {key: "II", text: "Position II"}, {key: "III", text: "Position III"}, {key: "IV", text: "Position IV"}, {key: "V", text: "Position V"}, {key: "VI", text: "Position VI"}, {key: "VII", text: "Position VII"}]
             answer: "I"
             explanation: "A (A. cinerea) shares its tightest, most exclusive grouping (in the fragment trees that include it) with another position-I species, placing it in the shallowest, most terminal pairing at position I of the assembled tree."
@@ -1497,7 +1497,7 @@ rounds:
           - letter: "Q35.1"
             text: "A new gall wasp genus (Lithosaphonecrus) with 4 species was compared via COI and 28S D2 pairwise sequence distances (p-distance = fraction of differing nucleotide sites). L. huisuni and L. yunnani are the two most closely related species in the genus."
             answer: true
-            explanation: "TRUE, independently confirmed from the actual distance table: L. huisuni–L. yunnani has the smallest p-distance of any pair in the genus on BOTH markers (COI: 0.0770, the smallest of the six within-genus pairs; 28S D2: 0.0041, likewise the smallest), so both markers agree this is the closest pair."
+            explanation: "TRUE, independently confirmed from the actual distance table: L. huisuni-L. yunnani has the smallest p-distance of any pair in the genus on BOTH markers (COI: 0.0770, the smallest of the six within-genus pairs; 28S D2: 0.0041, likewise the smallest), so both markers agree this is the closest pair."
           - letter: "Q35.2"
             text: "Phylogenetically, Ufo nipponicus is more closely related to L. yunnani than to L. dakengi."
             answer: false

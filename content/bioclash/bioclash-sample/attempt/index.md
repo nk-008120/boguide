@@ -1,5 +1,5 @@
 ---
-title: "BiOClash Sample — Attempt"
+title: "BiOClash Sample - Attempt"
 layout: "wide"
 noindex: true
 sitemap:

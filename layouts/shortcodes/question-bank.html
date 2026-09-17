@@ -102,7 +102,7 @@
     <tr class="qb-row" data-olympiad="{{ .olympiadId }}" data-year="{{ .yearId }}" data-subjects="{{ delimit .subjects "||" }}" data-difficulty="{{ .difficulty | default "" }}">
       <td><a href="{{ .url }}">{{ .number }}. {{ .name }}</a></td>
       <td>{{ .olympiad }}</td>
-      <td>{{ .yearName }} — {{ .round }}</td>
+      <td>{{ .yearName }}: {{ .round }}</td>
       <td>
         {{- if .subjects -}}
         <div class="papers-subject-tags">

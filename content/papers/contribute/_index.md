@@ -1,6 +1,6 @@
 ---
 title: "Contribute to BiOrchive"
-description: "Submit a source paper for staff to ingest, propose a correction to existing content, or share an original solution/study note — all reviewed by staff before going live."
+description: "Submit a source paper for staff to ingest, propose a correction to existing content, or share an original solution/study note, all reviewed by staff before going live."
 layout: "wide"
 ---
 
@@ -9,7 +9,7 @@ layout: "wide"
 <div class="biolab-archive-header">
   <span class="biolab-eyebrow">BIORCHIVE</span>
   <h1 class="biolab-archive-h1">Contribute</h1>
-  <p class="biolab-archive-intro">Three ways to help grow the archive. Everything here goes to a staff review queue first — nothing is published automatically, and papers specifically get a licensing check before anything is added, the same way every paper already on the site did.</p>
+  <p class="biolab-archive-intro">Three ways to help grow the archive. Everything here goes to a staff review queue first, nothing is published automatically, and papers specifically get a licensing check before anything is added, the same way every paper already on the site did.</p>
 </div>
 
 <a href="/papers/" class="papers-nav-btn biolab-archive-back-link">← Back to Papers</a>
@@ -23,7 +23,7 @@ layout: "wide"
 <div id="papers-contribute-status" class="discussions-status">Loading…</div>
 
 <section class="papers-contribute-panel" data-panel="paper">
-  <p class="biolab-feedback-hint">Found an exam paper that isn't on BiOrchive yet? Submit it here instead of emailing it — staff will still check its license before anything is ingested, same as always.</p>
+  <p class="biolab-feedback-hint">Found an exam paper that isn't on BiOrchive yet? Submit it here instead of emailing it, staff will still check its license before anything is ingested, same as always.</p>
   <form id="paper-contribution-form" class="discussions-form" hidden>
     <label class="biolab-submit-label" for="pc-olympiad">Olympiad</label>
     <input type="text" id="pc-olympiad" name="olympiad" maxlength="100" placeholder="e.g. IBO, USABO, British Biology Olympiad" required>
@@ -37,7 +37,7 @@ layout: "wide"
     <label class="biolab-submit-label" for="pc-source-url">Where you found it <span class="biolab-feedback-hint">(a link, if there is one)</span></label>
     <input type="url" id="pc-source-url" name="source_url" maxlength="2000" placeholder="https://...">
 
-    <label class="biolab-submit-label" for="pc-license">What does the source say about reuse? <span class="biolab-feedback-hint">(required — this is the single most important field; "I don't know" is a valid answer, but please say so rather than guessing)</span></label>
+    <label class="biolab-submit-label" for="pc-license">What does the source say about reuse? <span class="biolab-feedback-hint">(required, this is the single most important field; "I don't know" is a valid answer, but please say so rather than guessing)</span></label>
     <textarea id="pc-license" name="license_note" maxlength="2000" rows="3" placeholder="e.g. 'The exam PDF's own first page says CC BY-NC-SA 4.0' or 'No license statement found anywhere, I'm not sure about reuse rights'" required></textarea>
 
     <label class="biolab-submit-label" for="pc-exam-file">Exam PDF <span class="biolab-feedback-hint">(required, up to 10MB)</span></label>
@@ -77,7 +77,7 @@ layout: "wide"
       <option value="other">Something else</option>
     </select>
 
-    <label class="biolab-submit-label" for="cc-current">Current value <span class="biolab-feedback-hint">(optional — paste what's there now, if easy to copy)</span></label>
+    <label class="biolab-submit-label" for="cc-current">Current value <span class="biolab-feedback-hint">(optional, paste what's there now, if easy to copy)</span></label>
     <textarea id="cc-current" name="current_value" maxlength="2000" rows="2"></textarea>
 
     <label class="biolab-submit-label" for="cc-proposed">Proposed correction</label>
@@ -92,7 +92,7 @@ layout: "wide"
 </section>
 
 <section class="papers-contribute-panel" data-panel="solution" hidden>
-  <p class="biolab-feedback-hint">Write your own explanation or study note for an existing question — your own words, not a reproduction of the exam or its official solution.</p>
+  <p class="biolab-feedback-hint">Write your own explanation or study note for an existing question, your own words, not a reproduction of the exam or its official solution.</p>
   <form id="community-solution-form" class="discussions-form" hidden>
     <label class="biolab-submit-label" for="cs-olympiad">Olympiad</label>
     <input type="text" id="cs-olympiad" name="olympiad" maxlength="100" placeholder="e.g. ibo" required>
@@ -107,7 +107,7 @@ layout: "wide"
     <input type="text" id="cs-problem" name="problem_id" maxlength="50" placeholder="e.g. q12" required>
 
     <label class="biolab-submit-label" for="cs-body">Your explanation/note</label>
-    <textarea id="cs-body" name="body" maxlength="5000" rows="8" placeholder="Explain your own reasoning, an alternative approach, or a study tip for this question — in your own words." required></textarea>
+    <textarea id="cs-body" name="body" maxlength="5000" rows="8" placeholder="Explain your own reasoning, an alternative approach, or a study tip for this question, in your own words." required></textarea>
 
     <button type="submit" class="papers-nav-btn papers-nav-next">Submit for review</button>
     <div class="discussions-msg" id="community-solution-msg"></div>

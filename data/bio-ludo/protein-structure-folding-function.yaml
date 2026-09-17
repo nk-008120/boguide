@@ -1,0 +1,93 @@
+topic: "protein-structure-folding-function"
+topicName: "Protein Structure, Folding & Function"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "protein-structure-folding-function-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "A glycosidic linkage is analogous to which of the following in proteins?"
+    options:
+      - key: "A"
+        text: "an amino group"
+      - key: "B"
+        text: "a peptide bond"
+      - key: "C"
+        text: "a disulfide bond"
+      - key: "D"
+        text: "a β pleated sheet"
+    answer: "B"
+    explanation: "A glycosidic linkage joins two sugar monomers into a polysaccharide the same way a peptide bond joins two amino acid monomers into a polypeptide: both are the condensation linkage connecting a polymer's repeating units."
+    sourceRef: "Campbell Biology 11e, Ch. 5 (The Structure and Function of Large Biological Molecules)"
+
+  - id: "protein-structure-folding-function-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "What component of amino acid structure varies among different amino acids?"
+    options:
+      - key: "A"
+        text: "the long carbon-hydrogen tails of the molecule"
+      - key: "B"
+        text: "the presence of a central C atom"
+      - key: "C"
+        text: "the components of the R group"
+      - key: "D"
+        text: "the glycerol molecule that forms the backbone of the amino acid"
+    answer: "C"
+    explanation: "All amino acids share the same central carbon backbone (amino group, carboxyl group, H); only the R group (side chain) differs between the 20 amino acids, giving each its distinct chemical properties."
+    sourceRef: "Campbell Biology 11e, Ch. 5 (The Structure and Function of Large Biological Molecules)"
+
+  - id: "protein-structure-folding-function-03"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Which parts of the amino acids X and Y are involved in the formation of a peptide bond? X-Y"
+    options:
+      - key: "A"
+        text: "amino group of X and carboxyl group of Y"
+      - key: "B"
+        text: "carboxyl group of X and amino group of Y"
+      - key: "C"
+        text: "carboxyl group of X and side chain of Y"
+      - key: "D"
+        text: "side chains of both X and Y"
+    answer: "B"
+    explanation: "A peptide bond forms by a dehydration reaction between the carboxyl group of one amino acid and the amino group of the next, linking X's carboxyl end to Y's amino end."
+    sourceRef: "Campbell Biology 11e, Ch. 5 (The Structure and Function of Large Biological Molecules)"
+
+  - id: "protein-structure-folding-function-04"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Which of the following statements is true about proteins?"
+    options:
+      - key: "A"
+        text: "Denaturation leads to bond disruption, and the molecule turns into liquid"
+      - key: "B"
+        text: "Denaturation is always irreversible"
+      - key: "C"
+        text: "Final folded structure can reveal the steps of protein folding"
+      - key: "D"
+        text: "Some proteins form a complete 3-D structure only when they interact with their targets"
+    answer: "D"
+    explanation: "Some proteins (and protein complexes) only reach their fully folded, functional three-dimensional form once they bind their normal partner or target molecule, a process called induced folding or coupled folding-and-binding."
+    sourceRef: "Campbell Biology 11e, Ch. 5 (The Structure and Function of Large Biological Molecules)"
+
+  - id: "protein-structure-folding-function-05"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "You disrupt all hydrogen bonds in a protein. What level of structure will be preserved?"
+    options:
+      - key: "A"
+        text: "primary structure"
+      - key: "B"
+        text: "secondary structure"
+      - key: "C"
+        text: "tertiary structure"
+      - key: "D"
+        text: "quaternary structure"
+    answer: "A"
+    explanation: "Primary structure is simply the covalent sequence of amino acids linked by peptide bonds; because it doesn't depend on hydrogen bonding at all (unlike secondary, tertiary, and quaternary structure, which rely heavily on H-bonds), it survives disruption of every hydrogen bond in the protein."
+    sourceRef: "Campbell Biology 11e, Ch. 5 (The Structure and Function of Large Biological Molecules)"

@@ -23,7 +23,7 @@ questions:
       | 10. Sugar in RNA | J. A, U, C, G |
     solution: |
 
-      Answer –
+      Answer:
 
       1 - I
 
@@ -57,9 +57,9 @@ questions:
       ![image](/CHALLENGEPICS/nucleotide-nucleic-acid-chemistry-q2-2.png)
     solution: |
 
-      Answer – B
+      Answer: B
 
-      Solution – On observing the non-ACTG base, we see it has 2 hydrogen-bond acceptors and 1 hydrogen-bond donor. Thus, it will form 3 hydrogen-bonds with molecule having 2 hydrogen-bond donors and 1 hydrogen-bond acceptor. This is only seen in option B and E. Now, check the positions of hydrogen-bond donors and acceptors. The donors must be adjacent which is the case in option B.
+      Solution: On observing the non-ACTG base, we see it has 2 hydrogen-bond acceptors and 1 hydrogen-bond donor. Thus, it will form 3 hydrogen-bonds with molecule having 2 hydrogen-bond donors and 1 hydrogen-bond acceptor. This is only seen in option B and E. Now, check the positions of hydrogen-bond donors and acceptors. The donors must be adjacent which is the case in option B.
   - id: 3
     difficulty: "medium"
     source: "USABO"
@@ -68,13 +68,13 @@ questions:
 
       ![image](/CHALLENGEPICS/nucleotide-nucleic-acid-chemistry-q3.png)
 
-      Organisms are defined by the information encoded in their genome, which can either be DNA or RNA. Essentially, there are four bases (A, T, G and C) that undergo specific complementary base pairing per Chargaff’s rule to form the DNA genome. Recently, two synthetic nucleotides were introduced into bacteria, which are designed to form a new complementary base pair of d5SICS–dNaM as shown below.
+      Organisms are defined by the information encoded in their genome, which can either be DNA or RNA. Essentially, there are four bases (A, T, G and C) that undergo specific complementary base pairing per Chargaff’s rule to form the DNA genome. Recently, two synthetic nucleotides were introduced into bacteria, which are designed to form a new complementary base pair of d5SICS-dNaM as shown below.
 
       A. In a bacterial cell, how many possible tri-nucleotides (codons) exist using the bases A, T, G, C, d5SIC and dNaM?
 
-      B. Choose the most likely bonding (choose from covalent bond/hydrogen bond/ionic bond/ hydrophobic interaction/Van Der Waal forces) that allows d5SICS–dNaM base pairing and specify how it differs from the typical purine–pyrimidine base pairing.
+      B. Choose the most likely bonding (choose from covalent bond/hydrogen bond/ionic bond/ hydrophobic interaction/Van Der Waal forces) that allows d5SICS-dNaM base pairing and specify how it differs from the typical purine-pyrimidine base pairing.
     solution: |
 
-      A – 216Solution – Now, with 6 nitrogenous bases, the possible combinations are 6 x 6 x 6 = 216
+      A: 216Solution: Now, with 6 nitrogenous bases, the possible combinations are 6 x 6 x 6 = 216
 
-      B – Covalent bonding between bases in DNA is not possible since it can cause structure of DNA helix to change. There are no charges on the bases for ionic bonds to form. Since there is absence of hydrogen bond donor and acceptors in d5SIC and dNaM, hydrogen bonding is not possible and VDW forces are negligible. Thus, the only possible method is hydrophobic interaction between large aromatic rings of both bases. This differs from purine-pyrimidine base pairing because purine-pyrimidine base pairing is due to hydrogen bond.
+      B: Covalent bonding between bases in DNA is not possible since it can cause structure of DNA helix to change. There are no charges on the bases for ionic bonds to form. Since there is absence of hydrogen bond donor and acceptors in d5SIC and dNaM, hydrogen bonding is not possible and VDW forces are negligible. Thus, the only possible method is hydrophobic interaction between large aromatic rings of both bases. This differs from purine-pyrimidine base pairing because purine-pyrimidine base pairing is due to hydrogen bond.

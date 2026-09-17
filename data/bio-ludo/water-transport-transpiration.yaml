@@ -1,0 +1,75 @@
+topic: "water-transport-transpiration"
+topicName: "Water Transport & Transpiration"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "water-transport-transpiration-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Which of the following are important components of the long-distance transport process in plants? I) the cohesion of water molecules II) a negative water potential III) the root parenchyma IV) the active transport of solutes V) bulk flow from source to sink"
+    options:
+      - key: "A"
+        text: "II, III, IV, and V"
+      - key: "B"
+        text: "I, III, IV, and V"
+      - key: "C"
+        text: "I, II, IV, and V"
+      - key: "D"
+        text: "I, II, III, and V"
+    answer: "C"
+    explanation: "Long-distance water transport in the xylem depends on cohesion between water molecules and a negative (more negative) water potential pulling water upward, while active transport of solutes and bulk flow from source to sink describe the separate mechanism driving sugar transport in the phloem: both processes combine to make up the full long-distance transport system, matching option C's selection (I, II, IV, V) while excluding the root parenchyma (III), which is not itself a transport mechanism."
+    sourceRef: "Campbell Biology 11e, Ch. 36 (Resource Acquisition and Transport in Vascular Plants)"
+
+  - id: "water-transport-transpiration-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "If isolated plant cells with a water potential averaging -0.5 MPa are placed into a solution with a water potential of -0.3 MPa, which of the following would be the most likely outcome?"
+    options:
+      - key: "A"
+        text: "The pressure potential of the cells would increase."
+      - key: "B"
+        text: "Water would move out of the cells."
+      - key: "C"
+        text: "The cell walls would rupture, killing the cells."
+      - key: "D"
+        text: "Solutes would move out of the cells."
+    answer: "A"
+    explanation: "Water moves from a region of higher (less negative) water potential to lower (more negative) water potential; since the cell's -0.5 MPa is lower than the surrounding solution's -0.3 MPa, water enters the cell, increasing its turgor and therefore its pressure potential."
+    sourceRef: "Campbell Biology 11e, Ch. 36 (Resource Acquisition and Transport in Vascular Plants)"
+
+  - id: "water-transport-transpiration-03"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "Which of the following experimental procedures would most likely reduce transpiration while allowing the normal growth of a plant?"
+    options:
+      - key: "A"
+        text: "subjecting the leaves of the plant to a partial vacuum"
+      - key: "B"
+        text: "increasing the level of carbon dioxide around the plant"
+      - key: "C"
+        text: "putting the plant in drier soil"
+      - key: "D"
+        text: "decreasing the relative humidity around the plant"
+    answer: "B"
+    explanation: "Raising ambient CO2 lets guard cells maintain adequate photosynthesis while stomata stay more closed, reducing water loss through transpiration without starving the plant of the CO2 it needs for normal growth."
+    sourceRef: "Campbell Biology 11e, Ch. 36 (Resource Acquisition and Transport in Vascular Plants)"
+
+  - id: "water-transport-transpiration-04"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Which of the following observations provides the strongest evidence against root pressure being the principal mechanism of water transport in the xylem?"
+    options:
+      - key: "A"
+        text: "Not all soils have high concentrations of ions."
+      - key: "B"
+        text: "Root pressure requires movement of water into the xylem from surrounding cells in the roots."
+      - key: "C"
+        text: "Over long distances, the force of root pressure is not enough to overcome the force of gravity."
+      - key: "D"
+        text: "There is no water potential gradient between roots and shoots."
+    answer: "C"
+    explanation: "Root pressure alone is far too weak a force to push water to the top of a tall tree against gravity over long distances, which is the key evidence favoring the cohesion-tension mechanism (driven by transpirational pull) as the primary long-distance water transport mechanism instead."
+    sourceRef: "Campbell Biology 11e, Ch. 36 (Resource Acquisition and Transport in Vascular Plants)"

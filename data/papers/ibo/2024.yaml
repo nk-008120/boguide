@@ -105,7 +105,7 @@ rounds:
           - letter: "B"
             text: "Differences in extracellular pH values can be explained by the altered ratio of glucose fermentation to oxidative phosphorylation in cancer cells compared to normal ones."
             answer: true
-            explanation: "TRUE. Cancer cells upregulate aerobic glycolysis (the Warburg effect), they preferentially ferment glucose to lactate even in the presence of oxygen, producing lactic acid. This increases extracellular lactate and H⁺ concentration, lowering the pH. The altered ratio of anaerobic glycolysis (fermentation) to oxidative phosphorylation in cancer cells, with more glucose going through fermentation, directly explains the acidic tumor microenvironment (pH 6.5–6.9 in tumors vs. 7.35–7.45 in normal tissue)."
+            explanation: "TRUE. Cancer cells upregulate aerobic glycolysis (the Warburg effect), they preferentially ferment glucose to lactate even in the presence of oxygen, producing lactic acid. This increases extracellular lactate and H⁺ concentration, lowering the pH. The altered ratio of anaerobic glycolysis (fermentation) to oxidative phosphorylation in cancer cells, with more glucose going through fermentation, directly explains the acidic tumor microenvironment (pH 6.5-6.9 in tumors vs. 7.35-7.45 in normal tissue)."
           - letter: "C"
             text: "The tumor microenvironment is typically hyperoxic due to elevated oxygen consumption by cancer cells."
             answer: false
@@ -451,7 +451,7 @@ rounds:
           - letter: "D"
             text: "Food import would be a better long-term solution for the water crisis in dry regions rather than water import."
             answer: true
-            explanation: "TRUE. Virtual water, water embedded in imported food, represents a much more efficient transfer of water scarcity relief than physical water import. Producing 1 kg of grain requires roughly 1,000–3,000 liters of water. If a water-scarce country IMPORTS grain instead of producing it locally, it effectively imports that embedded water, far more water-efficient than desalination or long-distance water transport. Food import allows water-scarce countries to meet nutritional needs without depleting their own RFWR, making it a superior long-term strategy compared to unsustainable water import."
+            explanation: "TRUE. Virtual water, water embedded in imported food, represents a much more efficient transfer of water scarcity relief than physical water import. Producing 1 kg of grain requires roughly 1,000-3,000 liters of water. If a water-scarce country IMPORTS grain instead of producing it locally, it effectively imports that embedded water, far more water-efficient than desalination or long-distance water transport. Food import allows water-scarce countries to meet nutritional needs without depleting their own RFWR, making it a superior long-term strategy compared to unsustainable water import."
 
       - id: q18
         number: "Q18"
@@ -2287,7 +2287,7 @@ rounds:
           - letter: "B"
             text: "Auxin does not enter into the bud to inhibit axillary bud growth."
             answer: true
-            explanation: "TRUE. Table 1 shows bud auxin content stays low (roughly 12–16 counts per minute) and barely changes whether NPA (an auxin transport inhibitor) is present or not, in sharp contrast to stem auxin content, which changes enormously with treatment end and NPA status (13 to over 2200). If auxin transport into the bud were the mechanism of inhibition, blocking transport with NPA should have changed the bud's auxin level, since it doesn't, auxin's inhibitory signal to the bud must work without auxin itself needing to accumulate inside the bud."
+            explanation: "TRUE. Table 1 shows bud auxin content stays low (roughly 12-16 counts per minute) and barely changes whether NPA (an auxin transport inhibitor) is present or not, in sharp contrast to stem auxin content, which changes enormously with treatment end and NPA status (13 to over 2200). If auxin transport into the bud were the mechanism of inhibition, blocking transport with NPA should have changed the bud's auxin level, since it doesn't, auxin's inhibitory signal to the bud must work without auxin itself needing to accumulate inside the bud."
           - letter: "C"
             text: "Based on the data, auxin potentially suppresses bud growth by inhibiting cytokinin biosynthesis in the root."
             answer: false
@@ -2517,7 +2517,7 @@ rounds:
           - letter: "A"
             text: "Chemical stress has a more pronounced impact on activity level compared to osmotic one."
             answer: false
-            explanation: "FALSE. Panels B, C, and D (each applying a different pure osmotic condition, ~0‰, ~240‰, or natural seawater alone) all show activity dropping to near zero during the stress period and then recovering, essentially the same pattern seen when DNP (chemical/mitochondrial-uncoupling stress) is applied in panels E–H. Comparing across these panels, osmotic stress alone produces activity disruption just as pronounced as the chemical-stress panels, there's no clear pattern in the data showing chemical stress hits harder than osmotic stress."
+            explanation: "FALSE. Panels B, C, and D (each applying a different pure osmotic condition, ~0‰, ~240‰, or natural seawater alone) all show activity dropping to near zero during the stress period and then recovering, essentially the same pattern seen when DNP (chemical/mitochondrial-uncoupling stress) is applied in panels E-H. Comparing across these panels, osmotic stress alone produces activity disruption just as pronounced as the chemical-stress panels, there's no clear pattern in the data showing chemical stress hits harder than osmotic stress."
           - letter: "B"
             text: "ATP is crucial to tolerate hypoosmotic environments."
             answer: true
@@ -2525,7 +2525,7 @@ rounds:
           - letter: "C"
             text: "It is evident that DNP followed by either hypoosmotic or hyperosmotic conditions has the same impact on activity level at t=72h."
             answer: false
-            explanation: "FALSE. This specific combination (DNP applied simultaneously with, then followed sequentially by, both a hypoosmotic and a hyperosmotic phase in one single experiment) was not one of the conditions actually tested in panels E–H, each panel tests DNP paired with only one osmotic condition at a time. Without that specific combined experiment having been run, there's no data to support any claim of 'the same impact,' so the statement isn't evidenced and is false as an inference from this figure."
+            explanation: "FALSE. This specific combination (DNP applied simultaneously with, then followed sequentially by, both a hypoosmotic and a hyperosmotic phase in one single experiment) was not one of the conditions actually tested in panels E-H, each panel tests DNP paired with only one osmotic condition at a time. Without that specific combined experiment having been run, there's no data to support any claim of 'the same impact,' so the statement isn't evidenced and is false as an inference from this figure."
           - letter: "D"
             text: "DNP exposure without osmotic stress is sufficient for a marine tardigrade's morphological changes to happen"
             answer: true

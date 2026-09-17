@@ -49,11 +49,11 @@ rounds:
             link: "/resources/1-cell-molecular/enzyme-kinetics-regulation/"
         statements:
           - letter: "A"
-            text: "Graph 1 (U-shaped: high time at low temperature, falling to a minimum around 25–30°C, then rising sharply toward 50°C)."
+            text: "Graph 1 (U-shaped: high time at low temperature, falling to a minimum around 25-30°C, then rising sharply toward 50°C)."
             answer: true
             explanation: "This is the expected shape: the reaction speeds up (less time) as temperature rises toward the optimum, then slows and eventually can't complete at all as the enzyme denatures approaching 50°C."
           - letter: "B"
-            text: "Graph 2 (bell-shaped: low time at the extremes, peaking around 30–40°C)."
+            text: "Graph 2 (bell-shaped: low time at the extremes, peaking around 30-40°C)."
             answer: false
             explanation: "The y-axis is time, so a peak at the 'optimal' temperature would mean the reaction is slowest there, backwards from what actually happens at an enzyme's optimum."
           - letter: "C"
@@ -68,7 +68,7 @@ rounds:
       - id: q3
         number: "Q3"
         difficulty: "medium"
-        name: "Amylase Activity, Starch Hydrolysis at 50–70°C"
+        name: "Amylase Activity, Starch Hydrolysis at 50-70°C"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=5"
         subjects:
           - name: "Enzyme Kinetics & Regulation"
@@ -122,7 +122,7 @@ rounds:
       - id: q5
         number: "Q5"
         difficulty: "hard"
-        name: "Meselson–Stahl Experiment, DNA Replication Modes"
+        name: "Meselson-Stahl Experiment, DNA Replication Modes"
         link: "/papers/ibo/2022/theoretical-1-exam.pdf#page=7"
         subjects:
           - name: "DNA Structure & Replication"
@@ -143,7 +143,7 @@ rounds:
           - letter: "D"
             text: "Curve D corresponds to conservative DNA replication."
             answer: false
-            explanation: "Conservative replication (the original heavy duplex stays fully intact) predicts the heavy fraction shrinking gradually as a proportion of the growing pool of new light DNA, not vanishing to ~0% within just 2–3 generations the way Curve D does."
+            explanation: "Conservative replication (the original heavy duplex stays fully intact) predicts the heavy fraction shrinking gradually as a proportion of the growing pool of new light DNA, not vanishing to ~0% within just 2-3 generations the way Curve D does."
 
       - id: q6
         number: "Q6"
@@ -265,7 +265,7 @@ rounds:
             link: "/resources/1-cell-molecular/biomolecular-analytical-techniques/"
         statements:
           - letter: "A"
-            text: "After one week of culture, the relative percentage of myocytes in tissue constructs printed using bioink with 50–50% myocyte-fibroblast content will be decreased."
+            text: "After one week of culture, the relative percentage of myocytes in tissue constructs printed using bioink with 50-50% myocyte-fibroblast content will be decreased."
             answer: true
             explanation: "The graph shows myocyte-laden constructs losing bioluminescence (viability) faster than fibroblast-laden ones at the same pressures, in a mixed construct, that means myocytes are expected to survive and proliferate worse, shrinking their relative share over time."
           - letter: "B"
@@ -885,11 +885,11 @@ rounds:
           - letter: "B"
             text: "The late-litter pups gradually increased their food intake, while the first-litter ones immediately began to eat a lot, stopping eating only before overwintering."
             answer: false
-            explanation: "The energy-intake graph shows the opposite pattern: late-litter (red) pups spike sharply early (peaking around week 3–4) then decline, while early-litter (blue) pups stay low initially and only ramp up later, the statement has the two groups' patterns backwards."
+            explanation: "The energy-intake graph shows the opposite pattern: late-litter (red) pups spike sharply early (peaking around week 3-4) then decline, while early-litter (blue) pups stay low initially and only ramp up later, the statement has the two groups' patterns backwards."
           - letter: "C"
             text: "Late-litter offspring were born smaller but grew faster, reaching the level of early-litter ones in a relatively short period of time."
             answer: true
-            explanation: "The body-length graph shows late-litter pups starting shorter at week 0 but converging with early-litter pups' length by around week 3–4, a relatively fast catch-up."
+            explanation: "The body-length graph shows late-litter pups starting shorter at week 0 but converging with early-litter pups' length by around week 3-4, a relatively fast catch-up."
           - letter: "D"
             text: "The metabolism of fasting pups was lower than that of fully fed pups, but as overwintering approached, it gradually decreased in all pups."
             answer: false
@@ -1257,7 +1257,7 @@ rounds:
           - letter: "B"
             text: "Zone Y corresponds to the range of 18 - 25 °C air temperature, and 70 - 90% humidity."
             answer: false
-            explanation: "Zone Y sits in a lower humidity band (roughly 15–35%) than the 70–90% claimed in this statement, that higher-humidity range is closer to where zone X sits, not zone Y."
+            explanation: "Zone Y sits in a lower humidity band (roughly 15-35%) than the 70-90% claimed in this statement, that higher-humidity range is closer to where zone X sits, not zone Y."
           - letter: "C"
             text: "Adult moths are unable to survive temperatures of 15 °C, when the humidity is lower than 40%."
             answer: false
@@ -1265,7 +1265,7 @@ rounds:
           - letter: "D"
             text: "20 - 30 °C is optimal for survival of moth pupae if the air humidity is above 50%."
             answer: true
-            explanation: "This range matches zone X's position (roughly 20–30°C at 55–95% humidity), where the lowest pupal mortality was observed."
+            explanation: "This range matches zone X's position (roughly 20-30°C at 55-95% humidity), where the lowest pupal mortality was observed."
 
       - id: q48
         number: "Q48"
@@ -1397,7 +1397,7 @@ rounds:
           - letter: "B"
             text: "The mother strand of DNA is sequentially elongated on the 3' end, using the telomerase RNA as a template."
             answer: true
-            explanation: "Figures 1b–d show the parental (mother) strand's 3' overhang being extended by telomerase's reverse-transcriptase activity, using the enzyme's internal CAAUCC RNA as template, then translocating to repeat the process."
+            explanation: "Figures 1b-d show the parental (mother) strand's 3' overhang being extended by telomerase's reverse-transcriptase activity, using the enzyme's internal CAAUCC RNA as template, then translocating to repeat the process."
           - letter: "C"
             text: "Loss-of-function mutations in the telomerase protein are likely to cause diseases such as progeria or bone-marrow failure."
             answer: true
@@ -1410,7 +1410,7 @@ rounds:
       - id: q4
         number: "Q54"
         difficulty: "hard"
-        name: "NAD(P)H Fluorescence During the Aerobic–Anaerobic Transition in Yeast"
+        name: "NAD(P)H Fluorescence During the Aerobic-Anaerobic Transition in Yeast"
         link: "/papers/ibo/2022/theoretical-2-exam.pdf#page=7"
         subjects:
           - name: "Bioenergetics & Central Metabolism Overview"
@@ -1475,7 +1475,7 @@ rounds:
           - letter: "B"
             text: "Weakly alkaline chemotherapeutic drugs tend to accumulate in lysosomes"
             answer: true
-            explanation: "Lysosomes are acidic (pH ~4.5–5). A weakly basic drug becomes protonated once inside and can no longer cross the membrane back out, this ion-trapping (lysosomotropism) causes it to accumulate there, matching the 'cancer lysosomotrophic drug' shown concentrated inside the lysosome in the figure."
+            explanation: "Lysosomes are acidic (pH ~4.5-5). A weakly basic drug becomes protonated once inside and can no longer cross the membrane back out, this ion-trapping (lysosomotropism) causes it to accumulate there, matching the 'cancer lysosomotrophic drug' shown concentrated inside the lysosome in the figure."
           - letter: "C"
             text: "Lysosomal exocytosis enables the release of exosomes, which distribute signaling molecules to surround cells."
             answer: true

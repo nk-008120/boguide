@@ -626,7 +626,7 @@ rounds:
           - letter: "C"
             text: "BCX can successfully (>50% survival) be administered up to 10 days after Ebola infection"
             answer: false
-            explanation: "The survival curves show that treatment needs to start within about 5–6 days after\
+            explanation: "The survival curves show that treatment needs to start within about 5-6 days after\
   \ infection to give a strong effect; starting as late as 8 days already drops survival\
   \ to around 30%, so waiting until day 10 would fall well below the 50% survival\
   \ threshold."
@@ -671,7 +671,7 @@ rounds:
             text: "Complete development of stamens in the tulip requires the expression of gene-B1+gene-B3+gene-C"
             answer: true
             explanation: "Stamen identity requires class-B activity together with gene-C, and since class-B\
-  \ in this species is built from three separate genes B1–B3, the specific combination\
+  \ in this species is built from three separate genes B1-B3, the specific combination\
   \ of B1, B3 and C together is what the data indicate is needed for fully normal\
   \ stamen development."
 
@@ -723,8 +723,8 @@ rounds:
             text: "The gene marker 'KM resistance' is transferred before the gene required for uracil\
   \ synthesis"
             answer: false
-            explanation: "The table shows recipients already growing without uracil after just 5–10 minutes\
-  \ of conjugation, while high Kanamycin-resistant growth only appears after 20–25\
+            explanation: "The table shows recipients already growing without uracil after just 5-10 minutes\
+  \ of conjugation, while high Kanamycin-resistant growth only appears after 20-25\
   \ minutes, so the uracil gene is transferred earlier along the chromosome, not the\
   \ KM-resistance marker."
           - letter: "B"
@@ -825,7 +825,7 @@ rounds:
             text: "Results in Fig. C-D and in Fig. E support each other well"
             answer: true
             explanation: "Blocking adipogenesis with BADGE both worsens wound outcomes and bacterial counts\
-  \ in panels C–D and reduces the protective difference attributable to Camp in panel\
+  \ in panels C-D and reduces the protective difference attributable to Camp in panel\
   \ E, so the two sets of results point toward the same conclusion, that adipocyte-associated\
   \ antimicrobial activity helps control the infection."
 
@@ -894,7 +894,7 @@ rounds:
   \ species evidently differ in slope, meaning some species broaden their diet more\
   \ than others as food diversity rises rather than all responding identically."
           - letter: "D"
-            text: "Figures. A–B show that interspecific competition is low when food is more diverse"
+            text: "Figures. A-B show that interspecific competition is low when food is more diverse"
             answer: true
             explanation: "As food diversity rises, panel A shows diets broadening and therefore overlapping\
   \ more between species, and panel B shows that species with more similar beaks (which\
@@ -971,7 +971,7 @@ rounds:
   \ represented, while fox-free islands show only grass and forbs, meaning plant-group\
   \ diversity is higher, not lower, where foxes are present."
           - letter: "D"
-            text: "The ecological changes on islands with fox introduction represent exclusively top–down\
+            text: "The ecological changes on islands with fox introduction represent exclusively top-down\
   \ processes"
             answer: false
             explanation: "Alongside the top-down chain from fox to seabirds, there is also a bottom-up pathway\
@@ -1064,7 +1064,7 @@ rounds:
             link: "/resources/8-ecology/"
         statements:
           - letter: "A"
-            text: "Smaller islands (1–10 ha) lose more species per year than larger islands (25-50 ha)"
+            text: "Smaller islands (1-10 ha) lose more species per year than larger islands (25-50 ha)"
             answer: false
             explanation: "The extinction-rate curves in panel B are actually steeper for the larger islands,\
   \ and panel C shows large islands losing half their species fastest, so it is the\
@@ -1074,7 +1074,7 @@ rounds:
   \ and island area"
             answer: false
             explanation: "At time zero, species number tracks island area more like a saturating, logarithmic\
-  \ relationship (the classic species–area curve) rather than a straight line, so\
+  \ relationship (the classic species-area curve) rather than a straight line, so\
   \ a simple linear relationship does not describe the starting pattern."
           - letter: "C"
             text: "The study supports the hypothesis that in the long run, a single large protected\
@@ -1201,7 +1201,7 @@ rounds:
             answer: true
             explanation: "The most heavily stereotypic group (ST2) actually shows lower cortisol than the less-affected\
   \ group, which fits a scenario where sustained, severe stress eventually triggers\
-  \ negative feedback in the hypothalamus–pituitary–adrenal axis that dials cortisol\
+  \ negative feedback in the hypothalamus-pituitary-adrenal axis that dials cortisol\
   \ production back down rather than keeping it elevated."
 
       - id: q33
@@ -2109,13 +2109,13 @@ rounds:
             link: "/resources/3-animal-physiology/endocrine-system-physiology/"
         statements:
           - letter: "A"
-            text: "Males–IV have reduced testosterone level due to negative feed-back regulation"
+            text: "Males-IV have reduced testosterone level due to negative feed-back regulation"
             answer: false
             explanation: "Group IV consists of men with underdeveloped pituitary glands, so their low testosterone\
   \ is a direct consequence of insufficient LH output from a malfunctioning pituitary,\
   \ not a downstream feedback response to circulating hormone levels."
           - letter: "B"
-            text: "Males–IV have a high LH concentration compared to Males–I"
+            text: "Males-IV have a high LH concentration compared to Males-I"
             answer: true
             explanation: "This statement describes the group with removed testes: without any testes left to\
   \ produce testosterone, there is no hormone available to send the usual negative-feedback\
@@ -2773,7 +2773,7 @@ rounds:
 
       - id: q24
         number: "Q24"
-        name: "Testing the Janzen–Connell Hypothesis with Pesticide Exclusion"
+        name: "Testing the Janzen-Connell Hypothesis with Pesticide Exclusion"
         link: "/papers/ibo/2015/theoretical-b-exam.pdf#page=40"
         subjects:
           - name: "Ecology"
@@ -2868,7 +2868,7 @@ rounds:
   \ species, another common indicator of trophic position), so it is Halibut, not\
   \ Mackerel, that is more likely to sit higher in the food chain."
           - letter: "B"
-            text: "Hg–level generally increases with body weight"
+            text: "Hg-level generally increases with body weight"
             answer: true
             explanation: "Larger fish species tend to live longer, and a longer lifespan gives more time to\
   \ accumulate mercury from the diet over the years, so body size and mercury level\
@@ -3693,7 +3693,7 @@ rounds:
             link: "/resources/8-ecology/"
         statements:
           - letter: "A"
-            text: "The limiting factor for diatoms during the winter (January–March) is N"
+            text: "The limiting factor for diatoms during the winter (January-March) is N"
             answer: false
             explanation: "During January-March, the N:P ratio in panel B sits above 8, comfortably above the\
   \ optimum ratio of about 7, with N relatively abundant compared to P at that ratio,\

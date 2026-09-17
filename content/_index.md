@@ -102,7 +102,7 @@ We cover the full IBO syllabus: 15+ sections, 150+ topic pages, growing every we
   <a href="/papers/question-bank/" class="card">
     <div class="card-icon">🔎</div>
     <h3>Question Bank</h3>
-    <p>Every question in the archive, searchable in one table — filter by olympiad, year, topic, and difficulty.</p>
+    <p>Every question in the archive, searchable in one table : filter by olympiad, year, topic, and difficulty.</p>
     <span class="btn-outline">Search Questions →</span>
   </a>
   <a href="/resources/" class="card">
@@ -114,14 +114,20 @@ We cover the full IBO syllabus: 15+ sections, 150+ topic pages, growing every we
   <a href="/biobytes/" class="card">
     <div class="card-icon">✍️</div>
     <h3>BiOBytes</h3>
-    <p>Exam-technique tips, lab guides, and quick bites from our Instagram — all in one place.</p>
+    <p>Exam-technique tips, lab guides, and quick bites from our Instagram , all in one place.</p>
     <span class="btn-outline">Read BiOBytes →</span>
   </a>
   <a href="/biolab/" class="card">
     <div class="card-icon">🔬</div>
     <h3>BiOLab</h3>
-    <p>A community protocol archive — read a verified or submitted protocol, run it yourself, and log your results.</p>
+    <p>A community protocol archive ; read a verified or submitted protocol, run it yourself, and log your results.</p>
     <span class="btn-outline">Explore BiOLab →</span>
+  </a>
+  <a href="/games/bio-ludo/" class="card">
+    <div class="card-icon">🎮</div>
+    <h3>BiOLudo</h3>
+    <p>A biology-trivia Ludo variant: character classes, a moving Unsafe Zone, and combat settled by quiz duels. Play locally or against bots.</p>
+    <span class="btn-outline">Play BiOLudo →</span>
   </a>
   <a href="/about/" class="card">
     <div class="card-icon">🧬</div>
@@ -168,7 +174,7 @@ BioGuide follows this open contribution model:
 
 **Discord:** Chat with other students, ask questions, share resources · **GitHub Issues:** Report typos, request features, discuss content
 
-Content (text) is licensed under **CC BY-NC-SA 4.0**: free to share and adapt for non-commercial purposes, with attribution. See [About](/about/) for full licensing and image-source details.
+Content (text) is licensed under **CC BY-NC-SA 4.0**: free to share and adapt for non-commercial purposes, with attribution. Source code is separately licensed under the **MIT License**. See [About](/about/) for full licensing and image-source details.
 
 </div>
 

@@ -42,7 +42,7 @@ questions:
 
       D. Amino acid named B is glycine
     solution: |
-      **Answer: A – False, B – False, C – True, D – True**
+      **Answer: A: False, B: False, C: True, D: True**
 
       From the peptide masses and individual amino acid masses, the following linear equations can be made:
 
@@ -73,7 +73,7 @@ questions:
     solution: |
       **General rule:** Species remain protonated below their pK and deprotonated above their pK. Do not take into account −COOH and −NH₂ groups of internal amino acids since they form peptide bonds. Only the −COOH group of the C-terminal amino acid, the −NH₂ group of the N-terminal amino acid, and side chains are relevant.
 
-      **B. pH = 7** — at this pH the three peptides carry sufficiently different net charges for electrophoretic separation.
+      **B. pH = 7**: at this pH the three peptides carry sufficiently different net charges for electrophoretic separation.
 
   - id: 3
     difficulty: "medium"
@@ -94,6 +94,6 @@ questions:
     solution: |
       From the structure of the protein, we can see 5 transmembrane domains with 1 cytosolic and 1 extracellular domain.
 
-      **Phosphorylation** occurs on Ser, Thr and Tyr residues by protein kinases present in the cytosol — so only residues on the cytosolic face are phosphorylated.
+      **Phosphorylation** occurs on Ser, Thr and Tyr residues by protein kinases present in the cytosol: so only residues on the cytosolic face are phosphorylated.
 
-      **Glycosylation** occurs on Asn (N-linked) and Ser/Thr (O-linked) residues by enzymes in the ER and Golgi body — so only residues on the extracellular/luminal face are glycosylated.
+      **Glycosylation** occurs on Asn (N-linked) and Ser/Thr (O-linked) residues by enzymes in the ER and Golgi body: so only residues on the extracellular/luminal face are glycosylated.

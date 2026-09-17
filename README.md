@@ -2,9 +2,10 @@
 
 [![Built with Hugo](https://img.shields.io/badge/Built%20with-Hugo-ff4088?style=flat&logo=hugo)](https://gohugo.io/)
 [![Hextra Theme](https://img.shields.io/badge/Theme-Hextra-3b82f6?style=flat)](https://github.com/imfing/hextra)
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![Code License: MIT](https://img.shields.io/badge/Code%20License-MIT-blue.svg)](LICENSE-CODE.txt)
+[![Content License: CC BY-NC-SA 4.0](https://img.shields.io/badge/Content%20License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-**BiOGuide** is a free, open-core study platform for biology olympiad preparation — covering IBO, USABO, INBO, and other national/international competitions. It combines structured study guides, past-paper practice with timed attempts and scoring, competitive rounds, a protocol archive, and community Q&A into a single site.
+**BiOGuide** is a free, open-core study platform for biology olympiad preparation, covering IBO, USABO, INBO, and other national/international competitions. It combines structured study guides, past-paper practice with timed attempts and scoring, competitive rounds, a protocol archive, and community Q&A into a single site.
 
 **Live:** [bioguide.world](https://bioguide.world)
 
@@ -18,18 +19,18 @@ The core study resource. 15 topic sections with 127+ subtopic pages covering the
 
 | # | Section | Subtopics |
 |---|---------|-----------|
-| 1 | Cell & Molecular Biology | 23 pages — cell structure, membranes, cytoskeleton, DNA replication, transcription, translation, gene regulation, metabolism, biotechnology |
-| 2 | Animal Anatomy | 16 pages — comparative vertebrate systems (skeletal, muscular, nervous, circulatory, respiratory, digestive, excretory, reproductive, endocrine) |
-| 3 | Animal Physiology | 13 pages — homeostasis, thermoregulation, osmoregulation, gas exchange, immunity, neural/endocrine signaling |
-| 4 | Biosystematics | 7 pages — classification, phylogenetics, cladistics |
+| 1 | Cell & Molecular Biology | 23 pages: cell structure, membranes, cytoskeleton, DNA replication, transcription, translation, gene regulation, metabolism, biotechnology |
+| 2 | Animal Anatomy | 16 pages: comparative vertebrate systems (skeletal, muscular, nervous, circulatory, respiratory, digestive, excretory, reproductive, endocrine) |
+| 3 | Animal Physiology | 13 pages: homeostasis, thermoregulation, osmoregulation, gas exchange, immunity, neural/endocrine signaling |
+| 4 | Biosystematics | 7 pages: classification, phylogenetics, cladistics |
 | 5 | Plant Physiology | Water transport, mineral nutrition, photosynthesis, hormones, stress responses |
-| 6 | Plant Anatomy | 10 pages — tissues, roots, stems, leaves, flowers, fruits, seeds |
+| 6 | Plant Anatomy | 10 pages: tissues, roots, stems, leaves, flowers, fruits, seeds |
 | 7 | Genetics | Mendelian inheritance, linkage, population genetics, molecular genetics |
 | 8 | Ecology | Population, community, and ecosystem ecology |
-| 9 | Ethology | 9 pages — animal behavior, learning, communication, social behavior |
+| 9 | Ethology | 9 pages: animal behavior, learning, communication, social behavior |
 | 10 | Bioinformatics | Sequence alignment, phylogenetics, computational biology |
 | 11–14 | Practicals (P1–P4) | Lab techniques, wildlife ethology, plant biology, computational/quantitative methods |
-| 15 | Evolution | 11 pages — mechanisms, speciation, adaptation |
+| 15 | Evolution | 11 pages: mechanisms, speciation, adaptation |
 
 Each page follows a consistent structure: Overview, Key Concepts, Comparative Structures, Common Exam Questions, Visual Reference, and Practice Problems.
 
@@ -43,7 +44,7 @@ Competitive biology rounds with seasonal scoring. Includes timed block-based att
 
 ### BiOLab
 
-Open protocol archive for lab practicals — publish-immediately, community-submitted, with a report-and-remove moderation model.
+Open protocol archive for lab practicals: publish-immediately, community-submitted, with a report-and-remove moderation model.
 
 ### Doubts
 
@@ -59,7 +60,7 @@ Dedicated preparation guides for specific competitions: IBO, USABO, and INBO.
 
 ### BiOBytes
 
-Articles and testimonials — competition experiences from medalists (Belgium, Azerbaijan, Slovakia, Turkmenistan), lab recommendations, and topical articles.
+Articles and testimonials: competition experiences from medalists (Belgium, Azerbaijan, Slovakia, Turkmenistan), lab recommendations, and topical articles.
 
 ---
 
@@ -69,10 +70,11 @@ Articles and testimonials — competition experiences from medalists (Belgium, A
 |-------|------------|
 | Static Site Generator | [Hugo](https://gohugo.io/) v0.162+ (extended) |
 | Theme | [Hextra](https://github.com/imfing/hextra) (heavily customized) |
-| Backend | [Supabase](https://supabase.com/) — Auth, Postgres, Storage |
+| Backend | [Supabase](https://supabase.com/): Auth, Postgres, Storage |
 | Serverless Functions | Vercel Functions (11 API routes) |
 | Hosting | [Vercel](https://vercel.com/) |
-| Analytics | [Umami](https://umami.is/) (self-hosted, with Core Web Vitals) |
+| Analytics | [Umami](https://umami.is/) (self-hosted, Core Web Vitals + country stats), [PostHog](https://posthog.com/) (EU-hosted, product-analytics events only, no session recording), [Google Analytics 4](https://analytics.google.com/) |
+| Error Tracking | [Sentry](https://sentry.io/) (API layer only, opt-in via `SENTRY_DSN`) |
 | Styling | Tailwind CSS + 7,600+ lines of custom CSS |
 | Math Rendering | KaTeX (via Hugo's built-in support) |
 | Interactive Widgets | Plotly, Vanilla JS, SVG |
@@ -90,10 +92,10 @@ Articles and testimonials — competition experiences from medalists (Belgium, A
 
 ```
 content/
-  resources/          # Notes@BiOGuide — 15 topic sections, 127+ subtopics
-  papers/             # BiOrchive — past papers, questions, leaderboards
-  bioclash/           # BiOClash — competitive rounds
-  biolab/             # BiOLab — protocol archive
+  resources/          # Notes@BiOGuide: 15 topic sections, 127+ subtopics
+  papers/             # BiOrchive: past papers, questions, leaderboards
+  bioclash/           # BiOClash: competitive rounds
+  biolab/             # BiOLab: protocol archive
   doubts/             # Q&A
   dashboard/          # Study dashboard
   biobytes/           # Articles & testimonials
@@ -120,12 +122,30 @@ data/                 # Structured data (challenges, BiOClash config)
 ### Setup
 
 ```bash
-git clone https://github.com/nishit-kalani/bioguide.git
-cd bioguide
+git clone https://github.com/nk-008120/boguide.git
+cd boguide
 hugo server --disableFastRender
 ```
 
 Visit `http://localhost:1313`. Serverless functions and Supabase features require environment variables not included in the repo.
+
+---
+
+## Architecture and Security
+
+See [ARCHITECTURE.md](ARCHITECTURE.md) for how the stack fits together, the RLS-as-security-boundary model, and the reasoning behind BiOClash's anti-cheat design, BiOLab's open-archive model, and the ingestion pipeline. See [SECURITY.md](SECURITY.md) for the security posture and how to report a vulnerability.
+
+Two test suites verify RLS behavior against real Postgres (`tests/biolab/`, `tests/rls/`), both run in CI on every push and PR.
+
+---
+
+## Contributing
+
+Want to add a past paper to BiOrchive yourself, using git and your own Claude session? See
+[CONTRIBUTING_PAPERS.md](CONTRIBUTING_PAPERS.md) for the workflow, the licensing checks a
+paper has to clear first, and the prompts to use. If you would rather hand off a paper
+without touching the repository, use the in-browser form at
+[bioguide.world/papers/contribute/](https://bioguide.world/papers/contribute/) instead.
 
 ---
 
@@ -137,4 +157,9 @@ This project operates under a public AI transparency policy. All AI-assisted cha
 
 ## License
 
-Content is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Code components follow the Hextra theme's license terms.
+BiOGuide is dual-licensed:
+
+- **Code** (`layouts/`, `static/js/`, `api/`, `assets/css/`, `scripts/`) is licensed under [MIT](LICENSE-CODE.txt).
+- **Educational content** (`content/`, including `content/bioclash/`, and `data/`, including `data/bioclash/`) is licensed under [CC BY-NC-SA 4.0](LICENSE-CONTENT.txt). BiOClash content is additionally governed by the AI-Free policy in `AGENTS.md`.
+
+The vendored [Hextra](https://github.com/imfing/hextra) theme under `themes/hextra/` retains its own license terms.

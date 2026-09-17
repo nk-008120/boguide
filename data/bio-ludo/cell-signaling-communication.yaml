@@ -1,0 +1,93 @@
+topic: "cell-signaling-communication"
+topicName: "Cell Signaling & Communication"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "cell-signaling-communication-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Yeast cells of mating type a are genetically engineered to produce only mating factor α instead of the normal mating factor a. The gene for the mating factor receptor was unaltered. How will these engineered cells behave in terms of mating?"
+    options:
+      - key: "A"
+        text: "They will only mate with normal mating type a cells."
+      - key: "B"
+        text: "They will only mate with normal mating type α cells."
+      - key: "C"
+        text: "They will mate with each other or with normal mating type a cells, but not with normal mating type α cells."
+      - key: "D"
+        text: "They will only mate each other and not with normal mating type a or α cells."
+    answer: "C"
+    explanation: "Because the receptor for factor a is unaltered, cells that now secrete only factor α will still be recognized by, and can mate with, normal a cells (which have the α receptor) and with each other (since both partners in such a pairing present factor α to a receptors on cells that still make a); they simply can no longer be recognized as attractive by other α cells, since α does not signal to an α receptor."
+    sourceRef: "Campbell Biology 11e, Ch. 11 (Cell Communication)"
+
+  - id: "cell-signaling-communication-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "In yeast signal transduction, a yeast cell releases a mating factor, which ________."
+    options:
+      - key: "A"
+        text: "acts back on the same cell that secreted the mating factor, changing its development"
+      - key: "B"
+        text: "passes through the membranes of neighboring cells, binds to DNA, and initiates transcription"
+      - key: "C"
+        text: "binds to receptors on the membranes of other types of yeast cells"
+      - key: "D"
+        text: "diffuses through the membranes of distant cells, causing them to produce factors that initiate long-distance migrations"
+    answer: "C"
+    explanation: "In the yeast mating pathway, a cell secretes its mating factor into the environment, where it diffuses to and binds specific receptors on cells of the opposite mating type, triggering the signal transduction pathway that leads to mating."
+    sourceRef: "Campbell Biology 11e, Ch. 11 (Cell Communication)"
+
+  - id: "cell-signaling-communication-03"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "Many G protein-coupled receptors contain seven transmembrane α-helical domains. The amino end of the protein lies at the exterior of the plasma membrane. Loops of amino acids connect the helices either at the exterior surface or on the cytosolic surface of the membrane. The loop on the cytosolic side between helices 5 and 6 is usually substantially longer than the others. Where would you expect to find the carboxyl end of the protein?"
+    options:
+      - key: "A"
+        text: "at the exterior surface"
+      - key: "B"
+        text: "at the cytosolic surface"
+      - key: "C"
+        text: "connected with the loop at H5 and H6"
+      - key: "D"
+        text: "embedded in the phospholipid bilayer of the membrane"
+    answer: "B"
+    explanation: "The receptor's amino end starts extracellular and the chain crosses the membrane seven times (an odd number of crossings); starting extracellular and crossing seven times brings the chain back to the cytosolic side, so the carboxyl terminus ends up on the cytosolic face."
+    sourceRef: "Campbell Biology 11e, Ch. 11 (Cell Communication)"
+
+  - id: "cell-signaling-communication-04"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Protein phosphorylation is commonly involved with all of the following except"
+    options:
+      - key: "A"
+        text: "activation of receptor tyrosine kinases."
+      - key: "B"
+        text: "activation of protein kinase molecules."
+      - key: "C"
+        text: "activation of G protein-coupled receptors."
+      - key: "D"
+        text: "regulation of transcription by signaling molecules."
+    answer: "C"
+    explanation: "G protein-coupled receptors are activated by a conformational change triggered directly by ligand binding (which then promotes GDP-GTP exchange on the associated G protein), not by phosphorylation: unlike receptor tyrosine kinases (activated by autophosphorylation), downstream protein kinases, and many transcription factors, which are all commonly regulated by phosphorylation."
+    sourceRef: "Campbell Biology 11e, Ch. 11 (Cell Communication)"
+
+  - id: "cell-signaling-communication-05"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Binding of a signaling molecule to which type of receptor leads directly to a change in the distribution of substances on opposite sides of the membrane?"
+    options:
+      - key: "A"
+        text: "intracellular receptor"
+      - key: "B"
+        text: "G protein-coupled receptor"
+      - key: "C"
+        text: "phosphorylated receptor tyrosine kinase dimer"
+      - key: "D"
+        text: "ligand-gated ion channel"
+    answer: "D"
+    explanation: "Ligand-gated ion channels open or close a pore across the membrane the instant a signal binds, directly and immediately altering the distribution of ions between the two sides: unlike G protein-coupled or tyrosine kinase receptors, which act through a multistep intracellular cascade."
+    sourceRef: "Campbell Biology 11e, Ch. 11 (Cell Communication)"

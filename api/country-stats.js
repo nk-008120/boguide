@@ -1,4 +1,5 @@
 const { getAnonClient } = require('./_lib/supabaseAdmin');
+const { captureError } = require('./_lib/sentry');
 
 module.exports = async (req, res) => {
   try {
@@ -24,6 +25,7 @@ module.exports = async (req, res) => {
     });
   } catch (err) {
     console.error('country-stats failed:', err);
+    await captureError(err, { route: 'country-stats' });
     res.status(500).json({ error: err.message });
   }
 };

@@ -190,11 +190,7 @@
           return;
         }
 
-        // Attachments are a best-effort post-insert step -- the protocol
-        // itself already published successfully above, so an attachment
-        // failure here shouldn't strand the user on a stuck form; we still
-        // redirect to the new protocol either way.
-        msg.textContent = 'Protocol published — uploading attachment' + (selectedAttachments.length > 1 ? 's' : '') + '…';
+        msg.textContent = 'Protocol published, uploading attachment' + (selectedAttachments.length > 1 ? 's' : '') + '…';
 
         Promise.all(selectedAttachments.map(function (file) {
           var filename = (window.crypto && window.crypto.randomUUID ? window.crypto.randomUUID() : (Date.now() + '-' + Math.random().toString(36).slice(2))) + '.pdf';

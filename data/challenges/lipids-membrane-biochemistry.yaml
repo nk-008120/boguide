@@ -16,23 +16,23 @@ questions:
       E. They form a selectively permeable structure.
     solution: |
 
-      Answer – E
+      Answer: E
 
       Evaluating each statement,
 
-      A – IncorrectSolution - 
+      A: IncorrectSolution - 
       Phospholipids are amphipathic (having both hydrophilic and hydrophobic parts), not completely insoluble.
 
-      B – IncorrectSolution - 
+      B: IncorrectSolution - 
       They do not supply energy for transport; transport relies on electrochemical gradients or ATP.
 
-      C – IncorrectSolution - 
+      C: IncorrectSolution - 
       The hydrophobic tails face inward toward each other, away from water, rather than outward.
 
-      D – IncorrectSolution - 
+      D: IncorrectSolution - 
       They naturally assemble into a two-layered sheet (bilayer) rather than a single sheet.
 
-      E – CorrectSolution - 
+      E: CorrectSolution - 
       The plasma membrane formed by a phospholipid bilayer creates a hydrophobic core that restricts the passage of polar and charged molecules while allowing small, nonpolar molecules to pass freely.
   - id: 2
     difficulty: "medium"
@@ -48,25 +48,25 @@ questions:
       . The redness and swelling at the site of inflammation is reduced by prostaglandins.
     solution: |
 
-      Answer – A – T, B – T, C – T, D – F
+      Answer: A: T, B: T, C: T, D: F
 
       Evaluating each statement,
 
-      A – True
+      A: True
 
-      Solution – Since arachidonic acid has cis double bonds, it produces kinks which stops tight packing of lipids and increases fluidity.
+      Solution: Since arachidonic acid has cis double bonds, it produces kinks which stops tight packing of lipids and increases fluidity.
 
-      B – True
+      B: True
 
-      Solution – 4 cis bonds will cause a U-shaped structure.
+      Solution: 4 cis bonds will cause a U-shaped structure.
 
-      C – True
+      C: True
 
-      Solution – Since arachidonic acid has a U-shaped structure, it is easy to convert it into a cyclic structure.
+      Solution: Since arachidonic acid has a U-shaped structure, it is easy to convert it into a cyclic structure.
 
-      D – False
+      D: False
 
-      Solution – Prostaglandins do not reduce (on the contrary, it causes) redness and swelling at site of inflammation.
+      Solution: Prostaglandins do not reduce (on the contrary, it causes) redness and swelling at site of inflammation.
   - id: 3
     difficulty: "medium"
     source: "USABO"
@@ -80,9 +80,9 @@ questions:
       A 10.0 g sample of arachidonic acid (molecular weight: 304 g/mol) absorbs 33.3 g of iodine (molecular weight: 254 g/mol). How many carbon-carbon double bonds are present per molecule of arachidonic acid (nearest integer)?
     solution: |
 
-      Answer – 4
+      Answer: 4
 
-      Solution – 1 double bond absorbs 1 molecule of I2Number of double 
+      Solution: 1 double bond absorbs 1 molecule of I2Number of double 
       bonds  = 33.3 / 254 molMoles of arachidonic acid = 10.0 / 304 mol
       Number of double bonds in one molecule of arachidonic acid = (33.3 / 254) / (10 / 304) = 3.98 
       ≈ 4
@@ -108,31 +108,31 @@ questions:
       . Weaker hydrogen bonding and increased membrane permeability will be observed in organism P at higher temperatures.
     solution: |
 
-      Answer – A - T, B - F, C - F, D - F, E - T
+      Answer: A - T, B - F, C - F, D - F, E - T
 
       Evaluating each statement,
 
-      A – True
+      A: True
 
-      Solution – From Graph I, P has more fatty acids of lower molecular weight. In Graph II, P dominates in 15
+      Solution: From Graph I, P has more fatty acids of lower molecular weight. In Graph II, P dominates in 15
       °C where more membrane fluidity must be present to counteract effects of decreased temperature (rigidity). So, low weight fatty acids must provide more fluidity.
 
-      B – False
+      B: False
 
-      Solution – Unsaturated fatty acids are predominant in P from graph I but survival of P at 42
+      Solution: Unsaturated fatty acids are predominant in P from graph I but survival of P at 42
       °C is low in Graph II.
 
-      C – False
+      C: False
 
-      Solution – No such interpretation can be made from composition of membrane lipids.
+      Solution: No such interpretation can be made from composition of membrane lipids.
 
-      D – False
+      D: False
 
-      Solution – At higher temperatures, Q outcompetes P.
+      Solution: At higher temperatures, Q outcompetes P.
 
-      E – True
+      E: True
 
-      Solution – As temperature increases, the hydrogen bonds become weaker and fluidity of membrane increases.
+      Solution: As temperature increases, the hydrogen bonds become weaker and fluidity of membrane increases.
   - id: 5
     difficulty: "hard"
     source: "INBO"
@@ -150,17 +150,17 @@ questions:
       . Membranes with higher stearate content are likely to be less fluidic than those with higher oleate content.
     solution: |
 
-      Answer – D
+      Answer: D
 
       Evaluating each statement,
 
-      A – IncorrectSolution - 
+      A: IncorrectSolution - 
       Animals in sub-zero environments need to keep their membranes fluid to prevent them from freezing. They do this by having more double bonds (unsaturated fatty acids) and shorter chain lengths, not fewer.
 
-      B – IncorrectSolution - 
+      B: IncorrectSolution - 
       Homeotherms (warm-blooded animals) maintain a constant internal body temperature. Organisms living in hot, tropical climates generally require more saturated fatty acids (like stearate) to keep their membranes stable and prevent them from becoming too fluid at high temperatures.
 
-      C - IncorrectSolution – This is not a hard fast rule since terrestrial animals can have a wide variety of temperature ranges e.g. from arctic to desert conditions.
+      C - IncorrectSolution: This is not a hard fast rule since terrestrial animals can have a wide variety of temperature ranges e.g. from arctic to desert conditions.
 
-      D – CorrectSolution - 
+      D: CorrectSolution - 
       Stearate is a saturated fatty acid (18:0) with no double bonds. Its straight hydrocarbon chains pack tightly together, which increases membrane rigidity and decreases fluidity. Oleate is an unsaturated fatty acid (18:1) with a cis-double bond. This double bond creates a kink in the hydrocarbon chain, preventing tight packing and increasing fluidity. Therefore, a membrane with more stearate will naturally be less fluid than one rich in oleate.

@@ -15,9 +15,9 @@ questions:
       If probes have to be designed separately for each region, how many total possible oligonucleotide probes would have to be synthesized?
     solution: |
 
-      Ans – 32 sequences
+      Ans: 32 sequences
 
-      Solution – For region 1, total number of sequences = 1 * 2 * 1 * 2 * 2 * 2 = 16                   For region 2, total number of sequences = 1 * 2 * 1 * 2 * 2 * 1 * 2 = 16
+      Solution: For region 1, total number of sequences = 1 * 2 * 1 * 2 * 2 * 2 = 16                   For region 2, total number of sequences = 1 * 2 * 1 * 2 * 2 * 1 * 2 = 16
                          Total number of sequences = 16 + 16 = 32
   - id: 2
     difficulty: "medium"
@@ -40,7 +40,7 @@ questions:
 
       Ans -
 
-      Solution – DNA length is 21 kbp. Analyzing the fragment sizes from reaction 1 and 2, there must be 2 distinct sites for P and 2 distinct sites for Q. Thus, there are 4 restriction sites on DNA. Comparing reaction 1 and 3, one site for P must be present 9 kbp from one end of DNA (say 5’). Comparing reaction 2 and 4, one site for Q must be present 3 kbp from the other end (i.e. 3’) (not from 5’ end because 9 kbp fragment is observed in reaction 3). Comparing reaction 2 and 4, remaining site for Q is present 1.4 kbp away from the site of P which is 9 kbp from 5’ end and remaining site of P is present 4.8 kbp away from the site of P which is 9 kbp from 5’ end.
+      Solution: DNA length is 21 kbp. Analyzing the fragment sizes from reaction 1 and 2, there must be 2 distinct sites for P and 2 distinct sites for Q. Thus, there are 4 restriction sites on DNA. Comparing reaction 1 and 3, one site for P must be present 9 kbp from one end of DNA (say 5’). Comparing reaction 2 and 4, one site for Q must be present 3 kbp from the other end (i.e. 3’) (not from 5’ end because 9 kbp fragment is observed in reaction 3). Comparing reaction 2 and 4, remaining site for Q is present 1.4 kbp away from the site of P which is 9 kbp from 5’ end and remaining site of P is present 4.8 kbp away from the site of P which is 9 kbp from 5’ end.
   - id: 3
     difficulty: "medium"
     source: "INBO"
@@ -54,16 +54,16 @@ questions:
       . The sample is a 11 kb linear DNA with two unique EcoRI and HaeIII sites each.
     solution: |
 
-      A – Not PossibleSolution - 
+      A: Not PossibleSolution - 
       A circular DNA cut at a total of 4 unique sites would produce 4 fragments, not 3.
 
-      B – PossibleSolution - 
+      B: PossibleSolution - 
       For a 7 kb linear DNA, the EcoRI site is 2.5 kb from one end, while the HaeIII site can be 5.5 kb from the same reference end, giving fragments 2.5 kb, 3.0 kb, and 1.5 kb.
 
-      C – Not PossibleSolution - 
+      C: Not PossibleSolution - 
       Two adjacent restriction sites 1 kb apart would generate a 1 kb fragment in a complete digest, but no 1 kb band is observed.
 
-      D – PossibleSolution – A linear DNA with 4 unique sites will produce 5 fragments but only 3 are observed. Thus, some of the 5 fragments may be of same size. Indeed, 1.5 + 1.5 + 2.5 + 2.5 + 3 = 11.
+      D: PossibleSolution: A linear DNA with 4 unique sites will produce 5 fragments but only 3 are observed. Thus, some of the 5 fragments may be of same size. Indeed, 1.5 + 1.5 + 2.5 + 2.5 + 3 = 11.
   - id: 4
     difficulty: "hard"
     source: "IBO"
@@ -114,9 +114,9 @@ questions:
 
       Answer -
 
-      Solution – 
+      Solution: 
       Analyzing the fragments of single restriction enzyme digestion, we find out number of sites of each RE in YAC DNA, i.e., HindIII and XhoI has 2 sites while SacI has 1 site. RE map of 
       XhoI and SacI - Compare fragments of XhoI, SacI and XhoI+SacI digestion. 3 kb fragment is broken into 2.5 and 0.5 kb fragment and 4 kb fragment is broken into two 2 kb fragments. From here we can place SacI and XhoI sites in order.
       RE map of HindIII and SacI - Compare fragments of HindIII, SacI and HindIII + SacI digestion. 4.5 kb fragment is broken into 2 kb and 2.5 kb fragments and 3 kb fragment is broken into 0.5 kb and 2.5 kb fragments. From here we can place SacI and HindIII sites in order.Now, compare the two restriction maps obtained above to create final map of YAC DNA.
 
-      Tip – To check if the map is correct or not, find the fragments made by HindIII + XhoI digestion and match it with fragments obtained in gel.
+      Tip: To check if the map is correct or not, find the fragments made by HindIII + XhoI digestion and match it with fragments obtained in gel.

@@ -1,0 +1,93 @@
+topic: "sex-determination-sex-linked-inheritance"
+topicName: "Sex Determination & Sex-Linked Inheritance"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "sex-determination-sex-linked-inheritance-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "In cats, black fur color is determined by an X-linked allele; the other allele at this locus determines orange color. The heterozygote is tortoiseshell. What kinds of offspring would you expect from the cross of a black female and an orange male?"
+    options:
+      - key: "A"
+        text: "tortoiseshell females; tortoiseshell males"
+      - key: "B"
+        text: "black females; orange males"
+      - key: "C"
+        text: "tortoiseshell females; black males"
+      - key: "D"
+        text: "orange females; black males"
+    answer: "C"
+    explanation: "A black (X^B X^B) female crossed with an orange (X^O Y) male gives daughters that are X^B X^O (tortoiseshell, since both alleles are expressed in different cell patches) and sons that are X^B Y (black, since they get their only X from the black mother)."
+    sourceRef: "Campbell Biology 11e, Ch. 15 (The Chromosomal Basis of Inheritance)"
+
+  - id: "sex-determination-sex-linked-inheritance-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Why are males more often affected by sex-linked traits than females?"
+    options:
+      - key: "A"
+        text: "Male hormones such as testosterone often alter the effects of mutations on the X chromosome."
+      - key: "B"
+        text: "Female hormones such as estrogen often compensate for the effects of mutations on the X chromosome."
+      - key: "C"
+        text: "X chromosomes in males generally have more mutations than X chromosomes in females."
+      - key: "D"
+        text: "Males are hemizygous for the X chromosome."
+    answer: "D"
+    explanation: "Because males are hemizygous for the X chromosome (only one copy), a single recessive allele on their X is always expressed; females need two copies of the recessive allele to show the phenotype, making them less often affected."
+    sourceRef: "Campbell Biology 11e, Ch. 15 (The Chromosomal Basis of Inheritance)"
+
+  - id: "sex-determination-sex-linked-inheritance-03"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Red-green color blindness is a sex-linked recessive trait in humans. Two people with normal color vision have a color-blind son. What are the genotypes of the parents?"
+    options:
+      - key: "A"
+        text: "XnXn and XnY"
+      - key: "B"
+        text: "XNXN and XnY"
+      - key: "C"
+        text: "XNXN and XNY"
+      - key: "D"
+        text: "XNXn and XNY"
+    answer: "D"
+    explanation: "A color-blind son (X^n Y) must have received his X^n allele from his mother, who therefore must be a carrier (X^N X^n); the father, having normal vision, is X^N Y."
+    sourceRef: "Campbell Biology 11e, Ch. 15 (The Chromosomal Basis of Inheritance)"
+
+  - id: "sex-determination-sex-linked-inheritance-04"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Which of the following individuals will inherit an X-linked allele from a man who carries it?"
+    options:
+      - key: "A"
+        text: "all of his daughters"
+      - key: "B"
+        text: "half of his daughters"
+      - key: "C"
+        text: "all of his sons"
+      - key: "D"
+        text: "all of his children"
+    answer: "A"
+    explanation: "A man's single X chromosome (with all his X-linked alleles) is passed to every one of his daughters, since daughters must receive an X from their father; sons instead receive his Y chromosome."
+    sourceRef: "Campbell Biology 11e, Ch. 15 (The Chromosomal Basis of Inheritance)"
+
+  - id: "sex-determination-sex-linked-inheritance-05"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Cinnabar eye color is a sex-linked, recessive characteristic in fruit flies. If a female having cinnabar eyes is crossed with a wild-type male, what percentage of the F1 males will have cinnabar eyes?"
+    options:
+      - key: "A"
+        text: "0%"
+      - key: "B"
+        text: "25%"
+      - key: "C"
+        text: "50%"
+      - key: "D"
+        text: "100%"
+    answer: "D"
+    explanation: "A cinnabar-eyed female (X^c X^c) crossed with a wild-type male (X^+ Y) produces sons who get their only X from the mother, so all F1 males (X^c Y) show the recessive cinnabar phenotype."
+    sourceRef: "Campbell Biology 11e, Ch. 15 (The Chromosomal Basis of Inheritance)"

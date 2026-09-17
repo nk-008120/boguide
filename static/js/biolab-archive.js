@@ -1,4 +1,4 @@
-/* biolab-archive.js -- BiOLab protocol archive: browse/search list + protocol detail.
+/* biolab-archive.js, BiOLab protocol archive: browse/search list + protocol detail.
    Depends on: papers-auth.js (PapersAuth). Read-only except the report control. */
 (function () {
   'use strict';
@@ -6,7 +6,7 @@
   var root = document.getElementById('biolab-archive-root');
   if (!root) return;
 
-  // UI-layer cap only -- nothing in the DB enforces a max image count per
+  // UI-layer cap only, nothing in the DB enforces a max image count per
   // submission (biolab_submission_images has no such constraint).
   var MAX_RESULT_IMAGES = 5;
 
@@ -50,17 +50,11 @@
     return '<span class="papers-subject-tag biolab-archive-category-tag">' + CATEGORY_LABELS[category] + '</span>';
   }
 
-  // is_official is the ONE trust signal here -- never render this as a subtle
-  // color difference alone, always pair the icon+color with an explicit label.
-  // Cards use a shorter label (card grid columns are too narrow for the full
-  // phrase without overlapping the title); the detail page -- which has the
-  // room, and is what actually establishes trust before someone follows a
-  // protocol -- always gets the full, unambiguous phrase.
   function badgeHTML(isOfficial, compact) {
     if (isOfficial) {
       return '<span class="biolab-badge biolab-badge-official">✓ BiOGuide-Verified</span>';
     }
-    var label = compact ? '○ Community' : '○ Community — Not Staff-Reviewed';
+    var label = compact ? '○ Community' : '○ Community, Not Staff-Reviewed';
     return '<span class="biolab-badge biolab-badge-community">' + label + '</span>';
   }
 
@@ -107,8 +101,6 @@
     renderList();
   }
 
-  // ---------------------------------------------------------------- list --
-
   var allProtocols = [];
 
   function renderList() {
@@ -120,7 +112,7 @@
 
     client.from('biolab_public_protocols').select('*').limit(300).then(function (result) {
       if (result.error) {
-        statusEl.textContent = 'Could not load the archive right now — try refreshing.';
+        statusEl.textContent = 'Could not load the archive right now. try refreshing.';
         return;
       }
       allProtocols = result.data || [];
@@ -133,7 +125,7 @@
       listEl.hidden = false;
       applyFilters();
     }).catch(function () {
-      statusEl.textContent = 'Could not load the archive right now — try refreshing.';
+      statusEl.textContent = 'Could not load the archive right now. try refreshing.';
     });
 
     var debounceTimer = null;
@@ -183,7 +175,6 @@
     );
   }
 
-  // -------------------------------------------------------------- detail --
 
   function renderDetail(protocolSlug) {
     var statusEl = document.getElementById('biolab-archive-detail-status');
@@ -245,19 +236,10 @@
       attachFeedbackForm(p.id);
       attachResultForm(p.id);
     }).catch(function () {
-      statusEl.textContent = 'Could not load this protocol right now — try refreshing.';
+      statusEl.textContent = 'Could not load this protocol right now. try refreshing.';
     });
   }
 
-  // Attachments are a submission-time-only, mostly-absent feature -- most
-  // protocols won't have one, so absence renders nothing (no empty-state
-  // clutter), matching loadReferenceResult's pattern just below. Visibility
-  // rides entirely on RLS (biolab_protocol_attachments_select_public and
-  // the matching storage policy, migration 021): a removed protocol's
-  // detail page never reaches this call in the first place (renderDetail
-  // bails out earlier once biolab_public_protocols excludes it), and the
-  // storage policy independently has NO owner exception for this bucket
-  // (unlike biolab-captures) -- verified live, see this session's report.
   function loadAttachments(protocolId) {
     var el = document.getElementById('biolab-archive-attachments');
     client.from('biolab_protocol_attachments').select('file_path, file_name').eq('protocol_id', protocolId).order('created_at').then(function (result) {
@@ -290,7 +272,7 @@
     var el = document.getElementById('biolab-archive-reference');
     client.from('biolab_reference_results').select('*').eq('practical_id', protocolId).then(function (result) {
       var rows = (result && result.data) || [];
-      if (!rows.length) return; // absence is the common case -- no empty-state clutter
+      if (!rows.length) return; // absence is the common case, no empty-state clutter
       el.innerHTML = '<h2>BiOGuide Reference Result</h2>' + rows.map(function (r) {
         return (
           '<div class="biolab-archive-reference-card">' +
@@ -305,20 +287,37 @@
   function loadFeedback(protocolId) {
     var el = document.getElementById('biolab-archive-feedback');
     el.innerHTML = '<h2>Feedback</h2><p class="discussions-status">Loading feedback…</p>';
-    client.from('biolab_protocol_feedback_feed').select('*').eq('protocol_id', protocolId).limit(500).then(function (result) {
-      if (result.error) {
-        el.innerHTML = '<h2>Feedback</h2><p class="discussions-status">Could not load feedback right now.</p>';
-        return;
-      }
-      var rows = result.data || [];
-      var body = rows.length
-        ? '<div class="discussions-comments">' + rows.map(renderFeedbackComment).join('') + '</div>'
-        : '<p class="discussions-status">No feedback yet.</p>';
-      el.innerHTML = '<h2>Feedback</h2>' + body;
+    PapersAuth.getSession().then(function (session) {
+      var viewerUserId = session && session.user ? session.user.id : null;
+      client.from('biolab_protocol_feedback_feed').select('*').eq('protocol_id', protocolId).limit(500).then(function (result) {
+        if (result.error) {
+          el.innerHTML = '<h2>Feedback</h2><p class="discussions-status">Could not load feedback right now.</p>';
+          return;
+        }
+        var rows = result.data || [];
+        var body = rows.length
+          ? '<div class="discussions-comments">' + rows.map(function (c) { return renderFeedbackComment(c, viewerUserId); }).join('') + '</div>'
+          : '<p class="discussions-status">No feedback yet.</p>';
+        el.innerHTML = '<h2>Feedback</h2>' + body;
+
+        rows.forEach(function (c) {
+          if (c.user_id === viewerUserId) return;
+          attachReportForm(document.getElementById('biolab-archive-report-feedback-' + c.id), {
+            table: 'biolab_feedback_reports',
+            idField: 'feedback_id',
+            idValue: c.id,
+            buttonLabel: '🚩 Report',
+            nextPath: window.location.pathname + window.location.search
+          });
+        });
+      });
     });
   }
 
-  function renderFeedbackComment(c) {
+  function renderFeedbackComment(c, viewerUserId) {
+    var reportSlot = (c.user_id !== viewerUserId)
+      ? '<div id="biolab-archive-report-feedback-' + c.id + '" class="biolab-archive-report-wrap biolab-archive-report-wrap-sm"></div>'
+      : '';
     return (
       '<div class="discussions-comment">' +
       '<div class="discussions-thread-meta">' +
@@ -329,6 +328,7 @@
         '<span>' + formatDate(c.created_at) + '</span>' +
       '</div>' +
       '<p class="discussions-comment-body">' + escapeHTML(c.comment) + '</p>' +
+      reportSlot +
       '</div>'
     );
   }
@@ -362,12 +362,6 @@
           return;
         }
 
-        // Own submissions come from a direct biolab_submissions select,
-        // which no longer carries any image data (image_path was dropped
-        // from that table in migration 021) -- fetch this user's own
-        // images separately, keyed by submission_id. RLS on
-        // biolab_submission_images allows the owner to see their own rows
-        // regardless of publish state, same as the submission row itself.
         var ownIds = own.map(function (s) { return s.id; });
         var ownImagesPromise = ownIds.length
           ? client.from('biolab_submission_images').select('submission_id, image_path, position').in('submission_id', ownIds)
@@ -388,10 +382,10 @@
           });
           own.forEach(function (s) { s.images = imagesBySubmission[s.id] || []; });
           // others come from biolab_public_submissions, which already
-          // aggregates images as a jsonb array (021) -- just guard null.
+          // aggregates images as a jsonb array (021), just guard null.
           others.forEach(function (s) { s.images = s.images || []; });
 
-          // One batched signed-URL request for every image on the page --
+          // One batched signed-URL request for every image on the page,
           // the bucket is private, so a plain public URL would 403.
           var allPaths = [];
           own.concat(others).forEach(function (s) {
@@ -450,7 +444,7 @@
   }
 
   // is_removed/is_published visibility is a SUBMISSION-level concept only
-  // (per the task's own load-bearing constraint) -- images inherit their
+  // (per the task's own load-bearing constraint) images inherit their
   // parent submission's visibility wholesale via biolab_submission_images'
   // RLS; there is no per-image moderation or per-image publish toggle here.
   function renderImageGallery(images, urlByPath) {
@@ -479,15 +473,15 @@
 
     var tags = '';
     if (s.is_verified) tags += '<span class="biolab-badge biolab-badge-official biolab-badge-sm">✓ BiOGuide-Verified</span>';
-    if (isOwn) tags += '<span class="biolab-archive-visibility-tag ' + (s.is_published ? 'is-public' : 'is-private') + '">' + (s.is_published ? 'Public' : 'Private — only you can see this') + '</span>';
+    if (isOwn) tags += '<span class="biolab-archive-visibility-tag ' + (s.is_published ? 'is-public' : 'is-private') + '">' + (s.is_published ? 'Public' : 'Private. only you can see this') + '</span>';
     // is_removed is staff-only (set from the Supabase dashboard, never
-    // client-writable -- see migration 020); own query is a direct table
+    // client-writable, see migration 020); own query is a direct table
     // select so a removed row still reaches the owner, just tagged.
-    if (isOwn && s.is_removed) tags += '<span class="biolab-archive-visibility-tag is-removed">Removed by staff — a report against this was actioned</span>';
+    if (isOwn && s.is_removed) tags += '<span class="biolab-archive-visibility-tag is-removed">Removed by staff. a report against this was actioned</span>';
 
     var reportSlot = (!isOwn) ? '<div id="biolab-archive-report-sub-' + s.id + '" class="biolab-archive-report-wrap biolab-archive-report-wrap-sm"></div>' : '';
     // is_published is the one field a submitter can change after insert
-    // (grant update (is_published) on biolab_submissions -- see 015); this
+    // (grant update (is_published) on biolab_submissions, see 015); this
     // toggle is the only UI for it, own results only.
     var toggleSlot = isOwn
       ? '<button type="button" class="biolab-archive-publish-toggle" data-sub-id="' + s.id + '" data-published="' + (s.is_published ? '1' : '0') + '">' + (s.is_published ? 'Make private' : 'Make public') + '</button>'
@@ -497,7 +491,7 @@
       '<div class="biolab-archive-result-card">' +
       '<div class="biolab-archive-result-top">' +
         '<div class="biolab-archive-result-who">' + avatar + flag + '<span>' + escapeHTML(name) + '</span></div>' +
-        '<span class="biolab-archive-result-value">' + escapeHTML(s.result_value != null ? String(s.result_value) : '—') + (s.result_unit ? ' ' + escapeHTML(s.result_unit) : '') + '</span>' +
+        '<span class="biolab-archive-result-value">' + escapeHTML(s.result_value != null ? String(s.result_value) : '-') + (s.result_unit ? ' ' + escapeHTML(s.result_unit) : '') + '</span>' +
       '</div>' +
       (tags ? '<div class="biolab-archive-result-tags">' + tags + '</div>' : '') +
       renderImageGallery(s.images, urlByPath) +
@@ -507,8 +501,6 @@
       '</div>'
     );
   }
-
-  // ------------------------------------------------------------- report --
 
   function attachReportForm(container, opts) {
     if (!container) return;
@@ -548,13 +540,13 @@
           client.from(opts.table).insert(row).then(function (result) {
             if (result.error) {
               if (result.error.code === '23505') {
-                msg.textContent = "You've already reported this — thanks, our team will review it.";
+                msg.textContent = "You've already reported this. thanks, our team will review it.";
               } else {
                 msg.textContent = result.error.message;
               }
               return;
             }
-            formWrap.innerHTML = '<p class="discussions-status">Reported — thanks, our team will review it.</p>';
+            formWrap.innerHTML = '<p class="discussions-status">Reported. thanks, our team will review it.</p>';
             btn.disabled = true;
           });
         });
@@ -562,7 +554,6 @@
     });
   }
 
-  // ---------------------------------------------------- submit feedback --
 
   function attachFeedbackForm(protocolId) {
     var container = document.getElementById('biolab-archive-feedback-form');
@@ -588,7 +579,7 @@
         var submitBtn = form.querySelector('button[type="submit"]');
         submitBtn.disabled = true;
         msg.textContent = 'Posting…';
-        // user_id intentionally omitted -- biolab_protocol_feedback.user_id
+        // user_id intentionally omitted, biolab_protocol_feedback.user_id
         // defaults to auth.uid() and RLS forces it; a spoofed user_id is
         // rejected (verified in hidden-ex-features/biolab-rls-tests/test-submit.mjs).
         client.from('biolab_protocol_feedback').insert({ protocol_id: protocolId, comment: comment }).then(function (result) {
@@ -605,13 +596,6 @@
     });
   }
 
-  // ------------------------------------------------------ submit result --
-
-  // Re-encoding through <canvas> drops all EXIF metadata (GPS, device
-  // info, timestamps) by construction -- canvas.toBlob() never carries it
-  // through -- which is the "EXIF stripped from all uploads" baseline
-  // locked for this feature. Also downsizes to a sane max dimension so
-  // captures don't balloon the biolab-captures bucket.
   function stripExifToJpegBlob(file) {
     return new Promise(function (resolve, reject) {
       var img = new Image();
@@ -644,9 +628,6 @@
     });
   }
 
-  // Path convention {user_id}/{filename}, matching the Storage RLS in
-  // 015/016 (auth.uid()::text = foldername(name)[1] gates both insert and
-  // the owner-read policy; the published-read policy in 016 is separate).
   function uploadCapture(userId, blob) {
     var filename = (window.crypto && window.crypto.randomUUID ? window.crypto.randomUUID() : (Date.now() + '-' + Math.random().toString(36).slice(2))) + '.jpg';
     var path = userId + '/' + filename;
@@ -656,10 +637,6 @@
     });
   }
 
-  // Calls the Session 2 edge function (supabase/functions/biolab-calibrate-delta).
-  // As of this session it may not be deployed yet -- callers must handle
-  // rejection gracefully and fall back to manual entry, not treat this as
-  // a hard dependency.
   function callCalibrateEdgeFunction(dataUrl, accessToken) {
     var url = window.__SUPABASE_URL.replace(/\/$/, '') + '/functions/v1/biolab-calibrate-delta';
     return fetch(url, {
@@ -667,7 +644,7 @@
       headers: {
         'Content-Type': 'application/json',
         'apikey': window.__SUPABASE_ANON_KEY,
-        'Authorization': 'Bearer ' + (accessToken || window.__SUPABASE_ANON_KEY)
+        'Authorization': 'Bearer ' + accessToken
       },
       body: JSON.stringify({ image: dataUrl })
     }).then(function (res) {
@@ -695,16 +672,16 @@
         '<input type="text" name="result_unit" maxlength="40" placeholder="e.g. mmol/L">' +
 
         '<div class="biolab-archive-capture-box">' +
-          '<label class="biolab-submit-label">Photos <span class="biolab-feedback-hint">(optional, up to ' + MAX_RESULT_IMAGES + ' -- add one at a time or select several at once; EXIF metadata is stripped from every photo before upload)</span></label>' +
-          '<p class="biolab-archive-framing-note">📷 Before you take or choose your photos: frame each one tight on the sample/card only. Don\'t include your face, other people, or anything in the background (room, whiteboard, ID badge, etc.) that could identify you or your location -- this applies to every photo you attach, not just the first.</p>' +
+          '<label class="biolab-submit-label">Photos <span class="biolab-feedback-hint">(optional, up to ' + MAX_RESULT_IMAGES + ', add one at a time or select several at once; EXIF metadata is stripped from every photo before upload)</span></label>' +
+          '<p class="biolab-archive-framing-note">📷 Before you take or choose your photos: frame each one tight on the sample/card only. Don\'t include your face, other people, or anything in the background (room, whiteboard, ID badge, etc.) that could identify you or your location, this applies to every photo you attach, not just the first.</p>' +
           '<input type="file" accept="image/*" capture="environment" multiple class="biolab-archive-capture-input">' +
           '<div class="biolab-archive-capture-preview" hidden></div>' +
           '<button type="button" class="biolab-archive-calibrate-btn" hidden>🔬 Run guided calibration on the first photo</button>' +
           '<div class="biolab-archive-calibrate-status"></div>' +
-          '<p class="biolab-archive-capture-note">For protocols with a colorimetric (color-based) readout, guided calibration reads reference-card deltas from your first photo to help you determine your result -- it doesn\'t compute the final value for you, since that depends on your own assay\'s calibration curve. Any other photos you attach are just extra reference images, not calibrated.</p>' +
+          '<p class="biolab-archive-capture-note">For protocols with a colorimetric (color-based) readout, guided calibration reads reference-card deltas from your first photo to help you determine your result, it doesn\'t compute the final value for you, since that depends on your own assay\'s calibration curve. Any other photos you attach are just extra reference images, not calibrated.</p>' +
         '</div>' +
 
-        '<p class="biolab-archive-privacy-note">Your result stays private -- visible only to you -- until you choose to make it public from the list above.</p>' +
+        '<p class="biolab-archive-privacy-note">Your result stays private, visible only to you, until you choose to make it public from the list above.</p>' +
         '<button type="submit" class="papers-nav-btn papers-nav-next">Submit result</button>' +
         '<div class="discussions-msg biolab-archive-result-msg"></div>' +
         '</form>';
@@ -716,7 +693,7 @@
       var calibrateBtn = container.querySelector('.biolab-archive-calibrate-btn');
       var calibrateStatus = container.querySelector('.biolab-archive-calibrate-status');
 
-      // { blob: Blob, previewUrl: string }[], in selection/upload order --
+      // { blob: Blob, previewUrl: string }[], in selection/upload order,
       // index 0 is "the calibration photo" (see the calibrate button above).
       var selectedImages = [];
       var calibrationInputs = {};
@@ -764,7 +741,7 @@
           return;
         }
         if (files.length > room) {
-          calibrateStatus.textContent = 'Only added ' + room + ' more photo' + (room === 1 ? '' : 's') + ' -- ' + MAX_RESULT_IMAGES + ' max.';
+          calibrateStatus.textContent = 'Only added ' + room + ' more photo' + (room === 1 ? '' : 's') + ', ' + MAX_RESULT_IMAGES + ' max.';
           files = files.slice(0, room);
         }
 
@@ -794,10 +771,10 @@
           var deltaText = (calibrationInputs.delta_r != null)
             ? ('Δr=' + calibrationInputs.delta_r + ' Δg=' + calibrationInputs.delta_g + ' Δb=' + calibrationInputs.delta_b)
             : 'Calibration data captured.';
-          calibrateStatus.textContent = 'Quality: ' + (data.quality || 'unknown') + ' — ' + deltaText + '. These values will be attached to your submission.';
+          calibrateStatus.textContent = 'Quality: ' + (data.quality || 'unknown') + ', ' + deltaText + '. These values will be attached to your submission.';
           calibrateBtn.disabled = false;
         }).catch(function (err) {
-          calibrateStatus.textContent = 'Guided calibration isn\'t available right now (' + err.message + ') — you can still submit a manual result and attach your photos.';
+          calibrateStatus.textContent = 'Guided calibration isn\'t available right now (' + err.message + '), you can still submit a manual result and attach your photos.';
           calibrateBtn.disabled = false;
         });
       });
@@ -810,7 +787,7 @@
         submitBtn.disabled = true;
         msg.textContent = 'Submitting…';
 
-        // Upload every selected image first (order preserved -- Promise.all
+        // Upload every selected image first (order preserved, Promise.all
         // resolves in input order regardless of completion order), THEN
         // insert the submission row, THEN insert one biolab_submission_images
         // row per uploaded path. Images must come after the submission
@@ -821,7 +798,7 @@
           : Promise.resolve([]);
 
         uploadPromise.then(function (imagePaths) {
-          // user_id and is_published intentionally omitted -- user_id
+          // user_id and is_published intentionally omitted, user_id
           // defaults to auth.uid() and RLS forces it (verified in
           // test-submit.mjs); is_published defaults to false (private)
           // and is only ever changed later via the Make public toggle.
@@ -848,11 +825,11 @@
           form.reset();
           renderCapturePreview();
           calibrationInputs = {};
-          msg.textContent = 'Submitted — private by default, see it in the list above.';
+          msg.textContent = 'Submitted, private by default, see it in the list above.';
           loadResults(protocolId);
         }).catch(function (err) {
           submitBtn.disabled = false;
-          msg.textContent = (err && err.message) || 'Could not submit that result — try again.';
+          msg.textContent = (err && err.message) || 'Could not submit that result, try again.';
         });
       });
     });

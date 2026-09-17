@@ -1,0 +1,75 @@
+topic: "speciation-and-reproductive-isolation"
+topicName: "Speciation & Reproductive Isolation"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "speciation-and-reproductive-isolation-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Many songbirds breed in North America in the spring and summer, and then migrate to Central and South America in the fall. They spend the winter in these warmer areas where they feed and prepare for the spring migration north and another breeding season. Two hypothetical species of sparrow, A and B, overwinter together in mixed flocks in Costa Rica. In spring, species A goes to the east coast of North America, and species B goes to the west coast. What can you say about the isolating mechanisms of these two species?"
+    options:
+      - key: "A"
+        text: "They must have strong postzygotic isolating mechanisms to spend winter in such close proximity."
+      - key: "B"
+        text: "They must have strong prezygotic isolating mechanisms to spend winter in such close proximity."
+      - key: "C"
+        text: "These two species mate in different climates."
+      - key: "D"
+        text: "Reinforcement must be occurring when they winter together."
+    answer: "C"
+    explanation: "Breeding on different coasts of North America means the two species simply never encounter each other during the mating season: a form of prezygotic isolation driven by differing habitat/climate use rather than a postzygotic barrier."
+    sourceRef: "Campbell Biology 11e, Ch. 24 (The Origin of Species)"
+
+  - id: "speciation-and-reproductive-isolation-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "Use the following information to answer the question. Two populations of birds with somewhat different coloration live on opposite sides of a peninsula. The habitat between the populations is not suitable for these birds. When birds from the two populations are brought together, they produce young whose appearance is intermediate between the two parents. These offspring will breed with each other or with birds from either parent population, and all offspring of these pairings appear intermediate to various degrees. What keeps the two populations separate?"
+    options:
+      - key: "A"
+        text: "temporal reproductive isolation"
+      - key: "B"
+        text: "lack of hybrid viability"
+      - key: "C"
+        text: "behavior isolates reproductive activities"
+      - key: "D"
+        text: "habitat isolation"
+    answer: "D"
+    explanation: "Since the unsuitable habitat between the two populations prevents individuals from ever meeting to mate, while hybrids are fully viable and fertile when brought together artificially, the isolating mechanism here is purely habitat isolation, not any barrier to successful mating itself."
+    sourceRef: "Campbell Biology 11e, Ch. 24 (The Origin of Species)"
+
+  - id: "speciation-and-reproductive-isolation-03"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "Use the following information to answer the question. About 3 million years ago, the Isthmus of Panama (a narrow strip of land connecting North and South America) formed, dividing marine organisms into Pacific and Caribbean populations. Researchers have examined species of snapping shrimp on both sides of the isthmus. Based on the morphological species concept, there appeared to be seven pairs of species, with one species of each pair in the Pacific and the other in the Caribbean. The different species pairs live at somewhat different depths in the ocean. Using mitochondrial DNA sequences, the researchers estimated phylogenies and found that each of these species pairs, separated by the isthmus, were indeed each other's closest relatives. The researchers investigated mating in the lab and found that many species pairs were not very interested in courting with each other, and any that did mate almost never produced fertile offspring. (Reference: Y. Kondo and A. Kashiwagi. 2004. Experimentally induced autotetraploidy and allotetraploidy in two Japanese pond frogs. Journal of Herpetology 38(3):381-92.) If the isthmus formed gradually rather than suddenly, what pattern of genetic divergence would you expect to find in these species pairs?"
+    options:
+      - key: "A"
+        text: "similar percentages of difference in DNA sequence between all pairs of sister species"
+      - key: "B"
+        text: "greater percentage of difference in DNA sequence between species that inhabit deep water than between species that inhabit shallow water"
+      - key: "C"
+        text: "greater percentage of difference in DNA sequence between species that inhabit shallow water than between species that inhabit deep water"
+      - key: "D"
+        text: "smaller percentage of difference DNA sequence between species that inhabit than between shallow water"
+    answer: "B"
+    explanation: "A gradual rise of the isthmus would not cut off every depth zone at once: shallow- and deep-water channels would have stayed connected for different lengths of time as the land bridge slowly closed, so pairs of sister species living at different depths would carry different amounts of time-since-isolation, and therefore different amounts of sequence divergence, rather than the uniform divergence expected from one single, sudden separation event (option A). This is the pattern the researchers this question is based on (Knowlton et al.) actually documented, with deep-water sister pairs showing greater sequence divergence than shallow-water pairs."
+    sourceRef: "Campbell Biology 11e, Ch. 24 (The Origin of Species)"
+
+  - id: "speciation-and-reproductive-isolation-04"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Which of the following factors would not contribute to allopatric speciation?"
+    options:
+      - key: "A"
+        text: "The separated population is small, and genetic drift occurs."
+      - key: "B"
+        text: "The isolated population is exposed to different selection pressures than the ancestral population."
+      - key: "C"
+        text: "Different mutations begin to distinguish the gene pools of the separated populations."
+      - key: "D"
+        text: "Gene flow between the two populations is extensive."
+    answer: "D"
+    explanation: "Extensive gene flow between two separating populations continually mixes their gene pools back together, directly opposing the genetic divergence that allopatric speciation requires: so it works against, rather than contributes to, allopatric speciation."
+    sourceRef: "Campbell Biology 11e, Ch. 24 (The Origin of Species)"

@@ -144,6 +144,10 @@ Our chain of command is somewhat summarised by <a href = "https://drive.google.c
 
 ## The People Behind This
 
+As of August 8th, we were just a one-man team until production.
+
+But now, we are proud to announce, that we are a team of more than 10 people from all over the world, actively working to improve BiOGuide.
+
 {{< team-member name="Nishit Kalani" role="Founder, Owner & Managing Partner" avatar="/nkavat.jpg" since="February 8th 2026">}}
 Nishit Here (: <br>
 I'm a high schooler in India who kept wishing a resource like this already existed while preparing for the International Biology Olympiad (Silver, 2026), so I built it myself. Astronomy was actually where I started (Gold, IOAA Jr 2025), and I've since qualified for the national selection camps in both Chemistry, Astronomy and Mathematics too; though biology is the one that stuck, which is probably why I can't help connecting it back to the other two more than a syllabus usually allows. Outside this site, I split my time between chess, code,piano, tabla, violin and the occasional very average sketch. I have solo-built the entire technical side of the website, so if something on here doesn't make sense or you just want to talk shop, find me at r6394175@gmail. If you find which star is in the image above, begin the mail with it's name, and wait for a surprise!
@@ -159,9 +163,6 @@ Currently Working on: BiOClash: The first non partner-class team member with acc
 {{< team-member name="Soumil Maity" role="Junior Partner (Louis Litt Class)" avatar="/smavat.jpg" since="August 19th 2026">}}
 Hi! I’m Soumil,<br> member of the Indian team and a Silver medalist at the 2026 IBO. Biology has always intrigued me, even though astronomy was what got me into Olympiads. You can expect me to remember important biochemical pathways, but will not be able to tell you what I had for lunch. If you don’t find me toiling away preparing for NEET, you can find me playing badminton, football, cricket or goofing around with my friends (at the goated DAV ground). I can already envision the 'aura' of BiOGuide among future biologists. Have fun exploring the what, why and how of life (perhaps with the occasional torment of the questions)!!
 Currently Working On: Making the Notes@BiOGuide a better place by collecting a vast pool of interesting previous problems!
-{{< /team-member >}}
-{{< team-member name="Bhanav Namboodiri" role="Associate (Mike Ross Class)" avatar="/bnavat.jpg" since="August 19th 2026">}}
-Currently Working On: Increasing the output of BiOGuide by proficiently handling the BiOBytes initiative! Making BiOGuide fun, and much more than just a learning platform for Biology Olympiads
 {{< /team-member >}}
 {{< team-member name="Saisha Jain" role="Associate (Mike Ross Class)" avatar="/sjavat.png" since="August 19th 2026">}}
 print("Hello, World!")<br>
@@ -183,10 +184,20 @@ Beyond biology, I enjoy just about anything that scratches that permanent itch i
 
 Currently Working on: Content moderation and protocol support, and producing social media content for bioguideofficial for outreach.
 {{< /team-member >}}
+{{< team-member name="Ulukbek" role="Associate (Mike Ross Class)" avatar="/uavat.png" since="September 18th 26">}}
+Hi, I’m Ulukbek! I’m currently in 11th grade, and I want to become a biochemist, though I’m also interested in computational biology and plants. I started my biology journey in 7th grade and made countless mistakes - even ones as big as refusing help and guidance from the best biologist in my country. I thought studying from books on my own would be better. (WHYYY 😭😭???)
+
+Well, BioGuide should help you avoid these kinds of mistakes and set you on the right track because its materials have been collected by people who have already completed this journey. Even now, after winning a bronze medal at the IBO, I still see BioGuide as a helpful website for me. So, it should not only help you reach the IBO but also help you win a medal!
+
+Besides being a biology enjoyer, I’m also a long-distance runner and an avid fan of RTS and TBS games.
+
+I’m currently working on establishing a pathway for Kyrgyz students to reach the IBO - basically, creating a guide to my country’s National Biology Olympiad.
+{{< /team-member >}}
+
 ## Frequently Asked Questions
 
 {{< faq-item q="Is BioGuide free to use?" >}}
-Yes, completely. The content is published under a CC BY-NC-SA 4.0 license: free to read, share, and adapt for non-commercial use, with attribution. See [Licensing](#licensing) below for the details.
+Yes, completely. Educational content is published under a CC BY-NC-SA 4.0 license: free to read, share, and adapt for non-commercial use, with attribution. Source code is published separately under the MIT License. See [Licensing](#licensing) below for the details.
 {{< /faq-item >}}
 
 {{< faq-item q="Which exams does BioGuide cover?" >}}
@@ -207,4 +218,4 @@ We encrypt your login information using industry standards. There is no reason t
 
 ## Licensing
 
-This website is published under a CC BY-NC-SA 4.0 license. A future BUSL-1.1 license is under consideration for a handful of more ambitious features planned much further down the line. Don't worry, the website will remain non-profit regardless.
+BiOGuide is dual-licensed. Educational content is published under a CC BY-NC-SA 4.0 license. Source code is published separately under the MIT License.

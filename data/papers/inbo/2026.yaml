@@ -129,7 +129,7 @@ rounds:
               - {key: "c", text: "GA3 cannot override the effects of light and lead to hypocotyl length stimulation."}
               - {key: "d", text: "Results are indicative of numerical additive inhibitory effect of Pfr and stimulating effect of GA3."}
             answer: "d"
-            explanation: "In etiolated (dark-grown) seedlings, hypocotyls elongate significantly. Light (via phytochrome Pfr) inhibits hypocotyl elongation, while GA3 promotes it. The graph shows that the combined effect of light inhibition and GA3 stimulation is additive rather than synergistic -- the GA3-induced elongation in light equals the sum of GA3's stimulating effect minus light's inhibitory effect. GA3 is not essential (elongation occurs without it in the dark), and GA3 can partially override light's inhibitory effect."
+            explanation: "In etiolated (dark-grown) seedlings, hypocotyls elongate significantly. Light (via phytochrome Pfr) inhibits hypocotyl elongation, while GA3 promotes it. The graph shows that the combined effect of light inhibition and GA3 stimulation is additive rather than synergistic : the GA3-induced elongation in light equals the sum of GA3's stimulating effect minus light's inhibitory effect. GA3 is not essential (elongation occurs without it in the dark), and GA3 can partially override light's inhibitory effect."
 
       - id: q7
         number: "Q7"
@@ -209,7 +209,7 @@ rounds:
               - {key: "c", text: "Oxygen consumption, Evaporative water loss, Metabolic heat production"}
               - {key: "d", text: "Peripheral blood flow, Evaporative water loss, Oxygen consumption"}
             answer: "b"
-            explanation: "In the classic homeotherm thermoregulation diagram: below the lower critical temperature (LCT), oxygen consumption (metabolic heat production) increases to compensate for heat loss -- this is curve P. Within the thermoneutral zone, peripheral blood flow (vasodilation/vasoconstriction) adjusts to regulate heat loss -- this is curve Q. Above the upper critical temperature (UCT), evaporative water loss (sweating/panting) becomes the primary cooling mechanism and increases sharply -- this is curve R."
+            explanation: "In the classic homeotherm thermoregulation diagram: below the lower critical temperature (LCT), oxygen consumption (metabolic heat production) increases to compensate for heat loss : this is curve P. Within the thermoneutral zone, peripheral blood flow (vasodilation/vasoconstriction) adjusts to regulate heat loss : this is curve Q. Above the upper critical temperature (UCT), evaporative water loss (sweating/panting) becomes the primary cooling mechanism and increases sharply : this is curve R."
 
       - id: q12
         number: "Q12"
@@ -269,7 +269,7 @@ rounds:
               - {key: "c", text: "P: Loss of one sex chromosome during gametogenesis -> monosomy with female phenotype due to absence of SRY; Q: Gain of one sex chromosome during gametogenesis -> presence of Y initiates male development but extra X causes partial feminization"}
               - {key: "d", text: "P: Duplication of X chromosome -> overexpression; Q: Loss of one X -> male by default"}
             answer: "c"
-            explanation: "Individual P has 45 chromosomes, 0 Barr bodies, and no SRY -- consistent with 45,X (Turner syndrome). The single X (no Barr body, since Barr bodies = number of X chromosomes minus 1) and absent SRY explain the female phenotype with rudimentary ovarian development. Individual Q has 47 chromosomes, 1 Barr body, and SRY present -- consistent with 47,XXY (Klinefelter syndrome). The Y chromosome's SRY gene drives male development, but the extra X (1 Barr body = 2 X chromosomes) causes dosage imbalance leading to gynecomastia and small testes. Option (c) correctly identifies nondisjunction during gametogenesis as the mechanism for both."
+            explanation: "Individual P has 45 chromosomes, 0 Barr bodies, and no SRY : consistent with 45,X (Turner syndrome). The single X (no Barr body, since Barr bodies = number of X chromosomes minus 1) and absent SRY explain the female phenotype with rudimentary ovarian development. Individual Q has 47 chromosomes, 1 Barr body, and SRY present : consistent with 47,XXY (Klinefelter syndrome). The Y chromosome's SRY gene drives male development, but the extra X (1 Barr body = 2 X chromosomes) causes dosage imbalance leading to gynecomastia and small testes. Option (c) correctly identifies nondisjunction during gametogenesis as the mechanism for both."
 
       - id: q15
         number: "Q15"
@@ -289,7 +289,7 @@ rounds:
               - {key: "c", text: "It is likely that the storage of food as fat is energetically more demanding than hoarding."}
               - {key: "d", text: "The birds may be adopting a strategy of reduction in energy requirements through prolonged fat-storing torpor during times of reduced food resource availability."}
             answer: "c"
-            explanation: "The data show that when food availability is unpredictable, birds increase hoarding behavior rather than increasing fat storage. This suggests that hoarding is the preferred buffer strategy under uncertainty. Fat storage is metabolically costly -- maintaining adipose tissue requires energy, increases predation risk (heavier body), and the conversion of food to fat and back is thermodynamically inefficient. Hoarding, by contrast, stores food externally with lower metabolic overhead, making it the less energetically demanding strategy."
+            explanation: "The data show that when food availability is unpredictable, birds increase hoarding behavior rather than increasing fat storage. This suggests that hoarding is the preferred buffer strategy under uncertainty. Fat storage is metabolically costly : maintaining adipose tissue requires energy, increases predation risk (heavier body), and the conversion of food to fat and back is thermodynamically inefficient. Hoarding, by contrast, stores food externally with lower metabolic overhead, making it the less energetically demanding strategy."
 
       - id: q16
         number: "Q16"
@@ -369,7 +369,7 @@ rounds:
               - {key: "c", text: "Dove, Hawk, Dove, Dove"}
               - {key: "d", text: "Hawk, Dove, Hawk, Dove"}
             answer: "a"
-            explanation: "In the Hawk-Dove game framework: P (the intruder) always retreats after the spiral flight, adopting the Dove strategy. Q (the territory owner) holds the territory and the intruder always yields to it, so Q plays Hawk. In the second experiment, R is released into S's territory without either noticing the other. Since both R and S believe they are the rightful owner, both adopt the Hawk strategy (neither yields initially), leading to an escalated contest -- this is the key prediction when ownership is ambiguous."
+            explanation: "In the Hawk-Dove game framework: P (the intruder) always retreats after the spiral flight, adopting the Dove strategy. Q (the territory owner) holds the territory and the intruder always yields to it, so Q plays Hawk. In the second experiment, R is released into S's territory without either noticing the other. Since both R and S believe they are the rightful owner, both adopt the Hawk strategy (neither yields initially), leading to an escalated contest : this is the key prediction when ownership is ambiguous."
 
       - id: q20
         number: "Q20"
@@ -455,7 +455,7 @@ rounds:
           - letter: "d"
             text: "The average intron size of collagen is about 25 times smaller than that of insulin."
             answer: false
-            explanation: "Collagen avg intron: (38-5)/50 = 0.66 kb. Insulin avg intron: (1.7-0.4)/2 = 0.65 kb. These are almost identical in size, not 25 times different. The question reverses the comparison -- collagen introns are about the same size as insulin introns, not 25 times smaller."
+            explanation: "Collagen avg intron: (38-5)/50 = 0.66 kb. Insulin avg intron: (1.7-0.4)/2 = 0.65 kb. These are almost identical in size, not 25 times different. The question reverses the comparison : collagen introns are about the same size as insulin introns, not 25 times smaller."
 
       - id: q24
         number: "Q24"
@@ -473,7 +473,7 @@ rounds:
           - letter: "b"
             text: "When cells are treated with effector (E) and inhibitor of ubiquitinylation, the transcription factor will be translocated into the nucleus, but there will be no activation of genes regulated by the transcription factor."
             answer: false
-            explanation: "Effector E phosphorylates I and Y. Inhibiting ubiquitinylation prevents degradation of phosphorylated I, so I remains in the cytosol. However, the question states that phosphorylated I is ubiquitinylated and degraded -- if ubiquitinylation is blocked, phosphorylated I persists and could still sequester X-Y. But phosphorylated Y with X should still translocate. The net effect depends on whether phosphorylated I still binds the heterodimer; the official answer indicates this statement is false."
+            explanation: "Effector E phosphorylates I and Y. Inhibiting ubiquitinylation prevents degradation of phosphorylated I, so I remains in the cytosol. However, the question states that phosphorylated I is ubiquitinylated and degraded : if ubiquitinylation is blocked, phosphorylated I persists and could still sequester X-Y. But phosphorylated Y with X should still translocate. The net effect depends on whether phosphorylated I still binds the heterodimer; the official answer indicates this statement is false."
           - letter: "c"
             text: "When cells are treated with effector (E) and inhibitor of deacetylase, the transcription factor will be translocated into the nucleus and there will be enhanced activation of genes regulated by the transcription factor."
             answer: true
@@ -527,7 +527,7 @@ rounds:
           - letter: "Q27"
             type: "free_response"
             text: "Based on the restriction digestion fragments, draw the restriction map indicating positions of P and Q cut sites and fragment lengths between sites."
-            modelAnswer: "Linear map (21 kbp): 0--[P at 9]--[Q at 10.4]--[Q at 14.6]--[P at 17.6]--21. Fragments between sites: 9, 1.4, 4.2, 3.0, 3.4 kbp. The double digestion fragments (9, 1.4, 4.2, 3.0, 3.4) confirm the ordering of cut sites."
+            modelAnswer: "Linear map (21 kbp): 0:[P at 9]:[Q at 10.4]:[Q at 14.6]:[P at 17.6]:21. Fragments between sites: 9, 1.4, 4.2, 3.0, 3.4 kbp. The double digestion fragments (9, 1.4, 4.2, 3.0, 3.4) confirm the ordering of cut sites."
             explanation: "Working from single digests: P cuts at positions 9 and 16.2 (giving 9, 7.2, 4.8). Q cuts at positions 10.4 and 18 (giving 10.4, 7.6, 3). Double digestion confirms the interleaving of P and Q sites on the linear molecule."
 
       - id: q28
@@ -683,7 +683,7 @@ rounds:
           - letter: "c"
             text: "The elastic modulus of the cell is not constant but decreases as the cell loses turgor."
             answer: true
-            explanation: "The elastic modulus (epsilon) relates pressure changes to volume changes. The graph shows that the turgor pressure curve is not linear -- it is steeper at higher volumes and flatter near turgor loss. This non-linear relationship indicates that the elastic modulus decreases as the cell loses turgor, meaning the cell wall becomes less rigid as turgor drops."
+            explanation: "The elastic modulus (epsilon) relates pressure changes to volume changes. The graph shows that the turgor pressure curve is not linear : it is steeper at higher volumes and flatter near turgor loss. This non-linear relationship indicates that the elastic modulus decreases as the cell loses turgor, meaning the cell wall becomes less rigid as turgor drops."
           - letter: "d"
             text: "For leaf mesophyll cells of palm trees having relatively rigid cell walls, the volume change associated with turgor loss will be smaller than cells with extremely elastic walls."
             answer: true
@@ -701,7 +701,7 @@ rounds:
           - letter: "a"
             text: "Acclimation to higher temperature resulted in higher rate of net photosynthesis."
             answer: false
-            explanation: "The graph shows that after acclimation to 20 C, the maximum rate of net photosynthesis did not increase -- in fact, it may have decreased or shifted its optimum. Acclimation shifted the temperature response curve but did not necessarily increase the peak rate."
+            explanation: "The graph shows that after acclimation to 20 C, the maximum rate of net photosynthesis did not increase : in fact, it may have decreased or shifted its optimum. Acclimation shifted the temperature response curve but did not necessarily increase the peak rate."
           - letter: "b"
             text: "There is a linear increase in rate of dark respiration only above 10 C in S. cernua grown at lower temperature."
             answer: false
@@ -1145,7 +1145,7 @@ rounds:
           - letter: "b"
             text: "The effect of drift is seen only in population 1 and 2, but not in population 3."
             answer: false
-            explanation: "Genetic drift affects all finite populations, regardless of size. Population 3 shows smaller fluctuations but drift is still present -- allele frequencies still change randomly over generations. Drift is less pronounced but not absent in large populations."
+            explanation: "Genetic drift affects all finite populations, regardless of size. Population 3 shows smaller fluctuations but drift is still present : allele frequencies still change randomly over generations. Drift is less pronounced but not absent in large populations."
           - letter: "c"
             text: "Data from population 1 show that genetic drift does not distinguish between a recessive allele and a dominant allele."
             answer: true
@@ -1426,7 +1426,7 @@ rounds:
           - letter: "c"
             text: "R could be mantle."
             answer: false
-            explanation: "Feature R is described as \"Feeding structure modified for scraping\" in Clade 1, but present without modification (+) in Clades 2-4. The mantle is not a feeding structure -- it is the tissue that secretes the shell and forms the mantle cavity. R is more consistent with the radula, which is a feeding structure modified for scraping in Chitons."
+            explanation: "Feature R is described as \"Feeding structure modified for scraping\" in Clade 1, but present without modification (+) in Clades 2-4. The mantle is not a feeding structure : it is the tissue that secretes the shell and forms the mantle cavity. R is more consistent with the radula, which is a feeding structure modified for scraping in Chitons."
           - letter: "d"
             text: "2 is a bivalve."
             answer: true

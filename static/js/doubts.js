@@ -231,19 +231,19 @@
 
     client.from('doubts_feed').select('*').limit(200).then(function (result) {
       if (result.error) {
-        statusEl.textContent = 'Could not load doubts right now — try refreshing.';
+        statusEl.textContent = 'Could not load doubts right now,, try refreshing.';
         return;
       }
       allDoubts = result.data || [];
       if (!allDoubts.length) {
-        statusEl.textContent = 'No doubts yet — be the first to ask one.';
+        statusEl.textContent = 'No doubts yet, be the first to ask one.';
         return;
       }
       statusEl.hidden = true;
       listEl.hidden = false;
       applyFilter();
     }).catch(function () {
-      statusEl.textContent = 'Could not load doubts right now — try refreshing.';
+      statusEl.textContent = 'Could not load doubts right now, try refreshing.';
     });
 
     function applyFilter() {
@@ -325,7 +325,7 @@
           window.location.href = '?thread=' + encodeURIComponent(doubtId);
         }).catch(function (err) {
           submitBtn.disabled = false;
-          msg.textContent = (err && err.message) || 'Could not post that doubt — try again.';
+          msg.textContent = (err && err.message) || 'Could not post that doubt, try again.';
         });
       });
     });
@@ -369,7 +369,7 @@
         renderCommentForm(id, t.is_closed);
       });
     }).catch(function () {
-      statusEl.textContent = 'Could not load this doubt right now — try refreshing.';
+      statusEl.textContent = 'Could not load this doubt right now, try refreshing.';
     });
   }
 
@@ -408,11 +408,11 @@
           client.from('doubt_reports').insert({ doubt_id: doubtId, reason: reason }).then(function (result) {
             if (result.error) {
               msg.textContent = result.error.code === '23505'
-                ? "You've already reported this — thanks, our team will review it."
+                ? "You've already reported this, thanks, our team will review it."
                 : result.error.message;
               return;
             }
-            formWrap.innerHTML = '<p class="discussions-status">Reported — thanks, our team will review it.</p>';
+            formWrap.innerHTML = '<p class="discussions-status">Reported, thanks, our team will review it.</p>';
             btn.disabled = true;
           });
         });
@@ -446,13 +446,13 @@
     var commentsEl = document.getElementById('doubts-comments');
     client.from('doubt_replies_feed').select('*').eq('thread_id', threadId).limit(500).then(function (result) {
       if (result.error) {
-        commentsEl.innerHTML = '<p class="discussions-status">Could not load replies right now — try refreshing.</p>';
+        commentsEl.innerHTML = '<p class="discussions-status">Could not load replies right now, try refreshing.</p>';
         commentsEl.hidden = false;
         return;
       }
       var rows = result.data || [];
       if (!rows.length) {
-        commentsEl.innerHTML = '<p class="discussions-status">No replies yet — our team typically answers within a couple of days.</p>';
+        commentsEl.innerHTML = '<p class="discussions-status">No replies yet, our team typically answers within a couple of days.</p>';
         commentsEl.hidden = false;
         return;
       }
@@ -483,7 +483,7 @@
   function renderCommentForm(threadId, isClosed) {
     var formWrap = document.getElementById('doubts-comment-form-wrap');
     if (isClosed) {
-      formWrap.innerHTML = '<p class="discussions-status discussions-closed-note">This doubt is marked resolved — no new replies.</p>';
+      formWrap.innerHTML = '<p class="discussions-status discussions-closed-note">This doubt is marked resolved, no new replies.</p>';
       return;
     }
     window.PapersAuth.getSession().then(function (session) {
@@ -536,7 +536,7 @@
             loadComments(threadId);
           }).catch(function (err) {
             submitBtn.disabled = false;
-            msg.textContent = (err && err.message) || 'Could not post that reply — try again.';
+            msg.textContent = (err && err.message) || 'Could not post that reply, try again.';
           });
         });
       });

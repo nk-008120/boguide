@@ -1,0 +1,93 @@
+topic: "plasma-membrane-structure-transport"
+topicName: "Plasma Membrane Structure & Transport"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "plasma-membrane-structure-transport-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "A phospholipid bilayer with equal amounts of saturated and unsaturated fatty acids displays a specific permeability to glucose. What effect will increasing the proportion of unsaturated fatty acids in the bilayer have on the membrane's permeability to glucose?"
+    options:
+      - key: "A"
+        text: "Permeability to glucose will increase."
+      - key: "B"
+        text: "Permeability to glucose will decrease."
+      - key: "C"
+        text: "Permeability to glucose will stay the same."
+      - key: "D"
+        text: "Permeability will decrease initially then increase as the bilayer fills with glucose."
+    answer: "A"
+    explanation: "Unsaturated fatty acid tails have kinks from their double bonds that prevent tight packing, keeping the bilayer more fluid and loosely packed, which increases the rate small molecules like glucose can cross it."
+    sourceRef: "Campbell Biology 11e, Ch. 7 (Membrane Structure and Function)"
+
+  - id: "plasma-membrane-structure-transport-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "In what way do the membranes of a eukaryotic cell vary?"
+    options:
+      - key: "A"
+        text: "Phospholipids are found only in certain membranes."
+      - key: "B"
+        text: "Certain proteins are unique to each membrane."
+      - key: "C"
+        text: "Only certain membranes of the cell are selectively permeable."
+      - key: "D"
+        text: "Only certain membranes are constructed from amphipathic molecules."
+    answer: "B"
+    explanation: "Different membranes (plasma membrane, ER, Golgi, mitochondrial membranes, etc.) share the same basic phospholipid bilayer architecture, but each carries its own distinct set of proteins suited to its specific function."
+    sourceRef: "Campbell Biology 11e, Ch. 7 (Membrane Structure and Function)"
+
+  - id: "plasma-membrane-structure-transport-03"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "For a protein to be an integral membrane protein, it would have to be ________."
+    options:
+      - key: "A"
+        text: "hydrophilic"
+      - key: "B"
+        text: "hydrophobic"
+      - key: "C"
+        text: "amphipathic, with at least one hydrophobic region"
+      - key: "D"
+        text: "exposed on only one surface of the membrane"
+    answer: "C"
+    explanation: "An integral membrane protein must span or embed within the hydrophobic interior of the bilayer, so it needs at least one hydrophobic region, while remaining functional at its membrane-exposed, hydrophilic surfaces: i.e., it must be amphipathic."
+    sourceRef: "Campbell Biology 11e, Ch. 7 (Membrane Structure and Function)"
+
+  - id: "plasma-membrane-structure-transport-04"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "The membranes of winter wheat are able to remain fluid when it is extremely cold by ________."
+    options:
+      - key: "A"
+        text: "increasing the proportion of unsaturated phospholipids in the membrane"
+      - key: "B"
+        text: "decreasing the percentage of cholesterol molecules in the membrane"
+      - key: "C"
+        text: "decreasing the number of hydrophobic proteins in the membrane"
+      - key: "D"
+        text: "increasing the proportion of glycolipids in the membrane"
+    answer: "A"
+    explanation: "Increasing the proportion of unsaturated (kinked) phospholipids keeps the tails from packing tightly at low temperature, which is how winter wheat and other cold-tolerant organisms maintain membrane fluidity in the cold."
+    sourceRef: "Campbell Biology 11e, Ch. 7 (Membrane Structure and Function)"
+
+  - id: "plasma-membrane-structure-transport-05"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "According to the fluid mosaic model of cell membranes, phospholipids ________."
+    options:
+      - key: "A"
+        text: "can move laterally along the plane of the membrane"
+      - key: "B"
+        text: "frequently flip-flop from one side of the membrane to the other"
+      - key: "C"
+        text: "occur in an uninterrupted bilayer, with membrane proteins restricted to the surface of the membrane"
+      - key: "D"
+        text: "have hydrophilic tails in the interior of the membrane"
+    answer: "A"
+    explanation: "In the fluid mosaic model, phospholipids diffuse laterally within their own leaflet of the bilayer; flipping to the other leaflet is rare because it forces a hydrophilic head group through the hydrophobic core."
+    sourceRef: "Campbell Biology 11e, Ch. 7 (Membrane Structure and Function)"

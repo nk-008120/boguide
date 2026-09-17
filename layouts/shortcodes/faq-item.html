@@ -2,7 +2,7 @@
      row (no wrapper needed) and they visually merge into one grouped list.
      Usage:
        {{< faq-item q="Is this free?" >}}
-       Answer — plain markdown, so **bold**, links, etc. all work.
+       Answer: plain markdown, so **bold**, links, etc. all work.
        {{< /faq-item >}}
      `q` can also be passed positionally: {{< faq-item "Is this free?" >}} */ -}}
 {{- $q := .Get "q" | default (.Get 0) -}}

@@ -21,3 +21,26 @@ jobs:
 
       - name: Build site
         run: hugo --gc --minify
+
+  rls-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: BiOLab RLS + submission-flow tests
+        working-directory: tests/biolab
+        run: |
+          npm install
+          npm test
+
+      - name: General RLS hardening tests
+        working-directory: tests/rls
+        run: |
+          npm install
+          npm test

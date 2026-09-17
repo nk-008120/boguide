@@ -1,4 +1,6 @@
 const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
+const { verifyCronSecret } = require('./_lib/cronAuth');
+const { captureError } = require('./_lib/sentry');
 
 const UNRESOLVED_CODES = new Set(['ZZ', 'XX', 'EU', 'AP']);
 
@@ -86,14 +88,7 @@ async function runSyncCountryStats() {
 }
 
 module.exports = async (req, res) => {
-  const cronSecret = process.env.CRON_SECRET;
-  if (cronSecret) {
-    const auth = req.headers.authorization || '';
-    if (auth !== `Bearer ${cronSecret}`) {
-      res.status(401).json({ ok: false, error: 'unauthorized' });
-      return;
-    }
-  }
+  if (!verifyCronSecret(req, res)) return;
 
   const result = { ok: true, time: new Date().toISOString() };
 
@@ -102,6 +97,7 @@ module.exports = async (req, res) => {
     result.keepalive = 'ok';
   } catch (err) {
     console.error('daily-cron keepalive failed:', err);
+    await captureError(err, { route: 'daily-cron', task: 'keepalive' });
     result.ok = false;
     result.keepalive = 'failed: ' + err.message;
   }
@@ -111,6 +107,7 @@ module.exports = async (req, res) => {
     result.syncCountryStats = 'ok';
   } catch (err) {
     console.error('daily-cron sync-country-stats failed:', err);
+    await captureError(err, { route: 'daily-cron', task: 'sync-country-stats' });
     result.ok = false;
     result.syncCountryStats = 'failed: ' + err.message;
   }

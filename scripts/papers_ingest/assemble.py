@@ -2,7 +2,7 @@
 Stage 5 of the lean ingestion pipeline: merges raw.json + the transcribed
 answers CSV + the free model's explanations output + a figure-file mapping
 into the final data/papers/<ol>/<year>.yaml entries and one
-content/.../qN/index.md per question — pure templating, fully automated.
+content/.../qN/index.md per question- pure templating, fully automated.
 This is the highest-leverage script in the pipeline: it replaces the old
 runbook's steps 9-11 (hand-writing every YAML block and every content page).
 
@@ -28,7 +28,7 @@ figures_map.json schema: {"q31": ["q31-figure-1.png", "path/to/candidate.png"], 
   <figures-static-dir>/<id>-figure-<n>.<ext> automatically.
 
 Never silently drops a problem: anything that fails to parse, cross-check,
-or resolve is printed in a summary at the end and excluded from output —
+or resolve is printed in a summary at the end and excluded from output-
 fix the input and re-run rather than hand-editing generated files.
 """
 import argparse
@@ -90,7 +90,7 @@ def parse_explanations(path):
     return parsed, failures
 
 def derive_stem(raw_text, statement_letter_re=re.compile(r"(?m)^[A-Za-z]\.\s")):
-    """Fallback if the free model's output has no `stem` field — best-effort, flagged by the caller."""
+    """Fallback if the free model's output has no `stem` field- best-effort, flagged by the caller."""
     lines = raw_text.split("\n")
     lines = [l for l in lines if not re.match(r"^Question\s+\d+\s*$", l)]
     out = []
@@ -104,7 +104,7 @@ def find_captions(raw_text, n, max_continuation_lines=2):
     """
     raw_text is reconstructed one-physical-line-per-original-line (see
     extract.py's split_questions), so there's no reliable blank-line
-    paragraph gap to stop a caption at — this instead consumes a bounded
+    paragraph gap to stop a caption at- this instead consumes a bounded
     number of lines after each "Figure N." marker, stopping early at the
     next figure marker, a lettered statement (A./B./...), or the
     "Using the information..." instruction line, whichever comes first.
@@ -196,10 +196,10 @@ SUBJECT_TEMPLATE = """\
 
 CONTENT_TEMPLATE = """\
 ---
-title: "{number} — {name}"
+title: "{number}- {name}"
 ---
 
-{{{{< problem-meta category="{category}" note="Real exam question — full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}}}
+{{{{< problem-meta category="{category}" note="Real exam question- full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}}}
 
 <div class="papers-subject-tags" style="margin-bottom:1.5rem;">
 {subject_tags}
@@ -215,7 +215,7 @@ Using the information and data, determine which of the statements are true or wh
 
 ---
 
-Question reproduced from **{exam_label}**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — attributed to the International Biology Olympiad. [Open the full exam PDF]({source_pdf}#page={page}) · [Community solutions (unofficial)]({solutions_pdf})
+Question reproduced from **{exam_label}**, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)- attributed to the International Biology Olympiad. [Open the full exam PDF]({source_pdf}#page={page}) · [Community solutions (unofficial)]({solutions_pdf})
 """
 
 def yaml_scalar(s):
@@ -357,12 +357,12 @@ def main():
             if expected is not None and claimed != expected:
                 local_issues.append(
                     f"{id_}-{letter}: explanation's answer ({claimed}) does not match "
-                    f"the given official answer ({expected}) — the model was not supposed to change this"
+                    f"the given official answer ({expected})- the model was not supposed to change this"
                 )
 
         q["_stem"] = q.get("stem") or (derive_stem(raw_q["text"]) if raw_q else "")
         if not q.get("stem") and raw_q:
-            local_warnings.append(f"{id_}: no 'stem' field from the model, used a heuristic fallback — spot-check it")
+            local_warnings.append(f"{id_}: no 'stem' field from the model, used a heuristic fallback- spot-check it")
 
         fig_files = resolve_figures(None, figures_map, args.figures_static_dir, id_)
         for i, f in enumerate(fig_files, start=1):
@@ -383,7 +383,7 @@ def main():
     print(f"Parsed {len(explanations)} explanation block(s), {len(parse_failures)} failed to parse.")
     print(f"Assembled {len(ok_entries)} question(s) cleanly; {len(issues)} issue(s) blocked the rest.")
     if issues:
-        print("\nISSUES (fix inputs and re-run — nothing below was written for these):")
+        print("\nISSUES (fix inputs and re-run- nothing below was written for these):")
         for i in issues:
             print(f"  - {i}")
     if warnings:

@@ -2,6 +2,7 @@
 title: "2-Year Biology Olympiad Study Plan"
 description: "A comfortable two-year Biology Olympiad preparation plan covering full syllabus mastery, deep practice, and multiple past-paper cycles for IBO, USABO, and INBO."
 layout: "wide"
+aliases: ["/plans/2-years/"]
 ---
 
 <div class="prep-guide-wrapper">

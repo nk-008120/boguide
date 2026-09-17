@@ -11,9 +11,9 @@ questions:
       Consider a protein with a molecular weight of 88 kDa. Calculate the molecular weight of the protein coding region of the corresponding mRNA (assume the molecular weight of an amino acid to be 110 Da and the average molecular weight of a ribonucleotide residue to be 340 Da).
     solution: |
 
-      Ans – 816 kDa
+      Ans: 816 kDa
 
-      Solution – The premise of this question is based on the fact that average weight of amino acids and nucleotides is given on the basis of frequency of occurrence and also takes loss in weight due to water loss by dehydration into account. One amino acid is coded by 3 nucleotides.Number of Amino Acids = 88 * 1000 / 110 = 800
+      Solution: The premise of this question is based on the fact that average weight of amino acids and nucleotides is given on the basis of frequency of occurrence and also takes loss in weight due to water loss by dehydration into account. One amino acid is coded by 3 nucleotides.Number of Amino Acids = 88 * 1000 / 110 = 800
       Number of Nucleotides = 800 * 3 = 2400
       Weight of Ribonucleotide = 2400 * 340 / 1000 
       kDa = 816 kDa
@@ -30,22 +30,22 @@ questions:
       D. The initiation codon is recognized by an initiation tRNA (tRNAi) in all organisms.
     solution: |
 
-      A – False
+      A: False
 
-      Solution –
+      Solution:
       In prokaryotes, transcription and translation can be coupled because there is no nuclear membrane. In eukaryotes, transcription occurs in the nucleus while translation occurs in the cytoplasm, so they are not coupled.
 
-      B – True
+      B: True
 
-      Solution –
-      The peptidyl transferase centre is formed primarily by rRNA—23S rRNA in prokaryotes and 28S rRNA in eukaryotes. Thus, the catalytic activity is attributed to a ribozyme.
+      Solution:
+      The peptidyl transferase centre is formed primarily by rRNA: 23S rRNA in prokaryotes and 28S rRNA in eukaryotes. Thus, the catalytic activity is attributed to a ribozyme.
 
-      C – False
+      C: False
 
-      Solution –
+      Solution:
       In prokaryotes, release factors functionally mimic tRNA by entering the A site and recognizing stop codons. However, eukaryotic release factor eRF1 also has a tRNA-like structural/functional mimicry, so the contrast stated is incorrect.
 
-      D – True
+      D: True
 
       Solution -
       Translation initiation involves a specialized initiator tRNA (tRNAᵢ) recognizing the initiation codon. In bacteria it carries N-formylmethionine (fMet-tRNAᶠᴹᵉᵗ), whereas in eukaryotes it carries methionine (Met-tRNAᵢᴹᵉᵗ).
@@ -97,25 +97,25 @@ questions:
       . i, ii and iii
     solution: |
 
-      Ans – A. i only
+      Ans: A. i only
 
-      The mRNA is 5′-AUG UUA GGU UGG UAA-3′. In wild-type E. coli: AUG → Met, UUA → Leu, GGU → Gly, UGG → Trp and UAA → Stop. Therefore, the translated peptide is Met–Leu–Gly–Trp. However, in the mutant, the peptide is Met–Leu–Gly–Trp–Tyr. The only change is that tyrosine has been inserted at the position where translation normally terminates, i.e. at the UAA stop codon.
+      The mRNA is 5′-AUG UUA GGU UGG UAA-3′. In wild-type E. coli: AUG → Met, UUA → Leu, GGU → Gly, UGG → Trp and UAA → Stop. Therefore, the translated peptide is Met-Leu-Gly-Trp. However, in the mutant, the peptide is Met-Leu-Gly-Trp-Tyr. The only change is that tyrosine has been inserted at the position where translation normally terminates, i.e. at the UAA stop codon.
 
       The mutant tRNA carries Tyrosine and Anticodon AUU. An anticodon AUU can base-pair with the codon UAA. Thus, this tRNA acts as a nonsense suppressor tRNA, competing with release factors and inserting tyrosine at UAA.
 
       Evaluating the statements,
 
-      i – True
+      i: True
 
       Solution -
       The mutant tRNA recognizes the UAA stop codon and inserts tyrosine, allowing translation to continue/suppress termination.
 
-      ii – False
+      ii: False
 
       Solution -
-      Failure to recognize the start codon cannot explain the normal production of Met–Leu–Gly–Trp followed by Tyr. Translation clearly initiated correctly at AUG.
+      Failure to recognize the start codon cannot explain the normal production of Met-Leu-Gly-Trp followed by Tyr. Translation clearly initiated correctly at AUG.
 
-      iii – False
+      iii: False
 
       Solution -
       A frameshift at the glycine codon would alter the downstream reading frame and would not specifically explain replacement of the stop signal with tyrosine while preserving the preceding amino acid sequence.
@@ -182,10 +182,10 @@ questions:
       UGA
     solution: |
 
-      A – Firstly, phospho-anhydride bond forms between ATP and Amino Acid. Then Amino Acid is transferred to 3’ OH of A residue at 3’ end of tRNA by formation of ester bond. Finally, the Amino Acid is added to growing polypeptide by formation of peptide bond. Thus, the correct matching is:
+      A: Firstly, phospho-anhydride bond forms between ATP and Amino Acid. Then Amino Acid is transferred to 3’ OH of A residue at 3’ end of tRNA by formation of ester bond. Finally, the Amino Acid is added to growing polypeptide by formation of peptide bond. Thus, the correct matching is:
 
-      I – Acid-anhydride (phospho-anhydride) bond II - Ester bond III - Peptide bond
+      I: Acid-anhydride (phospho-anhydride) bond II - Ester bond III - Peptide bond
 
       ![image](/CHALLENGEPICS/translation-genetic-code-q5-sol.png)
 
-      B – (Refer – iGenetics: A Molecular Approach by Peter J. Russel and Molecular Biology of the Gene by Watson)
+      B: (Refer: iGenetics: A Molecular Approach by Peter J. Russel and Molecular Biology of the Gene by Watson)

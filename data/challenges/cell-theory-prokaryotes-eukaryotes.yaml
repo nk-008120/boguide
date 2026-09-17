@@ -36,7 +36,7 @@ questions:
        Flagellin-based flagella.
     solution: |
 
-      Ans – A - T, B - T, C - F, D - F
+      Ans: A - T, B - T, C - F, D - F
   - id: 3
     difficulty: "medium"
     source: "INBO"
@@ -52,7 +52,7 @@ questions:
       D. Eukaryotic cells show various membrane bound organelles such as chloroplasts and nucleus while ribosomes are the only membrane bound organelles found in prokaryotes.
     solution: |
 
-      Ans – A - T, B - F, C - F, D - F
+      Ans: A - T, B - F, C - F, D - F
   - id: 4
     difficulty: "hard"
     source: "INBO"
@@ -66,7 +66,7 @@ questions:
       Bands I-IV represent (Options: Nuclei, Protoplastids, Mitochondria, Cytosol, Microbodies): Band I: _________Band II: _________Band III: _________Band IV: _________
     solution: |
 
-      Ans – Band I: Cytosol           Band II: Microbodies           Band III: Protoplastids           Band IV: Mitochondria
+      Ans: Band I: Cytosol           Band II: Microbodies           Band III: Protoplastids           Band IV: Mitochondria
   - id: 5
     difficulty: "hard"
     source: "USABO"
@@ -80,4 +80,4 @@ questions:
       I. Enzyme that is involved in DNA replication ________II. Enzyme involved in producing large amounts of ATP _______III. Enzyme attaching sugar molecules to proteins _________IV. DNA ________
     solution: |
 
-      Answer: I – (A,B), II – (B), III – (C), IV – (A,B)
+      Answer: I: (A,B), II: (B), III: (C), IV: (A,B)

@@ -329,7 +329,7 @@ rounds:
             text: "Adenovirus mRNA remains bound in a DNA-RNA hybrid duplex for a period of time."
             answer: true
             explanation: "The images capture RNA still base-paired to its DNA template over a stretch of the\
-  \ gene, showing the transcript stays annealed in a DNA–RNA hybrid for some time\
+  \ gene, showing the transcript stays annealed in a DNA-RNA hybrid for some time\
   \ before fully dissociating."
           - letter: "C"
             text: "Transcription requires helicase activity (separates the two DNA strands)."

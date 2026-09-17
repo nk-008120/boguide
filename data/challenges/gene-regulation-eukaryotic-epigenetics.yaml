@@ -16,11 +16,11 @@ questions:
       E. none of the above.
     solution: |
 
-      Answer – B
+      Answer: B
 
       Evaluating the statements,
 
-      A – IncorrectSolution - 
+      A: IncorrectSolution - 
       More DNA wound around histones generally decreases accessibility and transcription.
 
       B. CorrectSolution - Increased
@@ -49,22 +49,22 @@ questions:
       . Krebs cycle operates in the mitochondrial matrix and chromatin modifications take place in the nucleus and hence the two processes are independent.
     solution: |
 
-      A – True
+      A: True
 
       Solution -
       Loss of function of isocitrate dehydrogenase (IDH) can alter the availability of metabolites such as α-ketoglutarate, which is required by several dioxygenases involved in DNA and histone demethylation. Reduced demethylase activity can therefore result in hypermethylation.
 
-      B – True
+      B: True
 
       Solution -
       Chromosomal translocations can produce fusion genes or place proto-oncogenes under abnormal regulatory control, potentially leading to tumor formation. A well-known example involves rearrangements affecting chromosomes 10 and 11 in certain cancers.
 
-      C – True
+      C: True
 
       Solution -
       JHDM (Jumonji C-domain histone demethylases) require metabolites such as α-ketoglutarate and molecular oxygen for their activity. Excessive JHDM activity may perturb cellular metabolism and alter redox balance, potentially contributing to metabolic imbalance and oxidative stress.
 
-      D – False
+      D: False
 
       Solution -
       Although the Krebs cycle occurs mainly in the mitochondrial matrix and chromatin modification occurs in the nucleus, they are metabolically interconnected. Krebs-cycle-derived metabolites, including acetyl-CoA, α-ketoglutarate, succinate, fumarate, and citrate, can influence chromatin-modifying enzymes.
@@ -92,16 +92,16 @@ questions:
        Plants that flower early may have increased H2A.Z occupancy in this gene before flowering.
     solution: |
 
-      A – True
+      A: True
       Solution - The plant at higher temperature has a flowering stem.
 
-      B – False
+      B: False
       Solution - At high temperature, the plant flowers, showing the pro-flowering gene is more expressed, and there is less H2A.Z at the pro-flowering gene.
 
-      C – False
+      C: False
       Solution - The amount of H2A.Z bound is reduced at high temperature, but there is no evidence of it binding different places.
 
-      D – False
+      D: False
       Solution - Early flowering plants would have more pro-flowering gene expression, and therefore less of the transcriptional repressor H2A.Z bound at these genes.
   - id: 4
     difficulty: "hard"
@@ -126,22 +126,22 @@ questions:
       Silencing against the protein coding sequence is heritable.
     solution: |
 
-      A – False
+      A: False
 
       Solution -
       The unmodified leaves are dark. The GFP transfected, without silencing, are bright green.
 
-      B – True
+      B: True
 
       Solution
        - The promoter is not transcribed, but siRNA directed against it can still block expression.
 
-      C – True
+      C: True
 
       Solution
        - GFP remains silenced in the progeny, even though the siRNAs are no longer present, when directed against the promoter. (The siRNA-protein coding treatment acts as a control to show siRNA does not mutate the DNA sequence it complements).
 
-      D – False
+      D: False
 
       Solution
        - This is not inherited, indicating it is less likely to be epigenetic.

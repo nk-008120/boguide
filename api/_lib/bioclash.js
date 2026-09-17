@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const yaml = require('js-yaml');
+const { getAnonClient } = require('./supabaseAdmin');
 
 function loadPaper(paperId) {
   if (!/^[a-z0-9-]+$/.test(paperId || '')) return null;
@@ -224,12 +225,35 @@ function rateLimit(userId, action, maxPerWindow, windowMs) {
   bucket.count += 1;
   rateBuckets.set(key, bucket);
   if (rateBuckets.size > 5000) {
-    const cutoff = now - windowMs;
     for (const [k, v] of rateBuckets) {
-      if (now - v.start > cutoff) rateBuckets.delete(k);
+      if (now - v.start > windowMs) rateBuckets.delete(k);
     }
   }
   return bucket.count > maxPerWindow;
+}
+
+async function authenticate(req, res, action, maxPerWindow, windowMs) {
+  const authHeader = req.headers.authorization || '';
+  const token = authHeader.startsWith('Bearer ') ? authHeader.slice(7) : null;
+  if (!token) {
+    res.status(401).json({ error: 'Missing Authorization header' });
+    return null;
+  }
+
+  const anon = getAnonClient();
+  const { data: userData, error: userError } = await anon.auth.getUser(token);
+  if (userError || !userData || !userData.user) {
+    res.status(401).json({ error: 'Invalid session' });
+    return null;
+  }
+  const userId = userData.user.id;
+
+  if (rateLimit(userId, action, maxPerWindow, windowMs)) {
+    res.status(429).json({ error: 'Too many requests' });
+    return null;
+  }
+
+  return userId;
 }
 
 function watermarkCode(userId, paperId) {
@@ -253,6 +277,7 @@ module.exports = {
   autoGrade,
   extensionPenalty,
   rateLimit,
+  authenticate,
   watermarkCode,
   newSessionToken,
   computeTotalPages

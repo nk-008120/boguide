@@ -120,6 +120,7 @@
               setMsg(msg, friendlyInsertError(result.error), true);
               return;
             }
+            if (window.PostHogEvents) window.PostHogEvents.trackContributionSubmitted('paper_contribution');
             paperForm.reset();
             submitBtn.disabled = false;
             setMsg(msg, 'Submitted -- thanks! Staff will review the license and, if it checks out, ingest it into the archive.', false);
@@ -159,6 +160,7 @@
             setMsg(msg, friendlyInsertError(result.error), true);
             return;
           }
+          if (window.PostHogEvents) window.PostHogEvents.trackContributionSubmitted('content_correction');
           correctionForm.reset();
           submitBtn.disabled = false;
           setMsg(msg, 'Submitted -- thanks, staff will review it.', false);
@@ -191,6 +193,7 @@
             setMsg(msg, friendlyInsertError(result.error), true);
             return;
           }
+          if (window.PostHogEvents) window.PostHogEvents.trackContributionSubmitted('community_solution');
           solutionForm.reset();
           submitBtn.disabled = false;
           setMsg(msg, 'Submitted -- thanks, staff will review it.', false);

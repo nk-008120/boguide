@@ -1,6 +1,6 @@
 ---
 title: "BiOBytes"
-description: "Long-form articles and quick bites from our Instagram — exam-technique tips, lab guides, and behind-the-scenes posts from the BiOGuide team."
+description: "Long-form articles and quick bites from our Instagram - exam-technique tips, lab guides, and behind-the-scenes posts from the BiOGuide team."
 layout: "wide"
 aliases:
   - /bioinsights/
@@ -39,6 +39,13 @@ cascade:
 {{< /tab >}}
 {{< tab name="Testimonials" >}}
 <div class="testimonial-cards">
+  <a href="/biobytes/testimonials/kyrgyzstan-ulukbek-bronze/" class="card testimonial-card">
+    <div class="card-icon">🇰🇬</div>
+    <h3>From Kyrgyzstan to IBO Bronze</h3>
+    <p class="testimonial-pullquote">"Don't stop loving biology!"</p>
+    <div class="testimonial-meta">Ulukbek &middot; IBO 2026 Bronze Medallist</div>
+    <span class="btn-outline">Read His Story &rarr;</span>
+  </a>
   <a href="/biobytes/testimonials/hungary-botond-silver/" class="card testimonial-card">
     <div class="card-icon">🇭🇺</div>
     <h3>From Hungary to IBO Silver</h3>

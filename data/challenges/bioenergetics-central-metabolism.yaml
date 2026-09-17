@@ -16,7 +16,7 @@ questions:
       E. uncoupler would stop the oxidation of NADH by the electron transport chain
     solution: |
 
-      Answer – C
+      Answer: C
 
       Evaluating each statement,
 
@@ -49,13 +49,13 @@ questions:
       E. These drugs may cause death upon overdose because of severe ATP loss.
     solution: |
 
-      Answer – A – True, B – False, C – False, D – False, E – True
+      Answer: A: True, B: False, C: False, D: False, E: True
 
       Evaluating each statement,
 
       A - True
 
-      Solution –
+      Solution:
       Uncouplers dissipate the H⁺ gradient, so the ETC keeps running rapidly to rebuild it. This increases electron flow and therefore O₂ consumption.
 
       B - False
@@ -120,7 +120,7 @@ questions:
       D. DCCD inhibits ATP synthesis
     solution: |
 
-      Answer – A - True, B - True, C - False, D – True
+      Answer: A - True, B - True, C - False, D: True
 
       Solution - From the graphs, intact mitochondria respire. The major role of the mitochondria is to produce ATP. The enhanced respiration by addition of ADP can be regarded as coupling of ATP synthesis and respiration in intact mitochondria. DNP, however, stimulated respiration in the absence of ATP synthesis, because ADP was fully consumed before the addition of DNP. On the other hand, DCCD stopped the respiration before ADP was fully consumed in the figure on the right. These interpretations can be inferred only from the graphs and do not require the knowledge of DNP and DCCD. As a side note, typical cellular membranes are impermeable to ions like ATP, but mitochondrial membranes possess ATP/ADP translocators. DNP, the uncoupler, acts as a transporter of H+ ion across the mitochondrial membrane, because both DNP and DNP/H+ are lipophilic. DCCD binds covalently to the H+ channel of the ATP synthase and blocks the ATP synthesis.
   - id: 5
@@ -131,7 +131,7 @@ questions:
 
       ![image](/CHALLENGEPICS/bioenergetics-central-metabolism-q5.png)
 
-      In mitochondria, ATP is synthesized using an electron transport chain containing four complexes (I–IV) and ATP synthase (complex V). Three NADH and one FADH2 molecules are produced by one turn of the Krebs cycle (citric acid cycle / TCA cycle). The efficiency of ATP synthase varies between different cell types, but assume that the flow of about 3.3 protons allows the synthesis of one ATP molecule. Metformin, which inhibits complex I, is used to treat type 2 diabetes. Metformin is believed to alter the usual cellular AMP:ADP:ATP ratio of 1:10:100, which produces a beneficial effect from AMP-activated protein kinase (AMPK).
+      In mitochondria, ATP is synthesized using an electron transport chain containing four complexes (I-IV) and ATP synthase (complex V). Three NADH and one FADH2 molecules are produced by one turn of the Krebs cycle (citric acid cycle / TCA cycle). The efficiency of ATP synthase varies between different cell types, but assume that the flow of about 3.3 protons allows the synthesis of one ATP molecule. Metformin, which inhibits complex I, is used to treat type 2 diabetes. Metformin is believed to alter the usual cellular AMP:ADP:ATP ratio of 1:10:100, which produces a beneficial effect from AMP-activated protein kinase (AMPK).
 
       Indicate whether each of the following statements is True or False:A. The oxidation of one glucose molecule leads to the synthesis of approximately 11 ATP molecules.
 
@@ -143,28 +143,28 @@ questions:
       D. Metformin indirectly activates AMPK by raising the amount of AMP relative to ATP.
     solution: |
 
-      Answer – A - F, B – T, C – F, D - T
+      Answer: A - F, B: T, C: F, D - T
 
       Evaluating each statement,
 
-      A – False
+      A: False
 
-      Solution –
+      Solution:
       Glycolysis and oxidative decarboxylation of pyruvate also produces NADH molecules. Moreover, one glucose molecule produces two acetyl-CoA molecules. Thus, about 34 ATP molecules are produced as a result of the oxidation of a single glucose molecule.
 
-      B – True
+      B: True
 
-      Solution –
+      Solution:
       Metformin inhibits the complex I. Thus, the number of protons pumped into the intermembrane space decreases.
 
-      C – False
+      C: False
 
-      Solution –
+      Solution:
       Metformin does not affect the turnover of FADH2 molecules.
 
-      D – True
+      D: True
 
-      Solution –
+      Solution:
       If the amount of adenosine triphosphate is decreased, the amount of its diphosphates and monophosphates becomes higher. Thus, this metformin effect indirectly activates AMPK.
   - id: 6
     difficulty: "hard"
@@ -176,7 +176,7 @@ questions:
 
       The transcription factor p53 is a protein that regulates a variety of pathways including cell proliferation, DNA repair, cell death and metabolism. In an experiment, hepatocytes isolated from a healthy donor were cultured in vitro and the gene encoding p53 (TP53) was deleted. The impact on glycolysis and gluconeogenesis was assessed by Real Time quantitative PCR (RT-qPCR), comparing the wild type cell line (wt) and the p53 deleted cell line (ko).
 
-      Figure 1 - mRNA expression of different genes involved in glucose metabolism. Y – mRNA expression; X – Housekeeping genes. G6PC – glucose-6-phosphatase; FBP - fructose-1,6-bisphosphatase; PEPCK – PEP carboxylkinase; PC – pyruvate carboxylase; HK – hexokinase; PFK – phosphofructokinase; PK - pyruvate kinase.
+      Figure 1 - mRNA expression of different genes involved in glucose metabolism. Y: mRNA expression; X: Housekeeping genes. G6PC: glucose-6-phosphatase; FBP - fructose-1,6-bisphosphatase; PEPCK: PEP carboxylkinase; PC: pyruvate carboxylase; HK: hexokinase; PFK: phosphofructokinase; PK - pyruvate kinase.
       Indicate whether each of the following statements are True or False:
       A. Analysis of the graph suggests that p53 promotes glycolysis.
       B. Glucose-6-phosphatase expression is regulated by p53.
@@ -184,26 +184,23 @@ questions:
       D. There is no effect of TP53 deletion on either glycolysis or gluconeogenesis.
     solution: |
 
-      Answer – A – False, B – True, C – True, D – False
+      Answer: A: False, B: True, C: True, D: False
 
       Evaluating each statement,
 
       A - False
 
-      Solution –
+      Solution:
       No significant upregulation or downregulation for any glycolytic enzyme (HK, PK and FBP) in absence of p53.
 
       B - True
 
-      Solution
-      – From graph, p53 expression increases G6PC expression significantly.
+      Solution: From graph, p53 expression increases G6PC expression significantly.
 
       C - True
 
-      Solution
-      – Gluconeogenetic flux is related to G6PC which is downregulated in absence of p53.
+      Solution: Gluconeogenetic flux is related to G6PC which is downregulated in absence of p53.
 
       D - False
 
-      Solution
-      – From analysis of above statements, there is effect of p53 absence on gluconeogenesis.
+      Solution: From analysis of above statements, there is effect of p53 absence on gluconeogenesis.

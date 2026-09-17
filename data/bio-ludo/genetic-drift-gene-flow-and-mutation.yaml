@@ -1,0 +1,75 @@
+topic: "genetic-drift-gene-flow-and-mutation"
+topicName: "Genetic Drift, Gene Flow & Mutation"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "genetic-drift-gene-flow-and-mutation-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Genetic drift produces variation for evolution when ________."
+    options:
+      - key: "A"
+        text: "a gene pool decreases because a smaller group establishes a new population"
+      - key: "B"
+        text: "chance events cause allele frequencies to fluctuate unpredictably"
+      - key: "C"
+        text: "sudden change in environment drastically reduces the gene pool"
+      - key: "D"
+        text: "a population has heritable traits better suited to the environment"
+    answer: "B"
+    explanation: "Genetic drift is defined as random, chance-driven fluctuation in allele frequencies from one generation to the next, independent of whether those alleles are advantageous."
+    sourceRef: "Campbell Biology 11e, Ch. 23 (The Evolution of Populations)"
+
+  - id: "genetic-drift-gene-flow-and-mutation-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "In 1986, a nuclear power accident in Chernobyl, USSR (now Ukraine), led to high radiation levels for miles surrounding the plant. The high levels of radiation caused elevated mutation rates in the surviving organisms, and evolutionary biologists have been studying rodent populations in the Chernobyl area ever since. Based on your understanding of evolutionary mechanisms, which of the following most likely occurred in the rodent populations following the accident?"
+    options:
+      - key: "A"
+        text: "Mutations caused major changes in rodent physiology over time."
+      - key: "B"
+        text: "Mutation led to increased genetic variation."
+      - key: "C"
+        text: "Mutation caused genetic drift and decreased fitness."
+      - key: "D"
+        text: "Mutation caused the fixation of new alleles."
+    answer: "B"
+    explanation: "Elevated mutation rates introduce new alleles into the gene pool faster than usual, which, all else equal, increases the amount of genetic variation present in the population, since mutation is evolution's ultimate source of new variation."
+    sourceRef: "Campbell Biology 11e, Ch. 23 (The Evolution of Populations)"
+
+  - id: "genetic-drift-gene-flow-and-mutation-03"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Which one of these processes describes bottleneck effect?"
+    options:
+      - key: "A"
+        text: "chance events that change allele frequency"
+      - key: "B"
+        text: "alleles transferred to the next generation in portions that differ from previous generation"
+      - key: "C"
+        text: "transfer of alleles in and out of a population due to movement of fertile individuals"
+      - key: "D"
+        text: "sudden change in environments that alters gene frequency of a population"
+    answer: "D"
+    explanation: "A bottleneck effect occurs when a sudden environmental event (disaster, disease, etc.) drastically and randomly reduces a population's size, leaving the survivors' allele frequencies an unrepresentative, matter-of-chance sample of the original population's gene pool."
+    sourceRef: "Campbell Biology 11e, Ch. 23 (The Evolution of Populations)"
+
+  - id: "genetic-drift-gene-flow-and-mutation-04"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Comparisons of Neanderthal DNA revealed that there are more similarities to non-African DNA than reference sequences from West Africans. Additionally, scientists found that Neanderthal DNA is as closely related to East Asians as to Europeans. This indicates that interbreeding occurred before human migration further east. What process of population genetics generated these results?"
+    options:
+      - key: "A"
+        text: "adaptive evolution"
+      - key: "B"
+        text: "gene flow"
+      - key: "C"
+        text: "gene drift"
+      - key: "D"
+        text: "nonrandom mating"
+    answer: "B"
+    explanation: "Evidence of shared DNA between Neanderthals and all non-African populations, at similar levels regardless of how far east those populations later spread, points to a single interbreeding (gene flow) event between Neanderthals and the ancestors of non-Africans before their migration further into Asia."
+    sourceRef: "Campbell Biology 11e, Ch. 23 (The Evolution of Populations)"

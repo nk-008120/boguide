@@ -1,6 +1,6 @@
 """
 Low-level PDF helpers shared by every papers_ingest script. Pure PyMuPDF
-(fitz) — no subprocess calls to pdftotext/pdfimages/pdftoppm, so there's
+(fitz). no subprocess calls to pdftotext/pdfimages/pdftoppm, so there's
 nothing Windows-quoting-fragile here (see the old ENAMETOOLONG/heredoc
 gotchas in context/papers-ingestion-workflow.md, none of which apply to a
 real Python file).
@@ -20,7 +20,7 @@ def page_text(doc, page_num):
 def page_lines(doc, page_num):
     """
     1-indexed page number. Returns text lines with bounding boxes, sorted by
-    vertical position — used for text-anchor figure cropping (see
+    vertical position. used for text-anchor figure cropping (see
     find_figure_crop_region below). Each item: {text, top, bottom, x0, x1}.
     """
     page = doc[page_num - 1]
@@ -44,7 +44,7 @@ def page_lines(doc, page_num):
 def find_logo_hashes(doc, start_page, end_page, min_occurrences=3, min_fraction=0.4):
     """
     Any embedded image whose raw bytes repeat across many pages in the range
-    is almost certainly a header/footer logo, not a real figure — hash-based,
+    is almost certainly a header/footer logo, not a real figure. hash-based,
     so it works regardless of the logo's pixel dimensions (more robust than
     the dimension-based filtering the manual workflow used, which only works
     if you already know the one logo size for that specific exam PDF).
@@ -74,7 +74,7 @@ def extract_raster_images(doc, page_num, out_dir, prefix, logo_hashes):
     of {path, width, height, top_y} for real figure candidates (logo/
     watermark images, per find_logo_hashes, are silently skipped). top_y is
     the image's vertical position on the page (PDF points, top-down) via
-    get_image_rects — needed to split figures correctly when two adjacent
+    get_image_rects. needed to split figures correctly when two adjacent
     questions share a page (see extract.py's position-based assignment).
     """
     page = doc[page_num - 1]
@@ -104,7 +104,7 @@ def find_boilerplate_lines(pages_lines, min_occurrences=3, min_fraction=0.3):
     """
     pages_lines: {page_num: [line dicts]}. A running page header/footer
     (exam title, "English (Official)", page codes like "Q1-1") repeats its
-    *exact* text across most pages — same idea as find_logo_hashes but for
+    *exact* text across most pages. same idea as find_logo_hashes but for
     text. Returns the set of line texts to drop before handing question text
     to a free model, so the prompt bundle isn't full of header noise.
     """
@@ -119,7 +119,7 @@ def find_boilerplate_lines(pages_lines, min_occurrences=3, min_fraction=0.3):
 def find_figure_crop_region(lines, caption_regex, min_gap_ratio=2.5):
     """
     Text-anchor crop-region finder for vector-drawn figures (no embeddable
-    raster image at all — see the 2024 Theoretical A gotcha in
+    raster image at all. see the 2024 Theoretical A gotcha in
     papers-ingestion-workflow.md). Finds the largest vertical gap between
     consecutive lines on the page; if a "Figure N." caption line exists at
     or after that gap, treats the gap as the figure region: top = bottom of
@@ -161,7 +161,7 @@ def render_page_region(doc, page_num, out_path, dpi=200, y0=None, y1=None, pad=3
     """
     Renders a full page, or (if y0/y1 given, in PDF point units) a cropped
     vertical band of it, to a PNG. pad is applied *inward* (top+pad,
-    bottom-pad) per the documented padding-direction gotcha — get the sign
+    bottom-pad) per the documented padding-direction gotcha. get the sign
     backwards and adjacent text bleeds into the crop.
     """
     page = doc[page_num - 1]

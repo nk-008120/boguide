@@ -26,7 +26,7 @@
 
   function render(rows) {
     if (!rows.length) {
-      statusEl.textContent = 'No submissions yet for this round — log in and submit a Timed Attempt to be the first on the board.';
+      statusEl.textContent = 'No submissions yet for this round, log in and submit a Timed Attempt to be the first on the board.';
       return;
     }
     tbody.innerHTML = rows.map(function (r) {
@@ -60,7 +60,7 @@
       var result = results[0];
       var session = results[1];
       if (result.error) {
-        statusEl.textContent = 'Could not load the leaderboard right now — try refreshing.';
+        statusEl.textContent = 'Could not load the leaderboard right now, try refreshing.';
         return;
       }
       var rows = (result.data || []).map(function (r) {
@@ -69,7 +69,7 @@
       });
       render(rows);
     }).catch(function () {
-      statusEl.textContent = 'Could not load the leaderboard right now — try refreshing.';
+      statusEl.textContent = 'Could not load the leaderboard right now, try refreshing.';
     });
   }
 

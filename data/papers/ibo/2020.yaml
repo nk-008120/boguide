@@ -35,13 +35,13 @@ rounds:
   \ rather than one achiral form. Only one of these forms is the biologically produced\
   \ isocitrate."
           - letter: "C"
-            text: "Two –CH2COO– groups are stereochemically equivalent when citrate is free in solution."
+            text: "Two:CH2COO- groups are stereochemically equivalent when citrate is free in solution."
             answer: true
             explanation: "In free solution, citrate can tumble and rotate freely, so its two -CH2COO- arms\
   \ are related by an internal symmetry and behave as equivalent groups. This symmetry\
   \ is precisely why citrate alone is not chiral."
           - letter: "D"
-            text: "Two –CH2COO– groups are stereochemically equivalent when citrate is bound to aconitase."
+            text: "Two:CH2COO- groups are stereochemically equivalent when citrate is bound to aconitase."
             answer: false
             explanation: "Aconitase's active site is itself asymmetric, so once citrate is docked in it the\
   \ two arms sit in different local environments and are no longer interchangeable.\
@@ -2313,7 +2313,7 @@ rounds:
             answer: "2"
             explanation: "With branches every 25 residues instead of every 10, amylopectin of the same total\
   \ size has only 10000/25 = 400 branch points, giving about 200 phosphorylase-accessible\
-  \ chain ends, fewer than glycogen's 500 -- so degradation proceeds more slowly,\
+  \ chain ends, fewer than glycogen's 500: so degradation proceeds more slowly,\
   \ matching (a). But each of those 200 chains is proportionally longer (25 residues\
   \ between branches instead of 10), so the total mass degraded works out to about\
   \ 200 x 25 = 5000 residues, essentially the same total amount as glycogen's 500\
@@ -2401,8 +2401,8 @@ rounds:
             options: [{key: "1", text: "I"}, {key: "2", text: "II"}, {key: "3", text: "III"}, {key: "4", text: "IV"}]
             answer: "3"
             explanation: "In a uniform-density medium, every specimen keeps sedimenting at a constant rate\
-  \ for as long as centrifugation continues, since nothing ever stops their descent\
-  \ -- this rules out the curves in I and II, which level off. Because all three specimens\
+  \ for as long as centrifugation continues, since nothing ever stops their descent:\
+  \ this rules out the curves in I and II, which level off. Because all three specimens\
   \ share the same density (1.3 g/mL) but differ in size, they sediment at different\
   \ constant speeds (larger nuclei fastest, then viruses, then the small globular\
   \ proteins), which is the pattern of straight lines fanning out at different slopes\
@@ -2448,7 +2448,7 @@ rounds:
             answer: "2"
             explanation: "Starting from the bottom of the same 1.0-1.6 g/mL gradient, each specimen floats\
   \ upward until it again reaches the depth matching its own 1.3 g/mL density, so\
-  \ the curves must plateau at a shared equilibrium position -- this is diagram VI,\
+  \ the curves must plateau at a shared equilibrium position: this is diagram VI,\
   \ the floating (upward, converging) counterpart to the sedimentation pattern in\
   \ diagram II. Diagram V's curves plateau at different heights, which would only\
   \ make sense if the specimens had different densities."
@@ -2643,7 +2643,7 @@ rounds:
             answer: "3"
             explanation: "Explaining this fact only needs to show that O2 is a competitive inhibitor at the\
   \ CO2 binding site (from the KM values in (a)) and that O2 is present at a substantial\
-  \ in vivo concentration relative to that KM (from (c)) -- together these show carboxylase\
+  \ in vivo concentration relative to that KM (from (c)): together these show carboxylase\
   \ activity is not yet saturated for CO2 in air and is being held down by competing\
   \ O2. The kcat maximum-rate values in (b) are not needed to make this particular\
   \ point."
@@ -2655,7 +2655,7 @@ rounds:
             answer: "1"
             explanation: "Comparing which activity actually wins under current atmospheric conditions requires\
   \ all three pieces: the binding affinities in (a), the maximum turnover rates in\
-  \ (b), and the actual in vivo substrate concentrations in (c) -- only by combining\
+  \ (b), and the actual in vivo substrate concentrations in (c): only by combining\
   \ affinity, maximum rate, and concentration for both substrates can the two competing\
   \ reaction rates be calculated and compared."
           - letter: "C"
@@ -2666,7 +2666,7 @@ rounds:
             explanation: "Showing that a large amount of enzyme is needed requires establishing that each individual\
   \ Rubisco molecule turns over CO2 slowly (kcat in (b)) and that it is not operating\
   \ anywhere near saturation under real conditions (affinity from (a) versus actual\
-  \ concentration from (c)) -- both the low per-molecule turnover and the low degree\
+  \ concentration from (c)): both the low per-molecule turnover and the low degree\
   \ of saturation point to needing many molecules to reach adequate total flux, so\
   \ all three data sets are needed."
           - letter: "D"
@@ -2727,8 +2727,8 @@ rounds:
             explanation: "Root cortical cells are simple parenchyma-type cells that expand more or less uniformly\
   \ over their whole surface, matching diffuse growth (type A), while pollen tubes\
   \ and root hairs are classic tip-growing cells (type B), extending only from their\
-  \ very apex. Leaf epidermal (pavement) cells combine both modes -- diffuse expansion\
-  \ of the cell body plus localized outgrowth at their interlocking lobes -- matching\
+  \ very apex. Leaf epidermal (pavement) cells combine both modes: diffuse expansion\
+  \ of the cell body plus localized outgrowth at their interlocking lobes: matching\
   \ inclusive growth (type C), giving A-root cortical cells, B-pollen tube/root hair,\
   \ C-leaf epidermal cells."
           - letter: "Q10-2"
@@ -2743,8 +2743,8 @@ rounds:
   \ co-aligned with each other (matching orientations), which already rules out diagrams\
   \ (2) and (4) where CW and MT point in different directions. For a cell to elongate\
   \ along its longitudinal growth axis, the reinforcing cellulose microfibrils must\
-  \ be laid down circumferentially -- perpendicular to that axis, i.e. horizontal\
-  \ in a longitudinally-drawn cell -- to constrain radial expansion and channel growth\
+  \ be laid down circumferentially: perpendicular to that axis, i.e. horizontal\
+  \ in a longitudinally-drawn cell: to constrain radial expansion and channel growth\
   \ lengthwise, matching diagram (3), where both the co-aligned CW and MT run horizontal."
 
       - id: q11
@@ -2781,7 +2781,7 @@ rounds:
             explanation: "Over 4 days (96 hours), cell A (12-hour cycle) divides 96/12 = 8 times, multiplying\
   \ by 2^8 = 256, while cell B (16-hour cycle) divides 96/16 = 6 times, multiplying\
   \ by 2^6 = 64. If A and B started equal, the final ratio would be 256:64 = 4:1,\
-  \ but the observed final ratio is only 2:1 -- four times smaller -- so the starting\
+  \ but the observed final ratio is only 2:1: four times smaller: so the starting\
   \ amount of A must have been four times smaller relative to B than an equal mix,\
   \ i.e. the initial ratio was A:B = 1:2."
 
@@ -2848,7 +2848,7 @@ rounds:
   \ O allele, Carl (blood type B) must be BO and Jane (AB) must be AB; and since Lisa\
   \ is Bombay (hh), both parents must also be carriers Hh at the H-antigen locus.\
   \ A cross of BO x AB gives offspring genotypes AB, BB, AO, BO each at 1/4, of which\
-  \ BB and BO (2/4 = 1/2) would show as B type ABO genotype -- but only if the H antigen\
+  \ BB and BO (2/4 = 1/2) would show as B type ABO genotype: but only if the H antigen\
   \ is present. Since both parents are Hh, 3/4 of children have at least one H allele\
   \ and can express their ABO phenotype normally, while 1/4 are hh (Bombay, phenotypically\
   \ O regardless of ABO genotype). The probability of true B phenotype is therefore\
@@ -2896,11 +2896,11 @@ rounds:
             answer: "4"
             explanation: "Disrupting one XYL2 gene (Disruptant C) halves XDH activity (the enzyme that consumes\
   \ xylitol downstream) while leaving XR (which makes xylitol) untouched, so xylitol\
-  \ should still be produced at the normal rate but accumulate to a higher final amount\
-  \ -- matching graph (B), a boosted version of (A). Disrupting both XYL2 genes (Disruptant\
+  \ should still be produced at the normal rate but accumulate to a higher final amount:\
+  \ matching graph (B), a boosted version of (A). Disrupting both XYL2 genes (Disruptant\
   \ D) removes XDH activity for converting xylose downstream almost entirely, so the\
   \ strain can no longer properly use xylose, its only carbon source, and growth (and\
-  \ xylitol production) collapses -- matching graph (C), the most severely impaired\
+  \ xylitol production) collapses: matching graph (C), the most severely impaired\
   \ profile. This gives graph B = Disruptant C and graph C = Disruptant D."
 
       - id: q16
@@ -2919,11 +2919,11 @@ rounds:
             answer: "2"
             explanation: "Student B's product still has RNA primer fragments attached to the short strands,\
   \ meaning polymerase III made the strands but polymerase I (which normally removes\
-  \ RNA primers and fills the gaps with DNA) never acted -- matching R1 (polymerase\
+  \ RNA primers and fills the gaps with DNA) never acted: matching R1 (polymerase\
   \ I missing). Student C's product instead shows many short single-stranded fragments\
   \ (with primers presumably already removed, since none are mentioned) that were\
-  \ simply never joined into a continuous strand, pointing to a missing DNA ligase\
-  \ -- matching R6. Together this gives student B = R1, student C = R6."
+  \ simply never joined into a continuous strand, pointing to a missing DNA ligase:\
+  \ matching R6. Together this gives student B = R1, student C = R6."
 
       - id: q17
         number: "Q17"
@@ -2944,7 +2944,7 @@ rounds:
             explanation: "Approximate genome sizes for these species are: human (A) ~3000 Mb, water flea Daphnia\
   \ pulex (B) ~200 Mb, nematode C. elegans (E) ~100 Mb, budding yeast (C) ~12 Mb,\
   \ and acetic acid bacteria (D) ~2.9 Mb. Ranking these from largest to smallest gives\
-  \ human > water flea > nematode > yeast > bacteria, i.e. A-B-E-C-D -- illustrating\
+  \ human > water flea > nematode > yeast > bacteria, i.e. A-B-E-C-D: illustrating\
   \ that genome size does not simply track with organismal complexity (the multicellular\
   \ animals and human have much larger genomes than the unicellular yeast and bacteria,\
   \ but the relative order among the animals doesn't follow body-plan complexity either)."
@@ -3087,7 +3087,7 @@ rounds:
   \ the period of meiosis II."
             answer: false
             explanation: "Human oocytes arrest in prophase of meiosis I (specifically at the diplotene stage)\
-  \ from fetal life until ovulation, not in meiosis II -- they don't reach meiosis\
+  \ from fetal life until ovulation, not in meiosis II: they don't reach meiosis\
   \ II until just before or at ovulation, decades later. The large fetal-to-birth\
   \ loss of oocytes therefore reflects attrition of cells arrested in meiosis I, not\
   \ meiosis II."
@@ -3128,7 +3128,7 @@ rounds:
             answer: true
             explanation: "The E-to-F interval corresponds to the period from atrial contraction and excitation\
   \ reaching the ventricle via the Purkinje fibers, up until ventricular contraction\
-  \ begins -- a conduction/pre-contraction interval largely set by fixed conduction\
+  \ begins: a conduction/pre-contraction interval largely set by fixed conduction\
   \ velocities rather than by pacemaker rate. Since heart rate is instead controlled\
   \ mainly by the slope of the sinoatrial node's pacemaker potential, this E-F interval\
   \ stays essentially unchanged even as heart rate elevates."
@@ -3140,7 +3140,7 @@ rounds:
             answer: "1"
             explanation: "Between points H and I, ventricular pressure is falling while ventricular volume\
   \ stays constant (the aortic valve has closed and the atrioventricular valve has\
-  \ not yet opened, so no blood enters or leaves) -- this is isovolumetric relaxation.\
+  \ not yet opened, so no blood enters or leaves): this is isovolumetric relaxation.\
   \ On the pressure-volume loop, a period of falling pressure at constant volume appears\
   \ as a vertical drop, which corresponds to segment (1)."
           - letter: "Q24-3"
@@ -3183,7 +3183,7 @@ rounds:
   \ readily at a given Ca2+ level (fast contraction), but since a comparable amount\
   \ of Ca2+ removal is still needed to fully release the more-sensitive troponin-tropomyosin\
   \ complex, relaxation is disproportionately slow relative to how quickly contraction\
-  \ started -- matching hypercontractility (fast contraction, slow relaxation)."
+  \ started: matching hypercontractility (fast contraction, slow relaxation)."
           - letter: "B"
             type: "mcq"
             text: "Blocking the Ach release by Botulinum toxin treatment."
@@ -3244,7 +3244,7 @@ rounds:
   \ step is to repress it, not promote it. Losing gene B still allows cartilage and\
   \ bone to form essentially normally (cartilage formation is not required to depend\
   \ on gene B), while gaining extra gene B function suppresses bone formation relative\
-  \ to cartilage -- so gene B is not required for cartilage formation but does promote/accelerate\
+  \ to cartilage: so gene B is not required for cartilage formation but does promote/accelerate\
   \ bone formation when active. Reading these four qualitative relationships together\
   \ (Required/Repress for gene A, Not required/Promote for gene B) matches option\
   \ (8)."
@@ -3319,7 +3319,7 @@ rounds:
             options: [{key: "1", text: "*1/*1 > *1/*3 > *2/*2"}, {key: "2", text: "*1/*1 > *3/*3 > *1/*2"}, {key: "3", text: "*3/*3 > *1/*2 > *1/*1"}, {key: "4", text: "*3/*3 > *1/*1 > *1/*3"}]
             answer: "3"
             explanation: "Since omeprazole is inactivated by CYP2C19, less functional CYP2C19 activity means\
-  \ the drug is cleared more slowly and its effect lasts longer -- so poor metabolizers\
+  \ the drug is cleared more slowly and its effect lasts longer: so poor metabolizers\
   \ (genotypes built from more *2/*3 alleles, like *3/*3) have the most long-lasting\
   \ effect, extensive metabolizers (*1/*1) clear it fastest and have the shortest-lasting\
   \ effect, and intermediate genotypes (*1/*2) fall in between. This gives the order\
@@ -3374,7 +3374,7 @@ rounds:
   \ genome replication fidelity). A genome that is unusually large for an RNA virus\
   \ (d) accumulates more replication errors per genome copied, and having a genome\
   \ effectively organized into separable/polycistronic segments (e) increases opportunities\
-  \ for recombination between co-infecting viral genomes -- both d) and e) increase\
+  \ for recombination between co-infecting viral genomes: both d) and e) increase\
   \ genomic variation, matching option 8."
           - letter: "Q29-2"
             type: "mcq"
@@ -3390,7 +3390,7 @@ rounds:
   \ multiple distinct coronavirus types co-circulating in one bat colony (b) shows\
   \ the rich viral reservoir and opportunity for recombination that exists there.\
   \ Habitat changes from climate change (d) push bats and other wildlife into closer\
-  \ contact with humans and livestock, increasing spillover opportunities -- together\
+  \ contact with humans and livestock, increasing spillover opportunities: together\
   \ a, b, and d best explain increased transmission risk, while nocturnal habits (c)\
   \ and insect diet (e) are not themselves transmission-relevant factors."
 
@@ -3413,7 +3413,7 @@ rounds:
   \ Working this out from the growth curves: 12L12D forms about 18-10+1 = 9 red leaves,\
   \ 8L16D about 10-4.5+1 = 6.5, 7L8D1L8D about 10-6+1 = 5, 14L10D about 21.5-19+1\
   \ = 3.5, and 16L8D forms no red leaves at all (0) since it never induces red leaf\
-  \ formation -- giving the descending order 12L12D > 8L16D > 7L8D1L8D > 14L10D >\
+  \ formation: giving the descending order 12L12D > 8L16D > 7L8D1L8D > 14L10D >\
   \ 16L8D."
           - letter: "Q30-2"
             type: "mcq"
@@ -3463,8 +3463,8 @@ rounds:
   \ added, showing it responds normally to auxin (its lack of buds under natural conditions\
   \ is instead a cytokinin-secretion defect, not a loss of auxin sensitivity), so\
   \ B = normal. Bud formation naturally occurs only without medium exchange, i.e.\
-  \ when secreted hormones are allowed to build up and reach a high local concentration\
-  \ -- since protonemata growing at higher density would collectively secrete more\
+  \ when secreted hormones are allowed to build up and reach a high local concentration:\
+  \ since protonemata growing at higher density would collectively secrete more\
   \ hormone into a shared local volume, reaching the required threshold more easily,\
   \ C = higher."
 
@@ -3490,8 +3490,8 @@ rounds:
   \ that higher turgor pressure increases bending (A = increased). The isolated outer\
   \ layer alone, in water, is described as shrinking longitudinally, meaning the outer\
   \ layer's cells are under longitudinal tension in the intact valve; making a shallow\
-  \ cut perpendicular to that tension -- i.e. a cut running in the transverse direction\
-  \ -- would let that stored longitudinal stress relax and pull the cut open immediately\
+  \ cut perpendicular to that tension: i.e. a cut running in the transverse direction:\
+  \ would let that stored longitudinal stress relax and pull the cut open immediately\
   \ (B = transverse). Since the outer layer shrinks longitudinally when hydrated (freed\
   \ from the inner layer's restraint) rather than expanding, the underlying cause\
   \ is the outer layer's cells swelling (getting wider/thicker) in water compared\
@@ -3519,7 +3519,7 @@ rounds:
             explanation: "Stomata, trichomes, cuticle thickness, epidermal cell shape, chloroplast development,\
   \ and intercellular air space are all surface/functional features that get heavily\
   \ and convergently modified in any tendril regardless of its origin, since a tendril's\
-  \ job (grasping a support) is so different from a normal leaf or stem's job -- these\
+  \ job (grasping a support) is so different from a normal leaf or stem's job: these\
   \ features are not reliable indicators of origin. The relative positional arrangement\
   \ of xylem and phloem within the vascular bundle, however, is a developmentally\
   \ constrained trait that differs consistently between leaves (typically xylem facing\
@@ -3553,7 +3553,7 @@ rounds:
             answer: "7"
             explanation: "Isolating P0 disturbed the position of P2 (the second-next leaf after the cut), not\
   \ just P1, showing that a leaf two positions back (not just the immediately preceding\
-  \ one) continues to exert influence on where later leaves form -- so it is two preceding\
+  \ one) continues to exert influence on where later leaves form: so it is two preceding\
   \ leaves that matter, not just one, matching B over A. Since the cut, made only\
   \ after P0 itself had already arisen, still changed where P2 (not P1) later formed,\
   \ this indicates P1's position was already fixed by the time of the cut while P2's\
@@ -3584,7 +3584,7 @@ rounds:
   \ (A = lowers). Ammonium-grown plants skip the reductant-hungry nitrate-to-ammonium\
   \ step entirely, so their CAQ is higher (closer to the value without that competing\
   \ demand) whenever the nitrate-to-ammonium process would otherwise have been very\
-  \ active -- meaning a bigger gap (deltaCAQ = CAQ_ammonium - CAQ_nitrate) shows up\
+  \ active: meaning a bigger gap (deltaCAQ = CAQ_ammonium - CAQ_nitrate) shows up\
   \ specifically when that process's activity is high, a positive correlation (B =\
   \ positively)."
           - letter: "Q35-2"
@@ -3718,7 +3718,7 @@ rounds:
   \ part of the functional hormone) is under the least functional constraint and should\
   \ have the highest substitution rate, with the C-domain (a connecting peptide with\
   \ some functional role in proper folding/processing but not the active hormone itself)\
-  \ falling in between -- giving b (A-B domain, lowest) < c (C-domain) < a (predomain,\
+  \ falling in between: giving b (A-B domain, lowest) < c (C-domain) < a (predomain,\
   \ highest)."
 
       - id: q39
@@ -3769,7 +3769,7 @@ rounds:
   \ plastid in the first place. When the ancestor of chlorarachniophytes then engulfed\
   \ that whole green alga (secondary endosymbiosis), the green alga's own plasma membrane\
   \ became the third membrane (c), and the phagosomal membrane from the chlorarachniophyte\
-  \ ancestor's own engulfing vacuole became the outermost, fourth membrane (d) --\
+  \ ancestor's own engulfing vacuole became the outermost, fourth membrane (d):\
   \ giving (a) cyanobacterium, (b) cyanobacterium, (c) green alga, (d) ancestor of\
   \ chlorarachniophytes."
 
@@ -3836,12 +3836,12 @@ rounds:
             options: [{key: "1", text: "A=a, B=d, C=c, D=b"}, {key: "2", text: "A=a, B=c, C=d, D=b"}, {key: "3", text: "A=b, B=a, C=c, D=d"}, {key: "4", text: "A=b, B=d, C=c, D=a"}, {key: "5", text: "A=c, B=a, C=d, D=b"}, {key: "6", text: "A=c, B=a, C=b, D=d"}]
             answer: "3"
             explanation: "Apical damage (b) removes the dominant shoot tip and releases lateral buds from apical\
-  \ dominance, producing a bushier plant with multiple side branches -- matching diagram\
+  \ dominance, producing a bushier plant with multiple side branches: matching diagram\
   \ A. Soil fertilization (a) provides abundant nutrients supporting vigorous, larger\
-  \ overall growth -- matching diagram B. Shade condition (c) triggers the shade-avoidance\
-  \ response of spindly, elongated internodes reaching for light -- matching diagram\
+  \ overall growth: matching diagram B. Shade condition (c) triggers the shade-avoidance\
+  \ response of spindly, elongated internodes reaching for light: matching diagram\
   \ C. Trampling pressure (d) physically suppresses vertical growth, producing a flattened,\
-  \ low-growing form -- matching diagram D. This gives A=b, B=a, C=c, D=d."
+  \ low-growing form: matching diagram D. This gives A=b, B=a, C=c, D=d."
 
       - id: q43
         number: "Q43"
@@ -3937,6 +3937,6 @@ rounds:
   \ recycling accumulate it over time. Phosphorus, by contrast, is present from the\
   \ start (released by rock weathering as soon as the glacier retreats) but only gets\
   \ depleted over time through plant uptake, storage in standing biomass, and leaching\
-  \ losses that outpace the slow rate of new weathering -- so P should start relatively\
+  \ losses that outpace the slow rate of new weathering: so P should start relatively\
   \ high and decline through succession. This rising-N, falling-P pattern matches\
   \ panel (2)."

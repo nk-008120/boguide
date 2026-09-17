@@ -1,6 +1,6 @@
-{{- /* Mermaid — project override of themes/hextra/layouts/_partials/scripts/mermaid.html.
+{{- /* Mermaid: project override of themes/hextra/layouts/_partials/scripts/mermaid.html.
      Adds a post-render sizing fix: Mermaid's default useMaxWidth:true sets width="100%"
-     on the rendered <svg>, which shrinks large diagrams to fit the content column — since
+     on the rendered <svg>, which shrinks large diagrams to fit the content column: since
      Mermaid's own text font-sizes live in that same internal viewBox coordinate system,
      shrinking the SVG shrinks the text proportionally too, down to illegible sizes for any
      diagram whose natural size exceeds ~650-900px. Fix: explicitly size each diagram's SVG

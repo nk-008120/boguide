@@ -1,0 +1,75 @@
+topic: "transcription-rna-processing"
+topicName: "Transcription & RNA Processing"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "transcription-rna-processing-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "A particular triplet of bases in the template strand of DNA is 5′-AGT-3′. What would be the corresponding codon for the mRNA that is transcribed?"
+    options:
+      - key: "A"
+        text: "3′-UCA-5′"
+      - key: "B"
+        text: "3′-UGA-5′"
+      - key: "C"
+        text: "5′-TCA-3′"
+      - key: "D"
+        text: "3′-ACU-5′"
+    answer: "A"
+    explanation: "The template strand 5′-AGT-3′ is read 3′→5′ by RNA polymerase, pairing A-U, G-C, T-A to build the complementary mRNA 5′-ACU-3′, i.e. 3′-UCA-5′ written template-first; matching the transcription rule (mRNA is complementary and antiparallel to the template) gives option A."
+    sourceRef: "Campbell Biology 11e, Ch. 17 (Gene Expression: From Gene to Protein)"
+
+  - id: "transcription-rna-processing-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "In eukaryotic cells, transcription cannot begin until"
+    options:
+      - key: "A"
+        text: "the two DNA strands have completely separated and exposed the promoter."
+      - key: "B"
+        text: "several transcription factors have bound to the promoter."
+      - key: "C"
+        text: "the 5 caps are removed from the mRNA."
+      - key: "D"
+        text: "the DNA introns are removed from the template."
+    answer: "B"
+    explanation: "Eukaryotic RNA polymerase II cannot bind the promoter on its own: general transcription factors must first assemble on the promoter to form the transcription initiation complex before RNA polymerase can begin transcribing."
+    sourceRef: "Campbell Biology 11e, Ch. 17 (Gene Expression: From Gene to Protein)"
+
+  - id: "transcription-rna-processing-03"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "In an experimental situation, a student researcher inserts an mRNA molecule into a eukaryotic cell after she has removed its 5′ cap and poly-A tail. Which of the following processes would you expect her to find to have occurred?"
+    options:
+      - key: "A"
+        text: "The mRNA is quickly converted into a ribosomal subunit."
+      - key: "B"
+        text: "The cell adds a new poly-A tail to the mRNA."
+      - key: "C"
+        text: "The mRNA attaches to a ribosome and is translated, but more slowly."
+      - key: "D"
+        text: "The molecule is digested by enzymes because it is not protected at the 5′ end."
+    answer: "D"
+    explanation: "Both the 5′ cap and poly-A tail protect an mRNA from degradation by exonucleases and are required for efficient ribosome binding; without them the transcript is rapidly digested by cellular RNases rather than translated."
+    sourceRef: "Campbell Biology 11e, Ch. 17 (Gene Expression: From Gene to Protein)"
+
+  - id: "transcription-rna-processing-04"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Use this model of a eukaryotic transcript to answer the following question. E = exon and I = intron 5′-UTR E1 I1 E2 I2 E3 I3 E4 UTR-3′ Which components of the previous molecule will also be found in mRNA in the cytosol?"
+    options:
+      - key: "A"
+        text: "5′-UTR I1 I2 I3 UTR-3′"
+      - key: "B"
+        text: "5′-E1 E2 E3 E4-3′"
+      - key: "C"
+        text: "5′-UTR E1 E2 E3 E4 UTR-3′"
+      - key: "D"
+        text: "5′-E1 I1 E2 I2 E3 I3 E4-3′"
+    answer: "C"
+    explanation: "Introns are removed and exons are spliced together during RNA processing, and the 5′ and 3′ UTRs remain part of the mature transcript flanking the coding exons, so the cytosolic mRNA retains only 5′-UTR + E1 + E2 + E3 + E4 + UTR-3′."
+    sourceRef: "Campbell Biology 11e, Ch. 17 (Gene Expression: From Gene to Protein)"

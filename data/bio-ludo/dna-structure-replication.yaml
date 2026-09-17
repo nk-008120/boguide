@@ -1,0 +1,93 @@
+topic: "dna-structure-replication"
+topicName: "DNA Structure & Replication"
+source: "Campbell Biology, 11e (Urry et al.): Instructor Test Bank"
+questions:
+  - id: "dna-structure-replication-01"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Cytosine makes up 42% of the nucleotides in a sample of DNA from an organism. Approximately what percentage of the nucleotides in this sample will be thymine?"
+    options:
+      - key: "A"
+        text: "8%"
+      - key: "B"
+        text: "16%"
+      - key: "C"
+        text: "42%"
+      - key: "D"
+        text: "58%"
+    answer: "A"
+    explanation: "By Chargaff's rules %A = %T and %G = %C; if C = 42%, then G is also 42% (G+C = 84%), leaving A+T = 16%, split evenly so T ≈ 8%."
+    sourceRef: "Campbell Biology 11e, Ch. 16 (The Molecular Basis of Inheritance)"
+
+  - id: "dna-structure-replication-02"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "In his transformation experiments, what phenomenon did Griffith observe?"
+    options:
+      - key: "A"
+        text: "Mixing a heat-killed pathogenic strain of bacteria with a living nonpathogenic strain can convert some of the living cells into the pathogenic form."
+      - key: "B"
+        text: "Mixing a heat-killed nonpathogenic strain of bacteria with a living pathogenic strain makes the pathogenic strain nonpathogenic."
+      - key: "C"
+        text: "Infecting mice with nonpathogenic strains of bacteria makes them resistant to pathogenic strains."
+      - key: "D"
+        text: "Mice infected with a pathogenic strain of bacteria can spread the infection to other mice."
+    answer: "A"
+    explanation: "Griffith found that mixing heat-killed pathogenic (S-strain) bacteria with live nonpathogenic (R-strain) bacteria transformed some of the living R cells into the pathogenic S form, showing that a heritable substance had passed from the dead cells to the living ones."
+    sourceRef: "Campbell Biology 11e, Ch. 16 (The Molecular Basis of Inheritance)"
+
+  - id: "dna-structure-replication-03"
+    type: mcq
+    difficulty: hard
+    letter: "A"
+    text: "A heat-killed, phosphorescent (light-emitting) strain of bacteria is mixed with a living, non- phosphorescent strain. Further observations of the mixture show that some of the living cells are now phosphorescent. Which of the following observations would provide the best evidence that the ability to phosphoresce is a heritable trait?"
+    options:
+      - key: "A"
+        text: "evidence that DNA was passed from the heat-killed strain to the living strain"
+      - key: "B"
+        text: "evidence that protein passed from the heat-killed strain to the living strain"
+      - key: "C"
+        text: "especially bright phosphorescence in the living strain"
+      - key: "D"
+        text: "phosphorescence in descendants of the living cells"
+    answer: "D"
+    explanation: "The defining test of heritability is whether the trait is passed on to descendants; observing phosphorescence persisting in the descendants of the transformed living cells shows the change was incorporated into the genetic material and propagated, not just a one-time chemical effect."
+    sourceRef: "Campbell Biology 11e, Ch. 16 (The Molecular Basis of Inheritance)"
+
+  - id: "dna-structure-replication-04"
+    type: mcq
+    difficulty: medium
+    letter: "A"
+    text: "Thymine makes up 28% of the nucleotides in a sample of DNA from an organism. Approximately what percentage of the nucleotides in this sample will be guanine?"
+    options:
+      - key: "A"
+        text: "8%"
+      - key: "B"
+        text: "16%"
+      - key: "C"
+        text: "22%"
+      - key: "D"
+        text: "72%"
+    answer: "C"
+    explanation: "By Chargaff's rules %A = %T and %G = %C; if T = 28%, then A is also 28% (A+T = 56%), leaving G+C = 44%, split evenly so G ≈ 22%."
+    sourceRef: "Campbell Biology 11e, Ch. 16 (The Molecular Basis of Inheritance)"
+
+  - id: "dna-structure-replication-05"
+    type: mcq
+    difficulty: easy
+    letter: "A"
+    text: "In his work with pneumonia-causing bacteria and mice, Griffith found that"
+    options:
+      - key: "A"
+        text: "the protein coat from pathogenic cells was able to transform nonpathogenic cells."
+      - key: "B"
+        text: "heat-killed pathogenic cells caused pneumonia."
+      - key: "C"
+        text: "some substance from pathogenic cells was transferred to nonpathogenic cells, making them pathogenic."
+      - key: "D"
+        text: "the polysaccharide coat of bacteria caused pneumonia."
+    answer: "C"
+    explanation: "Griffith's mouse experiments showed that some substance released from the heat-killed pathogenic bacteria was taken up by the living nonpathogenic bacteria, converting (transforming) them into the disease-causing form."
+    sourceRef: "Campbell Biology 11e, Ch. 16 (The Molecular Basis of Inheritance)"

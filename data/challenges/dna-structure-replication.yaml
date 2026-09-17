@@ -40,17 +40,17 @@ questions:
 
       C. Increasing salt concentration leads to increased hydrogen bonding between the DNA strands.
 
-      D. If one measures absorbance of the DNA strands at 260 nm, R is likely to show greatest absorbance at any temperature between 70–100°C as compared to P and Q.
+      D. If one measures absorbance of the DNA strands at 260 nm, R is likely to show greatest absorbance at any temperature between 70-100°C as compared to P and Q.
     solution: |
       **Answer: B**
 
-      **A. Incorrect** — Increasing salt concentration generally *decreases* thermolability of DNA because it stabilizes the double helix.
+      **A. Incorrect**: Increasing salt concentration generally *decreases* thermolability of DNA because it stabilizes the double helix.
 
-      **B. Correct** — DNA has a negatively charged phosphate backbone. At low salt concentration (P), there are fewer positive ions to shield these negative charges, so repulsion between like charges is greatest in P.
+      **B. Correct**: DNA has a negatively charged phosphate backbone. At low salt concentration (P), there are fewer positive ions to shield these negative charges, so repulsion between like charges is greatest in P.
 
-      **C. Incorrect** — Increasing salt concentration does not increase hydrogen bonds between complementary bases. Salt stabilizes DNA mainly by shielding negative charges on phosphate backbones, reducing electrostatic repulsion.
+      **C. Incorrect**: Increasing salt concentration does not increase hydrogen bonds between complementary bases. Salt stabilizes DNA mainly by shielding negative charges on phosphate backbones, reducing electrostatic repulsion.
 
-      **D. Incorrect** — Higher salt concentration increases DNA stability and raises its melting temperature. At temperatures between 70–100°C, the sample with the lowest salt concentration (P) would denature more readily and show greater hyperchromicity — not R.
+      **D. Incorrect**: Higher salt concentration increases DNA stability and raises its melting temperature. At temperatures between 70-100°C, the sample with the lowest salt concentration (P) would denature more readily and show greater hyperchromicity: not R.
 
   - id: 3
     difficulty: "hard"
@@ -85,10 +85,10 @@ questions:
 
       Since equal quantities of DNA are used, Sample I has fewer different sequence species, so each individual fragment type is present at a higher concentration. Sample I reassociates **faster** than Sample II.
 
-      **A — False**: I reassociates faster, so it contains *less* ssDNA available for S1 nuclease digestion.
+      **A: False**: I reassociates faster, so it contains *less* ssDNA available for S1 nuclease digestion.
 
-      **B — True**: II reassociates more slowly, so less dsDNA is formed and the decrease in absorbance (hypochromicity) is smaller.
+      **B: True**: II reassociates more slowly, so less dsDNA is formed and the decrease in absorbance (hypochromicity) is smaller.
 
-      **C — False**: Different extents of reassociation mean different amounts of dsDNA, causing different reductions in A₂₆₀.
+      **C: False**: Different extents of reassociation mean different amounts of dsDNA, causing different reductions in A₂₆₀.
 
-      **D — False**: Since the amount of ssDNA differs, S1 nuclease digestion will also differ.
+      **D: False**: Since the amount of ssDNA differs, S1 nuclease digestion will also differ.

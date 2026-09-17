@@ -1,23 +1,23 @@
 {{- /* Attempt-and-mark quiz, data-driven from data/papers/<ol>/<year>.yaml.
      Usage: {{< papers-quiz olympiad="ibo" year="2022" round="theoretical-1" problem="q1" >}}
-     Looks up problems[].statements for the given problem id — single source
+     Looks up problems[].statements for the given problem id: single source
      of truth shared with any future exam/attempt mode.
 
      Each statement supports an optional `type` field (added 2026-08-11 for
      IBO 2019, whose questions are far more heterogeneous than 2022/2024's
-     uniform 4-statement TRUE/FALSE format) — omitted/absent means
+     uniform 4-statement TRUE/FALSE format): omitted/absent means
      "true_false", so every pre-existing exam's data needs zero changes:
        - true_false (default): letter, text, answer (bool), explanation
        - mcq: letter, text, options: [{key, text}], answer (an option key),
          explanation. Also used for "matching"-style questions from the
          source exam (e.g. "assign each of 5 slots one of 3 category
-         letters") — each slot becomes its own mcq statement sharing the
+         letters"): each slot becomes its own mcq statement sharing the
          same options list, rather than inventing a separate matching type.
        - numeric: letter, text, expected (number), tolerance (number,
          default 0), unit (optional, shown after the input), explanation
        - free_response: letter, text, modelAnswer, explanation (optional).
          Not graded right/wrong (the source exam gives a descriptive model
-         answer, not a single checkable value) — revealed on its own,
+         answer, not a single checkable value): revealed on its own,
          independent of Check Answers, and excluded from the score. */ -}}
 {{- $olId := .Get "olympiad" -}}
 {{- $yearId := .Get "year" -}}
@@ -57,7 +57,7 @@
 
       {{- else if eq $type "free_response" }}
       <button type="button" class="tf-btn tf-reveal-btn">Reveal Model Answer</button>
-      <div class="tf-quiz-feedback tf-model-answer" hidden>{{ .modelAnswer }}{{ with .explanation }} — {{ . }}{{ end }}</div>
+      <div class="tf-quiz-feedback tf-model-answer" hidden>{{ .modelAnswer }}{{ with .explanation }}: {{ . }}{{ end }}</div>
 
       {{- else }}
       <div class="tf-quiz-toggle" role="group" aria-label="Statement {{ .letter }}">
@@ -144,7 +144,7 @@
         var correctBtn = row.querySelector('.tf-btn-mcq[data-value="' + row.dataset.answer + '"]');
         if (correctBtn) correctBtn.classList.add('correct-answer');
       }
-      fb.textContent = (isCorrect ? '✓ Correct — ' : '✗ Incorrect — ') + row.dataset.explanation;
+      fb.textContent = (isCorrect ? '✓ Correct: ' : '✗ Incorrect: ') + row.dataset.explanation;
     });
     var scoreEl = wrap.querySelector('.tf-quiz-score');
     scoreEl.textContent = allAnswered

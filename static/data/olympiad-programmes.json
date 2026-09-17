@@ -1,6 +1,14 @@
 {
-  "lastUpdated": "2026-09-13",
+  "lastUpdated": "2026-09-17",
   "countries": {
+    "KG": {
+      "name": "Kyrgyzstan",
+      "flag": "🇰🇬",
+      "programme": "National Biology Olympiad (NBO)",
+      "guideUrl": "/biobytes/testimonials/kyrgyzstan-ulukbek-bronze/",
+      "status": "published",
+      "stages": "Round 1 > Round 2 > Round 3 (top 100) > Round 4 (top 20-30) > IBO"
+    },
     "IN": {
       "name": "India",
       "flag": "🇮🇳",
