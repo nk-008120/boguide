@@ -33,6 +33,9 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Install api/ dependencies (needed by the grading unit tests below)
+        run: npm install
+
       - name: BiOLab RLS + submission-flow tests
         working-directory: tests/biolab
         run: |
@@ -44,3 +47,7 @@ jobs:
         run: |
           npm install
           npm test
+
+      - name: Grading logic unit tests
+        working-directory: tests/grading
+        run: npm test

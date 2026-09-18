@@ -1,0 +1,11 @@
+{
+  "name": "grading-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Unit tests for BiOClash's and BiOrchive's pure grading functions (api/_lib/bioclash.js, api/submit-attempt.js). No database, no network -- these run against the real source files directly.",
+  "main": "test.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "node test.mjs"
+  }
+}

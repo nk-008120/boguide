@@ -62,6 +62,14 @@ Dedicated preparation guides for specific competitions: IBO, USABO, and INBO.
 
 Articles and testimonials: competition experiences from medalists (Belgium, Azerbaijan, Slovakia, Turkmenistan), lab recommendations, and topical articles.
 
+### BiOLudo
+
+A childhood ludo variant integrated with biology quizzes to create the first interactive fun and learning game for BiOlogy enthusiasts when they are bored. Special question bank of its own.
+
+### About, Tribute sections
+
+Visit /about and /tribute
+
 ---
 
 ## Tech Stack
@@ -81,7 +89,7 @@ Articles and testimonials: competition experiences from medalists (Belgium, Azer
 
 ### Design Identity
 
-- **Palette:** Lilac (`#8965c4`) + Sage (`#5c7a58`), custom gradient background
+- **Palette:** Lilac (`#8965c4`) + Sage (`#5c7a58`), custom gradient background (for-her).
 - **Typography:** Fraunces (display serif) for headings, Inter for body
 - **Themes:** Light / Dark / System / Favourite (a 4th custom theme, the default)
 - **Difficulty badges:** Beginner (green), Intermediate (amber), Advanced (purple)
@@ -90,24 +98,96 @@ Articles and testimonials: competition experiences from medalists (Belgium, Azer
 
 ## Project Structure
 
-```
-content/
-  resources/          # Notes@BiOGuide: 15 topic sections, 127+ subtopics
-  papers/             # BiOrchive: past papers, questions, leaderboards
-  bioclash/           # BiOClash: competitive rounds
-  biolab/             # BiOLab: protocol archive
-  doubts/             # Q&A
-  dashboard/          # Study dashboard
-  biobytes/           # Articles & testimonials
-  ibo-preparation/    # IBO prep guide
-  usabo-preparation/  # USABO prep guide
-  inbo-preparation/   # INBO prep guide
-api/                  # Vercel serverless functions (11 routes)
-static/js/            # Client-side JS (24 files)
-assets/css/           # Custom stylesheets
-layouts/              # Hugo templates & shortcodes
-data/                 # Structured data (challenges, BiOClash config)
-```
+Explained in detail in ARCHITECTURE.md
+
+Mermaid.js for GitDiagram:
+
+flowchart TD
+
+subgraph group_learning["Published Learning"]
+  node_prep["Olympiad Guide<br/>content surface"]
+  node_ibo["IBO Guide<br/>content surface"]
+  node_papers["Past Papers<br/>content surface"]
+  node_clashpages["BiOClash Pages<br/>content surface"]
+  node_labarchive["Protocol Archive<br/>content surface"]
+  node_dashboard["Study Dashboard<br/>content surface"]
+  node_doubts["Doubts Q&amp;A<br/>content surface"]
+  node_biobytes["BiOBytes Content<br/>content surface"]
+end
+
+subgraph group_contributions["BiOrchive Contributions"]
+  node_papersauth["Papers Auth Client<br/>browser auth client"]
+  node_review["Review Console<br/>staff review UI"]
+  node_ingest["Paper Ingestion<br/>assembly pipeline"]
+end
+
+subgraph group_bioclash["BiOClash Runtime"]
+  node_attemptapi["Attempt State API<br/>POST API"]
+  node_bioclashcore["BiOClash Core<br/>domain service"]
+  node_admin["BiOClash Operations<br/>operations handler"]
+end
+
+subgraph group_biolab["BiOLab Calibration"]
+  node_calibrate["Calibration Function<br/>POST function"]
+end
+
+subgraph group_external["External Services"]
+  node_identity["Supabase Identity<br/>auth service"]
+  node_attemptdb[("Attempt Database<br/>state store")]
+  node_storage[("Contribution Storage<br/>object storage")]
+end
+
+subgraph group_actors["External Actors"]
+  node_learner["Learner Browser<br/>external actor"]
+  node_reviewer["Staff Reviewer<br/>external actor"]
+end
+
+node_learner -->|"POST paper ID"| node_attemptapi
+node_attemptapi -->|"invoke runtime"| node_bioclashcore
+node_bioclashcore -->|"validate token"| node_identity
+node_attemptapi -->|"read and write state"| node_attemptdb
+node_attemptapi -->|"return state"| node_learner
+node_admin -->|"load and grade"| node_bioclashcore
+node_admin -->|"finalize results"| node_attemptdb
+node_reviewer -->|"open console"| node_review
+node_review -->|"get session"| node_papersauth
+node_papersauth -->|"manage auth"| node_identity
+node_review -->|"review submissions"| node_attemptdb
+node_review -->|"sign file URLs"| node_storage
+node_ingest -->|"generate paper content"| node_papers
+node_learner -->|"POST calibration image"| node_calibrate
+node_calibrate -->|"verify token"| node_identity
+
+click node_prep "https://github.com/nk-008120/boguide/tree/main/content/biology-olympiad-preparation"
+click node_ibo "https://github.com/nk-008120/boguide/tree/main/content/ibo-preparation"
+click node_papers "https://github.com/nk-008120/boguide/tree/main/content/papers"
+click node_clashpages "https://github.com/nk-008120/boguide/tree/main/content/bioclash"
+click node_labarchive "https://github.com/nk-008120/boguide/tree/main/content/biolab"
+click node_dashboard "https://github.com/nk-008120/boguide/tree/main/content/dashboard"
+click node_doubts "https://github.com/nk-008120/boguide/tree/main/content/doubts"
+click node_biobytes "https://github.com/nk-008120/boguide/tree/main/content/biobytes"
+click node_papersauth "https://github.com/nk-008120/boguide/blob/main/static/js/papers-auth.js"
+click node_review "https://github.com/nk-008120/boguide/blob/main/static/js/papers-contribute-review.js"
+click node_ingest "https://github.com/nk-008120/boguide/blob/main/scripts/papers_ingest/assemble.py"
+click node_attemptapi "https://github.com/nk-008120/boguide/blob/main/api/bioclash-attempt-state.js"
+click node_bioclashcore "https://github.com/nk-008120/boguide/blob/main/api/_lib/bioclash.js"
+click node_admin "https://github.com/nk-008120/boguide/blob/main/api/bioclash-admin.js"
+click node_calibrate "https://github.com/nk-008120/boguide/blob/main/supabase/functions/biolab-calibrate-delta/index.ts"
+
+classDef toneNeutral fill:#f8fafc,stroke:#334155,stroke-width:1.5px,color:#0f172a
+classDef toneBlue fill:#dbeafe,stroke:#2563eb,stroke-width:1.5px,color:#172554
+classDef toneAmber fill:#fef3c7,stroke:#d97706,stroke-width:1.5px,color:#78350f
+classDef toneMint fill:#dcfce7,stroke:#16a34a,stroke-width:1.5px,color:#14532d
+classDef toneRose fill:#ffe4e6,stroke:#e11d48,stroke-width:1.5px,color:#881337
+classDef toneIndigo fill:#e0e7ff,stroke:#4f46e5,stroke-width:1.5px,color:#312e81
+classDef toneTeal fill:#ccfbf1,stroke:#0f766e,stroke-width:1.5px,color:#134e4a
+class node_prep,node_ibo,node_papers,node_clashpages,node_labarchive,node_dashboard,node_doubts,node_biobytes toneBlue
+class node_papersauth,node_review,node_ingest toneAmber
+class node_attemptapi,node_bioclashcore,node_admin toneMint
+class node_calibrate toneRose
+class node_identity,node_attemptdb,node_storage toneIndigo
+class node_learner,node_reviewer toneTeal
+
 
 ---
 
@@ -141,7 +221,7 @@ Two test suites verify RLS behavior against real Postgres (`tests/biolab/`, `tes
 
 ## Contributing
 
-Want to add a past paper to BiOrchive yourself, using git and your own Claude session? See
+Want to add a past paper to BiOrchive yourself, using git and your own pipeline? See
 [CONTRIBUTING_PAPERS.md](CONTRIBUTING_PAPERS.md) for the workflow, the licensing checks a
 paper has to clear first, and the prompts to use. If you would rather hand off a paper
 without touching the repository, use the in-browser form at

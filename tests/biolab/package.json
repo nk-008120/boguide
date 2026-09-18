@@ -6,7 +6,7 @@
   "main": "test.mjs",
   "type": "module",
   "scripts": {
-    "test": "node test.mjs && node test-archive.mjs && node test-submit.mjs && node test-moderation.mjs && node test-multi-image-and-attachments.mjs"
+    "test": "node test.mjs && node test-archive.mjs && node test-submit.mjs && node test-moderation.mjs && node test-multi-image-and-attachments.mjs && node test-feedback-moderation.mjs"
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.5.8"

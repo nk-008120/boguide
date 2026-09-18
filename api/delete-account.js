@@ -1,5 +1,6 @@
-const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
+const { getAdminClient } = require('./_lib/supabaseAdmin');
 const { captureError } = require('./_lib/sentry');
+const { authenticate } = require('./_lib/auth');
 
 module.exports = async (req, res) => {
   try {
@@ -17,30 +18,8 @@ async function handle(req, res) {
     return;
   }
 
-  const authHeader = req.headers.authorization || '';
-  const match = /^Bearer\s+(.+)$/.exec(authHeader);
-  if (!match) {
-    res.status(401).json({ error: 'Missing bearer token' });
-    return;
-  }
-  const token = match[1];
-
-  let userId;
-  try {
-    const anon = getAnonClient();
-    const { data, error } = await anon.auth.getUser(token);
-    if (error || !data || !data.user) {
-      console.error('[delete-account] auth.getUser rejected:', error);
-      res.status(401).json({ error: 'Invalid or expired session' });
-      return;
-    }
-    userId = data.user.id;
-  } catch (e) {
-    console.error('[delete-account] auth check threw:', e);
-    await captureError(e, { route: 'delete-account', stage: 'auth-check' });
-    res.status(500).json({ error: 'Auth check failed' });
-    return;
-  }
+  const userId = await authenticate(req, res, 'delete-account', 3, 300000);
+  if (!userId) return;
 
   const admin = getAdminClient();
 

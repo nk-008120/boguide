@@ -1,12 +1,17 @@
 const fs = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
-const { getAdminClient, getAnonClient } = require('./_lib/supabaseAdmin');
+const { getAdminClient } = require('./_lib/supabaseAdmin');
 const { captureError } = require('./_lib/sentry');
+const { authenticate } = require('./_lib/auth');
 
 const ID_PATTERN = /^[a-z0-9-]+$/;
 
-function loadRound(olympiad, year, roundId) {
+const roundsCache = new Map();
+
+function loadRounds(olympiad, year) {
+  const cacheKey = `${olympiad}:${year}`;
+  if (roundsCache.has(cacheKey)) return roundsCache.get(cacheKey);
   const filePath = path.join(__dirname, '..', 'data', 'papers', olympiad, `${year}.yaml`);
   let raw;
   try {
@@ -16,6 +21,13 @@ function loadRound(olympiad, year, roundId) {
   }
   const doc = yaml.load(raw);
   const rounds = (doc && doc.rounds) || [];
+  roundsCache.set(cacheKey, rounds);
+  return rounds;
+}
+
+function loadRound(olympiad, year, roundId) {
+  const rounds = loadRounds(olympiad, year);
+  if (!rounds) return null;
   return rounds.find((r) => r.id === roundId) || null;
 }
 
@@ -78,30 +90,8 @@ async function handle(req, res) {
     return;
   }
 
-  const authHeader = req.headers.authorization || '';
-  const match = /^Bearer\s+(.+)$/.exec(authHeader);
-  if (!match) {
-    res.status(401).json({ error: 'Missing bearer token' });
-    return;
-  }
-  const token = match[1];
-
-  let userId;
-  try {
-    const anon = getAnonClient();
-    const { data, error } = await anon.auth.getUser(token);
-    if (error || !data || !data.user) {
-      console.error('[submit-attempt] auth.getUser rejected:', error);
-      res.status(401).json({ error: 'Invalid or expired session' });
-      return;
-    }
-    userId = data.user.id;
-  } catch (e) {
-    console.error('[submit-attempt] auth check threw:', e);
-    await captureError(e, { route: 'submit-attempt', stage: 'auth-check' });
-    res.status(500).json({ error: 'Auth check failed' });
-    return;
-  }
+  const userId = await authenticate(req, res, 'papers-submit-attempt', 10, 60000);
+  if (!userId) return;
 
   const body = req.body || {};
   const { olympiad, year, roundId, answers, timeSpent, fullscreenExits } = body;

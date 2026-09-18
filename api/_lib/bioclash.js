@@ -2,13 +2,19 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const yaml = require('js-yaml');
-const { getAnonClient } = require('./supabaseAdmin');
+const { rateLimit } = require('./rateLimit');
+const { authenticate } = require('./auth');
+
+const paperCache = new Map();
 
 function loadPaper(paperId) {
   if (!/^[a-z0-9-]+$/.test(paperId || '')) return null;
+  if (paperCache.has(paperId)) return paperCache.get(paperId);
   const filePath = path.join(process.cwd(), 'data', 'bioclash', `${paperId}.yaml`);
   if (!fs.existsSync(filePath)) return null;
-  return yaml.load(fs.readFileSync(filePath, 'utf8'));
+  const paper = yaml.load(fs.readFileSync(filePath, 'utf8'));
+  paperCache.set(paperId, paper);
+  return paper;
 }
 
 function allBlocks(paper) {
@@ -211,49 +217,6 @@ function autoGrade(paper, attemptBlockRows) {
 function extensionPenalty(paper, blocksUsed) {
   const schedule = paper.extensionCostSchedule || [];
   return schedule.slice(0, blocksUsed).reduce((a, b) => a + b, 0);
-}
-
-const rateBuckets = new Map();
-
-function rateLimit(userId, action, maxPerWindow, windowMs) {
-  const key = userId + ':' + action;
-  const now = Date.now();
-  let bucket = rateBuckets.get(key);
-  if (!bucket || now - bucket.start > windowMs) {
-    bucket = { start: now, count: 0 };
-  }
-  bucket.count += 1;
-  rateBuckets.set(key, bucket);
-  if (rateBuckets.size > 5000) {
-    for (const [k, v] of rateBuckets) {
-      if (now - v.start > windowMs) rateBuckets.delete(k);
-    }
-  }
-  return bucket.count > maxPerWindow;
-}
-
-async function authenticate(req, res, action, maxPerWindow, windowMs) {
-  const authHeader = req.headers.authorization || '';
-  const token = authHeader.startsWith('Bearer ') ? authHeader.slice(7) : null;
-  if (!token) {
-    res.status(401).json({ error: 'Missing Authorization header' });
-    return null;
-  }
-
-  const anon = getAnonClient();
-  const { data: userData, error: userError } = await anon.auth.getUser(token);
-  if (userError || !userData || !userData.user) {
-    res.status(401).json({ error: 'Invalid session' });
-    return null;
-  }
-  const userId = userData.user.id;
-
-  if (rateLimit(userId, action, maxPerWindow, windowMs)) {
-    res.status(429).json({ error: 'Too many requests' });
-    return null;
-  }
-
-  return userId;
 }
 
 function watermarkCode(userId, paperId) {

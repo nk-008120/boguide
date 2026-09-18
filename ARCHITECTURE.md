@@ -85,6 +85,94 @@ The full BiOClash-specific audit (scalability and security across all 8
 endpoints) is a separate document; ask if you need it, it isn't
 duplicated here.
 
+## BiOClash: results pipeline and registration
+
+Turning a submitted attempt into a leaderboard placement is one server-side
+pipeline, not scattered logic. `api/bioclash-admin.js` consolidates
+`export-grades`, `finalize-round`, and `cleanup` into a single file
+dispatched by an `action` field, a direct consequence of the Vercel Hobby
+plan's 12-function cap, three previously separate admin endpoints had to
+become one. `runExportGrades()` walks every component in the paper and
+classifies it as auto-graded or not via `componentIsCorrect()` (mcq,
+true_false, and numeric return a boolean, everything else returns `null`);
+the operator fills in `marksAwarded` for the manual ones and posts that
+back as `manualGrades` to `runFinalizeRound()`, which recomputes
+`autoMarks` and `manualMarks` from the same stored answers server-side
+rather than trusting anything in the request beyond the manual grade
+values themselves.
+
+A component's mark ceiling is not always its literal `marks` field.
+`componentMaxMarks()` (`api/_lib/bioclash.js`) exists because
+`free_text_for_others` components, where a student explains why every
+other option on a referenced question is wrong, are scored per option via
+`marksEach` rather than a flat `marks` value, so the real ceiling is
+`marksEach * (the referenced question's option count minus one)`. Both
+`runExportGrades()` and `runFinalizeRound()` call this instead of the
+older `comp.marks || 1` fallback, which used to treat any
+`marksEach`-only component as worth exactly 1 mark: that undercounted the
+ceiling shown to the grader, and worse, made `runFinalizeRound()`'s own
+bound check (`awarded <= marks`) reject any manually-awarded grade above 1
+as invalid, silently dropping legitimate high marks on exactly that
+component type. `scripts/validate-bioclash-paper.js` already computed a
+paper's total marks this same way at authoring time, so the fix brought
+the runtime scoring logic in line with what the validator had been
+checking all along.
+
+Placement uses `penalizedScore = rawScore * (1 - extensionPenalty)`, where
+`extensionPenalty()` sums the paper's `extensionCostSchedule` up to the
+blocks an attempt actually used. mb-01's schedule, `[0.10, 0.20, 0.35]`
+over a maximum of 3 blocks of `extensionBlockMinutes: 30` each, costs 10%
+for one block used and a cumulative 65% for all three, not a flat
+per-block rate. That penalized figure is z-scored across the round's
+field before ranking. A season's row key is the composite string
+`seasonYear + ':' + paperId` (for example `2026:mb-01`), stored in
+`bioclash_results.season`; re-running finalize for the same season key
+deletes and re-inserts rather than accumulating duplicates, which is what
+makes correcting a grading mistake after the fact safe to just re-run.
+
+That composite key format is also why the round-specific leaderboard page
+silently showed no results for a while.
+`layouts/shortcodes/bioclash-champions.html` sets `data-round` to the bare
+paper id (`round="mb-01"`), and `static/js/bioclash-champions.js`
+originally matched that against `bioclash_leaderboard.season` with strict
+equality, which never matches a value like `"2026:mb-01"`. The cumulative
+Season Champions page (`content/papers/leaderboard/`, no `round` param)
+was unaffected, since with no filter it just takes the most recent row's
+season directly, which is why the bug went unnoticed there first. The fix
+widens the match to also accept a season ending in `":" + roundFilter`,
+so a round-specific page keeps working across every season year without
+its content file needing to hardcode one.
+
+Registration for Season 1 is passwordless by design, not by omission.
+A prospective competitor fills in only an email and display name on an
+external Google Form; an Apps Script bound to that form's submission
+event calls Supabase's public `/auth/v1/otp` endpoint directly with
+`create_user: true`, using the same anon key already shipped in the
+site's own client bundle, no new Vercel endpoint and no admin or
+service-role key ever leaves Supabase. That call sends a magic link
+rather than creating a password, since the alternative, collecting a
+password on the form itself, would mean a real account credential sitting
+in the form's response data at rest, a risk not worth taking for a
+registration flow. The one code change this required was in
+`static/js/papers-account.js`: the account page's "set your password"
+screen used to appear only for `type=recovery` links, the forgot-password
+flow; the check now also matches `magiclink` and `invite`, since a
+brand-new magic-link arrival lands the user in an authenticated session
+with no password set at all, and needs the same "choose a password now"
+screen a password reset does, just without calling it a reset.
+
+Grading itself does not have to mean hand-editing the export JSON.
+`static/bioclash-admin-grade.html` is a self-contained grading console
+that never calls the admin API itself; it only builds the same
+curl/PowerShell commands `bioclash-admin.js` expects, which the grader
+copies and runs in their own terminal. It reads back whatever JSON that
+command produced, from a file drop or a paste, renders a per-participant
+grading UI with progress tracking, and autosaves marks to the browser's
+own `localStorage` as the grader works. Nothing in this tool touches
+`CRON_SECRET`, since a page reachable by URL should never be the thing
+holding an admin credential; the actual privileged call always happens in
+the grader's own terminal, never in the browser.
+
 ## BiOLab: open protocol archive, not a curated library
 
 BiOLab pivoted from a single fixed assay to an open archive: any
@@ -107,11 +195,14 @@ shipped: it caught 015's own seed insert setting `created_by` to the site
 owner's uuid instead of leaving it NULL, contradicting 015's own design,
 and it caught an early draft of 017 that added the disclaimer check
 constraint before that fix landed, which would have made the migration
-fail to apply against the live aspirin row. Its coverage stops at
-migration 017, though, the moderation, multi-image, and attachment work
-added in 019 through 040 (below) was verified against pglite at the time
-each shipped but has not been folded into this suite as a standing
-regression check.
+fail to apply against the live aspirin row. `test.mjs` itself only
+carries the schema through 017; the moderation work in 020, the
+multi-image and attachment work in 021, and the feedback-reporting and
+removal work in 040 each have their own dedicated file
+(`test-moderation.mjs`, `test-multi-image-and-attachments.mjs`,
+`test-feedback-moderation.mjs`), all run in the same `npm test` pass.
+Between them, every biolab-specific migration is now exercised as a
+standing regression check, not just verified once at ship time.
 
 Submission photos and protocol attachments are both optional file
 uploads, and their Storage RLS is deliberately asymmetric between insert
@@ -165,46 +256,157 @@ can answer. This is enforced at the RLS layer on `doubt_replies`, not just
 hidden in the UI, a non-staff user's insert is rejected by policy
 regardless of what the client sends.
 
-## BiOrchive: ingestion is a pipeline, not manual entry
 
-Past-paper ingestion (`scripts/papers_ingest/`) exists because every
-source PDF is a slightly different shape: some have clean, extractable
-text and reliable question numbering, others are OCR-quality and
-letter-spaced, others have no question numbers at all and only topic
-headers, others mark answers with a bare mark in a column with no
-adjacent letter. The pipeline's job is figure extraction, answer-key
-cross-verification against the source's own worked explanations, and
-YAML assembly, each of these steps has had to be adapted per paper, and
-the `.claude/skills/ibo-paper-ingestion` skill file documents the specific
-gotchas found so far so the next ingestion doesn't rediscover them from
-scratch. Every ingested round is independently re-verified: numeric
-answers are re-derived from first principles where possible, not just
-copied from the source's own answer key, since the source's answer key
-has itself contained real errors more than once.
+## BiOBytes: two content types under one section, one of them gated
 
-`.claude/skills/ibo-paper-ingestion` is IBO-specific by design, its
-content is a set of real findings from actual IBO papers (a figures-only
-exam PDF whose real content lived in the solutions document instead,
-answer marks distinguished only by column position with no adjacent
-letter, and so on), not a generic template. Extending the pipeline to a
-different olympiad does not mean editing that file to be more generic,
-since doing so would delete the specificity that makes it useful for
-IBO. Instead, `.claude/skills/paper-ingestion-skill-creator` is a
-meta-skill: given a new olympiad's source PDFs, it runs the same
-category of structural checks `ibo-paper-ingestion` had to work out for
-itself (does the exam PDF actually contain the questions, what does a
-header look like, is there more than one official answer source, and
-critically, what the source's own license or rights statement actually
-says, never assumed to be the same permissive terms IBO's papers carry)
-and writes a brand new sibling skill,
-`.claude/skills/<olympiad>-paper-ingestion`, containing only what was
-actually confirmed against that olympiad's real documents. `CONTRIBUTING_PAPERS.md`
-is the human-facing counterpart: it documents this same pipeline for an
-external contributor working in their own clone with their own Claude
-session, as a second, git-and-PR-based intake path alongside the
-in-app, staff-reviewed `/papers/contribute/` form
-(`supabase/migrations/028_paper_contributions.sql`), rather than a
-replacement for it.
+`content/biobytes/` holds two different kinds of content behind one set
+of tabs (`{{< tabs >}}` in `content/biobytes/_index.md`: Articles,
+Testimonials, From Social), and only one of the two is access-gated. The
+cascade at the top of that file targets `path: "/biobytes/articles/**"`
+specifically, so long-form Articles pieces get `layout: "gated-article"`
+while everything under `/biobytes/testimonials/` stays fully public. This
+is deliberate: testimonials are real students' own accounts, gating them
+behind a login wall would undercut the point of publishing them for
+other students to find.
+
+`layouts/gated-article.html` is a presentation-layer gate, not a real
+access-control boundary, and says so in its own header comment: the full
+article HTML still ships in the page source,
+`static/js/papers-article-gate.js` only toggles an
+`article-gate-unlocked` class once it confirms a session exists. The frontmatter `description` renders as an
+always-visible teaser above the gate (`.article-gate-teaser`), while the
+body (`.article-gate-body`) gets `filter: blur(6px)`, a `max-height` of
+`14rem`, and `pointer-events: none` until unlocked, at which point the CTA
+card (`#article-gate-cta`) hides and the blur lifts. If `PapersAuth` isn't
+configured at all, `unlock()` runs unconditionally rather than defaulting
+to locked, so a local dev environment without Supabase env vars simply
+never shows a gate; this fails open by design, the same posture BiOClash
+takes toward showing answers in devtools network responses versus this
+page's visual gate.
+
+Only one of the three Articles-tab entries has real content right now.
+`content/biobytes/articles/gic-2026/_index.md` is a full conference diary
+(three days of lecture notes from the Genomics India Conference 2026);
+`neuroscience/` and `lab-recommendations/` are both two-line stub pages
+(`title` plus a `description: "Coming Soon!"`) that exist so the tab's
+card grid previews what BiOBytes will eventually cover rather than
+showing only one card. Both stubs still inherit the gated layout the
+moment real content lands in them, since the cascade matches on path, not
+on whether a page currently has a body worth gating.
+
+Direct-quote, where a subject's own
+sentences go verbatim into `.testimonial-quote-block` elements and the
+surrounding prose only bridges between them, or paraphrased narrative,
+third-person storytelling built from source material with at most a
+short pull-quote. Five of the six published testimonials
+(`belgium-ibo-bronze`, `azerbaijan-huseyn`, `slovakia-daniel-bronze`,
+`hungary-botond-silver`, `kyrgyzstan-ulukbek-bronze`) use direct-quote
+style; `turkmenistan-ibo-team` is the narrative exception, since that
+piece was built from a conversation rather than a subject's own written
+words. Getting the style wrong in either direction has a real cost, not
+just a stylistic one: direct-quote style edited too freely risks putting
+words in someone's mouth they did not say, narrative style written too
+stiffly loses the personal account it exists to tell.
+
+Each testimonial's account of its country's national olympiad is
+deliberately cross-checked against an independent source (the IBO country
+profile pages at `ibo-info.org`, or the relevant ministry or olympiad
+body's own site) rather than simply repeating what the subject said, and
+closes with a `*Sources:*` citation line naming exactly what was checked.
+This matters because a testimonial is not just a personal story here, it
+is also the entry that feeds a country's card on the preparation hub's
+directory below, so a factual claim about how a selection process works
+is doing double duty as both narrative color and reference material.
+
+## The preparation hub: one country dataset feeding three surfaces
+
+`content/biology-olympiad-preparation/_index.md`
+(`/biology-olympiad-preparation/`) is a single overview page, not one of
+the three olympiad-specific deep guides it routes into (`/ibo-preparation/`,
+`/usabo-preparation/`, `/inbo-preparation/`, each its own 180 to 265 line
+page). Its own job is the syllabus learning order (a four-tier accordion
+built from `faq-item` shortcodes), the textbook progression, study
+technique advice, a depth-comparison table across School, USABO Open,
+USABO Semifinal, INBO, and IBO, study-plan routing by timeline, and a
+"Find your path" two-question picker. That picker (`#prep-picker`, an
+inline `<script>` in the content file itself rather than a separate
+static asset) is a pure lookup table: two button groups write into a
+`state` object, and `render()` just concatenates static link lists from
+two hardcoded objects (`OLYMPIAD_LINKS`, `START_LINKS`) keyed by the two
+answers. Nothing about it is personalized from a user's actual attempt
+history the way the real Dashboard is; it is a decision tree, not a
+recommendation engine.
+
+The page's country-guide UI has been through more than one shape, and the
+current one exists specifically to fix a scaling problem the earlier
+shape had. It used to be two separate hand-authored
+`.olympiad-compact-cards` rows sitting below the interactive world map,
+one for the dedicated INBO/USABO guides and one for testimonial
+countries, and every new testimonial country meant hand-editing three
+separate places: the map's own data, that compact-card row, and the
+BiOBytes Testimonials tab card. `{{< olympiad-directory >}}`
+(`layouts/shortcodes/olympiad-directory.html`,
+`static/js/olympiad-directory.js`) replaced both rows with one
+searchable, filterable grid (a text search plus All / Guide available /
+Coming soon chips) that
+fetches the same `/data/olympiad-programmes.json` the map already reads,
+so a country now only has to be added in one place to show up correctly
+in both surfaces.
+
+`static/data/olympiad-programmes.json` is that single source of truth:
+48 country entries as of this writing, 8 with `status: "published"` (a
+real `guideUrl`, highlighted purple and clickable on the map, rendered as
+an active card in the directory) and 40 `"coming-soon"` (`guideUrl:
+null`, shown muted with a "Soon" badge, not clickable). The 40 unpublished
+entries each still name a real national olympiad body rather than sitting
+in as a placeholder, so the roadmap communicates actual scope rather than
+a vague "more countries later." Two of the eight published entries (`IN`,
+`US`) point at the site's own dedicated preparation guides rather than a
+BiOBytes testimonial; the schema has no field distinguishing "official
+guide" from "community testimonial," `guideUrl` is just a URL and both
+surfaces render either kind identically.
+
+`static/images/world-map.svg` already ships a `<path id="country-XX">`
+for essentially every country, so `static/js/olympiad-map.js`'s job is
+coloring existing paths from the JSON's `status` field, not drawing new
+geography; adding a country almost never touches the SVG. The one
+per-country override that does exist is `FORCE_MARKER_CODES` (currently
+`{ HU: true }`): a country's path normally only gets an auto-added
+centroid dot, which is what actually makes a tiny country reliably
+clickable, when its bounding box falls under `SMALL_COUNTRY_MAX_DIMENSION`
+(20 map units). Hungary's shape is not small by that measure but is thin
+and squeezed between neighbors on this particular projection, so it
+needed the marker forced on regardless of bbox size.
+
+The map and the directory each fetch `/data/olympiad-programmes.json`
+independently rather than sharing one cached load, since each shortcode
+is meant to be self-contained and droppable onto a page on its own. The
+one page that currently uses both pays for that with a duplicate network
+request, accepted deliberately given the file is a few kilobytes and the
+browser cache absorbs the second request after the first page load
+anyway.
+
+This page's CSS and JS are also where the site's per-section loading
+pattern applies: `layouts/partials/custom/head-end.html` includes
+`css/prep-guide.css`, `js/prep-guide-tour.js`, and
+`js/olympiad-directory.js` only when the request path starts with
+`/biology-olympiad-preparation/`, the same pattern already used to scope
+BiOClash, BiOLab, the Dashboard, and the account pages' CSS out of the
+global bundle. That split is not fully clean here yet though: the
+`.olympiad-*` classes for the map, hero card, and directory grid still
+live in the global `assets/css/custom.css` rather than `prep-guide.css`,
+since they predate that split and were never migrated over, worth
+knowing before assuming every olympiad-related rule lives in the
+page-scoped file.
+
+The page also runs its own scoped five-step walkthrough
+(`static/js/prep-guide-tour.js`, triggered by the "Take a 10-second tour"
+button), reusing the same `.site-tutorial-*` spotlight and tooltip CSS
+classes as the sitewide onboarding tour rather than inventing new ones.
+It explicitly checks the sitewide tour's own `bioguide_tutorial_active`
+sessionStorage flag before showing its trigger button, so a visitor
+already mid-way through the global tour never sees two competing overlays
+offering to walk them through the page at once.
 
 ## Dashboard: client-side spaced repetition
 
