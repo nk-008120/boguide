@@ -5,9 +5,19 @@ description: "Why we built BiOGuide, how content gets reviewed before publishing
 
 ## 📊 Recent Updates
 <div class="recent-updates">
-  <div class="recent-update-card recent-update-newest">
+ <div class="recent-update-card recent-update-newest">
     <div class="recent-update-icon" aria-hidden="true"></div>
     <span class="recent-update-badge">NEW</span>
+    <div class="recent-update-body">
+      <div class="recent-update-meta">
+        <span class="recent-update-date">Sep 18 2026</span>
+        <span class="recent-update-contributor">Nishit Kalani</span>
+      </div>
+      <p class="recent-update-text">Welcome to BiOGuide v2.0.0. 10000 Visits crossed! Congratulations to the whole team! New feature <a href = "https://bioguide.world/games">BiOLudo</a> launched! Sitewise security enforcement, switch to PostHog and GA4 analytics additionally, switched to a MIT license, two new team members join us as associates, BiOClash season preparations, Repository hygiene management changes executed, one new testimonial-guide from krygyzstan. Rate limiting to BiOClash API, ARCHITECTURE and README Improved, Cache YAML and tests Preparing for project finalisation for long, and shifting from supabase under consideration</p>
+    </div>
+  </div>
+  <div class="recent-update-card recent-update-newest">
+    <div class="recent-update-icon" aria-hidden="true"></div>
     <div class="recent-update-body">
       <div class="recent-update-meta">
         <span class="recent-update-date">Sep 13 2026</span>
@@ -192,6 +202,9 @@ Well, BioGuide should help you avoid these kinds of mistakes and set you on the 
 Besides being a biology enjoyer, I’m also a long-distance runner and an avid fan of RTS and TBS games.
 
 I’m currently working on establishing a pathway for Kyrgyz students to reach the IBO - basically, creating a guide to my country’s National Biology Olympiad.
+{{< /team-member >}}
+{{< team-member name="Darsh Dudhia" role="Associate (Mike Ross Class)" avatar="/ddavat.png" since="September 19th 26">}}
+Hi, I’m Darsh, a high schooler in India who has always been intrigued by biology. I got into preparing for olympiads by preparing for IJSO. After qualifying for the junior astronomy olympiad (IOAA Jr.)'s OCSC, I also got interested in astronomy. I am also preparing for the stages of IBO in India and BioGuide is a resource which will definitely help me through the process. I am going to work on: Making BiOrchive better by collecting more questions from olympiads and adding new features!
 {{< /team-member >}}
 
 ## Frequently Asked Questions

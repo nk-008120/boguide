@@ -14,29 +14,32 @@
       text: 'Check back here any time for a running log of what’s new on BiOGuide.' },
     { page: '/biology-olympiad-preparation/', selector: '.olympiad-map-section',
       title: 'Explore National Programmes',
-      text: 'Click any highlighted country on the interactive map to read about its Biology Olympiad selection process.' },
+      text: 'Click any highlighted country on the interactive map to read about its Biology Olympiad selection process and how BiOGuide fits in.' },
     { page: '/dashboard/', selector: '#dashboard-root',
       title: 'Study Dashboard',
       text: 'See your strengths, weaknesses, and what to study next. Sign in to unlock personalized recommendations.' },
     { page: '/resources/', selector: '.book-filter',
       title: 'Study Resources',
-      text: 'A graded list of recommended books and resources, filterable by topic.' },
+      text: 'A graded list of recommended books and resources, Handwritten notes with interactive learning on all IBO Topics at Notes@BiOGuide.' },
     { page: '/papers/', selector: '.hextra-cards',
       title: 'Practice Papers',
-      text: 'Browse the growing archive of translated Biology Olympiad papers, each with an interactive quiz and timed-attempt mode.' },
+      text: 'Browse the growing archive of translated Biology Olympiad papers, each with an interactive quiz and timed-attempt mode. Ties into your personalized dashboard and leaderboards seamlessly.' },
     { page: '/biobytes/', selector: '.testimonial-cards',
       activate: function () { clickTabByName('Testimonials'); },
       title: 'Reader Testimonials',
-      text: 'Hear from real Biology Olympiad students, from a Belgium bronze medallist to national teams, about how BiOGuide helped them prepare.' },
+      text: 'Hear from real Biology Olympiad students, from a Belgium bronze medallist to national teams, about how BiOGuide is helpful in preparation.' },
     { page: '/bioclash/', selector: '#bioclash-root',
       title: 'BiOClash',
       text: 'Our independent, head-to-head biology competition. Go for WAR!' },
-    { page: '/biolab/', selector: '.biolab-hero',
-      title: 'BiOLab',
-      text: 'A community protocol archive. Read a protocol from the archive, or write and publish your own.' },
     { page: '/account/', selector: '#papers-account-root',
       title: 'Your Account',
-      text: 'Create an account any time to save your progress across devices, register for BiOClash, and unlock full BiOBytes access.' },
+      text: 'Create an account any time to save your progress across devices, register for BiOClash, and unlock full access to practical notes and BiOByte articles!' },
+    { page: '/biolab/', selector: '.biolab-hero',
+      title: 'BiOLab',
+      text: 'BETA FEATURE: A community protocol archive. Read a protocol from the archive, or write and publish your own.' },
+    { page: '/games/bio-ludo/', selector: '#bio-ludo-app',
+      title: 'BiOLudo',
+      text: 'BETA FEATURE: A biology-trivia Ludo variant — character classes, dice-chaining, and combat settled by quiz duels instead of pure luck.' },
     { page: '/about/', selector: '#contacts',
       title: 'Get in Touch',
       text: 'Have feedback, want to contribute, or interested in joining the team? Reach out via the emails listed here.' },
@@ -166,12 +169,6 @@
     } else {
       top = Math.max(16, (vh - ttRect.height) / 2);
     }
-    // Hard safety net: whatever branch fired above, never let the tooltip
-    // (and its Next/Back/Skip controls) end up outside the viewport. A
-    // target that's temporarily off-screen -- e.g. a page still reflowing
-    // after images/fonts load -- must not carry the tooltip off-screen
-    // with it, or the user is left with a "broken" tour they can't advance
-    // or dismiss.
     top = Math.min(Math.max(16, top), Math.max(16, vh - ttRect.height - 16));
     var left = Math.min(Math.max(16, targetRect.left), vw - ttRect.width - 16);
     left = Math.max(16, left);
@@ -300,9 +297,6 @@
   }
 
   function scrollTargetIntoView(target) {
-    // Elements taller than the viewport (e.g. a page's whole root wrapper)
-    // can't be meaningfully centered -- block:'center' on those causes a
-    // huge, disruptive scroll jump. Align to the top instead.
     var rect = target.getBoundingClientRect();
     var tall = rect.height > window.innerHeight;
     target.scrollIntoView({ block: tall ? 'start' : 'center', behavior: 'auto' });
@@ -316,12 +310,6 @@
     };
   }
 
-  // A freshly-loaded page can still be reflowing (lazy images, web fonts,
-  // below-the-fold content) for a beat after its first paint. Measuring
-  // and scrolling to a target before that settles is what stranded the
-  // tooltip off-screen on /about/ -- so wait for the page to stop resizing
-  // (or maxWait, whichever comes first) before we ever touch scroll
-  // position or measure anything.
   function waitForStableLayout(callback, maxWait) {
     var done = false;
     var settleTimer = null;
@@ -358,21 +346,35 @@
     return false;
   }
 
+  function resolveTarget(selector) {
+    var el = document.querySelector(selector);
+    if (!el) return null;
+    // Hugo/Hextra heading anchors (e.g. `#contacts` from `## Contacts:`)
+    // put the id on a zero-size <span> nested inside the heading, used
+    // only to offset scroll position under the sticky navbar -- it isn't
+    // the heading itself. Spotlighting it directly pads a single point
+    // into a tiny circle instead of highlighting the actual section, so
+    // walk up to the heading it lives in when that's what we matched.
+    if (el.tagName === 'SPAN' && el.offsetWidth === 0 && el.offsetHeight === 0) {
+      var heading = el.closest('h1, h2, h3, h4, h5, h6');
+      if (heading) return heading;
+    }
+    return el;
+  }
+
   function proceedWithStep(step, index) {
     if (!step.selector) {
       buildOverlay(step, null, index);
       return;
     }
-    if (!document.querySelector(step.selector)) {
+    if (!resolveTarget(step.selector)) {
       // Selector not found on this page for some reason -- don't strand
       // the user on a blank spotlight, just advance.
       goNext(index);
       return;
     }
     waitForStableLayout(function () {
-      // Re-query: the page may have changed shape (or the element removed)
-      // during the wait.
-      var target = document.querySelector(step.selector);
+      var target = resolveTarget(step.selector);
       if (!target) { goNext(index); return; }
       scrollTargetIntoView(target);
       buildOverlay(step, target, index);
