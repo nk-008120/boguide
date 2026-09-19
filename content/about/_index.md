@@ -186,6 +186,13 @@ I’m currently working on establishing a pathway for Kyrgyz students to reach t
 {{< team-member name="Darsh Dudhia" role="Associate (Mike Ross Class)" avatar="/ddavat.png" since="September 19th 26">}}
 Hi, I’m Darsh, a high schooler in India who has always been intrigued by biology. I got into preparing for olympiads by preparing for IJSO. After qualifying for the junior astronomy olympiad (IOAA Jr.)'s OCSC, I also got interested in astronomy. I am also preparing for the stages of IBO in India and BioGuide is a resource which will definitely help me through the process. I am going to work on: Making BiOrchive better by collecting more questions from olympiads and adding new features!
 {{< /team-member >}}
+{{< team-member name="Davi P. Tsuchie" role="Associate (Mike Ross Class)" avatar="/dptavat.png" since="September 19th 26">}}
+Hey, I’m Davi, an 11th grader from Brazil!
+I first got into science through physics back in middle school, which eventually led me to the Brazilian Physics Olympiad, where I earned a gold medal and later made it to the international selection process. Biology, though, was a very different story. It had always been one of the subjects I struggled with the most, but at the beginning of this year, a few friends convinced me to give it a serious shot. Somehow, a few months later, biology took me all the way to the IBO and gave me the opportunity to travel to a new country.
+The journey there wasn’t straightforward. I had to learn pretty much all of the theory on my own, and I know firsthand how frustrating it can be to find good resources, and to figure out whether a 700-page textbook is actually worth your time. Finding good problems to practice with is even harder. That’s a big part of why I’m here: I want to help democratize access to high-quality learning resources and practice material.
+Outside of olympiads, you’ll probably find me playing chess, cloud watching, or, as a good Brazilian should, playing football :)
+Currently working on: BiOClash; Helping build a place where olympiad students can more easily find high-quality problems to practice with.
+{{< /team-member >}}
 
 ## Frequently Asked Questions
 
