@@ -16,7 +16,7 @@ description: "Why we built BiOGuide, how content gets reviewed before publishing
       <p class="recent-update-text">Welcome to BiOGuide v2.0.0. 10000 Visits crossed! Congratulations to the whole team! New feature <a href = "https://bioguide.world/games">BiOLudo</a> launched! Sitewise security enforcement, switch to PostHog and GA4 analytics additionally, switched to a MIT license, two new team members join us as associates, BiOClash season preparations, Repository hygiene management changes executed, one new testimonial-guide from krygyzstan. Rate limiting to BiOClash API, ARCHITECTURE and README Improved, Cache YAML and tests Preparing for project finalisation for long, and shifting from supabase under consideration</p>
     </div>
   </div>
-  <div class="recent-update-card recent-update-newest">
+  <div class="recent-update-card">
     <div class="recent-update-icon" aria-hidden="true"></div>
     <div class="recent-update-body">
       <div class="recent-update-meta">
@@ -26,7 +26,7 @@ description: "Why we built BiOGuide, how content gets reviewed before publishing
       <p class="recent-update-text">Wired up community reach directly form Umami using APIs.<a href="/biobytes/testimonials/">Two new guide-testimonials from Hungary and Slovakia</a>, Doubts section added, <a href="/biology-olympiad-preparation/">BiO Prep page transformed</a>, heavy changes to BiOrchive css and redesign with re-population, BiOClash registration started and major changes to BiOClash working pipeline for smoother workflow and bug fixes.</p>
     </div>
   </div>
-  <div class="recent-update-card recent-update-newest">
+  <div class="recent-update-card">
     <div class="recent-update-icon" aria-hidden="true"></div>
     <div class="recent-update-body">
       <div class="recent-update-meta">
@@ -46,26 +46,6 @@ description: "Why we built BiOGuide, how content gets reviewed before publishing
       <p class="recent-update-text"><a href="/dashboard/">Study Dashboard</a>: personalized mastery tracking, prerequisite-aware study recommendations, trend analysis, topic-page badges, and a "weak areas first" toggle in the Question Bank. All built from your timed attempt history, all computed in your browser. <a href="/dashboard-guide/">See how it works.</a></p>
     </div>
   </div>
-  <div class="recent-update-card">
-    <div class="recent-update-icon" aria-hidden="true"></div>
-    <div class="recent-update-body">
-      <div class="recent-update-meta">
-        <span class="recent-update-date">Aug 9 2026</span>
-        <span class="recent-update-contributor">Nishit Kalani</span>
-      </div>
-      <p class="recent-update-text">Senior Partner announced and BiOClash Sample problem and test-taking test platform launched! Give a visit at https://bioguide.world/bioclash/bioclash-sample/attempt/</p>
-    </div>
-  </div>
-  <div class="recent-update-card">
-    <div class="recent-update-icon" aria-hidden="true"></div>
-    <div class="recent-update-body">
-      <div class="recent-update-meta">
-        <span class="recent-update-date">Aug 8 2026</span>
-        <span class="recent-update-contributor">Nishit Kalani</span>
-      </div>
-      <p class="recent-update-text"><a href="/ai_attestation.txt">AI Transparency Attestation</a>: a full public disclosure of where and how AI tools were used across the site, published per EU AI Act Article 50's transparency principles.</p>
-    </div>
- </div>
 </div>
 
 ## Contacts:
