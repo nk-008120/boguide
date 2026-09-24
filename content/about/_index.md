@@ -138,7 +138,7 @@ As of August 8th, we were just a one-man team until production.
 
 But now, we are proud to announce, that we are a team of more than 10 people from all over the world, actively working to improve BiOGuide.
 
-{{< team-member name="Nishit Kalani" role="Founder, Owner & Managing Partner" avatar="/nkavat.jpg" since="February 8th 2026">}}
+{{< team-member name="Nishit Kalani" role="Founder, Director & Software Engineer" avatar="/nkavat.jpg" since="February 8th 2026">}}
 Nishit Here (: <br>
 I'm a high schooler in India who kept wishing a resource like this already existed while preparing for the International Biology Olympiad (Silver, 2026), so I built it myself. Astronomy was actually where I started (Gold, IOAA Jr 2025), and I've since qualified for the national selection camps in both Chemistry, Astronomy and Mathematics too; though biology is the one that stuck, which is probably why I can't help connecting it back to the other two more than a syllabus usually allows. Outside this site, I split my time between chess, code,piano, tabla, violin and the occasional very average sketch. I have solo-built the entire technical side of the website, so if something on here doesn't make sense or you just want to talk shop, find me at r6394175@gmail. If you find which star is in the image above, begin the mail with it's name, and wait for a surprise!
 {{< /team-member >}}
