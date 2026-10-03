@@ -57,15 +57,16 @@ sitemap:
         </label></li>
         <li><label class="bioclash-directive-item">
           <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-video">
-          <span><strong>PARTICIPANTS SHOULD RECORD THEMSELVES via their device's front camera for there entire
-          attempt</strong>, and upload that recording, along with a scan or clear photo of your
-          scratch paper, after they submit, to the link provided on the results screen. Name your
-          video <strong>[USERNAMEATBIOGUIDE_MB-01].mp4</strong>and your scratch papers used
-          <strong>[USERNAMEATBIOGUIDE_MB-01].pdf</strong> - replace USERNAMEATBIOGUIDE with your
-          actual BiOGuide account username, keeping the rest of the filename exactly as shown.<br>
-          Results are only verified once both have been reviewed. Unverified results may be published but entirely at BiOGuide's discretion.<br> 
-          ALL VIDEOS ARE DELETED IN 5 WORKING DAYS OF SUBMISSION!
-          BiOGuide takes full resposibility of student privacy!!!</span>
+          <span><strong>PARTICIPANTS SHOULD RECORD THEMSELVES via their device's front camera for their entire
+          attempt</strong>, and keep that recording together with a scan or clear photo of their
+          scratch paper. After you submit, upload both to your own Google Drive, share them with
+          <strong>resourcerepository4boguide@gmail.com</strong> as a viewer (or set sharing to
+          "Anyone with the link can view" if your school account blocks that), and submit the two
+          links through the form on the results screen within 24 hours. Keep both links working
+          until results are announced.<br>
+          Results are only verified once both have been reviewed. Unverified results may be published but entirely at BiOGuide's discretion.<br>
+          YOUR RECORDING STAYS IN YOUR OWN DRIVE. BiOGuide only views it to verify your attempt and
+          does not download or keep a copy. Delete it yourself once results are announced.</span>
         </label></li>
         <li><label class="bioclash-directive-item">
           <input type="checkbox" class="bioclash-directive-checkbox" id="bioclash-directive-screenshots">
@@ -92,8 +93,10 @@ sitemap:
       beyond what this page provides. I will not close this browser tab at any point during
       my attempt - doing so may be logged and reviewed. Screenshots and screen recording of
       any question content are prohibited for the duration of this attempt. I will record myself via my
-      device's front camera for the entire duration of this attempt, and will upload that
-      recording to the folder linked on the submission screen as soon as I finish. My
+      device's front camera for the entire duration of this attempt, and will submit links to
+      that recording and my scratch paper, hosted in my own Google Drive, through the form on the
+      submission screen within 24 hours of finishing, keeping them available until results are
+      announced. My
       results will only be verified once that recording has been reviewed; BiOGuide may
       still calculate a result without it, but whether an unverified result is announced or
       considered at all is entirely at BiOGuide's discretion. I understand my attempt may be

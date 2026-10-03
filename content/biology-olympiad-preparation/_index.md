@@ -137,6 +137,8 @@ This is the general preparation framework that applies regardless of which Biolo
 
 {{< olympiad-directory >}}
 
+**Is your country missing, or still marked "Soon"?** These guides are written by students who went through the selection themselves. [Find out how to write one for your country, or partner with us on it.](/contribute-a-guide/)
+
 Eligibility, dates, and registration details change year to year. Always check your olympiad's official site for current information. This guide covers preparation strategy, not administrative details.
 
 ## Choose your starting point

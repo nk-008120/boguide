@@ -158,6 +158,19 @@ html.dark .account-form input:focus {
 html.dark .account-link-btn {
   color: #c9b7e8;
 }
+.account-form input.account-otp-code {
+  font-family: ui-monospace, 'Courier New', monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  text-align: center;
+  padding: 0.65rem 0.75rem;
+}
+.account-link-btn:disabled {
+  opacity: 0.6;
+  cursor: default;
+  text-decoration: none;
+}
 .account-msg {
   font-size: 0.85rem;
   min-height: 1.2em;

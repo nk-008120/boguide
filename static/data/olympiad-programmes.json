@@ -1,6 +1,14 @@
 {
-  "lastUpdated": "2026-09-17",
+  "lastUpdated": "2026-10-01",
   "countries": {
+    "LV": {
+      "name": "Latvia",
+      "flag": "🇱🇻",
+      "programme": "Latvian State Biology Olympiad",
+      "guideUrl": "/biobytes/testimonials/latvia-liga-silver/",
+      "status": "published",
+      "stages": "School > Regional > State (top 150) > IBO selection > IBO"
+    },
     "KG": {
       "name": "Kyrgyzstan",
       "flag": "🇰🇬",

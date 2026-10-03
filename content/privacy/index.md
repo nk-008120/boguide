@@ -2,7 +2,7 @@
 title: "Privacy Policy"
 ---
 
-**Last updated:** September 18, 2026
+**Last updated:** October 3, 2026
 
 BiOGuide is a free, non-commercial study resource. Almost everything on the site - every topic page, every practice question, every timed attempt - works with no account at all. This page explains what happens on the small part that does involve an account: login, your profile, and the leaderboard.
 
@@ -57,6 +57,16 @@ We use three tools to understand how the site is used. None of them sell data or
 - **Reporting and removal:** any protocol or result can be reported by another logged-in user. If BiOGuide staff act on a report, the content is hidden from public view (a removal flag, checked before anything is ever shown publicly) rather than deleted outright, so we retain an internal record of what was reported, why, and what was done about it. A removed protocol or result is no longer visible to anyone except (where applicable) the person who submitted it.
 
 If you'd rather not have something you submitted to BiOLab shown publicly, the simplest option is not to submit it, or to keep a result private and never toggle it public. If you want a public protocol, feedback comment, or public result removed, email us at the address below and we'll take it down.
+
+## BiOClash: attempts and recordings
+
+[BiOClash](/bioclash/) rounds are timed and verified, so taking part involves a few things beyond a normal practice attempt:
+
+- **Attempt data** - your answers, timings, extension use, and integrity signals such as fullscreen exits and tab-visibility losses are stored against your account so your round can be graded and ranked.
+- **Your recording and scratch paper** - participants are asked to record themselves with their front camera during an attempt and to photograph or scan their scratch paper. These files are **not uploaded to BiOGuide**. You keep them in your own Google Drive and send us links to them through a submission form, sharing them with a BiOGuide reviewer account as a viewer (or with "Anyone with the link can view" if your school account blocks that).
+- **How we use them** - BiOGuide staff open the links only to verify that your attempt followed the rules. We do not download, copy, or keep the files. We keep the submitted links and the form responses (your username, the links, and any feedback you wrote) until the round's results are announced and verification is complete, and then delete them.
+- **Your control** - because the files live in your Drive, you can revoke access or delete them at any time. Once results are announced we ask you to delete them yourself. If you remove access before verification finishes, your result may stay unverified.
+- **Who sees what** - the public leaderboard shows only your display name, avatar, country, and placement. Recordings and scratch paper are never published.
 
 ## Deleting your data
 

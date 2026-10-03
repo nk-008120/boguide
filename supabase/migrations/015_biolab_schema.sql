@@ -155,7 +155,7 @@ insert into public.biolab_practicals (slug, title, description, created_by)
 select
   'aspirin-trinder',
   'Aspirin Pharmacokinetics (Trinder Method)',
-  'Tracks salicylate concentration in a sample over time via the intensity of the purple iron-salicylate complex formed by the Trinder (iron-salicylate) colorimetric method, read from a phone photo instead of a lab colorimeter. Modeled on the IBO 2026 Animal Physiology practical exam.',
+  'Tracks salicylate concentration in a sample over time via the intensity of the purple iron-salicylate complex formed by the Trinder (iron-salicylate) colorimetric method, read from a phone photo instead of a lab colorimeter.',
   id
 from auth.users where email = 'nishitkalani@gmail.com'
 on conflict (slug) do nothing;
@@ -173,7 +173,7 @@ select
     'reference_white_rgb', jsonb_build_array(246, 244, 240),
     'capture_conditions', 'Indirect daylight, white card background, phone camera flash off'
   ),
-  'BiOGuide-controlled capture of the IBO 2026 Animal Physiology reference standard, used as the single v1 comparison point for student captures. Placeholder calibration values pending staff re-verification against the physical reference set before Session 2 builds against it.',
+  'BiOGuide-controlled capture of the reference standard, used as the single v1 comparison point for student captures. Placeholder calibration values pending staff re-verification against the physical reference set before Session 2 builds against it.',
   u.id
 from public.biolab_practicals pr
 cross join (select id from auth.users where email = 'nishitkalani@gmail.com') u

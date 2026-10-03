@@ -77,13 +77,18 @@
   var loginForm = document.getElementById('account-login-form');
   var signupForm = document.getElementById('account-signup-form');
   var resetForm = document.getElementById('account-reset-form');
+  var otpRequestForm = document.getElementById('account-otp-request-form');
+  var otpVerifyForm = document.getElementById('account-otp-verify-form');
 
   function showForm(which) {
     loginForm.hidden = which !== 'login';
     signupForm.hidden = which !== 'signup';
     resetForm.hidden = which !== 'reset';
+    otpRequestForm.hidden = which !== 'otp-request';
+    otpVerifyForm.hidden = which !== 'otp-verify';
+    var activeTab = which.indexOf('otp') === 0 ? 'login' : which;
     tabs.forEach(function (t) {
-      t.classList.toggle('active', t.dataset.tab === which);
+      t.classList.toggle('active', t.dataset.tab === activeTab);
     });
   }
 
@@ -222,7 +227,14 @@
     var password = loginForm.password.value;
     setMsg(msg, 'Logging in…', false);
     client.auth.signInWithPassword({ email: email, password: password }).then(function (result) {
-      if (result.error) { setMsg(msg, result.error.message, true); return; }
+      if (result.error) {
+        if (/not confirmed/i.test(result.error.message || '')) {
+          setMsg(msg, 'Your email is not confirmed yet. Choose "Email me a sign-in code" below to activate your account.', true);
+        } else {
+          setMsg(msg, result.error.message, true);
+        }
+        return;
+      }
       setMsg(msg, '', false);
       refresh();
     });
@@ -260,6 +272,159 @@
     }).then(function (result) {
       if (result.error) { setMsg(msg, result.error.message, true); return; }
       setMsg(msg, 'Check your email for a reset link.', false);
+    });
+  });
+
+  var OTP_COOLDOWN_SECONDS = 60;
+  var otpEmail = '';
+  var otpTimer = null;
+  var otpCodeInput = document.getElementById('account-otp-code');
+  var otpResendBtn = document.getElementById('account-otp-resend-btn');
+  var otpRequestMsg = document.getElementById('account-otp-request-msg');
+  var otpVerifyMsg = document.getElementById('account-otp-verify-msg');
+
+  function stopOtpTimer() {
+    if (otpTimer) { clearInterval(otpTimer); otpTimer = null; }
+  }
+
+  function startOtpCooldown() {
+    stopOtpTimer();
+    var remaining = OTP_COOLDOWN_SECONDS;
+    function tick() {
+      if (remaining <= 0) {
+        stopOtpTimer();
+        otpResendBtn.disabled = false;
+        otpResendBtn.textContent = 'Resend code';
+        return;
+      }
+      otpResendBtn.disabled = true;
+      otpResendBtn.textContent = 'Resend code in ' + remaining + 's';
+      remaining -= 1;
+    }
+    tick();
+    otpTimer = setInterval(tick, 1000);
+  }
+
+  function sendOtp(email) {
+    var failure = { ok: false, error: 'Could not send a code right now. Please try again shortly.' };
+    return client.auth.signInWithOtp({
+      email: email,
+      options: { shouldCreateUser: false }
+    }).then(function (result) {
+      var err = result.error;
+      if (!err) return { ok: true };
+      var status = err.status || 0;
+      if (status === 400 || status === 422) return { ok: true };
+      if (status === 429) return { ok: false, error: 'Too many requests. Please wait a minute and try again.' };
+      return failure;
+    }).catch(function () {
+      return failure;
+    });
+  }
+
+  document.getElementById('account-otp-btn').addEventListener('click', function () {
+    otpRequestForm.email.value = loginForm.email.value.trim();
+    setMsg(otpRequestMsg, '', false);
+    showForm('otp-request');
+    otpRequestForm.email.focus();
+  });
+
+  document.getElementById('account-otp-request-cancel-btn').addEventListener('click', function () {
+    showForm('login');
+  });
+
+  otpRequestForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var email = otpRequestForm.email.value.trim();
+    var sendBtn = document.getElementById('account-otp-send-btn');
+    setMsg(otpRequestMsg, 'Sending…', false);
+    sendBtn.disabled = true;
+    sendOtp(email).then(function (result) {
+      sendBtn.disabled = false;
+      if (!result.ok) { setMsg(otpRequestMsg, result.error, true); return; }
+      setMsg(otpRequestMsg, '', false);
+      setMsg(otpVerifyMsg, '', false);
+      otpEmail = email;
+      otpCodeInput.value = '';
+      showForm('otp-verify');
+      startOtpCooldown();
+      otpCodeInput.focus();
+    });
+  });
+
+  otpCodeInput.addEventListener('input', function () {
+    otpCodeInput.value = otpCodeInput.value.replace(/\D/g, '').slice(0, 6);
+  });
+
+  otpResendBtn.addEventListener('click', function () {
+    if (otpResendBtn.disabled || !otpEmail) return;
+    otpResendBtn.disabled = true;
+    setMsg(otpVerifyMsg, 'Sending a new code…', false);
+    sendOtp(otpEmail).then(function (result) {
+      if (!result.ok) {
+        setMsg(otpVerifyMsg, result.error, true);
+        otpResendBtn.disabled = false;
+        return;
+      }
+      setMsg(otpVerifyMsg, 'A new code is on its way. Use the newest email only.', false);
+      startOtpCooldown();
+    });
+  });
+
+  document.getElementById('account-otp-change-btn').addEventListener('click', function () {
+    stopOtpTimer();
+    otpRequestForm.email.value = otpEmail;
+    setMsg(otpRequestMsg, '', false);
+    showForm('otp-request');
+    otpRequestForm.email.focus();
+  });
+
+  function verifyEmailCode(email, token, type) {
+    return client.auth.verifyOtp({ email: email, token: token, type: type });
+  }
+
+  otpVerifyForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var code = otpCodeInput.value.replace(/\D/g, '');
+    var verifyBtn = document.getElementById('account-otp-verify-btn');
+    if (code.length !== 6) {
+      setMsg(otpVerifyMsg, 'Enter the 6-digit code from your email.', true);
+      return;
+    }
+    setMsg(otpVerifyMsg, 'Signing in…', false);
+    verifyBtn.disabled = true;
+    verifyEmailCode(otpEmail, code, 'email').then(function (result) {
+      if (result.error && result.error.status !== 429) return verifyEmailCode(otpEmail, code, 'signup');
+      return result;
+    }).then(function (result) {
+      verifyBtn.disabled = false;
+      if (result.error) {
+        if (result.error.status === 429) {
+          setMsg(otpVerifyMsg, 'Too many attempts. Please wait a minute and try again.', true);
+        } else {
+          setMsg(otpVerifyMsg, 'That code is wrong or has expired. Check the newest email, or request a new code.', true);
+        }
+        return;
+      }
+      stopOtpTimer();
+      setMsg(otpVerifyMsg, '', false);
+      otpEmail = '';
+      refresh();
+    }).catch(function () {
+      verifyBtn.disabled = false;
+      setMsg(otpVerifyMsg, 'Could not verify the code right now. Please try again.', true);
+    });
+  });
+
+  document.getElementById('account-set-password-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var form = e.target;
+    var msg = document.getElementById('account-set-password-msg');
+    setMsg(msg, 'Saving…', false);
+    client.auth.updateUser({ password: form.password.value }).then(function (result) {
+      if (result.error) { setMsg(msg, result.error.message, true); return; }
+      form.reset();
+      setMsg(msg, 'Password saved.', false);
     });
   });
 

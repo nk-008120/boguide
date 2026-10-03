@@ -408,6 +408,21 @@ sessionStorage flag before showing its trigger button, so a visitor
 already mid-way through the global tour never sees two competing overlays
 offering to walk them through the page at once.
 
+The way a new country gets onto this dataset is documented publicly on
+`content/contribute-a-guide/_index.md` (`/contribute-a-guide/`), so
+prospective authors can self-serve rather than being messaged one by one.
+It is a static content page with its own scoped stylesheet
+(`assets/css/contribute.css`) and script (`static/js/contribute-guide.js`),
+both loaded only for that path by the same `hasPrefix` checks in
+`layouts/partials/custom/head-end.html` that scope the other section
+files. Its "Is your country covered?" finder and its two counters fetch
+`/data/olympiad-programmes.json`, the same file the map and directory
+read, so a country flipped to `published` there moves from the "open for an
+author" group to the "guide available" group with no edit to the page.
+Open countries link to a `mailto:` with the country name prefilled in the
+subject. If the fetch fails the counters stay hidden and the finder shows a
+fallback line pointing at the contact email.
+
 ## Dashboard: client-side spaced repetition
 
 The study dashboard's mastery tracking and "weak areas first"

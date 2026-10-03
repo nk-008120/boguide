@@ -37,6 +37,7 @@
 {{- if hasPrefix $path "/resources/" -}}{{ $extraStyles = $extraStyles | append "css/challenges.css" }}{{- end -}}
 {{- if hasPrefix $path "/biology-olympiad-preparation/" -}}{{ $extraStyles = $extraStyles | append "css/prep-guide.css" }}{{- end -}}
 {{- if hasPrefix $path "/games/" -}}{{ $extraStyles = $extraStyles | append "css/games.css" }}{{- end -}}
+{{- if hasPrefix $path "/contribute-a-guide/" -}}{{ $extraStyles = $extraStyles | append "css/contribute.css" }}{{- end -}}
 {{- range $extraStyles -}}
   {{- $css := resources.Get . -}}
   {{- if hugo.IsProduction -}}
@@ -49,6 +50,9 @@
 {{- if hasPrefix $path "/biology-olympiad-preparation/" -}}
 <script src="{{ "js/prep-guide-tour.js" | relURL }}" defer></script>
 <script src="{{ "js/olympiad-directory.js" | relURL }}" defer></script>
+{{- end -}}
+{{- if hasPrefix $path "/contribute-a-guide/" -}}
+<script src="{{ "js/contribute-guide.js" | relURL }}" defer></script>
 {{- end -}}
 {{- if hasPrefix $path "/resources/" -}}
 <script src="{{ "js/page-rating.js" | relURL }}" defer></script>

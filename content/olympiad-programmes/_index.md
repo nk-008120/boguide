@@ -10,6 +10,6 @@ layout: "wide"
 
 BiOGuide users from around the world are writing guides to their own country's Biology Olympiad selection process -- how it works, what to expect, and how BiOGuide's resources fit in.
 
-**Want to contribute a guide for your country?** Reach out to us through Discord or email. We would love to have your perspective.
+**Want to contribute a guide for your country?** See [how to write one and what to send us](/contribute-a-guide/), or reach out through Discord or email. We would love to have your perspective.
 
 </div>

@@ -973,17 +973,18 @@
       '<p>Your full result will follow separately once grading is complete.</p>' +
       '<div class="bioclash-recording-upload">' +
       '<p><strong>Your attempt is not verified yet.</strong> Upload your full front-camera ' +
-      'recording, along with a scan or clear photo of your scratch paper, to the form below as ' +
-      'soon as possible. Results are only verified once both have been reviewed. An unverified ' +
-      'attempt may still be scored, but whether it is announced or considered at all is ' +
-      'entirely at BiOGuide\'s discretion.</p>' +
-      '<p>Name your video <strong>[USERNAMEATBIOGUIDE_MB-01].mp4</strong> (or your device\'s ' +
-      'native video extension) and your scratch paper ' +
-      '<strong>[USERNAMEATBIOGUIDE_MB-01].pdf</strong> - replace USERNAMEATBIOGUIDE with your ' +
-      'actual BiOGuide account username, keeping the rest of the filename exactly as shown.</p>' +
+      'recording, along with a scan or clear photo of your scratch paper, to your own Google ' +
+      'Drive. Share both with <strong>resourcerepository4boguide@gmail.com</strong> as a viewer ' +
+      '(or set sharing to "Anyone with the link can view" if your school account blocks that), ' +
+      'then submit the two links through the form below within 24 hours. Results are only ' +
+      'verified once both have been reviewed. An unverified attempt may still be scored, but ' +
+      'whether it is announced or considered at all is entirely at BiOGuide\'s discretion.</p>' +
+      '<p>Keep both links working until results are announced. BiOGuide only views your ' +
+      'files to verify your attempt and does not download or keep a copy, so delete them from ' +
+      'your Drive once results are out.</p>' +
       '<p>The same form also has a short section for feedback on your experience - we read ' +
       'every response.</p>' +
-      '<p><a href="' + RECORDING_UPLOAD_URL + '" target="_blank" rel="noopener" class="papers-nav-btn">Submit your recording &amp; scratch paper</a></p>' +
+      '<p><a href="' + RECORDING_UPLOAD_URL + '" target="_blank" rel="noopener" class="papers-nav-btn">Submit your recording links</a></p>' +
       '</div>';
 
     reportScreen.innerHTML = html;

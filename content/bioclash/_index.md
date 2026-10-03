@@ -51,7 +51,7 @@ images: ["/og-bioclash.png"]
   <ul class="bioclash-planning-list">
     <li><span class="papers-pill bioclash-pill">Format</span> Planning timed, solo rounds: heavily scrutinized and difficult.</li>
     <li><span class="papers-pill bioclash-pill">Scope</span> Aiming to cover the full IBO syllabus.</li>
-    <li><span class="papers-pill bioclash-pill">Frequency</span> Planning a full season of subject-focused rounds spread across the year: Molecular Biology &amp; Biochemistry, Animal Anatomy &amp; Physiology, Genetics &amp; Evolution, Plant Anatomy &amp; Physiology, Ecology, Ethology, and Biosystematics, capped off by a Full Syllabus round in the weeks before IBO, with placements across the season aiming to add up to one cumulative season ranking.</li>
+    <li><span class="papers-pill bioclash-pill">Frequency</span> Planning a full season of subject-focused rounds spread across the year: Cell, Molecular Biology &amp; Biochemistry, Animal Anatomy &amp; Physiology, Genetics &amp; Evolution, Plant Anatomy &amp; Physiology, Ecology, Ethology, and Biosystematics, capped off by a Full Syllabus round in the weeks before IBO, with placements across the season aiming to add up to one cumulative season ranking.</li>
     <li><span class="papers-pill bioclash-pill">Timing</span> Subject rounds are planned to run 90 minutes, with the Full Syllabus round given longer. An optional short extension is planned to be available during an attempt, at a competitive cost rather than as free extra time.</li>
     <li><span class="papers-pill bioclash-pill">Scoring</span> Planning to rank each round by standardized performance relative to that round's own field, not raw marks, closer to how many real olympiads report results than a simple percentage. Season standing is planned to be a weighted composite across every round, not just an average.</li>
   </ul>
@@ -66,27 +66,31 @@ images: ["/og-bioclash.png"]
         <tr><th>Subject round</th><th>Season weight</th><th>Timing</th></tr>
       </thead>
       <tbody>
-        <tr><td>Cell Biology</td><td>20%</td><td>October</td></tr>
-        <tr><td>Animal Anatomy &amp; Physiology</td><td>25%</td><td>November</td></tr>
-        <tr><td>Genetics &amp; Evolution</td><td>20%</td><td>January</td></tr>
-        <tr><td>Plant Anatomy &amp; Physiology</td><td>15%</td><td>March</td></tr>
-        <tr><td>Ecology</td><td>10%</td><td>May</td></tr>
-        <tr><td>Ethology</td><td>5%</td><td>May</td></tr>
-        <tr><td>Biosystematics</td><td>5%</td><td>May</td></tr>
-        <tr class="bioclash-fst-row"><td>Full Syllabus Test (FST)</td><td>100%</td><td>~3 wks before IBO</td></tr>
+        <tr><td>Cell, Molecular Biology &amp; Biochemistry (MB-01)</td><td>10%</td><td>October</td></tr>
+        <tr><td>Animal Anatomy &amp; Physiology</td><td>12.5%</td><td>November</td></tr>
+        <tr><td>Genetics &amp; Evolution</td><td>10%</td><td>January</td></tr>
+        <tr><td>Plant Anatomy &amp; Physiology</td><td>7.5%</td><td>March</td></tr>
+        <tr><td>Ecology</td><td>5%</td><td>May</td></tr>
+        <tr><td>Ethology</td><td>2.5%</td><td>May</td></tr>
+        <tr><td>Biosystematics</td><td>2.5%</td><td>May</td></tr>
+        <tr class="bioclash-fst-row"><td>Full Syllabus Test (FST)</td><td>50%</td><td>~3 wks before IBO</td></tr>
       </tbody>
     </table>
   </div>
-  <p class="bioclash-season-note">Subject rounds are 90 minutes. The FST is 180 minutes. Each round is open for a window (3 days for subject rounds, 1 week for the FST); your personal timer starts when you click Start. A round not attempted simply contributes nothing -- it is not a penalty.</p>
+  <p class="bioclash-season-note">Subject rounds are 90 minutes. The FST is 180 minutes. Each round is open for a window announced ahead of time; the opening round, Case File MB-01, is open October 10 to 17. Your personal timer starts when you click Start. A round not attempted simply contributes nothing -- it is not a penalty. The seven subject rounds together carry half of the season ranking, and the FST carries the other half.</p>
   <div class="bioclash-sample-cta">
     <p>Want to see how it works before committing?</p>
-    <a href="/bioclash/bioclash-sample/attempt/" class="bioclash-btn bioclash-btn-primary"><span class="bioclash-btn-shine" aria-hidden="true"></span><span>Try the sample round</span></a>
+    <div class="bioclash-sample-cta-actions">
+      <a href="/bioclash/bioclash-sample/attempt/" class="bioclash-btn bioclash-btn-primary"><span class="bioclash-btn-shine" aria-hidden="true"></span><span>Try the sample round</span></a>
+      <a href="https://drive.google.com/file/d/14IFcBU9hY9Upi18MFIRQB2kG_2KuGhPM/view?usp=sharing" class="bioclash-btn bioclash-btn-primary" target="_blank" rel="noopener"><span class="bioclash-btn-shine" aria-hidden="true"></span><span>Read the Participant Guide</span></a>
+    </div>
+    <p class="bioclash-sample-cta-note">The guide covers the rules, scoring, verification, and the full season schedule in one short document.</p>
   </div>
 </section>
 
 <section class="bioclash-section bioclash-panel">
   <h2>MB-01 winner</h2>
-  <p>Case File MB-01: Molecular Biology &amp; Biochemistry podium holders will get a custom micropipette pen from BiOGuide!</p>
+  <p>Case File MB-01: Cell, Molecular Biology &amp; Biochemistry podium holders will get a custom micropipette pen from BiOGuide!</p>
   <img src="/BIOCLASHPICS/mb-01-winner-pen.webp" alt="A pair of custom micropipette-shaped pens, 3D-printed in white with purple and blue-grey accents and ribbon detailing" style="max-width:420px; width:100%; border-radius:var(--radius-lg); margin:0.5rem 0;">
   <p>See the full standings on the <a href="/bioclash/mb-01/leaderboard/">MB-01 leaderboard on November 17th</a>.</p>
 </section>

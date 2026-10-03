@@ -45,6 +45,7 @@ sitemap:
     <label>Password<input type="password" name="password" required autocomplete="current-password"></label>
     <button type="submit" class="papers-nav-btn papers-nav-next">Log In</button>
     <button type="button" id="account-forgot-btn" class="account-link-btn">Forgot password?</button>
+    <button type="button" id="account-otp-btn" class="account-link-btn">Email me a sign-in code</button>
     <div class="account-msg" id="account-login-msg"></div>
   </form>
 
@@ -55,6 +56,23 @@ sitemap:
     <button type="submit" class="papers-nav-btn papers-nav-next">Sign Up</button>
     <p class="account-consent">By signing up, you agree to our <a href="/privacy/">Privacy Policy</a>.</p>
     <div class="account-msg" id="account-signup-msg"></div>
+  </form>
+
+  <form id="account-otp-request-form" class="account-form" hidden>
+    <p>Enter your email and we'll send a 6-digit sign-in code. No password needed.</p>
+    <label>Email<input type="email" name="email" required autocomplete="email"></label>
+    <button type="submit" class="papers-nav-btn papers-nav-next" id="account-otp-send-btn">Email me a code</button>
+    <button type="button" id="account-otp-request-cancel-btn" class="account-link-btn">Back to log in</button>
+    <div class="account-msg" id="account-otp-request-msg"></div>
+  </form>
+
+  <form id="account-otp-verify-form" class="account-form" hidden>
+    <p id="account-otp-sent-note">If that email has an account, a code is on its way. It can take a minute, so check spam and promotions too.</p>
+    <label>6-digit code<input type="text" name="code" id="account-otp-code" class="account-otp-code" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]{6}" required placeholder="123456"></label>
+    <button type="submit" class="papers-nav-btn papers-nav-next" id="account-otp-verify-btn">Sign in</button>
+    <button type="button" id="account-otp-resend-btn" class="account-link-btn" disabled>Resend code</button>
+    <button type="button" id="account-otp-change-btn" class="account-link-btn">Use a different email</button>
+    <div class="account-msg" id="account-otp-verify-msg"></div>
   </form>
 
   <form id="account-reset-form" class="account-form" hidden>
@@ -78,6 +96,14 @@ sitemap:
 
 <section id="account-logged-in" class="account-screen" hidden>
   <p class="account-loggedin-greeting">Logged in as <strong id="account-display-name"></strong>.</p>
+
+  <h3>Password</h3>
+  <p class="account-hint">Signed in with an email code? Set a password if you'd like to log in with one next time.</p>
+  <form id="account-set-password-form" class="account-form">
+    <label>New password<input type="password" name="password" required minlength="6" autocomplete="new-password"></label>
+    <button type="submit" class="papers-nav-btn papers-nav-next">Save Password</button>
+    <div class="account-msg" id="account-set-password-msg"></div>
+  </form>
 
   <h3>Avatar</h3>
   <p class="account-hint">Pick a profile picture - shown on the leaderboard and in the navbar.</p>

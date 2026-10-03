@@ -7,7 +7,7 @@ alter table public.biolab_practicals
 
 update public.biolab_practicals
 set created_by = null,
-    source_attribution = 'IBO 2026 Animal Physiology practical exam',
+    source_attribution = 'Trinder (iron-salicylate) colorimetric method',
     category = 'physiology'
 where slug = 'aspirin-trinder' and created_by is not null;
 

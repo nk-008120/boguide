@@ -18,6 +18,7 @@
     {{- partial "banner.html" . -}}
     {{- partial "custom/bioclash-registration-banner.html" . -}}
     {{- partial "navbar.html" . -}}
+    {{- partial "custom/guides-initiative-banner.html" . -}}
     {{- block "main" . }}{{ end -}}
     {{- if or (eq .Site.Params.footer.enable nil) (.Site.Params.footer.enable) }}
       {{ partial "footer.html" . }}

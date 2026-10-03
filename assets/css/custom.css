@@ -4789,10 +4789,7 @@ html.dark .site-tutorial-btn-ghost:hover {
   flex-wrap: wrap;
 }
 html.dark .bioclash-registration-banner {
-  --brb-crimson: #E1596A;
-  --brb-crimson-deep: #B23347;
-  --brb-gold: #E3B54A;
-  --brb-parchment: #171410;
+  --brb-gold: #E8B93F;
 }
 .bioclash-registration-banner[hidden] {
   display: none;
@@ -4817,18 +4814,19 @@ body.bioclash-attempt-active .bioclash-registration-banner {
   display: inline-block;
   padding: 0.35rem 1rem;
   border-radius: 999px;
-  background: var(--brb-gold);
-  color: var(--brb-crimson-deep);
-  font-weight: 700;
+  background: linear-gradient(180deg, #FFE9A0 0%, #F4C542 48%, #D9A22A 100%);
+  color: #5A0817;
+  font-weight: 800;
   font-size: 0.85rem;
   text-decoration: none;
   white-space: nowrap;
+  box-shadow: 0 0 0 1px rgba(255, 244, 200, 0.6) inset, 0 1px 6px rgba(0, 0, 0, 0.3);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .bioclash-registration-banner-btn:hover {
   transform: translateY(-1px);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
-  color: var(--brb-crimson-deep);
+  box-shadow: 0 0 0 1px rgba(255, 244, 200, 0.8) inset, 0 0 14px rgba(255, 217, 102, 0.55), 0 2px 10px rgba(0, 0, 0, 0.3);
+  color: #5A0817;
 }
 .bioclash-registration-banner-close {
   position: absolute;
@@ -4853,5 +4851,89 @@ body.bioclash-attempt-active .bioclash-registration-banner {
   }
   .bioclash-registration-banner-text {
     font-size: 0.85rem;
+  }
+}
+
+.gi-banner-anchor {
+  position: relative;
+  height: 0;
+  z-index: 25;
+}
+.gi-banner {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  width: min(21rem, calc(100vw - 2rem));
+  padding: 0.95rem 2.1rem 0.95rem 0.95rem;
+  background: #faf7f0;
+  color: #2e2a22;
+  border: 1.5px solid #e0d6bc;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 24px rgba(70, 50, 10, 0.14);
+}
+.gi-banner[hidden] {
+  display: none;
+}
+.gi-banner-icon {
+  flex-shrink: 0;
+  font-size: 1.7rem;
+  line-height: 1;
+}
+.gi-banner-text {
+  margin: 0 0 0.65rem;
+  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.gi-banner-btn {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(135deg, #8965c4, #5c7a58);
+  color: #fff !important;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none !important;
+  white-space: nowrap;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.gi-banner-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(92, 61, 150, 0.3);
+}
+.gi-banner-close {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.4rem;
+  padding: 0.2rem 0.45rem;
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.gi-banner-close:hover {
+  opacity: 1;
+}
+html.dark .gi-banner {
+  background: #1e1b28;
+  color: #e5e5e5;
+  border-color: rgba(201, 183, 232, 0.25);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+@media (max-width: 900px) {
+  .gi-banner-anchor {
+    height: auto;
+    padding: 0.75rem 1rem 0;
+  }
+  .gi-banner {
+    position: static;
+    width: 100%;
   }
 }
