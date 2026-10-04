@@ -1,0 +1,13 @@
+{{- with .TableOfContents -}}
+<aside class="fr-toc-wrap">
+  <details class="fr-toc" id="fr-toc" open>
+    <summary>On this page</summary>
+    <div class="fr-toc-inner">
+      <p class="fr-toc-title">On this page</p>
+      <div class="fr-toc-progress" aria-hidden="true"><span id="fr-toc-bar"></span></div>
+      {{ . }}
+      <a class="fr-toc-top" href="#content">Back to top &uarr;</a>
+    </div>
+  </details>
+</aside>
+{{- end -}}

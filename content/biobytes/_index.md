@@ -1,6 +1,6 @@
 ---
 title: "BiOBytes"
-description: "Long-form articles and quick bites from our Instagram - exam-technique tips, lab guides, and behind-the-scenes posts from the BiOGuide team."
+description: "Frontier Reports on cutting-edge research, student testimonials, quick bites from our Instagram, and long-form articles from the BiOGuide team."
 layout: "wide"
 aliases:
   - /bioinsights/
@@ -12,29 +12,103 @@ cascade:
 ---
 <div class="biobytes-wrapper">
 {{< tabs >}}
-{{< tab name="Articles" >}}
-<div class="two-cards">
-  <a href="/biobytes/articles/neuroscience/" class="card">
-    <div class="card-icon">🧠</div>
-    <h3>How to get better at theory</h3>
-    <div class="badge fast">Theory Orz</div>
-    <p>Doing good at theory exams is not always dependent on your knowledge, or on how good you do in practice problem. Learn how to get better at the actual exams!</p>
-    <span class="btn-outline">Read Theory Tips →</span>
-  </a>
-  <a href="/biobytes/articles/lab-recommendations/" class="card">
-    <div class="card-icon">🧪</div>
-    <h3>Lab Recommendations</h3>
-    <div class="badge deep">Practical Orz -1</div>
-    <p>Essential lab techniques, safety protocols, equipment guides, and tips for experimental design, perfect for IBO practical prep.</p>
-    <span class="btn-outline">Explore Lab Guides →</span>
-  </a>
-  <a href="/biobytes/articles/gic-2026/" class="card">
-    <div class="card-icon">🧬</div>
-    <h3>GIC 2026 Blog</h3>
-    <div class="badge deep">Conference Diary</div>
-    <p>Three days at the Dr Babu Rajendra Prasad International Convention Centre, Bengaluru, our lecture notes and takeaways from the Genomics India Conference 2026.</p>
-    <span class="btn-outline">Read the GIC Diary →</span>
-  </a>
+{{< tab name="Frontiers" >}}
+<div class="fp">
+<div class="fp-hero">
+<p class="fp-kicker">The Frontier Project</p>
+<h2 class="fp-title">Read research the way researchers do</h2>
+<p class="fp-lede">Your textbook stops where the research begins. Frontier Reports pick up from there. Each one takes a single field, finds the most interesting results of the last couple of years, and walks you through what was actually <em>measured</em>, what was only <em>claimed</em>, how sure anyone is, and which part of the biology you are already studying the story rests on.</p>
+<div class="fp-promises">
+<div class="fp-promise"><span class="fp-promise-icon">🔎</span><span>Every claim traced to a source you can open</span></div>
+<div class="fp-promise"><span class="fp-promise-icon">⚖️</span><span>A counter-case in every story</span></div>
+<div class="fp-promise"><span class="fp-promise-icon">🧮</span><span>Maths you can check, not just results to believe</span></div>
+<div class="fp-promise"><span class="fp-promise-icon">🖼️</span><span>Real figures from the missions and labs, credited</span></div>
+</div>
+<div class="fp-btn-row">
+<a href="/biobytes/frontiers/astrobiology/" class="fp-btn">Astrobiology &rarr;</a>
+<a href="/biobytes/frontiers/drug-delivery/" class="fp-btn">Drug delivery &rarr;</a>
+</div>
+</div>
+<div class="fp-section">
+<p class="fp-eyebrow">Why this exists</p>
+<h3 class="fp-h">The gap between the textbook and the lab</h3>
+<p class="fp-text">A syllabus is a snapshot. Somewhere between the chapter on cellular respiration and the headline about microbes on Mars sits a long chain of measurements, assumptions, arguments and corrections that nobody shows you. News coverage keeps the conclusion and drops the chain. We think the chain is the interesting part, and it is also the part that good Olympiad problems reward: reading a graph, asking what a control would look like, noticing that a result depends on a model.</p>
+<p class="fp-text">So each Frontier Report slows down on exactly those steps. You see the instrument, the numbers, the strongest objection, and the arithmetic behind the headline, and then you see which page of your notes explains the mechanism underneath.</p>
+</div>
+<div class="fp-section">
+<p class="fp-eyebrow">What we are trying to do</p>
+<h3 class="fp-h">Four aims</h3>
+<div class="fp-grid fp-grid-2">
+<div class="fp-card"><span class="fp-card-num">1</span><h4>Bridge the textbook and the frontier</h4><p>Every story ends in "The biology underneath": the mechanism from the notes (respiration, diffusion, chirality, ecology) that makes the headline make sense, with a link to study it properly.</p></div>
+<div class="fp-card"><span class="fp-card-num">2</span><h4>Teach critical reading</h4><p>Four questions travel through every report. Is the signal real? Is it from where we think? Is there a simpler explanation? Has anyone else got the same result? Once they become a habit, you can use them on any claim.</p></div>
+<div class="fp-card"><span class="fp-card-num">3</span><h4>Show the maths and the computation</h4><p>Modern biology runs on models, statistics and simulation. Each report works through real arithmetic from published numbers, and some include a simulator where you can watch a statistical fluke appear and fade as more data arrives.</p></div>
+<div class="fp-card"><span class="fp-card-num">4</span><h4>Keep honesty visible</h4><p>Ratings are explained, sources are numbered, dates are stated, and AI assistance is disclosed. If we could not verify something, the page says so instead of sounding sure.</p></div>
+</div>
+</div>
+<div class="fp-section">
+<p class="fp-eyebrow">What is inside</p>
+<h3 class="fp-h">Anatomy of a report</h3>
+<div class="fp-grid fp-grid-3">
+<div class="fp-mini"><span class="fp-mini-icon">🧭</span><h4>A reading guide</h4><p>How to judge a claim in this particular field, before any story begins.</p></div>
+<div class="fp-mini"><span class="fp-mini-icon">📊</span><h4>An honest scoreboard</h4><p>A table that states each result's real status in plain words.</p></div>
+<div class="fp-mini"><span class="fp-mini-icon">📖</span><h4>4 to 6 research stories</h4><p>The claim, how they did it, the numbers, where it is contested, the biology underneath.</p></div>
+<div class="fp-mini"><span class="fp-mini-icon">🧮</span><h4>Worked maths</h4><p>At least one story shows the calculation, and some add an interactive lab.</p></div>
+<div class="fp-mini"><span class="fp-mini-icon">🗺️</span><h4>What happens next</h4><p>Dated, sourced milestones, plus a table linking each story to your syllabus.</p></div>
+<div class="fp-mini"><span class="fp-mini-icon">📚</span><h4>Glossary and sources</h4><p>Plain definitions and numbered references to the papers themselves.</p></div>
+</div>
+</div>
+<div class="fp-section">
+<p class="fp-eyebrow">How a report is made</p>
+<h3 class="fp-h">From a field to a finished page</h3>
+<ol class="fp-steps">
+<li><h4>Scope</h4><p>A broad field is narrowed to a real question, such as why most nanomedicines never reach their target. If the question is not sharp, the report is not ready.</p></li>
+<li><h4>Source</h4><p>We start from the primary papers, prefer open copies, and treat press coverage as context only. Anything we could not read in full is flagged.</p></li>
+<li><h4>Stress-test</h4><p>For each story we look for the strongest independent rebuttal or reanalysis and read it, so the page can show where the claim is contested.</p></li>
+<li><h4>Compute</h4><p>We rebuild a key number from published parameters and sanity-check it against the paper's own figures, so the maths is something you can follow, not just trust.</p></li>
+<li><h4>Review and disclose</h4><p>Reports are drafted with AI assistance and reviewed by a BiOGuide editor before they go live. The assistance is stated on every page and recorded in the project's AI involvement log.</p></li>
+</ol>
+</div>
+<div class="fp-section">
+<p class="fp-eyebrow">Reading the ratings</p>
+<h3 class="fp-h">Two bars per story</h3>
+<p class="fp-text">Each story carries two editorial ratings out of five. <strong>Data robustness</strong> asks how solid the measurement itself is. The second bar changes with the field: in astrobiology it was "bearing on life"; for biomedical topics it will measure how far a result is from patients. These are our judgement calls, not an official scale, and a note beside each bar says why we gave it.</p>
+<div class="fp-meter-demo">
+<div class="fp-meter"><span class="fp-meter-label">Data robustness</span><span class="fp-bar" role="img" aria-label="4 out of 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span class="fp-meter-note">Example: direct measurement, peer reviewed, one lab</span></div>
+<div class="fp-meter"><span class="fp-meter-label">Second axis (varies)</span><span class="fp-bar" role="img" aria-label="2 out of 5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span class="fp-meter-note">Example: suggestive pattern, far from the real-world question</span></div>
+</div>
+</div>
+<div class="fp-section">
+<p class="fp-eyebrow">Our promises</p>
+<h3 class="fp-h">How we write</h3>
+<ul class="fp-list">
+<li><strong>We keep the sources' hedges.</strong> A "potential biosignature" stays potential, and "consistent with" is never upgraded to "proves".</li>
+<li><strong>Every story gets its strongest counter-case</strong>, with who raised it and what would settle it.</li>
+<li><strong>Numbers carry units and a source.</strong> Derived numbers are checked against the paper.</li>
+<li><strong>We say what we could not verify</strong>, and which images or references need a second look.</li>
+<li><strong>Every report states when it was last checked</strong>, because this kind of knowledge ages quickly.</li>
+<li><strong>Corrections are welcome</strong> and are made in the open.</li>
+</ul>
+<div class="fp-note"><strong>What these reports are not.</strong> They are not news bulletins, not systematic reviews, and never medical advice. A report is a guided tour of a few carefully chosen results, written at the level of a keen Olympiad student.</div>
+</div>
+<div class="fp-section">
+<p class="fp-eyebrow">The reports</p>
+<h3 class="fp-h">Read, and what is next</h3>
+<div class="fp-grid fp-grid-3">
+<a href="/biobytes/frontiers/astrobiology/" class="fp-report">
+<span class="fp-cover"><img src="/frontier/astrobio/exoplanet-k2-18b-illustration.webp" alt="" width="1280" height="720" loading="lazy" style="object-position: center"><span class="fp-cover-field">Astrobiology</span></span>
+<span class="fp-report-body"><span class="fp-badge">Frontier Report</span><span class="fp-report-title">The Search for Life, Right Now</span><span class="fp-report-text">Leopard spots on Mars, a contested gas on K2-18 b, fresh ocean chemistry from Enceladus, sugar on an asteroid, and a noise lab where you can watch a fluke fade.</span><span class="fp-report-meta">5 stories &middot; worked maths &middot; interactive lab</span><span class="fp-report-credit">Cover: illustration by NASA, CSA, ESA, J. Olmsted (STScI); science: N. Madhusudhan (Cambridge). Full credit in the report.</span><span class="fp-report-cta">Read the report &rarr;</span></span>
+</a>
+<a href="/biobytes/frontiers/drug-delivery/" class="fp-report">
+<span class="fp-cover"><img src="/frontier/drug-delivery/crystalsoverlaid.webp" alt="" width="759" height="731" loading="lazy" style="object-position: center 52%"><span class="fp-cover-field">Drug delivery</span></span>
+<span class="fp-report-body"><span class="fp-badge">Frontier Report</span><span class="fp-report-title">From Screen to Body</span><span class="fp-report-text">An AI-designed drug in patients, proteins built against snake venom, a gene editor made for one baby, a brain shuttle, and the 2% endosome problem.</span><span class="fp-report-meta">5 stories &middot; worked maths &middot; interactive lab</span><span class="fp-report-credit">Cover: figure by Vázquez Torres et al., preprint version of the Nature paper, CC BY 4.0, cropped. Full credit in the report.</span><span class="fp-report-cta">Read the report &rarr;</span></span>
+</a>
+<a href="mailto:resourcerepository4boguide@gmail.com?subject=Frontier%20Report%20suggestion" class="fp-report fp-report-soon fp-report-ask">
+<span class="fp-soon-icon">💡</span>
+<span class="fp-report-body"><span class="fp-badge">Your turn</span><span class="fp-report-title">Which field should be next?</span><span class="fp-report-text">Tell us a field, a question, or a paper you think deserves a closer look.</span><span class="fp-report-cta">Suggest a topic &rarr;</span></span>
+</a>
+</div>
+<p class="fp-text fp-small">Browse every report on the <a href="/biobytes/frontiers/">Frontier Reports page</a>. Spotted a mistake, or have a paper we should read? Email <a href="mailto:resourcerepository4boguide@gmail.com">resourcerepository4boguide@gmail.com</a>.</p>
+</div>
 </div>
 {{< /tab >}}
 {{< tab name="Testimonials" >}}
@@ -142,6 +216,31 @@ cascade:
 </a> 
 
 </div> 
+{{< /tab >}}
+{{< tab name="Articles" >}}
+<div class="two-cards">
+  <a href="/biobytes/articles/neuroscience/" class="card">
+    <div class="card-icon">🧠</div>
+    <h3>How to get better at theory</h3>
+    <div class="badge fast">Theory Orz</div>
+    <p>Doing good at theory exams is not always dependent on your knowledge, or on how good you do in practice problem. Learn how to get better at the actual exams!</p>
+    <span class="btn-outline">Read Theory Tips →</span>
+  </a>
+  <a href="/biobytes/articles/lab-recommendations/" class="card">
+    <div class="card-icon">🧪</div>
+    <h3>Lab Recommendations</h3>
+    <div class="badge deep">Practical Orz -1</div>
+    <p>Essential lab techniques, safety protocols, equipment guides, and tips for experimental design, perfect for IBO practical prep.</p>
+    <span class="btn-outline">Explore Lab Guides →</span>
+  </a>
+  <a href="/biobytes/articles/gic-2026/" class="card">
+    <div class="card-icon">🧬</div>
+    <h3>GIC 2026 Blog</h3>
+    <div class="badge deep">Conference Diary</div>
+    <p>Three days at the Dr Babu Rajendra Prasad International Convention Centre, Bengaluru, our lecture notes and takeaways from the Genomics India Conference 2026.</p>
+    <span class="btn-outline">Read the GIC Diary →</span>
+  </a>
+</div>
 {{< /tab >}}
 
 {{< /tabs >}}

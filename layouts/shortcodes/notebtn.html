@@ -1,0 +1,5 @@
+{{- $path := .Get "path" -}}
+{{- $p := site.GetPage (strings.TrimSuffix "/" $path) -}}
+{{- if not $p -}}{{- errorf "notebtn shortcode: no page at %q (%s)" $path .Page.File.Path -}}{{- end -}}
+{{- $label := .Get "label" | default $p.Title -}}
+<a class="fr-note-btn{{ if .Get "compact" }} fr-note-btn-compact{{ end }}" href="{{ $p.RelPermalink }}"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5"/><path d="M9 7h6"/></svg><span class="fr-note-text"><span class="fr-note-title">{{ $label }}</span>{{ with .Get "why" }}<span class="fr-note-why">{{ . }}</span>{{ end }}</span></a>

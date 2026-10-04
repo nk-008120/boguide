@@ -1,0 +1,513 @@
+biosignature:
+  name: "Biosignature"
+  def: "Any measurable sign (a molecule, a mineral pattern, an isotope ratio) that points to past or present life. It is evidence, not proof, because most signs can in principle be made without life."
+  wiki: "Biosignature"
+
+sigma:
+  name: "Sigma (standard deviations)"
+  def: "A way to say how unlikely a result is if there is only noise. One sigma is one standard deviation of that noise, so 3 sigma means a fluctuation three times the typical size."
+  wiki: "Standard_deviation"
+
+look-elsewhere:
+  name: "Look-elsewhere effect"
+  def: "If you search many places or test many candidate signals, some will look striking by pure chance. The more places you look, the less impressive any single bump becomes."
+  wiki: "Look-elsewhere_effect"
+
+cold-scale:
+  name: "CoLD scale"
+  def: "Confidence of Life Detection: a seven-rung ladder for reporting how strong the evidence for life is, from 'a signal was detected' up to independent verification."
+
+abiotic:
+  name: "Abiotic"
+  def: "Not involving living organisms. An abiotic false positive is a signal that looks biological but has a non-living explanation, such as geology or chemistry."
+
+perseverance:
+  name: "Perseverance rover"
+  def: "NASA's car-sized Mars rover, exploring Jezero Crater since February 2021 and sealing rock cores in tubes for a possible return to Earth."
+  wiki: "Perseverance_(rover)"
+
+jezero:
+  name: "Jezero Crater"
+  def: "A crater on Mars about 45 km wide that once held a lake fed by a river delta. It was chosen as the landing site because water-laid sediments are good places to look for signs of life."
+  wiki: "Jezero_(crater)"
+
+mudstone:
+  name: "Mudstone"
+  def: "A fine-grained sedimentary rock made of compacted clay and silt, usually laid down in still or slow-moving water."
+  wiki: "Mudstone"
+
+pixl:
+  name: "PIXL"
+  def: "An X-ray fluorescence spectrometer on the rover's arm. It maps which chemical elements sit where in a rock, at scales finer than a millimetre."
+  wiki: "PIXL"
+
+vivianite:
+  name: "Vivianite"
+  def: "A hydrated iron(II) phosphate mineral that forms in oxygen-poor, iron-rich muds, often where organic matter is decaying."
+  wiki: "Vivianite"
+
+greigite:
+  name: "Greigite"
+  def: "An iron sulfide mineral (Fe3S4). On Earth it commonly forms in oxygen-free sediments where microbes reduce sulfate, although it can also form without life."
+  wiki: "Greigite"
+
+anaerobic-respiration:
+  name: "Anaerobic respiration"
+  def: "Energy-yielding respiration that uses something other than oxygen as the final electron acceptor, such as Fe(III), sulfate or nitrate."
+  wiki: "Anaerobic_respiration"
+  note: "/resources/1-cell-molecular/bioenergetics-central-metabolism"
+  note_label: "Bioenergetics notes"
+
+electron-acceptor:
+  name: "Electron acceptor"
+  def: "The molecule that finally receives the electrons at the end of an energy-yielding chain of reactions. Oxygen is the familiar one; microbes in oxygen-free places use others."
+  wiki: "Electron_acceptor"
+  note: "/resources/1-cell-molecular/bioenergetics-central-metabolism"
+  note_label: "Bioenergetics notes"
+
+msr:
+  name: "Mars Sample Return"
+  def: "A planned programme to bring the rock cores collected by Perseverance back to Earth for laboratory study. Its future is uncertain because of budget pressure."
+  wiki: "Mars_sample-return_mission"
+
+tianwen-3:
+  name: "Tianwen-3"
+  def: "A planned Chinese Mars sample-return mission, currently scheduled to launch around 2028."
+  wiki: "Tianwen-3"
+
+k2-18b:
+  name: "K2-18 b"
+  def: "A planet about 2.6 times Earth's radius that orbits a small red star roughly 120 light-years away, in the star's habitable zone. That is why it gets so much attention."
+  wiki: "K2-18b"
+
+sub-neptune:
+  name: "Sub-Neptune"
+  def: "A planet larger than Earth but smaller than Neptune. None exists in our Solar System, yet they are among the most common planets found around other stars."
+  wiki: "Sub-Neptune"
+
+jwst:
+  name: "James Webb Space Telescope"
+  def: "NASA's infrared space telescope, launched in December 2021. Its instruments split a planet's starlight into spectra so astronomers can look for molecules in its atmosphere."
+  wiki: "James_Webb_Space_Telescope"
+
+hycean:
+  name: "Hycean planet"
+  def: "A hypothetical planet with a liquid-water ocean beneath a thick hydrogen-rich atmosphere. Whether K2-18 b is one is itself debated."
+  wiki: "Hycean_planet"
+
+dms:
+  name: "Dimethyl sulfide (DMS)"
+  def: "A smelly sulfur gas. On Earth most atmospheric DMS comes from marine microbes, but it has also been found around comets and in interstellar space."
+  wiki: "Dimethyl_sulfide"
+
+dmsp:
+  name: "DMSP"
+  def: "Dimethylsulfoniopropionate, a sulfur compound made by marine algae and bacteria that works as an osmolyte, a small molecule cells use to balance water and salt. Microbes break it down and release DMS."
+  wiki: "Dimethylsulfoniopropionate"
+
+transmission-spectrum:
+  name: "Transmission spectrum"
+  def: "The pattern of how much starlight a planet's atmosphere blocks at each wavelength while the planet crosses its star. Molecules absorb particular wavelengths, so the pattern reveals which gases are present."
+
+bayesian-inference:
+  name: "Bayesian inference"
+  def: "A way of updating how plausible each model is as data arrive, using Bayes' theorem. Retrieval codes use it to ask which model atmospheres the spectrum allows."
+  wiki: "Bayesian_inference"
+
+scale-height:
+  name: "Scale height"
+  def: "The height over which atmospheric pressure falls by a factor of e (about 2.7). It sets how thick the absorbing layer looks, and it depends on temperature, gravity and the gas's mean molecular weight."
+  wiki: "Scale_height"
+
+rosetta:
+  name: "Rosetta"
+  def: "A European Space Agency probe that orbited comet 67P from 2014 to 2016 and carried instruments that analysed the gas around it."
+  wiki: "Rosetta_(spacecraft)"
+
+comet-67p:
+  name: "Comet 67P"
+  def: "67P/Churyumov-Gerasimenko, the comet that Rosetta studied up close. It is a frozen, lifeless body, which makes its chemistry a useful baseline for non-biological sources."
+  wiki: "67P/Churyumov%E2%80%93Gerasimenko"
+
+enceladus:
+  name: "Enceladus"
+  def: "A moon of Saturn about 500 km wide, covered in ice. Cassini found a salty ocean beneath the shell and jets of vapour and ice grains erupting from cracks near the south pole."
+  wiki: "Enceladus"
+
+cassini:
+  name: "Cassini"
+  def: "A NASA, ESA and Italian space agency mission that orbited Saturn from 2004 to 2017. Its archive is still yielding discoveries."
+  wiki: "Cassini-Huygens"
+
+cda:
+  name: "Cosmic Dust Analyzer"
+  def: "An instrument on Cassini that caught dust and ice grains and measured their composition with a built-in mass spectrometer."
+  wiki: "Cosmic_Dust_Analyzer"
+
+time-of-flight:
+  name: "Time of flight"
+  def: "Ions are accelerated through the same voltage, so lighter ones travel faster. The time an ion takes to reach the detector therefore tells you its mass-to-charge ratio."
+  wiki: "Time-of-flight_mass_spectrometry"
+
+hydrothermal-vent:
+  name: "Hydrothermal vent"
+  def: "A crack in the seafloor that releases water heated by the rock below and loaded with dissolved chemicals. Vents can power ecosystems with no sunlight and are a leading candidate setting for life's origin."
+  wiki: "Hydrothermal_vent"
+  note: "/resources/15-evolution/history-of-life-origin-and-major-transitions"
+  note_label: "History of Life notes"
+
+chemolithoautotroph:
+  name: "Chemolithoautotroph"
+  def: "An organism that gets energy from inorganic chemicals such as hydrogen and builds its own biomass from carbon dioxide, needing neither light nor organic food."
+  wiki: "Chemolithoautotroph"
+
+methanogenesis:
+  name: "Methanogenesis"
+  def: "An energy-yielding metabolism in which some archaea combine hydrogen and carbon dioxide into methane and water."
+  wiki: "Methanogenesis"
+
+osiris-rex:
+  name: "OSIRIS-REx"
+  def: "A NASA mission that collected rubble from the asteroid Bennu in 2020 and dropped the sample capsule to Earth in September 2023."
+  wiki: "OSIRIS-REx"
+
+bennu:
+  name: "Bennu"
+  def: "A dark, carbon-rich asteroid about half a kilometre wide, thought to be a fragment of a larger, older parent body."
+  wiki: "101955_Bennu"
+
+nucleobase:
+  name: "Nucleobase"
+  def: "The nitrogen-containing letters of DNA and RNA: adenine, guanine, cytosine and thymine (uracil in RNA)."
+  wiki: "Nucleobase"
+
+evaporite:
+  name: "Evaporite"
+  def: "A mineral deposit left behind when water carrying dissolved salts evaporates, like the crust at the edge of a drying salt lake."
+  wiki: "Evaporite"
+
+homochirality:
+  name: "Homochirality"
+  def: "The uniform handedness of life's molecules: proteins use almost only L-amino acids and nucleic acids use D-sugars. Chemistry without life normally gives equal mixtures of both hands."
+  wiki: "Homochirality"
+
+rna-world:
+  name: "RNA world hypothesis"
+  def: "The idea that an early stage of life used RNA both to store information and to catalyse reactions, before DNA and proteins took over those jobs."
+  wiki: "RNA_world"
+
+amino-acids:
+  name: "Amino acids"
+  def: "Small molecules with an amino group and a carboxyl group. Twenty of them are strung into proteins, and their side chains decide how each protein folds and works."
+  wiki: "Amino_acid"
+  note: "/resources/1-cell-molecular/amino-acids-protein-chemistry"
+  note_label: "Amino acid notes"
+
+nucleic-acids:
+  name: "Nucleic acids"
+  def: "Long chains of nucleotides: DNA stores genetic information and RNA carries it and does many other jobs in the cell."
+  wiki: "Nucleic_acid"
+  note: "/resources/1-cell-molecular/nucleotide-nucleic-acid-chemistry"
+  note_label: "Nucleic acid notes"
+
+carbohydrates:
+  name: "Carbohydrates"
+  def: "Sugars and the chains built from them, such as starch and cellulose. They store energy, give structure and also form part of the backbone of RNA and DNA."
+  wiki: "Carbohydrate"
+  note: "/resources/1-cell-molecular/carbohydrate-chemistry-biology"
+  note_label: "Carbohydrate notes"
+
+panspermia:
+  name: "Panspermia"
+  def: "The hypothesis that life, or its building blocks, can travel between planets or star systems, for example inside rocks or dust."
+  wiki: "Panspermia"
+
+terraforming:
+  name: "Terraforming"
+  def: "Usually the deliberate engineering of a planet's climate. In this study it is used in a broad sense: life changing the conditions of the planet it lands on."
+  wiki: "Terraforming"
+
+agent-based-model:
+  name: "Agent-based model"
+  def: "A simulation in which many individual agents (here, planets) follow simple rules and interact, so that large-scale patterns emerge from the bottom up."
+  wiki: "Agent-based_model"
+
+cluster-analysis:
+  name: "Cluster analysis"
+  def: "A family of methods that sort items into groups so that members of a group resemble each other more than they resemble other groups, without being told the groups in advance."
+  wiki: "Cluster_analysis"
+
+biogeography:
+  name: "Biogeography"
+  def: "The study of how species and traits are spread across space, and which processes produced that pattern."
+  wiki: "Biogeography"
+  note: "/resources/8-ecology"
+  note_label: "Ecology notes"
+
+europa-clipper:
+  name: "Europa Clipper"
+  def: "A NASA spacecraft launched in October 2024 to make many close flybys of Jupiter's moon Europa and assess whether its subsurface ocean could be habitable."
+  wiki: "Europa_Clipper"
+
+dragonfly:
+  name: "Dragonfly"
+  def: "A NASA rotorcraft, a drone-like flyer, planned to hop between sites on Saturn's moon Titan and study its organic-rich surface chemistry."
+  wiki: "Dragonfly_(Titan_space_probe)"
+
+hwo:
+  name: "Habitable Worlds Observatory"
+  def: "A proposed future NASA flagship space telescope designed to image Earth-like planets and search their atmospheres for signs of life."
+  wiki: "Habitable_Worlds_Observatory"
+
+generative-ai:
+  name: "Generative AI"
+  def: "Software trained on large amounts of data that can produce new outputs, such as text, images or molecular structures, rather than only sorting existing ones. In drug discovery it proposes candidate molecules or targets for scientists to test."
+  wiki: "Generative_artificial_intelligence"
+
+blood-brain-barrier:
+  name: "Blood-brain barrier"
+  def: "The tightly sealed layer of cells lining brain capillaries that controls what passes from the blood into the brain. It protects the brain but also blocks most drugs, so crossing it is a major design problem."
+  wiki: "Blood-brain_barrier"
+  note: "/resources/3-animal-physiology/nervous-system-physiology"
+  note_label: "Nervous system notes"
+
+placebo:
+  name: "Placebo"
+  def: "A treatment with no active ingredient, given to a comparison group so researchers can tell real drug effects from expectation and chance."
+  wiki: "Placebo"
+
+clinical-trial-phases:
+  name: "Clinical trial phases"
+  def: "Phase I mainly tests safety in a few people. Phase II looks for signs of benefit and a workable dose in more people, and IIa is a smaller early part of it. Phase III compares the drug with placebo or standard care in hundreds or thousands."
+  wiki: "Phases_of_clinical_research"
+
+lipid-nanoparticle:
+  name: "Lipid nanoparticle"
+  def: "A tiny bubble of fat-like molecules that wraps RNA and carries it through the blood into cells. Its ionisable lipids are neutral in blood but pick up charge in the acidic endosome, which helps the particle disturb the membrane and free its cargo."
+  wiki: "Lipid_nanoparticle"
+  note: "/resources/1-cell-molecular/lipids-membrane-biochemistry"
+  note_label: "Lipid notes"
+
+base-editor:
+  name: "Base editor"
+  def: "A protein that changes one letter of DNA into another at a chosen spot without making a full double-strand cut. A guide RNA steers it to the right place."
+  wiki: "Base_editing"
+
+urea-cycle:
+  name: "Urea cycle"
+  def: "The liver pathway that converts toxic ammonia, a waste product of protein breakdown, into urea for the kidneys to excrete. CPS1 is its first enzyme, so a fault there lets ammonia build up in the blood."
+  wiki: "Urea_cycle"
+  note: "/resources/3-animal-physiology/digestive-metabolic-physiology"
+  note_label: "Metabolic physiology notes"
+
+accelerated-approval:
+  name: "Accelerated approval"
+  def: "A US regulatory route that approves a drug early on a surrogate endpoint, with a requirement to confirm real clinical benefit afterwards. The approval can be withdrawn if the confirmatory trial fails."
+  wiki: "Accelerated_approval_(FDA)"
+
+transferrin-receptor:
+  name: "Transferrin receptor"
+  def: "A protein on the surface of many cells, including the cells lining brain blood vessels, that binds transferrin and brings iron in. Drug shuttles borrow it as a doorway into the brain."
+  wiki: "Transferrin_receptor"
+  note: "/resources/1-cell-molecular/plasma-membrane-structure-transport"
+  note_label: "Membrane transport notes"
+
+endosome:
+  name: "Endosome"
+  def: "A membrane-bound compartment formed when a cell takes in material from outside. It acidifies as it matures and often fuses with lysosomes that digest its contents."
+  wiki: "Endosome"
+  note: "/resources/1-cell-molecular/endomembrane-system-protein-trafficking"
+  note_label: "Endomembrane notes"
+
+rct:
+  name: "Randomised controlled trial"
+  def: "A trial in which volunteers are assigned to treatments by chance, so the groups are alike at the start. Placebo-controlled means one group receives an inactive treatment for comparison."
+  wiki: "Randomized_controlled_trial"
+
+rentosertib:
+  name: "Rentosertib"
+  def: "An experimental drug, taken by mouth, that blocks the enzyme TNIK. Its target and its structure were both found with generative AI by Insilico Medicine, and it is being tested in idiopathic pulmonary fibrosis. It is not approved anywhere."
+  wiki: "Rentosertib"
+
+tnik:
+  name: "TNIK"
+  def: "A kinase, an enzyme that attaches phosphate groups to other proteins. An AI platform nominated it as a drug target in pulmonary fibrosis, and rentosertib is designed to inhibit it."
+  wiki: "TNIK"
+
+ipf:
+  name: "Idiopathic pulmonary fibrosis"
+  def: "A disease in which lung tissue becomes progressively scarred and stiff, so breathing capacity falls over time. Idiopathic means the cause is unknown."
+  wiki: "Idiopathic_pulmonary_fibrosis"
+  note: "/resources/3-animal-physiology/respiratory-physiology"
+  note_label: "Respiratory physiology notes"
+
+confidence-interval:
+  name: "Confidence interval"
+  def: "A range of values consistent with the data. A 95% interval is built so that, over many repeated studies, about 95% of such intervals would contain the true value. If it includes zero, a difference from zero is not clearly shown."
+  wiki: "Confidence_interval"
+
+endpoint:
+  name: "Trial endpoint"
+  def: "The outcome a trial is designed to measure. The primary endpoint is the main question the trial is built to answer; secondary endpoints are extra measures that carry less statistical weight."
+  wiki: "Clinical_endpoint"
+
+nintedanib:
+  name: "Nintedanib"
+  def: "An approved drug for idiopathic pulmonary fibrosis that slows the loss of lung function. It blocks several growth-factor receptor kinases."
+  wiki: "Nintedanib"
+
+atp:
+  name: "ATP"
+  def: "Adenosine triphosphate, the cell's energy currency. Kinases use it as the source of the phosphate groups they attach to other proteins."
+  wiki: "Adenosine_triphosphate"
+  note: "/resources/1-cell-molecular/bioenergetics-central-metabolism"
+  note_label: "Bioenergetics notes"
+
+three-finger-toxin:
+  name: "Three-finger toxin"
+  def: "A large family of small snake venom proteins with three loops that stick out from a compact core, like fingers. Many are neurotoxins that block nerve signals, and others damage cells directly."
+  wiki: "Three-finger_toxin"
+
+antivenom:
+  name: "Antivenom"
+  def: "A treatment made by injecting animals with venom and purifying the antibodies they produce, which are then given to snakebite patients to neutralise the venom. It is costly to make and varies from batch to batch."
+  wiki: "Antivenom"
+
+rfdiffusion:
+  name: "RFdiffusion"
+  def: "Design software that starts from random noise and refines it, step by step, into a three-dimensional protein backbone shaped to meet a goal such as fitting onto a target. It works much as image generators do, but for protein shapes."
+
+proteinmpnn:
+  name: "ProteinMPNN"
+  def: "A neural network that, given a protein backbone, proposes amino-acid sequences likely to fold into it. It is typically run after a backbone has been generated."
+
+alphafold:
+  name: "AlphaFold"
+  def: "A family of AI programs that predict a protein's three-dimensional structure from its amino-acid sequence. In design work it is used as a filter to discard sequences predicted not to fold or bind as intended."
+  wiki: "AlphaFold"
+  note: "/resources/1-cell-molecular/protein-structure-folding-function"
+  note_label: "Protein structure notes"
+
+preprint:
+  name: "Preprint"
+  def: "A research paper shared publicly before peer review, so other experts have not yet checked it. The final published version can differ."
+  wiki: "Preprint"
+
+dissociation-constant:
+  name: "Dissociation constant (Kd)"
+  def: "The concentration of a molecule at which half of its binding partners are occupied. A smaller Kd means tighter binding, and nanomolar values count as strong."
+  wiki: "Dissociation_constant"
+
+rmsd:
+  name: "Root-mean-square deviation"
+  def: "A measure of how far apart two structures are, averaged over matching atoms. A value of about 1 angstrom, roughly the size of an atom, means the two structures nearly coincide."
+  wiki: "Root-mean-square_deviation_of_atomic_positions"
+
+cytotoxin:
+  name: "Cytotoxin"
+  def: "A toxin that damages or kills cells directly. In snake venom, cytotoxins cause local tissue damage around the bite."
+
+antibody:
+  name: "Antibody"
+  def: "A Y-shaped protein made by the immune system that binds one specific target, called an antigen, with high precision. Antivenoms and many modern drugs rely on this lock-and-key binding."
+  wiki: "Antibody"
+  note: "/resources/3-animal-physiology/immune-physiology"
+  note_label: "Immune physiology notes"
+
+cps1-deficiency:
+  name: "CPS1 deficiency"
+  def: "A rare inherited condition in which the liver enzyme CPS1, the first step of the urea cycle, does not work. Ammonia builds up in the blood, which can injure the brain, and early infancy is the riskiest time."
+  wiki: "Carbamoyl_phosphate_synthetase_I_deficiency"
+
+stop-codon:
+  name: "Stop codon"
+  def: "A three-letter signal in messenger RNA that tells the ribosome to end protein synthesis. A mutation that creates one too early produces a truncated, usually useless protein."
+  wiki: "Stop_codon"
+  note: "/resources/1-cell-molecular/translation-genetic-code"
+  note_label: "Translation notes"
+
+guide-rna:
+  name: "Guide RNA"
+  def: "A short RNA that matches a chosen DNA sequence and steers an editing protein to that exact spot in the genome."
+  wiki: "Guide_RNA"
+
+mrna:
+  name: "mRNA"
+  def: "Messenger RNA: a copy of a gene's instructions that ribosomes read to build a protein. In many therapies the mRNA is the cargo, and the patient's own cells make the protein from it."
+  wiki: "Messenger_RNA"
+  note: "/resources/1-cell-molecular/translation-genetic-code"
+  note_label: "Translation notes"
+
+hunter-syndrome:
+  name: "Hunter syndrome"
+  def: "An inherited disease, also called MPS II, in which the enzyme iduronate-2-sulfatase is missing or faulty. Sugar polymers such as heparan sulfate then build up in tissues, including the brain in many patients."
+  wiki: "Hunter_syndrome"
+
+surrogate-endpoint:
+  name: "Surrogate endpoint"
+  def: "A measurable stand-in, such as the level of a molecule in spinal fluid, that is expected to predict a real outcome like how a patient feels or lives. It can speed up approval but may predict poorly."
+  wiki: "Surrogate_endpoint"
+
+heparan-sulfate:
+  name: "Heparan sulfate"
+  def: "A long sugar polymer found on cell surfaces and between cells. Enzymes normally break it down, and in Hunter syndrome it builds up because one of those enzymes is missing."
+  wiki: "Heparan_sulfate"
+
+cerebrospinal-fluid:
+  name: "Cerebrospinal fluid"
+  def: "The clear fluid that surrounds the brain and spinal cord. Its contents act as a window on the brain, because it can be sampled with a lumbar puncture."
+  wiki: "Cerebrospinal_fluid"
+
+trontinemab:
+  name: "Trontinemab"
+  def: "An experimental Alzheimer's drug from Roche: an anti-amyloid antibody with a part that binds the transferrin receptor, designed to cross the blood-brain barrier better than ordinary antibodies."
+  wiki: "Trontinemab"
+
+amyloid-beta:
+  name: "Amyloid beta"
+  def: "A small protein fragment that clumps into the plaques found in Alzheimer's disease brains. Several drugs aim to clear it, and whether clearing it helps patients is what the trials test."
+  wiki: "Amyloid_beta"
+
+tight-junction:
+  name: "Tight junction"
+  def: "A seal between neighbouring cells that stops substances slipping through the gap. Tight junctions between brain capillary cells are a main reason the blood-brain barrier is so restrictive."
+  wiki: "Tight_junction"
+  note: "/resources/1-cell-molecular/cell-junctions-ecm-cell-death"
+  note_label: "Cell junction notes"
+
+sirna:
+  name: "siRNA"
+  def: "Small interfering RNA: a short double-stranded RNA that switches off a chosen gene by guiding the cell to destroy the matching messenger RNA."
+  wiki: "Small_interfering_RNA"
+
+cytosol:
+  name: "Cytosol"
+  def: "The watery fluid inside a cell, outside its compartments. RNA drugs must reach it to work, because that is where ribosomes and the cell's gene-silencing machinery operate."
+  wiki: "Cytosol"
+
+endosomal-escape:
+  name: "Endosomal escape"
+  def: "The step in which a cargo gets out of the endosome into the cytosol before the endosome matures and fuses with a lysosome. Without it the cargo is destroyed or trapped."
+  note: "/resources/1-cell-molecular/endomembrane-system-protein-trafficking"
+  note_label: "Endomembrane notes"
+
+ionisable-lipid:
+  name: "Ionisable lipid"
+  def: "A fat-like molecule that is nearly neutral in the blood but gains a positive charge in the acidic endosome. That change helps the particle disrupt the endosomal membrane, which makes it a key ingredient of RNA delivery particles."
+  note: "/resources/1-cell-molecular/lipids-membrane-biochemistry"
+  note_label: "Lipid notes"
+
+mri:
+  name: "MRI"
+  def: "Magnetic resonance imaging: a scan that uses strong magnets and radio waves to image tissues without radiation. Magnetic particles change the signal, which makes them usable as tracers."
+  wiki: "Magnetic_resonance_imaging"
+
+in-vivo:
+  name: "In vivo"
+  def: "In a living organism such as a mouse or a person, as opposed to in vitro (in a dish) or in silico (on a computer)."
+  wiki: "In_vivo"
+
+alzheimers-disease:
+  name: "Alzheimer's disease"
+  def: "A progressive brain disease that causes loss of memory and thinking skills. Clumps of amyloid beta and tau proteins build up in the brain."
+  wiki: "Alzheimer's_disease"

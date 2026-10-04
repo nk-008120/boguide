@@ -38,6 +38,8 @@
 {{- if hasPrefix $path "/biology-olympiad-preparation/" -}}{{ $extraStyles = $extraStyles | append "css/prep-guide.css" }}{{- end -}}
 {{- if hasPrefix $path "/games/" -}}{{ $extraStyles = $extraStyles | append "css/games.css" }}{{- end -}}
 {{- if hasPrefix $path "/contribute-a-guide/" -}}{{ $extraStyles = $extraStyles | append "css/contribute.css" }}{{- end -}}
+{{- if hasPrefix $path "/biobytes/frontiers/" -}}{{ $extraStyles = $extraStyles | append "css/frontiers.css" | append "css/frontiers-motion.css" | append "css/frontiers-terms.css" }}{{- end -}}
+{{- if eq $path "/biobytes/" -}}{{ $extraStyles = $extraStyles | append "css/biobytes-frontiers.css" }}{{- end -}}
 {{- range $extraStyles -}}
   {{- $css := resources.Get . -}}
   {{- if hugo.IsProduction -}}
@@ -53,6 +55,14 @@
 {{- end -}}
 {{- if hasPrefix $path "/contribute-a-guide/" -}}
 <script src="{{ "js/contribute-guide.js" | relURL }}" defer></script>
+{{- end -}}
+{{- if hasPrefix $path "/biobytes/frontiers/" -}}
+<script src="{{ "js/frontiers-noise-lab.js" | relURL }}" defer></script>
+<script src="{{ "js/frontiers-delivery-lab.js" | relURL }}" defer></script>
+<script src="{{ "js/frontiers-toc.js" | relURL }}" defer></script>
+<script src="{{ "js/frontiers-transit.js" | relURL }}" defer></script>
+<script src="{{ "js/frontiers-mol.js" | relURL }}" defer></script>
+<script src="{{ "js/frontiers-terms.js" | relURL }}" defer></script>
 {{- end -}}
 {{- if hasPrefix $path "/resources/" -}}
 <script src="{{ "js/page-rating.js" | relURL }}" defer></script>

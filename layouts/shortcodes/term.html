@@ -1,0 +1,10 @@
+{{- $key := .Get 0 -}}
+{{- $t := index site.Data.frontier_terms $key -}}
+{{- if not $t -}}{{- errorf "term shortcode: no entry %q in data/frontier_terms.yaml (%s)" $key .Page.File.Path -}}{{- end -}}
+{{- $note := "" -}}
+{{- with $t.note -}}
+  {{- $p := site.GetPage (strings.TrimSuffix "/" .) -}}
+  {{- if not $p -}}{{- errorf "term shortcode: entry %q points at a missing notes page %q" $key . -}}{{- end -}}
+  {{- $note = $p.RelPermalink -}}
+{{- end -}}
+<span class="fr-term" tabindex="0" role="button" aria-haspopup="dialog" aria-expanded="false" title="{{ $t.def }}" data-name="{{ $t.name }}" data-def="{{ $t.def }}"{{ with $t.wiki }} data-wiki="https://en.wikipedia.org/wiki/{{ . }}"{{ end }}{{ with $note }} data-note="{{ . }}" data-note-label="{{ $t.note_label | default "In your notes" }}"{{ end }}>{{ .Inner | strings.TrimSpace }}</span>

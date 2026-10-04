@@ -257,11 +257,17 @@ hidden in the UI, a non-staff user's insert is rejected by policy
 regardless of what the client sends.
 
 
-## BiOBytes: two content types under one section, one of them gated
+## BiOBytes: three content types under one section, one of them gated
 
-`content/biobytes/` holds two different kinds of content behind one set
-of tabs (`{{< tabs >}}` in `content/biobytes/_index.md`: Articles,
-Testimonials, From Social), and only one of the two is access-gated. The
+`content/biobytes/` holds three different kinds of content behind one set
+of tabs (`{{< tabs >}}` in `content/biobytes/_index.md`, in this order:
+Frontiers, Testimonials, From Social, Articles), and only one of the
+three is access-gated. The first tab in the file is the one visitors land
+on (the theme selects the first tab when none is marked selected), which
+is why Frontiers leads and Articles sits last. The `/articles/` and
+`/bioinsights/` aliases in the same frontmatter redirect to `/biobytes/`,
+so they now open on the Frontiers tab, because tabs have no deep-link
+hash. The
 cascade at the top of that file targets `path: "/biobytes/articles/**"`
 specifically, so long-form Articles pieces get `layout: "gated-article"`
 while everything under `/biobytes/testimonials/` stays fully public. This
@@ -317,6 +323,99 @@ This matters because a testimonial is not just a personal story here, it
 is also the entry that feeds a country's card on the preparation hub's
 directory below, so a factual claim about how a selection process works
 is doing double duty as both narrative color and reference material.
+
+## Frontier Reports: a layout, a sidebar and one page per field
+
+Frontier Reports are the third BiOBytes content type: long, sourced
+briefings on recent research in one field, written for a student who is
+preparing for an Olympiad. They live under `content/biobytes/frontiers/`,
+outside the `/biobytes/articles/**` cascade, so they are fully public. A
+report is a single `_index.md` with `layout: "frontier"`, which resolves to
+`layouts/frontier.html`, a copy of the theme's `wide` layout with one
+addition: an "On this page" column. That column is
+`layouts/partials/custom/frontier-toc.html`, which prints Hugo's own
+`.TableOfContents` (so it always matches the page's `##` headings) inside
+a `<details>` element. On screens at least 1180px wide it is a sticky
+right-hand sidebar; below that it becomes a collapsible bar above the
+article. `static/js/frontiers-toc.js` adds the behaviour: it highlights the
+section being read, draws a reading-progress bar, numbers the story
+entries, and nests a link to any `.fr-lab[id]` widget under its story. It
+updates on scroll through `requestAnimationFrame`, so it does nothing
+while a tab is hidden.
+
+The report's styling is `assets/css/frontiers.css`, loaded by
+`layouts/partials/custom/head-end.html` only when the page path starts
+with `/biobytes/frontiers/`, the same per-section pattern the BiOClash and
+BiOLab stylesheets use. Interactive widgets are separate scripts in
+`static/js/` that return immediately when their container element is
+missing, and are loaded from the same `hasPrefix` block, so one report's
+simulator costs other reports nothing. A page of equations needs the
+`{{< mathjax >}}` shortcode, the same one the notes pages use, and
+Goldmark treats some backslash sequences in math as escapes, so
+equations avoid `\,` and `\;`.
+
+Motion and interactive figures are layered on top of that, all as
+progressive enhancement. `assets/css/frontiers-motion.css` is loaded next
+to `frontiers.css` and uses CSS scroll-driven animations (`animation-timeline`
+with `view()` and `scroll()`), all inside an `@supports` block, so browsers
+without them (stable Firefox, at the time of writing) simply show the static
+page: blocks fade in as they enter the viewport, rating bars fill in
+sequence, and the hero drifts away. The owner asked for these effects to play
+regardless of the reduced-motion preference, so there is no
+`prefers-reduced-motion` guard. Two
+interactive figures use vendored libraries rather than CDN links: D3 7.9.0
+(ISC licence) in `static/vendor/d3/` drives the animated transit light curve
+in `static/js/frontiers-transit.js`, and 3Dmol.js 2.5.5 (BSD-3-Clause) in
+`static/vendor/3dmol/` drives the protein viewer in
+`static/js/frontiers-mol.js`, which reads a trimmed PDB file stored beside
+the report's images. Each script looks for its own container element, does
+nothing if it is absent, and injects its library only when the figure is
+within a screenful of the viewport, so a visitor who never scrolls to a
+figure never downloads the library. Frontier report images are WebP files
+with the same base name as the original, matching the rest of the site.
+
+Two reading aids are shortcodes rather than hand-written HTML. `term`
+(`layouts/shortcodes/term.html`) wraps a specialist word and looks its
+definition up by key in `data/frontier_terms.yaml`, one hand-written entry
+per term with an optional Wikipedia article title and an optional Notes page.
+The shortcode renders only a focusable `<span>` carrying the card's text in
+`data-*` attributes (with the definition as a `title` fallback), and fails the
+build if the key or the Notes page does not exist. `static/js/frontiers-terms.js`
+builds a single floating card in `<body>` on demand and positions it from the
+word's bounding box, rather than nesting a card inside the paragraph, because a
+card inside a wrapped inline element has no stable containing block and would
+be clipped by the scrolling table and maths wrappers. Hover opens it on a
+mouse, a tap or Enter opens it on touch and keyboard, and Escape or a click
+elsewhere closes it. `notebtn` (`layouts/shortcodes/notebtn.html`) renders the
+pill-shaped "Connect to your notes" buttons and also fails the build on a
+missing page; it replaces the plain hyperlinks the first reports used. Both are
+styled in `assets/css/frontiers-terms.css`. The data file is shared by every
+report, so entries are only ever appended.
+
+The Frontiers tab on the landing page is a separate piece of design. Its
+markup is one block of raw HTML with no blank lines, because the theme
+passes each tab's content through `markdownify`; a blank line would let
+Markdown wrap the cards in paragraphs and break the grid. Its classes
+(`fp-*`) live in their own file, `assets/css/biobytes-frontiers.css`, which
+`head-end.html` loads only for the exact path `/biobytes/`, so the landing
+page does not pay for the report stylesheet and the report stylesheet is
+not edited when the landing tab changes. The report cards in that tab are
+hand-written, like the Testimonials cards, so a newly published report
+needs a card added in `content/biobytes/_index.md` and one in the hub page
+`content/biobytes/frontiers/_index.md`.
+
+Reports are produced with the `frontier-report` skill (kept in the shared
+skills folder outside the repository). Its `scripts/check_frontier.py`
+enforces the structural rules mechanically: layout and date (a date later
+than today in UTC makes Hugo silently skip the page), no em or en dashes,
+balanced tags, every citation matched to a numbered source, sequential
+figure numbers, alt text and credit links on every figure, at least one
+maths or computation story, and the AI-assistance disclosure in the footer.
+It also enforces the readability conventions: term keys that exist and are
+marked only once per section, no term cards in headings or captions, notes
+pages that exist, no plain `/resources/` hyperlinks, and no inline (1)(2)
+enumerations. With `--wiki` it checks every Wikipedia title against the live
+API.
 
 ## The preparation hub: one country dataset feeding three surfaces
 
