@@ -1,6 +1,7 @@
 baseURL = "https://bioguide.world/"
 title = "BiOGuide for Biology Olympiads"
 theme = "hextra"
+enableGitInfo = true
 
 # Overrides Hugo's implicit default categories+tags taxonomies -- nothing in
 # content/ sets either field and no layout references them, so the default

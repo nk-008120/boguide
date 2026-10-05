@@ -692,9 +692,22 @@ site has nothing server-side to fail.
 
 Question pages (`content/papers/**/q*/index.md`, the largest URL bucket) inline a
 pre-extracted critical stylesheet and load the full compiled stylesheet without
-blocking render. The switch lives in `layouts/partials/head.html`, production
+blocking render. The switch lives in `layouts/_partials/head.html`, production
 branch only, and is keyed on a `/papers/` URL whose cascaded layout is `question`.
 Every other page keeps the normal render-blocking stylesheet.
+
+This is a project-level override of the theme's `_partials/head.html`. It is the
+only one: an earlier, separate override at `layouts/partials/head.html` (old-style
+path, no underscore) was found to have been silently shadowing this file, since
+Hugo's project-level `_partials` takes precedence over project-level `partials`.
+That file has been removed and its logic merged into this one. Do not recreate a
+`layouts/partials/head.html`.
+
+The same file also appends the olympiad and year to a question page's `<title>`
+tag (for example "Q1 - Poiseuille's Law ... – IBO 2015 – BiOGuide ..." rather
+than just "Q1 - Poiseuille's Law ... – BiOGuide ..."), detected by matching the
+page's own filename against `^q[0-9]+$` and reading the year from
+`.Parent.Parent.Title`. Every other page's title is unaffected.
 
 Measured under Slow 4G plus 4x CPU throttling, median of 7 runs: question page
 first paint went from about 2.7 s to about 1.5 s and layout shift fell slightly
