@@ -1,5 +1,6 @@
 ---
 title: "Q62 - Habitat-Linked Hydraulic Vulnerability in Ranunculus Species"
+description: "To understand the effect of desiccation on herbaceous plants and their responses, scientists conducted a study on three Ranunculus species in their..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

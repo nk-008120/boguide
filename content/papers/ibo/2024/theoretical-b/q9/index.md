@@ -1,5 +1,6 @@
 ---
 title: "Q9 - Compound X, Polyploidy, and Checkpoint Kinases A/B"
+description: "Researchers studied the effect of compound X on the cell cycle progression of diploid human cells and how checkpoint kinases A and B regulate cellular..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

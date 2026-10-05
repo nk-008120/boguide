@@ -1,5 +1,6 @@
 ---
 title: "Q68 - Hormonal Correlates of the Cucumber Super-Ovary Phenotype"
+description: "Scientists grew cucumber plants in different nutrient conditions to obtain either super ovary or normal ovary types. They labelled flowers when they..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

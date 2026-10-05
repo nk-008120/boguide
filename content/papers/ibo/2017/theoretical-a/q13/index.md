@@ -1,5 +1,6 @@
 ---
 title: "Q13 - Pat and Cob Control Acetylation and Growth in Salmonella"
+description: "Sir Edwin Southern (1938-present) invented a method to visualise specific biomolecules, by separating them according to size, transferring them to a..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q92 - Deducing an X-Chromosome Deletion from an Unusual Drosophila Cross"
+description: "A wildtype female Drosophila was mated with a wildtype male that had been X-ray irradiated. One of the F1 females was mated with a male that had recessive..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q16 - Niche Dimensions and Stipa capillata Drought Adaptation"
+description: "The \"hypothesis of intra-niche dimensions\" states that stable coexistence in one ecological niche can be reached if the growth of one species is..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

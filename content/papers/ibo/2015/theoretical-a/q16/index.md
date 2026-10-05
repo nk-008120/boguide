@@ -1,5 +1,6 @@
 ---
 title: "Q16 - Nitrous Oxide Production by Bacteria in Zebra Mussels"
+description: "Nitrous oxide (N2O) is a greenhouse gas, produced by bacteria through either nitrification or denitrification (Fig. A). Many aquatic invertebrates (e.g...."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

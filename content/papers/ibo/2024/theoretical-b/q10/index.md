@@ -1,5 +1,6 @@
 ---
 title: "Q10 - Heterodimer Formation, Ligand Signaling, and Stem Cell Differentiation"
+description: "Proteins A and B form a heterodimer and only then do they induce stem cell differentiation. Protein A is regulated at the transcriptional level by..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q48 - Thermoregulation and the Thermoneutral Zone"
+description: "Endotherm animals can only tolerate narrow range of body temperature (30-45 degC), but their ability to generate heat internally allowed them to expand..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

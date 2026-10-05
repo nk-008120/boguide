@@ -1,5 +1,6 @@
 ---
 title: "Q4 - Carbon Monoxide's Real Effect on Oxygen Transport"
+description: "Sir John Kendrew (1917-1997) published the structure of haem-proteins, revealing how oxygen is transported in the blood. Carbon monoxide is a poisonous..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

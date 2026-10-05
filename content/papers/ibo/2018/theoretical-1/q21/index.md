@@ -1,5 +1,6 @@
 ---
 title: "Q21 - EBV Screening Test Sensitivity and Specificity"
+description: "Nasopharyngeal carcinoma is closely associated with the Epstein-Barr virus (EBV) infection. In a recent prospective study involving more than 20,000..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

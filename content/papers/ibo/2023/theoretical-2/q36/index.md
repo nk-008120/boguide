@@ -1,5 +1,6 @@
 ---
 title: "Q36 - Triceratops Skull Injuries"
+description: "Some fossilised skulls of triceratops (a type of dinosaur) show injuries sustained while the animal was alive. The figure shows a drawing of a triceratops..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

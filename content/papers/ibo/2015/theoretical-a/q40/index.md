@@ -1,5 +1,6 @@
 ---
 title: "Q40 - Hardy-Weinberg and the Evolution of Lactose Tolerance"
+description: "The proportion of lactose-tolerance in adults varies globally (Fig.). Lactose tolerance is a 1-locus dominant trait (dominant allele K and recessive..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

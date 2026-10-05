@@ -1,10 +1,10 @@
 {{- if .IsHome -}}
 <div class="gi-banner-anchor">
   <aside id="gi-banner" class="gi-banner" aria-label="National olympiad programme guides initiative" hidden>
-    <span class="gi-banner-icon" aria-hidden="true">🌍</span>
+    <span class="gi-banner-icon" aria-hidden="true">{{ partial "icon.html" "globe" }}</span>
     <div class="gi-banner-body">
       <p class="gi-banner-text">Help us spread BiOlogy worldwide in our new national olympiad programme guides initiative</p>
-      <a href="/contribute-a-guide/" class="gi-banner-btn">Join the initiative &rarr;</a>
+      <a href="/contribute-a-guide/" class="gi-banner-btn">Join the initiative {{ partial "icon.html" "arrow-right" }}</a>
     </div>
     <button type="button" class="gi-banner-close" aria-label="Dismiss banner">&times;</button>
   </aside>

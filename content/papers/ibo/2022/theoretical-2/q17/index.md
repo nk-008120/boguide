@@ -1,5 +1,6 @@
 ---
 title: "Q67 - Root Water Transport Pathways - Apoplast vs Symplast"
+description: "Water that is absorbed by the roots of a plant, moves from the roots to the xylem. The figure shows these pathways in the root of Ranunculus acris."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

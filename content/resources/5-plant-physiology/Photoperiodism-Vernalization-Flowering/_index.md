@@ -195,3 +195,5 @@ graph TD;
 3. Explain why grafting an induced leaf onto a non-induced plant causes the recipient to flower, and what this result rules out as an explanation (a purely local, non-mobile response at the leaf).
 4. Using the concept of critical night length, explain why some long-day plants can be induced to flower using a brief light interruption during an otherwise long night, functionally shortening it.
 5. Explain why the vernalization response persists in a meristem's descendant cells even after the plant is moved to a warm environment, referencing the type of molecular change involved.
+
+{{< related-questions >}}

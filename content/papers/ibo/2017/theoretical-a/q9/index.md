@@ -1,5 +1,6 @@
 ---
 title: "Q9 - Reading Adenovirus Transcription/Splicing from EM Images"
+description: "Sir Richard Roberts (1943-present) discovered the fundamental structure of genes using adenovirus genomes. Under an electron microscope, Roberts..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

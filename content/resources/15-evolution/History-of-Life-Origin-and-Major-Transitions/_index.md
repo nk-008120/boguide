@@ -95,3 +95,5 @@ The **geologic timescale** (dated by radiometric methods, most commonly measurin
 3. A newly examined algal chloroplast is surrounded by four membranes rather than two. Propose an explanation consistent with endosymbiotic theory.
 4. Using the volvocine algae as a model, describe the specific cellular change (in terms of division of labor) that separates a truly multicellular organism like *Volvox* from a simple colonial aggregate like *Gonium*.
 5. Explain why the Cambrian explosion is dated using radiometric methods rather than relative stratigraphic position alone, and what a "half-life" measurement contributes to that date.
+
+{{< related-questions >}}

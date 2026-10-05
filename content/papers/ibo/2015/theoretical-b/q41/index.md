@@ -1,5 +1,6 @@
 ---
 title: "Q41 - Backcrossing to Introgress a Disease-Resistance Allele"
+description: "A plant crop is susceptible to leaf rust. In a screening of old varieties from a gene bank, a resistance allele B was discovered. In an intensive..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q15 - The Pathogenic Life Cycle of Mycobacterium tuberculosis"
+description: "Tuberculosis is caused by the bacterium Mycobacterium tuberculosis. One third of the world's population is currently infected with M. tuberculosis, and..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

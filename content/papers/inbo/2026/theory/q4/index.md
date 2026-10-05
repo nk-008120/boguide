@@ -1,5 +1,6 @@
 ---
 title: "Q4 - Conformational Entropy and Free Energy"
+description: "Bioenergetics & Central Metabolism Overview: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

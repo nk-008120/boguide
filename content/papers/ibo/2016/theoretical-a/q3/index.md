@@ -1,5 +1,6 @@
 ---
 title: "Q3 - Ordering a Proline Biosynthesis Pathway by Cross-Feeding"
+description: "Scientists have isolated three different strains of bacteria ProA¯, ProB¯, and ProC¯ that require added proline for growth. One is cold-sensitive, one is..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q32 - Seabird Foraging and Niche Segregation"
+description: "Seabirds spend much of their lives in the open ocean foraging but, during breeding, they congregate on remote islands or cliffs to nest. Figure A shows..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

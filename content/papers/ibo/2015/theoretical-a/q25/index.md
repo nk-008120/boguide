@@ -1,5 +1,6 @@
 ---
 title: "Q25 - Coevolutionary Arms Race Between Toxic Newts and Resistant Snakes"
+description: "Rough-skinned Newts (a salamander) produce the toxin TTX, which is lethal to other vertebrates. Individual newts vary in their level of TTX. Garter Snakes..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

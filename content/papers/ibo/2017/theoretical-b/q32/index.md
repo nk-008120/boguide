@@ -1,5 +1,6 @@
 ---
 title: "Q32 - Human Embryos Break the Established OCT4/GATA6 Rulebook"
+description: "Sir Martin Evans (1941-present) was the first person to culture Embryonic Stem Cells (ESCs)(from a mouse). It is now known that the following..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

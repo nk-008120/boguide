@@ -1,5 +1,6 @@
 ---
 title: "Q80 - Dopamine and GABA Neuron Activity in Stress-Induced Anhedonia"
+description: "One of the main symptoms of depression, which often develops after stress, is anhedonia, the loss of the ability to feel pleasure. Dopamine (DA) signals..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

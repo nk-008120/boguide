@@ -1,5 +1,6 @@
 ---
 title: "Q22 - Ancient DNA Reveals the Beaker People Replaced, Not Joined, Britain"
+description: "Stonehenge was built in the late Neolithic (Stone age; ~ 3000 BC) on what was Europe’s most important trade route, between Cornwall and the Eastern..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

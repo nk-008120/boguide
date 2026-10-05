@@ -1,5 +1,6 @@
 ---
 title: "Q46 - Osmotic and Chemical Stress in a Marine Tardigrade"
+description: "Echiniscoides sigismundi, a marine tardigrade, can change its activity level and morphology when exposed to osmotic and chemical stress. To study this, a..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

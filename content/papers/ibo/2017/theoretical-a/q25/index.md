@@ -1,5 +1,6 @@
 ---
 title: "Q25 - Summation and Inhibition Set the Threshold at Neuron 4"
+description: "Sir John Eccles (1903-1997) and Sir Charles Sherrington (1857-1952) discovered the different roles of synapses, which dictate how neurons respond to..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

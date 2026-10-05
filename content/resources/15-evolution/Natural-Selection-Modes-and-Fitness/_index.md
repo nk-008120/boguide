@@ -96,3 +96,5 @@ Sexually selected traits (see [Mating Systems & Sexual Selection](../../9-etholo
 3. Explain why the observation that peacock trains reduce flight efficiency and increase predation risk does not, by itself, contradict natural selection theory.
 4. A gene variant increases fertility in early adulthood but is linked to a higher rate of a late-onset disease. Explain, using antagonistic pleiotropy, why this variant could still increase in frequency under selection.
 5. Explain why a structure's current functional benefit is not sufficient evidence, on its own, that the structure originally evolved for that function, using feathers as a worked example.
+
+{{< related-questions >}}

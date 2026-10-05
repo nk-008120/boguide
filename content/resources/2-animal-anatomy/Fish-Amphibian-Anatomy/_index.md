@@ -243,3 +243,5 @@ Thin, glandular, permeable (no scales in most adult amphibians, unlike fish or r
 3. List the three respiratory surfaces available to an adult amphibian and state which is likely dominant when the animal is submerged versus on land.
 4. Explain why fish scales and amphibian skin represent two different anatomical solutions to living in water, despite both being aquatic-adapted, referencing tissue origin (dermal vs. epidermal).
 5. Explain the functional significance of the swim bladder being developmentally related to tetrapod lungs.
+
+{{< related-questions >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q17 - Water Scarcity Index (Rws) and Solutions"
+description: "Water is a common renewable resource on Earth; however, after its use, water loses some of its properties, such as purity, heat content, and potential..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

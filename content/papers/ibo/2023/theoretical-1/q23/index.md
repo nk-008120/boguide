@@ -1,5 +1,6 @@
 ---
 title: "Q23 - Genomic Imprinting Pedigree"
+description: "The pedigree shows the inheritance pattern of gene X, whose mutation leads to a disorder in adults."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

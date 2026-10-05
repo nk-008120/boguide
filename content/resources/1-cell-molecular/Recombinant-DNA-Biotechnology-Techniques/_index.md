@@ -104,3 +104,5 @@ The naming and workflow parallel is deliberate and worth internalising as a set:
 **2.** Explain why PCR would fail (or produce far lower yield) if a non-heat-stable DNA polymerase were used instead of Taq polymerase, referencing the specific step of the PCR cycle where the problem would occur.
 
 **3.** A CRISPR-Cas9 experiment is performed with a guide RNA and Cas9, but no repair template is supplied alongside. Predict the most likely outcome at the target site, and explain which DNA repair pathway is responsible.
+
+{{< related-questions >}}

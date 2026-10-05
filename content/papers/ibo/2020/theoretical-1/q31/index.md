@@ -1,5 +1,6 @@
 ---
 title: "Q31 - Grafting Analysis of Strigolactone Biosynthesis and Perception in MAX Mutants"
+description: "Strigolactone (SL) is a plant hormone that controls shoot branching. In Arabidopsis thaliana, several SL-related mutants, such as max1, max2, and max4..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

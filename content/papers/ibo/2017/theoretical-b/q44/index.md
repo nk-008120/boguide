@@ -1,5 +1,6 @@
 ---
 title: "Q44 - Comparing Two Active-Site Inhibitors for a Tuberculosis Target"
+description: "The UK runs the biggest collaborations to screen for new antibiotics for tuberculosis. Molecules X and Y were found, which binds to the active site of a..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

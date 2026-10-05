@@ -1,5 +1,6 @@
 ---
 title: "Q80 - Species Differences in Oxygen Dissociation and the Bohr Effect"
+description: "Figure Q.80 demonstrates the relationship between oxygen concentration and oxygen partial pressure (PO2) in blood of two species of vertebrates (species a..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

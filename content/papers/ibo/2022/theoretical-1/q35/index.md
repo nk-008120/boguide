@@ -1,5 +1,6 @@
 ---
 title: "Q35 - Ninespine Stickleback - Sexual Dimorphism and Sneaker Males"
+description: "Sexual dimorphism is characteristic of the Ninespine stickleback Pungitius pungitius. Males, in contrast to females, acquire a dark color during the..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

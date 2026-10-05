@@ -89,3 +89,5 @@ Group size in real populations tends to track an **optimal group size** where ma
 3. A bird species defends flowering territories aggressively during the dry season (when flowers are sparse and clumped) but tolerates other individuals foraging freely during the wet season (when flowers are abundant and widespread). Explain this shift using economic defendability.
 4. List one cost and one benefit of group living that would each become more significant as group size increases, and explain how their combined effect can produce an intermediate optimal group size rather than favoring the largest possible group.
 5. Explain why resource holding potential is relevant to predicting the outcome of a contest between two individuals with an already-established dominance relationship, even without either individual escalating to a real fight.
+
+{{< related-questions >}}

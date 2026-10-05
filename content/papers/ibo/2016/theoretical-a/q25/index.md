@@ -1,5 +1,6 @@
 ---
 title: "Q25 - Ion Transport Across the Freshwater Fish Gill Epithelium"
+description: "In the gills of freshwater teleost fishes, the blood plasma is separated from the freshwater by a thin epithelium so that the blood plasma tends to lose..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

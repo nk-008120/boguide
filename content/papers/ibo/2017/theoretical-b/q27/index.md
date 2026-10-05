@@ -1,5 +1,6 @@
 ---
 title: "Q27 - Fruitless Isoforms Separate Appearance from Sexual Orientation"
+description: "Sexual orientation in Drosophila matings (male with female, versus male with male, versus female with female) can be controlled by the gene fruitless...."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

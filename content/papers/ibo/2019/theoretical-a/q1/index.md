@@ -1,5 +1,6 @@
 ---
 title: "Q1 - C. elegans Apoptosis Gene Network"
+description: "The effect of knocking out specific genes in worms on apoptosis (programmed cell death) was studied."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

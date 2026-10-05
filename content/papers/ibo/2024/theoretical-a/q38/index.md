@@ -1,5 +1,6 @@
 ---
 title: "Q38 - ECG Interpretation"
+description: "An electrocardiogram (ECG) records the heart's electrical activity using electrodes on the skin. Leads I, II, and III form Einthoven's triangle and..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q11 - Heart Decellularization - Fish vs. Rat Cannulation"
+description: "Decellularization is the process of isolating the extracellular matrix of a tissue from its inhabiting cells. Decellularization of organs is an important..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

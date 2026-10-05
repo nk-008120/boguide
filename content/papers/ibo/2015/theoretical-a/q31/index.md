@@ -1,5 +1,6 @@
 ---
 title: "Q31 - Wind Adaptation and Flightlessness in an Island Butterfly"
+description: "About 100 individuals of the butterfly Melitaea cinxia lives on a tiny island PT in the Gulf of Finland. Researchers studied how the butterflies on PT..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q57 - Adaptive Significance of Bird Behavioral Traits"
+description: "Animal Communication: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

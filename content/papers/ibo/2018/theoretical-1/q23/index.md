@@ -1,5 +1,6 @@
 ---
 title: "Q23 - Specification vs Determination in Heterotopic Grafts"
+description: "The early embryonic cells pass through two stages of differentiation: specification and determination."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

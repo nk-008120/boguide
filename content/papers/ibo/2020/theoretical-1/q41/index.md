@@ -1,5 +1,6 @@
 ---
 title: "Q41 - Methodological Pitfalls in Molecular Phylogenetics"
+description: "Molecular phylogenetics is a powerful tool for inferring phylogenetic relationships among extant species. The following are methodological statements on..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

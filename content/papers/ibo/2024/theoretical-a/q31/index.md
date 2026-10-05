@@ -1,5 +1,6 @@
 ---
 title: "Q31 - Photorespiration Pathway"
+description: "During the Calvin Cycle, carbon dioxide is fixed by RuBisCo, an enzyme in plants. However, RuBisCo can also catalyze reactions with oxygen, which disrupts..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

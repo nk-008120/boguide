@@ -1,5 +1,6 @@
 ---
 title: "Q50 - Repeatability of Personality Traits Across Spider Species"
+description: "Animal personality is defined as individual differences in behaviour that are consistent across time and ecological context. One of the important drivers..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

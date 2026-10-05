@@ -97,3 +97,5 @@ Yes, classification as prokaryotic vs. eukaryotic is based on the presence/absen
 **2.** Explain, in terms of surface-area-to-volume ratio, why prokaryotic cells are generally under stronger evolutionary pressure to stay small than eukaryotic cells are.
 
 **3.** A student claims "eukaryotic cells are more evolutionarily advanced than prokaryotic cells." Identify what is misleading about this framing, using at least one specific counter-example of prokaryotic capability that eukaryotes generally lack.
+
+{{< related-questions >}}

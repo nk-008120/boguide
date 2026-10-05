@@ -1,5 +1,6 @@
 ---
 title: "Q17 - Predicting Reading-Frame Effects of CRISPR-Cas9 Indels"
+description: "In recent years, a genome editing technology called the CRISPR-Cas9 method has been widely used for biology research. In the CRISPR-Cas9 method, an enzyme..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

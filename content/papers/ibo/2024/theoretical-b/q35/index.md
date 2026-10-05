@@ -1,5 +1,6 @@
 ---
 title: "Q35 - Phytochrome B States, Temperature, and Nuclear Bodies"
+description: "Phytochrome B (phyB) is a plant photoreceptor responsible for numerous physiological aspects of plant growth. PhyB exists in two states, Pr and Pfr, and..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

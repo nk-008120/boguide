@@ -1,5 +1,6 @@
 ---
 title: "Q30 - Localizing an Insulin-Signaling Defect from Binding and Glucose-Clearance Tests"
+description: "Figure Q.30A shows insulin secretion and the mechanism by which insulin stimulates glucose absorption into a cell. The mechanism includes four steps..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

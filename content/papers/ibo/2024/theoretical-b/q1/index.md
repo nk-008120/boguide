@@ -1,5 +1,6 @@
 ---
 title: "Q1 - Dichotomous Key Branching & Taxonomic Resolution"
+description: "Dichotomous keys are essential tools in taxonomy. They consist of a series of statements, each highlighting a distinct morphological characteristic that..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

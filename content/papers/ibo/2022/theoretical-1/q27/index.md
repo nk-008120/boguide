@@ -1,5 +1,6 @@
 ---
 title: "Q27 - Saiga Antelope - Nose Adaptations for Cold, Dust, and Signalling"
+description: "Saiga (Saiga tatarica) live in the deserts, semi-deserts, and steppes of Central Asia and Mongolia, where the climate is harsh, with cold winters and hot..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

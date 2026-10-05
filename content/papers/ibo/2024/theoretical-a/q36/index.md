@@ -1,5 +1,6 @@
 ---
 title: "Q36 - Aquatic Carbon Uptake"
+description: "Aquatic carbon primarily exists in the dissolved form, and due to the formation of H2CO3 (carbonic acid), there are three main species - H2CO3, HCO3-, and..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

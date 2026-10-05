@@ -104,3 +104,5 @@ A small number of monocot lineages (e.g. *Dracaena*, *Yucca*, *Aloe*, some palms
 3. Explain why heartwood is typically darker than sapwood and no longer functions in water transport.
 4. Explain the specific function of a lenticel and why it is structurally necessary given the properties of phellem.
 5. A gardener girdles a tree by removing a complete ring of bark. Explain which tissue this removes and why the tree eventually dies despite water still reaching the leaves.
+
+{{< related-questions >}}

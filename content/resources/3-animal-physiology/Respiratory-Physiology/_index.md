@@ -101,3 +101,5 @@ Blood pH is buffered primarily by the **bicarbonate buffer system** (CO₂ + H�
 3. Name the three CO₂ transport mechanisms in blood, ranked by relative contribution, and explain the chloride shift's role in the dominant one.
 4. Explain why an increase in blood CO₂, not a decrease in blood O₂, is normally the primary driver of increased ventilation.
 5. A patient hyperventilates for several minutes. Using the bicarbonate buffer equilibrium, predict whether their blood pH rises or falls, and explain the mechanism.
+
+{{< related-questions >}}

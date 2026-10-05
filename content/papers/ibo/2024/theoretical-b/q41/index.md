@@ -1,5 +1,6 @@
 ---
 title: "Q41 - Burmese Python Heart Mass Changes After Feeding"
+description: "Scientists have studied the Burmese Python's heart size changes due to different feeding regimes, which are either fed (last feeding 3 days ago) or..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q78 - Cellular Response to DNA Damage in Cancer"
+description: "Cell response to DNA damage is intricately regulated and can lead to different pathways. On one hand, cells try to repair the breaks in the DNA helix, on..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

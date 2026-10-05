@@ -285,3 +285,5 @@ The tripartite CNS/PNS/autonomic organization and core neuron/synapse structure 
 3. Explain why gray matter is central in the spinal cord but peripheral (cortical) in the brain, in terms of what gray matter is made of.
 4. Name the cranial nerve responsible for the majority of parasympathetic output to the thoracic and abdominal organs.
 5. Distinguish the sympathetic and parasympathetic divisions by ganglion location and preganglionic/postganglionic neuron length, and explain how this structural difference supports each division's characteristic response pattern.
+
+{{< related-questions >}}

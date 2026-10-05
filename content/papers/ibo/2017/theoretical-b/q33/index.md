@@ -1,5 +1,6 @@
 ---
 title: "Q33 - Which Developmental Unit Was Selected to Make Each Brassica Crop?"
+description: "Plants have a plastic developmental body plan, built up of simple units. Brassica oleracea is the progenitor for many domesticated Brassica crops. During..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

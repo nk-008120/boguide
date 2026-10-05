@@ -1,5 +1,6 @@
 ---
 title: "Q11 - Homeotherm Heat Production and Loss"
+description: "Comparative Thermoregulation: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

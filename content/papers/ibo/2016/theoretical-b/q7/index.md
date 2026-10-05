@@ -1,5 +1,6 @@
 ---
 title: "Q57 - Protein Adaptations of Halophilic Archaea to High Intracellular Salt"
+description: "Microorganisms that live at high salt concentration (above 2M of NaCl) are exposed to media with low water activity, and must have mechanisms to avoid..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

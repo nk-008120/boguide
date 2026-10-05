@@ -100,3 +100,5 @@ Extracting an **integral membrane protein** while preserving native structure (f
 **2.** A protein sample gives an A₂₆₀/A₂₈₀ ratio of 1.3, well below the ~1.8 expected for pure DNA. Propose the most likely explanation, and describe one purification step that would improve this ratio.
 
 **3.** You need to purify a native (fully folded, active) tetrameric enzyme away from a mixture also containing free monomeric subunits of the same protein and several unrelated contaminant proteins of similar size. Which single technique from this page separates the intact tetramer from its own free monomers most directly, and why would SDS-PAGE alone fail to answer this specific question?
+
+{{< related-questions >}}

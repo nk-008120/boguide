@@ -107,3 +107,5 @@ The affected intron is likely retained in the mature mRNA (or an adjacent exon i
 **2.** Explain why a drug that specifically inhibits RNA Pol II, without affecting Pol I or Pol III, would still severely disrupt overall cellular protein synthesis despite ribosomal RNA (rRNA) and tRNA transcription continuing normally.
 
 **3.** A single gene is found to produce three structurally distinct protein isoforms in three different tissue types, despite having only one transcription start site and one promoter. Propose the most likely molecular mechanism, and name the specific processing step responsible.
+
+{{< related-questions >}}

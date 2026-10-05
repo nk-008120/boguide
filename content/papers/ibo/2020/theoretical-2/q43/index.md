@@ -1,5 +1,6 @@
 ---
 title: "Q43 - Direct and Inclusive Fitness in a Haplodiploid Hymenopteran Insect"
+description: "The table below presents data on the reproductive success of four different genotypes, A to D, in a Hymenopteran insect (haplodiploid sex determination..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

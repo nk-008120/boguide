@@ -1,5 +1,6 @@
 ---
 title: "Q34 - Assembling a Bird Phylogenetic Tree from Fragments"
+description: "In this task you get a few parts of a phylogenetic tree of birds, and you should assemble the full tree based on them."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -275,3 +275,5 @@ The ruminant four-chambered stomach is a direct, high-yield contrast to the sing
 3. Compare monotreme and placental reproduction in terms of where the offspring spends the majority of its early development, and what shared amniote structure (from the previous page) makes the placenta possible.
 4. Explain, using limb structure, why a whale is classified as a mammal rather than a large fish despite its fish-like body shape.
 5. Explain the structural difference between epitheliochorial and hemochorial placentas and predict which type permits more efficient nutrient exchange.
+
+{{< related-questions >}}

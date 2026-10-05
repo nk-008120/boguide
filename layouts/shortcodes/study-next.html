@@ -14,7 +14,7 @@
     <div class="study-next-cards">
       {{ range . }}
         <a class="study-next-card" href="{{ $.Page.Parent.RelPermalink }}{{ lower . }}/">
-          <span class="study-next-arrow">→</span>
+          <span class="study-next-arrow">{{ partial "icon.html" "arrow-right" }}</span>
           <span class="study-next-title">{{ replace . "-" " " }}</span>
         </a>
       {{ end }}

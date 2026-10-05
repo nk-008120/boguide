@@ -1,5 +1,6 @@
 ---
 title: "Q20 - Genome Size and Base Composition in Horse-Family Hybrids"
+description: "The adenine (A) content in DNA extracted from tissues of horse, donkey, mule and zebra has been determined. A mule is a horse x donkey hybrid. A zonkey is..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

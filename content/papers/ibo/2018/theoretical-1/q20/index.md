@@ -1,5 +1,6 @@
 ---
 title: "Q20 - Osmolality and Sperm Motility Initiation"
+description: "Spermatozoa motility is essential for the fertilization of an oocyte. In most animals, including fish, spermatozoa are immotile in the male reproductive..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

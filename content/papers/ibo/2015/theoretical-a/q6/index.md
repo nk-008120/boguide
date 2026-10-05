@@ -1,5 +1,6 @@
 ---
 title: "Q6 - Vascular Adaptations Preventing Leg Oedema in Giraffes"
+description: "The giraffe has the highest mean arterial blood pressure of any mammal. This renders it vulnerable to leg oedema. How the animal prevents this was studied..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

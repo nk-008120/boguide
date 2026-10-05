@@ -1,5 +1,6 @@
 ---
 title: "Q27 - Baldness, Rh Factor, and Genetic Counselling"
+description: "Lily and Jacob visit a genetic counselling office where the doctor gathers the data summarized below."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

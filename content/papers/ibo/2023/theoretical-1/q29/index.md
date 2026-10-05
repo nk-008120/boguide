@@ -1,5 +1,6 @@
 ---
 title: "Q29 - Water Stress, Photosynthesis and Turgor"
+description: "Water deficit (insufficient water availability) occurs in most natural and agricultural habitats and is caused mainly by periods without precipitation...."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

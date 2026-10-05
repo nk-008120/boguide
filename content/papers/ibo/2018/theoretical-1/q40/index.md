@@ -1,5 +1,6 @@
 ---
 title: "Q40 - Hypotheses for the Evolution of Sex"
+description: "The evolution of sexual reproduction has remained in certain aspects a puzzle which is yet to be fully pieced back together. Over the years many..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

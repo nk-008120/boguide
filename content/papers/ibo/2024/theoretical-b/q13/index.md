@@ -1,5 +1,6 @@
 ---
 title: "Q13 - Shelterin, the T-loop, and Chromosome Bridge Formation"
+description: "Telomeres are critical structures at the end of eukaryotic chromosomes, preventing the loss of genetic information during cellular divisions. Since..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

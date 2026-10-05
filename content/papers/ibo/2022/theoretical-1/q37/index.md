@@ -1,5 +1,6 @@
 ---
 title: "Q37 - ABO Blood Groups - H Antigen and the Bombay Phenotype"
+description: "There are glycoproteins on the surface of human red blood cells with antigenic properties called H-antigen. The A allele encodes an enzyme converting part..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

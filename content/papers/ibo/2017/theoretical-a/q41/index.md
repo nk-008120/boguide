@@ -1,5 +1,6 @@
 ---
 title: "Q41 - Mark-Recapture and Hybridisation Risk in Scottish Wildcats"
+description: "Lynx (Lynx lynx) may be reintroduced to Great Britain in 2017, after being hunted to extinction 1300 years ago. Scottish wildcats (Felis silvestris..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

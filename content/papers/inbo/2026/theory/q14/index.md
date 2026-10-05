@@ -1,5 +1,6 @@
 ---
 title: "Q14 - Cytogenetic Analysis of Sex Chromosome Abnormalities"
+description: "Cell Cycle, Mitosis & Meiosis: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

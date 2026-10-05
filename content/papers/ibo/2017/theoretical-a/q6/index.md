@@ -1,5 +1,6 @@
 ---
 title: "Q6 - Heritable Silencing of a Transgene by RNA"
+description: "Sir David Baulcombe (1952-present) discovered RNA-directed gene silencing. The gene for green fluorescent protein (GFP) was inserted into plants. The..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

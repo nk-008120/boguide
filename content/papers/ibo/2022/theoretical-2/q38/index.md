@@ -1,5 +1,6 @@
 ---
 title: "Q88 - Free Choice vs Random Union - Assortative Mating in Pigeons"
+description: "Researchers developed two groups of common pigeons, Columba livia, \"free choice\" and \"random union\". In the first group, all the pigeons, both females and..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

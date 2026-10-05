@@ -1,5 +1,6 @@
 ---
 title: "Q13 - Glomerulus Size and Habitat Shape Kidney Concentrating Power"
+description: "In kidneys, glomeruli are sieves which filter plasma into nephrons. Nephrons modify this fluid, and reabsorb or excrete it. The volumes of individual..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

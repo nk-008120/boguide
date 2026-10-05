@@ -1,5 +1,6 @@
 ---
 title: "Q18 - Mycorrhizal Symbiosis - Ecto-, Endo-, and Ectendomycorrhiza"
+description: "The following schematic image shows a transverse cut of a root, showing symbiosis with 3 different groups of organisms (a, b, and c)."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

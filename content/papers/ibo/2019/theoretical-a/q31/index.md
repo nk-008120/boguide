@@ -1,5 +1,6 @@
 ---
 title: "Q31 - Smallmouth Bass Removal and Population Structure"
+description: "The smallmouth bass (Micropterus dolomieu) is an introduced species in the area examined in the following experiment. To protect native fish species, a..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

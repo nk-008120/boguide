@@ -1,5 +1,6 @@
 ---
 title: "Q33 - Parabiosis Reveals a Circulating Satiety Hormone in Obese Mice"
+description: "Sir Frederick Banting (1891-1941) and John Macleod (1876-1935) discovered insulin and invented modern diabetes treatment. This inspired similar..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

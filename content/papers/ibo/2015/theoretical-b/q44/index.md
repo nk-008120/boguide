@@ -1,5 +1,6 @@
 ---
 title: "Q44 - Pollen Donor Competition on the Stigma"
+description: "Plants compete as pollen donors for siring offspring, i.e. becoming fathers. The stigma becomes an arena, where pollen donors/fathers \"fight\" for..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

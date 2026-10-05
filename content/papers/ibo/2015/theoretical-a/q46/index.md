@@ -1,5 +1,6 @@
 ---
 title: "Q46 - Trade-offs Between Clonal and Sexual Reproduction in Bamboo"
+description: "Many plants reproduce both sexually and vegetatively (clonally). A hypothesis says: As both reproductive modes require energy, a negative trade-off is..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

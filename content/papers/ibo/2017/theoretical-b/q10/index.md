@@ -1,5 +1,6 @@
 ---
 title: "Q10 - Why the Heart Can't Suck Blood: The Frank-Starling Mechanism"
+description: "William Harvey (1578-1657) discovered that the heart pumps blood around the body in a circuit. Ernest Starling (1866-1927) discovered many of the..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

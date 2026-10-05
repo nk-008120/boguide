@@ -1,5 +1,6 @@
 ---
 title: "Q35 - Multi-Locus Blood Typing to Resolve a Paternity Case"
+description: "In a criminal case about rape, which was brought to court, four men (1–4; Table), the victim (Mother) and the resulting child (Daughter) (1-4, Table) were..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

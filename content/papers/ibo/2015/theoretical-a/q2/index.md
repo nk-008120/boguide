@@ -1,5 +1,6 @@
 ---
 title: "Q2 - Anion Effects on Hemoglobin Oxygen Affinity"
+description: "O2-binding or -affinity to hemoglobin is affected by specific anions, in particular 2,3 bisphosphoglycerate (BPG) and chloride (Cl−), which are present in..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -95,3 +95,5 @@ Sequence-level comparison provides the most quantitatively precise line of evide
 3. Two related mammal species both carry the identical inactivating mutation in the same pseudogene. Explain what this shared mutation implies about their most recent common ancestor.
 4. Explain why comparative embryology is considered separate evidence from comparative adult anatomy, giving one example of a structure visible only at the embryonic stage.
 5. A group of closely related lizard species is found only on a chain of oceanic islands, each species most closely related to the species on the nearest neighboring island rather than to any mainland species. Propose an explanation consistent with the biogeographic evidence pattern described on this page.
+
+{{< related-questions >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q29 - Random Sorting of Chloroplasts in a Variegated Plant"
+description: "Four o’clock plants (Mirabilis jalapa) can have a mix of white and green patches on their leaves, so they appear variegated - a picture showing the..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

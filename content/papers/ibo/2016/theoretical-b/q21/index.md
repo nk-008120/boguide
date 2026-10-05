@@ -1,5 +1,6 @@
 ---
 title: "Q71 - Reading Cardiac Action Potential Phases from Ion Movements"
+description: "The action potential of cardiac muscle cells differs from that of other cells such as skeletal muscle cells and neurons. Figure Q.71 displays the..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

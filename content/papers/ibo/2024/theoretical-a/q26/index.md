@@ -1,5 +1,6 @@
 ---
 title: "Q26 - Mass Extinctions and Carbon Cycle Perturbations"
+description: "Mass extinctions occur when environmental changes outpace rates of species adaptation. One way to quantify this change is by measuring the addition of..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

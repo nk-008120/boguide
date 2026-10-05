@@ -1,5 +1,6 @@
 ---
 title: "Q41 - Antibody Evolution Traces the Red Queen Dynamic in Untreated HIV"
+description: "Dame Amanda Fisher discovered many properties of the HIV. HIV has two states. It can remain dormant within cells or can be active, replicating and..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

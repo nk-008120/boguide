@@ -1,5 +1,6 @@
 ---
 title: "Q44 - Regional vs Local Drivers of Species Diversity"
+description: "Regional species diversity in ecosystems usually increases with primary productivity while local species diversity does not show any defined relation with..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

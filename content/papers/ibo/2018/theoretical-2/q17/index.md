@@ -1,5 +1,6 @@
 ---
 title: "Q17 - Lateral Inhibition Between Sensory Pathways"
+description: "As it is shown in the figure, the sensory neurons can modify the function of adjacent sensory pathway. This inhibitory effect is conducted via..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

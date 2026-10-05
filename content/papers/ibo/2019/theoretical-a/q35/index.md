@@ -1,5 +1,6 @@
 ---
 title: "Q35 - A New Gall Wasp Genus: Molecular Systematics"
+description: "A research group collected and examined gall wasp (Cynipidae) specimens. By examining morphological traits, they found a new genus (Lithosaphonecrus) with..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

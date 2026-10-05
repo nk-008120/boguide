@@ -1,5 +1,6 @@
 ---
 title: "Q12 - A FRET-Based Quantum Dot Maltose Biosensor"
+description: "Forster resonance energy transfer (FRET) is a distance-dependent process whereby energy from an excited fluorescent molecule (donor) is transferred to a..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q50 - Phytochrome Thermosensing"
+description: "Phytochrome exists in two interconvertible forms: the inactive Pr form (absorbs red light) and the active Pfr form (absorbs far-red light)."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

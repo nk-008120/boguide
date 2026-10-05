@@ -1,5 +1,6 @@
 ---
 title: "Q94 - Canine Pedigree Analysis of a Monogenic Disease"
+description: "Below is a canine pedigree of a common monogenetically inherited disease. Squares and circles represent males and females respectively, and black and..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

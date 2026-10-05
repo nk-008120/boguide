@@ -1,5 +1,6 @@
 ---
 title: "Q75 - Distinguishing Obstructive and Restrictive Patterns on a Flow-Volume Loop"
+description: "In a simple way, respiratory disorders can be classified as obstructive or restrictive disorders. Obstructive disorders are characterized by a reduction..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

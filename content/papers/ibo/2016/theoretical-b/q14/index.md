@@ -1,5 +1,6 @@
 ---
 title: "Q64 - Diurnal Light and CO2 Co-Limitation of Underwater Photosynthesis"
+description: "Photosynthesis of submerged aquatic plants is severely impeded by many environment factors. In seawater and freshwater, light density and its spectrum is..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

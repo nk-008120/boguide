@@ -1,5 +1,6 @@
 ---
 title: "Q25 - The Luria–Delbrück Replica Plating Experiment"
+description: "A test tube contains a suspension of bacteria that were never exposed to the antibiotic kanamycin. The bacteria were spread onto a so-called master plate..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

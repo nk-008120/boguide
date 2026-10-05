@@ -1,5 +1,6 @@
 ---
 title: "Q5 - Suppressor tRNA and Stop Codon Readthrough"
+description: "Translation & the Genetic Code: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

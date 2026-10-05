@@ -1,5 +1,6 @@
 ---
 title: "Q26 - Water Loading and Renal Handling in Two Groups of Students"
+description: "Two groups of students separately performed an experiment on kidney function. Thirty minutes before the experiment, each student in one group was..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

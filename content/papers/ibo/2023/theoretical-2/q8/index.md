@@ -1,5 +1,6 @@
 ---
 title: "Q8 - Chromatin DNase Sensitivity"
+description: "When eukaryotic nuclear genes are being actively transcribed, their chromatin is usually more relaxed. This leaves the underlying DNA more sensitive to..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

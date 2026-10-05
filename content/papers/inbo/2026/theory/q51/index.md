@@ -1,5 +1,6 @@
 ---
 title: "Q51 - Risk-Sensitive Foraging Under Energy Stress"
+description: "Foraging & Anti-Predator Behavior: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

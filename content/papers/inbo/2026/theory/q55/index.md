@@ -1,5 +1,6 @@
 ---
 title: "Q55 - Digger Bee Alternative Mating Strategies"
+description: "Mating Systems & Sexual Selection: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

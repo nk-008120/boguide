@@ -94,3 +94,5 @@ Alarm calls are a heavily tested case because they intersect signaling, kin sele
 3. A bird's threat display consists of an exaggerated, stereotyped version of the wing motion it uses to take off. Name the evolutionary process responsible and the three specific changes visible relative to the ancestral behavior.
 4. Belding's ground squirrels call more often when surrounded by close relatives than by unrelated individuals. Explain what kind of selection this evidence supports and why an alarm call is a costly behavior worth explaining in the first place.
 5. Given a honeybee dance performed at a 90° angle to vertical, with the sun position known, describe what real-world compass direction the food source lies in.
+
+{{< related-questions >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q18 - Patch Clamp Analysis of a Cation Channel"
+description: "A researcher used a patch clamp technique to record the current of only a cation channel (single channel recording). The pipette contains 150 mM of KCl..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

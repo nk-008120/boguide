@@ -1,5 +1,6 @@
 ---
 title: "Q56 - Lysosomal Exocytosis in Cancer Cells"
+description: "Isolated cancer cells carry genetic changes and acquire an aggressive metastatic phenotype. One of these genetic changes is an activation of lysosomal..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

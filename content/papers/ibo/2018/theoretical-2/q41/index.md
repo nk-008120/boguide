@@ -1,5 +1,6 @@
 ---
 title: "Q41 - Runaway versus Chase-Away Sexual Selection"
+description: "Evolution of sexual traits such as horn size, tail feathers and extreme coloration can be determined by sexual selection theory. According to the sexual..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

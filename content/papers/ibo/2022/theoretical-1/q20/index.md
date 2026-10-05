@@ -1,5 +1,6 @@
 ---
 title: "Q20 - Tree Age Estimation - Annual Ring Growth"
+description: "The circumference of the trunk of an oak tree is 282.6 cm near its base. The average width of annual rings is 0.5 cm, while the thickness of the bark is 2..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

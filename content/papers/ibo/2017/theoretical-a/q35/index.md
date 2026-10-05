@@ -1,5 +1,6 @@
 ---
 title: "Q35 - Cross-Reactivity Limits an ELISA for Triazine Pesticides"
+description: "John Marrack (1886-1976) discovered the biochemistry of antibody-antigen interactions. These can be harnessed to detect pesticides contaminating sample..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

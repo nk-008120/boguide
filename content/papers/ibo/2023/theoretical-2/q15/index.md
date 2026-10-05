@@ -1,5 +1,6 @@
 ---
 title: "Q15 - Ventilation and Respiratory Gas Control"
+description: "Breathing rate is usually controlled by pH (proportional to carbon dioxide) sensors in the brain. Oxygen sensors, in the major arteries, only influence..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

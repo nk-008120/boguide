@@ -1,5 +1,6 @@
 ---
 title: "Q16 - Fractal Geometry and Scale-Dependent Resource Availability"
+description: "Fractal geometry can be illustrated by Mandelbrot's question: How long is the coast of Britain? The answer depends on the scale of measurement."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

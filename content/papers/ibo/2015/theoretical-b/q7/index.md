@@ -1,5 +1,6 @@
 ---
 title: "Q7 - Testosterone, Pituitary Feedback, and Body Mass"
+description: "Variation in testosterone levels has major effects on general male physiology. Concentration of testosterone was measured in blood plasma from five groups..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

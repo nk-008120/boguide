@@ -1,5 +1,6 @@
 ---
 title: "Q7 - Vocalization Frequency and Body Size in Whales"
+description: "Whales rely on sound for communication in a diverse way. In a study, vocalization measurements of two distantly related whales, Humpback and Bowhead, were..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

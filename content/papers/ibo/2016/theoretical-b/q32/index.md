@@ -1,5 +1,6 @@
 ---
 title: "Q82 - Female Choice and Interspecific Hood-Burrow Sharing in Fiddler Crabs"
+description: "The behaviour of two similar-sized species of fiddler crabs (Uca latimanus and U. musica) that intermingle in the same habitat was studied. Males build..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

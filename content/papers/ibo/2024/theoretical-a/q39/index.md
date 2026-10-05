@@ -1,5 +1,6 @@
 ---
 title: "Q39 - Snow Leopard Hemoglobin at High Altitude"
+description: "Snow leopards (Panthera uncia) inhabit high-altitude areas in East and South Kazakhstan and are known to hyperventilate. To examine possible differences..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

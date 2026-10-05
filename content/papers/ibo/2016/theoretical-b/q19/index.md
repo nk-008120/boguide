@@ -1,5 +1,6 @@
 ---
 title: "Q69 - Localizing Drug Targets in the Parietal Cell Acid-Secretion Pathway"
+description: "Figure Q.69 shows the regulation of HCl secretion in the parietal cell of the stomach."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

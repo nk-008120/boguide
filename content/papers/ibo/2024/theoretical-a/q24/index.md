@@ -1,5 +1,6 @@
 ---
 title: "Q24 - Codon Usage Bias"
+description: "While central dogma claims that synonymous substitutions (which do not change the primary sequence of the polypeptide) do not have any effect on protein..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

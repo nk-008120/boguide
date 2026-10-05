@@ -1,5 +1,6 @@
 ---
 title: "Q3 - GPCR Signalling and a Toxin Acting on the Gs Cycle"
+description: "G protein-coupled receptors (GPCRs) interact with G proteins that subsequently affect cell function through the generation of second messengers. Cyclic..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q34 - Genotype-Dependent Outcomes of a Plant-Oomycete Interaction"
+description: "The oomycete Hyaloperonospora arabidopsidis (Ha) grows on the plant Arabidopsis thaliana (At). Six genotypes of At (Pyr, Tsu, Sue, Fin, Tch and Gb) were..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

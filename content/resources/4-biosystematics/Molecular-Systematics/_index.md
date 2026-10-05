@@ -92,3 +92,5 @@ Two specific failure modes are worth knowing by name, since they explain *why* a
 3. Two fast-evolving, distantly related lineages are grouped together in a maximum-parsimony tree but not in a maximum-likelihood tree built from the same alignment. Propose an explanation.
 4. Explain why a Bayesian phylogenetic tree reports numeric support values at each node while a single maximum-parsimony tree typically does not.
 5. A bacterial gene tree built from a plasmid-encoded antibiotic-resistance gene disagrees sharply with the tree built from that same bacterium's ribosomal RNA gene. Propose the most likely explanation.
+
+{{< related-questions >}}

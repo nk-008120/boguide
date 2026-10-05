@@ -1,5 +1,6 @@
 ---
 title: "Q28 - BDNF, β-AR Signaling, and Brown Fat Thermogenesis"
+description: "BDNF, a brain protein, is crucial for neuron activities. BDNF is activated during the activation of neurons of the limbic system. An important function of..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

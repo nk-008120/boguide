@@ -1,5 +1,6 @@
 ---
 title: "Q39 - The Leaf Economics Spectrum Across Vascular Plants"
+description: "During last 500 million years, a great amount of trait variation has been created in land plants in the course of evolution. However, there are some..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

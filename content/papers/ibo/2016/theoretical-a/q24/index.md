@@ -1,5 +1,6 @@
 ---
 title: "Q24 - Hormonal Features of Polycystic Ovarian Syndrome"
+description: "Polycystic ovarian syndrome (PCOS) is a common disorder of women characterized by increased levels of testosterone and by chronic failure in ovulation...."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

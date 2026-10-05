@@ -1,5 +1,6 @@
 ---
 title: "Q33 - Tracing Indirect Effects Through a Food Web"
+description: "The scheme below shows a model of interactions between populations of an ecosystem. Capital letters indicate the populations. Two-ended arrows (↔)..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

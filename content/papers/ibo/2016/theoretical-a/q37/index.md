@@ -1,5 +1,6 @@
 ---
 title: "Q37 - Long-Term Selection Response and Its Limits in Tribolium Body Size"
+description: "F.D. Enfield selected for increased body size in the flour beetle Tribolium castaneum. He started with a population of beetles that had a mean weight of..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

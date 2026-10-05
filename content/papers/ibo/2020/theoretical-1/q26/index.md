@@ -1,5 +1,6 @@
 ---
 title: "Q26 - Thermoregulatory Strategies of Endotherms and Ectotherms"
+description: "Animals possess mechanisms for maintaining their body temperature within permissible levels. For example, they show various responses to changes in room..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

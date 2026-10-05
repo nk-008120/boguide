@@ -1,5 +1,6 @@
 ---
 title: "Q81 - Clutch-Size Manipulation and Optimal Brood Size in Magpies"
+description: "In an experimental study on magpies Pica pica, conducted in Sweden, Göran Högstedt manipulated the original clutch size (shown on the right of the graph)..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

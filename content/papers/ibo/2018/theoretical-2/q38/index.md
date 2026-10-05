@@ -1,5 +1,6 @@
 ---
 title: "Q38 - Bacterial Phyllody and the ABCE Model"
+description: "The diagram below illustrates the ABCE model of flower development, in which the identity structure of floral organs of eudicots is regulated by floral..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

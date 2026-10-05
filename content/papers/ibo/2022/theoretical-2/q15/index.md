@@ -1,5 +1,6 @@
 ---
 title: "Q65 - Arabidopsis Sun vs Shade Leaves - Cross-Section Comparison"
+description: "The following images are cross-sections of two different leaves of the same individual of Arabidopsis thaliana."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

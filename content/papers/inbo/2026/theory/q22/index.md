@@ -1,5 +1,6 @@
 ---
 title: "Q22 - Cladogram Group Classification"
+description: "Phylogenetic Trees & Cladistics: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

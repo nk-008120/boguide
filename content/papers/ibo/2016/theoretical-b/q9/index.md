@@ -1,5 +1,6 @@
 ---
 title: "Q59 - Mapping p35 Phosphorylation Sites with a Phospho-Tag Gel"
+description: "Phosphorylation is a major post-translational modification widely used in the regulation of many cellular processes. A method to determine the..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

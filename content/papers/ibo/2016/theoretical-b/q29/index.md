@@ -1,5 +1,6 @@
 ---
 title: "Q79 - Physiological Adaptation to High-Altitude Hypoxia"
+description: "When a person born and brought-up at sea level and then moves to a village at an altitude of 3000 metres above sea level by helicopter, some adaptations..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

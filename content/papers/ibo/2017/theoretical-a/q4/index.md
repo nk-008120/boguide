@@ -1,5 +1,6 @@
 ---
 title: "Q4 - Stochastic Noise in a Dual-Reporter Plasmid"
+description: "A plasmid was inserted into bacteria (1). Red fluorescent protein (RFP) or green fluorescent protein (GFP) are produced from the genes in this plasmid..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

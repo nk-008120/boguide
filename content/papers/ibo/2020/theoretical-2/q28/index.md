@@ -1,5 +1,6 @@
 ---
 title: "Q28 - CYP2C19 Polymorphisms and Drug Metabolism of Omeprazole and Clopidogrel"
+description: "CYP2C19 belongs to the cytochrome P450 family of enzymes expressed in the liver for detoxification. It metabolizes and inactivates various drugs, but..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -104,3 +104,5 @@ With real data, more than one cladogram is usually consistent with the character
 3. A proposed cladogram requires 9 independent character-state changes to explain a dataset; a competing cladogram for the same data requires 6. Which does maximum parsimony favor, and why?
 4. Explain, with a labeled example, why "Invertebrata" is not a valid monophyletic taxon.
 5. A researcher selects a very distantly related organism as an outgroup, sharing almost no comparable characters with the ingroup. Explain the specific problem this creates for character polarization.
+
+{{< related-questions >}}

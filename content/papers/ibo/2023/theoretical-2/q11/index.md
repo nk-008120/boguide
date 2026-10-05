@@ -1,5 +1,6 @@
 ---
 title: "Q11 - Kartagener Syndrome"
+description: "Kartagener syndrome, a rare disease, is caused by loss-of-function mutations in the molecular complex shown in the image indicated by the blue arrows...."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

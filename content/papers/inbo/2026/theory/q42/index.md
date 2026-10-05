@@ -1,5 +1,6 @@
 ---
 title: "Q42 - Parthenogenesis in Whiptail Lizards"
+description: "Reproductive Physiology: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q5 - Mapping Membrane-Protein Topology with Protease Protection"
+description: "Imagine you are studying a membrane protein represented in the diagram below. You prepared artificial vesicles containing this protein only in the..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

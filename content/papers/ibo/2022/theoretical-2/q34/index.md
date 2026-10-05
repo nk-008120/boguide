@@ -1,5 +1,6 @@
 ---
 title: "Q84 - Dietary Fat, Sucrose and Cardiac Hypertrophy in Hypertensive Rats"
+description: "Males from inbred lines of rats with spontaneous hypertension (SHR) and normal blood pressure (WKY) were separated into 5 groups and received different..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

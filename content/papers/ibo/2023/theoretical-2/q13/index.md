@@ -1,5 +1,6 @@
 ---
 title: "Q13 - Lethal Temperature in Homeotherms"
+description: "Cold-blooded (poikilothermic) animals are able to tolerate significant fluctuations in body temperature (by several tens of degrees) without negative..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

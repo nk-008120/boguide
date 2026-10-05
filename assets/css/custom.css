@@ -206,7 +206,27 @@ html.dark #boguide-toc a:hover {
   box-shadow: 0 16px 32px rgba(13, 122, 122, 0.15);
 }
 
+.ui-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex: none;
+  vertical-align: -0.125em;
+}
+.homepage-wrapper h2 .ui-icon,
+.interactive-card h4 .ui-icon {
+  margin-right: 0.35em;
+}
+.btn-outline .ui-icon,
+.focus-reader-exit .ui-icon,
+.papers-nav-btn .ui-icon {
+  margin: 0 0.3em;
+}
+.btn-outline .ui-icon:last-child {
+  margin-right: 0;
+}
 .card-icon {
+  color: var(--primary);
   font-size: 3rem;
   margin-bottom: 1rem;
 }
@@ -1185,16 +1205,20 @@ html.dark .biorchive-bg-layer {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background-image: url('/logobg.webp');
-  background-repeat: no-repeat;
-  background-position: center 15%;
-  background-size: min(65%, 820px);
-  background-attachment: fixed;
+  background-image: linear-gradient(180deg, #6b4a8a 0%, #6b4a8a 45%, #6f9275 100%);
+  -webkit-mask-image: url('/logobg.svg');
+  mask-image: url('/logobg.svg');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center 15%;
+  mask-position: center 15%;
+  -webkit-mask-size: min(40%, 520px) auto;
+  mask-size: min(40%, 520px) auto;
   opacity: 0.065;
 }
 html.dark .bioguide-bg-layer {
+  background-image: linear-gradient(180deg, #c3a6e0 0%, #c3a6e0 45%, #a6d1ac 100%);
   opacity: 0.117;
-  filter: invert(1) brightness(1.4);
 }
 
 .hero-wrapper {

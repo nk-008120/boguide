@@ -1,5 +1,6 @@
 ---
 title: "Q1 - Alfalfa Mosaic Virus - m6A Demethylation & Viral Replication"
+description: "Alfalfa Mosaic Virus (AMV) consists of a capsid and 4 RNA fragments: R1, R2, R3, R4. Capsid protein (CP) is known to play an important role at different..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q36 - Hardy-Weinberg, Genetic Drift and Fixation Probability in a Body-Color Locus"
+description: "Following is a description regarding a population of a diploid organism, species A, with a special focus on the locus C that is involved in body color...."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

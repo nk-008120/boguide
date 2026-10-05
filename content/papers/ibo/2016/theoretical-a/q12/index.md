@@ -1,5 +1,6 @@
 ---
 title: "Q12 - C3 vs C4 Photosynthetic Response to Low Temperature"
+description: "An experiment was carried out on sorghum (Sorghum bicolor) and soybean (Glycine max) plants in response to low temperature. Plants were grown at 25°C for..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

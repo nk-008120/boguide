@@ -1,5 +1,6 @@
 ---
 title: "Q4 - Gut Hormones and Insulin Secretion After Gastric Bypass"
+description: "Morbid obesity can be treated surgically by a gastric bypass, where a part of the stomach and the proximal part of the intestine are bypassed. A group of..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

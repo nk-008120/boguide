@@ -1,5 +1,6 @@
 ---
 title: "Q35 - Distinguishing Osmotic and Ionic Ca2+ Signaling Mutants in Salt Stress"
+description: "Soil salinity (NaCl) affects the growth of plants. As the increase of osmotic pressure induced by soil salinity reduces the ability of plants to take up..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

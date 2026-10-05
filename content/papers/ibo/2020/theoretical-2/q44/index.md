@@ -1,5 +1,6 @@
 ---
 title: "Q44 - Tracing Detrital and Grazing Food-Web Pathways and Cesium Bioaccumulation Timing"
+description: "Figure 1 shows a simplified food web in temperate forests. Spiders (generalist predators) consume herbivores (40%) and detritivores (60%). Passerine birds..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

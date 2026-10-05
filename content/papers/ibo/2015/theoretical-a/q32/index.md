@@ -1,5 +1,6 @@
 ---
 title: "Q32 - Stress Behaviour and Cortisol in Farmed Mink"
+description: "In farms, a study of mink looked at how reduced welfare, e.g. postponed feeding, led to abnormal behaviours, such as stereotypic pacing and tail-chewing...."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

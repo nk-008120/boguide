@@ -1,5 +1,6 @@
 ---
 title: "Q13 - Beta-Clamp Processivity in DNA Polymerase III"
+description: "DNA polymerase III holoenzyme consists of the pol III and the beta-clamp which hold pol III and DNA template together. You are investigating whether..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

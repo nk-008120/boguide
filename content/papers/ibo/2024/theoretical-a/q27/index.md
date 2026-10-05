@@ -1,5 +1,6 @@
 ---
 title: "Q27 - Beta-Lactamase Mutational Trajectories and Epistasis"
+description: "Five mutations in beta-lactamase can significantly affect its ability to degrade third-generation antibiotics like cefotaxime: Mut1, Mut2, Mut3, Mut4..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

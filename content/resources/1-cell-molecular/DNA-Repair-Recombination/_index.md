@@ -99,3 +99,5 @@ UV light characteristically produces bulky, helix-distorting lesions (thymine di
 **2.** A cell line is found to have unusually short telomeres and shows premature replicative senescence compared to normal cells of the same type. Propose a plausible molecular explanation involving telomerase.
 
 **3.** Explain why homologous recombination cannot be used to repair a double-strand break occurring in a G1-phase cell, and identify the repair pathway available instead, along with its main drawback compared to homologous recombination.
+
+{{< related-questions >}}

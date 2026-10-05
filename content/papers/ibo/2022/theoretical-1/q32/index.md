@@ -1,5 +1,6 @@
 ---
 title: "Q32 - Shiverer Mutation - Optic Nerve Myelin"
+description: "The shiverer mutation is known to affect the Central Nervous System (CNS), causing tremors and early death in mice. To investigate its effects, the optic..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

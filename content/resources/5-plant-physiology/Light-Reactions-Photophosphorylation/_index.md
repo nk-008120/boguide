@@ -220,3 +220,5 @@ When a chloroplast's NADPH supply is already saturated relative to its ATP deman
 3. A chloroplast's ATP:NADPH output ratio needs to increase without any additional water being split. Identify the mechanism that could achieve this and explain why it does not increase NADPH output.
 4. Explain why the thylakoid lumen becomes both more acidic and more positively charged during active linear electron flow, and how ATP synthase uses this combined gradient.
 5. Distinguish photophosphorylation from substrate-level phosphorylation, referencing the specific mechanism ATP synthase depends on.
+
+{{< related-questions >}}

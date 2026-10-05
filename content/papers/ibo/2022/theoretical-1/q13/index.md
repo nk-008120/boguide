@@ -1,5 +1,6 @@
 ---
 title: "Q13 - 3D Skin Substitute - Layered Tissue Engineering"
+description: "For engineered tissue to survive in vivo it needs to be vascularized. Current approaches include incorporating adipose tissue-derived microvascular..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q7 - Pentose Phosphate Pathway (PPP)"
+description: "The Pentose Phosphate Pathway (PPP) is a metabolic pathway occurring in the cytoplasm that mainly generates NADPH and ribose 5-phosphate. NADPH is used..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q2 - Smooth Muscle Contraction Dynamics"
+description: "The smooth muscle in various organs behaves differently, and has specialised contraction/relaxation dynamics."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

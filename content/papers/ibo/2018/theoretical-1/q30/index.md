@@ -1,5 +1,6 @@
 ---
 title: "Q30 - Light Colour Effects on Photosynthesis in Arabidopsis"
+description: "Arabidopsis thaliana was used in a study on photosynthesis. A. thaliana plants of same age, with leaf blades of equal shape and size, were placed under..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

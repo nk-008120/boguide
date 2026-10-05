@@ -1,5 +1,6 @@
 ---
 title: "Q29 - Independent Assortment of Burrow Traits in Hybrid Mice"
+description: "Sir Francis Galton (1822-1911) invented the field of behavioural genetics. Burrowing mouse (Juscelinomys) burrows have quantifiable features, including..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

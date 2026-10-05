@@ -1,5 +1,6 @@
 ---
 title: "Q38 - Diagnosing Electron Transport Chain Poisons from O2 Traces"
+description: "Peter Mitchell (1920-1992) discovered how mitochondria produce ATP. Electrons are harvested from succinate, malate and ascorbate (vitamin C), and drawn..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

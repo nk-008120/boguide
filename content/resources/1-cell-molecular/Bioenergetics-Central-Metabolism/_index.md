@@ -104,3 +104,5 @@ NADH and FADH₂ feed electrons in at different points of the chain (FADH₂ ent
 **2.** Explain, mechanistically, why 2,4-dinitrophenol (a proton-gradient uncoupler) causes both increased O₂ consumption and dangerous body-temperature elevation, using the chemiosmotic model.
 
 **3.** A patient's muscle biopsy shows normal glycolytic flux but severely reduced ATP yield per glucose molecule consumed, despite normal oxygen delivery. Propose which of the three metabolic stages is most likely defective, and explain what additional single measurement (NADH/FADH₂ accumulation vs. depletion) would help localise the defect further.
+
+{{< related-questions >}}

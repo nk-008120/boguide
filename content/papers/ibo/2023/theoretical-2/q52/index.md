@@ -1,5 +1,6 @@
 ---
 title: "Q52 - Phloem Transport Under Water Stress"
+description: "In conditions of drought, photosynthesis slows down while translocation of assimilates can continue as long as phloem turgor is maintained. The figures..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

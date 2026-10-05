@@ -1,5 +1,6 @@
 ---
 title: "Q7 - Apical Dominance and Auxiliary Bud Dormancy"
+description: "Plant Hormones: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

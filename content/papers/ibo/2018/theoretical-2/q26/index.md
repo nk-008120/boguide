@@ -1,5 +1,6 @@
 ---
 title: "Q26 - Classifying the Novel Taxon Dendrogramma"
+description: "Dendrogramma is a new animal species which has been collected at 400 and 1000 metres on the Australian continental slope off eastern Bass Strait and..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

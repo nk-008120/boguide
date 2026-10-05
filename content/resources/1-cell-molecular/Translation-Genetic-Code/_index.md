@@ -103,3 +103,5 @@ An open reading frame (ORF) is a property of a nucleotide sequence: a continuous
 **2.** A single-nucleotide substitution changes a codon from GAA (Glu) to GAG. Predict the effect on the resulting protein, and name this category of mutation.
 
 **3.** A mutation in an aminoacyl-tRNA synthetase gene causes it to occasionally charge its designated tRNA with an incorrect amino acid, while codon-anticodon recognition at the ribosome remains completely normal. Explain why this error would go completely undetected by the ribosome's own proofreading mechanisms, and predict the consequence for the resulting protein.
+
+{{< related-questions >}}

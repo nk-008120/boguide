@@ -1,5 +1,6 @@
 ---
 title: "Q25 - Oxytocin and Cortisol - Touch vs. Voice Contact in Girls"
+description: "Oxytocin is a neuropeptide that plays a crucial role in shaping social relations and interactions, thought to be produced in response to tactile contact...."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

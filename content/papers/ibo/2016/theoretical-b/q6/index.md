@@ -1,5 +1,6 @@
 ---
 title: "Q56 - Microbial Succession During Cabbage Lactic Fermentation"
+description: "Lactic fermented vegetables are traditional food in many Asian cuisines. Microorganisms commonly found in the fermentation broth are lactic acid bacteria..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q1 - Tulip Parsimony and Morphological Characters"
+description: "Kazakhstan boasts a rich ecosystem harboring numerous species of tulips, some of which are direct ancestors to many modern cultivated varieties. These..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

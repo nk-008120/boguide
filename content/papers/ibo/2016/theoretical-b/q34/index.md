@@ -1,5 +1,6 @@
 ---
 title: "Q84 - Mapping Linked Genes from a Four-Gene Testcross"
+description: "An organism has four genes, A, B, C and D with two alleles each. An individual heterozygous for these genes was bred with one that is homozygous..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

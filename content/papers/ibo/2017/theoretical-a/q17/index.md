@@ -1,5 +1,6 @@
 ---
 title: "Q17 - Phenolics from Oak Galls Protect Auxin from Oxidation"
+description: "Dame Ottoline Leyser (1965-present) showed that auxin is a plant hormone with roles in environment- development interactions. For example, English oak..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

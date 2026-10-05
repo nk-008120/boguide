@@ -113,3 +113,5 @@ Both the B cell and T cell responses generate long-lived **memory cells** follow
 3. A virus-infected cell has downregulated its MHC class I display to evade cytotoxic T cells. Explain which innate immune cell type would still detect and eliminate it, and how.
 4. Explain why a helper T cell, rather than a B cell alone, is required for full B cell clonal selection and antibody production.
 5. Explain, in terms of memory cell populations, why a vaccinated individual's response to a real infection is faster than an unvaccinated individual's first exposure.
+
+{{< related-questions >}}

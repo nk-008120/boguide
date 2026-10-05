@@ -1,5 +1,6 @@
 ---
 title: "Q40 - Elephants, LIF6, and Cancer Resistance"
+description: "Elephants live about as long as humans, but cancer occurs in 17% of humans and only about 5% of elephants. Researchers found that a \"zombie gene\"..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

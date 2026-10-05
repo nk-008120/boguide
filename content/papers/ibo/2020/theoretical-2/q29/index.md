@@ -1,5 +1,6 @@
 ---
 title: "Q29 - Factors Driving Coronavirus Genome Variation and Cross-Species Transmission"
+description: "Three stages of transmission are considered before a zoonotic disease leads to a pandemic in human society (Figure 1): A, spillover from the natural..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

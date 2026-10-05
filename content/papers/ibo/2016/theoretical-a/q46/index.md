@@ -1,5 +1,6 @@
 ---
 title: "Q46 - Grazing Intensity, Root Competition, and Sex Ratio in Poa Grass"
+description: "The dioecious perennial Poa grass coexists with Stipa grass in the steppes. The former is highly preferred by domestic and wild herbivores, while the..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

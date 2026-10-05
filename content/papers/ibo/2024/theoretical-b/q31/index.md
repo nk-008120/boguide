@@ -1,5 +1,6 @@
 ---
 title: "Q31 - Linkage Disequilibrium Between M* and Flanking Loci R/Q"
+description: "Linkage Disequilibrium (LD) is a non-random co-occurrence of alleles at different loci. Loci can be on the same or separate chromosomes. Let's consider..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

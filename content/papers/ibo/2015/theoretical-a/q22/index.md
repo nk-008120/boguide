@@ -1,5 +1,6 @@
 ---
 title: "Q22 - Adipose Tissue as a Host Response to Skin Infection"
+description: "Staphylococcus aureus (SA) causes skin infection in humans and is a common cause of death. Immediate protection or intervention by local epithelial cells..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q12 - FRET-Based Protease Activity and Inhibitor Mechanism"
+description: "Förster Resonance Energy Transfer (FRET) is a technique used to study the interaction between two chromophores, donor and acceptor. The donor (D) can be..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

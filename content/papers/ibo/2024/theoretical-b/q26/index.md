@@ -1,5 +1,6 @@
 ---
 title: "Q26 - Intratumor Heterogeneity and Clonal Evolution Under Treatment"
+description: "Intratumor heterogeneity refers to distinct tumor cell populations within the same patient's tumor. During tumor evolution, random mutations in genes..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

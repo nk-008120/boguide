@@ -1,5 +1,6 @@
 ---
 title: "Q18 - Lactic Acid Fermentation"
+description: "The process of lactic acid fermentation, the conversion of a glucose molecule into two molecules of lactic acid (lactate), is schematically presented..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

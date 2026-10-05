@@ -98,3 +98,5 @@ Several named strategies recur across taxa and are tested individually:
 3. Explain why a solitary sea turtle hatchling emerging alone faces a higher individual predation risk than one emerging as part of a mass, synchronized hatching event, using the dilution effect specifically (not vigilance).
 4. A herd of prey animals under threat shows individuals actively pushing toward the center of the group rather than merely staying close together. Name this phenomenon and explain whose fitness it improves at whose expense.
 5. Explain why periodical cicadas' 13- and 17-year emergence cycles (both prime numbers) are hypothesized to further reduce predation risk beyond the swamping effect of sheer numbers alone.
+
+{{< related-questions >}}

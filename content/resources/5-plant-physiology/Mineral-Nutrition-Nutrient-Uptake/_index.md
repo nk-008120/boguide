@@ -222,3 +222,5 @@ In both types the fungus receives photosynthate from the plant in exchange for e
 3. A legume grown in nitrogen-poor, sterile (microbe-free) soil grows poorly compared to the same species grown in soil containing Rhizobium. Explain the mechanism responsible for the difference.
 4. Explain why molybdenum is an essential micronutrient for a plant that does not itself perform nitrogen fixation.
 5. A plant grown with intact mycorrhizal associations shows better growth in phosphorus-poor soil than a mycorrhiza-free control of the same species. Explain the mechanism responsible.
+
+{{< related-questions >}}

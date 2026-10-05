@@ -1,5 +1,6 @@
 ---
 title: "Q38 - A Pedigree with Two X-Linked Disorders"
+description: "Two human genetic disorders, haemophilia and red-green colour blindness, are both located on chromosome X. The pedigree in the Fig. shows a family with..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

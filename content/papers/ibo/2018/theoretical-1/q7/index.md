@@ -1,5 +1,6 @@
 ---
 title: "Q7 - Primary vs Secondary Response Genes"
+description: "Steroid hormones affect expression of primary response genes and secondary response genes in cells as schematically shown in the figure below. Primary and..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

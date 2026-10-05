@@ -102,3 +102,5 @@ Chronic exposure to the lower atmospheric PO₂ at high altitude triggers both s
 3. Explain why an insect's maximum body size is constrained by its respiratory system's reliance on direct diffusion.
 4. During a dive, why does skeletal muscle continue to function despite reduced blood flow to it?
 5. Distinguish an individual's short-term physiological response to moving to high altitude from a bar-headed goose's evolved hemoglobin adaptation, in terms of timescale and mechanism.
+
+{{< related-questions >}}

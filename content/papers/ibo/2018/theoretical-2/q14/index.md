@@ -1,5 +1,6 @@
 ---
 title: "Q14 - 2D Gel Analysis of Plasmodium Peroxiredoxin"
+description: "Plasmodium is a parasitic protozoan that is prevalent in tropical countries. Once the parasites invade host red blood cells, they multiply within 24 h...."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -82,3 +82,5 @@ The single most common practical-station failure mode is choosing or misreading 
 3. Explain why a key scoped only to distinguishing oak species should avoid a couplet based on leaf color in autumn.
 4. A field specimen has lost the one structure a printed dichotomous key relies on at couplet 3. Explain two different practical strategies (one about key design, one about identification approach) that could have avoided a dead end here.
 5. Explain why a multi-access key is generally preferred for mobile/app-based field identification tools over a traditional printed dichotomous key.
+
+{{< related-questions >}}

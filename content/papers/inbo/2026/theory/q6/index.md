@@ -1,5 +1,6 @@
 ---
 title: "Q6 - Gibberellic Acid and Light Effects on Hypocotyl Growth"
+description: "Plant Hormones: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

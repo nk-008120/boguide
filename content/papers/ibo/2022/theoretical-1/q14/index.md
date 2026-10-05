@@ -1,5 +1,6 @@
 ---
 title: "Q14 - Water Potential - Osmosis Between Three Plant Cells"
+description: "The diagram shows the water potentials of 3 adjacent plant cells (the water potential of pure water is 0)."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

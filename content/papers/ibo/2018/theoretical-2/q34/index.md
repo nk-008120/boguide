@@ -1,5 +1,6 @@
 ---
 title: "Q34 - Chloride-Induced Trichome Induction and Ion Exclusion"
+description: "The relationship between trichome density on leaves and ion uptake was plotted from a bromeliad plants treated with different concentrations of chloride..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

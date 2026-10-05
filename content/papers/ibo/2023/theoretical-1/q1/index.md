@@ -1,5 +1,6 @@
 ---
 title: "Q1 - Skeletal Muscle Energy Sources"
+description: "Skeletal muscle can be active over short or long times. There are several energy sources, each affecting the strength and endurance of muscles."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

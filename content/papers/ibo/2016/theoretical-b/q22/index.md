@@ -1,5 +1,6 @@
 ---
 title: "Q72 - Identifying PTH, Calcium, and Phosphate Curves After PTH-Secretion Blockade"
+description: "Parathyroid hormone (PTH) plays an important role in the regulation of plasma calcium and phosphate levels. Figure Q.72 shows the changes in levels of..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

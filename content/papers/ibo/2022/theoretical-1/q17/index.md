@@ -1,5 +1,6 @@
 ---
 title: "Q17 - Plant Organ Modifications - Shoot vs. Leaf Origin"
+description: "The following figures indicate various modifications of plant organs (I–VI)."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

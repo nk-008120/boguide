@@ -1,5 +1,6 @@
 ---
 title: "Q42 - Thyrocyte Adenylyl Cyclase - TSH and VIP/PACAP Pathways"
+description: "The following image depicts the pathways which activate the adenylyl cyclase (AC) enzyme in thyrocytes of the thyroid gland. AC - adenylyl cyclase, GS (G..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

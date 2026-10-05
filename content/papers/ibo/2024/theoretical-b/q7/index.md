@@ -1,5 +1,6 @@
 ---
 title: "Q7 - DNA Fiber Assay and Replication Fork Progression"
+description: "DNA fiber assay is used to study various aspects of DNA synthesis, such as replication speed, replication origin firing, and replication termination. It..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

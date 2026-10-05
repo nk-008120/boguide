@@ -1,5 +1,6 @@
 ---
 title: "Q32 - Locating the Blood- and Nerve-Dependent Control of the Pituitary"
+description: "The hypothalamus is the central regulator of homeostasis, whilst diverse hormones from the posterior and anterior pituitary glands orchestrate most bodily..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

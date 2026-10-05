@@ -1,5 +1,6 @@
 ---
 title: "Q7 - Thermus szegediensis: Nutrition and Complementation"
+description: "A microbiology lab studies the microbe Thermus szegediensis, recently isolated from a thermal spring in Szeged. In a sequence of experiments (Exp), they..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

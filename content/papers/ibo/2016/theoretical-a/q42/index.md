@@ -1,5 +1,6 @@
 ---
 title: "Q42 - Positive vs Negative Frequency-Dependent Selection in Practice"
+description: "Frequency-dependent selection is an evolutionary process where the fitness of a phenotype depends on its frequency relative to other phenotypes in a given..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

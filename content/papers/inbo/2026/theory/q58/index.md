@@ -1,5 +1,6 @@
 ---
 title: "Q58 - Mollusc Clade Feature Identification"
+description: "Invertebrate Body Plans II: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

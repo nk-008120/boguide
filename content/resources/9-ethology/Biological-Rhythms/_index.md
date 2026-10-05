@@ -100,3 +100,5 @@ In mammals, the master circadian pacemaker is the **suprachiasmatic nucleus (SCN
 3. A hamster's SCN is surgically lesioned (destroyed), and its circadian activity rhythm becomes arrhythmic (no longer showing a consistent daily pattern) even under normal light/dark cycling. Explain what this result demonstrates about the SCN's role.
 4. Explain why photoperiod is a more reliable cue than ambient temperature for triggering the onset of bird migration, using the concept of environmental cue predictability.
 5. A marine invertebrate spawns synchronously with other members of its population only during specific moon phases. Classify this rhythm by period length and explain why synchrony with a population-wide cue (rather than an independent internal cue alone) would be favored for a reproductive event specifically.
+
+{{< related-questions >}}

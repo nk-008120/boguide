@@ -1,5 +1,6 @@
 ---
 title: "Q42 - Reading a Cetacean Phylogeny for Lifestyle and Trait Evolution"
+description: "Figure 1 shows the evolution of cetaceans. Studies using stable isotopes indicate that Pakicetus and Amburocetus ate freshwater fish, while..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

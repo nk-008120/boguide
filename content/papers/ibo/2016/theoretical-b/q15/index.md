@@ -1,5 +1,6 @@
 ---
 title: "Q65 - Nitric Oxide Feedback in Plant Nitrate Assimilation"
+description: "Nitrogen assimilation plays an important role in plant metabolism as well as in plant cell development. Plant cells can acquire inorganic nitrogen in the..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

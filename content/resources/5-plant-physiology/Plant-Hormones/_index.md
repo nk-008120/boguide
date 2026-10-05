@@ -194,3 +194,5 @@ Structurally steroid-like (unlike the other five hormones), synthesized broadly 
 3. Plant tissue is cultured with a high cytokinin:auxin ratio. Predict the developmental outcome and explain the mechanism.
 4. A single ripe apple is placed in a sealed container with several unripe apples, which then ripen faster than a control batch stored openly. Identify the hormone responsible and explain why its physical properties make this possible.
 5. A dark-grown seedling is exposed to ethylene and develops a thickened stem, reduced elongation, and an exaggerated apical hook. Explain why all three of these responses, rather than just one, are used to confirm ethylene signaling is intact.
+
+{{< related-questions >}}

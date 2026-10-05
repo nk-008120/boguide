@@ -1,5 +1,6 @@
 ---
 title: "Q68 - Pressure-Flow Model of Phloem Sucrose Transport"
+description: "The picture shows the tissues involved in the transport of sucrose in plants: the sieve tube cells and the companion cells."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

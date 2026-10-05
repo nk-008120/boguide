@@ -1,5 +1,6 @@
 ---
 title: "Q23 - Gut Microbiome - Bacterial Crossing of the Blood-Brain Barrier"
+description: "The gut microbiome comprises a vast ecosystem of commensal bacteria, archaea, fungi, and viruses. The gut modulates CNS (central nervous system) functions..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

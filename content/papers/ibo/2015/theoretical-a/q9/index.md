@@ -1,5 +1,6 @@
 ---
 title: "Q9 - Metabolic Rate Scaling During Flounder Development"
+description: "Size-scaling metabolism is of general importance in biology, i.e. relating metabolic processes to body mass. In a study, the metabolic rate of the fish..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

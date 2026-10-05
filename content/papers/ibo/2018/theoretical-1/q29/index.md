@@ -1,5 +1,6 @@
 ---
 title: "Q29 - Rhizobial Nitrogen Fixation Symbiosis"
+description: "Nitrogen is an important nutrient for all plants. While there is an abundance of nitrogen (N2) in the atmosphere, most plants are unable to convert N2..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

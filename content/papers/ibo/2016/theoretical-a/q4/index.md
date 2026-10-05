@@ -1,5 +1,6 @@
 ---
 title: "Q4 - Uncouplers and Inhibitors of Oxidative Phosphorylation"
+description: "When isolated mitochondria are suspended in a buffer containing ADP, Pi, and an oxidizable substrate, three easily measured processes occur: the substrate..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

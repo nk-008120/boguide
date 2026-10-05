@@ -1,5 +1,6 @@
 ---
 title: "Q14 - Matching Molecular Biology Techniques to Research Questions"
+description: "With the advancement of DNA research, various technologies have been developed, and it has become important to select appropriate research methods..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

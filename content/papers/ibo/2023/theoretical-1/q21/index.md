@@ -1,5 +1,6 @@
 ---
 title: "Q21 - Guppy Mate-Choice Copying"
+description: "Pioneering aquarium experiments showed that laboratory-reared, mature female Trinidadian guppy fish (Poecilia reticulata) could copy the mate-choice of..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -112,3 +112,5 @@ Rather than continuously paying the high energetic cost of maintaining a normal 
 3. Explain why a wading bird's legs can be much colder than its core body temperature without causing tissue damage, referencing the relevant vascular arrangement.
 4. Distinguish torpor, hibernation, and estivation by duration and typical environmental trigger.
 5. Explain why hibernation is not simply "thermoregulation failing" at low temperature, referencing the concept of a defended set point.
+
+{{< related-questions >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q24 - Robertsonian Translocation and Chromosome 14/21 Anomalies"
+description: "Robertsonian translocation in human chromosomes occurs when recombination between two acrocentric chromosomes results in the fusion of two long arms and..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

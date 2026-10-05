@@ -1,5 +1,6 @@
 ---
 title: "Q15 - Lotka-Volterra Competition Lines and Coexistence Outcomes"
+description: "The Lotka-Volterra model is used to predict the dynamics of competing populations. It is based on the following equations and is analyzed by constructing..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

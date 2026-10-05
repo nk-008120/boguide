@@ -1,5 +1,6 @@
 ---
 title: "Q21 - Drought Effects on Olive Leaf Anatomy"
+description: "The effect of drought on leaf anatomy was investigated in two types of Olive: Chemlali and Meski. Data is shown in the tables below."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

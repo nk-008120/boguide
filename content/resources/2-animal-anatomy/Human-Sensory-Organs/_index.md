@@ -237,3 +237,5 @@ Photoreceptor and mechanoreceptor hair-cell structure are broadly conserved acro
 3. Explain why the middle ear ossicles are necessary for effective hearing, referencing the area-ratio between the tympanic membrane and the oval window.
 4. A rotational head movement is detected by the vestibular apparatus. Name the specific structure responsible and describe how endolymph movement leads to hair cell activation.
 5. Compare the number and structural origin of middle-ear ossicles in mammals versus non-mammalian vertebrates.
+
+{{< related-questions >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q8 - CAM-like Nocturnal Carbon Fixation in the Amphibious Plant Isoetes howelli"
+description: "Isoetes howelli is an amphibious plant that can live in both aerial and submerged conditions. In a completely submerged condition in shallow fresh water..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

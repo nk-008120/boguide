@@ -104,3 +104,5 @@ This logic assumes both mutations are recessive to wild-type and that the genes 
 **2.** Two independently isolated recessive petite (small-colony) yeast mutants are crossed. The resulting diploid is phenotypically wild-type (normal colony size). What does this result indicate about the two mutations, and what experiment would you have expected if the diploid had instead been petite?
 
 **3.** A cross between two black-coated Labrador retrievers (each BbEe) produces a litter with the following phenotypes: 9 black, 3 chocolate, 4 yellow. A researcher claims this result is inconsistent with recessive epistasis because it doesn't match "9:3:3:1." Evaluate this claim.
+
+{{< related-questions >}}

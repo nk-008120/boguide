@@ -1,5 +1,6 @@
 ---
 title: "Q17 - Glucose Oxidase and Enzyme Kinetics"
+description: "The Michaelis-Menten equation describes the relationship between substrate concentration ([S]) and enzymatic reaction rate (v)."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q48 - mRNA Nucleotide Modifications and Vaccine Design"
+description: "An mRNA vaccine is a type of vaccine where a pathogenic antigen is encoded in an mRNA sequence. Upon delivery to the human body, cells translate this mRNA..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

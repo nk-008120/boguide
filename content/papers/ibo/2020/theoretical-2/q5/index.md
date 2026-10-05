@@ -1,5 +1,6 @@
 ---
 title: "Q5 - Molecular Crowding of Hemoglobin and Ion Diffusion in Red Blood Cells"
+description: "Cytoplasm is generally occupied by very high concentrations of biomolecules and condensed organelles. This property is called \"molecular crowding\", which..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

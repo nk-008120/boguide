@@ -1,5 +1,6 @@
 ---
 title: "Q57 - Root Hairs and Mycorrhizal Fungi"
+description: "Root hairs and arbuscular mycorrhizal fungi (AMF) are two important mechanisms for phosphorus (P) acquisition in plants. An experiment compared wild type..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

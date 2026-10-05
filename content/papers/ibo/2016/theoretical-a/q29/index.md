@@ -1,5 +1,6 @@
 ---
 title: "Q29 - Muscle Fiber-Type Gene Expression Across Three Human Leg Muscles"
+description: "The skeletal muscle fibers are divided into three types depending on the speed and energy sources of muscle contraction: Type I: Slow twitch, oxidative..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -109,3 +109,5 @@ This is a test cross (PpTt × pptt), so each gene segregates independently into 
 **2.** A researcher crosses two pea plants, both heterozygous for seed shape (Rr, round dominant to wrinkled), and observes 780 offspring: 610 round, 170 wrinkled. Calculate χ² and state, using the df = 1 critical value of 3.84, whether this result is consistent with the expected 3:1 ratio.
 
 **3.** In humans, suppose a couple is each heterozygous for two independently assorting recessive conditions (Aa Bb × Aa Bb). What is the probability that their child is affected by *at least one* of the two conditions?
+
+{{< related-questions >}}

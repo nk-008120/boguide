@@ -1,5 +1,6 @@
 ---
 title: "Q44 - Macromutations and Morphogenesis - A1/A2/M Gene Model"
+description: "One possible genetic cause of changes in morphogenesis is macromutations, which alter gene expression. In the hypothesis diagrammed below: A1 and A2 are..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q38 - Attractant vs. Repellent Pheromones in Pharaoh Ants"
+description: "The following experiment was used to determine whether Pharaoh ants (Monomorium pharaonis) use attractive or repulsive chemical signals to mark their..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

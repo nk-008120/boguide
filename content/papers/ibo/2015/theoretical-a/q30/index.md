@@ -1,5 +1,6 @@
 ---
 title: "Q30 - Orientation Cages and Migratory Direction in Indigo Buntings"
+description: "Stephen Emlen experimentally studied seasonal migration of an American bird, the Indigo bunting. He used a funnel-shaped test cage (Fig. B), at the bottom..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

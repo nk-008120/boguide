@@ -1,5 +1,6 @@
 ---
 title: "Q18 - Carbon Cycle Flux Ranking"
+description: "Ecology: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

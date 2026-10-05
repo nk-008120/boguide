@@ -1,5 +1,6 @@
 ---
 title: "Q22 - Nephron Structure and Urine Concentrating Ability Across Habitats"
+description: "Animals living in deserts like kangaroo rats achieve the ability to sustain themselves on a limited supply of water through incredibly well adapted..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

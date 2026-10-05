@@ -1,5 +1,6 @@
 ---
 title: "Q47 - Codling Moth - Temperature/Humidity Ecological Niche"
+description: "Codling moth (Cydia pomonella) is a serious agricultural pest; favorable environmental conditions can cause population outbreaks. In an experiment..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

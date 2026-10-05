@@ -1,5 +1,6 @@
 ---
 title: "Q31 - Street Lighting and the Timing of Dawn Birdsong"
+description: "Researchers investigated if street-lighting (artificial night lighting) affected dawn and dusk singing in six common songbirds. They used 5 sets of plots..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

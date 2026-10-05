@@ -99,3 +99,5 @@ More fluid. Each additional cis double bond adds another kink to the fatty acid 
 **2.** Explain why storing the same amount of chemical energy as fat rather than glycogen requires roughly half the mass, referencing both the chemistry of the molecules and how each is stored physically in the body.
 
 **3.** Phosphatidylserine normally resides on the inner (cytoplasmic) leaflet of the plasma membrane. During apoptosis, it appears on the outer leaflet. What class of membrane protein is most directly implicated in maintaining the normal asymmetric distribution, and what does its loss of function during apoptosis signal to the surrounding tissue?
+
+{{< related-questions >}}

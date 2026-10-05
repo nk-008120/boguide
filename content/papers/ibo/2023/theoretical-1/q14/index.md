@@ -1,5 +1,6 @@
 ---
 title: "Q14 - DNA Replication Origins and Rate"
+description: "Theoretically, in human cells, the rate of DNA polymerase during the replication is about 100 nucleotides per second. Assume that each copy of human..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

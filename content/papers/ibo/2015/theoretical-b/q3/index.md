@@ -1,5 +1,6 @@
 ---
 title: "Q3 - Training Effects on Lung Ventilation and Hyperventilation"
+description: "Lung ventilation (or minute ventilation, V) at increasing workload (oxygen uptake) was measured for two men. Person 1 (black) was untrained, and his V was..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

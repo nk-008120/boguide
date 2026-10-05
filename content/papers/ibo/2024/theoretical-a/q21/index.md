@@ -1,5 +1,6 @@
 ---
 title: "Q21 - Out-of-Africa Human Genetic Diversity and Effective Population Size"
+description: "The 'Out of Africa' theory postulates that modern humans originated in Africa and subsequently migrated to different parts of the world. Indeed..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

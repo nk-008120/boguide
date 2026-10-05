@@ -1,5 +1,6 @@
 ---
 title: "Q69 - Mechanosensitive Ion Channels - OSCA vs Piezo1"
+description: "Mechanically activated channels (MA) transfer physical force into electrical current. Piezo1 is a well-characterized subtype of the MA channel. OSCA..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

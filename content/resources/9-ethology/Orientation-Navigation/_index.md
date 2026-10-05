@@ -109,3 +109,5 @@ Two sensory systems underlie compass and map navigation in the best-studied spec
 3. Indigo buntings raised in a planetarium under a sky that rotates around a star other than Polaris orient their migratory restlessness relative to that artificial star. What does this demonstrate about how the star compass develops, and who conducted this experiment?
 4. Explain why loggerhead sea turtle natal homing is considered evidence of true navigation (map sense) rather than compass-sense-only navigation.
 5. A migratory population shows some individuals migrating south each winter and others remaining resident year-round. Name this phenomenon and describe one factor known to influence which strategy an individual adopts.
+
+{{< related-questions >}}

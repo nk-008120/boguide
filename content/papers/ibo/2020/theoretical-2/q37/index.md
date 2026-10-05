@@ -1,5 +1,6 @@
 ---
 title: "Q37 - Tracking Hox Cluster and Gene Duplication History Through Vertebrate Phylogeny"
+description: "During the evolutionary history of vertebrates, they experienced several instances of whole-genome duplication that are believed to facilitate genome..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

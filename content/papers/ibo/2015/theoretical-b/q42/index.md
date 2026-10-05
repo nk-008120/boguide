@@ -1,5 +1,6 @@
 ---
 title: "Q42 - Day-Night Oxygen and Ethanol Cycling in Eelgrass Roots"
+description: "Eelgrass (Zostera marina) is a submerged marine plant. During the daytime, O₂ is transported via the aerenchyma of the green parts and rhizomes out into..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

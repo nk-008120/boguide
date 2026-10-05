@@ -1,5 +1,6 @@
 ---
 title: "Q15 - ENSO and Ecosystem Effects"
+description: "Walker circulation is the model that describes how temperature differences across the Pacific Ocean can explain local pressure and precipitation: warm..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

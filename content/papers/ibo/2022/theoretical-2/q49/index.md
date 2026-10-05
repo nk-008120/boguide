@@ -1,5 +1,6 @@
 ---
 title: "Q99 - Competitive Displacement Between Two Hare Species in Newfoundland"
+description: "Newfoundland was originally only inhabited by one species of hare, the arctic white hare Lepus arcticus (up to 70 cm in length and up to 7.0 kg). It has..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

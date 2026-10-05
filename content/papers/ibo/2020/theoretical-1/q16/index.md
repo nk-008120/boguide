@@ -1,5 +1,6 @@
 ---
 title: "Q16 - Designing Cloning Primers with Restriction Sites for Vector A"
+description: "Part of the sequence of vector A, which is for protein expression using Escherichia coli as a host, is shown. It was planned to express a plant-derived..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

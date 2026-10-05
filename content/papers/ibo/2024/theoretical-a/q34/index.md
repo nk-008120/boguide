@@ -1,5 +1,6 @@
 ---
 title: "Q34 - Maize Leaf Carbohydrate Allocation"
+description: "After producing C3 sugars in the Calvin Cycle, plant cells can further produce other carbohydrates for structural growth, starch, and soluble..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

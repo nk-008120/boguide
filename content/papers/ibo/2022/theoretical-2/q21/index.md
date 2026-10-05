@@ -1,5 +1,6 @@
 ---
 title: "Q71 - Hippo Pathway Signaling in Blastocyst Implantation"
+description: "One week after fertilization, human embryos implant into the uterus. In order to implant, the embryo needs to develop into a blastocyst (blastoid), a..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

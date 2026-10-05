@@ -1,5 +1,6 @@
 ---
 title: "Q49 - Heterostyly and Pollen Transfer Efficiency in Primrose"
+description: "Primrose has heterostyly, i.e. two flower forms on different individuals: P-plants with long style and short stamens inside the corollar tube, and..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

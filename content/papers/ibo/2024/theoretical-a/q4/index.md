@@ -1,5 +1,6 @@
 ---
 title: "Q4 - Tumor Microenvironment: OCR and Extracellular pH"
+description: "The extracellular pH of normal tissues is typically between 7.35 and 7.45. Meanwhile, in the tumor microenvironment, extracellular pH is mildly acidic in..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

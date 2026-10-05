@@ -1,5 +1,6 @@
 ---
 title: "Q33 - Symbiodinium Nutrient Limitation"
+description: "Corals form mutualistic associations with a dinoflagellate, Symbiodinium of the family Symbiodiniaceae. Symbiodinium has two major life stages: a..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

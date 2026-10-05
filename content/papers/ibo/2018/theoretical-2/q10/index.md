@@ -1,5 +1,6 @@
 ---
 title: "Q10 - Yeast Secretion Trap Screen for Phytopathogen Secretomes"
+description: "Phytopathogens use their secreted proteins \"secretomes\" to attack plant hosts. The yeast secretion trap (YST) functional screen is a method used for..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

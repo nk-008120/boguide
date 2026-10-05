@@ -1,5 +1,6 @@
 ---
 title: "Q29 - Paulinella Chloroplast Endosymbiosis"
+description: "Paulinella is a genus of small aerobic amoeba from the Rhizaria clade. This genus includes a monophyletic clade of photosynthetic species. The..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

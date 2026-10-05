@@ -1,5 +1,6 @@
 ---
 title: "Q40 - Pharmacokinetics: Absorption, Distribution, Metabolism, Excretion"
+description: "Pharmacokinetics studies drug movement in the body, guiding dosage for desired effects based on biochemical properties. Table 1 shows pharmacokinetic..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

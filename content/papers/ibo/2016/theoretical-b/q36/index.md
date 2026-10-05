@@ -1,5 +1,6 @@
 ---
 title: "Q86 - Applying Mutation-Selection and Heterozygote-Advantage Models to a Recessive Lethal Allele"
+description: "Indicate in the answer sheet if each of the following statements is true or false."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

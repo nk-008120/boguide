@@ -1,5 +1,6 @@
 ---
 title: "Q18 - Predicting Spore Genotype Frequencies from Yeast Meiosis"
+description: "In its life cycle, baker's yeast Saccharomyces cerevisiae has haploid and diploid generations. The haploid has alpha-type and a-type mating types and..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

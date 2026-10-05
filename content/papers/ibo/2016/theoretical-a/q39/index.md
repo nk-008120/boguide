@@ -1,5 +1,6 @@
 ---
 title: "Q39 - Factors That Speed Up or Slow Down Speciation"
+description: "Speciation rates are variable in different lineages of organisms. Some lineages have many species; others have only a few."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

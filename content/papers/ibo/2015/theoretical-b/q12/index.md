@@ -1,5 +1,6 @@
 ---
 title: "Q12 - Phylogeny and Biogeography of Horseshoe Crabs"
+description: "Horseshoe crabs are marine and only four extant species are known, while many have gone extinct. Tachypleus gigas (Tg), T. tridentatus (Tt) and..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

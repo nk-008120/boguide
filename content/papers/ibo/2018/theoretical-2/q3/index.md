@@ -1,5 +1,6 @@
 ---
 title: "Q3 - Temporal Order of Intron Removal by Northern Blotting"
+description: "One of the questions that long ago arose with respect to splicing was whether the temporal order of removal of introns in transcripts of genes with..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

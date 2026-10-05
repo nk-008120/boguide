@@ -1,5 +1,6 @@
 ---
 title: "Q25 - beta-catenin and GSK3beta in Xenopus Dorsal Organizer Formation"
+description: "In a Xenopus embryo, the dorsal-ventral axis is determined through cortical rotation after fertilization. On the dorsal side of an embryo, the..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

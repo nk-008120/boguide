@@ -110,3 +110,5 @@ Both parents must be heterozygous: the mother is I^A i (type A) and the father i
 **2.** In a cross between two curly-tailed cats (a trait caused by a dominant allele that is homozygous lethal), 90 kittens are born: 60 curly-tailed, 30 straight-tailed. Explain why this ratio is not 3:1, and predict how many kittens would be expected to have died as embryos if the litter size had not been reduced by lethality.
 
 **3.** A patient has a genotype associated with a dominant, incompletely penetrant disorder (penetrance = 70%), but shows no symptoms. Explain how this is possible, and predict what proportion of this patient's children (assuming the other parent is unaffected and non-carrier) who inherit the disease allele would be expected to show symptoms.
+
+{{< related-questions >}}

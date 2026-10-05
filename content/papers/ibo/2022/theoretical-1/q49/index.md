@@ -1,5 +1,6 @@
 ---
 title: "Q49 - Biological Nitrogen Fixation - Diazotrophs and Nitrogenase"
+description: "Only some bacteria and archaea are capable of performing biological nitrogen fixation. Organisms that grow on N₂ as their sole nitrogen source are called..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

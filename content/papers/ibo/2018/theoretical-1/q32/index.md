@@ -1,5 +1,6 @@
 ---
 title: "Q32 - Speciation and Extinction Rates Across Plant Habits"
+description: "An important question in the evolution of angiosperms is the influence of life form and habit on speciation and extinction. In a phylogenetic study of the..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

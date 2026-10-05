@@ -1,5 +1,6 @@
 ---
 title: "Q52 - Telomere Shortening in Fission-Yeast Telomerase Mutants"
+description: "You identified a gene in fission yeast, homologous to a telomerase subunit from a protozoan. You then make a targeted deletion of one copy of the gene in..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

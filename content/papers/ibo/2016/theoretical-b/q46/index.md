@@ -1,5 +1,6 @@
 ---
 title: "Q96 - Plant Species Richness Effects on Biomass and Soil Carbon/Nitrogen Stocks"
+description: "Students cultured plants, including four grass species (A. capillaris, A. odoratum, F. rubra, and H. lanatus) and four herbs (C. jacea, L. vulgare, P...."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

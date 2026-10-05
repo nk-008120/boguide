@@ -1,5 +1,6 @@
 ---
 title: "Q9 - Counting Electrons Through the Oxygen-Evolving Complex"
+description: "Joseph Priestley (1733-1804) discovered that plants consume CO . In this process they produce elemental 2 oxygen, which he also discovered. In..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

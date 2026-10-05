@@ -1,5 +1,6 @@
 ---
 title: "Q36 - Cladistic Analysis of the Plant Genus X"
+description: "The plant genus X contains 6 species (X. messa, X. obnoxia, X. beatifica, X. confusa, X. foetida, X. nerda). All of them share many character states that..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

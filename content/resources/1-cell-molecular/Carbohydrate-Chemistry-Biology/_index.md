@@ -100,3 +100,5 @@ Most likely a β-glycosidic linkage (e.g. β(1→4), as in cellulose). Human amy
 **2.** Explain, at the level of glycosidic bond geometry, why glycogen is well-suited to be rapidly mobilised for energy but cellulose could never function as a usable energy reserve for the organism that makes it (independent of enzyme availability).
 
 **3.** If a mutation eliminated all α(1→6) branch points from glycogen synthesis (converting it to a linear α(1→4) chain only, like amylose), predict the effect on the rate of glucose mobilisation from a glycogen granule of the same total mass, and explain why.
+
+{{< related-questions >}}

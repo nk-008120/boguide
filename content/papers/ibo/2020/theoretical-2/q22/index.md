@@ -1,5 +1,6 @@
 ---
 title: "Q22 - Planning a Two-Gene pBR322 Cloning Strategy with Compatible Restriction Sites"
+description: "In the 1980s, a plasmid vector called pBR322 was frequently used for DNA recombination experiments. pBR322 is a 4361-base pair plasmid containing..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

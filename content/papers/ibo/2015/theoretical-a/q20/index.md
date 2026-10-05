@@ -1,5 +1,6 @@
 ---
 title: "Q20 - Timing Gene Transfer During Bacterial Conjugation"
+description: "In an experiment, two bacterial strains, I and II, were allowed to conjugate. Strain I contained genes allowing it to grow on media lacking arginine and..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

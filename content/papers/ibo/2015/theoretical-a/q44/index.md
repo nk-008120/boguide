@@ -1,5 +1,6 @@
 ---
 title: "Q44 - Vegetation Removal and Permafrost Dynamics in Siberian Tundra"
+description: "Arctic tundras are warming faster than the global average. This influences their soil carbon reservoirs. The permafrost layer in the tundra is covered by..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

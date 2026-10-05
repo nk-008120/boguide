@@ -1,5 +1,6 @@
 ---
 title: "Q1 - Wee1/Cdc25 Feedback Control of M-Cdk Activity"
+description: "The activities of Wee1 kinase and Cdc25 phosphatase determine the state of phosphorylation of tyrosine 15 in the Cdk1 component of M-Cdk. When tyrosine 15..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

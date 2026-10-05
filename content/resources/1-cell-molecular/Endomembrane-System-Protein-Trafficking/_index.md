@@ -97,3 +97,5 @@ Without the mannose-6-phosphate tag, the Golgi cannot sort these enzymes into th
 **2.** Explain why lysosomal rupture is comparatively less damaging to a cell than an equivalent rupture of, say, a compartment containing highly active enzymes at neutral pH would be, referencing the lysosome's internal chemical environment.
 
 **3.** A drug blocks SNARE-mediated membrane fusion specifically. Predict the effect on both the secretory pathway (Golgi → plasma membrane) and the endocytic pathway (plasma membrane → early endosome → lysosome), and explain why this single mechanistic target affects both directions of vesicular traffic.
+
+{{< related-questions >}}

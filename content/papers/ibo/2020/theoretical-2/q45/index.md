@@ -1,5 +1,6 @@
 ---
 title: "Q45 - Nitrogen and Phosphorus Accumulation Trajectories Through Primary Succession"
+description: "Primary succession can begin in a virtually lifeless area, characterized by early-seral plant species followed by replacement with late-seral plant..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q8 - IGF2-H19 Imprinting and CTCF Loops"
+description: "Certain loci in the genome are influenced by epigenetic modifications, but understanding their precise mechanisms remains challenging. The IGF2-H19 locus..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

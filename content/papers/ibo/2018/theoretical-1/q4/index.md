@@ -1,5 +1,6 @@
 ---
 title: "Q4 - Pulse-Chase RNA Processing"
+description: "Pulse-chase experiments performed in cells are experiments in which cells are first exposed to labelled precursors of specific molecules for a short..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -115,3 +115,5 @@ Absorption across the small intestine's brush border (see [Human Digestive Syste
 3. Explain why trypsinogen and chymotrypsinogen require different activating enzymes despite both being pancreatic zymogens.
 4. Explain the role of Na⁺ in glucose absorption at the brush border, and why this is classified as secondary rather than primary active transport.
 5. Trace a fatty acid's path from the intestinal lumen to its entry into general circulation, naming every structure/mechanism involved.
+
+{{< related-questions >}}

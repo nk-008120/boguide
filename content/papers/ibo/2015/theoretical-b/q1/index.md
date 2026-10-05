@@ -1,5 +1,6 @@
 ---
 title: "Q1 - Conus Snail Toxins and the Neuromuscular Junction"
+description: "Conus snails produce potent conotoxins (peptides), which are used in defense and paralysis of prey. Conotoxins affect the neuromuscular end plates. Four..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

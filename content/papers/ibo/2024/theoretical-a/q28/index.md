@@ -1,5 +1,6 @@
 ---
 title: "Q28 - Distribution of Fitness Effects and Effective Population Size"
+description: "Mutations have different effects ranging from strongly deleterious to highly adaptive. The frequency with which a particular mutation appears de novo is..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

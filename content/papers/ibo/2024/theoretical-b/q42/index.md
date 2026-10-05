@@ -1,5 +1,6 @@
 ---
 title: "Q42 - The Starling Equation and Capillary Fluid Exchange"
+description: "Human bodies have different types of capillaries that differ in wall structure, depending on the function of the organ they are located in."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

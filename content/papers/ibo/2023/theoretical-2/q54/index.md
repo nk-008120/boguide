@@ -1,5 +1,6 @@
 ---
 title: "Q54 - Climate Change Effects on Rapeseed Oil"
+description: "Rapeseed (Brassica napus) is a major oilseed crop. Climate change factors, including elevated CO₂, increased temperature, and elevated ozone (O₃), can..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

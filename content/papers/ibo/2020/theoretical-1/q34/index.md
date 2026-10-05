@@ -1,5 +1,6 @@
 ---
 title: "Q34 - Resource Sharing Between Stolon-Connected Ramets of Fragaria chiloensis"
+description: "Fragaria chiloensis is a stolon-bearing perennial herb that grows on coastal sand dunes. In coastal sand dunes, nitrogen-fixing shrubs often create small..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

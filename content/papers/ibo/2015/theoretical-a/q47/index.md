@@ -1,5 +1,6 @@
 ---
 title: "Q47 - Prey-Induced Enzyme Activity in the Carnivorous Sundew"
+description: "The carnivorous plant sundew, Drosera capensis, has tentacles with mucilage on their leaf surface. In an experiment, plants were each fed 50 fruit flies..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

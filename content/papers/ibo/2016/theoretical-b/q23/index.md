@@ -1,5 +1,6 @@
 ---
 title: "Q73 - Regional Blood Flow Redistribution During Strenuous Exercise"
+description: "The following table describes the rate of blood flow to different parts of the body including brain, skin, intestines, and cardiac muscle at rest and..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

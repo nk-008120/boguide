@@ -1,5 +1,6 @@
 ---
 title: "Q23 - Oocyte Attrition, Ovulation Fraction, and Maternal-Age Risk of Down Syndrome"
+description: "The oocytes in the human ovary are most numerous in the 5-month-old fetus (approximately 7 million), then decrease rapidly to about 2 million at birth...."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

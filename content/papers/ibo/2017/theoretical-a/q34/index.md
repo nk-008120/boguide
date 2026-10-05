@@ -1,5 +1,6 @@
 ---
 title: "Q34 - Contrasting N:P Limitation Across European Coastal Waters"
+description: "The use of fertilisers, and release of sewage, have altered the balance of nitrogen and phosphorus based nutrients in the environment. Additionally..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

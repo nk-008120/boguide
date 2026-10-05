@@ -1,5 +1,6 @@
 ---
 title: "Q7 - Glucosinolate Distribution and Herbivore Choice in Arabidopsis Leaves"
+description: "\"Secondary metabolism\" in microorganisms and plants is not essential for their survival, but is a metabolic process that plays an important role depending..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

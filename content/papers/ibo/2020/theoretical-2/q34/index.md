@@ -1,5 +1,6 @@
 ---
 title: "Q34 - Two-Preceding-Leaf Rule for Leaf Positioning in the Fibonacci Spiral"
+description: "Plant leaves are arranged around the stem in regular patterns. A typical example is the Fibonacci spiral, where the angle between successive leaves is..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

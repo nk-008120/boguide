@@ -91,3 +91,5 @@ Comparing the **$d_N/d_S$ ratio** for a gene reveals which selective regime has 
 3. Following a gene duplication event, one copy accumulates a premature stop codon early in the coding sequence. Predict the most likely fate of this copy and name it.
 4. A bacterial strain rapidly acquires resistance to a new antibiotic within a single generation-equivalent timeframe, faster than would be expected from mutation and vertical inheritance alone. Propose the most likely mechanism and name one specific process by which it could occur.
 5. Explain why comparing dN and dS separately, rather than just counting total substitutions, allows a researcher to distinguish positive selection from a simple increase in overall mutation rate.
+
+{{< related-questions >}}

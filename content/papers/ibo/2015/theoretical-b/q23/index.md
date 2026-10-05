@@ -1,5 +1,6 @@
 ---
 title: "Q23 - Nuclear and Mitochondrial DNA Origin After Nuclear Transfer"
+description: "Researchers succeeded in reprogramming human somatic cells into embryonic stem cells (ESC) by a somatic cell nucleus transfer (SCNT) into oocytes from..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

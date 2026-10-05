@@ -1,5 +1,6 @@
 ---
 title: "Q41 - RFLP Analysis of Cat Mucolipidosis"
+description: "Restriction fragment length polymorphism (RFLP) analysis consists of:"
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

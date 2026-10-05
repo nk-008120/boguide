@@ -1,5 +1,6 @@
 ---
 title: "Q24 - Nuclear-to-Cytoplasmic Ratio and the Midblastula Transition in Xenopus"
+description: "In the African clawed frog, Xenopus laevis, the mode of cell division shifts from cleavage to somatic cell division, which has interphase, at the 12th..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

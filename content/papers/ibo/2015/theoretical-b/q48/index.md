@@ -1,5 +1,6 @@
 ---
 title: "Q48 - Reproductive Success in a Deceptively Pollinated Orchid"
+description: "Some plants deceive their pollinators by emitting odours, mimicking rotten flesh or dung. Such plants are pollinated by carrion and dung flies. This..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

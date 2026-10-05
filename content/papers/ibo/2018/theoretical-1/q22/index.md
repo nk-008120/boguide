@@ -1,5 +1,6 @@
 ---
 title: "Q22 - Frog Embryo Sagittal and Cross Sections"
+description: "Figures X, Y and Z show the sagittal sections (the plane which divides body into left and right parts) of a frog embryo from the surface to the depth..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

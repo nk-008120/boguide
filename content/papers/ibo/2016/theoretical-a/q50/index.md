@@ -1,5 +1,6 @@
 ---
 title: "Q50 - Pitfalls of Molecular Sequences as Phylogenetic Markers"
+description: "Using sequence differences to establish phylogenies has some advantages and possible dangers. An inappropriate choice of molecule could result in..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

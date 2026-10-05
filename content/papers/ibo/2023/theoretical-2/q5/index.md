@@ -1,5 +1,6 @@
 ---
 title: "Q5 - Angler Fish Immunity and Mating"
+description: "Genome sequencing has shown that many fish species appear to be partly or completely immunodeficient. Consider the drawings of four Angler fish. Analyze..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

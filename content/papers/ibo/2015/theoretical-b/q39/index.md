@@ -1,5 +1,6 @@
 ---
 title: "Q39 - Coding vs Non-Coding Sequence Signatures in Cross-Species Alignments"
+description: "Base sequences of two genomic regions (1 and 2) from blue whale (Balaenoptera musculus), sheep (Ovis aries) and hippopotamus (Hippotamus amphibius) were..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

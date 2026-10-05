@@ -1,5 +1,6 @@
 ---
 title: "Q36 - Broad- vs Narrow-Sense Heritability and a Bean Seed-Weight Calculation"
+description: "Heritability in broad sense (H2) is the ratio of total genetic variance (Vg) to total phenotypic variance (Vp): H2 = Vg/Vp. The phenotypic variance is..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

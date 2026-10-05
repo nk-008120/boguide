@@ -1,5 +1,6 @@
 ---
 title: "Q82 - Experimental Design Limits - Herbal Treatment and Statin Co-Therapy"
+description: "A herbal treatment was tested on patients with lipid imbalance in their blood. Patients with lipid imbalance in the blood were divided into two groups..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

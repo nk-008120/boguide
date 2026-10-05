@@ -90,3 +90,5 @@ Mutualistic coevolution of this obligate, tightly matched kind is a double-edged
 3. A fig wasp species goes locally extinct due to a pesticide application. Predict the likely consequence for its single coevolved fig species' reproduction, and explain why this risk is specific to obligate mutualisms rather than generalized pollination relationships.
 4. Explain why the yucca moth laying eggs in only a subset of a yucca flower's ovules, rather than all of them, is expected to be evolutionarily stable rather than being outcompeted by a hypothetical "cheater" moth that consumes every available seed.
 5. Explain what specific comparative data (beyond simply observing a toxic newt and a resistant snake in the same region) would be needed to confirm that the newt-snake relationship is a true coevolutionary arms race rather than a coincidental, non-reciprocal adaptation.
+
+{{< related-questions >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q64 - The C4 Rice Project - Engineering C4 Photosynthesis into a C3 Crop"
+description: "The C4 Rice Project aims to introduce C4 photosynthetic traits into rice, Oryza sativa, a C3 species."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

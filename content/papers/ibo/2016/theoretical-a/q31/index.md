@@ -1,5 +1,6 @@
 ---
 title: "Q31 - Mapping Bulbul Territory Size from Playback Response Data"
+description: "The territorial behavior of the red-whiskered bulbul (Pycnonotus jocosus) was studied during pre-nesting and nesting periods. Songs of decoys were played..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q31 - Serial Reproduction and the Drift of Remembered Images"
+description: "Richard Dawkins (1941-present) invented the idea of memes, and Sir Frederic Bartlett (1886-1969) showed previous knowledge alters the processing of new..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

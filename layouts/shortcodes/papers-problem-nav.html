@@ -19,13 +19,13 @@
 {{- if lt $index (sub (len $problems) 1) }}{{ $next = index $problems (add $index 1) }}{{ end -}}
 <div class="papers-quiz-nav">
   {{- if $prev }}
-  <a class="papers-nav-btn papers-nav-prev" href="{{ $roundURL }}{{ $prev.id }}/">← Previous: {{ $prev.number }}</a>
+  <a class="papers-nav-btn papers-nav-prev" href="{{ $roundURL }}{{ $prev.id }}/">{{ partial "icon.html" "arrow-left" }} Previous: {{ $prev.number }}</a>
   {{- else }}
-  <a class="papers-nav-btn papers-nav-prev" href="{{ $roundURL }}">← Back to {{ $round.name }}</a>
+  <a class="papers-nav-btn papers-nav-prev" href="{{ $roundURL }}">{{ partial "icon.html" "arrow-left" }} Back to {{ $round.name }}</a>
   {{- end }}
   {{- if $next }}
-  <a class="papers-nav-btn papers-nav-next" href="{{ $roundURL }}{{ $next.id }}/">Next: {{ $next.number }} →</a>
+  <a class="papers-nav-btn papers-nav-next" href="{{ $roundURL }}{{ $next.id }}/">Next: {{ $next.number }} {{ partial "icon.html" "arrow-right" }}</a>
   {{- else }}
-  <a class="papers-nav-btn papers-nav-next" href="{{ $roundURL }}">Back to {{ $round.name }} →</a>
+  <a class="papers-nav-btn papers-nav-next" href="{{ $roundURL }}">Back to {{ $round.name }} {{ partial "icon.html" "arrow-right" }}</a>
   {{- end }}
 </div>

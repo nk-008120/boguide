@@ -1,5 +1,6 @@
 ---
 title: "Q27 - Reciprocal Intraguild Predation Between Juveniles and Adults"
+description: "Intraguild predation is the killing and sometimes eating of potential competitors. Reciprocal intraguild predation with size structure, is one type of..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

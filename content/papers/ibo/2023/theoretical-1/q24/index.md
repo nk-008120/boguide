@@ -1,5 +1,6 @@
 ---
 title: "Q24 - Identical-by-Descent Segments and Genetic Relatedness"
+description: "Identifying genetic relatedness between human individuals is useful for many applications."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

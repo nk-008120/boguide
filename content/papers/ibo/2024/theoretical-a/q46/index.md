@@ -1,5 +1,6 @@
 ---
 title: "Q46 - Channelrhodopsin-2 (ChR2) in Hippocampal Neurons"
+description: "The discovery of light-gated cation channels quickly led to the development of new tools and applications, notably the optical control of neural activity..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

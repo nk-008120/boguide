@@ -1,5 +1,6 @@
 ---
 title: "Q45 - Mustard Seed Coat Color Inheritance"
+description: "Mustard (Brassica juncea) seeds are used as spice in Arabian cuisine. Mustard seeds have either brown or yellow seed coat color."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q11 - Calculating Cell Cycle Length and Initial Ratio from Growth Curves"
+description: "A cultured cell of somatic cell A and a cultured cell of somatic cell B of an animal were prepared. A culture dish containing an appropriate amount of..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

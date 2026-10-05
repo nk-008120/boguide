@@ -1,5 +1,6 @@
 ---
 title: "Q48 - Helium Dilution Test for Residual Volume"
+description: "During pulmonary function tests, tidal volume, inspiratory reserve volume, and expiratory reserve volume can be measured directly, but not residual volume..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

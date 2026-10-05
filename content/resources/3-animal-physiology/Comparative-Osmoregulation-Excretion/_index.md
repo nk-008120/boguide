@@ -96,3 +96,5 @@ The kangaroo rat survives with no drinking water at all, relying entirely on **m
 3. Trace fluid movement through an insect excretory system from Malpighian tubule secretion to final uric acid excretion.
 4. Explain why a marine bird's kidney alone cannot solve the ion load created by drinking seawater, and what structure compensates.
 5. Explain, referencing the countercurrent multiplier, why an elongated loop of Henle allows the kangaroo rat to produce more concentrated urine than a standard-length loop would.
+
+{{< related-questions >}}

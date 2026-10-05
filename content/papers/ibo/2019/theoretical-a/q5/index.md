@@ -1,5 +1,6 @@
 ---
 title: "Q5 - UCP Family and Non-Shivering Thermogenesis"
+description: "One way of heat production is non-shivering thermogenesis, mediated by norepinephrine via upregulation of mitochondrial uncoupling channel proteins (UCP)..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

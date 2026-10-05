@@ -1,5 +1,6 @@
 ---
 title: "Q36 - A Frameshift Mutation Causing Ficolin-3 Deficiency"
+description: "Ficolins are important immune system proteins, e.g. ficolin-3. Consequently, patients with ficolin-3 deficiency may suffer from several complications...."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

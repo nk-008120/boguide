@@ -1,5 +1,6 @@
 ---
 title: "Q13 - Renal Handling of Glucose"
+description: "The following graph shows how glucose handling in the kidney changes with plasma concentration."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

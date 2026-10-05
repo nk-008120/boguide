@@ -1,5 +1,6 @@
 ---
 title: "Q32 - Reciprocal Altruism in Blood-Sharing Vampire Bats"
+description: "Female vampire bats live in colonies made up of unrelated females and their offspring, and they feed exclusively on blood of herbivores. The fully-fed..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

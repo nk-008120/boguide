@@ -1,5 +1,6 @@
 ---
 title: "Q19 - Cardiac Output and Oxygen Delivery During Exercise (Fick Principle)"
+description: "Cardiac output (CO) is the volume of blood pumped by the heart in one minute. Cardiac output is affected by the stroke volume (SV) and the heart rate..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

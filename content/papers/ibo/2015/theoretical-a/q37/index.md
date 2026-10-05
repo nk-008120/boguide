@@ -1,5 +1,6 @@
 ---
 title: "Q37 - Restriction Fragment Analysis of a Growth Hormone Deletion"
+description: "DNA from five members of a family, in which dwarf growth occurs (Fig. A), was examined using restriction enzymes, DNA probes, and gel electrophoresis..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

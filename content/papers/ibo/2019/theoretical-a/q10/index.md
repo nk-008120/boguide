@@ -1,5 +1,6 @@
 ---
 title: "Q10 - Pressure and Volume Changes During Breathing"
+description: "The graph below illustrates the pressure and volume changes during breathing."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

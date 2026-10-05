@@ -1,5 +1,6 @@
 ---
 title: "Q47 - The Rise-and-Fall Pattern of Taxon Persistence in the Fossil Record"
+description: "Zliobaite et al. (2017) point out that for a given taxon, the pattern below is usually observed in the fossil record (red line) defined as the number of..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

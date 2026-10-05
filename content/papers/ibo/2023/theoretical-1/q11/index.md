@@ -1,5 +1,6 @@
 ---
 title: "Q11 - Engineered Viral Capsids and Genome Packaging"
+description: "Engineering proteins to have desired function and activity has been a long-standing goal of biotechnology."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

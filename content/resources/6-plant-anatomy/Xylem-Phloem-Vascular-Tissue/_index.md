@@ -106,3 +106,5 @@ Collateral bundles are further split by whether a strip of meristematic **vascul
 3. Explain why a sieve tube element cannot survive without its companion cell, referencing specifically which cellular functions each provides.
 4. A cross-section shows a central xylem strand completely surrounded by phloem. Name this bundle arrangement and identify a plant group where it is characteristic.
 5. Explain, structurally, why monocot stems typically cannot increase in girth after the first growing season while dicot stems can.
+
+{{< related-questions >}}

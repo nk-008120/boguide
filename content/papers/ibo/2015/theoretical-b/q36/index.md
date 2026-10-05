@@ -1,5 +1,6 @@
 ---
 title: "Q36 - Four Ways to Draw the Same Phylogeny"
+description: "The phylogeny of seven species is presented in four different ways (Fig.)."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

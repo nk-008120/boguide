@@ -1,5 +1,6 @@
 ---
 title: "Q35 - \"Seed and Soil\": Why Tumours Favour Specific Secondary Organs"
+description: "Different types of primary tumours give rise to secondary tumours at different rates, and in characteristic places. (The primary organ is where the..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

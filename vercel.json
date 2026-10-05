@@ -4,6 +4,41 @@
       "source": "/bionuggets",
       "destination": "https://bionuggets2009.vercel.app/bionuggets",
       "statusCode": 302
+    },
+    {
+      "source": "/biobytes/frontiers",
+      "destination": "/biobytes/horizon",
+      "statusCode": 301
+    },
+    {
+      "source": "/biobytes/frontiers/",
+      "destination": "/biobytes/horizon/",
+      "statusCode": 301
+    },
+    {
+      "source": "/biobytes/frontiers/astrobiology",
+      "destination": "/biobytes/horizon/astrobiology",
+      "statusCode": 301
+    },
+    {
+      "source": "/biobytes/frontiers/astrobiology/",
+      "destination": "/biobytes/horizon/astrobiology/",
+      "statusCode": 301
+    },
+    {
+      "source": "/biobytes/frontiers/drug-delivery",
+      "destination": "/biobytes/horizon/drug-delivery",
+      "statusCode": 301
+    },
+    {
+      "source": "/biobytes/frontiers/drug-delivery/",
+      "destination": "/biobytes/horizon/drug-delivery/",
+      "statusCode": 301
+    },
+    {
+      "source": "/biobytes/frontiers/:path*",
+      "destination": "/biobytes/horizon/:path*",
+      "statusCode": 301
     }
   ],
   "headers": [
@@ -21,6 +56,12 @@
     },
     {
       "source": "/(.*)_hu_(.*)\\.(webp|jpg|jpeg|png)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/fonts/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
       ]

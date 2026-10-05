@@ -1,5 +1,6 @@
 ---
 title: "Q6 - Missing Cell Types in Adults"
+description: "Adult humans lack some cell types possessed by children/embryos."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q47 - Williams' Evolutionary Theory of Senescence"
+description: "Organismal senescence is the aging of the whole organism. It is a widespread phenomenon in nature but the exact etiology is still largely unclear. An..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

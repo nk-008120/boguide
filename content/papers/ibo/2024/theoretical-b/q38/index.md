@@ -1,5 +1,6 @@
 ---
 title: "Q38 - Chemical A, Gibberellin, and Wheat Seed Germination"
+description: "Kazakhstan is one of the significant contributors to global wheat production and export. Researchers at Kazakh National University studied how chemical A..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q32 - The SIR Model of Parasite Population Dynamics"
+description: "The population dynamics of parasite species is complex, because the size of the parasite and host populations affect each other. One popular model is the..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q13 - A dme Mutant and Nitrogen Fixation in Soybean Root Nodules"
+description: "The bacterium Bradyrhizobium japonicum can infect soybean (Glycine max) roots and form nodules. The nitrogen fixation catalyzed by nitrogenase occurs in..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

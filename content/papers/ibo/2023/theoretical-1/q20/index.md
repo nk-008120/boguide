@@ -1,5 +1,6 @@
 ---
 title: "Q20 - Flycatcher Song Dialects and Species Discrimination"
+description: "The pied flycatcher (Ficedula hypoleuca) and collared flycatcher (F. albicollis) are two closely related and morphologically very similar bird species."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

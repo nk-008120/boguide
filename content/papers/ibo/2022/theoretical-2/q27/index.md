@@ -1,5 +1,6 @@
 ---
 title: "Q77 - Mitochondrial Calcium Handling in Synaptic Plasticity and Aging"
+description: "Synaptic plasticity in the adult brain underlies the cellular mechanisms of learning and memory. Mitochondria contribute to the process of synaptic..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

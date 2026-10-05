@@ -1,5 +1,6 @@
 ---
 title: "Q26 - Receptor Occupancy and a Non-Competitive Inhibitor of Acetylcholine Signalling"
+description: "Whilst Lewis Wolpert (1929-present) hypothesised graded responses to signals control animal development, Sir John Gurdon (1933-present) was the first..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

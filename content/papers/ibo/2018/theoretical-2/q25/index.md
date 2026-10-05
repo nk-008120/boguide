@@ -1,5 +1,6 @@
 ---
 title: "Q25 - Maternal-Effect Inheritance of Snail Shell Coiling"
+description: "In snail, the direction of cleavage, and therefore the snail shell coiling, is controlled by a single gene, in which the right-coiling allele, D, is..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

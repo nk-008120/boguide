@@ -1,5 +1,6 @@
 ---
 title: "Q24 - Directionality and Excitability of the Giant Worm Action Potential"
+description: "Sir Alan Hodgkin (1914-1998) and Sir Andrew Huxley (1917-2012) explained how action potentials occur and spread. (i) Resting neurons have a negative..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

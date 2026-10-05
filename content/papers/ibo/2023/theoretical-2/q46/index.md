@@ -1,5 +1,6 @@
 ---
 title: "Q46 - Mendelian Probability in Pea Pods"
+description: "A green and wrinkled seeds pea strain was crossed with a yellow and round seeds pea strain. All F₁ seeds were yellow and round. In F₂ progenies..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q37 - Gene Duplication and Selection in Primate ECP/EDN Ribonuclease Genes"
+description: "The following figure is a phylogenetic tree of ECP and EDN genes in primates. EDN shows strong ribonuclease activity. By contrast, ECP shows strong..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

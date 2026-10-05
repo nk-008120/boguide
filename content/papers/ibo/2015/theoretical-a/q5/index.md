@@ -1,5 +1,6 @@
 ---
 title: "Q5 - Kidney Filtration, Excretion and Oxygen Use in Three Individuals"
+description: "In a study on kidney function, several parameters were measured in three healthy persons A–C (Table). Parameter values describing kidney functions. Assume..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

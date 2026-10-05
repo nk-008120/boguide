@@ -1,5 +1,6 @@
 ---
 title: "Q30 - Heteroplasmy Thresholds Behind Mitochondrial Replacement Therapy"
+description: "Sir Robert Edwards (1925-2013) invented in vitro fertilisation (IVF) and Sir Douglas Turnbull developed ‘3 parent IVF’: the nuclear DNA of a mother and..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q21 - Biological Samples - Identifying Diverse Organisms"
+description: "The following images depict certain biological samples (I–VIII), imaged by light and electron microscopy."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

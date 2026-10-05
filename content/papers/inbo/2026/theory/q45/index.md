@@ -1,5 +1,6 @@
 ---
 title: "Q45 - Multiple Alleles in Mallard Duck Plumage"
+description: "Extensions of Mendelian Inheritance: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

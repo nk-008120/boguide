@@ -1,5 +1,6 @@
 ---
 title: "Q56 - Rubber Tree Stem Diameter Dynamics"
+description: "Rubber trees (Hevea brasiliensis) are tapped for latex, a commercially valuable product. Continuous monitoring of trunk diameter reveals daily..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

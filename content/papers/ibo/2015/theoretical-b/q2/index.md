@@ -1,5 +1,6 @@
 ---
 title: "Q2 - Hemoglobin Oxygen Affinity in Two Amazonian Fish"
+description: "Fish vary in the way they take up oxygen. The precise uptake is reflected in their hemoglobin dissociation curve, and its shape is determined both by..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

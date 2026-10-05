@@ -1,5 +1,6 @@
 ---
 title: "Q8 - Beadle & Tatum: One Gene, One Enzyme"
+description: "Beadle and Tatum proposed that one gene produces one enzyme. They mutated mould and observed that different colonies required a different supplement to..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q13 - lac Operon Regulation (Glucose and Lactose)"
+description: "Gene Regulation: Prokaryotic: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

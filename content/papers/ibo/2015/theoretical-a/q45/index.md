@@ -1,5 +1,6 @@
 ---
 title: "Q45 - Sexual Dimorphism and Floral Evolution in Palm and Saxifrage"
+description: "The structure of flowers has many morphological characters important to reproductive success, e.g. sexual dimorphism (dioecy, monoecy). Such characters..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

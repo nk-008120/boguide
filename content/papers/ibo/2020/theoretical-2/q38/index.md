@@ -1,5 +1,6 @@
 ---
 title: "Q38 - Molecular Clock Estimates of Substitution Counts, Divergence Time and Domain-Specific Rates"
+description: "Zuckerkandl and Pauling proposed the molecular clock hypothesis, in which amino acid differences in a protein accumulate at a uniform rate among species...."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

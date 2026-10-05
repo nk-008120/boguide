@@ -1,5 +1,6 @@
 ---
 title: "Q51 - Cancer Cell Metabolism - Aerobic Glycolysis and the Warburg Effect"
+description: "In quiescent normal cells, under normal physiological conditions, glucose is aerobically metabolized to pyruvate, most of which is transformed to..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

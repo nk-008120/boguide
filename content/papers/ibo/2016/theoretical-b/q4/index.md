@@ -1,5 +1,6 @@
 ---
 title: "Q54 - Structure-Activity Relationships of Antifreeze Glycoproteins"
+description: "Antifreeze glycoproteins (AFGPs) possess the ability to inhibit the formation of ice and are therefore essential to the survival of many marine teleost..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

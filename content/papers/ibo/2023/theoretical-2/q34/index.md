@@ -1,5 +1,6 @@
 ---
 title: "Q34 - Bonnet Macaque Population Demography"
+description: "The age/sex composition of a population of bonnet macaques, a social primate that lives in groups with multiple females and males, over several years is..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

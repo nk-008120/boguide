@@ -1,5 +1,6 @@
 ---
 title: "Q23 - Ion Permeability and a Simple Reflex Circuit"
+description: "The diagram below illustrates a neural pathway and the features of the associated neurotransmitters are described in the table. Ions concentrations inside..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q37 - Root Water Movement and Osmotic Regulation"
+description: "Figure 1 provides a schematic representation of one eudicot plant's growing root. It illustrates, through red arrows, the pathway of water solution..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

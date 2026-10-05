@@ -1,5 +1,6 @@
 ---
 title: "Q3 - Two Molecular Subtypes of DLBCL Lymphoma"
+description: "Sir Edwin Southern (1938-present) invented microarrays to analyse the expression of hundreds of genes simultaneously. A microarray has probes printed onto..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -241,3 +241,5 @@ The epidermis-over-dermis plan and keratinization process described here are sha
 3. A deep, high-frequency vibration is applied to the skin. Which receptor type is primarily responsible for detecting it, and at what depth is it located?
 4. Explain why hair loss is normally a continuous, unnoticeable process rather than occurring in a single synchronized event, referencing the hair growth cycle.
 5. Distinguish eccrine from apocrine sweat glands by duct location, distribution, developmental timing, and secretion composition.
+
+{{< related-questions >}}

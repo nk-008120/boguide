@@ -1,5 +1,6 @@
 ---
 title: "Q13 - Countercurrent Heat Exchange in Thermoregulation"
+description: "Strategies for regulating body temperature include controlling the movement of blood between the body core and surface and by countercurrent heat..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

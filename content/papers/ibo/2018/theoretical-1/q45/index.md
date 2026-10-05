@@ -1,5 +1,6 @@
 ---
 title: "Q45 - Risk-Taking and Social Dynamics in Adelie Penguins"
+description: "In Adelie penguins when both parent leave the nest to find food, three-weeks-old chicks group together for protection. In this species, social defence..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

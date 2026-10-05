@@ -88,3 +88,5 @@ Within each vascular bundle, stem xylem matures **endarch**, **protoxylem** (the
 3. Explain why a closed vascular bundle cannot develop a vascular cambium, referencing the bundle's internal structure.
 4. Contrast the origin of a lateral branch with the origin of a lateral root, naming the tissue each arises from.
 5. Explain why stem xylem matures endarch while root xylem matures exarch, in terms of each organ's direction of tissue differentiation.
+
+{{< related-questions >}}

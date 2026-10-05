@@ -1,5 +1,6 @@
 ---
 title: "Q42 - Extracellular vs Intracellular Resistance Enzymes Shape Selection Pressure"
+description: "Sir Alexander Fleming (1881-1955) discovered antibiotics, but humanity's biggest killers are now mostly resistant to them. In one pathogen, antibiotics..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

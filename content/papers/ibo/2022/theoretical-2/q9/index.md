@@ -1,5 +1,6 @@
 ---
 title: "Q59 - Mitochondrial Innate Immunity - Yme1L, SLC25A33 and mtDNA Release"
+description: "Mitochondria are a convergence point of cellular signals and are closely related to signalling pathways of innate immunity. The immune response enhances..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

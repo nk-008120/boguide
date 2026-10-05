@@ -1,5 +1,6 @@
 ---
 title: "Q38 - Sex Ratio Evolution"
+description: "It has been observed that natural populations of a large majority of animal species have evolved a numerical sex ratio at birth of 1:1 (excluding sterile..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

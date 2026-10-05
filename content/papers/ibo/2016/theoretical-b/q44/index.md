@@ -1,5 +1,6 @@
 ---
 title: "Q94 - How Many DBH Categories Are Needed to Accurately Age a Tree?"
+description: "Scientists constructed models for four threatened tree species in sub-tropical forests in Vietnam, and used these models to estimate tree ages (figure..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

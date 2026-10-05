@@ -1,5 +1,6 @@
 ---
 title: "Q57 - PIP2/PIP3 Signaling in T Cells - PTEN and Antigen Dose"
+description: "After the antigen binds to the receptors on T cells, phosphatidylinositol-4-phosphate (PIP1) is phosphorylated to yield PIP2, which is then phosphorylated..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

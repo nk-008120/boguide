@@ -1,5 +1,6 @@
 ---
 title: "Q26 - Homeotic Genes Define Flower and Body Segment Identity"
+description: "Arabidopsis flowers are formed incorrectly when the pistillata, apatela2 or agamous genes are knocked-out, as shown. Genes which determine the identity of..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

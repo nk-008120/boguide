@@ -1,5 +1,6 @@
 ---
 title: "Q41 - Projecting a Three-Stage Population Forward and Finding the Extinction-Preventing Birth Rate"
+description: "Population dynamics are principally determined by birth and death rates. An animal species has three age structures: juvenile (J), adult 1 (A1), and adult..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

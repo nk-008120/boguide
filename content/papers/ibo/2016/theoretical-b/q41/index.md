@@ -1,5 +1,6 @@
 ---
 title: "Q91 - Using SNPs, Autosomal STRs, Y-STRs, and mtDNA to Reconstruct a Family"
+description: "Polymorphic DNA sequences are widely used for molecular identification. Short tandem repeat (STR) is composed of multiple repeats of 2-8 nucleotides..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

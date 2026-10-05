@@ -1,5 +1,6 @@
 ---
 title: "Q12 - iPSC/hESC Cardiomyocyte Grafts After Myocardial Infarction"
+description: "Groundbreaking studies by Shinya Yamanaka's group broke the long-standing dogma that differentiated adult cells cannot return to their embryonic state...."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q9 - ATAD1 Mitochondrial ATPase (Cryo-EM Study)"
+description: "Cryo-EM is a modern structural study technique that works by averaging multiple low-quality electron micrographs; cryo-EM generates high-quality..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

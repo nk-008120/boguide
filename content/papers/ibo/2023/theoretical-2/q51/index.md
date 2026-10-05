@@ -1,5 +1,6 @@
 ---
 title: "Q51 - C3 vs C4 Photosynthesis"
+description: "The figure shows CO₂ assimilation rate (A) as a function of intercellular CO₂ concentration (Ci) for two plants. Plant 1 has a lower CO₂ compensation..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

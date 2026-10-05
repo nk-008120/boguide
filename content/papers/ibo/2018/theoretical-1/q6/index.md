@@ -1,5 +1,6 @@
 ---
 title: "Q6 - pHLIP-Mediated AntimiR Delivery to Tumours"
+description: "MicroRNAs are short non-coding RNAs expressed in various tissues and cell types that suppress the expression of target genes. MicroRNAs involved in cancer..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

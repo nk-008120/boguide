@@ -1,5 +1,6 @@
 ---
 title: "Q19 - Thyroid Hormone, Oxidative Stress, and the Heart"
+description: "Thyroid hormones play a crucial role in metabolism and the cardiovascular system. Too much or too little thyroid hormone can result in insufficient blood..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

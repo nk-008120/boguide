@@ -1,5 +1,6 @@
 ---
 title: "Q45 - COPD Lung Volume Changes and Pressure-Volume Curves"
+description: "Lung volumes can change in Chronic Obstructive Pulmonary Disease (COPD). Figure 1 summarizes normal lung volumes and the changes that occur at different..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

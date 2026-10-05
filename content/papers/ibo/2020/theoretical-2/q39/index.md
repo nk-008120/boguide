@@ -1,5 +1,6 @@
 ---
 title: "Q39 - Identifying Unlabeled Cetartiodactyl DNA Samples from a Phylogenetic Sequence Alignment"
+description: "A laboratory found three tubes lacking labels among stored mammal DNA samples, with three removed labels found nearby: \"bowhead whale\", \"pigmy..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

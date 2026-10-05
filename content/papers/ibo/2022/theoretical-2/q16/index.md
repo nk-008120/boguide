@@ -1,5 +1,6 @@
 ---
 title: "Q66 - Transpiration Rate Differences Between Leaf Surfaces"
+description: "The following diagram demonstrates the impact of light intensity on transpiration rate from the adaxial (upper) and abaxial (lower) surfaces of a eudicot..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q23 - Nerve Conduction and Volume Conductor"
+description: "When a battery is placed in an aqueous solution containing salts similar to those found in human body fluids, charged particles flow from the anode to the..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

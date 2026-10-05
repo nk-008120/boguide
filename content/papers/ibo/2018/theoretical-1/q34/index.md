@@ -1,5 +1,6 @@
 ---
 title: "Q34 - Polyploidy and Alpine Habitat in Veronica"
+description: "Correlation between genome size in polyploid and diploid lineages and life history and occupation of alpine habitat for the genus Veronica..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

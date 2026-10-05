@@ -1,5 +1,6 @@
 ---
 title: "Q43 - Temperature and Invasive Algae Effects on Eelgrass Growth"
+description: "Eelgrass (Zostera marina) is a key species in Danish coastal waters, which during summer rarely get warmer than 18°C. In an experiment, the growth rate of..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

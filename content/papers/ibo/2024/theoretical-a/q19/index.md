@@ -1,5 +1,6 @@
 ---
 title: "Q19 - Cumulative Cultural Evolution in Rock Pigeons"
+description: "Individual progress and subsequent social learning are important aspects of group living. The progressive accumulation of culture within a group over time..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

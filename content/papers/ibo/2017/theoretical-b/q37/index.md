@@ -1,5 +1,6 @@
 ---
 title: "Q37 - Rerouting Flux Through an Engineered Krebs Cycle for Lysine"
+description: "Sir Hans Krebs (1900-1981) uncovered the major biochemical pathway of mitochondria. The Krebs cycle was artificially modified in a free prokaryote to..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

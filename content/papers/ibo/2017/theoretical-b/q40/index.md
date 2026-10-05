@@ -1,5 +1,6 @@
 ---
 title: "Q40 - Mendelian Randomisation Separates Correlation from Causation"
+description: "Sir Richard Doll (1912-2005) invented statistical methods to prove smoking causes human disease. Mendelian randomisation was invented to investigate more..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

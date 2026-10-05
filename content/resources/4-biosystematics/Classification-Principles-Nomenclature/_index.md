@@ -93,3 +93,5 @@ A related but distinct problem is **homonymy**: the same name accidentally appli
 3. Explain why *Escherichia coli* nomenclature is governed by a different code than *Escherichia coli*'s human host, *Homo sapiens*.
 4. A well-known cultivated plant's technically senior name was published in an obscure regional journal and is almost unknown; the junior synonym is used in every textbook worldwide. What mechanism could preserve the widely-used name, and under which code?
 5. List, in order, every rank between Kingdom and Genus in the standard taxonomic hierarchy.
+
+{{< related-questions >}}

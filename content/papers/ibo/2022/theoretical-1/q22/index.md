@@ -1,5 +1,6 @@
 ---
 title: "Q22 - Social Stress Response in Mice - Dominance Hierarchy"
+description: "At the basis of the hierarchy/subordination of individuals in a population is a complex system of behavioral and physiological reactions. In mammals, the..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

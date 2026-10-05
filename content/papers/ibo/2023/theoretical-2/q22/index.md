@@ -1,5 +1,6 @@
 ---
 title: "Q22 - Metformin and Complex I"
+description: "In mitochondria, ATP is synthesized using an electron transport chain containing four complexes (I–IV) and ATP synthase (complex V). Three NADH and one..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

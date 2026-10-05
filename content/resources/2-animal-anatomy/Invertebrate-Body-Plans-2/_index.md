@@ -268,3 +268,5 @@ Echinoderms also have a **calcareous endoskeleton**: internal, mesoderm-derived 
 3. A deuterostome invertebrate has secondary radial symmetry as an adult. Name the phylum and explain what "secondary" signals about its larval stage.
 4. Insects rely on a tracheal system rather than blood for gas transport. Explain why this places a physical upper limit on insect body size.
 5. Compare a compound eye and a camera-type eye by structural organization and explain the resulting trade-off between field of view and image resolution.
+
+{{< related-questions >}}

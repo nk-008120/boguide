@@ -114,3 +114,5 @@ The parental classes are AaBb and aabb (420 + 430 = 850); the recombinant classe
 **2.** In a three-point testcross of genes A, B, and C, the parental phenotype classes are ABC and abc, while the rarest (double-crossover) classes are AbC and aBc. Based on this information, which gene lies in the middle, and how can you tell?
 
 **3.** Two genes have an individually measured recombination frequency of 10% and 8% across two adjacent intervals (A-B and B-C respectively). If the observed double-crossover frequency between A and C is 0.5% rather than the expected 0.8%, calculate the coefficient of coincidence and the interference value, and state what this indicates about crossover independence in this region.
+
+{{< related-questions >}}

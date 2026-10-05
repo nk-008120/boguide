@@ -95,3 +95,5 @@ A **karyotype**, a photographed, size-and-banding-ordered display of an individu
 **2.** A man with vitamin D-resistant rickets (X-linked dominant) has children with an unaffected woman. Predict the phenotype ratio among his sons and among his daughters, and explain the mechanism producing this pattern.
 
 **3.** Two phenotypically unaffected parents, each known (from a previous affected child) to be heterozygous carriers of an autosomal recessive condition, are expecting another child. A genetic counselor is asked the probability that this child will be an unaffected carrier (not the probability of being affected). Calculate this probability and show your reasoning.
+
+{{< related-questions >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q8 - Identifying Amino Acids from Peptide Mass Data"
+description: "A scientist has isolated five different peptides (1 to 5) containing five amino acids (named A, B, C, D, E). He determined the mass and the sequence of..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

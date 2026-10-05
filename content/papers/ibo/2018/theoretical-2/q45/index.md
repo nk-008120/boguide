@@ -1,5 +1,6 @@
 ---
 title: "Q45 - Phylogeography of the Indo-European Language Family"
+description: "There are two hypotheses that try to explain the origin of the Indo-European language family. The Steppe hypothesis traces back the origin of..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

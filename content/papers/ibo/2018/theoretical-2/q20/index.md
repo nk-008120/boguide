@@ -1,5 +1,6 @@
 ---
 title: "Q20 - MRI Weighting and Comparative Organ Anatomy"
+description: "The principle of magnetic resonance imaging (MRI) is based on the fact that the nuclei of certain elements align with the magnetic force when placed in a..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

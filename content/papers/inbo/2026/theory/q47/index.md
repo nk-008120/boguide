@@ -1,5 +1,6 @@
 ---
 title: "Q47 - X-linked Lesch-Nyhan Syndrome Probability"
+description: "Sex Determination & Sex-Linked Inheritance: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q5 - H2A.Z Occupancy and Temperature-Driven Flowering"
+description: "Dame Jean Thomas (1942-present) discovered that eukaryotic DNA is tightly wrapped around histone proteins. Sir Adrian Bird (1947-present) helped explain..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

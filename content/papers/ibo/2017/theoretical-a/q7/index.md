@@ -1,5 +1,6 @@
 ---
 title: "Q7 - Designing a CRISPR Knockout of Gene X"
+description: "Michael Smith (1932-2000) invented site-directed mutagenesis. Recently scientists invented CRISPR- Cas9 technology to carry out mutagenesis more easily...."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

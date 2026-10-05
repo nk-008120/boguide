@@ -1,5 +1,6 @@
 ---
 title: "Q21 - Huntingtin, Glycolytic ATP and Fast Axonal Transport"
+description: "Huntington's disease (HD) is a genetic disorder characterized by devastating degeneration of nerve tissues that progresses with age. Huntingtin (HTT) is..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q22 - ADH1B Allele Geography and Ethanol Metabolism"
+description: "During the first step of ethanol metabolism in humans, alcohol dehydrogenase (ADH) converts ethanol to toxic acetaldehyde that can accumulate in the body."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

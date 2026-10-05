@@ -1,5 +1,6 @@
 ---
 title: "Q5 - CO2, Not O2, Drives Everyday Breathing Rate"
+description: "John Haldane (1892-1962) discovered many mechanisms which control gas exchange and breathing. The effect of altering the pressure of oxygen or carbon..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

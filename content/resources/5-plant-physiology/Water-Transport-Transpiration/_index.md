@@ -164,3 +164,5 @@ When transpiration is low or absent (high humidity, at night, in young seedlings
 3. A well-watered seedling growing in high humidity at night shows droplets of liquid at its leaf margins. Identify the mechanism responsible and explain why it is not simply condensed dew.
 4. Explain, in terms of water potential, why transpiration at the leaf surface is what initiates water movement all the way from the root, rather than the root "pushing" water up on its own during the day.
 5. A xylem conduit undergoes cavitation after a severe frost. Explain what physically happened to the water column, and identify the structural feature (from Plant Anatomy) that limits the spread of this event to neighboring conduits in gymnosperms.
+
+{{< related-questions >}}

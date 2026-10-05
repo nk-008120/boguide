@@ -1,5 +1,6 @@
 ---
 title: "Q17 - Mating-Type Switching in Budding Yeast"
+description: "Yeast (Saccharomyces cerevisiae) has a mating pattern with both haploid and diploid cells, mitosis and meiosis, and two kinds of mating types. Haploid..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

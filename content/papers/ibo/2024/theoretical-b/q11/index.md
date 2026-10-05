@@ -1,5 +1,6 @@
 ---
 title: "Q11 - Proteasome vs. Lysosome Degradation and Protein Half-Life"
+description: "Proteasomes, cytoplasmic multiprotein complexes, and lysosomes are major proteolysis (protein degradation) sites in eukaryotic cells."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

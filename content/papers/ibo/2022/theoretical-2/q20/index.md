@@ -1,5 +1,6 @@
 ---
 title: "Q70 - Land Plant Phylogeny and Shared Derived Characters"
+description: "Over the last 470 million years, plant evolution has seen major evolutionary transitions, such as the move from water to land. The following figure shows..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

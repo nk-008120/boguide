@@ -1,5 +1,6 @@
 ---
 title: "Q6 - PTEN Knockdown and Neutrophil Differentiation"
+description: "HL-60 cells differentiate to neutrophils after eight days of incubation in the presence of All Trans retinoic acid (ATRA). siRNAs are synthetic molecules..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

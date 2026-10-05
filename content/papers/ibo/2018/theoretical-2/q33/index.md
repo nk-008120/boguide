@@ -1,5 +1,6 @@
 ---
 title: "Q33 - Biphasic Kinetics of Potassium Uptake by Trichomes"
+description: "Physiological studies have been accomplished on the adaptations of bromeliad plants to nutrient acquisition and plant utilization of potassium. The Figure..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

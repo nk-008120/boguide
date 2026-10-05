@@ -1,5 +1,6 @@
 ---
 title: "Q93 - Determining Insert Size and Orientation by Restriction Mapping"
+description: "Mr. Trung cloned a coding sequence (CDS) of a gene into a vector and named the resulted plasmid as pVN2016. The CDS was inserted at the SacII recognition..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

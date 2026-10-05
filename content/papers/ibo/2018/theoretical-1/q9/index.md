@@ -1,5 +1,6 @@
 ---
 title: "Q9 - SalI/XhoI Restriction Cloning Analysis"
+description: "Some restriction enzymes have different recognition sequences but create the same sticky ends, as shown below for SalI and XhoI. The following gel..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

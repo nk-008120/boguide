@@ -1,5 +1,6 @@
 ---
 title: "Q78 - Cortisol and 2-AG Dynamics During Motion-Sickness-Inducing Flight"
+description: "Some researchers studied the changes in the level of saliva cortisol and 2-AG (2- arachidonoylglycerol) concentration in blood in two groups of people..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

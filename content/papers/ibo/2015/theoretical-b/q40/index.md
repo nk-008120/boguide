@@ -1,5 +1,6 @@
 ---
 title: "Q40 - Rate and Fidelity of DNA Replication in Fast-Growing E. coli"
+description: "The fast growing model bacterium E. coli (generation time = 20 min) has a single 4.6 million base pair large chromosome that can be replicated in 42..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

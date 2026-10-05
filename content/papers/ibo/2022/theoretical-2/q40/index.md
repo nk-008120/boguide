@@ -1,5 +1,6 @@
 ---
 title: "Q90 - Cannibalism and Larval-Stage Duration in Invasive Cane Toads"
+description: "The South American (French Guiana) cane toad (Rhinella marina) was introduced to Australia about 90 years ago to control the cane beetle (Dermolepida..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

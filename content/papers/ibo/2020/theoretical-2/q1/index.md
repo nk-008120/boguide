@@ -1,5 +1,6 @@
 ---
 title: "Q1 - Glycogen and Amylopectin Degradation by Phosphorylase and Debranching Enzyme"
+description: "Glycogen (and amylopectin) is a glucose polymer with some branching. Linear chains of these polymers consist of a(1->4) linkages and occasional branching..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

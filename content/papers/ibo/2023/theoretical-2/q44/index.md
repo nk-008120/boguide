@@ -1,5 +1,6 @@
 ---
 title: "Q44 - Gene Drive Technology"
+description: "Gene drives (mutagenic chain reaction) are a modern technology which causes highly efficient conversion of wild type alleles to non-functional alleles in..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

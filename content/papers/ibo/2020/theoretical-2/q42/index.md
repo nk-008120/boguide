@@ -1,5 +1,6 @@
 ---
 title: "Q42 - Matching Plant Morphological Plasticity Responses to Environmental Cues"
+description: "Plants show morphological plasticity and can change their morphology in response to different environmental conditions. Four figures (A to D) show..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

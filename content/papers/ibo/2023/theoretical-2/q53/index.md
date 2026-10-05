@@ -1,5 +1,6 @@
 ---
 title: "Q53 - Hydrogen Water and Banana Ripening"
+description: "Banana is a climacteric fruit in which ripening is associated with a burst of ethylene production and respiration. Hydrogen water (HW) has been tested as..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

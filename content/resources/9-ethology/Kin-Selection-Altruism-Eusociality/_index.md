@@ -92,3 +92,5 @@ where **r** is the coefficient of relatedness between actor and recipient (the p
 3. A population of unrelated bats shares food reciprocally, but a subset of individuals accepts food without ever reciprocating. Explain what should happen to the frequency of non-reciprocators over time if other bats can identify and remember them, and why this matters for the long-term stability of reciprocal altruism.
 4. Naked mole rats are eusocial despite being diploid, with normal (not elevated) sibling relatedness. Explain why this is considered evidence that haplodiploidy is not strictly necessary for eusociality to evolve.
 5. Explain why "the species benefits when some individuals give alarm calls" is considered a weaker explanation than kin selection for the evolution of alarm calling, focusing on what happens to non-calling individuals within the same group under each explanation.
+
+{{< related-questions >}}

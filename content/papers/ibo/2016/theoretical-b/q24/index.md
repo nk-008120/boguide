@@ -1,5 +1,6 @@
 ---
 title: "Q74 - Compensatory Cardiovascular Responses to Acute Hemorrhage"
+description: "A man had lost approximately 700 mL of blood in a severe injury of a major artery in a motorcycle accident. At the time of accident, his blood pressure..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

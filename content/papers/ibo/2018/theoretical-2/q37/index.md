@@ -1,5 +1,6 @@
 ---
 title: "Q37 - Interpreting Floral Diagrams"
+description: "The flowering plants show great diversity in their flower structure reflecting evolutionary changes in course of time. One method to illustrate the flower..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

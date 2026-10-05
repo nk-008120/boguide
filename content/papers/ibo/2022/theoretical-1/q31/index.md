@@ -1,5 +1,6 @@
 ---
 title: "Q31 - Retina Cell Layers - Direction of Light and Cell Types"
+description: "The diagram below shows cell layers in the healthy human retina. By carefully observing the diagram, determine whether the following statements are true..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

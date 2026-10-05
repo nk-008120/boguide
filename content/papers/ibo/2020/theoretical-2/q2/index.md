@@ -1,5 +1,6 @@
 ---
 title: "Q2 - Classifying Endo-type and Exo-type Hydrolases by Biological Role"
+description: "Hydrolases that degrade biopolymers can be categorized into two types: (1) endo-type that hydrolyzes the interior bonds of the polymer, and (2) exo-type..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q6 - Renal Clearance and Glomerular Filtration"
+description: "Inulin is an inert 4 kDa polymer. Dextran is an inert 500 kDa polymer. Both are handled by the kidney as you would expect for non-actively transported..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

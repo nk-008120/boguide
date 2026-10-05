@@ -1,5 +1,6 @@
 ---
 title: "Q3 - Amylase Activity - Starch Hydrolysis at 50–70°C"
+description: "The diagram shows experimental data comparing the hydrolysis of starch by amylase at 3 different temperatures."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

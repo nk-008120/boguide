@@ -1,5 +1,6 @@
 ---
 title: "Q36 - Comparative Anatomy of a Leaf's Medial and Lateral Regions"
+description: "The following figure shows two histological sections of an organ from an angiosperm plant. The tissue section on the left was prepared from the medial..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q39 - Intermittent Claudication and Cardiovascular Drug Treatments"
+description: "A 65-year-old man with increased plasma cholesterol levels presented with severe pain in his left leg that occurred after walking for 15 minutes and was..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

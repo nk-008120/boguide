@@ -1,5 +1,6 @@
 ---
 title: "Q55 - X-Irradiation of Yeast - NAD(P)H Fluorescence and Metabolic Recovery"
+description: "The metabolic activity of equal-sized cultures of yeast was explored under 3 conditions: non-irradiated, X-irradiated and recovered (during 24-hour..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

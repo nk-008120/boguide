@@ -1,5 +1,6 @@
 ---
 title: "Q22 - What Limits the Height of the Tallest Trees?"
+description: "To understand the relationship between different factors and tree height, Sequoia sempervirens, one of the tallest known tree species, was studied...."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

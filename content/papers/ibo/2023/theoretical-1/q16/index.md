@@ -1,5 +1,6 @@
 ---
 title: "Q16 - Metabolic Scaling and Kleiber's Law"
+description: "The basal metabolic rate of homeothermic (warm-blooded) animals is described by Kleiber's law, which postulates that metabolic rate depends on animal mass..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

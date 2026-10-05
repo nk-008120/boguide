@@ -1,5 +1,6 @@
 ---
 title: "Q35 - Nitrogen Source and the Reductant Competition Behind CAQ in C3 versus C4 Plants"
+description: "Nitrogen assimilation is a process that requires considerable amounts of reducing power. In leaf cells under moderate light conditions, this process..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

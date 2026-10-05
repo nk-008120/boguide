@@ -1,5 +1,6 @@
 ---
 title: "Q18 - Untangling GH and IGF1 Roles in Growth-Plate Elongation"
+description: "Growth hormone (GH) is secreted by the brain, and can stimulate the liver to secrete insulin-like growth factor 1 (IGF1). Bones, formed from chondrocytes..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q7 - Tidal Pressure Changes Drive Mangrove Root Gas Exchange"
+description: "Mangrove trees grow in intertidal flats, and can have vertical roots (pneumatophores) which act like snorkels for the submerged roots. The mechanism..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

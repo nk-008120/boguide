@@ -1,5 +1,6 @@
 ---
 title: "Q9 - Bulb1/Bulb2 and the UV-B Response in Arabidopsis"
+description: "Bulb1 and Bulb2 are transcription factors involved in the survival response of plants exposed to UV radiation. Wild-type (wt) and homozygous mutant..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

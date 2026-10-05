@@ -1,0 +1,22 @@
+{{- $index := partialCached "related-questions-index.html" . "related-questions" -}}
+{{- $key := strings.TrimSuffix "/" (lower .Page.RelPermalink) -}}
+{{- with index $index $key -}}
+{{- $items := sort . "sk" -}}
+<details class="related-questions">
+  <summary class="related-questions-summary">Practice on BiOrchive: {{ len $items }} past olympiad question{{ if ne (len $items) 1 }}s{{ end }} on this topic</summary>
+  <div class="related-questions-body">
+  {{- $round := "" -}}
+  {{- range $items -}}
+    {{- $p := .page -}}
+    {{- if ne $round $p.Parent.RelPermalink -}}
+      {{- if $round }}</ul>{{ end }}
+      {{- $round = $p.Parent.RelPermalink }}
+    <h4 class="related-questions-round"><a href="{{ $p.Parent.RelPermalink }}">{{ $p.Parent.Parent.Title }}, {{ $p.Parent.Title }}</a></h4>
+    <ul class="related-questions-list">
+    {{- end }}
+      <li><a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a></li>
+  {{- end }}
+    </ul>
+  </div>
+</details>
+{{- end -}}

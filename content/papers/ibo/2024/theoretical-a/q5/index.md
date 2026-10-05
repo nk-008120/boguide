@@ -1,5 +1,6 @@
 ---
 title: "Q5 - Antibody Mutagenesis and Cardiac Glycoside Binding (ELISA)"
+description: "Mutagenesis was performed to determine the effect of single mutations in the binding site of an antibody. The mutants were analyzed for binding to four..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

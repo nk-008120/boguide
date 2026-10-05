@@ -105,3 +105,5 @@ Unlike the adrenal cortex (steroid-producing, HPA-axis-controlled, slow), the **
 3. Explain why growth hormone's growth-promoting effects are largely indirect, naming the intermediate hormone and organ responsible.
 4. Distinguish the adrenal cortex from the adrenal medulla by developmental origin, controlling input, and hormone class released.
 5. After a meal, blood glucose rises. Name the hormone released, its source, its two major target-tissue effects, and the opposing hormone/gland pair that would respond if blood glucose instead fell too low.
+
+{{< related-questions >}}

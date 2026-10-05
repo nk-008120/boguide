@@ -99,3 +99,5 @@ Most likely a chloroplast (or chloroplast-derived plastid), of endosymbiotic ori
 **2.** Explain why the statement "mitochondria are fully independent, self-sufficient organisms living inside the cell" is inaccurate, using the concept of endosymbiotic gene transfer.
 
 **3.** Both mitochondrial cristae and chloroplast thylakoids dramatically increase internal membrane surface area relative to a smooth, unfolded membrane. Explain why this structural strategy is functionally important for both organelles, referencing what is embedded in each membrane.
+
+{{< related-questions >}}

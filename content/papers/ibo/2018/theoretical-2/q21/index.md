@@ -1,5 +1,6 @@
 ---
 title: "Q21 - Hormonal Control of the Menstrual Cycle"
+description: "The menstrual cycle is the regular natural change that occurs in the female reproductive system. In the ovary, where oogenesis take place, each cycle can..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q20 - Comm and Robo Set Midline-Crossing Behaviour in Drosophila Neurons"
+description: "In Drosophila embryos, developing neurons (red) grow along two columns parallel to the midline. Some traverse the midline and some do not, creating a..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

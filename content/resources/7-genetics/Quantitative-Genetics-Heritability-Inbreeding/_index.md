@@ -121,3 +121,5 @@ Full siblings share two common ancestors (both parents). For each common ancesto
 **2.** A dog breeder measures shoulder height in two different kennel populations of the same breed. In Population 1 (raised under highly standardized diet and exercise conditions), the estimated heritability of shoulder height is 0.85. In Population 2 (raised under widely varying diet and exercise conditions), the estimated heritability for the same trait is 0.40. Explain how the same trait, in the same breed, can show such different heritability estimates.
 
 **3.** A conservation program managing a small captive population of an endangered species notices declining litter sizes and increased juvenile mortality across several generations, despite no new mutations or disease outbreaks being detected. Propose the most likely explanation, and describe one breeding-program strategy that would directly address it.
+
+{{< related-questions >}}

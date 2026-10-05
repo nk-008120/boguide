@@ -1,5 +1,6 @@
 ---
 title: "Q30 - An X-Linked, Epigenetically-Acting Eye-Colour Gene"
+description: "Ec+ is an X-linked gene found in a newly discovered mammalian species. Females homozygous for the mutant allele (Ec) have green eyes, while a single copy..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

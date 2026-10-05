@@ -1,5 +1,6 @@
 ---
 title: "Q18 - Screening for Statin Resistance Genes in Yeast"
+description: "Statin-drugs are used to lower blood cholesterol levels in patients that are at risk for cardiovascular diseases due to elevated blood cholesterol levels...."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

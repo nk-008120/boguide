@@ -1,5 +1,6 @@
 ---
 title: "Q15 - Engineering Candida tropicalis Gene Disruptions to Boost Xylitol Production"
+description: "Streptococcus mutans, which causes tooth decay, cannot utilize xylitol (C5H12O5). Therefore, xylitol is used as a sweetener to prevent tooth decay...."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q30 - Linked Genes Controlling Fruit Fly Wing Pigmentation"
+description: "In some fruit flies, wing pigmentation is controlled by genes A, B, and D, which are linked on the same chromosome. One of the genes codes for an ENZYME..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -264,3 +264,5 @@ Because CO₂ uptake (night) and CO₂ fixation via the Calvin cycle (day) are s
 3. Explain why a C4 plant's mesophyll cells lack functional Rubisco-driven Calvin cycle activity even though Rubisco is present in the leaf.
 4. A succulent plant's stomata are found to be open at night and closed during the day. Identify its photosynthetic pathway and explain the biochemical reason for this stomatal timing.
 5. Explain why both C4 and CAM plants pay an ATP cost that C3 plants do not, and identify the specific reaction responsible for that extra cost in both pathways.
+
+{{< related-questions >}}

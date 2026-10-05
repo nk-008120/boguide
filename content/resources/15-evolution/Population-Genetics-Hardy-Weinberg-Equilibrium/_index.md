@@ -103,3 +103,5 @@ A sample of 100 individuals is genotyped at a locus: 64 AA, 32 Aa, 4 aa. Allele 
 3. A population's observed heterozygote frequency is substantially lower than the Hardy-Weinberg-predicted 2pq value calculated from the same population's allele frequencies. Propose a specific, named non-random-mating explanation for this pattern.
 4. A biologist wants to test whether a beetle population is evolving at a coat-color locus. Describe the specific comparison they would need to make, and what result would indicate evolution is occurring.
 5. Explain, step by step, why Hardy-Weinberg equilibrium is reached after a single generation of random mating starting from any arbitrary initial genotype frequencies, as long as all five assumptions hold.
+
+{{< related-questions >}}

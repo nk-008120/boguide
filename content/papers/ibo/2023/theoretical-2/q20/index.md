@@ -1,5 +1,6 @@
 ---
 title: "Q20 - Gasdermin and Pyroptosis"
+description: "Pyroptosis is initiated by various damage-associated molecular pattern (DAMP) and pathogen associated molecular pattern (PAMP) and formation of a large..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

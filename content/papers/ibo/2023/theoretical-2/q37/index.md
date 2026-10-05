@@ -1,5 +1,6 @@
 ---
 title: "Q37 - Group Selection Hypothesis"
+description: "According to a particular hypothesis, individuals of certain species tend to decrease their use of resources for the benefit of other individuals. If they..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

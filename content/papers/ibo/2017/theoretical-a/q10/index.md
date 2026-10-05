@@ -1,5 +1,6 @@
 ---
 title: "Q10 - Timescales and Fragment Sizes Behind a DYSTROPHIN Diagnosis"
+description: "Muscular Dystrophy is caused by alterations to DYSTROPHIN (1). This is a very large gene, and its length affects the biology and diagnosis of Muscular..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

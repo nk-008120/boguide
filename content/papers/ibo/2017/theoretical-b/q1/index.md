@@ -1,5 +1,6 @@
 ---
 title: "Q1 - Enzyme-Limited Carbon Fixation in a Warming Amazon"
+description: "Forests sink more than 30% of anthropogenic CO , but the way they handle atmospheric CO is changing. This 2 2 map shows the change in total fixed carbon..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

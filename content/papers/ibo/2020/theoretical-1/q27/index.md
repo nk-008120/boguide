@@ -1,5 +1,6 @@
 ---
 title: "Q27 - Finding the Minimal Reprogramming Gene Set for Fibroblasts"
+description: "A researcher aimed to induce undifferentiated cells by expressing multiple genes in human fibroblasts. They focused on 24 genes that were identified as..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

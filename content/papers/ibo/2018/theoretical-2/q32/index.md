@@ -1,5 +1,6 @@
 ---
 title: "Q32 - Water-Absorbing Trichomes in Tank Bromeliads"
+description: "Some plants in the Bromeliaceae essentially lack stems and absorptive roots. They take up water from reservoirs known as \"tanks\" that are formed by..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

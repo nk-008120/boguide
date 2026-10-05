@@ -1,5 +1,6 @@
 ---
 title: "Q97 - Grazer Identity, Diversity, and Nutrient Enrichment in Rock-Pool Food Webs"
+description: "A rocky shore contains many shallow rock pools dominated by macroalgae and grazing gastropods, comprising primarily Patella ulyssiponensis (P), Littorina..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

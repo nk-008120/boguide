@@ -100,3 +100,5 @@ Necrosis. The combination of membrane rupture, cell swelling, and inflammation i
 **2.** A cardiac tissue sample shows a mutation eliminating functional connexin protein. Predict the physiological consequence for coordinated heart muscle contraction, and explain the mechanism.
 
 **3.** Explain why autophagy is sometimes described as "a cell eating itself to survive" rather than simply classified as a form of cell death, referencing its typical trigger and outcome.
+
+{{< related-questions >}}

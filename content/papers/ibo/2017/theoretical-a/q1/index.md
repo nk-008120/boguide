@@ -1,5 +1,6 @@
 ---
 title: "Q1 - Choosing a Sequencing Technology for Rare-Disease Genomes"
+description: "Frederick Sanger (1918-2013) invented protein, RNA and DNA sequencing, and Sir Shankar Balasubramanian (1966-present) invented high-throughput DNA..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

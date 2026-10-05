@@ -1,5 +1,6 @@
 ---
 title: "Q51 - Contrasting Parasitic Strategies: Sam and Jack"
+description: "Sam is an imaginary single-celled organism. His body is covered with cilia which enable him to move. He has two nuclei: housekeeping genes are expressed..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

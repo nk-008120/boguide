@@ -1,5 +1,6 @@
 ---
 title: "Q31 - Plant Biology Assertion-Reason Questions"
+description: "In the following questions, a statement of assertion is followed by a statement of reason. Mark the correct choice as:"
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

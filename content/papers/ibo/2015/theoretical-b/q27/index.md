@@ -1,5 +1,6 @@
 ---
 title: "Q27 - Large Herbivore Decline and Dung Beetle Fauna Since the Last Glacial"
+description: "Large herbivores have a high impact upon ecosystems, but most have become extinct during the last 100 kY (1kY = 1000 years). This mass extinction also..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q19 - Foraging Energetics and Territory Defence"
+description: "Defending a territory requires time and energy. Any animal should only defend territories if the benefits of defence outweigh the costs."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

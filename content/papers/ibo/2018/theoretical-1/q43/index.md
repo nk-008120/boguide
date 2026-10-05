@@ -1,5 +1,6 @@
 ---
 title: "Q43 - Competitive Exclusion and Pitcher Plant Coexistence"
+description: "The competitive exclusion principle states that whenever two or more species compete for same set of limiting resources the superior competitors can drive..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

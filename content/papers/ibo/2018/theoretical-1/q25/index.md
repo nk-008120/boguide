@@ -1,5 +1,6 @@
 ---
 title: "Q25 - Phylogenetic Position of Dicyemids"
+description: "In 1876, Van Beneden, found a group of microscopic ciliated wormlike organisms that inhabited the renal sacs of cephalopods, mainly octopuses and..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

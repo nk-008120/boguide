@@ -1,5 +1,6 @@
 ---
 title: "Q31 - Plant Cell Water Potential Components"
+description: "Water Transport & Transpiration: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

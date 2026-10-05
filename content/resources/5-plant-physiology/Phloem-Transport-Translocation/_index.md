@@ -154,3 +154,5 @@ graph LR;
 3. A developing fruit is not connected to maternal phloem tissue by plasmodesmata. Explain how it nonetheless receives sugar, naming the specific unloading route involved.
 4. Using the pressure-flow hypothesis, explain why phloem sap can move downward from a leaf to a root at the same time xylem sap is moving upward through the same region of stem.
 5. Predict what would happen to sink-end turgor pressure, and therefore to bulk flow rate, if a sink tissue's sugar consumption suddenly stopped.
+
+{{< related-questions >}}

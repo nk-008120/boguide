@@ -1,5 +1,6 @@
 ---
 title: "Q7 - Archaeal Phylogeny and the Origin of Eukaryotes"
+description: "Recent studies of Archaea using metagenomics and improved phylogenetic methods allowed us to:"
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

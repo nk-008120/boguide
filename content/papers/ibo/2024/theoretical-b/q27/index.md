@@ -1,5 +1,6 @@
 ---
 title: "Q27 - PCR Mapping of Genomic Rearrangements in Genes H and K"
+description: "It is known that human genes H (located on chromosome 1) and K (located on chromosome 5), are highly prone to genomic rearrangements, such as deletions..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q28 - Cytoplasmic Reprogramming and the Persistence of Cell Identity"
+description: "Sir John Gurdon (1933-present) took differentiated cells from tadpoles (1) or frogs (2, 3), and transferred their nuclei to enucleated eggs. These eggs..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

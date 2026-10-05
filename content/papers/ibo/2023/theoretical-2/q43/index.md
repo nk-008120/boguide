@@ -1,5 +1,6 @@
 ---
 title: "Q43 - Twin Studies and Heritability"
+description: "Most human quantitative traits are affected both by genetics and environment. One way to quantify the relative contribution of genetics versus environment..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

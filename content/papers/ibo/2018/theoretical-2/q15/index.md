@@ -1,5 +1,6 @@
 ---
 title: "Q15 - Enzyme Rate, Inhibition, and Allosteric Kinetics"
+description: "The figure below depicts the relation between substrate concentration and enzyme reaction rate."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

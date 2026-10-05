@@ -1,5 +1,6 @@
 ---
 title: "Q8 - Coordinating Enzymes at the E. coli Replication Fork"
+description: "X-ray crystallography, invented at the Royal Institution, was used by Sir Francis Crick (1916-2004) and Rosalind Franklin (1920-1958) to discover the..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

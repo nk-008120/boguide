@@ -1,5 +1,6 @@
 ---
 title: "Q27 - Arouser Links Egfr Signalling to Alcohol Sensitivity and Social Isolation"
+description: "The most important signalling pathways of development and cancer were discovered by epistasis analyses in fruit-flies (Drosophila melanogaster). Such..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q6 - Cell Membrane Transport - Arrows X, Y, Z"
+description: "There are 3 arrows in the figure: X, Y, Z that show paths of movement of substances through the cell surface membrane."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

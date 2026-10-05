@@ -1,5 +1,6 @@
 ---
 title: "Q11 - Alpha- vs Beta-Thalassemia and AHSP"
+description: "Thalassemia, the most common inherited disorder of hemoglobin, is caused by loss or substantial reduction of one of the globin chains. This results in..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

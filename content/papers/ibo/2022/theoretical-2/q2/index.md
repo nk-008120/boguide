@@ -1,5 +1,6 @@
 ---
 title: "Q52 - Cryopyrin Inflammasome - Western Blot of WT and Mutant Variants"
+description: "Cryopyrin is a protein involved in the formation of enzymatically active caspase-1 from procaspase-1. p35 is a protein fragment resulting from the..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

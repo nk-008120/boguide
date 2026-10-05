@@ -1,5 +1,6 @@
 ---
 title: "Q41 - Complementation Analysis of the Arginine Biosynthesis Pathway"
+description: "In mold/mould, synthesis of the amino acid arginine requires prior conversion of a precursor to ornithine, which is then converted to citrulline, which..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

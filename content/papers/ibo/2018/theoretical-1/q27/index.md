@@ -1,5 +1,6 @@
 ---
 title: "Q27 - Anthocyanin Pigments in Water Lily Flower Colour"
+description: "Anthocyanins are vacuolar pigments that consist of two phenyl rings and one heterocyclic ring. They are the source of red to blue colours of flowers and..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

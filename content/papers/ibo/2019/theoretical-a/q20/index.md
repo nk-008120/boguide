@@ -1,5 +1,6 @@
 ---
 title: "Q20 - GNC/GLK Transcription Factors and Chloroplast Development"
+description: "Two families of transcription factors, GNC and GLK, have been implicated in regulating chloroplast development. The promoters which these transcription..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q22 - Direct and Indirect Coombs Tests"
+description: "There are two clinical tests to detect some antibodies against erythrocytes (RBCs), direct coombs test and indirect coombs test. During the direct coombs..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

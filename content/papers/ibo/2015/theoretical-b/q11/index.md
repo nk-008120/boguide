@@ -1,5 +1,6 @@
 ---
 title: "Q11 - Glycemic Index and Metabolic Response During Exercise"
+description: "The effect of consuming foods, which varied in their glycemic index (GI), on prolonged exercise were studied. GI expresses the effect of a particular type..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

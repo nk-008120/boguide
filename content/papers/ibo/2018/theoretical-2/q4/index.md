@@ -1,5 +1,6 @@
 ---
 title: "Q4 - Gasdermin D and Pyroptosis"
+description: "Inflammatory caspases such as caspase 1 are activated in response to microbial infection and stress signals. When activated, they cleave human gasdermin D..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

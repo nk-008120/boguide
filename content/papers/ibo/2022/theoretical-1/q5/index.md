@@ -1,5 +1,6 @@
 ---
 title: "Q5 - Meselson–Stahl Experiment - DNA Replication Modes"
+description: "To find out how DNA replicates, Matthew Meselson and Franklin Stahl performed the following classical experiment. Bacteria were grown in a medium with..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

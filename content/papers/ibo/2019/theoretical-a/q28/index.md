@@ -1,5 +1,6 @@
 ---
 title: "Q28 - How Long Until a Random Sequence Repeats in the Genome?"
+description: "The human genome is composed of about 3×10⁹ base pairs. Assume that the distribution of base pairs is random. How long should a random sequence be to..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

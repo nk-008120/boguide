@@ -1,5 +1,6 @@
 ---
 title: "Q81 - Blue Light, Melanopsin and the Circadian Phase-Shift Response"
+description: "The human biological \"internal clock\" located in the suprachiasmatic nucleus (SCN) of the hypothalamus ensures the shift from sleep to waking state. To..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

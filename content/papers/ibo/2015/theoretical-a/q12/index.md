@@ -1,5 +1,6 @@
 ---
 title: "Q12 - Stevioside and Soy Protein Effects on Diabetic Rats"
+description: "Four groups (A-D), each of 12 diabetic rats, received different diets for four weeks (Table). Researchers wanted to see if a traditional anti- diabetic..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

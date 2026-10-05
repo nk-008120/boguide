@@ -1,5 +1,6 @@
 ---
 title: "Q28 - Boron-Sugar Complexes and Pollen Tube Growth"
+description: "Boron (B) is an essential micronutrient for plants. Its uptake, transport, and function in plants appear to be dependent on the formation of B complexes..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q8 - Oxygen Uptake and Lactate During and After Exercise"
+description: "Oxygen uptake and lactate concentration in the blood were measured in a 70 kg male person before, during and after he had exercised (worked) for 4..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

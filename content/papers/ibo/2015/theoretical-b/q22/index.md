@@ -1,5 +1,6 @@
 ---
 title: "Q22 - Stem Cell and Islet Co-transplantation for Diabetes"
+description: "Differentiation of a kind of stem cells (mesenchymal stromal cells MSC) derived from adipose rat tissue (A-MSC) and bone marrow (B-MSC) was analyzed in..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

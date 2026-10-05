@@ -189,3 +189,5 @@ Unlike tropisms, **nastic movements** are non-directional, the response's form i
 3. Explain why the same lateral auxin redistribution mechanism causes a root to bend toward gravity and a shoot to bend away from it.
 4. A Mimosa pudica leaf folds within two seconds of being touched, then reopens fully ten minutes later. Explain why this response is classified as nastic rather than tropic, and why it is reversible while a tropic response is not.
 5. Explain the functional significance of the Venus flytrap's two-touch closure threshold in terms of avoiding a wasted response.
+
+{{< related-questions >}}

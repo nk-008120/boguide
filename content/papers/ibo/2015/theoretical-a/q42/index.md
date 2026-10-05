@@ -1,5 +1,6 @@
 ---
 title: "Q42 - Carrier Probability in an Autosomal Recessive Pedigree"
+description: "This pedigree shows the occurrence of a rare disease phenotype (shown in black) with full penetrance. The genetic disorder is caused by a recessive..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

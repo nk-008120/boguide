@@ -1,5 +1,6 @@
 ---
 title: "Q28 - Optogenetically Implanting a False Fear Memory in Mice"
+description: "Tim Bliss (1940-present) discovered that stimulating a neuron sensitises it to future stimulation, and that this is a basis of long term memory. This can..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

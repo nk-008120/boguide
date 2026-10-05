@@ -1,5 +1,6 @@
 ---
 title: "Q12 - Genome Size, Genetic Code and Alien DNA"
+description: "Humans have about 20,000 protein-coding genes. Assume the average (mean) human protein weighs 50 kDa. The average amino acid weighs 110 Da. Use this..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q46 - Three-Toed Sloth Fur Ecosystem - Moths, Algae, and Fungi"
+description: "Three-toed sloths (Bradypus sp.), found in South and Central America, spend their entire lives in tree foliage, descending only once a week to defecate...."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

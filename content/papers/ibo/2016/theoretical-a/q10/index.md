@@ -1,5 +1,6 @@
 ---
 title: "Q10 - Timing Cell-Cycle Phases with a Thymidine Pulse-Chase"
+description: "An experiment was set up to observe the cell cycle length of a strain of yeast. Activated yeast cells were subcultured into a new medium with an initial..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

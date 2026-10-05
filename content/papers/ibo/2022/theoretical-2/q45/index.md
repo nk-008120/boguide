@@ -1,5 +1,6 @@
 ---
 title: "Q95 - Hardy-Weinberg Calculations for Familial Mediterranean Fever"
+description: "Familial Mediterranean Fever (FMF) is a genetic disorder commonly associated with Eastern Mediterranean populations. A genetic segregation analysis of..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

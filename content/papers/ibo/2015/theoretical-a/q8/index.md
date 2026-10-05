@@ -1,5 +1,6 @@
 ---
 title: "Q8 - Anaerobic Lactate-to-Ethanol Metabolism in Goldfish"
+description: "The coldwater Goldfish have a high tolerance to anoxia. They can degrade carbohydrates to lactate and further reduce lactate to ethanol. In a study..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

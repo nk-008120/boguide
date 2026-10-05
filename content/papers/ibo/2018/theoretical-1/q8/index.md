@@ -1,5 +1,6 @@
 ---
 title: "Q8 - Mitochondrial Uncoupling Drugs"
+description: "Drugs that render the inner mitochondrial membrane permeable to H+ are called \"uncouplers\"."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

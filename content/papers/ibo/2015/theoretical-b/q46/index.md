@@ -1,5 +1,6 @@
 ---
 title: "Q46 - The Mechanical Function of Buttress Roots"
+description: "Some trees have large triangular, superficial lateral roots called buttresses (Fig. A). Their functions are widely discussed, but poorly understood. They..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

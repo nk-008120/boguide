@@ -1,5 +1,6 @@
 ---
 title: "Q16 - Cochlear Frequency Coding and Sound Pressure"
+description: "The Hungarian biophysicist, György Békésy, was awarded the 1961 Nobel Prize for his research on the function of the mammalian cochlea. He showed that each..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

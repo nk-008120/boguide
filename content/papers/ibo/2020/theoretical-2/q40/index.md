@@ -1,5 +1,6 @@
 ---
 title: "Q40 - Tracing Membrane Origins in the Four-Membrane Plastids of Chlorarachniophytes"
+description: "It is well-established that photosynthetic eukaryotes (algae and plants) acquired plastids through the primary symbiotic uptake of a cyanobacterium..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

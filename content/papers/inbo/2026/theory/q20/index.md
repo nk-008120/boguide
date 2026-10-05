@@ -1,5 +1,6 @@
 ---
 title: "Q20 - Migration Cost Minimization Strategies"
+description: "Orientation & Navigation: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

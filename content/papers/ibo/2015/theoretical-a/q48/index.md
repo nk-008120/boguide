@@ -1,5 +1,6 @@
 ---
 title: "Q48 - CO2 and Temperature Effects on C3 versus C4 Photosynthesis"
+description: "Plants have different photosynthetic systems. Most plants have the C3 system, but others, especially grasses, have a C4 system. The two systems show..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

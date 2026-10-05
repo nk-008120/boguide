@@ -1,5 +1,6 @@
 ---
 title: "Q44 - TLR7/8 Activation in Sperm Sex Sorting"
+description: "Approximately 50% of epididymal sperm express Toll-like receptors 7/8 (TLR7/8), which are encoded on the X chromosome. The researchers investigated the..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

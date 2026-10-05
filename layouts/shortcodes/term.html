@@ -1,6 +1,6 @@
 {{- $key := .Get 0 -}}
-{{- $t := index site.Data.frontier_terms $key -}}
-{{- if not $t -}}{{- errorf "term shortcode: no entry %q in data/frontier_terms.yaml (%s)" $key .Page.File.Path -}}{{- end -}}
+{{- $t := index site.Data.horizon_terms $key -}}
+{{- if not $t -}}{{- errorf "term shortcode: no entry %q in data/horizon_terms.yaml (%s)" $key .Page.File.Path -}}{{- end -}}
 {{- $note := "" -}}
 {{- with $t.note -}}
   {{- $p := site.GetPage (strings.TrimSuffix "/" .) -}}

@@ -1,5 +1,6 @@
 ---
 title: "Q70 - 4-1BB/4-1BBL Signaling in Atherosclerosis, Autoimmunity, and Graft Rejection"
+description: "The glycoprotein 4-1BB is a receptor that is highly expressed on the surface of active T-cells. The 4-1BB ligand (4-1BBL) is a molecule that binds to and..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

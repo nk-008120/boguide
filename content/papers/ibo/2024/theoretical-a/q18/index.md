@@ -1,5 +1,6 @@
 ---
 title: "Q18 - Animal Road Barrier Effect (Traffic Behavior Types)"
+description: "Roads are responsible for habitat fragmentation, impeding wildlife movement via the \"Barrier effect,\" which combines direct mortality from collisions with..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

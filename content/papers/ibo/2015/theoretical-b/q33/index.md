@@ -1,5 +1,6 @@
 ---
 title: "Q33 - Genotype and Phenotype Frequencies at a Three-Allele Locus"
+description: "In a single locus with three alleles A, B and C, the population allele frequency of A is 0.25 and the frequency of AC individuals is 0.20. We assume..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

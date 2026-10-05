@@ -1,5 +1,6 @@
 ---
 title: "Q30 - Systemin and Jasmonate Signaling in the Tomato Wound Response"
+description: "When tomato leaves are wounded, the expression of protease inhibitor genes is induced and protease inhibitor proteins accumulate in the leaves. This..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

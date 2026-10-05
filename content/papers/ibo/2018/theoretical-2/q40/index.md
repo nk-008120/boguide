@@ -1,5 +1,6 @@
 ---
 title: "Q40 - Tracing Gene X Through Enucleate Sieve-Tube Elements"
+description: "Plants conduct sugars and other substances throughout their body by means of phloem. Phloem is a compound tissue, including different cell types (e.g...."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

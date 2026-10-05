@@ -1,5 +1,6 @@
 ---
 title: "Q16 - Arsenic Accumulation and Growth in Athyrium yokoscense"
+description: "Arsenic (As) in the soil has become an environmental concern worldwide because it is difficult to remediate and can adversely impact human health. The..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q17 - Feeding Time and the Central vs. Peripheral Circadian Clock"
+description: "The impact of feeding on the central circadian clock of the brain, and the peripheral clocks of other cells, was assessed. Mice were either fed only from..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

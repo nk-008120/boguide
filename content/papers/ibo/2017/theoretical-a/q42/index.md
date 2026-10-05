@@ -1,5 +1,6 @@
 ---
 title: "Q42 - Correlated rDNA Abundances Reveal Bacterial Niche Structure"
+description: "Sequencing of ribosomal RNA genes (rDNA), which have very low diversity within families, reveals the identity and relative abundance of bacterial families..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

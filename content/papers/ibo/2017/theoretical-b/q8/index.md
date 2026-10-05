@@ -1,5 +1,6 @@
 ---
 title: "Q8 - Temperature and Metabolism Set Oxygen Levels in a Seagrass Meristem"
+description: "Seagrass grows rapidly from a meristem at its base. However, weak growth and death of entire seagrass meadows, have become common in recent years. The..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

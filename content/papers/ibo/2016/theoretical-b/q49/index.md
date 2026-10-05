@@ -1,5 +1,6 @@
 ---
 title: "Q99 - What Phylogenetic Trees Can and Cannot Reveal"
+description: "Information about the relationships among organisms is a useful source of data for scientists investigating a wide variety of biological questions...."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

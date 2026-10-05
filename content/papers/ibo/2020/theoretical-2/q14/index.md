@@ -1,5 +1,6 @@
 ---
 title: "Q14 - Identifying the First Limiting Reagent in a Multi-Cycle PCR Reaction"
+description: "One cycle of the PCR reaction doubles the number of DNA fragments. Further, each time one cycle of the PCR reaction progresses, the primer pair, the..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

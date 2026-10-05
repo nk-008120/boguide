@@ -1,5 +1,6 @@
 ---
 title: "Q31 - Auxin, Cytokinin and Density Effects on Bud Formation in the Moss Physcomitrella"
+description: "When protonemata of the moss Physcomitrella patens were cultured without exchanging the culture medium, some cells formed buds that grew into..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

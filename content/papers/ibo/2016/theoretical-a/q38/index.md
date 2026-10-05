@@ -1,5 +1,6 @@
 ---
 title: "Q38 - Inferring Chromosomal Rearrangements from Post-Fertilization Embryo Loss"
+description: "A mutated male mouse that is phenotypically normal shows reproductive anomalies when compared with a normal male in terms of mean number of embryos, as..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

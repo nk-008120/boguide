@@ -1,5 +1,6 @@
 ---
 title: "Q47 - Nutrient Limitation of Baltic Phytoplankton Groups"
+description: "Countries around the Baltic Sea have agreed to reduce the outlet of nutrients in drainage water, especially N. In a study, growth of diatoms, N-fixing..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

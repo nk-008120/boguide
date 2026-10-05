@@ -1,5 +1,6 @@
 ---
 title: "Q1 - Sample Question 1 (placeholder)"
+description: "This is a placeholder problem page demonstrating the archive's deepest browsing level. The First Stage exam PDF isn't split into individual problems in..."
 ---
 
 {{< problem-meta category="First Stage" >}}

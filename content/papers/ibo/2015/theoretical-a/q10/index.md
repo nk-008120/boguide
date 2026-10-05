@@ -1,5 +1,6 @@
 ---
 title: "Q10 - The Coagulation Cascade and Vitamin K"
+description: "In a classic experiment (1935) by the Danish Nobel laureate H. Dam, chickens that were fed a lipid-depleted diet developed hemorrhage and started bleeding..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

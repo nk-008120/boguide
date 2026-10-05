@@ -1,5 +1,6 @@
 ---
 title: "Q6 - A Two-Polypeptide Gene with an Intron"
+description: "You are studying a small protein-coding locus, the sequence of which is shown below (5' transcriptional START to 3' transcriptional STOP). This part is..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

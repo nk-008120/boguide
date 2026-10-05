@@ -1,5 +1,6 @@
 ---
 title: "Q21 - Testing Zebrafish Stripes as a Turing Pattern"
+description: "Alan Turing (1912-1954) famously invented the fields of computer science and artificial intelligence. Turing also published equations explaining..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

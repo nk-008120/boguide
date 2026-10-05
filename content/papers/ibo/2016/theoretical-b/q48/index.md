@@ -1,5 +1,6 @@
 ---
 title: "Q98 - Modeling Stable Population Size in Gall Aphids"
+description: "Gall aphids (Pemphigus betae) live in poplar plants. Adult females produce galls on poplar leaves. Some fraction of these galls will emerge and survive to..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

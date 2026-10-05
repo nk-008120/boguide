@@ -1,5 +1,6 @@
 ---
 title: "Q20 - A Revised Dinosaur Phylogeny Overturns Assumptions About Traits"
+description: "Mary Anning (1799-1847) developed the concept of prehistoric life, by collecting fossils. Richard Owen (1804- 1892) coined the term dinosaurs, whilst..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

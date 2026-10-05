@@ -1,5 +1,6 @@
 ---
 title: "Q11 - Directed Evolution of Enzyme D (NADH-Dependent)"
+description: "Directed evolution is a process that mimics natural selection by artificially applying selective pressure to organisms to screen and select for a desired..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

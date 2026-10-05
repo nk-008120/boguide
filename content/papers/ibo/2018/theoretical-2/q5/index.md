@@ -1,5 +1,6 @@
 ---
 title: "Q5 - Detecting Aneuploidy by PCR Fragment Analysis"
+description: "Electrophoresis patterns of PCR products of several chromosome pairs (pairs shown on bottom) in five different individual (1-5) in figure below allow..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

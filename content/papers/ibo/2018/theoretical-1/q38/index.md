@@ -1,5 +1,6 @@
 ---
 title: "Q38 - Haldane's Rule in Mosquitoes"
+description: "J. B. S. Haldane (1892-1964), one of founders of the modern evolutionary biology, stated that if among hybrid offspring one sex is absent, rare, or..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

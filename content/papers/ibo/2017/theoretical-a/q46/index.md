@@ -1,5 +1,6 @@
 ---
 title: "Q46 - A Selective Sweep in Cortex Explains Peppered Moth Melanism"
+description: "The light-coloured form of the English peppered moth (Biston betularia) was replaced by a melanic (dark) form, as camouflaging lichens disappeared due to..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

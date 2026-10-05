@@ -1,5 +1,6 @@
 ---
 title: "Q18 - Surface-to-Volume Scaling Explains Animal Body Proportions"
+description: "Archibald Hill (1886-1971) invented the field of biophysics, which can use simple geometric equations to predict how the anatomy of large and small..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

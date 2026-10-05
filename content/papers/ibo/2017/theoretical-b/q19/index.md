@@ -1,5 +1,6 @@
 ---
 title: "Q19 - Fibre-Type Composition Explains a Human-Chimp Muscle Trade-off"
+description: "Hugh Huxley (1924-2013) proposed the sliding filament theory of muscle contraction. Myosin can bind actin filaments, then change conformation, tugging on..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

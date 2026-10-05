@@ -1,5 +1,6 @@
 ---
 title: "Q60 - Alzheimer's Disease - APP Processing by α-, β- and γ-Secretases"
+description: "Alzheimer's disease is related to the aggregation of amyloid peptides, followed by the degeneration of neurons and disruption of cholinergic transmission...."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

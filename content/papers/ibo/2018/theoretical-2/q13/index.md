@@ -1,5 +1,6 @@
 ---
 title: "Q13 - GSK3 and Beta-Adrenergic Control of Thermogenic Genes"
+description: "Brown adipose tissue (BAT) activation through beta-adrenergic signalling pathway is associated with expression of thermogenic genes and the process of..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

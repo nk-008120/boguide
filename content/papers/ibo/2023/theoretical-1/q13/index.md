@@ -1,5 +1,6 @@
 ---
 title: "Q13 - Bacterial 23S rRNA Gene Copy Number"
+description: "In bacteria, the molecular weight of the gene for 23S ribosomal RNA is 5.5 × 10⁵ daltons."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

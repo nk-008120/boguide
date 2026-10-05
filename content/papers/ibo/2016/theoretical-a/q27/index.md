@@ -1,5 +1,6 @@
 ---
 title: "Q27 - Thermal Metabolic Profiles of Five Animal Species"
+description: "Figure Q.27 shows the changes in metabolic rates of adult individuals of five animal species in response to temperature changes of the external..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

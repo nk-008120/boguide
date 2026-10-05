@@ -1,5 +1,6 @@
 ---
 title: "Q4 - Hippocampal Plasticity in London Taxi Drivers"
+description: "The 2014 Nobel Prize winners in medicine demonstrated that, the hippocampal (HC) region in the human brain stores spatial memory and facilitates spatial..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

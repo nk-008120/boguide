@@ -1,5 +1,6 @@
 ---
 title: "Q42 - Adaptations, Spandrels, and Developmental Constraints"
+description: "Basilica of St Mark in Venice is an architectural marvel built in the 11th century CE. When examining the architecture, it is hard to avoid the spandrels..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q14 - C3 and C4 Leaf Anatomy and Climate"
+description: "Among plant families, grasses and Chenopodiaceae contain many species using the C4 photosynthesis pathway, and many C4 species have evolved independently..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q86 - Giant Panda Fecal-Smearing Behavior and the TRPM8 Cold Receptor"
+description: "In 2007, Chinese scientists encountered a giant panda Ailuropoda melanoleuca, covered with feces (photo). Scientists installed cameras in the habitat of..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

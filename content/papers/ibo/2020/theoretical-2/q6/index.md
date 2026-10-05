@@ -1,5 +1,6 @@
 ---
 title: "Q6 - Identifying Cytoskeleton Types from Function and Morphology"
+description: "Animal cells generally have three types of cytoskeletons: (1) microtubules, (2) actin filaments, and (3) intermediate filaments. Figure 1 shows the..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

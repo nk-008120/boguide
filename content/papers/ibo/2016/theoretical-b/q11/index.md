@@ -1,5 +1,6 @@
 ---
 title: "Q61 - Cadmium's Effect on Maize Root Elongation and Endodermal Suberization"
+description: "To study the effects of cadmium (Cd) on root development, two experiments on maize seedlings with 6-cm-long root were conducted. First, seedlings were..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

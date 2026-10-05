@@ -1,5 +1,6 @@
 ---
 title: "Q44 - Bee Thermoregulation and Body-Size Scaling"
+description: "Bees can redirect excess heat from the thorax to the abdomen, thus maintaining heat homeostasis. Figure 1A shows body temperature differences due to..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

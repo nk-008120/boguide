@@ -1,5 +1,6 @@
 ---
 title: "Q20 - Four Congenital Heart Defects and Their Hemodynamic Consequences"
+description: "Figure Q.20 shows the models of four types of common human congenital heart defects."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

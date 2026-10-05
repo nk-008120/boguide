@@ -1,5 +1,6 @@
 ---
 title: "Q36 - CONSTANS, Photoperiod, and Seed Mass"
+description: "Researchers studied the effect of photoperiod and CONSTANS (CO) protein, a critical mediator of photoperiodic cues, on seed mass and size."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

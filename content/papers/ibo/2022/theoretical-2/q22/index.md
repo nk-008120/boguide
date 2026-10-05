@@ -1,5 +1,6 @@
 ---
 title: "Q72 - Mechanisms of Synaptic Specificity"
+description: "Neurons interact with each other to form the complex circuits that underlie brain function. This process is conventionally divided into three steps: (1)..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

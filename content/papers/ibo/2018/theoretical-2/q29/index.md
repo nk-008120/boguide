@@ -1,5 +1,6 @@
 ---
 title: "Q29 - Diagnostic Traits of Four Animal Phyla"
+description: "You are given four figures referring to typical representatives of four major phyla of animals."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

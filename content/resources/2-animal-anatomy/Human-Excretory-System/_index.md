@@ -234,3 +234,5 @@ The nephron's filtration-then-reabsorption logic has a structurally simpler inve
 3. A structure in the nephron has cuboidal epithelium with a dense brush border and high mitochondrial density. Identify it and explain what these two structural features indicate about its function.
 4. Describe the two-capillary-bed path of blood flow through the kidney and explain why this arrangement (rather than a single capillary bed) is structurally necessary.
 5. Distinguish the internal and external urethral sphincters by muscle type and voluntary/involuntary control.
+
+{{< related-questions >}}

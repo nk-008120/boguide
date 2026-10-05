@@ -1,5 +1,6 @@
 ---
 title: "Q24 - Transcription Factor Activation Pathway"
+description: "Gene Regulation: Eukaryotic & Epigenetics: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

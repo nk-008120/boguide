@@ -1,5 +1,6 @@
 ---
 title: "Q41 - Angelman Syndrome - Genomic Imprinting Pedigree"
+description: "Angelman Syndrome (AS) is caused by a mutation of the ube3a gene. Affected individuals display delayed development, impaired cognitive abilities, and..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

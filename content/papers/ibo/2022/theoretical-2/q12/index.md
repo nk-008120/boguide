@@ -1,5 +1,6 @@
 ---
 title: "Q62 - Pine Needle Cross-Section - Resin Duct and Mesophyll"
+description: "The figure depicts a cross-section of a plant organ. Observe the figure and choose whether the following statements are true or false."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

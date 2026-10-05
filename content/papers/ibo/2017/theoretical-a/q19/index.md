@@ -1,5 +1,6 @@
 ---
 title: "Q19 - Grafting Reveals Where RMS1 Signalling Originates"
+description: "The RMS1 gene encodes a signalling protein which is altered in modern crops. Its activity can be studied by grafting together seedlings from different..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

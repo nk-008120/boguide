@@ -1,5 +1,6 @@
 ---
 title: "Q40 - Sensory Drive Speciation in Lake Victoria Cichlids"
+description: "Pundamilia pundalilia and P. nyererei are a closely related sister species pair of cichlids in Lake Victoria. These two species are distinct in male..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q50 - Countercurrent System and Nephron Function"
+description: "The countercurrent system is a common biological pattern, classified into countercurrent multipliers and exchangers. In vertebrates, these systems often..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

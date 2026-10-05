@@ -1,5 +1,6 @@
 ---
 title: "Q30 - Odour Receptors and Neuron Identity in C. elegans"
+description: "The worm C. elegans shows sophisticated behaviour in response to odour. It has 11 pairs of chemosensory neurons. Odours are detected by G protein-coupled..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

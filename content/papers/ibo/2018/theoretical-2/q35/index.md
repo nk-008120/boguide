@@ -1,5 +1,6 @@
 ---
 title: "Q35 - Identifying Unknown Plants from Vascular Tissue Traits"
+description: "In a scientific excursion the students found four plant specimens that they had never seen before. They studied the plant organs carefully and made a few..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

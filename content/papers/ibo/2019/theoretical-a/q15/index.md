@@ -1,5 +1,6 @@
 ---
 title: "Q15 - Classifying Hypersensitivity Reactions"
+description: "There are four different types of hypersensitivity reactions in the human body, as can be seen in the list below."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

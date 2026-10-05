@@ -1,5 +1,6 @@
 ---
 title: "Q21 - Gut Anatomy Tracks Diet Across Apes, Dogs, and Pandas"
+description: "Dame Jane Goodall (1934-present) discovered that great apes (Hominidae) use tools, to access more nutritious food, and hunt for meat. Bears (Ursidae)..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

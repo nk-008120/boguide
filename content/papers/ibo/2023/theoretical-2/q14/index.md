@@ -1,5 +1,6 @@
 ---
 title: "Q14 - Submarine Atmosphere and Oxygen"
+description: "Lung surface area and the speed of oxygen delivery to blood are very rarely the limiting factors for oxygen delivery in a healthy person. Blood usually..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

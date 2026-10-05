@@ -1,5 +1,6 @@
 ---
 title: "Q2 - Contamination and Degradation in Ancient DNA"
+description: "Mark Thomas (1964-present) read the first DNA sequences from woolly mammoths (Mammuthus primigenius). However, ancient DNA analysis remains difficult, due..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

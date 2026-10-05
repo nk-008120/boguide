@@ -1,5 +1,6 @@
 ---
 title: "Q33 - Complementation and Dominance in lac Operon Merodiploids"
+description: "Mr. Long had ten strains of Escherichia coli with different mutations in their lac operon. Analyzing their DNA, he found that each strain is one of five..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

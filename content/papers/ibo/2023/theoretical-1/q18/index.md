@@ -1,5 +1,6 @@
 ---
 title: "Q18 - Ecosystem Tipping Points and Vegetation-Livestock Dynamics"
+description: "Ecosystems rarely remain in a steady state but fluctuate owing to various disturbances, including human activity."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

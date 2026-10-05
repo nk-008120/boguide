@@ -1,5 +1,6 @@
 ---
 title: "Q10 - Magnetotactic Bacteria Navigation"
+description: "Magnetotactic bacteria have magnetosomes (magnetite crystals with a lipid membrane) arranged in a line, helping them find water with suitable oxygen..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

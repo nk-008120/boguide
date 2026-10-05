@@ -1,5 +1,6 @@
 ---
 title: "Q11 - Pedigree Analysis of Three Heritable Traits: Alfa, Baker and Charlie"
+description: "For the three heritable features, Alfa, Baker, and Charlie, pedigree analysis was performed on pedigree A, pedigree B, and pedigree C, respectively, and..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

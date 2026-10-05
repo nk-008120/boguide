@@ -1,5 +1,6 @@
 ---
 title: "Q9 - Organ-on-a-Chip - Lung-on-a-Chip & Pulmonary Oedema Model"
+description: "Tissue engineering is trying to develop miniature blocks of tissue from multiple cell types using an approach called 'organ-on-a-chip'. This technology..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

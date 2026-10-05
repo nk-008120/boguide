@@ -1,5 +1,6 @@
 ---
 title: "Q55 - Extrafloral Nectaries and Herbivory Defense"
+description: "Extrafloral nectaries (EFNs) are nectar-secreting glands located outside of flowers. They attract ants and other predatory insects that defend the plant..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

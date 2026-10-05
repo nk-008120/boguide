@@ -1,5 +1,6 @@
 ---
 title: "Q14 - Two-Step Enzymatic Release of Para-nitrophenol"
+description: "The enzymatic reaction below includes two steps. para-nitrophenyl-peptide -> para-nitrophenol + peptide Para-nitrophenol has maximum absorbance at..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

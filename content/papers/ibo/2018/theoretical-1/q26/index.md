@@ -1,5 +1,6 @@
 ---
 title: "Q26 - Comparative Flight Muscle Anatomy of Birds and Bats"
+description: "The figures 1-4 illustrate the schematic cross-sectional anatomy of bones and flying muscles of a bird and a bat."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

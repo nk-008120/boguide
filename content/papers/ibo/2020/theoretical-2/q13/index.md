@@ -1,5 +1,6 @@
 ---
 title: "Q13 - Bombay Phenotype and the Probability of Blood Type B in a Second Child"
+description: "Lisa is the daughter of Carl with ABO blood-type B and Jane with AB type. Lisa's blood type is O. Normally, there is no parent-child relationship between..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

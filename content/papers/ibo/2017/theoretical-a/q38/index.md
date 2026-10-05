@@ -1,5 +1,6 @@
 ---
 title: "Q38 - Myxomatosis, Introduced Parakeets, and a Native Falcon in Britain"
+description: "The world's longest conservation efforts have restored the populations of many native British species, but several aliens are also thriving. (1) Rabbits..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

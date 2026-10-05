@@ -1,5 +1,6 @@
 ---
 title: "Q19 - cAMP Signaling and Caffeine"
+description: "Some of the numerous physiological effects of caffeine consumption are based on the similarity of its structure to adenosine."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q30 - Photoperiod, Growth Rate and the Timing of Red Leaf Formation in Amaranth"
+description: "Early splendor, a cultivar of ornamental amaranth (Amaranthus tricolor), begins to form red leaves in late summer to early autumn, after producing fully..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

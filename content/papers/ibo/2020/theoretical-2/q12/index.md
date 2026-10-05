@@ -1,5 +1,6 @@
 ---
 title: "Q12 - Determining Metabolic Pathway and ATP Yield from Gas Exchange in Yeast"
+description: "Yeast can metabolize glucose using aerobic respiration (C6H12O6 + 6O2 -> 6CO2 + 6H2O, 32 ATP) and alcohol fermentation (C6H12O6 -> 2C2H5OH + 2CO2, 2 ATP)..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

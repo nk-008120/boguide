@@ -109,3 +109,5 @@ All sons will have normal vision (they receive their only X from their mother, w
 **2.** A poultry breeder notices that a feathering pattern appears in both male and female birds when homozygous recessive, but the same genotype produces different plumage depending on sex. Is this trait more likely sex-linked, sex-limited, or sex-influenced? Justify your answer using the transmission pattern you would test for.
 
 **3.** In *Drosophila*, a cross between a red-eyed female and a white-eyed male (white eye is X-linked recessive) produces all red-eyed offspring in the F1. The reciprocal cross (white-eyed female × red-eyed male) produces red-eyed daughters but white-eyed sons in the F1. Explain this discrepancy using X-linked inheritance.
+
+{{< related-questions >}}

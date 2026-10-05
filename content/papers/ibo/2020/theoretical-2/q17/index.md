@@ -1,5 +1,6 @@
 ---
 title: "Q17 - Ranking Organism Genome Sizes from a Photo Panel"
+description: "With the progress of genome research, the genomes of many organisms have been analyzed, and it has been revealed that the genomes of organisms vary widely..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

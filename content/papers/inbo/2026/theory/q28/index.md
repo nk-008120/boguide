@@ -1,5 +1,6 @@
 ---
 title: "Q28 - Gaucher Disease GCase Mutation Analysis"
+description: "Protein Structure, Folding & Function: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

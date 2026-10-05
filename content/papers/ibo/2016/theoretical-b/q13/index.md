@@ -1,5 +1,6 @@
 ---
 title: "Q63 - GPI-Anchoring Deficiency and Growth Phenotypes in an Arabidopsis atgpi8 Mutant"
+description: "A protein can be integrated into a membrane through a polypeptide sequence or via a lipid anchor. The attachment of eukaryotic proteins to the outer..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q41 - Gut Microbiota Across the Colorectal Cancer Progression"
+description: "According to the evolutionary concepts, symbiosis is a general characteristic of living organisms and can help to understand complex features and..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

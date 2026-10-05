@@ -104,3 +104,5 @@ Milk **ejection** (as opposed to production) is a separate, faster reflex, and, 
 3. Explain why progesterone is described as inhibiting lactation during pregnancy despite prolactin levels being elevated at the same time.
 4. Distinguish the roles of oxytocin and prolactin in lactation, one sentence each.
 5. Classify the milk-ejection reflex as negative or positive feedback, and identify the specific event that ends one cycle of the loop.
+
+{{< related-questions >}}

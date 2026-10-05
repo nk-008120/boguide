@@ -1,5 +1,6 @@
 ---
 title: "Q23 - Phlorizin, SGLT2 Inhibition, and Diabetic Mouse Kidney Physiology"
+description: "A group of researchers conducted an experiment to study the effects of phlorizin on some physiological indices in blood and urine of normal mice and..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

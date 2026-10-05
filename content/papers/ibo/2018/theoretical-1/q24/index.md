@@ -1,5 +1,6 @@
 ---
 title: "Q24 - Phylogenetic Position of Symsagittifera"
+description: "Uljanin in 1870, discovered a group of marine, soft-bodied, unsegmented hermaphroditic worms without hindgut and coelom. The mouth in these worms opens to..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

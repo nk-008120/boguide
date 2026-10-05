@@ -1,5 +1,6 @@
 ---
 title: "Q3 - Ethanol as a Competitive Inhibitor of Alcohol Dehydrogenase Acting on Methanol"
+description: "Alcohol dehydrogenase is known to convert ethanol to acetaldehyde, which is eventually metabolized to CO2 and H2O in humans and many other organisms. The..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

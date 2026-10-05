@@ -97,3 +97,5 @@ Ancient DNA sequencing (extracting and sequencing DNA directly from Neanderthal 
 3. A researcher finds that mtDNA diversity is highest in African populations and progressively lower in populations sampled at increasing distance from Africa. Explain how this pattern is consistent with a series of founder events during a single dispersal out of Africa.
 4. Explain why the discovery that ~1–2% of non-African genomes derive from Neanderthals was considered a significant revision to the original Out-of-Africa model, rather than simply an incidental additional detail.
 5. Using the hominin cranial capacity data in the comparative table, explain why researchers use encephalization quotient rather than raw cranial capacity when comparing brain-size evolution across taxa with different body sizes.
+
+{{< related-questions >}}

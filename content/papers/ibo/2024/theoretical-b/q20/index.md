@@ -1,5 +1,6 @@
 ---
 title: "Q20 - Female Body Mass, Male Fighting, and Mating Outcomes in Crickets"
+description: "Mating and male-to-male fighting in Gryllus bimaculatus are influenced by mating cost, sperm depletion, and female quality. Scientists studied the impact..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

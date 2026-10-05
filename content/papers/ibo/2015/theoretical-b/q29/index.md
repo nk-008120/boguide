@@ -1,5 +1,6 @@
 ---
 title: "Q29 - How a Burrowing Polychaete Alters Sediment Nitrogen Cycling"
+description: "The polychaete Nereis virens lives in the bottom sediment of shallow coastal waters. It digs tunnels in the sediment and pumps water through these..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

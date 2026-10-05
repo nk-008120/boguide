@@ -291,3 +291,5 @@ The amniotic-egg-derived **placenta** (see [Mammalian Comparative Anatomy](../ma
 3. Explain why the blood-testis barrier is necessary, referencing the immune system and the timing of meiosis relative to puberty.
 4. Trace the path of an oocyte from ovulation to the point of fertilization, naming every structure it passes through.
 5. Explain, in terms of the HPG axis, why inhibin secretion by Sertoli cells specifically suppresses FSH rather than LH.
+
+{{< related-questions >}}

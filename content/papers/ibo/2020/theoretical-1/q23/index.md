@@ -1,5 +1,6 @@
 ---
 title: "Q23 - GABA-Induced Chloride Currents and Depolarization in a Hypothalamic Neuron"
+description: "A researcher recorded neurotransmitter responses from a neurosecretory neuron in the hypothalamus. Gamma- aminobutyric acid (GABA) is well-known as the..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

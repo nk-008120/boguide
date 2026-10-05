@@ -1,5 +1,6 @@
 ---
 title: "Q60 - pH-Dependent Membrane Diffusion of Aspirin and Arginine"
+description: "Polarity, charge and molecular weight of molecules can affect their rate of passive diffusion through membranes. Amino acids and drugs like aspirin differ..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

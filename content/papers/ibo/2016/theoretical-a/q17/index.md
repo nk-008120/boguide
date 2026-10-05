@@ -1,5 +1,6 @@
 ---
 title: "Q17 - ABA and Ethephon Effects on Sweet Cherry Ripening"
+description: "To study the effect of phytohormones on fruit maturation, researchers used abscisic acid (ABA) and ethephon to treat sweet cherry fruits and afterward..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

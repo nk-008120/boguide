@@ -1,5 +1,6 @@
 ---
 title: "Q9 - Camel Fat Metabolism and Water Economy"
+description: "Camels are well adapted to desert life. Their hump consists mainly of fat, especially tripalmitin (C₅₁H₉₈O₆). A dehydrated camel's body temperature may..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

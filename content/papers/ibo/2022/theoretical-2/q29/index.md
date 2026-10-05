@@ -1,5 +1,6 @@
 ---
 title: "Q79 - Primary vs Secondary Antibody Response"
+description: "It is known that the humoral immune system responds to antigens entering an organism by producing antibodies. The diagram shows the immune response..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

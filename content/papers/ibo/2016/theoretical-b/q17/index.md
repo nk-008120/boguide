@@ -1,5 +1,6 @@
 ---
 title: "Q67 - Gibberellin Signaling and Root/Shoot Allocation in Transgenic Poplar"
+description: "Scientists constructed gibberellic acid (GA)-deficient and GA-insensitive transgenic lines of poplar plants. They measured concentration of phytohormones..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

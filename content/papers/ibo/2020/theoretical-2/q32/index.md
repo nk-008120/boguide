@@ -1,5 +1,6 @@
 ---
 title: "Q32 - Turgor Pressure and Tissue Layer Mechanics in Explosive Seed Dispersal"
+description: "In some plants, fruit valves bend and/or coil explosively to disperse seeds. While dehydration typically triggers this in many species, fruit valves of..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

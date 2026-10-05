@@ -1,5 +1,6 @@
 ---
 title: "Q20 - Matching Muscle Energy Systems to Exercise Duration and Intensity"
+description: "Table 1 lists types of metabolic substrate and its concentration as an energy source in human muscle cells. The predicted values of output power produced..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

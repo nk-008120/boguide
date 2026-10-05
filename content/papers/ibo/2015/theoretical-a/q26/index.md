@@ -1,5 +1,6 @@
 ---
 title: "Q26 - Indirect Effects of Introduced Arctic Foxes on Island Vegetation"
+description: "The Aleutians Islands west of Alaska are rich in sea birds. The Arctic Fox was not originally present here, but was introduced as a fur game- animal and..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

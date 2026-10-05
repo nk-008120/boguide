@@ -1,5 +1,6 @@
 ---
 title: "Q2 - Strigiformes (Owls) Phylogenetic Identification"
+description: "You are given five species of birds from the Strigiformes order (Owls), commonly found in Kazakhstan (Figure 1A). However, the genera to which these..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

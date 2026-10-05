@@ -1,5 +1,6 @@
 ---
 title: "Q18 - The ABC Gene Model of Monocot Flower Development"
+description: "Botanists may identify plants to family using diagrams, showing the different floral parts (Fig. A). According to the ABC gene model, development of a..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

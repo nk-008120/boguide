@@ -1,5 +1,6 @@
 ---
 title: "Q23 - Rhizobium Nodulation and Gene Structure in Lotus japonicus"
+description: "The effect of the nodule bacterium Rhizobium on the growth of the legume Lotus japonicus has often been studied, e.g. in relation to the enzyme/gene..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

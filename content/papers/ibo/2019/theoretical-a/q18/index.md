@@ -1,5 +1,6 @@
 ---
 title: "Q18 - The Thyroid Axis in Five Clinical Scenarios"
+description: "Thyroid hormones (T3 and T4) regulate metabolism. Their release is controlled as shown in the figure. T4 can be metabolised to T3 in tissues."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

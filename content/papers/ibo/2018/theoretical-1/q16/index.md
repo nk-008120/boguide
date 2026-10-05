@@ -1,5 +1,6 @@
 ---
 title: "Q16 - Spinal Cord Injury and Sensory Pathways"
+description: "In figure a, the pain and temperature sensory pathway is depicted. The first-order neuron enters the spinal cord and forms a synapse with the second-order..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

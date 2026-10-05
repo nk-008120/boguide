@@ -1,5 +1,6 @@
 ---
 title: "Q25 - Mitochondrial RNase P Mutations and COXPD54"
+description: "Mitochondrial RNase P is an endonuclease composed of three subunits (Figure 1B). Mutations in this enzyme are often associated with the development of..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

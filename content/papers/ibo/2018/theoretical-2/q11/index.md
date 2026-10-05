@@ -1,5 +1,6 @@
 ---
 title: "Q11 - Thiamine Pyrophosphate Enzyme Kinetics in Disease"
+description: "Many disease causing mutations in enzyme coding genes affect parameters related to interactions of the enzymes with their coenzyme, which in turn lowers..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

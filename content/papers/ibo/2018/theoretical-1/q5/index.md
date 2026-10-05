@@ -1,5 +1,6 @@
 ---
 title: "Q5 - Fluorescence Quenching of Tryptophan Residues"
+description: "Enzyme activity usually correlates with its conformational flexibility, such that higher flexibility (lower rigidity) is usually accompanied with higher..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

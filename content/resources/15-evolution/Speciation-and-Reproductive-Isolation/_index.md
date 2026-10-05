@@ -92,3 +92,5 @@ If hybrids are not strongly disfavored, however, the two populations may instead
 3. A plant population produces a polyploid individual capable of self-fertilizing but incompatible with the surrounding diploid population. Explain why this could establish a new species within a single generation, and name the speciation mode.
 4. Two bird species' songs are much more distinct from each other where their ranges overlap than where either species occurs alone. Name this pattern and explain the selective logic behind it.
 5. A hybrid zone between two closely related salamander species has persisted, apparently stably, for many generations. Propose what this suggests about hybrid fitness relative to either parental population in that zone.
+
+{{< related-questions >}}

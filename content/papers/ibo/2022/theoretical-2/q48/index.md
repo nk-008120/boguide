@@ -1,5 +1,6 @@
 ---
 title: "Q98 - Grape Domestication and Phylogeography from SNP Data"
+description: "The evolution of grape species is closely connected to the historical and cultural development of humans. Archaeological research shows that the..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

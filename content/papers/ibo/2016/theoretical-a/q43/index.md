@@ -1,5 +1,6 @@
 ---
 title: "Q43 - Non-Lethal Predation Effects on Dragonfly Larval Survival and Metamorphosis"
+description: "A population of dragonfly larvae (Leucorrhinia intacta) is separated into two groups. In both groups, larvae populations are put inside a cage with no..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

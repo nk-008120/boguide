@@ -1,5 +1,6 @@
 ---
 title: "Q18 - Reading a Pressure-Volume Loop of the Cardiac Cycle"
+description: "A 55-year-old man has a resting cardiac output of 7000 mL/minute. His arterial pressure is 125/85 mmHg. His heart rate is 100 beats/min and his body..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

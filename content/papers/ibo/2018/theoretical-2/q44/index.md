@@ -1,5 +1,6 @@
 ---
 title: "Q44 - Haldane's Estimate of the Human Mutation Rate"
+description: "The lack of advanced molecular biology methods, such as DNA sequencing or site-directed mutagenesis, did not stop the pioneers of evolution from asking..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

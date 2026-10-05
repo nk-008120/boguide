@@ -1,5 +1,6 @@
 ---
 title: "Q15 - Plant Life Cycle - Heterospory and Gametophyte Forms"
+description: "Plant Body Plans Across Major Lineages: an IBO 2022 Theoretical 1 practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

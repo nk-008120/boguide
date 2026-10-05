@@ -1,5 +1,6 @@
 ---
 title: "Q43 - Giraffe FGFRL1 - Cardiovascular and Skeletal Adaptations"
+description: "Giraffes (Giraffa sp.) have the longest necks of any mammal, up to 2 m long; the heart must maintain blood pressure 2.5× higher than humans for oxygen to..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

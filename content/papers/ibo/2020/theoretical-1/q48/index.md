@@ -1,5 +1,6 @@
 ---
 title: "Q48 - Tracking Insecticide Resistance Allele Frequency Over Time in Mosquitoes"
+description: "Mosquitos are vectors for transmitting human diseases, and the application of insecticides to water bodies is occasionally conducted to control mosquito..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

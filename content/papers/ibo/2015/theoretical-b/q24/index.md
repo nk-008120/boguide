@@ -1,5 +1,6 @@
 ---
 title: "Q24 - Testing the Janzen–Connell Hypothesis with Pesticide Exclusion"
+description: "Tropical forest plant communities are very diverse. The Janzen–Connell hypothesis argues that insect herbivores and pathogens are positive drivers of this..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

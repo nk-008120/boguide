@@ -1,5 +1,6 @@
 ---
 title: "Q45 - Predator-Specific Effects on Guppy Color-Pattern Evolution"
+description: "Male guppies (Poecilia reticulata) show a complex color pattern polymorphism that varies with predation pressure, reflecting a balance between selection..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

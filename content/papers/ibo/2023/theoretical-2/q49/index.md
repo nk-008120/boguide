@@ -1,5 +1,6 @@
 ---
 title: "Q49 - Lacandonia Flower ABC Model"
+description: "Lacandonia schismatica is a rare Mexican plant with an unusual flower morphology. In most flowering plants, the ABC model of floral development predicts..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

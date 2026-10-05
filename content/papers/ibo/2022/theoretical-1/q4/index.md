@@ -1,5 +1,6 @@
 ---
 title: "Q4 - Enzyme Inhibition - Substrate Concentration vs Rate Curves"
+description: "The following curves show the effect of substrate concentration on the rate of an enzymatic reaction: Section 1/2 trace the reaction with no inhibitor..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

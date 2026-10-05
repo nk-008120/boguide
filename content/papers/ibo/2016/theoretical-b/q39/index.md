@@ -1,5 +1,6 @@
 ---
 title: "Q89 - Functional Consequences of mRNA Circularization"
+description: "mRNAs in the cytoplasm of eukaryote cells frequently form closed loops by circularization. Indicate in the answer sheet if each of the following..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q15 - Amino Acid Carbon Labelling Through the Krebs Cycle"
+description: "Amino acids resulting from the degradation of proteins can be further metabolized by conversion to intermediates of the citric acid cycle. The following..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

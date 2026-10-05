@@ -1,5 +1,6 @@
 ---
 title: "Q43 - Self-Templating Misfolding Drives Prion Disease Dynamics"
+description: "John Griffith (1928-1972) explained the biology of prion diseases. Prions are proteins which have folded incorrectly into a more stable form. When a prion..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

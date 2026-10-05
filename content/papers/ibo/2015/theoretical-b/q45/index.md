@@ -1,5 +1,6 @@
 ---
 title: "Q45 - Light and Depth Effects on Photosynthesis in a CAM Aquatic Plant"
+description: "The relationship between light intensity and net photosynthesis rate (NPR) was measured in the submerged plant Crassula helmsii in a lake. The plant has..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

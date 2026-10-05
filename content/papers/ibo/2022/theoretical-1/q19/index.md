@@ -1,5 +1,6 @@
 ---
 title: "Q19 - Plant Life Cycles - Water-Dependent Fertilization"
+description: "The following figures demonstrate the life cycles of some plants (Species I–IV)."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

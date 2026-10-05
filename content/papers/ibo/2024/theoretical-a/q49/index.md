@@ -1,5 +1,6 @@
 ---
 title: "Q49 - Esophageal Doppler Monitoring"
+description: "Esophageal Doppler Monitoring (EDM) is a minimally invasive method to measure blood flow in the aorta and assess cardiac output. A Doppler probe is..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q85 - Complementation Analysis of Three White-Flowered Mutant Lines"
+description: "A plant is normally red-flowered. Plant breeders obtained three genetically different pure mutated lines of white-flowered plants (designated as a, b and..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

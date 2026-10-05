@@ -1,5 +1,6 @@
 ---
 title: "Q8 - Identifying DNA-Metabolism Enzymes from a Gel Assay"
+description: "An in vitro experiment with enzymes involved in DNA metabolism was performed using the double-stranded DNA substrate shown in Figure 1. The upper strand..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

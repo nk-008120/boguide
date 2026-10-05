@@ -1,5 +1,6 @@
 ---
 title: "Q48 - Sockeye Salmon - Life Stages and Chukchi Population Age Structure"
+description: "Sockeye salmon (Oncorhynchus nerka) spends its initial life stage in rivers, then migrates to the ocean (more favorable feeding conditions), before..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -126,3 +126,5 @@ Four consequence categories are commonly tested and commonly confused, since "po
 3. A pigeon's key-pecking rate stays high and steady for a long period even after food delivery stops entirely. What reinforcement schedule most likely produced this pattern, and why?
 4. Explain, using the *Aplysia* gill-withdrawal reflex, how the same neural circuit can show either habituation or sensitization depending on what stimulus preceded the test touch.
 5. A dolphin combines two previously trained individual behaviors into a novel behavior on its first attempt at a new task, with no apparent trial and error. Which learning type best describes this, and how would you distinguish it experimentally from operant conditioning that simply happened very quickly?
+
+{{< related-questions >}}

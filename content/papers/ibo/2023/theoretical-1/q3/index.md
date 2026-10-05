@@ -1,5 +1,6 @@
 ---
 title: "Q3 - Flow Cytometry of Mouse Blood"
+description: "Flow cytometry is a method for analyzing multiple cells in suspension. Cells pass through a microfluidic system, where they are irradiated by lasers...."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

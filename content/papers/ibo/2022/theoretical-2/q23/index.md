@@ -1,5 +1,6 @@
 ---
 title: "Q73 - PD-1 Immune Checkpoint Signaling"
+description: "Immune checkpoint molecules regulate the immune system and prevent excessive immune response. The programmed death molecule 1 or PD-1 is expressed on the..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

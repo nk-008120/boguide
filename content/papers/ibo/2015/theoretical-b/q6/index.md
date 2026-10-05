@@ -1,5 +1,6 @@
 ---
 title: "Q6 - Reading Cardiac Cycle Information from an ECG"
+description: "An important function of an electrocardiogram (ECG) is to give information about the general health of a person. The ECG of two students was compared..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

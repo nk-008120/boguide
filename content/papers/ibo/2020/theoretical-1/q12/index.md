@@ -1,5 +1,6 @@
 ---
 title: "Q12 - Regulation of the rut Operon by the RutR Repressor and Uracil"
+description: "In Escherichia coli. the rutA - G gene cluster activates when pyrimidine is decomposed and used as a nitrogen source. The rutA - G genes constitute a..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

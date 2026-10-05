@@ -103,3 +103,5 @@ DNA methylation is an epigenetic mark, layered on top of (not encoded within) th
 **2.** A researcher treats cultured cells with an HDAC inhibitor. Predict the general effect on global gene expression patterns, and explain the mechanism connecting the drug's molecular target to this outcome.
 
 **3.** Explain why combinatorial transcription factor control, rather than one dedicated transcription factor per gene, is a more efficient strategy for specifying the very large number of distinct cell types found in a complex multicellular eukaryote.
+
+{{< related-questions >}}

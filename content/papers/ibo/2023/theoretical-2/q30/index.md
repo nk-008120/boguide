@@ -1,5 +1,6 @@
 ---
 title: "Q30 - Parasite-Mediated Competition in Squirrels"
+description: "Parasite-mediated competition occurs in host species that live sympatrically (in the same place) and are differentially affected by parasite infections...."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

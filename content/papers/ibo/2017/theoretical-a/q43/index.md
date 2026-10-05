@@ -1,5 +1,6 @@
 ---
 title: "Q43 - A Global Haplotype Network Traces Human and Denisovan Ancestry"
+description: "A haplotype network shows the evolutionary relatedness of haplotypes, and the proportion of individuals from a specific population with each haplotype...."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

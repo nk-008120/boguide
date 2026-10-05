@@ -1,5 +1,6 @@
 ---
 title: "Q45 - Artificial Selection Reveals Genetic Variation in Eyespot Traits"
+description: "To investigate the evolution of butterfly eyespots, their mean size and colour was measured in each generation. Butterflies were split into 4 groups based..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

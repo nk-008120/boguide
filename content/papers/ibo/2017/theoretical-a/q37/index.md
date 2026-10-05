@@ -1,5 +1,6 @@
 ---
 title: "Q37 - Windfarm Construction Disrupts Bird Populations More Than Operation"
+description: "The UK is extending the world’s largest offshore windfarm in the North Sea. However, disruption to wind patterns, and other effects, causes difficulties..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

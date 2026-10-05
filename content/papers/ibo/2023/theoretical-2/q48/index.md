@@ -1,5 +1,6 @@
 ---
 title: "Q48 - Vascular Smooth Muscle and Atherosclerosis"
+description: "The national plant of UAE, Tribulus omanense, is a desert plant containing various secondary metabolites, including flavonoids, saponins and alkaloids...."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

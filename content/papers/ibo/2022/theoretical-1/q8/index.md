@@ -1,5 +1,6 @@
 ---
 title: "Q8 - Ethidium Bromide - DNA Binding and Intercalation"
+description: "Ethidium bromide is a fluorescent dye which can intercalate into double-stranded DNA (Figure 1), resulting in a sharp increase in the fluorescence..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

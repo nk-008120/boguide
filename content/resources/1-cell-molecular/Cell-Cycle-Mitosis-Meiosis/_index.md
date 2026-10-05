@@ -104,3 +104,5 @@ Anaphase can proceed even with improperly or unattached kinetochores, risking un
 **2.** A student states "meiosis I separates sister chromatids, and meiosis II separates homologous chromosomes." Correct this statement, and explain the consequence of this mix-up for predicting genetic outcomes.
 
 **3.** Explain, mechanistically, why plant cells cannot use an actin-myosin contractile ring for cytokinesis the way animal cells do, and describe the structural alternative plant cells use instead.
+
+{{< related-questions >}}

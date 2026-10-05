@@ -205,3 +205,5 @@ Beyond constitutive deterrents like tannins, many species mount **induced** anti
 3. Explain why the hypersensitive response would be an ineffective strategy against a necrotrophic pathogen (one that feeds on and benefits from dead tissue), even though it works well against biotrophic pathogens.
 4. A plant with an experimentally infected leaf shows heightened pathogen resistance in leaves on the opposite side of the plant that were never directly infected. Explain the mechanism responsible.
 5. Explain why maintaining tannins constitutively but reserving jasmonic-acid-induced defenses for actual herbivore attack represents an energetic trade-off, rather than the plant simply deploying its strongest defense at all times.
+
+{{< related-questions >}}

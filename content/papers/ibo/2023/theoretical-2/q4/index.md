@@ -1,5 +1,6 @@
 ---
 title: "Q4 - Whitefly Horizontal Gene Transfer"
+description: "The majority of plants serve as food for insects, despite their toxic secondary metabolites. Several plant pathogenic viruses are spread by whitefly..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

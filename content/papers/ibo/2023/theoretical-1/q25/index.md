@@ -1,5 +1,6 @@
 ---
 title: "Q25 - Nucleotide Diversity and Selective Sweeps"
+description: "The average pairwise difference between a pair of sequences in a population is called nucleotide diversity, which is a simple measure of the genetic..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

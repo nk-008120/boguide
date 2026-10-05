@@ -1,5 +1,6 @@
 ---
 title: "Q3 - K2P Genetic Divergence Across Regions"
+description: "Taxonomy has traditionally been based on morphology. DNA Barcoding is a new approach that aims to allow accurate and relatively simple species..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q31 - Grafting Reveals Barriers to Gene and Genome Transfer Between Species"
+description: "In nature, different plant species can graft together. An experiment was done where shoots from species A were grafted onto roots of species B. Plant..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

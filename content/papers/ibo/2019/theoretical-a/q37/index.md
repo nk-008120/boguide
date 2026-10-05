@@ -1,5 +1,6 @@
 ---
 title: "Q37 - Why Bats Collide With Smooth Surfaces"
+description: "Twenty-eight rare and protected species of bat live in Hungary. Bats sense their environments using echolocation, which is disrupted by different..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

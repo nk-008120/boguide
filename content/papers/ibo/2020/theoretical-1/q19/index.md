@@ -1,5 +1,6 @@
 ---
 title: "Q19 - Tissue Distribution of the Glucagon Receptor and Metabolic Roles"
+description: "Glucagon is secreted from pancreatic A-cells and works as a signal via receptors (GLR) on the cells of target tissues. The amount of GLR expressed on cell..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q17 - Cardiac Cycle and Amygdala Fear Response"
+description: "Perception of the emotional stimuli is a reciprocal process between the brain and the heart. In an experimental task, pictures depicting facial..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

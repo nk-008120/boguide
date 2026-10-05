@@ -1,5 +1,6 @@
 ---
 title: "Q6 - Ramachandran Plot and Peptide Bond Geometry"
+description: "The bonds between the central carbon atom and attached groups in peptides can rotate freely. The rotation angles of the N-Cα and Cα-C bonds are called φ..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

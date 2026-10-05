@@ -143,3 +143,5 @@ Every stoma is a compromise: opening it admits CO₂ for the Calvin cycle (see [
 3. A wilting plant's stomata remain closed even when moved into bright light. Identify the most likely hormonal cause and trace the signaling pathway responsible.
 4. Explain why a mutant guard cell lacking properly oriented radial cellulose microfibrils would fail to open normally even with functional ion channels.
 5. Using the concept of water-use efficiency, explain why CAM plants open their stomata at night rather than during the day.
+
+{{< related-questions >}}

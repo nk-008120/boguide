@@ -1,5 +1,6 @@
 ---
 title: "Q4 - Calcium Channel Signaling in Pancreatic Beta Cells"
+description: "A scientist in a lab is investigating two types of calcium channels in pancreatic beta cells. When Channel A opens, it allows an influx of calcium ions..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

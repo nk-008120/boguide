@@ -1,5 +1,6 @@
 ---
 title: "Q93 - Worker Sterility and Kin Selection in Social Insects"
+description: "In his book \"The Origin of Species\", Darwin recognized that the relationships between castes of social insects in the colony can present complications for..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

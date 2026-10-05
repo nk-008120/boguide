@@ -1,5 +1,6 @@
 ---
 title: "Q53 - Telomerase - Mechanism of Telomere Extension"
+description: "At the ends of chromosomal DNA molecules of eukaryotes, there are special nucleotide sequences called telomeres, which shorten during each division of the..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

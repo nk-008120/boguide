@@ -311,3 +311,5 @@ The four-chambered heart with fully separated left/right circuits is a mammalian
 3. A blood sample shows an elevated proportion of granulocytes with visible cytoplasmic granules and no nucleus lobation typical of neutrophils. Considering the five leukocyte types, what further structural feature would distinguish an eosinophil from a basophil under a microscope?
 4. Explain why capillary walls are only one cell layer thick while arteries have a thick muscular layer, in terms of each vessel type's function.
 5. Trace a molecule of excess interstitial fluid from a capillary bed back into the venous blood circulation, naming every lymphatic structure it passes through.
+
+{{< related-questions >}}

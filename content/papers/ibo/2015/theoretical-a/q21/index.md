@@ -1,5 +1,6 @@
 ---
 title: "Q21 - Cholera Toxin Signaling and a CFTR Inhibitor Treatment"
+description: "Cholera is caused by a toxin secreted by the bacterium Vibrio cholerae (Fig. A). One symptom is severe diarrhea, which leads to dehydration and perhaps..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

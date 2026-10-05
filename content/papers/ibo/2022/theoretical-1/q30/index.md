@@ -1,5 +1,6 @@
 ---
 title: "Q30 - Bone Marrow Conversion - Red vs. Yellow Marrow With Age"
+description: "The figure represents the distribution of bone marrow types X and Y in the lower limbs of humans (Homo sapiens) at different ages (in years)."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

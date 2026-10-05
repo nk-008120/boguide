@@ -1,5 +1,6 @@
 ---
 title: "Q51 - Phage-Display Screen for Protein Kinase Inhibitors"
+description: "A scientist prepared 3 essential components for high-throughput screens of protein kinase inhibitors. First, individual protein kinase genes are fused to..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

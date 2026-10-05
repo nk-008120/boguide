@@ -1,5 +1,6 @@
 ---
 title: "Q46 - Estimating Carrying Capacity from Population Growth Rate"
+description: "The following data were collected by a researcher over seven successive years from a population of a fish in a pond. He calculated population growth rate..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q2 - Ocean Acidification and Deep-Sea Chemosynthesis"
+description: "Oceans also sink more than 30% of anthropogenic carbon dioxide, which dissolves to form an acid that alters calcium carbonate solubility (1). Many marine..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

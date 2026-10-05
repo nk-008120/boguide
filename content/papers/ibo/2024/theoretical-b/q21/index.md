@@ -1,5 +1,6 @@
 ---
 title: "Q21 - Cannibalism Probability and Injury Bias in Japanese Mitten Crabs"
+description: "Japanese mitten crabs, Eriocheir japonica, can display cannibalistic behavior. The absence of other food resources can greatly facilitate cannibalism. As..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

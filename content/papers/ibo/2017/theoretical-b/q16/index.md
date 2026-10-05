@@ -1,5 +1,6 @@
 ---
 title: "Q16 - Antifreeze Proteins and Membrane Chemistry in Polar Fish"
+description: "The Royal Research Ship Sir David Attenborough and submarine Boaty McBoatface will explore British Antarctica. Life here exists below the freezing..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

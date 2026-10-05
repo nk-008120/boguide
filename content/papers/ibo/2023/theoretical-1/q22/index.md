@@ -1,5 +1,6 @@
 ---
 title: "Q22 - Mendel's Round and Wrinkled Peas: PCR Analysis"
+description: "Gregor Mendel described the inheritance of round and wrinkled pea seeds. He showed the round (R) phenotype was dominant over wrinkled (r)."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

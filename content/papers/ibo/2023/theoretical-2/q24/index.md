@@ -1,5 +1,6 @@
 ---
 title: "Q24 - C-STAR Blood Glucose Control"
+description: "C-STAR (caffeine-stimulated advanced regulators) is a system constructed in cells that contain a gene encoding a synthetic human glucagon-like peptide..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

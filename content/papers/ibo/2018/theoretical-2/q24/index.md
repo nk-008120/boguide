@@ -1,5 +1,6 @@
 ---
 title: "Q24 - HOX Genes, Retinoic Acid, and Neural Tube Patterning"
+description: "Neural tube in the vertebrate embryos, lies the anterior-posterior (AP) axis and creates a variety of structures. There is a large body of evidence..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

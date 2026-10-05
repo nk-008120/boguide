@@ -1,5 +1,6 @@
 ---
 title: "Q33 - Dormouse Litters - Growth Rate and Energy Intake"
+description: "The active period of the dormouse Eliomys quercinus is 6–7 months, during which the animals give birth to two litters. The gestation period is 1 month and..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

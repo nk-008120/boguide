@@ -1,5 +1,3 @@
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 {{- /* CSS-splitting rollout (Phase-3 audit): section-specific rules were
      extracted from custom.css into their own per-section files since each was
      a meaningful chunk of the global bundle (BiOClash ~18%, BiOLab ~15%, etc.)
@@ -38,8 +36,8 @@
 {{- if hasPrefix $path "/biology-olympiad-preparation/" -}}{{ $extraStyles = $extraStyles | append "css/prep-guide.css" }}{{- end -}}
 {{- if hasPrefix $path "/games/" -}}{{ $extraStyles = $extraStyles | append "css/games.css" }}{{- end -}}
 {{- if hasPrefix $path "/contribute-a-guide/" -}}{{ $extraStyles = $extraStyles | append "css/contribute.css" }}{{- end -}}
-{{- if hasPrefix $path "/biobytes/frontiers/" -}}{{ $extraStyles = $extraStyles | append "css/frontiers.css" | append "css/frontiers-motion.css" | append "css/frontiers-terms.css" }}{{- end -}}
-{{- if eq $path "/biobytes/" -}}{{ $extraStyles = $extraStyles | append "css/biobytes-frontiers.css" }}{{- end -}}
+{{- if hasPrefix $path "/biobytes/horizon/" -}}{{ $extraStyles = $extraStyles | append "css/horizon.css" | append "css/horizon-motion.css" | append "css/horizon-terms.css" }}{{- end -}}
+{{- if eq $path "/biobytes/" -}}{{ $extraStyles = $extraStyles | append "css/biobytes-horizon.css" }}{{- end -}}
 {{- range $extraStyles -}}
   {{- $css := resources.Get . -}}
   {{- if hugo.IsProduction -}}
@@ -56,13 +54,13 @@
 {{- if hasPrefix $path "/contribute-a-guide/" -}}
 <script src="{{ "js/contribute-guide.js" | relURL }}" defer></script>
 {{- end -}}
-{{- if hasPrefix $path "/biobytes/frontiers/" -}}
-<script src="{{ "js/frontiers-noise-lab.js" | relURL }}" defer></script>
-<script src="{{ "js/frontiers-delivery-lab.js" | relURL }}" defer></script>
-<script src="{{ "js/frontiers-toc.js" | relURL }}" defer></script>
-<script src="{{ "js/frontiers-transit.js" | relURL }}" defer></script>
-<script src="{{ "js/frontiers-mol.js" | relURL }}" defer></script>
-<script src="{{ "js/frontiers-terms.js" | relURL }}" defer></script>
+{{- if hasPrefix $path "/biobytes/horizon/" -}}
+<script src="{{ "js/horizon-noise-lab.js" | relURL }}" defer></script>
+<script src="{{ "js/horizon-delivery-lab.js" | relURL }}" defer></script>
+<script src="{{ "js/horizon-toc.js" | relURL }}" defer></script>
+<script src="{{ "js/horizon-transit.js" | relURL }}" defer></script>
+<script src="{{ "js/horizon-mol.js" | relURL }}" defer></script>
+<script src="{{ "js/horizon-terms.js" | relURL }}" defer></script>
 {{- end -}}
 {{- if hasPrefix $path "/resources/" -}}
 <script src="{{ "js/page-rating.js" | relURL }}" defer></script>
@@ -70,21 +68,16 @@
 {{- if hasPrefix $path "/games/" -}}
 <script src="{{ "js/bio-ludo.js" | relURL }}" defer></script>
 {{- end -}}
-<!-- Weight sets below are audited against actual usage in assets/css/custom.css
-     (see the Phase-3 performance pass): Cormorant Garamond gains 300 (used at
-     line ~2559 but was previously missing, silently font-matched); Fraunces
-     drops the unused 300 and gains 400/600 (most Fraunces headings set no
-     explicit weight -- CSS default 400 -- which also wasn't previously
-     loaded); Montserrat's requested set already matched actual usage exactly,
-     unchanged; Source Serif 4 keeps 600/700 despite no *static* CSS rule
-     requesting them, since it's applied to long-form body prose (e.g. the
-     BiOClash case-file body, line ~3622) where **bold** markdown can invoke
-     them dynamically -- but gains an italic axis, since testimonial
-     pull-quotes (line ~354) request italic and previously only got a
-     browser-synthesized oblique, not the real italic design. -->
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Montserrat:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet" />
+{{- $fontsCss := resources.Get "css/fonts.css" | minify -}}
+<link rel="preload" href="/fonts/montserrat-latin-a5ec5492.woff2" as="font" type="font/woff2" crossorigin>
+<style>{{ $fontsCss.Content | safeCSS }}</style>
+{{- if or (hasPrefix $path "/resources/") (hasPrefix $path "/biobytes/") (eq $path "/") -}}
+<link rel="preload" href="/fonts/cormorant-garamond-latin-74db058f.woff2" as="font" type="font/woff2" crossorigin>
+{{- end -}}
 {{- if or (hasPrefix $path "/papers/") (hasPrefix $path "/dashboard/") -}}
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+{{- $fontsPapersCss := resources.Get "css/fonts-papers.css" | minify -}}
+<link rel="preload" href="/fonts/space-grotesk-latin-c0781ea2.woff2" as="font" type="font/woff2" crossorigin>
+<style>{{ $fontsPapersCss.Content | safeCSS }}</style>
 {{- end -}}
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js" defer></script>
 <script>

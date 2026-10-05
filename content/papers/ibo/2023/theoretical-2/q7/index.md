@@ -1,5 +1,6 @@
 ---
 title: "Q7 - Elysia Kleptoplasty and Regeneration"
+description: "Elysia marginata is a marine gastropod. Its digestive tract is found in the usual place for gastropods. E. marginata performs kleptoplasty, the ability to..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

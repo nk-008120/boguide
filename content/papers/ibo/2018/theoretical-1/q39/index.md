@@ -1,5 +1,6 @@
 ---
 title: "Q39 - Synonymous vs Non-Synonymous Variation in Humans"
+description: "Bustamante et al. (2005) analysed the pattern of polymorphism in the human genome by sequencing over 11,624 genes from 39 humans. The table below shows..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

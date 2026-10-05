@@ -1,5 +1,6 @@
 ---
 title: "Q29 - Stomatal Aperture Responses to Humidity in Air versus Helox"
+description: "In order to prevent an excess water loss, stomata respond rapidly to changes in humidity. Transpiration rate per unit leaf area represents the speed of..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

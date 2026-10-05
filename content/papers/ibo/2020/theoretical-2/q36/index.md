@@ -1,5 +1,6 @@
 ---
 title: "Q36 - Estimating Deleterious Mutations Passed On by Fathers of Different Ages"
+description: "In a hypothetical organism, a male is known to transmit about 40 de novo mutations to his offspring when he mates with a female at the age of 20. In..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -182,3 +182,5 @@ Inserting proline mid-helix introduces a rigid kink and removes an amide hydroge
 **3.** Two proteins have identical Lys48-linked polyubiquitin chains but different fates: one is degraded within minutes, the other persists for hours despite similar chain length. Propose two non-ubiquitin-related explanations.
 
 **4.** Explain, in mechanistic terms, why CO poisoning causes tissue hypoxia even when overall Hb-bound oxygen content may not be far below normal.
+
+{{< related-questions >}}

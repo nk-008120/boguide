@@ -1,5 +1,6 @@
 ---
 title: "Q45 - Cross-Immunity and Persistence Explain Smallpox's Eradication over Cholera's"
+description: "Edward Jenner (1749-1823), the inventor of immunology, pioneered modern vaccination. Jenner noticed milkmaids exposed to cowpox did not catch smallpox...."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

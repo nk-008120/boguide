@@ -1,5 +1,6 @@
 ---
 title: "Q15 - Sea Turtle Temperature-Dependent Sex Determination"
+description: "Sex Determination & Sex-Linked Inheritance & Ecology: an IBO 2023 Theoretical 1 practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

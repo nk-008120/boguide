@@ -1,5 +1,6 @@
 ---
 title: "Q24 - Competing Hypotheses for Darwin's Finch Diversification"
+description: "The Galápagos Islands are well known for the adaptive radiation of 14 species of finch. The drivers of this radiation are either competition for food in..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q24 - Interpreting Pressure-Volume Relationships Across the Cardiac Cycle"
+description: "Figure 1 represents the changes in aortal (Ao), left atrial (At), and left ventricular (Ve) pressures and the left ventricular volume during a human..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

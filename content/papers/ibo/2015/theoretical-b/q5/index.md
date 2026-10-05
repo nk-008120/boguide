@@ -1,5 +1,6 @@
 ---
 title: "Q5 - Hummingbird Physiology Across an Elevation Gradient"
+description: "Partial atmospheric oxygen pressure PO₂ and ambient temperature decrease with increased elevation above sea level. This affects the respiratory physiology..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

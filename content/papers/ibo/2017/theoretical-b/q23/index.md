@@ -1,5 +1,6 @@
 ---
 title: "Q23 - Temperature-Dependent Sex Determination in Two Turtle Populations"
+description: "British Territories in the Atlantic, Indian, Mediterranean and Pacific Oceans are vast new marine reserves which Green turtles (Chelonia mydas) and..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

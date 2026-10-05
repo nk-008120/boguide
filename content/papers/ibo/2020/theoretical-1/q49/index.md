@@ -1,5 +1,6 @@
 ---
 title: "Q49 - Species Dominance-Rank Curves and Community Change Over 50 Years"
+description: "Scientists monitored the number of individuals for ant species in a 5 hectare plot of land for 50 years. The below figures represent the dominance rank of..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

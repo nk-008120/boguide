@@ -1,5 +1,6 @@
 ---
 title: "Q75 - Plasma Enzyme Diagnostics After Myocardial Infarction"
+description: "Measurement of blood plasma enzymes allows precise diagnosis of some diseases. Creatine kinase (CK), lactate dehydrogenase (LDH) and β-hydroxybutyrate..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

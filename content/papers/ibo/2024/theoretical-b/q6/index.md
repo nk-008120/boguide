@@ -1,5 +1,6 @@
 ---
 title: "Q6 - ProQC - Synthetic Toehold-Switch Quality Control of Translation"
+description: "ProQC is a synthetic biology tool used for the quality control of protein expression. ProQC consists of a synthetic gene-expression complex that only..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

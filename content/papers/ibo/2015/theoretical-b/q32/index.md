@@ -1,5 +1,6 @@
 ---
 title: "Q32 - Gametophytic Self-Incompatibility Genetics in Clover"
+description: "In diploid clover species (Trifolium), fertilization is determined by (gametophytic) self-incompatibility alleles (S-alleles). Pollen with a given allele..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

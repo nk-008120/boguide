@@ -1,5 +1,6 @@
 ---
 title: "Q34 - Auxin-Mediated Phototropism Experiments"
+description: "Plant Hormones: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

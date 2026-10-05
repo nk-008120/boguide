@@ -1,5 +1,6 @@
 ---
 title: "Q15 - Structural Changes Along Rhizophore Orders in Rhizophora mangle"
+description: "Scientists measured length and height of rhizophores of the mangrove plant (Rhizophora mangle, Fig.Q15A). They also made cross sections of rhizophores and..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

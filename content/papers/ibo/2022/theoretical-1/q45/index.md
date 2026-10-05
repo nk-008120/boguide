@@ -1,5 +1,6 @@
 ---
 title: "Q45 - Drosophila Color Preference and Circadian Activity"
+description: "Drosophila melanogaster fruit flies have complex innate color preferences depending on time of day. Flies were kept for 6 days in tubes with plastic..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

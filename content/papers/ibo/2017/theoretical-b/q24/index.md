@@ -1,5 +1,6 @@
 ---
 title: "Q24 - Reading Cell Identity and Function from Testis Ultrastructure"
+description: "Robert Hooke (1635-1703) popularised microscopy in his famous book Micrographia, and invented the term 'cells'. Analysing the size and shape of cells..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

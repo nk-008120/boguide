@@ -92,3 +92,5 @@ Lac operon expression remains **low**, despite lactose being present. Lactose pr
 **2.** A mutation eliminates the trp operon's attenuation mechanism entirely, while the repressor-based on/off control remains fully functional. Predict the effect on the operon's regulatory behaviour, particularly its sensitivity to intermediate (neither scarce nor abundant) tryptophan levels.
 
 **3.** Explain why attenuation, as a regulatory mechanism, could not function in a eukaryotic cell even if the exact same leader-sequence/ribosome-stalling logic were somehow present, referencing the physical organisation of eukaryotic transcription and translation.
+
+{{< related-questions >}}

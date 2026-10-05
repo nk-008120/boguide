@@ -1,5 +1,6 @@
 ---
 title: "Q50 - Species Richness and Aboveground Biomass in Experimental Grassland Plots"
+description: "Understanding how plant species richness affects community biomass production is important for biodiversity and ecosystem conservation. In a grassland..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

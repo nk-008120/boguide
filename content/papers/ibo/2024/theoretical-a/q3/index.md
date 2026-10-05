@@ -1,5 +1,6 @@
 ---
 title: "Q3 - Bacterial Phylogenomics (RNA Polymerase vs Transposase)"
+description: "Yerzhan studies the evolution of four closely related bacterial strains (A, B, C, D), focusing on RNA polymerase subunit β and transposase. He..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

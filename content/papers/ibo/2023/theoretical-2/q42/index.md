@@ -1,5 +1,6 @@
 ---
 title: "Q42 - Variant Call Format Genomics"
+description: "As more and more human genomes are being sequenced, storing this information has become an issue."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

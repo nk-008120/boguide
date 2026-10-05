@@ -282,3 +282,5 @@ The endochondral ossification process and the intervertebral disc/vertebral colu
 3. A joint permits flexion, extension, abduction, adduction, and circumduction, but not rotation. Name the synovial subtype.
 4. Explain why red bone marrow is largely restricted to flat bones and vertebrae in adults, while it is widespread throughout the skeleton in children.
 5. A drug blocks osteoclast activity without affecting osteoblasts. Predict the short-term effect on blood calcium and bone density, and name the hormone axis this would disrupt.
+
+{{< related-questions >}}

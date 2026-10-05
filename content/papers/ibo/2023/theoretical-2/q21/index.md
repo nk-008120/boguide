@@ -1,5 +1,6 @@
 ---
 title: "Q21 - Aconitase Mechanism"
+description: "Aconitase, one of the enzymes in the TCA cycle (Krebs cycle / citric acid cycle), catalyzes the following reaction:"
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -37,9 +37,13 @@
     contentWrap.classList.remove('focus-reader-scroll');
     var available = contentWrap.clientHeight;
     if (!available) return;
+    var previous = -1;
     for (var i = 0; i < SCALE_STEPS.length; i++) {
       contentEl.style.setProperty('--focus-scale', SCALE_STEPS[i]);
-      if (contentEl.getBoundingClientRect().height <= available) return;
+      var height = contentEl.getBoundingClientRect().height;
+      if (height <= available) return;
+      if (Math.abs(height - previous) < 1) break;
+      previous = height;
     }
     contentWrap.classList.add('focus-reader-scroll');
   }
@@ -76,7 +80,8 @@
   }
   function updateFsBtn() {
     if (!fsBtn) return;
-    fsBtn.textContent = isFullscreen() ? '⛶ Exit Fullscreen' : '⛶ Fullscreen';
+    var label = fsBtn.querySelector('.focus-reader-fs-label');
+    if (label) label.textContent = isFullscreen() ? 'Exit Fullscreen' : 'Fullscreen';
   }
   if (fsBtn) {
     fsBtn.addEventListener('click', function () {

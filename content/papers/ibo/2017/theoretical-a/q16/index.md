@@ -1,5 +1,6 @@
 ---
 title: "Q16 - Cytokinin Receptor Loss and Day-Length Stress in Arabidopsis"
+description: "Cytokinin is a plant hormone involved in stress signalling, which may affect responses to day-night cycles. Arabidopsis plants were grown under 8 hours..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

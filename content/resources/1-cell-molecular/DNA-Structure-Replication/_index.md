@@ -108,3 +108,5 @@ This result supports the **semiconservative** model. A single intermediate-densi
 **2.** A mutant DNA polymerase completely lacks 3′→5′ exonuclease proofreading activity but is otherwise fully functional. Predict the effect on replication fidelity, and explain why this defect would not be expected to abolish replication entirely.
 
 **3.** Explain why a primer, rather than DNA polymerase initiating synthesis directly, is required at the start of every Okazaki fragment, using DNA polymerase's specific catalytic limitation.
+
+{{< related-questions >}}

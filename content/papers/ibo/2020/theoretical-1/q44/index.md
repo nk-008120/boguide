@@ -1,5 +1,6 @@
 ---
 title: "Q44 - Pitx1 Expression and Convergent Pelvic Reduction in Stickleback"
+description: "Three-spined stickleback Gasterosteus aculeatus are widely distributed in both marine and freshwater areas across the world. Adaptive radiation has led to..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

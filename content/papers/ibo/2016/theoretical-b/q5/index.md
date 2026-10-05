@@ -1,5 +1,6 @@
 ---
 title: "Q55 - Filming Rotary Catalysis in F1-ATPase"
+description: "F1 subunit (a peripheral membrane protein) of the ATP synthase catalyses ATP synthesis using proton motive force responsible for the rotation of F0..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

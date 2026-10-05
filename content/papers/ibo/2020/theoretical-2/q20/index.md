@@ -1,5 +1,6 @@
 ---
 title: "Q20 - Reconstructing a Two-Gene Co-Dominance Model for Flower Color"
+description: "The plants discovered on a remote island have purple, reddish purple, red, blue, light blue, and white flowers. Observations revealed: self-pollination of..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

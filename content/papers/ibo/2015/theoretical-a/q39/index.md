@@ -1,5 +1,6 @@
 ---
 title: "Q39 - Sex-Linked Plumage Colour Inheritance in Chickens"
+description: "Egg producers prefer hens to roosters, and they select these by using sex-specific traits. Roosters have the sex chromosomes ZZ and hens have ZW (W is a..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

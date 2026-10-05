@@ -1,5 +1,6 @@
 ---
 title: "Q12 - DMSO₄ Poisoning Case Study"
+description: "A terminal cervical cancer patient arrived at the emergency room and received intravenous therapy and oxygen, but her condition did not improve. Medical..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

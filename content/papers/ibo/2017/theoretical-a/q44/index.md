@@ -1,5 +1,6 @@
 ---
 title: "Q44 - From Hamilton's Rule to the Price Equation in Social Evolution"
+description: "Charles Darwin’s (1809-1882) discovery was united with Mendelian genetics by Sir Ronald Fisher (1890-1962) and John Haldane (1892-1964). Equations then..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

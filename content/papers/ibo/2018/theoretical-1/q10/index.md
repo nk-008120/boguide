@@ -1,5 +1,6 @@
 ---
 title: "Q10 - Yeast Mating and Polygenic Complementation"
+description: "Mating experiments with a yeast species that has 16 chromosomes of equal length were performed. Results of mating between two mutant yeast strains (shown..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

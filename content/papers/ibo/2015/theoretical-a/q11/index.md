@@ -1,5 +1,6 @@
 ---
 title: "Q11 - Temperature, Lactic Acid and Salbutamol Effects on Muscle Fatigue"
+description: "Muscle fatigue during work results in increasing extracellular concentration of K+. This may be modified by changes in physiological temperature and..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

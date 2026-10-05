@@ -100,3 +100,5 @@ Because hydrostatic pressure is highest at the capillary's arterial end and prog
 3. Trace the full baroreceptor reflex sequence following a sudden 20 mmHg drop in blood pressure.
 4. A tissue's local capillary bed shows unusually high blood flow during intense local exercise despite systemic sympathetic vasoconstrictor tone elsewhere. Explain this apparent contradiction.
 5. Explain why the small excess of capillary filtration over reabsorption does not cause progressive tissue swelling under normal conditions.
+
+{{< related-questions >}}

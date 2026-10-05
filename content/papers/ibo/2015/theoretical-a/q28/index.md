@@ -1,5 +1,6 @@
 ---
 title: "Q28 - Fruit Availability and Fish Diet Niche in Amazon Floodplains"
+description: "Within a single year, the Amazon floodplain forests have a high-water (HW) and a low-water (LW) season with a high and low fruit production, respectively...."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

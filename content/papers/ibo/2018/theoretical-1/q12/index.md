@@ -1,5 +1,6 @@
 ---
 title: "Q12 - G6PD Deficiency and the Pentose Phosphate Pathway"
+description: "Pentose sugars and NADPH are synthetized through the pentose phosphate pathway. Reduced glutathione (GSH) acts to neutralize reactive oxygen species..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q23 - Drosophila Allele Frequency Experiment and Stabilizing Selection"
+description: "Aizhan studies polymorphism of locus JR_189021 in Drosophila melanogaster that has only two alleles - A1 and A2. To study the fitness of genotypes, she..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

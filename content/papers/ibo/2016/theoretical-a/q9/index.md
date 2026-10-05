@@ -1,5 +1,6 @@
 ---
 title: "Q9 - Screening Shrimp Gut Bacteria for Probiotic Potential Against Vibrio"
+description: "Four different bacterial strains were isolated from the gut of a shrimp to study their probiotic potency through the decrease of their pathogenicity of..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

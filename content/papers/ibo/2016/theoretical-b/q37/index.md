@@ -1,5 +1,6 @@
 ---
 title: "Q87 - Genetic Mechanisms Behind Inherited and Sporadic Cancers"
+description: "Indicate in the answer sheet if each of the following statements about cancers is true or false."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

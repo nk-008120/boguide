@@ -1,5 +1,6 @@
 ---
 title: "Q1 - Neurospora Pathway Reconstruction"
+description: "Compounds X and Y are precursors in the pathway of Z synthesis. Z is essential for growth. Wild type (WT) Neurospora are prototrophs, meaning that they..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

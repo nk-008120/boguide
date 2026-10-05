@@ -1,5 +1,6 @@
 ---
 title: "Q41 - Octopus Active Sleep and Circadian Control"
+description: "In Octopus laqueus, two distinct sleep stages are observed: active (AS) and quiet (QS). Active sleep is marked by active bouts, which include only..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

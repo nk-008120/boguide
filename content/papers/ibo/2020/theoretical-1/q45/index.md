@@ -1,5 +1,6 @@
 ---
 title: "Q45 - Density-Dependent Growth Curves and Extinction Risk in Two Life-History Types"
+description: "Density dependence is the fundamental process governing the population dynamics of organisms. The graph below describes per capita (per-individual) birth..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

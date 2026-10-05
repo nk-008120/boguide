@@ -1,5 +1,6 @@
 ---
 title: "Q45 - Vascularized Cardiac Tissue In Vitro"
+description: "To create vascularised tissue in vitro, transgenic rat cardiac cells expressing luciferase were co-cultured with or without endothelial cells (EC) and..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

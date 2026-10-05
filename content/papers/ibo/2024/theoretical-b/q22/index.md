@@ -1,5 +1,6 @@
 ---
 title: "Q22 - Genomic Imprinting at the IGF2-H19 Locus"
+description: "Genomic imprinting is one mechanism by which sexes can encourage favourable traits in a fetus to maximize their own reproductive success. The most evident..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

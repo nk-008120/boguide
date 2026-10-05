@@ -97,3 +97,5 @@ Fragment A (70% GC). G–C base pairs form three hydrogen bonds versus two for A
 **2.** A researcher finds an unusual uracil base incorporated into a sample of genomic DNA. Explain, mechanistically, how the cell's repair machinery can recognise this as an error requiring correction, using the DNA/RNA base-composition rule.
 
 **3.** Explain why RNA's 2′-OH group, often described simply as making RNA "less stable" than DNA, is also the chemical basis for RNA's ability to act as an enzyme (a ribozyme), i.e. why is the same feature both a stability liability and a functional asset?
+
+{{< related-questions >}}

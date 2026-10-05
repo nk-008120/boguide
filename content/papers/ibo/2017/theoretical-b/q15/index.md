@@ -1,5 +1,6 @@
 ---
 title: "Q15 - Competition and Salt Tolerance Divide Two Marsh Plants"
+description: "Most of the best farmland, including the English fens, is low lying and threatened by rising sea levels. Spartina patens and Typha angustifolia are marsh..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

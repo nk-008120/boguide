@@ -1,5 +1,6 @@
 ---
 title: "Q100 - Sequence Divergence, Substitution Counting, and Molecular Clock Assumptions"
+description: "The analysis of DNA and protein sequences nowadays is widely used in constructing phylogenetic trees. Indicate if in the answer sheet each of the..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

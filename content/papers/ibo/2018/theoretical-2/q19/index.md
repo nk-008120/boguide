@@ -1,5 +1,6 @@
 ---
 title: "Q19 - Respiratory Phase and Memory Performance"
+description: "In a recognition memory task, subjects (human being) viewed a series of different visual objects that occurred at different times within the breathing..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

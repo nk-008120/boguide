@@ -1,5 +1,6 @@
 ---
 title: "Q28 - Tunicate Body Plan and Chordate Affinities"
+description: "Five distinctive characteristics that, taken together, set chordates apart from all other phyla are notochord, dorsal tubular nerve cord, pharyngeal..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

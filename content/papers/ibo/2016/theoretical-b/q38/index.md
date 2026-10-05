@@ -1,5 +1,6 @@
 ---
 title: "Q88 - Chromosome Size, Gene Density, and Embryonic Lethality in Mouse Trisomies"
+description: "Mouse embryos that were trisomic for each of the 20 different chromosomes were monitored during embryonic development. Their survival time was plotted..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

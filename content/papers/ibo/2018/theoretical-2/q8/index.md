@@ -1,5 +1,6 @@
 ---
 title: "Q8 - Dominant-Negative Effects in Receptor Tyrosine Kinase Mutants"
+description: "Two different mutant forms of a gene that encodes a cell surface receptor tyrosine kinase (RTK) are separately inserted into vectors. One mutant encodes a..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

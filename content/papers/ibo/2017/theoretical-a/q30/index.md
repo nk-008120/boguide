@@ -1,5 +1,6 @@
 ---
 title: "Q30 - Radar-Tracked Foraging Reveals Bee Route Memory, Not Optimisation"
+description: "Radar, invented in the UK, was used to track the flight of English bees (Apis mellifera). To investigate how bees forage, the following experiment was..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

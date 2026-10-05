@@ -1,5 +1,6 @@
 ---
 title: "Q54 - NAD(P)H Fluorescence During the Aerobic–Anaerobic Transition in Yeast"
+description: "The metabolic activity of microbial cells can be measured based on the intracellular content of different molecules, such as NAD(P)H, the reduced form of..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

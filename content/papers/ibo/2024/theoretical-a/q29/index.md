@@ -1,5 +1,6 @@
 ---
 title: "Q29 - Endogenous Retroviruses and Retrotransposons"
+description: "Retroviruses are RNA viruses that have RNA to DNA reverse transcription steps in their life cycle. Some can become endogenous retroviruses (ERVs), where..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q31 - Cryptic Aricia Butterfly Species"
+description: "Cryptic species are organisms that look identical, but which represent distinct evolutionary lineages."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

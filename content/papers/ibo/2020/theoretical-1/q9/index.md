@@ -1,5 +1,6 @@
 ---
 title: "Q9 - Start-Codon Selection Mechanisms in Prokaryotic versus Eukaryotic Translation"
+description: "Both eukaryotes and prokaryotes have a common feature that mRNA starts translation at the AUG codon. Eukaryotic mRNA is usually a monocistron that encodes..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q15 - Gibberellin and Abscisic Acid Control of Seed Germination"
+description: "The seed germination of plants is mainly controlled by the action of two plant hormones called gibberellin and abscisic acid. Gibberellin promotes..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

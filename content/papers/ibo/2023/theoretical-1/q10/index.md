@@ -1,5 +1,6 @@
 ---
 title: "Q10 - Yeast Prion [GAR+] and Bacterial Metabolite Signaling"
+description: "Yeast (Saccharomyces cerevisiae) prion protein Pma1 is found in two significantly different conformations."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

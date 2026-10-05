@@ -1,5 +1,6 @@
 ---
 title: "Q4 - CDK Knockout and Liver Regeneration"
+description: "CDK is a family of cyclin dependent kinases which drive the cell cycle. A portion of the liver was removed in WT mice, or in livers which had a particular..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

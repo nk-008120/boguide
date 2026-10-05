@@ -1,5 +1,6 @@
 ---
 title: "Q76 - Insulin and Glucagon Dynamics in Type 2 Diabetes"
+description: "Insulin and glucagon hormones are synthesized in the islets of the pancreas. The balance of their production ensures a stable level of glucose in the..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

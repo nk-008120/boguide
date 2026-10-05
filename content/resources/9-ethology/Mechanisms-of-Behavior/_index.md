@@ -102,3 +102,5 @@ A **supernormal stimulus** is an exaggerated artificial version of a sign stimul
 3. A cuckoo chick's gape (open mouth) is larger and more vividly colored than any host species' own chick's gape, and host parents preferentially feed the cuckoo chick. What is this an example of, and why does it work?
 4. Describe an experiment that would distinguish whether a courtship display is a true fixed action pattern (runs to completion once triggered) versus a continuously feedback-guided behavior.
 5. An animal that has just eaten a large meal responds only weakly to a food-associated sign stimulus it would normally respond to strongly. What concept explains this, and what historical model attempted to formalize it?
+
+{{< related-questions >}}

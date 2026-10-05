@@ -1,5 +1,6 @@
 ---
 title: "Q33 - Xanthophyll Cycle and Photoprotection"
+description: "Xanthophylls are yellow-orange colored and fat-soluble photoprotective pigments. This is likely an adaptation to the unforgiving sunlight in dry..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

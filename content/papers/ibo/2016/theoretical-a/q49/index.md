@@ -1,5 +1,6 @@
 ---
 title: "Q49 - Polyphyletic and Paraphyletic Groups in Modern Classification"
+description: "Most taxonomists today believe that biological classification systems should reflect the evolutionary relationships of organisms and taxonomic groups..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

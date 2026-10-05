@@ -1,5 +1,6 @@
 ---
 title: "Q19 - Point Mutations, Frameshifts, and Codon Degeneracy"
+description: "The amino acid sequence MYTHELL is essential for the activity of a given enzyme. Analysis of this enzyme in three related species (A–C, see statements)..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

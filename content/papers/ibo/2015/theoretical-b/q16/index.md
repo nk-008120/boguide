@@ -1,5 +1,6 @@
 ---
 title: "Q16 - Restriction Enzyme Strategies for Cloning a Gene"
+description: "A gene (coding sequence) can be expressed by cloning it into an expression plasmid using restriction enzymes and DNA-ligase. A plasmid (A), a gene of..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

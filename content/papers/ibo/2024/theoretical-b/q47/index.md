@@ -1,5 +1,6 @@
 ---
 title: "Q47 - Cancer Immunotherapy and Checkpoint Inhibitors"
+description: "Cancer immunotherapy is a cancer treatment approach where the body's immune cells attack tumor cells. During their development, tumor cells accumulate..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

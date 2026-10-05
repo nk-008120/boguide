@@ -1,5 +1,6 @@
 ---
 title: "Q34 - Cichlid Fish - Anal Fin Egg-Spot Signalling"
+description: "Lake Malawi in Africa is home to the cichlid Labidochromis caeruleus, whose females carry their eggs and larvae in their mouths for several weeks before..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

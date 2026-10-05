@@ -1,5 +1,6 @@
 ---
 title: "Q4 - Sedimentation Coefficient and Centrifugation Physics"
+description: "Centrifugation is one of the most important biochemical techniques in the separation and purification of biomolecules and organelles. The sedimentation..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

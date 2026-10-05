@@ -1,5 +1,6 @@
 ---
 title: "Q2 - Berk-Sharp Mapping of Exon-Intron Structure"
+description: "A protocol that can be used for identification of gene structure with respect to exons and introns involves isolation and denaturation of a dsDNA fragment..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

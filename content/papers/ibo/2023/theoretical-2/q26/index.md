@@ -1,5 +1,6 @@
 ---
 title: "Q26 - T-DNA Southern Blot Analysis"
+description: "During Agrobacterium-mediated transformation of plants, one or more copies of T-DNA (Transfer DNA) can integrate randomly into the plant genomic DNA."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

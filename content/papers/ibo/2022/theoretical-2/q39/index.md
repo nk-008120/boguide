@@ -1,5 +1,6 @@
 ---
 title: "Q89 - Amplexus and Sperm Competition in Newts"
+description: "During the breeding season, Notophthalmus viridescens newts form groups. A mature female produces pheromones, and has a full abdomen of eggs and actively..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

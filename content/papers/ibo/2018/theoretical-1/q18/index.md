@@ -1,5 +1,6 @@
 ---
 title: "Q18 - Light Refraction in the Four-Eyed Fish Anableps"
+description: "When a light beam enters another medium in an oblique angle, its direction will change. This phenomenon is called light refraction. The amount of this..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

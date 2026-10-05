@@ -1,5 +1,6 @@
 ---
 title: "Q28 - Epistasis Between Two Hair-Pigmentation Genes"
+description: "In a hypothetical human population genes A and B control hair pigmentation, where hair color can be either black or white. Both genes A and B are..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

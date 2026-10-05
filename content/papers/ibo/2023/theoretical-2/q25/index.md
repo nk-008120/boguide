@@ -1,5 +1,6 @@
 ---
 title: "Q25 - Golden Gate Assembly Constructs"
+description: "Golden Gate assembly is a one-step cloning method for joining multiple DNA inserts into a plasmid backbone."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

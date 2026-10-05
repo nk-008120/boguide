@@ -1,5 +1,6 @@
 ---
 title: "Q19 - Electron Transport Between Oxic and Anoxic Marine Sediment Layers"
+description: "In the sea, O2 diffuses from the free water down into the top oxic layer in the sediment and here becomes reduced to water. Anoxic layers are beneath this..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

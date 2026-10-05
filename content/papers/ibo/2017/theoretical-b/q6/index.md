@@ -1,5 +1,6 @@
 ---
 title: "Q6 - Comparing Gas Exchange Strategies Across Animal Groups"
+description: "The gas exchange surfaces, and the direction of respiratory-medium and blood flow, of different animals are sketched. Mammals and birds must use..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

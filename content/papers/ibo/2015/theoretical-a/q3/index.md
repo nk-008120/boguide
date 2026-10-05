@@ -1,5 +1,6 @@
 ---
 title: "Q3 - Visual Field Deficits from Central Visual Pathway Lesions"
+description: "In humans, lesions in the central visual pathways may have different consequences to the visual field (Fig.). A, lesions (1–5) in the central visual..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

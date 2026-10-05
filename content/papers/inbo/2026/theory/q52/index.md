@@ -1,5 +1,6 @@
 ---
 title: "Q52 - Leaf Solar Tracking and Radiation"
+description: "Tropisms & Nastic Movements: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

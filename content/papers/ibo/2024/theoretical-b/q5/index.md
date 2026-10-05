@@ -1,5 +1,6 @@
 ---
 title: "Q5 - Ketogenic Diet Metabolism and Catecholamine Seizure Latency"
+description: "Ketogenic (high-fat, low-carbohydrate) diet is an efficient treatment for recurrent seizures, as in epilepsy. Ketogenic diet is thought to exert its..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

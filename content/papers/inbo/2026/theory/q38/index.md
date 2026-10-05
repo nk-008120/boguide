@@ -1,5 +1,6 @@
 ---
 title: "Q38 - Corticotropin Releasing Hormone in Pregnancy and Amphibian Development"
+description: "Endocrine System Physiology: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

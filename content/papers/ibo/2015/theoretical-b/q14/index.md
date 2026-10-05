@@ -1,5 +1,6 @@
 ---
 title: "Q14 - Coevolution of Breeding and Pollination Systems in Figs"
+description: "Figs and wasps have a long coevolutionary history. Figs depend on tiny wasps for pollination, which depend on fig inflorescences, because they lay eggs in..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

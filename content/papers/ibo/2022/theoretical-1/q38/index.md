@@ -1,5 +1,6 @@
 ---
 title: "Q38 - Modes of Natural Selection - Frequency Distribution Curves"
+description: "There are different modes of natural selection: stabilizing selection, directional selection, and disruptive selection. The figure below shows three..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

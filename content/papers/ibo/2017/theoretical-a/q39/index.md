@@ -1,5 +1,6 @@
 ---
 title: "Q39 - Limpets and Urchins Have Unequal Effects on Seaweed Cover"
+description: "Sea urchins (Echinoidea) are a major food source of otters (Enhydra lutris). Sea urchin populations tend to explode where sea beds have been damaged by..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

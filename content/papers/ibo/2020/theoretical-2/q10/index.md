@@ -1,5 +1,6 @@
 ---
 title: "Q10 - Matching Plant Cell Growth Types to Cellulose Microfibril and Microtubule Orientation"
+description: "The growth patterns of plant cells assume the following types. A. Diffuse growth: the whole cell more or less grows on entire facets of the cell. B. Tip..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

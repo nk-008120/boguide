@@ -1,5 +1,6 @@
 ---
 title: "Q23 - Statoliths and Root Geotropism in Microgravity"
+description: "Statocytes are cells in the central root cap thought to be crucial in geotropism of the plant root. These cells possess starch-filled granules..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

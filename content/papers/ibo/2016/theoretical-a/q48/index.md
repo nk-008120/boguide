@@ -1,5 +1,6 @@
 ---
 title: "Q48 - Reading Relationships from a Five-Taxon Cladogram"
+description: "Study the cladogram given below and indicate if each of the following statements is true or false. The cladogram groups taxa b and c together as a pair..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

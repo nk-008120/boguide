@@ -105,3 +105,5 @@ In most plants (the **C3** pathway), the leaf's photosynthetic anatomy is simply
 3. Distinguish a compound leaf's leaflet from a simple leaf on a stem, using one definitive structural test.
 4. Explain why CAM plant tissue shows unusually large vacuoles, referencing what is stored there and when.
 5. Explain the functional significance of a bundle sheath extension reaching the epidermis.
+
+{{< related-questions >}}

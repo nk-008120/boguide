@@ -1,5 +1,6 @@
 ---
 title: "Q34 - Assigning Anonymous DNA Samples to Three Families by STR Profiling"
+description: "Mr. Long analyzed DNA samples from three families using six loci of short tandem repeat (STR) on six different autosomal chromosomes. Each STR locus..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

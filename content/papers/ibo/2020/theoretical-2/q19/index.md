@@ -1,5 +1,6 @@
 ---
 title: "Q19 - Genotyping T-DNA Insertion Lines by PCR Band Pattern"
+description: "As part of the functional analysis of the april gene found in a diploid plant, a mutant strain was discovered in which a DNA fragment (T-DNA) of 3 kb or..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

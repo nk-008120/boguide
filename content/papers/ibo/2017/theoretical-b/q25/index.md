@@ -1,5 +1,6 @@
 ---
 title: "Q25 - Do ABC Transporters Pump Floral Scent Out of Petal Cells?"
+description: "Flowers produce volatile fragrances from their petals to attract pollinators, but only once they have become fertile. Some volatile molecules diffuse..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

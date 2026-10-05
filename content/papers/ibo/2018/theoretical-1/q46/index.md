@@ -1,5 +1,6 @@
 ---
 title: "Q46 - Conditional Cooperation and the Evolution of Deception"
+description: "Cooperation is a complicated behaviour that has evolved in animals. Conditional cooperation, such as direct and indirect reciprocity and partner choice..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

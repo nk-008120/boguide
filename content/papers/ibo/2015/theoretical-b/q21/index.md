@@ -1,5 +1,6 @@
 ---
 title: "Q21 - A Bacterium-Nematode-Fungus Chemical Signaling Chain"
+description: "Bacteria are the food of many nematodes, and many bacteria have a toxic secretion defence. Nematodes are also preyed upon, e.g. by the fungus Arthrobotrys..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

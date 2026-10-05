@@ -1,5 +1,6 @@
 ---
 title: "Q49 - Specialization and Phylogenetic Structure in a Bird-Plant Interaction Network"
+description: "Plants interact with animals, and within a habitat, entire plant and animal communities form complex interaction networks. One important class of..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

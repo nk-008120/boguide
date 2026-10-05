@@ -165,3 +165,5 @@ PLP's aldehyde group forms a Schiff base (aldimine) with a lysine ε-amino group
 **3.** Rank Phe, Trp, Tyr, His by relative contribution to a protein's UV absorbance at 280 nm, and explain why His is excluded from the usual A₂₈₀ approximation despite being aromatic.
 
 **4.** A mutation replaces a surface lysine with glutamate. Predict the qualitative effect on the protein's pI, and state whether this residue is more likely glucogenic or ketogenic after catabolism.
+
+{{< related-questions >}}

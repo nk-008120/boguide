@@ -1,5 +1,6 @@
 ---
 title: "Q11 - Cell Wall Elasticity and the Components of Water Potential"
+description: "Cell walls provide plant cells with a substantial degree of volume homeostasis relative to the large changes in water potential that they experience as..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q36 - A Luciferase Reporter Measures Caspase Activity in Apoptosis"
+description: "Sir Alastair Currie (1921-1994), Sir John Sulston (1942-present) and colleagues discovered how cells can commit controlled suicide (apoptosis). Apoptosis..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

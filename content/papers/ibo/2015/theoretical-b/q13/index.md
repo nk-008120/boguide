@@ -1,5 +1,6 @@
 ---
 title: "Q13 - Island Colonization History of Canary Islands Beetles"
+description: "The flightless beetle genus Tarphius lives in humid forests and has 29 endemic species on the Canary Islands. The species are found on the five western..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

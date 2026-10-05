@@ -1,5 +1,6 @@
 ---
 title: "Q90 - Reading Mode of Inheritance from Four Pedigrees"
+description: "Pedigrees 1-4 show the inheritance of four different rare disorders. It is known that the disease in pedigree 4 is X-linked recessive."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

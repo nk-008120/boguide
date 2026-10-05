@@ -1,5 +1,6 @@
 ---
 title: "Q29 - Reverse-Engineering a Peptide-Shortening Mutation"
+description: "The genetic code can be used to reverse engineer the genetic information coding for peptides of a desired amino acid sequence. Your task is to design..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

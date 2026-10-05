@@ -1,5 +1,6 @@
 ---
 title: "Q2 - Enzyme Kinetics - Time to Completion vs Temperature"
+description: "Solutions of a specific concentration of enzyme and substrate were mixed to record the rate of the enzymatic reaction. The time required to complete the..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

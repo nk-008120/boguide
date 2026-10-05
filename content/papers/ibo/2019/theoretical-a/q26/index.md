@@ -1,5 +1,6 @@
 ---
 title: "Q26 - Inheritance of Sterility in a Pedigree"
+description: "The pedigree shows inheritance of a trait in a model organism. Symbols: empty circle = healthy female; empty square = healthy male; filled (grey) circle =..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

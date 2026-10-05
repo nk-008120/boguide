@@ -1,5 +1,6 @@
 ---
 title: "Q35 - Kleptoplasty in Sacoglossan Sea Slugs"
+description: "Chloroplast symbiosis or kleptoplasty refers to a naturally occurring process that results in maintenance of chloroplasts of one species in host cells of..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q74 - Pathophysiology of Traumatic Brain Injury"
+description: "The biochemical and physiological processes accompanying cerebral injuries frequently turn into sources of secondary tissue damage themselves. These..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

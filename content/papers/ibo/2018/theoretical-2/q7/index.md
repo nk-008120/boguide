@@ -1,5 +1,6 @@
 ---
 title: "Q7 - Hardy-Weinberg Analysis of the MN Blood Group"
+description: "Among 1290 individuals of a population under study, the numbers of individuals with blood group types M, MN, and N are, respectively, 340, 880, and 70."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

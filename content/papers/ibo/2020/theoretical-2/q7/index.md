@@ -1,5 +1,6 @@
 ---
 title: "Q7 - Estimating Vmax and KM for GLUT1 Glucose Transport Kinetics"
+description: "GLUT1, a protein present in the membrane of red blood cells, is a transporter that transports glucose into cells. The relationship between the..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q32 - Venus Flytrap Closure: Temperature and Chemical Effects"
+description: "Venus flytrap is a carnivorous plant. In an experiment, researchers measured how Venus flytraps close at different temperatures (Figure 1A and Figure 1B)..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

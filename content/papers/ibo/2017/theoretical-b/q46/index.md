@@ -1,5 +1,6 @@
 ---
 title: "Q46 - Tracing a De Novo Haemophilia Mutation Through European Royalty"
+description: "Robert Macfarlane (1907-1987) explained the biochemistry of blood clotting, and discovered the cause of haemophilia B, which causes fatal bleeding. Queen..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

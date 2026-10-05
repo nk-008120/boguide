@@ -1,5 +1,6 @@
 ---
 title: "Q17 - Genome Streamlining Tracks Niche Specialisation in Marine Cyanobacteria"
+description: "Scientists are uncertain how Natural Selection shapes genome size, gene number, physiological flexibility and other important features in response to..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

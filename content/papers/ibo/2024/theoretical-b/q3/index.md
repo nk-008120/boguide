@@ -1,5 +1,6 @@
 ---
 title: "Q3 - BRCA1/53BP1 and DNA Double-Strand Break Repair Pathway Choice"
+description: "DNA double-strand breaks (DSBs) occur when both strands of the DNA molecule are broken, leading to cell death if not properly repaired. DSBs occur..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

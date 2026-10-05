@@ -1,8 +1,9 @@
 ---
-title: "The Search for Life, Right Now: Astrobiology Frontier Report"
+title: "The Search for Life, Right Now: Astrobiology BiOHorizon Report"
 description: "A rover drilled a rock with leopard spots, a telescope sniffed an alien atmosphere, an old flyby revealed fresh ocean chemistry, and an asteroid turned out to carry sugar. What was measured, what was only claimed, and why it matters for biologists."
-layout: "frontier"
+layout: "horizon"
 date: 2026-10-03
+aliases: ["/biobytes/frontiers/astrobiology/"]
 ---
 
 {{< mathjax >}}
@@ -20,7 +21,7 @@ date: 2026-10-03
 </div>
 
 <div class="fr-hero">
-  <p class="fr-kicker">Frontier Report &middot; Astrobiology &middot; October 2026</p>
+  <p class="fr-kicker">BiOHorizon Report &middot; Astrobiology &middot; October 2026</p>
   <p class="fr-dek">Since the start of 2025, a rover on Mars drilled a rock covered in "leopard spots", a space telescope claimed a whiff of a life-linked gas on an alien world and was promptly challenged, a 17-year-old flyby finally gave up fresh chemistry from a moon's hidden ocean, and an asteroid sample turned out to contain sugar. This report separates what was <em>measured</em> from what was <em>claimed</em>, and shows where each story plugs into the biology you are already studying.</p>
   <div class="fr-pills">
     <span class="fr-pill">🪐 5 stories</span>
@@ -88,11 +89,11 @@ The rock is a {{< term "mudstone" >}}mudstone{{< /term >}} of clay and silt that
 
 <div class="fr-figs">
 <figure class="fr-fig">
-  <img src="/frontier/astrobio/cheyavafalls.webp" alt="Close-up of a reddish Martian rock surface speckled with small pale spots, with one leopard spot and one olivine grain circled and labelled" width="649" height="472" loading="lazy">
+  <img src="/horizon/astrobio/cheyavafalls.webp" alt="Close-up of a reddish Martian rock surface speckled with small pale spots, with one leopard spot and one olivine grain circled and labelled" width="649" height="472" loading="lazy">
   <figcaption><strong>Fig. 1.</strong> The Mars rock with leopard spots, as imaged by Perseverance. The labels mark one leopard spot and an olivine grain. <span class="fr-credit">Image: NASA/JPL-Caltech. <a href="https://science.nasa.gov/resource/perseverance-finds-a-rock-with-leopard-spots/">Source</a></span></figcaption>
 </figure>
 <figure class="fr-fig">
-  <div class="fr-crop-pixl"><img src="/frontier/astrobio/PIXLVivianite.webp" alt="A rectangular PIXL elemental map in pink, red, purple and green pixels laid over a close-up of the speckled rock, with a 1 millimetre scale bar" width="739" height="415" loading="lazy"></div>
+  <div class="fr-crop-pixl"><img src="/horizon/astrobio/PIXLVivianite.webp" alt="A rectangular PIXL elemental map in pink, red, purple and green pixels laid over a close-up of the speckled rock, with a 1 millimetre scale bar" width="739" height="415" loading="lazy"></div>
   <figcaption><strong>Fig. 2.</strong> A PIXL element map overlaid on a close-up of the rock. The colours show how elements are distributed across the spots. Scale bar: 1 mm. <span class="fr-credit">Image: NASA/JPL-Caltech, via astrobiology.com. <a href="https://astrobiology.com/2025/10/28/mars-perseverances-pixl-finds-vivianite-greigite-in-cheyava-falls-sample/">Source</a></span></figcaption>
 </figure>
 </div>
@@ -162,7 +163,7 @@ This is respiration seen from the outside. Dissimilatory iron reduction and sulf
 - In April 2025 a mid-infrared (MIRI, 5 to 12 µm) dataset was reported to show DMS and/or dimethyl disulfide (DMDS) at about 3 sigma.<sup class="fr-ref"><a href="#ref-4">4</a><a href="#ref-5">5</a></sup>
 
 <figure class="fr-fig fr-fig-wide">
-  <img src="/frontier/astrobio/exoplanet-k2-18b-illustration.webp" alt="Artist illustration of a large blue-and-purple planet filling the right of the frame, with a small red star and a tiny moon-like crescent in a starry sky" width="1280" height="720" loading="lazy">
+  <img src="/horizon/astrobio/exoplanet-k2-18b-illustration.webp" alt="Artist illustration of a large blue-and-purple planet filling the right of the frame, with a small red star and a tiny moon-like crescent in a starry sky" width="1280" height="720" loading="lazy">
   <figcaption><strong>Fig. 3.</strong> An artist's concept of K2-18 b. No telescope has resolved the planet, so this image shows one hypothesis (an ocean-covered "hycean" world) and is not data. <span class="fr-credit">Illustration: NASA, CSA, ESA, J. Olmsted (STScI); science: N. Madhusudhan (University of Cambridge). <a href="https://en.wikipedia.org/wiki/K2-18b">Source</a></span></figcaption>
 </figure>
 
@@ -186,7 +187,7 @@ Even the hycean interpretation itself has been challenged by other modelling tea
 Nobody looks at K2-18 b through an eyepiece. Software turns raw detector images into a spectrum (the joint reanalysis above ran three independent pipelines, and they do not produce identical spectra). Then retrieval codes search through enormous numbers of model atmospheres, typically with {{< term "bayesian-inference" >}}Bayesian sampling{{< /term >}}, to ask which compositions the spectrum allows. Every number in the debate above is the output of a computation, and the disagreements are largely disagreements about computational choices. So it is worth doing the arithmetic yourself.
 
 <figure class="fr-fig fr-fig-wide">
-  <img src="/frontier/astrobio/wasp-107b.webp" alt="Graph titled Transmission Spectrum of the gas giant WASP-107 b, with blue data points and a grey best-fit line, and peaks labelled water, carbon dioxide, methane, sulfur dioxide and carbon monoxide" width="693" height="443" loading="lazy">
+  <img src="/horizon/astrobio/wasp-107b.webp" alt="Graph titled Transmission Spectrum of the gas giant WASP-107 b, with blue data points and a grey best-fit line, and peaks labelled water, carbon dioxide, methane, sulfur dioxide and carbon monoxide" width="693" height="443" loading="lazy">
   <figcaption><strong>Fig. 4.</strong> What a transmission spectrum looks like: JWST NIRSpec data for a different planet, the gas giant WASP-107 b, with the molecules that absorb at each wavelength labelled. Blue dots are data and the grey line is a best-fit model. Its features are far larger than the tens-of-ppm signals in the K2-18 b debate. <span class="fr-credit">Graphic: NASA, ESA, CSA, STScI. <a href="https://science.nasa.gov/asset/webb/warm-gas-giant-exoplanet-wasp-107-b-transmission-spectrum-nirspec/">Source</a></span></figcaption>
 </figure>
 
@@ -296,7 +297,7 @@ The DMSP to DMS pathway is a small piece of marine microbial ecology with planet
 Saturn's moon {{< term "enceladus" >}}Enceladus{{< /term >}} hides a global ocean beneath its ice and vents it into space through cracks near its south pole. In 2025, a *Nature Astronomy* paper reported organic compounds in ice grains that were only minutes old when {{< term "cassini" >}}Cassini{{< /term >}}'s instrument sampled them, showing that the organics come from the ocean itself and not from years of space weathering.<sup class="fr-ref"><a href="#ref-10">10</a><a href="#ref-11">11</a></sup>
 
 <figure class="fr-fig fr-fig-wide">
-  <img src="/frontier/astrobio/cassiniviews.webp" alt="Four-panel figure: a black-and-white image of icy jets rising from Enceladus, Enceladus and Tethys beside a faint ring, a fractured grey surface with a zoomed inset, and an orange-and-yellow map over the south polar region" width="515" height="388" loading="lazy">
+  <img src="/horizon/astrobio/cassiniviews.webp" alt="Four-panel figure: a black-and-white image of icy jets rising from Enceladus, Enceladus and Tethys beside a faint ring, a fractured grey surface with a zoomed inset, and an orange-and-yellow map over the south polar region" width="515" height="388" loading="lazy">
   <figcaption><strong>Fig. 5.</strong> Cassini views of Enceladus: (a) the water-ice plumes at the south pole, (b) Enceladus and Tethys against the faint E ring, (c) fractured terrain with an enlarged inset, and (d) a colour-scaled map of the south polar region with a 50 km scale bar. <span class="fr-credit">Composite figure built from Cassini data, via ResearchGate. <a href="https://www.researchgate.net/figure/Cassini-views-of-Enceladus-a-ISS-image-of-the-water-ice-plumes-at-Enceladuss-South_fig6_352931759">Source</a></span></figcaption>
 </figure>
 
@@ -311,7 +312,7 @@ Cassini's {{< term "cda" >}}Cosmic Dust Analyzer{{< /term >}} (CDA) is a mass sp
 Data from a 2008 flyby, when the spacecraft hit the plume at nearly 18 km/s, were re-examined years later. Grains in Saturn's E ring can persist for hundreds of years and are altered by radiation, so earlier organics detections could not be pinned to the ocean. These grains had been ejected only minutes before.<sup class="fr-ref"><a href="#ref-10">10</a><a href="#ref-11">11</a></sup>
 
 <figure class="fr-fig fr-fig-tall">
-  <img src="/frontier/astrobio/cassinicosmicdust.webp" alt="Graphic of the Cassini spacecraft near Saturn with an enlarged photo of its Cosmic Dust Analyser and a circular inset of a grain labelled about 10 micrometres" width="357" height="560" loading="lazy">
+  <img src="/horizon/astrobio/cassinicosmicdust.webp" alt="Graphic of the Cassini spacecraft near Saturn with an enlarged photo of its Cosmic Dust Analyser and a circular inset of a grain labelled about 10 micrometres" width="357" height="560" loading="lazy">
   <figcaption><strong>Fig. 6.</strong> Cassini's Cosmic Dust Analyser (enlarged), the instrument that sampled the plume grains. The circular inset is labelled about 10 micrometres. <span class="fr-credit">Graphic: ESA. <a href="https://www.esa.int/ESA_Multimedia/Images/2016/04/Cassini_Cosmic_Dust_Analyser">Source</a></span></figcaption>
 </figure>
 
@@ -379,7 +380,7 @@ Read the claim carefully: organics are not life. ESA's coverage stresses that th
 NASA's {{< term "osiris-rex" >}}OSIRIS-REx{{< /term >}} mission returned material from the asteroid {{< term "bennu" >}}Bennu{{< /term >}} to Earth in late 2023. Over 2025, laboratory analyses of that pristine material showed that an ordinary-looking carbon-rich rock contains many of the molecules biology is built from.<sup class="fr-ref"><a href="#ref-13">13</a></sup>
 
 <figure class="fr-fig fr-fig-narrow">
-  <img src="/frontier/astrobio/nasabennu.webp" alt="Black-and-white mosaic of the rubble-covered, diamond-shaped asteroid Bennu against black space" width="640" height="480" loading="lazy">
+  <img src="/horizon/astrobio/nasabennu.webp" alt="Black-and-white mosaic of the rubble-covered, diamond-shaped asteroid Bennu against black space" width="640" height="480" loading="lazy">
   <figcaption><strong>Fig. 7.</strong> Bennu, the carbon-rich asteroid visited by OSIRIS-REx, in a mosaic of the mission's images. <span class="fr-credit">Image: NASA/Goddard/University of Arizona. <a href="https://science.nasa.gov/mission/osiris-rex/">Source</a></span></figcaption>
 </figure>
 
@@ -393,7 +394,7 @@ NASA's {{< term "osiris-rex" >}}OSIRIS-REx{{< /term >}} mission returned materia
 Combine the findings and all the components needed to build RNA (nucleobases, ribose and phosphate) are now documented in material that formed before life on Earth existed.<sup class="fr-ref"><a href="#ref-15">15</a></sup>
 
 <figure class="fr-fig fr-fig-tall">
-  <img src="/frontier/astrobio/bioessential.webp" alt="NASA infographic titled Bio-essential sugars ribose and glucose in samples from asteroid Bennu, showing chemical structures of the RNA nucleobases, ribose, phosphate and glucose" width="387" height="516" loading="lazy">
+  <img src="/horizon/astrobio/bioessential.webp" alt="NASA infographic titled Bio-essential sugars ribose and glucose in samples from asteroid Bennu, showing chemical structures of the RNA nucleobases, ribose, phosphate and glucose" width="387" height="516" loading="lazy">
   <figcaption><strong>Fig. 8.</strong> NASA's graphic summarising the sugar discovery: the molecular components of RNA found in Bennu samples (nucleobases, ribose and phosphate) alongside glucose. <span class="fr-credit">Graphic: NASA Scientific Visualization Studio. <a href="https://svs.gsfc.nasa.gov/14932/">Source</a></span></figcaption>
 </figure>
 
@@ -445,7 +446,7 @@ This story is a tour of the central molecules of the course: {{< term "amino-aci
 Every story so far hunts for a particular molecule or mineral, which quietly assumes alien life uses familiar chemistry. In April 2026 a paper in *The Astrophysical Journal* proposed an **agnostic biosignature** that assumes nothing about biochemistry or even about what counts as habitable.<sup class="fr-ref"><a href="#ref-17">17</a></sup>
 
 <figure class="fr-fig fr-fig-narrow">
-  <img src="/frontier/astrobio/elsi.webp" alt="Glass entrance with the Earth-Life Science Institute logo and name, framed by pale cherry blossoms" width="602" height="510" loading="lazy">
+  <img src="/horizon/astrobio/elsi.webp" alt="Glass entrance with the Earth-Life Science Institute logo and name, framed by pale cherry blossoms" width="602" height="510" loading="lazy">
   <figcaption><strong>Fig. 9.</strong> The Earth-Life Science Institute (ELSI) at the Institute of Science Tokyo, one of the institutions behind the study. <span class="fr-credit">Photo: ELSI. <a href="https://www.elsi.jp/en/news_events/news/2025/elsi_welcomes_new_students/">Source</a></span></figcaption>
 </figure>
 

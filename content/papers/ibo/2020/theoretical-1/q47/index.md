@@ -1,5 +1,6 @@
 ---
 title: "Q47 - Day versus Night Pollinator Contributions to Goldenrod Seed Set"
+description: "An experiment was conducted to examine the relative effect of pollinators during the night and in the daytime on the reproductive success of golden rod..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

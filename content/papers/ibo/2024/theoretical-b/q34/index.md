@@ -1,5 +1,6 @@
 ---
 title: "Q34 - GAPLESS Proteins and Apoplastic Transport in Roots"
+description: "Scientists studied how GAPLESS proteins affect apoplastic transport (transport through cell walls and extracellular space) of nutrients via the..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

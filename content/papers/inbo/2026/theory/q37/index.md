@@ -1,5 +1,6 @@
 ---
 title: "Q37 - Nernst Equation Membrane Potential"
+description: "Nervous System Physiology: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

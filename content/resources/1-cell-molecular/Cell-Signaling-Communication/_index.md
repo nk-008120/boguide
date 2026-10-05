@@ -101,3 +101,5 @@ Intracellular cAMP rises persistently and abnormally high. Locking Gαs in the G
 **2.** Two different GPCRs in the same cell both bind their respective ligands, but one raises intracellular cAMP while the other lowers it. Explain how this is possible given that both are structurally GPCRs.
 
 **3.** An RTK-family growth factor receptor carries a mutation preventing dimerisation upon ligand binding, but the kinase domain itself is fully catalytically functional in isolation. Predict the effect on downstream Ras/MAPK signaling, and explain why an intact kinase domain alone is insufficient.
+
+{{< related-questions >}}

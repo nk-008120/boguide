@@ -1,5 +1,6 @@
 ---
 title: "Q2 - Red Deer mtDNA Phylogeny & Bootstrap Support"
+description: "There are many subspecies of Red Deer (Cervus elaphus) in Eurasia. The cytochrome b gene of mitochondrial DNA from 106 red deer samples, collected from..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

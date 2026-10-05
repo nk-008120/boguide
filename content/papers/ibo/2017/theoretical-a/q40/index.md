@@ -1,5 +1,6 @@
 ---
 title: "Q40 - Route Choice and Season Explain Cuckoo Population Trends"
+description: "The Island of Great Britain is a critical hub for migrating birds, from as far away as Canada and South Africa, due to its mild climate and well preserved..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

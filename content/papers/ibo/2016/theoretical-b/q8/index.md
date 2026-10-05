@@ -1,5 +1,6 @@
 ---
 title: "Q58 - Genome Segmentation and Subtype Diversity in Influenza A"
+description: "Influenza A genome consists of 8 separate single stranded RNA molecules, which encode a total of 11 viral proteins. Influenza A viruses are categorized by..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

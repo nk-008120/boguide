@@ -1,5 +1,6 @@
 ---
 title: "Q83 - Gut Microbiome and Lifespan in Drosophila"
+description: "Researchers investigated the effect of the microbiome on the lifespan of the fruit fly (D. melanogaster). To this end, they disinfected fly eggs and..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

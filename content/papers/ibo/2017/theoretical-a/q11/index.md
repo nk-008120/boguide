@@ -1,5 +1,6 @@
 ---
 title: "Q11 - Recombination Mapping from a Three-Point Drosophila Cross"
+description: "William Bateson (1861-1926) founded the discipline of modern genetics. Reginald Punnett (1875-1967) created a technique to predict the frequency of..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

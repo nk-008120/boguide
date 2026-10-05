@@ -1,5 +1,6 @@
 ---
 title: "Q12 - CwiM as a Zinc-Dependent Regulator of Mycobacterial Cell Elongation"
+description: "Experiments found that CwiM is a regulator of Mycobacteria tuberculosis cell wall formation. The length (1) and number (2) of WT and CwiM knockout cells..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

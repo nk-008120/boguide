@@ -1,5 +1,6 @@
 ---
 title: "Q19 - Heat-Balling Honeybee Defense Against Hornets"
+description: "Honeybees like Apis cerana (Ac) and Apis mellifera (Am) defend against hornets (Vespa velutina, Vv) by forming a 44°C heat ball and stinging. The effects..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

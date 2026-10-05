@@ -92,3 +92,5 @@ Both founder effects and bottlenecks are specific applications of the same under
 3. Two neighboring plant populations have different local allele frequencies at a locus under different selective pressures in each location, but pollinators regularly move pollen between them. Explain what effect this ongoing gene flow is expected to have on the difference between the two populations' allele frequencies over time.
 4. Explain why a species with an extremely low mutation rate at all loci would eventually run out of new material for natural selection to act on, even if selection itself remained fully active.
 5. A population's census size is 10,000, but due to a highly skewed mating system only 200 males ever successfully reproduce each generation. Explain why the effective population size relevant to genetic drift is much lower than 10,000.
+
+{{< related-questions >}}

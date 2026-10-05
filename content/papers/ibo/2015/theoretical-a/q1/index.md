@@ -1,5 +1,6 @@
 ---
 title: "Q1 - Poiseuille's Law and Blood Pressure Regulation"
+description: "In mammals, a high blood pressure is needed to achieve a high blood flow (cardiac fluid flow) and to overcome any vascular resistance against the flow of..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

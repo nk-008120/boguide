@@ -1,5 +1,6 @@
 ---
 title: "Q38 - Parsimony Reconstruction of Opsin Gene Evolution in Human and Zebrafish"
+description: "Following is the phylogenetic tree based on the amino-acid sequences of all opsin genes in the human and zebrafish genomes. Indicate whether each of the..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

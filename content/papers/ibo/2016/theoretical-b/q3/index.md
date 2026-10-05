@@ -1,5 +1,6 @@
 ---
 title: "Q53 - Mitochondrial Membrane Potential in Hypoxia/Reoxygenation Injury"
+description: "Reoxygenation after a period of lack of oxygen causes cardiomyocyte damage. One of the most important indices evaluating myocardial functions is..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

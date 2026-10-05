@@ -88,3 +88,5 @@ Sporophyte dominance and vascular sophistication reach their fullest expression:
 3. A plant produces cones with naked seeds and lacks vessel elements. Identify the lineage and name one vascular-tissue and one reproductive-structure feature that distinguish it from an angiosperm.
 4. Explain why fertilization in ferns still requires liquid water despite ferns having true vascular tissue and true roots/stems/leaves.
 5. Explain why the angiosperm female gametophyte, at as few as seven cells, is still capable of producing both a zygote and a nutritive endosperm tissue from a single fertilization event.
+
+{{< related-questions >}}

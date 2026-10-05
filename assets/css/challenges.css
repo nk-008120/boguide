@@ -332,3 +332,35 @@ html.dark .page-rating-your {
 html.dark .page-rating-login-link {
   color: #c9b7e8;
 }
+
+.related-questions {
+  margin: 2rem 0 1rem;
+  border-radius: 12px;
+  background: rgba(137, 101, 196, 0.05);
+  border: 1px solid rgba(137, 101, 196, 0.2);
+}
+html.dark .related-questions {
+  background: rgba(201, 183, 232, 0.05);
+  border-color: rgba(201, 183, 232, 0.2);
+}
+.related-questions-summary {
+  cursor: pointer;
+  padding: 0.85rem 1.25rem;
+  font-weight: 600;
+}
+.related-questions-body {
+  padding: 0 1.25rem 1rem;
+}
+.related-questions-round {
+  margin: 1rem 0 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.related-questions-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+.related-questions-list li {
+  margin: 0.15rem 0;
+}

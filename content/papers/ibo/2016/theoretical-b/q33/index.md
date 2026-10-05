@@ -1,5 +1,6 @@
 ---
 title: "Q83 - Frequency-Dependent Predation and the Maintenance of Moth Wing-Pattern Polymorphism"
+description: "Three morphs of a polymorphic species of Catocala moths differ only in the patterns on the forewings. Six experienced blue jays (Cyanocitta cristata)..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

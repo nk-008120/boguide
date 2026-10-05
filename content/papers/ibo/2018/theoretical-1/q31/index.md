@@ -1,5 +1,6 @@
 ---
 title: "Q31 - Adaptations of Submerged Aquatic Plants"
+description: "Some flowering plants are aquatic and have adapted to live in aquatic environments. They are divided into 3 types, depending on how much of the plant is..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

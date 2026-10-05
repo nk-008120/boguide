@@ -1,5 +1,6 @@
 ---
 title: "Q6 - Desaturase Identity and Ethanol Tolerance in Yeast"
+description: "Ethanol inhibits microbial growth. Nevertheless, some strains of the yeast Saccharomyces cerevisiae can adapt to high concentrations of ethanol. Many..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

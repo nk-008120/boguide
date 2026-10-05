@@ -1,5 +1,6 @@
 ---
 title: "Q2 - Arabian Lizard Diversity"
+description: "The Arabian Peninsula is one of the world's hotspots of lizard diversity. Lizards occupy a wide variety of habitats and are therefore very diverse in..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

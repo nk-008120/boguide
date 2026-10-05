@@ -91,3 +91,5 @@ A central, unifying evo-devo argument, applicable to all three concepts above, i
 3. A gene's protein sequence is virtually identical between two very distantly related animal phyla, but the gene is expressed in a different set of tissues in each. Explain, using the concept of cis-regulatory evolution, why this pattern is common for deeply conserved developmental toolkit genes.
 4. Explain why mouse Pax6 being able to induce eye formation when expressed in a fly is considered stronger evidence of shared ancestry than simply noting that both species have eyes.
 5. Propose why a mutation directly altering a Hox gene's protein-coding sequence (used in patterning many different segments) would generally be more strongly selected against than a mutation altering that same gene's regulatory region controlling expression in just one segment.
+
+{{< related-questions >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q27 - Testing How Honeybees Measure Flight Distance for the Waggle Dance"
+description: "The honeybee (Apis mellifera) communicates the distance of a food source to others by dancing. The bee performs \"round dances\" when the feeder is within..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

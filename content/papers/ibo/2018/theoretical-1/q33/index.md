@@ -1,5 +1,6 @@
 ---
 title: "Q33 - Evolution of Annual vs Perennial Life-History in Nemesia"
+description: "Phylogenetic relationship among several species of the genus Nemesia (Scrophulariaceae), accompanied with geological time scale, is shown below. Predicted..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

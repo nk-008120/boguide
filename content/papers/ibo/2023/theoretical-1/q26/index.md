@@ -1,5 +1,6 @@
 ---
 title: "Q26 - Transgenic Male Sterility and Herbicide Resistance"
+description: "The question involves two transgenic plant lines, P1 and P2, that produce bisexual flowers."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q15 - Chloroplast DNA Haplotypes in a Rare Japanese Orchid"
+description: "Genetic variation in three chloroplast DNA (cpDNA) regions was studied in populations of a rare orchid Vexillabium yakushimense. Material from nine..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

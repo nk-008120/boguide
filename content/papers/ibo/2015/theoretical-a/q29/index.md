@@ -1,5 +1,6 @@
 ---
 title: "Q29 - Species Extinction on Islands Created by Reservoir Flooding"
+description: "In 1986-1987 in Thailand, a water reservoir was established by flooding a forest area. In the reservoir, former hilltops now became new islands and on 16..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

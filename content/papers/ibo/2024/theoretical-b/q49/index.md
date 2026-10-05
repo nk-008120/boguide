@@ -1,5 +1,6 @@
 ---
 title: "Q49 - CCHa1, Enteroendocrine Cells, and Sleep Arousal in Drosophila"
+description: "In fruit flies, dietary content affects arousal to mechanical vibrations during sleep, a process mediated by enteroendocrine cells in the gut (Figure 1)."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q18 - Transcriptional Attenuation of the E. coli trp Operon"
+description: "The tryptophan operon (trp operon) of E. coli is transcriptionally regulated by a repressor that is activated by the binding of tryptophan. The active..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

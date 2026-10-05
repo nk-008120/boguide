@@ -1,5 +1,6 @@
 ---
 title: "Q21 - Ventilation Rate vs Tidal Volume During Graded Exercise"
+description: "Figure Q.21 shows how lung ventilation is affected by physical activity. As the intensity of exercise increases, humans respond to the increased need for..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,0 +1,16 @@
+{{- $index := dict -}}
+{{- range site.RegularPages -}}
+  {{- if and (hasPrefix .RelPermalink "/papers/") (in .RawContent "papers-subject-tag") -}}
+    {{- $num := 0 -}}
+    {{- with findRE `\d+` .File.ContentBaseName 1 -}}{{- $num = int (index . 0) -}}{{- end -}}
+    {{- $sk := printf "%s%06d" .Parent.RelPermalink $num -}}
+    {{- $entry := dict "sk" $sk "page" . -}}
+    {{- range findRE `class="papers-subject-tag" href="[^"]+"` .RawContent -}}
+      {{- $href := lower (replaceRE `^.*href="([^"]+)"$` "$1" .) -}}
+      {{- $href = strings.TrimSuffix "/" $href -}}
+      {{- $list := index $index $href | default slice -}}
+      {{- $index = merge $index (dict $href ($list | append $entry)) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $index -}}

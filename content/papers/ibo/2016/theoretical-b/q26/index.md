@@ -1,5 +1,6 @@
 ---
 title: "Q76 - Temporal and Spatial Summation at a Postsynaptic Neuron"
+description: "Figure Q.76A shows neuron X receives signals directly from three separate nerve terminals b, c and d. Neuron Y receives signals from nerve terminal a."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

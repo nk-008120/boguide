@@ -1,5 +1,6 @@
 ---
 title: "Q43 - Saiga Nasal Anatomy and Wolf Predation"
+description: "Saigas (Saiga tatarica) are herding antelopes that have an enlarged nasal cavity. Figure 1 below shows computed tomographic (CT) sections of their head."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

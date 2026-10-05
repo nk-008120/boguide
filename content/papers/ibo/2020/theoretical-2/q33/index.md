@@ -1,5 +1,6 @@
 ---
 title: "Q33 - Diagnosing Whether a Tendril Is a Modified Leaf or Modified Stem"
+description: "Many climbing plants have tendrils, a thread-like organ specialized for winding around or clinging to a support. While tendrils are typically modified..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

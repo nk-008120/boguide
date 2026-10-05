@@ -1,5 +1,6 @@
 ---
 title: "Q16 - Diagnosing Missing DNA Replication Enzymes from Failed In Vitro Experiments"
+description: "In order to teach the principles and techniques of DNA replication, professor A instructed graduate students B and C to reproduce the classic experiment..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

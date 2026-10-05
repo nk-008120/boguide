@@ -1,5 +1,6 @@
 ---
 title: "Q34 - p53's Tetramer Threshold Guards Against Cancer"
+description: "The major ways by which the cell-cycle is regulated in all eukaryotes were discovered by British scientists. In humans, Cyclins (discovered by Sir Tim..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

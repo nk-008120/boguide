@@ -1,5 +1,6 @@
 ---
 title: "Q10 - 3D Bioprinting - Cell Viability, Bioluminescence, and Confocal Imaging"
+description: "To create in vitro analogues of live tissue, 3D bioprinters use what is called bioink. Bioink formulations combine live cells with different kinds of..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

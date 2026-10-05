@@ -1,5 +1,6 @@
 ---
 title: "Q49 - Transmission and Recovery Parameters in the SIR Model"
+description: "SIR model was developed by Kermack and McKendrick (1927) to explain dynamics of an infectious diseases. In this model, there are only three subgroups in..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

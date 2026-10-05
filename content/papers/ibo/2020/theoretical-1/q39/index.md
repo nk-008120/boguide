@@ -1,5 +1,6 @@
 ---
 title: "Q39 - MC1R Alleles and Coat-Color Adaptation in Peromyscus polionotus"
+description: "The Peromyscus polionotus inhabits the mainland of the Florida peninsula (Figure 1, locality 4) and has a dark-colored coat (Figure 1). In contrast, P...."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

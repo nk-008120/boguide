@@ -1,5 +1,6 @@
 ---
 title: "Q43 - CAM Photosynthesis and Carbon Limitation in an Aquatic Plant"
+description: "Crassula helmsii is a succesfull aquatic plant with CAM photosynthesis. In a cross-factorial study, including 2 light levels: LL and HL; and 2 CO₂ levels..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

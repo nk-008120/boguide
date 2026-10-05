@@ -1,5 +1,6 @@
 ---
 title: "Q27 - Diet Differences Between Island and Mainland Chough Populations"
+description: "The bird Red-billed Chough has a wide diet. It lives on the oceanic Spanish island La Palma (IS) and on mainland Spain (MA). The bird's diet on IS and MA..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

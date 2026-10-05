@@ -193,3 +193,5 @@ This distinction is a direct, mechanistic consequence of which axis segment's ce
 3. A seedling emerges with its cotyledons remaining buried below the soil surface while its epicotyl elongates upward. Identify the germination pattern and name a typical example species.
 4. Explain why ABA produced during seed maturation must be degraded or desensitized before germination, referencing the specific developmental outcome this prevents.
 5. Explain, in terms of the GA/ABA balance, why cold stratification and vernalization (from Photoperiodism) can be described as mechanistically parallel processes despite triggering different downstream developmental outcomes (germination vs. flowering).
+
+{{< related-questions >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q58 - TAK1 Kinase and Takinib - Competitive vs Non-Competitive Inhibition"
+description: "TAK1 is a protein kinase which transfers a phosphate group from ATP to a substrate. In order to elucidate the action mechanism of Takinib, a novel..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

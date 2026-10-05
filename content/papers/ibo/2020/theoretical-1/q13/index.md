@@ -1,5 +1,6 @@
 ---
 title: "Q13 - Bacterial Transcription Factors Coordinating Metabolic and Lifestyle Genes"
+description: "Bacteria regulate gene expression through transcription factors that sense environmental changes in order to adapt to the ever-changing environment. One..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

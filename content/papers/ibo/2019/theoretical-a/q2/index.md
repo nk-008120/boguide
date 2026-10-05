@@ -1,5 +1,6 @@
 ---
 title: "Q2 - CLK Mutation and Circadian PER Oscillations"
+description: "Hall, Rosbash and Young were awarded the 2017 Nobel Prize for their discoveries of the molecular mechanisms that control circadian rhythms. 'Period' (PER)..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

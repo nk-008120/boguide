@@ -1,5 +1,6 @@
 ---
 title: "Q8 - Which Kinetic and Environmental Data Explain Rubisco's Carboxylase/Oxygenase Balance"
+description: "Carbon assimilation in photosynthesis begins when Ribulose-bisphosphate carboxylase/oxygenase (Rubisco) binds one molecule of CO2 to Ribulose..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

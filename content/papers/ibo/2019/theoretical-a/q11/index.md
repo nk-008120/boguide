@@ -1,5 +1,6 @@
 ---
 title: "Q11 - Acid-Base Balance: Reading a Blood Gas Map"
+description: "The pH value of human blood is kept in a strict range, in order to maintain the vital functions of the body. There are three main mechanisms which can..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

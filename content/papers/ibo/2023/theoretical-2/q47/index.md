@@ -1,5 +1,6 @@
 ---
 title: "Q47 - Neanderthal Ancient DNA and Gene Flow"
+description: "The 2022 Nobel Prize was awarded for sequencing ancient DNA to study the human past. This work produced whole genomes of several Neanderthals and one..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

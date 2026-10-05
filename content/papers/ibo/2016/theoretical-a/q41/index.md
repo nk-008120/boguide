@@ -1,5 +1,6 @@
 ---
 title: "Q41 - Applying Hardy-Weinberg Equilibrium to the ABO Blood Group System"
+description: "Frequencies of the human ABO blood group alleles in a population are p(IA) = 40%, p(IB) = 40% and p(i) = 20%. Assuming that the population is in..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

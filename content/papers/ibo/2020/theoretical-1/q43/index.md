@@ -1,5 +1,6 @@
 ---
 title: "Q43 - Hox Gene Collinearity and Ubx Function Across Insect Lineages"
+description: "Proteins encoded by Hox genes share a 60-amino-acid DNA-binding motif, the homeodomain. In the fruit fly Drosophila melanogaster genome, eight Hox genes..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

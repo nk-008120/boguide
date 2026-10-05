@@ -99,3 +99,5 @@ Energetic strategy at the whole-animal level connects directly back to the fiber
 3. A horse increases speed and, at a specific point, switches from trot to gallop. Explain why this transition itself reduces the horse's cost of transport rather than simply reflecting its top trotting speed being reached.
 4. Explain why a kangaroo's cost of transport increases only modestly with hopping speed, referencing tendon elasticity.
 5. An animal transitions from a steady jog to a maximal sprint. Predict the shift in dominant muscle fiber type and energy system, referencing the Muscle Physiology page.
+
+{{< related-questions >}}

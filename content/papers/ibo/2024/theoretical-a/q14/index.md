@@ -1,5 +1,6 @@
 ---
 title: "Q14 - Latitudinal Diversity Gradient: Three Hypotheses"
+description: "The latitudinal diversity gradient describes a common pattern in the species richness seen in most groups of organisms whereby there are fewer species in..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

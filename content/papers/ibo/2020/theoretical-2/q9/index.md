@@ -1,5 +1,6 @@
 ---
 title: "Q9 - Identifying the Ohsumi Yeast Autophagy Mutant and Autophagic Body Contents"
+description: "All cells must constantly synthesize and degrade intracellular substances and structures, one of processes is autophagy. In autophagy, the intracellular..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

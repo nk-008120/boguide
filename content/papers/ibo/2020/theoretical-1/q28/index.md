@@ -1,5 +1,6 @@
 ---
 title: "Q28 - Southern Blot Evidence for Immunoglobulin Light-Chain Gene Rearrangement"
+description: "Immature lymphocyte B cells differentiate in an area of the peripheral lymph organ called the embryo center. Myeloma cells are tumor cells that produce..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

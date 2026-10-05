@@ -1,5 +1,6 @@
 ---
 title: "Q47 - Gut Passage and Germination of Mimosa Seeds Ingested by Goats"
+description: "Goats are fed with alfalfa and corn stubble. At time 0, they were also fed with Mimosa seeds. The presence of viable Mimosa seeds in goat faeces was..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

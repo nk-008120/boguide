@@ -1,5 +1,6 @@
 ---
 title: "Q44 - RFLP Pedigree Analysis"
+description: "Recombinant DNA & Biotechnology Techniques: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

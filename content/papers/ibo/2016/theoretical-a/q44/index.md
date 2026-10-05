@@ -1,5 +1,6 @@
 ---
 title: "Q44 - Temperature-Dependent Competitive Outcomes Between Two Salmonid Fishes"
+description: "Laboratory experiments were conducted to examine the effects of temperature on interspecific competition between two stream salmonid fishes, Salvelinus..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

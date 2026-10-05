@@ -1,5 +1,6 @@
 ---
 title: "Q35 - Hardy-Weinberg Expectations Across Generations of a Cross"
+description: "Two pure breeding lines of Species X were crossed (Fig.). For each generation, 100 000 plants were allowed to breed. For the generations F1, F2 and F7, a..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

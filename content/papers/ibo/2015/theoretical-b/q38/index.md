@@ -1,5 +1,6 @@
 ---
 title: "Q38 - Salinity and Genetic Structure Among Baltic Fish"
+description: "The marine transition area between the Bothnian Bay (the northernmost part of the Baltic Sea between Sweden and Finland) and the Eastern Atlantic ocean is..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

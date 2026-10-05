@@ -1,5 +1,6 @@
 ---
 title: "Q47 - Cost of Transport in Locomotion"
+description: "The efficiency of animal locomotion can be expressed in terms of the cost of transport (COT), derived from oxygen consumption versus velocity data. The..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

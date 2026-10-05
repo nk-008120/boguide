@@ -1,5 +1,6 @@
 ---
 title: "Q26 - Cardiac Cycle - Valve Timing and Pressure Changes"
+description: "The diagram shows the change in pressure over time in the left half of the heart and in the aorta. The duration of this cardiac cycle is 0.6 seconds. At..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

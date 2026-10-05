@@ -1,5 +1,6 @@
 ---
 title: "Q46 - Cost-Benefit Optimization of Animal Territory Size"
+description: "An animal's territory is an exclusive area defended by an individual to keep resources, such as food, and mates. Territory is different from home range..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q28 - Ancient DNA Extraction"
+description: "Imagine you need to sequence DNA from a 25,000-year-old bone specimen."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

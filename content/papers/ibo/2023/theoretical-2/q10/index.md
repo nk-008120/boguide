@@ -1,5 +1,6 @@
 ---
 title: "Q10 - Cardiac Cell 14C Dating"
+description: "The contribution of cell propagation to physiological heart growth and maintenance in humans has been difficult to study."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

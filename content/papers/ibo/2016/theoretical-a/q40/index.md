@@ -1,5 +1,6 @@
 ---
 title: "Q40 - Reconstructing Codon 38 of Tryptophan Synthetase from Revertant Analysis"
+description: "About 50 years ago, Charles Yanofsky studied the sequence of the tryptophan synthetase of E. coli. The wild type protein (1) has a glycine in position 38...."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

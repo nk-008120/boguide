@@ -1,5 +1,6 @@
 ---
 title: "Q8 - Gram Staining, Monoderms, Diderms and Firmicute Evolution"
+description: "Gram-staining has long been used to classify bacteria. Bacteria stain positively by the Gram method if they have a thick-enough layer of exposed..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

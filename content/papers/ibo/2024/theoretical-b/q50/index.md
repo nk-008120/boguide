@@ -1,5 +1,6 @@
 ---
 title: "Q50 - Bicoid, Exuperantia, and Body Axis Determination in Drosophila"
+description: "During Drosophila development, oogenesis establishes the body plan before fertilization."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

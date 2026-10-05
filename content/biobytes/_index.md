@@ -1,6 +1,6 @@
 ---
 title: "BiOBytes"
-description: "Frontier Reports on cutting-edge research, student testimonials, quick bites from our Instagram, and long-form articles from the BiOGuide team."
+description: "BiOHorizon Reports on cutting-edge research, student testimonials, quick bites from our Instagram, and long-form articles from the BiOGuide team."
 layout: "wide"
 aliases:
   - /bioinsights/
@@ -12,12 +12,12 @@ cascade:
 ---
 <div class="biobytes-wrapper">
 {{< tabs >}}
-{{< tab name="Frontiers" >}}
+{{< tab name="BiOHorizon" >}}
 <div class="fp">
 <div class="fp-hero">
-<p class="fp-kicker">The Frontier Project</p>
+<p class="fp-kicker">The BiOHorizon Project</p>
 <h2 class="fp-title">Read research the way researchers do</h2>
-<p class="fp-lede">Your textbook stops where the research begins. Frontier Reports pick up from there. Each one takes a single field, finds the most interesting results of the last couple of years, and walks you through what was actually <em>measured</em>, what was only <em>claimed</em>, how sure anyone is, and which part of the biology you are already studying the story rests on.</p>
+<p class="fp-lede">Your textbook stops where the research begins. BiOHorizon Reports pick up from there. Each one takes a single field, finds the most interesting results of the last couple of years, and walks you through what was actually <em>measured</em>, what was only <em>claimed</em>, how sure anyone is, and which part of the biology you are already studying the story rests on.</p>
 <div class="fp-promises">
 <div class="fp-promise"><span class="fp-promise-icon">🔎</span><span>Every claim traced to a source you can open</span></div>
 <div class="fp-promise"><span class="fp-promise-icon">⚖️</span><span>A counter-case in every story</span></div>
@@ -25,15 +25,15 @@ cascade:
 <div class="fp-promise"><span class="fp-promise-icon">🖼️</span><span>Real figures from the missions and labs, credited</span></div>
 </div>
 <div class="fp-btn-row">
-<a href="/biobytes/frontiers/astrobiology/" class="fp-btn">Astrobiology &rarr;</a>
-<a href="/biobytes/frontiers/drug-delivery/" class="fp-btn">Drug delivery &rarr;</a>
+<a href="/biobytes/horizon/astrobiology/" class="fp-btn">Astrobiology &rarr;</a>
+<a href="/biobytes/horizon/drug-delivery/" class="fp-btn">Drug delivery &rarr;</a>
 </div>
 </div>
 <div class="fp-section">
 <p class="fp-eyebrow">Why this exists</p>
 <h3 class="fp-h">The gap between the textbook and the lab</h3>
 <p class="fp-text">A syllabus is a snapshot. Somewhere between the chapter on cellular respiration and the headline about microbes on Mars sits a long chain of measurements, assumptions, arguments and corrections that nobody shows you. News coverage keeps the conclusion and drops the chain. We think the chain is the interesting part, and it is also the part that good Olympiad problems reward: reading a graph, asking what a control would look like, noticing that a result depends on a model.</p>
-<p class="fp-text">So each Frontier Report slows down on exactly those steps. You see the instrument, the numbers, the strongest objection, and the arithmetic behind the headline, and then you see which page of your notes explains the mechanism underneath.</p>
+<p class="fp-text">So each BiOHorizon Report slows down on exactly those steps. You see the instrument, the numbers, the strongest objection, and the arithmetic behind the headline, and then you see which page of your notes explains the mechanism underneath.</p>
 </div>
 <div class="fp-section">
 <p class="fp-eyebrow">What we are trying to do</p>
@@ -94,20 +94,20 @@ cascade:
 <p class="fp-eyebrow">The reports</p>
 <h3 class="fp-h">Read, and what is next</h3>
 <div class="fp-grid fp-grid-3">
-<a href="/biobytes/frontiers/astrobiology/" class="fp-report">
-<span class="fp-cover"><img src="/frontier/astrobio/exoplanet-k2-18b-illustration.webp" alt="" width="1280" height="720" loading="lazy" style="object-position: center"><span class="fp-cover-field">Astrobiology</span></span>
-<span class="fp-report-body"><span class="fp-badge">Frontier Report</span><span class="fp-report-title">The Search for Life, Right Now</span><span class="fp-report-text">Leopard spots on Mars, a contested gas on K2-18 b, fresh ocean chemistry from Enceladus, sugar on an asteroid, and a noise lab where you can watch a fluke fade.</span><span class="fp-report-meta">5 stories &middot; worked maths &middot; interactive lab</span><span class="fp-report-credit">Cover: illustration by NASA, CSA, ESA, J. Olmsted (STScI); science: N. Madhusudhan (Cambridge). Full credit in the report.</span><span class="fp-report-cta">Read the report &rarr;</span></span>
+<a href="/biobytes/horizon/astrobiology/" class="fp-report">
+<span class="fp-cover"><img src="/horizon/astrobio/exoplanet-k2-18b-illustration.webp" alt="" width="1280" height="720" loading="lazy" style="object-position: center"><span class="fp-cover-field">Astrobiology</span></span>
+<span class="fp-report-body"><span class="fp-badge">BiOHorizon Report</span><span class="fp-report-title">The Search for Life, Right Now</span><span class="fp-report-text">Leopard spots on Mars, a contested gas on K2-18 b, fresh ocean chemistry from Enceladus, sugar on an asteroid, and a noise lab where you can watch a fluke fade.</span><span class="fp-report-meta">5 stories &middot; worked maths &middot; interactive lab</span><span class="fp-report-credit">Cover: illustration by NASA, CSA, ESA, J. Olmsted (STScI); science: N. Madhusudhan (Cambridge). Full credit in the report.</span><span class="fp-report-cta">Read the report &rarr;</span></span>
 </a>
-<a href="/biobytes/frontiers/drug-delivery/" class="fp-report">
-<span class="fp-cover"><img src="/frontier/drug-delivery/crystalsoverlaid.webp" alt="" width="759" height="731" loading="lazy" style="object-position: center 52%"><span class="fp-cover-field">Drug delivery</span></span>
-<span class="fp-report-body"><span class="fp-badge">Frontier Report</span><span class="fp-report-title">From Screen to Body</span><span class="fp-report-text">An AI-designed drug in patients, proteins built against snake venom, a gene editor made for one baby, a brain shuttle, and the 2% endosome problem.</span><span class="fp-report-meta">5 stories &middot; worked maths &middot; interactive lab</span><span class="fp-report-credit">Cover: figure by Vázquez Torres et al., preprint version of the Nature paper, CC BY 4.0, cropped. Full credit in the report.</span><span class="fp-report-cta">Read the report &rarr;</span></span>
+<a href="/biobytes/horizon/drug-delivery/" class="fp-report">
+<span class="fp-cover"><img src="/horizon/drug-delivery/crystalsoverlaid.webp" alt="" width="759" height="731" loading="lazy" style="object-position: center 52%"><span class="fp-cover-field">Drug delivery</span></span>
+<span class="fp-report-body"><span class="fp-badge">BiOHorizon Report</span><span class="fp-report-title">From Screen to Body</span><span class="fp-report-text">An AI-designed drug in patients, proteins built against snake venom, a gene editor made for one baby, a brain shuttle, and the 2% endosome problem.</span><span class="fp-report-meta">5 stories &middot; worked maths &middot; interactive lab</span><span class="fp-report-credit">Cover: figure by Vázquez Torres et al., preprint version of the Nature paper, CC BY 4.0, cropped. Full credit in the report.</span><span class="fp-report-cta">Read the report &rarr;</span></span>
 </a>
-<a href="mailto:resourcerepository4boguide@gmail.com?subject=Frontier%20Report%20suggestion" class="fp-report fp-report-soon fp-report-ask">
+<a href="mailto:resourcerepository4boguide@gmail.com?subject=BiOHorizon%20Report%20suggestion" class="fp-report fp-report-soon fp-report-ask">
 <span class="fp-soon-icon">💡</span>
 <span class="fp-report-body"><span class="fp-badge">Your turn</span><span class="fp-report-title">Which field should be next?</span><span class="fp-report-text">Tell us a field, a question, or a paper you think deserves a closer look.</span><span class="fp-report-cta">Suggest a topic &rarr;</span></span>
 </a>
 </div>
-<p class="fp-text fp-small">Browse every report on the <a href="/biobytes/frontiers/">Frontier Reports page</a>. Spotted a mistake, or have a paper we should read? Email <a href="mailto:resourcerepository4boguide@gmail.com">resourcerepository4boguide@gmail.com</a>.</p>
+<p class="fp-text fp-small">Browse every report on the <a href="/biobytes/horizon/">BiOHorizon Reports page</a>. Spotted a mistake, or have a paper we should read? Email <a href="mailto:resourcerepository4boguide@gmail.com">resourcerepository4boguide@gmail.com</a>.</p>
 </div>
 </div>
 {{< /tab >}}

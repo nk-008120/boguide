@@ -1,5 +1,6 @@
 ---
 title: "Q85 - The methuselah Mutation and Stress Resistance in Drosophila"
+description: "Researchers used random insertion transposon mutagenesis to disrupt genomic DNA in fruit flies (D. melanogaster). One of the isolated mutants, called mth..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

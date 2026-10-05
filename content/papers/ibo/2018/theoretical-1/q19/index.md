@@ -1,5 +1,6 @@
 ---
 title: "Q19 - Thyroid Function Tests: TSH, T4, and T3RU"
+description: "Thyroid hormones are transported in blood by proteins. The TBG (thyroid hormone binding globulin) is the main thyroid hormone transporting protein. Many..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

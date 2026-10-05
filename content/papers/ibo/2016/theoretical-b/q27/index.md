@@ -1,5 +1,6 @@
 ---
 title: "Q77 - Tracing Endocrine Feedback Loops with Sensitivity-Altering Drugs"
+description: "A set of experiments on the regulation of hormone secretion and effects of various drugs on the activities of endocrine glands were conducted on rats...."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

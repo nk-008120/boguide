@@ -1,5 +1,6 @@
 ---
 title: "Q18 - Ant Invasion, Visibility, and a Lion-Zebra-Buffalo Trophic Cascade"
+description: "Symbiosis and trophic interactions are essential to maintain ecosystems. In this question, you will analyze the complex ecological relationship between..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

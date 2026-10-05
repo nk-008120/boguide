@@ -1,5 +1,6 @@
 ---
 title: "Q27 - Dog Body Size and the IGF1 Locus"
+description: "Domestic dogs (Canis lupus familiaris) are a subspecies of grey wolves (Canis lupus). Dogs are unique amongst mammal species for their extremely large..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

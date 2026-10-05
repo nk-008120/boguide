@@ -1,5 +1,6 @@
 ---
 title: "Q36 - Aethia cristatella - Courtship Display on Rocks"
+description: "Aethia cristatella are strictly monogamous birds, forming colonies during the breeding season and laying one egg in a nest under rocks after mating. Mated..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

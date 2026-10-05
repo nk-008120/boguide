@@ -1,5 +1,6 @@
 ---
 title: "Q37 - Auxin Transport and Apical Dominance"
+description: "Auxin promotes and cytokinins repress apical dominance. To further understand how auxin and its transport exert apical dominance, scientists treated nodal..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

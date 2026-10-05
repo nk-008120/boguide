@@ -1,5 +1,6 @@
 ---
 title: "Q3 - Shell Drilling Predation"
+description: "A fictional marine bivalve mollusk 'sea carpet bag' is a prey of carnivorous sea snails. The sea snails drill through bivalve shells to inject poison..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

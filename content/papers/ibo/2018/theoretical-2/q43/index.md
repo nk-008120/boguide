@@ -1,5 +1,6 @@
 ---
 title: "Q43 - The Godfrey-Smith Darwinian Space"
+description: "Peter Godfrey-Smith (2009) describes a parameter space in which a population can evolve using three parameters: H: Fidelity of heredity S: Dependence of..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -109,3 +109,5 @@ Mating systems are classified by how many mates each sex has across a breeding s
 3. Red deer antlers are used in direct physical combat between males and are also assessed by females during mate choice. Explain why this trait cannot be attributed to intrasexual selection or intersexual selection alone.
 4. A seahorse species has males that carry and gestate fertilized eggs in a brood pouch. Predict which sex should be more selective about mates and which should compete more intensely for mating opportunities, and justify your prediction.
 5. Explain why mate guarding behavior (a male remaining near a female after mating) is a predicted response to the risk of sperm competition, and describe what a researcher would expect to observe if female mating rate in a population were experimentally reduced.
+
+{{< related-questions >}}

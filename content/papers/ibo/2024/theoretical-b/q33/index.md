@@ -1,5 +1,6 @@
 ---
 title: "Q33 - PtrWOX4a and PtrVCS2 in Vascular Cambium Proliferation"
+description: "The vascular cambium is a plant tissue responsible for secondary growth by producing secondary xylem and phloem. Scientists studied how the genes PtrWOX4a..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

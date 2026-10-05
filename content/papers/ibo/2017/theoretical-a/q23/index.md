@@ -1,5 +1,6 @@
 ---
 title: "Q23 - Geometry and Gradients Set Calcium Flow at the Muscle Membrane"
+description: "Jean Hanson (1919-1973) discovered how muscles contract. Contraction is triggered by a build up of calcium in the cytoplasm, which is actively removed..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

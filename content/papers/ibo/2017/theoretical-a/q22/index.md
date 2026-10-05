@@ -1,5 +1,6 @@
 ---
 title: "Q22 - Mapping >12,000 Human Proteins Across Cell Organelles"
+description: "The location of proteins in a cell affects their function by determining which molecules they interact with. A collaboration of scientists in Sweden and..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

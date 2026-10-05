@@ -1,8 +1,9 @@
 ---
-title: "From Screen to Body: Drug Delivery Frontier Report"
+title: "From Screen to Body: Drug Delivery BiOHorizon Report"
 description: "A designed drug in patients, proteins built from scratch against snake venom, a gene editor made for one baby, a shuttle across the blood-brain barrier, and the 2% problem inside the cell. What was measured, what was only claimed, and where the molecule gets lost between the computer and the body."
-layout: "frontier"
+layout: "horizon"
 date: 2026-10-03
+aliases: ["/biobytes/frontiers/drug-delivery/"]
 ---
 
 {{< mathjax >}}
@@ -20,7 +21,7 @@ date: 2026-10-03
 </div>
 
 <div class="fr-hero">
-  <p class="fr-kicker">Frontier Report &middot; Drug Delivery &middot; October 2026</p>
+  <p class="fr-kicker">BiOHorizon Report &middot; Drug Delivery &middot; October 2026</p>
   <p class="fr-dek">Designing a molecule on a computer is getting fast. Getting it to work inside a living body is where most of the loss still happens. Over the last two years, a {{< term "generative-ai" >}}generative-AI{{< /term >}} drug reached patients, designed proteins neutralised snake toxins in mice, a gene editor was built for a single baby in six months, a receptor shuttle carried a drug across the {{< term "blood-brain-barrier" >}}blood-brain barrier{{< /term >}} into regulatory approval, and researchers measured how little RNA actually escapes inside a cell. This report separates what was <em>measured</em> from what was <em>claimed</em> and shows where each story plugs into the biology you are studying.</p>
   <div class="fr-pills">
     <span class="fr-pill">💊 5 stories</span>
@@ -91,7 +92,7 @@ In June 2025, *Nature Medicine* reported a {{< term "rct" >}}randomised, placebo
 The company Insilico Medicine used one AI platform (PandaOmics) to nominate TNIK as a target and another (Chemistry42) to propose the molecule. Those are the "in silico" steps, meaning done on a computer. Then came the part no computer can do: patients. The trial enrolled 71 people with IPF at multiple sites in China between July 2023 and June 2024 and gave them a placebo or rentosertib by mouth for 12 weeks. The main goal was safety; lung function was a secondary measure, tracked as forced vital capacity (FVC), the volume of air you can blow out after a full breath.<sup class="fr-ref"><a href="#ref-1">1</a></sup>
 
 <figure class="fr-fig fr-fig-wide">
-  <img src="/frontier/drug-delivery/followupscheme.webp" alt="Flow chart: 128 patients screened, 57 excluded, 71 randomised into four boxes (rentosertib 30 mg once daily 18, 30 mg twice daily 18, 60 mg once daily 18, placebo 17), each followed by the number who discontinued and the numbers in the safety and efficacy analyses." width="709" height="300" loading="lazy">
+  <img src="/horizon/drug-delivery/followupscheme.webp" alt="Flow chart: 128 patients screened, 57 excluded, 71 randomised into four boxes (rentosertib 30 mg once daily 18, 30 mg twice daily 18, 60 mg once daily 18, placebo 17), each followed by the number who discontinued and the numbers in the safety and efficacy analyses." width="709" height="300" loading="lazy">
   <figcaption><strong>Fig. 1.</strong> Patient flow in the rentosertib trial: how many were screened, randomised to each group, stopped treatment, and were analysed. <span class="fr-credit">Figure: from the rentosertib Phase IIa paper, <em>Nature Medicine</em> (2025), reproduced unaltered under CC BY-NC-ND 4.0. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12353801/">Source</a></span></figcaption>
 </figure>
 
@@ -156,7 +157,7 @@ This is the "easy" delivery case: a small molecule you swallow, which is why the
 In January 2025, *Nature* published work led by the Baker lab (University of Washington) and the Technical University of Denmark in which researchers used deep learning to design small proteins that bind three families of snake venom toxins called {{< term "three-finger-toxin" >}}three-finger toxins{{< /term >}}. The designed proteins neutralised toxins in the lab and protected mice from a lethal neurotoxin dose.<sup class="fr-ref"><a href="#ref-3">3</a></sup>
 
 <figure class="fr-fig fr-fig-narrow">
-  <img src="/frontier/drug-delivery/monocledcobra.webp" alt="A dark grey snake coiled on leaf litter with its head raised at the front of the coil." width="250" height="187" loading="lazy">
+  <img src="/horizon/drug-delivery/monocledcobra.webp" alt="A dark grey snake coiled on leaf litter with its head raised at the front of the coil." width="250" height="187" loading="lazy">
   <figcaption><strong>Fig. 2.</strong> A monocled cobra (<em>Naja kaouthia</em>), the species whose alpha-cobratoxin was one of the toxins targeted. A photograph of the animal, not data from the study. <span class="fr-credit">Photo: Akash M. Deshmukh, CC BY-SA 4.0 (share-alike applies to reuse). <a href="https://commons.wikimedia.org/wiki/File:Monocled_cobra_(cropped).jpg">Source</a></span></figcaption>
 </figure>
 
@@ -171,11 +172,11 @@ Instead of immunising an animal and harvesting antibodies, as traditional {{< te
 Only the top candidates were then made and tested in the lab. I read the open {{< term "preprint" >}}preprint{{< /term >}} version of this work, so numbers below come from it and the published paper may differ in detail.<sup class="fr-ref"><a href="#ref-3">3</a></sup>
 
 <figure class="fr-fig ">
-  <img src="/frontier/drug-delivery/crystalsoverlaid.webp" alt="Three rows labelled SHRT, LNG and CYTX_B10. Each has a centre image of two overlaid ribbon models of a designed protein bound to a toxin, flanked by two boxed close-ups of amino-acid side chains making contacts." width="759" height="731" loading="lazy">
+  <img src="/horizon/drug-delivery/crystalsoverlaid.webp" alt="Three rows labelled SHRT, LNG and CYTX_B10. Each has a centre image of two overlaid ribbon models of a designed protein bound to a toxin, flanked by two boxed close-ups of amino-acid side chains making contacts." width="759" height="731" loading="lazy">
   <figcaption><strong>Fig. 3.</strong> Crystal structures of three designed binders overlaid on their computer design models, with close-ups of contact points. Rows: (a) short-chain neurotoxin binder SHRT, (b) long-chain binder LNG, (c) cytotoxin binder CYTX_B10. The close match is what &quot;near-atomic agreement&quot; means. <span class="fr-credit">Figure: Vázquez Torres et al., preprint version of the <em>Nature</em> paper, CC BY 4.0. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11118692/">Source</a></span></figcaption>
 </figure>
 
-<div class="fr-viz fr-mol" id="fr-mol" data-pdb="/frontier/drug-delivery/9bk5.pdb">
+<div class="fr-viz fr-mol" id="fr-mol" data-pdb="/horizon/drug-delivery/9bk5.pdb">
   <h3>Try it: rotate a designed binder gripping its toxin</h3>
   <p class="fr-viz-intro">This is the real crystal structure behind row (b) of Fig. 3: the designed LNG binder holding alpha-cobratoxin. Drag to rotate and scroll to zoom. Switch on the contact residues to see which amino acids touch across the interface, or the toxin surface to see how snugly the binder sits on it.</p>
   <p class="fr-viz-status">Loading the 3D structure (needs JavaScript and WebGL)...</p>
@@ -307,11 +308,11 @@ The blood-brain barrier is a layer of tightly joined cells lining brain capillar
 
 <div class="fr-figs">
 <figure class="fr-fig ">
-  <img src="/frontier/drug-delivery/rmt.webp" alt="Line drawing of a cell layer between a blood side on top and a brain side below, with a tight junction at the left marked with a cross, a receptor-bound cargo taken in and carried across (route A), a hatched cationic molecule carried across (route B) and small nutrient molecules passing through membrane channels (route C)." width="1050" height="851" loading="lazy">
+  <img src="/horizon/drug-delivery/rmt.webp" alt="Line drawing of a cell layer between a blood side on top and a brain side below, with a tight junction at the left marked with a cross, a receptor-bound cargo taken in and carried across (route A), a hatched cationic molecule carried across (route B) and small nutrient molecules passing through membrane channels (route C)." width="1050" height="851" loading="lazy">
   <figcaption><strong>Fig. 4.</strong> Routes across the barrier cell. The gap between cells is sealed by tight junctions (cross). Route A: a cargo carried by a receptor (receptor-mediated transcytosis). Route B: positively charged molecules (adsorptive transcytosis). Route C: small nutrients through transporters. A concept drawing, not data. <span class="fr-credit">Figure: from the review of receptor-mediated transcytosis receptors, CC BY. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12363266/">Source</a></span></figcaption>
 </figure>
 <figure class="fr-fig ">
-  <img src="/frontier/drug-delivery/bbb.webp" alt="Line drawing of a drug carrier coated with antibodies crossing a curved barrier studded with transferrin receptors, then three arrows to neurons and astrocytes, to a glioma cell, and to neurons with a cofactor marked by a star." width="900" height="898" loading="lazy">
+  <img src="/horizon/drug-delivery/bbb.webp" alt="Line drawing of a drug carrier coated with antibodies crossing a curved barrier studded with transferrin receptors, then three arrows to neurons and astrocytes, to a glioma cell, and to neurons with a cofactor marked by a star." width="900" height="898" loading="lazy">
   <figcaption><strong>Fig. 5.</strong> Concept drawing of a carrier coated with antibodies against the transferrin receptor (TfR) crossing the barrier to reach neurons, astrocytes or glioma cells. Variants I to III add a second antibody (anti-HIR) or a cofactor. <span class="fr-credit">Figure: from the same review, CC BY. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12363266/">Source</a></span></figcaption>
 </figure>
 </div>
@@ -376,12 +377,12 @@ Stories 3 and 4 both end with a drug that has to leave a bubble. When a cell swa
 Measuring {{< term "endosomal-escape" >}}escape{{< /term >}} is hard because the RNA is invisible once it mixes into the cytosol. The 2013 study tracked fluorescently labelled siRNA in lipid nanoparticles by quantitative imaging and electron microscopy, in cells and in mouse liver.<sup class="fr-ref"><a href="#ref-8">8</a></sup> The 2025 study added iron oxide nanoparticles inside the lipid particles and followed their magnetic signal by {{< term "mri" >}}MRI{{< /term >}} in cultured cells and mice, as an indirect read-out of escape.<sup class="fr-ref"><a href="#ref-9">9</a></sup> A March 2026 *Nature Biotechnology* paper reports an {{< term "in-vivo" >}}in vivo{{< /term >}} assay built on mice that allow liver lysosomes to be isolated, with a "lysosomal barcoding" method, and from it a new {{< term "ionisable-lipid" >}}ionisable lipid{{< /term >}}, BiP-20.<sup class="fr-ref"><a href="#ref-11">11</a></sup> I read only the abstract-level summary of that paper.
 
 <figure class="fr-fig fr-fig-wide">
-  <img src="/frontier/drug-delivery/endosomalescape.webp" alt="Panels a and b are cell-and-vesicle schematics showing lipid nanoparticles entering by endocytosis and either staying trapped in the endosome or escaping to release RNA or iron oxide particles. Panels c to g are an infrared spectrum, a magnetisation curve, a bar chart of surface charge, a size distribution and electron micrographs of the particles." width="546" height="445" loading="lazy">
+  <img src="/horizon/drug-delivery/endosomalescape.webp" alt="Panels a and b are cell-and-vesicle schematics showing lipid nanoparticles entering by endocytosis and either staying trapped in the endosome or escaping to release RNA or iron oxide particles. Panels c to g are an infrared spectrum, a magnetisation curve, a bar chart of surface charge, a size distribution and electron micrographs of the particles." width="546" height="445" loading="lazy">
   <figcaption><strong>Fig. 6.</strong> How the 2025 MRI method works. (a) RNA in lipid nanoparticles must escape the endosome to work. (b) The same particles loaded with iron oxide: the magnetic signal changes as the iron is released. (c to g) Tests that characterise the particles, including electron micrographs. <span class="fr-credit">Figure: Lee et al., <em>Advanced Healthcare Materials</em> (2025), CC BY 4.0. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12645086/">Source</a></span></figcaption>
 </figure>
 
 <figure class="fr-fig fr-fig-tall">
-  <img src="/frontier/drug-delivery/endosomalescapem.webp" alt="Four stacked rows, A to D, of dark microscope images. Each row has a wide view of green cell material with small magenta speckles and a boxed region enlarged on the right, with scale bars." width="520" height="827" loading="lazy">
+  <img src="/horizon/drug-delivery/endosomalescapem.webp" alt="Four stacked rows, A to D, of dark microscope images. Each row has a wide view of green cell material with small magenta speckles and a boxed region enlarged on the right, with scale bars." width="520" height="827" loading="lazy">
   <figcaption><strong>Fig. 7.</strong> Fluorescence microscope images of cells, panels A to D, each with an enlarged inset. The meaning of the green and magenta channels is given in the original figure legend. <span class="fr-credit">Figure: from the 2022 <em>Journal of Cell Biology</em> article on endosomal escape of delivered mRNA. <a href="https://rupress.org/jcb/article/221/2/e202110137/212896/Endosomal-escape-of-delivered-mRNA-from-endosomal">Source</a></span></figcaption>
 </figure>
 

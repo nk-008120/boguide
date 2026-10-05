@@ -1,5 +1,6 @@
 ---
 title: "Q35 - Sequoia Tree Water Use Strategies"
+description: "Fluid dynamics put an upper limit on how high a tree's water column might exist, and above that limit, water transport in the xylem will be disrupted...."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

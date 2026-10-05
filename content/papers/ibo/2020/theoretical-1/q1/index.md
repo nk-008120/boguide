@@ -1,5 +1,6 @@
 ---
 title: "Q1 - Stereochemistry of Citrate and Isocitrate in the Aconitase Reaction"
+description: "The citric acid cycle is central to metabolism, for the supply energy and various key compounds. In citric acid cycle, the enzyme aconitase catalyzes the..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

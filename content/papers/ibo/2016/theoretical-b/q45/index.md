@@ -1,5 +1,6 @@
 ---
 title: "Q95 - Slug, Earthworm, and Vegetation-Type Effects on Forest Seedling Survival"
+description: "To understand the effects of several factors on plants (Agrimonia rostellata and Trillium erectum) in forest ecosystems, students transplanted seedlings..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

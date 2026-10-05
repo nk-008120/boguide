@@ -1,5 +1,6 @@
 ---
 title: "Q35 - Classifying Crossover Events from Linear Tetrad Data"
+description: "Centromere position can be mapped using linear tetrads in some fungi. If there is no cross-over between gene E and the centromere, four spores are..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

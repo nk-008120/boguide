@@ -1,5 +1,6 @@
 ---
 title: "Q33 - ABO Blood Group Compatibility in Transfusion"
+description: "In order to make safe blood transfusions, we have to know the blood types of both patient and donor. Mixing incompatible blood types is dangerous and may..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

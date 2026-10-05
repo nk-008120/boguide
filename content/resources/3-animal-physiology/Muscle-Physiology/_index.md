@@ -121,3 +121,5 @@ These three systems are not alternatives an animal chooses between but a **seque
 3. A muscle biopsy shows fibers with high mitochondrial density and myoglobin content. Classify the fiber type and predict its most likely functional role.
 4. Explain why lactate accumulates during intense anaerobic exercise, and name the energy system responsible.
 5. Explain why smooth muscle contraction is not triggered by troponin, naming the calcium-binding protein that substitutes for it and the kinase it activates.
+
+{{< related-questions >}}

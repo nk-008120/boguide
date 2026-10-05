@@ -98,3 +98,5 @@ In both cases root xylem matures **exarch** (the earliest-matured protoxylem lie
 3. Explain why root hairs are considered extensions of single epidermal cells rather than separate multicellular structures.
 4. Trace a mineral ion from the soil solution to the xylem, naming every tissue layer it crosses and identifying where it is forced from the apoplast into the symplast.
 5. Explain why lateral roots must grow through the cortex and epidermis to emerge, referencing where in the root they actually originate.
+
+{{< related-questions >}}

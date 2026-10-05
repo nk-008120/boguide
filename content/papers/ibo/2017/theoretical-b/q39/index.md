@@ -1,5 +1,6 @@
 ---
 title: "Q39 - Phosphocreatine and Glycolysis Power the 100m Sprint"
+description: "In the last few games, team GB has used sport science to finish second in Olympic and Paralympic medal tables. The running velocity of different..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

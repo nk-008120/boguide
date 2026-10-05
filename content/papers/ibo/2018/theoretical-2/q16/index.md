@@ -1,5 +1,6 @@
 ---
 title: "Q16 - Pedigree Analysis of Two Rare Traits"
+description: "The inheritance pattern of two rare traits, represented as vertical and horizontal lines, is shown in the pedigree below. Inheritance of one of the traits..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

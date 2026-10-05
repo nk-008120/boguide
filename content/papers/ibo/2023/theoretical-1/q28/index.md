@@ -1,5 +1,6 @@
 ---
 title: "Q28 - Xylem Embolism and Hydraulic Safety Margins"
+description: "\"Embolism\" in xylem vessels means the presence of air-filled tracheids and/or vessels. Embolisms can result in a substantial impairment of xylem transport..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

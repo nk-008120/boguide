@@ -1,5 +1,6 @@
 ---
 title: "Q32 - Zinc and Iron Interactions in Arabidopsis Micronutrient Toxicity"
+description: "Zinc (Zn) and iron (Fe) are both micronutrients for plants. Plants obtain Zn and Fe ions from soil through the root system, and transport them to the..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

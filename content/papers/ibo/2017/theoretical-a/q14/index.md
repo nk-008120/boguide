@@ -1,5 +1,6 @@
 ---
 title: "Q14 - Seasonal Gene Expression in Cork Formation"
+description: "Cork oak (Quercus suber) produces suberin, a highly resistant material, from fatty acids, and uses it to reinforce the cell walls of cork. The expression..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

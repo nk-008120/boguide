@@ -1,5 +1,6 @@
 ---
 title: "Q21 - Which Animal Viruses Must Package an Enzyme Inside the Capsid"
+description: "Animal viruses are classified by the nucleic acid contained in the capsid. In addition to nucleic acid, some viruses contain enzyme proteins, such as RNA..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

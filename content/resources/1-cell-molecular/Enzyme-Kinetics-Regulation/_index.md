@@ -181,3 +181,5 @@ $\alpha = K_m^{app}/K_m = 60/20 = 3$. Since $\alpha = 1 + [I]/K_I$, this gives $
 **3.** Sketch (conceptually) how the Lineweaver-Burk plot changes as increasing concentrations of a mixed inhibitor with $K_I \ll K_I'$ (much stronger binding to free E than to ES) are added. Which pure inhibition type does this mixed case approach in the limit?
 
 **4.** An enzyme's specificity constant $k_{cat}/K_m$ measured for two substrates differs by 100-fold, yet both substrates give the same $V_{max}$ when saturating. Explain how this is possible, and identify which kinetic parameter must differ between the two substrates.
+
+{{< related-questions >}}

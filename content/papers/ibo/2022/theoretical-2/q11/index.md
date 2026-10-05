@@ -1,5 +1,6 @@
 ---
 title: "Q61 - RNA Virus Replication Cycles - Genome Classification"
+description: "Based on the structure of their genome and specific features of the replication process, RNA viruses are divided into the following groups:"
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

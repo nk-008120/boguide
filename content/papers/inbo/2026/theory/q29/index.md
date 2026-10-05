@@ -1,5 +1,6 @@
 ---
 title: "Q29 - Proteolytic Enzyme Substrate Specificity"
+description: "Enzyme Kinetics & Regulation: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q29 - The Bohr Effect - Oxygen-Haemoglobin Dissociation"
+description: "The amount of oxygen transported by haemoglobin is affected by the partial pressure of oxygen and carbon dioxide. Under conditions of high partial..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

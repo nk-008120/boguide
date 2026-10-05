@@ -119,3 +119,5 @@ graph TD;
 3. Rank ammonia, urea, and uric acid by water cost of excretion, and explain why an actively flying bird's nitrogenous waste choice is not a coincidence.
 4. A drop in blood pressure is detected at the juxtaglomerular apparatus. Trace every step from this detection to the restoration of blood pressure.
 5. Classify the depolarization phase of a neuron's action potential as negative or positive feedback, and justify your answer using the definition of each.
+
+{{< related-questions >}}

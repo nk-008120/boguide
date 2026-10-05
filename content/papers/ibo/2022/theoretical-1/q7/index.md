@@ -1,5 +1,6 @@
 ---
 title: "Q7 - Apoptosis - p53/Bax/Bcl-2 Pathway Under Hypoxia"
+description: "Hypoxia is a hallmark of solid tumors and plays a critical role in different steps of tumor progression. To develop an effective treatment against..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

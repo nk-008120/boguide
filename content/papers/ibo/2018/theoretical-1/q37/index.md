@@ -1,5 +1,6 @@
 ---
 title: "Q37 - Trophy Hunting and Bighorn Sheep Horn Size"
+description: "Bighorn sheep (Ovis canadensis), the males of which are famous for their magnificent curl of horns, live in North America. Their hunting was restricted in..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

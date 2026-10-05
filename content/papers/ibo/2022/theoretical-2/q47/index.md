@@ -1,5 +1,6 @@
 ---
 title: "Q97 - Telomerase-Dependent vs Alternative Telomere Lengthening in Testis"
+description: "There are two mechanisms of telomere lengthening in a cell: the telomerase-dependent (TEL) pathway and the alternative telomere-lengthening (ALT) pathway...."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

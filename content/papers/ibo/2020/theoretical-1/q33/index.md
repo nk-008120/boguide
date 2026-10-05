@@ -1,5 +1,6 @@
 ---
 title: "Q33 - A CYCLOIDEA-like Gene Controlling Floral Symmetry in Sunflower"
+description: "While snapdragon normally has bilateral flowers, flowers of its mutant defective in gene G lose bilateral symmetry and have radial symmetry, thereby..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

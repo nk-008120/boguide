@@ -1,5 +1,6 @@
 ---
 title: "Q6 - Nernst Potentials and Ion Transport Direction in Root Epidermal Cells"
+description: "For the growth of plants, the supply of nutrient inorganic ions is essential. A certain crop was grown in two different soils (X, Y). The concentrations..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

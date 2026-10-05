@@ -1,5 +1,6 @@
 ---
 title: "Q42 - Electric Eel Prey Detection"
+description: "Electric eels (Electrophorus electricus) are predatory fish that utilize electrical and mechanical signals during hunting. They emit two types of..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

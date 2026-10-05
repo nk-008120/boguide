@@ -112,3 +112,5 @@ A pollen grain landing on a receptive stigma germinates a **pollen tube**, which
 3. Name the two cells within a mature pollen grain and state the fate of each after the pollen tube reaches the embryo sac.
 4. Explain why the primary endosperm nucleus is triploid while the zygote is diploid, tracing both back to the same pollen tube's sperm delivery.
 5. A cross-section shows ovules attached along a central axis in an ovary with several internal septa. Identify the placentation type.
+
+{{< related-questions >}}

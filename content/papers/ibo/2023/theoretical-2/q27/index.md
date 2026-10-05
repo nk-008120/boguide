@@ -1,5 +1,6 @@
 ---
 title: "Q27 - Gene Regulation by Protein Y"
+description: "The regulatory region of a bacterial gene, called 'A', is shown below. The promoter (P) and regulatory region (R) regulate the transcription of the gene."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

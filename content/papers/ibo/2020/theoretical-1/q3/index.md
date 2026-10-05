@@ -1,5 +1,6 @@
 ---
 title: "Q3 - Carbon Isotope Fractionation in C3 versus C4 Photosynthesis"
+description: "When carbon isotopes (13C and 12C) are analyzed, plants can be categorized into two groups (Figure 1), based on the isotope fractionation (d13C, equation..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

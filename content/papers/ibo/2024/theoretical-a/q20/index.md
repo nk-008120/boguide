@@ -1,5 +1,6 @@
 ---
 title: "Q20 - Haploid/Diploid Organisms and Multi-Allele Genetics"
+description: "Imagine a planet inhabited by animal-like creatures capable of both meiosis and mitosis, where the fundamental principles of genetics apply. This species..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

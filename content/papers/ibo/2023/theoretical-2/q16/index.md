@@ -1,5 +1,6 @@
 ---
 title: "Q16 - Cell Surface-to-Volume Ratio"
+description: "The size of a single cell can range from a mycoplasma, which is considered the smallest cell, to a giant skeletal muscle fiber or ostrich egg."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

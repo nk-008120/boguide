@@ -1,5 +1,6 @@
 ---
 title: "Q14 - Aral Sea Food-Chain Restoration and Salinity Tolerance"
+description: "The Aral Sea, located in the southwest of Kazakhstan, was one of the largest salt lakes in the world before drying out. Today, the Aral Sea has two..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

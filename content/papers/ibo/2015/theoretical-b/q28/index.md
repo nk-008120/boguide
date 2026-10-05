@@ -1,5 +1,6 @@
 ---
 title: "Q28 - Bumblebee-Flower Mismatch Under Climate Warming"
+description: "High-altitude Rocky Mountains (U.S.A.) bumblebee communities were studied 40 years ago and again today, and a set of changes was noted, and these were..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q66 - Comparing Lead Toxicity Thresholds for Growth and Photosynthesis in Two Microalgae"
+description: "A study on the effects of lead (Pb), a toxic heavy metal, on growth and photosynthesis of two microalgae, Chlorella and Scenedesmus was conducted. The..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

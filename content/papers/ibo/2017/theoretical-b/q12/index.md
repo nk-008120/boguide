@@ -1,5 +1,6 @@
 ---
 title: "Q12 - Osmolarity, Not Volume, Dominates Fast Kidney Responses"
+description: "Ernest Verney (1894-1967) explained the regulation of urine production. At the indicated time, dogs (Canis lupus familiaris) were given equal volumes of..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

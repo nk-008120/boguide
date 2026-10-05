@@ -1,5 +1,6 @@
 ---
 title: "Q43 - Liver Lobule Zonation and Bile Flow"
+description: "In the liver lobule, 75% of the blood comes via the portal vein located within the portal triad, and 25% comes from the hepatic artery. The portal triad..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

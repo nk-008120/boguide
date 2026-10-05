@@ -1,5 +1,6 @@
 ---
 title: "Q24 - Nitric Oxide and Guard Cell K+ Currents"
+description: "Electrophysiological measurements were carried out on bean guard cells to measure outward K+ currents and how they are modified by various factors. Assume..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

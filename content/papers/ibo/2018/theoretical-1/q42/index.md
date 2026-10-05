@@ -1,5 +1,6 @@
 ---
 title: "Q42 - Ecological Pyramids of Energy and Biomass"
+description: "One of the basic ways to illustrate trophic relationship in an ecosystem is to use pyramids of energy and biomass, which are the stack of rectangles. Each..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

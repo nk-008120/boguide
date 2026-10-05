@@ -1,5 +1,6 @@
 ---
 title: "Q10 - Altitude Adaptation in Deer Mouse Hemoglobin"
+description: "Deer mice have a wide geographic range, e.g. with respect to altitude. This is partly explained by their respiratory physiology (Fig.)."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

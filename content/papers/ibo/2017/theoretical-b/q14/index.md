@@ -1,5 +1,6 @@
 ---
 title: "Q14 - Using Inulin Clearance to Measure Kidney Filtration"
+description: "Inulins are inert polysaccharides which cannot cross cell membranes. Inulins were infused into a human vein at a constant rate of 0.2 moles per minute...."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

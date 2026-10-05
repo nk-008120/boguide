@@ -1,5 +1,6 @@
 ---
 title: "Q7 - Feedback Regulation of the PHB Synthesis Pathway"
+description: "Poly(3-hydroxybutyrate) (PHB) is a bacterial storage material which is accumulated by various bacteria, usually when grown under limitation of a nutrient..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -5,9 +5,9 @@
   <aside class="hextra-sidebar-container" hidden></aside>
   <div class="focus-reader-root" id="focus-reader-root" data-back="{{ .Parent.RelPermalink }}">
     <div class="focus-reader-topbar">
-      <a class="focus-reader-exit" href="{{ .Parent.RelPermalink }}">← {{ .Parent.Title }}</a>
+      <a class="focus-reader-exit" href="{{ .Parent.RelPermalink }}">{{ partial "icon.html" "arrow-left" }} {{ .Parent.Title }}</a>
       <div class="focus-reader-topnav" id="focus-reader-topnav"></div>
-      <button type="button" id="focus-reader-fs-btn" class="papers-nav-btn">⛶ Fullscreen</button>
+      <button type="button" id="focus-reader-fs-btn" class="papers-nav-btn">{{ partial "icon.html" "maximize" }} <span class="focus-reader-fs-label">Fullscreen</span></button>
     </div>
     <div class="focus-reader-content-wrap">
       <main id="focus-reader-content" class="content focus-reader-content">

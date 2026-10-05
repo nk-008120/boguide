@@ -1,5 +1,6 @@
 ---
 title: "Q23 - ACE2/CTS1 Mutations and Multicellularity in Yeast"
+description: "Sometimes a formation of multicellular, organized structures can be observed in baker's yeast (Saccharomyces cerevisiae) in which newly divided yeast..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

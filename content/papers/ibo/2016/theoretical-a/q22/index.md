@@ -1,5 +1,6 @@
 ---
 title: "Q22 - Predicting Action Potential Changes from Altered Ion Conditions"
+description: "In an experiment, a researcher isolated a neuron and placed it in the standard Ringer solution (isotonic physiological solution). He measured the resting..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

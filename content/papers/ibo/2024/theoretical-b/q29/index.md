@@ -1,5 +1,6 @@
 ---
 title: "Q29 - Cas9 Target Sites, Donor Design, and Mutation Severity"
+description: "Cas9 is an enzyme utilized in genome engineering, where it cleaves the DNA at sites complementary to the gRNA sequence. To cleave the DNA, Cas9 requires..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

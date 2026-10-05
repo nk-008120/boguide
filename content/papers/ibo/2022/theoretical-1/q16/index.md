@@ -1,5 +1,6 @@
 ---
 title: "Q16 - Flower Structure - Symmetry, Pollination, and Calyx"
+description: "Flower Anatomy & Reproductive Structures: an IBO 2022 Theoretical 1 practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

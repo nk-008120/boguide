@@ -89,3 +89,5 @@ Mitosis is disrupted, likely arresting the cell at the point of chromosome captu
 **2.** A neuron's axon shows normal outward (cell-body-to-synapse) vesicle transport but severely impaired return transport of used synaptic vesicle components back to the cell body. Which motor protein is most likely nonfunctional, and along which filament type does it operate?
 
 **3.** Explain why intermediate filaments, despite providing critical mechanical support, are not used by the cell as tracks for directed cargo transport the way microtubules and microfilaments are: what structural property of intermediate filaments makes them unsuitable for this role?
+
+{{< related-questions >}}

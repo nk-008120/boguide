@@ -1,5 +1,6 @@
 ---
 title: "Q34 - Environmental DNA and Acoustic Detection of Harbour Porpoises"
+description: "Use of environmental DNA (eDNA) is a new tool in tracking of marine organisms. In a study, a base sequence from the mitochondria of the cetacean Harbour..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

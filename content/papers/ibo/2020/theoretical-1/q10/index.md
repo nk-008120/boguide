@@ -1,5 +1,6 @@
 ---
 title: "Q10 - Cytosine Deamination and Why Uracil Is Excluded from DNA"
+description: "There are four types of bases used for RNA - A, C, G and U - while for DNA there are four types of bases, A, C, G, and T. I wondered why thymine T could..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

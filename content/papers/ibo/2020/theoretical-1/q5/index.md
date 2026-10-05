@@ -1,5 +1,6 @@
 ---
 title: "Q5 - ATP-Dependent Na+ Efflux in the Squid Giant Axon"
+description: "ATP is an important energy source for maintaining normal membrane potential in nerve cells. Figure 1 shows the result of an experiment demonstrating Na+..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

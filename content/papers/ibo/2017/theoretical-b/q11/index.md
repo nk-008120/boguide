@@ -1,5 +1,6 @@
 ---
 title: "Q11 - Diagnosing Heart Disease from Pressure-Volume Loops"
+description: "The pressure and volume of beating ventricles can be measured as they change with time. Recordings (1) and (2) are from the same resting, healthy heart..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

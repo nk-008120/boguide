@@ -1,5 +1,6 @@
 ---
 title: "Q43 - Polygenic Inheritance of Plant Height"
+description: "Quantitative Genetics, Heritability & Inbreeding: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

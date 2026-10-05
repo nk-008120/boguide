@@ -1,5 +1,6 @@
 ---
 title: "Q9 - Nuclear Import of the ErbB-2 Receptor"
+description: "ErbB-2 is a receptor found on the plasma membrane of mammalian cells which can move from the plasma membrane to the nucleus. Because most proteins that..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q13 - Nitrogen Limitation of Legumes in Steppes"
+description: "Legumes can fix nitrogen from the air. Anecdotal evidence showed industrial pollution with nitrogen and other macronutrients making legumes less fit for..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

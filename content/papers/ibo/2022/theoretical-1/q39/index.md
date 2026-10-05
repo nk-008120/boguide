@@ -1,5 +1,6 @@
 ---
 title: "Q39 - Mutation Rates - Asexual vs. Sexual Yeast Populations"
+description: "To understand the molecular mechanisms behind the origins of adaptation during asexual and sexual reproduction, scientists studied mutations in asexually..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

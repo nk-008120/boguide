@@ -108,3 +108,5 @@ Glucose uptake via the symporter falls. The Na⁺/glucose symporter is a seconda
 **2.** A red blood cell (no cell wall) is placed in a hypotonic solution. Predict its fate, and contrast this with what would happen to a plant cell placed in the same solution.
 
 **3.** Explain why a channel protein generally achieves a higher transport rate (molecules/second) than a carrier protein for the same solute concentration gradient, in terms of the mechanistic difference between the two protein types.
+
+{{< related-questions >}}

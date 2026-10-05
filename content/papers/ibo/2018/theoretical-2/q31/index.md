@@ -1,5 +1,6 @@
 ---
 title: "Q31 - Effect of Body Temperature on Canine ECG Intervals"
+description: "Electrocardiography is a method to study the electrical activity of the heart (ECG). In addition to P, QRS and T waves, there are segments and intervals..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

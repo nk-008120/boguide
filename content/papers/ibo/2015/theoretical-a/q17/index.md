@@ -1,5 +1,6 @@
 ---
 title: "Q17 - An Adenosine Analogue as a Filovirus Therapeutic"
+description: "Filoviruses, e.g. Ebola (EBOV) and Marburg (MAR), cause haemorrhagic fever. Case fatality rates are >90%, and among the highest reported for any human..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

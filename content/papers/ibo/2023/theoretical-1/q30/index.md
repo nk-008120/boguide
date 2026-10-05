@@ -1,5 +1,6 @@
 ---
 title: "Q30 - Wheat Nitrogen Assimilation Under Elevated CO2"
+description: "Wheat is grown on more land area than any other food crop, and it receives about 20% of the world's nitrogen fertilizer."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

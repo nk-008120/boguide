@@ -1,5 +1,6 @@
 ---
 title: "Q28 - Carbon Dioxide Transport in the Blood"
+description: "The diagram shows the mechanism of transport of carbon dioxide in the blood."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q26 - Mercury Bioaccumulation Across the Marine Food Chain"
+description: "The World Health Organisation (WHO) recommends a Maximum acceptable Daily Intake (MDI) of 0.1 microgram Hg (Mercury) per kg consumer body mass...."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

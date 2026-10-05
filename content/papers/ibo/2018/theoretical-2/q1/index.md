@@ -1,5 +1,6 @@
 ---
 title: "Q1 - Human SNP Haplotype Blocks"
+description: "The HapMap project was designed to estimate the amount of variation among the genomes of different individuals. One of the outcomes of the project was..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q25 - A Seabird-Mediated Nutrient Cascade on an Atoll"
+description: "The fragility of an ecological food chain is examined on an atoll, where native forest was replaced by coconut palms (Fig.). This created a problem for..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

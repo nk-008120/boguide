@@ -1,5 +1,6 @@
 ---
 title: "Q24 - Comparative Liver Anatomy - Zebrafish vs. Human"
+description: "During the evolution of vertebrates, changes in the structure of organs and organ systems have occurred."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

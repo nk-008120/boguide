@@ -87,3 +87,5 @@ All F1 offspring will be **sinistral**, matching the mother's *phenotype* even t
 **2.** A geneticist finds that a mitochondrial disease is present in all the children of an affected mother, but never appears in the children of an affected father (with an unaffected mother). Explain this pattern mechanistically, and state why it cannot be explained by X-linked inheritance despite the superficial similarity.
 
 **3.** Two individuals each carry an identical deletion on the same region of chromosome 15, but one inherited it from their mother and shows Angelman syndrome, while the other inherited it from their father and shows Prader-Willi syndrome. Explain how identical DNA changes can produce different phenotypes depending on parental origin.
+
+{{< related-questions >}}

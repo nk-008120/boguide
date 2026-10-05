@@ -1,5 +1,6 @@
 ---
 title: "Q100 - Cold-Exposure Duration, Acclimation and Mollusc Survival"
+description: "One of the modern environmental problems is the spread of invasive alien species, the success of which is due to the adaptive properties of these species...."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q25 - X-Linked Trait Allele Mixing and Pedigree Probability"
+description: "A unique phenotype associated with enhanced performance in labyrinth tasks has been identified in mice. The trait is X-linked."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

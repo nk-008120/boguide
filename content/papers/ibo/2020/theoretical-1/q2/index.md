@@ -1,5 +1,6 @@
 ---
 title: "Q2 - Respiratory Control in Isolated Mitochondria: ADP, DNP and DCCD"
+description: "The figure 1 illustrated below shows oxygen consumption (respiration) in aqueous suspension of intact animal mitochondria with additions of ADP or..."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

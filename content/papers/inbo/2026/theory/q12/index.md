@@ -1,5 +1,6 @@
 ---
 title: "Q12 - Bat Kidney Morphology and Diet"
+description: "Comparative Osmoregulation & Excretion: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

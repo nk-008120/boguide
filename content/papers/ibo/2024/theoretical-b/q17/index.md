@@ -1,5 +1,6 @@
 ---
 title: "Q17 - Incompatible Insect Technique and Wolbachia-Induced Cytoplasmic Incompatibility"
+description: "The incompatible insect technique (IIT) controls harmful insects by inducing mating incompatibility with the use of Wolbachia bacteria. Wolbachia kills..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

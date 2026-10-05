@@ -1,5 +1,6 @@
 ---
 title: "Q36 - Reconciling Two Independent Legume Phylogenies"
+description: "One of the main purposes of phylogenetics is to construct trees that represent the evolutionary relationships of taxa. A major challenge is combining..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

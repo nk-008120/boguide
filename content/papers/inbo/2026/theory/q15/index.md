@@ -1,5 +1,6 @@
 ---
 title: "Q15 - Food Hoarding vs Fat Storage Under Uncertainty"
+description: "Foraging & Anti-Predator Behavior: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

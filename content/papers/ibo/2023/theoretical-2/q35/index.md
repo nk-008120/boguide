@@ -1,5 +1,6 @@
 ---
 title: "Q35 - Primate Mating Systems"
+description: "In many species of nonhuman primates, morphology, social behaviour and mating system are tightly interlinked, making it possible to predict some traits..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q92 - Hawk-Dove-Retaliator Game Theory and Evolutionarily Stable Strategies"
+description: "In their seminal paper from 1973, J.M. Smith and G.R. Price used computer modeling to investigate intraspecific animal interactions. They assumed two..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

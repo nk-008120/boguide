@@ -125,3 +125,5 @@ A **reflex arc** is the minimal circuit producing a rapid, stereotyped, involunt
 3. Explain why myelin loss (as in demyelinating disease) slows nerve conduction, referencing the distribution of voltage-gated channels.
 4. Trace the phototransduction cascade from a photon striking rhodopsin to a change in neurotransmitter release, explaining why the net effect is a decrease rather than increase in release.
 5. Diagram a monosynaptic reflex arc for the patellar reflex, labeling each of the five components and explaining why this arc is faster than an equivalent voluntary movement.
+
+{{< related-questions >}}

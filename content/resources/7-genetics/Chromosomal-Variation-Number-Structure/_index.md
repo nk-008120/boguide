@@ -99,3 +99,5 @@ A balanced translocation carrier has no net loss or gain of genetic material (al
 **2.** A plant breeder crosses two different diploid species to produce a sterile interspecific hybrid, then treats the hybrid with a chemical that induces chromosome doubling. Explain why the resulting polyploid is fertile when the original hybrid was not, and name this type of polyploidy.
 
 **3.** A geneticist observes a recessive phenotype in an individual who, based on both parents' genotypes, should be heterozygous (and therefore phenotypically unaffected) for that gene. Karyotyping reveals a small deletion on one homolog spanning the gene in question. Explain this result using the concept of pseudodominance.
+
+{{< related-questions >}}

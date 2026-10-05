@@ -1,5 +1,6 @@
 ---
 title: "Q3 - Membrane Fluidity and Gel-to-Fluid Transition"
+description: "Lipids & Membrane Biochemistry: an INBO 2026 Theory practice question, with step-by-step solutions on BiOrchive."
 ---
 
 {{< problem-meta category="Theory" >}}

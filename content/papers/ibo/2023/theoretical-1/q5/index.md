@@ -1,5 +1,6 @@
 ---
 title: "Q5 - Desert March Dehydration and SIADH"
+description: "In an experiment, soldiers were ordered to march through a hot desert until exhaustion (they were then retrieved and given a reward)."
 ---
 
 {{< problem-meta category="Theoretical 1" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

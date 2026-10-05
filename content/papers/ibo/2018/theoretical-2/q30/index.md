@@ -1,5 +1,6 @@
 ---
 title: "Q30 - Circulatory and Filter-Feeding Anatomy of Amphioxus"
+description: "Amphioxus (lancelet) is a marine slender, laterally compressed and translucent filter-feeder deutrostome that inhabits the sandy bottoms of coastal waters..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

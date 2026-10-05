@@ -89,3 +89,5 @@ This is not a purely academic distinction: it's a direct, concrete illustration 
 3. Explain, citing blastopore fate, why Echinodermata is grouped with Chordata as a deuterostome despite looking structurally nothing like a chordate as an adult.
 4. Explain why "Aves" is best understood as a clade nested within Sauropsida rather than as a class coordinate with "Reptilia."
 5. A student claims fungi are more closely related to plants because both are commonly found rooted/attached and not motile. Identify the flaw in this reasoning using vocabulary from the cladistics page.
+
+{{< related-questions >}}

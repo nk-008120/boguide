@@ -1,5 +1,6 @@
 ---
 title: "Q14 - Symplastic vs Apoplastic Phloem Loading of Sucrose"
+description: "Sucrose is produced in leaves and translocated short and long distances through veins to non-photosynthetic organs such as roots, stems, flowers and..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

@@ -1,5 +1,6 @@
 ---
 title: "Q3 - Reading Lung and Kidney Disease from Blood Gas Values"
+description: "Blood pH must be tightly controlled. To achieve this, the lungs excrete CO from the body and the kidneys alter 2 3- blood HCO levels. The blood chemistry..."
 ---
 
 {{< problem-meta category="Theoretical B" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

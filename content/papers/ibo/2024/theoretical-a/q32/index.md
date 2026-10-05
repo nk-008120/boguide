@@ -1,5 +1,6 @@
 ---
 title: "Q32 - Poaceae Stomata Synchronization Mechanism"
+description: "Poaceae (grass family) stomata have a \"dumbbell\" shape and a stronger connection between guard and subsidiary cells. Due to this adaptation, they respond..."
 ---
 
 {{< problem-meta category="Theoretical A" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

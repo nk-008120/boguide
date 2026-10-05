@@ -1,5 +1,6 @@
 ---
 title: "Q4 - Predicting Sedimentation and Flotation Behavior in Three Centrifugation Setups"
+description: "Here is a mixture containing viruses, globular proteins, and cell nuclei, which are all assumed to have similar densities of approximately 1.3 g/mL. We..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}

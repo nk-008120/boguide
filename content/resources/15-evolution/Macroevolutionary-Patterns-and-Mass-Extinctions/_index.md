@@ -100,3 +100,5 @@ Mass extinctions are macroevolutionarily significant beyond the immediate loss i
 3. Explain why the horse fossil lineage's history is considered a cautionary example against assuming that a clade-level size-increase trend reflects one single, gradually transforming lineage.
 4. Explain what specific geological evidence supports an asteroid impact as the primary cause of the End-Cretaceous mass extinction, distinguishing it from the Siberian-Traps-volcanism evidence associated with the End-Permian event.
 5. Explain, mechanistically, why removing a dominant competitor or predator group via mass extinction can trigger an adaptive radiation in a previously ecologically constrained surviving lineage.
+
+{{< related-questions >}}

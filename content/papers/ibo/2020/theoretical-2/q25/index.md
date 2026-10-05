@@ -1,5 +1,6 @@
 ---
 title: "Q25 - Linking Muscle Molecular Defects to Specific Contraction Abnormalities"
+description: "The following figures illustrate the molecules in muscle fibers in two states: 1. Contraction, 2. Relaxation. The mutation or insufficient function of..."
 ---
 
 {{< problem-meta category="Theoretical 2" note="Real exam question - full text reproduced under IBO's CC BY-NC-SA 4.0 license" >}}
