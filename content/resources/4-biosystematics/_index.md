@@ -1,5 +1,5 @@
 ---
-title: "Biosystematics"
+title: "Biosystematics Notes"
 weight: 4
 description: "Classification and phylogenetics for IBO/USABO: naming and ranking rules, species concepts, cladistics and molecular tree-building, the domain/kingdom classification of life, a taxonomy cross-reference back to Animal Anatomy's phyla and classes, and practical identification-key skills."
 ---

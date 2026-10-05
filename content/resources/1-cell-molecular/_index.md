@@ -1,5 +1,5 @@
 ---
-title: "✅ Molecular, Cell Biology and Biochemistry"
+title: "✅ Molecular, Cell Biology and Biochemistry Notes"
 weight: 1
 description: "Cell structure, biomolecules, enzymes, membrane transport, and core biochemical pathways, a curated, IBO/USABO-depth treatment drawing on Lehninger's Principles of Biochemistry, Alberts' Molecular Biology of the Cell, and Campbell Biology."
 ---

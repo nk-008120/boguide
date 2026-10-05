@@ -34,7 +34,7 @@ India's biology olympiad pathway runs across four stages, with each stage select
 
 For information regarding NSE 2026, please visit the [official IAPT webpage](https://iapt.org.in/) (Science Olympiad Brochure 2026-27 available in English and Hindi).
 
-This guide covers INBO preparation specifically. You still need to qualify through NSEB to sit for INBO; NSEB preparation overlaps significantly with what's on this page, but the exam format itself is different.
+This guide covers INBO preparation specifically. You still need to qualify through NSEB to sit for INBO; NSEB preparation overlaps significantly with what's on this page, but the exam format itself is different. See the [dedicated NSEB preparation guide](/nseb-preparation/) for the full exam breakdown.
 
 ## NSEB: The gateway
 

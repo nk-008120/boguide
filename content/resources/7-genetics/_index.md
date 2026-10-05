@@ -1,5 +1,5 @@
 ---
-title: "✅ Genetics"
+title: "✅ Genetics Notes"
 weight: 7
 description: "Classical transmission genetics for IBO/USABO: Mendelian inheritance and its extensions, sex determination and pedigree analysis, the chromosomal mechanics of linkage and chromosome-number/structure variation, and the quantitative and non-Mendelian inheritance patterns that don't fit either the molecular-mechanism or population-genetics treatments elsewhere on this site."
 ---

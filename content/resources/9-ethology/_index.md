@@ -1,5 +1,5 @@
 ---
-title: "✅ Ethology"
+title: "✅ Ethology Notes"
 weight: 9
 description: "Animal behavior for IBO/USABO: proximate mechanisms and the development of behavior through learning, communication and orientation, the behavioral-ecology core of foraging, mating, and altruism, and closing pages on social structure and biological rhythms, taught throughout through named species case studies and classic experiments."
 ---

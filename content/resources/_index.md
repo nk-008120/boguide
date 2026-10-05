@@ -1,8 +1,26 @@
 ---
-title: "Study Resources"
-description: "A graded (S/A/B) list of recommended books and resources for Biology Olympiad preparation, covering every major topic area."
+title: "Biology Olympiad Study Resources & Notes"
+description: "A graded (S/A/B) list of recommended books and resources for Biology Olympiad preparation, plus links to the full Notes@BiOGuide library, covering every major topic area."
 weight: 1
 ---
+
+## Notes@BiOGuide
+
+The full set of topic notes, organized by subject:
+
+1. [Cell & Molecular Biology, Biochemistry Notes](/resources/1-cell-molecular/)
+2. [Genetics Notes](/resources/7-genetics/)
+3. [Bioinformatics Notes](/resources/10-bioinformatics/)
+4. [Plant Computational Biology (Practical IV)](/resources/14-practical-4/)
+5. [Plant Physiology Notes](/resources/5-plant-physiology/)
+6. [Evolution Notes](/resources/15-evolution/)
+7. [Animal Physiology Notes](/resources/3-animal-physiology/)
+8. [Animal Anatomy Notes](/resources/2-animal-anatomy/)
+9. [Plant Anatomy Notes](/resources/6-plant-anatomy/)
+10. [Ecology Notes](/resources/8-ecology/)
+11. [Ethology Notes](/resources/9-ethology/)
+12. [Biosystematics Notes](/resources/4-biosystematics/)
+13. [Molecular Biology & Biochemistry Practicals (Practical I)](/resources/11-practical-1/)
 
 ## Books & Graded Resources
 

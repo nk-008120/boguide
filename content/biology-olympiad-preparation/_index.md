@@ -173,7 +173,7 @@ The second pillar. Genetics connects to physiology (how mutations cause disease)
 {{< faq-item q="Tier 2: The core systems" >}}
 **3. Animal Physiology** ([Section 3](/resources/3-animal-physiology/))
 
-High-frequency at every olympiad. The depth expected varies : NSEB tests organ system overviews, INBO/USABO Semifinal test mechanism-level detail, IBO tests integrative multi-system reasoning. Start with the overview, then deepen.
+High-frequency at every olympiad. The depth expected varies : [NSEB](/nseb-preparation/) tests organ system overviews, INBO/USABO Semifinal test mechanism-level detail, IBO tests integrative multi-system reasoning. Start with the overview, then deepen.
 
 **Key subtopics:** cardiovascular system (cardiac cycle, blood pressure regulation), renal physiology (nephron mechanics, countercurrent multiplication), nervous system (action potentials, synaptic transmission, sensory transduction), endocrine system (hormone-receptor mechanisms, feedback loops), immune system (innate vs adaptive, T-cell and B-cell activation, antibody structure).
 

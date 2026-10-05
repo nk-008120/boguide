@@ -1,5 +1,5 @@
 ---
-title: "✅ Animal Anatomy"
+title: "✅ Animal Anatomy Notes"
 weight: 2
 description: "Structural anatomy for IBO/USABO at full depth, organized 5:3:2, Human Anatomy in detail across 10 system pages, Vertebrate Anatomy by comparison, and a lighter Animal Kingdom body-plan survey."
 ---

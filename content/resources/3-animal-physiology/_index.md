@@ -1,5 +1,5 @@
 ---
-title: "✅ Animal Physiology"
+title: "✅ Animal Physiology Notes"
 weight: 3
 description: "The function-side complement to Animal Anatomy for IBO/USABO: core regulatory and organ-system mechanisms (homeostasis, endocrine, nervous, muscle, cardiovascular, respiratory, digestive, immune, reproductive physiology), followed by comparative whole-animal physiology across taxa."
 ---

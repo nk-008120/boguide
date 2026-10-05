@@ -1,5 +1,5 @@
 ---
-title: "✅ Plant Anatomy"
+title: "✅ Plant Anatomy Notes"
 weight: 6
 description: "Structural anatomy for IBO/USABO: plant tissue systems and vascular cell types, the three vegetative organs (root, stem, leaf), secondary growth and wood anatomy, a monocot/dicot comparative synthesis, flower/seed/fruit reproductive structures, and a closing structural survey of plant lineages from bryophytes to angiosperms."
 ---

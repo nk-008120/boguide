@@ -1,5 +1,5 @@
 ---
-title: "✅ Evolution"
+title: "✅ Evolution Notes"
 weight: 15
 description: "Evolutionary theory for IBO/USABO: the evidence for common descent and deep history of life, the population-genetic mechanisms of allele-frequency change, speciation and macroevolutionary pattern, and applied syntheses in evo-devo, coevolution, and human origins."
 ---
