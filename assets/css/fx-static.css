@@ -1,0 +1,144 @@
+html body.fx-s {
+  --papers-card: var(--fx-surface-solid);
+  --papers-card-muted: color-mix(in srgb, var(--fx-accent) 6%, var(--fx-surface-solid));
+  --papers-border: var(--fx-line);
+  --papers-border-strong: var(--fx-line-strong);
+  --papers-radius: var(--fx-radius-sm);
+  --papers-shadow: var(--fx-shadow);
+  --papers-shadow-hover: var(--fx-shadow);
+}
+
+body.fx-s .papers-card,
+body.fx-s .papers-problem-row,
+body.fx-s .dashboard-stat-card,
+body.fx-s .dashboard-recent-item {
+  transition: none;
+}
+body.fx-s .papers-card:hover,
+body.fx-s .papers-problem-row:hover,
+body.fx-s .dashboard-stat-card:hover,
+body.fx-s .dashboard-recent-item:hover {
+  border-color: color-mix(in srgb, var(--fx-accent) 55%, transparent);
+  transform: none;
+}
+
+body.fx-s .card,
+body.fx-s .hextra-card {
+  border: 1px solid var(--fx-line) !important;
+  border-radius: var(--fx-radius) !important;
+  background-color: var(--fx-surface) !important;
+  box-shadow: var(--fx-shadow) !important;
+  transform: none;
+  transition: none !important;
+}
+body.fx-s .card:hover,
+body.fx-s .hextra-card:hover {
+  border-color: color-mix(in srgb, var(--fx-accent) 55%, transparent) !important;
+  transform: none !important;
+}
+
+body.fx-s .attempt-rec-card {
+  --fx-tone: var(--fx-accent);
+  border-width: 1px;
+  border-color: color-mix(in srgb, var(--fx-tone) 45%, transparent);
+  background: color-mix(in srgb, var(--fx-tone) 5%, var(--fx-surface-solid));
+}
+body.fx-s .attempt-rec-critical { --fx-tone: #dc2626; }
+body.fx-s .attempt-rec-weak { --fx-tone: #d97706; }
+body.fx-s .attempt-rec-positive { --fx-tone: #16a34a; }
+body.fx-s .attempt-rec-card h4 {
+  color: var(--fx-tone);
+}
+
+html body.fx-s .papers-nav-btn,
+html body.fx-s .tf-quiz-reset,
+html body.fx-s .dashboard-copy-btn,
+html body.fx-s .btn-outline {
+  border: 1px solid var(--fx-line-strong);
+  border-radius: var(--fx-pill);
+  background: var(--fx-surface);
+  color: var(--fx-ink) !important;
+  box-shadow: none;
+  transform: none;
+  transition: none;
+}
+html body.fx-s .papers-nav-btn:not(:disabled):hover,
+html body.fx-s .tf-quiz-reset:not(:disabled):hover,
+html body.fx-s .dashboard-copy-btn:not(:disabled):hover,
+html body.fx-s .btn-outline:hover {
+  border-color: var(--fx-accent);
+  background: color-mix(in srgb, var(--fx-accent) 10%, var(--fx-surface));
+  transform: none;
+}
+
+html body.fx-s .papers-nav-btn.papers-nav-next,
+html body.fx-s .tf-quiz-submit,
+html body.fx-s .dashboard-plan-btn,
+html body.fx-s .btn-primary {
+  border: 1px solid transparent;
+  border-radius: var(--fx-pill);
+  background: var(--fx-accent);
+  color: var(--fx-on-accent) !important;
+  box-shadow: 0 14px 34px -16px var(--fx-accent);
+  transform: none;
+  transition: none;
+}
+html body.fx-s .papers-nav-btn.papers-nav-next:not(:disabled):hover,
+html body.fx-s .tf-quiz-submit:not(:disabled):hover,
+html body.fx-s .dashboard-plan-btn:hover,
+html body.fx-s .btn-primary:hover {
+  border-color: transparent;
+  background: var(--fx-accent-2);
+  box-shadow: 0 14px 34px -16px var(--fx-accent-2);
+  transform: none;
+}
+html body.fx-s .dashboard-btn-secondary,
+html body.fx-s .dashboard-btn-secondary:hover {
+  background: var(--fx-accent-2);
+  box-shadow: 0 14px 34px -16px var(--fx-accent-2);
+}
+html body.fx-s .dashboard-btn-secondary:hover {
+  background: var(--fx-accent);
+}
+html body.fx-s .attempt-submit-btn,
+html body.fx-s .account-delete-btn {
+  border-radius: var(--fx-pill);
+}
+
+html body.fx-s .papers-nav-btn:focus-visible,
+html body.fx-s .tf-quiz-reset:focus-visible,
+html body.fx-s .tf-quiz-submit:focus-visible,
+html body.fx-s .dashboard-copy-btn:focus-visible,
+html body.fx-s .dashboard-plan-btn:focus-visible,
+html body.fx-s .btn-outline:focus-visible,
+html body.fx-s .btn-primary:focus-visible {
+  outline: 2px solid var(--fx-accent);
+  outline-offset: 3px;
+}
+html body.fx-s .papers-nav-btn:disabled,
+html body.fx-s .tf-quiz-reset:disabled,
+html body.fx-s .tf-quiz-submit:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+body.fx-s .account-split {
+  border: 1px solid var(--fx-line);
+  border-radius: var(--fx-radius-lg);
+  background: var(--fx-surface);
+  box-shadow: var(--fx-shadow);
+}
+body.fx-s .account-branding-panel {
+  background:
+    radial-gradient(70% 90% at 0% 0%, var(--fx-tint-a), transparent 62%),
+    radial-gradient(70% 90% at 100% 100%, var(--fx-tint-b), transparent 62%),
+    repeating-linear-gradient(0deg, var(--fx-grid) 0, var(--fx-grid) 1px, transparent 1px, transparent 32px),
+    repeating-linear-gradient(90deg, var(--fx-grid) 0, var(--fx-grid) 1px, transparent 1px, transparent 32px);
+}
+
+@media (max-width: 640px) {
+  body.fx-s .card,
+  body.fx-s .hextra-card {
+    border-radius: var(--fx-radius-sm) !important;
+  }
+}

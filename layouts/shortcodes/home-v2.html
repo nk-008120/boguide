@@ -1,0 +1,324 @@
+{{- $arrow := partial "icon.html" "arrow-right" -}}
+{{- $path := slice
+  (dict "n" "01" "url" "/resources/1-cell-molecular/" "title" "Molecular, Cell Biology & Biochemistry" "sub" "Cell structure, biomolecules, enzymes, membrane transport, and core biochemical pathways." "tag" "Verified")
+  (dict "n" "02" "url" "/resources/2-animal-anatomy/" "title" "Animal Anatomy" "sub" "Structural anatomy for IBO/USABO, from human systems to comparative vertebrate and invertebrate body plans." "tag" "Verified")
+  (dict "n" "03" "url" "/resources/3-animal-physiology/" "title" "Animal Physiology" "sub" "The function-side complement to Animal Anatomy: regulatory and organ-system mechanisms across taxa." "tag" "Verified")
+  (dict "n" "04" "url" "/resources/4-biosystematics/" "title" "Biosystematics" "sub" "Classification and phylogenetics: taxonomic hierarchy, species concepts, cladistics, molecular systematics." "tag" "Verified")
+  (dict "n" "05" "url" "/resources/5-plant-physiology/" "title" "Plant Physiology" "sub" "Water/nutrient transport, photosynthetic biochemistry, hormone-driven growth, and stress physiology." "tag" "Verified")
+  (dict "n" "06" "url" "/resources/6-plant-anatomy/" "title" "Plant Anatomy" "sub" "Plant tissue systems, root/stem/leaf structure, and reproductive anatomy." "tag" "Verified")
+  (dict "n" "07" "url" "/resources/7-genetics/" "title" "Genetics" "sub" "Mendelian inheritance and its extensions, sex linkage and pedigree analysis, chromosomal linkage/mapping and aberrations, and quantitative/non-Mendelian inheritance." "tag" "Verified")
+  (dict "n" "08" "url" "/resources/8-ecology/" "title" "Ecology" "sub" "Population dynamics, community ecology, ecosystems, biogeography, and conservation biology." "tag" "Verified")
+  (dict "n" "09" "url" "/resources/9-ethology/" "title" "Ethology" "sub" "Animal behavior: proximate/ultimate causation, learning, communication, and social structure." "tag" "Verified")
+  (dict "n" "10" "url" "/resources/10-bioinformatics/" "title" "Bioinformatics" "sub" "Databases, BLAST, alignments, phylogenetics, genome analysis, and protein structure." "tag" "Verified")
+  (dict "n" "11" "url" "/resources/11-practical-1/" "title" "Practical I" "sub" "Molecular biology and biochemistry practicals: restriction mapping, PCR genotyping, Ni-NTA chromatography, Bradford assay, enzyme kinetics, EMSA, and integrated workflows." "tag" "Verified · New")
+  (dict "n" "12" "url" "/resources/12-practical-2/" "title" "Practical II" "sub" "Coming soon." "tag" "")
+  (dict "n" "13" "url" "/resources/13-practical-3/" "title" "Practical III" "sub" "Coming soon." "tag" "")
+  (dict "n" "14" "url" "/resources/14-practical-4/" "title" "Plant Computational Biology" "sub" "ImageJ/Fiji image analysis and Streamlit interactive plotting for the IBO practical." "tag" "Verified")
+  (dict "n" "15" "url" "/resources/15-evolution/" "title" "Evolution" "sub" "Evidence for evolution, population genetics, speciation, macroevolution, and evo-devo." "tag" "Verified")
+-}}
+{{- $more := slice
+  (dict "url" "/dashboard/" "icon" "bar-chart" "title" "Study Dashboard" "text" "Your personalized command center: mastery tracking, prerequisite-aware recommendations, and trend analysis built from your practice history." "cta" "Open Dashboard" "size" "wide")
+  (dict "url" "/papers/" "icon" "folder" "title" "BiOrchive" "text" "Past olympiad papers, browsable by year and round, with solutions and an attempt mode." "cta" "Explore BiOrchive" "size" "")
+  (dict "url" "/papers/question-bank/" "icon" "search" "title" "Question Bank" "text" "Every question in the archive, searchable in one table: filter by olympiad, year, topic, and difficulty." "cta" "Search Questions" "size" "")
+  (dict "url" "/resources/" "icon" "library" "title" "Study Resources" "text" "The full IBO/USABO syllabus, plus a graded book database and recommended video creators." "cta" "Browse Resources" "size" "")
+  (dict "url" "/biobytes/" "icon" "pen" "title" "BiOBytes" "text" "Exam-technique tips, lab guides, and quick bites from our Instagram, all in one place." "cta" "Read BiOBytes" "size" "")
+  (dict "url" "/biolab/" "icon" "microscope" "title" "BiOLab" "text" "A community protocol archive: read a verified or submitted protocol, run it yourself, and log your results." "cta" "Explore BiOLab" "size" "wide")
+  (dict "url" "/games/bio-ludo/" "icon" "gamepad" "title" "BiOLudo" "text" "A biology-trivia Ludo variant: character classes, a moving Unsafe Zone, and combat settled by quiz duels. Play locally or against bots." "cta" "Play BiOLudo" "size" "")
+  (dict "url" "/about/" "icon" "dna" "title" "About BiOGuide" "text" "Why we built this, how content gets reviewed before publishing, and who's behind it." "cta" "Learn Our Story" "size" "")
+-}}
+{{- $programmes := (os.ReadFile "static/data/olympiad-programmes.json" | transform.Unmarshal).countries -}}
+{{- $coverSteps := slice "Start" "Roadmap" "Notes" "Programmes" "BiOrchive" "Q-Bank" "Dashboard" "Mocks" "BiOClash" "BiOLab" "BiOLudo" "Community" "BiOGuide" -}}
+{{- $marquee := slice "Cell Biology" "Genetics" "Bioinformatics" "Plant Physiology" "Evolution" "Animal Physiology" "Animal Anatomy" "Plant Anatomy" "Ecology" "Ethology" "Biosystematics" "Practicals" -}}
+<div class="hv">
+  <div class="hv-ambient" aria-hidden="true">
+    <div class="hv-blob hv-blob--a"><i></i></div>
+    <div class="hv-blob hv-blob--b"><i></i></div>
+    <div class="hv-blob hv-blob--c"><i></i></div>
+  </div>
+  <canvas class="hv-fluid" aria-hidden="true"></canvas>
+  <div class="hv-grain" aria-hidden="true"></div>
+
+  <section class="hv-hero">
+    <p class="hv-eyebrow" data-hero style="--i:0"><span class="hv-dot"></span><span data-scramble>BiOGuide v2.1.0 / Biology Olympiad Preparation Hub</span></p>
+    <h1 class="hero-title" aria-label="Your roadmap to Biology Olympiads">
+      <span class="hwm" aria-hidden="true"><span class="hw" style="--i:0">Your</span></span>
+      <span class="hwm" aria-hidden="true"><span class="hw" style="--i:1">roadmap</span></span>
+      <span class="hwm" aria-hidden="true"><span class="hw" style="--i:2">to</span></span>
+      <br class="hv-br">
+      <span class="hwm" aria-hidden="true"><span class="hw hw--a" style="--i:3">Biology</span></span>
+      <span class="hwm" aria-hidden="true"><span class="hw hw--b" style="--i:4">Olympiads</span></span>
+    </h1>
+    <p class="hero-subtitle" data-hero style="--i:1">A complete preparation platform for BiOlogy enthusiasts. Built by students, for students.</p>
+    <p class="hero-country-counter" id="hero-country-counter" aria-live="polite" data-hero style="--i:2"></p>
+    <div class="hv-cta" data-hero style="--i:3">
+      <button type="button" id="tutorial-replay-badge" class="hv-btn hv-btn--solid" data-magnetic><span class="hv-btn-fill"></span><span class="hv-btn-label">Site Tutorial {{ $arrow }}</span></button>
+      <a href="/papers/" class="hv-btn" data-magnetic><span class="hv-btn-fill"></span><span class="hv-btn-label">Practice Papers</span></a>
+      <a href="/dashboard/" class="hv-btn" data-magnetic><span class="hv-btn-fill"></span><span class="hv-btn-label">Your Study Dashboard</span></a>
+    </div>
+    <nav class="hv-quick" aria-label="More ways in" data-hero style="--i:4">
+      <a href="/biology-olympiad-preparation/" class="hv-link">BiO Nation-wise Guides</a>
+      <a href="/bioclash/" class="hv-link">Challenge Yourself!</a>
+      <a href="/games/bio-ludo/" class="hv-link">Play BiOLudo</a>
+      <a href="/resources/" class="hv-link">Start Learning</a>
+    </nav>
+    <div class="hv-globe" data-hero style="--i:5" role="group" aria-label="Interactive globe of national Biology Olympiad programme guides" data-d3-array="{{ "vendor/d3-geo/d3-array.min.js" | relURL }}" data-d3-geo="{{ "vendor/d3-geo/d3-geo.min.js" | relURL }}" data-world="{{ "data/globe-110m.json" | relURL }}" data-programmes="{{ "data/olympiad-programmes.json" | relURL }}">
+      <canvas aria-hidden="true"></canvas>
+      <div class="hv-globe-tip" role="status" hidden></div>
+      <p class="hv-globe-cap"><span class="hv-globe-key hv-globe-key--live"></span>Guide available<span class="hv-globe-key hv-globe-key--soon"></span>Coming soon<span class="hv-globe-hint">Drag to spin</span></p>
+      <ul class="hv-globe-list" aria-label="National programme guides">
+        {{- range $code, $c := $programmes }}{{ if and (eq $c.status "published") $c.guideUrl }}
+        <li><a href="{{ $c.guideUrl }}" data-code="{{ $code }}">{{ $c.name }}</a></li>
+        {{- end }}{{ end }}
+      </ul>
+    </div>
+    <dl class="hv-stats" data-hero style="--i:6">
+      <div><dt data-scramble>Syllabus sections</dt><dd>15+</dd></div>
+      <div><dt data-scramble>Topic pages</dt><dd>150+</dd></div>
+      <div><dt data-scramble>Olympiad guides</dt><dd>IBO · USABO · INBO</dd></div>
+    </dl>
+  </section>
+
+  <div class="hv-marquee" aria-hidden="true">
+    <div class="hv-marquee-track">
+      {{- range seq 2 }}
+      <span class="hv-marquee-set">{{ range $marquee }}<span>{{ . }}</span><i></i>{{ end }}</span>
+      {{- end }}
+    </div>
+  </div>
+
+  <section class="hv-section hv-reel" aria-labelledby="the-reel">
+    <header class="hv-head hv-head--split">
+      <div>
+        <p class="hv-label" data-scramble>Reel / v2.0.0 launch</p>
+        <h2 class="hv-h2 hv-h2--xl" id="the-reel" data-split>This is just the beginning</h2>
+      </div>
+      <p class="hv-lead" data-lines>POV: you started a little project to help students in Biology Olympiad prep and it turned into 10,000+ student visitors, 100+ live accounts, and a 10 person organization redefining olympiad preparation. Launching BiOGuide v2.0.0, a complete prep platform.</p>
+    </header>
+    <a class="hv-reel-frame" href="https://www.instagram.com/p/DdcJuipzHca/" target="_blank" rel="noopener noreferrer" aria-label="Play the BiOGuide v2.0.0 launch reel on Instagram (opens in a new tab)">
+      <span class="hv-reel-media">
+        <span class="hv-cover" role="img" aria-label="BiOGuide Instagram reel: launching BiOGuide v2.0.0, your roadmap to Biology Olympiads, built by students for students">
+          <span class="hv-cover-title" aria-hidden="true">Your roadmap to <em>Biology Olympiads</em></span>
+          <span class="hv-cover-sub" aria-hidden="true">Built by students, for students.</span>
+          <span class="hv-cover-steps" aria-hidden="true">
+            {{- range $i, $step := $coverSteps }}
+            <span class="hv-cover-step{{ if lt $i 2 }} is-on{{ end }}" style="--n:{{ $i }}"><i></i><b>{{ $step }}</b></span>
+            {{- end }}
+          </span>
+        </span>
+      </span>
+      <span class="hv-reel-play" aria-hidden="true"><span class="hv-reel-play-icon"></span><span>Play reel</span></span>
+      <span class="hv-reel-meta" aria-hidden="true"><span>Instagram</span><span>Opens in a new tab</span></span>
+    </a>
+  </section>
+
+  <section class="hv-section" aria-labelledby="start-here">
+    <header class="hv-head">
+      <p class="hv-label" data-scramble>01 / Orientation</p>
+      <h2 class="hv-h2" id="start-here" data-split>Start Here</h2>
+      <p class="hv-lead" data-lines>New to Biology Olympiads, or not sure where to jump in? Pick what matches you best:</p>
+    </header>
+    <div class="hv-start">
+      <a href="/resources/1-cell-molecular/" class="hv-frame hv-frame--lead" data-reveal>
+        <span class="hv-frame-icon">{{ partial "icon.html" "sprout" }}</span>
+        <h3>Completely New</h3>
+        <p>Start with Cell &amp; Molecular Biology, the foundation every other section builds on.</p>
+        <span class="hv-go">Start Here {{ $arrow }}</span>
+      </a>
+      <a href="/resources/" class="hv-frame" data-reveal>
+        <span class="hv-frame-icon">{{ partial "icon.html" "target" }}</span>
+        <h3>Know Your Weak Spot</h3>
+        <p>Browse all 15 sections and jump straight to the topic you need to shore up.</p>
+        <span class="hv-go">Browse Sections {{ $arrow }}</span>
+      </a>
+      <a href="/papers/" class="hv-frame" data-reveal>
+        <span class="hv-frame-icon">{{ partial "icon.html" "file-text" }}</span>
+        <h3>Ready to Practice</h3>
+        <p>Past olympiad papers with solutions and an attempt mode, browsable by year and round.</p>
+        <span class="hv-go">Go to BiOrchive {{ $arrow }}</span>
+      </a>
+    </div>
+    <p class="hv-note" data-reveal><strong>Preparing for a specific exam?</strong> We have detailed preparation guides for each major olympiad:</p>
+    <div class="hv-rows">
+      <a href="/ibo-preparation/" class="hv-row" data-reveal="x">
+        <span class="hv-row-key">IBO Guide</span>
+        <span class="hv-row-text">Format, scoring, recommended books, and a month-by-month preparation strategy for the International Biology Olympiad.</span>
+        <span class="hv-go">IBO Preparation {{ $arrow }}</span>
+      </a>
+      <a href="/usabo-preparation/" class="hv-row" data-reveal="x">
+        <span class="hv-row-key">USABO Guide</span>
+        <span class="hv-row-text">Open Exam through Semifinal: topic focus areas, registration, and stage-by-stage preparation for the USA Biology Olympiad.</span>
+        <span class="hv-go">USABO Preparation {{ $arrow }}</span>
+      </a>
+      <a href="/inbo-preparation/" class="hv-row" data-reveal="x">
+        <span class="hv-row-key">INBO Guide</span>
+        <span class="hv-row-text">NSEB through OCSC: Indian-specific resources, NCERT-to-olympiad bridging, and the full INBO preparation path.</span>
+        <span class="hv-go">INBO Preparation {{ $arrow }}</span>
+      </a>
+    </div>
+    <p class="hv-note" data-reveal>Or see the <a href="/biology-olympiad-preparation/">complete Biology Olympiad preparation overview</a> for a broader look at study plans and timelines.</p>
+  </section>
+
+  <section class="hv-section" aria-labelledby="the-learning-path">
+    <header class="hv-head">
+      <p class="hv-label" data-scramble>02 / Syllabus</p>
+      <h2 class="hv-h2" id="the-learning-path" data-split>The Learning Path</h2>
+      <p class="hv-lead" data-lines>We cover the full IBO syllabus: 15+ sections, 150+ topic pages, growing every week. Work through them in order, or jump straight to what you need.</p>
+    </header>
+    <ol class="hv-path">
+      {{- range $path }}
+      <li data-reveal>
+        <a href="{{ .url }}" class="hv-tile{{ if not .tag }} hv-tile--soon{{ end }}">
+          <span class="hv-tile-n">{{ .n }}</span>
+          <span class="hv-tile-body">
+            <span class="hv-tile-title">{{ .title }}</span>
+            <span class="hv-tile-sub">{{ .sub }}</span>
+          </span>
+          {{- if .tag }}<span class="hv-tag">{{ .tag }}</span>{{ end }}
+        </a>
+      </li>
+      {{- end }}
+    </ol>
+  </section>
+
+  <section class="hv-section" aria-labelledby="practice-resources--more">
+    <header class="hv-head">
+      <p class="hv-label" data-scramble>03 / Toolkit</p>
+      <h2 class="hv-h2" id="practice-resources--more" data-split>Practice, Resources &amp; More</h2>
+    </header>
+    <div class="hv-bento">
+      {{- range $more }}
+      <a href="{{ .url }}" class="hv-frame{{ with .size }} hv-frame--{{ . }}{{ end }}" data-reveal>
+        <span class="hv-frame-icon">{{ partial "icon.html" .icon }}</span>
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+        <span class="hv-go">{{ .cta }} {{ $arrow }}</span>
+      </a>
+      {{- end }}
+    </div>
+  </section>
+
+  <section class="hv-section" aria-labelledby="what-makes-bioguide-stand-out">
+    <header class="hv-head">
+      <p class="hv-label" data-scramble>04 / Built in house</p>
+      <h2 class="hv-h2" id="what-makes-bioguide-stand-out" data-split>What Makes BioGuide Stand Out</h2>
+    </header>
+    <div class="hv-quad">
+      <a href="https://practicepcmb4boguide.streamlit.app/" class="hv-frame" data-reveal rel="noopener">
+        <span class="hv-frame-icon">{{ partial "icon.html" "sprout" }}</span>
+        <h3>Our Plant Computational Biology Website</h3>
+        <p>This is a completely indigenous resource for practicing Plant Computational Biology, which although was only in the practicals for IBO 2026, is still relevant.</p>
+      </a>
+      <a href="/ibo2022-sim.html" class="hv-frame" data-reveal>
+        <span class="hv-frame-icon">{{ partial "icon.html" "dna" }}</span>
+        <h3>IBO 2022 Bioinformatics Practical Simul</h3>
+        <p>This is another indigenous website we created to help with bioinformatics practicals. It is a dynamic creation helping people seriously commit to IBO preparation.</p>
+      </a>
+      <a href="/papers/" class="hv-frame" data-reveal>
+        <span class="hv-frame-icon">{{ partial "icon.html" "bar-chart" }}</span>
+        <h3>Practice Tests</h3>
+        <p>Full-screen, timed, with subject breakdown and personalized recommendations.</p>
+      </a>
+      <a href="/games/bio-ludo/" class="hv-frame" data-reveal>
+        <span class="hv-frame-icon">{{ partial "icon.html" "gamepad" }}</span>
+        <h3>BiOLudo</h3>
+        <p>Our first game: a biology-trivia Ludo variant where dice get you into range, but a quiz duel decides who wins the fight.</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="hv-section" aria-labelledby="contribute-to-bioguide">
+    <header class="hv-head">
+      <p class="hv-label" data-scramble>05 / Open project</p>
+      <h2 class="hv-h2" id="contribute-to-bioguide" data-split>Contribute to BioGuide</h2>
+      <p class="hv-lead" data-lines>As of August 8 2026, this website has only been a one man project and we are currently assembling a team of people who think this is worth contributing to. So please help yourself!</p>
+    </header>
+    <div class="hv-duo">
+      <div class="hv-frame hv-frame--static" data-reveal>
+        <h3>BioGuide follows this open contribution model</h3>
+        <ul class="hv-list">
+          <li><strong>Found an error?</strong> Open a GitHub Issue or submit a PR</li>
+          <li><strong>Want to add a topic?</strong> Follow the template in <code>handoff.md</code></li>
+          <li><strong>Have a better diagram?</strong> Source it and we'll add it</li>
+        </ul>
+      </div>
+      <div class="hv-frame hv-frame--static" data-reveal>
+        <h3>We need help with</h3>
+        <ul class="hv-list">
+          <li><strong>Expanding our Current BiOrchive</strong>: send an email to resourcerepository4boguide@gmail.com for this purpose.</li>
+          <li>More and improved interactive widgets (especially for Cell/Molecular Biology)</li>
+          <li>Adding diagrams to pages that still have placeholders</li>
+        </ul>
+      </div>
+    </div>
+    <div class="hv-cta hv-cta--left" data-reveal>
+      <a href="https://github.com/nk-008120/boguide" class="hv-btn hv-btn--solid" data-magnetic rel="noopener"><span class="hv-btn-fill"></span><span class="hv-btn-label">Contribute on GitHub {{ $arrow }}</span></a>
+    </div>
+  </section>
+
+  <section class="hv-section" aria-labelledby="recent-updates">
+    <header class="hv-head">
+      <p class="hv-label" data-scramble>06 / Changelog</p>
+      <h2 class="hv-h2" id="recent-updates" data-split>Recent Updates</h2>
+    </header>
+    <ol class="hv-log">
+      <li data-reveal>
+        <time class="hv-log-date">Sep 18 2026</time>
+        <p>BiOGuide v2.0.0. Sitewise security enforcement, switch to PostHog and GA4 analytics additionally, switched to a MIT license, two new team members join us as associates.</p>
+        <span class="hv-log-by">Nishit Kalani</span>
+      </li>
+      <li data-reveal>
+        <time class="hv-log-date">Sep 13 2026</time>
+        <p><a href="/biobytes/testimonials/">Two new guide-testimonials from Hungary and Slovakia</a>, a Doubts section added, the <a href="/biology-olympiad-preparation/">Biology Olympiad Prep page transformed</a>, heavy changes to the BiOrchive CSS and a redesign with re-population, BiOClash registration started, and major changes to the BiOClash pipeline for a smoother workflow and bug fixes.</p>
+        <span class="hv-log-by">Nishit Kalani</span>
+      </li>
+      <li data-reveal>
+        <time class="hv-log-date">Aug 2026</time>
+        <p><a href="/biobytes/testimonials/turkmenistan-ibo-team/">Testimonial by Meryem from Turkmenistan</a>, a new email system, country counter, CI, git LFS, security fixes, and the first practical guide, live in <a href="/resources/11-practical-1/">Notes @ BiOGuide</a> and <a href="/biobytes/articles/lab-recommendations/">BiOBytes</a>.</p>
+        <span class="hv-log-by">Nishit Kalani</span>
+      </li>
+      <li data-reveal>
+        <time class="hv-log-date">Aug 2026</time>
+        <p><a href="/dashboard/">Study Dashboard</a>: personalized mastery tracking, prerequisite-aware study recommendations, trend analysis, topic-page badges, and a "weak areas first" toggle in the Question Bank, all built from your timed attempt history. <a href="/dashboard-guide/">How it works.</a></p>
+        <span class="hv-log-by">Nishit Kalani</span>
+      </li>
+      <li data-reveal>
+        <time class="hv-log-date">Aug 2026</time>
+        <p>Senior Partner announced, and the <a href="/bioclash/">BiOClash</a> sample problem and test-taking platform launched.</p>
+        <span class="hv-log-by">Nishit Kalani</span>
+      </li>
+      <li data-reveal>
+        <time class="hv-log-date">Aug 2026</time>
+        <p><a href="/ai_attestation.txt">AI Transparency Attestation</a>: a full public disclosure of where and how AI tools were used across the site, published per EU AI Act Article 50's transparency principles.</p>
+        <span class="hv-log-by">Nishit Kalani</span>
+      </li>
+      <li data-reveal>
+        <time class="hv-log-date">Aug 2026</time>
+        <p><a href="/discussions/">Discussions</a>: open feedback and comment threads for the whole community, no gatekeeping to read, an account to post.</p>
+        <span class="hv-log-by">Nishit Kalani</span>
+      </li>
+      <li data-reveal>
+        <time class="hv-log-date">Aug 2026</time>
+        <p><a href="/bioclash/">BiOClash</a>: an original biology competition, plus a Champions leaderboard on the <a href="/papers/leaderboard/">Hall of Fame</a> page, ready for Season 1's results.</p>
+        <span class="hv-log-by">Nishit Kalani</span>
+      </li>
+      <li data-reveal>
+        <time class="hv-log-date">Aug 2026</time>
+        <p>Accounts, profiles, and a Hall of Fame leaderboard for BiOrchive Timed Attempts, completely optional, everything still works without logging in.</p>
+        <span class="hv-log-by">Nishit Kalani</span>
+      </li>
+    </ol>
+  </section>
+
+  <section class="hv-section hv-section--end" aria-labelledby="join-the-community">
+    <header class="hv-head">
+      <p class="hv-label" data-scramble>07 / Signal</p>
+      <h2 class="hv-h2" id="join-the-community" data-split>Join the Community</h2>
+      <p class="hv-lead" data-lines><strong>Discord:</strong> Chat with other students, ask questions, share resources · <strong>GitHub Issues:</strong> Report typos, request features, discuss content</p>
+    </header>
+    <div class="hv-cta hv-cta--left" data-reveal>
+      <a href="https://discord.gg/jQ7sfcCs4" class="hv-btn hv-btn--solid" data-magnetic rel="noopener"><span class="hv-btn-fill"></span><span class="hv-btn-label">Join the Discord {{ $arrow }}</span></a>
+      <a href="https://github.com/nk-008120/boguide/issues" class="hv-btn" data-magnetic rel="noopener"><span class="hv-btn-fill"></span><span class="hv-btn-label">GitHub Issues</span></a>
+    </div>
+    <p class="hv-fine" data-reveal>Content (text) is licensed under <strong>CC BY-NC-SA 4.0</strong>: free to share and adapt for non-commercial purposes, with attribution. Source code is separately licensed under the <strong>MIT License</strong>. See <a href="/about/">About</a> for full licensing and image-source details.</p>
+  </section>
+</div>

@@ -70,6 +70,10 @@ A childhood ludo variant integrated with biology quizzes to create the first int
 
 Visit /about and /tribute
 
+### Home page and site motion (v2.1.0)
+
+The home page is a single scroll-led page: a hero with an interactive 3-D globe that links to the country-by-country guides, a reel section, the 15-topic learning path, and the practice, contribution and community sections. A lighter version of the same visual language (card spotlights, buttons that fill from where the cursor enters, scroll reveals) runs across the rest of the site, with a fuller version on the main landing pages. BiOrchive, the Dashboard and the account page share the look but get no motion at all, and BiOClash is deliberately left out. All of it respects the reduced-motion preference and scales back on touch devices and data-saver connections.
+
 ---
 
 ## Tech Stack
@@ -86,13 +90,15 @@ Visit /about and /tribute
 | Styling | Tailwind CSS + 7,600+ lines of custom CSS |
 | Math Rendering | KaTeX (via Hugo's built-in support) |
 | Interactive Widgets | Plotly, Vanilla JS, SVG |
+| Motion | [GSAP](https://gsap.com/) (ScrollTrigger, SplitText, ScrambleText), [Lenis](https://github.com/darkroomengineering/lenis) smooth scroll, a WebGL2 fluid simulation, [d3-geo](https://github.com/d3/d3-geo) for the home page globe. All vendored, bundled and fingerprinted by Hugo Pipes |
 
 ### Design Identity
 
 - **Palette:** Lilac (`#8965c4`) + Sage (`#5c7a58`), custom gradient background (for-her).
-- **Typography:** Fraunces (display serif) for headings, Inter for body
+- **Typography:** Cormorant Garamond (display serif) for headings, Inter for body
 - **Themes:** Light / Dark / System / Favourite (a 4th custom theme, the default)
 - **Difficulty badges:** Beginner (green), Intermediate (amber), Advanced (purple)
+- **Motion:** applied in tiers by URL (none, static look only, light, landing page, home), so heavier effects only load where they belong. All tiers share one set of design values in `assets/css/fx-core.css`. Details in ARCHITECTURE.md under "Home page and site motion"
 
 ---
 
@@ -209,6 +215,10 @@ hugo server --disableFastRender
 
 Visit `http://localhost:1313`. Serverless functions and Supabase features require environment variables not included in the repo.
 
+If your operating system has animations switched off (on Windows 10: Settings, Ease of Access, Display, "Show animations in Windows"; on Windows 11: Settings, Accessibility, Visual effects, "Animation effects"), the site honours that and shows pages without motion. Add `?motion=on` to a URL to see the animations anyway for that page load, for example `http://localhost:1313/?motion=on`.
+
+If the home page loses its styling after you edit `layouts/_default/baseof.html`, stop and restart `hugo server`.
+
 ---
 
 ## Architecture and Security
@@ -239,7 +249,7 @@ This project operates under a public AI transparency policy. All AI-assisted cha
 
 BiOGuide is dual-licensed:
 
-- **Code** (`layouts/`, `static/js/`, `api/`, `assets/css/`, `scripts/`) is licensed under [MIT](LICENSE-CODE.txt).
+- **Code** (`layouts/`, `static/js/`, `api/`, `assets/css/`, `assets/home/`, `scripts/`) is licensed under [MIT](LICENSE-CODE.txt).
 - **Educational content** (`content/`, including `content/bioclash/`, and `data/`, including `data/bioclash/`) is licensed under [CC BY-NC-SA 4.0](LICENSE-CONTENT.txt). BiOClash content is additionally governed by the AI-Free policy in `AGENTS.md`.
 
-The vendored [Hextra](https://github.com/imfing/hextra) theme under `themes/hextra/` retains its own license terms.
+The vendored [Hextra](https://github.com/imfing/hextra) theme under `themes/hextra/` retains its own license terms. So do the third-party libraries in `assets/home/vendor/` and `static/vendor/` (GSAP, Lenis, d3, 3Dmol.js) and the Natural Earth map data in `static/data/globe-110m.json`; their licence texts and notices are kept under `static/vendor/`.

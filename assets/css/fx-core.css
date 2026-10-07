@@ -1,0 +1,134 @@
+@property --fx-r {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+@property --fx-s {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+
+body.fx-t {
+  --fx-ink: #1a1a2e;
+  --fx-muted: #55607a;
+  --fx-line: rgba(26, 26, 46, 0.12);
+  --fx-line-strong: rgba(26, 26, 46, 0.24);
+  --fx-surface: rgba(255, 255, 255, 0.72);
+  --fx-surface-solid: #ffffff;
+  --fx-accent: #7450b8;
+  --fx-accent-2: #4f6e4b;
+  --fx-on-accent: #ffffff;
+  --fx-tint-a: rgba(137, 101, 196, 0.12);
+  --fx-tint-b: rgba(92, 122, 88, 0.12);
+  --fx-grid: rgba(26, 26, 46, 0.045);
+  --fx-shadow: 0 22px 54px -34px rgba(60, 40, 110, 0.4);
+  --fx-dye-a: 137 101 196;
+  --fx-dye-b: 92 122 88;
+  --fx-dye-strength: 0.3;
+  --fx-blob-a: rgba(137, 101, 196, 0.14);
+  --fx-blob-b: rgba(92, 122, 88, 0.12);
+  --fx-blob-c: rgba(201, 183, 232, 0.18);
+  --fx-grain: 0.06;
+  --fx-grain-blend: multiply;
+  --fx-radius-lg: 26px;
+  --fx-radius: 22px;
+  --fx-radius-sm: 18px;
+  --fx-pill: 999px;
+  --fx-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --fx-mono: ui-monospace, "SFMono-Regular", "Cascadia Mono", Menlo, Consolas, monospace;
+  --fx-serif: "Cormorant Garamond", Georgia, serif;
+}
+html.dark body.fx-t {
+  --fx-ink: #f1f5f9;
+  --fx-muted: #a3adc2;
+  --fx-line: rgba(255, 255, 255, 0.12);
+  --fx-line-strong: rgba(255, 255, 255, 0.26);
+  --fx-surface: rgba(24, 24, 31, 0.66);
+  --fx-surface-solid: #18181f;
+  --fx-accent: #c9b7e8;
+  --fx-accent-2: #9db99a;
+  --fx-on-accent: #14141c;
+  --fx-tint-a: rgba(137, 101, 196, 0.2);
+  --fx-tint-b: rgba(92, 122, 88, 0.16);
+  --fx-grid: rgba(255, 255, 255, 0.04);
+  --fx-shadow: 0 22px 54px -34px rgba(0, 0, 0, 0.85);
+  --fx-dye-a: 201 183 232;
+  --fx-dye-b: 157 185 154;
+  --fx-dye-strength: 0.26;
+  --fx-blob-a: rgba(137, 101, 196, 0.18);
+  --fx-blob-b: rgba(92, 122, 88, 0.14);
+  --fx-blob-c: rgba(201, 183, 232, 0.07);
+  --fx-grain: 0.08;
+  --fx-grain-blend: soft-light;
+}
+html.favourite body.fx-t {
+  --fx-muted: #4b5568;
+  --fx-line: rgba(74, 50, 110, 0.16);
+  --fx-line-strong: rgba(74, 50, 110, 0.32);
+  --fx-surface: rgba(255, 255, 255, 0.56);
+  --fx-surface-solid: #f6f1fb;
+  --fx-accent: #6b4a9e;
+  --fx-accent-2: #4a6a47;
+  --fx-tint-a: rgba(137, 101, 196, 0.16);
+  --fx-tint-b: rgba(92, 122, 88, 0.16);
+  --fx-grid: rgba(74, 50, 110, 0.05);
+  --fx-dye-strength: 0.4;
+  --fx-blob-a: rgba(137, 101, 196, 0.22);
+  --fx-blob-b: rgba(92, 122, 88, 0.22);
+  --fx-blob-c: rgba(255, 255, 255, 0.36);
+  --fx-grain: 0.07;
+}
+
+body.home-v2 {
+  --fx-dye-strength: 0.34;
+  --fx-blob-a: rgba(137, 101, 196, 0.16);
+  --fx-blob-b: rgba(92, 122, 88, 0.14);
+  --fx-blob-c: rgba(201, 183, 232, 0.22);
+  --fx-grain: 0.07;
+}
+html.dark body.home-v2 {
+  --fx-dye-strength: 0.3;
+  --fx-blob-a: rgba(137, 101, 196, 0.2);
+  --fx-blob-b: rgba(92, 122, 88, 0.16);
+  --fx-blob-c: rgba(201, 183, 232, 0.08);
+  --fx-grain: 0.09;
+}
+html.favourite body.home-v2 {
+  --fx-dye-strength: 0.46;
+  --fx-blob-a: rgba(137, 101, 196, 0.26);
+  --fx-blob-b: rgba(92, 122, 88, 0.26);
+  --fx-blob-c: rgba(255, 255, 255, 0.4);
+  --fx-grain: 0.08;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body.fx-t .hv-load {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--fx-accent), var(--fx-accent-2));
+  transform: scaleX(var(--p, 0.06));
+  transform-origin: left center;
+  transition: transform 0.6s var(--fx-ease), opacity 0.5s ease 0.35s;
+  pointer-events: none;
+}
+body.fx-t .hv-load.is-done {
+  opacity: 0;
+}

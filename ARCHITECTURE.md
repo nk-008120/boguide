@@ -419,6 +419,9 @@ API.
 
 ## The preparation hub: one country dataset feeding three surfaces
 
+(The home page globe is a fourth reader of the same dataset; see "Home
+page and site motion" below.)
+
 `content/biology-olympiad-preparation/_index.md`
 (`/biology-olympiad-preparation/`) is a single overview page, not one of
 the three olympiad-specific deep guides it routes into (`/ibo-preparation/`,
@@ -641,6 +644,236 @@ to avoid maintaining two parallel implementations of movement and combat
 that could drift apart; a bot's "click" is functionally identical to a
 human's, it just originates from a timer instead of a pointer.
 
+## Home page and site motion: five tiers decided by URL
+
+The visual layer added in v2.1.0 (pointer-following fluid, smooth
+scrolling, scroll reveals, buttons that fill from the point the cursor
+enters) is not applied evenly. One partial,
+`layouts/partials/custom/fx-tier.html`, takes the page's `.RelPermalink`
+and returns a number, and everything else keys off that number:
+
+| Tier | Pages | Body class | What loads |
+|------|-------|------------|------------|
+| 0 | anything under `/bioclash/` | none | nothing new |
+| 1 | anything under `/papers/`, `/dashboard/`, `/account/` | `fx-t fx-s` | `fx-core.css` and `fx-static.css`, inlined in a `<style>` tag |
+| 2 | every other page | `fx-t fx` | `fx-core.css` + `fx.css` as one file, and an inlined `assets/home/fx.js` |
+| 3 | exactly `/resources/`, `/biobytes/`, `/biolab/`, `/about/`, `/biology-olympiad-preparation/` | `fx-t fx fx-2` | tier 2 plus `fx2.css` in the same file, and `/bundles/fx2.<hash>.js` |
+| 4 | `/` | `fx-t home-v2` | `fx-core.css` + `home.css` as one file, and `/bundles/home.<hash>.js` |
+
+Tier 0 is BiOClash, left untouched as a matter of policy (see
+`AGENTS.md`). Tier 1 covers the working surfaces: BiOrchive, the
+dashboard and the account page, where a timed attempt or a table of
+results must not compete with decoration for frame time. They get the
+shared look and nothing that moves: no script, no transitions, no
+reveals. Tier 3 matches exact URLs, not prefixes, so a section's landing
+page gets the heavier treatment and the hundreds of pages beneath it
+stay on tier 2. To move a page between tiers, edit the lists in
+`fx-tier.html`; nothing else needs to change.
+
+`layouts/_default/baseof.html` calls the partial once and sets the body
+classes from it. `layouts/partials/custom/head-end.html` calls it again
+to choose the stylesheets and scripts. Every rule is scoped under those
+body classes, so a tier 0 page cannot pick one up by accident.
+
+**One set of design values.** `assets/css/fx-core.css` defines the
+`--fx-*` custom properties (ink, muted text, lines, surfaces, the two
+accents, shadow, radii, easing, the mono and serif stacks, and the
+ambient layer strengths) on `body.fx-t`, with overrides for `html.dark`
+and `html.favourite`. Every tier reads from it. The only page-specific
+values in that file are a short block that turns the ambient layers up
+slightly on the home page. Component values that belong to one page,
+such as the globe's colours, stay next to that component but use the
+same `--fx-` prefix. Change a colour, radius or timing here and it
+changes everywhere; do not redefine one of these in a tier stylesheet.
+
+Each tier's stylesheets are joined with `resources.Concat` into a single
+file (`css/fx-tier-N.css`), placed after the per-section stylesheets so
+it wins ties in the cascade. Tier 1 is small enough to inline, which
+matters on question pages: they already inline critical CSS and load the
+main stylesheet without blocking, and a separate blocking request would
+have undone part of that.
+
+**Tier 1 is values, not rules.** BiOrchive already draws its cards, rows
+and buttons from its own `--papers-*` properties, so most of
+`fx-static.css` is a remapping of those onto the shared set
+(`--papers-card` to the shared surface, `--papers-radius` to the shared
+small radius, and so on) under `body.fx-s`. A handful of explicit rules
+give the main buttons the pill shape and replace the coloured left edge
+on attempt recommendation cards with a tinted border. Controls inside a
+quiz or an attempt (answer toggles, the question palette, the timer) are
+left as they were.
+
+**Tier 2 is CSS first.** `fx.css` restyles the shared components (cards,
+buttons, callouts, quote blocks, the BiOLab and BiOHorizon panels) by
+overriding the older rules in `assets/css/custom.css`.
+Section-specific buttons are sorted into three groups (solid, outline,
+chip) so about twenty-five class names share three sets of rules. The
+fill-from-pointer effect is a radial gradient whose radius is a
+registered custom property (`@property --fx-r`), which is what lets a
+plain CSS transition animate it. The only script is `fx.js`, about 3 KB
+before minification and inlined into the page: it writes the pointer
+position into `--fx-x` and `--fx-y` on the hovered element and reveals
+below-the-fold cards through one `IntersectionObserver`. It has no
+dependencies, so tier 2 pages download no animation library.
+
+**Tier 3 adds the ambient layers.** `assets/home/fx2-motion.js` injects
+the gradient blobs, the fluid canvas and the grain overlay into `<body>`
+at run time, so the five landing pages needed no template changes. It
+also starts smooth scrolling, splits `h2` headings into characters for a
+reveal, and makes the main buttons magnetic. `fx2.css` gives the page
+title on these five pages the home hero's type treatment (large serif,
+tight tracking, a short two-colour rule beneath), so they read as
+siblings of the home page.
+
+**Tier 4 is the home page.** `content/_index.md` is front matter plus one
+shortcode call. All of the markup is in
+`layouts/shortcodes/home-v2.html`, styled by `home.css`. The earlier
+home shortcodes (`hero`, `interactive-showcase`, `recent-updates`) and
+the `.homepage-bg` rules have been removed.
+
+**Outside the tiers.** `layouts/404.html` is a standalone document that
+does not pass through `baseof.html`. It carries its own copy of the
+palette, loads the two self-hosted fonts directly, and follows the
+operating system's light or dark preference because the site's theme
+class is not available to it. Page-to-page transitions are also not part
+of the tier system: they are cross-document view transitions defined in
+`custom.css` and apply site-wide.
+
+### Scripts are bundled at build time
+
+The home page would otherwise request eight script files. `head-end.html`
+runs them through Hugo Pipes instead: the vendored libraries in
+`assets/home/vendor/` and the site's own minified scripts are joined with
+`resources.Concat` into `bundles/home.js` and fingerprinted, so the page
+makes one request and the file name changes whenever any part changes.
+`bundles/fx2.js` is built the same way from a smaller set. Because the
+names are content-hashed, `vercel.json` serves `/bundles/` with a one
+year immutable cache; `/vendor/` and `/data/globe-110m.json` are not
+hashed and get thirty days with `stale-while-revalidate`.
+
+The libraries are vendored, not loaded from a CDN, matching the rest of
+the site: GSAP 3.15 with ScrollTrigger, SplitText and ScrambleTextPlugin
+(GSAP's standard no-charge licence), Lenis 1.3 (MIT), and d3-geo with
+d3-array (ISC). The fluid simulation in `assets/home/home-fluid.js`
+follows the approach of Pavel Dobryakov's WebGL-Fluid-Simulation (MIT).
+Licence texts and notices are kept under `static/vendor/`.
+
+### Loading order is built around first paint
+
+The hero's entrance is CSS keyframes, not script, so the headline (the
+largest paint on the page) does not wait for the bundle. An inline script
+in the head adds `hv-js` to `<html>`, which is what hides
+scroll-revealed elements until the bundle animates them in; if the bundle
+has not run within four seconds the class is removed, so a failed script
+can never leave content invisible.
+
+Two things are deferred until they are needed. The fluid simulation
+compiles its shaders at start-up but runs no frames until the pointer
+first moves. The globe's libraries and its 110m country outlines are
+fetched when the browser is idle, and the home bundle does not include
+them.
+
+The thin line at the top of tier 3 and tier 4 pages is a progress
+indicator, not a gate. `baseof.html` advances it at fixed milestones
+(parse, `DOMContentLoaded`, fonts ready, `load`) and removes it after
+twelve seconds regardless. The page is readable and usable throughout;
+nothing waits for the line to finish.
+
+### Scroll work is kept off the scroll event
+
+An early version created one ScrollTrigger per revealed element, about
+seventy-five of them, and measurably slowed the page. Reveals now go
+through a single `IntersectionObserver` helper. ScrollTrigger is kept
+only for effects that are tied to scroll position: the hero and blob
+drift, and the reel section, where a brush stroke is drawn by animating
+`stroke-dashoffset` on an SVG path and the frame opens through an
+animated `clip-path` circle. That path is built in script from the
+section's measured geometry and rebuilt on resize, because its start and
+end points depend on where the heading and the frame land at the current
+width.
+
+### The fluid canvas looks after itself
+
+`home-fluid.js` exposes `window.HVFluid.create(canvas)` and is shared by
+tiers 3 and 4. It stores dye as two channels and maps them to two theme
+colours in the display shader, so a theme switch is a uniform change and
+not a restart; the motion scripts watch the class on `<html>` and call
+`setColors`. It refuses to start on a software renderer, lowers its
+resolution when frames run slow, shuts itself down if they stay slow, and
+stops drawing after seven seconds without input.
+
+### The globe is a fourth reader of the country dataset
+
+The globe in the hero is drawn by `assets/home/home-globe.js` on a 2D
+canvas with an orthographic projection. It reads
+`static/data/olympiad-programmes.json`, the same file behind the map,
+directory and counters described under the preparation hub, so a newly
+published country guide becomes clickable on the globe with no extra
+step. Outlines come from `static/data/globe-110m.json` (Natural Earth
+through world-atlas), with each programme country tagged by ISO code.
+Singapore is too small to appear at that resolution and is drawn as a
+marker.
+
+The shortcode also prints the published guides as an ordinary list of
+links inside the globe's container. That list is the accessible and
+no-script route: focusing a link rotates the globe to that country, and
+if the canvas cannot start, the container gets `is-fallback` and the
+list is shown in its place.
+
+Drawing cost is controlled in three ways. Each set of countries (land,
+programme countries, hovered country) is collected into one `Path2D` and
+filled in a single pass. Adaptive resampling is turned off
+(`precision(0)`), which was the largest single cost. The frame interval
+is derived from the measured cost of the previous frame, between 33 and
+200 ms, so a slow device gets a slower globe and not a blocked main
+thread.
+
+### When motion is switched off or scaled back
+
+- **Reduced motion.** Under `prefers-reduced-motion: reduce` the motion
+  scripts return before doing anything and the pages render in their
+  final state. The tier 2 hover styling still applies. Appending
+  `?motion=on` to a URL overrides the preference for that page load;
+  it exists for testing on machines whose operating system reports
+  reduced motion, which Windows does when "Show animations" is off.
+- **Data saver and slow connections.** When `navigator.connection`
+  reports `saveData` or a 2g connection, the fluid, smooth scrolling and
+  the globe are skipped.
+- **Touch and coarse pointers.** The fluid, magnetic buttons and smooth
+  scrolling require a fine pointer with hover. Phones get the layout,
+  the reveals and native scrolling.
+
+### Things to know before changing it
+
+- `.content h1`, `h2` and `h3` in `custom.css` set font family, weight
+  and (for `h1`) size with `!important`. Heading overrides in `home.css`
+  need `!important` as well or they silently lose.
+- After editing `layouts/_default/baseof.html`, a running `hugo server`
+  can start serving the theme's own `baseof.html` instead; the sign is a
+  home page whose body class is `homepage-bg`. Stop and restart the
+  server. Production builds are not affected.
+- The reading-progress line under the navbar is drawn by
+  `body:not(.home-v2)::before` in `custom.css`; the home page opts out
+  through its body class.
+- The coloured left-edge rules for difficulty cards, quote blocks and
+  callouts were removed from `custom.css`. None of them was in use on a
+  tier 0 page.
+- Headings in the stylesheets use Cormorant Garamond; small labels that
+  used Fraunces now inherit the body font. The Fraunces `@font-face`
+  stays in `fonts.css` because the IBO results analysis pages under
+  `content/papers/ibo/results/` still name it in their own inline
+  styles.
+- The standalone simulator pages under `static/` do not pass through
+  `baseof.html` and are outside the tier system.
+- Measure with a production build, not the dev server. On a desktop
+  Lighthouse preset, median of three runs, the previous home page scored
+  79 with 315 ms of total blocking time; the first version of the new
+  one scored 60 with over 18 s, almost all of it the globe; after the
+  changes described above it scored 58 with 992 ms. Features added after
+  that measurement (the progress line, the reel stroke) have not been
+  re-measured, and phone figures should come from a deployed preview,
+  not from local emulation.
+
 ## Analytics: three tools, three different jobs
 
 The site runs three separate analytics tools, deliberately not
@@ -717,6 +950,8 @@ resources 0.16 to 0.32, papers hub 0.16 to 0.38, home 0.32 to over 1.0):
 those templates have mid-fold content that stays unstyled until the full
 stylesheet arrives. Do not extend this to another template without re-measuring
 layout shift without CPU throttling, because throttling hid the home page problem.
+The home figures in this paragraph are for the home page as it was before
+v2.1.0; the current one has not been tried with critical CSS.
 
 `assets/css/critical-question.css` is generated, not hand-written. It keeps
 Tailwind's `@layer` order (the extractor prepends the layer order statement and

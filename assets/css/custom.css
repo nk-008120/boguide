@@ -213,8 +213,7 @@ html.dark #boguide-toc a:hover {
   flex: none;
   vertical-align: -0.125em;
 }
-.homepage-wrapper h2 .ui-icon,
-.interactive-card h4 .ui-icon {
+.homepage-wrapper h2 .ui-icon {
   margin-right: 0.35em;
 }
 .btn-outline .ui-icon,
@@ -334,7 +333,6 @@ html.dark #boguide-toc a:hover {
 }
 .social-card-source {
   display: inline-block;
-  font-family: 'Fraunces', serif;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -385,7 +383,7 @@ html.dark .social-card {
   font-size: 1.05rem;
 }
 .testimonial-article h2 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   color: var(--primary);
   margin-top: 2.5rem;
   margin-bottom: 1rem;
@@ -417,7 +415,7 @@ html.dark .testimonial-article strong {
   box-shadow: var(--shadow-sm);
 }
 .testimonial-author-info h3 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 1.3rem;
   font-weight: 600;
   color: var(--primary);
@@ -458,7 +456,6 @@ html.dark .testimonial-author-photo {
   font-size: 1.03rem;
   line-height: 1.85;
   padding: 1.5rem 1.75rem;
-  border-left: 3px solid var(--primary);
   background: rgba(137, 101, 196, 0.045);
   border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
   margin: 1.5rem 0;
@@ -560,7 +557,6 @@ html.dark .gic-day-3 { --accent: #e0b075; }
   color: var(--accent) !important;
   margin: 2.25rem 0 0.35rem !important;
   padding-left: 0.9rem;
-  border-left: 4px solid var(--accent);
 }
 .gic-article h3 + p {
   margin: 0 0 1.1rem !important;
@@ -599,7 +595,6 @@ html.dark .gic-day-3 { --accent: #e0b075; }
   max-width: 760px;
   margin: 1.75rem auto;
   padding-left: 1.5rem;
-  border-left: 3px solid var(--accent, var(--primary));
 }
 .gic-slot {
   position: relative;
@@ -665,17 +660,6 @@ html.dark .hero-title {
 html.dark .hero-subtitle {
   color: #b0b0b0;
 }
-html.dark .interactive-card {
-  background: #1e1e1e;
-  border-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-html.dark .interactive-card h4 {
-  color: #c9b7e8;
-}
-html.dark .interactive-card p {
-  color: #a0a0a0;
-}
 
 .olympiad-hero-card {
   display: flex;
@@ -701,7 +685,7 @@ html.dark .interactive-card p {
   flex-shrink: 0;
 }
 .olympiad-hero-content h3 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 1.5rem;
   color: var(--primary);
   margin: 0 0 0.5rem;
@@ -976,7 +960,7 @@ html.dark .olympiad-directory-body p {
   text-align: center;
 }
 .olympiad-map-heading {
-  font-family: 'Fraunces', serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   color: var(--primary);
   font-size: 1.3rem;
   margin-bottom: 0.35rem;
@@ -1160,29 +1144,6 @@ html.dark .olympiad-legend-coming {
   --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.5);
 }
 
-.homepage-bg {
-  position: relative;
-}
-
-.homepage-bg::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.85);
-  z-index: -1;
-  pointer-events: none;
-}
-
-html.dark .homepage-bg::before {
-  background-color: rgba(0, 0, 0, 0.75);
-}
-html.dark .homepage-bg {
-  color: #e2e8f0;
-}
-
 .biorchive-bg-layer {
   position: fixed;
   inset: 0;
@@ -1219,81 +1180,6 @@ html.dark .biorchive-bg-layer {
 html.dark .bioguide-bg-layer {
   background-image: linear-gradient(180deg, #c3a6e0 0%, #c3a6e0 45%, #a6d1ac 100%);
   opacity: 0.117;
-}
-
-.hero-wrapper {
-  text-align: center;
-  padding: 4rem 1rem;
-  background: linear-gradient(135deg, rgba(13,122,122,0.08), rgba(168,230,61,0.08));
-  border-radius: var(--radius-xl);
-  margin-bottom: 2rem;
-}
-.hero-title {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-.hero-title .highlight {
-  background: linear-gradient(135deg, #A8E63D, #7FD500);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-.hero-subtitle {
-  font-size: 1.25rem;
-  color: #555;
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-html.dark .homepage-bg,
-html.dark .homepage-bg p,
-html.dark .homepage-bg li,
-html.dark .homepage-bg .section-subtitle,
-html.dark .homepage-bg .hero-subtitle {
-  color: #e2e8f0 !important;
-}
-
-html.dark .homepage-bg h1,
-html.dark .homepage-bg h2,
-html.dark .homepage-bg h3,
-html.dark .homepage-bg h4 {
-  color: #f1f5f9 !important;
-}
-
-html.dark .homepage-bg .card,
-html.dark .homepage-bg .topic-card,
-html.dark .homepage-bg .why-card,
-html.dark .homepage-bg .team-card,
-html.dark .homepage-bg .contact-card,
-html.dark .homepage-bg .stat-box {
-  color: #e2e8f0 !important;
-  background: #2a2a2a !important; 
-}
-
-html.dark .homepage-bg .card h3,
-html.dark .homepage-bg .topic-card h3,
-html.dark .homepage-bg .why-card h3 {
-  color: var(--secondary, #A8E63D) !important;
-}
-
-html.dark .homepage-bg .btn-outline {
-  border-color: var(--secondary);
-  color: var(--secondary);
-}
-
-html.dark .homepage-bg .btn-outline:hover {
-  background: var(--secondary);
-  color: #1a1a1a;
-}
-
-html.dark .homepage-bg .hero-wrapper {
-  background: rgba(0, 0, 0, 0.3) !important;
-}
-
-html.dark .homepage-bg .collab-note {
-  background: rgba(0, 0, 0, 0.2);
-  color: #e2e8f0;
 }
 
 .topic-meta {
@@ -1455,33 +1341,10 @@ html.favourite .hextra-nav-container-blur {
   }
 }
 
-html.favourite .homepage-bg::before {
-  background-color: transparent;
-}
-
 html.favourite [data-toggle-animation="show"],
 html.favourite .hextra-toc .hextra-scrollbar > div {
   background: transparent !important;
   box-shadow: none !important;
-}
-
-.hextra-card:has(.hextra-badge .hx\:bg-green-100) {
-  border-left: 4px solid #16a34a;
-}
-.hextra-card:has(.hextra-badge .hx\:bg-amber-100) {
-  border-left: 4px solid #f59e0b;
-}
-.hextra-card:has(.hextra-badge .hx\:bg-purple-100) {
-  border-left: 4px solid #9333ea;
-}
-.dark .hextra-card:has(.hextra-badge .hx\:bg-green-100) {
-  border-left-color: #4ade80 !important;
-}
-.dark .hextra-card:has(.hextra-badge .hx\:bg-amber-100) {
-  border-left-color: #fbbf24 !important;
-}
-.dark .hextra-card:has(.hextra-badge .hx\:bg-purple-100) {
-  border-left-color: #c084fc !important;
 }
 
 .content-image-frame {
@@ -1553,26 +1416,10 @@ body {
 
 .hextra-alert {
   border-radius: 14px !important;
-  border-left-width: 4px !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06) !important;
 }
 html.dark .hextra-alert {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
-}
-.hextra-alert[data-alert="note"] {
-  border-left-color: #3b82f6 !important;
-}
-.hextra-alert[data-alert="tip"] {
-  border-left-color: #16a34a !important;
-}
-.hextra-alert[data-alert="important"] {
-  border-left-color: #9333ea !important;
-}
-.hextra-alert[data-alert="warning"] {
-  border-left-color: #f59e0b !important;
-}
-.hextra-alert[data-alert="caution"] {
-  border-left-color: #dc2626 !important;
 }
 .hextra-alert-icon {
   height: 18px !important;
@@ -3215,7 +3062,7 @@ html.dark .content .faq-item[open] summary {
   border-bottom-color: rgba(201, 183, 232, 0.25) !important;
 }
 
-body:not(.homepage-bg)::before {
+body:not(.home-v2)::before {
   content: "";
   position: fixed;
   top: var(--hextra-navbar-height, 60px);
@@ -3229,7 +3076,7 @@ body:not(.homepage-bg)::before {
   animation: reading-progress-fill auto linear;
   animation-timeline: scroll(root block);
 }
-html.dark body:not(.homepage-bg)::before {
+html.dark body:not(.home-v2)::before {
   background: linear-gradient(90deg, #c9b7e8, #9db99a);
 }
 @keyframes reading-progress-fill {
@@ -3957,7 +3804,6 @@ html.dark .discussions-comment {
 }
 
 .recent-update-date {
-  font-family: 'Fraunces', serif;
   font-weight: 500;
   font-size: 0.78rem;
   color: #8965c4;
@@ -3999,7 +3845,6 @@ html.dark .recent-update-contributor {
 }
 .team-since {
   display: inline-block;
-  font-family: 'Fraunces', serif;
   font-size: 0.72rem;
   font-weight: 500;
   color: #8965c4;
@@ -4015,14 +3860,6 @@ html.dark .team-since {
   background: rgba(201, 183, 232, 0.08);
   border-color: rgba(201, 183, 232, 0.3);
 }
-.hero-cta-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 1.75rem;
-}
-
 .btn-primary {
   display: inline-block;
   padding: 0.65rem 1.75rem;
@@ -4042,12 +3879,6 @@ html.dark .team-since {
   text-decoration: none;
 }
 
-@media (max-width: 640px) {
-  .hero-cta-group {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 
 .book-filter {
   display: flex;
@@ -4097,7 +3928,6 @@ html.dark .team-since {
 .book-table th {
   padding: 0.6rem 0.9rem;
   text-align: left;
-  font-family: 'Fraunces', serif;
   font-weight: 500;
   color: #8965c4;
 }
@@ -4146,7 +3976,7 @@ html.dark .book-table td {
 
 .study-next-heading {
   margin: 0 0 1rem;
-  font-family: 'Fraunces', serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 500;
   font-size: 1.15rem;
   color: #8965c4;
@@ -4277,7 +4107,6 @@ nav.hextra-max-navbar-width button.hextra-nav-menu-toggle > span:has(> img[class
   font-style: italic;
 }
 .gm-head {
-  font-family: 'Fraunces', serif;
   font-size: 0.85rem;
   font-weight: 500;
   color: #8965c4;
@@ -4297,7 +4126,7 @@ nav.hextra-max-navbar-width button.hextra-nav-menu-toggle > span:has(> img[class
   background: rgba(137,101,196,0.04);
 }
 .gm-stat-num {
-  font-family: 'Fraunces', serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 1.1rem;
   font-weight: 500;
   color: #8965c4;
@@ -4472,7 +4301,7 @@ html.dark .community-reach-hero {
 }
 .reach-number {
   display: block;
-  font-family: 'Fraunces', serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 3.5rem;
   font-weight: 500;
   color: #8965c4;
@@ -4610,7 +4439,7 @@ html.dark .community-reach-updated {
 
 .site-tutorial-tooltip-title {
   margin: 0 0 0.4rem;
-  font-family: 'Fraunces', serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 500;
   font-size: 1.15rem;
 }

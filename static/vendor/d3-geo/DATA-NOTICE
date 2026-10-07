@@ -1,0 +1,3 @@
+static/data/globe-110m.json is derived from world-atlas 2.0.2 (countries-110m), https://github.com/topojson/world-atlas, ISC licence,
+itself built from Natural Earth public domain data (https://www.naturalearthdata.com/).
+Coordinates are rounded to one decimal place and each country that appears in static/data/olympiad-programmes.json carries its ISO alpha-2 code.

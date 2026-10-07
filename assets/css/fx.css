@@ -1,0 +1,601 @@
+body.fx .card,
+body.fx .hextra-card,
+body.fx .recent-update-card {
+  --fx-x: 50%;
+  --fx-y: 0%;
+  position: relative;
+  border: 1px solid var(--fx-line) !important;
+  border-radius: var(--fx-radius) !important;
+  background-color: var(--fx-surface) !important;
+  background-image: radial-gradient(22rem circle at var(--fx-x) var(--fx-y), color-mix(in srgb, var(--fx-accent) var(--fx-s), transparent), transparent 62%) !important;
+  box-shadow: var(--fx-shadow) !important;
+  transform: none;
+  transition: --fx-s 0.5s ease, border-color 0.45s var(--fx-ease), box-shadow 0.45s var(--fx-ease) !important;
+}
+body.fx .card:hover,
+body.fx .hextra-card:hover,
+body.fx .recent-update-card:hover {
+  --fx-s: 18%;
+  border-color: color-mix(in srgb, var(--fx-accent) 55%, transparent) !important;
+  transform: none !important;
+  box-shadow: var(--fx-shadow) !important;
+}
+body.fx .card::after,
+body.fx .hextra-card::after,
+body.fx .recent-update-card::after {
+  content: "";
+  position: absolute;
+  top: 0.85rem;
+  right: 0.85rem;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-top: 1px solid var(--fx-accent);
+  border-right: 1px solid var(--fx-accent);
+  opacity: 0.4;
+  transition: width 0.45s var(--fx-ease), height 0.45s var(--fx-ease), opacity 0.45s ease;
+  pointer-events: none;
+}
+body.fx .card:hover::after,
+body.fx .hextra-card:hover::after,
+body.fx .recent-update-card:hover::after {
+  width: 1.4rem;
+  height: 1.4rem;
+  opacity: 1;
+}
+body.fx .card {
+  color: var(--fx-ink);
+}
+body.fx .card h3,
+body.fx .card .card-icon {
+  color: var(--fx-accent);
+}
+body.fx .card p {
+  color: var(--fx-muted);
+}
+
+body.fx .hextra-card:has(.hextra-badge .hx\:bg-green-100),
+body.fx .hextra-card:has(.hextra-badge .hx\:bg-amber-100),
+body.fx .hextra-card:has(.hextra-badge .hx\:bg-purple-100) {
+  border-left: 1px solid var(--fx-line) !important;
+}
+body.fx .hextra-card:has(.hextra-badge .hx\:bg-green-100):hover,
+body.fx .hextra-card:has(.hextra-badge .hx\:bg-amber-100):hover,
+body.fx .hextra-card:has(.hextra-badge .hx\:bg-purple-100):hover {
+  border-left-color: color-mix(in srgb, var(--fx-accent) 55%, transparent) !important;
+}
+body.fx .hextra-card:has(.hextra-badge .hx\:bg-green-100)::after {
+  border-color: #16a34a;
+}
+body.fx .hextra-card:has(.hextra-badge .hx\:bg-amber-100)::after {
+  border-color: #d97706;
+}
+body.fx .hextra-card:has(.hextra-badge .hx\:bg-purple-100)::after {
+  border-color: #9333ea;
+}
+
+body.fx .recent-update-card::before {
+  display: none;
+}
+body.fx .recent-update-card {
+  padding-left: 1.1rem;
+}
+body.fx .recent-update-newest {
+  border-color: color-mix(in srgb, #c9971f 55%, transparent) !important;
+}
+body.fx .recent-update-newest::after {
+  border-color: #c9971f;
+  opacity: 0.9;
+}
+
+body.fx .btn-outline,
+body.fx .btn-primary {
+  --fx-x: 50%;
+  --fx-y: 50%;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.7rem 1.5rem;
+  border: 1px solid var(--fx-line-strong);
+  border-radius: var(--fx-pill);
+  background-color: var(--fx-surface);
+  background-image: radial-gradient(circle at var(--fx-x) var(--fx-y), var(--fx-accent) var(--fx-r), transparent calc(var(--fx-r) + 0.5%));
+  color: var(--fx-ink);
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  box-shadow: none;
+  transform: none;
+  transition: --fx-r 0.6s var(--fx-ease), color 0.4s var(--fx-ease), border-color 0.4s var(--fx-ease);
+}
+body.fx .btn-primary {
+  border-color: transparent;
+  background-color: var(--fx-accent);
+  background-image: radial-gradient(circle at var(--fx-x) var(--fx-y), var(--fx-accent-2) var(--fx-r), transparent calc(var(--fx-r) + 0.5%));
+  color: var(--fx-on-accent);
+  box-shadow: 0 14px 34px -16px var(--fx-accent);
+}
+body.fx .btn-outline:hover,
+body.fx .btn-outline:focus-visible,
+body.fx .btn-primary:hover,
+body.fx .btn-primary:focus-visible,
+body.fx a.card:hover .btn-outline {
+  --fx-r: 150%;
+  border-color: transparent;
+  background-color: var(--fx-surface);
+  color: var(--fx-on-accent);
+  transform: none;
+  text-decoration: none;
+}
+body.fx .btn-primary:hover,
+body.fx .btn-primary:focus-visible {
+  background-color: var(--fx-accent);
+}
+body.fx .card .btn-outline {
+  --fx-x: 50%;
+  --fx-y: 50%;
+}
+body.fx .btn-outline:focus-visible,
+body.fx .btn-primary:focus-visible {
+  outline: 2px solid var(--fx-accent);
+  outline-offset: 3px;
+}
+
+body.fx .hextra-alert {
+  --fx-tone: var(--fx-accent);
+  position: relative;
+  border-width: 1px !important;
+  border-left-width: 1px !important;
+  border-style: solid !important;
+  border-color: color-mix(in srgb, var(--fx-tone) 42%, transparent) !important;
+  border-left-color: color-mix(in srgb, var(--fx-tone) 42%, transparent) !important;
+  border-radius: var(--fx-radius-sm) !important;
+  background-color: color-mix(in srgb, var(--fx-tone) 8%, var(--fx-surface-solid)) !important;
+  box-shadow: none !important;
+}
+body.fx .hextra-alert::after {
+  content: "";
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-top: 2px solid var(--fx-tone);
+  border-right: 2px solid var(--fx-tone);
+  pointer-events: none;
+}
+body.fx .hextra-alert .hextra-alert-icon,
+body.fx .hextra-alert svg:first-child {
+  color: var(--fx-tone);
+}
+body.fx .hextra-alert[data-alert="note"] { --fx-tone: #3b82f6; }
+body.fx .hextra-alert[data-alert="tip"] { --fx-tone: #16a34a; }
+body.fx .hextra-alert[data-alert="important"] { --fx-tone: #9333ea; }
+body.fx .hextra-alert[data-alert="warning"] { --fx-tone: #d97706; }
+body.fx .hextra-alert[data-alert="caution"] { --fx-tone: #dc2626; }
+html.dark body.fx .hextra-alert[data-alert="note"] { --fx-tone: #60a5fa; }
+html.dark body.fx .hextra-alert[data-alert="tip"] { --fx-tone: #4ade80; }
+html.dark body.fx .hextra-alert[data-alert="important"] { --fx-tone: #c084fc; }
+html.dark body.fx .hextra-alert[data-alert="warning"] { --fx-tone: #fbbf24; }
+html.dark body.fx .hextra-alert[data-alert="caution"] { --fx-tone: #f87171; }
+
+body.fx .testimonial-quote-block {
+  border: 1px solid color-mix(in srgb, var(--fx-accent) 30%, transparent);
+  border-left: 1px solid color-mix(in srgb, var(--fx-accent) 30%, transparent);
+  border-radius: var(--fx-radius);
+  background: color-mix(in srgb, var(--fx-accent) 5%, var(--fx-surface));
+}
+body.fx .gic-article h3 {
+  padding-left: 0;
+  padding-bottom: 0.4rem;
+  border-left: 0;
+  background: linear-gradient(var(--accent, var(--fx-accent)), var(--accent, var(--fx-accent))) left bottom / 2.4rem 2px no-repeat;
+}
+body.fx .gic-schedule {
+  border-left-width: 1px;
+}
+body.fx .biolab-archive-framing-note {
+  border: 1px solid rgba(217, 119, 6, 0.4);
+  border-left: 1px solid rgba(217, 119, 6, 0.4);
+  border-radius: 16px;
+}
+html.dark body.fx .biolab-archive-framing-note {
+  border-color: rgba(251, 191, 36, 0.4);
+}
+
+body.fx .biolab-hub-card,
+body.fx .fr-hero,
+body.fx .fp-hero {
+  border: 1px solid var(--fx-line);
+  border-radius: var(--fx-radius-lg);
+  background:
+    radial-gradient(70% 90% at 0% 0%, var(--fx-tint-a), transparent 62%),
+    radial-gradient(70% 90% at 100% 100%, var(--fx-tint-b), transparent 62%),
+    repeating-linear-gradient(0deg, var(--fx-grid) 0, var(--fx-grid) 1px, transparent 1px, transparent 32px),
+    repeating-linear-gradient(90deg, var(--fx-grid) 0, var(--fx-grid) 1px, transparent 1px, transparent 32px),
+    var(--fx-surface);
+  box-shadow: var(--fx-shadow);
+  color: var(--fx-ink);
+}
+body.fx .biolab-hub-header,
+body.fx .fr-kicker,
+body.fx .fp-kicker {
+  font-family: var(--fx-mono);
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  color: var(--fx-accent);
+}
+body.fx .biolab-hub-status {
+  color: #b45309;
+}
+body.fx .biolab-hub-status .biolab-status-dot {
+  background: #d97706;
+}
+html.dark body.fx .biolab-hub-status {
+  color: #fbbf24;
+}
+html.dark body.fx .biolab-hub-status .biolab-status-dot {
+  background: #fbbf24;
+}
+body.fx .biolab-hub-glow {
+  background: radial-gradient(circle at 35% 30%, color-mix(in srgb, var(--fx-accent) 30%, #ffffff), var(--fx-accent) 75%);
+  box-shadow: 0 0 45px 12px color-mix(in srgb, var(--fx-accent) 30%, transparent);
+}
+body.fx .biolab-hub-ring {
+  border-color: color-mix(in srgb, var(--fx-accent) 30%, transparent);
+}
+body.fx .biolab-hub-ring-2 {
+  border-color: color-mix(in srgb, var(--fx-accent-2) 30%, transparent);
+}
+body.fx .biolab-hub-step {
+  border: 1px solid var(--fx-line);
+  border-radius: var(--fx-radius-sm);
+  background: var(--fx-surface);
+}
+body.fx .biolab-hub-step-num {
+  background: var(--fx-accent);
+  color: var(--fx-on-accent);
+}
+body.fx .biolab-hub-step h3,
+body.fx .fp-title,
+body.fx .fr-hero h1,
+body.fx .fr-hero h2 {
+  color: var(--fx-ink) !important;
+}
+body.fx .biolab-hub-step p,
+body.fx .fp-lede,
+body.fx .fr-hero p {
+  color: var(--fx-muted);
+}
+body.fx .fr-hero .fr-kicker {
+  color: var(--fx-accent);
+}
+body.fx .biolab-hub-arrow {
+  color: var(--fx-accent);
+}
+body.fx .fr-pill,
+body.fx .fp-promise {
+  border: 1px solid var(--fx-line);
+  background: var(--fx-surface);
+  color: var(--fx-ink);
+}
+body.fx .fp-btn {
+  position: relative;
+  border: 1px solid transparent;
+  border-radius: var(--fx-pill);
+  background-color: var(--fx-accent);
+  background-image: radial-gradient(circle at var(--fx-x, 50%) var(--fx-y, 50%), var(--fx-accent-2) var(--fx-r), transparent calc(var(--fx-r) + 0.5%));
+  color: var(--fx-on-accent) !important;
+  box-shadow: 0 14px 34px -16px var(--fx-accent);
+  transform: none;
+  transition: --fx-r 0.6s var(--fx-ease);
+}
+body.fx .fp-btn:hover,
+body.fx .fp-btn:focus-visible {
+  --fx-r: 150%;
+  transform: none;
+}
+
+html body.fx .cg-btn-ghost,
+html body.fx .cg-btn-light,
+html body.fx .papers-nav-btn,
+html body.fx .fr-lab-btn,
+html body.fx .fr-viz-btn,
+html body.fx .fr-pop-btn,
+html body.fx .fr-article .fr-note-btn,
+html body.fx .biolab-archive-calibrate-btn,
+html body.fx .biolab-archive-publish-toggle,
+html body.fx .biolab-archive-report-btn,
+html body.fx .challenge-cta-link,
+html body.fx .prep-tour-trigger,
+html body.fx .bio-ludo-setup-btn,
+html body.fx .bio-ludo-duel-target-btn,
+html body.fx .cg-btn-primary,
+html body.fx .prep-picker-result-link,
+html body.fx .papers-nav-btn.papers-nav-next,
+html body.fx .bio-ludo-roll-btn,
+html body.fx .bio-ludo-end-turn-btn,
+html body.fx .bio-ludo-duel-btn,
+html body.fx .bio-ludo-revive-btn,
+html body.fx .tf-quiz-submit {
+  --fx-x: 50%;
+  --fx-y: 50%;
+  --fx-btn-fill: var(--fx-accent);
+  --fx-btn-on: var(--fx-on-accent);
+  border: 1px solid var(--fx-line-strong);
+  border-radius: var(--fx-pill);
+  background-color: var(--fx-surface);
+  background-image: radial-gradient(circle at var(--fx-x) var(--fx-y), var(--fx-btn-fill) var(--fx-r), transparent calc(var(--fx-r) + 0.5%));
+  color: var(--fx-ink) !important;
+  text-decoration: none;
+  box-shadow: none;
+  transform: none;
+  transition: --fx-r 0.6s var(--fx-ease), color 0.4s var(--fx-ease), border-color 0.4s var(--fx-ease);
+}
+html body.fx .cg-btn-primary,
+html body.fx .prep-picker-result-link,
+html body.fx .papers-nav-btn.papers-nav-next,
+html body.fx .bio-ludo-roll-btn,
+html body.fx .bio-ludo-end-turn-btn,
+html body.fx .bio-ludo-duel-btn,
+html body.fx .bio-ludo-revive-btn,
+html body.fx .tf-quiz-submit {
+  --fx-btn-fill: var(--fx-accent-2);
+  border-color: transparent;
+  background-color: var(--fx-accent);
+  color: var(--fx-on-accent) !important;
+  box-shadow: 0 14px 34px -16px var(--fx-accent);
+}
+html body.fx .cg-btn-ghost:not(:disabled):hover,
+html body.fx .cg-btn-ghost:focus-visible,
+html body.fx .cg-btn-light:not(:disabled):hover,
+html body.fx .cg-btn-light:focus-visible,
+html body.fx .papers-nav-btn:not(:disabled):hover,
+html body.fx .papers-nav-btn:focus-visible,
+html body.fx .fr-lab-btn:not(:disabled):hover,
+html body.fx .fr-lab-btn:focus-visible,
+html body.fx .fr-viz-btn:not(:disabled):hover,
+html body.fx .fr-viz-btn:focus-visible,
+html body.fx .fr-pop-btn:not(:disabled):hover,
+html body.fx .fr-pop-btn:focus-visible,
+html body.fx .fr-article .fr-note-btn:not(:disabled):hover,
+html body.fx .fr-article .fr-note-btn:focus-visible,
+html body.fx .biolab-archive-calibrate-btn:not(:disabled):hover,
+html body.fx .biolab-archive-calibrate-btn:focus-visible,
+html body.fx .biolab-archive-publish-toggle:not(:disabled):hover,
+html body.fx .biolab-archive-publish-toggle:focus-visible,
+html body.fx .biolab-archive-report-btn:not(:disabled):hover,
+html body.fx .biolab-archive-report-btn:focus-visible,
+html body.fx .challenge-cta-link:not(:disabled):hover,
+html body.fx .challenge-cta-link:focus-visible,
+html body.fx .prep-tour-trigger:not(:disabled):hover,
+html body.fx .prep-tour-trigger:focus-visible,
+html body.fx .bio-ludo-setup-btn:not(:disabled):hover,
+html body.fx .bio-ludo-setup-btn:focus-visible,
+html body.fx .bio-ludo-duel-target-btn:not(:disabled):hover,
+html body.fx .bio-ludo-duel-target-btn:focus-visible,
+html body.fx .cg-btn-primary:not(:disabled):hover,
+html body.fx .cg-btn-primary:focus-visible,
+html body.fx .prep-picker-result-link:not(:disabled):hover,
+html body.fx .prep-picker-result-link:focus-visible,
+html body.fx .papers-nav-btn.papers-nav-next:not(:disabled):hover,
+html body.fx .papers-nav-btn.papers-nav-next:focus-visible,
+html body.fx .bio-ludo-roll-btn:not(:disabled):hover,
+html body.fx .bio-ludo-roll-btn:focus-visible,
+html body.fx .bio-ludo-end-turn-btn:not(:disabled):hover,
+html body.fx .bio-ludo-end-turn-btn:focus-visible,
+html body.fx .bio-ludo-duel-btn:not(:disabled):hover,
+html body.fx .bio-ludo-duel-btn:focus-visible,
+html body.fx .bio-ludo-revive-btn:not(:disabled):hover,
+html body.fx .bio-ludo-revive-btn:focus-visible,
+html body.fx .tf-quiz-submit:not(:disabled):hover,
+html body.fx .tf-quiz-submit:focus-visible {
+  --fx-r: 150%;
+  border-color: transparent;
+  color: var(--fx-btn-on) !important;
+  transform: none;
+  text-decoration: none;
+}
+html body.fx .cg-btn-ghost:not(:disabled):hover,
+html body.fx .cg-btn-ghost:focus-visible,
+html body.fx .cg-btn-light:not(:disabled):hover,
+html body.fx .cg-btn-light:focus-visible,
+html body.fx .papers-nav-btn:not(:disabled):hover,
+html body.fx .papers-nav-btn:focus-visible,
+html body.fx .fr-lab-btn:not(:disabled):hover,
+html body.fx .fr-lab-btn:focus-visible,
+html body.fx .fr-viz-btn:not(:disabled):hover,
+html body.fx .fr-viz-btn:focus-visible,
+html body.fx .fr-pop-btn:not(:disabled):hover,
+html body.fx .fr-pop-btn:focus-visible,
+html body.fx .fr-article .fr-note-btn:not(:disabled):hover,
+html body.fx .fr-article .fr-note-btn:focus-visible,
+html body.fx .biolab-archive-calibrate-btn:not(:disabled):hover,
+html body.fx .biolab-archive-calibrate-btn:focus-visible,
+html body.fx .biolab-archive-publish-toggle:not(:disabled):hover,
+html body.fx .biolab-archive-publish-toggle:focus-visible,
+html body.fx .biolab-archive-report-btn:not(:disabled):hover,
+html body.fx .biolab-archive-report-btn:focus-visible,
+html body.fx .challenge-cta-link:not(:disabled):hover,
+html body.fx .challenge-cta-link:focus-visible,
+html body.fx .prep-tour-trigger:not(:disabled):hover,
+html body.fx .prep-tour-trigger:focus-visible,
+html body.fx .bio-ludo-setup-btn:not(:disabled):hover,
+html body.fx .bio-ludo-setup-btn:focus-visible,
+html body.fx .bio-ludo-duel-target-btn:not(:disabled):hover,
+html body.fx .bio-ludo-duel-target-btn:focus-visible {
+  background-color: var(--fx-surface);
+}
+html body.fx .cg-btn-primary:not(:disabled):hover,
+html body.fx .cg-btn-primary:focus-visible,
+html body.fx .prep-picker-result-link:not(:disabled):hover,
+html body.fx .prep-picker-result-link:focus-visible,
+html body.fx .papers-nav-btn.papers-nav-next:not(:disabled):hover,
+html body.fx .papers-nav-btn.papers-nav-next:focus-visible,
+html body.fx .bio-ludo-roll-btn:not(:disabled):hover,
+html body.fx .bio-ludo-roll-btn:focus-visible,
+html body.fx .bio-ludo-end-turn-btn:not(:disabled):hover,
+html body.fx .bio-ludo-end-turn-btn:focus-visible,
+html body.fx .bio-ludo-duel-btn:not(:disabled):hover,
+html body.fx .bio-ludo-duel-btn:focus-visible,
+html body.fx .bio-ludo-revive-btn:not(:disabled):hover,
+html body.fx .bio-ludo-revive-btn:focus-visible,
+html body.fx .tf-quiz-submit:not(:disabled):hover,
+html body.fx .tf-quiz-submit:focus-visible {
+  background-color: var(--fx-accent);
+  box-shadow: 0 14px 34px -16px var(--fx-accent);
+}
+html body.fx .cg-btn-ghost:focus-visible,
+html body.fx .cg-btn-light:focus-visible,
+html body.fx .papers-nav-btn:focus-visible,
+html body.fx .fr-lab-btn:focus-visible,
+html body.fx .fr-viz-btn:focus-visible,
+html body.fx .fr-pop-btn:focus-visible,
+html body.fx .fr-article .fr-note-btn:focus-visible,
+html body.fx .biolab-archive-calibrate-btn:focus-visible,
+html body.fx .biolab-archive-publish-toggle:focus-visible,
+html body.fx .biolab-archive-report-btn:focus-visible,
+html body.fx .challenge-cta-link:focus-visible,
+html body.fx .prep-tour-trigger:focus-visible,
+html body.fx .bio-ludo-setup-btn:focus-visible,
+html body.fx .bio-ludo-duel-target-btn:focus-visible,
+html body.fx .cg-btn-primary:focus-visible,
+html body.fx .prep-picker-result-link:focus-visible,
+html body.fx .papers-nav-btn.papers-nav-next:focus-visible,
+html body.fx .bio-ludo-roll-btn:focus-visible,
+html body.fx .bio-ludo-end-turn-btn:focus-visible,
+html body.fx .bio-ludo-duel-btn:focus-visible,
+html body.fx .bio-ludo-revive-btn:focus-visible,
+html body.fx .tf-quiz-submit:focus-visible,
+html body.fx .book-filter-btn:focus-visible,
+html body.fx .prep-picker-btn:focus-visible,
+html body.fx .olympiad-directory-filter-btn:focus-visible,
+html body.fx .biolab-reaction:focus-visible {
+  outline: 2px solid var(--fx-accent);
+  outline-offset: 3px;
+}
+html body.fx .cg-btn-ghost:disabled,
+html body.fx .cg-btn-light:disabled,
+html body.fx .papers-nav-btn:disabled,
+html body.fx .fr-lab-btn:disabled,
+html body.fx .fr-viz-btn:disabled,
+html body.fx .fr-pop-btn:disabled,
+html body.fx .fr-article .fr-note-btn:disabled,
+html body.fx .biolab-archive-calibrate-btn:disabled,
+html body.fx .biolab-archive-publish-toggle:disabled,
+html body.fx .biolab-archive-report-btn:disabled,
+html body.fx .challenge-cta-link:disabled,
+html body.fx .prep-tour-trigger:disabled,
+html body.fx .bio-ludo-setup-btn:disabled,
+html body.fx .bio-ludo-duel-target-btn:disabled,
+html body.fx .cg-btn-primary:disabled,
+html body.fx .prep-picker-result-link:disabled,
+html body.fx .papers-nav-btn.papers-nav-next:disabled,
+html body.fx .bio-ludo-roll-btn:disabled,
+html body.fx .bio-ludo-end-turn-btn:disabled,
+html body.fx .bio-ludo-duel-btn:disabled,
+html body.fx .bio-ludo-revive-btn:disabled,
+html body.fx .tf-quiz-submit:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+html body.fx .cg-btn-light {
+  background-color: var(--fx-surface-solid);
+}
+html body.fx .cg-btn-light:not(:disabled):hover,
+html body.fx .cg-btn-light:focus-visible {
+  background-color: var(--fx-surface-solid);
+}
+html body.fx .biolab-archive-report-btn {
+  --fx-btn-fill: #b91c1c;
+  --fx-btn-on: #ffffff;
+  border-color: rgba(220, 38, 38, 0.45);
+  color: #b91c1c !important;
+}
+html.dark body.fx .biolab-archive-report-btn {
+  --fx-btn-fill: #dc2626;
+  border-color: rgba(248, 113, 113, 0.45);
+  color: #fca5a5 !important;
+}
+html body.fx .bio-ludo-revive-btn {
+  --fx-btn-fill: var(--fx-accent);
+  background-color: var(--fx-accent-2);
+  box-shadow: 0 14px 34px -16px var(--fx-accent-2);
+}
+html body.fx .bio-ludo-revive-btn:not(:disabled):hover,
+html body.fx .bio-ludo-revive-btn:focus-visible {
+  background-color: var(--fx-accent-2);
+}
+html body.fx .fr-viz-btn.is-on {
+  border-color: transparent;
+  background-color: var(--fx-accent);
+  color: var(--fx-on-accent) !important;
+}
+html body.fx .fr-pop-btn-note {
+  background-color: color-mix(in srgb, var(--fx-accent) 10%, var(--fx-surface));
+}
+
+html body.fx .book-filter-btn,
+html body.fx .prep-picker-btn,
+html body.fx .olympiad-directory-filter-btn,
+html body.fx .biolab-reaction {
+  border: 1px solid var(--fx-line-strong);
+  border-radius: var(--fx-pill);
+  background: var(--fx-surface);
+  color: var(--fx-ink);
+  box-shadow: none;
+  transform: none;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+html body.fx .book-filter-btn:hover,
+html body.fx .prep-picker-btn:hover,
+html body.fx .olympiad-directory-filter-btn:hover,
+html body.fx .biolab-reaction:hover {
+  border-color: var(--fx-accent);
+  background: color-mix(in srgb, var(--fx-accent) 10%, var(--fx-surface));
+  color: var(--fx-ink);
+  transform: none;
+}
+html body.fx .book-filter-btn.is-active,
+html body.fx .book-filter-btn.is-active:hover,
+html body.fx .prep-picker-btn.is-active,
+html body.fx .prep-picker-btn.is-active:hover,
+html body.fx .olympiad-directory-filter-btn.is-active,
+html body.fx .olympiad-directory-filter-btn.is-active:hover,
+html body.fx .biolab-reaction.is-active,
+html body.fx .biolab-reaction.is-active:hover {
+  border-color: transparent;
+  background: var(--fx-accent);
+  color: var(--fx-on-accent);
+  box-shadow: none;
+}
+html body.fx .olympiad-directory-filter-btn {
+  border-color: transparent;
+  background: transparent;
+}
+
+body.fx .fx-reveal {
+  opacity: 0;
+  transform: translate3d(0, 26px, 0) !important;
+}
+body.fx .fx-reveal.is-in {
+  opacity: 1;
+  transform: none !important;
+  transition: opacity 0.7s ease var(--fx-d, 0ms), transform 0.95s var(--fx-ease) var(--fx-d, 0ms) !important;
+}
+
+@media (max-width: 640px) {
+  body.fx .card,
+  body.fx .hextra-card,
+  body.fx .recent-update-card {
+    border-radius: var(--fx-radius-sm) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.fx .fx-reveal {
+    opacity: 1;
+    transform: none !important;
+  }
+}

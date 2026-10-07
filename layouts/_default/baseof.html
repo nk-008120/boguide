@@ -10,8 +10,10 @@
        here) per the existing note in layouts/partials/custom/head-end.html,
        confirmed the same way here: papers-scope silently never applied to
        question/attempt pages when this used eq .Section "papers" instead. */ -}}
-  <body class="{{ if .IsHome }}homepage-bg{{ end }}{{ if and (strings.HasPrefix .RelPermalink "/papers/") (not (in .RelPermalink "/leaderboard/")) }} papers-scope{{ end }}">
+  {{- $fxTier := partial "custom/fx-tier.html" . -}}
+  <body class="{{ if ge $fxTier 1 }}fx-t{{ end }}{{ if eq $fxTier 1 }} fx-s{{ end }}{{ if or (eq $fxTier 2) (eq $fxTier 3) }} fx{{ end }}{{ if eq $fxTier 3 }} fx-2{{ end }}{{ if eq $fxTier 4 }} home-v2{{ end }}{{ if and (strings.HasPrefix .RelPermalink "/papers/") (not (in .RelPermalink "/leaderboard/")) }} papers-scope{{ end }}">
     {{ if strings.HasPrefix .RelPermalink "/bioclash/" }}<div class="bioclash-bg-layer" aria-hidden="true"></div>{{ else if ne .Section "papers" }}<div class="bioguide-bg-layer" aria-hidden="true"></div>{{ end }}
+    {{ if ge $fxTier 3 }}<div class="hv-load" id="hv-load" aria-hidden="true"></div><script>(function(){var b=document.getElementById("hv-load"),p=0.06,done=false;function to(v){if(done||v<=p)return;p=v;b.style.setProperty("--p",v)}function end(){if(done)return;to(1);done=true;b.classList.add("is-done");setTimeout(function(){b.remove()},1200)}to(0.2);document.addEventListener("DOMContentLoaded",function(){to(0.55)});if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){to(0.8)});if(document.readyState==="complete")end();else window.addEventListener("load",end);setTimeout(end,12000)})()</script>{{ end }}
     <a href="#content" class="hx:sr-only hx:focus-visible:not-sr-only hx:focus-visible:fixed hx:focus-visible:z-50 hx:focus-visible:top-2 hx:focus-visible:left-2 hx:focus-visible:bg-primary-500 hx:focus-visible:text-white hx:focus-visible:px-4 hx:focus-visible:py-2 hx:focus-visible:rounded-md hx:focus-visible:text-sm hx:focus-visible:font-medium">
       {{- (T "skipToContent") | default "Skip to content" -}}
     </a>

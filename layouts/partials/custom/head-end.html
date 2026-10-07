@@ -47,6 +47,45 @@
     <link rel="stylesheet" href="{{ $css.RelPermalink }}">
   {{- end -}}
 {{- end -}}
+{{- $fxTier := partial "custom/fx-tier.html" . -}}
+{{- $fxCss := slice -}}
+{{- if eq $fxTier 2 -}}{{ $fxCss = slice "fx-core.css" "fx.css" }}{{- end -}}
+{{- if eq $fxTier 3 -}}{{ $fxCss = slice "fx-core.css" "fx.css" "fx2.css" }}{{- end -}}
+{{- if eq $fxTier 4 -}}{{ $fxCss = slice "fx-core.css" "home.css" }}{{- end -}}
+{{- if $fxCss -}}
+  {{- $fxParts := slice -}}
+  {{- range $fxCss -}}{{ $fxParts = $fxParts | append (resources.Get (printf "css/%s" .)) }}{{- end -}}
+  {{- $fxSheet := $fxParts | resources.Concat (printf "css/fx-tier-%d.css" $fxTier) -}}
+  {{- if hugo.IsProduction -}}
+    {{- $fxSheet = $fxSheet | minify | fingerprint -}}
+    <link rel="stylesheet" href="{{ $fxSheet.RelPermalink }}" integrity="{{ $fxSheet.Data.Integrity }}">
+  {{- else -}}
+    <link rel="stylesheet" href="{{ $fxSheet.RelPermalink }}">
+  {{- end -}}
+{{- end -}}
+{{- if eq $fxTier 1 -}}
+<style>{{ ((slice (resources.Get "css/fx-core.css") (resources.Get "css/fx-static.css")) | resources.Concat "css/fx-tier-1.css" | minify).Content | safeCSS }}</style>
+{{- end -}}
+{{- if eq $path "/" -}}
+<script>(function(){var d=document.documentElement;if(window.matchMedia("(prefers-reduced-motion: reduce)").matches&&!/[?&]motion=on/.test(location.search))return;d.classList.add("hv-js");setTimeout(function(){if(!window.__hvStarted)d.classList.remove("hv-js")},4000)})()</script>
+{{- $homeParts := slice -}}
+{{- range slice "gsap.min.js" "ScrollTrigger.min.js" "SplitText.min.js" "ScrambleTextPlugin.min.js" "lenis.min.js" -}}
+  {{- $homeParts = $homeParts | append (resources.Get (printf "home/vendor/%s" .)) -}}
+{{- end -}}
+{{- range slice "home-fluid.js" "home-motion.js" "home-globe.js" -}}
+  {{- $homeParts = $homeParts | append (resources.Get (printf "home/%s" .) | minify) -}}
+{{- end -}}
+{{- $homeJs := $homeParts | resources.Concat "bundles/home.js" | fingerprint -}}
+<script src="{{ $homeJs.RelPermalink }}" integrity="{{ $homeJs.Data.Integrity }}" defer></script>
+{{- end -}}
+{{- if or (eq $fxTier 2) (eq $fxTier 3) -}}
+<script>{{ (resources.Get "home/fx.js" | minify).Content | safeJS }}</script>
+{{- end -}}
+{{- if eq $fxTier 3 -}}
+{{- $fx2Parts := slice (resources.Get "home/vendor/gsap.min.js") (resources.Get "home/vendor/SplitText.min.js") (resources.Get "home/vendor/lenis.min.js") (resources.Get "home/home-fluid.js" | minify) (resources.Get "home/fx2-motion.js" | minify) -}}
+{{- $fx2Js := $fx2Parts | resources.Concat "bundles/fx2.js" | fingerprint -}}
+<script src="{{ $fx2Js.RelPermalink }}" integrity="{{ $fx2Js.Data.Integrity }}" defer></script>
+{{- end -}}
 {{- if hasPrefix $path "/biology-olympiad-preparation/" -}}
 <script src="{{ "js/prep-guide-tour.js" | relURL }}" defer></script>
 <script src="{{ "js/olympiad-directory.js" | relURL }}" defer></script>

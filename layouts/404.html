@@ -5,115 +5,248 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page not found – {{ .Site.Title }}</title>
     <meta name="robots" content="noindex, nofollow" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="preload" href="/fonts/cormorant-garamond-latin-74db058f.woff2" as="font" type="font/woff2" crossorigin />
     {{- with resources.Get "logo.png" }}<link rel="icon" href="{{ .RelPermalink }}" />{{- end }}
     <style>
+      @font-face {
+        font-family: "Cormorant Garamond";
+        font-style: normal;
+        font-weight: 300 600;
+        font-display: swap;
+        src: url(/fonts/cormorant-garamond-latin-74db058f.woff2) format("woff2");
+      }
+      @font-face {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400 800;
+        font-display: swap;
+        src: url(/fonts/montserrat-latin-a5ec5492.woff2) format("woff2");
+      }
       :root {
-        --lilac: #8965c4;
-        --sage: #5c7a58;
-        --ink: #2e2740;
-        --ink-dim: #6b6178;
+        --ink: #1a1a2e;
+        --muted: #55607a;
+        --line: rgba(74, 50, 110, 0.16);
+        --line-strong: rgba(74, 50, 110, 0.32);
+        --surface: rgba(255, 255, 255, 0.56);
+        --accent: #6b4a9e;
+        --accent-2: #4a6a47;
+        --on-accent: #ffffff;
+        --shadow: 0 22px 54px -34px rgba(60, 40, 110, 0.4);
+        --page:
+          radial-gradient(circle at 14% 10%, rgba(92, 122, 88, 0.3), transparent 52%),
+          radial-gradient(circle at 86% 90%, rgba(137, 101, 196, 0.3), transparent 52%),
+          linear-gradient(150deg, #eaf1e6 0%, #e3d9f0 52%, #f5edfa 100%);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --ink: #f1f5f9;
+          --muted: #a3adc2;
+          --line: rgba(255, 255, 255, 0.12);
+          --line-strong: rgba(255, 255, 255, 0.26);
+          --surface: rgba(24, 24, 31, 0.66);
+          --accent: #c9b7e8;
+          --accent-2: #9db99a;
+          --on-accent: #14141c;
+          --shadow: 0 22px 54px -34px rgba(0, 0, 0, 0.85);
+          --page:
+            radial-gradient(circle at 14% 10%, rgba(92, 122, 88, 0.24), transparent 55%),
+            radial-gradient(circle at 86% 90%, rgba(137, 101, 196, 0.26), transparent 55%),
+            #0b0e1a;
+        }
       }
       * { box-sizing: border-box; }
       html, body {
-        height: 100%;
+        min-height: 100%;
         margin: 0;
       }
       body {
-        font-family: 'Inter', system-ui, sans-serif;
-        color: var(--ink);
-        background:
-          radial-gradient(circle at 14% 10%, rgba(92, 122, 88, 0.32), transparent 52%),
-          radial-gradient(circle at 86% 90%, rgba(137, 101, 196, 0.30), transparent 52%),
-          linear-gradient(150deg, #eaf1e6 0%, #e3d9f0 52%, #f5edfa 100%);
         display: flex;
         align-items: center;
         justify-content: center;
-        text-align: center;
+        min-height: 100vh;
         padding: 1.5rem;
+        font-family: "Montserrat", system-ui, sans-serif;
+        color: var(--ink);
+        background: var(--page);
+        background-attachment: fixed;
       }
-      @media (prefers-color-scheme: dark) {
-        body {
-          color: #ece8f5;
-          background:
-            radial-gradient(circle at 14% 10%, rgba(92, 122, 88, 0.28), transparent 55%),
-            radial-gradient(circle at 86% 90%, rgba(137, 101, 196, 0.28), transparent 55%),
-            #0b0e1a;
-        }
-        .card { background: rgba(20, 18, 30, 0.55) !important; border-color: rgba(201, 183, 232, 0.25) !important; }
-        .subtitle { color: #9691ab !important; }
-        .btn-outline { border-color: rgba(201, 183, 232, 0.4) !important; color: #ece8f5 !important; }
-      }
-      .card {
-        max-width: 460px;
-        padding: 3rem 2.5rem;
-        border-radius: 20px;
-        border: 1px solid rgba(137, 101, 196, 0.25);
-        background: rgba(255, 255, 255, 0.55);
+      .panel {
+        position: relative;
+        width: 100%;
+        max-width: 34rem;
+        padding: 2.75rem 2.25rem 2.5rem;
+        border: 1px solid var(--line);
+        border-radius: 26px;
+        background: var(--surface);
+        box-shadow: var(--shadow);
         backdrop-filter: blur(10px);
-        box-shadow: 0 20px 60px rgba(92, 61, 150, 0.15);
+      }
+      .panel::after {
+        content: "";
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        width: 0.9rem;
+        height: 0.9rem;
+        border-top: 1px solid var(--accent);
+        border-right: 1px solid var(--accent);
+        opacity: 0.6;
+      }
+      .eyebrow {
+        margin: 0 0 1.25rem;
+        font-family: ui-monospace, "SFMono-Regular", "Cascadia Mono", Menlo, Consolas, monospace;
+        font-size: 0.72rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--accent);
       }
       .code {
-        font-family: 'Fraunces', Georgia, serif;
-        font-weight: 300;
-        font-size: 5rem;
-        line-height: 1;
         margin: 0;
-        background: linear-gradient(135deg, var(--lilac), var(--sage));
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-weight: 500;
+        font-style: italic;
+        font-size: clamp(5rem, 22vw, 8.5rem);
+        line-height: 0.9;
+        letter-spacing: -0.03em;
+        background: linear-gradient(100deg, var(--accent) 10%, var(--accent-2) 90%);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
       }
       h1 {
-        font-family: 'Fraunces', Georgia, serif;
+        margin: 0.75rem 0 0.6rem;
+        font-family: "Cormorant Garamond", Georgia, serif;
         font-weight: 500;
-        font-size: 1.6rem;
-        margin: 0.5rem 0 0.75rem;
+        font-size: clamp(1.7rem, 5vw, 2.2rem);
+        line-height: 1.1;
       }
       .subtitle {
-        color: var(--ink-dim);
-        font-size: 0.95rem;
-        line-height: 1.5;
+        margin: 0 0 1.5rem;
+        font-size: 0.98rem;
+        line-height: 1.6;
+        color: var(--muted);
+      }
+      .strand {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.4rem;
+        margin: 0 0 0.6rem;
+        padding: 0;
+        list-style: none;
+        font-family: ui-monospace, "SFMono-Regular", "Cascadia Mono", Menlo, Consolas, monospace;
+        font-size: 0.9rem;
+        letter-spacing: 0.08em;
+      }
+      .strand li {
+        padding: 0.3rem 0.5rem;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        color: var(--muted);
+      }
+      .strand .end {
+        padding: 0;
+        border: 0;
+        font-size: 0.7rem;
+      }
+      .strand .stop {
+        border-color: transparent;
+        background: var(--accent);
+        color: var(--on-accent);
+        font-weight: 700;
+      }
+      .strand-note {
         margin: 0 0 2rem;
+        font-size: 0.82rem;
+        color: var(--muted);
       }
       .links {
         display: flex;
-        gap: 0.75rem;
-        justify-content: center;
         flex-wrap: wrap;
+        gap: 0.75rem;
       }
       .btn {
-        display: inline-block;
-        padding: 0.65rem 1.5rem;
+        display: inline-flex;
+        align-items: center;
+        padding: 0.7rem 1.5rem;
+        border: 1px solid var(--line-strong);
         border-radius: 999px;
         font-weight: 600;
         font-size: 0.9rem;
+        line-height: 1.2;
         text-decoration: none;
-        transition: transform 0.15s ease, box-shadow 0.15s ease;
-      }
-      .btn:hover { transform: translateY(-1px); }
-      .btn-primary {
-        background: linear-gradient(135deg, var(--lilac), var(--sage));
-        color: #fff;
-        box-shadow: 0 8px 20px rgba(92, 61, 150, 0.25);
-      }
-      .btn-outline {
-        border: 1px solid rgba(137, 101, 196, 0.4);
         color: var(--ink);
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+      }
+      .btn:hover,
+      .btn:focus-visible {
+        border-color: transparent;
+        background: var(--accent);
+        color: var(--on-accent);
+      }
+      .btn-solid {
+        border-color: transparent;
+        background: var(--accent);
+        color: var(--on-accent);
+        box-shadow: 0 14px 34px -16px var(--accent);
+      }
+      .btn-solid:hover,
+      .btn-solid:focus-visible {
+        background: var(--accent-2);
+      }
+      .btn:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 3px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .btn { transition: none; }
       }
     </style>
   </head>
   <body>
-    <div class="card">
+    <main class="panel">
+      <p class="eyebrow">Error 404 / Translation terminated</p>
       <p class="code">404</p>
       <h1>Lost in the syllabus?</h1>
       <p class="subtitle">This page doesn't exist, but the topic you're looking for probably does.</p>
+      <ul class="strand" id="strand" aria-hidden="true">
+        <li class="end">5'</li>
+        <li data-codon="AUG">AUG</li>
+        <li data-codon="GCU">GCU</li>
+        <li data-codon="CAU">CAU</li>
+        <li data-codon="GGA">GGA</li>
+        <li class="stop" data-codon="UAA">UAA</li>
+        <li class="end">3'</li>
+      </ul>
+      <p class="strand-note">The ribosome reached a stop codon. No page was made.</p>
       <div class="links">
-        <a class="btn btn-primary" href="{{ "resources/" | relLangURL }}">Browse Resources</a>
-        <a class="btn btn-outline" href="{{ "" | relLangURL }}">Go Home</a>
+        <a class="btn btn-solid" href="{{ "resources/" | relLangURL }}">Browse Resources</a>
+        <a class="btn" href="{{ "" | relLangURL }}">Go Home</a>
       </div>
-    </div>
+    </main>
+    <script>
+      (function () {
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        var bases = "ACGU";
+        var cells = document.querySelectorAll("#strand [data-codon]");
+        Array.prototype.forEach.call(cells, function (cell, i) {
+          var target = cell.getAttribute("data-codon");
+          var ticks = 0;
+          var limit = 8 + i * 5;
+          var timer = setInterval(function () {
+            ticks++;
+            if (ticks >= limit) {
+              cell.textContent = target;
+              clearInterval(timer);
+              return;
+            }
+            var out = "";
+            for (var k = 0; k < 3; k++) out += bases.charAt(Math.floor(Math.random() * 4));
+            cell.textContent = out;
+          }, 60);
+        });
+      })();
+    </script>
   </body>
 </html>

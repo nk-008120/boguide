@@ -3,14 +3,14 @@
   margin: 0 auto;
 }
 .fr-article h2 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 500;
   color: var(--primary);
   margin-top: 3rem;
   scroll-margin-top: 5rem;
 }
 .fr-article h3 {
-  font-family: 'Fraunces', serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 500;
 }
 .fr-article p,

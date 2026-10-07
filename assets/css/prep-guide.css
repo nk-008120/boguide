@@ -6,7 +6,7 @@
   border-radius: var(--radius-xl);
 }
 .prep-guide-wrapper .prep-picker-heading {
-  font-family: 'Fraunces', serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 500;
   font-size: 1.4rem;
   color: var(--primary);
@@ -58,7 +58,7 @@
   border-top: 1px solid rgba(137, 101, 196, 0.2);
 }
 .prep-picker-result-heading {
-  font-family: 'Fraunces', serif;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   font-weight: 500;
   font-size: 1.1rem;
   color: var(--primary);

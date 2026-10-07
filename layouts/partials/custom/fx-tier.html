@@ -1,0 +1,12 @@
+{{- $p := .RelPermalink -}}
+{{- $tier := 2 -}}
+{{- if hasPrefix $p "/bioclash/" -}}
+  {{- $tier = 0 -}}
+{{- else if or (hasPrefix $p "/papers/") (hasPrefix $p "/dashboard/") (hasPrefix $p "/account/") -}}
+  {{- $tier = 1 -}}
+{{- else if .IsHome -}}
+  {{- $tier = 4 -}}
+{{- else if in (slice "/resources/" "/biobytes/" "/biolab/" "/about/" "/biology-olympiad-preparation/") $p -}}
+  {{- $tier = 3 -}}
+{{- end -}}
+{{- return $tier -}}
