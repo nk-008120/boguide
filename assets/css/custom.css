@@ -914,6 +914,20 @@ a.olympiad-directory-card:hover {
 .olympiad-directory-card.is-coming-soon .olympiad-directory-badge {
   opacity: 0.5;
 }
+.olympiad-directory-card.is-outline {
+  border-color: rgba(95, 155, 100, 0.55);
+}
+a.olympiad-directory-card.is-outline:hover {
+  border-color: #5f9b64;
+  box-shadow: 0 4px 14px rgba(95, 155, 100, 0.18);
+}
+.olympiad-directory-card.is-outline .olympiad-directory-badge {
+  color: #3f7a45;
+  opacity: 1;
+}
+html.dark .olympiad-directory-card.is-outline .olympiad-directory-badge {
+  color: #8cc592;
+}
 .olympiad-directory-empty {
   text-align: center;
   font-size: 0.9rem;
@@ -1029,6 +1043,19 @@ html.dark .country-coming-soon {
 html.dark .country-coming-soon:hover {
   fill: #8a7534;
 }
+.country-outline {
+  fill: #5f9b64;
+  cursor: pointer;
+}
+.country-outline:hover {
+  fill: #4e8854;
+}
+html.dark .country-outline {
+  fill: #4f8a56;
+}
+html.dark .country-outline:hover {
+  fill: #6aa971;
+}
 
 .country-marker {
   fill: #8965c4;
@@ -1047,6 +1074,18 @@ html.dark .country-marker {
 }
 html.dark .country-marker:hover {
   fill: #a48ad6;
+}
+.country-marker.country-marker-outline {
+  fill: #5f9b64;
+}
+.country-marker.country-marker-outline:hover {
+  fill: #4e8854;
+}
+html.dark .country-marker.country-marker-outline {
+  fill: #4f8a56;
+}
+html.dark .country-marker.country-marker-outline:hover {
+  fill: #6aa971;
 }
 
 .olympiad-map-tooltip {
@@ -1109,6 +1148,12 @@ html.dark .olympiad-tooltip-status.coming {
 }
 .olympiad-legend-coming {
   background: #f0cf5f;
+}
+.olympiad-legend-outline {
+  background: #5f9b64;
+}
+html.dark .olympiad-legend-outline {
+  background: #4f8a56;
 }
 html.dark .olympiad-legend-published {
   background: #9b7bc9;

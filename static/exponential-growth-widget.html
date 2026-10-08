@@ -57,7 +57,7 @@
         input {
             width: 100%;
             cursor: pointer;
-            accent-color: #2d6a4f;
+            accent-color: var(--sim-accent, #6b4a9e);
         }
         .value-display {
             font-family: monospace;
@@ -81,6 +81,7 @@
             .slider-panel { flex-direction: column; gap: 1rem; }
         }
     </style>
+<link rel="stylesheet" href="/sim/sim-fx.css">
 </head>
 <body>
 <div class="widget-container">

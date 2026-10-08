@@ -29,7 +29,7 @@
     padding-left: 12px;
   }
   .slider-row { display: flex; align-items: center; gap: 12px; margin-bottom: 1rem; }
-  .slider-row input[type=range] { flex: 1; accent-color: #2d6a4f; }
+  .slider-row input[type=range] { flex: 1; accent-color: var(--sim-accent, #6b4a9e); }
   #phVal { font-weight: 700; font-size: 1.1rem; color: #2d6a4f; min-width: 70px; text-align: right; }
   .layout { display: flex; gap: 1.4rem; align-items: flex-start; flex-wrap: wrap; }
   .mol-panel { flex: 0 0 220px; text-align: center; }
@@ -45,6 +45,7 @@
   .state.deprotonated { color: #d9534f; }
   #netCharge { text-align: center; font-size: 1rem; font-weight: 700; margin-top: 10px; padding: 8px; border-radius: 10px; background: #f1f5f9; }
 </style>
+<link rel="stylesheet" href="/sim/sim-fx.css">
 </head>
 <body>
 <div class="widget-container">

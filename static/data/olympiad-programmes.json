@@ -1,5 +1,10 @@
 {
-  "lastUpdated": "2026-10-01",
+  "lastUpdated": "2026-10-08",
+  "labels": {
+    "firsthand": "Firsthand guide",
+    "outline": "Official outline",
+    "soon": "Coming soon"
+  },
   "countries": {
     "LV": {
       "name": "Latvia",
@@ -77,155 +82,177 @@
       "name": "United Kingdom",
       "flag": "🇬🇧",
       "programme": "British Biology Olympiad (BBO)",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "guideUrl": "/olympiad-programmes/united-kingdom/",
+      "status": "outline",
+      "stages": "BBO > Second round > Team selection final > IBO"
     },
     "AU": {
       "name": "Australia",
       "flag": "🇦🇺",
-      "programme": "Australian Biology Olympiad (ASBO)",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "Australian Science Olympiads (ASO), Biology",
+      "guideUrl": "/olympiad-programmes/australia/",
+      "status": "outline",
+      "stages": "ASO Biology Exam > Summer School > Team selection > IBO"
     },
     "CA": {
       "name": "Canada",
       "flag": "🇨🇦",
-      "programme": "Canadian Biology Olympiad (CBO)",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "Canadian Biology Olympiad (CBO/OCB)",
+      "guideUrl": "/olympiad-programmes/canada/",
+      "status": "outline",
+      "stages": "CBO national exam > Team of four > Skills camp > IBO"
     },
     "DE": {
       "name": "Germany",
       "flag": "🇩🇪",
-      "programme": "German Biology Olympiad (IBO-Auswahl)",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "German BiologieOlympiad (IBO selection)",
+      "guideUrl": "/olympiad-programmes/germany/",
+      "status": "outline",
+      "stages": "Round 1 > Round 2 > Round 3 > Round 4 > IBO"
     },
     "SG": {
       "name": "Singapore",
       "flag": "🇸🇬",
       "programme": "Singapore Biology Olympiad (SBO)",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "guideUrl": "/olympiad-programmes/singapore/",
+      "status": "outline",
+      "stages": "School test > Practical tests > Training camp > IBO"
     },
     "AE": {
       "name": "United Arab Emirates",
       "flag": "🇦🇪",
-      "programme": "UAE Biology Olympiad",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "Masterminds Program",
+      "guideUrl": "/olympiad-programmes/united-arab-emirates/",
+      "status": "outline",
+      "stages": "Online qualifying exam > Training classes > Camps > IBO"
     },
     "MY": {
       "name": "Malaysia",
       "flag": "🇲🇾",
-      "programme": "Malaysian Biology Olympiad",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "Malaysian Biology Olympiad (MyBO)",
+      "guideUrl": "/olympiad-programmes/malaysia/",
+      "status": "outline",
+      "stages": "BEC > MyBO test > Selection camp > Final camp > IBO"
     },
     "NL": {
       "name": "Netherlands",
       "flag": "🇳🇱",
       "programme": "Dutch Biology Olympiad (NBO)",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "guideUrl": "/olympiad-programmes/netherlands/",
+      "status": "outline",
+      "stages": "Round 1 > Round 2 > Finale week > IBO"
     },
     "PH": {
       "name": "Philippines",
       "flag": "🇵🇭",
-      "programme": "Philippine Biology Olympiad",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "Philippine Biology Olympiad (PBO)",
+      "guideUrl": "/olympiad-programmes/philippines/",
+      "status": "outline",
+      "stages": "Eliminations > Semifinal > Final > IBO"
     },
     "BD": {
       "name": "Bangladesh",
       "flag": "🇧🇩",
       "programme": "Bangladesh Biology Olympiad (BdBO)",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "guideUrl": "/olympiad-programmes/bangladesh/",
+      "status": "outline",
+      "stages": "Regional olympiads > National Biology Olympiad > National BioCamp > IBO"
     },
     "ID": {
       "name": "Indonesia",
       "flag": "🇮🇩",
-      "programme": "Indonesian Biology Olympiad (KSN Biologi)",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "Olimpiade Sains Nasional (OSN) Biologi",
+      "guideUrl": "/olympiad-programmes/indonesia/",
+      "status": "outline",
+      "stages": "School > District > Province > National final > Pelatnas camps > IBO"
     },
     "PK": {
       "name": "Pakistan",
       "flag": "🇵🇰",
-      "programme": "Pakistan Biology Olympiad",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "National Biology Talent Contest (NBTC)",
+      "guideUrl": "/olympiad-programmes/pakistan/",
+      "status": "outline",
+      "stages": "Screening test > First camp > Later camps > IBO"
     },
     "LK": {
       "name": "Sri Lanka",
       "flag": "🇱🇰",
-      "programme": "Sri Lanka Biology Olympiad",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "Sri Lankan Biology Olympiad (SLBO)",
+      "guideUrl": "/olympiad-programmes/sri-lanka/",
+      "status": "outline",
+      "stages": "National exam > Selection round > Final exam > IBO"
     },
     "NP": {
       "name": "Nepal",
       "flag": "🇳🇵",
-      "programme": "Nepal Biology Olympiad",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "National Biology Olympiad of Nepal",
+      "guideUrl": "/olympiad-programmes/nepal/",
+      "status": "outline",
+      "stages": "Local > District > Province > National camp > National round and practical"
     },
     "ZA": {
       "name": "South Africa",
       "flag": "🇿🇦",
-      "programme": "South African Biology Olympiad (SABO)",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "South African Life Sciences Olympiad",
+      "guideUrl": "/olympiad-programmes/south-africa/",
+      "status": "outline",
+      "stages": "Practice round > Final round > Selection round > Training week > IBO"
     },
     "KR": {
       "name": "South Korea",
       "flag": "🇰🇷",
       "programme": "Korean Biology Olympiad (KBO)",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "guideUrl": "/olympiad-programmes/south-korea/",
+      "status": "outline",
+      "stages": "Application > Selection exams > Winter schools > Final exam and interview > IBO"
     },
     "JP": {
       "name": "Japan",
       "flag": "🇯🇵",
       "programme": "Japan Biology Olympiad (JBO)",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "guideUrl": "/olympiad-programmes/japan/",
+      "status": "outline",
+      "stages": "Preliminary > Final round > Team selection exam > IBO"
     },
     "FR": {
       "name": "France",
       "flag": "🇫🇷",
-      "programme": "French Biology Olympiad",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "French Biology Olympiads (OFB)",
+      "guideUrl": "/olympiad-programmes/france/",
+      "status": "outline",
+      "stages": "Selection test 1 > Selection test 2 > Interviews > IBO"
     },
     "BR": {
       "name": "Brazil",
       "flag": "🇧🇷",
-      "programme": "Brazilian Biology Olympiad (OBB)",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "Olimpíada Brasileira de Biologia (OBB)",
+      "guideUrl": "/olympiad-programmes/brazil/",
+      "status": "outline",
+      "stages": "Round 1 > Round 2 > Final at Butantan > IBO"
     },
     "TH": {
       "name": "Thailand",
       "flag": "🇹🇭",
       "programme": "Thailand Biology Olympiad (TBO)",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "guideUrl": "/olympiad-programmes/thailand/",
+      "status": "outline",
+      "stages": "POSN centre exam and camps > National final > IPST camp > IBO"
     },
     "VN": {
       "name": "Vietnam",
       "flag": "🇻🇳",
-      "programme": "Vietnamese Biology Olympiad",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "Vietnam National Excellent Student Exam in Biology (VBO)",
+      "guideUrl": "/olympiad-programmes/vietnam/",
+      "status": "outline",
+      "stages": "Provincial selection > National exam > Olympic team selection exam > IBO"
     },
     "TW": {
       "name": "Taiwan",
       "flag": "🇹🇼",
-      "programme": "Taiwan Biology Olympiad",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "Chinese Taipei Biology Olympiad Committee",
+      "guideUrl": "/olympiad-programmes/taiwan/",
+      "status": "outline",
+      "stages": "Initial round > Second round > Semi-final > Final > IBO"
     },
     "NG": {
       "name": "Nigeria",
@@ -251,37 +278,42 @@
     "TR": {
       "name": "Turkey",
       "flag": "🇹🇷",
-      "programme": "Turkish Biology Olympiad (TBiyO)",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "TÜBİTAK Science Olympiads Programme, biology (National Biology Olympiad)",
+      "guideUrl": "/olympiad-programmes/turkey/",
+      "status": "outline",
+      "stages": "First stage > Summer school > Second stage > Winter school > Team selection exams"
     },
     "SE": {
       "name": "Sweden",
       "flag": "🇸🇪",
-      "programme": "Swedish Biology Olympiad",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "Svenska Biologiolympiaden (Swedish Biology Olympiad)",
+      "guideUrl": "/olympiad-programmes/sweden/",
+      "status": "outline",
+      "stages": "Selection test 1 > Selection test 2 > Training > IBO"
     },
     "CH": {
       "name": "Switzerland",
       "flag": "🇨🇭",
       "programme": "Swiss Biology Olympiad (SBO)",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "guideUrl": "/olympiad-programmes/switzerland/",
+      "status": "outline",
+      "stages": "Round 1 > Round 2 > Final week > IBO"
     },
     "IT": {
       "name": "Italy",
       "flag": "🇮🇹",
-      "programme": "Italian Biology Olympiad (OBI)",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "Natural Science Olympiad (Olimpiadi delle Scienze Naturali)",
+      "guideUrl": "/olympiad-programmes/italy/",
+      "status": "outline",
+      "stages": "School round > Regional test > National final > Training > IBO"
     },
     "PL": {
       "name": "Poland",
       "flag": "🇵🇱",
-      "programme": "Polish Biology Olympiad (OlBiol)",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "Olimpiada Biologiczna (Polish Biology Olympiad)",
+      "guideUrl": "/olympiad-programmes/poland/",
+      "status": "outline",
+      "stages": "School > District > Central > IBO"
     },
     "IE": {
       "name": "Ireland",
@@ -293,16 +325,18 @@
     "NZ": {
       "name": "New Zealand",
       "flag": "🇳🇿",
-      "programme": "New Zealand Biology Olympiad (NZBO)",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "New Zealand International Biology Olympiad (NZIBO)",
+      "guideUrl": "/olympiad-programmes/new-zealand/",
+      "status": "outline",
+      "stages": "Entrance exam > Tutorial programme > Camp selection exam > Selection camp > IBO"
     },
     "MX": {
       "name": "Mexico",
       "flag": "🇲🇽",
-      "programme": "Olimpiada Nacional de Biologia",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "Olimpiada Nacional de Biología",
+      "guideUrl": "/olympiad-programmes/mexico/",
+      "status": "outline",
+      "stages": "State contest > National contest > Training > IBO"
     },
     "CL": {
       "name": "Chile",
@@ -321,23 +355,26 @@
     "FI": {
       "name": "Finland",
       "flag": "🇫🇮",
-      "programme": "Finnish Biology Olympiad",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "Kansallinen biologiakilpailu (National Biology Competition)",
+      "guideUrl": "/olympiad-programmes/finland/",
+      "status": "outline",
+      "stages": "National test > Training group > Spring training and final > IBO"
     },
     "DK": {
       "name": "Denmark",
       "flag": "🇩🇰",
-      "programme": "Danish Biology Olympiad",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "Biologiolympiaden (Danish Biology Olympiad)",
+      "guideUrl": "/olympiad-programmes/denmark/",
+      "status": "outline",
+      "stages": "School round > Semifinal > Training > Final > IBO"
     },
     "NO": {
       "name": "Norway",
       "flag": "🇳🇴",
-      "programme": "Norwegian Biology Olympiad",
-      "guideUrl": null,
-      "status": "coming-soon"
+      "programme": "Biologi-OL (Norwegian Biology Olympiad)",
+      "guideUrl": "/olympiad-programmes/norway/",
+      "status": "outline",
+      "stages": "School round > Round 2 > Training week and final > IBO"
     },
     "GH": {
       "name": "Ghana",
@@ -350,6 +387,273 @@
       "name": "Ethiopia",
       "flag": "🇪🇹",
       "programme": "Ethiopian Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "CN": {
+      "name": "China",
+      "flag": "🇨🇳",
+      "programme": "China National Biology Olympiad (CNBO)",
+      "guideUrl": "/olympiad-programmes/china/",
+      "status": "outline",
+      "stages": "Provincial league > National final > National training team > IBO"
+    },
+    "AR": {
+      "name": "Argentina",
+      "flag": "🇦🇷",
+      "programme": "Olimpíada Argentina de Biología",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "AM": {
+      "name": "Armenia",
+      "flag": "🇦🇲",
+      "programme": "National Biology Olympiad of Armenia",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "BY": {
+      "name": "Belarus",
+      "flag": "🇧🇾",
+      "programme": "Belarusian National Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "BO": {
+      "name": "Bolivia",
+      "flag": "🇧🇴",
+      "programme": "Biology Olympiad (listed by the IBO)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "BG": {
+      "name": "Bulgaria",
+      "flag": "🇧🇬",
+      "programme": "National Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "CO": {
+      "name": "Colombia",
+      "flag": "🇨🇴",
+      "programme": "Olimpiada Colombiana de Biologia OCB",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "CR": {
+      "name": "Costa Rica",
+      "flag": "🇨🇷",
+      "programme": "Costa Rican Biological Sciences Olympics",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "HR": {
+      "name": "Croatia",
+      "flag": "🇭🇷",
+      "programme": "National Biology Competition",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "CY": {
+      "name": "Cyprus",
+      "flag": "🇨🇾",
+      "programme": "Cyprus Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "CZ": {
+      "name": "Czech Republic",
+      "flag": "🇨🇿",
+      "programme": "Biologická Olympiáda",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "SV": {
+      "name": "El Salvador",
+      "flag": "🇸🇻",
+      "programme": "Salvadoran Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "EE": {
+      "name": "Estonia",
+      "flag": "🇪🇪",
+      "programme": "Estonian Biology Olympiad (EBO)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "GE": {
+      "name": "Georgia",
+      "flag": "🇬🇪",
+      "programme": "The National School Olympiad (in Biology)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "GR": {
+      "name": "Greece",
+      "flag": "🇬🇷",
+      "programme": "Greek National Biology Contest (Panellinios Diagonismos Biologias)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "IS": {
+      "name": "Iceland",
+      "flag": "🇮🇸",
+      "programme": "Icelandic Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "IR": {
+      "name": "Iran",
+      "flag": "🇮🇷",
+      "programme": "Iranian Biology Olympiad (IrBO)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "IQ": {
+      "name": "Iraq",
+      "flag": "🇮🇶",
+      "programme": "Iraq national biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "IL": {
+      "name": "Israel",
+      "flag": "🇮🇱",
+      "programme": "Israel National Biology Olympiade (INBO)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "KZ": {
+      "name": "Kazakhstan",
+      "flag": "🇰🇿",
+      "programme": "National Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "LT": {
+      "name": "Lithuania",
+      "flag": "🇱🇹",
+      "programme": "Lietuvos mokinių biologijos olimpiada",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "LU": {
+      "name": "Luxembourg",
+      "flag": "🇱🇺",
+      "programme": "Lëtzebuerger Biologiesolympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "MD": {
+      "name": "Moldova",
+      "flag": "🇲🇩",
+      "programme": "Olimpiada Republicană la Biologie",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "MN": {
+      "name": "Mongolia",
+      "flag": "🇲🇳",
+      "programme": "Mongolian Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "ME": {
+      "name": "Montenegro",
+      "flag": "🇲🇪",
+      "programme": "National Contest in Knowledge",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "MA": {
+      "name": "Morocco",
+      "flag": "🇲🇦",
+      "programme": "Moroccan Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "MK": {
+      "name": "North Macedonia",
+      "flag": "🇲🇰",
+      "programme": "Biology Olympiad (listed by the IBO)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "PT": {
+      "name": "Portugal",
+      "flag": "🇵🇹",
+      "programme": "Olimpíada Portuguesa de Biologia",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "QA": {
+      "name": "Qatar",
+      "flag": "🇶🇦",
+      "programme": "Qatar Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "RO": {
+      "name": "Romania",
+      "flag": "🇷🇴",
+      "programme": "National Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "RU": {
+      "name": "Russia",
+      "flag": "🇷🇺",
+      "programme": "All-Russian School Olympiad in Biology",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "SA": {
+      "name": "Saudi Arabia",
+      "flag": "🇸🇦",
+      "programme": "Mawhoob Biology Contest  (MBC)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "SI": {
+      "name": "Slovenia",
+      "flag": "🇸🇮",
+      "programme": "Državno tekmovanje iz znanja biologije za srednješolce (National Biology Competition for High School Pupils)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "ES": {
+      "name": "Spain",
+      "flag": "🇪🇸",
+      "programme": "Olimpiada Española de Biología",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "SY": {
+      "name": "Syria",
+      "flag": "🇸🇾",
+      "programme": "Syrian Biology Olympiad (SyBOly)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "TJ": {
+      "name": "Tajikistan",
+      "flag": "🇹🇯",
+      "programme": "Republic of Tajikistan Biology Olympiad (TBO)",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "UA": {
+      "name": "Ukraine",
+      "flag": "🇺🇦",
+      "programme": "Ukrainian Biology Olympiad",
+      "guideUrl": null,
+      "status": "coming-soon"
+    },
+    "UZ": {
+      "name": "Uzbekistan",
+      "flag": "🇺🇿",
+      "programme": "Biology Olympiad (listed by the IBO)",
       "guideUrl": null,
       "status": "coming-soon"
     }

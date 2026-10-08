@@ -33,12 +33,13 @@
     padding: 8px 20px; border-radius: 999px; border: 2px solid #e2e8f0; background: #f8fafc;
     cursor: pointer; font-size: 0.85rem; font-weight: 700;
   }
-  .toggle-row button.active { background: #2d6a4f; color: #fff; border-color: #2d6a4f; }
-  #buildBtn { display: block; margin: 0 auto 1rem; background: #2d6a4f; color: #fff; border: none; border-radius: 999px; padding: 10px 24px; font-size: 0.85rem; cursor: pointer; }
-  #buildBtn:hover { background: #1a472a; }
+  .toggle-row button.active { background: var(--sim-accent, #6b4a9e); color: #fff; border-color: var(--sim-accent, #6b4a9e); }
+  #buildBtn { display: block; margin: 0 auto 1rem; background: var(--sim-accent, #6b4a9e); color: #fff; border: none; border-radius: 999px; padding: 10px 24px; font-size: 0.85rem; cursor: pointer; }
+  #buildBtn:hover { background: var(--sim-accent-2, #4a6a47); }
   #stage { height: 200px; background: #f8fafc; border-radius: 14px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
   #resultLabel { text-align: center; margin-top: 10px; font-size: 0.88rem; color: #4b5563; min-height: 40px; }
 </style>
+<link rel="stylesheet" href="/sim/sim-fx.css">
 </head>
 <body>
 <div class="widget-container">

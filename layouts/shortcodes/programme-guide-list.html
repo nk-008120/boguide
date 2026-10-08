@@ -1,0 +1,24 @@
+{{- $data := (os.ReadFile "static/data/olympiad-programmes.json" | transform.Unmarshal) -}}
+{{- $want := .Get "status" -}}
+{{- $rows := slice -}}
+{{- range $code, $c := $data.countries -}}
+  {{- if and (eq $c.status $want) $c.guideUrl -}}
+    {{- $rows = $rows | append $c -}}
+  {{- end -}}
+{{- end -}}
+{{- if $rows -}}
+<div class="olympiad-directory-grid programme-guide-list">
+  {{- range sort $rows "name" }}
+  <a class="olympiad-directory-card{{ if eq $want "outline" }} is-outline{{ end }}" href="{{ .guideUrl }}">
+    <span class="olympiad-directory-flag">{{ .flag }}</span>
+    <span class="olympiad-directory-body">
+      <h4>{{ .name }}</h4>
+      <p>{{ or .stages .programme }}</p>
+    </span>
+    {{- if eq $want "outline" }}<span class="olympiad-directory-badge">Outline</span>{{ end }}
+  </a>
+  {{- end }}
+</div>
+{{- else -}}
+<p>None yet.</p>
+{{- end -}}

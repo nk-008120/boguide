@@ -30,7 +30,7 @@
   }
   .top-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
   .btn {
-    background: #2d6a4f;
+    background: var(--sim-accent, #6b4a9e);
     color: #fff;
     border: none;
     padding: 8px 16px;
@@ -54,11 +54,12 @@
   .classify-title { font-size: 0.85rem; font-weight: 700; color: #334155; margin-bottom: 8px; }
   .class-btns { display: flex; gap: 8px; flex-wrap: wrap; }
   .class-btn { background: #f1f5f9; color: #334155; border: none; padding: 8px 14px; border-radius: 999px; font-size: 0.8rem; font-weight: 600; cursor: pointer; }
-  .class-btn.selected { background: #2d6a4f; color: #fff; }
+  .class-btn.selected { background: var(--sim-accent, #6b4a9e); color: #fff; }
   .feedback { margin-top: 14px; padding: 12px 14px; border-radius: 12px; font-size: 0.85rem; display: none; }
   .feedback.correct { background: #dcfce7; color: #166534; display: block; }
   .feedback.incorrect { background: #fee2e2; color: #991b1b; display: block; }
 </style>
+<link rel="stylesheet" href="/sim/sim-fx.css">
 </head>
 <body>
 <div class="widget-container">

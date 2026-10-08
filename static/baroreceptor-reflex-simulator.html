@@ -31,13 +31,14 @@
   }
   .controls { display:flex; gap: 10px; margin-bottom: 0.8rem; }
   button {
-    background: #2d6a4f; color: #fff; border: none; border-radius: 999px;
+    background: var(--sim-accent, #6b4a9e); color: #fff; border: none; border-radius: 999px;
     padding: 8px 18px; font-size: 0.85rem; font-weight: 600; cursor: pointer;
   }
   button:disabled { opacity:0.6; cursor:not-allowed; }
   .readout { background:#eef2e6; border-radius: 12px; padding: 10px 14px; font-size: 0.82rem; margin-top: 0.8rem; min-height: 20px; }
   .readout b { color:#2d6a4f; }
 </style>
+<link rel="stylesheet" href="/sim/sim-fx.css">
 </head>
 <body>
 <div class="widget-container">

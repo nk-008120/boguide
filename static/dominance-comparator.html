@@ -39,7 +39,7 @@
     font-weight: 600;
     cursor: pointer;
   }
-  .mode-btn.active { background: #2d6a4f; color: #fff; }
+  .mode-btn.active { background: var(--sim-accent, #6b4a9e); color: #fff; }
   .cross-btn.active { background: #1d70a2; color: #fff; }
   .layout { display: flex; gap: 1.5rem; align-items: flex-start; flex-wrap: wrap; margin-top: 1rem; }
   .grid-panel { flex: 0 0 auto; }
@@ -57,6 +57,7 @@
   .legend span { display: inline-flex; align-items: center; margin-right: 12px; }
   .legend .dot { width: 10px; height: 10px; border-radius: 50%; margin-right: 4px; border: 1px solid #94a3b8; display:inline-block; }
 </style>
+<link rel="stylesheet" href="/sim/sim-fx.css">
 </head>
 <body>
 <div class="widget-container">

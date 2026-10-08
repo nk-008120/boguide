@@ -1,0 +1,19 @@
+{{- $country := .Get "country" -}}
+{{- if not $country -}}{{- errorf "outline-banner shortcode: country is required (%s)" .Page.File.Path -}}{{- end -}}
+{{- $checked := .Get "checked" -}}
+{{- $data := (os.ReadFile "static/data/olympiad-programmes.json" | transform.Unmarshal) -}}
+{{- $label := $data.labels.outline -}}
+{{- $subject := printf "Country guide for BiOGuide: %s" $country | urlquery | replace "+" "%20" -}}
+{{- $body := printf "Hi,\n\nI have firsthand experience of the %s Biology Olympiad programme and would like to write the BiOGuide guide.\n\nMy background:\n" $country | urlquery | replace "+" "%20" -}}
+<aside class="outline-banner" role="note" aria-label="About this guide">
+  <span class="outline-banner-tag">{{ $label }}</span>
+  <p class="outline-banner-title">This is an explanation of the official picture, not an account by an author from {{ $country }}.</p>
+  <p>It is built from official programme information and trusted reports, with tips from BiOGuide. Nobody from {{ $country }} has written about firsthand experience of this programme for us yet, and we are actively looking for an author.</p>
+  <p class="outline-banner-actions">
+    <a class="outline-banner-btn" href="{{ printf "mailto:r6394175@gmail.com?subject=%s&body=%s" $subject $body | safeURL }}">Write the {{ $country }} guide with us</a>
+    <a class="outline-banner-link" href="/contribute-a-guide/">How firsthand guides work</a>
+  </p>
+  {{- with $checked }}
+  <p class="outline-banner-meta">Official sources last checked {{ . }}. Details change every year, so confirm dates and rules on the official site.</p>
+  {{- end }}
+</aside>

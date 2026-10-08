@@ -4,9 +4,11 @@
   --fx-globe-land: rgba(26, 26, 46, 0.13);
   --fx-globe-border: rgba(26, 26, 46, 0.2);
   --fx-globe-grid: rgba(26, 26, 46, 0.06);
-  --fx-globe-soon: rgba(92, 122, 88, 0.5);
+  --fx-globe-soon: rgba(240, 207, 95, 0.6);
   --fx-globe-live: #7450b8;
   --fx-globe-hover: #5a3a9a;
+  --fx-globe-outline: rgba(70, 128, 74, 0.8);
+  --fx-globe-outline-hover: #3d7a47;
   --fx-globe-glow: rgba(137, 101, 196, 0.22);
   --fx-globe-ink: #ffffff;
 }
@@ -16,9 +18,11 @@ html.dark .home-v2 {
   --fx-globe-land: rgba(255, 255, 255, 0.12);
   --fx-globe-border: rgba(255, 255, 255, 0.2);
   --fx-globe-grid: rgba(255, 255, 255, 0.05);
-  --fx-globe-soon: rgba(157, 185, 154, 0.5);
+  --fx-globe-soon: rgba(190, 160, 70, 0.55);
   --fx-globe-live: #c9b7e8;
   --fx-globe-hover: #e6dbf7;
+  --fx-globe-outline: rgba(130, 190, 135, 0.82);
+  --fx-globe-outline-hover: #a6d9a9;
   --fx-globe-glow: rgba(201, 183, 232, 0.2);
   --fx-globe-ink: #14141c;
 }
@@ -248,6 +252,9 @@ html.hv-js .home-v2 [data-lines] {
 .home-v2 .hv-globe-key--live {
   background: var(--fx-globe-live);
 }
+.home-v2 .hv-globe-key--outline {
+  background: var(--fx-globe-outline);
+}
 .home-v2 .hv-globe-key--soon {
   background: var(--fx-globe-soon);
 }
@@ -303,6 +310,9 @@ html.hv-js .home-v2 [data-lines] {
 }
 .home-v2 .hv-globe-tip-status.is-live {
   color: var(--fx-accent);
+}
+.home-v2 .hv-globe-tip-status.is-outline {
+  color: var(--fx-globe-outline);
 }
 .home-v2 .hv .hv-globe-list {
   position: absolute;
@@ -1242,6 +1252,235 @@ html.hv-js .home-v2 [data-lines] {
 .home-v2 .hv .hv-tile--soon .hv-tile-title,
 .home-v2 .hv .hv-tile--soon .hv-tile-n {
   color: var(--fx-muted);
+}
+
+.home-v2 .hv .hv-folders {
+  --file-step: 2.7rem;
+  --file-peek: 0.85rem;
+  --folder-h: 8.6rem;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.2rem;
+  padding-top: calc(4 * var(--file-step) + 1rem);
+}
+.home-v2 .hv .hv-folder {
+  position: relative;
+  height: var(--folder-h);
+  min-width: 0;
+  perspective: 700px;
+}
+.home-v2 .hv .hv-folder-back,
+.home-v2 .hv .hv-folder-front {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid color-mix(in srgb, var(--fx-accent) 34%, transparent);
+}
+.home-v2 .hv .hv-folder-back {
+  top: 0;
+  border-radius: 4px 14px 14px 14px;
+  background: color-mix(in srgb, var(--fx-accent) 26%, var(--fx-surface-solid));
+}
+.home-v2 .hv .hv-folder-back::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  bottom: 100%;
+  width: 42%;
+  height: 0.95rem;
+  border: 1px solid color-mix(in srgb, var(--fx-accent) 34%, transparent);
+  border-bottom: 0;
+  border-radius: 10px 14px 0 0;
+  background: inherit;
+}
+.home-v2 .hv .hv-folder-front {
+  z-index: 3;
+  top: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 0.3rem;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  background:
+    linear-gradient(160deg, color-mix(in srgb, var(--fx-accent) 16%, var(--fx-surface-solid)), color-mix(in srgb, var(--fx-accent-2) 14%, var(--fx-surface-solid)));
+  box-shadow: 0 -8px 18px -14px rgba(20, 10, 40, 0.5);
+  transform-origin: 50% 100%;
+  transition: transform 0.55s var(--fx-ease), box-shadow 0.55s var(--fx-ease);
+  pointer-events: none;
+}
+.home-v2 .hv .hv-folder-count {
+  font-family: var(--fx-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--fx-accent);
+}
+.home-v2 .hv .hv-folder-name {
+  font-family: var(--fx-serif);
+  font-weight: 600;
+  font-size: 1.45rem;
+  line-height: 1.05;
+  color: var(--fx-ink);
+}
+.home-v2 .hv .hv-files {
+  position: absolute;
+  z-index: 2;
+  inset: 0.35rem 0.5rem auto 0.5rem;
+  height: calc(var(--folder-h) - 1rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.home-v2 .hv .hv-files li {
+  --rank: calc(var(--n) - var(--i));
+  --lean: calc((var(--i) - (var(--n) - 1) / 2) * 1deg);
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  padding: 0;
+  transform: translateY(calc(var(--rank) * var(--file-peek) * -1));
+  transition: transform 0.6s var(--fx-ease);
+  transition-delay: calc(var(--i) * 35ms);
+}
+.home-v2 .hv .hv-file {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  height: 100%;
+  padding: 0.62rem 0.75rem;
+  border: 1px solid var(--fx-line-strong);
+  border-radius: 10px;
+  background: var(--fx-surface-solid);
+  box-shadow: 0 -6px 14px -12px rgba(20, 10, 40, 0.55);
+  color: var(--fx-ink);
+  text-decoration: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+.home-v2 .hv .hv-file-n {
+  flex: none;
+  padding-top: 0.12rem;
+  font-family: var(--fx-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: var(--fx-accent);
+}
+.home-v2 .hv .hv-file-title {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  font-size: 0.84rem;
+  font-weight: 600;
+  line-height: 1.25;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.home-v2 .hv .hv-file-dot {
+  flex: none;
+  width: 0.42rem;
+  height: 0.42rem;
+  margin-top: 0.38rem;
+  border-radius: 50%;
+  background: var(--fx-accent-2);
+}
+.home-v2 .hv .hv-file--soon {
+  border-style: dashed;
+  color: var(--fx-muted);
+}
+.home-v2 .hv .hv-file--soon .hv-file-n {
+  color: var(--fx-muted);
+}
+.home-v2 .hv .hv-file:hover,
+.home-v2 .hv .hv-file:focus-visible {
+  border-color: var(--fx-accent);
+  background: color-mix(in srgb, var(--fx-accent) 9%, var(--fx-surface-solid));
+  text-decoration: none;
+}
+.home-v2 .hv .hv-file:focus-visible {
+  outline: 2px solid var(--fx-accent);
+  outline-offset: 2px;
+}
+.home-v2 .hv .hv-folder:hover .hv-files li,
+.home-v2 .hv .hv-folder:focus-within .hv-files li {
+  transform: translateY(calc(var(--rank) * var(--file-step) * -1)) rotate(var(--lean));
+}
+.home-v2 .hv .hv-folder:hover .hv-folder-front,
+.home-v2 .hv .hv-folder:focus-within .hv-folder-front {
+  transform: rotateX(-24deg);
+  box-shadow: 0 -14px 26px -14px rgba(20, 10, 40, 0.6);
+}
+
+@media (max-width: 1080px) {
+  .home-v2 .hv .hv-folders {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 0;
+    padding-top: 0;
+  }
+  .home-v2 .hv .hv-folder {
+    margin-top: calc(4 * var(--file-step) + 1.4rem);
+  }
+}
+@media (max-width: 700px), (hover: none) {
+  .home-v2 .hv .hv-folders {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.4rem;
+    padding-top: 0;
+  }
+  .home-v2 .hv .hv-folder {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 0;
+    perspective: none;
+  }
+  .home-v2 .hv .hv-folder-back {
+    display: none;
+  }
+  .home-v2 .hv .hv-folder-front {
+    position: relative;
+    order: -1;
+    top: auto;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
+    border-radius: 14px 14px 0 0;
+    box-shadow: none;
+    transform: none !important;
+  }
+  .home-v2 .hv .hv-folder-count {
+    order: 2;
+  }
+  .home-v2 .hv .hv-files {
+    position: static;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    padding: 0.6rem;
+    border: 1px solid color-mix(in srgb, var(--fx-accent) 34%, transparent);
+    border-top: 0;
+    border-radius: 0 0 14px 14px;
+    background: color-mix(in srgb, var(--fx-accent) 8%, var(--fx-surface-solid));
+  }
+  .home-v2 .hv .hv-files li {
+    position: static;
+    transform: none !important;
+  }
+  .home-v2 .hv .hv-file {
+    height: auto;
+    box-shadow: none;
+  }
+  .home-v2 .hv .hv-file-title {
+    white-space: normal;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-v2 .hv .hv-files li,
+  .home-v2 .hv .hv-folder-front {
+    transition: none;
+  }
 }
 
 .home-v2 .hv-bento {

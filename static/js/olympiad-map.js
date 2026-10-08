@@ -7,6 +7,7 @@
   var tooltip = document.getElementById('olympiad-map-tooltip');
   var loading = document.getElementById('olympiad-map-loading');
   var programmeData = null;
+  var labels = { firsthand: 'Firsthand guide', outline: 'Official outline', soon: 'Coming soon' };
 
   function escapeHtml(s) {
     return String(s == null ? '' : s)
@@ -23,10 +24,11 @@
 
     Promise.all([
       fetch(svgUrl).then(function (r) { return r.text(); }),
-      fetch('/data/olympiad-programmes.json').then(function (r) { return r.json(); })
+      fetch('/data/olympiad-programmes.json', { cache: 'no-cache' }).then(function (r) { return r.json(); })
     ]).then(function (results) {
       var svgText = results[0];
       programmeData = results[1].countries || {};
+      labels = Object.assign(labels, results[1].labels || {});
 
       if (loading) loading.style.display = 'none';
       container.insertAdjacentHTML('beforeend', svgText);
@@ -61,9 +63,14 @@
       if (!el) continue;
 
       var isPublished = info.status === 'published' && info.guideUrl;
+      var isOutline = info.status === 'outline' && info.guideUrl;
 
       if (isPublished) {
         el.classList.add('country-published');
+        el.setAttribute('data-clickable', 'true');
+        el.style.cursor = 'pointer';
+      } else if (isOutline) {
+        el.classList.add('country-outline');
         el.setAttribute('data-clickable', 'true');
         el.style.cursor = 'pointer';
       } else if (info.status === 'coming-soon') {
@@ -76,13 +83,13 @@
       el.setAttribute('aria-label', escapeHtml(info.name) +
         (info.programme ? ' -- ' + escapeHtml(info.programme) : ''));
 
-      if (isPublished) {
-        addMarkerIfSmall(svg, el, code);
+      if (isPublished || isOutline) {
+        addMarkerIfSmall(svg, el, code, isOutline);
       }
     }
   }
 
-  function addMarkerIfSmall(svg, el, code) {
+  function addMarkerIfSmall(svg, el, code, isOutline) {
     var bbox;
     try {
       bbox = el.getBBox();
@@ -99,7 +106,7 @@
     marker.setAttribute('cx', cx);
     marker.setAttribute('cy', cy);
     marker.setAttribute('r', 6);
-    marker.setAttribute('class', 'country-marker');
+    marker.setAttribute('class', isOutline ? 'country-marker country-marker-outline' : 'country-marker');
     marker.setAttribute('data-country', code);
     marker.setAttribute('tabindex', '0');
     marker.setAttribute('role', 'link');
@@ -137,7 +144,7 @@
       var code = path.getAttribute('data-country');
       if (!code || !programmeData[code]) return;
       var info = programmeData[code];
-      if (info.guideUrl && info.status === 'published') {
+      if (info.guideUrl && (info.status === 'published' || info.status === 'outline')) {
         window.location.href = info.guideUrl;
       }
     });
@@ -149,7 +156,7 @@
       var code = path.getAttribute('data-country');
       if (!code || !programmeData[code]) return;
       var info = programmeData[code];
-      if (info.guideUrl && info.status === 'published') {
+      if (info.guideUrl && (info.status === 'published' || info.status === 'outline')) {
         e.preventDefault();
         window.location.href = info.guideUrl;
       }
@@ -176,9 +183,11 @@
     var prog = info.programme ? '<br><span class="olympiad-tooltip-prog">' + escapeHtml(info.programme) + '</span>' : '';
     var status = '';
     if (info.status === 'published') {
-      status = '<br><span class="olympiad-tooltip-status published">Guide available -- click to read</span>';
+      status = '<br><span class="olympiad-tooltip-status published">' + escapeHtml(labels.firsthand) + ' -- click to read</span>';
+    } else if (info.status === 'outline') {
+      status = '<br><span class="olympiad-tooltip-status outline">' + escapeHtml(labels.outline) + ' -- click to read. Author wanted</span>';
     } else if (info.status === 'coming-soon') {
-      status = '<br><span class="olympiad-tooltip-status coming">Coming soon</span>';
+      status = '<br><span class="olympiad-tooltip-status coming">' + escapeHtml(labels.soon) + '</span>';
     }
 
     tooltip.innerHTML = '<strong>' + flag + name + '</strong>' + prog + status;

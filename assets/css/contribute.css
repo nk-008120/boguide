@@ -420,6 +420,14 @@
   background: rgba(137, 101, 196, 0.14);
   color: var(--primary);
 }
+.cg-chip.is-outline {
+  background: rgba(95, 155, 100, 0.14);
+  border-color: rgba(95, 155, 100, 0.55);
+  color: #3f7a45;
+}
+.cg-chip.is-outline:hover {
+  border-color: #5f9b64;
+}
 .cg-chip.is-open {
   border-style: dashed;
   opacity: 0.85;
@@ -513,6 +521,11 @@ html.dark .cg-chip {
 html.dark .cg-chip.is-published {
   background: rgba(201, 183, 232, 0.16);
   color: #c9b7e8;
+}
+html.dark .cg-chip.is-outline {
+  background: rgba(140, 197, 146, 0.12);
+  border-color: rgba(140, 197, 146, 0.45);
+  color: #8cc592;
 }
 html.dark .cg-chip:hover {
   border-color: #c9b7e8;

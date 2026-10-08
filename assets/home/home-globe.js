@@ -33,7 +33,7 @@
   }
 
   function getJson(url) {
-    return fetch(url).then(function (r) {
+    return fetch(url, { cache: "no-cache" }).then(function (r) {
       if (!r.ok) throw new Error(url);
       return r.json();
     });
@@ -59,8 +59,16 @@
     var plain = [];
     var soon = [];
     var live = [];
+    var outline = [];
     var byCode = {};
     var points = [];
+
+    function kindOf(info) {
+      if (!info.guideUrl) return "soon";
+      if (info.status === "published") return "live";
+      if (info.status === "outline") return "outline";
+      return "soon";
+    }
 
     world.features.forEach(function (f) {
       var code = f.properties && f.properties.c;
@@ -69,9 +77,9 @@
         plain.push(f);
         return;
       }
-      var isLive = info.status === "published" && !!info.guideUrl;
-      (isLive ? live : soon).push(f);
-      var entry = { code: code, info: info, feature: f, live: isLive, at: CENTROIDS[code] || d3.geoCentroid(f) };
+      var kind = kindOf(info);
+      (kind === "live" ? live : (kind === "outline" ? outline : soon)).push(f);
+      var entry = { code: code, info: info, feature: f, live: kind !== "soon", kind: kind, at: CENTROIDS[code] || d3.geoCentroid(f) };
       byCode[code] = entry;
       points.push(entry);
     });
@@ -79,7 +87,8 @@
     Object.keys(EXTRA).forEach(function (code) {
       var info = programmes[code];
       if (!info || byCode[code]) return;
-      var entry = { code: code, info: info, feature: null, live: info.status === "published" && !!info.guideUrl, at: EXTRA[code] };
+      var extraKind = kindOf(info);
+      var entry = { code: code, info: info, feature: null, live: extraKind !== "soon", kind: extraKind, at: EXTRA[code] };
       byCode[code] = entry;
       points.push(entry);
     });
@@ -87,6 +96,7 @@
     var plainSet = { type: "FeatureCollection", features: plain };
     var soonSet = { type: "FeatureCollection", features: soon };
     var liveSet = { type: "FeatureCollection", features: live };
+    var outlineSet = { type: "FeatureCollection", features: outline };
 
     var size = 0;
     var radius = 0;
@@ -112,7 +122,7 @@
 
     function readColors() {
       var cs = getComputedStyle(host);
-      ["sea-a", "sea-b", "land", "border", "soon", "live", "hover", "glow", "grid", "ink"].forEach(function (k) {
+      ["sea-a", "sea-b", "land", "border", "soon", "live", "hover", "outline", "outline-hover", "glow", "grid", "ink"].forEach(function (k) {
         colors[k] = cs.getPropertyValue("--fx-globe-" + k).trim() || "#888";
       });
       dirty = true;
@@ -175,6 +185,7 @@
       var pPlain = trace(plainSet);
       var pSoon = trace(soonSet);
       var pLive = trace(liveSet);
+      var pOutline = trace(outlineSet);
       ctx.strokeStyle = colors.border;
       ctx.fillStyle = colors.land;
       ctx.fill(pPlain);
@@ -182,6 +193,9 @@
       ctx.fillStyle = colors.soon;
       ctx.fill(pSoon);
       ctx.stroke(pSoon);
+      ctx.fillStyle = colors.outline;
+      ctx.fill(pOutline);
+      ctx.stroke(pOutline);
       ctx.fillStyle = colors.live;
       ctx.fill(pLive);
       ctx.stroke(pLive);
@@ -189,7 +203,7 @@
       var focus = pinned || hovered;
       if (focus && focus.feature) {
         var pFocus = trace(focus.feature);
-        ctx.fillStyle = focus.live ? colors.hover : colors.soon;
+        ctx.fillStyle = focus.kind === "outline" ? colors["outline-hover"] : (focus.live ? colors.hover : colors.soon);
         ctx.fill(pFocus);
         ctx.lineWidth = 1.4;
         ctx.strokeStyle = colors.ink;
@@ -202,9 +216,10 @@
         var xy = projection(p.at);
         if (!xy) return;
         if (p.live) {
+          var dot = p.kind === "outline" ? colors.outline : colors.live;
           ctx.beginPath();
           ctx.arc(xy[0], xy[1], 4 + pulse * 12, 0, Math.PI * 2);
-          ctx.strokeStyle = colors.live;
+          ctx.strokeStyle = dot;
           ctx.globalAlpha = 0.55 * (1 - pulse);
           ctx.lineWidth = 1.5;
           ctx.stroke();
@@ -215,7 +230,7 @@
           ctx.fill();
           ctx.beginPath();
           ctx.arc(xy[0], xy[1], 2.6, 0, Math.PI * 2);
-          ctx.fillStyle = colors.live;
+          ctx.fillStyle = dot;
           ctx.fill();
         } else if (!p.feature) {
           ctx.beginPath();
@@ -269,7 +284,7 @@
       tip.appendChild(line("hv-globe-tip-name", (p.info.flag ? p.info.flag + " " : "") + p.info.name));
       if (p.info.programme) tip.appendChild(line("hv-globe-tip-prog", p.info.programme));
       if (p.info.stages) tip.appendChild(line("hv-globe-tip-stages", p.info.stages));
-      tip.appendChild(line("hv-globe-tip-status" + (p.live ? " is-live" : ""), p.live ? "Read the guide" : "Guide coming soon"));
+      tip.appendChild(line("hv-globe-tip-status" + (p.kind === "outline" ? " is-outline" : (p.live ? " is-live" : "")), p.kind === "outline" ? "Official outline, author wanted" : (p.live ? "Read the guide" : "Guide coming soon")));
       tip.hidden = false;
       var w = tip.offsetWidth;
       var h = tip.offsetHeight;

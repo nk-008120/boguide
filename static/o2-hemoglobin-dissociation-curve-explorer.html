@@ -32,7 +32,7 @@
   .slider-panel { display:flex; flex-wrap:wrap; gap: 1.2rem; background:#f8fafc; padding: 0.8rem 1rem; border-radius:16px; margin-bottom: 0.8rem; }
   .slider-item { flex:1; min-width:160px; }
   .slider-item label { display:block; font-size:0.78rem; font-weight:700; color:#2d6a4f; margin-bottom:2px; }
-  .slider-item input { width:100%; accent-color:#2d6a4f; }
+  .slider-item input { width:100%; accent-color:var(--sim-accent, #6b4a9e); }
   .presets { display:flex; gap:8px; margin-bottom: 0.6rem; }
   .presets button {
     background:#1d70a2; color:#fff; border:none; border-radius:999px; padding:6px 14px;
@@ -41,6 +41,7 @@
   .readout { background:#eef2e6; border-radius: 12px; padding: 10px 14px; font-size: 0.85rem; }
   .readout b { color:#2d6a4f; }
 </style>
+<link rel="stylesheet" href="/sim/sim-fx.css">
 </head>
 <body>
 <div class="widget-container">

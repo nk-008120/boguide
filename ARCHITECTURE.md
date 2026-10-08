@@ -468,6 +468,43 @@ BiOBytes testimonial; the schema has no field distinguishing "official
 guide" from "community testimonial," `guideUrl` is just a URL and both
 surfaces render either kind identically.
 
+The schema now does distinguish two kinds of guide. `status` has three
+values: `published` (a firsthand guide written by someone from that
+country, purple), `outline` (an Official Outline written by BiOGuide from
+official and trusted sources, with an "author wanted" banner, green) and
+`coming-soon` (yellow on both maps). The file also carries a top-level
+`labels` object (`firsthand`, `outline`, `soon`) so the display names live
+in one place; the home shortcode, the 2D map tooltip and the directory
+count read it, while the two legend and filter strings in
+`layouts/shortcodes/olympiad-map.html` and
+`layouts/shortcodes/olympiad-directory.html` are still literal text.
+Every reader treats an unknown status as "no guide", so a new status
+degrades to a muted country instead of a broken link. Outlines live at
+`/olympiad-programmes/<country>/`, open with `{{< outline-banner >}}`
+(`layouts/shortcodes/outline-banner.html`, the only place the wording and
+the contribute email are written), are styled by
+`assets/css/outline-guide.css` loaded only under that path, and are
+checked by `scripts/check_outline_guide.py`. Every outline collects what
+is uncertain in one "Points for an Author" box (the `outline-unknown`
+div), split into "Where the sources disagree" and "Gaps a firsthand
+author could fill", so disagreements are stated once instead of being
+scattered through the stage sections. The checker rejects a guide without
+that box, fails on any internal link or dataset `guideUrl` that has no
+page in `content/`, and with `--links` requests every external address: a
+404 or 410 is an error, while a link it cannot confirm (blocked, timed
+out, certificate problem) is only a warning to follow up by hand. The
+section landing page `/olympiad-programmes/` lists the guides through
+`layouts/shortcodes/programme-guide-list.html`, which reads the dataset at
+build time and prints plain links for one `status` (`published` or
+`outline`), reusing the directory card classes. It exists so that page
+links to every guide with no script at all. The globe file
+`static/data/globe-110m.json` tags only programme countries with an ISO
+code, so a country that is not yet in the dataset must be tagged with
+`scripts/tag_globe_country.py` before it can appear on the globe. The
+rollout plan, the rules for writing an outline and the per-session prompts
+are in `plans/official-outline-guides-plan.md` and
+`plans/outline-session-prompts/`.
+
 `static/images/world-map.svg` already ships a `<path id="country-XX">`
 for essentially every country, so `static/js/olympiad-map.js`'s job is
 coloring existing paths from the JSON's `status` field, not drawing new
@@ -484,9 +521,18 @@ The map and the directory each fetch `/data/olympiad-programmes.json`
 independently rather than sharing one cached load, since each shortcode
 is meant to be self-contained and droppable onto a page on its own. The
 one page that currently uses both pays for that with a duplicate network
-request, accepted deliberately given the file is a few kilobytes and the
-browser cache absorbs the second request after the first page load
-anyway.
+request, accepted deliberately given the file is a few kilobytes.
+
+Staleness is handled on purpose, because a stale reader shows up as a
+country that looks right but does not link. `olympiad-map.js`,
+`olympiad-directory.js` and `contribute-guide.js` live in `static/` and
+are not fingerprinted by Hugo Pipes, so `head-end.html` appends
+`?v=` plus the first ten characters of the file's MD5 to each script
+address; a browser can no longer keep a copy that predates a new
+`status` value. All four readers (those three and the globe) fetch the
+dataset with `cache: "no-cache"`, which makes the browser revalidate it on
+every load, so a status change in the JSON is visible after a normal
+reload.
 
 This page's CSS and JS are also where the site's per-section loading
 pattern applies: `layouts/partials/custom/head-end.html` includes
@@ -864,7 +910,20 @@ thread.
   `content/papers/ibo/results/` still name it in their own inline
   styles.
 - The standalone simulator pages under `static/` do not pass through
-  `baseof.html` and are outside the tier system.
+  `baseof.html` and are outside the tier system. The 143 that share the
+  common widget template link one stylesheet, `static/sim/sim-fx.css`,
+  placed after their own inline styles so it overrides them: it sets
+  the panel border and shadow, the serif title, a transparent page
+  background so an embedded widget sits on the host page, and removes
+  the left-edge rule on the subtitle. It has its own small `--sim-*`
+  palette because these pages cannot read `fx-core.css` or the host
+  page's theme class, and it has no dark variant: the widgets' internal
+  colours are fixed and light. Button and slider colours inside each
+  file read `var(--sim-accent, ...)`. Colours used inside diagrams were
+  left alone because many carry meaning. A new widget should copy the
+  `<link>` line from an existing one. `ibo2022-sim.html`,
+  `rotating-grid-game.html` and `bioclash-admin-grade.html` do not use
+  the template and were not changed.
 - Measure with a production build, not the dev server. On a desktop
   Lighthouse preset, median of three runs, the previous home page scored
   79 with 315 ms of total blocking time; the first version of the new

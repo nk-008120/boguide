@@ -125,13 +125,17 @@ We would rather you decide with the full picture than be surprised later.
 
 <h2 id="country-finder">Is your country covered?</h2>
 
-<p class="cg-finder-intro">Purple countries already have a guide. Select one that is still open to start an email with the country filled in. Not on the list? Write to us anyway.</p>
+<p class="cg-finder-intro">Purple countries already have a firsthand guide written by someone from that country. Green countries have an official outline from us and are waiting for a firsthand author. Select a green or open country to start an email with the country filled in. Not on the list? Write to us anyway.</p>
 
 <div class="cg-finder" id="cg-finder">
   <p class="cg-finder-loading" id="cg-finder-loading">Loading countries...</p>
   <div class="cg-finder-group" id="cg-finder-published-wrap" hidden>
-    <h3>Guide available</h3>
+    <h3>Firsthand guide available</h3>
     <div class="cg-chips" id="cg-finder-published"></div>
+  </div>
+  <div class="cg-finder-group" id="cg-finder-outline-wrap" hidden>
+    <h3>Official outline only: author wanted</h3>
+    <div class="cg-chips" id="cg-finder-outline"></div>
   </div>
   <div class="cg-finder-group" id="cg-finder-open-wrap" hidden>
     <h3>Open for an author</h3>

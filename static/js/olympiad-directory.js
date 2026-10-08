@@ -25,11 +25,13 @@
   function cardHtml(entry) {
     var info = entry.info;
     var isPublished = info.status === 'published' && info.guideUrl;
+    var isOutline = info.status === 'outline' && info.guideUrl;
+    var hasGuide = isPublished || isOutline;
     var subtitle = info.stages || info.programme || '';
-    var tag = isPublished ? 'a' : 'div';
-    var attrs = isPublished ? ' href="' + escapeHtml(info.guideUrl) + '"' : '';
-    var cls = 'olympiad-directory-card' + (isPublished ? '' : ' is-coming-soon');
-    var badge = isPublished ? '' : '<span class="olympiad-directory-badge">Soon</span>';
+    var tag = hasGuide ? 'a' : 'div';
+    var attrs = hasGuide ? ' href="' + escapeHtml(info.guideUrl) + '"' : '';
+    var cls = 'olympiad-directory-card' + (isOutline ? ' is-outline' : (isPublished ? '' : ' is-coming-soon'));
+    var badge = isOutline ? '<span class="olympiad-directory-badge">Outline</span>' : (isPublished ? '' : '<span class="olympiad-directory-badge">Soon</span>');
     return '<' + tag + ' class="' + cls + '"' + attrs + '>' +
       '<span class="olympiad-directory-flag">' + escapeHtml(info.flag || '') + '</span>' +
       '<span class="olympiad-directory-body">' +
@@ -60,8 +62,10 @@
 
   function updateCount() {
     var published = entries.filter(function (e) { return e.info.status === 'published'; }).length;
-    var comingSoon = entries.length - published;
-    countEl.textContent = published + ' guide' + (published === 1 ? '' : 's') + ' available' +
+    var outlines = entries.filter(function (e) { return e.info.status === 'outline'; }).length;
+    var comingSoon = entries.length - published - outlines;
+    countEl.textContent = published + ' firsthand guide' + (published === 1 ? '' : 's') +
+      (outlines > 0 ? ', ' + outlines + ' official outline' + (outlines === 1 ? '' : 's') : '') +
       (comingSoon > 0 ? ', ' + comingSoon + ' more coming soon' : '');
   }
 
@@ -80,7 +84,7 @@
     });
   });
 
-  fetch('/data/olympiad-programmes.json')
+  fetch('/data/olympiad-programmes.json', { cache: 'no-cache' })
     .then(function (r) { return r.json(); })
     .then(function (data) {
       var countries = data.countries || {};

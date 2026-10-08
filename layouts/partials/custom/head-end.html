@@ -36,6 +36,7 @@
 {{- if hasPrefix $path "/biology-olympiad-preparation/" -}}{{ $extraStyles = $extraStyles | append "css/prep-guide.css" }}{{- end -}}
 {{- if hasPrefix $path "/games/" -}}{{ $extraStyles = $extraStyles | append "css/games.css" }}{{- end -}}
 {{- if hasPrefix $path "/contribute-a-guide/" -}}{{ $extraStyles = $extraStyles | append "css/contribute.css" }}{{- end -}}
+{{- if hasPrefix $path "/olympiad-programmes/" -}}{{ $extraStyles = $extraStyles | append "css/outline-guide.css" }}{{- end -}}
 {{- if hasPrefix $path "/biobytes/horizon/" -}}{{ $extraStyles = $extraStyles | append "css/horizon.css" | append "css/horizon-motion.css" | append "css/horizon-terms.css" }}{{- end -}}
 {{- if eq $path "/biobytes/" -}}{{ $extraStyles = $extraStyles | append "css/biobytes-horizon.css" }}{{- end -}}
 {{- range $extraStyles -}}
@@ -88,10 +89,10 @@
 {{- end -}}
 {{- if hasPrefix $path "/biology-olympiad-preparation/" -}}
 <script src="{{ "js/prep-guide-tour.js" | relURL }}" defer></script>
-<script src="{{ "js/olympiad-directory.js" | relURL }}" defer></script>
+<script src="{{ "js/olympiad-directory.js" | relURL }}?v={{ substr (os.ReadFile "static/js/olympiad-directory.js" | md5) 0 10 }}" defer></script>
 {{- end -}}
 {{- if hasPrefix $path "/contribute-a-guide/" -}}
-<script src="{{ "js/contribute-guide.js" | relURL }}" defer></script>
+<script src="{{ "js/contribute-guide.js" | relURL }}?v={{ substr (os.ReadFile "static/js/contribute-guide.js" | md5) 0 10 }}" defer></script>
 {{- end -}}
 {{- if hasPrefix $path "/biobytes/horizon/" -}}
 <script src="{{ "js/horizon-noise-lab.js" | relURL }}" defer></script>
@@ -130,5 +131,5 @@
 <script src="{{ "js/staff-welcome.js" | relURL }}" defer></script>
 <script src="{{ "js/site-tutorial.js" | relURL }}" defer></script>
 <script src="{{ "js/country-counter.js" | relURL }}" defer></script>
-<script src="{{ "js/olympiad-map.js" | relURL }}" defer></script>
+<script src="{{ "js/olympiad-map.js" | relURL }}?v={{ substr (os.ReadFile "static/js/olympiad-map.js" | md5) 0 10 }}" defer></script>
 <script src="{{ "js/posthog-events.js" | relURL }}" defer></script>
