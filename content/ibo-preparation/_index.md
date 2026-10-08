@@ -154,6 +154,7 @@ The practical section is where students without lab access struggle most. Our [I
 
 - **Bioinformatics**: work through the entire [Bioinformatics section](/resources/10-bioinformatics/). Practice using BLAST, reading sequence alignments, and interpreting phylogenetic trees. Try the [IBO 2022 bioinformatics simulator](/ibo2022-sim.html).
 - **Plant computational biology**: the [Plant Computational Biology section](/resources/14-practical-4/) has interactive simulators for ImageJ analysis and data plotting.
+- **Statistics and data analysis**: the [Biostatistics section](/resources/16-biostatistics/) covers graphing, standard deviation and error, t-tests, chi-square, correlation, Hardy-Weinberg and standard curves, with worked examples.
 - **Microscopy identification**: learn to identify tissue types, cell structures, and organisms from microscope images. You can practice this from high-quality image databases even without a physical microscope.
 - **Data analysis**: many practical questions are really data interpretation questions. Practice reading graphs, calculating rates, and identifying trends.
 

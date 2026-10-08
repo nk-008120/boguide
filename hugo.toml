@@ -112,6 +112,12 @@ enableGitInfo = true
     weight = 15
 
   [[menu.main]]
+    name = "14. ✅ Biostatistics 🆕"
+    parent = "Notes @ BiOGuide"
+    url = "/resources/16-biostatistics/"
+    weight = 16
+
+  [[menu.main]]
     name = "BiOrchive"
     url = "/papers/"
     weight = 2

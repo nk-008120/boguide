@@ -21,6 +21,7 @@ The full set of topic notes, organized by subject:
 11. [Ethology Notes](/resources/9-ethology/)
 12. [Biosystematics Notes](/resources/4-biosystematics/)
 13. [Molecular Biology & Biochemistry Practicals (Practical I)](/resources/11-practical-1/)
+14. [Biostatistics & Data Analysis](/resources/16-biostatistics/)
 
 ## Books & Graded Resources
 

@@ -14,6 +14,8 @@ syllabus_tags: ["IBO", "practical", "biostatistics", "data-analysis"]
 
 <div class="article-gate-body" id="article-gate-body">
 
+> **Credit:** Biostatistics was brought into Notes@BiOGuide by **Ruslanbekov Ulukbek**, IBO 2026 bronze medallist from Kyrgyzstan ([read his story](/biobytes/testimonials/kyrgyzstan-ulukbek-bronze/)), who also provided the source reference material this section is built from.
+
 ## Overview
 
 Almost every olympiad practical, and a good share of the theory papers, hands you numbers and asks what they mean. A table of absorbances, a count of offspring, a set of measurements from two treatments, a graph with error bars. The biology is the easy part; the part that costs marks is knowing which calculation to run, running it without a slip, and saying in one sentence what the result means.
@@ -73,7 +75,7 @@ These pages are written independently, with our own worked examples and data. Th
 - HHMI BioInteractive, *Using BioInteractive Resources to Teach Mathematics and Statistics in Biology* (Strode and Brokaw, 2014 draft), a teacher guide covering descriptive statistics, the t-test, chi-square, correlation, Hardy-Weinberg and standard curves. Find it at [biointeractive.org](https://www.biointeractive.org/).
 - The College Board's AP Biology quantitative skills materials and student worksheets on mathematical modelling, graphing, standard deviation and standard error, chi-square and the t-test.
 
-The source material for this section was shared with us by Ruslanbekov Ulukbek of the Kyrgyzstan national team.
+The figures on these pages were drawn for BiOGuide from the worked examples.
 
 </div>
 

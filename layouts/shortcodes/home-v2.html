@@ -15,14 +15,15 @@
   (dict "n" "13" "url" "/resources/13-practical-3/" "title" "Practical III" "sub" "Coming soon." "tag" "")
   (dict "n" "14" "url" "/resources/14-practical-4/" "title" "Plant Computational Biology" "sub" "ImageJ/Fiji image analysis and Streamlit interactive plotting for the IBO practical." "tag" "Verified")
   (dict "n" "15" "url" "/resources/15-evolution/" "title" "Evolution" "sub" "Evidence for evolution, population genetics, speciation, macroevolution, and evo-devo." "tag" "Verified")
+  (dict "n" "16" "url" "/resources/16-biostatistics/" "title" "Biostatistics & Data Analysis" "sub" "Graphing, standard deviation and error, the t-test, chi-square, correlation, Hardy-Weinberg and standard curves, with worked examples and practice questions." "tag" "New")
 -}}
-{{- $short := dict "01" "Cell & Molecular" "02" "Animal Anatomy" "03" "Animal Physiology" "04" "Biosystematics" "05" "Plant Physiology" "06" "Plant Anatomy" "07" "Genetics" "08" "Ecology" "09" "Ethology" "10" "Bioinformatics" "11" "Practical I" "12" "Practical II" "13" "Practical III" "14" "Plant Comp. Bio" "15" "Evolution" -}}
+{{- $short := dict "01" "Cell & Molecular" "02" "Animal Anatomy" "03" "Animal Physiology" "04" "Biosystematics" "05" "Plant Physiology" "06" "Plant Anatomy" "07" "Genetics" "08" "Ecology" "09" "Ethology" "10" "Bioinformatics" "11" "Practical I" "12" "Practical II" "13" "Practical III" "14" "Plant Comp. Bio" "15" "Evolution" "16" "Biostatistics" -}}
 {{- $folders := slice
   (dict "id" "cells" "name" "Cells & Molecules" "ids" (slice "01" "07" "10"))
   (dict "id" "animals" "name" "Animals" "ids" (slice "02" "03" "09"))
   (dict "id" "plants" "name" "Plants" "ids" (slice "05" "06"))
   (dict "id" "diversity" "name" "Diversity & Change" "ids" (slice "04" "08" "15"))
-  (dict "id" "practicals" "name" "Practicals" "ids" (slice "11" "12" "13" "14"))
+  (dict "id" "practicals" "name" "Practicals" "ids" (slice "11" "12" "13" "14" "16"))
 -}}
 {{- $more := slice
   (dict "url" "/dashboard/" "icon" "bar-chart" "title" "Study Dashboard" "text" "Your personalized command center: mastery tracking, prerequisite-aware recommendations, and trend analysis built from your practice history." "cta" "Open Dashboard" "size" "wide")
@@ -284,6 +285,11 @@
       <h2 class="hv-h2" id="recent-updates" data-split>Recent Updates</h2>
     </header>
     <ol class="hv-log">
+      <li data-reveal>
+        <time class="hv-log-date">Oct 2026</time>
+        <p><a href="/resources/16-biostatistics/">Biostatistics &amp; Data Analysis</a> joins <a href="/resources/">Notes @ BiOGuide</a>, brought in by Ruslanbekov Ulukbek of Kyrgyzstan, alongside his updated <a href="/biobytes/testimonials/kyrgyzstan-ulukbek-bronze/">Kyrgyzstan guide</a> and a new preparation roadmap in <a href="/biobytes/">BiOBytes</a>.</p>
+        <span class="hv-log-by">Nishit Kalani</span>
+      </li>
       <li data-reveal>
         <time class="hv-log-date">Sep 18 2026</time>
         <p>BiOGuide v2.0.0. Sitewise security enforcement, switch to PostHog and GA4 analytics additionally, switched to a MIT license, two new team members join us as associates.</p>
