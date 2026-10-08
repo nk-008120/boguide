@@ -174,8 +174,8 @@ Beyond biology, I enjoy just about anything that scratches that permanent itch i
 
 Currently Working on: Content moderation and protocol support, and producing social media content for bioguideofficial for outreach.
 {{< /team-member >}}
-{{< team-member name="Ulukbek" role="Associate (Mike Ross Class)" avatar="/uavat.png" since="September 18th 26">}}
-Hi, I’m Ulukbek! I’m currently in 11th grade, and I want to become a biochemist, though I’m also interested in computational biology and plants. I started my biology journey in 7th grade and made countless mistakes - even ones as big as refusing help and guidance from the best biologist in my country. I thought studying from books on my own would be better. (WHYYY 😭😭???)
+{{< team-member name="Ruslanbekov Ulukbek" role="Associate (Mike Ross Class)" avatar="/uavat.png" since="September 18th 26">}}
+Hi, I’m Ruslanbekov Ulukbek! I’m currently in 11th grade, and I want to become a biochemist, though I’m also interested in computational biology and plants. I started my biology journey in 7th grade and made countless mistakes - even ones as big as refusing help and guidance from the best biologist in my country. I thought studying from books on my own would be better. (WHYYY 😭😭???)
 
 Well, BioGuide should help you avoid these kinds of mistakes and set you on the right track because its materials have been collected by people who have already completed this journey. Even now, after winning a bronze medal at the IBO, I still see BioGuide as a helpful website for me. So, it should not only help you reach the IBO but also help you win a medal!
 

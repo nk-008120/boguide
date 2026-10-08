@@ -124,7 +124,7 @@ cascade:
     <div class="card-icon">🇰🇬</div>
     <h3>From Kyrgyzstan to IBO Bronze</h3>
     <p class="testimonial-pullquote">"Don't stop loving biology!"</p>
-    <div class="testimonial-meta">Ulukbek &middot; IBO 2026 Bronze Medallist</div>
+    <div class="testimonial-meta">Ruslanbekov Ulukbek &middot; IBO 2026 Bronze Medallist</div>
     <span class="btn-outline">Read His Story &rarr;</span>
   </a>
   <a href="/biobytes/testimonials/hungary-botond-silver/" class="card testimonial-card">
@@ -219,6 +219,13 @@ cascade:
 {{< /tab >}}
 {{< tab name="Articles" >}}
 <div class="two-cards">
+  <a href="/biobytes/articles/zero-to-ibo-bronze/" class="card">
+    <div class="card-icon">🗺️</div>
+    <h3>From Zero to IBO Bronze</h3>
+    <div class="badge deep">Prep Roadmap</div>
+    <p>How many hours it takes, which books to read, how to study so it sticks, and the order an IBO 2026 bronze medallist would follow if he started again from zero.</p>
+    <span class="btn-outline">Read the Roadmap →</span>
+  </a>
   <a href="/biobytes/articles/neuroscience/" class="card">
     <div class="card-icon">🧠</div>
     <h3>How to get better at theory</h3>
