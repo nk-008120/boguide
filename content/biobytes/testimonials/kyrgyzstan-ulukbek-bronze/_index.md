@@ -1,7 +1,7 @@
 ---
 title: "From Kyrgyzstan to IBO Bronze: Ruslanbekov Ulukbek's Story"
 description: "Ruslanbekov Ulukbek, an IBO 2026 bronze medallist from Kyrgyzstan, on the National Olympiad stage by stage, the very different Republic Olympiad, and how BiOGuide fits into IBO preparation."
-layout: "wide"
+layout: "toc-page"
 authors: ["Ruslanbekov Ulukbek"]
 country: "Kyrgyzstan"
 country_code: "KG"

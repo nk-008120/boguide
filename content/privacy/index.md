@@ -2,7 +2,7 @@
 title: "Privacy Policy"
 ---
 
-**Last updated:** October 3, 2026
+**Last updated:** October 10, 2026
 
 BiOGuide is a free, non-commercial study resource. Almost everything on the site - every topic page, every practice question, every timed attempt - works with no account at all. This page explains what happens on the small part that does involve an account: login, your profile, and the leaderboard.
 
@@ -32,7 +32,7 @@ Row-level security rules mean other logged-in users can never read your email or
 
 ## Accounts are optional
 
-You can read every topic page and attempt every practice question without ever signing up. An account only unlocks saving leaderboard results, a profile, and full access to BiOBytes articles.
+You can read every topic page and attempt every practice question without ever signing up. An account only unlocks saving leaderboard results, a profile, full access to BiOBytes articles, and registering for BiOLive sessions.
 
 ## Cookies and local storage
 
@@ -67,6 +67,16 @@ If you'd rather not have something you submitted to BiOLab shown publicly, the s
 - **How we use them** - BiOGuide staff open the links only to verify that your attempt followed the rules. We do not download, copy, or keep the files. We keep the submitted links and the form responses (your username, the links, and any feedback you wrote) until the round's results are announced and verification is complete, and then delete them.
 - **Your control** - because the files live in your Drive, you can revoke access or delete them at any time. Once results are announced we ask you to delete them yourself. If you remove access before verification finishes, your result may stay unverified.
 - **Who sees what** - the public leaderboard shows only your display name, avatar, country, and placement. Recordings and scratch paper are never published.
+
+## BiOLive: session registrations
+
+[BiOLive](/live/) is our weekend programme of live paper solving on Zoom. If you register for a session, here is what that involves:
+
+- **What you give us** - the name you enter, your target olympiad, and an optional doubt or question for the host. Your account email is attached to the registration automatically.
+- **Who sees it** - only BiOGuide staff, and only to run the session: the host uses your email to send you the Zoom link. Other students never see your name, email, or question. The public calendar shows only how many students have registered for a session, never who.
+- **Attendance** - after a session, staff may mark whether you attended. This is visible to you and to staff only.
+- **Zoom** - the session itself runs on Zoom, a third-party service with its own privacy policy. The Zoom link is sent by email and is not stored on BiOGuide. A session may be recorded by the host and shared by email with the students registered for it; the host will say so at the start.
+- **Your control** - you can pull out of a session any time before it starts, which deletes that registration. Deleting your account removes all of your registrations.
 
 ## Deleting your data
 

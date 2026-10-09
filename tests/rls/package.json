@@ -6,7 +6,7 @@
   "main": "phase0-hardening.test.mjs",
   "type": "module",
   "scripts": {
-    "test": "node phase0-hardening.test.mjs"
+    "test": "node phase0-hardening.test.mjs && node biolive.test.mjs"
   },
   "dependencies": {
     "@electric-sql/pglite": "^0.5.8"

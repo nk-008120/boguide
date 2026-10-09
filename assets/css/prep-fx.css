@@ -1,0 +1,223 @@
+body.fx-2 .prep-guide-wrapper {
+  counter-reset: prep-section;
+}
+body.fx-2 .prep-guide-wrapper > h2 {
+  position: relative;
+  margin-top: 4.5rem;
+  padding-top: 1.5rem;
+  border: 0;
+  font-size: clamp(1.9rem, 3.6vw, 2.8rem) !important;
+  line-height: 1.05;
+  letter-spacing: -0.015em !important;
+  color: var(--fx-ink) !important;
+}
+body.fx-2 .prep-guide-wrapper > h2::before {
+  counter-increment: prep-section;
+  content: counter(prep-section, decimal-leading-zero) " / Guide";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--fx-mono);
+  font-size: 0.72rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--fx-accent);
+}
+
+body.fx-2 .olympiad-map-container {
+  border: 1px solid var(--fx-line);
+  border-radius: var(--fx-radius);
+  background: var(--fx-surface);
+  box-shadow: var(--fx-shadow);
+}
+body.fx-2 .olympiad-map-heading {
+  font-size: clamp(1.4rem, 2.4vw, 1.8rem);
+  color: var(--fx-ink);
+}
+body.fx-2 .olympiad-legend-item {
+  font-family: var(--fx-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fx-muted);
+}
+
+body.fx-2 .prep-guide-wrapper .prep-picker,
+body.fx-2 .olympiad-hero-card {
+  position: relative;
+  border: 1px solid var(--fx-line);
+  border-radius: var(--fx-radius-lg);
+  background:
+    radial-gradient(70% 90% at 0% 0%, var(--fx-tint-a), transparent 62%),
+    radial-gradient(70% 90% at 100% 100%, var(--fx-tint-b), transparent 62%),
+    repeating-linear-gradient(0deg, var(--fx-grid) 0, var(--fx-grid) 1px, transparent 1px, transparent 32px),
+    repeating-linear-gradient(90deg, var(--fx-grid) 0, var(--fx-grid) 1px, transparent 1px, transparent 32px),
+    var(--fx-surface);
+  box-shadow: var(--fx-shadow);
+}
+body.fx-2 .prep-guide-wrapper .prep-picker::after,
+body.fx-2 .olympiad-hero-card::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-top: 1px solid var(--fx-accent);
+  border-right: 1px solid var(--fx-accent);
+  opacity: 0.5;
+  pointer-events: none;
+}
+body.fx-2 .prep-guide-wrapper .prep-picker-heading {
+  font-size: clamp(1.6rem, 2.8vw, 2.1rem);
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--fx-ink);
+}
+body.fx-2 .prep-picker-question > p,
+body.fx-2 .prep-picker-question > label,
+body.fx-2 .prep-picker-question > span {
+  font-family: var(--fx-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fx-accent);
+}
+body.fx-2 .prep-picker-result {
+  border-top-color: var(--fx-line);
+}
+body.fx-2 .olympiad-hero-content h3 {
+  font-size: clamp(1.5rem, 2.6vw, 1.9rem);
+  color: var(--fx-ink);
+}
+body.fx-2 .olympiad-hero-content p {
+  color: var(--fx-muted);
+}
+
+body.fx-2 .prep-jump-nav a {
+  padding: 0.4rem 0.95rem;
+  border: 1px solid var(--fx-line-strong);
+  border-radius: var(--fx-pill);
+  background: var(--fx-surface);
+  font-family: var(--fx-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--fx-ink);
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+body.fx-2 .prep-jump-nav a:hover,
+body.fx-2 .prep-jump-nav a:focus-visible {
+  border-color: transparent;
+  background: var(--fx-accent);
+  color: var(--fx-on-accent);
+}
+
+body.fx-2 .olympiad-directory-search {
+  border: 1px solid var(--fx-line-strong);
+  border-radius: var(--fx-pill);
+  background: var(--fx-surface);
+  color: var(--fx-ink);
+}
+body.fx-2 .olympiad-directory-count {
+  font-family: var(--fx-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fx-muted);
+}
+body.fx-2 .olympiad-directory-card {
+  position: relative;
+  border: 1px solid var(--fx-line);
+  border-radius: 14px;
+  background: var(--fx-surface);
+  box-shadow: none;
+  transform: none;
+  transition: border-color 0.4s var(--fx-ease), background-color 0.4s var(--fx-ease);
+}
+body.fx-2 a.olympiad-directory-card:hover,
+body.fx-2 a.olympiad-directory-card:focus-visible {
+  border-color: var(--fx-accent);
+  background: color-mix(in srgb, var(--fx-accent) 8%, var(--fx-surface-solid));
+  transform: none;
+  box-shadow: none;
+}
+body.fx-2 .olympiad-directory-flag {
+  font-family: var(--fx-mono);
+  letter-spacing: 0.06em;
+  color: var(--fx-accent);
+}
+body.fx-2 .olympiad-directory-badge {
+  font-family: var(--fx-mono);
+  letter-spacing: 0.1em;
+}
+
+body.fx-2 .content .prep-accordion-group .faq-item,
+body.fx-2 .content .faq-item {
+  border-color: var(--fx-line);
+  background: var(--fx-surface);
+}
+body.fx-2 .content .faq-item:first-of-type {
+  border-top-left-radius: var(--fx-radius-sm);
+  border-top-right-radius: var(--fx-radius-sm);
+}
+body.fx-2 .content .faq-item:last-of-type {
+  border-bottom-left-radius: var(--fx-radius-sm);
+  border-bottom-right-radius: var(--fx-radius-sm);
+}
+body.fx-2 .content .faq-item summary {
+  font-family: var(--fx-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--fx-ink);
+  transition: background-color 0.3s ease;
+}
+body.fx-2 .content .faq-item summary:hover {
+  background: color-mix(in srgb, var(--fx-accent) 7%, transparent);
+}
+body.fx-2 .content .faq-item summary::before {
+  color: var(--fx-accent);
+}
+
+body.fx-2 .content table {
+  border: 1px solid var(--fx-line);
+  border-radius: var(--fx-radius-sm);
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  background: var(--fx-surface);
+}
+body.fx-2 .content table th {
+  border: 0;
+  border-bottom: 1px solid var(--fx-line-strong);
+  background: color-mix(in srgb, var(--fx-accent) 9%, var(--fx-surface-solid));
+  font-family: var(--fx-mono);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fx-ink);
+}
+body.fx-2 .content table td {
+  border: 0;
+  border-bottom: 1px solid var(--fx-line);
+}
+body.fx-2 .content table tr:last-child td {
+  border-bottom: 0;
+}
+body.fx-2 .content table tbody tr:hover td {
+  background: color-mix(in srgb, var(--fx-accent) 6%, transparent);
+}
+
+@media (max-width: 640px) {
+  body.fx-2 .prep-guide-wrapper > h2 {
+    margin-top: 3.2rem;
+  }
+  body.fx-2 .content .faq-item summary {
+    font-size: 1.1rem;
+  }
+}

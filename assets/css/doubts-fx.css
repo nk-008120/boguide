@@ -1,0 +1,229 @@
+body.fx #content > h1 {
+  position: relative;
+  max-width: 46rem;
+  margin: 2.5rem auto 1.5rem;
+  padding: 1.6rem 0 1.1rem;
+  border: 0;
+  font-family: var(--fx-serif) !important;
+  font-weight: 500 !important;
+  font-size: clamp(2.8rem, 7vw, 5.4rem) !important;
+  line-height: 0.98;
+  letter-spacing: -0.025em !important;
+  text-align: left;
+  color: var(--fx-ink);
+  background: linear-gradient(90deg, var(--fx-accent), var(--fx-accent-2)) left bottom / 4.5rem 2px no-repeat;
+}
+body.fx #content > h1::before {
+  content: "Community / Ask the team";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--fx-mono);
+  font-size: 0.72rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--fx-accent);
+}
+
+body.fx .discussions-intro {
+  max-width: 40rem;
+  opacity: 1;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--fx-muted);
+}
+body.fx .discussions-status {
+  font-family: var(--fx-mono);
+  font-size: 0.8rem;
+  font-style: normal;
+  letter-spacing: 0.04em;
+  color: var(--fx-muted);
+}
+
+body.fx .discussions-new-thread:not(:empty),
+body.fx .discussions-comment-form-wrap:not(:empty) {
+  position: relative;
+  padding: 1.5rem 1.5rem 0.6rem;
+  border: 1px solid var(--fx-line);
+  border-radius: var(--fx-radius);
+  background:
+    radial-gradient(70% 90% at 0% 0%, var(--fx-tint-a), transparent 62%),
+    radial-gradient(70% 90% at 100% 100%, var(--fx-tint-b), transparent 62%),
+    var(--fx-surface);
+  box-shadow: var(--fx-shadow);
+}
+body.fx .discussions-new-thread:not(:empty)::after,
+body.fx .discussions-comment-form-wrap:not(:empty)::after {
+  content: "";
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-top: 1px solid var(--fx-accent);
+  border-right: 1px solid var(--fx-accent);
+  opacity: 0.5;
+  pointer-events: none;
+}
+body.fx .discussions-form input:not([type="file"]):not([type="checkbox"]),
+body.fx .discussions-form textarea,
+body.fx .discussions-form select,
+body.fx .discussions-filters select,
+html.dark body.fx .discussions-form input:not([type="file"]):not([type="checkbox"]),
+html.dark body.fx .discussions-form textarea,
+html.dark body.fx .discussions-form select {
+  border: 1px solid var(--fx-line-strong);
+  border-radius: 14px;
+  background: var(--fx-surface-solid);
+  color: var(--fx-ink);
+}
+body.fx .discussions-form input:focus-visible,
+body.fx .discussions-form textarea:focus-visible,
+body.fx .discussions-form select:focus-visible,
+body.fx .discussions-filters select:focus-visible {
+  border-color: var(--fx-accent);
+  outline: 2px solid color-mix(in srgb, var(--fx-accent) 40%, transparent);
+  outline-offset: 1px;
+}
+body.fx .discussions-filters select {
+  padding: 0.5rem 1rem;
+  border-radius: var(--fx-pill);
+  font-family: var(--fx-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+body.fx .discussions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+body.fx .discussions-thread-card,
+html.dark body.fx .discussions-thread-card {
+  --fx-x: 50%;
+  --fx-y: 0%;
+  position: relative;
+  padding: 1.25rem 1.4rem;
+  border: 1px solid var(--fx-line);
+  border-radius: var(--fx-radius-sm);
+  background-color: var(--fx-surface);
+  background-image: radial-gradient(22rem circle at var(--fx-x) var(--fx-y), color-mix(in srgb, var(--fx-accent) var(--fx-s), transparent), transparent 62%);
+  box-shadow: none;
+  transform: none;
+  transition: --fx-s 0.5s ease, border-color 0.45s var(--fx-ease);
+}
+body.fx .discussions-thread-card:hover,
+body.fx .discussions-thread-card:focus-visible {
+  --fx-s: 16%;
+  border-color: color-mix(in srgb, var(--fx-accent) 55%, transparent);
+  transform: none;
+}
+body.fx .discussions-thread-card::after {
+  content: "";
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-top: 1px solid var(--fx-accent);
+  border-right: 1px solid var(--fx-accent);
+  opacity: 0.4;
+  transition: width 0.45s var(--fx-ease), height 0.45s var(--fx-ease), opacity 0.45s ease;
+  pointer-events: none;
+}
+body.fx .discussions-thread-card:hover::after {
+  width: 1.3rem;
+  height: 1.3rem;
+  opacity: 1;
+}
+body.fx .discussions-thread-card-top {
+  padding-right: 1.6rem;
+}
+body.fx .discussions-thread-title {
+  font-family: var(--fx-serif);
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--fx-ink);
+}
+body.fx .discussions-thread-excerpt {
+  color: var(--fx-muted);
+}
+body.fx .discussions-thread-meta {
+  font-family: var(--fx-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  color: var(--fx-muted);
+}
+body.fx .discussions-badge {
+  font-family: var(--fx-mono);
+  font-size: 0.64rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
+body.fx .discussions-badge-open {
+  border: 1px solid color-mix(in srgb, var(--fx-accent-2) 55%, transparent);
+  background: color-mix(in srgb, var(--fx-accent-2) 12%, transparent);
+  color: var(--fx-accent-2);
+}
+body.fx .discussions-badge-closed {
+  border: 1px solid var(--fx-line-strong);
+  background: transparent;
+  color: var(--fx-muted);
+}
+
+body.fx .discussions-thread h1.discussions-thread-heading {
+  margin: 1rem 0 0.75rem;
+  border: 0;
+  font-family: var(--fx-serif) !important;
+  font-size: clamp(2rem, 4.6vw, 3.2rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.05;
+  color: var(--fx-ink);
+}
+body.fx .discussions-thread-body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+body.fx .discussions-comments {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+body.fx .discussions-comment,
+html.dark body.fx .discussions-comment {
+  border: 1px solid var(--fx-line);
+  border-radius: var(--fx-radius-sm);
+  background: var(--fx-surface);
+}
+body.fx .discussions-closed-note,
+html.dark body.fx .discussions-closed-note {
+  padding: 0.7rem 1rem;
+  border: 1px dashed var(--fx-line-strong);
+  border-radius: 14px;
+  background: transparent;
+}
+body.fx .discussions-back-link {
+  font-family: var(--fx-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--fx-accent);
+}
+
+@media (max-width: 640px) {
+  body.fx .discussions-new-thread:not(:empty),
+  body.fx .discussions-comment-form-wrap:not(:empty) {
+    padding: 1.1rem 1rem 0.4rem;
+    border-radius: var(--fx-radius-sm);
+  }
+  body.fx #content > h1::before {
+    font-size: 0.64rem;
+    letter-spacing: 0.1em;
+  }
+}

@@ -34,6 +34,7 @@
   (dict "url" "/biolab/" "icon" "microscope" "title" "BiOLab" "text" "A community protocol archive: read a verified or submitted protocol, run it yourself, and log your results." "cta" "Explore BiOLab" "size" "wide")
   (dict "url" "/games/bio-ludo/" "icon" "gamepad" "title" "BiOLudo" "text" "A biology-trivia Ludo variant: character classes, a moving Unsafe Zone, and combat settled by quiz duels. Play locally or against bots." "cta" "Play BiOLudo" "size" "")
   (dict "url" "/about/" "icon" "dna" "title" "About BiOGuide" "text" "Why we built this, how content gets reviewed before publishing, and who's behind it." "cta" "Learn Our Story" "size" "")
+  (dict "url" "/live/" "icon" "users" "title" "BiOLive" "text" "Weekend paper solving, live on Zoom: work through real olympiad papers with other students and see how medalists think. Free for account holders." "cta" "See the Calendar" "size" "wide")
 -}}
 {{- $programmeData := (os.ReadFile "static/data/olympiad-programmes.json" | transform.Unmarshal) -}}
 {{- $programmes := $programmeData.countries -}}

@@ -51,3 +51,10 @@ jobs:
       - name: Grading logic unit tests
         working-directory: tests/grading
         run: npm test
+
+      - name: BiOClash paper vault tests
+        working-directory: tests/vault
+        run: npm test
+
+      - name: Plaintext paper guard
+        run: node scripts/bioclash-paper-vault.js guard

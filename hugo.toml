@@ -137,6 +137,11 @@ enableGitInfo = true
     weight = 4
 
   [[menu.main]]
+    name = "BiOLive"
+    url = "/live/"
+    weight = 4
+
+  [[menu.main]]
     name = "Dashboard"
     url = "/dashboard/"
     weight = 5

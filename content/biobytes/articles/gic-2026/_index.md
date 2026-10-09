@@ -1,7 +1,7 @@
 ---
 title: "GIC 2026 Blog, Three days at the Dr Babu Rajendra Prasad International conference center Bengaluru"
 description: "A lecture-by-lecture diary from three days at the Genomics India Conference 2026 in Bengaluru - the workshop, the keynotes, and everything in between."
-layout: "wide"
+layout: "toc-page"
 aliases:
   - /bioinsights/
   - /articles/

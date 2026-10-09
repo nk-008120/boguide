@@ -1,0 +1,85 @@
+body.fx .live-mine:empty {
+  display: none;
+}
+body.fx .live-mine {
+  margin: 1.25rem 0;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid var(--fx-line);
+  border-radius: var(--fx-radius-sm);
+  background:
+    radial-gradient(70% 120% at 0% 0%, var(--fx-tint-a), transparent 62%),
+    var(--fx-surface);
+}
+body.fx .live-mine-label {
+  margin: 0 0 0.6rem;
+  font-family: var(--fx-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fx-accent);
+}
+body.fx .live-mine-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body.fx .live-mine-list li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 0.9rem;
+  margin: 0;
+}
+body.fx .live-mine-list time {
+  font-family: var(--fx-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--fx-muted);
+}
+body.fx .live-mine-list a,
+body.fx .live-mine-list button.live-mine-pick {
+  padding: 0;
+  border: 0;
+  background: none;
+  font-family: var(--fx-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: left;
+  text-decoration: none;
+  color: var(--fx-ink);
+  cursor: pointer;
+}
+body.fx .live-mine-list a:hover,
+body.fx .live-mine-list button.live-mine-pick:hover {
+  color: var(--fx-accent);
+}
+body.fx .live-mine-out {
+  margin-left: auto;
+  padding: 0.15rem 0.7rem;
+  border: 1px solid var(--fx-line-strong);
+  border-radius: var(--fx-pill);
+  background: transparent;
+  font-family: var(--fx-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fx-muted);
+  cursor: pointer;
+}
+body.fx .live-mine-out:hover {
+  border-color: var(--fx-accent);
+  color: var(--fx-accent);
+}
+body.fx .live-mine-more {
+  display: inline-block;
+  margin-top: 0.7rem;
+  font-family: var(--fx-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--fx-accent);
+}

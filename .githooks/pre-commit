@@ -1,0 +1,2 @@
+#!/bin/sh
+node scripts/bioclash-paper-vault.js guard || exit 1

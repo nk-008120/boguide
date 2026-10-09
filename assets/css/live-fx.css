@@ -1,0 +1,525 @@
+body.fx #content > h1 {
+  position: relative;
+  padding-top: 1.6rem;
+}
+body.fx #content > h1::before {
+  content: "Live / Weekend paper solving";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--fx-mono);
+  font-size: 0.72rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--fx-accent);
+}
+
+body.fx .live-intro {
+  max-width: 42rem;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--fx-muted);
+}
+body.fx .live-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 0.7rem;
+  margin: 1.5rem 0 2.25rem;
+  padding: 0;
+  list-style: none;
+  counter-reset: live-step;
+}
+body.fx .live-steps li {
+  counter-increment: live-step;
+  margin: 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--fx-line);
+  border-radius: var(--fx-radius-sm);
+  background: var(--fx-surface);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--fx-muted);
+}
+body.fx .live-steps li::before {
+  content: "0" counter(live-step);
+  display: block;
+  margin-bottom: 0.4rem;
+  font-family: var(--fx-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  color: var(--fx-accent);
+}
+body.fx .live-steps strong {
+  color: var(--fx-ink);
+}
+
+body.fx .live-status,
+body.fx .live-label {
+  font-family: var(--fx-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fx-muted);
+}
+body.fx .live-label {
+  margin: 2.25rem 0 0.8rem;
+  color: var(--fx-accent);
+}
+
+body.fx .live-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+body.fx .live-cal,
+body.fx .live-card,
+body.fx .live-staff-panel {
+  position: relative;
+  padding: 1.4rem;
+  border: 1px solid var(--fx-line);
+  border-radius: var(--fx-radius);
+  background:
+    radial-gradient(70% 90% at 0% 0%, var(--fx-tint-a), transparent 62%),
+    radial-gradient(70% 90% at 100% 100%, var(--fx-tint-b), transparent 62%),
+    var(--fx-surface);
+  box-shadow: var(--fx-shadow);
+}
+body.fx .live-cal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+body.fx .live-cal-month {
+  margin: 0;
+  font-family: var(--fx-serif);
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--fx-ink);
+}
+body.fx .live-cal-nav {
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 1px solid var(--fx-line-strong);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--fx-ink);
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color 0.4s var(--fx-ease), color 0.4s var(--fx-ease);
+}
+body.fx .live-cal-nav:hover,
+body.fx .live-cal-nav:focus-visible {
+  border-color: var(--fx-accent);
+  color: var(--fx-accent);
+}
+body.fx .live-cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.3rem;
+}
+body.fx .live-cal-dow {
+  padding-bottom: 0.3rem;
+  font-family: var(--fx-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--fx-muted);
+}
+body.fx .live-day {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  aspect-ratio: 1;
+  padding: 0.4rem 0.45rem;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: transparent;
+  font-family: var(--fx-mono);
+  font-size: 0.78rem;
+  color: var(--fx-muted);
+}
+body.fx .live-day.is-today {
+  border-color: var(--fx-line-strong);
+  color: var(--fx-ink);
+}
+body.fx button.live-day {
+  border-color: color-mix(in srgb, var(--fx-accent) 35%, transparent);
+  background: color-mix(in srgb, var(--fx-accent) 10%, transparent);
+  color: var(--fx-ink);
+  cursor: pointer;
+  transition: background-color 0.4s var(--fx-ease), border-color 0.4s var(--fx-ease);
+}
+body.fx button.live-day::after {
+  content: "";
+  position: absolute;
+  right: 0.45rem;
+  bottom: 0.45rem;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--fx-accent);
+}
+body.fx button.live-day.is-mine::after {
+  width: 0.6rem;
+  height: 0.6rem;
+  background: var(--fx-accent-2);
+}
+body.fx button.live-day.is-off {
+  border-style: dashed;
+  background: transparent;
+  color: var(--fx-muted);
+}
+body.fx button.live-day.is-off::after {
+  background: var(--fx-line-strong);
+}
+body.fx button.live-day:hover,
+body.fx button.live-day:focus-visible {
+  border-color: var(--fx-accent);
+  background: color-mix(in srgb, var(--fx-accent) 18%, transparent);
+}
+body.fx button.live-day.is-selected {
+  border-color: var(--fx-accent);
+  background: var(--fx-accent);
+  color: var(--fx-on-accent);
+}
+body.fx button.live-day.is-selected::after {
+  background: var(--fx-on-accent);
+}
+body.fx .live-cal-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  margin: 1rem 0 0;
+  font-family: var(--fx-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  color: var(--fx-muted);
+}
+body.fx .live-cal-key i {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-right: 0.35rem;
+  border-radius: 50%;
+  background: var(--fx-accent);
+}
+body.fx .live-cal-key i.is-mine {
+  background: var(--fx-accent-2);
+}
+
+body.fx .live-agenda {
+  display: none;
+}
+body.fx .live-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+body.fx .live-card-label {
+  margin: 0 0 0.5rem;
+  font-family: var(--fx-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fx-accent);
+}
+body.fx .live-card-title {
+  margin: 0 0 0.9rem;
+  font-family: var(--fx-serif);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 600;
+  line-height: 1.08;
+  color: var(--fx-ink);
+}
+body.fx .live-meta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.35rem 1rem;
+  align-items: baseline;
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+}
+body.fx .live-meta dt {
+  font-family: var(--fx-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  line-height: 1.9;
+  text-transform: uppercase;
+  color: var(--fx-muted);
+}
+body.fx .live-meta dd {
+  margin: 0;
+  color: var(--fx-ink);
+}
+body.fx .live-meta small {
+  display: block;
+  font-family: var(--fx-mono);
+  font-size: 0.7rem;
+  color: var(--fx-muted);
+}
+body.fx .live-note {
+  margin: 0 0 1rem;
+  white-space: pre-line;
+  line-height: 1.6;
+  color: var(--fx-muted);
+}
+body.fx .live-badge {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border: 1px solid var(--fx-line-strong);
+  border-radius: var(--fx-pill);
+  font-family: var(--fx-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fx-muted);
+}
+body.fx .live-badge.is-on {
+  border-color: color-mix(in srgb, var(--fx-accent-2) 55%, transparent);
+  background: color-mix(in srgb, var(--fx-accent-2) 12%, transparent);
+  color: var(--fx-accent-2);
+}
+body.fx .live-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+body.fx .live-hint,
+body.fx .live-consent,
+body.fx .live-msg {
+  margin: 0.7rem 0 0;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  color: var(--fx-muted);
+}
+body.fx .live-msg.is-error {
+  color: #b3261e;
+}
+html.dark body.fx .live-msg.is-error {
+  color: #f2b8b5;
+}
+
+body.fx .live-form {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--fx-line);
+}
+body.fx .live-form label {
+  display: grid;
+  gap: 0.3rem;
+  font-family: var(--fx-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fx-muted);
+}
+body.fx .live-form input,
+body.fx .live-form select,
+body.fx .live-form textarea {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--fx-line-strong);
+  border-radius: 14px;
+  background: var(--fx-surface-solid);
+  font: inherit;
+  font-family: inherit;
+  font-size: 0.95rem;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--fx-ink);
+}
+body.fx .live-form input:focus-visible,
+body.fx .live-form select:focus-visible,
+body.fx .live-form textarea:focus-visible {
+  border-color: var(--fx-accent);
+  outline: 2px solid color-mix(in srgb, var(--fx-accent) 40%, transparent);
+  outline-offset: 1px;
+}
+body.fx .live-form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 0.8rem;
+}
+
+body.fx .live-archive {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body.fx .live-archive li {
+  display: grid;
+  grid-template-columns: 9rem 1fr auto;
+  gap: 0.4rem 1rem;
+  align-items: baseline;
+  margin: 0;
+  padding: 0.8rem 1.1rem;
+  border: 1px solid var(--fx-line);
+  border-radius: var(--fx-radius-sm);
+  background: var(--fx-surface);
+}
+body.fx .live-archive time,
+body.fx .live-archive span {
+  font-family: var(--fx-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  color: var(--fx-muted);
+}
+body.fx .live-archive strong {
+  font-family: var(--fx-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--fx-ink);
+}
+
+body.fx .live-staff-panel + .live-staff-panel {
+  margin-top: 1rem;
+}
+body.fx .live-staff-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+body.fx .live-staff-session {
+  margin-top: 0.6rem;
+  border: 1px solid var(--fx-line);
+  border-radius: var(--fx-radius-sm);
+  background: var(--fx-surface);
+}
+body.fx .live-staff-session summary {
+  display: grid;
+  grid-template-columns: 11rem 1fr auto auto;
+  gap: 0.4rem 1rem;
+  align-items: baseline;
+  padding: 0.9rem 1.1rem;
+  cursor: pointer;
+  list-style: none;
+}
+body.fx .live-staff-session summary::-webkit-details-marker {
+  display: none;
+}
+body.fx .live-staff-session summary time,
+body.fx .live-staff-session summary span {
+  font-family: var(--fx-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  color: var(--fx-muted);
+}
+body.fx .live-staff-session summary strong {
+  font-family: var(--fx-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--fx-ink);
+}
+body.fx .live-staff-body {
+  padding: 0 1.1rem 1.1rem;
+}
+body.fx .live-staff-body .live-actions {
+  margin: 0 0 0.9rem;
+}
+body.fx .live-roster-wrap {
+  overflow-x: auto;
+}
+body.fx .live-roster {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+body.fx .live-roster th,
+body.fx .live-roster td {
+  padding: 0.5rem 0.7rem;
+  border: 0;
+  border-bottom: 1px solid var(--fx-line);
+  background: transparent;
+  text-align: left;
+  vertical-align: top;
+}
+body.fx .live-roster th {
+  font-family: var(--fx-mono);
+  font-size: 0.64rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fx-muted);
+}
+body.fx .live-roster td.is-question {
+  min-width: 14rem;
+  white-space: pre-line;
+  color: var(--fx-muted);
+}
+
+@media (max-width: 900px) {
+  body.fx .live-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  body.fx #content > h1::before {
+    font-size: 0.64rem;
+    letter-spacing: 0.1em;
+  }
+  body.fx .live-cal {
+    display: none;
+  }
+  body.fx .live-agenda {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  body.fx .live-agenda button {
+    display: grid;
+    gap: 0.2rem;
+    padding: 0.8rem 1rem;
+    border: 1px solid var(--fx-line);
+    border-radius: var(--fx-radius-sm);
+    background: var(--fx-surface);
+    text-align: left;
+    color: var(--fx-ink);
+    cursor: pointer;
+  }
+  body.fx .live-agenda button.is-selected {
+    border-color: var(--fx-accent);
+  }
+  body.fx .live-agenda time {
+    font-family: var(--fx-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--fx-accent);
+  }
+  body.fx .live-agenda strong {
+    font-family: var(--fx-serif);
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  body.fx .live-cal,
+  body.fx .live-card,
+  body.fx .live-staff-panel {
+    padding: 1.1rem 1rem;
+    border-radius: var(--fx-radius-sm);
+  }
+  body.fx .live-archive li,
+  body.fx .live-staff-session summary {
+    grid-template-columns: 1fr;
+  }
+}

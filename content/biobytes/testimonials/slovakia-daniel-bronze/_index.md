@@ -1,7 +1,7 @@
 ---
 title: "Slovakia's Biology Olympiad: It Only Gets Easier"
 description: "Daniel Jediný, an IBO 2026 bronze medallist from Slovakia, on the national Biologická Olympiáda's three-round structure and how BiOGuide fits into IBO preparation."
-layout: "wide"
+layout: "toc-page"
 authors: ["Daniel Jediný"]
 country: "Slovakia"
 country_code: "SK"

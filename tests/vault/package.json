@@ -1,0 +1,11 @@
+{
+  "name": "vault-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Unit tests for the BiOClash paper vault (api/_lib/paperVault.js), the encrypted-paper loader path in api/_lib/bioclash.js, and the plaintext guard. No database, no network.",
+  "main": "test.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "node test.mjs"
+  }
+}

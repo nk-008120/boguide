@@ -13,3 +13,5 @@ bioguidestaffdocs/
 graphify-out/
 context/
 plans/outline-session-planandcontacts/
+data/bioclash/*.yaml
+!data/bioclash/bioclash-sample.yaml

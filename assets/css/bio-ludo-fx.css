@@ -1,0 +1,184 @@
+body.fx main h1 {
+  position: relative;
+  margin: 1.5rem 0 1.5rem;
+  padding: 1.6rem 0 1.1rem;
+  border: 0;
+  font-family: var(--fx-serif) !important;
+  font-weight: 500 !important;
+  font-size: clamp(2.6rem, 6vw, 4.8rem) !important;
+  line-height: 0.98;
+  letter-spacing: -0.025em !important;
+  color: var(--fx-ink);
+  background: linear-gradient(90deg, var(--fx-accent), var(--fx-accent-2)) left bottom / 4.5rem 2px no-repeat;
+}
+body.fx main h1::before {
+  content: "Games / 01";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--fx-mono);
+  font-size: 0.72rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--fx-accent);
+}
+
+body.fx .bio-ludo-app {
+  --papers-card: var(--fx-surface-solid);
+  --papers-card-muted: color-mix(in srgb, var(--fx-accent) 6%, var(--fx-surface-solid));
+  --papers-border: var(--fx-line);
+  --papers-border-strong: var(--fx-line-strong);
+  --papers-primary: var(--fx-accent);
+  --papers-radius: var(--fx-radius-sm);
+  --papers-shadow: var(--fx-shadow);
+  --papers-shadow-hover: var(--fx-shadow);
+}
+
+body.fx .bio-ludo-setup,
+body.fx .bio-ludo-bot-setup {
+  position: relative;
+  padding: 2.4rem 1.5rem 2.2rem;
+  border: 1px solid var(--fx-line);
+  border-radius: var(--fx-radius-lg);
+  background:
+    radial-gradient(70% 90% at 0% 0%, var(--fx-tint-a), transparent 62%),
+    radial-gradient(70% 90% at 100% 100%, var(--fx-tint-b), transparent 62%),
+    repeating-linear-gradient(0deg, var(--fx-grid) 0, var(--fx-grid) 1px, transparent 1px, transparent 32px),
+    repeating-linear-gradient(90deg, var(--fx-grid) 0, var(--fx-grid) 1px, transparent 1px, transparent 32px),
+    var(--fx-surface);
+  box-shadow: var(--fx-shadow);
+}
+body.fx .bio-ludo-setup::after,
+body.fx .bio-ludo-bot-setup::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-top: 1px solid var(--fx-accent);
+  border-right: 1px solid var(--fx-accent);
+  opacity: 0.5;
+  pointer-events: none;
+}
+body.fx .bio-ludo-setup h2,
+body.fx .bio-ludo-setup h3,
+body.fx .bio-ludo-bot-setup h2,
+body.fx .bio-ludo-bot-setup h3 {
+  margin-top: 0;
+  border: 0;
+  font-family: var(--fx-serif) !important;
+  font-size: clamp(1.7rem, 3vw, 2.3rem) !important;
+  font-weight: 600 !important;
+  line-height: 1.1;
+  color: var(--fx-ink) !important;
+}
+body.fx .bio-ludo-setup p,
+body.fx .bio-ludo-bot-setup p {
+  color: var(--fx-muted);
+}
+body.fx .bio-ludo-setup-btn {
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+}
+
+body.fx .bio-ludo-legend-item {
+  border-radius: var(--fx-pill);
+  box-shadow: none;
+  font-size: 0.82rem;
+  color: var(--fx-ink);
+}
+body.fx .bio-ludo-legend-badge {
+  background: var(--fx-accent);
+  color: var(--fx-on-accent);
+  font-family: var(--fx-mono);
+}
+
+body.fx .bio-ludo-hud {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--fx-line);
+  border-radius: var(--fx-radius-sm);
+  background: var(--fx-surface);
+}
+body.fx .bio-ludo-turn-indicator {
+  font-family: var(--fx-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+body.fx .bio-ludo-die {
+  border-radius: 10px;
+  background: var(--fx-accent);
+  color: var(--fx-on-accent);
+  font-family: var(--fx-mono);
+}
+body.fx .bio-ludo-hint {
+  font-family: var(--fx-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--fx-muted);
+}
+body.fx .bio-ludo-board-wrap {
+  padding: 0.6rem;
+  border: 1px solid var(--fx-line);
+  border-radius: var(--fx-radius);
+  background: var(--fx-surface);
+  box-shadow: var(--fx-shadow);
+}
+body.fx .bio-ludo-duel {
+  background: rgba(10, 8, 18, 0.62);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+body.fx .bio-ludo-duel-card {
+  position: relative;
+  border-radius: var(--fx-radius);
+  background: var(--fx-surface-solid);
+}
+
+body.fx .content {
+  counter-reset: ludo-section;
+}
+body.fx .content > h2 {
+  position: relative;
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border: 0;
+  font-size: clamp(1.9rem, 3.6vw, 2.8rem) !important;
+  line-height: 1.05;
+  color: var(--fx-ink) !important;
+}
+body.fx .content > h2::before {
+  counter-increment: ludo-section;
+  content: counter(ludo-section, decimal-leading-zero) " / Rulebook";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--fx-mono);
+  font-size: 0.72rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--fx-accent);
+}
+body.fx .content > h3 {
+  margin-top: 2.4rem;
+  padding-bottom: 0.4rem;
+  font-size: 1.55rem !important;
+  color: var(--fx-ink) !important;
+  background: linear-gradient(var(--fx-accent), var(--fx-accent)) left bottom / 2.2rem 2px no-repeat;
+}
+
+@media (max-width: 640px) {
+  body.fx .bio-ludo-setup,
+  body.fx .bio-ludo-bot-setup {
+    padding: 1.8rem 1rem 1.6rem;
+  }
+  body.fx .bio-ludo-board-wrap {
+    padding: 0.3rem;
+    border-radius: var(--fx-radius-sm);
+  }
+}
