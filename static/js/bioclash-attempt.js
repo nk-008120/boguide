@@ -6,7 +6,7 @@
 
   var PAPER_ID = root.getAttribute('data-paper-id');
 
-  var RECORDING_UPLOAD_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdbhQoX6sylgdkExn9Ol7iVtC1PHV7-mF8XTfgd3mCIN-dXdw/viewform?usp=publish-editor';
+  var RECORDING_UPLOAD_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdbhQoX6sylgdkExn9Ol7iVtC1PHV7-mF8XTfgd3mCIN-dXdw/viewform?usp=header';
 
   function forceDark() {
     var cl = document.documentElement.classList;
