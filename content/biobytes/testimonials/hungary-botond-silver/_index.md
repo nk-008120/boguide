@@ -1,7 +1,7 @@
 ---
 title: "From Hungary to IBO Silver: Botond's Story"
 description: "Botond Juhász, an IBO 2026 silver medallist from Hungary, on the country's four-round IBOHUN selection process and how BiOGuide fits into IBO preparation."
-layout: "wide"
+layout: "toc-page"
 authors: ["Botond Juhász"]
 country: "Hungary"
 country_code: "HU"

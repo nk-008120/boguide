@@ -173,6 +173,99 @@ own `localStorage` as the grader works. Nothing in this tool touches
 holding an admin credential; the actual privileged call always happens in
 the grader's own terminal, never in the browser.
 
+## BiOClash: keeping papers out of the public repository
+
+A BiOClash paper file holds its answer keys, so it cannot sit in a public
+repository as plaintext, and `.gitignore` alone is not a fix. `vercel.json`
+ships `data/bioclash/**` into each BiOClash function from the Git checkout,
+so a paper that leaves Git is a paper production cannot find. mb-01 learned
+this the hard way: it was tracked from the first commit, which left its
+keys readable through the raw GitHub URL until the repository was made
+private for the round. The vault exists so a paper can stay in the
+repository, publicly, without being readable there.
+
+`api/_lib/paperVault.js` encrypts a paper into a small JSON envelope with
+AES-256-GCM from Node's built-in `crypto` module, with no new dependency
+and no home-made cipher. Each file gets its own key, derived with HKDF-SHA256
+from a master key plus a random salt and the paper id, so a leaked
+per-file key opens nothing else. The envelope's version, algorithm, key id,
+and paper id are authenticated as associated data, so renaming a file, or
+swapping one paper's ciphertext in for another, fails authentication
+instead of silently serving the wrong exam. Keys come from
+`BIOCLASH_PAPER_KEYS`, a comma separated list of `id:base64` entries: the
+first entry encrypts, every entry can decrypt, and `rotate` re-encrypts a
+file under the first key, which makes key rotation a two step change
+rather than a flag day.
+
+Loading is a fallback, not a replacement. `readPaperSource()` in
+`api/_lib/bioclash.js` reads `<id>.yaml` if it exists, which covers local
+authoring and the public sample paper, and otherwise opens
+`<id>.yaml.enc`. A missing or wrong key logs a short error code, returns
+`null`, and is not cached, so setting the variable and retrying recovers
+without a redeploy. `scripts/bioclash-paper-vault.js` is the operator
+interface (`keygen`, `encrypt`, `decrypt`, `rotate`, `verify`, `guard`), and
+`scripts/validate-bioclash-paper.js` validates encrypted papers too when
+the key is present.
+
+Nothing here relies on remembering to run the right command. `.gitignore`
+excludes every plaintext paper except the public sample, `.githooks/pre-commit`
+runs `guard` (enabled once per clone with `git config core.hooksPath
+.githooks`), and the same guard runs in CI. The two allowlists at the top of
+the script name the papers that may stay plaintext; mb-01 is on the second
+one because it is already in the history and is intended to be public once
+its round closes.
+
+The honest limits: the vault protects papers that were never committed in
+plaintext, not ones that already were, and anyone with the Vercel
+environment variables holds the key. The decrypted paper lives in function
+memory, as it always has. Losing every copy of the key makes an encrypted
+paper unrecoverable, so the key belongs in a password manager as well as in
+Vercel. `tests/vault/test.mjs` covers round trips, tampering with every
+envelope field, wrong keys, cross-paper swaps, rotation, and the loader's
+fallback and recovery behavior.
+
+### What went wrong with MB-01, and what we decided
+
+This was a genuine mistake, and it is written down here so nobody has to
+discover it. Two things were exposed before the MB-01 round opened on
+2026-10-10:
+
+- `data/bioclash/mb-01.yaml`, the full paper with its auto-graded answer
+  keys, was tracked in plaintext from 2026-08-10 and readable on the public
+  GitHub repository until the repository was made private around
+  2026-10-09. It is still in the Git history.
+- The paper's figures (`static/MB-01PICS/` and the `mb01-fig*` files in
+  `static/BIOCLASHPICS/`) are ordinary static files. Anyone who knows or
+  guesses a file name can fetch them from the live site without being on
+  the allowlist and without starting an attempt.
+
+We found this shortly before the round and chose to run MB-01 unchanged.
+The reasoning, which is the founder's decision and is recorded as such:
+the repository had 3 stars and 1 watcher, so the number of people who could
+plausibly have taken a copy is very small, and most of the paper's marks
+come from free-text answers that are graded by hand against no pre-filled
+key, so a copied auto-graded answer does not carry a participant far and an
+answer set that does not fit the written reasoning stands out to a grader.
+That is a judgement about likelihood, not a guarantee. Copies made while the
+repository was public cannot be recalled, and MB-01's results should be read
+with that in mind.
+
+What changes from the next round onward:
+
+- No paper is committed in plaintext. Only the `.enc` envelope is tracked,
+  and the guard in the pre-commit hook and in CI refuses anything else.
+- A paper goes on the "public after close" allowlist only after its round
+  has closed, never before.
+- Figures do not go under `static/`. They are to be served only to a
+  participant who has started an attempt and reached the block that uses
+  them. This is not built yet; it has to be in place before the next paper
+  is authored.
+- Each paper sets `closesAt`, so the server enforces the end of the window
+  instead of someone editing the allowlist by hand.
+
+The figures for MB-01 stay where they are for the rest of this round,
+because moving them mid-round would break attempts in progress.
+
 ## BiOLab: open protocol archive, not a curated library
 
 BiOLab pivoted from a single fixed assay to an open archive: any
@@ -256,6 +349,63 @@ can answer. This is enforced at the RLS layer on `doubt_replies`, not just
 hidden in the UI, a non-staff user's insert is rejected by policy
 regardless of what the client sends.
 
+
+## BiOLive: a public schedule, private registrations and a two-factor staff gate
+
+BiOLive (`/live/`) is the weekend programme of live paper solving on Zoom.
+Staff create sessions, account holders register for the weekends that suit
+them, and the host emails the Zoom link by hand. The link is never stored
+on the site, so there is nothing to leak from page source or from the
+database. Everything is in `supabase/migrations/043_biolive.sql`.
+
+The three tables have three different postures. `live_sessions` is
+readable by anyone, signed in or not, and writable by no client role: the
+schedule is public on purpose, because it is a reason to create an
+account. `live_registrations` is the opposite: a student can read, insert
+and delete only their own rows, and has no update grant at all, so the
+`attended` column can only be set by staff. The 24 hour registration
+cutoff lives in the insert policy, not in the page script, so a student
+who calls the API directly is refused as well. Pulling out stays allowed
+until the session starts, which is why the delete policy checks a
+different time from the insert policy. `live_staff_keys` has row level
+security enabled, no policies and no grants; it holds only SHA-256 hashes.
+
+The staff page (`/live/staff/`) needs two things at once: an account with
+`profiles.is_staff` and a 32 character key the owner hands out. Neither
+is enough alone. A leaked key shows nothing to a non-staff account, and a
+staff account without the key cannot read a single email address. The
+check is `live_staff_gate()`, a `security definer` function no client
+role may call directly; the four staff functions (`live_staff_overview`,
+`live_staff_save_session`, `live_staff_set_status`,
+`live_staff_set_attendance`) call it first. They return
+`{ok: false, error: ...}` and do not raise, for a specific reason: a
+raised exception would roll back the failed-attempt counter written
+through `rate_limit_hit()` in the same call. Ten wrong keys inside
+fifteen minutes lock that account out of the staff functions.
+
+These are database functions and not a file under `api/` because the
+project is at the Vercel Hobby limit of twelve functions. Registrant
+emails exist only in `auth.users`, which no client can read, so the
+roster has to come from a definer function either way.
+
+`scripts/biolive-staff-key.js` generates a key, prints it once and prints
+the `insert` statement for its hash. The key itself is never written to
+the repository or the database. Running the script again and revoking the
+old row rotates it. In the browser the key is kept in `sessionStorage`
+and is cleared when the tab closes or the host presses "Lock this page".
+
+The pages follow the v2.1.0 tier system: `/live/` and `/live/staff/` are
+tier 3, styled by `assets/css/live-fx.css`, which reads only the shared
+`--fx-*` values. `static/js/live.js` draws the month grid and the session
+panel (an agenda list replaces the grid below 640px),
+`static/js/live-staff.js` is the staff console, and
+`static/js/live-mine.js` fills the small "your next live sessions" block
+on the dashboard and the account page, styled by
+`assets/css/live-mine.css`. The staff page's HTML shell is public and
+contains no data; every name and email arrives from the functions above.
+`tests/rls/biolive.test.mjs` runs the real migration against pglite and
+covers the cutoff, cross-user access, the `attended` lockout, both halves
+of the staff gate, key revocation, the lockout and account deletion.
 
 ## BiOBytes: three content types under one section, one of them gated
 
@@ -701,17 +851,17 @@ and returns a number, and everything else keys off that number:
 | Tier | Pages | Body class | What loads |
 |------|-------|------------|------------|
 | 0 | anything under `/bioclash/` | none | nothing new |
-| 1 | anything under `/papers/`, `/dashboard/`, `/account/` | `fx-t fx-s` | `fx-core.css` and `fx-static.css`, inlined in a `<style>` tag |
+| 1 | anything under `/papers/` | `fx-t fx-s` | `fx-core.css` and `fx-static.css`, inlined in a `<style>` tag |
 | 2 | every other page | `fx-t fx` | `fx-core.css` + `fx.css` as one file, and an inlined `assets/home/fx.js` |
-| 3 | exactly `/resources/`, `/biobytes/`, `/biolab/`, `/about/`, `/biology-olympiad-preparation/` | `fx-t fx fx-2` | tier 2 plus `fx2.css` in the same file, and `/bundles/fx2.<hash>.js` |
+| 3 | exactly `/resources/`, `/biobytes/`, `/biolab/`, `/about/`, `/biology-olympiad-preparation/`, `/games/`, `/games/bio-ludo/`, `/doubts/`, `/dashboard/`, `/account/`, `/live/`, `/live/staff/` | `fx-t fx fx-2` | tier 2 plus `fx2.css` in the same file, and `/bundles/fx2.<hash>.js` |
 | 4 | `/` | `fx-t home-v2` | `fx-core.css` + `home.css` as one file, and `/bundles/home.<hash>.js` |
 
 Tier 0 is BiOClash, left untouched as a matter of policy (see
-`AGENTS.md`). Tier 1 covers the working surfaces: BiOrchive, the
-dashboard and the account page, where a timed attempt or a table of
-results must not compete with decoration for frame time. They get the
-shared look and nothing that moves: no script, no transitions, no
-reveals. Tier 3 matches exact URLs, not prefixes, so a section's landing
+`AGENTS.md`). Tier 1 is BiOrchive, where a timed attempt or a table of results must
+not compete with decoration for frame time. It gets the shared look and
+nothing that moves: no script, no transitions, no reveals. The dashboard
+and the account page started in tier 1 and were later moved to tier 3 at
+the owner's request. Tier 3 matches exact URLs, not prefixes, so a section's landing
 page gets the heavier treatment and the hundreds of pages beneath it
 stay on tier 2. To move a page between tiers, edit the lists in
 `fx-tier.html`; nothing else needs to change.
@@ -764,18 +914,112 @@ dependencies, so tier 2 pages download no animation library.
 
 **Tier 3 adds the ambient layers.** `assets/home/fx2-motion.js` injects
 the gradient blobs, the fluid canvas and the grain overlay into `<body>`
-at run time, so the five landing pages needed no template changes. It
+at run time, so the landing pages needed no template changes. It
 also starts smooth scrolling, splits `h2` headings into characters for a
 reveal, and makes the main buttons magnetic. `fx2.css` gives the page
-title on these five pages the home hero's type treatment (large serif,
+title on these pages the home hero's type treatment (large serif,
 tight tracking, a short two-colour rule beneath), so they read as
 siblings of the home page.
+
+Two tier 3 pages carry an extra stylesheet joined into the same file.
+`/biology-olympiad-preparation/` adds `prep-fx.css`, which restyles that
+page's own components (the path picker, the jump links, the country
+directory cards, the accordions and the tables) and numbers its section
+headings with a CSS counter. Those headings are children of
+`.prep-guide-wrapper`, not of `.content`, which is why the rules target
+the wrapper. `/games/` adds `games-landing.css` for the BiOLudo feature
+card, whose board graphic is built from nine empty spans and CSS alone.
+Four more tier 3 pages do the same: `/games/bio-ludo/` adds
+`bio-ludo-fx.css`, `/doubts/` adds `doubts-fx.css`, `/dashboard/` adds
+`dashboard-fx.css` and `/account/` adds `account-fx.css`. The last two
+also carry the `--papers-*` remapping themselves, because leaving tier 1
+means `fx-static.css` no longer supplies it; the dashboard and account
+rules that remain in `fx-static.css` are now unused. The BiOLudo sheet restyles the
+frame around the game (title, setup panels, legend, HUD, the board's
+surround, the duel dialog, the rulebook headings) and remaps the
+`--papers-*` values the game's own stylesheet reads; it does not touch
+board squares, pieces or team colours, which carry game state. The
+Doubts sheet restyles the `discussions-*` classes that
+`static/js/doubts.js` renders into the page.
+Because the joined file's contents now vary by page, its name includes a
+short hash of the list of parts, so two pages in the same tier never
+share a file name with different contents.
 
 **Tier 4 is the home page.** `content/_index.md` is front matter plus one
 shortcode call. All of the markup is in
 `layouts/shortcodes/home-v2.html`, styled by `home.css`. The earlier
 home shortcodes (`hero`, `interactive-showcase`, `recent-updates`) and
 the `.homepage-bg` rules have been removed.
+
+**The BiOClash landing page is the one exception inside tier 0.** The
+exact path `/bioclash/` (no other BiOClash page) loads
+`assets/css/bioclash-landing.css` after `bioclash.css`, and
+`/bundles/bioclash-landing.<hash>.js`, which is `home-fluid.js` joined
+with `assets/home/bioclash-landing.js`. Neither reads `fx-core.css`: the
+page keeps BiOClash's own palette (`--bc-*`), its forced dark theme and
+its green timeline background, and adds a small `--bcl-*` set for the
+ember glow. The script draws two feathered wings as SVG, computed from a
+leading-edge curve in five rows of feathers, so there is no image file,
+and places them in a fixed layer behind the content where the swaying
+DNA strands used to be. Each wing is drawn twice: a sharp copy and a
+blurred copy behind it. One shared duration (`--beat`) drives three
+animations: the wrapper's flap, the blurred copy's opacity and the sharp
+copy's opacity, which is why the glow peaks exactly at the top of each
+beat. All three animate only transform or opacity on elements whose
+filters do not change, so the browser moves cached layers and does not
+redraw the feathers each frame. The same fluid simulation the home page
+uses runs here in ember and gold over the background with a `screen`
+blend, under the same conditions (fine pointer, not on data saver, not
+under reduced motion). The script also reveals panels on scroll and
+tracks the pointer for the panel spotlight.
+`content/bioclash/_index.md` was not edited: every change is an override
+scoped to `#bioclash-root`, so removing the `/bioclash/` lines in
+`head-end.html` restores the previous page exactly.
+
+**The leaderboards follow the same pattern.** Two kinds of page share
+`assets/css/hall-of-fame.css` and `/bundles/hall-of-fame.<hash>.js`
+(`home-fluid.js` joined with `assets/home/hall-of-fame.js`): the Hall of
+Fame at the exact path `/papers/leaderboard/`, and each BiOClash round
+leaderboard, matched in `head-end.html` by the pattern
+`/bioclash/<round>/leaderboard/`. Every rule is scoped to
+`#bioclash-leaderboard-root` or `#bioclash-round-leaderboard-root`,
+which matters because the classes being restyled
+(`.bioclash-case-header`, `.bioclash-champions-frame`,
+`.bioclash-panel`) are used across BiOClash, and no other page may
+change. Each page keeps its own background image and the
+gold-and-crimson palette; the Hall of Fame adds a violet accent and
+runs the fluid in violet and gold, the round leaderboards use ember and
+gold to match the BiOClash landing page. The Season Champions frame
+keeps its existing pulsing ring and chasing light. A new round's
+leaderboard picks this up automatically from its URL.
+
+The per-test leaderboards under `/papers/` (any path that ends in
+`/leaderboard/`, except the Hall of Fame) are ordinary tier 1 pages and
+load one extra stylesheet, `assets/css/papers-leaderboard.css`, with no
+script. It reads the shared `--fx-*` values, so these pages follow the
+visitor's theme. Rows are drawn as separate bands, the first three carry
+gold, silver and bronze tones by position, and the signed-in visitor's
+own row (`.papers-leaderboard-self`) is outlined in the accent colour.
+
+**A loader for switches to the home page.** `assets/home/fx-nav.js`
+and `assets/css/fx-nav.css` are inlined on tiers 2, 3 and 4. A click on
+a same-site link to `/` from any other page shows a loading card at once
+and records the time of the click in `sessionStorage`. The old page
+keeps the card up until it is replaced. The home page reads the time of
+the click, shows the card again before its first paint and removes it
+once one second has passed since the click, so the card lasts at least a
+second and always clears over the home page, never over the old one. A
+switch slower than a second keeps the card until the home page arrives,
+then fades it after a quarter of a second. The home page also skips the
+site's cross-document view transition for that navigation
+(`pagereveal`), so the slide does not play underneath the card. If a
+navigation is cancelled the old page drops the card after twenty
+seconds. The card is appended to `<html>`, not `<body>`, because the
+home page runs the script in the head before the body exists; for the
+same reason the stylesheet carries its own small `--n-*` palette and
+cannot read `fx-core.css`. No other destination shows the card, and
+BiOClash and BiOrchive pages do not carry the script, so a link to the
+home page clicked there shows no card.
 
 **Outside the tiers.** `layouts/404.html` is a standalone document that
 does not pass through `baseof.html`. It carries its own copy of the

@@ -1,0 +1,11 @@
+{
+  "name": "api-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Unit tests for the Vercel function handlers in api/ and for the account page's redirect check, run against the real source files with a fake Supabase client. No database, no network.",
+  "main": "test.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "node test.mjs"
+  }
+}

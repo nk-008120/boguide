@@ -11,7 +11,7 @@ layout: "wide"
 <div class="bioclash-case-header">
   <p class="bioclash-case-header-agency">TIME VARIANCE AUTHORITY</p>
   <p class="bioclash-case-header-division">SACRED TIMELINE ARCHIVES · STANDINGS DIVISION</p>
-  <p class="bioclash-case-header-mark">B I O C L A S H</p>
+  <p class="bioclash-case-header-mark">HALL OF FAME</p>
 </div>
 
 {{< bioclash-season-champions >}}

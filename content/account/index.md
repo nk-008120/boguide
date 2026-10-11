@@ -96,6 +96,7 @@ sitemap:
 
 <section id="account-logged-in" class="account-screen" hidden>
   <p class="account-loggedin-greeting">Logged in as <strong id="account-display-name"></strong>.</p>
+  <div id="live-mine" class="live-mine" data-pullout></div>
 
   <h3>Password</h3>
   <p class="account-hint">Signed in with an email code? Set a password if you'd like to log in with one next time.</p>
@@ -158,3 +159,4 @@ sitemap:
 </div>
 
 <script src="/js/papers-account.js" defer></script>
+<script src="/js/live-mine.js" defer></script>

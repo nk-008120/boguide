@@ -4,7 +4,7 @@ weight: 1
 description: "IBO-level ecology guide: population dynamics, community ecology, ecosystems, biogeography, conservation biology, and global change, with worked examples, equations, and interactive resources."
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" id="MathJax-script" integrity="sha384-AHAnt9ZhGeHIrydA1Kp1L7FN+2UosbF7RQg6C+9Is/a7kDpQ1684C2iH2VWil6r4" crossorigin="anonymous" async></script>
 <script>
   window.MathJax = {
     tex: {
@@ -131,7 +131,7 @@ $$t_{double} = \frac{\ln 2}{r} \approx \frac{0.693}{r}$$
 </div>
 
 <!-- Exponential & Geometric Growth Explorer -->
-<script src="https://cdn.plot.ly/plotly-3.1.0.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js" integrity="sha384-DAxS2fhSGacPW3IdpTjDpu+KotwjM8aHsfrkZRnfYyJIhAHoDav7jAJ+NmYcp6PL" crossorigin="anonymous"></script>
 <script>
     (function() {
         // Wait for both DOM and Plotly to be ready

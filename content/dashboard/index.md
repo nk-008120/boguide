@@ -8,6 +8,7 @@ sitemap:
 ---
 
 <div id="dashboard-root" class="dashboard-wrapper">
+  <div id="live-mine" class="live-mine"></div>
   <div id="dashboard-loading" class="dashboard-gate">
     <p>Loading your dashboard...</p>
   </div>
@@ -47,3 +48,4 @@ sitemap:
 
 <script src="/js/papers-knowledge.js"></script>
 <script src="/js/papers-dashboard.js"></script>
+<script src="/js/live-mine.js" defer></script>

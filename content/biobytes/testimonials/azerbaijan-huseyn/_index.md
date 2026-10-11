@@ -1,7 +1,7 @@
 ---
 title: "Azerbaijan's Olympiad structure and BiOGuide relevance"
 description: "Huseyn Taghizada, A biology olympiadist from Azerbaijan honored by the IRBO and Azerbaijan NTBO in 2026, shares some insights for Azerbaijan's fellow Biology Olympiad enthusiasts!"
-layout: "wide"
+layout: "toc-page"
 authors: ["Huseyn Taghizada"]
 country: "Azerbaijan"
 country_code: "AZ"

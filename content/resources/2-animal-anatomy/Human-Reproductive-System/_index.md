@@ -165,7 +165,7 @@ Both gonads' hormone-producing structures, Leydig cells and the follicle/corpus 
   </div>
 </div>
 
-<script src="https://cdn.plot.ly/plotly-3.1.0.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js" integrity="sha384-DAxS2fhSGacPW3IdpTjDpu+KotwjM8aHsfrkZRnfYyJIhAHoDav7jAJ+NmYcp6PL" crossorigin="anonymous"></script>
 <script>
 (function() {
   function initChart() {

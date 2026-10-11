@@ -1,20 +1,38 @@
 const fs = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
+const paperVault = require('../api/_lib/paperVault');
 
 const dataDir = path.join(__dirname, '..', 'data', 'bioclash');
-const files = fs.readdirSync(dataDir).filter(f => f.endsWith('.yaml'));
+const paperIds = Array.from(new Set(
+  fs.readdirSync(dataDir)
+    .filter(f => /\.yaml(\.enc)?$/.test(f))
+    .map(f => f.replace(/\.yaml(\.enc)?$/, ''))
+));
 
-if (!files.length) {
-  console.log('No YAML files found in', dataDir);
+if (!paperIds.length) {
+  console.log('No paper files found in', dataDir);
   process.exit(0);
 }
 
 let totalErrors = 0;
 
-files.forEach(function (file) {
-  const filePath = path.join(dataDir, file);
-  const paper = yaml.load(fs.readFileSync(filePath, 'utf8'));
+paperIds.forEach(function (paperId) {
+  const filePath = path.join(dataDir, paperId + '.yaml');
+  const file = paperId + '.yaml';
+  let source;
+  if (fs.existsSync(filePath)) {
+    source = fs.readFileSync(filePath, 'utf8');
+  } else {
+    try {
+      source = paperVault.decrypt(fs.readFileSync(filePath + '.enc', 'utf8'), paperId, paperVault.keyringFromEnv()).toString('utf8');
+    } catch (err) {
+      console.log('\n=== ' + file + ' (encrypted) ===');
+      console.log('Skipped: could not decrypt (' + (err.code || err.name) + '). Set BIOCLASH_PAPER_KEYS to validate it.');
+      return;
+    }
+  }
+  const paper = yaml.load(source);
   const errors = [];
 
   if (!paper.id) errors.push('Missing paper id');

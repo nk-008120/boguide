@@ -36,9 +36,14 @@
 {{- if hasPrefix $path "/biology-olympiad-preparation/" -}}{{ $extraStyles = $extraStyles | append "css/prep-guide.css" }}{{- end -}}
 {{- if hasPrefix $path "/games/" -}}{{ $extraStyles = $extraStyles | append "css/games.css" }}{{- end -}}
 {{- if hasPrefix $path "/contribute-a-guide/" -}}{{ $extraStyles = $extraStyles | append "css/contribute.css" }}{{- end -}}
+{{- if or (hasPrefix $path "/biobytes/testimonials/") (hasPrefix $path "/biobytes/articles/") -}}{{ $extraStyles = $extraStyles | append "css/page-toc.css" }}{{- end -}}
 {{- if hasPrefix $path "/olympiad-programmes/" -}}{{ $extraStyles = $extraStyles | append "css/outline-guide.css" }}{{- end -}}
 {{- if hasPrefix $path "/biobytes/horizon/" -}}{{ $extraStyles = $extraStyles | append "css/horizon.css" | append "css/horizon-motion.css" | append "css/horizon-terms.css" }}{{- end -}}
 {{- if eq $path "/biobytes/" -}}{{ $extraStyles = $extraStyles | append "css/biobytes-horizon.css" }}{{- end -}}
+{{- if eq $path "/bioclash/" -}}{{ $extraStyles = $extraStyles | append "css/bioclash-landing.css" }}{{- end -}}
+{{- $isHof := or (eq $path "/papers/leaderboard/") (gt (len (findRE `^/bioclash/[^/]+/leaderboard/$` $path)) 0) -}}
+{{- if $isHof -}}{{ $extraStyles = $extraStyles | append "css/hall-of-fame.css" }}{{- end -}}
+{{- if and (hasPrefix $path "/papers/") (strings.HasSuffix $path "/leaderboard/") (ne $path "/papers/leaderboard/") -}}{{ $extraStyles = $extraStyles | append "css/papers-leaderboard.css" }}{{- end -}}
 {{- range $extraStyles -}}
   {{- $css := resources.Get . -}}
   {{- if hugo.IsProduction -}}
@@ -52,11 +57,19 @@
 {{- $fxCss := slice -}}
 {{- if eq $fxTier 2 -}}{{ $fxCss = slice "fx-core.css" "fx.css" }}{{- end -}}
 {{- if eq $fxTier 3 -}}{{ $fxCss = slice "fx-core.css" "fx.css" "fx2.css" }}{{- end -}}
+{{- if eq $path "/biology-olympiad-preparation/" -}}{{ $fxCss = $fxCss | append "prep-fx.css" }}{{- end -}}
+{{- if eq $path "/games/" -}}{{ $fxCss = $fxCss | append "games-landing.css" }}{{- end -}}
+{{- if eq $path "/games/bio-ludo/" -}}{{ $fxCss = $fxCss | append "bio-ludo-fx.css" }}{{- end -}}
+{{- if eq $path "/doubts/" -}}{{ $fxCss = $fxCss | append "doubts-fx.css" }}{{- end -}}
+{{- if eq $path "/dashboard/" -}}{{ $fxCss = $fxCss | append "dashboard-fx.css" }}{{- end -}}
+{{- if eq $path "/account/" -}}{{ $fxCss = $fxCss | append "account-fx.css" }}{{- end -}}
+{{- if hasPrefix $path "/live/" -}}{{ $fxCss = $fxCss | append "live-fx.css" }}{{- end -}}
+{{- if in (slice "/live/" "/dashboard/" "/account/") $path -}}{{ $fxCss = $fxCss | append "live-mine.css" }}{{- end -}}
 {{- if eq $fxTier 4 -}}{{ $fxCss = slice "fx-core.css" "home.css" }}{{- end -}}
 {{- if $fxCss -}}
   {{- $fxParts := slice -}}
   {{- range $fxCss -}}{{ $fxParts = $fxParts | append (resources.Get (printf "css/%s" .)) }}{{- end -}}
-  {{- $fxSheet := $fxParts | resources.Concat (printf "css/fx-tier-%d.css" $fxTier) -}}
+  {{- $fxSheet := $fxParts | resources.Concat (printf "css/fx-tier-%d-%s.css" $fxTier (delimit $fxCss "-" | md5 | truncate 8 "")) -}}
   {{- if hugo.IsProduction -}}
     {{- $fxSheet = $fxSheet | minify | fingerprint -}}
     <link rel="stylesheet" href="{{ $fxSheet.RelPermalink }}" integrity="{{ $fxSheet.Data.Integrity }}">
@@ -82,14 +95,29 @@
 {{- if or (eq $fxTier 2) (eq $fxTier 3) -}}
 <script>{{ (resources.Get "home/fx.js" | minify).Content | safeJS }}</script>
 {{- end -}}
+{{- if ge $fxTier 2 -}}
+<style>{{ (resources.Get "css/fx-nav.css" | minify).Content | safeCSS }}</style>
+<script>{{ (resources.Get "home/fx-nav.js" | minify).Content | safeJS }}</script>
+{{- end -}}
 {{- if eq $fxTier 3 -}}
 {{- $fx2Parts := slice (resources.Get "home/vendor/gsap.min.js") (resources.Get "home/vendor/SplitText.min.js") (resources.Get "home/vendor/lenis.min.js") (resources.Get "home/home-fluid.js" | minify) (resources.Get "home/fx2-motion.js" | minify) -}}
 {{- $fx2Js := $fx2Parts | resources.Concat "bundles/fx2.js" | fingerprint -}}
 <script src="{{ $fx2Js.RelPermalink }}" integrity="{{ $fx2Js.Data.Integrity }}" defer></script>
 {{- end -}}
+{{- if $isHof -}}
+{{- $hofJs := slice (resources.Get "home/home-fluid.js" | minify) (resources.Get "home/hall-of-fame.js" | minify) | resources.Concat "bundles/hall-of-fame.js" | fingerprint -}}
+<script src="{{ $hofJs.RelPermalink }}" integrity="{{ $hofJs.Data.Integrity }}" defer></script>
+{{- end -}}
+{{- if eq $path "/bioclash/" -}}
+{{- $bclJs := slice (resources.Get "home/home-fluid.js" | minify) (resources.Get "home/bioclash-landing.js" | minify) | resources.Concat "bundles/bioclash-landing.js" | fingerprint -}}
+<script src="{{ $bclJs.RelPermalink }}" integrity="{{ $bclJs.Data.Integrity }}" defer></script>
+{{- end -}}
 {{- if hasPrefix $path "/biology-olympiad-preparation/" -}}
 <script src="{{ "js/prep-guide-tour.js" | relURL }}" defer></script>
 <script src="{{ "js/olympiad-directory.js" | relURL }}?v={{ substr (os.ReadFile "static/js/olympiad-directory.js" | md5) 0 10 }}" defer></script>
+{{- end -}}
+{{- if or (hasPrefix $path "/biobytes/testimonials/") (hasPrefix $path "/biobytes/articles/") -}}
+<script src="{{ "js/horizon-toc.js" | relURL }}" defer></script>
 {{- end -}}
 {{- if hasPrefix $path "/contribute-a-guide/" -}}
 <script src="{{ "js/contribute-guide.js" | relURL }}?v={{ substr (os.ReadFile "static/js/contribute-guide.js" | md5) 0 10 }}" defer></script>
@@ -119,7 +147,8 @@
 <link rel="preload" href="/fonts/space-grotesk-latin-c0781ea2.woff2" as="font" type="font/woff2" crossorigin>
 <style>{{ $fontsPapersCss.Content | safeCSS }}</style>
 {{- end -}}
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js" defer></script>
+{{- $supabaseJs := resources.Get "vendor/supabase-js-2.112.2.js" | fingerprint }}
+<script src="{{ $supabaseJs.RelPermalink }}" integrity="{{ $supabaseJs.Data.Integrity }}" defer></script>
 <script>
   window.__SUPABASE_URL = {{ getenv "HUGO_SUPABASE_URL" | jsonify | safeJS }};
   window.__SUPABASE_ANON_KEY = {{ getenv "HUGO_SUPABASE_ANON_KEY" | jsonify | safeJS }};

@@ -1,7 +1,7 @@
 ---
 title: "From Belgium to IBO Bronze: Jonas's Story"
 description: "Jonas Wulleman, an IBO 2026 bronze medallist from Belgium, on self-study, Belgium's split biology olympiad system, and how BiOGuide fit into his final stretch of preparation."
-layout: "wide"
+layout: "toc-page"
 authors: ["Jonas Wulleman"]
 country: "Belgium"
 country_code: "BE"

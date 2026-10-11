@@ -81,6 +81,7 @@
         var answerFile = answerInput.files[0];
 
         if (!olympiad || !year || !roundLabel || !licenseNote || !examFile) return;
+        if (sourceUrl && !/^https?:\/\//i.test(sourceUrl)) { setMsg(msg, 'The source link must start with http:// or https://.', true); return; }
         if (!isLikelyPDF(examFile)) { setMsg(msg, 'The exam file must be a PDF.', true); return; }
         if (examFile.size > MAX_FILE_MB * 1024 * 1024) { setMsg(msg, 'Exam PDF is over ' + MAX_FILE_MB + 'MB.', true); return; }
         if (answerFile) {

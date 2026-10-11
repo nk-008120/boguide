@@ -4,15 +4,29 @@ const crypto = require('crypto');
 const yaml = require('js-yaml');
 const { rateLimit } = require('./rateLimit');
 const { authenticate } = require('./auth');
+const paperVault = require('./paperVault');
 
 const paperCache = new Map();
+
+function readPaperSource(paperId) {
+  const filePath = path.join(process.cwd(), 'data', 'bioclash', `${paperId}.yaml`);
+  if (fs.existsSync(filePath)) return fs.readFileSync(filePath, 'utf8');
+  const vaultPath = `${filePath}.enc`;
+  if (!fs.existsSync(vaultPath)) return null;
+  try {
+    return paperVault.decrypt(fs.readFileSync(vaultPath, 'utf8'), paperId, paperVault.keyringFromEnv()).toString('utf8');
+  } catch (err) {
+    console.error(`[bioclash] could not open encrypted paper "${paperId}": ${err.code || err.name}`);
+    return null;
+  }
+}
 
 function loadPaper(paperId) {
   if (!/^[a-z0-9-]+$/.test(paperId || '')) return null;
   if (paperCache.has(paperId)) return paperCache.get(paperId);
-  const filePath = path.join(process.cwd(), 'data', 'bioclash', `${paperId}.yaml`);
-  if (!fs.existsSync(filePath)) return null;
-  const paper = yaml.load(fs.readFileSync(filePath, 'utf8'));
+  const source = readPaperSource(paperId);
+  if (source == null) return null;
+  const paper = yaml.load(source);
   paperCache.set(paperId, paper);
   return paper;
 }

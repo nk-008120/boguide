@@ -1,0 +1,163 @@
+body.fx-s #content > h1 {
+  position: relative;
+  margin: 2.5rem 0 1.75rem;
+  padding: 1.6rem 0 1.2rem;
+  border: 0;
+  font-size: clamp(2.2rem, 5.6vw, 4.2rem) !important;
+  line-height: 1;
+  letter-spacing: -0.02em !important;
+  text-align: left;
+  color: var(--fx-ink);
+  background: linear-gradient(90deg, var(--fx-accent), var(--fx-accent-2)) left bottom / 4.5rem 2px no-repeat;
+}
+body.fx-s #content > h1::before {
+  content: "BiOrchive / Timed attempt standings";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--fx-mono);
+  font-size: 0.72rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--fx-accent);
+}
+
+body.fx-s .content > p {
+  max-width: 44rem;
+  color: var(--fx-muted);
+}
+
+body.fx-s .papers-leaderboard-root {
+  position: relative;
+  margin-top: 2rem;
+  padding: 1.5rem 1.5rem 1.25rem;
+  border: 1px solid var(--fx-line);
+  border-radius: var(--fx-radius);
+  background:
+    radial-gradient(60% 80% at 0% 0%, var(--fx-tint-a), transparent 62%),
+    radial-gradient(60% 80% at 100% 100%, var(--fx-tint-b), transparent 62%),
+    var(--fx-surface);
+  box-shadow: var(--fx-shadow);
+}
+body.fx-s .papers-leaderboard-root::after {
+  content: "";
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-top: 1px solid var(--fx-accent);
+  border-right: 1px solid var(--fx-accent);
+  opacity: 0.5;
+  pointer-events: none;
+}
+body.fx-s .papers-leaderboard-root > p {
+  margin: 0.5rem 0;
+  font-family: var(--fx-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  color: var(--fx-muted);
+}
+
+body.fx-s .papers-leaderboard-table {
+  display: table;
+  width: 100% !important;
+  max-width: none;
+  margin: 0;
+  border-collapse: separate;
+  border-spacing: 0 0.4rem;
+}
+body.fx-s .papers-leaderboard-table th,
+html.dark body.fx-s .papers-leaderboard-table th {
+  padding: 0.35rem 0.9rem;
+  border: 0;
+  background: transparent;
+  font-family: var(--fx-mono);
+  font-size: 0.68rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--fx-muted);
+}
+body.fx-s .papers-leaderboard-table td,
+html.dark body.fx-s .papers-leaderboard-table td {
+  padding: 0.7rem 0.9rem;
+  border: 0;
+  border-top: 1px solid var(--fx-line);
+  border-bottom: 1px solid var(--fx-line);
+  background: var(--fx-surface-solid);
+  font-variant-numeric: tabular-nums;
+}
+body.fx-s .papers-leaderboard-table td:first-child {
+  width: 3.5rem;
+  border-left: 1px solid var(--fx-line);
+  border-radius: 14px 0 0 14px;
+  font-family: var(--fx-mono);
+  font-size: 0.85rem;
+  color: var(--fx-accent);
+}
+body.fx-s .papers-leaderboard-table td:last-child {
+  border-right: 1px solid var(--fx-line);
+  border-radius: 0 14px 14px 0;
+}
+body.fx-s .papers-leaderboard-table tbody tr:hover td {
+  border-color: color-mix(in srgb, var(--fx-accent) 55%, transparent);
+}
+body.fx-s .papers-leaderboard-table tbody tr:nth-child(-n + 3) td {
+  --tone: #c9971f;
+  border-color: color-mix(in srgb, var(--tone) 55%, transparent);
+  background: color-mix(in srgb, var(--tone) 9%, var(--fx-surface-solid));
+}
+body.fx-s .papers-leaderboard-table tbody tr:nth-child(2) td {
+  --tone: #8f96a3;
+}
+body.fx-s .papers-leaderboard-table tbody tr:nth-child(3) td {
+  --tone: #b8713a;
+}
+body.fx-s .papers-leaderboard-table tbody tr:nth-child(-n + 3) td:first-child {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--tone);
+}
+body.fx-s .papers-leaderboard-table tbody tr:first-child td {
+  padding-top: 0.95rem;
+  padding-bottom: 0.95rem;
+}
+body.fx-s .papers-leaderboard-table tr.papers-leaderboard-self td {
+  border-color: var(--fx-accent);
+  background: color-mix(in srgb, var(--fx-accent) 12%, var(--fx-surface-solid));
+}
+body.fx-s .papers-leaderboard-table .papers-leaderboard-namecell {
+  display: table-cell;
+  width: 60%;
+}
+body.fx-s .papers-leaderboard-namecell > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+body.fx-s .papers-leaderboard-namecell > * + * {
+  margin-left: 0.55rem;
+}
+body.fx-s .papers-leaderboard-name {
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  body.fx-s .papers-leaderboard-root {
+    padding: 1.1rem 0.8rem 0.9rem;
+    border-radius: var(--fx-radius-sm);
+  }
+  body.fx-s .papers-leaderboard-table th,
+  body.fx-s .papers-leaderboard-table td {
+    padding-left: 0.55rem;
+    padding-right: 0.55rem;
+  }
+  body.fx-s #content > h1::before {
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+  }
+}

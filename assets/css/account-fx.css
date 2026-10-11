@@ -1,0 +1,212 @@
+html body.fx {
+  --papers-border: var(--fx-line);
+  --papers-border-strong: var(--fx-line-strong);
+  --papers-primary: var(--fx-accent);
+  --papers-primary-strong: var(--fx-accent);
+}
+
+body.fx #content > h1 {
+  position: relative;
+  padding-top: 1.6rem;
+}
+body.fx #content > h1::before {
+  content: "Members / One login";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--fx-mono);
+  font-size: 0.72rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--fx-accent);
+}
+
+body.fx .account-split,
+html.dark body.fx .account-split {
+  position: relative;
+  border: 1px solid var(--fx-line);
+  border-radius: var(--fx-radius-lg);
+  background: var(--fx-surface);
+  box-shadow: var(--fx-shadow);
+}
+body.fx .account-split::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-top: 1px solid var(--fx-accent);
+  border-right: 1px solid var(--fx-accent);
+  opacity: 0.5;
+  pointer-events: none;
+}
+body.fx .account-branding-panel,
+html.dark body.fx .account-branding-panel {
+  border-right: 1px solid var(--fx-line);
+  background:
+    radial-gradient(70% 90% at 0% 0%, var(--fx-tint-a), transparent 62%),
+    radial-gradient(70% 90% at 100% 100%, var(--fx-tint-b), transparent 62%),
+    repeating-linear-gradient(0deg, var(--fx-grid) 0, var(--fx-grid) 1px, transparent 1px, transparent 32px),
+    repeating-linear-gradient(90deg, var(--fx-grid) 0, var(--fx-grid) 1px, transparent 1px, transparent 32px);
+}
+body.fx .account-branding-panel h1 {
+  margin: 0.6rem 0 0.6rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-family: var(--fx-serif) !important;
+  font-size: clamp(2rem, 3.4vw, 2.8rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.02;
+  letter-spacing: -0.02em !important;
+  color: var(--fx-ink);
+  animation: none;
+}
+body.fx .account-branding-tagline {
+  color: var(--fx-muted);
+}
+body.fx .account-branding-points li {
+  align-items: flex-start;
+}
+body.fx .account-branding-icon {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 1px solid var(--fx-line);
+  border-radius: 12px;
+  background: var(--fx-surface-solid);
+}
+body.fx .account-branding-points strong {
+  font-family: var(--fx-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--fx-ink);
+}
+body.fx .account-branding-optional {
+  padding-top: 1rem;
+  border-top: 1px dashed var(--fx-line-strong);
+  font-size: 0.82rem;
+  color: var(--fx-muted);
+}
+
+body.fx .account-tabs,
+html.dark body.fx .account-tabs {
+  gap: 1.4rem;
+  border-bottom-color: var(--fx-line);
+}
+body.fx .account-tab {
+  padding: 0.6rem 0;
+  font-family: var(--fx-mono);
+  font-size: 0.76rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+body.fx .account-tab.active,
+html.dark body.fx .account-tab.active {
+  border-bottom-color: var(--fx-accent);
+  color: var(--fx-accent);
+}
+body.fx .account-screen h2 {
+  border: 0;
+  font-family: var(--fx-serif) !important;
+  font-size: 1.7rem !important;
+  font-weight: 600 !important;
+  color: var(--fx-ink) !important;
+}
+body.fx .account-form label {
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  color: var(--fx-ink);
+}
+body.fx .account-form input,
+body.fx .account-form select,
+body.fx .account-form textarea,
+html.dark body.fx .account-form input,
+html.dark body.fx .account-form select,
+html.dark body.fx .account-form textarea {
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--fx-line-strong);
+  border-radius: 14px;
+  background: var(--fx-surface-solid);
+  color: var(--fx-ink);
+}
+body.fx .account-form input:focus,
+body.fx .account-form select:focus,
+body.fx .account-form textarea:focus,
+html.dark body.fx .account-form input:focus,
+html.dark body.fx .account-form select:focus,
+html.dark body.fx .account-form textarea:focus {
+  border-color: var(--fx-accent);
+  outline: 2px solid color-mix(in srgb, var(--fx-accent) 35%, transparent);
+  outline-offset: 1px;
+}
+body.fx .account-form input.account-otp-code {
+  font-family: var(--fx-mono);
+  letter-spacing: 0.4em;
+}
+body.fx .account-form button[type="submit"] {
+  align-self: flex-start;
+}
+body.fx .account-link-btn {
+  font-family: var(--fx-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--fx-accent);
+}
+body.fx .account-link-btn:hover:not(:disabled) {
+  text-decoration: underline;
+}
+body.fx .account-hint,
+body.fx .account-consent,
+body.fx .account-word-count {
+  color: var(--fx-muted);
+}
+body.fx .account-loggedin-greeting {
+  font-family: var(--fx-serif);
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: var(--fx-ink);
+}
+body.fx .account-avatar-option {
+  transition: border-color 0.3s ease;
+}
+body.fx .account-avatar-option:hover {
+  border-color: color-mix(in srgb, var(--fx-accent) 45%, transparent);
+}
+body.fx .account-avatar-option.selected,
+html.dark body.fx .account-avatar-option.selected {
+  border-color: var(--fx-accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--fx-accent) 22%, transparent);
+}
+body.fx .account-danger-zone {
+  padding: 1.25rem;
+  border: 1px dashed rgba(220, 38, 38, 0.45);
+  border-radius: var(--fx-radius-sm);
+}
+body.fx .account-delete-btn {
+  border-radius: var(--fx-pill);
+  padding: 0.55rem 1.3rem;
+}
+
+@media (max-width: 760px) {
+  body.fx .account-branding-panel,
+  html.dark body.fx .account-branding-panel {
+    border-right: 0;
+    border-bottom: 1px solid var(--fx-line);
+  }
+  body.fx .account-split,
+  html.dark body.fx .account-split {
+    border-radius: var(--fx-radius-sm);
+  }
+}

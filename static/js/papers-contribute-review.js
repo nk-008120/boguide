@@ -81,7 +81,9 @@
       if (row.answer_file_path) files += ' · <a href="#" data-signed-file="' + escapeHTML(row.answer_file_path) + '">Answer key PDF</a>';
       return (
         '<p><strong>' + escapeHTML(row.olympiad) + ' ' + escapeHTML(row.year) + '</strong>, ' + escapeHTML(row.round_label) + '</p>' +
-        (row.source_url ? '<p>Source: <a href="' + escapeHTML(row.source_url) + '" target="_blank" rel="noopener">' + escapeHTML(row.source_url) + '</a></p>' : '') +
+        (row.source_url ? (/^https?:\/\//i.test(row.source_url)
+          ? '<p>Source: <a href="' + escapeHTML(row.source_url) + '" target="_blank" rel="noopener noreferrer">' + escapeHTML(row.source_url) + '</a></p>'
+          : '<p>Source (not a web link, shown as text): ' + escapeHTML(row.source_url) + '</p>') : '') +
         '<p><strong>License note:</strong> ' + escapeHTML(row.license_note) + '</p>' +
         '<p>' + files + '</p>'
       );

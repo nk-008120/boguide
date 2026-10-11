@@ -65,7 +65,7 @@ At the axon terminal, a **chemical synapse** transmits the signal to the next ce
   <div style="font-size:0.78rem; color:#6b7280; margin-top:0.4rem;">Saltatory conduction lets the action potential regenerate only at the nodes of Ranvier and "jump" between them, reaching the axon terminal roughly 10× faster in this comparison than continuous, point-by-point unmyelinated conduction.</div>
 </div>
 
-<script src="https://cdn.plot.ly/plotly-3.1.0.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js" integrity="sha384-DAxS2fhSGacPW3IdpTjDpu+KotwjM8aHsfrkZRnfYyJIhAHoDav7jAJ+NmYcp6PL" crossorigin="anonymous"></script>
 <script>
 (function() {
   function initChart() {

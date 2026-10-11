@@ -4,7 +4,7 @@ description: "Practical IV study guide covering plant computational biology, ima
 weight: 1
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" id="MathJax-script" integrity="sha384-AHAnt9ZhGeHIrydA1Kp1L7FN+2UosbF7RQg6C+9Is/a7kDpQ1684C2iH2VWil6r4" crossorigin="anonymous" async></script>
 <script>
   window.MathJax = {
     tex: {
@@ -278,9 +278,7 @@ $$ \text{CTCF} = \text{IntDen}_{\text{cell}} - (\text{Area}_{\text{cell}} \times
 {{< tab name="Problem 5" >}}
 ## Optional: Combined Practice
 
-Use the attached <a href="/problem5.pdf">PDF</a> and the attached image
-<img src="/imagejps/imagejp5.png" alt="C3 vs C4 plants" style="max-width:100%;">
-Upper row is for C3 and lower row is for C4 plants.
+Use the attached <a href="/problem5.pdf">PDF</a>.
 
 Compare your results with the solution in the **Solutions** tab.
 

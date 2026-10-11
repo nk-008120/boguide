@@ -1,0 +1,266 @@
+html body.fx {
+  --papers-card: var(--fx-surface-solid);
+  --papers-card-muted: color-mix(in srgb, var(--fx-accent) 8%, var(--fx-surface-solid));
+  --papers-border: var(--fx-line);
+  --papers-border-strong: var(--fx-line-strong);
+  --papers-primary: var(--fx-accent);
+  --papers-primary-strong: var(--fx-accent);
+  --papers-radius: var(--fx-radius-sm);
+  --papers-shadow: var(--fx-shadow);
+  --papers-shadow-hover: var(--fx-shadow);
+}
+
+body.fx #content > h1 {
+  position: relative;
+  padding-top: 1.6rem;
+}
+body.fx #content > h1::before {
+  content: "Your data / Study dashboard";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--fx-mono);
+  font-size: 0.72rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--fx-accent);
+}
+
+body.fx .dashboard-gate {
+  position: relative;
+  max-width: 44rem;
+  margin: 2rem auto;
+  padding: 3.2rem 1.75rem 3rem;
+  border: 1px solid var(--fx-line);
+  border-radius: var(--fx-radius-lg);
+  background:
+    radial-gradient(70% 90% at 0% 0%, var(--fx-tint-a), transparent 62%),
+    radial-gradient(70% 90% at 100% 100%, var(--fx-tint-b), transparent 62%),
+    repeating-linear-gradient(0deg, var(--fx-grid) 0, var(--fx-grid) 1px, transparent 1px, transparent 32px),
+    repeating-linear-gradient(90deg, var(--fx-grid) 0, var(--fx-grid) 1px, transparent 1px, transparent 32px),
+    var(--fx-surface);
+  box-shadow: var(--fx-shadow);
+}
+body.fx .dashboard-gate::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-top: 1px solid var(--fx-accent);
+  border-right: 1px solid var(--fx-accent);
+  opacity: 0.5;
+  pointer-events: none;
+}
+body.fx .dashboard-gate h2 {
+  margin: 0 0 0.9rem;
+  border: 0;
+  font-family: var(--fx-serif) !important;
+  font-size: clamp(1.9rem, 3.6vw, 2.7rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.05;
+  color: var(--fx-ink) !important;
+}
+body.fx .dashboard-gate p {
+  max-width: 32rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--fx-muted);
+}
+body.fx .dashboard-gate .btn-primary {
+  margin: 0.4rem 0.3rem 0;
+}
+html body.fx .dashboard-btn-secondary {
+  border: 1px solid var(--fx-line-strong);
+  background-color: var(--fx-surface);
+  background-image: radial-gradient(circle at var(--fx-x) var(--fx-y), var(--fx-accent) var(--fx-r), transparent calc(var(--fx-r) + 0.5%));
+  color: var(--fx-ink);
+  box-shadow: none;
+}
+html body.fx .dashboard-btn-secondary:hover,
+html body.fx .dashboard-btn-secondary:focus-visible {
+  background-color: var(--fx-surface);
+  color: var(--fx-on-accent);
+}
+
+body.fx #dashboard-content {
+  counter-reset: dash-section;
+}
+body.fx #dashboard-content > h2 {
+  position: relative;
+  margin-top: 3.6rem;
+  padding-top: 1.5rem;
+  border: 0;
+  font-family: var(--fx-serif) !important;
+  font-size: clamp(1.8rem, 3.2vw, 2.5rem) !important;
+  font-weight: 500 !important;
+  line-height: 1.05;
+  color: var(--fx-ink) !important;
+}
+body.fx #dashboard-content > h2::before {
+  counter-increment: dash-section;
+  content: counter(dash-section, decimal-leading-zero) " / Dashboard";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--fx-mono);
+  font-size: 0.72rem;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--fx-accent);
+}
+
+body.fx .dashboard-stat-card {
+  position: relative;
+  padding: 1.5rem 0.9rem 1.3rem;
+  transition: border-color 0.45s var(--fx-ease);
+}
+body.fx .dashboard-stat-card:hover {
+  border-color: color-mix(in srgb, var(--fx-accent) 55%, transparent);
+}
+body.fx .dashboard-stat-card::after {
+  content: "";
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-top: 1px solid var(--fx-accent);
+  border-right: 1px solid var(--fx-accent);
+  opacity: 0.4;
+}
+body.fx .dashboard-stat-number,
+html.dark body.fx .dashboard-stat-number {
+  font-family: var(--fx-serif);
+  font-size: 2.7rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--fx-accent);
+}
+body.fx .dashboard-stat-label,
+body.fx .dashboard-next-header,
+body.fx .dashboard-readiness-detail {
+  font-family: var(--fx-mono);
+  letter-spacing: 0.1em;
+  color: var(--fx-muted);
+}
+
+body.fx .dashboard-readiness-card,
+body.fx .dashboard-next-card {
+  position: relative;
+  padding: 1.4rem 1.5rem;
+  border-radius: var(--fx-radius);
+  background:
+    radial-gradient(60% 90% at 0% 0%, var(--fx-tint-a), transparent 62%),
+    var(--fx-surface-solid);
+}
+body.fx .dashboard-readiness-target,
+body.fx .dashboard-next-name {
+  font-family: var(--fx-serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.15;
+  color: var(--fx-ink);
+}
+body.fx .dashboard-readiness-pct {
+  font-family: var(--fx-serif);
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 1;
+}
+body.fx .dashboard-readiness-bar-track {
+  height: 10px;
+  background: color-mix(in srgb, var(--fx-ink) 9%, transparent);
+}
+
+body.fx .dashboard-section-group h3,
+html.dark body.fx .dashboard-section-group h3 {
+  font-family: var(--fx-serif) !important;
+  font-size: 1.4rem !important;
+  font-weight: 600 !important;
+  color: var(--fx-ink) !important;
+}
+body.fx .dashboard-subject-row,
+body.fx .dashboard-topic-item {
+  padding: 0.5rem 0.75rem;
+  border-radius: 12px;
+}
+body.fx .dashboard-subject-row:hover,
+body.fx .dashboard-topic-item:hover {
+  background: color-mix(in srgb, var(--fx-accent) 7%, transparent);
+}
+body.fx .dashboard-mastery-badge {
+  border-radius: var(--fx-pill);
+  font-family: var(--fx-mono);
+  letter-spacing: 0.08em;
+}
+body.fx .dashboard-recent-item {
+  transition: border-color 0.45s var(--fx-ease);
+}
+body.fx .dashboard-recent-item:hover {
+  border-color: color-mix(in srgb, var(--fx-accent) 55%, transparent);
+  transform: none;
+}
+body.fx .dashboard-recent-score {
+  font-family: var(--fx-mono);
+}
+body.fx .dashboard-streak-dot {
+  border-radius: 5px;
+}
+
+body.fx .attempt-rec-card {
+  --fx-tone: var(--fx-accent);
+  border-width: 1px;
+  border-color: color-mix(in srgb, var(--fx-tone) 45%, transparent);
+  background: color-mix(in srgb, var(--fx-tone) 5%, var(--fx-surface-solid));
+}
+body.fx .attempt-rec-critical { --fx-tone: #dc2626; }
+body.fx .attempt-rec-weak { --fx-tone: #d97706; }
+body.fx .attempt-rec-positive { --fx-tone: #16a34a; }
+body.fx .attempt-rec-card h4 {
+  color: var(--fx-tone);
+}
+
+html body.fx .dashboard-plan-btn {
+  padding: 0.7rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: var(--fx-pill);
+  background: var(--fx-accent);
+  color: var(--fx-on-accent) !important;
+  box-shadow: 0 14px 34px -16px var(--fx-accent);
+  transition: background-color 0.4s var(--fx-ease);
+}
+html body.fx .dashboard-plan-btn:hover {
+  background: var(--fx-accent-2);
+}
+html body.fx .dashboard-copy-btn {
+  border: 1px solid var(--fx-line-strong);
+  border-radius: var(--fx-pill);
+  background: var(--fx-surface);
+  color: var(--fx-ink);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+html body.fx .dashboard-copy-btn:hover {
+  border-color: var(--fx-accent);
+  background: color-mix(in srgb, var(--fx-accent) 10%, var(--fx-surface));
+  color: var(--fx-ink);
+}
+
+@media (max-width: 640px) {
+  body.fx .dashboard-gate {
+    padding: 2.2rem 1.1rem 2rem;
+    border-radius: var(--fx-radius-sm);
+  }
+  body.fx #content > h1::before {
+    font-size: 0.64rem;
+    letter-spacing: 0.1em;
+  }
+}

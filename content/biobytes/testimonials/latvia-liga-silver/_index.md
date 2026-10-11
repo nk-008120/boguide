@@ -1,7 +1,7 @@
 ---
 title: "From Latvia to IBO Silver: Līga's Story"
 description: "Līga Blumfelde, an IBO 2025 silver medallist from Latvia, on the country's five-stage selection pipeline, exam-day strategy, and how BiOGuide fits into IBO preparation."
-layout: "wide"
+layout: "toc-page"
 authors: ["Līga Blumfelde"]
 country: "Latvia"
 country_code: "LV"
@@ -11,7 +11,7 @@ date: 2026-09-30
 <div class="testimonial-article">
 
 <div class="testimonial-author">
-  <img src="/TESTIMONIALPICS/latvia-liga-silver.jpg" alt="Līga Blumfelde" class="testimonial-author-photo" onerror="this.onerror=null;this.src='/avatars/avatar-01.svg';">
+  <img src="/avatars/avatar-01.svg" alt="" class="testimonial-author-photo">
   <div class="testimonial-author-info">
     <h3>Līga Blumfelde</h3>
     <div class="testimonial-author-tagline">🥈 IBO 2025 Silver Medallist &middot; Latvia 🇱🇻</div>

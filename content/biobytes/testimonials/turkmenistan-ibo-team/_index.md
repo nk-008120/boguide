@@ -1,7 +1,7 @@
 ---
 title: "From Turkmenistan to IBO: How 6 Students Are Using BiOGuide"
 description: "Meryem and five fellow biology students from Turkmenistan share why they chose BiOGuide's free preparation programme and how it fits into their self-directed IBO journey."
-layout: "wide"
+layout: "toc-page"
 authors: ["Meryem"]
 country: "Turkmenistan"
 country_code: "TM"

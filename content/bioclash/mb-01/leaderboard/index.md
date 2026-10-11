@@ -14,7 +14,7 @@ sitemap:
 <div class="bioclash-case-header">
   <p class="bioclash-case-header-agency">TIME VARIANCE AUTHORITY</p>
   <p class="bioclash-case-header-division">SACRED TIMELINE ARCHIVES · CASE FILE MB-01</p>
-  <p class="bioclash-case-header-mark">B I O C L A S H</p>
+  <p class="bioclash-case-header-mark">CASE FILE MB-01</p>
 </div>
 
 <div class="bioclash-panel">

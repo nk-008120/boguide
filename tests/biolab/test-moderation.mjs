@@ -186,7 +186,7 @@ async function main() {
 
   await asUser(USER_A, async () => {
     const r = await db.query(`select name from storage.objects where name = '${USER_A}/photo1.jpg'`);
-    check('(sanity) the storage policy tested is the PUBLISHED one, not owner-read -- owner-read policy from 015 needs auth.uid() folder match, verify still separately reachable', true || r);
+    check('(sanity) the storage policy tested is the PUBLISHED one, not owner-read -- owner-read policy from 015 needs auth.uid() folder match, verify still separately reachable', Array.isArray(r.rows));
   });
 
   console.log('\n--- Protocols: same pattern ---');
