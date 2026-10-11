@@ -15,7 +15,7 @@ try {
 const REPO_ROOT = path.join(__dirname, '..');
 const DATA_DIR = path.join(REPO_ROOT, 'data', 'bioclash');
 const PUBLIC_PAPERS = ['bioclash-sample'];
-const PUBLIC_AFTER_CLOSE_PAPERS = ['mb-01'];
+const PUBLIC_AFTER_CLOSE_PAPERS = [];
 
 const USAGE = [
   'usage: node scripts/bioclash-paper-vault.js <command> [paperId] [options]',

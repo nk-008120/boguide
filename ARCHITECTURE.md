@@ -162,7 +162,7 @@ with no password set at all, and needs the same "choose a password now"
 screen a password reset does, just without calling it a reset.
 
 Grading itself does not have to mean hand-editing the export JSON.
-`static/bioclash-admin-grade.html` is a self-contained grading console
+`tools/bioclash-admin-grade.html` is a self-contained grading console
 that never calls the admin API itself; it only builds the same
 curl/PowerShell commands `bioclash-admin.js` expects, which the grader
 copies and runs in their own terminal. It reads back whatever JSON that
@@ -249,7 +249,8 @@ answer set that does not fit the written reasoning stands out to a grader.
 That is a judgement about likelihood, not a guarantee. Copies made while the
 repository was public cannot be recalled, and MB-01's results should be read
 with that in mind.
-
+Since 2026-10-11 the tree holds only the encrypted `mb-01.yaml.enc`, and
+the commit guard no longer exempts this paper.
 What changes from the next round onward:
 
 - No paper is committed in plaintext. Only the `.enc` envelope is tracked,

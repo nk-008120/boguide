@@ -50,6 +50,18 @@ attack we hadn't considered is still worth reporting:
   question's text only reaches a participant who has started an attempt
   and reached that block. The questions being visible to someone who
   legitimately starts is the intended exam experience, not a leak.
+- **Raw HTML in content is allowed on purpose.** Hugo's Markdown renderer
+  runs with `unsafe = true`, because the BiOClash pages, the games and the
+  standalone simulators are written as HTML. Everything under `content/`
+  and `static/` reaches the site only through a reviewed commit, so it is
+  trusted input. Text written by users (doubts, protocols, feedback) never
+  passes through that renderer. It is fetched and rendered in the browser,
+  and that code is where escaping is enforced.
+- **Staff accounts are set in the database, not in the repository.**
+  Migration 023 names the first five staff profiles by ID. Those IDs are
+  not secrets, since staff status is public, and users cannot change the
+  flag on their own profile. Later staff changes are made directly in the
+  database and are not committed.
 
 One thing that is a real gap and not a design choice: for MB-01 the paper
 file sat in plaintext in a public repository until shortly before the
@@ -62,10 +74,10 @@ A report that only restates this will be closed as known.
 ## What the browser is told
 
 Every response carries HSTS, `X-Content-Type-Options: nosniff`, same-origin
-framing only, and a strict referrer policy, all set in `vercel.json`. A
-Content Security Policy is also sent, but in report-only mode for now: the
-site still relies on inline scripts, so the policy reports what it would
-block without blocking it. Treat it as a work in progress, not a control.
+framing only, and a strict referrer policy, all set in `vercel.json`. A small Content Security Policy is enforced: no plugins, no `<base>`
+rewriting, and no framing by other sites. The full policy is still sent in
+report-only mode, because the site relies on inline scripts. Treat that
+part as a work in progress, not a control.
 
 Third-party code is pinned. The Supabase client is served from our own
 site with an integrity hash, and the Plotly and MathJax tags name an exact
