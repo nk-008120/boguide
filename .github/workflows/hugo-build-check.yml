@@ -101,3 +101,10 @@ jobs:
 
       - name: Plaintext paper guard
         run: node scripts/bioclash-paper-vault.js guard
+
+      - name: No admin pages in the published folder
+        run: |
+          if git ls-files static | grep -i admin; then
+            echo "Admin pages must not be published from static/"
+            exit 1
+          fi
