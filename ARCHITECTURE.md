@@ -224,6 +224,48 @@ Vercel. `tests/vault/test.mjs` covers round trips, tampering with every
 envelope field, wrong keys, cross-paper swaps, rotation, and the loader's
 fallback and recovery behavior.
 
+### What went wrong with MB-01, and what we decided
+
+This was a genuine mistake, and it is written down here so nobody has to
+discover it. Two things were exposed before the MB-01 round opened on
+2026-10-10:
+
+- `data/bioclash/mb-01.yaml`, the full paper with its auto-graded answer
+  keys, was tracked in plaintext from 2026-08-10 and readable on the public
+  GitHub repository until the repository was made private around
+  2026-10-09. It is still in the Git history.
+- The paper's figures (`static/MB-01PICS/` and the `mb01-fig*` files in
+  `static/BIOCLASHPICS/`) are ordinary static files. Anyone who knows or
+  guesses a file name can fetch them from the live site without being on
+  the allowlist and without starting an attempt.
+
+We found this shortly before the round and chose to run MB-01 unchanged.
+The reasoning, which is the founder's decision and is recorded as such:
+the repository had 3 stars and 1 watcher, so the number of people who could
+plausibly have taken a copy is very small, and most of the paper's marks
+come from free-text answers that are graded by hand against no pre-filled
+key, so a copied auto-graded answer does not carry a participant far and an
+answer set that does not fit the written reasoning stands out to a grader.
+That is a judgement about likelihood, not a guarantee. Copies made while the
+repository was public cannot be recalled, and MB-01's results should be read
+with that in mind.
+
+What changes from the next round onward:
+
+- No paper is committed in plaintext. Only the `.enc` envelope is tracked,
+  and the guard in the pre-commit hook and in CI refuses anything else.
+- A paper goes on the "public after close" allowlist only after its round
+  has closed, never before.
+- Figures do not go under `static/`. They are to be served only to a
+  participant who has started an attempt and reached the block that uses
+  them. This is not built yet; it has to be in place before the next paper
+  is authored.
+- Each paper sets `closesAt`, so the server enforces the end of the window
+  instead of someone editing the allowlist by hand.
+
+The figures for MB-01 stay where they are for the rest of this round,
+because moving them mid-round would break attempts in progress.
+
 ## BiOLab: open protocol archive, not a curated library
 
 BiOLab pivoted from a single fixed assay to an open archive: any
@@ -958,6 +1000,26 @@ script. It reads the shared `--fx-*` values, so these pages follow the
 visitor's theme. Rows are drawn as separate bands, the first three carry
 gold, silver and bronze tones by position, and the signed-in visitor's
 own row (`.papers-leaderboard-self`) is outlined in the accent colour.
+
+**A loader for switches to the home page.** `assets/home/fx-nav.js`
+and `assets/css/fx-nav.css` are inlined on tiers 2, 3 and 4. A click on
+a same-site link to `/` from any other page shows a loading card at once
+and records the time of the click in `sessionStorage`. The old page
+keeps the card up until it is replaced. The home page reads the time of
+the click, shows the card again before its first paint and removes it
+once one second has passed since the click, so the card lasts at least a
+second and always clears over the home page, never over the old one. A
+switch slower than a second keeps the card until the home page arrives,
+then fades it after a quarter of a second. The home page also skips the
+site's cross-document view transition for that navigation
+(`pagereveal`), so the slide does not play underneath the card. If a
+navigation is cancelled the old page drops the card after twenty
+seconds. The card is appended to `<html>`, not `<body>`, because the
+home page runs the script in the head before the body exists; for the
+same reason the stylesheet carries its own small `--n-*` palette and
+cannot read `fx-core.css`. No other destination shows the card, and
+BiOClash and BiOrchive pages do not carry the script, so a link to the
+home page clicked there shows no card.
 
 **Outside the tiers.** `layouts/404.html` is a standalone document that
 does not pass through `baseof.html`. It carries its own copy of the

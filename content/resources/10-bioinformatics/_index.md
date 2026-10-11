@@ -4,7 +4,7 @@ weight: 10
 description: "Complete bioinformatics guide for IBO: databases, BLAST, alignments, phylogenetics, genome analysis, protein structure, and interactive simulation. Includes worked examples from IBO practicals and lab manuals."
 ---
 
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" id="MathJax-script" async></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js" id="MathJax-script" integrity="sha384-AHAnt9ZhGeHIrydA1Kp1L7FN+2UosbF7RQg6C+9Is/a7kDpQ1684C2iH2VWil6r4" crossorigin="anonymous" async></script>
 <script>
   window.MathJax = {
     tex: {

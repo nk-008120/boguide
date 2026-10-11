@@ -35,7 +35,7 @@ Two major skeletal grades: **cartilaginous** (Chondrichthyes: sharks, rays; skel
   <div style="font-size:0.85rem; color:#374151; margin-top:0.5rem;">Blood O₂ saturation as it exits the gill: <strong id="gillExitOut">80%</strong></div>
 </div>
 
-<script src="https://cdn.plot.ly/plotly-3.1.0.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js" integrity="sha384-DAxS2fhSGacPW3IdpTjDpu+KotwjM8aHsfrkZRnfYyJIhAHoDav7jAJ+NmYcp6PL" crossorigin="anonymous"></script>
 <script>
 (function() {
   function initChart() {

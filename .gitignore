@@ -15,3 +15,7 @@ context/
 plans/outline-session-planandcontacts/
 data/bioclash/*.yaml
 !data/bioclash/bioclash-sample.yaml
+.hugo_build.lock
+supabase/.temp/
+tests/*/node_modules/
+emails/

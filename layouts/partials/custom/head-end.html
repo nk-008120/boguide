@@ -95,6 +95,10 @@
 {{- if or (eq $fxTier 2) (eq $fxTier 3) -}}
 <script>{{ (resources.Get "home/fx.js" | minify).Content | safeJS }}</script>
 {{- end -}}
+{{- if ge $fxTier 2 -}}
+<style>{{ (resources.Get "css/fx-nav.css" | minify).Content | safeCSS }}</style>
+<script>{{ (resources.Get "home/fx-nav.js" | minify).Content | safeJS }}</script>
+{{- end -}}
 {{- if eq $fxTier 3 -}}
 {{- $fx2Parts := slice (resources.Get "home/vendor/gsap.min.js") (resources.Get "home/vendor/SplitText.min.js") (resources.Get "home/vendor/lenis.min.js") (resources.Get "home/home-fluid.js" | minify) (resources.Get "home/fx2-motion.js" | minify) -}}
 {{- $fx2Js := $fx2Parts | resources.Concat "bundles/fx2.js" | fingerprint -}}
@@ -143,7 +147,8 @@
 <link rel="preload" href="/fonts/space-grotesk-latin-c0781ea2.woff2" as="font" type="font/woff2" crossorigin>
 <style>{{ $fontsPapersCss.Content | safeCSS }}</style>
 {{- end -}}
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js" defer></script>
+{{- $supabaseJs := resources.Get "vendor/supabase-js-2.112.2.js" | fingerprint }}
+<script src="{{ $supabaseJs.RelPermalink }}" integrity="{{ $supabaseJs.Data.Integrity }}" defer></script>
 <script>
   window.__SUPABASE_URL = {{ getenv "HUGO_SUPABASE_URL" | jsonify | safeJS }};
   window.__SUPABASE_ANON_KEY = {{ getenv "HUGO_SUPABASE_ANON_KEY" | jsonify | safeJS }};

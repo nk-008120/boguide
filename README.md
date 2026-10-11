@@ -15,7 +15,7 @@
 
 ### Notes@BiOGuide
 
-The core study resource. 15 topic sections with 127+ subtopic pages covering the full IBO syllabus:
+The core study resource. 16 topic sections with 127+ subtopic pages covering the full IBO syllabus. Fourteen are written; Practicals 2 and 3 are still to come:
 
 | # | Section | Subtopics |
 |---|---------|-----------|
@@ -29,14 +29,17 @@ The core study resource. 15 topic sections with 127+ subtopic pages covering the
 | 8 | Ecology | Population, community, and ecosystem ecology |
 | 9 | Ethology | 9 pages: animal behavior, learning, communication, social behavior |
 | 10 | Bioinformatics | Sequence alignment, phylogenetics, computational biology |
-| 11–14 | Practicals (P1–P4) | Lab techniques, wildlife ethology, plant biology, computational/quantitative methods |
+| 11 | Practical 1 | Lab techniques |
+| 12, 13 | Practicals 2 and 3 | Wildlife ethology and plant biology. Not written yet; the pages say so |
+| 14 | Practical 4 | Plant computational biology and quantitative methods |
 | 15 | Evolution | 11 pages: mechanisms, speciation, adaptation |
+| 16 | Biostatistics | Statistics for olympiad data questions |
 
 Each page follows a consistent structure: Overview, Key Concepts, Comparative Structures, Common Exam Questions, Visual Reference, and Practice Problems.
 
 ### BiOrchive
 
-Past-paper practice engine for IBO, INBO, and TBO. Features timed attempts, per-question instant scoring, detailed solutions, and per-round leaderboards. Currently hosts 450+ individual question pages across multiple years and rounds.
+Past-paper practice engine for IBO and INBO. Features timed attempts, per-question instant scoring, detailed solutions, and per-round leaderboards. Currently hosts 450+ individual question pages across multiple years and rounds.
 
 ### BiOClash
 
@@ -83,11 +86,11 @@ The home page is a single scroll-led page: a hero with an interactive 3-D globe 
 | Static Site Generator | [Hugo](https://gohugo.io/) v0.162+ (extended) |
 | Theme | [Hextra](https://github.com/imfing/hextra) (heavily customized) |
 | Backend | [Supabase](https://supabase.com/): Auth, Postgres, Storage |
-| Serverless Functions | Vercel Functions (11 API routes) |
+| Serverless Functions | Vercel Functions (12 API routes, the Hobby plan limit) |
 | Hosting | [Vercel](https://vercel.com/) |
 | Analytics | [Umami](https://umami.is/) (self-hosted, Core Web Vitals + country stats), [PostHog](https://posthog.com/) (EU-hosted, product-analytics events only, no session recording), [Google Analytics 4](https://analytics.google.com/) |
 | Error Tracking | [Sentry](https://sentry.io/) (API layer only, opt-in via `SENTRY_DSN`) |
-| Styling | Tailwind CSS + 7,600+ lines of custom CSS |
+| Styling | Tailwind CSS + about 17,600 lines of custom CSS across 37 files |
 | Math Rendering | KaTeX (via Hugo's built-in support) |
 | Interactive Widgets | Plotly, Vanilla JS, SVG |
 | Motion | [GSAP](https://gsap.com/) (ScrollTrigger, SplitText, ScrambleText), [Lenis](https://github.com/darkroomengineering/lenis) smooth scroll, a WebGL2 fluid simulation, [d3-geo](https://github.com/d3/d3-geo) for the home page globe. All vendored, bundled and fingerprinted by Hugo Pipes |
@@ -201,9 +204,9 @@ class node_learner,node_reviewer toneTeal
 
 ### Prerequisites
 
-- [Hugo (extended)](https://gohugo.io/installation/) v0.162+
+- [Hugo (extended)](https://gohugo.io/installation/) v0.162.0, the version CI builds with
 - Git
-- (Optional) Node.js for theme asset builds
+- (Optional) Node.js 22 for the tests and the linter
 
 ### Setup
 
@@ -213,7 +216,19 @@ cd boguide
 hugo server --disableFastRender
 ```
 
-Visit `http://localhost:1313`. Serverless functions and Supabase features require environment variables not included in the repo.
+The repository is private while a BiOClash round is open, so the clone will fail for anyone outside the team during those weeks. It is public the rest of the time.
+
+Visit `http://localhost:1313`. A full build takes a few minutes because of the size of the paper archive. Serverless functions and Supabase features need environment variables that are not in the repo; `.env.example` lists every one of them and says where each is read.
+
+To run the checks CI runs:
+
+```bash
+npm ci
+npm run lint
+npm test
+```
+
+The database tests live in `tests/rls/` and `tests/biolab/` and are run from inside those folders. See `tests/README.md`.
 
 If your operating system has animations switched off (on Windows 10: Settings, Ease of Access, Display, "Show animations in Windows"; on Windows 11: Settings, Accessibility, Visual effects, "Animation effects"), the site honours that and shows pages without motion. Add `?motion=on` to a URL to see the animations anyway for that page load, for example `http://localhost:1313/?motion=on`.
 
@@ -225,7 +240,7 @@ If the home page loses its styling after you edit `layouts/_default/baseof.html`
 
 See [ARCHITECTURE.md](ARCHITECTURE.md) for how the stack fits together, the RLS-as-security-boundary model, and the reasoning behind BiOClash's anti-cheat design, BiOLab's open-archive model, and the ingestion pipeline. See [SECURITY.md](SECURITY.md) for the security posture and how to report a vulnerability.
 
-Two test suites verify RLS behavior against real Postgres (`tests/biolab/`, `tests/rls/`), both run in CI on every push and PR.
+Two test suites verify RLS behavior against real Postgres (`tests/biolab/`, `tests/rls/`), and three more cover grading, the paper vault and the API handlers. CI runs all of them, plus a linter, an internal link check and a secret scan, on every push and pull request to `main`. Other branches are not checked until they are proposed for `main`.
 
 ---
 
@@ -252,4 +267,10 @@ BiOGuide is dual-licensed:
 - **Code** (`layouts/`, `static/js/`, `api/`, `assets/css/`, `assets/home/`, `scripts/`) is licensed under [MIT](LICENSE-CODE.txt).
 - **Educational content** (`content/`, including `content/bioclash/`, and `data/`, including `data/bioclash/`) is licensed under [CC BY-NC-SA 4.0](LICENSE-CONTENT.txt). BiOClash content is additionally governed by the AI-Free policy in `AGENTS.md`.
 
-The vendored [Hextra](https://github.com/imfing/hextra) theme under `themes/hextra/` retains its own license terms. So do the third-party libraries in `assets/home/vendor/` and `static/vendor/` (GSAP, Lenis, d3, 3Dmol.js) and the Natural Earth map data in `static/data/globe-110m.json`; their licence texts and notices are kept under `static/vendor/`.
+Past papers in BiOrchive are not our work, and they are hosted on these terms:
+
+- **IBO papers** are published by the International Biology Olympiad under CC BY-NC-SA 4.0, the same licence as our own content, so they are redistributed here under that licence with credit to the IBO. Our transcriptions, topic tags and explanations are our additions on the same terms.
+- **INBO papers** are hosted with permission from HBCSE (Homi Bhabha Centre for Science Education), which runs the Indian olympiad programme. That permission covers BiOGuide; it does not pass on to anyone reusing them, so ask HBCSE before redistributing those.
+- No other olympiad's papers are hosted. A new paper is only added once the question of what licence or permission covers it has a checkable answer, as set out in [CONTRIBUTING_PAPERS.md](CONTRIBUTING_PAPERS.md).
+
+The vendored [Hextra](https://github.com/imfing/hextra) theme under `themes/hextra/` retains its own license terms. The fonts in `static/fonts/` are under the SIL Open Font License; each family's licence text is in `static/fonts/licenses/`. So do the third-party libraries in `assets/home/vendor/`, `assets/vendor/` and `static/vendor/` (GSAP, Lenis, d3, 3Dmol.js, the Supabase client) and the Natural Earth map data in `static/data/globe-110m.json`; their licence texts and notices are kept under `static/vendor/`. One of them needs saying plainly: GSAP is free to use but is not open source. It is under GreenSock's own "Standard No Charge" licence, not MIT, so the MIT licence on our code does not extend to the GSAP files and anyone reusing this repository takes GSAP on GreenSock's terms.

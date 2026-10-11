@@ -70,7 +70,17 @@
 
   function getNextParam() {
     var m = /[?&]next=([^&]+)/.exec(window.location.search);
-    return m ? decodeURIComponent(m[1]) : null;
+    if (!m) return null;
+    var next;
+    try { next = decodeURIComponent(m[1]); } catch (e) { return null; }
+    if (!/^\/(?![/\\])/.test(next) || next.indexOf('\\') !== -1) return null;
+    for (var i = 0; i < next.length; i++) {
+      if (next.charCodeAt(i) < 32) return null;
+    }
+    try {
+      if (new URL(next, window.location.origin).origin !== window.location.origin) return null;
+    } catch (e) { return null; }
+    return next;
   }
 
   var tabs = root.querySelectorAll('.account-tab');

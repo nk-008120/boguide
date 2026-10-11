@@ -1,9 +1,0 @@
-[theme]
-base="light"
-[browser]
-gatherUsageStats = false
-[server]
-enableCORS = false
-enableXsrfProtection = false
-[client]
-showSidebarNavigation = false

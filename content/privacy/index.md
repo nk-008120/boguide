@@ -2,7 +2,7 @@
 title: "Privacy Policy"
 ---
 
-**Last updated:** October 10, 2026
+**Last updated:** October 11, 2026
 
 BiOGuide is a free, non-commercial study resource. Almost everything on the site - every topic page, every practice question, every timed attempt - works with no account at all. This page explains what happens on the small part that does involve an account: login, your profile, and the leaderboard.
 
@@ -12,23 +12,40 @@ If you never create an account, we don't collect anything about you beyond stand
 
 If you create an account (optional, via **Sign Up** on the [Account page](/account/)), we collect:
 
-- **Email and password** - used only to log you in. Passwords are never stored in readable form; authentication is handled by our backend provider, Supabase, using industry-standard hashing. We never see or store your raw password.
+- **Email and password** - used to log you in, and your email is also used for the occasional service announcement described under "Why we collect it" below. Passwords are never stored in readable form; authentication is handled by our backend provider, Supabase, using industry-standard hashing. We never see or store your raw password.
 - **Display name** - chosen at signup, shown publicly on the leaderboard.
 - **Avatar** - a picture you pick from a small curated set, shown publicly next to your name.
 - **Country, education level, and a short "about" bio** - all optional, filled in on your profile. Country is shown publicly on the leaderboard as a flag; education level and "about" are shown only on your own profile.
 - **Timed Attempt / quiz activity** - if you submit a practice test to the leaderboard, we store your score, timing, and per-question results, tied to your account, so we can rank you and show your history.
+- **Doubts you post** - the title, subject, text, and any photos you attach to a question on the [Doubts page](/doubts/). Doubts and the staff replies to them are public to any visitor, shown with your display name, avatar, and country. Photos are re-encoded before upload, which strips EXIF metadata, the same way BiOLab photos are.
+- **Paper contributions and corrections** - if you send us a past paper, a correction, or a solution through the [contribute form](/papers/contribute/), we store what you typed and any PDF you uploaded so staff can review it. These are visible only to you and to BiOGuide staff.
+- **Page ratings and study progress** - a rating you give a notes page, and the review schedule the Dashboard keeps for the topics you practise. Ratings are shown only as an average across all users; your review schedule is visible only to you.
 
-That's the complete list. We don't collect payment information (the site is free), and we don't run advertising scripts or sell data to advertisers. We do use analytics tools to understand traffic and how the site is used, described in the Analytics section below.
+BiOLab, BiOClash, and BiOLive collect a little more when you use them, and each has its own section further down. We don't collect payment information (the site is free), and we don't run advertising scripts or sell data to advertisers. We do use analytics tools to understand traffic and how the site is used, described in the Analytics section below.
 
 ## Why we collect it
 
-Only to run the features you're actually using: logging you in, showing your chosen name/avatar/country on the leaderboard, and keeping a record of your practice-test results so the leaderboard and your own history stay accurate. We don't sell data, and we don't use it for advertising.
+Only to run the features you're actually using: logging you in, showing your chosen name/avatar/country on the leaderboard, and keeping a record of your practice-test results so the leaderboard and your own history stay accurate.
+
+We may also email account holders an occasional **service announcement**: a new feature or programme on BiOGuide (for example the launch of BiOLive), a change to your account or to this policy, or something you signed up for, such as a BiOClash round or a BiOLive session. These are sent by the BiOGuide team, they are infrequent, and they never contain third-party advertising. Every announcement says how to stop receiving them; you can also email us at any time and we will take you off the list. Messages needed to run your account or a session you registered for (sign-in codes, password resets, a Zoom link) are still sent.
+
+We don't sell data, and we don't use it for advertising.
 
 ## Where it's stored
 
 Account and profile data lives in [Supabase](https://supabase.com), a hosted Postgres database and authentication provider. The site itself is hosted on [Vercel](https://vercel.com). Both are reputable infrastructure providers used by many websites - naming them here is normal and doesn't mean either can see or use your data beyond storing/serving it on our behalf.
 
 Row-level security rules mean other logged-in users can never read your email or your private practice-test details directly from the database - only what's meant to be public (display name, avatar, country, leaderboard results) is visible to others.
+
+## Other services your browser contacts
+
+A few parts of a page are loaded from services we don't run. They don't receive your account details, but like any website they see your IP address and which file was requested:
+
+- **flagcdn.com** - the small country flag images shown next to names on leaderboards, doubts, and BiOLab.
+- **cdn.plot.ly and cdn.jsdelivr.net** - the charting and maths libraries used by some interactive widgets on notes pages. We pin the exact file and verify it before it runs.
+- **Sentry** - if one of our server functions fails, the error is reported to Sentry so we can fix it. Reports contain the error and which function failed, not your profile.
+
+The library that talks to Supabase is served from our own site, not from a third party.
 
 ## Accounts are optional
 
@@ -80,7 +97,9 @@ If you'd rather not have something you submitted to BiOLab shown publicly, the s
 
 ## Deleting your data
 
-If you have an account, you can delete it yourself at any time: log in, go to the [Account page](/account/), and use **Delete my account** at the bottom of your profile. This permanently and immediately removes your login, profile, avatar/country/education/about, and all leaderboard/attempt history - it cannot be undone. We keep a minimal internal record that a deletion occurred (just a date and an internal ID, nothing identifying) so we can confirm a deletion happened if you ever ask us to check.
+If you have an account, you can delete it yourself at any time: log in, go to the [Account page](/account/), and use **Delete my account** at the bottom of your profile. This permanently and immediately removes your login, profile, avatar/country/education/about, all leaderboard/attempt history, your doubts, your BiOLab results and feedback, your contributions, and your BiOLive registrations - it cannot be undone. The files you uploaded go with them: result photos, doubt photos, and contributed PDFs are deleted from storage before the account is removed, and if that step fails the deletion stops so nothing is left half done.
+
+One thing stays: a **BiOLab protocol you published** remains in the archive, with its attachments, but with your name, avatar, and country removed from it. Protocols are shared reference material that other students may already be working from. If you want a protocol taken down as well, email us before or after deleting and we'll remove it. We keep a minimal internal record that a deletion occurred (just a date and an internal ID, nothing identifying) so we can confirm a deletion happened if you ever ask us to check.
 
 If you'd rather we do it for you, or you have any other privacy question, email us at **r6394175@gmail.com**.
 

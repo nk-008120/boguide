@@ -1,0 +1,122 @@
+.fx-nav-veil {
+  --n-ink: #1a1a2e;
+  --n-muted: #55607a;
+  --n-line: rgba(26, 26, 46, 0.12);
+  --n-card: rgba(255, 255, 255, 0.78);
+  --n-back: rgba(246, 241, 251, 0.86);
+  --n-a: #7450b8;
+  --n-b: #4f6e4b;
+  --n-glow-a: rgba(137, 101, 196, 0.18);
+  --n-glow-b: rgba(92, 122, 88, 0.16);
+  --n-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  position: fixed;
+  z-index: 9998;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background:
+    radial-gradient(60% 60% at 18% 12%, var(--n-glow-a), transparent 70%),
+    radial-gradient(60% 60% at 84% 88%, var(--n-glow-b), transparent 70%),
+    var(--n-back);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.35s var(--n-ease), visibility 0s linear 0.35s;
+}
+html.dark .fx-nav-veil {
+  --n-ink: #f1f5f9;
+  --n-muted: #a3adc2;
+  --n-line: rgba(255, 255, 255, 0.12);
+  --n-card: rgba(24, 24, 31, 0.78);
+  --n-back: rgba(14, 14, 20, 0.86);
+  --n-a: #c9b7e8;
+  --n-b: #9db99a;
+}
+.fx-nav-veil.is-on {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.2s var(--n-ease);
+}
+.fx-nav-veil.is-instant.is-on {
+  transition: none;
+}
+.fx-nav-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: min(19rem, 100%);
+  padding: 1.7rem 1.9rem 1.5rem;
+  border: 1px solid var(--n-line);
+  border-radius: 22px;
+  background: var(--n-card);
+  box-shadow: 0 22px 54px -34px rgba(0, 0, 0, 0.6);
+}
+.fx-nav-card::after {
+  content: "";
+  position: absolute;
+  top: 0.9rem;
+  right: 0.9rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-top: 1px solid var(--n-a);
+  border-right: 1px solid var(--n-a);
+  opacity: 0.6;
+}
+.fx-nav-ring {
+  position: relative;
+  width: 2.6rem;
+  height: 2.6rem;
+  margin-bottom: 1.2rem;
+}
+.fx-nav-ring i {
+  position: absolute;
+  inset: 0;
+  border: 2px solid transparent;
+  border-top-color: var(--n-a);
+  border-radius: 50%;
+  animation: fx-nav-spin 1s linear infinite;
+}
+.fx-nav-ring i + i {
+  inset: 0.45rem;
+  border-top-color: transparent;
+  border-bottom-color: var(--n-b);
+  animation-duration: 0.7s;
+  animation-direction: reverse;
+}
+.fx-nav-label {
+  font-family: ui-monospace, "SFMono-Regular", "Cascadia Mono", Menlo, Consolas, monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--n-a);
+}
+.fx-nav-title {
+  margin-top: 0.35rem;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--n-ink);
+}
+.fx-nav-rule {
+  width: 100%;
+  height: 2px;
+  margin-top: 1.1rem;
+  background: linear-gradient(90deg, var(--n-a), var(--n-b));
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+.fx-nav-veil.is-on .fx-nav-rule {
+  animation: fx-nav-rule 1s linear both;
+}
+@keyframes fx-nav-spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes fx-nav-rule {
+  to { transform: scaleX(1); }
+}

@@ -6,6 +6,9 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -22,6 +25,42 @@ jobs:
       - name: Build site
         run: hugo --gc --minify
 
+      - name: Check internal links in the built site
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --offline --no-progress --root-dir ${{ github.workspace }}/public --exclude-path public/papers 'public/**/*.html'
+          fail: true
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint JavaScript
+        run: npm run lint
+
+  secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout with full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Scan for committed secrets
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   rls-tests:
     runs-on: ubuntu-latest
     steps:
@@ -34,18 +73,18 @@ jobs:
           node-version: '22'
 
       - name: Install api/ dependencies (needed by the grading unit tests below)
-        run: npm install
+        run: npm ci
 
       - name: BiOLab RLS + submission-flow tests
         working-directory: tests/biolab
         run: |
-          npm install
+          npm ci
           npm test
 
       - name: General RLS hardening tests
         working-directory: tests/rls
         run: |
-          npm install
+          npm ci
           npm test
 
       - name: Grading logic unit tests
@@ -54,6 +93,10 @@ jobs:
 
       - name: BiOClash paper vault tests
         working-directory: tests/vault
+        run: npm test
+
+      - name: API handler and redirect tests
+        working-directory: tests/api
         run: npm test
 
       - name: Plaintext paper guard
