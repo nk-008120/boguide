@@ -1,0 +1,11 @@
+title = "BiOGuide secret scan"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Fixture staff keys that exist only inside the throwaway database built by tests/rls/biolive.test.mjs"
+regexes = [
+  '''correct-horse-battery-staple-32ch''',
+  '''a-key-that-has-been-revoked-0000''',
+]
