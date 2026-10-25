@@ -10,6 +10,17 @@ description: "Why we built BiOGuide, how content gets reviewed before publishing
     <span class="recent-update-badge">NEW</span>
     <div class="recent-update-body">
       <div class="recent-update-meta">
+        <span class="recent-update-date">Oct 26 2026</span>
+        <span class="recent-update-contributor">Nishit Kalani</span>
+      </div>
+      <p class="recent-update-text">Welcome to <a href="https://bioguide.world">BiOGuide v2.1.0</a>. Sitewide UI UX improvement is the major feature. Reinforced security measured RLS and on site PHP and limited script injection. Encrypted bioclash papers on the repository. Addition of <a href="/content/biology-olympiad-preparation">country guides</a> (pending), and improvement of staff workflows. Contribution method opened to public for the world guides. BiOClash round closed and results under review. Also updated the site community reach from 'views' to visits, still sourced directly from Umami analytics daily. <a href="/content/resources/16-biostatistics/">Biostatistics</a> addition to Notes and Ulukbek's contribution noted. <a href="/content/biobytes/">BiOHorizon</a> launched, and the first two reports published. </p>
+    </div>
+ </div>
+ <div class="recent-update-card recent-update-newest">
+    <div class="recent-update-icon" aria-hidden="true"></div>
+    <span class="recent-update-badge">NEW</span>
+    <div class="recent-update-body">
+      <div class="recent-update-meta">
         <span class="recent-update-date">Sep 18 2026</span>
         <span class="recent-update-contributor">Nishit Kalani</span>
       </div>
@@ -209,7 +220,7 @@ Every page goes through the same process: written and edited by the Founder and 
 {{< /faq-item >}}
 
 {{< faq-item q="Can I contribute or report an error?" >}}
-Yes, please do. Open a GitHub Issue or PR on the [repository](/github-paused/), or reach out on [Discord](https://discord.gg/jQ7sfcCs4). Found a mistake, have a better diagram, or want to add a topic? All of that helps.
+Yes, please do. Open a GitHub Issue or PR on the [repository](https://github.com/nk-008120/boguide/), or reach out on [Discord](https://discord.gg/jQ7sfcCs4). Found a mistake, have a better diagram, or want to add a topic? All of that helps.
 {{< /faq-item >}}
 
 {{< faq-item q="How is my Login information used?" >}}

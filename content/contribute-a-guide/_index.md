@@ -60,7 +60,7 @@ We would rather you decide with the full picture than be surprised later.
       <li><strong>Accuracy matters.</strong> Students plan around these guides. Formats change year to year, so tell us which year you competed and we will make that clear on the page.</li>
       <li><strong>It is unpaid.</strong> BiOGuide is a free, volunteer-run project. The credit and the impact are the reward.</li>
       <li><strong>Open licence.</strong> Site content is published under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>, so others may share and adapt it with credit, non-commercially.</li>
-      <li><strong>AI use is disclosed.</strong> We use AI assistance for grammar clean-up and layout and say so openly in the project's <a href="/ai_attestation.txt">attestation</a> and <a href="/github-paused/">involvement log</a>. Your meaning and your voice stay yours.</li>
+      <li><strong>AI use is disclosed.</strong> We use AI assistance for grammar clean-up and layout and say so openly in the project's <a href="/ai_attestation.txt">attestation</a> and <a href="https://github.com/nk-008120/boguide/">involvement log</a>. Your meaning and your voice stay yours.</li>
     </ul>
   </div>
 </div>
