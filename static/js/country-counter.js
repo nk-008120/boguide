@@ -13,29 +13,36 @@
       })
       .then(function (data) {
         if (!data || !data.totalCountries) return;
-        var totalViews = (data.countries || []).reduce(function (sum, c) {
-          return sum + (c.views || 0);
-        }, 0);
-        if (heroEl) renderHeroCounter(heroEl, totalViews, data.totalCountries);
-        if (reachEl) renderCommunityReach(data, totalViews);
+        var totalVisits = (typeof data.totalVisits === 'number' && data.totalVisits > 0)
+          ? data.totalVisits
+          : (data.countries || []).reduce(function (sum, c) {
+              return sum + countryVisits(c);
+            }, 0);
+        if (heroEl) renderHeroCounter(heroEl, totalVisits, data.totalCountries);
+        if (reachEl) renderCommunityReach(data, totalVisits);
       })
       .catch(function () {});
   }
 
-  function renderHeroCounter(el, totalViews, totalCountries) {
+  function countryVisits(c) {
+    if (!c) return 0;
+    return Number(c.visits != null ? c.visits : c.views) || 0;
+  }
+
+  function renderHeroCounter(el, totalVisits, totalCountries) {
     var link = document.createElement('a');
     link.href = '/about/#community-reach';
     link.className = 'hero-country-badge';
 
-    function setText(views, countries) {
-      link.innerHTML = '<svg class="ui-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> <b>' + formatWithCommas(views) + '</b> Students from <b>' +
+    function setText(visits, countries) {
+      link.innerHTML = '<svg class="ui-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> <b>' + formatWithCommas(visits) + '</b> student visits from <b>' +
         countries + '</b> countries';
     }
 
     el.appendChild(link);
 
     if (document.hidden) {
-      setText(totalViews, totalCountries);
+      setText(totalVisits, totalCountries);
       return;
     }
     var duration = 1500;
@@ -44,20 +51,20 @@
       if (!start) start = timestamp;
       var progress = Math.min((timestamp - start) / duration, 1);
       var eased = 1 - Math.pow(1 - progress, 3);
-      setText(Math.floor(eased * totalViews), Math.floor(eased * totalCountries));
+      setText(Math.floor(eased * totalVisits), Math.floor(eased * totalCountries));
       if (progress < 1) requestAnimationFrame(step);
-      else setText(totalViews, totalCountries);
+      else setText(totalVisits, totalCountries);
     }
     requestAnimationFrame(step);
   }
 
-  function renderCommunityReach(data, totalViews) {
+  function renderCommunityReach(data, totalVisits) {
     var heroDiv = document.getElementById('community-reach-hero');
     if (heroDiv) {
       heroDiv.innerHTML =
         '<div class="reach-stats-row">' +
         '<div class="reach-stat">' +
-        '<span class="reach-number">' + formatWithCommas(totalViews) + '</span>' +
+        '<span class="reach-number">' + formatWithCommas(totalVisits) + '</span>' +
         '<span class="reach-label">student visits</span>' +
         '</div>' +
         '<div class="reach-stat">' +
@@ -70,7 +77,7 @@
     var gridDiv = document.getElementById('community-reach-grid');
     if (gridDiv && data.countries && data.countries.length) {
       var sorted = data.countries.slice().sort(function (a, b) {
-        return (b.views || 0) - (a.views || 0);
+        return countryVisits(b) - countryVisits(a);
       });
       var html = '';
       for (var i = 0; i < sorted.length; i++) {
@@ -78,9 +85,9 @@
         html += '<div class="reach-country-card">';
         html += '<span class="reach-flag">' + escapeHtml(c.flag) + '</span>';
         html += '<span class="reach-country-name">' + escapeHtml(c.name) + '</span>';
-        if (c.views) {
+        if (countryVisits(c)) {
           html += '<span class="reach-country-visitors">' +
-            formatNumber(c.views) + '</span>';
+            formatNumber(countryVisits(c)) + '</span>';
         }
         html += '</div>';
       }

@@ -1187,7 +1187,16 @@ overlapping in what they're for:
   the country-stats pipeline: `api/daily-cron.js` syncs Umami's own data
   into `country_stats_cache` once a day, which `static/js/country-counter.js`
   reads to render the homepage hero counter and the About page's
-  "Community Reach" section. Community Reach in particular is entirely
+  "Community Reach" section. Two different Umami endpoints feed that row,
+  deliberately: the headline figure is the site-level all-time **visits**
+  count from `/api/websites/:id/stats`, stored in `total_visits`, so that
+  the number on the page is the same number the Umami dashboard shows
+  rather than a sum this codebase computed; the per-country breakdown is
+  the `visits` column of `/metrics/expanded?type=country`. Both are visits
+  (sessions), not page views and not unique visitors, and the labels say
+  "student visits" for that reason. The front end falls back to summing
+  the per-country rows only when `total_visits` is missing, which happens
+  between a deploy and the next cron run. Community Reach in particular is entirely
   live-rendered from this pipeline, there's no static country list or
   visitor count anywhere in `content/about/_index.md` to hand-edit; the
   numbers and the "sourced live... from Umami Analytics" attribution line
