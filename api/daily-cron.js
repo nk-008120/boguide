@@ -46,6 +46,14 @@ async function fetchCountryMetrics(baseUrl, websiteId, token) {
   return res.json();
 }
 
+function readStatValue(stats, key) {
+  if (!stats || typeof stats !== 'object') return null;
+  const field = stats[key];
+  if (typeof field === 'number') return field;
+  if (field && typeof field === 'object' && typeof field.value === 'number') return field.value;
+  return null;
+}
+
 async function fetchSiteStats(baseUrl, websiteId, token) {
   const params = new URLSearchParams({
     startAt: '0',
@@ -76,7 +84,12 @@ async function runSyncCountryStats() {
   const token = await umamiLogin(baseUrl, username, password);
   const raw = await fetchCountryMetrics(baseUrl, websiteId, token);
   const stats = await fetchSiteStats(baseUrl, websiteId, token);
-  const totalVisits = Number(stats && stats.visits && stats.visits.value) || 0;
+  let totalVisits = readStatValue(stats, 'visits');
+  if (totalVisits == null) {
+    console.error('[daily-cron] could not read visits from the Umami stats response, keys: ' +
+      Object.keys(stats || {}).join(', '));
+    totalVisits = 0;
+  }
 
   const countries = raw
     .map((row) => {
