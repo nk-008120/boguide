@@ -77,7 +77,7 @@ images: ["/og-bioclash.png"]
       </tbody>
     </table>
   </div>
-  <p class="bioclash-season-note">Subject rounds are 90 minutes. The FST is 180 minutes. Each round is open for a window announced ahead of time; the opening round, Case File MB-01, is open October 10 to 17. Your personal timer starts when you click Start. A round not attempted simply contributes nothing -- it is not a penalty. The seven subject rounds together carry half of the season ranking, and the FST carries the other half.</p>
+  <p class="bioclash-season-note">Subject rounds are 90 minutes. The FST is 180 minutes. Each round is open for a window announced ahead of time; the opening round, Case File MB-01, is now closed. Your personal timer starts when you click Start. A round not attempted simply contributes nothing, it is not a penalty. The seven subject rounds together carry half of the season ranking, and the FST carries the other half.</p>
   <div class="bioclash-sample-cta">
     <p>Want to see how it works before committing?</p>
     <div class="bioclash-sample-cta-actions">

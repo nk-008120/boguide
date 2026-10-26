@@ -65,7 +65,7 @@ Before we start blabbering about, please contact us on the following in case you
 **resourcerepository4boguide@gmail.com** - Resources or papers you want to submit, website feedback, website doubts, and requests for features on website!
 **r6394175@gmail.com** - Letter of interest to join team BiOGuide, talking shop, and so on. This is my personal e-mail so please respect the sanctity! (I'm done amn't I?)
 
-As of August 8 2026, this website has been a one man project. Hence, as we are now under production, we encourage you to join our team if you are up for this position.
+As of August 8 2026, this website has been a one man project. Now, we are about 11 people of peers from over five countries. Hence, as we are now under production, we encourage you to join our team if you are up for this position.
 
 ## Community Reach
 
@@ -123,7 +123,7 @@ That roadblock is what inspired BiOGuide. We make nothing from it; it's complete
 
 Cracking these competitions isn't just about rote-memorising cellular pathways or anatomy, though a strong base of core facts is essential. It's about truly understanding how living systems function, working through problems piece by piece, and having the grit to face scenarios you've never seen before. We want to help you build that problem-solving intuition, which is why we plan to provide an extensive library of past-year problems with step-by-step solutions.
 
-*As of after August 8th*,<br>
+*As of the present*,<br>
 The team now works with a lot of different people (although none contributing to the technical implementations), and their ideas prove valuable to the site. Although they don't act on then directly (Action on the managing partner), the idea attributions are available on request.
 
 ## How Do We find people?

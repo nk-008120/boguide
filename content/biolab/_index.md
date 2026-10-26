@@ -7,7 +7,7 @@ layout: "wide"
 <div class="biolab-page">
 
 <div class="biolab-hero">
-  <span class="biolab-eyebrow">BIOGUIDE LABS</span>
+  <span class="biolab-eyebrow">BIOGUIDE LABS (BETA FEATURE)</span>
   <h1 class="biolab-title">Read a protocol from BiOLab Archive<br><span class="biolab-title-accent">Or write your own</span></h1>
   <p class="biolab-subtitle">BiOLab is a community protocol archive on BiOGuide. The mandatory baseline is our own verified, correctly-attributed protocols, starting with a few protocols soon. Anyone can submit a protocol of their own too, on any lab topic, publishing immediately, along with your own results and feedback on any protocol.</p>
   <div class="biolab-status-pill"><span class="biolab-status-dot"></span>ARCHIVE OPEN, SUBMISSIONS LIVE</div>
