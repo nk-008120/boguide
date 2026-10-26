@@ -46,6 +46,18 @@ async function fetchCountryMetrics(baseUrl, websiteId, token) {
   return res.json();
 }
 
+async function fetchSiteStats(baseUrl, websiteId, token) {
+  const params = new URLSearchParams({
+    startAt: '0',
+    endAt: String(Date.now())
+  });
+  const res = await fetch(`${baseUrl}/api/websites/${websiteId}/stats?${params}`, {
+    headers: { Authorization: `Bearer ${token}` }
+  });
+  if (!res.ok) throw new Error(`Umami stats fetch failed: ${res.status}`);
+  return res.json();
+}
+
 async function runKeepalive() {
   const client = getAnonClient();
   const { error } = await client.from('profiles').select('id').limit(1);
@@ -63,6 +75,8 @@ async function runSyncCountryStats() {
 
   const token = await umamiLogin(baseUrl, username, password);
   const raw = await fetchCountryMetrics(baseUrl, websiteId, token);
+  const stats = await fetchSiteStats(baseUrl, websiteId, token);
+  const totalVisits = Number(stats && stats.visits && stats.visits.value) || 0;
 
   const countries = raw
     .map((row) => {
@@ -70,21 +84,22 @@ async function runSyncCountryStats() {
       const displayName = nameFromCode(code);
       const flag = flagFromCode(code);
       if (!displayName || !flag) return null;
-      return { code, name: displayName, flag, views: Number(row.pageviews) || 0 };
+      return { code, name: displayName, flag, visits: Number(row.visits) || 0 };
     })
     .filter(Boolean)
-    .sort((a, b) => b.views - a.views);
+    .sort((a, b) => b.visits - a.visits);
 
   const client = getAdminClient();
   const { error } = await client.from('country_stats_cache').upsert({
     id: 'latest',
     total_countries: countries.length,
+    total_visits: totalVisits,
     countries,
     last_updated: new Date().toISOString()
   });
   if (error) throw error;
 
-  return countries.length;
+  return { countries: countries.length, visits: totalVisits };
 }
 
 module.exports = async (req, res) => {
@@ -103,7 +118,9 @@ module.exports = async (req, res) => {
   }
 
   try {
-    result.totalCountries = await runSyncCountryStats();
+    const synced = await runSyncCountryStats();
+    result.totalCountries = synced.countries;
+    result.totalVisits = synced.visits;
     result.syncCountryStats = 'ok';
   } catch (err) {
     console.error('daily-cron sync-country-stats failed:', err);
